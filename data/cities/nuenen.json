@@ -1,0 +1,62 @@
+{
+  "city": "Nuenen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Nuenen maps one tree: the Dorpslinde on the village green, a justice lime planted around 1625 to 1650 and, at 6.60 metres round, the thickest large-leaved lime in the Netherlands. A fungal infection cost it its upper crown in 1994, leaving a hollow shell of a trunk. On 28 December 2019 the village carnival club planted a young lime inside that shell as a prank, and the mayor ruled by proclamation that it could stay. An iron fence has stood around it since 1889.",
+  "meta_description": "The Dorpslinde of Nuenen: the thickest large-leaved lime in the Netherlands, a hollow justice lime with a sapling planted inside it as a prank.",
+  "question_meta": "Nuenen's only mapped tree is the Dorpslinde on the village green, roughly 400 years old and 6.60 metres round. Free at any hour.",
+  "question_answer": "Nuenen's oldest and only mapped tree is the Dorpslinde on the village green, a Large-leaved Lime (Tilia platyphyllos) of roughly 400 years. At 6.60 metres round it is the thickest large-leaved lime in the Netherlands.",
+  "question_context": "It is a gerechtslinde, a justice lime, under which judgments and announcements were historically made. bomenbieb puts the planting at roughly 1625 to 1650, and the tree is first recorded in the mayor's accounts of 1702; the age is read from growth rings still visible in the hollow trunk and in a surviving thick branch. That hollow is recent damage rather than old decay: a tinder-fungus infection forced the removal of the upper crown in 1994, leaving a shell like a pergola. Exactly 25 years later, on 28 December 2019, former carnival princes of the Nuenen club De Dwersklippels planted a young lime sapling inside the ancient trunk as a prank, and the mayor afterwards ruled by official proclamation that it could stay, on condition they hold a small remembrance ceremony at the tree every 28 December. The centuries-old trunk around it is the tree mapped here. Vincent van Gogh lived in Nuenen from 1883 to 1885 and walked this square, though no source names this tree in a letter or a sketch.",
+  "hero_tree_id": "nun_001",
+  "oldest_tree_id": "nun_001",
+  "faq": [
+    {
+      "q": "Is there really a young tree growing inside it?",
+      "a": "Yes. Former carnival princes of De Dwersklippels planted a lime sapling in the hollow trunk on 28 December 2019 as a prank, and the mayor ruled by proclamation that it could stay."
+    },
+    {
+      "q": "How old is the original tree?",
+      "a": "Roughly 400 years. bomenbieb puts the planting at 1625 to 1650, it appears in the mayor's accounts of 1702, and growth rings in the hollow trunk support that range."
+    },
+    {
+      "q": "Why is the crown gone?",
+      "a": "A tinder-fungus infection forced the removal of the upper crown in 1994, leaving the trunk standing as a hollow shell with new growth around it."
+    },
+    {
+      "q": "Did Van Gogh see this tree?",
+      "a": "Probably, since he lived in Nuenen from 1883 to 1885 and this is the central square. But no letter, sketch or painting is known that names it, so it stays local tradition."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nun_001",
+      "name": "The Dorpslinde of Nuenen",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 375,
+      "age_max": 400,
+      "girth_cm": 660,
+      "location": {
+        "address": "Berg 38, Nuenen (the village green, 'de Berg')",
+        "latitude": 51.477273,
+        "longitude": 5.551467,
+        "neighbourhood": "Nuenen, Noord-Brabant"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/dorpslinde-nuenen/",
+        "https://www.visitbrabant.com/nl/locaties/1359285727/oude-lindeboom-nuenen"
+      ],
+      "access": "Free. Stands in the open on Nuenen's village green (de Berg), protected by an iron fence since 1889 but fully visible and reachable by the public at all times.",
+      "transport": "Nuenen village centre; nearest station Eindhoven, then bus into the village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "On 28 December 2019 a group of former carnival princes planted a tree inside this tree. The mayor let it stay.\n\nDe Dwersklippels, Nuenen's carnival club, put a young lime sapling into the hollow trunk of the village lime as a prank, exactly 25 years to the day after the old crown came off. The mayor settled the business by official proclamation: the sapling could remain, on condition the pranksters hold a small remembrance ceremony at the tree every 28 December.\n\nThe trunk they planted it in is the tree that matters here. It is a gerechtslinde, a justice lime, under which judgments and announcements were made, put in around 1625 to 1650 and first recorded in the mayor's accounts of 1702. At 6.60 metres round it is the thickest large-leaved lime in the Netherlands, a species not common in this part of Brabant. In 1994 a tinder-fungus infection forced the removal of the upper crown, leaving a hollow shell like a pergola, and the age is read from growth rings still visible inside it and in one surviving thick branch.\n\nVincent van Gogh lived in Nuenen from 1883 to 1885 and crossed this green daily. Tourist copy has him admiring this tree, which rests on his address rather than on any letter or sketch that names it.\n\nAn iron fence has protected it since 1889. Free, in the open, at any hour.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

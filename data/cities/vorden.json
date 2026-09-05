@@ -1,0 +1,63 @@
+{
+  "city": "Vorden",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Vorden maps one tree: the Lodewijkslinde, a lime of roughly 400 years near the coach house of Kasteel Vorden. It once stood about 30 metres tall, until wood rot took its main stem and two large limbs in 2002 and left it at 13, still five and a half metres round. The name comes from a local story that Louis XIV rested under it in 1672. The estate is run by Geldersch Landschap en Kasteelen, open to walkers, and within walking distance of the station.",
+  "meta_description": "The Lodewijkslinde of Vorden: a lime of roughly 400 years by Kasteel Vorden, 5.4 metres round, named for a story about Louis XIV in 1672.",
+  "question_meta": "Vorden's only mapped tree is the Lodewijkslinde, a lime of roughly 400 years on the Kasteel Vorden estate. Free and open to walkers.",
+  "question_answer": "Vorden's oldest and only mapped tree is the Lodewijkslinde, a Large-leaved Lime (Tilia platyphyllos) near the coach house of Kasteel Vorden. It is roughly 400 years old and about five and a half metres round.",
+  "question_context": "bomenbieb puts the planting at 1622 or 1623, which is a presumption rather than a record, and the earliest images of the tree are a watercolour from the first half of the nineteenth century and a painting of 1874. Those pictures corroborate a tree of size standing here long ago; they say nothing about the story behind the name. Vorden calls it the Lodewijkslinde after a local tradition that Louis XIV of France rested beneath it in 1672, the year his armies crossed into the Dutch Republic, and no source ties that king to this specific tree. The measurements are firmer. bomenbieb and the estate's own trust agree on a girth of about five and a half metres. It once reached roughly 30 metres tall, then lost its main stem and two large limbs to wood rot in 2002, leaving it at about 13 metres today. It stands on Landgoed Vorden, managed by Geldersch Landschap en Kasteelen, with a car park on site and the station within walking distance.",
+  "hero_tree_id": "vrd_001",
+  "oldest_tree_id": "vrd_001",
+  "faq": [
+    {
+      "q": "Did Louis XIV really sit under it?",
+      "a": "That is the local tradition the name comes from, dated to 1672. No source ties the king to this particular tree, so treat it as a story rather than a record."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 400 years. bomenbieb presumes a planting in 1622 or 1623, and a nineteenth-century watercolour and an 1874 painting corroborate a tree of size standing here."
+    },
+    {
+      "q": "Why is it so much shorter than its girth suggests?",
+      "a": "It reached about 30 metres before wood rot took its main stem and two large limbs in 2002. What stands now is roughly 13 metres."
+    },
+    {
+      "q": "Can you visit the estate?",
+      "a": "Yes. Landgoed Vorden is managed by Geldersch Landschap en Kasteelen and open to walkers, with a car park on site. The castle building itself is a private venue."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vrd_001",
+      "name": "The Lodewijkslinde of Vorden",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 380,
+      "age_max": 420,
+      "girth_cm": 540,
+      "height_m": 13,
+      "location": {
+        "address": "De Horsterkamp 14, Vorden, near the coach house of Kasteel Vorden",
+        "latitude": 52.100896,
+        "longitude": 6.324,
+        "neighbourhood": "Vorden, Bronckhorst, Gelderland"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/lodewijkslinde-vorden/",
+        "https://www.glk.nl/gebied/landgoed-vorden"
+      ],
+      "access": "Free. On the grounds of Landgoed Vorden, managed by Geldersch Landschap en Kasteelen, open to walkers with a car park on site; the castle building itself is now a private wedding/hotel venue, but the estate grounds around it are public.",
+      "transport": "Within walking distance of Vorden railway station (per the estate's own management, GLK).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This lime once stood about 30 metres tall. Wood rot took its main stem and two large limbs in 2002, and what is left is roughly 13 metres, still five and a half metres round.\n\nThe name is older than the damage and less certain than either. Vorden calls it the Lodewijkslinde after a story that Louis XIV of France rested under it in 1672, the year his armies crossed into the Dutch Republic. No document ties that king to this tree. It is a local tradition, and worth hearing as one.\n\nWhat can be checked is the tree. bomenbieb presumes a planting in 1622 or 1623, which would put it at four centuries, and the earliest pictures of it are a watercolour from the first half of the nineteenth century and a painting from 1874. Those confirm a tree of some size standing here long before anyone alive remembers. They say nothing about the French.\n\nIt grows near the coach house of Kasteel Vorden, on an estate run by Geldersch Landschap en Kasteelen. The castle is a private venue now, but the grounds are open to walkers, there is a car park, and the station is close enough to arrive on foot.\n\nA second monumental tree stands on the same estate, the Dikke Eik at nearly seven metres round, which makes the walk two stops rather than one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

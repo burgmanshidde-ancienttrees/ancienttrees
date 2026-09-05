@@ -1,0 +1,64 @@
+{
+  "city": "Velp",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Velp maps one tree: Philemon, an ancient multi-stemmed oak on the grounds of the former Beekhuizen estate. It was half of a named pair after Ovid's Philemon and Baucis until storm Ciaran took Baucis at the end of 2023; a sapling grown from one of its acorns was planted on almost the same spot in December 2025. Philemon is about six metres round, 23 metres tall and estimated at 300 to 500 years, and it stands on the free, signed Ommetje Beekhuizen walking route.",
+  "meta_description": "Philemon of Velp: a multi-stemmed oak of 300 to 500 years on the old Beekhuizen estate, left alone when storm Ciaran took its named partner Baucis.",
+  "question_meta": "Velp's only mapped tree is Philemon, a multi-stemmed oak of 300 to 500 years on the free Beekhuizen estate walking route.",
+  "question_answer": "Velp's oldest and only mapped tree is Philemon, a multi-stemmed Pedunculate Oak (Quercus robur) on the grounds of the former Beekhuizen estate. It is estimated at 300 to 500 years old, about six metres round and 23 metres tall.",
+  "question_context": "Philemon was one of two, named for Ovid's elderly couple who were turned into an oak and a linden. Baucis, the other oak, came down in storm Ciaran at the end of 2023, and on 8 December 2025 a sapling grown from one of its acorns, kept since 2020 by Joris Hellevoort of the Bomenstichting, was planted almost on the same spot and fenced against wildlife. Two local papers reported it. The age of the surviving tree is a band rather than a date: bomenbieb estimates 300 to 500 years and brackets the planting somewhere between 1520 and 1720. The pair is first mentioned in writing in 1820 and the site appears in a Gelders Archief photograph from the 1930s or 1940s. It is among the oldest trees in the municipality of Rheden. One caveat is carried openly here: no source states in so many words that Philemon itself still stands, though every account since the storm concerns Baucis alone and bomenbieb still lists Philemon as alive. It stands on public estate ground beside Hotel Beekhuizen, free, on the signed Ommetje Beekhuizen route.",
+  "hero_tree_id": "vlp_001",
+  "oldest_tree_id": "vlp_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the surviving half of Philemon and Baucis, a pair of ancient oaks named for Ovid's elderly couple. Baucis fell in storm Ciaran at the end of 2023."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimated at 300 to 500 years by bomenbieb, which brackets the planting between 1520 and 1720. Nobody has dated it more closely."
+    },
+    {
+      "q": "Was Baucis replaced?",
+      "a": "Yes. A sapling grown from one of its acorns, kept since 2020 by the Bomenstichting, was planted almost on the same spot on 8 December 2025 and fenced against wildlife."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The grounds of the former Beekhuizen estate are public and the tree sits on the signed Ommetje Beekhuizen walking route beside the hotel."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vlp_001",
+      "name": "Philemon",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 600,
+      "height_m": 23,
+      "location": {
+        "address": "Former Beekhuizen estate, between Hotel Beekhuizen and the path down to the Beekhuizerbeek waterfall, Velp",
+        "latitude": 52.015363,
+        "longitude": 5.98828,
+        "neighbourhood": "Velp, Rheden, Gelderland"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/philemon-en-baucis/",
+        "https://www.regiobodeonline.nl/2025/12/nazaat-monumentale-eik-baucis-geplant/",
+        "https://rheden.nieuws.nl/nieuws/nakomeling-van-eik-baucis-geplant-in-velp"
+      ],
+      "access": "Free. Public grounds of the former Beekhuizen estate (part of Nationaal Park Veluwezoom), on the signed 'Ommetje Beekhuizen' walking route beside Hotel Beekhuizen.",
+      "transport": "From Velp or Arnhem, bus toward Rozendaal/Beekhuizen, then a short walk on the estate paths.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Storms do not read the names. Philemon and Baucis were a pair of ancient oaks on the old Beekhuizen estate, named for Ovid's elderly couple who were turned into an oak and a linden. Storm Ciaran took Baucis at the end of 2023 and left Philemon standing alone.\n\nThe reply took two years. On 8 December 2025 a sapling grown from one of Baucis's own acorns, kept since 2020 by Joris Hellevoort of the Bomenstichting, was planted almost on the spot where it had stood, and fenced against wildlife. Two local papers turned out for it.\n\nPhilemon is the older business. Multi-stemmed, about six metres round and 23 metres tall, it is put at 300 to 500 years old, which the register brackets as a planting somewhere between 1520 and 1720. Nobody has dated it more closely. The pair is first mentioned in writing in 1820, and the site appears in a Gelders Archief photograph from the 1930s or 1940s. It is among the oldest trees in the municipality of Rheden.\n\nOne honest note. No source says in so many words that Philemon still stands. Every account since the storm is about Baucis, none of them mentions a second loss, and bomenbieb still lists Philemon as alive. If you get there and find otherwise, tell us.\n\nIt sits on public estate ground beside Hotel Beekhuizen, on the signed Ommetje Beekhuizen, free.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

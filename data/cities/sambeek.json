@@ -1,0 +1,72 @@
+{
+  "city": "Sambeek",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Sambeek maps one tree: the Linde van Sambeek, the thickest lime in the Netherlands at 7.97 metres round, standing beside the through-road at the south end of the village. Storms took its tiers in 1884 and nearly all of its crown in 1901, after which it was expected to die. Instead a new stem grew from the old roots inside the hollow trunk, and that stem is now part of the crown. In 2025 the municipality decided to move the road to give its roots more room.",
+  "meta_description": "The Linde van Sambeek: the thickest lime in the Netherlands at 7.97 metres round, with a new stem grown from its old roots inside the hollow trunk.",
+  "question_meta": "Sambeek's only mapped tree is the Linde van Sambeek, the thickest lime in the Netherlands, 350 to 500 years old and free at any hour.",
+  "question_answer": "Sambeek's oldest and only mapped tree is the Linde van Sambeek, a Common Lime (Tilia x europaea) beside the through-road at the south end of the village. It is the thickest lime in the Netherlands, 7.97 metres round as measured in 2004, and is estimated at 350 to 500 years old.",
+  "question_context": "The exact age cannot be pinned down because the trunk is hollow, so 350 to 500 years is the sources' own honest range, and local tradition also calls it the oldest lime in the country. It stands in the Landelijk Register van Monumentale Bomen as monument 1679463. It began as a three-tiered ceremonial lime, lost its tiers in a storm in 1884 and nearly its whole crown in a second storm in 1901, after which it was expected to die. It did the opposite: a new stem grew from the old root system inside the hollow trunk, and that stem now measures about 2.5 metres round on its own and forms part of today's crown, which reaches roughly 23 metres. The tree was restored again in 1973 and 1974 with municipal funding, using cable anchors, iron trunk supports and root-zone treatment, and Stichting Wereldboom declared it a World Tree in 2015 and has guided its pruning since. In 2025 the municipality of Land van Cuijk decided to realign and narrow the road past it to give the roots more space.",
+  "hero_tree_id": "smb_001",
+  "oldest_tree_id": "smb_001",
+  "faq": [
+    {
+      "q": "What is special about this lime?",
+      "a": "At 7.97 metres round it is the thickest lime in the Netherlands, and the stem that carries part of its crown grew out of its own roots inside the hollow trunk after a storm in 1901."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Between 350 and 500 years. The trunk is hollow, so no ring count is possible and the range is the honest answer. Locally it is also called the oldest lime in the country."
+    },
+    {
+      "q": "Has it been cared for?",
+      "a": "Repeatedly. Restored in 1973 and 1974 with cable anchors, iron trunk supports and root-zone treatment, declared a World Tree in 2015, and in 2025 the municipality decided to move the road for its roots."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside the public through-road at the south end of Sambeek and can be reached at any time."
+    }
+  ],
+  "trees": [
+    {
+      "id": "smb_001",
+      "name": "The Linde van Sambeek",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 350 to 500 years",
+      "age_min": 350,
+      "age_max": 500,
+      "girth_cm": 797,
+      "height_m": 23,
+      "location": {
+        "address": "Grotestraat 93, Sambeek (on the through-road in the south of the village)",
+        "latitude": 51.632357,
+        "longitude": 5.968647,
+        "neighbourhood": "Sambeek, Land van Cuijk, Noord-Brabant"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/linde-van-sambeek/",
+        "https://nl.wikipedia.org/wiki/Linde_van_Sambeek",
+        "https://www.omroepbrabant.nl/nieuws/1232850/beroemde-eeuwenoude-lindeboom-in-sambeek-krijgt-broodnodige-opknapbeurt"
+      ],
+      "access": "Free. Stands beside the public through-road at the south end of Sambeek village; reachable at any time.",
+      "transport": "Sambeek village, near Boxmeer; nearest station Boxmeer, then bus or bike into the village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June and early July, when the flowers open and the crown fills with the sound of bees"
+      },
+      "story": "There is a second trunk inside this hollow one, and it is the same tree.\n\nThe Linde van Sambeek started out as a three-tiered ceremonial lime. A storm took the tiers in 1884 and a second storm in 1901 took nearly the whole crown, after which everybody expected it to die. Instead a new stem grew up out of the old root system, inside the shell of the hollow trunk. That stem is now about 2.5 metres round on its own and carries part of the crown standing today.\n\nThe outer trunk measured 7.97 metres round in 2004, which makes it the thickest lime in the Netherlands, and locally it is called the oldest as well. Nobody can settle that: the trunk is hollow, so there are no rings to count, and 350 to 500 years is the honest range. It is listed in the national monumental tree register as number 1679463.\n\nThe village has kept paying for it. A restoration in 1973 and 1974 came out of municipal funds and brought cable anchors, iron trunk supports and root-zone treatment. Stichting Wereldboom declared it a World Tree in 2015 and has guided its pruning since. In 2025 Land van Cuijk decided to realign and narrow the road running past it, to give the roots more room.\n\nThat is a municipality moving a road for a tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

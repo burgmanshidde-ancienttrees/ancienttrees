@@ -1,0 +1,71 @@
+{
+  "city": "Wolfheze",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Wolfheze maps one thing: the Wodanseiken, a group of gnarled oaks on the Wolfhezerheide that a circle of nineteenth-century landscape painters named after a god. They came up shortly after the Wolfhezerbeek was dug in 1550, which makes them somewhere between 400 and 600 years old, and the largest measures 5.25 metres round. The heath around them has become mixed forest. Natuurmonumenten owns the reserve, the signed Wodanroute runs to them, and the walk in from the road takes about five minutes.",
+  "meta_description": "The Wodanseiken of Wolfheze: gnarled oaks of 400 to 600 years, named by painters after the god Wodan, free in a Natuurmonumenten reserve.",
+  "question_meta": "Wolfheze's mapped trees are the Wodanseiken, a group of oaks reckoned at 400 to 600 years old, free on the Wolfhezerheide.",
+  "question_answer": "Wolfheze's oldest and only mapped trees are the Wodanseiken, a group of Pedunculate Oaks (Quercus robur) on the Wolfhezerheide south of the village. They are reckoned at 400 to 600 years old, and the largest of them measures 5.25 metres round and 22 metres tall.",
+  "question_context": "Two sources date them the same way, and neither has a planting record to work from: the oaks are thought to have come up shortly after the Wolfhezerbeek was dug as a stream channel in 1550. nl.wikipedia gives 400 to 600 years, bomenbieb narrows it to 450 to 500, and the range is kept broad here because both figures are estimates. The name is much younger than the trees. A circle of landscape painters known as the Oosterbeekse School, among them Johannes Warnardus and Gerard Bilders, were walking out to the oaks at night by around 1850; J.J. Cremer painted them in 1849, and the name Wodanseiken, after the god Wodan, is first recorded in writing in 1865. The ground has changed under them: open heathland when they grew, mixed forest now, and the groundwater beneath the Wolfhezerheide has fallen a metre or two over the last century through water extraction, which nl.wikipedia records a number of the trees did not survive. What is left stands in Natuurmonumenten's reserve, free, on the signed Wodanroute, about five minutes from the parking area on the Oude Kloosterweg.",
+  "hero_tree_id": "wlf_001",
+  "oldest_tree_id": "wlf_001",
+  "faq": [
+    {
+      "q": "What is special about these oaks?",
+      "a": "They are a named group of heavily gnarled oaks that nineteenth-century landscape painters walked out to at night and called the Wodanseiken, after the god Wodan."
+    },
+    {
+      "q": "How old are they?",
+      "a": "Between 400 and 600 years, estimated from the digging of the Wolfhezerbeek in 1550 rather than from any planting record. bomenbieb puts them at 450 to 500."
+    },
+    {
+      "q": "Are they all still standing?",
+      "a": "No. Groundwater under the Wolfhezerheide has dropped a metre or two over the last century through water extraction, and a number of the trees did not survive it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The reserve belongs to Natuurmonumenten, and the marked path from the Oude Kloosterweg parking area takes about five minutes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wlf_001",
+      "name": "The Wodanseiken",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 to 600 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 525,
+      "height_m": 22,
+      "location": {
+        "address": "Wolfhezerheide nature reserve, south of Wolfheze; reached from the parking area at Oude Kloosterweg/Wolfhezerweg near the Fletcher hotel",
+        "latitude": 51.993077,
+        "longitude": 5.797418,
+        "neighbourhood": "Wolfheze, Renkum, Gelderland"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/wodanseiken/",
+        "https://nl.wikipedia.org/wiki/Wodanseiken"
+      ],
+      "access": "Free. Public nature reserve owned by Natuurmonumenten, reached via a marked path from the Oude Kloosterweg/Wolfhezerweg parking area, roughly a 5-minute walk.",
+      "transport": "Wolfheze railway station, then about 2 km on the signed Wodanroute walking path.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the gnarled branch structure stands clear"
+      },
+      "story": "A circle of nineteenth-century landscape painters used to walk out to these oaks at night, and it was they who named them after a god.\n\nJohannes Warnardus and Gerard Bilders, of the Oosterbeekse School, were coming here by around 1850. J.J. Cremer had already painted the trees in 1849, and the name Wodanseiken, after Wodan, is first recorded in writing in 1865.\n\nThe oaks are older than that by centuries. Both sources that date them agree they came up shortly after the Wolfhezerbeek was dug as a stream channel in 1550, which puts them somewhere between 400 and 600 years old. nl.wikipedia gives that range, bomenbieb narrows it to 450 to 500, and neither figure rests on a documented planting, so the broad version is the honest one. The largest of the group measures 5.25 metres round and stands 22 metres tall.\n\nThey grew up on open heathland along the stream. Mixed forest has closed in around them since, and not all of the original trees are still there: groundwater beneath the Wolfhezerheide has fallen a metre or two over the last century through water extraction, and a number of the oaks died.\n\nThe reserve belongs to Natuurmonumenten and costs nothing. The signed Wodanroute is built around the trees, about five minutes in from the parking area on the Oude Kloosterweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

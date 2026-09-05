@@ -1,0 +1,71 @@
+{
+  "city": "Rhenen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Rhenen maps one thing: the pollard oaks of the Koningstafel, a cluster of low, repeatedly cut oaks on the plateau at the top of the Grebbeberg. They stand inside the Heimenberg ring-wall, a seventh-century earthwork and one of the largest defensive structures in the country, with the Rhine below. The plateau takes its name from Frederick V of the Palatinate, who is said to have feasted here in exile. Utrechts Landschap manages the site, the routes are waymarked and the walk up from the station takes about half an hour.",
+  "meta_description": "The pollard oaks of the Koningstafel: a cluster of cut oaks on the Grebbeberg plateau at Rhenen, inside a seventh-century ring-wall. Free, waymarked.",
+  "question_meta": "Rhenen's mapped trees are the pollard oaks of the Koningstafel on the Grebbeberg, documented since at least 1830. Free and waymarked.",
+  "question_answer": "Rhenen's oldest mapped trees are the pollard oaks of the Koningstafel, Sessile Oaks (Quercus petraea) on the plateau at the top of the Grebbeberg. They are documented from at least 1830, and local tradition holds them considerably older.",
+  "question_context": "Dating any single trunk here is difficult, because these are low pollards cut back over and over and some of them stand in circular groupings. The sources disagree and both figures are kept rather than averaged: grebbeberg.nl says the pollards are documented from at least 1830 and are possibly much older, while bomenbieb offers a planting band running from 1200 to 1750. The 1830 record is the safe floor and the earlier dates are tradition. The plateau itself carries an older name story: it became the Koningstafel, the king's table, in the seventeenth century after Frederick V of the Palatinate, living in exile in the Dutch Republic, reportedly used it for hunting feasts and had a large stone table placed there. That is a place-name legend and says nothing about the age of the trees. The ground under them is genuinely ancient: the Heimenberg ring-wall around the plateau is a seventh-century earthwork and one of the oldest and largest defensive structures in the Netherlands. Utrechts Landschap manages the site, which is also a memorial of the battle of the Grebbeberg in May 1940.",
+  "hero_tree_id": "rhe_001",
+  "oldest_tree_id": "rhe_001",
+  "faq": [
+    {
+      "q": "How old are the pollard oaks?",
+      "a": "Documented from at least 1830 per grebbeberg.nl, which calls them possibly much older. bomenbieb gives a wide planting band of 1200 to 1750. Neither figure is a measurement."
+    },
+    {
+      "q": "Why is it called the Koningstafel?",
+      "a": "After Frederick V of the Palatinate, exiled in the Dutch Republic, who reportedly held hunting feasts on the plateau in the seventeenth century and had a stone table placed there."
+    },
+    {
+      "q": "What else is on the plateau?",
+      "a": "The Heimenberg ring-wall, a seventh-century earthwork and one of the oldest and largest defensive structures in the Netherlands, with views over the Rhine. It is also a 1940 battle memorial."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Utrechts Landschap manages the site, with waymarked walking and cycling routes. It is a signed walk of roughly 25 to 30 minutes up from Rhenen station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rhe_001",
+      "name": "The Pollard Oaks of the Koningstafel",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "documented since at least 1830; local tradition holds them considerably older",
+      "age_min": 190,
+      "age_max": 500,
+      "location": {
+        "address": "West side of the Koningstafel plateau, Grebbeberg, near Rhenen",
+        "latitude": 51.952297,
+        "longitude": 5.601458,
+        "neighbourhood": "Grebbeberg, Rhenen, Utrecht"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/knoteiken-koningstafel/",
+        "https://www.grebbeberg.nl/index.php?page=de-koningstafel",
+        "https://www.utrechtslandschap.nl/ringwalburg-en-koningstafel"
+      ],
+      "access": "Free. Public heritage site managed by Utrechts Landschap on the Grebbeberg, with waymarked walking and cycling routes; the plateau is also a WWII memorial site (Slag om de Grebbeberg, May 1940) and is visited routinely.",
+      "transport": "Rhenen railway station, then a signed walk up the Grebbeberg (roughly 25-30 minutes).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "December to February, when the leaves are off and the cut pollard heads show their shape"
+      },
+      "story": "The plateau is named after a king who had lost his kingdom. Frederick V of the Palatinate, living in exile in the Dutch Republic, is said to have used this flat top of the Grebbeberg for hunting feasts in the seventeenth century and to have had a large stone table set there. That is where the name Koningstafel comes from, and it is a story about the place rather than about the trees.\n\nThe trees are the pollards along the west side: low oaks cut back over and over, some of them standing in circular groupings that make dating any single trunk difficult. The two sources disagree about how far back they go and both are kept here. Grebbeberg.nl records them from at least 1830 and calls them possibly much older; bomenbieb offers a planting band running from 1200 to 1750. The 1830 document is the safe floor. The rest is tradition.\n\nThey stand inside something older than any of those dates. The Heimenberg ring-wall around this plateau is a seventh-century earthwork and one of the oldest and largest defensive structures in the Netherlands, and the Rhine runs below it. In May 1940 the same ground was the battle of the Grebbeberg, and the site is a war memorial now.\n\nUtrechts Landschap manages it. Free, waymarked, and about half an hour uphill from Rhenen station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

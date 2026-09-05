@@ -1,0 +1,64 @@
+{
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Hilvarenbeek maps one tree: the Gebodenlinde on the Vrijthof, the lime the village aldermen stood under to read out local decrees. A proclamation lime, in other words, which also sheltered the linen market and served as the courthouse tree. Its predecessor died in 1675 and a document of April 1676 records the replacement going in, though whether today's trunk is that one or a 1704 successor is unresolved. It is 6.21 metres round and 23 metres tall, on the open square beside the church, with a bench under it.",
+  "meta_description": "The Gebodenlinde of Hilvarenbeek: the lime the aldermen read village decrees under, 6.21 metres round on the Vrijthof. Free, with a bench beneath it.",
+  "question_meta": "Hilvarenbeek's only mapped tree is the Gebodenlinde on the Vrijthof, a proclamation lime of roughly 320 to 350 years. Free at any hour.",
+  "question_answer": "Hilvarenbeek's oldest and only mapped tree is the Gebodenlinde, a Common Lime (Tilia x europaea) on the Vrijthof beside the church. It is roughly 320 to 350 years old, 6.21 metres round and 23 metres tall.",
+  "question_context": "A gebodenlinde is a proclamation lime: the schepenen, the village aldermen, announced Hilvarenbeek's decrees standing under this tree. The local heritage society's plaque and bomenbieb both record that it sheltered the linen market as well and served as the courthouse tree. The date it went in is documented, up to a point. A record of 22 April 1676 notes that a young lime had recently been planted on the Vrijthof, replacing an earlier lime that had died in 1675, and bomenbieb flags real uncertainty over whether the tree standing there now is that planting or a 1704 replacement. That is why the age is given as a band rather than a year. Heavy limbs were given structural support in 1974. The tree is still actively managed: Omroep Brabant reported that the municipality is studying how to improve its growing conditions, giving the roots more space, air and water. It stands in the open beside the church, the water pump and the bandstand, with a bench beneath it, public at any hour.",
+  "hero_tree_id": "hvb_001",
+  "oldest_tree_id": "hvb_001",
+  "faq": [
+    {
+      "q": "What is a gebodenlinde?",
+      "a": "A proclamation lime. Hilvarenbeek's aldermen read out the village's decrees standing under this tree, which also sheltered the linen market and served as the courthouse tree."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 320 to 350 years. A document of 22 April 1676 records a young lime recently planted here, but it is unresolved whether today's tree is that one or a 1704 replacement."
+    },
+    {
+      "q": "Is the tree healthy?",
+      "a": "It is under active care. Its heavy limbs were given structural support in 1974, and the municipality is studying how to give the roots more space, air and water."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on the Vrijthof beside the church, the water pump and the bandstand, with a bench beneath it, at any hour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hvb_001",
+      "name": "The Gebodenlinde of Hilvarenbeek",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 320 to 350 years",
+      "age_min": 320,
+      "age_max": 350,
+      "girth_cm": 621,
+      "height_m": 23,
+      "location": {
+        "address": "Vrijthof (village square), Hilvarenbeek, next to the church",
+        "latitude": 51.485373,
+        "longitude": 5.135756,
+        "neighbourhood": "Hilvarenbeek, Noord-Brabant"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/gebodenlinde-hilvarenbeek/",
+        "https://www.heemkundigekringhilvarenbeek.nl/collectie/attentietegels/gebodenlinde/",
+        "https://www.omroepbrabant.nl/nieuws/6016599/hilvarenbeek-onderzoekt-toekomst-gebodenlinde"
+      ],
+      "access": "Free. Stands in the open village square (Vrijthof) beside the church, water pump and bandstand, with a bench beneath it; fully public at all times.",
+      "transport": "Hilvarenbeek village centre; nearest station Tilburg, then bus into the village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Before a village had a noticeboard, it had a tree. Hilvarenbeek's aldermen stood under this lime to read out the local decrees, which is what a gebodenlinde is: a proclamation lime. It sheltered the linen market as well, and served as the courthouse tree.\n\nIts predecessor died in 1675 and the village did not wait around. A document dated 22 April 1676 records that a young lime had recently been planted on the Vrijthof. Whether the tree standing there today is that one or a 1704 replacement has never been settled, which is why the age comes as a band of roughly 320 to 350 years rather than a date. bomenbieb flags the uncertainty itself.\n\nWhatever the year, it has become substantial: 6.21 metres round and 23 metres tall, out on the open square beside the church, the water pump and the bandstand, with a bench underneath. The heavy limbs needed structural support in 1974 and got it.\n\nAnd it is still being arranged for. Omroep Brabant reported that the municipality is working out how to improve the tree's growing conditions, giving the roots more space, air and water. Three hundred and fifty years after the aldermen used it as their public address system, the village is still making decisions about this lime.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

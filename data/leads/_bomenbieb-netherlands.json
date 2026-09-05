@@ -759,7 +759,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 5.61,
       "nearest_ours": "arn_002 The Dalweg Oak (Arnhem)",
-      "status": "lead"
+      "status": "verified_partial",
+      "reason": "Philemon ships as a standalone entry in data/research/bomenbieb-dutch-verified.json (2026-09-05 verify pass). Baucis is dead (blew over in storm Ciaran, late 2023) despite bomenbieb's vitality field still saying alive; see blocked list."
     },
     {
       "name": "duizendjarige den wolfheze",
@@ -1457,7 +1458,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 27.36,
       "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Private land: bomenbieb's own page places it 'in de tuin van het huis Villa Arcadia' (in the garden of the house Villa Arcadia) at Borculoseweg/Kroezelaan; a 2023 local-news report (nieuwsuitberkelland.nl) confirms it stands in a fenced 'dorpstuin' rather than open ground. It is visible from the public road, but hard rule 10's private-house exception does not bend for visibility alone. Also struck by an agricultural vehicle 25 Oct 2023 (survival was uncertain at the time); later coverage (boomzorg.nl, achterhoeknieuws.nl) shows major restoration in 2023 and the tree is now well cared for, so health is not the blocking reason -- the garden location is."
     },
     {
       "name": "fladderiep heure",
@@ -1595,6 +1597,20 @@
       "status": "lead",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "baucis (half of philemon en baucis, velp)",
+      "source": "https://bomenbieb.nl/bijzondere-bomen/philemon-en-baucis/",
+      "place": "Velp",
+      "reason": "Dead: blew over in storm Ciaran, end of 2023. Confirmed by two independent, dated local news reports (Regiobode Dec 2025, rheden.nieuws.nl) describing a descendant sapling grown from a Baucis acorn planted on nearly the same spot on 8 Dec 2025. bomenbieb.nl's own vitality field still incorrectly says alive. Never ships as a living entry; its companion oak Philemon is still standing and verified separately."
+    },
+    {
+      "name": "kroezeboom ruurlo",
+      "source": "https://bomenbieb.nl/bijzondere-bomen/kroezeboom-ruurlo/",
+      "place": "Ruurlo",
+      "reason": "Stands in the private garden of a house (Villa Arcadia) at the Borculoseweg/Kroezelaan crossing. Visible from the public road but not on public ground; hard rule 10 excludes private houses and their grounds regardless of fame or visibility. Alive and recently restored (2023 cable/anchor replacement by Praktijk Centrum Bomen) after an October 2023 vehicle strike, so this is a location block, not a health block."
     }
   ]
 }

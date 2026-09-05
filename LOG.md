@@ -49,6 +49,65 @@ Pemberton, Flinders Ranges and Bad Blumau among them. That is the cheapest
 photo work this project has: no hunting, only a licence check and a look at
 the pixels.
 
+## 2026-09-05 (continuation of a window an earlier attempt stopped early at 45 min with 75 unspent) - Finished the standing _bomenbieb-netherlands verify claim: 11 new Dutch single-tree places
+
+Followed the resume instructions. Pulled (nothing new). `passcheck.py
+--claims` found one standing claim, `_bomenbieb-netherlands` verify by
+night-run, 116 min left. `leads.py --ready` was empty. The claim's own scratch
+files (`_bomenbieb_batch_current.json`, 8 empty `bomenbieb-*-verified.json`
+stubs) showed a prior attempt had scraped bomenbieb.nl (a Dutch tree register
+wiki) into `data/leads/_bomenbieb-netherlands.json` (105 leads) and tried to
+split a verify batch several times without ever finishing one.
+
+Of the 105 leads, 56 sit more than 2km from any city we publish, i.e. real
+standalone candidates rather than near-duplicates of trees we already have.
+Picked the 12 strongest named/historic ones (dance limes, court/proclamation
+trees, a mythologically-named oak pair, a "thousand-year oak") and dispatched
+one verify pass, then one write pass, per the assembly line.
+
+**11 of 12 verified and published as new single-tree places** (all
+`needs_curation`, `country: "Netherlands"`): Wolfheze (wlf_001, the
+Wodanseiken, a signed grove on the Veluwe), Velp (vlp_001, Philemon, surviving
+half of a named oak pair after storm Ciaran took Baucis in 2023, with the
+honest caveat that no source explicitly confirms Philemon still stands),
+Doornenburg (drn_001, the "Thousand-Year Oak", age claim corrected down in the
+story), Den Hout (dho_001, the Heilige Eik, one of three trees on this list
+carrying a locally-sourced "oldest oak in the Netherlands" claim, each
+attributed rather than asserted as settled), Hilvarenbeek (hvb_001, the
+Gebodenlinde, a village-square proclamation lime), Stoutenburg (stn_001, Adam
+en Eva, a view-only pair behind a closed private gate, stated as such),
+Fleringen (fle_001, the Kroezeboom, a Twente gathering-tree tradition),
+Rhenen (rhe_001, the pollard oaks of the Koningstafel), Vorden (vrd_001, the
+Lodewijkslinde), Nuenen (nun_001, the Dorpslinde) and Sambeek (smb_001, the
+Linde van Sambeek). `superlatives.py` confirms none of the three "oldest"
+claims collide. Build and QA both clean (4429 pages, 0 problems).
+
+**1 blocked, 1 already dead.** Baucis (Velp's other named oak) is confirmed
+dead, storm-felled late 2023, two independent dated local reports; bomenbieb's
+own vitality field still wrongly says alive, worth a correction request to
+them. Kroezeboom Ruurlo is alive and recently restored but blocks on hard
+rule 10: bomenbieb's own page places it in a private garden (Villa Arcadia).
+
+**FOR HIDDE: a distance question, not resolved here.** Unlike the German
+single-tree places from the previous entry (nearest published city 35-66km
+away), six of these eleven sit only 5-9km from a city we already publish
+(Velp/Wolfheze 6.5-7.7km from Arnhem, Nuenen 6.7km from Eindhoven, Stoutenburg
+5.2km from Amersfoort, Den Hout 8.7km from Breda, Hilvarenbeek 8.5km from
+Tilburg). CLAUDE.md's day-trip rule ("Blarney counts for Cork") would fold a
+tree that close into the existing city page rather than give it its own; the
+single-famous-tree exception is written for a tree with no city nearby at all.
+I left them as standalone places because each independently clears the "would
+someone travel for this tree" bar on its own merits and merging risked
+inventing transit times I could not verify in the window, but this is a
+judgment call worth checking rather than a settled one. The five that stay
+standalone without argument are 11-24km out (Doornenburg, Rhenen, Fleringen,
+Vorden, Sambeek).
+
+Left uncommitted on purpose (scratch, not data): the 8 empty
+`bomenbieb-*-verified.json` stubs, `_bomenbieb_batch_current.json`, and half a
+dozen `scripts/_tmp_*.py` one-off helper scripts from this and the prior
+attempt. None of them are read by anything; delete freely.
+
 ## 2026-09-05 (continuation of a window an earlier attempt stopped early with 12 minutes shipped, 108 unspent) - Finished the standing _famousgermany + _famousjapan-b verify claims: 8 trees, 6 new single-tree places
 
 Followed the resume instructions. Pulled (nothing new). `passcheck.py
