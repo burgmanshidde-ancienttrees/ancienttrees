@@ -1,0 +1,61 @@
+{
+  "city": "Villeneuve",
+  "country": "Switzerland",
+  "status": "needs_curation",
+  "intro": "Lake Geneva has one natural island, and one tree left on it. The Ile de Peilz is a rock off Villeneuve that local people built up with earth; three plane trees went in in 1851 and a single one survives, roughly 175 years old and filling the whole islet. Byron wrote the rock into The Prisoner of Chillon in 1816 and Hans Christian Andersen into The Ice-Maiden in 1861. You cannot land on it. You look from the public quays, and at either end of the day it goes to silhouette.",
+  "meta_description": "One plane tree on the only natural island in Lake Geneva, planted 1851 and seen from Villeneuve's public quay. You look; you cannot land.",
+  "question_meta": "Villeneuve's notable tree is the lone plane on the Ile de Peilz, planted in 1851. Where to see it from, and why the islet cannot be visited.",
+  "question_answer": "The one tree we map at Villeneuve is the plane on the Ile de Peilz, the smallest and only natural island in Lake Geneva, planted in 1851 and now roughly 175 years old. It cannot be visited: the islet is not landable and a boat risks running aground trying, so the tree is seen from the public lakefront quays at Villeneuve, free, at any hour.",
+  "question_context": "The Ile de Peilz is a rock, somewhere between 20 and 77 square metres depending on which source you believe, built up with earth by people from Villeneuve; local tradition dates that work to 1797, which no primary source confirms. Three plane trees were planted on it in 1851. By 1970 one plane and an ailing horse chestnut were left, and the chestnut has since died, so the island now carries a single tree with nothing to compete with it. A certified arborist assessed it in 2023 and found it generally healthy, with decay present but the tree still working. It has been in print far longer than it has been in photographs: Byron used the islet in The Prisoner of Chillon in 1816, before the planes existed, and Hans Christian Andersen put it in The Ice-Maiden in 1861, when they were ten years old. Since around 2021 it has become one of the most photographed subjects on the lake. Our pin marks the shoreline you look from rather than the tree itself, because no source gives an exact vantage point; the classic one is the Quai Grand Rive, a short walk from Villeneuve VD station.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Villeneuve?",
+      "a": "The plane tree on the Ile de Peilz, one of three planted on the islet in 1851 and the only one left, so roughly 175 years old."
+    },
+    {
+      "q": "Can you visit the Ile de Peilz?",
+      "a": "No. Both sources are explicit that the islet cannot be landed on and that approaching by boat risks running aground. It is a view rather than a visit."
+    },
+    {
+      "q": "Where do you see it from?",
+      "a": "From the public lakefront quays at Villeneuve, free and at any hour. The Quai Grand Rive is the classic vantage point, and sunrise and sunset are when the tree silhouettes against open water."
+    },
+    {
+      "q": "Is the tree healthy?",
+      "a": "A certified arborist assessed it in 2023 and found it generally healthy, with some decay present but nothing that stops it functioning."
+    }
+  ],
+  "hero_tree_id": "vny_001",
+  "oldest_tree_id": "vny_001",
+  "trees": [
+    {
+      "id": "vny_001",
+      "name": "The Plane Tree of the Ile de Peilz",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 175 years",
+      "age_min": 170,
+      "age_max": 180,
+      "location": {
+        "address": "Viewed from the Quai Grand Rive shoreline, Villeneuve, looking out to the Ile de Peilz islet in Lake Geneva",
+        "latitude": 46.397505,
+        "longitude": 6.923854,
+        "neighbourhood": "Villeneuve lakefront"
+      },
+      "story": "Lake Geneva has exactly one natural island, it is roughly the size of a large living room, and the single tree standing on it is one you are not allowed to reach.\n\nThe Ile de Peilz is a rock off Villeneuve that local people built up with earth, by tradition in 1797. Three plane trees went in in 1851. By 1970 one plane and an ailing horse chestnut were left; the chestnut has since died, and the plane now stands alone at roughly 175 years old, filling its entire island. A certified arborist assessed it in 2023 and found it generally healthy, with some decay present but nothing that stops it working.\n\nIt was famous before anyone photographed it. Byron wrote the islet into The Prisoner of Chillon in 1816, before the trees existed. Hans Christian Andersen put it in The Ice-Maiden in 1861, when they were ten years old. Since around 2021 it has become one of the most photographed objects on the lake.\n\nYou look rather than visit. Both sources are explicit that the islet cannot be landed on and that a boat risks running aground trying. The view is from the public quays at Villeneuve, and our pin marks that shoreline rather than the tree. Go at either end of the day, when the plane turns to a silhouette against open water.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/%C3%8Ele_de_Peilz",
+        "https://2tout2rien.fr/ile-de-peilz-lac-leman/"
+      ],
+      "access": "Free, view-only. Both sources are explicit that the islet itself cannot be visited (2tout2rien.fr: \"L'ilot ne se visite pas\"; Wikipedia: boat approach risks running aground and is not recommended). It is viewed from the public lakefront quays of Villeneuve (Quai Grand Rive is named as the classic viewpoint) or from a boat on the lake, best at sunrise or sunset when the tree silhouettes.",
+      "transport": "Villeneuve VD railway station, then a short walk along the lakefront quay.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}

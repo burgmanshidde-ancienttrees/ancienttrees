@@ -1,0 +1,62 @@
+{
+  "city": "Cremines",
+  "country": "Switzerland",
+  "status": "needs_curation",
+  "intro": "Switzerland's oldest tree stands in a forest above Cremines in the Bernese Jura, and it takes some finding. The commune calls the yew le plus vieil arbre de Suisse and puts it at around 1500 years, and the Bern canton forestry division has designated it an arbre monumental. There is no path to it, no signpost and no bench. It sits under rocks in the Foret du Maljon, off the marked trails, on public forest land, 4.25 metres round and still alive.",
+  "meta_description": "The yew above Cremines is called Switzerland's oldest tree, at roughly 1500 years. Public forest, no path and no signpost. How to find it.",
+  "question_meta": "Switzerland's oldest tree is a yew of roughly 1500 years in the forest above Cremines. What is known about its age, and how to reach it.",
+  "question_answer": "The oldest tree in Cremines is a European yew in the Foret du Maljon above the village, estimated at around 1500 years old and called le plus vieil arbre de Suisse, the oldest tree in Switzerland, by the commune itself. The Bern canton forestry division has designated it an arbre monumental. It measures 4.25 metres round and is recorded as alive, but there is no path to it and finding it takes a real search on foot.",
+  "question_context": "Nobody has counted this yew's rings, and nobody is going to. Coring a hollow, already damaged trunk risks the tree in order to date it, so the figure of about 1500 years is the settled estimate of the commune and of the dendrological community rather than a measurement anyone took. Two sources carry it. The commune of Cremines publishes its own page on the tree, giving the age, the canton's monumental designation and a note that Swiss television filmed it as recently as 2023. The German-language register Baumkunde lists the same coordinates and the same age, a girth of 4.25 metres and a condition of vital, meaning alive and in reasonable health. What neither source offers is a route. The commune says openly that the tree stands hidden under rocks, away from the walking paths, and that it is hard to find. The forest is public land, so nothing is closed and nobody has to be asked, but this is a search rather than a stroll. The nearest station is Cremines on the Moutier to Solothurn line, and the climb into the Maljon forest takes roughly 45 minutes to an hour on unmarked ground.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Cremines?",
+      "a": "A European yew in the Foret du Maljon above the village, estimated at around 1500 years old and designated an arbre monumental by the Bern canton forestry division."
+    },
+    {
+      "q": "Is it really the oldest tree in Switzerland?",
+      "a": "The commune of Cremines says so outright, and the German tree register Baumkunde gives the same age. Nobody has counted the rings, because coring a hollow, damaged trunk would risk the tree, so treat 1500 years as a careful estimate rather than a measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in public forest with no gate, no ticket and no permission needed."
+    },
+    {
+      "q": "How hard is it to find?",
+      "a": "Hard, deliberately. There is no path and no signpost, and the commune's own page says the tree stands hidden under rocks away from the walking trails. Take the coordinates and allow a couple of hours from Cremines station."
+    }
+  ],
+  "hero_tree_id": "cre_001",
+  "oldest_tree_id": "cre_001",
+  "trees": [
+    {
+      "id": "cre_001",
+      "name": "The Old Yew of Cremines (If millenaire)",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 1500 years",
+      "age_min": 1000,
+      "age_max": 1500,
+      "girth_cm": 425,
+      "location": {
+        "address": "Foret du Maljon, above Cremines, Bernese Jura",
+        "latitude": 47.272708,
+        "longitude": 7.471473,
+        "neighbourhood": "Maljon forest, Cremines"
+      },
+      "story": "Switzerland's oldest living tree has no path, no signpost and no bench, and the commune that owns it seems content to keep it that way. The yew in the Foret du Maljon above Cremines is put at around 1500 years old by the commune itself and by the Bern canton forestry division, which designated it an arbre monumental. Cremines calls it flatly le plus vieil arbre de Suisse.\n\nNobody has counted its rings. You cannot core a hollow, already damaged trunk without risking the thing you are trying to date, so the 1500 years is the settled estimate of the commune and the dendrological community rather than a measurement anyone took. The German tree register that also carries it lists 4.25 metres round and its condition as vital, and Swiss television filmed it as recently as 2023, which is the best evidence anyone has that it is still standing.\n\nIf the figure is even roughly right, this yew was young while the western Roman empire was coming apart, and it has been in the same wood through everything since, logged, replanted and walked over for fifteen centuries without anybody getting around to cutting it.\n\nFinding it is the visit. It sits under rocks off the marked paths, and the commune's own page says plainly that it is hard to find. Take the coordinates, take an hour, and expect to search.",
+      "verified_sources": [
+        "https://cremines.ch/if_millenaire.html",
+        "https://www.baumkunde.de/baumregister/2085-die_alte_dame_von_cremines_eibe/"
+      ],
+      "access": "Free, public forest (Foret du Maljon). No path or signposts lead to it directly; the commune's own page says it stands hidden under rocks, off the walking paths, deliberately hard to find. Public land, not private, but expect a real search on foot.",
+      "transport": "No public transport nearby; nearest station is Cremines on the Moutier-Solothurn line, then on foot up into the Maljon forest (steep, unmarked, roughly 45-60 min walk based on hiking-site descriptions; not verified by us step by step).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

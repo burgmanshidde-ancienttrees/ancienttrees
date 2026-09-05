@@ -2,11 +2,11 @@
   "city": "Hobart",
   "country": "Australia",
   "status": "needs_curation",
-  "intro": "Hobart's significant trees split neatly into two short loops. Four stand on city streets within about 650 metres, including a Norfolk Island pine of the species whose brittle masts disappointed Cook's crew and three dawn redwoods of a tree known only from fossils until 1941. The other three are inside the Royal Tasmanian Botanical Gardens, founded in 1818 and the second oldest in Australia, where a Douglas fir planted in 1894 is older than the country it stands in.",
-  "meta_description": "Seven significant trees in Hobart: dawn redwoods known only as fossils until 1941, and a Douglas fir older than Australia itself.",
-  "question_meta": "Hobart's oldest dated tree is the pair of giant sequoias planted in 1879 at the Botanical Gardens entrance. Where they stand, plus nine more.",
+  "intro": "Hobart's significant trees split into two short loops and one long drive. Four stand on city streets within about 650 metres, including a Norfolk Island pine of the species whose brittle masts disappointed Cook's crew and three dawn redwoods of a tree known only from fossils until 1941. Six more are inside the Royal Tasmanian Botanical Gardens, founded in 1818 and the second oldest in Australia, where a Douglas fir planted in 1894 is older than the country it stands in. Two hours south, in the Arve Valley, stands Australia's tallest tree.",
+  "meta_description": "Eleven trees in and around Hobart: dawn redwoods known only as fossils until 1941, and Centurion, Australia's tallest tree, two hours south.",
+  "question_meta": "Hobart's oldest dated tree is the pair of giant sequoias planted in 1879 at the Botanical Gardens entrance. Where they stand, plus ten more.",
   "question_answer": "The oldest trees in Hobart with a documented date are the two giant sequoias on the entrance drive of the Royal Tasmanian Botanical Gardens, planted in 1879 and so 147 years old, which for a species that lives past three thousand years is barely a start. The National Trust confirms the date. The Douglas fir deeper in the same gardens follows at 1894. Both are free to visit inside the gardens, which open daily and keep seasonal hours.",
-  "question_context": "Hobart's City Significant Tree Register is a planning instrument rather than a heritage list, which shapes what can be said here. It records species, a per-tree coordinate and a planning reference, and it gives a reason for listing rather than an age, so most of these trees carry no date at all and this page leaves those blank instead of estimating. Two entries cover more than one trunk, because the register itself groups them as a single significance record: three dawn redwoods about twenty metres apart on Elizabeth Street, and a pair of sequoias at the gardens. Where a date does exist it comes from the National Trust rather than the register. Two further register trees are absent on purpose: one sits in the grounds of Government House, open only on scheduled days, and one in a private school. Where a tree's condition is disputed between assessments, as at the cathedral, the disagreement is in that tree's own story rather than resolved quietly.",
+  "question_context": "Hobart's City Significant Tree Register is a planning instrument rather than a heritage list, which shapes what can be said here. It records species, a per-tree coordinate and a planning reference, and it gives a reason for listing rather than an age, so most of these trees carry no date at all and this page leaves those blank instead of estimating. Two entries cover more than one trunk, because the register itself groups them as a single significance record: three dawn redwoods about twenty metres apart on Elizabeth Street, and a pair of sequoias at the gardens. Where a date does exist it comes from the National Trust rather than the register. Two further register trees are absent on purpose: one sits in the grounds of Government House, open only on scheduled days, and one in a private school. Where a tree's condition is disputed between assessments, as at the cathedral, the disagreement is in that tree's own story rather than resolved quietly. One entry is not on the city register at all: Centurion, Australia's tallest tree, stands in state forest in the Arve Valley, a drive of an hour and a half to two hours south.",
   "faq": [
     {
       "q": "What is the oldest tree in Hobart?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are Hobart's significant trees free to visit?",
-      "a": "Yes. Four stand on public streets and are visible at any hour; the other three are in the Royal Tasmanian Botanical Gardens, which charges no admission but keeps seasonal opening hours."
+      "a": "Yes, all of them. Four stand on public streets and are visible at any hour; six are in the Royal Tasmanian Botanical Gardens, which charges no admission but keeps seasonal opening hours; and Centurion stands in state forest with no gate and no ticket, though reaching it needs a car."
     },
     {
       "q": "Can I see them in one walk?",
-      "a": "In two short ones. Four sit within about 650 metres in the city centre, and three inside the botanical gardens about 1.6 kilometres away, a loop of roughly 200 metres once you are there."
+      "a": "In two short ones, plus a drive. Four sit within about 650 metres in the city centre, and six inside the botanical gardens about 1.6 kilometres away. Centurion, in the Arve Valley, is a separate day out by car."
     }
   ],
   "hero_tree_id": "hob_007",
@@ -320,6 +320,37 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "hob_011",
+      "name": "Centurion",
+      "species": "Mountain Ash (Eucalyptus regnans)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1200,
+      "height_m": 96,
+      "location": {
+        "address": "Arve Valley, Tall Trees area off Arve Road, south of Geeveston, Huon Valley, Tasmania",
+        "latitude": -43.097684,
+        "longitude": 146.802085,
+        "neighbourhood": "Geeveston / Arve Valley (day trip from Hobart)"
+      },
+      "story": "Australia's tallest tree was found by a computer. In August 2008 Forestry Tasmania staff running LiDAR over state forest in the Arve Valley picked out a return that should not have been there, walked in, and found a mountain ash within a whisker of a hundred metres tall. It was the hundredth notable tree they had catalogued, which is where the name came from. For a while they also called it the Bradman, because an early tape-drop of 99.82 metres landed close to Don Bradman's Test batting average.\n\nThe measurements have wandered ever since: 99.6 metres by tape in 2008, 99.82 in 2014, a lower 99.67 in 2016, and a laser-measured 100.5 metres in December 2018. Then the 2019 Tasmanian bushfires came through. Centurion survived with a new hollow burned into its base. A neighbouring giant called the Prefect, nineteen metres round, did not. By 2025 the tree was reported at 96 metres, four metres shorter, still alive and still growing.\n\nNo age has ever been published for it. Getting there is a genuine expedition: an hour and a half to two hours south of Hobart by car, forestry roads through an active logging area that can close without warning, then an unmarked muddy track through rainforest with no phone signal at any point.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Centurion_(tree)",
+        "https://www.abc.net.au/news/2018-12-12/new-milestone-for-australias-tallest-tree-centurion/10604588"
+      ],
+      "access": "Free, no permission needed; a state forest reserve reached via a rough but 2WD-passable forestry road (Arve Road/Edwards Link Road) and then an unmarked, muddy, self-guided walking track through rainforest. No gate, booking or ticket, but genuinely remote: no mobile phone coverage, and access roads sit inside an active logging area and can close without notice.",
+      "transport": "No public transport reaches it. Roughly 1.5 to 2 hours' drive south of Hobart via the Huon Highway to Geeveston, then forestry roads; the final stretch is on foot. An honest day trip by car, not a walk from town.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

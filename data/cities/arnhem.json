@@ -2,10 +2,10 @@
   "city": "Arnhem",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane beside the village church that watched German soldiers move in and Allied paratroopers fight past. Five more stand in Velperplein park, laid out after an 1880 design competition, steps from the city's 19th-century concert hall. Park Sonsbeek adds seven: four oaks spanning the 1750s to the 1840s, an unusually thick yew, a copper beech, and a chestnut in the woods above the deer park. None require a ticket.",
-  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 27 verified trees, real stories, how to reach each one.",
+  "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane beside the village church that watched German soldiers move in and Allied paratroopers fight past. Five more stand in Velperplein park, laid out after an 1880 design competition. Park Sonsbeek adds seven, Park Zijpendaal and Gulden Bodem another five, and Park Angerenstein four within a hundred metres of each other, including a tulip tree 37 metres tall and 5.39 metres round. None require a ticket.",
+  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 37 verified trees, real stories, how to reach each one.",
   "question_answer": "Arnhem's oldest tree is very likely one of De Poortwachters, three sweet chestnuts planted around 1650 to 1700 at the entrance to Kasteel Zijpendaal, now roughly 350 to 375 years old. Locals have nicknamed the two thickest Hans and Gretel and the leaner third the Witch.",
-  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 26 on the city's list.",
+  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 36 on the city's list.",
   "question_context": "De Poortwachters, three sweet chestnuts at the gate of Kasteel Zijpendaal, are the best-documented candidates for Arnhem's oldest tree, planted somewhere between 1650 and 1700 and now measured at roughly 750, 718 and 472 centimetres around. A local legend credits Karel van Egmond, the last independent Duke of Guelders, with planting them personally; the dates rule that out, since he died in 1538, more than a century before these trees are estimated to have gone in. What the legend gets right is their role: everyone visiting the castle since has had to walk between them, which is likely how they earned their name. The competing candidate is the Huissensedijk plane beside the Bonifatiuskerk in Elden, dated anywhere from 1725 to 1800, a spread wide enough that at its earliest it could be the older. Given that uncertainty, the chestnuts are the safer answer, and they are free to visit any day. Park Sonsbeek has a claimant of its own, an oak beside the Lorentz Monument that the national register dates to between 1750 and 1800 and calls possibly one of the oldest trees in that park, which is a claim to the park rather than to the city.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Arnhem's ancient trees free to visit?",
-      "a": "Nearly all of them. 26 of 27 stand in public parks, public woodland or beside public streets, with no ticket and no gate. Three need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk; the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you; and the copper beech on Velperweg stands in a private garden, visible from a public car park but not reachable, so that one is a look rather than a visit."
+      "a": "Nearly all of them. 36 of 37 stand in public parks, public woodland or beside public streets, with no ticket and no gate. Three need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk; the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you; and the copper beech on Velperweg stands in a private garden, visible from a public car park but not reachable, so that one is a look rather than a visit."
     },
     {
       "q": "Which Arnhem tree is the thickest of its kind in the Netherlands?",
@@ -872,6 +872,321 @@
       ],
       "access": "Free, public landscape park and estate (Landgoed Zijpendaal, managed by Geldersch Landschap & Kasteelen).",
       "transport": "About 25 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_028",
+      "name": "The Hungarian Oak of Park Zijpendaal",
+      "species": "Hungarian Oak (Quercus frainetto)",
+      "age_estimate": "around 120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Park Zijpendaal (middle-west side), Arnhem",
+        "latitude": 51.996353,
+        "longitude": 5.893977,
+        "neighbourhood": "Zijpendaal"
+      },
+      "story": "The national register calls this the tallest Hungarian oak ever measured in the Netherlands, and, so far, in Europe. That is the register's own claim rather than a settled record: it is the only body that has published a measurement of this tree, and nobody else appears to have put up a rival figure.\n\nThe lean is easier to check than the height. For most of its life the oak stood hemmed in on its western side by tall beeches, and it did what a crowded tree does. It went east, away from the competition, and set its whole frame at an angle. The beeches have gone now. The register notes fresh growth filling in on the west side of the crown, a tree quietly rebuilding the half of itself it was never allowed to have.\n\nHungarian oak is a southeast European species, a long way from home on the middle-west side of a Gelderland park. This one went into the ground between 1900 and 1910, which makes it old enough to have stood through the occupation and through the fighting that wrecked much of Arnhem in 1944.\n\nPark Zijpendaal is open every day and costs nothing. The register is our only source here, so treat the superlative as theirs. If you have a photograph of this oak from before the beeches came down, we would like to see it.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1692980)",
+        "https://nl.wikipedia.org/wiki/Park_Zypendaal",
+        "https://www.visitarnhem.com/locaties/3169671233/park-zypendaal"
+      ],
+      "access": "Free, public landscape park and estate (Park Zijpendaal, freely accessible, open every day of the week per the park's own visitor information).",
+      "transport": "About 20 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_029",
+      "name": "The Twin Giant Sequoias of Gulden Bodem",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "around 160 years",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Gulden Bodem, near the car park, Arnhem",
+        "latitude": 51.998922,
+        "longitude": 5.891668,
+        "neighbourhood": "Gulden Bodem"
+      },
+      "story": "The hunting lodge these two sequoias were planted for has vanished without trace. The trees are still standing, roughly 160 years on, and are about the least removable thing in the park.\n\nGulden Bodem was a private estate when they went in, probably around 1870, with a lodge and a coach house at its centre and a landscape park laid out around them. Both buildings are gone. The park survived, passed to the municipality of Arnhem, and has been a national monument since 2006, which means the ground itself is now protected.\n\nGiant sequoia was a status purchase on nineteenth-century estates across northern Europe. Whoever ordered these ordered two, and set them close enough together that the national register still lists them as one entry at one point, describing them as impressive, in reasonable condition, and clearly visible from the path.\n\nThey stand near the car park, which is an unglamorous address for a species that can live past three thousand years. Treat them as the start of a walk rather than the end of one: Park Zijpendaal and its castle are a few minutes further on.\n\nOnly the register has recorded these two, so the 1870 dating is one authority's estimate. If you know when the lodge came down, or have a picture of it, tell us.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1692429)",
+        "https://nl.wikipedia.org/wiki/Gulden_Bodem_(park)"
+      ],
+      "access": "Free, public park; Gulden Bodem is owned by the municipality of Arnhem and has been a national heritage site (rijksmonument) since 2006. Wikipedia's infobox lists it as 'open voor publiek'.",
+      "transport": "About 23 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_030",
+      "name": "The Silver Maple of Zijpendaal",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "around 160 years",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Southeast of Kasteel Zijpendaal, Park Zijpendaal, Arnhem",
+        "latitude": 51.998645,
+        "longitude": 5.893906,
+        "neighbourhood": "Zijpendaal"
+      },
+      "story": "Silver maple is the first tree in this park to do anything each year. It flowers in March, on bare twigs, weeks before the beeches and oaks around it have accepted that winter is over.\n\nThis one stands southeast of Kasteel Zijpendaal, the manor house at the centre of the park, and the national register dates its planting to between 1860 and 1870. Under history the register has written a single word: unknown. That is the ordinary record of a tree that was bought, planted and then left to grow while the house in front of it collected all the attention.\n\nIt is a North American species and an uncommon one to find on a Dutch monumental list, which is a good part of why it is on ours. Silver maple grows fast, sheds limbs in storms and is not famous for reaching a great age, so a specimen approaching 160 years in an open park is doing better than the species' reputation.\n\nThe park is free and open every day. Come in March for the flowers. Come in July and you get the other half of the name, a crown that turns pale silver every time the wind lifts the leaves.\n\nNobody outside the register has written this tree down. If you know who planted it, we would like to hear from you.",
+      "best_time": {
+        "months": [
+          3
+        ],
+        "kind": "flowers",
+        "label": "March, when it flowers on bare twigs before anything else in the park stirs"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1677498)",
+        "https://nl.wikipedia.org/wiki/Park_Zypendaal"
+      ],
+      "access": "Free, public landscape park and estate (Park Zijpendaal, freely accessible, open every day of the week).",
+      "transport": "About 22 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_031",
+      "name": "The Beech of St Elisabeth's Gasthuis",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "around 130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "In front of the former St Elisabeth's Gasthuis, Utrechtseweg, Arnhem",
+        "latitude": 51.984774,
+        "longitude": 5.885657,
+        "neighbourhood": "Utrechtseweg"
+      },
+      "story": "The hospital this beech stands in front of is now a block of flats with a dental practice in it. The tree did not move.\n\nSt Elisabeth's Gasthuis on Utrechtseweg is a protected national monument, listed as a complex on the state's own register, and has been converted into apartments under the name St. Elisabethshof. The beech went into the ground in front of it between 1890 and 1900, which puts it at around 130 years old. It stands on the street side rather than in any courtyard behind the building, so there is no gate, no bell and nobody to ask.\n\nUnder history the national tree register has written nothing whatsoever. That is the usual fate of an institutional tree. Somebody ordered it, somebody dug the hole, the annual reports recorded the patients rather than the planting, and a century later the beech is the only thing on the plot still doing the job it was put there for.\n\nIt is about twelve minutes on foot from Arnhem Centraal, uphill along Utrechtseweg, which makes it an easy first stop before the parks further out.\n\nThe register is the only source that has recorded this tree, and its dating is a decade-wide band rather than a planting record. If there is a photograph of the Gasthuis with a young beech in front of it, that would date it better than we can.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1678328)",
+        "https://rijksmonumenten.nl/monument/516738/sint-elisabeths-gasthuis/arnhem/",
+        "https://monumentenregister.cultureelerfgoed.nl/complexen/516737"
+      ],
+      "access": "Free. Stands in front of the former St Elisabeth's Gasthuis building on Utrechtseweg, a public street; the complex itself is now apartments and a dental practice, both protected national monuments, but the register marks the tree itself visitable=ja, visible=ja, in front of (rather than behind or within) the building.",
+      "transport": "About 12 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_032",
+      "name": "The Wagnerlaan Poplar",
+      "species": "Poplar (Populus sp.)",
+      "age_estimate": "around 120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Wagnerlaan, opposite Rijnstate hospital, Arnhem",
+        "latitude": 51.9999,
+        "longitude": 5.912237,
+        "neighbourhood": "Alteveer/Cattepoel"
+      },
+      "story": "The national register calls this a Chinese poplar and then stops, which leaves a monumental tree whose species nobody has actually pinned down. Several different poplars are grown in the Netherlands under that name, and no source we can find says which one is standing on Wagnerlaan. If you know poplars, this is a question you could settle from the pavement, and we would like you to.\n\nThe rest is on record. Planted between 1900 and 1910, owned by the city, growing in a plantsoen, a strip of public green, diagonally opposite the Rijnstate hospital. Under history the register has written nothing.\n\nA poplar reaching 120 years is worth noticing on its own terms. The genus is known for growing fast and dying young, and municipal tree departments across Europe have spent decades taking ageing poplars down as a safety matter, which makes an official monumental designation for one of them unusual rather than routine.\n\nIt stands about seventy metres from the Cattenpoelseweg oak, so the two are one stop rather than two, on a residential corner nobody comes to Arnhem for. That is a good part of the appeal. This is a tree on the way to the shops that has quietly outlived everybody who planted it.\n\nThe register is our only source. Tell us what it is and we will name it properly.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1677486)"
+      ],
+      "access": "Free, public green strip (plantsoen), gemeente-owned, on Wagnerlaan opposite Rijnstate hospital.",
+      "transport": "About 26 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_033",
+      "name": "The Cattenpoelseweg Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "around 160 years",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Cattenpoelseweg, at the corner with Wagnerlaan, Arnhem",
+        "latitude": 51.999758,
+        "longitude": 5.913289,
+        "neighbourhood": "Alteveer/Cattepoel"
+      },
+      "story": "Two trees on the national monumental register stand seventy metres apart on this ordinary residential corner, and neither has a single line of history attached to it. This is the older of the pair.\n\nThe register lists it as Zomereik Cattenpoelseweg, a pedunculate oak planted between 1860 and 1870, owned by the city, growing on the public green where Cattenpoelseweg meets Wagnerlaan. Under history it has written nothing at all.\n\nThat gap is worth sitting with for a moment. An oak planted in the 1860s on what is now a suburban junction was almost certainly not planted for a junction. Whatever it was put in as, a boundary marker, part of an avenue, a piece of somebody's grounds, the city grew out around it, the houses arrived, the road was surfaced and named, and the tree simply kept going. At roughly 160 years old it is the reason this corner has any canopy at all.\n\nThe Wagnerlaan poplar is seventy metres away, so see them together. Both stand on public verge, both are free, and neither asks anything of you beyond turning up.\n\nThe register is our only source here. Dutch tree enthusiasts appear to have written about this oak elsewhere, and if you know where, send it and we will strengthen the entry.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1688068)"
+      ],
+      "access": "Free, public green strip (plantsoen), gemeente-owned, on the corner of Cattenpoelseweg and Wagnerlaan.",
+      "transport": "About 27 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_034",
+      "name": "The Cedar of Lebanon of Angerenstein",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Park Angerenstein, Arnhem",
+        "latitude": 51.994573,
+        "longitude": 5.937219,
+        "neighbourhood": "Angerenstein"
+      },
+      "story": "This cedar was planted while Angerenstein was still somebody's private country estate. The national register puts it in the ground between 1750 and 1800, which makes it the oldest tree in this corner of Arnhem by a clear margin, roughly 250 years.\n\nThat is a long life for a Cedar of Lebanon in the Netherlands, and a long time to have watched the ownership change under it. Angerenstein was a buitenplaats for most of its existence. It opened to the public in 1921, and in 1941 the last private owners sold the whole estate to the municipality of Arnhem, which is why the question people usually ask about this park, whether you are allowed to walk in, has a flat answer. Yes, free, any day.\n\nUnder history the register has written nothing. A cedar does not really need it. The species carries its own architecture, tiers of flat horizontal branch plates stacked one above another, which is exactly why estate owners planted them in front of houses in the first place, and why this one still reads as a deliberate decision two and a half centuries later.\n\nIt is one of four monumental trees within about a hundred metres here, alongside a tulip tree, a Japanese maple and an oak by the pond. Do them as a single loop, eight minutes' walk from Arnhem Presikhaaf station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1677478)",
+        "https://nl.wikipedia.org/wiki/Park_Angerenstein",
+        "https://www.buitenplaatseninnederland.nl/arnhem-angerenstein.html"
+      ],
+      "access": "Free, public park. Park Angerenstein has been municipally owned and open to the public since 1941 (the last private owners sold the estate to the gemeente that year); confirmed independently as 'vrij toegankelijk' (freely accessible) via buitenplaatseninnederland.nl, though the manor house itself is not open.",
+      "transport": "About 8 minutes' walk from Arnhem Presikhaaf station (the nearest bus stop is on Rosendaalseweg).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_035",
+      "name": "The Tulip Tree of Angerenstein",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "around 210 years",
+      "age_min": 206,
+      "age_max": 220,
+      "girth_cm": 539,
+      "location": {
+        "address": "In the park in front of Huis Angerenstein, Arnhem",
+        "latitude": 51.995015,
+        "longitude": 5.937609,
+        "neighbourhood": "Angerenstein"
+      },
+      "story": "In December 2010 a local history group put a tape around this tulip tree at chest height and read 5.39 metres, then measured it at 37.5 metres tall. On their reckoning that made it one of the largest tulip trees in the Netherlands and possibly the fourth-thickest in Europe. It had put on about three centimetres of girth in the previous year alone, so whatever those numbers are today, they are larger.\n\nThirty-seven and a half metres is exceptional for the species anywhere outside its native eastern North America. The national register dates the planting to between 1810 and 1820, which fits the roughly two hundred years the measurers estimated at the time and puts the tree in the park in front of Huis Angerenstein while the place was still a private estate.\n\nTulip trees earn a detour twice a year. The flowers are genuinely tulip-shaped, green with an orange band inside, and on a tree this tall most of them are out of reach of the eye. The autumn is not. The whole crown turns a clear butter yellow and holds it for weeks.\n\nPark Angerenstein has been open to the public since 1921 and municipally owned since 1941. It costs nothing, and of the four monumental trees standing within a hundred metres of each other here, this is the one to walk to first.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when 37 metres of crown turns clear yellow"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1677479)",
+        "https://www.angerenstein-arnhem.nl/historie/de-wijk/park-angerenstein/de-grootste-van-nederland/"
+      ],
+      "access": "Free, public park. Park Angerenstein has been municipally owned and open to the public since 1941; confirmed independently via Wikipedia and buitenplaatseninnederland.nl as a genuine, freely accessible public park.",
+      "transport": "About 8 minutes' walk from Arnhem Presikhaaf station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_036",
+      "name": "The Japanese Maple of Angerenstein",
+      "species": "Japanese Maple (Acer palmatum)",
+      "age_estimate": "around 100 years",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Park Angerenstein, inner garden (Binnentuin), Arnhem",
+        "latitude": 51.993617,
+        "longitude": 5.938962,
+        "neighbourhood": "Angerenstein"
+      },
+      "story": "Most Japanese maples are shrubs you can see over the top of. This one is on the Dutch national register of monumental trees, which for Acer palmatum is unusual.\n\nIt grows in the Binnentuin, the inner garden inside Park Angerenstein, and the register dates it to between 1920 and 1930. It was designated on dendrological grounds rather than historical ones, which is the register's way of saying that nothing happened here and the tree itself is the whole reason. A century is a great age for the species in this climate, and the size that comes with it turns a garden plant into something you can stand underneath.\n\nUnder history the register has written nothing. There is no founder, no anniversary and no legend, only a Japanese maple that somebody set in a corner of a Gelderland estate in the 1920s and that nobody ever got round to removing.\n\nCome in late autumn. Acer palmatum is planted almost entirely for one fortnight of the year, when the leaves run through orange into deep red and hold the light like coloured glass, and a hundred-year-old specimen does it at a scale no garden centre plant can manage.\n\nThe park is free and open daily. Only the register has recorded this tree, so the dating is one authority's band.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late autumn, when the leaves run from orange into deep red"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1692441)",
+        "https://nl.wikipedia.org/wiki/Park_Angerenstein"
+      ],
+      "access": "Free, public park (Park Angerenstein, municipally owned and open since 1941).",
+      "transport": "About 8 minutes' walk from Arnhem Presikhaaf station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_037",
+      "name": "The Angerenstein Pond Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 176,
+      "age_max": 226,
+      "location": {
+        "address": "Park Angerenstein, south edge of the pond near the Zuenkerk, Arnhem",
+        "latitude": 51.994142,
+        "longitude": 5.939031,
+        "neighbourhood": "Angerenstein"
+      },
+      "story": "The national register thinks this is probably the oldest tree in Park Angerenstein and will not quite say so. Its note reads: probably among the oldest trees present in the park, possibly planted around 1800. The planting band it records runs from 1800 to 1850, and we have kept the whole of it rather than narrowing to the flattering end.\n\nSo: somewhere between about 175 and 225 years old, an oak on the south bank of the pond. Angerenstein is threaded with streams, ponds and small waterfalls, and this tree has the best address in the park, standing on the edge with the water in front of it.\n\nThe register places it near something it calls the Zuenkerk. We could not find out what that is. It is not a church anyone lists, and it reads like a local name for a garden building, a ruin or a spot that everybody in the neighbourhood knows and nobody has ever written down. If you know, tell us, because we would like to name the place properly.\n\nThe park has been open to the public since 1921 and municipally owned since 1941, so there is no ticket and no gate. This oak sits at the water end of a short loop of four monumental trees, eight minutes' walk from Arnhem Presikhaaf station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1695210)",
+        "https://nl.wikipedia.org/wiki/Park_Angerenstein"
+      ],
+      "access": "Free, public park (Park Angerenstein, municipally owned and open since 1941). Wikipedia independently confirms the park's characteristic network of streams, ponds and waterfalls, consistent with this tree's pond-edge location.",
+      "transport": "About 8 minutes' walk from Arnhem Presikhaaf station.",
       "photo": {
         "url": null,
         "license": null,

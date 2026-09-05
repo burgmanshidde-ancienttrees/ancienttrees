@@ -3,11 +3,11 @@
   "country": "Australia",
   "status": "needs_curation",
   "oldest_tree_id": "syd_005",
-  "intro": "Sydney's oldest trees are colonial garden plantings, and two of the most famous are not the original tree at all. The Camperdown Cemetery fig went in the year the cemetery opened, 1848. The Bidwill kauri in the Royal Botanic Garden grew from seed collected on New Year's Day 1849 by the Garden's first director. The jacaranda in the university Quadrangle and the Botanic Garden's Wishing Tree are both replacements for celebrated predecessors that died, which their pages say in the first line rather than the last.",
+  "intro": "Sydney's oldest trees are colonial garden plantings, and two of the most famous are not the original tree at all. The Camperdown Cemetery fig went in the year the cemetery opened, 1848. The Bidwill kauri in the Royal Botanic Garden grew from seed collected on New Year's Day 1849 by the Garden's first director. The jacaranda in the university Quadrangle and the Botanic Garden's Wishing Tree are both replacements for celebrated predecessors that died, which their pages say in the first line. At Carramar, an oak planted in 1842 was once called the largest tree in Australia.",
   "meta_description": "Sydney's remarkable trees: an 1848 Moreton Bay fig in Camperdown Cemetery, the Bidwill kauri grown from 1849 seed, and two honest replacements.",
   "question_answer": "Sydney's oldest documented tree is the Moreton Bay fig in Camperdown Cemetery in Newtown, planted in 1848, the year the cemetery itself opened, with a canopy now spanning more than thirty metres. The Bidwill Kauri in the Royal Botanic Garden runs it close: its seed was collected at Maryborough in Queensland on New Year's Day 1849 and the tree was planted in 1853.",
   "question_meta": "The Moreton Bay fig in Camperdown Cemetery, planted in 1848 when the cemetery opened, is Sydney's oldest documented tree.",
-  "question_context": "Sydney is a young city for trees and an honest answer says so. Everything datable here was planted by colonists in the middle of the nineteenth century, which puts the oldest at not quite two hundred years, and the trees that people talk about most are younger still. The jacaranda in the University of Sydney Quadrangle is famous enough to appear in graduation photographs and superstition, and the tree standing there today is a clone planted in 2017 after the 1928 original died the year before. The Botanic Garden's Wishing Tree carries a plaque saying outright that it will never match the tree it replaced, a Norfolk Island pine from around 1816 that died in 1945. Neither belongs on a list of old trees under any other description, and both are here because the place itself is worth standing in. The genuinely old ones are the figs. Camperdown Cemetery's dates from 1848, Vaucluse House's Port Jackson fig from the 1850s, and a fig on a Woolwich verge was dated to about 1900 by a council officer reading old photographs.",
+  "question_context": "Sydney is a young city for trees and an honest answer says so. Everything datable here was planted by colonists in the middle of the nineteenth century, which puts the oldest at not quite two hundred years, and the trees that people talk about most are younger still. The jacaranda in the University of Sydney Quadrangle is famous enough to appear in graduation photographs and superstition, and the tree standing there today is a clone planted in 2017 after the 1928 original died the year before. The Botanic Garden's Wishing Tree carries a plaque saying outright that it will never match the tree it replaced, a Norfolk Island pine from around 1816 that died in 1945. Neither belongs on a list of old trees under any other description, and both are here because the place itself is worth standing in. The genuinely old ones are the figs. Camperdown Cemetery's dates from 1848, Vaucluse House's Port Jackson fig from the 1850s, and a fig on a Woolwich verge was dated to about 1900 by a council officer reading old photographs. The Bland Oak at Carramar beats all of them on paper, planted in 1842 and documented as such.",
   "faq": [
     {
       "q": "What is the oldest tree in Sydney?",
@@ -23,7 +23,7 @@
     },
     {
       "q": "Are the locations exact?",
-      "a": "Not all of them. Four of the six pins are approximate, meaning we know the garden, cemetery or street but not the trunk, and the pages say which. If you find one, tell us where it stands and we will sharpen the pin."
+      "a": "Not all of them. Four of the seven pins are approximate, meaning we know the garden, cemetery or street but not the trunk, and the pages say which. If you find one, tell us where it stands and we will sharpen the pin."
     }
   ],
   "trees": [
@@ -218,6 +218,36 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "syd_007",
+      "name": "Bland Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 184 years (planted 1842)",
+      "age_min": 180,
+      "age_max": 190,
+      "girth_cm": null,
+      "location": {
+        "address": "Oakdene Park, Bland Street, Carramar NSW 2163",
+        "latitude": -33.8797,
+        "longitude": 150.9617,
+        "neighbourhood": "Carramar, City of Fairfield, Greater Western Sydney"
+      },
+      "story": "On New Year's Day 1941 a storm split what was reported to be the largest tree in Australia into two pieces. The salvaged timber was carved into Fairfield's mayoral chair, now held at the city's museum, and the oak itself is still alive in Oakdene Park.\n\nWilliam Bland planted it in 1842. He arrived in New South Wales as a convict and became one of colonial Sydney's more prominent figures, a surgeon, a politician, a farmer and an inventor. What he put in the ground was a southern live oak, an American species, and 1842 is a documented planting date rather than an estimate, which gives this tree one of the few real birthdays in Sydney: 184 years.\n\nIt never recovered the size it lost in 1941 and it is still the largest oak of its kind in the city, about thirteen metres tall with a canopy spreading more than thirty metres across. Fairfield put it on the city's coat of arms. The National Trust added it to the National Register of Significant Trees in 2018, and in 2020 the council germinated acorns from it to raise about ten young Bland Oaks around the district, which is the most practical answer anyone has found to a tree that cannot last forever.\n\nOakdene Park is free and open at any hour. Carramar station is a short walk, 45 to 60 minutes by train from central Sydney.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Bland_Oak",
+        "https://heritagecollection.fairfieldcity.nsw.gov.au/nodes/view/6808"
+      ],
+      "access": "Free, public council park (Oakdene Park), open at all times, no restrictions.",
+      "transport": "Carramar railway station (Sydney Trains T5 Cumberland Line) is close by; roughly 45-60 minutes by train from central Sydney.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
