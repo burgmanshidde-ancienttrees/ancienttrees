@@ -1040,7 +1040,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -5413,6 +5413,34 @@
     "note": "Session wrote and merged the 2 staged verified candidates directly (no fresh agent dispatch): Brielow (new single-tree place, brw_001, Brandenburgs thickest tree) and lnw_001 joining Wessobrunn as a second tree 3.7km from the Tassilolinde. Both photos found and approved from the leads own Commons candidates (Cadiz standard checked by eye). Claim released.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "arnhem",
+    "kind": "verify",
+    "tokens": 172953,
+    "trees": 10,
+    "note": "Register-backed extension (Zijpendaal/Gulden Bodem, 7 trees) plus a confirmed-public Angerenstein cluster (4 trees, one folded as a paired sequoia entry); most single-sourced/flagged, monumentaltrees.com and several Arnhem tree-blog hosts 403d as expected."
+   },
+   {
+    "target": "_famous-switzerland",
+    "kind": "verify",
+    "tokens": 215395,
+    "trees": 5,
+    "note": "First pass on this country, all 10 leads fresh. 5 verified (2 dead/blocked, 3 left as leads with reasons incl. a private-land access question). Longer than the 40min guidance because several needed real disambiguation (same-region namesakes, dead-vs-replanted)."
+   },
+   {
+    "target": "_famous-australia",
+    "kind": "verify",
+    "tokens": 225060,
+    "trees": 3,
+    "note": "Cleared the remaining 9 unresolved leads from a 2026-09-04 batch. Confirmed Barcaldine Tree of Knowledge is dead (poisoned 2006, preserved trunk only) so blocked it; 2 leads turned out to be pre-existing duplicates; 3 more dead/gone."
+   },
+   {
+    "target": "arnhem + _famous-switzerland + _famous-australia",
+    "kind": "write",
+    "tokens": 236227,
+    "trees": 18,
+    "note": "18 stories in one batched context: 10 Arnhem (register-only), 2 joining Zurich, 1 each joining Hobart/Sydney, 4 new single-tree places (Cremines, Villeneuve, Fribourg, Timber Creek). ~12.9k tokens/tree, inside the 15k target. Build+qa+preflight+superlatives all clean."
    }
   ]
  }
