@@ -1,6 +1,59 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation 6, of a window an earlier attempt stopped early at 90 min with 30 unspent) - Ramsau bei Berchtesgaden ships (Hindenburglinde), 3 stale claims released, git-auth confirmed recovered
+
+Continuing straight from continuation 5's token failure. `git pull --rebase`
+worked cleanly this time and every push in this entry succeeded, so the
+GitHub App token has refreshed; the credential problem recorded there and in
+the two entries before it is resolved for now, not permanently, since it
+recurs on session length rather than on anything this repo controls.
+
+Found the working tree carrying an earlier attempt's uncommitted verify-pass
+output: `data/leads/_famous-germany.json` modified (a genuine 2026-09-05
+famous-germany batch: Kaiserlinde Elversberg confirmed dead, replaced by a
+2021 sapling, moved to blocked; Hindenburglinde verified and written to
+`data/research/ramsau-verified.json`), plus two already-stale verified files
+(`_famous-slovakia-verified.json`, containing kre_001/kop_001, both already
+published as Kremnica/Kopcany in commit 83188bf6) and six disposable one-off
+helper scripts (`scripts/_sk_update.py`, `_tmp_*.py`, `_verify_update1.py`,
+each self-described or confirmed as already-applied scratch work). Deleting
+them was blocked by this environment's permission layer (destructive Bash
+denied even for `rm` and `git clean -n`), so they remain untracked and
+unstaged on disk; harmless since nothing untracked gets committed, but worth
+a manual `rm` if anyone is at a terminal.
+
+**Shipped:** wrote up and published the one real pending deliverable,
+Hindenburglinde (rsb_001), as a new single-tree place, Ramsau bei
+Berchtesgaden, Germany: a Nationalerbe-Baum (National Heritage Tree Nr. 18,
+designated 2022) lime beside the B305 Alpenstrasse, girth 10.85m, age
+disputed 400-1000 years across sources under the single-tree-destination
+exception. Committed together with the famous-germany leads-file update.
+Preflight and `npx astro build` both green; qa.py's only findings are the
+pre-existing site-wide "dead internal link '/'" noise seen on every page in
+this build environment, unrelated to this change.
+
+**Rung 2:** `python3 scripts/health.py` flagged Data digest as failing.
+Read the log: not a real break, a git race identical in shape to the ones
+already documented in this file. The digest committed its entry, `pull
+--rebase` said "up to date" (stale read), then `git push` was rejected
+because another push landed on main in between. The commit was never
+pushed and is gone with the runner. Could not `gh workflow run
+data-digest.yml` to force a clean retry (403, this session's token lacks
+`workflow_dispatch` scope); it will simply run again on tomorrow's
+schedule. No DATA.md row for 2026-09-05 as a result; not this run's to fix
+beyond noting it.
+
+**Claims:** released all three standing claims (`hallstatt`,
+`_famous-germany`, `_famous-lithuania`) rather than holding them idle for
+their remaining ~2 hours. No uncommitted research exists for hallstatt or
+lithuania; nothing is lost by releasing them, and holding a claim with no
+active work behind it is exactly the failure mode this session's own
+header warned about.
+
+FOR HIDDE: nothing blocking. The digest miss for today is cosmetic (DATA.md
+just has no row); tomorrow's digest re-ranks the queue as normal.
+
 ## 2026-09-05 (continuation 5) - git push started failing (expired token) with 5 more places committed locally, still unpushed at write time
 
 Continuing straight from continuation 4 (same session). After that entry's
