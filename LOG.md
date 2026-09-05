@@ -1,6 +1,71 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation 7, of a window an earlier attempt stopped early at 11 min with 109 unspent) - Finished the standing Hiroshima verify claim: Ujina camphor + Renkoji pine, new oldest tree; Prague deepening dispatched
+
+Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
+(one standing: hiroshima verify, 141 min left, with uncommitted output on
+disk from the earlier attempt: `data/research/hiroshima-verified.json`
+held 2 fully verified trees, `data/leads/hiroshima.json` had 4 newly
+blocked, `data/photo-queue.json` carried a routine API-sweep refresh).
+`leads.py --ready` was empty everywhere, so per BRIEF_WRITING.md's own
+precedent set twice already in this city this session, dispatched a small
+write-stories pass on just the 2 sunk-cost trees rather than waiting for a
+6-tree batch: the verification work was already paid for and sitting on a
+live claim.
+
+**Hiroshima: 11 to 13 trees.** The Camphor of Ujina Lighthouse (age
+genuinely disputed across sources by more than a century, left blank
+rather than picking a winner) and the Renge Pine of Renkoji (a Nagatsuka
+temple pine, crown held out on 24 posts, temple tradition dating it to
+1630). Both come from Japan's national giant-tree register rather than
+the A-bombed register the other 11 trees share, so merging them was more
+than a drop-in: rewrote the intro to name the two new outlying clusters,
+and rewrote question_answer/question_context/question_meta plus two FAQ
+entries, because the Renkoji pine's documented age band (300+ years,
+tradition ~390) is now the best-evidenced age on the page, ahead of every
+A-bombed tree's floor of "at least 81 years since it survived the bomb."
+`oldest_tree_id` moved from hir_002 to hir_013 accordingly, and the
+build's own token-mention check (`[city]/oldest-tree.astro`) confirms the
+answer names the right tree. Build (4603 pages) and qa.py (6893 pages)
+both clean. Released the hiroshima claim. Logged the write pass in
+agent-costs.json (99,423 tokens, 2 trees; above the usual per-tree rate
+because a two-tree batch pays the full rulebook read).
+
+Rung 2 (`health.py`): Data digest flagged failing again. Read the log:
+identical benign git-push race already diagnosed multiple times earlier
+in this session (local commit succeeds, `pull --rebase` reports stale
+"up to date", push rejected by a concurrent writer). Nothing new; not
+this run's to fix beyond noting it again.
+
+Rung 3 (REVIEW.md, 2026-09-05, 0 BLOCKER / 2 WARN): the Scheessel
+double-spelling WARN was already fixed by an earlier session (grep found
+no remaining "Scheeßel" in the city file). The second WARN (Gerichtslinde
+of Scheessel possibly not clearing the single-tree fame bar) is a
+judgment call about a published tree's fame credentials, not a rule
+violation; left as a note rather than unilaterally retiring a shipped
+tree on a WARN.
+
+Rung 1: 0 unprocessed submissions (checked the Supabase `submissions`
+table directly with the service key), 0 sighting photos waiting.
+
+Then worked rung 4. With the shelf empty and no new claims held,
+`city_queue.py --next` stage 2 plus DATA.md's "depth is allowed" roster
+both point at Prague again: 133 impressions in the measured window (real
+confirmed demand), 18/30 trees, and real unmined supply left (30 register
+candidates within reach, 233 Wikidata leads, plus 6 named leads an
+earlier pass left unresolved in `data/leads/prague.json`: a lime near the
+Neruda monument, a lime in the Knights of the Cross courtyard, a memorial
+elm, three oaks on Pavi vrch, a plane in Jezerka park, and Prague's
+largest recorded white mulberry, a species the city does not have yet).
+The "OPENABLE TODAY" stage-1 list was checked first but is mostly
+1-2-Wikidata-lead cities, too thin individually for a pass and not
+obviously batchable into a single walkable brief this window; left for a
+future pass that can genuinely batch several at once. Claimed Prague,
+dispatched a verify pass on the 6 named leads plus a few of the nearest
+unmined register candidates (2.2 to 2.9km out). Still running as this
+entry is written; claim is live in `data/in-flight.json`.
+
 ## 2026-09-05 (continuation 6, of a window an earlier attempt stopped early at 90 min with 30 unspent) - Ramsau bei Berchtesgaden ships (Hindenburglinde), 3 stale claims released, git-auth confirmed recovered
 
 Continuing straight from continuation 5's token failure. `git pull --rebase`
