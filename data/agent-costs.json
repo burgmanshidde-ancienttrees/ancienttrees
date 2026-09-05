@@ -5196,6 +5196,13 @@
         "tokens": 137702,
         "trees": 3,
         "note": "3 new single-tree places built end to end (Kawazu, Hinode, Nagai): stories, intros, question pages, FAQs, Japan country-page counts updated, leads resolved."
+      },
+      {
+        "target": "slovakia",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "pagegaps.py's biggest gap: hand-wrote the Slovakia country intro (3 cities, 9 trees already published), no research pass needed."
       }
     ]
   }
