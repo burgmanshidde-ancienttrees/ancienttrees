@@ -228,7 +228,13 @@ const collectionPages = defineCollection({
     // build, so finding an older tree updates the page by itself. `entries`
     // stays: a curated note on a tree in the ranking is still used for that
     // tree, so the hand-written lines are not thrown away.
-    generated: z.enum(["oldest", "thickest", "tallest"]).optional(),
+    // "autumn" and "harvest" (2026-09-05) rank on best_time instead of on a
+    // measurement: same shape, same contract, a different column of the same
+    // data. They exist because season is one of the four verbs and the only
+    // one no collection served.
+    generated: z
+      .enum(["oldest", "thickest", "tallest", "autumn", "harvest"])
+      .optional(),
     entries: z.array(
       z.object({
         city_slug: z.string(),

@@ -57,9 +57,10 @@ const crumbItems: [string, string | null][] = [
 // making a claim its own data does not. That costs the page 44 trees whose
 // upper estimate reaches 400, and it is the difference between a ranking and
 // a boast.
-// Two rankings so far, and the shape is deliberately one shape: a filter, an
-// order, a set of bands and one line of text per tree. A third (rarest
-// species, most northerly) is a config entry, not a new page.
+// Five rankings so far, and the shape is deliberately one shape: a filter, an
+// order, a set of bands and one line of text per tree. Three rank on a
+// measurement (age, girth, height) and two on best_time (autumn colour,
+// harvest). A sixth is a config entry plus an intro, not a new page.
 interface RankMode {
   qualifies: (t: any) => boolean;
   /** Sort keys, highest first. */
@@ -70,6 +71,26 @@ interface RankMode {
 }
 function n(x: number): string {
   return x.toLocaleString("en-GB");
+}
+// Season helpers. best_time is structured data (a month list, a kind, a label
+// written per tree), which is what makes a season ranking possible at all: no
+// prose is parsed and nothing is inferred.
+function bestKind(t: any, k: string): boolean {
+  return String(t.best_time?.kind ?? "").toLowerCase() === k;
+}
+/** The first month inside the season window, or null when the tree peaks outside it. */
+function peakMonth(t: any, from: number, to: number): number | null {
+  const ms = ((t.best_time?.months ?? []) as number[]).filter((m) => m >= from && m <= to);
+  return ms.length ? Math.min(...ms) : null;
+}
+// The tree's own label, which says what actually happens rather than naming a
+// month twice. A tree without one is filtered out rather than given a sentence
+// we invented.
+function seasonNote(t: any): string {
+  const l = String(t.best_time?.label ?? "").trim();
+  if (!l) return "";
+  const s = l[0].toUpperCase() + l.slice(1);
+  return /[.!?]$/.test(s) ? s : `${s}.`;
 }
 const MODES: Record<string, RankMode> = {
   // Ranked on the LOWER bound of the age, never the upper: a tree recorded as
@@ -132,6 +153,45 @@ const MODES: Record<string, RankMode> = {
       const floors = Math.max(2, Math.round(m / 3));
       return `${m} metres tall, about the height of a ${floors} storey building.`;
     },
+  },
+  // The two season rankings, added 2026-09-05. They rank on WHEN rather than on
+  // how big, because "how good is this one" is a taste judgement and the
+  // reader's real question is which weekend to go. Bands run in calendar order,
+  // so the band value is the months left in the window: the descending window
+  // the other three modes use then prints September before December without a
+  // second mechanism.
+  //
+  // A tree qualifies only when it carries both a kind and a label, so no line on
+  // either page is a sentence we wrote about a tree nobody judged.
+  autumn: {
+    qualifies: (t) =>
+      bestKind(t, "autumn colour") && peakMonth(t, 9, 12) !== null && !!t.best_time?.label,
+    keys: (t) => [t.age_min ?? 0, t.girth_cm ?? 0],
+    band: (t) => 12 - (peakMonth(t, 9, 12) ?? 12),
+    bands: [
+      { min: 3, heading: "September" },
+      { min: 2, heading: "October" },
+      { min: 1, heading: "November" },
+      { min: 0, heading: "December" },
+    ],
+    note: seasonNote,
+  },
+  // Fruit, nuts and mast: the kind of peak you can pick up off the ground rather
+  // than photograph. August to November is the window the data actually holds;
+  // a fig in June is a real peak and belongs on its own tree page, not in a
+  // collection called the harvest.
+  harvest: {
+    qualifies: (t) =>
+      bestKind(t, "fruit") && peakMonth(t, 8, 11) !== null && !!t.best_time?.label,
+    keys: (t) => [t.age_min ?? 0, t.girth_cm ?? 0],
+    band: (t) => 11 - (peakMonth(t, 8, 11) ?? 11),
+    bands: [
+      { min: 3, heading: "August" },
+      { min: 2, heading: "September" },
+      { min: 1, heading: "October" },
+      { min: 0, heading: "November" },
+    ],
+    note: seasonNote,
   },
 };
 const mode = coll.data.generated ? MODES[coll.data.generated] : null;
