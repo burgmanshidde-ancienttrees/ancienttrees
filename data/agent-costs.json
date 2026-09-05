@@ -1040,7 +1040,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -5466,6 +5466,15 @@
     "tokens": 58000,
     "trees": 7,
     "note": "8 stories drafted from _famous-france-verified.json; 7 merged into data/cities (tou_001 Toul, est_001 Estry, ran_001 Rannee, cly_001 Les Clayes-sous-Bois, arg_001 Argoules, jnc_001 Aubers, rys_001 Reyersviller). tbf_001 (Tombeboeuf) held back: unconfirmed 2022 fissure report and ambiguous private-land access. yvi_001 not written (no coordinate).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "hiroshima",
+    "kind": "write",
+    "tokens": 99423,
+    "trees": 2,
+    "note": "2 stories written (hir_012 Camphor of Ujina Lighthouse, disputed age; hir_013 Renge Pine of Renkoji, temple tradition ~390 years). Small batch (below the 6-tree floor) but sunk verify work already sitting on a live claim, cheapest available step. Also merged: became new oldest_tree_id (hir_013), rewrote question_answer/context/meta and 3 FAQ entries since the pine now carries the best-documented age on the page.",
     "wasted": 0,
     "brief_wrong": false
    }
