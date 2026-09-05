@@ -1,0 +1,71 @@
+{
+  "city": "Gottingen",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Gottingen maps one tree: the Gerichtslinde of Grone, a court-linden beside which a ducal court sat from 1241, with justice administered here from the sixteenth century until 1824 and the ground still used for executions as late as 1859. Hollow, cabled and still growing, it stands on an ordinary green strip on the edge of the city. Published alone here because the tree itself is the destination, not because Gottingen's research is finished.",
+  "meta_description": "The Gerichtslinde of Gottingen: a court-linden with a ducal court beside it since 1241, hollow and cabled today, free on the city's western edge.",
+  "question_meta": "Gottingen's only mapped tree is the Gerichtslinde, a court-linden 400 to 500 years old on a green strip in the Grone district.",
+  "question_answer": "Gottingen's oldest and only mapped tree is the Gerichtslinde, a Lime (Tilia sp.) standing on a green strip beside the B3 in the Grone district. Estimates of its age range widely, from about 300 to 520 years, with 400 to 500 the figure most often given.",
+  "question_context": "A Gerichtslinde was a court-tree: a broad tree on open ground where a village's justice was administered outdoors, in earshot of everyone. A ducal court sat at this one from 1241, and it remained in use for justice from the sixteenth century until 1824, with the ground still used for executions as late as 1859. Almost nothing about it is agreed beyond that history. A sign at the tree says it was planted in the sixteenth century; the forester Hans Joachim Frohlich put it at about 300 years in 1993; German Wikipedia gives 400 to 500; the Baumkunde register gives 420 to 520. The two main sources cannot even agree on the species, Wikipedia calling it a winter lime and Baumkunde a summer lime, which is why this page records it only as Tilia sp. The trunk, at least, is measured and growing: 5.30 metres round in 1993, 6.97 in 2016, 7.14 in December 2024. It is hollow and split, its crown held together with cables and last pruned in 2011.",
+  "hero_tree_id": "gtn_001",
+  "oldest_tree_id": "gtn_001",
+  "faq": [
+    {
+      "q": "What is a Gerichtslinde?",
+      "a": "A court-linden: a broad tree on open ground where a village or district's justice was administered outdoors. This one served that role from 1241 into the nineteenth century."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimates range from about 300 to 520 years across different surveys, with 400 to 500 the figure most often given. Nobody has settled it more precisely."
+    },
+    {
+      "q": "Is it even known what species it is?",
+      "a": "Not exactly. German Wikipedia calls it a winter lime, the Baumkunde register a summer lime. Both are recorded because neither source has been shown wrong."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a public green strip beside a federal road (the B3) in the Grone district, accessible at any time."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gtn_001",
+      "name": "Gerichtslinde Gottingen",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 400 to 500 years",
+      "age_min": 300,
+      "age_max": 520,
+      "girth_cm": 714,
+      "height_m": 25,
+      "location": {
+        "address": "Green strip south of Bundesstrasse 3 (B3), Grone district, Gottingen, Lower Saxony, Germany",
+        "latitude": 51.53495,
+        "longitude": 9.91229,
+        "neighbourhood": "Grone"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Gerichtslinde_(G%C3%B6ttingen)",
+        "https://www.baumkunde.de/baumregister/638-gerichtslinde_in_goettingen/"
+      ],
+      "access": "Free, stands on a public green strip beside a federal road; publicly accessible at all times.",
+      "transport": "Gottingen-Grone district, west of the city centre, on a green strip beside the B3.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A ducal court sat at this lime from 1241, and the ground beside it was still being used for executions in 1859.\n\nJustice was administered here from the sixteenth century until 1824. That is what a Gerichtslinde was for: a broad tree on open ground, the whole village within earshot, the verdict given outdoors where everyone could hear it. What is unusual about this one is how long the arrangement outlived the courtroom part of it. The tree stands today on a green strip beside the B3, a federal road on the western edge of Gottingen, in the Grone district.\n\nAlmost nothing else about it is agreed. A sign at the tree says it was planted in the sixteenth century. The forester Hans Joachim Frohlich put it at about 300 years in 1993. German Wikipedia's own text says 400 to 500, and the Baumkunde register says 420 to 520, so somewhere between 300 and 520 years is as tight as this gets. The two sources cannot even agree on the species: Wikipedia calls it a winter lime, Baumkunde a summer lime. The trunk, at least, is measured and still growing, from 5.30 metres round in 1993 to 6.97 in 2016 and 7.14 in December 2024.\n\nIt is hollow, the trunk split, sending roots down inside its own cavity, with the crown held together by cables and last pruned in 2011. Somebody is looking after it.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are gone and the hollow, cabled frame of it shows"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

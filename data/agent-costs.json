@@ -226,6 +226,13 @@
         "note": "deepen",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "famousgermany + famousjapan-b",
+        "kind": "write",
+        "tokens": 62000,
+        "trees": 8,
+        "note": "write-stories agent wrote 9 stories (3 DE, 6 JP); session then merged 8 into data/cities as 6 new single-tree places (sac_001 Sachsenbrunn, tel_001 Telgte, gtn_001 Gottingen, hga_001/002 Higashiomi, mai_001 Maibara, mit_001 Mito) plus ich_002 joining Ichinohe. 1 held (Ushikubo-no-Nagi, Nagi genus, re-corroborated but still fails the single-tree-destination test on fame evidence, per the prior 2026-09-04 verdict); full record kept on its leads entry. Normalised 3 species labels to canonical common names during writing/merge (Large-leaved Lime, Ohatsuki Ginkgo x2). Released the standing _famous-japan and _famous-germany claims. Preflight and QA clean after fixing 5 length violations in hand-written intro/meta/question fields."
       }
     ],
     "2026-08-06": [

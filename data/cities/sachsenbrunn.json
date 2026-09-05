@@ -1,0 +1,63 @@
+{
+  "city": "Sachsenbrunn",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Sachsenbrunn maps one tree: the Tanzlinde, one of only five dance-lindens left in Germany, a lime tree with an octagonal dance platform built into its crown. First recorded in 1662 and still danced on every year since 2010, it is the oldest and thickest of the five. Published alone here because the tree itself is the destination, not because Sachsenbrunn's research is finished.",
+  "meta_description": "The Tanzlinde Sachsenbrunn, Germany's oldest dance-linden: a 350-year-old lime with a platform built into its crown, free by the Werra bridge.",
+  "question_meta": "Sachsenbrunn's only mapped tree is the Tanzlinde, a roughly 350-year-old lime carrying a dance platform, free to visit beside the Werra bridge.",
+  "question_answer": "Sachsenbrunn's oldest and only mapped tree is the Tanzlinde Sachsenbrunn, a Large-leaved Lime (Tilia platyphyllos) standing in the open in the village of Sachsendorf, beside the Werra bridge. It is roughly 350 to 360 years old and carries an octagonal dance platform built into its crown.",
+  "question_context": "Germany has five lime trees built for dancing on, and this is the oldest and heaviest-built of them; the other four stand at Effeltrich, Limmersdorf, Peesten and Oberstadt. The tree first appears in writing in 1662, in a community inventory that calls it one of \"zwey Lindlein\", two little lindens, which places its planting just after the Thirty Years' War ended. Baumkunde's register measured the trunk at 4.76 metres round in June 2026, up from 4.3 metres in 1994; the two sources disagree on height, 10 metres against 13, and neither has been resolved. The platform sits about two and a half metres up, reached by a solid staircase, and the Tanzlinde Sachsenbrunn association has run a linden festival there every year since 2010, dancing on the same platform the tree has carried since long before the association existed to organise it. Sachsenbrunn carries a lime on its own coat of arms, and this tree is the one it means: not a decorative sprig but the actual specimen the village has built its identity around.",
+  "hero_tree_id": "sac_001",
+  "oldest_tree_id": "sac_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is one of only five Tanzlinden (dance-lindens) left in Germany, lime trees with a platform built into the crown for dancing, and it is the oldest and thickest of the five."
+    },
+    {
+      "q": "How old is it?",
+      "a": "First documented in 1662 as one of \"two little lindens\", which puts its planting shortly after the Thirty Years' War, roughly 350 to 360 years ago."
+    },
+    {
+      "q": "Can you still dance on it?",
+      "a": "Yes. The Tanzlinde Sachsenbrunn association has run an annual linden festival on the platform since 2010."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open beside the Werra bridge in the village of Sachsendorf, publicly accessible at any time."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sac_001",
+      "name": "Tanzlinde Sachsenbrunn",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 350 to 360 years",
+      "age_min": 350,
+      "age_max": 360,
+      "girth_cm": 476,
+      "height_m": 10,
+      "location": {
+        "address": "Hauptstrasse, near the Werra bridge, Sachsendorf, Sachsenbrunn (Eisfeld), Landkreis Hildburghausen, Thuringia, Germany",
+        "latitude": 50.44409,
+        "longitude": 10.94445,
+        "neighbourhood": "Sachsendorf, Sachsenbrunn"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Tanzlinde_in_Sachsenbrunn",
+        "https://www.baumkunde.de/baumregister/3253-tanzlinde_in_sachsenbrunn/"
+      ],
+      "access": "Free, standing in the open in the village of Sachsendorf beside the Werra bridge; publicly accessible at any time.",
+      "transport": "Rural village near Eisfeld, Thuringia; no rail station in Sachsenbrunn itself, nearest is Eisfeld about 5km away. Own place, not a day-trip extension of a published city (nearest published city is 35.9km away).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Germany has five lime trees with a dance floor built into the crown, and this is the oldest and thickest of them. The octagonal platform sits about two and a half metres up, reached by a solid staircase, and it is still danced on: the Tanzlinde Sachsenbrunn association has run a linden festival here every year since 2010.\n\nThe tree first appears in writing in 1662, in a community inventory that calls it one of \"zwey Lindlein\", two little lindens. That places its planting in the years just after the Thirty Years' War ended, which is where the estimate of roughly 350 to 360 years comes from. Baumkunde's register measured the trunk at 4.76 metres round in June 2026, up from the 4.3 metres recorded in 1994. The same two sources disagree about its height, 10 metres against 13, and nobody has settled which is right.\n\nThe other four dance limes stand at Effeltrich, Limmersdorf, Peesten and Oberstadt. This one is short, broad and heavily built, less a specimen than a piece of village furniture that happens to be alive, out in the open by the Werra bridge with a staircase up its side. Sachsenbrunn puts a lime on its coat of arms, and this is the tree it means.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

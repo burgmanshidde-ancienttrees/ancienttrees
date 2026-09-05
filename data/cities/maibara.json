@@ -1,0 +1,71 @@
+{
+  "city": "Maibara",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Maibara maps one tree: the Ohatsuki Ginkgo of Ryotokuji, a rare variant that sets its seeds directly on the edges of its leaves instead of on a stalk. A National Natural Monument since 1929, it stands in a temple's grounds five minutes on foot from Samegai Station, an unusually easy visit for a tree with that protection. Published alone here because the tree itself is the destination, not because Maibara's research is finished.",
+  "meta_description": "The Ohatsuki Ginkgo of Ryotokuji, Maibara: a rare leaf-seed ginkgo variant, National Natural Monument since 1929, five minutes' walk from the station.",
+  "question_meta": "Maibara's only mapped tree is the Ohatsuki Ginkgo of Ryotokuji, a rare leaf-seed ginkgo roughly 195 years old, five minutes from Samegai Station.",
+  "question_answer": "Maibara's oldest and only mapped tree is the Ohatsuki Ginkgo of Ryotokuji, standing in the grounds of Ryotokuji Temple at Samegai. It is a rare ohatsuki icho variant, whose seeds develop on the margins of its leaves, estimated at roughly 165 to 220 years old.",
+  "question_context": "An ohatsuki icho carries its seeds on the edge of the leaf itself rather than on a stalk of its own, a genuine botanical oddity that is the entire reason Japan made this tree a National Natural Monument in December 1929. Its age is worked forward rather than measured: a 1995 survey assessed it at about 165 years, which projects to roughly 195 today, while a figure attached to the original 1929 designation implies something older, so this page records the range as 165 to 220. Its girth is similarly unsettled: the 1929 figure of 2.5 metres is still repeated on tourism pages, while the 1995 remeasurement gives 4.3 metres, the more recent and more likely current figure. Trees grow; the pages quoting a ninety-year-old measurement do not. It stands about 20 metres tall, in the grounds of a working temple rather than behind any kind of barrier. The seeds themselves are visible from August into November, sitting on the leaf margins where nobody expects to find one, which is worth the short walk from the station on its own.",
+  "hero_tree_id": "mai_001",
+  "oldest_tree_id": "mai_001",
+  "faq": [
+    {
+      "q": "What is an ohatsuki icho?",
+      "a": "A rare ginkgo variant in which the seeds develop on the margins of the leaves instead of on their own stalk. This tree does it every year from August into November."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 165 to 220 years, worked forward from a 1995 survey rather than measured directly. That is young for a nationally protected ginkgo."
+    },
+    {
+      "q": "Where exactly does it stand?",
+      "a": "In the grounds of Ryotokuji Temple at Samegai, a five-minute walk from JR Samegai Station on the Tokaido Main Line."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open grounds of the temple."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mai_001",
+      "name": "Ryotokuji no Ohatsuki Icho",
+      "species": "Ohatsuki Ginkgo (Ginkgo biloba var. epiphylla)",
+      "age_estimate": "roughly 195 years",
+      "age_min": 165,
+      "age_max": 220,
+      "girth_cm": 430,
+      "height_m": 20,
+      "location": {
+        "address": "Ryotokuji Temple, 350 Samegai, Maibara City, Shiga Prefecture, Japan",
+        "latitude": 35.328056,
+        "longitude": 136.348611,
+        "neighbourhood": "Samegai, Maibara"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E4%BA%86%E5%BE%B3%E5%AF%BA%E3%81%AE%E3%82%AA%E3%83%8F%E3%83%84%E3%82%AD%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+        "https://kitabiwako.jp/spot/spot_411"
+      ],
+      "access": "Free, on the grounds of Ryotokuji Temple; a 5 minute walk from JR Samegai Station on the JR Tokaido Main Line, or about 5 minutes by car from Maibara Interchange on the Hokuriku Expressway",
+      "transport": "5 min walk from JR Samegai Station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This ginkgo grows its seeds on the edges of its leaves, which is not how ginkgos work.\n\nIt is an ohatsuki icho, a rare variant in which the ovule develops on the leaf margin instead of on a stalk of its own, and it does it every year from August into November. Japan made it a National Natural Monument in December 1929. It stands in the grounds of Ryotokuji, a temple at Samegai in Maibara, five minutes on foot from the station, which for a nationally protected tree is an unusually easy visit.\n\nIts age is worked forward rather than recorded. A survey in 1995 assessed it at about 165 years, which puts it near 195 today, while a figure attached to the 1929 designation would make it somewhat older. Somewhere between 165 and 220 years is as far as the evidence goes, and that is young for a famous ginkgo.\n\nThe girth is a similar mess. The original 1929 measurement of 2.5 metres is still repeated by tourism pages today, while the 1995 remeasurement gives 4.3 metres. Trees grow; registers do not. It stands about 20 metres tall.\n\nGo between August and November and the seeds are there to find, sitting on leaf edges where no seed belongs. It is a small oddity to hang a national designation on, and it is also the entire reason the designation exists.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "fruit",
+        "label": "October and November, when the ripe seeds sit on the edges of the leaves themselves"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
