@@ -5343,6 +5343,128 @@
    ],
    "trees": 26,
    "logged": true
+  },
+  {
+   "started": "2026-09-05T07:36:07+00:00",
+   "date": "2026-09-05",
+   "run_id": "33949924784",
+   "minutes": 94.2,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 515,
+   "denials": 37,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(date), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 46425952,
+   "claims_held": [
+    "famousjapan-batch-j"
+   ],
+   "commits": 28,
+   "cities_touched": 25,
+   "cities": [
+    {
+     "city": "arnhem",
+     "trees": 7
+    },
+    {
+     "city": "yabu",
+     "trees": 2
+    },
+    {
+     "city": "aberford",
+     "trees": 1
+    },
+    {
+     "city": "baarn",
+     "trees": 1
+    },
+    {
+     "city": "bristol",
+     "trees": 1
+    },
+    {
+     "city": "den-hout",
+     "trees": 1
+    },
+    {
+     "city": "doornenburg",
+     "trees": 1
+    },
+    {
+     "city": "fleringen",
+     "trees": 1
+    },
+    {
+     "city": "hilvarenbeek",
+     "trees": 1
+    },
+    {
+     "city": "iga",
+     "trees": 1
+    },
+    {
+     "city": "moffat",
+     "trees": 1
+    },
+    {
+     "city": "newtown",
+     "trees": 1
+    },
+    {
+     "city": "nishio",
+     "trees": 1
+    },
+    {
+     "city": "nuenen",
+     "trees": 1
+    },
+    {
+     "city": "omishima",
+     "trees": 1
+    },
+    {
+     "city": "rhenen",
+     "trees": 1
+    },
+    {
+     "city": "sambeek",
+     "trees": 1
+    },
+    {
+     "city": "shokawa",
+     "trees": 1
+    },
+    {
+     "city": "stoutenburg",
+     "trees": 1
+    },
+    {
+     "city": "takahama",
+     "trees": 1
+    },
+    {
+     "city": "toba",
+     "trees": 1
+    },
+    {
+     "city": "unnan",
+     "trees": 1
+    },
+    {
+     "city": "velp",
+     "trees": 1
+    },
+    {
+     "city": "vorden",
+     "trees": 1
+    },
+    {
+     "city": "wolfheze",
+     "trees": 1
+    }
+   ],
+   "trees": 32,
+   "logged": true
   }
  ],
  "schedule_changes": [
