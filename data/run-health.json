@@ -5095,6 +5095,96 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-04T23:35:37+00:00",
+   "date": "2026-09-05",
+   "run_id": "33929870228",
+   "minutes": 79.3,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 359,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 13840305,
+   "claims_held": [
+    "_famous-japan"
+   ],
+   "commits": 24,
+   "cities_touched": 17,
+   "cities": [
+    {
+     "city": "plunge",
+     "trees": 4
+    },
+    {
+     "city": "bojnice",
+     "trees": 1
+    },
+    {
+     "city": "bratislava",
+     "trees": 1
+    },
+    {
+     "city": "debina",
+     "trees": 1
+    },
+    {
+     "city": "gliniak",
+     "trees": 1
+    },
+    {
+     "city": "henrykow-lubanski",
+     "trees": 1
+    },
+    {
+     "city": "hinode",
+     "trees": 1
+    },
+    {
+     "city": "hniszow",
+     "trees": 1
+    },
+    {
+     "city": "kawazu",
+     "trees": 1
+    },
+    {
+     "city": "ksiaz",
+     "trees": 1
+    },
+    {
+     "city": "lodz",
+     "trees": 1
+    },
+    {
+     "city": "myjava",
+     "trees": 1
+    },
+    {
+     "city": "nagai",
+     "trees": 1
+    },
+    {
+     "city": "rambynas",
+     "trees": 1
+    },
+    {
+     "city": "sulechow",
+     "trees": 1
+    },
+    {
+     "city": "zywiec",
+     "trees": 1
+    },
+    {
+     "city": "fujikawaguchiko",
+     "trees": 0
+    }
+   ],
+   "trees": 19,
+   "logged": true
   }
  ],
  "schedule_changes": [
