@@ -1,0 +1,50 @@
+[
+  {
+    "id": "deu_famous_001",
+    "name": "The Gerichtslinde of Göttingen",
+    "species": "Lime (Tilia sp.; German-language sources conflict, see verify_notes)",
+    "age_estimate": "roughly 400 to 500 years",
+    "age_min": 400,
+    "age_max": 520,
+    "girth_cm": 714,
+    "location": {
+      "address": "An der Gerichtslinde, Grone (on the Leineberg), Göttingen, Germany",
+      "latitude": 51.534946,
+      "longitude": 9.91229,
+      "neighbourhood": "Grone"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Gerichtslinde_(G%C3%B6ttingen)",
+      "https://www.baumkunde.de/baumregister/638-gerichtslinde_in_goettingen/"
+    ],
+    "access": "Free, public. Stands on a grass strip beside a public street (An der Gerichtslinde) near the B3, in the open, no gate or ticket.",
+    "transport": "In the Grone district west of Göttingen city centre; reachable by local bus, short walk from the B3.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "STRONG single-tree candidate: this is a documented Gerichtslinde with an individually-recorded judicial role, not just the type-designation the brief warns about. A ducal regional court (Landgericht) sat on this exact site (the Leineberg) from 1241; law was both spoken and executed here until 1824, after which only executions continued; the LAST EXECUTION took place here on 20 January 1859 (beheading by sword). The street itself is named 'An der Gerichtslinde' after the tree. Protected as a Naturdenkmal.\n\nSPECIES CONFLICT, unresolved and flagged rather than picked: de.wikipedia calls it a Winterlinde (Tilia cordata); baumkunde.de calls it a Sommerlinde (Tilia platyphyllos). Both are otherwise detailed, dated sources, so this is recorded as a genuine disagreement rather than resolved silently. A ground-level check of the leaf shape would settle it.\n\nAGE: a roadside sign says planted in the 16th century; forester Hans Joachim Fröhlich estimated ~300 years in 1993 (implying ~420-520 years by 2026, consistent with the 16th-century planting date read literally). Two independent-ish estimates converge on the same rough band, so age_min/max set at 400-520 and label kept broad.\n\nGIRTH/ALIVE NOW: baumkunde.de records girth 6.97m (23 Oct 2016) growing to 7.14m by December 2024, with a site visit noted 08 Dec 2024, described as 'vital' despite a split, hollow trunk with adventitious roots and wire ropes securing the crown (pruned March 2011). This is recent, dated, credible alive-now evidence, among the best of this batch.\n\nHeight given as 25m (Wikipedia, 1993 data) vs 13.0m (baumkunde) - a bad conflict, probably one source measuring total height and the other something else (or a transcription issue); left out of the record entirely rather than guessing which is right.\n\nSINGLE-TREE FAME TEST: yes. This is exactly the case the brief names: a Gerichtslinde where the individual tree's judicial role, including a dated 1859 execution, is documented rather than assumed from the type. Worth a dedicated page."
+  },
+  {
+    "id": "deu_famous_002",
+    "name": "The Gerichtslinde of Scheeßel",
+    "species": "Winter Linden (Tilia cordata)",
+    "age_estimate": "roughly 500 to 800 years",
+    "age_min": 500,
+    "age_max": 800,
+    "girth_cm": 710,
+    "location": {
+      "address": "Zevener Straße 4 / forecourt of St.-Lucas-Kirche, Große Straße, Scheeßel, Lower Saxony, Germany",
+      "latitude": 53.16922805,
+      "longitude": 9.48220468,
+      "neighbourhood": "Scheeßel town centre"
+    },
+    "verified_sources": [
+      "https://www.baumkunde.de/baumregister/1136-gerichtslinde_in_scheessel/",
+      "https://www.alte-baeume-der-heide.de/scheeszel.html"
+    ],
+    "access": "Free, public. Stands on the open forecourt of St.-Lucas-Kirche in the town centre, no gate or ticket.",
+    "transport": "Scheeßel town centre, walkable from the train station (Scheeßel is on the Bremen-Hamburg line).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "STRONG single-tree candidate, the best-documented of this batch's Gerichtslinden. A genuine Femegericht/Landgericht site: court proceedings 'are said to have been held beneath the linden' from 1288 (alte-baeume-der-heide.de), and it was the meeting place of the Go- and later district court of Scheeßel through the Middle Ages (baumkunde-derived search summary, corroborated independently by the fetched alte-baeume-der-heide.de page's own 1288 date). A pillory reportedly still stood beside the tree around 1900, reinforcing the judicial-site claim beyond just the name. Sacrificial stones found in the churchyard in 1731 are cited (by a search summary only, NOT independently confirmed on either fetched page) as evidence of an earlier pagan cult site; NOT included as a claim in this record because it did not survive a direct fetch, per the search-summary-is-a-lead-never-a-source rule. Treat as a lead for the writer to chase, not a fact.\n\nAGE CONFLICT: baumkunde.de (visited 27 July 2024) gives 500-600 years; alte-baeume-der-heide.de gives 800 years flat. Two real sources genuinely disagree rather than one copying the other (girths differ slightly too, see below), so age_min/max is set broad at 500-800 and age_estimate kept vague rather than picking a winner.\n\nGIRTH/ALIVE NOW: baumkunde.de measured 7.02m on 27.07.2024 and explicitly logged the tree's status as 'vital' that day, the most recent and most credible alive-now evidence in this batch. alte-baeume-der-heide.de gives 7.10m at 1m height, consistent within measurement-method noise. girth_cm recorded as 710 (rounded from the two).\n\nSTRUCTURE: both sources describe a hollow, split trunk (one source: 'the massive base resembles two supporting legs', bark grown through the whole stem) rather than a single clean bole, which is a distinctive, describable feature for the story, not a defect.\n\nDESIGNATION: Naturdenkmal, ND ROW 009. Protection date given as 1938 by baumkunde.de (directly fetched) vs 1935 in an earlier search summary; used 1938 since it came from the fetched page, flagged the discrepancy rather than silently picking either.\n\nSINGLE-TREE FAME TEST: yes. Real, dated, twice-independently-documented judicial history (1288 court site, a pillory into the 1900s) plus a distinctive hollow twin-trunk structure and confirmed-vital condition as of mid-2024. Worth a dedicated page."
+  }
+]

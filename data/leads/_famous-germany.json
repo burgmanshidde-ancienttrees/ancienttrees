@@ -1,6 +1,6 @@
 {
   "country": "Germany",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 follow-up verify pass: found the 4th Giessen tree, Lindengruppe an der Lindbachquelle (Lützellinden, also a Gießen district), which clears Giessen to the 4-tree floor; all 4 delivered to data/research/giessen-verified.json (gie_001-gie_004), and data/leads/giessen.json emptied accordingly. No fourth Rudolstadt candidate was found. Three further candidates verified and delivered as single-tree-destination exceptions (2026-08-31 ruling), each a nationally or regionally famous named lime with official protection and a real reason someone would travel specifically for it: Linde in Reinborn (data/research/reinborn-verified.json, rbn_001, 14.34m girth), Tanzlinde (Effeltrich) (data/research/effeltrich-verified.json, eff_001, Nationalerbe-Baum No. 39), and Schenklengsfelder Dorflinde (data/research/schenklengsfeld-verified.json, sfd_001, 17.91m girth, possibly Germany's oldest deciduous tree). One candidate, Gerichtslinde (Klingenberg am Main), verified as alive and existing but judged NOT to clear the single-tree exception (modest 4.22m girth, no official protection found, folk age claim of 800y unsupported by its own register's 325y dendrological estimate); written up in data/leads/klingenberg-am-main.json. All 5 of these entries removed from this leads list now that they are handled. 2026-09-03 second follow-up verify pass: two further single candidates verified and held below the 4-tree floor (neither clearly clears the single-tree-destination exception), written up as data/leads/munzenberg.json (Eiche an der Kirche, WEAK) and data/leads/passau.json (Friedenslinde, UNCLEAR, recommended as a future Passau city seed instead). Both removed from this leads list. 2026-09-03 third follow-up verify pass (cluster check): geographic analysis flagged three 'geleitete Linden' (guided/trained lime tree, a recognised regional folk-tree type) as a possible tight cluster in the Malsfeld/Felsberg/Knüllwald corner of Schwalm-Eder-Kreis, Hessen: Geleitete Linden Berndshausen, Geleitete Linden Dagobertshausen and Tanzlinde (Hilgershausen). All three verified alive and confirmed via baumkunde.de plus a second source each (LAGIS Hessen's historic-sites register for Berndshausen; the Wikimedia Commons gallery page 'Geleitete Linden im Schwalm-Eder-Kreis' for the other two), and genuinely close together (Berndshausen-Dagobertshausen 4.6km, Dagobertshausen-Hilgershausen 3.5km, Berndshausen-Hilgershausen 6.6km). That Commons gallery page turned out to be a real, named regional grouping (12 surviving 'geleitete Linden' across the district) rather than an invented theme, and it named a fourth specimen, the Tanzlinde of Ostheim (Malsfeld), which sits 2.0-4.0km from the other three and was independently verified the same way; it was not previously in this leads file. All four cleared the 4-tree floor as a genuine walkable-by-car cluster and were delivered to data/research/schwalm-eder-linden-verified.json (sel_001 to sel_004). The three that had lead entries here (Berndshausen, Dagobertshausen, Hilgershausen) are removed from this leads list accordingly. Other district members of the same named grouping (Dorflinde Lischeid, Dorflinde Sebbeterode, Kandelaberlinde Dorla, Tanzlinde Niedenstein) were checked for distance and are 18 to 35km from this cluster, too far to join it; they remain as separate leads. Two other Hessian lime candidates in this file, Dorflinde in Aua (Neuenstein) and Gerichtslinde Erdmannrode, were checked and are 15.5km and 33.5km from the cluster respectively, also too far to join it; left as leads. Tanzlinde (Himmelsberg), also in this file, is a different tree from Tanzlinde (Hilgershausen) despite the similar name, and sits about 45km away; left as a lead, flagged in sel_003's verify_notes to avoid future confusion between the two. 2026-09-04 verify pass (famous-germany batch G1, 1 candidate): Riesenbuche bei Altmugl is a duplicate, already known via the Bavarian Naturdenkmale register as reg_bayern-naturdenkmale_1613 (Naturdenkmal Nr.24 Alte Buche bei Altmugl, Mkt. Neualbenreuth, same coordinates). Not a new find; removed from this leads list, no write-up needed. 2026-09-04 verify pass (famous-germany batch H1, 8 candidates): Hranicni buk (Cinovec) is in the Czech Republic, not Germany (Dubi, Ustecky kraj), and its original tree died in the 1970s (lightning) with only a young 2007 replacement sapling alive today; blocked on both grounds, removed from leads. Hutbuche bei Frauenroth confirmed dead, collapsed in Storm Egon Jan 2017; blocked, removed from leads. Urbuche (Mitgenfeld) confirmed dead, broke apart May 2013; blocked, removed from leads. Baerenwaldeiche bei Niederholzklau confirmed dead, fell in storm April 2024; blocked, removed from leads. Dr. August Köster-Eiche (Wuppertal) is a young 2000s memorial oak honouring a local civic-association chairman, no independent fame or age found; blocked as not remarkable enough, removed from leads.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 follow-up verify pass: found the 4th Giessen tree, Lindengruppe an der Lindbachquelle (Lützellinden, also a Gießen district), which clears Giessen to the 4-tree floor; all 4 delivered to data/research/giessen-verified.json (gie_001-gie_004), and data/leads/giessen.json emptied accordingly. No fourth Rudolstadt candidate was found. Three further candidates verified and delivered as single-tree-destination exceptions (2026-08-31 ruling), each a nationally or regionally famous named lime with official protection and a real reason someone would travel specifically for it: Linde in Reinborn (data/research/reinborn-verified.json, rbn_001, 14.34m girth), Tanzlinde (Effeltrich) (data/research/effeltrich-verified.json, eff_001, Nationalerbe-Baum No. 39), and Schenklengsfelder Dorflinde (data/research/schenklengsfeld-verified.json, sfd_001, 17.91m girth, possibly Germany's oldest deciduous tree). One candidate, Gerichtslinde (Klingenberg am Main), verified as alive and existing but judged NOT to clear the single-tree exception (modest 4.22m girth, no official protection found, folk age claim of 800y unsupported by its own register's 325y dendrological estimate); written up in data/leads/klingenberg-am-main.json. All 5 of these entries removed from this leads list now that they are handled. 2026-09-03 second follow-up verify pass: two further single candidates verified and held below the 4-tree floor (neither clearly clears the single-tree-destination exception), written up as data/leads/munzenberg.json (Eiche an der Kirche, WEAK) and data/leads/passau.json (Friedenslinde, UNCLEAR, recommended as a future Passau city seed instead). Both removed from this leads list. 2026-09-03 third follow-up verify pass (cluster check): geographic analysis flagged three 'geleitete Linden' (guided/trained lime tree, a recognised regional folk-tree type) as a possible tight cluster in the Malsfeld/Felsberg/Knüllwald corner of Schwalm-Eder-Kreis, Hessen: Geleitete Linden Berndshausen, Geleitete Linden Dagobertshausen and Tanzlinde (Hilgershausen). All three verified alive and confirmed via baumkunde.de plus a second source each (LAGIS Hessen's historic-sites register for Berndshausen; the Wikimedia Commons gallery page 'Geleitete Linden im Schwalm-Eder-Kreis' for the other two), and genuinely close together (Berndshausen-Dagobertshausen 4.6km, Dagobertshausen-Hilgershausen 3.5km, Berndshausen-Hilgershausen 6.6km). That Commons gallery page turned out to be a real, named regional grouping (12 surviving 'geleitete Linden' across the district) rather than an invented theme, and it named a fourth specimen, the Tanzlinde of Ostheim (Malsfeld), which sits 2.0-4.0km from the other three and was independently verified the same way; it was not previously in this leads file. All four cleared the 4-tree floor as a genuine walkable-by-car cluster and were delivered to data/research/schwalm-eder-linden-verified.json (sel_001 to sel_004). The three that had lead entries here (Berndshausen, Dagobertshausen, Hilgershausen) are removed from this leads list accordingly. Other district members of the same named grouping (Dorflinde Lischeid, Dorflinde Sebbeterode, Kandelaberlinde Dorla, Tanzlinde Niedenstein) were checked for distance and are 18 to 35km from this cluster, too far to join it; they remain as separate leads. Two other Hessian lime candidates in this file, Dorflinde in Aua (Neuenstein) and Gerichtslinde Erdmannrode, were checked and are 15.5km and 33.5km from the cluster respectively, also too far to join it; left as leads. Tanzlinde (Himmelsberg), also in this file, is a different tree from Tanzlinde (Hilgershausen) despite the similar name, and sits about 45km away; left as a lead, flagged in sel_003's verify_notes to avoid future confusion between the two. 2026-09-04 verify pass (famous-germany batch G1, 1 candidate): Riesenbuche bei Altmugl is a duplicate, already known via the Bavarian Naturdenkmale register as reg_bayern-naturdenkmale_1613 (Naturdenkmal Nr.24 Alte Buche bei Altmugl, Mkt. Neualbenreuth, same coordinates). Not a new find; removed from this leads list, no write-up needed. 2026-09-04 verify pass (famous-germany batch H1, 8 candidates): Hranicni buk (Cinovec) is in the Czech Republic, not Germany (Dubi, Ustecky kraj), and its original tree died in the 1970s (lightning) with only a young 2007 replacement sapling alive today; blocked on both grounds, removed from leads. Hutbuche bei Frauenroth confirmed dead, collapsed in Storm Egon Jan 2017; blocked, removed from leads. Urbuche (Mitgenfeld) confirmed dead, broke apart May 2013; blocked, removed from leads. Baerenwaldeiche bei Niederholzklau confirmed dead, fell in storm April 2024; blocked, removed from leads. Dr. August Köster-Eiche (Wuppertal) is a young 2000s memorial oak honouring a local civic-association chairman, no independent fame or age found; blocked as not remarkable enough, removed from leads. 2026-09-05 verify pass (famous-germany batch 2026-09-05-c, 6 candidates): Gerichtslinde Goettingen and Gerichtslinde Scheessel both verified and CLEAR the single-tree-destination bar (real, dated, individually-documented judicial history plus recent alive-now evidence); delivered to data/research/famousgermany-2026-09-05-c-verified.json as deu_famous_001 and deu_famous_002. Removed from this leads list accordingly. Everseiche verified (two sources agree on ~400-450y, 7.2-7.6m girth, Naturdenkmal since 1958) but held: no fame beyond ordinary farm-oak history, and its health is actively declining (baumkunde.de: crown 'appears dead from a distance' by Sept 2024; a directly-fetched July 2025 Commons photo caption confirms it is 'partially dead'). Lieveneiche verified as existing (named after Wilhelm Ferdinand Lieven, Hilden benefactor) but too thin and too unremarkable to clear the bar: no age, no girth, no ND register entry found, held as a lead. Gerichtslinde in Alfeld (Leine) verified but held: the OFFICIAL register lists it as '2 Dinglinden' (ND-HI 135), not one tree, with real but loosely-dated 18th-century judicial history and no age/girth found; corrected in this file's entry and kept as a lead. Heinrichslinde BLOCKED: the current physical tree is a sapling planted January 2022, the second of two prior Heinrichslinden having collapsed (1894) and been felled (2021) respectively; no genuinely old tree stands at the site today, moved to the blocked list.",
   "leads": [
     {
       "name": "Eiche am Forsthaus Grüner Jäger",
@@ -50,17 +50,6 @@
       "status": "lead"
     },
     {
-      "name": "Everseiche",
-      "lat": 52.303587,
-      "lng": 8.013266,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_03.jpg"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "Jahrhunderteiche",
       "lat": null,
       "lng": null,
@@ -68,17 +57,6 @@
         "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0006.jpg",
         "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0007.jpg",
         "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0008.jpg"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Lieveneiche",
-      "lat": 51.196958,
-      "lng": 6.957193,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_231.jpg",
-        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_232.jpg",
-        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_233.jpg"
       ],
       "status": "lead"
     },
@@ -307,45 +285,6 @@
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
-      "name": "Gerichtslinde Göttingen",
-      "lat": 51.534946,
-      "lng": 9.91229,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Alte_Gerichtslinde.jpg",
-        "https://commons.wikimedia.org/wiki/File:Gerichtslinde,_1,_Groner_Landstra%C3%9Fe,_Weststadt,_G%C3%B6ttingen,_Landkreis_G%C3%B6ttingen.jpg",
-        "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Goettingen_01.jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Gerichtslinde in Alfeld (Leine)",
-      "lat": 51.9907615,
-      "lng": 9.8253568,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:1917_aufgelassener_Alter_Friedhof_Alfeld,_doppelseitige_Infotafel_zwischen_Gerichtslinde_und_Lapidarium.jpg",
-        "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine.jpg",
-        "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine_(19782).jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Gerichtslinde Scheeßel",
-      "lat": 53.16922805,
-      "lng": 9.48220468,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_03.jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Gerichtslinde Wehren (Fritzlar)",
       "lat": null,
       "lng": null,
@@ -369,17 +308,6 @@
       "status": "lead",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Heinrichslinde",
-      "lat": 52.26390833,
-      "lng": 10.52403611,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Brunnen-Domplatz_BS-Img01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_241.jpg",
-        "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_b_241.jpg"
-      ],
-      "status": "lead"
     },
     {
       "name": "Tanzlinde (Himmelsberg)",
@@ -756,6 +684,57 @@
       "status": "lead",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Everseiche",
+      "lat": 52.303587,
+      "lng": 8.013266,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_03.jpg"
+      ],
+      "status": "verified_held",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 to 450 years (register estimate)",
+      "girth_cm": 724,
+      "location_precision": "confirmed",
+      "verified_sources": [
+        "https://www.monumentale-eichen.de/niedersachsen/osnabr%C3%BCck/",
+        "https://www.baumkunde.de/baumregister/1203-everseiche_in_osnabrueck/"
+      ],
+      "note": "VERIFIED (existence, species, age, coordinates via two independent sources: monumentale-eichen.de and baumkunde.de, both giving matching girth ~7.2-7.6m and 400-450y age; also a Naturdenkmal since 1958 per monumentale-eichen.de) but does NOT clear the single-tree-destination bar. It is a fine large old oak on a green space by the Hase river at the former Everskotten/Gut Eversburg (farm-oak history, nothing more dramatic), with no record-holding claim or documented dramatic history beyond ordinary farm-oak status. WORSE, its health is actively declining and worth flagging hard for whoever revisits: baumkunde.de logs 'numerous dead branches' by Feb 2021 and by its last visit (21 Sep 2024) says only a little green remains and 'the crown appears dead from a distance'. A directly-fetched Commons photo caption dated 9 July 2025 confirms this in the tree's own words: 'Der Baum ist zum Teil schon abgestorben, nur an einigen unteren Zweigen ist noch Laubbesatz' (the tree is partially dead, with foliage only on some lower branches). NOT known dead (some foliage remains as of July 2025), so not blocked outright, but this is a poor 'go see this' pitch right now and a bad candidate for a page promising an epic, thriving tree. A caution on an earlier WebSearch AI-summary claim of '800-1000 years old': that figure appears nowhere on either directly-fetched source page and is discarded per the search-summary-is-a-lead-never-a-source rule; both real sources agree on 400-450 years."
+    },
+    {
+      "name": "Lieveneiche",
+      "lat": 51.196958,
+      "lng": 6.957193,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_231.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_232.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_233.jpg"
+      ],
+      "status": "verified_thin",
+      "note": "Existence and general identity (an old oak in the Hildener Stadtwald/Hildener Heide area, named after 19th-century Hilden benefactor Wilhelm Ferdinand Lieven, who bequeathed the city its forest on his 1902 death) confirmed across multiple independent sources (de.wikipedia's Wilhelm Ferdinand Lieven article, a hiking-route blog post naming it as a waypoint, komoot listings), but there is no age, no girth, no official Naturdenkmal register listing found for it specifically (checked Wikipedia's Kreis Mettmann Naturdenkmal category, which lists only Stinkesberg and Tillmannsdorfer Sattel, not this tree), and no alive-now evidence more recent than 2016-dated Commons photographs. Missing age is fine per the rules, but there is no fame beyond a local honorific naming, so it fails the single-tree-destination test outright: nobody travels to Hilden for this tree, it is a minor waypoint on a local hiking route. Held as a lead rather than blocked, since nothing here suggests it is dead or inaccessible, just under-documented and unremarkable relative to the bar."
+    },
+    {
+      "name": "Gerichtslinde in Alfeld (Leine)",
+      "lat": 51.9907615,
+      "lng": 9.8253568,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1917_aufgelassener_Alter_Friedhof_Alfeld,_doppelseitige_Infotafel_zwischen_Gerichtslinde_und_Lapidarium.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine_(19782).jpg"
+      ],
+      "status": "verified_held",
+      "species": "Lime (Tilia sp., unspecified in the register)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "location_precision": "confirmed",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Alfeld_(Leine)",
+        "https://www.alt-alfeld.de/strassen-plaetze/a/altes-dorf/"
+      ],
+      "note": "IMPORTANT CORRECTION to the brief: this is officially TWO trees, not one. The Naturdenkmal register (de.wikipedia's Liste der Naturdenkmale in Alfeld (Leine)) lists this site as '2 Dinglinden' (a pair of assembly/thing-lindens), ND-HI 135, at 'Alfeld-Nord / Auf dem alten Friedhof an der Hildesheimer Strasse', coordinates 51.98961, 9.82419 (register) vs 51.99065, 9.82543 (a directly-fetched, dated 21 Sept 2025 Commons photo caption placing it on the old cemetery in Alfeld an der Leine) vs 51.9907615, 9.8253568 (the brief's own coordinate); all within about 150m of each other, consistent with one site. A second independent source (alt-alfeld.de, a local-history site) corroborates: the plaza served as a Landgericht site 'noch im 18. Jahrhundert' (still in the 18th century) under 'maechtigen Linden' (mighty lindens, plural, matching the register's two lindens), before part of the plaza became a cemetery in 1609 and continued burials until 1917. Photographs of 'the old court linden' from 1912, 1958 and 1985 are referenced on alt-alfeld.de, and the 21-Sept-2025 Commons photo is recent alive-now evidence.\n\nDoes NOT clearly clear the single-tree-destination bar: no age, no girth found anywhere for this specific pair (register gives none), and the judicial-history claim is looser than Goettingen's or Scheesel's (a general 18th-century court under mighty lindens rather than a documented individual-tree role with a specific dated event like an execution). It also being two trees rather than one, per the register-twins rule, would need to ship as a single folded entry rather than one point if it ever ships. Held as a lead for whichever pass looks at Alfeld, or as extra depth if a nearby city is ever opened; do not treat the 18th-century date as this individual tree's age without a source that says so explicitly (bridge-claim risk noted and avoided)."
     }
   ],
   "blocked": [
@@ -1173,6 +1152,18 @@
       ],
       "status": "blocked",
       "reason": "NOT REMARKABLE. This is a young memorial oak in the Ronsdorfer Anlagen park, Wuppertal (roughly 51.234N 7.207E), honouring Dr. August Köster, who chaired the Ronsdorfer Heimat- und Buergerverein (local heritage/civic association) 1935-1966. Wikimedia Commons categorises the tree under \"planted in the 2000s\" (its own subcategory carries no Wikidata item and no age/girth data), it does not appear in de.wikipedia's own \"Liste der Gedenkbaeume in Wuppertal\", and no source found gives it any age, size or independent fame beyond the memorial sign. A tree honouring a local association chairman, itself only about two decades old, does not clear the genuinely-old / visually-spectacular / historically-significant bar and clearly fails the single-tree-destination test (nobody would travel specifically for this tree). Wuppertal is not yet a published city; this candidate is not strong enough to seed one and would not survive as a lead worth carrying forward either. Photographs (Commons, 2015) not inspected further since the tree fails on remarkability before location or photo quality become relevant."
+    },
+    {
+      "name": "Heinrichslinde",
+      "lat": 52.26390833,
+      "lng": 10.52403611,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Brunnen-Domplatz_BS-Img01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_241.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_b_241.jpg"
+      ],
+      "status": "blocked",
+      "reason": "No genuinely old tree exists at this site today. Confirmed dead/removed twice over: the original Heinrichslinde (Tilia platyphyllos, legendarily linked to Heinrich der Loewe c.1173, first documented 1492, reached 6.30m girth) collapsed 19 September 1894. Its successor (a winter linden planted after failed 1861/1862 attempts) stood until it was FELLED on 18 November 2021 due to rot and fungal damage. A third tree was planted in its place in January 2022, meaning the CURRENT physical specimen on the Domplatz is only about 4 years old as of 2026: a sapling, not a collectible ancient/veteran tree. Two independent sources confirm this timeline (de.wikipedia's Heinrichslinde article, directly fetched, and der-loewe.info's own 'die neue Heinrichslinde steht' and 'fake news' articles, also directly fetched). The brief's suspicion about the 1885 Gartenlaube engravings was correct: those are illustrations, not photographs, and irrelevant to the current tree's condition regardless. Also worth flagging for any future writer: der-loewe.info's fake-news piece argues the entire 1173-planting-by-Heinrich-der-Loewe legend is itself unsupported (the Domplatz was a construction site in 1173 with no room for a tree), so even the site's founding legend is disputed, on top of the current tree being a 2022 sapling. Blocked as a collectible entry; the site's continuity story could still be mentioned as context inside some other Braunschweig tree's page, never as its own entry, per the dead-tree-as-context rule."
     }
   ]
 }
