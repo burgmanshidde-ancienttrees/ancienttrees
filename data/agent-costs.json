@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -5252,6 +5252,15 @@
         "tokens": 139000,
         "trees": 7,
         "note": "7 Sonsbeek trees merged into live arnhem.json (9->16); page-level copy and FAQ counts updated; fixed a pre-existing Contract B overrun on question_context."
+      },
+      {
+        "target": "Baarn sightings",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session viewing pass on 3 reader-submitted photos (rung 1); 2 published (brn_001, brn_002 photo missing->approved), 1 rejected as duplicate. No new trees, photo coverage only.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
