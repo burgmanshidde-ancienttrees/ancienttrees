@@ -1,6 +1,67 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation of a window an earlier attempt stopped early with 74 minutes left) - Finished famous-poland: 8 new single-tree places
+
+Followed the resume instructions. Pulled (nothing new). `passcheck.py
+--claims` found one standing claim, `_famous-poland` verify, left by the
+earlier attempt in this same window. Its background verify agent had been
+dispatched but never returned: the session that started it had already
+ended, so the work was genuinely lost (`ListAgents` showed no reachable
+agent), not merely uncommitted. `leads.py --ready` was empty as usual (that
+pipeline doesn't see this assembly line's staging files), so re-ran the
+claimed pass from scratch rather than starting anything new.
+
+**Re-dispatched the verify pass** on the same 12-candidate Poland batch from
+`famous_demand.py --next` (this time run in the foreground so a session end
+can't lose it again). 8 of 10 named candidates verified: the Henrykow Yew
+(Poland's oldest living thing, disputed 1000-1500yr, girth conflict left
+unresolved rather than picked), Wszebora (oldest known Scots pine), the
+Bolko Yew at Ksiaz (Humboldt's 800yr estimate vs today's ~600yr), the Bolko
+Oak at Hniszow (4th in European Tree of the Year 2016; the "Boleslaw
+Chrobry rested here in 1018" claim was checked and is a legend, kept out of
+the age reasoning as a bridge-claim trap), Sosna Waligora (likely two pines
+fused into one, second-thickest in Poland), Dab Fabrykant in Lodz (actual
+2023 European Tree of the Year winner, 45,718 votes), the Slavian Oak in
+Debina (a day-trip judgement call: 25km from Wroclaw with no fast transit,
+kept as its own place rather than folded in), and the Franciszek Oak in
+Zywiec (alive but fighting sulphur polypore, arborists planning a staged
+height reduction). 2 blocked: the Chrobry Oak confirmed dead (obumarl since
+2020/2021, a genetic clone planted nearby in 2024 is a different young
+tree, never ships as this entry) and Aleja Zajecza turned out to be a
+hornbeam avenue, not a single collectible point.
+
+**Wrote all 8 stories** (write-stories pass, 226-242 words each, no
+best_time on any: 4 evergreen yews/pines and 4 oaks with no documented
+seasonal peak, so an empty field was the honest answer) and **built all 8
+as new single-tree places** under the 2026-08-31 exception, each with its
+own hand-written intro/meta/FAQ: Henrykow Lubanski, Gliniak, Ksiaz, Hniszow,
+Sulechow, Lodz, Debina, Zywiec.
+
+**Caught and fixed a real bug in my own first draft**: all 8 places had
+been given the shared id prefix `pol_00X`, which `preflight.py` correctly
+flagged as an overwrite hazard (two cities sharing a prefix clobber each
+other's trees on the next city sharing it). Renamed to 8 distinct prefixes
+(hnk, gln, ksz, hnz, sul, lod, dbn, zyw) checked against every prefix
+already in use. Also caught three city intros under the 60-word Contract C
+floor (gliniak 51, ksiaz 59, sulechow 53) at build time and lengthened them
+honestly rather than padding with filler.
+
+Updated Poland's country page (5->13 places, 74->82 trees) and the leads
+file (8 entries marked RESOLVED with their real final ids, 2 new blocked
+entries with reasons). Full build (4339 pages), qa.py, preflight.py (0
+problems) and superlatives.py (635 claims, no collisions) all clean.
+Committed in two pieces (the merge, then the claim release), pushed.
+Logged both pass costs to agent-costs.json.
+
+Health check clear (`health.py`: RUNG 2 clear; the iOS CI failure the
+session-start brief flagged was already fixed by an earlier attempt, back
+to green 4.9h ago). No BLOCKER, no sightings queued, `leads.py --ready`
+still empty. Stopped here with roughly 40 minutes of the window left
+rather than start a fresh country's claim-and-dispatch cycle that risked
+becoming a third orphaned claim on the same city queue if this attempt's
+clock ran out mid-merge; the next attempt has a clean queue to pick from.
+
 ## 2026-09-05 (continuation of a window an earlier attempt stopped early with 92 minutes left) - Finished famous-slovakia + famous-lithuania batch1 (+8 trees, 3 new places), Poland verify dispatched
 
 Followed the resume instructions. Pulled (nothing new). `passcheck.py --claims`
