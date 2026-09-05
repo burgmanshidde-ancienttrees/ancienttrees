@@ -1,0 +1,64 @@
+{
+  "city": "Hino",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Hino's mapped tree is a discovery site, not a single trunk. Three separately rooted Japanese nutmeg-yews in Kumano hamlet carry a rare left-spiraling seed mutation, first found and confirmed here in 1922, the original site of one of only three such national designations in the country. Published here as a single-tree place under the 2026-08-31 exception, too far across the Suzuka mountains from any city we already map for a same-day trip.",
+  "meta_description": "Kumano no Hidarimakigaya, Hino: the 1922 discovery site of a rare left-spiraling kaya mutation, three trees under one National Natural Monument.",
+  "question_meta": "Hino's mapped tree is Kumano no Hidarimakigaya, the discovery site of a rare left-spiraling kaya seed mutation, one of only three in Japan.",
+  "question_answer": "Hino's only mapped tree is Kumano no Hidarimakigaya, three separately rooted Japanese nutmeg-yews beside the settlement road through Kumano hamlet, the original 1922 discovery site of a naturally occurring left-spiraling seed mutation.",
+  "question_context": "Split open a kaya seed anywhere in Japan and the groove down the coat runs straight. On these three trees it spirals to the left. Kumano is where that mutation was first found and confirmed, and that, rather than size or age, is what the state designated in 1922: a remarkable naturally occurring site of a plant variant, one of only three in the country. The monument is three separately rooted trees rather than one trunk: two on a family's slope east of Kumano Shrine, 21 metres tall, girths of 1.9 and 2.4 metres, and a third south of the shrine, 23 metres and 2.2 round. A 2004 survey found all three had grown 50 to 60 centimetres in girth since 1922. A fourth such tree, found in the same survey, still stands unlisted in the hamlet after its owner declined designation. Nobody has published an age for any of them. A stone monument marking the listing went up in 1924, and the trees line the road past the shrine on the families' own land, so a visit stays on the road. Reached by the Hino Town community bus from Hino Station, about 30 minutes to the Kumano-jinja-mae stop.",
+  "hero_tree_id": "hno_001",
+  "oldest_tree_id": "hno_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is not one tree but three, the original 1922 discovery site of a rare left-spiraling seed mutation in the Japanese nutmeg-yew, one of only three such sites nationally designated in Japan."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Not documented. The 1922 designation recorded the mutation, not an age, and no age figure has been published since for any of the three stems."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no ticket or appointment needed. The three trees stand on private family plots beside the public settlement road; stay on the road and do not enter the plots themselves."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Omi Railway Main Line to Hino Station, then the Hino Town community bus (Hirako-Saimyoji line) about 30 minutes to the Kumano-jinja-mae stop."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hno_001",
+      "name": "Kumano no Hidarimakigaya",
+      "species": "Japanese Nutmeg-yew, left-spiraling variety (Torreya nucifera 'Hidarimakigaya')",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Kumano hamlet, Hino Town, Gamo District, Shiga Prefecture, Japan; along the settlement road past Kumano Shrine",
+        "latitude": 34.998203,
+        "longitude": 136.330154,
+        "neighbourhood": "Kumano, Hino Town"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E3%81%AE%E3%83%92%E3%83%80%E3%83%AA%E3%83%9E%E3%82%AD%E3%82%AC%E3%83%A4",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/1559",
+        "https://www.town.shiga-hino.lg.jp/0000003698.html"
+      ],
+      "access": "Free, no ticket or appointment. The three designated stems stand on privately owned family plots, but all are described as standing directly beside the public settlement road/footpath through Kumano hamlet, with a 1924 stone designation-monument erected at the site. Treat as view-from-the-road: stay on the public road/path, do not enter the private plots themselves.",
+      "transport": "Omi Railway Main Line to Hino Station, then Hino Town community bus (Hirako-Saimyoji line) about 30 minutes to the Kumano-jinja-mae terminus stop; the trees stand along the road through the hamlet from there.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Split open a kaya seed anywhere in Japan and the groove down the coat runs straight. On three trees in this hamlet it spirals to the left. Kumano is where that mutation was first found and confirmed, and that, rather than size or age, is what the state designated on 12 October 1922: a remarkable naturally occurring site of a plant variant. Three such sites exist in the country. This is the original one.\n\nThe monument is three separately rooted Japanese nutmeg-yews rather than one trunk. Two stand on a family's slope east of Kumano Shrine, both 21 metres tall, 1.9 and 2.4 metres round. The third, on another family's plot south of the shrine, is 23 metres and 2.2 round. A prefectural survey in 2004 found that all three had put on 50 to 60 centimetres of girth since they were measured in 1922. A fourth left-spiralling tree turned up in that original survey and its owner declined the designation over the upkeep. It is still standing, unlisted, in the same hamlet.\n\nNobody has published an age for any of them, and the designation never asked for one. If somebody has a figure, we would take it.\n\nA stone monument marking the 1922 listing went up here in 1924, and the trees line the settlement road past the shrine, so this is a walk-the-lane visit: stay on the public road, because the plots themselves are the families'. The town bus from Hino Station takes about thirty minutes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

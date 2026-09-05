@@ -2,10 +2,10 @@
  "city": "Iwata",
  "country": "Japan",
  "status": "needs_curation",
- "intro": "Iwata maps one tree: Yuya no Naga Fuji, a wisteria at Gyokoji Temple whose kanji name is usually read Kumano but is read locally as Yuya, after a court lady from the centuries-old Noh play named for her. Legend says she planted the vine herself in the late Heian period. It has held National Natural Monument status since 1932 and is the centre of an annual spring festival. Published alone here because the tree itself is the destination, not because Iwata's research is finished.",
- "meta_description": "Yuya no Naga Fuji, Iwata: a centuries-old wisteria at Gyokoji Temple, named for the Noh play Yuya, a National Natural Monument since 1932.",
- "question_meta": "Iwata's oldest and only mapped tree is Yuya no Naga Fuji, a wisteria at Gyokoji Temple tied to the Noh play Yuya.",
- "question_answer": "Iwata's only mapped tree is Yuya no Naga Fuji, the Long Wisteria of Yuya, at Gyokoji Temple, judged to be roughly 800 to 850 years old and a National Natural Monument since 1932.",
+ "intro": "Iwata maps two trees. Yuya no Naga Fuji is a wisteria at Gyokoji Temple whose kanji name is usually read Kumano but is read locally as Yuya, after a court lady from the centuries-old Noh play named for her; legend says she planted the vine herself in the late Heian period. A few kilometres away in neighbouring Hamamatsu stands Kitahama no Okayanoki, one of Japan's Three Great Kaya trees, alone behind a fence on private farmland.",
+ "meta_description": "Iwata's two mapped trees: Yuya no Naga Fuji, a centuries-old shrine wisteria, and one of Japan's Three Great Kaya trees nearby.",
+ "question_meta": "Iwata's oldest mapped tree is Yuya no Naga Fuji, a wisteria at Gyokoji Temple tied to the Noh play Yuya.",
+ "question_answer": "Iwata's oldest mapped tree is Yuya no Naga Fuji, the Long Wisteria of Yuya, at Gyokoji Temple, judged to be roughly 800 to 850 years old and a National Natural Monument since 1932.",
  "question_context": "The vine grows on the grounds of Gyokoji Temple in Ikeda, reached by bus or taxi from JR Iwata or Fukude station, since no rail line reaches the temple directly. Free to visit; the city runs an annual wisteria festival with night illumination and temporary parking during the mid-to-late April bloom. Its kanji name is usually read Kumano, but is read locally as Yuya, after Yuya Gozen, a court lady from the Noh play named for her, who local legend says planted the vine herself before leaving for Kyoto in the late Heian period. Its trellis has grown from roughly 400 square metres in 1907 to about 1,600 today, and its flower clusters typically reach over a metre long, with a recorded maximum of 1.5 metres. Five younger wisterias on the same temple grounds carry their own separate designation, each roughly 250 years old, but this is the vine the temple, the town and the festival are named for.",
  "hero_tree_id": "iwt_001",
  "oldest_tree_id": "iwt_001",
@@ -25,6 +25,10 @@
   {
    "q": "How do I get there?",
    "a": "By bus or taxi from JR Iwata or Fukude station; there is no direct rail access to Ikeda."
+  },
+  {
+   "q": "What is the other tree mapped in Iwata?",
+   "a": "Kitahama no Okayanoki, one of Japan's Three Great Kaya trees, standing alone behind a fence on private farmland in Hamamatsu's Hamana Ward, about eight kilometres away."
   }
  ],
  "trees": [
@@ -52,6 +56,37 @@
    "location_precision": "confirmed",
    "curation_status": "flagged",
    "story": "The kanji in this wisteria's name is usually read Kumano. Here, at Gyokoji Temple in Iwata, it is read Yuya instead, after Yuya Gozen, a court lady from a centuries-old Noh play named for her. Local legend holds she planted this vine herself in the late Heian period before leaving for Kyoto, and the reading has stuck for as long as anyone has written the tree down. It is not a mistake to correct.\n\nWhat has grown from that planting is now judged around 800 to 850 years old and covers a trellis that has expanded from roughly 400 square metres in 1907 to about 1,600 today, folding in the neighbouring memorial park as it spread. Its flower clusters typically reach over a metre long, with a recorded maximum of 1.5 metres and older reports of clusters twice that. Five younger wisterias on the same temple grounds carry their own separate designation, each roughly 250 years old, but this is the one the temple, the town and the festival are named for.\n\nIwata has run an annual wisteria festival around the vine for as long as anyone has logged the date, with night illumination extending viewing hours through the mid-to-late April bloom. It has held National Natural Monument status since 1932. A wisteria old enough to outlive the play written about the woman who planted it is a tree people build a spring trip around, not one they pass without noticing.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "iwt_002",
+   "name": "Kitahama no Okayanoki (the Great Kaya of Kitahama)",
+   "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+   "age_estimate": "roughly 600 years",
+   "age_min": 500,
+   "age_max": 700,
+   "girth_cm": 540,
+   "location": {
+    "address": "524 Motosawai, Hamana Ward, Hamamatsu City, Shizuoka Prefecture (near Iwata; historically known as Hamakita)",
+    "latitude": 34.81273,
+    "longitude": 137.80054,
+    "neighbourhood": "Motosawai, Hamana Ward, Hamamatsu, about 8.5 km from Iwata"
+   },
+   "verified_sources": [
+    "https://www.city.hamamatsu.shizuoka.jp/bunkazai/shitei/hamakita/hamakita/kayanoki.html",
+    "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%B5%9C%E3%81%AE%E5%A4%A7%E3%82%AB%E3%83%A4%E3%83%8E%E3%82%AD",
+    "http://www.tree-flower.jp/22/kitahama_kaya_225/ohkayanoki.htm"
+   ],
+   "access": "Free to view. Stands alone on privately owned land behind a low white fence, but is freely visible without needing anyone's permission; a small parking space exists nearby. Not a dwelling or its garden.",
+   "transport": "10-minute walk east from Enshu Railway's Enshu-Kobayashi Station; an older source gives 30 minutes on foot from the same station, so allow extra time.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Japan names three great kaya trees, and this is one of them. It does not stand in a shrine yard or a park. It stands by itself behind a low white fence on private farmland at Motosawai, in Hamamatsu's Hamana Ward, about eight kilometres from Iwata, and you look at it from the road. Nobody has to be asked, and there is a small space to leave a car.\n\nThe Japanese nutmeg-yew is a slow conifer, and this one, a female, has had roughly six hundred years at it according to the city board of education's own sign. Today it measures 5.4 metres round at chest height and 22.3 metres tall. A 1957 academic survey recorded a considerably larger tree: 6.75 metres round, 27 metres tall, a root collar of 16.5 metres against the 15 measured now. Either it has lost ground over seventy years or the two surveys measured differently. Both figures are on the record and neither is worth averaging away.\n\nThe shape is what makes the walk. The trunk broadens hard near the ground and then throws its branches southward from about 2.9 metres up, carrying a crown put at 21.5 metres east to west and 25.5 north to south. A visitor who came out to record it in 2009 found no cavity in the trunk and dense foliage all the way up.\n\nThe state designated it a National Natural Monument on 20 March 1954. Hamamatsu still keeps its file, last reviewed in December 2025.",
    "photo": {
     "url": null,
     "license": null,

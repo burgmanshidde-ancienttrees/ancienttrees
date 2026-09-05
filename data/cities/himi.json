@@ -1,0 +1,69 @@
+{
+  "city": "Himi",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Himi's mapped tree stands in a village burial ground at the end of a dead-end valley. Oidani no Otsubaki, Japan's thickest known wild camellia, splits into three trunks that have grown back together into a tangle solid enough to sit on, with a legend of an executed samurai and his widow attached to the ground beneath it. Published here as a single-tree place under the 2026-08-31 exception, too remote for a same-day trip from anywhere we already map.",
+  "meta_description": "Oidani no Otsubaki, Himi: Japan's thickest wild camellia, 3.89m round, in a remote hillside graveyard, opening deep red each April.",
+  "question_meta": "Himi's mapped tree is Oidani no Otsubaki, Japan's largest recorded wild camellia, 3.89 metres round.",
+  "question_answer": "Himi's only mapped tree is Oidani no Otsubaki, ranked Japan's largest known specimen of wild Camellia japonica, standing in a small community graveyard at the end of the Oidani valley, a Toyama Prefecture Natural Monument since 1965.",
+  "question_context": "Japan's thickest wild camellia stands in a village burial ground at the end of a dead-end valley. The Oidani camellia is ordinary yabu-tsubaki, Camellia japonica as it grows in the hills, ranked first in the country for the species by the surveyor Miyake Kazuyoshi. It measures 3.89 metres round and 7.5 metres tall. Its age is disputed: Himi City's own page says about 500 years, an older survey says 700 to 800, and neither explains its number. The shape is what people come up here for. It splits into three thick trunks less than a metre off the ground, their branches grown back together into a tangle solid enough to sit on. Locally it is the Sasumata Camellia, after the Y-shaped pole once used to pin a man against a wall. Legend attaches the graveyard to a samurai executed on a false charge and the widow who died of grief nearby, with a camellia planted where a grave marker should have gone. Toyama Prefecture designated the tree in 1965. It opens deep red for about a month from early April. Free to visit; remote, reached by taxi (about 35 minutes from Himi Station) or bus plus a 30-minute walk.",
+  "hero_tree_id": "him_001",
+  "oldest_tree_id": "him_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Ranked Japan's largest known specimen of wild Camellia japonica, 3.89 metres round, its three trunks grown back together into a tangle solid enough to sit on."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. Himi City's own page says about 500 years; an older published survey says 700 to 800. Neither is resolved in favour of the other."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no ticket. It stands inside an ordinary open community graveyard at the end of the Oidani hamlet, with a plain address and no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is remote, about 18km from Himi's city centre. From JR Himi Line's Himi Station: taxi about 35 minutes, or a Kaetsunou bus to the Shimo-Iwase stop then about 30 minutes on foot."
+    }
+  ],
+  "trees": [
+    {
+      "id": "him_001",
+      "name": "Oidani no Otsubaki",
+      "species": "Common Camellia (Camellia japonica)",
+      "age_estimate": "roughly 500 years (the city's own figure); one older published survey gives 700 to 800 years instead",
+      "age_min": 500,
+      "age_max": 800,
+      "girth_cm": 389,
+      "height_m": 7.5,
+      "location": {
+        "address": "Oidani 1249, Himi City, Toyama Prefecture, Japan; in a small hillside graveyard at the innermost end of the Oidani hamlet",
+        "latitude": 36.8305,
+        "longitude": 136.861611,
+        "neighbourhood": "Oidani, Himi City"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E8%80%81%E8%B0%B7%E3%81%AE%E5%A4%A7%E3%83%84%E3%83%90%E3%82%AD",
+        "https://www.city.himi.toyama.jp/gyosei/soshiki/hakubutsukan/bunkazai/1749.html",
+        "https://www.pref.toyama.jp/1603/kurashi/sportsleisure/leisure/kj00000696/kj00000696-039-01.html"
+      ],
+      "access": "Free, no ticket. Stands inside a small community hillside graveyard at the far end of Oidani hamlet, an ordinary open village burial ground rather than anyone's private garden; both government sources give a plain address and neither mentions a gate, fee or restriction. Very remote: about 18km from Himi's city centre, close to the Ishikawa Prefecture border, up a side valley off the Oidani river.",
+      "transport": "From JR Himi Line's Himi Station: taxi about 35 minutes, or Kaetsunou bus to the Shimo-Iwase stop then about 30 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "April, when it carries deep red flowers for about a month"
+      },
+      "story": "Japan's thickest wild camellia stands in a village burial ground at the end of a dead-end valley. The Oidani camellia is ordinary yabu-tsubaki, Camellia japonica as it grows in the hills without anyone's help, and the surveyor Miyake Kazuyoshi ranked it first in the country for the species. It measures 3.89 metres round and 7.5 metres tall, spreading 7.9 metres east to west and 11 north to south.\n\nIts age is disputed and we are not going to settle it. Himi City's own cultural-properties page says about 500 years. A 1998 published survey of Japan's giant trees says 700 to 800 instead. Neither explains how it got to its number.\n\nThe shape is what people come up here for. It splits into three thick trunks less than a metre off the ground, and their branches have grown back into each other into a tangle solid enough at around two and a half metres up to sit on. Locally it is the Sasumata Camellia, after the Y-shaped pole once used to pin a man against a wall.\n\nThe graveyard has a story attached. A samurai of Ikeda Castle executed on a false charge; his widow turned away by her own family and dead of grief; the two buried on the hill facing the castle, with a camellia planted where a stone should have gone. Toyama Prefecture designated the tree in 1965. It opens deep red for about a month from early April.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

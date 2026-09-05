@@ -1,0 +1,69 @@
+{
+  "city": "Yamanashi City",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Yamanashi City's mapped tree holds a hilltop clearing on its own. Okkazuma no Shidarezakura is a weeping cherry at about 680 metres in the Okkazuma district, with the Kofu Basin dropping away below it and Mt Fuji across the far side. Published here as a single-tree place under the 2026-08-31 exception, too far across the basin from any city we already map for a same-day trip.",
+  "meta_description": "Okkazuma no Shidarezakura, Yamanashi City: a solitary weeping cherry on a hilltop above the Kofu Basin, lit after dark through its April bloom.",
+  "question_meta": "Yamanashi City's mapped tree is Okkazuma no Shidarezakura, a weeping cherry standing alone on a hilltop above the Kofu Basin.",
+  "question_answer": "Yamanashi City's only mapped tree is Okkazuma no Shidarezakura, the Weeping Cherry of Okkazuma, standing alone on a hilltop clearing at about 680 metres, designated a natural monument in 1976.",
+  "question_context": "At 8.7 metres tall it is a small tree, and people drive a mountain road to stand in front of it anyway. It holds a hilltop clearing on its own, on ground the hamlet calls Yama no Ue, with the Kofu Basin dropping away below and Mt Fuji across the far side; nothing else is in the frame, which is the whole of why it is known. The measurements are human scale: 3.8 metres round at chest height, a crown about 8.5 metres across. Its age was put at 150 to 200 years when the old town of Makioka made it a natural monument in 1976; Yamanashi City inherited the designation in the municipal merger. The hilltop is a local family's field, kept open to anyone who walks up. Two small shrines share the clearing, and the households of Okkazuma hold their own hanami here when the tree opens in early April, lit after dark through the flowering week. No source names which weeping cherry cultivar it actually is. Reached by car only, about 20 minutes from JR Chuo Line's Enzan Station, with parking for five to ten cars and no space for buses.",
+  "hero_tree_id": "ynh_001",
+  "oldest_tree_id": "ynh_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It stands entirely alone on a hilltop clearing at about 680 metres, with the Kofu Basin below it and Mt Fuji visible across the far side. Nothing else shares the frame."
+    },
+    {
+      "q": "How old is it?",
+      "a": "It was estimated at 150 to 200 years when first designated in 1976. No newer figure has been published since."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The hilltop is a local family's field, kept open to anyone who walks up, with no ticket or condition."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car only, about 20 minutes from JR Chuo Line's Enzan Station or 30 minutes from Katsunuma IC on the Chuo Expressway. Parking below the hill takes five to ten cars and no buses."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ynh_001",
+      "name": "Okkazuma no Shidarezakura (the Weeping Cherry of Okkazuma)",
+      "species": "Weeping Higan Cherry (Prunus subhirtella)",
+      "age_estimate": "roughly 150 to 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 380,
+      "height_m": 8.7,
+      "location": {
+        "address": "Okkazuma district, Murofuse, Makioka-cho, Yamanashi City, Yamanashi Prefecture, on a hilltop known locally as 'Yama no Ue' at approx. 680m elevation",
+        "latitude": 35.76189,
+        "longitude": 138.70967,
+        "neighbourhood": "Okkazuma, Makioka, Yamanashi City"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E4%B9%99%E3%83%B6%E5%A6%BB%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%B6%E3%82%AF%E3%83%A9",
+        "https://www.yamanashishi-kankou.com/nature/sakura_okkazuma/",
+        "https://www.yamanashi-kankou.jp/kankou/spot/p1_4295.html"
+      ],
+      "access": "Free. Stands on privately owned land (a local resident's hilltop field), kept open to the public and freely visited. Small shrines (Akihasan, Tenjingu) share the hilltop clearing, where Okkazuma residents hold their own hanami gatherings.",
+      "transport": "Car only; no public transport route found. About 20 minutes' drive from JR Chuo Line's Enzan Station, or about 30 minutes from the Katsunuma IC on the Chuo Expressway. Parking at the Okkazuma community hall and nearby (roughly 5 to 10 cars; no space for large buses).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "early April, when it flowers alone on the hilltop and is lit after dark"
+      },
+      "story": "At 8.7 metres tall this is a small tree, and people drive a mountain road to stand in front of it anyway. The weeping cherry of Okkazuma holds a hilltop clearing on its own at about 680 metres, on ground the hamlet calls Yama no Ue, with the Kofu Basin dropping away below it and Mt Fuji across the far side. Nothing else is in the frame. That is the whole of why it is famous.\n\nThe measurements are human scale: 3.8 metres round at chest height, 4.6 at the root collar, a crown about 8.5 metres across. Its age was put at 150 to 200 years when the old town of Makioka made it a natural monument on 30 March 1976. Yamanashi City inherited the designation in the municipal merger and still lists it today.\n\nThe hilltop is a local family's field, kept open to anyone who walks up, with no conditions attached. Two small shrines, Akihasan and Tenjingu, share the clearing, and the households of Okkazuma hold their own hanami up here when the tree opens in early April. It is lit after dark through the flowering week.\n\nEvery source calls it simply a shidarezakura and none of them names the parentage, so which weeping cherry this actually is has never been settled. If you know, tell us. Come by car; the parking below the hill takes about ten vehicles and no buses at all.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

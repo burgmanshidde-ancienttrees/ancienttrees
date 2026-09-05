@@ -2,11 +2,12 @@
   "city": "Maebashi",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Maebashi's mapped tree is the Great Kaya of Yokomuro, a Japanese Torreya 8.1 metres round, one of the Nihon San-dai Kaya, Japan's three great kaya trees. Sources disagree by seven centuries on its age, over 300 years by a 1991 government survey or over 1,000 by shrine tradition, and both figures are kept rather than picked. Published here as a single-tree place under the 2026-08-31 exception: a trio member this thick is worth the trip on its own.",
-  "meta_description": "The Great Kaya of Yokomuro in Maebashi: 8.1 metres round, one of Japan's three great kaya trees, age disputed between 300 and 1,000 years.",
-  "question_meta": "Maebashi's mapped tree is the Great Kaya of Yokomuro, a Japanese Torreya 8.1 metres round and one of Japan's three great kaya trees.",
-  "question_answer": "Maebashi's only mapped tree is the Great Kaya of Yokomuro, a Torreya nucifera standing on privately held former shrine ground in Fujimi-cho. It measures 8.1 metres round and is one of the Nihon San-dai Kaya, Japan's three great kaya trees, alongside specimens in Saitama and Hamamatsu.",
+  "intro": "Maebashi maps two trees. The Great Kaya of Yokomuro is a Japanese Torreya 8.1 metres round, one of the Nihon San-dai Kaya, Japan's three great kaya trees, its age disputed by seven centuries between a 1991 survey and shrine tradition. The Kinmokusei of Kezoji, in nearby Isesaki, carries a National Natural Monument's name even though the original tree it honours died of typhoon damage in the 1980s; what blooms there each October is its roughly 40 year old successor.",
+  "meta_description": "Maebashi's two mapped trees: the Great Kaya of Yokomuro, one of Japan's three great kaya trees, and the Kinmokusei of Kezoji, a monument reborn.",
+  "question_meta": "Maebashi's oldest mapped tree is the Great Kaya of Yokomuro, a Japanese Torreya 8.1 metres round and one of Japan's three great kaya trees.",
+  "question_answer": "Maebashi's oldest mapped tree is the Great Kaya of Yokomuro, a Torreya nucifera standing on privately held former shrine ground in Fujimi-cho. It measures 8.1 metres round and is one of the Nihon San-dai Kaya, Japan's three great kaya trees, alongside specimens in Saitama and Hamamatsu.",
   "question_context": "The age is genuinely contested rather than merely approximate. A 1991 government conservation survey called it just over 300 years old; the shrine tradition on site says over 1,000. Neither has the last word, and both are recorded rather than one being picked as correct. A Suwa Shrine occupied this ground from 1749 until 1907, when it was relocated elsewhere and the Kanazawa family took over the plot; they have kept the tree as sacred ground in the century since, on land that is privately theirs, and let anyone come and look at no charge. The 2000 survey measured it at 24 metres tall with a 17-metre crown spread and a root circumference of 13.2 metres, a genuinely massive specimen for the species. It was named a National Natural Monument in 1920 by most sources, 1933 by one; 1920 is the figure the government's own heritage database uses and the one used here.",
+  "hero_tree_id": "mae_001",
   "oldest_tree_id": "mae_001",
   "faq": [
     {
@@ -24,6 +25,10 @@
     {
       "q": "How do I get there?",
       "a": "The tree stands in Yokomuro, Fujimi-cho, in Maebashi City, Gunma Prefecture. The nearest station and walking time were not established for this page; check locally before travelling."
+    },
+    {
+      "q": "Is the Kinmokusei of Kezoji the same tree that was designated in 1937?",
+      "a": "No. The original Kinmokusei of Kezoji died of typhoon damage by the late 1980s. The tree standing at the site today grew from the same root and cuttings, established around 1987 to 1988, and is roughly 35 to 40 years old."
     }
   ],
   "trees": [
@@ -51,6 +56,42 @@
       "transport": "In Fujimi-cho, Maebashi City, Gunma Prefecture; nearest station and walk time not established this pass.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mae_002",
+      "name": "The Kinmokusei of Kezoji",
+      "species": "Sweet Osmanthus (Osmanthus fragrans)",
+      "age_estimate": "second-generation tree, about 35-40 years old",
+      "age_min": 35,
+      "age_max": 40,
+      "girth_cm": null,
+      "location": {
+        "address": "6 Kezoji-cho, Isesaki, Gunma, Japan (Kezoji temple grounds, south of the kitchen building, adjoining Kezoji Park)",
+        "latitude": 36.341013,
+        "longitude": 139.199622,
+        "neighbourhood": "Isesaki, about 17.1 km from central Maebashi, a same-day trip"
+      },
+      "story": "The tree that made this place famous is dead, and the one standing here now is its child. The original kinmokusei at Kezoji was 300 to 400 years old when the state made it a National Natural Monument on 15 June 1937, a trunk 2.6 to 2.8 metres round with a scent people said carried for kilometres the week it opened. Typhoons took it apart. The sources disagree on which storms did it, giving 1957, 1966 and 1982 between them, and by the late 1980s the trunk was dead.\n\nWhat replaced it came off the same root. Gunma Prefecture's forestry experimental station raised saplings, and around 1987 to 1988 a second-generation tree was established on the spot. The Japanese record describes shoots pushing from the surviving root base alongside propagated cuttings; the prefecture's own tourism board simply calls it a 1988 replanting. Either way the sweet osmanthus in front of you is roughly 35 to 40 years old, growing behind a low protective fence on temple ground beside Kezoji Park.\n\nIt flowers in the middle of October, later in the month than it used to, and holds the flower for three or four days. Osmanthus announces itself before you see it, which is the whole reason anyone wrote this tree down in the first place. Six designated kinmokusei survive in Japan. This is one of those sites, still carrying the name of a tree that is no longer there.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E8%8F%AF%E8%94%B5%E5%AF%BA%E3%81%AE%E3%82%AD%E3%83%B3%E3%83%A2%E3%82%AF%E3%82%BB%E3%82%A4",
+        "https://gunma-kanko.jp/features/399",
+        "https://online.bunka.go.jp/heritages/detail/190342"
+      ],
+      "access": "Free. Temple grounds adjoining the public Kezoji Park; the tree stands behind a protective fence but is visible and reachable without booking or permission. Accessible by bus from Isesaki Station or about 5 minutes by car from the nearby expressway interchange.",
+      "transport": "Bus from JR Isesaki Station toward Kezoji; roughly 5 minutes by car from the nearest expressway interchange. No station-to-door walk time found.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [10],
+        "kind": "flowers",
+        "label": "mid-October, when it opens for three or four days and the air goes sweet"
+      },
       "photo": {
         "url": null,
         "license": null,
