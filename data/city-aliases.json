@@ -820,6 +820,9 @@
       "Fish Lake",
       "Lago Fish"
     ],
+    "fleringen": [
+      "Fleringn"
+    ],
     "flinders-ranges": [
       "Nationaal park Ikara-Flinders Ranges",
       "Ikara-Flinderskette-Nationalpark",
@@ -1009,6 +1012,14 @@
       "Goateboarch",
       "Gotemburg"
     ],
+    "gottingen": [
+      "Gotinga",
+      "Gottinga",
+      "Getynga",
+      "Getingenas",
+      "Getingene",
+      "Chöttingen"
+    ],
     "granada": [
       "Grenade",
       "Grenada",
@@ -1154,8 +1165,16 @@
     "higashine": [
       "Higasine-chhī"
     ],
+    "higashiomi": [
+      "Higašiómi",
+      "Higashiōmi-shi",
+      "Higasiômi-chhī"
+    ],
     "hilo": [
       "Hilas"
+    ],
+    "hilvarenbeek": [
+      "Gemeente Hilvarenbeek"
     ],
     "hilversum": [
       "Hilversuma",
@@ -1580,6 +1599,9 @@
       "Maebashi Shi",
       "Maebasi-chhī"
     ],
+    "maibara": [
+      "Maibara-chhī"
+    ],
     "malaga": [
       "Malaca",
       "Malago",
@@ -1677,6 +1699,11 @@
     ],
     "minobu": [
       "Minobu-chō"
+    ],
+    "mito": [
+      "Mito-chhī",
+      "Mito-shi",
+      "Mito-sṳ"
     ],
     "miyazaki": [
       "Präfektur Miyazaki",
@@ -2161,6 +2188,9 @@
       "Liykeyawiyke",
       "Reikahiki"
     ],
+    "rhenen": [
+      "Gemeente Rhenen"
+    ],
     "riga": [
       "Riika",
       "Ryga",
@@ -2544,6 +2574,10 @@
       "Taragono",
       "Tarraqona"
     ],
+    "telgte": [
+      "Telligte",
+      "Telqte"
+    ],
     "tenerife": [
       "Teneriffa",
       "Teneryfa",
@@ -2712,6 +2746,18 @@
     ],
     "vassununga": [
       "Parque Estadual Vassununga"
+    ],
+    "velp": [
+      "Station Arnhem Centraal",
+      "Bahnhof Arnhem Centraal",
+      "Gare centrale d'Arnhem",
+      "Stazione di Arnhem Centrale",
+      "Estação Ferroviária de Arnhem",
+      "Arnhem Centraal",
+      "Arnhem Centraal vasútállomás",
+      "Stacioni Hekurudhor Arnhem Centraal",
+      "Stasiun Arnhem Centraal",
+      "Stasjon Arnhim Sintraal"
     ],
     "venice": [
       "Venetië",
@@ -2972,8 +3018,10 @@
     "dallas": "Dallas",
     "delft": "Delft",
     "den-bosch": "'s-Hertogenbosch",
+    "den-hout": "Den Hout",
     "derby": "Derby, Western Australia",
     "deventer": "Deventer",
+    "doornenburg": "Doornenburg",
     "dordrecht": "Dordrecht",
     "dresden": "Dresden",
     "dublin": "Dublin",
@@ -2987,6 +3035,7 @@
     "fara-in-sabina": "Fara in Sabina",
     "ferrara": "Ferrara",
     "fish-lake-utah": "Fish Lake (Utah)",
+    "fleringen": "Fleringen",
     "flinders-ranges": "Ikara–Flinders Ranges National Park",
     "florence": "Florence",
     "formentera": "Formentera",
@@ -3009,6 +3058,7 @@
     "gliniak": "Gliniak",
     "gonzales-texas": "Gonzales, Texas",
     "gothenburg": "Gothenburg",
+    "gottingen": "Göttingen",
     "granada": "Granada",
     "granit": "Granit, Bulgaria",
     "graz": "Graz",
@@ -3030,7 +3080,9 @@
     "higashiagatsuma": "Higashiagatsuma, Gunma",
     "higashimiyoshi": "Higashimiyoshi",
     "higashine": "Higashine",
+    "higashiomi": "Higashiōmi",
     "hilo": "Hilo, Hawaii",
+    "hilvarenbeek": "Hilvarenbeek",
     "hilversum": "Hilversum",
     "himi": "Himi, Toyama",
     "hiroshima": "Hiroshima",
@@ -3087,6 +3139,7 @@
     "madeira": "Madeira",
     "madrid": "Madrid",
     "maebashi": "Maebashi",
+    "maibara": "Maibara, Shiga",
     "malaga": "Málaga",
     "malsfeld": "Malsfeld",
     "manchester": "Manchester",
@@ -3102,6 +3155,7 @@
     "minamialps": "Akaishi Mountains",
     "minobu": "Minobu, Yamanashi",
     "miriam-vale": "Miriam Vale",
+    "mito": "Mito, Ibaraki",
     "miyazaki": "Miyazaki Prefecture",
     "modena": "Modena",
     "montreal": "Montreal",
@@ -3122,6 +3176,7 @@
     "nihonmatsu": "Nihonmatsu, Fukushima",
     "nijmegen": "Nijmegen",
     "nikaho": "Nikaho, Akita",
+    "nuenen": "Nuenen",
     "numata": "Numata, Gunma",
     "nuremberg": "Nuremberg",
     "oahu": "Oʻahu",
@@ -3164,6 +3219,7 @@
     "raudone": "Raudonė",
     "regensburg": "Regensburg",
     "reykjavik": "Reykjavík",
+    "rhenen": "Rhenen",
     "riga": "Riga",
     "rio-de-janeiro": "Rio de Janeiro",
     "robenhausen": "Robenhausen",
@@ -3174,8 +3230,10 @@
     "rotterdam": "Rotterdam",
     "rouen": "Rouen",
     "runnymede": "Runnymede",
+    "sachsenbrunn": "Sachsenbrunn",
     "sakegawa": "Sakegawa",
     "salzburg": "Salzburg",
+    "sambeek": "Sambeek",
     "san-antonio": "San Antonio",
     "san-diego": "San Diego",
     "san-francisco": "San Francisco",
@@ -3206,6 +3264,7 @@
     "split": "Split, Croatia",
     "stelmuze": "Stelmužė",
     "stockholm": "Stockholm",
+    "stoutenburg": "Stoutenburg",
     "strasbourg": "Strasbourg",
     "stuttgart": "Stuttgart",
     "sulechow": "Sulechów",
@@ -3217,6 +3276,7 @@
     "takayama": "Takayama, Gifu",
     "tallinn": "Tallinn",
     "tarragona": "Tarragona",
+    "telgte": "Telgte",
     "tenerife": "Tenerife",
     "the-hague": "The Hague",
     "thessaloniki": "Thessaloniki",
@@ -3239,15 +3299,18 @@
     "valencia": "Valencia",
     "vancouver": "Vancouver",
     "vassununga": "Vassununga State Park",
+    "velp": "Arnhem Centraal railway station",
     "venice": "Venice",
     "venlo": "Venlo",
     "verona": "Verona",
     "vienna": "Vienna",
     "vilnius": "Vilnius",
+    "vorden": "Vorden",
     "waipoua-forest": "Waipoua Forest",
     "warsaw": "Warsaw",
     "washington-dc": "Washington, D.C.",
     "wessobrunn": "Wessobrunn",
+    "wolfheze": "Wolfheze",
     "wroclaw": "Wrocław",
     "wye-mills-maryland": "Wye Mills, Maryland",
     "yabu": "Yabu, Hyōgo",
@@ -3268,6 +3331,8 @@
     "breda": "Breda",
     "chadds-ford": "Chadds Ford, Pennsylvania",
     "curinga": "Curinga",
+    "den-hout": "Den Hout",
+    "doornenburg": "Doornenburg",
     "effeltrich": "Effeltrich",
     "gliniak": "Gliniak",
     "granit": "Granit, Bulgaria",
@@ -3280,19 +3345,25 @@
     "llangernyw": "Llangernyw",
     "malsfeld": "Malsfeld",
     "miriam-vale": "Miriam Vale",
+    "nuenen": "Nuenen",
     "pemberton": "Pemberton, Western Australia",
     "port-renfrew": "Port Renfrew",
     "runnymede": "Runnymede",
+    "sachsenbrunn": "Sachsenbrunn",
+    "sambeek": "Sambeek",
     "schenklengsfeld": "Schenklengsfeld",
     "shinkamigoto": "Shin-Kamigotō",
     "shokawa": "Shokawa",
     "simsbury": "Simsbury, Connecticut",
     "sintra": "Sintra",
+    "stoutenburg": "Stoutenburg",
     "tillamook": "Tillamook, Oregon",
     "tolpuddle": "Tolpuddle",
     "ueki": "Ueki, Kumamoto",
     "untermerzbach": "Untermerzbach",
+    "vorden": "Vorden",
     "wessobrunn": "Wessobrunn",
+    "wolfheze": "Wolfheze",
     "wye-mills-maryland": "Wye Mills, Maryland"
   },
   "unresolved_names": {
