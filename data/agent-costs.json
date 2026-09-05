@@ -5168,6 +5168,20 @@
         "tokens": 179626,
         "trees": 5,
         "note": "Found most of the batch already published by an earlier pass; delivered Witch's Spruce (new place Rambynas) and discovered/verified a genuine 4-tree cluster in Plunge Manor Park not in the original leads scrape."
+      },
+      {
+        "target": "_famous-poland",
+        "kind": "verify",
+        "tokens": 175000,
+        "trees": 8,
+        "note": "Re-dispatched after the earlier attempt's background agent was lost when its session ended; 8 of 10 named candidates verified, 2 blocked (Chrobry Oak confirmed dead, Aleja Zajecza is an avenue not a single point); Dab Slowianin judged its own place, not folded into Wroclaw (25km, no fast transit)."
+      },
+      {
+        "target": "famouspoland-write1",
+        "kind": "write",
+        "tokens": 102000,
+        "trees": 8,
+        "note": "8 Polish famous-tree stories, 8 new single-tree places (Henrykow Lubanski, Gliniak, Ksiaz, Hniszow, Sulechow, Lodz, Debina, Zywiec); disputes on Henrykow girth/age, Bolko Yew 400-800 and Franciszek's polypore kept in the prose; no best_time (4 evergreen, 4 oaks with no documented peak)."
       }
     ]
   }

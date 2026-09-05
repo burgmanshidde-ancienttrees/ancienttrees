@@ -1,0 +1,61 @@
+{
+  "city": "Sulechów",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Sulechów, a small town in Lubusz on Poland's western edge, sits beside a pine that measures fatter at chest height than at the ground, evidence that Waligóra started life as two trees rather than one. An 18-stop trail built in 1998 leads a kilometre and a half out from town to see it, past forest that has grown up around a fusion nobody planned.",
+  "meta_description": "Sosna Waligóra near Sulechów, Poland: likely two pines fused into one, the country's second-thickest, 620cm round, reached by an 18-stop forest trail.",
+  "question_meta": "Sulechów's mapped tree is Sosna Waligóra, likely the fusion of two pines into one.",
+  "question_answer": "Sulechów's mapped tree is Sosna Waligóra, a Scots pine in state forest just east of town, measured at 620 centimetres round at chest height, generally reckoned the second-thickest pine in Poland.",
+  "question_context": "The tree is fatter higher up than it is at the base, 620 centimetres round at 1.3 metres against 527 at ground level, which is not how a single trunk normally grows. The likeliest explanation is that at least two young pines grew together low down and fused, with the combined mass then forking at about two metres into eight bent limbs, now held together with steel cables. That shape, rather than age, is what makes it so thick: at only about 160 to 170 years old it is younger than its bulk suggests. Poland's actual thickest pine, Rzepicha, stands in the same forest district; Waligóra was judged the country's thickest submitted specimen in a 2002 national competition. It has been protected since December 1982, reconfirmed by the voivode in 2006. An 18-stop educational trail called Do Waligóry has run 3.4 kilometres out to the tree since 1998, and the local green and black hiking routes pass the same spot; there is also a parking area just off national road 32, about a kilometre and a half east of Sulechów.",
+  "hero_tree_id": "sul_001",
+  "oldest_tree_id": "sul_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is fatter at chest height than at the ground, evidence that it began as two pines that fused low down rather than one."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 160 to 170 years, young for a tree of this bulk; its thickness comes from its fused shape rather than its age."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in open state forest with a parking area and a signed trail, no fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car or on foot from Sulechów; it stands about 80 metres off national road 32, 1.5km east of town, with an 18-stop trail leading to it."
+    },
+    {
+      "q": "Is it really the thickest pine in Poland?",
+      "a": "Close: it is generally reckoned the second-thickest. The thickest, Rzepicha, grows in the same forest district."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sul_001",
+      "name": "Sosna Waligóra",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "age_estimate": "roughly 160-170 years",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 620,
+      "location": {
+        "address": "Leśnictwo Klępsk, Nadleśnictwo Sulechów, beside national road 32, about 1.5 km east of Sulechów",
+        "latitude": 52.09231,
+        "longitude": 15.67075,
+        "neighbourhood": "near Sulechów, Lubusz Voivodeship"
+      },
+      "story": "This pine is fatter at chest height than it is at the ground, which is not how trees are meant to work. At 1.3 metres it measures 620 centimetres round. At the base it measures 527. The likeliest explanation is that Waligóra was never one tree: at least two grew together low down, fused into a single mass, and the whole thing divides at about two metres into eight bent limbs.\n\nThat accident of biography makes it the second thickest pine in Poland. The thickest, Rzepicha, happens to stand in the same forest district. In a national competition in 2002, Waligóra was judged the thickest specimen anyone put forward.\n\nThe age is the surprise in the other direction. It is only about 160 to 170 years old, young for a tree with a reputation, and its bulk comes from its shape rather than from time. The eight limbs are now held with steel cables and there is a low wooden fence around the base.\n\nIt is easy to reach and hard to miss: 80 metres off national road 32, a kilometre and a half east of Sulechów, with a parking area at the roadside. An 18-stop educational trail called Do Waligóra has run 3.4 kilometres out to it since 1998, and the local green and black hiking routes pass the same way. Protected since December 1982, reconfirmed by the voivode in 2006, and stranger up close than any photograph makes it look.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Sosna_Walig%C3%B3ra",
+        "https://www.pomniki-przyrody.pl/?p=1443",
+        "https://gazetalubuska.pl/sulechow-co-to-za-okaz-waligora-zachwyca-wszystkich-zobacz-zdjecia/ar/c1-14255979"
+      ],
+      "access": "Free, publicly accessible. Stands in state forest (Nadleśnictwo Sulechów) about 80 m off national road 32, with a roadside parking area and a 3.4 km, 18-stop educational trail ('Do Waligóry', laid out 1998) leading to it; also on the green and black marked hiking trails of gmina Sulechów.",
+      "transport": "About 1.5 km east of Sulechów on national road 32; no direct public transport to the tree itself, reached by car (parking on site) or on foot/bike from Sulechów via the marked trail.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "city": "Hniszów",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Hniszów is a village on the Bug river at Poland's eastern edge, and its oak came fourth in the whole of Europe. The Bolko Oak took the national Tree of the Year title in 2015 before 23,313 people across the continent voted it into the top four the year after, a nine-metre trunk in a former manor park that is now simply open ground.",
+  "meta_description": "The Bolko Oak in Hniszów, Poland: 2015 national Tree of the Year, 4th in Europe 2016, an 8.7m trunk on the Bug river near the Ukrainian border.",
+  "question_meta": "Hniszów's mapped tree is the Bolko Oak, 4th place in European Tree of the Year 2016.",
+  "question_answer": "Hniszów's mapped tree is the Bolko Oak (Dąb Bolko), a pedunculate oak in a former manor park beside the Bug river, winner of Poland's national Tree of the Year in 2015 and fourth-placed in the European contest the following year.",
+  "question_context": "The oak measures 874 centimetres round, close to nine metres, and stands between 24 and 30 metres tall depending on who measured it. Its age is argued rather than settled: a 1984 assessment gave 623 years, which would put it around 660 today, and published ranges run from 400 to 800, with most sources landing between 500 and 650. The name comes from Bolko Trzebiński, son of a former estate owner, who died in 1883 aged thirteen, not from any monarch. A local story ties the tree to Bolesław Chrobry resting beneath it on a 1018 march towards Kyiv; it survives as legend only, with no source dating the tree from it, and neither does this one. Protected as a natural monument since 1959, the oak stands in what was once the manor park at Hniszów, in gmina Ruda-Huta near the Ukrainian border, now open ground beside the Bug. A signposted 1.2 kilometre trail runs past it and five more monumental oaks, and the Green Velo long-distance cycling route passes the same way. There is no direct public transport; the site is reached by car or by bike.",
+  "hero_tree_id": "hnz_001",
+  "oldest_tree_id": "hnz_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It won Poland's national Tree of the Year in 2015 and placed fourth in the European contest in 2016, with 23,313 votes."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed, somewhere between 400 and 800 years by different assessments; most sources settle on roughly 500 to 650. A local legend linking it to a 1018 royal march is a story, not evidence of its age."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in open parkland with no fee or ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car or bicycle; the village of Hniszów is in eastern Lubelskie near the Ukrainian border, on the Green Velo cycling route, with no direct public transport."
+    },
+    {
+      "q": "Why is it named Bolko?",
+      "a": "After Bolko Trzebiński, son of a former estate owner, who died in 1883 at thirteen. It is not named for a king, despite a local legend that suggests otherwise."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hnz_001",
+      "name": "Dąb Bolko (the Bolko Oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500-650 years",
+      "age_min": 400,
+      "age_max": 800,
+      "girth_cm": 874,
+      "location": {
+        "address": "ul. Lubelska 63, former manor park, Hniszów, gmina Ruda-Huta, Lubelskie Voivodeship",
+        "latitude": 51.25786,
+        "longitude": 23.69856,
+        "neighbourhood": "Hniszów, on the Bug river"
+      },
+      "story": "In 2016, 23,313 people across Europe voted for an oak in Hniszów, a village in the far east of Lubelskie near the Ukrainian border. It finished fourth in European Tree of the Year, having won the Polish national contest outright the year before.\n\nThe Bolko Oak measures 874 centimetres round, near enough nine metres, and stands somewhere between 24 and 30 metres tall depending on who did the measuring. Its age is argued over rather than known. A 1984 assessment gave 623 years, which would put it around 660 today; published ranges run from 400 to 800, and most sources settle between 500 and 650.\n\nThe name is not a king's. It belongs to Bolko Trzebiński, son of a former owner of the estate, who died in 1883 at the age of thirteen. There is a much older story attached to the tree as well, carried locally rather than recorded anywhere: that Bolesław Chrobry rested beneath it in 1018 on his march towards Kyiv. It is a legend and worth hearing as one. It is not evidence of anything, and anyone tempted to do the arithmetic from it should stop.\n\nProtected as a natural monument since 1959, the oak stands in what was the manor park and is now open ground beside the Bug. A signposted 1.2 kilometre trail runs past it and five more monumental oaks, and the Green Velo cycle route comes by the door.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/D%C4%85b_Bolko",
+        "https://greenvelo.pl/en/detal/385-greenvelo-bolko-oak-in-hniszow",
+        "https://parki.lubelskie.pl/aktualnosci/dab-bolko-drzewem-roku-2015"
+      ],
+      "access": "Free, publicly accessible. Stands in a former manor park now open as a public green space beside the Bug river, on a signposted 1.2 km historical and educational walking trail past the oak and five other monumental oaks nearby. On the Green Velo long-distance cycling trail.",
+      "transport": "Rural village Hniszów, gmina Ruda-Huta, eastern Lubelskie Voivodeship, near the Bug river and the Ukraine border. No direct public transport to the site; reached by car or by the Green Velo cycle route.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "city": "Książ",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Książ, best known for the castle above the Pełcznica gorge in Lower Silesia, also holds the yew that Alexander von Humboldt once judged to be over 800 years old. The Bolko Yew stands scarred and propped on scaffolding today, its true age still disputed a century and a half later, on trails that run out from the castle itself and stay open to anyone walking the park for free.",
+  "meta_description": "The Bolko Yew in Książ, Poland: possibly the oldest yew in the Sudetes, aged 400 to 800 years, propped on scaffolding but still alive.",
+  "question_meta": "Książ's mapped tree is the Bolko Yew, probably the oldest yew in the Sudetes.",
+  "question_answer": "Książ's mapped tree is the Bolko Yew (Cis Bolko), a European yew beside the Pełcznica stream gorge in Książ Landscape Park, generally called the oldest yew in the Sudetes and estimated at somewhere between 400 and 800 years old.",
+  "question_context": "The spread in that estimate is real disagreement, not a hedge: the current official figure is about 600 years, other sources say 700 or more, and the nineteenth-century naturalist Alexander von Humboldt judged it to be over 800. Yews are unusually hard to date because they hollow from the centre outward as they age, destroying the wood a ring count would need, so the argument has no obvious way to end. The trunk measures 292 centimetres round. Its condition is poor: the trunk is damaged, the crown thin, and the tree now stands inside a wooden fence with metal scaffolding taking part of its weight. It has been formally protected since either November 2006 or August 2008, depending on which record is consulted, both describing the same listing. It stands on the green trail and the Hochberg path in Książ Landscape Park, near the castle that gives the area its name, reachable on bus line 8 from Wałbrzych or Szczawno-Zdrój, or on foot down from the castle grounds.",
+  "hero_tree_id": "ksz_001",
+  "oldest_tree_id": "ksz_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is generally reckoned the oldest yew in the Sudetes, with a nineteenth-century estimate from Alexander von Humboldt putting it at over 800 years."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed: the current official estimate is about 600 years, with published figures ranging from 400 to 800. Yews are notoriously hard to date because they hollow out with age."
+    },
+    {
+      "q": "Is the tree in good health?",
+      "a": "No, and the site does not hide it. The trunk is damaged and the crown thin; the tree now stands on scaffolding that carries part of its weight, but it is alive."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on public trails inside Książ Landscape Park; only the castle building itself charges admission."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Bus line 8 from Wałbrzych or Szczawno-Zdrój to the park, then a short walk on the marked green trail or Hochberg path."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ksz_001",
+      "name": "Cis Bolko (the Bolko Yew)",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 400,
+      "age_max": 800,
+      "girth_cm": 292,
+      "location": {
+        "address": "Książański Park Krajobrazowy, near the Pełcznica stream gorge, forest district 12h, near Zamek Książ",
+        "latitude": 50.84705,
+        "longitude": 16.29106,
+        "neighbourhood": "Książ, Wałbrzych"
+      },
+      "story": "The naturalist Alexander von Humboldt put this yew at more than 800 years old, and nobody since has managed to confirm or disprove him. The current official estimate is about 600 years. Other sources say 700 or more. The honest answer is somewhere between 400 and 800, a range wide enough to swallow four centuries of Silesian history.\n\nYews are difficult to date. They hollow from the middle outwards, lose their heartwood and stop keeping a countable record of themselves, which is why the arguments about them never quite end. This one measures 292 centimetres round, about three metres, and is probably the oldest yew in the Sudetes.\n\nIt is not in good condition, and there is no reason to pretend otherwise. The trunk is badly damaged, the crown is thin and poorly developed, and the tree now stands inside a wooden fence with metal scaffolding carrying part of its weight. It is alive, and it is alive because people decided it would be.\n\nFormal protection dates from either November 2006 or August 2008, depending on which record you read, though both describe the same listing. The tree stands beside the Pełcznica stream gorge in the Książ Landscape Park, on the green trail and the Hochberg path, reachable on bus 8 from Wałbrzych or on foot down from Książ castle. There is an information plaque at the foot of it, and for a tree this contested it is remarkably confident.",
+      "verified_sources": [
+        "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wokol-ksiaza/",
+        "https://polska-org.pl/557049,Walbrzych,Cis_Bolko.html",
+        "https://www.pomniki-przyrody.pl/?tag=cis-bolko"
+      ],
+      "access": "Free, publicly accessible within the Książ Landscape Park (Książański Park Krajobrazowy). Stands beside the Pełcznica stream gorge on marked hiking trails (the green trail and the Hochberg path), with an information plaque at the site. Reachable by bus line 8 from Wałbrzych or Szczawno-Zdrój, or on foot from Książ castle.",
+      "transport": "Bus line 8 from Wałbrzych or Szczawno-Zdrój to the park, then a marked trail walk to the tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}
