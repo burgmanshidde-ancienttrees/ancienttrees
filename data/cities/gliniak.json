@@ -1,0 +1,61 @@
+{
+  "city": "Gliniak",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Gliniak is a small village in the Mazovian forests east of Warsaw, and the pine named after a schoolchildren's vote is the oldest Scots pine known in Poland. Wszebora forks low into two stems roughly 370 years old, and a signposted forest trail built in 2012 leads visitors straight to it through working state forest, no ticket and no detour needed off the road east of the capital.",
+  "meta_description": "Wszebora, Poland's oldest Scots pine, stands in state forest near Gliniak, 35km east of Warsaw. Roughly 370 years old, reached by a signed forest trail.",
+  "question_meta": "Gliniak's mapped tree is Wszebora, the oldest Scots pine known in Poland.",
+  "question_answer": "Gliniak's mapped tree is Wszebora, a Scots pine standing on a scarp above the Srebrna river in the Stankowizna forest district, widely reported as the oldest Scots pine in Poland at roughly 370 years old.",
+  "question_context": "The tree divides low into two stems, a taller one reaching about 22 metres and a shorter one about 17, and reads from a distance as two separate pines rather than one. Published girths range from 375 to 412 centimetres, close enough to agree the tree is genuinely enormous without agreeing on an exact number. It grows about 35 kilometres east of Warsaw in Nadleśnictwo Mińsk, a working state forest, and was protected as a natural monument in 1972, reconfirmed by regional regulation in 2009. A 2016 public competition to give it a name settled on Wszebora, an old Slavic name, and in 2012 foresters had already laid a 200-metre trail out from a parking area and signed the whole route Najstarsza sosna w Polsce, Poland's oldest pine. Centuries of Mazovian wind and snow have thinned its crown and taken branches off it, so it looks like a veteran up close rather than a picture-postcard pine. There is no public transport to the trailhead; it is a drive from Mińsk Mazowiecki or a longer one from Warsaw.",
+  "hero_tree_id": "gln_001",
+  "oldest_tree_id": "gln_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the oldest known Scots pine in Poland, a single base forking low into two trunks that read from a distance as two separate trees."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 370 years, estimated; sources on its girth vary between 375 and 412 centimetres, typical for a tree this size and this contested."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no fee. A 2012 forest trail leads 200 metres from a parking area straight to it."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car. It stands in Nadleśnictwo Mińsk state forest near Gliniak, about 35km east of Warsaw; there is no public transport to the trailhead."
+    },
+    {
+      "q": "Why is it called Wszebora?",
+      "a": "The name was chosen by local schoolchildren in a 2016 competition, an old Slavic name given to a tree that had stood for centuries without one."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gln_001",
+      "name": "Wszebora",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "age_estimate": "roughly 370 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 390,
+      "location": {
+        "address": "Leśnictwo Stankowizna, Nadleśnictwo Mińsk, section 144a, near Gliniak village",
+        "latitude": 52.16573,
+        "longitude": 21.55539,
+        "neighbourhood": "Gliniak, near Mińsk Mazowiecki"
+      },
+      "story": "The oldest Scots pine in Poland was named by schoolchildren. A 2016 competition settled on Wszebora, an old Slavic name, for a tree that had stood roughly 370 years on a scarp above the Srebrna river without one.\n\nFrom a distance it reads as two trees. At the ground it is one: a single base that divides low, sending up a taller stem of about 22 metres and a shorter one of about 17. Published girths run between 375 and 412 centimetres, and the sources do not agree closely enough to settle on a single figure.\n\nIt grows in the Stankowizna forest district of Nadleśnictwo Mińsk, about 35 kilometres east of Warsaw, in forest that is still worked for timber. Protection came in 1972 and was reconfirmed by a Mazovian voivode regulation in 2009. In 2012 the foresters laid a short trail out to it, 200 metres from a parking area, and signed the whole thing Najstarsza sosna w Polsce, Poland's oldest pine.\n\nWind and snow have thinned the crown over the years and branches have been taken off, so what you walk up to is a veteran rather than a postcard pine. That is what close to four centuries of Mazovian weather leaves behind. It is alive, it is still putting on needles, and it is still the oldest of its kind in the country.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Wszebora_(sosna)",
+        "https://lotziemiminskiej.pl/wszebora-pomnik-przyrody/",
+        "https://www.krajoznawcy.info.pl/wszebora-najstarsza-sosna-w-polsce-80564"
+      ],
+      "access": "Free, publicly accessible. Stands in state forest (Nadleśnictwo Mińsk) on a scarp above the Srebrna river; a nature-educational trail called 'Najstarsza sosna w Polsce' (Poland's oldest pine), built in 2012, leads 200 metres from a forest parking area to the tree.",
+      "transport": "Rural forest location near Mińsk Mazowiecki, about 35 km east of Warsaw. No public transport to the trailhead; reached by car via the forest parking area.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

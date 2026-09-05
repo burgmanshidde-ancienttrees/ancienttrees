@@ -1,0 +1,61 @@
+{
+  "city": "Łódź",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Łódź built its fortune on textile mills, and the oak that grows in one of its ordinary city parks is now Europe's champion tree. The Fabrykant Oak spreads its main limbs almost horizontally a metre and a half up, a shape that won it 45,718 votes and the European Tree of the Year title in 2023, with nothing more than open grass around it.",
+  "meta_description": "Dąb Fabrykant in Łódź, Poland: European Tree of the Year 2023, 45,718 votes, an oak with a 30m horizontal crown in an ordinary city park.",
+  "question_meta": "Łódź's mapped tree is Dąb Fabrykant, the 2023 European Tree of the Year.",
+  "question_answer": "Łódź's mapped tree is Dąb Fabrykant, also called Jagosz, a pedunculate oak in Park im. ks. bp. Michała Klepacza in the city centre, winner of the 2023 European Tree of the Year contest with 45,718 votes.",
+  "question_context": "What decided the vote was the shape: the oak's main limbs leave the trunk almost horizontally about a metre and a half off the ground and keep going outward, spreading a crown of more than 30 metres over a trunk only 458 centimetres round. The name Fabrykant, meaning factory owner, was proposed by the botanist Jan Teofil Siciński for a tree standing in the city the textile magnates built; locally it also answers to Jagosz. Records of its girth go back decades: 330 centimetres in 1961, growing to about 455 to 460 by 2009. Its age is put at roughly 150 to 200 years. In December 2013 the storm Ksawery brought down one of the main limbs and the fire brigade had to be called; the remaining limbs are now braced and supported, and the tree is lit at night. Protected as a natural monument since 1990 and reaffirmed by the city council in 2015, it stands with no fence and no ticket in an ordinary park on the border of the Polesie and Śródmieście districts, a short walk from central Łódź.",
+  "hero_tree_id": "lod_001",
+  "oldest_tree_id": "lod_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It won the 2023 European Tree of the Year contest with 45,718 votes, for a shape that grows outward rather than upward: horizontal limbs spreading a 30-metre crown."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 150 to 200 years, estimated; its girth has been tracked since 1961, when it measured 330cm, against about 455-460cm by 2009."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in an ordinary public city park with no fee or ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A short walk, tram or bus ride from central Łódź to Park im. ks. bp. Michała Klepacza."
+    },
+    {
+      "q": "Why does it have two names?",
+      "a": "Fabrykant, meaning factory owner, was proposed by a local botanist for a tree in the city the textile magnates built; locally it is also called Jagosz."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lod_001",
+      "name": "Dąb Fabrykant (the Factory Owner's Oak, also called Jagosz)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 150-200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 458,
+      "location": {
+        "address": "Park im. ks. bp. Michała Klepacza, on the border of Polesie and Śródmieście districts",
+        "latitude": 51.74856,
+        "longitude": 19.45438,
+        "neighbourhood": "Łódź city centre"
+      },
+      "story": "In 2023 an oak in an ordinary Łódź city park won European Tree of the Year with 45,718 votes, having taken the Polish national title the year before. What people were voting for is a shape. The main limbs leave the trunk almost horizontally about a metre and a half off the ground and then keep going, until the crown spans more than 30 metres over a trunk only 458 centimetres round. It spent its life growing outwards rather than upwards.\n\nFabrykant means factory owner. The botanist Jan Teofil Siciński proposed the name for a tree standing in the middle of the city the textile magnates built; locally it also answers to Jagosz. Somebody has been keeping track of it for decades: 330 centimetres round in 1961, about 455 to 460 by 2009. Best estimates put it between 150 and 200 years old.\n\nIn December 2013 the storm named Ksawery brought one of the big limbs down and the fire brigade was called out. The rest are now braced and supported, and the tree is lit after dark. It has been a protected natural monument since 1990, reaffirmed by the city council in 2015.\n\nFor a continental champion it leads a plain life. Park im. ks. bp. Michała Klepacza sits on the border of Polesie and Śródmieście, a short walk from the centre. No ticket, no fence, just people crossing the grass under thirty metres of horizontal oak.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/D%C4%85b_Fabrykant",
+        "https://klubgaja.pl/dab-fabrykant-z-lodzi-zostal-drzewem-roku-2022/",
+        "https://uml.lodz.pl/aktualnosci-lodzpl/artykul-lodzpl/dab-fabrykant-z-lodzi-drzewem-roku-2022-teraz-pora-na-europejskie-drzewo-roku-id51565/2022/7/1/"
+      ],
+      "access": "Free, publicly accessible. Stands in an ordinary public city park in central Łódź, open to all.",
+      "transport": "Central Łódź, within Park im. ks. bp. Michała Klepacza; reachable on foot or by Łódź city tram/bus, a short walk from the city centre.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    }
+  ]
+}

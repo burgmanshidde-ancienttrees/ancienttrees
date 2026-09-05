@@ -1,810 +1,812 @@
 {
- "country": "Poland",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Aleja Zajęcza, Łubowice",
-   "lat": 50.158861,
-   "lng": 18.234018,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aleja_Zaj%C4%99cza,_Park_im._Josepha_von_Eichendorffa,_%C5%81ubowice_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Aleja_Zaj%C4%99cza,_Park_im._Josepha_von_Eichendorffa,_%C5%81ubowice_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Aleja_Zaj%C4%99cza,_Park_im._Josepha_von_Eichendorffa,_%C5%81ubowice_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Baobab in Lublin",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ostatnia_godzina_baobabu_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Baobab (Adansonia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cis Henrykowski",
-   "lat": 51.171776,
-   "lng": 15.218362,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cis_Henrykowski_taxus_baccata.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cis_pospolity.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eibe_Hennersdorf.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cis Warcislaw, Szczecin",
-   "lat": 53.373853,
-   "lng": 14.625134,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cis_Warcislaw,_Szczecin_kz01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cis_Warcislaw,_Szczecin_kz02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Szczecin_Cis_Warcislaw.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lipa Powstańców",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:645f26cbc7d29_o_large.jpg",
-    "https://commons.wikimedia.org/wiki/File:7d2f9-P1680992.jpg",
-    "https://commons.wikimedia.org/wiki/File:Lipa_Powsta%C5%84c%C3%B3w(2).jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Monumental pear tree at Puławska Street in Warsaw",
-   "lat": 52.20997,
-   "lng": 21.02088,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Pomnikowa_grusza_przy_pu%C5%82awskiej.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pomnikowa_grusza_przy_pu%C5%82awskiej_fragment.jpg"
-   ],
-   "status": "RESOLVED 2026-09-04, already published as war_014 (The Pulawska Street Pear), coordinates 30m apart, same tree",
-   "species": "Pear (Pyrus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Monumental Platanus × hispanica (Zarzecze)",
-   "lat": 49.98505278,
-   "lng": 22.54146111,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Monumental_Platan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Monumental_Platan_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Monumental_Platan_3.jpg"
-   ],
-   "status": "lead",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Platan Świadek, Wrocław",
-   "lat": 51.110877,
-   "lng": 17.022452,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Platan_%C5%9Awiadek,_Stare_Miasto,_Wroc%C5%82aw,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Platan_%C5%9Awiadek,_Stare_Miasto,_Wroc%C5%82aw,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD_02.jpg"
-   ],
-   "status": "RESOLVED 2026-09-04, already published as wro_005 (The Witness Plane), coordinates within 10m, same tree",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Scots pines \"Three Auroras\" in Toruń",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Torun_jedna_z_sosen_%22Trzy_Zorze%22_fot_otworkowa_(01).jpg",
-    "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(01).jpg",
-    "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(02).jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sosna mielnicka",
-   "lat": 52.339167,
-   "lng": 23.006015,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Jak%C5%BCe_znana_sosna,_Mielnik_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pomnik_przyrody_dodan_okolice_mielnika_podlasie.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sosna_pomnik_przyrody_Mielnik_10.07.2009_p.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sosna Rzepicha",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Rzepicha.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rzepicha_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rzepicha_tablica.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sosna Waligóra",
-   "lat": 52.097226,
-   "lng": 15.674744,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gmina_Sulech%C3%B3w,_Poland_-_panoramio_(3).jpg",
-    "https://commons.wikimedia.org/wiki/File:Sosna_Walig%C3%B3ra.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sosna_Walig%C3%B3ra_Pomnik.JPG"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Witomińskie Słońca, Witomino",
-   "lat": 54.497713,
-   "lng": 18.499974,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Witomi%C5%84skie_S%C5%82o%C5%84ca_(4x_je%C5%99%C3%A1b_prost%C5%99edn%C3%AD_-_Sorbus_intermedia),_Gdynia_-_Witomino,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_2026.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Wszebora (pine)",
-   "lat": 52.165561,
-   "lng": 21.555516,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Pinus_silvestris001.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sosna_wszebora_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sosna_wszebora_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Pinus peuce, Bursztynowa Dama in Sosnowiec",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_5_czerwca_2024_001.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_032.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_037.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dąb Bartek (Bydgoszcz)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bdg_D%C4%85b_Bartek.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bdg_Torunskastreet1_10-2014.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Bartek_Bydgoszcz.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Chrobry Oak",
-   "lat": 51.50628504,
-   "lng": 15.68564415,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dab-Chrobry-2007.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Chrobry.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Chrobry_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dąb 500-lecia, Zielona Góra - Nowe Miasto",
-   "lat": 52.025472,
-   "lng": 15.554847,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Benedykta XVI, Rudy",
-   "lat": 50.194875,
-   "lng": 18.449307,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Benedykta_XVI_w_Rudach.JPG",
-    "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_dub_Benedikta_XVI.,_bludn%C3%BD_balvan,_Rudy,_Polsko.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_dub_Benedikta_XVI.,_bludn%C3%BD_balvan,_Rudy,_Polsko_2.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Bolko",
-   "lat": 51.25786,
-   "lng": 23.69856,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2016_The_Oak_of_Bolko_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Cysters, Rudy",
-   "lat": 50.194197,
-   "lng": 18.449383,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2025-07_Rudy_(10).jpg",
-    "https://commons.wikimedia.org/wiki/File:2025-07_Rudy_(11).jpg",
-    "https://commons.wikimedia.org/wiki/File:Dub_Cysters,_Rudy,_Ku%C5%BAnia_Raciborska,_okres_Ratibo%C5%99,_Polsko_01.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Czech",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
-    "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Czech_-_fotopolska.eu_(244120).jpg",
-    "https://commons.wikimedia.org/wiki/File:RogalinOaks.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Dominik",
-   "lat": 51.448311,
-   "lng": 23.124111,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dominik_Oak_Poleski_National_Park.jpg",
-    "https://commons.wikimedia.org/wiki/File:Poleski_National_Park_2018_P01_Dominik_Oak.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Eichendorffa, Łubowice",
-   "lat": 50.160131,
-   "lng": 18.233094,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Eliasz w Żytnej",
-   "lat": 50.10075,
-   "lng": 18.32982,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cyklotrasa_330Z,_%C5%BBytna,_gmina_Lyski,_okres_Rybn%C3%ADk,_Polsko_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cyklotrasa_330Z,_%C5%BBytna,_gmina_Lyski,_okres_Rybn%C3%ADk,_Polsko_02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Franciszek, Castle park in Żywiec",
-   "lat": 49.686477,
-   "lng": 19.202885,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Franciszek,_Park_%C5%BBywiecki,_%C5%BBywiec_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Franciszek,_Park_%C5%BBywiecki,_%C5%BBywiec_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Zesp%C3%B3%C5%82_zamkowo_-_parkowy_w_%C5%BBywcu_11.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Gniewko",
-   "lat": 52.930702,
-   "lng": 18.711414,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Gniewko,_Brzoza,_Gmina_Wielka_Nieszawka,_okr._Toru%C5%88.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Książęcy, Park Leśny Zdroje",
-   "lat": 53.371463,
-   "lng": 14.623017,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Lech",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85browa_rogali%C5%84ska_-_%22Lech%22.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
-    "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Lech_-_fotopolska.eu_(244114).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Madej, Lubiechów Dolny",
-   "lat": 52.9186094,
-   "lng": 14.2048403,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Madej_(D%C4%85b_Lubiechowski_N),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Marysieńki, Gdyně - Orłowo",
-   "lat": 54.471004,
-   "lng": 18.557556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Marysie%C5%84ki,_Gdyn%C4%9B_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Ka%C5%A1ubsko,_Polsko_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Marysie%C5%84ki,_Gdyn%C4%9B_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Ka%C5%A1ubsko,_Polsko_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Marysie%C5%84ki,_Gdyn%C4%9B_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Ka%C5%A1ubsko,_Polsko_03.jpg"
-   ],
-   "status": "RESOLVED 2026-09-04, already published as gda_005 (Marysienka's Oak), coordinates within 10m, same tree"
-  },
-  {
-   "name": "Dąb Paweł, Czarnocin",
-   "lat": 53.721249,
-   "lng": 14.554498,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_(dub_Pavel),_Czarnocin,_gmina_Stepnica,_okres_Goleni%C3%B3w,_Z%C3%A1padopomo%C5%99ansk%C3%A9_vojvodstv%C3%AD_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_(dub_Pavel),_Czarnocin,_gmina_Stepnica,_okres_Goleni%C3%B3w,_Z%C3%A1padopomo%C5%99ansk%C3%A9_vojvodstv%C3%AD_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_w_Czarnocinie_kz01.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Pietrek, Lubiechów Dolny",
-   "lat": 52.917582,
-   "lng": 14.204373,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pietrek_(D%C4%85b_Lubiechowski_S),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Rus",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
-    "https://commons.wikimedia.org/wiki/File:D%C4%99by_w_Rogalinie_Rus_2003_r.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Rus_-_fotopolska.eu_(244115).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Słowianin",
-   "lat": 51.05669,
-   "lng": 17.3819,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015_Oak_Slav_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_S%C5%82owianin_w_D%C4%99binie.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Wybickiego",
-   "lat": 54.12953,
-   "lng": 18.12053,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_Wybicki_Oak_at_B%C4%99domin_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:B%C4%99domin_(12).JPG",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Wybickiego_w_B%C4%99dominie.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Jagiełły",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P02_Jagiello_Oak.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P03_Jagiello_Oak.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P04_Jagiello_Oak.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Jeremi Przybora oak in Bydgoszcz",
-   "lat": 53.16261639,
-   "lng": 18.150855,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_1_5-2015.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_6_5-2015.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_7_5-2015.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Josef Oak",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:100_z%C5%82otych_1934_r._REWERS.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Perkun Oak in Pisz Forest",
-   "lat": 53.61337778,
-   "lng": 21.50080278,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_2.JPG",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_3.JPG"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Regalinda Oak",
-   "lat": 53.925796,
-   "lng": 14.456266,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aparthotel_z%C5%82ota_regalinda_i_d%C4%85b_regalinda.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_regalinda_mi%C4%99dzyzdroje_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Zakr%C4%99t_kolejowej_z_regalind%C4%85.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Trzy Dęby, Kędzierzyn-Koźle",
-   "lat": 50.336359,
-   "lng": 18.14681,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Trzy_D%C4%99by,_K%C4%99dzierzyn-Ko%C5%BAle_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Trzy_D%C4%99by,_K%C4%99dzierzyn-Ko%C5%BAle_02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Zdzisław Oak in Zwierzyniec",
-   "lat": 50.60906567,
-   "lng": 22.97001507,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Zwierzyniec_-_d%C4%85b_Zdzis%C5%82aw_-_pomnik_przyrody_(01)_-_DSC04136.jpg",
-    "https://commons.wikimedia.org/wiki/File:Zwierzyniec_-_d%C4%85b_Zdzis%C5%82aw_-_pomnik_przyrody_(02)_-_DSC04137_v1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Zwierzyniec_-_d%C4%85b_Zdzis%C5%82aw_-_pomnik_przyrody_(03)_-_DSC04138_v2.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Święty Franciszek (oak in Hel)",
-   "lat": 54.60590556,
-   "lng": 18.80236944,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_ca%C5%82o%C5%9B%C4%87.JPG",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_hel.JPG",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_p%C5%82ot.JPG"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cis Bolko",
-   "lat": 50.847047,
-   "lng": 16.291061,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cis_Bolko_(tis_Bolko),_Ksi%C4%85%C5%BC,_Walbrzych,_okres_Walbrzych,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cis_Bolko_(tis_Bolko),_Ksi%C4%85%C5%BC,_Walbrzych,_okres_Walbrzych,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Taxus_Bolko_P01.JPG"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cis pospolity, Park w Strzelcach Opolskich",
-   "lat": 50.509091,
-   "lng": 18.300069,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Strzelce_Opolskie_-_Zamek_-_panoramio.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Grupa Dwóch Drzew Cis Pospolity NR 346, Racibórz",
-   "lat": 50.084922,
-   "lng": 18.233206,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dwa_cisy_pospolite_przy_ul._Sudneckiej_w_Raciborzu.JPG",
-    "https://commons.wikimedia.org/wiki/File:Grupa_Dw%C3%B3ch_Drzew_Cis_Pospolity_NR_346,_Racib%C3%B3rz,_okres_Ratibo%C5%99,_Slezsk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Grupa_Dw%C3%B3ch_Drzew_Cis_Pospolity_NR_346,_Racib%C3%B3rz,_okres_Ratibo%C5%99,_Slezsk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ginkgo biloba in Opole Voivodeship",
-   "lat": 50.815083,
-   "lng": 18.158669,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:0150_Bierdzany_-_ko%C5%9Bci%C3%B3%C5%82.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bierdzany_-_ko%C5%9Bci%C3%B3%C5%82_pod_wezwaniem_%C5%9Bw._Jadwigi_-_jerzy_m23.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bierdzany_-_zabytkowy_ko%C5%9Bci%C3%B3%C5%82.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cis pospolity, Park w Strzelcach Opolskich",
-   "lat": 50.509091,
-   "lng": 18.300069,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Strzelce_Opolskie_-_Zamek_-_panoramio.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dąb 500-lecia, Zielona Góra - Nowe Miasto",
-   "lat": 52.025472,
-   "lng": 15.554847,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Lubuszan (Zielona Góra)",
-   "lat": 51.94297667,
-   "lng": 15.509255,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_02.JPG",
-    "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_03.JPG",
-    "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_04.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Bartek (Bydgoszcz)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bdg_D%C4%85b_Bartek.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bdg_Torunskastreet1_10-2014.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Bartek_Bydgoszcz.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Cielętniki Lime Tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ciel%C4%99tniki_-_700letnia_lipa.JPG",
-    "https://commons.wikimedia.org/wiki/File:Ciel%C4%99tniki_-_700letnia_lipa_-_widok_na_pie%C5%84.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lipa Bolka, Brzoza",
-   "lat": 52.930671,
-   "lng": 18.711507,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:L%C3%ADpa_Bolka,_Brzoza,_obec_Gmina_Wielka_Nieszawka.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lipa Brata Alberta, Brzoza",
-   "lat": 52.930465,
-   "lng": 18.711692,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Lipa_Brata_Alberta,_Brzoza,_obec_Gmina_Wielka_Nieszawka.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lipa drobnolistna v Cieszynie",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Lipa_drobnolistna_v_Cieszynie.JPG",
-    "https://commons.wikimedia.org/wiki/File:Lipa_drobnolistna_v_Cieszynie_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:Lipa_drobnolistna_v_Cieszynie_(2).JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lipa szerokolistna v Cieszynie",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Lipa_szerokolistna_v_Cieszynie.JPG",
-    "https://commons.wikimedia.org/wiki/File:Lipa_szerokolistna_v_Cieszynie_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:Lipa_szerokolistna_v_Cieszynie_(2).JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dąb Dunin",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Dunin_001.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Dunin_002.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Dunin_003.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Bolko",
-   "lat": 51.25786,
-   "lng": 23.69856,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2016_The_Oak_of_Bolko_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Grot",
-   "lat": 51.5528,
-   "lng": 21.84171,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2012_The_Oak_Grot_in_D%C4%99blin_PL.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Słowianin",
-   "lat": 51.05669,
-   "lng": 17.3819,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015_Oak_Slav_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_S%C5%82owianin_w_D%C4%99binie.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dąb Wybickiego",
-   "lat": 54.12953,
-   "lng": 18.12053,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_Wybicki_Oak_at_B%C4%99domin_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:B%C4%99domin_(12).JPG",
-    "https://commons.wikimedia.org/wiki/File:D%C4%85b_Wybickiego_w_B%C4%99dominie.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Josef Oak",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:100_z%C5%82otych_1934_r._REWERS.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kneeling tree in Krasnystaw",
-   "lat": 50.98366,
-   "lng": 23.17364,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2019_Kneeling_tree_PL.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Oak \"Fabrykant\" (Park Klepacza in Łódź)",
-   "lat": 51.748878,
-   "lng": 19.453881,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Plane in Kozy",
-   "lat": 49.84587,
-   "lng": 19.1427,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_in_Kozy_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kozy,_park,_platan.jpg",
-    "https://commons.wikimedia.org/wiki/File:POL_Kozy_Pomnikowy_platan.JPG"
-   ],
-   "status": "lead",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Serce Ogrodu beech",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wojs%C5%82awice_~24ilarba.jpg"
-   ],
-   "status": "lead",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Topola Helena",
-   "lat": 54.60135,
-   "lng": 18.80557,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018_Poplar_Helena_PL.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hel_Topola_Helena.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hel_Topola_Helena_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Poplar (Populus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  }
- ],
- "blocked": [
-  {
-   "name": "Jesion Króla Jana, Gdynia - Orłowo",
-   "lat": 54.472018,
-   "lng": 18.558501,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Jesion_Kr%C3%B3la_Jana,_Gdynia_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Jesion_Kr%C3%B3la_Jana,_Gdynia_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
-   ],
-   "status": "RESOLVED 2026-08-29, delivered as gda_006",
-   "species": "Ash (Fraxinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  }
- ]
+  "country": "Poland",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Baobab in Lublin",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ostatnia_godzina_baobabu_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Baobab (Adansonia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cis Henrykowski",
+      "lat": 51.171776,
+      "lng": 15.218362,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cis_Henrykowski_taxus_baccata.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cis_pospolity.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eibe_Hennersdorf.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as hnk_001",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cis Warcislaw, Szczecin",
+      "lat": 53.373853,
+      "lng": 14.625134,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cis_Warcislaw,_Szczecin_kz01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cis_Warcislaw,_Szczecin_kz02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Szczecin_Cis_Warcislaw.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Lipa Powstańców",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:645f26cbc7d29_o_large.jpg",
+        "https://commons.wikimedia.org/wiki/File:7d2f9-P1680992.jpg",
+        "https://commons.wikimedia.org/wiki/File:Lipa_Powsta%C5%84c%C3%B3w(2).jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Monumental pear tree at Puławska Street in Warsaw",
+      "lat": 52.20997,
+      "lng": 21.02088,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Pomnikowa_grusza_przy_pu%C5%82awskiej.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pomnikowa_grusza_przy_pu%C5%82awskiej_fragment.jpg"
+      ],
+      "status": "RESOLVED 2026-09-04, already published as war_014 (The Pulawska Street Pear), coordinates 30m apart, same tree",
+      "species": "Pear (Pyrus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Monumental Platanus × hispanica (Zarzecze)",
+      "lat": 49.98505278,
+      "lng": 22.54146111,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Monumental_Platan.jpg",
+        "https://commons.wikimedia.org/wiki/File:Monumental_Platan_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Monumental_Platan_3.jpg"
+      ],
+      "status": "lead",
+      "species": "Plane (Platanus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Platan Świadek, Wrocław",
+      "lat": 51.110877,
+      "lng": 17.022452,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Platan_%C5%9Awiadek,_Stare_Miasto,_Wroc%C5%82aw,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Platan_%C5%9Awiadek,_Stare_Miasto,_Wroc%C5%82aw,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD_02.jpg"
+      ],
+      "status": "RESOLVED 2026-09-04, already published as wro_005 (The Witness Plane), coordinates within 10m, same tree",
+      "species": "Plane (Platanus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Scots pines \"Three Auroras\" in Toruń",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Torun_jedna_z_sosen_%22Trzy_Zorze%22_fot_otworkowa_(01).jpg",
+        "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(01).jpg",
+        "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(02).jpg"
+      ],
+      "status": "lead",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sosna mielnicka",
+      "lat": 52.339167,
+      "lng": 23.006015,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Jak%C5%BCe_znana_sosna,_Mielnik_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pomnik_przyrody_dodan_okolice_mielnika_podlasie.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sosna_pomnik_przyrody_Mielnik_10.07.2009_p.jpg"
+      ],
+      "status": "lead",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sosna Rzepicha",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Rzepicha.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rzepicha_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rzepicha_tablica.jpg"
+      ],
+      "status": "lead",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sosna Waligóra",
+      "lat": 52.097226,
+      "lng": 15.674744,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Gmina_Sulech%C3%B3w,_Poland_-_panoramio_(3).jpg",
+        "https://commons.wikimedia.org/wiki/File:Sosna_Walig%C3%B3ra.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sosna_Walig%C3%B3ra_Pomnik.JPG"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as sul_001",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Witomińskie Słońca, Witomino",
+      "lat": 54.497713,
+      "lng": 18.499974,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Witomi%C5%84skie_S%C5%82o%C5%84ca_(4x_je%C5%99%C3%A1b_prost%C5%99edn%C3%AD_-_Sorbus_intermedia),_Gdynia_-_Witomino,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_2026.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Wszebora (pine)",
+      "lat": 52.165561,
+      "lng": 21.555516,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Pinus_silvestris001.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sosna_wszebora_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sosna_wszebora_2.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as gln_001",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Pinus peuce, Bursztynowa Dama in Sosnowiec",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_5_czerwca_2024_001.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_032.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_037.jpg"
+      ],
+      "status": "lead",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Dąb Bartek (Bydgoszcz)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bdg_D%C4%85b_Bartek.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bdg_Torunskastreet1_10-2014.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Bartek_Bydgoszcz.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb 500-lecia, Zielona Góra - Nowe Miasto",
+      "lat": 52.025472,
+      "lng": 15.554847,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Benedykta XVI, Rudy",
+      "lat": 50.194875,
+      "lng": 18.449307,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Benedykta_XVI_w_Rudach.JPG",
+        "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_dub_Benedikta_XVI.,_bludn%C3%BD_balvan,_Rudy,_Polsko.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_dub_Benedikta_XVI.,_bludn%C3%BD_balvan,_Rudy,_Polsko_2.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Bolko",
+      "lat": 51.25786,
+      "lng": 23.69856,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2016_The_Oak_of_Bolko_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P02.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as hnz_001"
+    },
+    {
+      "name": "Dąb Cysters, Rudy",
+      "lat": 50.194197,
+      "lng": 18.449383,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2025-07_Rudy_(10).jpg",
+        "https://commons.wikimedia.org/wiki/File:2025-07_Rudy_(11).jpg",
+        "https://commons.wikimedia.org/wiki/File:Dub_Cysters,_Rudy,_Ku%C5%BAnia_Raciborska,_okres_Ratibo%C5%99,_Polsko_01.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Czech",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
+        "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Czech_-_fotopolska.eu_(244120).jpg",
+        "https://commons.wikimedia.org/wiki/File:RogalinOaks.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Dominik",
+      "lat": 51.448311,
+      "lng": 23.124111,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dominik_Oak_Poleski_National_Park.jpg",
+        "https://commons.wikimedia.org/wiki/File:Poleski_National_Park_2018_P01_Dominik_Oak.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Eichendorffa, Łubowice",
+      "lat": 50.160131,
+      "lng": 18.233094,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Eliasz w Żytnej",
+      "lat": 50.10075,
+      "lng": 18.32982,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cyklotrasa_330Z,_%C5%BBytna,_gmina_Lyski,_okres_Rybn%C3%ADk,_Polsko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cyklotrasa_330Z,_%C5%BBytna,_gmina_Lyski,_okres_Rybn%C3%ADk,_Polsko_02.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Franciszek, Castle park in Żywiec",
+      "lat": 49.686477,
+      "lng": 19.202885,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Franciszek,_Park_%C5%BBywiecki,_%C5%BBywiec_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Franciszek,_Park_%C5%BBywiecki,_%C5%BBywiec_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Zesp%C3%B3%C5%82_zamkowo_-_parkowy_w_%C5%BBywcu_11.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as zyw_001"
+    },
+    {
+      "name": "Dąb Gniewko",
+      "lat": 52.930702,
+      "lng": 18.711414,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Gniewko,_Brzoza,_Gmina_Wielka_Nieszawka,_okr._Toru%C5%88.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Książęcy, Park Leśny Zdroje",
+      "lat": 53.371463,
+      "lng": 14.623017,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Lech",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85browa_rogali%C5%84ska_-_%22Lech%22.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
+        "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Lech_-_fotopolska.eu_(244114).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Madej, Lubiechów Dolny",
+      "lat": 52.9186094,
+      "lng": 14.2048403,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Madej_(D%C4%85b_Lubiechowski_N),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Marysieńki, Gdyně - Orłowo",
+      "lat": 54.471004,
+      "lng": 18.557556,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Marysie%C5%84ki,_Gdyn%C4%9B_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Ka%C5%A1ubsko,_Polsko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Marysie%C5%84ki,_Gdyn%C4%9B_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Ka%C5%A1ubsko,_Polsko_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Marysie%C5%84ki,_Gdyn%C4%9B_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Ka%C5%A1ubsko,_Polsko_03.jpg"
+      ],
+      "status": "RESOLVED 2026-09-04, already published as gda_005 (Marysienka's Oak), coordinates within 10m, same tree"
+    },
+    {
+      "name": "Dąb Paweł, Czarnocin",
+      "lat": 53.721249,
+      "lng": 14.554498,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_(dub_Pavel),_Czarnocin,_gmina_Stepnica,_okres_Goleni%C3%B3w,_Z%C3%A1padopomo%C5%99ansk%C3%A9_vojvodstv%C3%AD_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_(dub_Pavel),_Czarnocin,_gmina_Stepnica,_okres_Goleni%C3%B3w,_Z%C3%A1padopomo%C5%99ansk%C3%A9_vojvodstv%C3%AD_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_w_Czarnocinie_kz01.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Pietrek, Lubiechów Dolny",
+      "lat": 52.917582,
+      "lng": 14.204373,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pietrek_(D%C4%85b_Lubiechowski_S),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Rus",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
+        "https://commons.wikimedia.org/wiki/File:D%C4%99by_w_Rogalinie_Rus_2003_r.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Rus_-_fotopolska.eu_(244115).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Słowianin",
+      "lat": 51.05669,
+      "lng": 17.3819,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015_Oak_Slav_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_S%C5%82owianin_w_D%C4%99binie.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as dbn_001"
+    },
+    {
+      "name": "Dąb Wybickiego",
+      "lat": 54.12953,
+      "lng": 18.12053,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_Wybicki_Oak_at_B%C4%99domin_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:B%C4%99domin_(12).JPG",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Wybickiego_w_B%C4%99dominie.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Jagiełły",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P02_Jagiello_Oak.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P03_Jagiello_Oak.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P04_Jagiello_Oak.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Jeremi Przybora oak in Bydgoszcz",
+      "lat": 53.16261639,
+      "lng": 18.150855,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_1_5-2015.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_6_5-2015.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_7_5-2015.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Josef Oak",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:100_z%C5%82otych_1934_r._REWERS.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Perkun Oak in Pisz Forest",
+      "lat": 53.61337778,
+      "lng": 21.50080278,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_2.JPG",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_3.JPG"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Regalinda Oak",
+      "lat": 53.925796,
+      "lng": 14.456266,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Aparthotel_z%C5%82ota_regalinda_i_d%C4%85b_regalinda.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_regalinda_mi%C4%99dzyzdroje_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Zakr%C4%99t_kolejowej_z_regalind%C4%85.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Trzy Dęby, Kędzierzyn-Koźle",
+      "lat": 50.336359,
+      "lng": 18.14681,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Trzy_D%C4%99by,_K%C4%99dzierzyn-Ko%C5%BAle_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Trzy_D%C4%99by,_K%C4%99dzierzyn-Ko%C5%BAle_02.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Zdzisław Oak in Zwierzyniec",
+      "lat": 50.60906567,
+      "lng": 22.97001507,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Zwierzyniec_-_d%C4%85b_Zdzis%C5%82aw_-_pomnik_przyrody_(01)_-_DSC04136.jpg",
+        "https://commons.wikimedia.org/wiki/File:Zwierzyniec_-_d%C4%85b_Zdzis%C5%82aw_-_pomnik_przyrody_(02)_-_DSC04137_v1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Zwierzyniec_-_d%C4%85b_Zdzis%C5%82aw_-_pomnik_przyrody_(03)_-_DSC04138_v2.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Święty Franciszek (oak in Hel)",
+      "lat": 54.60590556,
+      "lng": 18.80236944,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_ca%C5%82o%C5%9B%C4%87.JPG",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_hel.JPG",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_p%C5%82ot.JPG"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cis Bolko",
+      "lat": 50.847047,
+      "lng": 16.291061,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cis_Bolko_(tis_Bolko),_Ksi%C4%85%C5%BC,_Walbrzych,_okres_Walbrzych,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cis_Bolko_(tis_Bolko),_Ksi%C4%85%C5%BC,_Walbrzych,_okres_Walbrzych,_Dolnoslezsk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Taxus_Bolko_P01.JPG"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as ksz_001",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cis pospolity, Park w Strzelcach Opolskich",
+      "lat": 50.509091,
+      "lng": 18.300069,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Strzelce_Opolskie_-_Zamek_-_panoramio.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Grupa Dwóch Drzew Cis Pospolity NR 346, Racibórz",
+      "lat": 50.084922,
+      "lng": 18.233206,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dwa_cisy_pospolite_przy_ul._Sudneckiej_w_Raciborzu.JPG",
+        "https://commons.wikimedia.org/wiki/File:Grupa_Dw%C3%B3ch_Drzew_Cis_Pospolity_NR_346,_Racib%C3%B3rz,_okres_Ratibo%C5%99,_Slezsk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Grupa_Dw%C3%B3ch_Drzew_Cis_Pospolity_NR_346,_Racib%C3%B3rz,_okres_Ratibo%C5%99,_Slezsk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ginkgo biloba in Opole Voivodeship",
+      "lat": 50.815083,
+      "lng": 18.158669,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:0150_Bierdzany_-_ko%C5%9Bci%C3%B3%C5%82.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bierdzany_-_ko%C5%9Bci%C3%B3%C5%82_pod_wezwaniem_%C5%9Bw._Jadwigi_-_jerzy_m23.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bierdzany_-_zabytkowy_ko%C5%9Bci%C3%B3%C5%82.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cis pospolity, Park w Strzelcach Opolskich",
+      "lat": 50.509091,
+      "lng": 18.300069,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Strzelce_Opolskie_-_Zamek_-_panoramio.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Dąb 500-lecia, Zielona Góra - Nowe Miasto",
+      "lat": 52.025472,
+      "lng": 15.554847,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Lubuszan (Zielona Góra)",
+      "lat": 51.94297667,
+      "lng": 15.509255,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_02.JPG",
+        "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_03.JPG",
+        "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_04.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Bartek (Bydgoszcz)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bdg_D%C4%85b_Bartek.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bdg_Torunskastreet1_10-2014.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Bartek_Bydgoszcz.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Cielętniki Lime Tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ciel%C4%99tniki_-_700letnia_lipa.JPG",
+        "https://commons.wikimedia.org/wiki/File:Ciel%C4%99tniki_-_700letnia_lipa_-_widok_na_pie%C5%84.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Lipa Bolka, Brzoza",
+      "lat": 52.930671,
+      "lng": 18.711507,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:L%C3%ADpa_Bolka,_Brzoza,_obec_Gmina_Wielka_Nieszawka.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Lipa Brata Alberta, Brzoza",
+      "lat": 52.930465,
+      "lng": 18.711692,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lipa_Brata_Alberta,_Brzoza,_obec_Gmina_Wielka_Nieszawka.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Lipa drobnolistna v Cieszynie",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lipa_drobnolistna_v_Cieszynie.JPG",
+        "https://commons.wikimedia.org/wiki/File:Lipa_drobnolistna_v_Cieszynie_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:Lipa_drobnolistna_v_Cieszynie_(2).JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Lipa szerokolistna v Cieszynie",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lipa_szerokolistna_v_Cieszynie.JPG",
+        "https://commons.wikimedia.org/wiki/File:Lipa_szerokolistna_v_Cieszynie_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:Lipa_szerokolistna_v_Cieszynie_(2).JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Dąb Dunin",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Dunin_001.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Dunin_002.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Dunin_003.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Bolko",
+      "lat": 51.25786,
+      "lng": 23.69856,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2016_The_Oak_of_Bolko_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bolko_oak_2018_P02.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as hnz_001"
+    },
+    {
+      "name": "Dąb Grot",
+      "lat": 51.5528,
+      "lng": 21.84171,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2012_The_Oak_Grot_in_D%C4%99blin_PL.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dąb Słowianin",
+      "lat": 51.05669,
+      "lng": 17.3819,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015_Oak_Slav_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_S%C5%82owianin_w_D%C4%99binie.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as dbn_001"
+    },
+    {
+      "name": "Dąb Wybickiego",
+      "lat": 54.12953,
+      "lng": 18.12053,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_Wybicki_Oak_at_B%C4%99domin_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:B%C4%99domin_(12).JPG",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Wybickiego_w_B%C4%99dominie.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Josef Oak",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:100_z%C5%82otych_1934_r._REWERS.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017_Josef_Oak_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kneeling tree in Krasnystaw",
+      "lat": 50.98366,
+      "lng": 23.17364,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2019_Kneeling_tree_PL.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Oak \"Fabrykant\" (Park Klepacza in Łódź)",
+      "lat": 51.748878,
+      "lng": 19.453881,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_03.jpg"
+      ],
+      "status": "RESOLVED 2026-09-05, delivered as lod_001",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Plane in Kozy",
+      "lat": 49.84587,
+      "lng": 19.1427,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_in_Kozy_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kozy,_park,_platan.jpg",
+        "https://commons.wikimedia.org/wiki/File:POL_Kozy_Pomnikowy_platan.JPG"
+      ],
+      "status": "lead",
+      "species": "Plane (Platanus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Serce Ogrodu beech",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wojs%C5%82awice_~24ilarba.jpg"
+      ],
+      "status": "lead",
+      "species": "Beech (Fagus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Topola Helena",
+      "lat": 54.60135,
+      "lng": 18.80557,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2018_Poplar_Helena_PL.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hel_Topola_Helena.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hel_Topola_Helena_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Poplar (Populus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Jesion Króla Jana, Gdynia - Orłowo",
+      "lat": 54.472018,
+      "lng": 18.558501,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Jesion_Kr%C3%B3la_Jana,_Gdynia_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Jesion_Kr%C3%B3la_Jana,_Gdynia_-_Or%C5%82owo,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
+      ],
+      "status": "RESOLVED 2026-08-29, delivered as gda_006",
+      "species": "Ash (Fraxinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Aleja Zajęcza, Łubowice",
+      "lat": 50.158861,
+      "lng": 18.234018,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Aleja_Zaj%C4%99cza,_Park_im._Josepha_von_Eichendorffa,_%C5%81ubowice_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Aleja_Zaj%C4%99cza,_Park_im._Josepha_von_Eichendorffa,_%C5%81ubowice_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Aleja_Zaj%C4%99cza,_Park_im._Josepha_von_Eichendorffa,_%C5%81ubowice_03.jpg"
+      ],
+      "status": "blocked",
+      "reason": "It is a hornbeam AVENUE (aleja grabowa) in the former palace park of poet Joseph von Eichendorff in Łubowice, not a single tree: no one obvious place to stand. Blocked as not a single collectible point per the ensemble rule. Note: the same park holds a separate single tree, 'Dąb Eichendorffa' (~300-year-old pedunculate oak), already recorded elsewhere in this leads file, which is the better single-tree candidate for this site in a future pass."
+    },
+    {
+      "name": "Chrobry Oak",
+      "lat": 51.50628504,
+      "lng": 15.68564415,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dab-Chrobry-2007.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Chrobry.jpg",
+        "https://commons.wikimedia.org/wiki/File:D%C4%85b_Chrobry_2.jpg"
+      ],
+      "status": "blocked",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Confirmed DEAD: tree did not leaf out in 2020 or 2021 after a 2014 arson fire severely damaged it; Nadlesnictwo Szprotawa foresters declared it dead (obumarl). A genetic clone grown from 2013 material was planted near the dead trunk in November 2024, but that is a young, distinct tree, not this one. Never publish per the never-dead-tree rule."
+    }
+  ]
 }

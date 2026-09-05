@@ -1,0 +1,61 @@
+{
+  "city": "Dębina",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Dębina, whose name simply means oakwood, sits in open farmland south-east of Wrocław around one particularly heavy oak. The Slavian Oak was named to make a political point during Silesia's contested history, stands 751 centimetres round on a trunk only 22 metres tall, and represented Poland at the European Tree of the Year in 2015. It grows too far from Wrocław for an easy day trip, so it stands here as its own place rather than joining the city.",
+  "meta_description": "Dąb Słowianin in Dębina, Poland: a 751cm oak that represented Poland at European Tree of the Year 2015, standing free in open farmland.",
+  "question_meta": "Dębina's mapped tree is Dąb Słowianin, Poland's 2014 Tree of the Year.",
+  "question_answer": "Dębina's mapped tree is Dąb Słowianin, the Slavian Oak, a pedunculate oak standing in the open in this village south-east of Wrocław, named Poland's Tree of the Year in 2014 and sent to represent the country at the European contest the following spring.",
+  "question_context": "The name, meaning the Slav, was chosen deliberately: Silesia spent centuries under pressure to stop being Polish, and the oak was named in memory of the Piast dukes who once ruled the region, a statement rather than a record. There is no evidence tying the tree to any of them; it simply outlasted the argument. It is built low and heavy, 751 centimetres round but only 22 metres tall, with a dome-shaped crown measuring 26.5 by 24.5 metres, both figures taken in 2015. Its age is estimated at 400 to 450 years, and its condition is currently described as good. It has been a protected natural monument since November 1979, long before the recent attention. The village itself, in gmina Jelcz-Laskowice, is about 25 kilometres from Wrocław by road but has no fast public transport connection, which is why it is mapped as its own place rather than folded into the Wrocław city page: reaching it means a regional bus or train to Jelcz-Laskowice or Oława, plus a further local connection.",
+  "hero_tree_id": "dbn_001",
+  "oldest_tree_id": "dbn_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It was named Poland's Tree of the Year in 2014 and represented the country at the European contest in 2015, a low heavy oak with a dome-shaped crown."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimated at 400 to 450 years, in good condition for a tree that age."
+    },
+    {
+      "q": "Why is it called the Slavian Oak?",
+      "a": "The name was chosen to make a statement during a history in which Silesia's Polish identity was often under pressure. There is no record connecting the tree itself to the Piast dukes it honours."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in the open in the village with no fee or restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car from Wrocław, or a regional bus or train to Jelcz-Laskowice or Oława followed by a local connection; there is no fast public transport link, which is why Dębina is not folded into Wrocław's own page."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dbn_001",
+      "name": "Dąb Słowianin (the Slavian Oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400-450 years",
+      "age_min": 400,
+      "age_max": 450,
+      "girth_cm": 751,
+      "location": {
+        "address": "Village of Dębina, gmina Jelcz-Laskowice, Lower Silesian Voivodeship",
+        "latitude": 51.05669,
+        "longitude": 17.3819,
+        "neighbourhood": "Dębina, near Jelcz-Laskowice"
+      },
+      "story": "Słowianin means the Slav, and the name was chosen to make a point. Silesia spent centuries under pressure to stop being Polish, and this oak was given a name that said plainly which side of that it stood on, in memory of the Piast dukes who ruled the region in the Middle Ages. The tree has no recorded connection to any of them. It simply outlasted the argument.\n\nIt is built low and heavy: 751 centimetres round but only 22 metres tall, a short massive trunk holding up a dome of a crown that measures 26.5 metres by 24.5. Both figures were taken in 2015. Estimates put it at 400 to 450 years old, which starts it somewhere around the turn of the seventeenth century, and its condition is currently described as good, which is not something you can say about most trees of that age.\n\nPoland voted it Tree of the Year in 2014 and sent it to represent the country at European Tree of the Year the following spring. It has been a protected natural monument since November 1979, decades before any of that.\n\nYou will not find it in a park or on an estate. It stands in the open in Dębina, a village south-east of Wrocław in gmina Jelcz-Laskowice, with fields and houses around it and nothing charging admission. Dębina means oakwood, and on the evidence of this one the name still holds up.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/D%C4%85b_S%C5%82owianin",
+        "https://gazetawroclawska.pl/tag/dab-slowianin",
+        "https://prunus-103.man.poznan.pl/registry/7013"
+      ],
+      "access": "Free, publicly accessible; stands in the open in the village of Dębina.",
+      "transport": "Village of Dębina, gmina Jelcz-Laskowice, roughly 25 km (22.7 km straight-line) south-east of Wrocław. No direct fast public transport from central Wrocław; reaching it means a regional bus or train to Jelcz-Laskowice or Oława plus a further local connection or a walk/taxi into Dębina, which does not fit within roughly 30 minutes by public transport. JUDGEMENT CALL: kept as its OWN place rather than folded into the Wrocław city page, because Dębina is a separate village in a separate municipality (Jelcz-Laskowice) at a driving distance beyond the day-trip boundary, not a Wrocław suburb.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    }
+  ]
+}

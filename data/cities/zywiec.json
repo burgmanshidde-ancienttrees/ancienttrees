@@ -1,0 +1,59 @@
+{
+  "city": "Żywiec",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Żywiec, a brewing town in the Beskid foothills, keeps its oldest tree in the public park beside its castle, and the plan for it now is to make it shorter. Sulphur polypore is working through the trunk of the Franciszek Oak, and arborists intend to bring it down in stages to a living witness trunk rather than lose it outright.",
+  "meta_description": "The Franciszek Oak in Żywiec, Poland: roughly 370 years old, fighting sulphur polypore in Castle Park, free to visit from dawn to dusk.",
+  "question_meta": "Żywiec's mapped tree is the Franciszek Oak, the oldest tree in Castle Park.",
+  "question_answer": "Żywiec's mapped tree is the Franciszek Oak (Dąb Franciszek), a pedunculate oak at the start of the lovers' alley in Park Zamkowy, the oldest of the 33 protected natural monuments in the municipality, estimated at roughly 370 years old.",
+  "question_context": "The tree is currently infected with sulphur polypore, an aggressive fungus, and arborists plan to reduce its height in stages over the coming years down to ten or twelve metres, leaving what conservators call a witness trunk, a much reduced but still living version of the tree. After recent treatment it put out abundant new shoots and dark green foliage, and accounts of the work agree it responded well. Its name comes from Count Franciszek Wielopolski, who lived from 1658 to 1732; that dates the man the tree is named for, not the tree itself. Its own age is put at roughly 320 to 400 years by the park, centred on 370, and it is known to grow about two centimetres in girth a year, though no full measurement has been published. It stands beside the Old Castle and the Habsburg palace in central Żywiec, at the start of a path known locally as the lovers' alley, open from early morning until late with free parking at the entrance.",
+  "hero_tree_id": "zyw_001",
+  "oldest_tree_id": "zyw_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the oldest of 33 protected natural monuments in the Żywiec municipality, standing at the start of the park's lovers' alley since before the count it is named for was born."
+    },
+    {
+      "q": "Is the tree dying?",
+      "a": "No, but it is being fought for. Sulphur polypore fungus is in the trunk, and arborists plan a staged height reduction rather than losing the tree outright; after recent treatment it responded with strong new growth."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 370 years, with a published range of 320 to 400. The count it is named for lived from 1658 to 1732, which dates him, not the tree."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, Park Zamkowy is open daily from early morning until late, with free parking at the entrance."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A walk from central Żywiec into Park Zamkowy, beside the Old Castle and the Habsburg palace."
+    }
+  ],
+  "trees": [
+    {
+      "id": "zyw_001",
+      "name": "Dąb Franciszek (the Franciszek Oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 370 years",
+      "age_min": 320,
+      "age_max": 400,
+      "location": {
+        "address": "Park Zamkowy (Castle Park), ul. Wincentego Witosa 11, at the start of the 'lovers' alley'",
+        "latitude": 49.68648,
+        "longitude": 19.20288,
+        "neighbourhood": "Żywiec"
+      },
+      "story": "The plan for the oldest tree in Żywiec's castle park is to make it shorter. Sulphur polypore, an aggressive fungus, is working through the wood of the trunk, and arborists intend to bring the oak's height down in stages over the coming years to ten or twelve metres, leaving what they call a witness trunk: a standing, living, much reduced version of the tree.\n\nThat is not an obituary. After recent treatment Franciszek put out abundant new shoots and dark green foliage, and both accounts of it agree that it responded well. It is alive, it is being fought for, and the people looking after it are open about where the fight is heading.\n\nThe park puts it at roughly 370 years old, with a spread of about 320 to 400. The name comes from Count Franciszek Wielopolski, who lived from 1658 to 1732, which dates the man rather than the tree; the two numbers are not the same fact. Its girth has never been published. What is on record instead is how fast it grows, about two centimetres a year. If you have stood there with a tape measure, tell us.\n\nIt marks the start of the lovers' alley in Park Zamkowy, beside the Old Castle and the Habsburg palace in the centre of Żywiec, free to walk into from early morning until late. Of the 33 protected natural monuments in the municipality, this one has been here the longest.",
+      "verified_sources": [
+        "https://zywiecinfo.pl/pl/785_wydarzenia/75659_dab-franciszek-w-jakim-stanie-jest-najstarsze-drzewo-w-zywieckim-parku.html",
+        "https://odtur.pl/atrakcje/zywiec-dab-franciszek-w-zywcu-39420.html"
+      ],
+      "access": "Free, publicly accessible. Stands in the Castle Park (Park Zamkowy) in central Żywiec, open daily (sources vary slightly on exact hours, roughly 05:00-23:00 or dawn to dusk), with free parking at the entrance.",
+      "transport": "Central Żywiec, within Park Zamkowy beside the Old Castle and Habsburg Palace; walkable from the town centre.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": "Henryków Lubański",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Henryków Lubański is a farming village in Lower Silesia, and its yew is reasonably called the oldest living thing in Poland. The Henryków Yew has stood behind a farmhouse gable for over a thousand years, surviving shellfire in 1945 and a hurricane in 1989, and it still draws enough visitors that the farm built a car park and information boards for it.",
+  "meta_description": "The Henryków Yew in Henryków Lubański, Poland: reckoned the oldest living thing in the country, well over a thousand years old, growing behind a farmhouse.",
+  "question_meta": "Henryków Lubański's mapped tree is the Henryków Yew, reckoned the oldest living thing in Poland.",
+  "question_answer": "Henryków Lubański's mapped tree is the Henryków Yew (Cis Henrykowski), a European yew growing behind a farmhouse outbuilding, widely regarded as the oldest living organism in Poland at well over a thousand years old.",
+  "question_context": "Age estimates for the yew range from about 1,250 years, the figure set by forester Cezary Pacyniak in 1992 and later revised to roughly 1,270, up to the 1,300 to 1,500 years often quoted in tourist material. There is no way to date a yew this old precisely, since old yews hollow from the centre and lose the wood a ring count would need. What is certain is the damage: shellfire in 1945 tore into the trunk and a 1989 hurricane broke apart what had been a five-metre crown. Girth measurements disagree by nearly three metres between sources, an unresolved conflict rather than an error the site has picked a side on. Conservation work between 2016 and 2020 protected the roots, watered the tree through dry summers and propped the remaining limbs on scaffolding; it responded with new growth. The tree stands on private farmland, but the owners have set the site up for visitors: a car park and information signage sit three kilometres off road 296, and the tree itself waits behind an electrified fence, viewable but not touchable.",
+  "hero_tree_id": "hnk_001",
+  "oldest_tree_id": "hnk_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is widely regarded as the oldest living thing in Poland, standing for well over a thousand years on a private farmstead set up to receive visitors."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimates disagree: a 1992 survey put it at 1,253 years, later revised to about 1,270; popular sources round up to 1,300 or even 1,500. Take the range rather than a single number."
+    },
+    {
+      "q": "Can I touch the trunk?",
+      "a": "No. It stands behind an electrified fence for its own protection, a farmstead tree that draws enough visitors to need one."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, viewing is free; there is a dedicated car park and information signage nearby."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car. The nearest town, Lubań, is about 8km away; there is no direct public transport, but the site has its own parking area 3km off road 296."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hnk_001",
+      "name": "Cis Henrykowski (the Henryków Yew)",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 1,300 years",
+      "age_min": 1000,
+      "age_max": 1500,
+      "location": {
+        "address": "Farmstead no. 293, Henryków Lubański, Lower Silesian Voivodeship",
+        "latitude": 51.171776,
+        "longitude": 15.218362,
+        "neighbourhood": "Henryków Lubański, near Lubań"
+      },
+      "story": "Poland's oldest living thing grows against the gable end of a farm outbuilding. The Henryków Yew stands on a working farmstead in Henryków Lubański behind an electrified fence, with a car park and information boards signposted three kilometres off road 296, because enough people come to see it.\n\nNobody agrees on how old it is. Dr Cezary Pacyniak put it at 1,253 years in 1992 and revised that to roughly 1,270 in 2020; popular accounts round up to 1,300 and sometimes 1,500. Take the broad figure, comfortably over a thousand years, which starts this tree several centuries before there was a Poland.\n\nThe twentieth century nearly finished it. Shellfire in 1945 tore into the trunk, and a hurricane in 1989 split and reduced the crown of a tree that had measured about five metres round. What is left is disputed even now: the natural monument register and a recent survey both give roughly 150 centimetres at breast height, while another source records 425. Both cannot be right, and nobody has settled which is.\n\nBetween 2016 and 2020 conservators protected the roots, watered it through dry summers and propped what remained on scaffolding. It answered with fresh needles. Protected as a natural monument since April 1992, it now stands thirteen to fifteen metres tall, smaller in person than its reputation and still the oldest thing alive in the country.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Cis_Henrykowski",
+        "https://www.pomniki-przyrody.pl/?p=4544",
+        "https://www.wikidata.org/wiki/Q1301101"
+      ],
+      "access": "Free, view-only. Stands on a private farmstead against the gable wall of an outbuilding, behind a protective (electrified) fence, but the site is set up as a tourist attraction with a dedicated parking area and information signage 3 km from the junction with road 296.",
+      "transport": "Rural village; no direct public transport. Nearest town Lubań is roughly 8 km away; reachable by car, with an on-site parking area.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}
