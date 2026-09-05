@@ -2,7 +2,7 @@
   "city": "Yabu",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "By 1993 Tarumi-no-Ozakura was barely flowering. Root treatment through the 1990s brought it back, and now around 10,000 people climb a forest trail each April to watch a cherry said to exceed a thousand years bloom above the Oya River. A National Natural Monument since 1951, published here as a single-tree place under the 2026-08-31 exception because it stands 20km of mountain road from the nearest city we map.",
+  "intro": "By 1993 Tarumi-no-Ozakura was barely flowering. Root treatment through the 1990s brought it back, and now around 10,000 people climb a forest trail each April to watch a cherry said to exceed a thousand years bloom above the Oya River. A National Natural Monument since 1951, published here as a single-tree place under the 2026-08-31 exception because it stands 20km of mountain road from the nearest city we map. A second tree, a rare left-spiraling kaya of a kind known only four times in Japan, stands 5.7km away in the settlement of Noza.",
   "meta_description": "Tarumi-no-Ozakura, Yabu: a cherry said to exceed 1,000 years, National Natural Monument since 1951, drawing 10,000 visitors each April.",
   "question_meta": "Yabu's mapped tree is Tarumi-no-Ozakura, a cherry said to exceed 1,000 years old, a National Natural Monument since 1951.",
   "question_answer": "Yabu's mapped tree is Tarumi-no-Ozakura, an Edo Higan cherry on a forest trail above the Oya River, said in local sources to exceed a thousand years old, though nobody has counted its rings.",
@@ -25,6 +25,10 @@
     {
       "q": "How do I get there?",
       "a": "By car via the prefectural road along the Oya River from Oya Junior High School, then a 15-minute walk on a forest trail. No public transport route reaches it."
+    },
+    {
+      "q": "What is the second tree Yabu maps?",
+      "a": "Takinoya no Hidarimakigaya, a left-spiraling variant of Japanese Torreya of a kind known in only four trees nationwide, standing in the settlement of Noza about 5.7km from Tarumi-no-Ozakura."
     }
   ],
   "trees": [
@@ -58,6 +62,37 @@
         "kind": "flowers",
         "label": "early to mid April, when the blossom pulls thousands of people up the forest trail"
       },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "yab_002",
+      "name": "Takinoya no Hidarimakigaya",
+      "species": "Japanese Nutmeg-yew, left-spiraling variety (Torreya nucifera 'Hidarimakigaya')",
+      "age_estimate": "roughly 800 years (local estimate, not independently dated)",
+      "age_min": 600,
+      "age_max": 900,
+      "girth_cm": 735,
+      "height_m": 26.0,
+      "location": {
+        "address": "Noza, Yabu City, Hyogo Prefecture, Japan (centre of the Noza settlement, about 220m elevation)",
+        "latitude": 35.30138,
+        "longitude": 134.73782,
+        "neighbourhood": "Noza, Yabu City, about 5.7km from Tarumi-no-Ozakura"
+      },
+      "verified_sources": [
+        "https://www.city.yabu.hyogo.jp/soshiki/kyoikuiinkai/shakaikyoiku/1/4/hibari/2529.html",
+        "https://www.yabu-kankou.jp/aboutyabu/about7"
+      ],
+      "access": "Stands in the centre of the small Noza settlement. The city's history and cultural-properties office lists a contact number for visit enquiries (079-661-9042) rather than open directions, so a call ahead is worth it, though nothing found this pass indicates a gated or restricted site.",
+      "transport": "In Noza, Yabu City, Hyogo Prefecture; nearest station and walk time not established this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Only four trees like this are known to exist in Japan. This Torreya's seeds spiral left, not right, a naturally occurring quirk so rare it has its own name, Hidarimakigaya, left-spiraling kaya.\n\nIt splits into two trunks about 3.7 metres up, and the split shows its age: roughly 26 metres tall, 7.35 metres round, with a root circumference of 16.5 metres and a canopy spreading 28 metres north to south. The city gives its age as roughly 800 years, a local estimate with no stated dating method behind it, so treat it as tradition rather than a measurement.\n\nIt is not fully well. The city's own record describes thinning leaf density in recent years, worst on the northern of its two trunks, where dead branches are advancing and support chains and iron braces now hold the splitting wood together. That is decline under active care, not death, and it is worth saying plainly rather than photographing around.\n\nDesignated a Hyogo Prefecture cultural property in 1938 and upgraded to a National Natural Monument in 1951, it stands in the centre of Noza, a small settlement in the Yabu hills. The city's history office lists a contact number for visit enquiries rather than open directions, worth a call ahead rather than a guarantee of an open gate.",
       "photo": {
         "url": null,
         "license": null,

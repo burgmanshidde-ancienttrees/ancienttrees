@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-09-05 (continuation) - Finished the standing _famous-japan claim: 3 trees staged since 01:56 UTC, written and merged
+
+Picked up a `_famous-japan` verify claim left standing by an earlier attempt in this window, with three trees already fully verified and staged uncommitted in `data/research/famousjapan-verified.json`, stories only missing. Wrote all three directly rather than dispatching a fresh write pass: Maebashi (new single-tree place, mae_001, The Great Kaya of Yokomuro, one of Japan's three great kaya trees), Hokuto (hok_002, Shinden no Oitozakura, a paddy-field weeping cherry), Yabu (yab_002, Takinoya no Hidarimakigaya, one of only 4 documented left-spiraling Torreya in Japan, genuinely declining per the city's own record). Full writeup in LOG.md. Species name for Torreya nucifera reconciled to the corpus's existing canonical "Japanese Nutmeg-yew" (hard rule 9), which the build caught. Japan's country page corrected 75->76 places, 193->196 trees. Removed the 3 delivered entries from `data/leads/_famous-japan.json`. Full build (4354 pages), qa.py (6343 pages) and superlatives.py (637 claims, no collisions) all clean. Claim released.
+
 ## Submissions batch, 2026-09-04 (ids 64-83): votes and one already-queued tree lead
 
 20 unprocessed rows, all from today. 18 are "worth it" / "vote undone" pairs on

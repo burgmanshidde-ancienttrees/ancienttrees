@@ -1,0 +1,62 @@
+{
+  "city": "Maebashi",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Maebashi's mapped tree is the Great Kaya of Yokomuro, a Japanese Torreya 8.1 metres round, one of the Nihon San-dai Kaya, Japan's three great kaya trees. Sources disagree by seven centuries on its age, over 300 years by a 1991 government survey or over 1,000 by shrine tradition, and both figures are kept rather than picked. Published here as a single-tree place under the 2026-08-31 exception: a trio member this thick is worth the trip on its own.",
+  "meta_description": "The Great Kaya of Yokomuro in Maebashi: 8.1 metres round, one of Japan's three great kaya trees, age disputed between 300 and 1,000 years.",
+  "question_meta": "Maebashi's mapped tree is the Great Kaya of Yokomuro, a Japanese Torreya 8.1 metres round and one of Japan's three great kaya trees.",
+  "question_answer": "Maebashi's only mapped tree is the Great Kaya of Yokomuro, a Torreya nucifera standing on privately held former shrine ground in Fujimi-cho. It measures 8.1 metres round and is one of the Nihon San-dai Kaya, Japan's three great kaya trees, alongside specimens in Saitama and Hamamatsu.",
+  "question_context": "The age is genuinely contested rather than merely approximate. A 1991 government conservation survey called it just over 300 years old; the shrine tradition on site says over 1,000. Neither has the last word, and both are recorded rather than one being picked as correct. A Suwa Shrine occupied this ground from 1749 until 1907, when it was relocated elsewhere and the Kanazawa family took over the plot; they have kept the tree as sacred ground in the century since, on land that is privately theirs, and let anyone come and look at no charge. The 2000 survey measured it at 24 metres tall with a 17-metre crown spread and a root circumference of 13.2 metres, a genuinely massive specimen for the species. It was named a National Natural Monument in 1920 by most sources, 1933 by one; 1920 is the figure the government's own heritage database uses and the one used here.",
+  "oldest_tree_id": "mae_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is one of the Nihon San-dai Kaya, Japan's three great kaya trees, and its 8.1-metre girth makes it a genuinely massive specimen of a species that rarely grows this thick."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sources disagree by seven centuries. A 1991 government survey called it just over 300 years old; local shrine tradition says over 1,000. Both figures are given here rather than one being chosen."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The land is privately owned by the Kanazawa family, who took over the plot when a Suwa Shrine here was relocated in 1907, but they let anyone come and look at no charge."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The tree stands in Yokomuro, Fujimi-cho, in Maebashi City, Gunma Prefecture. The nearest station and walking time were not established for this page; check locally before travelling."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mae_001",
+      "name": "The Great Kaya of Yokomuro",
+      "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+      "age_estimate": "300 to over 1,000 years (sources disagree)",
+      "age_min": 300,
+      "age_max": 1000,
+      "girth_cm": 810,
+      "height_m": 24.0,
+      "location": {
+        "address": "Yokomuro, Fujimi-cho, Maebashi City, Gunma Prefecture, Japan",
+        "latitude": 36.441444,
+        "longitude": 139.055611,
+        "neighbourhood": "Fujimi, Maebashi"
+      },
+      "story": "Japan keeps a short list of its three greatest kaya trees, and this one earns its place by sheer girth: 8.1 metres round, a trunk that makes even its two neighbours on the list, in Saitama and Hamamatsu, look modest.\n\nThe age is genuinely contested. A 1991 government survey called it just over 300 years old. The shrine tradition on site says over 1,000. Nobody has settled it, and the honest answer is to give both figures rather than pick a favourite. What nobody disputes is the size, and a Japanese Torreya at this circumference is a rare thing on its own, superlative trio or not.\n\nA Suwa Shrine occupied this ground from 1749 until 1907, when it moved elsewhere and the Kanazawa family took over the plot. They have kept the tree as sacred ground in the century since, on land that is privately theirs, and let anyone come and look at no charge.\n\nThe National Natural Monument designation is dated 1920 by most sources, 1933 by one. 1920 is the figure the government's own heritage database uses, and the one used here.",
+      "verified_sources": [
+        "https://bunka.nii.ac.jp/heritages/detail/204933",
+        "https://ja.wikipedia.org/wiki/%E6%A8%AA%E5%AE%A4%E3%81%AE%E5%A4%A7%E3%82%AB%E3%83%A4"
+      ],
+      "access": "Free. Stands on privately owned land (the Kanazawa family, who have held it since a Suwa Shrine on the site was relocated in 1907) but is open to the public for viewing at no charge.",
+      "transport": "In Fujimi-cho, Maebashi City, Gunma Prefecture; nearest station and walk time not established this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

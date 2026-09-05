@@ -1,6 +1,60 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation of a window an earlier attempt stopped early with 111 minutes left) - Finished the standing _famous-japan claim: Maebashi opened, Hokuto and Yabu grown to two each
+
+Followed the resume instructions. Pulled (nothing new). `passcheck.py --claims`
+found one standing claim, `_famous-japan` verify by night-run, 142 min left,
+claimed 01:56 UTC. `leads.py --ready` was empty as always (0 READY). A verify
+pass under that claim had already run and left 3 fully-verified candidates
+staged uncommitted in `data/research/famousjapan-verified.json`, stories only
+missing, so wrote and merged them directly rather than dispatching a fresh
+write-stories agent:
+
+- **Maebashi** (new city, mae_001, The Great Kaya of Yokomuro): a Japanese
+  Nutmeg-yew 8.1m round, one of the Nihon San-dai Kaya (Japan's three great
+  kaya trees, alongside specimens in Saitama and Hamamatsu). Age genuinely
+  disputed: a 1991 government survey says just over 300 years, shrine
+  tradition says over 1,000; both kept rather than one picked. Stands on
+  privately held former shrine ground (Kanazawa family since 1907), free to
+  view. Published as a new single-tree place under the 2026-08-31 exception.
+- **Hokuto** (hok_002, Shinden no Oitozakura): a weeping Higan cherry standing
+  alone in a rice paddy at 820m, traditionally used to signal the start of
+  rice-planting season. ~400 years, Yamanashi Prefecture Natural Monument
+  since 1959. Joins Jindai-zakura (hok_001, kept as the older/hero tree),
+  7.5km away.
+- **Yabu** (yab_002, Takinoya no Hidarimakigaya): a left-spiraling Torreya,
+  one of only 4 documented in Japan. ~800 years (local estimate, unsourced
+  method). National Natural Monument since 1951, but genuinely declining on
+  its northern trunk per the city's own record, held up by chains and braces;
+  stated plainly rather than smoothed over. Joins Tarumi-no-Ozakura (yab_001,
+  kept as hero), 5.7km away. Access not fully open-and-shut (the city lists an
+  enquiries phone number rather than directions); an OSM check within 150m
+  found no private-land or place-of-worship tags, so shipped with an honest
+  access note rather than held back on ambiguity alone.
+
+**Caught by the build**: hard rule 9 (one canonical common name per species).
+My first draft used "Japanese Torreya" for mae_001 and yab_002 while the rest
+of the corpus (Nagoya, Tokyo, Iga) already uses "Japanese Nutmeg-yew" for
+*Torreya nucifera*. Reconciled to the existing canonical name before the
+build passed.
+
+Updated Japan's country page (75->76 places, 193->196 trees). Removed the 3
+delivered entries from `data/leads/_famous-japan.json`, noting their unviewed
+Commons photo candidates for a future photo-judge pass. Full build (4354
+pages), `qa.py` (6343 pages, clean) and `superlatives.py` (637 claims, no
+collisions) all clean. `city_names.py` run for all three. Claim released.
+Logged both the (unrecorded, lost) verify cost and this session's write/merge
+to `data/agent-costs.json`.
+
+Health check: `health.py` clear at session start except the iOS CI schedule
+failure already flagged (pre-existing, not touched this pass; still 1 red
+scheduled run as of this writing, worth a session's attention since the
+per-push runs keep passing and this project's own rule says a scheduled gate
+nobody watches is a gate nobody has). No sightings queued, no BLOCKER. Stopped
+here with roughly 85 minutes of the window left; continuing since
+`leads.py --ready` is empty and the next rung is fresh research.
+
 ## 2026-09-05 (continuation of a window an earlier attempt stopped early with 74 minutes left) - Finished famous-poland: 8 new single-tree places
 
 Followed the resume instructions. Pulled (nothing new). `passcheck.py

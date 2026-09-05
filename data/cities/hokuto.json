@@ -2,15 +2,15 @@
  "city": "Hokuto",
  "country": "Japan",
  "status": "needs_curation",
- "intro": "Hokuto's one mapped tree is Jindai-zakura, the oldest of Japan's Three Great Cherry Trees and, by tradition, the oldest cherry in the country: somewhere between 1,800 and 2,000 years old. It grows at Jisso-ji Temple in the hills of Yamanashi and was among the first five individual trees Japan ever named a National Natural Monument, in 1922. It flowers pale and drooping in early April, and bloom forecasters track it every year like a piece of infrastructure.",
- "meta_description": "Jindai-zakura, traditionally Japan's oldest cherry tree at up to 2,000 years, grows at Jisso-ji Temple in Hokuto. One of the Three Great Cherry Trees.",
- "question_answer": "Hokuto's only mapped tree is Jindai-zakura, an Edo-higan cherry at Jisso-ji Temple traditionally estimated at 1,800 to 2,000 years old, which would make it the oldest cherry tree in Japan. The figure rests on a legend that the warrior prince Yamato Takeru planted it, repeated by tourism boards and government publications but backed by no dating method, so read it as tradition rather than measurement.",
+ "intro": "Hokuto's hero tree is Jindai-zakura, the oldest of Japan's Three Great Cherry Trees and, by tradition, the oldest cherry in the country: somewhere between 1,800 and 2,000 years old. It grows at Jisso-ji Temple in the hills of Yamanashi and was among the first five individual trees Japan ever named a National Natural Monument, in 1922. It flowers pale and drooping in early April, and bloom forecasters track it every year like a piece of infrastructure. A second cherry, Shinden no Oitozakura, stands alone in a rice paddy 7.5km away and once told farmers when to plant.",
+ "meta_description": "Jindai-zakura, traditionally Japan's oldest cherry tree at up to 2,000 years, grows at Jisso-ji Temple in Hokuto, alongside a second paddy-field cherry.",
+ "question_answer": "Hokuto's oldest mapped tree is Jindai-zakura, an Edo-higan cherry at Jisso-ji Temple traditionally estimated at 1,800 to 2,000 years old, which would make it the oldest cherry tree in Japan. The figure rests on a legend that the warrior prince Yamato Takeru planted it, repeated by tourism boards and government publications but backed by no dating method, so read it as tradition rather than measurement.",
  "question_meta": "Jindai-zakura in Hokuto is traditionally called Japan's oldest cherry tree, at up to 2,000 years. One of the Three Great Cherry Trees.",
  "question_context": "Jindai-zakura grows on the grounds of Jisso-ji Temple in Yamataka, a hamlet in the city of Hokuto at the foot of the Southern Japan Alps. In October 1922 the Japanese government named its first National Natural Monuments, and this cherry was one of only five individual trees on that inaugural list, alongside Miharu Takizakura and Usuzumi-zakura, the two trees it is now always grouped with as the Three Great Cherry Trees of Japan. The traditional age, 1,800 to 2,000 years, comes from a legend that the warrior prince Yamato Takeru planted it on his way through the region; no dating method backs the figure, and the trunk is too hollow and knotted to read reliably. What can be measured is the base, a root flare given as 11.8 to 13.5 metres round beneath a tree only about 10 metres tall, spreading outward rather than climbing. Bloom forecasters track it individually every spring, and seeds from it have reportedly been flown into space and grown on in gardens abroad.",
  "faq": [
   {
    "q": "What is the oldest tree in Hokuto?",
-   "a": "Jindai-zakura, the only tree mapped here, at Jisso-ji Temple. By tradition it is 1,800 to 2,000 years old, and Japanese sources often call it the oldest cherry tree in the country, though the figure rests on legend rather than a dating method."
+   "a": "Jindai-zakura, at Jisso-ji Temple. By tradition it is 1,800 to 2,000 years old, and Japanese sources often call it the oldest cherry tree in the country, though the figure rests on legend rather than a dating method."
   },
   {
    "q": "Why is it called Jindai-zakura?",
@@ -23,6 +23,10 @@
   {
    "q": "Is Jindai-zakura free to visit?",
    "a": "Jisso-ji Temple charges a small entry fee, around 500 yen, during blossom season; some listings describe it as free the rest of the year, so check locally. The grounds are open to the public."
+  },
+  {
+   "q": "What is the second tree Hokuto maps?",
+   "a": "Shinden no Oitozakura, a weeping Higan cherry standing alone at the edge of a rice paddy in Kobuchisawa, about 7.5km from Jindai-zakura. A Yamanashi Prefecture Natural Monument since 1959."
   }
  ],
  "trees": [
@@ -58,6 +62,42 @@
    "location_precision": "confirmed",
    "curation_status": "flagged",
    "paid_entry": true
+  },
+  {
+   "id": "hok_002",
+   "name": "Shinden no Oitozakura",
+   "species": "Weeping Higan Cherry (Prunus subhirtella var. pendula)",
+   "age_estimate": "roughly 400 years",
+   "age_min": 350,
+   "age_max": 450,
+   "girth_cm": 750,
+   "height_m": 9.0,
+   "location": {
+    "address": "Matsumuki, Kobuchisawa-cho, Hokuto City, Yamanashi Prefecture 408-0042, Japan",
+    "latitude": 35.84572,
+    "longitude": 138.34633,
+    "neighbourhood": "Kobuchisawa, Hokuto, about 7.5km from Jindai-zakura"
+   },
+   "story": "Before calendars told Kobuchisawa's farmers when to plant rice, this cherry did. Tradition holds it was planted as a goshinboku, a sacred tree, on the paddy-field ridge that once grew rice offered to a shrine, and its bloom timing served as the signal to begin planting season.\n\nIt stands alone at the edge of a working rice paddy at about 820 metres elevation, the kind of solitary specimen that gets used for film and tourism location scouting rather than crowded up by other trees. A weeping form of the Edo Higan cherry, it is thought to have taken root around the shift from the Sengoku era to the Edo period, putting it at roughly 400 years old, a figure that lines up with what a tree this size should be.\n\nSources differ slightly on the trunk: the city gives 8 metres round, the tourism board a more precise 7.5. The smaller figure is used here.\n\nIt was designated a Yamanashi Prefecture Natural Monument in 1959, prefectural rather than national. Free parking for about 30 cars and 5 buses sits nearby. Close approach has been temporarily restricted in places while the soil and roots recover from foot traffic, though the tree stays visible from the paddy edge and the parking area throughout.",
+   "best_time": {
+    "months": [4],
+    "kind": "flowers",
+    "label": "April, when it blooms and once signalled the start of rice planting"
+   },
+   "verified_sources": [
+    "https://www.city.hokuto.yamanashi.jp/fc/location/22470.html",
+    "https://www.hokuto-kanko.jp/spot/shinden_oitosakura/"
+   ],
+   "access": "Free. Stands alone at the edge of a working rice paddy at about 820m elevation; dedicated free parking (about 30 cars, 5 buses) is provided nearby. Close approach may be temporarily restricted in places while soil and root recovery work continues, though the tree remains visible from the paddy edge and parking area.",
+   "transport": "10 minutes by taxi from JR Kobuchisawa Station, or 12 minutes from JR Nagasaka Station; also reachable by municipal bus line 1 (about 10 min) plus a 10-minute walk from the 'Hara Village' stop.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
   }
  ],
  "oldest_tree_id": "hok_001"
