@@ -1,0 +1,61 @@
+{
+  "city": "Tombeboeuf",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "France gave this solitary field oak its Tree of the Year title in 2019, and three years later a large fissure opened in the trunk and the whole village worried it might not survive the next season's leaves. It has: the tourism board's current listing still describes it in the present tense, free and self-guided, no booking needed. It stands alone on high ground about eight kilometres outside the village, with no path to it, which is why the tourist board hands out a phone number instead of directions.",
+  "meta_description": "The Oak of Tombeboeuf, France's Tree of the Year 2019, survived a 2022 fissure scare. Free, self-guided visit, on private farmland outside the village.",
+  "question_meta": "Tombeboeuf's remarkable tree is a solitary field oak, France's Tree of the Year 2019, which survived a large 2022 trunk fissure.",
+  "question_answer": "The remarkable tree near Tombeboeuf is a solitary oak in an open field, roughly 250 to 300 years old, named France's Tree of the Year in 2019. It suffered a large trunk fissure in February 2022 that worried locals, but current sources describe it standing and unharmed since.",
+  "question_context": "Two sources disagree on the tree's exact statistics: the departmental tourist board gives roughly 300 years, 6.30 metres round and 25 metres tall, while a specialist tree blog that visited in 2008 called it younger, at 250 years, and focused on its shape instead, branches leaving the trunk about three metres up and running sideways rather than climbing, the mark of a tree with nothing nearby competing for light. The ARBRES association labelled it a Remarkable Tree in 2003, well before its national Tree of the Year title in 2019. In February 2022 a large fissure appeared in the trunk and a local restoration campaign followed; nothing published since names the tree as lost, and the tourism board's current listing and a March 2025 article both describe it in ordinary present tense with no distress noted, which this page treats as evidence it came through, short of an explicit all-clear. The field is private agricultural land, and the tourism board's own current page lists it as a free, self-guided visit with no booking required, publishing a phone number for visitors who want help finding it rather than as a precondition of entry.",
+  "hero_tree_id": "tbf_001",
+  "oldest_tree_id": "tbf_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree near Tombeboeuf?",
+      "a": "A solitary oak in an open field, named France's Tree of the Year in 2019 and a Remarkable Tree since 2003."
+    },
+    {
+      "q": "Is the tree still alive after the 2022 fissure?",
+      "a": "All indications since are that it is. The tourism board's current listing and a March 2025 article both describe it in the present tense with no mention of ongoing danger."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The tourism board lists it as a free, self-guided visit, though the field is private agricultural land with no path, so calling ahead for directions is genuinely useful."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tbf_001",
+      "name": "The Oak of Tombeboeuf",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "roughly 250 to 300 years",
+      "age_min": 250,
+      "age_max": 300,
+      "girth_cm": 630,
+      "height_m": 25,
+      "location": {
+        "address": "Rural field off the road toward Laperche, about 8km northwest of Tombeboeuf, Lot-et-Garonne, France (near GPS N44 32.788 E0 26.056)",
+        "latitude": 44.5465,
+        "longitude": 0.4343,
+        "neighbourhood": "Countryside near Tombeboeuf, Lot-et-Garonne"
+      },
+      "story": "In 2019 France gave its Tree of the Year title to an oak standing on its own in a field. It sits on high ground about eight kilometres outside Tombeboeuf, with no signpost and no path to it, which is why the tourist board publishes a phone number for guidance rather than directions.\n\nThe two accounts of the tree do not agree. The tourist board puts it at roughly 300 years, 6.30 metres round and 25 metres tall. A specialist tree blog that walked out to it in 2008 called it young at 250 and paid more attention to its shape: the first branches leave the trunk about three metres up and travel sideways rather than up, what an oak does when nothing nearby competes for light. The ARBRES association had already labelled it a Remarkable Tree in 2003.\n\nIn February 2022 a large fissure opened in the trunk and locals worried it might not survive the weight of a new season's leaves. A restoration campaign followed. Nothing published since names it as lost, and the tourist board's current listing still describes it in the present tense with no mention of ongoing danger, treated here as evidence it came through, short of an explicit all-clear.\n\nThe field is private agricultural land, and the tourist board's own listing calls it a free, self-guided visit, no booking required. Nobody has settled which oak it is, either. If you can read the leaf, say so.",
+      "verified_sources": [
+        "https://www.tourisme-lotetgaronne.com/patrimoine-naturel/le-chene-de-tombeboeuf/",
+        "https://krapooarboricole.wordpress.com/2008/04/19/le-chene-venerable-de-tombeboeuf-lot-et-garonne/",
+        "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/lot-et-garonne/lot-et-garonne-l-arbre-remarquable-de-tombeb-uf-en-danger-2470846.html",
+        "https://lot-et-garonne.meconnu.fr/chene-remarquable-a-tombeboeuf"
+      ],
+      "access": "On private agricultural land; the tourism board's own current listing states 'Visite libre' (free, self-guided visit, no booking or permission needed). It stands alone in an open field and is hard to find without directions; the tourist board publishes a contact (CPIE47, +33 5 53 88 83 30) for visitor guidance rather than requiring it.",
+      "transport": "No public transport; reached by car, roughly 8km outside Tombeboeuf village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
