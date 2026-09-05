@@ -1040,7 +1040,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -5441,6 +5441,33 @@
     "tokens": 236227,
     "trees": 18,
     "note": "18 stories in one batched context: 10 Arnhem (register-only), 2 joining Zurich, 1 each joining Hobart/Sydney, 4 new single-tree places (Cremines, Villeneuve, Fribourg, Timber Creek). ~12.9k tokens/tree, inside the 15k target. Build+qa+preflight+superlatives all clean."
+   },
+   {
+    "target": "denmark+finland famous",
+    "kind": "write",
+    "tokens": 34000,
+    "trees": 6,
+    "note": "6 stories: 2 join Helsinki (Lasipalatsi Willow, Independence Spruce), 4 become new single-tree places (Taasinge, Gjerrild, Turku, Lohja)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_famous-france",
+    "kind": "verify",
+    "tokens": 100000,
+    "trees": 9,
+    "note": "48 lead-status candidates in the leads file; 9 verified and appended to _famous-france-verified.json, 37 left as leads for a future pass. Also surfaced two lost prior-pass research files (famousfrance-verified.json, famousfrancebatch1-verified.json) referenced but not present in the repo.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "France famous trees",
+    "kind": "write",
+    "tokens": 58000,
+    "trees": 8,
+    "note": "8 stories from _famous-france-verified.json; yvi_001 skipped (no coordinate). Several carry open access/vitality flags, not yet merged into data/cities.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
