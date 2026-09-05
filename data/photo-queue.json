@@ -2054,8 +2054,8 @@
   "lis_010": {
    "city": "Lisbon",
    "name": "The Giant Rubber Tree of Mouraria",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Lisboa, Mouraria (53402431884).jpg",
@@ -2089,26 +2089,28 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Mouraria%2C_Lisboa_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Mouraria,_Lisboa_-_panoramio.jpg",
      "licence": "CC BY-SA 3.0",
-     "author": "Eduardo Manchon"
+     "author": "Eduardo Manchon",
+     "lat": 38.715653,
+     "lng": -9.134402,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mouraria Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7"
     },
     {
      "title": "File:Mouraria Lisboa.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mouraria_Lisboa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Mouraria_Lisboa.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Manuel llach"
+     "author": "Manuel llach",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cutlers in Portugal Category:Images from Wiki Loves Earth 2018 Category:Images from Wiki Loves Earth 2018 in Portugal Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Mouraria Category:Portugal photographs taken on 2008-07-02 Category:Self-published work Category:Uploaded via Campaign:wle-pt"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "lis_013": {
    "city": "Lisbon",
    "name": "The Strangler Fig of Príncipe Real",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ed \"Strangler\" Lewis, autograph, signed and dated card, 1949.jpg",
@@ -2138,41 +2140,6 @@
      "verdict": "a strangler fig in Luang Prabang, Laos"
     },
     {
-     "title": "File:Michael E. Arth \"Strangler figs and palms\" etching 1975.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Michael_E._Arth_%22Strangler_figs_and_palms%22_etching_1975.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Michael_E._Arth_%22Strangler_figs_and_palms%22_etching_1975.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Michael E. Arth"
-    },
-    {
-     "title": "File:Milwaukee Public Museum October 2023 04 (Rainforest--strangler fig tree).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Milwaukee_Public_Museum_October_2023_04_%28Rainforest--strangler_fig_tree%29.jpg/960px-Milwaukee_Public_Museum_October_2023_04_%28Rainforest--strangler_fig_tree%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Milwaukee_Public_Museum_October_2023_04_(Rainforest--strangler_fig_tree).jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Michael Barera"
-    },
-    {
-     "title": "File:Strangler fig at Aquicuana Reserve 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Strangler_fig_at_Aquicuana_Reserve_01.jpg/960px-Strangler_fig_at_Aquicuana_Reserve_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Strangler_fig_at_Aquicuana_Reserve_01.jpg",
-     "licence": "CC0",
-     "author": "CharlieTorr123"
-    },
-    {
-     "title": "File:Strangler fig in Anamalai.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Strangler_fig_in_Anamalai.jpg/960px-Strangler_fig_in_Anamalai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Strangler_fig_in_Anamalai.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Shankar Raman"
-    },
-    {
-     "title": "File:Strangler fig in Anamalai 2.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Strangler_fig_in_Anamalai_2.jpg/960px-Strangler_fig_in_Anamalai_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Strangler_fig_in_Anamalai_2.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Shankar Raman"
-    },
-    {
      "title": "iNat obs 201103892 (Ficus)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/354941288/medium.jpeg",
      "url": "https://www.inaturalist.org/observations/201103892",
@@ -2199,24 +2166,20 @@
      "source": "inaturalist",
      "obs_location": "38.7168312073,-9.1489601135"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "lis_014": {
    "city": "Lisbon",
    "name": "The Yew of Campo Santana",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "lis_015": {
    "city": "Lisbon",
    "name": "The Weeping Fig of Campo Santana",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Bare London planetree (Platanus × hispanica) in winter, Campo dos Mártires da Pátria, Lisbon, Portugal julesvernex2.jpg",
@@ -2227,17 +2190,13 @@
      "judged": "reject",
      "verdict": "photo_light scores it POOR: flat, and the filename names a bare London plane, our tree is the weeping fig"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "lis_018": {
    "city": "Lisbon",
    "name": "The Tipuana of the Ninth of April Garden",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Silk floss tree (10313847796).jpg",
@@ -2248,17 +2207,13 @@
      "judged": "reject",
      "verdict": "close-up of silk floss blossom; wrong species and no crown or trunk"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "lis_019": {
    "city": "Lisbon",
    "name": "The Date Palm of the Ninth of April Garden",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Silk floss tree (10313847796).jpg",
@@ -2269,11 +2224,7 @@
      "judged": "reject",
      "verdict": "close-up of silk floss blossom; wrong species and no crown or trunk"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "lis_020": {
    "city": "Lisbon",
@@ -12932,8 +12883,8 @@
   "lon_011": {
    "city": "London",
    "name": "The St Paul's Churchyard Planes",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ever The Same From Up Above, St. Paul's Cathedral, London - panoramio.jpg",
@@ -12964,241 +12915,314 @@
     },
     {
      "title": "File:London - St. Paul's Churchyard - View SSW on St Paul's Cathedral 1697 by Sir Christopher Wren.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/London_-_St._Paul%27s_Churchyard_-_View_SSW_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg/960px-London_-_St._Paul%27s_Churchyard_-_View_SSW_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/London_-_St._Paul%27s_Churchyard_-_View_SSW_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg/960px-London_-_St._Paul%27s_Churchyard_-_View_SSW_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:London_-_St._Paul%27s_Churchyard_-_View_SSW_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Txllxt TxllxT"
+     "author": "Txllxt TxllxT",
+     "lat": 51.514256,
+     "lng": -0.097739,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:London photographs taken on 2011-06-20 Category:North facade of St. Paul's Cathedral Category:Photographs of London by Txllxt TxllxT Category:Self-published work Category:St. Paul's Cathedral in 2011 Category:St. Paul's Churchyard, London (street)"
     },
     {
      "title": "File:London - St. Paul's Churchyard - View WSW along St Paul's Cathedral 1697 by Sir Christopher Wren - Night Watch Memorial for the volunteers who guarded St Paul during the Blitz 1939-45.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/London_-_St._Paul%27s_Churchyard_-_View_WSW_along_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren_-_Night_Watch_Memorial_for_the_volunteers_who_guarded_St_Paul_during_the_Blitz_1939-45.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/London_-_St._Paul%27s_Churchyard_-_View_WSW_along_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren_-_Night_Watch_Memorial_for_the_volunteers_who_guarded_St_Paul_during_the_Blitz_1939-45.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:London_-_St._Paul%27s_Churchyard_-_View_WSW_along_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren_-_Night_Watch_Memorial_for_the_volunteers_who_guarded_St_Paul_during_the_Blitz_1939-45.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Txllxt TxllxT"
+     "author": "Txllxt TxllxT",
+     "lat": 51.514297,
+     "lng": -0.098347,
+     "cats": "Category:CC-BY-SA-4.0 Category:Exterior of St. Paul's Cathedral Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:London photographs taken on 2011-06-20 Category:Photographs of London by Txllxt TxllxT Category:Self-published work Category:St. Paul's Cathedral in 2011 Category:St. Paul's Churchyard, London (street) Category:The Blitz"
     },
     {
      "title": "File:North of St Paul's, London EC2 - geograph.org.uk - 1089216.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/ac/North_of_St_Paul%27s%2C_London_EC2_-_geograph.org.uk_-_1089216.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:North_of_St_Paul%27s,_London_EC2_-_geograph.org.uk_-_1089216.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Christine Matthews"
+     "author": "Christine Matthews",
+     "lat": 51.51461,
+     "lng": -0.0982,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cafés in the City of London Category:Chapter house of St. Paul's Cathedral Category:Images by Christine Matthews Category:Images from Geograph Britain and Ireland Category:Information field template with formatting"
     },
     {
      "title": "File:Paternoster Square, London EC2 - geograph.org.uk - 2162659.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paternoster_Square%2C_London_EC2_-_geograph.org.uk_-_2162659.jpg/960px-Paternoster_Square%2C_London_EC2_-_geograph.org.uk_-_2162659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Paternoster_Square%2C_London_EC2_-_geograph.org.uk_-_2162659.jpg/960px-Paternoster_Square%2C_London_EC2_-_geograph.org.uk_-_2162659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Paternoster_Square,_London_EC2_-_geograph.org.uk_-_2162659.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "John Salmon"
+     "author": "John Salmon",
+     "lat": 51.51474995,
+     "lng": -0.09822273,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Paternoster Square"
     },
     {
      "title": "File:Temple Bar, London - geograph.org.uk - 1286771.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/de/Temple_Bar%2C_London_-_geograph.org.uk_-_1286771.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Temple_Bar,_London_-_geograph.org.uk_-_1286771.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Peter Trimming"
+     "author": "Peter Trimming",
+     "lat": 51.51425,
+     "lng": -0.098,
+     "cats": "Category:CC-BY-SA-2.0 Category:City of London photographs taken on 2009-05-04 Category:Images by Peter Trimming Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Temple Bar Gate in Paternoster Square"
     },
     {
      "title": "File:Temple Bar, London EC2 - geograph.org.uk - 1089199.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/da/Temple_Bar%2C_London_EC2_-_geograph.org.uk_-_1089199.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Temple_Bar,_London_EC2_-_geograph.org.uk_-_1089199.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Christine Matthews"
+     "author": "Christine Matthews",
+     "lat": 51.51452,
+     "lng": -0.0982,
+     "cats": "Category:2008 in the City of London Category:CC-BY-SA-2.0 Category:December 2008 in London Category:Images by Christine Matthews Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Temple Bar Gate in Paternoster Square Category:United Kingdom photographs taken on 2008-12-19"
     },
     {
      "title": "File:View of the Stratos Tower, One Blackfriars, the South Bank Tower and the London Eye from the roof of the One New Change - geograph.org.uk - 5449629.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/View_of_the_Stratos_Tower%2C_One_Blackfriars%2C_the_South_Bank_Tower_and_the_London_Eye_from_the_roof_of_the_One_New_Change_-_geograph.org.uk_-_5449629.jpg/960px-View_of_the_Stratos_Tower%2C_One_Blackfriars%2C_the_South_Bank_Tower_and_the_London_Eye_from_the_roof_of_the_One_New_Change_-_geograph.org.uk_-_5449629.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/View_of_the_Stratos_Tower%2C_One_Blackfriars%2C_the_South_Bank_Tower_and_the_London_Eye_from_the_roof_of_the_One_New_Change_-_geograph.org.uk_-_5449629.jpg/960px-View_of_the_Stratos_Tower%2C_One_Blackfriars%2C_the_South_Bank_Tower_and_the_London_Eye_from_the_roof_of_the_One_New_Change_-_geograph.org.uk_-_5449629.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stratos_Tower,_One_Blackfriars,_the_South_Bank_Tower_and_the_London_Eye_from_the_roof_of_the_One_New_Change_-_geograph.org.uk_-_5449629.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Robert Lamb"
+     "author": "Robert Lamb",
+     "lat": 51.51437638,
+     "lng": -0.09751799,
+     "cats": "Category:CC-BY-SA-2.0 Category:City of London photographs taken on 2017-07-02 Category:Images from Geograph Britain and Ireland Category:London Borough of Southwark Category:One New Change"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "lon_012": {
    "city": "London",
    "name": "The Amwell Street Fig",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "lon_013": {
    "city": "London",
    "name": "The Dorchester Plane",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:2020 LEVC TX London black cab.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2020_LEVC_TX_London_black_cab.jpg/960px-2020_LEVC_TX_London_black_cab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/2020_LEVC_TX_London_black_cab.jpg/960px-2020_LEVC_TX_London_black_cab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:2020_LEVC_TX_London_black_cab.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Oleg Yunakov"
+     "author": "Oleg Yunakov",
+     "lat": 51.506772,
+     "lng": -0.152097,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:LEVC TX eCity Category:Self-published work"
     },
     {
      "title": "File:Dorchester Plane (1).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Dorchester_Plane_%281%29.jpg/960px-Dorchester_Plane_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Dorchester_Plane_%281%29.jpg/960px-Dorchester_Plane_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(1).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (2).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dorchester_Plane_%282%29.jpg/960px-Dorchester_Plane_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Dorchester_Plane_%282%29.jpg/960px-Dorchester_Plane_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(2).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (3).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Dorchester_Plane_%283%29.jpg/960px-Dorchester_Plane_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Dorchester_Plane_%283%29.jpg/960px-Dorchester_Plane_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(3).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (4).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Dorchester_Plane_%284%29.jpg/960px-Dorchester_Plane_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Dorchester_Plane_%284%29.jpg/960px-Dorchester_Plane_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(4).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica (trunks) Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (5).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dorchester_Plane_%285%29.jpg/960px-Dorchester_Plane_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Dorchester_Plane_%285%29.jpg/960px-Dorchester_Plane_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(5).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (6).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dorchester_Plane_%286%29.jpg/960px-Dorchester_Plane_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Dorchester_Plane_%286%29.jpg/960px-Dorchester_Plane_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(6).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (7).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Dorchester_Plane_%287%29.jpg/960px-Dorchester_Plane_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Dorchester_Plane_%287%29.jpg/960px-Dorchester_Plane_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(7).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (8).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dorchester_Plane_%288%29.jpg/960px-Dorchester_Plane_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Dorchester_Plane_%288%29.jpg/960px-Dorchester_Plane_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(8).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica (trunks) Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:Dorchester Plane (9).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Dorchester_Plane_%289%29.jpg/960px-Dorchester_Plane_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Dorchester_Plane_%289%29.jpg/960px-Dorchester_Plane_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Dorchester_Plane_(9).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica (trunks) Category:Self-published work Category:The Dorchester, London"
     },
     {
      "title": "File:London March Euro Demo Park Lane 2914.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/London_March_Euro_Demo_Park_Lane_2914.jpg/960px-London_March_Euro_Demo_Park_Lane_2914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/London_March_Euro_Demo_Park_Lane_2914.jpg/960px-London_March_Euro_Demo_Park_Lane_2914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:London_March_Euro_Demo_Park_Lane_2914.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "ClemRutter"
+     "author": "ClemRutter",
+     "lat": 51.506708,
+     "lng": -0.152257,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Self-published work Category:Unite for Europe March"
     },
     {
      "title": "File:Waiting for london .11 - Flickr - Tom Wolf - Automotive Photography.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Waiting_for_london_.11_-_Flickr_-_Tom_Wolf_-_Automotive_Photography.jpg/960px-Waiting_for_london_.11_-_Flickr_-_Tom_Wolf_-_Automotive_Photography.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Waiting_for_london_.11_-_Flickr_-_Tom_Wolf_-_Automotive_Photography.jpg/960px-Waiting_for_london_.11_-_Flickr_-_Tom_Wolf_-_Automotive_Photography.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Waiting_for_london_.11_-_Flickr_-_Tom_Wolf_-_Automotive_Photography.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Tom Hipster from Miami Beach, Germany"
+     "author": "Tom Hipster from Miami Beach, Germany",
+     "lat": 51.506926,
+     "lng": -0.152177,
+     "cats": "Category:2010 in the City of Westminster Category:Automobiles at The Dorchester, London Category:Automobiles in London photographed in 2010 Category:Bugatti Veyron L’Edition Centenaire \"Hermann zu Leiningen\" Category:Bugatti automobiles in London Category:CC-BY-SA-2.0 Category:Files uploaded by Kobac Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Flickr images reviewed by FlickreviewR Category:Front views of Bugatti automobiles Category:Front views of roadsters and sports cars Category:London photographs taken on 2010-08-08 Category:Pagani Zonda Cinque Category:Pagani automobiles in London Category:Photographs by Tom Wolf Category:Taken with Canon EOS 1000D"
     }
    ]
   },
   "lon_014": {
    "city": "London",
    "name": "The Marylebone Elm",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:St Marylebone Parish Church Interior 1, London, UK - Diliff.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/St_Marylebone_Parish_Church_Interior_1%2C_London%2C_UK_-_Diliff.jpg/960px-St_Marylebone_Parish_Church_Interior_1%2C_London%2C_UK_-_Diliff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/St_Marylebone_Parish_Church_Interior_1%2C_London%2C_UK_-_Diliff.jpg/960px-St_Marylebone_Parish_Church_Interior_1%2C_London%2C_UK_-_Diliff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:St_Marylebone_Parish_Church_Interior_1,_London,_UK_-_Diliff.jpg",
      "licence": "CC BY-SA 3.0",
-     "author": "Diliff"
+     "author": "Diliff",
+     "lat": 51.522669,
+     "lng": -0.152492,
+     "cats": "Category:CC-BY-SA-3.0 Category:Church benches in London Category:Featured pictures by User:Diliff Category:Featured pictures of churches in London Category:Featured pictures on Wikimedia Commons Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:GFDL Category:Interior of St Marylebone Marylebone Road Category:License migration redundant Category:London photographs taken on 2014-12-04 Category:Self-published work"
     }
    ]
   },
   "lon_015": {
    "city": "London",
    "name": "The Embankment Plane",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:London Plane trees (Platanus × hispanica) on the Thames Embankment - geograph.org.uk - 2122521.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8a/London_Plane_trees_%28Platanus_%C3%97_hispanica%29_on_the_Thames_Embankment_-_geograph.org.uk_-_2122521.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:London_Plane_trees_(Platanus_%C3%97_hispanica)_on_the_Thames_Embankment_-_geograph.org.uk_-_2122521.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Rod Allday"
-    },
-    {
-     "title": "File:Plane trees on Victoria Embankment - geograph.org.uk - 6113849.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/25/Plane_trees_on_Victoria_Embankment_-_geograph.org.uk_-_6113849.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Plane_trees_on_Victoria_Embankment_-_geograph.org.uk_-_6113849.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "John Sutton"
+     "author": "Rod Allday",
+     "lat": 51.48473327,
+     "lng": -0.13879272,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Platanus × hispanica in the United Kingdom Category:Trees in the City of Westminster Category:Victoria Embankment"
     },
     {
      "title": "File:The Embankment Plane (1).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Embankment_Plane_%281%29.jpg/960px-The_Embankment_Plane_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Embankment_Plane_%281%29.jpg/960px-The_Embankment_Plane_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Embankment_Plane_(1).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
     },
     {
      "title": "File:The Embankment Plane (2).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/The_Embankment_Plane_%282%29.jpg/960px-The_Embankment_Plane_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/The_Embankment_Plane_%282%29.jpg/960px-The_Embankment_Plane_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Embankment_Plane_(2).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
     },
     {
      "title": "File:The Embankment Plane (4).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/The_Embankment_Plane_%284%29.jpg/960px-The_Embankment_Plane_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/The_Embankment_Plane_%284%29.jpg/960px-The_Embankment_Plane_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Embankment_Plane_(4).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
     },
     {
      "title": "File:The Embankment Plane (6).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Embankment_Plane_%286%29.jpg/960px-The_Embankment_Plane_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Embankment_Plane_%286%29.jpg/960px-The_Embankment_Plane_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Embankment_Plane_(6).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
     },
     {
      "title": "File:The Embankment Plane (7).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/The_Embankment_Plane_%287%29.jpg/960px-The_Embankment_Plane_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/The_Embankment_Plane_%287%29.jpg/960px-The_Embankment_Plane_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Embankment_Plane_(7).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
     },
     {
      "title": "File:The Embankment Plane (8).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Embankment_Plane_%288%29.jpg/960px-The_Embankment_Plane_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Embankment_Plane_%288%29.jpg/960px-The_Embankment_Plane_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Embankment_Plane_(8).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
     },
     {
      "title": "File:The Embankment Plane (9).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/The_Embankment_Plane_%289%29.jpg/960px-The_Embankment_Plane_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/The_Embankment_Plane_%289%29.jpg/960px-The_Embankment_Plane_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Embankment_Plane_(9).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
     }
    ]
   },
@@ -13940,8 +13964,8 @@
   "lis_021": {
    "city": "Lisbon",
    "name": "The Tipuana of Praça São João Bosco",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "nyc_018": {
@@ -14463,163 +14487,213 @@
   "lon_016": {
    "city": "London",
    "name": "The Great Plane of Brunswick Square",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Brunswick Plane (1).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Brunswick_Plane_%281%29.jpg/960px-Brunswick_Plane_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Brunswick_Plane_%281%29.jpg/960px-Brunswick_Plane_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Brunswick_Plane_(1).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work"
     },
     {
      "title": "File:Brunswick Plane (2).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Brunswick_Plane_%282%29.jpg/960px-Brunswick_Plane_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Brunswick_Plane_%282%29.jpg/960px-Brunswick_Plane_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Brunswick_Plane_(2).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work"
     },
     {
      "title": "File:Brunswick Plane (3).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brunswick_Plane_%283%29.jpg/960px-Brunswick_Plane_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Brunswick_Plane_%283%29.jpg/960px-Brunswick_Plane_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Brunswick_Plane_(3).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work"
     },
     {
      "title": "File:Brunswick Plane (4).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Brunswick_Plane_%284%29.jpg/960px-Brunswick_Plane_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Brunswick_Plane_%284%29.jpg/960px-Brunswick_Plane_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Brunswick_Plane_(4).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work"
     },
     {
      "title": "File:Brunswick Plane (5).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Brunswick_Plane_%285%29.jpg/960px-Brunswick_Plane_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Brunswick_Plane_%285%29.jpg/960px-Brunswick_Plane_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Brunswick_Plane_(5).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Hopefully Acceptable Username"
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work"
     },
     {
      "title": "File:Brunswick Square, London - geograph.org.uk - 4444046.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Brunswick_Square%2C_London_-_geograph.org.uk_-_4444046.jpg/960px-Brunswick_Square%2C_London_-_geograph.org.uk_-_4444046.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Brunswick_Square%2C_London_-_geograph.org.uk_-_4444046.jpg/960px-Brunswick_Square%2C_London_-_geograph.org.uk_-_4444046.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Brunswick_Square,_London_-_geograph.org.uk_-_4444046.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Peter Trimming"
+     "author": "Peter Trimming",
+     "lat": 51.52392472,
+     "lng": -0.12253505,
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Trees in the London Borough of Camden"
     },
     {
      "title": "File:Colonnade, London WC1-geograph-1895584.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/21/Colonnade%2C_London_WC1-geograph-1895584.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Colonnade,_London_WC1-geograph-1895584.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Robin Sones"
+     "author": "Robin Sones",
+     "lat": 51.52389,
+     "lng": -0.1217,
+     "cats": "Category:CC-BY-SA-2.0 Category:Colonnade, London Category:Images by Robin Sones Category:Images from Geograph Britain and Ireland Category:Information field template with formatting"
     },
     {
      "title": "File:James Matthew Barrie - Bernard Street London WC1N 1LN (Marchmont Association)(2).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29%282%29.jpg/960px-James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29%282%29.jpg/960px-James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_(Marchmont_Association)(2).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Spudgun67"
+     "author": "Spudgun67",
+     "lat": 51.523705,
+     "lng": -0.122355,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:James Barrie lived in a house here (blue plaque), Camden Category:Plaques with known Open Plaques IDs Category:Self-published work"
     },
     {
      "title": "File:James Matthew Barrie - Bernard Street London WC1N 1LN (Marchmont Association).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29.jpg/960px-James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29.jpg/960px-James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_%28Marchmont_Association%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:James_Matthew_Barrie_-_Bernard_Street_London_WC1N_1LN_(Marchmont_Association).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Spudgun67"
+     "author": "Spudgun67",
+     "lat": 51.523705,
+     "lng": -0.122355,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:James Barrie lived in a house here (blue plaque), Camden Category:Plaques with known Open Plaques IDs Category:Self-published work"
     },
     {
      "title": "File:The Brunswick Plane 2024-10-20.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/The_Brunswick_Plane_2024-10-20.jpg/960px-The_Brunswick_Plane_2024-10-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/The_Brunswick_Plane_2024-10-20.jpg/960px-The_Brunswick_Plane_2024-10-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:The_Brunswick_Plane_2024-10-20.jpg",
      "licence": "CC BY 2.0",
-     "author": "Matt Brown"
+     "author": "Matt Brown",
+     "lat": 51.523889,
+     "lng": -0.121789,
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Flickr images reviewed by FlickreviewR 2 Category:London photographs taken on 2024-10-20"
     }
    ]
   },
   "lon_017": {
    "city": "London",
    "name": "The Valence Park Holm Oak",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "lon_018": {
    "city": "London",
    "name": "The Ravenscourt Park Baobab Plane",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Black walnut tree catkins and young leaves, Ravenscourt Park - geograph.org.uk - 8007766.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Black_walnut_tree_catkins_and_young_leaves%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007766.jpg/960px-Black_walnut_tree_catkins_and_young_leaves%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007766.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Black_walnut_tree_catkins_and_young_leaves%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007766.jpg/960px-Black_walnut_tree_catkins_and_young_leaves%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007766.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Black_walnut_tree_catkins_and_young_leaves,_Ravenscourt_Park_-_geograph.org.uk_-_8007766.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "David Hawgood"
+     "author": "David Hawgood",
+     "lat": 51.4976867,
+     "lng": -0.23796198,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Ravenscourt Park Category:Trees in the London Borough of Hammersmith and Fulham"
     },
     {
      "title": "File:Flowering cherry tree in blossom, Ravenscourt Park - geograph.org.uk - 8007732.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flowering_cherry_tree_in_blossom%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007732.jpg/960px-Flowering_cherry_tree_in_blossom%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007732.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Flowering_cherry_tree_in_blossom%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007732.jpg/960px-Flowering_cherry_tree_in_blossom%2C_Ravenscourt_Park_-_geograph.org.uk_-_8007732.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Flowering_cherry_tree_in_blossom,_Ravenscourt_Park_-_geograph.org.uk_-_8007732.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "David Hawgood"
+     "author": "David Hawgood",
+     "lat": 51.49798005,
+     "lng": -0.23967913,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Prunus in flower in England Category:Ravenscourt Park Category:Trees in the London Borough of Hammersmith and Fulham"
     },
     {
      "title": "File:Memorial to a victim of the London Tube bombings, Ravenscourt Park - geograph.org.uk - 2438610.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Memorial_to_a_victim_of_the_London_Tube_bombings%2C_Ravenscourt_Park_-_geograph.org.uk_-_2438610.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Memorial_to_a_victim_of_the_London_Tube_bombings,_Ravenscourt_Park_-_geograph.org.uk_-_2438610.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Marathon"
+     "author": "Marathon",
+     "lat": 51.49724609,
+     "lng": -0.23855499,
+     "cats": "Category:Activists from the United Kingdom Category:Bilingual English-Polish plaques in the United Kingdom Category:Bilingual signs in London Category:CC-BY-SA-2.0 Category:Deaths from terrorism in the United Kingdom Category:Images from Geograph Britain and Ireland Category:London bombing, July 2005 Category:Monuments and memorials in the London Borough of Hammersmith and Fulham Category:Monuments and memorials to victims of terrorism in the United Kingdom Category:People murdered in England Category:Railings in the London Borough of Hammersmith and Fulham Category:Ravenscourt Park"
     },
     {
      "title": "File:Plane tree, Ravenscourt Park - geograph.org.uk - 3381983.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/41/Plane_tree%2C_Ravenscourt_Park_-_geograph.org.uk_-_3381983.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Plane_tree,_Ravenscourt_Park_-_geograph.org.uk_-_3381983.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Derek Harper"
+     "author": "Derek Harper",
+     "lat": 51.49789468,
+     "lng": -0.23997077,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Ravenscourt Park Category:Trees in the London Borough of Hammersmith and Fulham"
     },
     {
      "title": "File:Ravenscourt Park 'baobab' Plane.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ravenscourt_Park_%27baobab%27_Plane.jpg/960px-Ravenscourt_Park_%27baobab%27_Plane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Ravenscourt_Park_%27baobab%27_Plane.jpg/960px-Ravenscourt_Park_%27baobab%27_Plane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ravenscourt_Park_%27baobab%27_Plane.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Paulitzer"
+     "author": "Paulitzer",
+     "lat": 51.49669,
+     "lng": -0.238691,
+     "cats": "Category:2018 in the London Borough of Hammersmith and Fulham Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Platanus in the United Kingdom Category:Platanus orientalis (cultivated) Category:Ravenscourt Park Category:Self-published work"
     },
     {
      "title": "File:Ravenscourt Park picnic area, view under black walnut tree - geograph.org.uk - 8007757.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ravenscourt_Park_picnic_area%2C_view_under_black_walnut_tree_-_geograph.org.uk_-_8007757.jpg/960px-Ravenscourt_Park_picnic_area%2C_view_under_black_walnut_tree_-_geograph.org.uk_-_8007757.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Ravenscourt_Park_picnic_area%2C_view_under_black_walnut_tree_-_geograph.org.uk_-_8007757.jpg/960px-Ravenscourt_Park_picnic_area%2C_view_under_black_walnut_tree_-_geograph.org.uk_-_8007757.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ravenscourt_Park_picnic_area,_view_under_black_walnut_tree_-_geograph.org.uk_-_8007757.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "David Hawgood"
-    },
-    {
-     "title": "File:Ravenscourt Road, London W6 - geograph.org.uk - 1616226.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/92/Ravenscourt_Road%2C_London_W6_-_geograph.org.uk_-_1616226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Ravenscourt_Road,_London_W6_-_geograph.org.uk_-_1616226.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Stacey Harris"
+     "author": "David Hawgood",
+     "lat": 51.4977755,
+     "lng": -0.23795797,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Ravenscourt Park"
     },
     {
      "title": "File:Spring flowers and trees in Ravenscourt Park - geograph.org.uk - 1231563.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Spring_flowers_and_trees_in_Ravenscourt_Park_-_geograph.org.uk_-_1231563.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Spring_flowers_and_trees_in_Ravenscourt_Park_-_geograph.org.uk_-_1231563.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Peter Smyly"
+     "author": "Peter Smyly",
+     "lat": 51.49762,
+     "lng": -0.2367,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images by Peter S Category:Images from Geograph Britain and Ireland Category:Ravenscourt Park"
     },
     {
      "title": "File:Trees, Ravenscourt Park - geograph.org.uk - 3381795.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/22/Trees%2C_Ravenscourt_Park_-_geograph.org.uk_-_3381795.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Trees,_Ravenscourt_Park_-_geograph.org.uk_-_3381795.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Derek Harper"
+     "author": "Derek Harper",
+     "lat": 51.49552493,
+     "lng": -0.23790124,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Ravenscourt Park Category:Trees in the London Borough of Hammersmith and Fulham"
     },
     {
      "title": "File:Trees and a lake in the spring sunshine. - geograph.org.uk - 1231552.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Trees_and_a_lake_in_the_spring_sunshine._-_geograph.org.uk_-_1231552.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Trees_and_a_lake_in_the_spring_sunshine._-_geograph.org.uk_-_1231552.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Peter Smyly"
+     "author": "Peter Smyly",
+     "lat": 51.49639,
+     "lng": -0.2384,
+     "cats": "Category:Bodies of water in the London Borough of Hammersmith and Fulham Category:CC-BY-SA-2.0 Category:Images by Peter S Category:Images from Geograph Britain and Ireland Category:Lakes of London Category:Ravenscourt Park Category:Trees in the London Borough of Hammersmith and Fulham"
     },
     {
      "title": "iNat obs 366745635 (Platanus × hispanica)",
@@ -14644,8 +14718,8 @@
   "lon_019": {
    "city": "London",
    "name": "The Fountain Court Mulberries",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "iNat obs 362674570 (Morus nigra)",
@@ -16026,629 +16100,264 @@
   "lis_022": {
    "city": "Lisbon",
    "name": "The Holm Oak of Parque Bensaúde",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
-     "title": "File:CONJUNTO ARBÓREO NO PARQUE DE LA SALETTE 1.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_1.jpg/960px-CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_1.jpg",
+     "title": "File:Parque Bensaúde - Lisboa - Portugal 🇵🇹 (54910576422).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854910576422%29.jpg/960px-Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854910576422%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54910576422).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Lídia Maria Faria",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:CONJUNTO ARBÓREO NO PARQUE DE LA SALETTE 2.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_2.jpg/960px-CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_2.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Lídia Maria Faria",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:CONJUNTO ARBÓREO NO PARQUE DE LA SALETTE 3.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_3.jpg/960px-CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_3.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Lídia Maria Faria",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:CONJUNTO ARBÓREO NO PARQUE DE LA SALETTE 4.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_4.jpg/960px-CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:CONJUNTO_ARB%C3%93REO_NO_PARQUE_DE_LA_SALETTE_4.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Lídia Maria Faria",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Conjunto arbóreo em Parque La Salete 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Conjunto_arb%C3%B3reo_em_Parque_La_Salete_01.jpg/960px-Conjunto_arb%C3%B3reo_em_Parque_La_Salete_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Conjunto_arb%C3%B3reo_em_Parque_La_Salete_01.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "RSAlmeida",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Conjunto arbóreo em Parque La Salete 02.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Conjunto_arb%C3%B3reo_em_Parque_La_Salete_02.jpg/960px-Conjunto_arb%C3%B3reo_em_Parque_La_Salete_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Conjunto_arb%C3%B3reo_em_Parque_La_Salete_02.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "RSAlmeida",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Conjunto arbóreo em Parque La Salete 03.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Conjunto_arb%C3%B3reo_em_Parque_La_Salete_03.jpg/960px-Conjunto_arb%C3%B3reo_em_Parque_La_Salete_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Conjunto_arb%C3%B3reo_em_Parque_La_Salete_03.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "RSAlmeida",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
+     "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+     "lat": 38.75297,
+     "lng": -9.176184,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
     }
    ]
   },
   "lis_023": {
    "city": "Lisbon",
    "name": "The Second Holm Oak of Parque Bensaúde",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": []
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Parque Bensaúde - Lisboa - Portugal 🇵🇹 (54910576422).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854910576422%29.jpg/960px-Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854910576422%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54910576422).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+     "lat": 38.75297,
+     "lng": -9.176184,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
+    }
+   ]
   },
   "lis_024": {
    "city": "Lisbon",
    "name": "The Red-Flowering Eucalyptus of Parque Bensaúde",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
-     "title": "File:00 4937 Eucalyptus salubris - tree (Australia).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/00_4937_Eucalyptus_salubris_-_tree_%28Australia%29.jpg/960px-00_4937_Eucalyptus_salubris_-_tree_%28Australia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:00_4937_Eucalyptus_salubris_-_tree_(Australia).jpg",
+     "title": "File:Parque Bensaúde - Lisboa - Portugal 🇵🇹 (54911663798).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854911663798%29.jpg/960px-Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854911663798%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54911663798).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "W. Bulach"
-    },
-    {
-     "title": "File:Eucalyptus Plant.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Eucalyptus_Plant.jpg/960px-Eucalyptus_Plant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalyptus_Plant.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Ibrahim Achiri"
-    },
-    {
-     "title": "File:Eucalyptus arctata.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Eucalyptus_arctata.jpg/960px-Eucalyptus_arctata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalyptus_arctata.jpg",
-     "licence": "CC BY 4.0",
-     "author": "Nina Kerr"
-    },
-    {
-     "title": "File:Eucalyptus dalrympleana aff poliophylla au jardin jungle.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Eucalyptus_dalrympleana_aff_poliophylla_au_jardin_jungle.jpg/960px-Eucalyptus_dalrympleana_aff_poliophylla_au_jardin_jungle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalyptus_dalrympleana_aff_poliophylla_au_jardin_jungle.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Charles76"
-    },
-    {
-     "title": "File:Eucalyptus flowers2.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Eucalyptus_flowers2.jpg/960px-Eucalyptus_flowers2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalyptus_flowers2.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": ""
-    },
-    {
-     "title": "File:Eucalyptus glaucescens au jardin jungle.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Eucalyptus_glaucescens_au_jardin_jungle.jpg/960px-Eucalyptus_glaucescens_au_jardin_jungle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalyptus_glaucescens_au_jardin_jungle.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Charles76"
-    },
-    {
-     "title": "File:Eucalyptus tereticornis flowers, capsules, buds and foliage.jpeg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Eucalyptus_tereticornis_flowers%2C_capsules%2C_buds_and_foliage.jpeg/960px-Eucalyptus_tereticornis_flowers%2C_capsules%2C_buds_and_foliage.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalyptus_tereticornis_flowers,_capsules,_buds_and_foliage.jpeg",
-     "licence": "CC BY 3.0",
-     "author": "Ethel Aardvark"
-    },
-    {
-     "title": "File:Eucalyptus trees in Agioi Apostoli. Crete, Greece.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Eucalyptus_trees_in_Agioi_Apostoli._Crete%2C_Greece.jpg/960px-Eucalyptus_trees_in_Agioi_Apostoli._Crete%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalyptus_trees_in_Agioi_Apostoli._Crete,_Greece.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Ввласенко"
-    },
-    {
-     "title": "File:Eucalipto de contige 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Eucalipto_de_contige_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalipto_de_contige_01.jpg",
-     "licence": "Public domain",
-     "author": "http://hi5.com/friend/p287545329--Contige_Satao--html",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Eucalipto de contige 03.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/64/Eucalipto_de_contige_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalipto_de_contige_03.jpg",
-     "licence": "Public domain",
-     "author": "http://hi5.com/friend/p287545329--Contige_Satao--html",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
+     "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+     "lat": 38.753104,
+     "lng": -9.175712,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
     }
    ]
   },
   "lis_025": {
    "city": "Lisbon",
    "name": "The Field Maple of Parque Bensaúde",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": []
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Parque Bensaúde - Lisboa - Portugal 🇵🇹 (54911663798).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854911663798%29.jpg/960px-Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854911663798%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parque_Bensa%C3%BAde_-_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54911663798).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+     "lat": 38.753104,
+     "lng": -9.175712,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
+    }
+   ]
   },
   "lis_026": {
    "city": "Lisbon",
    "name": "The Paperbark of Jardim Constantino",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "lis_027": {
    "city": "Lisbon",
    "name": "The Moreton Bay Fig of Jardim Constantino",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "lis_028": {
    "city": "Lisbon",
    "name": "The Belas-Sombras of Jardim António Feijó",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "lis_029": {
    "city": "Lisbon",
    "name": "The Bela-Sombra of Praça António Sardinha",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Bela-sombra Restelo 1.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bela-sombra_Restelo_1.jpg/960px-Bela-sombra_Restelo_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Bela-sombra_Restelo_1.jpg/960px-Bela-sombra_Restelo_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Bela-sombra_Restelo_1.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave"
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
     },
     {
      "title": "File:Bela-sombra Restelo 2.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bela-sombra_Restelo_2.jpg/960px-Bela-sombra_Restelo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bela-sombra_Restelo_2.jpg/960px-Bela-sombra_Restelo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Bela-sombra_Restelo_2.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave"
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
     },
     {
      "title": "File:Bela-sombra Restelo 3.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Bela-sombra_Restelo_3.jpg/960px-Bela-sombra_Restelo_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bela-sombra_Restelo_3.jpg/960px-Bela-sombra_Restelo_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Bela-sombra_Restelo_3.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave"
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
     },
     {
      "title": "File:Bela-sombra Restelo 4.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Bela-sombra_Restelo_4.jpg/960px-Bela-sombra_Restelo_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Bela-sombra_Restelo_4.jpg/960px-Bela-sombra_Restelo_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Bela-sombra_Restelo_4.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave"
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
     },
     {
      "title": "File:Bela-sombra Restelo 5.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bela-sombra_Restelo_5.jpg/960px-Bela-sombra_Restelo_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Bela-sombra_Restelo_5.jpg/960px-Bela-sombra_Restelo_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Bela-sombra_Restelo_5.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave"
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
     },
     {
      "title": "File:Lisboa - Mundo Fantástico da Sardinha Portuguesa (53860761692).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Lisboa_-_Mundo_Fant%C3%A1stico_da_Sardinha_Portuguesa_%2853860761692%29.jpg/960px-Lisboa_-_Mundo_Fant%C3%A1stico_da_Sardinha_Portuguesa_%2853860761692%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Lisboa_-_Mundo_Fant%C3%A1stico_da_Sardinha_Portuguesa_%2853860761692%29.jpg/960px-Lisboa_-_Mundo_Fant%C3%A1stico_da_Sardinha_Portuguesa_%2853860761692%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Mundo_Fant%C3%A1stico_da_Sardinha_Portuguesa_(53860761692).jpg",
      "licence": "CC BY 2.0",
-     "author": "Jorge Franganillo"
+     "author": "Jorge Franganillo",
+     "lat": 38.713693,
+     "lng": -9.13982,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:June 2024 in Lisbon Category:O Mundo Fantástico da Sardinha Portuguesa (Lisbon) Category:Photographs of Lisbon by Jorge Franganillo Category:Portugal photographs taken on 2024-06-20 Category:Shops in Lisbon Category:Taken with Nikon D750"
     }
    ]
   },
   "lis_030": {
    "city": "Lisbon",
    "name": "The Dragon Tree of Quinta Conde dos Arcos",
-   "checked": "2026-08-30",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Olivais - Árvore isolada em Quinta do Conde D`Arcos - 2025-10-15 18-55-11 001.jpeg (Wikidata Q98444555)",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg",
      "licence": "CC BY-SA 4.0",
      "author": "DiogoBaptista",
+     "lat": 38.772,
+     "lng": -9.1094,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Files uploaded via webapp Wiki Loves Monuments Portugal - mobile version in 2025 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2025 Category:Images from Wiki Loves Monuments 2025 in Portugal Category:Images from Wiki Loves Monuments missing SDC creator Category:Images from Wiki Loves Monuments missing SDC inception Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Images from Wiki Loves Monuments missing SDC source of file Category:Self-published work Category:Árvore isolada em Quinta do Conde D`Arcos",
      "source": "wikidata/Q98444555"
     },
     {
      "title": "File:Olivais - Árvore isolada em Quinta do Conde D`Arcos - 2025-10-15 18-55-11 001.jpeg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-55-11_001.jpeg",
      "licence": "CC BY-SA 4.0",
-     "author": "DiogoBaptista"
+     "author": "DiogoBaptista",
+     "lat": 38.772,
+     "lng": -9.1094,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Files uploaded via webapp Wiki Loves Monuments Portugal - mobile version in 2025 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2025 Category:Images from Wiki Loves Monuments 2025 in Portugal Category:Images from Wiki Loves Monuments missing SDC creator Category:Images from Wiki Loves Monuments missing SDC inception Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Images from Wiki Loves Monuments missing SDC source of file Category:Self-published work Category:Árvore isolada em Quinta do Conde D`Arcos"
     },
     {
      "title": "File:Olivais - Árvore isolada em Quinta do Conde D`Arcos - 2025-10-15 18-57-24 002.jpeg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_002.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_002.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_002.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_002.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_002.jpeg",
      "licence": "CC BY-SA 4.0",
-     "author": "DiogoBaptista"
+     "author": "DiogoBaptista",
+     "lat": 38.7719,
+     "lng": -9.1091,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Files uploaded via webapp Wiki Loves Monuments Portugal - mobile version in 2025 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2025 Category:Images from Wiki Loves Monuments 2025 in Portugal Category:Images from Wiki Loves Monuments missing SDC creator Category:Images from Wiki Loves Monuments missing SDC inception Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Images from Wiki Loves Monuments missing SDC source of file Category:Self-published work Category:Árvore isolada em Quinta do Conde D`Arcos"
     },
     {
      "title": "File:Olivais - Árvore isolada em Quinta do Conde D`Arcos - 2025-10-15 18-57-24 003.jpeg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_003.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_003.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_003.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_003.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_003.jpeg",
      "licence": "CC BY-SA 4.0",
-     "author": "DiogoBaptista"
+     "author": "DiogoBaptista",
+     "lat": 38.7719,
+     "lng": -9.1092,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Files uploaded via webapp Wiki Loves Monuments Portugal - mobile version in 2025 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2025 Category:Images from Wiki Loves Monuments 2025 in Portugal Category:Images from Wiki Loves Monuments missing SDC creator Category:Images from Wiki Loves Monuments missing SDC inception Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Images from Wiki Loves Monuments missing SDC source of file Category:Plaques in Lisbon Category:Plaques referencing 1997 in Portugal Category:Self-published work Category:Tree signs in Portugal Category:Árvore isolada em Quinta do Conde D`Arcos"
     },
     {
      "title": "File:Olivais - Árvore isolada em Quinta do Conde D`Arcos - 2025-10-15 18-57-24 004.jpeg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_004.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_004.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_004.jpeg/960px-Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_004.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Olivais_-_%C3%81rvore_isolada_em_Quinta_do_Conde_D%60Arcos_-_2025-10-15_18-57-24_004.jpeg",
      "licence": "CC BY-SA 4.0",
-     "author": "DiogoBaptista"
-    },
-    {
-     "title": "File:Alameda em Quinta dos Buxos.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Alameda_em_Quinta_dos_Buxos.jpg/960px-Alameda_em_Quinta_dos_Buxos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Alameda_em_Quinta_dos_Buxos.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "João Pedro Gonçalves",
-     "lat": 41.705333,
-     "lng": -7.552525,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_01.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_01.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 02.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_02.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_02.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 03.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_03.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_03.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 04.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_04.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_04.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 05.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_05.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_05.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 06.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_06.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_06.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 07.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_07.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_07.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 08.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_08.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_08.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 09.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_09.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_09.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 10.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_10.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_10.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 11.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_11.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_11.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Teixo da Quinta da Trajinha - Bragança - 12.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_12.jpg/960px-Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Teixo_da_Quinta_da_Trajinha_-_Bragan%C3%A7a_-_12.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Reis Quarteu",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucaria da Quinta das Preces, Funchal, Madeira - IMG20221009170051.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170051.jpg/960px-Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170051.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Araucaria_da_Quinta_das_Preces,_Funchal,_Madeira_-_IMG20221009170051.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucaria da Quinta das Preces, Funchal, Madeira - IMG20221009170054.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170054.jpg/960px-Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170054.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Araucaria_da_Quinta_das_Preces,_Funchal,_Madeira_-_IMG20221009170054.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucaria da Quinta das Preces, Funchal, Madeira - IMG20221009170835.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170835.jpg/960px-Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170835.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Araucaria_da_Quinta_das_Preces,_Funchal,_Madeira_-_IMG20221009170835.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucaria da Quinta das Preces, Funchal, Madeira - IMG20221009170838.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170838.jpg/960px-Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170838.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Araucaria_da_Quinta_das_Preces,_Funchal,_Madeira_-_IMG20221009170838.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucaria da Quinta das Preces, Funchal, Madeira - IMG20221009170853.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170853.jpg/960px-Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009170853.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Araucaria_da_Quinta_das_Preces,_Funchal,_Madeira_-_IMG20221009170853.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucaria da Quinta das Preces, Funchal, Madeira - IMG20221009171011.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009171011.jpg/960px-Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009171011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Araucaria_da_Quinta_das_Preces,_Funchal,_Madeira_-_IMG20221009171011.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucaria da Quinta das Preces, Funchal, Madeira - IMG20221009184648.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009184648.jpg/960px-Araucaria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_IMG20221009184648.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Araucaria_da_Quinta_das_Preces,_Funchal,_Madeira_-_IMG20221009184648.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucária da Quinta das Preces, Funchal, Madeira - 2021-10-24 - DSC04106.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04106.jpg/960px-Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04106.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Arauc%C3%A1ria_da_Quinta_das_Preces,_Funchal,_Madeira_-_2021-10-24_-_DSC04106.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": 32.664393,
-     "lng": -16.951705,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucária da Quinta das Preces, Funchal, Madeira - 2021-10-24 - DSC04108.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04108.jpg/960px-Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04108.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Arauc%C3%A1ria_da_Quinta_das_Preces,_Funchal,_Madeira_-_2021-10-24_-_DSC04108.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": 32.664275,
-     "lng": -16.951643,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucária da Quinta das Preces, Funchal, Madeira - 2021-10-24 - DSC04113.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04113.jpg/960px-Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Arauc%C3%A1ria_da_Quinta_das_Preces,_Funchal,_Madeira_-_2021-10-24_-_DSC04113.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": 32.664225,
-     "lng": -16.951571,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucária da Quinta das Preces, Funchal, Madeira - 2021-10-24 - DSC04114.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04114.jpg/960px-Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04114.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Arauc%C3%A1ria_da_Quinta_das_Preces,_Funchal,_Madeira_-_2021-10-24_-_DSC04114.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": 32.664321,
-     "lng": -16.951605,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Araucária da Quinta das Preces, Funchal, Madeira - 2021-10-24 - DSC04125.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04125.jpg/960px-Arauc%C3%A1ria_da_Quinta_das_Preces%2C_Funchal%2C_Madeira_-_2021-10-24_-_DSC04125.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Arauc%C3%A1ria_da_Quinta_das_Preces,_Funchal,_Madeira_-_2021-10-24_-_DSC04125.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Paulo SP/ Wikimedia",
-     "lat": 32.66467,
-     "lng": -16.951265,
-     "source": "commons/famous"
+     "author": "DiogoBaptista",
+     "lat": 38.7718,
+     "lng": -9.1093,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Files uploaded via webapp Wiki Loves Monuments Portugal - mobile version in 2025 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2025 Category:Images from Wiki Loves Monuments 2025 in Portugal Category:Images from Wiki Loves Monuments missing SDC creator Category:Images from Wiki Loves Monuments missing SDC inception Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Images from Wiki Loves Monuments missing SDC source of file Category:Self-published work Category:Árvore isolada em Quinta do Conde D`Arcos"
     }
    ]
   },
   "lis_031": {
    "city": "Lisbon",
    "name": "The Plane Tree of Hospital Pulido Valente",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": []
   },
   "lis_032": {
    "city": "Lisbon",
    "name": "The Plane Tree of Travessa do Arco da Torre",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Plátano Travessa do Arco da Torre 1.jpg (Wikidata Q98444717)",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pl%C3%A1tano_Travessa_do_Arco_da_Torre_1.jpg/960px-Pl%C3%A1tano_Travessa_do_Arco_da_Torre_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pl%C3%A1tano_Travessa_do_Arco_da_Torre_1.jpg/960px-Pl%C3%A1tano_Travessa_do_Arco_da_Torre_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Pl%C3%A1tano_Travessa_do_Arco_da_Torre_1.jpg",
      "licence": "CC BY-SA 4.0",
      "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Trees in Lisbon Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Travessa do Arco da Torre",
      "source": "wikidata/Q98444717"
-    },
-    {
-     "title": "File:Plátano Travessa do Arco da Torre 2.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Pl%C3%A1tano_Travessa_do_Arco_da_Torre_2.jpg/960px-Pl%C3%A1tano_Travessa_do_Arco_da_Torre_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Pl%C3%A1tano_Travessa_do_Arco_da_Torre_2.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Plátano Travessa do Arco da Torre 3.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pl%C3%A1tano_Travessa_do_Arco_da_Torre_3.jpg/960px-Pl%C3%A1tano_Travessa_do_Arco_da_Torre_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Pl%C3%A1tano_Travessa_do_Arco_da_Torre_3.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Plátano Travessa do Arco da Torre 4.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pl%C3%A1tano_Travessa_do_Arco_da_Torre_4.jpg/960px-Pl%C3%A1tano_Travessa_do_Arco_da_Torre_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Pl%C3%A1tano_Travessa_do_Arco_da_Torre_4.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Plátano Travessa do Arco da Torre 5.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Pl%C3%A1tano_Travessa_do_Arco_da_Torre_5.jpg/960px-Pl%C3%A1tano_Travessa_do_Arco_da_Torre_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Pl%C3%A1tano_Travessa_do_Arco_da_Torre_5.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Plátano Travessa do Arco da Torre 6.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Pl%C3%A1tano_Travessa_do_Arco_da_Torre_6.jpg/960px-Pl%C3%A1tano_Travessa_do_Arco_da_Torre_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Pl%C3%A1tano_Travessa_do_Arco_da_Torre_6.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Vampiregrave",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
     }
    ]
   },
   "lis_033": {
    "city": "Lisbon",
    "name": "The Monterey Cypress of Parque do Caramão da Ajuda",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-05",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Árvore Parque dos Moinhos Santana 5.jpg (Wikidata Q98444595)",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%C3%81rvore_Parque_dos_Moinhos_Santana_5.jpg/960px-%C3%81rvore_Parque_dos_Moinhos_Santana_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/%C3%81rvore_Parque_dos_Moinhos_Santana_5.jpg/960px-%C3%81rvore_Parque_dos_Moinhos_Santana_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Parque_dos_Moinhos_Santana_5.jpg",
      "licence": "CC BY-SA 4.0",
      "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Parque do Caramão da Ajuda",
      "source": "wikidata/Q98444595"
     }
    ]
@@ -58955,6 +58664,663 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-4.0 Category:Outside stairs in France Category:Poitiers Category:Self-published work"
+    }
+   ]
+  },
+  "hir_012": {
+   "city": "Hiroshima",
+   "name": "The Camphor of Ujina Lighthouse",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hir_013": {
+   "city": "Hiroshima",
+   "name": "The Renge Pine of Renkoji",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hir_014": {
+   "city": "Hiroshima",
+   "name": "The Ginkgo of Tomohiro Shrine",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Tomohiro Ishii.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/93/Tomohiro_Ishii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Tomohiro_Ishii.jpg",
+     "licence": "Public domain",
+     "author": "Unknown authorUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:PD-1996 (with a reason) Category:PD-Japan-oldphoto Category:Template Unknown (author) Category:Tomohiro Ishii (politician)"
+    },
+    {
+     "title": "File:Tomohiro Tanaka Autograph.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Tomohiro_Tanaka_Autograph.jpg/960px-Tomohiro_Tanaka_Autograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tomohiro_Tanaka_Autograph.jpg",
+     "licence": "Public domain",
+     "author": "レッツコースター",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:PD signature Category:Signatures of people from Japan Category:Tomohiro Tanaka"
+    }
+   ]
+  },
+  "hir_015": {
+   "city": "Hiroshima",
+   "name": "The Shihon-sugi (Four-Trunk Cedar) of Mount Togo",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lis_034": {
+   "city": "Lisbon",
+   "name": "The First Jacarandas of Lisbon",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Lisbon, Jardim Botânico da Ajuda, carob tree (Ceratonia siliqua).JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Lisbon%2C_Jardim_Bot%C3%A2nico_da_Ajuda%2C_carob_tree_%28Ceratonia_siliqua%29.JPG/960px-Lisbon%2C_Jardim_Bot%C3%A2nico_da_Ajuda%2C_carob_tree_%28Ceratonia_siliqua%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lisbon,_Jardim_Bot%C3%A2nico_da_Ajuda,_carob_tree_(Ceratonia_siliqua).JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dguendel",
+     "lat": 38.70677778,
+     "lng": -9.20077778,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ceratonia siliqua in Portugal Category:Files with coordinates missing SDC location of creation Category:Flora in Jardim Botânico da Ajuda Category:Portugal photographs taken on 2017-01-28 Category:Self-published work"
+    }
+   ]
+  },
+  "lis_035": {
+   "city": "Lisbon",
+   "name": "The Paineira of Rua dos Jerónimos",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Árvore Jerónimos 1.jpg (Wikidata Q98444711)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/%C3%81rvore_Jer%C3%B3nimos_1.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos",
+     "source": "wikidata/Q98444711"
+    },
+    {
+     "title": "File:Cloister of the Jerónimos Monastery in Belém, Lisbon, 20250604 1313 9204.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cloister_of_the_Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1313_9204.jpg/960px-Cloister_of_the_Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1313_9204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cloister_of_the_Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m,_Lisbon,_20250604_1313_9204.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Jakub Hałun",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Cloisters of Mosteiro dos Jerónimos (interior) Category:Quality images Category:Quality images by Jakub Hałun Category:Quality images missing SDC Commons quality assessment Category:Quality images of Mosteiro dos Jerónimos Category:Self-published work"
+    },
+    {
+     "title": "File:Cloister of the Jerónimos Monastery in Belém, Lisbon, 20250604 1316 9216.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Cloister_of_the_Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1316_9216.jpg/960px-Cloister_of_the_Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1316_9216.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cloister_of_the_Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m,_Lisbon,_20250604_1316_9216.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Jakub Hałun",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Cloisters of Mosteiro dos Jerónimos (interior) Category:Quality images Category:Quality images by Jakub Hałun Category:Quality images missing SDC Commons quality assessment Category:Quality images of Mosteiro dos Jerónimos Category:Self-published work"
+    },
+    {
+     "title": "File:Jerónimos Monastery in Belém, Lisbon, 20250604 1342 9260.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1342_9260.jpg/960px-Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1342_9260.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m,_Lisbon,_20250604_1342_9260.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Jakub Hałun",
+     "lat": 38.6964599,
+     "lng": -9.20590054,
+     "cats": "Category:CC-BY-4.0 Category:Exterior of the Church of Santa Maria de Belém Category:Files with coordinates missing SDC location of creation Category:Quality images Category:Quality images by Jakub Hałun Category:Quality images of Mosteiro dos Jerónimos Category:Quality images of churches in Portugal Category:Self-published work"
+    },
+    {
+     "title": "File:Jerónimos Monastery in Belém, Lisbon, 20250604 1343 9263.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1343_9263.jpg/960px-Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m%2C_Lisbon%2C_20250604_1343_9263.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jer%C3%B3nimos_Monastery_in_Bel%C3%A9m,_Lisbon,_20250604_1343_9263.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Jakub Hałun",
+     "lat": 38.69563634,
+     "lng": -9.20582398,
+     "cats": "Category:CC-BY-4.0 Category:Exterior of the Church of Santa Maria de Belém Category:Files with coordinates missing SDC location of creation Category:Quality images Category:Quality images by Jakub Hałun Category:Quality images of Mosteiro dos Jerónimos Category:Quality images of churches in Portugal Category:Self-published work"
+    },
+    {
+     "title": "File:Árvore Jerónimos 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/%C3%81rvore_Jer%C3%B3nimos_1.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    },
+    {
+     "title": "File:Árvore Jerónimos 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/%C3%81rvore_Jer%C3%B3nimos_2.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    },
+    {
+     "title": "File:Árvore Jerónimos 3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/%C3%81rvore_Jer%C3%B3nimos_3.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    },
+    {
+     "title": "File:Árvore Jerónimos 4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/%C3%81rvore_Jer%C3%B3nimos_4.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    },
+    {
+     "title": "File:Árvore Jerónimos 5.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/%C3%81rvore_Jer%C3%B3nimos_5.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    },
+    {
+     "title": "File:Árvore Jerónimos 6.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/%C3%81rvore_Jer%C3%B3nimos_6.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_6.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    },
+    {
+     "title": "File:Árvore Jerónimos 7.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/%C3%81rvore_Jer%C3%B3nimos_7.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_7.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Exterior of Mosteiro dos Jerónimos Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    },
+    {
+     "title": "File:Árvore Jerónimos 8.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/%C3%81rvore_Jer%C3%B3nimos_8.jpg/960px-%C3%81rvore_Jer%C3%B3nimos_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81rvore_Jer%C3%B3nimos_8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vampiregrave",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Exterior of Mosteiro dos Jerónimos Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Rua dos Jerónimos"
+    }
+   ]
+  },
+  "lsk_001": {
+   "city": "Liškiava",
+   "name": "Liškiava Lime",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Church of the Holy Trinity in Liškiava, Lithuania in 2005.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Church_of_the_Holy_Trinity_in_Li%C5%A1kiava%2C_Lithuania_in_2005.jpg/960px-Church_of_the_Holy_Trinity_in_Li%C5%A1kiava%2C_Lithuania_in_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Church_of_the_Holy_Trinity_in_Li%C5%A1kiava,_Lithuania_in_2005.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Wojsyl",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.5 Category:CC-BY-SA-3.0-migrated Category:Church of the Holy Trinity in Liškiava Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Lithuania photographs taken on 2005-06-08 Category:On OSM Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ5 Category:User:Wojsyl/Lithuania"
+    },
+    {
+     "title": "File:Liškiava 65319, Lithuania - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio.jpg/960px-Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava_65319,_Lithuania_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.08087737,
+     "lng": 24.05823579,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lithuania photographs taken on 2015-07-18 Category:Liškiava Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    },
+    {
+     "title": "File:Liškiava 65319, Lithuania - panoramio (15).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2815%29.jpg/960px-Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava_65319,_Lithuania_-_panoramio_(15).jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.08148191,
+     "lng": 24.0524042,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lithuania photographs taken on 2015-07-18 Category:Liškiava Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    },
+    {
+     "title": "File:Liškiava 65319, Lithuania - panoramio (16).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2816%29.jpg/960px-Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava_65319,_Lithuania_-_panoramio_(16).jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.0808325,
+     "lng": 24.05658071,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lithuania photographs taken on 2015-07-18 Category:Liškiava Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    },
+    {
+     "title": "File:Liškiava 65319, Lithuania - panoramio (18).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2818%29.jpg/960px-Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava_65319,_Lithuania_-_panoramio_(18).jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.08198513,
+     "lng": 24.04986094,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lithuania photographs taken on 2015-07-18 Category:Liškiava Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    },
+    {
+     "title": "File:Liškiava 65319, Lithuania - panoramio (21).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2821%29.jpg/960px-Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava_65319,_Lithuania_-_panoramio_(21).jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.08061846,
+     "lng": 24.05644151,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lithuania photographs taken on 2015-07-18 Category:Liškiava Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    },
+    {
+     "title": "File:Liškiava 65319, Lithuania - panoramio (30).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2830%29.jpg/960px-Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava_65319,_Lithuania_-_panoramio_(30).jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.08174443,
+     "lng": 24.04892669,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lithuania photographs taken on 2015-07-18 Category:Liškiava Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    },
+    {
+     "title": "File:Liškiava 65319, Lithuania - panoramio (31).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2831%29.jpg/960px-Li%C5%A1kiava_65319%2C_Lithuania_-_panoramio_%2831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava_65319,_Lithuania_-_panoramio_(31).jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.08097613,
+     "lng": 24.05549317,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lithuania photographs taken on 2015-07-18 Category:Liškiava Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    }
+   ]
+  },
+  "lvp_001": {
+   "city": "Liverpool",
+   "name": "The Allerton Oak",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:2020 The Allerton Oak UKE.jpg (Wikidata Q76482504)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/2020_The_Allerton_Oak_UKE.jpg/960px-2020_The_Allerton_Oak_UKE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2020_The_Allerton_Oak_UKE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jill Jennings",
+     "lat": 53.38258,
+     "lng": -2.89283,
+     "cats": "Category:Allerton Oak Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation (53° N, 3° W) Category:Nominees in 2020",
+     "source": "wikidata/Q76482504"
+    },
+    {
+     "title": "File:Beech trees in Calderstones Park - geograph.org.uk - 4708897.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Beech_trees_in_Calderstones_Park_-_geograph.org.uk_-_4708897.jpg/960px-Beech_trees_in_Calderstones_Park_-_geograph.org.uk_-_4708897.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Beech_trees_in_Calderstones_Park_-_geograph.org.uk_-_4708897.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Mike Pennington",
+     "lat": 53.38342659,
+     "lng": -2.89343687,
+     "cats": "Category:CC-BY-SA-2.0 Category:Calderstones Park Category:Images from Geograph Britain and Ireland"
+    },
+    {
+     "title": "iNat obs 36887066 (Quercus cerris)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/58383754/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/36887066",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "53.3815014194,-2.8930129188"
+    },
+    {
+     "title": "iNat obs 36887066 (Quercus cerris)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/58383785/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/36887066",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "53.3815014194,-2.8930129188"
+    },
+    {
+     "title": "iNat obs 241526786 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/430386593/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/241526786",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "53.3816968976,-2.8916200596"
+    },
+    {
+     "title": "iNat obs 31295744 (Quercus cerris)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/48968054/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/31295744",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "53.3833830634,-2.8927561958"
+    },
+    {
+     "title": "iNat obs 31295744 (Quercus cerris)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/48968036/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/31295744",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "53.3833830634,-2.8927561958"
+    },
+    {
+     "title": "iNat obs 241529517 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/430466854/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/241529517",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "53.3821812934,-2.8920053303"
+    }
+   ]
+  },
+  "lvp_002": {
+   "city": "Liverpool",
+   "name": "The Calderstones Sweet Chestnut",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Beech trees in Calderstones Park - geograph.org.uk - 4708897.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Beech_trees_in_Calderstones_Park_-_geograph.org.uk_-_4708897.jpg/960px-Beech_trees_in_Calderstones_Park_-_geograph.org.uk_-_4708897.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Beech_trees_in_Calderstones_Park_-_geograph.org.uk_-_4708897.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Mike Pennington",
+     "lat": 53.38342659,
+     "lng": -2.89343687,
+     "cats": "Category:CC-BY-SA-2.0 Category:Calderstones Park Category:Images from Geograph Britain and Ireland"
+    },
+    {
+     "title": "File:Calderstones-Park-Liverpool-May-2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Calderstones-Park-Liverpool-May-2023.jpg/960px-Calderstones-Park-Liverpool-May-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Calderstones-Park-Liverpool-May-2023.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Acediscovery",
+     "lat": 53.381034,
+     "lng": -2.8964,
+     "cats": "Category:CC-BY-4.0 Category:Calderstones Park Category:Files with coordinates missing SDC location of creation (53° N, 3° W) Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 229865199 (Castanea sativa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/408074867/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/229865199",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "53.3808152585,-2.8933624092"
+    }
+   ]
+  },
+  "lgy_001": {
+   "city": "Llangernyw",
+   "name": "The Llangernyw Yew",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ancient Yew, Llangernyw - geograph.org.uk - 1160344.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/76/Ancient_Yew%2C_Llangernyw_-_geograph.org.uk_-_1160344.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Ancient_Yew,_Llangernyw_-_geograph.org.uk_-_1160344.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Eirian Evans",
+     "lat": 53.1922,
+     "lng": -3.685,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images by Eirian Evans Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Llangernyw Yew Category:Wales photographs taken on 2009-02-11"
+    },
+    {
+     "title": "File:Ancient yew at Llangernyw church - geograph.org.uk - 2032623.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/16/Ancient_yew_at_Llangernyw_church_-_geograph.org.uk_-_2032623.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Ancient_yew_at_Llangernyw_church_-_geograph.org.uk_-_2032623.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Eirian Evans",
+     "lat": 53.19228386,
+     "lng": -3.68560831,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Llangernyw Yew Category:Wales photographs taken on 2010-07-22"
+    },
+    {
+     "title": "File:Fingerpost, Llangernyw - geograph.org.uk - 6169847.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Fingerpost%2C_Llangernyw_-_geograph.org.uk_-_6169847.jpg/960px-Fingerpost%2C_Llangernyw_-_geograph.org.uk_-_6169847.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fingerpost,_Llangernyw_-_geograph.org.uk_-_6169847.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Meirion",
+     "lat": 53.19246148,
+     "lng": -3.68576416,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Llangernyw"
+    },
+    {
+     "title": "File:Llangernyw - geograph.org.uk - 2022528.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Llangernyw_-_geograph.org.uk_-_2022528.jpg/960px-Llangernyw_-_geograph.org.uk_-_2022528.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Llangernyw_-_geograph.org.uk_-_2022528.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ian Greig",
+     "lat": 53.18947293,
+     "lng": -3.68551206,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Llangernyw"
+    },
+    {
+     "title": "File:Llangernyw Yew close-up.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Llangernyw_Yew_close-up.jpg/960px-Llangernyw_Yew_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Llangernyw_Yew_close-up.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hypercolius",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Llangernyw Yew Category:Self-published work"
+    },
+    {
+     "title": "File:Llangernyw Yew info board.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Llangernyw_Yew_info_board.jpg/960px-Llangernyw_Yew_info_board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Llangernyw_Yew_info_board.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hypercolius",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Llangernyw Yew Stone Category:Self-published work Category:The Tree Council"
+    },
+    {
+     "title": "File:Llangernyw yew.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Llangernyw_yew.jpg/960px-Llangernyw_yew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Llangernyw_yew.jpg",
+     "licence": "CC BY-SA 2.5",
+     "author": "Stemonitis",
+     "lat": 53.19222222,
+     "lng": -3.68555556,
+     "cats": "Category:CC-BY-SA-2.5 Category:Files with coordinates missing SDC location of creation (53° N, 4° W) Category:Llangernyw Yew Category:Wales photographs taken on 2007-01-31"
+    },
+    {
+     "title": "File:Llangernyw yew panorama.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Llangernyw_yew_panorama.jpg/960px-Llangernyw_yew_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Llangernyw_yew_panorama.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hypercolius",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Llangernyw Yew Category:Self-published work"
+    },
+    {
+     "title": "File:The 4000 year old yew in the churchyard at Llangernyw - geograph.org.uk - 1732.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/60/The_4000_year_old_yew_in_the_churchyard_at_Llangernyw_-_geograph.org.uk_-_1732.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:The_4000_year_old_yew_in_the_churchyard_at_Llangernyw_-_geograph.org.uk_-_1732.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "David and Rachel Landin",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Images from Geograph Britain and Ireland missing SDC coordinates of the point of view Category:Information field template with formatting Category:Llangernyw Yew Category:March 2002 in Wales Category:St Digain's Church, Llangernyw"
+    },
+    {
+     "title": "File:The Llangernyw Yew - geograph.org.uk - 3530119.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/The_Llangernyw_Yew_-_geograph.org.uk_-_3530119.jpg/960px-The_Llangernyw_Yew_-_geograph.org.uk_-_3530119.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Llangernyw_Yew_-_geograph.org.uk_-_3530119.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Jeff Buck",
+     "lat": 53.1922873,
+     "lng": -3.68545763,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Llangernyw Yew Category:Wales photographs taken on 2013-06-27"
+    },
+    {
+     "title": "File:The Llangernyw yew.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/The_Llangernyw_yew.jpg/960px-The_Llangernyw_yew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Llangernyw_yew.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Emgaol",
+     "lat": 53.192395,
+     "lng": -3.684683,
+     "cats": "Category:2010 in Conwy County Borough Category:CC-BY-SA-3.0 Category:Churchyards in Wales Category:Files with coordinates missing SDC location of creation (53° N, 4° W) Category:Llangernyw Yew Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ1 Category:Wales photographs taken on 2010-01-26"
+    },
+    {
+     "title": "File:The Llangernyw yew split.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Llangernyw_yew_split.jpg/960px-The_Llangernyw_yew_split.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Llangernyw_yew_split.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Emgaol",
+     "lat": 53.192395,
+     "lng": -3.684683,
+     "cats": "Category:2010 in Conwy County Borough Category:CC-BY-SA-3.0 Category:Churchyards in Conwy County Borough Category:Files with coordinates missing SDC location of creation (53° N, 4° W) Category:Graves in Conwy County Borough Category:Llangernyw Yew Category:Llangernyw Yew Green Plaque Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ1 Category:Wales photographs taken on 2010-01-26"
+    }
+   ]
+  },
+  "lod_001": {
+   "city": "Łódź",
+   "name": "Dąb Fabrykant (the Factory Owner's Oak, also called Jagosz)",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:20240225 110143 Dąb Fabrykant w Łodzi 02.jpg (Wikidata Q22047713)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg/960px-20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dwxn",
+     "lat": 51.748675,
+     "lng": 19.454524,
+     "cats": "Category:2024 photographs of Poland by User:dwxn Category:CC-BY-SA-4.0 Category:February 2024 in Łódź Category:Files with coordinates missing SDC location of creation Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Poland photographs taken on 2024-02-25 Category:Self-published work Category:Taken with Honor Magic5 Pro",
+     "source": "wikidata/Q22047713"
+    },
+    {
+     "title": "File:20240225 110143 Dąb Fabrykant w Łodzi 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg/960px-20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dwxn",
+     "lat": 51.748675,
+     "lng": 19.454524,
+     "cats": "Category:2024 photographs of Poland by User:dwxn Category:CC-BY-SA-4.0 Category:February 2024 in Łódź Category:Files with coordinates missing SDC location of creation Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Poland photographs taken on 2024-02-25 Category:Self-published work Category:Taken with Honor Magic5 Pro"
+    },
+    {
+     "title": "File:20240225 110143 Dąb Fabrykant w Łodzi 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_04.jpg/960px-20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20240225_110143_D%C4%85b_Fabrykant_w_%C5%81odzi_04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dwxn",
+     "lat": 51.748555,
+     "lng": 19.454612,
+     "cats": "Category:2024 photographs of Poland by User:dwxn Category:CC-BY-SA-4.0 Category:February 2024 in Łódź Category:Files with coordinates missing SDC location of creation Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Poland photographs taken on 2024-02-25 Category:Self-published work Category:Taken with Honor Magic5 Pro"
+    },
+    {
+     "title": "File:Dąb Fabrykant 2022.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/D%C4%85b_Fabrykant_2022.jpg/960px-D%C4%85b_Fabrykant_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:D%C4%85b_Fabrykant_2022.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Śryż",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Self-published work"
+    },
+    {
+     "title": "File:Fabrykant Oak 01 2016.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Fabrykant_Oak_01_2016.JPG/960px-Fabrykant_Oak_01_2016.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fabrykant_Oak_01_2016.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Buforowy23",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Self-published work Category:Winter 2015-2016 in Łódź"
+    },
+    {
+     "title": "File:Fabrykant Oak 09 2015.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Fabrykant_Oak_09_2015.jpg/960px-Fabrykant_Oak_09_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fabrykant_Oak_09_2015.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Buforowy23",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Self-published work"
+    },
+    {
+     "title": "File:Fabrykant Oak trunk 01 2016.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Fabrykant_Oak_trunk_01_2016.JPG/960px-Fabrykant_Oak_trunk_01_2016.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fabrykant_Oak_trunk_01_2016.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Buforowy23",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Self-published work Category:Winter 2015-2016 in Łódź"
+    },
+    {
+     "title": "File:Fabrykant oak trunk and leaves 09 2015.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Fabrykant_oak_trunk_and_leaves_09_2015.jpg/960px-Fabrykant_oak_trunk_and_leaves_09_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fabrykant_oak_trunk_and_leaves_09_2015.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Buforowy23",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Oak \"Fabrykant\" (Park Klepacza in Łódź) Category:Self-published work"
+    }
+   ]
+  },
+  "loh_001": {
+   "city": "Lohja",
+   "name": "Paavola's Oak",
+   "checked": "2026-09-05",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 385260790 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/705298684/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/385260790",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "60.226395,23.8904533333"
+    },
+    {
+     "title": "iNat obs 385260790 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/705299176/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/385260790",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "60.226395,23.8904533333"
     }
    ]
   }
