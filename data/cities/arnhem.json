@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane beside the village church that watched German soldiers move in and Allied paratroopers fight past. Five more stand in Velperplein park, laid out after an 1880 design competition, steps from the city's 19th-century concert hall. Park Sonsbeek adds seven: four oaks spanning the 1750s to the 1840s, an unusually thick yew, a copper beech, and a chestnut in the woods above the deer park. None require a ticket.",
-  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 16 verified trees, real stories, how to reach each one.",
+  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 27 verified trees, real stories, how to reach each one.",
   "question_answer": "Arnhem's oldest tree is very likely one of De Poortwachters, three sweet chestnuts planted around 1650 to 1700 at the entrance to Kasteel Zijpendaal, now roughly 350 to 375 years old. Locals have nicknamed the two thickest Hans and Gretel and the leaner third the Witch.",
-  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 15 on the city's list.",
+  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 26 on the city's list.",
   "question_context": "De Poortwachters, three sweet chestnuts at the gate of Kasteel Zijpendaal, are the best-documented candidates for Arnhem's oldest tree, planted somewhere between 1650 and 1700 and now measured at roughly 750, 718 and 472 centimetres around. A local legend credits Karel van Egmond, the last independent Duke of Guelders, with planting them personally; the dates rule that out, since he died in 1538, more than a century before these trees are estimated to have gone in. What the legend gets right is their role: everyone visiting the castle since has had to walk between them, which is likely how they earned their name. The competing candidate is the Huissensedijk plane beside the Bonifatiuskerk in Elden, dated anywhere from 1725 to 1800, a spread wide enough that at its earliest it could be the older. Given that uncertainty, the chestnuts are the safer answer, and they are free to visit any day. Park Sonsbeek has a claimant of its own, an oak beside the Lorentz Monument that the national register dates to between 1750 and 1800 and calls possibly one of the oldest trees in that park, which is a claim to the park rather than to the city.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Arnhem's ancient trees free to visit?",
-      "a": "Yes, all 16 stand in public parks, public woodland or beside public streets, with no ticket and no gate. Two need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk, and the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you."
+      "a": "Nearly all of them. 26 of 27 stand in public parks, public woodland or beside public streets, with no ticket and no gate. Three need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk; the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you; and the copper beech on Velperweg stands in a private garden, visible from a public car park but not reachable, so that one is a look rather than a visit."
     },
     {
       "q": "Which Arnhem tree is the thickest of its kind in the Netherlands?",
@@ -529,6 +529,349 @@
         "label": "October, when the spiny burrs split and drop two or three brown nuts each",
         "kind": "fruit"
       },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_017",
+      "name": "The Willemsplein Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 135,
+      "age_max": 145,
+      "girth_cm": null,
+      "location": {
+        "address": "Willemsplein (near the Vesta building), Arnhem",
+        "latitude": 51.984185,
+        "longitude": 5.906491,
+        "neighbourhood": "City centre, between the station and Sonsbeek park"
+      },
+      "story": "Arnhem is redesigning its busiest square around this tree rather than the other way round. The plan for Willemsplein, due between 2027 and 2029, runs a boardwalk winding between the existing monumental planes so they stay exactly where they are. That is a late reprieve, because the square has not been kind to it. The national monumental tree register dates the planting to somewhere between 1880 and 1890, which puts the tree at roughly 140 years old, and it spent most of those years on the hinge between the railway station, the city centre and the gates of Sonsbeek park. Decades of building work above and below ground wore it down. The soil had to be dug out and enriched, and the tree now drinks through a semi-automatic watering system, which is not standard equipment for a plane.\n\nIts history is legible if you look up. About five metres above the pavement there is a large opening into a sizeable cavity, bracket fungi sit in the crown, and steel cables run through the upper limbs as a precaution. The register still calls its condition reasonable to good, which for a city-centre tree that has survived this much counts as a decent grade. The broad crown is the one thing on Willemsplein that has not been rebuilt twice.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1677474)",
+        "https://www.monumentaltrees.com/nl/nld/gelderland/arnhem/12308_willemsplein/ (independent listing exists for this tree/location, confirmed via search; page itself 403s automated fetch)"
+      ],
+      "access": "Free. Stands on the open public square, visible and reachable at all times.",
+      "transport": "Arnhem Centraal station, about 5 minutes' walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_018",
+      "name": "The Zijpendaalseweg Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 95,
+      "age_max": 105,
+      "girth_cm": null,
+      "location": {
+        "address": "Zijpendaalseweg, opposite number 41, Arnhem",
+        "latitude": 51.986868,
+        "longitude": 5.903188,
+        "neighbourhood": "Park Sonsbeek, along the Zijpendaalseweg edge"
+      },
+      "story": "Almost every lime along a Dutch street is a hybrid. This one is not. Tilia cordata is the small-leaved lime, the species actually native to the Low Countries, and it stands on the Zijpendaalseweg a few hundred metres from a common lime beside the Watermuseum, which turns the walk between them into a free lesson in telling the two apart. Turn a leaf over. The small-leaved lime carries small rust-coloured tufts of hair in the angles where the veins meet, and it keeps a clean trunk, while the common lime throws up a thicket of suckers around its own ankles.\n\nThe rest of what is known fits in a line. The national monumental tree register dates the planting to between 1920 and 1930, which makes it roughly a century old, and leaves the history field blank. It grew up on protected ground: Sonsbeek, Zijpendaal and Gulden Bodem are listed together as a single Rijksmonument complex of historic parkland, and this stretch of road is the seam between that parkland and the city.\n\nNo source outside the register has written this tree down, so treat the 1920s band as one authority's estimate rather than a date. If you have an older photograph of this verge, we would like to see it. Free, public, about ten minutes on foot from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1692427)",
+        "https://monumentenregister.cultureelerfgoed.nl/complexen/528855 (Rijksmonument complex designation confirming Sonsbeek/Zijpendaal along the Zijpendaalseweg is protected historic parkland of this exact vintage, corroborating the setting though not naming the individual tree)"
+      ],
+      "access": "Free, public parkland along a park road.",
+      "transport": "About 10 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_019",
+      "name": "The Nieuwe Plein Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 135,
+      "age_max": 145,
+      "girth_cm": null,
+      "location": {
+        "address": "Nieuwe Plein, at the ramp to the Nelson Mandela bridge, Arnhem",
+        "latitude": 51.982234,
+        "longitude": 5.903005,
+        "neighbourhood": "City centre, between the station and the Rijn waterfront"
+      },
+      "story": "When Arnhem drove a road tunnel past this plane, it did not cut the roots. It moved them. The national tree register's file for this specimen records that the main roots were led under the tunnel box to a planting bed thirty metres away, so the tree now feeds from soil on the far side of a piece of infrastructure.\n\nIt was not the first favour. Back in the 1970s the growing site had already needed repair, and a grate was set into the pavement to keep the paving off the trunk base. Both were necessary because of where it stands. Nieuwe Plein is the junction between the old centre and the railway station, ground that has been opened up again and again for the ring road around the city.\n\nThe register dates the planting to between 1880 and 1890, roughly 140 years, and still calls the tree in fairly good shape: little visible damage, and vital at the last inspection. Planes are the species cities plant precisely because they put up with this kind of treatment. Not many are asked to prove it quite so thoroughly.\n\nNo source outside the register has written this tree down, so read the planting band as one authority's estimate. It stands on the open verge by the ramp to the Nelson Mandela bridge, free, no gate, about ten minutes from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1677473)"
+      ],
+      "access": "Free. Stands on the open public square/road verge, visible and reachable at all times.",
+      "transport": "About 10 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_020",
+      "name": "The Watermuseum Lime",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 145,
+      "age_max": 155,
+      "girth_cm": null,
+      "location": {
+        "address": "Next to the Nederlands Watermuseum, Zijpendaalseweg 28, Arnhem",
+        "latitude": 51.98858,
+        "longitude": 5.900943,
+        "neighbourhood": "Park Sonsbeek"
+      },
+      "story": "The national register lists this lime as publicly visitable and then, under visible, writes: unknown. Somebody left that field blank and nobody has been back to fill it in, which is worth knowing before you walk up, because the tree stands tight against the Nederlands Watermuseum in Park Sonsbeek, and the museum occupies the old Bagijnemolen, a watermill turned into a building about water.\n\nWhat the register is sure of is the dating. Planted between 1870 and 1880, which puts the tree at roughly 150 years old. It goes down there under its local name, Hollandse linde, the Dutch term for the common lime, and a common lime is not a tree anybody discovered in a wood. Tilia x europaea is a natural cross between the small-leaved and the large-leaved lime, propagated from cuttings and planted across northern Europe in enormous numbers because it grows fast and takes hard pruning without complaint. The giveaway is at ground level: a common lime throws up a dense mass of shoots around the foot of its own trunk. Compare it with the small-leaved lime a few hundred metres down the Zijpendaalseweg, which keeps its ankles clean.\n\nNothing outside the register has written this tree down, so the planting band is one authority's estimate. Free, public parkland, about twelve minutes on foot from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1691157)",
+        "https://www.visitarnhem.com/locaties/2948584604/nederlands-watermuseum-2 (independently confirms the Nederlands Watermuseum sits at this address inside Park Sonsbeek, corroborating the tree's setting though not the tree itself)"
+      ],
+      "access": "Free, public parkland, right beside a public museum building.",
+      "transport": "About 12 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_021",
+      "name": "The Plane of Lauwersgrachtpark",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 135,
+      "age_max": 145,
+      "girth_cm": null,
+      "location": {
+        "address": "Lauwersgrachtpark (Musispark), behind Musis Sacrum, Arnhem",
+        "latitude": 51.979809,
+        "longitude": 5.915121,
+        "neighbourhood": "Lauwersgrachtpark / Musispark, city centre"
+      },
+      "story": "Three separately registered monumental trees stand within 150 metres of each other behind Arnhem's concert hall, and this plane is the one nobody mentions. The country's oldest Canadian poplar is about 140 metres off and takes all the attention, a sessile oak of the same era stands nearby, and the plane is simply the largest thing in the southern half of Lauwersgrachtpark.\n\nThe national register dates its planting to between 1880 and 1890 and suggests, without committing to it, that the tree probably went in when the plantsoen here was redesigned around 1890 to Leonard Springer's plan, the scheme that gave Arnhem's ring of canal-side parks their present shape. That puts it at roughly 140 years.\n\nIt helps to know what you are standing under. The London plane is a hybrid of the oriental plane and an American species, thrown up in a garden somewhere in the seventeenth century, and it turned out to shrug off coal smoke, compacted soil and brutal pruning, which is why it now lines half the streets in Europe. Arnhem is one of the few cities where you can set the hybrid beside one of its parents in an afternoon: oriental planes stand on Velperplein and out on the Huissensedijk, with more deeply cut leaves and darker bark than the flaking, paler patchwork on this trunk.\n\nFree, public park, about fifteen minutes from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1677476)",
+        "https://www.monumentaltrees.com/nl/nld/gelderland/arnhem/3388_lauwersgrachtpark/ (independent listing for the park's monumental trees, confirmed via search; page itself 403s automated fetch)"
+      ],
+      "access": "Free, public park.",
+      "transport": "About 15 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_022",
+      "name": "The Utrechtseweg Black Locust",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "roughly 210 years",
+      "age_min": 205,
+      "age_max": 215,
+      "girth_cm": null,
+      "location": {
+        "address": "Utrechtseweg, opposite the former PGEM office, Arnhem",
+        "latitude": 51.984669,
+        "longitude": 5.894015,
+        "neighbourhood": "Utrechtseweg, west of the city centre"
+      },
+      "story": "Somewhere between 1810 and 1820, when the Netherlands was either a department of Napoleon's France or had just stopped being one, somebody put an American tree on the Utrechtseweg. It is still standing.\n\nThat planting band, from the national monumental tree register, makes this black locust roughly 210 years old, an unusually early date for the species in this country. Robinia pseudoacacia comes from the Appalachians and reached Europe at the start of the seventeenth century, carrying the name of Jean Robin, gardener to the French king, who is credited with the first Paris specimen. It travelled because it did two useful jobs: the timber rots far more slowly than oak, and the roots fix nitrogen, which lets the tree get on with life on the poor sandy ground of this part of Gelderland.\n\nUnder history the register writes nothing whatsoever. What it does record is the address: a public square owned by the city, across the road from where the PGEM electricity company kept its offices in a villa called Bellevue. The company has gone and so has the villa, and the register still uses them to say where the tree is.\n\nOld black locusts look worse than they are, all deeply grooved bark and a trunk that seems to be turning slowly on its own axis. Free, no gate, about fifteen minutes on foot from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1678326)",
+        "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/addc49c4-d0b4-102d-bcf8-003048976d84 (Nationaal Archief photo record independently confirms the PGEM administration building 'Bellevue' stood on the Utrechtseweg, corroborating the register's place description though not the tree itself)"
+      ],
+      "access": "Free. Register lists the setting as a public square (plein), owned by the municipality, distinct from the former PGEM/Liander grounds across the road that an earlier pass on this city left as an access-uncertain lead.",
+      "transport": "About 15 minutes' walk from Arnhem Centraal station.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "late May into June, when it hangs full of white pea-flowers and the whole tree smells sweet"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_023",
+      "name": "The Boulevard Heuvelink Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 125,
+      "age_max": 145,
+      "girth_cm": 400,
+      "location": {
+        "address": "Boulevard Heuvelink, opposite number 104-B, Arnhem",
+        "latitude": 51.979719,
+        "longitude": 5.920109,
+        "neighbourhood": "Spijkerkwartier"
+      },
+      "story": "The last time anyone put a tape around this plane it came to four metres, and that was before 2006. The register liked its rate of growth enough to write down a forecast beside the figure: five metres by 2023. Nobody has been back to find out. If you are on Boulevard Heuvelink with a tape measure, that is a question you can settle in a minute, and we would like the answer.\n\nThe street matters here as much as the tree. Boulevard Heuvelink came out of the Boulevardplan that Hendrik Jan Heuvelink junior presented in 1877, working from a design his father had drawn twenty years before, and the work was largely finished by 1899. The register dates this plane's planting to somewhere between 1880 and 1900, which falls inside the years the boulevard was being laid out, and it has been the thing that makes the view ever since. A Spijkerkwartier neighbourhood tree survey still refers to it simply as the monumental plane on the street, which is how a local gives directions.\n\nThe register calls it sound and fast growing, with a strong structure and some root damage on the footpath side, which is what happens when a large tree and a pavement share ground for a century. A second registered plane stands further east near number 197.\n\nFree, on the public verge, about twenty minutes on foot from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1692447)",
+        "https://www.spijkerkwartier.net/wegwijs/bomen2014.htm (independent neighbourhood tree survey confirms a monumental plane tree stands on Boulevard Heuvelink near this stretch, corroborating existence and monumental status)"
+      ],
+      "access": "Free. Stands on the public road verge/footpath of Boulevard Heuvelink.",
+      "transport": "About 20 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_024",
+      "name": "The Agnietenstraat Turkey Oak",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "roughly 115 years",
+      "age_min": 110,
+      "age_max": 120,
+      "girth_cm": null,
+      "location": {
+        "address": "Agnietenstraat (green strip beside number 170), Arnhem",
+        "latitude": 51.988828,
+        "longitude": 5.918211,
+        "neighbourhood": "Klarendal/Hommels area"
+      },
+      "story": "This oak was planted in a cemetery and outlasted it. When it went into the ground in 1910, the green strip on the Agnietenstraat was still part of Onder de Linden, a burial ground used between 1852 and 1876 and not cleared away until 1959. The graves went. The tree stayed, and it now looks out at a primary school.\n\nIts Dutch name is Moseik, mossy oak, and the reason is in the acorns. Quercus cerris, the Turkey oak, is a southern European species, and its acorn cups are wrapped in long whiskery scales that genuinely look like a growth of moss on the fruit. Nothing native to the Netherlands does that, which makes it the one reliable way to name the tree from the ground. Do not mix the Dutch name up with Moeraseik, which sounds almost the same and means the pin oak, a different tree entirely.\n\nIn 2017 a residential block went up along the eastern edge of the plantsoen, and construction is the usual way a street tree of this age dies. The register reports that this one came through it in good order, with a sound trunk and a fine broad crown, at roughly 115 years old.\n\nOnly the register has written the tree itself down, although local historians confirm independently what the ground used to be. Free, public, about fifteen minutes on foot from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1692437, common Dutch name 'Moseik' verified as Quercus cerris/Turkey Oak via ecopedia.be and other Dutch nursery references)",
+        "https://nl.wikipedia.org/wiki/Joodse_begraafplaatsen_(Arnhem) (and related local-history sources) independently confirm the register's own claim that this ground was part of the former 'Onder de Linden' cemetery complex (used 1852-1876, cleared by 1959), corroborating the site's history though not the tree itself"
+      ],
+      "access": "Free, public green strip (plantsoen) opposite a primary school.",
+      "transport": "About 15 minutes' walk from Arnhem Centraal station.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September into October, when the acorns drop still wearing their mossy whiskered cups"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_025",
+      "name": "The Velperweg Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 175,
+      "age_max": 185,
+      "girth_cm": null,
+      "location": {
+        "address": "Viewed from the Rosendaalsestraat car park, off Velperweg, Arnhem (the tree itself stands in a private back garden at Velperweg 31D)",
+        "latitude": 51.987193,
+        "longitude": 5.924618,
+        "neighbourhood": "Velperweg / Rosendaal area"
+      },
+      "story": "The house is from the 1930s. The beech in its back garden was already the better part of a century old when the builders turned up. The national register dates the planting to between 1840 and 1850, so roughly 180 years, and suspects the tree once stood beside one of the villas that occupied this ground before the present block went up. It became somebody's garden tree by accident of town planning.\n\nSo be clear about what this visit is. You cannot walk up to it. The garden is private, the register marks the tree as not visitable, and there is no path, gate or arrangement that changes that. What you can do is see it. The register states that the full crown shows from the public car park on the Rosendaalsestraat, and that a smaller part of the tree is visible from the Velperweg itself. Stand in the car park, look across the gardens, and the dark red canopy is the one thing on the block you cannot mistake for anything else. Bring eyes and nothing else; there is nothing here to walk to.\n\nAt the last measurement, in 2006, it was approaching four metres round. Nobody has recorded a figure since, so the number today is likely to be larger and nobody can tell you by how much.\n\nOnly the register has written this tree down. About twenty minutes on foot from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1690690)"
+      ],
+      "access": "View-only. The tree stands in a private garden and cannot be entered (register marks it not visitable), but its full crown is described as visible from the public Rosendaalsestraat car park, with a partial view also possible from Velperweg itself.",
+      "transport": "About 20 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "arn_026",
+      "name": "The Zijpendaal Giant Arborvitae",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "age_estimate": "roughly 115 years",
+      "age_min": 110,
+      "age_max": 120,
+      "girth_cm": null,
+      "location": {
+        "address": "Near the copper beeches, Kasteel Zijpendaal, Arnhem",
+        "latitude": 51.997552,
+        "longitude": 5.894299,
+        "neighbourhood": "Landgoed Zijpendaal"
+      },
+      "story": "This tree is in the middle of turning itself into several trees. Western red cedar layers: branches that reach the ground root where they touch, and new stems rise off the main trunk, so one plant slowly surrounds itself with copies of itself. The national register notes the habit on this specimen with something close to admiration, describing the fresh stems coming off the trunk and calling the result a stage of growth the tree has made for itself.\n\nIt is not a cedar and it is not from here. Thuja plicata belongs to the wet coastal forests of the Pacific Northwest, where it reaches sixty metres and can live for over a thousand years, and where First Nations of the coast built canoes, houses, rope and clothing out of its wood and bark. This one was planted in the park at Zijpendaal between 1900 and 1910, which puts it at roughly 115 years, and it stands next to a group of copper beeches that are on the register in their own right.\n\nThe park around it was laid out in 1864 to Eduard Petzold's design, decades before this tree arrived, and the register keeps the two dates firmly apart. It rates the cedar as a large tree in fair to good condition and one of the things people remember about the park.\n\nOpen, free public parkland, about twenty-five minutes on foot from the station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1687995)"
+      ],
+      "access": "Free, public landscape park and estate (Landgoed Zijpendaal, managed by Geldersch Landschap & Kasteelen).",
+      "transport": "About 25 minutes' walk from Arnhem Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_027",
+      "name": "The Zijpendaal Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 175 years",
+      "age_min": 170,
+      "age_max": 180,
+      "girth_cm": null,
+      "location": {
+        "address": "Landgoed Zijpendaal, corner of the wood between Daam Fockemalaan and De Vilderskamp, Arnhem",
+        "latitude": 51.998126,
+        "longitude": 5.90557,
+        "neighbourhood": "Landgoed Zijpendaal"
+      },
+      "story": "This oak grows on the line where a country estate stops and a street begins, at the corner of the wood on Landgoed Zijpendaal with Daam Fockemalaan on one side and De Vilderskamp on the other. That position is written into its shape. An oak on a woodland edge grows two ways at once: drawn up and narrow where the other trees crowd it for light, and spreading heavy low limbs out across the open side where nothing competes. Walk around it and you are effectively looking at two trees stuck together.\n\nThe national register dates the planting to between 1850 and 1860, which makes it roughly 175 years old, and if that band holds it was already standing when Eduard Petzold redrew the estate's gardens in 1864. Under history the register has written nothing whatsoever, which is the ordinary fate of a tree that never belonged to anybody famous and never fell on anything.\n\nIt sits at the northern end of the Zijpendaal walk, a kilometre or so beyond the watermill oak and the Lorentz monument oak, on ground the IVN publishes as a marked public route, so reaching it costs nothing but the walking.\n\nNobody outside the register has recorded this tree, so treat the 1850s dating as one authority's estimate. If there is an old photograph of this corner in a family album, we would like to see it.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1692431)",
+        "https://www.ivn.nl/afdeling/arnhem/op-pad-zonder-gids/wandeling-landgoed-zijpendaal-arnhem/ (an IVN nature-walking guide for Landgoed Zijpendaal independently confirms the estate is open public parkland with a marked walking route, corroborating public access to this area though not the specific tree)"
+      ],
+      "access": "Free, public landscape park and estate (Landgoed Zijpendaal, managed by Geldersch Landschap & Kasteelen).",
+      "transport": "About 25 minutes' walk from Arnhem Centraal station.",
       "photo": {
         "url": null,
         "license": null,
