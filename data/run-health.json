@@ -5569,6 +5569,69 @@
    ],
    "trees": 9,
    "logged": true
+  },
+  {
+   "started": "2026-09-05T14:11:06+00:00",
+   "date": "2026-09-05",
+   "run_id": "33971009194",
+   "minutes": 35.3,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 175,
+   "denials": 15,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(git), Bash(ls), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 17304885,
+   "claims_held": [
+    "_famous-finland",
+    "_famous-denmark"
+   ],
+   "commits": 19,
+   "cities_touched": 10,
+   "cities": [
+    {
+     "city": "arnhem",
+     "trees": 10
+    },
+    {
+     "city": "hiroshima",
+     "trees": 3
+    },
+    {
+     "city": "zurich",
+     "trees": 2
+    },
+    {
+     "city": "cremines",
+     "trees": 1
+    },
+    {
+     "city": "fribourg",
+     "trees": 1
+    },
+    {
+     "city": "hobart",
+     "trees": 1
+    },
+    {
+     "city": "sydney",
+     "trees": 1
+    },
+    {
+     "city": "timber-creek",
+     "trees": 1
+    },
+    {
+     "city": "villeneuve",
+     "trees": 1
+    },
+    {
+     "city": "iwaki",
+     "trees": 0
+    }
+   ],
+   "trees": 21,
+   "logged": true
   }
  ],
  "schedule_changes": [
