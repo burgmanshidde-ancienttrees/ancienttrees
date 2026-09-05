@@ -5217,6 +5217,13 @@
         "tokens": 0,
         "trees": 3,
         "note": "session, 0 tokens: wrote and merged the 3 staged verified candidates directly (no fresh agent dispatch) -- Maebashi mae_001 (new single-tree place, one of the Nihon San-dai Kaya), Hokuto hok_002 (second tree, a paddy-field weeping cherry), Yabu yab_002 (second tree, one of only 4 documented left-spiraling Torreya in Japan, declining but under care). Species name reconciled to the corpus canonical Japanese Nutmeg-yew (hard rule 9). Claim released."
+      },
+      {
+        "target": "pagegaps",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session work, not logged by tokens: wrote 3 species intros pagegaps.py found earned (Japanese Nutmeg-yew 4 trees, Sweet Osmanthus 3, Japanese Wisteria 3), closing the species gap to 0; build+preflight clean."
       }
     ]
   }
