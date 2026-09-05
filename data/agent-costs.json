@@ -5261,6 +5261,15 @@
         "note": "session viewing pass on 3 reader-submitted photos (rung 1); 2 published (brn_001, brn_002 photo missing->approved), 1 rejected as duplicate. No new trees, photo coverage only.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Park Sonsbeek (Arnhem)",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session pagegaps.py pass: wrote the park intro from Arnhem's 6 already-published Sonsbeek register trees, no new tree research. Closed the one open park-page gap.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
