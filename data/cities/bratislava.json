@@ -2,11 +2,11 @@
   "city": "Bratislava",
   "country": "Slovakia",
   "status": "needs_curation",
-  "intro": "Bratislava's register of protected trees produces six worth the walk, five of them in one line from the Danube to the slope below the castle: a Japanese pagoda tree on the embankment, an ash on the square where Hungarian kings were crowned, a paulownia in a rebuilt park, an Adriatic oak at a public stairway, and a small birch further up. The sixth is a plane over six metres round, out in the forest park. All six are free and in the open, and not one is a native species.",
+  "intro": "Bratislava's register of protected trees produces seven worth the walk, five of them in one line from the Danube to the slope below the castle: a Japanese pagoda tree on the embankment, an ash on the square where Hungarian kings were crowned, a paulownia in a rebuilt park, an Adriatic oak at a public stairway, and a small birch further up. A plane over six metres round stands out in the forest park, and a black poplar just as thick waits a short train ride away in Grinava. All seven are free and in the open.",
   "meta_description": "Bratislava's protected trees: a Japanese pagoda tree on the Danube, an Adriatic oak on a public stairway, a paulownia in a rebuilt park.",
-  "question_meta": "Bratislava's oldest documented protected tree is a Japanese pagoda tree on the Danube embankment, planted around 1916. Its story, and four more.",
+  "question_meta": "Bratislava's oldest documented protected tree is a Japanese pagoda tree on the Danube embankment, planted around 1916. Its story, and six more.",
   "question_answer": "Bratislava's most precisely dated protected tree is the Sophora of Vajanského Embankment, a Japanese pagoda tree (Styphnolobium japonicum) in a small riverside park a few minutes from Hviezdoslav Square. Slovakia's state register and an independent Slovak protected-trees resource agree it was roughly eighty years old when it was formally protected in 1996, which puts its planting near 1916 and its age today at roughly a hundred and ten. An Adriatic oak on the Šulekova stairway carries a similar derived age from a similar dated figure, so the two are close rather than one being clearly oldest, but the pagoda tree gets the answer here for its fuller two-source documentation. A paulownia elsewhere on this page has a disputed age that could put it older still, anywhere from sixty to a hundred and fifty years depending on which source is right, which is exactly why this page states the range rather than picking a winner.",
-  "question_context": "This page is built on Slovakia's own state register of protected trees (Štátna ochrana prírody SR, released under CC BY 4.0), cross-checked against krizom-krazom.eu, an independent Slovak resource that documents the country's protected trees district by district, and against local news coverage where it exists. The register gives species, measurements and a protection year for each tree, and for several the age is recorded as of that protection year rather than continuously updated since, which is why every age on this page is stated as a derived, 2026-adjusted estimate rather than a fresh measurement. Five of the six published here cluster within 1.7 kilometres, from the Danube embankment up the slope toward Bratislava Castle, genuinely walkable in one outing; the sixth, the plane at Zelezna studnicka, is a separate trip out to the forest park. Several more register entries were found sitting in private gardens ('v záhrade' in the register's own text) with no evidence of public access and are held back as leads rather than published; one, a wild service tree at Devín, is confirmed dead by a 2020 local news report the register itself had not caught up with.",
+  "question_context": "This page is built on Slovakia's own state register of protected trees (Statna ochrana prirody SR, CC BY 4.0), cross-checked against krizom-krazom.eu, an independent Slovak resource that documents protected trees district by district, and against local news where it exists. The register gives species, measurements and a protection year, and for several the age is recorded as of that year rather than updated since, which is why every age here is a derived, 2026-adjusted estimate rather than a fresh measurement. Five of the seven cluster within 1.7 kilometres, from the Danube embankment up the slope toward Bratislava Castle, genuinely walkable in one outing; the plane at Zelezna studnicka is a separate trip to the forest park, and the Grinava Poplar sits a short train ride further out on the Bratislava-Zilina line, still inside a half hour of the capital. Several register entries sitting in private gardens with no evidence of public access are held back as leads; one, a wild service tree at Devin, is confirmed dead by a 2020 news report the register had not caught up with.",
   "faq": [
     {
       "q": "What is the oldest tree in Bratislava?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are Bratislava's protected trees free to see?",
-      "a": "Yes, all six. They stand on a public riverside park, a public square, a rebuilt neighbourhood park, a public stairway, an ordinary residential street and a forest park path, with no entry fee or gate anywhere on this list."
+      "a": "Yes, all seven. They stand on a public riverside park, a public square, a rebuilt neighbourhood park, a public stairway, an ordinary residential street, a forest park path and a roadside in Grinava, with no entry fee or gate anywhere on this list."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Five of the six sit within 1.7 kilometres of each other, climbing from the Danube embankment up the slope below Bratislava Castle to a quiet residential street above it, an afternoon's walk rather than a single stop. The sixth, the plane beside the Vydrica stream in Bratislava Forest Park, stands about three kilometres further out and is a separate trip."
+      "a": "Five of the seven sit within 1.7 kilometres of each other, climbing from the Danube embankment up the slope below Bratislava Castle to a quiet residential street above it, an afternoon's walk rather than a single stop. The plane beside the Vydrica stream in Bratislava Forest Park stands about three kilometres further out, and the Grinava Poplar sits on the edge of Pezinok, a short train ride away; both are separate trips."
     },
     {
       "q": "Why does Slovakia protect trees that aren't native species?",
@@ -216,6 +216,36 @@
       "how_to_recognise": "The biggest tree by a distance on the road up to Zelezna studnicka, standing clear of the wood beside the path. Not the young plane recently transplanted near the rebuilt Labutie pavilion.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "brt_007",
+      "name": "The Grinava Poplar",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "around 100 years, per available sources",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 705,
+      "location": {
+        "address": "Limbašská cesta, near the former Strapák's Mill, Grinava district of Pezinok",
+        "latitude": 48.2805,
+        "longitude": 17.2408,
+        "neighbourhood": "Grinava, Pezinok (day trip from Bratislava)"
+      },
+      "story": "A black poplar this size usually means centuries of growth, but the Grinava Poplar is probably closer to a hundred years old, and it was protected in 2007 for its bulk rather than its age. The trunk measures seven metres and five centimetres round, one of the largest black poplars recorded in Slovakia, with a crown spreading nineteen metres and a height put at around forty metres, though one record makes it a touch shorter.\n\nIt stands on open ground beside Limbasska cesta on the edge of Grinava, a district of Pezinok, near the site of the old Strapak's Mill, with no fence or gate between the road and the trunk. A Wiki Loves Earth photograph taken in July 2023 shows it still standing, still in full leaf.\n\nBlack poplar is the wild ancestor behind Europe's ornamental poplars, and it has become genuinely rare in the wild as it interbreeds with planted hybrids, which is what makes a pure specimen this size worth a protection order on its own. Grinava sits on the Bratislava to Zilina railway, and the stop that once carried the district's own name comes before Pezinok's main station, comfortably inside a half hour of the capital: an easy addition to a Bratislava day rather than a trip of its own.",
+      "verified_sources": [
+        "data/registers/slovakia-chranene-stromy.json (register_id 499, Štátna ochrana prírody SR, CC BY 4.0, publishable: true)",
+        "https://www.krizom-krazom.online/grinavsky-topol/"
+      ],
+      "access": "Free, standing beside a public road (Limbašská cesta) near a former mill; no gate or private-land indication in either source",
+      "transport": "Pezinok zastávka, a railway stop on the Bratislava-Zilina line inside the Grinava district itself (closer to Bratislava than Pezinok's main station), roughly 15 minutes by train from Bratislava hlavná stanica, then a short walk to Limbašská cesta; exact walk time from the stop to this tree not established",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
