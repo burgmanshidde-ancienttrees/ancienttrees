@@ -1,6 +1,51 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation 8, of a window an earlier attempt stopped early at 21 min with 99 unspent) - Finished the standing Hiroshima verify claim again: Tomohiro ginkgo + Mount Togo cedar, 13 to 15 trees
+
+Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
+(two standing: `hiroshima` verify and `_famous-japan` verify, ~130 min left
+on each, both with uncommitted output on disk from an earlier attempt in
+this window: `data/research/hiroshima-verified.json` held 2 fully verified
+trees with stories not yet written, `data/research/famousjapan-batch-2609-
+verified.json` was an empty array, and `data/leads/hiroshima.json` /
+`data/photo-queue.json` carried only cosmetic reformatting / a routine API-
+sweep refresh). `leads.py --ready` was empty (2692 leads, 0 READY), so per
+BRIEF_WRITING.md's precedent set repeatedly in this city this session,
+dispatched a small write-stories pass on just the 2 sunk-cost trees.
+
+**Hiroshima: 13 to 15 trees.** The Ginkgo of Tomohiro Shrine (hir_014,
+survived the shrine's catastrophic 1943 flood, which took the torii gate
+with it for 69 years) and the Shihon-sugi Four-Trunk Cedar of Mount Togo
+(hir_015, a genuine forest hike with no public transit, sources disagreeing
+on girth by 40% and age by more than double). Both are unrelated giants
+from Japan's national giant-tree register, like hir_012/hir_013, so
+rewrote the intro (trimmed to stay inside Contract C's 60-100 word floor
+after the count changed) and two FAQ answers to name four outlying giants
+instead of two. `oldest_tree_id` unchanged; the Renkoji pine (hir_013)
+remains the best-evidenced age on the page. Build (4605 pages), qa.py
+(6895 pages) and preflight.py (443 cities, 0 problems) all clean. Released
+the hiroshima claim. Logged the write pass in agent-costs.json.
+
+Rung 2 (`health.py`): Data digest flagged failing (13h old run at the
+time). Read the log: the same benign git-push race documented repeatedly
+earlier in this session (local commit succeeds, `pull --rebase` reports
+stale "up to date", push rejected by a concurrent writer, commit lost with
+the runner). Could not `gh workflow run data-digest.yml` to force a clean
+retry (403, this token lacks `workflow_dispatch` scope). Not this run's to
+fix; tomorrow's 05:15 UTC cron re-runs it as normal.
+
+The standing `_famous-japan` claim held 12 remaining ranked candidates from
+`famous_demand.py --next` (mostly near-zero measured demand, one already
+held from an earlier pass). Dispatched a verify pass on the other 11,
+writing to `data/research/famousjapan-batch0905c-verified.json`; still
+running when this entry was written, so its outcome is not reported here.
+
+Left untouched: `scripts/_tmp_update_lead.py`, a disposable scratch helper
+from an earlier attempt's _famous-japan dedup pass, untracked and harmless
+(matches the pattern already noted twice this week; permission mode
+refuses `rm` from this session).
+
 ## 2026-09-05 (continuation 7, of a window an earlier attempt stopped early at 11 min with 109 unspent) - Finished the standing Hiroshima verify claim: Ujina camphor + Renkoji pine, new oldest tree; Prague deepening dispatched
 
 Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
