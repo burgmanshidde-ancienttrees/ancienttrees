@@ -1,0 +1,36 @@
+{
+  "city": "Arnhem",
+  "leads": [
+    {
+      "candidate": "Mammoetboom (Sequoiadendron giganteum), Utrechtseweg 72",
+      "register_nr": 1678327,
+      "location": {
+        "latitude": 51.985308,
+        "longitude": 5.893284
+      },
+      "planted_band": "1880-1890",
+      "reason": "Access uncertain, not a research-bar failure. Register lists it in a 'tuin' (garden) at Utrechtseweg 72, owner_category 'publiekrechtelijke organisatie' (a public-law body) and visible='onbekend'. That address was the PGEM (later Nuon/Alliander/Liander) electricity utility's headquarters and substation complex; the original 1938 Bellevue building was demolished in 1989, and the site today functions as office and utility grounds (per rijksmonumenten.nl and arnhem-direct.nl coverage of the site's history), not an obviously open park. No source found confirms the public can walk onto these grounds without asking, so it fails hard rule 10's first test on the evidence available rather than passing or being denied outright. Also single-sourced (register only, history field 'onbekend'), so it would need both a genuine access answer and a second source before it could ship. Worth a follow-up: check whether Liander's grounds have public paths (an OSM access tag check per the Ypres technique would settle this quickly) and whether Alliander or a local heritage site names the tree specifically."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Moerascipres Park Sonsbeek (Swamp Cypress, Taxodium distichum)",
+      "register_nr": 1677482,
+      "location": {
+        "latitude": 51.991444,
+        "longitude": 5.900133
+      },
+      "reason": "Dead. Blew over in storm Ciaran on 2 November 2023, confirmed by two independent sources: the LRMB register's own history field states 'De boom is op 2 november 2023 omgewaaid tijdens de storm Ciaran' and adds that a ring count on the fallen trunk confirmed a planting date around 1835; independently, hacweekblad.eu's 'De moerascipres' article (31 Jan 2026) gives the same tree (Sonsbeek park Arnhem, planted 1835, 34m tall, 5m/500cm circumference) and says plainly 'Helaas is de boom in 2023 omgewaaid.' Never ships as a collectible entry per hard rule on dead trees; kept here only as a record in case a replanting or a still-standing companion specimen is later identified nearby."
+    },
+    {
+      "candidate": "Europese lork Sonsbeek bos (European Larch, Larix decidua)",
+      "register_nr": 1692423,
+      "location": {
+        "latitude": 51.992008,
+        "longitude": 5.904278
+      },
+      "planted_band": "1810-1820",
+      "reason": "Not a single collectible point. The register entry itself carries n_trees: 10, i.e. it designates a row/stand of ten larches along the path from the Franse Laan to the Telegenlaan in Sonsbeek forest, not one identifiable specimen. This is the avenue/whole-wood exclusion from the hard rules: there is no one obvious tree to stand at. If a future pass can identify one individual within the stand as visually distinct (thickest, oldest, or otherwise marked), it could be reconsidered as its own candidate, but that has not been attempted here."
+    }
+  ]
+}

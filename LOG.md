@@ -1,6 +1,42 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation, same window as the bomenbieb entry below) - Arnhem deepened 9 to 16 from the Sonsbeek register cluster, then Taormina found exhausted
+
+Still had window left after the bomenbieb work, so kept going per the resume
+instructions rather than stopping. Checked `scripts/city_queue.py --next`
+first: Taormina looked openable (5 register + 2 Wikidata candidates), but its
+own generated brief showed three prior passes (2026-08-27, 08-30, 08-31) had
+already found all five in-town register trees on private hotel grounds and
+the "new" Wikidata candidates were the same blocked trees plus duplicates of
+Sant'Alfio, already published. Released the claim without researching
+further: this was an exhausted hunt the queue tool doesn't yet know to skip,
+not real supply. Worth fixing `city_queue.py` so it excludes cities whose own
+leads file already blocks every candidate, so the next run doesn't retrace
+this.
+
+`scout_next.py --target` pointed at Arnhem instead: 948 LRMB register trees
+within 20km, most unmined. Picked the 10 closest to the existing cluster,
+all inside Park Sonsbeek/Zijpendaal (0.4-1.1km spread, so it stays one walk).
+7 of 10 verified and merged as arn_010-016: four Pedunculate Oaks spanning
+the 1750s-1840s (deliberately differentiated in the writing so four oaks
+don't read as one paragraph four times), a yew, a copper beech, a sweet
+chestnut. Updated intro/meta/question copy for 16 trees; the Lorentz
+Monument oak's 1750-1800 register band does not beat De Poortwachters as
+Arnhem's oldest, so `question_context` states that honestly rather than
+picking a new record.
+
+**1 confirmed dead, 1 blocked, 1 held.** A swamp cypress blew down in storm
+Ciaran, November 2023 (two independent sources, including a ring-count in
+the register's own history field). A "larch" candidate turned out to be a
+register entry for a stand of 10 trees together, not one collectible point.
+A giant sequoia on Alliander/Liander utility-company grounds is held as a
+lead pending an access confirmation neither source gave cleanly.
+
+Build and QA clean (4438 pages, 0 problems). Both verify and write passes
+ran cheap: ~9k and ~20k tokens per tree respectively, since the register
+already supplied species and planting dates for all ten candidates.
+
 ## 2026-09-05 (session, Hidde present) - Two season collections that rank themselves, and a photo answer he should see
 
 He asked whether /collections/trees-older-than-400-years was new. It is not:
