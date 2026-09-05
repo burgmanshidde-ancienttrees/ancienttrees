@@ -5153,6 +5153,22 @@
         "trees": 1,
         "note": "La Carcasa (vlc_026), a 35+-stemmed date palm in the Jardi Botanic, shipped. Three others failed only on the two-independent-sources bar (Palmera Canaria de Gran Via, Ficus de l'Hort de les Camelies: the only corroborating OSM tree nodes carried reg_ref= back to the same register row, not independent) or on hard rule 10 access (Ficus del INVASSAT, 11.58m girth, sits on a working Generalitat office premises with no evidence of public access, same pattern as the already-pulled vlc_012). Thin yield for the tokens because the pass earned it honestly rather than padding; claim released, register still has 390 unmined candidates for a future pass."
       }
+    ],
+    "2026-09-05": [
+      {
+        "target": "_famous-slovakia",
+        "kind": "verify",
+        "tokens": 145000,
+        "trees": 3,
+        "note": "Bojnice linden + Myjava linden shipped as new single-tree places, Grinava poplar joined Bratislava as a day-trip tree; Urpinska alej blocked as a 52-tree avenue; 5 other candidates held as leads."
+      },
+      {
+        "target": "_famous-lithuania",
+        "kind": "verify",
+        "tokens": 179626,
+        "trees": 5,
+        "note": "Found most of the batch already published by an earlier pass; delivered Witch's Spruce (new place Rambynas) and discovered/verified a genuine 4-tree cluster in Plunge Manor Park not in the original leads scrape."
+      }
     ]
   }
 }
