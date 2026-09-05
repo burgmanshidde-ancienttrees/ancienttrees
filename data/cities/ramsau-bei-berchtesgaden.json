@@ -1,0 +1,58 @@
+{
+  "city": "Ramsau bei Berchtesgaden",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "A German government body named this solitary lime a National Heritage Tree in 2022, one of only a small number so designated country-wide. Its own age is disputed by decades of separate measurements, from four hundred years to a claimed eleven hundred, and this page keeps the honest range rather than picking a favourite. It stands alone beside a mountain road outside Ramsau bei Berchtesgaden, reachable on foot or by pulling off the Alpenstrasse.",
+  "meta_description": "The Hindenburglinde, a Nationalerbe-Baum lime beside the Alpenstrasse near Ramsau bei Berchtesgaden, its age disputed between 400 and 1000 years.",
+  "question_meta": "Ramsau bei Berchtesgaden's remarkable tree is the Hindenburglinde, a giant lime named a German National Heritage Tree in 2022.",
+  "question_answer": "The remarkable tree at Ramsau bei Berchtesgaden is the Hindenburglinde, a large-leaved lime beside the B305 Alpenstrasse, girthed at 10.85 metres in 2025. Germany designated it a Nationalerbe-Baum, a National Heritage Tree, in 2022, one of a small national list, and estimates of its age across different experts range from 400 to as much as 1000 years.",
+  "question_context": "Sources genuinely disagree on the tree's age: the sign at the site claims 1100 years, which experts doubt, while separate assessments across four decades, from the German Tree Archive to individual dendrologists, have put it anywhere from 400 to 1000 years old, and this page keeps that full disputed range rather than choosing one figure to sound more certain than the evidence allows. Its girth has barely changed in measurements taken in 1988, 2015 and 2025, one reason experts trust it is still healthy despite losing its main branch to a heavy snow load in 1997; the resulting hollow in the trunk has been reinforced with masonry and the tree continues to grow new wood over the wound, with its crown once spreading over 900 square metres before that loss. It was originally called simply the Grosse Linde before Ramsau renamed it after Reichsprasident Paul von Hindenburg, made an honorary citizen of the town in 1933. Germany's Nationalerbe-Baum programme, which added it to a small national list in September 2022, is itself a reason to trust the tree is being watched: designation there requires the kind of documented, repeated measurement this page relies on.",
+  "hero_tree_id": "rsb_001",
+  "oldest_tree_id": "rsb_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree at Ramsau bei Berchtesgaden?",
+      "a": "The Hindenburglinde, a large-leaved lime beside the B305 Alpenstrasse, named a German National Heritage Tree (Nationalerbe-Baum) in 2022."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open beside the road near the Hotel Hindenburglinde, reachable on foot from Ramsau or by car on the B305."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. Estimates from different experts range from about 400 to 1000 years; the on-site sign's claim of 1100 years is doubted. If you know more, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rsb_001",
+      "name": "Hindenburglinde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "estimates range widely, 400 to 1000 years (disputed)",
+      "age_min": 400,
+      "age_max": 1000,
+      "girth_cm": 1085,
+      "location": {
+        "address": "An der Alpenstrasse 66 (B 305), near Hotel Hindenburglinde, Ramsau bei Berchtesgaden, Bavaria, Germany",
+        "latitude": 47.616389,
+        "longitude": 12.884444,
+        "neighbourhood": "Taubensee, Ramsau bei Berchtesgaden, Berchtesgadener Land"
+      },
+      "story": "A tape measure around this lime's trunk in June 2025 read 10.85 metres, barely different from the 10.90 metres recorded in 2015 and the 11.30 metres logged at chest height back in 1988: a tree this size has stopped changing shape at any pace a human notices. Germany named it a Nationalerbe-Baum, a National Heritage Tree, in September 2022, one of only a small national list, and it stands alone beside the B305, the Deutsche Alpenstrasse, just outside Ramsau bei Berchtesgaden.\n\nNobody agrees on how old it is. The sign on site claims 1100 years, which experts doubt; estimates from foresters and dendrologists over four decades have ranged from 400 to as much as 1000, and this page keeps the whole disputed band rather than pretending to have settled it.\n\nIt was once called simply the Grosse Linde, the Great Lime, until Ramsau made Reichsprasident Paul von Hindenburg an honorary citizen in 1933 and renamed the tree after him. Its crown once spread over 900 square metres before a heavy snow load tore off the main branch in 1997; the hollow trunk has since been reinforced with masonry, and the tree keeps growing new wood over its own wounds.\n\nA path leads to it from Ramsau through forest and meadow, or you can simply pull over on the Alpenstrasse.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Hindenburglinde",
+        "https://www.baumkunde.de/baumregister/53-hindenburglinde_bei_ramsau_nationalerbe_baum_nr18/"
+      ],
+      "access": "Free, public roadside tree beside the B305 (Deutsche Alpenstrasse) next to the Hotel Hindenburglinde; a path also leads to it from Ramsau through forest and meadow.",
+      "transport": "No public transit stop found directly at the tree; nearest access is via Ramsau bei Berchtesgaden village, from which it is reachable on foot along a marked path, or by car on the B305.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
