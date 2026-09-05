@@ -1,0 +1,58 @@
+{
+  "city": "Kremnica",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Slovakia voted this oak its Tree of the Year in 2013 and put it forward for the European title the same year, the dominant tree of a public garden that is itself a protected National Cultural Monument. Nobody has published a girth for a tree this decorated, which this page states plainly rather than guessing at. It stands free in Zechenter's Garden in the centre of this old mining and mint town, a short walk from the main square.",
+  "meta_description": "The Zechenter Garden Oak, Slovakia's Tree of the Year 2013, stands free in a protected historic garden in central Kremnica.",
+  "question_meta": "Kremnica's remarkable tree is a roughly 350 to 400 year old oak in Zechenter's Garden, Slovakia's national Tree of the Year 2013.",
+  "question_answer": "The remarkable tree in Kremnica is a Pedunculate Oak in Zechenter's Garden, a protected historic town garden. It won Slovakia's national Tree of the Year contest in 2013 and represented the country in that year's European Tree of the Year, and is dated to roughly 350 to 400 years old.",
+  "question_context": "Two sources give slightly different ages for the oak, one putting it at 350 years and another at 400; both are kept as the honest band rather than picked apart in favour of one. A girth figure appears in some informal summaries but never on a page this pass could fetch and verify directly, so it stays empty here rather than repeating an unconfirmed number; a visitor with a tape measure would settle it in a minute. Zechenter's Garden itself has been a protected National Cultural Monument since 1958, and in 2026 the town secured a 1.3 million euro EU grant to restore it, evidence the garden and its centrepiece tree remain a live civic concern rather than a forgotten corner. An old photograph shows lightning damage to the trunk at some point in its history, but nothing found says the tree has since died, and the ongoing restoration funding argues the opposite. The same official register that lists this oak also lists two yews in the same garden and two more limes elsewhere in Kremnica, so the town likely holds enough remarkable trees for a fuller page once a dedicated pass verifies them.",
+  "hero_tree_id": "kre_001",
+  "oldest_tree_id": "kre_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Kremnica?",
+      "a": "The Zechenter Garden Oak, roughly 350 to 400 years old, Slovakia's national Tree of the Year in 2013 and that year's entry in the European Tree of the Year contest."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in Zechenter's Garden, a public town garden in central Kremnica, a short walk from the main square."
+    },
+    {
+      "q": "How thick is the trunk?",
+      "a": "Unpublished. No source this page could verify gives a girth for the tree; if you measure it, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kre_001",
+      "name": "The Zechenter Garden Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 350 to 400 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": null,
+      "location": {
+        "address": "Zechenter's Garden (Zechenterova zahrada), Kremnica",
+        "latitude": 48.7024,
+        "longitude": 18.9202,
+        "neighbourhood": "Zechenter's Garden"
+      },
+      "story": "Slovakia's national tree-of-the-year vote in 2013 went to an oak growing in a town garden rather than a forest, and the town put it forward for the European title the same year. It is the dominant tree of Zechenterova zahrada, Zechenter's Garden, itself a National Cultural Monument protected since 1958, in the middle of Kremnica, a mining and mint town old enough to have minted the ducats that once financed a kingdom.\n\nAges given for it differ by fifty years: one source says 350, another 400, and both stay on the page rather than one being chosen to look more precise than the evidence allows. Nobody has published a trustworthy girth measurement either, which is unusual for a tree this decorated, so the field stays empty and open to whoever brings a tape.\n\nAn old photograph shows lightning damage to the trunk at some point in its life, and the tree carried on regardless. In 2026 the town secured 1.3 million euros in EU funding to restore the whole garden, which is not the action of a place treating its centrepiece tree as an afterthought.\n\nThe same official register that protects this oak lists two yews in the same garden and two more limes elsewhere in Kremnica, so the town may well hold enough remarkable trees for a fuller page once someone verifies them. This one stands on its own for now, free, in the town centre.",
+      "verified_sources": [
+        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/52",
+        "https://www.soler.sk/aktualne/strom-roka-2013.html"
+      ],
+      "access": "Free. Stands in Zechenter's Garden, a public historic town garden and National Cultural Monument (protected since 1958) in central Kremnica; the garden is undergoing an EU-funded restoration announced in 2026 but remains the town's public park.",
+      "transport": "In Kremnica town centre, a short walk from the main square (Stefanikovo namestie).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

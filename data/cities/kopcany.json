@@ -1,0 +1,59 @@
+{
+  "city": "Kopčany",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "A Great Moravian-era church, one of the oldest standing buildings in Slovakia, has had a lime tree beside it for roughly a tenth of its own lifetime. Local sources say the two have weathered more than two centuries together, and it shows: the church dates to the 900s, the lime to the 1780s. Slovakia voted this tree its national Tree of the Year in 2018 and sent it on to represent the country in the European contest the year after. It stands free on a quiet meadow near Skalica.",
+  "meta_description": "The Lime Tree of Kopčany, Slovakia's Tree of the Year 2018, stands beside a Great Moravian-era church, one of the country's oldest buildings.",
+  "question_meta": "Kopčany's remarkable tree is a lime beside a 10th-century church, Slovakia's national Tree of the Year 2018.",
+  "question_answer": "The remarkable tree in Kopčany is a Large-leaved Lime beside the Church of St Margaret of Antioch, dated to roughly 235 years old when measured in 2018. It won Slovakia's national Tree of the Year contest that year and represented the country in the 2019 European Tree of the Year.",
+  "question_context": "The tree's neighbour is the real headline: the Church of St Margaret of Antioch has been dated by both dendrochronology and radiocarbon analysis to the second half of the 10th century, roughly 925 CE, making it one of the oldest standing structures in Slovakia and a National Cultural Monument since 1995. The lime beside it is younger by about seven centuries but has still stood there for close to a tenth of the church's own life, on a quiet meadow at the edge of Kopcany's territory near Skalica. The Slovak arborist society ISA-Arbor measured it at 210 centimetres round and 20 metres tall when it won the national vote in 2018, with 9,526 votes cast in its favour, before it went on to the European Tree of the Year contest in 2019. Local sources describe the tree and the church as having protected each other through weather for more than two hundred years, a line worth repeating because it captures the pairing rather than because any record proves the tree has literally shielded the building. No source found states the tree has since died or been felled.",
+  "hero_tree_id": "kop_001",
+  "oldest_tree_id": "kop_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Kopčany?",
+      "a": "A Large-leaved Lime beside the Church of St Margaret of Antioch, roughly 235 years old, Slovakia's national Tree of the Year in 2018."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on a meadow beside the church, reachable on foot; the church building itself may keep limited opening hours."
+    },
+    {
+      "q": "Why is the church next to it significant?",
+      "a": "It dates to the second half of the 10th century and is one of the oldest standing buildings in Slovakia, a National Cultural Monument since 1995."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kop_001",
+      "name": "The Lime Tree of Kopčany",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 235 years (as measured in 2018)",
+      "age_min": 235,
+      "age_max": 245,
+      "girth_cm": 210,
+      "height_m": 20,
+      "location": {
+        "address": "Beside the Church of St Margaret of Antioch (Kostol svatej Margity Antiochijskej), Kopcany, Skalica district",
+        "latitude": 48.79625,
+        "longitude": 17.10859,
+        "neighbourhood": "Kopcany, on the meadow at the edge of the village territory"
+      },
+      "story": "The building beside this lime is the real headline. The Church of St Margaret of Antioch has been dated by both dendrochronology and radiocarbon analysis to the second half of the 10th century, roughly 925 CE, which makes it one of the oldest standing structures in Slovakia, a Great Moravian-era survivor now protected as a National Cultural Monument. The tree is younger by about seven centuries and has still been standing beside it for close to a tenth of the building's own life.\n\nSlovakia's arborist society measured the lime at 210 centimetres round and 20 metres tall when it won the national Tree of the Year vote in 2018, taking 9,526 votes, and the country put it forward for the European Tree of the Year the following year. It stands on a quiet meadow at the edge of Kopcany's territory near Skalica, the church and the tree together on open ground rather than fenced off from each other.\n\nLocal sources like to say the two have protected each other and weathered more than two centuries side by side, a line that captures the pairing rather than a claim either has literally shielded the other. Nothing found says the lime has died or been felled since its award, and an arborist's own assessment is the evidence it was thriving as recently as 2018.\n\nFree to see, on foot from the village, no restriction.",
+      "verified_sources": [
+        "https://www.isa-arbor.sk/tohtorocny-titul-strom-roka-ziskala-nadherna-200-rocna-lipa-z-kopcian/",
+        "https://sk.wikipedia.org/wiki/Kostol_svatej_Margity_Antiochijskej_(Kopcany)"
+      ],
+      "access": "Free. Stands in the open on a quiet meadow beside the Church of St Margaret of Antioch, a National Cultural Monument (registered 1995) and an actively visited pilgrimage/heritage site; the tree and churchyard are outdoors and reachable on foot, though the church building itself may keep limited opening hours.",
+      "transport": "Roughly 800m northwest of Kopcany village, near Skalica; no public transport reaches the meadow directly, it is a short walk or drive from the village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
