@@ -13,6 +13,82 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-05
+
+Reviewed commits since the last review (61cc80c6, 2026-09-04 ~11:00 UTC)
+through c7d4847e (~227 commits): almost entirely assembly-line work
+(single-tree "famous-tree" places published across Japan, Germany, the UK,
+Poland, Slovakia, Lithuania; Arnhem/Park Sonsbeek deepened; two
+self-ranking season collections built by Hidde in session; reader photos
+and a reader-GPS register match merged into Baarn). Ran `python3
+scripts/qa.py` (6617 pages, clean) and `python3 scripts/health.py`
+(green except the already-tracked Data digest failure, which health.py's
+own rung-2 line already surfaces to runs). Spot-checked the new pages
+(`/takeo`, `/scheessel`, `/newtown`, `/aberford`, `/moffat`, the merged
+`/bristol` and `/baarn`) and the two new collections
+(`/collections/autumn-colour-trees`, `/collections/autumn-harvest-trees`),
+plus the homepage and four other pages at random.
+
+**WARN — Scheessel's own page spells the town two different ways.** The
+Gerichtslinde tree's `story` field (data/cities/scheessel.json) uses
+"Scheeßel" (with eszett) twice: "Scheeßel's Femegericht met..." and
+"Scheeßel is a small town...". Every other field on the same city
+(`intro`, `question_context`, both FAQ entries, the title, and the rest of
+the same story) spells it "Scheessel". Confirmed in the built HTML: both
+`site/dist/scheessel.html` and
+`site/dist/scheessel/gerichtslinde-of-scheessel.html` render "Scheeßel"
+three times against "Scheessel" 29-36 times. This is not the English-exonym
+rule (there is no exonym here, both are the local spelling); it is one
+writer typing the town's name two different ways within a single document.
+A reader would notice two spellings of the same place in one story, which
+TONE_OF_VOICE.md's "written for a human first" standard and P3's
+uniqueness-and-care bar both argue against. Cheap fix: pick one spelling
+(city-aliases.json and every other field already say "Scheessel").
+
+**WARN — the Gerichtslinde of Scheessel is the one single-tree place
+published today that does not obviously clear the "would somebody travel
+specifically for THIS ONE TREE" bar (DECISIONS.md 2026-08-31).** The other
+four single-tree places shipped in the same 24 hours each carry an
+independent credential that makes the fame case for itself: Newtown's
+Brimmon Oak (runner-up, European Tree of the Year 2017, national road-
+rerouting campaign), Aberford's Nellie's Tree (UK Tree of the Year 2018,
+in Flora Britannica), Moffat's Survivor Tree (Scotland's Tree of the Year
+2020, symbol of the Carrifran restoration), Takeo's Great Camphor (named
+one of Japan's largest trees by girth, a shrine built inside it). Scheessel's
+Gerichtslinde has two registers agreeing it is large (about 7m girth) and
+disagreeing on its age by three centuries, and a genuinely interesting
+history (a court sat under it from 1288), but no award, campaign, or
+superlative distinguishes it from the many other "Gerichtslinde" trees
+recorded across Germany, and its own story is honest that the age is
+unsettled. This is a judgment call a run is entitled to make (CLAUDE.md:
+"a judgement call about whether a tree is good enough never blocks
+publication"), so this is not a call to retire it, only a flag that this
+one entry's fame case reads noticeably thinner than its four siblings
+published the same day, worth a second look by whichever run or session
+next touches Scheessel.
+
+**NOTE, APP — the collection tab's own heading disagrees with the tab bar
+it sits under.** `collection-tab.png` (rotated app screenshot, signed-out
+state): the bottom tab bar item reads "My trees" (also the label used on
+the map's own filter chip in `collect-intro.png`/`collect-away.png"), but
+the sheet's own heading directly above the stats reads "Your trees". Minor,
+and possibly deliberate voice (label short, heading conversational), but it
+is exactly the "title disagrees with the tab it sits under" pattern this
+review is asked to watch for, so naming it rather than silently editorialising.
+
+Everything else read clean: no em dashes or banned words in the sampled
+pages (`grep -c "—"` zero across all five new city pages), no superlative
+collisions, no builder-speak toward the visitor, the new register-upgraded
+Baarn pin and its `notes` field correctly document the provenance chain
+(reader GPS to register coordinate), the two new season collections both
+carry a hand-written 100-150-word intro and a real `generated` filter
+rather than a bare template, and the four other randomly sampled pages
+(`/bristol`, homepage, `/collections/autumn-colour-trees`,
+`/collections/autumn-harvest-trees`) all render with correct counts and
+titles.
+
+---
+
 ## 2026-09-04
 
 Reviewed commits since the last review (f66c7324, 2026-09-03 11:19 UTC)
