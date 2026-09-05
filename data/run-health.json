@@ -5750,6 +5750,32 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-05T21:46:39+00:00",
+   "date": "2026-09-05",
+   "run_id": "33994005165",
+   "minutes": 35.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 257,
+   "denials": 28,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(iconv), Bash(if), Bash(nohup), Bash(printenv), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 20605655,
+   "claims_held": [
+    "_famous-japan"
+   ],
+   "commits": 10,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "hiroshima",
+     "trees": 2
+    }
+   ],
+   "trees": 2,
+   "logged": true
   }
  ],
  "schedule_changes": [
