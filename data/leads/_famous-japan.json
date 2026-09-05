@@ -228,9 +228,12 @@
         "https://commons.wikimedia.org/wiki/File:Kamo-no-Okusu-1.jpg",
         "https://commons.wikimedia.org/wiki/File:Kamo-no-Okusu-2.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Camphor Tree (Camphora sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved": "2026-09-05: duplicate. Already published as hmy_001 The Great Camphor of Kamo at 34.04084,133.93203 in data/cities/higashimiyoshi.json, the identical coordinate. Not delivered.",
+      "delivered_id": "hmy_001",
+      "delivered_city": "higashimiyoshi"
     },
     {
       "name": "Kamō no Kusu",
@@ -280,9 +283,12 @@
         "https://commons.wikimedia.org/wiki/File:Kenchoji_no_byakushin.jpg",
         "https://commons.wikimedia.org/wiki/File:%E5%BB%BA%E9%95%B7%E5%AF%BA_-_panoramio_(2).jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Juniper (Juniperus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved": "2026-09-05: duplicate. Already published as kmk_001 The Junipers of Kenchoji (Chinese Juniper) at 35.331167,139.554361 in data/cities/kamakura.json, about 12m from this candidate coordinate. Same tree, the Byakushin/juniper row at Kenchoji. Not delivered.",
+      "delivered_id": "kmk_001",
+      "delivered_city": "kamakura"
     },
     {
       "name": "Kitahanazawa no hananoki",
@@ -406,7 +412,10 @@
         "https://commons.wikimedia.org/wiki/File:Hinpun_Gajumaru.jpg",
         "https://commons.wikimedia.org/wiki/File:Nago_Banyan_tree.jpg"
       ],
-      "status": "lead"
+      "status": "resolved",
+      "resolved": "2026-09-05: duplicate. Already published as nag_001 Nago no Hinpun Gajumaru at the identical coordinate (26.587349,127.985938) in data/cities/nago.json, its own single-tree place, species currently recorded as generic Fig (Ficus sp.). This pass's research independently confirms species as banyan/Ficus microcarpa (Japanese common name gajumaru) via ja.wikipedia and the national Bunkacho register (designated national Natural Monument 1997-09-02, matching coordinate 26.587337,127.985947); also found a dated alive-now event, a car struck the tree on 2026-08-08 during Typhoon 13, minor damage, tree resecured with wire, confirmed still standing (Okinawa Times, Ryukyu Shimpo). Left as a note for a future curation pass rather than edited directly, since this pass does not edit city files. Not delivered as a new record.",
+      "delivered_id": "nag_001",
+      "delivered_city": "nago"
     },
     {
       "name": "Nagoya-jo no kaya",
@@ -417,9 +426,12 @@
         "https://commons.wikimedia.org/wiki/File:Kaya_tree_and_Nishinomaru_Exhibition_Hall_in_Nagoya_Castle.JPG",
         "https://commons.wikimedia.org/wiki/File:Kaya_tree_in_front_of_Nishinomaru_Exhibition_Hall_in_Nagoya_Castle.JPG"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Japanese Torreya (Torreya sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved": "2026-09-05: duplicate. Already published as ngy_001 The Kaya of Nagoya Castle (Japanese Nutmeg-yew) at 35.184083,136.897722 in data/cities/nagoya.json, about 35m from this candidate coordinate; also flagged by passcheck.py as within 80m of a live tree. Not delivered.",
+      "delivered_id": "ngy_001",
+      "delivered_city": "nagoya"
     },
     {
       "name": "Neagarinomatsu at Kenrokuen",
@@ -430,7 +442,10 @@
         "https://commons.wikimedia.org/wiki/File:131109_Kenrokuen_Kanazawa_Ishikawa_pref_Japan04s3.jpg",
         "https://commons.wikimedia.org/wiki/File:Kanazawa_Castle,_Kanazawa_City;_April_2016_(01).jpg"
       ],
-      "status": "lead"
+      "status": "resolved",
+      "resolved": "2026-09-05: duplicate. Already published as kan_004 The Raised-Root Pine (Japanese Black Pine) at 36.561667,136.663333 in data/cities/kanazawa.json, about 90m from this candidate coordinate. Raised-Root Pine is the English name already in use for Neagari-no-matsu, Kenrokuen's single famous root-raised pine. Not delivered.",
+      "delivered_id": "kan_004",
+      "delivered_city": "kanazawa"
     },
     {
       "name": "Negoya Jinja no Okeyaki",
@@ -733,9 +748,12 @@
         "https://commons.wikimedia.org/wiki/File:Sacred_tree_%22Takeo_no_Okusu%22_of_Takeo_Shrine_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Sacred_tree_%22Takeo_no_Okusu%22_of_Takeo_Shrine_2.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Camphor Tree (Camphora sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved": "2026-09-05: verified and delivered as a standalone single-tree destination candidate (2026-08-31 exception) to data/research/famousjapan-2026-09-05-d-verified.json, id tak_001, suggested place name Takeo. Not a duplicate: the only other Takeo City tree we publish, kwg_001 in data/cities/kawago.json, is a different camphor about 7.5 km away and too far to share a walk.",
+      "delivered_id": "tak_001",
+      "delivered_city": "takeo (not yet created)"
     },
     {
       "name": "Tamatoriyama-no-Ōkatsura",
