@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -5295,6 +5295,15 @@
         "tokens": 0,
         "trees": 9,
         "note": "session merge: 5 into existing cities (contract-fixed 3 intros/meta over limit), 4 new city files, leads cleanup, tree_index rebuild, build+qa+preflight clean",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "famousuk-batch-a",
+        "kind": "write",
+        "tokens": 47000,
+        "trees": 4,
+        "note": "4 famous-UK stories, 245-248 words each, 1 best_time; ~11.8k tokens per tree",
         "wasted": 0,
         "brief_wrong": false
       }
