@@ -10,6 +10,35 @@
       },
       "planted_band": "1880-1890",
       "reason": "Access uncertain, not a research-bar failure. Register lists it in a 'tuin' (garden) at Utrechtseweg 72, owner_category 'publiekrechtelijke organisatie' (a public-law body) and visible='onbekend'. That address was the PGEM (later Nuon/Alliander/Liander) electricity utility's headquarters and substation complex; the original 1938 Bellevue building was demolished in 1989, and the site today functions as office and utility grounds (per rijksmonumenten.nl and arnhem-direct.nl coverage of the site's history), not an obviously open park. No source found confirms the public can walk onto these grounds without asking, so it fails hard rule 10's first test on the evidence available rather than passing or being denied outright. Also single-sourced (register only, history field 'onbekend'), so it would need both a genuine access answer and a second source before it could ship. Worth a follow-up: check whether Liander's grounds have public paths (an OSM access tag check per the Ypres technique would settle this quickly) and whether Alliander or a local heritage site names the tree specifically."
+    },
+    {
+      "candidate": "Witte paardenkastanje Apeldoornseweg (three trees, register nrs 1697141 at no. 44, 1695418 at no. 42a, 1695382 at no. 40)",
+      "register_nr": [1697141, 1695418, 1695382],
+      "location": {"latitude": 51.98692, "longitude": 5.91042},
+      "planted_band": "1880-1930",
+      "reason": "Access uncertain. Register describes all three as a row of three horse chestnuts of similar age, one per back garden ('achtertuin') of three separate private houses on Apeldoornseweg, owner_category 'particulier'. 'visitable: ja' in the register appears to mean the assessor could visit rather than that the public can; no source found describes street-side visibility for any of the three the way the Velperweg copper beech's own history text does. Worth a follow-up: check whether the crowns are visible from Apeldoornseweg itself (view-only candidate per the Hobart exception) before researching further; not pursued this pass given three near-identical private specimens in one small area.",
+      "planted_band_note": "1880-1890 for no.44, 1920-1930 for nos. 40 and 42a per the register, despite the history text calling all three the same age; register self-contradicts and that discrepancy should be resolved by a future pass rather than picked here."
+    },
+    {
+      "candidate": "Gewone plataan Noordpad (register nr 1692212)",
+      "register_nr": 1692212,
+      "location": {"latitude": 51.990242, "longitude": 5.921355},
+      "planted_band": "1890-1900",
+      "reason": "Access uncertain. Register places the entrance to it via 'Noordpad 41, achter de school Agnietenstraat 99' (behind the school at Agnietenstraat 99); setting is listed as 'plantsoen' (public green strip) and owner as gemeente, but the entrance description suggests it may sit on or beside school grounds rather than open street frontage. Worth an OSM access-tag check (per the Ypres technique) before researching further; not pursued this pass given the ambiguity."
+    },
+    {
+      "candidate": "Libanonceder Velperweg 46 (Cedar of Lebanon, register nr 1677469)",
+      "register_nr": 1677469,
+      "location": {"latitude": 51.986942, "longitude": 5.926187},
+      "planted_band": "1890-1900",
+      "reason": "Private garden (owner_category particulier), register marks visitable='nee'. Unlike the Velperweg copper beech (register nr 1690690, delivered this pass as a view-only entry), this entry's history field is empty ('onbekend') and gives no specific claim of street visibility, so the Hobart view-only exception cannot be applied on the evidence in hand. Worth a follow-up: check Velperweg 46's street frontage directly (satellite imagery or a visit) for a genuine view of the crown before treating this as blocked outright."
+    },
+    {
+      "candidate": "Wintereik Sonsbeekpark bij Grote Vijver (Sessile Oak, register nr 1692422)",
+      "register_nr": 1692422,
+      "location": {"latitude": 51.994576, "longitude": 5.896595},
+      "planted_band": "1840-1850",
+      "reason": "Not researched this pass, time ran out. Register places it in Sonsbeekpark along the Parkweg near the Grote Vijver (the park's main pond), owner gemeente, visitable ja; looks like a straightforwardly public candidate on the evidence already in the register, worth prioritising in the next Arnhem pass."
     }
   ],
   "blocked": [
@@ -31,6 +60,27 @@
       },
       "planted_band": "1810-1820",
       "reason": "Not a single collectible point. The register entry itself carries n_trees: 10, i.e. it designates a row/stand of ten larches along the path from the Franse Laan to the Telegenlaan in Sonsbeek forest, not one identifiable specimen. This is the avenue/whole-wood exclusion from the hard rules: there is no one obvious tree to stand at. If a future pass can identify one individual within the stand as visually distinct (thickest, oldest, or otherwise marked), it could be reconsidered as its own candidate, but that has not been attempted here."
+    },
+    {
+      "candidate": "Witte paardenkastanje Bouriciusstraat 9 (Horse Chestnut, register nr 1690258)",
+      "register_nr": 1690258,
+      "location": {"latitude": 51.985762, "longitude": 5.900889},
+      "planted_band": "1900-1910",
+      "reason": "Private land, register explicitly marks visitable='nee'. No evidence of street visibility found."
+    },
+    {
+      "candidate": "Noorse esdoorn Bouriciusstraat 15 (Norway Maple, register nr 1690428)",
+      "register_nr": 1690428,
+      "location": {"latitude": 51.985867, "longitude": 5.900661},
+      "planted_band": "1900-1910",
+      "reason": "Private back garden (achtertuin), register explicitly marks visitable='nee'. The register's own history field also admits the coordinates were entered wrong ('van deze boom zijn de coordinaten niet goed ingevoerd, boom staat in werkelijkheid in de binnenstad van Arnhem'), so even the location is unreliable as recorded. Never ship on this data; a future pass would need to relocate the actual tree first."
+    },
+    {
+      "candidate": "Twaalf Apostelen, Sonsbeek (originally 12, now 10 Common Lime trees on the 'Apostelenberg' mound, register nr 1692813)",
+      "register_nr": 1692813,
+      "location": {"latitude": 51.992061, "longitude": 5.908409},
+      "planted_band": "1880-1890",
+      "reason": "Not a single collectible point under the same reasoning as the already-blocked Sonsbeek larch stand: register carries n_trees=10, a circle of Dutch lime trees on a purpose-built 19th-century lookout mound, locally named for a legend ('Twaalf Apostelen') but still an ensemble rather than one specimen. Register additionally marks visible='nee', which is a second reason for caution: unclear whether a visitor can actually see the trees from a path. Kept as a lead rather than fully blocked because a compact, single-mound, legend-named grove is closer to the 'compact famous ensemble with one obvious place to stand' exception than a linear avenue is; a future pass could verify the legend and the mound's visibility/access (an OSM check per the Ypres technique) and consider shipping it as one ensemble entry, the way Lomanstraat-style tunnels and avenues have shipped elsewhere. Not attempted this pass for lack of time."
     }
   ]
 }
