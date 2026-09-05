@@ -1,0 +1,62 @@
+{
+  "city": "Myjava",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "On a side street in Turá Lúka, a district on the edge of Myjava, stands what both the town and Slovakia's own protected-trees record call probably the thickest tree in the country: a lime over ten metres round, hollow enough that local memory says wartime partisans hid inside its trunk. It came third nationally in the 2009 Tree of the Year competition, and the prize money went straight into its own upkeep.",
+  "meta_description": "The Linden at U Belanských in Myjava, Slovakia: over 10 metres round, probably the country's thickest tree, with a wartime partisan legend.",
+  "question_meta": "Myjava's mapped tree is the Linden at U Belanských, a hollow lime probably the thickest tree in Slovakia.",
+  "question_answer": "Myjava's mapped tree is the Linden at U Belanských (Lipa u Belanských), a large-leaved lime in the Turá Lúka district. At 10.15 metres round, both the town of Myjava and an independent Slovak protected-trees record call it very probably the thickest tree in the country.",
+  "question_context": "The tree stands on a side street in the U Belanských settlement, on the boundary between two land parcels rather than in anyone's garden, with no gate or fee mentioned by either source. Both sources put its age at around 620 years and repeat the same local legend: that partisans hid inside its hollow trunk during the war. Despite the huge girth it is a modest 16 metres tall with an 11-metre crown, having put its growth into width rather than height. The town's own page says it was declared a protected natural monument in 1990; the independent protected-trees record gives 1996, a minor discrepancy in the paperwork rather than a factual conflict. Both agree a conservation programme was written for it in 2002. In 2009 it placed third nationally in Ekopolis's Tree of the Year competition and won 333 euros, earmarked for its own maintenance. It is a large-leaved lime, the same species as several other veteran Slovak trees on this site, and the two sources' GPS readings sit within metres of each other, which is why the pin here is marked confirmed rather than approximate.",
+  "hero_tree_id": "myj_001",
+  "oldest_tree_id": "myj_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "At 10.15 metres round it is very probably the thickest tree in Slovakia, and its hollow trunk carries a local legend of wartime partisans hiding inside it."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Both sources that describe it put its age at around 620 years."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on open ground beside a residential side street, with no gate or fee mentioned by either source."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands in the Turá Lúka district on the western edge of Myjava town; there is no rail station in Myjava itself, so it is reached by local road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "myj_001",
+      "name": "The Linden at U Belanských",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 620 years",
+      "age_min": 600,
+      "age_max": 650,
+      "girth_cm": 1015,
+      "location": {
+        "address": "U Belanských settlement, Turá Lúka (part of Myjava), beside a side street near house no. 564",
+        "latitude": 48.727113,
+        "longitude": 17.522182,
+        "neighbourhood": "Turá Lúka, Myjava"
+      },
+      "story": "Slovakia's thickest tree is hollow, and during the war partisans are said to have hidden inside it. The trunk runs 10.15 metres round at chest height, a figure the town of Myjava and the Slovak protected-trees record agree on to the centimetre, and it is very probably the largest girth in the country. What sits on top of it is modest: 16 metres of tree, a crown 11 metres across. This lime spent its growth on width.\n\nIt stands on a side street in U Belanských, a scatter of houses in the Turá Lúka district on the western edge of Myjava, on the line between two land parcels rather than in anybody's garden. Both sources put its age at around 620 years, and both tell the partisan story, which is the one episode from all those centuries that anyone here still repeats.\n\nThe paperwork disagrees mildly about when the state took an interest: the town says it was declared a protected natural monument in 1990, the protected-trees record says 1996. They agree that a conservation programme was written for it in 2002. In 2009 it came third in the national Tree of the Year competition run by Ekopolis and won 333 euros, earmarked for its own upkeep.\n\nFor a tree with a cavity big enough to conceal a grown man, that is a small budget and a very specific one. It is still standing, still protected, still being looked after.",
+      "verified_sources": [
+        "https://www.myjava.sk/volny-cas/turisticke-ciele/lipa-u-belanskych-lipa-velkolista-1832sk.html (official Myjava town site)",
+        "https://www.krizom-krazom.online/lipa-u-belanskych/ (independent Slovak protected-trees resource, with its own GPS reading)"
+      ],
+      "access": "Free; stands beside a side street in the residential U Belanských settlement of Turá Lúka, on the edge of two land parcels. No gate or fee mentioned by either source, and its coordinates from krizom-krazom.eu (48.72716, 17.52227) sit within metres of this lead's own pin, consistent with a roadside tree rather than one set back on private ground.",
+      "transport": "In the Turá Lúka district on the western edge of Myjava town; nearest access is by local road, no rail station in Myjava itself",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

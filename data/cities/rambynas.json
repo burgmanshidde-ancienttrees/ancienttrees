@@ -1,0 +1,67 @@
+{
+  "city": "Rambynas",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "In Rambynas Regional Park, a single Norway spruce trunk breaks into eighteen separate stems at knee height and climbs together to 32 metres, a branching form specialists say has no known match anywhere in Europe. Local legend calls it the Witch's Spruce, named Lithuania's Tree of the Year in 2017 and reached today by a boardwalk built specifically to bring visitors to it.",
+  "meta_description": "The Witch's Spruce in Rambynas Regional Park, Lithuania: one trunk splitting into 18 stems, a form found nowhere else, 2017 Tree of the Year.",
+  "question_meta": "Rambynas's mapped tree is the Witch's Spruce, a Norway spruce splitting into 18 stems from one trunk.",
+  "question_answer": "Rambynas's mapped tree is the Witch's Spruce (Raganų eglė), a Norway spruce that grows as a single stem before splitting into eighteen separate trunks at about 0.8 metres up. Specialists describe it as the only spruce of this form known in Lithuania, and possibly in Europe.",
+  "question_context": "The tree stands inside Rambynas Regional Park near Vilkyskiai, reached by a raised boardwalk from a signposted roadside parking area built to be accessible to visitors with disabilities. Its estimated age is 160 to 180 years. Two legends explain the name: that witches gathered at the nearby Sidabrakalnis hillfort and stuck their brooms into the young spruce while luring local men away, or that Napoleon slashed the treetop with his sword in a fury while retreating from Russia across the Nemunas in 1812. Botanists suspect the stranger explanation is duller, deliberate shaping or early damage. In 1963 naturalist Eugenija Simkunaite, herself nicknamed a witch, visited and joked the tree should be given to her once it was felled; it has outlasted her. A storm broke off one of the eighteen stems in November 2007, and in 2017 foresters restored the soil around its roots with fungal-inoculated sawdust and fenced the ground, the same year it was voted Lithuania's Tree of the Year.",
+  "hero_tree_id": "rmb_001",
+  "oldest_tree_id": "rmb_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "A single trunk splits into eighteen separate stems that climb together to 32 metres, a form specialists say is unmatched by any other spruce in Lithuania, and possibly in Europe."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimated at 160 to 180 years."
+    },
+    {
+      "q": "Where does the name come from?",
+      "a": "Local legend says witches stuck their brooms into the young spruce at a nearby hillfort. A rival story credits Napoleon with slashing its top off with his sword during the 1812 retreat from Russia."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no fee or restriction; a boardwalk built to be accessible leads to it from a signposted roadside parking area."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no public transport. By car from Vilkyskiai, take the road toward Sereitlaukis; signs mark the parking spot about 200 metres past the town boundary, with a boardwalk leading roughly 150 metres further to the tree."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rmb_001",
+      "name": "The Witch's Spruce",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "roughly 160 to 180 years",
+      "age_min": 160,
+      "age_max": 180,
+      "girth_cm": 500,
+      "height_m": 32,
+      "location": {
+        "address": "Rambynas Regional Park, Silute Forest District, Rambynas forestry block 83 plot 53, about 2 km southeast of Vilkyskiai, Pagegiai municipality, Lithuania",
+        "latitude": 55.10307,
+        "longitude": 22.14684,
+        "neighbourhood": "Rambynas Regional Park, near Vilkyskiai"
+      },
+      "story": "One trunk, eighteen stems. The Witch's Spruce rises as a single stem and then, at about knee height, breaks into eighteen separate trunks that climb together to 32 metres. Specialists who have examined it say no other Norway spruce in Lithuania, and none they know of in Europe, grows this way. The five-metre girth is measured at that split rather than at chest height, which is why the figure sounds larger than the tree looks.\n\nFolklore offers two explanations and prefers the first. Witches gathered at the Sidabrakalnis hillfort nearby, the story goes, and stuck their brooms into the young spruce while they went off luring local men. The rival version credits Napoleon, who is said to have slashed the top out of it with his sword in a temper while crossing the Nemunas on the retreat from Russia in 1812. Botanists suspect something duller: that somebody shaped it deliberately, or that early damage did it.\n\nIn 1963 the naturalist Eugenija Simkunaite came to see it and, since people were already calling her a witch, suggested they hand the tree over to her once it was felled. It has outlasted her. A storm broke off one of the eighteen stems in November 2007, and in 2017 foresters rebuilt the soil around its roots with sawdust carrying mycorrhizal fungi and fenced the ground off. Lithuania voted it Tree of the Year the same year. Its age is put at 160 to 180 years, which is an estimate rather than a count.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Ragan%C5%B3_egl%C4%97",
+        "https://alkas.lt/2017/01/17/sutvarkyta-raganu-egles-aplinka/"
+      ],
+      "access": "Free. Stands inside Rambynas Regional Park on managed forest/park land, reached by a raised boardwalk from a signposted roadside parking area (the site is explicitly built to be accessible to visitors with disabilities). No fee or restriction found in either source.",
+      "transport": "No public transport. By car: from Vilkyskiai take the road toward Sereitlaukis; about 200 m past the town boundary marker (road RK4229) two roadside signs mark 'Lankytina vieta 1.6 km' (point of interest, 1.6 km) and a parking spot 100 m further; from the car park a boardwalk leads roughly 150 m more through forest to the tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "city": "Plunge",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Plunge Manor Park, laid out around the Oginskiai Palace, holds four separately named state-protected trees within a few hundred metres of each other. Perkunas Oak carries a lightning scar and a thunder-god legend; Aukstasis Oak, the tallest tree in the park, survived a lightning strike of its own; the Mykolas Oginskis Linden anchors a ring of planted limes; and the Laikrodine Oak, ailing but still standing, watches over the old clock-house that is now the town library.",
+  "meta_description": "Four protected trees in Plunge Manor Park, Lithuania: two lightning-scarred oaks, a founding lime and the park's tallest tree, all a short walk apart.",
+  "question_meta": "Plunge's mapped trees are four state-protected veterans of Plunge Manor Park: Perkunas Oak, Aukstasis Oak, the Mykolas Oginskis Linden and Laikrodine Oak.",
+  "question_answer": "Plunge's mapped trees are four state-protected veterans standing within a few hundred metres of each other in Plunge Manor Park: Perkunas Oak, the park's oldest oak and the only one documented since 1960; Aukstasis Oak, the park's tallest tree; the Mykolas Oginskis Linden, the founding tree of a planted lime ring; and Laikrodine Oak, a declining, lightning-split veteran beside the old clock-house.",
+  "question_context": "All four stand inside the 58.3-hectare public park surrounding the Oginskiai Palace, now home to the ticketed Samogitian Art Museum; the park grounds themselves are free and carry a numbered self-guided heritage trail. Perkunas Oak, protected since 1960 and raised to republican significance in 1987, is the park's oldest documented tree and its name recalls the pre-Christian thunder god, tied to two competing legends about a lightning strike that scarred its trunk. The other three, Aukstasis Oak, the Mykolas Oginskis Linden and Laikrodine Oak, were all listed as state-protected botanical heritage objects together in 2016, each measured more than once by disagreeing surveys, which is why this page states a range rather than a single figure for their height. Aukstasis Oak and the Mykolas Oginskis Linden stand about 60 metres apart in the park's north-western corner; Laikrodine Oak stands 200 metres south-east of Perkunas Oak, beside the old clock-house that is now the town library. None of the four has a recorded age beyond legend; readers who know one are asked to say so.",
+  "hero_tree_id": "plg_001",
+  "oldest_tree_id": "plg_001",
+  "faq": [
+    {
+      "q": "What is special about these trees?",
+      "a": "One manor park holds four separately named, state-protected veteran trees within a short walk of each other: two lightning-struck oaks, the park's tallest tree and the founding lime of a planted ring."
+    },
+    {
+      "q": "How old are they?",
+      "a": "None has a recorded age. Perkunas Oak is documented as the park's oldest, protected since 1960, but even it carries no dated figure; the others were only listed as protected in 2016."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, the park grounds are free to walk; only the palace building, now the Samogitian Art Museum, charges admission."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A short walk from Plunge town centre and Plunge railway station, on the Siauliai to Klaipeda line."
+    }
+  ],
+  "trees": [
+    {
+      "id": "plg_001",
+      "name": "Perkūnas Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 486,
+      "height_m": 26,
+      "location": {
+        "address": "Plunge Manor Park (Oginskiai Park), central part of the park beside the Oginskiai Palace (Samogitian Art Museum), Plunge, Lithuania",
+        "latitude": 55.917376,
+        "longitude": 21.843501,
+        "neighbourhood": "Plunge Manor Park, Plunge"
+      },
+      "story": "The scar running down this trunk is the reason for the name. Lithuanians call it Perkunas's oak, after the pre-Christian thunder god, and the lightning damage is still there to look at.\n\nTwo legends explain how it was struck and neither can be checked. In the first, a vestal named Galinda wept under the oak for a lover who had ridden off against the Teutonic Knights and never came back, and Perkunas hit the tree while she was weeping. In the second, the sacred fire kept on this spot was put out when Samogitia was Christianised, and the god struck in anger at the loss. The ground here is said to have been an alka, a pre-Christian sacred grove.\n\nThe documented part is shorter. It is the oldest oak in Plunge Manor Park, 4.86 metres round measured at 0.9 metres, 26 metres tall, protected as a nature monument since 1960 and raised to republican significance in 1987, decades before the park's three other protected trees were listed in 2016. Maria Skuzewska, wife of Duke Mykolas Oginskis, is remembered by old residents for staging plays for children under it, and a sundial once stood behind it above the Babrungas valley.\n\nIt is winding down. The crown spreads about 25 metres and carries only around 60 percent of its leaves. Nobody has ever put a number on its age, legend aside, so if you have seen one recorded, tell us. Stop 10 on the park trail, beside the palace.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Perk%C5%ABno_%C4%85%C5%BEuolas",
+        "https://plungesparkas.lt/lt/turas/kulturos-turas/perkuno-azuolas"
+      ],
+      "access": "Free. Stands in the central part of Plunge Manor Park, a public town park (58.3 ha) surrounding the Oginskiai Palace; the palace itself now houses the ticketed Samogitian Art Museum, but the grounds are an open park with a numbered self-guided nature/heritage trail (this tree is stop 10) and a Ciurlionis monument elsewhere in the same park. No fee to walk the park.",
+      "transport": "In the town of Plunge, Telsiai county, north-west Lithuania; a short walk from the town centre and Plunge railway station (on the Siauliai-Klaipeda line).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "plg_002",
+      "name": "Aukštasis Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 445,
+      "height_m": 31,
+      "location": {
+        "address": "Plunge Manor Park, near a small pond in the north-western corner of the park, close to Parko gatve 8, Plunge, Lithuania",
+        "latitude": 55.917032,
+        "longitude": 21.83549,
+        "neighbourhood": "Plunge Manor Park, Plunge"
+      },
+      "story": "Nobody agrees on how tall the tallest tree in Plunge Manor Park is. The state register of protected areas says 30.5 metres. A State Forest Service survey in 2016 made it 33. The park's own visitor trail page prints 27.2. All three are measuring the same oak, which is called Aukstasis, the Tall One, because it out-tops everything else growing here.\n\nThe girth is less contested, 4.45 metres at chest height. The 2016 survey also recorded what a height figure hides: a split down the trunk where lightning went through, a cavity four metres long and a metre across on the north-west side, thick dead limbs snapped off eight or nine metres up, and a crown about three quarters filled. This is a tree that has been hit and carried on growing.\n\nIt stands in the north-western corner of the park beside a small pond, where a path comes in off Parko gatve, about 60 metres north of the Mykolas Oginskis Linden and roughly half a kilometre west of the Perkunas Oak. Lithuania listed it as a state-protected botanical heritage object in 2016, the same year as the Oginskis Linden and the Laikrodine Oak, which is how one manor park ends up with four separately named protected trees on a single walk.\n\nThe listing records its size and its condition and says nothing at all about its age. Nobody else has dated it either, so if you have seen a figure, tell us.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Plung%C4%97s_dvaro_parko_auk%C5%A1tasis_%C4%85%C5%BEuolas",
+        "https://plungesparkas.lt/lt/turas/augalu-turas/plunges-dvaro-parko-aukstasis-azuolas"
+      ],
+      "access": "Free. Stands in the north-western corner of Plunge Manor Park, a public town park, next to a natural path that runs from the Parko gatve street into the park; no fee to walk the park grounds.",
+      "transport": "In the town of Plunge, Telsiai county, north-west Lithuania; a short walk from the town centre and Plunge railway station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "plg_003",
+      "name": "Mykolas Oginskis Linden",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 460,
+      "height_m": 24,
+      "location": {
+        "address": "Plunge Manor Park, western side near Parko gatve 14/16, about 60 m south of the Aukstasis Oak, Plunge, Lithuania",
+        "latitude": 55.916462,
+        "longitude": 21.835868,
+        "neighbourhood": "Plunge Manor Park, Plunge"
+      },
+      "story": "Four old limes and five young ones stand in a ring on the western side of Plunge Manor Park, and this is the tree the ring was built around. The park's records call it the mother of the planting, which makes the recent saplings a restoration of a pattern somebody laid out well over a century ago.\n\nThe man it is named for bought the Plunge estate in 1873. Duke Mykolas Oginskis built the park around his palace, and this lime is part of that design rather than a wild survivor the landscaping worked around. Surveys disagree about its size in the usual way: the state register gives 23.6 metres tall and 4.6 metres round at chest height, a 2018 forest service visit made it 27 metres and 4.8 with a sound trunk and a very wide healthy crown, and the park's own trail page prints 21.2 and 4.4.\nLimes were planted at Lithuanian homesteads as guardians, on the belief that lightning leaves them alone. The Perkunas Oak, 500 metres east and scarred down one side, has done nothing to support the theory.\n\nIts age is not recorded anywhere. The species can reach five or six centuries, which tells you what a lime is capable of and nothing whatever about this one. It is a large-leaved lime, so it flowers in June, ahead of the small-leaved limes most Lithuanian parks are planted with.",
+      "best_time": {
+        "months": [6],
+        "kind": "flowers",
+        "label": "June, when it flowers ahead of every other lime in the park"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Mykolo_Oginskio_liepa",
+        "https://plungesparkas.lt/lt/turas/augalu-turas/mykolo-oginskio-liepa"
+      ],
+      "access": "Free. Stands on the western side of Plunge Manor Park, a public town park, near a row of private houses on Parko gatve but on park land itself; no fee to walk the park grounds.",
+      "transport": "In the town of Plunge, Telsiai county, north-west Lithuania; a short walk from the town centre and Plunge railway station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "plg_004",
+      "name": "Laikrodinė Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 470,
+      "height_m": 28,
+      "location": {
+        "address": "Plunge Manor Park, beside the north facade of the old clock-house/orangery building (now Plunge public library), Parko gatve 7, Plunge, Lithuania",
+        "latitude": 55.916326,
+        "longitude": 21.846508,
+        "neighbourhood": "Plunge Manor Park, Plunge"
+      },
+      "story": "When the tower clock stopped, the estate told the time with a sundial in the flowerbed instead. The gardeners who lived in the clock-house wound the clock's stone weights by hand every few days, and this oak stood against the north face of that building through the whole arrangement. The building is Plunge's public library now and the sundial has gone. The tree is still there, still called the Laikrodine Oak after a clock nobody winds.\n\nIt has taken damage. Lightning split the trunk and left a burnt-out crack down it, the main top broke off long ago, and the trunk divides into three stems at about two metres up. A State Forest Service survey in 2016 put the crown at roughly 80 percent, lower limbs pruned, dead wood in the rest. Lithuanian records say straightforwardly that the tree is ailing and waiting for specialist help. It measures 4.7 metres round at chest height and somewhere between 27 and 30 metres tall, depending on which of the three surveys you read, and it was listed as state-protected in 2016 for its size.\n\nIts age has never been recorded. It stands about 200 metres south-east of the Perkunas Oak, the other lightning-struck oak on this walk, at the library end of the park.\n\nA tree in this condition can change fast. If you get to Plunge and it looks better or worse than this, we would like to know.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Laikrodin%C4%97s_%C4%85%C5%BEuolas",
+        "https://plungesparkas.lt/lt/turas/augalu-turas/laikrodines-azuolas"
+      ],
+      "access": "Free. Stands beside the former clock-house/orangery building, now Plunge's public library, on the south-eastern side of Plunge Manor Park, a public town park; the tree stands right beside the building's facade on the path side, open ground, no fee.",
+      "transport": "In the town of Plunge, Telsiai county, north-west Lithuania; a short walk from the town centre and Plunge railway station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
