@@ -5270,6 +5270,33 @@
         "note": "session pagegaps.py pass: wrote the park intro from Arnhem's 6 already-published Sonsbeek register trees, no new tree research. Closed the one open park-page gap.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "famousjapan-batch-i",
+        "kind": "verify",
+        "tokens": 209866,
+        "trees": 9,
+        "note": "refilled the shelf: 9 verified (1 blocked dead camphor, 2 held no-new-fame-evidence)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "famousjapan-batch-i",
+        "kind": "write",
+        "tokens": 152000,
+        "trees": 9,
+        "note": "9 stories, 4 new single-tree places (Unnan, Nishio, Takahama, Toba), 5 species canonicalized",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "famousjapan-batch-i merge",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 9,
+        "note": "session merge: 5 into existing cities (contract-fixed 3 intros/meta over limit), 4 new city files, leads cleanup, tree_index rebuild, build+qa+preflight clean",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
