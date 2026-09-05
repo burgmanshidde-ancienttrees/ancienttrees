@@ -1,6 +1,88 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation 3) - Arnhem to 37 trees, two new Swiss places, a Timber Creek sacred-site boab, Zurich/Hobart/Sydney each +1-2
+
+Opened after the previous continuation stopped early having shipped 3 trees
+with 84 minutes still unspent. Followed the checklist: pulled clean, found
+one stale claim (`prague`, already fully merged at 18 trees by the pass
+that made the claim, just never released) and released it. Rung 2
+(`health.py`): Data digest showed `failure`; read the failing run's log and
+it was a benign git push race (the digest's own `pull --rebase` said "up to
+date" then the push was rejected because something landed in the gap
+between the pull and the push), not a real data problem. Could not
+re-dispatch it by hand (403, no permission on this token); it will clear on
+the next scheduled run. Rung 1: 0 unprocessed submissions, 0 sightings.
+Rung 3 (REVIEW.md's 2 WARNs): the Scheessel spelling fix had already been
+committed by an earlier run (`4f77b255`); the Gerichtslinde fame-case flag
+was explicitly "not a call to retire it", left as is. `leads.py --ready`
+was 0.
+
+Went to rung 4/0(b)/0(c). Arnhem, already at 27 trees (deepened three times
+today by earlier passes) and past its target of 20, still had genuine
+register supply (939 candidates within 20km, 800+ unmined); dispatched a
+verify pass on two new directions rather than opening a thin new city, since
+`city_queue.py --next`'s "openable today" list was all 1-2-Wikidata-lead
+cities (Taormina among them, already documented exhausted). In parallel,
+dispatched two fresh famous-tree batches: `_famous-switzerland` (all 10
+leads untouched) and the 9 remaining unresolved `_famous-australia` leads
+from a 2026-09-04 pass.
+
+**Arnhem +10 (27 to 37, arn_028-037).** A Zijpendaal/Gulden Bodem extension
+(Hungarian oak, twin giant sequoias as one paired entry, silver maple, a
+beech, a poplar+oak pair near Rijnstate hospital) and a confirmed-public
+Angerenstein estate cluster (cedar of Lebanon, tulip tree, Japanese maple,
+pond oak, all within ~100m, municipally owned since 1941). All register-only
+and flagged; stories say so and turn the gaps into questions.
+
+**Switzerland: 3 new places, 2 trees joining Zurich.** The Old Yew of
+Cremines (~1500 years, deliberately unsignposted, "Switzerland's oldest
+tree" by the commune's own claim), the Plane Tree of the Ile de Peilz
+(Villeneuve, a view-only entry on Lake Geneva's only natural island, pin on
+the public shoreline, literary fame via Byron and Andersen), and the Linden
+of Morat (Fribourg, a 1984 living replanting of a 15th-century original tied
+to the 1476 Battle of Morat, same pattern already blessed for the Elm of
+Saint-Gervais). The Marthalen Oak and the Linden of Linn joined Zurich as
+labelled day trips (4 to 6 trees); required a German i18n overlay fix
+(`data/i18n/de/zurich.json` was short two trees, preflight would have
+failed the whole build). Two candidates confirmed dead/gone and blocked
+(Erlebnisbaum Rotkreuz ZG, Grand chataignier d'Antagnes); 3 left as
+documented leads (access unclear, single-sourced, or unresearched).
+
+**Australia: 3 new trees, several leads closed out.** Centurion (Eucalyptus
+regnans, joined Hobart 10 to 11: Australia's tallest known tree, fire-damaged
+but alive, no public transport) and the Bland Oak (joined Sydney 6 to 7,
+planted 1842; caught a WebSearch AI-summary species error along the way,
+Quercus virginiana not robur) and Gregory's Tree, a new single-tree place
+(Timber Creek, NT): a boab carved with two 1855-56 expedition dates,
+Ngalibinggag, a registered Aboriginal sacred site with a boardwalk keeping
+visitors off the root zone. Confirmed the actual Barcaldine Tree of
+Knowledge (birthplace of the Australian Labor Party) died from poisoning in
+2006 and is now a preserved dead trunk under a memorial pergola; blocked it
+rather than publishing a dead tree under a famous name. Two more leads
+resolved as pre-existing duplicates (Sydney's Quad Jacaranda, Perth's
+proclamation tree), three more confirmed dead/gone.
+
+One id collision caught before merging: the verify pass had assigned
+`frb_001` to the new Fribourg place, colliding with Freiburg, Germany's
+existing `frb_001`; renamed to `fri_001` before dispatching the write pass.
+
+Batched all 18 verified trees into one write-stories pass (the point of
+batching: tone calibration read once). Cost ~12.9k tokens/tree, inside the
+15k target. Along the way: normalised 3 species names under hard rule 9
+(one out-of-batch fix too, Iwaki's `iwk_001` "Weeping Japanese Maple" would
+have collided with Arnhem's new plain "Japanese Maple"), fixed stale tree
+counts on 4 city pages (Hobart's copy was already wrong at "seven" while
+holding ten before this pass even started), and found Hobart itself missing
+entirely from `data/city-list.json`. Build (4548 pages), qa.py (6757 pages),
+preflight.py (0 FAIL) and superlatives.py (669 claims, no collisions) all
+clean. Also shipped, in a quieter spot: a Chinese Hackberry species page (3
+trees: 2 Kyoto, 1 Hiroshima), earned by `pagegaps.py`'s one open gap.
+
+Logged all 4 passes to `data/agent-costs.json`, released all 3 claims,
+deleted the now-stale research staging files. Week budget 2877/5000 min, no
+limit deaths.
+
 ## 2026-09-05 (continuation 2) - Hiroshima's shrine cluster ships (11 trees); committed a stray fig species page; Prague deepening pass dispatched
 
 Opened after the previous continuation stopped early with 107 minutes still
