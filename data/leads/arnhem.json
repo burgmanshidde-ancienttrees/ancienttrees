@@ -39,6 +39,27 @@
       "location": {"latitude": 51.994576, "longitude": 5.896595},
       "planted_band": "1840-1850",
       "reason": "Not researched this pass, time ran out. Register places it in Sonsbeekpark along the Parkweg near the Grote Vijver (the park's main pond), owner gemeente, visitable ja; looks like a straightforwardly public candidate on the evidence already in the register, worth prioritising in the next Arnhem pass."
+    },
+    {
+      "candidate": "Bruine beuk Zijpendaal (copper beech group, register nr 1687994)",
+      "register_nr": 1687994,
+      "location": {"latitude": 51.997847, "longitude": 5.894241},
+      "planted_band": "1880-1890",
+      "reason": "Not a single collectible point as recorded: register carries n_trees=4, a group of copper beeches on the lawn southeast of Kasteel Zijpendaal, gemeente-owned, visitable=ja, visible=ja, 'goed in beeld vanaf de wandelpaden' (well seen from the walking paths, register's own words) and within sight of the manor house. This is closer to the Twaalf Apostelen case than to the blocked avenues: a compact named group with one obvious place to stand, rather than a linear stand. Register also notes 2022 observations show the soil around the roots is now better shielded, letting soil fungi develop unhindered, worth checking in a future pass for a health update before treating this as a strong candidate. Not pursued this pass for lack of time; worth reconsidering as a single ensemble entry alongside the Hungarian oak and silver maple already verified nearby (arn_028, arn_030)."
+    },
+    {
+      "candidate": "Zomerlinde Park Angerstein bij speelplaatsje (Common Lime, register nr 1692440)",
+      "register_nr": 1692440,
+      "location": {"latitude": 51.993939, "longitude": 5.93823},
+      "planted_band": "1920-1930",
+      "reason": "Not researched this pass, time ran out. Register places it in Park Angerstein near a small playground, gemeente-owned, visitable=ja, within the same confirmed-public park as arn_034 through arn_037 (about 60-90m away). No independent second source found in the time available. Worth folding into a future Angerenstein pass alongside the beech near Huis Angerstein below."
+    },
+    {
+      "candidate": "Beuk Park Angerstein zuiden van Huis Angerstein (Beech, register nr 1692438)",
+      "register_nr": 1692438,
+      "location": {"latitude": 51.994304, "longitude": 5.93707},
+      "planted_band": "1920-1930",
+      "reason": "Not researched this pass, time ran out. Register places it just south of Huis Angerstein itself, gemeente-owned, visitable=ja, designated for dendrological reasons; within the same confirmed-public park as arn_034 through arn_037 (about 60-140m away). No independent second source found in the time available."
     }
   ],
   "blocked": [
@@ -81,6 +102,20 @@
       "location": {"latitude": 51.992061, "longitude": 5.908409},
       "planted_band": "1880-1890",
       "reason": "Not a single collectible point under the same reasoning as the already-blocked Sonsbeek larch stand: register carries n_trees=10, a circle of Dutch lime trees on a purpose-built 19th-century lookout mound, locally named for a legend ('Twaalf Apostelen') but still an ensemble rather than one specimen. Register additionally marks visible='nee', which is a second reason for caution: unclear whether a visitor can actually see the trees from a path. Kept as a lead rather than fully blocked because a compact, single-mound, legend-named grove is closer to the 'compact famous ensemble with one obvious place to stand' exception than a linear avenue is; a future pass could verify the legend and the mound's visibility/access (an OSM check per the Ypres technique) and consider shipping it as one ensemble entry, the way Lomanstraat-style tunnels and avenues have shipped elsewhere. Not attempted this pass for lack of time."
+    },
+    {
+      "candidate": "Beuk Apeldoornseweg 254 (Beech, register nr 1690778)",
+      "register_nr": 1690778,
+      "location": {"latitude": 51.998336, "longitude": 5.915287},
+      "planted_band": "1870-1880",
+      "reason": "Private garden. Register lists the setting as 'tuin' at a named private street address, owner_category 'particulier', visitable and visible both 'onbekend' (unknown, not confirmed either way), and history field 'onbekend'. No source found describing street-side visibility. Fails hard rule 10 on the evidence available; blocked rather than left as a lead because there is nothing here to follow up on beyond the bare register row."
+    },
+    {
+      "candidate": "Beukenrij Gulden Bodem (row of 7 beeches on an earthen bank, register nr 1692428)",
+      "register_nr": 1692428,
+      "location": {"latitude": 51.999229, "longitude": 5.890388},
+      "planted_band": "Leeftijd onbekend (age unknown)",
+      "reason": "Not a single collectible point. Register carries n_trees=7 for this entry, a row of beeches on a purpose-built earthen bank at Gulden Bodem (same park as the verified twin sequoias, arn_029). This is the avenue/whole-row exclusion, same as the already-blocked Sonsbeek larch stand: no one tree to stand at. Register's own history text also notes the heaviest beech in the row shows a pronounced lean and signs of honey fungus (honingzwam) infection at the base, i.e. a possible health concern worth flagging for a future pass even if the ensemble question is set aside."
     }
   ]
 }
