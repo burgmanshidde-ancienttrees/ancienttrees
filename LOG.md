@@ -1,6 +1,40 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (session start) - Rung 1 sightings, a stale duplicate-write cleanup, then a famous-Japan refill dispatched
+
+Rung 2 (health.py) was clear on arrival: the SessionStart hook's "iOS app
+broken" warning was stale, the failing scheduled run predated a push-fixed
+run 11.6h earlier that already went green. Moved to rung 1: 3 reader
+photographs waiting in the sightings inbox, all from Hidde himself, taken
+minutes before this run started, of two Baarn trees (brn_001 Dawn Redwood,
+brn_002 Giant Sequoia) that had no photo. Looked at all three pixel files:
+all clear the Cadiz standard. Published the sequoia shot and the better of
+two near-duplicate redwood shots, rejected the weaker duplicate. Build and
+preflight clean.
+
+Then `prepare.py` showed 11 trees "awaiting a writer" in
+data/research/bomenbieb-dutch-verified.json. Before writing, checked
+passcheck.py --pending, which flagged all 11 as sitting 0m from an
+already-published tree under a different id: a concurrent run had beaten
+this pass to the same bomenbieb.nl batch and shipped all 11 as new
+single-tree places (Wolfheze, Velp, Doornenburg, Den Hout, Hilvarenbeek,
+Stoutenburg, Fleringen, Rhenen, Vorden, Nuenen, Sambeek) minutes earlier.
+Writing them again would have duplicated live pages. Folded all 11 into
+data/leads/_bomenbieb-netherlands.json as `mapped` with their real ids and
+deleted the stale verified file so prepare.py stops offering it. (Also:
+first attempt to commit this silently failed to stage the leads file
+because a two-path `git add` with one already-deleted path aborts before
+staging either — worth remembering, it fails without complaint.)
+
+With the shelf empty of anything writable (0 awaiting writer, 4 ready
+leads, under the 60 floor), followed the runner's own refill instruction:
+`famous_demand.py --next` named a 12-candidate Japan batch worth 162
+monthly reads. Claimed it as `famous-japan-batch-i`, pushed the claim, and
+dispatched a verify agent per BRIEF_RESEARCH.md (running in background;
+this entry will be updated or a new one added once it reports back and is
+merged).
+
 ## 2026-09-05 (continuation, same window as the bomenbieb entry below) - Arnhem deepened 9 to 16 from the Sonsbeek register cluster, then Taormina found exhausted
 
 Still had window left after the bomenbieb work, so kept going per the resume
