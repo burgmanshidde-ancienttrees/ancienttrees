@@ -23,8 +23,9 @@
     "https://commons.wikimedia.org/wiki/File:Bagr%C4%97no_liepa.jpg"
    ],
    "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "species_basis": "lt.wikipedia article names it mažalapė liepa (small-leaved linden)",
+   "reason": "Checked 2026-09-05, held as a lead rather than shipped as a single-tree destination. Real and state-protected: lt.wikipedia (Bagrėno liepa, Liepų g. 132, Bagrėnas village, Prienai district) gives girth 5.45m at 1.3m, height 27.5m, a hollowed cracked base with trunks forking at 1.8m, designated a state botanical gamtos paveldo objektas with a 0.028ha protection zone. Only ONE source found (the Wikipedia/register article); no second independent source, no news coverage, no Tree of the Year title, no named legend turned up. It is not Lithuania's record lime either: that is the already-published Braziūkai Mother Linden (brz_001) at 8.4m girth. Does not clear the 2026-08-31 single-tree bar (would somebody travel specifically for this one) on current evidence. Age not documented."
   },
   {
    "name": "Degsnė larch",
@@ -34,9 +35,9 @@
     "https://commons.wikimedia.org/wiki/File:Degsn%C4%97s_maumedis,_kamienas.JPG",
     "https://commons.wikimedia.org/wiki/File:Degsn%C4%97s_maumedis.JPG"
    ],
-   "status": "lead",
-   "species": "Larch (Larix sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "European Larch, Polish larch variety (Larix decidua var. polonica)",
+   "reason": "Verified and delivered as deg_001 (The Degsnė Forest Larch), new single-tree place under the 2026-08-31 exception. Documented as the tallest tree in Lithuania (49.0m), confirmed by lt.wikipedia and saugoma.lt (the state protected-areas service's own register page), which is titled explicitly 'aukščiausias Lietuvos medis'. Stand planted 1849, a documented planting date."
   },
   {
    "name": "Didžioji tuja Kintuose",
@@ -47,7 +48,9 @@
     "https://commons.wikimedia.org/wiki/File:ZeravObrovsk%C3%BDKintai01.jpg",
     "https://commons.wikimedia.org/wiki/File:ZeravObrovsk%C3%BDKintai04.jpg"
    ],
-   "status": "lead"
+   "status": "done",
+   "species": "Western Redcedar (Thuja plicata)",
+   "reason": "Verified and delivered as kin_001 (The Great Thuja of Kintai), new single-tree place under the 2026-08-31 exception. Reported as Lithuania's tallest/largest giant arborvitae and reputedly second in Europe after a Swiss specimen; a near-50-year measurement series (1973/2004/2012/2021) shows it still actively growing. The filename's 'seniausia' (oldest) claim was not independently confirmed; age is undocumented and estimated broadly, flagged."
   },
   {
    "name": "Gaurė oak",
@@ -71,7 +74,9 @@
     "https://commons.wikimedia.org/wiki/File:Karpio_tuopa,_2014.JPG",
     "https://commons.wikimedia.org/wiki/File:Karpio_tuopa,_2019.JPG"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "species": "Poplar (Populus sp.)",
+   "reason": "BLOCKED, confirmed dead. Good legend (a whip used to flog serfs, planted by manor owner Ignas Karpis after his beloved was killed, one of the whips took root and grew to 5.34m girth at 1m height; Karpis went on to free about 7000 serfs, the first to abolish serfdom in Lithuania), but the tree itself does not survive: an on-site bilingual sign (photographed, File:Karpio_tuopa,_2019.JPG) states lightning split it in a 2011 storm and the remaining trunk section was covered with a protective wooden roof-shelter in 2012. Viewed the actual 2014 and 2019 Commons photos directly (per BRIEF_RESEARCH.md's look-at-the-pixels rule): both show a bare, roofed dead trunk stump with no crown and no living foliage, matching the sign's own account. Fails the alive-now bar and hard rule 2 (never publish a tree known to be dead) as a collectible entry; it may be worth a mention in another tree's story as historical context but not as its own entry."
   },
   {
    "name": "Kliošų parko bukas",
@@ -107,8 +112,9 @@
     "https://commons.wikimedia.org/wiki/File:2024_m._Late%C5%BEeris,_%C4%85%C5%BEuolas.jpeg"
    ],
    "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species": "Common Oak (Quercus robur)",
+   "species_basis": "confirmed by lt.wikipedia (paprastasis ąžuolas)",
+   "reason": "Checked 2026-09-05, held rather than shipped. lt.wikipedia (Latežerio ąžuolas) gives age 270 years (as of 2021), height 22.3m, girth 4.35m at 1.3m, crown 17m, on the marshy shore of Lake Latežeris in Dzūkija National Park, Druskininkai municipality; declared a state natural monument 1999-11-03. Two sources exist (the Wikipedia article and the underlying Environment Ministry designation decree at e-seimas.lrs.lt), so the evidence bar is fine, but no record claim, Tree of the Year title or named legend found despite searching; it is a real, storm-damaged (lightning strikes, dead branches on the lake side, living centre) but otherwise ordinary protected oak. Does not clear the 2026-08-31 single-tree destination bar on current evidence: nowhere near the size of the already-published Stelmužė oak. Access looks genuinely public (national park land, reached via gravel roads off route 5003 plus a 0.5km forest path, one source mentions an information sign, another calls it hard to find with none, worth re-checking on a future pass)."
   },
   {
    "name": "Liepa Motinėlė",
@@ -185,8 +191,9 @@
     "https://commons.wikimedia.org/wiki/File:Papu%C5%A1yn%C4%97sPu%C5%A1is.JPG"
    ],
    "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species": "Scots Pine (Pinus sylvestris)",
+   "species_basis": "confirmed by lt.wikipedia (paprastoji pušis)",
+   "reason": "Checked 2026-09-05, held rather than shipped. lt.wikipedia (Papušynio pušis) gives height 24.2m, girth 3.05m at 1.3m, on the west side of road 164 (Mažeikiai-Plungė-Tauragė) near a bus stop in Papušynė village, Mažonai seniūnija, Tauragė district; a municipality-protected (not state) natural heritage object, fenced. Possibly the namesake of the village (pušis = pine), but this connection is not sourced, only implied. No age, record claim, Tree of the Year title or legend found; it is not close to Lithuania's thickest pine (Gelgaudiškis, 4.27m, or a ~5m specimen near Kaunas) or tallest (the Kiauneliškis twin-topped pine at 44m). Does not clear the 2026-08-31 single-tree destination bar on current evidence. Only one real source found (the Wikipedia/register article); a second independent source was not located this pass."
   },
   {
    "name": "Quercus in Lithuania",
