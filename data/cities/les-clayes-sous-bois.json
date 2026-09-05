@@ -1,0 +1,59 @@
+{
+  "city": "Les Clayes-sous-Bois",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "This plane tree is 31 metres tall and 43 metres wide, wider than it is high, because its low branches rooted where they touched the ground and sent up growth of their own for centuries. Named for Diane de Poitiers, mistress of Henri II, who is said by legend to have had it planted around 1556. It stands free and open in the Parc de Diane, a short walk from the train station west of Paris.",
+  "meta_description": "Diane de Poitiers' Tree, an Oriental Plane 43 metres wide from centuries of self-layering, stands free in the Parc de Diane. A short walk from the station.",
+  "question_meta": "Les Clayes-sous-Bois's remarkable tree is an Oriental Plane 43 metres wide, said by legend to have been planted for Diane de Poitiers around 1556.",
+  "question_answer": "The remarkable tree in Les Clayes-sous-Bois is an Oriental Plane in the Parc de Diane, 31 metres tall and 43 metres wide. French Wikipedia records the local legend that Diane de Poitiers, mistress of Henri II, had it planted around 1556, which would put it at roughly 470 years old, though the planting date is treated as legend rather than documented fact.",
+  "question_context": "The plane's unusual width comes from layering: its low branches reached the ground, rooted where they touched, and sent up new growth of their own, a process helped by a nearby pond keeping the soil damp. Centuries of that habit produced a tree wider than it is tall, over eight metres round at the trunk and 43 metres across the crown against 31 metres of height. The Diane de Poitiers planting date is filed by French Wikipedia as legend rather than documented fact, so this page treats the name as a name and the 1556 date as a story rather than a settled figure; at face value that date would put the tree at roughly 470 years old. Oriental planes are the parent species of the London plane that lines half the boulevards of Europe, and they are rarely left alone long enough to sprawl the way this one has; most are pruned into a column instead, which is part of why a specimen allowed to layer freely for centuries is unusual to find. The ARBRES association labelled it a Remarkable Tree in July 2000.",
+  "hero_tree_id": "cly_001",
+  "oldest_tree_id": "cly_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Les Clayes-sous-Bois?",
+      "a": "An Oriental Plane in the Parc de Diane, 43 metres wide from centuries of self-layering, associated by legend with Diane de Poitiers."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the public Parc de Diane, a short walk from the Les Clayes-sous-Bois train station."
+    },
+    {
+      "q": "How do I get there from Paris?",
+      "a": "Transilien line L from Paris Saint-Lazare, roughly 30 to 35 minutes, then a short walk to the park."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cly_001",
+      "name": "Diane de Poitiers' Tree",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 470 years",
+      "age_min": 400,
+      "age_max": 470,
+      "girth_cm": 800,
+      "height_m": 31,
+      "location": {
+        "address": "Parc de Diane, Les Clayes-sous-Bois, Yvelines, France",
+        "latitude": 48.8185,
+        "longitude": 1.9894,
+        "neighbourhood": "Les Clayes-sous-Bois"
+      },
+      "story": "This plane tree is 31 metres tall and 43 metres wide, which is the wrong way round for a plane and takes some explaining. The explanation is at ground level. Low branches that reached the soil have rooted where they touched it and sent up growth of their own, a habit called layering, helped along by a pond close enough to keep the ground damp. The tree has been quietly walking outward for centuries.\n\nIt is named for Diane de Poitiers, mistress of Henri II, who is said to have had it planted around 1556. French Wikipedia files that as legend rather than documented fact, so take the name as a name and the date as a story: at face value it would make the tree about 470 years old. What nobody disputes is a trunk over eight metres round and a shape that took a very long time to build.\n\nOriental planes are the parent species of the London plane, the tree that lines half the boulevards of Europe, and they are far less often left alone long enough to do what this one has done. Most planes get pruned into a column. This one was allowed to sprawl.\n\nThe ARBRES association labelled it a Remarkable Tree in July 2000. It stands free and open in the Parc de Diane at Les Clayes-sous-Bois, west of Paris in the Yvelines, a short walk from the station.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Arbre_de_Diane_(Les_Clayes-sous-Bois)",
+        "https://www.monumentaltrees.com/fr/fra/yvelines/clayessousbois/952_parcdediane/"
+      ],
+      "access": "Free, standing in the public Parc de Diane.",
+      "transport": "Les Clayes-sous-Bois is served by Transilien line L from Paris Saint-Lazare, roughly 30-35 minutes; a short walk from the station to the park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

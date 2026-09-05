@@ -1,0 +1,58 @@
+{
+  "city": "Estry",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "The hollow inside this yew is wide enough that local accounts have thirty people standing in it at once, and that same hollow is why nobody can date the tree by counting rings. Estimates run from 1,000 to 1,800 years, repeatedly called the oldest tree in Normandy and by some accounts in France. It stands in the churchyard of Estry, a village now folded into the commune of Valdalliere, free and open at any hour.",
+  "meta_description": "The Millennial Yew of Estry, possibly Normandy's oldest tree, has a hollow wide enough for thirty people. Free, in the village churchyard.",
+  "question_meta": "Estry's remarkable tree is a European Yew estimated at 1,000 to 1,800 years old, repeatedly called the oldest tree in Normandy.",
+  "question_answer": "Estry's notable tree is a European Yew in the churchyard, estimated between 1,000 and 1,600 years old by the local tourist board and repeatedly called the oldest tree in Normandy. Its hollow trunk measures about 3.1 metres across and its girth was last measured at 11.55 metres in 2009.",
+  "question_context": "The yew cannot be dated by ring count because its trunk is hollow; estimates from different sources range from 1,000 years to 1,800, and the Pays de Vire tourist board settles on 1,000 to 1,600 as its own best figure. What can be measured has been, three times over a century: 10 metres round in 1894, 11.4 metres in 1990, and 11.55 metres in July 2009, a tree still adding girth at whatever age it actually is. The hollow itself is roughly 3.1 metres across, wide enough that local accounts have thirty people standing inside it at once. Two of its great limbs reach roughly 15 metres out from the trunk and are now carried on cables to keep them from tearing free under their own weight. Local lore holds its roots run more than 30 metres, under graves on the far side of the cemetery, though that is village tradition rather than a survey. The ARBRES association labelled it a Remarkable Tree in September 2009, formal recognition for a tree the village had already been pointing visitors toward for generations.",
+  "hero_tree_id": "est_001",
+  "oldest_tree_id": "est_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Estry?",
+      "a": "A European Yew in the village churchyard, estimated at 1,000 to 1,800 years old and repeatedly called the oldest tree in Normandy."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the public cemetery beside the church, open to visitors at any time."
+    },
+    {
+      "q": "Why can't its age be measured more precisely?",
+      "a": "The trunk is hollow, wide enough for around thirty people to stand inside, which removes the rings a dendrologist would otherwise count."
+    }
+  ],
+  "trees": [
+    {
+      "id": "est_001",
+      "name": "The Millennial Yew of Estry",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 1,000 to 1,600 years",
+      "age_min": 1000,
+      "age_max": 1800,
+      "girth_cm": 1155,
+      "location": {
+        "address": "Cemetery beside the church, Estry, 14410 Valdallière, Calvados, Normandy, France",
+        "latitude": 48.897053,
+        "longitude": -0.734014,
+        "neighbourhood": "Estry, Valdallière commune"
+      },
+      "story": "The cavity inside this yew is about 3.1 metres across, and local accounts have thirty people standing in it at once. That hollow is also why nobody can date the tree: there are no rings left to count. Estimates run from 1,000 years to 1,800, and the Pays de Vire tourist board settles on somewhere between 1,000 and 1,600, which is about as close as anyone honestly gets. It is repeatedly called the oldest tree in Normandy, and by some accounts in France.\n\nWhat can be measured has been, three times over a century, and the figure keeps moving. The trunk was 10 metres round in 1894, 11.4 metres in 1990 and 11.55 metres when someone put a tape around it again in July 2009. A tree still adding girth at that age is a tree still working.\n\nTwo of its great limbs reach roughly 15 metres out from the trunk and are carried on cables. Its roots are said to run more than 30 metres, under graves on the far side of the cemetery, though that one is village lore rather than survey.\n\nIt stands in the churchyard at Estry, a village now folded into the commune of Valdalliere, free and open at any hour. The ARBRES association labelled it a Remarkable Tree in September 2009.",
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2009/08/16/lif-millenaire-destry-calvados/",
+        "https://www.paysdevire-normandie-tourisme.fr/a-voir-a-faire/patrimoine-naturel/lif-destry/"
+      ],
+      "access": "Free, standing in the public cemetery next to the church; open to visitors at any time.",
+      "transport": "No station nearby; reached by car, in the village of Estry, Calvados.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

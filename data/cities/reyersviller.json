@@ -1,0 +1,58 @@
+{
+  "city": "Reyersviller",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "A small crucifix fixed to this oak marks the darkest local story in the Pays de Bitche: Swedish mercenaries are said to have hanged an entire hamlet's population from its branches during the Thirty Years' War, when the villagers would not reveal a hidden treasure. No contemporary record survives, only the tradition, but the war itself needed no invention: it emptied whole stretches of Lorraine. The oak stands twisted and storm-worn at the roadside, free, with nothing between you and the trunk.",
+  "meta_description": "The Oak of the Swedes carries a Thirty Years' War hanging legend and stands roughly 400 to 500 years old at a roadside near Reyersviller. Free to visit.",
+  "question_meta": "Reyersviller's remarkable tree is the Oak of the Swedes, roughly 400 to 500 years old, tied to a Thirty Years' War hanging legend.",
+  "question_answer": "The remarkable tree near Reyersviller is the Oak of the Swedes, a Pedunculate Oak beside the road toward Siersthal, estimated at 400 to 500 years old. Local tradition holds that Swedish mercenaries hanged the population of a nearby hamlet called Kirscheidt from its branches during the Thirty Years' War, around 1633 to 1634.",
+  "question_context": "The hanging story is specific but undocumented: no contemporary record of it survives, and it is repeated locally and in regional history writing as tradition rather than a verified event. Kirscheidt, the hamlet said to have been destroyed, no longer exists. The Thirty Years' War itself needs no such caution; fighting, famine and plague emptied whole stretches of Lorraine in those years, and villages that were lost then stayed lost. Specialists who have examined the tree put its age between 400 and 500 years, meaning it was already a century old when the mercenaries are said to have come through if the older estimate holds, or barely a sapling if the younger one does. Height estimates vary too, from about 20 to 21 metres on most visits to 25 metres recorded on one in 2012, and nobody has published a girth. Someone has fixed a small crucifix to the trunk in memory of the story.",
+  "hero_tree_id": "rys_001",
+  "oldest_tree_id": "rys_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree near Reyersviller?",
+      "a": "The Oak of the Swedes, a Pedunculate Oak roughly 400 to 500 years old, carrying a Thirty Years' War hanging legend."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside a public road at the edge of the village, no restriction, with nothing between you and the trunk."
+    },
+    {
+      "q": "Is the hanging story documented?",
+      "a": "No contemporary record has been found. It survives as local tradition and regional history writing rather than a confirmed event."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rys_001",
+      "name": "The Oak of the Swedes",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 to 500 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": null,
+      "location": {
+        "address": "Beside the D662/road from Reyersviller toward Siersthal, Reyersviller, Moselle, France",
+        "latitude": 49.043478,
+        "longitude": 7.382773,
+        "neighbourhood": "Reyersviller, Pays de Bitche, Moselle"
+      },
+      "story": "Somebody fixed a small crucifix to this oak, and the reason given for it is the darkest story in the Pays de Bitche. Local tradition holds that during the Thirty Years' War, in 1633 or 1634, Swedish mercenaries hanged the entire population of a nearby hamlet called Kirscheidt from its branches when the villagers would not say where a treasure was hidden. Kirscheidt no longer exists. Nor does any contemporary record of the hanging: the story is repeated locally and in regional history writing, and it stays tradition rather than documented event.\n\nThe war behind it needs no such caution. Fighting, famine and plague emptied whole stretches of Lorraine in those years, and villages that went then stayed gone.\n\nThe specialists who have walked out to the tree put it somewhere between 400 and 500 years old. Take the older end of that range and it was already a century old when the mercenaries came through. Take the younger and it was a sapling barely in the ground. It stands about 20 to 21 metres, though one visit in 2012 recorded 25, and nobody has published a girth. The silhouette is twisted and storm-worn, the shape an oak takes after several centuries alone in the open.\n\nIt is at the roadside between Reyersviller and Siersthal, free, with nothing between you and the trunk.",
+      "verified_sources": [
+        "https://www.blelorraine.fr/2020/12/du-chene-des-suedois-aux-ravages-de-la-guerre-de-trente-ans-en-lorraine/",
+        "https://krapooarboricole.wordpress.com/2008/02/07/le-chene-des-suedois-reyersviller/"
+      ],
+      "access": "Free, standing beside a public road at the edge of the village; no restriction.",
+      "transport": "No station; reached by car, in the Pays de Bitche area of Moselle.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

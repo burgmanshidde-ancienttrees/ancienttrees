@@ -1,0 +1,59 @@
+{
+  "city": "Aubers",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Shellfire levelled the village of Aubers in the First World War and this lime, standing apart from the houses, came through it. That is only the most recent thing it has outlasted: a map from 1706 shows three more lindens on the same spot, a deed of 1490 is cited for its planting, and it survived being split by lightning in 1721. It stands free at the roadside on an ordinary walking route out of the village, in the Weppes area near Lille.",
+  "meta_description": "The Linden of Joncquoy survived shellfire in WWI, a 1721 lightning strike and the storm of 1999. Free, on a walking route near Aubers.",
+  "question_meta": "Aubers's remarkable tree is the Linden of Joncquoy, cited to a 1490 planting deed and the last living piece of a vanished chateau estate.",
+  "question_answer": "The remarkable tree near Aubers is the Linden of Joncquoy, a Small-leaved Lime on the Chemin du Joncquoy, cited to a planting deed of 1490, which would put it past 530 years old. It is 12 metres tall and 5.1 metres round, and it is the last living piece of the Chateau de Joncquoy estate, destroyed in the French Revolution.",
+  "question_context": "The tree's survival record is unusually long even by the standards of a remarkable-tree list. A 1706 map shows three more lindens on the same site, all long gone; this one was reportedly split by lightning in 1721 and grew on regardless; the Chateau de Joncquoy and its Le Notre-style gardens, which stood on the same ground, were destroyed in the Revolution; shellfire flattened the nearby village of Aubers in the First World War while the tree, standing apart from the houses, came through; and it also withstood the storm of 1999 that flattened woodland across northern France. The 1490 planting deed is the figure cited for its age, though as with any centuries-old date attached to a living tree, treat it as the best documentary evidence available rather than a certainty beyond question. It was nominated for France's Tree of the Year in 2020 and appears on the Weppes tourism office's own logo.",
+  "hero_tree_id": "jnc_001",
+  "oldest_tree_id": "jnc_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree near Aubers?",
+      "a": "The Linden of Joncquoy, a Small-leaved Lime cited to a 1490 planting deed, the last living piece of the vanished Chateau de Joncquoy estate."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside the Chemin du Joncquoy on an ordinary public walking route, free and at any hour."
+    },
+    {
+      "q": "What has the tree survived?",
+      "a": "A 1721 lightning strike, the destruction of the Revolution, First World War shellfire that levelled the nearby village, and the storm of 1999."
+    }
+  ],
+  "trees": [
+    {
+      "id": "jnc_001",
+      "name": "The Linden of Joncquoy",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "over 500 years",
+      "age_min": 500,
+      "age_max": 550,
+      "girth_cm": 510,
+      "height_m": 12,
+      "location": {
+        "address": "5 Chemin du Joncquoy, 59249 Aubers, France",
+        "latitude": 50.6625,
+        "longitude": 2.772328,
+        "neighbourhood": "Aubers, Weppes, Hauts-de-France"
+      },
+      "story": "Shellfire levelled the village of Aubers in the First World War. This lime, standing apart from the houses, came through it.\n\nThat is only the most recent thing it has outlasted. A map of 1706 shows three more lindens on the same site, all of them long gone. The tree was reportedly split by lightning in 1721 and grew on regardless. The Chateau de Joncquoy and its Le Notre gardens, which stood here, both went in the Revolution, and this is the last living piece of that estate. It also took the storm of 1999, which flattened woodland across northern France, without going over.\n\nA deed of 1490 is cited for the planting, which would put it past 530 years. It is 12 metres tall today and 5.1 metres round: low and thick rather than grand, which is roughly what five centuries of weather leave behind.\n\nIt was nominated for France's Tree of the Year in 2020, and the Weppes tourism office thought enough of it to put it on its own logo. You reach it on foot along the Chemin du Joncquoy, on an ordinary walking route out of the village, free and at any hour, with nothing between you and it.",
+      "verified_sources": [
+        "https://www.arbredelannee.com/arbres/le-tilleul-du-joncquoy",
+        "https://lestetardsarboricoles.fr/wordpress/2012/11/08/le-tilleul-du-joncquoy-aubers-nord/"
+      ],
+      "access": "Free, standing beside the Chemin du Joncquoy, a short distance from the village; described by a hiking-route page as a stop on an ordinary public walking route.",
+      "transport": "No station; reached by car or on foot from Aubers village, in the Weppes area near Lille.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
