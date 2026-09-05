@@ -1,6 +1,43 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation) - Scheessel: a new single-tree place; data digest push race found, iOS schedule already fixed
+
+7-day visits from prepare.py: 906 visits, 1409 page views, climbing through
+the week (94-202/day) except a dip today (still counting). Rung 2 first:
+`health.py` flagged the Data digest workflow as failing. Its newest run
+(09:06 UTC) committed locally then lost a push race against the twelve-knock
+line (`pull --rebase` landed clean, the push was still rejected a second
+later) and the commit was never retried, so today's DATA.md row and
+city-queue re-rank are missing until the next scheduled run. Tried to add a
+retry loop to `.github/workflows/data-digest.yml`'s push step but this
+session's GitHub token has no `workflows` scope (push rejected: "refusing to
+allow a GitHub App to create or update workflow ... without `workflows`
+permission"); reverted the local commit rather than leave it unpushable.
+FOR HIDDE: someone with workflow-edit rights should wrap that `git push` in
+a retry loop, or grant a token that scope. The iOS app's flagged schedule
+failure was already fixed by an earlier session's push (the compact
+worth-it button was 16pt, not 44); watched the next scheduled run start
+clean (look and test jobs passed) and moved on rather than wait out the
+full ~70 minute floor-job build.
+
+No reader submissions or sightings waiting. `prepare.py` said REFILL THE
+SHELF FIRST (0 leads ready to write). Claimed `_famous-germany` (still the
+biggest unsourced country batch, 62 leads) and dispatched a verify pass on 6
+named candidates. One (Gerichtslinde Göttingen) turned out to be an exact
+duplicate of the already-published gtn_001, caught before writing. One
+cleared the single-tree-destination bar: **the Gerichtslinde of Scheeßel**,
+a lime on a church forecourt where a Femegericht is recorded sitting since
+1288, a pillory stood into the 1900s, girth ~710cm, age disputed 500-800
+years by two sources. Shipped as a new place, `scheessel.json` (sch_001), on
+the Effeltrich/Reinborn single-tree template. Three more held as leads
+(Everseiche's crown reported dying, Lieveneiche too thin, Alfeld corrected
+to "2 Dinglinden" per its own register) and one blocked (Heinrichslinde: the
+current tree is a January-2022 sapling, its two predecessors gone). Ran
+preflight (0 problems), city_names.py, tree_index, `npm run build` (4470
+pages, clean) and qa.py (6609 pages, clean); committed, pushed, released the
+claim.
+
 ## 2026-09-05 (continuation) - famousuk-batch-a merged (3 places, Bristol to 6); a reader's GPS finds 2 Cantonspark register trees
 
 Continued a window an earlier attempt in the same run stopped early with
