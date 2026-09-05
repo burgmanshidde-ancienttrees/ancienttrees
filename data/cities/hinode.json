@@ -1,0 +1,61 @@
+{
+  "city": "Hinode",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Hinode is a small town in the wooded hills of western Tokyo, and the tree it is known for is a botanical one-off. Akashide, the red-vein hornbeam, is common across Japan; a weeping form of it has been found growing wild exactly once, on the approach path of Sajigami-jinja here. Every other weeping akashide in the country is a graft taken from this tree. It is six metres tall, fenced, easy to walk straight past, and a national Natural Monument since 1942.",
+  "meta_description": "The weeping akashide of Sajigami Shrine in Hinode, western Tokyo: the only weeping red-vein hornbeam ever found, and the parent of every graft since.",
+  "question_meta": "Hinode's mapped tree is the weeping akashide of Sajigami-jinja, the only one of its kind and about 180 to 200 years old.",
+  "question_answer": "Hinode's only mapped tree is the weeping akashide of Sajigami-jinja, a weeping form of the red-vein hornbeam (Carpinus laxiflora) growing beside the shrine's approach path. The town's own 2011 study puts it at roughly 180 to 200 years old, not the 700 years local tradition claims.",
+  "question_context": "The age is the one thing worth being careful about here. Tourism copy, including Hinode's own, has long repeated that the tree was carried from Yamashiro province when the shrine was founded some seven hundred years ago. The town admits that figure has no clear basis. Between 2008 and 2011 Hinode ran an official vigour-recovery survey with tree doctors and observers from the Agency for Cultural Affairs: they counted about 150 growth rings in a dead limb, set a girth of 135 centimetres measured in 1939 against 198 centimetres in 2010, and concluded the tree is approximately 180 to 200 years old. No akashide anywhere is known to live near seven centuries. What is not disputed is its singularity. It is the only weeping specimen of Carpinus laxiflora ever found, and as of 2013 the only nationally designated Natural Monument tree from the whole birch family in Japan. Every other weeping akashide, a few elsewhere in Hinode, one in Fussa, one in Tochigi that died in 1933, is a graft off this trunk, because seedlings and cuttings revert to the ordinary upright form.",
+  "hero_tree_id": "hnd_001",
+  "oldest_tree_id": "hnd_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the only weeping form of akashide (Carpinus laxiflora) ever found. Every other weeping akashide in Japan was grafted from it, because the trait does not pass through seed or cuttings."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 180 to 200 years, on the town's own 2011 growth-ring study. The 700-year figure that appears in older guidebooks is a legend the study explicitly rejected."
+    },
+    {
+      "q": "Can I touch the trunk?",
+      "a": "No. A fence protects it, and the town's guide states that visitors may not touch the tree or step inside the fence without special permission. It is fully visible from the approach path."
+    },
+    {
+      "q": "Is it worth a trip on its own?",
+      "a": "It is a small tree, about six metres tall with an umbrella-shaped crown, so come for what it is rather than for scale. Early April to mid-May is the window the town itself recommends."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "JR Itsukaichi Line to Musashi-Itsukaichi Station, then the Nishi-Tokyo bus toward Fussa Station and off at the Sachikami stop. By car it is about 10 minutes from the station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hnd_001",
+      "name": "The Weeping Akashide of Sajigami Shrine",
+      "species": "Red-vein Hornbeam (Carpinus laxiflora, weeping form)",
+      "age_estimate": "disputed: traditionally said 700 years, town's own 2011 growth-ring study says 180-200 years",
+      "age_min": 180,
+      "age_max": 200,
+      "girth_cm": 198,
+      "height_m": 6.0,
+      "location": {
+        "address": "2129 Ogunino, Hinode, Nishitama District, Tokyo, Japan (grounds of Sajigami-jinja, beside the approach path near the shrine entrance)",
+        "latitude": 35.74398,
+        "longitude": 139.22892,
+        "neighbourhood": "Hinode, in the hills of western Tokyo"
+      },
+      "story": "Every weeping akashide in Japan is a graft taken from this one tree. Akashide, the red-vein hornbeam, grows all over the country; a weeping form of it has turned up in the wild exactly once, here, beside the approach path of Sajigami-jinja in the hills of western Tokyo. The others, a few elsewhere in Hinode, one in Fussa, one in Tochigi that died in 1933, are all descended from this trunk by a difficult grafting technique, because seedlings and cuttings come up ordinary and upright.\n\nLocal tradition says it was carried from Yamashiro province when the shrine was founded, seven hundred years ago. The town's own science says no. Between 2008 and 2011 Hinode ran a vigour-recovery survey with tree doctors and observers from the Agency for Cultural Affairs. They counted about 150 rings in a dead limb, compared a girth of 135 centimetres recorded in 1939 with 198 centimetres in 2010, and put the tree at roughly 180 to 200 years. No akashide anywhere is known to live near seven centuries, and the town says plainly that the older figure has no clear basis.\n\nIt has been a national Natural Monument since August 1942, and as of 2013 the only one in Japan from the entire birch family. It is also six metres tall and easy to walk past. In 2010 the town felled 33 neighbouring trees to give it its light back.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E5%B9%B8%E7%A5%9E%E7%A5%9E%E7%A4%BE%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%A2%E3%82%AB%E3%82%B7%E3%83%87",
+        "http://www.hinode-guide.net/recommend/cn10/japan.html"
+      ],
+      "access": "Free, shrine grounds. Viewable from the approach path; a fence protects the tree itself and the town's own guide states visitors may not touch it or step inside the fence without special permission.",
+      "transport": "JR Itsukaichi Line to Musashi-Itsukaichi Station, then Nishi-Tokyo Bus toward Fussa Station, alight at the Sachikami stop; or about 10 minutes by car from the station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

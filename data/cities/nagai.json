@@ -1,0 +1,68 @@
+{
+  "city": "Nagai",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Nagai is a small city in the Okitama basin of Yamagata, on a railway line named after flowers, and its cherry tree is one of the largest Edo-higan in the whole Tohoku region. The Kubo-zakura stands beside Isazawa Elementary School, 13.85 metres tall and 8.1 metres round, held up by more than sixty props after a nineteenth-century fire burned out two of its main limbs. It has been a national Natural Monument since 1924 and is a named stop on the Okitama cherry corridor.",
+  "meta_description": "The Kubo-zakura of Isazawa in Nagai, Yamagata: one of Tohoku's largest Edo-higan cherries, 8.1 metres round, on props since a fire took two limbs.",
+  "question_meta": "Nagai's mapped tree is the Kubo-zakura of Isazawa, a giant Edo-higan cherry, a Natural Monument since 1924 and traditionally called 1,200 years old.",
+  "question_answer": "Nagai's only mapped tree is the Kubo-zakura of Isazawa, an Edo-higan cherry beside Isazawa Elementary School in the west of the city. It stands 13.85 metres tall with a trunk girth of 8.1 metres, has been a national Natural Monument since December 1924, and is traditionally said to be about 1,200 years old.",
+  "question_context": "The 1,200 years is tradition, and the traditions do not agree with each other. A 1925 Yamagata prefectural survey recorded the story that the shogun Sakanoue no Tamuramaro planted the tree on the grave of Otama, a daughter of the local Kubo clan who died of grief after his campaign moved on, which is why it is also called the Otama-zakura. Other local versions credit a grieving lord instead. Neither is documented, and the age should be read as legend rather than measurement. The recorded history is easier to stand on: the lord of the Yonezawa domain came to see it bloom during the Tenpo and Koka eras of the 1830s and 40s, and the ten-are plot beneath it paid no tax until the Meiji Restoration. An old nickname, Yontan-zakura, remembers a canopy said to have covered around forty ares. Since 2006 an unusual conservation programme has been running with the Agency for Cultural Affairs' approval, packing peat moss and charcoal around the burnt heartwood so the tree can grow itself new supporting trunks.",
+  "hero_tree_id": "nga_001",
+  "oldest_tree_id": "nga_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is one of the largest Edo-higan cherries in Tohoku, 8.1 metres round the trunk and 10.8 at the root collar, and it is being kept alive by a conservation method that grows it replacement trunks out of its own aerial roots."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Traditionally about 1,200 years, on legends recorded in a 1925 prefectural survey. Nobody has dated it by measurement, so treat the figure as tradition."
+    },
+    {
+      "q": "When does it bloom?",
+      "a": "Late April, later than the coastal cherry season. There is a blossom festival with evening illumination, and extra temporary parking is opened for it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It has its own free car park with 17 spaces and 7 bus bays, and there is no entry charge."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 10 minutes by taxi from Nagai Station on the Yamagata Railway Flower Nagai Line, or roughly 20 minutes by car from the Nanyo-Takahashi interchange of the Tohoku Chuo Expressway."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nga_001",
+      "name": "The Kubo-zakura of Isazawa",
+      "species": "Edo-higan Cherry (Cerasus itosakura, syn. Prunus itosakura / P. spachiana f. ascendens)",
+      "age_estimate": "traditionally said to be about 1200 years",
+      "age_min": 1000,
+      "age_max": 1300,
+      "girth_cm": 810,
+      "height_m": 13.85,
+      "location": {
+        "address": "Kami-Isazawa, Nagai, Yamagata 993-0021, Japan (beside Isazawa Elementary School, western Nagai)",
+        "latitude": 38.09417,
+        "longitude": 140.067,
+        "neighbourhood": "Isazawa, western Nagai, in the Okitama region of Yamagata"
+      },
+      "story": "Someone sheltering in the hollow at its base lit a cooking fire, and the Kubo-zakura lost two of its main limbs to it. That was the nineteenth century. The burn reshaped the crown into what now reads as two trees fused at the foot, and the tree has leaned on props ever since. More than sixty of them hold it up today.\n\nIt is one of the largest Edo-higan cherries in Tohoku: 13.85 metres tall, 8.1 metres round the trunk, 10.8 at the root collar, and a national Natural Monument since December 1924. An older nickname, Yontan-zakura, remembers a canopy said to have spread across roughly forty ares.\n\nThe legends are worth telling as legends. A 1925 prefectural survey recorded that the shogun Sakanoue no Tamuramaro planted it on the grave of Otama of the Kubo clan, who died of grief when his campaign moved on; other local versions credit a grieving lord. Both are stories, and so is the traditional age of 1,200 years. What is on record is that the lord of Yonezawa came to watch it bloom in the 1830s and 40s, and that the ten-are plot beneath it paid no tax until the Meiji Restoration.\n\nBurnt heartwood cannot grow the fresh roots an old cherry uses to renew itself, so since 2006 conservators have packed peat moss and charcoal around the wound. By 2010 new roots up to three centimetres thick had reached the ground.",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "late April, when it blooms and the festival lights it after dark"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E4%BC%8A%E4%BD%90%E6%B2%A2%E3%81%AE%E4%B9%85%E4%BF%9D%E3%82%B6%E3%82%AF%E3%83%A9",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/289",
+        "https://yamagatakanko.com/attractions/detail_389.html",
+        "https://www.okitama-sakura.com/sakura_spot/22/"
+      ],
+      "access": "Free. Public natural monument with its own free parking (17 spaces, 7 for tour buses); extra temporary parking is opened during the blossom festival.",
+      "transport": "About 10 minutes by taxi from Yamagata Railway (Flower Nagai Line) Nagai Station; about 20 minutes by car from the Nanyo-Takahashi interchange of the Tohoku Chuo Expressway.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    }
+  ]
+}
