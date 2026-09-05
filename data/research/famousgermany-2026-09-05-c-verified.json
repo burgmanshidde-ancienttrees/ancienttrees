@@ -1,29 +1,5 @@
 [
   {
-    "id": "deu_famous_001",
-    "name": "The Gerichtslinde of Göttingen",
-    "species": "Lime (Tilia sp.; German-language sources conflict, see verify_notes)",
-    "age_estimate": "roughly 400 to 500 years",
-    "age_min": 400,
-    "age_max": 520,
-    "girth_cm": 714,
-    "location": {
-      "address": "An der Gerichtslinde, Grone (on the Leineberg), Göttingen, Germany",
-      "latitude": 51.534946,
-      "longitude": 9.91229,
-      "neighbourhood": "Grone"
-    },
-    "verified_sources": [
-      "https://de.wikipedia.org/wiki/Gerichtslinde_(G%C3%B6ttingen)",
-      "https://www.baumkunde.de/baumregister/638-gerichtslinde_in_goettingen/"
-    ],
-    "access": "Free, public. Stands on a grass strip beside a public street (An der Gerichtslinde) near the B3, in the open, no gate or ticket.",
-    "transport": "In the Grone district west of Göttingen city centre; reachable by local bus, short walk from the B3.",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "STRONG single-tree candidate: this is a documented Gerichtslinde with an individually-recorded judicial role, not just the type-designation the brief warns about. A ducal regional court (Landgericht) sat on this exact site (the Leineberg) from 1241; law was both spoken and executed here until 1824, after which only executions continued; the LAST EXECUTION took place here on 20 January 1859 (beheading by sword). The street itself is named 'An der Gerichtslinde' after the tree. Protected as a Naturdenkmal.\n\nSPECIES CONFLICT, unresolved and flagged rather than picked: de.wikipedia calls it a Winterlinde (Tilia cordata); baumkunde.de calls it a Sommerlinde (Tilia platyphyllos). Both are otherwise detailed, dated sources, so this is recorded as a genuine disagreement rather than resolved silently. A ground-level check of the leaf shape would settle it.\n\nAGE: a roadside sign says planted in the 16th century; forester Hans Joachim Fröhlich estimated ~300 years in 1993 (implying ~420-520 years by 2026, consistent with the 16th-century planting date read literally). Two independent-ish estimates converge on the same rough band, so age_min/max set at 400-520 and label kept broad.\n\nGIRTH/ALIVE NOW: baumkunde.de records girth 6.97m (23 Oct 2016) growing to 7.14m by December 2024, with a site visit noted 08 Dec 2024, described as 'vital' despite a split, hollow trunk with adventitious roots and wire ropes securing the crown (pruned March 2011). This is recent, dated, credible alive-now evidence, among the best of this batch.\n\nHeight given as 25m (Wikipedia, 1993 data) vs 13.0m (baumkunde) - a bad conflict, probably one source measuring total height and the other something else (or a transcription issue); left out of the record entirely rather than guessing which is right.\n\nSINGLE-TREE FAME TEST: yes. This is exactly the case the brief names: a Gerichtslinde where the individual tree's judicial role, including a dated 1859 execution, is documented rather than assumed from the type. Worth a dedicated page."
-  },
-  {
     "id": "deu_famous_002",
     "name": "The Gerichtslinde of Scheeßel",
     "species": "Winter Linden (Tilia cordata)",
