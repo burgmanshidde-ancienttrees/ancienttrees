@@ -137,9 +137,10 @@
         "https://commons.wikimedia.org/wiki/File:Ishito_Ishitokabazakura_1923_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Ishito_Ishitokabazakura_1923_2.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as kit_001 (Ishito no Kaba-zakura) in kitamoto.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Ishiwari-zakura",
@@ -150,9 +151,10 @@
         "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4573650095).jpg",
         "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4573704625).jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as mor_001 (Ishiwari-zakura (The Rock-Splitting Cherry)) in morioka.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Isshingyō-no-Ōzakura",
@@ -189,9 +191,10 @@
         "https://commons.wikimedia.org/wiki/File:Hokuto_Yamanashi_Yamatakajindaizakura_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Jindai-zakura.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as hok_001 (Jindai-zakura (Yamataka Jindai Zakura)) in hokuto.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Jissoji no Icho",
@@ -202,9 +205,10 @@
         "https://commons.wikimedia.org/wiki/File:Jissoji_no_Icho_A.jpg",
         "https://commons.wikimedia.org/wiki/File:Jissoji_no_Icho_B.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as ich_002 (Jissoji no Icho) in ichinohe.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Jonichiji no Icho",
@@ -244,9 +248,10 @@
         "https://commons.wikimedia.org/wiki/File:Kamo_no_Okusu_2023-August.JPG",
         "https://commons.wikimedia.org/wiki/File:Kamoucho_Kamigyutoku,_Aira,_Kagoshima_Prefecture_899-5302,_Japan_-_panoramio.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Camphor Tree (Camphora sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as kag_010 (The Great Camphor of Kamo) in kagoshima.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Kasa sugi",
@@ -299,9 +304,10 @@
         "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_B.jpg",
         "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_C.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Maple (Acer sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as hga_002 (Kitahanazawa no Hananoki) in higashiomi.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Kozaki no Okusu",
@@ -325,7 +331,8 @@
         "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_B.jpg",
         "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_C.jpg"
       ],
-      "status": "lead"
+      "status": "resolved",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as shg_001 (The Sacred Nagi of Kumano Hayatama Taisha) in shingu.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Kyushaku-fuji in Byakugoji, Tamba",
@@ -349,9 +356,10 @@
         "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_B.jpg",
         "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_C.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Maple (Acer sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as hga_001 (Minamihanazawa no Hananoki) in higashiomi.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Mineyama Jinya Enoki",
@@ -505,9 +513,10 @@
         "https://commons.wikimedia.org/wiki/File:Noman_ji_Tessho_no_Zu_cropped_Totomi_Koseki_Zue_Frame_24.jpg",
         "https://commons.wikimedia.org/wiki/File:Nomanji_Temple_Cycad_A.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Sago Palm (Cycas sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as yos_001 (Nomanji no Sotetsu) in yoshida.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Ochi-no-mikoto Oteue no Kusunoki",
@@ -568,9 +577,10 @@
         "https://commons.wikimedia.org/wiki/File:Ryotokuji_no_Ohatsuki_Icho_A.jpg",
         "https://commons.wikimedia.org/wiki/File:Ryotokuji_no_Ohatsuki_Icho_B.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as mai_001 (Ryotokuji no Ohatsuki Icho) in maibara.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Saikaku, Terukuni-jinja",
@@ -581,7 +591,8 @@
         "https://commons.wikimedia.org/wiki/File:Terukuni-jinja_(Terukuni-ch%C5%8D,_Kagoshima)_VLux5_hdsr_04.jpg",
         "https://commons.wikimedia.org/wiki/File:Terukuni-jinja_(Terukuni-ch%C5%8D,_Kagoshima)_VLux5_hdsr_x10.jpg"
       ],
-      "status": "lead"
+      "status": "resolved",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as kag_002 (The Cycad Where Sperm Was First Discovered) in kagoshima.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Sajigami jinja no shidare akashide",
@@ -653,9 +664,10 @@
         "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_trunk_back.jpg",
         "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_trunk_front.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Katsura (Cercidiphyllum sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as fuk_015 (Shimo-ose no Okatsura) in fukuoka.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Shimokashiawa no Taihaku",
@@ -711,9 +723,10 @@
         "https://commons.wikimedia.org/wiki/File:Shirahatayama_Hachimangu_no_Ohatsuki_Icho._A.jpg",
         "https://commons.wikimedia.org/wiki/File:Shirahatayama_Hachimangu_no_Ohatsuki_Icho._B.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as mit_001 (Shirahatayama Hachimangu no Ohatsuki Icho) in mito.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Sugihokowakenomikoto-jinja no Ōkusu",
@@ -897,7 +910,8 @@
         "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_18.jpg",
         "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_19.jpg"
       ],
-      "status": "lead"
+      "status": "resolved",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as tok_014 (Yogo no Matsu) in tokyo.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Yuya no Naga Fuji",
@@ -908,9 +922,10 @@
         "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yuya_no_Naga_Fuji,_natural_monument_of_Japan_A.jpg",
         "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yuya_no_Naga_Fuji,_natural_monument_of_Japan_B.jpg"
       ],
-      "status": "lead",
+      "status": "resolved",
       "species": "Wisteria (Wisteria sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as iwt_001 (Yuya no Naga Fuji (the Long Wisteria of Yuya)) in iwata.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
       "name": "Zenshoji no O Sugi",
