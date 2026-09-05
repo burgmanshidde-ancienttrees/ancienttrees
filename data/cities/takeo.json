@@ -1,0 +1,63 @@
+{
+  "city": "Takeo",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Takeo maps one tree: the Great Camphor of Takeo Shrine, a hollow giant 20 metres round with a stone shrine built inside its own trunk. Shrine tradition puts it at 3,000 years old, older than any measurement can confirm, and it is repeatedly named among Japan's largest trees by girth. Published alone here because the tree is the destination, not because Takeo's research is finished.",
+  "meta_description": "The Great Camphor of Takeo: a hollow 20m-round camphor with a shrine inside its trunk, one of Japan's largest trees by girth.",
+  "question_meta": "Takeo's only mapped tree is the Great Camphor, a camphor tree 20 metres round with a shrine built inside its hollow trunk.",
+  "question_answer": "Takeo's only mapped tree is the Great Camphor of Takeo Shrine, a camphor tree 20 metres round and 30 metres tall on the shrine's own maple-lined approach path, traditionally said to be about 3,000 years old.",
+  "question_context": "There is a small stone shrine inside this tree. The camphor's trunk is hollow, roughly twenty square metres across, and a hokora to the god Tenjin stands in the cavity. From outside it measures 20 metres round and 30 metres tall, with a crown spreading more than 30 metres each way, which makes it one of the largest trees in Japan by girth and one of the three biggest in Saga Prefecture. It is the sacred tree of Takeo Shrine, founded in 735. Shrine tradition puts it at about 3,000 years old, a figure that is tradition rather than a measurement: nobody has counted rings or run a growth calculation, and a camphor of this girth is usually reckoned in the high hundreds to low thousands of years. Takeo City has been nursing it for decades, with restoration work from 1994 to 2003 and a widened protective barrier since 2022 after the city reported thinning foliage and spreading decay. It is still standing, reached along its own maple-lined path beyond the shrine's main hall, free to see.",
+  "hero_tree_id": "tak_001",
+  "oldest_tree_id": "tak_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Takeo?",
+      "a": "The Great Camphor of Takeo Shrine, traditionally said to be about 3,000 years old, though that figure is shrine tradition rather than a measured date."
+    },
+    {
+      "q": "Why is there a shrine inside the tree?",
+      "a": "The trunk is hollow, about 20 square metres across, and a stone hokora to the god Tenjin was built inside the cavity."
+    },
+    {
+      "q": "Is it really 3,000 years old?",
+      "a": "That is the shrine's own tradition, not a ring count. A camphor of this girth is more often reckoned in the high hundreds to low thousands of years, so treat the figure as folklore rather than a measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on the open grounds of Takeo Shrine with no ticket, though a widened barrier since 2022 keeps visitors a short distance from the trunk to protect the tree."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tak_001",
+      "name": "Takeo no Okusu (The Great Camphor of Takeo)",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "traditionally said to be about 3,000 years",
+      "age_min": 1000,
+      "age_max": 3000,
+      "girth_cm": 2000,
+      "height_m": 30,
+      "location": {
+        "address": "5335 Takeo, Takeo-cho, Takeo City, Saga Prefecture 843-0022, Japan (grounds of Takeo Shrine, along the maple-lined approach path beyond the main hall)",
+        "latitude": 33.18748,
+        "longitude": 130.01921,
+        "neighbourhood": "Takeo-cho, Takeo City"
+      },
+      "verified_sources": [
+        "https://www.city.takeo.lg.jp/kyouiku/bunkazai/pages/bunkazai/bunkazai-402.htm",
+        "https://www.takeo-kk.net/sightseeing/001283.php"
+      ],
+      "access": "Free, no ticket. Stands on the open grounds of Takeo Shrine (a public Shinto shrine, founded 735 AD), reached along its own dedicated approach path (Momiji-dori) past a second hand-washing basin. Since a 2022 protective measure the no-entry perimeter around the trunk has been widened for the tree's own health, so visitors now view it from a short distance rather than approach the trunk itself; a 2024-2027 redevelopment of the neighbouring cultural hall does not close the tree to viewing.",
+      "transport": "JR Takeo Onsen Station (Sasebo Line), about 25 minutes on foot; bus from the station toward Yutoku, alight at Takeo Koko-mae and walk about 10 minutes; about 10 minutes by car from Takeo-Kitakata IC on the Nagasaki Expressway.",
+      "story": "There is a small stone shrine inside this tree. The camphor's trunk is hollow, roughly twenty square metres across, or twelve tatami mats by the local reckoning, and a hokora to Tenjin stands in the cavity. From outside it measures 20 metres round and 30 metres tall, with a crown spreading more than 30 metres each way, which makes it one of the largest trees in Japan by girth and one of the three biggest in Saga Prefecture.\n\nIt is the goshinboku, the sacred tree, of Takeo Shrine, founded in 735. Shrine tradition puts the camphor at about 3,000 years old. That figure is tradition rather than a measurement: nobody has counted rings or run a growth calculation, and a camphor of this girth is usually reckoned in the high hundreds to low thousands of years. Either way it was already old when the shrine's first post went into the ground.\n\nTakeo City has been nursing it for decades. Restoration work ran from 1994 to 2003, with soil treatment, cables against splitting and sealant in the hollow. In April 2022 the city reported thinner foliage, dead limbs and decay spreading through the trunk, and widened the barrier around the base to let the roots recover. So you look at it from a few metres back now, standing at the end of its own maple-lined path beyond the main hall, which is close enough. It is still here, and it is still the reason to come to Takeo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

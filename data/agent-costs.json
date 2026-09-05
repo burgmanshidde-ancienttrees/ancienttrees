@@ -5324,6 +5324,24 @@
         "note": "single-tree write pass, the whole pending queue at dispatch time; batch-of-one overhead per BRIEF_WRITING.md. Fixed species name at merge (Winter Linden -> canonical Small-leaved Lime, hard rule 9) and built the new single-tree place city file, faq, question fields",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "_famous-japan batch d",
+        "kind": "verify",
+        "tokens": 195759,
+        "trees": 1,
+        "note": "6 candidates checked: 5 turned out to be duplicates of already-published trees (Kencho-ji junipers, Kanazawa raised-root pine, Nagoya castle kaya, Kamo camphor, Nago Hinpun banyan), all caught by passcheck --brief / coordinate check before writing; 1 new single-tree place (Takeo Great Camphor, tak_001). All 6 leads marked resolved.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Takeo (tak_001)",
+        "kind": "write",
+        "tokens": 95393,
+        "trees": 1,
+        "note": "single-tree write pass, batch-of-one overhead; built new single-tree place city file, faq, question fields",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
