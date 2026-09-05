@@ -2,10 +2,10 @@
   "city": "Hiroshima",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Hiroshima keeps a register of trees that were standing on 6 August 1945. There are 160 of them, all within about two kilometres of the hypocentre, and the city records each one with its species, its address and its distance from the point the bomb went off. The closest is a weeping willow 370 metres away. Almost all of them were burned back to the trunk, and almost all put out shoots the following spring, which is the thing people came to look at. Eight of them are here, and they make one walk through the middle of the city.",
+  "intro": "Hiroshima keeps a register of trees that were standing on 6 August 1945. There are 160 of them, within about two kilometres of the hypocentre, each recorded by species, address and distance from the point the bomb went off. The closest is a weeping willow 370 metres away. Almost all were burned back to the trunk and put out shoots the following spring, which is the thing people came to look at. Eleven are here: eight make one walk through the middle of the city, and three more, a shrine's camphors and a hackberry, stand a separate short trip north.",
   "meta_description": "Hiroshima's registered A-bombed trees: a willow 370 metres from the hypocentre, camphors at a shrine, and a ginkgo growing through a temple gate roof.",
   "question_answer": "Nobody can say for certain, because Hiroshima's tree register records distance from the hypocentre rather than age. The strongest candidates are the three camphors in the courtyard of Shirakami Shrine, 490 metres from the hypocentre on Peace Boulevard, and the trees inside Shukkeien, a garden laid out in 1620.",
-  "question_meta": "Hiroshima does not publish ages for its A-bombed trees. Why, which trees are probably oldest, and 7 more that were standing on 6 August 1945.",
+  "question_meta": "Hiroshima does not publish ages for its A-bombed trees. Why, which trees are probably oldest, and 10 more that were standing on 6 August 1945.",
   "question_context": "Hiroshima's tree list was not built to answer this question. The city began registering trees in 1996 on one criterion, that they were within roughly two kilometres of the hypocentre and survived the bomb, and what it records for each is species, address, owner and distance in metres. There is no age column and no girth column, so an honest answer has to come from somewhere else. Two places are worth trusting. Shirakami Shrine has stood on its rock outcrop in the middle of the city since long before the modern street plan, and the three camphors in its courtyard were mature trees in 1945. Shukkeien was laid out in 1620 for the Asano lords of Hiroshima and its ginkgo, muku and black pine were all standing when the bomb went off 1,370 metres away. What every tree on this page does have is a floor nobody can argue with: it was alive on 6 August 1945, which makes it at least 81 years old. If you know of a measured age for any of them, tell us.",
   "oldest_tree_id": "hir_002",
   "faq": [
@@ -23,11 +23,11 @@
     },
     {
       "q": "Are Hiroshima's A-bombed trees free to visit?",
-      "a": "Seven of the eight here are, standing in public parks, on temple and shrine grounds or on the street. Shukkeien garden charges a small entry fee. Many other registered trees stand inside school grounds and are not included here for that reason."
+      "a": "Ten of the eleven here are, standing in public parks, on temple and shrine grounds or on the street. Shukkeien garden charges a small entry fee. Many other registered trees stand inside school grounds and are not included here for that reason."
     },
     {
       "q": "Can you walk between them?",
-      "a": "Yes, and it is the point of this page. Six of the eight lie within a two kilometre stretch of central Hiroshima, from Peace Memorial Park north past Shirakami Shrine and the castle to the temple street at Teramachi. Shukkeien is a further kilometre east, and Anrakuji about two kilometres north of that."
+      "a": "Mostly. Six of the eleven lie within a two kilometre stretch of central Hiroshima, from Peace Memorial Park north past Shirakami Shrine and the castle to the temple street at Teramachi. Shukkeien is a further kilometre east, and Anrakuji about two kilometres north of that. A camphor pair and a hackberry at Shinjo-no-miya Shrine stand another 2.3 to 2.5 kilometres north again, a genuinely separate trip rather than part of the same walk."
     }
   ],
   "trees": [
@@ -312,6 +312,101 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Registered as N21a53-01 at 2,160 m, not transplanted. Girth 4.55 m and height 20 m from Hiroshima's tourism authority page for this tree, which is the only measurement published for any tree on this page; no age anywhere. The gate with the hole in its roof was built in 1990 and repaired in 1994 and is separately registered as an A-bombed building. The pin is the temple."
+    },
+    {
+      "id": "hir_009",
+      "name": "The Husband Camphor of Shinjo-no-miya Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Shinjo-no-miya Shrine (新庄之宮神社), Oomiya, Nishi-ku, Hiroshima",
+        "latitude": 34.4205855,
+        "longitude": 132.4575372,
+        "neighbourhood": "Oomiya, Nishi-ku"
+      },
+      "story": "Nobody at this shrine calls this tree by its species. It is the husband, Otoko-gusu, and the camphor standing beside it is the wife.\n\nThe two were a landmark for anyone leaving Hiroshima on the road north towards Kabe, a pair of crowns you steered by. This is the larger one. The national giant-tree register measured it in 2000 at 6.4 metres round and 35 metres tall, and recorded its health as good. The prefecture's own encyclopedia of Hiroshima publishes 6.5 metres, close enough to be the same tape read twice.\n\nThe camphors and the grove around them carry a natural monument designation, and the paperwork behind it does not agree with itself. The encyclopedia calls it prefectural. The national register's own code reads municipal. Both are recorded here as they stand.\n\nThe shrine keeps a harder record than either. Its main hall sits 2.9 kilometres from the hypocentre and is on the city of Hiroshima's list of structures that survived the atomic bomb.\n\nNobody has dated the camphor. The register's age band is blank, and camphor growth varies too much between sites to run an age backwards off a trunk. If you know when this one went in, tell us.\n\nIt is a separate errand from the downtown trees, about two and a half kilometres north and five minutes on foot from the Oshibacho bus stop.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69341&branch_number=1",
+        "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%BA%84%E4%B9%8B%E5%AE%AE%E7%A5%9E%E7%A4%BE",
+        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889"
+      ],
+      "access": "Shinto shrine grounds (公表不可の理由 blank on the register, i.e. no withholding reason given); grounds are open to the public in daylight per the public-religious-ground reading of hard rule 10. No admission fee.",
+      "transport": "About 2.3-2.5km north of the existing downtown cluster (hir_001-008, Peace Park/Castle area): the ja.wikipedia article itself states the shrine is a 5-minute walk from the 'Oshibacho' (大芝町) bus stop on the Hiroshima Kotsu network. Genuinely a separate, short trip from downtown rather than part of the same walk; honest as its own small cluster with the two other trees on these grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "girth_cm": 640,
+      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop."
+    },
+    {
+      "id": "hir_010",
+      "name": "The Wife Camphor of Shinjo-no-miya Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Shinjo-no-miya Shrine (新庄之宮神社), Oomiya, Nishi-ku, Hiroshima",
+        "latitude": 34.4205855,
+        "longitude": 132.4575372,
+        "neighbourhood": "Oomiya, Nishi-ku"
+      },
+      "story": "Every published account of these two camphors calls them a matched pair, both around 30 metres tall. The people who came with a tape found something else.\n\nSurveying the trees one by one in 2000, the national giant-tree register put the husband at 35 metres and this tree, Onna-gusu, the wife, at 23. The girths run the same way: 5.4 metres here against 6.4 next door. The prefecture's encyclopedia of Hiroshima publishes 5.5 metres for this trunk, close enough to be the same measurement in a different hand, but the heights have never been reconciled and both sets of figures stand.\n\nNone of that makes it a small tree. The same survey recorded its health as good, and a 5.4 metre trunk holds its own beside anything else in the grove. The two camphors and the grove around them are a designated natural monument, prefectural by the encyclopedia's account and municipal by the code on the national register.\n\nThe ground it stands on carries a formal record of its own. The shrine's main hall is 2.9 kilometres from the hypocentre and appears on Hiroshima's official list of hibaku kenzobutsu, the buildings left standing after the atomic bomb.\n\nThe age of this camphor has never been established and the register leaves the field blank. If somebody has a planting date, or a shrine record that gives one, we would like to hear it.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69342&branch_number=1",
+        "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%BA%84%E4%B9%8B%E5%AE%AE%E7%A5%9E%E7%A4%BE",
+        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889"
+      ],
+      "access": "Shinto shrine grounds (公表不可の理由 blank on the register); open to the public in daylight per the public-religious-ground reading of hard rule 10. No admission fee.",
+      "transport": "Same site as hir_009: about 2.3-2.5km north of the downtown cluster, 5 minutes' walk from the 'Oshibacho' (大芝町) bus stop per ja.wikipedia.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "girth_cm": 540,
+      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop."
+    },
+    {
+      "id": "hir_011",
+      "name": "The Hackberry of Shinjo-no-miya Shrine",
+      "species": "Chinese Hackberry (Celtis sinensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Shinjo-no-miya Shrine (新庄之宮神社), Oomiya, Nishi-ku, Hiroshima",
+        "latitude": 34.4205855,
+        "longitude": 132.4575372,
+        "neighbourhood": "Oomiya, Nishi-ku"
+      },
+      "story": "The national register that catalogues this tree keeps a field for a local nickname. Beside the two camphors on the same grounds it is filled in. Beside this one it reads: none.\n\nThat is the only modest thing about it. The 2000 giant-tree survey recorded an enoki, the Chinese hackberry, with a trunk 4.82 metres round and a crown at 26 metres, health good. By the register's own figures that puts it three metres above the celebrated wife camphor on the same grounds, and nobody has ever given it a name for the trouble.\n\nIt is part of the shrine's wood rather than a specimen planted in front of it. The prefecture's encyclopedia of Hiroshima, describing that wood, lists enoki among its broadleaves alongside zelkova, mukunoki and mukuroji, though it names no individual tree and publishes no measurements. Two sources for the species and the grove, then, and one for the tape.\n\nThe wood grows on ground the city has formally recorded: the shrine's main hall, 2.9 kilometres from the hypocentre, is one of Hiroshima's listed hibaku kenzobutsu, the buildings that were still standing after the atomic bomb.\n\nThe hackberry's age has never been documented. The register left the band empty and no second source fills it, so if you know anything about when it went in, tell us.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69343&branch_number=1",
+        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889"
+      ],
+      "access": "Shinto shrine grounds (公表不可の理由 blank on the register); open to the public in daylight per the public-religious-ground reading of hard rule 10. No admission fee.",
+      "transport": "Same site as hir_009/hir_010: about 2.3-2.5km north of the downtown cluster, 5 minutes' walk from the 'Oshibacho' (大芝町) bus stop per ja.wikipedia (cited on the camphors' entry; the wikipedia article itself does not separately name the hackberry).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "girth_cm": 482,
+      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop."
     }
   ]
 }
