@@ -1,6 +1,43 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation) - Degsne and Kintai ship; git push then starts failing on an expired token
+
+Released `_famous-japan`, claimed `_famous-lithuania` (94 leads, untouched)
+and verified 6 candidates. 2 cleared the single-tree-destination bar: **the
+Degsnė Forest Larch**, 49 metres tall and documented by Lithuania's own
+State Protected Areas Service as the tallest tree in the country, in a
+forest stand planted 1849; and **the Great Thuja of Kintai**, a western red
+cedar with a 50-year measurement series (1973-2021) proving it still
+growing, reputed the tallest of its kind in the country. Shipped as two new
+places, `degsne.json` (deg_001) and `kintai.json` (kin_001), Lithuania's
+first two published places. 3 more held as leads (real but no record or
+legend beyond a bare designation) and 1 confirmed dead and blocked (Karpio
+tuopa, a poplar with a genuinely good legend, but the verify pass looked at
+the actual Commons photos and found a bare dead stump under a protective
+roof, matching the on-site sign's account of a 2011 lightning strike).
+
+Also caught and fixed a bad auto-generated alias: `city_names.py` matched
+"Degsne" to the Wikipedia article for Alytus, a real but unrelated city
+about 20km away, inside its 40km sanity radius but the wrong place
+entirely. Reverted the generated `search_names`/`wikipedia_titles` entries
+and recorded the miss in `unresolved_names` so a future run does not
+regenerate it silently.
+
+Preflight, tree_index, build (4474 pages) and qa (6633 pages) all clean.
+Committed locally (bbbc73be). **`git push` then started failing with
+"Invalid username or token. Password authentication is not supported for
+Git operations"**, repeated on four retries a few minutes apart; the
+embedded installation token in `.git/config`'s remote URL decodes to a
+1-hour TTL (`iat`/`exp` exactly 3600s apart) and this session had been
+running past that mark. FOR HIDDE: this commit is sitting local-only in
+the runner's checkout and needs a fresh push once the token is renewed;
+nothing is lost, the working tree is clean and `git log origin/main..HEAD`
+shows exactly the one commit. Released the `_famous-lithuania` claim
+locally; that release is itself in the unpushed commit, so a fresh session
+picking up this claim before the push lands will see it as still held (it
+will still expire on its own 4-hour timer regardless).
+
 ## 2026-09-05 (continuation) - Takeo: a second new single-tree place, 5 duplicates caught in the _famous-japan shelf
 
 Released `_famous-germany`, claimed `_famous-japan` (next-biggest unsourced
