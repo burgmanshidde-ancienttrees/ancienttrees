@@ -5456,7 +5456,7 @@
     "kind": "verify",
     "tokens": 100000,
     "trees": 9,
-    "note": "48 lead-status candidates in the leads file; 9 verified and appended to _famous-france-verified.json, 37 left as leads for a future pass. Also surfaced two lost prior-pass research files (famousfrance-verified.json, famousfrancebatch1-verified.json) referenced but not present in the repo.",
+    "note": "48 lead-status candidates in the leads file; 9 verified and appended to _famous-france-verified.json, 37 left as leads for a future pass. Flagged two research files referenced in older lead notes (famousfrance-verified.json, famousfrancebatch1-verified.json) as missing/lost; checked and they were a false alarm, the 6 trees they covered (erd_001, pty_001, arb_001, cnt_001, pgs_001, smn_001) are all already live in data/cities, the pointer notes were just stale.",
     "wasted": 0,
     "brief_wrong": false
    },
@@ -5464,8 +5464,8 @@
     "target": "France famous trees",
     "kind": "write",
     "tokens": 58000,
-    "trees": 8,
-    "note": "8 stories from _famous-france-verified.json; yvi_001 skipped (no coordinate). Several carry open access/vitality flags, not yet merged into data/cities.",
+    "trees": 7,
+    "note": "8 stories drafted from _famous-france-verified.json; 7 merged into data/cities (tou_001 Toul, est_001 Estry, ran_001 Rannee, cly_001 Les Clayes-sous-Bois, arg_001 Argoules, jnc_001 Aubers, rys_001 Reyersviller). tbf_001 (Tombeboeuf) held back: unconfirmed 2022 fissure report and ambiguous private-land access. yvi_001 not written (no coordinate).",
     "wasted": 0,
     "brief_wrong": false
    }
