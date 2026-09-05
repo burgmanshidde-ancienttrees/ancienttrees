@@ -696,11 +696,12 @@
       "planted": "1625-1650",
       "species_nl": "zomerlinde",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 4.18,
-      "nearest_ours": "ein_002 De Gevlekte Zuiderling (Eindhoven)",
-      "status": "lead",
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "nun_001 The Dorpslinde of Nuenen (Nuenen)",
+      "status": "mapped",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "paardenkastanje zusterplein",
@@ -727,9 +728,10 @@
       "planted": "1615-1625",
       "species_nl": "zomereik",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 4.66,
-      "nearest_ours": "ame_001 The Catalpa on the City Wall (Amersfoort)",
-      "status": "lead"
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "stn_001 Adam en Eva of Stoutenburg (Stoutenburg)",
+      "status": "mapped",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "hollandse linde rosmalen",
@@ -757,10 +759,10 @@
       "planted": "1520-1720",
       "species_nl": "zomereik",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 5.61,
-      "nearest_ours": "arn_002 The Dalweg Oak (Arnhem)",
-      "status": "verified_partial",
-      "reason": "Philemon ships as a standalone entry in data/research/bomenbieb-dutch-verified.json (2026-09-05 verify pass). Baucis is dead (blew over in storm Ciaran, late 2023) despite bomenbieb's vitality field still saying alive; see blocked list."
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "vlp_001 Philemon (Velp)",
+      "status": "mapped",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "duizendjarige den wolfheze",
@@ -816,9 +818,10 @@
       "planted": "1550-1710",
       "species_nl": "zomereik",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 6.43,
-      "nearest_ours": "arn_001 De Poortwachters (Arnhem)",
-      "status": "lead"
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "wlf_001 The Wodanseiken (Wolfheze)",
+      "status": "mapped",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "robinia kasteel doorwerth",
@@ -846,9 +849,10 @@
       "planted": "rond 1676 of rond 1704",
       "species_nl": "hollandse-linde",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 7.11,
-      "nearest_ours": "til_005 The Silver Maple of the Leijpark (Tilburg)",
-      "status": "lead"
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "hvb_001 The Gebodenlinde of Hilvarenbeek (Hilvarenbeek)",
+      "status": "mapped",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "zomerlinde oisterwijk",
@@ -890,11 +894,12 @@
       "planted": "1200-1700",
       "species_nl": "zomereik",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 7.72,
-      "nearest_ours": "bre_003 The Caucasian Wingnut of Valkenberg (Breda)",
-      "status": "lead",
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "dho_001 The Heilige Eik (Holy Oak) of Den Hout (Den Hout)",
+      "status": "mapped",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "knoteiken koningstafel",
@@ -906,9 +911,10 @@
       "planted": "1200-1750",
       "species_nl": "wintereik",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 8.69,
-      "nearest_ours": "ede_004 The Oak in the Hoekelum Meadow (Ede)",
-      "status": "lead"
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "rhe_001 The Pollard Oaks of the Koningstafel (Rhenen)",
+      "status": "mapped",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "duizendjarige eik doornenburg",
@@ -920,11 +926,12 @@
       "planted": "Onduidelijk",
       "species_nl": "zomereik",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 8.85,
-      "nearest_ours": "nij_011 The Yew of the Bartholomeuskerkje (Nijmegen)",
-      "status": "lead",
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "drn_001 The Thousand-Year Oak of Doornenburg (Doornenburg)",
+      "status": "mapped",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "dikke boom oele",
@@ -1248,9 +1255,10 @@
       "planted": "Omstreeks 1550",
       "species_nl": "zomereik",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 17.72,
-      "nearest_ours": "ens_001 The Wellingtonia of the Ledeboerpark (Enschede)",
-      "status": "lead"
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "fle_001 The Kroezeboom of Fleringen (Fleringen)",
+      "status": "mapped",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "zilverlinde blijham",
@@ -1338,9 +1346,10 @@
       "planted": "vermoedelijk 1622-1623",
       "species_nl": "zomerlinde",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 20.43,
-      "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-      "status": "lead"
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "vrd_001 The Lodewijkslinde of Vorden (Vorden)",
+      "status": "mapped",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "fladderiepen eibergen",
@@ -1366,11 +1375,12 @@
       "planted": "1580-1630",
       "species_nl": "hollandse-linde",
       "alive_per_source": "Ja",
-      "nearest_ours_km": 21.48,
-      "nearest_ours": "nij_003 The Beech Circle of Sterrenbos (Nijmegen)",
-      "status": "lead",
+      "nearest_ours_km": 0.0,
+      "nearest_ours": "smb_001 The Linde van Sambeek (Sambeek)",
+      "status": "mapped",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published as its own single-tree place on 2026-09-05 (bomenbieb-dutch verify batch); this lead is now fulfilled, not a near-match to an unrelated tree."
     },
     {
       "name": "lindelaan fogelsanghstate",
