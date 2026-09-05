@@ -5185,6 +5185,68 @@
    ],
    "trees": 19,
    "logged": true
+  },
+  {
+   "started": "2026-09-05T01:53:55+00:00",
+   "date": "2026-09-05",
+   "run_id": "33937513413",
+   "minutes": 76.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 411,
+   "denials": 47,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(sed)",
+   "ended": "success",
+   "tokens": 19332491,
+   "claims_held": [
+    "_famous-japan"
+   ],
+   "commits": 14,
+   "cities_touched": 10,
+   "cities": [
+    {
+     "city": "hokuto",
+     "trees": 2
+    },
+    {
+     "city": "maebashi",
+     "trees": 2
+    },
+    {
+     "city": "fujikawaguchiko",
+     "trees": 1
+    },
+    {
+     "city": "himi",
+     "trees": 1
+    },
+    {
+     "city": "hino",
+     "trees": 1
+    },
+    {
+     "city": "iwata",
+     "trees": 1
+    },
+    {
+     "city": "kimotsuki",
+     "trees": 1
+    },
+    {
+     "city": "oguni",
+     "trees": 1
+    },
+    {
+     "city": "yabu",
+     "trees": 1
+    },
+    {
+     "city": "yamanashi-city",
+     "trees": 1
+    }
+   ],
+   "trees": 12,
+   "logged": true
   }
  ],
  "schedule_changes": [
