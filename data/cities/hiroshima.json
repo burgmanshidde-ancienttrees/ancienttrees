@@ -2,7 +2,7 @@
   "city": "Hiroshima",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Hiroshima keeps a register of trees that were standing on 6 August 1945. There are 160 of them, within about two kilometres of the hypocentre, each recorded by species, address and distance from the point the bomb went off. The closest is a weeping willow 370 metres away. Almost all were burned back to the trunk and put out shoots the following spring, which is the thing people came to look at. Thirteen are here: eight downtown, three more at a shrine to the north, and two unrelated giants further out, at Ujina and a Nagatsuka temple.",
+  "intro": "Hiroshima keeps a register of 160 trees that were standing on 6 August 1945, within about two kilometres of the hypocentre, each recorded by species, address and distance from the blast. The closest is a weeping willow 370 metres away. Almost all were burned back to the trunk and put out shoots the following spring, which is the thing people came to look at. Fifteen are here: eight downtown, three at a shrine to the north, and four unrelated giants further out, from a lighthouse camphor to a cedar deep in a Mount Togo forest.",
   "meta_description": "Hiroshima's registered A-bombed trees: a willow 370 metres from the hypocentre, camphors at a shrine, and a ginkgo growing through a temple gate roof.",
   "question_answer": "The Renge Pine at Renkoji temple in Nagatsuka, on the northwest edge of the city, about four kilometres from Peace Memorial Park. Hiroshima's own tree register cannot answer this, since it records A-bombed trees by distance from the hypocentre rather than age, but the national giant-tree survey separately rates the pine's age band as 300 years or more, and temple tradition dates it to the temple's move here in 1630, which would make it roughly 390 years old.",
   "question_meta": "The A-bombed register has no ages. Hiroshima's oldest documented tree is a Nagatsuka temple pine, dated by tradition to about 1630.",
@@ -23,11 +23,11 @@
     },
     {
       "q": "Are Hiroshima's trees free to visit?",
-      "a": "Twelve of the thirteen are, standing in public parks, on temple and shrine grounds or on the street. Shukkeien garden charges a small entry fee. Many other registered trees stand inside school grounds and are not included here for that reason."
+      "a": "Fourteen of the fifteen are, standing in public parks, on temple and shrine grounds, on the street or, for the Mount Togo cedar, in national forest reached on foot. Shukkeien garden charges a small entry fee. Many other registered trees stand inside school grounds and are not included here for that reason."
     },
     {
       "q": "Can you walk between them?",
-      "a": "Mostly, for the eleven A-bombed trees. Six of them lie within a two kilometre stretch of central Hiroshima, from Peace Memorial Park north past Shirakami Shrine and the castle to the temple street at Teramachi. Shukkeien is a further kilometre east, and Anrakuji about two kilometres north of that. A camphor pair and a hackberry at Shinjo-no-miya Shrine stand another 2.3 to 2.5 kilometres north again, a genuinely separate trip rather than part of the same walk. Two more stand well outside any of this and are unrelated to the bombing: a camphor by the Ujina Lighthouse, a day trip south into Minami-ku, and a pine at Renkoji temple in Nagatsuka, about four kilometres northwest of the centre."
+      "a": "Mostly, for the eleven A-bombed trees. Six of them lie within a two kilometre stretch of central Hiroshima, from Peace Memorial Park north past Shirakami Shrine and the castle to the temple street at Teramachi. Shukkeien is a further kilometre east, and Anrakuji about two kilometres north of that. A camphor pair and a hackberry at Shinjo-no-miya Shrine stand another 2.3 to 2.5 kilometres north again, a genuinely separate trip rather than part of the same walk. Four more stand well outside any of this and are unrelated to the bombing: a camphor by the Ujina Lighthouse, a day trip south into Minami-ku; a pine at Renkoji temple in Nagatsuka, about four kilometres northwest of the centre; a ginkgo at Tomohiro Shrine further north again, in Kabe; and a cedar on Mount Togo reached only by a genuine forest hike, roughly an hour's drive plus 60 to 90 minutes on foot."
     }
   ],
   "trees": [
@@ -471,6 +471,77 @@
       "curation_status": "ai_generated",
       "location_precision": "approximate",
       "notes": "Ministry of Environment giant-tree register (report_id 69344), surveyed 2000, girth 350cm (the temple's own information board gives 320cm, used as girth_cm since it is the more specific site-level source). Age is temple tradition tied to the 1630 relocation (one account says 1624), corroborated by the register's own age band of 300 years or more; not a measured ring count. Pinned to the temple building (OSM place_of_worship node), no independent tree-level coordinate. Unrelated to the A-bombed register; the gate and Kannon hall beside it survived 1945, the pine's own history does not mention the bombing."
+    },
+    {
+      "id": "hir_014",
+      "name": "The Ginkgo of Tomohiro Shrine",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 225 to 325 years",
+      "age_min": 226,
+      "age_max": 325,
+      "girth_cm": 419,
+      "height_m": 25,
+      "location": {
+        "address": "1-14-18 Kabe-minami, Asakita-ku, Hiroshima",
+        "latitude": 34.4962907,
+        "longitude": 132.5139135,
+        "neighbourhood": "Kabe-minami, Asakita-ku"
+      },
+      "verified_sources": [
+        "https://dive-hiroshima.com/en/explore/3395/",
+        "https://www.chugoku-np.co.jp/articles/-/469634",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53004&branch_number=1"
+      ],
+      "access": "Free. Tomohiro Shrine is a neighbourhood tutelary shrine with grounds open to visitors, consistent with its status as a city-designated natural monument.",
+      "transport": "JR Kabe Line to Nakashima Station, about 8 minutes on foot",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late November, when the whole crown turns gold"
+      },
+      "story": "The 1943 flood carried off the shrine's torii gate. The ginkgo standing behind it did not move, and the gate took sixty-nine years to come back: the replacement went up only in 2012.\n\nTomohiro Shrine sits on low ground in Nakajima, boxed in by the Ota, Nenotani and Misasa rivers, in an area with a long history of flooding. The Chugoku Shimbun, Hiroshima's own paper, went out to profile the tree for coming through that one intact. The city counts it among Hiroshima's three major ginkgo trees and made it a designated natural monument in April 1995.\n\nThe measurements disagree slightly, and the reason is mundane: the city records a girth of 415cm at chest height, the Environment Ministry's giant-tree register 419cm, taken on a different day by different hands. Both put it around 25 metres tall, with limbs reaching almost ten metres out to the north. The register's 2000 survey placed it in the 200 to 299 year band, which makes it somewhere between 225 and 325 years old now.\n\nIt is a male tree, so late November brings the gold without the fallen fruit that gives ginkgo pavements their reputation. Eight minutes on foot from Nakashima Station, and the gate you walk under is younger than almost everyone walking under it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hir_015",
+      "name": "The Shihon-sugi (Four-Trunk Cedar) of Mount Togo",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 200 to 400 years (sources disagree)",
+      "age_min": 190,
+      "age_max": 400,
+      "girth_cm": 990,
+      "height_m": 46,
+      "location": {
+        "address": "On the Mount Togo (Togo-yama) hiking trail, Ege, Yuki-cho, Saeki-ku, Hiroshima, inside the Egatanikeyama national forest",
+        "latitude": 34.4758413,
+        "longitude": 132.3074942,
+        "neighbourhood": "Yuki-cho Ege, Saeki-ku (Mount Togo)"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53306&branch_number=1",
+        "https://www.rinya.maff.go.jp/kinki/policy/business/sitasimou/kyojin/i_a-04-08.html",
+        "http://tonari.gozaru.jp/taiju/sugi_shihon.html"
+      ],
+      "access": "Free, but a genuine hike rather than a walk: national forest land on Mount Togo, reached via a forest road to a trailhead (about 30 min by car from Yuki) then roughly 60 to 90 minutes on foot, steepening near the top; proper hiking footwear needed. Widely logged as recently visited on Japanese hiking-log sites (Yamareco, YAMAP), most recently 2022, so the trail is actively used and maintained.",
+      "transport": "No public transit reaches the trailhead; by car from central Hiroshima roughly 1 hour to Yuki, then the hike above. No bus stop within a day-trip walk.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "About three or four metres up, this cedar stops being one tree. The trunk divides into four stems, each more than a metre thick, which is where the name comes from: Shihon-sugi, the four-trunk cedar. Japanese accounts describe it as four cedars fused into one, presenting a different silhouette from every angle you walk it from.\n\nThe Forestry Agency named it one of the 100 Giant Trees of Japan in 2000. After that the sources stop agreeing. The Kinki-Chugoku forest office, which manages the tree, measured 11.5 metres of girth in 2002 and gives the height as 46 metres and the age as 190 years. The Environment Ministry's register, surveying in 1988, recorded 9.9 metres round and no age at all. A hiking page puts the chest-height girth at 14 metres, and one tree-hunter's site matches the register's girth while claiming 30 metres of height and 400 years of age. Somewhere inside that spread stands a very large cedar, and nobody has settled which figures are right.\n\nGetting to it is the price of admission. The tree is on national forest land on Mount Togo, up a forest road to a trailhead roughly half an hour's drive from Yuki, then sixty to ninety minutes on foot with a steep finish. Hikers logged the trail as recently as 2022. Wear proper boots, and expect to hunt: it stands on the descent path rather than at any address.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
