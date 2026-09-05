@@ -1,0 +1,61 @@
+{
+  "city": "Kawazu",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kawazu sits on the east coast of the Izu Peninsula, at the far end of the winding coastal line from Ito, and the reason to get off the train here is a single camphor tree. The great camphor of Sugihokowakenomikoto-jinja is fifteen metres round and twenty-four metres tall, tied for the second-thickest tree in Shizuoka prefecture, and it is the last survivor of seven great camphors that once stood in the old district. A sign at the shrine entrance exists to stop people admiring the wrong tree.",
+  "meta_description": "The great camphor of Sugihokowakenomikoto-jinja in Kawazu, Japan: fifteen metres round, a Natural Monument since 1936, last of the district's seven giants.",
+  "question_meta": "Kawazu's mapped tree is the great camphor of Sugihokowakenomikoto-jinja, fifteen metres round and cited at a thousand years or more.",
+  "question_answer": "Kawazu's oldest and only mapped tree is the great camphor of Sugihokowakenomikoto-jinja, a Cinnamomum camphora standing behind and to the left of the main hall. It measures about fifteen metres round and twenty-four metres tall, and published sources put it at a thousand years or more.",
+  "question_context": "The thousand-year figure is tradition rather than a ring count, which is normal for a Japanese shrine camphor and worth saying plainly. The girth is not tradition. The Environment Ministry's giant-tree survey recorded fourteen metres in 1990, when the tree ranked nineteenth in the country, and fifteen metres in the 2001 round, by which point it had slipped to thirty-second because surveyors had found more giants elsewhere. Within Shizuoka it is tied for second, behind the camphor at Atami's Kinomiya-jinja. What sets it apart from the peninsula's other two famous camphors, at Atami and at Ito's Kuzumi-jinja, is that its trunk has not hollowed. Both of those have; this one has lost some large branches and nothing more. It was designated a national Natural Monument on 16 December 1936. Old Kawazu district was known for the Kawazu-go Nanakakae Nanakusu, seven great camphors, and by the middle of the Meiji era the other six had been felled. The shrine, locally called Kinomiya, signposts the way past two smaller camphors near the torii so visitors do not stop at the wrong trunk.",
+  "hero_tree_id": "kwz_001",
+  "oldest_tree_id": "kwz_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the last of the seven great camphors that once gave the old Kawazu district its name for them, and at roughly fifteen metres round it is tied for the second-thickest tree in Shizuoka prefecture."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Published sources agree on a thousand years or more. That is a traditional figure rather than a measured one; the girth, recorded twice by the national giant-tree survey, is the solid number."
+    },
+    {
+      "q": "Which camphor is the monument tree?",
+      "a": "Not the two near the torii. The designated tree stands further in, behind and to the left of the main hall, and a sign at the entrance points the way."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open grounds of Sugihokowakenomikoto-jinja, also known as Kawazu Kinomiya Shrine."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Take the Izu Kyuko Line to Kawazu Station and walk about 12 to 15 minutes, or catch a bus from the station to the Kinomiyaguchi stop."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kwz_001",
+      "name": "The Great Camphor of Sugihokowakenomikoto Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "1000 years or more",
+      "age_min": 1000,
+      "age_max": 1500,
+      "girth_cm": 1500,
+      "height_m": 24.0,
+      "location": {
+        "address": "154 Tanaka, Kawazu, Kamo District, Shizuoka 413-0504, Japan (grounds of Sugihokowakenomikoto-jinja, also called Kawazu Kinomiya Shrine, behind and to the left of the main hall)",
+        "latitude": 34.75432,
+        "longitude": 138.98889,
+        "neighbourhood": "Kawazu, east coast of the Izu Peninsula"
+      },
+      "story": "Six of the seven are gone. Old Kawazu district was known for the Kawazu-go Nanakakae Nanakusu, its seven great camphors, and by the middle of the Meiji era this was the only one left standing.\n\nIt is not the first camphor you meet. Two smaller ones grow near the torii of Sugihokowakenomikoto-jinja, the shrine locals call Kinomiya, and enough visitors have stopped at those that the shrine put up a sign telling them the natural monument is further on. It stands behind and to the left of the main hall: fifteen metres round, twenty-four metres tall, tied for the second-thickest tree in Shizuoka prefecture behind the camphor at Atami.\n\nPublished sources put it at a thousand years or more, which in Japan usually means tradition rather than a ring count, and this is no exception. The trunk can be measured, and has been twice. The Environment Ministry's giant-tree survey recorded fourteen metres of girth in 1990 and fifteen in 2001, ranking it nineteenth in the country and then thirty-second. The tree did not shrink; surveyors kept finding giants elsewhere.\n\nIts two famous neighbours on the peninsula, at Atami and at Ito's Kuzumi-jinja, have both hollowed out. This one has not. It has dropped some large branches over the centuries and kept its trunk whole, which at this age and this girth is rare.\n\nA national Natural Monument since December 1936.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%A1%99%E5%88%A5%E5%91%BD%E7%A5%9E%E7%A4%BE%E3%81%AE%E5%A4%A7%E3%82%AF%E3%82%B9",
+        "https://www.surugawan.net/guide/512.html"
+      ],
+      "access": "Free. Shrine grounds, open to visitors. A sign at the entrance points visitors past two smaller camphors near the torii and the main hall to the real monument tree further in ('the natural monument great camphor is further on').",
+      "transport": "Izu Kyuko Line to Kawazu Station, then about 12-15 minutes on foot (or a short bus ride from the station to the Kinomiyaguchi stop).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    }
+  ]
+}

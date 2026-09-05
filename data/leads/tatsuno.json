@@ -1,0 +1,17 @@
+{
+  "city": "Tatsuno",
+  "country": "Japan",
+  "city_slug": "tatsuno-hyogo",
+  "note": "From the 2026-09-05 famous-japan verification pass (verify: BRIEF_RESEARCH.md). Candidate failed only on structural grounds, not on existence, species or age.",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "Tatsuno no Katashibo Chikurin (龍野のカタシボ竹林)",
+      "species": "Katashibo-chiku, a rare half-ridged variant of Madake bamboo (Phyllostachys bambusoides var.)",
+      "lat": 34.864067,
+      "lng": 134.542679,
+      "status": "blocked",
+      "why": "Two independent structural blockers, not an evidence gap. (1) It is a bamboo GROVE inside a garden, not one collectible point: designated as '龍野のカタシボ竹林' (a chikurin, forest/grove) rather than an individual specimen, and BRIEF_RESEARCH.md's hard limits block an avenue or a whole wood outright. (2) The designated grove sits inside the private garden of a working ryokan (Umetama Ryokan, a 料亭旅館/inn-restaurant), on the site of a former samurai residence; ja.wikipedia states non-guests may view it ('宿泊者以外でもカタシボ竹林の見学は可能である') but this still means walking onto a commercial inn's grounds, almost certainly past reception, rather than a park or churchyard a visitor can simply walk into. Confirmed facts if this is revisited: designated a national Natural Monument 1958-05-15 (unique half-ridged bamboo variant found nowhere else in the world, brought from Awaji Island in the late Edo period by the Tatsuno domain's 9th lord Wakisaka Yasuori and never found growing wild there since); JR Kishin Line, Hon-Tatsuno Station, 15 min walk. Sources: ja.wikipedia.org/wiki/龍野のカタシボ竹林 (wikitext fetched); kunishitei.bunka.go.jp/heritage/detail/401/1885 (Agency for Cultural Affairs database, confirms designation date and location). Wikipedia pageviews ran 40-80/month for most of 2025. Would need a written access confirmation directly from the ryokan (e.g. 'garden viewing welcome, no booking needed') before it could ship, and even then the grove-not-a-point problem would remain."
+    }
+  ]
+}
