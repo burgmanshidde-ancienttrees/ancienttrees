@@ -2,6 +2,44 @@
 
 <!-- archive-index -->
 
+## 2026-09-05 (continuation) - Takeo: a new single-tree place from the _famous-japan claim, 5 duplicates caught
+
+Released `_famous-germany` and claimed `_famous-japan` next (still the
+second-biggest unsourced country batch after japan overtook it). Picked 6
+candidates: three that sit inside already-published cities (Kenchō-ji no
+Byakushin/Kamakura, Neagarinomatsu at Kenrokuen/Kanazawa, Nagoya-jo no
+kaya/Nagoya castle) and three standalone leads (Kamo-no-Okusu, Takeo no
+Okusu, Nago no Hinpun Gajumaru).
+
+**5 of the 6 turned out to be duplicates of trees already on the site**,
+each caught by running `passcheck.py --brief` and a direct coordinate
+check before writing anything, exactly the check that caught Göttingen's
+duplicate in the previous batch: Kenchō-ji's juniper is kmk_001 (~12m away),
+Kenrokuen's pine is kan_004 (~90m), Nagoya Castle's kaya is ngy_001 (~35m),
+Kamo's camphor is hmy_001 (higashimiyoshi.json, identical coordinate), and
+Nago's banyan is nag_001 (identical coordinate, its own existing place).
+The Nago duplicate check did produce one real improvement worth a future
+curation pass: independently confirmed the species as banyan (Ficus
+microcarpa, national register + ja.wikipedia) against the currently generic
+"Fig (Ficus sp.)" on file, and found a dated alive-now event (a car struck
+the tree during a typhoon on 2026-08-08, minor damage, resecured, confirmed
+still standing).
+
+**Takeo no Okusu had no container and verified cleanly**: a 20-metre-girth,
+30-metre camphor on the grounds of Takeo Shrine (Saga Prefecture, founded
+735), sacred tree with a stone shrine built inside its own hollow trunk,
+traditionally said to be 3,000 years old (shrine tradition, not a
+measurement, kept broad and flagged), repeatedly named one of Japan's
+largest trees by girth and one of Saga's three biggest. Health has been
+declining for years (city restoration 1994-2003, a widened protective
+perimeter since a 2022 notice), still standing and viewable per the most
+recent evidence. Shipped as a new place, `takeo.json` (tak_001), distinct
+from the existing Kawago place (kwg_001, a different camphor 7.5km away in
+the same municipality). All 6 leads marked resolved so this batch never
+re-runs. Preflight (0 problems, only the expected "never looked up in
+other languages" NOTE), city_names, tree_index, build and qa all clean;
+committed, pushed, released the claim.
+
 ## 2026-09-05 (continuation) - Scheessel: a new single-tree place from the _famous-germany claim, plus 5 leads held or blocked
 
 Shelf refill: `prepare.py` reported "REFILL THE SHELF FIRST" (0 leads ready
