@@ -173,6 +173,20 @@ jobs:
             # autoStash so the NEXT script that writes a file nobody listed here
             # cannot kill the run the same way. Naming files is the fix; this is
             # the belt, because the list will go stale again.
-            git -c rebase.autoStash=true pull --rebase
-            git push
+            #
+            # Retried since 2026-09-05: the 09:06 UTC run rebased clean and
+            # still lost the push, because a night run landed on main in the
+            # gap between the rebase and the push itself. That gap is a race
+            # no single pull--rebase closes, so the whole pull-then-push pair
+            # gets up to three tries before the entry is dropped for the day.
+            n=0
+            until git -c rebase.autoStash=true pull --rebase && git push; do
+              n=$((n + 1))
+              if [ "$n" -ge 3 ]; then
+                echo "push still rejected after $n tries; giving up for today"
+                exit 1
+              fi
+              echo "push rejected (attempt $n); retrying after the next pull"
+              sleep 5
+            done
           fi
