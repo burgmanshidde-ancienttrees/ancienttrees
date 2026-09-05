@@ -58,6 +58,38 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "lnw_001",
+      "name": "The Marienlinde of Linden",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 985,
+      "location": {
+        "address": "Village centre of Linden, Gemeinde Wessobrunn, Landkreis Weilheim-Schongau, Bavaria, Germany",
+        "latitude": 47.8428,
+        "longitude": 11.0258,
+        "neighbourhood": "Linden, Gemeinde Wessobrunn"
+      },
+      "story": "A few kilometres from the Tassilolinde, in a hamlet that shares its municipality, stands a second lime with a name of its own. The Marienlinde of Linden is presumed roughly 400 years old, a figure German Wikipedia states plainly as an estimate rather than a measurement. The tree survey run by Rainer Lippert's monumentale-eichen.de project measured it in 2018 at 9.85 metres round at breast height, 20 metres tall, a broad crown that the tourist board lists as defining the character of the hamlet.\n\nUnlike its more famous neighbour, the Marienlinde carries no legend about a sleeping duke, just a name, a protected status as a Naturdenkmal, and four centuries of standing in one place. The regional tourist board groups it with the Tassilolinde as a pair of waypoints worth the detour, and locals treat it the same way: a landmark you drive past on the way into the hamlet, not a tourist stop with a car park.\n\nIt stands in the open in the middle of Linden, free to see at any hour, a short drive from Wessobrunn's own famous lime and easily added to the same trip.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Marienlinde_(Linden)",
+        "https://www.monumentale-eichen.de/andere-baumarten/linden/linden/"
+      ],
+      "access": "Free, no permission needed. A protected Naturdenkmal standing in the open in the hamlet of Linden; listed as a public point of interest by Chiemsee-Alpenland Tourismus.",
+      "transport": "Rural Upper Bavaria, no train station in Linden itself; Weilheim in Oberbayern is the nearest town with a station, roughly 20 to 25 minutes by car. About 3.7km from the Tassilolinde in Wessobrunn village, a short drive rather than a walk.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Marienlinde_%28Linden%2C_Wessobrunn%29_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Wilrooij, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3648,
+        "height": 4864
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     }
   ]
 }

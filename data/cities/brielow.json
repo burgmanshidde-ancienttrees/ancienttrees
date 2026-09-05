@@ -1,0 +1,69 @@
+{
+  "city": "Brielow",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Brielow maps one tree, and it is the thickest one in the whole of Brandenburg. The Schwedenlinde, a large-leaved lime roughly eleven and a half metres round, stands on the open churchyard in front of the village's Dorfkirche. Its trunk split into two long ago and has been held together with cables since at least 1880. Legend gives it its name: a Swedish officer killed in the Thirty Years' War, buried beneath it by the woman who loved him. It is free, open at all hours, and on the German Dendrological Society's own list of champion trees.",
+  "meta_description": "The Schwedenlinde: Brandenburg's thickest tree, an 11.5m-round lime on the open churchyard of Dorfkirche Brielow, Germany. Free, always open.",
+  "question_meta": "Brielow's only mapped tree is the Schwedenlinde, Brandenburg's thickest recorded tree, a lime roughly 400 to 600 years old.",
+  "question_answer": "Brielow's only mapped tree is the Schwedenlinde, a large-leaved lime on the churchyard of the Dorfkirche Brielow. It is roughly 11.5 metres round, the thickest recorded tree in Brandenburg, and estimated at 400 to 600 years old.",
+  "question_context": "The Schwedenlinde carries a legend rather than a record for its age: sources put it anywhere from 400 to 600 years old, and nobody disputes it is old enough to have picked up a story along the way. A Swedish officer, killed in the Thirty Years' War, is said to have been buried beneath the tree by the woman who loved him, which is where the name comes from. That is local legend, stated by German Wikipedia as legend rather than documented history. What is documented is the trunk: about 11.5 metres round, which Welt.de calls simply the thickest in Brandenburg, under a crown that different surveys have put at anywhere from 24 to 27 metres tall. The trunk split into two long ago and has been held together with cables and straps since at least 1880, repaired most recently after storm Kyrill tore through the region in 2007. The German Dendrological Society keeps it on its national list of record trees. It stands in the open on the churchyard in front of the Dorfkirche Brielow, in the middle of the village, free to walk up to at any hour.",
+  "hero_tree_id": "brw_001",
+  "oldest_tree_id": "brw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Brielow?",
+      "a": "The Schwedenlinde, a large-leaved lime on the churchyard of the Dorfkirche Brielow, estimated at 400 to 600 years old."
+    },
+    {
+      "q": "Why is it called the Schwedenlinde?",
+      "a": "Local legend holds that a Swedish officer, killed in the Thirty Years' War, was buried beneath the tree by the woman who loved him. German Wikipedia records this as legend, not documented history."
+    },
+    {
+      "q": "Is it really the thickest tree in Brandenburg?",
+      "a": "German sources, including Welt.de, call it exactly that: roughly 11.5 metres round, the widest recorded trunk in the state."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on the village churchyard, with no gate and no ticket, at any hour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "brw_001",
+      "name": "The Schwedenlinde of Brielow",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 400 to 600 years (sources disagree)",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 1155,
+      "location": {
+        "address": "Churchyard of the Dorfkirche Brielow, 14778 Brielow, Gemeinde Beetzsee, Landkreis Potsdam-Mittelmark, Brandenburg, Germany",
+        "latitude": 52.46064,
+        "longitude": 12.541721,
+        "neighbourhood": "Brielow, Gemeinde Beetzsee"
+      },
+      "story": "Brandenburg's thickest recorded tree stands in a village churchyard, not a forest, and it has been quietly falling apart for longer than anyone alive has watched it happen. The Schwedenlinde, a large-leaved lime in front of the Dorfkirche Brielow, measures roughly 11.5 metres round, wide enough that Welt.de calls it plainly the fattest trunk in the state. The trunk split into two long ago and has been held together with straps and cables since at least 1880, repaired again after storm Kyrill tore through the region in 2007.\n\nIts age is read two ways. German Wikipedia gives 400 to 500 years; a more recent survey by the tree register baumkunde.de, taken in 2025, gives 500 to 600. Nobody has settled it, so the honest figure spans both. What nobody disputes is that the tree is old enough to have earned its name from a story rather than a record: a Swedish officer, killed in the Thirty Years' War, is said to have been buried beneath it by the woman who loved him, and the tree has carried his memory ever since. Wikipedia states this plainly as legend, not documented fact, and so do we.\n\nIt grows in the open, on the churchyard in front of the village church, free for anyone to walk up to. The German Dendrological Society keeps it on its list of the country's record trees, and it was last photographed alive and standing in November 2025.",
+      "best_time": {
+        "months": [6, 7],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers open over the churchyard"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Schwedenlinde",
+        "https://www.baumkunde.de/baumregister/57-schwedenlinde_in_brielow/"
+      ],
+      "access": "Free, no permission needed. Stands on the open churchyard in front of the Dorfkirche Brielow, in the middle of the village.",
+      "transport": "Rural Brandenburg, no train station in Brielow itself; Brandenburg an der Havel is roughly 10 minutes away by car or bus.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Beetzsee-Brielow%2C_Schwedenlinde.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peter Troendlin, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4896,
+        "height": 2752
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
