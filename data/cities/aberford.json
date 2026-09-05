@@ -1,0 +1,63 @@
+{
+  "city": "Aberford",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Aberford maps one tree, and it is shaped like a letter. Around 1920 a young miner named Vic Stead grafted three beech saplings together in Parlington Woods so they would grow as an N, for Nellie Mosby, the woman he was courting. They married, and the letter kept growing: a century on it is UK Tree of the Year, a fixture of local marriage proposals, and the emblem of a campaign against development in the woods around it. Free, in open woodland, a twenty-minute walk from Aberford village.",
+  "meta_description": "Nellie's Tree in Aberford: three beeches grafted into a living letter N in 1920, UK Tree of the Year 2018, free in Parlington Woods.",
+  "question_meta": "Aberford's only mapped tree is Nellie's Tree, three beeches grafted into the letter N around 1920, UK Tree of the Year 2018.",
+  "question_answer": "Aberford's only mapped tree is Nellie's Tree, also called the Love Tree, three young beeches grafted together around 1920 in Parlington Woods (Parlington's Wilderness) so they would grow as the letter N, for Nellie Mosby. It is free to visit, a few hundred yards from the Dark Arch folly on Parlington Lane.",
+  "question_context": "The tree is not one trunk but three, bent and bound together by the miner Vic Stead as he courted Nellie Mosby; the couple married, and the graft has kept growing into a legible letter for over a century. That planting date is documented for this specific tree, so the roughly 105-year age given here is a real figure, not a guess. Richard Mabey included it in Flora Britannica in 1996 as one of the most touching twentieth-century landmark trees in the country. It won English Tree of the Year in 2018, then UK Tree of the Year the same year, and placed ninth in the 2019 European Tree of the Year. Locally known as the Love Tree, it has become both a popular spot for marriage proposals and the symbol of a campaign against development in the woods around it. Nobody has published a recent survey of its condition or ever measured its girth, so this page asks visitors who pass it to say how the N is holding up. The wood is free and open, reached on foot from Aberford village, about a fifteen to twenty minute walk along Parlington Lane from the Dark Arch.",
+  "hero_tree_id": "abf_001",
+  "oldest_tree_id": "abf_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Aberford?",
+      "a": "Nellie's Tree, three beeches grafted into the letter N around 1920 by a young miner courting Nellie Mosby. That is the only tree mapped here, and its age is about 105 years, documented rather than estimated."
+    },
+    {
+      "q": "Why is it shaped like a letter?",
+      "a": "Vic Stead, a Garforth miner, grafted three young beech saplings together so they would grow as the letter N, for the woman he was courting. They later married."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Parlington Woods, also called Parlington's Wilderness, is free and open woodland, a few hundred yards from the Dark Arch folly."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no rail station nearby. Buses run from Leeds, about 12km away, to Aberford village, then it is a 15 to 20 minute walk into Parlington Woods via Parlington Lane."
+    }
+  ],
+  "trees": [
+    {
+      "id": "abf_001",
+      "name": "Nellie's Tree",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "about 105 years",
+      "age_min": 95,
+      "age_max": 110,
+      "girth_cm": null,
+      "location": {
+        "address": "Parlington Lane, Parlington Woods (Parlington's Wilderness), near the Dark Arch, Aberford, West Yorkshire",
+        "latitude": 53.8193,
+        "longitude": -1.3572,
+        "neighbourhood": "Aberford, West Yorkshire"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Nellie's_Tree",
+        "https://parlington.co.uk/oddstuff-ghosts.html",
+        "https://yorkshireeveningpost.co.uk/news/historic-east-leeds-tree-is-shortlisted-for-tree-of-the-year-award-1-9354655"
+      ],
+      "access": "Free, publicly accessible woodland (Parlington Woods, also called Parlington's Wilderness). Reached on foot via Parlington Lane, a few hundred yards from the eastern end of the Dark Arch folly. Well known locally as a walking destination and a popular spot for marriage proposals.",
+      "transport": "No rail station nearby. Regular bus services run from Leeds (roughly 12km away) to Aberford village; from the village it is about a 15-20 minute walk into Parlington Woods via Parlington Lane to the tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A miner spelled his girlfriend's initial in living wood. Around 1920 Vic Stead, who worked the pits at Garforth, took three young beeches on his way through Parlington Woods and grafted them together so they would grow as the letter N. The N was for Nellie Mosby, the woman he was courting. They married, and the letter kept growing.\n\nA century later it is still legible: three trunks bound into one shape a few hundred yards from the Dark Arch on Parlington Lane, known locally as the Love Tree. Richard Mabey put it in Flora Britannica in 1996 as one of the most touching twentieth-century landmark trees in the country. In 2018 it was voted English Tree of the Year and then UK Tree of the Year, and in 2019 it placed ninth in Europe. It has since become the emblem of the local campaign against development in the woods around it, and it collects marriage proposals of its own; people walk out here with rings.\n\nThe wood is free and open, and it is about a twenty-minute walk in from Aberford village. The place to stand is the graft, where the three trunks meet and the letter resolves. The 1920 date is properly documented, which is more than most trees this age can say, but nobody has ever put a tape around the trunks and no recent survey of its condition is on record. If you walk past it, tell us how the N is holding up.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

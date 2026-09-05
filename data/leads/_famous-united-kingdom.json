@@ -1,370 +1,315 @@
 {
- "country": "United Kingdom",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Tree of the Year (Northern Ireland)",
-   "lat": 54.60706,
-   "lng": -5.96557,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2016_The_Peace_Tree_UKN.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017_The_Holm_Oak_UKN.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tree of the Year (Scotland)",
-   "lat": 56.56302,
-   "lng": -3.60653,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_Niel_Gow_s_Oak_UKS.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015_Lady%C2%B4s_Tree_UKS.jpg",
-    "https://commons.wikimedia.org/wiki/File:2016_The_Suffragette_Oak_UKS.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tree of the Year (Wales)",
-   "lat": 52.93147,
-   "lng": -3.09538,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_The_Oak_at_the_Gate_of_the_Dead_UKW.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015_The_Lonely_Tree_of_Llanfyllin_UKW.jpg",
-    "https://commons.wikimedia.org/wiki/File:2016_Survival_at_the_cutting_edge_oak_UKW.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Gilwell oak",
-   "lat": 51.65025,
-   "lng": 0.00116,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018_The_Gilwell_Oak_UK.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gilwell_Oak_(5948293396).jpg",
-    "https://commons.wikimedia.org/wiki/File:Gilwell_Park_London_-_Gillwell_Oak.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nellie's Tree",
-   "lat": 53.81928,
-   "lng": -1.35719,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2019_Nellie_s_Tree_UK.jpg",
-    "https://commons.wikimedia.org/wiki/File:N_for_Nellie_in_Parlingtons_Wilderness_(geograph_4402672).jpg",
-    "https://commons.wikimedia.org/wiki/File:Nellies_tree._(geograph_5953131).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Survivor Tree (Scotland)",
-   "lat": 55.401536,
-   "lng": -3.338243,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%27The_Survivor_Tree%27,_Carrifran_Wildwood_(geograph_6713950).jpg",
-    "https://commons.wikimedia.org/wiki/File:2021_Survivor_Tree_UK.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Ankerwycke Yew",
-   "lat": 51.44475915,
-   "lng": -0.55643598,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(1)_-_geograph.org.uk_-_2359683.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(2),_and_priory_ruins_-_geograph.org.uk_-_2359746.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(3)_-_a_closer_look_-_geograph.org.uk_-_2359824.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Borrowdale Yews",
-   "lat": 54.49839,
-   "lng": -3.1823,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Borrowdale_Yews_-_geograph.org.uk_-_1802260.jpg",
-    "https://commons.wikimedia.org/wiki/File:Borrowdale_Yews_-_geograph.org.uk_-_3492327.jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Borrowdale_Yews_-_The_English_Lakes_-_A._Heaton_Cooper.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Camberley Sequoiadendron Avenue",
-   "lat": 51.32849,
-   "lng": -0.6985,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue,_Camberley,_England-LCCN2002696444.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue,_Camberley,_England-LCCN2002696444.tif",
-    "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue_Camberley_England.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Groton Winthrop Mulberry",
-   "lat": 52.04127754,
-   "lng": 0.85325104,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Groton_Winthrop_Mulberry_sign_-_geograph.org.uk_-_4196211.jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Groton_Winthrop_Mulberry_-_geograph.org.uk_-_542252.jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Groton_Winthrop_Mulberry_-_geograph.org.uk_-_542257.jpg"
-   ],
-   "status": "lead",
-   "species": "Mulberry (Morus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Holy Thorn, Glastonbury",
-   "lat": 51.1482,
-   "lng": -2.7167,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_Glastonbury_Thorn,_St_John_the_Baptist,_Glastonbury,_Somerset.jpg",
-    "https://commons.wikimedia.org/wiki/File:A_Holy_Thorn_-_geograph.org.uk_-_1272877.jpg",
-    "https://commons.wikimedia.org/wiki/File:Awaiting_the_blooms_-_geograph.org.uk_-_7371135.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Yews of Kingley Vale",
-   "lat": 50.88728,
-   "lng": -0.8316,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%22This_old_man....%22_-_geograph.org.uk_-_1503418.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ancient_Yew_trees_in_Kingley_Vale_-_geograph.org.uk_-_229689.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ancient_yew,_Kingley_Vale_1.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nellie's Tree",
-   "lat": 53.81928,
-   "lng": -1.35719,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2019_Nellie_s_Tree_UK.jpg",
-    "https://commons.wikimedia.org/wiki/File:N_for_Nellie_in_Parlingtons_Wilderness_(geograph_4402672).jpg",
-    "https://commons.wikimedia.org/wiki/File:Nellies_tree._(geograph_5953131).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Nocton Hall Chestnut",
-   "lat": 53.16701,
-   "lng": -0.4144,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Chestnut_Tree_-_geograph.org.uk_-_362327.jpg",
-    "https://commons.wikimedia.org/wiki/File:NoctonChest.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nocton_Hall_Chestnut_tree_-_geograph.org.uk_-_1731217.jpg"
-   ],
-   "status": "lead",
-   "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "The Poem Tree",
-   "lat": 51.62813,
-   "lng": -1.179,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Plaque_describing_the_Poem_Tree_-_geograph.org.uk_-_1242157.jpg",
-    "https://commons.wikimedia.org/wiki/File:Poemtree_sample.png",
-    "https://commons.wikimedia.org/wiki/File:The_Poem_Tree,_Wittenham_Clumps.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Robin Hood's Larder",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Robin_hood_larder_1913.png",
-    "https://commons.wikimedia.org/wiki/File:Robin_hoods_larder_1880.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Sequoiadendron giganteum at Stratfield Saye",
-   "lat": 51.35118,
-   "lng": -0.994,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sign_beneath_%22Wellington%27s_Wellingtonia%22,_Stratfield_Saye_-_geograph.org.uk_-_1422810.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wellingtonia_trunks,_Stratfield_Saye_-_geograph.org.uk_-_1422804.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wellingtonias,_Stratfield_Saye_-_geograph.org.uk_-_1420440.jpg"
-   ],
-   "status": "lead",
-   "species": "Giant Sequoia (Sequoiadendron sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Strawberries and Cream Tree",
-   "lat": 51.414475,
-   "lng": -2.744969,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Strawberries_and_Cream_Tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Strawberries_and_Cream_Tree_2024-04-09_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Strawberries_and_Cream_Tree_2024-04-09_2.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "The Fuck Tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tolpuddle Martyrs Tree",
-   "lat": 50.749427,
-   "lng": -2.296793,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Great_British_Trees_plaque_at_the_bottom_of_the_Tolpuddle_Martyrs_Tree,_Tolpuddle,_2024.jpg",
-    "https://commons.wikimedia.org/wiki/File:Martyrs_Seat_and_Shelter_-_geograph.org.uk_-_1176487.jpg",
-    "https://commons.wikimedia.org/wiki/File:Martyrs_Tree_-_geograph.org.uk_-_1176497.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Wesley's tree",
-   "lat": 52.05583,
-   "lng": -0.8544,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wesley%27s_Tree_-_geograph.org.uk_-_569833.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wesley%27s_tree_plaque_-_geograph.org.uk_-_569837.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Craigends Yew",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_eastern_section.jpg",
-    "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_epiphytic_mosses.jpg",
-    "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_interior_view.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Fortingall Yew",
-   "lat": 56.5979427,
-   "lng": -4.05215921,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2011_Schotland_venijnboom_Fortingall_6-06-2011_18-43-30.jpg",
-    "https://commons.wikimedia.org/wiki/File:2011_Schotland_venijnboom_Fortingall_ommuurd_6-06-2011_18-43-30.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree_and_churchyard,_Fortingall,_in_1992_-_geograph.org.uk_-_2063884.jpg"
-   ],
-   "status": "published",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "tree_id": "for_001"
-  },
-  {
-   "name": "Ormiston Yew",
-   "lat": 55.89788,
-   "lng": -2.9402,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ormiston_Yew,_East_Lothian.JPG",
-    "https://commons.wikimedia.org/wiki/File:Ormiston_Yew_-_geograph.org.uk_-_72512.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ormiston_Yew_-_geograph.org.uk_-_905549.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tree of the Year (Scotland)",
-   "lat": 56.56302,
-   "lng": -3.60653,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_Niel_Gow_s_Oak_UKS.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015_Lady%C2%B4s_Tree_UKS.jpg",
-    "https://commons.wikimedia.org/wiki/File:2016_The_Suffragette_Oak_UKS.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Wallace Yew",
-   "lat": 55.835547,
-   "lng": -4.488838,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:The_Wallace_Monument,_Elderslie_(geograph_2393343).jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Wallace_Yew_(geograph_7720934).jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Wallace_Yew_-_geograph.org.uk_-_2115747.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "why": "Verified and NOT shipped, 2026-08-29. Alive as of a 2021 photograph and behind a protective fence at Elderslie beside the Wallace monument, but wrecked: set on fire in 1978, and a storm on 12 January 2005 tore away the better-growing half and split the trunk almost to the ground. Age is genuinely disputed rather than merely unknown, 300 years by expert estimate against a 700-year tradition tying it to William Wallace himself, with 18th-century parish records already calling it ancient. Source: scotlands-yew-trees.org. Held on the walk-across-town test rather than on any rule; revisit if a recent photograph shows it worth the trip."
-  },
-  {
-   "name": "Preston Twins, Preston Park",
-   "lat": 50.841504,
-   "lng": -0.151174,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(2).JPG",
-    "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(3).JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Brimmon Oak",
-   "lat": 52.5125,
-   "lng": -3.2929,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2017_The_Brimmon_Oak_UKW.jpg",
-    "https://commons.wikimedia.org/wiki/File:Brimmon_Oak_(geograph_5958816).jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Llangernyw Yew",
-   "lat": 53.1922,
-   "lng": -3.685,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ancient_Yew,_Llangernyw_-_geograph.org.uk_-_1160344.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ancient_yew_at_Llangernyw_church_-_geograph.org.uk_-_2032623.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree_at_Llangernyw.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lone Tree, Llyn Padarn",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:.Sunrise_(17219929711).jpg",
-    "https://commons.wikimedia.org/wiki/File:A_visitor._(50875521837).jpg",
-    "https://commons.wikimedia.org/wiki/File:Autumn_reflection_(48833472926).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tree of the Year (Wales)",
-   "lat": 52.93147,
-   "lng": -3.09538,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_The_Oak_at_the_Gate_of_the_Dead_UKW.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015_The_Lonely_Tree_of_Llanfyllin_UKW.jpg",
-    "https://commons.wikimedia.org/wiki/File:2016_Survival_at_the_cutting_edge_oak_UKW.jpg"
-   ],
-   "status": "lead"
-  }
- ]
+  "country": "United Kingdom",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Tree of the Year (Northern Ireland)",
+      "lat": 54.60706,
+      "lng": -5.96557,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2016_The_Peace_Tree_UKN.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017_The_Holm_Oak_UKN.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tree of the Year (Scotland)",
+      "lat": 56.56302,
+      "lng": -3.60653,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_Niel_Gow_s_Oak_UKS.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015_Lady%C2%B4s_Tree_UKS.jpg",
+        "https://commons.wikimedia.org/wiki/File:2016_The_Suffragette_Oak_UKS.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tree of the Year (Wales)",
+      "lat": 52.93147,
+      "lng": -3.09538,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_The_Oak_at_the_Gate_of_the_Dead_UKW.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015_The_Lonely_Tree_of_Llanfyllin_UKW.jpg",
+        "https://commons.wikimedia.org/wiki/File:2016_Survival_at_the_cutting_edge_oak_UKW.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Gilwell oak",
+      "lat": 51.65025,
+      "lng": 0.00116,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2018_The_Gilwell_Oak_UK.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gilwell_Oak_(5948293396).jpg",
+        "https://commons.wikimedia.org/wiki/File:Gilwell_Park_London_-_Gillwell_Oak.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ankerwycke Yew",
+      "lat": 51.44475915,
+      "lng": -0.55643598,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(1)_-_geograph.org.uk_-_2359683.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(2),_and_priory_ruins_-_geograph.org.uk_-_2359746.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(3)_-_a_closer_look_-_geograph.org.uk_-_2359824.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Borrowdale Yews",
+      "lat": 54.49839,
+      "lng": -3.1823,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Borrowdale_Yews_-_geograph.org.uk_-_1802260.jpg",
+        "https://commons.wikimedia.org/wiki/File:Borrowdale_Yews_-_geograph.org.uk_-_3492327.jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Borrowdale_Yews_-_The_English_Lakes_-_A._Heaton_Cooper.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Camberley Sequoiadendron Avenue",
+      "lat": 51.32849,
+      "lng": -0.6985,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue,_Camberley,_England-LCCN2002696444.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue,_Camberley,_England-LCCN2002696444.tif",
+        "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue_Camberley_England.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Groton Winthrop Mulberry",
+      "lat": 52.04127754,
+      "lng": 0.85325104,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Groton_Winthrop_Mulberry_sign_-_geograph.org.uk_-_4196211.jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Groton_Winthrop_Mulberry_-_geograph.org.uk_-_542252.jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Groton_Winthrop_Mulberry_-_geograph.org.uk_-_542257.jpg"
+      ],
+      "status": "lead",
+      "species": "Mulberry (Morus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Holy Thorn, Glastonbury",
+      "lat": 51.1482,
+      "lng": -2.7167,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_Glastonbury_Thorn,_St_John_the_Baptist,_Glastonbury,_Somerset.jpg",
+        "https://commons.wikimedia.org/wiki/File:A_Holy_Thorn_-_geograph.org.uk_-_1272877.jpg",
+        "https://commons.wikimedia.org/wiki/File:Awaiting_the_blooms_-_geograph.org.uk_-_7371135.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Yews of Kingley Vale",
+      "lat": 50.88728,
+      "lng": -0.8316,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%22This_old_man....%22_-_geograph.org.uk_-_1503418.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ancient_Yew_trees_in_Kingley_Vale_-_geograph.org.uk_-_229689.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ancient_yew,_Kingley_Vale_1.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Nocton Hall Chestnut",
+      "lat": 53.16701,
+      "lng": -0.4144,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Chestnut_Tree_-_geograph.org.uk_-_362327.jpg",
+        "https://commons.wikimedia.org/wiki/File:NoctonChest.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nocton_Hall_Chestnut_tree_-_geograph.org.uk_-_1731217.jpg"
+      ],
+      "status": "lead",
+      "species": "Sweet Chestnut (Castanea sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "The Poem Tree",
+      "lat": 51.62813,
+      "lng": -1.179,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Plaque_describing_the_Poem_Tree_-_geograph.org.uk_-_1242157.jpg",
+        "https://commons.wikimedia.org/wiki/File:Poemtree_sample.png",
+        "https://commons.wikimedia.org/wiki/File:The_Poem_Tree,_Wittenham_Clumps.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Robin Hood's Larder",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Robin_hood_larder_1913.png",
+        "https://commons.wikimedia.org/wiki/File:Robin_hoods_larder_1880.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Sequoiadendron giganteum at Stratfield Saye",
+      "lat": 51.35118,
+      "lng": -0.994,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Sign_beneath_%22Wellington%27s_Wellingtonia%22,_Stratfield_Saye_-_geograph.org.uk_-_1422810.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wellingtonia_trunks,_Stratfield_Saye_-_geograph.org.uk_-_1422804.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wellingtonias,_Stratfield_Saye_-_geograph.org.uk_-_1420440.jpg"
+      ],
+      "status": "lead",
+      "species": "Giant Sequoia (Sequoiadendron sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "The Fuck Tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tolpuddle Martyrs Tree",
+      "lat": 50.749427,
+      "lng": -2.296793,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Great_British_Trees_plaque_at_the_bottom_of_the_Tolpuddle_Martyrs_Tree,_Tolpuddle,_2024.jpg",
+        "https://commons.wikimedia.org/wiki/File:Martyrs_Seat_and_Shelter_-_geograph.org.uk_-_1176487.jpg",
+        "https://commons.wikimedia.org/wiki/File:Martyrs_Tree_-_geograph.org.uk_-_1176497.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Wesley's tree",
+      "lat": 52.05583,
+      "lng": -0.8544,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wesley%27s_Tree_-_geograph.org.uk_-_569833.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wesley%27s_tree_plaque_-_geograph.org.uk_-_569837.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Craigends Yew",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_eastern_section.jpg",
+        "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_epiphytic_mosses.jpg",
+        "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_interior_view.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Fortingall Yew",
+      "lat": 56.5979427,
+      "lng": -4.05215921,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2011_Schotland_venijnboom_Fortingall_6-06-2011_18-43-30.jpg",
+        "https://commons.wikimedia.org/wiki/File:2011_Schotland_venijnboom_Fortingall_ommuurd_6-06-2011_18-43-30.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree_and_churchyard,_Fortingall,_in_1992_-_geograph.org.uk_-_2063884.jpg"
+      ],
+      "status": "published",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "tree_id": "for_001"
+    },
+    {
+      "name": "Ormiston Yew",
+      "lat": 55.89788,
+      "lng": -2.9402,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ormiston_Yew,_East_Lothian.JPG",
+        "https://commons.wikimedia.org/wiki/File:Ormiston_Yew_-_geograph.org.uk_-_72512.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ormiston_Yew_-_geograph.org.uk_-_905549.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tree of the Year (Scotland)",
+      "lat": 56.56302,
+      "lng": -3.60653,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_Niel_Gow_s_Oak_UKS.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015_Lady%C2%B4s_Tree_UKS.jpg",
+        "https://commons.wikimedia.org/wiki/File:2016_The_Suffragette_Oak_UKS.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Wallace Yew",
+      "lat": 55.835547,
+      "lng": -4.488838,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:The_Wallace_Monument,_Elderslie_(geograph_2393343).jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Wallace_Yew_(geograph_7720934).jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Wallace_Yew_-_geograph.org.uk_-_2115747.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "why": "Verified and NOT shipped, 2026-08-29. Alive as of a 2021 photograph and behind a protective fence at Elderslie beside the Wallace monument, but wrecked: set on fire in 1978, and a storm on 12 January 2005 tore away the better-growing half and split the trunk almost to the ground. Age is genuinely disputed rather than merely unknown, 300 years by expert estimate against a 700-year tradition tying it to William Wallace himself, with 18th-century parish records already calling it ancient. Source: scotlands-yew-trees.org. Held on the walk-across-town test rather than on any rule; revisit if a recent photograph shows it worth the trip."
+    },
+    {
+      "name": "Preston Twins, Preston Park",
+      "lat": 50.841504,
+      "lng": -0.151174,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(2).JPG",
+        "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(3).JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Llangernyw Yew",
+      "lat": 53.1922,
+      "lng": -3.685,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ancient_Yew,_Llangernyw_-_geograph.org.uk_-_1160344.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ancient_yew_at_Llangernyw_church_-_geograph.org.uk_-_2032623.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree_at_Llangernyw.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Lone Tree, Llyn Padarn",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:.Sunrise_(17219929711).jpg",
+        "https://commons.wikimedia.org/wiki/File:A_visitor._(50875521837).jpg",
+        "https://commons.wikimedia.org/wiki/File:Autumn_reflection_(48833472926).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tree of the Year (Wales)",
+      "lat": 52.93147,
+      "lng": -3.09538,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_The_Oak_at_the_Gate_of_the_Dead_UKW.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015_The_Lonely_Tree_of_Llanfyllin_UKW.jpg",
+        "https://commons.wikimedia.org/wiki/File:2016_Survival_at_the_cutting_edge_oak_UKW.jpg"
+      ],
+      "status": "lead"
+    }
+  ]
 }
