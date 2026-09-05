@@ -1,6 +1,31 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation) - Takeo: a second new single-tree place, 5 duplicates caught in the _famous-japan shelf
+
+Released `_famous-germany`, claimed `_famous-japan` (next-biggest unsourced
+country batch) and dispatched a verify pass on 6 candidates: three inside
+already-published cities (Kamakura, Kanazawa, Nagoya castle) and three
+standalone. 5 of 6 turned out to be duplicates of trees already on the
+site, each caught by `passcheck.py --brief` plus a coordinate check before
+anything was written (Kenchō-ji juniper = kmk_001, Kenrokuen pine = kan_004,
+Nagoya Castle kaya = ngy_001, Kamo camphor = hmy_001, Nago banyan = nag_001).
+One, **Takeo no Okusu**, had no container and cleared the bar: a
+20-metre-girth camphor at Takeo Shrine (Saga, founded 735) with a stone
+shrine built inside its own hollow trunk, traditionally said to be 3,000
+years old (kept as a broad, flagged estimate; not a measurement), health
+visibly declining since a 2022 city notice but still standing. Shipped as
+a new place, `takeo.json` (tak_001). Preflight, city_names, tree_index,
+build (4472 pages) and qa (6617 pages) all clean; committed, pushed,
+released the claim.
+
+Net for this window: two new single-tree places (Scheessel, Takeo), two
+new trees live, seven famous-tree leads checked and correctly NOT
+duplicated onto the site. The duplicate rate (6 of 12 candidates across
+both batches) says the famous-trees scrape is now mostly re-finding trees
+earlier passes already caught; the remaining unsourced leads in these two
+country files are presumably thinner for the same reason.
+
 ## 2026-09-05 (continuation) - Scheessel: a new single-tree place; data digest push race found, iOS schedule already fixed
 
 7-day visits from prepare.py: 906 visits, 1409 page views, climbing through
