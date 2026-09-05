@@ -11,9 +11,9 @@
     "https://commons.wikimedia.org/wiki/File:Albert_dams_eg_2.jpg",
     "https://commons.wikimedia.org/wiki/File:Albert_dams_eg_3.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "reason": "Dead. A hollow oak beside Aarhusvej at Aarhusbakken, Silkeborg, named for author Albert Dam who lived nearby and visited it often. Felled 7 September 2011 after decay left only a thin shell (da.wikipedia.org/wiki/Albert_Dams_eg); the fallen trunk was left in the forest edge and a replacement oak plus a bronze chair were donated by Tonny Hoerning. Age could not be determined at felling. Verified 2026-09-05."
   },
   {
    "name": "Ambrosius-egen",
@@ -24,7 +24,9 @@
     "https://commons.wikimedia.org/wiki/File:Ambrosius-egen.png",
     "https://commons.wikimedia.org/wiki/File:Ambrosius_Egen.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "tree_id": "amb_001",
+   "verified_note": "See data/research/_famous-denmark-verified.json. Container: new standalone place, Taasinge/Svendborg."
   },
   {
    "name": "Englænderegen",
@@ -34,7 +36,8 @@
     "https://commons.wikimedia.org/wiki/File:Engl%C3%A6nderegen_(1854146904).jpg",
     "https://commons.wikimedia.org/wiki/File:Eremitagesletten_03-05-06_05.jpg"
    ],
-   "status": "lead"
+   "status": "already published as cop_016 in data/cities/copenhagen.json, stale lead entry, no action needed",
+   "tree_id": "cop_016"
   },
   {
    "name": "H.C. Andersens Lind",
@@ -45,9 +48,9 @@
     "https://commons.wikimedia.org/wiki/File:Augustenborg-Hans_Christian_Andersen-Sitzplatz-Linde.jpg",
     "https://commons.wikimedia.org/wiki/File:Augustenborg_-_HC_Andersens_lind.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "reason": "Alive status disputed and unresolved. The single-stemmed lime in Augustenborg Slotspark broke in storm Laura, 12 March 2020, and was propped with two iron supports hoping to regrow from a shortened trunk (jv.dk, 'H.C. Andersens lindetrae har faaet krykker', 28 Apr 2021; a landscape architect quoted there recommended replacing it instead, doubting the rescue). da.wikipedia says it is alive today with new shoots. The town's own current visitor guide (app.augustenborg.dk/en/the-lime-tree-of-hans-christian-andersen) states in English that the tree is 'no longer alive ... felled by strong winds in 2020'. No source newer than 2021 was found to settle which account is current. Per hard rule 2 (never publish a tree known to be dead), do not ship until a newer source or a reader confirms it still stands. Verified 2026-09-05."
   },
   {
    "name": "Klopstocks Eg",
@@ -58,9 +61,10 @@
     "https://commons.wikimedia.org/wiki/File:Klopstocks_Eg_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Klopstocks_Eg_02.jpg"
    ],
-   "status": "lead",
+   "status": "already published as cop_015 in data/cities/copenhagen.json, stale lead entry, no action needed",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "cop_015"
   },
   {
    "name": "Kongeegen",
@@ -83,9 +87,9 @@
     "https://commons.wikimedia.org/wiki/File:Copa_de_%C3%A1rbol.png",
     "https://commons.wikimedia.org/wiki/File:Raunkiaer.jpg"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "blocked",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Dead. Also called Spareegen/Sparekasseegen, in Jaegersborg Dyrehave (55.79N 12.57E approx, coords uncertain per the register itself), the oak chosen in 1953 to model the Danish savings-bank association's logo. Dansk Traeregister (Dansk Dendrologisk Forening, the Danish Dendrological Society's own tree register, dendron.dk Individual_ID=229) records its vitality as 'Doed' (dead) as of its last survey 29 May 2008. Note: a different, unrelated tree also nicknamed 'Spareeg' stands at Holsteinborg/Rude cemetery near Skaelskoer and was felled by a separate storm reported by sn.dk; do not confuse the two if this comes up again. Verified 2026-09-05."
   },
   {
    "name": "Skovfogedegen",
@@ -96,7 +100,8 @@
     "https://commons.wikimedia.org/wiki/File:Skovfogedegen._-_panoramio.jpg",
     "https://commons.wikimedia.org/wiki/File:Skovfogedegen.jpg"
    ],
-   "status": "lead"
+   "status": "already published as cop_014 in data/cities/copenhagen.json, stale lead entry, no action needed",
+   "tree_id": "cop_014"
   },
   {
    "name": "Storkeegen",
@@ -107,7 +112,8 @@
     "https://commons.wikimedia.org/wiki/File:PC_Skovgaard,_Egetr%C3%A6er_i_Nordskoven_ved_J%C3%A6gerspris,_1843,_kms413,_Statens_Museum_for_Kunst.jpg",
     "https://commons.wikimedia.org/wiki/File:Storkeegen_1979.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "Dead. One of the three 'De tusindaarige ege' at Jaegerspris Nordskov; the last living branch fell in 1980 and the tree was finished off by a storm in 1981 (en.wikipedia.org/wiki/Storkeegen; kongfrederik.dk/skov/de-tusindaarige-ege/). Our own published Jaegerspris Nordskov page (jae_001, Kongeegen) already states this. Verified 2026-09-05, no need to re-check."
   },
   {
    "name": "Svalebøgen",
@@ -117,7 +123,9 @@
     "https://commons.wikimedia.org/wiki/File:Svaleb%C3%B8gen,_Gjerrild.jpg",
     "https://commons.wikimedia.org/wiki/File:Svaleb%C3%B8gen_Jerrild_DK.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "tree_id": "svb_001",
+   "verified_note": "See data/research/_famous-denmark-verified.json. Container: new standalone place, Gjerrild/Djursland. Alive but declining, one trunk lost 2022."
   }
  ]
 }
