@@ -1,0 +1,59 @@
+{
+  "city": "Gjerrild",
+  "country": "Denmark",
+  "status": "needs_curation",
+  "intro": "Svalebøgen looks like one colossal beech and is really several, a cluster of trunks that fused together after a mouse's buried hoard of nuts germinated in one spot, by local tradition. Denmark's oldest beech and its biggest tree by the Danish Dendrological Society's own tape, it has been failing for years, one trunk down since 2022, and Gjerrild still calls it open to visitors. Free, on the village's main street, with a successor already planted nearby for the centuries after this one is gone.",
+  "meta_description": "Svalebøgen, called Denmark's oldest beech and biggest tree, stands in Gjerrild village. Alive but declining since a trunk collapsed in 2022. Free.",
+  "question_meta": "Gjerrild's remarkable tree is Svalebøgen, called Denmark's oldest beech and biggest tree, now visibly declining but still standing.",
+  "question_answer": "The remarkable tree in Gjerrild is Svalebøgen, a European Beech on Stokkebro in the village centre. The Danish Dendrological Society measured it at 12.52 metres round in 1995, a figure for the whole fused multi-trunk mass rather than a single stem, and it is widely called Denmark's oldest beech and its largest tree, estimated at roughly 300 years.",
+  "question_context": "Svalebøgen is not one trunk. Local tradition says it began as a mouse's winter hoard of beech nuts, buried together and germinated as a cluster, which grew into stems that fused into each other over time; the 12.52 metre girth the Danish Dendrological Society recorded in 1995 measures that whole fused mass, not a single stem, so it should never be repeated as if it were one. The age everyone repeats, about 300 years, is a village estimate rather than a ring count, and Gjerrild's own account says plainly that nobody knows exactly. The tree is in real decline: one of its trunks collapsed on 9 June 2022, the municipality pruned the rest for safety and warned more looked likely to fail, and parts of the ground beneath it have been cordoned off at times since. Gjerrild's own visitor information describes it as in declining condition and still open to visitors, which this page treats as the honest current state rather than something to soften. The village's residents' association has already planted a successor beech nearby, a couple of centuries from being anything like this one.",
+  "hero_tree_id": "svb_001",
+  "oldest_tree_id": "svb_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Gjerrild?",
+      "a": "Svalebøgen, a beech called Denmark's oldest and its biggest tree, standing on the village's main street, Stokkebro."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes, but it is declining. One trunk collapsed in 2022 and the municipality has pruned and cordoned off parts of it for safety since. It remains open to visitors."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the roadside at Stokkebro with benches beneath it, no ticket or restriction."
+    }
+  ],
+  "trees": [
+    {
+      "id": "svb_001",
+      "name": "Svalebøgen",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 1252,
+      "location": {
+        "address": "Stokkebro (main street), eastern end, Gjerrild, Norddjurs Kommune, Djursland, Denmark",
+        "latitude": 56.50680,
+        "longitude": 10.81333,
+        "neighbourhood": "Gjerrild, Norddjurs municipality"
+      },
+      "story": "Local tradition says this beech started as a mouse's winter larder. A hoard of beech nuts buried in one spot germinated together, and the stems thickened into each other as they grew, which is why the thing standing at the eastern end of Stokkebro reads as one colossal tree and is really several. The Danish Dendrological Society put a tape around it in 1995 and got 12.52 metres, a figure that goes round the whole fused mass rather than any single stem.\n\nGjerrild calls it Denmark's oldest beech and its biggest tree. The age everyone repeats is about 300 years, and the village's own account says plainly that nobody knows exactly, so hold the number loosely.\n\nIt is coming apart, and there is no point pretending otherwise. One of the trunks collapsed on 9 June 2022. The municipality pruned the rest back for safety, warned that more looked likely to follow, and has cordoned off parts of the ground beneath it at times since. Gjerrild's own visitor page now describes the tree as in declining condition and still open to visitors, which is the honest version: an old beech letting go slowly, with benches under it and people still eating their lunch there.\n\nThe residents' association has planted a successor a little to the southeast. That one needs a couple of centuries. This is the one to go and stand under now.",
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=181",
+        "https://www.gjerrild.net/for-turister/",
+        "https://www.nb-kommune.dk/pressemeddelelser/servicemeddelelse-svaleboegen-ved-gjerrild/"
+      ],
+      "access": "Free, standing on the roadside at Stokkebro in Gjerrild village; benches sit beneath it and it is a known local picnic/geocache spot. No ticket or restriction, though the municipality has cordoned off parts of the immediate area at times for safety.",
+      "transport": "No train station; reached by car or bicycle, in the village of Gjerrild on Djursland.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

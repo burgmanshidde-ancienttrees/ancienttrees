@@ -1,0 +1,60 @@
+{
+  "city": "Lohja",
+  "country": "Finland",
+  "status": "needs_curation",
+  "intro": "Finns have been calling this oak the country's most beautiful tree since before anyone here was born. The photographer and explorer I.K. Inha documented it more than a century ago, a magazine wrote it up in 1920, and a 2014 article sent it round the country again to a new audience. It stands beside a marked nature trail on Lohjansaari, inside a protected grove people have been walking to on purpose for generations, not because the internet found it first.",
+  "meta_description": "Paavola's Oak, called Finland's most beautiful tree since the 1920s, stands beside a marked nature trail on Lohjansaari. Free, about an hour from Helsinki.",
+  "question_meta": "Lohja's remarkable tree is Paavola's Oak, a 300 to 400 year old oak on a marked trail on Lohjansaari, long called Finland's most beautiful.",
+  "question_answer": "The tree Lohja is known for is Paavola's Oak, a Pedunculate Oak on Lohjansaari estimated at 300 to 400 years old, inside the protected Paavolan tammikko nature reserve. It stands beside a marked 1 to 1.5km nature trail with 15 information posts, reached from the old Lohjansaari school car park.",
+  "question_context": "Paavola's Oak has been documented for longer than most famous trees get to be: the photographer I.K. Inha recorded it over a century ago, the magazine Tiede ja elama wrote about it in 1920, and a 2014 Yle article by Antti Huttunen introduced it to a much wider audience decades after that. The 300 to 400 year age comes from the reserve's own signage rather than a ring count, so it stays a broad estimate rather than a precise figure. The trunk itself has been measured at about 4.7 metres round. The grove around it, Paavolan tammikko, has been a protected nature reserve since 1994 for its herb-rich forest floor, and part of the surrounding land is private; the marked trail and the tree itself are the public part. A second protected oak, designated a natural monument in 1990, stands further along the same trail and is a lead for a future pass, so the walk may eventually pay out twice rather than once.",
+  "hero_tree_id": "loh_001",
+  "oldest_tree_id": "loh_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Lohja?",
+      "a": "Paavola's Oak, on Lohjansaari, estimated at 300 to 400 years old and long called Finland's most beautiful tree."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. A marked nature trail from the old Lohjansaari school car park leads to it at no cost, with information posts and a picnic table along the way."
+    },
+    {
+      "q": "How do I get there from Helsinki?",
+      "a": "By car, roughly 45 to 60 minutes for about 58km. There is no public transport to the trailhead itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "loh_001",
+      "name": "Paavola's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "300 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 470,
+      "location": {
+        "address": "Paavola nature trail, Lohjansaari, Lohja (start from the old Lohjansaari school car park, Pietiläntie 23)",
+        "latitude": 60.226488,
+        "longitude": 23.890902,
+        "neighbourhood": "Lohjansaari"
+      },
+      "story": "Finns call this the most beautiful tree in the country, and they were saying so a century before the internet agreed. The photographer and explorer I.K. Inha documented the oak over a hundred years ago, the magazine Tiede ja elämä wrote it up in 1920, and in autumn 2014 a piece by Antti Huttunen for Yle sent it round the country again to an audience that had never heard of it.\n\nThe trunk runs to about 4.7 metres round. The reserve's own signage puts the age at 300 to 400 years, which is an estimate rather than a ring count, so the range stays as wide as the sign leaves it. The tree is a protected natural monument, and the grove around it, Paavolan tammikko on Lohjansaari, has been a nature reserve since 1994 for its herb-rich forest floor.\n\nGetting there is half of it. A marked trail of a kilometre or so leaves the old Lohjansaari school car park at Pietiläntie 23, with fifteen information posts along the way and a picnic table near the oak. Part of the surrounding grove is private land; the trail and the tree are the public part. A second protected oak, designated in 1990, stands along the same path, so the walk pays twice.\n\nRoughly an hour by car from Helsinki and no bus to the trailhead. Bring lunch and plan on the afternoon.",
+      "verified_sources": [
+        "https://fi.wikipedia.org/wiki/Paavolan_tammikko",
+        "https://retkipaikka.fi/suomen-kaunein-puu-ja-luontopolku-sen-juurelle-paavolan-tammi-ja-luontopolku-lohjalla/",
+        "https://yle.fi/a/20-207037",
+        "https://www.lohja.fi/kulttuuri-vapaa-aika-liikunta/liikunta/retkeily-ja-ulkoilu/luontopolut/paavolan-tammi/"
+      ],
+      "access": "Free. Stands beside a clearly marked 1 to 1.5km nature trail with 15 information posts inside the Paavolan tammikko nature reserve (protected 1994); a picnic table sits near the tree. Parking at Pietiläntie 23 (about 700m walk to the tree). Part of the surrounding grove is on private land per the reserve's own description, but the tree and the marked trail past it are open to the public.",
+      "transport": "No public transport to the trailhead; roughly 45 to 60 minutes by car from Helsinki (about 58km), or Lohja town by train/bus then a local taxi/car to Lohjansaari",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
