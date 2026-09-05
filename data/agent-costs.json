@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -5360,6 +5360,13 @@
         "note": "2-tree write pass; built two new single-tree place city files. Fixed species names at merge (Larix decidua var. polonica -> canonical European Larch; Western Redcedar -> canonical Western Red Cedar, hard rule 9)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "scheessel+european-larch",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Session work, not a dispatched agent: fixed REVIEW.md WARN (Scheessel spelling), wrote the European Larch species intro (pagegaps.py's one gap), rebuilt and ran qa.py clean."
       }
     ]
   }
