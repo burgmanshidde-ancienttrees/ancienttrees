@@ -5238,6 +5238,20 @@
         "tokens": 197730,
         "trees": 11,
         "note": "Verified 11 of 12 far-flung bomenbieb.nl leads as standalone single-tree places (Wodanseiken, Philemon, Doornenburg thousand-year oak, Heilige Eik Den Hout, Gebodenlinde Hilvarenbeek, Adam en Eva Stoutenburg, Kroezeboom Fleringen, Koningstafel pollard oaks, Lodewijkslinde Vorden, Dorpslinde Nuenen, Linde van Sambeek). Baucis (Velp) confirmed dead (storm Ciaran); Kroezeboom Ruurlo blocked on private land. Output in data/research/bomenbieb-dutch-verified.json."
+      },
+      {
+        "target": "arnhem",
+        "kind": "verify",
+        "tokens": 65000,
+        "trees": 7,
+        "note": "Deepened Arnhem 9->16 from the LRMB register, Park Sonsbeek/Zijpendaal cluster (0.4-1.1km spread): 4 oaks, a yew, a copper beech, a sweet chestnut. Swamp cypress confirmed dead (storm Ciaran 2023); a 10-larch stand blocked as not a single point; Mammoetboom (giant sequoia) held as a lead pending access confirmation on utility-company grounds."
+      },
+      {
+        "target": "arnhem",
+        "kind": "write",
+        "tokens": 139000,
+        "trees": 7,
+        "note": "7 Sonsbeek trees merged into live arnhem.json (9->16); page-level copy and FAQ counts updated; fixed a pre-existing Contract B overrun on question_context."
       }
     ]
   }
