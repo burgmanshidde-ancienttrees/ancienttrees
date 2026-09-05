@@ -1,6 +1,50 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation of a window an earlier attempt stopped early with 92 minutes left) - Finished famous-slovakia + famous-lithuania batch1 (+8 trees, 3 new places), Poland verify dispatched
+
+Followed the resume instructions. Pulled (nothing new). `passcheck.py --claims`
+found two standing verify claims left by the earlier attempt in this window
+(`_famous-slovakia`, `_famous-lithuania`), both well inside their 2.5h
+expiry with an uncommitted write pass already sitting in the working tree:
+stories written and applied via a temp helper (`scripts/_wp_apply.py`) to
+`data/research/famous-{slovakia,lithuania}-batch1-verified.json`, but never
+merged into `data/cities` or committed. `leads.py --ready` was empty (that
+pipeline doesn't see these staging files), so finished the standing work
+directly rather than starting anything new.
+
+**Wrote the one missing story** (brt_007, the Grinava Poplar, a black
+poplar joining Bratislava as a day-trip tree via the Pezinok rail stop) to
+complete the Slovakia batch; Lithuania's 5 trees already had stories.
+
+**Merged all 8 trees.** Three new single/multi-tree places: **Bojnice**
+(boj_001, the Linden of King Matthias, a legendary 700+ year lime saved
+from near-death by 1950s-90s conservation work), **Myjava** (myj_001, the
+Linden at U Belanských, probably Slovakia's thickest tree at 10.15m round,
+with a wartime-partisan legend), **Rambynas** (rmb_001, the Witch's
+Spruce, one trunk splitting into 18 stems, Lithuania's 2017 Tree of the
+Year), and **Plunge** (plg_001-004, a genuine 4-tree walkable cluster in
+Plunge Manor Park: Perkūnas Oak, Aukštasis Oak, the Mykolas Oginskis
+Linden, Laikrodinė Oak). **Bratislava** grew 6 -> 7 trees; updated its
+intro, FAQ and question-page copy for the new count and dropped a
+now-false "not one is a native species" claim (black poplar is native).
+Marked the two duplicate Bojnice leads entries shipped, deleted both
+now-empty verified staging files. Full build (4315 pages), qa.py,
+preflight.py and superlatives.py all clean. Committed and pushed
+(8a6aac59), claims released.
+
+**Dispatched a verify pass on `_famous-poland`** (claimed, pushed,
+594a244a): 10 candidates picked by `famous_demand.py --next --batches 3`,
+Poland's batch carrying the highest demand of the three shown (1182
+reads/mo across 12 raw candidates, versus 768 for Germany and 405 for
+Japan). Running in the background; includes one day-trip judgement call
+for the agent to make (Dąb Słowianin, 22.7km from Wroclaw) and one
+avenue-vs-single-tree check (Aleja Zajęcza, Łubowice, which by name alone
+sounds like the kind of ensemble CLAUDE.md blocks).
+
+Health check clear (`health.py`: RUNG 2 clear, iOS CI back to green since
+an earlier attempt's own fix). No BLOCKER pending, no sightings queued.
+
 ## 2026-09-04 (continuation of a window an earlier attempt stopped early with 99 minutes left) - Finished famous-japan batch H1 (+2 trees), dedup cleanup, released 3 stale claims, Eindhoven verify dispatched
 
 Followed the resume instructions: pulled (nothing new), found four standing
