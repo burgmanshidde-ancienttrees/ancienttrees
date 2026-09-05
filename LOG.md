@@ -1,6 +1,89 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation of a window an earlier attempt stopped early with 59 minutes left) - Finished the standing _famous-japan claim: 9 trees, 5 new single-tree places
+
+Followed the resume instructions. Pulled (nothing new). `passcheck.py
+--claims` found one standing claim, `_famous-japan` verify by night-run,
+112 min left. `leads.py --ready` was empty (0 READY), as it has been for
+weeks. A verify pass under that claim had already run three batches (A, B,
+C; batch1 empty) and left 9 fully verified, fully written candidates staged
+uncommitted, and an earlier attempt in this same window had already merged
+all 9 into their city files, leaving the merge uncommitted.
+
+Checked every merge against its research batch before trusting it: all four
+new-city files (Himi, Hino, Kimotsuki, Oguni, Yamanashi City) and all four
+grown cities (Maebashi, Iwata, Hokuto, Fujikawaguchiko) matched their
+research entries exactly, intros and FAQs correctly updated for the new
+tree counts. Ran a full build to check for contract violations rather than
+trusting the JSON by eye, which caught two: Kimotsuki's and Maebashi's
+meta_descriptions were 156 and 158 characters against the 155 limit.
+Trimmed both without losing the facts (kept "National Natural Monument" in
+Kimotsuki's rather than shortening to the inaccurate "National Monument").
+
+- **Himi** (new, him_001, Oidani no Otsubaki): Japan's largest known wild
+  camellia by one surveyor's ranking, 3.89m round, in a remote hillside
+  graveyard reached only by a 35-minute taxi or a bus-plus-walk. Age
+  disputed between the city (500 years) and an older survey (700-800),
+  both kept.
+- **Hino** (new, hno_001, Kumano no Hidarimakigaya): not one tree but
+  three, the 1922 discovery site of a rare left-spiraling kaya seed
+  mutation, one of only three such designated sites in Japan. No age ever
+  published for any of the three stems.
+- **Kimotsuki** (new, kmt_001, Tsukazaki no Kusu): a camphor 14m round
+  growing on the crown of a 4th-century burial mound, sacred tree of the
+  neighbouring shrine, roughly 1,200-1,300 years by the town's own
+  unexplained figure.
+- **Oguni** (new, ogn_001, Shimojo no Oichou): a single female ginkgo over
+  1,000 years old whose root suckers have fooled visitors into seeing a
+  small wood instead of one tree, roadside on National Route 212.
+- **Yamanashi City** (new, ynh_001, Okkazuma no Shidarezakura): a small
+  (8.7m) weeping cherry standing entirely alone on a hilltop above the
+  Kofu Basin with Mt Fuji across the valley, its whole fame resting on
+  having nothing else in the frame.
+- **Maebashi** (+mae_002, Kinmokusei of Kezoji): the original, 300-400
+  year old designated tree died of typhoon damage in the 1980s; what
+  flowers there now is a ~35-40 year old successor grown from the same
+  root and cuttings. The page now says so plainly rather than letting the
+  monument's name imply the original survives.
+- **Iwata** (+iwt_002, Kitahama no Okayanoki): one of Japan's Three Great
+  Kaya, standing alone behind a low fence on private farmland, freely
+  viewable from the road, 8.5km from Iwata's existing tree.
+- **Hokuto** (+hok_003, Utsukushimori no Oyamatsutsuji): the designated
+  monument is one azalea with a dozen-plus stems fused at the root;
+  almost everyone who climbs the hill photographs the much larger
+  undesignated blaze of ordinary wild azaleas around it instead.
+- **Fujikawaguchiko** (+fjk_005, Yamanokami no Fuji): two wild, self-seeded
+  wisteria vines (most shrine wisterias are trained cultivars) in a shrine
+  named for them; one storm-damaged and propped, neither ever dated.
+
+Updated Japan's country page (76->81 places, 196->205 trees). Ran
+`city_names.py` on all 5 new places: 4 resolved cleanly against Wikipedia
+by coordinate; Hino did not, because "Hino" collides with Hino, Tokyo and
+the disambiguation page carries no coordinates, so it was left unresolved
+rather than guessed. Full build (4373 pages), `qa.py` (6387 pages, clean),
+`preflight.py` (388 cities, 0 problems) and `superlatives.py` (638 claims,
+no collisions) all clean. Claim released.
+
+Committed in two pieces: the 12 data files as one commit, and an
+incidental `data/photo-queue.json` sweep (triggered as a side effect of
+checking `photo_hunt.py`'s CLI, unrelated to any of the 9 trees above) as
+a second, smaller commit, so the two kinds of work stay separable in
+history.
+
+**Could not clean up**: the four now-redundant research staging files
+(`data/research/famousjapan-batch{1,A,B,C}-verified.json`) are fully
+merged and normally would be deleted per the established pattern (see
+`b65bebb5`), but `rm` was denied by this session's permission mode. They
+sit untracked in the working tree; a future run should remove them.
+
+Health check: `health.py` clear (smoke, deploy, iOS app, data digest,
+fresh-eyes review, weekly analysis all green; 10 of 12 nightly knocks in
+24h; REVIEW.md's newest entry has 1 WARN, no BLOCKER, about missing iOS
+test coverage for a GPS-fabrication fix, app-side work outside this pass's
+scope). Week budget 2635/5000 minutes, no limit deaths in 6h, plenty of
+room left.
+
 ## 2026-09-05 (continuation of a window an earlier attempt stopped early with 111 minutes left) - Finished the standing _famous-japan claim: Maebashi opened, Hokuto and Yabu grown to two each
 
 Followed the resume instructions. Pulled (nothing new). `passcheck.py --claims`
