@@ -1,6 +1,6 @@
 {
   "country": "Australia",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-04 verify pass (1 agent, 12 candidates): 1 verified and published as data/cities/miriam-vale.json (Big Fig, bfm_001); 11 blocked (8 on access, 2 dead, 1 not a single collectible point). Full verify_notes in data/research/famousaustraliabatch1-verified.json. See LOG.md 2026-09-04 for the breakdown.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-04 verify pass (1 agent, 12 candidates): 1 verified and published as data/cities/miriam-vale.json (Big Fig, bfm_001); 11 blocked (8 on access, 2 dead, 1 not a single collectible point). Full verify_notes in data/research/famousaustraliabatch1-verified.json. See LOG.md 2026-09-04 for the breakdown.\n\n2026-09-05 verify pass (remaining 9 leads): 3 verified and delivered to data/research/_famous-australia-verified.json awaiting write-up (Centurion tree as hob_011, Bland Oak as syd_007, Gregory's Tree as a new place gtr_001); 2 turned out to be pre-existing duplicates of already-published trees (Jacaranda = syd_002, Proclamation Tree = per_004, both linked here rather than re-delivered); 4 blocked (Tree of Knowledge/Barcaldine, Pillar Box/Claremont, Leichhardt Tree/Comet, The Old Gum Tree/Glenelg -- 3 confirmed dead, 1 tree physically gone leaving only a heritage postbox). Every named candidate from the 2026-09-05 brief is now resolved; no leads remain in status 'lead'.",
   "leads": [
     {
       "name": "Big Fig, Miriam Vale",
@@ -14,16 +14,14 @@
     },
     {
       "name": "Bland Oak",
-      "lat": null,
-      "lng": null,
+      "lat": -33.8797,
+      "lng": 150.9617,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:BlandOakCarramar.jpg",
         "https://commons.wikimedia.org/wiki/File:Blandoaktree.jpg",
         "https://commons.wikimedia.org/wiki/File:BlankOaktree.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "RESOLVED 2026-09-05, delivered as syd_007 (data/research/_famous-australia-verified.json), container: sydney (existing city). Verified alive and actively maintained (2020 acorn-propagation programme, ongoing council National Tree Day recognition). Species corrected from the genus guess to Southern Live Oak (Quercus virginiana) per Wikipedia's infobox (a WebSearch summary wrongly called it Quercus robur; the directly-fetched page was trusted instead). Planted 1842 by William Bland, documented planting date, so age ~184 years rather than an estimate. Two sources: Wikipedia and Fairfield City Council's own Heritage Collection. Public council park, no access restriction, reachable by Carramar station (Sydney Trains T5 Cumberland Line)."
     },
     {
       "name": "Cazneaux Tree",
@@ -39,13 +37,13 @@
     },
     {
       "name": "Centurion tree",
-      "lat": null,
-      "lng": null,
+      "lat": -43.097684,
+      "lng": 146.802085,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Centurion_Tree,_TAS,_AUS.jpg",
         "https://commons.wikimedia.org/wiki/File:Centurion_tree_99.82.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-05, delivered as hob_011 (data/research/_famous-australia-verified.json), container: hobart (existing city, 11th entry, proposed as a day-trip-by-car addition). Verified alive as of a Jan 2025 Guardian report (96m tall after 2019 bushfire damage, down from a 2018 laser-measured peak of 100.5m). Species Eucalyptus regnans, no documented age. Two sources: Wikipedia and ABC News (2018). Coordinates confirmed from Wikipedia's infobox (tree-level, LiDAR-identified). Access is free/no permission needed via forestry road and a self-guided walking track, but genuinely remote: no public transport, 1.5-2 hour drive south of Hobart, no phone coverage."
     },
     {
       "name": "Dig Tree",
@@ -85,14 +83,15 @@
     },
     {
       "name": "Gregory's Tree",
-      "lat": null,
-      "lng": null,
+      "lat": -15.5665256,
+      "lng": 130.3673103,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Boab_tree_marked_by_Gregory%27s_party_(Gregory_Baobab)_in_1856_-_Northern_Territory,_Roper_River(GN00722C).jpg",
         "https://commons.wikimedia.org/wiki/File:Boab_tree_marked_by_Gregory%27s_party_in_1856_-_Northern_Territory_(Roper_River)_(Gregory_Baobab)(GN03758).jpg",
         "https://commons.wikimedia.org/wiki/File:Gregory%27s_tree,_1900.tif"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-05, delivered as gtr_001 (data/research/_famous-australia-verified.json), container: new place: Gregory's Tree / Timber Creek, NT. Verified alive per the NT Heritage Register's own site page (Place ID 101, calls it 'a living monument'), boab (Adansonia gregorii), tree-level coordinates from the register's site map. Public heritage reserve on the Victoria Highway with a boardwalk and interpretative panels; also a registered Aboriginal sacred site (Ngaringman people), which restricts touching the trunk but not viewing. NOTE: the Commons photos' 'Roper River' caption looks like an archive mislabelling; the actual documented tree is near Timber Creek, ~500km from the Roper.",
+      "note": "geographically the 'Roper River' filename/caption on these Commons photos does not match the actual Timber Creek site; do not use it to place a pin if these photos are picked up in a later photo pass"
     },
     {
       "name": "H2 Hinde Tree",
@@ -138,9 +137,9 @@
         "https://commons.wikimedia.org/wiki/File:Inside_Quadrangle_Cloisters,_University_of_Sydney.JPG",
         "https://commons.wikimedia.org/wiki/File:Jacaranda,_Sydney_University.jpg"
       ],
-      "status": "lead",
-      "species": "Jacaranda (Jacaranda sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "tree_id": "syd_002",
+      "note": "already published pre-existing as 'The Quad Jacaranda' (syd_002) in data/cities/sydney.json, coordinates match exactly (-33.886111, 151.189167); no further work needed, checked 2026-09-05"
     },
     {
       "name": "Kidman's Tree of Knowledge",
@@ -192,7 +191,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:StateLibQld_2_388261_Leichhardt_Tree_with_the_impression_L_23_degree_57,_Comet_River,_1927.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "CONFIRMED DEAD, never publish as a collectible entry. This coolabah tree at the confluence of the Comet and Nogoa Rivers was scarfed by Ludwig Leichhardt's expedition on 5 March 1847 (marked 'DIG L' with an arrow over a buried canister of letters), but the tree itself was felled in the 1950s out of fear it would be lost to fire; the marked trunk section was removed to Brisbane, displayed for years at Newstead House, and now sits in storage/museum display (offered to the Royal Historical Society of Queensland for the Miles Historical Village Museum). Only a 1975 memorial plaque marks the original site today, not a living tree (checked 2026-09-05, multiple tourism/history sources corroborate the felling and relocation of the trunk). This is a DIFFERENT tree from the separately heritage-listed 'Leichhardt Tree, Taroom' (Queensland Heritage Register #600835, marked 1844), which was not part of this pass's remit and was not checked."
     },
     {
       "name": "Moonah Creek Hanging Tree",
@@ -213,7 +213,8 @@
         "https://commons.wikimedia.org/wiki/File:Halfway_tree_-_Western_Australia.jpg",
         "https://commons.wikimedia.org/wiki/File:Pillar_Box,_Claremont,_December_2021.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "the tree itself is GONE, not a collectible living tree. Heritage Council of WA's own inHerit register (Place #00495, 256 Stirling Hwy Claremont) lists this heritage item as the 'Pillar Box', officially 'Site of the Halfway Tree': a tall tuart tree that was the mail-exchange meeting point for Perth and Fremantle postmen until 1863, later a fashionable afternoon-drive destination, but the tree was severely lopped in the early 20th century and only a stump remained by 1935. What survives and is heritage-listed today is an 1868 cast-iron pillar postbox marking the historic site, a structure rather than a tree (checked 2026-09-05, source: inherit.dplh.wa.gov.au Place 00495)."
     },
     {
       "name": "Proclamation Tree",
@@ -224,7 +225,9 @@
         "https://commons.wikimedia.org/wiki/File:2013-08-11_0947_Freopedia_plaque_at_the_base_of_the_Proclamation_Tree_in_Fremantle.JPG",
         "https://commons.wikimedia.org/wiki/File:2013-08-11_0948_Fremantle_Proclamation_Tree.JPG"
       ],
-      "status": "lead"
+      "status": "published",
+      "tree_id": "per_004",
+      "note": "already published pre-existing as 'The Proclamation Tree' (per_004) in data/cities/perth.json, Mayor's Park, Fremantle, coordinates match exactly (-32.050255, 115.749996); no further work needed, checked 2026-09-05"
     },
     {
       "name": "The Old Gum Tree",
@@ -235,9 +238,10 @@
         "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_for_showing_old_gum_tree_for_centenary(GN09942).jpg",
         "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_near_old_gum_tree_for_centenary(GN09932).jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Eucalyptus (Eucalyptus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "CONFIRMED DEAD, never publish as a collectible entry. This is the tree at Glenelg North, South Australia under which Governor John Hindmarsh read the proclamation founding the colony of South Australia on 28 December 1836. The original tree died long ago; its decayed husk was encased in concrete in 1963 to preserve its shape, and it now stands as a preserved monument/relic under a shelter with a plaque, not a living tree (checked 2026-09-05, sources: en.wikipedia.org/wiki/The_Old_Gum_Tree, abc.net.au/news/2017-12-28/why-is-a-concrete-filled-bent-old-gum-tree-significant-in-sa/9289356). It remains an active annual Proclamation Day ceremony site but fails the never-dead-as-a-collectible-entry rule regardless of its ongoing civic significance."
     },
     {
       "name": "The Robbers Tree",
@@ -253,14 +257,15 @@
     },
     {
       "name": "Tree of Knowledge (Australia)",
-      "lat": null,
-      "lng": null,
+      "lat": -23.5523,
+      "lng": 145.2897,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:0C6A2758.jpg",
         "https://commons.wikimedia.org/wiki/File:0C6A2759.jpg",
         "https://commons.wikimedia.org/wiki/File:0C6A2760.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "CONFIRMED DEAD, never publish as a collectible entry. This ~200-year-old ghost gum (Corymbia aparrerinja) outside Barcaldine railway station, Oak Street, Barcaldine, Queensland (site of the 1891 Shearers' Strike meetings and the 1892 reading of the manifesto that founded the Australian Labor Party; Queensland Heritage Register #600021) was poisoned with glyphosate in May 2006, declared dead by an arborist on 3 October 2006, and its remains removed 29 July 2007. The preserved dead trunk now stands inside a purpose-built sculptural memorial pergola (opened 2 May 2009, won a national heritage architecture award), a monument rather than a living tree (checked 2026-09-05, source: en.wikipedia.org/wiki/Tree_of_Knowledge_(Australia)). NOTE FOR A FUTURE PASS: several cuttings taken before its death were propagated; the tree was cloned in 2008 by the former Queensland DPI, with clones reportedly growing in Barcaldine itself, one planted at the Ecosciences Precinct in Brisbane, and one planted by PM Julia Gillard at the National Arboretum Canberra in 2011. None of these is documented as a single, publicly designated 'the' Tree of Knowledge replacement at a specific point in Barcaldine (unlike the Elm of Saint-Gervais precedent), so per hard rule this stays blocked rather than being redirected to a clone; a future pass could check whether Barcaldine's own cuttings have since been consolidated into one named, signposted specimen."
     },
     {
       "name": "William Wyndham's gravesite",

@@ -11,7 +11,7 @@
         "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_03.jpg"
       ],
-      "status": "lead",
+      "status": "unresolved, second source needed. monumentaltrees.com (id 45941, checked via a 2021-05-18 Wayback snapshot since the live page is Cloudflare-gated) is the only source found this pass: European Yew (Taxus baccata) on the Hasenmatt massif in Selzach commune (Solothurn canton, north side of the mountain), multi-stem, girth ~6m, height ~25m, dendrochronologically estimated planted circa 1225+/-100 (so ~796+/-100 years old) by named surveyor Roland Zoss, 15 Jun 2020. No precise coordinates could be recovered (the archived page's map data did not capture). Could be the SAME physical tree as the verified 'Old Yew in Cremines' (cre_001, Bernese Jura, Malsenberg/Maljon forest, south side of the same Hasenmatt massif, ~4-5km away) reported under a different municipal label and a different, more legendary age claim (1500 years vs this dendro estimate of ~800), or a genuinely distinct second ancient yew on the opposite slope. Two searches for a Solothurn cantonal Naturdenkmal register or a second independent write-up specific to Selzach found nothing (canton Solothurn's Wikipedia protected-areas list names 'Naturschutzgebiet Hasenmatt' as dry-meadow habitat only, no tree; opendata.swiss's 'Geschuetzte Einzelbaeume' dataset page 403'd). Needs either a second source or a same-tree confirmation before it can ship.",
       "species": "Yew (Taxus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -24,7 +24,7 @@
         "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(1).jpg",
         "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(2).jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-05, delivered as mar_001 (data/research/_famous-switzerland-verified.json), curation_status flagged (single source: Ortsmuseum Marthalen's own page; no second independent source found despite several searches), container: zurich (day-trip addition, ~25-30 min by train, label as Marthalen).",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -37,7 +37,8 @@
         "https://commons.wikimedia.org/wiki/File:Erlebnisbaum1.JPG",
         "https://commons.wikimedia.org/wiki/File:Erlebnisbaum2.JPG"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "German Wikipedia (Rotkreuz ZG) confirms this is not primarily a remarkable tree but a wooden viewing tower built in 2000 around an oak in the Sijentalwald, and the tower 'no longer stands' ('Momentan steht der Erlebnisbaum nicht mehr. Er wurde abgerissen, da das Holz morsch war'), demolished for rot, with only a vague plan to rebuild someday. The oak itself is described as about 150 years old and 30m tall, which is not exceptional (many published trees are far older) and carries no other documented distinguishing feature; its fame was entirely the tower's information panels and viewing platform, which is gone. Fails the destination test on the tree's own merits and the photographed structure no longer exists to visit. Left blocked rather than researched further; a future pass could recheck if the rebuild happens."
     },
     {
       "name": "Grand châtaignier d'Antagnes",
@@ -48,9 +49,8 @@
         "https://commons.wikimedia.org/wiki/File:Antagnes-Ch%C3%A2taignier_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Antagnes-Ch%C3%A2taignier_2.jpg"
       ],
-      "status": "lead",
-      "species": "Sweet Chestnut (Castanea sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "blocked",
+      "reason": "Dead. Radio Chablais (radiochablais.ch, 2022-11-14) reports this tree, 'le chataignier des Plumasses' between Glutieres and Antagnes in Ollon (Vaud), roughly 300-500 years old per different figures, ~20m tall and ~10m in circumference, registered in 'Les Beaux Arbres du canton de Vaud', collapsed under its own weight overnight 2022-11-10/11 due to root failure. A follow-up Radio Chablais piece ('le chataignier des Plumasses renait pour perpetuer un heritage seculaire') confirms a young sapling grown from the same tree was replanted a few metres from the fallen trunk, but per hard rule the ORIGINAL tree is dead and never ships as a collectible entry; a newly planted sapling with no age of its own is not a substitute. Never re-research from zero; if the replanting matures and becomes locally notable in its own right, a future pass can look again."
     },
     {
       "name": "Île de Peilz",
@@ -61,7 +61,7 @@
         "https://commons.wikimedia.org/wiki/File:After_the_Storm,_Villeneuve_-_Calm_view_with_Sunset_and_Jetty_-_panoramio.jpg",
         "https://commons.wikimedia.org/wiki/File:Boom_in_het_Meer_van_Geneve_-_panoramio.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-05, delivered as vny_001 (data/research/_famous-switzerland-verified.json), view-only entry (islet cannot be visited, viewed from Villeneuve's lakefront quays), container: new place: Villeneuve (Ile de Peilz)."
     },
     {
       "name": "Linner Linde",
@@ -72,7 +72,7 @@
         "https://commons.wikimedia.org/wiki/File:Linde_von_Linn.jpg",
         "https://commons.wikimedia.org/wiki/File:Linde_von_Linn_(1).jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-05, delivered as boz_001 (data/research/_famous-switzerland-verified.json), container: zurich (day trip, borderline ~32km, real journey likely 45-60 min via Brugg, label as Linn/Boezberg) - flagged as a judgement call for the orchestrating session given the longer-than-usual travel time.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -83,7 +83,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Noyer_de_Meinier_2025.jpg"
       ],
-      "status": "lead",
+      "status": "unresolved, access needs confirming before this can ship. Otherwise strongly verified and worth a future look: species Juglans x intermedia (a natural hybrid of common walnut and North American black walnut), 'the oldest hybrid walnut in Switzerland and the largest walnut in Switzerland' per SWI swissinfo.ch quoting Geneva canton's own urban-tree chief, planted 1863 (documented planting date, so ~163 years old as of 2026), height ~25-35m (sources vary), trunk circumference over 6m (6.4m per patrimoine-vert-geneve.ch), crown circumference 113m. Celebrated its 150th anniversary in 2013 with a canton-installed commemorative plaque, and the canton has since installed a wooden brace, cables and straps to preserve it. Two independent sources easily clear the species/age bar (swissinfo.ch and the Meinier commune's own page). The blocker is hard rule 10: both sources state it stands 'sur une parcelle privee derriere l'eglise St Paul de Meinier' (on a private plot behind the church), and neither states a public path or road passes close enough to see it, only the vaguer 'rejouit les promeneurs' (delights walkers), which is not the same as a source affirmatively saying it is visible from public ground. Needs either an OSM/aerial check for a public path or lane skirting the church that puts the tree in view, or a direct statement of public visibility, before this clears hard rule 10 as a view-only entry. Would be a strong Geneva day-trip addition (Meinier is a village a few km from Geneva) if access clears.",
       "species": "Walnut (Juglans sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -96,7 +96,7 @@
         "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_02.jpg",
         "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_03.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-05, delivered as cre_001 (data/research/_famous-switzerland-verified.json), container: new place: Cremines. Verified alive (commune's own page cites TV coverage as recent as July 2023), species European Yew (Taxus baccata), age ~1500 years per commune page and baumkunde.de register, girth 425cm, coordinates confirmed from baumkunde.de (E7 28.2884' / N47 16.3625'). Genuine destination-tier tree: widely cited candidate for oldest tree in Switzerland.",
       "species": "Yew (Taxus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -109,7 +109,7 @@
         "https://commons.wikimedia.org/wiki/File:CH-NB-La_Suisse_en_miniature-19522-page097.tif",
         "https://commons.wikimedia.org/wiki/File:ETH-BIB-Fribourg,_Hotel_de_Ville_et_Tilleul_de_Morat-PK_017083.tif"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-05, delivered as frb_001 (data/research/_famous-switzerland-verified.json), container: new place: Fribourg. Note the living tree is the 1984 replanted cutting at Place de l'Hotel-de-Ville next to the Fontaine Saint-Georges, not the medieval original which was felled in 1983 after vehicle damage; this is the same living-replanting pattern as the Elm of Saint-Gervais.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -122,7 +122,7 @@
         "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Die_Eiche_im_Guggich.JPG",
         "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Kr%C3%A4ftig_im_Boden_verankert.JPG"
       ],
-      "status": "lead"
+      "status": "unresolved, not reached this pass. Two targeted searches (general and using the 'im Guggich' location detail visible in one photo filename) turned up nothing beyond the Commons category itself: no Wikipedia article, no tourism page, no register entry found. Time ran out before a third angle (e.g. the Würenlingen municipality's own site, or the canton Aargau protected-tree list that helped confirm the Linner Linde) could be tried. Worth a focused follow-up rather than a repeat of the same two searches."
     }
   ]
 }

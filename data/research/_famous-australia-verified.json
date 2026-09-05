@@ -1,0 +1,75 @@
+[
+  {
+    "id": "hob_011",
+    "name": "Centurion",
+    "species": "Mountain Ash / Swamp Gum (Eucalyptus regnans)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 1200,
+    "height_m": 96,
+    "location": {
+      "address": "Arve Valley, Tall Trees area off Arve Road, south of Geeveston, Huon Valley, Tasmania",
+      "latitude": -43.097684,
+      "longitude": 146.802085,
+      "neighbourhood": "Geeveston / Arve Valley (day trip from Hobart)"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Centurion_(tree)",
+      "https://www.abc.net.au/news/2018-12-12/new-milestone-for-australias-tallest-tree-centurion/10604588"
+    ],
+    "access": "Free, no permission needed; a state forest reserve reached via a rough but 2WD-passable forestry road (Arve Road/Edwards Link Road) and then an unmarked, muddy, self-guided walking track through rainforest. No gate, booking or ticket, but genuinely remote: no mobile phone coverage, and access roads sit inside an active logging area and can close without notice.",
+    "transport": "No public transport reaches it. Roughly 1.5 to 2 hours' drive south of Hobart via the Huon Highway to Geeveston, then forestry roads; the final stretch is on foot. An honest day trip by car, not a walk from town.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Discovered August 2008 by Forestry Tasmania staff analysing LiDAR data used to map state forest resources; it was the 100th notable tree they had catalogued, which is also where the name comes from (Latin centum, hundred), and it coincided with the tree's own near-100-metre height. Also nicknamed 'the Bradman' because an early tape-drop measurement of 99.82m was close to Don Bradman's Test batting average. Officially Australia's tallest tree and, per Wikipedia's List of tallest trees, among the tallest known flowering-plant (hardwood) trees on Earth. Height has been measured repeatedly and moved around: 99.6m by climber tape-drop (2008), 99.82m (Jan 2014), a lower 99.67m (2016, within measurement-method variance), a laser-measured peak of 100.5m (Dec 2018, reported by ABC News, used as our second source). The 2019 Tasmanian bushfires damaged it (a new hollow burned into the base) and killed neighbouring giants outright, including a nearby tree called The Prefect (girth 19m); by a Jan 2025 Guardian report Centurion had lost about 4m of height, standing at 96m, though it survived and is confirmed alive and still growing slowly (this pass's own height figure follows that most recent report). Another close neighbour, Triarius (86.5m E. regnans), stands nearby and was not separately researched in this pass. Diameter 4.05m, girth reported as 'exceeds 12 metres' (recorded here as 1200cm, a floor figure rather than an exact tape reading; flagged because sources give slightly different numbers across years due to genuine growth and fire damage, not measurement error). No age has been published for the tree; E. regnans is a fast-growing eucalypt, and no source ties a specific age figure to this specimen, so age_estimate is left blank rather than guessed. CONTAINER DECISION: no Australian city/place file is genuinely walkable to this tree; it sits roughly 45-50km / 1.5-2 hours' drive south of Hobart in remote state forest with no public transport. Proposed as an 11th Hobart entry (next free id hob_011) rather than a new standalone place, since Hobart already exists as a real city with real amenities and this is squarely a day trip out of Hobart (the Blarney/Fota-for-Cork precedent), not a destination with its own town nearby. It clears the single-tree destination test easily either way: this is a genuine, often-visited natural superlative (Australia's tallest tree, a global top-ten by height), not merely 'a fine old tree'."
+  },
+  {
+    "id": "syd_007",
+    "name": "Bland Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "roughly 184 years (planted 1842)",
+    "age_min": 180,
+    "age_max": 190,
+    "girth_cm": null,
+    "location": {
+      "address": "Oakdene Park, Bland Street, Carramar NSW 2163",
+      "latitude": -33.8797,
+      "longitude": 150.9617,
+      "neighbourhood": "Carramar, City of Fairfield, Greater Western Sydney"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Bland_Oak",
+      "https://heritagecollection.fairfieldcity.nsw.gov.au/nodes/view/6808"
+    ],
+    "access": "Free, public council park (Oakdene Park), open at all times, no restrictions.",
+    "transport": "Carramar railway station (Sydney Trains T5 Cumberland Line) is close by; roughly 45-60 minutes by train from central Sydney.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two sources agree on the core facts: Wikipedia's dedicated article and Fairfield City Council's own Heritage Collection (a photograph record for the tree in Oakdene Park, Carramar, CC BY 3.0 AU licensed, confirming the council's own recognition of it). CAUGHT A SEARCH-SUMMARY ERROR: a WebSearch AI summary described the species as 'English oak (Quercus robur)', but the Wikipedia page fetched directly gives the infobox species as Live oak, binomial Quercus virginiana (Southern live oak), and this pass used the directly-fetched figure per the search-summary-is-a-lead-never-a-source rule. Planted in 1842 by William Bland, a former convict who became a prominent Sydney politician, farmer and inventor; this is a documented planting date for this specific tree (not a bridge claim), giving a real age of about 184 years rather than an estimate. Was reportedly the largest tree in Australia until a storm split it in two on New Year's Day 1941; the salvaged wood was carved into Fairfield's Mayoral chair, now held at Fairfield City Museum & Gallery. Despite the 1941 damage it remains the largest oak of its kind in Sydney, roughly 13m tall with a canopy spread over 30m wide (no girth figure found in any source; left blank rather than guessed). It appears on Fairfield City's own coat of arms and was added to the National Trust of Australia's National Register of Significant Trees in 2018 after a campaign by Fairfield mayor Frank Carbone. In 2020 acorns were collected and germinated to grow about ten new 'Bland Oak' saplings around the city, and the tree continues to be a focus of council National Tree Day activity, both signs it is actively cared for and alive today. CONTAINER DECISION: joins Sydney (existing city, next free id syd_007) as a day-trip addition; Carramar sits in Greater Western Sydney within the Sydney Trains network (Carramar station, T5 Cumberland Line), comparable in distance to Sydney's existing Vaucluse and Woolwich entries."
+  },
+  {
+    "id": "gtr_001",
+    "name": "Gregory's Tree",
+    "species": "Boab (Adansonia gregorii)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Gregory's Tree Historical Reserve, 1740 Victoria Hwy, Gregory NT (15km north-west of Timber Creek, within Judbarra / Gregory National Park)",
+      "latitude": -15.5665256,
+      "longitude": 130.3673103,
+      "neighbourhood": "Timber Creek, Victoria River District, Northern Territory"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Gregory's_Tree_Historical_Reserve",
+      "https://www.ntlis.nt.gov.au/heritageregister/f?p=103:303::::NO:P303_PLACE_ID:101"
+    ],
+    "access": "Free, public historical reserve beside the Victoria Highway; a marked track leads from a roadside cairn to the tree, which has its own boardwalk and interpretative panels built around it. It is also a registered Aboriginal sacred site to the Ngaringman people (who know it as Ngalibinggag), so the public boardwalk keeps visitors from touching or approaching the trunk directly; this does not restrict viewing.",
+    "transport": "No public transport; self-drive only, on the Victoria Highway roughly 15km north-west of Timber Creek, NT, and about 3.5 hours' drive west of Katherine.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent official sources: Wikipedia's dedicated article (citing 1931 and 1938 newspaper reports via Trove) and the Northern Territory Heritage Register's own site page (Place ID 101, permanently declared 1 March 1995), which gives tree-level GPS coordinates from its own site map and explicitly calls the tree 'a living monument to the exploration of the North of Australia' -- confirming it is alive. Marks the 'entrenchment camp' of Augustus Charles Gregory's North Australia Expedition (1855-56); the trunk still bears carved inscriptions of the camp's arrival and departure dates, 13 October 1855 and 2 July 1856. The boab species itself, Adansonia gregorii, was first described and named in Gregory's honour by expedition botanist Ferdinand von Mueller, one of Australia's most prominent 19th-century botanists, which is a genuine naming-of-a-species-level distinction. No age or girth figure is published by either source (boabs are notoriously hard to age and often estimated in centuries, but no source ties a number to this specific tree, so both fields are left blank rather than guessed). CAUTION FOR A FUTURE PHOTO PASS: the Commons photos filed under this lead's original entry are captioned 'Northern Territory, Roper River', which is geographically wrong -- boabs (Adansonia gregorii) do not occur naturally anywhere near the Roper River, only in the Kimberley/western NT/Victoria River region, and Gregory's actual documented, heritage-listed marked tree sits on the Victoria Highway near Timber Creek, roughly 500km west of the Roper. This looks like an archive mislabelling rather than a second, different tree; no separate 'Roper River' Gregory tree could be corroborated by any source in this pass. CONTAINER DECISION: no existing published Australian city or place sits within a reasonable day trip (nearest towns are Timber Creek, a few houses, and Katherine, roughly 3.5 hours' drive away; Darwin and Kununurra are each 3+ hours). Proposed as its own new single-tree place, 'Gregory's Tree' / Timber Creek, NT: it clears the single-tree-destination test on the strength of a genuine, unique historical credential (a named explorer's own campsite marker, carved by his party, the type specimen naming of an entire species after him) rather than merely being a fine old tree, and it is an official, signposted Northern Territory heritage reserve and tourism listing in its own right."
+  }
+]
