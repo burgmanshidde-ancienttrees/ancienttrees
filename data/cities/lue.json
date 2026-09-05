@@ -1,0 +1,62 @@
+{
+  "city": "Luë",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Three kilometres south of Luë, in the pine country of the Landes, stands an oak that was nearly firewood. Around 1870 the ethnologist Félix Arnaudin got word that tenant farmers were about to fell it and reached the landowner in time to stop them, then photographed the tree in 1899. It has been standing since at least the fourteenth century, is eight metres round, and carries the national Arbre remarquable de France label. The commune has owned it since 1997 and it sits beside a rural lane, free and open.",
+  "meta_description": "The Chêne de Cantaure near Luë: an oak of 700 to 800 years that Felix Arnaudin saved from the axe around 1870 and photographed in 1899.",
+  "question_meta": "Luë's only mapped tree is the Chêne de Cantaure, a pedunculate oak standing since at least the 14th century, 8 metres round.",
+  "question_answer": "Luë's only mapped tree is the Chêne de Cantaure, a pedunculate oak of roughly 700 to 800 years standing in the Cantaure quarter about three kilometres south of the village.",
+  "question_context": "Around 1870 tenant farmers came to cut this oak up for firewood, and the ethnologist Félix Arnaudin, who spent his life recording the Haute-Lande, got word and reached the landowner in time to stop them. He came back in 1899 with a camera, and that photograph is now held at the Musée d'Aquitaine. The tree has stood since at least the fourteenth century, which puts it somewhere around 700 to 800 years old. It measures eight metres round at normal measuring height and eleven where the root flare spreads at ground level, stands eighteen to twenty metres tall, and is hollow through the middle, splitting into two master limbs at a wide fork. Local legend has Pope Clement V pausing near it around 1310, which is legend rather than record. In March 1997 the owner, Michel Harribey, gave the tree and its land to the commune of Luë, and in May 2011 it took the national Arbre remarquable de France label. It stands on communal land beside a rural lane, free, with no gate and no bus service.",
+  "hero_tree_id": "cnt_001",
+  "oldest_tree_id": "cnt_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Luë?",
+      "a": "The Chêne de Cantaure, a pedunculate oak that has stood since at least the fourteenth century, so roughly 700 to 800 years old, three kilometres south of the village."
+    },
+    {
+      "q": "Who was Félix Arnaudin?",
+      "a": "An ethnologist and photographer of the Haute-Lande. Around 1870 he stopped tenant farmers felling this oak for firewood by alerting the landowner, and in 1899 he photographed it; the picture is at the Musée d'Aquitaine."
+    },
+    {
+      "q": "How big is it?",
+      "a": "Eight metres round at normal measuring height and eleven metres at ground level where the roots flare, standing eighteen to twenty metres tall, with a hollow trunk forking into two large limbs."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "By car. It stands on communal land beside a rural lane about three kilometres south of Luë village centre, with no train or bus service nearby, and it is free and open at all times."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cnt_001",
+      "name": "The Chêne de Cantaure",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 700-800 years (at least since the 14th century)",
+      "age_min": 700,
+      "age_max": 800,
+      "girth_cm": 800,
+      "location": {
+        "address": "Quartier de Cantaure, about 3km south of the village of Luë, 40210 Luë, Landes, France",
+        "latitude": 44.20962747568121,
+        "longitude": -0.9640286787580031,
+        "neighbourhood": "Cantaure, rural Landes forest"
+      },
+      "story": "Around 1870 tenant farmers came to cut this oak up for firewood. Félix Arnaudin, the ethnologist who spent his life recording the Haute-Lande before the pine plantations swallowed it, got word and reached the landowner in time to stop them. He came back in 1899 with a camera, and that photograph now sits in the Musée d'Aquitaine: the same tree, already enormous, more than a century ago.\n\nIt is a pedunculate oak and it has stood since at least the fourteenth century, which puts it somewhere around 700 to 800 years old. Eight metres round at normal measuring height, eleven where the root flare meets the ground, eighteen to twenty metres tall, hollow through the middle and splitting into two master limbs at a wide fork. Local legend has Pope Clement V pausing near it around 1310. That is legend, and worth saying so.\n\nThe near miss with the axe was not the last piece of luck. In March 1997 the owner, Michel Harribey, gave the tree and the land under it to the commune of Luë, which has looked after it since, and in May 2011 it took the national Arbre remarquable de France label. In 2019 a film crew used it for a closing scene.\n\nIt stands on communal land beside a rural lane, three kilometres south of the village. No gate, no ticket, and no bus. This one needs a car.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_de_Cantaure",
+        "https://www.sudouest.fr/landes/pontenx-les-forges/lue-le-chene-de-cantaure-en-vedette-de-cinema-4468085.php"
+      ],
+      "access": "Free; stands on communal land right beside a rural lane, open at all times, no ticket or gate",
+      "transport": "Rural; no train or bus service nearby, reached by car only, about 3km south of Luë village centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

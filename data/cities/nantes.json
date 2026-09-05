@@ -1,0 +1,69 @@
+{
+  "city": "Nantes",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "One tree in Nantes is mapped here so far, and it is the oldest in the whole Loire-Atlantique. The Châtaignier de l'Éraudière is a sweet chestnut of somewhere between 800 and 1200 years, over ten metres round, with two huge limbs reaching sideways from a spiralled, hollowing trunk. It once stood in the private grounds of the château de l'Éraudière; the city grew east and swallowed them, and the tree now has a public square to itself off the busway, where it still drops chestnuts every autumn.",
+  "meta_description": "The Châtaignier de l'Éraudière: the oldest tree in Loire-Atlantique, a sweet chestnut of 800 to 1200 years with its own square in Nantes.",
+  "question_meta": "The oldest tree in Nantes is the Chataignier de l'Eraudiere, a sweet chestnut of 800 to 1200 years in the Square de la Mée.",
+  "question_answer": "The oldest tree in Nantes is the Châtaignier de l'Éraudière, a sweet chestnut reckoned at between 800 and 1200 years old and considered the oldest tree in the whole Loire-Atlantique, standing in the Square de la Mée in the Éraudière quarter.",
+  "question_context": "Local tradition puts this chestnut in the ground in the year 756. The city's own parks department is more careful and says about 800 years, while the official Nantes description gives 800 to 1200 depending on the source. Nobody has settled it, and at any point in that range it is the oldest tree in Loire-Atlantique. It used to stand in the private grounds of the château de l'Éraudière. Nantes grew east and swallowed those grounds, and the tree ended up with a public square of its own, the Square de la Mée, laid out around it, with a low fence that keeps feet off the roots rather than visitors away. It is fifteen metres tall and twelve across, with a trunk over ten metres round that has twisted into a spiral as it hollowed, and two huge limbs reaching sideways, which is what the city means when it calls the tree a living sculpture. It still fruits every year, and the C6 busway stops beside it.",
+  "hero_tree_id": "erd_001",
+  "oldest_tree_id": "erd_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nantes?",
+      "a": "The Châtaignier de l'Éraudière, a sweet chestnut of somewhere between 800 and 1200 years in the Square de la Mée, and considered the oldest tree in the whole Loire-Atlantique department."
+    },
+    {
+      "q": "Was it really planted in 756?",
+      "a": "That is popular tradition, which would make it around 1270 years old. The city's green-spaces service puts it nearer 800 years, and Nantes Métropole publishes the range of 800 to 1200 rather than a single figure."
+    },
+    {
+      "q": "Why is it fenced?",
+      "a": "The low fence keeps footfall off the root plate, not visitors out of the square. The tree is fully visible and the square is open at all times."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "The C6 busway stops at Éraudière, right by the Square de la Mée on rue du Château de l'Éraudière, about four kilometres north-east of the city centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "erd_001",
+      "name": "The Châtaignier de l'Éraudière",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "800 to 1200 years (local tradition holds it was planted in 756 AD)",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1000,
+      "location": {
+        "address": "Square de la Mée, rue du Château de l'Éraudière, 44300 Nantes, Loire-Atlantique, France",
+        "latitude": 47.2449639,
+        "longitude": -1.5418239,
+        "neighbourhood": "Éraudière, Nantes Erdre"
+      },
+      "story": "Local tradition puts this chestnut in the ground in the year 756. The city's own parks department is more careful and says about 800 years; the official Nantes description gives 800 to 1200, depending which source you follow. Nobody has settled it. At any point in that range it is the oldest tree in Loire-Atlantique.\n\nIt used to stand in the private grounds of the château de l'Éraudière. Nantes grew east and swallowed the grounds, and the tree came out of it with a public square of its own, the Square de la Mée, laid out around the trunk. The low fence around it is there to keep feet off the root plate rather than to keep anyone at a distance.\n\nFifteen metres tall, twelve across, with a trunk over ten metres round that has twisted into a spiral as it hollowed. Two huge limbs come off it and reach sideways, which is what the city means when it calls the tree a living sculpture. A local guide once put a tape around it at a metre up and got 11.70 metres, while admitting the method was rough.\n\nAnd it still fruits. Every autumn a tree that local memory dates to the Carolingians drops chestnuts onto a square in a north-eastern Nantes suburb, with the busway stopping at the gate.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when it drops chestnuts, which it still does every year"
+      },
+      "verified_sources": [
+        "https://metropole.nantes.fr/que-faire-a-nantes/a-la-decouverte-des-arbres-remarquables-de-nantes",
+        "https://krapooarboricole.wordpress.com/2011/09/24/le-chataignier-de-leraudiere-nantes-loire-atlantique/"
+      ],
+      "access": "Free, in an open public square (Square de la Mée); the tree itself sits inside a low protective fence to stop trampling of its roots, but is fully visible and the square is open at all times",
+      "transport": "Busway/tram line C6, Éraudière stop, right by the square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

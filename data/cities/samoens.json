@@ -1,0 +1,67 @@
+{
+  "city": "Samoëns",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Samoëns maps one tree, and the village square is named after it. The Gros Tilleul is a large-leaved lime about nine metres round and twenty metres tall, on the Place du Gros Tilleul in the middle of this Haute-Savoie village. From the sixteenth century the council of syndics held its assemblies under the branches, before Samoëns had a town hall, and village gatherings still happen there. Local tradition dates the planting to 1438. The tree is a classified site and one of the two landmarks the village names itself by, the other being the Criou above it.",
+  "meta_description": "The Gros Tilleul de Samoens: a lime about 9 metres round on the square that carries its name, where the village council met before there was a town hall.",
+  "question_meta": "Samoens' only mapped tree is the Gros Tilleul, a large-leaved lime traditionally dated to 1438 and about 9 metres round.",
+  "question_answer": "Samoëns' only mapped tree is the Gros Tilleul, a large-leaved lime on the Place du Gros Tilleul in the village centre, traditionally dated to 1438 and so roughly 590 years old.",
+  "question_context": "Before Samoëns had a town hall it had this lime. From the sixteenth century the village's council of syndics held its assemblies out in the open under the branches, and the square around the trunk still carries the tree's name: Place du Gros Tilleul. Village meetings and gatherings are still held there. Local tradition dates the planting to 1438, which would make the tree roughly 590 years old, and holds that it was put in to mark the right of self-government Samoëns had won from Duke Amédée VIII of Savoy seven years earlier. That is tradition rather than a ring count, so the number is best taken broadly. The tree itself is not in doubt: a large-leaved lime about nine metres round and twenty metres tall, with the heavy low frame a lime gets when nothing crowds it. It sits on France's register of remarkable trees and on the Haute-Savoie list of classified sites, so the ground is legally protected rather than fondly regarded. It is free, open at all hours, and the benches under it are in daily use.",
+  "hero_tree_id": "smn_001",
+  "oldest_tree_id": "smn_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Samoëns?",
+      "a": "The Gros Tilleul, a large-leaved lime on the Place du Gros Tilleul in the village centre, traditionally dated to 1438 and so roughly 590 years old."
+    },
+    {
+      "q": "Why does the square carry the tree's name?",
+      "a": "Because the tree came first. From the sixteenth century the village's council of syndics met under it, before Samoëns had a town hall, and the square grew around that habit."
+    },
+    {
+      "q": "Is it really from 1438?",
+      "a": "That date is local tradition, repeated by the village and by the tree's entries in the French remarkable-tree records, not a ring count. Treat roughly 590 years as a broad figure rather than a measured one."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open village square with no gate and no ticket, at any hour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "smn_001",
+      "name": "The Gros Tilleul de Samoëns",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 590 years",
+      "age_min": 550,
+      "age_max": 600,
+      "girth_cm": 900,
+      "location": {
+        "address": "Place du Gros Tilleul, 74340 Samoëns, Haute-Savoie, France",
+        "latitude": 46.083508,
+        "longitude": 6.726615,
+        "neighbourhood": "Village centre"
+      },
+      "story": "Before Samoëns had a town hall, it had this lime. From the sixteenth century the village's council of syndics held its assemblies out in the open under the branches, and the square that grew around the trunk still carries the tree's name: Place du Gros Tilleul. Village meetings are still held there.\n\nLocal tradition dates the planting to 1438 and ties it to the right of self-government the village had won from Duke Amédée VIII of Savoy seven years before. That is tradition rather than a ring count, so take the resulting 590 years broadly. The tree is less arguable than its birthday: about nine metres round, twenty metres tall, a large-leaved lime with the heavy low frame those get when nothing crowds them for six centuries.\n\nSamoëns is a stonemasons' village in the Haute-Savoie, and locals name two things when they name the place. One is the Criou, the mountain standing over it. The other is this tree. It is on France's register of remarkable trees and on the departmental list of classified sites, which makes the ground under it legally protected rather than merely well regarded.\n\nIt has never stopped being a working village square. No gate, no ticket, and the benches underneath are in daily use.",
+      "best_time": {
+        "months": [6, 7],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers open and the whole square smells of them"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Gros_tilleul_de_Samo%C3%ABns",
+        "https://www.samoens.com/samoens-le-village/le-gros-tilleul/"
+      ],
+      "access": "Free, in the open village square at all times",
+      "transport": "No train station in Samoens; regular bus from Cluses SNCF station (approx 30-40 min), or by car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

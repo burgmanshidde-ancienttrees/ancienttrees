@@ -10,7 +10,8 @@
     "https://commons.wikimedia.org/wiki/File:Billebaum_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Billebaum_02.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "confirmed dead: this beech (girth 615cm, roughly 350 years old) was storm-damaged 25 March 1989 (per the commune of Reinhardsmunster's own site) and felled shortly after as a safety hazard (per the krapooarboricole tree blog, which visited the site); only a roughly 3m stump under a protective roof remains. Verified 2026-09-05, see data/research/famousfrance-verified.json's notes."
   },
   {
    "name": "Ginkgo biloba in Toul",
@@ -81,9 +82,10 @@
     "https://commons.wikimedia.org/wiki/File:Chataignier_de_l_Eraudi%C3%A8re_-_Nantes_-_02.jpg",
     "https://commons.wikimedia.org/wiki/File:Chataignier_de_l_Eraudi%C3%A8re_-_Nantes_-_03.jpg"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id erd_001)."
   },
   {
    "name": "Châtaignier de Romagne (Vienne)",
@@ -93,9 +95,10 @@
     "https://commons.wikimedia.org/wiki/File:Romagne_86_Ch%C3%A2taignier_mort_2013.jpg",
     "https://commons.wikimedia.org/wiki/File:Romagne_86_Ch%C3%A2taigniers%26colza_2014.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "confirmed dead: matches a Commons file explicitly captioned Chataignier commun (Castanea sativa) mort, en bordure de la D 37, Romagne, Vienne, France (2013); reverse-geocoding the candidate coordinate places it exactly on the D37 in Romagne. Verified 2026-09-05."
   },
   {
    "name": "Châtaignier des Nonneries",
@@ -106,9 +109,10 @@
     "https://commons.wikimedia.org/wiki/File:Abbaretz_-_Chataignier_Nonneries_02.jpg",
     "https://commons.wikimedia.org/wiki/File:Abbaretz_-_Chataignier_Nonneries_03.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "the famous ancient specimen (a claimed millennial chestnut, 9th oldest tree in France per local sources) died in a lightning-caused fire on 31 July 1985 and is now, per aujardin.info, no more than a decaying vestige managed only for public safety. Of its 5 naturally-layered offshoots, 3 have since fallen; the survivors are relatively young clonal sprouts, not an ancient collectible entry in their own right. Verified 2026-09-05."
   },
   {
    "name": "Le Gros Châtaignier (Marchampt)",
@@ -119,9 +123,10 @@
     "https://commons.wikimedia.org/wiki/File:Gros_Ch%C3%A2taigner_de_Marchampt,_Rh%C3%B4ne_2_(mars_2019).jpg",
     "https://commons.wikimedia.org/wiki/File:Gros_Ch%C3%A2taigner_de_Marchampt,_Rh%C3%B4ne_3_(mars_2019).jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "confirmed dead for several decades (Le Patriote Beaujolais, 4 July 2024); kept standing only as bat/insect deadwood habitat, not as a living tree. Verified 2026-09-05."
   },
   {
    "name": "Pin Bertaud",
@@ -156,7 +161,8 @@
    ],
    "status": "lead",
    "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "note": "Checked 2026-09-05: alive and well documented (official abbayedefontenay.com page: planted 1780, ~40m tall, in the abbey's own Jardin Remarquable-labelled gardens), but only one source found so far and it reads as a nice feature of an already-famous UNESCO site (people travel for the Abbey of Fontenay itself) rather than a specimen famous or record-holding in its own right, so it is not a clear single-tree-destination case. Left as a lead for a pass with time to find a second source and make that judgement call, rather than force a verdict."
   },
   {
    "name": "Platane de Branféré",
@@ -180,9 +186,10 @@
     "https://commons.wikimedia.org/wiki/File:Church_and_platanus_in_Pr%C3%A9ty.jpg",
     "https://commons.wikimedia.org/wiki/File:Platane_de_Pr%C3%A9ty.jpg"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id pty_001)."
   },
   {
    "name": "Arbre Ferrat",
@@ -204,7 +211,8 @@
     "https://commons.wikimedia.org/wiki/File:Arburacellu_1.jpg",
     "https://commons.wikimedia.org/wiki/File:Arburacellu_2.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "note": "Verified 2026-09-05 as the strongest single-tree-destination candidate of this batch (French Tree of the Year 2018, public prize); see data/research/famousfrance-verified.json (id arb_001)."
   },
   {
    "name": "Chêne séculaire de Blésignac",
@@ -279,9 +287,10 @@
     "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_de_Cantaure.jpg",
     "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_de_Cantaure_2.jpg"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id cnt_001)."
   },
   {
    "name": "Chêne de Charlemagne (Fontainebleau)",
@@ -352,9 +361,10 @@
     "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_Jupiter_Fontainebleau_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_Jupiter_Fontainebleau_02.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "confirmed dead: died 1993 from age/xylophage damage, decapitated to a standing trunk by ONF in April 1994 for public safety after confirming no sap rise (Le Monde 29 Apr 1994, L'Humanite 10 May 1994, fr.wikipedia's own detailed article). Verified 2026-09-05."
   },
   {
    "name": "Chêne sessile Les trois frères (Senonches - Eure-et-Loir)",
@@ -618,9 +628,10 @@
     "https://commons.wikimedia.org/wiki/File:Le_tilleul_de_P%C3%A9rouges_et_ses_renforts_en_avril_2021.jpg",
     "https://commons.wikimedia.org/wiki/File:Mobeye-%C3%89t%C3%A9DesVilles-P%C3%A9rouges-7.jpg"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id pgs_001)."
   },
   {
    "name": "Gros Tilleul de Samoëns",
@@ -631,9 +642,10 @@
     "https://commons.wikimedia.org/wiki/File:Gros_Tilleul_de_Samoens_1.jpg",
     "https://commons.wikimedia.org/wiki/File:Gros_Tilleul_de_Samoens_2.jpg"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id smn_001)."
   },
   {
    "name": "Le Sully de Pesselières",
@@ -719,7 +731,8 @@
     "https://commons.wikimedia.org/wiki/File:Arburacellu_1.jpg",
     "https://commons.wikimedia.org/wiki/File:Arburacellu_2.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "note": "Verified 2026-09-05 as the strongest single-tree-destination candidate of this batch (French Tree of the Year 2018, public prize); see data/research/famousfrance-verified.json (id arb_001)."
   },
   {
    "name": "Cedre pleureur",
@@ -766,7 +779,8 @@
     "https://commons.wikimedia.org/wiki/File:Lentisque_remarquable_de_Ghisonaccia.jpg",
     "https://commons.wikimedia.org/wiki/File:Lentisque_remarquable_de_Ghisonaccia_(ext).jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "note": "Same tree/area as Arburacellu above (OSM natural=tree node l'Arbre Oiseau sits at 42.0363173,9.3688794, about 1.3km from this lead's coordinate); Arburacellu is verified, see arb_001."
   }
  ]
 }

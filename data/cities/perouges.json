@@ -1,0 +1,61 @@
+{
+  "city": "Pérouges",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Pérouges is a walled medieval town on a hill above the Ain plain, and the tree at the centre of its main square was planted as a piece of politics. The lime went in on 21 April 1792 as a liberty tree of the Revolution, which makes it 234 years old, and it is the only classified tree in the entire Ain department. It is hollow now, cut back from twenty metres to about eight, and its crown rests on seven wooden props. The square is named after it: Place du Tilleul.",
+  "meta_description": "The Tilleul de Perouges: a liberty tree planted on 21 April 1792, propped on seven supports, and the only classified tree in the Ain.",
+  "question_meta": "Perouges' only mapped tree is its liberty tree, a lime planted on 21 April 1792 in the centre of the Place de la Halle.",
+  "question_answer": "Pérouges' only mapped tree is the Tilleul de Pérouges, a lime planted on 21 April 1792 as a liberty tree of the Revolution, standing in the centre of the Place de la Halle inside the walled medieval town.",
+  "question_context": "France planted liberty trees by the thousand in the 1790s and cut most of them down within a generation. This one went into the ground on 21 April 1792, in the exact centre of the main square of Pérouges, and it is still there. It has cost the town some effort. The lime is hollow, it stood twenty metres tall in 1948, and heavy limbs breaking under their own weight brought it down to about eight. What is left is a low crown, described as a pair of butterfly wings, resting on seven wooden props. Cars were banned from parking at the foot of it in 2010 so the roots could recover, and the winter road salt that had been poisoning them was stopped too. Whether that worked depends on who you ask: the official classification file says the tree reached senescence and has since stabilised, while French accounts closer to the town say it is dying slowly. It is the only classified tree in the whole Ain department. The square at the top of the walled town is named after it, Place du Tilleul, and it is free and open at any hour.",
+  "hero_tree_id": "pgs_001",
+  "oldest_tree_id": "pgs_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Pérouges?",
+      "a": "The one tree mapped here is the Tilleul de Pérouges, a lime planted on 21 April 1792 in the centre of the Place de la Halle, which makes it 234 years old."
+    },
+    {
+      "q": "What is a liberty tree?",
+      "a": "A tree planted during the French Revolution as a public symbol of it. Thousands went in across France in the 1790s, and most did not survive the Restoration. This one did."
+    },
+    {
+      "q": "Why is it held up by props?",
+      "a": "The trunk is hollow and heavy limbs broke under their own weight, so the tree was cut back from twenty metres to about eight and its remaining crown now rests on seven wooden supports."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open square at the centre of the walled town, with no gate or ticket, though parking beside the tree has been banned since 2010 to protect its roots."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pgs_001",
+      "name": "The Tilleul de Pérouges (Liberty Tree)",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "234 years (planted 21 April 1792)",
+      "age_min": 233,
+      "age_max": 234,
+      "location": {
+        "address": "Place de la Halle (Place du Tilleul), Cite medievale de Perouges, 01800 Perouges, Ain, France",
+        "latitude": 45.90346,
+        "longitude": 5.1795,
+        "neighbourhood": "Central square of the walled medieval town"
+      },
+      "story": "France planted liberty trees by the thousand in the 1790s and cut most of them down within a generation. This one went into the ground on 21 April 1792, in the exact centre of the main square of Pérouges, and it is still standing there.\n\nIt has cost the town some effort. The lime is hollow. It stood twenty metres tall in 1948, and heavy limbs breaking under their own weight brought it down to about eight. What is left is a low, wide crown, described as a pair of butterfly wings, resting on seven wooden props. Cars were banned from parking at the foot of it in 2010 so the roots could recover, and the winter road salt that had been poisoning them was stopped as well.\n\nWhether that worked depends on who you ask. The official classification file says the tree reached senescence and has since stabilised. French accounts closer to the town say it is dying, slowly. Both descriptions fit the same propped, leafy tree that photographs from 2021 and 2022 show in the square.\n\nIt is the only classified tree in the whole Ain department, which is an odd distinction for a region that size. Pérouges is a walled medieval hilltop town that people already travel to, and the square at the top of it is called Place du Tilleul, after this one lime.",
+      "verified_sources": [
+        "https://www.auvergne-rhone-alpes.developpement-durable.gouv.fr/IMG/pdf/tilleul_de_perouges-_fiche_de_presentation.pdf",
+        "https://fr.wikipedia.org/wiki/Tilleul_de_P%C3%A9rouges"
+      ],
+      "access": "Free, open square (Acces: Libre per the official DREAL fact sheet); parking at the tree itself has been banned since 2010 to protect the roots",
+      "transport": "Gare de Meximieux-Perouges (SNCF/TER), then about 1.5km / 20-25 minutes on foot uphill into the walled town",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

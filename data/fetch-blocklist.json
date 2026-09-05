@@ -2,6 +2,12 @@
  "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
  "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
  "hosts": {
+  "piece-jointe-carto.developpement-durable.gouv.fr": {
+   "behaviour": "hangs; curl -m 20 times out (exit 28, Connection timed out) on a site-classe fact-sheet PDF (REG043B/DOCS/SITES/SC_71_005_fiche.pdf) during the _famous-france verify pass.",
+   "seen": "2026-09-05",
+   "cost": "one fetch attempt (20s)",
+   "workaround": "French Wikipedia articles that cite these DREAL fact sheets usually quote the key figures (age, girth, height, classification date) directly, so the citing Wikipedia article can substitute when it exists."
+  },
   "ffs.fdacs.gov": {
    "behaviour": "connect ECONNREFUSED via WebFetch; curl -m 20 times out (exit 28). Confirmed on the Florida Champion Tree Register's index and detail pages during a Jacksonville register scout.",
    "seen": "2026-09-03",
