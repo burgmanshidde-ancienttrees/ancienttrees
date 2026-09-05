@@ -5632,6 +5632,96 @@
    ],
    "trees": 21,
    "logged": true
+  },
+  {
+   "started": "2026-09-05T17:47:31+00:00",
+   "date": "2026-09-05",
+   "run_id": "33982036154",
+   "minutes": 100.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 524,
+   "denials": 50,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(printenv), Bash(python3), Bash(rm), Bash(test)",
+   "ended": "success",
+   "tokens": 9307324,
+   "claims_held": [
+    "arnhem"
+   ],
+   "commits": 26,
+   "cities_touched": 17,
+   "cities": [
+    {
+     "city": "helsinki",
+     "trees": 2
+    },
+    {
+     "city": "argoules",
+     "trees": 1
+    },
+    {
+     "city": "aubers",
+     "trees": 1
+    },
+    {
+     "city": "estry",
+     "trees": 1
+    },
+    {
+     "city": "gjerrild",
+     "trees": 1
+    },
+    {
+     "city": "kopcany",
+     "trees": 1
+    },
+    {
+     "city": "kremnica",
+     "trees": 1
+    },
+    {
+     "city": "les-clayes-sous-bois",
+     "trees": 1
+    },
+    {
+     "city": "lohja",
+     "trees": 1
+    },
+    {
+     "city": "ramsau-bei-berchtesgaden",
+     "trees": 1
+    },
+    {
+     "city": "rannee",
+     "trees": 1
+    },
+    {
+     "city": "reyersviller",
+     "trees": 1
+    },
+    {
+     "city": "taasinge",
+     "trees": 1
+    },
+    {
+     "city": "tombeboeuf",
+     "trees": 1
+    },
+    {
+     "city": "toul",
+     "trees": 1
+    },
+    {
+     "city": "turku",
+     "trees": 1
+    },
+    {
+     "city": "yvignac-la-tour",
+     "trees": 1
+    }
+   ],
+   "trees": 18,
+   "logged": true
   }
  ],
  "schedule_changes": [
