@@ -1,0 +1,58 @@
+{
+  "city": "Argoules",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "The storm of October 1987 tore the crown clean off this lime, and it has spent nearly forty years rebuilding one under protective care. Sources reach for 400 years as its age, on the belief it dates from the early 1600s, though a rival local account makes it a liberty tree planted during the Revolution instead, which would roughly halve that. The village inn, the Auberge du Gros Tilleul, is named after it, and it stands unfenced on the open square in the Baie de Somme country.",
+  "meta_description": "The Great Linden of Argoules lost its crown in the 1987 storm and has rebuilt it since. Labelled a Remarkable Tree of France, free on the village square.",
+  "question_meta": "Argoules's remarkable tree is a lime on the village square, roughly 400 years old, that lost its crown in the storm of 1987.",
+  "question_answer": "The remarkable tree in Argoules is a Small-leaved Lime on the village square beside the church and chateau, classified as a botanical natural monument in 1934 and labelled Arbre remarquable de France in 2016. Sources put it at roughly 400 years old, though a rival account dates it to a liberty tree planted in 1792 or 1793.",
+  "question_context": "Two stories compete for the lime's age. One traces it to the start of the seventeenth century, giving roughly 400 years. The other makes it a liberty tree, planted like many across France in 1792 or 1793 when the Revolution encouraged the practice, which would roughly halve that figure. Both the sources checked flag these as rival accounts rather than one settled date, so this page states honestly that Argoules does not know exactly how old its lime is. What is certain is the damage from the storm of 15 and 16 October 1987, which tore the crown off; the tree has been rebuilding one ever since under protective care, the plainest evidence that it is still working. The state classified it as a botanical natural monument in 1934, well before the national Arbre remarquable de France label existed, and it received that newer label as well in 2016. No girth figure has ever been published for it, an unusual gap for a tree this formally recognised, and this page asks any visitor with a tape measure to close it.",
+  "hero_tree_id": "arg_001",
+  "oldest_tree_id": "arg_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Argoules?",
+      "a": "A Small-leaved Lime on the village square, roughly 400 years old by one account, labelled Arbre remarquable de France in 2016."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands unfenced on the open village square beside the church and chateau, no restriction."
+    },
+    {
+      "q": "Did it survive the 1987 storm?",
+      "a": "Yes, though the storm tore its crown off. It has been rebuilding one under protective care ever since."
+    }
+  ],
+  "trees": [
+    {
+      "id": "arg_001",
+      "name": "The Great Linden of Argoules",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 420,
+      "girth_cm": null,
+      "location": {
+        "address": "Place du village, Argoules, Somme, France",
+        "latitude": 50.341717,
+        "longitude": 1.835263,
+        "neighbourhood": "Argoules village square"
+      },
+      "story": "The storm of 15 and 16 October 1987 tore the crown clean off this lime. It has been rebuilding one ever since, slowly and under protective care, which is the plainest evidence anyone could ask for that the tree is still working.\n\nFour hundred years is the figure the sources reach for, on the belief that it dates from the start of the seventeenth century. A competing local account makes it a liberty tree planted in 1792 or 1793, when villages across France were putting them in, which would roughly halve its age. Both sources flag these as rival stories rather than one settled date, so the honest answer is that Argoules does not know how old its lime is.\n\nWhat the state decided is easier to pin down. The tree was classified as a botanical natural monument in 1934, and in 2016 it was labelled Arbre remarquable de France.\n\nIt stands on the open square between the Saint-Germain church and the chateau, in the Baie de Somme country, free and unfenced. The village inn is named after it, the Auberge du Gros Tilleul, which tells you how long it has been the thing people navigate by here. No girth figure has ever been published. If you bring a tape, we would like the number.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Liste_des_arbres_remarquables_de_la_Somme",
+        "https://www.argoules.fr/"
+      ],
+      "access": "Free, standing on the open village square (place du village) beside the church and chateau; no restriction.",
+      "transport": "No station; reached by car, in the Baie de Somme area of the Somme department.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

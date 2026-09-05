@@ -1,0 +1,64 @@
+{
+  "city": "Toul",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "An admiral is said to have carried this ginkgo home from Toulon in his luggage around 1804, and whether or not that is true, the tree he supposedly planted has become one of France's officially labelled Arbres remarquables. It stands in the public park behind Toul's town hall and does nothing all year until mid-November, when the whole crown turns gold at once and holds for days before dropping in a single morning.",
+  "meta_description": "Toul's Ginkgo biloba, labelled a Remarkable Tree of France in 2015, turns its whole crown gold in mid-November. Free, in the town hall park.",
+  "question_meta": "Toul's remarkable tree is a Ginkgo biloba behind the town hall, said to have been planted around 1804 by a local admiral.",
+  "question_answer": "Toul's notable tree is a Ginkgo biloba in the Parc de l'Hotel de Ville, roughly 220 years old by local tradition, which credits the admiral Henri de Rigny with bringing a cutting from Toulon around 1804. It was labelled Arbre remarquable de France on 7 June 2015.",
+  "question_context": "The 1804 planting story rests on local tradition from both the town and the departmental tourist board, and neither cites a period document, so treat it as strong local belief rather than settled fact. What is measured is the tree itself, recorded at 21.84 metres when it received its national label. No girth figure has ever been published for it, which is unusual for a tree with an official designation, and this page asks any visitor who has had a tape around the trunk to say so. Ginkgo biloba has no living relatives among trees and only reached European gardens in the eighteenth century, so an 1804 planting would make this one of the earlier ginkgos established in France. The tree's real event is autumnal: mid-November is when the whole crown turns gold together rather than fading gradually, and holds for days before a single morning drops most of it.",
+  "hero_tree_id": "tou_001",
+  "oldest_tree_id": "tou_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Toul?",
+      "a": "A Ginkgo biloba in the Parc de l'Hotel de Ville, roughly 220 years old by local tradition and labelled Arbre remarquable de France in 2015."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Mid-November, when the entire crown turns gold within a few days and then drops most of its leaves in a single morning."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the public park behind Toul's town hall, walkable from the town centre with no restriction."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tou_001",
+      "name": "The Ginkgo of Toul",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 220 years",
+      "age_min": 200,
+      "age_max": 230,
+      "girth_cm": null,
+      "height_m": 21.84,
+      "location": {
+        "address": "Parc de l'Hotel de Ville, Rue de Rigny, 54200 Toul, France",
+        "latitude": 48.679,
+        "longitude": 5.891,
+        "neighbourhood": "Town centre, Toul"
+      },
+      "story": "An admiral is said to have brought this tree home in his luggage. Henri de Rigny was born in Toul in 1782, and both the town and the departmental tourist board credit him with carrying a cutting or a seed north from a ginkgo in Toulon around 1804. Neither cites a period document, so it stays strong local tradition rather than settled fact. The tree itself is not in doubt: 21.84 metres when it was measured for its label, and if that 1804 planting holds, somewhere near 220 years old.\n\nThat would make it an early one for France. Ginkgo biloba has no living relatives, reached European gardens only in the eighteenth century, and was still a botanical curiosity when this one went into the ground behind the town hall.\n\nMid-November is the fortnight Toul waits for. A ginkgo does not fade into autumn so much as switch: the whole crown goes gold, holds for days, then drops most of it in one windless morning. Local guides like to say the Ecole de Nancy designers took their cue from foliage like this, a line repeated often and sourced nowhere.\n\nOn 7 June 2015 it became the 375th tree in the country to carry the label Arbre remarquable de France. Nobody has published a girth for it. If you have had a tape around the trunk, tell us.",
+      "verified_sources": [
+        "https://www.toul.fr/?ginkgo-biloba-arbre-remarquable-de=",
+        "https://tourisme-meurtheetmoselle.fr/decouvrir-la-meurthe-et-moselle/lessentiel/nature/sites-naturels/995005488-ginkgo-biloba-de-toul-arbre-remarquable-de-france"
+      ],
+      "access": "Free, standing in the public Parc de l'Hotel de Ville in the town centre.",
+      "transport": "Walkable from Toul town centre; no public transport needed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [11],
+        "kind": "autumn colour",
+        "label": "mid-November, when the whole crown turns gold at once"
+      }
+    }
+  ]
+}

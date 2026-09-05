@@ -1,0 +1,58 @@
+{
+  "city": "Rannée",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "In July 2018 one of the candles left at this oak set fire to it. The offerings were back the next day. Small boxed statues of the Virgin cover the trunk from the base upward, said by local tradition to have started in 1792 when a girl hid a statuette in the tree rather than betray a hunted priest. Nobody has published an age or a girth, which is unusual for a tree this well known, and that is honestly stated rather than guessed at.",
+  "meta_description": "The Oak of the Virgin at Rannée has been covered in devotional offerings since 1792, by tradition, and survived a 2018 fire. Free, at the roadside.",
+  "question_meta": "Rannée's remarkable tree is the Oak of the Virgin, covered in devotional statues since a tradition dating to 1792, near La Guerche-de-Bretagne.",
+  "question_answer": "Rannée's notable tree is the Oak of the Virgin, at the roadside on the edge of the forest of La Guerche between La Guerche-de-Bretagne and Rannée. Its trunk is covered in small boxed statues of the Virgin, rosaries and ex-votos, a devotional tradition local accounts trace to 1792.",
+  "question_context": "The tradition behind the oak is specific: Republican soldiers hunting a refractory priest during the Terror are said to have shot a young girl at the tree's foot when she would not say where he was hiding, and the statuette she had placed in a hollow of the trunk stayed there, with more added ever since. That is the story as this corner of Brittany tells it rather than anything a court record confirms; the offerings themselves, and their continual replacement, are the verifiable part. In July 2018 one of the candles left as an offering set the tree alight, and both accounts of the fire agree the trunk survived it, though how well the crown has recovered is something a visitor can judge better than a source can. Nobody has published an age, a girth or even settled which oak species this is, which this page states plainly rather than guessing at.",
+  "hero_tree_id": "ran_001",
+  "oldest_tree_id": "ran_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree near Rannée?",
+      "a": "The Oak of the Virgin, covered in small devotional statues and offerings by a tradition said to date to 1792."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands at the roadside on the edge of the forest of La Guerche, free and open at any hour, no ticket or booking."
+    },
+    {
+      "q": "How old is the tree?",
+      "a": "Unknown. Nobody has published an age, a girth or confirmed which oak species it is. If you can tell, the page invites you to say so."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ran_001",
+      "name": "The Oak of the Virgin at Rannée",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Roadside between La Guerche-de-Bretagne and Rannée, at the edge of the forest of La Guerche, Ille-et-Vilaine, France",
+        "latitude": 47.91974258,
+        "longitude": -1.16963601,
+        "neighbourhood": "Between La Guerche-de-Bretagne and Rannée"
+      },
+      "story": "In July 2018 one of the candles left at this oak set fire to it. The offerings were back the next day.\n\nThe trunk is covered from the base upward in small boxed statues of the Virgin, along with rosaries and ex-votos. By local tradition the first one was placed in 1792. Republican soldiers hunting a refractory priest during the Terror are said to have shot a young girl at the foot of the tree when she would not say where he was hiding, and the statuette she had put in a hollow of the trunk stayed there. People have been adding to it ever since. That is the story as this corner of Brittany tells it rather than anything a court record confirms, and the tradition is the verifiable part: the offerings are there, and they are replaced.\n\nBoth accounts of the fire agree the trunk survived it. How well the crown has recovered since is something a visitor can see better than we can.\n\nWhat is missing is everything a register would hold. Nobody has published an age or a girth, and nobody has settled which oak this is. If you get there with a tape measure or a good eye for a leaf, tell us.\n\nIt stands at the roadside on the edge of the forest of La Guerche, free, at any hour, about 45 minutes out of Rennes.",
+      "verified_sources": [
+        "https://www.grandouestinsolite.fr/339-35-ille-et-vilaine-le-chene-a-la-vierge-de-rannee.html",
+        "https://lalunemauve.fr/fascinante-bretagne-le-chene-a-la-vierge/"
+      ],
+      "access": "Free, roadside/forest-edge location, no ticket or booking.",
+      "transport": "Reached by car, about 45 minutes from Rennes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
