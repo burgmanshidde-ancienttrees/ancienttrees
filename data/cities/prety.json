@@ -1,0 +1,62 @@
+{
+  "city": "Préty",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Préty is a village on the Saône in the Saône-et-Loire, and the tree at its crossroads has been legally protected since 1909. The plane was planted in 1801 on a mound beside the église Notre-Dame, in the place of an old justice elm, and by the account that survives it marked the Concordat that let priests return to France after the Revolution. Reportedly never pruned since, it has grown to 34 metres tall with a crown spreading 36 metres across the junction. Tournus station is three kilometres away.",
+  "meta_description": "The Platane de Préty: a plane planted in 1801 in place of a justice elm, reportedly never pruned, classified as a natural monument in 1909.",
+  "question_meta": "Préty's only mapped tree is its plane, planted in 1801 at the crossroads by the church and classified as a natural monument in 1909.",
+  "question_answer": "Préty's only mapped tree is the Platane de Préty, a plane planted in 1801 on a mound at the crossroads beside the église Notre-Dame, classified as a natural monument on 25 August 1909.",
+  "question_context": "This plane has been under state protection since 1909 and, by the accounts that survive, under nobody's saw since it was planted. It went into a mound at the crossroads beside the church of Préty in 1801, replacing an orme de justice, the elm under which local justice had once been dispensed, and it was put there to mark the Concordat that let priests return to France after the Revolution. Left alone, a plane does this: 34 metres tall, a trunk 5.7 metres round, and a crown spreading 36 metres across the junction. The regional heritage federation measures the height at 33.5 metres, close enough to be the same tree. Most planes in France have been pollarded back into fists; this one has the shape the species actually grows. France declared it a site classé, a natural monument, on 25 August 1909, decades before most of the country's remarkable trees got any protection at all. It stands in the open at a village crossroads, free and unfenced, about three kilometres from Tournus station on the Paris to Lyon line.",
+  "hero_tree_id": "pty_001",
+  "oldest_tree_id": "pty_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Préty?",
+      "a": "The Platane de Préty, a plane planted in 1801 on a mound at the crossroads beside the église Notre-Dame, which makes it about 225 years old."
+    },
+    {
+      "q": "Why was it planted?",
+      "a": "It replaced an orme de justice, an elm under which local justice had been dispensed, and by the account that survives it was planted to mark the Concordat that let priests return to France after the Revolution."
+    },
+    {
+      "q": "How big is it?",
+      "a": "About 34 metres tall with a trunk 5.7 metres round and a crown spreading 36 metres, the shape a plane grows when it is left unpruned. A second survey gives the height as 33.5 metres."
+    },
+    {
+      "q": "Is it protected?",
+      "a": "Yes. It was classified as a site classé, a natural monument, on 25 August 1909, which is unusually early for a single tree in France."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pty_001",
+      "name": "The Platane de Préty",
+      "species": "Plane (Platanus sp.)",
+      "age_estimate": "225 years (planted 1801)",
+      "age_min": 224,
+      "age_max": 225,
+      "girth_cm": 570,
+      "location": {
+        "address": "Place de l'église, near the Église Notre-Dame, 71290 Préty, Saône-et-Loire, France",
+        "latitude": 46.54293,
+        "longitude": 4.93936,
+        "neighbourhood": "Village crossroads by the church"
+      },
+      "story": "This plane has been under state protection since 1909 and, by the accounts that survive, under nobody's saw since it was planted. It went into a mound at the crossroads beside the church of Préty in 1801, in the place of an orme de justice, the elm under which local justice had once been dispensed. The reason recorded for planting it was the Concordat, the agreement that let priests return to France after the Revolution. A political tree, in other words, put in by a village that wanted the point made in public.\n\nLeft alone, a plane does this: 34 metres tall, a trunk 5.7 metres round, and a crown spreading 36 metres across the junction. The regional heritage federation puts the height at 33.5 metres, close enough to be the same tree on a different day. Most planes in France have been pollarded back into knuckles and fists. This one has the shape the species actually grows.\n\nThe protection is the odd part. France classified it as a site classé, a natural monument, on 25 August 1909, decades before most of the country's remarkable trees got anything of the kind. Somebody was paying attention early.\n\nIt still stands in the open at a village crossroads on the Saône plain, free and unfenced, about three kilometres from Tournus station on the Paris to Lyon line.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Pr%C3%A9ty",
+        "https://fappah.fr/prety-patrimoine-de-pays/"
+      ],
+      "access": "Free, standing in the open at a village crossroads next to the church, always accessible",
+      "transport": "No station in Prety; Tournus SNCF station (Paris-Lyon main line) is about 3km away by road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

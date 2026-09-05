@@ -1,0 +1,62 @@
+{
+  "city": "Ghisonaccia",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Ghisonaccia sits on the eastern plain of Corsica, and the tree mapped here was unknown until 2017, when a resident out picking wild asparagus with his granddaughter walked into it. The Arburacellu is a cork oak of roughly 200 to 250 years whose bark has grown into three outgrowths that read, from the right angle, as a bird of prey with its wings spread. In 2018 the French public voted it tree of the year. It stands beside a rural lane near the hamlet of Gattone, free to visit.",
+  "meta_description": "The Arburacellu near Ghisonaccia: a Corsican cork oak shaped like a bird of prey, found in 2017 and voted French tree of the year in 2018.",
+  "question_meta": "Ghisonaccia's mapped tree is the Arburacellu, a cork oak of 200 to 250 years shaped like a bird, French tree of the year 2018.",
+  "question_answer": "Ghisonaccia's mapped tree is the Arburacellu, the bird tree, a cork oak of roughly 200 to 250 years standing beside Strada di u Listincu near Gattone, which won France's Arbre de l'Année public vote in 2018.",
+  "question_context": "Two people out picking wild asparagus found this tree in 2017, and a year later France voted it the country's tree of the year. What they walked into is a cork oak of roughly 200 to 250 years, about fifteen metres tall and four metres round, shaped like a bird. Lightning is the likely explanation: a strike disrupts the flow of sap, the cork bark grows back wrong, and here it grew into three outgrowths that from the right angle read as a raptor with its head raised and its wings out. Fire got into the tree at some point as well, and the core is burnt and hollow. Entered in the 2018 Arbre de l'Année, run by Terre Sauvage and the national forestry office, it took the public prize with 3,053 votes of more than 12,000 cast, then came fourth in European Tree of the Year 2019 with 29,140 votes of 311,772. It is famous for its shape rather than its age, and only since the vote. It stands beside a rural lane near the hamlet of Gattone, free, reached by car.",
+  "hero_tree_id": "arb_001",
+  "oldest_tree_id": "arb_001",
+  "faq": [
+    {
+      "q": "What is the Arburacellu?",
+      "a": "A cork oak near Gattone, outside Ghisonaccia in Haute-Corse, whose bark outgrowths make it look from one angle like a bird of prey with spread wings. Arburacellu is Corsican for bird tree."
+    },
+    {
+      "q": "Why does it look like a bird?",
+      "a": "Most likely a lightning strike disrupted the flow of sap and the cork bark regrew into three outgrowths that together read as a head and two wings. The trunk also carries a burnt, hollow core from an old fire."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 200 to 250 years, which is young for a famous tree. Its fame comes from its shape, not its age, and it was only found in 2017."
+    },
+    {
+      "q": "Did it really win a competition?",
+      "a": "Yes. It took the public prize in France's 2018 Arbre de l'Année with 3,053 of more than 12,000 votes, then placed fourth in European Tree of the Year 2019 with 29,140 votes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "arb_001",
+      "name": "The Arburacellu (the Bird Tree)",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "200 to 250 years",
+      "age_min": 200,
+      "age_max": 250,
+      "girth_cm": 400,
+      "location": {
+        "address": "Strada di u Listincu, near Gattone, 20240 Ghisonaccia, Haute-Corse, Corsica, France",
+        "latitude": 42.0363173,
+        "longitude": 9.3688794,
+        "neighbourhood": "Gattone, rural Corse Orientale plain"
+      },
+      "story": "Two people out picking wild asparagus found this tree in 2017. A year later, France voted it the country's tree of the year.\n\nWhat they walked into is a cork oak of roughly 200 to 250 years, fifteen metres tall and four metres round, shaped like a bird. Lightning is the likely explanation: a strike disrupts the flow of sap, the cork bark grows back wrong, and here it grew into three outgrowths that from the right angle read as a raptor with its head raised and its wings spread. Fire reached it at some point too. The core is burnt and hollow.\n\nThe man who found it, out foraging with his granddaughter, took it to the person who had already had Ghisonaccia's other old tree, a mastic reckoned at a thousand years, officially recognised. The oak was entered in the 2018 Arbre de l'Année, run by Terre Sauvage and the national forestry office, and took the public prize with 3,053 votes of more than 12,000 cast. The following year it came fourth in European Tree of the Year, with 29,140 votes of 311,772.\n\nSo it is famous for its shape rather than its age, and famous only since a vote, which is rarer still. It stands beside a rural lane on the eastern Corsican plain near Gattone, and people now drive out specifically to find the angle where the bird appears.",
+      "verified_sources": [
+        "https://ghisonaccia.fr/arburacellu-larbre-oiseau---notre-chene-liege-representera-la-corse-au-concours-2018-du-plus-bel-arbre-de-france./",
+        "https://www.corseorientale.com/A-voir-A-faire/Les-incontournables/L-ARBUR-ACELLU-CHENE-LIEGE-GHISONACCIA"
+      ],
+      "access": "Free, beside a rural lane near Gattone, with no gate or ticket; listed by the Corse Orientale tourist office among the sights of the area",
+      "transport": "Rural Corsican plain, reached by car; nearest town is Ghisonaccia",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
