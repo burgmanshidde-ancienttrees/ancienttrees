@@ -1,0 +1,63 @@
+{
+  "city": "Kimotsuki",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kimotsuki's mapped tree grows out of the top of a grave. Tsukazaki no Kusu is a 14-metre-round camphor standing on the crown of a fourth-century burial mound, sacred tree of the shrine beside it, roughly 1,200 to 1,300 years old by the town's own reckoning. Published here as a single-tree place under the 2026-08-31 exception, too far from Kagoshima city for a same-day trip.",
+  "meta_description": "Tsukazaki no Kusu, Kimotsuki: a 14-metre camphor atop a burial mound, one of Kagoshima's largest, a National Natural Monument since 1940.",
+  "question_meta": "Kimotsuki's mapped tree is Tsukazaki no Kusu, a giant camphor 14 metres round, growing on top of a fourth-century burial mound.",
+  "question_answer": "Kimotsuki's only mapped tree is Tsukazaki no Kusu, a camphor tree 14 metres round at chest height, growing atop Tsukazaki Kofun No. 1, a circular burial mound, and kept as the sacred tree of the neighbouring shrine.",
+  "question_context": "The town gives its age as roughly 1,200 to 1,300 years, a round figure published without a stated method. Tsukazaki Kofun No. 1 belongs to a burial mound cluster raised from the fourth century onward, and whether the tree was planted there on purpose or simply took root over an old grave is not recorded anywhere. By local reckoning it is the third largest camphor in Kagoshima Prefecture, after specimens at Gamou and Shibushi, standing 25 metres tall with a heart-shaped hollow at its base that local legend gives to a resident serpent. It is the sacred tree, the goshintaisha, of Tsukazaki Otsuka Shrine, so the site is Shinto ground layered over an archaeological one. Decay and hollowing were serious enough that recovery work began in 2007, and a boardwalk went in during 2013 to keep visitors' feet off the roots. It came through the typhoons of 2022, and the town describes it as growing vigorously. Free to visit year-round, with a small gravel parking area beside the road and a boardwalk protecting the base; reached by car, with no public transport route found to the site.",
+  "hero_tree_id": "kmt_001",
+  "oldest_tree_id": "kmt_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It grows on top of Tsukazaki Kofun No. 1, a fourth-century burial mound, and at 14 metres round is one of the largest camphors in Kagoshima Prefecture."
+    },
+    {
+      "q": "How old is it?",
+      "a": "The town gives its age as roughly 1,200 to 1,300 years, a figure published without a stated dating method."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside a small gravel parking area with no admission fee, protected by a boardwalk installed in 2013 to keep foot traffic off the roots."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car; no public transport route to the site was found. It sits in Kimotsuki, Kagoshima Prefecture, likely reached by car or taxi from Kanoya."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kmt_001",
+      "name": "Tsukazaki no Kusu",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "roughly 1200 to 1300 years",
+      "age_min": 1200,
+      "age_max": 1300,
+      "girth_cm": 1400,
+      "height_m": 25.0,
+      "location": {
+        "address": "2243 Nosaki, Kimotsuki, Kimotsuki District, Kagoshima 893-1201, Japan (atop Tsukazaki Kofun No. 1, a circular burial mound, within the Tsukazaki Kofun cluster; sacred tree of Tsukazaki Otsuka Shrine)",
+        "latitude": 31.33872,
+        "longitude": 130.971065,
+        "neighbourhood": "Kimotsuki, Kagoshima Prefecture; about 40 km from Kagoshima city"
+      },
+      "verified_sources": [
+        "https://kimotsuki-town.jp/soshiki/rekishiminzoku/1/2/1655.html",
+        "https://kimotsukitown.wixsite.com/explorekimotsuki/giant-camphor-tree-in-tsukazaki"
+      ],
+      "access": "Free. Open to viewing year-round; a small gravel parking area with signage sits beside the road a few metres before the bamboo grove entrance, and a boardwalk (installed 2013) protects the roots. No admission fee found. Caution advised on the boardwalk in wet weather.",
+      "transport": "By car; parking at 2243 Nosaki, Kimotsuki, a short walk from the mound. No public-transport route found; likely reached by car or taxi from Kanoya.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This camphor grows out of the top of a grave. Tsukazaki Kofun No. 1 is a round burial mound in a cluster raised from the fourth century onward, and the tree stands on its crown: 14 metres round at chest height, 25 metres tall, one of the largest camphors in Kagoshima Prefecture and by one local reckoning the third largest after the Gamou and Shibushi trees. Whether anyone put it up there on purpose is not recorded anywhere.\n\nThe town gives the age as 1,200 to 1,300 years and more, a round figure it publishes without saying how it was reached, so the mound was already old ground long before the tree took it over. A heart-shaped hollow opens at the base, and the local story is that a serpent lives in it. Another tradition here reads a snapping branch as a warning of war. It is the sacred tree of Tsukazaki Otsuka Shrine, which makes this a Shinto site standing on an archaeological one, and one report credits more than fifty other plant species growing on its own bark and limbs.\n\nIt has been in trouble and has come back. Decay and hollowing were serious enough that recovery work began in 2007, and a boardwalk went in during 2013 to keep visitors' feet off the roots. It came through the typhoons of 2022, and the town now describes it as growing vigorously. Take the boardwalk carefully in the wet.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

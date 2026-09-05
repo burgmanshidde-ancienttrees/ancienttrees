@@ -1,0 +1,69 @@
+{
+  "city": "Oguni",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Oguni's mapped tree looks, from the road, like a small wood of ginkgos. Shimojo no Oichou is one tree: a female specimen over a thousand years old whose root suckers have crowded so thickly around its base that visitors mistake the mass for several trees. Published here as a single-tree place under the 2026-08-31 exception, too far from any city we already map for a same-day trip.",
+  "meta_description": "Shimojo no Oichou, Oguni: a single giant ginkgo over 1,000 years old, roadside on National Route 212, lit gold each November.",
+  "question_meta": "Oguni's mapped tree is Shimojo no Oichou, a giant ginkgo over 1,000 years old that from a distance looks like several trees.",
+  "question_answer": "Oguni's only mapped tree is Shimojo no Oichou, the Great Ginkgo of Shimojo, a single female specimen over 1,000 years old standing roadside on National Route 212, a National Natural Monument since 1934.",
+  "question_context": "From the road it reads as a small wood of ginkgos. It is one tree. The thicket around the base is root suckers crowding a single trunk, and the Japanese record says so plainly, because the illusion has fooled visitors for years. The designation, made in 1934, covers one specimen; this is one of two nationally designated ginkgos in Kumamoto and reputed the largest in the prefecture. How thick the trunk is depends on who measured it: published figures run from 9.6 to 12 metres round, and the sources contradict each other, so the range is the honest version. The root collar, sucker mass and all, comes to about 21 metres, often quoted as though it were the trunk. Both the town and the Japanese record give the age as over a thousand years, and neither says how. Locally it is Chichikobu-san: women wanting milk for a baby came here to pray and scrape its bark, and the scrape marks remain. It stands on a rise off Route 212 between Oguni town and Tsuetate Onsen, with parking directly below, free and roadside, lit gold after dark each November.",
+  "hero_tree_id": "ogn_001",
+  "oldest_tree_id": "ogn_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It looks from a distance like a small wood of ginkgos, but the Japanese heritage record confirms it is one female specimen, its base crowded with root suckers."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Both the town and the national heritage record give it as over 1,000 years, a rounded figure with no stated dating method."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands roadside on National Route 212 with two parking areas directly below, no fee or gate."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car only, about 5 minutes from 'Yu Station' in Oguni, between the town centre and Tsuetate Onsen."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ogn_001",
+      "name": "Shimojo no Oichou (the Great Ginkgo of Shimojo)",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over 1000 years",
+      "age_min": 1000,
+      "age_max": 1300,
+      "girth_cm": 960,
+      "height_m": 25.0,
+      "location": {
+        "address": "Shimojo, Oguni Town, Aso District, Kumamoto Prefecture, on a rise beside the town road just east of National Route 212, between Oguni's town centre (Miyabaru) and Tsuetate Onsen",
+        "latitude": 33.150417,
+        "longitude": 131.055,
+        "neighbourhood": "Shimojo, Oguni"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E4%B8%8B%E3%81%AE%E5%9F%8E%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+        "https://www.town.kumamoto-oguni.lg.jp/kankojyoho/kanko_oshirase/348607",
+        "https://ogunitown.info/tourism/1654/"
+      ],
+      "access": "Free, roadside. Two parking areas directly below the tree, right on National Route 212; no fee or entry gate found. About 5 minutes' drive from the local 'Yu Station' service point; no public transport route found, so this is a car destination.",
+      "transport": "Car only. About 5 minutes from 'Yu Station' in Oguni; the tree stands directly on National Route 212 partway between Oguni town centre and Tsuetate Onsen (Oita border).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [11],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns gold and the town lights it at night"
+      },
+      "story": "From the road it reads as a small wood of ginkgos. It is one tree. The thicket around the base is root suckers crowding a single female trunk, and the Japanese record says so plainly, because the illusion has been fooling visitors for years. The designation, made on 28 December 1934, covers one specimen. Japan has nationally designated twenty ginkgos; this is one of two in Kumamoto and reputed the largest in the prefecture.\n\nHow thick the trunk is depends on who measured it. Published figures run from 9.6 to 12 metres round at chest height and the sources contradict each other openly, so the range is the honest version. The root collar, sucker mass and all, comes to about 21 metres, which is a different measurement and gets quoted as though it were the trunk. Height is around 25 metres and the crown has been recorded as wide as 40. Both the town and the Japanese record give the age as over a thousand years, in that rounded form, and neither says how they got there.\n\nLocally it is Chichikobu-san. Women wanting milk for a baby came here to pray and to scrape its bark, and the scrape marks are still on the trunk. Another story makes it the grave marker of a local lord and his mother.\n\nIt stands on a rise straight off Route 212 between Oguni town and Tsuetate Onsen, with parking directly below, and the town lights it after dark once it turns gold.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

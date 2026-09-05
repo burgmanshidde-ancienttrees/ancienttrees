@@ -2,8 +2,8 @@
  "city": "Hokuto",
  "country": "Japan",
  "status": "needs_curation",
- "intro": "Hokuto's hero tree is Jindai-zakura, the oldest of Japan's Three Great Cherry Trees and, by tradition, the oldest cherry in the country: somewhere between 1,800 and 2,000 years old. It grows at Jisso-ji Temple in the hills of Yamanashi and was among the first five individual trees Japan ever named a National Natural Monument, in 1922. It flowers pale and drooping in early April, and bloom forecasters track it every year like a piece of infrastructure. A second cherry, Shinden no Oitozakura, stands alone in a rice paddy 7.5km away and once told farmers when to plant.",
- "meta_description": "Jindai-zakura, traditionally Japan's oldest cherry tree at up to 2,000 years, grows at Jisso-ji Temple in Hokuto, alongside a second paddy-field cherry.",
+ "intro": "Hokuto's hero tree is Jindai-zakura, the oldest of Japan's Three Great Cherry Trees and, by tradition, the oldest cherry in the country: somewhere between 1,800 and 2,000 years old, named a National Natural Monument in 1922. A second cherry, Shinden no Oitozakura, stands alone in a rice paddy 7.5km away and once told farmers when to plant. A third tree, a designated wild azalea near the summit of Mt Utsukushimori, hides among a much larger, undesignated blaze of colour that draws most of the crowd past it.",
+ "meta_description": "Hokuto's three mapped trees: Jindai-zakura, by tradition Japan's oldest cherry, a paddy-field cherry, and a National Monument azalea on Mt Utsukushimori.",
  "question_answer": "Hokuto's oldest mapped tree is Jindai-zakura, an Edo-higan cherry at Jisso-ji Temple traditionally estimated at 1,800 to 2,000 years old, which would make it the oldest cherry tree in Japan. The figure rests on a legend that the warrior prince Yamato Takeru planted it, repeated by tourism boards and government publications but backed by no dating method, so read it as tradition rather than measurement.",
  "question_meta": "Jindai-zakura in Hokuto is traditionally called Japan's oldest cherry tree, at up to 2,000 years. One of the Three Great Cherry Trees.",
  "question_context": "Jindai-zakura grows on the grounds of Jisso-ji Temple in Yamataka, a hamlet in the city of Hokuto at the foot of the Southern Japan Alps. In October 1922 the Japanese government named its first National Natural Monuments, and this cherry was one of only five individual trees on that inaugural list, alongside Miharu Takizakura and Usuzumi-zakura, the two trees it is now always grouped with as the Three Great Cherry Trees of Japan. The traditional age, 1,800 to 2,000 years, comes from a legend that the warrior prince Yamato Takeru planted it on his way through the region; no dating method backs the figure, and the trunk is too hollow and knotted to read reliably. What can be measured is the base, a root flare given as 11.8 to 13.5 metres round beneath a tree only about 10 metres tall, spreading outward rather than climbing. Bloom forecasters track it individually every spring, and seeds from it have reportedly been flown into space and grown on in gardens abroad.",
@@ -27,6 +27,10 @@
   {
    "q": "What is the second tree Hokuto maps?",
    "a": "Shinden no Oitozakura, a weeping Higan cherry standing alone at the edge of a rice paddy in Kobuchisawa, about 7.5km from Jindai-zakura. A Yamanashi Prefecture Natural Monument since 1959."
+  },
+  {
+   "q": "What is the third tree Hokuto maps?",
+   "a": "Utsukushimori no Oyamatsutsuji, a single National Natural Monument azalea near the summit of Mt Utsukushimori, distinct from the much larger undesignated blaze of wild azaleas covering the same hillside."
   }
  ],
  "trees": [
@@ -92,6 +96,37 @@
    "transport": "10 minutes by taxi from JR Kobuchisawa Station, or 12 minutes from JR Nagasaka Station; also reachable by municipal bus line 1 (about 10 min) plus a 10-minute walk from the 'Hara Village' stop.",
    "location_precision": "confirmed",
    "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "hok_003",
+   "name": "Utsukushimori no Oyamatsutsuji",
+   "species": "Japanese Azalea (Rhododendron kaempferi)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 270,
+   "location": {
+    "address": "8240-1 Nishi-ide, Oizumi-cho, Hokuto City, Yamanashi Prefecture, on Mt Utsukushimori (Utsukushi-mori, 1,542m) on the southern foot of Mt Yatsugatake, near the hill's summit",
+    "latitude": 35.93574,
+    "longitude": 138.41658,
+    "neighbourhood": "Utsukushimori, Kiyosato, Oizumi-cho, Hokuto"
+   },
+   "verified_sources": [
+    "https://online.bunka.go.jp/heritages/detail/190722",
+    "https://www.city.hokuto.yamanashi.jp/docs/1932.html",
+    "https://www.yamanashi-kankou.jp/kankou/spot/p1_4996.html"
+   ],
+   "access": "Free. Free parking at the base (about 50 cars, 4 buses) with a visitor centre, then roughly a 15-minute walk on a hiking trail up to the summit area of Mt Utsukushimori.",
+   "transport": "5-minute drive from JR Koumi Line's Kiyosato Station, or 15 minutes from the Chuo Expressway's Nagasaka IC, then a ~15-minute walk from the base car park to the summit area.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "story": "The famous thing on this hill is not the protected thing. Mt Utsukushimori, 1,542 metres on the southern foot of Yatsugatake, carries something like a thousand rengetsutsuji that colour the whole slope in June and fill everyone's photographs. Those are a different species and none of them is designated. The National Natural Monument here is one azalea, listed on 7 June 1935, and most people walk straight past it.\n\nThe 1935 text tells you what to look for: a plant that divides at ground level into more than a dozen stems off a single root crown, those stems measuring about 2.7 metres round taken together, throwing a crown roughly six metres east to west and five and a half north to south. The 2.7 is a sum, not a trunk, which is worth knowing before you go up expecting something thick.\n\nNobody recorded an age in 1935 and nobody has since, so there is no age to give. Its current vigour is a fair question too: one unverified summary says the plant has been in decline, and no source we could check repeats it. Yamanashi Prefecture still listed it as a standing monument in April 2025.\n\nIt is a fifteen-minute walk up from the car park at the base, where there is a visitor centre and room for fifty cars. If you get up there and photograph the designated one rather than the hillside, send it to us.",
    "photo": {
     "url": null,
     "license": null,
