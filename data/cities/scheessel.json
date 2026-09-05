@@ -1,0 +1,67 @@
+{
+  "city": "Scheessel",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Scheessel maps one tree: the Gerichtslinde, a lime on the open forecourt of St.-Lucas-Kirche where a Femegericht is recorded meeting since 1288, with a pillory still standing beside it around 1900. Two surveys put its girth at just over seven metres and disagree on its age by three centuries, 500 to 800 years. Published alone here because the tree is the destination, not because Scheessel's research is finished.",
+  "meta_description": "The Gerichtslinde of Scheessel: a hollow, split-trunked lime where a court sat since 1288, 500-800 years old, 7 metres round.",
+  "question_meta": "Scheessel's only mapped tree is the Gerichtslinde, a lime where court was held since 1288, estimated at 500 to 800 years old.",
+  "question_answer": "Scheessel's only mapped tree is the Gerichtslinde, a small-leaved lime estimated at 500 to 800 years old on the open forecourt of St.-Lucas-Kirche in the town centre.",
+  "question_context": "Court was held under this lime, and by the account that survives it had been going on since 1288. Scheessel's Femegericht met on the open ground in front of St.-Lucas-Kirche, where the Go-court and later the district court both sat through the Middle Ages, and a pillory still stood beside the trunk around 1900. The tree has grown strange with the centuries: the stem is hollow and split, and the base has widened into what one survey calls two supporting legs, bark grown through the whole trunk rather than around it. Measured in July 2024 it came in at 7.02 metres round and was logged as vital that day; a second survey gives 7.10 metres at a metre up. Its age is genuinely unsettled, one register saying 500 to 600 years and the other 800 flat, so the honest answer is the wide band rather than a single number. Scheessel is a small town on the line between Bremen and Hamburg, and the lime is a short walk from the station.",
+  "hero_tree_id": "sch_001",
+  "oldest_tree_id": "sch_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Scheessel?",
+      "a": "The Gerichtslinde, a small-leaved lime estimated at 500 to 800 years old, on the open forecourt of St.-Lucas-Kirche in the town centre."
+    },
+    {
+      "q": "Why is it called the Gerichtslinde?",
+      "a": "A Gerichtslinde is a court lime: this one is recorded as the meeting place of Scheessel's Femegericht since 1288, and a pillory stood beside it into the 1900s."
+    },
+    {
+      "q": "How old is it really?",
+      "a": "Two surveys disagree by three centuries, one giving 500 to 600 years and the other 800 flat, and neither is copying the other since their girth figures differ too. Take the wide band as the honest answer."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on the open forecourt of St.-Lucas-Kirche in the town centre, with no gate or ticket."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sch_001",
+      "name": "The Gerichtslinde of Scheessel",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 500 to 800 years",
+      "age_min": 500,
+      "age_max": 800,
+      "girth_cm": 710,
+      "location": {
+        "address": "Zevener Strasse 4 / forecourt of St.-Lucas-Kirche, Grosse Strasse, Scheessel, Lower Saxony, Germany",
+        "latitude": 53.16922805,
+        "longitude": 9.48220468,
+        "neighbourhood": "Scheessel town centre"
+      },
+      "story": "Court was held under this lime, and by the account that survives it had been going on since 1288. Scheeßel's Femegericht met on the open ground in front of St.-Lucas-Kirche, where the Go- court and later the district court both sat through the Middle Ages. The arrangement outlasted the courts themselves. A pillory still stood beside the trunk around 1900, which is a long run for one town, one spot and one purpose.\n\nThe tree has grown strange with the centuries. The stem is hollow and split, and the base has widened into what one survey calls two supporting legs, with bark grown through the whole trunk rather than around it. Measured in July 2024 it came in at 7.02 metres round, and was logged as vital that day. A second survey gives 7.10 metres at a metre up.\n\nIts age is genuinely unsettled. One register puts it at 500 to 600 years, the other at 800 flat, and neither is copying the other, because their girth figures differ too. Take the wide band. Even at the low end it was already a heavy old tree long before the pillory came and went.\n\nScheeßel is a small town on the line between Bremen and Hamburg, and the lime is a short walk from the station. No gate and no ticket: a church forecourt, and the tree the court used to sit under.",
+      "best_time": {
+        "months": [6, 7],
+        "kind": "flowers",
+        "label": "late June into July, when the flowers open and the scent carries across the church forecourt"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1136-gerichtslinde_in_scheessel/",
+        "https://www.alte-baeume-der-heide.de/scheeszel.html"
+      ],
+      "access": "Free, public. Stands on the open forecourt of St.-Lucas-Kirche in the town centre, no gate or ticket.",
+      "transport": "Scheessel town centre, walkable from the train station (Scheessel is on the Bremen-Hamburg line).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

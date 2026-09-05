@@ -5306,6 +5306,24 @@
         "note": "4 famous-UK stories, 245-248 words each, 1 best_time; ~11.8k tokens per tree",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "_famous-germany batch c",
+        "kind": "verify",
+        "tokens": 178904,
+        "trees": 1,
+        "note": "6 candidates checked: 1 delivered (Scheessel Gerichtslinde, single-tree place), 1 turned out a duplicate of published gtn_001 (caught by passcheck --pending before merge), 2 verified but held below the single-tree bar (Everseiche declining health, Lieveneiche too thin), 1 held on register discrepancy (Alfeld: register lists it as 2 trees), 1 blocked dead (Heinrichslinde, current tree is a 2022 sapling)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Scheessel (sch_001)",
+        "kind": "write",
+        "tokens": 100684,
+        "trees": 1,
+        "note": "single-tree write pass, the whole pending queue at dispatch time; batch-of-one overhead per BRIEF_WRITING.md. Fixed species name at merge (Winter Linden -> canonical Small-leaved Lime, hard rule 9) and built the new single-tree place city file, faq, question fields",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
