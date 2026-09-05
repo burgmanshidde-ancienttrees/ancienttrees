@@ -1,0 +1,69 @@
+{
+  "city": "Degsne",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Degsne maps one tree: a larch standing 49 metres tall in a forest planted in 1849, the tallest tree recorded anywhere in Lithuania. Its trunk carries no branch at all for its first 29 metres, all the tree's growth having gone upward rather than out. Published alone here because the tree is the destination, not because Degsne's research is finished.",
+  "meta_description": "The Degsne Forest Larch: Lithuania's tallest recorded tree at 49 metres, in a forest stand planted in 1849.",
+  "question_meta": "Degsne's only mapped tree is a larch 49 metres tall, the tallest tree recorded in Lithuania.",
+  "question_answer": "Degsne's only mapped tree is the Degsne Forest Larch, a European larch 49 metres tall in the Degsne forest stand of Nemuno Loops Regional Park, the tallest tree recorded in Lithuania.",
+  "question_context": "The tallest tree in Lithuania is a larch, and it is under two metres round. At 49 metres it beats everything else growing in the country, and the State Protected Areas Service register lists it under exactly that title. The trunk carries no green branch at all for its first 29 metres, and at chest height it measures 186 centimetres round, a demonstration of how a larch puts its growth upward rather than outward. The first larches here were planted in 1849, and the stand they grew into is now the tallest forest in Lithuania, averaging around 42 metres. The forest was protected in 1960, and this one tree was designated in its own right in 2002. No legend attaches to it beyond the record itself. Getting there takes a car or a bicycle: a gravel forest road runs about three kilometres off the Kaunas to Alytus road north of Balbieriskis, and no bus goes near it.",
+  "hero_tree_id": "deg_001",
+  "oldest_tree_id": "deg_001",
+  "faq": [
+    {
+      "q": "What is the tallest tree in Degsne?",
+      "a": "The Degsne Forest Larch, 49 metres tall, the tallest tree recorded anywhere in Lithuania."
+    },
+    {
+      "q": "How old is it?",
+      "a": "The larches here were planted in 1849, making the stand around 175 years old, a documented planting date for the forest rather than an estimate."
+    },
+    {
+      "q": "Why is the trunk so thin for such a tall tree?",
+      "a": "Larches put most of their growth upward rather than outward. At 186 centimetres round it is slender for its height, and the trunk carries no branch at all for its first 29 metres."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in public state forest within Nemuno Loops Regional Park, reached by a gravel forest road with no gate or permission needed. There is no public transport to the road itself; a car or bicycle is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "deg_001",
+      "name": "The Degsnė Forest Larch",
+      "species": "European Larch (Larix decidua)",
+      "age_estimate": "about 175 years (planted 1849)",
+      "age_min": 165,
+      "age_max": 180,
+      "girth_cm": 186,
+      "height_m": 49,
+      "location": {
+        "address": "Degsnė Forest, Balbieriškis forestry district, Nemuno Loops Regional Park, Prienai District, Lithuania; via a gravel forest road off the Kaunas-Alytus road (route 130), about 3km north of Balbieriškis / 7km south of Prienai",
+        "latitude": 54.569709,
+        "longitude": 23.875916,
+        "neighbourhood": "Degsnė Forest, Nemuno Loops Regional Park"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Degsn%C4%97s_mi%C5%A1ko_maumedis",
+        "https://saugoma.lt/lt/objektai/objektai-degsnes-misko-maumedis-auksciausias-lietuvos-medis",
+        "https://www.infoprienai.lt/lankytinos-vietos/auksciausias-lietuvos-medis/"
+      ],
+      "access": "Free, public state forest within Nemuno Loops Regional Park. Reached by a good-quality gravel forest road, about 2.5-3km off route 130 (Kaunas-Alytus), turning off shortly before the Balbieriškis outcrop (Balbieriškio atodanga). No gate or permission needed.",
+      "transport": "No public transport reaches the forest road itself; nearest towns are Balbieriškis (about 3km) and Prienai (about 7km). A car or bicycle is the practical way in.",
+      "story": "The tallest tree in Lithuania is a larch, and it is under two metres round.\n\nAt 49 metres it beats everything else growing in the country, and the State Protected Areas Service register lists it under exactly that title. It is a demonstration of what larches do with their energy: nearly all of it goes upward. The trunk carries no green branch at all for its first 29 metres, and at chest height it measures 186 centimetres round. Anyone arriving with a churchyard oak in mind is looking for the wrong shape entirely.\n\nIt did not turn up by accident. The first larches here were planted in 1849, when this was a corner of the Russian Empire, and the stand they grew into is now the tallest forest in Lithuania, averaging around 42 metres. The forest was protected in 1960. This one tree was designated in its own right in 2002, by which point it had stood through two world wars and watched Lithuania become an independent country twice. A survey that year called its condition satisfactory, with the first signs of age on it.\n\nNo legend attaches to it, which feels right. The record is the story.\n\nGetting there takes a car or a bicycle. A gravel forest road runs about three kilometres off the Kaunas to Alytus road north of Balbieriškis, and no bus goes near it.",
+      "best_time": {
+        "months": [10],
+        "kind": "autumn colour",
+        "label": "late October, when the larch turns gold and drops its needles"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}

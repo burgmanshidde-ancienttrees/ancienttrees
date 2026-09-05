@@ -5342,6 +5342,24 @@
         "note": "single-tree write pass, batch-of-one overhead; built new single-tree place city file, faq, question fields",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "_famous-lithuania batch e",
+        "kind": "verify",
+        "tokens": 164414,
+        "trees": 2,
+        "note": "6 candidates checked: 2 new single-tree places (Degsne larch, tallest tree in Lithuania at 49m; Great Thuja of Kintai, reputed tallest of its kind in Lithuania), 3 held as leads (real but no record/legend beyond a bare designation), 1 confirmed dead and blocked (Karpio tuopa, split by lightning 2011, verified from photos)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Degsne + Kintai (deg_001, kin_001)",
+        "kind": "write",
+        "tokens": 104020,
+        "trees": 2,
+        "note": "2-tree write pass; built two new single-tree place city files. Fixed species names at merge (Larix decidua var. polonica -> canonical European Larch; Western Redcedar -> canonical Western Red Cedar, hard rule 9)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
