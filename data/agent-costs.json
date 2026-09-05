@@ -5182,6 +5182,20 @@
         "tokens": 102000,
         "trees": 8,
         "note": "8 Polish famous-tree stories, 8 new single-tree places (Henrykow Lubanski, Gliniak, Ksiaz, Hniszow, Sulechow, Lodz, Debina, Zywiec); disputes on Henrykow girth/age, Bolko Yew 400-800 and Franciszek's polypore kept in the prose; no best_time (4 evergreen, 4 oaks with no documented peak)."
+      },
+      {
+        "target": "famous-japan-2026-09-05-a",
+        "kind": "verify",
+        "tokens": 176701,
+        "trees": 3,
+        "note": "4 Japan famous-tree candidates verified (batch from famous_demand.py --next --country Japan): 3 delivered (Kawazu camphor, Hinode akashide flagged borderline, Nagai/Isazawa cherry), 1 blocked (Tatsuno bamboo grove: not a single point, private ryokan garden)."
+      },
+      {
+        "target": "famous-japan-2026-09-05-a",
+        "kind": "write",
+        "tokens": 137702,
+        "trees": 3,
+        "note": "3 new single-tree places built end to end (Kawazu, Hinode, Nagai): stories, intros, question pages, FAQs, Japan country-page counts updated, leads resolved."
       }
     ]
   }
