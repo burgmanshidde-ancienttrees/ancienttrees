@@ -1,0 +1,59 @@
+{
+  "city": "Yvignac-la-Tour",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Fifty-eight people once stood inside this yew at once, a European record set in 2017; the year after, 28 musicians played a concert inside it. The trunk is 8.5 metres round and so hollow the commune's own page calls it old, hollow and disembowelled. Local tradition holds a priest executed in 1794 for refusing to swear loyalty during the Revolution lies buried beneath its roots. It stands free behind the parish church, near Dinan in Brittany.",
+  "meta_description": "The Millennial Yew of Yvignac-la-Tour once held 58 people inside its hollow trunk at once, a European record. Free, behind the parish church near Dinan.",
+  "question_meta": "Yvignac-la-Tour's remarkable tree is a hollow European Yew behind the church, once holding a European record for people inside a tree.",
+  "question_answer": "The remarkable tree in Yvignac-la-Tour is a European Yew behind the Eglise Saint-Malo, 8.5 metres round and hollow enough that 58 people stood inside it at once in 2017, a European record. It is often called a thousand years old, though no source treats that as a documented figure rather than local convention.",
+  "question_context": "The town's own tourism page is candid that calling the yew millennial is simpler than settling an argument over its real age; one theory ties its planting to the 11th century, when a chapel on the site became the parish church, but nobody presents that as more than an educated guess. The tree's hollow trunk has made it a genuine attraction in its own right: 58 people fit inside simultaneously for a European record in 2017, and 28 musicians performed a concert inside it in 2018. A darker, separately recorded local tradition holds that Guillaume Gauvain, a priest executed in 1794 for refusing to swear loyalty to the Revolutionary state, is buried beneath its roots. The commune has been managing its decline openly rather than pretending otherwise: a successor yew was planted alongside it in December 2000. One theory for the town's own name traces it to the Breton word for yew, if, which would make the tree older than the settlement's name.",
+  "hero_tree_id": "yvi_001",
+  "oldest_tree_id": "yvi_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Yvignac-la-Tour?",
+      "a": "A hollow European Yew behind the parish church, once holding a European record for the most people (58) standing inside a tree at once."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands behind the Eglise Saint-Malo with ordinary churchyard access, no restriction."
+    },
+    {
+      "q": "How old is the tree really?",
+      "a": "Unknown. It is commonly called a thousand years old, but the town's own page treats that as a simplification rather than a documented age."
+    }
+  ],
+  "trees": [
+    {
+      "id": "yvi_001",
+      "name": "The Millennial Yew of Yvignac-la-Tour",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "often called a thousand years old, though no source commits to that as a documented figure",
+      "age_min": 700,
+      "age_max": 1000,
+      "girth_cm": 850,
+      "location": {
+        "address": "Behind the Eglise Saint-Malo, Rue Pierre Loti, 22350 Yvignac-la-Tour, Cotes-d'Armor, Brittany, France",
+        "latitude": 48.348304,
+        "longitude": -2.1759175,
+        "neighbourhood": "Yvignac-la-Tour"
+      },
+      "story": "Fifty-eight people once stood inside this yew at the same time, a European record set in 2017. The year after, 28 musicians played a concert inside it. The trunk is that hollow: 8.5 metres round, the commune's own page calls it 'old, hollow, disembowelled', and generations of local children have used it as a playground.\n\nThe town calls it millennial because, in its own words, it is simpler than arguing about the real number. One theory ties the planting to the 11th century, when a chapel on this spot became the parish church; nobody treats that as more than an educated guess. A darker local tradition, recorded separately, holds that a priest who refused to swear loyalty during the Revolution, Guillaume Gauvain, died in 1794 and lies buried beneath its roots.\n\nThe tree has been failing for a while and everyone involved knows it: the commune planted a successor yew alongside it back in December 2000, insurance for the day this one finally goes. It carries the label Arbre remarquable de France regardless. The Breton word for yew, if, may be where the village's own name comes from, tree before town.\n\nIt stands free behind the Eglise Saint-Malo, no restriction, near Dinan.",
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2010/11/16/if-millenaire-yvignac-la-tour-cotes-darmor/",
+        "https://fr.wikipedia.org/wiki/Liste_des_arbres_remarquables_des_C%C3%B4tes-d'Armor",
+        "https://yvignac.fr/a-la-decouverte-dyvignac-la-tour/"
+      ],
+      "access": "Free, standing behind the parish church; ordinary churchyard access, no restriction.",
+      "transport": "No station; reached by car, near Dinan in Cotes-d'Armor.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
