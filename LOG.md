@@ -1,6 +1,45 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation) - famousjapan-batch-i shipped: 9 trees, 4 new single-tree places; Park Sonsbeek page; a fig-tree reply unstuck; two more passes dispatched
+
+Following on from the refill dispatched below: the verify pass (12 Japan
+candidates from `famous_demand.py --next`) came back with 9 confirmed, 1
+blocked (a "grand camphor" at Oyamazumi Shrine turned out to be a stump,
+dead since a 1322 fire per its own Wikipedia entry), 2 held (no new fame
+evidence). The write pass turned all 9 into stories and 4 into full
+new-place drafts. Merged everything myself: sho_002 and omi_002 each
+became a second tree on an existing page (Shokawa, Omishima), yab_003 and
+yab_004 brought Yabu to four trees, iga_002 gave Iga its sibling
+shibunashigaya (one of only two or three nationally protected in Japan,
+a kilometre from iga_001). Four new single-tree places opened under the
+2026-08-31 exception: Unnan (a seven-trunked katsura), Nishio (a
+chinquapin alive today only through its dead original's secondary
+growth), Takahama (a compact pair of ohatsuki ginkgos that fruit on
+their leaf margins), Toba (one of only two known small-seed kaya
+trees in the country). Three of the touched intros/meta ran over
+Contract B/C's word and character limits after the additions; trimmed
+each. Cleared the 9 published entries plus one stale duplicate out of
+`data/leads/_famous-japan.json`. Build, QA (6575 pages) and preflight
+(409 cities, 0 problems) all clean, tree-index rebuilt.
+
+Also this window: closed a stuck contributor-mail reply. Row 60 (a fig
+tree reported near a private house in Baarn) had been HELD since
+2026-09-03 by mailcheck's app-store-link rule; patched the row's
+`reply_text` in Supabase directly with the missing line so the next
+digest run (which holds the SMTP creds this session doesn't) can send
+it. And answered `pagegaps.py`'s one open gap, Arnhem's Park Sonsbeek
+(6 register trees, threshold 5): wrote the intro from the six trees'
+own stories rather than a template.
+
+Two more passes are now running: a verify pass on 7 UK famous-tree
+candidates (famous-uk-batch-a, Gilwell Oak excluded since it would
+join the gated London, three "Tree of the Year" leads skipped as
+Commons-category artifacts bundling different trees under one name),
+and a photo-judge viewing pass on 30 photo-less trees across cities
+already past the five-tree floor, from a `photo_fetch.py --zero`
+sweep. Both will be merged and logged when they report back.
+
 ## 2026-09-05 (session start) - Rung 1 sightings, a stale duplicate-write cleanup, then a famous-Japan refill dispatched
 
 Rung 2 (health.py) was clear on arrival: the SessionStart hook's "iOS app
