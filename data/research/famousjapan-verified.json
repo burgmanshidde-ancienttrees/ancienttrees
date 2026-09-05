@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mae_001",
+    "name": "The Great Kaya of Yokomuro",
+    "species": "Japanese Torreya (Torreya nucifera)",
+    "age_estimate": "300 to over 1,000 years (sources disagree)",
+    "age_min": 300,
+    "age_max": 1000,
+    "girth_cm": 810,
+    "location": {
+      "address": "Yokomuro, Fujimi-cho, Maebashi City, Gunma Prefecture",
+      "latitude": 36.441444,
+      "longitude": 139.055611,
+      "neighbourhood": "Fujimi, Maebashi"
+    },
+    "verified_sources": [
+      "https://bunka.nii.ac.jp/heritages/detail/204933",
+      "https://ja.wikipedia.org/wiki/%E6%A8%AA%E5%AE%A4%E3%81%AE%E5%A4%A7%E3%82%AB%E3%83%A4"
+    ],
+    "access": "Free. Stands on privately owned land (the Kanazawa family, who have held it since a Suwa Shrine on the site was relocated in 1907) but is open to the public for viewing at no charge.",
+    "transport": "In Fujimi-cho, Maebashi City, Gunma Prefecture; nearest station and walk time not established this pass.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "IMPORTANT CONTAINER NOTE: the original brief labelled this candidate 'joins Higashiagatsuma, 24.9 km', but both sources place the tree in Fujimi-cho, Maebashi City, Gunma, roughly 25km from Higashiagatsuma's own published tree with no confirmed direct transit link -- this is the same kind of mislabel already recorded elsewhere in this leads file (cf. the Numata/Higashiagatsuma mulberry). Maebashi is NOT currently a published city. Recommend publishing as its own single-tree place (id prefix 'mae' is free, checked against all existing city files) under the 2026-08-31 exception rather than folding into Higashiagatsuma.\n\nFAME: this is one of the 'Nihon San-dai Kaya' (Japan's Three Great Kaya Trees), alongside Yono no O-Kaya (Saitama) and Kitahama no Okayanoki (Hamamatsu, itself candidate 9 on this brief, unresearched this pass). A named superlative trio like this clearly clears the single-tree-destination bar: this is the kind of tree people specifically seek out.\n\nAGE CONFLICT, per the two-source rule: the 4th National Environment Agency conservation survey (1991) gives 'over 300 years'; the on-site historical marker/local tradition gives 'over 1,000 years'. Neither source is definitively authoritative over the other so both are recorded rather than picking a winner. Given the trunk girth of 8.1m (a genuinely massive Torreya nucifera), the higher folk estimate is not implausible, but it is tradition rather than measurement.\n\nMeasurements (2000 survey): height 24m, trunk circumference 8.1m (810cm), root circumference 13.2m (1320cm), crown width 17m. National Natural Monument: designated 17 July 1920 per one source, 1933 (Showa 8) per another -- flagging this secondary date conflict too, but 1920 appears on more sources including the heritage database and is treated as more likely correct.\n\nHistory: a Suwa Shrine stood on this spot from 1749 (per the Kanazawa family's own genealogy, who venerated the tree as sacred) until 1907, when the shrine was relocated and the family took over the grounds; they have maintained the tree since. No photo hunt performed (out of scope for this pass); Commons already carries an aerial location photo per the brief."
+  },
+  {
+    "id": "hok_002",
+    "name": "Shinden no Oitozakura",
+    "species": "Weeping Higan Cherry (Prunus subhirtella var. pendula)",
+    "age_estimate": "roughly 400 years",
+    "age_min": 350,
+    "age_max": 450,
+    "girth_cm": 750,
+    "location": {
+      "address": "Matsumuki, Kobuchisawa-cho, Hokuto City, Yamanashi Prefecture (〒408-0042)",
+      "latitude": 35.84572,
+      "longitude": 138.34633,
+      "neighbourhood": "Kobuchisawa, Hokuto"
+    },
+    "verified_sources": [
+      "https://www.city.hokuto.yamanashi.jp/fc/location/22470.html",
+      "https://www.hokuto-kanko.jp/spot/shinden_oitosakura/"
+    ],
+    "access": "Free. Stands alone at the edge of a working rice paddy at about 820m elevation; dedicated free parking (about 30 cars, 5 buses) is provided nearby. As of the tourism board's most recent note, close approach may be temporarily restricted while soil and root recovery work continues, though the tree remains visible from the paddy edge and parking area.",
+    "transport": "10 minutes by taxi from JR Kobuchisawa Station, or 12 minutes from JR Nagasaka Station; also reachable by municipal bus line 1 (about 10 min) plus a 10-minute walk from the 'Hara Village' stop.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "This candidate genuinely joins Hokuto: both the city's own site and its tourism association place it in Kobuchisawa-cho, the same city (Hokuto) that already hosts hok_001, Jindai-zakura, about 7.5km away per the original brief -- this one checks out, unlike the Gunma pair below. Recommend id hok_002.\n\nDesignated a Yamanashi Prefecture Natural Monument in 1959 (Showa 34), so PREFECTURAL rather than national -- note this correctly in the story, do not upgrade to 'National Natural Monument'.\n\nSpecies: an Edo-higan cherry variant, specifically the weeping form (Ito-zakura/shidarezakura), thought to have taken root around the transition from the Sengoku to Edo period (~400 years ago), which lines up with the documented age. Tradition holds it was planted as a sacred tree (goshinboku) on the paddy-field ridge that once grew rice offered to a shrine; before calendars were common, its bloom timing served as a signal for when to begin the rice-planting season -- good material for the story.\n\nMeasurements: two sources differ slightly, root/trunk girth given as 8m by one and 7.5m (specifically 'me-doori', chest-height trunk girth) by the tourism board; height given as 9m by the tourism board. Used the tourism board's more precise 7.5m trunk figure (750cm) for girth_cm and noted the discrepancy here rather than picking silently. Branch spread about 20m east-west and north-south, standing alone in the paddy which makes it a genuinely singular, photogenic specimen (used in film/tourism location scouting per the city's own site, a sign of continued active use/visibility, i.e. alive and current)."
+  },
+  {
+    "id": "yab_002",
+    "name": "Takinoya no Hidarimakigaya",
+    "species": "Japanese Torreya, left-spiraling variety (Torreya nucifera 'Hidarimakigaya')",
+    "age_estimate": "roughly 800 years (local estimate, not independently dated)",
+    "age_min": 600,
+    "age_max": 900,
+    "girth_cm": 735,
+    "location": {
+      "address": "Noza (能座), Yabu City, Hyogo Prefecture, in the centre of the Noza settlement, about 220m elevation",
+      "latitude": 35.30138,
+      "longitude": 134.73782,
+      "neighbourhood": "Noza, Yabu"
+    },
+    "verified_sources": [
+      "https://www.city.yabu.hyogo.jp/soshiki/kyoikuiinkai/shakaikyoiku/1/4/hibari/2529.html",
+      "https://www.yabu-kankou.jp/aboutyabu/about7"
+    ],
+    "access": "Not fully confirmed this pass. Stands in the centre of the small Noza settlement; the city's own page gives a contact number for visit enquiries (History and Cultural Properties Division, 079-661-9042) rather than open-access directions, which suggests it may sit on a shrine plot or similar rather than a fully open public path. Recommend a follow-up OSM/access check before shipping (per BRIEF_RESEARCH.md's Ypres technique) rather than treating the contact number as evidence of restriction.",
+    "transport": "In Noza, Yabu City, Hyogo Prefecture; nearest station and walk time not established this pass.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "This candidate genuinely joins Yabu: the city's own education-board page places it in Noza, Yabu City, the same city that already hosts yab_001 (Tarumi-no-Ozakura) about 5.7km away per the original brief. Recommend id yab_002.\n\nDesignated a Hyogo Prefecture cultural property on 25 March 1938, then upgraded to a National Natural Monument on 9 June 1951. Rare species: 'Hidarimakigaya' is a naturally occurring left-spiraling-seed variant of Torreya nucifera (the seed's spiral usually runs right); sources say only 4 such trees are documented in Japan, which is a strong specimen-level rarity claim worth flagging in the story (not independently cross-checked beyond the two sources here).\n\nHEALTH FLAG, read carefully before shipping: the city's own page describes visible decline, 'leaf density has decreased in recent years', especially on the northern of its two major trunks, where 'leaves have diminished drastically and dead branches are advancing'; support chains and iron braces stabilise the splitting trunks. This is NOT a death signal (the source describes an ailing, actively-monitored living tree, not a dead one) but it should be stated honestly in the story rather than smoothed over, consistent with this project's approach to declining veterans elsewhere.\n\nMeasurements: height ~26m, trunk circumference ~7.35m (735cm), root circumference ~16.5m (1650cm), splits into two major trunks at ~3.7m above ground, canopy spread ~20m (E-W) x 28m (N-S). Age ~800 years is a local estimate with no stated dating method (ring count, growth-rate calculation); treat as a vague-source figure per BRIEF_RESEARCH.md and do not sharpen it."
+  }
+]

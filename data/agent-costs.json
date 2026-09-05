@@ -5203,6 +5203,20 @@
         "tokens": 0,
         "trees": 0,
         "note": "pagegaps.py's biggest gap: hand-wrote the Slovakia country intro (3 cities, 9 trees already published), no research pass needed."
+      },
+      {
+        "target": "famousjapan-verified",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 3,
+        "note": "Cost unrecorded: the dispatching attempt stopped before reporting it, leaving data/research/famousjapan-verified.json staged uncommitted with 3 fully verified candidates (Yokomuro kaya, Shinden cherry, Takinoya kaya) under the standing _famous-japan claim."
+      },
+      {
+        "target": "maebashi-hokuto-yabu",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 3,
+        "note": "session, 0 tokens: wrote and merged the 3 staged verified candidates directly (no fresh agent dispatch) -- Maebashi mae_001 (new single-tree place, one of the Nihon San-dai Kaya), Hokuto hok_002 (second tree, a paddy-field weeping cherry), Yabu yab_002 (second tree, one of only 4 documented left-spiraling Torreya in Japan, declining but under care). Species name reconciled to the corpus canonical Japanese Nutmeg-yew (hard rule 9). Claim released."
       }
     ]
   }
