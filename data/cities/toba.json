@@ -1,0 +1,63 @@
+{
+  "city": "Toba",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Toba maps one tree, and it took twenty-one years for anyone to notice what it was. The Kotsubugaya of Kozoji Temple was listed locally in 1970 as an ordinary if impressive kaya; a survey in 1991 measured its seeds at 18 to 20 millimetres and identified it as only the second small-seed kaya known in Japan, which made it a National Natural Monument in 1993. It stands 25 metres tall and 4.5 metres round in the temple's grove in Kawachi.",
+  "meta_description": "Kozoji no Kotsubugaya in Toba: one of only two small-seed kaya trees known in Japan, 25 metres tall, a National Natural Monument since 1993.",
+  "question_meta": "Toba's only mapped tree is Kozoji no Kotsubugaya, one of two small-seed kaya trees known in Japan, a National Natural Monument since 1993.",
+  "question_answer": "Toba's only mapped tree is Kozoji no Kotsubugaya, a Japanese nutmeg-yew of the rare small-seed form growing in the grove of Kozoji Temple in Kawachi-cho, Toba, Mie Prefecture. It is 4.5 metres round at chest height and 25 metres tall, and it has been a National Natural Monument since 1993. No source gives its age.",
+  "question_context": "The tree was protected twice for two different reasons. Toba City listed it as a natural monument on 24 March 1970 as a large old kaya, an ordinary enough thing to designate. A survey in 1991 then measured its seeds and found them running only 18 to 20 millimetres across including the aril, noticeably smaller than those of a normal Torreya nucifera. That identified it as a kotsubugaya, or small-seed kaya, and only one other is known in Japan, in Miyagi Prefecture. The national designation followed on 20 January 1993. The measurements are 4.5 metres of girth at chest height and 25 metres of height, and the crown is missing its tip after a lightning strike at some point in its life, though both the city's heritage record and a recent summary describe the tree as still vigorous. Nobody has dated it: both designations record its dimensions rather than its years, and no source found offers an estimate, so this page gives none and would welcome a figure. The tree grows inside the grove attached to Kozoji Temple in Kawachi-cho, and Toba City's lifelong learning division is the office that handles visiting arrangements.",
+  "hero_tree_id": "tob_001",
+  "oldest_tree_id": "tob_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Its seeds, aril and all, measure only 18 to 20 millimetres, which makes it a kotsubugaya or small-seed kaya. Only one other is known in Japan, in Miyagi Prefecture."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Unknown. Both its 1970 city designation and its 1993 national one record measurements rather than an age, and no source found gives one."
+    },
+    {
+      "q": "How big is it?",
+      "a": "4.5 metres round at chest height and 25 metres tall, with the tip of the crown lost to a lightning strike."
+    },
+    {
+      "q": "How do I visit it?",
+      "a": "The tree stands in the grove belonging to Kozoji Temple in Kawachi-cho. Toba City's lifelong learning division handles visiting arrangements."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tob_001",
+      "name": "Kozoji no Kotsubugaya",
+      "species": "Japanese Nutmeg-yew, small-seed variety (Torreya nucifera 'Kotsubugaya')",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 450,
+      "height_m": 25,
+      "location": {
+        "address": "Kozoji Temple grove, Kawachi-cho, Toba, Mie Prefecture, Japan",
+        "latitude": 34.4484,
+        "longitude": 136.8197,
+        "neighbourhood": "Kawachi-cho, Toba"
+      },
+      "verified_sources": [
+        "https://www.city.toba.mie.jp/soshiki/k_shakaikyoiku/gyomu/rekishi_bunkazai/bunkazai/2/2213.html",
+        "https://ja.wikipedia.org/wiki/%E5%BA%AB%E8%94%B5%E5%AF%BA%E3%81%AE%E3%82%B3%E3%83%84%E3%83%96%E3%82%AC%E3%83%A4"
+      ],
+      "access": "Within the temple grove (jusou) of Kozoji Temple; visiting details available via Toba City's Lifelong Learning Division. No indication of restricted access; treat as open grounds.",
+      "transport": "In Kawachi-cho, Toba, Mie Prefecture; no train or bus stop confirmed this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "For two decades this was simply a fine old kaya tree. Then somebody measured the seeds.\n\nToba made it a city natural monument on 24 March 1970 for its size and its age. A survey in 1991 found what that listing had missed. The seeds, aril included, run only 18 to 20 millimetres across, distinctly smaller than an ordinary kaya's, which made this the second kotsubugaya, or small-seed kaya, known in Japan, after one in Miyagi Prefecture. Two trees, in the whole country. The national designation followed on 20 January 1993, twenty-three years after the local one.\n\nIt stands in the grove belonging to Kozoji Temple in Kawachi, 4.5 metres round at chest height and 25 metres tall. Lightning took the tip out of the crown at some point in its life. Both Toba City's own heritage record and a recent summary describe the tree as still vigorous, so the strike cost it a top and nothing more.\n\nNobody has dated it. Both designations record what it measures rather than when it started, and no source found gives an age at all. If you know of one, tell us and it goes on the page.\n\nThe tree is in the temple's own grove, and Toba City's lifelong learning division is where visiting arrangements are handled.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

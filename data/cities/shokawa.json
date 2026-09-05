@@ -2,7 +2,7 @@
   "city": "Shokawa",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Shokawa maps two trees that are really one story: the Shokawa-zakura, a pair of Edohigan cherries moved here whole in 1960 to save them from a dam. The operation was called unprecedented in the world's tree-planting history at the time, and both cherries took root and are still blooming together. Published alone here because the trees themselves are the destination, not because Shokawa's research is finished.",
+  "intro": "Shokawa maps two entries. The Shokawa-zakura are a pair of Edohigan cherries moved here whole in 1960 to save them from a dam, an operation called unprecedented in the world's tree-planting history at the time, and both took root and still bloom together. Further along the same road, Mumaya Sanbonmatsu is a single red pine that splits into three trunks two metres up, a Takayama city monument since 1971. Both are car-only stops on National Route 158, published here because the trees themselves are the destination, not because Shokawa's research is finished.",
   "meta_description": "Shokawa-zakura: two 450-year-old cherries saved from a dam by moving them whole in 1960, free above Miboro Lake, Gifu, Japan.",
   "question_meta": "Shokawa's oldest mapped trees are the Shokawa-zakura, two centuries-old cherries moved whole to save them from a dam, free above Miboro Lake.",
   "question_answer": "Shokawa's oldest mapped trees are the Shokawa-zakura, two Edohigan cherries (Prunus itosakura) roughly 450 to 500 years old. They stand together on a viewpoint above Miboro Lake in Shokawa, a district of Takayama, Gifu Prefecture, having been transplanted here whole in 1960 from two temple grounds the reservoir was about to flood.",
@@ -25,6 +25,10 @@
     {
       "q": "Is it free to visit?",
       "a": "Yes. The park is free with on-site parking, about 30 to 40 minutes by car from central Takayama."
+    },
+    {
+      "q": "What is the second tree Shokawa maps?",
+      "a": "Mumaya Sanbonmatsu, a single Japanese red pine that splits into three trunks about two metres up, standing on the shoulder of National Route 158, 8.7 kilometres further along the same road."
     }
   ],
   "trees": [
@@ -53,6 +57,37 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Two cherry trees stand together on a bluff above Miboro Lake, and neither one grew here. Both were transplanted whole in 1960, roots and all, from temple grounds a few kilometres away that were about to disappear under a new dam's reservoir.\n\nThe man who pushed for it was Jpower's first president, and the gardener he needed, Shintaro Sasabe, turned him down at first. He changed his mind, found a second tree to save alongside the first, and set out to move two mature Edohigan cherries, each with a trunk about six metres round, without killing them. Contemporary accounts describe the scale of the operation as unprecedented anywhere in the world, and the sight of two centuries-old trees being hauled to new ground drew real criticism for how brutal it looked in progress.\n\nBoth took root in the spring of 1961. In June the following year they were given a joint name, Shokawa-zakura, and the valley they came from is now underwater. They still bloom together every year in late April, lit in the evenings through the flowering weeks, and around fifty thousand people make the trip to see them.\n\nAt roughly 450 to 500 years old, they were already grown trees when they were young by dam standards. Moving them did not stop them from being old.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sho_002",
+      "name": "Mumaya Sanbonmatsu",
+      "species": "Japanese Red Pine (Pinus densiflora)",
+      "age_estimate": "roughly 300 to 320 years",
+      "age_min": 300,
+      "age_max": 350,
+      "girth_cm": 330,
+      "height_m": 21,
+      "location": {
+        "address": "Roadside on National Route 158, Mumaya 633-4, Shokawa-cho, Takayama, Gifu Prefecture, Japan",
+        "latitude": 36.06167,
+        "longitude": 137.04111,
+        "neighbourhood": "Mumaya, Shokawa, Takayama"
+      },
+      "verified_sources": [
+        "http://hitozato-kyoboku.com/mumaya-matsu.htm",
+        "https://www.city.takayama.lg.jp/kurashi/1000021/1000119/1000847/1000994/1004127.html"
+      ],
+      "access": "Free, no permission needed. Stands directly beside National Route 158, about 1.5km from Matsunoki Pass toward Hirugano Highland; visible from the road with no gate or entry restriction.",
+      "transport": "No rail connection; by car, roughly 45-55 minutes from central Takayama via Route 158 (or continue about 10-15 minutes further along Route 158 from Shokawa-zakura Park).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The name means three pines. There is one tree.\n\nMumaya Sanbonmatsu is a single Japanese red pine that divides about two metres above the ground into three trunks, a fork the surveyor who recorded it compared to Neptune's trident. All three run the full height of the tree and all three carry foliage to the crown. It stands 21 metres tall and measures between 3.3 and 3.5 metres round below the split, the lower figure from Takayama City's own monument list and the higher from the Environment Agency's giant-tree survey. The same two sources put its age at about 320 years and at 300 or more, so three centuries is the honest reading.\n\nIt grew up in one of the snowiest inhabited valleys in Japan, on the road over Matsunoki Pass toward Hirugano. What was once a mountain track is now National Route 158, and the pine stands on the shoulder of it, roughly 1.5 kilometres below the pass. Takayama listed it as a city natural monument on 13 October 1971, and the marker beside it still carries the date.\n\nThere is no station and no bus. You arrive by car, which is also how you reach the Shokawa-zakura, 8.7 kilometres further along the same road. Pull over, and the three trunks are in front of you.",
       "photo": {
         "url": null,
         "license": null,

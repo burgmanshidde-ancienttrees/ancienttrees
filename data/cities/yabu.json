@@ -2,7 +2,7 @@
   "city": "Yabu",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "By 1993 Tarumi-no-Ozakura was barely flowering. Root treatment through the 1990s brought it back, and now around 10,000 people climb a forest trail each April to watch a cherry said to exceed a thousand years bloom above the Oya River. A National Natural Monument since 1951, published here as a single-tree place under the 2026-08-31 exception because it stands 20km of mountain road from the nearest city we map. A second tree, a rare left-spiraling kaya of a kind known only four times in Japan, stands 5.7km away in the settlement of Noza.",
+  "intro": "By 1993 Tarumi-no-Ozakura was barely flowering. Root treatment brought it back, and now around 10,000 people climb a forest trail each April to watch a cherry said to exceed a thousand years bloom above the Oya River, a National Natural Monument since 1951. Three more trees have joined it since: a rare left-spiraling kaya known in only four trees nationwide, a thousand-year-plus zelkova whose hollowed trunk still holds a full crown, and a sacred cork oak on a hillside with no shrine and no gate, the tree itself the object of reverence.",
   "meta_description": "Tarumi-no-Ozakura, Yabu: a cherry said to exceed 1,000 years, National Natural Monument since 1951, drawing 10,000 visitors each April.",
   "question_meta": "Yabu's mapped tree is Tarumi-no-Ozakura, a cherry said to exceed 1,000 years old, a National Natural Monument since 1951.",
   "question_answer": "Yabu's mapped tree is Tarumi-no-Ozakura, an Edo Higan cherry on a forest trail above the Oya River, said in local sources to exceed a thousand years old, though nobody has counted its rings.",
@@ -27,8 +27,8 @@
       "a": "By car via the prefectural road along the Oya River from Oya Junior High School, then a 15-minute walk on a forest trail. No public transport route reaches it."
     },
     {
-      "q": "What is the second tree Yabu maps?",
-      "a": "Takinoya no Hidarimakigaya, a left-spiraling variant of Japanese Torreya of a kind known in only four trees nationwide, standing in the settlement of Noza about 5.7km from Tarumi-no-Ozakura."
+      "q": "What other trees does Yabu map?",
+      "a": "Takinoya no Hidarimakigaya, a left-spiraling variant of Japanese Torreya of a kind known in only four trees nationwide, in the settlement of Noza. Yashiro-no-Okeyaki, a zelkova estimated over 1,000 years old whose hollow trunk was restored in 1988. And Kuchioya no O-Abemaki, a sacred cork oak on a hillside behind a former school, about 400 years old."
     }
   ],
   "trees": [
@@ -93,6 +93,73 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Only four trees like this are known to exist in Japan. This Torreya's seeds spiral left, not right, a naturally occurring quirk so rare it has its own name, Hidarimakigaya, left-spiraling kaya.\n\nIt splits into two trunks about 3.7 metres up, and the split shows its age: roughly 26 metres tall, 7.35 metres round, with a root circumference of 16.5 metres and a canopy spreading 28 metres north to south. The city gives its age as roughly 800 years, a local estimate with no stated dating method behind it, so treat it as tradition rather than a measurement.\n\nIt is not fully well. The city's own record describes thinning leaf density in recent years, worst on the northern of its two trunks, where dead branches are advancing and support chains and iron braces now hold the splitting wood together. That is decline under active care, not death, and it is worth saying plainly rather than photographing around.\n\nDesignated a Hyogo Prefecture cultural property in 1938 and upgraded to a National Natural Monument in 1951, it stands in the centre of Noza, a small settlement in the Yabu hills. The city's history office lists a contact number for visit enquiries rather than open directions, worth a call ahead rather than a guarantee of an open gate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "yab_003",
+      "name": "Yashiro-no-Okeyaki",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "estimated over 1,000 years",
+      "age_min": 1000,
+      "age_max": 1900,
+      "girth_cm": 810,
+      "height_m": 20,
+      "location": {
+        "address": "Ashika Shrine (Ashika Jinja) grounds, at the foot of Mount Babayama, Yashiro, Asago, Hyogo Prefecture, Japan",
+        "latitude": 35.23194,
+        "longitude": 134.78525,
+        "neighbourhood": "Yashiro, Asago"
+      },
+      "verified_sources": [
+        "https://online.bunka.go.jp/heritages/detail/161748",
+        "https://tanshin-kikin.jp/tajima/993"
+      ],
+      "access": "Free, within the grounds of Ashika Shrine, open to the public.",
+      "transport": "Rural Asago/Yabu border area, Hyogo Prefecture; no train or bus stop confirmed. Straight-line distance is 8.8km from Yabu's yab_002 (Takinoya no Hidarimakigaya) and 14.5km from yab_001, both closer than the 23.4km to Asago's own published tree (asg_001) in Itoi Gorge; despite the administrative address being Asago City, the geography argues for joining Yabu rather than Asago.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "When it was listed in 1928 this was called the finest zelkova in Hyogo Prefecture. It has lost about a third of its height since.\n\nYashiro-no-Okeyaki grows at the foot of Mount Babayama on the grounds of Ashika Shrine. The national register measured it at designation on 24 March 1928: roughly 17.6 metres round at the roots, 12.7 where the roots become trunk, 8.1 metres at a metre and a half up, and close to 30 metres tall. Only the last of those figures moved. Typhoon damage and building work on the shrine ground hollowed the trunk out, and the tree now reaches about 20 metres. The 8.1 metre girth was taken again by a Tajima heritage survey and came back the same.\n\nIts age is put at a thousand years and some hundreds more, which is as far as anyone will commit. There is no planting record behind it, so the range stays wide here rather than being tidied into a number.\n\nIt did not get through the last century unaided. Asago carried out major restoration work in 1988 with national and prefectural money and has kept up trunk preservation since, which is why a hollow tree of this age still holds a full crown.\n\nFree, on open shrine ground in Yashiro, about nine kilometres from the spiral-grained kaya at Takinoya.",
+      "best_time": {
+        "months": [11],
+        "kind": "autumn colour",
+        "label": "November, when the crown turns rust and comes down over a couple of weeks"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "yab_004",
+      "name": "Kuchioya no O-Abemaki",
+      "species": "Oriental Cork Oak (Quercus variabilis)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 560,
+      "height_m": 16,
+      "location": {
+        "address": "Naka, Oya-cho, Yabu City, Hyogo Prefecture, Japan (hillside behind a former school)",
+        "latitude": 35.343,
+        "longitude": 134.70672,
+        "neighbourhood": "Oya-cho, Yabu City, about 0.8km from Tarumi-no-Ozakura (yab_001)"
+      },
+      "verified_sources": [
+        "https://bunka.nii.ac.jp/heritages/detail/202216",
+        "https://www.yabu-kankou.jp/sightseeing/%E5%8F%A3%E5%A4%A7%E5%B1%8B%E3%81%AE%E5%A4%A7%E3%82%A2%E3%83%99%E3%83%9E%E3%82%AD"
+      ],
+      "access": "Free, locally revered as a sacred tree; stands on a mountainside behind a former school. No confirmed parking or maintained path noted by the local tourism board, but no restriction or gate mentioned either.",
+      "transport": "Oya-cho, Yabu City, Hyogo Prefecture; no train or bus stop confirmed. Only about 0.8km from Yabu's own published Tarumi-no-Ozakura (yab_001), easily the closest joinder of this batch.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "There is no shrine here, no gate and no hall. The tree is the sacred object itself.\n\nKuchioya no O-Abemaki grows on a mountainside behind a former school in Naka, in Oya, and the district has long treated it as a dwelling place of the gods rather than as decoration around a building. It is an abemaki, the oriental cork oak, a species whose bark thickens into deep corky ridges and which in Japan almost never reaches this size. The national register, which made it a Natural Monument on 9 June 1951, records 5.6 metres round, about 16 metres tall and an age near 400 years. Yabu's own tourism association publishes the same three figures and calls it a rare giant of its kind.\n\nFour centuries is long enough to outlast the institutions that grow up beneath a tree. The school it stands behind is a former school now. The oak is still there.\n\nGo prepared to walk uphill without help. There is no marked path and no confirmed parking, and nobody has put a fence or a fee between you and it. The tourism board lists it as a going concern; if you get there and find otherwise, tell us. It is 800 metres from Tarumi-no-Ozakura, which makes the pair of them one stop rather than two.",
       "photo": {
         "url": null,
         "license": null,
