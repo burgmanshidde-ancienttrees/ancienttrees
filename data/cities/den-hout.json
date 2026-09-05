@@ -1,0 +1,64 @@
+{
+  "city": "Den Hout",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Den Hout maps one tree: the Heilige Eik, an oak at a road junction on the edge of the village, hollowed by a lightning strike about two centuries ago and now carrying its whole crown on a single living branch. Its age is genuinely disputed. Most experts read it as a sixteenth-century planting on the site of an older sacred oak, while a forester who studied it argues for one continuous tree from around 1250. It stands on public ground with its own marker sign, free at any hour.",
+  "meta_description": "The Heilige Eik of Den Hout: a hollow oak carrying its crown on one living branch, argued by a forester to date from around 1250. Free at any hour.",
+  "question_meta": "Den Hout's only mapped tree is the Heilige Eik, a hollow oak of disputed age at the Vrachelsestraat junction, free at any hour.",
+  "question_answer": "Den Hout's oldest and only mapped tree is the Heilige Eik, a Pedunculate Oak (Quercus robur) at the corner of Vrachelsestraat and Achterstraat. Its age is disputed: most experts read it as a sixteenth-century tree, while a forester who has studied it argues it was planted around 1250.",
+  "question_context": "The disagreement is recorded here rather than resolved. nl.wikipedia reports that most experts take the present tree to be a sixteenth-century planting on the site of an earlier medieval Heilige Eik, first named in a land deed of 1353. Joris Hellevoort, a forester with Het Utrechts Landschap, argues instead that it is one continuous tree planted around 1250, which would make it roughly 750 to 770 years old and possibly the oldest living oak in the Netherlands; his case has been covered by national and regional news. The tree is about four metres round and 13 metres tall. A lightning strike roughly two centuries ago hollowed the trunk and left it open on one side, and a single living branch now forms the whole crown, which Omroep Brabant reports leafs out densely every summer. The name points to a probable pre-Christian tree shrine on the same ground, and the oak appears on the mayoral chain of office of Oosterhout. The municipality has been fitting metal supports to keep it from breaking in high wind.",
+  "hero_tree_id": "dho_001",
+  "oldest_tree_id": "dho_001",
+  "faq": [
+    {
+      "q": "How old is the Heilige Eik?",
+      "a": "Disputed. Most experts say sixteenth century, on the site of an older sacred oak named in a 1353 deed. Forester Joris Hellevoort argues for one continuous tree planted around 1250."
+    },
+    {
+      "q": "What is special about it?",
+      "a": "A lightning strike about two centuries ago hollowed the trunk and opened one side, and a single living branch now carries the entire crown."
+    },
+    {
+      "q": "Why is it called the holy oak?",
+      "a": "The name points to a probable pre-Christian tree shrine on the same spot. The oak also appears on the mayoral chain of office of Oosterhout."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands at an ordinary road junction between Vrachelen and Den Hout, with its own marker sign, reachable from public roads at any time."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dho_001",
+      "name": "The Heilige Eik (Holy Oak) of Den Hout",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "several centuries; a forester who studied it argues it may be the oldest living oak in the Netherlands, planted around 1250",
+      "age_min": 300,
+      "age_max": 800,
+      "girth_cm": 400,
+      "height_m": 13,
+      "location": {
+        "address": "Vrachelsestraat, at the corner with Achterstraat, Den Hout",
+        "latitude": 51.655543,
+        "longitude": 4.821457,
+        "neighbourhood": "Den Hout, Oosterhout, Noord-Brabant"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/heilige-eik-den-hout/",
+        "https://nl.wikipedia.org/wiki/Heilige_Eik_(Den_Hout)",
+        "https://www.omroepbrabant.nl/nieuws/6004365/hier-staat-de-hoogstwaarschijnlijk-de-oudste-boom-van-nederland"
+      ],
+      "access": "Free. Stands at an ordinary road junction between the hamlet of Vrachelen and the village of Den Hout, with its own marker sign; visible and reachable from public roads at all times.",
+      "transport": "Den Hout village, near Oosterhout; nearest station Oosterhout, then bus or bike to the village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A lightning strike about two centuries ago hollowed this oak out and left it open down one side. One living branch now forms the entire crown, and Omroep Brabant reports it leafs out densely every summer regardless.\n\nHow old it is depends on who you ask, and the disagreement is a real one rather than a sloppy one. nl.wikipedia says most experts take today's tree to be a sixteenth-century planting on the site of an earlier medieval Heilige Eik, first named in a land deed of 1353. Joris Hellevoort, a forester with Het Utrechts Landschap who has studied it, argues instead that it is one continuous tree planted around 1250, which would put it near 750 years old and possibly make it the oldest living oak in the country. His case has been covered by national news. Nobody has settled it.\n\nEither way the ground is older than the tree. The name points to a probable pre-Christian tree shrine on the same spot, and the oak appears on the mayoral chain of office of Oosterhout.\n\nIt is not a big tree: about four metres round and 13 metres tall, standing at a plain road junction between Vrachelen and Den Hout with a marker sign beside it. Oosterhout has been fitting metal supports to keep it from snapping in high wind. It came second in a regional tree of the year contest, which for a tree running on one branch is a respectable result.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

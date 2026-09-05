@@ -1,0 +1,62 @@
+{
+  "city": "Stoutenburg",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Stoutenburg maps one thing: Adam en Eva, a pair of ancient oaks on the grounds of the thirteenth-century Landgoed Stoutenburg, ranked by the Bomenstichting in its champion class and called the second most notable tree pair in the province of Utrecht. Local tradition ties them to Johan van Oldenbarnevelt, who held the estate until his execution in 1619, though nobody has dated them. The thicker of the two is 6.60 metres round. They stand behind a closed gate and are looked at from the Stoutenburgerlaan.",
+  "meta_description": "Adam en Eva of Stoutenburg: a champion-class pair of oaks over 350 years old, tied by tradition to Johan van Oldenbarnevelt. Visible from the road.",
+  "question_meta": "Stoutenburg's mapped trees are Adam en Eva, two champion-class oaks over 350 years old, seen from the road at Landgoed Stoutenburg.",
+  "question_answer": "Stoutenburg's oldest and only mapped trees are Adam en Eva, a pair of Pedunculate Oaks (Quercus robur) on the grounds of Landgoed Stoutenburg. They are reckoned at over 350 years old, and the thicker of the two measures 6.60 metres round.",
+  "question_context": "The Bomenstichting, the Dutch tree foundation, ranks the pair as Bomen van Ereklasse, its champion class, and as the second most notable tree pair in the province of Utrecht. The names come with a story that is repeated everywhere and documented nowhere: that the oaks were planted in memory of Johan van Oldenbarnevelt, the Land's Advocate who held the estate from 1615 until his execution in 1619. The heritage site erfgoedstem.nl states plainly that whether the trees really date from that era remains unknown, and the Bomenstichting itself only calls an age over 350 years plausible, so the connection is tradition rather than record. Both trees are heavily damaged and have needed repeated work by the tree-care firm Copijn together with Utrechts Landschap: steel cable bracing, ground reinforcement and a prop under one low major limb. That work is also the clearest evidence they are alive and being managed today. They stand behind a closed gate on private estate ground and are viewed from the public road, so the pin marks the roadside rather than the trunks.",
+  "hero_tree_id": "stn_001",
+  "oldest_tree_id": "stn_001",
+  "faq": [
+    {
+      "q": "Were they really planted for Johan van Oldenbarnevelt?",
+      "a": "That is the tradition, not a record. Erfgoedstem states that whether the trees date from his era remains unknown, and the Bomenstichting calls an age over 350 years only plausible."
+    },
+    {
+      "q": "What is special about them?",
+      "a": "The Bomenstichting ranks them in its champion class and calls them the second most notable tree pair in the province of Utrecht. The thicker one is 6.60 metres round."
+    },
+    {
+      "q": "Can you walk up to them?",
+      "a": "No. They stand on the private Stoutenburg estate behind a closed gate. They are visible from the public road, and the pin marks that roadside viewing point."
+    },
+    {
+      "q": "Are they in good condition?",
+      "a": "Both are heavily damaged and under active care: steel cable bracing, ground reinforcement and a prop under one low limb, carried out by Copijn with Utrechts Landschap."
+    }
+  ],
+  "trees": [
+    {
+      "id": "stn_001",
+      "name": "Adam en Eva of Stoutenburg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 350 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 660,
+      "location": {
+        "address": "Landgoed Stoutenburg, Stoutenburgerlaan, Leusden",
+        "latitude": 52.156,
+        "longitude": 5.464416,
+        "neighbourhood": "Stoutenburg, Leusden, Utrecht"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/adam-en-eva-stoutenburg/",
+        "https://erfgoedstem.nl/stoutenburgse-zomereiken-adam-en-eva-ereklasse/"
+      ],
+      "access": "Free to view, not free to enter. The two oaks stand on the private Stoutenburg estate behind a closed gate but are visible from the public road (Stoutenburgerlaan); the pin marks the roadside viewing point, not the trunks.",
+      "transport": "Leusden/Amersfoort area; nearest station Amersfoort, then bus or bike towards Stoutenburg.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Johan van Oldenbarnevelt held this estate from 1615 until the state beheaded him in 1619, and tradition says these two oaks were planted in his memory. The tradition is all there is. Erfgoedstem, which reported the pair's champion-class ranking, says outright that whether the trees really date from that era remains unknown, and the Bomenstichting itself will go no further than calling an age over 350 years plausible.\n\nWhat is not in doubt is their standing. The Bomenstichting ranks them as Bomen van Ereklasse, its top class, and the second most notable tree pair in the province of Utrecht. The thicker of the two, reported to be Adam, measures 6.60 metres round. They grow on the grounds of Landgoed Stoutenburg, an estate that goes back to the thirteenth century.\n\nBoth are badly damaged and neither is coasting. The tree-care firm Copijn has worked on them repeatedly with Utrechts Landschap: steel cables bracing the crowns, the ground under them reinforced, a prop set under one heavy low limb. That is the reason to believe they are alive, being a running record of somebody keeping them that way.\n\nA closed gate stands between the road and the trees. You can see them from the Stoutenburgerlaan and you cannot get to them, so the pin here marks the place to stand rather than the trunks.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

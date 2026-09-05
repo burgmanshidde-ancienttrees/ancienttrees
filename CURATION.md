@@ -2,6 +2,42 @@
 
 <!-- archive-index -->
 
+## 2026-09-05 - Write pass on bomenbieb-dutch-verified.json: 11 Dutch single-tree places
+
+Eleven verified trees from the bomenbieb.nl Dutch register, each published as its
+own single-tree place (no existing city page). Stories written, three best_time
+fields set, no verified field changed. All eleven are flagged rather than
+confirmed, and each page carries its own dispute in the prose. Both ensemble
+candidates resolved as ONE collectible entry, as the verify notes said they
+should: the Wodanseiken are a compact signed grove with the Wodanroute built
+around them, and the Koningstafel pollards are a named cluster at one viewpoint.
+Philemon ships alone; its named partner Baucis blew down in storm Ciaran at the
+end of 2023 and is blocked as dead, with bomenbieb's own vitality field still
+wrongly listing it alive (a stale-register case worth remembering).
+
+- Wolfheze, 1 tree (The Wodanseiken), single-tree place from the bomenbieb.nl Dutch register
+- Velp, 1 tree (Philemon), single-tree place from the bomenbieb.nl Dutch register
+- Doornenburg, 1 tree (The Thousand-Year Oak of Doornenburg), single-tree place from the bomenbieb.nl Dutch register
+- Den Hout, 1 tree (The Heilige Eik), single-tree place from the bomenbieb.nl Dutch register
+- Hilvarenbeek, 1 tree (The Gebodenlinde), single-tree place from the bomenbieb.nl Dutch register
+- Stoutenburg, 1 tree (Adam en Eva, a pair mapped as one entry, view-only from the road), single-tree place from the bomenbieb.nl Dutch register
+- Fleringen, 1 tree (The Kroezeboom), single-tree place from the bomenbieb.nl Dutch register
+- Rhenen, 1 tree (The Pollard Oaks of the Koningstafel), single-tree place from the bomenbieb.nl Dutch register
+- Vorden, 1 tree (The Lodewijkslinde), single-tree place from the bomenbieb.nl Dutch register
+- Nuenen, 1 tree (The Dorpslinde), single-tree place from the bomenbieb.nl Dutch register
+- Sambeek, 1 tree (The Linde van Sambeek), single-tree place from the bomenbieb.nl Dutch register
+
+Superlative discipline (hard rule 8): three of these are locally promoted as the
+oldest oak or tree in the Netherlands. Doornenburg attributes the claim to a
+municipal sign and says the sampling does not support a thousand years, Den Hout
+attributes it to the forester who argues the case and names the majority view
+against him, and Fleringen records the claim as not well supported. Sambeek
+carries "thickest lime in the Netherlands" and Nuenen "thickest large-leaved
+lime", which are different crowns and are stated as such. superlatives.py reports
+no collisions.
+
+Photos: all eleven ship with status `missing`. Nothing was hunted in this pass.
+
 ## 2026-09-05 (continuation) - Finished the _famousgermany + _famousjapan-b verify claims: 8 trees merged, 6 new single-tree places, 1 held
 
 Two verify passes had already finished under the standing `_famous-japan` and

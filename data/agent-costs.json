@@ -5231,6 +5231,13 @@
         "tokens": 0,
         "trees": 0,
         "note": "session work, not logged by tokens: wrote 3 species intros pagegaps.py found earned (Japanese Nutmeg-yew 4 trees, Sweet Osmanthus 3, Japanese Wisteria 3), closing the species gap to 0; build+preflight clean."
+      },
+      {
+        "target": "_bomenbieb-netherlands",
+        "kind": "verify",
+        "tokens": 197730,
+        "trees": 11,
+        "note": "Verified 11 of 12 far-flung bomenbieb.nl leads as standalone single-tree places (Wodanseiken, Philemon, Doornenburg thousand-year oak, Heilige Eik Den Hout, Gebodenlinde Hilvarenbeek, Adam en Eva Stoutenburg, Kroezeboom Fleringen, Koningstafel pollard oaks, Lodewijkslinde Vorden, Dorpslinde Nuenen, Linde van Sambeek). Baucis (Velp) confirmed dead (storm Ciaran); Kroezeboom Ruurlo blocked on private land. Output in data/research/bomenbieb-dutch-verified.json."
       }
     ]
   }

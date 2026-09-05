@@ -1,0 +1,63 @@
+{
+  "city": "Doornenburg",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Doornenburg maps one tree: the oak the village calls duizendjarig, the thousand-year oak, standing on the south side of Kasteel Doornenburg. The thousand years are a nickname rather than a measurement. Growth-ring sampling in 2013 put it at 400 to 650 years, which is still old enough to be one of the heaviest oaks in the country at 6.56 metres round. The trunk is hollow and open down one side. A path runs to it from the castle car park, with a bench, and no ticket is needed.",
+  "meta_description": "The thousand-year oak of Doornenburg: a hollow oak of 6.56 metres round beside the castle, dated by sampling to 400 to 650 years. Free, no ticket.",
+  "question_meta": "Doornenburg's only mapped tree is the Duizendjarige Eik beside the castle, dated to 400 to 650 years and free to visit without a ticket.",
+  "question_answer": "Doornenburg's oldest and only mapped tree is the Duizendjarige Eik, a Pedunculate Oak (Quercus robur) on the south side of Kasteel Doornenburg. Despite the name, growth-ring sampling in 2013 put it at 400 to 650 years rather than a thousand.",
+  "question_context": "The age is better documented here than the nickname suggests. The castle's own page reports that experts in the early nineteenth century judged the tree 300 to 400 years old at the time, which lands in the same region as the 2013 sampling result of 400 to 650 years; a cross-check at monumentaltrees.com gives 522 years give or take 150. A document of 1376 mentions a tree on this ground, which corroborates the site's long history without dating this trunk. A municipal sign calls it the oldest oak in the Netherlands, and an oak at Den Hout in Brabant is argued for the same title by a forester who studied it, so neither case is closed. The castle measured the trunk at 6.56 metres round in 2021, against an older figure of 5.65, and records growth of two to five centimetres a year between 2006 and 2021. It stands 15 metres tall, measured in 2013. The trunk is completely hollow and open on one side, now closed with a steel gate against fire and carving, and two thick hollow stubs may be remnants of old pollarding.",
+  "hero_tree_id": "drn_001",
+  "oldest_tree_id": "drn_001",
+  "faq": [
+    {
+      "q": "Is it really a thousand years old?",
+      "a": "No. The name is local usage, not a measurement. Growth-ring sampling in 2013 gave 400 to 650 years, and the castle's own page points to roughly the same range."
+    },
+    {
+      "q": "What is special about it?",
+      "a": "A hollow oak of 6.56 metres round beside a medieval castle, open down one side, still putting on two to five centimetres of girth a year."
+    },
+    {
+      "q": "Do you need a castle ticket?",
+      "a": "No. A path runs from the small free car park at Kasteel Doornenburg straight to the tree, with a bench and an information sign beside it."
+    },
+    {
+      "q": "Why is there a gate around the trunk?",
+      "a": "The trunk is hollow and open on one side, so the opening is closed off to protect it from fire and from carving."
+    }
+  ],
+  "trees": [
+    {
+      "id": "drn_001",
+      "name": "The Thousand-Year Oak of Doornenburg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "several hundred years (popularly, but not literally, called 'the thousand-year oak')",
+      "age_min": 350,
+      "age_max": 700,
+      "girth_cm": 656,
+      "height_m": 15,
+      "location": {
+        "address": "Kerkstraat 27, 6686 BS Doornenburg (south side of Kasteel Doornenburg)",
+        "latitude": 51.893333,
+        "longitude": 5.999944,
+        "neighbourhood": "Doornenburg, Lingewaard, Gelderland"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/duizendjarige-eik-doornenburg/",
+        "https://www.kasteeldoornenburg.nl/de-oude-eik/"
+      ],
+      "access": "Free, no castle ticket needed. A path runs from the small free car park at Kasteel Doornenburg straight to the tree, with a bench and an ANWB information sign beside it.",
+      "transport": "Doornenburg village; nearest station is Zevenaar or Arnhem, then bus/bike into the village and a short walk to the castle.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The name promises a thousand years and the wood does not deliver them. Growth-ring sampling in 2013 put this oak at 400 to 650 years old. The castle's own page reports that experts in the early nineteenth century judged it 300 to 400 years old at the time, which lands in roughly the same place, and a cross-check gives 522 years give or take 150. Doornenburg calls it the Duizendjarige Eik anyway, and has for generations.\n\nA document from 1376 mentions a tree standing here, which says something about the site and nothing definite about this trunk. Locals have also called it Den Ouden Eik and the Uiverboom, the stork tree, for at least two centuries.\n\nWhat is not in dispute is the bulk. The castle measured the trunk at 6.56 metres round in 2021, against an older figure of 5.65, and records it putting on two to five centimetres a year between 2006 and 2021, which is a hollow tree still growing. It is completely hollow, open down one side and now closed with a steel gate against fire and pocket knives, and two thick stubs may be what is left of old pollarding. Height, measured in 2013, is 15 metres.\n\nA municipal sign calls it the oldest oak in the Netherlands. An oak at Den Hout is argued for the same title by a forester who studied it, and neither case is settled.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

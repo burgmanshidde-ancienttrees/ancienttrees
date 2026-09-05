@@ -1,0 +1,63 @@
+{
+  "city": "Fleringen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Fleringen maps one tree: the Kroezeboom, an oak of 7.25 metres round standing on the open ridge of the Fleringer Es. It was planted as a boundary marker between fields, probably between 1500 and 1600, and became a place where border disputes were argued out. Under the Dutch Republic, Catholics held Mass beside it in the open until about 1730, at a small field chapel that still has a successor next to the trunk. Free, with a signed five-minute walk from the parking area.",
+  "meta_description": "The Kroezeboom of Fleringen: a boundary oak 7.25 metres round on the Fleringer Es, where Catholics held Mass in the open until about 1730.",
+  "question_meta": "Fleringen's only mapped tree is the Kroezeboom, a boundary oak of 400 to 500 years and 7.25 metres round. Free, five minutes from the car park.",
+  "question_answer": "Fleringen's oldest and only mapped tree is the Kroezeboom, a Pedunculate Oak (Quercus robur) on the Fleringer Es between Tubbergen and Fleringen. It measures 7.25 metres round and is reckoned at 400 to 500 years old.",
+  "question_context": "A kroezeboom belongs to a Twente and Achterhoek tradition of boundary and gathering oaks. This one was probably planted between 1500 and 1600 as a loakboom, marking where one man's fields ended and the next began, and it later became the place where border disputes were settled. Some sources call it the oldest pedunculate oak in the Netherlands and put it at 700 or even 1,000 years, but that is not well supported and the figure kept here is the conservative one consistent with a sixteenth-century planting. During the Reformation, Catholics held Mass in the open beside the tree until roughly 1730, at a small field chapel the locals called the hilligen huesken. The chapel standing there now is a timber-framed one that replaced a neo-Gothic building of 1944, and since 1970 it has been a meeting place for Catholic and peace-movement gatherings. The Sint Pancratius parish of Tubbergen has owned the site since 1916. A cast-iron fence protects the trunk, and steel supports fitted under the arborist Jorn Copijn in the 1960s and 1970s are still in place.",
+  "hero_tree_id": "fle_001",
+  "oldest_tree_id": "fle_001",
+  "faq": [
+    {
+      "q": "What is a kroezeboom?",
+      "a": "A Twente boundary and gathering oak. This one was planted as a loakboom, marking a field boundary on the Fleringer Es, and later served as the place where border disputes were settled."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 400 to 500 years, consistent with a planting between 1500 and 1600. Claims of 700 to 1,000 years circulate locally but are not well supported."
+    },
+    {
+      "q": "Why is there a chapel next to it?",
+      "a": "Catholics held Mass in the open here until about 1730, at a field chapel called the hilligen huesken. Its successor still stands and has hosted gatherings since 1970."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. There is a marked parking area on the Jan van Arkelweg and a signed walk of about five minutes. A cast-iron fence keeps visitors off the trunk itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fle_001",
+      "name": "The Kroezeboom of Fleringen",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 to 500 years; some local claims go much higher but are not well supported",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 725,
+      "location": {
+        "address": "Lansinkweg, on the Fleringer Es between Tubbergen and Fleringen, beside the chapel",
+        "latitude": 52.387721,
+        "longitude": 6.797064,
+        "neighbourhood": "Fleringen, Tubbergen, Overijssel"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/kroezeboom-fleringen/",
+        "https://nl.wikipedia.org/wiki/Kroezeboom",
+        "https://www.visitoost.nl/wat-te-doen/alle-natuurgebieden/29029-de-kroezeboom/"
+      ],
+      "access": "Free. Public site with a marked parking area on the Jan van Arkelweg and a signed, roughly 5-minute walk to the tree; an unpaved path runs alongside it. A cast-iron fence protects the trunk itself, so visitors view rather than touch it.",
+      "transport": "Nearest station Almelo, then bus toward Tubbergen/Fleringen and a walk from the village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Under the Dutch Republic, Catholics in Twente worshipped where they could, and one of the places they could was under this oak. They kept it up until roughly 1730, at a small field chapel beside the trunk that locals called the hilligen huesken, the little holy house.\n\nThe tree was already old by then, and it had a job. A kroezeboom is a Twente boundary oak, a loakboom, planted to mark where one man's fields stopped and the next man's began, and later used as the spot where border disputes got argued out. This one probably went in between 1500 and 1600, which puts it at 400 to 500 years. Some sources call it the oldest pedunculate oak in the Netherlands and reach for 700 or 1,000 years; that case is thin, and the conservative figure is the one carried here.\n\nIt is a heavy tree either way, 7.25 metres round on the open ridge of the Fleringer Es. A cast-iron fence keeps visitors off the trunk, and steel supports fitted under the arborist Jorn Copijn in the 1960s and 70s are still visible.\n\nThe Sint Pancratius parish of Tubbergen has owned the site since 1916. A timber-framed chapel stands beside the tree, successor to a neo-Gothic one of 1944, and Catholic and peace-movement gatherings have met there since 1970. Park on the Jan van Arkelweg and walk five minutes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
