@@ -1,6 +1,43 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation 5) - git push started failing (expired token) with 5 more places committed locally, still unpushed at write time
+
+Continuing straight from continuation 4 (same session). After that entry's
+push succeeded (commit e20eaa5f), every later commit failed to push with
+"Invalid username or token": the origin remote's embedded GitHub App token
+had an exp exactly one hour after iat, and this session had been running
+long enough to cross it. `git fetch` still worked (read access), but
+`git push` and every `gh` call (`gh auth status`, `gh run list`, a raw
+`curl`/`urllib` call to the GitHub API) all returned 401/"Bad credentials".
+Tried: retrying several times over ~20 minutes, rewriting the remote URL
+from `$GITHUB_TOKEN` directly (same expired value, no help), `gh auth
+refresh` (denied by the permission layer). No fix available from inside a
+run; this needs the harness to mint a fresh token, which nothing here can
+trigger. Released the two claims taken after the token died
+(`_famous-slovakia`, briefly `_famous-germany`) but the releases themselves
+are ALSO stuck unpushed, so anyone reading origin's `data/in-flight.json`
+right now sees `_famous-slovakia` as still claimed; it will clear on the
+4-hour auto-expiry regardless. Stopped claiming further new work once this
+was clear, specifically because an unpushable claim cannot warn other
+sessions off the same batch, which is the entire point of the claim file.
+
+**Committed locally but NOT on origin as of this entry, in commit order**
+(all built, preflighted and qa'd green before committing): Yvignac-la-Tour
+(yvi_001, the France millennial yew, coordinate geocoded via OSM/Nominatim
+after being held for a missing one) on top of France's 23-to-24-place
+update; Kremnica and Kopcany, two new Slovak single-tree places (national
+Tree of the Year 2013 and 2018 respectively), with Slovakia's country page
+updated to 5 places/11 trees; and the `_famous-slovakia` claim release.
+If a later run or session finds this checkout with these commits still
+unpushed, the content itself was already through the same bar as everything
+else this run shipped; the only reason it never reached GitHub is this
+credential failure, not a quality or verification gap. If instead a later
+run starts from a fresh clone of origin/main, this work is gone and would
+need redoing from data/leads/_famous-slovakia.json (kre_001, kop_001 already
+marked verified there) and the France leads file (yvi_001 already marked
+verified).
+
 ## 2026-09-05 (continuation 4) - 13 new famous-tree places (Denmark/Finland/France), Poplar and Boab species pages, a Finland country page
 
 Rung 2 (`health.py`): Data digest showed `failure` (09:06 run). Read the
