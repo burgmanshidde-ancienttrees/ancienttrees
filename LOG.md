@@ -1,7 +1,64 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-05 (continuation of a window an earlier attempt stopped early with 59 minutes left) - Finished the standing _famous-japan claim: 9 trees, 5 new single-tree places
+## 2026-09-05 (continuation of a window an earlier attempt stopped early with 12 minutes shipped, 108 unspent) - Finished the standing _famousgermany + _famousjapan-b verify claims: 8 trees, 6 new single-tree places
+
+Followed the resume instructions. Pulled (nothing new). `passcheck.py
+--claims` found three standing claims: `_famous-japan`, `_famous-germany` and
+`_bomenbieb-netherlands`, all verify by night-run. `leads.py --ready` was
+empty again, but `passcheck.py --pending` found two verify passes already
+finished and staged uncommitted: `data/research/famousgermany-2026-09-05-verified.json`
+(3 candidates) and `data/research/famousjapan-2026-09-05-b-verified.json` (6
+candidates), 9 trees total needing only a story.
+
+Dispatched a write-stories agent on both files per BRIEF_WRITING.md. It wrote
+all 9, flagged one field it could not touch (Gottingen's `transport` field
+carried an internal note-to-self meant for the merge step, not the reader)
+and two species-naming questions for the merge step to decide. Fixed the
+transport field, normalised 3 species labels to the corpus canonical names
+(Large-leaved Lime for both German limes matching 30 existing uses;
+Ohatsuki Ginkgo (Ginkgo biloba var. epiphylla) for the two Japanese ginkgos
+matching 3 existing uses in Fujikawaguchiko), and merged.
+
+**8 of 9 shipped.** 6 new single-tree places under the 2026-08-31
+single-famous-tree exception: Sachsenbrunn (sac_001, the Tanzlinde, one of
+only 5 dance-lindens left in Germany), Telgte (tel_001, the Marienlinde, last
+of 3 gate-lindens), Gottingen (gtn_001, the Gerichtslinde, a court-linden
+used for justice from 1241 to 1824), Higashiomi (hga_001/002, a pair of wild
+hananoki maples 600m apart, Japan's westernmost known specimens), Maibara
+(mai_001, an ohatsuki icho whose seeds grow on its leaf margins) and Mito
+(mit_001, the largest known ohatsuki icho in the world). One tree,
+Jissoji no Icho, joined the existing Ichinohe page as ich_002 (6km from its
+wisteria), which meant rewriting Ichinohe's intro/meta/question/FAQ for two
+trees instead of one.
+
+**1 of 9 held, not published: Ushikubo-no-Nagi.** A 2026-09-04 pass already
+verified it and judged it borderline on the single-tree-destination test
+(~45 Wikipedia views/month, no festival or rite found). This pass
+re-corroborated the same facts and found no new fame evidence either. Two
+independent passes now agree it does not clear the bar alone, and it is too
+far (39km) from any published city to join one. Its full verified+written
+record is kept on its `data/leads/_famous-japan.json` entry rather than
+discarded, in case a future signal changes the call.
+
+Preflight caught 5 real problems in the hand-written page copy (an intro
+5 words short, three fields over their character limits, one question_context
+30 words short) before they could ship; fixed all 5, preflight and QA both
+clean, build succeeded (6440 pages).
+
+Released the `_famous-japan` and `_famous-germany` claims. `_bomenbieb-netherlands`
+(130 min left, a Dutch source with 64 unresolved leads across several cities)
+was not touched this window and is left standing for whoever picks it up
+next; releasing it now would only cost the next run the same orientation
+this one already paid for.
+
+Two research files (`data/research/famousgermany-2026-09-05-verified.json`,
+`data/research/famousjapan-2026-09-05-b-verified.json`) are fully merged and
+left as empty/stale on disk (the tool available this session could not
+delete files); they are untracked and harmless, but whoever next touches
+`data/research/` should remove them.
+
+
 
 Followed the resume instructions. Pulled (nothing new). `passcheck.py
 --claims` found one standing claim, `_famous-japan` verify by night-run,

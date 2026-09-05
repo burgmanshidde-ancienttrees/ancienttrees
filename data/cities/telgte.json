@@ -1,0 +1,63 @@
+{
+  "city": "Telgte",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Telgte maps one tree: the Marienlinde, the last of three lindens that once grew at the town's northern gate, and locally called the Dicke Linde, the fat lime. Pilgrims to the town's devotional image once took a leaf home with them, a habit reckoned to have cost the tree some 150,000 leaves a year. Published alone here because the tree itself is the destination, not because Telgte's research is finished.",
+  "meta_description": "The Marienlinde of Telgte: the last of three gate lindens, roughly 700 years old, free to visit at the Munstertor at any hour.",
+  "question_meta": "Telgte's only mapped tree is the Marienlinde, a roughly 700-year-old lime at the town's northern gate, free to visit at any hour.",
+  "question_answer": "Telgte's oldest and only mapped tree is the Marienlinde, a Large-leaved Lime (Tilia platyphyllos) standing at the Munstertor, the town's northern gate. It is reckoned at roughly 700 to 750 years old, though no source documents its planting.",
+  "question_context": "Locally called the Dicke Linde, the fat lime, it is the last survivor of three lindens that once grew at this gate. Telgte's pilgrims came for the Gnadenbild, the devotional image at the heart of the town's pilgrimage, which local tradition holds was carved from this tree's own wood; in the seventeenth century the habit of pilgrims taking a leaf home is reckoned to have cost the tree some 150,000 leaves a year. Its age is not properly dated: German Wikipedia gives a presumed 750 years, the Baumkunde register a planting year of 1328, nearer 700, and neither is documented. The trunk measures 6.53 metres round, though that is what survived rather than what grew: the register notes a former circumference of as much as 9 metres, and what stands today is a remaining section of trunk with a crown regrown around it. An assessment in 2019 found it vital. It carries double protection, as a Naturdenkmal and a Baumveteran.",
+  "hero_tree_id": "tel_001",
+  "oldest_tree_id": "tel_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the last of three lindens that once grew at Telgte's northern town gate, and local tradition holds the town's pilgrimage image was carved from its wood."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 700 to 750 years, though undocumented: German Wikipedia gives a presumed 750, a register a planting year nearer 700, and neither is a measured figure."
+    },
+    {
+      "q": "Why is the trunk so much narrower than expected for its age?",
+      "a": "It survives as a remaining section of a trunk that once measured as much as 9 metres round, with a crown regrown around what was left."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open at the Munstertor, walkable from the town centre, accessible at any hour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tel_001",
+      "name": "Marienlinde Telgte",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 700 to 750 years",
+      "age_min": 700,
+      "age_max": 750,
+      "girth_cm": 653,
+      "height_m": 10,
+      "location": {
+        "address": "At the Munstertor (northern town gate), Telgte, Kreis Warendorf, North Rhine-Westphalia, Germany",
+        "latitude": 51.98558,
+        "longitude": 7.78179,
+        "neighbourhood": "Munstertor"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Marienlinde_(Telgte)",
+        "https://www.baumkunde.de/baumregister/1512-marienlinde_in_telgte/"
+      ],
+      "access": "Free, stands at the town gate in the open, publicly accessible at all times.",
+      "transport": "Telgte town centre, Munstertor; walkable from the town centre. Own place, nearest published city is 66.5km away.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Telgte's pilgrims used to take a leaf of this lime home with them, and in the seventeenth century that habit is reckoned to have cost the tree some 150,000 leaves a year.\n\nThey came for the Gnadenbild, the devotional image at the heart of the pilgrimage, which local tradition says was carved from this tree's own wood. The Marienlinde stands at the Munstertor, the northern town gate, and is the last of three lindens that once grew there. Telgte calls it the Dicke Linde, the fat lime.\n\nNobody has dated it properly. German Wikipedia gives a presumed 750 years, the Baumkunde register a planting year of 1328, which is nearer 700, and neither figure is documented. The trunk measures 6.53 metres round, though that describes what survived rather than what grew: the register notes a former circumference of as much as 9 metres, and what stands today is a remaining section of trunk with a crown regrown around it. An assessment in 2019 found it vital.\n\nIt is protected twice over, as a Naturdenkmal and as a Baumveteran, and it stands in the open where anyone can walk up to it at any hour. Three grew at this gate. One is left.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

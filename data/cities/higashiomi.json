@@ -1,0 +1,112 @@
+{
+  "city": "Higashiomi",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Higashiomi maps two trees, a pair of hananoki, Acer pycnanthum, standing 600 metres apart in neighbouring hamlets: the westernmost naturally occurring specimens of this rare maple known anywhere in Japan. Both were made National Natural Monuments on the same day in March 1921 and both have survived storms that took off their main trunks. Published as a pair here because together they are a short, genuine walk, not because Higashiomi's research is finished.",
+  "meta_description": "Two hananoki maples in Higashiomi, Japan, 600m apart and Japan's westernmost wild specimens of the species, both National Natural Monuments since 1921.",
+  "question_meta": "Higashiomi's oldest mapped tree is the Hananoki of Minamihanazawa, a rare wild maple and National Natural Monument since 1921, paired with a second nearby.",
+  "question_answer": "Higashiomi's oldest mapped tree is the Hananoki of Minamihanazawa (Acer pycnanthum), the sacred tree of Hachiman Shrine, estimated at over 250 years and possibly over 450. Its companion tree at Kitahanazawa, 600 metres north, is estimated at over 300 years; both were designated National Natural Monuments on the same day, 3 March 1921.",
+  "question_context": "Hananoki, meaning flower tree, is a maple that grows wild in only a handful of wet valleys in central Japan, and these two are its westernmost known wild specimens. Minamihanazawa's tree, 5.2 metres round and 21 metres tall, lost its main trunk to lightning-related rot in August 2010; sources disagree on what survived, Japanese Wikipedia saying it regrew from remaining branches and a later account describing what is left as preserved rather than living, though a 2019 photograph shows a standing tree. Kitahanazawa's tree, smaller at 2.8 metres round and 17.27 metres tall, has lost two trunks to storms over its life, in 1866 and again in Typhoon Jane in 1950, and now grows as six limbs from a shared base. Both flower in late March and early April, red flowers crowding bare wood before a single leaf opens, and a ten-minute bus from Yokaichi Station reaches both, about ten minutes' walk apart.",
+  "hero_tree_id": "hga_001",
+  "oldest_tree_id": "hga_001",
+  "faq": [
+    {
+      "q": "What is a hananoki?",
+      "a": "Acer pycnanthum, a maple that grows wild in only a few wet valleys in central Japan. These two trees are its westernmost known wild specimens."
+    },
+    {
+      "q": "Which of the two is older?",
+      "a": "It is not settled. Minamihanazawa is estimated at over 250 and possibly over 450 years; Kitahanazawa at over 300. Both were designated on the same day in 1921."
+    },
+    {
+      "q": "Can both trees be visited in one trip?",
+      "a": "Yes. They stand about 600 metres apart, both reachable by the same ten-minute bus from Yokaichi Station, and the walk between them takes about ten minutes."
+    },
+    {
+      "q": "When is the best time to see them?",
+      "a": "Late March into early April, when the red flowers open on bare wood before either tree comes into leaf."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hga_001",
+      "name": "Minamihanazawa no Hananoki",
+      "species": "Maple (Acer pycnanthum)",
+      "age_estimate": "over 250 years",
+      "age_min": 250,
+      "age_max": 450,
+      "girth_cm": 520,
+      "height_m": 21,
+      "location": {
+        "address": "Hachiman Shrine grounds, Minamihanazawa-cho 546, Higashiomi City, Shiga Prefecture, Japan",
+        "latitude": 35.12472,
+        "longitude": 136.25796,
+        "neighbourhood": "Minamihanazawa, Higashiomi"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E5%8D%97%E8%8A%B1%E6%B2%A2%E3%81%AE%E3%83%8F%E3%83%8A%E3%83%8E%E3%82%AD",
+        "https://online.bunka.go.jp/heritages/detail/162991",
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_A.jpg"
+      ],
+      "access": "Free, in the grounds of Hachiman Shrine (the tree is the shrine's sacred tree); reachable by a ~10 minute bus from Yokaichi Station (Omi Railway) or ~10 minutes by car from Meishin Expressway's Yokaichi IC (per the official Biwako Visitors tourism site, biwako-visitors.jp)",
+      "transport": "~10 min bus from Yokaichi Station (Omi Railway); pairs with its companion tree 600m north at Kitahanazawa for one short walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In August 2010 the main trunk of this maple rotted through from the inside, after lightning, and came down. The tree is still here.\n\nIt is a hananoki, Acer pycnanthum, a maple that grows wild in only a handful of wet valleys in central Japan. This one and its companion 600 metres north are the westernmost naturally occurring specimens known, and both were made National Natural Monuments on the same day in March 1921. It is the sacred tree of Hachiman Shrine at Minamihanazawa, 5.2 metres round at chest height and 21 metres tall.\n\nHananoki means flower tree, and the name is earned in early spring, when dense red flowers crowd the bare twigs before a single leaf opens.\n\nTwo things are disputed and worth saying plainly. Japanese Wikipedia puts the tree at over 250 years, a local account at over 450, and nobody has settled it. And the sources part company on what the 2010 collapse actually left: Wikipedia says the tree survived and pushed out new growth from the branches it still had, while a later account describes what remains as preserved rather than living. A photograph taken at these coordinates in September 2019 shows a tree standing, which is the reading this page follows. If you have been past more recently, tell us what you found.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "kind": "flowers",
+        "label": "late March and early April, when the red flowers crowd the bare twigs before the leaves"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hga_002",
+      "name": "Kitahanazawa no Hananoki",
+      "species": "Maple (Acer pycnanthum)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 300,
+      "girth_cm": 280,
+      "height_m": 17.27,
+      "location": {
+        "address": "Kitahanazawa hamlet, Higashiomi City, Shiga Prefecture, Japan, approximately 600m north of Minamihanazawa no Hananoki",
+        "latitude": 35.12943,
+        "longitude": 136.26035,
+        "neighbourhood": "Kitahanazawa, Higashiomi"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E5%8C%97%E8%8A%B1%E6%B2%A2%E3%81%AE%E3%83%8F%E3%83%8A%E3%83%8E%E3%82%AD",
+        "https://online.bunka.go.jp/heritages/detail/191032",
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_A.jpg"
+      ],
+      "access": "Free; same tourism entry as Minamihanazawa (biwako-visitors.jp): ~10 min bus from Yokaichi Station (Omi Railway) to 'Kitahanazawa', or ~10 min by car from Meishin Expressway's Yokaichi IC",
+      "transport": "~10 min bus from Yokaichi Station; 600m from its Minamihanazawa companion tree, both would form one short walk if paired together",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This maple has lost two trunks to storms and is standing on what was left over. It forked near the base originally. One limb broke in a storm in 1866, the other went down in Typhoon Jane in 1950, and the tree today divides into six limbs about three metres up.\n\nIt is a hananoki, Acer pycnanthum, and together with its companion 600 metres south at Minamihanazawa it is one of the two westernmost naturally occurring specimens known in Japan. The pair were designated National Natural Monuments together on 3 March 1921, in the same order, and they still read as a pair: a ten minute bus from Yokaichi Station reaches both, and the walk between them is about ten minutes more.\n\nThe numbers: 4.9 metres round at the base, 2.8 at chest height, 17.27 metres tall. Japanese Wikipedia estimates it at over 300 years, which would have it already grown when the first of those two storms took a trunk off it.\n\nHananoki means flower tree. In early spring the red flowers open on bare wood, before any leaf, and the crown turns red before it turns green. The rest of the year it looks like an ordinary maple standing above a small Shiga hamlet, which is a fair share of the appeal: this is a nationally protected tree with no gate, no ticket and usually nobody else there.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "kind": "flowers",
+        "label": "late March and early April, when the red flowers open on bare wood before any leaf"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

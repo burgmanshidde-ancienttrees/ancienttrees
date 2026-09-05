@@ -924,7 +924,31 @@
         "https://commons.wikimedia.org/wiki/File:Nageia_nagi,_at_Shimonagayama,_Toyokawa,_Aichi_(2013.08.28)_02.jpg"
       ],
       "status": "lead",
-      "note": "2026-09-04 (famousjapan-batch3 verify pass): fully verified, alive, sourced (online.bunka.go.jp/heritages/detail/205553), national natural monument since 1938-12-14, girth 330-350cm, but judged borderline on the single-famous-tree destination test at only ~45 views/month and no documented rite, pilgrimage or purpose-built visitor site. Held as a lead rather than shipped; a stronger fame signal or Hidde's own read could still publish it standalone (container 'Toyokawa' or a Kumano-jinja slug, id prefix 'tyk' or 'ushi'). Full facts in data/research/_famous-japan-batch3-verified.json."
+      "note": "2026-09-04 (famousjapan-batch3 verify pass): fully verified, alive, sourced (online.bunka.go.jp/heritages/detail/205553), national natural monument since 1938-12-14, girth 330-350cm, but judged borderline on the single-famous-tree destination test at only ~45 views/month and no documented rite, pilgrimage or purpose-built visitor site. Held as a lead rather than shipped; a stronger fame signal or Hidde's own read could still publish it standalone (container 'Toyokawa' or a Kumano-jinja slug, id prefix 'tyk' or 'ushi'). Full facts in data/research/_famous-japan-batch3-verified.json. 2026-09-05 (famousjapan-b verify+write pass): re-verified independently and re-corroborated (no age documented anywhere, same 2013 photo is still the newest dated evidence found), story written and sitting in data/research/famousjapan-2026-09-05-b-verified.json, but no new fame evidence turned up either. Still held, not merged: two independent passes now agree it does not clear the single-tree-destination bar.",
+      "verified_record": {
+        "id": "TBD",
+        "name": "Ushikubo-no-Nagi",
+        "species": "Nagi (Nageia nagi)",
+        "age_estimate": "not documented",
+        "age_min": null,
+        "age_max": null,
+        "girth_cm": 330,
+        "location": {
+          "address": "Kumano Jinja shrine, Shimonagayama-cho, Toyokawa, Aichi Prefecture, Japan",
+          "latitude": 34.807464,
+          "longitude": 137.380094,
+          "neighbourhood": "Shimonagayama, Toyokawa"
+        },
+        "verified_sources": [
+          "https://online.bunka.go.jp/heritages/detail/205553",
+          "https://commons.wikimedia.org/wiki/File:Nageia_nagi,_at_Shimonagayama,_Toyokawa,_Aichi_(2013.08.28)_01.jpg"
+        ],
+        "access": "Free, on the grounds of Kumano Jinja shrine, open to the public",
+        "transport": "In Toyokawa, Aichi Prefecture; nearest existing published city (Okazaki/other) is ~39 km away, too far for a day-trip addition",
+        "location_precision": "confirmed",
+        "curation_status": "flagged",
+        "story": "Japan made this tree a National Natural Monument in December 1938, and nobody has ever written down how old it is.\n\nIt is a nagi, Nageia nagi, a conifer that refuses to look like one. The leaves are broad, leathery and glossy, ribbed with parallel veins and no central midrib, so the tree reads as a laurel until you look properly. Nagi have been planted at Japanese shrines for centuries, and this one stands on the grounds of Kumano Jinja in Shimonagayama, a small shrine in Toyokawa, Aichi Prefecture.\n\nThe trunk measures about 3.3 metres round and divides into two roughly four metres above the ground. That is a substantial trunk for a nagi, and the national designation has sat on it since before the war, which in 1938 was the highest protection the country could give a living thing.\n\nWhat the record does not carry is a date. The register lists the species, the girth and the year of protection, and then it stops. No planting year, no estimate, no local tradition anybody has published. That is a gap rather than a mystery, and it is the kind a visitor can close in one message. If you know how old this nagi is, or have read a plaque at Kumano Jinja that says, tell us."
+      }
     },
     {
       "name": "Ushio no Katsura",

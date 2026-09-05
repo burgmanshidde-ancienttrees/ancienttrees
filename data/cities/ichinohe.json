@@ -2,10 +2,10 @@
   "city": "Ichinohe",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Ichinohe maps one tree: the Wisteria of Fujishima, one of only eight vine-form trees ever given Japan's National Natural Monument status and the northernmost of them. Felled once by a typhoon and grown back on a steel trellis, it is tended today partly by schoolchildren from the elementary school next door and celebrated every May with a festival and night illumination. Published alone here because the tree itself is the destination, not because Ichinohe's research is finished.",
-  "meta_description": "The Wisteria of Fujishima, Ichinohe: one of Japan's eight National Natural Monument vine trees, felled once, regrown on a trellis, free to visit.",
-  "question_meta": "Ichinohe's oldest and only mapped tree is the Wisteria of Fujishima, one of Japan's eight National Natural Monument vine trees, free near Kozuya Station.",
-  "question_answer": "Ichinohe's only mapped tree, and its oldest, is the Wisteria of Fujishima (Wisteria floribunda, Noda wisteria), a National Natural Monument several hundred years old, standing beside Kozuya Elementary School in Ichinohe, Iwate Prefecture.",
+  "intro": "Ichinohe maps two trees. The Wisteria of Fujishima is one of only eight vine-form trees ever given Japan's National Natural Monument status and the northernmost of them, felled once by a typhoon and grown back on a steel trellis. Six kilometres away at Jissoji Temple stands a male ginkgo that fruits anyway, a documented rarity in a species that is normally strictly male or female. Published together here because each tree is its own reason to come, not because Ichinohe's research is finished.",
+  "meta_description": "Ichinohe's two National Natural Monuments: the Wisteria of Fujishima, regrown on a trellis after a typhoon, and a fruiting male ginkgo at Jissoji Temple.",
+  "question_meta": "Ichinohe's oldest mapped tree is the Wisteria of Fujishima, one of Japan's eight National Natural Monument vine trees, free near Kozuya Station.",
+  "question_answer": "Ichinohe's oldest mapped tree is the Wisteria of Fujishima (Wisteria floribunda, Noda wisteria), a National Natural Monument several hundred years old, standing beside Kozuya Elementary School in Ichinohe, Iwate Prefecture. A second National Natural Monument, a fruiting male ginkgo at Jissoji Temple roughly six kilometres away, is estimated at around 320 years.",
   "question_context": "Seven wisteria and one other vine have ever been given Japan's National Natural Monument status, and this is the northernmost of them, designated in 1938. The name Fujishima, wisteria island, comes from a moat that once ran on three sides. At designation it was reportedly the largest wisteria in Japan, but a 1954 typhoon felled its main stem, and it has grown supported on a steel trellis since; a 1995 reference records the trunk as internally rotted and split into seven pieces, though the wood under the bark is healthy and its overall vigour is good. A 1969 survey put the root circumference at 3.6 metres, other accounts round to 3.3 or 4, and its growth is said to reach past 20 metres. Its age is given only loosely, several hundred years, one account saying over 400, repeated here as vaguely as given. Schoolchildren next door take part in its conservation, a 2022 newspaper report found it in good bloom that May, and every year on the last Sunday of May the town holds a Wisteria Festival with night illumination. Free, on a signposted site with a small Benzaiten shrine at its base.",
   "hero_tree_id": "ich_001",
   "oldest_tree_id": "ich_001",
@@ -25,6 +25,10 @@
     {
       "q": "Is it free to visit?",
       "a": "Yes. It stands on a signposted natural-monument site about 10 minutes on foot from Kozuya Station, and hosts an annual Wisteria Festival with night illumination on the last Sunday of May."
+    },
+    {
+      "q": "What is Ichinohe's second mapped tree?",
+      "a": "A ginkgo at Jissoji Temple, about six kilometres away, that is male but fruits on some of its smaller branches every year, a rare and documented sex variation rather than an error in the record."
     }
   ],
   "trees": [
@@ -53,6 +57,45 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Seven wisteria and one other vine have ever been given Japan's National Natural Monument status, the country's highest tier of tree protection, and this is the northernmost of them. The name Fujishima, wisteria island, comes from a moat that used to run on three sides of the site, before it was filled in.\n\nAt its 1938 designation this was reportedly the largest wisteria in Japan. It has not had an easy run since. A 1954 typhoon felled its main stem, and it has grown supported on a steel trellis ever since; a 1995 reference book records the trunk as internally rotted and split into seven separate pieces, though the wood just under the bark is described as healthy and the tree's overall vigour as good.\n\nSources vary on its exact size, which is itself evidence of how hard this tree is to measure: a 1969 survey put the root circumference at 3.6 metres, other accounts round to 3.3 or 4, and its supported growth is said to reach past 20 metres. Its age gets the same treatment, several hundred years, one account says over 400, repeated here as loosely as the sources give it.\n\nWhat is certain is that it is tended rather than merely preserved. Schoolchildren from the elementary school next door take part in its conservation programme, a 2022 newspaper report found it in good bloom that May, and every year on the last Sunday of May the town holds a Wisteria Festival with night illumination beneath it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ich_002",
+      "name": "Jissoji no Icho",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 320 years",
+      "age_min": 280,
+      "age_max": 340,
+      "girth_cm": 338,
+      "height_m": 25,
+      "location": {
+        "address": "Jissoji Temple, Ichinohe-aza-Osawa, Ichinohe Town, Ninohe District, Iwate Prefecture, Japan",
+        "latitude": 40.22125,
+        "longitude": 141.30014,
+        "neighbourhood": "Osawa, Ichinohe"
+      },
+      "verified_sources": [
+        "https://www.town.ichinohe.iwate.jp/kanko_bunka_sports/kanko_tokusan/6/2672.html",
+        "https://ja.wikipedia.org/wiki/%E5%AE%9F%E7%9B%B8%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6"
+      ],
+      "access": "Free, on the grounds of Jissoji Temple, a working temple in Ichinohe town",
+      "transport": "In Ichinohe town centre, about 6km from the town's other mapped tree, the Wisteria of Fujishima.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Ginkgos are either male or female. This one is male, and it fruits anyway.\n\nEvery year a few of its smaller branches set seed in grape-like clusters. It is a documented and rare sex variation rather than an error in the record, and it is the reason Japan made the tree a National Natural Monument in December 1938. It grows in the grounds of Jissoji, a working temple at Osawa in Ichinohe, in Iwate, roughly six kilometres from the town centre.\n\nTwo surveys, fourteen years apart, disagree in the usual way. In 1969 it measured 3.84 metres round at the roots, 3.05 at chest height, and about 27 metres tall. By 1983 the chest-height girth had reached 3.38 metres while the height was recorded as about 21, and Ichinohe's own page says about 25. Heights are measured from the ground by people looking upward, which is how a tree can appear to shrink by six metres in fourteen years.\n\nThe 1983 survey also estimated the age at about 280 years, which puts it near 320 today.\n\nAutumn is when to come. A ginkgo turns yellow all at once and then drops the whole crown inside a few days, and this far north it happens earlier than it does in the ginkgo streets further south. The colour is not what makes this one worth the detour, though. The clusters on the smaller branches are, and somebody had to be looking closely to find them at all.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "fruit",
+        "label": "autumn, when the seed clusters ripen on a tree that should not be bearing any"
+      },
       "photo": {
         "url": null,
         "license": null,

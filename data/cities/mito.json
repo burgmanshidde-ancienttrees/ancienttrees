@@ -1,0 +1,70 @@
+{
+  "city": "Mito",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Mito maps one tree: the Ohatsuki Ginkgo of Shirahatayama Hachimangu, the largest of the roughly twenty leaf-seed ginkgos known anywhere in the world. It grows in a shrine built in 1707, though the tree itself is understood to be older, and it is a short city bus ride from Mito Station. Published alone here because the tree itself is the destination, not because Mito's research is finished.",
+  "meta_description": "The Ohatsuki Ginkgo of Shirahatayama Hachimangu, Mito: the largest known leaf-seed ginkgo in the world, a National Natural Monument since 1929.",
+  "question_meta": "Mito's only mapped tree is the Ohatsuki Ginkgo of Shirahatayama Hachimangu, the largest known leaf-seed ginkgo in the world, a short bus ride away.",
+  "question_answer": "Mito's oldest and only mapped tree is the Ohatsuki Ginkgo of Shirahatayama Hachimangu, standing in the grounds of the shrine of the same name (also called Mito Hachimangu). It is given as 400 to 600 years old, a tradition rather than a measurement, and is the largest known specimen of its rare leaf-seed variant anywhere in the world.",
+  "question_context": "There are perhaps twenty ohatsuki icho, leaf-seed ginkgos, known anywhere, and this is the largest. Only about a tenth of its foliage actually carries the trait, so most of the crown reads as an ordinary ginkgo and the odd leaves have to be searched for. Ibaraki Prefecture's Board of Education, which keeps the record, describes it as currently showing good vitality with numerous aerial rootlets hanging from its limbs. It grows in the grounds of Shirahatayama Hachimangu, a shrine built in 1707 that the tree is understood to predate; its age of 400 to 600 years is a tradition rather than a documented figure. Its size is disputed above the roots: both sources agree on roughly 9 to 9.5 metres of circumference where the trunk flares into the ground, but they diverge above that, one giving 5.8 metres round at chest height and 35 metres tall, the other 42 metres tall. Japan protected it as a National Natural Monument in April 1929.",
+  "hero_tree_id": "mit_001",
+  "oldest_tree_id": "mit_001",
+  "faq": [
+    {
+      "q": "What makes this ginkgo unusual?",
+      "a": "It is an ohatsuki icho, a rare variant that sets seeds on the margins of its leaves, and it is the largest known specimen of the roughly twenty documented anywhere."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Given as 400 to 600 years, a figure repeated by tradition rather than measured. The shrine it stands in was built in 1707, and the tree is understood to predate it."
+    },
+    {
+      "q": "How tall is it, exactly?",
+      "a": "Disputed. One official source gives 35 metres, another 42. Both agree the base circumference is around 9 to 9.5 metres."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "A city loop bus from JR Mito Station's north exit to the Hachimangu Entrance stop, or about 20 minutes by car from Mito Interchange."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mit_001",
+      "name": "Shirahatayama Hachimangu no Ohatsuki Icho",
+      "species": "Ohatsuki Ginkgo (Ginkgo biloba var. epiphylla)",
+      "age_estimate": "400 to 600 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 580,
+      "height_m": 35,
+      "location": {
+        "address": "Shirahatayama Hachimangu (Mito Hachimangu) shrine, 8-54 Hachimancho, Mito City, Ibaraki Prefecture, Japan",
+        "latitude": 36.38764,
+        "longitude": 140.45975,
+        "neighbourhood": "Hachimancho, Mito"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%97%97%E5%B1%B1%E5%85%AB%E5%B9%A1%E5%AE%AE%E3%81%AE%E3%82%AA%E3%83%8F%E3%83%84%E3%82%AD%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+        "https://kyoiku.pref.ibaraki.jp/bunkazai/kuni-128/"
+      ],
+      "access": "Free, in the grounds of Shirahatayama Hachimangu shrine (also known as Mito Hachimangu); reachable by city loop bus from Mito Station's north exit to the 'Hachimangu Entrance' stop, or about 20 minutes by car from Mito Interchange on the Joban Expressway",
+      "transport": "City loop bus from JR Mito Station (Joban Line / Suigun Line) to Hachimangu Entrance",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "There are perhaps twenty leaf-seed ginkgos known anywhere in the world, and this is the largest of them.\n\nAn ohatsuki icho carries its seeds on the margins of its leaves instead of on a stalk of their own. On this tree only about a tenth of the foliage does it, so most of the crown looks like an ordinary ginkgo and the strange leaves have to be hunted for. Ibaraki Prefecture's Board of Education, which keeps the record, says it currently shows good vitality and hangs numerous aerial rootlets from its limbs.\n\nIt grows in the grounds of Shirahatayama Hachimangu in Mito, the shrine also known as Mito Hachimangu, which was built in 1707. The tree is understood to be older than the building. Its age is given as 400 to 600 years, a tradition rather than a measurement, and no source narrows it.\n\nThe size is large and disputed. Both sources agree on something near 9 to 9.5 metres of circumference where the roots flare. Above that they part: about 5.8 metres round at chest height and 35 metres tall by the prefecture's account, 42 metres by Japanese Wikipedia's. That is a seven-metre argument about the top of a tree, which tells you how far up it goes.\n\nJapan protected it as a National Natural Monument in April 1929, and it is a city bus ride from Mito station, which is a short trip for the biggest of twenty.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns gold"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

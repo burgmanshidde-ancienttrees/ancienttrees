@@ -2,6 +2,26 @@
 
 <!-- archive-index -->
 
+## 2026-09-05 (continuation) - Finished the _famousgermany + _famousjapan-b verify claims: 8 trees merged, 6 new single-tree places, 1 held
+
+Two verify passes had already finished under the standing `_famous-japan` and
+`_famous-germany` claims and sat staged uncommitted: `famousgermany-2026-09-05-verified.json`
+(3 candidates: Tanzlinde Sachsenbrunn, Marienlinde Telgte, Gerichtslinde
+Gottingen) and `famousjapan-2026-09-05-b-verified.json` (6: Ushikubo-no-Nagi,
+Minamihanazawa/Kitahanazawa no Hananoki, Ryotokuji and Shirahatayama
+Ohatsuki Icho, Jissoji no Icho). Dispatched a write-stories pass on all 9,
+merged 8 into `data/cities`: 6 new single-tree places (Sachsenbrunn,
+Telgte, Gottingen, Higashiomi with 2 trees, Maibara, Mito) and one tree
+(Jissoji no Icho) joined the existing Ichinohe page as its second tree.
+Ushikubo-no-Nagi held, not published: a second independent pass confirms the
+2026-09-04 verdict that it does not clear the single-tree-destination bar
+(~45 Wikipedia views/month, no festival or rite found); its full record is
+kept on the leads entry rather than discarded. Preflight caught 5 length
+violations in the hand-written page copy before build; fixed, build and QA
+both clean (6440 pages). Full writeup in LOG.md. Claims released for
+`_famous-japan` and `_famous-germany`; `_bomenbieb-netherlands` (64 unresolved
+leads across several Dutch cities) left standing for the next run.
+
 ## 2026-09-05 (continuation) - Finished the standing _famous-japan claim: 9 trees merged, 5 new single-tree places
 
 Picked up a `_famous-japan` verify claim left standing by an earlier attempt in this window (112 min left on the claim), with three research batches (A/B/C, 9 trees total, batch1 empty) already fully verified and written, staged uncommitted in `data/research/famousjapan-batch{1,A,B,C}-verified.json`. All 9 were already merged into city files by the earlier attempt; this pass verified the merge was clean, fixed two meta_descriptions the build caught over the 155-char limit (Kimotsuki, Maebashi), ran `city_names.py` for the 5 new places (4 of 5 resolved; Hino ambiguous on Wikipedia, left unresolved), and committed. New single-tree places: Himi (Oidani no Otsubaki, Japan's largest known wild camellia), Hino (Kumano no Hidarimakigaya, 1922 discovery site of a left-spiraling kaya mutation), Kimotsuki (Tsukazaki no Kusu, a camphor atop a 4th-century burial mound), Oguni (Shimojo no Oichou, a giant ginkgo mistaken from the road for a wood), Yamanashi City (Okkazuma no Shidarezakura, a weeping cherry alone on a hilltop). Grown: Maebashi (+Kinmokusei of Kezoji), Iwata (+Kitahama no Okayanoki), Hokuto (+Utsukushimori no Oyamatsutsuji), Fujikawaguchiko (+Yamanokami no Fuji). Japan's country page corrected 76->81 places, 196->205 trees. Full build (4373 pages), qa.py (6387 pages), preflight.py (388 cities, 0 problems) and superlatives.py (638 claims, no collisions) all clean. Claim released. The research staging files could not be deleted this session (rm denied by permission mode) and sit untracked; a future run should remove them, their content is fully merged.
