@@ -3,11 +3,11 @@
   "country": "Switzerland",
   "status": "needs_curation",
   "oldest_tree_id": "zur_001",
-  "intro": "Zurich's oldest trees survive for reasons that have little to do with nature conservation: a park's own colour-coded planting tags date a 1780 plane tree to the year, a railway magnate planted a giant sequoia in 1858 to mark his daughter's birth, a private bank spent years negotiating with a tram line to keep a 120-year-old sequoia standing outside its offices, and a 550-year tradition of replanting lindens on the city's founding hilltop means the trees there today are honestly younger than the site's own reputation suggests.",
+  "intro": "Zurich's oldest trees survive for reasons that have little to do with nature conservation: a park's own colour-coded planting tags date a 1780 plane tree to the year, a railway magnate planted a giant sequoia in 1858 to mark his daughter's birth, a private bank negotiated for years with a tram line to keep a 120-year-old sequoia outside its offices, and a 550-year tradition of replanting lindens on the founding hilltop means the trees there today are younger than the site's reputation suggests. Two more are day trips: an old oak at Marthalen, and the eleven-metre linden of Linn.",
   "meta_description": "Zurich's most remarkable trees: Platzspitz's dated 1780 planes, Alfred Escher's giant sequoia, a bank-saved Mammutbaum, and Lindenhof's own lindens.",
   "question_answer": "Zurich's oldest documented tree is one of the brown-tagged plane trees at Platzspitz park, planted in 1780 and marked by the city's own colour-coded dating system. The park has been redesigned and replanted around it several times since.",
   "question_meta": "A plane tree at Platzspitz, planted in 1780 and marked by the city's colour-coded tree tags, is Zurich's oldest documented tree.",
-  "question_context": "Platzspitz, the wedge of parkland where the Sihl and Limmat rivers meet, is Zurich's second-oldest public park, and its own gardeners have tagged its plane trees by planting year with a simple colour system: brown for 1780, blue for 1806, green for 1836, red for 1960, violet for 2005. The brown-tagged trees, planted in 1780, are the oldest documented specimens in the park and among the oldest confirmed trees in the city, already well established when Zurich was still a walled city-state and more than a decade before the French Revolution reshaped the continent around it. At least one of these plane trees is described by the city's own conservation survey as priceless, though the survey does not put a franc figure on it. Platzspitz's documented history as a public space runs back roughly 450 years, but almost nothing survives above ground from its earliest layouts; the 1780 planes represent the oldest generation that does survive, tagged and tracked rather than left to guesswork the way most historic city trees are.",
+  "question_context": "Platzspitz, the wedge of parkland where the Sihl and Limmat rivers meet, is Zurich's second-oldest public park, and its own gardeners have tagged its plane trees by planting year with a simple colour system: brown for 1780, blue for 1806, green for 1836, red for 1960, violet for 2005. The brown-tagged trees, planted in 1780, are the oldest documented specimens in the park and among the oldest confirmed trees in the city, already well established when Zurich was still a walled city-state and more than a decade before the French Revolution reshaped the continent around it. The city's own conservation survey calls at least one of them priceless without putting a franc figure on it. Platzspitz's history as a public space runs back roughly 450 years, but almost nothing survives above ground from its earliest layouts; the 1780 planes are the oldest generation that does, tagged and tracked rather than guessed at. Two entries here are day trips rather than city trees: an oak of over 360 years in the Abistwald at Marthalen, half an hour north by train, and the roughly 800-year-old linden of Linn in Aargau, 45 to 60 minutes each way via Brugg.",
   "faq": [
     {
       "q": "What is Zurich's oldest tree?",
@@ -154,6 +154,73 @@
       "curation_status": "flagged",
       "notes": "The Limmattalbahn threat, Julius Baer's negotiation and the settlement outcome are corroborated by a Limmattaler Zeitung report on the resolution; the tree's continued preservation is confirmed by Zurich's own 2026 masterplan media release for the Hohlstrasse site, which names the Mammutbaum as a retained feature. The tree stands on the bank's own property line directly beside the public sidewalk, not inside a park; described honestly as visible from the street rather than freely enterable ground.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "mar_001",
+      "name": "The Marthalen Oak",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "over 360 years",
+      "age_min": 360,
+      "age_max": 450,
+      "girth_cm": 560,
+      "location": {
+        "address": "Abistwald forest, reached via the FC Ellikon/Marthalen football pitch, Marthalen",
+        "latitude": 47.640408,
+        "longitude": 8.648343,
+        "neighbourhood": "Abistwald, Marthalen"
+      },
+      "story": "The walk to one of the oldest oaks in Switzerland crosses a football pitch, and the village museum that documents the tree advises bringing a ball.\n\nThe Ortsmuseum Marthalen puts the oak at over 360 years old, with a trunk 1.8 metres across, roughly 5.6 metres round, standing in the Abistwald north of the village. That museum is the only real source on it. Regional tourism pages repeat the same figures back, which is not the same thing as a second opinion, so read the age as the museum's estimate rather than a settled fact.\n\nThe forest around it does the corroborating. Marthalen's own timber inventory records an unusual concentration of very large stems here, over 112 centimetres in diameter at breast height and predominantly oak, a category with only a few dozen entries in the whole canton. This is not a lone survivor in a plantation. It is the biggest tree in a wood that has been growing big trees for a long time, in a village whose coat of arms is an oak.\n\nWhich oak it is remains open. Quercus robur and Quercus petraea both grow here and no source we found commits either way. If you can tell them apart by the acorn stalks and the leaf bases, you can settle this for us on the spot.\n\nMarthalen is 25 to 30 minutes by direct train from Zurich.",
+      "verified_sources": [
+        "https://www.ortsmuseum-marthalen.ch/entdecken/"
+      ],
+      "access": "Free, in a public forest (Abistwald). The local museum's own visitor page says the path there crosses the FC Ellikon/Marthalen football pitch, and jokingly advises bringing a football along; no gate, ticket or restriction is mentioned.",
+      "transport": "Marthalen railway station (Zurich-Schaffhausen line, roughly 25-30 min from Zurich HB) then on foot into the Abistwald, direction and distance not independently verified by us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "boz_001",
+      "name": "The Linden of Linn",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 800 years",
+      "age_min": 600,
+      "age_max": 900,
+      "girth_cm": 1100,
+      "location": {
+        "address": "Linn 51, Boezberg (Linn village entrance), Aargau",
+        "latitude": 47.470833,
+        "longitude": 8.132944,
+        "neighbourhood": "Linn, Boezberg"
+      },
+      "story": "Local legend says that if this linden's shadow ever stops reaching Habsburg Castle, the world ends. The tree is eleven metres round, twenty-five metres tall and roughly 800 years old, which by the canton's own reckoning makes it the mightiest tree in Aargau and would make it a sapling around the time Rudolf von Habsburg, founder of the dynasty the castle is named for, was born.\n\nA second legend is more popular and less durable: that survivors of the plague planted it, in the sixteenth or seventeenth century. The tree's own dating rules that out by several hundred years. Both stories are worth knowing, only one of them can be true, and it is the tree that settles the argument.\n\nEleven metres of circumference is enormous even for a large-leaved lime, a species that fuses, splits and re-roots itself into fluted multi-stemmed trunks as it ages. What you walk up to is less a trunk than a small ruined building with leaves on top.\n\nIt stands at the entrance to Linn village, directly at the bus stop, and Aargau's tourist board calls it very popular, which is a polite warning about Sunday afternoons. From Zurich this is a real trip rather than a stroll: train to Brugg, then a local connection onward, 45 to 60 minutes each way.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and all eleven metres of trunk stand exposed"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Linner_Linde",
+        "https://aargautourismus.ch/erleben/kraftorte/linde-von-linn"
+      ],
+      "access": "Free, public. Directly at the 'Boezberg, Linn' bus stop, marking the village entrance; also reachable on a 20-minute waymarked walk from Boezberg-Neustalden station. Aargau Tourismus's own page (updated 2026-08-04) notes it is 'very popular and well-visited', suggesting a weekday or early Sunday visit for a quieter one.",
+      "transport": "From Zurich: train to Brugg, then onward bus/local transport toward Boezberg/Linn; total journey likely 45-60 minutes each way (not independently timed step by step by us; this is a longer trip than the classic 30-minute day-trip case and should be labelled honestly as such).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

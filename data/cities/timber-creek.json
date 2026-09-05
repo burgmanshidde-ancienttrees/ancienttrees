@@ -1,0 +1,71 @@
+{
+  "city": "Timber Creek",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "A boab beside the Victoria River carries two dates cut into its bark: 13 October 1855 and 2 July 1856, the arrival and the departure of Augustus Charles Gregory's North Australia Expedition. The carvings are still readable. The expedition's botanist, Ferdinand von Mueller, named the Australian boab Adansonia gregorii after his leader, so the tree belongs to a species named for the party that marked it. It is also Ngalibinggag, a registered sacred site, and a boardwalk keeps visitors off the ground at its base.",
+  "meta_description": "Gregory's Tree near Timber Creek is a boab carved with the 1855 and 1856 camp dates of Gregory's North Australia Expedition. Free NT reserve.",
+  "question_meta": "Gregory's Tree, a carved boab near Timber Creek, marks the 1855 to 1856 camp of Gregory's North Australia Expedition. What is there and how to reach it.",
+  "question_answer": "The tree at Gregory's Tree Historical Reserve, about 15 kilometres north-west of Timber Creek in the Northern Territory, is a boab carved by members of Augustus Charles Gregory's North Australia Expedition with the dates of their camp: 13 October 1855 and 2 July 1856. No age has ever been published for it and boabs are hard to date, but the Northern Territory Heritage Register, which declared the place permanently in 1995, calls it a living monument to the exploration of northern Australia. The reserve is free and open at any time.",
+  "question_context": "Gregory's party made its entrenchment camp on the Victoria River in October 1855 and stayed until July the following year, and somebody cut both dates into the bark of a boab standing beside the water. Both are still legible. The expedition's botanist was Ferdinand von Mueller, who became one of the most influential botanists in Australian history and who named the Australian boab Adansonia gregorii for his expedition leader, which makes this specimen a member of a species named after the party that carved it. The Northern Territory Heritage Register declared the place permanently in 1995 and publishes the tree's own coordinates. Neither that register nor any other source we found gives an age or a girth, so both are left blank here rather than guessed at. The site is also Ngalibinggag, a registered sacred site of the Ngaringman people, and the reserve is built around that: a boardwalk and interpretive panels ring the tree so that nobody walks on the ground at its base or touches the trunk. Nothing about looking is restricted. There is no public transport, and the reserve sits on the Victoria Highway about three and a half hours' drive west of Katherine.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Timber Creek?",
+      "a": "Gregory's Tree, a boab in its own historical reserve on the Victoria Highway. Nobody has published an age for it and boabs are notoriously hard to date, so this page leaves the figure blank rather than guessing. If you know of a dating, tell us."
+    },
+    {
+      "q": "What is Gregory's Tree?",
+      "a": "A boab carved with 13 October 1855 and 2 July 1856, the arrival and departure dates of Augustus Charles Gregory's North Australia Expedition, which camped beside the Victoria River here."
+    },
+    {
+      "q": "Can you visit it?",
+      "a": "Yes, free and at any time. A marked track runs from a roadside cairn to a boardwalk built around the tree. The site is a registered sacred site of the Ngaringman people, so the boardwalk keeps visitors off the ground at its base and away from the trunk; looking is unrestricted."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "By car only. The reserve is on the Victoria Highway roughly 15 kilometres north-west of Timber Creek, about three and a half hours' drive west of Katherine. There is no public transport."
+    }
+  ],
+  "hero_tree_id": "gtr_001",
+  "oldest_tree_id": "gtr_001",
+  "trees": [
+    {
+      "id": "gtr_001",
+      "name": "Gregory's Tree",
+      "species": "Boab (Adansonia gregorii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Gregory's Tree Historical Reserve, 1740 Victoria Hwy, Gregory NT (15km north-west of Timber Creek, within Judbarra / Gregory National Park)",
+        "latitude": -15.5665256,
+        "longitude": 130.3673103,
+        "neighbourhood": "Timber Creek, Victoria River District, Northern Territory"
+      },
+      "story": "This boab carries two dates cut into its bark: 13 October 1855 and 2 July 1856, the arrival and the departure of Augustus Charles Gregory's North Australia Expedition, which made its entrenchment camp beside the Victoria River here. The carvings are still readable.\n\nThe expedition's botanist was Ferdinand von Mueller, who became one of the most consequential botanists in Australian history, and who named the Australian boab Adansonia gregorii after the man leading the party. So the tree belongs to a species named for the expedition that carved it. That is a rarer credential than any age figure.\n\nNobody has published an age for it, and boabs are notoriously hard to date. The Northern Territory Heritage Register, which permanently declared the place in 1995, settles for calling it a living monument to the exploration of northern Australia.\n\nIt is also Ngalibinggag, a registered sacred site of the Ngaringman people, and the reserve is built around that: a boardwalk and interpretive panels ring the tree so that visitors keep off the ground at its base and do not touch the trunk. Looking is the whole visit, and nothing about the looking is restricted.\n\nThe reserve sits on the Victoria Highway about fifteen kilometres north-west of Timber Creek, three and a half hours' drive west of Katherine, with no public transport of any kind. Come in the dry.",
+      "best_time": {
+        "months": [
+          6,
+          7,
+          8
+        ],
+        "kind": "bare silhouette",
+        "label": "the dry season, when the leaves are off and the carved trunk is the whole tree"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Gregory's_Tree_Historical_Reserve",
+        "https://www.ntlis.nt.gov.au/heritageregister/f?p=103:303::::NO:P303_PLACE_ID:101"
+      ],
+      "access": "Free, public historical reserve beside the Victoria Highway; a marked track leads from a roadside cairn to the tree, which has its own boardwalk and interpretative panels built around it. It is also a registered Aboriginal sacred site to the Ngaringman people (who know it as Ngalibinggag), so the public boardwalk keeps visitors from touching or approaching the trunk directly; this does not restrict viewing.",
+      "transport": "No public transport; self-drive only, on the Victoria Highway roughly 15km north-west of Timber Creek, NT, and about 3.5 hours' drive west of Katherine.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

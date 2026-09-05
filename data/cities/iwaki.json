@@ -31,7 +31,7 @@
     {
       "id": "iwk_001",
       "name": "Nakakamado no Shidare Momiji",
-      "species": "Weeping Japanese Maple (Acer palmatum)",
+      "species": "Japanese Maple (Acer palmatum)",
       "age_estimate": "",
       "age_min": null,
       "age_max": null,
@@ -54,7 +54,9 @@
       "curation_status": "flagged",
       "notes": "New place: Iwaki, Fukushima, opened for this single tree under the 2026-08-31 single-famous-tree exception. Real one-way travel to Takahagi's only mapped tree (tkh_001, Arakawa Hachimangu Shrine) is 45 to 70 minutes door to door depending on mode, well past the day-trip boundary, so this does not join Takahagi as a place. Passes the destination test on its own merits: 90-year National Natural Monument status, an annual city-government autumn-colour tracking page, a dedicated 9-space visitor car park, and appearances as a named autumn-colour spot on major Japanese travel and weather platforms. No confirmed age: ja.wikipedia's 400-500 year figure is speculative, resting on a bridge claim to the temple's founding date that no source actually makes, so left unstated per the no-basis rule rather than sharpened into a number.",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "late November, when the maple turns red",
         "kind": "autumn colour"
       },

@@ -1,64 +1,80 @@
 {
- "_note": "German overlay for Zurich, hand-written 2026-08-22. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/zurich.json. Swiss orthography throughout, so no eszett: Strasse, gross, Fussweg. Zurich place names keep their own spelling (Platzspitz, Lindenhof, Belvoirpark, Hohlstrasse, Sihl, Limmat). Search terms follow how people in Zurich actually search: 'alte Baeume Zuerich', 'Mammutbaum Zuerich', and the city's own garden-monument vocabulary (Gartendenkmal, Gartendenkmalpflege).",
- "city": "Zürich",
- "title": "Alte Bäume in Zürich: Platanen, Mammutbäume, Linden",
- "meta_description": "Die Platanen von 1780 am Platzspitz, Alfred Eschers Mammutbaum von 1858, ein von einer Bank geretteter Mammutbaum und die Linden vom Lindenhof.",
- "intro": "Zürichs älteste Bäume haben überlebt, und zwar meist aus Gründen, die mit Naturschutz wenig zu tun haben. Am Platzspitz datiert ein farbiges Markierungssystem der Stadt jede Platane auf ihr Pflanzjahr, Braun steht für 1780. Ein Eisenbahnpionier setzte 1858 einen Mammutbaum zur Geburt seiner Tochter. Eine Privatbank verhandelte jahrelang mit einer Tramlinie, um einen zweiten Mammutbaum zu retten. Und auf dem Lindenhof wird seit über 550 Jahren nachgepflanzt, weshalb die Linden dort jünger sind, als der Ort vermuten lässt.",
- "question_title": "Was ist der älteste Baum Zürichs? (gepflanzt 1780)",
- "question_meta": "Der älteste belegte Baum Zürichs ist eine Platane am Platzspitz, gepflanzt 1780 und über das Farbsystem der Stadt datiert. Wo sie steht, und drei weitere.",
- "question_answer": "Der älteste belegte Baum Zürichs ist eine der braun markierten Platanen am Platzspitz, gepflanzt 1780. Die Stadt datiert die Platanen des Parks über ein einfaches Farbsystem am Stammfuss: Braun für 1780, Blau für 1806, Grün für 1836, Rot für 1960, Violett für 2005. Der Park liegt auf dem Landkeil, an dem Sihl und Limmat zusammenfliessen, wenige Gehminuten vom Hauptbahnhof.",
- "question_context": "Der Platzspitz, der Landkeil zwischen Sihl und Limmat, ist Zürichs zweitälteste öffentliche Parkanlage, und die Stadt hat seine Platanen nach Pflanzjahr farbig markiert: Braun für 1780, Blau für 1806, Grün für 1836, Rot für 1960, Violett für 2005. Die braun markierten Bäume von 1780 sind die ältesten belegten Exemplare des Parks und gehören zu den ältesten gesicherten Bäumen der Stadt. Sie standen bereits, als Zürich noch eine ummauerte Stadtrepublik war, gut ein Jahrzehnt bevor die Französische Revolution den Kontinent um sie herum neu ordnete. Mindestens eine dieser Platanen nennt die Gartendenkmalpflege der Stadt in ihren eigenen Unterlagen unbezahlbar, ohne je einen Frankenbetrag zu nennen. Als öffentlich genutzte Anlage ist der Platzspitz seit rund 450 Jahren dokumentiert, von den frühesten Anlagen ist oberirdisch aber kaum etwas erhalten. Die Platanen von 1780 sind die älteste Generation, die es noch gibt, markiert und nachgeführt statt geschätzt, was für historische Stadtbäume die Ausnahme ist.",
- "faq": [
-  {
-   "q": "Was ist der älteste Baum Zürichs?",
-   "a": "Eine der braun markierten Platanen am Platzspitz, gepflanzt 1780 und über das eigene Farbsystem der Stadt datiert, mit dem die Platanen des Parks nach Pflanzjahr gekennzeichnet sind."
-  },
-  {
-   "q": "Warum hat eine Bank für einen Baum gekämpft?",
-   "a": "Die Altstetter Büros von Julius Bär wurden um einen rund 120 Jahre alten Riesenmammutbaum an der Hohlstrasse herum gebaut. Als um 2012 eine neue Tramlinie den Baum bedrohte, verhandelte die Bank jahrelang, statt ihn fällen zu lassen, und setzte sich durch."
-  },
-  {
-   "q": "Wer hat den Mammutbaum im Belvoirpark gepflanzt?",
-   "a": "Alfred Escher, Eisenbahnpionier und Gründer jener Bank, aus der die Credit Suisse wurde, sowie der heutigen ETH Zürich. Er pflanzte ihn 1858 zur Geburt seiner Tochter Lydia."
-  },
-  {
-   "q": "Sind die Linden auf dem Lindenhof wirklich 500 Jahre alt?",
-   "a": "Die Tradition schon. Auf dem Lindenhof werden seit mindestens 1474 Linden gepflanzt, aber ein Sturm zerstörte 1861 den historischen Bestand. Die meisten Bäume von heute stammen aus der Nachpflanzung der 1860er und 1870er Jahre, dazu eine von 1971 für das Frauenstimmrecht."
+  "_note": "German overlay for Zurich, hand-written 2026-08-22. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/zurich.json. Swiss orthography throughout, so no eszett: Strasse, gross, Fussweg. Zurich place names keep their own spelling (Platzspitz, Lindenhof, Belvoirpark, Hohlstrasse, Sihl, Limmat). Search terms follow how people in Zurich actually search: 'alte Baeume Zuerich', 'Mammutbaum Zuerich', and the city's own garden-monument vocabulary (Gartendenkmal, Gartendenkmalpflege).",
+  "city": "Zürich",
+  "title": "Alte Bäume in Zürich: Platanen, Mammutbäume, Linden",
+  "meta_description": "Die Platanen von 1780 am Platzspitz, Alfred Eschers Mammutbaum von 1858, ein von einer Bank geretteter Mammutbaum und die Linden vom Lindenhof.",
+  "intro": "Zürichs älteste Bäume haben überlebt, und zwar meist aus Gründen, die mit Naturschutz wenig zu tun haben. Am Platzspitz datiert ein farbiges Markierungssystem der Stadt jede Platane auf ihr Pflanzjahr, Braun steht für 1780. Ein Eisenbahnpionier setzte 1858 einen Mammutbaum zur Geburt seiner Tochter. Eine Privatbank verhandelte jahrelang mit einer Tramlinie, um einen zweiten Mammutbaum zu retten. Und auf dem Lindenhof wird seit über 550 Jahren nachgepflanzt, weshalb die Linden dort jünger sind, als der Ort vermuten lässt. Zwei weitere Bäume sind Tagesausflüge: eine alte Eiche bei Marthalen und die elf Meter starke Linde von Linn.",
+  "question_title": "Was ist der älteste Baum Zürichs? (gepflanzt 1780)",
+  "question_meta": "Der älteste belegte Baum Zürichs ist eine Platane am Platzspitz, gepflanzt 1780 und über das Farbsystem der Stadt datiert. Wo sie steht, und fünf weitere.",
+  "question_answer": "Der älteste belegte Baum Zürichs ist eine der braun markierten Platanen am Platzspitz, gepflanzt 1780. Die Stadt datiert die Platanen des Parks über ein einfaches Farbsystem am Stammfuss: Braun für 1780, Blau für 1806, Grün für 1836, Rot für 1960, Violett für 2005. Der Park liegt auf dem Landkeil, an dem Sihl und Limmat zusammenfliessen, wenige Gehminuten vom Hauptbahnhof.",
+  "question_context": "Der Platzspitz, der Landkeil zwischen Sihl und Limmat, ist Zürichs zweitälteste öffentliche Parkanlage, und die Stadt hat seine Platanen nach Pflanzjahr farbig markiert: Braun für 1780, Blau für 1806, Grün für 1836, Rot für 1960, Violett für 2005. Die braun markierten Bäume von 1780 sind die ältesten belegten Exemplare des Parks und gehören zu den ältesten gesicherten Bäumen der Stadt. Sie standen bereits, als Zürich noch eine ummauerte Stadtrepublik war, gut ein Jahrzehnt bevor die Französische Revolution den Kontinent um sie herum neu ordnete. Mindestens eine dieser Platanen nennt die Gartendenkmalpflege der Stadt in ihren eigenen Unterlagen unbezahlbar, ohne je einen Frankenbetrag zu nennen. Als öffentlich genutzte Anlage ist der Platzspitz seit rund 450 Jahren dokumentiert, von den frühesten Anlagen ist oberirdisch aber kaum etwas erhalten. Die Platanen von 1780 sind die älteste Generation, die es noch gibt, markiert und nachgeführt statt geschätzt, was für historische Stadtbäume die Ausnahme ist.",
+  "faq": [
+    {
+      "q": "Was ist der älteste Baum Zürichs?",
+      "a": "Eine der braun markierten Platanen am Platzspitz, gepflanzt 1780 und über das eigene Farbsystem der Stadt datiert, mit dem die Platanen des Parks nach Pflanzjahr gekennzeichnet sind."
+    },
+    {
+      "q": "Warum hat eine Bank für einen Baum gekämpft?",
+      "a": "Die Altstetter Büros von Julius Bär wurden um einen rund 120 Jahre alten Riesenmammutbaum an der Hohlstrasse herum gebaut. Als um 2012 eine neue Tramlinie den Baum bedrohte, verhandelte die Bank jahrelang, statt ihn fällen zu lassen, und setzte sich durch."
+    },
+    {
+      "q": "Wer hat den Mammutbaum im Belvoirpark gepflanzt?",
+      "a": "Alfred Escher, Eisenbahnpionier und Gründer jener Bank, aus der die Credit Suisse wurde, sowie der heutigen ETH Zürich. Er pflanzte ihn 1858 zur Geburt seiner Tochter Lydia."
+    },
+    {
+      "q": "Sind die Linden auf dem Lindenhof wirklich 500 Jahre alt?",
+      "a": "Die Tradition schon. Auf dem Lindenhof werden seit mindestens 1474 Linden gepflanzt, aber ein Sturm zerstörte 1861 den historischen Bestand. Die meisten Bäume von heute stammen aus der Nachpflanzung der 1860er und 1870er Jahre, dazu eine von 1971 für das Frauenstimmrecht."
+    }
+  ],
+  "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche, Schweizer Rechtschreibung ohne Eszett.",
+  "trees": {
+    "zur_001": {
+      "name": "Die Platanen von 1780 am Platzspitz",
+      "species": "Ahornblättrige Platane (Platanus x acerifolia)",
+      "age_estimate": "rund 246 Jahre",
+      "access": "Kostenlos, frei zugänglich, Platzspitz (öffentlicher Park, jederzeit offen)",
+      "transport": "Zürich Hauptbahnhof, wenige Gehminuten",
+      "story": "Am Platzspitz lässt sich das Alter einer Platane an einem farbigen Marker ablesen. Braun steht für 1780, Blau für 1806, Grün für 1836, Rot für 1960 und Violett für 2005. Der Park ist Zürichs zweitälteste öffentliche Anlage und liegt auf dem Landkeil, an dem Sihl und Limmat zusammenfliessen; die Gartendenkmalpflege der Stadt hat seine Platanen so Generation für Generation aufgeschlüsselt. Zur braunen Gruppe von 1780 gehört mindestens ein Exemplar, das die Stadt in ihren eigenen Unterlagen als unbezahlbar bezeichnet, ohne je einen Frankenbetrag zu nennen. Dieser Baum stand bereits, als Zürich noch eine ummauerte Stadtrepublik war, und der Park ist in den zwei Jahrhunderten danach mehrfach um ihn herum umgebaut und neu bepflanzt worden. Als öffentlich genutzte Anlage ist der Platzspitz seit rund 450 Jahren dokumentiert, von den frühesten Anlagen ist oberirdisch aber kaum etwas übrig. Die Platanen von 1780 gehören damit selbst schon zu diesem langen Umbau und sind kein Rest der Urfassung. Welche Platanenart hier genau wächst, hält keine der Quellen fest; die Ahornblättrige Platane ist die naheliegende Annahme für eine mitteleuropäische Parkpflanzung dieser Zeit, mehr nicht. Wer die Farben kennt, braucht hier keinen Führer: Ein Blick auf den Marker am Stammfuss datiert den Baum, und aus dem Park wird ein begehbarer Zeitstrahl des Zürcher Stadtgärtnerns seit dem späten 18. Jahrhundert."
+    },
+    "zur_002": {
+      "name": "Alfred Eschers Mammutbaum",
+      "species": "Riesenmammutbaum (Sequoiadendron giganteum)",
+      "age_estimate": "über 165 Jahre",
+      "access": "Kostenlos, frei zugänglich, Belvoirpark (öffentlicher Park, jederzeit offen)",
+      "transport": "Tram bis Bahnhof Enge oder Brunaustrasse, danach kurz zu Fuss",
+      "story": "Alfred Escher baute das schweizerische Eisenbahnnetz, gründete jene Bank, aus der die Credit Suisse wurde, und die Hochschule, die heute ETH Zürich heisst. Für viel anderes blieb ihm nach allem, was überliefert ist, kaum Zeit. 1858 machte er offenbar eine Ausnahme und pflanzte diesen Riesenmammutbaum im Belvoirpark, dem Landsitz seiner Familie am See, zur Geburt seiner einzigen Tochter Lydia. Der Baum ist inzwischen der älteste gesicherte Riesenmammutbaum Zürichs, deutlich über 160 Jahre alt. Die Art stammt aus Kalifornien, verträgt mitteleuropäischen Frost weit besser als der verwandte Küstenmammutbaum und wird in ihrer Heimat über 3000 Jahre alt, was selbst dieses Exemplar aus Eschers Zeit nach den Massstäben seiner eigenen Art zu einem Jungbaum macht. Der Belvoirpark begann als Rebhang von Eschers Grossvater, 1826 gekauft und rund um eine neue Villa mit damals exotischen nordamerikanischen Arten bepflanzt. Seit 1901 gehört das Gelände der Stadt Zürich. Aus dem Privatgarten einer der mächtigsten Familien des Landes ist damit ein öffentlicher Park geworden, in den jeder hineinspazieren und unter einem Baum stehen kann, den ein vielbeschäftigter Mann für die Geburt seines Kindes in die Erde gesetzt hat."
+    },
+    "zur_003": {
+      "name": "Die Linden vom Lindenhof",
+      "species": "Winterlinde (Tilia cordata)",
+      "age_estimate": "55 bis 165 Jahre, mehrere Pflanzgenerationen",
+      "access": "Kostenlos, frei zugänglich, Lindenhof (öffentlicher Platz, jederzeit offen)",
+      "transport": "Zürich Hauptbahnhof oder Tramhaltestelle Rennweg, kurzer Fussweg bergauf",
+      "story": "Zürichs Geschichte beginnt, so heisst es meist, auf diesem Hügel: römischer Zollposten, später karolingische Kaiserpfalz. Linden werden hier seit mindestens 1474 gepflanzt, als eine Chronik 52 Bäume auf einmal verzeichnet. Keiner davon steht noch. Ein schwerer Sturm zerstörte 1861 einen grossen Teil des historischen Bestands, und als man die Linden danach durch andere Arten ersetzen wollte, wehrten sich die Zürcherinnen und Zürcher so entschieden dagegen, dass die Ersatzbäume innert 15 Jahren wieder ausgegraben und durch Linden ersetzt wurden. Das meiste, was heute auf dem Lindenhof wächst, stammt aus dieser Nachpflanzung der 1860er und 1870er Jahre. Die ältesten Einzelbäume sind damit gut 150 Jahre alt und nicht die 500 und mehr, die der Name des Platzes und sein Ruf nahelegen. Ein Baum fällt in die andere Richtung aus der Reihe: 1971, im Jahr, in dem die Schweizerinnen auf Bundesebene endlich das Stimmrecht erhielten, wurde hier eigens dafür eine neue Linde gesetzt. Welche Lindenart in welcher Epoche in die Erde kam, hält keine Quelle fest; die Winterlinde ist die übliche Wahl für solche Plätze. Das eigentliche Alter des Lindenhofs ist das Alter der Nachpflanztradition und nicht das eines einzelnen Stammes, der heute dort steht."
+    },
+    "zur_004": {
+      "name": "Der Mammutbaum an der Hohlstrasse",
+      "species": "Riesenmammutbaum (Sequoiadendron giganteum)",
+      "age_estimate": "rund 120 Jahre",
+      "access": "Von der Hohlstrasse aus gut sichtbar; der Baum steht auf dem Areal der Bank, direkt am öffentlichen Trottoir",
+      "transport": "Bahnhof Zürich Altstetten, wenige Gehminuten",
+      "story": "Dieser Riesenmammutbaum stand Jahrzehnte vor dem siebengeschossigen Bankgebäude da, das heute über ihm aufragt, und hätte diesen Vorsprung trotzdem fast verloren. Um 2012 sah die Planung der Limmattalbahn, einer neuen Tramlinie durch Zürich Altstetten, vor, den rund 120 Jahre alten Baum für die verbreiterte Strasse zu fällen. Julius Bär, deren Altstetter Büros um den Mammutbaum herum gebaut worden waren und nicht umgekehrt, verhandelte jahrelang mit den Betreibern der Bahn, statt den Verlust hinzunehmen. Am Ende wurde die Linienführung angepasst und der Baum blieb stehen. Er misst heute knapp 15 Meter. Für die Hohlstrasse liegt inzwischen ein vollständiger Masterplan zur Umgestaltung vor, den der Zürcher Stadtrat 2026 beschlossen hat und der den Mammutbaum ausdrücklich als zu erhaltendes Element nennt. Dass eine Bank einen Baum vor einer Tramlinie rettet, ist nicht die Geschichte, die man für einen der ältesten Mammutbäume Zürichs erwarten würde, und geschützt hat ihn weder ein Naturschutzgebiet noch ein Inventareintrag. Es lag daran, dass die Eigentümer des Nachbargrundstücks den Baum die Jahre der Verhandlung wert fanden, was eine eigene Art von Beständigkeit ist. Vom Trottoir aus ist er gut zu sehen, das Areal selbst gehört der Bank."
+    },
+    "mar_001": {
+      "name": "Die Eiche von Marthalen",
+      "species": "Eiche (Quercus sp.)",
+      "age_estimate": "über 360 Jahre",
+      "access": "Kostenlos, öffentlicher Wald (Abistwald). Der Weg dorthin führt über den Fussballplatz des FC Ellikon/Marthalen; kein Tor, kein Ticket, keine Einschränkung.",
+      "transport": "Bahnhof Marthalen (Linie Zürich-Schaffhausen, rund 25 bis 30 Minuten ab Zürich HB), danach zu Fuss in den Abistwald.",
+      "story": "Der Weg zu einer der ältesten Eichen der Schweiz führt über einen Fussballplatz, und das Dorfmuseum, das den Baum dokumentiert, rät scherzhaft, gleich einen Ball mitzunehmen.\n\nDas Ortsmuseum Marthalen gibt die Eiche mit über 360 Jahren an, bei einem Stammdurchmesser von 1,80 Metern, also rund 5,6 Metern Umfang, im Abistwald nördlich des Dorfes. Dieses Museum ist die einzige echte Quelle. Regionale Tourismusseiten wiederholen dieselben Zahlen, was keine zweite Meinung ist, also gilt das Alter als Schätzung des Museums und nicht als gesicherte Zahl.\n\nDer Wald ringsum liefert die Bestätigung. Das Forstinventar der Gemeinde verzeichnet hier eine ungewöhnliche Häufung sehr starker Stämme, über 112 Zentimeter Brusthöhendurchmesser und überwiegend Eichen, eine Kategorie mit nur wenigen Dutzend Einträgen im ganzen Kanton. Das ist kein einzelner Überlebender in einer Plantage, sondern der grösste Baum in einem Wald, der seit langem grosse Bäume hervorbringt. Im Gemeindewappen steht eine Eiche.\n\nWelche Eichenart es genau ist, bleibt offen. Quercus robur und Quercus petraea wachsen beide hier, und keine gefundene Quelle legt sich fest. Wer die beiden an Fruchtstiel und Blattgrund unterscheiden kann, klärt das vor Ort für uns.\n\nMarthalen liegt 25 bis 30 Minuten mit dem Direktzug von Zürich entfernt."
+    },
+    "boz_001": {
+      "name": "Die Linde von Linn",
+      "species": "Sommerlinde (Tilia platyphyllos)",
+      "age_estimate": "rund 800 Jahre",
+      "access": "Kostenlos, öffentlich zugänglich. Direkt an der Bushaltestelle Boezberg, Linn, am Dorfeingang; auch über einen markierten 20-Minuten-Weg ab Boezberg-Neustalden erreichbar. Aargau Tourismus nennt den Ort sehr beliebt, ein Werktag oder ein früher Sonntag ist ruhiger.",
+      "transport": "Ab Zürich: Zug bis Brugg, danach lokale Verbindung Richtung Boezberg/Linn; insgesamt rund 45 bis 60 Minuten pro Weg.",
+      "story": "Eine örtliche Sage sagt: Wenn der Schatten dieser Linde das Schloss Habsburg nicht mehr erreicht, geht die Welt unter. Der Baum misst elf Meter im Umfang, ist 25 Meter hoch und rund 800 Jahre alt, gilt nach der Lesart des Kantons als mächtigster Baum des Aargaus und wäre ein junger Baum gewesen, als Rudolf von Habsburg, Begründer der Dynastie, zur Welt kam.\n\nEine zweite Sage ist beliebter und weniger haltbar: Überlebende der Pest hätten die Linde im 16. oder 17. Jahrhundert gepflanzt. Das Alter des Baumes widerlegt das um mehrere Jahrhunderte. Beide Geschichten lohnen sich, nur eine kann stimmen, und entschieden wird die Sache vom Baum selbst.\n\nElf Meter Umfang sind selbst für eine Sommerlinde enorm, eine Art, die im Alter verwächst, aufreisst und sich neu bewurzelt, bis daraus ein gefurchter, mehrstämmiger Koloss wird. Wer davorsteht, sieht weniger einen Stamm als eine kleine Ruine mit Laub obendrauf.\n\nDie Linde steht am Dorfeingang von Linn, direkt an der Bushaltestelle. Ab Zürich ist das eine richtige Reise und kein Spaziergang: Zug bis Brugg, danach eine lokale Verbindung, 45 bis 60 Minuten pro Weg."
+    }
   }
- ],
- "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche, Schweizer Rechtschreibung ohne Eszett.",
- "trees": {
-  "zur_001": {
-   "name": "Die Platanen von 1780 am Platzspitz",
-   "species": "Ahornblättrige Platane (Platanus x acerifolia)",
-   "age_estimate": "rund 246 Jahre",
-   "access": "Kostenlos, frei zugänglich, Platzspitz (öffentlicher Park, jederzeit offen)",
-   "transport": "Zürich Hauptbahnhof, wenige Gehminuten",
-   "story": "Am Platzspitz lässt sich das Alter einer Platane an einem farbigen Marker ablesen. Braun steht für 1780, Blau für 1806, Grün für 1836, Rot für 1960 und Violett für 2005. Der Park ist Zürichs zweitälteste öffentliche Anlage und liegt auf dem Landkeil, an dem Sihl und Limmat zusammenfliessen; die Gartendenkmalpflege der Stadt hat seine Platanen so Generation für Generation aufgeschlüsselt. Zur braunen Gruppe von 1780 gehört mindestens ein Exemplar, das die Stadt in ihren eigenen Unterlagen als unbezahlbar bezeichnet, ohne je einen Frankenbetrag zu nennen. Dieser Baum stand bereits, als Zürich noch eine ummauerte Stadtrepublik war, und der Park ist in den zwei Jahrhunderten danach mehrfach um ihn herum umgebaut und neu bepflanzt worden. Als öffentlich genutzte Anlage ist der Platzspitz seit rund 450 Jahren dokumentiert, von den frühesten Anlagen ist oberirdisch aber kaum etwas übrig. Die Platanen von 1780 gehören damit selbst schon zu diesem langen Umbau und sind kein Rest der Urfassung. Welche Platanenart hier genau wächst, hält keine der Quellen fest; die Ahornblättrige Platane ist die naheliegende Annahme für eine mitteleuropäische Parkpflanzung dieser Zeit, mehr nicht. Wer die Farben kennt, braucht hier keinen Führer: Ein Blick auf den Marker am Stammfuss datiert den Baum, und aus dem Park wird ein begehbarer Zeitstrahl des Zürcher Stadtgärtnerns seit dem späten 18. Jahrhundert."
-  },
-  "zur_002": {
-   "name": "Alfred Eschers Mammutbaum",
-   "species": "Riesenmammutbaum (Sequoiadendron giganteum)",
-   "age_estimate": "über 165 Jahre",
-   "access": "Kostenlos, frei zugänglich, Belvoirpark (öffentlicher Park, jederzeit offen)",
-   "transport": "Tram bis Bahnhof Enge oder Brunaustrasse, danach kurz zu Fuss",
-   "story": "Alfred Escher baute das schweizerische Eisenbahnnetz, gründete jene Bank, aus der die Credit Suisse wurde, und die Hochschule, die heute ETH Zürich heisst. Für viel anderes blieb ihm nach allem, was überliefert ist, kaum Zeit. 1858 machte er offenbar eine Ausnahme und pflanzte diesen Riesenmammutbaum im Belvoirpark, dem Landsitz seiner Familie am See, zur Geburt seiner einzigen Tochter Lydia. Der Baum ist inzwischen der älteste gesicherte Riesenmammutbaum Zürichs, deutlich über 160 Jahre alt. Die Art stammt aus Kalifornien, verträgt mitteleuropäischen Frost weit besser als der verwandte Küstenmammutbaum und wird in ihrer Heimat über 3000 Jahre alt, was selbst dieses Exemplar aus Eschers Zeit nach den Massstäben seiner eigenen Art zu einem Jungbaum macht. Der Belvoirpark begann als Rebhang von Eschers Grossvater, 1826 gekauft und rund um eine neue Villa mit damals exotischen nordamerikanischen Arten bepflanzt. Seit 1901 gehört das Gelände der Stadt Zürich. Aus dem Privatgarten einer der mächtigsten Familien des Landes ist damit ein öffentlicher Park geworden, in den jeder hineinspazieren und unter einem Baum stehen kann, den ein vielbeschäftigter Mann für die Geburt seines Kindes in die Erde gesetzt hat."
-  },
-  "zur_003": {
-   "name": "Die Linden vom Lindenhof",
-   "species": "Winterlinde (Tilia cordata)",
-   "age_estimate": "55 bis 165 Jahre, mehrere Pflanzgenerationen",
-   "access": "Kostenlos, frei zugänglich, Lindenhof (öffentlicher Platz, jederzeit offen)",
-   "transport": "Zürich Hauptbahnhof oder Tramhaltestelle Rennweg, kurzer Fussweg bergauf",
-   "story": "Zürichs Geschichte beginnt, so heisst es meist, auf diesem Hügel: römischer Zollposten, später karolingische Kaiserpfalz. Linden werden hier seit mindestens 1474 gepflanzt, als eine Chronik 52 Bäume auf einmal verzeichnet. Keiner davon steht noch. Ein schwerer Sturm zerstörte 1861 einen grossen Teil des historischen Bestands, und als man die Linden danach durch andere Arten ersetzen wollte, wehrten sich die Zürcherinnen und Zürcher so entschieden dagegen, dass die Ersatzbäume innert 15 Jahren wieder ausgegraben und durch Linden ersetzt wurden. Das meiste, was heute auf dem Lindenhof wächst, stammt aus dieser Nachpflanzung der 1860er und 1870er Jahre. Die ältesten Einzelbäume sind damit gut 150 Jahre alt und nicht die 500 und mehr, die der Name des Platzes und sein Ruf nahelegen. Ein Baum fällt in die andere Richtung aus der Reihe: 1971, im Jahr, in dem die Schweizerinnen auf Bundesebene endlich das Stimmrecht erhielten, wurde hier eigens dafür eine neue Linde gesetzt. Welche Lindenart in welcher Epoche in die Erde kam, hält keine Quelle fest; die Winterlinde ist die übliche Wahl für solche Plätze. Das eigentliche Alter des Lindenhofs ist das Alter der Nachpflanztradition und nicht das eines einzelnen Stammes, der heute dort steht."
-  },
-  "zur_004": {
-   "name": "Der Mammutbaum an der Hohlstrasse",
-   "species": "Riesenmammutbaum (Sequoiadendron giganteum)",
-   "age_estimate": "rund 120 Jahre",
-   "access": "Von der Hohlstrasse aus gut sichtbar; der Baum steht auf dem Areal der Bank, direkt am öffentlichen Trottoir",
-   "transport": "Bahnhof Zürich Altstetten, wenige Gehminuten",
-   "story": "Dieser Riesenmammutbaum stand Jahrzehnte vor dem siebengeschossigen Bankgebäude da, das heute über ihm aufragt, und hätte diesen Vorsprung trotzdem fast verloren. Um 2012 sah die Planung der Limmattalbahn, einer neuen Tramlinie durch Zürich Altstetten, vor, den rund 120 Jahre alten Baum für die verbreiterte Strasse zu fällen. Julius Bär, deren Altstetter Büros um den Mammutbaum herum gebaut worden waren und nicht umgekehrt, verhandelte jahrelang mit den Betreibern der Bahn, statt den Verlust hinzunehmen. Am Ende wurde die Linienführung angepasst und der Baum blieb stehen. Er misst heute knapp 15 Meter. Für die Hohlstrasse liegt inzwischen ein vollständiger Masterplan zur Umgestaltung vor, den der Zürcher Stadtrat 2026 beschlossen hat und der den Mammutbaum ausdrücklich als zu erhaltendes Element nennt. Dass eine Bank einen Baum vor einer Tramlinie rettet, ist nicht die Geschichte, die man für einen der ältesten Mammutbäume Zürichs erwarten würde, und geschützt hat ihn weder ein Naturschutzgebiet noch ein Inventareintrag. Es lag daran, dass die Eigentümer des Nachbargrundstücks den Baum die Jahre der Verhandlung wert fanden, was eine eigene Art von Beständigkeit ist. Vom Trottoir aus ist er gut zu sehen, das Areal selbst gehört der Bank."
-  }
- }
 }

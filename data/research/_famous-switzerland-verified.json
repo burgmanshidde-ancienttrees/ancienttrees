@@ -4,9 +4,15 @@
     "name": "The Old Yew of Cremines (If millenaire)",
     "species": "European Yew (Taxus baccata)",
     "age_estimate": "roughly 1500 years",
-    "age_min": 1000, "age_max": 1500,
+    "age_min": 1000,
+    "age_max": 1500,
     "girth_cm": 425,
-    "location": {"address": "Foret du Maljon, above Cremines, Bernese Jura", "latitude": 47.272708, "longitude": 7.471473, "neighbourhood": "Maljon forest, Cremines"},
+    "location": {
+      "address": "Foret du Maljon, above Cremines, Bernese Jura",
+      "latitude": 47.272708,
+      "longitude": 7.471473,
+      "neighbourhood": "Maljon forest, Cremines"
+    },
     "verified_sources": [
       "https://cremines.ch/if_millenaire.html",
       "https://www.baumkunde.de/baumregister/2085-die_alte_dame_von_cremines_eibe/"
@@ -15,17 +21,23 @@
     "transport": "No public transport nearby; nearest station is Cremines on the Moutier-Solothurn line, then on foot up into the Maljon forest (steep, unmarked, roughly 45-60 min walk based on hiking-site descriptions; not verified by us step by step).",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "Two independent sources agree closely: the Cremines commune's own page (cremines.ch/if_millenaire.html) calls it 'le plus vieil arbre de Suisse' (the oldest tree in Switzerland), designated 'arbre monumental' by the Bern canton forestry division (Division forestiere du Canton de Berne), estimated age 'environ 1500 ans'. Baumkunde.de's register (entry 2085, last updated 2026-01-26, i.e. reads as recently maintained) independently gives the same coordinates (E7 28.2884' / N47 16.3625', converted here to decimal), age 1500 years, girth 4.25m, condition 'vital' (alive), access 'publicly accessible'. A WebSearch summary of a Solothurner Zeitung feature ('1500 Jahre alt: zu Besuch bei der alten Dame von Cremines, dem aeltesten Baum der Schweiz') corroborates the same figures but the article itself sits behind a Cloudflare challenge and could not be fetched directly, so its specific quotes are not used per the search-summary-is-a-lead rule; only the commune and baumkunde pages are cited as sources. The commune page also lists TV coverage as recent as July 2023 (Canal Alpha), which is the best evidence of continued presence: alive as of at least mid-2023. Exact ring-count dating is impossible because coring the hollow, damage-prone trunk is not done; the 1500-year figure is the commune's and dendrology community's own estimate, not derived by us. Species is common/European yew (Taxus baccata, 'Gemeine Eibe' / 'if'). The tree is genuinely remarkable: candidate for oldest living tree in Switzerland, which clears the single-tree destination bar on its own. Container: no published Swiss city sits within a reasonable day trip (Geneva and Zurich are both 100km+ away); this stands alone.",
-    "container": "new place: Cremines"
+    "container": "new place: Cremines",
+    "story": "Switzerland's oldest living tree has no path, no signpost and no bench, and the commune that owns it seems content to keep it that way. The yew in the Foret du Maljon above Cremines is put at around 1500 years old by the commune itself and by the Bern canton forestry division, which designated it an arbre monumental. Cremines calls it flatly le plus vieil arbre de Suisse.\n\nNobody has counted its rings. You cannot core a hollow, already damaged trunk without risking the thing you are trying to date, so the 1500 years is the settled estimate of the commune and the dendrological community rather than a measurement anyone took. The German tree register that also carries it lists 4.25 metres round and its condition as vital, and Swiss television filmed it as recently as 2023, which is the best evidence anyone has that it is still standing.\n\nIf the figure is even roughly right, this yew was young while the western Roman empire was coming apart, and it has been in the same wood through everything since, logged, replanted and walked over for fifteen centuries without anybody getting around to cutting it.\n\nFinding it is the visit. It sits under rocks off the marked paths, and the commune's own page says plainly that it is hard to find. Take the coordinates, take an hour, and expect to search."
   },
   {
     "id": "mar_001",
     "name": "The Marthalen Oak",
     "species": "Oak (Quercus sp.)",
     "age_estimate": "over 360 years",
-    "age_min": 360, "age_max": 450,
+    "age_min": 360,
+    "age_max": 450,
     "girth_cm": 560,
-    "location": {"address": "Abistwald forest, reached via the FC Ellikon/Marthalen football pitch, Marthalen", "latitude": 47.640408, "longitude": 8.648343, "neighbourhood": "Abistwald, Marthalen"},
+    "location": {
+      "address": "Abistwald forest, reached via the FC Ellikon/Marthalen football pitch, Marthalen",
+      "latitude": 47.640408,
+      "longitude": 8.648343,
+      "neighbourhood": "Abistwald, Marthalen"
+    },
     "verified_sources": [
       "https://www.ortsmuseum-marthalen.ch/entdecken/"
     ],
@@ -33,16 +45,22 @@
     "transport": "Marthalen railway station (Zurich-Schaffhausen line, roughly 25-30 min from Zurich HB) then on foot into the Abistwald, direction and distance not independently verified by us.",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "Only one real independent source found despite several searches: the Ortsmuseum Marthalen (the village's own heritage museum)'s 'Entdecken' page, which calls it 'eine der aeltesten Eichen der Schweiz (ueber 360 Jahre)' (one of the oldest oaks in Switzerland, over 360 years), diameter 1.80m. Diameter times pi gives ~5.65m, which matches the circumference figure (~5.60m) repeated across several tourism/regional pages (Zuercher Weinland region, Andelfinger Zeitung mentions), all of which read as downstream copies of the same museum page rather than independent verification, so they are not counted as a second source. The municipality's own forest-inventory page (marthalen.ch) independently confirms the Abistwald holds an unusual number of very large trees ('Stufe 25', diameter over 112cm at breast height, vorwiegend Eichen/predominantly oaks, 44 stems canton-wide category') without naming this specific tree, which supports plausibility but is not itself a second source for this individual tree. Species could not be pinned to a specific oak (Quercus robur vs petraea); left as Quercus sp. per the lead's own genus-only basis, page should ask the reader. Coordinates are from three Commons photographs (panoramio geotags) clustering at this point, which is mapped-photo-level evidence per the aerial/photo evidence standard, so marked confirmed. No dated recent source found to confirm the tree is alive today beyond the museum page itself (undated, but reads as the museum's current visitor guide); flagged for that reason as well as for the single-source evidence. The municipality's own coat of arms depicts an oak, which is suggestive of local significance but not itself evidence about this specific tree. Container: Marthalen sits roughly 30km / about 25-30 minutes by direct train from Zurich (Zurich-Schaffhausen line), which is within the day-trip boundary; recommend it join Zurich's page as a day-trip addition, labeled honestly as Marthalen with its real travel time, the way Blarney and Fota join Cork.",
-    "container": "zurich (day trip, ~25-30 min by train, label as Marthalen)"
+    "container": "zurich (day trip, ~25-30 min by train, label as Marthalen)",
+    "story": "The walk to one of the oldest oaks in Switzerland crosses a football pitch, and the village museum that documents the tree advises bringing a ball.\n\nThe Ortsmuseum Marthalen puts the oak at over 360 years old, with a trunk 1.8 metres across, roughly 5.6 metres round, standing in the Abistwald north of the village. That museum is the only real source on it. Regional tourism pages repeat the same figures back, which is not the same thing as a second opinion, so read the age as the museum's estimate rather than a settled fact.\n\nThe forest around it does the corroborating. Marthalen's own timber inventory records an unusual concentration of very large stems here, over 112 centimetres in diameter at breast height and predominantly oak, a category with only a few dozen entries in the whole canton. This is not a lone survivor in a plantation. It is the biggest tree in a wood that has been growing big trees for a long time, in a village whose coat of arms is an oak.\n\nWhich oak it is remains open. Quercus robur and Quercus petraea both grow here and no source we found commits either way. If you can tell them apart by the acorn stalks and the leaf bases, you can settle this for us on the spot.\n\nMarthalen is 25 to 30 minutes by direct train from Zurich."
   },
   {
     "id": "vny_001",
     "name": "The Plane Tree of the Ile de Peilz",
     "species": "London Plane (Platanus x acerifolia)",
     "age_estimate": "roughly 175 years",
-    "age_min": 170, "age_max": 180,
-    "location": {"address": "Viewed from the Quai Grand Rive shoreline, Villeneuve, looking out to the Ile de Peilz islet in Lake Geneva", "latitude": 46.397505, "longitude": 6.923854, "neighbourhood": "Villeneuve lakefront"},
+    "age_min": 170,
+    "age_max": 180,
+    "location": {
+      "address": "Viewed from the Quai Grand Rive shoreline, Villeneuve, looking out to the Ile de Peilz islet in Lake Geneva",
+      "latitude": 46.397505,
+      "longitude": 6.923854,
+      "neighbourhood": "Villeneuve lakefront"
+    },
     "verified_sources": [
       "https://en.wikipedia.org/wiki/%C3%8Ele_de_Peilz",
       "https://2tout2rien.fr/ile-de-peilz-lac-leman/"
@@ -51,16 +69,22 @@
     "transport": "Villeneuve VD railway station, then a short walk along the lakefront quay.",
     "location_precision": "approximate",
     "curation_status": "ai_generated",
-    "verify_notes": "Two independent sources agree: an English Wikipedia article on the islet itself, and a 2026-current French travel-blog piece (2tout2rien.fr) that cites a 2023 certified-arborist health assessment finding the tree 'globalement en bonne sante' (generally healthy) with some decay present but functional, which is the best available 'alive now' evidence and is dated within the last few years. The islet, roughly 20-77 sqm depending on source, is the smallest and only natural island in Lake Geneva; a rock built up with earth by Villeneuve residents (local tradition dates this to 1797, unconfirmed by primary sources). Three plane trees were planted in 1851 (this is a documented planting date for these specific trees, not a park-wide bridge claim); by 1970 only one plane and a sickly horse-chestnut remained, and the chestnut has since died, leaving the single plane tree alone today, hence the ~175-year age used here. Wikipedia gives the island's own coordinates as 46 24'00\"N 6 54'50\"E (46.4000, 6.9139), about 800m from the Commons-photo-geotagged coordinate used here, which reads as the shore photography spot rather than the island itself; location_precision is 'approximate' because this pins the public viewing shoreline, not a confirmed exact spot, and the exact best vantage (Quai Grand Rive) was named by a search summary rather than fetched directly, so treat the coordinate as indicative only. Species is London Plane per hard rule 9's canonical naming (Wikipedia's 'platane' / 2tout2rien's 'platane'). Genuinely a single-tree destination: referenced in Byron's The Prisoner of Chillon (1816) and Hans Christian Andersen's The Ice-Maiden (1861), and has become a real Instagram photography destination since 2021 per Wikipedia. Not ancient (only ~175 years) but qualifies on visual spectacle, a real superlative (smallest/only natural island in the lake) and documented literary fame rather than age. This is a view-only entry per the 2026-08-13 ruling: the pin marks the viewing place, not the trunk, and access says plainly the island cannot be reached.",
-    "container": "new place: Villeneuve (Ile de Peilz)"
+    "container": "new place: Villeneuve (Ile de Peilz)",
+    "story": "Lake Geneva has exactly one natural island, it is roughly the size of a large living room, and the single tree standing on it is one you are not allowed to reach.\n\nThe Ile de Peilz is a rock off Villeneuve that local people built up with earth, by tradition in 1797. Three plane trees went in in 1851. By 1970 one plane and an ailing horse chestnut were left; the chestnut has since died, and the plane now stands alone at roughly 175 years old, filling its entire island. A certified arborist assessed it in 2023 and found it generally healthy, with some decay present but nothing that stops it working.\n\nIt was famous before anyone photographed it. Byron wrote the islet into The Prisoner of Chillon in 1816, before the trees existed. Hans Christian Andersen put it in The Ice-Maiden in 1861, when they were ten years old. Since around 2021 it has become one of the most photographed objects on the lake.\n\nYou look rather than visit. Both sources are explicit that the islet cannot be landed on and that a boat risks running aground trying. The view is from the public quays at Villeneuve, and our pin marks that shoreline rather than the tree. Go at either end of the day, when the plane turns to a silhouette against open water."
   },
   {
     "id": "fri_001",
     "name": "The Linden of Morat",
     "species": "Lime (Tilia sp.)",
     "age_estimate": "planted 1984, a direct cutting of a tree first recorded in the 15th century",
-    "age_min": 40, "age_max": 42,
-    "location": {"address": "Place de l'Hotel-de-Ville, next to the Fontaine Saint-Georges, Bourg quarter, Fribourg", "latitude": 46.805847, "longitude": 7.160877, "neighbourhood": "Le Bourg, Fribourg"},
+    "age_min": 40,
+    "age_max": 42,
+    "location": {
+      "address": "Place de l'Hotel-de-Ville, next to the Fontaine Saint-Georges, Bourg quarter, Fribourg",
+      "latitude": 46.805847,
+      "longitude": 7.160877,
+      "neighbourhood": "Le Bourg, Fribourg"
+    },
     "verified_sources": [
       "https://www.watson.ch/fr/suisse/soci%C3%A9t%C3%A9/974572702-un-arbre-historique-et-legendaire-replante-a-fribourg"
     ],
@@ -68,17 +92,31 @@
     "transport": "Fribourg/Freiburg railway station, then roughly a 15-20 minute walk down into the Bourg quarter (not independently timed by us).",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "This is a living-replanting case, the same pattern CLAUDE.md already blesses for the Elm of Saint-Gervais: the ORIGINAL tilleul de Morat, planted in the Bourg quarter in the 15th century and tied to the legend of a messenger who ran from the 1476 Battle of Morat (Charles the Bold's defeat) to Fribourg waving a linden branch cut from the battlefield, which supposedly took root where he collapsed, was damaged by a vehicle in 1983 and felled. A cutting preserved by the University of Fribourg's Botanical Garden was planted in its place in 1984 'sur la place de l'Hotel-de-Ville... a cote de la fontaine de Saint-Georges, ou il trone encore' (still stands there today) per a directly fetched 2026 watson.ch article marking the battle's 550th anniversary. That is the living tree this entry describes, roughly 42 years old as of 2026, not the medieval original. Only one source was directly fetched and quoted (watson.ch); several other named outlets (La Liberte, La Tele, Batimag) independently cover the same 550th-anniversary story with matching facts per search results, but per the search-summary-is-a-lead rule their specific figures are not used here, only watson's directly-quoted ones, so this is flagged as effectively single-sourced for now. A second, newly planted cutting is being installed in 2026 about 100m away near Rue des Alpes as part of the same anniversary; that is a brand new sapling with no age of its own and is not this entry. Species is only ever called 'tilleul' (lime/linden) in every source found; no source names Tilia cordata vs platyphyllos, so left as Tilia sp. per the lead's own genus-only basis. Location_precision is 'approximate': the square and the named fountain beside it are a precise, findable public landmark, but no source gives GPS coordinates for the tree itself and the coordinate used here comes from Commons photo geotags (files named for the 'Nova-Friburgo-Platz' and the 'Rathaus', which is Fribourg's Hotel-de-Ville in German, consistent with this location) rather than a register or a source-stated position. Genuinely a single-tree destination on historical grounds: a documented civic legend around a real, named battle, an RTS television segment, a museum exhibition ('Une exposition pour celebrer le tilleul de Morat'), and a 550th-anniversary civic replanting ceremony in 2026, which together clear the destination bar even though the living tree itself is not old. Container: Fribourg is roughly 100km from both Geneva and Zurich, the only two published Swiss cities, well outside any day-trip boundary, so this stands alone.",
-    "container": "new place: Fribourg"
+    "container": "new place: Fribourg",
+    "story": "In 1476 a messenger is said to have run from the battlefield at Morat to Fribourg waving a linden branch cut on the field, collapsed in the Bourg quarter, and the branch took root where he fell. That is the legend. The tree on the Place de l'Hotel-de-Ville today is a cutting of the tree the legend was told about, planted in 1984, and it is about forty years old.\n\nThe original tilleul de Morat is recorded from the fifteenth century and stood in the Bourg for five hundred years. In 1983 a vehicle hit it and it had to be taken down. The University of Fribourg's botanical garden had kept a cutting, and that cutting went into the ground the following year beside the Fontaine Saint-Georges, where it still stands.\n\nSo this is a young tree at a very old address, which is both the honest description and the interesting one. Fribourg has not let go of the story: there has been a television segment, a museum exhibition devoted to the linden, and for the battle's 550th anniversary in 2026 a second cutting is being planted about a hundred metres away on the Rue des Alpes.\n\nThe square is public and free. The run is a legend, the felling is documented, and the tree in front of you is genetically the same plant as the one that fell.",
+    "best_time": {
+      "months": [
+        6,
+        7
+      ],
+      "kind": "flowers",
+      "label": "late June into July, when the lime flowers and the square smells of them"
+    }
   },
   {
     "id": "boz_001",
     "name": "The Linden of Linn",
     "species": "Large-leaved Lime (Tilia platyphyllos)",
     "age_estimate": "roughly 800 years",
-    "age_min": 600, "age_max": 900,
+    "age_min": 600,
+    "age_max": 900,
     "girth_cm": 1100,
-    "location": {"address": "Linn 51, Boezberg (Linn village entrance), Aargau", "latitude": 47.470833, "longitude": 8.132944, "neighbourhood": "Linn, Boezberg"},
+    "location": {
+      "address": "Linn 51, Boezberg (Linn village entrance), Aargau",
+      "latitude": 47.470833,
+      "longitude": 8.132944,
+      "neighbourhood": "Linn, Boezberg"
+    },
     "verified_sources": [
       "https://de.wikipedia.org/wiki/Linner_Linde",
       "https://aargautourismus.ch/erleben/kraftorte/linde-von-linn"
@@ -87,7 +125,15 @@
     "transport": "From Zurich: train to Brugg, then onward bus/local transport toward Boezberg/Linn; total journey likely 45-60 minutes each way (not independently timed step by step by us; this is a longer trip than the classic 30-minute day-trip case and should be labelled honestly as such).",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "Two independent sources agree closely: German Wikipedia (Linner Linde) gives precise coordinates (47 28'15.1\"N 8 7'58.6\"O, converted here to decimal), species Sommerlinde/Tilia platyphyllos, height 25m, trunk circumference 11m ('gilt sie als der maechtigste Baum des Aargaus', considered Aargau's mightiest tree), age approximately 800 years, and notes a local legend (plague survivors planting it, 16th/17th century) that the tree's own real age contradicts, which is exactly the kind of legend-vs-dating gap this project should state rather than resolve; the 800-year figure is the tree's own accepted estimate, not derived by us from girth. Aargau Tourismus's official page (aargautourismus.ch, last updated 2026-08-04, i.e. current) independently confirms the ~800-year age, gives the address (Linn 51, 5225 Boezberg) and access details, and its 2026 update date is the best 'alive now' evidence found. A WebSearch summary (not independently fetched, so not used for any figure here) additionally called it 'one of the five oldest trees in Switzerland'; that specific ranking claim is not used per the search-summary-is-a-lead rule, only the two directly fetched sources' own figures are. Girth 1100cm (11m) is unusually large but is stated directly and identically by both fetched sources, and matches the species (Tilia platyphyllos routinely produces very wide, fluted, multi-stemmed trunks at great age), so no unit-corruption flag is warranted; recorded as given. Local legend: the linden's shadow must fall on Habsburg Castle every year or 'the world will end', tying it to Rudolf von Habsburg, founder of the Habsburg dynasty; a good story-worthy fact, stated as legend not history. Container: straight-line distance to Zurich is approximately 32km, just over the usual 30km/30-minute day-trip guideline, and the real journey (train to Brugg plus a further bus/local connection) likely runs 45-60 minutes each way rather than a clean 30; recommend it join Zurich's page as a day-trip addition if the orchestrating session is comfortable with that longer real travel time, labelled honestly as Linn/Boezberg with the true journey time, not as a shorter or in-town trip.",
-    "container": "zurich (day trip, borderline distance ~32km / real journey likely 45-60 min via Brugg, label honestly as Linn/Boezberg; flagging for a judgement call rather than asserting confidently)"
+    "container": "zurich (day trip, borderline distance ~32km / real journey likely 45-60 min via Brugg, label honestly as Linn/Boezberg; flagging for a judgement call rather than asserting confidently)",
+    "story": "Local legend says that if this linden's shadow ever stops reaching Habsburg Castle, the world ends. The tree is eleven metres round, twenty-five metres tall and roughly 800 years old, which by the canton's own reckoning makes it the mightiest tree in Aargau and would make it a sapling around the time Rudolf von Habsburg, founder of the dynasty the castle is named for, was born.\n\nA second legend is more popular and less durable: that survivors of the plague planted it, in the sixteenth or seventeenth century. The tree's own dating rules that out by several hundred years. Both stories are worth knowing, only one of them can be true, and it is the tree that settles the argument.\n\nEleven metres of circumference is enormous even for a large-leaved lime, a species that fuses, splits and re-roots itself into fluted multi-stemmed trunks as it ages. What you walk up to is less a trunk than a small ruined building with leaves on top.\n\nIt stands at the entrance to Linn village, directly at the bus stop, and Aargau's tourist board calls it very popular, which is a polite warning about Sunday afternoons. From Zurich this is a real trip rather than a stroll: train to Brugg, then a local connection onward, 45 to 60 minutes each way.",
+    "best_time": {
+      "months": [
+        1,
+        2
+      ],
+      "kind": "bare silhouette",
+      "label": "January and February, when the leaves are off and all eleven metres of trunk stand exposed"
+    }
   }
 ]
