@@ -2,6 +2,41 @@
 
 <!-- archive-index -->
 
+## 2026-09-05 (continuation) - Scheessel: a new single-tree place from the _famous-germany claim, plus 5 leads held or blocked
+
+Shelf refill: `prepare.py` reported "REFILL THE SHELF FIRST" (0 leads ready
+to write, 47 files staged for a later verify pass, none awaiting a writer).
+Claimed `_famous-germany` (still the biggest unsourced country batch) and
+dispatched a verify pass on 6 named candidates, all with coordinates and
+Commons photos already attached: Everseiche, Lieveneiche, Gerichtslinde
+Göttingen, Gerichtslinde in Alfeld (Leine), Gerichtslinde Scheeßel,
+Heinrichslinde.
+
+Two cleared verification: the Gerichtslinde of Göttingen turned out to be a
+duplicate of the already-published gtn_001 (same coordinates, same 714cm
+girth, same two sources), caught by `passcheck.py --pending` before it was
+written up, so no new tree there, just a wasted verify slot. **The
+Gerichtslinde of Scheeßel** did clear the single-tree-destination bar (a
+documented Femegericht/court site since 1288, a pillory into the 1900s, a
+hollow twin-trunk structure, 710cm girth, age genuinely disputed 500-800
+years) and became a new place, `scheessel.json`, on the same template as
+Effeltrich and Reinborn: one tree, its own intro/FAQ/question page, `sch_001`.
+
+Held below the bar as leads: Everseiche (verified but its crown is reported
+"partially dead" as of a July 2025 photo caption) and Lieveneiche (verified
+existing but too thin, no age, no girth, no register entry). Corrected:
+Gerichtslinde in Alfeld (Leine) is officially "2 Dinglinden" per its own
+register, not one tree, kept as a lead with that correction. Blocked:
+Heinrichslinde, whose current physical tree is a sapling planted January
+2022, the second replacement after the original collapsed in 1894 and its
+successor was felled in 2021; no genuinely old tree stands there today.
+
+Ran preflight (0 problems), tree_index, `npm run build`; committed and
+pushed. Cost logged to `data/agent-costs.json` under 2026-09-05 (verify
+~179k tokens for the 6-candidate batch, write ~101k for the single-tree
+batch, the batch-of-one overhead BRIEF_WRITING.md warns about). Released the
+`_famous-germany` claim.
+
 ## 2026-09-05 (night run) - Baarn submissions 84-86: two Cantonspark register trees found via a reader's GPS
 
 Three `kind: tree` rows, same account, same visit (07:12-07:15 UTC), all GPS-tagged
