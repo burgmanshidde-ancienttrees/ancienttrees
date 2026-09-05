@@ -2,29 +2,29 @@
   "city": "Iga",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "One tree, and it is one of only two or three of its kind protected anywhere in Japan. Takakura Jinja no Shibunashigaya grows unsignposted in the grounds of Takakura Shrine in Iga City, Mie Prefecture, a rare seedless-skin variety of Japanese nutmeg-yew whose kernels were once sent to feudal lords. A National Natural Monument since 1932, free to visit, though finding it among the shrine's other trees takes a little looking.",
-  "meta_description": "Takakura Jinja no Shibunashigaya in Iga: a rare, unsignposted Japanese nutmeg-yew, one of only two or three of its kind protected in Japan.",
-  "question_meta": "Iga's only mapped tree is Takakura Jinja no Shibunashigaya, a rare Japanese nutmeg-yew, a National Natural Monument since 1932.",
-  "question_answer": "Iga's mapped tree is Takakura Jinja no Shibunashigaya, a Japanese nutmeg-yew of the rare shibunashi variety, in the grounds of Takakura Shrine. No age has been published for it in any source found; it is documented instead by its rarity, its 3.05-metre girth and its National Natural Monument status since 25 July 1932.",
-  "question_context": "Shibunashigaya means kaya without the astringency: an ordinary Japanese nutmeg-yew produces seeds wrapped in a bitter skin, and this rare variety's kernels can be eaten straight off the tree. Edo-period locals called them bee-larva kaya and white-rice kaya and sent them to their feudal lords. Only two or three such nationally designated trees exist anywhere in Japan, and a third was struck from the register after it died, which makes this one of the rarer designated trees this site maps. The trunk runs to about 21 metres, forking into two main limbs around two metres up, each splitting again roughly ten metres higher into six branches on the west side, where decay shows, and five on the east. Girth at chest height is 3.05 metres; a smaller figure recorded at the base in the same source is treated as a transcription error rather than a fact about the tree, since a base is normally wider than the chest. Takakura Shrine leaves the tree deliberately unsignposted, a precaution from the era when its valuable seeds attracted attention, so finding it among the shrine's other trees takes patience. Nothing blocks entry to the grounds, and no ticket is needed.",
+  "intro": "Two trees, and between them almost the whole national count of their kind. Japan protects only two or three shibunashigaya, a rare seedless-skin variety of Japanese nutmeg-yew whose kernels were once sent to feudal lords, and Iga holds two of them a kilometre apart: one unsignposted in the grounds of Takakura Shrine, the other in the northeastern corner of Kagoji Temple. Both National Natural Monuments since the 1930s, both free to visit.",
+  "meta_description": "Iga maps two of Japan's two or three protected shibunashigaya, a rare seedless-skin nutmeg-yew, a kilometre apart at Takakura Shrine and Kagoji Temple.",
+  "question_meta": "Iga's mapped trees are two of Japan's two or three nationally protected shibunashigaya, a rare Japanese nutmeg-yew, a kilometre apart.",
+  "question_answer": "Iga's mapped trees are Takakura Jinja no Shibunashigaya, in the grounds of Takakura Shrine, and Kagoji no Shibunashigaya, a kilometre away in Kagoji Temple's grounds, both Japanese nutmeg-yews of the rare shibunashi variety. Neither has a published age; both are documented by their rarity and their National Natural Monument status, Takakura's since 25 July 1932.",
+  "question_context": "Shibunashigaya means kaya without the astringency: an ordinary Japanese nutmeg-yew produces seeds wrapped in a bitter skin, and this rare variety's kernels can be eaten straight off the tree. Edo-period locals sent them to their feudal lords and pressed them into oil or a confection called kaya arare. Only two or three such nationally designated trees exist anywhere in Japan, and a third was struck from the register after it died, which makes Iga's pair a genuine rarity. The Takakura tree's trunk runs to about 21 metres, forking into two limbs that split again into six branches on the west side, where decay shows, and five on the east; girth at chest height is 3.05 metres. Takakura Shrine leaves it deliberately unsignposted, a precaution from when its valuable seeds attracted attention, so finding it takes patience. The Kagoji tree measures 3.7 metres round and forks into three limbs, with a broad crown under a height of roughly 20 metres, and fruits heavily every late summer. Nothing blocks entry to either site, and no ticket is needed.",
   "hero_tree_id": "iga_001",
   "oldest_tree_id": "iga_001",
   "faq": [
     {
-      "q": "What is special about this tree?",
-      "a": "It is a rare shibunashi variety of Japanese nutmeg-yew, whose kernels lack the bitter skin of an ordinary tree of this species and could be eaten straight off it. Only two or three such nationally designated trees exist in Japan."
+      "q": "What is special about these trees?",
+      "a": "Both are shibunashi, a rare variety of Japanese nutmeg-yew whose kernels lack the bitter skin of an ordinary tree of this species and could be eaten straight off it. Only two or three such nationally designated trees exist in Japan, and Iga holds two of them a kilometre apart."
     },
     {
-      "q": "How old is it?",
-      "a": "Unknown. No source gives an age for this tree, only its designation date of 1932 and its measurements. If you can help date it, tell us."
+      "q": "How old are they?",
+      "a": "Unknown for both. No source gives an age for either tree, only Takakura's designation date of 1932 and each tree's measurements. If you can help date them, tell us."
     },
     {
       "q": "Is it free to visit?",
-      "a": "Yes, the shrine grounds are open and there is no entry charge. The tree itself is deliberately left unsignposted, so allow time to find it among the shrine's other trees."
+      "a": "Yes, both sites are open with no entry charge. The Takakura tree is deliberately left unsignposted, so allow time to find it among the shrine's other trees; the Kagoji tree has parking and restrooms on site."
     },
     {
       "q": "How do I get there?",
-      "a": "Take the Iga Railway to Ueno-ichi Station, then a bus toward Toriiide, getting off at the Toriiide stop for a roughly 6-minute walk to the shrine. By car it is about 10 minutes from the regional highway."
+      "a": "For Takakura Shrine: the Iga Railway to Ueno-ichi Station, then a bus toward Toriiide, getting off at the Toriiide stop for a roughly 6-minute walk. For Kagoji Temple, about 15 minutes by taxi from Iga Tetsudo's Ueno-shi Station or by car from the Meishin Expressway's Ouchi IC."
     }
   ],
   "trees": [
@@ -52,6 +52,42 @@
       "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "iga_002",
+      "name": "Kagoji no Shibunashigaya",
+      "species": "Japanese Nutmeg-yew, Shibunashi variety (Torreya nucifera var. shibunashi)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 370,
+      "height_m": 20,
+      "location": {
+        "address": "Kagoji Temple, Nishiyama 1182, Iga City, Mie Prefecture, Japan",
+        "latitude": 34.79147,
+        "longitude": 136.08117,
+        "neighbourhood": "Nishiyama, Iga City, about 1km from Takakura Shrine (iga_001)"
+      },
+      "verified_sources": [
+        "https://www.kankomie.or.jp/spot/21690",
+        "https://ja.wikipedia.org/wiki/%E6%9E%9C%E5%8F%B7%E5%AF%BA%E3%81%AE%E3%82%B7%E3%83%96%E3%83%8A%E3%82%B7%E3%82%AC%E3%83%A4"
+      ],
+      "access": "Free, in the northeastern part of Kagoji Temple's grounds; parking and restrooms available on site.",
+      "transport": "About 15 minutes by taxi from Iga Tetsudo's Ueno-shi Station, or about 15 minutes by car from the Meishin Expressway's Ouchi IC. About 1km from Iga's already-published Takakura Jinja no Shibunashigaya (iga_001).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Japan protects two or three trees of this kind nationally. Two of them stand a kilometre apart in Iga, and this is the second.\n\nKagoji no Shibunashigaya grows in the northeastern part of Kagoji Temple's grounds. Shibunashi means without astringency: the seed of an ordinary kaya arrives wrapped in a bitter skin and the kernels of this variety do not, which made them worth something in the Edo period. They were pressed for cooking oil and sugar-coated into kaya arare, a confection made in Iga and in Kiso.\n\nIt measures 3.7 metres round half a metre above the ground and forks into three main limbs about 90 centimetres up. The crown runs 15 metres east to west and 18 north to south under a height of roughly 20 metres, which makes it a broad tree rather than a tall one. Every year in late summer it fruits heavily, which is the plainest evidence available that a tree of unknown age is in good health.\n\nNobody has dated it. The national designation and Mie Prefecture's own hundred-tree list both record what it is rather than how old, and no source found closes that gap. If you know of a figure, tell us.\n\nIt is free, with parking and restrooms at the temple, about 15 minutes by taxi from Ueno-shi Station.",
+      "best_time": {
+        "months": [8, 9],
+        "kind": "fruit",
+        "label": "late summer, when it carries its yearly crop of kernels with no bitter skin on them"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

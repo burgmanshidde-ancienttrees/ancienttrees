@@ -1,0 +1,68 @@
+{
+  "city": "Unnan",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Unnan maps one tree, and the first trunk of it is long gone. Kaishio no Katsura stands beside the approach steps of Nihara Shrine in the hills of Daito, seven heavy trunks grown out of a base that measures about 13 metres round after the original stem rotted away. It has been a National Natural Monument since 1937. Free, on shrine ground, reached by car, and at its best in late autumn, when a katsura this size turns yellow and the fallen leaves smell of caramel.",
+  "meta_description": "Kaishio no Katsura in Unnan: seven trunks from one 13-metre base beside Nihara Shrine, a National Natural Monument since 1937, free and gold in autumn.",
+  "question_meta": "Unnan's only mapped tree is Kaishio no Katsura, a multi-trunked katsura at Nihara Shrine, a National Natural Monument since 1937.",
+  "question_answer": "Unnan's only mapped tree is Kaishio no Katsura, a katsura beside the approach steps of Nihara Shrine in Kaishio, Daito, Unnan, Shimane Prefecture. No source has dated it, but it has been a National Natural Monument since 17 April 1937 and its base measures about 13 metres round.",
+  "question_context": "The tree is a cluster, not a trunk. The stem it started as decayed from the middle long ago, the root threw up replacements, and seven of those now stand together on the same base, which is the ordinary end of a very old katsura. That is also why the measurements disagree: the national register gives a base circumference of about 13 metres and a height of 30 metres, while another account gives about 18 metres round the roots and nearer 40 metres tall, and neither is wrong so much as taping a different thing. Age is the open question. No source found gives a planting date or an estimate, and a local tourism piece calling it a thousand-year giant is a turn of phrase rather than a dating, so this page carries no figure. The tree has been protected nationally since 17 April 1937. A story told locally has it that a nearby rock, the kagami-iwa or mirror rock, reflects the tree. Getting there means driving, since rural Unnan has no station and no confirmed bus, and late autumn is the time to come, when katsura leaves turn yellow and the fallen ones smell of caramel.",
+  "hero_tree_id": "unn_001",
+  "oldest_tree_id": "unn_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Unnan?",
+      "a": "Kaishio no Katsura, the katsura beside the approach steps of Nihara Shrine in Daito. Nobody has dated it, but it has been a National Natural Monument since 1937."
+    },
+    {
+      "q": "Why does it look like several trees?",
+      "a": "The original trunk rotted away and the root sent up replacements. Seven trunks now grow from one base, which is what usually becomes of a very old katsura."
+    },
+    {
+      "q": "How big is it?",
+      "a": "About 13 metres round the base and 30 metres tall in the national register. Another account gives roughly 18 metres round the roots and nearer 40 metres tall; both are measuring a cluster rather than a single trunk."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the grounds of Nihara Shrine, open to the public, and is reached by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "unn_001",
+      "name": "Ushio no Katsura",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1300,
+      "height_m": 30,
+      "location": {
+        "address": "Nihara Shrine (Hinohara Jinja) approach steps, Kaishio (Ushio), Daito-cho, Unnan, Shimane Prefecture, Japan",
+        "latitude": 35.3325,
+        "longitude": 133.012667,
+        "neighbourhood": "Kaishio (Ushio), Daito-cho, Unnan"
+      },
+      "verified_sources": [
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/2193",
+        "https://ja.wikipedia.org/wiki/%E6%B5%B7%E6%BD%AE%E3%81%AE%E3%82%AB%E3%83%84%E3%83%A9"
+      ],
+      "access": "Free, on the grounds of Nihara Shrine (owner/manager of record); stands beside the shrine's approach stone steps, open to the public.",
+      "transport": "Rural Unnan City, Shimane Prefecture; by car only, no direct train or confirmed bus.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The trunk that made this tree is gone. Seven stand in its place, all of them risen from the same base, and that base measures about 13 metres round.\n\nKaishio no Katsura, usually shortened to Ushio, has been a National Natural Monument since 17 April 1937. It grows beside the stone approach steps of Nihara Shrine in the Kaishio district of Daito, in the hills of Shimane, and it is doing what a very old katsura does: the original stem rots out from the middle, the root sends up replacements, and the replacements become trees in their own right. Measuring it is therefore a matter of where you put the tape. The national register records a base circumference of about 13 metres and a height of 30. Another account gives roughly 18 metres round the roots and closer to 40 metres tall. Both are describing a cluster rather than a trunk, which is why the two disagree so widely.\n\nNobody has dated it. A local piece calls it a thousand-year giant, which is a description rather than a dating, so no age is given here. If you know of a real measurement, tell us and it goes on the page.\n\nA story told about the place holds that a rock near the shrine, the kagami-iwa or mirror rock, hands the tree back as a reflection. It is free and open, on shrine ground, and you arrive by car: there is no station and no confirmed bus.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "October and November, when the round leaves turn yellow and the fallen ones smell of caramel"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

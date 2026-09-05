@@ -1,0 +1,68 @@
+{
+  "city": "Takahama",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Takahama maps a pair of ginkgos that fruit on their leaves. The two Ohatsuki Ginkgos of Sugimori Shrine, on the Wakasa Bay coast in Fukui, carry their seeds on the margins of the leaves instead of on a normal stalk, a rare inherited trait that earned both trees a single National Natural Monument designation in 1935. Both stand about 32 metres tall, a short walk apart inside the shrine grounds. Free, open, and at their best in late autumn.",
+  "meta_description": "The Ohatsuki Ginkgos of Sugimori Shrine, Takahama: two 32-metre ginkgos growing seeds on the leaf margins, a National Natural Monument since 1935.",
+  "question_meta": "Takahama's mapped trees are the two Ohatsuki Ginkgos of Sugimori Shrine, which fruit on their leaf edges, protected nationally since 1935.",
+  "question_answer": "Takahama's mapped trees are the two Ohatsuki Ginkgos of Sugimori Shrine in Rikurodani, Takahama, Fukui Prefecture. Both are about 32 metres tall, both carry their seeds on the margins of their leaves, and one National Natural Monument designation, made in 1935, covers the pair. No source gives their age.",
+  "question_context": "What is unusual here is not size or age but the way the trees reproduce. In the ohatsuki form of the ginkgo the ovules develop directly on the edge of a leaf rather than on a separate stalk, so in autumn a leaf can fall with a ripe seed still fixed to it. Only a handful of ohatsuki ginkgos hold national protection anywhere in Japan, and Sugimori Shrine holds two of them: one on the hillside behind the main hall, about 3 metres round, and one on the western side in front of it, about 2.8 metres round. Both are female, which is why the trait can be seen at all, and both stand around 32 metres. The designation, made on 27 August 1935, treats them as one monument and the national register describes their value as academic. Nobody has dated either tree in any source found, so this page carries no age figure and would welcome one. The trees stand on open shrine ground, free to walk up to, in Rikurodani near the Wakasa Bay coast, and late autumn is the time to come: the seeds ripen on the leaf edges as the crowns turn gold.",
+  "hero_tree_id": "tka_001",
+  "oldest_tree_id": "tka_001",
+  "faq": [
+    {
+      "q": "What is special about these ginkgos?",
+      "a": "They are ohatsuki ginkgos: their seeds form on the margins of the leaves instead of on a normal stalk, so a fallen leaf can arrive with a seed still attached."
+    },
+    {
+      "q": "How many trees are there?",
+      "a": "Two, a short walk apart in the same shrine grounds, covered by a single National Natural Monument designation made in 1935."
+    },
+    {
+      "q": "How old are they?",
+      "a": "Nobody knows. No source found gives an age for either tree, and the designation was made for the leaf-fruiting trait rather than for age."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Both trees stand on open ground within Sugimori Shrine, with no gate and no charge."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tka_001",
+      "name": "Sugimori Jinja no Ohatsuki Icho",
+      "species": "Ohatsuki Ginkgo (Ginkgo biloba var. epiphylla)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 300,
+      "height_m": 32,
+      "location": {
+        "address": "Sugimori Shrine, Rikurodani, Takahama, Oi District, Fukui Prefecture, Japan",
+        "latitude": 35.483167,
+        "longitude": 135.474722,
+        "neighbourhood": "Rikurodani, Takahama"
+      },
+      "verified_sources": [
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/1054",
+        "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%A3%AE%E7%A5%9E%E7%A4%BE%E3%81%AE%E3%82%AA%E3%83%8F%E3%83%84%E3%82%AD%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6"
+      ],
+      "access": "Free, within the grounds of Sugimori Shrine, open to the public.",
+      "transport": "In Takahama, Fukui Prefecture, on the Wakasa Bay coast; no train or bus stop confirmed this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "These two ginkgos grow their seeds on the edges of their leaves.\n\nThat is the whole reason for the designation, and it is a genuine botanical oddity rather than a local story. In the ohatsuki form of the ginkgo the ovules form directly on the leaf margin instead of on a normal stalk, so a fertile leaf comes down in autumn with the seed still attached to it. Only a handful of ohatsuki ginkgos are nationally protected in Japan. Sugimori Shrine has two, a short walk apart inside one small precinct, and a single designation made on 27 August 1935 covers the pair. The register's word for what makes them worth protecting is academic, not scenic.\n\nThey are large without being freakish. Both run to roughly 32 metres. The one on the hillside behind the main hall measures about 3 metres round, the one on the western side in front of the hall about 2.8. Both are female, which is what makes the trait visible at all: a male ginkgo has nothing to carry on a leaf.\n\nNeither tree has been dated by any source found, so no age is given here. If you know of one, send it.\n\nThe pin marks the shrine rather than a single trunk, which for once is the right way round. You are coming to see two trees, and they are both inside the gate.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "fruit",
+        "label": "October and November, when the seeds ripen along the leaf edges and the crowns turn gold"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
