@@ -224,8 +224,8 @@
     "https://commons.wikimedia.org/wiki/File:Kostol_(church)_a_lipa_-_Hrocho%C5%A5_-_panoramio.jpg"
    ],
    "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "note_verify": "Existence/species confirmed on two sources: our own register (data/registers/slovakia-chranene-stromy.json, register_id 2, publishable: true, locality 'vlavo od vchodu do ev.kostola' = left of the entrance to the evangelical church) and sk.wikipedia's own 'Zoznam chranenych stromov na Slovensku' list (S2, Tilia cordata Mill., Banska Bystrica district, managed by CHKO Polana), coordinates agreeing closely (48.6558/19.3145 vs this lead's 48.655763/19.314673). NOT SHIPPED on age/story evidence: a WebSearch AI summary (not a fetched page, so not trustworthy per this project's own 'search summary is a lead never a source' rule) gave two DIFFERENT ages for what should be the same tree, 250 years and separately 450+ years, and also claimed it was 'planted as a memorial to Andrej Sladkovic's ministry'. Checking the Sladkovic claim directly (bystricoviny.sk, 2016) found a DIFFERENT, real Sladkovic memorial linden, planted 1856+ at his grave in Radvan by his friend Jan Botto, roughly 20km away; the Hrochot tree simply predates Sladkovic's 1847-56 posting there and the register gives no planting-memorial reason at all, only 'significant old tree'. This is a bridge-claim the aggregator manufactured; recording it here so nobody repeats it. Left as a lead with no defensible age until a directly-fetchable source (krizom-krazom.eu's Banska Bystrica district page returned DNS errors this pass; a live SME regional piece may exist behind the same domain that 402'd on other Slovak leads in this batch) gives one; a future Banska Bystrica-area pass (this town sits near the blocked Urpinska alej) could pick this up as a real second candidate for that area."
   },
   {
    "name": "Lime tree in Lipany",
