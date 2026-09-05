@@ -210,6 +210,41 @@
       "curation_status": "flagged",
       "notes": "Wikipedia's Queen Square, Bristol page and the Bristol Radical History Group's dedicated 1831 riot article corroborate the square's construction history (1699-1720), the 1716 original planting (257 trees, largely lost), the current planes dating to 'probably after 1882', and the 1831 riot's destruction and rebuilding of the west side. Bristol Tree Forum's survey independently lists a Queens Square plane at 510cm girth, 180 years, a slightly older estimate than the '1880s' planting date implies; age range widened to honestly straddle both figures rather than picking one. Presented as a single ensemble entry (the ringed double avenue) per the collectible-point test, not one tree standing in for the whole square. Photo: Wikimedia Commons file 'London Planes Queens Square - geograph.org.uk - 91527.jpg' (michael, CC BY-SA 2.0), geotagged directly at Queen Square, an unambiguous match for this ensemble entry. Viewed directly 2026-07-31 (a session with working image tooling): a row of mature plane trees fills the frame in a park setting, daylight, colour, clearly the ensemble described, approved.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "bri_006",
+      "name": "The Strawberries and Cream Tree",
+      "species": "Graft-chimera Cherry (Prunus avium / Prunus serrulata 'Kanzan')",
+      "age_estimate": "about 65-70 years",
+      "age_min": 65,
+      "age_max": 70,
+      "location": {
+        "address": "Rodney Road, Backwell, North Somerset",
+        "latitude": 51.414528,
+        "longitude": -2.745056,
+        "neighbourhood": "Backwell, North Somerset; day-trip distance from Bristol, about 9.5km"
+      },
+      "story": "One trunk, two colours of blossom, and it is not two trees. A Kanzan flowering cherry was grafted onto wild cherry rootstock, and instead of one winning, tissue from both parents grew on together as a single tree. That makes it a graft chimera: pink Kanzan flowers along one side, white wild-cherry flowers along the other, open at the same time on the same trunk. It is one of only two cherry chimeras of this kind known in England, the other at Portchester in Hampshire.\n\nNobody knows who planted it. It went into council land on Rodney Road in the late 1950s, an ordinary-looking street tree that turned out to be a botanical accident worth travelling for, and the children of Backwell gave it the name that stuck. Every spring since, the village has watched one tree flower in two colours.\n\nThe last year has been hard on it. Council tree officers found it struggling after a long dry spell in 2025, and it now stands ringed by protective fencing keeping the traffic of an 800-home development off its roots, with mulching, a crown lift and deadwood removal scheduled. It is alive and being nursed rather than written off, and the fencing does not block the view.\n\nIt is free and on a public road, nine minutes by train from Bristol Temple Meads to Nailsea and Backwell, then a short walk. Come in April: outside blossom season the whole point of the tree is invisible.",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "April, when it opens pink and white blossom on the same trunk"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Strawberries_and_Cream_Tree",
+        "https://uk.news.yahoo.com/villages-iconic-strawberries-cream-tree-142751522.html",
+        "https://www.wikidata.org/wiki/Q96406593"
+      ],
+      "access": "Free, on council-owned land beside a public road (Rodney Road, Backwell), visible and reachable at any time. Currently ringed by protective metal fencing to keep construction traffic for a nearby housing development away from its roots; the fencing does not block viewing.",
+      "transport": "Nailsea & Backwell railway station is about a 9-minute GWR train from Bristol Temple Meads (services roughly every 30 minutes), with Rodney Road a short walk from the station in Backwell village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

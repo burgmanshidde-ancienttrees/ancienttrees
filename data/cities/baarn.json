@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "oldest_tree_id": "brn_005",
-  "intro": "Baarn is a villa village that royalty, bankers and a university all planted for their own reasons, and the trees outlasted every one of those reasons. The Cantonspark spent seven decades as a university botanical garden, which is why a dawn redwood and a giant sequoia stand in a free village park. In the Pekingtuin stands a red oak the village ringed in honour, and in the grounds of Paleis Soestdijk lies a catalpa a 1973 storm knocked flat, left there on a queen's own order. Five of the six trees are free.",
+  "intro": "Baarn is a villa village that royalty, bankers and a university all planted for their own reasons, and the trees outlasted every one of those reasons. The Cantonspark spent seven decades as a university botanical garden, which is why a dawn redwood, a giant sequoia and a tulip tree share a free village park. In the Pekingtuin stands a red oak the village ringed in honour, and in the grounds of Paleis Soestdijk lies a catalpa a 1973 storm knocked flat, left there on a queen's own order. Six of the seven trees are free.",
   "meta_description": "Baarn's remarkable trees: a red oak the village ringed in honour, a university's old botanical garden, and a catalpa a storm felled and a queen kept lying.",
   "question_meta": "Baarn's best-documented old tree is the American oak of the Pekingtuin, around 1850. Its story, and five more remarkable trees a walk apart.",
   "question_answer": "The best-documented old tree in Baarn is the American oak of the Pekingtuin, planted around 1850, with a trunk of 5.52 metres around. The copper beech by the south pond at Kasteel Groeneveld may be older still, at an estimated 150 to 200 years, but its age is inferred from girth rather than recorded.",
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Baarn's remarkable trees free to visit?",
-      "a": "Five of the six are free. The Pekingtuin and Cantonspark are public parks in the village itself, and Kasteel Groeneveld is a Staatsbosbeheer estate with open grounds. The one exception is the fallen catalpa in the grounds of Paleis Soestdijk, where the palace garden charges a small entry fee and opens Friday to Sunday."
+      "a": "Six of the seven are free. The Pekingtuin and Cantonspark are public parks in the village itself, and Kasteel Groeneveld is a Staatsbosbeheer estate with open grounds. The one exception is the fallen catalpa in the grounds of Paleis Soestdijk, where the palace garden charges a small entry fee and opens Friday to Sunday."
     },
     {
       "q": "What happened to the Kronkelbeuk in the Pekingtuin?",
@@ -79,14 +79,15 @@
       "age_max": 125,
       "location": {
         "address": "Cantonspark, Abel Tasmanlaan (main entrance), Baarn",
-        "latitude": 52.2091,
-        "longitude": 5.2993,
+        "latitude": 52.20798,
+        "longitude": 5.298384,
         "neighbourhood": "Cantonspark, former Utrecht University botanical garden / pinetum"
       },
-      "story": "The tallest thing in this village park is a Californian. A giant sequoia, 5.20 metres around and roughly 34 metres tall when it was last measured in 2014, standing a fifteen minute walk from Baarn station and a long way from the Sierra Nevada, where the species survives in a scatter of groves and nowhere else in the wild.\n\nNobody wrote down when it was planted, so the age here is an estimate rather than a record. The park was laid out from 1902 for the industrialist August Janssen, passed to Utrecht University in 1918, and the university added a pinetum, a teaching collection of conifers, for its botany students. A girth of 5.20 metres fits a tree put in the ground somewhere in that window. The park's own description calls it one of the tallest and most monumental trees it has and leaves the date alone as well.\n\nWhat it has stood through is a university career and the end of one. Utrecht ran the garden until 1987, then let it go, and the municipality took it over and opened it free to anyone. The collection stayed exactly where it was and simply became a park, which is why a sequoia and a dawn redwood now share a lawn with dog walkers.\n\nTwo honest notes. The measurements above date from 2014, and the pin marks the park rather than the specimen.",
+      "story": "The tallest thing in this village park is a Californian. A giant sequoia, 5.20 metres around and roughly 34 metres tall when it was last measured in 2014, standing a fifteen minute walk from Baarn station and a long way from the Sierra Nevada, where the species survives in a scatter of groves and nowhere else in the wild.\n\nNobody wrote down when it was planted, so the age here is an estimate rather than a record. The park was laid out from 1902 for the industrialist August Janssen, passed to Utrecht University in 1918, and the university added a pinetum, a teaching collection of conifers, for its botany students. A girth of 5.20 metres fits a tree put in the ground somewhere in that window. The park's own description calls it one of the tallest and most monumental trees it has and leaves the date alone as well.\n\nWhat it has stood through is a university career and the end of one. Utrecht ran the garden until 1987, then let it go, and the municipality took it over and opened it free to anyone. The collection stayed exactly where it was and simply became a park, which is why a sequoia and a dawn redwood now share a lawn with dog walkers.\n\nOne honest note. The Netherlands' own tree register lists this specimen too, still thickening toward six metres of girth, so the 5.20 metre figure above is ageing rather than current.",
       "verified_sources": [
         "https://web.archive.org/web/20140829101200/http://www.monumentaltrees.com/en/nld/utrecht/baarn/121_cantonspark/",
-        "https://cantonspark.nl/index.php/het-park/park-impressies"
+        "https://cantonspark.nl/index.php/het-park/park-impressies",
+        "Landelijk Register Monumentale Bomen (monumentalebomen.nl), nr 1696953 'Mammoetboom Cantonspark', coordinate cross-checked against a reader's on-site GPS tag, 2026-09-05"
       ],
       "access": "Free, public park, open 08:00-19:00 daily",
       "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
@@ -103,7 +104,8 @@
         "note": "Photographed by a reader and sent through the app (2026-09-05); a viewing pass approved it on 2026-09-05: Whole tree in frame, crown to base, good daylight, in leaf, unmistakably the sequoia. Cadiz standard.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "confirmed",
+      "notes": "Pin upgraded 2026-09-05 from the park's general main-entrance point to the Landelijk Register Monumentale Bomen's own coordinate for 'Mammoetboom Cantonspark' (nr 1696953, planted 1910-1920, owner gemeente, visitable and visible), 20-25 metres from a reader's own on-site GPS tag taken the same day. Same tree, same entrance grove, better pin; the 2014 girth reading is kept in the story rather than replaced, since the register gives no fresh number, only 'heading toward six metres'."
     },
     {
       "id": "brn_003",
@@ -260,6 +262,41 @@
       "how_to_recognise": "The tree lying along the ground with several trunks growing upward from its length, not standing upright like the rest of the garden's trees.",
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "brn_007",
+      "name": "The Tulip Tree of Cantonspark",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 110 years",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Cantonspark, Abel Tasmanlaan (main entrance), Baarn",
+        "latitude": 52.208112,
+        "longitude": 5.298418,
+        "neighbourhood": "Cantonspark, former Utrecht University botanical garden / pinetum"
+      },
+      "story": "Baarn already has a grove of tulip trees at Kasteel Groeneveld, sixty of them racing each other skyward. This one stands alone, by Cantonspark's main entrance on Abel Tasmanlaan, a few paces from the park's giant sequoia, and it has had the easier life of the two: the Netherlands' own monumental tree register describes its crown as well kept and its trunk as sound, marked only by a few old insect exit holes in the bark and a small, healed wound at ground level.\n\nIt went in the same decade as its sequoia neighbour, somewhere between 1910 and 1920, when Cantonspark was still the private garden the industrialist August Janssen laid out behind his house Schoonoord. Liriodendron tulipifera is an American import and a relative of magnolia, named for the orange and green, tulip-shaped flowers a mature specimen produces, usually so high in the canopy that most visitors only ever find the fallen ones. This tree has had over a century to reach flowering size.\n\nCantonspark itself passed from Janssen's estate to Utrecht University's botanical garden, then to Baarn's municipality in 1987 for one guilder, on condition its planting survive the handover intact. It has been free and open ever since, and every part of the park now carries Rijksmonument protection. The register flags this tree specifically for how visible it is to the public and how rare its species still is in the region, tucked right where most visitors first walk in.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "October and November, when the crown turns clear yellow"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://rijksmonumenten.nl/monument/511682/cantonspark-parkaanleg/baarn/"
+      ],
+      "access": "Free, public park, open 08:00-19:00 daily",
+      "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "New entry 2026-09-05, prompted by a reader's on-site GPS tag placing an unidentified tree within about 30 metres of the Landelijk Register Monumentale Bomen's 'Tulpenboom Cantonspark' (nr 1696955, planted 1910-1920, owner gemeente, visitable and visible, distinct from the brn_003 grove several kilometres away at Kasteel Groeneveld). Second source is Cantonspark's own Rijksmonument listing, which corroborates the park's protected botanical planting generally rather than this specimen individually; the register carries the specific description (crown condition, minor bark damage) used in the story. No girth recorded by any source found."
     }
   ]
 }

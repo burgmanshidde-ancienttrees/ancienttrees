@@ -1,0 +1,63 @@
+{
+  "city": "Newtown",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Newtown maps one tree, and a road was moved to keep it. The Brimmon Oak stands on private farmland beside the A483 Newtown bypass, a pollarded oak with a girth of 6.80 metres and an age put at roughly five hundred years. In 2015 a 5,000-signature petition shifted the new road about 15 metres rather than fell it, and in 2017 it finished second across the whole of Europe in that year's Tree of the Year award, the best result any British tree has managed. You see it from the road; there is no path to the trunk.",
+  "meta_description": "The Brimmon Oak in Newtown, Wales: a 500-year pollard oak a bypass was moved to save, runner-up in the 2017 European Tree of the Year.",
+  "question_meta": "Newtown's only mapped tree is the Brimmon Oak, a roadside pollard oak the A483 bypass was rerouted to save, runner-up in Europe's 2017 Tree of the Year.",
+  "question_answer": "Newtown's oldest mapped tree is the Brimmon Oak, a pedunculate oak on private farmland beside the A483 Newtown bypass on Brimmon Lane, on the edge of the town. It is put at roughly 500 years old, a repeated round estimate rather than a measurement, with a girth of 6.80 metres recorded by the Woodland Trust's Ancient Tree Inventory.",
+  "question_context": "The age comes from repeated round figures in press and campaign coverage rather than any single measurement, so this page treats it broadly: somewhere between four and six centuries, not a precise year. What is documented precisely is the campaign that saved it. When the A483 Newtown bypass was planned to run straight through the field where the oak stands, the farming family who work the land and local campaigners raised a 5,000-signature petition, which reached the Senedd and moved the road roughly 15 metres so the tree could stay. Wales named it Welsh Tree of the Year, the UK made it Tree of the Year in 2016, and in 2017 it finished second across Europe on 16,203 votes, the best result any British tree has had. A photograph from 1901 shows a wedding party sheltered under its branches. The catch for a visitor is access: it stands on working private farmland behind fencing that protects its roots, with no path to the trunk, so it is seen from the roadside. Newtown railway station is a level, twenty-minute walk away up Brimmon Lane, the calmer way to come and look.",
+  "hero_tree_id": "brm_001",
+  "oldest_tree_id": "brm_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Newtown?",
+      "a": "The Brimmon Oak, a pedunculate oak on farmland beside the A483 bypass, put at roughly 500 years old by repeated estimates rather than a measurement."
+    },
+    {
+      "q": "Why was the road moved for it?",
+      "a": "A 5,000-signature petition and a hearing at the Senedd shifted the new A483 Newtown bypass about 15 metres so the oak could stay standing in 2015."
+    },
+    {
+      "q": "Can I walk up to the Brimmon Oak?",
+      "a": "No. It grows on working private farmland behind fencing that protects its roots. You see it from the roadside, not from the trunk."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Newtown (Powys) railway station on the Cambrian Line is under 2km away, about a 20 to 25 minute walk via Brimmon Lane, or a few minutes by car or taxi."
+    }
+  ],
+  "trees": [
+    {
+      "id": "brm_001",
+      "name": "The Brimmon Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 680,
+      "location": {
+        "address": "Brimmon Lane, off the A483 Newtown bypass, Newtown, Powys, Wales",
+        "latitude": 52.512423,
+        "longitude": -3.293123,
+        "neighbourhood": "Brimmon, on the edge of Newtown, Powys"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Brimmon_Oak",
+        "https://www.treeoftheyear.org/previous-years/2017/Brimmonsky-dub",
+        "https://ati.woodlandtrust.org.uk/tree-search/tree?treeid=96586"
+      ],
+      "access": "Private farmland, still farmed by the same family that has held it for centuries. The Woodland Trust's Ancient Tree Inventory records its public-accessibility status as 'Private, visible from public access': the A483 Newtown bypass was rerouted about 15 metres to spare it, so it stands beside the road and is visible to passing traffic, but there is no path to the trunk and no confirmed safe layby to stop at. Viewable from the roadside, not walkable to.",
+      "transport": "Newtown (Powys) railway station on the Cambrian Line is under 2km away, roughly 20-25 minutes on foot via Brimmon Lane, or a few minutes by car/taxi.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A dual carriageway was bent around this tree. In 2015 the A483 Newtown bypass was drawn straight through the field where it stands, and the farming family who have worked that land for generations started a petition. Five thousand signatures and a hearing at the Senedd later, the route shifted about 15 metres and the oak stayed put.\n\nWales made it Welsh Tree of the Year, Britain made it UK Tree of the Year 2016, and in the 2017 European Tree of the Year it finished second across the whole continent on 16,203 votes, the best result a British tree has managed in that award.\n\nIt is a pollarded oak with a girth of 6.80 metres, recorded by the Woodland Trust's Ancient Tree Inventory. The age everyone quotes is around 500 years, a repeated round figure rather than a measurement, so take it broadly: four to six centuries of Powys weather. A photograph from 1901 shows a wedding party gathered under its branches, which says how long it has been the local landmark rather than simply an old tree.\n\nThe catch is where you stand. It grows on working private farmland, fenced inside a protected root zone, with no path to the trunk. You see it from the roadside, from the very bypass that was moved for it, and that road is fast with nowhere marked to pull in. Newtown station is a twenty-minute walk up Brimmon Lane, which is the calmer way to come and look.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

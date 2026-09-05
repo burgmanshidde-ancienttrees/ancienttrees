@@ -1,0 +1,63 @@
+{
+  "city": "Moffat",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Moffat maps one tree, and it is famous for having been almost alone. When conservationists bought the bare, sheep-grazed Carrifran valley in 2000, this modest rowan was nearly the only tree left standing in it. Its photograph became the fundraising image for one of Britain's largest native-woodland restoration projects, and around 700,000 trees have gone in around it since. Scotland's Tree of the Year in 2020, it stands at the start of a valley walk that is itself a real day out. Free, open access, reached by car off the A708.",
+  "meta_description": "The Survivor Tree near Moffat: a lone rowan that became the symbol of the Carrifran valley's return to native woodland. Free, by car.",
+  "question_meta": "Moffat's only mapped tree is the Survivor Tree, a rowan that stood almost alone in Carrifran valley before 700,000 trees were planted around it.",
+  "question_answer": "Moffat's only mapped tree is the Survivor Tree, a rowan in Carrifran Wildwood in the Moffat Hills, Dumfries and Galloway. It stood nearly alone in the bare, grazed valley when the Borders Forest Trust bought the land in 2000, and its photograph became the symbol of the woodland restoration that has since planted around 700,000 trees there.",
+  "question_context": "No source dates the rowan more precisely than under a hundred years old, and nobody has recorded its girth; by the usual measures of a remarkable tree it is unremarkable, a modest specimen you would walk past in a hedgerow. What it has witnessed is the reason to visit. Centuries of sheep grazing had stripped the Carrifran valley bare to the hilltops by 2000, when the Borders Forest Trust bought the land, and this rowan was very nearly the only tree still standing in it. Its photograph went onto the project's fundraising leaflet under the line 'Where one tree survives... a million trees will grow', and roughly 700,000 trees have been planted around it since. Woodland Trust Scotland named it Scotland's Tree of the Year in 2020, and it was the UK entry in the 2021 European Tree of the Year, finishing eleventh. There is no public transport. A small car park is signed off the A708 between Moffat and Selkirk, by a farm gate west of a cattle grid, and a clear path runs up the valley with a right to roam; dogs go on a lead from 1 April to 31 July for nesting birds.",
+  "hero_tree_id": "crf_001",
+  "oldest_tree_id": "crf_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Moffat?",
+      "a": "The Survivor Tree, a rowan in Carrifran Wildwood. It is under a hundred years old, not ancient, but it is nationally known as the symbol of the valley's return to native woodland."
+    },
+    {
+      "q": "Why is it called the Survivor Tree?",
+      "a": "When the Borders Forest Trust bought the bare, grazed Carrifran valley in 2000, this rowan was nearly the only tree left standing. About 700,000 trees have been planted around it since."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Carrifran Wildwood is free, open-access woodland with a right to roam, though there is no public transport and no wheelchair-accessible path."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car only. A small car park is signed off the A708 between Moffat and Selkirk, by a farm gate just west of a cattle grid, roughly 10km from Moffat."
+    }
+  ],
+  "trees": [
+    {
+      "id": "crf_001",
+      "name": "The Survivor Tree",
+      "species": "Rowan (Sorbus aucuparia)",
+      "age_estimate": "under 100 years",
+      "age_min": 60,
+      "age_max": 99,
+      "girth_cm": null,
+      "location": {
+        "address": "Carrifran Wildwood, Carrifran valley, Moffat Hills, Dumfries and Galloway",
+        "latitude": 55.40154,
+        "longitude": -3.33824,
+        "neighbourhood": "Carrifran Wildwood, near Moffat, Scottish Borders"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Survivor_Tree_(Scotland)",
+        "https://www.walkhighlands.co.uk/news/carrifran-survivor-tree-up-for-europes-tree-of-the-year/",
+        "https://www.walkhighlands.co.uk/galloway/carrifran-wildwood.shtml"
+      ],
+      "access": "Free, open access woodland/valley run by the Borders Forest Trust. Small gated car park signed off the A708; a clear path runs up the valley from there, and there is a right to roam over the whole site (staying on established paths is advised). Dogs must be kept on a lead 1 April to 31 July for nesting birds. Not accessible by public transport; this is a car (or long walk/cycle) destination.",
+      "transport": "No public transport serves the site. By car via the A708 between Moffat and Selkirk; the small Carrifran Wildwood car park is signed off the road (look for the farm gate just west of a cattle grid). Moffat is the nearest town, roughly 10km away.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "When the Borders Forest Trust bought the Carrifran valley in 2000, this rowan was very nearly the only tree standing in it. Centuries of grazing had stripped the glen bare to the tops and the rowan held on where nothing else had. Its photograph went onto the fundraising leaflet under the line 'Where one tree survives... a million trees will grow', and some 700,000 trees have gone in around it since.\n\nBy the usual measures it is unremarkable. No source dates it more precisely than under a hundred years, nobody has recorded a girth, and in a hedgerow you would walk past it. What it has watched is the reason to come: a stripped valley turning back into native woodland from the inside, one planting season at a time, until the survivor on the poster stood inside a forest. Woodland Trust Scotland made it Scotland's Tree of the Year in 2020, and it was the UK entry in the 2021 European Tree of the Year, finishing eleventh.\n\nYou need a car. The small Carrifran car park is signed off the A708 between Moffat and Selkirk, by the farm gate just west of a cattle grid, and a clear path runs up the valley from there. Access is open across the whole site, though the made paths are the sensible line, and dogs go on a lead from 1 April to 31 July for the nesting birds. Keep going and the same walk carries on up towards White Coomb.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

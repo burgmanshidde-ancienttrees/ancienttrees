@@ -2,6 +2,65 @@
 
 <!-- archive-index -->
 
+## 2026-09-05 (night run) - Baarn submissions 84-86: two Cantonspark register trees found via a reader's GPS
+
+Three `kind: tree` rows, same account, same visit (07:12-07:15 UTC), all GPS-tagged
+near Cantonspark's main entrance, minutes after the same reader's two photographs
+of brn_001/brn_002 were approved. Matched the three points against the
+Landelijk Register Monumentale Bomen (`data/registers/netherlands-lrmb.json`):
+row 85 (17m) and row 86 (7m) both sit tight on the register's coordinate for
+"Mammoetboom Cantonspark" (nr 1696953, planted 1910-1920, gemeente-owned,
+visitable, heading toward 6m girth), which reads as the same specimen already
+published as brn_002 at a rough "main entrance" placeholder 140m off. Upgraded
+brn_002's pin from approximate to confirmed using the register point and added
+the register as a second source; the story's closing note now says the pin is
+sharper rather than claiming a fresh girth measurement, since the register gives
+no new number.
+
+The same cluster also sits 15-32m from a second register entry, "Tulpenboom
+Cantonspark" (nr 1696955, same planting decade, same owner), a tulip tree
+genuinely distinct from the brn_003 grove several kilometres away at Kasteel
+Groeneveld. That was not in our data at all. Added as brn_007, sourced to the
+register plus Cantonspark's own Rijksmonument listing (rijksmonumenten.nl),
+story written, no photo.
+
+Row 84 ("Watercypres", 21-32m from both register points) matches neither
+entry, and no cypress-genus tree is registered at that spot. `data/leads/baarn.json`
+already flags an unresolved, coordinate-less "Bald Cypress 'Fastigiatum'" and
+"a second Dawn Redwood" from a 2014 monumentaltrees.com index of the same
+pinetum, either of which this could be; not enough to place, so not shipped.
+Left as an open question.
+
+Set outcomes via the service key: rows 85/86 `changed` (one combined reply on
+row 86 naming both pages, mailcheck clean, sent via contributor_reply.py),
+row 84 `open_question` asking for a photo or a rough position relative to the
+sequoia. All three appended to `data/submissions-processed.json`. Updated
+Baarn's intro/FAQ from "five of the six" to "six of the seven" free trees.
+Build (npx astro build), tree_index.py and preflight all clean.
+
+## 2026-09-05 (night run) - Merged famous-uk-batch-a: 3 new single-tree places, Bristol to 6
+
+Finished a verify pass claimed and left mid-window by an earlier attempt this
+same run: `data/research/famousuk-batch-a-verified.json`, 4 trees, dispatched to
+a write-stories pass and then merged in. The Brimmon Oak (Newtown, Powys), a
+pollard oak the A483 Newtown bypass was rerouted 15m to save, runner-up in the
+2017 European Tree of the Year; Nellie's Tree (Aberford, West Yorkshire), three
+beeches a miner grafted into a living letter N around 1920, UK Tree of the Year
+2018; and the Survivor Tree (near Moffat, Dumfries and Galloway), a modest
+rowan that was nearly the only tree standing in the Carrifran valley when
+700,000 were planted around it, all three ship as new single-tree places under
+the 2026-08-31 exception, none reaching the four-tree floor and none needing to.
+The Strawberries and Cream Tree, a graft-chimera cherry in Backwell, joins
+Bristol as bri_006 (day-trip distance, 9.5km), flagged for its rough 2025
+health after a dry spell rather than described as thriving.
+
+All four keep `location_precision: confirmed` and `curation_status: flagged`
+from verification; photos left `missing` (candidates found but not yet viewed,
+per the Cadiz standard). Released the `famous-uk-batch-a` claim. Removed the 4
+published leads (5 rows, Nellie's Tree was a duplicate at two indices) from
+`data/leads/_famous-united-kingdom.json`. tree_index.py rebuilt, build and
+preflight clean.
+
 ## 2026-09-05 - Write pass on bomenbieb-dutch-verified.json: 11 Dutch single-tree places
 
 Eleven verified trees from the bomenbieb.nl Dutch register, each published as its
