@@ -1,0 +1,65 @@
+{
+  "city": "Kintai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Kintai maps one tree: a western red cedar measured every few decades since 1973, still growing, held by Lithuanian sources to be the tallest of its kind in the country and reputedly beaten in Europe only by one tree in Switzerland. Nobody knows exactly when it was planted; the usual guess borrows a date from the forestry office beside it, which is a guess and not a record. Published alone here because the tree is the destination, not because Kintai's research is finished.",
+  "meta_description": "The Great Thuja of Kintai: a western red cedar measured since 1973, reputedly the tallest of its kind in Lithuania.",
+  "question_meta": "Kintai's only mapped tree is a western red cedar reputedly the tallest of its kind in Lithuania, measured since 1973.",
+  "question_answer": "Kintai's only mapped tree is the Great Thuja of Kintai, a western red cedar in an open meadow at the edge of the Nemuno Delta, held to be the tallest of its kind in Lithuania.",
+  "question_context": "Someone has been measuring this tree for half a century, and the numbers are the best thing about it. Sixteen metres in 1973, eighteen point two in 2004, nineteen and a half by 2012 and again in 2021, a series that is also the plainest proof the tree is alive and still growing. It is a western red cedar, a species from the Pacific coast of North America that only reached European cultivation in 1863. Lithuanian sources call it the tallest of its kind in the country and hold that the only taller one in Europe stands in Switzerland, a claim worth repeating as reported rather than as a settled survey. Nobody knows when it was planted: the tree divides into two stems, so there are no rings to count, and the usual guess ties it to the forestry office beside it, built between 1902 and 1912, though no record actually connects the two. It became a nature monument in 1986. It stands in open meadow at the edge of the Nemuno Delta, a kilometre along a marked trail from Kintai village, free to see.",
+  "hero_tree_id": "kin_001",
+  "oldest_tree_id": "kin_001",
+  "faq": [
+    {
+      "q": "What is the tallest tree in Kintai?",
+      "a": "The Great Thuja of Kintai, a western red cedar held to be the tallest of its kind in Lithuania and, by local reckoning, second only to one tree in Switzerland across Europe."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Nobody knows precisely. The tree has two stems so its rings cannot be counted, and the usual guess of 1902-1912 only borrows the construction date of the forestry office next to it. If you know better, tell us."
+    },
+    {
+      "q": "How do we know it's still healthy?",
+      "a": "A measurement series running from 1973 to 2021 shows it growing the whole time, from 16 metres to 19.5, which is about as strong a sign of vitality as a tree can give."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in open meadow within Nemuno Delta Regional Park, a kilometre along a marked trail from Kintai village, with no gate or ticket."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kin_001",
+      "name": "The Great Thuja of Kintai",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "age_estimate": "roughly a century (estimate, see notes)",
+      "age_min": 100,
+      "age_max": 125,
+      "girth_cm": 320,
+      "height_m": 19.5,
+      "location": {
+        "address": "Beside the historic Kintai Forestry Office building, Uosto g. 10, Kintai, Šilutė District, Nemuno Delta Regional Park, Lithuania",
+        "latitude": 55.423831,
+        "longitude": 21.257494,
+        "neighbourhood": "Kintai"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Kint%C5%B3_Did%C5%BEioji_tuja",
+        "https://zpasaulis.lt/kur-osia-didzioji-tuja/",
+        "https://www.checkinlithuania.com/lankytini-objektai/didzioji-kintu-tuja/",
+        "https://siluteinfo.lt/en/leisure/places-to-visit/the-great-kintai-thuja/"
+      ],
+      "access": "Free and genuinely public. Two routes are both described: a marked ~1km forest trail from Kintai Middle School's car park, or the Kintai Forestry Office's own recreational trail; the tree stands in an open meadow beside the forestry building, within Nemuno Delta Regional Park.",
+      "transport": "No direct public transport to the trailhead; Kintai village itself is reached by regional bus from Šilutė (about 15km) or Klaipėda. Walk in from the village.",
+      "story": "Someone has been measuring this tree for half a century, and the numbers are the best thing about it.\n\nSixteen metres in 1973, when the trunk was 85 centimetres round. Eighteen point two in 2004. Nineteen and a half by 2012, and nineteen and a half again in 2021. That series is also the plainest proof that the Great Thuja of Kintai is alive and well, three and a half metres taller than when the first tape went round it.\n\nIt is a western red cedar, a species from the Pacific coast of North America that only reached European cultivation in 1863, which makes this one an early arrival a long way from home. Lithuanian sources call it the tallest of its kind in the country and hold that the only taller one in Europe stands in Switzerland. Take that second part as the local reckoning it is: widely repeated, and resting on no European survey anyone can point to.\n\nNobody knows when it went in. The tree divides into two stems, so there are no rings to count, and the usual guess ties it to the forestry office beside it, built between 1902 and 1912. No record connects the two. If you know better, tell us. It became a nature monument in 1986 and a protected object of national significance the year after.\n\nIt stands in open meadow at the edge of the Nemuno Delta, a kilometre along a marked trail from Kintai village. Free, no gate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

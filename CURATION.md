@@ -2,6 +2,54 @@
 
 <!-- archive-index -->
 
+## 2026-09-05 (continuation) - Degsne and Kintai: Lithuania's first two published places, one dead tree caught before it shipped
+
+Released `_famous-japan`, claimed `_famous-lithuania` next (94 leads, none
+touched before this pass). Picked 6 fresh candidates with coordinates:
+Bagrėnas linden, Degsnė larch, Latežeris oak, Karpio tuopa (a poplar),
+Didžioji tuja Kintuose (a giant thuja), Papušynė pine.
+
+**2 cleared the single-tree-destination bar, both record claims rather
+than legends.** The Degsnė Forest Larch is documented by the Lithuanian
+State Protected Areas Service's own register as the tallest tree growing
+in Lithuania (49 metres), part of a forest stand planted in 1849 that is
+itself the country's tallest forest; shipped as `deg_001` in a new place,
+`degsne.json`. The Great Thuja of Kintai is a western red cedar with a
+50-year measurement series (16m in 1973 to 19.5m in 2021, still growing),
+reputed the tallest of its kind in Lithuania and, by local reckoning,
+second only to one tree in Switzerland across Europe; shipped as `kin_001`
+in `kintai.json`. Its planting date is only guessed from a neighbouring
+building's construction (1902-1912), a textbook bridge claim, so age was
+kept broad and the guess written as a guess rather than a fact.
+
+**3 held as leads**: Bagrėnas linden (real, protected, but not the
+national record lime, which is already published as Braziūkai), Latežeris
+oak (ordinary protected oak, storm-damaged) and Papušynė pine (protected
+locally only, nowhere near Lithuania's thickest/tallest pine records).
+
+**1 confirmed dead, caught before it could ship**: Karpio tuopa (Paštuva),
+which carries an excellent legend (a flogging-whip planted by a
+serf-freeing 19th-century landowner that took root), but the verify pass
+downloaded and looked at the Commons photos directly and found a bare,
+roofed dead stump matching the on-site sign's own account: lightning split
+the tree in 2011, the remnant was covered with a protective shelter in
+2012. Blocked rather than shipped on legend alone.
+
+**One bad auto-generated alias caught and fixed**: `city_names.py` matched
+"Degsne" to the Wikipedia article for Alytus, a real but unrelated
+Lithuanian city about 20km away, well inside its 40km sanity radius but
+simply the wrong place. That would have shipped Alytus's own name and
+translations (Olita, Alīta, Aleits...) as search aliases for our Degsnė
+forest page. Reverted the `search_names`/`wikipedia_titles` entries and
+recorded it in `unresolved_names` instead, with the reason, so a future
+run of `city_names.py` does not silently regenerate the same mismatch.
+`kintai`'s own resolution (to the actual Kintai village article) checked
+out and was kept.
+
+These are Lithuania's first two published places (no country page yet,
+Contract G needs 3+). Preflight, tree_index, build and qa all clean;
+committed, pushed, released the claim.
+
 ## 2026-09-05 (continuation) - Takeo: a new single-tree place from the _famous-japan claim, 5 duplicates caught
 
 Released `_famous-germany` and claimed `_famous-japan` next (still the
