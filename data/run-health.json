@@ -5465,6 +5465,48 @@
    ],
    "trees": 32,
    "logged": true
+  },
+  {
+   "started": "2026-09-05T09:23:21+00:00",
+   "date": "2026-09-05",
+   "run_id": "33957836593",
+   "minutes": 72.4,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 273,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(gh), Bash(git), Bash(jobs), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 61737309,
+   "claims_held": [
+    "Arnhem"
+   ],
+   "commits": 20,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "arnhem",
+     "trees": 11
+    },
+    {
+     "city": "degsne",
+     "trees": 1
+    },
+    {
+     "city": "kintai",
+     "trees": 1
+    },
+    {
+     "city": "scheessel",
+     "trees": 1
+    },
+    {
+     "city": "takeo",
+     "trees": 1
+    }
+   ],
+   "trees": 15,
+   "logged": true
   }
  ],
  "schedule_changes": [
