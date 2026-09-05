@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ali_016",
+    "name": "The Ficus of Plaza de Calvo Sotelo",
+    "species": "Fig (Ficus sp.)",
+    "age_estimate": "over a century",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Plaza de Calvo Sotelo (Plaza de las Palomas), Alicante",
+      "latitude": 38.343606,
+      "longitude": -0.48818,
+      "neighbourhood": "City centre, between Avenida Doctor Gadea and Avenida Federico Soto"
+    },
+    "verified_sources": [
+      "https://alicanteplaza.es/alicanteplaza/fogueres/el-ficus-centenario-de-calvo-sotelo-sufre-la-crema-y-los-vecinos-piden-proteccion (Alicante Plaza, 26 June 2026: 'El historico ficus de la plaza de Calvo Sotelo... uno de los ejemplares arboreos mas reconocibles de Alicante', reporting fire damage to its crown from that year's Fogueres bonfire, planted right next to the tree)",
+      "https://hogueracalvosotelo.es/cronicas (the Hoguera Calvo Sotelo bonfire commission's own historical chronicle, independent of the news outlet and of the Ayuntamiento's walking-route brochure: describes 'el ficus de la plaza' as a recurring fire-protection concern during the annual plantà/crema going back to roughly 2013, and says the commission now shields it every year with fireproof tarps)"
+    ],
+    "access": "Free, open public plaza in the city centre (popularly called Plaza de las Palomas), no gate or opening hours; same plaza as the already-published Araucaria (ali_015)",
+    "transport": "TRAM Luceros stop (lines L1-L4) or Plaza de los Luceros, roughly 5-8 minutes on foot",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A fourth, separately documented tree at Plaza de Calvo Sotelo, distinct from the already-published Araucaria (ali_015) and from the elm/plane held as leads at the same plaza. Not in the Valencia region's official 'arboles monumentales' register: checked all register entries within 400m of the plaza (data/registers/valencia-arboles-monumentales.json) and none exists near these coordinates, consistent with the Ayuntamiento's own 2026 press release ('El Ayuntamiento instala placas informativas para poner en valor sus ficus monumentales', alicante.es) which lists the city's 36 cataloged monumental ficus as concentrated at six other sites (Parque de Canalejas, Avenida de Salamanca station, Plaza Gabriel Miro, Portal de Elche, Paseito de Ramiro) and does not mention Calvo Sotelo. So this tree is real and press-documented but uncataloged. SPECIES: both sources call it only 'ficus', genus not narrowed to macrophylla vs microcarpa. Every other monumental fig in central Alicante (Gabriel Miro, Canalejas, Portal de Elche, the station forecourt) is Ficus macrophylla, which makes macrophylla plausible, but no source found this pass states it, so leave as a genus-only entry and let the page ask the reader. AGE: 'centenario' (over a century) is the only descriptor given, by the alicanteplaza.es piece; no register or planting record exists to derive a numeric estimate, repeated as vaguely as the source gives it. ALIVE: confirmed by the June 2026 fire-damage report (this year's cremà scorched much of the crown) and by the bonfire commission's own decade-plus history of protecting it, which independently corroborates continuous existence rather than a one-off mention. LOCATION: no source gives coordinates or a precise corner of the plaza; it stands beside the spot where the barrio's Fogueres monument is erected and burned each June, which is a fixed point within the small plaza but not one this pass could pin more tightly than the plaza itself, hence approximate, same honest caveat as ali_015. GIRTH/HEIGHT: not given by either source."
+  }
+]
