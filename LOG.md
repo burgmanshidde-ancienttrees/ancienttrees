@@ -1,6 +1,71 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation 4) - 13 new famous-tree places (Denmark/Finland/France), Poplar and Boab species pages, a Finland country page
+
+Rung 2 (`health.py`): Data digest showed `failure` (09:06 run). Read the
+failing log: its `pull --rebase` reported up to date, then the push was
+rejected seconds later because something else landed on main in that gap,
+the same benign race a previous continuation already saw and correctly
+diagnosed. Wrote a retry-loop fix for `.github/workflows/data-digest.yml`
+but could not push it: the bot token has no `workflows` scope and GitHub
+rejects the push outright. Reverted the local edit (nothing gained by
+carrying an uncommittable diff) and recorded the answer via
+`health.py --answer` for Hidde to land the workflow fix by hand if he wants
+it. Rung 1: 0 unprocessed submissions, 0 sighting photos.
+
+`prepare.py` showed 6 verified trees awaiting a writer
+(`_famous-denmark-verified.json`, `_famous-finland-verified.json`) and an
+empty ready-to-write pile otherwise (881 leads unsourced). Per the runner
+instructions, wrote those 6 first, then refilled the shelf on
+`_famous-france` (48 unsourced leads) and wrote what verified, working two
+tracks in parallel throughout.
+
+**Denmark +2 places, Finland +2 places, Helsinki +2 trees.** Ambrosius-egen
+(Taasinge, an oak redated from a claimed 700 years down to a core-sampled
+~400 in 1997) and Svalebøgen (Gjerrild, a fused multi-trunk beech now
+visibly declining, one trunk down since 2022) ship as standalone Danish
+places. Turku (Kalm's Oak, survived the 1827 Great Fire that took the rest
+of Pehr Kalm's botanical garden around it) and Lohja (Paavola's Oak, called
+Finland's most beautiful tree since a 1920s magazine piece, well before
+the internet) ship as standalone Finnish places, all four under the
+2026-08-31 single-tree-destination exception. Helsinki gained the
+Lasipalatsi Willow (honestly written as a 2011 clone of the 1830 original,
+which fell in 2003, not the historic trunk itself) and the Independence
+Spruce (sown the day Finland's parliament accepted independence, 1917).
+Finland now clears Contract G's 3-city bar, so it got a country page;
+Denmark's was updated to 5 places / 26 trees.
+
+**France +7 places (Toul, Estry, Rannee, Les Clayes-sous-Bois, Argoules,
+Aubers, Reyersviller), 111 trees / 22 places total.** Verified 9 of 48
+unsourced `_famous-france` leads, wrote 8, shipped 7. Held back tbf_001
+(Oak of Tombeboeuf, French Tree of the Year 2019): an unresolved May 2022
+fissure report and ambiguous private-land access (a tourism board's
+"accessible" plus a phone number for guidance reads more like needing
+directions than an open gate) made both the alive-now and hard-rule-10
+bars too uncertain to ship on this pass. yvi_001 (Yvignac-la-Tour) has no
+coordinate at all and stays a lead until one is found. Downgraded jnc_001
+(Aubers) from `confirmed` to `approximate` precision: the verify pass
+flagged a several-km disagreement between the lead's own coordinate and
+the source address that was never resolved. Chased down a flagged
+"lost research" scare from the verify agent (two referenced files,
+famousfrance-verified.json and famousfrancebatch1-verified.json, don't
+exist in the repo) and confirmed it was a false alarm: all 6 trees they
+covered are already live in data/cities under other names (Prety,
+Perouges, Samoens, Nantes, Lue, Ghisonaccia) with matching tree ids; the
+lead notes just pointed at stale filenames. Corrected the agent-costs
+entry so that scare doesn't propagate into RETRO.md.
+
+**Page gaps: 2 species pages.** `pagegaps.py` found exactly 2 species at
+the 3-tree threshold with no intro (Poplar, Boab); wrote both by hand from
+their own mapped trees rather than a template (a car-ad celebrity poplar
+in Biei, a tsunami-surviving poplar in Ofunato, a relocated 750-year boab
+that travelled 3,200km to Perth). France's country intro also updated to
+its new place count.
+
+Build, preflight and qa all green throughout (438 cities, 6851 pages).
+Every claim taken this run was released after merging. Continuing.
+
 ## 2026-09-05 (continuation 3) - Arnhem to 37 trees, two new Swiss places, a Timber Creek sacred-site boab, Zurich/Hobart/Sydney each +1-2
 
 Opened after the previous continuation stopped early having shipped 3 trees
