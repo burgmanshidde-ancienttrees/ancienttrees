@@ -1,6 +1,54 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (session, Hidde present) - Two season collections that rank themselves, and a photo answer he should see
+
+He asked whether /collections/trees-older-than-400-years was new. It is not:
+it shipped with the very first blueprint build and has been sitting there
+since. What is new is that Google started SHOWING it, +76 impressions in ten
+days at position 17, along with /collections/tallest-trees at +45. That is
+the whole reason it looked new.
+
+His answer to that was "lets make more of those", so two more generated
+collections are live, both in season this month:
+
+- **/collections/autumn-colour-trees** (H1 "Autumn Worth the Trip", title tag
+  "Where to See the Best Autumn Colour, City by City"): 204 trees across 114
+  places, banded September / October / November / December.
+- **/collections/autumn-harvest-trees** (H1 "The Autumn Harvest", title tag
+  "Where to Find Acorns, Chestnuts and Figs This Autumn"): 326 trees across
+  143 places, banded August to November.
+
+Both cost no research at all. Contract D's generated list has ranked on a
+measurement since v1.13 (age, girth, height) and `best_time` was the one
+column of the data no collection had ever read, though it is just as
+structured: a month list, a kind, and a label written per tree. So each page
+is a filter and an order, re-ranked on every build like the other three. A
+tree qualifies only when it carries both a kind and a label, so no line on
+either page is a sentence we wrote about a tree nobody judged. Deploy and
+smoke green, both pages looked at at 375px and desktop.
+
+The harvest intro says out loud that these are protected trees, that what has
+fallen is fair game and what is on the branch is not, and that a yew's red
+arils sit around a poisonous seed. A page about fruit that does not say that
+is a page that could hurt somebody.
+
+**FOR HIDDE, the photo answer.** He asked whether the night runs are putting
+enough photographs online. They are not, and the share is going the wrong
+way. In fourteen days the trees went 1,693 to 2,524 (+831) and the
+photographs went 371 to 440 (+69), so coverage fell from 21.9 percent to 17.4
+percent. Of the 848 trees added in that fortnight, 52 have a photograph, 6
+percent. 252 of 394 published places now have no photograph at all.
+
+That is the ranking he set (five trees before photographs) working exactly as
+written, so it is not a fault. What IS a fault: 13 of the 29 published
+famous-tree entries whose lead file already carried a Commons photograph
+shipped with `photo: missing` anyway. The picture was found, filed, and left
+behind at the merge step. Bansko, Concoret, Miriam Vale, Cooper Creek, Derby,
+Pemberton, Flinders Ranges and Bad Blumau among them. That is the cheapest
+photo work this project has: no hunting, only a licence check and a look at
+the pixels.
+
 ## 2026-09-05 (continuation of a window an earlier attempt stopped early with 12 minutes shipped, 108 unspent) - Finished the standing _famousgermany + _famousjapan-b verify claims: 8 trees, 6 new single-tree places
 
 Followed the resume instructions. Pulled (nothing new). `passcheck.py
