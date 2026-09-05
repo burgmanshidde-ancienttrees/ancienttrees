@@ -17,14 +17,14 @@
   },
   {
    "name": "Itsenäisyyden kuusi",
-   "lat": null,
-   "lng": null,
+   "lat": 60.158045,
+   "lng": 24.955488,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Independence_Spruce_at_Kaivopuisto.JPG",
     "https://commons.wikimedia.org/wiki/File:Itsen%C3%A4isyyden_kuusi,_Helsinki_-_DSC04332.JPG",
     "https://commons.wikimedia.org/wiki/File:Itsen%C3%A4isyyden_kuusi,_Helsinki_-_DSC04335.JPG"
    ],
-   "status": "lead",
+   "status": "RESOLVED 2026-09-05, delivered as hel_010 (data/research/_famous-finland-verified.json), container: helsinki (existing city). Species Norway Spruce (Picea abies), sown as a seed 6 Dec 1917 by Consul Rudolf Ray, transplanted to Kaivopuisto and dedicated 1931. Damaged by bomb shrapnel in the Feb 1944 bombing of Helsinki, survives today. Coordinate from Wikidata Q18659412. Two sources beyond Wikipedia: Wikidata and the Helsinki City Museum's photo archive via Finna.fi.",
    "species": "Spruce (Picea sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
@@ -37,7 +37,7 @@
     "https://commons.wikimedia.org/wiki/File:Kalmin_tammi_26012025_02.jpg",
     "https://commons.wikimedia.org/wiki/File:Kalmin_tammi_26012025_03.jpg"
    ],
-   "status": "lead",
+   "status": "RESOLVED 2026-09-05, delivered as tku_001 (data/research/_famous-finland-verified.json), container: new place: Turku (no published Turku page exists; ships under the single-tree destination exception). Species Pedunculate Oak (Quercus robur) confirmed via turunpuut.fi (Turku's own tree register), grown from seed c.1750, girth 497cm, height 17m (measured 2020-07-10), survived the Great Fire of Turku 1827. Access caveat: stands on the Aura riverbank behind the Sibelius Museum, likely the public riverside promenade rather than the museum's paid garden, but the exact boundary was not fully confirmed this pass.",
    "species": "Oak (Quercus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
@@ -61,7 +61,7 @@
     "https://commons.wikimedia.org/wiki/File:Lasipalatsi_willow_Salix_x_rubens_from_east_2024-06-10_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Lasipalatsi_willow_Salix_x_rubens_from_west_2024-06-10_01.jpg"
    ],
-   "status": "lead"
+   "status": "RESOLVED 2026-09-05, delivered as hel_009 (data/research/_famous-finland-verified.json), container: helsinki (existing city). Note the living tree is a 2011 clone replanted at the original spot after the historic 1830 willow fell in a storm on 29 Dec 2003 (same living-replanting pattern as the Elm of Saint-Gervais); write it as a young tree carrying on the lineage, not as the historic trunk itself. Two sources: fi.wikipedia and Kirkko ja kaupunki's Helsinki tree survey (quoting the city's own tree-care supervisor)."
   },
   {
    "name": "Miekkainpetäjä",
@@ -83,7 +83,7 @@
     "https://commons.wikimedia.org/wiki/File:Paavolan_tammi_1.jpg",
     "https://commons.wikimedia.org/wiki/File:Paavolan_tammi_2.jpg"
    ],
-   "status": "lead",
+   "status": "RESOLVED 2026-09-05, delivered as loh_001 (data/research/_famous-finland-verified.json), container: new place: Lohja (no published Finnish city within range; ships under the single-tree destination exception, highest-demand candidate in this batch). Species Pedunculate Oak (Quercus robur), age 300-400 years per reserve signage, girth ~470cm. Documented since a 1920 magazine article, went viral 2014, has its own marked 1-1.5km nature trail with 15 info posts. A second protected oak (designated 1990) on the same trail is a distinct tree, noted as a possible future Lohja lead.",
    "species": "Oak (Quercus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },

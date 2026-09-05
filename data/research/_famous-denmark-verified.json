@@ -1,0 +1,53 @@
+[
+  {
+    "id": "amb_001",
+    "name": "Ambrosius-egen",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 400 years",
+    "age_min": 350,
+    "age_max": 450,
+    "girth_cm": 750,
+    "location": {
+      "address": "Nørreskovvej, about 1 km southwest of Valdemars Slot, Tåsinge, near Svendborg, Denmark",
+      "latitude": 55.01865,
+      "longitude": 10.64076,
+      "neighbourhood": "Tåsinge island, Svendborg municipality"
+    },
+    "verified_sources": [
+      "https://da.wikipedia.org/wiki/Ambrosius-egen",
+      "https://www.visitfyn.dk/ambrosius-egen-ved-svendborg-gdk793875"
+    ],
+    "access": "Free, standing beside Nørreskovvej near Valdemars Slot on Tåsinge; no ticket or booking needed, ordinary public road/forest edge.",
+    "transport": "No station on Tåsinge; reached by car or bicycle from Svendborg, across the Svendborgsund bridge, then along Nørreskovvej.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Named for the poet Ambrosius Stub, who worked as scribe/tutor at Valdemars Slot around 1750 and is said to have liked reading and writing under this tree. Core-bored 13 June 1997; ring count gave roughly 400 years (planted/seeded around 1600), REVISING an earlier 1962 estimate of roughly 700 years down - both figures on record, use the 1997 dendro figure as current. Height about 20-21m, girth just under 7.5m (750cm), both sources agree closely. Protected as a Danish natural monument (fredet naturmindesmaerke) since 1921. Major surgery/maintenance in 1973 for rot damage; some rot and fungal growth still visible at the base per da.wikipedia, tree otherwise standing and cared for. Two independent sources agree on age, girth and height (da.wikipedia sourced to Kristeligt Dagblad/fredninger.dk registry, and visitfyn.dk tourism listing). No sign of any access restriction; stands in the open, mentioned on regional tourism sites as a destination.",
+    "container": "new place: standalone (Tåsinge/Svendborg has no published city; nearest published Danish places are Copenhagen and Aarhus, both well over 100km away). Qualifies for the single-tree-place exception: nationally protected natural monument since 1921, named after a documented historical figure (poet Ambrosius Stub), independently dendro-dated, and already a listed destination on regional tourism sites. Suggest a new place 'Ambrosius-egen (Taasinge)' or fold into a future Svendborg/Taasinge page if other trees turn up nearby (Valdemars Slot park itself may hold more - worth a follow-up scout)."
+  },
+  {
+    "id": "svb_001",
+    "name": "Svalebøgen",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 350,
+    "girth_cm": 1252,
+    "location": {
+      "address": "Stokkebro (main street), eastern end, Gjerrild, Norddjurs Kommune, Djursland, Denmark",
+      "latitude": 56.50680,
+      "longitude": 10.81333,
+      "neighbourhood": "Gjerrild, Norddjurs municipality"
+    },
+    "verified_sources": [
+      "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=181",
+      "https://www.gjerrild.net/for-turister/",
+      "https://www.nb-kommune.dk/pressemeddelelser/servicemeddelelse-svaleboegen-ved-gjerrild/"
+    ],
+    "access": "Free, standing on the roadside at Stokkebro in Gjerrild village; benches sit beneath it and it is a known local picnic/geocache spot. No ticket or restriction, though the municipality has cordoned off parts of the immediate area at times for safety (see condition note).",
+    "transport": "No train station; reached by car or bicycle, in the village of Gjerrild on Djursland.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Multi-stemmed beech (several trunks that appear fused/grown together from a cluster of germinated beech nuts, per local tradition mice hoarding nuts in one spot); girth 1252cm is the FUSED MULTI-TRUNK circumference from Dansk Traeregister (Danish Dendrological Society), not a single clean trunk, so do not repeat it as if measuring one stem. Widely cited locally as Denmark's oldest beech and largest tree (gjerrild.net), though the 300-year age is explicitly stated by the source as an estimate, 'no one knows exactly' - keep it vague, do not sharpen. CONDITION: one of the trunks collapsed 9 June 2022 (Norddjurs Kommune service announcement) and the municipality safety-pruned the rest and warned more trunks looked likely to fail; the current gjerrild.net tourist page (undated, presumably current) describes the tree as 'in declining condition but remains accessible to visitors', so treat as alive but visibly failing - an honest note for the story. The Borgerforening (residents' association) has already planted a successor tree nearby to the southeast, worth mentioning as context but the entry here is the living original. Dendron.dk's own vitality field reads 'Levende' (living), last verified 2008, girth measured 1995.",
+    "container": "new place: standalone (Gjerrild/Djursland has no published Danish city nearby; roughly 60km from Aarhus, beyond a reasonable day-trip radius, and nothing else published on Djursland). Qualifies for the single-tree-place exception on a real credential: locally and regionally documented as Denmark's oldest beech and largest tree, a named landmark with its own municipal safety announcements and a citizens' association succession-planting effort. Suggest a new place 'Svalebøgen (Gjerrild)'."
+  }
+]

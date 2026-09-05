@@ -1,0 +1,102 @@
+[
+  {
+    "id": "hel_009",
+    "name": "The Lasipalatsi Willow",
+    "species": "Weeping willow hybrid (Salix x pendulina 'Lasipalatski')",
+    "age_estimate": "about 15 years (the living tree); continuously cultivated at this spot since 1830",
+    "age_min": 13,
+    "age_max": 17,
+    "girth_cm": null,
+    "location": {
+      "address": "Salomonkatu, Kamppi, Helsinki",
+      "latitude": 60.170656,
+      "longitude": 24.935486,
+      "neighbourhood": "Kamppi"
+    },
+    "verified_sources": [
+      "https://fi.wikipedia.org/wiki/Lasipalatsin_salava",
+      "https://www.kirkkojakaupunki.fi/-/onko-tassa-stadin-10-legendaarisinta-puuta-onttoon-salavaan-on-mahtunut-parikymmenta-natiaista-kerrallaan-2"
+    ],
+    "access": "Free, standing on a public pedestrian street beside the Lasipalatsi building. No restrictions.",
+    "transport": "Kamppi metro station, 2 minute walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "IMPORTANT bridge-claim / dead-tree case, resolved per the Elm of Saint-Gervais precedent: the ORIGINAL willow was planted 1830 beside the then-under-construction Turku Barracks in Kamppi, became one of Helsinki's most famous trees, and was Finland's first tree ever officially protected as a natural monument (1924). That original tree fell in a storm on 29 December 2003. Cuttings had already been taken; one was grown on and replanted at the exact original spot on 13 April 2011, surrounded by a protective fence, on Salomonkatu. So the tree standing there today is a genetic clone of the historic willow, about 15 years old, not the 1830 tree itself. Write the story honestly as a young tree carrying on a nearly 200-year-old lineage at the same spot, never implying the current trunk is itself 1830s. Species is a willow hybrid, isoriippasalava (Salix x pendulina 'Lasipalatski'), possibly involving white willow, weeping willow and Caucasian willow. No girth/height recorded for the new tree, it is still young. Second source (Kirkko ja kaupunki, a Helsinki tree-care survey quoting the city's own tree supervisor) independently confirms the fall and the clone. Container: joins Helsinki (published, slug helsinki), 0.2km from city centre coordinate, well within the existing hel_ cluster. Next free id was hel_009."
+  },
+  {
+    "id": "hel_010",
+    "name": "The Independence Spruce",
+    "species": "Norway Spruce (Picea abies)",
+    "age_estimate": "roughly 108 years (sown as seed in 1917)",
+    "age_min": 95,
+    "age_max": 110,
+    "girth_cm": null,
+    "location": {
+      "address": "Iso Puistotie, Kaivopuisto, 00140 Helsinki",
+      "latitude": 60.158045,
+      "longitude": 24.955488,
+      "neighbourhood": "Kaivopuisto"
+    },
+    "verified_sources": [
+      "https://fi.wikipedia.org/wiki/Itsen%C3%A4isyyden_kuusi",
+      "https://www.wikidata.org/wiki/Q18659412",
+      "https://finna.fi/Record/hkm.HKMS000005:km0000mv04"
+    ],
+    "access": "Free, standing in the public Kaivopuisto park, north side of the Kaivohuone restaurant. No restrictions.",
+    "transport": "Tram 3 or bus to Kaivopuisto, 5-10 minute walk into the park",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Consul General Rudolf Ray sowed the spruce seed on 6 December 1917, the very day the Finnish Parliament accepted the declaration of independence. He raised the seedling privately until his death in 1930, after which it was transplanted to Kaivopuisto and formally presented to Parliament with ceremony on 13 May 1931 (so 1931 is the transplant/dedication date, 1917 the seed date; age given here counts from the 1917 sowing, which is the tree's actual germination). A granite memorial stone with an alternative coat-of-arms design by Ray stands at its roots. The tree suffered serious damage in the February 1944 bombing of Helsinki during the Continuation War: shrapnel damaged the trunk and broke off the crown, which took years to regrow, and city foresters feared it might die in the early 1960s from stunted growth. It is confirmed alive and standing today. Flagged because no girth/height measurement was found in sources; ask the reader. Two sources beyond Wikipedia: Wikidata's own entry (which supplies the tree-level coordinate, converted here from 60d9'28.962\"N 24d57'19.757\"E) and the Helsinki City Museum's (Helsingin kaupunginmuseo) photographic archive record via Finna.fi, an institutional source independent of Wikipedia. Container: joins Helsinki (published, slug helsinki), about 2km from the existing hel_ cluster centre, inside Kaivopuisto park where other Helsinki-area candidates could also cluster. Next free id after hel_009 is hel_010."
+  },
+  {
+    "id": "tku_001",
+    "name": "Kalm's Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 275 years (grown from a seed around 1750)",
+    "age_min": 260,
+    "age_max": 280,
+    "girth_cm": 497,
+    "location": {
+      "address": "Sibelius Museum grounds, Piispankatu 17, Turku, on the bank of the Aura river",
+      "latitude": 60.4539,
+      "longitude": 22.27678,
+      "neighbourhood": "Sibelius Museum / Aura riverbank"
+    },
+    "verified_sources": [
+      "https://fi.wikipedia.org/wiki/Kalmin_tammi",
+      "https://turunpuut.fi/en/quercus/quercus-robur/1/",
+      "https://www.ts.fi/a/5648149"
+    ],
+    "access": "Free to see from the public Aura riverside path in central Turku; multiple sources describe the tree as standing directly on the riverbank between the path and the Sibelius Museum building, distinct from the museum's own ticketed rose garden/exhibition. State plainly: viewable from the public riverside without paying, though the exact boundary between the open riverbank and the museum's private garden was not confirmed with certainty this pass, so the writer should hedge as 'visible from the riverside path' rather than 'walk right up to it'.",
+    "transport": "Central Turku, short walk from the Market Square along the Aura riverside promenade",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Grown from a seed around 1750, planted at its current spot in the 1760s as part of the botanical garden Pehr Kalm (Turku Academy's first professor of economics, a student of Linnaeus) directed from 1757 on the Piispantalo property. Survived the Great Fire of Turku in 1827, which destroyed the rest of the garden around it; called 'Turku's oldest tree' by the city's own tree-map project (turunpuut.fi). Girth 497cm and height 17m measured 10 July 2020 per turunpuut.fi, an official Turku tree inventory (treat as a register-equivalent source). An environmental artwork, 'Pehr Kalm Revival', was installed near the tree in 2012 referencing the original garden's layout. Confirmed alive via a dated January 2025 photo on the Wikipedia article. Three sources: fi.wikipedia, turunpuut.fi (the city's tree register) and Turun Sanomat (2023 feature on Kalm). ACCESS CAVEAT: sources place the tree 'on the riverbank' and 'between the river and the museum building', which reads as the public Aura riverside promenade rather than the museum's own paid rose garden, but this pass could not fully confirm where the boundary sits; flagged for a next pass or reader to confirm exactly how close you can walk. Coordinates converted from turunpuut.fi/Wikipedia's 60d27.234'N 22d16.607'E, matching the lead file's own coordinate closely (within 15m). CONTAINER DECISION: Turku has no published city page yet and this is the only Turku candidate in this lead batch, so it cannot join an existing place. It passes the single-tree destination test on its own merits (named historical figure, documented disaster survival, 'Turku's oldest tree', a real municipal register entry), so it ships as its own new single-tree place, 'Turku', per the 2026-08-31 exception. A future research pass on Turku itself would likely find more trees and could grow this into a full city page; that is normal growth, not padding. Next free id: tku_001 (prefix tku was unused; trk is already Tsuruoka's)."
+  },
+  {
+    "id": "loh_001",
+    "name": "Paavola's Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "300 to 400 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": 470,
+    "location": {
+      "address": "Paavola nature trail, Lohjansaari, Lohja (start from the old Lohjansaari school car park, Pietiläntie 23)",
+      "latitude": 60.226488,
+      "longitude": 23.890902,
+      "neighbourhood": "Lohjansaari"
+    },
+    "verified_sources": [
+      "https://fi.wikipedia.org/wiki/Paavolan_tammikko",
+      "https://retkipaikka.fi/suomen-kaunein-puu-ja-luontopolku-sen-juurelle-paavolan-tammi-ja-luontopolku-lohjalla/",
+      "https://yle.fi/a/20-207037",
+      "https://www.lohja.fi/kulttuuri-vapaa-aika-liikunta/liikunta/retkeily-ja-ulkoilu/luontopolut/paavolan-tammi/"
+    ],
+    "access": "Free. Stands beside a clearly marked 1 to 1.5km nature trail with 15 information posts inside the Paavolan tammikko nature reserve (protected 1994); a picnic table sits near the tree. Parking at Pietiläntie 23 (about 700m walk to the tree). Part of the surrounding grove is on private land per the reserve's own description, but the tree and the marked trail past it are open to the public.",
+    "transport": "No public transport to the trailhead; roughly 45 to 60 minutes by car from Helsinki (about 58km), or Lohja town by train/bus then a local taxi/car to Lohjansaari",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Widely called 'Suomen kaunein puu' (Finland's most beautiful tree). Documented by the Finnish photographer and explorer I.K. Inha over a century ago, and written up in the magazine Tiede ja elama in 1920, so this is a tree with a genuine, long documentary history, not just a recent internet find. Went viral online in autumn 2014 after an article by Antti Huttunen (Yle Elava arkisto piece). Formally protected as a natural monument. Girth about 470cm (retkipaikka.fi); age estimated 300-400 years by the reserve's own signage, with a note that oaks in principle can live over 1000 years (that upper figure is folklore/signage framing, not a specific claim about this tree's remaining lifespan; keep age_estimate as the 300-400 range only). A second protected oak (designated a natural monument in 1990) also stands along the same trail; that is a distinct tree, not covered by this record, and could be a second Lohja lead for a future pass. The grove (Paavolan tammikko) itself is a nationally valuable herb-rich forest reserve, protected since 1994, and is partly on private land, but the tree and its marked path are the public part hard rule 10 asks about. CONTAINER DECISION: Lohja has no published city page. This is the highest-demand candidate in the whole batch (200 Wikidata/pageview signal) and clearly passes the single-tree destination test: a named, century-documented, virally famous single oak with its own marked nature trail built specifically to visit it. Ships as its own new single-tree place, 'Lohja' (or could be titled around the Paavola trail specifically), per the 2026-08-31 exception. Distance from Helsinki (~58km) is beyond the ~30km day-trip join threshold, confirming it should not be folded into Helsinki. Next free id: loh_001 (prefix unused)."
+  }
+]
