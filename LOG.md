@@ -1,6 +1,33 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 (continuation) - famousuk-batch-a merged (3 places, Bristol to 6); a reader's GPS finds 2 Cantonspark register trees
+
+Continued a window an earlier attempt in the same run stopped early with
+budget left. Found one standing claim, `famous-uk-batch-a` (verify), already
+finished on disk as `data/research/famousuk-batch-a-verified.json` but
+uncommitted. Dispatched a write-stories pass on its 4 trees, then merged
+myself: the Brimmon Oak (Newtown, Powys, a pollard oak the A483 bypass was
+rerouted 15m to save), Nellie's Tree (Aberford, three beeches a miner
+grafted into a living N around 1920) and the Survivor Tree (near Moffat, a
+rowan nearly alone in Carrifran valley before 700,000 trees were planted
+around it) all ship as new single-tree places; the Strawberries and Cream
+Tree, a graft-chimera cherry, joins Bristol as bri_006. Released the claim.
+
+Then processed three reader submissions (rows 84-86) tagging trees near
+Cantonspark's main entrance in Baarn, minutes after the same reader's photos
+of brn_001/002 were approved. Two of the three GPS points sat tight on the
+Dutch monumental tree register's coordinates for a giant sequoia and a tulip
+tree. The sequoia reads as the same tree already published as brn_002 at a
+rough placeholder pin 140m off, now upgraded to confirmed; the tulip tree
+was new and shipped as brn_007. The third tag ("Watercypres") matched
+neither register point and two candidates from an old Pinetum list remain
+uncoordinated, so replied asking for a photo rather than guessing which one.
+
+Build, qa.py, superlatives.py and preflight all clean; fixed a stale UK
+country tree-count preflight had been carrying since before this session.
+Logged the write pass's cost. Two commits, pushed.
+
 ## 2026-09-05 (continuation) - famousjapan-batch-i shipped: 9 trees, 4 new single-tree places; Park Sonsbeek page; a fig-tree reply unstuck; two more passes dispatched
 
 Following on from the refill dispatched below: the verify pass (12 Japan
