@@ -3,9 +3,9 @@
   "country": "Finland",
   "status": "needs_curation",
   "intro": "Helsinki's oldest trees are young by European standards; the city only became Finland's capital in 1812, and this far north the best specimens rarely pass four centuries. What the city lacks in age it makes up in official care: 31 individual trees and tree groups hold formal protection as natural monuments, most standing on former manor estates the city later opened to everyone. The list here leans on national records more than raw age: Finland's thickest oak, its thickest willow, a sea buckthorn that decided to become a tree.",
-  "meta_description": "Helsinki's ancient trees range from a king's legendary oak to a willow that once hid 20 children in its trunk. Eight verified locations, real stories.",
+  "meta_description": "Helsinki's ancient trees range from a king's legendary oak to a willow that once hid 20 children in its trunk. Ten verified locations, real stories.",
   "question_answer": "Helsinki's oldest tree is understood to be a Scots pine growing beside a Bronze Age burial cairn in Meilahti, dated by core sampling and ring counting to roughly 340 years old. The claim rests on a single dendrological source and has not been independently corroborated, so treat the age, and the exact tree, as the best current estimate rather than a settled fact.",
-  "question_meta": "A 340-year-old pine beside a Bronze Age grave in Meilahti is likely Helsinki's oldest tree. The full eight, and how each survived this far north.",
+  "question_meta": "A 340-year-old pine beside a Bronze Age grave in Meilahti is likely Helsinki's oldest tree. The full ten, and how each survived this far north.",
   "oldest_tree_id": "hel_006",
   "question_context": "Dendrochronology is unusually hard to apply honestly here: coring a tree to count its rings is invasive, so most age claims for Helsinki's protected trees rest on trunk girth and historical records rather than an actual ring count. The Meilahti pine is the exception, credited by the Finnish outlet Kirkko ja kaupunki with a genuine core-sampled age of around 340 years, which is why this entry treats the figure carefully rather than repeating it as settled. The tree most likely to actually be older, Tali Manor's oak, has never been cored at all; its 616-centimetre girth in 2013 implies an origin somewhere in the 1600s or 1700s, possibly older than the Meilahti pine, but that is inference from thickness, not a counted ring, so it is presented as a range rather than a claim to the title. Helsinki's own natural monument register protects 31 trees and formations city-wide, most valued for size or rarity rather than confirmed age, the honest reason this list leans on national records: Finland's thickest willow, its thickest park lime, its tallest snake-branch spruce, over any single oldest tree.",
   "faq": [
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Helsinki's ancient trees free to visit?",
-      "a": "Yes, all eight stand on public land or in open parks. The Tali Manor Oak is the one exception worth noting: it stands within a working golf course, so stick to the estate's public paths rather than crossing the fairways."
+      "a": "Yes, all ten stand on public land or in open parks. The Tali Manor Oak is the one exception worth noting: it stands within a working golf course, so stick to the estate's public paths rather than crossing the fairways."
     },
     {
       "q": "Why does Helsinki have so few genuinely ancient trees?",
@@ -304,6 +304,65 @@
         "label": "late September, when the berries turn bright orange",
         "kind": "fruit"
       }
+    },
+    {
+      "id": "hel_009",
+      "name": "The Lasipalatsi Willow",
+      "species": "Weeping willow hybrid (Salix x pendulina 'Lasipalatski')",
+      "age_estimate": "about 15 years (the living tree); continuously cultivated at this spot since 1830",
+      "age_min": 13,
+      "age_max": 17,
+      "location": {
+        "address": "Salomonkatu, Kamppi, Helsinki",
+        "latitude": 60.170656,
+        "longitude": 24.935486,
+        "neighbourhood": "Kamppi"
+      },
+      "story": "The first tree in Finland ever placed under official protection was this one, in 1924, and the protection did not save it. The willow had gone in around 1830 beside the Turku Barracks then being built in Kamppi, grew into one of the best known trees in Helsinki, and came down in a storm on 29 December 2003 after 173 years.\n\nWhat stands on Salomonkatu today is not that tree. Cuttings had been taken while the old willow was still up, one was raised on, and on 13 April 2011 it went back into the exact spot behind a low protective fence. Genetically it is the same willow, a clone of the 1830 tree. Physically it is about fifteen years old and slight enough that nobody has recorded a girth for it. The address is nearly two centuries old and the trunk is not, and both of those are true at once.\n\nEven the species is unsettled. It is a hybrid weeping willow, isoriippasalava, carrying the cultivar name 'Lasipalatski' after the building beside it, with white willow, weeping willow and Caucasian willow all put forward among its parents.\n\nTwo minutes from Kamppi metro, on an open pedestrian street. Travelling to see a young tree sounds like a poor trade until you understand what the spot is, and that the city thought the line worth keeping going.",
+      "verified_sources": [
+        "https://fi.wikipedia.org/wiki/Lasipalatsin_salava",
+        "https://www.kirkkojakaupunki.fi/-/onko-tassa-stadin-10-legendaarisinta-puuta-onttoon-salavaan-on-mahtunut-parikymmenta-natiaista-kerrallaan-2"
+      ],
+      "access": "Free, standing on a public pedestrian street beside the Lasipalatsi building. No restrictions.",
+      "transport": "Kamppi metro station, 2 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hel_010",
+      "name": "The Independence Spruce",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "roughly 108 years (sown as seed in 1917)",
+      "age_min": 95,
+      "age_max": 110,
+      "location": {
+        "address": "Iso Puistotie, Kaivopuisto, 00140 Helsinki",
+        "latitude": 60.158045,
+        "longitude": 24.955488,
+        "neighbourhood": "Kaivopuisto"
+      },
+      "story": "This spruce is exactly as old as the country it stands in. Consul General Rudolf Ray sowed the seed on 6 December 1917, the day the Finnish Parliament accepted the declaration of independence, and then raised the seedling privately for the next thirteen years. After he died in 1930 it was lifted, moved to Kaivopuisto and formally presented to Parliament on 13 May 1931 with full ceremony. A granite stone at its roots carries an alternative design for the national coat of arms, drawn by Ray himself.\n\nTwenty-seven years in, the war reached it. The bombing raids on Helsinki in February 1944 sent shrapnel into the trunk and broke the crown clean off. The tree regrew, slowly enough that by the early 1960s the city's foresters were expecting to lose it to stunted growth. They did not. It stands north of the Kaivohuone restaurant on Iso Puistotie, in a park that walks past it all summer without looking up.\n\nWhat it does not have is a measurement. No girth, no height, nothing published, which is an odd gap for a tree with a memorial stone and a parliamentary dedication. If you go with a tape measure, tell us what you get.",
+      "verified_sources": [
+        "https://fi.wikipedia.org/wiki/Itsen%C3%A4isyyden_kuusi",
+        "https://www.wikidata.org/wiki/Q18659412",
+        "https://finna.fi/Record/hkm.HKMS000005:km0000mv04"
+      ],
+      "access": "Free, standing in the public Kaivopuisto park, north side of the Kaivohuone restaurant. No restrictions.",
+      "transport": "Tram 3 or bus to Kaivopuisto, 5-10 minute walk into the park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

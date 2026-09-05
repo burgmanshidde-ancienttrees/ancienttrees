@@ -1,0 +1,60 @@
+{
+  "city": "Turku",
+  "country": "Finland",
+  "status": "needs_curation",
+  "intro": "One tree carries Turku's whole early history, because it is nearly all that survived it. Kalm's Oak grew from a seed around 1750 into a garden Pehr Kalm, the Turku Academy's first professor of economics and a student of Linnaeus, laid out on the Aura riverbank. The Great Fire of 1827 took the rest of the city and the rest of the garden with it. The oak is still standing, called Turku's oldest tree by the city's own register, on the riverside path a short walk from the Market Square.",
+  "meta_description": "Kalm's Oak survived the Great Fire of Turku in 1827 and is called the city's oldest tree. Free to see from the Aura riverside path.",
+  "question_meta": "Turku's oldest tree is Kalm's Oak, planted around 1750 in a garden the Great Fire of 1827 destroyed around it. Where it stands.",
+  "question_answer": "The oldest tree in Turku is Kalm's Oak, a Pedunculate Oak on the bank of the Aura river beside the Sibelius Museum. It grew from a seed around 1750 and was planted in the 1760s in a garden laid out by Pehr Kalm, and survived the Great Fire of Turku in 1827 that destroyed the rest of that garden. The city's own tree inventory, turunpuut.fi, measured it at 4.97 metres round and 17 metres tall in 2020 and calls it the oldest tree in Turku.",
+  "question_context": "Kalm's Oak is named for Pehr Kalm, the Turku Academy's first professor of economics and a student of Carl Linnaeus, who directed the botanical garden the oak was planted in from 1757. The garden itself is gone, burned along with most of the city in the Great Fire of 1827; the oak is effectively the last thing left of it. In 2012 an environmental artwork called Pehr Kalm Revival was installed nearby, tracing the plan of the vanished garden. The tree is visible from the public Aura riverside path without paying anything, but it stands close to the Sibelius Museum's own ticketed garden, and the exact boundary between the open riverbank and the museum's grounds is not signposted, so how close you can walk up to the trunk itself is not fully settled. The city's own tree register, turunpuut.fi, surveyed the oak on 10 July 2020 and recorded 4.97 metres of girth and 17 metres of height, the most precise measurement any source gives it. Turku almost certainly holds other old trees worth researching; this oak is simply the first one mapped here, and a future pass on the city proper would likely grow this into a fuller page.",
+  "hero_tree_id": "tku_001",
+  "oldest_tree_id": "tku_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Turku?",
+      "a": "Kalm's Oak, on the Aura riverbank by the Sibelius Museum, grown from a seed around 1750 and called the city's oldest tree by Turku's own tree register."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It is visible from the public Aura riverside path at no cost. Getting right up to the trunk may cross into the Sibelius Museum's own ticketed garden; the boundary is not clearly marked."
+    },
+    {
+      "q": "How did it survive the Great Fire of Turku?",
+      "a": "The 1827 fire destroyed most of the city and the botanical garden the oak stood in, but the tree itself came through and is still standing on the same spot today."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tku_001",
+      "name": "Kalm's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 275 years (grown from a seed around 1750)",
+      "age_min": 260,
+      "age_max": 280,
+      "girth_cm": 497,
+      "height_m": 17,
+      "location": {
+        "address": "Sibelius Museum grounds, Piispankatu 17, Turku, on the bank of the Aura river",
+        "latitude": 60.4539,
+        "longitude": 22.27678,
+        "neighbourhood": "Sibelius Museum / Aura riverbank"
+      },
+      "story": "The Great Fire of Turku in 1827 took most of the city and it took the botanical garden this oak was planted in. The oak is still standing. It grew from a seed around 1750 and went into the ground on the Piispantalo property in the 1760s, part of the garden Pehr Kalm laid out and directed from 1757. Kalm was the Turku Academy's first professor of economics and a student of Linnaeus, and this tree is effectively the last of his garden.\n\nThe city's own tree inventory calls it the oldest tree in Turku. Its surveyors measured it on 10 July 2020 and recorded 4.97 metres round and 17 metres tall, on the bank of the Aura between the river and the Sibelius Museum. In 2012 an environmental artwork called Pehr Kalm Revival was installed near it, tracing the plan of the garden that no longer exists.\n\nApproach from the riverside promenade, a short walk from the Market Square. The tree is clearly visible from the public path and that costs nothing. How close you can actually get depends on where the museum's own garden begins, and that boundary is one we have not established. If you walk it and find out, tell us.",
+      "verified_sources": [
+        "https://fi.wikipedia.org/wiki/Kalmin_tammi",
+        "https://turunpuut.fi/en/quercus/quercus-robur/1/",
+        "https://www.ts.fi/a/5648149"
+      ],
+      "access": "Free. Visible from the public Aura riverside path; the Sibelius Museum's own garden is ticketed and the exact boundary between the two is not signposted.",
+      "transport": "Central Turku, short walk from the Market Square along the Aura riverside promenade",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

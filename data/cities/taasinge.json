@@ -1,0 +1,59 @@
+{
+  "city": "Taasinge",
+  "country": "Denmark",
+  "status": "needs_curation",
+  "intro": "A 1997 core sample knocked three centuries off this oak's reputation and it is still one of the most visited trees on the island. Ambrosius-egen carries the name of the poet Ambrosius Stub, who worked at nearby Valdemars Slot around 1750 and is said to have written under it. It has stood at the edge of Nørreskovvej on Tåsinge since roughly 1600, protected as a Danish natural monument since 1921, free to reach for anyone crossing the bridge from Svendborg.",
+  "meta_description": "Ambrosius-egen, a roughly 400-year-old oak on Tåsinge named for the poet Ambrosius Stub, protected as a natural monument since 1921. Free, no ticket.",
+  "question_meta": "Tåsinge's remarkable tree is Ambrosius-egen, an oak dated to roughly 400 years by a 1997 core sample, named for the poet Ambrosius Stub.",
+  "question_answer": "The remarkable tree on Tåsinge is Ambrosius-egen, a Pedunculate Oak on Nørreskovvej near Valdemars Slot. A 1997 core sample dated it to roughly 400 years, revising down an earlier 1962 estimate of about 700 years. It is a Danish natural monument, protected since 1921.",
+  "question_context": "Ambrosius-egen's age has been measured twice with very different results: a 1962 estimate put it near 700 years, and a 1997 core boring, which actually counts growth rings rather than guessing from size, brought that down to roughly 400. Both figures are on record and the ring count is the one to trust. The tree takes its name from Ambrosius Stub, a Danish poet who worked as a scribe and tutor at Valdemars Slot a kilometre away around 1750, and is said locally to have read and written beneath it. By then the oak had already stood for about a century and a half. Surgeons removed rot from the trunk in 1973, and some rot and fungal growth are still visible at the base today, which is ordinary for a working oak of this age rather than a sign of decline. Denmark protected it as a natural monument in 1921, and the trunk now measures just under 7.5 metres round, with the tree reaching about 20 metres in height.",
+  "hero_tree_id": "amb_001",
+  "oldest_tree_id": "amb_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree on Tåsinge?",
+      "a": "Ambrosius-egen, an oak dated to roughly 400 years old by a 1997 core sample, named for the poet Ambrosius Stub."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands at the forest edge on Nørreskovvej, no ticket, gate or booking needed."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car or bicycle from Svendborg, across the Svendborgsund bridge onto Tåsinge, then along Nørreskovvej. There is no train station on the island."
+    }
+  ],
+  "trees": [
+    {
+      "id": "amb_001",
+      "name": "Ambrosius-egen",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 750,
+      "height_m": 20,
+      "location": {
+        "address": "Nørreskovvej, about 1 km southwest of Valdemars Slot, Tåsinge, near Svendborg, Denmark",
+        "latitude": 55.01865,
+        "longitude": 10.64076,
+        "neighbourhood": "Tåsinge island, Svendborg municipality"
+      },
+      "story": "A drill bit took three hundred years off this oak. In 1962 it was reckoned to be around 700 years old, the kind of figure that gets onto a sign and stays there. On 13 June 1997 someone bored a core into the trunk and counted the rings, and the answer came back at roughly 400, putting the tree's first year somewhere near 1600. Both figures are still on record. The ring count is the one to believe.\n\nIt carries the name of Ambrosius Stub, the poet, who worked as a scribe and tutor at Valdemars Slot a kilometre up the road around 1750 and is said to have done his reading and writing under it. By then the oak had already been standing for about a century and a half.\n\nThe trunk measures just under 7.5 metres round and the tree reaches about 20 metres. Denmark protected it as a natural monument in 1921. Surgeons cut rot out of it in 1973, and rot and fungus are still visible around the base, which is what a working four-hundred-year-old oak looks like when it is cared for rather than tidied away.\n\nIt stands at the forest edge on Nørreskovvej, on Tåsinge across the bridge from Svendborg. No gate, no ticket, no hunting for it: the road runs straight past.",
+      "verified_sources": [
+        "https://da.wikipedia.org/wiki/Ambrosius-egen",
+        "https://www.visitfyn.dk/ambrosius-egen-ved-svendborg-gdk793875"
+      ],
+      "access": "Free, standing beside Nørreskovvej near Valdemars Slot on Tåsinge; no ticket or booking needed, ordinary public road/forest edge.",
+      "transport": "No station on Tåsinge; reached by car or bicycle from Svendborg, across the Svendborgsund bridge, then along Nørreskovvej.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
