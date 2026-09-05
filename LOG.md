@@ -1,6 +1,12 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-05 - Night run 2026-09-05 23:26 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 20.5 minutes of its 120 minute window, 174 turns, 34 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: hiroshima, _famous-lithuania, _famous-germany, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-05 (continuation 8, of a window an earlier attempt stopped early at 21 min with 99 unspent) - Finished the standing Hiroshima verify claim again: Tomohiro ginkgo + Mount Togo cedar, 13 to 15 trees
 
 Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
