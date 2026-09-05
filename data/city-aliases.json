@@ -882,6 +882,18 @@
       "Freiburga",
       "Friburgo"
     ],
+    "fribourg": [
+      "Freiburg im Üechtland",
+      "Friburgo",
+      "Friburg",
+      "Fryburg",
+      "Fribūras",
+      "Fribūra",
+      "Friburgum Nuithonum",
+      "Freiburg",
+      "Friborgh",
+      "Friburgh"
+    ],
     "fujikawaguchiko": [
       "Fudzsikavagucsiko"
     ],
@@ -1508,6 +1520,11 @@
     ],
     "logan-ohio": [
       "Logan"
+    ],
+    "lohja": [
+      "Lojo",
+      "Lohja linn",
+      "Lohj"
     ],
     "london": [
       "Londen",
@@ -2740,6 +2757,13 @@
       "ITurin",
       "Torine"
     ],
+    "turku": [
+      "Åbo",
+      "Turu",
+      "Túrcú",
+      "Aboa",
+      "ma tomo Tuku"
+    ],
     "uda": [
       "Uda Shi",
       "Uda-chhī"
@@ -2840,6 +2864,10 @@
       "Dunaj",
       "Beč",
       "Bécs"
+    ],
+    "villeneuve": [
+      "Villeneuve FR",
+      "Villeneuve i Fribourg"
     ],
     "vilnius": [
       "Vilna",
@@ -3057,6 +3085,7 @@
     "copenhagen": "Copenhagen",
     "cordoba": "Córdoba, Spain",
     "cork": "Cork (city)",
+    "cremines": "Crémines",
     "crete": "Crete",
     "curinga": "Curinga",
     "cyprus": "Cyprus",
@@ -3088,6 +3117,7 @@
     "fortingall": "Fortingall",
     "frankfurt": "Frankfurt",
     "freiburg": "Freiburg im Breisgau",
+    "fribourg": "Fribourg",
     "fujikawaguchiko": "Fujikawaguchiko",
     "fukuoka": "Fukuoka",
     "fulufjallet": "Fulufjället National Park",
@@ -3177,6 +3207,7 @@
     "llangernyw": "Llangernyw",
     "lodz": "Łódź",
     "logan-ohio": "Logan, Ohio",
+    "lohja": "Lohja",
     "london": "London",
     "los-angeles": "Los Angeles",
     "lucca": "Lucca",
@@ -3331,6 +3362,7 @@
     "takeo": "Takeo, Saga",
     "tallinn": "Tallinn",
     "tarragona": "Tarragona",
+    "tasinge": "Tåsinge",
     "telgte": "Telgte",
     "tenerife": "Tenerife",
     "the-hague": "The Hague",
@@ -3347,6 +3379,7 @@
     "trieste": "Trieste",
     "tsuruoka": "Tsuruoka",
     "turin": "Turin",
+    "turku": "Turku",
     "uda": "Uda, Nara",
     "ueda": "Ueda, Nagano",
     "ueki": "Ueki, Kumamoto",
@@ -3361,6 +3394,7 @@
     "venlo": "Venlo",
     "verona": "Verona",
     "vienna": "Vienna",
+    "villeneuve": "Villeneuve, Fribourg",
     "vilnius": "Vilnius",
     "vorden": "Vorden",
     "waipoua-forest": "Waipoua Forest",
@@ -3388,6 +3422,7 @@
     "bad-blumau": "Bad Blumau",
     "breda": "Breda",
     "chadds-ford": "Chadds Ford, Pennsylvania",
+    "cremines": "Crémines",
     "curinga": "Curinga",
     "den-hout": "Den Hout",
     "doornenburg": "Doornenburg",
@@ -3418,6 +3453,7 @@
     "simsbury": "Simsbury, Connecticut",
     "sintra": "Sintra",
     "stoutenburg": "Stoutenburg",
+    "tasinge": "Tåsinge",
     "tillamook": "Tillamook, Oregon",
     "tolpuddle": "Tolpuddle",
     "ueki": "Ueki, Kumamoto",
@@ -3425,7 +3461,8 @@
     "vorden": "Vorden",
     "wessobrunn": "Wessobrunn",
     "wolfheze": "Wolfheze",
-    "wye-mills-maryland": "Wye Mills, Maryland"
+    "wye-mills-maryland": "Wye Mills, Maryland",
+    "gjerrild": "Gjerrild"
   },
   "unresolved_names": {
     "boetersheim": "no article within 40 km, tried Boetersheim; Boetersheim, Germany",
@@ -3450,6 +3487,7 @@
     "reinborn": "no article within 40 km, tried Reinborn; Reinborn, Germany; search: List of mountains and hills of the Taunus",
     "takahama": "no article within 40 km, tried Takahama (Takahama, no coordinates, disambiguation page); Takahama, Japan; search: Japan Air Lines Flight 123; search: Takahama, Aichi; search: Kyoshi Takahama",
     "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",
+    "timber-creek": "no article within 40 km, tried Timber Creek (Timber Creek, no coordinates, disambiguation page); Timber Creek, Australia; search: Breakfast Creek Hotel; search: Cedar Creek, Queensland (Logan & Gold Coast); search: Wellington Mill, Western Australia",
     "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",
     "vainiai": "no article within 40 km, tried Vainiai; Vainiai, Lithuania; search: Do Architects; search: Gilma Teodora Gylytė",
     "volkenroda": "no article within 40 km, tried Volkenroda; Volkenroda, Germany; search: Loccum; search: Pilgrims' way; search: Kamp Abbey",
