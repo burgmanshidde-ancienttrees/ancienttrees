@@ -44,6 +44,10 @@
     "2026-09-04": {
       "note": "Wrote the regression test for the invented coordinate (c4598e78): CollectSheet.route() is a pure function now and APhotographNeverGetsAnInventedCoordinate covers all four cases; proven to fail on the pre-fix behaviour. f3211e03",
       "at": "2026-09-04T13:55:20+00:00"
+    },
+    "2026-09-05": {
+      "note": "Data digest 09:06 run: git push race, not a real break. Its rebase reported up to date, then push was rejected seconds later because something else landed on main in between (12 knocks/day + session pushes all target main). Later scheduled/dispatched digest runs succeeded (05:27, and cron will retry at 05:15 tomorrow). Wrote a retry-loop fix for .github/workflows/data-digest.yml's commit step but could not push it: the bot token lacks the workflows scope, GitHub rejected the push outright. Left for Hidde to land by hand.",
+      "at": "2026-09-05T17:50:01+00:00"
     }
   }
 }
