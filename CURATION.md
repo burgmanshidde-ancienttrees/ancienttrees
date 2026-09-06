@@ -2,6 +2,26 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 (continuation 11) - 8 new Slovak single-tree/small-cluster places published, Arnhem Dutch overlay finished
+
+Hronsek (hrs_001, memorial lindens by a UNESCO wooden church, count
+disputed 3/4/6 across sources), Trencianske Stankovce (tst_001, the
+two Lipsky lindens, age disputed 250 vs 500 years), Lipany (lip_001,
+town-square linden, Tree of the Year 2011), Drnava (drz_001, Tree of
+the Year 2020, in the village chronicle since 1670), Dubinne
+(dbi_001, likely Slovakia's oldest oak, undatable hollow trunk, Tree
+of the Year 2010), Uzovska Panica (uzp_001, service tree, Tree of the
+Year 2019), Casta (cst_001, Slovakia's largest sweet chestnut) and
+Zilina (zil_001/002/003, a Tree-of-the-Year plane plus two disputed
+street trees, Slovakia's 4th-largest city, previously unpublished).
+All ship under the 2026-08-31 single-famous-tree exception. 0 flagged
+as unverifiable beyond the honest disputes named above, 0 photos
+found (verify-only scope); all 10 trees ship with `photo.status:
+missing`. Full detail in LOG.md.
+
+Also completed the Dutch translation overlay for Arnhem (37/37 trees
+now rendered), started in an earlier continuation today.
+
 ## 2026-09-06 (continuation 8) - Hiroshima +2, Sulechow +1, three new Polish single-tree places; the germany leads-file staleness bug caught again
 
 Hiroshima: hir_016 (Fukuoji Lantern Cedars, hillside temple, three
