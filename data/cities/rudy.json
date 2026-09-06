@@ -1,0 +1,60 @@
+{
+  "city": "Rudy",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Rudy is a single village built around a former Cistercian abbey, and its one remarkable tree stands in the abbey's own park. In October 2022 someone set the oak alight from inside its hollow trunk; a forestry expert's assessment the following year found it alive and recovering. Its 7.35-metre girth puts it among the widest oaks recorded in Upper Silesia, and it already stood in this park when a 1752 engraving of the abbey grounds was made.",
+  "meta_description": "Dab Cysters, a 7.35-metre-round oak in the Cistercian abbey park at Rudy, Poland, survived an arson attack in 2022 and is still growing.",
+  "question_meta": "Rudy's remarkable tree is Dab Cysters, a veteran oak in the Cistercian abbey park that survived an arson attack in 2022.",
+  "question_answer": "The remarkable tree at Rudy is Dab Cysters (the Cistercians' Oak), a pedunculate oak standing in the park of the former Cistercian abbey in Rudy, Silesian Voivodeship, Poland. Its trunk measures 7.35 metres round, and estimates put its age between 400 and 550 years depending on the source.",
+  "question_context": "Two sources measured the trunk at 7.35 metres round, among the widest recorded in Upper Silesia, though they disagree on height (26 versus 32 metres) and give slightly different ages, roughly 450 to 500 years. The tree stands in the 95-hectare English-style park around the former Cistercian abbey at Rudy, a park three dendrology trails now run through. It already appears in a 1752 engraving of the abbey by the German painter Johann Elias Ridinger, and an 1858 history of the monastery describes the oak by name, which is why the wide age range is treated as reasonable rather than exaggerated. In October 2022 someone set a fire inside the tree's partly hollow trunk, an act of vandalism reported to the police and confirmed by the Regional Directorate of State Forests in Katowice. A tomography scan followed, and by mid-2023 the professor who examined it reported the tree in good condition. Acorns collected from it have since been grown into hundreds of saplings planted elsewhere in Poland.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree at Rudy?",
+      "a": "Dab Cysters, the Cistercians' Oak, a pedunculate oak standing in the park of the former Cistercian abbey at Rudy, Poland."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The abbey's 95-hectare park is open public ground with marked walking trails; only the abbey buildings themselves require a paid ticket."
+    },
+    {
+      "q": "Did the tree really survive a fire?",
+      "a": "Yes. In October 2022 someone set a fire inside its hollow trunk. A forestry expert's tomography assessment the following year found the tree alive and recovering, and no later reports of decline have been found."
+    }
+  ],
+  "hero_tree_id": "rud_001",
+  "oldest_tree_id": "rud_001",
+  "trees": [
+    {
+      "id": "rud_001",
+      "name": "Dab Cysters",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 450 to 500 years",
+      "age_min": 400,
+      "age_max": 550,
+      "girth_cm": 735,
+      "location": {
+        "address": "Cistercian abbey park (ul. Cysterska 4), Rudy, gmina Kuznia Raciborska, Silesian Voivodeship, Poland",
+        "latitude": 50.194197,
+        "longitude": 18.449383,
+        "neighbourhood": "Pocysterski Zespol Klasztorno-Palacowy park, Rudy"
+      },
+      "story": "Someone set fire inside this oak's hollow trunk in October 2022, an act of vandalism reported to the police and confirmed by the Regional Directorate of State Forests in Katowice. A tomography scan followed, and by the summer of 2023 the professor who examined it called the tree in good condition, alive and holding.\n\nThe oak stands in the 95-hectare park that once belonged to the Cistercian abbey at Rudy, and locals call it Dab Cysters, the Cistercians' Oak. Its trunk measures 7.35 metres round, among the widest recorded in Upper Silesia, and estimates put its age between 400 and 550 years depending on which account you trust. A 1752 engraving by the German painter Johann Elias Ridinger already shows the abbey grounds with a tree standing roughly here, and an 1858 history of the monastery describes the oak by name.\n\nKing John III Sobieski is said to have stayed at the abbey in August 1683, on his way to relieve the siege of Vienna, though nothing ties that visit to this specific tree rather than the monastery itself.\n\nAcorns from the oak have since been grown into hundreds of saplings planted across Poland, a small multiplication of a tree that was nearly burned out from the inside.",
+      "verified_sources": [
+        "https://kopalniawiedzy.pl/dab-szypulkowy-Cysters-pomnik-przyrody-Pocysterski-Zespol-Klasztorno-Palacowy-Rudy-pozar,35681",
+        "https://www.polskieszlaki.pl/dab-cysters-w-rudach.htm"
+      ],
+      "access": "Free, public grounds. Stands in the 95-hectare English-style park surrounding the former Cistercian abbey (three dendrology trails run through it); the abbey buildings themselves need a paid ticket and are open Tue-Sun 12:00-17:00, but the park and the tree do not require one.",
+      "transport": "In Rudy village itself (Kuznia Raciborska gmina), Silesian Voivodeship; no rail station, reached by local bus to Rudy and a short walk into the abbey park.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/2025-07_Rudy_%2810%29.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Marek Mroz, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2581,
+        "height": 3872
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

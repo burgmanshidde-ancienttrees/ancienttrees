@@ -456,6 +456,12 @@
    "seen": "2026-09-03",
    "cost": "one fetch during the famous-trees batch1 verify pass (Arbol del Tule)",
    "workaround": "unknown this pass; ciudadania-express.com and sinembargo.mx covered the same certification story and loaded fine"
+  },
+  "silale.lt": {
+   "behaviour": "Cloudflare 'you have been blocked' page (HTTP 200 body, not a connection error) to both WebFetch and curl with a spoofed browser user agent; this is a refusal, not a hang, so it fails fast rather than burning the window",
+   "seen": "2026-09-06",
+   "cost": "two fetch attempts during the Lithuania (_famous-lithuania) verify pass, trying to reach the municipality's own list of protected natural heritage objects for Silale town",
+   "workaround": "unknown this pass; lt.wikipedia's per-object articles and pamatyklietuvoje.lt/silalesbiblioteka.lt covered the two Silale trees checked well enough without it. A Wayback Machine snapshot was not tried."
   }
  }
 }
