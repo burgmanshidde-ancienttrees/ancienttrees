@@ -1,6 +1,80 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 9) - Finished the stalled UK claim: 3 new single-tree places, 3 duplicates caught, 1 held for Hidde; plus Zehdenick's Gerichtslinde
+
+Picked up after continuation 8 stopped at 50 minutes having shipped
+6 trees, 70 of 120 unspent, per the standing rule that a productive
+run should not get an early night. `passcheck.py --claims` showed
+one standing claim, `_famous-united-kingdom` verify, by night-run,
+with real uncommitted output on disk: `data/research/famousuk-
+verified.json`, 8 trees, plus five staged `.scratch/entry_*.json`
+story drafts from a write pass already in progress. Finished it
+rather than restarting it.
+
+Before writing the remaining stories, checked each of the 8 against
+the site as it actually stands rather than trusting the lead file,
+per the "check whether the city is already done" rule, and it caught
+real duplication the earlier verify pass had missed: 3 of the 8 were
+re-verifications of trees already live under different names (Holy
+Thorn -> Glastonbury's gls_001, Tolpuddle Martyrs Tree -> tol_001,
+Preston Twin -> Brighton's bhm_001, all three word-for-word the same
+facts), and a 4th (Gilwell Oak) was already researched, written and
+pulled on 2026-09-01 for the same hard-rule-10 reason this pass
+independently rediscovered (Scout Adventures asks a reception
+sign-in, which the rule's own text calls a no, distinct from paid
+entry). Marked all four in `data/leads/_famous-united-kingdom.json`
+rather than re-publishing or re-litigating, so the next pass does
+not repeat this.
+
+**Published the 3 genuinely new ones** as single-tree places under
+the 2026-08-31 exception, each independently notable enough to be
+worth the trip alone:
+- **Craigends** (Renfrewshire): the Craigends Yew, a single male yew
+  that has spread by layering into what reads as a small grove,
+  Ancient Tree Inventory #31486, shortlisted for Scotland's Tree of
+  the Year 2016.
+- **Groton** (Suffolk): the Groton Winthrop Mulberry, planted around
+  1550 by the grandfather of John Winthrop, first governor of
+  Massachusetts Bay.
+- **Stratfield Saye** (Hampshire): Wellington's Wellingtonia, one of
+  the 50 Great British Trees (2002), among Britain's first giant
+  sequoias, planted in the Duke's own memory.
+
+**Held back The Fuck Tree** (Hampstead Heath, London): verifies
+cleanly on every factual test (alive, sourced, genuinely public) but
+its whole claim to notability is a cruising-ground reputation rather
+than age or dendrology. That is a brand/tone call outside a research
+pass's authority, not a fact question, so it is flagged FOR HIDDE in
+the leads file rather than published or discarded.
+
+Fixed United Kingdom's country page, whose counts were stale before
+this session touched it (20 places/95 trees against the actual 24/99).
+Claim released.
+
+**Then, since the window still had time: `leads.py --ready` had
+exactly one fully-verified, unwritten tree**, Zehdenick's Gerichtslinde
+(zeh_001, Brandenburg), a 350-400 year old lime whose own name is a
+mystery even to its own German Wikipedia article (nobody knows if
+"court linden" comes from the district court now beside it, or an
+older assembly-tree use). The verify pass that found it called it a
+weaker single-tree case than its siblings and left it "for a writer
+to weigh" rather than asserting it. Per CLAUDE.md, a judgement call
+about whether a tree is good enough never blocks publication, so it
+shipped: own Wikipedia article, official Naturdenkmal No. 228, free
+public access, its own railway station. Published as its own place,
+`data/cities/zehdenick.json`.
+
+Left Germany's country-page count drift alone (166/32 against the
+actual 180/45, far more than one tree explains): it is the
+pre-existing "recurring germany leads-staleness bug" continuation 8
+already flagged, not something to chase down inside this commit.
+
+Both pushed as separate commits. Build (4706 pages), qa.py (7111
+pages), preflight.py (466 cities, 0 problems) and superlatives.py
+(683 claims, no collisions) all clean after each. No claims standing
+at the end of this run.
+
 ## 2026-09-06 (continuation 8) - Hiroshima +2, Sulechow +1, three new Polish single-tree places; dispatched a UK/Canada famous-tree verify pass
 
 Picked up after continuation 7 stopped at 10 minutes having shipped 0
