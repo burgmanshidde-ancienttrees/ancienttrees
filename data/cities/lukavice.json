@@ -1,0 +1,69 @@
+{
+  "city": "Lukavice",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Before the First World War, the managers of the Auersberg estate tried to kill this oak by stripping away dozens of cartloads of soil from around its roots, a slow and deniable way to finish a tree. It survived, and in 2024 the country voted it Czech Tree of the Year. It grows on the open ground of a former fortress at Lukavice, more than seven metres round and estimated at nearly 800 years old, now a habitat in its own right for fungi, beetles and bats.",
+  "meta_description": "The Lukavický dub, Czech Tree of the Year 2024, is a 700cm oak on a former fortress site, nearly 800 years old, once targeted for a slow death.",
+  "question_meta": "Lukavice's ancient tree is a 700cm oak, nearly 800 years old, voted Czech Tree of the Year in 2024. It once survived a deliberate attempt to kill it.",
+  "question_answer": "The Lukavický dub is an oak on the open ground of a former fortress at Lukavice, its trunk exceeding seven metres round and estimated at nearly 800 years old. In 2024 it was voted Czech Tree of the Year.",
+  "question_context": "The oak grows where a fortress belonging to the local Auersberg estate once stood, in what was its courtyard. Before the First World War the estate's own management reportedly tried to kill the tree by stripping dozens of cartloads of soil away from its roots; it survived regardless, and stands today at more than seven metres round and 31 metres tall. Eight centuries of standing still has turned it into more than a tree: it now carries its own fungi, beetles and bats, most needing wood that has been dead a long time inside a trunk that is still alive. It has been legally protected since 1990, and in 2024 the country voted it Czech Tree of the Year. The sources call it simply dub, oak, without naming the species further; if you can tell a pedunculate from a sessile by the acorn stalks, tell us which this is. It stands on open community ground in the village of Lukavice, free at any time.",
+  "faq": [
+    {
+      "q": "How old is the Lukavický dub?",
+      "a": "Estimated at nearly 800 years, based on its size rather than a ring count; treat it as a wide estimate rather than a precise figure."
+    },
+    {
+      "q": "What did the Auersberg estate do to it?",
+      "a": "Before the First World War, the estate's management reportedly stripped dozens of cartloads of soil from around its roots in a slow attempt to kill it. The tree survived."
+    },
+    {
+      "q": "When is it worth visiting?",
+      "a": "January and February, when the bare branches show the whole frame of an 800-year-old tree."
+    }
+  ],
+  "oldest_tree_id": "luk_001",
+  "trees": [
+    {
+      "id": "luk_001",
+      "name": "Lukavický dub (Dub na Hrádku / Dub u Lukavické tvrze)",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "nearly 800 years",
+      "age_min": 700,
+      "age_max": 850,
+      "girth_cm": 700,
+      "location": {
+        "address": "On the open ground of a former fortress (Hrádek), Lukavice",
+        "latitude": 49.88918667,
+        "longitude": 15.83506167,
+        "neighbourhood": "Lukavice, Chrudim District, Pardubice Region"
+      },
+      "verified_sources": [
+        "https://ct24.ceskatelevize.cz/clanek/domaci/stromem-roku-je-pamatny-lukavicky-dub-354616",
+        "https://www.stromroku.cz/vylety/lukavicky-dub"
+      ],
+      "access": "Free, on open community ground at the former fortress site",
+      "transport": "Village of Lukavice, Chrudim District",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "container": {
+        "type": "own_place",
+        "place": "Lukavice, Czech Republic"
+      },
+      "story": "Somebody once tried to kill this oak with a shovel. Before the First World War the management of the Auersberg estate had dozens of cartloads of soil stripped away from around its roots, which is a slow and deniable way to finish a tree. It is still standing, and in 2024 the country voted it Czech Tree of the Year.\n\nIt grows on the open ground of the Hrádek at Lukavice, the site of a fortress belonging to the local nobility, and it stood in that courtyard while the courtyard was still a courtyard. The trunk is more than seven metres round and the tree is 31 metres tall. Its age is estimated at nearly 800 years, which would put its first seasons somewhere in the thirteenth century; that is an estimate rather than a count, and the honest band around it is wide.\n\nEight centuries of standing still has turned it into a habitat rather than a tree. It carries its own fungi, beetles and bats, most of which need wood that has been dead for a long time inside a tree that is still alive. It has been legally protected since 1990.\n\nThe sources call it dub, oak, and go no further. If you can tell a pedunculate from a sessile by the acorn stalks, tell us which this is.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the whole frame of it is readable"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

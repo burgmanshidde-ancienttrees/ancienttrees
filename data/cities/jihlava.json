@@ -1,0 +1,62 @@
+{
+  "city": "Jihlava",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Students in Jihlava campaigned this copper beech to the national Tree of the Year title in 2003; twenty-three years later it is entered again, for tree of the quarter century, still standing beside the church of St James the Greater. Two measurements taken nine years apart disagree on its age by nearly a century, 211 years in 1994 against 132 in 2003, and neither has been resolved. What is certain is the ground: a medieval cemetery surrounded this church for centuries before the burials moved elsewhere.",
+  "meta_description": "Jihlava's copper beech by St James's Church won Czech Tree of the Year in 2003. Its age is disputed by nearly a century between two measurements.",
+  "question_meta": "Jihlava's ancient tree is a copper beech by St James's Church, age disputed between 132 and 220 years, in the middle of the medieval town.",
+  "question_answer": "The remarkable tree in Jihlava is a copper beech beside the Church of St James the Greater, on the grounds of a former medieval cemetery. It is 4.44 metres round, 19 metres tall, and its age is disputed: an estimate made in 1994 put it at 211 years, one in 2003 at 132.",
+  "question_context": "A campaign by local students won the tree the Czech national Tree of the Year title in the autumn of 2003, and a September 2026 article confirms it is entered again in a 25th-anniversary tree of the quarter-century competition, still alive and standing. The two age estimates, taken nine years apart, are of the same trunk and differ by nearly a century, so this page carries the range rather than picking a side. The churchyard around it was a burial ground from the early Middle Ages until the cemetery moved elsewhere, so the beech has spent its life rooted in what was once a graveyard, whatever its actual age turns out to be. The tree measures 4.44 metres round with a crown spread of 21.4 metres, a copper beech rather than the plain green form. It stands in an open public churchyard a short walk from Jihlava's main square, free and reachable at any hour of the day or night.",
+  "faq": [
+    {
+      "q": "How old is Jihlava's copper beech?",
+      "a": "Disputed. An estimate made in 1994 put it at 211 years, one made in 2003 at 132. Both stand, and nobody has resolved the gap."
+    },
+    {
+      "q": "Why did it win Tree of the Year?",
+      "a": "A campaign by local students won it the Czech national Tree of the Year title in 2003. It is entered again in a 2026 competition for tree of the quarter century."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in an open public churchyard a short walk from Jihlava's main square."
+    }
+  ],
+  "oldest_tree_id": "jih_001",
+  "trees": [
+    {
+      "id": "jih_001",
+      "name": "Buk u kostela v Jihlavě (Beech by St James's Church)",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "disputed, roughly 130 to 215 years",
+      "age_min": 132,
+      "age_max": 220,
+      "girth_cm": 444,
+      "location": {
+        "address": "Beside the Church of St James the Greater (kostel sv. Jakuba), on the grounds of a former medieval cemetery, Jihlava",
+        "latitude": 49.39483056,
+        "longitude": 15.59408333,
+        "neighbourhood": "Jihlava town centre, Vysočina Region"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Buk_u_kostela_v_Jihlav%C4%9B",
+        "https://www.stromroku.cz/vylety/buk-u-kostela-v-jihlave",
+        "https://zpravy.kurzy.cz/873105-jihlava-po-23-letech-se-vratili-k-buku-ktery-pomohli-proslavit/"
+      ],
+      "access": "Free, in a public churchyard/square in central Jihlava",
+      "transport": "Central Jihlava, short walk from the main square",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Jihlava, Czech Republic"
+      },
+      "story": "A group of Jihlava students campaigned this beech to the national Tree of the Year title in the autumn of 2003. Twenty-three years later it is entered again, in a competition for the tree of the quarter century, still standing beside the church of St James the Greater in the middle of town.\n\nIt is a copper beech, 4.44 metres round, 19 metres tall, with a crown 21.4 metres across, and nobody agrees how old it is. An estimate made in 1994, four years after it was declared a memorial tree, put it at 211 years. Another in 2003 put it at 132. The two readings are of the same trunk, nine years apart, and they differ by almost a century, so take the range and not either end of it.\n\nWhat is not in doubt is the ground it grows out of. A cemetery surrounded this church from the early Middle Ages until the burials moved elsewhere, and the open space around the beech is what was left when they went. However old it turns out to be, it has spent its whole life rooted in a graveyard.\n\nIt stands in an open public churchyard in central Jihlava, a short walk from the main square, free and reachable at any hour.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

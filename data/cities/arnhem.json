@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane beside the village church that watched German soldiers move in and Allied paratroopers fight past. Five more stand in Velperplein park, laid out after an 1880 design competition. Park Sonsbeek adds seven, Park Zijpendaal and Gulden Bodem another five, and Park Angerenstein four within a hundred metres of each other, including a tulip tree 37 metres tall and 5.39 metres round. None require a ticket.",
-  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 37 verified trees, real stories, how to reach each one.",
+  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 38 verified trees, real stories, how to reach each one.",
   "question_answer": "Arnhem's oldest tree is very likely one of De Poortwachters, three sweet chestnuts planted around 1650 to 1700 at the entrance to Kasteel Zijpendaal, now roughly 350 to 375 years old. Locals have nicknamed the two thickest Hans and Gretel and the leaner third the Witch.",
-  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 36 on the city's list.",
+  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 37 on the city's list.",
   "question_context": "De Poortwachters, three sweet chestnuts at the gate of Kasteel Zijpendaal, are the best-documented candidates for Arnhem's oldest tree, planted somewhere between 1650 and 1700 and now measured at roughly 750, 718 and 472 centimetres around. A local legend credits Karel van Egmond, the last independent Duke of Guelders, with planting them personally; the dates rule that out, since he died in 1538, more than a century before these trees are estimated to have gone in. What the legend gets right is their role: everyone visiting the castle since has had to walk between them, which is likely how they earned their name. The competing candidate is the Huissensedijk plane beside the Bonifatiuskerk in Elden, dated anywhere from 1725 to 1800, a spread wide enough that at its earliest it could be the older. Given that uncertainty, the chestnuts are the safer answer, and they are free to visit any day. Park Sonsbeek has a claimant of its own, an oak beside the Lorentz Monument that the national register dates to between 1750 and 1800 and calls possibly one of the oldest trees in that park, which is a claim to the park rather than to the city.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Arnhem's ancient trees free to visit?",
-      "a": "Nearly all of them. 36 of 37 stand in public parks, public woodland or beside public streets, with no ticket and no gate. Three need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk; the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you; and the copper beech on Velperweg stands in a private garden, visible from a public car park but not reachable, so that one is a look rather than a visit."
+      "a": "Nearly all of them. 37 of 38 stand in public parks, public woodland, a free castle courtyard or beside public streets, with no ticket and no gate. Three need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk; the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you; and the copper beech on Velperweg stands in a private garden, visible from a public car park but not reachable, so that one is a look rather than a visit. The rare robinia at Kasteel Doorwerth, out past Renkum, is free to reach in the castle's own courtyard; only the castle building itself charges."
     },
     {
       "q": "Which Arnhem tree is the thickest of its kind in the Netherlands?",
@@ -1195,6 +1195,44 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_038",
+      "name": "The Robinia of Kasteel Doorwerth",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "about 350 years, by local tradition",
+      "age_min": 250,
+      "age_max": 350,
+      "location": {
+        "address": "Fonteinallee, Kasteel Doorwerth, Doorwerth",
+        "latitude": 51.966682,
+        "longitude": 5.788309,
+        "neighbourhood": "Inner courtyard of Kasteel Doorwerth, a medieval moated castle near Arnhem, about 6.9km from Arnhem's published arn_003"
+      },
+      "story": "A black locust normally carries a feathery leaf made of a dozen small leaflets. This one carries a single blade, a rare cultivar called Unifoliola, and it is held locally to be the oldest black locust in the Netherlands.\n\nIts date is genuinely disputed. The castle's own account and the Dutch tree register both say 1678: three robinias planted on the forecourt by Anton I van Aldenburg, count of Doorwerth, to mark the Peace of Nijmegen, two of them felled in the 1880s and this one not. The plaque at the tree tells a different story, crediting the Frenchman Pierre Robin with bringing the species over from the eastern United States and putting this one in around 1601, and a date of 1579 circulates as well. By the better sourced version it is about 350 years old. By the plaque it would be older still, and nobody has settled it.\n\nWhat is not disputed is what it has come through. Kasteel Doorwerth, a moated medieval castle, was wrecked in the Second World War and rebuilt around it. The tree stayed where it was, and has had its crown taken back three times since, in 1965, 2010 and 2016, to keep the weight off an old frame.\n\nThe inner courtyard where it grows is free to walk into. Only the house itself costs money.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "late May and June, when the white flower chains hang out of the crown"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/robinia-kasteel-doorwerth/",
+        "https://doorwerthinfo.nl/en/castle-doorwerth/old-acacia-tree-castle-doorwerth/",
+        "https://nl.wikipedia.org/wiki/Kasteel_Doorwerth"
+      ],
+      "access": "Free. The inner courtyard (binnenplein) of Kasteel Doorwerth is described by multiple independent sources as freely accessible without a ticket, with free parking on site; only entering the castle building itself is paid.",
+      "transport": "Village of Doorwerth, near Arnhem/Renkum; no rail station, reachable by local bus and a short walk, or about 6.9km (a short drive or cycle) from central Arnhem.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

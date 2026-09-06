@@ -1,0 +1,61 @@
+{
+  "city": "Mcely",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "This beech has stood under legal protection since 25 July 1978, longer than almost anything else on this map, and that date is very nearly everything anyone has written about it. It grows in the Podlesí woods near the village of Mcely, 26 metres tall and 4.15 metres round, singled out by an inventory decades ago and left standing quietly in the forest ever since, with no age, no plaque and no local story attached.",
+  "meta_description": "The Buk v Podlesí near Mcely has been protected since 1978, 4.15 metres round, standing quietly in the forest with no recorded age.",
+  "question_meta": "The Buk v Podlesí near Mcely has been protected since 1978, one of the longest-standing designations in the country. Its age was never recorded.",
+  "question_answer": "The Buk v Podlesí is a European beech in the Podlesí forest near Mcely, 26 metres tall and 4.15 metres round, protected as a memorial tree since 25 July 1978. No age has ever been published.",
+  "question_context": "Most protected trees carry a paper trail of competitions, plaques and newspaper coverage, because a town chose to love them publicly. This one does not: it was singled out by an inventory nearly fifty years ago and has simply been left standing in the woods since. The state register and a Wikimedia Commons category both trace to the same official designation rather than to two independent accounts, so the record here is thin but not in doubt about the tree's existence, its 26-metre height or its 4.15-metre girth. Mcely's own page about its memorial trees names other trees in the village and not this one, which is itself worth knowing before you go looking for a plaque that is not there. It stands in forest near the village of Mcely in Central Bohemia, reached on foot or by road, free at any time, with nothing to mark it beyond the tree itself.",
+  "faq": [
+    {
+      "q": "What is the Buk v Podlesí?",
+      "a": "A European beech in the Podlesí forest near Mcely, 4.15 metres round, protected as a memorial tree since 1978."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Unknown. No source has ever recorded its age or a reason for its protection beyond the 1978 designation."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in forest near the village, reached on foot or by road."
+    }
+  ],
+  "oldest_tree_id": "mce_001",
+  "trees": [
+    {
+      "id": "mce_001",
+      "name": "Buk v Podlesí",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 415,
+      "location": {
+        "address": "Podlesí forest near Mcely",
+        "latitude": 50.298292,
+        "longitude": 15.055318,
+        "neighbourhood": "Mcely, Nymburk District, Central Bohemian Region"
+      },
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q26788737",
+        "https://commons.wikimedia.org/wiki/Category:Buk_v_Podles%C3%AD"
+      ],
+      "access": "Free, standing in a forest near the village of Mcely",
+      "transport": "Village of Mcely, Nymburk District; rural, reached on foot/by road",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Mcely, Czech Republic"
+      },
+      "story": "This beech has been under legal protection since 25 July 1978, which is longer than almost anything else on this map, and that is very close to everything anybody has written down about it.\n\nThe rest of the record is two numbers. Twenty-six metres tall, 4.15 metres round at the trunk. It stands in the Podlesí woods near the village of Mcely in the Nymburk district of Central Bohemia, in forest rather than in a park or a churchyard, which is where protected trees usually turn up. The state register carries the entry and the coordinate. Mcely's own page about its memorial trees names other trees and not this one. No age has ever been recorded and no local story attaches to it.\n\nThat absence is worth something. Most protected trees are protected because a town decided it loved them, and the loving leaves a paper trail of competitions, plaques and newspaper pieces. This one was singled out nearly fifty years ago by somebody doing an inventory, and then left standing in a wood, and it has been quietly getting on with it ever since.\n\nWhich does mean the age is anybody's guess, and we would rather not guess. If you know roughly how old it is, or why it was designated, tell us and we will put it on the page.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

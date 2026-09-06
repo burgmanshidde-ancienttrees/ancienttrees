@@ -2,19 +2,19 @@
   "city": "Den Bosch",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Den Bosch grew its oldest trees on top of its own dismantled defences. When a 19th-century law stripped the city's fortress walls of military status, the bastions became parks almost overnight, and the plantings that went in then are now the city's monumental trees. Eleven verified entries now span three clusters, the bastion parks, the Sint Janskerkhof and Casinotuin trees a few streets over, and the star-shaped Pettelaarse Schans fort south of the centre, from a cherry rooted in the medieval wall to a 170-year-old plane, the oldest yet confirmed.",
-  "meta_description": "Den Bosch's oldest trees grow on former fortress bastions and two more clusters. Eleven verified entries, real stories, how to reach each one.",
-  "question_answer": "Den Bosch's oldest tree is a London plane at Sint Janskerkhof, roughly 170 years old per the city's own monumental-tree register, growing on the square that was the cathedral's graveyard until the 1860s.",
-  "question_meta": "A roughly 170-year-old London plane at Sint Janskerkhof is Den Bosch's oldest tree. Where to find it, and the city's ten other verified ancient trees.",
-  "question_context": "The plane's age comes from 's-Hertogenbosch's own municipal monumental-trees register, which records it at roughly 170 years with a girth over six metres, the largest of any tree currently verified for this city. It grows at Sint Janskerkhof, the square beside the Sint-Jan cathedral that served as the city's burial ground until it was cleared from 1860 onward, which fits a mid-19th-century planting close behind that clearance. Only the register names this individual tree; a 1996 survey of the city's oldest trees corroborates that planes are among the documented old species in this part of town without identifying this one by name, so the entry is flagged rather than fully confirmed. It overtakes the previous answer, a roughly 120-year-old Norway maple on Bastion Oranje, once the Sint Janskerkhof and Casinotuin cluster was added: five more trees stand within a few streets of the plane, and two further oaks and a poplar grow across town on the star-shaped Pettelaarse Schans.",
+  "intro": "Den Bosch grew most of its oldest trees on top of its own dismantled defences, but its actual oldest tree stands somewhere else entirely. A 19th-century law stripped the city's fortress walls of military status, and the bastions became parks almost overnight, feeding three of the city's four clusters. The fourth is a lime tree in Rosmalen, roughly 250 years old, growing on the mound of a convent burned down in 1584. Twelve verified entries in all, from a cherry rooted in the medieval wall to that lime on its vanished convent.",
+  "meta_description": "Den Bosch's oldest tree is a ~250-year-old lime on a vanished convent's mound in Rosmalen. Twelve verified entries, real stories, how to reach each.",
+  "question_answer": "Den Bosch's oldest tree is the Annenborch Lime, standing on a small mound in the Overlaet district of Rosmalen, the only visible remnant of the Annenborch, a house of Augustinian canonesses burned down in 1584. The tree itself came later, planted on the mound somewhere between 1750 and 1800, which puts it at roughly 250 years old.",
+  "question_meta": "Den Bosch's oldest tree is a ~250-year-old lime in Rosmalen, on a convent mound burned in 1584. Where it stands, and eleven more worth the walk.",
+  "question_context": "The lime's age comes from a planting band of 1750 to 1800 recorded by bomenbieb.nl and from local accounts that it survived the severe storm of 1767; the two sit awkwardly together, since a tree planted as late as 1800 could not have lived through a storm in 1767, and nobody has reconciled the two figures. It stands on the low mound that is the only trace of the Annenborch, a house of Augustinian canonesses founded in 1503 and burned down in 1584 and never rebuilt, now inside the Overlaet housing estate in Rosmalen, a district that has been part of 's-Hertogenbosch since 1996. It overtakes the previous answer, a roughly 170-year-old London plane at Sint Janskerkhof, which anchors a separate cluster of five trees a few streets from the cathedral. Eleven more trees stand near the historic centre, across the bastion parks and the star-shaped Pettelaarse Schans fort; the Annenborch Lime stands alone in Rosmalen, a short bus ride south-east.",
   "faq": [
     {
       "q": "What is the oldest tree in Den Bosch?",
-      "a": "A London plane at Sint Janskerkhof, roughly 170 years old, growing on the square that served as the cathedral's graveyard until the 1860s."
+      "a": "The Annenborch Lime, roughly 250 years old, growing on a small mound in Rosmalen that is the only trace of a convent burned down in 1584."
     },
     {
       "q": "Are Den Bosch's ancient trees free to visit?",
-      "a": "Yes, all eleven stand in public parks or on a public street with free access at any time."
+      "a": "Yes, all twelve stand in public parks, on a public street or on open community ground, with free access at any time."
     },
     {
       "q": "Why do Den Bosch's oldest trees grow on old fortress walls?",
@@ -382,6 +382,36 @@
         "status": "missing"
       },
       "how_to_recognise": "The taller of two Canadian poplars standing seven metres apart, and visibly the thicker of the two."
+    },
+    {
+      "id": "dbo_012",
+      "name": "The Annenborch Lime",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Augustinessenborch, Overlaet, Rosmalen ('s-Hertogenbosch)",
+        "latitude": 51.722464,
+        "longitude": 5.359563,
+        "neighbourhood": "A small fenced mound (the site of the former Annenborch convent, burned down 1584) inside the Overlaet housing development, about 5.1km from Den Bosch's published dbo_004"
+      },
+      "story": "The convent burned down in 1584 and was never rebuilt. What is left of it is a low mound in a housing estate, and a lime tree standing on top of it.\n\nThe Annenborch was a house of Augustinian canonesses, founded in 1503 by a knight named Jan Bax, and the fire took it eighty years later. The tree came afterwards, planted on the mound somewhere between 1750 and 1800, which makes it roughly 250 years old and, by local reckoning, the oldest tree inside the boundaries of 's-Hertogenbosch. Local accounts have it surviving the severe storm of 1767, which would put it at the very early end of that planting range or push the range itself back; the two figures sit awkwardly together and nobody has reconciled them.\n\nSince then it has watched the fields around it become the Overlaet district, which built itself around the mound rather than over it. It has been legally protected since the 1970s. Rosmalen knows it as the Annenborchboom and treats it as a local figure: in July 2022 residents of the Annenborch care home, named after the same vanished convent, went out in a convoy of wheelchairs to visit it.\n\nIt stands free and open. The fence is there for the roots, not to keep you off.\n\nNo girth or height has been published. If you measure it, tell us.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/hollandse-linde-rosmalen/",
+        "https://ros-tvkrant.nl/2022/07/27/annenborch-bezoekt-de-annenborchboom/"
+      ],
+      "access": "Free and public. Stands on a small mound in a residential green space in the Overlaet district, fenced only to protect its own roots and trunk, not to keep visitors out.",
+      "transport": "In the Overlaet neighbourhood of Rosmalen, a district of 's-Hertogenbosch (Den Bosch); reachable by local bus, roughly 15-20 minutes from Den Bosch centre.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
-  ]
+  ],
+  "oldest_tree_id": "dbo_012"
 }
