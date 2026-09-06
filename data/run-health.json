@@ -6047,6 +6047,62 @@
    ],
    "trees": 1,
    "logged": true
+  },
+  {
+   "started": "2026-09-06T14:34:22+00:00",
+   "date": "2026-09-06",
+   "run_id": "34039570535",
+   "minutes": 85.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 439,
+   "denials": 40,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(mkdir), Bash(python3), Bash(rm), Bash(test), Bash(wc)",
+   "ended": "success",
+   "tokens": 36066393,
+   "claims_held": [],
+   "commits": 14,
+   "cities_touched": 9,
+   "cities": [
+    {
+     "city": "hiroshima",
+     "trees": 2
+    },
+    {
+     "city": "cieletniki",
+     "trees": 1
+    },
+    {
+     "city": "craigends",
+     "trees": 1
+    },
+    {
+     "city": "groton",
+     "trees": 1
+    },
+    {
+     "city": "przybudki",
+     "trees": 1
+    },
+    {
+     "city": "stratfield-saye",
+     "trees": 1
+    },
+    {
+     "city": "sulechow",
+     "trees": 1
+    },
+    {
+     "city": "wisniowa",
+     "trees": 1
+    },
+    {
+     "city": "zehdenick",
+     "trees": 1
+    }
+   ],
+   "trees": 10,
+   "logged": true
   }
  ],
  "schedule_changes": [
