@@ -55,6 +55,7 @@ BUSINESS_RULE_PHRASES = [
     "not yet enough", "enough for a page", "a page of their own",
     "a page of its own", "have enough mapped", "appear as new cities join",
     "qualifies for a page", "publish gate", "we only publish",
+    "below the usual four tree floor", "four tree floor",
 ]
 
 
