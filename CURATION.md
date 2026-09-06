@@ -2,6 +2,61 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 - Omishima gains a third camphor (omi_003); Kakumaki held, Okina sugi confirmed dead; hiroshima claim released
+
+Continuation of a window an earlier attempt stopped after 46 min with 74
+unspent. `passcheck.py --claims` showed two standing: `hiroshima` (verify)
+and `_famous-japan` (verify), both with uncommitted verify output already on
+disk. `hiroshima-verified.json` was an empty array for the second attempt
+running against the same two register clusters (Hirayama Shrine, Fukujoji
+temple); `famousjapan-batch-verified.json` held 3 fully judged candidates
+from `famous_demand.py --next`.
+
+**Shipped: omi_003, Ochi-no-Mikoto's Hand-Planted Camphor, joining the
+existing Omishima page.** Stands on the sando (approach path) of Oyamazumi
+Shrine, distinct from omi_001 (Ikiki no Gomon, the inner-sanctuary camphor)
+and omi_002 (the Ito Hirobumi memorial tree). Girth 11.0m, height 15m per
+the Chugoku-Shikoku giant-tree survey; the ~2,600-year age is temple-sign
+legend tied to a founding figure of the Ochi clan, kept broad and flagged
+rather than treated as measured. Rewrote the city intro and one FAQ entry to
+cover three trees instead of two; `oldest_tree_id` unchanged (omi_001's
+2,000-3,000 year range still leads on real evidence). Tree name shortened
+from the verify record's parenthetical form (72 chars) to fit the 60-char
+title limit; the full Japanese name stays in the story and sources.
+
+**Held as a lead: Okakumaki, the cube-pruned Buddhist Pine of Ogi Park
+(Saga Prefecture).** Alive, well documented, girth 2.7m, but no national or
+prefectural Natural Monument designation found and no legend beyond generic
+tourism-listing fame; does not clearly clear the single-tree-destination
+bar, and its nearest published tree (Fukuoka fuk_015) sits 18.2km away,
+unconfirmed under the day-trip boundary. Recorded in
+`data/leads/_famous-japan.json` with full reasoning for a future pass.
+
+**Confirmed dead, moved to blocked: Okina sugi (Yakushima).** Collapsed
+September 2010, trunk failure from interior rot plus epiphyte load,
+confirmed by ja.wikipedia and a 2010 Nikkei report. Was the second-largest
+living yakusugi after Jomon Sugi (yak_001). Never ships per the never-dead
+rule.
+
+Build (4609 pages), qa.py (6904 pages, 0 problems) and preflight.py (444
+cities, 0 new problems) all clean.
+
+**Released the `hiroshima` claim.** Two consecutive verify attempts against
+the same two unmined register clusters (Hirayama Shrine, Fukujoji temple)
+came back with nothing new; the remaining 77 leads in
+`data/leads/hiroshima.json` are raw, untranslated rows from Japan's national
+giant-tree survey (age bands, no individual distinction, health noted only
+in Japanese) rather than named candidates, which is a slower and thinner dig
+than the famous-tree lane. Leaving it released rather than re-claiming
+blind; a future pass should hand-pick specific named trees from the register
+(as this session did for the two shrine clusters) rather than mining rows in
+bulk, or wait for a fresh angle.
+
+**Left the `_famous-japan` claim standing.** `famous_demand.py --next`
+still shows 11 remaining Japan candidates (mostly near-zero measured demand,
+one at 45 reads/month: Ushikubo-no-Nagi, joining Nishio). Dispatched a
+verify pass on those 11 to `data/research/famousjapan-batch2-verified.json`.
+
 ## 2026-09-06 - Amt Neuhaus ships (Eiche am Forsthaus Gruener Jaeger); Schillershoehe oak held
 
 Continuation of an earlier attempt that stopped after 10 min with 110 of its
