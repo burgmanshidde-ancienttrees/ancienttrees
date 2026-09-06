@@ -46,8 +46,8 @@
       "at": "2026-09-04T13:55:20+00:00"
     },
     "2026-09-05": {
-      "note": "Scheessel spelling WARN already fixed (verified clean, 0 occurrences of Scheeßel remain); Gerichtslinde fame-case WARN explicitly not a retirement call, left as a flag for a future Scheessel touch. Separately (health.py rung 2, not a REVIEW.md finding): the 2026-09-05 Data digest failure was a git push race (another workflow pushed to main between its pull and push), not a code bug; confirmed via gh run view --log-failed. Could not dispatch a manual rerun (403, token lacks workflow-dispatch permission on this workflow), so it will self-heal on tomorrow's scheduled run; today's DATA.md entry is simply missing.",
-      "at": "2026-09-06T05:12:01+00:00"
+      "note": "Scheessel spelling WARN already fixed (no eszett remains in scheessel.json, verified); fame-case WARN on the Gerichtslinde was a flag only, no retirement called for, left as-is per the review's own note.",
+      "at": "2026-09-06T08:48:35+00:00"
     }
   }
 }
