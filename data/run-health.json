@@ -6388,6 +6388,37 @@
    ],
    "trees": 11,
    "logged": true
+  },
+  {
+   "started": "2026-09-06T21:44:33+00:00",
+   "date": "2026-09-06",
+   "run_id": "34061965913",
+   "minutes": 83.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 558,
+   "denials": 82,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(cd), Bash(chmod), Bash(command), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(set), Bash(until), Bash(unzstd), Bash(which), Bash(while)",
+   "ended": "success",
+   "tokens": 13390149,
+   "claims_held": [
+    "singapore",
+    "leiden"
+   ],
+   "commits": 19,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "salzburg",
+     "trees": 4
+    },
+    {
+     "city": "leiden",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
