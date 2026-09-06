@@ -1,0 +1,61 @@
+{
+  "city": "Trenčianske Stankovce",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Trenčianske Stankovce is a village in western Slovakia whose most notable residents are two lindens in a small memorial park, planted, depending on which source you believe, somewhere between 250 and 500 years ago. They stand above the tomb of the Maxon family and carry the name of Ján Lipský, a cartographer and military officer born here in 1766, and in 2004 the pair placed third in Slovakia's national tree of the year vote.",
+  "meta_description": "Two lindens in Trencianske Stankovce, named for cartographer Jan Lipsky, are dated 250 years by one source and 500 by another. Free memorial park.",
+  "question_meta": "Trenčianske Stankovce's oldest tree is one of the two Lipský lindens, dated to 250 years by one source and 500 by another.",
+  "question_answer": "The oldest tree in Trenčianske Stankovce is the larger of the two Lipský lindens in the village's memorial park, and its age is genuinely disputed: Slovak Wikipedia gives about 250 years, the village's own page gives roughly 500. The two sources agree closely on its girth, around 620 to 630 centimetres, so the size is settled even where the calendar is not.\n\nThe second linden is younger and smaller, about 200 years old, 380 centimetres round and 24 metres tall. Both stand above the tomb of the Maxon family in the memorial park at Sedličná, named for Ján Lipský, a cartographer and military officer born in the village in 1766 and buried in it in 1826.",
+  "question_context": "The memorial park is public ground with the Ján Lipský monument and bust, open at all times, free, with nothing to book. It sits in the Sedličná part of Trenčianske Stankovce, on the Trenčín-Nemšová regional bus route; the nearest railway station is Trenčín, followed by a local bus or a short taxi ride to the village.\n\nBoth lindens have been protected since 21 August 1984, managed by the Biele Karpaty landscape administration, and in 2004 they placed third in Strom roka, Slovakia's national tree of the year contest, a genuine result for two trees in a village most people only pass on the way to Trenčín.\n\nThere is no visitor centre and no signage beyond the memorial itself, so this is a quiet stop rather than a destination with facilities. The park is small enough to take in both lindens and the monument in a few minutes, though it rewards lingering: stand close enough and the size difference between the two trees, one considerably thicker than the other, is obvious even without a tape measure. Bring one anyway if you have it. Nobody has resolved the age gap between the two published figures, 250 years against roughly 500.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Trenčianske Stankovce?",
+      "a": "One of the two Lipský lindens in the village memorial park. Slovak Wikipedia dates it to about 250 years, the village's own page to roughly 500; both figures are recorded rather than resolved."
+    },
+    {
+      "q": "Why are the trees named after Ján Lipský?",
+      "a": "Ján Lipský, a Slovak cartographer and military officer, was born in the village in 1766 and buried there in 1826. His monument and bust stand in the same small park as the lindens."
+    },
+    {
+      "q": "Is the memorial park free to visit?",
+      "a": "Yes, open ground with no ticket or booking needed, on the Trenčín-Nemšová regional bus route."
+    }
+  ],
+  "oldest_tree_id": "tst_001",
+  "trees": [
+    {
+      "id": "tst_001",
+      "name": "Lipský's Lindens",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 250 to 500 years (sources disagree)",
+      "age_min": 250,
+      "age_max": 500,
+      "girth_cm": 620,
+      "location": {
+        "address": "Memorial park by the Ján Lipský monument, Sedličná, Trenčianske Stankovce",
+        "latitude": 48.844819,
+        "longitude": 17.989844,
+        "neighbourhood": "Sedličná, Trenčianske Stankovce, Trenčín District"
+      },
+      "verified_sources": [
+        "https://sk.wikipedia.org/wiki/Lipsk%C3%A9ho_lipy",
+        "https://www.trencianskestankovce.sk/obec-3/historia-obce/osobnosti-/"
+      ],
+      "access": "Free, in a public village memorial park with the Ján Lipský monument and bust; open ground, no ticket or booking needed.",
+      "transport": "Trenčianske Stankovce village (Sedličná part), on the Trenčín-Nemšová regional bus route; nearest train station is Trenčín, then local bus or a short taxi ride.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Trenčianske Stankovce, Trenčín Region"
+      },
+      "story": "Two sources have dated the larger of these two lindens and their answers are 250 years apart. Slovak Wikipedia gives about 250 years, a girth of 630 centimetres and a height of 26 metres. The village's own official page calls the same tree roughly five hundred years old and measures it at 620 centimetres. The tape agrees to within ten centimetres. The calendar does not agree at all, and nobody has settled it. The second linden is the simpler case: around 200 years, 380 centimetres round, 24 metres tall.\n\nThey stand in the memorial park at Sedličná, above the Maxon family tomb, and they carry the name of Ján Lipský, born in this village in 1766 and buried in it in 1826. He was a cartographer and a military officer, and his monument and bust stand in the same small park.\n\nIn 2004 the pair placed third in Strom roka, Slovakia's national tree of the year vote. That is a serious result for two trees in a village most people drive past on the way to Trenčín.\n\nBoth have been protected since 21 August 1984, in the care of the Biele Karpaty landscape administration. The park is open ground, free, and there is nothing to book.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

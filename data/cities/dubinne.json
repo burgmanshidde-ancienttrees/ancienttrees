@@ -1,0 +1,70 @@
+{
+  "city": "Dubinné",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Dubinné is a small village near Bardejov in eastern Slovakia, and its oak is widely reckoned the oldest in the country: at least 800 years, possibly more, though nobody can say for certain because the wood that would date it has long since rotted away. It has survived a ransom paid to spare it during the Hussite wars, two village fires, a lightning strike and service as a wartime landmark, and it won Slovakia's tree of the year in 2010.",
+  "meta_description": "Dubinne's oak, likely Slovakia's oldest at 800+ years, survived war, fire and lightning. Won Tree of the Year 2010. Free, open village ground.",
+  "question_meta": "Dubinné's oldest tree is its oak, likely the oldest in Slovakia at 800 years or more, and Tree of the Year 2010.",
+  "question_answer": "The oldest tree in Dubinné, and quite possibly in Slovakia, is the oak standing on open ground beside the village's roadside chapel. Its own village puts the age at at least 800 years, but admits the true figure cannot be fixed: the tree is hollow and its oldest wood is gone, so there are no rings left to count.\n\nWhat can be measured is a trunk 733 centimetres round at chest height, swelling to roughly 12 metres of buttressed mass at ground level, and a height of 25 metres. In 2010 it won Strom roka, Slovakia's national tree of the year vote.",
+  "question_context": "The oak stands on open ground next to the road beside the village chapel, free, with no gate and nothing to book. Dubinné lies about 15 kilometres southeast of Bardejov and is reached by regional bus; there is no railway station in the village, so a car or a bus connection through Bardejov is the practical route.\n\nIts survival list is long and worth reading before you stand under it. Villagers are said to have paid a ransom to save it from felling during the Hussite wars in the mid-15th century. It served as a reference point for soldiers in both world wars, came through a 1913 village fire and a 1985 fire started by a smoke bomb, and was struck by lightning in 1995. The chapel beside it was built after an 18th-century report of a Marian apparition in its crown, which says as much about what the tree has meant to the village as any contest result does.\n\nVisit in January or February if the bare winter silhouette interests you: with the leaves off, the hollowed trunk and its flared, buttressed base are fully visible, which is when the tree looks its actual age.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Dubinné?",
+      "a": "The oak beside the village's roadside chapel, widely reckoned Slovakia's oldest at 800 years or more, though its hollow trunk means the true age cannot be fixed."
+    },
+    {
+      "q": "Why can't its age be measured exactly?",
+      "a": "The tree is hollow and its oldest wood has rotted away, so there are no growth rings left to count. 800+ years is the village's own working estimate."
+    },
+    {
+      "q": "What has it survived?",
+      "a": "A reported ransom paid to spare it during the Hussite wars, two village fires (1913 and 1985), a 1995 lightning strike, and service as a landmark in both world wars."
+    }
+  ],
+  "oldest_tree_id": "dbi_001",
+  "trees": [
+    {
+      "id": "dbi_001",
+      "name": "The Oak of Dubinné",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "at least 800 years, possibly older",
+      "age_min": 800,
+      "age_max": 900,
+      "girth_cm": 733,
+      "height_m": 25,
+      "location": {
+        "address": "Dubinné village, beside the roadside chapel",
+        "latitude": 49.24554,
+        "longitude": 21.43767,
+        "neighbourhood": "Dubinné, Bardejov District"
+      },
+      "verified_sources": [
+        "https://www.dubinne.sk/historia_duba.php",
+        "https://obce.tasr.sk/clanok/3663/obec-dubinne-pri-bardejove-sa-pysi-viac-ako-800-rocnym-dubom"
+      ],
+      "access": "Free, standing on open ground in the village next to a roadside chapel, no ticket or booking needed.",
+      "transport": "Dubinné village, about 15km southeast of Bardejov; reached by regional bus from Bardejov, no rail station in the village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Dubinné, Presov Region"
+      },
+      "story": "Nobody can date this oak, because the wood that held the answer has rotted away. The village says so itself: the tree is hollow and its oldest part is irretrievably gone. What is left is a trunk 733 centimetres round at chest height, swelling to roughly twelve metres of buttressed mass at ground level, 25 metres of height, and a working figure of at least 800 years. It is widely taken to be the oldest oak in Slovakia, and in 2010 it won Strom roka, the national tree of the year vote.\n\nIts list of near misses is long. Villagers are said to have paid a ransom to save it from felling during the Hussite wars in the middle of the fifteenth century. Soldiers used it as a reference point in both world wars. It came through the fire that burnt the village in 1913 and another in 1985 started by a smoke bomb. Lightning struck it in 1995. It is still standing.\n\nThe chapel beside it was built after an eighteenth-century report of a Marian apparition in its crown, which says more about what this tree has meant here than any contest result does.\n\nOpen ground next to the road, free, no gate. Dubinné sits about fifteen kilometres southeast of Bardejov and is reached by regional bus.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the hollow trunk and its flared base show in full"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

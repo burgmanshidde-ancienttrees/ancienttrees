@@ -1,0 +1,62 @@
+{
+  "city": "Drnava",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Drnava is a small village in eastern Slovakia, nicknamed Kis Pest, Little Pest, after a 19th-century ironworks that cast structural parts for Budapest's Chain Bridge. Its oak has outlasted the works by centuries: about 700 years old, recorded in the village chronicle since 1670, and named Slovakia's tree of the year in 2020 after taking 5,246 of nearly 25,000 votes cast.",
+  "meta_description": "Drnava's oak, about 700 years old and recorded since 1670, won Slovakia's Tree of the Year 2020 with over 5,000 votes. Free village trail, no ticket.",
+  "question_meta": "Drnava's oldest tree is its 700-year-old oak, in the village chronicle since 1670 and Slovakia's Tree of the Year 2020.",
+  "question_answer": "The oldest tree in Drnava is the pedunculate oak standing at stop two of the village's own Poklady Drnavy nature trail, reckoned at about 700 years old. It appears in the village chronicle from 1670, which means it was already old when anyone here first wrote it down.\n\nIn 2020 it took 5,246 of the 24,839 votes cast in Strom roka, Slovakia's national tree of the year contest, and went on to represent the country at the European Tree of the Year. It is not a tall tree, 14 metres, but its trunk runs 528 centimetres round with a crown spreading 21 metres, the shape ancient oaks take once they stop reaching up and start reaching sideways.",
+  "question_context": "The oak stands on open ground within the built-up village, free, with nothing to book, on the Poklady Drnavy (Treasures of Drnava) educational trail. The nearest railway station is Roznava, followed by a regional bus to Drnava, and there is no direct rail link into the village itself.\n\nThe ground around the tree has its own history worth knowing before you go. Drnava was nicknamed Kis Pest, Little Pest, after the Andrassy ironworks that operated here in the nineteenth century and cast structural parts for the Chain Bridge in Budapest in the 1840s. The oak had already stood in the village chronicle for 170 years by the time that works was built, and it grows near the former site today, one stop among several on the village's own trail.\n\nThe trail itself is a short, signed walk rather than a demanding hike, and the oak is the obvious highlight of it: a broad, low crown rather than a tall one, easy to recognise from a distance once you know what an oak this old actually looks like. Nothing here needs a ticket, a guide or advance planning; it rewards simply turning up.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Drnava?",
+      "a": "The pedunculate oak on the village's Poklady Drnavy trail, reckoned at about 700 years old and recorded in the village chronicle since 1670."
+    },
+    {
+      "q": "Has it won any awards?",
+      "a": "Yes: Slovakia's Strom roka (Tree of the Year) 2020, with 5,246 of 24,839 votes cast, and it went on to represent Slovakia at the European Tree of the Year contest."
+    },
+    {
+      "q": "Why is Drnava nicknamed Kis Pest?",
+      "a": "After the 19th-century Andrassy ironworks, which cast structural parts for Budapest's Chain Bridge in the 1840s. The oak stands near the former works site."
+    }
+  ],
+  "oldest_tree_id": "drz_001",
+  "trees": [
+    {
+      "id": "drz_001",
+      "name": "The Oak of Drnava",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 700 years",
+      "age_min": 650,
+      "age_max": 750,
+      "girth_cm": 528,
+      "height_m": 14,
+      "location": {
+        "address": "Poklady Drnavy educational trail, stop 2, northeastern Drnava, near the former Drnava ironworks site",
+        "latitude": 48.64374,
+        "longitude": 20.66169,
+        "neighbourhood": "Drnava, Roznava District"
+      },
+      "verified_sources": [
+        "https://ekopolis.sk/2020-2/dub-z-malej-pesti-stromom-roka-2020",
+        "http://naucnechodniky.eu/naucny-chodnik-poklady-drnavy/"
+      ],
+      "access": "Free, standing beside the village's own \"Poklady Drnavy\" (Treasures of Drnava) educational trail, open ground within the built-up village.",
+      "transport": "Drnava village, Roznava District; nearest railway station is Roznava, then a regional bus to Drnava.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Drnava, Kosice Region"
+      },
+      "story": "In 2020 this oak took 5,246 of the 24,839 votes cast in Strom roka and was named Slovakia's tree of the year, then went on to represent the country in the European Tree of the Year contest. Not bad for a tree standing at stop two of a village nature trail.\n\nIt is reckoned at about 700 years old and it appears in Drnava's village chronicle from 1670, which means it was already old when anyone here first thought to write it down. It is not tall: 14 metres, modest for an oak of this age, with a trunk 528 centimetres round and a crown spreading 21 metres. Ancient oaks stop reaching up and start reaching sideways, and this one has been doing that for centuries.\n\nThe ground around it has a stranger history than the tree does. Drnava was nicknamed Kis Pest, Little Pest, after the Andrássy ironworks that ran here in the nineteenth century and cast structural parts for the Chain Bridge in Budapest in the 1840s. The oak had already been in the village chronicle for 170 years by then, and it stands near that former works today.\n\nOpen ground inside the village, free, nothing to book. It sits on the Poklady Drnavy trail, the Treasures of Drnava. The nearest station is Rožňava, then a regional bus.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

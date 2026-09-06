@@ -1,0 +1,122 @@
+{
+  "city": "Žilina",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Žilina, Slovakia's fourth-largest city, holds three protected trees within about a mile and a half of each other at the confluence of the Kysuca and Váh rivers. The best known is a 270-year-old London plane in Budatín Park, planted in 1745 as part of the grounds laid out around Budatín Castle, a national tree of the year winner that went on to place ninth in Europe. Two street trees, a pair of unaged lindens and a maple whose exact species two sources dispute, round out an afternoon that costs nothing.",
+  "meta_description": "Zilina's three protected trees: a 270-year-old Tree of the Year plane by Budatin Castle, and two disputed street trees within 1.5km. All free.",
+  "question_meta": "Žilina's oldest tree is the Budatín Park plane, about 270 years old and Slovakia's Tree of the Year 2016.",
+  "question_answer": "The oldest tree in Žilina is the London plane standing at the southwestern corner of Budatín Castle's wall, about 270 years old, 603 centimetres round and 27 metres tall. It went into the ground in 1745, when Count Ján Sunyog brought a gardener named František Roder over from Silesia to lay out the grounds around the castle, a rare case of a tree this old with a documented planting date attached.\n\nIt won Strom roka, Slovakia's national tree of the year vote, in 2016, and placed ninth of sixteen at the European Tree of the Year contest the following year. It grows beside a second, unhealthier plane whose roots have grown into its own, struck by lightning and colonised by a wood-rotting fungus.",
+  "question_context": "Budatín Park lies where the Kysuca river runs into the Vah, on the northern edge of Žilina, open public ground with no ticket needed, a short walk or local bus ride from Žilina railway station, which makes the plane tree the easiest of the three to combine with an ordinary visit to the city.\n\nTwo more protected trees stand within 1.5 kilometres: a pair of small-leaved limes on Kysucká cesta with no recorded age, cared for by the Malá Fatra National Park administration and fitted with support cables in 2022, and a maple on Sokolovská ulica whose species two independent sources disagree on, sugar maple by the national register, silver maple by Slovak Wikipedia's own protected-tree list. All three are free, on public ground, and walkable as one afternoon rather than three separate trips.\n\nŽilina itself is Slovakia's fourth-largest city, with an ordinary city centre, shops and a station, none of which the trees ask anything of you beyond a short walk between them. Start at the castle and plane tree, work outward to the two street trees, and you have covered the whole of what the national register protects here in one loop.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Žilina?",
+      "a": "The London plane in Budatín Park, planted in 1745 and about 270 years old, Slovakia's Tree of the Year 2016."
+    },
+    {
+      "q": "Are all of Žilina's protected trees free to visit?",
+      "a": "Yes. All three, the Budatín Park plane and the two street trees on Kysucká cesta and Sokolovská ulica, stand on open public ground with no ticket or booking needed."
+    },
+    {
+      "q": "What species is the tree on Sokolovská ulica?",
+      "a": "Disputed. The national register calls it a sugar maple (Acer saccharum); Slovak Wikipedia's own protected-tree list gives silver maple (Acer saccharinum) for the same tree. Nobody has settled which is correct."
+    }
+  ],
+  "oldest_tree_id": "zil_001",
+  "trees": [
+    {
+      "id": "zil_001",
+      "name": "The Plane Tree of Budatín Park",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 270 years",
+      "age_min": 250,
+      "age_max": 280,
+      "girth_cm": 603,
+      "height_m": 27,
+      "location": {
+        "address": "Budatínsky park, southwestern corner of Budatín Castle wall",
+        "latitude": 49.2361,
+        "longitude": 18.73366,
+        "neighbourhood": "Budatín, Žilina"
+      },
+      "verified_sources": [
+        "https://www.naspark.sk/sk/park/55-budatinsky-park",
+        "http://web.archive.org/web/20251111045234/https://spravy.pravda.sk/domace/clanok/409140-strom-roka-rastie-v-budatinskom-parku/"
+      ],
+      "access": "Free, standing in Budatín Park (Budatínsky park) beside Budatín Castle, an open public park at the confluence of the Kysuca and Váh rivers.",
+      "transport": "Žilina; Budatín Park is a short walk or local bus ride from Žilina railway station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Žilina"
+      },
+      "story": "Two planes stand at the southwestern corner of Budatín Castle's wall with their roots grown into each other. One of them represented Slovakia at a European contest. The other has been struck by lightning and is being worked on from the inside by a wood-rotting fungus.\n\nThe healthy one is the larger of the pair and the biggest of several planes in the park: 603 centimetres round, 27 metres tall, about 270 years old. It won Strom roka, the national tree of the year vote, in 2016, and came ninth of sixteen at the European Tree of the Year contest the following year.\n\nIts planting comes with a date and two names attached, which is unusual for a tree this old. In 1745 Count Ján Sunyog brought a gardener called František Roder over from Silesia to lay out the grounds around the castle, and this plane went in as part of that work. It has stood against the same wall ever since, through every change of owner and every change of use the castle has been put to.\n\nThe park lies where the Kysuca runs into the Váh, on the northern edge of Žilina. It is open public ground, free, and a short walk or local bus ride from the railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zil_002",
+      "name": "The Lindens of Kysucká Street",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "location": {
+        "address": "Kysucká cesta, Žilina",
+        "latitude": 49.23336,
+        "longitude": 18.736786,
+        "neighbourhood": "Žilina"
+      },
+      "verified_sources": [
+        "https://www.npmalafatra.sk (2022-05 arborist care article on these two lindens)",
+        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku"
+      ],
+      "access": "Free, standing beside Kysucká cesta, a public street in Žilina, no ticket or booking needed.",
+      "transport": "Žilina; a short walk or local bus ride from Žilina railway station, about 400m from the Budatín Park plane tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Žilina"
+      },
+      "story": "Nobody has recorded how old these two lindens are. No register carries an age for them, no source carries a girth, and the only figure anybody has published is the count: two. They are protected regardless, listed in the national register of protected trees as the lindens of Žilina, and they are in the care of the Malá Fatra National Park administration, whose day job is a mountain range outside the city.\n\nThat care is real rather than nominal. In spring 2022 an arborist crew pruned both trees for safety and health and fitted new dynamic support cables to the larger of the pair, the kind of rigging that lets a heavy limb keep moving in the wind while catching it if it ever lets go. One of the two is in visibly better condition than the other, which is roughly what you would expect of street trees on a road like Kysucká cesta, taking traffic, salt and road works for however many decades they have stood there.\n\nThey are about 400 metres from the plane tree in Budatín Park, close enough that the two make one short walk rather than two separate trips.\n\nThe open question stays open. If you know when these limes went in, or you have put a tape around one of them, tell us and we will put the number on this page.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zil_003",
+      "name": "The Maple of Sokolovská Street",
+      "species": "Maple (Acer sp.); the register calls it javor cukrovy (usually Acer saccharum, Sugar Maple) but sk.wikipedia's own protected-tree list gives the binomial as Acer saccharinum (Silver Maple) for this same row, a genuine source conflict left for the reader/a botanist to settle in person",
+      "location": {
+        "address": "Sokolovská ulica, Žilina",
+        "latitude": 49.222501,
+        "longitude": 18.733451,
+        "neighbourhood": "Žilina"
+      },
+      "verified_sources": [
+        "data/registers/slovakia-chranene-stromy.json (register_id 188, publishable true)",
+        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku"
+      ],
+      "access": "Free, standing beside Sokolovská ulica, a public street in Žilina, no ticket or booking needed.",
+      "transport": "Žilina; a short walk or local bus ride from Žilina railway station, about 1.5km from the Budatín Park plane tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Žilina"
+      },
+      "story": "Two sources name this tree and they differ by two letters. The national register calls it javor cukrový, sugar maple, which is Acer saccharum. Slovak Wikipedia's own list of protected trees gives the binomial for that same row as Acer saccharinum, the silver maple. Both are North American, both were planted along European streets in the nineteenth century, and the difference is readable from the pavement: a silver maple's leaves are deeply cut and near-white underneath, so they flash pale when the wind turns them. Nobody has settled which of the two grows on Sokolovská. If you know your maples and you walk past, look up and tell us.\n\nWhat the two sources agree on is that it is worth keeping. The register lists it as the only specimen of its species of any real age in the district, which is why it was designated in the first place. That is a modest claim and an honest one: this is not an ancient tree, it is an unusual one that has been allowed to get old on a city street.\n\nNo age has been recorded and no girth measured, so how long it has stood here is open too.\n\nIt is about 1.5 kilometres from the plane in Budatín Park and 1.2 kilometres from the protected limes on Kysucká cesta. Three protected trees, one afternoon.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

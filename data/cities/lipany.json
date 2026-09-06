@@ -1,0 +1,70 @@
+{
+  "city": "Lipany",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Lipany is a small town in eastern Slovakia named after the linden trees it was founded among, and by local tradition, one of them is still standing. The town appears in 14th-century records as Septemthillis, the seven lindens; six are said to be gone, and this one grows in the pedestrianised square in front of the Church of St Martin. It won Slovakia's national tree of the year contest in 2011 and placed fourth in Europe the same year.",
+  "meta_description": "Lipany's town-square linden, over 320 years old, is said to be the last of the seven the town was named for. Won Slovakia's Tree of the Year 2011.",
+  "question_meta": "Lipany's oldest tree is the linden in its town square, over 320 years old and Slovakia's Tree of the Year 2011.",
+  "question_answer": "The oldest tree in Lipany is the small-leaved lime standing in Námestie sv. Martina, the town square, in front of the early Gothic Church of St Martin. It is over 320 years old, 536 centimetres round and 23 metres tall.\n\nLocal tradition holds it is the last survivor of the seven lindens the town was named for in the 14th century, when it appears in records as Septemthillis. The same tradition says a contract signed beneath it in front of two witnesses once carried notarial force. Neither claim comes with documents attached, and this page repeats them as tradition rather than fact. What is measured and confirmed is the tree's age, size and its 2011 national tree of the year win, followed by fourth place in the European contest the same year.",
+  "question_context": "The tree stands in the middle of Lipany's pedestrianised town square, open at all times, free, with nobody to ask and nothing to book. It is a short walk from Lipany railway station, on the line from Kosice through Presov to Plavec, which makes it one of the easier trees on this site to reach without a car.\n\nMost trees this old survived by standing where nobody needed the ground: a churchyard, an estate, a forest edge. This one has spent three centuries in the middle of a working town square instead, surrounded by shops and traffic rather than isolation, which is the harder trick and part of why the town is proud of it.\n\nCome in late June or early July for the flowering, when the whole square carries the scent of linden blossom, a detail locals mention before they mention the tree's age. There is little else to plan for: Lipany is a small town rather than a tourist destination, and the linden, the church behind it and the square itself are most of what there is to see, honestly presented rather than padded into a longer itinerary.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Lipany?",
+      "a": "The small-leaved lime in the town square in front of the Church of St Martin, over 320 years old, 536cm round and 23m tall."
+    },
+    {
+      "q": "Is it really the last of the seven lindens Lipany was named for?",
+      "a": "That is the local tradition. The town appears in 14th-century records as Septemthillis, the seven lindens, and this is said to be the one survivor, though no document confirms it."
+    },
+    {
+      "q": "Has it won any awards?",
+      "a": "Yes: Slovakia's Strom roka (Tree of the Year) in 2011, and fourth place in the European Tree of the Year contest that same year."
+    }
+  ],
+  "oldest_tree_id": "lip_001",
+  "trees": [
+    {
+      "id": "lip_001",
+      "name": "The Linden of Lipany",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "over 320 years",
+      "age_min": 320,
+      "age_max": 360,
+      "girth_cm": 536,
+      "height_m": 23,
+      "location": {
+        "address": "Námestie sv. Martina (St Martin's Square), by the Church of St Martin, Lipany",
+        "latitude": 49.15417,
+        "longitude": 20.96247,
+        "neighbourhood": "Lipany town centre, Sabinov District"
+      },
+      "verified_sources": [
+        "https://www.regionsaris.sk/prirodne-krasy/lipa-malolista/",
+        "https://www.teraz.sk/import/lipany-lipa-strom-roka/58904-clanok.html"
+      ],
+      "access": "Free, standing in the pedestrianised town square in front of the Church of St Martin, open at all times.",
+      "transport": "Lipany town centre; the tree stands a short walk from Lipany railway station on the Kosice-Presov-Plavec line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Lipany, Presov Region"
+      },
+      "story": "Lipany is named after lindens, and by local tradition this is the last one left. The town turns up in fourteenth-century records as Septemthillis, the seven lindens, and the story told here is that six are gone and this one is still standing in the square. The same tradition holds that a contract signed beneath it in front of two witnesses once carried the force of a notarial deed. Neither claim arrives with documents attached. Both are worth knowing before you stand under it.\n\nWhat has actually been measured: over 320 years old, 536 centimetres round, 23 metres tall, growing in the pedestrianised square in front of the early Gothic Church of St Martin.\n\nIn 2011 it won Strom roka, Slovakia's national tree of the year vote, and the town collected a prize of 333 euro for it. The same year it went on to the European Tree of the Year contest and came fourth, ahead of a good many trees from countries with far louder publicity.\n\nMost trees this old survived by standing where nobody needed the ground. This one has spent three centuries in the middle of a working town square, which is the harder trick. It is a short walk from Lipany station on the line from Košice through Prešov to Plaveč.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June and early July, when the linden flowers and the whole square smells of it"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

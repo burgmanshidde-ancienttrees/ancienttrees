@@ -238,7 +238,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 41 | Oahu | 15.97 | - | 11 | 1 | - | 160 | 20 | measured |
 | 42 | Porto | 11.98 | 120,415 | 27 | 14 | 2 | 40 | 20 | measured |
 | 43 | Utrecht | 11.69 | 67,963 | 33 | 4 | 2 | 345 | 20 | measured |
-| 44 | The Hague | 11.41 | 236,723 | 29 | 1 | 5 | 166 | 20 | measured |
+| 44 | The Hague | 11.41 | 236,723 | 30 | 1 | 5 | 166 | 20 | measured |
 | 45 | Jacksonville | 22.76 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 46 | Krakow | 15.12 | 140,824 | 34 | 3 | 3 | 198 | 30 | measured |
 | 47 | Chicago | 21.68 | 485,769 | 6 | - | - | - | 30 | measured |
@@ -513,7 +513,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 316 | Rothenburg ob der Tauber | 1.43 | 39,879 | 4 | - | 1 | 8 | 20 | measured |
 | 317 | Trier | 1.56 | 69,369 | - | - | - | - | 10 | predicted (travel demand) |
 | 318 | Belfast | 1.71 | 224,315 | 4 | - | 1 | - | 20 | measured |
-| 319 | Hiroshima | 1.14 | 129,791 | 15 | 1 | 3 | - | 20 | measured |
+| 319 | Hiroshima | 1.14 | 129,791 | 17 | 1 | 3 | - | 20 | measured |
 | 320 | Ottawa | 1.14 | - | 8 | - | 1 | 119 | 20 | measured |
 | 321 | Thessaloniki | 1.71 | 180,145 | 4 | - | 1 | - | 20 | measured |
 | 322 | Annecy | 1.69 | 56,859 | - | - | - | - | 10 | predicted (travel demand) |
