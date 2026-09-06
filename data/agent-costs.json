@@ -5649,7 +5649,7 @@
         "kind": "session",
         "tokens": 0,
         "trees": 0,
-        "note": "not a dispatched agent; main session resolved 8 stale/duplicate/blocked leftover entries from a prior famousuk verify pass (3 already published elsewhere, 3 duplicates of already-published trees, 1 reconfirmed hard-rule-10 block, 1 held for Hidde editorial call), tokens not separately metered",
+        "note": "not a dispatched agent; main session initially re-derived a full disposition for data/research/famousuk-verified.json, then discovered this exact pile was already fully resolved earlier today by continuation 9 (see LOG.md) via data/leads/_famous-united-kingdom.json, which continuation 9 forgot to delete. Reverted the resulting duplicate entries in london.json/brighton.json and the two new glastonbury.json/ tolpuddle.json files, kept only the (still warranted) deletion of the stale research file, and patched two dangling references to it in _famous-united-kingdom.json. Tokens not separately metered.",
         "wasted": 0,
         "brief_wrong": false
       }

@@ -49,7 +49,7 @@
       "status": "blocked",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified 2026-09-06 for London (Chingford/Epping Forest); see data/research/famousuk-verified.json (id gil_001).",
+      "note": "Verified 2026-09-06 for London (Chingford/Epping Forest). Working file data/research/famousuk-verified.json has since been deleted as stale; this entry plus the reason field below is the sole record.",
       "reason": "Re-verified 2026-09-06 (id gil_001 in data/research/famousuk-verified.json), and it reaches the same wall a 2026-09-01 pass already hit and logged in data/leads/london.json: Scout Adventures asks day visitors to sign in at the Syd Kesseler Centre reception on arrival. Hard rule 10's own test names 'a reception desk to talk past' as a no, distinct from paid entry. Everything else checks out (450-550 years per the older, better-sourced band; 480cm girth; five sources; Tree of the Year 2017 UK winner, 5th in Europe). Do not re-verify again; if the reception sign-in is ever confirmed to be a formality rather than a gate, both passes' stories are ready to merge."
     },
     {
@@ -166,15 +166,15 @@
     },
     {
       "name": "The Fuck Tree",
-      "lat": null,
-      "lng": null,
+      "lat": 51.564844,
+      "lng": -0.1863602,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_03.jpg"
       ],
       "status": "verified",
-      "note": "Verified 2026-09-06 (id fuc_001): facts check out (alive, sourced, public access on Hampstead Heath), but held back rather than written up. FOR HIDDE: this needs an explicit brand/tone call before it goes near a page, per CLAUDE.md's brand-decision boundary, not a research judgement. The tree's whole claim to notability is a cruising-ground reputation rather than age or dendrology; publishing it under its real name is a call about what this site is, not about whether the tree is real. See data/research/famousuk-verified.json."
+      "note": "Verified 2026-09-06 (id fuc_001): a Sessile Oak (Quercus petraea) on West Heath, Hampstead Heath, Camden. Facts check out (alive, sourced via en.wikipedia.org/wiki/Fuck_Tree and the-fence.com, genuinely public access on Hampstead Heath, open at all times), but held back rather than written up. FOR HIDDE: this needs an explicit brand/tone call before it goes near a page, not a research judgement. The tree's whole claim to notability is a cruising-ground reputation rather than age or dendrology (no age, no girth, no dendrological distinction claimed by any source). Coordinate is Wikipedia/Wikidata-sourced (Q134376041) to six decimals but not independently confirmed as the exact trunk in dense woodland, hence approximate rather than confirmed. A second famousuk verify pass on 2026-09-06 independently re-found this tree and reached the same verdict; its working file, data/research/famousuk-verified.json, has since been deleted as stale (this note is now the sole record)."
     },
     {
       "name": "Tolpuddle Martyrs Tree",
