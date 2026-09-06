@@ -1,0 +1,72 @@
+{
+  "city": "Hronsek",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Hronsek is a village in central Slovakia known for one of Europe's finest wooden churches, and for what stands in its yard. Lindens were planted around the wooden articular church at its 1726 consecration, and the oldest is now pushing three centuries old. UNESCO inscribed the church as a World Heritage Site in 2008, and the trees have stood over its roof for the whole of its life. Sources do not agree on how many lindens actually stand there, and this page says so rather than guessing.",
+  "meta_description": "Hronsek's churchyard lindens have shaded a UNESCO wooden church since its 1726 consecration, about 300 years. Sources disagree how many trees stand there.",
+  "question_meta": "Hronsek's oldest tree is a linden by its UNESCO wooden church, planted at the 1726 consecration and now about 300 years old.",
+  "question_answer": "The oldest tree in Hronsek is one of the lindens in the churchyard of the wooden articular church, planted when the church was consecrated in 1726 and now roughly 300 years old.\n\nSources do not agree on how many lindens actually stand there. The village's own website counts four, two of which it says are as old as the church. Slovak Wikipedia counts three. The national register of protected trees lists six under one designation. Nobody has published a girth or a height for any of them, so the exact size of the oldest is still unmeasured. What every source agrees on is the planting year and the church they surround, a UNESCO World Heritage Site since 2008.",
+  "question_context": "The churchyard is a public village church precinct and stands open, so seeing the lindens costs nothing and needs nobody's permission. Getting inside the wooden church itself outside the main season, September to June, needs a phone booking first; the trees and the yard around them are not gated behind that booking, and most visitors come to look at both together.\n\nHronsek is roughly 18 kilometres, about 20 minutes by car, from Zvolen, with no railway station in the village itself. A regional bus runs from Zvolen or Banska Bystrica to Hronsek, followed by a short walk to the church. There is little else to plan around: this is a one-church, one-yard visit, and the lindens are the reason to linger after looking at the building.\n\nGo in late June or early July if you can manage it. That is when the limes flower, filling the churchyard with scent and bees, which a dormant winter visit will not give you, though the wooden church, on the UNESCO World Heritage list since 2008, rewards a trip in any season. Nobody has published a girth or height for these trees, so if you bring a tape measure, we would like the number.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Hronsek?",
+      "a": "One of the lindens in the churchyard of the wooden articular church, planted at its 1726 consecration and now about 300 years old."
+    },
+    {
+      "q": "How many lindens actually stand in the churchyard?",
+      "a": "Sources disagree: the village counts four, Slovak Wikipedia counts three, and the national tree register lists six under one designation. Nobody has reconciled the difference."
+    },
+    {
+      "q": "Is the church itself open to visit?",
+      "a": "Yes, though outside the main season (September to June) it needs a phone booking first. The churchyard and its trees are open regardless."
+    },
+    {
+      "q": "How do I get to Hronsek?",
+      "a": "By regional bus from Zvolen or Banska Bystrica; there is no railway station in the village. By car it is about 18km / 20 minutes from Zvolen."
+    }
+  ],
+  "oldest_tree_id": "hrs_001",
+  "trees": [
+    {
+      "id": "hrs_001",
+      "name": "The Memorial Lindens of Hronsek Church",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "about 300 years",
+      "age_min": 280,
+      "age_max": 300,
+      "location": {
+        "address": "Churchyard of the Wooden Articular Church, Hronsek",
+        "latitude": 48.649029,
+        "longitude": 19.155146,
+        "neighbourhood": "Hronsek, Banska Bystrica District"
+      },
+      "verified_sources": [
+        "https://www.hronsek.sk/dreveny-artikularny-kostol-unesco.html",
+        "https://sk.wikipedia.org/wiki/Dreven%C3%BD_artikul%C3%A1rny_kostol_(Hronsek)"
+      ],
+      "access": "Free to view from the churchyard of the UNESCO-listed wooden articular church, a public village church precinct. Entering the church building itself outside the main season (Sept-Jun) needs a phone booking; the courtyard and trees are not gated behind that.",
+      "transport": "Hronsek village, roughly 18km / 20 minutes drive from Zvolen, no rail station in the village; regional bus from Zvolen or Banska Bystrica to Hronsek, short walk to the church.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Hronsek, Banska Bystrica Region"
+      },
+      "story": "Three sources describe these lindens and no two agree on how many there are. Hronsek's own village site counts four, of which two are as old as the church. Slovak Wikipedia counts three. The national register of protected trees lists six under a single designation, the lindens by the Hronsek church. What all three agree on is the year they went in: the trees were planted when the wooden articular church was consecrated in 1726, which puts the oldest of them at roughly three centuries.\n\nThe church is what brings people to this village, and the lindens are the reason to stay another ten minutes. It was inscribed on the UNESCO World Heritage list on 7 July 2008, one of the wooden churches of the Slovak part of the Carpathians, and these trees have stood over its shingled roof and its separate bell tower for the whole of that building's life. Every repair, every re-shingling, every winter the timber has had to survive has happened under their crowns.\n\nNobody has published a girth or a height for any of them, so how thick the oldest one has grown is still an open question. If you go with a tape measure, tell us.\n\nThe courtyard is a village church precinct and stands open. Getting inside the church outside the summer season needs a phone call first. The trees do not.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the limes flower and the churchyard fills with bees"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

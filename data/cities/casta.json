@@ -1,0 +1,69 @@
+{
+  "city": "Časta",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Časta is a small wine village in western Slovakia, and its chestnut, growing wild in the vineyards on the slope above the village, is the largest sweet chestnut in the country. About 500 years old and more than eight metres round at the conservative end of the measurements, it has been protected since the late 1990s and outdates the vines that now surround it by centuries.",
+  "meta_description": "Casta's Great Chestnut, roughly 500 years old and Slovakia's largest, grows wild in vineyards above the village. Free, no ticket, a short uphill walk.",
+  "question_meta": "Časta's oldest tree is the Great Chestnut, Slovakia's largest sweet chestnut at roughly 500 years old.",
+  "question_answer": "The oldest tree in Časta is the Great Chestnut, growing in the vineyards on the slope above the village, roughly 500 years old. Sources put its girth at between 830 and 866 centimetres and its height between 23 and 25 metres; even at the conservative end of both figures, it is the largest sweet chestnut recorded in Slovakia.\n\nIt has been protected since the late 1990s, though sources disagree on whether the designation came in December 1997 or in 1998. A year either way makes little difference to a tree that was already four centuries old when the paperwork began.",
+  "question_context": "The chestnut stands in open vineyard ground above Časta, free, unfenced and unticketed. The village lies about 34 kilometres from Bratislava, reached by regional bus from Pezinok or Modra, followed by a short uphill walk into the vineyards above the last houses, so a car or a timed bus connection makes the visit considerably easier than walking the whole route from a station.\n\nSweet chestnut bark twists into spiralling ridges as the tree ages, so an old trunk looks wrung rather than smooth, and the country's largest specimen is where that is easiest to see up close. In October the spiny burrs split and drop, and the ground beneath takes some walking across; this is also when the chestnuts themselves are worth gathering, if you like to bring something back.\n\nThe view back down the slope over the vineyards comes free with the visit and is arguably worth the uphill walk on its own, chestnut aside. There is no interpretation sign or ticket booth here, just a working vineyard with an exceptional tree standing in the middle of it, so treat the outing as a countryside walk rather than a managed attraction.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Časta?",
+      "a": "The Great Chestnut in the vineyards above the village, roughly 500 years old and the largest sweet chestnut recorded in Slovakia."
+    },
+    {
+      "q": "How big is it exactly?",
+      "a": "Sources give a girth of 830 to 866 centimetres and a height of 23 to 25 metres; even the more conservative figures make it the country's largest sweet chestnut."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By regional bus from Pezinok or Modra to Časta, about 34km from Bratislava, then a short uphill walk into the vineyards above the village. Free, no ticket."
+    }
+  ],
+  "oldest_tree_id": "cst_001",
+  "trees": [
+    {
+      "id": "cst_001",
+      "name": "The Great Chestnut of Časta",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "about 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "girth_cm": 830,
+      "height_m": 24,
+      "location": {
+        "address": "In the vineyards above Časta village",
+        "latitude": 48.40401,
+        "longitude": 17.355223,
+        "neighbourhood": "Časta, Pezinok District"
+      },
+      "verified_sources": [
+        "https://sk.wikipedia.org/wiki/Ga%C5%A1tan_jedl%C3%BD_v_%C4%8Castej",
+        "https://ekopolis.sk (Strom roka coverage of this tree, cited in the earlier research note carried over below)"
+      ],
+      "access": "Free, standing in open vineyard ground above the village, reachable on foot from Časta; not fenced or gated.",
+      "transport": "Časta village, Pezinok District, about 34km from Bratislava; regional bus from Pezinok or Modra, then a short walk uphill into the vineyards.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Časta, Bratislava Region"
+      },
+      "story": "Slovakia's largest sweet chestnut does not grow in a park or an arboretum. It stands out in the vineyards on the slope above Časta, roughly 500 years old, with a trunk that sources put at between 830 and 866 centimetres and a height somewhere between 23 and 25 metres. Take the conservative end of both figures and it is still more than eight metres round.\n\nEight metres of chestnut is a particular sight. The species twists its bark into spiralling ridges as it ages, so an old trunk looks wrung out rather than smooth, and the biggest one in the country is where that is easiest to see. In October the spiny burrs come down and the ground underneath takes some walking across.\n\nIt has been protected since the end of the 1990s, although the sources cannot agree whether the designation came in December 1997 or in 1998. A year either way makes little difference to a tree that was already four centuries old when the paperwork began.\n\nGetting there involves a walk, which is part of the point. Časta lies about 34 kilometres from Bratislava, reached by regional bus from Pezinok or Modra, and the tree is uphill from the village in open vineyard ground. Nothing is fenced, nothing is ticketed, and the view back down the slope comes free with it.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the burrs split and the chestnuts drop into the vineyard grass"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

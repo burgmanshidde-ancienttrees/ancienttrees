@@ -1,0 +1,69 @@
+{
+  "city": "Uzovská Panica",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Uzovská Panica is a small village in southern Slovakia, and its landmark is a service tree planted about 250 years ago to mark a property boundary. The boundary is long forgotten; the tree is not. It still fruits every October, won Slovakia's tree of the year in 2019, and went on to represent the country at the European Tree of the Year contest.",
+  "meta_description": "Uzovska Panica's 250-year-old service tree, a former boundary marker, won Slovakia's Tree of the Year 2019 and still fruits every October.",
+  "question_meta": "Uzovská Panica's oldest tree is its 250-year-old service tree, Slovakia's Tree of the Year 2019.",
+  "question_answer": "The oldest tree in Uzovská Panica is the service tree (Sorbus domestica) standing on open ground in the village's Lapoňa area, about 250 years old, 295 centimetres round and 14 metres tall. It was planted, by the look of its age, sometime in the reign of Maria Theresa, to mark where one landholding ended and the next began.\n\nIn 2019 it won Strom roka, Slovakia's national tree of the year vote, and represented the country at the European Tree of the Year contest. Sources disagree on the margin: the contest organiser Ekopolis records 6,710 votes, while the regional site Rimava reported over 10,000, and nobody has reconciled the two figures.",
+  "question_context": "The tree stands on open farmland in the Lapoňa area of the village, free, with no ticket, gate or booking needed. The nearest hub is Rimavská Sobota, followed by a regional bus, and there is no railway station in Uzovská Panica itself, so plan around the bus timetable rather than a train.\n\nService trees were planted across this part of Europe as boundary markers: long-lived, easy to spot from a distance, and a sign that the ground was good enough for fruit. This one still fruits generously, with large pear-shaped fruit ripening pinkish-yellow in mid-October, worth timing a visit around if you want to see it at its most productive rather than as a bare trunk in a field.\n\nOne naming note worth carrying with you: Sorbus domestica, the true service tree, is a different species from the wild service tree it commonly gets confused with, and the two are not interchangeable in any register or field guide. Beyond the tree itself there is little in the immediate area to plan around; this is farmland rather than a village centre, so the visit is a short, direct one.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Uzovská Panica?",
+      "a": "The service tree (Sorbus domestica) in the village's Lapoňa area, about 250 years old and Slovakia's Tree of the Year 2019."
+    },
+    {
+      "q": "Why was it planted?",
+      "a": "As a boundary marker between two landholdings, a common use for long-lived service trees across this part of Europe. The boundary is long forgotten; the tree remains."
+    },
+    {
+      "q": "Does it still bear fruit?",
+      "a": "Yes, generously: large pear-shaped fruit ripens pinkish-yellow in mid-October."
+    }
+  ],
+  "oldest_tree_id": "uzp_001",
+  "trees": [
+    {
+      "id": "uzp_001",
+      "name": "The Service Tree of Uzovská Panica",
+      "species": "Service Tree (Sorbus domestica)",
+      "age_estimate": "about 250 years",
+      "age_min": 220,
+      "age_max": 280,
+      "girth_cm": 295,
+      "height_m": 14,
+      "location": {
+        "address": "Lapoňa area, Uzovská Panica village",
+        "latitude": 48.44306,
+        "longitude": 20.16504,
+        "neighbourhood": "Uzovská Panica, Rimavská Sobota District"
+      },
+      "verified_sources": [
+        "https://ekopolis.sk/aktuality/titulom-strom-roka-2019-sa-pysi-oskorusa-domaca-z-uzovskej-panice",
+        "https://www.rimava.sk/spravy-z-regionu/zivotne-prostredie/stromom-roka-po-oskorusi-z-uzovskej-panice-je-tento-rok-700-rocny-dub-letny/"
+      ],
+      "access": "Free, standing in open farmland/village ground (a boundary tree historically marking property lines), no ticket or booking needed.",
+      "transport": "Uzovská Panica village, Rimavská Sobota District; nearest railway/bus hub is Rimavská Sobota, then a regional bus.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Uzovská Panica, Banska Bystrica Region"
+      },
+      "story": "This tree was planted to mark where one person's land stopped and the next person's began. Service trees did that job across this part of Europe: long-lived, easy to recognise from a distance, and a signal to anyone reading the ground that the soil here was good enough for fruit. Two and a half centuries on, the boundary is a footnote and the tree is the landmark.\n\nIt is about 250 years old, which puts its planting in the reign of Maria Theresa, and it measures 295 centimetres round and 14 metres tall. It still fruits, and generously: large pear-shaped fruit, pinkish-yellow, ripening in the middle of October.\n\nIn 2019 it won Strom roka, Slovakia's national tree of the year vote, and went on to represent the country in the European Tree of the Year contest. By how much it won depends on who you ask. Ekopolis, which runs the contest, records 6,710 votes; the regional news site Rimava reported over 10,000. Neither figure has been reconciled with the other.\n\nOne naming note worth carrying with you: Sorbus domestica is the service tree, a different species from the wild service tree it gets muddled with.\n\nIt stands on open ground in the Lapoňa area of the village, free, no gate. Nearest hub is Rimavská Sobota, then a regional bus.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "mid-October, when the pear-shaped fruit ripens pinkish-yellow"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
