@@ -1,0 +1,59 @@
+{
+  "city": "Amt Neuhaus",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "For decades almost nobody outside the village of Stapel knew this oak existed, until a tree enthusiast tipped off the German Tree Archive around 2006. Dendrologists put its real age near 450 years, well short of the '700-year oak' name it is still sold under locally. Storms have twice torn limbs from its crown and it keeps growing a new one, hollow trunk and all, in a forest clearing the local council now lists among its own excursion destinations.",
+  "meta_description": "The Eiche am Forsthaus Gruener Jaeger, a hollow 450-year-old oak near Stapel in Amt Neuhaus, still known locally as the 700-year oak.",
+  "question_meta": "Amt Neuhaus's remarkable tree is the Eiche am Forsthaus Gruener Jaeger, a hollow veteran oak near the village of Stapel.",
+  "question_answer": "The remarkable tree at Amt Neuhaus is the Eiche am Forsthaus Gruener Jaeger, a pedunculate oak standing in a forest clearing beside the Gruener Jaeger forestry lodge, roughly 2 kilometres uphill from Stapel village. Its trunk measures 8.91 metres round, and dendrologists estimate its true age at around 450 years, considerably less than the 700 years its popular local name claims.",
+  "question_context": "Two specialist tree registers, baumkunde.de and the German monumental-oak survey monumentale-eichen.de, measured the trunk independently and arrived at the same figure, about 8.9 metres at breast height, and the same age estimate, roughly 450 years, from growth-rate reckoning rather than a documented planting date. That leaves the tree's own nickname, the '700-jaehrige Eiche', looking like local folklore rather than a measured fact, and this page keeps the dendrologists' lower number rather than the more dramatic one on the tourist signs. The trunk is hollow to the ground and gnarled at the base, with a lightning scar running up one side. Storm Xavier tore two of its three main limbs away in October 2017; rather than dying back, it pushed out a secondary crown, and a 2023 survey of its condition called it damaged but recovering. The tree sat almost unknown outside Stapel until around 2006, when a Wernigerode tree enthusiast alerted the German Tree Archive to it. The village of Stapel itself has changed states more recently than the oak has changed shape: it belonged to Mecklenburg-Vorpommern until a 1992 municipal vote moved it into Niedersachsen.",
+  "hero_tree_id": "amn_001",
+  "oldest_tree_id": "amn_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree at Amt Neuhaus?",
+      "a": "The Eiche am Forsthaus Gruener Jaeger, a hollow pedunculate oak in a forest clearing near Stapel village, registered as a tree veteran by German dendrologists."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the grounds of the Gruener Jaeger forestry lodge, which the Amt Neuhaus municipality itself lists as an open excursion destination, reached on foot or by bike from Stapel."
+    },
+    {
+      "q": "Is it really 700 years old?",
+      "a": "Probably not. That is its popular local name, but the two specialist registers that measured its trunk both put its real age at around 450 years."
+    }
+  ],
+  "trees": [
+    {
+      "id": "amn_001",
+      "name": "Eiche am Forsthaus Gruener Jaeger",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 450 years, though locally called the 700-year oak",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 891,
+      "location": {
+        "address": "Forsthaus Gruener Jaeger, 2 km northeast of Stapel village (signposted uphill from Lindenstrasse), 19273 Stapel, Amt Neuhaus, Landkreis Lueneburg, Niedersachsen, Germany",
+        "latitude": 53.262722,
+        "longitude": 11.000082,
+        "neighbourhood": "Stapel, Amt Neuhaus"
+      },
+      "story": "A tape measure around this oak's trunk reads 8.91 metres, and dendrologists reckon that puts it at roughly 450 years old. Locally it is still sold as the '700-jaehrige Eiche', the 700-year oak, a name the two specialist registers that measured it do not support. Nobody seems in a hurry to correct the sign.\n\nIt stands hollow to the ground in a forest clearing beside the Gruener Jaeger forestry lodge outside Stapel, its base gnarled and split by an old lightning scar. Storm Xavier tore off two of its three main limbs in October 2017. Rather than dying back, the tree pushed out a new secondary crown, and a 2023 survey of its condition called it damaged and recovering rather than dying.\n\nFor most of its life almost nobody outside Stapel knew it existed. Around 2006 a tree enthusiast from Wernigerode tipped off the German Tree Archive, and it has been on the specialist registers ever since. The village around it has moved faster than the tree: Stapel belonged to Mecklenburg-Vorpommern until a 1992 municipal vote shifted it into Niedersachsen, a state border redrawn well within this oak's own lifetime.\n\nThe municipality of Amt Neuhaus now lists the tree among its own excursion destinations, reached on a signposted track uphill from the village.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1581-eiche_am_forsthaus_gruener_jaeger_bei_stapel/",
+        "https://www.monumentale-eichen.de/niedersachsen/stapel/",
+        "https://www.amt-neuhaus.de/start/tourismus-freizeit-kultur/unbedingt-sehenswert/weitere-ausflugsziele/gruener-jaeger.aspx"
+      ],
+      "access": "Free, publicly accessible on the grounds of the Forsthaus Gruener Jaeger forestry lodge, standing in a clearing in the woods; the municipality of Amt Neuhaus lists it as one of its own excursion destinations. Reached via a signposted track uphill from Lindenstrasse at the edge of Stapel.",
+      "transport": "Rural forest site with no public transport; reached on foot, by bike or by car from Stapel village (Amt Neuhaus, Landkreis Lueneburg), about 2-3 km from the village centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

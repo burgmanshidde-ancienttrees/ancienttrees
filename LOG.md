@@ -1,6 +1,37 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation, of a window an earlier attempt stopped early at 10 min with 110 unspent) - Amt Neuhaus ships, one famous-Germany lead held, digest failure re-confirmed benign
+
+Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
+(two standing: `_famous-germany` and `hiroshima`, both verify, with
+uncommitted verify output on disk from the earlier attempt).
+`famousgermany-verified.json` held 2 fully verified trees; `hiroshima-
+verified.json` was an empty array, so that claim's verify pass found nothing
+new this attempt among the 78 remaining Japanese giant-tree register leads.
+`leads.py --ready` was empty (2692 leads, 0 READY), matching precedent.
+
+**Shipped: Amt Neuhaus, Germany**, a new single-tree place built directly
+from the already-verified fgm_001 (no write-stories agent needed for one
+sunk-cost tree): the Eiche am Forsthaus Gruener Jaeger, a hollow, storm-
+damaged pedunculate oak near Stapel, girth 8.91m, dendrologists' estimate
+~450 years against its local "700-year oak" nickname. Held rather than
+shipped: fgm_002 (Eiche Schillershoehe, Rudolstadt), verified but with no
+age, no girth and no individual distinction beyond a Naturdenkmal listing
+at a Schiller-memorial viewpoint, so it fails the "would somebody travel
+for THIS tree" test; recorded with reasoning in
+`data/leads/_famous-germany.json` rather than discarded. Full detail in
+CURATION.md. Build (4608 pages), qa.py and preflight.py all clean.
+Released the `_famous-germany` claim; left `hiroshima` standing since it
+still has 78 unmined register leads, just none verified this attempt.
+
+Rung 2: Data digest still shows failing (17h old at the time). Read the
+log directly: the same benign git-push race documented repeatedly this
+week (a concurrent writer won the push race, the digest's own commit was
+lost with the runner). `gh workflow run data-digest.yml` still 403s, this
+token still lacks `workflow_dispatch` scope. Nothing new to fix here; the
+next scheduled run picks it up.
+
 ## 2026-09-05 - Night run 2026-09-05 23:26 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 20.5 minutes of its 120 minute window, 174 turns, 34 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: hiroshima, _famous-lithuania, _famous-germany, which block the top of the queue until they expire.
