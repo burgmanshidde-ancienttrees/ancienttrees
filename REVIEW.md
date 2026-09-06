@@ -13,6 +13,86 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-06
+
+Reviewed commits since the last review (c7d4847e, 2026-09-05 ~11:00 UTC)
+through d52051f2 (~230 commits): the usual assembly-line volume (single-tree
+"famous-tree" destinations opened across Germany, France, Finland, Denmark,
+Slovakia, Lithuania, Turkey, Australia, Italy, Switzerland, the UK and
+Poland; Tilburg and Eindhoven deepened from the Dutch register; Borrowdale
+opened while catching two pre-existing duplicate leads; several photos
+vendored to our own domain). Ran `python3 scripts/qa.py` (7050 pages,
+clean), `python3 scripts/health.py` (rung 2 clear, no BLOCKER),
+`python3 scripts/preflight.py` (459 cities, 0 problems) and
+`python3 scripts/superlatives.py` (681 claims, no collisions). Confirmed
+both 2026-09-05 WARNs are fixed: Scheessel's story now spells the town
+consistently (0 hits for "Scheeßel" in the built HTML, was 3), and the
+Gerichtslinde-of-Scheessel fame flag was a note rather than a call to
+retire. Spot-checked the substantial new pages (`/aachen`, `/schlagsdorf`,
+`/gumeli`, `/borrowdale`, `/canberra`, `/tilburg`, `/eindhoven`) plus five
+random others (`/`, `/explore`, `/species`, and two tree pages); read six
+rotated app screenshots (`collection.png`, `contribute.png`,
+`directions.png`, `explore.png`, `feedback.png`, `map-full.png`).
+
+**WARN — three new single-tree-destination pages explain our own publish
+threshold to the reader, the exact disease TONE_OF_VOICE.md was written to
+stop.** `data/cities/canberra.json`, `gumeli.json` and
+`san-quirico-d-orcia.json` each carry an FAQ answer built from the same
+sentence: "This site publishes a place below the usual four tree floor only
+when a single tree ... is itself the destination people travel for."
+Confirmed live in the built HTML's FAQPage schema on all three
+(`site/dist/canberra.html`, `gumeli.html`, `san-quirico-d-orcia.html`).
+TONE_OF_VOICE.md's "Never explain our own rules to the reader" (v1.4,
+2026-08-08) names this exact shape ("the publish gate as copy... that is
+our logic back to the end user, they don't care about our specific rules")
+and was written after the same mistake shipped on the parks index.
+`scripts/qa.py`'s `BUSINESS_RULE_PHRASES` list already guards against it
+but only matches the park-page wording ("earns a page", "publish gate",
+etc.); this new phrasing, built for the 2026-08-31 single-tree-destination
+exception, isn't in the list, so it shipped past the existing check on
+three pages in one day. Not a BLOCKER because nothing is factually wrong,
+but it is the same drift the check was built to prevent, now recurring in
+a page type that didn't exist when the check was written. Fix is cheap:
+reword the three FAQ answers to say what IS here (the fame case) rather
+than the threshold behind it, and add the new phrase (or "below the usual
+four tree floor") to `BUSINESS_RULE_PHRASES` so the next single-tree
+place can't repeat it.
+
+**WARN, APP — the feedback screen contradicts itself in the space of two
+sentences.** `ios/AncientTrees/AncientTrees/Screens/Contribute.swift`:
+line 89 tells the reader, directly above the text box, "Nobody sees who
+sent this, and we do not ask for your name." Line 118, in the footer under
+the Send button on the same screen, reads "Sending needs a free account,
+so we can thank you, ask a question if we need to, and tell you what your
+tip changed." A visitor reading top to bottom meets an anonymity promise
+followed by a requirement to sign in to an account so the team can address
+them personally, which is not anonymous by any ordinary reading of the
+word. The code comment above line 89 shows the distinction that was meant
+("not 'we never publish your name'... nobody sees who sent THIS", i.e. no
+other USER sees it, not that we don't know), but that nuance lives in a
+comment, not on the screen, and a stranger holding the phone has no way to
+read it that generously. This is a corpus violation on its own terms:
+PRODUCT_COPY.md exists so the twenty words somebody reads while holding
+the app say what they get without leaving a contradiction for the reader
+to resolve themselves. A session (not a night run, per the app
+visual-taste rule) should reword one of the two lines, most likely
+narrowing the first to "Nobody else sees who sent this" so it stops
+promising something the second sentence takes back.
+
+Everything else read clean: no em dashes or banned words on the sampled
+pages (the one "majestic" hit in `explore.html`'s embedded map data is
+the tree's own registered name, "The Majestic Beech of Roumare", traced to
+the register's own file name `h_majestueux.pdf`, not house-style prose),
+no superlative collisions, photo licences and visible CC BY attribution
+render correctly on the new Aachen page, and the other four rotated app
+screenshots (`collection.png`, `directions.png`, `explore.png`,
+`map-full.png`) show nothing that contradicts itself or leaves an
+unexplained control; the floating "Map" pill in `map-full.png` is the
+documented back-to-map button for a fully-expanded sheet
+(`MapTab.swift`), not a stray control.
+
+---
+
 ## 2026-09-05
 
 Reviewed commits since the last review (61cc80c6, 2026-09-04 ~11:00 UTC)
