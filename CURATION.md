@@ -2,6 +2,24 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 (continuation 14) - 11 trees written and merged: 4 into Deventer/Arnhem/Leeuwarden/Den Bosch, 7 new Czech single-tree places
+
+Finished the two verify passes continuation 13 had left running
+(`_bomenbieb-netherlands`, `_famous-czech-republic`). Dutch: the
+Steenenkamer Maple (Deventer, dev_008), the Robinia of Kasteel Doorwerth
+(Arnhem, arn_038, a disputed 1678/1601/1579 planting date, oldest black
+locust in NL by local tradition), the White Horse Chestnut of Poptaslot
+(Leeuwarden, lee_009), the Annenborch Lime (Den Bosch, dbo_012, new
+oldest tree for that city at ~250y). Czech, each its own single-tree
+place under rule 1(0c): Frydlant, Cinovec (a 2007 successor to a
+lightning-killed original, written honestly as such), Prosec pod
+Jestedem, Lazy (half-fallen, both halves protected), Mcely, Jihlava
+(disputed age, 132 vs 211 years), Lukavice. 0 flagged as unverifiable
+beyond the honest disputes/gaps named above; 0 photos found (verify-only
+scope), all 11 ship with `photo.status: missing`. Both leads files marked
+published with tree ids; two country-page stale counts fixed (Czech
+Republic, Netherlands). Full detail in LOG.md.
+
 ## 2026-09-06 (continuation 11) - 8 new Slovak single-tree/small-cluster places published, Arnhem Dutch overlay finished
 
 Hronsek (hrs_001, memorial lindens by a UNESCO wooden church, count

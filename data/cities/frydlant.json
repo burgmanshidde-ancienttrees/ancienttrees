@@ -1,0 +1,62 @@
+{
+  "city": "Frydlant",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Frýdlant protects one tree by drawing a circle around it: a ten-metre buffer zone, in force since March 2005, on Březinova street beside the town's water reservoir. Inside it stands a copper beech 27 metres tall and 4.22 metres round, a garden cultivar somebody planted on purpose long ago, on a working street rather than in a park. Nobody has recorded when, or by whom, which leaves the trunk as the only clock this tree has.",
+  "meta_description": "Frýdlant's protected copper beech stands on a street by the water reservoir, 4.22 metres round, with a 10-metre no-touch zone and no recorded age.",
+  "question_meta": "Frýdlant's only mapped ancient tree is a copper beech by the water reservoir, protected since 2005. Its age has never been recorded.",
+  "question_answer": "Frýdlant's remarkable tree, known locally as the Buk u vodojemu (the beech by the reservoir), is a copper beech on Březinova street beside the town water reservoir, a purple-leaved garden cultivar 4.22 metres round and 27 metres tall. The town wrapped it in a ten-metre protection zone in March 2005. Nobody has published when it was planted.",
+  "question_context": "The tree stands on an ordinary residential street a short walk from Frýdlant's railway station, with the Glück Villa below it and the town hospital across the way, and the Řasnice river running behind. A copper beech does not occur naturally: its dark leaf colour is a mutation that only survives when somebody propagates and plants it deliberately, so this specimen marks a choice rather than an accident of the wood nearby. The Czech state register and Wikipedia both carry its measurements, 27 metres tall and 4.22 metres round, and neither carries a planting date or a name for who put it here. The town's own protection order, in force since 10 March 2005, draws a ten-metre buffer around the trunk and says nothing about its age either. That gap is the honest state of the record; if you know more, when it was planted or whose garden it once stood in, tell us and we will add it.",
+  "faq": [
+    {
+      "q": "What is the Buk u vodojemu?",
+      "a": "A copper beech, a purple-leaved garden cultivar, growing on Březinova street beside Frýdlant's water reservoir. It measures 4.22 metres round and stands 27 metres tall."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Nobody knows. No source records a planting date, so the age is left open here rather than guessed at."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a public street a short walk from Frýdlant's town centre and railway station."
+    }
+  ],
+  "oldest_tree_id": "fry_001",
+  "trees": [
+    {
+      "id": "fry_001",
+      "name": "Buk u vodojemu",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 422,
+      "location": {
+        "address": "Březinova ulice, near the water reservoir, Frýdlant",
+        "latitude": 50.9270469,
+        "longitude": 15.0819553,
+        "neighbourhood": "Frýdlant, Liberec Region"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Buk_u_vodojemu",
+        "https://www.wikidata.org/wiki/Q26787367",
+        "https://commons.wikimedia.org/wiki/File:Fr%C3%BDdlant,_B%C5%99ezinova,_pam%C3%A1tn%C3%BD_buk_(1).jpg"
+      ],
+      "access": "Free, on a public street beside the town's water reservoir",
+      "transport": "Central Frýdlant, short walk from the town centre and railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Frydlant, Czech Republic"
+      },
+      "story": "Frýdlant protected this beech by drawing a circle around it. Ten metres in every direction from the trunk, in force since 10 March 2005, and inside that circle the tree is left alone.\n\nWhat stands in the middle of it is a copper beech 27 metres tall with a trunk 4.22 metres round, on Březinova street beside the town water reservoir, a few minutes from the railway station. Coming up the street you have the Glück Villa below to the south and the hospital across to the east, with the Řasnice river running behind. This is a town tree in the plainest sense, on a working street rather than in a park, and it is by a wide margin the largest thing on that street.\n\nA purple beech is not something a wood produces by itself. The dark form is a garden cultivar, propagated by hand and planted deliberately, which means somebody chose this spot and put it here on purpose. Who, and when, is not recorded anywhere we can find.\n\nSo the register gives the height and the girth and stops, which leaves the trunk as the only clock the tree has. Nobody has published an age. If you know when it went in, or whose garden it once stood in, tell us and we will add it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

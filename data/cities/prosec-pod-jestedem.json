@@ -1,0 +1,61 @@
+{
+  "city": "Prosec pod Jestedem",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "A limestone quarry above the hamlet of Padouchov stopped working long ago and filled back in with forest; water still drops eight metres over its cut wall as the Ještěd waterfall. Beside it grows a beech five metres round with heavy buttress roots flaring from the base, protected as a memorial tree and reached on foot from Proseč pod Ještědem. Nobody has recorded its age, and the quarry beneath it is now a protected bat roost.",
+  "meta_description": "A five-metre beech with buttressed roots stands beside the Ještěd waterfall above Proseč pod Ještědem, in a disused quarry now a protected bat roost.",
+  "question_meta": "Proseč pod Ještědem's protected beech stands beside the Ještěd waterfall, five metres round, age unrecorded. Reached on foot from the village.",
+  "question_answer": "The remarkable tree near Proseč pod Ještědem is a European beech on the Hlubocký ridge above the hamlet of Padouchov, beside the Ještěd waterfall, five metres round with pronounced root buttresses. No age has been recorded.",
+  "question_context": "The waterfall itself is an accident of industry: an eight-metre drop over the wall of a disused limestone quarry, now grown back over with forest and a protected home for bats. The municipality's own tourism page records the tree's girth, five metres, and nothing more: no height, no age, no local legend attached to it. Heavy root buttresses flare out from the base, the kind of structure a beech only grows given decades of open space and nothing crowding it. Our pin marks the waterfall and quarry area rather than a coordinate anyone has stood at and confirmed, so it is close rather than exact; expect to look around once you reach the site rather than walk straight to the trunk. The tree is reached on foot via the hiking trail from Proseč pod Ještědem, free and with no gate or ticket anywhere along the way. The quarry's second life as a protected bat roost means the ground around the tree is left deliberately undisturbed, which may be part of why it has never been closely surveyed.",
+  "faq": [
+    {
+      "q": "What is the Buk lesní v Proseči pod Ještědem?",
+      "a": "A protected European beech, five metres round with heavy root buttresses, standing beside the Ještěd waterfall above the hamlet of Padouchov."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "On foot, via the hiking trail from Proseč pod Ještědem to the Ještěd waterfall. There is no gate or ticket."
+    },
+    {
+      "q": "Is the location exact?",
+      "a": "Approximately. Our pin marks the waterfall and quarry area rather than a coordinate confirmed at the trunk itself."
+    }
+  ],
+  "oldest_tree_id": "ppj_001",
+  "trees": [
+    {
+      "id": "ppj_001",
+      "name": "Buk lesní v Proseči pod Ještědem",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 500,
+      "location": {
+        "address": "Hlubocký ridge above the hamlet of Padouchov, beside the disused limestone quarry over which the Ještěd waterfall (Ještědský vodopád) falls, Proseč pod Ještědem",
+        "latitude": 50.71172139,
+        "longitude": 15.00829306,
+        "neighbourhood": "Padouchov, Proseč pod Ještědem, Liberec Region"
+      },
+      "verified_sources": [
+        "https://www.ppj.cz/turisticke-cile",
+        "https://cs.wikipedia.org/wiki/Padouchov"
+      ],
+      "access": "Free, reached on foot via the hiking trail to the Ještěd waterfall",
+      "transport": "Hamlet of Padouchov, near Světlá pod Ještědem, Liberec Region; reached on foot from local trails",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Prosec pod Jestedem, Czech Republic"
+      },
+      "story": "There is a waterfall here that nobody designed. Eight metres of water drops over the cut wall of a limestone quarry that stopped working and filled back in with forest, and the beech stands right beside it, five metres round at the trunk, with heavy root buttresses flaring out of the ground all round the base.\n\nIt is a protected memorial tree on the Hlubocký ridge above the hamlet of Padouchov, reached on foot on the trail up to the Ještěd waterfall from Proseč pod Ještědem. The quarry underneath is now a protected bat roost, so this small piece of ground has been left alone twice over: once by the quarrymen who walked away from it, and once by law.\n\nNobody has recorded an age or a height. The municipality publishes the girth, five metres, and nothing else. For a beech that is well into old age without saying how far into it, and there is no plaque or local account to settle the question. If you know more, tell us.\n\nOne thing to know before you go. Our pin marks the waterfall and quarry area rather than a coordinate anybody has stood on and checked, so it is close rather than exact, and you will have to look around a little once you are up there.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

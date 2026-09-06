@@ -1,0 +1,61 @@
+{
+  "city": "Cinovec",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "The beech growing at the Cínovec border crossing today is not the tree the stories are about. Its predecessor stood on this exact spot from around 1537, watched Emperor Joseph II and Goethe cross the Ore Mountains, and was destroyed by lightning in the 1970s after decades of decline. A young replacement went into the same ground in August 2007, with a plaque explaining what came before it. Come for the place; the tree itself is still young.",
+  "meta_description": "A young beech marks the spot of Cínovec's 400-year-old border tree, destroyed by lightning in the 1970s. Joseph II and Goethe passed beneath it.",
+  "question_meta": "Cínovec's border beech today is a 2007 replacement for the 400-year-old tree lightning destroyed. The history belongs to the site, not the sapling.",
+  "question_answer": "The tree at the Cínovec-Zinnwald border crossing is a young European beech, planted on 18 August 2007 to replace the original border beech, reputedly planted around 1537, which declined after 1945 and was destroyed by a lightning strike in the 1970s.",
+  "question_context": "The site itself carries the history: Emperor Joseph II is recorded passing the original tree in 1766 and 1779, Goethe in 1813, and Napoleon is said to have rested under it, a claim repeated about many large trees on old routes and worth about that much. The original beech began failing after 1945, was down to a single living branch by the 1960s, and lightning finished it off in the 1970s, ending four centuries on the same spot. None of that history belongs to the sapling standing here now, which is honestly still under twenty years old, slim and easy to walk past, with no measured girth or height on record. The information plaque beside it tells visitors what came before rather than letting the young tree speak for itself. This is a roadside stop at the Cínovec-Zinnwald crossing, a mountain pass that has carried traffic between Bohemia and Saxony for centuries, free and open at any time, with the plaque as the only marker of what stood here first.",
+  "faq": [
+    {
+      "q": "Is the Cínovec border beech the original 400-year-old tree?",
+      "a": "No. The original beech, planted around 1537, was destroyed by lightning in the 1970s after years of decline. A young replacement was planted on the same spot on 18 August 2007."
+    },
+    {
+      "q": "Who passed by the original tree?",
+      "a": "Emperor Joseph II in 1766 and 1779, and Goethe in 1813, are recorded crossing at this spot. A Napoleon legend also attaches to the tree, unverified."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands at a roadside border crossing site, open at any time."
+    }
+  ],
+  "oldest_tree_id": "cin_001",
+  "trees": [
+    {
+      "id": "cin_001",
+      "name": "Hraniční buk (Cínovec border beech)",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Roadside at the Cínovec-Zinnwald border crossing site (Dubí, Teplice District), marked with an information plaque",
+        "latitude": 50.732796,
+        "longitude": 13.767946,
+        "neighbourhood": "Cínovec, Ústí nad Labem Region"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Hrani%C4%8Dn%C3%AD_buk_(C%C3%ADnovec)",
+        "https://cinvald.cz/o-cinovci/historie/"
+      ],
+      "access": "Free, roadside historic site at a mountain border crossing",
+      "transport": "Cínovec, on the Czech-German border near Dubí, Teplice District",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Cinovec, Czech Republic"
+      },
+      "story": "The tree standing here is not the tree the stories are about. The original border beech was reputedly planted in 1537 on the line between Bohemia and Saxony and grew to some six metres round. It began failing after 1945, was down to a single living branch by the 1960s, and lightning finished it in the 1970s. What grows here now went into the same ground on 18 August 2007, with an information plaque beside it. It is a young tree, slim and easy to walk past, standing in the exact spot where a mountain road has crossed a border for centuries.\n\nThe old beech collected the traffic. Emperor Joseph II is recorded passing it in 1766 and again in 1779. Goethe came through in 1813. Napoleon is supposed to have rested under it, which is the sort of thing said about every large tree on a route an army once used, and is worth about what it costs to repeat. All of that belongs to the site and to the tree that is gone, not to the sapling.\n\nSo this is a young beech holding an old address at the Cínovec crossing to Zinnwald, up in the Ore Mountains. Come for the place and the plaque that explains it. Come back in a century for the tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

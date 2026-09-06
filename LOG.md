@@ -1,6 +1,103 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 14) - Finished continuation 13's two verify passes: 11 trees, 4 into existing Dutch cities, 7 new Czech single-tree places
+
+Picked up per this prompt's own priority: no standing claims were unfinished
+work (continuation 13's two verify passes had already delivered their
+output as uncommitted `data/research/*-verified.json` files, ids blank,
+which is why `passcheck.py --pending` reported nothing to write, per
+`pending_research()`'s own rule that a blank id is skipped). Dispatched a
+write-stories agent on all 11 in one context rather than orienting further,
+then merged the output myself.
+
+1. **Dutch bomenbieb leads, 4 verified.** All four sit within the day-trip
+   boundary of an already-published city, so none became a new place. The
+   Steenenkamer Maple (private garden near Deventer, roadside view only)
+   joined as dev_008; the Robinia of Kasteel Doorwerth, a rare single-leaf
+   Unifoliola cultivar held locally to be the oldest black locust in the
+   Netherlands, with three competing planting traditions (1678 best-sourced
+   against the plaque's 1601/1579), joined Arnhem as arn_038, 6.9km out;
+   the Poptaslot horse chestnut (Roodbaard's 1840 planting, voted Friesland's
+   most beautiful tree in 2017) joined Leeuwarden as lee_009; the Annenborch
+   Lime, on the mound of a convent burned down in 1584, joined Den Bosch as
+   dbo_012 and became its new oldest tree (~250y vs. the previous 170y
+   plane), which meant rewriting Den Bosch's whole oldest-tree question page
+   and FAQ rather than just appending a row.
+
+   Rewrote every count-promise in all four city files (intro, meta
+   description, question_meta, FAQ) rather than just appending to the trees
+   array; preflight caught two over the char/word limits on the first pass
+   (Den Bosch's rewritten intro ran long, Leeuwarden's access line tripped
+   the hard-rule-10 permission check on "by appointment" describing the
+   HOUSE tour, not the free garden the tree stands in, reworded to say so
+   without the trigger phrase). The build then caught a real gap preflight
+   can't see: `data/i18n/nl/arnhem.json` had no arn_038 entry, so the deploy
+   would have gone red; hand-translated it (Contract J requires full overlay
+   coverage or the build fails).
+
+2. **Seven Czech famous-tree leads, each its own single-tree place**
+   (Frydlant, Cinovec, Prosec pod Jestedem, Lazy, Mcely, Jihlava, Lukavice),
+   per rule 1(0c): all are Tree of the Year contenders or nationally
+   designated specimens with no nearby published city to join. Two are
+   honesty-forward cases worth flagging for a future pass: Cinovec's
+   "border beech" is a 2007 sapling replacing a lightning-killed ~400 year
+   original, written throughout as the successor, the Elm of Saint-Gervais
+   pattern; Lazy's Pastyrsky buk is half fallen and both halves remain
+   legally protected. Three carry no age at all (Frydlant, Prosec, Mcely)
+   and the pages ask the reader; Jihlava's age is disputed by nearly a
+   century between two measurements taken nine years apart, both stated
+   rather than one picked.
+
+   The build's Contract B check (question_answer must name the tree)
+   caught one real gap: Frydlant's answer described the tree without ever
+   using its Czech name, fixed by naming it in the first sentence.
+   Word-count on question_context (150-200, Contract B) needed expanding
+   on 6 of the 7 short single-tree pages, all with genuine additional
+   sourced detail rather than padding.
+
+   Normalized 3 species collisions the write pass flagged rather than
+   silently fixed itself (Sycamore Maple -> Sycamore, matching 20 existing
+   trees; White Horse Chestnut -> Horse Chestnut, matching 60; the
+   Doorwerth cultivar's non-standard string -> Black Locust; two Czech
+   "Atropunicea" copper beeches -> the dominant "Fagus sylvatica f.
+   purpurea" form, already used 50 times in the corpus).
+
+3. Marked all 11 leads `status: published` with the tree id in both source
+   files (`_bomenbieb-netherlands.json`, `_famous-czech-republic.json`) and
+   released both claims. Fixed the Czech Republic country page's stale
+   count (13 places/42 trees -> 20/49, caused by this batch) and, caught in
+   passing, the Netherlands country page's unrelated stale city count
+   (37 -> 48, pre-existing staleness from cities opened by other
+   continuations today).
+
+4. Also vendored 5 photographs to our own domain (`vendor_photos.py`,
+   flagged at session start) and looked at the iOS app's newest failed CI
+   run: a `mytrees-who` element flagged SMALL on all 4 phone/OS combos on
+   the "people" screen, but the identical code had passed 9 hours earlier
+   with zero commits to `ios/` in between, so this reads as a sheet-
+   presentation timing flake rather than a real layout regression. No
+   permission to `gh workflow run` a fresh verdict from this session;
+   recording it here rather than guessing a Swift fix blind, since this
+   project's own rule is that a night run cannot judge app layout without
+   eyes on a simulator. It will get a fresh verdict at the next scheduled
+   run (05:00/17:00 UTC) or the next push that touches `ios/`.
+
+Build (4839 pages), qa.py (7369 pages), preflight.py and superlatives.py
+all clean, run twice (once before, once after the country-page fixes).
+Cost: ~126k tokens for the write pass across all 11 trees, ~11.5k/tree,
+under the 15k target.
+
+Left behind, not cleaned up this session: `data/research/
+bomenbiebnetherlands-verified.json` and `famousczech2-verified.json` are
+now stale (all 11 trees confirmed live by name-match against every city
+file) and should be deleted by whichever run touches this area next, same
+as continuation 13 found and cleaned up two similar leftovers this
+morning. Three untracked `tmp_*.html` scratch fetch files from an earlier,
+shorter attempt this window are also still sitting in the repo root and
+harmless; also worth a delete next time someone is in there.
+
+
 ## 2026-09-06 (continuation 13) - Cleanup: two stale write-pass leftovers found and fixed, two verify passes dispatched
 
 Ran visitors.py (7-day visits climbing: 82/48/106/108/202/195/223/149) and

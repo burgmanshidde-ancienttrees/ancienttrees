@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "The occupying French cut down the trees in Deventer's park across the river, and in 1822 the city planted it again. Most of the oaks, beeches and planes in the Worpplantsoen today are from that replanting, which makes the whole park a piece of restitution you can walk through. It is one of the oldest city parks in the Netherlands. The oldest tree is elsewhere: a lime at Diepenveen said to date from 1614, used as a lookout by Cossacks fighting the French in 1813.",
-  "meta_description": "Seven remarkable trees in Deventer: a lime the Cossacks watched from in 1813, and a park replanted in 1822 after the French felled everything in it.",
-  "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and six more worth the walk.",
+  "meta_description": "Eight remarkable trees in Deventer: a lime the Cossacks watched from in 1813, and a park replanted in 1822 after the French felled everything in it.",
+  "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and seven more worth the walk.",
   "question_answer": "The oldest tree in Deventer is the Kozakkenlinde on the Kozakkenweg at Diepenveen, which the national register places in a planting band of 1600 to 1700 and, more specifically, suggests was planted in 1614 after the death of the Hijligen eik, the holy oak that had stood in the same spot. Its name comes from a later episode: during the French occupation of Deventer in 1813 the tree is said to have been used as a lookout by Cossacks fighting against the French. Both of those are traditions carried by the register rather than facts we can prove, and it cites an article by Wim de Weerd behind them. What is not in doubt is that this is a very old lime standing where an older sacred tree stood before it.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands. Two entries carry better reasoning than that and the pages say so. The register dates the black walnut in the Worpplantsoen to a specific replanting in 1820 to 1822, after the planting of 1816 was damaged by drifting ice on the IJssel. And for the poplar known as De Reus van De Worp it argues from a photograph: an image of the Lange Laan in the Ossenwaarde taken in 1917 shows the tree small and distant, clearly young, which supports a planting between 1900 and 1910 rather than anything earlier. That is a better piece of dating than most trees on this site have. The register is the 2024 edition and is the single source throughout, so everything here is flagged. Where a pin is marked approximate we know the park and not the trunk.",
   "hero_tree_id": "dev_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All seven. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, and the Frieswijk oak is on estate land recorded as visitable."
+      "a": "Seven of the eight, yes. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, and the Frieswijk oak is on estate land recorded as visitable. The eighth, the Steenenkamer Maple out past the Bolwerksmolen windmill, grows in a private garden and is only seen from the road."
     }
   ],
   "trees": [
@@ -265,6 +265,36 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "dev_008",
+      "name": "The Steenenkamer Maple",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 130,
+      "age_max": 150,
+      "location": {
+        "address": "Bolwerksweg 10, Steenenkamer, near Deventer",
+        "latitude": 52.24627,
+        "longitude": 6.155635,
+        "neighbourhood": "Steenenkamer, on the IJssel floodplain near the Bolwerksmolen windmill, about 0.6km from Deventer's published dev_005 tree"
+      },
+      "story": "One of the thickest maples in the Netherlands has two trunks instead of one. It stands on the Bolwerksweg outside Deventer, past the Bolwerksmolen windmill, where the lane runs out onto the floodplain of the IJssel, and it divides low into a double stem carrying a crown far wider than the road it shades. The national tree foundation lists it among the ten most remarkable trees in the province of Overijssel.\n\nIt went into the ground somewhere between 1880 and 1890, which puts it at roughly 140 years, young for a tree on a list like this. Almost all of that life has been spent on ground the river takes back whenever the water comes up, which is not where you would expect to find a maple of this size. Deventer's own tree society had the crown pruned back not long ago, the sort of attention a tree gets once a town has decided to keep it.\n\nIt grows in a private garden. Its own record says it is clearly visible from the Bolwerksweg, and the roadside is where you stand: there is no way onto the land and no need for one.\n\nNobody has published a girth for it, so how thick it actually is remains an open question. If you go out there with a tape measure, tell us the number.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/esdoorn-steenenkamer/",
+        "https://deventerbomenstichting.nl/nieuws/monumentale-esdoorn-bolwerksweg-bijgesnoeid/",
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-overijssel.html"
+      ],
+      "access": "On private land (a garden) but the tree is described by bomenbieb itself as \"goed zichtbaar vanaf de Bolwerksweg\" (clearly visible from the public road). No public entry onto the property; view from the roadside only.",
+      "transport": "Rural riverside lane, no station nearby; nearest is Deventer, roughly 15-20 minutes by bike or car from the city centre.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

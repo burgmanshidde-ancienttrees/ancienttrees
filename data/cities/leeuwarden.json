@@ -2,8 +2,8 @@
   "city": "Leeuwarden",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Five of these eight stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
-  "meta_description": "Eight remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
+  "intro": "Five of these nine stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
+  "meta_description": "Nine remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
   "question_meta": "Leeuwarden's oldest tree is a copper beech by the Westerkerk, banded 1750 to 1800, and the register expects it will have to be felled.",
   "question_answer": "The oldest tree in Leeuwarden is a copper beech standing by the Westerkerk on the Sint Anthonystraat, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It is also the one tree here with a warning attached. The register records that its rooting ground was compacted in the 1990s, that the tree took a blow from which it never recovered, and that although the ground has since been improved its condition has not come back, so it will in time have to be felled. It is standing now. If you want to see the oldest tree in Leeuwarden, this is an argument for going this year rather than in ten.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged. It is a careful source: for several of these it records the tree's condition as well as its age, which is where the note about the Westerkerk beech comes from and why we have passed it on rather than quietly leaving it out. The Prinsentuin trees are dated indirectly, because the register reasons from the park's own history that the oldest trees in it must come from between 1830 and 1880 rather than from a record of any individual planting. Pins are as the register surveyed them; where one is marked approximate we know the park and not the trunk.",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All seven. The Prinsentuin is an open public park, the old cemetery is open ground and no longer in use, and the Westerkerk beech stands on the street."
+      "a": "Yes. The Prinsentuin is an open public park, the old cemetery is open ground and no longer in use, and the Westerkerk beech stands on the street. The horse chestnut at Poptaslot, out at Marssum, stands in a garden that is free but keeps weekday hours, April to September, and is closed on Sundays."
     }
   ],
   "trees": [
@@ -289,6 +289,44 @@
       "how_to_recognise": "Two tall, narrow elms opposite house numbers 29 and 35. The larger of the pair carries a huge swollen collar about 1.5 metres up the trunk, where it was grafted.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "lee_009",
+      "name": "The White Horse Chestnut of Poptaslot",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 185 years",
+      "age_min": 180,
+      "age_max": 190,
+      "girth_cm": 475,
+      "location": {
+        "address": "Slotleane, Poptaslot (Heringastate), Marssum",
+        "latitude": 53.209853,
+        "longitude": 5.729699,
+        "neighbourhood": "Front/side garden of Poptaslot, a 17th-century almshouse estate near Leeuwarden, about 4km from Leeuwarden's published lee_003"
+      },
+      "story": "Left to itself, this horse chestnut would surround itself with children. Its lowest branches sweep down to the grass and will root wherever they rest, throwing up a ring of new stems around the parent trunk. The gardener at Poptaslot cuts them back so the tree stays one tree.\n\nIt was planted in 1840 by L.P. Roodbaard, the landscape architect who redrew country estate after country estate across Friesland in the loose English style, as part of his design for the grounds here. Three maples nearby are his too, the same year, the same job. Poptaslot, also called Heringastate, was already a seventeenth century almshouse estate when he arrived, so the chestnut has spent its whole life as the newest thing on old ground.\n\nThe trunk is 4.75 metres round and the tree is 19 metres tall. In June 2017 the national tree foundation put it first on its list of the ten most beautiful trees in Friesland, ahead of older and larger trees. Not the oldest, not the biggest, just the one people wanted to stand under.\n\nThe garden is free, on weekdays from April to September, roughly nine to four and later in high summer, closed on Sundays. Going inside the house is a guided tour and a separate arrangement, but the tree is in the garden and the garden is the free part.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candles come out all over the crown"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/witte-paardenkastanje-poptaslot/",
+        "https://marssum.info/kastanjeboom-poptaslot-mooiste-van-friesland/",
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-friesland.html"
+      ],
+      "access": "Free. The garden, where the tree stands, is open on weekdays from April to September (roughly 09:00-16:00, later in July and August) and closed on Sundays. Seeing inside the house itself is a separate, paid tour.",
+      "transport": "Village of Marssum, near Leeuwarden; reachable by local bus, roughly 10-15 minutes from Leeuwarden centre by car.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
