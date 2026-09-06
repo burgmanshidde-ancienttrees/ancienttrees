@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Des Moines",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-09-06 (session), on scout_next.py --target naming Des Moines (#69) as no supply/no verdict, one step after Reno. The city's own 'Heritage Trees' program (dsm.city) is a nomination portal only, no published register yet. The real find is behind it: the Iowa DNR's 'Big Tree Program' ArcGIS Experience (experience.arcgis.com/experience/db8a533a6ca34fc89a3df0603b6b2cb4/), whose description explicitly scopes it to trees 'Located on Iowa's Public Lands'. Traced through the ArcGIS item API to the underlying Feature Service (services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/The_Big_Tree_Program/FeatureServer/0), queryable directly with no key needed. This is the richest US state find so far: 295 records statewide, 22 in Polk County/Des Moines, with real coordinates (Lat/Long fields), species (common and scientific), owner (City of Des Moines, Polk County Public Works, Iowa DNR, Drake University, i.e. mostly but not entirely public bodies, so hard rule 10 still needs a per-tree check), a numeric Champion_Status tier, a free-text Condition_of_Tree field, and, unusually for this project's US registers, a Depricated_on date field that already flags removed/dead specimens, the vitality signal almost no other register carries. STALLED, not imported: the ArcGIS item's licenseInfo and accessInformation are both empty, same shape as every other US state big-tree service found so far (Arkansas, California). Given the field richness and the explicit public-land scoping, this is a strong candidate for the next licence-ask outreach batch (Iowa DNR Forestry Section; the app credits Mark Runkel), better odds than most because it already does half of hard rule 10's work for us."
+    },
+    {
       "place": "Reno",
       "country": "United States",
       "status": "stalled",
