@@ -6,5 +6,42 @@
     "night-run": 1.5
   },
   "expire_hours_note": "The number above is a fallback only and is not read at runtime: scripts/passcheck.py's night_run_expiry_hours() greps timeout-minutes straight out of .github/workflows/nightly.yml (currently 120) and overrides this field every time, so do not trust this file's own number, trust the workflow. This field previously said 'killed at 60 minutes' after the workflow moved to 120 (2026-08-17/19) and stayed wrong for days; that is why this note now points at the source instead of restating it. Sessions keep the four hours, because a session legitimately pauses.",
-  "claims": []
+  "claims": [
+    {
+      "target": "_famous-japan",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-06T23:54:34+00:00"
+    },
+    {
+      "target": "_famous-canada",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-06T23:54:36+00:00"
+    },
+    {
+      "target": "_famous-portugal",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-06T23:54:38+00:00"
+    },
+    {
+      "target": "_famous-south-korea",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-06T23:54:40+00:00"
+    },
+    {
+      "target": "_famous-sweden",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-06T23:54:42+00:00"
+    },
+    {
+      "target": "_famous-austria",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-06T23:54:44+00:00"
+    }
+  ]
 }
