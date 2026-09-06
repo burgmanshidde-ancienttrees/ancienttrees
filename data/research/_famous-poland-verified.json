@@ -1,0 +1,110 @@
+[
+  {
+    "id": "prz_001",
+    "name": "Dąb Dunin",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 400 years",
+    "age_min": 350,
+    "age_max": 450,
+    "girth_cm": 540,
+    "height_m": 13,
+    "location": {
+      "address": "Przybudki, edge of the Lacka Forest section of Białowieża Forest (Puszcza Białowieska), Podlaskie Voivodeship, Poland",
+      "latitude": 52.860805,
+      "longitude": 23.591024,
+      "neighbourhood": "Przybudki, near Białowieża Forest"
+    },
+    "verified_sources": [
+      "https://pl.wikipedia.org/wiki/D%C4%85b_Dunin",
+      "https://spidersweb.pl/2022/03/dab-dunin-europejskie-drzewo-roku.html",
+      "https://www.radio.bialystok.pl/wiadomosci/index/id/209863"
+    ],
+    "access": "Free, publicly accessible; stands in an open area at the forest edge near the hamlet of Przybudki.",
+    "transport": "In the hamlet of Przybudki on the western edge of Białowieża Forest. No public transport reaches the tree directly; nearest access is by car or bike from Hajnówka (the district town) or Białowieża village, both a short regional drive away.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Pedunculate oak (Quercus robur), a remnant of the former Lacka Forest. Registered as a nature monument in 2001, no. 1379. Girth 530-550cm at 130cm height (2001 measurement, used 540cm as midpoint). Height ~13m. Age estimated at 330-350 years in 2001 and nearly 400 years by 2021; used a broad 350-450 band to cover both readings plus growth since. Named 'Dunin' after Belarusian/Polish poet Wincenty Dunin-Marcinkiewicza (named by Janusz Korbel); previously called 'Strażnik Puszczy' (Guardian of the Forest). Originally had an upright columnar form but lightning strikes broke branches and gave it its current spreading, irregular crown; one source notes a real risk the trunk could split in half, worth a caution in the story but not a death signal. Won Poland's national Tree of the Year 2021 and the European Tree of the Year 2022, both well documented. Confirmed standing as of the 2021-2022 award cycle (most recent evidence found).",
+    "container": "own place: Przybudki (Białowieża Forest) - passes the single-tree destination test: reigning European Tree of the Year (2022) and Poland's Tree of the Year (2021), which brings real name recognition on its own, and it sits inside the world-famous Białowieża Forest / Białowieża National Park day-trip area, an existing major nature-tourism destination even though Białowieża itself is not one of our published cities."
+  },
+  {
+    "id": "sul_002",
+    "name": "Sosna Rzepicha",
+    "species": "Scots Pine (Pinus sylvestris)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 568,
+    "height_m": 27,
+    "location": {
+      "address": "Nowy Świat forestry district, Nadleśnictwo Sulechów, between the villages of Pomorsko and Górki Małe, Lubusz Voivodeship",
+      "latitude": 52.036389,
+      "longitude": 15.546667,
+      "neighbourhood": "near Górki Małe, Sulechów municipality"
+    },
+    "verified_sources": [
+      "https://pl.wikipedia.org/wiki/Sosna_Rzepicha",
+      "https://www.pomniki-przyrody.pl/?p=12858",
+      "https://lenartpawel.pl/pomnikowa-sosna-zwyczajna-rzepicha-w-poblizu-gorek-malych-najgrubsza-w-kraju.html"
+    ],
+    "access": "Free in principle (state forest), but genuinely hard to reach: no direct road, stands at the edge of a thicket and marshy meadow on the Oder floodplain terrace near a pool. Unlike its neighbour Sosna Waligóra (sul_001), which has a marked trail and roadside parking, Rzepicha requires walking off-trail through wet ground; say this plainly in the story.",
+    "transport": "About 10.5km from Sulechów town centre and from the Sosna Waligóra site (sul_001), in the same forest district. No public transport; reached on foot from Górki Małe or Pomorsko.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Five trunks fused into one spreading, well-developed crown, described as in 'very good' health despite some dead branches with healing scars. Considered the thickest Scots pine in Poland under updated measurement methods, surpassing its neighbour Waligóra (sul_001, already published), which held that title under the older method. Designated a nature monument in 1996; Central Registry (CRFOP) reference PL.ZIPOP.1393.PP.0809063.783. No age has been published anywhere found; leave age_estimate empty and let the page ask the reader, per the honest-gap rule. Girth 568cm at 1.3m, height 27m, both from Polish Wikipedia's infobox.",
+    "container": "joins Sulechów (published city, currently one tree: sul_001 Sosna Waligóra). Same forest district (Nadleśnictwo Sulechów), 10.5km from Waligóra: not a walking cluster, but a reasonable second stop in the same small municipality, similar in spirit to the two-pines-one-viewpoint pattern used for Tenerife. The access gap between the two trees (Waligóra has a trail and parking, Rzepicha does not) must be stated honestly rather than smoothed over."
+  },
+  {
+    "id": "cie_001",
+    "name": "The Cielętniki Linden",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "several hundred years, estimates disputed (roughly 500-700)",
+    "age_min": 500,
+    "age_max": 700,
+    "girth_cm": 1084,
+    "height_m": 30,
+    "location": {
+      "address": "Churchyard of the Transfiguration of Jesus parish, Cielętniki, gmina Dąbrowa Zielona, Śląskie Voivodeship",
+      "latitude": 50.889667,
+      "longitude": 19.574972,
+      "neighbourhood": "Cielętniki village, near Częstochowa"
+    },
+    "verified_sources": [
+      "https://www.pomniki-przyrody.pl/?p=10281",
+      "https://tvn24.pl/katowice/slaskie-ksawery-uszkodzil-700-letnia-lipe-z-cieletnik-ra779062-ls2461860",
+      "https://czestochowa.naszemiasto.pl/cieletniki-zapraszaja-czyli-wyjatkowa-lipa-to-nie-jedyna/ar/c7-9008617"
+    ],
+    "access": "Free, publicly accessible; stands in the open churchyard beside the parish church, historically a stop on pilgrimage routes toward Częstochowa's Jasna Góra monastery.",
+    "transport": "Small village church square in Cielętniki; nearest larger town is Częstochowa, roughly 30km away. No direct public transport recorded to the village; reached by car.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Repeatedly cited as the thickest small-leaved lime, and one of the thickest trees of any species, in Poland: a 2023 measurement by Marek Kaziak put its circumference at 1069cm, ranking it 2nd-thickest nationally (after a plane tree in Chojno); the register's own figure is 1084cm official (1107cm raw at breast height, tapering below). On the night of 5-6 October 2017, Hurricane Ksawery knocked the tree to the ground; sources agree it survived and is still alive and blooming, and the 2023 measurement confirms it is still standing and measurable today. Local legend holds that chewing the bark cures toothache, which drew pilgrims heading to Częstochowa to strip bark from the trunk for centuries, eventually requiring a protective fence. An informational plaque suggests the massive trunk may be a fusion of as many as 18 saplings originally planted together, which would explain both the girth and the age uncertainty. Age estimates vary widely: local tradition claims about 700 years, a 2014 dendrochronological estimate by C. Pacyniak gives roughly 550 years, and one source says it was 'planted shortly before 1500' (about 525 years). Recorded as a spread rather than sharpened to one figure.",
+    "container": "own place: Cielętniki - passes the single-tree destination test: nationally famous as the thickest small-leaved lime (and among the thickest trees of any species) in Poland, with a well-documented pilgrim legend and a dramatic survival story after being knocked flat by a 2017 hurricane. Sits near Częstochowa, one of Poland's most-visited towns (Jasna Góra monastery draws millions of pilgrims yearly), giving it a built-in day-trip audience even though Częstochowa itself is not yet a published city."
+  },
+  {
+    "id": "wis_001",
+    "name": "Dąb Józef",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "several centuries; estimates disputed (roughly 450-650)",
+    "age_min": 450,
+    "age_max": 650,
+    "girth_cm": 675,
+    "height_m": 30,
+    "location": {
+      "address": "Park-Manor Complex (Zespół dworsko-parkowy), Wiśniowa, Strzyżów County, Podkarpackie Voivodeship",
+      "latitude": 49.8687,
+      "longitude": 21.644082,
+      "neighbourhood": "Wiśniowa village park"
+    },
+    "verified_sources": [
+      "https://pl.wikipedia.org/wiki/D%C4%85b_J%C3%B3zef",
+      "https://lenartpawel.pl/pomnikowy-dab-szypulkowy-jozef-z-wisniowej-drzewo-roku-2016-i-europejskie-drzewo-roku-2017.html",
+      "https://www.pomniki-przyrody.pl/?p=17837"
+    ],
+    "access": "Free, publicly accessible within the historic manor park grounds, which are open to visitors.",
+    "transport": "In the village of Wiśniowa; the nearest larger town is Strzyżów, about 15km away. No direct public transport recorded to the park itself; reached by car.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Pedunculate oak, protected as a nature monument since 1954. The tree appears on the reverse of the Polish 100-zloty banknote (designed by Jozef Mehoffer, issued 1932 and 1934) as a symbol of longevity and durability; sources do not say the tree was named 'Jozef' because of the banknote or vice versa, so that link is stated as two facts (bears the name Jozef; appears on a banknote) rather than joined into a causal claim. Local WWII account: two Jewish brothers, given as Paul and David Denholz, hid in the oak's hollow in a two-level shelter (upper level for observation, lower for concealment), reportedly helped by a local woman, Rozalia Proszak; this is oral/local history and should be flagged as such rather than presented as independently documented fact. Won Poland's national Tree of the Year in 2016 and became the first Polish winner of the European Tree of the Year in 2017. Age is disputed: commonly cited as roughly 650 years, but a 1984 scientific calculation by Cezary Pacyniak put it at about 416 years (implying roughly 450-460 years today); recorded as a spread (450-650) rather than picking a winner. Girth 675cm, height 30m, both from Polish Wikipedia's infobox.",
+    "container": "own place: Wiśniowa - passes the single-tree destination test clearly: first Polish winner of the European Tree of the Year (2017), depicted on a historic national banknote, and carries a documented (if oral) WWII rescue story. This is a tree with existing name recognition that people already travel to see because of the competition win, independent of anything we add."
+  }
+]

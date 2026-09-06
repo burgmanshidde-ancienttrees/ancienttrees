@@ -29,7 +29,8 @@
       "owner_category_ja": "社寺",
       "facility_ja": "祗園神社",
       "town_ja": "中野",
-      "banchi_ja": "7-40"
+      "banchi_ja": "7-40",
+      "verify_note": "verify_attempt_2026-09-06: searched for a second independent source on this Gion Shrine keyaki (Nakano, Aki-ku); found only real-estate/map listings, nothing describing the tree itself. Register-only, left as a lead."
     },
     {
       "report_id": 53005,
@@ -48,7 +49,8 @@
       "owner_category_ja": "社寺",
       "facility_ja": "龍善寺",
       "town_ja": "上瀬野",
-      "banchi_ja": "2-6-11"
+      "banchi_ja": "2-6-11",
+      "verify_note": "verify_attempt_2026-09-06: searched for a second source on this Ryuzenji ginkgo (age band 300+ years at 2000 survey, Kamiseno, Aki-ku); found nothing beyond the register. Left as a lead."
     },
     {
       "report_id": 53006,
@@ -72,7 +74,8 @@
       "longitude": 132.6239477,
       "geocode_display_name": "平山神社, 瀬野呉線, 上瀬野二丁目, 上瀬野町, 安芸区, 広島市, 広島県, 739-0302, 日本",
       "location_precision_hint": "site",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk.",
+      "verify_note": "verify_attempt_2026-09-06: confirmed Hirayama Shrine itself is real and old (enshrined by Takeda Nagato from Usa Hachimangu, main hall rebuilt 1635/1741, worship hall 1820, per yaokami.jp and other shrine directories) but found no source describing this specific ginkgo, cypress, hackberry or soapberry. komainu.org (cert error) and yaokami.jp/omairi.club (403) could not be fetched. Register-only, left as a lead; the shrine history does NOT establish the trees' age (would be a bridge claim) and is not used for that."
     },
     {
       "report_id": 53007,
@@ -96,7 +99,8 @@
       "longitude": 132.6239477,
       "geocode_display_name": "平山神社, 瀬野呉線, 上瀬野二丁目, 上瀬野町, 安芸区, 広島市, 広島県, 739-0302, 日本",
       "location_precision_hint": "site",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk.",
+      "verify_note": "verify_attempt_2026-09-06: see 53006, same shrine and same search, no second source found for this specific cypress."
     },
     {
       "report_id": 53008,
@@ -115,7 +119,8 @@
       "owner_category_ja": "社寺",
       "facility_ja": "大年神社",
       "town_ja": "中野",
-      "banchi_ja": "3-28"
+      "banchi_ja": "3-28",
+      "verify_note": "verify_attempt_2026-09-06: searched for a second source on Otoshi Shrine camphors/hackberry (Nakano, Aki-ku, same neighbourhood as 53003 Gion Shrine, possibly a walkable pair); found only a garbled jalan.net listing and nothing describing the trees. Register-only, left as a lead."
     },
     {
       "report_id": 53009,
@@ -134,7 +139,8 @@
       "owner_category_ja": "社寺",
       "facility_ja": "大年神社",
       "town_ja": "中野",
-      "banchi_ja": "3-28"
+      "banchi_ja": "3-28",
+      "verify_note": "verify_attempt_2026-09-06: see 53008, same shrine and same search, no second source found."
     },
     {
       "report_id": 53010,
@@ -153,7 +159,8 @@
       "owner_category_ja": "社寺",
       "facility_ja": "大年神社",
       "town_ja": "中野",
-      "banchi_ja": "3-28"
+      "banchi_ja": "3-28",
+      "verify_note": "verify_attempt_2026-09-06: see 53008, same shrine and same search, no second source found."
     },
     {
       "report_id": 69349,
@@ -215,7 +222,8 @@
       "longitude": 132.6239477,
       "geocode_display_name": "平山神社, 瀬野呉線, 上瀬野二丁目, 上瀬野町, 安芸区, 広島市, 広島県, 739-0302, 日本",
       "location_precision_hint": "site",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk.",
+      "verify_note": "verify_attempt_2026-09-06: see 53006, same shrine (Hirayama), no second source found for this specific hackberry."
     },
     {
       "report_id": 69377,
@@ -238,7 +246,8 @@
       "longitude": 132.6239477,
       "geocode_display_name": "平山神社, 瀬野呉線, 上瀬野二丁目, 上瀬野町, 安芸区, 広島市, 広島県, 739-0302, 日本",
       "location_precision_hint": "site",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk.",
+      "verify_note": "verify_attempt_2026-09-06: see 53006, same shrine (Hirayama), no second source found for this specific soapberry."
     },
     {
       "report_id": 69378,
@@ -407,7 +416,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "三入八幡宮",
-      "town_ja": "可部町三入南２丁目"
+      "town_ja": "可部町三入南２丁目",
+      "verify_note": "verify_attempt_2026-09-06: searched for a second source on Miiri Hachimangu's hemlocks; hotokami.jp confirms the shrine's address (Miiri-minami 2-5-1) but explicitly has no access/trees info, omairi.club 403d. Register-only, left as a lead."
     },
     {
       "report_id": 69352,
@@ -425,7 +435,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "三入八幡宮",
-      "town_ja": "可部町三入南２丁目"
+      "town_ja": "可部町三入南２丁目",
+      "verify_note": "verify_attempt_2026-09-06: see 69351, same shrine, no second source found."
     },
     {
       "report_id": 69354,
@@ -880,7 +891,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "光禅寺",
-      "town_ja": "五日市町"
+      "town_ja": "五日市町",
+      "verify_note": "verify_attempt_2026-09-06: confirmed via a walking blog (arukurumen.com) that Kozenji has a large pine in front of its mountain gate, consistent with the register entry, but found no source giving the tree its recorded name (Chikai no Matsu / Pledge Pine) or any age/history for it. One-source-plus-a-passing-mention is not enough to publish; left as a lead."
     },
     {
       "report_id": 69339,
@@ -913,7 +925,8 @@
       "surveyed": "2000年",
       "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69340&branch_number=1",
       "age_band_ja": "不明",
-      "owner_category_ja": "社寺"
+      "owner_category_ja": "社寺",
+      "verify_note": "verify_attempt_2026-09-06: no facility name given and girth (363cm) differs from the published Motoujina Park camphor (hir_012, report_id 69339, 560cm), so this may be a second, smaller camphor in the same park rather than a duplicate; could not confirm distinctly. Left as a lead rather than guessed into hir_012 or published separately without a way to tell it apart on the ground."
     },
     {
       "report_id": 53212,
