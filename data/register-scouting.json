@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Lexington",
+      "country": "United States",
+      "status": "empty",
+      "note": "SCOUTED 2026-09-06 (session), on scout_next.py --target naming Lexington (#67) as no supply/no verdict. The Kentucky Champion Trees program (Kentucky Energy and Environment Cabinet, eec.ky.gov/Natural-Resources/Forestry/ky-champion-trees) lists 96 species with per-tree fact sheets (species, county, measurements, nomination date), including a state-champion American basswood and American smoketree both in Lexington Cemetery. Same shape as every other US state champion-tree program scouted so far (Florida, Arkansas, California): an interactive gallery of individual PDF fact sheets, no downloadable dataset, no API, no coordinates, and no licence, copyright or terms-of-use statement anywhere on the page. Per CLAUDE.md's register-layer rule an unstated licence is not a verified open one, so this cannot be the register-layer source. Route forward for Lexington is from-zero web research on named sites (Lexington Cemetery holds at least two candidates) if Hidde adds it to the from-zero list, or a reader submission; no register shortcut exists."
+    },
+    {
       "place": "Fort Lauderdale",
       "country": "United States",
       "status": "empty",
