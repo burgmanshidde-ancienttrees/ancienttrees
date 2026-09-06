@@ -2,6 +2,20 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 - _famous-lithuania re-check: no new trees, prior work confirmed sound
+
+Claimed `_famous-lithuania` to refill the writable shelf per prepare.py's
+warning. Dispatched a verify pass on the 4 candidates prepare.py's own shelf
+count implied were still unsourced (Agluona oak, Bagrėnas linden, Degsnė
+larch, Didžioji tuja Kintuose). All 4 turned out to be already handled:
+Degsnė and Kintai are the two published places from 2026-09-05 below, and
+Agluona/Bagrėnas are already correctly held as leads (Agluona is a 2-tree
+cluster under the 4-tree floor; Bagrėnas lacks a fame case beyond being a
+real protected tree). The pass did strengthen Bagrėnas's sourcing (found a
+second independent source, the state protected-areas cadastre, that an
+earlier note had missed) without changing its lead status. Released the
+claim; nothing merged. Logged in data/agent-costs.json under 2026-09-06.
+
 ## 2026-09-05 (continuation) - Degsne and Kintai: Lithuania's first two published places, one dead tree caught before it shipped
 
 Released `_famous-japan`, claimed `_famous-lithuania` next (94 leads, none
