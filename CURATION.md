@@ -2,6 +2,31 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 (continuation 17) - Caught a near-duplicate before it shipped; Leiden's Golden Chain gets a confirmed pin instead
+
+Continuation 15 had released the `_bomenbieb-netherlands` verify claim
+with one tree left uncommitted: lei_019 "The Golden Rain of the Hortus
+Entrance", checked only against its nearest published neighbour by
+distance (lei_001, the Tulip Tree, 50m away, wrong species) and staged
+as a new tree. It was never checked against lei_004 The Golden Chain of
+the Hortus: same species (Laburnum anagyroides), same bomenbieb source,
+same debunked-1601/1720s-Boerhaave story, 46m from lei_004's own
+(approximate) pin. Same tree. Worth naming as a pattern: a verify pass's
+"nearest published tree" check is a distance search, not a duplicate
+check, and it can clear a candidate against the wrong neighbour while
+the real duplicate sits a few trees further down the same city file.
+
+Folded lei_019's more precise coordinate and its Wayback-archived
+hortusleiden.nl source into lei_004 instead: upgraded its pin from
+approximate to confirmed and added the 1601-garden-inventory detail (the
+Hortus's own records place a laburnum here that year, but not where this
+one stands) to the story. Marked the lead a duplicate with the full
+reasoning in `data/leads/_bomenbieb-netherlands.json`, released the
+stale verify claim and removed the now-empty `bomenbiebnetherlands-` and
+`famousczech2-verified.json` research files (everything else in both was
+already merged in continuation 14). Leiden stays at 12 trees. Build
+(4839 pages), qa.py and preflight.py all clean.
+
 ## 2026-09-06 (continuation 14) - 11 trees written and merged: 4 into Deventer/Arnhem/Leeuwarden/Den Bosch, 7 new Czech single-tree places
 
 Finished the two verify passes continuation 13 had left running
