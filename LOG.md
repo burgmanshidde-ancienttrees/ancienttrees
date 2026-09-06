@@ -1,6 +1,64 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 18) - Finished the last bomenbieb-netherlands verify claim: 5 trees, 4 new single-tree places plus one into Apeldoorn
+
+Resumed into a window an earlier attempt had stopped 23 minutes in with
+97 of 120 minutes unspent. First cleared unrelated finished work sitting
+uncommitted: 5 photo-judge verdicts (Brighton, Freiburg, Fujikawaguchiko,
+Miyazaki, Nagoya) approved against the Cadiz standard, committed as their
+own step.
+
+Then found the standing `_bomenbieb-netherlands` verify claim (130 min
+left) had real uncommitted output: `data/research/bomenbiebnetherlands-verified.json`,
+5 fully verified trees with sources and coordinates but no `id`, no
+story and no place pages, so `passcheck.py --pending` had reported
+nothing pending (it only tracks entries carrying a final `id`).
+
+One tree, the Black Alder of the Sculpture Garden, joined Apeldoorn as
+apd_010 (fixed the meta_description's stale "Nine remarkable trees" and
+a question_context sentence that still said "these nine stand" while
+building; preflight caught the second).
+
+The other four are new single-tree places, each cleared against the
+2026-08-31 exception (national or provincial superlative, or a
+signposted destination in its own right) before writing a page:
+**Altrier, Luxembourg** (alt_001, the Oak of Hersberg, Luxembourg's
+thickest tree, popularly the "thousand-year oak" though no source
+supports that; an annual 15 August pilgrimage), **Breukelen**
+(bkl_001, the Limes of Kasteel Nijenrode, a view-only pair on a private
+castle forecourt, visible from the public road and the river Vecht),
+**Laren, Gelderland** (lar_001, the Dikke Boom of Verwolde, the
+Netherlands' biggest pedunculate oak, saved from a miller's axe in
+1767, named Tree of Gelderland 2018), **Amerongen** (amg_001, the
+Adoption Oak, planted soon after the castle's 1670s rebuilding,
+Bomenstichting-adopted 1987). `amn` was already taken (Amt Neuhaus),
+used `amg` instead.
+
+**Three of the five already had richer, independently-sourced leads on
+disk** (`data/leads/altrier.json`, `breukelen.json`,
+`laren-gelderland.json`, dated today, from a separate pass working the
+same bomenbieb candidates) that disagreed with the claimed file in ways
+that mattered: the Hersberg oak's "500 years" was one of two disputed
+figures (a 2024 field visit puts official assessment nearer 300, and
+noted the crown has since declined to about a third bearing leaves,
+which the claimed file's version omitted entirely), the Nijenrode
+limes needed the wider 250-376 age band and a canonical species name
+(Common Lime, not "Lime sp."), and the Verwolde oak's height (25m) was
+flagged in the richer source as unconfirmed from a search snippet, not
+a fetched page, so it was dropped rather than published. Rewrote all
+three from the better-sourced version before shipping; marked the three
+lead files `published` with their tree ids. Amerongen and the Apeldoorn
+alder had no competing source, so those went out as originally verified.
+
+Regenerated city-list.json/CITY_QUEUE.md, full Astro build (4856 pages,
+3m23s), preflight clean (0 problems after the two fixes above), qa.py
+running as this entry is written. Released the `_bomenbieb-netherlands`
+claim. The now-empty `research/bomenbiebnetherlands-verified.json`
+could not be deleted (sandbox blocks `rm`); harmless, since its ids are
+now live and `passcheck.py --pending` will read it as stale rather than
+outstanding.
+
 ## 2026-09-06 (continuation 17) - Caught a duplicate before it shipped, Salzburg 5 to 9, iOS regression escalated (the fix did not hold)
 
 Resumed into a window where the previous attempt stopped early with 103

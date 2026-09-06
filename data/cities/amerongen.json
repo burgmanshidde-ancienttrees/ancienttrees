@@ -1,0 +1,64 @@
+{
+  "city": "Amerongen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Kasteel Amerongen was burned by Louis XIV's army in 1673 and rebuilt within a few years; not long after, somebody planted an oak in its new park that is still there, close to three and a half centuries later. The Dutch Tree Foundation formally adopted it in 1987, and a separate regional heritage record lists what is almost certainly the same tree under a second name, the lonely oak. It stands on a garden ticket bought apart from the castle museum, open Thursday to Sunday.",
+  "meta_description": "The Adoption Oak of Amerongen: a roughly 330-year-old oak in the grounds of Kasteel Amerongen, planted soon after the castle's 1670s rebuilding.",
+  "question_meta": "Amerongen's oldest tree is the Adoption Oak, a roughly 330-year-old pedunculate oak in the grounds of Kasteel Amerongen. Where it stands and how to visit.",
+  "question_answer": "The oldest tree in Amerongen is the Adoption Oak in the park of Kasteel Amerongen, a pedunculate oak estimated at roughly 330 to 345 years old, planted not long after the castle's rebuilding following its destruction by French troops in 1673. Its girth measures about 5.9 metres, and the Dutch Tree Foundation formally adopted it in 1987.",
+  "question_context": "Bomenbieb, the Dutch tree-recording site, dates the planting to around 1680, close behind the castle's reconstruction after Louis XIV's army destroyed the original building in 1673, though no source claims the two events are directly connected beyond timing. The girth, 5.9 metres, is well recorded; the height is not, with bomenbieb giving 35 metres against roughly 32 metres from other measurements found for the same tree, a small disagreement stated here rather than smoothed over. In 1987 the Bomenstichting, the Dutch Tree Foundation, formally adopted the oak, a mark of recognition beyond its own park walls. A separate heritage map of the Utrechtse Heuvelrug region lists a notable oak at the same site under a different name, De eenzame eik, the lonely oak; the two records almost certainly describe the same tree seen by different people at different times. It stands inside the grounds of Kasteel Amerongen, on a garden ticket sold separately from the castle museum, open Thursday to Sunday with shorter winter hours.",
+  "hero_tree_id": "amg_001",
+  "oldest_tree_id": "amg_001",
+  "faq": [
+    {
+      "q": "What is the Adoption Oak of Amerongen?",
+      "a": "A pedunculate oak in the park of Kasteel Amerongen, roughly 330 to 345 years old, planted not long after the castle's rebuilding in the 1670s. The Dutch Tree Foundation adopted it in 1987."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No. It stands in the castle's park, reached with a garden ticket bought separately from the museum ticket, open Thursday to Sunday with shorter hours in winter."
+    },
+    {
+      "q": "How old is it, exactly?",
+      "a": "Bomenbieb dates the planting to around 1680, which puts it at roughly 330 to 345 years old. No source has cored the trunk, so this is an estimate rather than a measured figure."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Amerongen is a rural village on the Utrechtse Heuvelrug. The nearest station is Veenendaal-De Klomp, or take a bus from Veenendaal or Doorn."
+    }
+  ],
+  "trees": [
+    {
+      "id": "amg_001",
+      "name": "The Adoption Oak of Amerongen",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 330 to 345 years",
+      "age_min": 320,
+      "age_max": 350,
+      "girth_cm": 590,
+      "location": {
+        "address": "Park Kasteel Amerongen",
+        "latitude": 51.994784,
+        "longitude": 5.45902,
+        "neighbourhood": "Amerongen"
+      },
+      "story": "Louis XIV's army burned Kasteel Amerongen to the ground in 1673, and when the castle was rebuilt a few years later, somebody planted an oak in the new park. Three and a half centuries on it is a fixture of the grounds in a way the rebuilt castle, for all its history, cannot quite manage: buildings get restored, this tree just kept growing.\n\nBomenbieb dates the planting to around 1680, close enough behind the castle's reconstruction that the two are usually mentioned in the same breath, though no source claims the tree was planted to mark the rebuilding specifically. The girth is recorded at 5.9 metres. Height is where sources start to disagree: bomenbieb says 35 metres, other measurements found put it at 32, a small enough gap that it is recorded here rather than resolved.\n\nIn 1987 the Dutch Tree Foundation formally adopted it, one of the marks of official recognition this site treats as evidence a tree matters beyond its own park. A regional heritage map of the Utrechtse Heuvelrug separately lists a landmark oak at the same address under a different name, De eenzame eik, the lonely oak, almost certainly the same tree remembered under two names by two different record-keepers.\n\nIt stands in the castle's own park, on a ticket bought separately from the museum, open Thursday to Sunday.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/adoptie-eik-amerongen/",
+        "https://www.heuvelrugopdekaart.nl/historisch-groen/bijzondere-bomen/de-eenzame-eik-amerongen/pointofinterest/detail"
+      ],
+      "access": "Paid entry: a garden-only ticket is sold at the castle shop separate from the museum; open Thursday to Sunday, hours vary by season and are shorter in winter.",
+      "paid_entry": true,
+      "transport": "Rural village on the Utrechtse Heuvelrug; nearest station Veenendaal-De Klomp or by bus from Veenendaal/Doorn.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large solitary oak in the castle park, also recorded locally as De eenzame eik, the lonely oak.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "city": "Altrier",
+  "country": "Luxembourg",
+  "status": "needs_curation",
+  "intro": "The biggest tree in Luxembourg stands on a rural road between two hamlets, not in a park or a garden but in the open, where a statue of the Virgin Mary has sat in a niche of its trunk since long before anyone measured it. Locals call it the thousand-year oak, though the more careful estimate is closer to five hundred, still an old tree by any accounting. Every 15 August a torchlit procession still walks out to it, the same pilgrimage that has kept people visiting for generations.",
+  "meta_description": "Luxembourg's biggest tree: a roughly 500-year-old oak near Altrier and Hersberg, with a shrine in its trunk and an annual torchlit pilgrimage.",
+  "question_meta": "The Oak of Hersberg, near Altrier, is Luxembourg's biggest tree by girth. Its disputed age, the shrine in its trunk, and the pilgrimage that visits it.",
+  "question_answer": "The oldest and most famous tree in Altrier is the Oak of Hersberg, a pedunculate oak whose age is genuinely disputed: a 2024 field assessment puts it near 300 years, while a separate estimate repeated by French Wikipedia says roughly 500. Neither is settled with a core sample. Standing on the road between Altrier and Hersberg in the Bech municipality, it is Luxembourg's thickest tree, 7.52 metres round at its most recent measurement, with a statue of the Virgin Mary set into a niche in its trunk.",
+  "question_context": "Sources disagree by two centuries on this tree's age, which is worth stating rather than smoothing over. A September 2024 field visit reports that official assessments put it closer to 300 years; a separate, higher estimate of roughly 500 years also circulates and is repeated by French Wikipedia without further sourcing behind it. Neither has a ring count. The girth is better documented: 5.74 metres in 1907, 6.87 in 1958, 7.40 in 1997, and 7.52 in 2016, a slow thickening tracked by different surveyors across more than a century. A statue of the Virgin Mary sits in a niche of the trunk behind a protective grille, and since 1936 a torchlit procession has walked out from the parish church every 15 August to hold an open-air sermon at its foot, a genuine ongoing pilgrimage rather than a revived one. The same 2024 visit found the trunk sound and free of fungus, but noted the crown has declined: only about a third of it still carries leaves, worth checking again on a future visit. It stands about 24 kilometres northeast of Luxembourg City on an ordinary rural road, reachable only by car.",
+  "hero_tree_id": "alt_001",
+  "oldest_tree_id": "alt_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Altrier?",
+      "a": "The Oak of Hersberg, a pedunculate oak on the road between Altrier and Hersberg. Estimates from French Wikipedia and Luxembourg's heritage authority put its age at roughly 500 years, older than the local thousand-year nickname but still Luxembourg's biggest tree by girth."
+    },
+    {
+      "q": "Why is it called the thousand-year oak if it's much younger?",
+      "a": "That is a folk name rather than a measurement, and no source found supports anywhere near that age. A 2024 field assessment puts it closer to 300 years; a separate, unsourced estimate of roughly 500 also circulates. Neither figure has been settled with a core sample."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open beside a public road, no ticket and no gate. On 15 August each year a torchlit procession and mass are held at the tree, which is worth knowing before you plan a quiet visit that day."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is rural, about 24 km northeast of Luxembourg City in the Bech municipality, with no public transport nearby. Reached by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "alt_001",
+      "name": "The Oak of Hersberg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "disputed, between roughly 300 and 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 752,
+      "location": {
+        "address": "Road between Altrier and Hersberg, Bech municipality",
+        "latitude": 49.752791,
+        "longitude": 6.327792,
+        "neighbourhood": "Hersberg, Bech, Luxembourg"
+      },
+      "story": "Call it the thousand-year oak and nobody in Bech will correct you, but no source found supports anywhere near that age. It is a real name attached to a real tree, not a real number. A September 2024 field visit reported that official assessments put it closer to 300 years; a separate, unsourced estimate of roughly 500 years also circulates and is repeated by French Wikipedia without further backing. Both figures are recorded here rather than settled, because neither has a ring count behind it.\n\nThe girth is better documented than the age: 5.74 metres in 1907, 6.87 in 1958, 7.40 in 1997 and 7.52 in 2016, a slow, steady thickening tracked across more than a century by different surveyors.\n\nA statue of Notre-Dame, Consolatrice des affligés, sits in a niche of the hollow trunk behind a protective grille, and since 1936 a torchlit procession has walked out from the parish church every 15 August to hold an open-air sermon at the tree's foot. It is a genuine, ongoing pilgrimage rather than a revived one.\n\nThe most recent firsthand report, from that September 2024 visit, found the trunk sound and free of fungus, but the crown notably declined: only about a third of it still carries leaves. Alive, and worth a return visit to see how it is doing.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_de_Hersberg",
+        "https://inpa.public.lu/fr/patrimoine/religieux/ermitage_sources_arbres/hersberg.html",
+        "https://lestetardsarboricoles.fr/wordpress/2024/09/13/le-chene-de-hersberg-grand-duche-de-luxembourg/"
+      ],
+      "access": "Free. Stands beside a public road connecting Altrier and Hersberg, at the start of a signposted hiking trail toward the Mullerthal; a genuine pilgrimage site, visited year-round and the destination of a torchlit procession every 15 August.",
+      "transport": "Rural, between the villages of Altrier and Hersberg (commune of Bech), roughly 24 km northeast of Luxembourg City; reached by road, not by public transport.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large oak beside the road with a small niche shrine to the Virgin Mary set into its trunk.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
