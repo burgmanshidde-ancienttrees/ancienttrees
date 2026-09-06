@@ -1,0 +1,60 @@
+{
+  "city": "Zehdenick",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Zehdenick is a small town in Brandenburg on the rail line between Berlin and Szczecin, known locally for its brickworks history and for boat trips through old flooded clay pits. Its oldest tree stands quietly in the town centre instead, beside the district court, under a name that predates any explanation anyone can now give for it. The Gerichtslinde has stood for three to four centuries, watched a cavalry garrison's supply depot rise and fall beside it, and kept its name long after the reason for it was forgotten.",
+  "meta_description": "The Gerichtslinde of Zehdenick is a 350 to 400 year old lime in Brandenburg, its court-tree name older than any record of why it was given.",
+  "question_meta": "Zehdenick's oldest tree is the Gerichtslinde, a lime of 350 to 400 years whose court-tree name is older than any record explaining it.",
+  "question_answer": "The oldest tree in Zehdenick is the Gerichtslinde, a lime standing on Friedrich-Ebert-Platz beside the town's district court, estimated at 350 to 400 years old. That age comes from its official protection record rather than a ring count; no girth or height has ever been published for it.\n\nIts own name is the tree's central mystery. Gerichtslinde means court linden, and German Wikipedia's dedicated article on it says outright that nobody can say for certain whether the name comes from the district court that now stands beside it, or whether the tree once hosted an actual assembly under its own branches, the older meaning the word usually carries elsewhere in Germany. What the record does confirm is that by the 18th century, the ground around the tree held military supply magazines, salt, grain and forage kept for the cuirassier cavalry garrisoned in the town, so whatever else it has witnessed, the tree watched over an army's stores for a stretch of its life.\n\nIt carries official protection as Naturdenkmal number 228, and its trunk has hollowed with age, now held behind a low wire-mesh fence more for courtesy than restraint. A stone beside it simply reads 'Gerichtslinde,' proof that a name can outlast the memory of why it was given.",
+  "question_context": "The tree stands in the open in Zehdenick town centre, on Friedrich-Ebert-Platz just south of the Amtsgericht, the district court that gives the surrounding square its modern character. It is free to see, with no ticket, gate or fixed hours, protected only by a low wire-mesh fence around its hollow trunk.\n\nZehdenick has its own railway station, on the line between Berlin and Szczecin, which makes this one of the easier single-tree destinations to reach without a car: the walk from the station into the town centre takes only a few minutes on foot. The town itself is better known locally for its brickworks history and for boat trips through flooded clay pits nearby, so a visit for the tree pairs easily with either.\n\nThere is no interpretation centre or shop attached to the site, only the tree itself and the commemorative stone beside it. The Brandenburg countryside around Zehdenick is flat and rural, and the town sees relatively few visitors passing through on purpose, so anyone who does come is usually coming for this one specific reason.",
+  "faq": [
+    {
+      "q": "How old is the Gerichtslinde of Zehdenick?",
+      "a": "Roughly 350 to 400 years, per its official protection record. No girth or height has ever been published for it, and the article on the tree itself says the exact age is unknown."
+    },
+    {
+      "q": "Why is it called a court linden if that history is uncertain?",
+      "a": "Nobody can say for certain. The name may come from the district court now standing beside it, or the tree may once have hosted an actual assembly under its own branches, an older use of the word in German tradition. Both are possible; neither is confirmed."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on Friedrich-Ebert-Platz in Zehdenick town centre, with no ticket or fixed hours, just a low wire-mesh fence around its hollow trunk."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Zehdenick has its own railway station on the Berlin to Szczecin line, and the tree is a short walk from there into the town centre, no car required."
+    }
+  ],
+  "oldest_tree_id": "zeh_001",
+  "trees": [
+    {
+      "id": "zeh_001",
+      "name": "The Gerichtslinde of Zehdenick",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 350 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "location": {
+        "address": "Friedrich-Ebert-Platz, near the Amtsgericht, 16792 Zehdenick, Brandenburg, Germany",
+        "latitude": 52.97734,
+        "longitude": 13.33607,
+        "neighbourhood": "Zehdenick town centre"
+      },
+      "story": "Zehdenick's oldest tree carries a name nobody can fully explain. The Gerichtslinde, court linden, stands on Friedrich-Ebert-Platz beside the district court, and German Wikipedia's own article on it says plainly that nobody knows whether the name comes from that neighbour or whether the tree itself once hosted an assembly under its branches, the older use the word usually implies. What is documented instead is more mundane and just as old: by the 18th century, the ground beside it held military supply magazines, salt, grain and forage for the cuirassiers garrisoned in the town, and the linden was already standing over them.\n\nIt is a lime somewhere between 350 and 400 years old, officially protected as Naturdenkmal number 228, though no source has ever recorded its girth or height. The trunk has hollowed with age and stands behind a low wire-mesh fence, more a courtesy than a barrier. A stone beside it reads simply \"Gerichtslinde\", the town's own way of saying the name has stuck regardless of the history behind it.\n\nThe tree stands free to see in the town centre, a short walk from Zehdenick station on the Berlin-Szczecin line, in a part of Brandenburg few visitors pass through on purpose. Whatever it once witnessed in court, it has certainly witnessed the town grow up around it.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Gerichtslinde_Zehdenick",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Zehdenick"
+      ],
+      "access": "Free. Stands in the town, just south of the Amtsgericht (district court) on Friedrich-Ebert-Platz, protected by a low wire-mesh fence around its hollow trunk.",
+      "transport": "Zehdenick town centre, Oberhavel district, Brandenburg; Zehdenick station is on the Berlin-Szczecin/Templin line.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
