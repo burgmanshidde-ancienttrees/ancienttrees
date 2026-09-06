@@ -48,6 +48,10 @@
     "2026-09-05": {
       "note": "Scheessel spelling WARN already fixed (no eszett remains in scheessel.json, verified); fame-case WARN on the Gerichtslinde was a flag only, no retirement called for, left as-is per the review's own note.",
       "at": "2026-09-06T08:48:35+00:00"
+    },
+    "2026-09-06": {
+      "note": "Both WARNs already fixed on disk: canberra/gumeli/san-quirico-d-orcia FAQs no longer explain the publish threshold (qa.py's BUSINESS_RULE_PHRASES already bans the phrase, qa.py passes clean), and Contribute.swift line 89 already reads 'Nobody else sees who sent this' rather than the contradicting 'Nobody sees'. No action needed this pass, just confirming and closing the loop.",
+      "at": "2026-09-06T15:17:30+00:00"
     }
   }
 }
