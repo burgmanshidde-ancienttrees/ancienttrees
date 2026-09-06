@@ -1,6 +1,72 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 8) - Hiroshima +2, Sulechow +1, three new Polish single-tree places; dispatched a UK/Canada famous-tree verify pass
+
+Picked up after continuation 7 stopped at 10 minutes having shipped 0
+trees, with 110 of 120 unspent. Three standing claims: `hiroshima`,
+`_famous-poland`, `_bomenbieb-netherlands`, all verify, all by
+night-run. `_bomenbieb-netherlands` had no work on disk at all (its
+leads file was byte-identical to HEAD), the dispatched agent from
+continuation 7 having died with the session before writing anything;
+released it rather than restarting it this window.
+
+The other two had real, complete, uncommitted verify output:
+`data/research/hiroshima-verified.json` (2 trees) and
+`data/research/_famous-poland-verified.json` (4 trees), 6 total,
+right at the minimum batch size. Committed the verify work, then
+dispatched a write-stories pass on both files together. It returned
+all 6 stories clean: no bridge claims (wis_001's banknote/name link
+stated as two facts, not one), age disputes carried into prose rather
+than smoothed (prz_001 330-350 vs "close to 400"; cie_001 all three
+readings including a disputed eighteen-saplings-fused theory; wis_001
+650 vs Pacyniak's 416; hir_016's dated 1391 planting vs the register's
+own 200-300 year guess; hir_017's two conflicting girths), and
+sul_002's missing age turned into a plain invitation rather than a
+guess.
+
+**Merged all 6 by hand** (the write pass only fills `story`/`best_time`,
+per BRIEF_WRITING.md): **Hiroshima +2** (hir_016 the Fukuoji Lantern
+Cedars, three surviving 1391-planted cedars on a hillside temple;
+hir_017 the Chichisagari Ginkgo, ~1,200-1,600 years per its 1979
+heritage designation and now the city's oldest_tree_id, replacing the
+390-year Renge Pine — rewrote the question page, FAQ and intro to
+carry three age candidates honestly). **Sulechow +1** (sul_002 Sosna
+Rzepicha, Poland's current thickest pine under updated measuring
+rules, joining sul_001 Waligora 10.5km into the same forest district
+with no trail; rewrote the page for two trees). **Three new
+single-tree places** under the 2026-08-31 exception: Przybudki (Dab
+Dunin, European and Polish Tree of the Year, 2021/2022), Cieletniki
+(a lime knocked flat by Hurricane Ksawery in 2017 and still flowering,
+among the thickest trees in Poland), Wisniowa (Dab Jozef, on the old
+100-zloty banknote, first Polish European Tree of the Year in 2017,
+carries a local WWII hiding-place account told as village memory).
+
+Fixed Poland's country-page counts (13->17 places, 82->87 trees),
+found stale by preflight.py's own check (already off by one place
+before this session's edits, unrelated to anything here). Ran
+`city_names.py` for all three new places (Przybudki resolved against
+Wikipedia; Cieletniki and Wisniowa are common Polish village names
+with no article within 40km, correctly recorded unresolved). Build
+(4694 pages), qa.py (7079 pages), preflight.py (462 cities, 0
+problems) and superlatives.py (682 claims, no collisions) all clean.
+Marked the source leads resolved in their own files. Both claims
+released.
+
+**Dispatched a verify pass on 6 famous-tree candidates across two
+claimed lead files**, `_famous-united-kingdom` (Gilwell oak, The Poem
+Tree, Craigends Yew, The Fuck Tree, Robin Hood's Larder, the last two
+suspiciously undated with only 1880s/1913 photos on file) and
+`_famous-canada` (Comfort Maple), still running as this entry is
+written. Excluded from this batch: Wallace Yew and Ormiston Yew
+(already resolved/held by a 2026-09-05 pass), Big Lonely Doug and Red
+Creek Fir (already published), and every Germany candidate the
+ranking table surfaced, because its top entry (Tassilolinde,
+Wessobrunn) turned out to already be published under `wes_001`, the
+leads file's own status field simply never updated when it shipped,
+the same known bug the 2026-09-05 UK pass flagged and has not yet been
+fixed structurally.
+
 ## 2026-09-06 (continuation 7) - The Hague +1 (Koekamplinde); cleared a stale Rome research file; dispatched a 20-candidate verify pass on the remaining Dutch bomenbieb leads
 
 Picked up after an earlier attempt this window stopped at 30 minutes having
