@@ -1,6 +1,83 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 12) - French translation for Strasbourg, and 10 new Czech Republic single-tree places
+
+Picked up after continuation 11 stopped at 79 minutes having shipped
+10 trees, with 41 of the window still unspent (a productive run
+should not get an early night). No claims standing, no READY leads
+(`leads.py --ready`: 0), health.py clear, no reader submissions or
+sightings queued. Did two pieces of independent work in parallel
+rather than one at a time, since neither touches the other's files.
+
+1. **French translation overlay for Strasbourg** (`data/i18n/fr/strasbourg.json`),
+   the highest-fr-impression untranslated city per `langcheck.py --next`
+   (42 impressions, 10 trees, its English twin already earning clicks,
+   rule 1(0b)). Written by hand rather than dispatched, pure Contract J
+   overlay work with no new judgement calls, same pattern as
+   continuation 11's Arnhem overlay. All city-level fields and all 10
+   tree stories translated; two fields needed trimming to fit Contract
+   J's word/character limits (stg_008's story was 256 words, cut to
+   246; a couple of intro/meta fields were right at the edge). Build
+   clean, `/fr/strasbourg` and all 10 `/fr/strasbourg/[tree]` pages plus
+   the question page render correctly.
+
+2. **10 new Czech Republic trees, each its own single-tree place**,
+   via rule 1(0c) (famous trees, ordered by measured demand). Czech
+   Republic was the strongest qualifying country stock:
+   `famous_demand.py --country czech-republic --next` showed 12
+   pinned candidates totalling 541 combined monthly Wikipedia reads,
+   each already carrying a Wikipedia source, 2-3 Commons photos and a
+   coordinate (the default `--next` without `--country` picked Japan
+   instead, misleadingly: it ranks countries by TOTAL candidate views
+   including unpinned ones, and Japan's unpinned stock is huge while
+   its 6 pinned candidates carry 0 views between them; worth fixing
+   in the script, noted here rather than touched this run). Claimed
+   `_famous-czech-republic`, dispatched a verify agent on all 12,
+   which delivered 10 verified and 2 correctly blocked: the Kvasice
+   Walnut (confirmed dead, felled by an August 2024 windstorm,
+   `cs.wikipedia.org` explicit) and the Tyn nad Vltavou Copper Beech
+   (stands inside a private industrial facility, hard rule 10, no
+   public access evidence found). Dispatched a write-stories agent on
+   the 10 verified trees, then merged the results into city files by
+   hand: fixed species names to the corpus canonical form the writer
+   had already mostly applied (Large-leaved Lime, Small-leaved Lime,
+   Austrian Pine), stripped internal bookkeeping sentences ("Own
+   place, not a city day-trip.") out of the access/transport fields
+   before they could ship to readers, and wrote each place's
+   city-level intro/FAQ/question-page copy from the verified facts
+   (Contract B needs question_context at 150-200 words, Contract C
+   needs intro at 60-100; six intros and six question_contexts came
+   in short on the first pass and needed genuine expansion, not
+   padding, to clear the build's word-count gate).
+
+   The ten: Teleci's Singing Linden (hollow, Tree of the Year 2021,
+   a scribe's-hideout legend), the Pernstejn Yew below its castle
+   (Moravia's oldest, age disputed 400-2,000 years), the Popov Ash
+   growing in the ruins of a village whose people were expelled after
+   WWII, the Linden of Lipka (3rd in the 2017 European vote), the
+   Thousand-Year Lime of Tatobity (2nd in 2016, honestly not actually
+   1,000 years by any source), the Kotel Lindens (a folded
+   register-twin pair that became an anti-uranium-mine campaign's
+   emblem), the Zehrovice Beech (confirmed alive via a Feb 2025
+   municipal notice but terminally declining from a wood-decay fungus,
+   with a clone already growing beside it, the story says so plainly
+   rather than selling it as thriving), Hromuv Oak (its own two
+   information boards disagree on its age by 138 years), the Linden of
+   Jan Gurre in Rimov (the tree an 1626 vision was built into a
+   pilgrimage complex around; kept as its own place rather than folded
+   into the existing Cesky Krumlov file, since it sits ~13-15km away
+   on a Ceske Budejovice bus route rather than joining that city's
+   walkable cluster), and the Opatovice Pine ("the six-headed dragon").
+   `qa.py` (7,308 pages), `preflight.py` (484 cities, 0 problems) and
+   `superlatives.py` (689 claims, no collisions) all pass clean.
+   Claim released.
+
+Two scratch scripts (`scripts/_check_submissions.py`,
+`scripts/_cleanup_famousuk.py`) remain untracked from earlier
+continuations, used this run for the submissions check and left alone
+otherwise, same as continuation 11 noted.
+
 ## 2026-09-06 (continuation 11) - Both live claims finished: 8 new Slovak places, Arnhem's Dutch overlay completed; the photo-judge pass from continuation 10 was lost
 
 Picked up after continuation 10 stopped at 21 minutes with 99 unspent,
