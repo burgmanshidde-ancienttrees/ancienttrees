@@ -145,15 +145,16 @@
       "age_min": 290,
       "age_max": 310,
       "location": {
-        "address": "Hortus Botanicus Leiden, near the entrance",
-        "latitude": 52.1571,
-        "longitude": 4.4843,
+        "address": "Hortus Botanicus Leiden, Rapenburg 57/73, right of the entrance",
+        "latitude": 52.157157,
+        "longitude": 4.484964,
         "neighbourhood": "Academiewijk"
       },
-      "story": "For decades this tree was sold on a story its own garden no longer believes. A popular account claimed it dated to 1601, planted during the tenure of the great botanist Carolus Clusius, and the myth gained a kind of proof in 1931 when a caretaker named Veendorp found several fused trunks with a great many growth rings inside and read that as confirmation. The Hortus's own later archival research concluded otherwise: the fused-trunk trick inflated the ring count, and the documented evidence instead points to the 1720s, sown by Herman Boerhaave, the same professor responsible for the garden's tulip tree a few years earlier. Roughly 300 years old rather than 400, it remains modest in size for its age, a small, unshowy tree next to the tulip tree and ginkgo it shares the garden with, its bright yellow, pea-family flower clusters in late spring the only real hint of anything remarkable underneath the plain trunk. What makes the story worth telling is not the tree's stature but the correction itself: an institution with every incentive to keep the more romantic number instead published the less impressive, better-supported one.",
+      "story": "For decades this tree was sold on a story its own garden no longer believes. A popular account claimed it dated to 1601, planted during the tenure of the great botanist Carolus Clusius, and the myth gained a kind of proof in 1931 when a caretaker named Veendorp found several fused trunks with a great many growth rings inside and read that as confirmation. The Hortus's own garden records undercut the claim twice: their archival research found the fused-trunk trick had inflated the ring count, and their own 1601 planting inventory does list a laburnum by the entrance that year, but places it somewhere other than where this one now stands. The documented evidence instead points to the 1720s, sown by Herman Boerhaave, the same professor responsible for the garden's tulip tree a few years earlier. Roughly 300 years old rather than 400, it remains modest in size for its age, a small, unshowy tree next to the tulip tree and ginkgo it shares the garden with, patched up with restorative surgery since at least 1972 and still putting out its bright yellow, pea-family flower clusters every late spring. What makes the story worth telling is not the tree's stature but the correction itself: an institution with every incentive to keep the more romantic number instead published the less impressive, better-supported one.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/oudste-goudenregen-leiden/",
-        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie"
+        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie",
+        "http://web.archive.org/web/20230127153640/https://hortusleiden.nl/de-hortus/collectie/bijzondere-bomen/gouden-regen"
       ],
       "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -174,7 +175,7 @@
         "height": 2848
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "paid_entry": true
     },
     {
