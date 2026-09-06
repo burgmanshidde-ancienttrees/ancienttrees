@@ -414,7 +414,25 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(map.waitForExistence(timeout: 14), "no map")
         // Let the tiles and the pins arrive. Where the camera ends up does not
         // matter to this test any more; that it has drawn pins does.
-        Thread.sleep(forTimeInterval: 5)
+        //
+        // A FIXED SLEEP HERE WAS THE BUG, diagnosed 2026-09-06 without a
+        // simulator, from the evidence that was available: this test started
+        // failing with "opened no tree at all" on 2026-09-06 with no commit
+        // touching ios/ between the last green run and the first red one, so
+        // the app did not regress, something got slower than 5 seconds. The
+        // catalogue crossed 2700 trees the same week (SweepFrames' own
+        // comment already names it as "2.5 MB of JSON" back when it was
+        // smaller). SweepFrames waits on a real element for up to 20 seconds
+        // before ever touching the screen it photographs, for exactly this
+        // reason ("nothing exists for a moment after launch... a slow machine
+        // does not produce an empty measurement"), and this test never got
+        // that treatment because it predates the catalogue being this size.
+        // map-count is the same signal this test already reads a few lines
+        // below to find the visible map area, so waiting on it here costs
+        // nothing new to maintain.
+        XCTAssertTrue(app.staticTexts["map-count"].waitForExistence(timeout: 20),
+                      "the sheet never reported a count, so the catalogue or the pins never arrived")
+        Thread.sleep(forTimeInterval: 1.5)
 
         // ONLY THE PART OF THE MAP YOU CAN SEE. The tree-map element is the
         // whole screen, list included, so a normalised offset is measured
