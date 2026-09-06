@@ -2,7 +2,27 @@
 
 <!-- archive-index -->
 
-## 2026-09-06 - Rudy ships as a new single-tree place (Dab Cysters); two Szczecin park trees held; _famous-lithuania closed with nothing new to ship
+## 2026-09-06 - Brussels bru_031 (Grand Sablon Ailanthus) committed; Higashiomi grows to 3 trees; Tokyo grows to 17
+
+Brussels: 1 tree added (bru_031, The Tree of Heaven of the Grand Sablon),
+0 newly flagged beyond the 1 that ships flagged for a single-source-only
+reason, 0 new photos (missing, an open-licence hunt found nothing beyond
+the register's own page, which is not an image source). English and
+French both written.
+
+Higashiomi: 1 tree added (hga_003, The Sennen Bodaiju of Hyakusai-ji),
+now 3 trees total, still short of the ordinary 4-tree floor but already
+published under no exception check (it shipped in 2026-08 as a
+deliberate pair, "not because Higashiomi's research is finished"; a
+third genuinely remarkable tree turning up later is normal growth per
+CLAUDE.md, not padding). 0 photos on any of its 3 trees. Oldest-tree
+claim on the page moved to the new linden; see LOG.md for the reasoning.
+
+Tokyo: 1 tree added (tok_017, The Senbon Ginkgo of Katsushika
+Hachimangu), now 17 trees. Flagged (no tree-specific monument
+designation, temple-tradition age). 0 photos. Its true place name
+(Ichikawa, Chiba) is stated honestly rather than folded into Tokyo
+proper, per the day-trip rule.
 
 Continuation of a window an earlier attempt stopped after 12 min with 108
 unspent. `passcheck.py --claims` showed two standing: `_famous-poland` and

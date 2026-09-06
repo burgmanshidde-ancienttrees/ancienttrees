@@ -2,29 +2,29 @@
   "city": "Higashiomi",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Higashiomi maps two trees, a pair of hananoki, Acer pycnanthum, standing 600 metres apart in neighbouring hamlets: the westernmost naturally occurring specimens of this rare maple known anywhere in Japan. Both were made National Natural Monuments on the same day in March 1921 and both have survived storms that took off their main trunks. Published as a pair here because together they are a short, genuine walk, not because Higashiomi's research is finished.",
-  "meta_description": "Two hananoki maples in Higashiomi, Japan, 600m apart and Japan's westernmost wild specimens of the species, both National Natural Monuments since 1921.",
-  "question_meta": "Higashiomi's oldest mapped tree is the Hananoki of Minamihanazawa, a rare wild maple and National Natural Monument since 1921, paired with a second nearby.",
-  "question_answer": "Higashiomi's oldest mapped tree is the Hananoki of Minamihanazawa (Acer pycnanthum), the sacred tree of Hachiman Shrine, estimated at over 250 years and possibly over 450. Its companion tree at Kitahanazawa, 600 metres north, is estimated at over 300 years; both were designated National Natural Monuments on the same day, 3 March 1921.",
-  "question_context": "Hananoki, meaning flower tree, is a maple that grows wild in only a handful of wet valleys in central Japan, and these two are its westernmost known wild specimens. Minamihanazawa's tree, 5.2 metres round and 21 metres tall, lost its main trunk to lightning-related rot in August 2010; sources disagree on what survived, Japanese Wikipedia saying it regrew from remaining branches and a later account describing what is left as preserved rather than living, though a 2019 photograph shows a standing tree. Kitahanazawa's tree, smaller at 2.8 metres round and 17.27 metres tall, has lost two trunks to storms over its life, in 1866 and again in Typhoon Jane in 1950, and now grows as six limbs from a shared base. Both flower in late March and early April, red flowers crowding bare wood before a single leaf opens, and a ten-minute bus from Yokaichi Station reaches both, about ten minutes' walk apart.",
+  "intro": "Higashiomi maps three trees. Two are hananoki, Acer pycnanthum, standing 600 metres apart in neighbouring hamlets: the westernmost wild specimens of this rare maple known anywhere in Japan, both National Natural Monuments since March 1921, both having survived storms that took off their main trunks. The third, a kilometre from the pair, is a temple's stand-in for the Buddha's own bodhi tree, a linden that grew back from its own scorched stump after a 1573 fire. None of the three sit within sight of one another; Higashiomi's research is not finished.",
+  "meta_description": "Three trees in Higashiomi, Japan: the westernmost wild hananoki maples known anywhere, and a temple linden that regrew after a 16th century fire.",
+  "question_meta": "Higashiomi's oldest mapped tree is a temple linden put at a thousand years by tradition, regrown after a 1573 fire, ahead of two rare wild maples nearby.",
+  "question_answer": "Higashiomi's oldest mapped tree is the Sennen Bodaiju at Hyakusai-ji temple, a Miquel's linden traditionally reckoned at about a thousand years old, a figure that comes from temple tradition rather than a documented planting date. Its trunk was scorched when Oda Nobunaga's forces burned the temple to the ground in 1573, and it resprouted from its own base. About a kilometre away stand Higashiomi's two hananoki maples, the westernmost known wild specimens of the species, both designated National Natural Monuments on the same day, 3 March 1921: Minamihanazawa's tree is estimated at over 250 years and possibly over 450, Kitahanazawa's at over 300.",
+  "question_context": "The thousand-year figure for the Hyakusai-ji linden is a round number Japanese temples have long given their oldest trees, not a ring count, and the temple's own material simply repeats it. What is documented is the fire: Oda Nobunaga burned Hyakusai-ji to the ground in 1573, scorching the linden without reaching its roots, so it grew back around its own dead wood. It stands in place of a true bodhi tree, Ficus religiosa, which cannot survive a Japanese winter, and carries no monument designation of its own. The hananoki pair, a kilometre away, do carry an individual designation, since 3 March 1921. Hananoki grows wild in only a handful of wet valleys in central Japan, and these two are its westernmost known specimens. Minamihanazawa's tree, 5.2 metres round, lost its main trunk to lightning-related rot in 2010. Kitahanazawa's, smaller at 2.8 metres round, has lost two trunks to storms and now grows as six limbs from one base. Both flower in late March and early April, and a ten-minute bus from Yokaichi Station reaches both. The temple linden is a separate trip, with its own admission and hours.",
   "hero_tree_id": "hga_001",
-  "oldest_tree_id": "hga_001",
+  "oldest_tree_id": "hga_003",
   "faq": [
     {
       "q": "What is a hananoki?",
-      "a": "Acer pycnanthum, a maple that grows wild in only a few wet valleys in central Japan. These two trees are its westernmost known wild specimens."
+      "a": "Acer pycnanthum, a maple that grows wild in only a few wet valleys in central Japan. Two of Higashiomi's three trees are its westernmost known wild specimens."
     },
     {
-      "q": "Which of the two is older?",
-      "a": "It is not settled. Minamihanazawa is estimated at over 250 and possibly over 450 years; Kitahanazawa at over 300. Both were designated on the same day in 1921."
+      "q": "Which of the three trees is oldest?",
+      "a": "By tradition, the Hyakusai-ji temple linden, put at about a thousand years, though that figure is temple lore rather than a measurement. Of the two hananoki, Minamihanazawa is estimated slightly older than Kitahanazawa, but neither carries a hard date."
     },
     {
-      "q": "Can both trees be visited in one trip?",
-      "a": "Yes. They stand about 600 metres apart, both reachable by the same ten-minute bus from Yokaichi Station, and the walk between them takes about ten minutes."
+      "q": "Can all three trees be visited in one trip?",
+      "a": "The two hananoki stand about 600 metres apart, both reachable by the same ten-minute bus from Yokaichi Station. The temple linden is about a kilometre further on and is worth treating as a separate stop, since Hyakusai-ji charges admission (600 yen) and keeps its own hours."
     },
     {
       "q": "When is the best time to see them?",
-      "a": "Late March into early April, when the red flowers open on bare wood before either tree comes into leaf."
+      "a": "Late March into early April for the hananoki, when the red flowers open on bare wood before either maple comes into leaf. The temple linden has no comparable recorded peak."
     }
   ],
   "trees": [
@@ -101,6 +101,37 @@
         "kind": "flowers",
         "label": "late March and early April, when the red flowers open on bare wood before any leaf"
       },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hga_003",
+      "name": "The Sennen Bodaiju of Hyakusai-ji",
+      "species": "Miquel's Linden (Tilia miqueliana)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 500,
+      "location": {
+        "address": "Hyakusai-ji Temple, Hyakusaiji-cho, Higashiomi City, Shiga Prefecture, in the former front garden of the old main hall",
+        "latitude": 35.13103861,
+        "longitude": 136.27235389,
+        "neighbourhood": "Hyakusaiji, Higashiomi"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/百済寺",
+        "https://www.biwako-visitors.jp/spot/detail/95/",
+        "https://mikawanoyasou.org/data/bodaijyu.htm"
+      ],
+      "access": "Paid entry to Hyakusai-ji, part of the Koto Sanzan (three temples of eastern Lake Biwa): 600 yen adults, open 8:30-17:00.",
+      "transport": "Bus from Yokaichi Station, about 30 minutes.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Oda Nobunaga burned Hyakusai-ji to the ground on 7 April 1573, and the tree in the front garden grew back out of its own scorched trunk. The fire charred the bark and never reached the roots, so fresh growth rose around the burn. What stands in the old main hall's garden today is regrowth from the base of the tree Nobunaga's men torched. The temple still tells that story, and still offers the tree as a charm against misfortune.\n\nIts name is Sennen Bodaiju, the thousand-year bodhi tree, and it is a substitute. The bodhi tree of Buddhism is Ficus religiosa, a fig that will not survive a Japanese winter, so temples here plant Tilia miqueliana instead and give it the same name and the same spot in the garden. This one measures about five metres round, with a trunk roughly 1.6 metres across. The thousand years in the name is a traditional round figure rather than a date anyone recorded, so read it as many centuries and not as a measurement. If somebody has properly aged it, tell us.\n\nHyakusai-ji is one of the Koto Sanzan, the three old temples on the eastern flank of Lake Biwa. Entry costs 600 yen and the gates are open from 8:30 to 17:00, which buys the halls and the garden as well as the tree.",
       "photo": {
         "url": null,
         "license": null,

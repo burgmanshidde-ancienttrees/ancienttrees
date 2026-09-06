@@ -5504,18 +5504,26 @@
     "tokens": 0,
     "trees": 0,
     "note": "Scouted the Florida Champion Tree Program for Fort Lauderdale per scout_next.py --target; no coordinates, no API, no licence statement, same shape as every other US state champion-tree program scouted so far. Verdict empty, recorded in data/register-scouting.json so the next run does not re-scout blind. Session work, tokens not logged by an agent report."
+   },
+   {
+    "target": "Amt Neuhaus (famous-germany fgm_001)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Continuation of an earlier attempt that stopped at 10 min with 110 unspent. Finished the standing _famous-germany verify claim: fgm_001 (Eiche am Forsthaus Gruener Jaeger) already fully verified on disk, written up directly as a new single-tree place, Amt Neuhaus, Germany, under the single-famous-tree-destination exception (locally documented tree veteran, municipal tourism excursion listing, dramatic storm-damage/hollow-trunk story). fgm_002 (Eiche Schillershoehe) verified but held rather than published: no age, no girth, no distinguishing feature beyond a Naturdenkmal designation at a Schiller-memorial viewpoint, so it does not clear the would-somebody-travel-for-this-tree test; recorded as held in data/leads/_famous-germany.json rather than discarded. Released the _famous-germany claim.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "date": "2026-09-06",
+    "target": "famousjapan-remaining",
+    "kind": "write",
+    "tokens": 24000,
+    "trees": 2,
+    "wasted": 0,
+    "brief_wrong": false,
+    "note": "2 stories (tok_017 ginkgo joining Tokyo, hga_003 linden joining Higashiomi); 1 best_time set, 1 correctly withheld; ~12k/tree, on the write-pass target. Merged into data/cities, page copy (Higashiomi's oldest-tree claim, Tokyo's tree-count sentence) updated to match."
    }
   ]
- },
- "2026-09-06": [
-  {
-   "target": "Amt Neuhaus (famous-germany fgm_001)",
-   "kind": "write",
-   "tokens": 0,
-   "trees": 1,
-   "note": "Continuation of an earlier attempt that stopped at 10 min with 110 unspent. Finished the standing _famous-germany verify claim: fgm_001 (Eiche am Forsthaus Gruener Jaeger) already fully verified on disk, written up directly as a new single-tree place, Amt Neuhaus, Germany, under the single-famous-tree-destination exception (locally documented tree veteran, municipal tourism excursion listing, dramatic storm-damage/hollow-trunk story). fgm_002 (Eiche Schillershoehe) verified but held rather than published: no age, no girth, no distinguishing feature beyond a Naturdenkmal designation at a Schiller-memorial viewpoint, so it does not clear the would-somebody-travel-for-this-tree test; recorded as held in data/leads/_famous-germany.json rather than discarded. Released the _famous-germany claim.",
-   "wasted": 0,
-   "brief_wrong": false
-  }
- ]
+ }
 }
