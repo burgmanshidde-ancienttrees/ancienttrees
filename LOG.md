@@ -1,6 +1,49 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation, of a window an earlier attempt stopped after 46 min with 74 unspent) - Omishima gains a third camphor; hiroshima claim released after a second thin register attempt
+
+Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
+(two standing: `hiroshima` and `_famous-japan`, both verify, with uncommitted
+verify output on disk from the earlier attempt). `hiroshima-verified.json`
+was an empty array for the second attempt against the same two register
+clusters (Hirayama Shrine, Fukujoji temple); `famousjapan-batch-
+verified.json` held 3 fully judged candidates. `leads.py --ready` was empty
+(2692 leads, 0 READY), matching every recent precedent.
+
+**Shipped: Omishima's third tree, omi_003 (Ochi-no-Mikoto's Hand-Planted
+Camphor)**, joining the existing two-tree page directly from the earlier
+attempt's already-verified record (no write-stories agent needed for one
+sunk-cost tree, same pattern as Amt Neuhaus yesterday). Stands on the
+shrine's approach path, distinct from omi_001 and omi_002; girth 11.0m,
+height 15m; its ~2,600-year age is temple legend, kept broad and flagged.
+Rewrote the intro and one FAQ line to cover three trees; shortened the tree
+name from the verify record's 72-char form to fit the 60-char title limit.
+Also recorded from the same batch: Okakumaki (cube-pruned Buddhist Pine,
+Ogi Park) held as a lead, no destination-test evidence found; Okina sugi
+(Yakushima) confirmed dead since 2010, moved to blocked. Full detail in
+CURATION.md. Build (4609 pages), qa.py (6904 pages) and preflight.py (444
+cities, 0 new problems) all clean.
+
+**Released the `hiroshima` claim.** Its own register-cluster mining has now
+come back empty twice running; the 77 leads still in `data/leads/
+hiroshima.json` are raw untranslated giant-tree-survey rows rather than
+named candidates, a slower dig than the famous-tree lane currently
+outproducing it. Left released rather than re-claimed; a future pass should
+hand-pick named trees from the register rather than mine rows in bulk.
+
+**Left `_famous-japan` standing and dispatched a fresh verify batch** on the
+11 remaining candidates `famous_demand.py --next` surfaces for Japan (mostly
+near-zero measured demand, one at 45 reads/month), writing to
+`data/research/famousjapan-batch2-verified.json`. Still running as this
+entry is written.
+
+Rung 2 (`health.py`): Data digest still failing (17.7h old). Read the log
+directly (`gh run view 33957091004 --log-failed`): the same benign git-push
+race documented repeatedly this week, a concurrent writer won the push and
+the digest's own commit was lost with the runner. Nothing new to fix; the
+next scheduled run picks it up.
+
 ## 2026-09-06 (continuation, of a window an earlier attempt stopped early at 10 min with 110 unspent) - Amt Neuhaus ships, one famous-Germany lead held, digest failure re-confirmed benign
 
 Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`

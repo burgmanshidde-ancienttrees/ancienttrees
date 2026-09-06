@@ -2,7 +2,7 @@
   "city": "Omishima",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Two trees at the same shrine, a thousand years and more apart in age. The Living Gate is a camphor at Oyamazumi Shrine whose split, hollowed base forms a passage worshippers once walked through, put at 2,000 to 3,000 years old and revived after believers nearly killed it stripping its bark for a longevity charm. A short walk away, Japan's first Prime Minister planted a camphor of his own in 1909. Both free, open at every hour, a short detour off the Shimanami Kaido.",
+  "intro": "Three camphors at the same shrine, spanning legend to living memory. The Living Gate is hollowed into a passage worshippers once walked through, put at 2,000 to 3,000 years old and revived after believers nearly killed it stripping its bark for a longevity charm. A few hundred metres away, Japan's first Prime Minister planted a camphor of his own in 1909. And facing the shrine's approach path stands the widest of the three, an eleven-metre-round camphor temple tradition credits to a legendary ancestor of the Ochi clan. All free, open at every hour, a short detour off the Shimanami Kaido.",
   "meta_description": "Ikiki no Gomon, the Living Gate: a camphor at Oyamazumi Shrine, Omishima, hollowed into a walkable passage. 2,000 to 3,000 years old. Free.",
   "question_meta": "Omishima's mapped tree is Ikiki no Gomon, the Living Gate camphor, put at 2,000 to 3,000 years old.",
   "question_answer": "Omishima's mapped tree is Ikiki no Gomon (The Living Gate), a camphor at Oyamazumi Shrine whose split and hollowed base forms a passage about two metres wide, three high and seven long, that worshippers walked through to reach the shrine's inner sanctuary. Its age is put at 2,000 to 3,000 years, a range that comes from two disagreeing sources rather than one measured figure.",
@@ -27,8 +27,8 @@
       "a": "By car via the Shimanami Kaido (about 10 minutes from Omishima IC to the shrine), or by bus from Imabari Station, about 65 minutes to the Oyamazumi Shrine stop plus a 5-minute walk."
     },
     {
-      "q": "What is the second tree Omishima maps?",
-      "a": "A camphor Japan's first Prime Minister, Ito Hirobumi, planted himself on 22 March 1909 during a pilgrimage visit, standing elsewhere within the same shrine grounds."
+      "q": "What other trees does Omishima map?",
+      "a": "Two more, both within the same shrine grounds: a camphor Japan's first Prime Minister, Ito Hirobumi, planted himself on 22 March 1909, and a third camphor standing on the shrine's approach path, its eleven-metre trunk credited by temple tradition to a legendary ancestor of the Ochi clan."
     }
   ],
   "trees": [
@@ -85,6 +85,38 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "Japan's first Prime Minister planted this one himself, which makes it the youngest tree of any consequence in a precinct where the others are counted in millennia.\n\nIto Hirobumi came to Oyamazumi Shrine on 22 March 1909, by tradition as a descendant of the Kono clan whose tutelary shrine this is. He put a camphor in the ground and he brushed the characters for the shrine's stone name-tablet on the same visit. Seven months later he was shot dead in Harbin.\n\nThe tree is about a metre round, which in this precinct counts as slender. Oyamazumi's grove was designated a National Natural Monument in 1951 as the oldest primeval camphor stand in Japan, and 38 named ancient camphors sit under that protection. This one is not among them and does not pretend to be. It is here for the date and the hand that planted it, not for its girth, and it is a rare thing anywhere: a tree whose first day is recorded to the morning.\n\nThat also makes it easy to walk past. No source places it more precisely than the shrine grounds, so the pin here marks the precinct rather than the trunk. Look for the young, straight camphor standing among the giants, a few hundred metres from the Living Gate. If you find it and can place it exactly, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "omi_003",
+      "name": "Ochi-no-Mikoto's Hand-Planted Camphor",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "roughly 2,600 years (temple tradition, not a measured date)",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1100,
+      "height_m": 15,
+      "location": {
+        "address": "Approach path (sando) of Oyamazumi Shrine, Miyaura, Omishima, Imabari, Ehime Prefecture, Japan",
+        "latitude": 34.248056,
+        "longitude": 133.005306,
+        "neighbourhood": "Omishima Island (Shimanami Kaido)"
+      },
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/ochinomikoto-kusu.htm",
+        "https://commons.wikimedia.org/wiki/Category:Grand_camphor_tree_planted_by_Ochi_no_Mikoto",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE"
+      ],
+      "access": "Free, within Oyamazumi Shrine grounds, open daily (same access as omi_001/omi_002).",
+      "transport": "Same as omi_001/omi_002: Omishima Island (Shimanami Kaido); by car or bus from Imabari Station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A third camphor stands in the same shrine grounds, and it is the one visitors meet first. Ochi-no-Mikoto's Hand-Planted Camphor stands directly facing the sando, the approach path into Oyamazumi Shrine, with a trunk eleven metres round at breast height and a crown reaching fifteen metres over the path.\n\nTemple tradition names Ochi-no-mikoto, a legendary ancestor of the later Ochi clan, as the one who planted it, sometime before the reign of Emperor Jinmu. That is a founding legend, not a documented planting date, and the site treats it that way: the age given, roughly 2,600 years, comes with the story attached rather than a growth-ring count.\n\nWhat is measured is the girth. Japan's Ministry of Environment giant-tree survey for the Chugoku-Shikoku region puts it at eleven metres, among the thickest camphors recorded anywhere in the country. Together with Ikiki no Gomon and 35 further camphors across the grounds, it belongs to the Oyamazumi-jinja Camphor Grove, designated a National Natural Monument in 1951 as Japan's oldest primeval camphor stand.\n\nFree to see, open daily, and the easiest of the shrine's three trees to find: it stands on the path everyone already walks, facing the gate.",
       "photo": {
         "url": null,
         "license": null,
