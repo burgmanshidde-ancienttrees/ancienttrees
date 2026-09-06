@@ -3,11 +3,11 @@
   "country": "Austria",
   "status": "needs_curation",
   "oldest_tree_id": "szb_003",
-  "intro": "Salzburg's baroque gardens get the postcards, but its oldest protected trees stand on working ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, a lime nobody has measured since 1963. The city's Naturdenkmal register lists dozens more; these five, spread from Itzling to Morzg to Maxglan, are the ones that clear the bar this pass, alongside one deliberate import, a Californian sequoia planted in the Mirabellgarten.",
-  "meta_description": "Salzburg's oldest protected trees stand on working farms, not in the baroque gardens. Five trees, from a 1933 Eichelmast oak to a Californian sequoia.",
-  "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 5.",
+  "intro": "Salzburg's baroque gardens get the postcards, but most of its oldest protected trees stand on ordinary ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, an oak and two limes on plain Riedenburg streets, a plane and a black pine that outlasted the grand hotel whose park they once grew in. The Naturdenkmal register lists dozens more; these nine, from Itzling to Morzg to the Fordhof estate, clear the bar this pass, alongside one import, a Californian sequoia in the Mirabellgarten.",
+  "meta_description": "Salzburg's oldest protected trees stand on farms and streets, not the baroque gardens. Nine trees, from a 1933 oak to survivors of a bombed hotel.",
+  "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 9.",
   "question_answer": "Salzburg's oldest documented tree is the Stephan-Ludwig-Roth Oak, a pedunculate oak at a woodland edge in Morzg. A source records the Transylvanian Saxon leader and pedagogue Stephan Ludwig Roth resting under it on 15 September 1817, which means it was already a landmark two centuries ago; a local blog puts its age at over 200 years today.",
-  "question_context": "The oak has real urgency behind it: the same source reports a fungal infection and expects the tree to survive only about twenty more years, which makes it worth seeing sooner rather than later. Salzburg's Naturdenkmal register runs to dozens of entries, and the five here come from four different corners of the city rather than one walkable cluster. The Erentrudishof Oak, the city's longest-protected tree (designated 1933), stands in the yard of a working organic farm in Morzg where pigs once fattened on its acorns. A black poplar on the Josef-Mayburger-Kai promenade is one of the last traces of the riparian forest that used to line the Salzach. A lime on a residential street in Maxglan has not been measured since its 1963 designation, and a giant sequoia stands beside a coast redwood in the formal Mirabellgarten, the only tree here that was deliberately planted rather than found growing wild. None of the five carries a hard planting date; ages come from designation years, a documented sighting, or a visitor's own tape measure, and each page says so plainly.",
+  "question_context": "The oak has real urgency behind it: the same source reports a fungal infection and expects the tree to survive only about twenty more years, which makes it worth seeing sooner rather than later. Salzburg's Naturdenkmal register runs to dozens of entries, and the nine here come from five corners of the city rather than one walkable cluster, though three, an oak and two limes on separate Riedenburg streets, sit close enough to walk in one afternoon. The Erentrudishof Oak, the city's longest-protected tree (1933), stands in a working farmyard in Morzg where pigs once fattened on its acorns. A black poplar on the Josef-Mayburger-Kai promenade is one of the last traces of the riparian forest that used to line the Salzach. A plane and a black pine share a housing-estate courtyard near the main station, the only two trees left from a grand hotel's bombed-out park, and a giant sequoia stands beside a coast redwood in the formal Mirabellgarten, the only deliberately planted tree here. None of the nine carries a hard planting date; ages come from designation years, a sighting, a claim about a pair of survivors, or a visitor's tape measure, and each page says so.",
   "faq": [
     {
       "q": "What is the oldest tree in Salzburg?",
@@ -15,11 +15,11 @@
     },
     {
       "q": "Where are Salzburg's most remarkable trees?",
-      "a": "Spread across the city rather than one walk: a farm in Morzg, a riverside promenade in Itzling, a residential street in Maxglan, and the formal Mirabellgarten in the centre."
+      "a": "Spread across the city rather than one walk: a farm in Morzg, a riverside promenade in Itzling, three trees on separate Riedenburg streets, a housing-estate courtyard near the main station, a residential street in Maxglan, and the formal Mirabellgarten in the centre."
     },
     {
       "q": "Are Salzburg's trees free to visit?",
-      "a": "Yes, all five stand on public ground or a working farm's publicly accessible yard, with no entrance fee."
+      "a": "Yes, all nine stand on public ground, a working farm's publicly accessible yard, or an open housing-estate courtyard, with no entrance fee."
     },
     {
       "q": "Why don't Salzburg's official register trees carry ages?",
@@ -179,6 +179,119 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "szb_006",
+      "name": "The Oak of Steinbruchstraße",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "location": {
+        "address": "Steinbruchstraße, Riedenburg, Salzburg",
+        "latitude": 47.796083,
+        "longitude": 13.036004,
+        "neighbourhood": "Riedenburg"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/Category:Eiche_an_der_Steinbruchstra%C3%9Fe"
+      ],
+      "access": "Free; stands on Steinbruchstraße, an ordinary public residential street in Riedenburg with pavements on both sides (confirmed via OpenStreetMap, no access restriction on the road)",
+      "transport": "Riedenburg district, western Salzburg; Salzburg Quartier Riedenburg tram/bus stop is a short walk away.",
+      "story": "On Steinbruchstraße in Riedenburg, an oak has been growing ivy for longer than the street's newest residents have been alive. The street takes its name from a stone quarry that once cut into the nearby Rainberg, the same hillside quarried for stone that went into Salzburg Cathedral, though no record ties this particular tree to that history: it is simply the ordinary oak that happens to stand where the quarry road once ran.\n\nSalzburg listed it as a natural monument in 1984, NDM00196, protecting 352 square metres of ground around it. The register's whole description is short: the trunk splits into several strong branches about five metres up, and ivy has climbed most of the way up it. That is what a 1984 designation buys you, a floor rather than a biography, and nobody has recorded when the tree was planted.\n\nIt stands on an ordinary residential pavement, no gate and no ticket, in the western Riedenburg district a short walk from Salzburg's centre. The most recent photograph anyone has put online of it is from 2014, over a decade old now, so if you walk past and it still looks the way the pictures show, or looks different, that itself is worth telling us. Its age, like its exact place in Riedenburg's quarry history, is an open question rather than a guess we are prepared to make.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "szb_007",
+      "name": "The Lime of Neutorstraße 30a",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "",
+      "location": {
+        "address": "Neutorstraße 30a, near the junction of Neutorstraße, Hübnergasse and Leopoldskronstraße, Riedenburg, Salzburg",
+        "latitude": 47.797693,
+        "longitude": 13.032791,
+        "neighbourhood": "Riedenburg"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/Category:Linde_an_der_Neutorstra%C3%9Fe"
+      ],
+      "access": "Free; the register itself describes it as standing widely visible at the edge of the property, next to the Neutorstraße/Hübnergasse/Leopoldskronstraße junction, a public street corner in Riedenburg (confirmed via OpenStreetMap: ordinary public roads, no access restriction)",
+      "transport": "Riedenburg district, western Salzburg, at the Neutorstraße/Hübnergasse/Leopoldskronstraße junction; Salzburg Quartier Riedenburg tram/bus stop is a short walk away.",
+      "story": "A lime with more than one trunk stands at a street corner in Riedenburg, visible enough that the register itself calls it out: it stands widely visible at the edge of its property, right where Neutorstraße meets Hübnergasse and Leopoldskronstraße.\n\nThat multi-stemmed shape is the whole of what the record says about it. Salzburg designated the tree a natural monument in 1987, NDM00215, protecting 240 square metres of ground, but the register carries no planting date and no species beyond \"lime\", so which of Europe's limes this actually is remains a question for whoever next stands under it and looks closely at the leaves.\n\nThe corner is ordinary, a residential junction in western Salzburg's Riedenburg district with pavement on every side and nothing between the street and the tree. The newest photograph anyone has published of it dates to 2014, which is old enough that a fresher one, or a firm answer on the species, would genuinely add something nobody currently has. If you know which lime this is, or have stood on that corner recently, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "szb_008",
+      "name": "The Lime of Gärtnerstraße",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "",
+      "location": {
+        "address": "Gärtnerstraße, near the Mölckhof (Gärtnerstraße 2), Riedenburg, Salzburg",
+        "latitude": 47.799784,
+        "longitude": 13.028192,
+        "neighbourhood": "Riedenburg"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/Category:Linde_an_der_G%C3%A4rtnerstra%C3%9Fe",
+        "https://de.wikipedia.org/wiki/M%C3%B6lckhof"
+      ],
+      "access": "Free; stands on/beside Gärtnerstraße, a public residential street in Riedenburg (OpenStreetMap tags the road 'access=destination', which restricts through motor traffic only, not pedestrians)",
+      "transport": "Riedenburg district, western Salzburg; Salzburg Quartier Riedenburg tram/bus stop is a short walk away.",
+      "story": "This lime once stood inside the grounds of a baroque manor. The Mölckhof, a country house built around 1757 for the court chancellor Felix Anton von Mölck, expanded its park at some point after that, and the tree the register still describes belonged to it.\n\nThat is as far as the connection goes, and it is worth being precise about the gap: the manor's 1757 build date is well documented, but nothing ties this specific lime to that year, only to a later, undated expansion of the grounds. Guessing an age from the house would be a neater story than the evidence supports, so the tree's age stays unknown rather than borrowed from its neighbour's history. Salzburg protected it in 1991 as NDM00232, 226 square metres, and its only other recorded feature is a trunk that splits into several branches about four metres up.\n\nThe Mölckhof still stands on Gärtnerstraße in Riedenburg, and the lime is nearby on the same street, reachable on foot with nothing barring the way. The most recent photographs online are from 2014, over a decade old, so a current one would be useful. Which lime this actually is has never been recorded past the genus: if you can name the species, or know anything about when it was planted, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "szb_009",
+      "name": "The Last Trees of the Fordhof",
+      "species": "London Plane (Platanus x acerifolia) and Black Pine (Pinus nigra)",
+      "age_estimate": "over a century",
+      "age_min": 88,
+      "age_max": 161,
+      "location": {
+        "address": "Courtyard of the Fordhof housing estate, off Rainerstraße, Elisabeth-Vorstadt, Salzburg (plane tree pin; the pine stands about 35m away in the same courtyard)",
+        "latitude": 47.811644,
+        "longitude": 13.042856,
+        "neighbourhood": "Elisabeth-Vorstadt"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://www.nextroom.at/building.php?id=1363",
+        "https://commons.wikimedia.org/wiki/Category:Platane_im_Fordhof",
+        "https://commons.wikimedia.org/wiki/Category:Schwarzkiefer_im_Fordhof"
+      ],
+      "access": "Free; the two trees stand in the open courtyard of the Fordhof, a multi-block 1953 housing estate, criss-crossed by ordinary public sidewalks between the apartment blocks (confirmed via OpenStreetMap: lit, surfaced public footways run through the courtyard; the only access=private tags nearby cover two small surface parking areas, not the walkways or the tree positions). Not a park, and worth saying so plainly: this is a residential courtyard rather than public green space, but nothing gates entry.",
+      "transport": "Elisabeth-Vorstadt, about 5-10 minutes' walk from Salzburg Hauptbahnhof (the main train station).",
+      "story": "A grand hotel once stood where an apartment courtyard is now, and two of its trees are the only things that survived the change. The Hotel de l'Europe operated from 1865 to 1938, was bombed and stood empty until cleared around 1949, and the housing blocks of the Fordhof estate went up on the same ground in 1953. Everything about the hotel disappeared except a plane tree and a black pine, both registered as natural monuments, both still growing in what is now a residential courtyard.\n\nThe plane went onto the register in 1964, the pine in 1973, each protecting 113 square metres, and both entries say the same thing in the same words: this is one of two surviving trees from the hotel's park. That claim is the whole basis for an age. If either tree was planted right at the end of the hotel's run, it is about 88 years old; if it dates from the 1865 opening, it is 161. Nobody has narrowed that further, and neither should we.\n\nThis is the least garden-like setting on Salzburg's list: an ordinary 1953 housing estate off Rainerstraße, a short walk from the main station, with public footpaths running through the courtyard between the blocks. Nothing gates it, but it takes a moment to believe two centuries-old natural monuments are sitting in someone's car park. If you know which end of that date range is closer to true, or have measured either trunk, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
