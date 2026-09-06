@@ -1,6 +1,12 @@
 {
  "_note": "Original photo URL -> the vendored copy under site/public/photos. Written by scripts/vendor_photos.py --manifest from the files actually on disk. thumbUrl() reads it so the website and the app feed both point at our own domain instead of at Wikimedia, which rate-limits a card grid into HTTP 429.",
  "photos": {
+  "https://upload.wikimedia.org/wikipedia/commons/9/94/Naturdenkmal_Forster_Linde%2C_Aachen.JPG": {
+   "base": "aac_001-the-forster-linde",
+   "widths": [
+    500
+   ]
+  },
   "https://inaturalist-open-data.s3.amazonaws.com/photos/235074125/large.jpg": {
    "base": "aar_001-the-wild-service-tree-of-moesg-rd",
    "widths": [
@@ -584,6 +590,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/3/35/Peter-Linde_Burg_Coppenbr%C3%BCgge.jpg": {
+   "base": "cpb_001-the-peter-linde",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/4/47/Olivo_del_Patio_de_los_Naranjos_-_Mezquita_de_C%C3%B3rdoba.jpg": {
    "base": "cdb_001-the-olive-of-the-orange-courtyard",
    "widths": [
@@ -694,6 +706,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/f/fd/Enschede_Ledeboerpark_Giant_Sequioa_20050628.jpg": {
    "base": "ens_001-the-wellingtonia-of-the-ledeboerpark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3e/2017-01-16_Gerichtslinde_Erdmannrode_%28Hessen%29_01.jpg": {
+   "base": "edm_001-the-gerichtslinde-of-erdmannrode",
    "widths": [
     500
    ]
@@ -809,6 +827,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/eb/20150819_155632-old-tjikko.jpg": {
    "base": "ful_001-old-tjikko",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tanzlinde.jpg": {
+   "base": "gnb_001-the-galenbeck-dance-linden-luisenlinde",
    "widths": [
     500
    ]
