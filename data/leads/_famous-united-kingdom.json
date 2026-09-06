@@ -10,7 +10,8 @@
         "https://commons.wikimedia.org/wiki/File:2016_The_Peace_Tree_UKN.jpg",
         "https://commons.wikimedia.org/wiki/File:2017_The_Holm_Oak_UKN.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Commons category for the Woodland Trust's annual Tree of the Year public-vote award (run since 2014 in England, NI, Scotland and Wales, each winner earning a place in the European Tree of the Year contest), not one tree: the two attached photos are of two different winning trees in different years (2016 The Peace Tree, 2017 The Holm Oak UKN). Not a single collectible point. Individual winners could be fresh leads in their own right if independently locatable and notable (e.g. a named Holm Oak and Peace Tree winner) but are not verified under this ticket."
     },
     {
       "name": "Tree of the Year (Scotland)",
@@ -21,7 +22,8 @@
         "https://commons.wikimedia.org/wiki/File:2015_Lady%C2%B4s_Tree_UKS.jpg",
         "https://commons.wikimedia.org/wiki/File:2016_The_Suffragette_Oak_UKS.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Commons category for the Woodland Trust's annual Tree of the Year public-vote award, not one tree: the three attached photos are of three different winning trees across different years (2014 Niel Gow's Oak, 2015 Lady's Tree, 2016 The Suffragette Oak UKS). Not a single collectible point. Niel Gow's Oak (Dunkeld, Perthshire, associated with the 18th-century fiddler Niel Gow) is independently well-documented and may be worth its own lead/verify pass later; not verified under this ticket."
     },
     {
       "name": "Tree of the Year (Wales)",
@@ -32,7 +34,8 @@
         "https://commons.wikimedia.org/wiki/File:2015_The_Lonely_Tree_of_Llanfyllin_UKW.jpg",
         "https://commons.wikimedia.org/wiki/File:2016_Survival_at_the_cutting_edge_oak_UKW.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Commons category for the Woodland Trust's annual Tree of the Year public-vote award, not one tree: the three attached photos are of three different winning trees across different years (2014 The Oak at the Gate of the Dead, 2015 The Lonely Tree of Llanfyllin, 2016 Survival at the cutting edge oak UKW). Not a single collectible point. The Oak at the Gate of the Dead (near Abergavenny, associated with the Battle of Pontrilas / Welsh folklore) is independently well-documented and may be worth its own lead/verify pass later; not verified under this ticket."
     },
     {
       "name": "Gilwell oak",
@@ -43,9 +46,11 @@
         "https://commons.wikimedia.org/wiki/File:Gilwell_Oak_(5948293396).jpg",
         "https://commons.wikimedia.org/wiki/File:Gilwell_Park_London_-_Gillwell_Oak.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-06 for London (Chingford/Epping Forest); see data/research/famousuk-verified.json (id gil_001).",
+      "reason": "Re-verified 2026-09-06 (id gil_001 in data/research/famousuk-verified.json), and it reaches the same wall a 2026-09-01 pass already hit and logged in data/leads/london.json: Scout Adventures asks day visitors to sign in at the Syd Kesseler Centre reception on arrival. Hard rule 10's own test names 'a reception desk to talk past' as a no, distinct from paid entry. Everything else checks out (450-550 years per the older, better-sourced band; 480cm girth; five sources; Tree of the Year 2017 UK winner, 5th in Europe). Do not re-verify again; if the reception sign-in is ever confirmed to be a formality rather than a gate, both passes' stories are ready to merge."
     },
     {
       "name": "Ankerwycke Yew",
@@ -87,7 +92,8 @@
         "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue,_Camberley,_England-LCCN2002696444.tif",
         "https://commons.wikimedia.org/wiki/File:Wellingtonia_Avenue_Camberley_England.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "An avenue, not a single collectible point: originally 218 trees, now roughly 113 giant sequoias (Sequoiadendron giganteum) planted 1865 by Frederick Street as a memorial to the Duke of Wellington (who lived nearby at Stratfield Saye), running about 1.1km along the B3348 through Camberley/Heatherside. Fails the avenue/whole-wood exclusion in BRIEF_RESEARCH.md hard limits: no single obvious place to stand. Sources: en.wikipedia.org/wiki/Wellingtonia_Avenue, glendale-services.co.uk. Distinct from the single named 'Wellington's Wellingtonia' specimen tree at Stratfield Saye itself, which is verified separately."
     },
     {
       "name": "Groton Winthrop Mulberry",
@@ -98,9 +104,10 @@
         "https://commons.wikimedia.org/wiki/File:The_Groton_Winthrop_Mulberry_-_geograph.org.uk_-_542252.jpg",
         "https://commons.wikimedia.org/wiki/File:The_Groton_Winthrop_Mulberry_-_geograph.org.uk_-_542257.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Mulberry (Morus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Published 2026-09-06 as its own place, data/cities/groton.json (id wtm_001)."
     },
     {
       "name": "Holy Thorn, Glastonbury",
@@ -111,7 +118,9 @@
         "https://commons.wikimedia.org/wiki/File:A_Holy_Thorn_-_geograph.org.uk_-_1272877.jpg",
         "https://commons.wikimedia.org/wiki/File:Awaiting_the_blooms_-_geograph.org.uk_-_7371135.jpg"
       ],
-      "status": "lead"
+      "status": "duplicate",
+      "note": "Verified 2026-09-06 as the living St John's churchyard specimen (Crataegus monogyna Biflora, planted 1930s); the Wearyall Hill and Abbey specimens named in older sources are dead/removed. See data/research/famousuk-verified.json (id hth_001).",
+      "reason": "Re-verified 2026-09-06 (id hth_001) as the living St John's churchyard specimen; already published as gls_001 in data/cities/glastonbury.json under the same facts (planted 1930s by George Chislett, Crataegus monogyna 'Biflora', the only surviving Holy Thorn now the Wearyall Hill and Abbey specimens are gone). No new work needed."
     },
     {
       "name": "Yews of Kingley Vale",
@@ -122,9 +131,10 @@
         "https://commons.wikimedia.org/wiki/File:Ancient_Yew_trees_in_Kingley_Vale_-_geograph.org.uk_-_229689.jpg",
         "https://commons.wikimedia.org/wiki/File:Ancient_yew,_Kingley_Vale_1.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "A whole wood, not a single collectible point. Kingley Vale is a c.120-hectare National Nature Reserve near Chichester containing one of the finest yew woods in Europe, spread across a valley; a 2012 dedicated survey (Peter Norton, ancient-yew.org) catalogues 51 of its oldest yews individually, with ages estimated at 500 to perhaps 2,000 years (the upper figure considered unlikely by the survey itself) and girths over 5m for the oldest. No single named specimen with one obvious place to stand was found in this pass (no 'King of Kingley Vale' or equivalent single-tree name turned up); the attached photos are generic views of the grove/forest rather than one identifiable tree. Fails the avenue/whole-wood exclusion the same way an avenue does: there is no one spot to send a visitor to. Unlike the Borrowdale Yews (published, bwd_001), which are a compact 'Fraternal Four' at a single viewpoint made famous by name via Wordsworth's poem, Kingley Vale is a dispersed reserve. If a future pass finds one specifically named, individually famous yew within it (the survey PDF lists 51 by number/description and could be mined for one), that could be a fresh lead; not established in this pass."
     },
     {
       "name": "Nocton Hall Chestnut",
@@ -135,30 +145,10 @@
         "https://commons.wikimedia.org/wiki/File:NoctonChest.jpg",
         "https://commons.wikimedia.org/wiki/File:Nocton_Hall_Chestnut_tree_-_geograph.org.uk_-_1731217.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Sweet Chestnut (Castanea sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "The Poem Tree",
-      "lat": 51.62813,
-      "lng": -1.179,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Plaque_describing_the_Poem_Tree_-_geograph.org.uk_-_1242157.jpg",
-        "https://commons.wikimedia.org/wiki/File:Poemtree_sample.png",
-        "https://commons.wikimedia.org/wiki/File:The_Poem_Tree,_Wittenham_Clumps.JPG"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Robin Hood's Larder",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Robin_hood_larder_1913.png",
-        "https://commons.wikimedia.org/wiki/File:Robin_hoods_larder_1880.jpg"
-      ],
-      "status": "lead"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Access fails hard rule 10. Nocton Hall (Lincolnshire) is a privately owned ruin (Leda Properties Ltd), on English Heritage's Buildings at Risk register, burnt out a second time in 2004 and left an unstable shell; the parish council/local sources describe the perimeter as fenced (North Kesteven District Council had to push the owner to secure it) and the grounds as overgrown, with 'the fine specimen trees hidden by more native species'. No source found describing any public right of way or open access to the grounds; this reads as private land under redevelopment, not somewhere a visitor can walk in without permission. Also flagging a dating problem even if access is ever resolved: local sources themselves note the tradition that Catherine Howard planted the tree in 1541 'seems rather unlikely' because horse chestnut was not introduced to Britain until the late 16th century, i.e. after her 1542 execution, a bridge claim the sources themselves question. Wikipedia states 'the tree still stands today' but this is undated and no post-2010 photo or report of it was found in this pass. Sources checked: en.wikipedia.org/wiki/Nocton_Hall, nocton.blogspot.com, geograph.org.uk/photo/1731217, search results referencing English Heritage buildings-at-risk status."
     },
     {
       "name": "Sequoiadendron giganteum at Stratfield Saye",
@@ -169,9 +159,10 @@
         "https://commons.wikimedia.org/wiki/File:Wellingtonia_trunks,_Stratfield_Saye_-_geograph.org.uk_-_1422804.jpg",
         "https://commons.wikimedia.org/wiki/File:Wellingtonias,_Stratfield_Saye_-_geograph.org.uk_-_1420440.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Giant Sequoia (Sequoiadendron sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Published 2026-09-06 as its own place, data/cities/stratfield-saye.json (id wsw_001), under the name Wellington's Wellingtonia."
     },
     {
       "name": "The Fuck Tree",
@@ -182,7 +173,8 @@
         "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Fuck_Tree_June_2025_03.jpg"
       ],
-      "status": "lead"
+      "status": "verified",
+      "note": "Verified 2026-09-06 (id fuc_001): facts check out (alive, sourced, public access on Hampstead Heath), but held back rather than written up. FOR HIDDE: this needs an explicit brand/tone call before it goes near a page, per CLAUDE.md's brand-decision boundary, not a research judgement. The tree's whole claim to notability is a cruising-ground reputation rather than age or dendrology; publishing it under its real name is a call about what this site is, not about whether the tree is real. See data/research/famousuk-verified.json."
     },
     {
       "name": "Tolpuddle Martyrs Tree",
@@ -193,7 +185,9 @@
         "https://commons.wikimedia.org/wiki/File:Martyrs_Seat_and_Shelter_-_geograph.org.uk_-_1176487.jpg",
         "https://commons.wikimedia.org/wiki/File:Martyrs_Tree_-_geograph.org.uk_-_1176497.jpg"
       ],
-      "status": "lead"
+      "status": "duplicate",
+      "note": "Verified 2026-09-06, own place (Tolpuddle, Dorset); National Trust village-green sycamore, birthplace-of-trade-unionism landmark, one of the 50 Great British Trees. See data/research/famousuk-verified.json (id tmt_001).",
+      "reason": "Re-verified 2026-09-06 (id tmt_001); already published as tol_001 in data/cities/tolpuddle.json, same tree, same facts. No new work needed."
     },
     {
       "name": "Wesley's tree",
@@ -203,7 +197,8 @@
         "https://commons.wikimedia.org/wiki/File:Wesley%27s_Tree_-_geograph.org.uk_-_569833.jpg",
         "https://commons.wikimedia.org/wiki/File:Wesley%27s_tree_plaque_-_geograph.org.uk_-_569837.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Dead and removed. This is the historic elm in Stony Stratford Market Square (Milton Keynes, Buckinghamshire, grid SP 786 403), under which John Wesley preached on 30 July 1777 and on other occasions. A 2007 geograph photo already shows 'the decaying remains of an ancient Elm'; further sources (mkheritage.org.uk local history pages) confirm it was ravaged by Dutch elm disease and damaged by two arson/vandalism fires, reduced to a charred hollow, and the remains have since been removed entirely. A young oak sapling has been planted on the site with a commemorative plaque, but it is a recent, unremarkable planting rather than the historic tree itself and has no age or dendrological interest of its own, so it does not pass as a living successor the way the Elm of Saint-Gervais precedent does. Never a collectible entry per the alive-now rule; could be mentioned as context in a future Stony Stratford/Milton Keynes story if a genuinely notable living tree is found there. Sources: geograph.org.uk/photo/569833, mkheritage.org.uk/archive/jt/tw/docs/4.html and mkheritage.org.uk/archive/mkm/stonystratford/docs/Tour/5marketsquare.html."
     },
     {
       "name": "Craigends Yew",
@@ -214,9 +209,10 @@
         "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_epiphytic_mosses.jpg",
         "https://commons.wikimedia.org/wiki/File:Craigends_Yew_grove,_Houston,_Renfrewshire_-_interior_view.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Published 2026-09-06 as its own place, data/cities/craigends.json (id cra_001)."
     },
     {
       "name": "Fortingall Yew",
@@ -255,7 +251,8 @@
         "https://commons.wikimedia.org/wiki/File:2015_Lady%C2%B4s_Tree_UKS.jpg",
         "https://commons.wikimedia.org/wiki/File:2016_The_Suffragette_Oak_UKS.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Commons category for the Woodland Trust's annual Tree of the Year public-vote award, not one tree: the three attached photos are of three different winning trees across different years (2014 Niel Gow's Oak, 2015 Lady's Tree, 2016 The Suffragette Oak UKS). Not a single collectible point. Niel Gow's Oak (Dunkeld, Perthshire, associated with the 18th-century fiddler Niel Gow) is independently well-documented and may be worth its own lead/verify pass later; not verified under this ticket."
     },
     {
       "name": "Wallace Yew",
@@ -280,7 +277,9 @@
         "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(2).JPG",
         "https://commons.wikimedia.org/wiki/File:Elm_Tree_at_Preston_Park,_Brighton_(August_2013)_(3).JPG"
       ],
-      "status": "lead"
+      "status": "duplicate",
+      "note": "Verified 2026-09-06 as 'The Preston Twin' (one twin felled 2019 and now a gilded sculpture beside its surviving companion), joins Brighton. See data/research/famousuk-verified.json (id pst_001).",
+      "reason": "Re-verified 2026-09-06 (id pst_001); already published as bhm_001 in data/cities/brighton.json ('The Preston Twin'), same tree, same facts. No new work needed."
     },
     {
       "name": "Llangernyw Yew",
@@ -316,7 +315,8 @@
         "https://commons.wikimedia.org/wiki/File:2015_The_Lonely_Tree_of_Llanfyllin_UKW.jpg",
         "https://commons.wikimedia.org/wiki/File:2016_Survival_at_the_cutting_edge_oak_UKW.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Commons category for the Woodland Trust's annual Tree of the Year public-vote award, not one tree: the three attached photos are of three different winning trees across different years (2014 The Oak at the Gate of the Dead, 2015 The Lonely Tree of Llanfyllin, 2016 Survival at the cutting edge oak UKW). Not a single collectible point. The Oak at the Gate of the Dead (near Abergavenny, associated with the Battle of Pontrilas / Welsh folklore) is independently well-documented and may be worth its own lead/verify pass later; not verified under this ticket."
     }
   ],
   "blocked": [
@@ -325,6 +325,29 @@
       "lat": 55.89788,
       "lng": -2.9402,
       "reason": "Landowner asked the Woodland Trust to withdraw it from Scotland's Tree of the Year specifically to avoid drawing more visitors, citing health concerns the extra footfall could worsen; the Trust agreed. A source deliberately discouraging attention, matching hard rule 10's spirit even though coordinates are technically public elsewhere."
+    },
+    {
+      "name": "The Poem Tree",
+      "lat": 51.62813,
+      "lng": -1.179,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Plaque_describing_the_Poem_Tree_-_geograph.org.uk_-_1242157.jpg",
+        "https://commons.wikimedia.org/wiki/File:Poemtree_sample.png",
+        "https://commons.wikimedia.org/wiki/File:The_Poem_Tree,_Wittenham_Clumps.JPG"
+      ],
+      "status": "blocked",
+      "reason": "Dead. The beech died in the 1990s, rotted while standing, and collapsed in July 2012; the decayed trunk disintegrated when a crane tried to make it safe. Remains left in situ as habitat, no replacement planted; a 1994 memorial stone nearby carries a 1965 rubbing of Joseph Tubb's carved poem. Confirmed via en.wikipedia.org/wiki/The_Poem_Tree, 2026-09-06. Never a collectible entry per the alive-now rule; could be mentioned as context in a Wittenham Clumps story about a different living tree if one is ever found there."
+    },
+    {
+      "name": "Robin Hood's Larder",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Robin_hood_larder_1913.png",
+        "https://commons.wikimedia.org/wiki/File:Robin_hoods_larder_1880.jpg"
+      ],
+      "status": "blocked",
+      "reason": "Dead and gone, not merely dead-standing. Also known as the Butcher's Oak / Slaughter Tree / Shambles Oak, a hollow veteran (24 ft / 7.3 m circumference) in Sherwood Forest, badly burnt in the late 19th century and again in 1913, then fell in a gale in 1961; Wikipedia states no trace remains today. The only photos on file (1880, 1913) predate its fall by decades, which was exactly the red flag worth checking. Confirmed via en.wikipedia.org/wiki/Robin_Hood%27s_Larder, 2026-09-06. Not a collectible entry."
     }
   ]
 }

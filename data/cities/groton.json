@@ -1,0 +1,62 @@
+{
+  "city": "Groton",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Groton is a small Suffolk village with a churchyard, a scatter of farms, and one tree that ties it to American history. Around 1550 the lord of the manor planted a black mulberry on the common that still bears his family's name. His grandson later led the Puritan fleet to Massachusetts Bay and became its first governor, and the Winthrop family in America is said to keep in touch with the village still. There is one tree to see here, and its story reaches further than its size suggests.",
+  "meta_description": "The Groton Winthrop Mulberry, planted around 1550 by the grandfather of Massachusetts Bay's first governor, still grows on the village common in Suffolk.",
+  "question_meta": "Groton's oldest tree is the Winthrop Mulberry, planted around 1550 by Adam Winthrop, grandfather of the Puritan leader who governed Massachusetts Bay.",
+  "question_answer": "The oldest tree in Groton is the Groton Winthrop Mulberry, a black mulberry planted around 1550 by Adam Winthrop, lord of the manor after Henry VIII granted it to him in 1544. That puts it at roughly 475 years old today, a planting-date estimate rather than a measured figure, since no ring count or girth survey has ever been published for it.\n\nThe family link is the reason anyone outside Suffolk has heard of it. Adam's grandson John Winthrop grew up on this ground before leading the Puritan fleet across the Atlantic in 1630 and governing the Massachusetts Bay Colony he helped found, and the tree has become a minor pilgrimage point for anyone tracing that history to its source.\n\nThe trunk gave up standing decades ago, which is normal for a mulberry this age rather than a sign it is dying. Old mulberries tend to collapse and lie along the ground, then root again where the fallen wood touches soil and send up fresh growth, the same trick that keeps several of London's ancient mulberries alive. A wooden fence now protects the recumbent tree from being trampled, not from being seen.",
+  "question_context": "The tree stands on The Croft, an open common in the village, kept for exactly this purpose by a registered charity, the Groton Winthrop Mulberry Trust, whose stated aim is to preserve the land as open space for the village and to protect the tree. One specialist mulberry register describes the site differently, as a private garden; that reading conflicts with the charity's own public purpose and with older local descriptions of the Croft as common land, so visit expecting open ground with a protective fence around the tree itself rather than a gate to the property.\n\nThere is no railway station in Groton. Sudbury, about three miles away, is the nearest, and no direct bus route to the village has been confirmed, which makes a car the practical way to reach it. There is no ticket, no set opening hours and nothing else built up around the tree: no shop, no interpretation board beyond what marks the site. People come for the mulberry and the Winthrop story attached to it, and Groton itself stays exactly the quiet farming village it has always been.",
+  "faq": [
+    {
+      "q": "How old is the Groton Winthrop Mulberry?",
+      "a": "Roughly 475 years, based on a planting date of about 1550. That is a documented estimate rather than a measured figure; no girth or ring count has been published for this tree."
+    },
+    {
+      "q": "Why is a Suffolk tree connected to American history?",
+      "a": "Adam Winthrop, who planted it, was the grandfather of John Winthrop, who led the Puritan fleet to Massachusetts Bay in 1630 and became the colony's first governor. The Winthrop family in America is said to keep in touch with the village to this day."
+    },
+    {
+      "q": "Is the tree still alive if the trunk has collapsed?",
+      "a": "Yes. Old mulberries commonly survive by collapsing and lying along the ground, then rooting again where the fallen wood touches soil and sending up new growth. It is a known, stable state rather than a sign of decline."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Free, on open common land called The Croft, with no ticket or fixed hours. There is no railway station in the village; Sudbury, about three miles off, is the nearest, and a car is the practical way to reach it."
+    }
+  ],
+  "oldest_tree_id": "wtm_001",
+  "trees": [
+    {
+      "id": "wtm_001",
+      "name": "The Groton Winthrop Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "roughly 475 years",
+      "age_min": 400,
+      "age_max": 480,
+      "girth_cm": null,
+      "location": {
+        "address": "The Croft, Groton, Suffolk CO10 5EE",
+        "latitude": 52.041775,
+        "longitude": 0.855033,
+        "neighbourhood": "Groton, near Sudbury"
+      },
+      "story": "A black mulberry in a Suffolk village helped put the first governor on Massachusetts Bay. Adam Winthrop planted it around 1550 at Groton Manor, granted to him after Henry VIII dissolved the monasteries; his grandson John Winthrop grew up on this ground before leading the Puritan fleet across the Atlantic in 1630 and governing the colony he founded. The Winthrop family in America is said to keep in touch with the village still, which makes this tree a minor pilgrimage point for anyone tracing that history back to its start.\n\nThe trunk gave up standing decades ago. Mulberries this old rarely die when they fall; the trunk collapses and lies along the ground while the fallen wood roots again and sends up fresh growth, the same trick that keeps London's ancient mulberries alive well past when an oak would be finished. A wooden fence now protects the recumbent tree from being trampled rather than climbed. Sources disagree gently on how open the site is: the tree's own charitable trust exists specifically to keep the surrounding common land open for the village's enjoyment, though one specialist register calls it a private garden. Treat it as common ground with a fence around the tree itself rather than a garden gate. No girth has ever been published; the planting date is the only number anyone recorded, putting the tree at roughly 475 years old.",
+      "verified_sources": [
+        "https://www.moruslondinium.org/map/825-Groton-Winthrop",
+        "https://wikishire.co.uk/wiki/Groton",
+        "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1032579"
+      ],
+      "access": "Free, on The Croft, an open common/meadow in the village managed since it was set up as a charity by the Groton Winthrop Mulberry Trust, whose registered charitable purpose is 'to preserve the land known as The Croft as an open space for the enjoyment of the residents of Groton and adjoining parishes, and to maintain and protect the historic Mulberry tree.' No gate, ticket or booking found in any source; the tree stands behind a protective wooden fence but the Croft itself reads as open common land, not a private garden (one specialist mulberry-register page describes it as 'a private garden' but this conflicts with the charity's own stated public-benefit purpose and the older local-history description of the Croft as a village common, so treat the tree itself as fenced-off-from-touching rather than the site being closed to visitors).",
+      "transport": "No station in Groton; nearest is Sudbury (about 3 miles/5km away, roughly 10 minutes by car, no direct bus route confirmed). Not within a 30-minute public-transport day-trip boundary of any city on our list as far as could be checked in this pass; likely reached by car only.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

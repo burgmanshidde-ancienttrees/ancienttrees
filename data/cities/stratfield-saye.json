@@ -1,0 +1,63 @@
+{
+  "city": "Stratfield Saye",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Stratfield Saye is a private Hampshire estate near Reading, home to the Dukes of Wellington since the 1st Duke bought it in 1817 after Waterloo. Its grounds open only on a few weeks each year, and the reason to time a visit around that window is a single giant sequoia, planted within a few years of the species reaching Britain and named for the Duke himself. Nearby, under an oak of its own, lies the grave of Copenhagen, the horse Wellington rode at Waterloo.",
+  "meta_description": "Wellington's Wellingtonia at Stratfield Saye is one of Britain's first giant sequoias, planted in the Duke's memory around 1854 to 1857.",
+  "question_meta": "Stratfield Saye's oldest tree is Wellington's Wellingtonia, a giant sequoia planted for the Duke in the 1850s, among Britain's first of the species.",
+  "question_answer": "The oldest tree at Stratfield Saye is Wellington's Wellingtonia, a giant sequoia planted in memory of the 1st Duke of Wellington only a few years after the species reached Britain from California in 1853. Sources differ on the exact date, either 1854 by the 2nd Duke or 1857 by his Duchess, which puts it at roughly 170 years old either way.\n\nWellington bought the Stratfield Saye estate in 1817, after Waterloo, and lived there until his death in 1852. The species itself came to be called Wellingtonia in Britain in his honour, so this is one of the first trees in the country to carry the name of the man it was already named for. It was recognised as one of 50 Great British Trees, a list the Tree Council drew up in 2002 to mark the Golden Jubilee, covering remarkable trees the length of the country.\n\nDo not confuse it with the Wellingtonia Avenue near Camberley, about ten miles off, a different memorial to the same Duke made of more than a hundred trees planted along a mile of road in 1865. Stratfield Saye's tree is a single specimen, planted for a single reason, standing on the grounds of the house the Duke actually lived in.",
+  "question_context": "The tree stands in the grounds of Stratfield Saye House, a private estate that opens to visitors only on a limited seasonal calendar, recently a week in early April and most of August, 10am to 5pm. A gardens-only ticket runs around five pounds; seeing the house itself needs a separate, timed tour booked in advance. This is paid, scheduled access rather than an open gate, so plan the visit around the estate's published dates rather than turning up on a whim.\n\nThere is no railway station at Stratfield Saye itself. The nearest are Mortimer and Bramley, both a few miles off, or Reading, about eight miles and twenty to twenty-five minutes by car, with no direct public transport route confirmed for the final stretch. A car is the practical way in.\n\nWhile on the grounds, look for the grave of Copenhagen nearby, Wellington's own warhorse at Waterloo, buried beneath an oak of its own: a second tree worth a detour of a few minutes on the same visit, though the Wellingtonia is the reason to come.",
+  "faq": [
+    {
+      "q": "How old is Wellington's Wellingtonia?",
+      "a": "Roughly 170 years. Sources give either 1854, planted by the 2nd Duke, or 1857, planted by his Duchess in memory of the 1st Duke and the Battle of Waterloo; either way it is among the first giant sequoias planted in Britain."
+    },
+    {
+      "q": "Is this the same as the Wellingtonia Avenue near Camberley?",
+      "a": "No. That is a separate memorial about ten miles away, a mile-long avenue of over a hundred trees planted in 1865. Stratfield Saye's tree is a single specimen on the estate the Duke actually lived on."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No, it is paid and seasonal. Stratfield Saye's grounds open on a limited calendar, recently a week in April and most of August, with a gardens ticket around five pounds; the house needs a separate timed tour."
+    },
+    {
+      "q": "How do I get there without a car?",
+      "a": "It is difficult. There is no station at Stratfield Saye itself; the nearest are Mortimer, Bramley or Reading, none within an easy walk, and no direct public transport route to the estate has been confirmed."
+    }
+  ],
+  "oldest_tree_id": "wsw_001",
+  "trees": [
+    {
+      "id": "wsw_001",
+      "name": "Wellington's Wellingtonia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 170 years",
+      "age_min": 165,
+      "age_max": 175,
+      "girth_cm": null,
+      "location": {
+        "address": "Stratfield Saye House, Stratfield Saye, Hampshire RG7 2BZ",
+        "latitude": 51.35118,
+        "longitude": -0.994,
+        "neighbourhood": "Stratfield Saye estate grounds"
+      },
+      "story": "Only four years after the giant sequoia reached Britain from California, one of the country's first plantings went into the ground at the Duke of Wellington's own estate. Wellington bought Stratfield Saye in 1817 after Waterloo and lived there until his death in 1852; the species itself came to be called Wellingtonia in Britain in his honour, and this specimen was planted in his memory, by either the 2nd Duke in 1854 or the Duchess in 1857, sources differ on which. Either way it stands roughly 170 years old now, one of the country's original Wellingtonias rather than a later addition once the fashion for the tree had caught on.\n\nIt was named one of 50 Great British Trees chosen by the Tree Council for the Golden Jubilee in 2002, a shortlist covering the whole country. Do not confuse it with the Wellingtonia Avenue ten miles away near Camberley, a different memorial to the same Duke and a mile-long planting of over a hundred trees rather than one. Stratfield Saye's grounds open on a limited seasonal calendar, roughly a week in April and most of August, ticketed at around five pounds; the house itself needs a separate, timed tour. The same estate is said to hold Copenhagen's grave nearby, Wellington's own Waterloo warhorse, buried beneath an oak of its own.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/List_of_Great_British_Trees",
+        "https://en.wikipedia.org/wiki/Wellingtonia_Avenue",
+        "https://en.wikipedia.org/wiki/Sequoiadendron_giganteum"
+      ],
+      "access": "Paid entry: grounds/gardens open on limited seasonal dates (recent pattern: a week in early April and most of August), 10am-5pm, gardens-only ticket around £5; the house itself needs a separately booked, timed tour. Privately owned by the Wellington estate (Stratfield Saye House), not open year-round.",
+      "transport": "No station at Stratfield Saye itself; nearest is Mortimer or Bramley (both a few miles off) or Reading (roughly 8 miles/20-25 min by car), with no direct public transport route confirmed in this pass. Likely a car/taxi day trip from Reading or Basingstoke rather than walkable from a station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "paid_entry": true
+    }
+  ]
+}
