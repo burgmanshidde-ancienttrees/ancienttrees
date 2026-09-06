@@ -5497,6 +5497,13 @@
     "note": "all 4 candidates already handled by earlier passes (2 live published, 2 correctly held as leads on count/fame); strengthened Bagrenas linden sourcing, no new trees, nothing wasted",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Fort Lauderdale (scout)",
+    "kind": "scout",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Scouted the Florida Champion Tree Program for Fort Lauderdale per scout_next.py --target; no coordinates, no API, no licence statement, same shape as every other US state champion-tree program scouted so far. Verdict empty, recorded in data/register-scouting.json so the next run does not re-scout blind. Session work, tokens not logged by an agent report."
    }
   ]
  },

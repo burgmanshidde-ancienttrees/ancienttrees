@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Fort Lauderdale",
+      "country": "United States",
+      "status": "empty",
+      "note": "SCOUTED 2026-09-06 (night run), on scout_next.py --target naming Fort Lauderdale (#64) as no supply and no verdict. The Florida Champion Tree Program (Florida Forest Service / FDACS, fdacs.gov/Forest-Wildfire/Our-Forests/Florida-Champion-Trees) is the only statewide semantic register found: it names individual champion specimens by species, but the state's own page offers no downloadable list, no API and no coordinates, only a reference to a public-land map image and to the American Forests national register (already ruled empty for this project on 2026-08-20, see 'National Champion Tree Program' entry: PDF-only, no API, skews to remote/private specimens). No county-level breakdown for Broward County was found, no licence statement anywhere, and even a state contact would likely hand back the same coordinate-free shape seen in every other US state champion-tree program scouted so far (Idaho, Arkansas, Kansas City/Missouri). Route forward for Fort Lauderdale is from-zero web research on its own named parks/heritage sites (Wikidata shows 1 lead within 15 km) if Hidde adds it to the from-zero list, or a reader submission; no register shortcut exists."
+    },
+    {
       "place": "Little Rock",
       "country": "United States",
       "status": "stalled",
