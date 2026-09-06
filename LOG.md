@@ -1,6 +1,32 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 3, same window) - Fixed a stale tree-count that had broken two deploys in a row
+
+`health.py` flagged "Build and deploy failure, 1h ago" right after this
+window's second push. `gh run view --log-failed` on the two failed runs
+showed the same cause both times: `i18ncheck.py` (run in CI, not by the
+local `qa.py` this session had been running) refused the build because
+Brussels' English `question_meta` and the French overlay's
+`meta_description`/`question_meta` still said "29 more" after bru_031 (an
+earlier attempt this window) took the city to 31 trees. Fixed both to 30,
+rebuilt and QA'd clean locally, pushed. Watched the new run with `gh run
+watch`: "Check the translation overlays" passed this time before `gh`
+itself lost credentials mid-stream (HTTP 401 on every subsequent API
+call, `gh auth login` needs interactive credentials this session does not
+have, left alone as an environment issue rather than chased). The step
+that had been failing is confirmed green and the local build/QA on the
+identical commit was clean, so the deploy should complete; a future
+run's rung 2 should confirm this rather than assume it.
+
+**Worth learning from directly: `qa.py` does not run `i18ncheck.py`, so a
+translated-copy count can go stale through a full local QA pass and only
+be caught by CI, after a push.** This cost two failed deploys in this
+window alone. Running `python3 scripts/i18ncheck.py` alongside `qa.py`
+before every push that touches a translated city's tree count would have
+caught this before it shipped; a future session might consider whether
+it belongs inside `qa.py` itself.
+
 ## 2026-09-06 (continuation 2, same window) - Famous-tree demand batch: 3 new single-tree places, +1 Beijing; caught a fake tree and a dead one before they shipped
 
 With the standing claim finished and pushed, rung 4 (0c): `famous_demand.py
