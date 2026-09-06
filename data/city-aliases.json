@@ -51,6 +51,18 @@
     "ieper": "ypres"
   },
   "search_names": {
+    "aachen": [
+      "Aken",
+      "Aix-la-Chapelle",
+      "Aquisgrán",
+      "Aquisgrana",
+      "Aquisgrà",
+      "Akwizgran",
+      "Cáchy",
+      "Achenas",
+      "Āhene",
+      "Akisgran"
+    ],
     "aarhus": [
       "Århus",
       "Orhusas",
@@ -650,6 +662,9 @@
       "Kopenhaga",
       "Kodaň",
       "Koppenhága"
+    ],
+    "coppenbrugge": [
+      "Pons Cobbanus"
     ],
     "cordoba": [
       "Cordoue",
@@ -3070,6 +3085,7 @@
     ]
   },
   "wikipedia_titles": {
+    "aachen": "Aachen",
     "aarhus": "Aarhus",
     "aberford": "Aberford",
     "aga": "Aga, Niigata",
@@ -3113,6 +3129,7 @@
     "bojnice": "Bojnice",
     "bologna": "Bologna",
     "bordeaux": "Bordeaux",
+    "borrowdale": "Borrowdale",
     "boston": "Boston",
     "braga": "Braga",
     "bratislava": "Bratislava",
@@ -3148,6 +3165,7 @@
     "concoret": "Concoret",
     "coos-bay": "Coos Bay",
     "copenhagen": "Copenhagen",
+    "coppenbrugge": "Coppenbrügge",
     "cordoba": "Córdoba, Spain",
     "cork": "Cork (city)",
     "cremines": "Crémines",
@@ -3187,6 +3205,7 @@
     "fujikawaguchiko": "Fujikawaguchiko",
     "fukuoka": "Fukuoka",
     "fulufjallet": "Fulufjället National Park",
+    "galenbeck": "Galenbeck",
     "gdansk": "Gdańsk",
     "geneva": "Geneva",
     "genoa": "Genoa",
@@ -3403,6 +3422,7 @@
     "savannah": "Savannah, Georgia",
     "scheessel": "Scheeßel",
     "schenklengsfeld": "Schenklengsfeld",
+    "schlagsdorf": "Schlagsdorf",
     "seattle": "Seattle",
     "segovia": "Segovia",
     "seoul": "Seoul",
@@ -3500,6 +3520,7 @@
     "aberford": "Aberford",
     "aubers": "Aubers",
     "bad-blumau": "Bad Blumau",
+    "borrowdale": "Borrowdale",
     "breda": "Breda",
     "chadds-ford": "Chadds Ford, Pennsylvania",
     "cremines": "Crémines",
@@ -3508,6 +3529,7 @@
     "doornenburg": "Doornenburg",
     "effeltrich": "Effeltrich",
     "estry": "Estry",
+    "galenbeck": "Galenbeck",
     "gjerrild": "Gjerrild",
     "gliniak": "Gliniak",
     "granit": "Granit, Bulgaria",
@@ -3532,6 +3554,7 @@
     "sambeek": "Sambeek",
     "scheessel": "Scheeßel",
     "schenklengsfeld": "Schenklengsfeld",
+    "schlagsdorf": "Schlagsdorf",
     "shinkamigoto": "Shin-Kamigotō",
     "shokawa": "Shokawa",
     "simsbury": "Simsbury, Connecticut",
@@ -3554,6 +3577,7 @@
     "cooper-creek": "no article within 40 km, tried Cooper Creek (Cooper Creek, 344 km away); Cooper Creek, Australia; search: Cooper Creek; search: Cooper; search: Division of Cooper",
     "debina": "no article within 40 km, tried Dębina (Dębina, no coordinates, disambiguation page); Dębina, Poland; search: Poznań Dębina railway station; search: Hel, Poland; search: Sopot",
     "degsne": "no reliable article: Wikipedia matched the forest-stand name to the nearby city of Alytus (within 40km, wrong place), caught and reverted 2026-09-05 rather than shipped as a false alias",
+    "erdmannrode": "no article within 40 km, tried Erdmannrode; Erdmannrode, Germany",
     "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii",
     "hino": "no article within 40 km, tried Hino (Hino, no coordinates, disambiguation page); Hino, Japan; search: Hino, Tokyo; search: Hino Ranger; search: Hino Dutro",
     "hinode": "no article within 40 km, tried Hinode (Hinode, no coordinates, disambiguation page); Hinode, Japan; search: Eisuke Hinode; search: Tokyo; search: Hinode Bridge",
