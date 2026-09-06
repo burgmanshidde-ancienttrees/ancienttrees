@@ -50,8 +50,8 @@
       "at": "2026-09-06T08:48:35+00:00"
     },
     "2026-09-06": {
-      "note": "Both WARNs already fixed on disk: canberra/gumeli/san-quirico-d-orcia FAQs no longer explain the publish threshold (qa.py's BUSINESS_RULE_PHRASES already bans the phrase, qa.py passes clean), and Contribute.swift line 89 already reads 'Nobody else sees who sent this' rather than the contradicting 'Nobody sees'. No action needed this pass, just confirming and closing the loop.",
-      "at": "2026-09-06T15:17:30+00:00"
+      "note": "Both 2026-09-06 WARNs found already fixed: the three single-tree FAQ answers (canberra/gumeli/san-quirico-d-orcia) no longer explain the four-tree-floor rule and qa.py's BUSINESS_RULE_PHRASES already lists the phrase; the Contribute.swift anonymity-copy WARN is explicitly a session's to fix (app visual-taste rule), left as is. The rung-2 iOS failure (testTappingAPinOpensItsTree) has no ios/ code change between the last green run and the failing one, so it reads as a flake rather than a regression; the mytrees-who tap-target fix from an earlier attempt in this window is already pushed and its CI run is in progress.",
+      "at": "2026-09-06T21:16:06+00:00"
     }
   }
 }

@@ -1,6 +1,55 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 15) - Cleared two stale claims, answered the 2026-09-06 BLOCKER, no new trees
+
+Resumed into a window where the previous attempt had stopped early with
+most of its time unspent. `passcheck.py --claims` showed two standing
+verify claims, `_famous-japan` and `_famous-poland`, both by night-run.
+Their matching `data/research/famous{japan,poland}-verified.json` files
+were on disk but each held an empty list, so the verify work never
+actually produced anything before that attempt ended; the Poland lead
+file's own note confirms it, still reading only the generic
+`famous_trees.py` boilerplate with no pass ever recorded against it.
+Released both claims and deleted the two empty stub files rather than
+resume research on the last ~35 minutes of a 120 minute window.
+`leads.py --ready` was 0, so no write pass was waiting either.
+
+Ran `health.py`: submissions/sightings inbox empty, but rung 2 flagged
+`ios.yml`'s newest scheduled run (34052966819, 18:50 UTC) as a failure.
+Read its log. Two distinct findings in that one run:
+
+1. **The `people` screen's `mytrees-who` button measured 62x14, under
+   Apple's 44x44 floor**, on both iOS 18 and 18.6. Already fixed and
+   pushed by an earlier attempt in this same window (commit `536afdf7`,
+   `.contain` instead of a bare accessibilityIdentifier); its own CI run
+   was still in progress when I looked (`34060000566`).
+2. **`testTappingAPinOpensItsTree` failed**: "sweeping the visible map
+   opened no tree at all". Checked whether this is a regression before
+   treating it as one: no commit touched `ios/` between the last green
+   scheduled run (09:14 UTC, same day) and this failing one, so the exact
+   same map/pin code passed once and failed once with nothing in between.
+   This project has hit this exact symptom before (LOG.md 2026-08-29/30,
+   the sign-in-sheet-steals-the-sweep bug) and fixed it properly at the
+   time; nothing here points at that fix having regressed, and I have no
+   simulator to reproduce with from this sandbox. Recorded as a probable
+   flake rather than guessed at with a blind code change. Worth watching:
+   if the next scheduled run fails the same test again, that upgrades it
+   from flake to regression.
+
+REVIEW.md's newest entry (2026-09-06, 0 BLOCKER, 2 WARN) had both WARNs
+already resolved by earlier work: the three single-tree FAQ answers
+(`canberra`, `gumeli`, `san-quirico-d-orcia.json`) no longer explain the
+four-tree-floor rule to the reader, and `qa.py`'s `BUSINESS_RULE_PHRASES`
+already lists the phrase. The Contribute.swift anonymity-copy WARN is
+explicitly a session's fix per the review itself (app visual-taste rule),
+so left alone. Recorded the answer via `health.py --answer`.
+
+No trees shipped this window. FOR HIDDE: nothing blocking, but worth a
+glance next time you're at a keyboard: `testTappingAPinOpensItsTree`'s
+next scheduled result decides whether it was a one-off or something to
+dig into properly with a simulator.
+
 ## 2026-09-06 (continuation 14) - Finished continuation 13's two verify passes: 11 trees, 4 into existing Dutch cities, 7 new Czech single-tree places
 
 Picked up per this prompt's own priority: no standing claims were unfinished
