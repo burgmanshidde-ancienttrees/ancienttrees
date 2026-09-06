@@ -2,6 +2,30 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 (continuation 2) - 3 new single-tree places from the famous-demand list; Beijing +1; a fake tree and a dead tree caught before shipping
+
+Canberra, Australia: 1 tree (can_001, The Lone Pine, Australian War
+Memorial), flagged, 0 photos. New place under the single-tree-destination
+exception.
+
+Gumeli, Turkey: 1 tree (gum_001, The Gumeli Yew), flagged (disputed age,
+1,950-2,000 years vs a popular 4,112 year claim), 0 photos. New place,
+genuinely remote (no road, forest hike required).
+
+San Quirico d'Orcia, Italy: 1 tree (sqo_001, The Cypresses of San Quirico
+d'Orcia), flagged (no age documented), 0 photos. New place, ensemble
+exception (compact, famous for being exactly that, one obvious vantage).
+
+Beijing: 1 tree added (bjs_007, The Guilty Scholar Tree), now 7 trees.
+Flagged. Third-generation tree on the historic 1644 site; no lineage
+claimed.
+
+Blocked, not shipped: Sprookjesboom (Netherlands) is a wholly artificial
+animatronic structure at Efteling, not a living tree. Cedre Gouraud
+(Morocco) has been dead since 2003. Arbol de la Noche Triste (Mexico)
+resolved as the same site as our own already-published mex_007, whose
+story already documents the original as a ruin.
+
 ## 2026-09-06 - Brussels bru_031 (Grand Sablon Ailanthus) committed; Higashiomi grows to 3 trees; Tokyo grows to 17
 
 Brussels: 1 tree added (bru_031, The Tree of Heaven of the Grand Sablon),

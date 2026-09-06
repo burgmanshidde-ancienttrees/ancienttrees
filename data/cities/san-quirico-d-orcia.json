@@ -1,0 +1,63 @@
+{
+  "city": "San Quirico d'Orcia",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "San Quirico d'Orcia maps one tree, or rather one small stand of them: a dense copse of cypresses beside the Via Cassia that has become one of the most photographed roadside sights in Tuscany. No plaque names it and most of the people who stop for the photograph never learn where they are. It carries an official Italian monumental-tree listing, a fame nobody planned for and a still-undocumented age.",
+  "meta_description": "The Cypresses of San Quirico d'Orcia, one of Tuscany's most photographed roadside sights: exact location, access, and what is actually known about it.",
+  "question_answer": "San Quirico d'Orcia's mapped tree is its own cypress copse, a dense stand of Mediterranean cypress on the SS2 at kilometre 189, one of the most photographed roadside sights in the Val d'Orcia. Its age has never been documented; the tallest specimen reaches 15 metres.",
+  "question_meta": "San Quirico d'Orcia's one mapped tree is a famous roadside cypress copse on the SS2, undocumented in age but Italy's own monumental-tree register.",
+  "question_context": "The copse sits on the old Via Cassia, the SS2 between Siena and Rome, at a curve that gives passing drivers a clean view against the Val d'Orcia's bare clay hills, which is most of why it became one of the most reproduced images of rural Tuscany, appearing in countless calendars and postcards without most people ever learning its name or location. A second, related grove, arranged in two facing semicircles, stands about 200 metres further along the same road; together the two hold Italy's own monumental-tree register listing, one of 2,407 such trees nationwide and one of 55 in Tuscany. The tallest specimen reaches about 15 metres, with an average trunk girth of 64 centimetres. No source gives a planting date or a dendrochronology study for either grove, so despite its fame, the copse's age is honestly unknown rather than estimated. It grows on the land of a working farm, Podere Casaltina, but is not fenced off, and the short dirt track up from the roadside pullout is walked freely by the visitors who stop there.",
+  "hero_tree_id": "sqo_001",
+  "oldest_tree_id": "sqo_001",
+  "faq": [
+    {
+      "q": "How old are the cypresses?",
+      "a": "Nobody knows. No planting record or dendrochronology study has been done on this stand, so despite its fame, the age is left honestly undocumented rather than guessed."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. There is a roadside pullout on the SS2 at kilometre 189, and a short dirt track leads up to the smaller circular grove on foot. No ticket or gate."
+    },
+    {
+      "q": "Is this on private land?",
+      "a": "The copse stands on a working farm, Podere Casaltina, but it is not fenced off and is one of the most visited roadside stops in the Val d'Orcia."
+    },
+    {
+      "q": "Why does this place map only one entry?",
+      "a": "This site publishes a place below the usual four tree floor only when a single tree, or a single compact ensemble like this one, is itself the destination people travel for."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sqo_001",
+      "name": "The Cypresses of San Quirico d'Orcia",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 110,
+      "location": {
+        "address": "Podere Casaltina, Via Cassia (SS2) km 189, locality I Triboli, San Quirico d'Orcia, Siena Province, Tuscany, Italy",
+        "latitude": 43.0627,
+        "longitude": 11.5589,
+        "neighbourhood": "I Triboli, San Quirico d'Orcia"
+      },
+      "story": "A tight, dense copse of cypresses on a Tuscan hillside has become one of the most photographed sights in Italy, and almost nobody who photographs it knows its name. Drivers on the SS2, the old Via Cassia between Siena and Rome, slow for the pullout at kilometre 189 because the copse sits exactly where the road curves past it, framed against the Val d'Orcia's bare clay hills, and stop to take the picture everyone else has already taken. A second grove, arranged in two facing semicircles, stands 200 metres further on; together the two hold a listing on Italy's own monumental-tree register, one of 2,407 trees the state protects nationwide and one of 55 in Tuscany.\n\nThe tallest reaches 15 metres, the average trunk a modest 64 centimetres round. Nobody has dated them. Cypresses this size in this region are usually reckoned in the low hundreds of years by growth rate alone, but no dendrochronology or planting record exists for this particular stand, so the honest answer is that its age is simply unknown.\n\nThe land underneath is a working farm, Podere Casaltina, and the trees are not fenced off from it. Nothing stops anyone walking the short dirt track up from the road for a closer look, which is most of what a visit here actually is.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Cipressi_di_San_Quirico_d'Orcia",
+        "https://www.lorenzotaccioli.it/bosco-cipressi-di-san-quirico-dorcia/",
+        "https://collisiena.it/borghi/san-quirico-d-orcia/cipressi-di-san-quirico-d-orcia/"
+      ],
+      "access": "Free, no ticket. Viewable and photographable from a roadside pullout/small parking area directly on the Via Cassia (SS2) at km 189, or reachable on foot in about 5 minutes up the adjoining dirt track to the smaller circular grove ('i Cipressini'). No gate or private-land restriction reported at the site itself despite standing on farmland (Podere Casaltina); it is one of Tuscany's most visited and photographed roadside spots, open year-round.",
+      "transport": "No public transport; the site sits on the SS2/Via Cassia about 6 km northeast of San Quirico d'Orcia's town centre, a short drive or roadside stop",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
