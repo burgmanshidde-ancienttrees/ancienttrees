@@ -91,7 +91,8 @@
     "https://commons.wikimedia.org/wiki/File:Ahuehuete-noche-triste.jpg",
     "https://commons.wikimedia.org/wiki/File:Appletons%27_Cort%C3%A9s_Hern%C3%A1n_-_noche-triste_tree.jpg"
    ],
-   "status": "lead"
+   "status": "resolved",
+   "resolved_note": "RESOLVED 2026-09-06 (demand-batch check, no verify pass needed): this is almost certainly the same site as our own mex_007 (Ahuehuete de Tacuba), published in data/cities/mexico-city.json. Coordinates are about 0.9km apart (lead 19.455503/-99.179184 vs mex_007 19.45763/-99.18879), well within the geocoding slop typical for a historical-event Commons category rather than a precise tree pin. mex_007's own story explains why: the real Arbol de la Noche Triste (the ahuehuete in Popotla under which Cortes is said to have wept in 1520) is a RUIN, confirmed dead by the city government's own venue page (quoted in our story), and mex_007 is a different LIVING ahuehuete nearby that our story deliberately contrasts with it. So this lead names a dead tree we have already researched and correctly did not publish as a collectible entry (never-cuttable rule); the living neighbour is already live under its own name. Do not re-dispatch."
   },
   {
    "name": "Árbol de la Noche Victoriosa",
