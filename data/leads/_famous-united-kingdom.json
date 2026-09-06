@@ -56,9 +56,12 @@
         "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(2),_and_priory_ruins_-_geograph.org.uk_-_2359746.jpg",
         "https://commons.wikimedia.org/wiki/File:Ankerwycke,_the_ancient_yew_(3)_-_a_closer_look_-_geograph.org.uk_-_2359824.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "fuk_001",
+      "verified_file": "data/research/famousunitedkingdom-verified.json",
+      "note": "Already published as ank_001 under Runnymede (data/cities/runnymede.json), same coordinates. Caught by preflight.py duplicate-pin check before a second copy shipped as its own place."
     },
     {
       "name": "Borrowdale Yews",
@@ -69,9 +72,11 @@
         "https://commons.wikimedia.org/wiki/File:Borrowdale_Yews_-_geograph.org.uk_-_3492327.jpg",
         "https://commons.wikimedia.org/wiki/File:The_Borrowdale_Yews_-_The_English_Lakes_-_A._Heaton_Cooper.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "bwd_001",
+      "verified_file": "data/research/famousunitedkingdom-verified.json"
     },
     {
       "name": "Camberley Sequoiadendron Avenue",
@@ -236,9 +241,10 @@
         "https://commons.wikimedia.org/wiki/File:Ormiston_Yew_-_geograph.org.uk_-_72512.jpg",
         "https://commons.wikimedia.org/wiki/File:Ormiston_Yew_-_geograph.org.uk_-_905549.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "why": "Verified 2026-09-06: alive, roughly 1,000 years old (Wikipedia's own history page gives a partial ring count of 750 years and a first written mention in 1474; scotlands-yew-trees.org gives a 592cm girth and says it 'could well be around a thousand years old'). John Knox reportedly preached under it in the 1540s. BLOCKED rather than shipped: the East Lothian Courier reports the tree was withdrawn from Scotland's Tree of the Year by its own landowner, who did not want attention drawn to it because of health problems more visitors seeking it out could worsen, and the Woodland Trust found the landowner's reasons compelling and complied. That is a deliberate decision by the people who know the tree not to encourage more visitors, the same category hard rule 10 protects even though scotlands-yew-trees.org itself still lists the site as public access. Do not resurrect this one without new evidence the health concern has passed."
     },
     {
       "name": "Tree of the Year (Scotland)",
@@ -285,9 +291,10 @@
         "https://commons.wikimedia.org/wiki/File:Ancient_yew_at_Llangernyw_church_-_geograph.org.uk_-_2032623.jpg",
         "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree_at_Llangernyw.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Already published as lgy_001 (data/cities/llangernyw.json, published earlier 2026-09-06 by an earlier run in the famous-uk-batch-a line). A second verify pass and a session both missed this and nearly shipped a duplicate under a different id (fuk_002/lgn_001); caught before commit when preflight/passcheck cross-checks were run. The leads file itself never had this marked done, which is the root cause: update leads status the moment a lead ships."
     },
     {
       "name": "Lone Tree, Llyn Padarn",
@@ -310,6 +317,14 @@
         "https://commons.wikimedia.org/wiki/File:2016_Survival_at_the_cutting_edge_oak_UKW.jpg"
       ],
       "status": "lead"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Ormiston Yew",
+      "lat": 55.89788,
+      "lng": -2.9402,
+      "reason": "Landowner asked the Woodland Trust to withdraw it from Scotland's Tree of the Year specifically to avoid drawing more visitors, citing health concerns the extra footfall could worsen; the Trust agreed. A source deliberately discouraging attention, matching hard rule 10's spirit even though coordinates are technically public elsewhere."
     }
   ]
 }
