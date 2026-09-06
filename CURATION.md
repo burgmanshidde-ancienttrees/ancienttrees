@@ -2,6 +2,58 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 (continuation 5) - Borrowdale ships; two near-duplicates caught before shipping; Box Elder species page
+
+Picked up where an earlier attempt in this window stopped after 74 minutes
+with 46 unspent. Rung 1 (submissions, sightings inbox) was clear. Rung 2:
+health.py flagged the Data digest workflow as failed; `gh run view
+--log-failed` showed a plain git push race (commit succeeded, a concurrent
+push to main won, the retry loop in data-digest.yml has no `git pull
+--rebase` before its own push) rather than a code defect, and this is
+already logged FOR HIDDE (LOG.md, needs `workflows` scope this environment
+does not have). `leads.py --ready` had only 1 lead, too thin for a write
+batch, so claimed `_famous-united-kingdom` (26 leads, several well-known
+yews) for a verify pass instead.
+
+The verify pass returned 3 candidates and 1 correctly blocked (Ormiston
+Yew: alive and real, but its own landowner withdrew it from Scotland's
+Tree of the Year specifically to reduce visitor footfall on health
+grounds, and the Woodland Trust agreed; treated as a hard-rule-10-spirit
+case and left blocked). Of the 3, only Borrowdale Yews was genuinely new.
+**Ankerwycke Yew turned out to already be published as `ank_001` under
+Runnymede** (same coordinates to the metre), caught by
+`preflight.py`'s duplicate-pin check before the second copy (written
+under a colliding `fuk` id prefix, itself already taken by Fukuoka) was
+committed. **Llangernyw Yew was worse: already published as `lgy_001`
+under its own page from an earlier run earlier today**, and my Write call
+silently overwrote that file with a weaker rewrite (no photo-hunt notes,
+missing the 06:09 run's fuller verify_notes) before `git status` showed it
+as modified rather than new and the original was restored with `git
+checkout HEAD --`. Root cause in both cases: the leads file's own status
+field was never updated when those two shipped, so a fresh brief read them
+as still-open leads. Fixed `data/leads/_famous-united-kingdom.json` to
+mark all three (plus Ormiston) with accurate status and a note, so a
+future pass does not repeat either mistake. Worth a real fix later: the
+verify-pass brief and famous_map.py's "do we already map this" check
+should be cross-referencing the leads file's own status field, not relying
+on a run to notice a `git status` surprise.
+
+Borrowdale (Cumbria) shipped as a new single-tree place: the Borrowdale
+Yews, Wordsworth's "Fraternal Four", an ensemble of 3 surviving yews (of
+an original 4) on National Trust land above Seathwaite, one collectible
+point, largest tree dendro-dated to roughly 1,500 years. Flagged (age
+dispute, ensemble pin approximate), no photo yet (3 Commons candidates
+identified in the leads file, not judged against the Cadiz standard this
+pass). id prefix `bwd_001`.
+
+Also wrote the one species-page gap `pagegaps.py` had open, Box Elder (3
+trees: Chicago, Eindhoven, Setubal), a small enough job to do directly
+rather than dispatch, per the "each intro written from that subject's own
+trees" rule.
+
+Build (4658 pages), qa.py (7003 pages), preflight.py (454 cities, 0
+problems) and superlatives.py all clean.
+
 ## 2026-09-06 (continuation 4) - 5 new German single-tree places; Tilburg +8, Eindhoven +4
 
 Finished four standing claims left by an earlier attempt in this window that
