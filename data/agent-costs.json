@@ -5670,6 +5670,15 @@
         "note": "58 candidates fetched and viewed as pixels; 5 approved (hbg_005, brt_007, lux_003, lux_006, gnt_002), 2 held (licence/geotag risk), 51 rejected, most for wrong subject entirely (Stolpersteine, building facades, statues in the wrong city, cross-species register files). Groningen, Maastricht, Eindhoven, Brighton remain an honest gap. Redone after continuation 10 lost this same pass to a closed session.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "famousuk-czech-verified.json + _famous-slovakia-verified.json cleanup",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Both files carried blank ids and were reported by prepare.py as 20 trees awaiting a writer, but all 10+10 trees were already merged into data/cities (Teleci, Nedvedice, Jachymov, Tatobity, Kotel, Msecke Zehrovice, Bohunovice, Velke Opatovice, Horni Bradlo, Rimov for Czech; Hronsek, Trencianske Stankovce, Lipany, Drnava, Dubinne, Uzovska Panica, Zilina x3, Casta for Slovakia) by earlier runs today that forgot to delete the source files. Deleted both stale files, removed the 2 matching entries from data/leads/_famous-czech-republic.json, fixed the Czech Republic and Slovakia country page intros/meta_description which still quoted old city/tree counts (3 cities/32 trees and 5 places/11 trees against the real 13/42 and 13/21). Tokens not separately metered.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
