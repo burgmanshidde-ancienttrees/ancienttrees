@@ -609,6 +609,9 @@
       "E-Chicago",
       "Hikāko"
     ],
+    "cinovec": [
+      "Dubí"
+    ],
     "coimbra": [
       "Koimbra",
       "Conimbriga",
@@ -932,6 +935,9 @@
       "Freiburg",
       "Friborgh",
       "Friburgh"
+    ],
+    "frydlant": [
+      "Frýdlant v Čechách"
     ],
     "fujikawaguchiko": [
       "Fudzsikavagucsiko"
@@ -1339,6 +1345,9 @@
     "iwata": [
       "Ivata",
       "Iwata-chhī"
+    ],
+    "jihlava": [
+      "Iglavia"
     ],
     "kaga": [
       "Kaga-chhī"
@@ -3197,6 +3206,7 @@
     "chapel-hill-north-carolina": "Chapel Hill, North Carolina",
     "charleston": "Charleston, South Carolina",
     "chicago": "Chicago",
+    "cinovec": "Dubí",
     "coimbra": "Coimbra",
     "collm": "Wermsdorf",
     "cologne": "Cologne",
@@ -3245,6 +3255,7 @@
     "frankfurt": "Frankfurt",
     "freiburg": "Freiburg im Breisgau",
     "fribourg": "Fribourg",
+    "frydlant": "Frýdlant",
     "fujikawaguchiko": "Fujikawaguchiko",
     "fukuoka": "Fukuoka",
     "fulufjallet": "Fulufjället National Park",
@@ -3308,6 +3319,7 @@
     "iwaki": "Iwaki, Fukushima",
     "iwata": "Iwata, Shizuoka",
     "jachymov": "Jáchymov",
+    "jihlava": "Jihlava",
     "kaga": "Kaga, Ishikawa",
     "kagoshima": "Kagoshima",
     "kamakura": "Kamakura",
@@ -3364,6 +3376,7 @@
     "matera": "Matera",
     "matsumae": "Matsumae, Hokkaido",
     "maui": "Maui",
+    "mcely": "Mcely",
     "melbourne": "Melbourne",
     "menorca": "Menorca",
     "mexico-city": "Mexico City",
@@ -3609,6 +3622,7 @@
     "llangernyw": "Llangernyw",
     "lue": "Luë",
     "malsfeld": "Malsfeld",
+    "mcely": "Mcely",
     "miriam-vale": "Miriam Vale",
     "msecke-zehrovice": "Mšecké Žehrovice",
     "nedvedice": "Nedvědice",
@@ -3662,6 +3676,8 @@
     "jaegerspris-nordskov": "no article within 40 km, tried Jægerspris Nordskov; Jægerspris Nordskov, Denmark; search: List of individual trees",
     "kawago": "no article within 40 km, tried Kawago; Kawago, Japan; search: Nogizaka46",
     "kybarciai": "no article within 40 km, tried Kybarciai; Kybarciai, Lithuania",
+    "lazy-cheb": "no article within 40 km, tried Lazy (Lazy, no coordinates, disambiguation page); Lazy, Czech Republic; search: List of German names for places in the Czech Republic; search: Aquapalace Prague; search: Capital Cities (duo)",
+    "lukavice": "no article within 40 km, tried Lukavice (Lukavice, no coordinates, disambiguation page); Lukavice, Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic; search: Rychnov nad Kněžnou",
     "moffat": "no article within 40 km, tried Moffat (Moffat, no coordinates, disambiguation page); Moffat, United Kingdom; search: Steven Moffat; search: Glasgow; search: List of postcode districts in the United Kingdom",
     "nagai": "no article within 40 km, tried Nagai (Nagai, no coordinates, disambiguation page); Nagai, Japan; search: Hiroshi Nagai; search: Nagai; search: List of cities in Japan",
     "neba": "no article within 40 km, tried Neba (Neba, no coordinates, disambiguation page); Neba, Japan; search: Toyota, Aichi; search: New Japan Cup; search: List of villages in Japan",
@@ -3671,6 +3687,7 @@
     "ora": "no article within 40 km, tried Ora (Ora, no coordinates, disambiguation page); Ora, Japan; search: Rita Ora; search: Ora (Rita Ora album); search: Phoenix (Rita Ora album)",
     "pirangi": "no article within 40 km, tried Pirangi (Pirangi, 2225 km away); Pirangi, Brazil; search: Pirangi; search: São Paulo; search: French invasions of Brazil",
     "plauginiai-forest": "no article within 40 km, tried Plauginiai Forest; Plauginiai Forest, Lithuania",
+    "prosec-pod-jestedem": "no article within 40 km, tried Prosec pod Jestedem; Prosec pod Jestedem, Czech Republic; search: List of German names for places in the Czech Republic; search: List of municipalities in the Czech Republic; search: Surname inflection",
     "reinborn": "no article within 40 km, tried Reinborn; Reinborn, Germany; search: List of mountains and hills of the Taunus",
     "takahama": "no article within 40 km, tried Takahama (Takahama, no coordinates, disambiguation page); Takahama, Japan; search: Japan Air Lines Flight 123; search: Takahama, Aichi; search: Kyoshi Takahama",
     "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",
