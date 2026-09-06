@@ -1,0 +1,61 @@
+{
+  "city": "Jachymov",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Jachymov is a spa town in the Krusne Mountains, and a walk uphill from it leads to Popov, a German-speaking village whose people were expelled after the Second World War and whose houses were pulled down. One tree is still standing where the village was: an ash with its roots spread over the stone foundations of a vanished house, one of the largest ash trees in the country.",
+  "meta_description": "The Popov Ash stands where a vanished German-speaking village once stood near Jachymov, roots spread over a house's foundations. A 3-4km uphill walk.",
+  "question_meta": "Jachymov's oldest tree is the Popov Ash, standing in the ruins of the vanished village of Popov, about 200 years old.",
+  "question_answer": "The oldest tree near Jachymov is the Popov Ash, standing at the site of Popov, a village whose German-speaking residents were expelled after the Second World War and whose buildings came down soon after. Its roots run over the stone foundations of one of the houses, the closest thing left to a street plan. Sources give its age as approximately 200 years without showing the working, so treat it as a received figure. It measured 682 centimetres round in 2004 and 737 more recently, with a 24 metre crown spread, still putting on wood at over thirty metres tall.",
+  "question_context": "The tree spent decades unvisited after the village emptied and was rediscovered in the early 1990s by a dentist from Karlovy Vary. It was protected in 2003, and in 2002 more than 1,300 voters made it Czech Tree of the Year. Nobody has published a health assessment of it since 2004, a gap the town's own walking guide states plainly.\n\nGetting there is the point of the visit as much as the tree itself. A green-marked trail leaves Jachymov by the St Anne chapel and climbs three to four kilometres through forest toward Marianska, roughly forty-five minutes to an hour uphill, arriving at open ground where the village used to stand. There is no gate or ticket. Jachymov itself has rail and bus links; the town is the trailhead rather than the destination. Jachymov itself is better known for its radium spa baths and its Cold War-era uranium mining history, so a walk up to Popov also passes through a landscape shaped by two very different industries, spa tourism and extraction, on either side of the same forested hills.",
+  "faq": [
+    {
+      "q": "What is the Popov Ash?",
+      "a": "A European ash, one of the largest in the country at 737 centimetres round, growing at the site of Popov, a village emptied after the Second World War. Its roots spread over the stone foundations of a former house."
+    },
+    {
+      "q": "How do I get to the Popov Ash?",
+      "a": "A green-marked trail leaves Jachymov near the St Anne chapel and climbs three to four kilometres through forest toward Marianska, about 45 to 60 minutes uphill on foot. No gate, no ticket."
+    },
+    {
+      "q": "Is Popov village still there?",
+      "a": "No. Popov was a German-speaking settlement whose residents were expelled after the Second World War, and its houses were demolished. Only open ground and this ash tree remain, its roots spread over one house's foundations."
+    }
+  ],
+  "oldest_tree_id": "jac_001",
+  "trees": [
+    {
+      "id": "jac_001",
+      "name": "The Popov Ash",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "approximately 200 years",
+      "age_min": 180,
+      "age_max": 220,
+      "girth_cm": 737,
+      "location": {
+        "address": "Site of the vanished village of Popov, northwest of the Popov cross, near Jachymov",
+        "latitude": 50.33796,
+        "longitude": 12.91783,
+        "neighbourhood": "Popov (defunct settlement), Jachymov, Karlovy Vary District, Krusne Mountains"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Popovsk%C3%BD_jasan",
+        "https://www.mestojachymov.cz/volny-cas/kam-na-vylet/jachymovske-vychazky-a-vylety/vylet-na-popov-128cs.html"
+      ],
+      "access": "Free. Reached on foot via a marked green tourist trail from Jachymov town hall/St Anna chapel, through forest paths climbing toward Marianska; the tree stands in open ground at the site of the vanished village, no gate or ticket.",
+      "transport": "No public transport to the site itself; Jachymov town (with rail/bus links) is the trailhead, roughly 3-4 km / 45-60 min walk uphill.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Jachymov, Czech Republic"
+      },
+      "story": "The village this ash grew up in is gone. Popov was a German-speaking settlement in the Krusne Mountains until its people were expelled after the Second World War and the houses came down. The tree is still standing in the middle of it, roots spread over the stone foundations of one of them, which is the closest thing to a street plan the site has left.\n\nIt is one of the largest ash trees in the country. Somebody measured 682 centimetres round with a 24 metre crown spread in 2004, and 737 more recently, so it is still putting on wood at over thirty metres tall. Sources give the age as about 200 years and none of them shows the working, so read it as the received figure.\n\nIt spent decades unvisited and was found again in the early 1990s by a dentist from Karlovy Vary. Protection followed in 2003, and in 2002 more than 1,300 voters made it Czech Tree of the Year. Nobody has published a health assessment since 2004; the town's own walking guide says as much.\n\nGetting there is the walk. A green trail leaves Jachymov by the St Anne chapel and climbs through forest toward Marianska, three or four kilometres of uphill, and the tree stands in open ground where the village used to be.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

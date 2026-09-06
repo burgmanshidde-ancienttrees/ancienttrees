@@ -1,0 +1,61 @@
+{
+  "city": "Msecke Zehrovice",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Msecke Zehrovice is a village in Central Bohemia, and the beech that once stood as one of the country's most admired trees is dying: a wood-decay fungus is working through its trunk, the municipality has ruled out intervention, and a cloned sapling is already growing beside it as its replacement. Hurricane Herwart tore away most of its once-famous crown in 2017, and what remains is only half in leaf.",
+  "meta_description": "The Zehrovice Beech, once called the country's most beautiful, is dying of a wood-decay fungus. A cloned sapling already grows beside it. Free to see.",
+  "question_meta": "Msecke Zehrovice's notable tree is the Zehrovice Beech, a large beech now dying of a wood-decay fungus, with a clone growing beside it.",
+  "question_answer": "The notable tree at Msecke Zehrovice is a European beech standing below the road at a double bend on the village's north edge, once called the most beautiful beech in the country. It is dying: a wood-decay fungus is working through the trunk, there is no cure, and the municipality's position as of February 2025 is non-intervention, letting the tree stand as deadwood habitat until it falls. A sapling cloned from it is already growing a few metres away.",
+  "question_context": "The shape that earned its reputation is mostly gone. Its crown once spread around 35 metres, until Hurricane Herwart took much of it on 29 October 2017; photographs from May 2020 show only half of what remains coming into leaf. The trunk measures 526 centimetres round on a tree about 21 metres tall. Sources put its age between 350 and 450 years and disagree even on the name of the fungus killing it.\n\nThis is not a visit to a tree at its peak, and the page says so plainly: it is a visit to a large old beech in its last years, with its own replacement already rooted beside it. It stands beside the road on the village's north edge, near a double bend, publicly visible with no restriction, though our pin marks the bend rather than the exact trunk, so expect to look around. Msecke Zehrovice is served by regional bus; the tree is a short walk from the village.",
+  "faq": [
+    {
+      "q": "Is the Zehrovice Beech still alive?",
+      "a": "Yes, as of the municipality's February 2025 notice, though it is dying of a wood-decay fungus with no cure. The village has chosen not to intervene and will let it stand as deadwood habitat."
+    },
+    {
+      "q": "Why did it lose its shape?",
+      "a": "Hurricane Herwart tore away much of its roughly 35-metre crown on 29 October 2017. Photographs from May 2020 show only half of what remains coming into leaf."
+    },
+    {
+      "q": "Is there a replacement tree?",
+      "a": "Yes. A sapling cloned from the beech is already growing a few metres away, planted ahead of the original tree's expected death."
+    }
+  ],
+  "oldest_tree_id": "mze_001",
+  "trees": [
+    {
+      "id": "mze_001",
+      "name": "The Zehrovice Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "350 to 450 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 526,
+      "location": {
+        "address": "North of the village, below the road, near a double bend (severne od obce pod silnici u dvojite zatacky)",
+        "latitude": 50.18465,
+        "longitude": 13.91956,
+        "neighbourhood": "Msecke Zehrovice, Rakovnik District, Central Bohemia"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Buk_v_M%C5%A1eck%C3%BDch_%C5%BDehrovic%C3%ADch",
+        "https://www.msecke-zehrovice.cz/turista/buk-u-mseckych-zehrovic/"
+      ],
+      "access": "Free. Stands beside the road on the north edge of the village, near a double bend; publicly visible from the roadside, no restriction.",
+      "transport": "No public transport to the exact spot; Msecke Zehrovice is served by regional bus, tree is a short walk from the village.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Msecke Zehrovice, Czech Republic"
+      },
+      "story": "This beech is dying, and the village has decided not to fight it. A wood-decay fungus is working through the trunk, there is no cure, and the municipality's position as of February 2025 is non-intervention: the tree stays where it is, its death is treated as inevitable, and what is left will stand as deadwood habitat. It was still standing when that notice was written. A sapling cloned from it is already growing a few metres away.\n\nIt was called the most beautiful beech in the country once, and the shape that earned it is mostly gone. The crown used to spread around 35 metres. Hurricane Herwart took much of it on 29 October 2017, and photographs from May 2020 show only half of what remains coming into leaf. The trunk is 526 centimetres round, the tree about 21 metres tall. Sources put its age between 350 and 450 years and do not agree with each other; the fungus is named differently by different sources too.\n\nSo this is not a visit to a tree at its peak. It is a visit to a large old beech in its last years, standing below the road at the double bend north of the village, with its own replacement rooted beside it. Our pin marks the bend rather than the trunk, so expect to look.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "city": "Nedvedice",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Nedvedice is a small town below Pernstejn Castle in the Vysocina hills, and local belief holds that the castle prospers for as long as its yew does: when a branch broke in April 2005, the castle caught fire eleven days later. The yew is the oldest in Moravia, roughly 1,000 years old by the figure most repeated, though the published estimates actually range from 400 years to 2,000.",
+  "meta_description": "The Pernstejn Yew, Moravia's oldest, stands below Pernstejn Castle near Nedvedice. Local belief ties its health to the castle's fortune. Free to view.",
+  "question_meta": "Nedvedice's oldest tree is the Pernstejn Yew, Moravia's oldest yew, roughly 1,000 years old by the most repeated figure.",
+  "question_answer": "The oldest tree near Nedvedice is the Pernstejn Yew, standing on the north slope of the forest park below Pernstejn Castle. Popular coverage gives it as roughly 1,000 years old, but the range of published estimates runs from 400 years to 2,000, and nobody has settled it; take the round number as the figure people repeat rather than one anyone has established. Its trunk measured about 410 centimetres round in 1900 and about 450 now.",
+  "question_context": "The founding legend says a pilgrim pushed his yew walking staff into the ground here and it took root. A stranger coincidence is on record: in April 2005 one of the yew's branches broke, and on 15 April the castle caught fire. Sources note the timing without claiming a cause, which is the right amount of weight to give it.\n\nA 2001 survey put the tree's vitality at three out of five, ageing but alive, and in 2005 the country voted it Czech Tree of the Year. It stands beside the public walking path from Nedvedice up to the castle courtyard, reachable without a castle admission ticket, though one source describes its position more loosely as being on the castle grounds. Nedvedice's railway station is about 1.5 to 2 kilometres away, twenty to twenty-five minutes on foot. Pernstejn Castle itself is one of the best-preserved Gothic castles in Moravia, built by the Pernstejn family and never taken by siege, so the yew has stood in the shadow of a fortress with an unbroken record to match its own.",
+  "faq": [
+    {
+      "q": "How old is the Pernstejn Yew?",
+      "a": "Popular coverage says roughly 1,000 years, but the range of published estimates runs from 400 to 2,000 years, and nobody has resolved the gap. It is the oldest yew in Moravia."
+    },
+    {
+      "q": "Do I need a castle ticket to see it?",
+      "a": "No. It stands beside the public walking path from Nedvedice up to the castle courtyard, reachable on foot without paying admission, though one source describes its position more loosely as being on the castle grounds."
+    },
+    {
+      "q": "Is the legend about the castle true?",
+      "a": "It's local belief rather than record: the castle is said to prosper as long as the yew does, and one of its branches broke in April 2005 shortly before a fire at the castle. Sources note the coincidence without claiming a cause."
+    }
+  ],
+  "oldest_tree_id": "prn_001",
+  "trees": [
+    {
+      "id": "prn_001",
+      "name": "The Pernstejn Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "around 1,000 years (disputed, see notes)",
+      "age_min": 400,
+      "age_max": 1000,
+      "girth_cm": 450,
+      "location": {
+        "address": "Forest park below Pernstejn Castle, near the path from Nedvedice to the castle courtyard",
+        "latitude": 49.4521,
+        "longitude": 16.31712,
+        "neighbourhood": "Nedvedice, Zdar nad Sazavou District, Vysocina Region"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Pern%C5%A1tejnsk%C3%BD_tis",
+        "https://www.korunavysociny.cz/katalog/1517-pernstejnsky-tis"
+      ],
+      "access": "Free to view. Stands beside the public walking path leading from Nedvedice up to Pernstejn Castle, on the north slope in the castle forest park; reachable on foot without a castle admission ticket.",
+      "transport": "Nedvedice railway station is about 1.5-2 km / 20-25 min walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Nedvedice, Czech Republic"
+      },
+      "story": "Local belief holds that Pernstejn Castle prospers for as long as this yew does. In April 2005 one of its branches broke; on 15 April the castle caught fire. Sources record the coincidence and nobody claims a link, which is about the right amount of weight to give it.\n\nThe tree is the oldest yew in Moravia and nobody can tell you how old that is. Popular coverage settles on roughly 1,000 years. The Czech Wikipedia entry collects the estimates that actually exist, and they run from 400 years to 2,000, with the folklore figures clustering between 760 and 1,050. Take the round thousand as the number people repeat rather than the number anyone has established. What has been measured is the trunk: about 410 centimetres round in 1900, about 450 today, standing 15 to 16.5 metres.\n\nThe founding story is that a pilgrim pushed his yew walking staff into the ground here and it rooted. The country voted it Czech Tree of the Year in 2005. A survey in 2001 put its vitality at three out of five, ageing but alive.\n\nIt stands on the north slope of the castle forest park, beside the walking path up from Nedvedice, and can be reached on foot without a castle ticket, though one description places it more loosely on the castle grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "city": "Tatobity",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Tatobity is a village on the edge of the Cesky raj, Bohemian Paradise, and its lime tree carries a name the evidence will not quite support: locals call it the thousand-year lime, hollow enough that ten people have fit inside at once, held together since the 1920s by two iron bands. In 2016 it placed second in the European Tree of the Year vote, with more than 43,000 people behind it.",
+  "meta_description": "Tatobity's Thousand-Year Lime is a hollow lime held by iron bands since the 1920s, runner-up in Europe's 2016 Tree of the Year vote. Free to visit.",
+  "question_meta": "Tatobity's oldest tree is locally called the thousand-year lime, though sources put its real age between 500 and 1,000 years.",
+  "question_answer": "The oldest tree in Tatobity is the lime locally nicknamed the thousand-year lime, though the sources will not confirm that figure. Czech Wikipedia gives 500 to 800 years; the Tree of the Year foundation gives 600 to 1,000, drawing an 800-year estimate from 2009 measurements. Nobody has resolved the gap, so the honest range is five hundred to a thousand years and the nickname is exactly that, a nickname. The trunk measured 866 centimetres round in 1993, 940 in 1996 and 956 in 2009, on a tree 17 to 20 metres tall.",
+  "question_context": "Ten people fit inside the hollow trunk at once, held together by two iron bands since the 1920s, fitted by a local youth association that fenced and reinforced the tree in 1923. It received remedial treatment in 1995 and has been protected since 1979.\n\nIts real claim to fame is a vote. In 2015 the country made it Czech Tree of the Year, and in 2016 it placed second in the European Tree of the Year with more than 43,000 votes behind it, the most recent dated report on the tree found. It stands on the road toward Zernov, among the houses of the village, on the edge of Bohemian Paradise, free and unticketed. There is no public transport to the village within thirty minutes; the nearest town, Semily, is about eight kilometres away. The Cesky raj region around it, Bohemia's first protected landscape area, is better known for its sandstone rock cities than for a single village lime, which makes the tree an easy detour rather than the main reason to come.",
+  "faq": [
+    {
+      "q": "Is the Thousand-Year Lime really 1,000 years old?",
+      "a": "Probably not that old specifically; sources put its actual age between 500 and 1,000 years without resolving the gap, so the nickname is a local name rather than a measurement."
+    },
+    {
+      "q": "Why is it held together with iron bands?",
+      "a": "Its trunk is hollow from the ground up. A local youth association fenced and reinforced it in 1923, fitting two iron bands that are still doing the work today."
+    },
+    {
+      "q": "How do I get to Tatobity?",
+      "a": "There is no public transport to the village within thirty minutes; the nearest town, Semily, is about eight kilometres away. The lime stands on the road toward Zernov, among the village houses, free to visit."
+    }
+  ],
+  "oldest_tree_id": "tat_001",
+  "trees": [
+    {
+      "id": "tat_001",
+      "name": "The Thousand-Year Lime of Tatobity",
+      "species": "Lime hybrid (Tilia platyphyllos x euchlora)",
+      "age_estimate": "500 to 1,000 years (locally nicknamed the thousand-year lime)",
+      "age_min": 500,
+      "age_max": 1000,
+      "girth_cm": 956,
+      "location": {
+        "address": "Near house no. 86, beside the road toward Zernov, Tatobity",
+        "latitude": 50.56818,
+        "longitude": 15.27466,
+        "neighbourhood": "Tatobity, Semily District, Liberec Region, on the edge of the Cesky raj (Bohemian Paradise)"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Tatobitsk%C3%A1_l%C3%ADpa",
+        "https://www.stromroku.cz/vylety/tatobitska-lipa"
+      ],
+      "access": "Free. Stands beside the road toward Zernov in the open village of Tatobity, near residential houses; no gate or ticket.",
+      "transport": "No public transport to the village itself within 30 min; nearest town Semily is about 8 km away.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Tatobity, Czech Republic"
+      },
+      "story": "Ten people fit inside the trunk, which is hollow from the ground up and has been held together by two iron bands since the 1920s. A local youth association fenced and reinforced the tree in 1923; the bands are still doing the work.\n\nThe village calls it the thousand-year lime, and the sources will not back that up. Czech Wikipedia gives 500 to 800 years. The Tree of the Year foundation gives 600 to 1,000, with an 800-year estimate drawn from measurements taken in 2009. Nobody has resolved the gap, so the honest answer is somewhere between five hundred and a thousand and the nickname is a nickname. The measured part is steadier: 866 centimetres round in 1993, 940 in 1996, 956 in 2009, on a tree 17 to 20 metres tall. It was given remedial treatment in 1995 and has been protected since 1979.\n\nWhat it is genuinely famous for is a vote. In 2015 the country made it Czech Tree of the Year, and in 2016 it came second in the European Tree of the Year with more than 43,000 votes behind it. That is the most recent dated report of the tree we found, so if you go and it has changed, tell us.\n\nIt stands on the road toward Zernov, among the houses, at the edge of Bohemian Paradise.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the hollow trunk and its iron bands are fully in view"
+      }
+    }
+  ]
+}

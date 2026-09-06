@@ -1,0 +1,61 @@
+{
+  "city": "Rimov",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Rimov is a pilgrimage village in South Bohemia built around a lime tree: in 1626 the Jesuit apothecary Jan Gurre is said to have had a vision beneath it and proposed the chapel and church that grew into a complex so large that South Bohemians once called it the European Jerusalem. The tree still stands beside that church, its trunk hollow enough that fifty-one people once fit inside it at once.",
+  "meta_description": "The Linden of Jan Gurre, in Rimov, gave rise to a pilgrimage complex once called the European Jerusalem. Hollow enough for 51 people at once. Free.",
+  "question_meta": "Rimov's oldest tree is the Linden of Jan Gurre, the tree a 1626 vision was built around, given as 400 to 660 years old.",
+  "question_answer": "The oldest tree in Rimov is the Linden of Jan Gurre, standing beside the Church of the Holy Spirit at the centre of the village's pilgrimage complex. Age is unresolved: the national conservation agency recorded 600 years in 1999 and 650 to 660 in 2008, while other experts on the same record put it nearer 400. The trunk is completely hollow, kept going by an adventitious root grown down through the middle, and measures 760 centimetres round.",
+  "question_context": "In 1626 the Jesuit apothecary Jan Gurre is said to have had a vision beneath this tree and to have proposed a Loreto chapel and the Church of the Holy Spirit on the spot, partly so the lime itself would be preserved. What grew out of that became the Rimov pilgrimage complex, large enough that South Bohemians once called it the European Jerusalem, and the lime still stands beside the church at its centre.\n\nThe trunk is large enough that on 15 September 1996, fifty-one people got inside it at once and someone counted. The crown is dying back as the old limbs fail and the tree lives increasingly off stump sprouts: 19 metres tall in 1981, roughly 12 to 15 metres now. It was protected in 2000 and took nearly half the national vote as Czech Tree of the Year in 2008. Rimov is served by regional bus from Ceske Budejovice, with the tree a short walk from the stop; our pin is placed from the church's address rather than surveyed, so it is marked approximate.",
+  "faq": [
+    {
+      "q": "Why does Rimov have a pilgrimage complex?",
+      "a": "Because of this tree. In 1626 the Jesuit apothecary Jan Gurre reported a vision beneath it and proposed the chapel and church built to preserve it, which grew into a complex large enough to be called the European Jerusalem."
+    },
+    {
+      "q": "How old is the Linden of Jan Gurre?",
+      "a": "Unresolved. Official records give 600 to 660 years, while some experts on the same record put it nearer 400. Nobody has reconciled the two."
+    },
+    {
+      "q": "How do I get to Rimov?",
+      "a": "By regional bus from Ceske Budejovice; the tree is a short walk from the stop, beside the Church of the Holy Spirit. Free, no ticket."
+    }
+  ],
+  "oldest_tree_id": "rim_001",
+  "trees": [
+    {
+      "id": "rim_001",
+      "name": "The Linden of Jan Gurre",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "400 to 660 years (disputed, see notes)",
+      "age_min": 400,
+      "age_max": 660,
+      "girth_cm": 760,
+      "location": {
+        "address": "By the Church of the Holy Spirit (Kostel svateho Ducha), Rimov village centre",
+        "latitude": 48.85635,
+        "longitude": 14.48813,
+        "neighbourhood": "Rimov, Cesky Krumlov District, South Bohemia"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/L%C3%ADpa_Jana_Gurreho",
+        "https://botany.cz/cs/lipa-jana-gurreho/"
+      ],
+      "access": "Free. Stands beside the Church of the Holy Spirit in the centre of the Rimov pilgrimage complex, in the open village; no gate or ticket.",
+      "transport": "Rimov is served by regional bus from Cesky Budejovice; the tree is a short walk from the stop.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Rimov, Czech Republic"
+      },
+      "story": "A pilgrimage site exists because of this tree. In 1626 the Jesuit apothecary Jan Gurre is said to have had a vision beneath it, and to have proposed a Loreto chapel and the Church of the Holy Spirit on the spot partly so that the lime itself would be preserved. What grew out of that is the Rimov complex, big enough that South Bohemians came to call it the European Jerusalem, and the lime is still standing beside the church at the centre of it.\n\nThe trunk is completely hollow and kept going by an adventitious root running down through the middle of it. On 15 September 1996, fifty-one people got inside at once and someone counted. It is 760 centimetres round, measured in 2008.\n\nAge is unresolved. The national conservation agency recorded 600 years in 1999 and 650 to 660 in 2008, while other experts on the same record put it nearer 400. The crown is going: 19 metres tall in 1981, roughly 12 to 15 now, as the old limbs die back and the tree lives off stump sprouts.\n\nIt was protected in 2000 and took nearly half the national vote as Czech Tree of the Year in 2008. Look for it by the Church of the Holy Spirit; our pin is placed from the address rather than surveyed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

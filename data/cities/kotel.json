@@ -1,0 +1,69 @@
+{
+  "city": "Kotel",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Kotel is a hamlet of a few houses in the Podjestedi region, and two lime trees on its field path became the emblem of a fight against a proposed uranium mine, a campaign that helped make them Czech Tree of the Year in 2009. They stand close enough together to be seen as one thing: the elder locally called the Thousand-Year Lime, its neighbour younger by centuries.",
+  "meta_description": "The Kotel Lindens, two ancient limes on a Podjestedi field path, became an anti-mining campaign's emblem and Czech Tree of the Year 2009. Free.",
+  "question_meta": "Kotel's oldest tree is the elder of the Kotel Lindens, locally called the Thousand-Year Lime, though real estimates range from 350 to 1,100 years.",
+  "question_answer": "The oldest tree at Kotel is the elder of two lindens standing a few metres apart on a field path at the edge of the hamlet, carrying the local name Thousand-Year Lime. It measures 970 centimetres round and 25 metres tall, its trunk split into three hollow stems propped by a single thick adventitious root grown down through the middle. The headline age of about 950 years is the figure repeated everywhere, but the estimates actually published run from 350 years to 1,100, and nothing narrows them.",
+  "question_context": "The two trees are seen and visited as one thing. The younger neighbour is smaller by some distance, 500 to 600 centimetres round and 23 metres tall. Local tradition has the elder tree standing through a Hussite raid on the village in 1444 and peasant unrest in 1680, which is village memory rather than record.\n\nWhen a uranium mine was proposed under the Podjestedi countryside, the campaign against it took these two limes as its emblem, and in 2009 the country voted them Czech Tree of the Year, a striking result for a hamlet of a few houses. They have been protected since 1993, and safety work was carried out on the hollow stems around 2015. Blue and yellow marked trails reach them over open ground, with nothing to pay. There is no public transport to the hamlet itself; Osecna is about three kilometres away. The campaign against the mine drew on wider opposition across the Podjestedi region, and the trees remain a local rallying point today.",
+  "faq": [
+    {
+      "q": "How old are the Kotel Lindens?",
+      "a": "The elder tree is locally called the Thousand-Year Lime, but the estimates that have actually been published run from 350 to 1,100 years, and nothing narrows the range further."
+    },
+    {
+      "q": "Why are they famous?",
+      "a": "When a uranium mine was proposed under the surrounding countryside, local campaigners took the two limes as their emblem. The campaign helped make them Czech Tree of the Year in 2009."
+    },
+    {
+      "q": "How do I get to Kotel?",
+      "a": "There is no public transport to the hamlet itself; Osecna is about three kilometres away. Blue and yellow marked hiking trails reach the trees over open ground, free, no ticket."
+    }
+  ],
+  "oldest_tree_id": "kot_001",
+  "trees": [
+    {
+      "id": "kot_001",
+      "name": "The Kotel Lindens",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 950 years for the elder tree (estimates range widely, 350 to 1,100 years)",
+      "age_min": 350,
+      "age_max": 1100,
+      "girth_cm": 970,
+      "location": {
+        "address": "Field path at the northeastern edge of the hamlet of Kotel, Osecna",
+        "latitude": 50.6852,
+        "longitude": 14.94796,
+        "neighbourhood": "Kotel, Osecna, Liberec District, Podjestedi region"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Tis%C3%ADcilet%C3%A1_l%C3%ADpa_(Kotel)",
+        "https://liberecky.denik.cz/zpravy_region/kotelska-lipa-stara-tisic-let-zvitezila-mozna-i-na.html"
+      ],
+      "access": "Free. Stands on a field path at the edge of Kotel hamlet, reachable via marked blue and yellow hiking trails; open countryside, no restriction found.",
+      "transport": "No public transport to the hamlet itself; Osecna is about 3 km away.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Kotel, Czech Republic"
+      },
+      "story": "When a uranium mine was proposed under the Podjestedi countryside, the campaign against it took these two limes as its emblem. In 2009 the country voted them Czech Tree of the Year, which is one way for a hamlet of a few houses to be heard.\n\nThere are two trees standing a few metres apart on the field path at the edge of Kotel, and you look at them as one thing. The elder carries the local name Thousand-Year Lime: 970 centimetres round, 25 metres tall, its trunk split into three hollow stems that a single thick adventitious root has grown down through the middle to prop up. Its neighbour is the younger by some distance at 500 to 600 centimetres round and 23 metres tall.\n\nThe headline age of about 950 years is the one repeated everywhere. The estimates that have actually been published run from 350 years to 1,100, and nothing narrows them, so the name is a claim rather than a count. Local tradition has the elder tree standing through a Hussite raid on the village in 1444 and the peasant unrest of 1680; that is village memory, not record.\n\nThey have been protected since 1993, and safety work was carried out on the hollow stems around 2015. Blue and yellow trails reach them, over open ground with nothing to pay.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when both crowns flower at once and the field path fills with bees"
+      }
+    }
+  ]
+}
