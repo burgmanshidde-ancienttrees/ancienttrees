@@ -52,16 +52,25 @@ waste. `city_queue.py --next`'s openable list does not check
 CURATION.md/leads-file history, so it will keep surfacing this one;
 worth fixing in the script itself at some point, not attempted here.
 
-**Two US scouting targets from `scout_next.py --target`, both dead
-ends recorded so nobody re-scouts them**: Lexington's Kentucky Champion
-Trees program and Reno's 2015 Nevada Big Tree Register are both real,
-named, semantically-filtered registers, and neither has a stated
-licence or coordinates, the same shape as every other US state
-big-tree PDF scouted so far (Florida, Arkansas, California). Reno's is
-worth a licence ask later: real public-site clusters (Idlewild Park
-alone has at least 10 champions) and a 2024 re-measurement effort that
-might have produced something better. Both recorded in
-`data/register-scouting.json`.
+**Three US scouting targets from `scout_next.py --target`, recorded so
+nobody re-scouts them.** Lexington's Kentucky Champion Trees program and
+Reno's 2015 Nevada Big Tree Register are both real, named,
+semantically-filtered registers, and neither has a stated licence or
+coordinates, the same shape as every other US state big-tree PDF
+scouted so far (Florida, Arkansas, California). Reno's is worth a
+licence ask later: real public-site clusters (Idlewild Park alone has
+at least 10 champions) and a 2024 re-measurement effort that might have
+produced something better. **Des Moines is the best of the three by
+far**: traced the Iowa DNR's "Big Tree Program" ArcGIS Experience
+through to its underlying Feature Service, which is directly queryable
+and, unusually, scoped by its own description to trees on Iowa's
+public land. 295 records statewide, 22 in Polk County, with real
+coordinates, species, owner, a champion-status tier, and a
+`Depricated_on` date field that already flags dead or removed
+specimens, the vitality signal almost no other register carries.
+Still no stated licence, so still stalled rather than imported, but
+this one is worth prioritising in the next licence-ask batch. All
+three recorded in `data/register-scouting.json`.
 
 **The iOS regression continuation 16 diagnosed and "fixed" is still
 red, on the very next run.** `testTappingAPinOpensItsTree` failed again
