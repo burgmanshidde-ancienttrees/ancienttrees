@@ -1,0 +1,62 @@
+{
+  "city": "Craigends",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Craigends is a stretch of riverside ground beside the River Gryffe in Renfrewshire, on the edge of a housing estate outside Houston, close to Glasgow but too far for an easy bus ride. What makes the walk worth it is one yew, listed on the Ancient Tree Inventory, that has spent five or six centuries spreading sideways rather than up. Its branches arch down, root where they touch, and grow into new trunks, so what a visitor finds today reads as a small wood and is, underneath, a single tree.",
+  "meta_description": "The Craigends Yew in Renfrewshire is one ancient tree that has spread by layering into what looks like a grove, on open ground by the River Gryffe.",
+  "question_meta": "Craigends' oldest tree is its yew by the River Gryffe: one specimen, 500 to 700 years old, that has spread sideways into what reads as a small grove.",
+  "question_answer": "The oldest tree in Craigends is the Craigends Yew, a single male yew on the bank of the River Gryffe estimated at 500 to 700 years old, though one specialist source speculates as much as 800 to 900 using a rougher method the same source treats with caution.\n\nThere is only one tree to talk about here, and it does not look like one. A yew this old survives by layering: a branch arches down, touches the ground, roots, and sends up a new stem of its own, again and again, until what stands is a ring of trunks that are all the same organism. A path has been cut through the middle so a visitor can walk inside it.\n\nThe numbers back the story up. Its main trunk measured 8.68 metres round in 2016. A Victorian naturalist recorded the whole grove's canopy at 74 metres round in 1890; it is close to 100 metres now, continuous growth over more than a century that argues for one long-lived tree rather than a recent planting. Fire and vandalism scarred it in the past, and conservation work in 2018 left it healthier, with fresh growth at the crown. It was shortlisted for Scotland's Tree of the Year in 2016 and sits in the Ancient Tree Inventory under number 31486.",
+  "question_context": "The yew stands on former Craigends Estate ground, now bordered by a modern housing estate outside Houston, Renfrewshire, beside the River Gryffe. It sits on open, publicly accessible ground with a footpath cut through the grove itself, free to visit with no gate, ticket or fixed hours.\n\nGetting there needs a car in practice. There is no direct train to Houston; the nearest station is Johnstone, from which a bus or taxi covers the last stretch, or a bus runs from Glasgow, roughly forty-five minutes each way, to stops on Barochan Road or Craig Road near the village. That puts it outside a comfortable day trip by public transport from Glasgow, which is why this stands as its own destination rather than an entry on a Glasgow page.\n\nWear shoes that can take wet ground: the site sits beside a river, and the path through the grove crosses tree roots and soft earth rather than a made surface. There is no visitor centre, shop or signage beyond what marks the tree itself, and nothing else nearby asks for a stop. People come for the yew and nothing more, which is rather the point of it.",
+  "faq": [
+    {
+      "q": "How old is the Craigends Yew?",
+      "a": "Around 500 to 700 years by the sound estimate. One source speculates 800 to 900 using a rough girth-to-age rule, but that method is unreliable on a tree that spreads by layering rather than growing as a single trunk, so treat the higher figure as folklore."
+    },
+    {
+      "q": "Why does it look like a grove rather than one tree?",
+      "a": "Because it is a layering yew: its low branches arch down, root where they touch the ground, and send up new stems. Genetically it is one organism, even though a path now runs through what reads as a thicket of separate trunks."
+    },
+    {
+      "q": "Is it free to visit, and how do I get there?",
+      "a": "Free, open ground, no ticket or fixed hours. There is no direct train; reach it by bus or taxi from Johnstone station, or a roughly 45 minute bus from Glasgow, which makes a car the easiest option."
+    },
+    {
+      "q": "Is the Knights Templar connection real?",
+      "a": "Treat it as local folklore. One source extrapolates an age of 800 to 900 years and a link to a 12th century landowner from the girth alone, a method too rough to trust on a tree that grows by layering rather than in a straight trunk."
+    }
+  ],
+  "oldest_tree_id": "cra_001",
+  "trees": [
+    {
+      "id": "cra_001",
+      "name": "The Craigends Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 868,
+      "location": {
+        "address": "Near Gryfebank Avenue, Craigends, Houston, Renfrewshire PA6 7NY, beside the River Gryffe",
+        "latitude": 55.862413,
+        "longitude": -4.5262771,
+        "neighbourhood": "Craigends, Houston"
+      },
+      "story": "On the banks of the River Gryffe in Renfrewshire stands what looks like a small grove of yews and is in fact one tree. A male yew somewhere between five and seven centuries old has spent much of that time doing what yews do when nobody stops them: its branches arch down, touch the ground, take root, and send up new stems of their own. A path has been cut through the result, so a visitor walks inside what reads as a thicket but shares one root system throughout.\n\nIts trunk measures 8.68 metres round, recorded in 2016, and the canopy has grown from 74 metres in circumference when a Victorian naturalist measured it in 1890 to roughly 100 metres today, a century of continuous spread that is itself a kind of proof the tree has stayed one thing. Fire and vandalism have scarred it in the past; conservation work in 2018 cleared the grove and the tree answered with new leader growth. One local source stretches the age toward 800 or 900 years and a Knights Templar connection, worth reading as folklore rather than measurement, since girth-per-year is a rough rule even on an ordinary trunk, let alone one that spreads by layering. It stands on former Craigends Estate ground beside a modern housing estate, free to reach on foot with no gate and no ticket, and was shortlisted for Scotland's Tree of the Year in 2016.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Craigends_Yew",
+        "https://scotlands-yew-trees.org/yews-in-depth/the-craigends-yew-craigends-houston-renfrewshire/",
+        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/scotland/the-craigends-yew-renfrewshire/"
+      ],
+      "access": "Free, public footpath access on former Craigends Estate ground, now beside a housing estate by the River Gryffe; an internal path is cut through the grove itself. No fee, no fixed hours.",
+      "transport": "No direct train; nearest station is Johnstone, then bus/taxi, or a bus from Glasgow (roughly 45 min) to stops on Barochan Road/Craig Road near Houston. Not within the ~30 minute day-trip boundary of Glasgow (17 miles / ~45-47 min by bus, no direct train), so this does not join the Glasgow page honestly.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
