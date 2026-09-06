@@ -432,48 +432,67 @@ final class AncientTreesUITests: XCTestCase {
         // nothing new to maintain.
         XCTAssertTrue(app.staticTexts["map-count"].waitForExistence(timeout: 20),
                       "the sheet never reported a count, so the catalogue or the pins never arrived")
-        Thread.sleep(forTimeInterval: 1.5)
 
-        // ONLY THE PART OF THE MAP YOU CAN SEE. The tree-map element is the
-        // whole screen, list included, so a normalised offset is measured
-        // against 667 points of which the bottom half is the card shelf. The
-        // count label sits on the seam.
-        let visibleBottom = app.staticTexts["map-count"].exists
-            ? app.staticTexts["map-count"].frame.minY
-            : map.frame.maxY
+        // map-count IS NOT THE SIGNAL IT LOOKS LIKE, diagnosed 2026-09-06 after
+        // the wait above shipped and the very next scheduled run failed the
+        // same way. inReach (MapTab.swift) counts catalogue.trees against
+        // mapRegion, both pure Swift state that settle as soon as the
+        // catalogue decodes; the pins this test actually taps come from
+        // MapLibre's own style load (mapView(_:didFinishLoading:) installing
+        // MapLayers, itself gated on a style JSON and glyphs fetched over the
+        // network) and its own tile render, neither of which that label
+        // observes. So the text can read "24 trees you can see" while the
+        // map underneath is still blank tarmac. There is no accessibility
+        // signal for "the style finished loading" to wait on instead (asked
+        // and confirmed absent from what MLNMapView publishes), so the sweep
+        // itself is retried with growing waits, the same shape as
+        // -retry-tests-on-failure one level up but for a race this test can
+        // absorb on its own rather than spending a whole extra test
+        // iteration on.
+        for attempt in 0..<4 {
+            Thread.sleep(forTimeInterval: attempt == 0 ? 1.5 : Double(attempt) * 4)
 
-        // A GRID, not a column, and the reason is worth writing down because
-        // the column version cost an hour on 2026-08-27.
-        //
-        // Its premise was that the camera has settled on the selected tree, so
-        // the tree is somewhere down the middle. A screenshot taken from inside
-        // the test showed that premise is not reliable: the map was still wide
-        // open with Diemen and Amstelveen in frame, and the middle column ran
-        // between the clusters. Meanwhile tapping a pin by hand opened its tree
-        // perfectly, which is what this test is actually about.
-        //
-        // So it no longer cares where the camera is. It sweeps the visible map
-        // and passes when a pin opens a tree: what is asserted is that a pin is
-        // a control, not that the camera framed one particular trunk. A tap on
-        // a cluster zooms in instead, which only makes the next rows likelier
-        // to land.
-        let top = map.frame.minY + 80          // clear of the compass and the notch
-        for row in 0...10 {
-            for dx in [0.5, 0.28, 0.72] {
-                let y = top + (visibleBottom - 40 - top) * Double(row) / 10
-                map.coordinate(withNormalizedOffset: .zero)
-                   .withOffset(CGVector(dx: map.frame.width * dx, dy: y - map.frame.minY))
-                   .tap()
-                if app.buttons["Take me there"].waitForExistence(timeout: 0.5) {
-                    return
-                }
-                // AND STOP IF WE HAVE LEFT THE APP. Belt as well as braces:
-                // -signed-in should mean no sheet can appear, and if one ever
-                // does, saying so beats tapping blindly through it and
-                // reporting that the map has no pins.
-                if app.webViews.firstMatch.exists || app.buttons["Continue with Google"].exists {
-                    XCTFail("a tap left the map: the sign-in sheet or a web view is up")
-                    return
+            // ONLY THE PART OF THE MAP YOU CAN SEE. The tree-map element is the
+            // whole screen, list included, so a normalised offset is measured
+            // against 667 points of which the bottom half is the card shelf. The
+            // count label sits on the seam.
+            let visibleBottom = app.staticTexts["map-count"].exists
+                ? app.staticTexts["map-count"].frame.minY
+                : map.frame.maxY
+
+            // A GRID, not a column, and the reason is worth writing down because
+            // the column version cost an hour on 2026-08-27.
+            //
+            // Its premise was that the camera has settled on the selected tree, so
+            // the tree is somewhere down the middle. A screenshot taken from inside
+            // the test showed that premise is not reliable: the map was still wide
+            // open with Diemen and Amstelveen in frame, and the middle column ran
+            // between the clusters. Meanwhile tapping a pin by hand opened its tree
+            // perfectly, which is what this test is actually about.
+            //
+            // So it no longer cares where the camera is. It sweeps the visible map
+            // and passes when a pin opens a tree: what is asserted is that a pin is
+            // a control, not that the camera framed one particular trunk. A tap on
+            // a cluster zooms in instead, which only makes the next rows likelier
+            // to land.
+            let top = map.frame.minY + 80          // clear of the compass and the notch
+            for row in 0...10 {
+                for dx in [0.5, 0.28, 0.72] {
+                    let y = top + (visibleBottom - 40 - top) * Double(row) / 10
+                    map.coordinate(withNormalizedOffset: .zero)
+                       .withOffset(CGVector(dx: map.frame.width * dx, dy: y - map.frame.minY))
+                       .tap()
+                    if app.buttons["Take me there"].waitForExistence(timeout: 0.5) {
+                        return
+                    }
+                    // AND STOP IF WE HAVE LEFT THE APP. Belt as well as braces:
+                    // -signed-in should mean no sheet can appear, and if one ever
+                    // does, saying so beats tapping blindly through it and
+                    // reporting that the map has no pins.
+                    if app.webViews.firstMatch.exists || app.buttons["Continue with Google"].exists {
+                        XCTFail("a tap left the map: the sign-in sheet or a web view is up")
+                        return
+                    }
                 }
             }
         }
@@ -481,7 +500,7 @@ final class AncientTreesUITests: XCTestCase {
         shot.name = "the-map-that-would-not-open-a-tree"
         shot.lifetime = .keepAlways
         add(shot)
-        XCTFail("sweeping the visible map opened no tree at all")
+        XCTFail("sweeping the visible map opened no tree at all, across four attempts")
     }
 
     /// THE MAP, DRIVEN, several times over, because he asked for exactly that.
