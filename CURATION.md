@@ -2,6 +2,60 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 - Rudy ships as a new single-tree place (Dab Cysters); two Szczecin park trees held; _famous-lithuania closed with nothing new to ship
+
+Continuation of a window an earlier attempt stopped after 12 min with 108
+unspent. `passcheck.py --claims` showed two standing: `_famous-poland` and
+`_famous-lithuania`, both verify, with uncommitted verify output already on
+disk from the earlier attempt: `data/research/famouspoland-batch-verified.json`
+held 3 fully judged candidates (fpl_001-003), and `_famous-lithuania.json`
+carried bookkeeping fixes (statuses, species) with no new verified trees.
+`leads.py --ready` was empty (2691 leads, 0 READY).
+
+**Shipped: Rudy, Poland, a new single-tree place under the 2026-08-31
+exception.** Dab Cysters (rud_001), a 500ish-year pedunculate oak in the
+former Cistercian abbey's park, girth 7.35m, that survived an arson attack
+in October 2022 (confirmed by the Regional Directorate of State Forests in
+Katowice; a 2023 tomography assessment found it alive and recovering).
+Documented since a 1752 engraving of the abbey. Age kept as a 400-550 year
+range since sources disagree (450 vs 500 years, 26m vs 32m height). Photo
+approved after viewing the actual pixels (Cadiz standard): a Commons CC BY
+4.0 photograph by Marek Mroz, full tree in frame, in leaf, daylight; a
+second candidate (bark close-up) rejected on sight. Built the city file by
+hand rather than dispatching a write-stories agent, matching the sunk-cost
+single-tree pattern used for Amt Neuhaus and Omishima this week. Build
+(4612 pages), qa.py (6912 pages, 0 problems), preflight.py (445 cities, 0
+problems) and superlatives.py (675 claims, no collisions) all clean.
+`city_names.py --city rudy` run (no exonym).
+
+**Held rather than shipped: fpl_002 (Cis Warcislaw) and fpl_003 (Dab
+Ksiazecy), both in Szczecin's Park Lesny Zdroje, ~300m apart.** Both fully
+verified (girth, register cross-check), but two trees in one park is short
+of the 4-tree place floor, and neither is a clear single-tree destination
+on its own: the yew is a fine specimen inside a reserve of "several hundred"
+yews with no age, and the oak's own identity is unresolved (its geotagged
+coordinate sits ~360m from the register's point for a similarly-named
+grove, and it may be one tree or one of a dozen-plus). Recorded with full
+reasoning as `hold_reason` on both entries in `data/leads/_famous-poland.json`
+for a future Szczecin pass to build a real cluster around.
+
+**`_famous-lithuania` closed with nothing new to ship.** The uncommitted
+work already on disk was bookkeeping, not new candidates: two duplicate
+Priekule leads reconciled to the city's already-published pri_001/pri_002
+(status corrected from stale `lead` to `done`), one dead-oak duplicate
+confirmed and blocked via its own geotagged photo, and two Silale monuments
+(a 13-oak-and-lime freedom memorial, a single 1918 independence oak) held
+as leads: both real and sourced, but Silale has only these 2 collectible
+points found so far, short of the 4-tree floor, and neither clears the
+single-tree-destination bar alone. `silale.lt` added to
+`data/fetch-blocklist.json` (Cloudflare-blocked, confirmed twice).
+
+Released both claims. Rung 2 (`health.py`): Data digest still shows
+failing; read the log directly (`gh run view 33957091004 --log-failed`),
+same benign git-push race documented repeatedly this week (a concurrent
+writer won the push, the digest's own commit was lost with the runner).
+Nothing new to fix; the next scheduled run picks it up.
+
 ## 2026-09-06 - Omishima gains a third camphor (omi_003); Kakumaki held, Okina sugi confirmed dead; hiroshima claim released
 
 Continuation of a window an earlier attempt stopped after 46 min with 74

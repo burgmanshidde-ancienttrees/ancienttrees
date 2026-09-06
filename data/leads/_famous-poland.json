@@ -37,9 +37,10 @@
         "https://commons.wikimedia.org/wiki/File:Cis_Warcislaw,_Szczecin_kz02.jpg",
         "https://commons.wikimedia.org/wiki/File:Szczecin_Cis_Warcislaw.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "hold_reason": "Verified 2026-09-06 (girth 160cm, coordinate matches Polish Wikipedia's Przyroda w Szczecinie register table within 4m; corroborated as the reserve's own champion yew among 'several hundred' specimens by naszewycieczki.pl). Held rather than shipped: alone, Park Lesny Zdroje has only this and Dab Ksiazecy nearby, short of the 4-tree floor for a Szczecin page, and a champion specimen within a large protected reserve does not clearly clear the single-tree-destination test on its own. No documented age found anywhere (yew age-from-girth is unreliable and not derived). Kept as a lead for a future Szczecin pass to build a real cluster around, or in case a stronger individual case emerges."
     },
     {
       "name": "Lipa Powstańców",
@@ -208,7 +209,8 @@
         "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_dub_Benedikta_XVI.,_bludn%C3%BD_balvan,_Rudy,_Polsko.jpg",
         "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_dub_Benedikta_XVI.,_bludn%C3%BD_balvan,_Rudy,_Polsko_2.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "blocked_reason": "Not a candidate: this is one of the 'papal oaks' (dab papieski), a young sapling grown from acorns of the Chrobry oak that were blessed by John Paul II in April 2004 and distributed to Poland's forest districts in 2006 for planting; a Commons photo of this specimen is already dated 2007-07, consistent with a tree roughly 19-20 years old today, not an ancient or visually spectacular tree. Hundreds of near-identical papal oaks were planted nationwide from the same acorn batch, so it is also not a distinctive collectible point. Fails the qualifying bar (not genuinely old, not visually spectacular; historical significance is shared with hundreds of sibling trees elsewhere). Recorded here rather than silently dropped so a future pass does not re-research it."
     },
     {
       "name": "Dąb Bolko",
@@ -230,7 +232,8 @@
         "https://commons.wikimedia.org/wiki/File:2025-07_Rudy_(11).jpg",
         "https://commons.wikimedia.org/wiki/File:Dub_Cysters,_Rudy,_Ku%C5%BAnia_Raciborska,_okres_Ratibo%C5%99,_Polsko_01.jpg"
       ],
-      "status": "lead"
+      "status": "done",
+      "note": "Verified 2026-09-06, delivered as fpl_001 in data/research/famouspoland-batch-verified.json (temporary id, pending write pass). Alive, confirmed survived 2022 arson fire per 2023 expert assessment. Two independent sources for species/age/girth; height and exact age vary between sources (recorded in verify_notes)."
     },
     {
       "name": "Dąb Czech",
@@ -303,7 +306,8 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_02.jpg",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Ksi%C4%85%C5%BC%C4%99cy,_Park_Le%C5%9Bny_Zdroje,_%C5%A0t%C4%9Bt%C3%ADn_-_Prawobrze%C5%BCe_03.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "hold_reason": "Verified-but-unresolved 2026-09-06: existence and general location (west hill of Lake Szmaragdowe, Park Lesny Zdroje) confirmed by two independent sources, but there is a real ~360m discrepancy between this lead's geotagged-photo coordinate and the Polish Wikipedia register's own point for a similarly-named 'deby ksiazece' (Ducal Oaks) pomnik przyrody, plus a possible confusion between one named tree and a mid-19th-century grove of a dozen-plus oaks of the same name. Held rather than shipped on two grounds: the identity is not cleanly resolved, and even resolved it would only bring Park Lesny Zdroje to two trees, short of the 4-tree floor. A future pass should resolve which tree is which before any writer commits to a single confident description; full detail on both competing accounts was recorded during the 2026-09-06 verify pass."
     },
     {
       "name": "Dąb Lech",

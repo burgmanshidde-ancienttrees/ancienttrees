@@ -178,8 +178,9 @@
     "https://commons.wikimedia.org/wiki/File:Silale_nepriklausomybes_aikste.jpg"
    ],
    "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species": "Oak (Quercus sp., x13) and Lime (Tilia sp., x1)",
+   "species_basis": "genus read from lt.wikipedia's description of the grove; individual species per tree not itemised in the source",
+   "reason": "Checked 2026-09-06, held as a lead rather than shipped. NOT the same monument as the neighbouring 'Šilalė Independence oak' (see that entry, about 90m away), and NOT folded into one entry with it: this is a distinct memorial grove of 13 oaks and 1 linden, planted in a semicircle around the 'Laisvės šauklys' (Freedom's Crier) sculpture by Kazimieras Kisielis, at the same J. Basanavičiaus / Nepriklausomybės street intersection in central Šilalė. lt.wikipedia (Sausio 13-osios ąžuolai ir liepa) plus a second, independent source (pamatyklietuvoje.lt and silalesbiblioteka.lt both describe the monument) confirm: the 13 oaks + 1 linden represent the 13 men and 1 woman killed defending Lithuanian freedom on 13 January 1991 (the Vilnius TV-tower/Freedom Defenders' Day attack). Sources differ on which anniversary the monument itself marks, so both facts are recorded rather than merged into one claim: one source calls the sculpture Lithuania's first monument to 11 March 1990 (Restoration of Independence), an idea from 1990 realised in 1998. Declared a municipal natural heritage object in 2006, protected area 0.21ha, in a roughly triangular plot with benches, bounded by two streets and adjacent buildings ('intense automobile movement' nearby, per the register). No individual girth, height or planting date recorded for the trees themselves; likely planted around 1990-1998 alongside the monument, so young (roughly 30-35 years) rather than ancient, with the case resting on historical significance rather than age or size. Reads as one compact, collectible ensemble, a semicircle around one monument with one obvious place to stand, not an avenue or a wood. Access: public street-corner plot, no gate or fee, genuinely reachable. Held rather than shipped: even combined with the neighbouring Independence Oak, Šilalė has only 2 collectible points found in the town centre, short of the 4-tree floor. A fuller municipal list of Šilalė's protected objects may hold more (silale.lt/kaimo-reikalai-ir-aplinkos-apsauga/savivaldybes-saugomu-gamtos-paveldo-objektu-sarasas/) but the whole site Cloudflare-blocks automated fetches (two attempts this pass, WebFetch and curl with a spoofed user agent, both refused, not a hang; worth adding to data/fetch-blocklist.json and worth a browser-session check on a future pass)."
   },
   {
    "name": "Papušynė pine",
@@ -749,8 +750,9 @@
     "https://commons.wikimedia.org/wiki/File:Silale_nepriklausomybes_aikste.jpg"
    ],
    "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species": "Oak (Quercus sp., x13) and Lime (Tilia sp., x1)",
+   "species_basis": "genus read from lt.wikipedia's description of the grove; individual species per tree not itemised in the source",
+   "reason": "Checked 2026-09-06, held as a lead rather than shipped. NOT the same monument as the neighbouring 'Šilalė Independence oak' (see that entry, about 90m away), and NOT folded into one entry with it: this is a distinct memorial grove of 13 oaks and 1 linden, planted in a semicircle around the 'Laisvės šauklys' (Freedom's Crier) sculpture by Kazimieras Kisielis, at the same J. Basanavičiaus / Nepriklausomybės street intersection in central Šilalė. lt.wikipedia (Sausio 13-osios ąžuolai ir liepa) plus a second, independent source (pamatyklietuvoje.lt and silalesbiblioteka.lt both describe the monument) confirm: the 13 oaks + 1 linden represent the 13 men and 1 woman killed defending Lithuanian freedom on 13 January 1991 (the Vilnius TV-tower/Freedom Defenders' Day attack). Sources differ on which anniversary the monument itself marks, so both facts are recorded rather than merged into one claim: one source calls the sculpture Lithuania's first monument to 11 March 1990 (Restoration of Independence), an idea from 1990 realised in 1998. Declared a municipal natural heritage object in 2006, protected area 0.21ha, in a roughly triangular plot with benches, bounded by two streets and adjacent buildings ('intense automobile movement' nearby, per the register). No individual girth, height or planting date recorded for the trees themselves; likely planted around 1990-1998 alongside the monument, so young (roughly 30-35 years) rather than ancient, with the case resting on historical significance rather than age or size. Reads as one compact, collectible ensemble, a semicircle around one monument with one obvious place to stand, not an avenue or a wood. Access: public street-corner plot, no gate or fee, genuinely reachable. Held rather than shipped: even combined with the neighbouring Independence Oak, Šilalė has only 2 collectible points found in the town centre, short of the 4-tree floor. A fuller municipal list of Šilalė's protected objects may hold more (silale.lt/kaimo-reikalai-ir-aplinkos-apsauga/savivaldybes-saugomu-gamtos-paveldo-objektu-sarasas/) but the whole site Cloudflare-blocks automated fetches (two attempts this pass, WebFetch and curl with a spoofed user agent, both refused, not a hang; worth adding to data/fetch-blocklist.json and worth a browser-session check on a future pass)."
   },
   {
    "name": "Pagryniai oak",
@@ -809,9 +811,10 @@
     "https://commons.wikimedia.org/wiki/File:Priekul%C4%97s_senasis_%C4%85%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:Priekul%C4%97s_%C4%85%C5%BEuolas,_2023.JPG"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "BLOCKED, dead; duplicate of the already-blocked 'Priekulės ąžuolas' entry below, now with a corrected coordinate. Confirmed 2026-09-06 by reading the Commons file 'Priekulės senasis ąžuolas.JPG' directly ('senasis' = old): its geotag reads 55°33'21.73\"N 21°19'38.65\"E, which converts to 55.556036/21.327406, essentially this lead's own coordinate, and its caption is 'Senojo ąžuolo liekanos, 2023' (remains of the old oak, 2023). lt.wikipedia's 'Priekulės ąžuolas' article carries the same facts already recorded on the blocked entry (fell 1993, ~380 years old, girth 4.7m, height 25m, protected 1960/republic-level 1987) but its own infobox coordinate is 55.55641/21.32878, the copy-paste-duplicate coordinate our published pri_002 (Vingis Park Oak) also carries and flags in its own story as approximate for exactly this reason. So this lead's geotagged coordinate is likely the TRUE find-spot of the dead oak's remains, distinct from the erroneous shared infobox coordinate both sources repeat. Worth flagging for a future pin-precision pass on data/cities/priekule.json: pri_002's current coordinate (55.55641, 21.32878) is now doubly confirmed as the DEAD oak's, so pri_002's true position is still unresolved, not settled by this pass and not something a verification pass edits directly. Not a new collectible entry either way: the tree is dead, fails the alive-now bar and hard rule 2, and only the trunk remnant plus a granite monument survive, matching the existing blocked verdict on 'Priekulės ąžuolas'."
   },
   {
    "name": "Priekulė Vingis Park Oak",
@@ -821,9 +824,10 @@
     "https://commons.wikimedia.org/wiki/File:2023._Priekul%C4%97._Vingio_parko_%C4%85%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:Priekul%C4%97,_Vingio_parko_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Oak (Quercus robur, presumed)",
+   "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak",
+   "reason": "Same tree as the 'Vingio parko ąžuolas' entry further below (identical coordinates, 55.556541/21.328723). Already verified and delivered as pri_002 (Vingis Park Oak), published in data/cities/priekule.json (Priekulė is already a live 5-tree city, contrary to this pass's brief which said none of its candidates sat in a published city). This English-transliterated duplicate from the Commons sweep was left at status lead when the Lithuanian-named duplicate was marked done; bookkeeping fixed 2026-09-06, no new research needed."
   },
   {
    "name": "Pundžiai Oak",
@@ -984,8 +988,9 @@
     "https://commons.wikimedia.org/wiki/File:%C5%A0ilal%C4%97,_Neprikl._%C4%85%C5%BEuolas.JPG"
    ],
    "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species": "Pedunculate Oak (Quercus robur)",
+   "species_basis": "confirmed by lt.wikipedia infobox (paprastasis ąžuolas)",
+   "reason": "Checked 2026-09-06, held as a lead rather than shipped as a single-tree destination. NOT the same monument as the neighbouring 'Oaks and lime of January 13' grove (see that entry, about 90m away): this is one older single oak on a traffic island at the J. Basanavičiaus / Nepriklausomybės street intersection in central Šilalė. lt.wikipedia (Nepriklausomybės ąžuolas) gives height 15.0m, girth 2.40m at 1.3m, age 94 years as of 2022 (roughly 98 now); stone markers at its base read '1918-02-16' (Lithuania's independence day). Planting date is disputed between sources rather than resolved: one historian (Kazimieras Šetkus) says planted by the Šilalė riflemen's association in autumn 1937 for the 20th independence anniversary; another account gives 1927-28 for the 10th anniversary, organised by pharmacist Simonas Gaudėšius and municipal officials; a bottle with a written testament was reportedly buried under it, recovery status unknown. Declared a municipal natural heritage object in 2006. Two sources found: lt.wikipedia (drawing on the register) and the dated 2023 Commons photo record; an independent news source specifically about this tree was not located this pass. Alive and actively tended: since 2018 the municipality has run restoration work (soil remediation, mulching, wire removal, winter salt protection) because the tree is damaged by passing trucks and road salt at the intersection, which is itself evidence of recent continued life. Access: public street island, no gate or fee, genuinely reachable, though it stands amid busy traffic. Held rather than shipped: at 2.40m girth it is not an exceptional specimen by Lithuanian standards, and its fame is local rather than national, so it does not clearly clear the 2026-08-31 single-tree destination bar on its own. Combined with the January 13 grove, Šilalė has only 2 collectible points found in the town centre, short of the 4-tree floor. A fuller municipal list of Šilalė's protected objects may hold more (silale.lt/kaimo-reikalai-ir-aplinkos-apsauga/savivaldybes-saugomu-gamtos-paveldo-objektu-sarasas/) but the whole site Cloudflare-blocks automated fetches (two attempts this pass, WebFetch and curl with a spoofed user agent, both refused, not a hang; worth adding to data/fetch-blocklist.json and worth a browser-session check on a future pass)."
   },
   {
    "name": "Šilas forest oak",
@@ -1006,9 +1011,10 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:%C5%A0perberi%C5%B3_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Oak (Quercus robur, presumed)",
+   "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak",
+   "reason": "Same tree as the 'Šperberių ąžuolas' entry further below (identical coordinates, 55.555108/21.324779). Already verified and delivered as pri_001 (Šperberiai Oak), published in data/cities/priekule.json. This English-transliterated duplicate from the Commons sweep was left at status lead when the Lithuanian-named duplicate was marked done; bookkeeping fixed 2026-09-06, no new research needed."
   },
   {
    "name": "Žadeikoniai oak",
