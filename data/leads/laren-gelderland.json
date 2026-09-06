@@ -1,0 +1,32 @@
+{
+  "place": "Laren (Gelderland)",
+  "country": "Netherlands",
+  "note": "New standalone lead file from the bomenbieb.nl verification batch (2026-09-06). This is Laren in the municipality of Lochem, Gelderland, NOT the better-known Laren, North Holland; the two must never be conflated on a page or in a slug.",
+  "leads": [
+    {
+      "id": "lar_001",
+      "name": "The Dikke Boom of Verwolde",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 450 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 780,
+      "location": {
+        "address": "Landgoed Verwolde, Jonker Emile Laan 5, 7245 TL Laren (Gelderland)",
+        "latitude": 52.199070818616,
+        "longitude": 6.3977436559161,
+        "neighbourhood": "Landgoed Verwolde"
+      },
+      "verified_sources": [
+        "https://landgoedverwolde.nl/dikke-boom/",
+        "https://achterhoek.nl/Dikke-Boom-Verwolde"
+      ],
+      "access": "Free. Stands on the grounds of Landgoed Verwolde, a private estate whose walking paths are open to the public; a dedicated hardened path (the 'Dikke Boompad') was built specifically to reach the tree, including for visitors with mobility limitations, and is signposted in yellow and black. No ticket, fee or opening hours found.",
+      "transport": "Rural estate outside Laren (Gld), municipality of Lochem; reached by the estate's own walking trails, not by public transport.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Bomenbieb.nl lead ('dikke boom verwolde', planted band 1500-1600, species_nl zomereik) gave the coordinate; used only as one of the two sources per licence, facts only. Widely reported as the largest solitary Pedunculate Oak (zomereik) in the Netherlands. AGE: sources give 400-500 years (achterhoek.nl says 450-500; other coverage says 400-450), consistent with bomenbieb's own 1500-1600 planting band; used the wider 400-500 span rather than picking a false-precise midpoint. GIRTH: reported as 'nearly 8 metres' / '7.8 metres' across sources (not fetched directly from a page giving an exact figure this pass; recorded as 780 cm, flag as approximate). HEIGHT: reported elsewhere as 25 m (from search summary only, not confirmed on a fetched page this pass -- do not repeat as fact without a direct source). HISTORY: in 1767 a miller offered 275 guilders for the tree's timber to make two millstone axles; the estate's owners (the Van der Borch family) refused, and the tree survived. Named 'Boom van het Jaar' / 'Tree of Gelderland' in 2018 and called the 'Jewel of Verwolde' by the estate itself. A nearby oak, 'Oom Frits', planted 1791 to mark a family birth, was storm-damaged in 2006 and died in 2011 -- good contrast material, not the same tree, never to be conflated. A 2005 restoration programme (groundwater monitoring, compost/mycorrhiza treatment, lime dressing) addressed root dieback on the south side, caused by an adjacent heavily fertilised maize field; this is evidence of active care and recent vitality, not a health concern for today. SINGLE-TREE-DESTINATION CANDIDATE: no Ancient Trees page exists for Laren (Gld) or Lochem. The tree has its own dedicated visitor path built specifically to reach it, a provincial 'Tree of the Year' title, and a real, colourful history; clears the single-famous-tree exception (2026-08-31 ruling) easily. Awaiting a place/page decision; not published by this pass. NAMING CAUTION: do not confuse with Laren, North Holland (a well-known separate town); the slug/place name must specify Gelderland or Lochem."
+    }
+  ],
+  "blocked": []
+}

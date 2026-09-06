@@ -1,0 +1,36 @@
+{
+ "place": "Coppenbrügge",
+ "note": "2026-09-06 verify pass (famous-germany batch): Peter-Linde verified and clears the single-tree-destination bar. See leads entry for full write-up.",
+ "leads": [
+  {
+   "id": "cpb_001",
+   "name": "The Peter-Linde",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "age_estimate": "roughly 500 to 700 years",
+   "age_min": 450,
+   "age_max": 750,
+   "girth_cm": 664,
+   "location": {
+    "address": "Burgwall, Burg Coppenbrügge, 31863 Coppenbrügge, Niedersachsen, Germany",
+    "latitude": 52.118372,
+    "longitude": 9.546986,
+    "neighbourhood": "Burg Coppenbrügge (castle wall)"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/baumregister/999-peterlinde_in_coppenbruegge/",
+    "https://de.wikipedia.org/wiki/Burg_Coppenbr%C3%BCgge"
+   ],
+   "access": "Free. Stands on the castle wall (Burgwall) reached by a public footpath right before the castle gate; the castle grounds and wall walk are open to the public outside museum hours (museum open Thu-Sun and holidays 14:00-17:00, castle park otherwise walkable).",
+   "transport": "In the town centre of Coppenbrügge; free parking at the castle, reachable by regional bus.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): a summer linden (Tilia platyphyllos) growing directly on the stone castle wall of Burg Coppenbrügge, its short trunk partly rooted into and over the masonry. Two independent sources agree: baumkunde.de (last field observation 13 Feb 2022, girth 6.6m at 50cm height, height 11.0m, vital with a masonry-filled hollow and crown-securing cables) and de.wikipedia's Burg Coppenbrügge article (girth 6.64m as of 2017, same age range, designated Naturdenkmal). Named for a 1697 visit by Tsar Peter I of Russia, part of a diplomatic meeting with Electress Sophie of Hanover known as the 'Damenfrieden von Coppenbrügge' (Ladies' Peace of Coppenbrügge), said to have helped avert war between Austria and Brandenburg-Prussia. Depicted in a Merian engraving from 1654 (predating the Peter connection, so the tree itself is confirmed older than the 1697 legend). An 18th-century (1718) source describes it having been trained for roughly a century as a three-storey walkable tree bower entered directly from the castle's first floor; today the crown is irregular with most of the old trained branches broken away. Age given as a range (500-700y) by both sources, not narrowed further. Girth recorded as both 660cm (baumkunde, 2020 measurement) and 664cm (Wikipedia, 2017 measurement); used baumkunde's more recent figure, both close enough to be the same growth. No conflicting facts beyond the ordinary growth between measurements. Anecdote to lead with: a linden that people once climbed INTO, via a room built inside its living branches, to drink with a future Tsar.",
+   "photo_candidates": [
+    "https://commons.wikimedia.org/wiki/File:Burg_Coppenbr%C3%BCgge_Peterlinde.jpg",
+    "https://commons.wikimedia.org/wiki/File:Peter-Linde_Burg_Coppenbr%C3%BCgge.jpg",
+    "https://commons.wikimedia.org/wiki/File:Peter_linde.JPG"
+   ]
+  }
+ ],
+ "blocked": []
+}

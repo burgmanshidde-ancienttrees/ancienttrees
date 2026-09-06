@@ -1,0 +1,32 @@
+{
+  "place": "Doorwerth",
+  "country": "Netherlands",
+  "note": "New standalone lead file from the bomenbieb.nl verification batch (2026-09-06).",
+  "leads": [
+    {
+      "id": "drw_001",
+      "name": "The Acacia of Kasteel Doorwerth",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "roughly 350 years, planted 1678",
+      "age_min": 340,
+      "age_max": 350,
+      "girth_cm": 700,
+      "location": {
+        "address": "Fonteinallee 2b, Doorwerth (inner courtyard of Kasteel Doorwerth)",
+        "latitude": 51.966682,
+        "longitude": 5.788309,
+        "neighbourhood": "Kasteel Doorwerth"
+      },
+      "verified_sources": [
+        "https://doorwerthinfo.nl/en/castle-doorwerth/old-acacia-tree-castle-doorwerth/",
+        "https://www.gld.nl/nieuws/2105326/even-slikken-eeuwenoude-acacia-kasteel-doorwerth-wordt-gekortwiekt"
+      ],
+      "access": "Paid entry. Stands in the inner courtyard of Kasteel Doorwerth, a museum castle run by Geldersch Landschap en Kasteelen, open Tuesday to Sunday 11:00-17:00 (last entry 16:00), closed Mondays except school holidays and special Monday openings; adult admission EUR 15.00, children 4-18 EUR 7.50 (checked 2026-09-06, verify before travel).",
+      "transport": "Doorwerth, between Arnhem and Oosterbeek; reachable by local bus from Arnhem or Oosterbeek, exact stop not verified this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Bomenbieb.nl lead ('robinia kasteel doorwerth', planted '1678', species_nl eenbladige-robinia) gave the coordinate; used only as one of the two sources per licence. AGE is a documented planting date, not a vague estimate: 1678, planted (per tradition) by Anton I, Count of Aldenburg, specifically to commemorate the Peace of Nijmegen ending a war with France; a 2016 news article calls it '338 years old' that year, which lines up exactly with a 1678 planting. Widely reported as the oldest and thickest Black Locust (acacia/robinia) in the Netherlands and one of the oldest in Western Europe (the species itself was first brought to Europe from North America in the early 1600s by the Frenchman for whom it is named, Jean Robin). GIRTH: reported as roughly 7 metres (700 cm) across sources; not independently re-measured this pass. HISTORY: originally three acacias were planted together in the inner courtyard for the same commemoration; two fell in the late 19th century, leaving this one. It survived heavy fighting during the Battle of Arnhem in September 1944 (grenade/shell damage to the crown) while the castle itself was severely damaged and later rebuilt; a genuinely dramatic survival story. Received arboricultural care in 1965 by Jorn Copijn (the same tree surgeon family that saved the Achterberg linden, a nice cross-reference if that tree is ever reopened). Began leaning east after 2010, leading to a crown reduction that year and a more drastic pruning in February 2016 (over a third of the crown removed) after a large branch fell the previous summer; the arborist in charge said afterwards 'there will still be a tree standing' and expected recovery the same growing season, so this is a managed, recovering tree rather than a dying one. SPECIES NOTE: bomenbieb tags it 'eenbladige-robinia' (a single-leaflet Robinia cultivar), but both independent sources call it a plain Robinia pseudoacacia / acacia without mentioning any unifoliola cultivar trait; used the standard species name and flagged the discrepancy rather than following the register tag. SINGLE-TREE-DESTINATION CANDIDATE: no Ancient Trees page exists for Doorwerth. A documented, commemoratively-planted 348-year-old tree with a dramatic wartime survival story, inside a publicly ticketed museum castle, clears the single-famous-tree exception (2026-08-31 ruling) comfortably. Awaiting a place/page decision; not published by this pass."
+    }
+  ],
+  "blocked": []
+}

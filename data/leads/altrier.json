@@ -1,0 +1,32 @@
+{
+  "place": "Altrier / Hersberg (Bech), Luxembourg",
+  "country": "Luxembourg",
+  "note": "New standalone lead file from the bomenbieb.nl verification batch (2026-09-06).",
+  "leads": [
+    {
+      "id": "alt_001",
+      "name": "The Heeschbreger Bildchen (Oak of Hersberg)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 to 500 years, disputed",
+      "age_min": 280,
+      "age_max": 520,
+      "girth_cm": 750,
+      "location": {
+        "address": "Roadside between Altrier and Hersberg, commune of Bech, near Heeschbregerwee",
+        "latitude": 49.752791,
+        "longitude": 6.327792,
+        "neighbourhood": "Hersberg, commune of Bech"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_de_Hersberg",
+        "https://lestetardsarboricoles.fr/wordpress/2024/09/13/le-chene-de-hersberg-grand-duche-de-luxembourg/"
+      ],
+      "access": "Free. Stands beside a public road connecting Altrier and Hersberg, marking the start of a signposted hiking trail toward Mullerthal; a genuine pilgrimage site with a statue in the hollow trunk, visited freely year-round and the site of an annual public procession.",
+      "transport": "Rural, between the villages of Altrier and Hersberg (commune of Bech), roughly 24 km northeast of Luxembourg City; reached by road or the Mullerthal-area trail network, not by public transport.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Bomenbieb.nl lead ('duizendjarige eik altrier', planted band '1700', species_nl zomereik) gave the coordinate; used only as one of the two sources per licence. NAME VS AGE: the brief was right to flag this. The tree is popularly called a 'thousand-year oak' (Dutch 'duizendjarige eik') but NO source found supports anywhere near that age; this is a folk name, not a documented figure, and must never be repeated as fact. AGE, disputed between sources: a 2024 field-visit blog (lestetardsarboricoles.fr) reports 'official assessments suggest around 300 years' (consistent with bomenbieb's own 1700 planting band, ~326 years as of 2026) against the same visitor's own higher personal estimate of 'approximately 500 years'; French Wikipedia repeats the ~500-year figure without sourcing it further. Recorded the full disputed range rather than picking a winner. GIRTH SERIES (breast height, from French Wikipedia and the 2024 blog, both citing historical measurements): 574 cm (1907), 687 cm (1958), 740 cm (1997), 752 cm (2016); a 2024 visitor attempt at 746 cm was called unreliable due to the protective grille around the trunk. Used 750 cm (2016 figure) as the most recent clean measurement. VITALITY: directly confirmed alive by a dated September 2024 first-person visit (lestetardsarboricoles.fr): trunk sound, no fungus, minimal bark loss, but crown notably declined, the northeast half of the framework gone and only about a third of the remaining crown bearing leaves. Flagged for this reason: worth a re-check in a future pass, but this is real recent evidence of life, not an unconfirmed gap. HISTORY: a statue of Notre-Dame, Consolatrice des affligés stands in the tree's hollow trunk behind a metal grille; since 1936 an annual torch-lit procession from the parish church to the tree takes place every 15 August (Assumption), ending in an open-air sermon at the tree. Also called 'Chene de Hersberg' (French) and the tree carries its own French and Luxembourgish Wikipedia articles plus a Wikidata entry (Q2972106) describing it as a cross-border Marian pilgrimage site. SINGLE-TREE-DESTINATION CANDIDATE: no Ancient Trees page exists for Altrier, Hersberg or Bech. A living pilgrimage tree with an annual public ceremony, its own multilingual Wikipedia coverage and a genuine folk legend clears the single-famous-tree exception (2026-08-31 ruling) easily; the folk-name-vs-real-age tension is itself good, honest story material rather than a reason to hold it back. Awaiting a place/page decision; not published by this pass."
+    }
+  ],
+  "blocked": []
+}

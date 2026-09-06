@@ -204,7 +204,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 7 | Seville | 49.06 | 170,545 | 43 | 6 | 2 | - | 20 | measured |
 | 8 | Florence | 37.08 | 184,099 | 23 | 8 | 1 | 27 | 30 | measured |
 | 9 | Brisbane | 45.06 | 162,602 | 19 | 1 | 2 | 189 | 30 | measured |
-| 10 | Brussels | 41.93 | 176,863 | 30 | 4 | 1 | 436 | 30 | measured |
+| 10 | Brussels | 41.93 | 176,863 | 31 | 4 | 1 | 436 | 30 | measured |
 | 11 | Vienna | 39.07 | 283,090 | 32 | 13 | 5 | 376 | 30 | measured |
 | 12 | London | 49.34 | 718,291 | 23 | 10 | 1 | - | 30 | measured |
 | 13 | Prague | 37.93 | 303,350 | 18 | 13 | 3 | 30 | 30 | measured |
@@ -250,7 +250,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 53 | Little Rock | 20.40 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 54 | Toronto | 19.96 | 411,011 | 6 | - | - | - | 30 | measured |
 | 55 | Nijmegen | 9.98 | 42,338 | 22 | 1 | 3 | 159 | 20 | measured |
-| 56 | Tokyo | 10.55 | 394,702 | 16 | 8 | 1 | 6 | 20 | measured |
+| 56 | Tokyo | 10.55 | 394,702 | 17 | 8 | 1 | 6 | 20 | measured |
 | 57 | Austin | 19.39 | 226,631 | 5 | - | - | - | 20 | measured |
 | 58 | Seoul | 17.68 | 206,265 | 8 | 5 | 1 | - | 30 | measured |
 | 59 | Indianapolis | 18.28 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -327,7 +327,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 130 | Edmonton | 9.38 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 131 | Turku | 9.24 | - | 1 | - | - | - | 10 | predicted (travel demand) |
 | 132 | Winnipeg | 9.21 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 133 | Canberra | 9.14 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 133 | Canberra | 9.14 | - | 1 | - | - | - | 10 | predicted (travel demand) |
 | 134 | Maastricht | 4.56 | 47,763 | 14 | - | 1 | 137 | 20 | measured |
 | 135 | Pisa | 5.85 | 52,174 | - | - | - | - | 10 | predicted (travel demand) |
 | 136 | Nashville | 8.93 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -536,7 +536,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 339 | Nafplio | 1.24 | 31,193 | - | - | - | - | 10 | predicted (travel demand) |
 | 340 | Ghent | 1.14 | 82,757 | 6 | - | 1 | - | 20 | measured |
 | 341 | Evora | 0.78 | 15,345 | - | - | - | - | 10 | predicted (travel demand) |
-| 342 | Beijing | 1.14 | 269,737 | 6 | - | - | - | 30 | measured |
+| 342 | Beijing | 1.14 | 269,737 | 7 | - | - | - | 30 | measured |
 | 343 | Deventer | 0.57 | - | 7 | - | 1 | 213 | 20 | measured |
 | 344 | Liverpool | 1.14 | 248,189 | 2 | - | - | - | 20 | measured |
 | 345 | San Diego | 1.14 | 214,939 | 4 | - | 1 | - | 20 | measured |

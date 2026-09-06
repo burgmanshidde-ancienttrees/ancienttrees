@@ -120,9 +120,10 @@
     "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_02_ies.jpg",
     "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_03_ies.jpg"
    ],
-   "status": "lead",
+   "status": "held",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "hold_reason": "2026-09-06 verify pass: three attempts across two searches and a direct fetch (badbentheim.de/poi/herrenberg-und-schlossstrasse, which the town's own tourism site describing that exact street, returned 404) found no dedicated source giving age, girth or a documented individual history for these named trees, only that Wikimedia Commons holds a 3-photo category for a pair of Gerichtslinden on Schlossstrasse. Existence is plausible (named, photographed, on a real street beside the castle) but unverified per this project's two-source bar. Held as a lead rather than blocked; a future pass could try baumkunde.de's own register search directly or the Grafschaft Bentheim heritage society."
   },
   {
    "name": "Franzosenlinde (Bargischow)",
@@ -144,9 +145,10 @@
     "https://commons.wikimedia.org/wiki/File:Belsener_Linde_02.jpg",
     "https://commons.wikimedia.org/wiki/File:Belsener_Linde_03.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "2026-09-06 verify pass: DEAD. baumkunde.de titles its own entry with the dagger deceased-marker, '† Die Linde in Belsen'. The tree (a c.300-year-old Friedenslinde planted 1714-1717, girth 4.5m, height 20m, a landmark of Belsen, part of Moessingen) fell victim to Hurricane/Sturm Kyrill on 18 January 2007. Never ship."
   },
   {
    "name": "Königslinde (Invalidenfriedhof Berlin)",
@@ -156,22 +158,25 @@
     "https://commons.wikimedia.org/wiki/File:Invalidenfriedhof,_Friedhofsmauer_mit_K%C3%B6nigslinde.jpg",
     "https://commons.wikimedia.org/wiki/File:Invalidenfriedhof,_K%C3%B6nigslinde_1897.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "2026-09-06 verify pass: DEAD/REMOVED, not a candidate. The original Königslinde on the Invalidenfriedhof (associated with Frederick the Great visiting the Invalidenhaus) was felled when the Berlin Wall's border installations (death strip, control strip, dog run) were built through the cemetery grounds during the GDR period. A NEW tree was planted at the site after reunification once the walled-up section reopened. The current tree is a young replacement, not the historic specimen; the 1897 photograph on Commons shows the original, already gone. Sources: dieterwunderlich.de and gedenktafeln-in-berlin.de both describe the felling and replanting. Never ship as an ancient/veteran tree; could appear as historical context inside another Berlin tree's story per the dead-tree-as-context rule, never as its own entry."
   },
   {
    "name": "Peter-Linde (Coppenbrügge)",
-   "lat": null,
-   "lng": null,
+   "lat": 52.118372,
+   "lng": 9.546986,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Burg_Coppenbr%C3%BCgge_Peterlinde.jpg",
     "https://commons.wikimedia.org/wiki/File:Peter-Linde_Burg_Coppenbr%C3%BCgge.jpg",
     "https://commons.wikimedia.org/wiki/File:Peter_linde.JPG"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "published",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by baumkunde.de and de.wikipedia as Sommerlinde",
+   "reason": "2026-09-06 verify pass: delivered to data/leads/coppenbrugge.json as cpb_001, single-tree-destination exception. Grows directly on the stone Burgwall of Burg Coppenbrügge, named for a 1697 visit by Tsar Peter I, depicted in a 1654 Merian engraving predating that legend, once trained as a walkable three-storey tree bower per an 18th-century account. Two independent sources (baumkunde.de, de.wikipedia) agree on 500-700y and ~6.6m girth. Public footpath access confirmed.",
+   "tree_id": "cpb_001"
   },
   {
    "name": "Dorflinde in Aua (Neuenstein)",
@@ -263,27 +268,31 @@
   },
   {
    "name": "Galenbecker Tanzlinde",
-   "lat": null,
-   "lng": null,
+   "lat": 53.62019617,
+   "lng": 13.70366,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Tanzlinde.jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "published",
+   "species": "Common Lime (Tilia x europaea)",
+   "species_basis": "confirmed by English Wikipedia and baumkunde.de (Hollaendische Linde)",
+   "reason": "2026-09-06 verify pass: delivered to data/leads/galenbeck.json as gnb_001, single-tree-destination exception. The only surviving dance linden (Tanzlinde) in Mecklenburg-Vorpommern and the only one in northern Germany, planted 1788 for Princess Louise of Mecklenburg-Strelitz ('Luisenlinde'), carrying an octagonal dance platform. Two independent sources (en.wikipedia, baumkunde.de) agree on species, age and size; publicly accessible.",
+   "tree_id": "gnb_001"
   },
   {
    "name": "Gerichtslinde Erdmannrode",
-   "lat": 50.812168,
-   "lng": 9.786739,
+   "lat": 50.81187,
+   "lng": 9.78673,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_01.jpg",
     "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_02.jpg",
     "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_03.jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "published",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by baumkunde.de as Sommerlinde",
+   "reason": "2026-09-06 verify pass: delivered to data/leads/erdmannrode.json, single-tree-destination exception. Huge girth (8.65m), 500y estimate, official Naturdenkmal (confirmed by its own entry in de.wikipedia's Liste der Naturdenkmale in Schenklengsfeld), a 'geleitete Linde' of the same type as the published Schwalm-Eder cluster but too far (33.5km) to join it, so stands as its own single-tree destination instead. Published as edm_001, not erd_001 (that id prefix was already used by Nantes).",
+   "tree_id": "edm_001"
   },
   {
    "name": "Gerichtslinde Wehren (Fritzlar)",
@@ -294,21 +303,23 @@
     "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(2)_mit_Kirche.jpg",
     "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(3)_Wurzelstock.jpg"
    ],
-   "status": "lead",
+   "status": "held",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "hold_reason": "2026-09-06 verify pass: existence and a rough description confirmed (a Sommerlinde, 19m tall, at the foot of the churchyard wall in Wehren, a Fritzlar district, designated Naturdenkmal, age loosely estimated 200-300 years by tourism/hiking sources, 'was once likely' a court linden, hedged in the source's own words). No girth found, no dedicated Wikipedia article, no second independent source beyond generic Commons/tourism copy located in one search pass. Modest age range and hedged history do not clearly clear the single-tree-destination bar next to Schlagsdorf or Erdmannrode, verified the same pass with dramatic documented history and much larger girths. Held as a lead rather than blocked; a future pass with a dedicated LAGIS Hessen or Fritzlar municipal source could firm this up."
   },
   {
    "name": "Gerichtslinde Zehdenick",
-   "lat": null,
-   "lng": null,
+   "lat": 52.97734,
+   "lng": 13.33607,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Zehdenick.JPG",
     "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG"
    ],
-   "status": "lead",
+   "status": "verified_held",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "2026-09-06 verify pass: verified (own Wikipedia article, official Naturdenkmal No. 228) but a weaker single-tree case than the other Gerichtslinden checked this pass: no girth/height found, judicial history explicitly uncertain per the source itself, age only 350-400y. Written up in data/leads/zehdenick.json as zeh_001 for a writer to weigh."
   },
   {
    "name": "Tanzlinde (Himmelsberg)",
@@ -511,15 +522,17 @@
   },
   {
    "name": "Gerichtslinde in Schlagsdorf",
-   "lat": null,
-   "lng": null,
+   "lat": 53.7825,
+   "lng": 10.8654,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf312.JPG",
     "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf37.JPG"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "published",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "species_basis": "confirmed by mecksikon.de as Winterlinde",
+   "reason": "2026-09-06 verify pass: delivered to data/leads/schlagsdorf.json as sgd_001, single-tree-destination exception. Roughly 500y old, girth 8.7m, height 20m, real documented 1518 ducal court and 1589 punishment-post history, features on the village's own coat of arms. Two independent sources agree (rehna.de official municipal page, mecksikon.de).",
+   "tree_id": "sgd_001"
   },
   {
    "name": "Schlosslinde (Schlettau)",

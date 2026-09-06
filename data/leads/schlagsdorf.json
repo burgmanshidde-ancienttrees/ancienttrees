@@ -1,0 +1,35 @@
+{
+ "place": "Schlagsdorf",
+ "note": "2026-09-06 verify pass (famous-germany batch): Gerichtslinde von Schlagsdorf verified and clears the single-tree-destination bar. See leads entry for full write-up.",
+ "leads": [
+  {
+   "id": "sgd_001",
+   "name": "The Gerichtslinde of Schlagsdorf",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "age_estimate": "roughly 500 years",
+   "age_min": 450,
+   "age_max": 550,
+   "girth_cm": 870,
+   "location": {
+    "address": "Churchyard, Hauptstraße, 19217 Schlagsdorf, Mecklenburg-Vorpommern, Germany",
+    "latitude": 53.7825,
+    "longitude": 10.8654,
+    "neighbourhood": "Schlagsdorf village churchyard"
+   },
+   "verified_sources": [
+    "https://www.rehna.de/portal/seiten/gerichtslinde-von-schlagsdorf-900000091-28460.html",
+    "https://mecksikon.de/?aid=272&p=article"
+   ],
+   "access": "Free. Stands in the churchyard of Schlagsdorf's Gothic village church, on Hauptstrasse, open village ground.",
+   "transport": "In the centre of Schlagsdorf village, Amt Rehna, Nordwestmecklenburg district; reached by road.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): a winter linden (Tilia cordata) roughly 500 years old, girth 8.7m, crown height 20m, its several stems grown together into one mighty trunk. Two independent sources agree closely: rehna.de (the official Amt Rehna municipal page, which stresses the court history is documented rather than legend, 'keine Sage') and mecksikon.de (a Mecklenburg local-lore site, giving the same 8.7m/20m figures and a planting estimate around 1523). Real documented judicial history: in 1518 Duke Magnus of Saxony summoned Schlagsdorf's farmers under the tree to swear allegiance, then held a regional court (Landgericht) there on 7 October 1518; from 1589 a whipping/punishment post stood at the site for those sentenced to church discipline. The tree is on Schlagsdorf's own coat of arms (a linden branch with four leaves for the village's four districts), a strong sign of genuine local fame rather than an obscure folk name. No girth/height conflict between the two sources. Location precision is approximate (churchyard-level, not a tree-level register coordinate); a mapped photo or satellite check would upgrade it. Anecdote to lead with: the tree that decided a village had a new duke, then decided who got punished, now decorating the town's own coat of arms.",
+   "photo_candidates": [
+    "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf312.JPG",
+    "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf37.JPG"
+   ]
+  }
+ ],
+ "blocked": []
+}
