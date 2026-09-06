@@ -462,6 +462,24 @@
    "seen": "2026-09-06",
    "cost": "two fetch attempts during the Lithuania (_famous-lithuania) verify pass, trying to reach the municipality's own list of protected natural heritage objects for Silale town",
    "workaround": "unknown this pass; lt.wikipedia's per-object articles and pamatyklietuvoje.lt/silalesbiblioteka.lt covered the two Silale trees checked well enough without it. A Wayback Machine snapshot was not tried."
+  },
+  "am.lrv.lt": {
+   "behaviour": "Cloudflare JS challenge page ('Just a moment...', HTTP 200 body full of _cf_chl_opt obfuscated JS, not a connection error) returned to a plain curl fetch; a refusal, not a hang, fails fast.",
+   "seen": "2026-09-06",
+   "cost": "one fetch attempt during the Lithuania famous-trees batch B verify pass, trying to reach the Ministry of Environment's own news release on the December 2024 Renavas spruce public vote",
+   "workaround": "LRT (lrt.lt) independently covered the same vote result and substituted fine as the second source."
+  },
+  "keliaukpats.lt": {
+   "behaviour": "TLS/SSL handshake failure (curl exit 35, OPENSSL_internal:TLSV1_ALERT_INTERNAL_ERROR) on both a plain fetch and a retry with --tlsv1.2; not a hang, fails in under a second each time.",
+   "seen": "2026-09-06",
+   "cost": "two fetch attempts during the Lithuania famous-trees batch B verify pass, trying a travel-blog page on the Stakai oak",
+   "workaround": "unknown this pass; saugoma.lt (the State Protected Areas Service's own visitor page) and lt.wikipedia covered the tree well enough without it."
+  },
+  "stvk.lt": {
+   "behaviour": "Not blocked and not a hang: returns HTTP 200 fast, but the whole page is an Angular single-page app shell with no server-rendered content, so a plain curl gets an empty shell and none of the register data (girth, height, age, designation date) that the page actually shows in a browser.",
+   "seen": "2026-09-06",
+   "cost": "two fetch attempts (Renavas spruce and Stakai oak state-register pages) during the Lithuania famous-trees batch B verify pass, both wasted",
+   "workaround": "This is the state Register of Protected Territories (Saugomų teritorijų valstybės kadastras) map portal, cited by nearly every lt.wikipedia protected-tree article as source name=stk. Its figures are usually already quoted inline in the citing Wikipedia article, which substitutes fine. A rendering fetch (headless browser) would likely work per the Tenerife/Cabildo precedent in BRIEF_RESEARCH.md, not tried this pass."
   }
  }
 }

@@ -1,6 +1,57 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 6) - Finished the standing famous-lithuania verify claim; 4 new single-tree places, 5 trees added to 2 existing cities
+
+Picked up after an earlier attempt this window stopped at 30 minutes having
+shipped 0 trees, with 90 of 120 unspent, and 3 uncommitted verify-pass
+output files sitting on disk. Rung 2 (health.py): Data digest failed on
+2026-09-05, same known git-push race already logged FOR HIDDE (no
+`workflows` scope in this environment to fix the retry loop), not a fresh
+problem. Rung 3: leads.py --ready had 1 tree (Gerichtslinde Zehdenick,
+Germany, too thin alone to dispatch a pass for). Rung 0: `_famous-lithuania`
+and `_famous-poland` both showed standing claims; `_famous-lithuania`'s
+verify work (10 candidates, judged but never merged or committed) was
+sitting in `data/research/famouslithuania-batch{A,B,C}-verified.json`, so
+finished it rather than starting anything new, per the recovery brief.
+
+Dispatched a write-stories agent for the 6 trees batches B and C still
+needed prose for (batch A already carried full stories from the earlier
+attempt). Merged all 10: **4 new single-tree places** (Renavas Thick
+Spruce, reckoned Lithuania's thickest spruce and 2024 national-vote winner;
+Kybarciai Oak, a hollow oak a person can walk into; Grybiskes Oak, 6th in
+the 2023 Tree of the Year vote and site of the country's largest recorded
+porcini; The Beautiful Oak of Plauginiai Forest, signposted from the
+highway with its own interpretive trail), **2 day-trip additions to Plunge**
+(Mingelos Oak, Witch's Ash, the latter renumbered plg_006 from the verify
+pass's rag_001), **1 addition to Degsne** (Budininkai Oak, deg_002, joining
+the existing single-tree page rather than needing its own destination
+case), and **2 additions to Kaunas** (Dubrava Twins, a fused oak-and-pine
+pair on Samylai's coat of arms; the newly-designated Netoniai Oak). 2 more
+candidates stay correctly held as leads (Skaborai I: OSM shows a
+residential-landuse polygon around the pin, private curtilage; Stakai:
+girth doesn't support the register's own 1000-year claim and nothing else
+corroborates it).
+
+Canonicalised the write pass's "Common Oak" to "Pedunculate Oak" at merge
+(the writer was told to change no verified field, correctly left it for
+merge time). Fixed 5 Contract B/C word-count failures the merge itself
+introduced (Kaunas and Plunge's intros ran to 114 words against Contract
+C's 60-100 cap after describing more trees; Degsne, Grybiskes and
+Kybarciai's question_context ran over Contract B's 200-word ceiling) before
+preflight would pass. Ran city_names.py per new place (Renavas resolved
+cleanly; Kybarciai, Grybiskes, Plauginiai Forest, Gojaus Miskas have no
+Wikipedia article within 40km and are correctly recorded unresolved, same
+shape as Degsne). Note: Gojus Forest Oak (goj_001) from batch A was also
+merged as a new place, Gojaus Miskas, having been left for "the next pass"
+to decide in the verify pass's own notes; its built visitor infrastructure
+and standalone signage clear the single-tree-destination bar.
+
+preflight (459 cities, 0 FAIL after fixes), superlatives (681 claims, no
+collisions), build (7050 pages via qa.py) and qa all clean. Released the
+`_famous-lithuania` claim. Left `_famous-poland`'s claim untouched, it
+belongs to a different, still-standing attempt.
+
 ## 2026-09-06 (continuation 5) - Borrowdale ships; caught two near-duplicates before they shipped; Box Elder species page
 
 Picked up after an earlier attempt in this window stopped at 74 minutes

@@ -2275,6 +2275,10 @@
       "Rengschburg",
       "ma tomo Lekenpu"
     ],
+    "renavas": [
+      "Renowo",
+      "Rėnavs"
+    ],
     "reyersviller": [
       "Reyersweiler"
     ],
@@ -3392,6 +3396,7 @@
     "rannee": "Rannée",
     "raudone": "Raudonė",
     "regensburg": "Regensburg",
+    "renavas": "Renavas",
     "reyersviller": "Reyersviller",
     "reykjavik": "Reykjavík",
     "rhenen": "Rhenen",
@@ -3578,11 +3583,14 @@
     "debina": "no article within 40 km, tried Dębina (Dębina, no coordinates, disambiguation page); Dębina, Poland; search: Poznań Dębina railway station; search: Hel, Poland; search: Sopot",
     "degsne": "no reliable article: Wikipedia matched the forest-stand name to the nearby city of Alytus (within 40km, wrong place), caught and reverted 2026-09-05 rather than shipped as a false alias",
     "erdmannrode": "no article within 40 km, tried Erdmannrode; Erdmannrode, Germany",
+    "gojaus-miskas": "no article within 40 km, tried Gojaus Miskas; Gojaus Miskas, Lithuania; search: Lithuanian grammar",
+    "grybiskes": "no article within 40 km, tried Grybiskes; Grybiskes, Lithuania",
     "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii",
     "hino": "no article within 40 km, tried Hino (Hino, no coordinates, disambiguation page); Hino, Japan; search: Hino, Tokyo; search: Hino Ranger; search: Hino Dutro",
     "hinode": "no article within 40 km, tried Hinode (Hinode, no coordinates, disambiguation page); Hinode, Japan; search: Eisuke Hinode; search: Tokyo; search: Hinode Bridge",
     "jaegerspris-nordskov": "no article within 40 km, tried Jægerspris Nordskov; Jægerspris Nordskov, Denmark; search: List of individual trees",
     "kawago": "no article within 40 km, tried Kawago; Kawago, Japan; search: Nogizaka46",
+    "kybarciai": "no article within 40 km, tried Kybarciai; Kybarciai, Lithuania",
     "moffat": "no article within 40 km, tried Moffat (Moffat, no coordinates, disambiguation page); Moffat, United Kingdom; search: Steven Moffat; search: Glasgow; search: List of postcode districts in the United Kingdom",
     "nagai": "no article within 40 km, tried Nagai (Nagai, no coordinates, disambiguation page); Nagai, Japan; search: Hiroshi Nagai; search: Nagai; search: List of cities in Japan",
     "neba": "no article within 40 km, tried Neba (Neba, no coordinates, disambiguation page); Neba, Japan; search: Toyota, Aichi; search: New Japan Cup; search: List of villages in Japan",
@@ -3591,6 +3599,7 @@
     "ono": "no article within 40 km, tried Ono (Ono, no coordinates, disambiguation page); Ono, Japan (Ono, Hyōgo, 580 km away); search: Jiro Ono; search: Masanosuke Ono; search: Yoko Ono",
     "ora": "no article within 40 km, tried Ora (Ora, no coordinates, disambiguation page); Ora, Japan; search: Rita Ora; search: Ora (Rita Ora album); search: Phoenix (Rita Ora album)",
     "pirangi": "no article within 40 km, tried Pirangi (Pirangi, 2225 km away); Pirangi, Brazil; search: Pirangi; search: São Paulo; search: French invasions of Brazil",
+    "plauginiai-forest": "no article within 40 km, tried Plauginiai Forest; Plauginiai Forest, Lithuania",
     "reinborn": "no article within 40 km, tried Reinborn; Reinborn, Germany; search: List of mountains and hills of the Taunus",
     "takahama": "no article within 40 km, tried Takahama (Takahama, no coordinates, disambiguation page); Takahama, Japan; search: Japan Air Lines Flight 123; search: Takahama, Aichi; search: Kyoshi Takahama",
     "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",

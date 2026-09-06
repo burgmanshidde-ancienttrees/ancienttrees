@@ -1,0 +1,63 @@
+{
+  "city": "Plauginiai Forest",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Plauginiai Forest maps one tree: an oak Lithuania signposts by name from the public highway, three and a half kilometres before you reach it. A 400-metre interpretive trail, carved sculptures and a rest area with a fireplace have been built around this single tree. Published alone here because the tree is the destination, not because Plauginiai Forest's research is finished.",
+  "meta_description": "The Beautiful Oak of Plauginiai Forest: a signposted Lithuanian oak with its own 400-metre interpretive trail and rest area.",
+  "question_meta": "Plauginiai Forest's only mapped tree is the Beautiful Oak, signposted from the highway with its own interpretive trail.",
+  "question_answer": "Plauginiai Forest's only mapped tree is the Beautiful Oak of Plauginiai Forest (Grazusis azuolas), a pedunculate oak about 5.8 metres round and 32 to 33 metres tall, reached by a purpose-built interpretive trail inside a botanical-zoological reserve of Dubysa Regional Park.",
+  "question_context": "The state forest service assessed the oak on 8 June 2017 and recorded 32 metres of height, 5.8 metres of girth at chest height and a condition of excellent. A local news report the following spring gave 5.8 metres and 33 metres, matching the figures carved into a wooden acorn marker at the foot of the trunk. Back in 1985 the figures were 28 metres and a diameter of 1.4 metres, so the tree has put on both height and thickness since somebody last got out the tape. It has been a nature monument since 1960 and was raised to republic-level significance in 1985, when the state decided this particular oak was worth pointing traffic at: it is signposted by name, Grazusis azuolas, the Beautiful Oak, from the public highway three and a half kilometres out. What waits at the end of the gravel road is a 400-metre interpretive trail built for one tree, with carved oak sculptures along it and a rest area with a pavilion and a fireplace. Its age is given as about 300 years by every source that mentions one, the wooden acorn included, and none of them says where the number comes from.",
+  "hero_tree_id": "pgn_001",
+  "oldest_tree_id": "pgn_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Lithuania signposts it by name from the public highway and has built a 400-metre interpretive trail, carved sculptures and a rest area around it alone."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Every source repeats about 300 years, including the tree's own carved marker, but none states where the figure comes from."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in a state forest reserve with a marked trail, no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car via road 148 between Raseiniai and Siluva, then a signposted gravel forest road (3.5km) and a 400m walk on the interpretive trail. No public transport reaches the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pgn_001",
+      "name": "The Beautiful Oak of Plauginiai Forest",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 300 years",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 580,
+      "height_m": 32,
+      "location": {
+        "address": "Plauginiai forest, near Bedančiai, Šiluva parish, Raseiniai District, Lithuania (within the Plauginiai botanical-zoological reserve, Dubysa Regional Park)",
+        "latitude": 55.46097,
+        "longitude": 23.10886,
+        "neighbourhood": "Plauginiai forest, Dubysa Regional Park"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Gra%C5%BEusis_Plaugini%C5%B3_mi%C5%A1ko_%C4%85%C5%BEuolas",
+        "https://amvmt.lrv.lt/media/viesa/saugykla/2023/11/u04cgf1KDeQ.pdf"
+      ],
+      "access": "Free and genuinely public: a state forest reserve reached via a signposted gravel forest road off road 148 (Raseiniai-Siluva), 3.5 km to a marked pull-in, then a purpose-built 400 m interpretive nature trail leads to the tree. Oak sculptures, a rest area with a pavilion and a fireplace, and a carved wooden acorn marker with the tree's own stats stand at the site, so this is an actively maintained, signposted tourist stop rather than a hidden spot.",
+      "transport": "No public transport; reached by car via road 148 between Raseiniai and Siluva, then the signposted forest gravel road (3.5 km) and a 400 m walk on the interpretive trail.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Lithuania signposts this oak by name from the public highway, three and a half kilometres before you get to it. Gražusis ąžuolas, the Beautiful Oak.\n\nWhat waits at the end of the gravel road is a 400-metre interpretive trail built for one tree, with carved oak sculptures along it, a rest area with a pavilion and a fireplace, and a wooden acorn at the foot of the trunk carved with the tree's own measurements. The state forest service assessed it on 8 June 2017 and recorded 32 metres of height, 5.8 metres of girth at chest height and a condition of excellent. A local news report the following spring gave 5.8 metres and 33 metres, matching the acorn. Back in 1985 the figures were 28 metres and a diameter of 1.4 metres, so it has put on both height and thickness since somebody last got out the tape.\n\nIt has been a nature monument since 1960 and was raised to republic-level significance in 1985, which is when the state decided this particular oak in the Plauginiai forest reserve was worth pointing traffic at.\n\nIts age is given as about 300 years by every source that mentions one, the wooden acorn included, and not one of them says where the number comes from. Nobody we can find has dated it properly. If you know who has, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
