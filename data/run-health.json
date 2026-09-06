@@ -5799,6 +5799,37 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-06T01:48:42+00:00",
+   "date": "2026-09-06",
+   "run_id": "34004836204",
+   "minutes": 60.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 395,
+   "denials": 48,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(iconv), Bash(if), Bash(ls), Bash(mkdir), Bash(printf), Bash(python3), Bash(rm), Bash(set)",
+   "ended": "success",
+   "tokens": 14428052,
+   "claims_held": [
+    "_famous-japan",
+    "_famous-mexico"
+   ],
+   "commits": 14,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "amt-neuhaus",
+     "trees": 1
+    },
+    {
+     "city": "omishima",
+     "trees": 1
+    }
+   ],
+   "trees": 2,
+   "logged": true
   }
  ],
  "schedule_changes": [
