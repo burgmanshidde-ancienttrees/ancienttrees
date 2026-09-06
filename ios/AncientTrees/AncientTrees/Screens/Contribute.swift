@@ -86,7 +86,7 @@ struct ContributeView: View {
                         // true when profiles arrived. What is true, and is the
                         // thing they are actually asking, is that nobody sees
                         // who sent THIS.
-                        Text("Nobody sees who sent this, and we do not ask for your name.")
+                        Text("Nobody else sees who sent this, and we do not ask for your name.")
                     }
                     Section {
                         // Visible to everyone; sending needs the account that
