@@ -32,6 +32,31 @@ lost with the runner). `gh workflow run data-digest.yml` still 403s, this
 token still lacks `workflow_dispatch` scope. Nothing new to fix here; the
 next scheduled run picks it up.
 
+Rung 1: 35 unprocessed submission rows found via the Supabase service key
+(`outcome IS NULL`), all but one already thanked. 31 were vote bookkeeping
+("worth it" / "not worth it" / "vote undone" / one "Super" comment) with
+no action possible, set `outcome: holds` to match the established
+convention. Two were stale feedback from 2026-08-14: a genuine "wrong
+location" report on Baarn's brn_005 (American Oak of the Pekingtuin),
+already fixed by an earlier pass (its story no longer makes the bridge
+claim to the poem ring the CLAUDE.md write-up names), set `outcome:
+changed`; and an explicit test row, set `outcome: holds`. One real item:
+id 70, a bare tree addition from the app in Baarn (GPS only, no species,
+no name, 550m from the nearest tree we already map), answerable via its
+account. Composed a short `reply_text` asking what it is and whether
+there is a photo, checked clean by mailcheck.py, set `outcome:
+open_question`. No SMTP credentials in this environment, so the actual
+send waits for the next scheduled digest run; `contributor_reply.py`
+(dry run) confirmed no errors.
+
+Dispatched a background verify pass on two unmined Hiroshima register
+clusters (Hirayama Shrine, four giant trees at one site 16km out;
+Fukujoji temple, three trees 30km out) from Japan's national giant-tree
+survey, since the `hiroshima` claim's own leads file needed real
+candidates hand-picked rather than the auto-generated brief (which prints
+blank entries for this register's schema). Still running as this entry
+is written.
+
 ## 2026-09-05 - Night run 2026-09-05 23:26 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 20.5 minutes of its 120 minute window, 174 turns, 34 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: hiroshima, _famous-lithuania, _famous-germany, which block the top of the queue until they expire.
