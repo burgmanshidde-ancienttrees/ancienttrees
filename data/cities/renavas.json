@@ -1,0 +1,63 @@
+{
+  "city": "Renavas",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Renavas maps one tree: a spruce reckoned the thickest in Lithuania, 3.93 metres round, growing in the public grounds of Renavas Manor Park. In December 2024 the state ran a national public vote pitting it against four other protected spruces, and it won as the country's most interesting protected spruce. Published alone here because the tree is the destination, not because Renavas's research is finished.",
+  "meta_description": "The Renavas Thick Spruce: reckoned Lithuania's thickest spruce, and winner of the state's 2024 national vote for most interesting protected spruce.",
+  "question_meta": "Renavas's only mapped tree is the Renavas Thick Spruce, reckoned the thickest spruce in Lithuania and winner of a 2024 national public vote.",
+  "question_answer": "Renavas's only mapped tree is the Renavas Thick Spruce, a Norway spruce in Renavas Manor Park reckoned the thickest spruce in Lithuania at 3.93 metres round, and winner of the State Protected Areas Service's December 2024 public vote for the country's most interesting protected spruce.",
+  "question_context": "The trunk measures 3.93 metres round at chest height and carries 36.5 metres of height above it, a figure the national broadcaster rounds up to 37. Its closest surviving rival, a spruce in the Plokščiai forest, comes in at 3.87 metres. The tree that held the record before it, at Gelgaudiškis, was 3.35 metres round and was felled in 2009 after it died. This one nearly went the same way: bark beetles moved into the park in 1994, the neighbouring spruces died and were cut down in 1999, and this one saw the infestation off, its wood still carrying the holes and resin scarring. The state has been watching it since 1960, raised it to republic-level significance in 1987, and entered it in the national heritage register in 2005, which gives its presumed age as 150 years. It stands in the manor park at Renavas, deep in Žemaitija, fenced and with its own information board, about a hundred metres from the footbridge over the Varduva river. The manor museum charges admission; the spruce does not.",
+  "hero_tree_id": "ren_001",
+  "oldest_tree_id": "ren_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is reckoned the thickest spruce in Lithuania, 3.93 metres round, and in December 2024 the public voted it the country's most interesting protected spruce over four other state-protected candidates."
+    },
+    {
+      "q": "How old is it?",
+      "a": "The state register's own estimate is roughly 150 years, a single figure rather than a measured range."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in the public grounds of Renavas Manor Park with no fee; only the manor house museum nearby charges admission."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car to Renavas village in Mažeikiai district; no direct public transport reaches the site, the nearest town is Seda, about 5km away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ren_001",
+      "name": "Renavas Thick Spruce",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 130,
+      "age_max": 170,
+      "girth_cm": 393,
+      "height_m": 36.5,
+      "location": {
+        "address": "Renavo dvaro parkas (Renavas Manor Park), Renavas village, Sedos seniūnija, Mažeikiai district, about 250m west of road KK207, in the Varduva landscape reserve (Varduvos kraštovaizdžio draustinis)",
+        "latitude": 56.225193,
+        "longitude": 22.057848,
+        "neighbourhood": "Renavas"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Renavo_egl%C4%97",
+        "https://www.lrt.lt/naujienos/lietuvoje/2/2447233/gyventojai-rinko-idomiausia-lietuvos-egle-laimejo-renavo-zaliaskare"
+      ],
+      "access": "Free, standing in the public grounds of Renavo Manor Park (Renavo dvaro parkas), a well-known Žemaitija manor complex; fenced with its own information board. The manor house/museum itself charges separate admission but the park and the spruce are open access, about 100m from a footbridge over the Varduva river.",
+      "transport": "In Renavas village, Mažeikiai district; no direct public transport to the site, nearest town Seda is roughly 5km away, reachable by car",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In December 2024 Lithuania held a public vote for its most interesting protected spruce, and this tree beat the tallest spruce in the country.\n\nIt is also reckoned the thickest. The trunk measures 3.93 metres round at chest height and carries 36.5 metres above it, a figure the national broadcaster rounds up to 37. Its closest surviving rival, a spruce in the Plokščiai forest, comes in at 3.87. The tree that held the record before it, at Gelgaudiškis, was 3.35 metres round and was felled in 2009 after it died.\n\nThis one nearly went first. In 1994 bark beetles moved into the park at Renavas. The spruces around it died and were cut down in 1999. This one saw the infestation off, and its wood still carries the holes and the resin scarring.\n\nThe state has been watching it a long time: protected since 1960, raised to republic-level significance in 1987, entered in the national register of natural heritage objects in 2005. The register gives its presumed age as 150 years, a single figure rather than a measured range.\n\nIt stands in the manor park at Renavas, deep in Žemaitija, fenced and with its own information board, about a hundred metres from the footbridge over the Varduva. The manor museum charges admission. The spruce does not.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

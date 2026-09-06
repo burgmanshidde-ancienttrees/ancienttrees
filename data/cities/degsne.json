@@ -2,11 +2,11 @@
   "city": "Degsne",
   "country": "Lithuania",
   "status": "needs_curation",
-  "intro": "Degsne maps one tree: a larch standing 49 metres tall in a forest planted in 1849, the tallest tree recorded anywhere in Lithuania. Its trunk carries no branch at all for its first 29 metres, all the tree's growth having gone upward rather than out. Published alone here because the tree is the destination, not because Degsne's research is finished.",
-  "meta_description": "The Degsne Forest Larch: Lithuania's tallest recorded tree at 49 metres, in a forest stand planted in 1849.",
-  "question_meta": "Degsne's only mapped tree is a larch 49 metres tall, the tallest tree recorded in Lithuania.",
-  "question_answer": "Degsne's only mapped tree is the Degsne Forest Larch, a European larch 49 metres tall in the Degsne forest stand of Nemuno Loops Regional Park, the tallest tree recorded in Lithuania.",
-  "question_context": "The tallest tree in Lithuania is a larch, and it is under two metres round. At 49 metres it beats everything else growing in the country, and the State Protected Areas Service register lists it under exactly that title. The trunk carries no green branch at all for its first 29 metres, and at chest height it measures 186 centimetres round, a demonstration of how a larch puts its growth upward rather than outward. The first larches here were planted in 1849, and the stand they grew into is now the tallest forest in Lithuania, averaging around 42 metres. The forest was protected in 1960, and this one tree was designated in its own right in 2002. No legend attaches to it beyond the record itself. Getting there takes a car or a bicycle: a gravel forest road runs about three kilometres off the Kaunas to Alytus road north of Balbieriskis, and no bus goes near it.",
+  "intro": "Degsne maps two trees inside the same state forest: a larch standing 49 metres tall in a stand planted in 1849, the tallest tree recorded anywhere in Lithuania, and the Budininkai Oak, 31 metres tall and one of 47 oaks given nature-monument status in June 2026, 6.4 kilometres away in the same forestry district. Published thin because the tallest tree is destination enough on its own, not because Degsne's research is finished.",
+  "meta_description": "The Degsne Forest Larch, Lithuania's tallest recorded tree at 49 metres, and the nearby Budininkai Oak, both in the same state forest.",
+  "question_meta": "Degsne's mapped trees are a larch 49 metres tall, the tallest tree recorded in Lithuania, and a newly protected oak 6.4km away in the same forest.",
+  "question_answer": "Degsne's mapped trees are the Degsne Forest Larch, a European larch 49 metres tall in the Degsne forest stand of Nemuno Loops Regional Park, the tallest tree recorded in Lithuania, and the Budininkai Oak, 31 metres tall, 6.4 kilometres away in the same state forest complex.",
+  "question_context": "The tallest tree in Lithuania is a larch, and it is under two metres round. At 49 metres it beats everything else growing in the country, and the State Protected Areas Service register lists it under exactly that title. The trunk carries no green branch at all for its first 29 metres, and at chest height it measures 186 centimetres round, a demonstration of how a larch puts its growth upward rather than outward. The first larches here were planted in 1849, and the stand they grew into is now the tallest forest in Lithuania, averaging around 42 metres. The forest was protected in 1960, and this one tree was designated in its own right in 2002. No legend attaches to it beyond the record itself. Getting there takes a car or a bicycle: a gravel forest road runs about three kilometres off the Kaunas to Alytus road north of Balbieriskis, and no bus goes near it. Six kilometres away in the same forestry district stands the Budininkai Oak, 31 metres tall, one of 47 oaks a single June 2026 order gave nature-monument status at once; not a walk from the larch, but a plausible pairing for anyone driving out.",
   "hero_tree_id": "deg_001",
   "oldest_tree_id": "deg_001",
   "faq": [
@@ -64,6 +64,37 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "deg_002",
+      "name": "Būdininkai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 485,
+      "height_m": 31,
+      "location": {
+        "address": "Būdininkai village, Prienai district, Lithuania, in Balbieriškis Forest, about 1.7km south of the A16 (Vilnius-Prienai-Marijampolė) highway, reached via a gravel road from the Naujosios Ūtos bus stop",
+        "latitude": 54.55794,
+        "longitude": 23.77804,
+        "neighbourhood": "Būdininkai village, Balbieriškis Forest, Prienai district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/B%C5%ABdinink%C5%B3_I_%C4%85%C5%BEuolas",
+        "https://madeinvilnius.lt/naujienos/lietuvos-naujienos/paskelbti-dar-53-saugomi-gamtos-paveldo-objektai-azuolai-liepos-ir-didingi-rieduliai/"
+      ],
+      "access": "Free, public. Stands in Balbieriškis Forest, a 2,855-hectare state-important forest (Prienai Forest Management Board's Naujoji Ūta / Degsnė forestry districts), the same forest complex the already-published Degsnė Forest Larch stands in. Reached via a gravel road off the A16 highway at the Naujosios Ūtos bus stop, toward the Balbieriškis forest biosphere-polygon boundary marker. No gate, fee or private land involved.",
+      "transport": "No public transport reaches the tree itself; nearest stop is Naujoji Ūta on the A16 (Vilnius-Prienai-Marijampolė), then a gravel forest road on foot, bike or by car. About 6.4km from the Degsnė Forest Larch (deg_001), a plausible day-trip pairing within the same forest, though not a walk between the two.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The order that made this oak a protected national monument is dated June 2026, which makes it one of the newest protected trees in Lithuania and one of the least written about. It arrived on the list with 30 other oaks, a run of limes and six boulders. The same order draws a protection zone around the trunk: 0.041 hectares, roughly 410 square metres of forest floor that now belongs to the tree.\n\nIt is 31 metres tall and 4.85 metres round at chest height, standing in Balbieriškis Forest, 2,855 hectares of state forest in the Prienai district. Walk around it and it changes character. One side is in good order and carries heavy branches; the other is lichened over with damaged bark. That is what a large oak in a working forest actually looks like up close, and it is more worth the walk than a postcard specimen.\n\nIt has an official sibling. Būdininkų II was protected under the same order and stands nearby, which is how a forest ends up with numbered trees. The larch that is the tallest tree in Lithuania grows 6.4 kilometres away in the same forestry district, close enough to make an afternoon of the two, though not close enough to walk between them.\n\nNobody has published an age for this oak. If you have seen a figure on a sign or in a survey, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

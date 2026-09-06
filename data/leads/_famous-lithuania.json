@@ -219,7 +219,9 @@
     "https://commons.wikimedia.org/wiki/File:66_-_Raganos_uosis.jpg",
     "https://commons.wikimedia.org/wiki/File:69_-_Raganos_uosis.jpg"
    ],
-   "status": "lead"
+   "status": "done",
+   "species": "European Ash (Fraxinus excelsior)",
+   "reason": "Verified and published as plg_006 (The Witch's Ash) on data/cities/plunge.json, 2026-09-06 (delivered by the verify pass as rag_001, renumbered on merge to Plunge's own prefix). Lithuania's thickest ash (7.41m girth), over 200 years old, in the former Plateliai Manor park within Zemaitija National Park; two sources, lt.wikipedia and saugoma.lt (State Protected Areas Service register). Real place is Plateliai, about 13.6km from Plunge; published as a day-trip addition to the Plunge page, labelled honestly rather than as in-town."
   },
   {
    "name": "Raganų eglė",
@@ -256,9 +258,9 @@
     "https://commons.wikimedia.org/wiki/File:Renavo_dvaro_egl%C4%97.JPG",
     "https://commons.wikimedia.org/wiki/File:Renavo_egl%C4%97.JPG"
    ],
-   "status": "lead",
-   "species": "Spruce (Picea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Norway Spruce (Picea abies)",
+   "reason": "Verified and published as ren_001 (Renavas Thick Spruce), a new single-tree place, data/cities/renavas.json, 2026-09-06. Confirmed by lt.wikipedia and an independent LRT news report: reputed thickest spruce in Lithuania (girth 3.93m), state-protected since 1960, and winner of the State Protected Areas Service's December 2024 national public vote for Lithuania's 'most interesting protected spruce' among five candidates, which is the destination signal (a real 2024 title, not just age or size). Survived a 1994 bark-beetle attack that killed neighbouring spruces. Stands in the public grounds of Renavo Manor Park, Mažeikiai district."
   },
   {
    "name": "Santakos gluosnis",
@@ -429,9 +431,9 @@
     "https://commons.wikimedia.org/wiki/File:B%C5%ABdininkai,_I_%C4%85%C5%BEuolas,_kamienas_2.jpg",
     "https://commons.wikimedia.org/wiki/File:B%C5%ABdininkai,_I_%C4%85%C5%BEuolas.jpg"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Verified and published as deg_002 (Būdininkai Oak) on data/cities/degsne.json, 2026-09-06. Newly declared a state-protected nature heritage object by a 2026-06-20 Environment Ministry order (one of 47 new trees); girth 4.85m, height 31m, in Balbieriškis Forest (state-important forest, same forestry-district complex as the Degsnė Forest Larch, 6.4km away). Two sources: lt.wikipedia and madeinvilnius.lt's report on the ministerial order. No age recorded. Published as a day-trip pairing joining the existing Degsnė page rather than needing its own single-tree-destination case, since Degsnė already exists as a page."
   },
   {
    "name": "Būtingė oak",
@@ -479,7 +481,9 @@
     "https://commons.wikimedia.org/wiki/File:Dubravos_mi%C5%A1kas._Dvyniai.jpg",
     "https://commons.wikimedia.org/wiki/File:Dubravos_mi%C5%A1ko_dvyniai.JPG"
    ],
-   "status": "lead"
+   "status": "done",
+   "species": "Common Oak (Quercus robur) and Scots Pine (Pinus sylvestris), fused pair",
+   "reason": "Verified and published as kun_005 (Dubrava Twins) on data/cities/kaunas.json, 2026-09-06, joining published Kaunas (15.9km away, within day-trip boundary) rather than becoming its own place. NOTE: published under id kun_005, not dub_001 as the brief's prefix suggested, because 'dub_' collides with the 12 published Dublin trees (dub_001-dub_012). Confirmed by lt.wikipedia and a 2017 kauno.diena.lt feature: a genuinely fused oak-and-pine pair, one collectible point (checked carefully against the ensemble/avenue rule), state-protected since 1971, republic-significance since 1987, with a purpose-built 200m marked path and footbridge. Depicted on Samylai's official coat of arms (2009), and carries a real local legend. Sources disagree on age (both ~150 years per legend/some assessors, or oak ~200 / pine ~100 per others), both figures kept in the story rather than one picked. Freshest independent confirmation of being alive is 2017 (pine's crown thinning from rot, oak has bracket fungi, both still standing); flagged rather than confirmed-recent."
   },
   {
    "name": "Galiūnas oak",
@@ -540,9 +544,9 @@
     "https://commons.wikimedia.org/wiki/File:Gojaus_mi%C5%A1ko_%C4%85%C5%BEuolas_2.JPG",
     "https://commons.wikimedia.org/wiki/File:Gojaus_%C4%85%C5%BEuolas,_2026.jpg"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Verified and published as goj_001 (The Gojus Forest Oak), a new single-tree place, data/cities/gojaus-miskas.json, 2026-09-06. State-protected botanical heritage object since 2005-06-12, approximately 400 years old, girth 6.2-6.7m (sources disagree), height ~33m, splitting into two stems at 14m. Locally billed as 'stambiausias Lietuvoje medis' (Lithuania's most massive tree), a claim lt.wikipedia ties to wood volume (43 cubic metres) rather than girth. Two sources: lt.wikipedia and infoprienai.lt. Clears the single-tree-destination bar on its built visitor infrastructure (parking, walkway, information board, sculptures) and its own road signage naming the tree specifically; 26km from Degsnė so published as its own place rather than joined to it."
   },
   {
    "name": "Grybiškės oak",
@@ -551,9 +555,10 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Grybi%C5%A1ki%C5%B3_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Common Oak (Quercus robur)",
+   "species_basis": "confirmed by lt.wikipedia (paprastasis ąžuolas)",
+   "reason": "Verified and published as gry_001 (Grybiškės Oak), a new single-tree place, data/cities/grybiskes.json, 2026-09-06. Girth 4.98 m / 493 cm (two sources differ by 5 cm), height ~26 m, protected state natural monument since 1999. Placed 6th of 13 in Lithuania's 2023 national Tree of the Year vote, just behind the already-published Stelmužė Oak. Also the site of Lithuania's largest-ever recorded porcini mushroom (1971, Book of Records). Age given by arboristai.lt as 'unknown, approximately 1000 years', repeated as vaguely as stated and flagged in the story because the girth is on the low side for that age by ordinary growth-rate dating. Destination call was close (national ranking plus a genuine record claim against a modest girth for the claimed age) and decided in favour of publishing on the combined evidence."
   },
   {
    "name": "Gudlaukis oak",
@@ -624,9 +629,9 @@
     "https://commons.wikimedia.org/wiki/File:Kybar%C4%8Diai._2021_%C4%85%C5%BEuolas.jpg",
     "https://commons.wikimedia.org/wiki/File:Kybar%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Common Oak (Quercus robur)",
+   "reason": "Verified and published as kyb_001 (Kybarčiai Oak, also called the Rusteikai Oak), a new single-tree place, data/cities/kybarciai.json, 2026-09-06. Confirmed by lt.wikipedia and arboristai.lt (independent Lithuanian arborist publication): girth 8.40m (a different lt.wikipedia comparison article gives 8.10m, both recorded), among the thickest oaks in Lithuania, considered the oldest oak in the Šiauliai region, state-protected since 2013, age estimated 500-700 years by the state register. Split, hollow trunk a person can climb inside; carries a local devil legend and was painted by artist Antanas Krištopaitis in 2000. Candidate in Lithuania's 2025 Tree of the Year competition. Clears the 2026-08-31 single-tree destination bar on size, legend and competition profile combined. Access caveat stated honestly on the page: stands alone in open farmland about 270m from the nearest road with no confirmed public path."
   },
   {
    "name": "Laumenai oak",
@@ -674,7 +679,9 @@
     "https://commons.wikimedia.org/wiki/File:Ming%C4%97los_%C4%85%C5%BEuolas,_drev%C4%97.JPG",
     "https://commons.wikimedia.org/wiki/File:Ming%C4%97los_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead"
+   "status": "done",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Verified and published as plg_005 (Mingėlos Oak) on data/cities/plunge.json, 2026-09-06. One of Lithuania's thickest oaks at 8.1m girth, estimated 600-700 years old, hollow and crownless, tended by five generations of the Mingėla family; protected since 1960, nature monument since 2000. Two sources: lt.wikipedia and arboristai.lt (2024 Lithuanian Tree of the Year candidate page); girth and height figures disagree slightly between them, both recorded. Published as a day-trip addition to Plungė (plg_001-004), about 8km outside town, labelled honestly as such."
   },
   {
    "name": "Molavėnai oak",
@@ -710,9 +717,10 @@
     "https://commons.wikimedia.org/wiki/File:2025._Netoni%C5%B3_%C4%85%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:Po_Netoni%C5%B3_%C4%85%C5%BEuolu.JPG"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Common Oak (Quercus robur)",
+   "species_basis": "confirmed by lt.wikipedia (paprastasis ąžuolas)",
+   "reason": "Verified and published as kun_006 (The Netoniai Oak) on data/cities/kaunas.json, 2026-09-06, deepening the already-published Kaunas (12.3 km out, within the day-trip boundary), not a single-tree destination. Girth 5.2 m, height 28 m, just designated a state natural monument by Ministry of Environment order D1-131 of 2025-09-10 (one of 49 oaks in that order). No age recorded. Access caveat stated honestly on the page: stands beside a gravel farm track next to a homestead; no source confirms open public access outright, though OSM shows no residential-landuse enclosure around the pin (unlike the held Skaborai I oak in this same batch)."
   },
   {
    "name": "Nevėžio dvilypis oak",
@@ -788,9 +796,10 @@
     "https://commons.wikimedia.org/wiki/File:Gra%C5%BEusis_%C4%85%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:Gra%C5%BEusis_%C4%85%C5%BEuolas._Gil%C4%97.JPG"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "done",
+   "species": "Common Oak (Quercus robur)",
+   "species_basis": "confirmed by lt.wikipedia (paprastasis ąžuolas)",
+   "reason": "Verified and published as pgn_001 (The Beautiful Oak of Plauginiai Forest), a new single-tree place, data/cities/plauginiai-forest.json, 2026-09-06 (delivered by the verify pass as pla_001, renumbered on merge). Girth 5.8 m, height 32-33 m, age about 300 years per multiple sources, found in excellent condition by the state forest service in 2017. Already a real destination in practice: signposted 'Grazusis azuolas' from a public highway 3.5 km out, with a purpose-built 400 m interpretive trail, oak sculptures and a rest area built around this one tree."
   },
   {
    "name": "Plokščiai (Panemunė) oak",
@@ -875,9 +884,10 @@
     "https://commons.wikimedia.org/wiki/File:Skaborai,_I_%C4%85%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:Skaborai,_%C4%85%C5%BEuolo_vidus.JPG"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "held",
+   "species": "Common Oak (Quercus robur)",
+   "species_basis": "confirmed by lt.wikipedia (paprastasis ąžuolas)",
+   "hold_reason": "Checked 2026-09-06. Two sources confirm the tree itself: lt.wikipedia (Skaborų I ąžuolas) and a Rietavas municipal tourism profile (veik.rietave.lt, archived 2021) agree on girth 7.30 m at 1.3 m height, height 16.2 m, species Quercus robur, declared a state natural monument in 2016, with a 2016 arborist repair of the damaged trunk and broken crown recorded by the contractor (arbovitairko.lt). Age is explicitly undisclosed ('amžius - neskelbiama'). Coordinates confirmed exactly (55.691312, 22.124553 per Wikipedia's infobox, matching the given pin). Held rather than shipped on ACCESS, not on evidence: both lt.wikipedia ('stovi kaimo vidury, šalia sodybos', stands in the middle of the village, next to a homestead) and the municipal profile (address given as Skaborų k., Skaborų g. 6) describe it as standing beside a specific homestead, and one Commons photo caption reads 'the tree from the homestead's side, from the south', implying the vantage point is the private yard itself. An Overpass/OSM check of the coordinate confirms a mapped landuse=residential polygon and a building at Skaborai house no. 7 immediately surrounding the tree's exact pin, consistent with private curtilage rather than roadside public ground, though the tree also stands only about 50 m from public road 3212 per Wikipedia, so a road-visible case is not ruled out. No source states plainly that a visitor may walk up to it without the household's leave, so this fails the 'can they get in without asking anyone's permission' test on current evidence; a future pass could resolve it with a street-level photo or a direct access statement from the municipality."
   },
   {
    "name": "Smalininkai oaks avenue",
@@ -899,9 +909,14 @@
     "https://commons.wikimedia.org/wiki/File:Staku_azuolas2014.JPG",
     "https://commons.wikimedia.org/wiki/File:Staku_azuolas_2020.jpg"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified_held",
+   "species": "Common Oak (Quercus robur)",
+   "reason": "2026-09-06 verify pass (famous-lithuania batch B): fully verified (lt.wikipedia + saugoma.lt, girth 4.90m, height 24m, protected since 2003) but held rather than published as its own single-tree destination. The state's own register claims 'apytiksliai apie 1000 metu' (approximately 1000 years, by unelaborated approximate calculations), which would be extraordinary for a 4.90m girth oak (the published Stelmuze Oak is 7.45m at a documented ~1500-2000 years), and no legend, record title or Tree-of-the-Year mention corroborates it. The state HAS built genuine visitor infrastructure (a parking area to view without leaving a vehicle, an accessible 50m path, route signage from regional road 104), which argues the other way. Left as a lead for a later pass to settle rather than forcing either a publish or a block: the age claim alone from one unelaborated official source is not enough on its own to clear the 2026-08-31 single-tree-destination bar, same reasoning as Zehdenick's Gerichtslinde in Germany the same week.",
+   "location_precision": "confirmed",
+   "verified_sources": [
+    "https://lt.wikipedia.org/wiki/Stak%C5%B3_%C4%85%C5%BEuolas",
+    "https://saugoma.lt/lt/objektai/staku-azuolas"
+   ]
   },
   {
    "name": "Streipūnai oak",

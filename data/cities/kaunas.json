@@ -2,8 +2,8 @@
   "city": "Kaunas",
   "country": "Lithuania",
   "status": "needs_curation",
-  "intro": "Kaunas keeps its oldest trees inside its parks rather than its streets: a linden with a fenced trunk in Vytautas Park, part of the vast Ąžuolynas oak forest; a golden willow leaning over the Nemunas-Neris confluence, now visibly failing; a 600-year-old oak in the pine woods above the Kaunas reservoir, carrying a name once given to a different, already-lost tree; and a multi-trunked lime on the far bank in Vilijampolė, still uncertain of its own age. Four trees, four different kinds of survival.",
-  "meta_description": "Kaunas's oldest trees: a 270-year linden, a declining golden willow, a 600-year oak above the reservoir, and a multi-trunk lime in Vilijampolė.",
+  "intro": "Kaunas keeps its oldest trees inside its parks and forests rather than its streets: a linden with a fenced trunk in Vytautas Park; a golden willow leaning over the Nemunas-Neris confluence, now visibly failing; a 600-year-old oak above the Kaunas reservoir, carrying a name once given to a different, already-lost tree; a multi-trunked lime in Vilijampolė; a fused oak-and-pine pair in Dubrava forest on a parish coat of arms; and a newly protected oak at Netoniai. Six trees, several kinds of survival.",
+  "meta_description": "Kaunas's oldest trees: a 270-year linden, a declining willow, a 600-year oak, a multi-trunk lime, a fused pair and a new oak.",
   "question_meta": "Kaunas's oldest confirmed tree is the Peace Hill Oak above Kaunas marios, estimated at roughly 600 years. Full list of 4.",
   "question_answer": "The Peace Hill Oak (Taikos kalno ąžuolas), a pedunculate oak in the pine woods of Pažaislio šilas above the Kaunas reservoir, estimated at roughly 600 years. It carries a name and role handed down from an older oak nearby that was lost to arson in 2007.",
   "question_context": "Kaunas's Peace Hill Oak is not the original bearer of its own name. An older oak, roughly 800 years old by some estimates, stood nearby and was already dying from storm damage when a 2001 memorial installation was placed beside it; a further arson attack in 2007 finished it off, and it was removed. This living oak, judged healthy enough to carry the name and the city's 2001 natural-monument designation forward, has done that job since. It stands in Pažaislio šilas, a pine wood beside the Kauno marios reservoir and the Pažaislis Monastery, kept alive today with periodic treatment for internal rot.\n\nThe other three trees span very different parts of Kaunas: a 270-year linden confirmed by growth-ring count in Vytautas Park, within the city's Ąžuolynas oak forest; a golden willow by the Nemunas-Neris confluence that a 2016 environment ministry order protected for its unusual colouring, now showing signs of fungal decline in 2026 photographs; and an unusually thick, multi-trunked lime in the Vilijampolė district whose age nobody has recorded.",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes, all four stand in public parks with no entry fee."
+      "a": "Yes, all six stand on free, unticketed ground: public parks, a state forest with a marked path, and a roadside track."
     },
     {
       "q": "Is there a tree in Kaunas without a documented age?",
@@ -137,6 +137,66 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Four trunks, five crown tops, and by local tradition it began as five lime saplings planted together in one spot. However it got that way, the result measures 7.20 metres around at chest height, which is a coppice measurement rather than one clean trunk, stands 23 metres tall and carries a crown 22 metres deep. Lithuania made it a gamtos paminklas, a nature monument, in 1968, the country's highest tier of protection, and the journal Miškai later put it among the ten most distinctive trees in the land. Locally it is simply Gražuolė, the Beauty.\n\nIts age is an open question and we are not going to invent one. The usual method, girth read against a growth rate for the species, falls apart on a four-stemmed tree, because each trunk may be regrowth of a different age around a much older stool. No source we found gives a figure. If you know of one, or somebody has taken a core, tell us and we will put it on the page.\n\nThe state description says it has passed its natural maturity and entered decline, which is a life stage rather than an emergency; it is still listed locally as a place worth going to see. It stands at Romuvos gatvė 57 in Vilijampolė, on the north bank of the Nemunas about four kilometres from central Kaunas.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kun_005",
+      "name": "Dubrava Twins",
+      "species": "Pedunculate Oak (Quercus robur) and Scots Pine (Pinus sylvestris), grown together as one fused pair",
+      "age_estimate": "disputed, roughly 100-200 years",
+      "age_min": 100,
+      "age_max": 200,
+      "girth_cm": 360,
+      "location": {
+        "address": "Dubravos miškas (Dubrava forest), Šilėnai forestry division (compartment 78, plot 16), Dubravos eksperimentinė-mokomoji miškų urėdija, Samylų seniūnija, Kaunas district, about 4.5km south of Samylai, reached by a roughly 200m marked pedestrian path with a footbridge off a forest road turning south from route RK1937 near the Gervėnupis garden plots",
+        "latitude": 54.819032,
+        "longitude": 24.121702,
+        "neighbourhood": "Dubrava forest, Samylai (Kaunas district)"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Dubravos_dvyniai",
+        "https://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/dubravos-dvyniai-azuolo-ir-pusies-meiles-istorija-841611"
+      ],
+      "access": "Free, in Dubrava forest with a purpose-built roughly 200m pedestrian path and footbridge leading to the trees from a forest road off route RK1937 (turn south at the Gervėnupis garden plots, then about 1.4km on the forest road). Fenced with a small wooden protective fence and an information board.",
+      "transport": "In Dubrava forest, Kaunas district, about 4.5km south of Samylai and roughly 16km / 20-25 min drive south of central Kaunas; no public transport to the site itself",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "An oak and a pine grew into each other at the foot here, and in 2009 the parish of Samylai put the pair on its official coat of arms.\n\nLocally it is told as a love story: an oak that fell for a pine, nobody remembers how the friendship started, and they have not been apart in 150 years. The botanical reading sits in the same sources and is less romantic. The oak most likely germinated beside a pine that was already established and older, grew up hard against its trunk, and pushed burls through the pine bark. Some six or seven metres up the two part again into separate crowns, which happened about a decade before a 2017 account of them.\n\nThat reading also unsettles the name. Some assessors treat both as coevals of over 150 years; others give the oak roughly 200 and the pine roughly 100, which would make them anything but twins. Both figures stand in the record and neither has been settled.\n\nAt the point where they are fused the pair measures 3.60 metres round. The pine goes up 33 metres, the oak 27.\n\nNeither is in perfect health. By 2017 the pine crown had thinned as rot worked through the join, with carpenter ants visible in the dead wood, and the oak was carrying bracket fungus. Both were alive and standing then.\n\nA 200-metre path and a footbridge lead in from the forest road, and a low wooden fence rings the trunks.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kun_006",
+      "name": "The Netoniai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 520,
+      "location": {
+        "address": "Jazminų g., Netoniai village, Raudondvaris eldership, Kaunas District, Lithuania",
+        "latitude": 54.94435,
+        "longitude": 23.74074,
+        "neighbourhood": "Netoniai, near Raudondvaris, Kaunas District"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Netoni%C5%B3_%C4%85%C5%BEuolas",
+        "https://vstt.lrv.lt/lt/naujienos/valstybes-saugomu-gamtos-paveldo-objektu-sarasas-papildytas-80-nauju-vertybiu-WLC/"
+      ],
+      "access": "Reads as adjoining a private homestead: the tree stands beside a gravel farm track (Jazminų g., OSM-tagged highway=track with no private-access tag), about 0.8 km off the Jurbarkas highway (road 141) and 2 km west of Raudondvaris, next to one of the area's newer homesteads, surrounded by fields and pasture. A wayside cross stands at the trunk, which in Lithuanian tradition usually marks a spot meant to be seen. No source states plainly whether a stranger may walk up to the trunk without asking; the honest caveat for a visitor is that it stands right beside someone's home along a public gravel road, not deep inside a fenced yard.",
+      "transport": "No public transport; reached by car from the Jurbarkas highway (road 141), turning southwest onto the gravel Aguonų/Jazminų street track toward the Nemunas river, about 0.8 km.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In September 2025 Lithuania added 80 new natural heritage objects to its protected list in a single ministerial order, 49 of them ancient oaks proposed by local communities and their municipalities. This is one of the 49, and it had been standing here for a very long time before anyone in Vilnius wrote it down.\n\nThe state cadastre gives it 5.2 metres of girth at chest height and 28 metres of height. That is all the record holds. No newspaper has run a piece on it, no legend has attached itself to it, and nobody has published an age for it, which for a trunk that size is a gap rather than an answer. If somebody has counted or measured anything here, tell us.\n\nThe people nearby clearly knew what they had well before the ministry did. A wayside cross stands at the foot of the trunk, the kind that marks a spot locals mean you to notice.\n\nIt grows on Jazminų gatvė, which is a gravel farm track rather than a street, in open fields two kilometres west of Raudondvaris and about 800 metres off the Jurbarkas highway, with a homestead beside it. No source states whether you may walk right up to the trunk, so treat it as a tree to see from the track and take anything more as a bonus.",
       "photo": {
         "url": null,
         "license": null,

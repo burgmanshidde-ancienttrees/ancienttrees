@@ -1,0 +1,63 @@
+{
+  "city": "Gojaus Miskas",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Gojaus Miskas maps one tree: an oak in a Lithuanian pine forest that somebody decided was worth stopping the car for, long before anyone asked them to. A parking area, a wooden walkway, an information board, carved sculptures and a bench all stand around it. By volume of wood it is reckoned the largest tree in Lithuania, 43 cubic metres, though several oaks beat it on girth alone. Published alone here because the tree is the destination, not because the surrounding forest's research is finished.",
+  "meta_description": "The Gojus Forest Oak: reckoned Lithuania's largest tree by volume, 33 metres tall, with a purpose-built visitor stop around it.",
+  "question_meta": "Gojaus Miskas's only mapped tree is the Gojus Forest Oak, reckoned the largest tree in Lithuania by volume of wood.",
+  "question_answer": "Gojaus Miskas's only mapped tree is the Gojus Forest Oak, a pedunculate oak standing 33 metres tall in Gojus forest near Stakliskes, reckoned the largest tree in Lithuania by volume of wood at 43 cubic metres.",
+  "question_context": "On girth this oak is nowhere near Lithuania's largest, 6.2 to 6.7 metres round by two disagreeing sources against roughly 10 metres for the Stelmuze Oak. What sets it apart is height and mass together: it stands 33 metres and does not divide into its two main stems until 14 metres up, which is an unusual shape for an oak this thick, and it is that combination that gives it the largest-by-volume claim, 43 cubic metres of wood. It is about 400 years old, has taken a lightning strike and shows some rot inside, and surveys still describe it as vital. The state made it a protected natural heritage object in June 2005. Somebody built a proper stop around it: a parking area off the A16 highway, a wooden walkway to the trunk, an information board, a bench and sculptures carved by local craftsmen, reached via a signposted turn 3.4 kilometres from Stakliskes reading 'Gojaus miskas, 1 km'. There is no public transport to the site; it needs a car.",
+  "hero_tree_id": "goj_001",
+  "oldest_tree_id": "goj_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is reckoned the largest tree in Lithuania by volume of wood, 43 cubic metres, standing 33 metres tall and not splitting into its two main stems until 14 metres up."
+    },
+    {
+      "q": "How old is it?",
+      "a": "About 400 years, an estimate rather than a documented planting date."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in state forest with a purpose-built visitor stop: parking, a wooden walkway, an information board and a bench, no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car via the A16 highway, then a signposted forest turn about 3.4km from Stakliskes reading 'Gojaus miskas, 1 km'. No public transport reaches the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "goj_001",
+      "name": "The Gojus Forest Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "approximately 400 years",
+      "age_min": 380,
+      "age_max": 420,
+      "girth_cm": 670,
+      "height_m": 33,
+      "location": {
+        "address": "Ąžuolų g., Gojus forest, near Pakrovai, Stakliškės eldership, Prienai district, Lithuania, about 3.4km from Stakliškės off the A16 (Vilnius-Prienai-Marijampolė), signposted 'Gojaus miškas 1 km'",
+        "latitude": 54.568519,
+        "longitude": 24.281056,
+        "neighbourhood": "Gojus forest, Stakliškės eldership, Prienai district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Gojaus_mi%C5%A1ko_%C4%85%C5%BEuolas",
+        "https://www.infoprienai.lt/lankytinos-vietos/gojaus-azuolas-stambiausias-lietuvoje-medis/"
+      ],
+      "access": "Free, public. Stands in Gojus forest, reached via a signposted turn off the A16 highway about 3.4km from Stakliškės. Built as a small visitor stop: a parking area, a wooden pathway, an information board, locally carved artisan sculptures and a bench are all in place around the tree. No gate or fee.",
+      "transport": "No public transport to the site; reached by car via the A16 (Vilnius-Prienai-Marijampolė), then a short signed turn into the forest. About 26km from the Degsnė Forest Larch (deg_001), too far to present as a day-trip pairing with Degsnė; treated as a standalone place.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "By volume of wood this is reckoned the largest tree in Lithuania, 43 cubic metres of oak, which is a rarer way to measure a tree than the one everybody quotes. On girth it is nowhere near the top: 6.2 metres at chest height by the Lithuanian Wikipedia's figure, 6.7 by the Prienai district's own, against roughly 10 metres for the Stelmužė Oak. What this one has is height and mass at once. It stands 33 metres and does not divide into its two main stems until 14 metres up. Oaks this thick are usually squat. This one went upward.\n\nIt is about 400 years old. Lightning has hit it and left its mark, there is rot inside, and the surveys still describe it as vital. The state made it a protected natural heritage object in June 2005.\n\nThe other measure of a tree worth travelling for is what people have built around it, and here they have built a good deal: a parking area off the A16, a wooden walkway to the trunk, an information board, a bench, and carved sculptures by local craftsmen. The road sign reads Gojaus miškas, 1 km. Somebody decided this oak was worth stopping the car for, and built the stop before anyone asked for it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

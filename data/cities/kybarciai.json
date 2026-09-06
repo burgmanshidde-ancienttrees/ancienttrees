@@ -1,0 +1,63 @@
+{
+  "city": "Kybarciai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Kybarciai maps one tree: a hollow oak standing alone in open farmland, thick enough that a grown adult can walk into its trunk. Local legend has a demon sheltering in the cavity when the thunder god Perkunas is at work overhead. Among the thickest oaks in Lithuania and possibly a contemporary of the country's most famous one. Published alone here because the tree is the destination, not because Kybarciai's research is finished.",
+  "meta_description": "The Kybarciai Oak: a hollow oak in open Lithuanian farmland, among the country's thickest, that a person can walk inside.",
+  "question_meta": "Kybarciai's only mapped tree is the Kybarciai Oak, a hollow oak a person can walk into, among the thickest in Lithuania.",
+  "question_answer": "Kybarciai's only mapped tree is the Kybarciai Oak, also called the Rusteikai Oak, a pedunculate oak in open farmland near Siauliai with a girth of about 8.4 metres, hollow enough for an adult to walk inside.",
+  "question_context": "Its own dedicated sources put the girth at 8.40 metres at chest height, among the thickest oaks in Lithuania; another Lithuanian reference comparing the country's giants instead lists 8.10 metres, and nobody has reconciled the two. Before the trunk split and rot got into it, the girth may have reached 8.4 to 9.5 metres. Today it stands as two halves, one still leafing out every spring, and the trunk is hollow enough for a person to walk inside, which is where the local legend comes from: a demon is said to shelter there when Perkunas, the thunder god, is at work. It is also called the Rusteikai Oak, after the noble family who lived beside it for generations, whose brick burial chapel still stands nearby. The state register estimates its age at 500 to 700 years, and arborists have written it may be a contemporary of the more famous Stelmuze Oak. The artist Antanas Kristopaitis painted it in 2000, and it was a candidate in Lithuania's 2025 Tree of the Year vote. It stands alone in open farmland, 270 metres from the road, with no marked path; reaching it needs a car and a walk across a field track.",
+  "hero_tree_id": "kyb_001",
+  "oldest_tree_id": "kyb_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is among the thickest oaks in Lithuania, roughly 8.1 to 8.4 metres round depending on the source, and its trunk is hollow enough for a person to walk inside."
+    },
+    {
+      "q": "How old is it?",
+      "a": "The state register estimates 500 to 700 years, a deliberately wide band."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no fee or gate is recorded, though it stands alone in farmland 270 metres from the road with no marked path, so the walk-in is across a field track."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car to Kybarciai village in Siauliai district, then on foot across farmland from route 4004; no public transport reaches the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kyb_001",
+      "name": "Kybarčiai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500-700 years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 840,
+      "height_m": 13.6,
+      "location": {
+        "address": "Open farmland, Kybarčiai village, Kužių seniūnija, Šiauliai district, about 270m north of the Aukštelkė-Kuršėnai road (route 4004)",
+        "latitude": 55.921755,
+        "longitude": 23.081086,
+        "neighbourhood": "Kybarčiai"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Kybar%C4%8Di%C5%B3_%C4%85%C5%BEuolas",
+        "https://www.arboristai.lt/articles/parkotyra/825-lietuvos-medzio-rinkimai-2025/1821-kybarciu-rusteiku-azuolas"
+      ],
+      "access": "Free, standing alone amid open cultivated fields about 270m from a paved secondary road (route 4004); no fee or gate mentioned by any source and nothing states it is on posted private land, but there is no marked path either, an unpaved field track is the likely approach. Worth a reader confirming the exact walk-in.",
+      "transport": "In Kybarčiai village, Šiauliai district; no public transport to the site, nearest city Šiauliai roughly 15km away, reachable by car",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A grown adult can walk into this oak. The trunk is hollow and burned out inside, and the local story is that a demon shelters in the cavity when Perkūnas, the thunder god, is throwing lightning about.\n\nWhat is left outside the hole is still enormous. Its own dedicated sources put the girth at 8.40 metres at chest height, which places it among the thickest oaks in Lithuania; another Lithuanian reference, comparing the country giants, lists it at 8.10 metres instead. Nobody has reconciled the two. The state register notes that before the trunk split and the rot got in, it may have measured anywhere from 8.4 to 9.5 metres round. Today it stands as two halves, one of them still leafing out every spring.\n\nIt is also called the Rusteikai Oak, after the noble family who lived beside it for generations and whose brick burial chapel still stands nearby. The state register estimates its age at 500 to 700 years, a deliberately wide band, and Lithuanian arborists have written that it may be a contemporary of the famous Stelmužė Oak.\n\nAntanas Krištopaitis painted it in watercolour in 2000. It was entered as a candidate in Lithuania's 2025 Tree of the Year vote. It has been a protected natural heritage object since October 2013.\n\nIt stands alone in open farmland, 270 metres from the road, with no marked path to it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
