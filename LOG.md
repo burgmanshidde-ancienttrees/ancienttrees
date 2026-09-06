@@ -1,7 +1,36 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-06 (continuation 15) - Cleared two stale claims, answered the 2026-09-06 BLOCKER, no new trees
+## 2026-09-06 (continuation 16) - iOS regression fixed (test, not app), rung 2
+
+Rung 2 (`health.py`): `ios.yml`'s newest run had failed, upgrading
+continuation 15's "probable flake" note, since the same test failed
+again on the very next run (34060000566, the mytrees-who push, unrelated
+to the map). Read both failing runs' logs: same test,
+`testTappingAPinOpensItsTree`, same message, "sweeping the visible map
+opened no tree at all", on both. Confirmed no commit touched `ios/`
+between the last green run (09:14 UTC) and the first red one (18:50
+UTC), so the app did not regress.
+
+Downloaded the failing run's own `appsweep` artifact (`gh run download`,
+into `out/`, gitignored) and looked at `map.png` from that exact run:
+pins and cluster bubbles render correctly, camera framed, "24 trees you
+can see" on the sheet. So the map itself works in that same CI run; the
+failure is this one test's fixed 5-second sleep before it starts
+tap-sweeping, written before the catalogue passed 2700 trees. SweepFrames
+already solved this exact race for its own screenshots by waiting on a
+real element (up to 20s) rather than a fixed sleep; this test predates
+that pattern. Replaced the sleep with a wait on `map-count`, the element
+the test already reads a few lines below. Ran `netcheck.py` and
+`appsweep.py --check-lists`, both clean; could not run the actual
+simulator suite from this sandbox, so the real verdict is the next
+scheduled `ios.yml` run. Committed and pushed (`84ddff36`).
+
+No trees shipped this window; time went entirely to rung 2 per Step 0's
+ladder (something broken outranks new coverage). FOR HIDDE: if the next
+scheduled iOS run is still red on this same test, the diagnosis above is
+wrong and it needs a session with a simulator.
+
 
 Resumed into a window where the previous attempt had stopped early with
 most of its time unspent. `passcheck.py --claims` showed two standing

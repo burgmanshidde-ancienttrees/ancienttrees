@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -5688,6 +5688,13 @@
         "note": "11 stories across NL (4, merged into Deventer/Arnhem/Leeuwarden/Den Bosch) and CZ (7, each its own single-tree place); 4 best_time set, 7 left empty; three disputed/absent ages carried as disputes",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "ios.yml (testTappingAPinOpensItsTree)",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Rung-2 investigation of the broken iOS CI run: read two failing run logs, downloaded and viewed the appsweep screenshot artifact, diagnosed a fixed 5s test sleep racing a catalogue that passed 2700 trees (not an app regression), and fixed the test to wait on a real element instead. No content work this window. Tokens not tracked by an agent report; session work."
       }
     ]
   }
