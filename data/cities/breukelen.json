@@ -1,0 +1,62 @@
+{
+  "city": "Breukelen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "A pair of limes has stood on the castle square of Kasteel Nijenrode long enough that two independent sources describe them in nearly identical words, visible from the park, from inside the castle, from the road and from the river Vecht. The grounds belong to a business university now and are closed to casual visitors, but the trees do not need the gate open: the pair faces outward across the public road and the river, in one of the more photographed castle views on the Vecht. A 2022 newspaper piece put them forward for the country's top 50 trees.",
+  "meta_description": "A pair of limes on the castle square of Kasteel Nijenrode, Breukelen, roughly 270 years old, visible from the public road and the river Vecht.",
+  "question_meta": "Breukelen's oldest trees are a pair of limes on the castle square of Kasteel Nijenrode, roughly 270 years old. Where to see them from the public road.",
+  "question_answer": "The oldest trees in Breukelen are a pair of limes on the castle square of Kasteel Nijenrode, described in a 2022 newspaper nomination for the Netherlands' top 50 trees as having defined the castle's appearance for 270 years, though a separate heritage record gives a wider planting band, 1650 to 1750. They stand on the castle's private grounds but are clearly visible from the public road along the river Vecht and from any passing boat.",
+  "question_context": "Ages disagree by more than a century here, which is worth stating rather than smoothing over. A 2022 piece in the regional paper VARnws, nominating the pair for the Nationale Bomen Top 50, says they have defined the castle's appearance for 270 years, putting the planting around 1752. A separate heritage record gives a much wider band, 1650 to 1750, which would make the older end of the pair closer to 376 years old today. Nobody has resolved the gap with a core sample, so both figures are recorded rather than picked between. Kasteel Nijenrode is a moated, late-medieval castle, rebuilt across the centuries and now home to a business university rather than a family, and its walled courtyard is not routinely open to the public. That does not put the limes out of reach: two independent sources confirm they are visible from the public road (Straatweg, alongside the moat) and from the river Vecht, a public waterway.",
+  "hero_tree_id": "bkl_001",
+  "oldest_tree_id": "bkl_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Breukelen?",
+      "a": "A pair of limes on the castle square of Kasteel Nijenrode. A 2022 newspaper nomination puts them at roughly 270 years old, though a separate heritage record gives a wider planting band that would put the older end closer to 376."
+    },
+    {
+      "q": "Can I walk right up to the limes?",
+      "a": "No. They stand on the castle's private courtyard, now part of a business university campus, which is not routinely open to the public. Two independent sources confirm they are clearly visible year-round from the public road and from the river Vecht."
+    },
+    {
+      "q": "Are the limes free to see?",
+      "a": "Yes. Viewing them from the public road or the river costs nothing. The castle grounds themselves are only open on an organised tour."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Breukelen railway station, then roughly 10 to 15 minutes on foot to Straatweg, where the limes and the castle come into view."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bkl_001",
+      "name": "The Limes of Kasteel Nijenrode",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 270 years, though the underlying planting band spans 250 to 376",
+      "age_min": 250,
+      "age_max": 376,
+      "location": {
+        "address": "Kasteel Nijenrode, Straatweg 25, Breukelen, viewed from the public road or riverbank rather than the private castle courtyard",
+        "latitude": 52.163884,
+        "longitude": 5.009827,
+        "neighbourhood": "Nijenrode, Breukelen"
+      },
+      "story": "A pair of limes has stood on the castle square of Kasteel Nijenrode long enough that two independent sources describe them in nearly identical words: visible from the park, from inside the castle, from the public road and from the river Vecht. Neither source needs the gate open to make that claim, because the trees face outward across a public road and a public river.\n\nAges disagree by more than a century. A 2022 newspaper piece nominating the pair for the Netherlands' top 50 trees says they have defined the castle's appearance for 270 years, putting the planting around 1752. A separate heritage record gives a much wider planting band, 1650 to 1750, which would make the older end of the pair closer to 376 years old today. Nobody has resolved the gap with a core sample, so both figures are recorded rather than picked between.\n\nKasteel Nijenrode itself is a moated, late-medieval castle, rebuilt across the centuries and now home to a business university rather than a family. Its walled courtyard carries an 18th-century marble rooster on a stone base, visible past the trees from the roadside. The honest way to see this pair is from the water or the Straatweg embankment, where the view has apparently looked much the same for two and a half centuries.",
+      "verified_sources": [
+        "https://www.varnws.nl/stichtsevecht/nieuws/31773/twee-lindens-bij-kasteel-nijenrode-kanshebber-op-nationale-bome",
+        "https://www.utrechtsebuitenplaatsen.nl/buitenplaatsen/nijenrode/"
+      ],
+      "access": "View only: the pair of limes stand on the castle square of Kasteel Nijenrode, a moated private island belonging to Nyenrode Business University and not routinely open. Two independent sources confirm they are genuinely visible from the public road (Straatweg, alongside the moat) and from the river Vecht, a public waterway; the castle interior can only be entered on an organised tour.",
+      "transport": "Breukelen railway station, then roughly 10 to 15 minutes on foot to Straatweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The two mature limes flanking the castle square of Kasteel Nijenrode, best seen from the roadside or the river.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

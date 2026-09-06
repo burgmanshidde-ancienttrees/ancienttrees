@@ -1,0 +1,64 @@
+{
+  "city": "Laren, Gelderland",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "The biggest pedunculate oak in the Netherlands stands on the Verwolde estate near Laren, in the eastern Gelderland countryside, and it survived only because an eighteenth-century family was told no to a good offer. A miller wanted its trunk for millstone axles in 1767 and offered 275 guilders; the van der Borch family refused, and the tree they saved is now reported at close to eight metres round. A dedicated hardened path, the Dikke Boompad, leads straight to it, and the estate named it Tree of Gelderland in 2018.",
+  "meta_description": "The Netherlands' biggest pedunculate oak, roughly 400 to 500 years old and close to 8 metres round, on the Verwolde estate near Laren, Gelderland.",
+  "question_meta": "The Dikke Boom of Verwolde is the Netherlands' biggest pedunculate oak, roughly 400 to 500 years old. Where it stands near Laren, and how it survived.",
+  "question_answer": "The only tree mapped in Laren, Gelderland is the Dikke Boom of Verwolde, a pedunculate oak on the Verwolde estate estimated at roughly 400 to 500 years old and, at close to eight metres round, widely reported as the biggest of its kind in the Netherlands. It was named Tree of Gelderland in 2018 and stands at the end of a dedicated accessible path, the Dikke Boompad, free to visit.",
+  "question_context": "Sources agree the tree is somewhere between 400 and 500 years old, consistent with the estate's own planting records, though nobody has narrowed that band with a core sample. Its size is the more striking number: reported at close to eight metres round, though no source gives an exact figure, so this page records it as an approximate 780 centimetres rather than a precise one. That size is why, in 1767, a local miller offered the van der Borch family 275 guilders for the right to cut two millstone axles from its trunk. They refused, and the tree they kept standing later earned the title Tree of Gelderland, awarded in 2018. Decades of fertiliser draining in from a neighbouring maize field damaged roots on its southern side, and a 2005 restoration programme, groundwater monitoring, compost and mycorrhiza treatment and lime dressing, addressed the dieback: a record of active care rather than a tree in current trouble. The estate built the Dikke Boompad, a dedicated hardened path signposted for accessibility, specifically so visitors could reach it without a walk through the grass.",
+  "hero_tree_id": "lar_001",
+  "oldest_tree_id": "lar_001",
+  "faq": [
+    {
+      "q": "What is the Dikke Boom van Verwolde?",
+      "a": "The tree widely reported as the biggest pedunculate oak in the Netherlands, on the Verwolde estate near Laren, Gelderland. It is close to eight metres round and was named Tree of Gelderland in 2018."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimated at roughly 400 to 500 years, consistent with the estate's own planting records. No core sample has narrowed the range further."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. A dedicated hardened path, the Dikke Boompad, leads to the tree and is signposted for accessibility, including for visitors with mobility limitations."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands on the Verwolde estate near Laren, Gelderland, a rural area with no rail station, reached via the estate's own walking trails."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lar_001",
+      "name": "The Dikke Boom of Verwolde",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 to 500 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 780,
+      "location": {
+        "address": "Landgoed Verwolde, Jonker Emile Laan 5, 7245 TL Laren (Gelderland)",
+        "latitude": 52.199070818616,
+        "longitude": 6.3977436559161,
+        "neighbourhood": "Landgoed Verwolde, Laren, Gelderland (Lochem municipality)"
+      },
+      "story": "In 1767 a miller offered the van der Borch family 275 guilders for the right to cut two millstone axles from this oak's trunk. They refused, and the tree they saved is now widely reported as the largest solitary pedunculate oak in the Netherlands.\n\nEstimates put its age between 400 and 500 years, consistent with the estate's own planting records, and its girth at close to eight metres, though no source gives an exact figure, so this page records it as an approximate 780 centimetres rather than a precise one. It was named Tree of Gelderland in 2018, and the estate itself calls it the Jewel of Verwolde.\n\nIt has needed help along the way. Decades of fertiliser draining in from an adjacent maize field damaged roots on its southern side, and a 2005 restoration programme, groundwater monitoring, compost and mycorrhiza treatment, lime dressing, addressed the dieback. That is a record of active care rather than a tree in current trouble.\n\nThe estate built a dedicated hardened path to it, the Dikke Boompad, signposted in yellow and black and built to be reachable for visitors with mobility limitations, because enough people wanted to see the country's biggest oak that a proper route made more sense than a walk through the grass.",
+      "verified_sources": [
+        "https://landgoedverwolde.nl/dikke-boom/",
+        "https://achterhoek.nl/Dikke-Boom-Verwolde",
+        "https://www.bomenstichting.nl/nieuwsarchief/dikke-boom-van-verwolde.html"
+      ],
+      "access": "Free. Stands on the grounds of Landgoed Verwolde, a private estate whose walking paths are open to the public; the Dikke Boompad, a dedicated hardened path signposted in yellow and black, was built specifically to reach the tree, including for visitors with mobility limitations. No ticket, fee or opening hours found.",
+      "transport": "Rural estate near Laren, Gelderland, municipality of Lochem; reached via the estate's own walking trails, not by public transport.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The huge low, spreading oak at the end of the Dikke Boompad, unmistakably the biggest tree on the estate.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

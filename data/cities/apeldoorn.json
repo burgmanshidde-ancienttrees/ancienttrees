@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "William III built a hunting palace here in 1685 and planted avenues of oak in front of it. One of those oaks is still standing, by the statue of Frederick Henry, and the national register dates it to that planting. Four more grew up in the palace gardens over the following two centuries. The best tree in Apeldoorn is nowhere near any of them: a pollarded lime six metres round, tucked behind a fire station in Ugchelen, with a bench the council put there so people would sit and look at it.",
-  "meta_description": "Nine remarkable trees in Apeldoorn: an oak planted with the avenues of Paleis Het Loo around 1685, and a six-metre pollarded lime behind a fire station.",
+  "meta_description": "Ten remarkable trees in Apeldoorn: an oak planted with the avenues of Paleis Het Loo around 1685, and a six-metre pollarded lime behind a fire station.",
   "question_meta": "Apeldoorn's oldest tree is an oak at Paleis Het Loo, dated by the register to the palace's own planting around 1685. Where it stands, and eight more.",
   "question_answer": "The oldest tree in Apeldoorn is a pedunculate oak standing by the statue of Frederick Henry at Paleis Het Loo. The national register gives it a planting band of 1600 to 1700 and adds its own reasoning: it was probably put in at the same time as the oaks of the Koningslaan in front of the palace, which would date it to shortly after the palace was built, between 1685 and 1690. That would make it about 340 years old. A Dutch lime at Het Woldhuis, east of the town, carries the same 1600 to 1700 band with no such reasoning attached. Neither has been cored, so the oak is the oldest by the register's own dating and the lime is its equal on paper.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. Where the register offers reasoning of its own, as it does for the Het Loo oak and for the Ugchelen lime, the page repeats the reasoning rather than only the number, so you can judge it yourself. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged: it is an official survey and a good one, but one source is one source. The Ugchelen lime is the exception and carries a measured girth. Access is worth reading before you go, because five of these nine stand inside Paleis Het Loo, which is not free. If you find one of these gone, tell us and we will take it down the same day.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. Where the register offers reasoning of its own, as it does for the Het Loo oak and for the Ugchelen lime, the page repeats the reasoning rather than only the number, so you can judge it yourself. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged: it is an official survey and a good one, but one source is one source. The Ugchelen lime is the exception and carries a measured girth. Access is worth reading before you go, because five of these ten stand inside Paleis Het Loo, which is not free. If you find one of these gone, tell us and we will take it down the same day.",
   "hero_tree_id": "apd_002",
   "oldest_tree_id": "apd_001",
   "faq": [
@@ -341,6 +341,35 @@
         "status": "missing"
       },
       "how_to_recognise": "The oak inside the wrought-iron fence with the figure-eight ironwork pattern and stone posts carved 1533 and 1933, on the square opposite the former Koninklijke HBS.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_010",
+      "name": "The Black Alder of the Sculpture Garden",
+      "species": "Black Alder (Alnus glutinosa)",
+      "age_estimate": "roughly 100 years, from bomenbieb's planting estimate of around 1920",
+      "age_min": 90,
+      "age_max": 110,
+      "location": {
+        "address": "Beeldentuin (sculpture garden), Paleistuin Het Loo, near the tea pavilion; entrance off Amersfoortseweg",
+        "latitude": 52.236531,
+        "longitude": 5.939012,
+        "neighbourhood": "Paleispark Het Loo"
+      },
+      "story": "Old alders are rare in the Netherlands for a mundane reason: they usually grow beside a ditch or a pond, and a farmer or a water board cuts them back every few years to keep the bank clear. This one escaped that fate because it grew inside a royal garden instead of next to a drainage canal.\n\nIt stands on the bank of the pond in the Beeldentuin, the sculpture garden tucked into the grounds of Paleis Het Loo, several stems leaning low over the water near the old tea pavilion. Cut into alder wood and it turns from pale cream to a deep orange within minutes, which is why the timber was once prized for clogs and for piles driven into permanently wet ground, since it barely rots underwater. This tree has never been cut for either.\n\nBomenbieb, the Dutch tree-recording site, dates its planting to around 1920, making it roughly a century old, a comparative youngster on this page next to oaks planted with the palace avenues. Its age is not really the point. What it shows is what an alder becomes left alone: not the stubby, repeatedly pollarded shape of a working streamside tree, but a full, spreading, multi-stemmed specimen, which is what the species can do and rarely gets the chance to.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/zwarte-els-paleis-loo/"
+      ],
+      "access": "Paid. Inside the palace gardens of Paleis Het Loo, covered by a museum ticket, open during museum hours.",
+      "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A multi-stemmed alder leaning out over the sculpture garden pond, near the old tea pavilion.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
     }

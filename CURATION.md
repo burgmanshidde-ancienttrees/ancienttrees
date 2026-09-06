@@ -2,6 +2,35 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 (continuation 18) - bomenbieb-netherlands verify claim finished: 5 trees, 4 new single-tree places, 1 into Apeldoorn
+
+Apeldoorn +1 (apd_010, Black Alder of the Sculpture Garden, single-sourced
+and flagged, paid entry inside Paleis Het Loo). Four new single-tree
+places under the 2026-08-31 exception: Altrier/Luxembourg (alt_001, the
+Oak of Hersberg, Luxembourg's thickest tree; age genuinely disputed,
+roughly 300 vs roughly 500 years, and the "thousand-year" folk name is
+unsupported by any source found; a 2024 visit found the crown declined
+to about a third still bearing leaves, alive but worth a recheck),
+Breukelen (bkl_001, the Limes of Kasteel Nijenrode, a view-only pair on
+a private castle forecourt, pin on the public viewing point per the
+Hobart rule, approximate), Laren, Gelderland (lar_001, the Dikke Boom of
+Verwolde, the Netherlands' biggest pedunculate oak, root dieback from
+adjacent maize-field fertiliser addressed by a 2005 restoration
+programme, not a current concern), Amerongen (amg_001, the Adoption Oak,
+Bomenstichting-adopted 1987, paid garden ticket separate from the
+castle museum).
+
+Two independent verify efforts had worked the same three places
+(Altrier, Breukelen, Laren) the same day; the standalone lead files
+(`data/leads/altrier.json`, `breukelen.json`, `laren-gelderland.json`)
+were more carefully sourced than the claimed research file for those
+three, so their figures won where they disagreed (age bands, the
+Nijenrode limes' species, and dropping Verwolde's unconfirmed 25m
+height). All three lead files marked `published` with tree ids.
+0 photos found (verify-only leads, no photo hunt run this pass); all 5
+ship with `photo.status: missing`. Build (4856 pages) and preflight
+clean. Full detail in LOG.md continuation 18.
+
 ## 2026-09-06 (continuation 17) - Caught a near-duplicate before it shipped; Leiden's Golden Chain gets a confirmed pin instead
 
 Continuation 15 had released the `_bomenbieb-netherlands` verify claim
