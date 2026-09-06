@@ -5570,6 +5570,33 @@
     "note": "33 candidates viewed across 5 trees (12 pre-downloaded, 21 fetched by the agent itself), all rejected and all 5 marked exhausted for sweep v5. Best candidate was a good photo of a different Wilhelminalinde at Nassauplein, not ams_022's Kalverstraat tree (Commons categories and a species-plaque photo in the same series settled it). Found a small script bug: photo_apply.py reject does not clear a previously-written held block, worked around by hand-editing the city file back to missing.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "tilburg",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 8,
+    "note": "Zuiderpark rare-tree teaching collection (5 trees, register-only, planted 1950s to teach evening horticulture/floristry students) plus a Kloosterpark extension of the existing Leijpark walk (3 trees, former convent grounds). 2 candidates blocked on access grounds (by-appointment, school playground).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "eindhoven",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "Register-led Strijp churchyard cluster (Sint Trudo copper beech avenue + 3 trees in the small Antonius kerkhof), all flagged single-source-plus-access-corroboration; no girth (LRMB has no girth field) and monumentaltrees.com unreachable (403).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "tilburg + eindhoven write-up",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 12,
+    "note": "Wrote and shipped all 12 verified trees from the two passes above directly into data/cities/tilburg.json and data/cities/eindhoven.json (til_008-015, ein_008-011). Fixed stale tree-count promises in both cities' meta_description, question_meta and access FAQ. Session work, tokens not logged by an agent report.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

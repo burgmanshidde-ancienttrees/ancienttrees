@@ -1,0 +1,99 @@
+[
+ {
+  "id": "ein_008",
+  "name": "The Copper Beech of Sint Trudo Churchyard",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "roughly 130 years",
+  "age_min": 126,
+  "age_max": 136,
+  "girth_cm": null,
+  "location": {
+   "address": "Strijpsestraat 127, churchyard behind the Sint Trudokerk, Strijp, Eindhoven",
+   "latitude": 51.441032,
+   "longitude": 5.455732,
+   "neighbourhood": "Strijp"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, record nr 1694310, multi-stemmed copper beech, planted band 1890-1900, owner category publiekrechtelijke organisatie, visitable=ja, visible=ja)",
+   "https://gedenk-cultuur.nl/directory/item/kerkhof-rooms-katholieke-kerk-trudo-strijpsestraat-eindhoven/",
+   "https://www.begraafplaats.nl/begraafplaatsen/begraafplaats-sint-trudo-1900/"
+  ],
+  "access": "Free. Public Catholic churchyard behind the Sint-Trudokerk in Strijp, open daily (the sister cemetery run by the same parish, Antonius, posts 10:00-17:00 daily on begraafplaats.nl; Trudo's own page does not print hours but is the same parish's ordinary working cemetery).",
+  "transport": "Eindhoven Strijp-S railway station, about 12-15 minutes' walk, or bus lines serving Strijpsestraat",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register (LRMB nr 1694310) designates this specific copper beech, coordinates 51.441032/5.455732, 'achter de Sint Trudokerk' (behind the church), multi-stemmed form, planted band 1890-1900 -> roughly 130 years old today. The churchyard holds a whole beech-lined entrance avenue (~20 beeches per a WebSearch summary of monumentaltrees.com, which could not be fetched directly, HTTP 403, so treated as a lead only per the search-summary-is-a-lead rule, not cited as a source). gedenk-cultuur.nl independently confirms: 'De begraafplaats Trudo bevindt zich achter de kerk, waar aan beide zijden van een monumentale toegangslaan met beuken bomen de graven in rijen te vinden zijn' (a monumental entrance avenue of beeches with graves in rows on both sides, ending at a hill with a cross) - this is the second, independent source for the avenue's existence and character, though it does not single out this one specimen by coordinate, so species/individual-tree corroboration rests on the register plus the general match; flagged for that reason. The register also separately lists a Pedunculate Oak and a Sweet Chestnut at the same churchyard, both marked visitable=nee/visible=nee (likely along a closed woodland edge south of the church), so this copper beech (visitable=ja, visible=ja) was chosen over them. Three further 'Bruine beuk' entries (nr 1680249, 1695441, 1695440) sit within 100-150m in the same avenue; treated as the same collectible ensemble rather than separate entries, per the register-twins rule, since a visitor sees one beech avenue rather than four distinct trees. No girth recorded by this register (LRMB carries no girth field); none found elsewhere. Sint Trudokerk itself: parish church of the former village of Strijp (independent municipality until 1919 annexation by Eindhoven), current building consecrated 1887, damaged by fire 1936, rebuilt with a tower 1937-38, bomb-damaged 1944, repairs finished 1949."
+ },
+ {
+  "id": "ein_009",
+  "name": "The Box Elder of Antonius Kerkhof",
+  "species": "Box Elder (Acer negundo)",
+  "age_estimate": "roughly 100 years",
+  "age_min": 96,
+  "age_max": 106,
+  "girth_cm": null,
+  "location": {
+   "address": "Doelenstraat 2, Antonius kerkhof, Eindhoven",
+   "latitude": 51.443651,
+   "longitude": 5.453417,
+   "neighbourhood": "Villapark / Doctor Berlagelaan area"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, record nr 1697130, single specimen, planted band 1920-1930, reasons recorded: high aesthetic value and a species rare for the region, owner category religieuze instantie, visitable=ja, visible=ja)",
+   "https://www.begraafplaatsenonline.nl/noordbrabant/eindhoven/5616rl_antonius.php (confirms the cemetery, opening hours daily 10:00-17:00, managed by Parochie Sint Joris)"
+  ],
+  "access": "Free. Small Catholic churchyard (Antonius kerkhof, ca. 0.85 ha), open daily 10:00-17:00. It closed for new burials in 2007 (urns only now) and is otherwise an ordinary public churchyard.",
+  "transport": "About 1.3 km / 15-20 minutes walk from Eindhoven city centre; several bus lines stop within a few minutes on the Kronehoefstraat/Fransebaan",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register (LRMB nr 1697130) designates one individual Box Elder at this exact coordinate, single stem ('Natuurlijke vorm'), planted band 1920-1930 -> roughly 100 years old, flagged by the register itself for two reasons: high aesthetic value and being a species rare for this region (Zeldzame_soort_in_de_regio). Register history: the churchyard belonged to the former RK Parish of St Anthony of Padua (known locally as the 'Steentjeskerk'), founded 1919 out of the fast-growing Trudo parish, itself dissolved back into Trudo parish in 1977; the cemetery stopped taking new burials in 2007 and now only receives urns. Only one independent source found and it corroborates the CEMETERY (existence, address, daily public opening hours) rather than this specific specimen by species/age, since no newspaper, society or second register entry singles out this tree; flagged for that reason, per the rule that one source (even an official register) ships flagged rather than withheld. Not in the register's own dead-entries list (a regex sweep of felling language in every entry's history)."
+ },
+ {
+  "id": "ein_010",
+  "name": "The Nordmann Firs of Antonius Kerkhof",
+  "species": "Nordmann Fir (Abies nordmanniana)",
+  "age_estimate": "roughly 100 years",
+  "age_min": 96,
+  "age_max": 106,
+  "girth_cm": null,
+  "location": {
+   "address": "Doelenstraat 2, Antonius kerkhof, Eindhoven",
+   "latitude": 51.443352,
+   "longitude": 5.453447,
+   "neighbourhood": "Villapark / Doctor Berlagelaan area"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, record nr 1695680, group entry n_trees=3, planted band 1920-1930, reason: monumentaal, owner category religieuze instantie, visitable=ja, visible=ja)",
+   "https://www.begraafplaatsenonline.nl/noordbrabant/eindhoven/5616rl_antonius.php (confirms the cemetery, opening hours daily 10:00-17:00, managed by Parochie Sint Joris)"
+  ],
+  "access": "Free. Small Catholic churchyard (Antonius kerkhof, ca. 0.85 ha), open daily 10:00-17:00. It closed for new burials in 2007 (urns only now) and is otherwise an ordinary public churchyard.",
+  "transport": "About 1.3 km / 15-20 minutes walk from Eindhoven city centre; several bus lines stop within a few minutes on the Kronehoefstraat/Fransebaan",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register (LRMB nr 1695680) designates a group of THREE Nordmann firs at one coordinate ('n_trees': 3), planted band 1920-1930 -> roughly 100 years old, reason 'monumentaal'. Same small churchyard as ein_009 (the Box Elder) and roughly 35m from it, so both sit inside a single short stop on the walk rather than needing separate visits. Treated as one collectible entry (a compact, one-spot group) rather than three, per the register-twins/ensemble rule; a visitor sees one stand of firs, not three specimens to find separately. Abies nordmanniana (Nordmann fir / Caucasian fir) is a Caucasus native and the world's most widely sold Christmas-tree species; conifers this size are unusual for a small Dutch parish churchyard, which is presumably why the register singled the group out. Only the register and the general cemetery-access source were found; no independent source names these specific trees, so flagged per the one-source rule. Not in the register's own dead-entries list."
+ },
+ {
+  "id": "ein_011",
+  "name": "The Oak at the Gate of Antonius Kerkhof",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 100 years",
+  "age_min": 96,
+  "age_max": 106,
+  "girth_cm": null,
+  "location": {
+   "address": "Doelenstraat 2, Antonius kerkhof, Eindhoven (just inside the entrance, right of the caretaker's house)",
+   "latitude": 51.44265,
+   "longitude": 5.453104,
+   "neighbourhood": "Villapark / Doctor Berlagelaan area"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, record nr 1695439, single specimen, planted band 1920-1930, reason: nieuw (newly added to the register), owner category religieuze instantie, visitable=ja, visible=ja)",
+   "https://www.begraafplaatsenonline.nl/noordbrabant/eindhoven/5616rl_antonius.php (confirms the cemetery, opening hours daily 10:00-17:00, managed by Parochie Sint Joris)"
+  ],
+  "access": "Free. Small Catholic churchyard (Antonius kerkhof, ca. 0.85 ha), open daily 10:00-17:00. It closed for new burials in 2007 (urns only now) and is otherwise an ordinary public churchyard.",
+  "transport": "About 1.3 km / 15-20 minutes walk from Eindhoven city centre; several bus lines stop within a few minutes on the Kronehoefstraat/Fransebaan",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register (LRMB nr 1695439) designates one Pedunculate Oak just inside the churchyard entrance, right of the caretaker's house ('rechts van woning'), planted band 1920-1930 -> roughly 100 years old, reason 'nieuw' (recently added to the register rather than long-designated). It is the first tree a visitor meets on entering, which makes it a natural opening stop for the same short visit as ein_009 and ein_010 (both within about 150m in the same small churchyard). Only the register and the general cemetery-access source were found; no independent source names this specific tree, so flagged per the one-source rule. Not in the register's own dead-entries list."
+ }
+]
