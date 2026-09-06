@@ -1,6 +1,47 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 5) - Borrowdale ships; caught two near-duplicates before they shipped; Box Elder species page
+
+Picked up after an earlier attempt in this window stopped at 74 minutes
+with 46 of 120 unspent. Rung 1 (reader submissions, sightings inbox) was
+clear. Rung 2: health.py flagged the Data digest workflow failed; traced
+it to a plain git-push race (already logged FOR HIDDE, needs `workflows`
+scope this environment lacks), not a fresh problem. `leads.py --ready` had
+only 1 lead, too thin for a write batch, so claimed
+`_famous-united-kingdom` (26 leads) for a verify pass instead.
+
+**The verify pass found 1 genuinely new tree and 2 near-misses worth
+recording as a process lesson.** Of 3 candidates returned, only the
+Borrowdale Yews (Wordsworth's "Fraternal Four", Cumbria) were actually
+new. The Ankerwycke Yew turned out to already be published as `ank_001`
+under Runnymede, same coordinates to the metre; caught by
+`preflight.py`'s duplicate-pin check before a second copy shipped. Worse,
+the Llangernyw Yew was already published as `lgy_001` from an earlier run
+today, and writing its page silently overwrote the existing file with a
+weaker version before `git status` flagged it as modified rather than new
+and the original was restored from git. Both slipped through because
+`data/leads/_famous-united-kingdom.json` was never updated with their
+published status when they shipped, so a fresh brief read them as still
+open. Fixed the leads file for all three (plus the correctly-blocked
+Ormiston Yew, held for a landowner's own low-footfall request under the
+spirit of hard rule 10) so this does not repeat. Full detail in
+CURATION.md; the underlying fix worth doing later is cross-checking a
+verify brief against the leads file's own status field rather than
+trusting it wasn't touched.
+
+**Borrowdale (Cumbria) ships**, a new single-tree place: the Borrowdale
+Yews, 3 surviving yews of Wordsworth's original 4, one collectible point
+on National Trust land above Seathwaite, oldest dendro-dated to roughly
+1,500 years. No photo yet (3 Commons candidates on file, unjudged).
+
+Also wrote the one open species-page gap, Box Elder (3 trees: Chicago,
+Eindhoven, Setubal), directly rather than dispatching, since 3 trees was
+small enough.
+
+Build (4658 pages), qa.py (7003 pages), preflight.py (454 cities, 0
+problems) and superlatives.py all clean. Claim released.
+
 ## 2026-09-06 (continuation 4) - Finished four standing claims: 5 new German single-tree places, Tilburg +8, Eindhoven +4, plus a pre-existing CSS bug found and fixed
 
 An earlier attempt in this window stopped after 11 minutes with 109 of 120
