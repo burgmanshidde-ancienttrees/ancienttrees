@@ -1,0 +1,279 @@
+[
+  {
+    "id": "hrs_001",
+    "name": "The Memorial Lindens of Hronsek Church",
+    "species": "Lime (Tilia sp.)",
+    "age_estimate": "about 300 years",
+    "age_min": 280,
+    "age_max": 300,
+    "location": {
+      "address": "Churchyard of the Wooden Articular Church, Hronsek",
+      "latitude": 48.649029,
+      "longitude": 19.155146,
+      "neighbourhood": "Hronsek, Banska Bystrica District"
+    },
+    "verified_sources": [
+      "https://www.hronsek.sk/dreveny-artikularny-kostol-unesco.html",
+      "https://sk.wikipedia.org/wiki/Dreven%C3%BD_artikul%C3%A1rny_kostol_(Hronsek)"
+    ],
+    "access": "Free to view from the churchyard of the UNESCO-listed wooden articular church, a public village church precinct. Entering the church building itself outside the main season (Sept-Jun) needs a phone booking; the courtyard and trees are not gated behind that.",
+    "transport": "Hronsek village, roughly 18km / 20 minutes drive from Zvolen, no rail station in the village; regional bus from Zvolen or Banska Bystrica to Hronsek, short walk to the church.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Hronsek, Banska Bystrica Region"
+    },
+    "verify_notes": "Register match: data/registers/slovakia-chranene-stromy.json register_id 3, \"Lipy pri Hronseckym kostolikom\", tree_count 6, locality \"nadvorie kostolika\" (church courtyard), coords 11m from this lead. Two independently fetched sources agree the lindens were planted at the church's 1726 consecration (making the oldest roughly 300 years now), but disagree on count: hronsek.sk says 4 mighty lindens of which 2 are as old as the church; sk.wikipedia says 3 old lindens planted at the consecration. The register itself lists 6 trees under this designation. Recording all three counts rather than picking a winner; the writer should say \"several venerable lindens\" rather than commit to one number. No girth or height found in either source. The church and its bell tower were inscribed on the UNESCO World Heritage List (Wooden Churches of the Slovak part of the Carpathian Mountain Area) on 2008-07-07. The single-famous-tree/ensemble exception applies here as an ensemble: this is a compact planting at one obvious place to stand (the churchyard of a UNESCO site), not a scattered avenue, so it ships as its own place, Hronsek, rather than joining any published city (nearest is Kremnica at 18.2km, no existing city close enough or with an established transit link that makes this a same-city day trip; Hronsek stands on its own UNESCO fame instead)."
+  },
+  {
+    "id": "tst_001",
+    "name": "Lipský's Lindens",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "roughly 250 to 500 years (sources disagree)",
+    "age_min": 250,
+    "age_max": 500,
+    "girth_cm": 620,
+    "location": {
+      "address": "Memorial park by the Ján Lipský monument, Sedličná, Trenčianske Stankovce",
+      "latitude": 48.844819,
+      "longitude": 17.989844,
+      "neighbourhood": "Sedličná, Trenčianske Stankovce, Trenčín District"
+    },
+    "verified_sources": [
+      "https://sk.wikipedia.org/wiki/Lipsk%C3%A9ho_lipy",
+      "https://www.trencianskestankovce.sk/obec-3/historia-obce/osobnosti-/"
+    ],
+    "access": "Free, in a public village memorial park with the Ján Lipský monument and bust; open ground, no ticket or booking needed.",
+    "transport": "Trenčianske Stankovce village (Sedličná part), on the Trenčín-Nemšová regional bus route; nearest train station is Trenčín, then local bus or a short taxi ride.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Trenčianske Stankovce, Trenčín Region"
+    },
+    "verify_notes": "Register match: data/registers/slovakia-chranene-stromy.json register_id 275, \"Lipskeho lipy\", 2 small-leaved limes, locality \"Nad rodinnou hrobkou r.Maxonovych\" (above the Maxon family tomb), protected since 1984-08-21 for scientific/educational/cultural value, managed by Sprava CHKO Biele Karpaty. Two independently fetched sources: sk.wikipedia (\"Lipskeho lipy\" article) gives two lindens, Tree 1 ~250 years/630cm girth/26m tall, Tree 2 ~200 years/380cm girth/24m tall; the village's own official page (trencianskestankovce.sk) describes what is almost certainly the same larger tree near the monument as \"asi patstorocna\" (about 500 years old), 620cm girth, and a probable typo height of \"240cm\" (likely meant metres or a mis-entered figure, left out of this record as unusable). AGE DISAGREEMENT: 250 years (wikipedia) vs 500 years (village page) for the same tree; recording both rather than picking a winner, hence the wide age_min/age_max band. Named for Jan Lipsky (1766-1826), a significant Slovak/Hungarian cartographer and military officer, born and buried in Sedlicna; buried between two lindens per his own wish, per this project's own reading of the sources (the vets.cz page describing his grave 403'd and could not be fetched to confirm the burial-between-trees detail directly, so that detail rests on the search summary only and is NOT included as a sourced fact here, per the search-summary-is-a-lead-never-a-source rule). The tree placed 3rd in the national \"Strom roka\" (Tree of the Year) 2004 contest, real regional recognition. No published city is within a 30-minute day-trip (Myjava is the closest at 31.5km), so this ships as its own place."
+  },
+  {
+    "id": "lip_001",
+    "name": "The Linden of Lipany",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "over 320 years",
+    "age_min": 320,
+    "age_max": 360,
+    "girth_cm": 536,
+    "height_m": 23,
+    "location": {
+      "address": "Námestie sv. Martina (St Martin's Square), by the Church of St Martin, Lipany",
+      "latitude": 49.15417,
+      "longitude": 20.96247,
+      "neighbourhood": "Lipany town centre, Sabinov District"
+    },
+    "verified_sources": [
+      "https://www.regionsaris.sk/prirodne-krasy/lipa-malolista/",
+      "https://www.teraz.sk/import/lipany-lipa-strom-roka/58904-clanok.html"
+    ],
+    "access": "Free, standing in the pedestrianised town square in front of the Church of St Martin, open at all times.",
+    "transport": "Lipany town centre; the tree stands a short walk from Lipany railway station on the Kosice-Presov-Plavec line.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Lipany, Presov Region"
+    },
+    "verify_notes": "Register match: data/registers/slovakia-chranene-stromy.json register_id 318, \"Lipanska lipa\", single tree, publishable true, coords 8m from this lead. Two independently fetched sources (regionsaris.sk and teraz.sk) closely agree: over 320 years old, 536cm trunk girth, 23m tall, standing in the town square next to the early-Gothic Church of St Martin. Won the national \"Strom roka\" (Tree of the Year) 2011 contest (Lipany town received a 333-euro prize) and placed fourth in the European Tree of the Year competition the same year, real and verifiable national fame, clearing the single-famous-tree destination bar on its own. Local tradition holds it is the last survivor of the \"seven lindens\" the town was named for in the 14th century (Sedem lipy / Septemthillis), and that contracts signed beneath it with two witnesses once carried notarial force; both are repeated tradition rather than documentary fact and are presented as tradition in the story. No published city sits within a day-trip (closest is well over 150km), so this ships as its own place."
+  },
+  {
+    "id": "drz_001",
+    "name": "The Oak of Drnava",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 700 years",
+    "age_min": 650,
+    "age_max": 750,
+    "girth_cm": 528,
+    "height_m": 14,
+    "location": {
+      "address": "Poklady Drnavy educational trail, stop 2, northeastern Drnava, near the former Drnava ironworks site",
+      "latitude": 48.64374,
+      "longitude": 20.66169,
+      "neighbourhood": "Drnava, Roznava District"
+    },
+    "verified_sources": [
+      "https://ekopolis.sk/2020-2/dub-z-malej-pesti-stromom-roka-2020",
+      "http://naucnechodniky.eu/naucny-chodnik-poklady-drnavy/"
+    ],
+    "access": "Free, standing beside the village's own \"Poklady Drnavy\" (Treasures of Drnava) educational trail, open ground within the built-up village.",
+    "transport": "Drnava village, Roznava District; nearest railway station is Roznava, then a regional bus to Drnava.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Drnava, Kosice Region"
+    },
+    "verify_notes": "Not in our imported register (data/registers/slovakia-chranene-stromy.json has no entry within several km; the nearest is Kovacska lipa 2.6km away, a different tree). Two independently fetched sources agree closely: ekopolis.sk, the official page of the national \"Strom roka\" contest, confirms this exact oak (Quercus robur, Drnava, Roznava district) WON Strom roka 2020 with 5,246 of 24,839 votes, documented in the village chronicle since 1670, 700 years old, 528cm girth, 14m tall; the village's own educational-trail page (naucnechodniky.eu) independently gives ~700 years, over 520cm girth, 14m height, 21m crown, and confirms it represented Slovakia in the European Tree of the Year 2020 contest. Real, verifiable national fame (a contest winner with published vote counts), clearing the single-famous-tree destination bar easily. Drnava was nicknamed \"Kis Pest\" (Little Pest) after its 19th-century Andrassy ironworks, which cast structural parts for Budapest's Chain Bridge (Lanchid) in the 1840s; the tree stands near that former ironworks site, a good anecdote for the story. No published city sits within a day-trip, so this ships as its own place."
+  },
+  {
+    "id": "dbi_001",
+    "name": "The Oak of Dubinné",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "at least 800 years, possibly older",
+    "age_min": 800,
+    "age_max": 900,
+    "girth_cm": 733,
+    "height_m": 25,
+    "location": {
+      "address": "Dubinné village, beside the roadside chapel",
+      "latitude": 49.24554,
+      "longitude": 21.43767,
+      "neighbourhood": "Dubinné, Bardejov District"
+    },
+    "verified_sources": [
+      "https://www.dubinne.sk/historia_duba.php",
+      "https://obce.tasr.sk/clanok/3663/obec-dubinne-pri-bardejove-sa-pysi-viac-ako-800-rocnym-dubom"
+    ],
+    "access": "Free, standing on open ground in the village next to a roadside chapel, no ticket or booking needed.",
+    "transport": "Dubinné village, about 15km southeast of Bardejov; reached by regional bus from Bardejov, no rail station in the village.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Dubinné, Presov Region"
+    },
+    "verify_notes": "Two independently fetched sources agree closely: the village's own page (dubinne.sk) and TASR, the national press agency (obce.tasr.sk), both say the oak is regarded as the oldest in Slovakia, at least 800 years old (dubinne.sk: \"its age can no longer be precisely determined, because it is hollow and the oldest part of the tree is irretrievably gone\"), 25m tall, with a girth of 733cm at breast height and roughly 1233cm at ground level (the ground-level figure is a buttressed/root-flare mass rather than a clean trunk measurement, recorded here as girth_cm=733 for the breast-height figure only, per this project's own rule on buttressed masses). Won the national \"Strom roka\" (Tree of the Year) 2010 contest; other search-summary results (not independently fetched, so not used as sourced facts) suggested 850 years and this is consistent with the 800+ estimate, recorded as the wider age_max band rather than asserted. Rich, well-documented history: villagers reportedly paid a ransom to save it from felling during the Hussite wars (1440-1465), it served as a military reference point in both world wars, survived a 1913 village fire and a 1985 fire from a smoke bomb, was struck by lightning in 1995, and a chapel stands beside it built after a reported 18th-century Marian apparition in its crown. This is a nationally famous tree (Tree of the Year winner, widely reported as Slovakia's oldest oak) that clears the single-famous-tree destination bar easily. No published city sits within a day-trip, so this ships as its own place."
+  },
+  {
+    "id": "uzp_001",
+    "name": "The Service Tree of Uzovská Panica",
+    "species": "Service Tree (Sorbus domestica)",
+    "age_estimate": "about 250 years",
+    "age_min": 220,
+    "age_max": 280,
+    "girth_cm": 295,
+    "height_m": 14,
+    "location": {
+      "address": "Lapoňa area, Uzovská Panica village",
+      "latitude": 48.44306,
+      "longitude": 20.16504,
+      "neighbourhood": "Uzovská Panica, Rimavská Sobota District"
+    },
+    "verified_sources": [
+      "https://ekopolis.sk/aktuality/titulom-strom-roka-2019-sa-pysi-oskorusa-domaca-z-uzovskej-panice",
+      "https://www.rimava.sk/spravy-z-regionu/zivotne-prostredie/stromom-roka-po-oskorusi-z-uzovskej-panice-je-tento-rok-700-rocny-dub-letny/"
+    ],
+    "access": "Free, standing in open farmland/village ground (a boundary tree historically marking property lines), no ticket or booking needed.",
+    "transport": "Uzovská Panica village, Rimavská Sobota District; nearest railway/bus hub is Rimavská Sobota, then a regional bus.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Uzovská Panica, Banska Bystrica Region"
+    },
+    "verify_notes": "Two independently fetched sources: ekopolis.sk (the official \"Strom roka\" contest page) gives Sorbus domestica, about 250 years old (likely planted in the era of Maria Theresa), 295cm girth, 14m tall, historically used as a boundary marker and a sign of good ground for fruit trees, still fruiting with large pinkish-yellow pear-shaped fruit ripening mid-October; it won Strom roka (Tree of the Year) 2019 with 6,710 votes and went on to represent Slovakia in the European Tree of the Year contest. rimava.sk (a regional news site, reporting on the FOLLOWING year's contest) independently confirms the 2019 Oskorusa/Sorbus domestica win from Uzovska Panica/Rimavska Sobota district, the 250-year age, and says it drew over 10,000 votes (a vote-count discrepancy against ekopolis's 6,710, not resolved, noted rather than picked). Sorbus domestica is properly called the Service Tree in English (distinct from the wild service tree, Sorbus torminalis); the lead's genus-only guess of \"Rowan (Sorbus sp.)\" is corrected here on two-source evidence. Real, verifiable national fame (a contest winner with published vote counts and European-contest representation), clearing the single-famous-tree destination bar. No published city sits within a day-trip (Kremnica is closest at 96km), so this ships as its own place."
+  },
+  {
+    "id": "zil_001",
+    "name": "The Plane Tree of Budatín Park",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "about 270 years",
+    "age_min": 250,
+    "age_max": 280,
+    "girth_cm": 603,
+    "height_m": 27,
+    "location": {
+      "address": "Budatínsky park, southwestern corner of Budatín Castle wall",
+      "latitude": 49.2361,
+      "longitude": 18.73366,
+      "neighbourhood": "Budatín, Žilina"
+    },
+    "verified_sources": [
+      "https://www.naspark.sk/sk/park/55-budatinsky-park",
+      "http://web.archive.org/web/20251111045234/https://spravy.pravda.sk/domace/clanok/409140-strom-roka-rastie-v-budatinskom-parku/"
+    ],
+    "access": "Free, standing in Budatín Park (Budatínsky park) beside Budatín Castle, an open public park at the confluence of the Kysuca and Váh rivers.",
+    "transport": "Žilina; Budatín Park is a short walk or local bus ride from Žilina railway station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Žilina"
+    },
+    "verify_notes": "Two independently fetched sources agree closely: naspark.sk (a park-database site) gives Platanus acerifolia/hispanica, ~270 years old, 603cm girth, at the southwestern corner of the castle wall, won Strom roka (Tree of the Year) 2016 and placed 9th of 16 in the 2017 European Tree of the Year contest; Pravda (national newspaper, fetched via a 2025-11-11 Wayback Machine snapshot since the live spravy.pravda.sk page 403s plain fetchers), independently confirms ~270 years, 27m tall, girth just over 6m, planted in 1745 when Count Jan Sunyog had gardener Frantisek Roder from Silesia landscape the grounds around Budatin Castle. Good anecdote for the story: a smaller \"brother\" plane grows right beside it, roots intertwined, damaged by lightning and a wood-rotting fungus, while the nominated tree is the largest and healthiest of several planes in the park. Real, verifiable national fame (a contest winner that represented Slovakia internationally), clearing the single-famous-tree destination bar. Budatin is a district of Zilina (Slovakia's 4th-largest city, not currently published); this ships as its own place rather than waiting on a full Zilina page, since the tree alone already clears the bar. Not matched in our imported register (nearest entry, Lipy v Ziline id 187, sits 383m away and is a different, separate designation)."
+  },
+  {
+    "id": "zil_002",
+    "name": "The Lindens of Kysucká Street",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "location": {
+      "address": "Kysucká cesta, Žilina",
+      "latitude": 49.23336,
+      "longitude": 18.736786,
+      "neighbourhood": "Žilina"
+    },
+    "verified_sources": [
+      "https://www.npmalafatra.sk (2022-05 arborist care article on these two lindens)",
+      "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku"
+    ],
+    "access": "Free, standing beside Kysucká cesta, a public street in Žilina, no ticket or booking needed.",
+    "transport": "Žilina; a short walk or local bus ride from Žilina railway station, about 400m from the Budatín Park plane tree.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Žilina"
+    },
+    "verify_notes": "Carried over from an earlier pass's research (recorded against this lead in data/leads/_famous-slovakia.json before this pass). Register match: data/registers/slovakia-chranene-stromy.json register_id 187, \"Lipy v Ziline\", 2 small-leaved limes, locality \"Kysucka cesta\", publishable false in the register only because any tree_count>1 designation is mechanically flagged false under the register's own collectible-point caveat, not an access/withholding flag. Two sources: the register itself, and sk.wikipedia's \"Zoznam chranenych stromov na Slovensku\" list (S187, Tilia cordata, same locality, managed by Sprava NP Mala Fatra). A 2022-05 npmalafatra.sk article (the Mala Fatra National Park administration's own site, which manages the designation) independently describes real arborist safety and health pruning and new dynamic support cables fitted to the larger of the two trees, confirming both are ALIVE and actively maintained; one tree is in visibly better health than the other. No age or girth is recorded by any source; left blank per this project's rule rather than estimated without a basis, and the page should ask the reader. Previously left as a lead because two locally protected street trees alone did not clear the single-famous-tree destination bar; now shipping as part of a Zilina cluster anchored by the nationally famous Budatin Park plane tree (zil_001, sub-500m away) and the Sokolovska maple (zil_003, ~1.5km away), all inside Zilina, Slovakia's 4th-largest city and previously unpublished."
+  },
+  {
+    "id": "zil_003",
+    "name": "The Maple of Sokolovská Street",
+    "species": "Maple (Acer sp.); the register calls it javor cukrovy (usually Acer saccharum, Sugar Maple) but sk.wikipedia's own protected-tree list gives the binomial as Acer saccharinum (Silver Maple) for this same row, a genuine source conflict left for the reader/a botanist to settle in person",
+    "location": {
+      "address": "Sokolovská ulica, Žilina",
+      "latitude": 49.222501,
+      "longitude": 18.733451,
+      "neighbourhood": "Žilina"
+    },
+    "verified_sources": [
+      "data/registers/slovakia-chranene-stromy.json (register_id 188, publishable true)",
+      "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku"
+    ],
+    "access": "Free, standing beside Sokolovská ulica, a public street in Žilina, no ticket or booking needed.",
+    "transport": "Žilina; a short walk or local bus ride from Žilina railway station, about 1.5km from the Budatín Park plane tree.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Žilina"
+    },
+    "verify_notes": "Carried over from an earlier pass's research (recorded against this lead in data/leads/_famous-slovakia.json before this pass). Two sources agree on existence, locality and general designation: the register (register_id 188, publishable true, \"the only specimen of this species of advanced age in the district\", protected for health/hygiene reasons as a North American exotic) and sk.wikipedia's own protected-tree list (S188, same locality), but the two disagree on the exact species: the register's Slovak name \"javor cukrovy\" normally means Acer saccharum (Sugar Maple), while sk.wikipedia's list gives the binomial Acer saccharinum (Silver Maple) for this exact row. This is a real, unresolved conflict between our two sources rather than a typo either can be blamed for; recorded honestly rather than guessed at, and the page should ask readers who can identify the leaves in person. No age or girth found in either source; left blank rather than estimated. Previously left as a lead because a single locally protected street tree with no dedicated coverage did not clear the single-famous-tree destination bar on its own; now shipping as part of a Zilina cluster anchored by the nationally famous Budatin Park plane tree (zil_001, ~1.5km away) and the Kysucka Street lindens (zil_002, ~1.2km away), all inside Zilina, Slovakia's 4th-largest city and previously unpublished."
+  },
+  {
+    "id": "cst_001",
+    "name": "The Great Chestnut of Časta",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "about 500 years",
+    "age_min": 450,
+    "age_max": 550,
+    "girth_cm": 830,
+    "height_m": 24,
+    "location": {
+      "address": "In the vineyards above Časta village",
+      "latitude": 48.40401,
+      "longitude": 17.355223,
+      "neighbourhood": "Časta, Pezinok District"
+    },
+    "verified_sources": [
+      "https://sk.wikipedia.org/wiki/Ga%C5%A1tan_jedl%C3%BD_v_%C4%8Castej",
+      "https://ekopolis.sk (Strom roka coverage of this tree, cited in the earlier research note carried over below)"
+    ],
+    "access": "Free, standing in open vineyard ground above the village, reachable on foot from Časta; not fenced or gated.",
+    "transport": "Časta village, Pezinok District, about 34km from Bratislava; regional bus from Pezinok or Modra, then a short walk uphill into the vineyards.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "container": {
+      "type": "own_place",
+      "place": "Časta, Bratislava Region"
+    },
+    "verify_notes": "Register match: data/registers/slovakia-chranene-stromy.json register_id 456, \"Gastan jedly v Castej\", single tree, publishable true, locality \"vo vinohradoch\" (in the vineyards), coords matching this lead almost exactly. Carried over from an earlier pass's research already recorded against this lead: sk.wikipedia and Ekopolis's Strom roka coverage agree it is the LARGEST sweet chestnut in Slovakia, roughly 500 years old, girth 830-866cm (sources differ slightly; using the lower, more conservative figure), 23-25m tall, protected since Dec 1997/1998 (sources differ by a year on the exact protection date, not load-bearing). Being the country's largest specimen of its species is a real, checkable superlative, which is what changes the earlier verdict: the previous pass held this back for standing 34km from Bratislava (just outside the ~30-minute day-trip boundary, so it cannot join Bratislava as a day-trip tree) and for lacking multi-language Wikipedia coverage. On reflection the record-holder status (largest sweet chestnut in the country) is itself the kind of fact that makes a tree worth a special trip, in the same way this project already runs superlative collection pages (thickest/tallest/oldest); shipping as its own place, Casta, rather than continuing to leave a verified, aged, superlative-holding tree unpublished."
+  }
+]
