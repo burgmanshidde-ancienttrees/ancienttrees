@@ -6211,6 +6211,119 @@
    ],
    "trees": 20,
    "logged": true
+  },
+  {
+   "started": "2026-09-06T19:37:08+00:00",
+   "date": "2026-09-06",
+   "run_id": "34049904674",
+   "minutes": 11.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 106,
+   "denials": 3,
+   "denials_source": "permission_denials: Bash(env), Bash(ls), Bash(rm)",
+   "ended": "success",
+   "tokens": 1549665,
+   "claims_held": [
+    "_bomenbieb-netherlands",
+    "alicante",
+    "_famous-japan",
+    "_famous-taiwan"
+   ],
+   "commits": 19,
+   "cities_touched": 22,
+   "cities": [
+    {
+     "city": "zilina",
+     "trees": 3
+    },
+    {
+     "city": "bohunovice",
+     "trees": 1
+    },
+    {
+     "city": "casta",
+     "trees": 1
+    },
+    {
+     "city": "drnava",
+     "trees": 1
+    },
+    {
+     "city": "dubinne",
+     "trees": 1
+    },
+    {
+     "city": "horni-bradlo",
+     "trees": 1
+    },
+    {
+     "city": "hronsek",
+     "trees": 1
+    },
+    {
+     "city": "jachymov",
+     "trees": 1
+    },
+    {
+     "city": "kotel",
+     "trees": 1
+    },
+    {
+     "city": "lipany",
+     "trees": 1
+    },
+    {
+     "city": "msecke-zehrovice",
+     "trees": 1
+    },
+    {
+     "city": "nedvedice",
+     "trees": 1
+    },
+    {
+     "city": "rimov",
+     "trees": 1
+    },
+    {
+     "city": "tatobity",
+     "trees": 1
+    },
+    {
+     "city": "teleci",
+     "trees": 1
+    },
+    {
+     "city": "trencianske-stankovce",
+     "trees": 1
+    },
+    {
+     "city": "uzovska-panica",
+     "trees": 1
+    },
+    {
+     "city": "velke-opatovice",
+     "trees": 1
+    },
+    {
+     "city": "bratislava",
+     "trees": 0
+    },
+    {
+     "city": "ghent",
+     "trees": 0
+    },
+    {
+     "city": "hamburg",
+     "trees": 0
+    },
+    {
+     "city": "luxembourg-city",
+     "trees": 0
+    }
+   ],
+   "trees": 20,
+   "logged": true
   }
  ],
  "schedule_changes": [
