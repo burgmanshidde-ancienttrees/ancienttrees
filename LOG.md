@@ -57,6 +57,30 @@ Two harmless scratch scripts (`scripts/_check_submissions.py`,
 `scripts/_cleanup_famousuk.py`) remain untracked from earlier
 continuations; left alone rather than guessed about.
 
+**Redid the lost photo-judge pass, this time claimed properly
+(`photo-8-cities`, kind `photo`) so a repeat close cannot orphan it
+silently.** `photo_fetch.py` re-fetched the same 8 cities (58
+candidates, ~3s apart, clean), and a foreground photo-judge pass (not
+background, deliberately, given what happened last time) viewed every
+file as pixels against the Cadiz standard. 5 approved: hbg_005
+(Japanese Pagoda Tree, Hamburg), brt_007 (Grinava Poplar,
+Bratislava), lux_003 and lux_006 (Beech of Bastion Beck and the
+Prince Jean Chestnut, Luxembourg City), gnt_002 (Ginkgo of Muinkpark,
+Ghent). 2 held on licence/geotag risk, 51 rejected. The rejections
+are the interesting part: three Maastricht candidates were
+Stolpersteine that matched on the Nussbaum surname, several Groningen
+and Hamburg candidates were building facades that matched on a street
+address, one Eindhoven candidate was a Wilhelmina statue in Rotterdam
+(wrong city entirely), and four Ghent register files were photos of
+the wrong species attached to the wrong tree row. None of that would
+have been caught without actually looking at the pixels, which is the
+whole point of this layer existing. Groningen, Maastricht, Eindhoven
+and Brighton still have zero photos, an honest gap rather than a
+padded one. Applied the 5 verdicts directly (resolved each Commons
+file's original URL and dimensions via the API, since `photo_fetch.py`
+only downloads the 960px thumbnail), rebuilt, `qa.py` and
+`preflight.py` both clean at 0 problems, released the claim.
+
 ## 2026-09-06 (continuation 10) - A false start on famousuk, then three verify/translate/photo passes dispatched in parallel
 
 Started fresh at Step 0 (health clear, no reader submissions, no page

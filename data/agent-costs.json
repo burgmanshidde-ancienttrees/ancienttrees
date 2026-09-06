@@ -5661,6 +5661,15 @@
         "note": "10 verified Slovak trees written in one batched context, each shipping as its own place (8 pages, one with 3 trees); 5 got a best_time, disputes on count/age/species/votes carried in the prose; merged into 8 new city files by the main session",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "8-city photo viewing pass (groningen, maastricht, eindhoven, brighton, hamburg, ghent, bratislava, luxembourg-city)",
+        "kind": "photo",
+        "tokens": 205000,
+        "trees": 5,
+        "note": "58 candidates fetched and viewed as pixels; 5 approved (hbg_005, brt_007, lux_003, lux_006, gnt_002), 2 held (licence/geotag risk), 51 rejected, most for wrong subject entirely (Stolpersteine, building facades, statues in the wrong city, cross-species register files). Groningen, Maastricht, Eindhoven, Brighton remain an honest gap. Redone after continuation 10 lost this same pass to a closed session.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

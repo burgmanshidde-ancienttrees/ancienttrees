@@ -22,6 +22,20 @@ missing`. Full detail in LOG.md.
 Also completed the Dutch translation overlay for Arnhem (37/37 trees
 now rendered), started in an earlier continuation today.
 
+Redid the photo-8-cities viewing pass that continuation 10 dispatched
+and then lost (session closed before it finished; see LOG.md). 58
+candidates fetched and viewed as pixels; 5 approved: The Japanese
+Pagoda Tree of Alsterufer (Hamburg), the Grinava Poplar (Bratislava),
+the Beech of Bastion Beck and the Prince Jean Chestnut (Luxembourg
+City), the Ginkgo of Muinkpark (Ghent). 51 rejected, mostly wrong
+subject entirely: three Maastricht Stolpersteine matched on a shared
+surname, several Hamburg and Groningen building facades matched on a
+street address, two Wilhelmina statues (one in the wrong city
+outright), four Ghent register photos of the wrong species. 2 held
+for licence/geotag risk. Groningen, Maastricht, Eindhoven and
+Brighton keep an honest photo gap; their candidates genuinely did not
+clear the bar.
+
 ## 2026-09-06 (continuation 8) - Hiroshima +2, Sulechow +1, three new Polish single-tree places; the germany leads-file staleness bug caught again
 
 Hiroshima: hir_016 (Fukuoji Lantern Cedars, hillside temple, three
