@@ -2092,7 +2092,9 @@
      "author": "Eduardo Manchon",
      "lat": 38.715653,
      "lng": -9.134402,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mouraria Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mouraria Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7",
+     "judged": "reject",
+     "verdict": "black-and-white Mouraria alley of houses and laundry, no tree in frame at all"
     },
     {
      "title": "File:Mouraria Lisboa.jpg",
@@ -2102,7 +2104,9 @@
      "author": "Manuel llach",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cutlers in Portugal Category:Images from Wiki Loves Earth 2018 Category:Images from Wiki Loves Earth 2018 in Portugal Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Mouraria Category:Portugal photographs taken on 2008-07-02 Category:Self-published work Category:Uploaded via Campaign:wle-pt"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cutlers in Portugal Category:Images from Wiki Loves Earth 2018 Category:Images from Wiki Loves Earth 2018 in Portugal Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Mouraria Category:Portugal photographs taken on 2008-07-02 Category:Self-published work Category:Uploaded via Campaign:wle-pt",
+     "judged": "reject",
+     "verdict": "street scene of a knife grinder and a passer-by on cobbles, no tree in frame"
     }
    ]
   },
@@ -2146,7 +2150,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "38.7162969722,-9.148379"
+     "obs_location": "38.7162969722,-9.148379",
+     "judged": "hold",
+     "verdict": "good in-leaf whole-tree Moreton Bay fig in the square, but three near-identical figs stand around the cypress and nothing here names which one"
     },
     {
      "title": "iNat obs 201103892 (Ficus)",
@@ -2155,7 +2161,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "38.7162969722,-9.148379"
+     "obs_location": "38.7162969722,-9.148379",
+     "judged": "reject",
+     "verdict": "the Principe Real cypress under its metal frame, gnarled conifer trunk: a different tree of a different species"
     },
     {
      "title": "iNat obs 249882113 (Ficus)",
@@ -2164,7 +2172,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.7168312073,-9.1489601135"
+     "obs_location": "38.7168312073,-9.1489601135",
+     "judged": "reject",
+     "verdict": "trunk and aerial-root close-up with a car park behind, crown not readable, and one of three figs unidentified"
     }
    ]
   },
@@ -14864,16 +14874,6 @@
      "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark"
     },
     {
-     "title": "File:Berlage door Krop, westkant (2).jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Berlage_door_Krop%2C_westkant_%282%29.jpg/960px-Berlage_door_Krop%2C_westkant_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Berlage_door_Krop,_westkant_(2).jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Ceescamel",
-     "lat": null,
-     "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:March 2019 in Amsterdam Category:Netherlands photographs taken on 2019-03-28 Category:Self-published work Category:Standbeeld van H.P. Berlage"
-    },
-    {
      "title": "File:Breda sporen westkant II.jpg",
      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Breda_sporen_westkant_II.jpg/960px-Breda_sporen_westkant_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Breda_sporen_westkant_II.jpg",
@@ -14947,7 +14947,9 @@
      "author": "Fons Heijnsbroek",
      "lat": null,
      "lng": null,
-     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark"
+     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark",
+     "judged": "reject",
+     "verdict": "A park path view down an avenue of trunks. No single tree is the subject and the centre band is empty gravel."
     },
     {
      "title": "File:Close-up photo of an elm tree on the corner of the Hortus Botanicus of Amsterdam; high resolution image by FotoDutch in June 2013..jpg",
@@ -14957,7 +14959,9 @@
      "author": "Fons Heijnsbroek",
      "lat": 52.367367,
      "lng": 4.909035,
-     "cats": "Category:Bike paths Category:CC-Zero Category:Garden fences Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Nature of Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:Pavements in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage Middenlaan, Amsterdam Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Ulmus × hollandica Category:Urban gardens in Amsterdam Category:Visitor attractions in the Netherlands"
+     "cats": "Category:Bike paths Category:CC-Zero Category:Garden fences Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Nature of Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:Pavements in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage Middenlaan, Amsterdam Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Ulmus × hollandica Category:Urban gardens in Amsterdam Category:Visitor attractions in the Netherlands",
+     "judged": "reject",
+     "verdict": "Photographer names it an elm at the Hortus Botanicus corner, and the furrowed bark is not plane bark. Wrong tree and wrong species; crown cut off at the top edge."
     },
     {
      "title": "File:Photo of the fence and tree trunks in the Wertheim park in Amsterdam; a high resolution image by FotoDutch in June 2013.jpg",
@@ -14967,7 +14971,9 @@
      "author": "Fons Heijnsbroek",
      "lat": 52.367411,
      "lng": 4.908119,
-     "cats": "Category:CC-Zero Category:Created with Adobe Photoshop Elements Category:Fences in the Netherlands Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:PD-Netherlands Category:Park fences Category:Parks in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Wertheimpark"
+     "cats": "Category:CC-Zero Category:Created with Adobe Photoshop Elements Category:Fences in the Netherlands Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:PD-Netherlands Category:Park fences Category:Parks in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Wertheimpark",
+     "judged": "reject",
+     "verdict": "Photographer titles it the fence and tree trunks: railings fill the frame, trunks are cropped with no crown, and the same file is queued for ams_020 too, so which trunk is unknowable."
     },
     {
      "title": "iNat obs 382078078 (Platanus × hispanica)",
@@ -14976,7 +14982,9 @@
      "licence": "CC BY",
      "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.3668824,4.907765"
+     "obs_location": "52.3668824,4.907765",
+     "judged": "reject",
+     "verdict": "iNaturalist pair: one worm's-eye shot up a plane trunk with no readable crown, one pure bark close-up. Both are the close-up case the standard excludes, and the observation is IDed as Platanus x hispanica."
     },
     {
      "title": "iNat obs 382078078 (Platanus × hispanica)",
@@ -14985,9 +14993,12 @@
      "licence": "CC BY",
      "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.3668824,4.907765"
+     "obs_location": "52.3668824,4.907765",
+     "judged": "reject",
+     "verdict": "Second photo of the same iNaturalist observation: a pure bark close-up, no crown and no whole tree."
     }
-   ]
+   ],
+   "exhausted": "All five judged: a park path view, and an iNaturalist pair that is a worm's-eye trunk shot plus bark. Commons and iNat hold no portrait of this plane."
   },
   "ams_020": {
    "city": "Amsterdam",
@@ -15003,7 +15014,9 @@
      "author": "Fons Heijnsbroek",
      "lat": null,
      "lng": null,
-     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark"
+     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark",
+     "judged": "reject",
+     "verdict": "A park path view down an avenue of trunks, none identifiable as the Leopoldii maple. Centre band is empty gravel."
     },
     {
      "title": "File:Close-up photo of an elm tree on the corner of the Hortus Botanicus of Amsterdam; high resolution image by FotoDutch in June 2013..jpg",
@@ -15013,7 +15026,9 @@
      "author": "Fons Heijnsbroek",
      "lat": 52.367367,
      "lng": 4.909035,
-     "cats": "Category:Bike paths Category:CC-Zero Category:Garden fences Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Nature of Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:Pavements in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage Middenlaan, Amsterdam Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Ulmus × hollandica Category:Urban gardens in Amsterdam Category:Visitor attractions in the Netherlands"
+     "cats": "Category:Bike paths Category:CC-Zero Category:Garden fences Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Nature of Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:Pavements in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage Middenlaan, Amsterdam Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Ulmus × hollandica Category:Urban gardens in Amsterdam Category:Visitor attractions in the Netherlands",
+     "judged": "reject",
+     "verdict": "An elm at the Hortus Botanicus corner per its own title, plain green leaves rather than the streaked Leopoldii foliage. Wrong species, wrong tree, crown cropped."
     },
     {
      "title": "File:Free photo of Amsterdam picture of a crawling ivy in the young tree, along the canal Nieuwe Herengracht (49000972636).jpg",
@@ -15023,7 +15038,9 @@
      "author": "Fons Heijnsbroek from Amsterdam, Netherlands",
      "lat": 52.368171,
      "lng": 4.908549,
-     "cats": "Category:CC-Zero Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Fons Heijnsbroek in Amsterdam (2019) Category:Photographs by Fons Heijnsbroek in Amsterdam (2021)"
+     "cats": "Category:CC-Zero Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Fons Heijnsbroek in Amsterdam (2019) Category:Photographs by Fons Heijnsbroek in Amsterdam (2021)",
+     "judged": "reject",
+     "verdict": "Ivy on a young trunk beside the Nieuwe Herengracht: a bark close-up with no crown, and its own title calls it a young tree, not the Wertheimpark maple."
     },
     {
      "title": "File:Photo of the fence and tree trunks in the Wertheim park in Amsterdam; a high resolution image by FotoDutch in June 2013.jpg",
@@ -15033,7 +15050,9 @@
      "author": "Fons Heijnsbroek",
      "lat": 52.367411,
      "lng": 4.908119,
-     "cats": "Category:CC-Zero Category:Created with Adobe Photoshop Elements Category:Fences in the Netherlands Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:PD-Netherlands Category:Park fences Category:Parks in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Wertheimpark"
+     "cats": "Category:CC-Zero Category:Created with Adobe Photoshop Elements Category:Fences in the Netherlands Category:Hortus Botanicus Amsterdam Category:June 2013 in Amsterdam Category:Netherlands photographs taken on 2013-06-09 Category:PD-Netherlands Category:Park fences Category:Parks in Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2013) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5 Category:Trees in Amsterdam Category:Wertheimpark",
+     "judged": "reject",
+     "verdict": "Fence-and-trunks photo: no crown, subject is the railing, and no variegated Leopoldii foliage anywhere. Same file also queued for ams_019, so the trunk cannot be attributed."
     },
     {
      "title": "iNat obs 378676612 (Acer japonicum)",
@@ -15042,7 +15061,9 @@
      "licence": "CC BY",
      "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.3668972222,4.9075388889"
+     "obs_location": "52.3668972222,4.9075388889",
+     "judged": "reject",
+     "verdict": "iNaturalist pair from the Hortus: a Japanese maple shrub (Acer japonicum Aconitifolium) in a border and a photo of its label board. Wrong species and wrong tree."
     },
     {
      "title": "iNat obs 378676612 (Acer japonicum)",
@@ -15051,9 +15072,12 @@
      "licence": "CC BY",
      "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.3668972222,4.9075388889"
+     "obs_location": "52.3668972222,4.9075388889",
+     "judged": "reject",
+     "verdict": "Second photo of the same iNaturalist observation: a close-up of the Hortus label board for Acer japonicum. No tree in frame, wrong species."
     }
-   ]
+   ],
+   "exhausted": "All six judged: park path views, the Hortus Japanese maple with its label board, a fence-and-trunks shot and an ivied young trunk. Nothing shows the Leopoldii maple."
   },
   "ber_016": {
    "city": "Berlin",
@@ -16113,7 +16137,9 @@
      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
      "lat": 38.75297,
      "lng": -9.176184,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira",
+     "judged": "reject",
+     "verdict": "general park view of steps and a retaining wall under a distant treeline, no single oak as subject and no way to tell which of the four Bensaude trees"
     }
    ]
   },
@@ -16131,7 +16157,9 @@
      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
      "lat": 38.75297,
      "lng": -9.176184,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira",
+     "judged": "reject",
+     "verdict": "same park-scenery file the sweep also filed under lis_022: distant treeline, no identifiable holm oak"
     }
    ]
   },
@@ -16149,7 +16177,9 @@
      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
      "lat": 38.753104,
      "lng": -9.175712,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira",
+     "judged": "reject",
+     "verdict": "pergola, clipped hedges and an apartment block with conifers behind, no red-flowering gum as subject"
     }
    ]
   },
@@ -16167,7 +16197,9 @@
      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
      "lat": 38.753104,
      "lng": -9.175712,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira",
+     "judged": "reject",
+     "verdict": "same park-scenery file the sweep also filed under lis_024: hedges and a pergola, no field maple as subject"
     }
    ]
   },
@@ -16206,7 +16238,9 @@
      "author": "Vampiregrave",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo",
+     "judged": "reject",
+     "verdict": "fine bela-sombra but the uploader's own caption says Bairro do Restelo, 7km west of Praca Antonio Sardinha: wrong tree"
     },
     {
      "title": "File:Bela-sombra Restelo 2.jpg",
@@ -16216,7 +16250,9 @@
      "author": "Vampiregrave",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo",
+     "judged": "reject",
+     "verdict": "second view of the same Restelo bela-sombra, captioned Bairro do Restelo by the uploader: wrong tree"
     },
     {
      "title": "File:Bela-sombra Restelo 3.jpg",
@@ -16226,7 +16262,9 @@
      "author": "Vampiregrave",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo",
+     "judged": "reject",
+     "verdict": "same uploader's Restelo series, captioned Bairro do Restelo: a different bela-sombra 7km from Praca Antonio Sardinha"
     },
     {
      "title": "File:Bela-sombra Restelo 4.jpg",
@@ -16236,7 +16274,9 @@
      "author": "Vampiregrave",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo",
+     "judged": "reject",
+     "verdict": "same uploader's Restelo series, captioned Bairro do Restelo: a different bela-sombra 7km from Praca Antonio Sardinha"
     },
     {
      "title": "File:Bela-sombra Restelo 5.jpg",
@@ -16246,7 +16286,9 @@
      "author": "Vampiregrave",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2024 Category:Images from Wiki Loves Monuments 2024 in Portugal Category:Images from Wiki Loves Monuments 2024 in Portugal - Lisboa Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pt Category:Árvore isolada em Bairro do Restelo",
+     "judged": "reject",
+     "verdict": "same uploader's Restelo series, captioned Bairro do Restelo: a different bela-sombra 7km from Praca Antonio Sardinha"
     },
     {
      "title": "File:Lisboa - Mundo Fantástico da Sardinha Portuguesa (53860761692).jpg",
@@ -16256,7 +16298,9 @@
      "author": "Jorge Franganillo",
      "lat": 38.713693,
      "lng": -9.13982,
-     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:June 2024 in Lisbon Category:O Mundo Fantástico da Sardinha Portuguesa (Lisbon) Category:Photographs of Lisbon by Jorge Franganillo Category:Portugal photographs taken on 2024-06-20 Category:Shops in Lisbon Category:Taken with Nikon D750"
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:June 2024 in Lisbon Category:O Mundo Fantástico da Sardinha Portuguesa (Lisbon) Category:Photographs of Lisbon by Jorge Franganillo Category:Portugal photographs taken on 2024-06-20 Category:Shops in Lisbon Category:Taken with Nikon D750",
+     "judged": "reject",
+     "verdict": "a sardine shop, matched only on the word Sardinha in the square's name"
     }
    ]
   },
@@ -31491,7 +31535,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.369325,
      "lng": 4.896036,
-     "cats": "Category:1881 in art Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam"
+     "cats": "Category:1881 in art Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam",
+     "judged": "reject",
+     "verdict": "Symmetrical courtyard facade with the Minerva bust; the elm is not in frame. Dark winter exposure."
     },
     {
      "title": "File:Amsterdam - Oudemanhuispoort - University of Amsterdam Law Faculty - Inside Court 1757 by G.Maybaum - ICE Photocompilation Viewing from WNW to East NE.jpg",
@@ -31501,7 +31547,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.369339,
      "lng": 4.896028,
-     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Neoclassical architecture in the Netherlands Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam"
+     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Neoclassical architecture in the Netherlands Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam",
+     "judged": "reject",
+     "verdict": "Courtyard architecture panorama: the Law Faculty building is the subject, the elm only a bare edge-of-frame silhouette. Dark winter light, centre band is facade."
     },
     {
      "title": "File:Amsterdam - Oudemanhuispoort - University of Amsterdam Law Faculty - Inside Court 1757 by G.Maybaum - View NE.jpg",
@@ -31511,7 +31559,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.369328,
      "lng": 4.896025,
-     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Neoclassical architecture in the Netherlands Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:Winter in Amsterdam"
+     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Neoclassical architecture in the Netherlands Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:Winter in Amsterdam",
+     "judged": "reject",
+     "verdict": "Courtyard building view, no readable tree in frame. Very dark, near-monochrome winter exposure."
     },
     {
      "title": "File:Amsterdam - Oudemanhuispoort - University of Amsterdam Law Faculty - Inside Court 1757 by G.Maybaum - View NNW.jpg",
@@ -31521,7 +31571,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.369336,
      "lng": 4.896028,
-     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam"
+     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Sculptures of Minerva Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam",
+     "judged": "reject",
+     "verdict": "Courtyard architecture; only bare branches clip the top left corner. Subject is the building, badly underexposed."
     },
     {
      "title": "File:Amsterdam - Oudemanhuispoort - University of Amsterdam Law Faculty - Inside Court 1757 by G.Maybaum - View NW.jpg",
@@ -31531,7 +31583,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.369333,
      "lng": 4.896039,
-     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam"
+     "cats": "Category:CC-BY-SA-4.0 Category:Higher education buildings Category:January 2011 in Amsterdam Category:Netherlands photographs taken on 2011-01-04 Category:Oudemanhuispoort Category:Self-published work Category:University of Amsterdam Category:Winter in Amsterdam",
+     "judged": "reject",
+     "verdict": "Courtyard view with a bare trunk at the left edge only. Subject is the building, and the light is deep winter gloom."
     },
     {
      "title": "File:Amsterdam - Oudezijds Achterburgwal - View East on Oudemanhuispoort 01.jpg",
@@ -31541,7 +31595,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.36945,
      "lng": 4.894878,
-     "cats": "Category:CC-BY-SA-4.0 Category:July 2009 in Amsterdam Category:Netherlands photographs taken on 2009-07-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Oudezijds Achterburgwal, Amsterdam Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:July 2009 in Amsterdam Category:Netherlands photographs taken on 2009-07-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Oudezijds Achterburgwal, Amsterdam Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Canal-side street scene of the gate and shopfronts. Foliage only as a frame at the top edge; the elm itself is not in shot."
     },
     {
      "title": "File:Amsterdam - Oudezijds Achterburgwal - View East on Oudemanhuispoort 02.jpg",
@@ -31551,7 +31607,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.36945,
      "lng": 4.894878,
-     "cats": "Category:CC-BY-SA-4.0 Category:July 2009 in Amsterdam Category:Netherlands photographs taken on 2009-07-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:July 2009 in Amsterdam Category:Netherlands photographs taken on 2009-07-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "The ornamental street gate seen from the canal. No tree in frame."
     },
     {
      "title": "File:Oudemanhuispoort, Amsterdam, Bestanddeelnr 925-9540.jpg",
@@ -31561,7 +31619,9 @@
      "author": "Bert Verhoeff for Anefo",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1972-10-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Photographs by Bert Verhoeff (flat list) Category:Photographs by Bert Verhoeff in Amsterdam (1972)"
+     "cats": "Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1972-10-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Photographs by Bert Verhoeff (flat list) Category:Photographs by Bert Verhoeff in Amsterdam (1972)",
+     "judged": "reject",
+     "verdict": "Black-and-white 1970s press archive photograph of the street front. Archival monochrome, excluded outright, and no tree in frame."
     },
     {
      "title": "File:Oudemanhuispoort, Amsterdam, Bestanddeelnr 925-9541.jpg",
@@ -31571,7 +31631,9 @@
      "author": "Bert Verhoeff for Anefo",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1972-10-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Photographs by Bert Verhoeff (flat list) Category:Photographs by Bert Verhoeff in Amsterdam (1972)"
+     "cats": "Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1972-10-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Photographs by Bert Verhoeff (flat list) Category:Photographs by Bert Verhoeff in Amsterdam (1972)",
+     "judged": "reject",
+     "verdict": "Black-and-white press archive photograph of the gate with 1970s protest posters. Archival monochrome, excluded outright, and no tree in frame."
     },
     {
      "title": "File:Oudemanhuispoort, Amsterdam, Bestanddeelnr 925-9542.jpg",
@@ -31581,7 +31643,9 @@
      "author": "Bert Verhoeff for Anefo",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1972-10-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Photographs by Bert Verhoeff (flat list) Category:Photographs by Bert Verhoeff in Amsterdam (1972)"
+     "cats": "Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1972-10-16 Category:Oudemanhuispoort (Oudezijds Achterburgwal) Category:Photographs by Bert Verhoeff (flat list) Category:Photographs by Bert Verhoeff in Amsterdam (1972)",
+     "judged": "reject",
+     "verdict": "Black-and-white 1970s press archive photograph of the street front. Archival monochrome, excluded outright, and no tree in frame."
     },
     {
      "title": "File:Oudemanhuispoort winkelkasten.JPG",
@@ -31591,9 +31655,12 @@
      "author": "Marcel mulder",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Oudemanhuispoort (street), Amsterdam Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Oudemanhuispoort (street), Amsterdam Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "The covered book-stall arcade, an interior corridor. No tree, and the light is artificial."
     }
-   ]
+   ],
+   "exhausted": "All eleven judged and every one is architecture: the Law Faculty courtyard, the street gate, the book-stall arcade, and three archival black-and-white press photos. Nobody has photographed the elm itself."
   },
   "ams_022": {
    "city": "Amsterdam",
@@ -31609,7 +31676,9 @@
      "author": "Ceescamel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:January 2020 in Amsterdam Category:Nassauplein, Amsterdam Category:Netherlands photographs taken on 2020-01-30 Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:January 2020 in Amsterdam Category:Nassauplein, Amsterdam Category:Netherlands photographs taken on 2020-01-30 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Close-up of a memorial stone, no tree in frame. Also from a different Wilhelmina lime: the stone credits the christelijke bewaarscholen children, not our Kalverstraat tree."
     },
     {
      "title": "File:2020 Koningin Wilhelminalinde (2).jpg",
@@ -31619,7 +31688,9 @@
      "author": "Ceescamel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:January 2020 in Amsterdam Category:Nassauplein, Amsterdam Category:Netherlands photographs taken on 2020-01-30 Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:January 2020 in Amsterdam Category:Nassauplein, Amsterdam Category:Netherlands photographs taken on 2020-01-30 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Close-up of a species plaque on a post, no tree in frame. Plaque reads Tilia europaea kweekjaar 1965, so it labels a 1965 tree, not our 1898 one."
     },
     {
      "title": "File:2020 Koningin Wilhelminalinde (3).jpg",
@@ -31629,7 +31700,9 @@
      "author": "Ceescamel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:January 2020 in Amsterdam Category:Nassauplein, Amsterdam Category:Netherlands photographs taken on 2020-01-30 Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:January 2020 in Amsterdam Category:Nassauplein, Amsterdam Category:Netherlands photographs taken on 2020-01-30 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree, settled: Commons files it under Nassauplein, Amsterdam, about 2 km from our Kalverstraat lime, and its plaque reads kweekjaar 1965. Good photo of a different Wilhelminalinde."
     },
     {
      "title": "File:Obreen, Henri Guillaume Arnaud Wilhelminalinde ErfgoedLeiden LEI001006783.jpg",
@@ -31639,7 +31712,9 @@
      "author": "Unknown photographer",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:Collections of Erfgoed Leiden Category:Media contributed by Erfgoed Leiden en Omstreken Category:Obreen Collection Category:PD-old-80 Category:PD-old missing SDC copyright status Category:Plantsoen (Leiden) Category:Template Unknown (artist) Category:Tilia in the Netherlands Category:Uploaded with pattypan"
+     "cats": "Category:CC-PD-Mark Category:Collections of Erfgoed Leiden Category:Media contributed by Erfgoed Leiden en Omstreken Category:Obreen Collection Category:PD-old-80 Category:PD-old missing SDC copyright status Category:Plantsoen (Leiden) Category:Template Unknown (artist) Category:Tilia in the Netherlands Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "Archival image from the Erfgoed Leiden collection of a Wilhelminalinde in Leiden's Plantsoen: wrong city and archival imagery, which the standard excludes outright."
     },
     {
      "title": "File:Soest Wilhelminalinde 8.JPG",
@@ -31649,7 +31724,9 @@
      "author": "Atsje",
      "lat": null,
      "lng": null,
-     "cats": "Category:2014 in Soest, Netherlands Category:Buildings in Soest, Netherlands Category:CC-Zero Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570 Category:Wilhelminabomen"
+     "cats": "Category:2014 in Soest, Netherlands Category:Buildings in Soest, Netherlands Category:CC-Zero Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570 Category:Wilhelminabomen",
+     "judged": "reject",
+     "verdict": "A Wilhelminalinde in Soest, a different municipality 30 km away. Wrong tree by location, not judged on picture quality."
     },
     {
      "title": "File:Soest Wilhelminalinde 9.JPG",
@@ -31659,7 +31736,9 @@
      "author": "Atsje",
      "lat": null,
      "lng": null,
-     "cats": "Category:2014 in Soest, Netherlands Category:Buildings in Soest, Netherlands Category:CC-Zero Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570 Category:Wilhelminabomen"
+     "cats": "Category:2014 in Soest, Netherlands Category:Buildings in Soest, Netherlands Category:CC-Zero Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570 Category:Wilhelminabomen",
+     "judged": "reject",
+     "verdict": "A Wilhelminalinde in Soest, a different municipality 30 km away. Wrong tree by location, not judged on picture quality."
     },
     {
      "title": "File:Soest Wilhelminalinde na de storm van 24 juli 2015a.JPG",
@@ -31669,9 +31748,12 @@
      "author": "Atsje",
      "lat": null,
      "lng": null,
-     "cats": "Category:2015 in Soest, Netherlands Category:Buildings in Soest, Netherlands Category:CC-BY-SA-4.0 Category:Self-published work Category:Storm Zeljko (2015)"
+     "cats": "Category:2015 in Soest, Netherlands Category:Buildings in Soest, Netherlands Category:CC-BY-SA-4.0 Category:Self-published work Category:Storm Zeljko (2015)",
+     "judged": "reject",
+     "verdict": "A storm-damaged Wilhelminalinde in Soest, a different municipality. Wrong tree by location."
     }
-   ]
+   ],
+   "exhausted": "All seven Commons candidates judged and rejected: three are the Nassauplein lime, three are Soest, one is archival Leiden. Commons has no photograph of the Kalverstraat tree."
   },
   "ams_023": {
    "city": "Amsterdam",
@@ -31757,7 +31839,9 @@
      "author": "Ymblanter",
      "lat": 52.362424,
      "lng": 4.883704,
-     "cats": "Category:Amsterdam photographs taken on 2025-05-30 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 4° E) Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400 Category:Weteringschans, Amsterdam"
+     "cats": "Category:Amsterdam photographs taken on 2025-05-30 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 4° E) Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400 Category:Weteringschans, Amsterdam",
+     "judged": "reject",
+     "verdict": "A facade documentation shot of the housing block at Weteringschans 1-29. No tree in the frame at all."
     },
     {
      "title": "File:Free photo of Amsterdam picture of colored trees in Fall on a rainy gray Saturday along the street Stadhouderskade, The Netherlands (30701463091).png",
@@ -31767,7 +31851,9 @@
      "author": "Fons Heijnsbroek from Amsterdam, Netherlands",
      "lat": 52.3585,
      "lng": 4.889152,
-     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:De Pijp neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Fons Heijnsbroek in Amsterdam (2016) Category:Singelgracht (Amsterdam-Zuid) Category:Stadhouderskade, Amsterdam Category:Trees in Amsterdam"
+     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:De Pijp neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Fons Heijnsbroek in Amsterdam (2016) Category:Singelgracht (Amsterdam-Zuid) Category:Stadhouderskade, Amsterdam Category:Trees in Amsterdam",
+     "judged": "reject",
+     "verdict": "A rainy street row of autumn trees on the Stadhouderskade, cars and a cyclist. No single tree is the subject and the leaning poplar is not identifiable."
     },
     {
      "title": "File:Photo of flowering hollyhocks in front of the shop window of a laundry on the street Weteringschans in Amsterdam downtown, in Summer of 2009 - photo of Dutch photographer Fons Heijnsbroek - free download.jpg",
@@ -31777,7 +31863,9 @@
      "author": "Fons Heijnsbroek",
      "lat": null,
      "lng": null,
-     "cats": "Category:Alcea rosea in the Netherlands Category:CC-Zero Category:Laundries in the Netherlands Category:Photographs by Fons Heijnsbroek in Amsterdam (2009) Category:Self-published work Category:Shop windows in Amsterdam Category:Summer in Amsterdam Category:Urban gardens in Amsterdam Category:Weteringschans, Amsterdam Category:Window reflections in the Netherlands"
+     "cats": "Category:Alcea rosea in the Netherlands Category:CC-Zero Category:Laundries in the Netherlands Category:Photographs by Fons Heijnsbroek in Amsterdam (2009) Category:Self-published work Category:Shop windows in Amsterdam Category:Summer in Amsterdam Category:Urban gardens in Amsterdam Category:Weteringschans, Amsterdam Category:Window reflections in the Netherlands",
+     "judged": "reject",
+     "verdict": "Hollyhocks in front of a launderette window on the Weteringschans. No tree in the frame at all; matched on street name only."
     },
     {
      "title": "File:Weteringschans Amsterdam 2018.jpg",
@@ -31787,9 +31875,12 @@
      "author": "Steven Lek",
      "lat": null,
      "lng": null,
-     "cats": "Category:12G trams in Amsterdam Category:CC-BY-SA-4.0 Category:December 2018 in Amsterdam Category:Netherlands photographs taken on 2018-12-18 Category:Photographs by User:Tukka Category:Self-published work Category:Tramline 19 in Amsterdam Category:Trams with fleet number 832 Category:Weteringschans, Amsterdam"
+     "cats": "Category:12G trams in Amsterdam Category:CC-BY-SA-4.0 Category:December 2018 in Amsterdam Category:Netherlands photographs taken on 2018-12-18 Category:Photographs by User:Tukka Category:Self-published work Category:Tramline 19 in Amsterdam Category:Trams with fleet number 832 Category:Weteringschans, Amsterdam",
+     "judged": "reject",
+     "verdict": "Street view down the tram tracks with a tram as the subject. Bare branches frame the top left corner only; the leaning poplar is not identifiable."
     }
-   ]
+   ],
+   "exhausted": "All four judged: hollyhocks at a launderette, a facade shot, a tram street view and a rainy row of autumn trees. No candidate shows the leaning poplar."
   },
   "ams_028": {
    "city": "Amsterdam",
@@ -36184,16 +36275,6 @@
      "cats": "Category:1769 in the Netherlands Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:De Groot, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Self-published work"
     },
     {
-     "title": "File:Alkmaar - Clarissenbolwerk - View SE towards Kennemersingel.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Alkmaar_-_Clarissenbolwerk_-_View_SE_towards_Kennemersingel.jpg/960px-Alkmaar_-_Clarissenbolwerk_-_View_SE_towards_Kennemersingel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Alkmaar_-_Clarissenbolwerk_-_View_SE_towards_Kennemersingel.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Txllxt TxllxT",
-     "lat": 52.629694,
-     "lng": 4.741522,
-     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Kennemersingel, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Self-published work"
-    },
-    {
      "title": "File:Alkmaar - Clarissenbolwerk - View South on Kennemersingel.jpg",
      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Alkmaar_-_Clarissenbolwerk_-_View_South_on_Kennemersingel.jpg/960px-Alkmaar_-_Clarissenbolwerk_-_View_South_on_Kennemersingel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Alkmaar_-_Clarissenbolwerk_-_View_South_on_Kennemersingel.jpg",
@@ -36212,6 +36293,16 @@
      "lat": 52.632747,
      "lng": 4.74075,
      "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Kennemersingel, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work"
+    },
+    {
+     "title": "File:Alkmaar - Clarissenbolwerk - View West towards Murmellius Gymnasium.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Alkmaar_-_Clarissenbolwerk_-_View_West_towards_Murmellius_Gymnasium.jpg/960px-Alkmaar_-_Clarissenbolwerk_-_View_West_towards_Murmellius_Gymnasium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Alkmaar_-_Clarissenbolwerk_-_View_West_towards_Murmellius_Gymnasium.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.633753,
+     "lng": 4.741844,
+     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Geestersingel, Alkmaar Category:Murmellius Gymnasium (Alkmaar) Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work"
     },
     {
      "title": "File:Alkmaar - Geestersingel - Winterview East on Clarissenbolwerk & Grote Sint Laurenskerk.jpg",
@@ -53033,6 +53124,16 @@
      "cats": "Category:Allouville-Bellefosse Category:CC-BY-SA-4.0 Category:Template Unknown (author)"
     },
     {
+     "title": "File:Chêne d'Allouville-Bellefosse 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Ch%C3%AAne_d%27Allouville-Bellefosse_01.jpg/960px-Ch%C3%AAne_d%27Allouville-Bellefosse_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_d%27Allouville-Bellefosse_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Giogo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Oak tree of Allouville-Bellefosse Category:Self-published work"
+    },
+    {
      "title": "File:Chêne d'Allouville-Bellefosse 02.jpg",
      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Ch%C3%AAne_d%27Allouville-Bellefosse_02.jpg/960px-Ch%C3%AAne_d%27Allouville-Bellefosse_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_d%27Allouville-Bellefosse_02.jpg",
@@ -53053,6 +53154,16 @@
      "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 0° E) Category:Self-published work Category:Town hall of Allouville-Bellefosse"
     },
     {
+     "title": "File:Photo du chêne d'Allouville-Bellefosse.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Photo_du_ch%C3%AAne_d%27Allouville-Bellefosse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Photo_du_ch%C3%AAne_d%27Allouville-Bellefosse.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TocaLoca",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Oak tree of Allouville-Bellefosse Category:Self-published work"
+    },
+    {
      "title": "File:Picture of Allouville-Bellefosse town hall - Photo de la mairie d'Allouville-Bellefosse.jpg",
      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Picture_of_Allouville-Bellefosse_town_hall_-_Photo_de_la_mairie_d%27Allouville-Bellefosse.jpg/960px-Picture_of_Allouville-Bellefosse_town_hall_-_Photo_de_la_mairie_d%27Allouville-Bellefosse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Picture_of_Allouville-Bellefosse_town_hall_-_Photo_de_la_mairie_d%27Allouville-Bellefosse.jpg",
@@ -53061,16 +53172,6 @@
      "lat": 49.596889,
      "lng": 0.677394,
      "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 0° E) Category:Self-published work Category:Town hall of Allouville-Bellefosse"
-    },
-    {
-     "title": "File:RuudSteg Veteraanboom Fr Allouville-Bellefosse Chene.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/82/RuudSteg_Veteraanboom_Fr_Allouville-Bellefosse_Chene.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:RuudSteg_Veteraanboom_Fr_Allouville-Bellefosse_Chene.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "RuudSteg",
-     "lat": null,
-     "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Oak tree of Allouville-Bellefosse Category:Self-published work"
     }
    ]
   },
@@ -58726,7 +58827,9 @@
      "author": "Dguendel",
      "lat": 38.70677778,
      "lng": -9.20077778,
-     "cats": "Category:CC-BY-SA-4.0 Category:Ceratonia siliqua in Portugal Category:Files with coordinates missing SDC location of creation Category:Flora in Jardim Botânico da Ajuda Category:Portugal photographs taken on 2017-01-28 Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Ceratonia siliqua in Portugal Category:Files with coordinates missing SDC location of creation Category:Flora in Jardim Botânico da Ajuda Category:Portugal photographs taken on 2017-01-28 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a carob with dark glossy leaves and a plaque, not a jacaranda: wrong species"
     }
    ]
   },

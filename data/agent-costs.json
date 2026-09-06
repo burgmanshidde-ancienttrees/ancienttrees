@@ -5552,6 +5552,24 @@
     "note": "Continuation of an earlier attempt that stopped at 11 min with 109 unspent. Finished standing _famous-germany/bomenbieb verify claims already sitting on disk as leads: 5 single-tree-destination candidates the verify pass had already judged as clearing the 2026-08-31 exception (Forster Linde/Aachen, Peter-Linde/Coppenbruegge, Gerichtslinde/Erdmannrode, Galenbecker Tanzlinde, Gerichtslinde/Schlagsdorf), each written up as a new single-tree place and published. Found and fetched Wikimedia Commons photos directly (viewed pixels before approving): 4 of 5 got an approved photo, Schlagsdorf stays an honest gap (both candidates were a grave-marker close-up and an information sign, not the tree). Zehdenick's Gerichtslinde was left as a lead per the earlier pass's own weaker verdict (curation_status flagged, hedged judicial history) despite leads.py flagging it READY, since the READY flag only checks field completeness, not the fame test. Fixed an id collision (erd_001 already used by Nantes; Erdmannrode published as edm_001 instead). Session work, tokens not logged by an agent report; also dispatched two photo-judge agents to finish the standing amsterdam/lisbon photo claims from downloaded photo-pass/ candidates.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "photo-judge Lisbon",
+    "kind": "photo-judge",
+    "tokens": 62000,
+    "trees": 0,
+    "note": "12 images viewed, 0 approved, 1 held (one of three Principe Real figs, could not confirm which), 11 rejected. Two files were each filed under two different Parque Bensaude trees by the sweep; the six Bela-Sombra candidates were a different tree 7km away in Restelo, caught via the uploaders own Commons caption.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "amsterdam",
+    "kind": "photo-judge",
+    "tokens": 130000,
+    "trees": 0,
+    "note": "33 candidates viewed across 5 trees (12 pre-downloaded, 21 fetched by the agent itself), all rejected and all 5 marked exhausted for sweep v5. Best candidate was a good photo of a different Wilhelminalinde at Nassauplein, not ams_022's Kalverstraat tree (Commons categories and a species-plaque photo in the same series settled it). Found a small script bug: photo_apply.py reject does not clear a previously-written held block, worked around by hand-editing the city file back to missing.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
