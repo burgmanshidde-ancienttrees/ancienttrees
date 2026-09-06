@@ -1,0 +1,61 @@
+{
+  "city": "Velke Opatovice",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Velke Opatovice is a small town in South Moravia, and its chateau park holds a pine locals call the six-headed dragon: a trunk that splits into five stems at the base, one of which splits again into three, reading from a distance as a cluster of separate trees sharing one root. It is likely the oldest Austrian pine recorded anywhere in the Czech Republic, and the park around it is free to walk.",
+  "meta_description": "The Opatovice Pine, in Velke Opatovice's chateau park, splits into a cluster of stems locals call the six-headed dragon. Free park, no ticket.",
+  "question_meta": "Velke Opatovice's oldest tree is the Opatovice Pine, likely the oldest Austrian pine in the country, about 250 years old.",
+  "question_answer": "The oldest tree in Velke Opatovice is the Opatovice Pine, standing in the town's chateau park, likely the oldest Austrian pine in the Czech Republic at around 250 years. Its trunk divides into five stems just above the ground, one of which splits again into three about eight metres up, giving it its local name, the six-headed dragon. Measured around the whole base cluster its girth is 480 centimetres; measured on the single strongest stem at chest height it is 337, and both figures are correct, describing different things.",
+  "question_context": "The pine has never been designated a heritage tree in its own right, for the straightforward reason that the whole 13.5-hectare chateau park around it already carries that protection and has been open to the public since the early 19th century. It stands about 20 to 21 metres tall, described as still vital though ageing, and carries dynamic bracing in the crown to hold its stems against wind.\n\nIn 2014 the country voted it Czech Tree of the Year, and in 2015 it placed fifth in the European Tree of the Year. Velke Opatovice has its own railway station, and the chateau park is a short walk from the town centre, free to enter with no ticket required for the park itself. Velke Opatovice itself grew up around a sugar refinery in the nineteenth century, and the chateau and its park predate that industry, so the pine has outlasted the reason the town around it expanded.",
+  "faq": [
+    {
+      "q": "Why is it called the six-headed dragon?",
+      "a": "Its trunk divides into five stems just above the ground, and one of those splits again into three about eight metres up, so the crown reads as a cluster of separate trees sharing one base."
+    },
+    {
+      "q": "Is the chateau park free to visit?",
+      "a": "Yes. The 13.5-hectare park has been open to the public since the early 19th century and needs no ticket to walk through and see the pine."
+    },
+    {
+      "q": "How old is the Opatovice Pine?",
+      "a": "About 250 years, which would make it the oldest Austrian pine recorded in the Czech Republic."
+    }
+  ],
+  "oldest_tree_id": "vop_001",
+  "trees": [
+    {
+      "id": "vop_001",
+      "name": "The Opatovice Pine",
+      "species": "Austrian Pine (Pinus nigra subsp. austriaca)",
+      "age_estimate": "about 250 years",
+      "age_min": 230,
+      "age_max": 270,
+      "girth_cm": 480,
+      "location": {
+        "address": "Chateau park (zamecky park), Velke Opatovice",
+        "latitude": 49.6102,
+        "longitude": 16.6698,
+        "neighbourhood": "Velke Opatovice, Blansko District, South Moravian Region"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Opatovick%C3%A1_borovice",
+        "https://velkeopatovice.cz/opatovicka-borovice-strom-roku-cr-v-roce-2014/"
+      ],
+      "access": "Free. Stands in the Velke Opatovice chateau park, which has been freely open to the public since the early 19th century (13.5 ha, no ticket for the park itself, confirmed by a third source, vikendotevrenychzahrad.cz).",
+      "transport": "Velke Opatovice has a rail station; the chateau park is a short walk from the centre.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Velke Opatovice, Czech Republic"
+      },
+      "story": "Locally this pine is the six-headed dragon, and the count is literal. The trunk divides into five stems just above the ground, and one of those splits again into three about eight metres up, so the crown reads as a cluster of separate trees that happen to share a base.\n\nThat habit also makes its girth an argument. Measured around the whole base cluster it comes to 480 centimetres; measured on the single strongest stem at chest height it is 337. Both numbers are correct and they describe different things. Height is about 20 to 21 metres, and the age is given consistently as around 250 years, which would make it the oldest Austrian pine in the Czech Republic.\n\nIt has never been designated a heritage tree in its own right, for the good reason that the whole chateau park around it already carries that protection. The park is 13.5 hectares and has been open to the public since the early 19th century, so the tree has spent its adult life being walked past. It is ageing, described as still vital, and carries dynamic bracing in the crown to hold the stems against wind.\n\nIn 2014 the country voted it Czech Tree of the Year, and in 2015 it came fifth in Europe. Velke Opatovice has a railway station and the park is a short walk from the centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

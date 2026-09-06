@@ -1,0 +1,61 @@
+{
+  "city": "Bohunovice",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Bohunovice is a village near Olomouc, and an oak standing on a field track just south of it is the last survivor of a planting made to hold the banks of a fishpond founded in 1577: two information boards beside the tree disagree on its age by more than a century, and nobody has settled which is right. The pond and its guard cottage are gone; the oak is what remains of them.",
+  "meta_description": "Hromuv Oak, near Bohunovice, is the last tree of a 1577 fishpond planting. Its own info boards disagree by 138 years on its age. Free to visit.",
+  "question_meta": "Bohunovice's oldest tree is Hromuv Oak, given as 300 to 450 years old, its two information boards disagreeing by over a century.",
+  "question_answer": "The oldest tree near Bohunovice is Hromuv Oak, standing beside a field track between the villages of Hlusovice and Chomoutov. Two information boards next to the tree disagree with each other: one says it is 300 years old, the other 438. Nobody has settled the discrepancy, and Czech Wikipedia records it rather than choosing a side, which is the honest position. The trunk measures 630 centimetres round, up from 600 when measured in 2004, on a tree 27 metres tall.",
+  "question_context": "The oak is described as the last survivor of the oaks planted to hold the embankments of the Velky rybnik, the Great Fishpond founded in 1577, standing near where the Strazna bouda, the guard cottage, once stood. The cottage and the rest of the planting are gone; this tree is what remains.\n\nIt has been protected since 2005 and had tree surgery in March 2011. In 2010 it won Czech Tree of the Year and went on to represent the country in the European competition. Getting to it is deliberately unglamorous: a dusty, unmarked field track runs between Hlusovice and Chomoutov, walkable or better reached by bike, and the oak simply stands beside it in open fields. One source describes the surrounding ground loosely as private agricultural land, though no gate, fence or restriction on the tree itself was found. There is no gate and nothing to pay. The Velky rybnik itself was one of a chain of fishponds built across Moravia in the sixteenth century for carp farming, most of which have since been drained; this stretch of countryside has not.",
+  "faq": [
+    {
+      "q": "How old is Hromuv Oak?",
+      "a": "Its own two information boards disagree: one says 300 years, the other 438. Nobody has resolved the gap, so both figures are printed rather than one chosen."
+    },
+    {
+      "q": "What is Hromuv Oak the last of?",
+      "a": "It is described as the last surviving oak of a planting made to hold the embankments of the Velky rybnik, a fishpond founded in 1577, near where a guard cottage once stood."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A dusty, unmarked field track runs between Hlusovice and Chomoutov, walkable or better by bike. No gate, no ticket; one source loosely describes the surrounding land as private farmland, though the tree itself carries no restriction found."
+    }
+  ],
+  "oldest_tree_id": "boh_001",
+  "trees": [
+    {
+      "id": "boh_001",
+      "name": "Hromuv Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "300 to 450 years (disputed, see notes)",
+      "age_min": 300,
+      "age_max": 450,
+      "girth_cm": 630,
+      "location": {
+        "address": "Beside a field track between Hlusovice and Chomoutov, south of Bohunovice",
+        "latitude": 49.63973,
+        "longitude": 17.25251,
+        "neighbourhood": "Bohunovice cadastral area, Olomouc District, Olomouc Region"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Hrom%C5%AFv_dub",
+        "https://www.kudyznudy.cz/aktivity/hromuv-dub-u-chomutova-na-olomoucku"
+      ],
+      "access": "Free, reached on foot or by bike along an unmarked dusty field track between the villages of Hlusovice and Chomoutov; no formal tourist trail. One source describes the surrounding ground loosely as private agricultural land, but no gate, fence or restriction on the tree itself was found; flagging rather than blocking.",
+      "transport": "No public transport to the exact spot; Bohunovice/Chomoutov area is on regional bus routes, tree is a field-track walk from the nearest stop.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Bohunovice, Czech Republic"
+      },
+      "story": "Two information boards stand beside this oak and they disagree with each other. One says the tree is 300 years old, the other says 438. Nobody has settled it, and the Czech Wikipedia entry records the discrepancy rather than choosing, which is the honest position: somewhere between three hundred and four hundred and fifty years, with the boards themselves as the evidence of how loosely that is known.\n\nWhat the oak is agreed to be is a survivor. It is described as the last of the oaks planted to hold the embankments of the Velky rybnik, the Great Fishpond founded in 1577, and it stands near where the Strazna bouda, the guard cottage, used to be. The cottage is gone and so is the rest of the planting. The tree is 630 centimetres round, up from 600 when it was measured in 2004, and 27 metres tall.\n\nIt has been protected since 2005 and had tree surgery in March 2011. In 2010 it won Czech Tree of the Year and went on to represent the country in the European competition.\n\nGetting to it is deliberately unglamorous. A dusty field track runs between Hlusovice and Chomoutov, unmarked and unsignposted, walkable or better on a bike, and the oak is simply standing beside it in the fields. There is no gate and nothing to pay.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

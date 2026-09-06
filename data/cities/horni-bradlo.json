@@ -1,0 +1,69 @@
+{
+  "city": "Horni Bradlo",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Horni Bradlo is a village in the Zelezne hory hills of eastern Bohemia, and just outside it, near the ruins of a Gothic fortress, stands a small-leaved lime that lost a third of itself to storm damage and grew back looking deliberate: a balanced, twin-stemmed tree with a hollow running from the base into the crown, one of the five biggest small-leaved limes in Bohemia by girth.",
+  "meta_description": "The Linden of Lipka, near Horni Bradlo, is a twin-stemmed lime with a 26-metre crown, third in Europe's 2017 Tree of the Year vote. Free, no ticket.",
+  "question_meta": "Horni Bradlo's oldest tree is the Linden of Lipka, 600 to 800 years old, third in the 2017 European Tree of the Year vote.",
+  "question_answer": "The oldest tree near Horni Bradlo is the Linden of Lipka, a small-leaved lime standing beside a path to the Kustos family tomb near a former Gothic fortress. Sources put its age at 600 to 800 years, a band nobody has narrowed. Its trunk measured 802 centimetres round when first taped, 870 in 2001 and 905 in 2016, ranking it among the five biggest small-leaved limes in Bohemia by girth, with a crown 26 metres across on a tree 27 to 32 metres tall.",
+  "question_context": "The tree grew on three trunks; one broke away, and the wound closed into the balanced twin-stemmed shape it carries today, hollow from the base into the crown. In 2016 the Czech public voted it Tree of the Year, and it went on to place third in the European Tree of the Year in 2017, a striking result for a tree standing on a field path in the Zelezne hory.\n\nIt has been protected since 1990. Cables were fitted in the crown to hold the twin stems together, still in place as of 2020, and the tree is described as in good health for its age. It stands beside a yellow-marked path leading to the Kustos family tomb, near the site of a former Gothic fortress, open countryside with no gate or ticket. Horni Bradlo village is about a kilometre away; there is no public transport to the tree itself.",
+  "faq": [
+    {
+      "q": "How old is the Linden of Lipka?",
+      "a": "Sources give 600 to 800 years, a range nobody has narrowed further. Its girth has been measured repeatedly, most recently at 905 centimetres in 2016."
+    },
+    {
+      "q": "Why does it have two trunks?",
+      "a": "It originally grew on three trunks; one broke away at some point, and the wound closed into the balanced twin-stemmed shape it carries now, hollow from the base into the crown."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands beside a yellow-marked path to the Kustos family tomb near a former Gothic fortress, about a kilometre from Horni Bradlo village. No public transport reaches the tree directly; open countryside, free, no ticket."
+    }
+  ],
+  "oldest_tree_id": "hbr_001",
+  "trees": [
+    {
+      "id": "hbr_001",
+      "name": "The Linden of Lipka",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "600 to 800 years",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 905,
+      "location": {
+        "address": "Beside the path to the Kustos family tomb, near the former Gothic fortress, Lipka",
+        "latitude": 49.79586,
+        "longitude": 15.7331,
+        "neighbourhood": "Lipka, Horni Bradlo, Chrudim District, Zelezne hory Protected Landscape Area"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/L%C3%ADpa_v_Lipce",
+        "https://www.hornibradlo.cz/lipa-na-lipce-pamatny-strom/d-2458"
+      ],
+      "access": "Free. Stands beside a yellow-marked hiking trail/path leading to the Kustos family tomb near a former Gothic fortress; open countryside, no gate or ticket.",
+      "transport": "No public transport to the site itself; Horni Bradlo village is about 1 km away.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "container": {
+        "type": "own_place",
+        "place": "Horni Bradlo, Czech Republic"
+      },
+      "story": "This lime lost a third of itself and came back looking deliberate. It grew on three trunks, one of them broke away, and the wound closed into the balanced twin-stemmed shape it carries now, with a hollow running from the base up into the crown. That crown is 26 metres across, on a tree standing somewhere between 27 and 32 metres tall.\n\nThe trunk measured 802 centimetres round when it was first taped, 870 in 2001 and 905 in 2016, which ranks it among the five biggest small-leaved limes in Bohemia by girth. Its age is given as 600 to 800 years, a band nobody has narrowed, and the tree is more convincing than the number.\n\nIn 2016 the Czech public voted it Tree of the Year, and it went on to take third place in the European Tree of the Year in 2017, which is a lot of votes for a tree standing on a field path in the Zelezne hory. It has been protected since 1990. Cables were fitted in the crown to hold the stems, in place as of 2020, and it is described as in good health for its age.\n\nIt stands beside the yellow-marked path that runs to the Kustos family tomb, near the site of a former Gothic fortress. No gate, no ticket.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when a crown twenty-six metres across comes into flower"
+      }
+    }
+  ]
+}

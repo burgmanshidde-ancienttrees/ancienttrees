@@ -1,0 +1,69 @@
+{
+  "city": "Teleci",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Teleci is a small village in the Zdarske vrchy hills of eastern Bohemia, and its lime tree is why anyone outside the district has heard of it: a hollow, 600-to-700-year-old trunk a person can stand inside, voted Czech Tree of the Year in 2021, with a legend of a scribe who copied banned religious texts inside it by candlelight at night, working alone while villagers passing outside said they heard the tree singing.",
+  "meta_description": "Teleci's Singing Linden is a 600-to-700-year-old hollow lime a person can stand inside, Czech Tree of the Year 2021. Free, unfenced, beside house no. 102.",
+  "question_meta": "Teleci's oldest tree is the Singing Linden, a hollow lime 600 to 700 years old and Czech Tree of the Year 2021.",
+  "question_answer": "The oldest tree in Teleci is the Singing Linden, a large-leaved lime with a girth of about 1,170 centimetres, its trunk hollow and open at ground level. Sources give its age as 600 to 700 years, though neither explains how the figure was reached. It stands beside house number 102, about a hundred metres off the main road, unfenced, and free to see.",
+  "question_context": "Teleci put this lime on the village coat of arms and the post office put it on a national stamp, a lot of recognition for a tree without an official measured age. A scribe named Jirousek is said to have hidden inside the hollow trunk in the late 17th century, copying religious texts the Counter-Reformation had banned, working at night by candlelight; villagers who passed said they heard the tree singing. That is local tradition rather than record, but the hollow itself is real, open at ground level and large enough that a person fits inside it.\n\nThe girth is the one figure that has actually been measured: 962 centimetres in 1899, around 1,170 now. It has been a protected cultural monument since 1978 and a national heritage tree since 1995, and in 2021 the country voted it Czech Tree of the Year. Teleci sits in the Zdarske vrchy protected landscape area, with no public transport within thirty minutes; the nearest town, Policka, is about eight kilometres away, so this is a trip by car or bike rather than a stop on a bus route.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Teleci?",
+      "a": "The Singing Linden, a large-leaved lime with a hollow trunk about 1,170 centimetres round, given as 600 to 700 years old. It stands beside house number 102, unfenced and free to see."
+    },
+    {
+      "q": "Why is it called the Singing Linden?",
+      "a": "Local tradition says a scribe hid inside the hollow trunk in the late 17th century, copying religious texts banned under the Counter-Reformation, and villagers passing at night heard the tree singing. It is a legend rather than a record, but the hollow is real."
+    },
+    {
+      "q": "How do I get to Teleci?",
+      "a": "There is no public transport within thirty minutes; the nearest town, Policka, is about eight kilometres away. Teleci is reachable by car or bike in the Zdarske vrchy hills of eastern Bohemia."
+    }
+  ],
+  "oldest_tree_id": "tlc_001",
+  "trees": [
+    {
+      "id": "tlc_001",
+      "name": "The Singing Linden of Teleci",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "600 to 700 years",
+      "age_min": 600,
+      "age_max": 700,
+      "girth_cm": 1170,
+      "location": {
+        "address": "Beside house no. 102, Teleci, Svitavy District, Pardubice Region",
+        "latitude": 49.7022,
+        "longitude": 16.17451,
+        "neighbourhood": "Teleci village, Zdarske vrchy protected landscape area"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Lukasova_l%C3%ADpa",
+        "https://botany.cz/cs/lukasova-lipa/"
+      ],
+      "access": "Free. Stands in the open village of Teleci beside house no. 102, about 100 m from the main road; a public pilgrimage tree (Tree of the Year 2021 national winner), not fenced off.",
+      "transport": "No public transport within 30 min; nearest town Policka is about 8 km away.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "container": {
+        "type": "own_place",
+        "place": "Teleci, Czech Republic"
+      },
+      "story": "A scribe named Jirousek is said to have hidden inside this trunk in the late 17th century, copying religious books the Counter-Reformation had banned, working by candlelight. Villagers who passed at night heard something coming out of the tree and said it was singing. That part is local tradition rather than record, but the hollow it turns on is real: the trunk is open at ground level and a person fits inside it.\n\nBoth sources that describe the tree give an age of 600 to 700 years, and neither shows how the figure was reached, so treat it as the received one rather than a measurement. The girth is measured. Somebody taped it at 962 centimetres in 1899 and it is around 1,170 now, which puts it among the largest limes in eastern Bohemia. The crown reaches 21 to 23 metres depending on which survey year you read.\n\nIt has been a protected cultural monument since 1978 and a national heritage tree since 1995. Teleci put it on the village coat of arms and the post office put it on a stamp. In 2021 the country voted it Czech Tree of the Year.\n\nIt stands beside house number 102, about a hundred metres off the main road, unfenced, with the hollow trunk given maintenance work every couple of years to keep it upright.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the whole open village smells of it"
+      }
+    }
+  ]
+}
