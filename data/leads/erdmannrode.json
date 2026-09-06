@@ -1,0 +1,36 @@
+{
+ "place": "Erdmannrode",
+ "note": "2026-09-06 verify pass (famous-germany batch): Gerichtslinde Erdmannrode verified and clears the single-tree-destination bar. See leads entry for full write-up. Previously noted in _famous-germany.json's note as 'too far (33.5km) to join the Schwalm-Eder-Linden cluster'; verified here as its own standalone single-tree destination instead.",
+ "leads": [
+  {
+   "id": "erd_001",
+   "name": "The Gerichtslinde of Erdmannrode",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "age_estimate": "roughly 500 years",
+   "age_min": 450,
+   "age_max": 550,
+   "girth_cm": 865,
+   "location": {
+    "address": "An der Steingasse, near the church, Erdmannrode, 36269 Schenklengsfeld, Hessen, Germany",
+    "latitude": 50.81187,
+    "longitude": 9.78673,
+    "neighbourhood": "Erdmannrode (district of Schenklengsfeld)"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/baumregister/2036-dorflinde_in_erdmannrode/",
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Schenklengsfeld"
+   ],
+   "access": "Free. Stands on an octagonal sandstone-walled meadow beside the church, open village ground.",
+   "transport": "In the village of Erdmannrode, part of Schenklengsfeld, Hersfeld-Rotenburg district, Hessen; reached by road.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): a summer linden roughly 500 years old with a huge girth of 8.65m (baumkunde.de, measured 1 Feb 2024 at 30cm height), height 20.0m, vital with age-appropriate damage, new shoots and callus growth. Officially a designated Naturdenkmal, confirmed by its own entry in de.wikipedia's Liste der Naturdenkmale in Schenklengsfeld (coordinates 50.81187N 9.78673E, near-exact match to baumkunde's own coordinate). Documented as an old Gerichtslinde (court linden) and counted among the region's 'geleitete Linden' (guided/trained lindens), the same recognised regional folk-tree type as the already-published Schwalm-Eder-Linden cluster (data/research/schwalm-eder-linden-verified.json, sel_001-sel_004), though this tree sits 33.5km from that cluster per the earlier check in _famous-germany.json's note and so stands on its own rather than joining it. Until around 1900 it reportedly carried a musicians' platform. The trunk is two-stemmed with wooden supports, the classic pattern of an old hollow linden's stem splitting and re-stabilising. Two independent sources agree on species, location and Naturdenkmal status; only baumkunde carries the size figures, so age and girth rest on one measurement, flagged accordingly. Anecdote to lead with: an 8.65m-girth court linden that once carried musicians on a platform in its own branches.",
+   "photo_candidates": [
+    "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_03.jpg"
+   ]
+  }
+ ],
+ "blocked": []
+}

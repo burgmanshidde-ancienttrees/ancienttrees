@@ -1,0 +1,66 @@
+{
+  "city": "Galenbeck",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Galenbeck's linden has a dance floor built into its own crown, and it is the last tree of its kind left standing anywhere in northern Germany. Planted in 1788 to honour Princess Louise of Mecklenburg-Strelitz, later a Prussian queen, it carries an octagonal timber platform about three metres up, large enough to hold two dozen people, and the village's annual festival is still held beneath it. Free, in the open estate park, local signage points the way.",
+  "meta_description": "The Galenbeck Dance Linden carries a timber platform in its own crown, the last surviving Tanzlinde in northern Germany. Free, planted 1788.",
+  "question_meta": "Galenbeck's oldest and only notable tree is the Dance Linden, the last surviving Tanzlinde in northern Germany, planted in 1788.",
+  "question_answer": "The oldest tree in Galenbeck is the Galenbeck Dance Linden, also called the Luisenlinde, a common lime (Tilia x europaea) planted in 1788 in the village's former manor park. It is the only surviving Tanzlinde, or dance linden, in Mecklenburg-Vorpommern, and English-language sources describe it as the last of its kind in northern Germany. It stands in the open estate park, free to visit, with local signage pointing the way.",
+  "question_context": "Two independent sources agree closely: English Wikipedia gives a height of 14 metres and an age of 234 years as of 2022, consistent with the 1788 planting date, while baumkunde.de's field measurement from 11 August 2016 recorded a girth of 3.19 metres and an age estimate of 240 to 250 years. The species is settled rather than a genus guess: baumkunde's German name 'Hollaendische Linde' is the standard term for Tilia x europaea, matching Wikipedia's scientific name directly. The tree was planted to honour Princess Louise of Mecklenburg-Strelitz, later a Prussian queen, which is where its alternate name Luisenlinde comes from. Its octagonal timber dance platform, built into the crown about three metres up, was rebuilt in 1993 and holds room for roughly two dozen people; the crown was pruned back into its current shape in 2002. The estate carries a footnote in military history too: Field Marshal Gebhard Leberecht von Blucher, later instrumental at Waterloo, was reportedly held there in 1760. Tanzlinden, trees trained to support a dance floor within their own branches, were once common here; this is the only one left standing in the state.",
+  "hero_tree_id": "gnb_001",
+  "oldest_tree_id": "gnb_001",
+  "faq": [
+    {
+      "q": "What is special about the Galenbeck Dance Linden?",
+      "a": "It is a Tanzlinde, a linden trained to carry a dance platform built into its own crown, and it is the last surviving example in Mecklenburg-Vorpommern and, per English-language sources, in all of northern Germany."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Planted in 1788, making it roughly 235 to 250 years old, with two independent sources agreeing closely on that range."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the former estate park with local signage pointing the way, and no ticket is required."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is in the village of Galenbeck, part of the Friedland municipality in the Mecklenburg Lake District, reached by road. There is no rail station in the village."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gnb_001",
+      "name": "The Galenbeck Dance Linden (Luisenlinde)",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 235 to 250 years",
+      "age_min": 230,
+      "age_max": 250,
+      "girth_cm": 319,
+      "height_m": 14,
+      "location": {
+        "address": "Former Gutspark (manor park), Galenbeck, 17099 Friedland, Mecklenburg-Vorpommern, Germany",
+        "latitude": 53.62019617,
+        "longitude": 13.70366,
+        "neighbourhood": "Galenbeck estate park"
+      },
+      "story": "Galenbeck's linden has a dance floor built into its own crown, and it is the last tree of its kind left standing anywhere in northern Germany. Planted in 1788 in the manor park to honour Princess Louise of Mecklenburg-Strelitz, later a Prussian queen, the tree was trained from early on to carry an octagonal timber platform about three metres up, rebuilt in 1993 and large enough to hold two dozen people. The village's annual festival is still held beneath it.\n\nTanzlinden, dance lindens shaped to support a floor and a gathering inside their own branches, were once common across the region. This is the only one left standing in Mecklenburg-Vorpommern, and English-language sources call it the last of its kind in the whole of northern Germany, a real distinction rather than a village boast. The estate has its own footnote in military history too: Field Marshal Gebhard Leberecht von Bluecher, who would later help defeat Napoleon at Waterloo, was reportedly held here in 1760.\n\nAt around 240 years old, with a trunk 3.2 metres round and a crown pruned back into its current rounded shape in 2002, it has had regular care rather than benign neglect. Local signage points the way, and it stands in the open estate park with no ticket required.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Galenbecker_Tanzlinde",
+        "https://www.baumkunde.de/baumregister/4663-tanzlinde_in_galenbeck/"
+      ],
+      "access": "Free and publicly accessible; local signage points the way to the tree in the former estate park, and the village's annual festival is held beneath it.",
+      "transport": "In the village of Galenbeck, Friedland municipality, Mecklenburg Lake District; reached by road, no rail station in the village.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tanzlinde.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Lutz Maertens, via Wikimedia Commons, CC BY-SA 3.0",
+        "status": "approved",
+        "width": 800,
+        "height": 533
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): the only surviving dance linden (Tanzlinde) in Mecklenburg-Vorpommern and the only one in northern Germany per English Wikipedia, a real regional superlative. Two independent sources agree closely: English Wikipedia (14m height, 234y as of 2022) and baumkunde.de (girth 3.19m at 2016 observation, age 240-250y). Species settled directly (baumkunde's 'Hollaendische Linde' = Tilia x europaea, matching Wikipedia). Photo: File:Tanzlinde.jpg, viewed directly, whole tree in leaf with the dance platform and stairway clearly visible, bright daylight, fills the frame well; a clean pass of the Cadiz standard, the best of any candidate reviewed this batch."
+    }
+  ]
+}

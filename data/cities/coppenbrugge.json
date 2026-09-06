@@ -1,0 +1,66 @@
+{
+  "city": "Coppenbrügge",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "People once climbed into this tree to drink with a future Tsar. The Peter-Linde grows out of the stone wall of Burg Coppenbrügge, and by the early 1700s its crown had been trained into a three-storey timber structure, entered from the castle's first floor, that visitors climbed up into. It takes its name from Peter the Great of Russia, said to have visited during the 1697 diplomatic meeting known as the Damenfrieden von Coppenbrügge. Free, reached on foot along the castle wall.",
+  "meta_description": "The Peter-Linde grows from Burg Coppenbrugge's castle wall and once carried a climbable timber room in its crown. Free, roughly 500-700 years old.",
+  "question_meta": "Coppenbrügge's oldest tree is the Peter-Linde, a lime rooted in the castle wall, estimated at 500 to 700 years. Where it stands.",
+  "question_answer": "The oldest tree in Coppenbrügge is the Peter-Linde, a large-leaved lime (Tilia platyphyllos) growing directly out of the stone wall of Burg Coppenbrügge, estimated at 500 to 700 years old. Two independent measurements taken three years apart both put its girth at roughly 6.6 metres. It stands beside the castle gate, reached by a public footpath, and is free to see any time the castle grounds are open.",
+  "question_context": "The girth comes from two sources measuring three years apart: baumkunde.de recorded 6.60 metres in a field visit dated 13 February 2022, and the Burg Coppenbrügge Wikipedia article gives 6.64 metres as of 2017, close enough to be ordinary growth between readings rather than a disagreement. Neither source narrows the 500-to-700-year age range further. The tree's name comes from a 1697 visit by Peter the Great of Russia during the Damenfrieden von Coppenbrügge, the 'Ladies' Peace', a diplomatic meeting credited with helping avert a war between Austria and Brandenburg-Prussia. The tree itself is older than that legend: a 1654 engraving by Matthäus Merian shows it already substantial, four decades before Peter is said to have visited. An 18th-century source from 1718 describes the crown having been trained for roughly a century into a three-storey timber bower, entered from the castle's first floor, that guests climbed into to sit among the branches. Most of that structure is gone; the crown today is irregular, with most of the old trained limbs broken away. The castle museum keeps set hours (Thursday to Sunday and holidays, 14:00 to 17:00), but the wall walk and the tree are accessible whenever the castle park is open.",
+  "hero_tree_id": "cpb_001",
+  "oldest_tree_id": "cpb_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Coppenbrügge?",
+      "a": "The Peter-Linde, a large-leaved lime growing out of the castle wall of Burg Coppenbrügge, estimated at 500 to 700 years old."
+    },
+    {
+      "q": "Why is it called the Peter-Linde?",
+      "a": "It is named for Peter the Great of Russia, said to have visited in 1697 during a diplomatic meeting held there. An engraving from 1654 shows the tree already grown, so it predates that visit."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The wall walk and the tree are reached by a public footpath before the castle gate. Only the castle museum itself keeps set hours and charges entry."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands in the town centre of Coppenbrügge, with free parking at the castle and a regional bus connection."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cpb_001",
+      "name": "The Peter-Linde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 500 to 700 years",
+      "age_min": 450,
+      "age_max": 750,
+      "girth_cm": 660,
+      "height_m": 11,
+      "location": {
+        "address": "Burgwall, Burg Coppenbrügge, 31863 Coppenbrügge, Niedersachsen, Germany",
+        "latitude": 52.118372,
+        "longitude": 9.546986,
+        "neighbourhood": "Burg Coppenbrügge (castle wall)"
+      },
+      "story": "People once climbed into this tree to drink with a future Tsar. The Peter-Linde grows straight out of the stone wall of Burg Coppenbrügge, and by the early 1700s its crown had been trained into a three-storey timber structure, entered directly from the castle's first floor, that visitors climbed up through the living branches to sit in. It takes its name from Peter the Great of Russia, who is said to have visited in 1697 during the diplomatic meeting later called the Damenfrieden von Coppenbrügge, the 'Ladies' Peace', credited with helping avert a war between Austria and Brandenburg-Prussia.\n\nThe tree itself predates the story. An engraving by Matthäus Merian shows it in 1654, four decades before Peter supposedly climbed it, so whatever legend attached itself later, the linden was already substantial. Two independent measurements, taken three years apart, both put its girth at roughly 6.6 metres, and its age is estimated at 500 to 700 years.\n\nMost of the trained bower is gone now, broken away branch by branch over the centuries. What is left is an irregular crown and a short trunk still rooted half into the masonry it has grown alongside for hundreds of years. The castle museum keeps set hours, but the wall walk and the tree itself are open to anyone who reaches the gate on foot.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/999-peterlinde_in_coppenbruegge/",
+        "https://de.wikipedia.org/wiki/Burg_Coppenbr%C3%BCgge"
+      ],
+      "access": "Free. Stands on the castle wall (Burgwall) reached by a public footpath right before the castle gate; the castle grounds and wall walk are open to the public outside museum hours (museum open Thu-Sun and holidays 14:00-17:00, castle park otherwise walkable).",
+      "transport": "In the town centre of Coppenbrügge; free parking at the castle, reachable by regional bus.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Peter-Linde_Burg_Coppenbr%C3%BCgge.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Den man tau, via Wikimedia Commons, CC BY-SA 4.0",
+        "status": "approved",
+        "width": 2800,
+        "height": 2100
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): a summer linden growing directly on the stone castle wall, its short trunk partly rooted into and over the masonry. Two independent sources agree: baumkunde.de (last field observation 13 Feb 2022, girth 6.6m at 50cm height, vital with a masonry-filled hollow and crown-securing cables) and de.wikipedia's Burg Coppenbrügge article (girth 6.64m as of 2017, same age range, designated Naturdenkmal). Photo: File:Peter-Linde Burg Coppenbrügge.jpg, viewed directly, in leaf, trunk on the wall clearly visible, meets the Cadiz standard (some backlighting/lens flare but full colour and detail); a bare-winter candidate and a more distant backlit crown shot were rejected in favour of it."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "city": "Schlagsdorf",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "A tree decided Schlagsdorf had a new ruler, and later decided who got whipped for it. On 7 October 1518, Duke Magnus of Saxony summoned the village's farmers to gather under this linden and swear their allegiance, then held a regional court there the same day. Documented history rather than legend, according to the district's own account. The tree still stands in the churchyard, appears on the village's own coat of arms, and is free to visit on open church ground.",
+  "meta_description": "The Gerichtslinde of Schlagsdorf hosted a documented 1518 ducal court and later a punishment post. Free, in the churchyard, roughly 500 years old.",
+  "question_meta": "Schlagsdorf's oldest tree is the Gerichtslinde, a court linden roughly 500 years old with a documented 1518 court history.",
+  "question_answer": "The oldest tree in Schlagsdorf is the Gerichtslinde, a small-leaved lime (Tilia cordata) estimated at roughly 500 years old, planted around 1523, with a girth of 8.7 metres. It stands in the churchyard of Schlagsdorf's Gothic village church, on Hauptstrasse in Mecklenburg-Vorpommern. It is free to visit, on open church ground.",
+  "question_context": "Two independent sources, the official Amt Rehna municipal page and the local-lore site mecksikon.de, agree closely on the tree's figures: a girth of 8.7 metres, a crown height of 20 metres, and a planting estimate around 1523. The Amt Rehna page is explicit that the tree's judicial history is documented rather than legend, in its own words 'keine Sage'. On 7 October 1518, Duke Magnus of Saxony summoned the village's farmers to gather under the linden and swear their allegiance, then held a regional court, a Landgericht, there the same day. From 1589 a whipping or punishment post stood at the same site, used for those sentenced to public church discipline. The tree appears on Schlagsdorf's own coat of arms, a linden branch with four leaves representing the village's four districts, a strong sign of genuine local significance. Its several original stems have grown together over the centuries into one trunk. Location precision here is approximate rather than confirmed: both sources place the tree at churchyard level rather than giving a tree-specific register coordinate, so the pin marks the churchyard itself. A mapped photograph or satellite check would allow the pin to be upgraded to a precise position.",
+  "hero_tree_id": "sgd_001",
+  "oldest_tree_id": "sgd_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Schlagsdorf?",
+      "a": "The Gerichtslinde, a small-leaved lime estimated at roughly 500 years old, with a girth of 8.7 metres, standing in the village churchyard."
+    },
+    {
+      "q": "What happened under this tree?",
+      "a": "On 7 October 1518, Duke Magnus of Saxony held a regional court there after the village's farmers swore allegiance to him under its branches. The district's own records call this documented history, not legend. From 1589 a punishment post for church-discipline sentences stood at the same spot."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the churchyard on Hauptstrasse, open ground with no ticket needed."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is in the centre of Schlagsdorf village, in the Amt Rehna area of the Nordwestmecklenburg district, reached by road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sgd_001",
+      "name": "The Gerichtslinde of Schlagsdorf",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "girth_cm": 870,
+      "height_m": 20,
+      "location": {
+        "address": "Churchyard, Hauptstraße, 19217 Schlagsdorf, Mecklenburg-Vorpommern, Germany",
+        "latitude": 53.7825,
+        "longitude": 10.8654,
+        "neighbourhood": "Schlagsdorf village churchyard"
+      },
+      "story": "A tree decided Schlagsdorf had a new ruler, and later decided who got whipped for it. On 7 October 1518, Duke Magnus of Saxony summoned the village's farmers to gather under this linden and swear their allegiance, then held a regional court there the same day. It is documented history rather than village legend, according to the district's own account, and from 1589 a punishment post stood at the same spot for anyone sentenced to public church discipline.\n\nThe tree is old enough to have witnessed all of it. Estimated at around 500 years, with a planting date put near 1523, its several original stems have long since grown together into one trunk 8.7 metres around and a crown reaching 20 metres. It stands today in the churchyard of Schlagsdorf's Gothic village church, on the village's main street, and it appears on Schlagsdorf's own coat of arms, a four-leaved linden branch representing the village's four districts, a mark of just how central this one tree is to how the place sees itself.\n\nNo source has pinned down its exact spot within the churchyard closer than the church itself, so its pin here marks the churchyard rather than the trunk precisely. Free to visit, and open village ground.",
+      "verified_sources": [
+        "https://www.rehna.de/portal/seiten/gerichtslinde-von-schlagsdorf-900000091-28460.html",
+        "https://mecksikon.de/?aid=272&p=article"
+      ],
+      "access": "Free. Stands in the churchyard of Schlagsdorf's Gothic village church, on Hauptstrasse, open village ground.",
+      "transport": "In the centre of Schlagsdorf village, Amt Rehna, Nordwestmecklenburg district; reached by road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): a winter linden roughly 500 years old, girth 8.7m, crown height 20m, several stems grown together into one trunk. Two independent sources agree closely: rehna.de (the official Amt Rehna municipal page, explicit that the court history is documented, 'keine Sage') and mecksikon.de (same 8.7m/20m figures, planting estimate around 1523). Real documented judicial history: 1518 ducal court, 1589 punishment post. On the village's own coat of arms. Location precision approximate (churchyard-level, not a tree-level register coordinate). Two candidate photos found on Commons (File:GerichtslindeSchlagsdorf312.JPG, File:GerichtslindeSchlagsdorf37.JPG) were both viewed directly and rejected: one is a close-up of grave markers at the trunk base, the other is a photograph of an information sign, neither shows the tree itself per the Cadiz standard. No other candidates found on a Commons search. Photo stays an honest gap."
+    }
+  ]
+}

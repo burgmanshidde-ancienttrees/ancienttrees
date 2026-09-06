@@ -1,0 +1,32 @@
+{
+  "place": "Aachen",
+  "country": "Germany",
+  "note": "New standalone lead file from the bomenbieb.nl verification batch (2026-09-06). Aachen is a German city with no existing Ancient Trees page; this is a single verified tree awaiting a place/page decision, delivered under the single-famous-tree exception.",
+  "leads": [
+    {
+      "id": "aac_001",
+      "name": "The Forster Linde",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 850,
+      "age_max": 1050,
+      "girth_cm": 950,
+      "location": {
+        "address": "Forster Linde (street), Aachen-Forst",
+        "latitude": 50.759785,
+        "longitude": 6.131186,
+        "neighbourhood": "Forst, Aachen"
+      },
+      "verified_sources": [
+        "https://www.aachen.de/in-aachen-leben/klima-umwelt/natur-baum-und-artenschutz/baumschutz/winterlinde-forster-linde/",
+        "https://de.wikipedia.org/wiki/Forster_Linde"
+      ],
+      "access": "Free. Stands on a public street (Forster Linde) in the Aachen-Forst district, beside a church and a former courthouse; fenced for root protection but visible and reachable on foot, no ticket or appointment needed.",
+      "transport": "Aachen-Forst, roughly 15-20 minutes by bus from Aachen Hauptbahnhof (exact stop not verified this pass).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Bomenbieb.nl lead ('linde aken', planted band 1300-1500, tagged species_nl 'hollandse-linde') gave the coordinate and address only, per the facts-only licence; both independent sources used here are the City of Aachen's own municipal page and German Wikipedia, both fetched and read directly (not bomenbieb). SPECIES CONFLICT: bomenbieb tags it as Common Lime ('hollandse-linde'/Tilia x europaea) but both the city of Aachen's own page and de.wikipedia consistently call it a Winterlinde (Tilia cordata, Small-leaved Lime); went with the two independently-agreeing sources over the register tag. Widely reported as the oldest tree in Aachen. AGE: not a documented planting date, it's a repeated estimate: garden architect Prince Puckler-Muskau assessed it at 'more than 800 years' on a visit in 1852; both sources repeat this and note the exact age cannot be pinned down, so treat 'roughly 1,000 years' as the vague-source estimate carried forward roughly 174 years, not a precise figure. GIRTH: sources disagree slightly, city page says 10 m trunk circumference, Wikipedia says 9.5 m at the base; used 950 cm (the more specific/frequently cited base measurement) and noted the range here. STORY MATERIAL: five major stems fork from the base about 2-3 m up, formed roughly 300 years ago when the original main stem broke off in the crown; local tradition holds it was a 'Gerichtslinde' (court linden) of the Schonforst domain, where judgments including capital sentences were passed until 1390, with executions carried out nearby at the 'Galgenpley' (gallows field); a restored medieval Schoffenhaus (magistrates' house) still stands beside it. Post-war repairs filled hollow sections with concrete, a now-outdated arboricultural practice, per de.wikipedia. Officially a protected Naturdenkmal (natural monument) for over 30 years, regularly inspected, crown stabilised with cables. SINGLE-TREE-DESTINATION CANDIDATE: Aachen has no Ancient Trees page. This tree is widely described as the city's oldest tree, carries its own Wikipedia article, an official municipal page with a QR-code interpretive trail, and a real history; it clears the single-famous-tree exception (2026-08-31 ruling) on its own. Awaiting a place/page decision; not published by this pass."
+    }
+  ],
+  "blocked": []
+}

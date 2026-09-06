@@ -1,0 +1,34 @@
+{
+ "place": "Galenbeck",
+ "note": "2026-09-06 verify pass (famous-germany batch): Galenbecker Tanzlinde verified and clears the single-tree-destination bar. See leads entry for full write-up.",
+ "leads": [
+  {
+   "id": "gnb_001",
+   "name": "The Galenbeck Dance Linden (Luisenlinde)",
+   "species": "Common Lime (Tilia x europaea)",
+   "age_estimate": "roughly 235 to 250 years",
+   "age_min": 230,
+   "age_max": 250,
+   "girth_cm": 319,
+   "location": {
+    "address": "Former Gutspark (manor park), Galenbeck, 17099 Friedland, Mecklenburg-Vorpommern, Germany",
+    "latitude": 53.62019617,
+    "longitude": 13.70366,
+    "neighbourhood": "Galenbeck estate park"
+   },
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Galenbecker_Tanzlinde",
+    "https://www.baumkunde.de/baumregister/4663-tanzlinde_in_galenbeck/"
+   ],
+   "access": "Free and publicly accessible; local signage points the way to the tree in the former estate park, and the village's annual festival is held beneath it.",
+   "transport": "In the village of Galenbeck, Friedland municipality, Mecklenburg Lake District; reached by road, no rail station in the village.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): the only surviving dance linden (Tanzlinde) in Mecklenburg-Vorpommern and the only one in northern Germany per English Wikipedia, a real regional superlative rather than an invented one. Planted 1788 in the manor park in honour of Princess (later Queen) Louise of Mecklenburg-Strelitz, hence its other name 'Luisenlinde'; the estate is separately linked to Field Marshal Gebhard Leberecht von Bluecher, who was held there in 1760. Carries an octagonal timber dance platform about 3 metres above ground, rebuilt in 1993, holding room for about 24 people; crown pruned to its current rounded shape in 2002. Two independent sources agree closely: English Wikipedia (14m height, 234y as of 2022, so planted 1788) and baumkunde.de (last observed 11 Aug 2016, vital, girth 3.19m at that date, height 14.0m, age given as 240-250y). Girth recorded is baumkunde's own tape measurement; note it will have grown somewhat since 2016. Species given by baumkunde as 'Hollaendische Linde' (Dutch Lime), the German-language name for Tilia x europaea, matching Wikipedia's Tilia x europaea directly, so this is a settled species identification rather than a genus guess. Anecdote to lead with: a tree built INTO a dance floor, the last one of its kind left standing in the whole region.",
+   "photo_candidates": [
+    "https://commons.wikimedia.org/wiki/File:Tanzlinde.jpg"
+   ]
+  }
+ ],
+ "blocked": []
+}

@@ -1,0 +1,65 @@
+{
+  "city": "Aachen",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Aachen's oldest tree used to help decide who died. The Forster Linde, a small-leaved lime in the Forst district, hosted a manorial court until 1390, where judgments including death sentences were handed down before the condemned were led to a gallows field nearby. Estimated at roughly a thousand years, with a trunk close to ten metres round, it stands fenced but visible on a public street beside the medieval magistrates' house it once served. Free, no ticket, reachable by bus from the Hauptbahnhof.",
+  "meta_description": "The Forster Linde in Aachen-Forst is roughly 1,000 years old and once hosted a village court. Free, on a public street, fenced but visible.",
+  "question_meta": "Aachen's oldest tree is the Forster Linde, a small-leaved lime estimated at roughly 1,000 years. Where it stands and how to reach it.",
+  "question_answer": "The oldest tree in Aachen is the Forster Linde, a small-leaved lime (Tilia cordata) on the street named after it in the Forst district. No documented planting date survives: in 1852 the garden architect Prince Puckler-Muskau judged it 'more than 800 years old' on a visit, and every account since has carried that estimate forward, putting it at roughly 1,000 years today. Its trunk measures close to 10 metres round at the base. It is free to see, fenced for root protection, and reachable by bus from Aachen Hauptbahnhof.",
+  "question_context": "The age is an inherited estimate rather than a measurement: Puckler-Muskau's 1852 assessment of 'more than 800 years' is the only figure either source gives, and both simply add the years since to arrive at roughly a thousand. Aachen's own municipal page states a trunk circumference of about 10 metres; German Wikipedia gives 9.5 metres at the base, a small enough gap to be a different measuring point rather than a real disagreement. About three centuries ago the original stem broke away high in the crown, and five major limbs now fork upward from what remains, each thick enough to pass for a trunk of its own. The tree served as a Gerichtslinde, a court linden, for the Schonforst domain: judgments, including capital sentences, were handed down in its shade until 1390, and the condemned were led to a gallows field known locally as the Galgenpley. A restored medieval Schoffenhaus, the magistrates' house, still stands beside it. Post-war repairs packed its hollows with concrete, a practice now considered more harmful than helpful; cables hold the crown together today. It has been a protected natural monument for more than thirty years.",
+  "hero_tree_id": "aac_001",
+  "oldest_tree_id": "aac_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Aachen?",
+      "a": "The Forster Linde, a small-leaved lime in the Forst district, estimated at roughly 1,000 years based on an 1852 assessment of 'more than 800 years'."
+    },
+    {
+      "q": "Is it true the tree once hosted executions?",
+      "a": "It hosted a manorial court, where judgments including death sentences were handed down until 1390. The condemned were then led to a gallows field nearby called the Galgenpley, not executed under the tree itself."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a public street, fenced for root protection but fully visible, with no ticket or appointment needed."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is in Aachen-Forst, roughly 15 to 20 minutes by bus from Aachen Hauptbahnhof."
+    }
+  ],
+  "trees": [
+    {
+      "id": "aac_001",
+      "name": "The Forster Linde",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 850,
+      "age_max": 1050,
+      "girth_cm": 950,
+      "location": {
+        "address": "Forster Linde (street), Aachen-Forst, Germany",
+        "latitude": 50.759785,
+        "longitude": 6.131186,
+        "neighbourhood": "Forst, Aachen"
+      },
+      "story": "Aachen's oldest tree used to help decide who died. The Forster Linde hosted a manorial court until 1390, when judgments, including death sentences, were handed down in its shade before the condemned were led away to a gallows field nearby called the Galgenpley. The restored medieval magistrates' house it once served, the Schoffenhaus, still stands beside it.\n\nNobody has ever put an exact number on its age. In 1852 the garden architect Prince Puckler-Muskau, visiting the site, judged it 'more than 800 years old', and every account since has simply carried that estimate forward, which puts it at roughly a thousand years today. Its trunk measures close to ten metres around at the base, and about three centuries ago the original stem broke away high in the crown, leaving five major limbs to fork upward from what remains, each now thick enough to pass for a tree of its own.\n\nThe wounds have not always been treated kindly. Post-war arborists packed its hollows with concrete, a repair method abandoned decades ago as more harmful than the rot it was meant to stop. Cables now hold the crown together instead. It has been a protected natural monument for more than thirty years, fenced at the roots but otherwise open to anyone walking the street that carries its name.",
+      "verified_sources": [
+        "https://www.aachen.de/in-aachen-leben/klima-umwelt/natur-baum-und-artenschutz/baumschutz/winterlinde-forster-linde/",
+        "https://de.wikipedia.org/wiki/Forster_Linde"
+      ],
+      "access": "Free. Stands on a public street (Forster Linde) in the Aachen-Forst district, beside a church and a former courthouse; fenced for root protection but visible and reachable on foot, no ticket or appointment needed.",
+      "transport": "Aachen-Forst, roughly 15-20 minutes by bus from Aachen Hauptbahnhof (exact stop not verified).",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Naturdenkmal_Forster_Linde%2C_Aachen.JPG",
+        "license": "CC BY 3.0",
+        "attribution": "ArthurMcGill, via Wikimedia Commons, CC BY 3.0",
+        "status": "approved",
+        "width": 3436,
+        "height": 3143
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "Bomenbieb.nl lead ('linde aken', planted band 1300-1500, tagged species_nl 'hollandse-linde') gave the coordinate and address only, per the facts-only licence; both independent sources used here are the City of Aachen's own municipal page and German Wikipedia, both fetched and read directly (not bomenbieb). SPECIES CONFLICT: bomenbieb tags it as Common Lime (Tilia x europaea) but both the city of Aachen's own page and de.wikipedia consistently call it a Winterlinde (Tilia cordata, Small-leaved Lime); went with the two independently-agreeing sources over the register tag. AGE is a carried-forward estimate from an 1852 assessment, not a documented planting date. GIRTH: sources disagree slightly (10m city page vs 9.5m Wikipedia); used 950cm. Single-tree-destination candidate published under the 2026-08-31 exception: Aachen had no Ancient Trees page, this tree is widely described as the city's oldest, carries its own Wikipedia article and an official municipal page with a QR-code trail. Photo: File:Naturdenkmal Forster Linde, Aachen.JPG, viewed directly, full tree in leaf, trunk and setting clearly visible, meets the Cadiz standard; two other candidates rejected (one a distant street view, one a backlit bare-crown silhouette)."
+    }
+  ]
+}

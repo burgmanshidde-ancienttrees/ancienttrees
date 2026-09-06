@@ -1,0 +1,14 @@
+{
+  "place": "De Steeg",
+  "country": "Netherlands",
+  "note": "New standalone lead file from the bomenbieb.nl verification batch (2026-09-06).",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "taxus de steeg (Oldest Yew of the Netherlands, Brantsenpark)",
+      "source": "https://bomenbieb.nl/bijzondere-bomen/taxus-de-steeg/",
+      "place": "De Steeg",
+      "reason": "Private land. Two independent sources (buitenplaatseninnederland.nl on Landgoed Rhederoord's history, and spannendegeschiedenis.nl) both describe the tree as standing 'in de voortuin van een van de huizen' / 'in the front garden of one of the residences' on Brantsenpark. Hard rule 10 excludes front gardens and private houses' grounds regardless of fame, age or any interpretive signage the owner may have placed; it does not bend for visibility from the street alone. monumentaltrees.com and waymarking.com both 403'd automated fetches (Cloudflare challenge) and could not be checked directly to confirm or overturn this reading within the two-attempt budget. Reportedly the oldest yew (taxus/venijnboom) in the Netherlands, ~300-400 years old, planted 1600-1700 per bomenbieb, on the grounds of the historic Landgoed Rhederoord estate (Brantsen family, park laid out 1743 by Jacob Marot). If a future pass can establish from OSM tags, a municipal source, or a direct (non-Cloudflare) fetch that the tree stands on a public verge or is reachable without entering private grounds, this should be reopened; until then it stays blocked rather than shipped on a guess."
+    }
+  ]
+}

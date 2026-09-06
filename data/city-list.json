@@ -77,7 +77,7 @@
    "slug": "brussels",
    "status": "published",
    "demand_views_90d": 176863,
-   "trees": 30
+   "trees": 31
   },
   {
    "city": "Vienna",
@@ -338,7 +338,7 @@
    "slug": "tokyo",
    "status": "published",
    "demand_views_90d": 394702,
-   "trees": 16
+   "trees": 17
   },
   {
    "city": "Seoul",
@@ -1333,7 +1333,7 @@
    "slug": "beijing",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 6
+   "trees": 7
   },
   {
    "city": "Deventer",
@@ -1854,6 +1854,41 @@
    "slug": "waipoua-forest",
    "status": "published",
    "trees": 2
+  },
+  {
+   "city": "Aachen",
+   "country": "Germany",
+   "slug": "aachen",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Coppenbrügge",
+   "country": "Germany",
+   "slug": "coppenbrugge",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Erdmannrode",
+   "country": "Germany",
+   "slug": "erdmannrode",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Galenbeck",
+   "country": "Germany",
+   "slug": "galenbeck",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Schlagsdorf",
+   "country": "Germany",
+   "slug": "schlagsdorf",
+   "status": "published",
+   "trees": 1
   }
  ]
 }

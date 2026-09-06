@@ -5543,6 +5543,15 @@
     "wasted": 0,
     "brief_wrong": false,
     "note": "Wrote all 4 stories directly in the main session rather than dispatching a write-stories agent, same pattern as Amt Neuhaus/Omishima/Rudy this week (small sunk-cost batches). Built 3 new single-tree places (Canberra/Australia, Gumeli/Turkey, San Quirico d'Orcia/Italy) and merged 1 into an existing city (Beijing, bjs_007, now 7 trees)."
+   },
+   {
+    "target": "_famous-germany batch (Aachen, Coppenbruegge, Erdmannrode, Galenbeck, Schlagsdorf)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 5,
+    "note": "Continuation of an earlier attempt that stopped at 11 min with 109 unspent. Finished standing _famous-germany/bomenbieb verify claims already sitting on disk as leads: 5 single-tree-destination candidates the verify pass had already judged as clearing the 2026-08-31 exception (Forster Linde/Aachen, Peter-Linde/Coppenbruegge, Gerichtslinde/Erdmannrode, Galenbecker Tanzlinde, Gerichtslinde/Schlagsdorf), each written up as a new single-tree place and published. Found and fetched Wikimedia Commons photos directly (viewed pixels before approving): 4 of 5 got an approved photo, Schlagsdorf stays an honest gap (both candidates were a grave-marker close-up and an information sign, not the tree). Zehdenick's Gerichtslinde was left as a lead per the earlier pass's own weaker verdict (curation_status flagged, hedged judicial history) despite leads.py flagging it READY, since the READY flag only checks field completeness, not the fame test. Fixed an id collision (erd_001 already used by Nantes; Erdmannrode published as edm_001 instead). Session work, tokens not logged by an agent report; also dispatched two photo-judge agents to finish the standing amsterdam/lisbon photo claims from downloaded photo-pass/ candidates.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

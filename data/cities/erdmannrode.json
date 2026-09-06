@@ -1,0 +1,66 @@
+{
+  "city": "Erdmannrode",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Until around 1900 a band played from inside this tree. The Gerichtslinde of Erdmannrode, a summer linden with a girth of 8.65 metres, once carried a musicians' platform built into its own branches. It stands on an octagonal meadow walled in sandstone beside the village church, one of the region's trained court lindens, a folk tradition that shaped the tree's stepped, deliberately pruned form over centuries. Free, open village ground, no gate.",
+  "meta_description": "The Gerichtslinde of Erdmannrode is an 8.65m-girth court linden that once carried a musicians' platform. Free, open village ground, roughly 500 years old.",
+  "question_meta": "Erdmannrode's oldest tree is the Gerichtslinde, a court linden roughly 500 years old with a girth of 8.65 metres.",
+  "question_answer": "The oldest tree in Erdmannrode is the Gerichtslinde, a large-leaved lime (Tilia platyphyllos) estimated at roughly 500 years old, with a girth of 8.65 metres measured in 2024. It stands on an octagonal sandstone-walled meadow beside the village church, part of the Erdmannrode district of Schenklengsfeld in Hessen. It is free to visit, on open village ground with no gate or ticket.",
+  "question_context": "The girth figure, 8.65 metres at 30 centimetres height, comes from a single baumkunde.de field measurement dated 1 February 2024, so it rests on one source rather than two; a second, de.wikipedia's Liste der Naturdenkmale in Schenklengsfeld, independently confirms the tree's location, species and official Naturdenkmal status with matching coordinates, but carries no size figures of its own. The 500-year age estimate is likewise baumkunde's alone and is flagged here accordingly. The tree is documented as an old Gerichtslinde, a court linden under which village justice was once administered, and is counted among the region's geleitete Linden, court lindens trained over generations of pruning into a distinctive stepped shape, the same folk tradition behind the Schwalm-Eder-Linden cluster 33 kilometres away, close enough to share a tradition but too far to share a walk. Until around 1900 the tree reportedly carried a musicians' platform built into its branches, since dismantled. Its trunk has split into two stems propped apart on wooden supports, the ordinary way an old hollow linden settles once its heartwood is gone, and new shoots and healed-over wounds mark a tree still actively growing.",
+  "hero_tree_id": "edm_001",
+  "oldest_tree_id": "edm_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Erdmannrode?",
+      "a": "The Gerichtslinde, a large-leaved lime estimated at roughly 500 years old, with a girth of 8.65 metres."
+    },
+    {
+      "q": "What is a Gerichtslinde?",
+      "a": "A court linden, the tree under which a village once held its open-air justice. Erdmannrode's is officially listed as a protected natural monument on that basis."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open village ground beside the church, no gate or ticket needed."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is in the village of Erdmannrode, part of Schenklengsfeld in the Hersfeld-Rotenburg district of Hessen, reached by road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "edm_001",
+      "name": "The Gerichtslinde of Erdmannrode",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "girth_cm": 865,
+      "height_m": 20,
+      "location": {
+        "address": "An der Steingasse, near the church, Erdmannrode, 36269 Schenklengsfeld, Hessen, Germany",
+        "latitude": 50.81187,
+        "longitude": 9.78673,
+        "neighbourhood": "Erdmannrode (district of Schenklengsfeld)"
+      },
+      "story": "Until around 1900 a band played from inside this tree. The Gerichtslinde of Erdmannrode, a summer linden with a girth of 8.65 metres, once carried a musicians' platform built into its own branches, a piece of village infrastructure since dismantled. It stands on an octagonal meadow walled in sandstone beside the village church, one of the region's geleitete Linden, trained court lindens shaped by generations of pruning into a distinctive stepped form, the same folk tradition behind the Schwalm-Eder-Linden cluster 33 kilometres away.\n\nIts name marks what it was for. A Gerichtslinde is a court linden, the tree under which a village held its open-air justice, and Erdmannrode's is officially listed as a protected natural monument on that basis. At around 500 years old and 20 metres tall, its trunk has split into two stems propped apart on wooden supports, the ordinary way an old hollow linden settles once its heartwood is gone, and new shoots and healed-over wounds mark a tree still actively growing rather than merely surviving.\n\nIt stands on open village ground, no gate, no ticket, in a hamlet that otherwise has little reason to appear on a map.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/2036-dorflinde_in_erdmannrode/",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Schenklengsfeld"
+      ],
+      "access": "Free. Stands on an octagonal sandstone-walled meadow beside the church, open village ground.",
+      "transport": "In the village of Erdmannrode, part of Schenklengsfeld, Hersfeld-Rotenburg district, Hessen; reached by road.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/2017-01-16_Gerichtslinde_Erdmannrode_%28Hessen%29_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Yvonne Bentele, via Wikimedia Commons, CC BY-SA 4.0",
+        "status": "approved",
+        "width": 3548,
+        "height": 3024
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "Single-tree-destination candidate (2026-08-31 exception): a summer linden roughly 500 years old with a huge girth of 8.65m, vital with age-appropriate damage, new shoots and callus growth. Officially a designated Naturdenkmal, confirmed by its own entry in de.wikipedia's Liste der Naturdenkmale in Schenklengsfeld (coordinates near-exact match to baumkunde's own). Only baumkunde carries the size figures, so age and girth rest on one measurement, flagged accordingly. Previously noted in _famous-germany.json as 'too far (33.5km) to join the Schwalm-Eder-Linden cluster'; verified as its own standalone single-tree destination instead. Photo: File:2017-01-16 Gerichtslinde Erdmannrode (Hessen) 01.jpg, viewed directly, full tree visible with the octagonal walled meadow and half-timbered house, winter/bare (all three candidate photos are winter shots, no in-leaf option found); meets the Cadiz standard as an honest bare-season record."
+    }
+  ]
+}
