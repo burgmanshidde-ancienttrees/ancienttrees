@@ -1,0 +1,62 @@
+{
+  "city": "Canberra",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Canberra maps one tree, and it earns the page alone. The Lone Pine at the Australian War Memorial grew from a cone a soldier carried home from Gallipoli in 1915, after the battle fought on the ridge named for its own solitary pine had already killed the original. Planted in 1934, it is the most visited of every Gallipoli-pine descendant planted across Australia and New Zealand, and the centrepiece of the country's ANZAC Day ceremony every year since.",
+  "meta_description": "Canberra's Lone Pine at the Australian War Memorial, grown from a Gallipoli cone in 1934: its story, exact location, and how to find it.",
+  "question_answer": "Canberra's Lone Pine, on the grounds of the Australian War Memorial, is a 92 year old Aleppo Pine grown from a cone Sergeant Benjamin Smith carried home from the 1915 Gallipoli campaign. Prince Henry, Duke of Gloucester, planted it on 24 October 1934, and it remains the centre of the national ANZAC Day ceremony.",
+  "question_meta": "Canberra's Lone Pine, grown from a 1915 Gallipoli cone and planted in 1934, is the city's one mapped tree and the heart of ANZAC Day.",
+  "question_context": "The name comes from the battle, not the tree standing today. Lone Pine Ridge at Gallipoli took its name from a single Aleppo pine that stood there before August 1915, when Australian and New Zealand forces fought one of the campaign's bloodiest actions to take it; the original tree did not survive the battle. Sergeant Benjamin Smith picked up cones from the wreckage and brought them home, and seedlings grown from them were planted at memorial sites around Australia and New Zealand through the 1930s. Canberra's, planted in 1934 on the grounds of the new Australian War Memorial, became the most visited and most commemorated of them all. It has supplied cuttings for further plantings, including one propagated directly from it and planted by the Duke and Duchess of Cambridge during the 2014 ANZAC Day National Ceremony, a direct graft-line back to Gallipoli that most of its sibling trees elsewhere cannot claim. It lost a large limb in a storm in December 2008 and kept growing. It is free to visit on the Memorial's public grounds, reachable on foot from central Canberra.",
+  "hero_tree_id": "can_001",
+  "oldest_tree_id": "can_001",
+  "faq": [
+    {
+      "q": "Is this the original Lone Pine from Gallipoli?",
+      "a": "No. The original tree stood on Lone Pine Ridge at Gallipoli and did not survive the 1915 battle fought for it. This tree was grown from a cone a soldier carried home and planted in Canberra in 1934."
+    },
+    {
+      "q": "Why is it significant on ANZAC Day?",
+      "a": "It is the most visited of all the Gallipoli-pine descendants and stands at the centre of the Australian War Memorial's ANZAC Day ceremony every year, including a 2014 planting by the Duke and Duchess of Cambridge of a cutting taken directly from it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the public grounds of the Australian War Memorial, open daily, reachable on foot from central Canberra."
+    },
+    {
+      "q": "Why does Canberra map only one tree?",
+      "a": "This site publishes a place below the usual four tree floor only when a single tree is itself the destination. A nationally commemorated war memorial planting that people specifically travel to see clears that bar on its own."
+    }
+  ],
+  "trees": [
+    {
+      "id": "can_001",
+      "name": "The Lone Pine, Australian War Memorial",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "roughly 90 years",
+      "age_min": 88,
+      "age_max": 92,
+      "girth_cm": null,
+      "location": {
+        "address": "Grounds of the Australian War Memorial, Treloar Crescent, Campbell, Canberra, ACT, Australia",
+        "latitude": -35.2804,
+        "longitude": 149.1466,
+        "neighbourhood": "Australian War Memorial grounds, Campbell"
+      },
+      "story": "The most famous pine in Australia was born from a soldier's pocket. In 1915 at Gallipoli, the ridge above a lone Aleppo pine gave its name to one of the bloodiest battles the Anzac forces fought, and the original tree did not survive it. Sergeant Benjamin Smith picked up two cones from the wreckage and carried them home. Nineteen years later, on 24 October 1934, Prince Henry, Duke of Gloucester, planted a seedling grown from one of them on the grounds of the new Australian War Memorial in Canberra.\n\nThat seedling is this tree, and it has since become the most visited of every Lone Pine descendant planted around Australia and New Zealand from the same handful of cones. Every ANZAC Day it stands at the centre of the national ceremony; in 2014 the Duke and Duchess of Cambridge planted a cutting propagated directly from it during that same service, an unbroken graft back to Gallipoli that most of the country's other Lone Pines cannot claim. It lost a large limb in a storm in December 2008 and kept growing.\n\nNinety-two years old this year, and still doing the one job asked of it: standing where people can find it every year on the day that matters.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Lone_Pine_(tree)",
+        "https://www.awm.gov.au/articles/encyclopedia/lone"
+      ],
+      "access": "Free, on the public grounds of the Australian War Memorial, open daily",
+      "transport": "Australian War Memorial, Canberra; on the ANZAC Parade axis, reachable on foot from the city centre or by local bus",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

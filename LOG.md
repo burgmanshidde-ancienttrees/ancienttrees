@@ -1,6 +1,73 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 2, same window) - Famous-tree demand batch: 3 new single-tree places, +1 Beijing; caught a fake tree and a dead one before they shipped
+
+With the standing claim finished and pushed, rung 4 (0c): `famous_demand.py
+--top 20` ranks open `_famous-*` leads by cross-language Wikipedia demand
+rather than fame-by-association, and the top of it had never been touched.
+Picked 6 candidates spanning 5 countries, each needing real judgement
+rather than a rubber stamp; claimed all 5 leads files, pushed the claims,
+then dispatched one verify pass.
+
+**Shipped, 3 new single-tree places plus 1 join:**
+
+- **Canberra, Australia (can_001, The Lone Pine, Australian War
+  Memorial).** The lead's coordinate looked wrong at a glance (pinned in
+  Australia under a Turkish country tag) and was not: Wikipedia's "Lone
+  Pine (tree)" covers the whole family of Gallipoli-seed descendants, and
+  this one, planted 1934 from a cone a soldier carried home, is the
+  best-known of all of them and the centre of Australia's ANZAC Day
+  ceremony every year.
+- **Gumeli, Turkey (gum_001, The Gumeli Yew).** A 2016 study's claim of
+  4,112 years, repeated everywhere as one of the world's five oldest
+  trees, sits against a 2017 Istanbul University dendrochronology
+  re-sampling of the same trunk at 1,950-2,000 years, with a 2018 paper
+  directly challenging the popular figure. Shipped with both numbers
+  stated, neither picked as fact. Genuinely remote (25km drive plus an
+  800m climb on foot); that belongs in the story, not just the access
+  field.
+- **San Quirico d'Orcia, Italy (sqo_001, The Cypresses of San Quirico
+  d'Orcia).** An ensemble-test pass: one of the most photographed roadside
+  sights in Tuscany, official Italian monumental-tree register id
+  01/I135/SI/09, age honestly undocumented since no source gives one.
+- **Beijing +1 (bjs_007, The Guilty Scholar Tree, now 7 trees).** Marks
+  where the last Ming emperor hanged himself in 1644, but the standing
+  tree is the SITE'S THIRD tree: the original was felled in the Cultural
+  Revolution, replaced 1981, replaced again 1996 with an already-150-year
+  tree moved from elsewhere in Beijing. Written per the Elm of
+  Saint-Gervais pattern, no lineage claimed. Updated Beijing's intro,
+  question_context and two FAQ entries that still said "six".
+
+**Caught before shipping, which is the point of verifying rather than
+rubber-stamping a demand list:**
+
+- **Sprookjesboom (Efteling, Netherlands) is not a tree.** It is a wholly
+  artificial animatronic structure, an 8-tonne steel frame under roughly
+  50,000 fake leaves, confirmed via the park's own Eftepedia; a real
+  tree's bark was used only as a texture mould. Blocked outright under the
+  never-fabricate rule; a demand-ranked list can surface a novelty
+  attraction with a Wikipedia article exactly as readily as a real tree,
+  which is why this rung still needs a verify pass and not just a lookup.
+- **Cedre Gouraud (Morocco) has been dead since 2003**, standing only as a
+  bare skeleton since roughly 2006, confirmed by two independent sources.
+  Blocked; noted for a future pass that Azrou's wider cedar forest may
+  hold a genuine living substitute, unresearched this pass.
+- **Arbol de la Noche Triste (Mexico), resolved without a pass at all**:
+  it is the same historical site as our own mex_007 (Ahuehuete de
+  Tacuba), whose own story already explains that the real 1520 tree is a
+  documented ruin and the living neighbour is the one we publish.
+
+Wrote all 4 shipped stories directly in the main session (no
+write-stories agent) per the same small-batch pattern as Amt
+Neuhaus/Omishima/Rudy this week. Logged both passes in
+`data/agent-costs.json`. `preflight.py` caught one real omission of mine
+(hga_003 in Higashiomi: access said paid entry but `paid_entry` was unset)
+and a pile of pre-existing, unrelated NOTEs (paid-entry ratios, stale
+country meta-description counts, mismatched JSON indentation on ~20 older
+city files) that are not new and were left alone. Build clean (4627
+pages), qa.py clean (6942 pages). Released all 5 claims.
+
 ## 2026-09-06 (continuation, of a window an earlier attempt stopped after 44 min with 76 unspent) - Brussels' Grand Sablon Ailanthus committed; two Japan verify leads written and merged
 
 Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`

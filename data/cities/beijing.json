@@ -2,11 +2,11 @@
   "city": "Beijing",
   "country": "China",
   "status": "needs_curation",
-  "intro": "Beijing's oldest trees grew up with its temples and imperial rites: cypresses planted for an altar, a scholar tree Qianlong liked well enough to build a pavilion just to look at, ginkgos that queue photographers every November. The city has graded its ancient trees by class since the imperial era and named ten ancient tree kings in 2018; five of that shortlist make this list, spanning roughly six hundred to twelve hundred years. Most stand behind a park or temple gate rather than a house door, and one, at Bolin Temple, costs nothing at all.",
+  "intro": "Beijing's oldest trees grew up with its temples and imperial rites: cypresses planted for an altar, a scholar tree Qianlong liked well enough to build a pavilion just to look at, ginkgos that queue photographers every November, and a scholar tree marking the spot where the last Ming emperor died. The city has graded its ancient trees by class since the imperial era and named ten ancient tree kings in 2018; five of that shortlist make this list. Most stand behind a park or temple gate rather than a house door, and one, at Bolin Temple, costs nothing at all.",
   "meta_description": "Beijing's oldest trees: a Tang-dynasty scholar tree an emperor built a pavilion to watch, and twin ginkgos crowds queue for every November.",
   "question_answer": "Beijing's oldest tree, by tradition, is the Tang Scholar Tree in Beihai Park, given an age of roughly 1,200 years. The figure comes from a long-repeated register entry rather than a fresh count, and the tree stands beside the Huafangzhai pavilion in the park's northwest, a spot the Qianlong Emperor liked well enough to build a pavilion specifically for looking at it.",
-  "question_meta": "Beijing's oldest tree is the Tang Scholar Tree in Beihai Park, traditionally dated to about 1,200 years. Full list of 6.",
-  "question_context": "Six trees make this list, all inside temples and imperial parks rather than free-standing on a street. Beihai Park's Tang Scholar Tree, traditionally dated to around 1,200 years, is the oldest by the tradition each of these trees carries, and it earned an emperor's own pavilion, built by Qianlong specifically so he could sit and look at it. The Seven Liao Cypresses at Zhongshan Park run it close, said to predate the Ming altar built around them in 1420 by several centuries, which would put them past a thousand years, though that is a temple-succession story rather than a dated finding. Most of these figures work the same way: a register entry, repeated for decades, standing in for a measurement nobody has actually taken, since none of Beijing's own listings carry a real dating method. What is firmer is the paperwork: the city graded these trees by class and named ten of them ancient tree kings in 2018, and five of the six here made that shortlist. Entry is free at Bolin Temple; the rest sit behind a park or garden ticket, usually a few yuan.",
+  "question_meta": "Beijing's oldest tree is the Tang Scholar Tree in Beihai Park, traditionally dated to about 1,200 years. Full list of 7.",
+  "question_context": "Seven trees make this list, all inside temples and imperial parks rather than free-standing on a street. Beihai Park's Tang Scholar Tree, traditionally dated to around 1,200 years, is the oldest by tradition, and it earned an emperor's own pavilion, built by Qianlong specifically so he could sit and look at it. The Seven Liao Cypresses at Zhongshan Park run it close, said to predate the Ming altar built around them in 1420 by several centuries, though that is a temple-succession story rather than a dated finding. Most of these figures work the same way: a register entry, repeated for decades, standing in for a measurement nobody has taken, since none of Beijing's own listings carry a real dating method. The city graded these trees by class and named ten ancient tree kings in 2018, and five of the seven here made that shortlist; the seventh, in Jingshan Park, marks the spot where the last Ming emperor died rather than claiming an age of its own, since it is itself a 1996 replacement. Entry is free at Bolin Temple; the rest sit behind a park or garden ticket, usually a few yuan.",
   "faq": [
     {
       "q": "What is the oldest tree in Beijing?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Do I need to pay to see Beijing's ancient trees?",
-      "a": "Usually, yes. Five of the six trees on this list stand inside parks or temple grounds that charge entry, from a nominal 2 or 3 yuan at Ditan and Zhongshan to a proper ticket at the Temple of Heaven. The Butterfly Scholar Tree at Bolin Temple is free."
+      "a": "Usually, yes. Six of the seven trees on this list stand inside parks or temple grounds that charge entry, from a nominal 2 or 3 yuan at Ditan and Zhongshan to a proper ticket at the Temple of Heaven. The Butterfly Scholar Tree at Bolin Temple is free."
     },
     {
       "q": "Why are so many of Beijing's oldest trees inside temples and parks?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "What is an \"ancient tree king\"?",
-      "a": "In 2018 Beijing's municipal government named ten trees the city's most beautiful ancient tree kings, a shortlist drawn from its wider register of Grade 1 ancient trees (over 300 years old). Five of the six trees here made that shortlist; the Butterfly Scholar Tree at Bolin Temple did not."
+      "a": "In 2018 Beijing's municipal government named ten trees the city's most beautiful ancient tree kings, a shortlist drawn from its wider register of Grade 1 ancient trees (over 300 years old). Five of the seven trees here made that shortlist; the Butterfly Scholar Tree at Bolin Temple and the Guilty Scholar Tree at Jingshan Park did not."
     }
   ],
   "trees": [
@@ -200,6 +200,37 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "paid_entry": true
+    },
+    {
+      "id": "bjs_007",
+      "name": "The Guilty Scholar Tree",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 170,
+      "age_max": 190,
+      "girth_cm": null,
+      "location": {
+        "address": "East foot of Jingshan (Coal Hill), Jingshan Park, Xicheng District, Beijing, China, marked by the 'Site Where the Chongzhen Emperor Died for the Country' stele",
+        "latitude": 39.923664,
+        "longitude": 116.392731,
+        "neighbourhood": "Jingshan Park"
+      },
+      "story": "Three trees have stood on this exact spot, and none of them is the one everybody comes to see. On 25 April 1644, as the rebel general Li Zicheng's army broke into Beijing, the last Ming emperor, Chongzhen, climbed Jingshan hill and hanged himself from a scholar tree at its eastern foot rather than be captured. Qing soldiers are said to have punished the tree afterward, binding it in an iron chain and cangue, the same restraint used on a condemned criminal, giving rise to a couplet still quoted today: the sovereign was guilty and nobody asked, the old scholar tree, guiltless, wears the lock.\n\nThat original tree is long gone. It was felled in the early 1970s during the Cultural Revolution as one of the Four Olds, replaced with a sapling in 1981, then replaced again in 1996 with a mature Japanese pagoda tree, already about 150 years old, transplanted whole from a courtyard on Beishuncheng Street across the city. The tree standing on the spot today, marked by a stele reading roughly Site Where the Chongzhen Emperor Died for the Country, is that third tree: genuinely old in its own right, roughly 180 years now, but with no physical continuity to 1644. The legend belongs to the site and the story it tells, not to any single trunk.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Zuihuai",
+        "https://www.sohu.com/a/301843594_120009217",
+        "https://www.sohu.com/a/370273793_557768"
+      ],
+      "access": "Free with Jingshan Park admission (a low-cost municipal park ticket), open daily, a marked and signposted stop on a standard park visit",
+      "transport": "Jingshan Park, immediately north of the Forbidden City, Beijing; Line 8 subway to Shichahai station or a short walk/bus from Tiananmen area",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

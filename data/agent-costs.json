@@ -5523,6 +5523,26 @@
     "wasted": 0,
     "brief_wrong": false,
     "note": "2 stories (tok_017 ginkgo joining Tokyo, hga_003 linden joining Higashiomi); 1 best_time set, 1 correctly withheld; ~12k/tree, on the write-pass target. Merged into data/cities, page copy (Higashiomi's oldest-tree claim, Tokyo's tree-count sentence) updated to match."
+   },
+   {
+    "date": "2026-09-06",
+    "target": "famousdemand-batch1 (turkey/netherlands/italy/morocco/china)",
+    "kind": "verify",
+    "tokens": 178307,
+    "trees": 4,
+    "wasted": 0,
+    "brief_wrong": false,
+    "note": "6 candidates from famous_demand.py's top-20 by cross-language demand. 4 shipped (Lone Pine/Canberra, Gumeli Yew, Cypresses of San Quirico d'Orcia, Guilty Scholar Tree/Beijing), 2 correctly blocked: Sprookjesboom is a wholly artificial animatronic structure at Efteling (not a living tree, caught before it could ship), Cedre Gouraud confirmed dead since 2003. Also resolved without a pass: Arbol de la Noche Triste (Mexico) is the same site as our own mex_007, already correctly not published as a separate entry since the original is a documented ruin."
+   },
+   {
+    "date": "2026-09-06",
+    "target": "famousdemand-batch1 write (session-written, not dispatched)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 4,
+    "wasted": 0,
+    "brief_wrong": false,
+    "note": "Wrote all 4 stories directly in the main session rather than dispatching a write-stories agent, same pattern as Amt Neuhaus/Omishima/Rudy this week (small sunk-cost batches). Built 3 new single-tree places (Canberra/Australia, Gumeli/Turkey, San Quirico d'Orcia/Italy) and merged 1 into an existing city (Beijing, bjs_007, now 7 trees)."
    }
   ]
  }

@@ -1,0 +1,64 @@
+{
+  "city": "Gumeli",
+  "country": "Turkey",
+  "status": "needs_curation",
+  "intro": "Gumeli maps one tree, a European yew that a 2016 dendrochronology study put at 4,112 years old, among the oldest living things ever measured. A separate university lab challenged that figure the following year and landed two thousand years lower, and the dispute has never been settled. Either number makes it ancient, and reaching it, deep in a protected forest above the village, is most of the point of the visit.",
+  "meta_description": "The Gumeli Yew in Turkey: claimed at 4,112 years old, disputed at closer to 2,000, and reachable only by a forest hike above Alapli.",
+  "question_answer": "Gumeli's mapped tree is the Gumeli Yew, a European yew whose age is disputed between two credentialed studies: a 2016 dendrochronology survey claimed 4,112 years, one of the world's five oldest trees, while a 2017 Istanbul University lab estimated only 1,950 to 2,000 years from its own samples of the same trunk.",
+  "question_meta": "Gumeli's one mapped tree, a yew claimed at 4,112 years old by one study and disputed at roughly 2,000 by another, deep in a protected Turkish forest.",
+  "question_context": "The 4,112 year figure came from a 2016 study by researchers at Karadeniz Technical University's forestry faculty, widely repeated by Turkish state media as proof of one of the five oldest living trees on Earth, old enough to date to the Bronze Age. It was not the last word: in 2017 Istanbul University's own dendrochronology laboratory took independent core samples from the same tree and estimated its age at only 1,950 to 2,000 years, and a 2018 academic paper directly challenged the original figure in its own title. Yew heartwood rots and hollows with age, the standard reason ring-count ages for very old yews are disputed worldwide, so both figures are stated here rather than one being repeated as settled fact. The tree stands inside the Gumeli Natural Monument protected area, designated in 2016 and separately registered as a memorial tree in 2018. There is no road to it: reaching it means a roughly 25km drive from Alapli to Gumeli village followed by a forest track climbing about 800 vertical metres, and most visitors hire a local guide simply to find the tree.",
+  "hero_tree_id": "gum_001",
+  "oldest_tree_id": "gum_001",
+  "faq": [
+    {
+      "q": "How old is the Gumeli Yew, really?",
+      "a": "Disputed. A 2016 study claimed 4,112 years; a 2017 university dendrochronology lab estimated 1,950 to 2,000 years from its own samples of the same tree. Both figures are stated because neither has been settled."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "There is no public transport and no road to the tree itself. From Alapli it is roughly a 25km drive to Gumeli village, then a forest track climbing about 800 vertical metres on foot. A local guide is recommended, not required."
+    },
+    {
+      "q": "Is there an entry fee?",
+      "a": "No. It stands in a protected natural monument area with no ticket or gate, but it is genuinely remote."
+    },
+    {
+      "q": "Why does this place map only one tree?",
+      "a": "This site publishes a place below the usual four tree floor only when a single tree is itself the destination. A tree claimed among the world's oldest, in a place people specifically hike to see it, clears that bar."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gum_001",
+      "name": "The Gumeli Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "age disputed: roughly 2,000 to over 4,000 years claimed",
+      "age_min": 1950,
+      "age_max": 4115,
+      "girth_cm": null,
+      "location": {
+        "address": "Gumeli Natural Monument protected forest area, near Gumeli village, Alapli district, Zonguldak Province, Turkey",
+        "latitude": 41.03666667,
+        "longitude": 31.63388889,
+        "neighbourhood": "Gumeli, Alapli, Zonguldak"
+      },
+      "story": "A Turkish forestry team put a number on this yew in 2016 that made headlines everywhere: 4,112 years old, they said, one of the five oldest living things on Earth and the only organism in Anatolia old enough to have watched the Bronze Age happen. The tree became a minor national landmark on the strength of that claim, protected as a natural monument in 2016 and registered as a memorial tree two years later.\n\nThe number has not held up cleanly. In 2017 Istanbul University's own dendrochronology lab took its own core samples from the same trunk and came back with a far more conservative estimate, somewhere between 1,950 and 2,000 years. A 2018 academic paper went further and published a direct challenge to the original figure, question mark in the title. Yew heartwood rots and hollows as it ages, which is exactly why ring counts on very old yews are notoriously unreliable worldwide, and why two credentialed teams looking at the same tree can land two thousand years apart.\n\nEither figure makes it genuinely ancient. Reaching it is part of the story: there is no road, only a forest track that climbs some 800 vertical metres from the village of Gumeli, and most visitors hire a local guide simply to find it.",
+      "verified_sources": [
+        "https://tr.wikipedia.org/wiki/G%C3%BCmeli_Tabiat_An%C4%B1t%C4%B1",
+        "https://en.wikipedia.org/wiki/G%C3%BCmeli_Porsu%C4%9Fu",
+        "https://www.aa.com.tr/en/turkey/worlds-5th-oldest-yew-tree-discovered-in-nturkey/596600",
+        "https://www.hurriyetdailynews.com/oldest-yew-tree-found-in-turkeys-north-100428"
+      ],
+      "access": "Free, inside the protected Gumeli Natural Monument forest area near Alapli. Genuinely remote: reached by forest road roughly 25 km inland from Alapli then a climb of about 800 vertical metres on a forest track (not the summer-pasture/yayla road); local sources recommend hiring a village guide to find the tree but this is a convenience, not a requirement, and no permission or ticket is needed. No public transport; a car is required.",
+      "transport": "No public transport; drive from Alapli (Zonguldak province) roughly 25 km to Gumeli village, then a forest-road/track approach on foot",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
