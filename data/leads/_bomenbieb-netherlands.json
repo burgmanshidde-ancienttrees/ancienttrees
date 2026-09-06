@@ -17,8 +17,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.0,
       "nearest_ours": "hag_012 De Koekampkastanje (The Hague)",
-      "status": "possibly_mapped",
-      "reason": "Within 0 m of hag_012. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Identical name/location/species (witte paardenkastanje) as already-published hag_012 De Koekampkastanje. No new tree."
     },
     {
       "name": "mammoetboom ledeboerpark",
@@ -32,8 +32,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.0,
       "nearest_ours": "ens_001 The Wellingtonia of the Ledeboerpark (Enschede)",
-      "status": "possibly_mapped",
-      "reason": "Within 0 m of ens_001. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree as already-published ens_001 The Wellingtonia of the Ledeboerpark (mammoetboom = giant sequoia/Wellingtonia), same location. No new tree."
     },
     {
       "name": "hollandse iep alkmaar",
@@ -62,8 +62,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.0,
       "nearest_ours": "lei_003 The Weeping Beech of the Hortus (Leiden)",
-      "status": "possibly_mapped",
-      "reason": "Within 0 m of lei_003. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree as already-published lei_003 The Weeping Beech of the Hortus (treurbeuk = weeping beech), same address (Rapenburg 73). No new tree."
     },
     {
       "name": "dikste plataan zuid holland",
@@ -77,8 +77,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "hag_023 The Plane of Park Hoekenburg (The Hague)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of hag_023. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published hag_023 The Plane of Park Hoekenburg: matching coordinates (52.057882,4.348833 vs 52.057837,4.348874) and address (Park Hoekenburg / Achter Effathagebouw, Voorburg vs Arentsburglaan 53, Voorburg). No new tree.",
       "species": "Plane (Platanus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -94,8 +94,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "ams_002 The Leidsebosje Planes (Amsterdam)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of ams_002. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree(s) as already-published ams_002 The Leidsebosje Planes, identical location name. No new tree."
     },
     {
       "name": "plataan dordrecht",
@@ -109,8 +109,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "dor_002 The Plane of the Arend Maartenshof (Dordrecht)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of dor_002. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published dor_002 The Plane of the Arend Maartenshof: matching coordinates (51.813407,4.671034 vs 51.81338,4.67086) close enough to be the same specimen, same species (London Plane). No new tree.",
       "species": "Plane (Platanus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -126,8 +126,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "hee_006 The Plane of Terworm (Heerlen)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of hee_006. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published hee_006 The Plane of Terworm: identical address (Overgang Eikendermolenweg/Koekoeksweg vs Terworm/Eikendermolenweg) and matching coordinates. No new tree.",
       "species": "Plane (Platanus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -143,8 +143,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "ams_010 The Rijksmuseum Wingnut (Amsterdam)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of ams_010. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree as already-published ams_010 The Rijksmuseum Wingnut, identical name/location. No new tree."
     },
     {
       "name": "oudemanhuis iep amsterdam",
@@ -158,8 +158,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "ams_021 The Oudemanhuispoort Elm (Amsterdam)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of ams_021. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published ams_021 The Oudemanhuispoort Elm, identical name/location. No new tree.",
       "species": "Elm (Ulmus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -192,8 +192,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "hag_004 The Postzegelboom (The Hague)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of hag_004. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree as already-published hag_004 The Postzegelboom, identical name. No new tree."
     },
     {
       "name": "bruine beuk groenesteeg",
@@ -207,8 +207,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "lei_006 The Groenesteeg Beech (Leiden)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of lei_006. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published lei_006 The Groenesteeg Beech (bruine beuk = copper beech), same cemetery, matching coordinates. No new tree.",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -224,8 +224,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "arn_001 De Poortwachters (Arnhem)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of arn_001. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree(s) as already-published arn_001 De Poortwachters, identical name (Gulden Bodem park entrance to Kasteel Zijpendaal), matching coordinates exactly. No new tree."
     },
     {
       "name": "kabouterboom beek",
@@ -239,8 +239,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "nij_009 The Kabouterboom (Nijmegen)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of nij_009. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree as already-published nij_009 The Kabouterboom, identical name and location (Ravenberg, Beek), matching coordinates. No new tree."
     },
     {
       "name": "olifantsiep amsterdam",
@@ -254,8 +254,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.01,
       "nearest_ours": "ams_006 The Olifantsiep (Amsterdam)",
-      "status": "possibly_mapped",
-      "reason": "Within 10 m of ams_006. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Same tree as already-published ams_006 The Olifantsiep, identical name. No new tree."
     },
     {
       "name": "uithof linde utrecht",
@@ -269,8 +269,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.02,
       "nearest_ours": "utr_001 The Uithof Linden (Utrecht)",
-      "status": "possibly_mapped",
-      "reason": "Within 20 m of utr_001. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published utr_001 The Uithof Linden, identical name/location. No new tree.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -286,8 +286,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.02,
       "nearest_ours": "hed_001 The Riesenlinde zu Heede (Giant Lime of Heede) (Heede)",
-      "status": "possibly_mapped",
-      "reason": "Within 20 m of hed_001. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published hed_001 The Riesenlinde zu Heede (Giant Lime of Heede, duizendjarige linde = thousand-year lime), matching coordinates almost exactly. No new tree.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -303,8 +303,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.05,
       "nearest_ours": "lei_001 The Tulip Tree of Boerhaave (Leiden)",
-      "status": "possibly_mapped",
-      "reason": "Within 50 m of lei_001. Proximity is not identity: check species and name before treating it as the same tree."
+      "status": "duplicate",
+      "reason": "Correctly not lei_001 (different species and address), but IS the already-published lei_004 The Golden Chain of the Hortus: same species (Laburnum anagyroides), same bomenbieb source, same debunked-1601/1720s-Boerhaave story, 46m from lei_004's recorded (approximate) pin. A prior pass in this same run staged it as a new tree (lei_019) in data/research/bomenbiebnetherlands-verified.json without checking it against lei_004; caught before merging. Its more precise coordinate and the Wayback-archived hortusleiden.nl source were used instead to upgrade lei_004's pin from approximate to confirmed and add the 1601-inventory detail to its story. No new tree."
     },
     {
       "name": "oudste ginkgo van nederland",
@@ -318,8 +318,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.07,
       "nearest_ours": "utr_002 The Oude Hortus Ginkgo (Utrecht)",
-      "status": "possibly_mapped",
-      "reason": "Within 70 m of utr_002. Proximity is not identity: check species and name before treating it as the same tree.",
+      "status": "duplicate",
+      "reason": "Same tree as already-published utr_002 The Oude Hortus Ginkgo: matching address (Lange Nieuwstraat 106) and species (Ginkgo biloba). No new tree.",
       "species": "Ginkgo (Ginkgo sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
