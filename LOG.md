@@ -1,6 +1,58 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 10, in progress) - A false start on famousuk, then three verify/translate/photo passes dispatched in parallel
+
+Started fresh at Step 0 (health clear, no reader submissions, no page
+gaps). `prepare.py` showed 3 unpublished famousuk trees and pointed
+first at that: passcheck's own `--pending` output undersold it as "3
+need a story, 2 near-duplicates, 3 stale", so I re-derived a full
+disposition of `data/research/famousuk-verified.json` by hand and
+committed it, adding entries to `data/leads/london.json`,
+`brighton.json` and two new files. Only afterward did reading LOG.md
+properly show continuation 9 (above) had already done this exact
+work hours earlier, recorded in `data/leads/_famous-united-kingdom.json`,
+and had simply forgotten to delete the stale research file. Reverted
+the duplicate leads-file entries, kept the file deletion (the one
+genuinely missing piece), and patched two dangling references to the
+deleted file in `_famous-united-kingdom.json`. Lesson for next time:
+read LOG.md's newest entries before trusting a lone research file's
+apparent freshness, `passcheck.py --pending` is not a substitute for
+that.
+
+With the shelf genuinely empty of ready-to-write work (`prepare.py`:
+0 ready leads, 750+ unsourced), dispatched three passes in parallel
+rather than one at a time, since none of them touch the same files:
+
+1. **Verify pass on `_famous-slovakia`** (56 unsourced Commons
+   "notable tree" leads, all with photos already attached), claimed
+   as `_famous-slovakia`. Refills the writable shelf per rule 1(0c).
+2. **Dutch translation overlay for Arnhem** (82 English impressions,
+   37 trees, the highest-impression untranslated Dutch page per
+   `langcheck.py --next`), claimed as `arnhem-nl-translation`. No new
+   research, pure Contract J overlay work, rule 1(0b).
+3. **Photo viewing pass on 8 photo-less cities** (groningen,
+   maastricht, eindhoven, brighton, hamburg, ghent, bratislava,
+   luxembourg-city) clearing the 5-tree floor: ran `photo_hunt.py
+   --recheck` (queue now 1877 trees swept, 1033 with a candidate),
+   then `photo_fetch.py` to download a ~50-image batch, then
+   dispatched a photo-judge agent against the Cadiz standard. This
+   runner can render Wikimedia images directly (2026-09-01 finding),
+   so this no longer waits for a session.
+
+Also checked REVIEW.md's 2 open WARNs: the single-tree-destination
+FAQ copy explaining our own publish rule (canberra/gumeli/san-quirico-
+d-orcia) was already fixed by an earlier continuation today, `qa.py`'s
+`BUSINESS_RULE_PHRASES` already guards it, and grep confirms no
+remaining instance. The app Contribute.swift anonymity-copy WARN is
+untouched: this session has no macOS/Xcode access to build and sweep
+the app before shipping a change to it, so it's left for a session
+that does.
+
+All three passes still running as this entry is written; will merge,
+build, commit and report actual counts once they land rather than
+guessing here.
+
 ## 2026-09-06 (continuation 9) - Finished the stalled UK claim: 3 new single-tree places, 3 duplicates caught, 1 held for Hidde; plus Zehdenick's Gerichtslinde
 
 Picked up after continuation 8 stopped at 50 minutes having shipped
