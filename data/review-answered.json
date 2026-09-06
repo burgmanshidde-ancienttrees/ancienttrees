@@ -46,8 +46,8 @@
       "at": "2026-09-04T13:55:20+00:00"
     },
     "2026-09-05": {
-      "note": "Data digest failure was a transient git push race (commit succeeded, push rejected as another commit landed first); today's DATA.md entry already exists from an earlier successful workflow_dispatch at 05:27 UTC. Could not manually redispatch (gh: HTTP 403, integration lacks workflow-dispatch permission); next scheduled cron run will self-correct. No code fix needed.",
-      "at": "2026-09-05T21:48:04+00:00"
+      "note": "Scheessel spelling WARN already fixed (verified clean, 0 occurrences of Scheeßel remain); Gerichtslinde fame-case WARN explicitly not a retirement call, left as a flag for a future Scheessel touch",
+      "at": "2026-09-06T05:00:03+00:00"
     }
   }
 }
