@@ -2,7 +2,37 @@
 
 <!-- archive-index -->
 
-## 2026-09-06 (continuation 5) - Borrowdale ships; two near-duplicates caught before shipping; Box Elder species page
+## 2026-09-06 (continuation 8) - Hiroshima +2, Sulechow +1, three new Polish single-tree places; the germany leads-file staleness bug caught again
+
+Hiroshima: hir_016 (Fukuoji Lantern Cedars, hillside temple, three
+survivors of five planted in 1391) and hir_017 (Chichisagari Ginkgo,
+Nukui Hachiman Shrine, ~1,200-1,600 years per its 1979 designation,
+now the city's oldest documented tree). Sulechow: sul_002 Sosna
+Rzepicha (Poland's current thickest pine under updated rules, no
+published age, 10.5km off-trail from sul_001). Three new single-tree
+places under the 2026-08-31 exception: Przybudki (Dab Dunin),
+Cieletniki (the Cieletniki Linden), Wisniowa (Dab Jozef). Full detail
+in LOG.md. 0 flagged as unverifiable, 0 photos found (none hunted,
+per BRIEF_RESEARCH.md's verify-only scope); all 4 new trees ship with
+`photo.status: missing`, an honest gap for a later viewing pass or a
+reader.
+
+**Worth fixing structurally, seen twice now: a leads file's `status`
+field does not get updated when a tree ships if the merge happens in
+a different session than the verify pass.** Checking `_famous-germany`
+for a possible verify batch this window, its top demand-ranked
+candidate (Tassilolinde, Wessobrunn, 306 views/mo) turned out to
+already be published as `wes_001`, weeks ago, with the leads file
+still reading `"status": "lead"`. This is the identical bug the
+2026-09-05 UK pass flagged after nearly re-shipping the Ankerwycke and
+Llangernyw Yews (LOG.md that day: "the underlying fix worth doing
+later is cross-checking a verify brief against the leads file's own
+status field rather than trusting it wasn't touched"). It has not
+been fixed since. Skipped Germany entirely this window rather than
+risk a duplicate; a future session should either patch every leads
+file against `data/cities` by coordinate once, or add that
+cross-check to `passcheck.py --brief` itself so it happens on every
+brief instead of by memory.
 
 Picked up where an earlier attempt in this window stopped after 74 minutes
 with 46 unspent. Rung 1 (submissions, sightings inbox) was clear. Rung 2:
