@@ -350,7 +350,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.16,
       "nearest_ours": "hag_012 De Koekampkastanje (The Hague)",
-      "status": "lead"
+      "status": "published",
+      "reason": "Verified and published as hag_032 The Koekamplinde (The Hague), 2026-09-06."
     },
     {
       "name": "couperusbeuk den haag",
@@ -364,7 +365,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.18,
       "nearest_ours": "hag_018 The Bald Cypress of Paleistuin (The Hague)",
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Stands in the private garden of a dwelling at Noordeinde 164, Den Haag (confirmed via monumentaltrees.com and denhaag.com); opened to the public only one day a year, for Open Monumentendag. Fails hard rule 10's 'is it not somebody's home' test, which does not bend for a scheduled annual opening. Never ships as an entry."
     },
     {
       "name": "duiveltjesiep utrecht",
@@ -453,7 +455,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.56,
       "nearest_ours": "hag_021 The Planes of Huijgenspark (The Hague)",
-      "status": "lead"
+      "status": "blocked",
+      "reason": "The Heilige Geesthofje is a working almshouse courtyard of dwellings (elderly residents still live around it); denhaag.com's own tourism page says the courtyard 'can only be visited during walking tours organised by the Buitenmuseum', and the hofje's own site notes the gate has been closed to casual entry since 1647. Fails the 'courtyards of dwellings stay out' clause of hard rule 10, which does not bend for a guided-tour exception. Never ships as an entry. Species and age otherwise verify fine (Dutch Wikipedia's Heilige Geesthofje article independently confirms a Juttepeer, gewone peer/Pyrus, planted 1638, possibly the oldest pear tree in the Netherlands, still fruiting; bomenbieb gives 1647), so if a future pass finds evidence of genuine walk-in public access this is otherwise ready to write."
     },
     {
       "name": "esdoorn steenenkamer",
