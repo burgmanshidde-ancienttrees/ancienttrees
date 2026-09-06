@@ -1,35 +1,35 @@
 {
- "place": "Zehdenick",
- "note": "2026-09-06 verify pass (famous-germany batch): Gerichtslinde Zehdenick verified. Thinner story than the other Gerichtslinde candidates researched the same pass (Schlagsdorf, Erdmannrode); delivered as a lead rather than a strong single-tree recommendation, for a future pass or writer to judge.",
- "leads": [
-  {
-   "id": "zeh_001",
-   "name": "The Gerichtslinde of Zehdenick",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name and sources, which do not settle cordata vs platyphyllos; ask the reader which species",
-   "age_estimate": "roughly 350 to 400 years",
-   "age_min": 300,
-   "age_max": 400,
-   "location": {
-    "address": "Friedrich-Ebert-Platz, near the Amtsgericht, 16792 Zehdenick, Brandenburg, Germany",
-    "latitude": 52.97734,
-    "longitude": 13.33607,
-    "neighbourhood": "Zehdenick town centre"
-   },
-   "verified_sources": [
-    "https://de.wikipedia.org/wiki/Gerichtslinde_Zehdenick",
-    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Zehdenick"
-   ],
-   "access": "Free. Stands in the town, just south of the Amtsgericht (district court) on Friedrich-Ebert-Platz, protected by a low wire-mesh fence around its hollow trunk.",
-   "transport": "Zehdenick town centre, Oberhavel district, Brandenburg; Zehdenick station is on the Berlin-Szczecin/Templin line.",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "verify_notes": "The oldest tree in Zehdenick, per its own dedicated German Wikipedia article, officially designated Naturdenkmal No. 228 (confirmed by de.wikipedia's separate Liste der Naturdenkmale in Zehdenick, same coordinates, Flur 20 Flurstueck 71/2). No girth or height figure found in either source. Age given only as a 350-400 year range with the article itself saying the exact age is unknown. The judicial-Gerichtslinde history is UNCERTAIN, in the source's own words: it is unclear whether the tree's name comes from the nearby Amtsgericht or whether the tree was itself once an actual court-assembly site. What is documented is that the tree already stood when the site held 18th-century military supply magazines (salt, grain, forage) for the Kuerassiere cavalry stationed in Zehdenick, and a commemorative stone reading 'Gerichtslinde' has been placed beside it. Trunk is largely hollow. This is a weaker single-tree-destination case than Schlagsdorf or Erdmannrode verified the same pass (no dramatic documented event, no girth, hedged judicial claim), but it does carry its own Wikipedia article and an official Naturdenkmal designation, which the brief's own guidance treats as usually sufficient in Germany's naming tradition. Left as a lead for a writer or a later pass to weigh rather than asserted here as a clear yes.",
-   "photo_candidates": [
-    "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Zehdenick.JPG",
-    "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG"
-   ]
-  }
- ],
- "blocked": []
+  "place": "Zehdenick",
+  "note": "2026-09-06 verify pass (famous-germany batch): Gerichtslinde Zehdenick verified. Thinner story than the other Gerichtslinde candidates researched the same pass (Schlagsdorf, Erdmannrode); delivered as a lead rather than a strong single-tree recommendation, for a future pass or writer to judge. Published 2026-09-06 as data/cities/zehdenick.json (id zeh_001); the single-tree-destination judgement call is not a reason to hold a verified tree back (CLAUDE.md, 'a judgement call about whether a tree is good enough never blocks publication').",
+  "leads": [
+    {
+      "id": "zeh_001",
+      "name": "The Gerichtslinde of Zehdenick",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name and sources, which do not settle cordata vs platyphyllos; ask the reader which species",
+      "age_estimate": "roughly 350 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "location": {
+        "address": "Friedrich-Ebert-Platz, near the Amtsgericht, 16792 Zehdenick, Brandenburg, Germany",
+        "latitude": 52.97734,
+        "longitude": 13.33607,
+        "neighbourhood": "Zehdenick town centre"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Gerichtslinde_Zehdenick",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Zehdenick"
+      ],
+      "access": "Free. Stands in the town, just south of the Amtsgericht (district court) on Friedrich-Ebert-Platz, protected by a low wire-mesh fence around its hollow trunk.",
+      "transport": "Zehdenick town centre, Oberhavel district, Brandenburg; Zehdenick station is on the Berlin-Szczecin/Templin line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "The oldest tree in Zehdenick, per its own dedicated German Wikipedia article, officially designated Naturdenkmal No. 228 (confirmed by de.wikipedia's separate Liste der Naturdenkmale in Zehdenick, same coordinates, Flur 20 Flurstueck 71/2). No girth or height figure found in either source. Age given only as a 350-400 year range with the article itself saying the exact age is unknown. The judicial-Gerichtslinde history is UNCERTAIN, in the source's own words: it is unclear whether the tree's name comes from the nearby Amtsgericht or whether the tree was itself once an actual court-assembly site. What is documented is that the tree already stood when the site held 18th-century military supply magazines (salt, grain, forage) for the Kuerassiere cavalry stationed in Zehdenick, and a commemorative stone reading 'Gerichtslinde' has been placed beside it. Trunk is largely hollow. This is a weaker single-tree-destination case than Schlagsdorf or Erdmannrode verified the same pass (no dramatic documented event, no girth, hedged judicial claim), but it does carry its own Wikipedia article and an official Naturdenkmal designation, which the brief's own guidance treats as usually sufficient in Germany's naming tradition. Left as a lead for a writer or a later pass to weigh rather than asserted here as a clear yes.",
+      "photo_candidates": [
+        "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Zehdenick.JPG",
+        "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG"
+      ]
+    }
+  ],
+  "blocked": []
 }
