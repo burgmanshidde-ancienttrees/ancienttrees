@@ -6324,6 +6324,70 @@
    ],
    "trees": 20,
    "logged": true
+  },
+  {
+   "started": "2026-09-06T19:50:13+00:00",
+   "date": "2026-09-06",
+   "run_id": "34055774198",
+   "minutes": 87.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 618,
+   "denials": 47,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(file), Bash(find), Bash(for), Bash(gh), Bash(git), Bash(if), Bash(ls), Bash(printenv), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 7204748,
+   "claims_held": [],
+   "commits": 16,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "arnhem",
+     "trees": 1
+    },
+    {
+     "city": "cinovec",
+     "trees": 1
+    },
+    {
+     "city": "den-bosch",
+     "trees": 1
+    },
+    {
+     "city": "deventer",
+     "trees": 1
+    },
+    {
+     "city": "frydlant",
+     "trees": 1
+    },
+    {
+     "city": "jihlava",
+     "trees": 1
+    },
+    {
+     "city": "lazy-cheb",
+     "trees": 1
+    },
+    {
+     "city": "leeuwarden",
+     "trees": 1
+    },
+    {
+     "city": "lukavice",
+     "trees": 1
+    },
+    {
+     "city": "mcely",
+     "trees": 1
+    },
+    {
+     "city": "prosec-pod-jestedem",
+     "trees": 1
+    }
+   ],
+   "trees": 11,
+   "logged": true
   }
  ],
  "schedule_changes": [
