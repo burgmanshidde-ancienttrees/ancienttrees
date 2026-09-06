@@ -2,6 +2,56 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 - Amt Neuhaus ships (Eiche am Forsthaus Gruener Jaeger); Schillershoehe oak held
+
+Continuation of an earlier attempt that stopped after 10 min with 110 of its
+120-minute window unspent. `passcheck.py --claims` showed two standing:
+`_famous-germany` and `hiroshima`, both verify, with uncommitted output
+already on disk from that earlier attempt. `data/research/famousgermany-
+verified.json` held 2 fully verified trees; `hiroshima-verified.json` was an
+empty array (that verify pass found nothing new in the 78 remaining
+register leads this attempt).
+
+**Shipped: Amt Neuhaus, Germany, a new single-tree place.** fgm_001, the
+Eiche am Forsthaus Gruener Jaeger near Stapel village, ships as amn_001: a
+hollow, lightning-scarred pedunculate oak, girth 8.91m, dendrologists'
+estimate ~450 years despite its local "700-year oak" nickname, storm-damaged
+in 2017 and recovering. Two specialist German tree registers
+(baumkunde.de, monumentale-eichen.de) plus the Amt Neuhaus municipality's
+own tourism page as the access source. Passes the single-famous-tree-
+destination exception on its own local documentation and dramatic
+storm/hollow-trunk story, not on global fame.
+
+**Held rather than published: fgm_002, Eiche Schillershoehe (Rudolstadt).**
+Verified (coordinates, 3 independent Commons photos, official Thuringian
+Naturdenkmal register entry) but no age, no girth, species only to genus.
+The fame at that site belongs to the Schiller memorial viewpoint it stands
+beside, not to the tree itself, so it does not clear "would somebody travel
+specifically for THIS tree". Recorded as held with reasoning in
+`data/leads/_famous-germany.json` rather than discarded; may be reconsidered
+if a future source gives it real individual distinction, or if Rudolstadt
+ever becomes a real city page it could join.
+
+Build (4608 pages), qa.py (6903 pages, 0 problems after fixing a "must-see"
+banned word the intro/story/access fields all repeated), preflight.py (444
+cities, 0 new problems) and `city_queue.py` (regenerated city-queue.json,
+CITY_QUEUE.md, LEDGER.html) all clean. Released the `_famous-germany` claim.
+
+Rung 2 (`health.py`): Data digest flagged failing (17h old). Read the log:
+the same benign git-push race documented repeatedly this week (local commit
+succeeds, a concurrent writer wins the push, commit lost with the runner).
+`gh workflow run data-digest.yml` failed with 403, this token still lacks
+`workflow_dispatch` scope. Not fixable from here; the 05:15 UTC cron retries
+it as normal.
+
+Left the `hiroshima` claim standing rather than releasing it outright: it
+still holds real remaining supply (78 unblocked leads in Japan's national
+giant-tree register for the city), just none verified this attempt. A
+future continuation should either finish a fresh verify batch from that
+register or make the call to release it if the remaining leads keep coming
+back thin (many carry no age, address-level-only geocoding, or health
+fields in Japanese needing translation).
+
 ## 2026-09-06 - _famous-lithuania re-check: no new trees, prior work confirmed sound
 
 Claimed `_famous-lithuania` to refill the writable shelf per prepare.py's
