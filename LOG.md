@@ -1,6 +1,79 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 4) - Finished four standing claims: 5 new German single-tree places, Tilburg +8, Eindhoven +4, plus a pre-existing CSS bug found and fixed
+
+An earlier attempt in this window stopped after 11 minutes with 109 of 120
+unspent, leaving six claims standing (`_famous-germany`, `_bomenbieb-netherlands`,
+`eindhoven`, `tilburg` for verify; `amsterdam`, `lisbon` for photo). Per the
+resume instructions, finishing those was the whole job; `leads.py --ready`
+had only one lead (Zehdenick, see below).
+
+**Five new German single-tree places shipped**, all judged by the earlier
+verify pass to clear the 2026-08-31 single-tree-destination exception and
+just needing the write-up: Aachen (Forster Linde, the city's oldest tree,
+once hosted a manorial court), Coppenbrügge (Peter-Linde, grows out of a
+castle wall, once trained into a climbable bower, named for Peter the
+Great), Erdmannrode (Gerichtslinde, 8.65m girth, once carried a musicians'
+platform), Galenbeck (the last surviving Tanzlinde in northern Germany, a
+real regional superlative), Schlagsdorf (Gerichtslinde, a documented 1518
+ducal court, on the village's own coat of arms). Fetched and viewed
+Wikimedia Commons candidates directly against the Cadiz standard: 4 of 5
+got an approved photo, Schlagsdorf stays an honest gap. Zehdenick's
+Gerichtslinde, also verified this batch and flagged READY by `leads.py`,
+was left as a lead: the verify pass's own notes called it a weaker
+single-tree case than the other five (no girth, hedged judicial history),
+and that judgement stood rather than being overridden by a mechanical
+ready flag. Full detail in CURATION.md.
+
+**Tilburg (+8, now 15) and Eindhoven (+4, now 11) deepened** from the
+Dutch national monumental-tree register: dispatched two verify passes
+(the earlier attempt's outputs were an empty stub and nothing at all),
+then wrote and shipped all 12 directly. Tilburg gained a rare-tree
+teaching collection in Zuiderpark (planted 1950s around the city's old
+municipal nursery, where evening horticulture students were examined
+along a path nicknamed the "zweetlaantje") and a 3-tree extension of the
+existing Leijpark walk into a forgotten convent corner. Eindhoven gained
+a Strijp churchyard cluster (a copper beech avenue at Sint Trudo, three
+trees in the small Antonius kerkhof). Fixed the resulting stale
+tree-count promises in both cities' meta description, question meta and
+access FAQ.
+
+**Amsterdam and Lisbon's photo claims closed with zero new approvals**,
+and that is the honest result: two photo-judge passes viewed 33 and 12
+candidates respectively and found nothing that met the Cadiz standard.
+Worth keeping regardless: the best Amsterdam candidate was a good photo
+of a *different* Wilhelmina lime 2km away (caught via the uploader's own
+Commons categories), and six of Lisbon's Bela-Sombra candidates were a
+tree 7km away in Restelo (caught via the uploader's own caption). Both
+are exactly the "wrong tree, good photo" trap this project has been
+burned by before (Copenhagen, 2026-08-16). 45 candidates now recorded so
+nobody re-judges the same dead ends. One small script bug found in the
+process: `photo_apply.py reject` does not clear a stale `held` block left
+by an earlier verdict on the same candidate; worked around by hand this
+time, worth a real fix later.
+
+**Found and fixed a pre-existing site bug while validating the German
+pages**: every tree page with a credited hero photo (CC BY/BY-SA) carried
+a 1.6px misalignment between the photo credit's text and the rest of the
+page (`figcaption` padding hardcoded to `1.1rem` instead of
+`var(--gutter)`). Invisible until now because the smoke test's DRIFT
+check only ever samples the alphabetically-first city's tree page, and
+that combination (first-alphabetically + a credited photo) never
+coincided before Aachen. Confirmed pre-existing, not something this
+session introduced: reproduces identically on Aarhus's Wild Service Tree
+page, published weeks ago. One-line fix, smoke test green after.
+
+Full local build (6994 pages), `qa.py`, `preflight.py` and
+`superlatives.py` all clean. All six claims released. `gh`'s own API
+token expired mid-session partway through watching the last push's CI
+(HTTP 401 on every call after; `git push`/`fetch` still work fine, only
+`gh`'s own auth token died), the same environment issue recorded on
+2026-09-04; the identical local build/QA/smoke run clean is the evidence
+this push is fine, and a future run's rung 2 should confirm the deploy
+went out rather than assume it.
+
+<!-- archive-index -->
 ## 2026-09-06 (continuation 3, same window) - Fixed a stale tree-count that had broken two deploys in a row
 
 `health.py` flagged "Build and deploy failure, 1h ago" right after this

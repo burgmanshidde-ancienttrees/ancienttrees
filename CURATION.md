@@ -2,6 +2,79 @@
 
 <!-- archive-index -->
 
+## 2026-09-06 (continuation 4) - 5 new German single-tree places; Tilburg +8, Eindhoven +4
+
+Finished four standing claims left by an earlier attempt in this window that
+stopped after 11 minutes with 109 unspent (_famous-germany and
+_bomenbieb-netherlands verify, plus eindhoven and tilburg verify, plus
+amsterdam and lisbon photo).
+
+Aachen: 1 tree (aac_001, The Forster Linde), flagged (age is a carried-forward
+1852 estimate), 1 photo approved (CC BY 3.0). New place, single-tree-
+destination exception: widely reported as Aachen's oldest tree, own
+Wikipedia article, city QR-code trail.
+
+Coppenbrügge: 1 tree (cpb_001, The Peter-Linde), flagged, 1 photo approved
+(CC BY-SA 4.0). New place, same exception: grows out of the castle wall,
+once trained into a climbable three-storey bower, named for a 1697 visit by
+Peter the Great.
+
+Erdmannrode: 1 tree (edm_001, The Gerichtslinde), flagged (girth and age
+single-sourced), 1 photo approved (CC BY-SA 4.0, bare winter, no in-leaf
+candidate found). New place, same exception: 8.65m girth, once carried a
+musicians' platform. Published as edm_001, not erd_001 (that id prefix
+already belonged to Nantes).
+
+Galenbeck: 1 tree (gnb_001, The Galenbeck Dance Linden), flagged, 1 photo
+approved (CC BY-SA 3.0). New place, same exception: the last surviving
+Tanzlinde (dance linden) in Mecklenburg-Vorpommern and, per English
+Wikipedia, in all of northern Germany, a real regional superlative.
+
+Schlagsdorf: 1 tree (sgd_001, The Gerichtslinde von Schlagsdorf), flagged
+(location approximate, churchyard-level), 0 photos (both Commons candidates
+were a grave-marker close-up and an information sign, not the tree). New
+place, same exception: documented 1518 ducal court, on the village's own
+coat of arms.
+
+Not shipped: Zehdenick's Gerichtslinde (also verified this batch) was left
+as a lead. The verify pass's own notes called it a weaker single-tree case
+than the five above (no girth, hedged judicial history), and that judgement
+was kept rather than overridden on a mechanical "ready" flag.
+
+Tilburg: 8 trees added (til_008-015), now 15. A rare-tree teaching
+collection in Zuiderpark (Caucasian wingnut, American yellowwood, pecan,
+Transcaucasian birch, golden beech; planted 1950s around the city's old
+municipal nursery, evening horticulture/floristry students examined along
+the "zweetlaantje"), plus a 3-tree Kloosterpark extension of the existing
+Leijpark walk (an oak, a lime and a large-leaved holly on former convent
+ground). All flagged (register-only). 0 new photos. 2 candidates blocked:
+a beech held "op afspraak" (by appointment) unlike its neighbours, and a
+treurbeuk on a school playground with no evidence of genuine public access.
+
+Eindhoven: 4 trees added (ein_008-011), now 11. A new Strijp churchyard
+cluster: a copper beech in the Sint Trudo entrance avenue, and in the small
+Antonius kerkhof a box elder, a stand of three Nordmann firs, and the oak
+at the gate. All flagged (register plus general cemetery-access source
+only). 0 new photos (monumentaltrees.com's Trudokerk page, which does carry
+girth figures, returned 403).
+
+Also found and fixed while validating: a pre-existing 1.6px CSS
+misalignment on every tree page with a credited hero photo (figcaption
+padding hardcoded to 1.1rem instead of var(--gutter)), invisible until
+Aachen became the alphabetically-first city with one, since the smoke
+test's DRIFT check only ever samples that one page. Reproduced on Aarhus's
+long-published Wild Service Tree page to confirm it predated this session.
+One-line fix, smoke test green after.
+
+Amsterdam and Lisbon's photo claims closed with zero new approvals: 33
+Amsterdam candidates and 12 Lisbon candidates were viewed and judged
+honestly rather than padded. Worth keeping: the Wilhelminalinde's best
+Amsterdam candidate was a good photo of a different Wilhelmina lime at
+Nassauplein (caught via the uploader's own Commons categories), and six of
+Lisbon's Bela-Sombra candidates turned out to be a tree 7km away in
+Restelo (caught via the uploader's own caption). 45 candidates recorded so
+nobody re-judges the same dead ends.
+
 ## 2026-09-06 (continuation 2) - 3 new single-tree places from the famous-demand list; Beijing +1; a fake tree and a dead tree caught before shipping
 
 Canberra, Australia: 1 tree (can_001, The Lone Pine, Australian War
