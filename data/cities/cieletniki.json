@@ -1,0 +1,73 @@
+{
+  "city": "Cielętniki",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Cielętniki is a small village near Częstochowa, and its churchyard linden has survived worse than most trees ever face: a night in October 2017 when Hurricane Ksawery put the whole tree on the ground, and centuries before that of pilgrims tearing bark from its trunk, because chewing it was said to cure toothache. It still flowers every July. At 10.8 metres round it ranks among the thickest trees of any species in Poland, a bulk a plaque on site blames on as many as eighteen fused saplings.",
+  "meta_description": "The Cielętniki Linden, Poland: knocked flat by a 2017 hurricane, still flowering, roughly 10.8m round, among the thickest trees in the country. Free.",
+  "question_meta": "Cielętniki's tree is a small-leaved lime, roughly 500 to 700 years old, one of the thickest trees in Poland.",
+  "question_answer": "Cielętniki's only mapped tree is a small-leaved lime in the parish churchyard, estimated at 500 to 700 years old depending on which account you read. Its 10.8-metre girth makes it the country's thickest small-leaved lime and among the thickest trees of any species in Poland.",
+  "question_context": "How old the Cielętniki Linden is depends on who you ask. Local tradition says about 700 years. A 2014 dendrochronological estimate by C. Pacyniak puts it closer to 550. One account has it planted shortly before 1500, which would make it roughly 525. A plaque at the tree offers an explanation for why the number is so hard to pin down: the trunk may be as many as eighteen saplings, planted together centuries ago and grown into one mass, which would explain both the girth and the disagreement over age. The trunk is what made it famous regardless: 1,084 centimetres round on the official register figure, and 1,069 on a 2023 remeasurement, either way the thickest small-leaved lime recorded in Poland and the second-thickest tree of any species after a plane at Chojno. It stands on an old pilgrim road toward the Jasna Góra monastery at Częstochowa, and travellers used to strip its bark, believing it cured toothache, until the tree had to be fenced. On the night of 5 October 2017, Hurricane Ksawery put it flat on the ground. It survived, and it still flowers every July.",
+  "hero_tree_id": "cie_001",
+  "oldest_tree_id": "cie_001",
+  "faq": [
+    {
+      "q": "How old is the Cielętniki Linden?",
+      "a": "Somewhere between 500 and 700 years, depending on the source: local tradition says roughly 700, a 2014 dendrochronological estimate says closer to 550, and one account dates its planting to shortly before 1500."
+    },
+    {
+      "q": "Did it really survive being knocked over by a hurricane?",
+      "a": "Yes. On the night of 5 October 2017, Hurricane Ksawery put the tree flat on the ground. It survived and still flowers every July."
+    },
+    {
+      "q": "Why did pilgrims strip its bark?",
+      "a": "The tree stands on an old road toward the Jasna Góra monastery at Częstochowa, and chewing its bark was said to cure toothache. The stripping got bad enough that the tree had to be fenced."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open churchyard beside the parish church, with no entry fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Cielętniki is a small village roughly 30km from Częstochowa. There is no direct public transport to the village; it is reached by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cie_001",
+      "name": "The Cielętniki Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "several hundred years, estimates disputed (roughly 500-700)",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 1084,
+      "height_m": 30,
+      "location": {
+        "address": "Churchyard of the Transfiguration of Jesus parish, Cielętniki, gmina Dąbrowa Zielona, Śląskie Voivodeship",
+        "latitude": 50.889667,
+        "longitude": 19.574972,
+        "neighbourhood": "Cielętniki village, near Częstochowa"
+      },
+      "story": "On the night of 5 October 2017 Hurricane Ksawery put this lime on the ground. It survived, and it still flowers. The trunk is what made it famous: 1,084 centimetres round on the register's official figure, which makes it the thickest small-leaved lime in Poland, and on Marek Kaziak's 2023 remeasurement of 1,069 centimetres the second thickest tree of any species in the country, behind a plane at Chojno. A plaque at the tree offers an explanation for the bulk: the trunk may be as many as eighteen saplings planted together and grown into one body. It stands in the churchyard of the Transfiguration parish at Cielętniki, on an old road toward the Jasna Góra monastery at Częstochowa, and pilgrims walking that road used to stop and tear bark off it, because chewing lime bark was said to cure toothache. In the end the tree had to be fenced to stop them. How old it is depends on who you ask. Local tradition says about 700 years. A 2014 dendrochronological estimate by C. Pacyniak says roughly 550. One account has it planted shortly before 1500, which would make it about 525. Somewhere between 500 and 700 years is as tight as the evidence gets, and a trunk that may be eighteen trees is exactly the sort of thing that keeps the answer loose.",
+      "verified_sources": [
+        "https://www.pomniki-przyrody.pl/?p=10281",
+        "https://tvn24.pl/katowice/slaskie-ksawery-uszkodzil-700-letnia-lipe-z-cieletnik-ra779062-ls2461860",
+        "https://czestochowa.naszemiasto.pl/cieletniki-zapraszaja-czyli-wyjatkowa-lipa-to-nie-jedyna/ar/c7-9008617"
+      ],
+      "access": "Free, publicly accessible; stands in the open churchyard beside the parish church, historically a stop on pilgrimage routes toward Częstochowa's Jasna Góra monastery.",
+      "transport": "Small village church square in Cielętniki; nearest larger town is Częstochowa, roughly 30km away. No direct public transport recorded to the village; reached by car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [7],
+        "kind": "flowers",
+        "label": "early July, when the lime flowers and the whole crown fills with bees"
+      }
+    }
+  ]
+}

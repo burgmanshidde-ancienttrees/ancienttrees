@@ -1,0 +1,64 @@
+{
+  "city": "Przybudki",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Przybudki is a hamlet at the western edge of the Białowieża Forest, and its oak has already done more travelling than most trees ever do: national and then European Tree of the Year, back to back. Dąb Dunin is a low, sprawling reminder that fame does not require good luck. Lightning has broken its limbs more than once, and one assessment still warns the trunk could split. Free to see, a short drive or ride from Hajnówka or Białowieża village, and worth folding into the same trip as the forest itself.",
+  "meta_description": "Dąb Dunin near Białowieża Forest, Poland: European Tree of the Year 2022, a storm-broken oak roughly 350-450 years old. Free, near Hajnówka.",
+  "question_meta": "Przybudki's tree is Dąb Dunin, European Tree of the Year 2022, at the edge of the Białowieża Forest.",
+  "question_answer": "Przybudki's only mapped tree is Dąb Dunin, a pedunculate oak at the edge of the Białowieża Forest reckoned 350 to 450 years old. It won Poland's own Tree of the Year in 2021 and the European title in 2022.",
+  "question_context": "Dąb Dunin stands in the open at the edge of the hamlet of Przybudki, a remnant of the old Łacka Forest on the western side of Białowieża. It is an odd sort of champion: at 13 metres it is low and broad, because lightning has broken its limbs more than once and turned what began as an upright, columnar tree into a lopsided sprawl, and one assessment warns the trunk could still split in half. The trunk itself measures 5.3 to 5.5 metres round. Before it carried the name Dunin, after the Belarusian and Polish writer Wincenty Dunin-Marcinkiewicz, it was known locally as Strażnik Puszczy, the Guardian of the Forest. Poland made it a nature monument in 2001, when its age was put at 330 to 350 years; by the time it won the European title in 2022, it was being described as close to 400. Call it 350 to 450 years, which covers both readings and the growing in between. There is no bus to Przybudki; the tree is reached by car or bicycle from Hajnówka or Białowieża village, both a short ride away.",
+  "hero_tree_id": "prz_001",
+  "oldest_tree_id": "prz_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Przybudki?",
+      "a": "Dąb Dunin, the only mapped tree here, reckoned 350 to 450 years old: the nature-monument listing from 2001 put it at 330 to 350, and by its European Tree of the Year win in 2022 it was being described as closer to 400."
+    },
+    {
+      "q": "Why is it called Dąb Dunin?",
+      "a": "It is named after the Belarusian and Polish writer Wincenty Dunin-Marcinkiewicz. Before that it was known locally as Strażnik Puszczy, the Guardian of the Forest."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open at the forest edge near Przybudki, with no entry fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no bus to Przybudki. The tree is reached by car or bicycle from Hajnówka or from Białowieża village, both a short ride away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "prz_001",
+      "name": "Dąb Dunin",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 540,
+      "height_m": 13,
+      "location": {
+        "address": "Przybudki, edge of the Lacka Forest section of Białowieża Forest (Puszcza Białowieska), Podlaskie Voivodeship, Poland",
+        "latitude": 52.860805,
+        "longitude": 23.591024,
+        "neighbourhood": "Przybudki, near Białowieża Forest"
+      },
+      "story": "This oak won European Tree of the Year in 2022, a year after Poland voted it the best tree in the country. It is an odd sort of champion. At 13 metres it is low and broad, because lightning has broken its limbs more than once and turned what began as an upright, columnar tree into a lopsided sprawl. The trunk measures 5.3 to 5.5 metres round, and the damage is not finished with it: one assessment warns that the trunk could still split in half. It stands in the open at the edge of the hamlet of Przybudki, a remnant of the old Łacka Forest on the western side of Białowieża, and it has outlived the woodland it belonged to. Before it was Dunin it was Strażnik Puszczy, the Guardian of the Forest; Janusz Korbel gave it the newer name, after the Belarusian and Polish writer Wincenty Dunin-Marcinkiewicz. Poland made it a nature monument in 2001, when its age was put at 330 to 350 years, and by the time it took the European title it was being described as close to 400. Call it 350 to 450 years old, which covers both readings and the growing in between. There is no bus. You come by car or bicycle from Hajnówka or Białowieża village, and it is waiting where the trees stop.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/D%C4%85b_Dunin",
+        "https://spidersweb.pl/2022/03/dab-dunin-europejskie-drzewo-roku.html",
+        "https://www.radio.bialystok.pl/wiadomosci/index/id/209863"
+      ],
+      "access": "Free, publicly accessible; stands in an open area at the forest edge near the hamlet of Przybudki.",
+      "transport": "In the hamlet of Przybudki on the western edge of Białowieża Forest. No public transport reaches the tree directly; nearest access is by car or bike from Hajnówka (the district town) or Białowieża village, both a short regional drive away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

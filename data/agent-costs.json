@@ -1040,7 +1040,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -5623,6 +5623,24 @@
     "tokens": 0,
     "trees": 10,
     "note": "Merged all 10 verified famous-lithuania trees into data/cities: 2 day-trip additions to Plunge (plg_005 Mingelos Oak, plg_006 Witch's Ash, renumbered from rag_001), 1 addition to Degsne (deg_002 Budininkai Oak), 2 additions to Kaunas (kun_005 Dubrava Twins, kun_006 Netoniai Oak), and 4 new single-tree places (Renavas, Kybarciai, Grybiskes, Plauginiai Forest). Fixed intro/meta_description/question_context word-count contract failures the merge introduced (Contract B/C limits) and updated stale tree-count copy on Plunge, Degsne and Kaunas. Session work, tokens not logged by an agent report.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Hiroshima (2) + famous-Poland (4) write pass",
+    "kind": "write",
+    "tokens": 34000,
+    "trees": 6,
+    "note": "write-stories agent, both files: 4 age disputes and 1 girth dispute carried into prose, 2 best_time set, no bridge claims",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Hiroshima+Poland merge (6 trees)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 6,
+    "note": "Merged 6 verified trees into data/cities: 2 additions to Hiroshima (hir_016 Fukuoji Lantern Cedars, hir_017 Chichisagari Ginkgo, new oldest_tree_id, question page and FAQ rewritten), 1 addition to Sulechow (sul_002 Sosna Rzepicha, question page and FAQ rewritten for 2 trees), 3 new single-tree places (Przybudki/Dab Dunin, Cieletniki/the Cieletniki Linden, Wisniowa/Dab Jozef). Session work, tokens not logged by an agent report.",
     "wasted": 0,
     "brief_wrong": false
    }
