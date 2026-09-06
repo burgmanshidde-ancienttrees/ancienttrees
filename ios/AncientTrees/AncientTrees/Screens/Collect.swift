@@ -735,6 +735,15 @@ struct CollectView: View {
             Spacer(minLength: 0)
         }
         .accessibilityIdentifier("mytrees-who")
+        // CONTAIN, not the default. Nothing in this row is itself the button:
+        // the name is (mytrees-edit-profile), the two counts are. Without
+        // this, SwiftUI collapses the whole row into one accessibility
+        // element the moment an identifier is attached, and it inherits the
+        // name Text's .isButton trait and a fraction of its frame, which is
+        // how appfit measured a "Button 'mytrees-who'" at 62 by 14, well
+        // under Apple's 44 by 44 (2026-09-06). .contain keeps every child a
+        // separate element, which is what VoiceOver and this test both want.
+        .accessibilityElement(children: .contain)
     }
 
     /// Every tree you have stood in front of, framed together.
