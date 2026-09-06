@@ -1,6 +1,101 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 17) - Caught a duplicate before it shipped, Salzburg 5 to 9, iOS regression escalated (the fix did not hold)
+
+Resumed into a window where the previous attempt stopped early with 103
+of 120 minutes unspent. `passcheck.py --claims` showed two standing
+verify claims, both by night-run: `_bomenbieb-netherlands`, which had
+real uncommitted local progress, and `salzburg`, which did not.
+`leads.py --ready` was 0.
+
+**The bomenbieb-netherlands claim's uncommitted work turned out to
+contain a mistake, caught before it shipped.** The pass had staged a
+new tree, lei_019 "The Golden Rain of the Hortus Entrance", checked only
+against its nearest published neighbour by distance (lei_001, 50m away,
+wrong species). It was never checked against lei_004 The Golden Chain
+of the Hortus: same species (Laburnum anagyroides), same bomenbieb
+source, same debunked-1601/1720s-Boerhaave story, 46m from lei_004's
+own approximate pin. Same tree. Folded lei_019's more precise
+coordinate and its Wayback-archived source into lei_004 instead:
+upgraded its pin to confirmed and added the 1601-inventory detail to
+the story. Leiden stays at 12 trees. Full detail in CURATION.md; worth
+naming the pattern here too, since it will recur: a "nearest published
+tree" check is a distance search, not a duplicate check, and the real
+duplicate can sit a few trees further down the same city file.
+
+**Salzburg's claim had no local progress, so dispatched a verify agent
+on it** (77 unmined register candidates, well above the 6-candidate
+floor). It delivered 4 new trees in ~60k tokens: szb_006-008, an oak
+and two limes on three separate but walkable (~700m) Riedenburg
+streets, and szb_009, two register entries (a plane, a black pine)
+folded into one collectible point as the last two survivors of the
+garden of the Hotel de l'Europe, bombed and cleared by 1949, its ground
+now the Fordhof housing estate. Wrote the four stories myself rather
+than dispatching a separate write-stories agent for just four trees,
+merged into `data/cities/salzburg.json` (5 to 9 trees), and rewrote the
+city's intro, meta description, question page and two FAQ answers for
+the new count and material, trimming twice to fit Contract B/C's word
+and character limits. All four ship with honest gaps (no invented ages;
+szb_009's is a derived 88-161 year band from the hotel's own dates,
+never sharpened; the two limes stay at genus level). Build (4843
+pages), qa.py, preflight.py and superlatives.py all clean.
+
+**Taormina looked openable from `city_queue.py --next` (5 register + 2
+Wikidata candidates, clearing the floor) and was not**: its own
+passcheck brief showed all four in-town register trees already BLOCKED
+in `data/leads/taormina.json` as private hotel grounds, and three
+earlier sessions (2026-08-30, 08-31, 09-05) had already reached the
+same dead end. Released the claim rather than re-running an exhausted
+hunt, which CLAUDE.md already names as this project's most repeated
+waste. `city_queue.py --next`'s openable list does not check
+CURATION.md/leads-file history, so it will keep surfacing this one;
+worth fixing in the script itself at some point, not attempted here.
+
+**Two US scouting targets from `scout_next.py --target`, both dead
+ends recorded so nobody re-scouts them**: Lexington's Kentucky Champion
+Trees program and Reno's 2015 Nevada Big Tree Register are both real,
+named, semantically-filtered registers, and neither has a stated
+licence or coordinates, the same shape as every other US state
+big-tree PDF scouted so far (Florida, Arkansas, California). Reno's is
+worth a licence ask later: real public-site clusters (Idlewild Park
+alone has at least 10 champions) and a 2024 re-measurement effort that
+might have produced something better. Both recorded in
+`data/register-scouting.json`.
+
+**The iOS regression continuation 16 diagnosed and "fixed" is still
+red, on the very next run.** `testTappingAPinOpensItsTree` failed again
+(34062404324, the very next scheduled/pushed run after commit
+`84ddff36`), same message, "sweeping the visible map opened no tree at
+all", even past the new `map-count` wait the previous fix added (the
+failure is later in the test than that assertion, so the wait itself
+did work). Investigated further without a simulator: ruled out the
+sign-in-sheet bug (already fixed, and this run's log carries no web
+view detection), confirmed the map screen itself renders fine in the
+same CI run's `appfit.py` pass (61 elements, no CLIPPED/DRIFT/SMALL),
+and traced `-select=ams_002` to `MapTab.swift`/`TreeMap.swift`: it does
+center the camera on the tree at a 900m zoom via `setCenter`, so the
+camera-never-moves theory does not hold either. Left with real
+candidates (denser clustering at that zoom now the catalogue has
+crossed 2700 trees, or the top overlay controls eating some of the
+sweep's early taps) and no way to tell them apart from logs alone.
+Continuation 16 itself named the right rule for this moment ("if the
+next scheduled run is still red, the diagnosis above is wrong and it
+needs a session with a simulator"), so this attempt did not take a
+third blind guess. FOR HIDDE: this needs an actual simulator to
+resolve; the app itself is very likely fine (pins render, `appfit`
+finds nothing wrong), only this one test's tap-sweep heuristic seems
+to be running out of luck as Amsterdam's map gets denser.
+
+Submissions and the sightings inbox were both empty and fully caught
+up (processed id 86 matches the newest row). REVIEW.md's two 2026-09-06
+WARNs were already resolved by an earlier commit today (`cfc63f6b`)
+before this attempt started. A `photo_hunt.py --help` check (meant to
+read its flags) turned out to run the script's default sweep instead,
+for free (API-only, no tokens): it added real Commons candidates for
+several already-published photo-less trees, kept rather than discarded
+since the cost was zero.
+
 ## 2026-09-06 (continuation 16) - iOS regression fixed (test, not app), rung 2
 
 Rung 2 (`health.py`): `ios.yml`'s newest run had failed, upgrading
