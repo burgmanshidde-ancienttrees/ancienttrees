@@ -5954,6 +5954,61 @@
    ],
    "trees": 18,
    "logged": true
+  },
+  {
+   "started": "2026-09-06T08:45:36+00:00",
+   "date": "2026-09-06",
+   "run_id": "34022741485",
+   "minutes": 56.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 386,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(grep), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(sed)",
+   "ended": "success",
+   "tokens": 5396272,
+   "claims_held": [
+    "_famous-poland",
+    "_bomenbieb-netherlands"
+   ],
+   "commits": 12,
+   "cities_touched": 8,
+   "cities": [
+    {
+     "city": "kaunas",
+     "trees": 2
+    },
+    {
+     "city": "plunge",
+     "trees": 2
+    },
+    {
+     "city": "degsne",
+     "trees": 1
+    },
+    {
+     "city": "gojaus-miskas",
+     "trees": 1
+    },
+    {
+     "city": "grybiskes",
+     "trees": 1
+    },
+    {
+     "city": "kybarciai",
+     "trees": 1
+    },
+    {
+     "city": "plauginiai-forest",
+     "trees": 1
+    },
+    {
+     "city": "renavas",
+     "trees": 1
+    }
+   ],
+   "trees": 10,
+   "logged": true
   }
  ],
  "schedule_changes": [
