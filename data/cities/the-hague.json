@@ -2,10 +2,10 @@
   "city": "The Hague",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, kept there by a promise William of Orange made in 1576 that the Haagse Bos would never be sold or logged. Beside it a horse chestnut was hauled eighty metres across the same meadow on steel plates in 1997 rather than felled for a road tunnel. Twenty-nine trees in all, from a royal garden cypress to a row of chestnuts beside the Hofvijver, and nearly every one of them free and open at any hour.",
-  "meta_description": "The Hague's oldest tree is a 300-year-old oak on the Koekamp deer meadow. 29 verified trees, including a chestnut moved eighty metres on steel plates.",
+  "intro": "Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, kept there by a promise William of Orange made in 1576 that the Haagse Bos would never be sold or logged. Beside it a horse chestnut was hauled eighty metres across the same meadow on steel plates in 1997 rather than felled for a road tunnel. Thirty trees in all, from a royal garden cypress to a row of chestnuts beside the Hofvijver, and nearly every one of them free and open at any hour.",
+  "meta_description": "The Hague's oldest tree is a 300-year-old oak on the Koekamp deer meadow. 30 verified trees, including a chestnut moved eighty metres on steel plates.",
   "question_answer": "The Hague's oldest tree is the Koekamp Oak, growing on the old deer meadow four minutes north of Den Haag Centraal, at roughly 300 years. It stands on ground that was never private: William of Orange promised in 1576 that the Haagse Bos would never be sold or logged, and that guarantee has held ever since, with one serious interruption during the wartime felling under German occupation. Its closest rival is the plane in Park Hoekenburg, which the national register bands between 1700 and 1750, so somewhere between 276 and 326 years, a fifty year band rather than a date. On the midpoints the two are within a few years of each other and this page does not pretend to separate them. Older than either was a pear of 1638 in an almshouse courtyard, and it is no longer on this page: it can only be seen on a booked tour, which is not a tree anybody can go and stand in front of.",
-  "question_meta": "The Hague's oldest tree is a roughly 300-year-old oak on the Koekamp, kept by a promise from 1576. Its story, exact location, and 28 more mapped.",
+  "question_meta": "The Hague's oldest tree is a roughly 300-year-old oak on the Koekamp, kept by a promise from 1576. Its story, exact location, and 29 more mapped.",
   "question_context": "Ages here come mostly from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than dates. The Koekamp oak, at roughly 300 years, grows on land that was never private at all, protected by a 1576 promise from William of Orange that the Haagse Bos would never be sold or logged, a guarantee that has held with one serious interruption, the wartime felling under German occupation. A second oak on the same meadow, and a London plane out at Leidschendam, are both banded by the register to somewhere between 1750 and 1800, which puts them between 225 and 275 years old. After those the list drops into the 19th century, onto estate land later built over, into two cemeteries and a painter's garden. One tree that used to head this page has come off it: the 1638 pear of the Heilige Geesthofje, which is genuinely the oldest tree in the city and can only be reached on a booked tour, and this site publishes trees a person can walk up to.",
   "faq": [
     {
@@ -1004,6 +1004,35 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       }
+    },
+    {
+      "id": "hag_032",
+      "name": "The Koekamplinde",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 150 years",
+      "age_min": 146,
+      "age_max": 156,
+      "location": {
+        "address": "Park Koekamp, southwest of the Koningstunnel, Den Haag",
+        "latitude": 52.082325,
+        "longitude": 4.320325,
+        "neighbourhood": "Koekamp"
+      },
+      "story": "For eighty years the Blauwe Tram, The Hague's old regional line, rattled past this lime on its way out of the city, and the tree outlasted the tram entirely. It went into the ground around 1880, inside the Koekamp's Hertenkamp, a deer enclosure whose fence kept it in view but out of reach for well over a century. When the Koningstunnel was designed in the 1990s to carry traffic from Den Haag Centraal toward the Bosbrug, the planned route ran straight at this linden and at a horse chestnut standing fifty metres away. Both were spared: the tunnel's line was bent sideways at the drawing-board stage specifically to avoid moving them, a decision the city made before a single steel plate was laid. The chestnut still got hauled eighty metres on rails in 1997. This lime never had to move at all. When the park was restored in 2005 and the old deer fencing came down, people started doing what a century of enclosure had made impossible, sitting under it. It has been one of the Koekamp's default gathering spots since, host to picnics, music and the occasional demonstration, ten minutes on foot from the station. Its own planting date is loose, somewhere between 1870 and 1880, but the tunnel that curves around it is not.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/koekamplinde-den-haag/",
+        "https://nl.wikipedia.org/wiki/Koekamp_(Den_Haag)"
+      ],
+      "access": "Free, public park (Koekamp), open at all times",
+      "transport": "Den Haag Centraal station, about 5 minutes' walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ],
   "oldest_tree_id": "hag_002"
