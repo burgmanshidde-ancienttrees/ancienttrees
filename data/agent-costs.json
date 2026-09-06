@@ -5652,6 +5652,15 @@
         "note": "not a dispatched agent; main session initially re-derived a full disposition for data/research/famousuk-verified.json, then discovered this exact pile was already fully resolved earlier today by continuation 9 (see LOG.md) via data/leads/_famous-united-kingdom.json, which continuation 9 forgot to delete. Reverted the resulting duplicate entries in london.json/brighton.json and the two new glastonbury.json/ tolpuddle.json files, kept only the (still warranted) deletion of the stale research file, and patched two dangling references to it in _famous-united-kingdom.json. Tokens not separately metered.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "_famous-slovakia",
+        "kind": "write",
+        "tokens": 128000,
+        "trees": 10,
+        "note": "10 verified Slovak trees written in one batched context, each shipping as its own place (8 pages, one with 3 trees); 5 got a best_time, disputes on count/age/species/votes carried in the prose; merged into 8 new city files by the main session",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

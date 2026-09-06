@@ -1,7 +1,63 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-06 (continuation 10, in progress) - A false start on famousuk, then three verify/translate/photo passes dispatched in parallel
+## 2026-09-06 (continuation 11) - Both live claims finished: 8 new Slovak places, Arnhem's Dutch overlay completed; the photo-judge pass from continuation 10 was lost
+
+Picked up after continuation 10 stopped at 21 minutes with 99 unspent,
+having only reached "three passes dispatched" without waiting for any
+of them. `passcheck.py --claims` showed two still standing, both with
+real work already sitting on disk:
+
+1. **`_famous-slovakia` (verify pass, complete).** All 10 trees were
+   fully verified with two independent sources each, just needed a
+   story. Fixed one blocker first: `cst_001` (Casta) collided with
+   Caserta's existing `cas_001`, reassigned before dispatch.
+   Dispatched a write-stories pass (10 trees, 128k tokens, ~12.8k/tree,
+   inside the 15k target), then merged the results into 8 new city
+   files, each a single-famous-tree destination under the 2026-08-31
+   exception: Hronsek, Trencianske Stankovce, Lipany, Drnava, Dubinne,
+   Uzovska Panica, Casta (one tree each) and Zilina (three trees,
+   Slovakia's 4th-largest city, previously unpublished). Every entry
+   carries its genuine dispute honestly rather than picking a winner:
+   Hronsek's linden count (3, 4 or 6 depending on the source), the two
+   Lipsky lindens' 250-vs-500-year gap, Dubinne's undatable hollow
+   trunk, the Sokolovska maple's sugar/silver species conflict. No
+   photos found for any of them yet, an honest `missing` gap. Build
+   caught two real contract violations before anything shipped: a
+   species-name collision (fixed Zilina's plane to the canonical
+   "Platanus x acerifolia") and every question_context/intro running
+   short of Contract B/C's word minimums, both patched and rebuilt
+   clean. `qa.py` and `preflight.py` both pass at 0 problems.
+2. **`arnhem-nl-translation` (write pass, complete).** 25 of 37 trees
+   were already translated; wrote the remaining 12 (Zijpendaal,
+   Gulden Bodem and Angerenstein clusters) directly rather than via
+   an agent, since it was pure Contract J overlay work with no new
+   judgement calls. All 37 Dutch tree pages build clean.
+
+**The third dispatched pass, a photo-judge viewing pass on 8
+photo-less cities, is gone.** No claim for it existed in
+`data/in-flight.json` (photo passes evidently do not use the claim
+system) and no commit touches any of the 8 target cities since it was
+dispatched. `ListAgents` shows no reachable agents. This is the exact
+failure mode CLAUDE.md already names: a background agent lives in the
+session that started it, and continuation 10's session closed at 21
+minutes with the pass still "running". Nothing was lost on disk (the
+`photo_hunt.py --recheck` sweep it ran first is cheap to redo), but
+the photo-judge viewing pass itself needs a fresh dispatch. Worth
+fixing structurally: either give photo passes the same claim/commit
+discipline verify and write passes have, or accept that a photo pass
+must run to completion inside the dispatching session rather than
+being treated as fire-and-forget.
+
+Also swept up one unrelated piece of uncommitted work found at
+session start: a `photo-queue.json` refresh from an earlier,
+uncommitted `photo_hunt.py` run, committed rather than discarded.
+
+Two harmless scratch scripts (`scripts/_check_submissions.py`,
+`scripts/_cleanup_famousuk.py`) remain untracked from earlier
+continuations; left alone rather than guessed about.
+
+## 2026-09-06 (continuation 10) - A false start on famousuk, then three verify/translate/photo passes dispatched in parallel
 
 Started fresh at Step 0 (health clear, no reader submissions, no page
 gaps). `prepare.py` showed 3 unpublished famousuk trees and pointed
