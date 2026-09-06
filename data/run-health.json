@@ -5882,6 +5882,78 @@
    ],
    "trees": 8,
    "logged": true
+  },
+  {
+   "started": "2026-09-06T06:37:49+00:00",
+   "date": "2026-09-06",
+   "run_id": "34016980943",
+   "minutes": 111.9,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 614,
+   "denials": 45,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(grep), Bash(mkdir), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
+   "ended": "success",
+   "tokens": 52164380,
+   "claims_held": [],
+   "commits": 15,
+   "cities_touched": 13,
+   "cities": [
+    {
+     "city": "tilburg",
+     "trees": 8
+    },
+    {
+     "city": "eindhoven",
+     "trees": 4
+    },
+    {
+     "city": "aachen",
+     "trees": 1
+    },
+    {
+     "city": "borrowdale",
+     "trees": 1
+    },
+    {
+     "city": "coppenbrugge",
+     "trees": 1
+    },
+    {
+     "city": "erdmannrode",
+     "trees": 1
+    },
+    {
+     "city": "galenbeck",
+     "trees": 1
+    },
+    {
+     "city": "schlagsdorf",
+     "trees": 1
+    },
+    {
+     "city": "baarn",
+     "trees": 0
+    },
+    {
+     "city": "brielow",
+     "trees": 0
+    },
+    {
+     "city": "bristol",
+     "trees": 0
+    },
+    {
+     "city": "lisbon",
+     "trees": 0
+    },
+    {
+     "city": "warsaw",
+     "trees": 0
+    }
+   ],
+   "trees": 18,
+   "logged": true
   }
  ],
  "schedule_changes": [
