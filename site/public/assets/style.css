@@ -1720,7 +1720,7 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
   .tree-photo.tree-hero,
   .tree-noph.tree-hero { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); width: auto; }
   .tree-photo.tree-hero img { border-radius: 0; height: 280px; }
-  .tree-photo.tree-hero figcaption { padding: 0 1.1rem; }
+  .tree-photo.tree-hero figcaption { padding: 0 var(--gutter); }
 }
 
 /* The name group: title, the full botanical name under it, then where it is.
