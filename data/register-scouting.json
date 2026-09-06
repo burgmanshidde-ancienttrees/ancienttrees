@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Reno",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-09-06 (session), on scout_next.py --target naming Reno (#68) as no supply/no verdict, one step after Lexington. Found a real, unusually detailed state register: the 2015 Nevada Big Tree Register (forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf, a Nevada Division of Forestry PDF), champions and co-champions by species with circumference/height/spread/crown-points and a county-plus-named-location field (not coordinates). Real Reno supply, mostly clustered in named public sites: Idlewild Park alone carries at least 10 champions (European beech, Japanese red pine, Austrian pine, sweet cherry, American sycamore, Callery pear, Southwestern white pine, Chinese hackberry, common hackberry, Washington hawthorn, columnar red maple, two trident maples, English oak x2, American elm), plus University of Nevada Reno (a dozen-plus), Virginia Lake, McKinley Arts & Culture Center and Wilbur D. May Arboretum. A 2024 news search (2news.com) confirms the state re-measured nominations that year with fresh grant funding, so a current list likely exists beyond this 2015 PDF. STALLED, not imported: no licence, copyright or terms-of-use statement anywhere in the PDF or on the forestry.nv.gov pages that host it (same shape as every other US state big-tree PDF scouted so far: Florida, Kentucky). It also lacks coordinates, only park/street names, so even a cleared licence would need per-tree geocoding before any pin could be called more than approximate, and many entries say 'Private Property' rather than a public site (hard rule 10 would need a per-tree check regardless of licence). Next: a licence ask to Nevada Division of Forestry (the natural next outreach-batch target, since Reno is real supply once cleared, unlike Fort Lauderdale/Lexington which had nothing at all), and a check for a more recent, ideally coordinate-bearing dataset given the 2024 re-measurement effort."
+    },
+    {
       "place": "Lexington",
       "country": "United States",
       "status": "empty",
