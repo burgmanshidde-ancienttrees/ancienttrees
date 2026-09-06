@@ -241,10 +241,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/499%2C_Grinavsk%C3%BD_topo%C4%BE_-_poh%C4%BEad_zo_z%C3%A1padu_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "TomphanTK, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3888,
+        "height": 5184
       }
     }
   ]
