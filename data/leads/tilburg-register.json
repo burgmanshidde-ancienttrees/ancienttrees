@@ -1128,6 +1128,35 @@
  ],
  "blocked": [
   {
+   "nr": 1697208,
+   "register_name": "Eikbladige beuk Zuiderpark",
+   "own_name": null,
+   "species": null,
+   "species_unmapped": "Eikbladige beuk Zuiderpark",
+   "planted_band": "1950-1960",
+   "latitude": 51.543302,
+   "longitude": 5.078907,
+   "place": "Tilburg, Morvanstraat 14, plantsoen",
+   "setting": "plantsoen",
+   "owner_category": "gemeente",
+   "blocked_reason": "Register itself lists visitable as 'op afspraak' (by appointment), unlike its neighbours at the same address (Pecannoot, Japanse vleugelnoot) which are visitable=ja. That fails hard rule 10's test of getting in without asking anyone's permission. Checked 2026-09-06; part of the same Zuiderpark rare-tree teaching collection as til_008-012, which shipped without it."
+  },
+  {
+   "nr": 1688499,
+   "register_name": "Treurbeuk",
+   "own_name": null,
+   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+   "species_unmapped": null,
+   "planted_band": "1930-1940",
+   "latitude": 51.55526,
+   "longitude": 5.098529,
+   "place": "Tilburg, Sint Jozephstraat 102, op schoolplein",
+   "setting": "plein",
+   "owner_category": "publiekrechtelijke organisatie",
+   "blocked_reason": "On a school playground ('op schoolplein'). The register itself marks visitable=ja, but per CLAUDE's schools exception a school tree needs real evidence the grounds are genuinely open (a public path through the site, weekend opening, etc.), and none was found this pass. Left as a lead rather than shipped; a later pass could check for a public path or published opening hours before publishing it. Checked 2026-09-06.",
+   "reason": "leads_not_blocked_absolute"
+  },
+  {
    "nr": 1683029,
    "register_name": "Hollandse linde",
    "own_name": null,

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "til_008",
+    "name": "The Caucasian Wingnut of the Zuiderpark Collection",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "roughly 70 years",
+    "age_min": 66,
+    "age_max": 76,
+    "location": {
+      "address": "Morvanstraat 14, plantsoen",
+      "latitude": 51.543277,
+      "longitude": 5.079216,
+      "neighbourhood": "Zuiderpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+    ],
+    "access": "Free. Public street planting (plantsoen), open at any time.",
+    "transport": "About 2 km south of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB, netherlands-lrmb.json nr 1697210) is the only source that names this specific tree; existence/species/age are single-sourced from it, hence flagged. Register's own name is 'Japanse vleugelnoot' (literally 'Japanese wingnut') but its mapped species field is Caucasian Wingnut, Pterocarya fraxinifolia; note the naming mismatch for the writer, the species field is the one to trust. Planted band 1950-1960, so roughly 66-76 years old as of 2026: young for this project but the register flags it for rarity and cultural history rather than age. Part of a documented rare-tree teaching collection: register history says this ringed the former municipal nursery (gemeentekwekerij) on the Tatraweg, planted from 1950 to teach evening horticulture and floristry students, and from 1953 to 1967 some 800-1000 students a season learned the Latin and Dutch names of the trees along a path nicknamed the 'zweetlaantje' (sweat lane) where they were examined. From 1967 the teaching moved to the Lagere Agrarische Sierteeltschool on Leijparkweg; that school's 1967 opening date and later 1974 merger into Scholengemeenschap Quirijn are independently confirmed on wikimiddenbrabant.nl (Wiki Midden-Brabant, a local heemkunde wiki), which corroborates the shared historical narrative though not this individual tree. No independent recent 'still alive' confirmation was found this pass beyond the register entry itself; no vitality field exists in any register. Setting is 'plantsoen' (public street verge in the Zuiderpark residential area), owner_category gemeente, register's own visitable=ja and visible=ja. This is one of five trees from the same collection verified this pass, forming a new walkable cluster (all within about 300 m of each other) roughly 1.2-1.4 km from the Tilburg city centre, distinct from the existing Wilhelminapark and Leijpark clusters already published."
+  },
+  {
+    "id": "til_009",
+    "name": "The American Yellowwood of the Zuiderpark Collection",
+    "species": "American Yellowwood (Cladrastis kentukea)",
+    "age_estimate": "roughly 70 years",
+    "age_min": 66,
+    "age_max": 76,
+    "location": {
+      "address": "Harzstraat 2, plantsoen",
+      "latitude": 51.543575,
+      "longitude": 5.081554,
+      "neighbourhood": "Zuiderpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+    ],
+    "access": "Free. Public street planting (plantsoen), open at any time.",
+    "transport": "About 2 km south of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB nr 1697211, register_name 'Geelhout Zuiderpark') is the only source naming this specific tree, hence flagged. Register gives no species field ('species_unmapped: Geelhout'); 'geelhout' is the standard Dutch common name for Cladrastis kentukea (American Yellowwood / Kentucky yellowwood), confirmed against multiple independent Dutch nursery and dendrology references (boomzorg.nl, Ebben Tree Nursery, bomengids.nl) that this pass checked for the species mapping only, not for this individual tree's existence. Planted band 1950-1960, so roughly 66-76 years old as of 2026. Multi-stemmed ('Meerstammig' in the register). Same rare-tree teaching-collection history as the other Zuiderpark entries this pass (see til_008's verify_notes for the full anecdote about the gemeentekwekerij and the 1950s-60s horticulture evening school); that shared narrative's founding dates are independently corroborated via wikimiddenbrabant.nl, though not this specific tree. No independent recent alive-confirmation found beyond the register. Setting 'plantsoen', owner gemeente, register visitable=ja, visible=ja. Yellowwood flowers in May/June with drooping white racemes and turns yellow in autumn; worth a best_time note for the writer if a source narrows the local bloom timing."
+  },
+  {
+    "id": "til_010",
+    "name": "The Pecan of the Zuiderpark Collection",
+    "species": "Pecan (Carya illinoinensis)",
+    "age_estimate": "roughly 70 years",
+    "age_min": 66,
+    "age_max": 76,
+    "location": {
+      "address": "Morvanstraat 14, plantsoen",
+      "latitude": 51.543141,
+      "longitude": 5.078983,
+      "neighbourhood": "Zuiderpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+    ],
+    "access": "Free. Public street planting (plantsoen), open at any time.",
+    "transport": "About 2 km south of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB nr 1697207, register_name 'Pecannoot Zuiderpark') is the only source naming this specific tree, hence flagged. 'Pecannoot' is the unambiguous Dutch word for pecan (Carya illinoinensis); register gives no separate species field but the common name is not in doubt. Planted band 1950-1960, roughly 66-76 years old as of 2026. A pecan reaching this size and age this far north of its native US range is itself the notable fact, part of the same rare-tree teaching collection described in til_008's verify_notes (former gemeentekwekerij on the Tatraweg, evening horticulture/floristry school from 1950, later the Leijparkweg sierteeltschool from 1967, corroborated for its founding dates via wikimiddenbrabant.nl). No independent recent alive-confirmation found beyond the register; no vitality field in any register. Setting 'plantsoen', owner gemeente, register visitable=ja, visible=ja. Same address (Morvanstraat 14) as til_008 (Caucasian Wingnut) and the blocked Eikbladige beuk (see blocked list), a few metres apart."
+  },
+  {
+    "id": "til_011",
+    "name": "The Transcaucasian Birch of the Zuiderpark Collection",
+    "species": "Transcaucasian Birch (Betula medwediewii)",
+    "age_estimate": "roughly 70 years",
+    "age_min": 66,
+    "age_max": 76,
+    "location": {
+      "address": "Harzstraat 26, plantsoen",
+      "latitude": 51.543557,
+      "longitude": 5.080495,
+      "neighbourhood": "Zuiderpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+    ],
+    "access": "Free. Public street planting (plantsoen), open at any time.",
+    "transport": "About 2 km south of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB nr 1697206, register_name 'Transkaukasische berk Zuiderpark') is the only source naming this specific tree, hence flagged. Dutch nursery sources (Van den Berk Boomkwekerijen, Den Mulder Boomteelt) independently confirm 'Transkaukasische berk' maps to Betula medwediewii, a Caucasus native usually grown as a large multi-stemmed shrub rather than a single-trunk tree in cultivation; flag this for the writer, since the register's own field 'form' says 'Natuurlijke vorm' (natural form) rather than multi-stemmed, so it may be growing here as a genuine small tree. Planted band 1950-1960, roughly 66-76 years old as of 2026. Same rare-tree teaching-collection history as til_008-010 (former gemeentekwekerij evening school, corroborated for founding dates via wikimiddenbrabant.nl). No independent recent alive-confirmation found beyond the register. Setting 'plantsoen', owner gemeente, register visitable=ja, visible=ja."
+  },
+  {
+    "id": "til_012",
+    "name": "The Golden Beech of the Zuiderpark Collection",
+    "species": "Golden Beech (Fagus sylvatica 'Zlatia')",
+    "age_estimate": "roughly 70 years",
+    "age_min": 66,
+    "age_max": 76,
+    "location": {
+      "address": "Morvanstraat 22, plantsoen",
+      "latitude": 51.54261,
+      "longitude": 5.07884,
+      "neighbourhood": "Zuiderpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+    ],
+    "access": "Free. Public street planting (plantsoen), open at any time.",
+    "transport": "About 2 km south of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB nr 1697209, register_name 'Goudbeuk Zuiderpark') is the only source naming this specific tree, hence flagged. 'Goudbeuk' is confirmed by multiple independent Dutch nursery references (Appeltern, dendrologie.nl, Limburgplant) as the standard Dutch name for Fagus sylvatica 'Zlatia', a golden-leaved beech cultivar whose leaves emerge yellow in spring, turn yellow-green in summer and yellow again in autumn. Planted band 1950-1960, roughly 66-76 years old as of 2026. Same rare-tree teaching-collection history as til_008-011 (see til_008's verify_notes). No independent recent alive-confirmation found beyond the register. Setting 'plantsoen', owner gemeente, register visitable=ja, visible=ja. Good best_time candidate: spring leaf-out (April-May) when the crown is brightest gold, fading toward yellow-green by midsummer; a writer could set best_time kind 'fresh leaves' for April/May but should not narrow the month further than a real source supports."
+  },
+  {
+    "id": "til_013",
+    "name": "The Kloosterpark Oak",
+    "species": "Oak (Quercus sp.)",
+    "age_estimate": "roughly 120 years",
+    "age_min": 116,
+    "age_max": 126,
+    "location": {
+      "address": "Leijpark, Kloosterpark corner, far northeast of the park off Ringbaan-Zuid",
+      "latitude": 51.550073,
+      "longitude": 5.10854,
+      "neighbourhood": "Leijpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://nl.wikipedia.org/wiki/Leijpark"
+    ],
+    "access": "Free. Public park, open daily.",
+    "transport": "About 2.5 km southeast of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB nr 1695664, register_name 'kloosterparkeik', which literally means 'cloister-park oak') is the only source naming this specific tree; the register itself gives no species beyond 'oak', so the page should ask the reader which oak this is rather than guess pedunculate vs sessile. Planted band 1900-1910, roughly 116-126 years old as of 2026, older than this. This is a different, older sub-cluster of the Leijpark from the one that produced the already-published til_005/til_006: it sits in the extreme northeast corner, in the 'Kloosterparkbos', a wood that originally belonged to the neighbouring convent of the Congregatie van Onze Lieve Vrouw der Afzondering in het Cenakel (founded 1908); as the convent's grounds were redeveloped the wood passed to municipal management and was folded into the Leijpark, whose own path network now runs through it. Two tall black residential towers stand beside it, built in the former convent garden. The register's own history for the wider Leijpark (30 hectares, designed 1919 by Leonard Springer, built 1934-1939 as an unemployment work-relief project after land-acquisition delays) is independently corroborated by nl.wikipedia.org/wiki/Leijpark, which confirms designer, area, and the 1934-1939 build under the same work-relief circumstances; Wikipedia does not mention the Kloosterpark/convent detail specifically, so that part rests on the register alone. No independent recent alive-confirmation found beyond the register; no vitality field in any register. Setting 'park', owner gemeente. This tree, til_014 (kloosterparklinde) and til_015 (kloosterparkhulst) sit within about 30 metres of each other, an easy joint stop when extending the existing Leijpark walk further northeast."
+  },
+  {
+    "id": "til_014",
+    "name": "The Kloosterpark Lime",
+    "species": "Lime (Tilia sp.)",
+    "age_estimate": "roughly 120 years",
+    "age_min": 116,
+    "age_max": 126,
+    "location": {
+      "address": "Leijpark, Kloosterpark corner, far northeast of the park off Ringbaan-Zuid",
+      "latitude": 51.549985,
+      "longitude": 5.108131,
+      "neighbourhood": "Leijpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://nl.wikipedia.org/wiki/Leijpark"
+    ],
+    "access": "Free. Public park, open daily.",
+    "transport": "About 2.5 km southeast of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB nr 1695665, register_name 'kloosterparklinde', literally 'cloister-park lime') is the only source naming this specific tree; register gives no species beyond 'lime', so the page should ask the reader which lime rather than guess common vs silver vs Crimean. Planted band 1900-1910, roughly 116-126 years old as of 2026. Same Kloosterpark/convent history as til_013 (see its verify_notes for the full anecdote): originally part of the grounds of the Congregatie van Onze Lieve Vrouw der Afzondering in het Cenakel (founded 1908), folded into the Leijpark when the convent's land was redeveloped. The wider Leijpark's designer, size and 1934-1939 work-relief construction are independently corroborated by nl.wikipedia.org/wiki/Leijpark. No independent recent alive-confirmation found beyond the register. Setting 'park', owner gemeente. About 30 metres from til_013 and til_015, part of the same small extension to the existing Leijpark walk."
+  },
+  {
+    "id": "til_015",
+    "name": "The Kloosterpark Holly",
+    "species": "Holly (Ilex sp.)",
+    "age_estimate": "roughly 120 years",
+    "age_min": 116,
+    "age_max": 126,
+    "location": {
+      "address": "Leijpark, Kloosterpark corner, far northeast of the park off Ringbaan-Zuid",
+      "latitude": 51.55009,
+      "longitude": 5.107928,
+      "neighbourhood": "Leijpark"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://nl.wikipedia.org/wiki/Leijpark"
+    ],
+    "access": "Free. Public park, open daily.",
+    "transport": "About 2.5 km southeast of Tilburg station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (LRMB nr 1695666, register_name 'Grootbladige kloosterparkhulst', literally 'large-leaved cloister-park holly') is the only source naming this specific tree; register gives no species beyond the Dutch descriptive name, so the exact holly (candidates include Ilex x altaclerensis or Ilex latifolia, both grown as large-leaved hollies) should be left as a reader question rather than guessed. Planted band 1900-1910, roughly 116-126 years old as of 2026; an unusually old and large specimen for a holly, worth noting for the writer as the visually distinctive stop of the three. Same Kloosterpark/convent history as til_013 and til_014. No independent recent alive-confirmation found beyond the register. Setting 'park', owner gemeente. About 30 metres from til_013 and til_014."
+  }
+]
