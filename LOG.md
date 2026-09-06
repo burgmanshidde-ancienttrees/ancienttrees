@@ -1,6 +1,48 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 13) - Cleanup: two stale write-pass leftovers found and fixed, two verify passes dispatched
+
+Ran visitors.py (7-day visits climbing: 82/48/106/108/202/195/223/149) and
+prepare.py. It reported 20 trees "awaiting a writer" (`_famous-slovakia`,
+`famousuk-czech`) with `ready to write: 0`, which read like a stalled write
+pass, so per this prompt's own priority ("YOUR FIRST DISPATCH IS A WRITE
+PASS") that came first. It wasn't one: both research files had `id: ""`
+for every entry (why `passcheck.py --pending` mostly missed them) but all
+20 trees were in fact already live in data/cities, published by earlier
+continuations today (12 for Czech, an unlogged-but-real one for Slovakia)
+that forgot to delete their source files afterward. Rather than a phantom
+write pass, this was two find-and-clean passes:
+
+1. **Deleted both stale `-verified.json` files.** Confirmed by id-and-
+   coordinate match against every live city file first (all 20 present).
+2. **Removed 12 leads entries for already-published trees** from
+   `data/leads/_famous-czech-republic.json`, in two rounds: 2 caught by
+   name on the first pass, then 10 more caught by a proper coordinate
+   match (within 200m of a live tree) after the name-only pass turned
+   out to have missed most of them because it was matching the wrong
+   substring (Bystrc Lime and the Plane of St Anne's, both Brno trees,
+   were sitting in there under their Czech names). Left 36 genuine leads.
+3. **Fixed both country pages.** `czech-republic.json` said "Three
+   cities, 32 trees" (real: 13 places, 42 trees) and `slovakia.json`
+   said "Five places, 11 trees" (real: 13 places, 21 trees), both stale
+   since the single-tree villages started shipping. Rewrote both intros
+   properly rather than just patching the number: Slovakia's now leads
+   with Dubinné's ~800-year oak, better documented than Bojnice's
+   traditional 700-year linden, correcting an implicit "oldest tree"
+   claim the old intro made without saying so.
+4. `tree_index.py`, `preflight.py` (0 problems) and a full Astro build
+   all clean. Two commits, both pushed.
+
+With the shelf actually empty (`ready to write: 0`, ladder rung 4 refill
+required), claimed and dispatched two verify passes in parallel, since
+neither touches the other's files: `_bomenbieb-netherlands` (22 of the
+49 remaining Dutch single-tree leads, all with coordinates already) and
+`_famous-czech-republic` (21 of the 36 remaining leads, the ones with
+coordinates; 15 more without coordinates left for a later pass). Both
+still running as this entry is written; their output gets merged in a
+follow-up continuation.
+
 ## 2026-09-06 (continuation 12) - French translation for Strasbourg, and 10 new Czech Republic single-tree places
 
 Picked up after continuation 11 stopped at 79 minutes having shipped
