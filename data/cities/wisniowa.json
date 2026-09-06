@@ -1,0 +1,68 @@
+{
+  "city": "Wiśniowa",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Wiśniowa's oak spent the 1930s in people's wallets: Józef Mehoffer drew it onto the back of Poland's 100-złoty note. Dąb Józef won Poland's Tree of the Year in 2016 and became the first Polish tree to take the European title in 2017. Local memory holds a harder story too, of two brothers hidden inside its hollow trunk during the German occupation. It stands free to see in the historic manor park, argued over on age, 450 to 650 years, the way it is agreed on fame.",
+  "meta_description": "Dąb Józef in Wiśniowa, Poland: on the old 100-złoty banknote, European Tree of the Year 2017, roughly 450-650 years old. Free, manor park.",
+  "question_meta": "Wiśniowa's tree is Dąb Józef, on Poland's old 100-złoty note and the 2017 European Tree of the Year.",
+  "question_answer": "Wiśniowa's only mapped tree is Dąb Józef, a pedunculate oak in the historic manor park, reckoned 450 to 650 years old depending on which estimate you use. It appeared on the reverse of Poland's 100-złoty banknote in the 1930s and became the first Polish tree to win the European Tree of the Year, in 2017.",
+  "question_context": "Dąb Józef's age is genuinely disputed rather than merely unrecorded. It is commonly called about 650 years old, while a 1984 calculation by Cezary Pacyniak put it at roughly 416, which would make it closer to 450 today. Call it 450 to 650, since neither reading has been overturned by the other. What is settled is its fame. Józef Mehoffer drew the oak onto the reverse of Poland's 100-złoty note, issued in 1932 and again in 1934, where it stood for endurance; nothing in the record says whether the tree's own name, Józef, came from the note or the other way round. Poland voted it Tree of the Year in 2016, and in 2017 it became the first Polish tree to win the European title. Local memory adds a harder story: two Jewish brothers, named locally as Paul and David Denholz, are said to have hidden from the German occupation inside the oak's hollow trunk, in a two-level shelter, helped by a village woman, Rozalia Proszak. That account is held by the village rather than an archive, and is told here as such. The oak stands 30 metres tall and 6.75 metres round, protected as a nature monument since 1954.",
+  "hero_tree_id": "wis_001",
+  "oldest_tree_id": "wis_001",
+  "faq": [
+    {
+      "q": "How old is Dąb Józef?",
+      "a": "Its age is disputed: commonly cited as about 650 years, while a 1984 calculation by Cezary Pacyniak put it closer to 416, roughly 450 today. Call it 450 to 650 years."
+    },
+    {
+      "q": "Why does it appear on a banknote?",
+      "a": "Artist Józef Mehoffer drew the oak onto the reverse of Poland's 100-złoty note, issued in 1932 and 1934, as a symbol of longevity and endurance."
+    },
+    {
+      "q": "Is the WWII story about it true?",
+      "a": "It is a local account rather than an archival record: two Jewish brothers are said to have hidden from the German occupation inside the oak's hollow trunk, helped by a village woman. It is told here as village memory, not documented history."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the historic manor park grounds, which are open to visitors, with no entry fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Wiśniowa is a village roughly 15km from Strzyżów. There is no direct public transport to the park; it is reached by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wis_001",
+      "name": "Dąb Józef",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "several centuries; estimates disputed (roughly 450-650)",
+      "age_min": 450,
+      "age_max": 650,
+      "girth_cm": 675,
+      "height_m": 30,
+      "location": {
+        "address": "Park-Manor Complex (Zespół dworsko-parkowy), Wiśniowa, Strzyżów County, Podkarpackie Voivodeship",
+        "latitude": 49.8687,
+        "longitude": 21.644082,
+        "neighbourhood": "Wiśniowa village park"
+      },
+      "story": "This oak spent the 1930s in people's wallets. Józef Mehoffer drew it onto the reverse of Poland's 100-złoty note, issued in 1932 and again in 1934, where it stood for longevity and endurance. The tree carries the name Józef as well, though nothing in the record says whether either name led to the other. Wiśniowa tells a harder story about it too. By local account, two Jewish brothers, given as Paul and David Denholz, hid from the German occupation inside the oak's hollow trunk, in a shelter built on two levels, an upper one to watch the approach from and a lower one to disappear into, supplied by a village woman named Rozalia Proszak. That account is told in the village rather than held in an archive, and it should be read as the village telling it. The tree itself is 30 metres tall and 6.75 metres round, standing in the manor park at Wiśniowa, protected as a nature monument since 1954. Poland voted it Tree of the Year in 2016 and in 2017 it became the first Polish tree to win the European title. Its age is argued over: it is commonly called 650 years old, while a 1984 calculation by Cezary Pacyniak put it at about 416, which would make it roughly 450 now. Between 450 and 650, then, and the hollow is not going to settle it.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/D%C4%85b_J%C3%B3zef",
+        "https://lenartpawel.pl/pomnikowy-dab-szypulkowy-jozef-z-wisniowej-drzewo-roku-2016-i-europejskie-drzewo-roku-2017.html",
+        "https://www.pomniki-przyrody.pl/?p=17837"
+      ],
+      "access": "Free, publicly accessible within the historic manor park grounds, which are open to visitors.",
+      "transport": "In the village of Wiśniowa; the nearest larger town is Strzyżów, about 15km away. No direct public transport recorded to the park itself; reached by car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
