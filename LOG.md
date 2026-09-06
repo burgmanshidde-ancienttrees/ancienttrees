@@ -1,6 +1,40 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-06 (continuation 7) - The Hague +1 (Koekamplinde); cleared a stale Rome research file; dispatched a 20-candidate verify pass on the remaining Dutch bomenbieb leads
+
+Picked up after an earlier attempt this window stopped at 30 minutes having
+shipped 0 trees, with 90 of 120 unspent. Two standing claims: `rome` and
+`_bomenbieb-netherlands`, both verify, both by night-run.
+
+**Rome: claim released, nothing to finish.** `data/research/rome-extra.json/.md`
+on disk turned out to be a stale 2026-08-05 research file whose 6 trees
+(rom_011 through rom_016) were already published weeks ago, byte-identical
+stories and coordinates confirmed by diff. Deleted both files and released
+the claim.
+
+**The Hague +1: The Koekamplinde (hag_032), 30th tree.** Found fully
+verified and written on disk from an earlier attempt (city file, Dutch
+overlay, first-seen.json all already updated), just uncommitted. A
+~150-year-old common lime in Park Koekamp, spared twice by 20th-century
+roadworks routed around it (the Koningstunnel's line was bent at the
+drawing-board stage to avoid it and a neighbouring chestnut). Also
+correctly held as blocked leads in that same pass: the Couperusbeuk
+(private garden, open one day a year) and the Heilige Geesthofje pear
+(working almshouse courtyard, guided-tour-only access), both failing hard
+rule 10. Build (4682 pages), qa.py (7052 pages) and preflight.py (0
+problems) all clean; committed and pushed.
+
+**Dispatched a verify pass on 20 of the remaining 49 `_bomenbieb-netherlands`
+leads**, the closest-to-published-cities first (Utrecht, Apeldoorn,
+Deventer, The Hague, Amsterdam and others), as day-trip additions to
+existing cities rather than a new page. Each candidate already carries
+coordinates and a bomenbieb.nl source from earlier scouting; the pass
+fetches the profile page, finds a second source, checks hard rule 10 and
+writes structured facts to `data/research/nl-batch-verified.json`. Left
+the `_bomenbieb-netherlands` claim standing (in progress) rather than
+releasing it early.
+
 ## 2026-09-06 (continuation 6) - Finished the standing famous-lithuania verify claim; 4 new single-tree places, 5 trees added to 2 existing cities
 
 Picked up after an earlier attempt this window stopped at 30 minutes having
