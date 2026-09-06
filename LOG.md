@@ -1,7 +1,74 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-06 (continuation, of a window an earlier attempt stopped after 12 min with 108 unspent) - Rudy ships; two Szczecin trees held; _famous-lithuania released with nothing new
+## 2026-09-06 (continuation, of a window an earlier attempt stopped after 44 min with 76 unspent) - Brussels' Grand Sablon Ailanthus committed; two Japan verify leads written and merged
+
+Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
+showed one standing claim, `_famous-japan` (verify, by night-run). Disk
+already carried a shipped-but-uncommitted Brussels tree from the immediately
+prior attempt in this window (bru_031, story and French translation
+written, leads updated) and two verify-output files for the Japan claim
+(`famousjapan-remaining-verified.json`: tok_017, hga_003 fully verified,
+no story yet; `famousjapan-verified.json`: one candidate re-confirmed as
+correctly held; a third file, `famouspoland-batch-verified.json`, was a
+stale duplicate of a already-committed Rudy/Szczecin decision and was left
+alone, untracked, rather than force-deleted).
+
+**Committing Brussels' bru_031, The Tree of Heaven of the Grand Sablon**,
+which an earlier attempt had fully researched, written (English and
+French) and staged but never committed. An Ailanthus altissima, the
+species most of Europe pays to remove, listed as a protected monument on
+Brussels' antiques square: 3.42m girth, ninth-thickest of its species in
+the region, folding in two register neighbours (a horse chestnut and a
+Caucasian lime) standing within 10 metres as companions in one story
+rather than three near-identical entries. Single-sourced on the region's
+own heritage inventory and shipped flagged for that reason, per CLAUDE.md
+Step 2 (Brussels clears the depth-allowed impressions threshold).
+
+**Finished the standing `_famous-japan` verify claim** by dispatching a
+write-stories pass on the two genuinely ready candidates sitting in
+`famousjapan-remaining-verified.json`: tok_017 (The Senbon Ginkgo of
+Katsushika Hachimangu, joining Tokyo, technically in Ichikawa/Chiba one
+JR-Sobu-Line stop from an existing Tokyo tree) and hga_003 (The Sennen
+Bodaiju of Hyakusai-ji, joining Higashiomi, a temple's substitute bodhi
+tree that resprouted from its own trunk after Oda Nobunaga burned the
+temple in 1573). Merged both into their city files myself along with the
+page-copy updates a merge requires:
+
+- Higashiomi's oldest-tree claim moved from the hananoki pair (est.
+  250-450y) to the new linden (traditionally ~1,000y, a temple-lore
+  figure stated as such): intro, meta_description, question fields and
+  FAQ rewritten for three trees instead of two, trimmed twice to clear
+  Contract B/C word limits (question_context 311 to 188 words, intro 106
+  to 91).
+- Tokyo's question_meta tree-count fixed (said "fourteen more" against an
+  already-16-tree city before this pass; now "sixteen more" against 17),
+  and a stale ginkgo count in both the English and Japanese intros
+  corrected from five to the actual seven. Added the missing Japanese
+  translation for tok_017 (the `ja/tokyo` overlay requires one per tree;
+  the build refused without it) and fixed the overlay's own 16/15 counts
+  and a stale "8 of 10 free" FAQ line to match English's non-numeric
+  phrasing, which does not need updating every time a tree is added.
+
+Logged the write pass in `data/agent-costs.json` (found and fixed a
+pre-existing structural bug while doing so: a stray top-level
+`"2026-09-06"` key alongside the correct `days["2026-09-06"]`, from an
+earlier attempt writing to the wrong shape; folded back together).
+Marked both leads `done` in `data/leads/_famous-japan.json` and released
+the claim.
+
+**Rung 2 (`health.py`): Data digest showed failure.** Read the log
+directly: a git push race (another workflow pushed to main between the
+digest's own pull and push), not a code bug. Could not dispatch a manual
+rerun (`gh workflow run` returned 403, this token lacks that permission),
+so today's DATA.md entry is simply missing and it will self-heal on
+tomorrow's scheduled run. Recorded via `health.py --answer`, merged into
+the existing 2026-09-05 note rather than overwriting it (caught before
+committing).
+
+Build clean (4617 pages), `qa.py` clean (6917 pages). Released
+`_famous-japan`.
+
 
 Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
 (two standing: `_famous-poland` and `_famous-lithuania`, both verify, with

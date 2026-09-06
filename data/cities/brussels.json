@@ -3,7 +3,7 @@
   "country": "Belgium",
   "status": "needs_curation",
   "intro": "Brussels is the rare city that has kept a formal, scientific register of its own remarkable trees since 2002, cataloguing more than a thousand specimens by age, rarity and historical weight. That bureaucratic thoroughness is why ages and girths on this list are unusually exact. It also explains an odd trick the city played on itself: when Brussels built the Cinquantenaire park in 1880 for Belgium's fiftieth anniversary, it did not plant saplings. It transplanted fully grown trees from an old cemetery and the edge of the Sonian Forest, so the new park looked centuries old on its opening day.",
-  "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Thirty verified locations, real stories, and how to reach each one.",
+  "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Thirty-one verified locations, real stories, and how to reach each one.",
   "question_answer": "Brussels' oldest documented tree is the Chene Josephine, a pedunculate oak in Parc Jacques Brel in Forest, estimated at close to 400 years old from a trunk just over six metres around. Brussels' own heritage inventory calls it probably the oldest oak in the entire Brussels-Capital Region. It stands in a public park that only opened in 1980, though the tree itself long predates it.",
   "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and twenty-nine more.",
   "question_context": "Chene Josephine's age comes from its girth rather than any planting record: at 6.05 metres in circumference, measured at chest height, foresters use growth-rate tables for pedunculate oak to arrive at a figure close to four centuries, old enough that Brussels' own heritage inventory calls it probably the oldest oak anywhere in the region. No document names a planting date, since the ground it grows on was still part of the Kersbeekbosch, a wood already recorded under that name in 1648, long before anyone thought to write down individual trees within it. The clearest challenger for oldest is the Kasterlinde, a lime tree marking the exact point where three communes meet, documented on maps since 1777 and therefore provably at least two and a half centuries old, though its estimated true age, worked out from girth, comes out younger than the oak's. Parc Jacques Brel itself is a recent public space, only opened by the commune of Forest in 1980 after decades as a private estate, but the oak inside it is the oldest living thing within reach of a Brussels metro station. It costs nothing to visit.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Brussels' remarkable trees free to visit?",
-      "a": "Yes, all thirty stand in public parks, gardens and streets with no admission charge, unusual compared to cities where the oldest trees sit behind a castle or palace gate."
+      "a": "Yes, all thirty-one stand in public parks, gardens and streets with no admission charge, unusual compared to cities where the oldest trees sit behind a castle or palace gate."
     },
     {
       "q": "Why does Brussels know so much about the age of its own trees?",
@@ -1080,6 +1080,36 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "Very fine, doubly pinnate foliage that casts almost no shadow, on a smooth trunk with no thorns on it. The pin is the 2019 survey's shared point for three trees, so look across the lawns near the Passage de Milan gate."
+    },
+    {
+      "id": "bru_031",
+      "name": "The Tree of Heaven of the Grand Sablon",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Place du Grand Sablon, 1000 Brussels",
+        "latitude": 50.840474,
+        "longitude": 4.355506,
+        "neighbourhood": "Sablon"
+      },
+      "story": "Ailanthus altissima is the tree cities usually spend money removing. It seeds itself into cracked pavement and abandoned lots, grows a metre a year and is treated as an aggressive invasive species across most of Europe. Brussels has done the opposite: its regional heritage inventory has listed this one as a protected monument, and put it on the Grand Sablon, the square where the city sells its antiques.\n\nThe trunk measures 3.42 metres round, the ninth thickest Ailanthus recorded anywhere in the Brussels region, rising about 19 metres with roughly 9 metres of clean trunk before the crown opens. It shares its stretch of paving with two registered neighbours a few paces away, a common horse chestnut (2.74 metres round) and a Caucasian lime (2.04 metres round), so the square carries three legally protected trees within a spot small enough to take in from one bench.\n\nNo planting date survives for any of the three, and nothing beyond the region's own inventory has been found describing this specimen individually, so treat its history as the register states it rather than as settled fact. What is not in doubt is the square it stands on: cobbled, lined with antique dealers and restaurant terraces, one of the most expensive addresses in the city, and home to the tree most of Europe tries to pull out.",
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/3426"
+      ],
+      "access": "Free, in the open Place du Grand Sablon, a public square at all times",
+      "transport": "In central Brussels' Sablon district, about a 10 minute walk from Gare Centrale, or tram 92/93 to Petit Sablon",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Single-sourced on the region's own remarkable-trees inventory (sites.heritage.brussels, register entry 3426, girth 342cm, crown 12m), flagged for that reason; the register is a government source, accepted as such under the register-layer rule. A second search (French Wikipedia's Liste des arbres remarquables de Belgique, opendata.brussel.be) found no independent account of this specimen; opendata.brussel.be's own dataset description says it republishes the same regional inventory rather than an independent survey. Folds in two register neighbours standing within about 10 metres (register 3427, Aesculus hippocastanum 274cm; register 3430, Tilia x euchlora 204cm) as companions in the story per the register-twins rule, rather than shipping three near-identical entries for one spot a visitor sees as one thing. Held as a lead since 2026-09 (data/leads/brussels.json) for lack of a second source; shipped flagged per CLAUDE.md Step 2 rather than held indefinitely, since Brussels clears the depth-allowed impressions threshold (DATA.md, 147 impressions).",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "Broad compound leaves on long red-tinged stalks, unlike the horse chestnut and lime beside it; the trunk is the thickest of the three and stands closest to the square's antique stalls."
     }
   ],
   "hero_tree_id": "bru_003"

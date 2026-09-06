@@ -621,7 +621,8 @@
     "https://commons.wikimedia.org/wiki/File:Hyakusai-ji_30.jpg",
     "https://commons.wikimedia.org/wiki/File:Hyakusai-ji_Sennenbodaiju.jpg"
    ],
-   "status": "lead"
+   "status": "done",
+   "resolve_2026-09-06": "SHIPPED 2026-09-06 as hga_003, merged into data/cities/higashiomi.json; page copy (intro, meta_description, question fields, FAQ) updated to describe three trees and the new oldest-tree claim. Species is Tilia miqueliana (Miquel's Linden), confirmed against a search-summary error that mislabeled it Ficus religiosa. Roughly 1,000 years old per temple tradition, girth about 500cm, survived Oda Nobunaga's 1573 burning of the temple (scorched trunk, resprouted from the base) which the temple's own 2024 autumn material still references, the most recent dated evidence of the tree's continued presence. Coordinates confirmed tree-level from a geotagged 2012 Commons photo captioned with the tree's own name. No tree-specific Natural Monument designation found (the temple grounds as a whole carry National Historic Site status), so delivered flagged rather than register-backed. Sources: ja.wikipedia.org, biwako-visitors.jp (official Shiga tourism, access/hours/fee), mikawanoyasou.org (species ID). Ready to write and merge into data/cities/higashiomi.json."
   },
   {
    "name": "Sentsuzan no Ichii",
@@ -669,7 +670,10 @@
     "https://commons.wikimedia.org/wiki/File:Oohaku01.jpg",
     "https://commons.wikimedia.org/wiki/File:%E4%B8%8B%E6%9F%8F%E3%81%AE%E5%A4%A7%E6%9F%8F_-_panoramio.jpg"
    ],
-   "status": "lead"
+   "status": "held",
+   "species": "Chinese Juniper (Juniperus chinensis)",
+   "species_basis": "confirmed by multiple sources (bunka.nii.ac.jp Cultural Heritage Online, wood.jp giant-tree survey site) as ibuki/byakushin",
+   "held_2026-09-06": "HELD 2026-09-06 (famousjapan-remaining verify pass), not joining Otoyo. Real, well documented tree: actually stands in Shikoku-chuo City, EHIME Prefecture (not Kochi as the lead's 'join Otoyo' framing assumed), a National Natural Monument, Chinese Juniper (Juniperus chinensis), height ~15m, root girth 14.3m, girth at breast height 8.34m (834cm), estimated age over 1,200 years. Stands alone on windswept flat ground beside National Route 11's bypass, marked on maps and car-nav as a national monument; a hollow at the base has held a Jizo statue since 1783, evidence of long local devotion. Sources: bunka.nii.ac.jp (Cultural Heritage Online), wood.jp giant-tree survey, iyokannet.jp (Ehime tourism). REJECTED AS AN OTOYO JOINDER: straight-line distance to Otoyo's own tree (oty_001, Sugi no Osugi) is 27.3km, and the two towns are separated by the Shikoku mountain range in different prefectures; the only route found is a 30-minute EXPRESSWAY drive between the two town centres, car only, which does not meet CLAUDE.md's ~30-minute PUBLIC TRANSPORT day-trip boundary and is a stretch even by car once travel from each town centre to the actual tree/park is added. No Ehime mainland city is published yet for this tree to join (only Omishima, an island, exists in data/cities). Left as a well-verified lead for a future Shikoku-chuo or Iyo-Mishima (Ehime) city pass; no festival, rite or 'largest in Japan' record-holder claim was found in the time available, so it was not pushed through the single-tree-destination exception either."
   },
   {
    "name": "Shimura-Ken-no-ki",
@@ -768,9 +772,10 @@
     "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg",
     "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio_(1).jpg"
    ],
-   "status": "lead",
-   "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "held",
+   "species": "Katsura (Cercidiphyllum japonicum)",
+   "species_basis": "genus and likely species from multiple Japanese giant-tree survey sources describing it as katsura; not itself confirmed to species level beyond the common Japanese katsura",
+   "held_2026-09-06": "HELD 2026-09-06 (famousjapan-remaining verify pass), not joining Otoyo. Real, documented tree: an Ehime Prefecture Natural Monument katsura on the north slope of Mt. Tamatori (Tamatoriyama), elevation about 1,060m, near the Ehime-Kochi border, roughly 25km into the mountains from Iyo-Mishima Station. Trunk circumference 15.0m (1500cm), height 30m, estimated age over 300 years; the original central trunk is gone and the tree now grows as a fountain-like cluster of shoots from a hollow base, still vigorous. Described as one of the largest katsura trees in Shikoku, though no 'largest in Japan' claim was found. REJECTED AS AN OTOYO JOINDER for the same reason as Shimokashiawa no Taihaku (see that entry): 17.4km straight-line to Otoyo's oty_001 undersells the real access, which is a deep mountain road 25km from the nearest train station in a different prefecture, car-only and well past any public-transport day-trip boundary. No Ehime mainland city published yet. Left as a well-verified lead for a future Shikoku-chuo/Iyo-Mishima pass or a dedicated mountain-katsura single-tree assessment."
   },
   {
    "name": "Tate-no-Omayumi",
@@ -996,10 +1001,11 @@
     "https://commons.wikimedia.org/wiki/File:Katsushika-hachimangu,_keidai.jpg",
     "https://commons.wikimedia.org/wiki/File:Katsushika8manguuGinkgo.jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Ginkgo (Ginkgo biloba)",
    "species_basis": "confirmed by name and multiple sources (ja.wikipedia, Ichikawa city cultural-heritage page)",
-   "note": "CORRECTED COORDINATES, 2026-09-04 (famousjapan-batch1 verify pass). The original 'Senbon Icho' entry in this file carried coordinates 31.48857/130.742443, which land in Tarumizu, Kagoshima on an unrelated modern (planted from 1953) private ginkgo garden of ~1,200 trees, not this tree. The photographs attached to that entry (Katsushika-hachimangu filenames) actually belong to THIS shrine: Katsushika Hachimangu, 4-2-1 Yawata, Ichikawa City, Chiba Prefecture. This ginkgo is a real single-specimen candidate: goshinboku estimated over 1,200 years old, height 22m, root girth 10.2m, trunk girth 10.8m, named 'Senbon' (thousand-trunk) because many shoots rose from the base after lightning split the original trunk, National Natural Monument since 1931-02-20, white-snake legend attached. Sources: ja.wikipedia.org/wiki/葛飾八幡宮, city.ichikawa.lg.jp/culture/24242.html. Not verified to ship-ready in this pass (out of scope for a Kagoshima-focused batch, and outside this pass's four-candidate limit); worth a dedicated Ichikawa/Chiba pass, checking day-trip distance to Tokyo before deciding its container."
+   "note": "CORRECTED COORDINATES, 2026-09-04 (famousjapan-batch1 verify pass). The original 'Senbon Icho' entry in this file carried coordinates 31.48857/130.742443, which land in Tarumizu, Kagoshima on an unrelated modern (planted from 1953) private ginkgo garden of ~1,200 trees, not this tree. The photographs attached to that entry (Katsushika-hachimangu filenames) actually belong to THIS shrine: Katsushika Hachimangu, 4-2-1 Yawata, Ichikawa City, Chiba Prefecture. This ginkgo is a real single-specimen candidate: goshinboku estimated over 1,200 years old, height 22m, root girth 10.2m, trunk girth 10.8m, named 'Senbon' (thousand-trunk) because many shoots rose from the base after lightning split the original trunk, National Natural Monument since 1931-02-20, white-snake legend attached. Sources: ja.wikipedia.org/wiki/葛飾八幡宮, city.ichikawa.lg.jp/culture/24242.html. Not verified to ship-ready in this pass (out of scope for a Kagoshima-focused batch, and outside this pass's four-candidate limit); worth a dedicated Ichikawa/Chiba pass, checking day-trip distance to Tokyo before deciding its container.",
+   "resolve_2026-09-06": "SHIPPED 2026-09-06 as tok_017, merged into data/cities/tokyo.json; question_meta tree-count fixed at the same time. Straight-line distance to Tokyo's nearest published tree (tok_014/tok_016, Yogo no Matsu, Edogawa Ward) is only 3.4km, not the ~15.9km figure measured against Tokyo's centroid; both sit on the JR Sobu Line, one stop / 6 minutes apart with no transfer, plus a short walk each end. Confirmed alive via a dated 2024-11-29/30 shrine/city light-up event (maruchiba.jp). Two independent sources beyond the shrine's own site: ja.wikipedia.org and city.ichikawa.lg.jp, agreeing on 1931 National Natural Monument designation, ~1,200-year estimated age, 22m height, 10.8m girth at breast height. Full facts in verify_notes on the delivered record; ready to write and merge into data/cities/tokyo.json, with its true place name (Ichikawa, Chiba) stated honestly per the day-trip rule."
   }
  ],
  "blocked": [
