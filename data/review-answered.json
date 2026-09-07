@@ -50,8 +50,8 @@
       "at": "2026-09-06T08:48:35+00:00"
     },
     "2026-09-06": {
-      "note": "escalated the iOS testTappingAPinOpensItsTree regression FOR HIDDE (needs a simulator); confirmed both prior WARNs already fixed",
-      "at": "2026-09-06T22:44:38+00:00"
+      "note": "Both WARNs already fixed by c022899d before this run started: the three FAQ answers (canberra/gumeli/san-quirico-d-orcia) now say what IS here rather than explaining the publish threshold, and BUSINESS_RULE_PHRASES already lists 'below the usual four tree floor'/'four tree floor'. Contribute.swift anonymity-vs-account WARN is untouched (app copy, not a night run's to fix).",
+      "at": "2026-09-07T00:59:30+00:00"
     }
   }
 }
