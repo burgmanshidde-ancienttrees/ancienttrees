@@ -2,6 +2,68 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 (continuation) - Finished 4 stranded write-story passes: Pelham, Itoshiro, Yangpyeong ship; Osaka +1
+
+An earlier attempt this window stopped after 14 minutes having shipped
+nothing, with 106 of 120 minutes unspent. Checking claims and READY leads
+(both empty of new work) turned up something more valuable sitting
+uncommitted on disk from an even earlier, unrelated attempt: four fully
+verified AND fully written trees (`data/research/comfort-maple-verified.json`,
+`ginkgo-of-yongmunsa-temple-verified.json`, `itoshiro-no-osugi-verified.json`,
+`myokokuji-no-sotetsu-verified.json`) that a write-stories pass had already
+finished, never merged, never committed.
+
+- **Pelham, Ontario, Canada** (new, pel_001): the Comfort Maple, widely
+  reckoned Canada's oldest sugar maple and possibly Ontario's oldest tree
+  of any species, with an entire conservation area built around it.
+  Photo found and viewed against the Cadiz standard (full tree, autumn
+  colour, well exposed, CC BY-SA 2.0, Flickr via Commons) and approved.
+- **Itoshiro, Gifu, Japan** (new, ita_001): the Itoshiro Osugi, a
+  ~1,800-year cedar and the only Special National Natural Monument tree
+  in the prefecture, reached by 420 purpose-built steps. Photo viewed and
+  approved (whole tree, daylight, the trailhead sign visibly confirms the
+  age/girth figures used in the story).
+- **Yangpyeong, South Korea** (new, ymp_001): the Ginkgo of Yongmunsa
+  Temple, reckoned Korea's tallest ginkgo, Natural Monument No. 30. Photo
+  viewed and approved (full crown in autumn gold, matching the best_time
+  label exactly; KOGL Type 1, already precedented via Seoul's photos).
+- **Osaka +6th tree** (osa_006): Myokoku-ji's cycad colony ("the Homesick
+  Cycad") in neighbouring Sakai, 20-25 minutes by Nankai train from
+  Namba, inside the day-trip boundary. Two photo candidates were viewed
+  and both rejected (one a black-and-white archival print with a person
+  in it, one a satellite/aerial map, neither a photograph of the plant
+  itself), so it ships `photo.status: missing`. Updated Osaka's intro
+  (which had also drifted stale: it said "three of the four" trees were
+  camphors against an actual five, now corrected to "four of the six"),
+  one FAQ answer, and the Japanese translation overlay (new osa_006
+  entry, intro/FAQ text updated to match, trimmed to the 250-character
+  Contract C limit for Japanese).
+
+**famouspoland-verified.json (the Brzoza trio, xxx_003-005) got stories
+too, but stays HELD.** Below the 4-tree floor with no evidence of the
+wider fame the single-tree exception requires (a municipal legal
+designation and a forest-district webpage, not a tourist destination).
+Kept as finished research, not thrown away, for whenever a container
+opens.
+
+**Continued the standing `_bomenbieb-netherlands` verify claim** (a
+`night-run` claim from a "shelf refill, next batch" pass, 146 minutes
+left when picked up): the earlier attempt's followup file had only
+gotten through 1 of its assigned 18. Before dispatching more research,
+cross-checked all 17 remaining against the CURRENT full corpus by actual
+coordinates rather than trusting the batch's own stale `nearest_ours`
+field, and caught 2 that had already shipped under different names from
+this same lead pile the day before (`zwarte els paleis loo` = apd_010,
+`kasteellinden nijenrode` = bkl_001, both exact 0m coordinate matches),
+now marked `duplicate` with the reason on record so nobody re-researches
+them. Dispatched a verify agent on the remaining 15 (Voorburg, Amsterdam,
+two in Wilp, Meerssen, Houten, Grubbenvorst, Oisterwijk, Achterberg, De
+Steeg, Zutphen, Midlaren, Tull en 't Waal, Slochteren, Putten); result
+not yet in as this entry is written.
+
+Build (4878 pages), qa.py and superlatives.py (697 claims, no crown
+collisions) all clean. Pushed as `ab570643`.
+
 ## 2026-09-07 - Finished the standing _famous-france and _famous-poland verify claims: 5 trees, 3 new single-tree places plus one into Ghisonaccia
 
 Resumed into a window an earlier attempt had stopped 12 minutes in with 108

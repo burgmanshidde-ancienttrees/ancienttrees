@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -5704,6 +5704,13 @@
         "tokens": 0,
         "trees": 0,
         "note": "Rung-2: downloaded the xcresult from the 00:55 failed run and viewed its screenshot attachment instead of guessing a fifth timing fix. It showed the species picker open with Pedunculate Oak selected and the map filtered to one tree: MapTab floats the search field and filter chips over the full-bleed map, and the sweep's row-0 tap at map.frame.minY+80 was landing on the Species chip on every device, not on the map. Anchored the sweep below the Favourites chip's own frame instead, and added a fail-fast check for the species picker reopening. Tokens not tracked by an agent report; session work."
+      },
+      {
+        "target": "Pelham/Itoshiro/Yangpyeong/Osaka merge",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 4,
+        "note": "Merged 4 already-verified, already-written trees stranded uncommitted on disk from an earlier attempt (comfort-maple, ginkgo-of-yongmunsa-temple, itoshiro-no-osugi, myokokuji-no-sotetsu -verified.json), no research or write-stories dispatch needed. Verified 3 of 4 photos against the Cadiz standard via Wikimedia API lookups. Also fixed a pre-existing stale tree-count claim in Osaka intro. Tokens not tracked by an agent report; session merge work."
       }
     ]
   }
