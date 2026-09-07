@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dgy_001",
+    "name": "Gedenkeiche von Berga (Erinnerungseiche an die Völkerschlacht bei Leipzig)",
+    "species": "Oak (Quercus sp.)",
+    "age_estimate": "about 163 years (planted 1863)",
+    "age_min": 160,
+    "age_max": 165,
+    "girth_cm": null,
+    "location": {
+      "address": "Berga/Elster, Landkreis Greiz, Thuringia, near the edge of town (exact street not confirmed)",
+      "latitude": 50.750985,
+      "longitude": 12.156452,
+      "neighbourhood": "Berga/Elster"
+    },
+    "verified_sources": [
+      "https://commons.wikimedia.org/wiki/Category:Erinnerungseiche_an_die_V%C3%B6lkerschlacht_bei_Leipzig_(Berga/Elster)",
+      "https://www.komoot.com/de-de/highlight/6409660"
+    ],
+    "access": "Free, outdoors, publicly accessible; a marked Naturdenkmal with its own information board, also listed as a community hiking/biking waypoint",
+    "transport": "Berga (Elster) station on the Vogtlandbahn; the tree stands away from the town centre and exact walking distance was not confirmed this pass",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Distinct tree from Berga's much older, more famous 'Stadteiche'/'Deutsche Eiche' (the town's 300-500 year old coat-of-arms oak at/near the Markt, coords ~50.75208,12.16162, which nearly went to the saw in Dec 2012 and was saved by a public campaign, per de.wikipedia.org/wiki/Berga/Elster and heimatverein-berga-elster.de/eiche/*). This candidate is a SEPARATE, younger, purpose-planted memorial oak: citizens of Berga planted it on 18 October 1863 to mark the 50th anniversary of the Battle of Leipzig (Völkerschlacht), per its own Naturdenkmal information board (photographed by Wikimedia Commons contributor Geolina163, April 2019, 'Naturdenkmal Eiche von 1863, anlässlich des 50. Jahrestages der Völkerschlacht gepflanzt') and independently corroborated by a Komoot community waypoint ('Gedenkeiche von Berga') giving the same planting story and date. Age derived directly from the documented planting date (not a bridge claim: the source names this specific tree as the 1863 planting), so 2026 minus 1863 = 163 years; not narrowed further. No girth or height measurement found for this specific tree in the time available (do not confuse with the Stadteiche's 6.52m girth, which belongs to the other, older tree). Alive-now evidence is a dated April 2019 photograph of the tree/its sign plus an active February 2025 visitor comment on the same Komoot waypoint asking people to keep the area clean, which implies the site is still visited and maintained but does not itself describe the tree's crown or health; no photo newer than 2019 was found. Coordinates are a Komoot community-supplied point (50.7509850, 12.1564520), not an official register coordinate or a coordinate I geolocated myself from a photo, so location_precision is set to approximate rather than confirmed. Exact street address and walking distance from Berga town centre were not established this pass; a future pass or reader correction could tighten both. Species is recorded only as Oak (Quercus sp.); no source gave a specific species name, ask the reader."
+  },
+  {
+    "id": "dgy_002",
+    "name": "Jahrhunderteiche",
+    "species": "Oak (Quercus sp.)",
+    "age_estimate": "about 135 years (planted 1908 as an already 17-year-old sapling)",
+    "age_min": 130,
+    "age_max": 140,
+    "girth_cm": null,
+    "location": {
+      "address": "Jahrhundertplatz, at the junction of Kuckucksweg and Waldweg, southeastern edge of the Barmer Wald near Villa Foresta, Wuppertal-Heckinghausen",
+      "latitude": 51.260256,
+      "longitude": 7.215979,
+      "neighbourhood": "Barmer Wald, Wuppertal"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Jahrhunderteiche",
+      "https://www.barmer-anlagen.de/durch-den-barmer-wald-bis-ins-murmelbachtal-und-wieder-bergauf-ueber-den-ehrenfriedhof-zur-jahrhunderteiche-und-durch-das-murmelbachtal-entdeckungstour-6/"
+    ],
+    "access": "Free, a public forest path junction in the city-owned Barmer Wald, no restrictions",
+    "transport": "In Wuppertal's Barmer Wald near Villa Foresta; nearest bus stops serve Wuppertal-Barmen, exact stop and walk time not confirmed this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "An individually named, individually documented memorial oak (Gedenkbaum), not a generic forest tree: it has its own German Wikipedia article, a physical wooden plaque at the trunk ('Jahrhundert Platz zur Erinnerung an das 100jaehrige Bestehen der Stadt Barmen am 3.2.1908'), and its own named clearing, the 'Jahrhundertplatz'. Planted 1 April 1908 by the Barmer Verschoenerungsverein (a still-active local park association) to mark the centenary of Barmen's 1808 city charter, in a ceremony attended by the deputy mayor; the crown prince's wife's presence and the new Barmer Rathaus groundbreaking are recorded as part of the same 1908 jubilee (per de.wikipedia.org/wiki/Jahrhunderteiche, itself citing Ruth Meyer-Kahrweg's 'Denkmaeler, Brunnen und Plastiken in Wuppertal', Born-Verlag 1991). At planting the tree was already 17 years old (grown by the association beforehand), 7.77m tall, 16cm trunk diameter, 51cm circumference at 1m: that 51cm girth is a HISTORICAL 1908 figure and must never be used as today's girth (118 years of growth since), so girth_cm is left null rather than misleading the thickest-trees ranking; age is derived from the documented 1908 planting plus the documented age-at-planting (17), giving germination around 1891 and roughly 135 years old today, not a bridge claim since the source states this specific tree's own age at planting. Location_precision set to confirmed: Wikipedia's own {{Coordinate}} landmark template (51.260256, 7.215979) and the Wikimedia Commons category's independently geocoded point (51.260300, 7.215981) agree to within a few metres. Alive-now evidence: the Barmer Verschoenerungsverein, the same organisation that planted the tree and still maintains the Barmer Wald today, scheduled a guided walk naming the Jahrhunderteiche as a waypoint for 5 December 2025 (Entdeckungstour 6, later cancelled for unrelated reasons, presumably weather), which is strong evidence the tree and its clearing are still an active, promoted public landmark. No photo newer than the 2008 Commons set was checked directly for canopy condition, so a fresher photograph is still worth chasing. Species recorded only as Oak (Quercus sp.); no source gives the exact species (most likely Quercus robur, the regional default, but not confirmed), ask the reader."
+  },
+  {
+    "id": "dgy_003",
+    "name": "Schlosseiche bei Eisolzried",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 500 to 700 years (sources disagree)",
+    "age_min": 350,
+    "age_max": 700,
+    "girth_cm": 960,
+    "location": {
+      "address": "Meadow beside the road at the edge of Eisolzried, towards Lauterbach, Gemeinde Bergkirchen, Landkreis Dachau, Bavaria",
+      "latitude": 48.259351,
+      "longitude": 11.33575,
+      "neighbourhood": "Eisolzried, Bergkirchen"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Schlosseiche_bei_Eisolzried",
+      "https://www.monumentale-eichen.de/bayern/eisolzried/"
+    ],
+    "access": "Free, stands on a meadow directly beside the road at the village edge (a former waymarker tree at a path crossing); viewable from the roadside. Exact public/private boundary of the meadow itself was not confirmed via OSM this pass",
+    "transport": "Rural Landkreis Dachau, no rail station nearby; reachable by car or bike from Bergkirchen/Dachau, exact bus stop and walk time not confirmed this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A nationally documented monumental oak: its own German Wikipedia article (citing the Landkreis Dachau Naturdenkmal ordinance of 8 July 1997, register number 174.113-05, and multiple published tree surveys), and the specialist site monumentale-eichen.de by Rainer Lippert (field-measured personally in 2017). The Deutsche Baumarchiv (German Tree Archive) counts it among the ten thickest naturally-grown single-stem oaks in Germany and among its 'nationally significant trees' (NBB). Formerly stood in the park of Schloss Eisolzried, demolished around 1800; documented since 1737 (Salbuch of the Hoch-Adel-Ruffinischen Hofmarsch Eisolzried, describing a 'lieblich Aich-Waeldl'). Photographed and described in Friedrich Stuetzer's 1900 tree book as the 'Wegweisereiche' (signpost oak), then already reckoned 700 years old with an 8m girth at man-height. AGE DISAGREEMENT, recorded per the flag rule rather than picked: official Untere Naturschutzbehoerde ~600 years; forest scientist Hans Joachim Froehlich (1990) ~700 years; Deutsches Baumarchiv (2009) 350-700 years, noting the tree's poor gravelly soil justifies an age above other similarly-thick oaks; monumentale-eichen.de's own working figure is ~500 years. Recorded age_min/age_max spans the full disagreement (350-700) rather than picking a winner. GIRTH: breast-height circumference measured 8.00m in 1900 (Stuetzer) and again 8.00m in 1990 (Froehlich), then 9.60m in 2017 (Lippert, direct field measurement) -- growth of about 1.6m over 117 years, ~1.4cm/year, which Lippert's own site calls slightly below average for a monumental oak; girth_cm here is the current (2017) figure, 960cm. Also recorded: waist/narrowest-point circumference 8.84m (2017) and 8.59m (Deutsches Baumarchiv, 2001); height 23m (2017)/25m (Stuetzer 1900); crown diameter 18m (2017)/25m (1900), i.e. the crown has thinned somewhat over the century even as the trunk thickened. ALIVE: Lippert's 2017 field visit found it 'in recht gutem Zustand' (in quite good condition) for its age, crown still fairly densely leaved; a July 2016 HolidayCheck visitor review independently confirms a full, leafy crown and describes the hollow, grille-covered trunk. Trunk is fully hollow (documented since at least 1900) and grilled shut; on 9 December 2003 an unknown person set the hollow interior alight with petrol, extinguished by the fire brigade, tree survived. A German Wikipedia passage (sourced to a 2009 Merkur Online article, not corroborated by the 2017 monumentale-eichen.de visit or the 2016 HolidayCheck review) describes a nearby operations hall built on the site of a former small wooden shed, said by Bund Naturschutz to have damaged the tree's roots and altered wind/light conditions, raising an endangerment concern as of 2009; not independently re-checked this pass, worth a fresh look. Coordinates agree closely between Wikipedia's own landmark-typed {{Coordinate}} (48.259351, 11.33575) and monumentale-eichen.de's independently surveyed point (48.259395, 11.335761), well within normal GPS spread for one tree, hence confirmed."
+  }
+]
