@@ -1,6 +1,70 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (session, Hidde testing in Nara) - The picker gets an honest way out, and our own rows stop counting as readers
+
+He was testing the app in Japan and sent four things. All four were right and
+three of them were faults of ours going back further than today.
+
+**"its hard to see which tree is what, we need a im not sure button when
+chosing".** The picker offered two ways out and an unsure person had to lie
+either way: picking one is a guess that puts their photograph on the wrong
+trunk, and "None of these" files a tree we already map as a new one, so a
+duplicate enters the database on the strength of somebody hesitating. **"I am
+not sure which"** now claims no tree, ticks nothing off, keeps the photograph
+and sends it with the shortlist we showed. The convention is iNaturalist's,
+where an observation may carry no identification at all and other people
+resolve it; their own guidance is why ours carries the shortlist rather than a
+blank, because a blank drops out of every queue.
+
+**And the answer we already had was not travelling.** `how_to_recognise` is the
+one line that says which of the trees in front of you we mean. recognise.py
+writes it, the tree page prints it under the very heading the app's sheet uses,
+530 trees carry one, and the app feed did not include the field. It was written
+for somebody standing between two limes and only ever reached the laptop. It is
+in the feed now, live, and the picker rows print it. Rows also carry a compass
+word, so "40 m" reads "40 m north-east".
+
+The identify screen also had no launch argument, so nothing had ever
+photographed it: it is reachable only by standing within 80 metres of two of our
+trees with a camera, which a simulator cannot do. `-collect-identify` opens it,
+it is in both screen lists, appfit measures it (0 findings on 32 screens), and
+three tests cover the compass, the label and the rule that an unsure sighting is
+not a tree you added.
+
+**"everything in nara today is me" and "i got a lot of emails with feedback".**
+The digest has known his account since 2026-09-02 and kept the list privately,
+so the two scripts that needed it most could not see it. His own photograph of
+the Roben-sugi was queued as a reader's contribution and published as one, the
+mailer thanked him for each of his own submissions all day, and every sighting
+he made stood ready to enter the leads file as supply. The list moved to
+`data/our-accounts.json`, read through `scripts/ours.py` by the digest, the
+sightings inbox and the contributor mailer. Ours are recorded as handled and go
+no further; nothing is deleted, so any of them can still be published on
+purpose.
+
+**"we need to figure out how to judge which ones are worth the database for
+all. dont just add all".** The bar was never missing, an order was: every
+photograph arrived in one flat list costing the same minute of attention
+whether it closed a real gap or was the fourth picture of a tree that already
+has a good one. Each queue entry now carries what it is WORTH, which is the
+only half a script can answer: closes a gap, might beat what is there, matched
+by distance so check the trunk, poorly lit. The queue sorts on it. Nothing is
+decided or deleted, and the Weichselboom rule stands: a poorly lit photograph
+of a tree that has none still ships when it is the only one.
+
+Deploy and smoke green, feed verified live. The app changes need a TestFlight
+build before they reach his phone.
+
+**FOR HIDDE.** One thing I could not fix from here: the app's own table in the
+digest still counts you as a stranger. Site and submission rows are excluded by
+account, but PostHog carries only an install id, made fresh on each install, and
+yours in Japan is newer than the 2026-09-03 cutoff that separates our testing
+from everybody else's. So yesterday's 17 sightings, 21 opens and the first
+tree_saved are probably yours. Telling those apart needs either your install id
+(the app could print it in Settings) or the app stamping a staff flag, which
+would link a measurement to an account and is your call, not mine.
+
 ## 2026-09-07 (continuation 4) - Prague +3, Nara +4 from reader photos, 11 submissions answered
 
 Resumed a window a still earlier attempt had stopped after 57 minutes
