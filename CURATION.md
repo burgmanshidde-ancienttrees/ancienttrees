@@ -2,6 +2,17 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 (continuation 7) - Leiden 18 to 20: two Hortus trees a prior write pass left unmerged
+
+`leiden-lrmb-written.json` carried 8 written trees; the prior continuation
+merged 6 (12 to 18) and left lei_012 (Fern-leaved Beech of the Nut Field)
+and lei_013 (Grafted Ash of the Hortus) on disk. Both were fully verified
+and written, needed only merging, `paid_entry: true` (missing, caught by
+preflight against their Hortus siblings) and count-line fixes (eighteen to
+twenty, eight to ten, English and Dutch). Leiden: 18 to 20 trees, both new
+ones paid Hortus entries (paid-entry share unchanged at 50%). Deleted both
+now-empty research files. Build, qa.py and preflight clean.
+
 ## 2026-09-07 (continuation 6) - Leiden 12 to 18: 6 free trees from the Dutch LRMB register
 
 Same window as the Berlin and Milan passes below, after both came back
