@@ -57,6 +57,17 @@ struct TreeMap: UIViewRepresentable {
     /// still what the search result and the debug argument want: those move the
     /// camera and leave you on the map, which is his 2026-08-24 ruling.
     var onSelectTree: ((String) -> Void)? = nil
+    /// Fires once the renderer has actually drawn what the style asked for:
+    /// all requested tiles in, no camera move in flight. This exists so a UI
+    /// test can wait for pins to be tappable instead of sleeping and hoping,
+    /// which is what testTappingAPinOpensItsTree did through five straight
+    /// failures (2026-09-06/07) before anyone checked whether MapLibre
+    /// publishes an idle signal at all. It does:
+    /// MLNMapViewDelegate.mapViewDidBecomeIdle(_:), documented as firing when
+    /// no camera transition is in progress and all currently requested tiles
+    /// have loaded. That is the exact race the old comments here described
+    /// as unobservable.
+    var onMapIdle: (() -> Void)? = nil
     var focus: CLLocationCoordinate2D?
     /// Whether what this map is aimed at came from the phone or from a guess.
     ///
@@ -450,6 +461,15 @@ struct TreeMap: UIViewRepresentable {
                      routeIsReal: p.routeIsReal, clusters: p.clusters, on: map)
             }
             startBreathing(on: style)
+            }
+        }
+
+        /// The signal `onMapIdle` forwards. MapLibre calls this on the main
+        /// thread same as the delegate method above, and the same
+        /// nonisolated-protocol reasoning applies.
+        func mapViewDidBecomeIdle(_ mapView: MLNMapView) {
+            MainActor.assumeIsolated {
+                parent.onMapIdle?()
             }
         }
 

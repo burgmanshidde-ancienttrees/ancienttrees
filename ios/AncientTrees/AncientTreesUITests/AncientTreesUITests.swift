@@ -415,42 +415,27 @@ final class AncientTreesUITests: XCTestCase {
         // Let the tiles and the pins arrive. Where the camera ends up does not
         // matter to this test any more; that it has drawn pins does.
         //
-        // A FIXED SLEEP HERE WAS THE BUG, diagnosed 2026-09-06 without a
-        // simulator, from the evidence that was available: this test started
-        // failing with "opened no tree at all" on 2026-09-06 with no commit
-        // touching ios/ between the last green run and the first red one, so
-        // the app did not regress, something got slower than 5 seconds. The
-        // catalogue crossed 2700 trees the same week (SweepFrames' own
-        // comment already names it as "2.5 MB of JSON" back when it was
-        // smaller). SweepFrames waits on a real element for up to 20 seconds
-        // before ever touching the screen it photographs, for exactly this
-        // reason ("nothing exists for a moment after launch... a slow machine
-        // does not produce an empty measurement"), and this test never got
-        // that treatment because it predates the catalogue being this size.
-        // map-count is the same signal this test already reads a few lines
-        // below to find the visible map area, so waiting on it here costs
-        // nothing new to maintain.
-        XCTAssertTrue(app.staticTexts["map-count"].waitForExistence(timeout: 20),
-                      "the sheet never reported a count, so the catalogue or the pins never arrived")
+        // FOUR PRIOR FIXES (2026-09-06/07) all guessed at how long to sleep,
+        // because every comment that used to stand here said MapLibre
+        // publishes no signal for "the style is loaded and the tiles are in"
+        // and that the wait had to be blind. That claim was never checked
+        // against the actual delegate protocol, and it was wrong:
+        // MLNMapViewDelegate.mapViewDidBecomeIdle(_:) is documented (see
+        // MLNMapViewDelegate.h) to fire exactly when no camera transition is
+        // running and all currently requested tiles have loaded, which is
+        // the exact race every prior fix here was sleeping around. TreeMap
+        // now forwards it as `onMapIdle`, and MapTab surfaces it as the
+        // "map-idle" marker below. Waiting on a real signal instead of a
+        // guessed duration is why this can stop growing its own timeout.
+        XCTAssertTrue(app.otherElements["map-idle"].waitForExistence(timeout: 25),
+                      "MapLibre never reported itself idle, so tiles or the style never finished loading")
 
-        // map-count IS NOT THE SIGNAL IT LOOKS LIKE, diagnosed 2026-09-06 after
-        // the wait above shipped and the very next scheduled run failed the
-        // same way. inReach (MapTab.swift) counts catalogue.trees against
-        // mapRegion, both pure Swift state that settle as soon as the
-        // catalogue decodes; the pins this test actually taps come from
-        // MapLibre's own style load (mapView(_:didFinishLoading:) installing
-        // MapLayers, itself gated on a style JSON and glyphs fetched over the
-        // network) and its own tile render, neither of which that label
-        // observes. So the text can read "24 trees you can see" while the
-        // map underneath is still blank tarmac. There is no accessibility
-        // signal for "the style finished loading" to wait on instead (asked
-        // and confirmed absent from what MLNMapView publishes), so the sweep
-        // itself is retried with growing waits, the same shape as
-        // -retry-tests-on-failure one level up but for a race this test can
-        // absorb on its own rather than spending a whole extra test
-        // iteration on.
-        for attempt in 0..<4 {
-            Thread.sleep(forTimeInterval: attempt == 0 ? 1.5 : Double(attempt) * 4)
+        // The retry loop stays as a safety net rather than the primary wait:
+        // "idle" is the renderer's word for its own state, not a promise that
+        // SwiftUI has painted the frame that depends on it, and a cluster tap
+        // mid-sweep can still need a moment to zoom and settle.
+        for attempt in 0..<3 {
+            if attempt > 0 { Thread.sleep(forTimeInterval: Double(attempt) * 3) }
 
             // ONLY THE PART OF THE MAP YOU CAN SEE. The tree-map element is the
             // whole screen, list included, so a normalised offset is measured
@@ -518,7 +503,7 @@ final class AncientTreesUITests: XCTestCase {
         shot.name = "the-map-that-would-not-open-a-tree"
         shot.lifetime = .keepAlways
         add(shot)
-        XCTFail("sweeping the visible map opened no tree at all, across four attempts")
+        XCTFail("sweeping the visible map opened no tree at all, across three attempts")
     }
 
     /// THE MAP, DRIVEN, several times over, because he asked for exactly that.
