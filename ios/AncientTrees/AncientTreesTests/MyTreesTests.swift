@@ -527,13 +527,23 @@ struct WhenPermissionIsRefused {
     /// decoder, so these tests break the day the feed's shape does.
     private static func feedTree(id: String, lat: Double, lng: Double,
                                  precision: String,
-                                 species: String = "Japanese Cedar (Cryptomeria japonica)") -> Tree {
+                                 species: String = "Japanese Cedar (Cryptomeria japonica)",
+                                 photo: Bool = false) -> Tree {
+        let pic = photo
+            ? """
+              {"url":"https://ancienttrees.app/photos/x.jpg","license":null,
+               "attribution":null,"width":null,"height":null,
+               "thumb":"https://ancienttrees.app/photos/x.jpg",
+               "hero":"https://ancienttrees.app/photos/x.jpg",
+               "credit_required":false,"attribution_short":null,"credit_line":null}
+              """
+            : "null"
         let json = """
         {"id":"\(id)","name":"\(id)","species":"\(species)","age":null,
          "age_min":null,"age_max":null,"lat":\(lat),"lng":\(lng),
          "city":"Nara","city_slug":"nara","country":"Japan","neighbourhood":null,
          "access":"","transport":null,"precision":"\(precision)","best_time":null,
-         "peak":null,"story":"","how_to_recognise":null,"url":"","photo":null}
+         "peak":null,"story":"","how_to_recognise":null,"url":"","photo":\(pic)}
         """
         return try! JSONDecoder().decode(Tree.self, from: Data(json.utf8))
     }
@@ -566,6 +576,37 @@ struct WhenPermissionIsRefused {
         #expect(CollectSheet.agePhrase("about 300 years old") == "about 300 years old")
         #expect(CollectSheet.agePhrase(nil) == nil)
         #expect(CollectSheet.agePhrase("  ") == nil)
+    }
+
+    /// A first that is actually a first, and nothing where there is none.
+    ///
+    /// The rule the references settled (CONVENTIONS.md 2026-09-07): the first
+    /// photograph of a tree is geocaching's FTF and is marked; "first in your
+    /// own collection" is Strava's segment case and is not, because every tick
+    /// is one; first of a KIND is Merlin's life list and is.
+    @Test func onlyARealFirstIsMarked() {
+        let noPhoto = Self.feedTree(id: "nra_010", lat: 34.68, lng: 135.84,
+                                    precision: "confirmed")
+        let ticked = ["nra_002": Saved.Entry(treeId: "nra_002", visitedAt: Date(),
+                                             savedAt: Date(), favourite: false)]
+        #expect(CollectSheet.firstOf(tree: noPhoto, visited: ticked, trees: [noPhoto])
+                == "Nobody had photographed this one. Yours is the first.")
+
+        // A tree that already has a photograph, in a city where they have
+        // already ticked one off: nothing to mark.
+        let shot = Self.feedTree(id: "nra_003", lat: 34.68, lng: 135.84,
+                                 precision: "confirmed", photo: true)
+        let sameCity = ["nra_002": Saved.Entry(treeId: "nra_002", visitedAt: Date(),
+                                               savedAt: Date(), favourite: false)]
+        let other = Self.feedTree(id: "nra_002", lat: 34.68, lng: 135.84,
+                                  precision: "confirmed", photo: true)
+        #expect(CollectSheet.firstOf(tree: shot, visited: sameCity,
+                                     trees: [shot, other]) == nil,
+                "an ordinary tick was dressed up as a milestone")
+
+        // Nothing ticked anywhere yet.
+        #expect(CollectSheet.firstOf(tree: shot, visited: [:], trees: [shot])
+                == "The first tree in your collection.")
     }
 
     /// Every simulator, and any iPad without a rear camera.

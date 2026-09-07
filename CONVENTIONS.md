@@ -25,6 +25,90 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Helping somebody be SURE which one they found (2026-09-07)
+
+Hidde, testing in Nara: "deze hele flow zou je moeten benchmarken... als de
+gebruiker overtuigd is is het prima maar anders moeten we helpen sturen."
+
+**Reference: Merlin Bird ID (Cornell Lab).** Photo ID offers a SHORT LIST of
+possible matches and the confirmation is an explicit tap, "This is my bird!",
+which is what puts it on your life list. The instruction Cornell gives with it
+is the part worth copying: Merlin's suggestion is the BEGINNING, and you decide
+by comparing the bird against Merlin's example photographs, sounds and species
+details. The app's job is to hand you the material to compare with; the call is
+yours.
+
+Read across: our equivalent of "example details" is `how_to_recognise` and the
+tree's own photograph. That is why the line reaching the phone matters more
+than any wording on the sheet. Nara had none on any of its fourteen trees, so
+there was nothing to compare against and the question was unanswerable.
+
+**Reference: geocaching.** Three log types, and the second one is the point:
+Found it, **Didn't find it (DNF)**, Write note. DNF is first-class and actively
+encouraged, and Groundspeak's own blog says why: a DNF tells other players the
+cache is harder than advertised, tells the owner to check their coordinates,
+and **a SERIES of them means the thing is missing or in the wrong place.**
+
+Read across, and this is the argument for the button existing at all: "I am not
+sure which" is a DNF. It is not a lost contribution, it is the only signal we
+have that a pin is wrong or a description is missing. Two of them on one tree
+should put that tree in front of us, exactly as a run of DNFs does for a cache
+owner.
+
+**What does NOT transfer: photographing a leaf to confirm.** It is the obvious
+idea and it answers the wrong question. A leaf settles the SPECIES, and the
+case that defeats people is three Japanese cedars 150 metres apart, where the
+species is identical and the individual is not. What settles an individual is
+the surroundings in the frame (the hall behind it, the path it stands on), a
+geotag, or a tape round the trunk. So when we ask for a second photograph, ask
+for a step BACK, not a step closer.
+
+Read 2026-09-07:
+- https://support.ebird.org/en/support/solutions/articles/48001271537-merlin-photo-id-in-manage-media
+- https://www.geocaching.com/blog/2013/02/why-to-log-a-dnf/
+- https://www.geocaching.com/blog/2014/03/dnf-for-the-good-of-all-humanity/
+
+---
+
+## Marking a first (2026-09-07)
+
+Hidde: "je wilt mensen die als eerste een foto toevoegen soort van echt
+felicitatie geven. Ook als ze niet de eerste zijn maar als eerste toevoegden
+aan hun bomen. Je hebt m gevonden!"
+
+Two different things, and the references disagree about the second on purpose.
+
+**Reference: geocaching's FTF.** First To Find is the most popular unofficial
+statistic in the hobby, people travel to claim one, and owners leave a gift for
+whoever signs the log first. It is not an official feature at all; the community
+built it, which is the strongest evidence there is that being first matters to
+the kind of person who does this.
+
+Ours is exact and rarer than theirs: **the first photograph of a tree.** Around
+two thousand of ours have never been photographed by anybody, so the chance is
+real, and unlike a geocache FTF it leaves something behind for every visitor
+afterwards.
+
+**Reference: Strava.** No personal record on the FIRST time you ride a segment.
+Achievements start on the second, because a first has nothing to compare
+against and marking it would make the mark meaningless.
+
+**Reference: Merlin's life list.** A species you have never recorded IS marked,
+every time. The difference from Strava is scarcity: you cannot see your first
+kingfisher twice.
+
+Read across, and it decides the case Hidde raised. "First in your own trees" is
+Strava's case, not Merlin's: every tree you tick is one you have never ticked,
+so celebrating it celebrates nothing. What is Merlin-shaped and worth marking is
+the first of a KIND: your first tree at all, your first in this city, your first
+of this species. Those are lifers. The tick itself stays quietly satisfying.
+
+Read 2026-09-07:
+- https://www.geocaching.com/blog/2014/11/how-to-claim-a-geocaching-ftf-first-to-find/
+- https://support.strava.com/en-us/articles/15402021-your-activity-s-top-results
+
+---
+
 ## Saying "I do not know" when the app asks you to choose (2026-09-07)
 
 **Reference: iNaturalist.** An observation may carry no identification at all.
