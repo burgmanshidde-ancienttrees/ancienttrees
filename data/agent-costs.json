@@ -5828,6 +5828,15 @@
     "note": "batch2: 4 named single-place candidates, 2 delivered (Dominik Oak in Poleski National Park, Perkun Oak in Pisz Forest), 2 correctly blocked as dead/misidentified (Jagiello Oak fell 1974, Lublin famous baobab was actually a black poplar felled 2017); also deleted a stale duplicate Dab Czech leads entry",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "famouspoland-batch2-write",
+    "kind": "write",
+    "tokens": 60000,
+    "trees": 2,
+    "note": "2 single-tree Polish destinations written (Dominik Oak with no documented age, Perkun Oak with a flagged uncorroborated 600-800y claim); merged into new city files poleski-national-park/pisz-forest by the main session, which also trimmed pisz-forest question_context to clear Contract B",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
