@@ -333,6 +333,9 @@ final class Sightings {
              paidEntryRaw: false,
              transportRaw: nil,
              story: s.note,
+             // Your own tree needs no line telling it apart from its
+             // neighbours: you are the only person who has one.
+             recogniseRaw: nil,
              url: "",
              // You photographed it where you stood, which is the one field a
              // tree of yours is never vague about.

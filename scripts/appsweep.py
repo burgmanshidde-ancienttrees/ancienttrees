@@ -248,6 +248,7 @@ def screens(sub):
         # The step a photograph with no location of its own leads to. 8, like
         # place-pin: it is a map and it has tiles to fetch.
         ("collect-place", ["-collect", "-collect-place"], 8),
+        ("collect-identify", ["-collect", "-collect-identify"], 8),
         ("search",        ["-search=lis"], 5),
         # 12, not 7. This walk has no cached route, so since 2026-08-25 it
         # asks Valhalla for one before the line can be drawn, and on the SE the

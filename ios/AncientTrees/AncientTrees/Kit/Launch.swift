@@ -54,4 +54,11 @@ public enum Launch {
     /// screen would ship having never been looked at. Same reason every other
     /// argument in the sweep exists.
     public static let collectPlace = ProcessInfo.processInfo.arguments.contains("-collect-place")
+
+    /// The collect flow's "which one is it" step, for the same reason as the
+    /// one above and with the same cost if it is missing: it is reached only by
+    /// photographing a tree while standing within eighty metres of two of ours,
+    /// which a simulator cannot do, so the screen shipped having never been
+    /// looked at once. It is also the screen Hidde could not read in Nara.
+    public static let collectIdentify = ProcessInfo.processInfo.arguments.contains("-collect-identify")
 }
