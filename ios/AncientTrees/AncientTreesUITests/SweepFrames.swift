@@ -46,6 +46,7 @@ final class SweepFrames: XCTestCase {
         ("collect-away", ["-collect", "-at=52.03,5.91"], "spot-sheet"),
         ("collect-place", ["-collect", "-collect-place"], "collect-place"),
         ("collect-identify", ["-collect", "-collect-identify"], "collect-not-sure"),
+        ("collect-ticked", ["-collect", "-collect-ticked"], "collect-done"),
         ("walk-begin",   ["-begin=amsterdam|Plantage"], "walk-mode"),
         ("search",       ["-search=lis"], nil),
         // "collection-tab", matching appsweep.py. It said "yours" here and
