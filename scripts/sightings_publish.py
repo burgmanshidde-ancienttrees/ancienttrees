@@ -183,8 +183,8 @@ def mail_for(entry, reason):
     subject = "Your photograph is on the tree's page"
     body = (
         f"Hi {name},\n\n"
-        f"Your photograph of {entry['tree_name']} in {entry['city']} is now on its page, "
-        f"with your name under it:\n{page}\n\n"
+        f"Your photograph of {entry['tree_name']} in {entry['city']} is now on its page:\n"
+        f"{page}\n\n"
         f"Thank you. A photograph taken by somebody who stood in front of the tree is "
         f"worth more to the page than anything we could find ourselves.\n\n"
         f"Is there another tree near you that we should have on the map? Add it in the app "
