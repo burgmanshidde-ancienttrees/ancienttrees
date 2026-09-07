@@ -5696,6 +5696,15 @@
         "trees": 0,
         "note": "Rung-2 investigation of the broken iOS CI run: read two failing run logs, downloaded and viewed the appsweep screenshot artifact, diagnosed a fixed 5s test sleep racing a catalogue that passed 2700 trees (not an app regression), and fixed the test to wait on a real element instead. No content work this window. Tokens not tracked by an agent report; session work."
       }
+    ],
+    "2026-09-07": [
+      {
+        "target": "ios.yml (testTappingAPinOpensItsTree)",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Rung-2: downloaded the xcresult from the 00:55 failed run and viewed its screenshot attachment instead of guessing a fifth timing fix. It showed the species picker open with Pedunculate Oak selected and the map filtered to one tree: MapTab floats the search field and filter chips over the full-bleed map, and the sweep's row-0 tap at map.frame.minY+80 was landing on the Species chip on every device, not on the map. Anchored the sweep below the Favourites chip's own frame instead, and added a fail-fast check for the species picker reopening. Tokens not tracked by an agent report; session work."
+      }
     ]
   }
 }
