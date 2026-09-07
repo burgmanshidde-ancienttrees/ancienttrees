@@ -100,6 +100,77 @@ def report():
     print("\n%d trees have neither a line nor a photograph." % sum(r[2] for r in rows))
 
 
+def stuck(limit=40):
+    """The trees that would actually defeat somebody standing in front of them.
+
+    Added 2026-09-07, after Hidde tried to collect a cedar in Nara and could not
+    tell which one it was: "I don't think we can fix the data, we should design
+    the flow of adding a tree in a way that people either get confirmation by
+    photo or description, or honesty in not knowing."
+
+    He is right, and this is the list that flow needs. Three conditions have to
+    hold at once before a tree is a problem, and the third is the one nothing
+    was measuring:
+
+      no recognition line   nothing to read
+      no photograph         nothing to compare against
+      company               at least one OTHER tree that a government has
+                            called remarkable within 25 metres
+
+    The third matters more than it sounds. A tree with neither a line nor a
+    picture, standing alone in an empty square, needs nothing: you can see there
+    is only one. The same tree in Amsterdam's canal belt, where our pins average
+    fifteen registered remarkable trees within a hundred metres, is
+    unanswerable. Counting "missing a line" without counting the company is how
+    a target list ends up pointing at the wrong cities, which is exactly what
+    the first cut of this did.
+
+    Register rows, not all trees: a state body already judged each of these
+    remarkable, so they are the lookalikes a visitor would actually hesitate
+    between. It undercounts, because the ground holds ordinary old trees too,
+    and it undercounts hardest where we hold no register at all (Japan, most of
+    Asia). A zero here means no data, never no trees.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import corroborate
+    table = corroborate.rows()
+    imp = demand()
+    out = []
+    for path, doc in cities():
+        slug = os.path.basename(path)[:-5]
+        for t in doc["trees"]:
+            if t.get("how_to_recognise"):
+                continue
+            ph = t.get("photo") or {}
+            if ph.get("url") and ph.get("status") != "held":
+                continue
+            loc = t.get("location") or {}
+            if loc.get("latitude") is None:
+                continue
+            hits = corroborate.nearest(loc["latitude"], loc["longitude"], table,
+                                       within=25, limit=20)
+            # Our own entry usually sits in the register too, at nearly zero
+            # metres, and a tree is not company for itself.
+            company = [h for h in hits if h["distance_m"] > 3]
+            if not company:
+                continue
+            out.append((imp.get(slug, 0), len(company), slug, t["id"],
+                        t.get("name", ""), t.get("location_precision")))
+    out.sort(key=lambda r: (-r[0], -r[1]))
+    print("%d trees have nothing to match against AND company within 25 m.\n" % len(out))
+    print("Ordered by the city's search impressions, then by how crowded it is.")
+    print("A city with no register of ours prints nothing here, which is missing")
+    print("data rather than an empty park.\n")
+    print("%-16s %6s %7s %-11s %s" % ("city", "imprs", "company", "pin", "tree"))
+    for i, c, slug, tid, name, prec in out[:limit]:
+        print("%-16s %6d %7d %-11s %s" % (slug[:16], i, c, prec or "?", name[:44]))
+    seen = {}
+    for i, c, slug, tid, name, prec in out:
+        seen[slug] = seen.get(slug, 0) + 1
+    top = sorted(seen.items(), key=lambda kv: -kv[1])[:12]
+    print("\nBy city: " + ", ".join("%s %d" % (k, v) for k, v in top))
+
+
 def brief(slug):
     path = os.path.join(ROOT, "data", "cities", slug + ".json")
     if not os.path.exists(path):
@@ -168,9 +239,14 @@ def apply(src):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--stuck", action="store_true",
+                    help="trees with no line, no photo and remarkable company nearby")
     ap.add_argument("--brief")
     ap.add_argument("--apply")
     args = ap.parse_args()
+    if args.stuck:
+        stuck()
+        return 0
     if args.brief:
         return brief(args.brief)
     if args.apply:
