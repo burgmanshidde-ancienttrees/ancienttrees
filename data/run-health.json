@@ -6419,6 +6419,78 @@
    ],
    "trees": 4,
    "logged": true
+  },
+  {
+   "started": "2026-09-06T23:09:53+00:00",
+   "date": "2026-09-07",
+   "run_id": "34062203352",
+   "minutes": 62.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 454,
+   "denials": 44,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(date), Bash(echo), Bash(for), Bash(gh), Bash(if), Bash(jobs), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(uname), Bash(wc)",
+   "ended": "success",
+   "tokens": 27005601,
+   "claims_held": [
+    "_famous-japan",
+    "_famous-canada",
+    "_famous-portugal"
+   ],
+   "commits": 28,
+   "cities_touched": 12,
+   "cities": [
+    {
+     "city": "salzburg",
+     "trees": 4
+    },
+    {
+     "city": "altrier",
+     "trees": 1
+    },
+    {
+     "city": "amerongen",
+     "trees": 1
+    },
+    {
+     "city": "apeldoorn",
+     "trees": 1
+    },
+    {
+     "city": "breukelen",
+     "trees": 1
+    },
+    {
+     "city": "laren-gelderland",
+     "trees": 1
+    },
+    {
+     "city": "brighton",
+     "trees": 0
+    },
+    {
+     "city": "freiburg",
+     "trees": 0
+    },
+    {
+     "city": "fujikawaguchiko",
+     "trees": 0
+    },
+    {
+     "city": "leiden",
+     "trees": 0
+    },
+    {
+     "city": "miyazaki",
+     "trees": 0
+    },
+    {
+     "city": "nagoya",
+     "trees": 0
+    }
+   ],
+   "trees": 9,
+   "logged": true
   }
  ],
  "schedule_changes": [
