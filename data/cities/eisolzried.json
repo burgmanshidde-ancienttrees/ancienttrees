@@ -1,0 +1,62 @@
+{
+  "city": "Eisolzried",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Eisolzried maps one tree: a hollow pedunculate oak that somebody tried to burn down on a December night in 2003, pouring petrol into its trunk before the fire brigade arrived in time. It has been hollow since at least 1900, when it was already known as the Wegweisereiche, the signpost oak. A 2017 survey taped it at 9.60 metres round, among the German Tree Archive's ten thickest naturally grown single-stem oaks. Nobody agrees on its age; this page keeps the full disputed range, 350 to 700 years, rather than picking a favourite.",
+  "meta_description": "Schlosseiche bei Eisolzried, a hollow Bavarian oak that survived a 2003 arson attack, girthed at 9.60 metres, among Germany's ten thickest.",
+  "question_meta": "Eisolzried's mapped tree is the Schlosseiche, a hollow oak girthed at 9.60 metres and among Germany's ten thickest single-stem oaks.",
+  "question_answer": "The tree mapped at Eisolzried is the Schlosseiche bei Eisolzried, a pedunculate oak in a meadow at the village edge, girthed at 9.60 metres in 2017, one of the ten thickest naturally grown single-stem oaks recorded in Germany. Its age is disputed across sources, estimated anywhere from 350 to 700 years.",
+  "question_context": "On a December night in 2003 somebody poured petrol into this oak's hollow trunk and set it alight. The fire brigade got there in time, and the tree still stands, its hollow now closed off behind a grille. It has been hollow for as long as anyone has photographed it: Friedrich Stuetzer pictured it in 1900, called it the Wegweisereiche, the signpost oak, and measured it at eight metres round. A surveyor's tape in 2017 read 9.60 metres, among the Deutsche Baumarchivs ten thickest naturally grown single-stem oaks in the country, 1.6 metres of new growth in 117 years. Its age nobody agrees on. The regional conservation authority estimates about 600 years, the forest scientist Hans Joachim Froehlich argued for 700, and the Deutsches Baumarchiv gives 350 to 700, reasoning that the poor gravelly soil justifies the higher end. What is not in dispute is that it has outlived the building it is named for: Schloss Eisolzried was demolished around 1800, and a 1737 land register already noted a small oak wood here. Today the tree stands 23 metres tall in a meadow beside the road towards Lauterbach, its crown still densely leaved at its last survey.",
+  "hero_tree_id": "eis_001",
+  "oldest_tree_id": "eis_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Eisolzried?",
+      "a": "The Schlosseiche bei Eisolzried, a pedunculate oak with a 9.60 metre girth, one of the ten thickest naturally grown single-stem oaks recorded in Germany."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. Estimates from different sources range from about 350 to 700 years; this page keeps the full range rather than picking a favourite."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in a meadow directly beside the road at the edge of the village, viewable from the roadside."
+    },
+    {
+      "q": "Why is the trunk hollow?",
+      "a": "It has been hollow since at least 1900. In 2003 someone poured petrol into the hollow and set it alight; the fire brigade arrived in time and the hollow is now closed off behind a grille."
+    }
+  ],
+  "trees": [
+    {
+      "id": "eis_001",
+      "name": "Schlosseiche bei Eisolzried",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 to 700 years (sources disagree)",
+      "age_min": 350,
+      "age_max": 700,
+      "girth_cm": 960,
+      "location": {
+        "address": "Meadow beside the road at the edge of Eisolzried, towards Lauterbach, Gemeinde Bergkirchen, Landkreis Dachau, Bavaria",
+        "latitude": 48.259351,
+        "longitude": 11.33575,
+        "neighbourhood": "Eisolzried, Bergkirchen"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Schlosseiche_bei_Eisolzried",
+        "https://www.monumentale-eichen.de/bayern/eisolzried/"
+      ],
+      "access": "Free, stands on a meadow directly beside the road at the village edge (a former waymarker tree at a path crossing); viewable from the roadside. Exact public/private boundary of the meadow itself was not confirmed via OSM this pass",
+      "transport": "Rural Landkreis Dachau, no rail station nearby; reachable by car or bike from Bergkirchen/Dachau, exact bus stop and walk time not confirmed this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "On a December night in 2003 somebody poured petrol into this oak's hollow trunk and set it alight. The fire brigade got there in time. The tree is still standing, its hollow now closed off behind a grille.\n\nIt has been hollow since at least 1900, when Friedrich Stuetzer photographed it for his book of German trees and called it the Wegweisereiche, the signpost oak, for the path crossing it marked. He measured eight metres around. In 2017 a surveyor taped it again and got 9.60 metres, which the Deutsche Baumarchiv counts among the ten thickest naturally grown single-stem oaks in Germany. That is 1.6 metres of new girth in 117 years, slow going for an oak this size.\n\nIts age nobody agrees on. The conservation authority says about 600 years, the forest scientist Hans Joachim Froehlich said 700, and the Deutsches Baumarchiv puts it anywhere between 350 and 700, arguing that the poor gravelly ground here justifies the higher end. What is not in doubt is that it outlived the building it is named for. Schloss Eisolzried, in whose park it once stood, was pulled down around 1800, and a land register of 1737 already noted a pleasant little oak wood here.\n\nToday it is 23 metres tall with a crown that was still densely leaved when it was last surveyed, standing in a meadow beside the road out of the village towards Lauterbach.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

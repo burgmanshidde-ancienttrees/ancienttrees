@@ -1,0 +1,61 @@
+{
+  "city": "Wuppertal",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Wuppertal maps one tree, planted as a monument to an anniversary that no longer has a home: on 1 April 1908 the Barmer Verschoenerungsverein carried a seventeen-year-old oak sapling into the Barmer Wald to mark a century since Barmen received its city charter. Barmen stopped being its own city in 1929, folded into Wuppertal with Elberfeld, but the association that planted the oak still tends this forest and still walks people out to it. At roughly 135 years old, one gap stays open: nobody has recorded which species of oak it is.",
+  "meta_description": "Jahrhunderteiche, an oak planted 1 April 1908 in the Barmer Wald to mark a century of Barmen's city charter, a city that no longer exists.",
+  "question_meta": "Wuppertal's mapped tree is the Jahrhunderteiche, an oak planted in 1908 in the Barmer Wald to mark Barmen's centenary as a city.",
+  "question_answer": "The tree mapped at Wuppertal is the Jahrhunderteiche, an oak planted on 1 April 1908 in the Barmer Wald to mark one hundred years since Barmen, now part of Wuppertal, received its city charter. It stands at the Jahrhundertplatz clearing near Villa Foresta.",
+  "question_context": "Whoever planted this oak measured it first: seven point seven seven metres tall, a trunk sixteen centimetres through, fifty-one centimetres around at a metre up, and already seventeen years old. The Barmer Verschoenerungsverein had raised the sapling themselves before carrying it into the woods and setting it down on 1 April 1908, with the deputy mayor watching, to mark a hundred years since Barmen was granted its own city charter. Those measurements belong to the planting day and say nothing about the trunk you would meet today, since the tree has had over a century since. Counting back puts its germination around 1891, roughly 135 years old now. Its clearing carries the name Jahrhundertplatz, Centenary Square, and a wooden plaque at the trunk still explains why. The occasion has outlived its own subject: Barmen stopped existing as a separate city in 1929, folded into Wuppertal, so the centenary this oak marks belongs to a place no longer on any map. The Verschoenerungsverein still looks after this forest and still leads walking tours out here, most recently one scheduled for December 2025. Nobody has recorded which species of oak it is; stand under it and tell us.",
+  "hero_tree_id": "wpt_001",
+  "oldest_tree_id": "wpt_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Wuppertal?",
+      "a": "The Jahrhunderteiche, an oak planted on 1 April 1908 in the Barmer Wald to mark a century since Barmen received its city charter."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 135 years, worked out from its recorded age at planting (seventeen years old in 1908) rather than measured directly today."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands at a public forest path junction, the Jahrhundertplatz, in the city-owned Barmer Wald, with no restrictions."
+    },
+    {
+      "q": "What species of oak is it?",
+      "a": "Not recorded. If you can identify the leaf, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wpt_001",
+      "name": "Jahrhunderteiche",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "about 135 years (planted 1908 as an already 17-year-old sapling)",
+      "age_min": 130,
+      "age_max": 140,
+      "location": {
+        "address": "Jahrhundertplatz, at the junction of Kuckucksweg and Waldweg, southeastern edge of the Barmer Wald near Villa Foresta, Wuppertal-Heckinghausen",
+        "latitude": 51.260256,
+        "longitude": 7.215979,
+        "neighbourhood": "Barmer Wald, Wuppertal"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Jahrhunderteiche",
+        "https://www.barmer-anlagen.de/durch-den-barmer-wald-bis-ins-murmelbachtal-und-wieder-bergauf-ueber-den-ehrenfriedhof-zur-jahrhunderteiche-und-durch-das-murmelbachtal-entdeckungstour-6/"
+      ],
+      "access": "Free, a public forest path junction in the city-owned Barmer Wald, no restrictions",
+      "transport": "In Wuppertal's Barmer Wald near Villa Foresta; nearest bus stops serve Wuppertal-Barmen, exact stop and walk time not confirmed this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Whoever planted this oak measured it first. Seven point seven seven metres tall, a trunk sixteen centimetres through, fifty-one centimetres around at a metre up, and seventeen years old already: the Barmer Verschoenerungsverein had raised the sapling themselves before carrying it into the woods. They put it in the ground on 1 April 1908, with the deputy mayor watching, to mark a hundred years since Barmen was granted its city charter. Those figures belong to the planting day and bear no relation to the trunk you will meet, because the tree has had 118 years since.\n\nDo the arithmetic and it germinated around 1891, which puts it near 135 years old. Its clearing carries its name, the Jahrhundertplatz, and a wooden plaque at the trunk still spells out the occasion.\n\nThe occasion outlived its subject. Barmen stopped being a city of its own in 1929, folded together with Elberfeld into Wuppertal, so the centenary this oak commemorates belongs to a place that no longer appears on a map. The association that planted it did better. The Barmer Verschoenerungsverein still looks after this forest and still walks people out here, most recently on a guided route it put on the calendar for December 2025.\n\nNobody has recorded which oak it is. Stand under it, look up at the leaves, and tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
