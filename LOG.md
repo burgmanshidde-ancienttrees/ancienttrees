@@ -1,6 +1,59 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation) - Gave the iOS gate a real fix attempt (not another guess); claimed and dispatched a Taiwan/Bulgaria/Sweden famous-tree verify batch
+
+Resumed a window an earlier attempt stopped 35 minutes in with 85 unspent.
+`leads.py --ready` was empty (0), so no write pass to dispatch. Went to
+rung 2: the iOS app gate, on its fifth straight failed fix for
+`testTappingAPinOpensItsTree` across several continuations (five commits
+in six hours: sign-in scaffolding, a map-count wait, a retried sweep with
+growing delays, a longer per-tap wait, none held). The immediately
+preceding LOG entry deliberately declined to touch this again and flagged
+it FOR HIDDE rather than attempt a sixth blind guess.
+
+Chose to try once more anyway, but not with another guess: pulled the
+actual `MLNMapViewDelegate.h` header from maplibre-native (WebFetch), which
+every prior fix's comments claimed had "no accessibility signal... asked
+and confirmed absent from what MLNMapView publishes." That claim was
+false. `mapViewDidBecomeIdle(_:)` is a real, documented delegate method
+that fires exactly when no camera transition is running and all requested
+tiles have loaded, i.e. the exact race every prior fix slept around
+blindly. Wired it through: `TreeMap.onMapIdle` callback, forwarded from
+the Coordinator's new `mapViewDidBecomeIdle`, surfaced in `MapTab` as a
+"map-idle" accessibility marker; the test now waits on that marker
+(timeout 25s) before its tap sweep, instead of a growing blind sleep.
+Pushed as `63e11fcd`. Cannot verify on this Linux runner; the CI run
+(34071316936) was still in progress when this window ended.
+
+**FOR HIDDE if this is still red**: if `mapViewDidBecomeIdle` doesn't hold
+either, the honest next step is a session with an actual simulator rather
+than a sixth CI-only guess. Every fix so far, including this one, has been
+reasoned blind from log text and (this time) API docs, never from watching
+the app actually behave.
+
+Rung 1 (submissions, sightings) both empty: checked Supabase directly (86
+rows, 0 unprocessed) and `sightings_inbox.py --status` (0 queued). Rung 2's
+two 2026-09-06 WARNs (FAQ pages explaining our own publish threshold;
+`BUSINESS_RULE_PHRASES` missing the new phrase) turned out to already be
+fixed in `c022899d`, before this window started; recorded via
+`health.py --answer` so the ledger stops re-serving them.
+
+With `leads.py --ready` empty and no cheap city-queue candidate above the
+6-candidate floor that wasn't already a documented exhausted hunt
+(Taormina: blocked on private hotel grounds, re-confirmed exhausted four
+times since 2026-08-30, not touched again), went to the famous-tree track
+(rung 4, sub-rule 0c). `famous_demand.py --next` ranked Taiwan (627
+reads/mo across 8 leads), Bulgaria (435/mo, 7 leads) and Sweden (219/mo,
+12 leads, 2 exact duplicates) above Japan and Germany's near-zero-demand
+batches. Claimed all three (`_famous-taiwan`, `_famous-bulgaria`,
+`_famous-sweden`), pushed the claim, and dispatched a verify agent across
+all three with the single-tree-destination test spelled out per candidate
+(most of these are 30-200+ km from any city we publish). Still running
+when this window ended; a future continuation should check
+`data/research/famous{taiwan,bulgaria,sweden}-verified.json` and either
+finish the write pass itself or release the claims if the agent died.
+
 ## 2026-09-07 - Finished the standing famous-tree verify claims: 5 trees, 3 new places, one into Ghisonaccia
 
 Resumed a window an earlier attempt stopped 12 minutes in with 108 unspent.
