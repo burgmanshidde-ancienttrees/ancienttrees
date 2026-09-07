@@ -100,6 +100,62 @@
    "curation_status": "flagged",
    "location_precision": "confirmed",
    "pulled_from_city": "Published until 2026-08-23. Ten of Leiden's fourteen trees stood inside the Hortus behind a 14 euro ticket, which is a garden list wearing a city's name. These five are the 19th-century collection specimens with no photograph; the four 18th-century veterans stayed, because a 310-year tulip tree in the country's oldest botanical garden is worth the ticket. Removed on reach and on padding, never on truth: every fact was verified."
+  },
+  {
+   "name": "Bruine beuk, Herenhuis Boisotkade (LRMB 1697142)",
+   "species": "Fagus sylvatica f. purpurea",
+   "lat": 52.15414,
+   "lng": 4.492243,
+   "status": "blocked",
+   "why": "2026-09-07 verify pass. Register's own field says visitable: nee (not visitable) and place is 'Garenmarkt 9, Leiden', a private townhouse (herenhuis). Somebody's home; never publish per hard rule 10."
+  },
+  {
+   "name": "9 Zilveresdoorns Werfpark (LRMB 1690140)",
+   "species": "Acer saccharinum",
+   "lat": 52.155382,
+   "lng": 4.490579,
+   "status": "blocked",
+   "why": "2026-09-07 verify pass. Register counts n_trees: 9, planted 1886 in a semicircle behind the Van der Werff statue. Not a single collectible point: nine trees in a row/arc is an avenue-like planting, no one obvious place to stand at ONE tree, same shape as the Barcelona plane-avenue precedent that failed this test. Confirmed by openbomenkaart.org's historical page for the park, which also describes them only as a group ('de negen zilveresdoorns... in een halve cirkel achter het beeld')."
+  },
+  {
+   "name": "Leopoldii esdoorn Van der Werfpark (LRMB 1690137) and Bontbladige esdoorn Van der Werfpark (LRMB 1693443)",
+   "species": "Acer pseudoplatanus 'Leopoldii'",
+   "lat": 52.155597,
+   "lng": 4.49105,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Two register entries only 33m apart, both near the Van der Werff statue, both almost certainly the same ornamental cultivar (Bontbladige esdoorn is the common Dutch name for Acer pseudoplatanus 'Leopoldii', confirmed via nursery sources): 1690137 is 'bij standbeeld', 1693443 is noted '25 meter vanaf het standbeeld in oostelijke richting', which reads as two distinct nearby specimens rather than one duplicated record, but this pass ran out of time to find a tree-specific second source (register only) or to settle whether publishing both would read as near-duplicate pages. Worth a closer look: pick the stronger-sited one and fold the other into its story, or find independent corroboration for both."
+  },
+  {
+   "name": "Moerascypres Van der Werfpark (LRMB 1690138)",
+   "species": "Taxodium distichum",
+   "lat": 52.15577,
+   "lng": 4.49111,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Register counts n_trees: 3, planted 1886, 'nabij standbeeld' (near the statue), visually striking bald cypresses at the water's edge. No tree-specific second source found this pass beyond the register and openbomenkaart's generic park history page (which doesn't name the cypresses specifically). Also an ensemble-of-3 question like the silver maples, though three bald cypresses at one water's-edge spot could plausibly pass the compact-ensemble test where the maple row does not; worth a closer look with more time."
+  },
+  {
+   "name": "Beuk Burcht Leiden (LRMB 1679552)",
+   "species": "Fagus sylvatica",
+   "lat": 52.159091,
+   "lng": 4.492344,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Register counts n_trees: 2, 'Binnen De Burcht', planted 1900-1910, history 'nog geen historische gegevens bekend' (no historical data yet known). absolutefacts.nl's independent Burcht page says exactly 'twee beuken en een iep' (two beeches and an elm) stand inside the Burcht; the already-published lei_005 (Beets Beech, matching register 1690110 'Beetsbeuk buitenring') plus this 2-tree entry would total three beeches, one more than that source counts, so it is unclear whether this entry overlaps with lei_005's registration or is genuinely additional. Left undelivered this pass rather than guessed; the elm (LRMB 1679553) was delivered as lei_024 since it is unambiguously the one elm both sources agree on."
+  },
+  {
+   "name": "Rode paardenkastanje, Buiten de Burcht (LRMB 1690111)",
+   "species": "Aesculus x carnea",
+   "lat": 52.159198,
+   "lng": 4.492744,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Register status field is 5 (uncommon among Leiden entries, seen on several other records including one confirmed-felled tree elsewhere in this file, though status 5 alone does not reliably mean dead across the wider register: it is common, ~28% of all 16094 entries, with only a weak correlation to felling language). No second source found this pass and not enough time to chase one; needs a dedicated look before delivering."
+  },
+  {
+   "name": "Gouden Regen / Judasboom / Juttepeer cluster near Hortus entrance (LRMB area ~52.1577,4.4863-4.4866)",
+   "species": "mixed (Laburnum anagyroides, Cercis siliquastrum, Pyrus communis)",
+   "lat": 52.15775,
+   "lng": 4.48635,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Three register candidates about 0.3km from the Hortus, not individually researched this pass: this pass deliberately prioritised FREE public-park trees (Van der Werfpark, Plantsoen, the Burcht) over the Hortus area, since Leiden already sits at roughly two-thirds paid-entry trees (8 of 12 published trees require the Hortus ticket) against CLAUDE.md's rough one-third ceiling. Worth checking whether this cluster sits on Hortus grounds (paid) or a free public street/garden before a future pass researches it."
   }
  ]
 }

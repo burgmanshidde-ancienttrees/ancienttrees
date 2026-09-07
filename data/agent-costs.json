@@ -5769,6 +5769,20 @@
     "tokens": 171197,
     "trees": 0,
     "note": "Independently re-confirmed near-centre register supply exhaustion: all 25 MASAF candidates within 5km resolve exactly to already-published (17), already-blocked (3) or already-tracked-lead (3+1 flagging miss) entries. The one genuine ambiguity (Villa Litta Modignani two distinct plane sheets, 550cm/480cm girth, possibly a 43m record height) could not be resolved: comune.milano.it 403d both language paths, no Wayback snapshot, milanoaffori.it now blocks this environment outright. Documented the failed routes in the lead so a future pass tries a browser session instead of text fetches. Did not chase the 8-17km metropolitan-area candidates per the brief instruction to prefer within-span trees."
+   },
+   {
+    "target": "leiden",
+    "kind": "verify",
+    "tokens": 224670,
+    "trees": 6,
+    "note": "Deepen verify pass on Dutch LRMB register (399 unmined within 20km). LRMB carries planted-decade bands directly, far better yield than Berlin/Milan the same day. 6 trees verified, all free/public (Van der Werfpark x2 planes + willow, Plantsoen wingnut, a 3-tree Persian ironwood ensemble that is the type planting for the internationally-sold cultivar Parrotia persica Het Plantsoen, an elm inside De Burcht). Deliberately prioritised free trees since Leiden already sat at a high paid-entry ratio (8 of 12). 2 blocked (private beech, a non-collectible 9-maple grove), 4 left as leads. Flagged an existing pin (lei_005) for upgrade using the register own coordinate for the same tree."
+   },
+   {
+    "target": "leiden",
+    "kind": "write",
+    "tokens": 113779,
+    "trees": 6,
+    "note": "Wrote lei_019-024 from the verify pass above, 2 best_time set (wingnut fruit Aug-Sep, ironwood autumn colour Oct-Nov). Merged into data/cities/leiden.json (12->18), upgraded lei_005 pin to confirmed using the LRMB register own coordinate for the same tree (Beetsbeuk buitenring), fixed 5 stale count promises (twelve->eighteen) across intro/meta_description/question_meta/faq, trimmed the English and Dutch intros back into Contract C word range after a first draft ran long. Wrote the Dutch (nl) overlay translation for all 6 new trees plus updated its title/meta_description/intro/question_meta/faq counts, since Leiden ships an nl translation and the build refuses a translated city missing trees the English page holds."
    }
   ]
  }

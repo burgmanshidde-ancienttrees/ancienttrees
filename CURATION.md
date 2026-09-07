@@ -2,6 +2,58 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 (continuation 6) - Leiden 12 to 18: 6 free trees from the Dutch LRMB register
+
+Same window as the Berlin and Milan passes below, after both came back
+thin. Checked `city_queue.py --next`'s stage-2 deepening list for a
+better-quality register than Berlin's (no age field) or Milan's
+(near-centre supply exhausted): Leiden's Dutch LRMB register carries a
+planted-decade band directly on every entry and had 399 unmined
+candidates within 20km. Dispatched a verify pass, deliberately steered
+toward free public trees since Leiden already sat at a high paid-entry
+share (8 of 12, 67%).
+
+**6 trees shipped, all free**: two London Planes and a weeping willow
+clustered around the Van der Werff statue in Van der Werfpark, a
+Caucasian wingnut in the Plantsoen that won a public "X-factor" tree
+election in 2009 (160 votes to a copper beech's 83), a 3-tree Persian
+Ironwood ensemble in the same park that turns out to be the actual type
+planting for the cultivar Parrotia persica 'Het Plantsoen', now sold by
+nurseries across Europe, and an elm inside the 11th-century Burcht
+mound, one of the country's surviving monumental elms amid the ongoing
+Dutch elm disease die-off. 2 blocked (a beech at a private townhouse, a
+9-tree maple grove that fails the single-collectible-point test), 4 left
+as leads. Wrote all 6 stories directly (single-city batch, judged too
+small for a cross-city write pass) and their Dutch overlay translation,
+since Leiden ships an nl page and the build refuses a translated city
+missing trees the English page holds.
+
+**One pin upgraded**: lei_005 (the Beets Beech of the Burcht) moved from
+approximate to confirmed using the LRMB register's own tree-level
+coordinate for the same tree, matched by name and place. Fixed five
+stale "twelve trees" count promises across both languages (title, meta
+description, intro, question page, FAQ) and trimmed both intros back
+into Contract C's 60-100 word range after a first draft ran long.
+Leiden: 18 trees, paid-entry share down from 67% to 44%. Build, QA,
+preflight and superlatives all clean. Claim released.
+
+## 2026-09-07 (continuation 5b) - Milan verify pass repeated: still 0, duplicated continuation 3's own finding
+
+After Berlin's low yield, dispatched a Milan verify pass on the strength
+of `city_queue.py --next` showing 25 register candidates and real room
+to target (22 of 30). It came back with 0 trees, independently
+re-confirming near-centre supply is exhausted: 17 already published, 3
+already blocked, 3 already tracked as leads. Only afterwards did a check
+of this file surface **continuation 3, earlier the same day, already
+found and logged the identical result** ("Milan's near-centre register
+supply is genuinely exhausted"). This is exactly the waste
+`grep -ri "<place>" CURATION.md archive/` exists to prevent and this pass
+skipped that check before dispatching. ~171k tokens for a
+re-confirmation, partially offset by one real new attempt (RAMI lookup
+on the Villa Litta ambiguity, still unresolved, documented in
+`data/leads/milan.json` for whoever tries next with a browser session).
+Claim released, logged.
+
 ## 2026-09-07 (continuation 5) - Berlin verify pass: 561 register candidates, 1 shipped (ber_020)
 
 Continued a window a still earlier attempt had stopped after 15 minutes
