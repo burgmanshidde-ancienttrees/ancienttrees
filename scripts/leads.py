@@ -395,7 +395,7 @@ def classify(entry, blocking):
     status = str(entry.get("status") or "").strip().lower()
     if status in ("folded", "blocked", "held", "duplicate", "resolved",
                   "done", "possibly_mapped", "promoted", "published",
-                  "resolved_duplicate"):
+                  "delivered", "resolved_duplicate"):
         return {"label": "held by an earlier pass (status: %s)" % status}
     # A tree carrying `pulled_from_city` was not merely unattended, it was
     # DEMOTED from a published page by name, on Hidde's own paid-entry-ratio
