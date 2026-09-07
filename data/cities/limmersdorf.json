@@ -1,0 +1,70 @@
+{
+  "city": "Limmersdorf",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Limmersdorf is a Franconian village that has danced inside the crown of one lime every year since 1792, a custom so unusual it made Germany's national register of Intangible Cultural Heritage in 2014. The tree itself was planted a century earlier, in 1686, and is still doing the job it was trained for. The dance floor sits four metres up, the village keeps a small museum about it, and the custom has survived two world wars without a serious gap.",
+  "meta_description": "The Tanzlinde of Limmersdorf: a lime danced on every year since 1792, its custom on Germany's UNESCO Intangible Cultural Heritage list since 2014.",
+  "question_meta": "The Tanzlinde of Limmersdorf carries a dance custom performed every year since 1792, recognised on Germany's national Intangible Cultural Heritage list.",
+  "question_answer": "Limmersdorf's Tanzlinde stands in the open village centre near the church, planted in 1686, a documented date rather than an estimate. Every year since 1792, with barely a gap, the village has held the Lindenkirchweih on St Bartholomew's Day, 24 August, dancing on a floor built four metres up into the tree's crown. In 2014 the German UNESCO Commission entered the custom in the national register of Intangible Cultural Heritage, one of only 27 entries that year, recognition of the dance performed on this specific tree rather than of the tree alone.",
+  "question_context": "The tree was already a century old when the written record of the dance begins in 1792, and it has been trained for the role ever since: a girth of 4.36 metres and a height of 19 metres, recorded in vital condition at its last survey in 2022. The village keeps a small Tanzlinden museum explaining the tree's care and the custom's history. Two hundred and thirty-odd years of Franconian villagers have climbed into the same crown to dance, through the Napoleonic wars and two world wars, and the tree is still doing the one job it was shaped for. Limmersdorf is a district of Thurnau in the Kulmbach district of Bavaria's Fraenkische Schweiz region, reached practically only by car, and the tree stands free in the open village centre, near enough to the church that the two are usually pointed out in the same breath by anyone from the village.",
+  "hero_tree_id": "lmd_001",
+  "oldest_tree_id": "lmd_001",
+  "faq": [
+    {
+      "q": "What makes the Limmersdorf Tanzlinde special?",
+      "a": "The dance performed on it: the Lindenkirchweih, held every 24 August since 1792 with barely a gap. In 2014 the German UNESCO Commission entered the custom in the national register of Intangible Cultural Heritage."
+    },
+    {
+      "q": "How old is the tree itself?",
+      "a": "Planted in 1686, a documented date rather than an estimate, making it roughly 340 years old. It was already a century old when the written record of the dance begins in 1792."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open village centre near the church, with no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Limmersdorf is a district of Thurnau in the Kulmbach district of Bavaria, in the Fraenkische Schweiz region. A car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lmd_001",
+      "name": "Tanzlinde (Limmersdorf)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 340-350 years (documented planting year 1686)",
+      "age_min": 340,
+      "age_max": 350,
+      "girth_cm": 436,
+      "height_m": 19,
+      "location": {
+        "address": "Village centre, near the church, Limmersdorf, a district of Thurnau, Kulmbach district, Bavaria",
+        "latitude": 50.009552,
+        "longitude": 11.406927,
+        "neighbourhood": "Limmersdorf, Thurnau"
+      },
+      "story": "Every year since 1792, with barely a gap, this village has danced four metres up inside a tree. The Lindenkirchweih of Limmersdorf takes place on St Bartholomew's Day, 24 August, on a floor built into the crown of this lime, and in 2014 the German UNESCO Commission entered the custom in the national register of Intangible Cultural Heritage, one of 27 entries that year. It is the dance on this specific tree that carries the recognition, not the tree on its own, which is a rarer thing than a protection order. The lime was planted in 1686, a date from the record rather than an estimate, so it was already a century old when the record of the dance begins in 1792, and it has been trained for the job ever since: girth 4.36 metres, height 19 metres, in vital condition at the last survey in 2022. Limmersdorf keeps a small Tanzlinden museum to explain the rest. Two hundred and thirty-odd years of Franconian villagers climbing into the same crown, through the Napoleonic wars and two world wars, and the tree is still doing the one job it was shaped for. It stands in the open village centre near the church, free.",
+      "verified_sources": [
+        "https://www.unesco.de/kultur-und-natur/immaterielles-kulturerbe/immaterielles-kulturerbe-deutschland/lindenkirchweih",
+        "https://www.baumkunde.de/baumregister/3239-tanzlinde_in_limmersdorf/"
+      ],
+      "access": "Free, public. Stands in the open village centre near the church.",
+      "transport": "Limmersdorf, a district of Thurnau, Kulmbach district, Bavaria (Fraenkische Schweiz region); a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the trained crown comes into flower over the dance floor"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "city": "Wilparting",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Wilparting is a Bavarian hamlet that has drawn pilgrims for over a thousand years, and the lime tree beside its church has been part of the walk for nearly as long. Ten metres round and only twelve metres tall, it is almost as wide as it is high, the shape centuries of losing and regrowing limbs leaves behind. The church itself is one of Bavaria's oldest, built over the graves of two 7th-century Irish missionaries, and the inn beside the tree still feeds the pilgrims who walk here every November.",
+  "meta_description": "The St.-Marinus-Linde of Wilparting: a lime beside a 1300-year-old Bavarian pilgrimage church, roughly 750 to 1000 years old, 10 metres round.",
+  "question_meta": "The St.-Marinus-Linde stands beside Wilparting's pilgrimage church, roughly 750 to 1000 years old, at 10 metres round and only 12 metres tall.",
+  "question_answer": "Wilparting's lime stands beside the Wallfahrtskirche St. Marinus und Anianus, described in its own record as one of the oldest Christian places of worship in Bavaria, built over the graves of two Irish missionaries said to have been sent to Bavaria around 657 AD by Pope Eugene I. People have been walking to this exact spot for well over a thousand years, and still do every 15 November, the patronal feast day, when part of the celebration is a pilgrimage mass held at the village inn under this very tree.",
+  "question_context": "The tree's own age is argued over, and both figures are recorded rather than settled. The dendrological register, which last checked it in March 2023 and found it vital, estimates about 1000 years from a girth measured in 2014; regional sources working from an earlier 2012 assessment put it closer to 750. It measures 10 metres round and only about 12 metres tall, almost as wide as it stands high, the shape a tree develops after centuries of losing major limbs and regrowing around the wounds. It stands in the open beside the pilgrimage church and its inn, free to walk up to at any time. Wilparting is a hamlet within Irschenberg, in the Miesbach district of Bavaria between Munich and the Tegernsee lakes, reached practically only by car. The church and the tree are usually visited together, since neither is signposted separately from the other, and the inn beside them still serves the pilgrims who make the walk on the November feast day.",
+  "hero_tree_id": "wpg_001",
+  "oldest_tree_id": "wpg_001",
+  "faq": [
+    {
+      "q": "How old is the St.-Marinus-Linde?",
+      "a": "Disputed. A dendrological survey from 2023 estimates about 1000 years; regional sources working from an earlier assessment put it at 750. Both figures are recorded rather than resolved."
+    },
+    {
+      "q": "Why does it stand beside a church?",
+      "a": "The Wallfahrtskirche St. Marinus und Anianus is one of Bavaria's oldest pilgrimage churches, built over the graves of two 7th-century Irish missionaries. People have walked to this site for well over a thousand years, and the tree has stood beside that pilgrimage for nearly as long."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open beside the pilgrimage church and its inn, with no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Wilparting is a hamlet in Irschenberg, Miesbach district, Bavaria, between Munich and the Tegernsee/Schliersee area. A car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wpg_001",
+      "name": "St.-Marinus-Linde (Wilparting)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 750-1000 years (sources disagree)",
+      "age_min": 750,
+      "age_max": 1000,
+      "girth_cm": 1000,
+      "height_m": 12,
+      "location": {
+        "address": "Beside the Wallfahrtskirche St. Marinus und Anianus, Wilparting, a district of Irschenberg, Miesbach district, Bavaria",
+        "latitude": 47.822083,
+        "longitude": 11.91915,
+        "neighbourhood": "Wilparting, Irschenberg"
+      },
+      "story": "Ten metres round and twelve metres tall: this lime is almost as wide as it is high, which is what centuries of losing limbs and regrowing them does to a tree. It stands beside the pilgrimage church of St. Marinus and Anianus at Wilparting, described by its own record as one of the oldest Christian places of worship in Bavaria and built over the graves of two Irish missionaries said to have been sent here around 657 by Pope Eugene I. People have been walking to this spot for well over a thousand years. They still do on 15 November, the patronal feast, when part of the day is a pilgrimage mass held at the inn under this tree. Its own age is argued. The dendrological register, which last checked it in March 2023 and found it vital, puts it at about 1000 years off a girth measured in 2014; regional sources working from a 2012 estimate say 750. Both figures are in circulation and neither has been settled by a core, so take the range. Wilparting is a hamlet on the Irschenberg between Munich and the Tegernsee lakes, and the tree stands in the open beside the church, free to walk up to.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1787-alte_linde_von_wilparting/",
+        "https://de.wikipedia.org/wiki/Wallfahrtskirche_Wilparting"
+      ],
+      "access": "Free, public. Stands beside the pilgrimage church and its inn; baumkunde.de records it as publicly accessible ('oeffentlich zugaenglich').",
+      "transport": "Wilparting, a hamlet in Irschenberg, Miesbach district, Bavaria (between Munich and the Tegernsee/Schliersee area); a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the lime flowers beside the pilgrimage church"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "city": "Neudrossenfeld",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Neudrossenfeld is a Franconian village where EU regional development money helped put a dance floor back into a 380-year-old lime. The tree sits behind an old brewery inn turned restaurant, its crown trained sideways and fitted with a beam cross so villagers could start dancing on it again. It is one of a small named trio of dance limes still actually danced on in this part of Franconia, alongside Peesten and Langenstadt.",
+  "meta_description": "The old Tanzlinde of Neudrossenfeld: a 380-year-old dance lime restored with EU funding, standing behind a brewery restaurant and museum.",
+  "question_meta": "The Tanzlinde of Neudrossenfeld is a 380-year-old lime restored in 2010 with EU funding so villagers could dance on it again.",
+  "question_answer": "Neudrossenfeld's old Tanzlinde stands behind the former Braueigaststaette Hoelzel, now a working brewery restaurant with a small Lindenbaum museum. The site had been left to itself for years until Bavarian and EU regional-development funds paid for a restoration in 2010: the grounds reopened as a beer garden and restaurant, and the wooden dance structure was rebuilt on its original Baroque-era stone pillars.",
+  "question_context": "The tree had to be brought back into service as well as the building around it. Young replacement limbs were trained out sideways and fitted with a beam cross to carry the floor's weight, and dancing at the Kirchweih resumed once they could take it. That makes this one of a small named trio of Tanzlinden in this part of Franconia still actively danced on, alongside Peesten and Langenstadt. The trunk measured 6.1 metres round in 2011, the tree stands about 15 metres tall, and at its last survey in 2022 it was vital and pushing strong new shoots, which for a trained lime is the whole point: the branches that carry the dance floor have to keep being replaced. It stands free to visit, with the brewery restaurant right beside it. Neudrossenfeld is in the Kulmbach district of Bavaria, reached practically only by car, and the brewery restaurant beside the tree makes an ordinary reason to linger once the tree itself has been seen.",
+  "hero_tree_id": "ndf_001",
+  "oldest_tree_id": "ndf_001",
+  "faq": [
+    {
+      "q": "How old is the Neudrossenfeld Tanzlinde?",
+      "a": "About 380 years old, with a girth of 6.1 metres measured in 2011. Its dancing tradition and the timber structure it carries are older, but the current living limbs are periodically retrained and replaced."
+    },
+    {
+      "q": "Why was it restored in 2010?",
+      "a": "The old brewery inn grounds had fallen into disrepair. Bavarian and EU regional-development funding paid for a restoration that reopened the site as a working brewery restaurant and beer garden, and rebuilt the tree's dance structure on its original 18th-century stone pillars."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The tree stands in the open, with the brewery restaurant and its Lindenbaum museum right beside it."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Neudrossenfeld is a village in the Kulmbach district of Bavaria. A car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ndf_001",
+      "name": "Alte Tanzlinde von Neudrossenfeld",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 380 years",
+      "age_min": 370,
+      "age_max": 390,
+      "girth_cm": 610,
+      "height_m": 15,
+      "location": {
+        "address": "Behind the former Braueigaststaette Hoelzel (now a brewery restaurant with Lindenbaum museum), Neudrossenfeld, Kulmbach district, Bavaria",
+        "latitude": 50.015,
+        "longitude": 11.50425,
+        "neighbourhood": "Neudrossenfeld, Kulmbach"
+      },
+      "story": "European regional development money helped put a dance floor back into a 380-year-old lime. The site behind the old brewery inn at Neudrossenfeld had been left to itself for years until Bavarian and EU funds paid for a restoration in 2010: the grounds became a working brewery restaurant with a beer garden and a small museum about linden trees, and the wooden dance structure was rebuilt on its Baroque stone pillars. The tree had to be brought back into service too. Young replacement limbs were trained out sideways and fitted with a beam cross to carry the floor, and dancing at the Kirchweih resumed once they would take the weight. That makes this one of three Tanzlinden in this part of Franconia where people still dance up in the crown rather than merely point at where their grandparents did, alongside Peesten and Langenstadt. The trunk measured 6.1 metres round in 2011 and the tree stands about 15 metres tall; at the last survey in 2022 it was vital and pushing strong new shoots, which for a trained lime is the whole point, since the branches you dance on have to keep being replaced. It is free to walk in, and the brewery restaurant is standing right beside it.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/282-alte_tanzlinde_von_neudrossenfeld/",
+        "https://www.ostdeutsches-baumarchiv.de/timeline-1/2026/01/12/nr-78-linde-neudrossenfeld"
+      ],
+      "access": "Free, public. Stands on the grounds of a brewery restaurant/beer garden that also houses a small Lindenbaum (linden tree) museum.",
+      "transport": "Neudrossenfeld, Kulmbach district, Bavaria; a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the lime flowers over the beer garden and the whole crown hums"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "city": "Polchow",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Polchow is a small Mecklenburg village whose churchyard holds the thickest tree in the whole state: a lime so wide that people assumed for generations it was three trees grown together, until genetic testing proved it one single individual. It measures 14.40 metres round, has been a protected Naturdenkmal since 1937, and now sits among Germany's short list of formally recognised national heritage trees.",
+  "meta_description": "The Polchower Linde: a 14.4-metre-round lime, the thickest tree in Mecklenburg-Vorpommern, long mistaken for three trees fused into one.",
+  "question_meta": "The Polchower Linde is a single lime measuring 14.4 metres round, the thickest tree of any species in Mecklenburg-Vorpommern, on a village churchyard.",
+  "question_answer": "The Polchower Linde is the thickest tree of any species in Mecklenburg-Vorpommern and one of the thickest limes in Germany, measured at 14.40 metres round in February 2022. For generations it was assumed to be three separate trees, planted together in an old regional custom of setting three limes as a Trinity; genetic testing has since shown it is a single individual, a fact as notable as the girth itself.",
+  "question_context": "The tree has been a protected Naturdenkmal since 1937 and was later admitted to the Nationalerbe-Baeume project, Germany's short national list of heritage trees, a rarer distinction than ordinary local protection. Its age cannot be counted: the trunk is hollow, which is normal at this size, so the working figure of about 800 years is an estimate hung on the founding of the adjoining church rather than a ring count, and it is stated honestly as an estimate rather than a fact. The setting is as ordinary as the tree is not, a village churchyard near Laage with open ground, no fee and no gate, in flat Mecklenburg farmland. Visitors are advised to walk all the way round it before trying to photograph it, since at this girth no single view of the trunk shows what is actually there. Polchow is a district of the municipality of Wardow, reached practically only by car from Laage or Guestrow.",
+  "hero_tree_id": "plc_001",
+  "oldest_tree_id": "plc_001",
+  "faq": [
+    {
+      "q": "How thick is the Polchower Linde really?",
+      "a": "14.40 metres round, measured in February 2022, making it the thickest tree of any species in Mecklenburg-Vorpommern and one of the thickest limes anywhere in Germany."
+    },
+    {
+      "q": "Is it really one tree, not three?",
+      "a": "Yes, confirmed by genetic testing. The three-part trunk long led people to assume it was three separate limes planted together in an old regional Trinity custom, but the whole mass is a single individual."
+    },
+    {
+      "q": "How old is it?",
+      "a": "An estimate of about 800 years, hung on the founding of the adjoining church rather than a ring count, since the hollow trunk cannot be counted directly."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open churchyard at Polchow, a district of Wardow near Laage, with no fee or gate."
+    }
+  ],
+  "trees": [
+    {
+      "id": "plc_001",
+      "name": "Polchower Linde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 800 years (church-founding-era estimate, unconfirmed)",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 1440,
+      "location": {
+        "address": "Church cemetery, Polchow, a district of Wardow, Amt Laage, Mecklenburg-Vorpommern",
+        "latitude": 53.9447587,
+        "longitude": 12.4764911,
+        "neighbourhood": "Polchow, near Laage"
+      },
+      "story": "Everyone assumed this was three trees. The trunk on the churchyard at Polchow stands in three parts, which matched an old planting habit in this region of setting three limes together as a Trinity, and the assumption held for generations. Genetic testing has since shown it is one individual. That single tree measured 14.40 metres round in February 2022, at chest height, which makes it the thickest tree of any species in Mecklenburg-Vorpommern and one of the thickest limes in Germany. It is hollow, which is normal at that size and is also why nobody can date it: the working figure of about 800 years is hung on the founding of the church it stands beside and is an estimate, not a count. It has been a protected Naturdenkmal since 1937, and it was later taken into the Nationalerbe-Baeume project, Germany's short national list of heritage trees, which is a good deal rarer than local protection. The setting is as ordinary as the tree is not: a village churchyard near Laage, open ground, no fee and no gate, in a part of Mecklenburg where the fields run to the horizon. Walk round it before you photograph it. At that girth no single view of the trunk tells you anything useful.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Polchower_Linde",
+        "https://nationalerbe-baeume.de/project/polchower-linde-landkreis-rostock-mecklenburg-vorpommern/"
+      ],
+      "access": "Free, public. Stands on the churchyard (Kirchfriedhof) in the village, also known locally as the Kirchlinde/Kirchhofslinde.",
+      "transport": "Small village near Laage, Mecklenburg-Vorpommern; a car is the practical way in, nearest larger town Guestrow/Laage.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are down and the whole hollow trunk reads at a glance"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

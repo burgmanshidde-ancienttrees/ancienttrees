@@ -1,0 +1,70 @@
+{
+  "city": "Frankenthal",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Frankenthal is a small Saxon village near Bischofswerda whose landmark is a lime tree planted for a birth in 1783 and already being prepared for its own succession. It stands alone on the village's hill, holding two centuries of local weather and a bench for anyone who wants to sit with it. A second lime was deliberately planted opposite it in the 1990s, so the hill will not go untreed on the day the older one finally comes down.",
+  "meta_description": "The Pfarrlinde of Frankenthal: a lime planted in 1783 to mark a pastor's son's birth, now the village landmark on the Pfarrberg hill in Saxony.",
+  "question_meta": "The Pfarrlinde of Frankenthal is a lime planted in 1783 by a pastor's wife to mark her son's birth, now roughly 240 to 250 years old.",
+  "question_answer": "Frankenthal's Pfarrlinde stands alone on the Pfarrberg, the hill above the village, which the municipality calls its own landmark. A pastor's wife, Theodora Janicaud, had the small-leaved lime planted in 1783 to mark the birth of her first son, a documented date rather than an estimate, which makes the tree roughly 240 to 250 years old today.",
+  "question_context": "The tree has outlived the boy it was planted for and every government that has held this corner of Saxony since. Standing exposed on its hill rather than sheltered, it has taken more weather than a park tree would: the trunk is hollow, scarred by past lightning strikes, and parts of it were packed with concrete by an earlier generation of tree surgery, with bracing systems and regular pruning now keeping the crown in shape. It measures 4.05 metres round and stands about 25 metres tall. The village is planning ahead for the day it eventually goes: a second lime was deliberately planted opposite in the 1990s to inherit the landmark role, and a bench has been placed beside the old tree for visitors. It was placed under protection in 1936 and declared a formal Denkmal in 1980. The village of Frankenthal sits near Bischofswerda on the Saxon Oberlausitz border, reached practically only by car, and the tree stands free in the open on its hill.",
+  "hero_tree_id": "fkn_001",
+  "oldest_tree_id": "fkn_001",
+  "faq": [
+    {
+      "q": "How old is the Pfarrlinde of Frankenthal?",
+      "a": "About 240 to 250 years. Unusually, the planting date is documented rather than estimated: 1783, when a pastor's wife, Theodora Janicaud, had it planted to mark the birth of her first son."
+    },
+    {
+      "q": "Why does the village have a second lime planted nearby?",
+      "a": "As a deliberate succession plan. A second lime was planted opposite the old one in the 1990s, intended to inherit the role of village landmark once the older tree eventually goes."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on the Pfarrberg, the village's own hill, with a bench installed nearby for visitors."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Frankenthal is a small village near Bischofswerda in Saxony, on the Oberlausitz border. There is no rail station nearby; a car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fkn_001",
+      "name": "Pfarrlinde (Frankenthal, Sachsen)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 240-250 years (documented planting year 1783)",
+      "age_min": 240,
+      "age_max": 250,
+      "girth_cm": 405,
+      "height_m": 25,
+      "location": {
+        "address": "Pfarrberg, Frankenthal, a district of Gemeinde Frankenthal, near Bischofswerda, Saxony",
+        "latitude": 51.127316,
+        "longitude": 14.134039,
+        "neighbourhood": "Frankenthal (Sachsen)"
+      },
+      "story": "A pastor's wife had this lime planted in 1783 to mark the birth of her first son. Her name was Theodora Janicaud, the year is documented rather than estimated, and the tree has outlived the boy and every state that has governed this hill since. It stands alone on the Pfarrberg, the hill above Frankenthal, which is why the village calls it its landmark and why it has taken more weather than a sheltered tree would. The trunk is hollow and carries the scars of past lightning strikes; parts of it were packed with concrete by an earlier generation of tree surgery, and the crown is now held by bracing systems and kept in shape by pruning. It measures 4.05 metres round and about 25 metres tall. The village is also planning for the day it goes: a second lime was planted opposite in the 1990s, deliberately, to inherit the job of being the landmark, and there is a bench beside the old one for people who want to sit with it in the meantime. That is roughly 240 years of continuous local attention to one tree, from a birth in a parsonage to a succession plan, in a village near Bischofswerda that most maps do not bother to name.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Pfarrlinde_(Frankenthal)",
+        "https://www.baumkunde.de/baumregister/5744-pfarrlinde_bei_frankenthal/"
+      ],
+      "access": "Free, public. Stands in the open on the Pfarrberg, the village's own hill, described by the municipality as the village landmark.",
+      "transport": "Small village near Bischofswerda, Saxony (Westlausitz/Oberlausitz border); a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the small-leaved lime flowers late and the hilltop smells of it"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

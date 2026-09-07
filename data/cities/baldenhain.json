@@ -1,0 +1,69 @@
+{
+  "city": "Baldenhain",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Baldenhain is a small village on the Thuringian side of the Vogtland with a dance lime local children have turned into a climbing frame. Around 1900 the inn across the road served drinks from a platform built inside its spreading limbs; the platform is gone, but the flat, chalice-shaped crown that carried it is still there. At 8.5 metres round it is one of the thickest and most complete dance limes left standing anywhere in Germany, and it is still under active care.",
+  "meta_description": "The Tanzlinde of Baldenhain: one of Germany's thickest dance limes, 8.5 metres round, its flat crown once carrying an inn's drinks platform.",
+  "question_meta": "The Tanzlinde of Baldenhain is one of Germany's thickest dance limes at 8.5 metres round, estimated at 400 to 600 years old.",
+  "question_answer": "Baldenhain's Tanzlinde stands opposite the fire station in the middle of the village, on open ground with nothing to pay and nobody to ask. Both the regional conservation register and a dendrological survey call it one of the thickest and most complete dance limes left in Germany, measured at 8.5 metres round in April 2024 and found in vital condition. Around 1900 the inn across the road served drinks from a platform built into the tree's flat limbs; the platform is gone but the shape survives, and the village's children have taken it over as a climbing spot.",
+  "question_context": "The trunk is hollow and open along one side, rising into three heavy limbs that spread out like a chalice and rest on wooden props, the classic form of a Tanzlinde, a dance lime trained over generations to be used rather than merely admired. Its age is put at 400 to 600 years, an estimate drawn from the girth rather than a ring count, the only option on a trunk with its middle missing. Somebody looks after it: the crown is held together with steel cables and textile straps and receives regular maintenance, and it has been protected as a Naturdenkmal since 1978. Baldenhain is a small village in Langenwolschendorf, in the Greiz district on the Thuringian side of the Vogtland border, reached practically only by car. It stands opposite the village fire station on ordinary open ground, with nothing built up around it for visitors beyond the tree's own trained shape and the props holding its limbs.",
+  "hero_tree_id": "bdh_001",
+  "oldest_tree_id": "bdh_001",
+  "faq": [
+    {
+      "q": "How old is the Tanzlinde of Baldenhain?",
+      "a": "An estimate of 400 to 600 years, based on its 8.5-metre girth rather than a ring count, since the hollow trunk cannot be counted directly."
+    },
+    {
+      "q": "What was the platform inside the tree used for?",
+      "a": "Around 1900, the inn across the road served drinks from a platform built into the tree's flat, spreading limbs. The platform is gone, but local children now use the same limbs to climb."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands opposite the fire station in the open village centre, with no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Baldenhain is a district of Langenwolschendorf, in the Greiz district on the Thuringian side of the Vogtland border. A car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bdh_001",
+      "name": "Tanzlinde (Baldenhain)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 400-600 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 850,
+      "location": {
+        "address": "Village centre, opposite the fire station, Baldenhain, a district of Langenwolschendorf, Greiz district, Thuringia",
+        "latitude": 50.9107806,
+        "longitude": 12.2066833,
+        "neighbourhood": "Baldenhain, Vogtland/Thuringia border"
+      },
+      "story": "Around 1900 the inn across the road served drinks from a platform built inside this tree. The flat spread of limbs that carried it is still there, and the village children have taken it over as somewhere to climb, which is a fair summary of what a Tanzlinde is for: a tree trained to be used. Both the regional conservation register and the dendrological survey call this one of the thickest and most complete dance limes left in Germany. The trunk measured 8.5 metres round in April 2024 and was in vital condition; it is hollow, open along one side, and rises into three heavy limbs that spread out like a chalice and rest on props. Its age is put at 400 to 600 years, an estimate from girth rather than a ring count, which is the only option on a trunk with its middle missing. Somebody looks after it. The crown is held by steel cables and textile straps and gets regular attention, and the tree has been protected as a Naturdenkmal since 1978. You find it in the middle of Baldenhain, a small village on the Thuringian side of the Vogtland, standing opposite the fire station on open ground with nothing to pay and nobody to ask.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1391-tanzlinde_in_baldenhain/",
+        "https://www.natuerlich-vogtland.de/natur/geschuetzte-landschaften/naturdenkmale/poi/dorflindetanzlinde-in-baldenhain.html"
+      ],
+      "access": "Free, public. Stands in the open village centre.",
+      "transport": "Small village (Baldenhain, Langenwolschendorf) on the Thuringia/Saxony Vogtland border, Greiz district; a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the trained crown flowers over the old dance platform"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "city": "Bargischow",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Bargischow is a small village east of Anklam in Mecklenburg-Vorpommern with one reason to stop: a hollow lime beside its fieldstone parish church, thick enough that the trunk once sheltered soldiers, and old enough that nobody agrees on its age. Local tradition calls it the Franzosenlinde, the French Lime, after the Napoleonic troops said to have tapped their beer from inside it.",
+  "meta_description": "The Franzosenlinde of Bargischow: a hollow lime, at least 500 years old, said to have sheltered Napoleonic soldiers beside a fieldstone church.",
+  "question_meta": "The Franzosenlinde of Bargischow is a hollow lime at least 400 to 500 years old, named for Napoleonic soldiers said to have sheltered inside its trunk.",
+  "question_answer": "Bargischow's one remarkable tree is the Franzosenlinde, a large-leaved lime standing beside the village's 13th-century fieldstone church. Local tradition holds that French soldiers passing through during the Napoleonic wars sheltered inside its hollow trunk and tapped beer from it, which is where the name, the French Lime, comes from. A dendrological survey puts its age at 400 to 500 years; local reckoning says at least 500, and a further legend dates the planting to 1124, which no source can confirm.",
+  "question_context": "Two independent sources measure this tree differently, and both figures are kept rather than picked. Baumkunde.de's dendrology register, which last visited the tree in April 2024 and found it vital, records a girth of 7.85 metres from a 2016 tape measurement and estimates 400 to 500 years. The village's own account, reproduced on its German Wikipedia page, rounds the girth up to about ten metres and claims the tree is at least 500 years old, tracing a further legend to a 1124 planting by the missionary bishop Otto von Bamberg that no source has been able to substantiate. The trunk is hollow, roughly two metres across on the inside, and splits into several heavy limbs about four metres up, which is consistent with the soldier's-shelter story regardless of when it happened. The tree is listed among the German Dendrological Society's champion trees and in the Ostdeutsches Baumarchiv, recognition beyond a bare local designation. It stands on open ground with no gate or fee.",
+  "hero_tree_id": "brc_001",
+  "oldest_tree_id": "brc_001",
+  "faq": [
+    {
+      "q": "How old is the Franzosenlinde of Bargischow?",
+      "a": "Disputed. A 2024 dendrology survey estimates 400 to 500 years from its girth. Village tradition says at least 500, and a further legend ties the planting to the year 1124, which no source has been able to confirm."
+    },
+    {
+      "q": "Why is it called the French Lime?",
+      "a": "Local tradition holds that French soldiers passing through during the Napoleonic wars sheltered inside the tree's hollow trunk and tapped beer from it. The name, Franzosenlinde, has stuck ever since."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open ground beside Bargischow's parish church, with no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Bargischow is a small village about 5km east of Anklam in Mecklenburg-Vorpommern, with no rail station of its own. A car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "brc_001",
+      "name": "Franzosenlinde (Bargischow)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "at least 500 years (local legend claims far older, unconfirmed)",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 785,
+      "height_m": 15,
+      "location": {
+        "address": "At the Feldsteinkirche (fieldstone church), Dorfstrasse 8, 17398 Bargischow, Mecklenburg-Vorpommern",
+        "latitude": 53.832867,
+        "longitude": 13.755817,
+        "neighbourhood": "Bargischow, near Anklam"
+      },
+      "story": "Local tradition says French soldiers stood watch inside this trunk and tapped their beer from it during the Napoleonic wars, which is where the name Franzosenlinde, the French Lime, comes from. The trunk can carry the story. It is hollow, roughly two metres across on the inside, and splits about four metres up into several heavy limbs. How thick it is depends on who did the measuring: the dendrological register that last visited in April 2024 and found it in vital condition records 7.85 metres round from a 2016 tape, while the village's own account rounds it up to about ten. Age runs the same way. Local reckoning says at least 500 years, growth-rate estimates say 400 to 500, and a further tradition dates the planting to 1124 at the hand of the missionary bishop Otto von Bamberg, which no source has ever managed to show. What is certain is that it was already old when Swedish, Prussian and French armies took turns crossing this corner of Pomerania. It stands on open ground beside Bargischow's squat fieldstone parish church east of Anklam, and the village names it among the few things worth stopping for. The German Dendrological Society lists it among the country's champion trees.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/2361-franzosenlinde_in_bargischow/",
+        "https://de.wikipedia.org/wiki/Bargischow"
+      ],
+      "access": "Free, public. Stands beside the 13th-century fieldstone parish church in the centre of the village; open ground, no gate or fee.",
+      "transport": "Small village about 5km east of Anklam, Mecklenburg-Vorpommern; no rail station in Bargischow itself, nearest is Anklam. A car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the old lime flowers and the churchyard fills with bees"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

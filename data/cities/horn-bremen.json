@@ -1,0 +1,69 @@
+{
+  "city": "Horn-Lehe",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Horn-Lehe is a Bremen district built around a churchyard tree old enough to have hosted the medieval court before the city ever reached this far out. Three trunks fused into one mass more than four metres round, and in 2026 the city fitted it with a crane-lifted support frame, half to protect the tree and half to protect the people who still walk beneath it.",
+  "meta_description": "The Horner Linde: Bremen's oldest tree, a fused three-trunked lime possibly 900 years old, once the seat of a medieval court.",
+  "question_meta": "The Horner Linde is Bremen's oldest tree, a fused lime disputed at 600 to 900 years old, standing where the district's medieval court once met.",
+  "question_answer": "Bremen's oldest tree stands in an ordinary tram suburb: the Horner Linde, a large-leaved lime on the churchyard in front of the Horner Kirche in Horn-Lehe. Three trunks grew together into a single mass over four metres round. The medieval Thing, or court assembly, met on this exact spot before the district existed in any formal sense, which makes this a Gerichtslinde, a court lime, thought to have been planted shortly after Dutch settlers built the first chapel here early in the 12th century.",
+  "question_context": "The tree's age is genuinely disputed, and both figures are recorded rather than resolved. The memorial plaque at its foot and long-standing local tradition put it at about 900 years, tied to the settlement's founding; a dendrological survey taken in August 2025 reads 600 to 700 years off a girth of 6.1 metres, the usual gap between documentary dating and growth-rate dating on a tree this hollow. It appears in writing as early as 1380. In spring 2026 the city of Bremen fitted the tree with a crane-installed support frame, reported by the public broadcaster buten un binnen, protecting both the ancient trunk and the churchyard visitors who walk beneath it. It stands on open, public ground in front of the Horner Kirche, reachable by ordinary Bremen tram and bus, with no fee or restriction of any kind. Horn-Lehe is a residential district on Bremen's eastern edge, and the tree's setting is unglamorous by design: a working churchyard among family graves, still visited for burials and quiet walks rather than laid out for tourists, which is much of what makes finding a tree this old in an ordinary city suburb worth the detour.",
+  "hero_tree_id": "hrn_001",
+  "oldest_tree_id": "hrn_001",
+  "faq": [
+    {
+      "q": "How old is the Horner Linde?",
+      "a": "Disputed. The memorial plaque and local tradition say about 900 years, tied to the founding of the settlement around 1100. A 2025 dendrological survey estimates 600 to 700 years from the girth. Both figures are recorded rather than settled."
+    },
+    {
+      "q": "Why is it called a Gerichtslinde?",
+      "a": "Because the medieval Thing, the court assembly of dinghe tho dem Horne, met on this exact spot. The tree is thought to have been planted shortly after the district's first chapel was built early in the 12th century."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open churchyard in front of the Horner Kirche, reachable by ordinary Bremen tram or bus."
+    },
+    {
+      "q": "Why does it have a support frame?",
+      "a": "In spring 2026 the city of Bremen had a steel support frame crane-lifted into the crown, both to protect the ancient, hollow tree and to protect visitors walking beneath its heavy limbs."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hrn_001",
+      "name": "Horner Linde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "sources disagree, roughly 600 to 900 years",
+      "age_min": 600,
+      "age_max": 900,
+      "girth_cm": 610,
+      "location": {
+        "address": "Cemetery in front of the Horner Kirche (Zum Heiligen Kreuz), Horn-Lehe, Bremen",
+        "latitude": 53.096691,
+        "longitude": 8.869561,
+        "neighbourhood": "Horn-Lehe, Bremen"
+      },
+      "story": "Bremen's oldest tree is not really one tree. Three trunks grew together on the churchyard in front of the Horner Kirche and fused into a single mass more than four metres across, and that mass is what the city now props up: in spring 2026 a support frame was lifted in by crane, partly for the tree and partly for the people walking under it. Before there was a city district here there was a court. The medieval Thing known as the dinghe tho dem Horne met on this spot, which makes this a Gerichtslinde, a court lime, and the tree is thought to have gone in shortly after Dutch settlers built the first chapel beside it early in the 12th century. It appears in writing by 1380. Its age is argued over in the usual way, and both figures are worth having. The memorial plaque at its foot and local tradition say about 900 years, tying it to that settlement; a dendrological survey taken in August 2025 reads 600 to 700 years off a girth of 6.1 metres. Documentary dating and growth-rate dating rarely agree on a tree this hollow. Either way it was here for the Hanseatic centuries, and it is still standing on a working churchyard in an ordinary Bremen tram suburb.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Horner_Linde",
+        "https://www.baumkunde.de/baumregister/2131-linde_vor_der_horner_kirche_in_bremen/"
+      ],
+      "access": "Free, public. Stands on the churchyard in front of the Horner Kirche, open ground.",
+      "transport": "Bremen district of Horn-Lehe; reachable by Bremen city tram/bus, an ordinary urban stop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the lime flowers over the churchyard and the crown hums with bees"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
