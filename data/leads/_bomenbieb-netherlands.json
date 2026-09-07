@@ -504,9 +504,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.72,
       "nearest_ours": "hag_029 The Copper Beech at the Voorburg Cemetery Gate (The Hague)",
-      "status": "lead",
-      "species": "Elm (Ulmus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "verified",
+      "species": "Wych Elm (Ulmus glabra)",
+      "species_basis": "confirmed via bomenbieb.nl and monumentaltrees.com, both naming Ulmus glabra",
+      "reason": "Verified 2026-09-07 (bomenbieb-dutch verify batch 2); staged as hag_033 in data/research/bomenbieb-netherlands-verified.json, day-trip addition to The Hague's existing Voorburg cluster."
     },
     {
       "name": "tulpenboom jagtlust",
@@ -598,7 +599,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 2.59,
       "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-      "status": "lead"
+      "status": "verified",
+      "reason": "Verified 2026-09-07 (bomenbieb-dutch verify batch 2); staged as dev_009 in data/research/bomenbieb-netherlands-verified.json, day-trip/cluster addition to Deventer alongside dev_008 on the same Bolwerksweg. Second source: rivierverhalen.nl (girth_cm 700, lightning damage, still vital)."
     },
     {
       "name": "holle boom kraantje lek",

@@ -2,7 +2,14 @@
   "country": "Netherlands",
   "source": "bomenbieb.nl, verification pass on the batch of 18 nearest-to-published-city candidates, 2026-09-07",
   "note": "Candidates that failed only on evidence or count (leads), or that must never ship (blocked), from the 18-item batch assigned this pass. See data/leads/_bomenbieb-netherlands.json for the full 45-lead shelf; that file's own leads/blocked lists are untouched by this pass except for status flips on the 18 attempted.",
-  "leads": [],
+  "leads": [
+    {
+      "name": "sierkers amsterdam",
+      "source": "https://bomenbieb.nl/bijzondere-bomen/sierkers-amsterdam/",
+      "place": "Amsterdam",
+      "reason": "Single-sourced. Japanese ornamental cherry 'Kanzan' (Prunus serrulata 'Kanzan') in the garden behind Huize Frankendael, Middenweg 116, planted circa 1920 per bomenbieb. Tried monumentaltrees.com's park Frankendael listing (6 registered monumental trees there) as a second source but the page 403s every fetch and search snippets alone are not enough to confirm this specific tree is among them (per BRIEF_RESEARCH.md's rule that a search summary is a lead, not a source). The Rijksmonument description of the Frankendael garden layout (rijksmonumenten.nl/monument/422421) names beeches, chestnuts, oaks and limes but does not mention a cherry. Vrienden van Frankendael's own site and Amsterdam's official bijzondere-bomen map are both JS-rendered/403 and could not be checked. A future pass with browser access to monumentaltrees.com or a direct look at Amsterdam's bomen.amsterdam.nl register for Middenweg 116 could likely resolve this quickly."
+    }
+  ],
   "blocked": [
     {
       "name": "duiveltjesiep utrecht",
