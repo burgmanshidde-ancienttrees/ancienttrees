@@ -1,0 +1,61 @@
+{
+  "city": "Berga/Elster",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Berga/Elster maps one tree, and it is not the famous one: the town's oldest oak stands on the Markt and nearly went to the saw in 2012. This oak was planted deliberately, on 18 October 1863, when Berga marked fifty years since the Battle of Leipzig, and the date survives on the tree's own Naturdenkmal board. At 163 years it is younger than most trees mapped here. Two gaps stay open: nobody has recorded which oak species it is, and the pin follows a walkers' waypoint rather than a survey.",
+  "meta_description": "Gedenkeiche von Berga, planted 18 October 1863 for the 50th anniversary of the Battle of Leipzig; the town's older, famous oak stands elsewhere.",
+  "question_meta": "Berga/Elster's mapped tree is the Gedenkeiche, an oak planted in 1863 to mark fifty years since the Battle of Leipzig.",
+  "question_answer": "The tree mapped at Berga/Elster is the Gedenkeiche von Berga, an oak planted on 18 October 1863 to mark the fiftieth anniversary of the Battle of Leipzig, the battle that broke Napoleon's power in Germany. It stands apart from the town's other, older oak on the Markt.",
+  "question_context": "Berga has two oaks and this page maps the younger one. The town's famous tree stands by the Markt, centuries old and carried on the town's coat of arms, and it was nearly felled in 2012 until residents campaigned to save it. This one was planted as a monument rather than growing up by chance, and the date is not a guess: the Naturdenkmal information board at the tree still gives 18 October 1863, the day Berga's citizens marked fifty years since the Battle of Leipzig, the largest battle Europe had seen before the twentieth century and the one that finished Napoleon's power east of the Rhine. That makes the tree's age arithmetic rather than an estimate: 163 years as of 2026. It stands away from the town centre on a route still used by walkers and cyclists, and it kept growing quietly through four decades inside the GDR. Two things remain open. Nobody has recorded which species of oak it is, so the page asks rather than guesses. And its coordinates come from a community hiking waypoint rather than a land survey, so read the pin as the right corner of Berga rather than the exact trunk.",
+  "hero_tree_id": "brb_001",
+  "oldest_tree_id": "brb_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Berga/Elster?",
+      "a": "The Gedenkeiche von Berga, an oak planted on 18 October 1863 to mark fifty years since the Battle of Leipzig, distinct from the town's older, more famous oak on the Markt."
+    },
+    {
+      "q": "How old is it?",
+      "a": "163 years as of 2026, dated exactly rather than estimated: the planting date is recorded on the tree's own Naturdenkmal information board."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands outdoors on a public route used by walkers and cyclists, with an information board at the tree."
+    },
+    {
+      "q": "What species of oak is it?",
+      "a": "Not recorded. If you can identify the leaf, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "brb_001",
+      "name": "Gedenkeiche von Berga",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "about 163 years (planted 1863)",
+      "age_min": 160,
+      "age_max": 165,
+      "location": {
+        "address": "Berga/Elster, Landkreis Greiz, Thuringia, near the edge of town (exact street not confirmed)",
+        "latitude": 50.750985,
+        "longitude": 12.156452,
+        "neighbourhood": "Berga/Elster"
+      },
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/Category:Erinnerungseiche_an_die_V%C3%B6lkerschlacht_bei_Leipzig_(Berga/Elster)",
+        "https://www.komoot.com/de-de/highlight/6409660"
+      ],
+      "access": "Free, outdoors, publicly accessible; a marked Naturdenkmal with its own information board, also listed as a community hiking/biking waypoint",
+      "transport": "Berga (Elster) station on the Vogtlandbahn; the tree stands away from the town centre and exact walking distance was not confirmed this pass",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Berga has two oaks, and this is not the famous one. The tree the town is known for stands by the Markt, several centuries old and on the town's arms, and it nearly went to the saw in 2012 until residents campaigned to keep it. This one was planted deliberately, and the date is on record: 18 October 1863, when the citizens of Berga marked fifty years since the Battle of Leipzig, the largest battle Europe had seen and the one that finished Napoleon in Germany. The Naturdenkmal board at the tree still says so, which is why its age needs no estimating. Planted in 1863, it is 163 years old.\n\nYoung, by the standards of the oaks people travel for. Old, for a tree planted as a monument to something already half a century gone. Berga sat inside the GDR for forty years and the oak went on quietly through all of it, out at the edge of town rather than in it, on a route walkers and cyclists still use.\n\nTwo things we cannot tell you. Nobody has recorded which oak it is, so if you know the leaf, tell us. And the coordinates come from a walkers' waypoint rather than a survey, so read the pin as the right corner of Berga rather than the exact trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
