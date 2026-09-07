@@ -830,6 +830,10 @@ struct CollectSheet: View {
                 .font(.body)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
+            if let first = Self.firstOf(tree: t, visited: saved.entries,
+                                        trees: catalogue.trees) {
+                milestone(first)
+            }
             Text("It is in your trees now, with your photograph.")
                 .font(.subheadline)
                 .foregroundStyle(Brand.inkSoft)
@@ -856,6 +860,59 @@ struct CollectSheet: View {
                 .frame(maxWidth: .infinity, minHeight: 44)
             }
         }
+    }
+
+    /// The one line that says this was a FIRST, or nothing at all.
+    ///
+    /// Two references, and they disagree on purpose (CONVENTIONS.md, 2026-09-07).
+    /// Geocaching's First To Find is the most popular unofficial statistic in
+    /// the hobby: people travel for it and cache owners leave a gift for
+    /// whoever signs first. Ours is rarer and leaves more behind, because
+    /// around two thousand of our trees have never been photographed by
+    /// anybody and the picture stays there for everyone who comes after.
+    ///
+    /// Strava is the other half. It gives no personal record for the FIRST
+    /// time you ride a segment, because a first has nothing to compare against
+    /// and marking it makes the mark meaningless. That decides the case Hidde
+    /// raised: "first in your own trees" is every tick you will ever make, so
+    /// it is not an event. What IS one is the first of a KIND, which is
+    /// Merlin's life list: your first tree at all, your first in this city.
+    ///
+    /// Ordered hardest-won first, and only one ever shows. "Nobody had
+    /// photographed this" is a claim about what we had published when the app
+    /// last read the feed, which is why it is past tense.
+    static func firstOf(tree t: Tree, visited: [String: Saved.Entry],
+                        trees: [Tree]) -> String? {
+        let ticked = visited.filter { $0.value.visitedAt != nil }.keys
+        if t.photo == nil {
+            return "Nobody had photographed this one. Yours is the first."
+        }
+        if ticked.filter({ $0 != t.id }).isEmpty {
+            return "The first tree in your collection."
+        }
+        let byId = Dictionary(uniqueKeysWithValues: trees.map { ($0.id, $0) })
+        let elsewhereInCity = ticked.contains { $0 != t.id && byId[$0]?.citySlug == t.citySlug }
+        if !elsewhereInCity && !t.city.isEmpty {
+            return "Your first in \(t.city)."
+        }
+        return nil
+    }
+
+    /// A first is marked rather than narrated: one row, the project's own
+    /// green, and no exclamation mark doing the work a fact should do.
+    private func milestone(_ line: String) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: "rosette")
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundStyle(Brand.moss)
+            Text(line)
+                .font(.brand(15, .bold))
+                .foregroundStyle(Brand.ink)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Brand.surface, in: .rect(cornerRadius: 14))
     }
 
     private func subtitle(_ t: Tree) -> String {
