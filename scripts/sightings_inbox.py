@@ -45,6 +45,9 @@ import sys
 import urllib.error
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import ours  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 KEY = os.environ.get("SUPABASE_SERVICE_KEY")
@@ -171,13 +174,63 @@ def light(dest):
         return None
 
 
+# WHICH ONES ARE WORTH THE DATABASE (2026-09-07, Hidde: "we need to figure out
+# how to judge which ones are worth the database for all. dont just add all").
+#
+# The BAR was never the missing piece: the Cadiz standard in CLAUDE.md says
+# what a publishable photograph looks like, and looking at the pixels before
+# approving is the rule that does not bend. What was missing is an ORDER. Every
+# photograph arrived in one flat list, each one costing the same minute of
+# somebody's attention whether it closed a real gap or was the fourth picture
+# of a tree that already has a good one.
+#
+# So each entry now carries what it is WORTH, which is a different question
+# from whether it is any good, and only the first question can be answered
+# mechanically:
+#
+#   closes a gap   the tree has no photograph at all. 2,000-odd of ours do not,
+#                  so this is the whole reason the camera exists.
+#   might beat it  the tree has one already. Worth a look only against what is
+#                  there, per Hidde 2026-09-02: we use the reader's if it is
+#                  better. Never a default swap.
+#   check the tree the match came from distance rather than the app's own tree
+#                  id. Two limes ten metres apart is the ordinary case, so the
+#                  honest verdict here starts at `hold`.
+#   poorly lit     photo_light says POOR. Bottom of the list, not deleted: the
+#                  Weichselboom rule stands, and the only photograph of a tree
+#                  still ships when it is the only one.
+#
+# None of this decides anything. It puts the twenty that matter above the two
+# hundred that do not, so a viewing pass spends its judgement where judgement
+# is the scarce thing.
+def worth(entry):
+    """A sort key and a plain sentence, in that order. Lower sorts first."""
+    lit = (entry.get("light") or {}).get("verdict")
+    poor = lit == "POOR"
+    gap = entry.get("current_photo") in (None, "", "missing")
+    far = entry.get("match") == "distance" and (entry.get("distance_m") or 0) > 20
+    if gap and not poor:
+        rank, why = (0, "closes a gap: this tree has no photograph at all")
+    elif gap:
+        rank, why = (3, "closes a gap, but poorly lit: only ship it if it is the only one")
+    elif not poor:
+        rank, why = (1, "the tree already has one: ship this only if it is better")
+    else:
+        rank, why = (4, "the tree already has one and this is poorly lit")
+    if far:
+        rank += 1
+        why += f"; matched by distance at {int(entry.get('distance_m') or 0)} m, so check it is this trunk before approving"
+    return rank, why
+
+
 def status():
     q = load(QUEUE, {"queue": []}).get("queue", [])
     print(f"sightings inbox: {len(q)} photograph(s) waiting for a look")
     for e in q:
         print(f"  {e['sighting_id'][:8]}  {e.get('tree_id') or 'NO MATCH'}  "
               f"{(e.get('tree_name') or e.get('name') or '')[:40]}  "
-              f"match={e['match']}  has_photo={e['current_photo']}  light={(e.get('light') or {}).get('verdict', 'unmeasured')}")
+              f"match={e['match']}  has_photo={e['current_photo']}  light={(e.get('light') or {}).get('verdict', 'unmeasured')}\n"
+              f"      {e.get('worth', '')}")
     return 0
 
 
@@ -215,12 +268,25 @@ def main():
                              "leads": []})
     lead_ids = {l.get("sighting_id") for l in leads_doc["leads"]}
 
-    queue, new_leads, skipped = [], 0, 0
+    queue, new_leads, skipped, mine = [], 0, 0, 0
     today = datetime.date.today().isoformat()
     for row in rows:
         sid = row["id"]
         if sid in done:
             skipped += 1
+            continue
+        # OUR OWN PHOTOGRAPHS ARE NOT CONTRIBUTIONS (2026-09-07). Hidde spent a
+        # day testing in Nara and photographed a great deal: "i was testing so
+        # fotographed a lot but we need to figure out how to judge which ones
+        # are worth the database for all. dont just add all." Every one of them
+        # was heading for this queue as a reader's gift and for the leads file
+        # as supply, and one had already been published with a note calling him
+        # a reader. Ours are recorded as handled and go no further; they are
+        # still in the database and on his own phone, so nothing is lost, and
+        # any of them can be published deliberately rather than by default.
+        if ours.is_ours(row.get("user_id")):
+            done[sid] = {"outcome": "ours", "date": today}
+            mine += 1
             continue
         tid, how, dist = match(row, index)
         if tid is None:
@@ -256,6 +322,8 @@ def main():
             "file": os.path.relpath(dest, ROOT),
             "light": light(dest),
         })
+        queue[-1]["rank"], queue[-1]["worth"] = worth(queue[-1])
+    queue.sort(key=lambda e: (e["rank"], -(e.get("distance_m") or 0)))
 
     save(QUEUE, {"_note": "Photographs readers sent through the app, matched to a tree "
                           "we map, waiting for a viewing pass. Judge with the photo-judge "
@@ -266,7 +334,8 @@ def main():
     if new_leads:
         save(LEADS, leads_doc)
     print(f"sightings inbox: {len(rows)} row(s) with a photograph, {skipped} already handled, "
-          f"{len(queue)} queued for a look, {new_leads} new lead(s) for trees we do not map")
+          f"{mine} ours, {len(queue)} queued for a look, "
+          f"{new_leads} new lead(s) for trees we do not map")
     for e in queue:
         print(f"  {e['sighting_id'][:8]}  {e['tree_id']}  {e['tree_name'][:40]}  "
               f"match={e['match']}{'' if e['distance_m'] is None else ' ' + str(e['distance_m']) + 'm'}  "
