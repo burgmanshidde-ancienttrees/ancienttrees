@@ -10702,7 +10702,9 @@
      "author": "Ank Kumar",
      "lat": 47.372906,
      "lng": 8.5411,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lindenhof hill Category:Photographs by Ank gsx Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lindenhof hill Category:Photographs by Ank gsx Category:Self-published work",
+     "judged": "reject",
+     "verdict": "an art exhibition display (framed prints on stands), not a tree; only background trees visible"
     },
     {
      "title": "File:Lindenhof Square and Hill, Zurich (Ank Kumar) 05.jpg",
@@ -10712,7 +10714,9 @@
      "author": "Ank Kumar",
      "lat": 47.372906,
      "lng": 8.5411,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lindenhof (Zürich) Category:Photographs by Ank gsx Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lindenhof (Zürich) Category:Photographs by Ank gsx Category:Self-published work",
+     "judged": "reject",
+     "verdict": "shows people playing giant chess with the limes only as background framing, not the subject and not clearly readable as crown/trunk"
     }
    ]
   },
@@ -61563,7 +61567,9 @@
      "author": "JDMcGreg",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings in Missouri Category:Built in Missouri in 1894 Category:CC-BY-SA-3.0 Category:Manchester, Missouri Category:National Register of Historic Places in St. Louis County, Missouri Category:National Register of Historic Places missing SDC depicts Category:National Register of Historic Places missing SDC location of creation Category:National Register of Historic Places with known IDs Category:Retouched by Kbh3rd Category:Self-published work Category:Taken with Canon Digital IXUS 100 IS"
+     "cats": "Category:Buildings in Missouri Category:Built in Missouri in 1894 Category:CC-BY-SA-3.0 Category:Manchester, Missouri Category:National Register of Historic Places in St. Louis County, Missouri Category:National Register of Historic Places missing SDC depicts Category:National Register of Historic Places missing SDC location of creation Category:National Register of Historic Places with known IDs Category:Retouched by Kbh3rd Category:Self-published work Category:Taken with Canon Digital IXUS 100 IS",
+     "judged": "reject",
+     "verdict": "generic Manchester photo matched only by city name, not a tree"
     },
     {
      "title": "File:Manchester Skyline Night.jpg",
@@ -61573,7 +61579,9 @@
      "author": "Bryan Marble",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Manchester, New Hampshire skylines"
+     "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Manchester, New Hampshire skylines",
+     "judged": "reject",
+     "verdict": "a night skyline photo matched only by city name, not a tree; also violates the never-a-night-shot rule"
     },
     {
      "title": "File:Manchester from the Sky, 2008.jpg",
@@ -61583,7 +61591,9 @@
      "author": "Daniel Nisbet from Manchester, United Kingdom",
      "lat": null,
      "lng": null,
-     "cats": "Category:Aerial photographs of Manchester Category:CC-BY-2.0 Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS-1Ds Mark III"
+     "cats": "Category:Aerial photographs of Manchester Category:CC-BY-2.0 Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS-1Ds Mark III",
+     "judged": "reject",
+     "verdict": "an aerial city skyline photo matched only by city name, not a tree"
     },
     {
      "title": "File:NE High School Manchester PA.JPG",
@@ -61711,7 +61721,9 @@
      "author": "Dai O'Nysius",
      "lat": 53.4517458,
      "lng": -2.2467684,
-     "cats": "Category:Alexandra Park, Manchester Category:CC-BY-SA-3.0 Category:England photographs taken on 2010-03-07 Category:Files with coordinates missing SDC location of creation (53° N, 3° W) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 3294567 Category:Taken with Olympus FE-5000 / X-905 Category:Unidentified trees in the United Kingdom"
+     "cats": "Category:Alexandra Park, Manchester Category:CC-BY-SA-3.0 Category:England photographs taken on 2010-03-07 Category:Files with coordinates missing SDC location of creation (53° N, 3° W) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 3294567 Category:Taken with Olympus FE-5000 / X-905 Category:Unidentified trees in the United Kingdom",
+     "judged": "reject",
+     "verdict": "silhouetted against bright sky, trunk and branches show as pure black with no bark or leaf detail, poor exposure"
     },
     {
      "title": "iNat obs 131559402 (Fraxinus excelsior)",
@@ -61720,7 +61732,9 @@
      "licence": "CC BY",
      "author": "(c) Stuart Fraser, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "53.45240536,-2.24822868"
+     "obs_location": "53.45240536,-2.24822868",
+     "judged": "reject",
+     "verdict": "iNat observation with no location match to our pin, species Fraxinus excelsior (European Ash) not the mapped Variegated Green Ash cultivar, and no photo of the actual tree available for viewing"
     }
    ]
   },
