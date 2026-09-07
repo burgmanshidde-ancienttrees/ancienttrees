@@ -1,26 +1,5 @@
 {
  "_note": "Photographs readers sent through the app, matched to a tree we map, waiting for a viewing pass. Judge with the photo-judge agent and apply with scripts/sightings_publish.py. Rebuilt on every knock from the rows without a verdict.",
  "written": "2026-09-07",
- "queue": [
-  {
-   "sighting_id": "0c00d472-ba14-4cf4-b53d-a1d407d2c2e4",
-   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
-   "display_name": "Hidde",
-   "tree_id": "nra_010",
-   "city_slug": "nara",
-   "city": "Nara",
-   "tree_name": "The Roben-sugi of Nigatsu-do",
-   "match": "app",
-   "distance_m": 0,
-   "current_photo": "none",
-   "current_source": null,
-   "name": "The Roben-sugi of Nigatsu-do",
-   "species": null,
-   "note": "",
-   "taken_at": "2026-09-07T05:45:03+00:00",
-   "photo_path": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/0C00D472-BA14-4CF4-B53D-A1D407D2C2E4.jpg",
-   "file": "out/sightings/0c00d472-ba14-4cf4-b53d-a1d407d2c2e4.jpg",
-   "light": null
-  }
- ]
+ "queue": []
 }

@@ -363,10 +363,16 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/nra_010-the-roben-sugi-of-nigatsu-do.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "0c00d472-ba14-4cf4-b53d-a1d407d2c2e4",
+        "note": "Photographed by a reader and sent through the app (2026-09-07); a viewing pass approved it on 2026-09-07: Roben-sugi cedar fills the frame, trunk and crown both readable from the shrine steps, daylight, in leaf, properly exposed against overcast sky. Tree had no photo at all. Sole distinctive tree at this spot per the story, no risk of wrong-trunk.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "notes": "Sources agree the original Roben-sugi was destroyed by the Second Muroto Typhoon on 16 September 1961 and that today's tree is a replanting; they disagree on whether it is the third or the fourth generation, which is stated in the story rather than resolved. Pin is shrine-level: sources place the tree below Nigatsu-do's slope immediately north of Kojo Shrine, and the coordinate is mapped from that description, not from a register or a survey."
     }
