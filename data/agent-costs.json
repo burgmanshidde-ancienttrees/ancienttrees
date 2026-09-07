@@ -5846,6 +5846,15 @@
     "note": "4 named candidates checked; 1 shipped (Hermann Sudermann Oak, sole natural monument in Nemunas Delta Regional Park, literary hook to Murnau Sunrise 1927), 1 held as a genuine-but-thin 3-oak Gelgaudiskis cluster (2 of its 5 designated objects confirmed dead via their own Wikipedia pages), 2 blocked (Draugeliu oak on a private farmstead, Molavenai oak dead since ~2005)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "famouslithuania-batch2-write",
+    "kind": "write",
+    "tokens": 30000,
+    "trees": 1,
+    "note": "1 single-tree Lithuanian destination written (Hermann Sudermann Oak, tied to Murnau Sunrise 1927); merged into new city file zalgiriai.json by the main session, which also trimmed intro/question_context to clear Contract B/C",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
