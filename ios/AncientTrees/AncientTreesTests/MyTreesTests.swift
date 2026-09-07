@@ -558,6 +558,16 @@ struct WhenPermissionIsRefused {
                 "a confirmed pin under eighty metres stopped matching")
     }
 
+    /// The payoff line said "replanted after 1961 old" on Hidde's own screen.
+    @Test func anAgeThatIsAlreadyASentenceKeepsItsOwnWords() {
+        #expect(CollectSheet.agePhrase("roughly 400 years") == "roughly 400 years old")
+        #expect(CollectSheet.agePhrase("current tree roughly 60 years old, replanted after 1961")
+                == "current tree roughly 60 years old, replanted after 1961")
+        #expect(CollectSheet.agePhrase("about 300 years old") == "about 300 years old")
+        #expect(CollectSheet.agePhrase(nil) == nil)
+        #expect(CollectSheet.agePhrase("  ") == nil)
+    }
+
     /// Every simulator, and any iPad without a rear camera.
     @Test func noCameraAtAllIsTheLibraryWhateverTheAnswerWas() {
         for answer in [AVAuthorizationStatus.authorized, .denied, .notDetermined, .restricted] {
