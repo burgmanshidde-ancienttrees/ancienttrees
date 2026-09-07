@@ -687,6 +687,37 @@
       "curation_status": "flagged",
       "notes": "Register point (52.442538,13.128787) sits roughly 270m from the garden's own mapped grounds (OSM way, centroid 52.4443295,13.1314394); pinned to the garden itself rather than the raw register coordinate, and marked approximate accordingly. Register is the only source for the tree's own designation criteria; berlin.de (district) and berlingarten.de corroborate the garden's history and public status but are not tree-specific. No age or girth found for this individual beech. Do not confuse with the different 120-year-old Blutbuche Naturdenkmal at the Kladow-Center (a separate tree, separate designation, covered in 2019 berliner-woche.de coverage about crown pruning); that is a different location entirely.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "ber_020",
+      "name": "The Podbielski Oak",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "disputed, see story",
+      "age_min": 90,
+      "age_max": 200,
+      "location": {
+        "address": "Olympischer Platz 3, behind the Preussenturm at the Osttor (East Gate), Olympiastadion Berlin, 14053 Berlin",
+        "latitude": 52.51506,
+        "longitude": 13.2426,
+        "neighbourhood": "Westend, Charlottenburg-Wilmersdorf"
+      },
+      "story": "The only tree standing anywhere on the Olympiastadion's 810 by 320 metre grounds carries the name of a Prussian cavalry general. In 1914 organisers at the old Deutsches Stadion marked Victor von Podbielski's seventieth birthday by naming an oak there after him. What happened to that oak is disputed. Berlin's own account of the stadium describes today's tree as roughly 200 years old, its name simply carried forward when the Nazi-era Olympiastadion replaced the earlier ground for the 1936 Games. A local history site tells a harder story: that the original Podbielski oak was felled along with the old stadium, and a replacement planted in 1936 to carry the name into the new arena. Both readings agree on what stands there now: a protected oak behind the Preussenturm at the Osttor, alone on a site built for 100,000 spectators and otherwise stripped of trees. It has stood through the 1936 Olympics, the Second World War and everything the stadium has hosted since, a scrap of green on concrete built for propaganda. It is free to see from outside the stadium fence, or reachable at the trunk with a stadium ticket.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Olympiastadion_(Berlin)",
+        "https://www.golocal.de/berlin/sportanlagen/podbielski-eiche-YV1iN/",
+        "berlin-naturdenkmale.json register_id 4-6/B"
+      ],
+      "access": "Free to view from outside the stadium fence at the Osttor (East Gate); stadium entry (paid, roughly EUR 7) lets visitors stand beside it",
+      "transport": "U2 Olympia-Stadion, about 500m / 6 minute walk to the Osttor (East Gate)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (4-6/B, designated 1993-03-02) gives species as Quercus petraea and the same coordinates as de.wikipedia's district Naturdenkmal list, which is not independent of the register (same ordinance) but corroborates the pin. Age genuinely disputed between two independent sources: de.wikipedia's Olympiastadion article implies continuity from a c.1820s original ('etwa 200 Jahre alt'), golocal.de says the 1914-named original was felled with the 1913 Deutsches Stadion and a replacement planted in 1936 (~90 years old); both recorded rather than picking a winner. A Commons photo filename ('Westend Olympiastation Stieleiche.jpg') suggests possible confusion with Quercus robur (Stieleiche); not resolved this pass, register's Quercus petraea kept as the recorded species. monumentaltrees.com 403'd throughout, no girth recorded.",
+      "location_precision": "confirmed"
     }
   ]
 }

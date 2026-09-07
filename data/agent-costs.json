@@ -5755,6 +5755,13 @@
     "tokens": 90000,
     "trees": 4,
     "note": "Verify pass on 4 genuinely distinct trees from a reader (Hidde) walking Nara with the app camera flow; a prior continuation dispatched research on this but the background agent was lost when its session ended (2 more of the 8 raw sightings turned out to be duplicate/extra shots of the already-published nra_010, filed as holds not new leads). None of the 4 cleared the two-independent-source bar (only the reader photograph supports each), so all four published per Step 2 (one source exists -> include, flag) rather than left in research limbo. All honest: no age, no girth, no name beyond a descriptive one, species uncertain on one (nra_013), access uncertain on one (nra_014, phrased as view-only). Fixed a title-length build break (nra_014 name too long) before merging. Meta_description count promise fixed (nine more -> thirteen more)."
+   },
+   {
+    "target": "berlin",
+    "kind": "verify",
+    "tokens": 224527,
+    "trees": 1,
+    "note": "Deepen verify pass on 561 unmined Naturdenkmal register candidates plus 284 Wikidata candidates. Register has no age/girth field; de.wikipedia district Naturdenkmal lists trace to the same ordinance as the register so do not count as independent; monumentaltrees.com 403d throughout with no usable Wayback snapshots. Only 1 tree cleared the two-independent-source bar (ber_020, the Podbielski Oak at the Olympiastadion, age genuinely disputed between two sources, delivered flagged with both readings). 7 clusters recorded as open leads in data/leads/berlin.json pending an independent source or access confirmation, none confirmed dead ends. Low yield reflects a real register gap (no age field, no accessible second-source layer) rather than an unworked city."
    }
   ]
  }

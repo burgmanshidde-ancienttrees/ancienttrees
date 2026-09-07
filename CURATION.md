@@ -2,6 +2,46 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 (continuation 5) - Berlin verify pass: 561 register candidates, 1 shipped (ber_020)
+
+Continued a window a still earlier attempt had stopped after 15 minutes
+having shipped 0 trees, with 105 of 120 minutes unspent.
+`passcheck.py --claims` showed a standing Berlin verify claim (589
+Naturdenkmal register candidates within 20km, 561 unmined, plus 284
+Wikidata candidates). Dispatched a verify pass to finish it rather than
+re-claim or abandon it.
+
+Yield was low and the reason is a genuine register gap, not an unworked
+city: `berlin-naturdenkmale.json` carries no age or girth field at all,
+and for nearly every unmined candidate the only apparent "second source"
+was de.wikipedia's district Naturdenkmal list, which traces to the same
+government ordinance as the register itself (confirmed by exact
+coordinate matching), so per this project's own established precedent it
+does not count as independent. monumentaltrees.com, which resolved most
+of Berlin's earlier leads, 403'd throughout with no usable Wayback
+snapshots.
+
+**1 tree shipped: ber_020, the Podbielski Oak**, the only tree standing
+anywhere on the Olympiastadion's 810x320m grounds, named in 1914 for
+Prussian cavalry general Victor von Podbielski. Two independent sources
+disagree on its history: de.wikipedia implies continuity from a
+~200-year-old original, golocal.de says the 1913 original was felled with
+the old Deutsches Stadion and a replacement planted in 1936 (~90 years).
+Delivered flagged, both readings stated rather than a winner picked, per
+the Dicke Marie precedent already on this city's own page. Species also
+carries an unresolved minor conflict (register says Quercus petraea, a
+Commons photo filename suggests Quercus robur), noted but not resolved.
+Wrote the story myself (1 tree, below the threshold for a write-stories
+batch) and its German overlay translation (`data/i18n/de/berlin.json`,
+title count 19 to 20 Naturdenkmäler). Berlin now 20 trees, 12 with photos.
+
+7 clusters recorded as new open leads in `data/leads/berlin.json`
+(Johannaplatz yews, Wallotstrasse/Königsallee beeches, a 13-tree Tiergarten
+exotic cluster, a TU Berlin arboretum, a Dahlem churchyard lime, Grunewald
+forest oaks, Heinrich-von-Kleist-Park), none confirmed dead ends, each
+missing either an independent source or an access confirmation. Claim
+released. Build, QA and preflight all clean.
+
 ## 2026-09-07 (continuation 4) - Prague write pass merged (+3); Nara reader sightings closed out (+4), 11 submissions answered
 
 Resumed a window a still earlier attempt had stopped after 57 minutes

@@ -1,6 +1,35 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation 5) - Berlin +1 (ber_020) from a 561-candidate register verify pass; low yield is a real register gap
+
+Continued a window a still earlier attempt had stopped after 15 minutes
+having shipped nothing, with 105 of 120 minutes unspent. A Berlin verify
+claim was already standing (589 Naturdenkmal register candidates within
+20km, 561 unmined, plus 284 Wikidata candidates), so finished it rather
+than starting fresh elsewhere.
+
+Only 1 tree cleared the two-independent-source bar: **ber_020, the
+Podbielski Oak**, the only tree standing anywhere on the Olympiastadion's
+grounds, named in 1914 for a Prussian cavalry general. Two sources
+disagree whether today's tree is the original (~200 years) or a 1936
+replacement after the old stadium came down (~90 years); shipped flagged
+with both readings stated, same honesty pattern as this city's own Dicke
+Marie. Wrote the story and its German translation directly (one tree,
+too small for a write-stories batch). Berlin: 19 to 20 trees, 12 with
+photos.
+
+The low yield is worth naming rather than treating as a failed pass:
+Berlin's own register has no age or girth field, and nearly every other
+unmined candidate's apparent second source (de.wikipedia's district
+Naturdenkmal lists) turned out to trace to the same government ordinance
+as the register, so it does not count as independent under our own
+rules. monumentaltrees.com, which resolved most of Berlin's earlier
+trees, 403'd all pass with no Wayback fallback. 7 clusters went to leads
+instead of being forced through: none are dead ends, each is missing
+either a genuine second source or an access confirmation. Claim
+released. Build, QA and preflight clean.
+
 ## 2026-09-07 (session, Hidde testing in Nara) - The picker gets an honest way out, and our own rows stop counting as readers
 
 He was testing the app in Japan and sent four things. All four were right and

@@ -1,118 +1,202 @@
 {
-  "leads": [
-    {
-      "name": "[RESOLVED 2026-08-09, delivered as ber_018] Flatter-Ulme (European White Elm) at the Karpfenteich, Schlosspark Charlottenburg",
-      "species": "European White Elm (Ulmus laevis)",
-      "location": {
-        "address": "Schlosspark Charlottenburg, southeastern corner of the Karpfenteich, Spandauer Damm, Berlin",
-        "latitude": 52.524056,
-        "longitude": 13.295944,
-        "neighbourhood": "Charlottenburg"
-      },
-      "reason": "RESOLVED this pass: monumentaltrees.com specimen '20545' ('Rundweg am Karpfenteich', Schlosses Charlottenburg castle garden) has a GPS pin (52.52403,13.29591) about 3m from the register point (4-27/B, 52.524056,13.295944), confirming the same tree. Girth 4.85-4.88m at 1.3m (2015-2020), height 21.50m. Delivered flagged rather than clean because no source, register or monumentaltrees, gives an age for this individual; age_estimate is honestly 'not documented'. See data/research/berlin-verified.json ber_018."
-    },
-    {
-      "name": "Echte Mispel (Medlar) at Schloss Charlottenburg, west wing",
-      "species": "Medlar (Mespilus germanica)",
-      "location": {
-        "address": "Schloss Charlottenburg, am Westfluegel des Schlosses, Berlin",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Charlottenburg"
-      },
-      "reason": "Naturdenkmal 4-28/B per the official register list, single source, no age or dimensions given. Medlars are small trees (typically under 5m) so remarkability is doubtful on size or age; the case would have to rest on rarity as a once-common, now-forgotten fruit tree plus its royal-garden setting. Needs a second source and a stronger case before it clears the qualifying bar. CHECKED AGAIN 2026-08-09: not in monumentaltrees.com's 12-tree Schlosses Charlottenburg garden list, still no second source found. Still a lead."
-    },
-    {
-      "name": "Kirschpflaume (Cherry Plum) at Schloss Charlottenburg, west wing",
-      "species": "Cherry Plum (Prunus cerasifera)",
-      "location": {
-        "address": "Schloss Charlottenburg, am Westfluegel des Schlosses, Berlin",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Charlottenburg"
-      },
-      "reason": "Naturdenkmal 4-29/B per the official register list, single source, no age. Cherry plum is a common small ornamental/fruit tree; unclear this individual clears 'genuinely old OR visually spectacular OR historically significant' even with a second source. Lower priority than the other Charlottenburg leads. CHECKED AGAIN 2026-08-09: not in monumentaltrees.com's Schlosses Charlottenburg garden list. Wikimedia Commons has a photo category for this exact tree (Category:Naturdenkmal Kirschpflaume - Myrobalane Park Schloss Charlottenburg) with 15 photos dated June 2024, confirming it is alive and photographed recently, but the category is built from the same register designation, not an independent source of facts, so it does not clear the two-source bar on its own. Still a lead, now with recent alive-evidence noted for whoever picks it up next."
-    },
-    {
-      "name": "[RESOLVED 2026-08-09, delivered as ber_017] Kaukasische Fluegelnuss (Caucasian Wingnut) at Lietzensee",
-      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-      "location": {
-        "address": "Lietzensee, northern part, east shore, near Lietzenseeufer 5, Berlin",
-        "latitude": 52.50785,
-        "longitude": 13.290788,
-        "neighbourhood": "Charlottenburg"
-      },
-      "reason": "RESOLVED this pass: monumentaltrees.com specimen '21539' at Lietzenseeparks has a GPS pin (52.50793,13.29076) about 9m from the register point (4-25/B, 52.50785,13.290788), confirming the same tree, planted 1927 (99y at the 2020 measurement), girth ~5.94m measured at ground level due to multiple trunks. See data/research/berlin-verified.json ber_017. Delivered honestly modest on age; qualifies on rarity and multi-stem size instead."
-    },
-    {
-      "name": "[RESOLVED 2026-08-09, delivered as ber_016] Platane (Plane tree) at Lietzensee",
-      "species": "London Plane (Platanus x hispanica / acerifolia)",
-      "location": {
-        "address": "Lietzensee, northern part, west shore, near Wundtstrasse 56, Berlin",
-        "latitude": 52.5075,
-        "longitude": 13.28676,
-        "neighbourhood": "Charlottenburg"
-      },
-      "reason": "RESOLVED this pass: reached monumentaltrees.com directly via a browser session (no 403 this time; the earlier block may have been transient or Cloudflare-related). Specimen '21543' at Lietzenseeparks has a GPS pin (52.50750,13.28677) about 3m from the register point (4-26/B, 52.5075,13.28676), confirming this is the SAME tree the age-record page's '219 years, 1807' figure refers to, not a different plane in the same park (the park has at least 3 documented London Planes). Girth grew 6.00m to 6.43m 2015-2025, height 22m; 6th-thickest tree in Berlin by girth on monumentaltrees. See data/research/berlin-verified.json ber_016."
-    },
-    {
-      "name": "[BLOCKED 2026-08-23] Stiel-Eiche (Pedunculate Oak) at Fuerstenbrunner Weg 30 (ND 4-2/B)",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "location": {
-        "address": "Fuerstenbrunner Weg 30, Berlin",
-        "latitude": 52.521591,
-        "longitude": 13.280905,
-        "neighbourhood": "Charlottenburg"
-      },
-      "reason": "NEW this pass (2026-08-09), found querying the register within 2.5km of ber_004. Register is the only source found: the Charlottenburg-Wilmersdorf Naturdenkmal list, berlingeschichte.de's street-history page and monumentaltrees.com's Berlin index were all checked and none names this specific tree (monumentaltrees has no Fuerstenbrunner Weg location at all). About 0.95km from ber_004 and the Karpfenteich elm (ber_018), so it would extend the Charlottenburg cluster if a second source turns up. Common species, so remarkability rests on age/girth once found. Worth a look via baumkunde.de site search or a Charlottenburg-Wilmersdorf district press piece next pass. BLOCKED 2026-08-23: reverse-geocoded, the address sits in the Villenkolonie Westend, a private villa district (OSM classes the point as a residential house, not a street frontage); no evidence this specific plot is open ground rather than a front garden, which fails hard rule 10's private-home test. Not pursued further; would need a source stating the tree stands on public ground before it could ship.",
-      "status": "blocked"
-    },
-    {
-      "name": "[BLOCKED 2026-08-23] Haenge-Buche (Weeping Beech) at Ulmenallee 4 (ND 4-12/B) and Rot-Buche at Eichenallee 6 (ND 4-40/B)",
-      "species": "Weeping Beech (Fagus sylvatica var. pendula) and Common Beech (Fagus sylvatica)",
-      "location": {
-        "address": "Ulmenallee 4 and Eichenallee 6, Berlin",
-        "latitude": 52.515989,
-        "longitude": 13.275587,
-        "neighbourhood": "Charlottenburg"
-      },
-      "reason": "BLOCKED 2026-08-23 (depth pass). Both addresses sit on Ulmenallee and Eichenallee in the Villenkolonie Westend, Berlin's Grunderzeit villa colony where every numbered address checked this pass (Ulmenallee 3, 8, 18, 35; Eichenallee 6) is a private villa or former villa, matching the exact pattern that already blocked ber_004's neighbour, the Fuerstenbrunner Weg oak, in this same file. Eichenallee 6 specifically confirmed: Berlin's own Denkmaldatenbank (obj_dok_nr 09096137) describes it as a Landhaus now used mostly as a psychotherapy centre, with the copper beech in the FRONT garden and the register's beech (in fact a rare cut-leaf Fagus sylvatica laciniata, not the plain species the Naturdenkmal register row names) in the REAR garden, i.e. private grounds with no stated public access; also a live species mismatch between our register row and the only independent description found. Ulmenallee 4 was not individually confirmed but sits on the identical street with an identical villa-colony pattern and no positive evidence of public access was found. Per hard rule 10, no evidence of open ground means the tree waits. Not pursued further this pass; a future pass could reconsider Eichenallee 6's rear-garden cut-leaf beech specifically if a source ever states the therapy centre's grounds are publicly walkable.",
-      "status": "blocked"
-    },
-    {
-      "name": "[RESOLVED 2026-08-23, delivered as ber_019] Blutbuche (Copper Beech) at Villa Dr. Fraenkel, Kladow (ND 5-56/B)",
-      "species": "Copper Beech (Fagus sylvatica var. purpurea)",
-      "location": {
-        "address": "Landhausgarten Dr. Max Fraenkel, Luedickeweg 1, 14089 Berlin-Kladow",
-        "latitude": 52.442538,
-        "longitude": 13.128787,
-        "neighbourhood": "Kladow, Spandau"
-      },
-      "reason": "CHECKED THIS PASS (2026-08-09), per the brief's instruction to confirm walkability before treating it as part of the Pfaueninsel cluster: it is NOT walkable from Pfaueninsel. Villa Dr. Fraenkel sits in Kladow, on the OPPOSITE bank of the Havel from Wannsee/Pfaueninsel; the only public-transport link between the two banks near here is the BVG ferry F10 (Alt-Kladow to Wannsee), a roughly 4.5km, 20-minute crossing on a completely different ferry route from the short Pfaueninsel chain-ferry, and Kladow is a separate destination roughly 4-5km by road/water from the Pfaueninsel core. Register-designated (ND 5-56/B, 'Schoenheit, landeskundliche Gruende', designated 1993-03-02) and the garden itself is a genuine public destination (Landhausgarten Dr. Max Fraenkel, a reopened public garden with visitor centre and gastronomy per berlin.de and visitspandau.de), so this could be a fine standalone lead for a future Kladow-area cluster, or the seed of a second Berlin walk on the Spandau/Kladow side of the Havel, but it does not belong in the Pfaueninsel walk and should not be forced into one afternoon with it. Still needs a second, tree-specific source (age, girth) beyond the register before it could ship on its own. RESOLVED 2026-08-23, per Hidde's 2026-08-13 ruling that a missing age or girth never blocks publication: shipped as ber_019, flagged, using the register for the tree's own designation and berlin.de/berlingarten.de for the garden's public status and history. Note for whoever touches this next: the register's own coordinate (52.442538,13.128787) sits about 270m from the garden's actual mapped grounds, so the published pin uses the garden's own centroid instead and is marked approximate. Do not confuse this tree with the separate, already-documented 120-year-old Blutbuche Naturdenkmal at the Kladow-Center (2019 berliner-woche.de coverage of a crown pruning); that is a different tree at a different address."
-    },
-    {
-      "name": "[RESOLVED 2026-08-09, delivered as ber_015] Trauben-Eiche, Pfaueninsel, ca. 150m nordoestlich vom Schloss (ND 6-108/B)",
-      "species": "Sessile Oak (Quercus petraea)",
-      "location": {
-        "address": "Pfaueninsel, north of the Schloss, 14109 Berlin",
-        "latitude": 52.431763,
-        "longitude": 13.121202,
-        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
-      },
-      "reason": "One of four Naturdenkmal Trauben-Eichen registered on Pfaueninsel; the other three are already published (ber_011 = ND 6-102/B, 'The Great Oak', register coords 52.431453/13.120752 vs our 52.4315/13.1207, about 10m apart; ber_012 the Tuereiche = ND 6-101/B, register coords 52.430667/13.122139 vs our 52.430565/13.122087, about 12m apart; ber_013 = ND 6-103/B, register coords 52.433833/13.134 vs our 52.4338/13.1342, about 15m apart). data/registers/berlin-naturdenkmale.json (CC0-equivalent, DL-DE-Zero 2.0) carries this entry's coordinates directly (register_id 6-108/B): 52.431763, 13.121202, only 45m from ber_011 and 146m from ber_012, well inside the existing Pfaueninsel walk. Register alone is one source; a second, tree-specific, genuinely independent source is still needed. UPDATED 2026-08-07 (second pass, this session): WebFetch and curl to external hosts now work directly for some hosts and via the r.jina.ai reader proxy for others (curl itself needs a bash-approval this session cannot grant, so all fetching went through WebFetch/WebSearch/r.jina.ai). Progress and the remaining gap: (1) The primary source was finally read in full: https://r.jina.ai/https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf (direct WebFetch on the PDF returns unreadable font-encoded streams; the r.jina.ai text-extraction proxy works) returns the actual ordinance entry: register id 6-108/B, species 'Quercus petraea var. laciniata (Lam.) C. Vicioso', German name 'Geschlitzblättrige' Trauben-Eiche (a rare cut-leaf variety), location 150m northeast of the Schloss, designation criterion 2a (Seltenheit/rarity). This CONFIRMS the cut-leaf detail a previous pass could only get as an unverifiable WebSearch snippet. (2) BUT: this ordinance PDF and the imported register JSON are the same underlying government designation (both trace to the Bezirksamt Steglitz-Zehlendorf Naturdenkmalverordnung, digitised into the Land Berlin GIS/WFS layer that the JSON was pulled from), so treating them as two INDEPENDENT sources is not honest, they are one official source read twice. (3) Went looking for a real independent tree-specific source: baumkunde.de register entries 2135 ('Eiche auf der Pfaueninsel', GPS E13°7.2423'/N52°25.889' = 52.43148/13.12074, 'ostrich-shaped twisted crown', 5.67m girth, vital Sep 2015, explicitly states NO cut-leaf/Geschlitzblättrige note) and 6402 ('Tuereiche auf der Pfaueninsel', ~250yr, 5.58m girth, 8.5m height) were fetched directly and both match the coordinates of the ALREADY-PUBLISHED ber_011 (2135, ~2m away) and ber_012 (6402, matches Tuereiche by name) respectively, not 6-108/B (24m+ from 2135's coords). ostdeutsches-baumarchiv.de's 'Traubeneiche 1 auf der Pfaueninsel' (Umfang 565cm, 'Schlosswiese, am Weg zwischen den beiden Wiesenteilen, noerdlicher Bereich', species given inconsistently as both Quercus robur on one page and generic Traubeneiche on its own index page) does not match 6-108/B's 'ca. 150m nordoestlich vom Schloss' location either and is likely yet another tree or a mislabelled duplicate of one of the other three. monumentaltrees.com pages (14327, 28796) are blocked (403) to both direct WebFetch and the r.jina.ai proxy (bot-detection page, not the article). SPSG.de and de.wikipedia.org's Pfaueninsel article both confirm only that the island has 'several-hundred-year-old' free-standing oaks generally and that SPSG/Berlin Botanical Garden run a rare-plant conservation project there, with no tree-specific corroboration of 6-108/B. CALL: still does not clear the two-independent-source bar. Stays a lead. Next pass: try baumkunde.de's own site search (blocked at /Suche/ path with 403 to WebFetch this session, worth retrying with a browser UA via curl if bash approval is available) for an entry matching 52.4318/13.1212 specifically, or contact SPSG's Pfaueninsel-specific tree documentation (Meine Pfaueninsel / blog articles) directly rather than via WebSearch summary."
-    },
-    {
-      "name": "[RESOLVED 2026-08-09, delivered as ber_014] Ahornblaettrige Platane (London Plane), west of the Wirtshaus zur Pfaueninsel (ND 6-71/B)",
-      "species": "London Plane (Platanus x acerifolia)",
-      "location": {
-        "address": "Pfaueninselchaussee 100, west of the Wirtshaus zur Pfaueninsel, 14109 Berlin",
-        "latitude": 52.428433,
-        "longitude": 13.121932,
-        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
-      },
-      "reason": "NEW this pass (2026-08-07), found by re-reading the full berlin-naturdenkmale.json register for all 'Pfaueninsel' entries rather than only the four oaks already known: a fifth Naturdenkmal sits on Pfaueninsel, register id 6-71/B, designated for 'Schoenheit, landeskundliche Gruende' (beauty, regional-historical reasons) rather than rarity or age. Roughly 340m south of ber_011 (The Great Oak), i.e. still on the same ferry-only island and well inside a walkable cluster, though on the opposite (southern, ferry-landing) end near the restaurant rather than by the Schloss. Register is one source. This pass found WebSearch snippets referencing a baumkunde.de entry for a 'Platane am Wirtshaus zur Faehre Pfaueninsel' / 'Gewoehnliche Platane' but could not obtain the actual URL or fetch the page directly (baumkunde.de's /Suche/ search path returns 403 to WebFetch); this is an unconfirmed lead on a second source, not a verified one. Worth a focused look next pass: find the exact baumkunde.de baumregister URL (try browsing baumkunde.de/baumregister/alle/ pages or a Google site: search for the exact slug) and/or SPSG's own Pfaueninsel materials, which manage the Wirtshaus grounds directly and may describe the tree. Also sanity-check whether 'Platanus acerifolia' here should be relabelled 'London Plane' per hard rule 9 (it is the same species as Platanus x hispanica, already the convention on this site). UPDATED 2026-08-08: retried, WebFetch and WebSearch both worked this session (unlike the 2026-08-07 pass, which needed r.jina.ai). site: search on baumkunde.de and direct search-page fetches (baumkunde.de/baumregister/temp/Suche/platane, /Suche/pfaueninsel) surfaced only the same two already-published entries (2135 = ber_011, 6402 = ber_012) and generic Wirtshaus-restaurant pages, nothing for 6-71/B specifically. CALL: still a dead end on a second source. Do not re-hunt Pfaueninsel further without a genuinely new route in (e.g. an actual account reaching SPSG's own archive rather than its public search).",
-      "dead_end_confirmed": "2026-08-08"
-    }
-  ],
-  "blocked": []
+ "leads": [
+  {
+   "name": "[RESOLVED 2026-08-09, delivered as ber_018] Flatter-Ulme (European White Elm) at the Karpfenteich, Schlosspark Charlottenburg",
+   "species": "European White Elm (Ulmus laevis)",
+   "location": {
+    "address": "Schlosspark Charlottenburg, southeastern corner of the Karpfenteich, Spandauer Damm, Berlin",
+    "latitude": 52.524056,
+    "longitude": 13.295944,
+    "neighbourhood": "Charlottenburg"
+   },
+   "reason": "RESOLVED this pass: monumentaltrees.com specimen '20545' ('Rundweg am Karpfenteich', Schlosses Charlottenburg castle garden) has a GPS pin (52.52403,13.29591) about 3m from the register point (4-27/B, 52.524056,13.295944), confirming the same tree. Girth 4.85-4.88m at 1.3m (2015-2020), height 21.50m. Delivered flagged rather than clean because no source, register or monumentaltrees, gives an age for this individual; age_estimate is honestly 'not documented'. See data/research/berlin-verified.json ber_018."
+  },
+  {
+   "name": "Echte Mispel (Medlar) at Schloss Charlottenburg, west wing",
+   "species": "Medlar (Mespilus germanica)",
+   "location": {
+    "address": "Schloss Charlottenburg, am Westfluegel des Schlosses, Berlin",
+    "latitude": null,
+    "longitude": null,
+    "neighbourhood": "Charlottenburg"
+   },
+   "reason": "Naturdenkmal 4-28/B per the official register list, single source, no age or dimensions given. Medlars are small trees (typically under 5m) so remarkability is doubtful on size or age; the case would have to rest on rarity as a once-common, now-forgotten fruit tree plus its royal-garden setting. Needs a second source and a stronger case before it clears the qualifying bar. CHECKED AGAIN 2026-08-09: not in monumentaltrees.com's 12-tree Schlosses Charlottenburg garden list, still no second source found. Still a lead."
+  },
+  {
+   "name": "Kirschpflaume (Cherry Plum) at Schloss Charlottenburg, west wing",
+   "species": "Cherry Plum (Prunus cerasifera)",
+   "location": {
+    "address": "Schloss Charlottenburg, am Westfluegel des Schlosses, Berlin",
+    "latitude": null,
+    "longitude": null,
+    "neighbourhood": "Charlottenburg"
+   },
+   "reason": "Naturdenkmal 4-29/B per the official register list, single source, no age. Cherry plum is a common small ornamental/fruit tree; unclear this individual clears 'genuinely old OR visually spectacular OR historically significant' even with a second source. Lower priority than the other Charlottenburg leads. CHECKED AGAIN 2026-08-09: not in monumentaltrees.com's Schlosses Charlottenburg garden list. Wikimedia Commons has a photo category for this exact tree (Category:Naturdenkmal Kirschpflaume - Myrobalane Park Schloss Charlottenburg) with 15 photos dated June 2024, confirming it is alive and photographed recently, but the category is built from the same register designation, not an independent source of facts, so it does not clear the two-source bar on its own. Still a lead, now with recent alive-evidence noted for whoever picks it up next."
+  },
+  {
+   "name": "[RESOLVED 2026-08-09, delivered as ber_017] Kaukasische Fluegelnuss (Caucasian Wingnut) at Lietzensee",
+   "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+   "location": {
+    "address": "Lietzensee, northern part, east shore, near Lietzenseeufer 5, Berlin",
+    "latitude": 52.50785,
+    "longitude": 13.290788,
+    "neighbourhood": "Charlottenburg"
+   },
+   "reason": "RESOLVED this pass: monumentaltrees.com specimen '21539' at Lietzenseeparks has a GPS pin (52.50793,13.29076) about 9m from the register point (4-25/B, 52.50785,13.290788), confirming the same tree, planted 1927 (99y at the 2020 measurement), girth ~5.94m measured at ground level due to multiple trunks. See data/research/berlin-verified.json ber_017. Delivered honestly modest on age; qualifies on rarity and multi-stem size instead."
+  },
+  {
+   "name": "[RESOLVED 2026-08-09, delivered as ber_016] Platane (Plane tree) at Lietzensee",
+   "species": "London Plane (Platanus x hispanica / acerifolia)",
+   "location": {
+    "address": "Lietzensee, northern part, west shore, near Wundtstrasse 56, Berlin",
+    "latitude": 52.5075,
+    "longitude": 13.28676,
+    "neighbourhood": "Charlottenburg"
+   },
+   "reason": "RESOLVED this pass: reached monumentaltrees.com directly via a browser session (no 403 this time; the earlier block may have been transient or Cloudflare-related). Specimen '21543' at Lietzenseeparks has a GPS pin (52.50750,13.28677) about 3m from the register point (4-26/B, 52.5075,13.28676), confirming this is the SAME tree the age-record page's '219 years, 1807' figure refers to, not a different plane in the same park (the park has at least 3 documented London Planes). Girth grew 6.00m to 6.43m 2015-2025, height 22m; 6th-thickest tree in Berlin by girth on monumentaltrees. See data/research/berlin-verified.json ber_016."
+  },
+  {
+   "name": "[BLOCKED 2026-08-23] Stiel-Eiche (Pedunculate Oak) at Fuerstenbrunner Weg 30 (ND 4-2/B)",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "location": {
+    "address": "Fuerstenbrunner Weg 30, Berlin",
+    "latitude": 52.521591,
+    "longitude": 13.280905,
+    "neighbourhood": "Charlottenburg"
+   },
+   "reason": "NEW this pass (2026-08-09), found querying the register within 2.5km of ber_004. Register is the only source found: the Charlottenburg-Wilmersdorf Naturdenkmal list, berlingeschichte.de's street-history page and monumentaltrees.com's Berlin index were all checked and none names this specific tree (monumentaltrees has no Fuerstenbrunner Weg location at all). About 0.95km from ber_004 and the Karpfenteich elm (ber_018), so it would extend the Charlottenburg cluster if a second source turns up. Common species, so remarkability rests on age/girth once found. Worth a look via baumkunde.de site search or a Charlottenburg-Wilmersdorf district press piece next pass. BLOCKED 2026-08-23: reverse-geocoded, the address sits in the Villenkolonie Westend, a private villa district (OSM classes the point as a residential house, not a street frontage); no evidence this specific plot is open ground rather than a front garden, which fails hard rule 10's private-home test. Not pursued further; would need a source stating the tree stands on public ground before it could ship.",
+   "status": "blocked"
+  },
+  {
+   "name": "[BLOCKED 2026-08-23] Haenge-Buche (Weeping Beech) at Ulmenallee 4 (ND 4-12/B) and Rot-Buche at Eichenallee 6 (ND 4-40/B)",
+   "species": "Weeping Beech (Fagus sylvatica var. pendula) and Common Beech (Fagus sylvatica)",
+   "location": {
+    "address": "Ulmenallee 4 and Eichenallee 6, Berlin",
+    "latitude": 52.515989,
+    "longitude": 13.275587,
+    "neighbourhood": "Charlottenburg"
+   },
+   "reason": "BLOCKED 2026-08-23 (depth pass). Both addresses sit on Ulmenallee and Eichenallee in the Villenkolonie Westend, Berlin's Grunderzeit villa colony where every numbered address checked this pass (Ulmenallee 3, 8, 18, 35; Eichenallee 6) is a private villa or former villa, matching the exact pattern that already blocked ber_004's neighbour, the Fuerstenbrunner Weg oak, in this same file. Eichenallee 6 specifically confirmed: Berlin's own Denkmaldatenbank (obj_dok_nr 09096137) describes it as a Landhaus now used mostly as a psychotherapy centre, with the copper beech in the FRONT garden and the register's beech (in fact a rare cut-leaf Fagus sylvatica laciniata, not the plain species the Naturdenkmal register row names) in the REAR garden, i.e. private grounds with no stated public access; also a live species mismatch between our register row and the only independent description found. Ulmenallee 4 was not individually confirmed but sits on the identical street with an identical villa-colony pattern and no positive evidence of public access was found. Per hard rule 10, no evidence of open ground means the tree waits. Not pursued further this pass; a future pass could reconsider Eichenallee 6's rear-garden cut-leaf beech specifically if a source ever states the therapy centre's grounds are publicly walkable.",
+   "status": "blocked"
+  },
+  {
+   "name": "[RESOLVED 2026-08-23, delivered as ber_019] Blutbuche (Copper Beech) at Villa Dr. Fraenkel, Kladow (ND 5-56/B)",
+   "species": "Copper Beech (Fagus sylvatica var. purpurea)",
+   "location": {
+    "address": "Landhausgarten Dr. Max Fraenkel, Luedickeweg 1, 14089 Berlin-Kladow",
+    "latitude": 52.442538,
+    "longitude": 13.128787,
+    "neighbourhood": "Kladow, Spandau"
+   },
+   "reason": "CHECKED THIS PASS (2026-08-09), per the brief's instruction to confirm walkability before treating it as part of the Pfaueninsel cluster: it is NOT walkable from Pfaueninsel. Villa Dr. Fraenkel sits in Kladow, on the OPPOSITE bank of the Havel from Wannsee/Pfaueninsel; the only public-transport link between the two banks near here is the BVG ferry F10 (Alt-Kladow to Wannsee), a roughly 4.5km, 20-minute crossing on a completely different ferry route from the short Pfaueninsel chain-ferry, and Kladow is a separate destination roughly 4-5km by road/water from the Pfaueninsel core. Register-designated (ND 5-56/B, 'Schoenheit, landeskundliche Gruende', designated 1993-03-02) and the garden itself is a genuine public destination (Landhausgarten Dr. Max Fraenkel, a reopened public garden with visitor centre and gastronomy per berlin.de and visitspandau.de), so this could be a fine standalone lead for a future Kladow-area cluster, or the seed of a second Berlin walk on the Spandau/Kladow side of the Havel, but it does not belong in the Pfaueninsel walk and should not be forced into one afternoon with it. Still needs a second, tree-specific source (age, girth) beyond the register before it could ship on its own. RESOLVED 2026-08-23, per Hidde's 2026-08-13 ruling that a missing age or girth never blocks publication: shipped as ber_019, flagged, using the register for the tree's own designation and berlin.de/berlingarten.de for the garden's public status and history. Note for whoever touches this next: the register's own coordinate (52.442538,13.128787) sits about 270m from the garden's actual mapped grounds, so the published pin uses the garden's own centroid instead and is marked approximate. Do not confuse this tree with the separate, already-documented 120-year-old Blutbuche Naturdenkmal at the Kladow-Center (2019 berliner-woche.de coverage of a crown pruning); that is a different tree at a different address."
+  },
+  {
+   "name": "[RESOLVED 2026-08-09, delivered as ber_015] Trauben-Eiche, Pfaueninsel, ca. 150m nordoestlich vom Schloss (ND 6-108/B)",
+   "species": "Sessile Oak (Quercus petraea)",
+   "location": {
+    "address": "Pfaueninsel, north of the Schloss, 14109 Berlin",
+    "latitude": 52.431763,
+    "longitude": 13.121202,
+    "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+   },
+   "reason": "One of four Naturdenkmal Trauben-Eichen registered on Pfaueninsel; the other three are already published (ber_011 = ND 6-102/B, 'The Great Oak', register coords 52.431453/13.120752 vs our 52.4315/13.1207, about 10m apart; ber_012 the Tuereiche = ND 6-101/B, register coords 52.430667/13.122139 vs our 52.430565/13.122087, about 12m apart; ber_013 = ND 6-103/B, register coords 52.433833/13.134 vs our 52.4338/13.1342, about 15m apart). data/registers/berlin-naturdenkmale.json (CC0-equivalent, DL-DE-Zero 2.0) carries this entry's coordinates directly (register_id 6-108/B): 52.431763, 13.121202, only 45m from ber_011 and 146m from ber_012, well inside the existing Pfaueninsel walk. Register alone is one source; a second, tree-specific, genuinely independent source is still needed. UPDATED 2026-08-07 (second pass, this session): WebFetch and curl to external hosts now work directly for some hosts and via the r.jina.ai reader proxy for others (curl itself needs a bash-approval this session cannot grant, so all fetching went through WebFetch/WebSearch/r.jina.ai). Progress and the remaining gap: (1) The primary source was finally read in full: https://r.jina.ai/https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf (direct WebFetch on the PDF returns unreadable font-encoded streams; the r.jina.ai text-extraction proxy works) returns the actual ordinance entry: register id 6-108/B, species 'Quercus petraea var. laciniata (Lam.) C. Vicioso', German name 'Geschlitzblättrige' Trauben-Eiche (a rare cut-leaf variety), location 150m northeast of the Schloss, designation criterion 2a (Seltenheit/rarity). This CONFIRMS the cut-leaf detail a previous pass could only get as an unverifiable WebSearch snippet. (2) BUT: this ordinance PDF and the imported register JSON are the same underlying government designation (both trace to the Bezirksamt Steglitz-Zehlendorf Naturdenkmalverordnung, digitised into the Land Berlin GIS/WFS layer that the JSON was pulled from), so treating them as two INDEPENDENT sources is not honest, they are one official source read twice. (3) Went looking for a real independent tree-specific source: baumkunde.de register entries 2135 ('Eiche auf der Pfaueninsel', GPS E13°7.2423'/N52°25.889' = 52.43148/13.12074, 'ostrich-shaped twisted crown', 5.67m girth, vital Sep 2015, explicitly states NO cut-leaf/Geschlitzblättrige note) and 6402 ('Tuereiche auf der Pfaueninsel', ~250yr, 5.58m girth, 8.5m height) were fetched directly and both match the coordinates of the ALREADY-PUBLISHED ber_011 (2135, ~2m away) and ber_012 (6402, matches Tuereiche by name) respectively, not 6-108/B (24m+ from 2135's coords). ostdeutsches-baumarchiv.de's 'Traubeneiche 1 auf der Pfaueninsel' (Umfang 565cm, 'Schlosswiese, am Weg zwischen den beiden Wiesenteilen, noerdlicher Bereich', species given inconsistently as both Quercus robur on one page and generic Traubeneiche on its own index page) does not match 6-108/B's 'ca. 150m nordoestlich vom Schloss' location either and is likely yet another tree or a mislabelled duplicate of one of the other three. monumentaltrees.com pages (14327, 28796) are blocked (403) to both direct WebFetch and the r.jina.ai proxy (bot-detection page, not the article). SPSG.de and de.wikipedia.org's Pfaueninsel article both confirm only that the island has 'several-hundred-year-old' free-standing oaks generally and that SPSG/Berlin Botanical Garden run a rare-plant conservation project there, with no tree-specific corroboration of 6-108/B. CALL: still does not clear the two-independent-source bar. Stays a lead. Next pass: try baumkunde.de's own site search (blocked at /Suche/ path with 403 to WebFetch this session, worth retrying with a browser UA via curl if bash approval is available) for an entry matching 52.4318/13.1212 specifically, or contact SPSG's Pfaueninsel-specific tree documentation (Meine Pfaueninsel / blog articles) directly rather than via WebSearch summary."
+  },
+  {
+   "name": "[RESOLVED 2026-08-09, delivered as ber_014] Ahornblaettrige Platane (London Plane), west of the Wirtshaus zur Pfaueninsel (ND 6-71/B)",
+   "species": "London Plane (Platanus x acerifolia)",
+   "location": {
+    "address": "Pfaueninselchaussee 100, west of the Wirtshaus zur Pfaueninsel, 14109 Berlin",
+    "latitude": 52.428433,
+    "longitude": 13.121932,
+    "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+   },
+   "reason": "NEW this pass (2026-08-07), found by re-reading the full berlin-naturdenkmale.json register for all 'Pfaueninsel' entries rather than only the four oaks already known: a fifth Naturdenkmal sits on Pfaueninsel, register id 6-71/B, designated for 'Schoenheit, landeskundliche Gruende' (beauty, regional-historical reasons) rather than rarity or age. Roughly 340m south of ber_011 (The Great Oak), i.e. still on the same ferry-only island and well inside a walkable cluster, though on the opposite (southern, ferry-landing) end near the restaurant rather than by the Schloss. Register is one source. This pass found WebSearch snippets referencing a baumkunde.de entry for a 'Platane am Wirtshaus zur Faehre Pfaueninsel' / 'Gewoehnliche Platane' but could not obtain the actual URL or fetch the page directly (baumkunde.de's /Suche/ search path returns 403 to WebFetch); this is an unconfirmed lead on a second source, not a verified one. Worth a focused look next pass: find the exact baumkunde.de baumregister URL (try browsing baumkunde.de/baumregister/alle/ pages or a Google site: search for the exact slug) and/or SPSG's own Pfaueninsel materials, which manage the Wirtshaus grounds directly and may describe the tree. Also sanity-check whether 'Platanus acerifolia' here should be relabelled 'London Plane' per hard rule 9 (it is the same species as Platanus x hispanica, already the convention on this site). UPDATED 2026-08-08: retried, WebFetch and WebSearch both worked this session (unlike the 2026-08-07 pass, which needed r.jina.ai). site: search on baumkunde.de and direct search-page fetches (baumkunde.de/baumregister/temp/Suche/platane, /Suche/pfaueninsel) surfaced only the same two already-published entries (2135 = ber_011, 6402 = ber_012) and generic Wirtshaus-restaurant pages, nothing for 6-71/B specifically. CALL: still a dead end on a second source. Do not re-hunt Pfaueninsel further without a genuinely new route in (e.g. an actual account reaching SPSG's own archive rather than its public search).",
+   "dead_end_confirmed": "2026-08-08"
+  },
+  {
+   "name": "Gewoehnliche Eibe x2 (Common Yew) at Johannaplatz, Grunewald (ND 4-30/B, 4-31/B)",
+   "species": "Common Yew (Taxus baccata)",
+   "location": {
+    "address": "Johannaplatz, nordlicher und suedlicher Teil, Berlin-Grunewald",
+    "latitude": 52.48979,
+    "longitude": 13.28181,
+    "neighbourhood": "Grunewald, Charlottenburg-Wilmersdorf"
+   },
+   "reason": "NEW this pass (2026-09-07). Johannaplatz is a public hexagonal garden square laid out 1890/1898 (de.wikipedia 'Johannaplatz (Berlin)': 'wurde er 1898 als Gruenanlage mit Laub- und Nadelbaeumen gestaltet', 'Der alte Baumbestand ist bis heute weitestgehend erhalten geblieben'), so access is not in question. But the only source for the two yews themselves is the register (4-30/B, 4-31/B) plus the Charlottenburg-Wilmersdorf Naturdenkmal Wikipedia list, which is the same underlying government designation reproduced (no Bild, no Beschreibung beyond species, per the project's own established precedent for the Pfaueninsel ordinance/register pair, this does not count as a second independent source). No baumkunde.de, monumentaltrees.com (403 to curl/WebFetch all session) or press coverage found naming these specific trees. Register carries no age/girth field at all for this whole city dataset. Still needs a genuinely independent source before it clears the two-source bar.",
+   "status": "lead"
+  },
+  {
+   "name": "Blutbuche x3 (Copper Beech) at Wallotstrasse/Koenigsallee, Grunewald (ND 4-21/B Baumnummer 4, 4-23/B, 4-24/B)",
+   "species": "Copper Beech (Fagus sylvatica var. purpurea)",
+   "location": {
+    "address": "Wallotstrasse 17a and Koenigsallee 21 and 43-45, Berlin-Grunewald",
+    "latitude": 52.49189,
+    "longitude": 13.27706,
+    "neighbourhood": "Grunewald, Charlottenburg-Wilmersdorf"
+   },
+   "reason": "NEW this pass (2026-09-07). Charlottenburg-Wilmersdorf Naturdenkmal Wikipedia list gives precise coordinates and dated Commons photos (2016) for all three, and notes the SAME address's group registration (4-21/B) dropped two other trees (a Sommerlinde and a Balkan-Rosskastanie) 'bei Neuausweisung 2021 nicht mehr gelistet' (delisted at the 2021 re-designation) while keeping the copper beech, which is useful alive-as-of-2021 evidence for that one tree. BUT access is doubtful: an Overpass check at 52.49081/13.27663 (the Koenigsallee 21 tree) found 'Wissenschaftskolleg zu Berlin' (a research institute, office=research) as the nearest tagged area, matching the same pattern that already blocked the Fuerstenbrunner Weg oak and the Villenkolonie Westend beeches elsewhere in this file (private villa/institution grounds, no reception-free public access confirmed). Not blocked outright because the exact tree-to-property relationship was not confirmed (the beech could stand on the public street verge), but should not ship without a positive access answer. Photos are 9-10 years old (2016), a bit stale for 'alive now' though not disqualifying on their own.",
+   "status": "lead"
+  },
+  {
+   "name": "Tiergarten Englischer Garten exotic-tree cluster: Urweltmammutbaum, Kaukasische Fluegelnuss, Libanon-Eiche, Silber-Linde, Flatter-Ulme, Japanischer Kuchenbaum x2, Stiel-Eiche, Gewoehnliche Robinie, Tulpenbaum (ND 1-34/B through 1-90/B, ~13 entries within 400m of the already-published ber_010 Giant Sequoia)",
+   "species": "mixed, see register",
+   "location": {
+    "address": "Grosser Tiergarten, Englischer Garten, near Altonaer Strasse and the Bismarck Monument, Berlin-Mitte",
+    "latitude": 52.5166,
+    "longitude": 13.34624,
+    "neighbourhood": "Tiergarten, Mitte"
+   },
+   "reason": "NEW this pass (2026-09-07). Rich walkable cluster right beside ber_010 (published Giant Sequoia at 52.51638/13.3463, itself register id 1-41/B in this same list), all 1993-03-02 designations, all in a public park with no access question. Register + Wikidata (284-candidate harvest) + de.wikipedia 'Liste der Naturdenkmale im Bezirk Mitte' all trace to the SAME government ordinance (confirmed by direct coordinate match), so none of the three counts as a second independent source on its own; the Wikipedia list gives no Beschreibung, Bild or age beyond species+location for any of these Tiergarten rows. monumentaltrees.com has a specific page for the Urweltmammutbaum/Metasequoia here (found via WebSearch: https://www.monumentaltrees.com/en/deu/berlin/berlin/24150_tiergarten/25858/, snippet claims planted 1954, height 25-31m) but it 403'd to both curl and WebFetch all session and has no Wayback snapshot; per the search-summary-is-a-lead-never-a-source rule those figures were NOT used and are recorded here only as a lead for a future pass with different network access or a real browser session. de.wikipedia's 'Grosser Tiergarten' article confirms the Englischer Garten section was laid out and inaugurated 25 May 1952 with British-donated trees, general park history only, not tied to any single specimen (a bridge claim to avoid). Whole cluster worth a dedicated future pass once monumentaltrees.com is reachable.",
+   "status": "lead"
+  },
+  {
+   "name": "TU Berlin Schaugaerten (former Koenigliche Gaertnerlehranstalt) exotic-conifer cluster: Riesen-Lebensbaum, Zirbel-Kiefer, Gewoehnliche Eibe x2, Japanischer Kuchenbaum, Tulpen-Magnolie, Weymouth-Kiefer, Kaukasische Fluegelnuss, Virginischer Wacholder",
+   "species": "mixed, see register",
+   "location": {
+    "address": "Koenigin-Luise-Strasse 22, Berlin-Dahlem",
+    "latitude": 52.4573,
+    "longitude": 13.2996,
+    "neighbourhood": "Dahlem, Steglitz-Zehlendorf"
+   },
+   "reason": "NEW this pass (2026-09-07). Tight cluster (roughly 150m across) of unusually diverse exotic conifers and specimen trees, all 1993-03-02 designations, at the arboretum of the former Koenigliche Gaertnerlehranstalt (Royal Horticultural Teaching Institute), grounds now held by TU Berlin as 'TU-Schaugaerten', restored 2012-2014 with Lottostiftung/Puecklergesellschaft funding (berlin.de Denkmal des Monats, tu.berlin/en/la-pflanze/institution/educational-display-garden). ACCESS UNRESOLVED: every source found (umweltkalender-berlin.de event listing, tu.berlin pages) describes guided tours and open-garden EVENTS rather than confirming free daily walk-in access; no opening-hours page found. Per hard rule 10's first test (can they get in without asking anyone's permission), this needs a positive access answer before shipping, not a block, since nothing found says it is closed either. Worth a future pass: check tu.berlin's current Schaugaerten page for opening hours, or contact-free confirmation via a recent visitor blog/review.",
+   "status": "lead"
+  },
+  {
+   "name": "Winter-Linde - Stein-Linde (Small-leaved Lime) at St. Annen-Kirchhof, Dahlem (ND 6-37/B)",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "location": {
+    "address": "Friedhof der St. Annen-Kirche, Koenigin-Luise-Strasse 57, Berlin-Dahlem",
+    "latitude": 52.458821,
+    "longitude": 13.286196,
+    "neighbourhood": "Dahlem, Steglitz-Zehlendorf"
+   },
+   "reason": "NEW this pass (2026-09-07). St. Annen-Kirchhof is a small (~2200 sqm) public churchyard founded in the 13th century with a Romanesque brick church (15th-century parts); per hard rule 10's churchyard exception, access is not in question. But no second source was found for this specific tree: stiftung-historische-friedhoefe.de's page for the churchyard returned HTTP 503 (Retry-After 86400) both attempts this pass, and de.wikipedia's 'Friedhof Dahlem' article mentions general linden rows along the paths without naming this specific Naturdenkmal specimen. Register (6-37/B) is the only source so far. Worth a retry on the Stiftung site next pass, or the church's own parish page.",
+   "status": "lead"
+  },
+  {
+   "name": "Stiel-Eiche (Pedunculate Oak) at Oekowerk entrance, Grunewald forest (ND 4-39/B); and Trauben-Eiche x3 scattered through Forst Grunewald (ND 4-17/B, 4-18/B, 4-38/B)",
+   "species": "Pedunculate Oak (Quercus robur) and Sessile Oak (Quercus petraea)",
+   "location": {
+    "address": "Teufelsseechaussee 22 (Oekowerk entrance) and various forest compartments (Jagen 23/117, Teltower Weg), Forst Grunewald, Berlin",
+    "latitude": 52.492312,
+    "longitude": 13.236704,
+    "neighbourhood": "Grunewald forest, Charlottenburg-Wilmersdorf"
+   },
+   "reason": "NEW this pass (2026-09-07). All four stand in the public Grunewald forest (no access question; the Oekowerk entrance oak stands at Teufelsseechaussee, a public forest road, per berlin.de/umweltkalender-berlin.de descriptions of the Naturschutzzentrum Oekowerk). No second source found for any of the four beyond the bare register entry (name, species, forest compartment, 1993-03-02 designation, no age or girth field in this register at all). They are also spread 2-4km apart from each other and from the existing ber_003 (Steinlanke Oak, also in Grunewald forest), not a tight walkable cluster, more a scattered set of forest waypoints reachable by trail. Leaving as leads pending both a second source and a decision on whether isolated forest oaks are worth adding individually versus as a loose forest-walk group.",
+   "status": "lead"
+  },
+  {
+   "name": "Gewoehnlicher Trompetenbaum (Catalpa) and Maulbeere (Mulberry) and Stiel-Eiche (Pedunculate Oak) at Heinrich-von-Kleist-Park (ND 7-26/B, 7-27/B, 7-15/B)",
+   "species": "Southern Catalpa (Catalpa bignonioides), Black Mulberry (Morus nigra per the district Wikipedia list; register says Morus spec.), Pedunculate Oak (Quercus robur)",
+   "location": {
+    "address": "Heinrich-von-Kleist-Park, near the Verfassungsgerichtshof and the Potsdamer Strasse entrance, Berlin-Schoeneberg",
+    "latitude": 52.49222,
+    "longitude": 13.35845,
+    "neighbourhood": "Schoeneberg, Tempelhof-Schoeneberg"
+   },
+   "reason": "NEW this pass (2026-09-07). Heinrich-von-Kleist-Park is public (de.wikipedia: closed for decades, 'in den fruehen 1980er Jahren war er fuer jedermann betretbar', open to everyone since the early 1980s) and historically rich: it was Berlin's OLD Botanical Garden from 1801 (7.5 hectares) before the garden moved to Dahlem around 1900, and 'ein Teil des vorhandenen Baumbestandes stammt aus dem Botanischen Garten' per both de.wikipedia and the Tempelhof-Schoeneberg district's own Denkmal page (berlin.de). Neither source names which specific surviving trees date from the old Botanical Garden, so tying any of these three named specimens to 1801 planting would be exactly the bridge-claim trap this project has already been burned by once (Baarn); not done. No per-tree second source (age, girth, planting date) found for the catalpa, mulberry or oak individually. Register is the only source. Worth a future pass checking the Kammergericht/Verfassungsgerichtshof's own site (the court occupies the former palace) or a Schoeneberg local-history society for a per-tree account tied to the old Botanical Garden.",
+   "status": "lead"
+  }
+ ],
+ "blocked": []
 }
