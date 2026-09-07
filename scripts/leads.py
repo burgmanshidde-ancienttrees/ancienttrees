@@ -267,7 +267,10 @@ NOT_READY_MARKER = re.compile(
     r"keep as the candidate if|held back for the same reasons|"
     r"held rather than published|outside day-trip range|"
     r"day-trip boundary|not on our city queue|"
-    r"access is not confirmed|leaning no)\b",
+    r"access is not confirmed|leaning no|"
+    r"ran out of time|worth a closer look|"
+    r"clears the two-source bar|worth a dedicated future pass|"
+    r"no tree-specific second source|ACCESS UNRESOLVED)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
