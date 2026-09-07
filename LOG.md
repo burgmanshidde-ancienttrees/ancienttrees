@@ -1,6 +1,41 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation) - Found the actual bug behind testTappingAPinOpensItsTree: the sweep was tapping the filter chips, not the map
+
+Rung 2 again: `63e11fcd`'s "real idle signal" fix (previous entry below)
+still failed in CI (run 34071316936, 00:55, same message: "sweeping the
+visible map opened no tree at all, across three attempts"). Six fixes deep
+on this one test, all of them reasoning blind from log text. This time,
+before writing a seventh guess: `gh run download` on that run's
+`xcresult-34071316936` artifact and looked at the actual PNGs it already
+attached (no simulator needed for that, just PIL to shrink them under the
+Read tool's size cap; `python3 -m pip install --user Pillow` worked fine
+on this runner).
+
+The screenshot answered it in one look: the species picker was open with
+"Pedunculate Oak" selected, the map filtered down to 1 tree, nothing to
+tap anywhere. `MapTab.swift` floats the search field and filter chips in
+`.overlay(alignment: .top)` over the full-bleed map (the map itself
+`.ignoresSafeArea(edges: [.top, .horizontal])`), so the sweep's row 0 at a
+flat `map.frame.minY + 80` was landing on the Species chip on every
+device this runs on, opening its picker, and a later tap in the same row
+picked a species and filtered the map to nothing the rest of the sweep
+could find. Every prior fix addressed *when* to tap; none had checked
+*where* the taps actually landed, which is why waiting longer or on a
+real signal changed nothing.
+
+Fixed by anchoring the sweep's top edge to the Favourites chip's own
+measured frame (`app.buttons["Favourites"].frame.maxY + 16`) instead of a
+guessed device offset, and added a fail-fast check for the species picker
+reopening so a future regression says so immediately instead of quietly
+burning the rest of the sweep. Pushed as `adb58319`. Cannot verify on this
+Linux runner; watch the next `ios.yml` run.
+
+Logged as a `session` pass in `data/agent-costs.json` (0 tokens tracked,
+noted why). No content work this window: went straight from the rung-2
+diagnosis to this fix.
+
 ## 2026-09-07 (continuation) - Gave the iOS gate a real fix attempt (not another guess); claimed and dispatched a Taiwan/Bulgaria/Sweden famous-tree verify batch
 
 Resumed a window an earlier attempt stopped 35 minutes in with 85 unspent.
