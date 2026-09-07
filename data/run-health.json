@@ -6930,6 +6930,104 @@
    ],
    "trees": 6,
    "logged": true
+  },
+  {
+   "started": "2026-09-07T21:37:14+00:00",
+   "date": "2026-09-07",
+   "run_id": "34163781587",
+   "minutes": 93.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 395,
+   "denials": 46,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Bash(sed), Bash(wc), Bash(which)",
+   "ended": "success",
+   "tokens": 51469609,
+   "claims_held": [
+    "_famous-taiwan"
+   ],
+   "commits": 11,
+   "cities_touched": 19,
+   "cities": [
+    {
+     "city": "baldenhain",
+     "trees": 1
+    },
+    {
+     "city": "bargischow",
+     "trees": 1
+    },
+    {
+     "city": "deventer",
+     "trees": 1
+    },
+    {
+     "city": "eichigt",
+     "trees": 1
+    },
+    {
+     "city": "frankenthal-sachsen",
+     "trees": 1
+    },
+    {
+     "city": "himmelsberg",
+     "trees": 1
+    },
+    {
+     "city": "horn-bremen",
+     "trees": 1
+    },
+    {
+     "city": "limmersdorf",
+     "trees": 1
+    },
+    {
+     "city": "linderhof",
+     "trees": 1
+    },
+    {
+     "city": "maastricht",
+     "trees": 1
+    },
+    {
+     "city": "neudrossenfeld",
+     "trees": 1
+    },
+    {
+     "city": "neuenrade",
+     "trees": 1
+    },
+    {
+     "city": "niedenstein",
+     "trees": 1
+    },
+    {
+     "city": "ottendorf-gaedheim",
+     "trees": 1
+    },
+    {
+     "city": "peesten",
+     "trees": 1
+    },
+    {
+     "city": "polchow",
+     "trees": 1
+    },
+    {
+     "city": "schlettau",
+     "trees": 1
+    },
+    {
+     "city": "tilburg",
+     "trees": 1
+    },
+    {
+     "city": "wilparting",
+     "trees": 1
+    }
+   ],
+   "trees": 19,
+   "logged": true
   }
  ],
  "schedule_changes": [
