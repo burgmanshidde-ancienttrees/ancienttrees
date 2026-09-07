@@ -5819,6 +5819,15 @@
     "note": "3 single-tree German destinations written from verify_notes (Berga memorial oak, Wuppertal centenary oak, Eisolzried 960cm oak); no best_time earned on any of the three; merged into new city files berga-elster/wuppertal/eisolzried by the main session, which also trimmed tree names and intro/context word counts to clear Contract A/B/C",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "_famous-poland",
+    "kind": "verify",
+    "tokens": 220000,
+    "trees": 2,
+    "note": "batch2: 4 named single-place candidates, 2 delivered (Dominik Oak in Poleski National Park, Perkun Oak in Pisz Forest), 2 correctly blocked as dead/misidentified (Jagiello Oak fell 1974, Lublin famous baobab was actually a black poplar felled 2017); also deleted a stale duplicate Dab Czech leads entry",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
