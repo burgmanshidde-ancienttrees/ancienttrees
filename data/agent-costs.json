@@ -5810,6 +5810,15 @@
     "note": "session work, tokens not tracked: API sweep (photo_hunt.py --recheck) plus a direct viewing pass over ~40 candidate trees across ~25 cities; approved mod_001, bjs_007, kun_001, kun_003, gir_003/004/005, held hob_011 (Centurion, ambiguous among similar giants), rejected ~25 wrong-species/wrong-location/non-tree matches",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "famousgermany-write",
+    "kind": "write",
+    "tokens": 60000,
+    "trees": 3,
+    "note": "3 single-tree German destinations written from verify_notes (Berga memorial oak, Wuppertal centenary oak, Eisolzried 960cm oak); no best_time earned on any of the three; merged into new city files berga-elster/wuppertal/eisolzried by the main session, which also trimmed tree names and intro/context word counts to clear Contract A/B/C",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
