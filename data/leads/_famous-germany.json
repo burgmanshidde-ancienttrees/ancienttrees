@@ -39,9 +39,10 @@
         "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum2.jpg",
         "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum3.jpg"
       ],
-      "status": "lead",
-      "species": "Pagoda Tree (Styphnolobium sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "held",
+      "species": "Pagoda Tree (Styphnolobium japonicum)",
+      "species_basis": "confirmed by monumentaltrees.com listing title",
+      "hold_reason": "2026-09-07 verify pass: existence confirmed (a Naturdenkmal on the Schillerplatz, described as 'raumpraegend', shaping the square's space) via WebSearch results citing monumentaltrees.com (site itself Cloudflare-gated, could not fetch directly) and a baumkunde.de forum thread on Mannheim's Naturdenkmale. But planted circa 1945 (about 80 years old), girth only 2.75m, height 17m, and sources explicitly note it is NOT Mannheim's oldest tree. A modestly-sized, moderately young ornamental street tree, protected for its contribution to the square's character rather than for age, size or documented history. Does not clear the single-tree-destination bar (would somebody travel specifically for THIS tree: no). Held as a lead rather than blocked, since it is real and verifiable, just not remarkable enough on its own merits."
     },
     {
       "name": "Japanischer Schnurbaum an der Franz-Josef-Röder-Straße (Saarbrücken)",
@@ -52,9 +53,10 @@
         "https://commons.wikimedia.org/wiki/File:20120827Styphnolobium_japonicum1.jpg",
         "https://commons.wikimedia.org/wiki/File:20120827Styphnolobium_japonicum2.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Pagoda Tree (Styphnolobium sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "hold_reason": "2026-09-07 verify pass: confirmed as an official Naturdenkmal on the city of Saarbruecken's own register (a designated 'Liste Naturdenkmale' PDF at saarbruecken.de lists age/height per entry, and de.wikipedia's Naturdenkmale-im-Regionalverband-Saarbruecken list references the same street), but the PDF could not be text-extracted with tools available this pass (no pdftotext/pypdf in this environment) and no independent narrative source (news, dedicated register page, Wikipedia article) with age, girth or documented history was found in the time available. Given the sibling Mannheim Schnurbaum on this same list turned out to be an unremarkable c.80-year street tree, treat this one as likely similar until a source says otherwise. Held as a lead; a future pass should retry the Saarbruecken PDF with a proper PDF text extractor."
     },
     {
       "name": "Sophora japonica 9-1/B",
@@ -65,9 +67,10 @@
         "https://commons.wikimedia.org/wiki/File:Sophora_japonica_9-1_B_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Sophora_japonica_9-1_B_02.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Pagoda Tree (Styphnolobium sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "hold_reason": "2026-09-07 verify pass: no location, city or dedicated source found for this candidate in the time available; the name itself ('9-1/B') reads as a municipal tree-register accession/plot code rather than a place name, which usually signals a catalogued street or park tree rather than an individually famous specimen (as seen with the two other Schnurbaum candidates checked this pass, both unremarkable c.80-year Naturdenkmal street trees). Held as a lead rather than blocked or researched further given the time-box; a future pass would need to identify the city/register behind this code before it can be verified at all."
     },
     {
       "name": "Gerichtslinden Bad Bentheim",
@@ -183,9 +186,10 @@
         "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_03.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "2026-09-07 verify pass: NOT REMARKABLE, category not single tree. Confirmed via de.wikipedia's 'Einheitsbaeume' article and the Commons file's own category 'Einheitslinde in Haunstetten (Augsburg)': Einheitslinden/Einheitsbaeume are a nationwide German reunification memorial planting campaign (idea from Werner Erhardt, Wunsiedel), with 270+ locations by 2021 and 305+ by 2023, usually a beech/pine/oak trio plus a linden representing Europe. Planted around 1990, so roughly 35 years old today: young trees, not ancient or individually distinguished, exactly analogous to this same file's already-blocked 'Symbolic oaks in Germany' category entry. Never a single-tree destination. Blocked as a category."
     },
     {
       "name": "Einheitslinde in Ruhla",
@@ -196,9 +200,10 @@
         "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Schild,_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Sommer,_01.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "2026-09-07 verify pass: same Einheitslinde/Einheitsbaeume nationwide 1990 reunification-planting campaign as Haunstetten and Bayreuth (see that entry for the full reasoning); a young (c.35y) commemorative tree, one of 300+ near-identical sites, not an individual remarkable specimen. Blocked as a category."
     },
     {
       "name": "Einheitslinden in Bayreuth",
@@ -209,9 +214,10 @@
         "https://commons.wikimedia.org/wiki/File:Bayreuth,_Luitpoldplatz,_Einheitslinden,_Schild,_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Bayreuth,_Luitpoldplatz,_Einheitslinden,_Schild,_02.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "2026-09-07 verify pass: same Einheitslinde/Einheitsbaeume nationwide 1990 reunification-planting campaign as Haunstetten and Ruhla (see that entry for the full reasoning); the Commons filename itself documents the 1990 planting event ('Einheitslinde_1990,_Pflanzung'). A young (c.35y) commemorative tree, not an individual remarkable specimen. Blocked as a category."
     },
     {
       "name": "Freiheitslinde Lindaufeld",
@@ -288,9 +294,10 @@
         "https://commons.wikimedia.org/wiki/File:Linde_Himmelsberg_(Kirchhain).jpg",
         "https://commons.wikimedia.org/wiki/File:Linde_in_Himmelsberg_bei_Nacht_01.jpg"
       ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "species_basis": "confirmed by monumentale-eichen.de and the village's own tourism page as Sommerlinde",
+      "reason": "Published 2026-09-07 as hmb_001, new single-tree place Himmelsberg (Naturdenkmal Tanzlinde, distinct enough for its own page per the 2026-08-31 exception)."
     },
     {
       "name": "Horner Linde",
@@ -336,9 +343,10 @@
         "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_K%C3%B6nigslinde_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_Terrasseng%C3%A4rten_-_Wasserparterre_01.jpg"
       ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "species_basis": "confirmed by baumkunde.de as Winter-Linde",
+      "reason": "Published 2026-09-07 as lnd_001, new single-tree place Linderhof (Konigslinde, spared by Ludwig II when the terrace gardens were built, single-tree-destination case within the already-famous Schlosspark Linderhof site)."
     },
     {
       "name": "Langenstadt Tanzlinde",

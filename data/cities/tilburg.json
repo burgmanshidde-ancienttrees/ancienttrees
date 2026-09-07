@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Tilburg is probably named after a lime tree, and the lime is not there any more. One stood on the Heuvel from about 1598, so wide that a visitor in 1667 counted 62 paces around the crown and 28 pillars holding it up. It was felled in 1994 against loud protest, and three of its descendants were planted on the square in 2009. So this page is the trees that survived instead: the oldest elm in the city, two in a park dug by unemployed men in the 1930s, and a lime that outlived the famous one by thirty years.",
-  "meta_description": "Fifteen remarkable trees in Tilburg: the city's oldest elm, two in Leonard Springer's last park, and the story of the lime the city may be named after.",
+  "meta_description": "Sixteen remarkable trees in Tilburg: the city's oldest elm, two in Leonard Springer's last park, and the story of the lime the city may be named after.",
   "question_meta": "Tilburg's oldest surviving tree is a silver lime at the Frater Paullussehof, banded 1830 to 1840. The famous Heuvel lime was felled in 1994.",
   "question_answer": "The oldest tree still standing in Tilburg is a silver lime at the Frater Paullussehof, which the national register places in a planting band of 1830 to 1840, so somewhere approaching two centuries. The question is complicated by the tree most people mean when they ask it. A lime stood on the Heuvel, the city's central square, from about 1598, and it was cut down in 1994 at roughly five hundred years old. When the stump was lifted it turned out to be hollow, with a young shoot growing inside it from its own root. Three descendants of that tree were planted on the rearranged Heuvel on 26 March 2009, so there is a lime on the square again, but it is seventeen years old rather than five hundred.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none has been narrowed to look precise. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged. It is also why the Heuvel lime is not on this page: the register still carries an entry for a lime on the Heuvel with a planting band of 1600 to 1700, and that tree has been gone since 1994. We checked it rather than publishing it, and that check is the reason to treat every old register entry as a claim rather than a fact. If you go to one of these and find it has gone the same way, tell us and it comes off the same day. Pins marked approximate mean we know the park and not the trunk.",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All fifteen. The Wilhelminapark and the Leijpark are open public parks, the Korvelplein is a square, the two limes stand in public planting, and the Zuiderpark trees line an ordinary residential street. Nothing here has a gate or a charge."
+      "a": "All sixteen. The Wilhelminapark and the Leijpark are open public parks, the Korvelplein is a square, the two limes stand in public planting, and the Zuiderpark trees line an ordinary residential street. Nothing here has a gate or a charge."
     }
   ],
   "trees": [
@@ -517,6 +517,43 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "verify_notes": "Register (LRMB nr 1695666, register_name 'Grootbladige kloosterparkhulst') is the only source naming this tree; no settled species. Planted band 1900-1910, unusually old for a holly. Same Kloosterpark/convent history as til_013 and til_014. About 30m from both."
+    },
+    {
+      "id": "til_016",
+      "name": "The Marialinde of Oisterwijk",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "over 650 years, and locally said to approach a thousand",
+      "age_min": 320,
+      "age_max": 650,
+      "location": {
+        "address": "De Lind, behind the Oude Raadhuis (Old Town Hall), Oisterwijk",
+        "latitude": 51.581033,
+        "longitude": 5.198333,
+        "neighbourhood": "Oisterwijk town centre"
+      },
+      "story": "The trunk you can put a hand on is younger than the tree. By the 19th century the Marialinde's original stem had rotted hollow, and the remedy of the period was to plant a spruce down inside the cavity, which is what was done here. The lime solved it differently. A root running down through its own hollow thickened, took over the job and became the trunk standing on De Lind today: the same individual tree, on its second stem, never replanted.\n\nIts age depends on which evidence you believe. The paper trail reaches 1388, when damage to the tree by fire was written down. Dendrologists reading the wood favour a planting somewhere between 1600 and 1700. Oisterwijk itself will tell you the lime is about a thousand years old, in the tone of a town that has been saying so for generations. Nobody has reconciled the three.\n\nWhat happened underneath it is better documented. A chapel holding a statue of Mary was set at the tree in the late 15th century and gave it the name it still carries. Justice was administered here. Cheese and eggs were sold in its shade on market days. In 2023 the country voted it Dutch Tree of the Year.\n\nIt stands behind the old town hall on the central square, trunk fenced, a bench around it, free to walk up to, ten minutes from Oisterwijk station.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/zomerlinde-oisterwijk/",
+        "https://www.bezoekoisterwijk.nl/locaties/1676702044/oude-linde-marialinde"
+      ],
+      "access": "Free, standing on De Lind, Oisterwijk's central square, fenced at the trunk with a surrounding bench",
+      "transport": "Oisterwijk NS railway station, roughly 10-15 minutes' walk to the town centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "June into July, when the lime flowers and the square smells of it"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

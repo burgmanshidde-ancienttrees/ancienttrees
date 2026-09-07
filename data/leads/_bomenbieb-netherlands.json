@@ -645,9 +645,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 3.43,
       "nearest_ours": "maa_001 The Sweet Chestnut of Molenweg (Maastricht)",
-      "status": "lead",
-      "species": "Tulip Tree (Liriodendron sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "species_basis": "confirmed via bomenbieb.nl",
+      "reason": "Published 2026-09-07 as maa_015 (Maastricht): passcheck.py placed this coordinate within Maastricht's existing walk radius, so it deepened that city rather than becoming a new single-tree place."
     },
     {
       "name": "lobbendijkse knotes",
@@ -661,7 +662,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 3.44,
       "nearest_ours": "utr_017 The Markiezeneik of Amelisweerd (Utrecht)",
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Verified 2026-09-07 via bomenbieb.nl and search corroboration (Houten municipality's own 'bijzondere bomen' register): five pollarded ash (knotessen) strung along a dike and ditch edge in Oud-Wulven, not a single tree or a compact ensemble with one obvious place to stand (avenue/row-like, fails the collectible-point test). No documented age or girth, common pollarding technique, nothing visually singular beyond the pollard form itself. Not a fabrication concern, just does not clear the bar this project applies to ensembles. Kept as blocked rather than a dead lead so a later pass does not re-research it."
     },
     {
       "name": "witte paardenkastanje poptaslot",
@@ -692,9 +694,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 4.14,
       "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-      "status": "lead",
-      "species": "Catalpa (Catalpa sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "species_basis": "confirmed via bomenbieb.nl",
+      "reason": "Published 2026-09-07 as dev_010 (Deventer): passcheck.py placed this coordinate within Deventer's existing walk radius, so it deepened that city rather than becoming a new single-tree place."
     },
     {
       "name": "dorpslinde nuenen",
@@ -802,7 +805,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 6.37,
       "nearest_ours": "vnl_003 The Sequoia of the Toernooiveld (Venlo)",
-      "status": "lead"
+      "status": "lead",
+      "verify_note": "Checked 2026-09-07: espalier pear (leipeer) pergola along the inside of an old monastery wall (Ursulinenklooster de Bisweide, now an elderly-care facility) on Kloosterstraat. bomenbieb.nl says the oldest trees are over a century old and the garden gate is open to the public. Searched for a second source naming this specific tree/wall: de Bomenstichting's own 'Bomen van de Ereklasse: 10 bijzondere bomen in Limburg' page names other regional espalier pears (Mechelen, Ransdaal, Beesel, Meerlo) but not Grubbenvorst; nl.wikipedia's Ursulinenklooster de Bisweide article confirms the convent's history and current use as a care centre but says nothing about public access to the grounds or about the pear trees. Left as a lead: only one directly-verifiable source for the tree itself, and access is only bomenbieb's own claim of an open gate on a now-care-facility site, not independently confirmed. A future pass could settle access via OSM (the Ypres technique) or by checking the care facility's own visitor information."
     },
     {
       "name": "wonderboom zeisterbos",
@@ -878,7 +882,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 7.46,
       "nearest_ours": "til_006 The Oak of the Leijpark (Tilburg)",
-      "status": "lead"
+      "status": "published",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "species_basis": "confirmed via bomenbieb.nl",
+      "reason": "Published 2026-09-07 as til_016 (Tilburg): passcheck.py placed this coordinate within Tilburg's existing walk radius, so it deepened that city rather than becoming a new single-tree place."
     },
     {
       "name": "linde van achterberg",
