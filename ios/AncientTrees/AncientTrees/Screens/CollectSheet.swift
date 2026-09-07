@@ -153,6 +153,20 @@ struct CollectSheet: View {
             .sorted { $0.1 < $1.1 }
         guard let first = d.first, first.1 <= 0.08 else { return nil }
         if d.count > 1, d[1].1 < first.1 * 2 { return nil }
+        // AND OUR OWN PIN HAS TO BE WORTH MEASURING AGAINST (2026-09-07).
+        // Both tests above measure a distance to a coordinate, and an
+        // approximate coordinate means we know the park and not the trunk, so
+        // the arithmetic is being done against a number that was never a
+        // claim about where the tree stands. Hidde, testing in Nara: "the pin
+        // was approximate, did I find it?" He photographed a cedar at
+        // Nigatsu-do, where three Japanese cedars sit within 200 metres and
+        // all three pins are approximate; nothing in this function could have
+        // told him, and it would happily have ticked one off for him.
+        //
+        // So an approximate pin never claims a tree silently. It asks, which
+        // is the honest thing and also the useful one: the answer is worth
+        // more to us than the tick is to anybody.
+        guard first.0.precision == .confirmed else { return nil }
         return first.0
     }
 
@@ -589,9 +603,7 @@ struct CollectSheet: View {
         Group {
             Text("Which one is it?")
                 .font(.brand(24, .heavy)).foregroundStyle(Brand.ink)
-            Text(fix == .device
-                 ? "You are standing among trees we map. Pick the one in your photograph."
-                 : "Your photograph was taken near these trees. Pick the one you photographed, or say it is none of them.")
+            Text(pickerBlurb)
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             ForEach(candidates) { t in
@@ -716,8 +728,25 @@ struct CollectSheet: View {
         }
     }
 
+    /// What we say above the list, and it depends on how good OUR pins are.
+    ///
+    /// When one of the candidates is on an approximate pin, "pick the one in
+    /// your photograph" is asking somebody to be certain about something we
+    /// were not certain about first. Saying so turns "I am not sure" from
+    /// their failure into our honesty, which is what it actually is.
+    private var pickerBlurb: String {
+        if candidates.contains(where: { $0.precision == .approximate }) {
+            return "Our own pin is rough for some of these, so we cannot tell you which is which. Pick one if you know, and say you are not sure if you do not."
+        }
+        return fix == .device
+            ? "You are standing among trees we map. Pick the one in your photograph."
+            : "Your photograph was taken near these trees. Pick the one you photographed, or say it is none of them."
+    }
+
     private func row(_ t: Tree) -> some View {
-        HStack(spacing: 12) {
+        // Top-aligned, because a recognition line can run to four lines and a
+        // centred thumbnail then floats halfway down beside it.
+        HStack(alignment: .top, spacing: 12) {
             thumb(t)
             VStack(alignment: .leading, spacing: 3) {
                 Text(t.name)
@@ -750,12 +779,22 @@ struct CollectSheet: View {
                         .foregroundStyle(Brand.ink)
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
+                } else if t.precision == .approximate {
+                    // The metres above are measured from a pin that only ever
+                    // claimed the park, and without this line they read as a
+                    // precision we do not have. Same rule as the warning
+                    // beside the directions button, at the moment it decides
+                    // something.
+                    Text("Our pin for this one is rough")
+                        .font(.footnote)
+                        .foregroundStyle(Brand.inkSoft)
                 }
             }
             Spacer()
             Image(systemName: "chevron.right")
                 .font(.system(size: 14, weight: .semibold))
                 .foregroundStyle(Brand.inkSoft)
+                .padding(.top, 20)
         }
         .padding(12)
         .background(Brand.surface, in: .rect(cornerRadius: 14))
