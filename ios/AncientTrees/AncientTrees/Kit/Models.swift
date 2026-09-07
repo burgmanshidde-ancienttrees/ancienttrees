@@ -150,6 +150,14 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
             || !transport.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
     public let story: String
+    /// The one line that answers "which of the trees in front of me is it".
+    /// The website has printed it on the tree page for a while; it reached the
+    /// phone on 2026-09-07, after Hidde stood in Nara and could not tell which
+    /// tree the picker meant. That is the surface it was written for: on a
+    /// laptop nobody is standing between two limes. Empty on most trees, so
+    /// every use of it is conditional.
+    let recogniseRaw: String?
+    public var howToRecognise: String { recogniseRaw ?? "" }
     public let url: String
     public let precision: Precision
     public let photo: Photo?
@@ -163,6 +171,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case ageMin = "age_min"
         case ageMax = "age_max"
         case access, story, url, precision, photo, peak
+        case recogniseRaw = "how_to_recognise"
         case paidEntryRaw = "paid_entry"
         case citySlug = "city_slug"
         case bestTime = "best_time"

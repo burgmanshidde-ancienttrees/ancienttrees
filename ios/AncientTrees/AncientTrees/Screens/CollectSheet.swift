@@ -84,6 +84,7 @@ struct CollectSheet: View {
         case ticked(String)    // tree id, matched and claimed
         case describe          // a tree we do not map
         case added(UUID)       // a tree we do not map, just written and sent
+        case unsure            // one of ours, and they could not say which
     }
 
     /// Where the coordinate on this record came from. Kept because it changes
@@ -184,6 +185,7 @@ struct CollectSheet: View {
                         case .identify: identifyState
                         case .describe: describeForm
                         case .added(let id): addedState(id)
+                        case .unsure: unsureState
                         case .intro, .place: EmptyView()
                         }
                     }
@@ -281,6 +283,7 @@ struct CollectSheet: View {
         // Already recorded and sent by the time this stage shows: nothing left
         // for the X button to throw away, same reasoning as .ticked above.
         if case .added = stage { return false }
+        if case .unsure = stage { return false }
         return shot != nil
     }
 
@@ -435,9 +438,34 @@ struct CollectSheet: View {
     /// A candidate in the "which of these is it" list. Pure, because the state
     /// that matters (no photo coordinate AND no fix) cannot be produced on a
     /// simulator, which always has one or the other.
-    static func candidateLabel(species: String, metres: Int?) -> String {
+    static func candidateLabel(species: String, metres: Int?, direction: String = "") -> String {
         guard let metres else { return species }
-        return "\(species) · \(metres) m"
+        // The direction is what turns a distance into an instruction. "40 m"
+        // between two limes tells you nothing you did not already know; "40 m
+        // north-east" tells you which one to walk to.
+        let d = direction.isEmpty ? "" : " \(direction)"
+        return "\(species) · \(metres) m\(d)"
+    }
+
+    /// Eight compass points, in words.
+    ///
+    /// Convention: AllTrails, Google Maps and Komoot all print a compass WORD
+    /// rather than a bearing in degrees, and eight points rather than sixteen.
+    /// Somebody standing between two trees can act on "north-east" and cannot
+    /// act on "north-north-east" or on 37 degrees.
+    ///
+    /// Empty when the two points are the same, which is what a hand-placed pin
+    /// dropped exactly on a tree gives.
+    static func compass(from a: (lat: Double, lng: Double),
+                        to b: (lat: Double, lng: Double)) -> String {
+        let dLat = b.lat - a.lat
+        let dLng = (b.lng - a.lng) * cos((a.lat + b.lat) / 2 * .pi / 180)
+        if abs(dLat) < 1e-7 && abs(dLng) < 1e-7 { return "" }
+        let deg = (atan2(dLng, dLat) * 180 / .pi + 360)
+            .truncatingRemainder(dividingBy: 360)
+        let points = ["north", "north-east", "east", "south-east",
+                      "south", "south-west", "west", "north-west"]
+        return points[Int((deg + 22.5) / 45) % 8]
     }
 
     /// Why we are asking where the tree stands. Pure, so both branches are
@@ -579,6 +607,102 @@ struct CollectSheet: View {
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("collect-none-of-these")
+            Button { notSure() } label: {
+                HStack(spacing: 10) {
+                    Image(systemName: "questionmark.circle.fill")
+                        .font(.system(size: 22)).foregroundStyle(Brand.inkSoft)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("I am not sure which")
+                            .font(.brand(16, .bold)).foregroundStyle(Brand.ink)
+                        Text("We will work it out from your photograph")
+                            .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    }
+                }
+                .frame(minHeight: 44)
+                .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("collect-not-sure")
+        }
+    }
+
+    /// The third answer, and the one the sheet was missing (Hidde, 2026-09-07,
+    /// testing in Nara: "its hard to see which tree is what, we need a im not
+    /// sure button when chosing").
+    ///
+    /// Without it the two ways out are both wrong. Picking one is a guess that
+    /// puts somebody's photograph on the wrong trunk, which is the error this
+    /// project treats as unforgivable everywhere else. "None of these" is
+    /// worse: it files a tree we already map as a new one, so a duplicate
+    /// enters the database on the strength of somebody being unsure.
+    ///
+    /// So this claims no tree and ticks nothing off. It keeps the photograph,
+    /// sends it with the shortlist we showed, and says who is going to do the
+    /// work. Being unsure is a normal state here, not a failure: two limes ten
+    /// metres apart is the ordinary case, and the person standing in front of
+    /// them is telling us something true.
+    private func notSure() {
+        guard account.isSignedIn else {
+            nudge.require(.general)
+            return
+        }
+        let here = at ?? origin
+        let picks = candidates
+        let s = sightings.record(treeId: nil,
+                                 name: picks.first?.name ?? "A tree I could not place",
+                                 lat: here.lat, lng: here.lng, image: shot,
+                                 date: taken ?? Date(),
+                                 unsureOf: picks.map(\.id))
+        shot = nil
+        withAnimation(.snappy) { stage = .unsure }
+        Task { await reportUnsure(sighting: s.id, among: picks, at: here) }
+    }
+
+    /// Reaches us in the same words the website already uses for this, so one
+    /// pipeline reads both surfaces: the web's worth-it control has had a
+    /// "could not tell which tree" chip since 2026-08-21, and three of the
+    /// first four real reports we ever got were exactly that. The shortlist
+    /// rides in the text, so whoever looks at the photograph starts from three
+    /// named trees rather than from a coordinate.
+    private func reportUnsure(sighting: UUID, among picks: [Tree],
+                              at here: (lat: Double, lng: Double)) async {
+        var d = Submission.Draft()
+        d.kind = .correction
+        d.tree = sighting.uuidString
+        d.city = nearbyCityName ?? ""
+        d.locationHint = String(format: "%.5f, %.5f (%@)", here.lat, here.lng, fix.note)
+        d.why = "could not tell which tree: "
+            + picks.map { "\($0.name) (\($0.id))" }.joined(separator: "; ")
+        _ = await Submission.send(d, from: "app:collect-unsure",
+                                  token: await account.freshToken())
+    }
+
+    /// Same shape as the other two payoffs, and deliberately not a checkmark:
+    /// nothing has been ticked off, because nobody has said which tree it was.
+    private var unsureState: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Image(systemName: "paperplane.circle.fill")
+                .font(.system(size: 44))
+                .foregroundStyle(Brand.moss)
+            Text("Thank you, that helps")
+                .font(.brand(24, .heavy))
+                .foregroundStyle(Brand.ink)
+            Text("We will work out which tree it is from your photograph, and your log will show it once we know.")
+                .font(.body)
+                .foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Text("Trees standing close together catch us out too. Telling us is more useful than a guess.")
+                .font(.footnote)
+                .foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Button { dismiss() } label: {
+                HStack { Spacer(); Text("Done").font(.brand(17, .bold)); Spacer() }
+                    .padding(.vertical, 15)
+                    .background(Brand.moss, in: .rect(cornerRadius: 15))
+                    .foregroundStyle(.white)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("collect-unsure-done")
         }
     }
 
@@ -598,9 +722,25 @@ struct CollectSheet: View {
                 Text(Self.candidateLabel(species: t.commonName,
                                          metres: (at != nil || location.known)
                                              ? Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)
-                                             : nil))
+                                             : nil,
+                                         direction: (at != nil || location.known)
+                                             ? Self.compass(from: at ?? origin, to: (t.lat, t.lng))
+                                             : ""))
                     .font(.footnote)
                     .foregroundStyle(Brand.inkSoft)
+                // The line written for exactly this moment. The website has
+                // printed it on the tree page under the same heading this
+                // sheet uses, "Which one is it?", and until 2026-09-07 it did
+                // not travel to the phone, which is the only place anybody is
+                // actually standing between two trees. About a fifth of trees
+                // carry one, so this is conditional and stays quiet otherwise.
+                if !t.howToRecognise.isEmpty {
+                    Text(t.howToRecognise)
+                        .font(.footnote)
+                        .foregroundStyle(Brand.ink)
+                        .multilineTextAlignment(.leading)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
             }
             Spacer()
             Image(systemName: "chevron.right")

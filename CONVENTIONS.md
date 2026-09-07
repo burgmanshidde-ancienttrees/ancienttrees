@@ -25,6 +25,48 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Saying "I do not know" when the app asks you to choose (2026-09-07)
+
+**Reference: iNaturalist.** An observation may carry no identification at all.
+That state has a name of its own ("Unknown"), it is not an error, and other
+people resolve it afterwards. So not knowing is a first-class answer, never a
+dead end and never a reason to lose what somebody sent.
+
+**And the sharper half, which is iNaturalist's own guidance rather than its
+UI:** a blank is the WORSE answer, because it drops out of every queue somebody
+is working through. They tell you to pick the broadest thing you are sure of,
+"plants" or "insects", so the observation reaches the person who can finish it.
+
+Read across to us: "I am not sure which" must carry the SHORTLIST we showed,
+not a blank. "It is one of these three, here is the photograph" is a brief;
+"unknown" is a coordinate and a shrug.
+
+What this replaced, and why it was not a small thing. The picker offered two
+ways out, pick one or "None of these", and an unsure person had to lie either
+way: picking is a guess that puts a photograph on the wrong trunk, and "None of
+these" files a tree we already map as a new one. The third answer is the only
+honest one and it is also the most useful, because being told two trees cannot
+be told apart is a fact about the pages, not a failure by the person.
+
+Read 2026-09-07, after Hidde stood in Nara and could not tell which tree the
+list meant:
+- https://help.inaturalist.org/en/support/solutions/articles/151000192921-how-to-make-an-observation
+- https://forum.inaturalist.org/t/if-not-sure-is-it-better-to-try-and-be-specific-with-i-d-or-leave-it-vague/35791
+
+---
+
+## A compass direction beside a distance (2026-09-07)
+
+**Reference: AllTrails, Google Maps, Komoot.** All three print a compass WORD
+and never a bearing in degrees, and eight points rather than sixteen. "40 m
+north-east" is something somebody standing between two trees can act on; "37
+degrees" and "north-north-east" are not.
+
+Ours sits in the candidate list of the collect sheet, where a bare "40 m" told
+a reader nothing they did not already know.
+
+---
+
 ## Naming the species of a tree somebody added
 
 **Reference: iNaturalist's identify screen.** A searchable list of taxa, with

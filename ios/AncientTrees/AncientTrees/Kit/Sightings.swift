@@ -105,6 +105,25 @@ final class Sightings {
         /// link" in the menu is how somebody takes it back.
         var shared: Bool?
 
+        /// The trees this MIGHT be, when the person told us they could not
+        /// tell which one (2026-09-07, Hidde standing in Nara: "its hard to
+        /// see which tree is what, we need an I'm not sure button when
+        /// choosing").
+        ///
+        /// It is not a blank. iNaturalist lets an observation carry no
+        /// identification at all and its own guidance says a blank is the
+        /// worse answer, because it drops out of every queue somebody is
+        /// working through. So an unsure sighting carries the shortlist we
+        /// showed: "it is one of these three" is a far better brief for the
+        /// person who looks at it than "unknown".
+        ///
+        /// A sighting with this set belongs to no tree yet and is NOT one of
+        /// your own finds, which is why `yoursOnly` skips it: nobody added a
+        /// tree here, they photographed one of ours and could not say which.
+        /// Optional, so a file written before 2026-09-07 still decodes.
+        var unsureOf: [String]?
+        var isUnsure: Bool { !(unsureOf ?? []).isEmpty }
+
         /// The id this sighting wears wherever the app talks about TREES: the
         /// heart on its page saves under it, so anything asking whether you
         /// hearted your own tree has to ask with this exact string. Written
@@ -240,7 +259,9 @@ final class Sightings {
 
     /// Only the ones nobody else has: your own finds, the second layer on the
     /// map.
-    var yoursOnly: [Sighting] { newestFirst.filter { $0.treeId == nil } }
+    var yoursOnly: [Sighting] {
+        newestFirst.filter { $0.treeId == nil && !$0.isUnsure }
+    }
 
     func forTree(_ id: String) -> Sighting? { all.first { $0.treeId == id } }
 
@@ -335,9 +356,11 @@ final class Sightings {
     @discardableResult
     func record(treeId: String?, name: String, note: String = "",
                 lat: Double, lng: Double, image: UIImage?,
-                date: Date = Date(), status: Status = .mine) -> Sighting {
+                date: Date = Date(), status: Status = .mine,
+                unsureOf: [String]? = nil) -> Sighting {
         var s = Sighting(treeId: treeId, name: name, note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
+        s.unsureOf = unsureOf
         // Shared from the start (see the property's own comment): the mail
         // that thanks somebody for this tree links straight to it, and that
         // only works if the page is already live by the time the mail sends.
