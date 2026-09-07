@@ -1,0 +1,69 @@
+{
+  "city": "Kasukabe",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kasukabe maps one tree, and a whole garden was built around it to receive the crowds it draws for three weeks a year. Ushijima no Fuji is the only wisteria in Japan protected at the country's highest heritage rank, a plant roughly 1,200 years old whose flower clusters hang up to two metres long. The garden opens only during the spring bloom, mid-April to early May, and is shut the rest of the year. Paid entry, a ten-minute walk from Fuji-no-Ushijima Station.",
+  "meta_description": "Ushijima no Fuji in Kasukabe: Japan's only Special Natural Monument wisteria, roughly 1,200 years old, open only during its spring bloom.",
+  "question_meta": "Kasukabe's only mapped tree is Ushijima no Fuji, a roughly 1,200-year-old wisteria and Japan's only Special Natural Monument of its species.",
+  "question_answer": "Kasukabe's only mapped tree is Ushijima no Fuji, the Great Wisteria of Ushijima, growing in the Tokaen/Fujikaen garden that exists specifically to display it. It is the only wisteria in Japan designated a Special National Natural Monument, roughly 1,200 years old, with flower clusters up to two metres long. The garden opens only during the bloom window each spring, roughly mid-April to early May, and is closed the rest of the year.",
+  "question_context": "The plant was made a National Natural Monument in January 1928 and raised to Special Natural Monument on 22 August 1955, Japan's highest heritage tier. Its age of roughly 1,200 years is repeated across the garden's own materials, Tobu Railway and Japanese travel writing, with a wide underlying band of 1,000 to 1,300 years; one Japanese source calls it the oldest of its species in the country, a claim this page treats as unconfirmed. The trellis canopy is given as 600 to 700 square metres depending on the source, and the base measures over four metres round. What people actually come for is the flower: clusters that hang up to two metres long, among the longest of any Japanese wisteria, forming a pale violet ceiling visitors walk underneath rather than look at. Entry is a straightforward 1,000 yen ticket, with no permission barrier beyond the price and the season, but the season is the whole catch: the garden closes the moment it finishes flowering. Kasukabe sits 40 to 50 minutes by train from central Tokyo, outside the usual day-trip radius of the already-published Tokyo page, and stands as its own destination for the three weeks a year it opens.",
+  "hero_tree_id": "ksk_001",
+  "oldest_tree_id": "ksk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kasukabe?",
+      "a": "Ushijima no Fuji, the only mapped tree here, a Japanese wisteria roughly 1,200 years old and the only one of its species designated a Special National Natural Monument."
+    },
+    {
+      "q": "When can I see it?",
+      "a": "Only during its spring bloom, roughly mid-April to early May each year (2025's dates were 12 April to 4 May). The garden is closed the rest of the year, so plan around the flowering or do not go."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No. Entry is paid, 1,000 yen, but there is no permission barrier beyond the ticket and the season: anyone can visit during the bloom window."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A ten-minute walk from Fuji-no-Ushijima Station on the Tobu Noda Line, roughly 40 to 50 minutes by train from central Tokyo."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ksk_001",
+      "name": "Ushijima no Fuji (the Great Wisteria of Ushijima)",
+      "species": "Japanese Wisteria (Wisteria floribunda)",
+      "age_estimate": "roughly 1,200 years",
+      "age_min": 1000,
+      "age_max": 1300,
+      "girth_cm": 400,
+      "location": {
+        "address": "Tokaen / Fujikaen garden, 786 Ushijima, Kasukabe, Saitama Prefecture, Japan",
+        "latitude": 35.985076,
+        "longitude": 139.773823,
+        "neighbourhood": "Ushijima, Kasukabe"
+      },
+      "story": "Japan protects exactly one wisteria at its highest heritage rank, and this is it. The garden around it exists for no other reason: the plant came first and everything else was built to receive the people who come to look at it, for about three weeks a year.\n\nIts age is given as roughly 1,200 years by the garden, by Tobu Railway and across Japanese travel writing, with a wide band underneath that figure, somewhere between a thousand and thirteen hundred years. One Japanese source goes further and calls it the oldest of its species in the country. Nobody else does, so take that as a claim rather than a fact. The base of the plant is over four metres round, and the trellis it has been trained across covers between 600 and 700 square metres depending on who measured it and when.\n\nWhat people come for is the flower. The clusters hang up to two metres long, among the longest any Japanese wisteria produces, in a pale violet ceiling you stand underneath rather than look at.\n\nIt was made a National Natural Monument in January 1928 and raised to Special Natural Monument in August 1955. Plan around the bloom or do not go at all: in 2025 the garden opened on 12 April and closed on 4 May, and it is shut the rest of the year.",
+      "verified_sources": [
+        "https://www.tobu.co.jp/en/sightseeing/news/1672.html",
+        "http://www.ushijimanofuji.co.jp/en/about_en.html",
+        "https://www.wikidata.org/wiki/Q11570113"
+      ],
+      "access": "Paid entry, 1,000 yen. Open to the public only during the bloom window, roughly mid-April to early May each year (2025's dates were 12 April to 4 May); closed the rest of the year. Free of any permission barrier during that window, just a ticket and a season.",
+      "paid_entry": true,
+      "transport": "10-minute walk from Fuji-no-Ushijima Station on the Tobu Noda Line; roughly 40-50 minutes by train from central Tokyo, so treat Kasukabe as its own destination rather than a Tokyo day-trip add-on.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "late April, when the flower clusters hang up to two metres long"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

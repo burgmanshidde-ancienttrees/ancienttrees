@@ -589,7 +589,7 @@
      "source": "inaturalist",
      "obs_location": "13.7518333333,100.4920583333",
      "judged": "reject",
-     "verdict": "identified on iNaturalist as Ficus lyrata, not the Bodhi tree, and the frame is tourists and umbrellas"
+     "verdict": "Tourists with a parasol fill the foreground and the fig sits small behind them; the observation is identified as Ficus lyrata, not the bodhi tree."
     },
     {
      "title": "iNat obs 196507425 (Ficus lyrata)",
@@ -6093,7 +6093,9 @@
      "author": "Melvinvk",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Kleverlaan, Haarlem Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Kleverlaan, Haarlem Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Street scene down the Kleverlaan with parked cars and bicycles; bare trunks at the edge, no yew and no subject."
     },
     {
      "title": "File:Natuurijsbaan aan de Kleverlaan, Inventarisnummer NL-HlmNHA 24523.JPG",
@@ -6103,7 +6105,9 @@
      "author": "AnonymousUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:1914 in Haarlem Category:Beeldcollectie van de gemeente Haarlem Category:CC-Zero Category:History of ice skating in the Netherlands Category:Kleverlaan, Haarlem Category:Stereoscopic 3D files (side-by-side)"
+     "cats": "Category:1914 in Haarlem Category:Beeldcollectie van de gemeente Haarlem Category:CC-Zero Category:History of ice skating in the Netherlands Category:Kleverlaan, Haarlem Category:Stereoscopic 3D files (side-by-side)",
+     "judged": "reject",
+     "verdict": "Archival black-and-white stereograph of skaters on an ice rink. Never archival or monochrome imagery."
     },
     {
      "title": "File:Rotonde Kleverlaan, NL-HlmNHA 54031339.JPG",
@@ -6189,7 +6193,9 @@
      "author": "Arch",
      "lat": null,
      "lng": null,
-     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work"
+     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wide panorama of the park in bare winter; the tree would have to be searched for and no crown is readable."
     }
    ]
   },
@@ -10678,7 +10684,9 @@
      "author": "Ank Kumar",
      "lat": 47.372906,
      "lng": 8.5411,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lindenhof hill Category:Photographs by Ank gsx Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lindenhof hill Category:Photographs by Ank gsx Category:Self-published work",
+     "judged": "reject",
+     "verdict": "The church facade and its stair fill the frame; lime branches only overhang the top edge."
     },
     {
      "title": "File:Lindenhof Square and Hill, Zurich (Ank Kumar) 04.jpg",
@@ -32153,7 +32161,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "close-up of lime flowers and leaves, and the observation is Tilia americana rather than the Vitifolia pair"
+     "verdict": "Close-up of lime leaves and flowers, no trunk and no whole tree. The sweep attached the same observation to both lindens of the pair."
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -32181,7 +32189,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "same foliage close-up, and it was already offered for the west tree of the pair, so it cannot identify either"
+     "verdict": "Same leaf-and-flower close-up the sweep also attached to ott_002; nothing that identifies either tree of the pair."
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -35205,7 +35213,9 @@
      "author": "Mwhitman6",
      "lat": 30.2716,
      "lng": -97.75581389,
-     "cats": "Category:CC-BY-SA-3.0 Category:Images from Wikipedia Summer of Monuments Category:National Register of Historic Places with known IDs Category:Self-published work Category:Taken with iPhone 5S Category:Unreviewed submissions from Wikipedia Summer of Monuments Category:Uploaded via Campaign:wsm Category:Wroe-Bustin House"
+     "cats": "Category:CC-BY-SA-3.0 Category:Images from Wikipedia Summer of Monuments Category:National Register of Historic Places with known IDs Category:Self-published work Category:Taken with iPhone 5S Category:Unreviewed submissions from Wikipedia Summer of Monuments Category:Uploaded via Campaign:wsm Category:Wroe-Bustin House",
+     "judged": "reject",
+     "verdict": "A yellow clapboard house framed by oak branches; this is not the Treaty Oak and the tree is not the subject."
     }
    ]
   },
@@ -35254,7 +35264,9 @@
      "author": "Michael Barera",
      "lat": 30.28673056,
      "lng": -97.74011111,
-     "cats": "Category:August 2019 in Austin, Texas Category:CC-BY-SA-3.0 Category:CC-BY-SA-4.0 Category:Campus of the University of Texas at Austin Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Photographs by Michael Barera Category:Self-published work Category:Taken with Sony ILCE-5100 Category:Theaters in Texas Category:United States photographs taken on 2019-08-03"
+     "cats": "Category:August 2019 in Austin, Texas Category:CC-BY-SA-3.0 Category:CC-BY-SA-4.0 Category:Campus of the University of Texas at Austin Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Photographs by Michael Barera Category:Self-published work Category:Taken with Sony ILCE-5100 Category:Theaters in Texas Category:United States photographs taken on 2019-08-03",
+     "judged": "reject",
+     "verdict": "Hogg Memorial Auditorium and its car park; the Battle Oaks are not in the frame."
     },
     {
      "title": "File:University of Texas at Austin August 2019 10 (Littlefield House).jpg",
@@ -36933,7 +36945,9 @@
      "author": "Heiloo",
      "lat": 52.185343,
      "lng": 5.891553,
-     "cats": "Category:CC-BY-3.0 Category:Media needing category review as of 14 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Taken with HTC Sensation Z710 Category:Ugchelen"
+     "cats": "Category:CC-BY-3.0 Category:Media needing category review as of 14 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Taken with HTC Sensation Z710 Category:Ugchelen",
+     "judged": "reject",
+     "verdict": "Petrol station shop photographed through a windscreen, 2.9 km from the pin. No tree at all."
     },
     {
      "title": "File:Ugchelen, Netherlands - panoramio (1).jpg",
@@ -37083,7 +37097,9 @@
      "author": "Kleinleugenmors",
      "lat": null,
      "lng": null,
-     "cats": "Category:2010 in Apeldoorn Category:Bridges in Apeldoorn Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-26 Category:Oranjepark, Apeldoorn Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Pentax K-7"
+     "cats": "Category:2010 in Apeldoorn Category:Bridges in Apeldoorn Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-26 Category:Oranjepark, Apeldoorn Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Pentax K-7",
+     "judged": "reject",
+     "verdict": "The park bridge is the subject; trees appear only as framing foliage."
     },
     {
      "title": "File:Herinneringsmonument oranjepark (Apeldoorn).jpg",
@@ -37175,7 +37191,9 @@
      "author": "Anthony Ruijtenbeek",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:March 2024 in Assen Category:Netherlands photographs taken on 2024-03-29 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten missing SDC location of creation Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:March 2024 in Assen Category:Netherlands photographs taken on 2024-03-29 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten missing SDC location of creation Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Distant view down the estate canal to the house, bare winter trees on both banks; no chestnut identifiable."
     },
     {
      "title": "File:Landgoed Overcingel, Assen.JPG",
@@ -37259,7 +37277,9 @@
      "author": "Anthony Ruijtenbeek",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:March 2024 in Assen Category:Netherlands photographs taken on 2024-03-29 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten missing SDC location of creation Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:March 2024 in Assen Category:Netherlands photographs taken on 2024-03-29 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten missing SDC location of creation Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Footbridge and canal vista in bare winter; no hollow oak identifiable."
     },
     {
      "title": "File:Grand canal op Overcingel richting het westen.jpg",
@@ -41256,7 +41276,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Attribution-gencat Category:Attribution only license Category:Files from external sources with reviewed licenses Category:Roure Gros de Ca n'Iglésies",
-     "source": "wikidata/Q132218679"
+     "source": "wikidata/Q132218679",
+     "judged": "reject",
+     "verdict": "Correct tree, unusable file: the register's own 250 by 411 pixel original, crown cut off at the top edge, flat winter light. Too small for a card and no crown to read."
     },
     {
      "title": "File:Las Iglesies. Avinyó.jpg",
@@ -41295,7 +41317,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Attribution-gencat Category:Attribution only license Category:Castanyer del Pla de Sant Nicolau Category:Files from external sources with reviewed licenses Category:Taken with Sony DSC-F828",
-     "source": "wikidata/Q132183118"
+     "source": "wikidata/Q132183118",
+     "judged": "reject",
+     "verdict": "Correct tree, unusable file: 350 by 263 pixel original of the hollow base only, crown entirely out of frame, heavy fog. A trunk study, not a portrait."
     }
    ]
   },
@@ -41532,7 +41556,9 @@
      "author": "Wutsje",
      "lat": 53.22074722,
      "lng": 6.56925556,
-     "cats": "Category:2009 in Groningen (city) Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Martinikerkhof (Groningen) Category:Martinitoren Category:Netherlands photographs taken on 2009-06-28"
+     "cats": "Category:2009 in Groningen (city) Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Martinikerkhof (Groningen) Category:Martinitoren Category:Netherlands photographs taken on 2009-06-28",
+     "judged": "reject",
+     "verdict": "Townscape of the Martinitoren over the square; no single oak readable as the subject."
     },
     {
      "title": "File:Groningen Martinikerkhof Martinikerk.jpg",
@@ -41542,7 +41568,9 @@
      "author": "Roger Veringmeier",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Martinikerk (Groningen) Category:Martinikerkhof (Groningen) Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Martinikerk (Groningen) Category:Martinikerkhof (Groningen) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Lawn and church tower, trees framing the edges; distant view with no identifiable oak."
     },
     {
      "title": "File:Groningen Prinsenhof Martinikerkhof.jpg",
@@ -41590,7 +41618,9 @@
      "author": "Henk Monster",
      "lat": 53.22123,
      "lng": 6.569325,
-     "cats": "Category:CC-BY-3.0 Category:Netherlands photographs taken on 2014-04-23 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Pergolas in the Netherlands Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Prinsentuin (Groningen) Category:Tree tunnels in the Netherlands"
+     "cats": "Category:CC-BY-3.0 Category:Netherlands photographs taken on 2014-04-23 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Pergolas in the Netherlands Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Prinsentuin (Groningen) Category:Tree tunnels in the Netherlands",
+     "judged": "reject",
+     "verdict": "The Prinsentuin's trained hornbeam arch tunnel, not the horse chestnut; a different subject in the same garden."
     },
     {
      "title": "File:Groningen Prinsentuin april04.jpg",
@@ -42019,7 +42049,9 @@
      "author": "Michiel1972",
      "lat": 52.01758333,
      "lng": 4.35140556,
-     "cats": "Category:2010 in Delft Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Cemeteries in Delft Category:GFDL Category:Houses in Delft Category:Kalverbos, Delft Category:License migration redundant Category:Netherlands photographs taken on 2010-05-22 Category:Rijksmonumenten in Delft Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Staff residences in the Netherlands Category:Taken with Canon PowerShot A530"
+     "cats": "Category:2010 in Delft Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Cemeteries in Delft Category:GFDL Category:Houses in Delft Category:Kalverbos, Delft Category:License migration redundant Category:Netherlands photographs taken on 2010-05-22 Category:Rijksmonumenten in Delft Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Staff residences in the Netherlands Category:Taken with Canon PowerShot A530",
+     "judged": "reject",
+     "verdict": "Cemetery keeper's house; trees only as dappled shade. The same file is also attached to del_006."
     },
     {
      "title": "File:Delft Kalverbos 017 6182.jpg",
@@ -42059,7 +42091,9 @@
      "author": "Michiel1972",
      "lat": 52.01758333,
      "lng": 4.35140556,
-     "cats": "Category:2010 in Delft Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Cemeteries in Delft Category:GFDL Category:Houses in Delft Category:Kalverbos, Delft Category:License migration redundant Category:Netherlands photographs taken on 2010-05-22 Category:Rijksmonumenten in Delft Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Staff residences in the Netherlands Category:Taken with Canon PowerShot A530"
+     "cats": "Category:2010 in Delft Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Cemeteries in Delft Category:GFDL Category:Houses in Delft Category:Kalverbos, Delft Category:License migration redundant Category:Netherlands photographs taken on 2010-05-22 Category:Rijksmonumenten in Delft Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Staff residences in the Netherlands Category:Taken with Canon PowerShot A530",
+     "judged": "reject",
+     "verdict": "Same keeper's-house file the sweep also attached to del_005; no tree as subject."
     },
     {
      "title": "File:Delft Kalverbos 017 6182.jpg",
@@ -44259,7 +44293,9 @@
      "author": "Uberprutser",
      "lat": null,
      "lng": null,
-     "cats": "Category:Boezemgemaal De Waterwolf Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2013-04-24 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-L10 Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:Boezemgemaal De Waterwolf Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2013-04-24 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-L10 Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "The Waterwolf pumping station building; no chestnut in the frame."
     },
     {
      "title": "File:Waterwolf 6.jpg",
@@ -44361,7 +44397,9 @@
      "author": "Ymblanter",
      "lat": 52.282926,
      "lng": 4.660695,
-     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Cable-stayed road bridge 2.7 km from the pin; no maple as subject."
     },
     {
      "title": "File:Nieuw-Vennep Bennebroekerwegbrug 04.jpg",
@@ -44429,7 +44467,9 @@
      "author": "Pymouss",
      "lat": 52.28,
      "lng": 4.685,
-     "cats": "Category:2019 in Haarlemmermeer Category:Aerial photographs of Hoofddorp Category:CC-BY-SA-4.0 Category:Files by Pymouss Category:Images supported by Wikimedia France - Sterenn Category:Media supported by Wikimedia France Category:Netherlands photographs taken on 2019-10-24 Category:Self-published work"
+     "cats": "Category:2019 in Haarlemmermeer Category:Aerial photographs of Hoofddorp Category:CC-BY-SA-4.0 Category:Files by Pymouss Category:Images supported by Wikimedia France - Sterenn Category:Media supported by Wikimedia France Category:Netherlands photographs taken on 2019-10-24 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Aerial photograph of railway yards and polder 2.8 km from the pin; no tree visible at all."
     },
     {
      "title": "File:Hoofddorp - luchtfoto 20191024-06.jpg",
@@ -44860,7 +44900,9 @@
      "author": "Jminderh",
      "lat": 52.21675,
      "lng": 5.16681,
-     "cats": "Category:2013 in Hilversum Category:CC-BY-SA-3.0-NL Category:Hilvertsweg Category:Netherlands photographs taken on 2013-03-28 Category:Rijksmonumenten in Hilversum Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot SX260 HS"
+     "cats": "Category:2013 in Hilversum Category:CC-BY-SA-3.0-NL Category:Hilvertsweg Category:Netherlands photographs taken on 2013-03-28 Category:Rijksmonumenten in Hilversum Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot SX260 HS",
+     "judged": "reject",
+     "verdict": "Row of houses on the Hilvertsweg with cars in front; no chestnut as subject. The same file is also attached to hil_005, which is a second reason not to trust it."
     },
     {
      "title": "File:Overzicht Hilvertsweg, voorgevels - Hilversum - 20346996 - RCE.jpg",
@@ -44888,7 +44930,9 @@
      "author": "Jminderh",
      "lat": 52.21675,
      "lng": 5.16681,
-     "cats": "Category:2013 in Hilversum Category:CC-BY-SA-3.0-NL Category:Hilvertsweg Category:Netherlands photographs taken on 2013-03-28 Category:Rijksmonumenten in Hilversum Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot SX260 HS"
+     "cats": "Category:2013 in Hilversum Category:CC-BY-SA-3.0-NL Category:Hilvertsweg Category:Netherlands photographs taken on 2013-03-28 Category:Rijksmonumenten in Hilversum Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot SX260 HS",
+     "judged": "reject",
+     "verdict": "Same street-of-houses file the sweep also attached to hil_004; no lime as subject and no way to tell which tree was meant."
     },
     {
      "title": "File:Overzicht Hilvertsweg, voorgevels - Hilversum - 20346996 - RCE.jpg",
@@ -44976,7 +45020,9 @@
      "author": "Rudolphous",
      "lat": 52.228731,
      "lng": 5.1589,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cupressaceae at Pinetum Blijdenstein Category:Cupressaceae in the Netherlands Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work Category:Thuja plicata (cultivated)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cupressaceae at Pinetum Blijdenstein Category:Cupressaceae in the Netherlands Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work Category:Thuja plicata (cultivated)",
+     "judged": "reject",
+     "verdict": "Looking straight up into a cluster of conifer trunks, no crown or whole tree readable, and the file names Cryptomeria japonica while our tree is Thuja plicata."
     },
     {
      "title": "File:Pinetum Blijdenstein 53 - Japanse Cipres (Cryptomeria japonica).jpg",
@@ -45953,7 +45999,9 @@
      "author": "Mark Ahsmann",
      "lat": null,
      "lng": null,
-     "cats": "Category:2015 in Maastricht Category:CC-BY-SA-4.0 Category:Momus (Maastricht) Category:Netherlands photographs taken on 2015-04-19 Category:Photographs by Mark Ahsmann Category:Self-published work Category:Sidewalk cafés in Maastricht"
+     "cats": "Category:2015 in Maastricht Category:CC-BY-SA-4.0 Category:Momus (Maastricht) Category:Netherlands photographs taken on 2015-04-19 Category:Photographs by Mark Ahsmann Category:Self-published work Category:Sidewalk cafés in Maastricht",
+     "judged": "reject",
+     "verdict": "The Momus facade is the subject, seen through bare pollarded planes; the trees are foreground clutter."
     },
     {
      "title": "File:Maastricht, Schatkamer St-Servaasbasiliek, zijruimte boven, textilia 02.jpg",
@@ -46069,7 +46117,9 @@
      "author": "Romaine",
      "lat": 50.84430278,
      "lng": 5.69285,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Stone sluice wall in the park; walnut foliage only at the top edge."
     },
     {
      "title": "File:Maastricht - Mgr. Nolenspark GM-1393 20190330.jpg",
@@ -46364,7 +46414,9 @@
      "author": "FrankOverman",
      "lat": 50.84449,
      "lng": 5.68204,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht",
+     "judged": "reject",
+     "verdict": "Brass Stolperstein set in a pavement. Matched on the surname Nussbaum, nothing to do with the tree."
     },
     {
      "title": "File:Stolperstein für Hanchen Nussbaum-Goldschmidt (Maastricht).jpg",
@@ -47010,7 +47062,9 @@
      "author": "IJsbrand Heins",
      "lat": null,
      "lng": null,
-     "cats": "Category:1999 in Rotterdam Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:History of Lijnbaan, Rotterdam Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by IJ.Th. Heins from 1999 Category:Possible Rijksmonumenten in Rotterdam"
+     "cats": "Category:1999 in Rotterdam Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:History of Lijnbaan, Rotterdam Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by IJ.Th. Heins from 1999 Category:Possible Rijksmonumenten in Rotterdam",
+     "judged": "reject",
+     "verdict": "Black-and-white archival RCE survey photograph of the shopping promenade. Never monochrome or archival imagery."
     },
     {
      "title": "File:Lijnbaan, Rotterdam 2024-12-02.jpg",
@@ -47040,7 +47094,9 @@
      "author": "Silver Dovelet",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Tram shelter and advertising panel fill the frame; no yew as subject."
     },
     {
      "title": "File:Rotterdam - Eendrachtsplein Metro entrance (2019).jpg",
@@ -47068,7 +47124,9 @@
      "author": "Jan Geerling",
      "lat": 51.924587,
      "lng": 4.473941,
-     "cats": "Category:CC-BY-SA-4.0 Category:Delftseplein (Rotterdam) Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:Hogeschool Tio Rotterdam Category:Photographs by Jan Geerling contributed in 2022 Category:Photographs by Jan Geerling in Rotterdam Category:Self-published work Category:Uploaded with OpenRefine"
+     "cats": "Category:CC-BY-SA-4.0 Category:Delftseplein (Rotterdam) Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:Hogeschool Tio Rotterdam Category:Photographs by Jan Geerling contributed in 2022 Category:Photographs by Jan Geerling in Rotterdam Category:Self-published work Category:Uploaded with OpenRefine",
+     "judged": "reject",
+     "verdict": "Glass towers on the Delftseplein; a few bare street trees at the bottom edge, no plane as subject."
     },
     {
      "title": "File:1987 Het Stationspostkantoor aan het Delftseplein, Rotterdam gezien vanaf het Stationsplein.jpg",
@@ -48008,7 +48066,9 @@
      "author": "Bjoertvedt",
      "lat": 39.881756,
      "lng": 116.403236,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Temple of Heaven"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Temple of Heaven",
+     "judged": "reject",
+     "verdict": "Paved path through the rose garden; the frame is half pavement and no juniper is identifiable as the subject."
     },
     {
      "title": "File:Beijing - Temple of Heaven Park IMG 5098 Chinese Rose Garden.jpg",
@@ -48086,7 +48146,9 @@
      "author": "rheins",
      "lat": 39.953211,
      "lng": 116.410917,
-     "cats": "Category:CC-BY-3.0 Category:China photographs taken on 2013-01-24 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 5226993 Category:Temple of Earth (Beijing)"
+     "cats": "Category:CC-BY-3.0 Category:China photographs taken on 2013-01-24 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 5226993 Category:Temple of Earth (Beijing)",
+     "judged": "reject",
+     "verdict": "Winter garden scene with a pavilion and sheeting on the ground; no cypress as subject."
     }
    ]
   },
@@ -50858,7 +50920,9 @@
      "author": "Rijksmuseum",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Molkenkur Category:Odenwald in Heidelberg in 1903 Category:Städte-Bilder Heidelberg"
+     "cats": "Category:CC-Zero Category:Molkenkur Category:Odenwald in Heidelberg in 1903 Category:Städte-Bilder Heidelberg",
+     "judged": "reject",
+     "verdict": "1903 black-and-white archival print of the Molkenkur inn. Never archival or monochrome imagery."
     },
     {
      "title": "File:Linde Molkenkur im Frühling, Heidelberg.jpg",
@@ -50868,7 +50932,9 @@
      "author": "Hartmut Schmidt Heidelberg",
      "lat": 49.407058,
      "lng": 8.712894,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 8° E) Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024, DE landscape Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Molkenkur Category:Natural monuments in Heidelberg Category:Self-published work Category:Tilia in Baden-Württemberg Category:Tilia in the Northern Hemisphere in April Category:Trees in Heidelberg Category:Unidentified Tilia in Germany Category:Uploaded via Campaign:wle-de-nd"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 8° E) Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024, DE landscape Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Molkenkur Category:Natural monuments in Heidelberg Category:Self-published work Category:Tilia in Baden-Württemberg Category:Tilia in the Northern Hemisphere in April Category:Trees in Heidelberg Category:Unidentified Tilia in Germany Category:Uploaded via Campaign:wle-de-nd",
+     "judged": "approve",
+     "verdict": "Whole linden in spring leaf against blue sky, trunk with its iron bands and full crown both readable, geotagged 15 m from our pin and titled for this Naturdenkmal; CC BY-SA 4.0, Hartmut Schmidt Heidel"
     },
     {
      "title": "File:Linde an der Molkenkur, Heidelberg.jpg",
@@ -50903,7 +50969,9 @@
      "author": "Oleksiy.golubov",
      "lat": 49.416795,
      "lng": 8.673726,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 8° E) Category:Im Neuenheimer Feld Category:Self-published work Category:Universität Heidelberg"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 8° E) Category:Im Neuenheimer Feld Category:Self-published work Category:Universität Heidelberg",
+     "judged": "reject",
+     "verdict": "Office building at dusk, 2.3 km from the pin; no swamp cypress in the frame."
     },
     {
      "title": "File:Zentrallabor Universitätsklinikum Heidelberg Neuenheimer Feld.JPG",
@@ -55747,7 +55815,9 @@
      "author": "Guillermo Carlos Gómez",
      "lat": -12.100723,
      "lng": -77.034062,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Olea europaea Category:Parque El Olivar Category:Self-published work Category:WikiÁrboles Category:Árboles patrimoniales del departamento de Lima"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Olea europaea Category:Parque El Olivar Category:Self-published work Category:WikiÁrboles Category:Árboles patrimoniales del departamento de Lima",
+     "judged": "reject",
+     "verdict": "Same tree, weaker frame: lawn and rope fence take the lower third and the grove competes with the subject; frame 19 of the same set is approved instead."
     },
     {
      "title": "File:Olivo patrimonial de San Isidro 11.jpg",
@@ -55777,7 +55847,9 @@
      "author": "Guillermo Carlos Gómez",
      "lat": -12.100485,
      "lng": -77.033977,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Olea europaea Category:Parque El Olivar Category:Self-published work Category:WikiÁrboles Category:Árboles patrimoniales del departamento de Lima"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Olea europaea Category:Parque El Olivar Category:Self-published work Category:WikiÁrboles Category:Árboles patrimoniales del departamento de Lima",
+     "judged": "reject",
+     "verdict": "Close-up of bark and a fruiting sprig, no crown and no whole tree."
     },
     {
      "title": "File:Olivo patrimonial de San Isidro 16.jpg",
@@ -55817,7 +55889,9 @@
      "author": "Guillermo Carlos Gómez",
      "lat": -12.100485,
      "lng": -77.033977,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Olea europaea Category:Parque El Olivar Category:Self-published work Category:WikiÁrboles Category:Árboles patrimoniales del departamento de Lima"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Olea europaea Category:Parque El Olivar Category:Self-published work Category:WikiÁrboles Category:Árboles patrimoniales del departamento de Lima",
+     "judged": "approve",
+     "verdict": "Landscape frame of the roped-off patrimonial olive, burled trunk centre and leafy crown across the frame, daylight and colour, survives a wide crop; geotagged 7 m from our confirmed pin; CC BY-SA 4.0,"
     },
     {
      "title": "File:Olivo patrimonial de San Isidro 20.jpg",
@@ -55876,7 +55950,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:WikiÁrboles Category:Árboles patrimoniales del departamento de Lima",
-     "source": "wikidata/Q137303617"
+     "source": "wikidata/Q137303617",
+     "judged": "reject",
+     "verdict": "Night shot under street lamps against a black sky. Never a night photograph."
     }
    ]
   },
@@ -55894,7 +55970,9 @@
      "author": "Checo890",
      "lat": -12.10894583,
      "lng": -77.04328139,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Parks in Lima Category:Self-published work Category:Taken with Nokia Lumia 1020"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Parks in Lima Category:Self-published work Category:Taken with Nokia Lumia 1020",
+     "judged": "reject",
+     "verdict": "General park view of mixed planting and palms; no ceiba identifiable as the subject."
     }
    ]
   },
@@ -58523,7 +58601,7 @@
      "source": "inaturalist",
      "obs_location": "-43.0982555,146.80252",
      "judged": "reject",
-     "verdict": "Distant canopy shot from a public road; tree not identifiable, fails Cadiz standard (too far, has to be searched for)."
+     "verdict": "One eucalypt stem among many in dense forest, crown not readable and nothing distinguishes it from its neighbours."
     },
     {
      "title": "iNat obs 321882049 (Eucalyptus regnans)",
@@ -59525,7 +59603,9 @@
      "author": "rheins",
      "lat": 39.92320833,
      "lng": 116.39286389,
-     "cats": "Category:CC-BY-3.0 Category:China photographs taken on 2011-03-02 Category:Files with coordinates missing SDC location of creation Category:Guilty Chinese Scholartree Category:March 2011 in China Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-3.0 Category:China photographs taken on 2011-03-02 Category:Files with coordinates missing SDC location of creation Category:Guilty Chinese Scholartree Category:March 2011 in China Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Right site, but the bare young pagoda tree occupies a third of the frame above a rockery of plaques and signage; crown thin and unreadable, tree not the dominant subject."
     }
    ]
   },
@@ -61377,7 +61457,9 @@
      "author": "Gerald England",
      "lat": 53.40902291,
      "lng": -2.22936618,
-     "cats": "Category:CC-BY-SA-2.0 Category:Didsbury East Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:CC-BY-SA-2.0 Category:Didsbury East Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "General view of a paved garden with benches; no laburnum readable as the subject. The sweep attached this one file to both mcr_002 and mcr_003."
     },
     {
      "title": "File:Tree lawn at Fletcher Moss Park - geograph.org.uk - 5641357.jpg",
@@ -61405,7 +61487,9 @@
      "author": "Gerald England",
      "lat": 53.40902291,
      "lng": -2.22936618,
-     "cats": "Category:CC-BY-SA-2.0 Category:Didsbury East Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:CC-BY-SA-2.0 Category:Didsbury East Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "Same file the sweep also attached to mcr_002; a benches-and-paving park view with no cork tree as subject."
     },
     {
      "title": "File:Tree lawn at Fletcher Moss Park - geograph.org.uk - 5641357.jpg",
@@ -61453,7 +61537,9 @@
      "author": "Dai O'Nysius",
      "lat": 53.4526423,
      "lng": -2.2476487,
-     "cats": "Category:Alexandra Park, Manchester Category:Bowling greens in Greater Manchester Category:CC-BY-SA-3.0 Category:England photographs taken on 2011-08-21 Category:Files with coordinates missing SDC location of creation (53° N, 3° W) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 3294567"
+     "cats": "Category:Alexandra Park, Manchester Category:Bowling greens in Greater Manchester Category:CC-BY-SA-3.0 Category:England photographs taken on 2011-08-21 Category:Files with coordinates missing SDC location of creation (53° N, 3° W) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 3294567",
+     "judged": "reject",
+     "verdict": "One trunk left of centre with its crown cut off by the top edge; the frame is lawn and terraced housing, and no variegated ash is identifiable."
     },
     {
      "title": "File:Tree in Alexandra Park, Whalley Range, Manchester - panoramio.jpg",

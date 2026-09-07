@@ -5711,6 +5711,29 @@
         "tokens": 0,
         "trees": 4,
         "note": "Merged 4 already-verified, already-written trees stranded uncommitted on disk from an earlier attempt (comfort-maple, ginkgo-of-yongmunsa-temple, itoshiro-no-osugi, myokokuji-no-sotetsu -verified.json), no research or write-stories dispatch needed. Verified 3 of 4 photos against the Cadiz standard via Wikimedia API lookups. Also fixed a pre-existing stale tree-count claim in Osaka intro. Tokens not tracked by an agent report; session merge work."
+      },
+      {
+        "target": "nra_010 The Roben-sugi of Nigatsu-do (reader sighting)",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 0,
+        "photos_approved": 1,
+        "note": "Viewed and approved a reader-submitted photograph via sightings_publish.py; tree had no photo at all. Also fixed sightings_publish.py mail template, which promised a visible name contradicting the 2026-09-04 no-name rule. Tokens not tracked by an agent report; session work."
+      },
+      {
+        "target": "the-hague(+1) / deventer(+1) / rumskulla / kasukabe / aguas-de-moura",
+        "kind": "write",
+        "tokens": 109349,
+        "trees": 5,
+        "note": "write-stories agent wrote 5 stories across 4 delivery files (hag_033, dev_009, rkm_001, ksk_001, agm_001). Main session then merged all 5 into data/cities (2 joins to existing cities, 3 new single-famous-tree places), fixed a Contract B word-count fail on kasukabe and a missing NL translation on the-hague, updated tree-count copy on both existing cities, and deleted the now-merged research files."
+      },
+      {
+        "target": "photo-queue viewing pass, 18 photo-less cities",
+        "kind": "photo-judge",
+        "tokens": 186000,
+        "trees": 0,
+        "photos_approved": 2,
+        "note": "47 candidates viewed as pixels (hei_001 Heidelberg linden, lim_002 Lima olive approved; 45 rejected incl. 4 files double-attached to two trees, several archival/monochrome, several proximity-match noise). Verdicts applied via photo_verdicts.py."
       }
     ]
   }

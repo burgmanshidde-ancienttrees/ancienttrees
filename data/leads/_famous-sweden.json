@@ -226,8 +226,8 @@
         "https://commons.wikimedia.org/wiki/File:Kvillek.jpg",
         "https://commons.wikimedia.org/wiki/File:Kvilleken.jpg"
       ],
-      "status": "verified",
-      "note": "Verified 2026-09-07, written to data/research/rumskullaeken-verified.json; awaiting a write-stories pass and a new standalone place (single-famous-tree exception). NOTE: the tree is dying (national press, DN.se 2025-07-26); confirm it is still alive before shipping if much time has passed."
+      "status": "delivered",
+      "note": "Delivered 2026-09-07 to data/cities/rumskulla.json as rkm_001, its own single-famous-tree place. The tree is dying (DN.se, 2025-07-26); story states this honestly."
     },
     {
       "name": "Sjukhuseken",

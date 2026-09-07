@@ -1,0 +1,63 @@
+{
+  "city": "Aguas de Moura",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Aguas de Moura maps one tree, and it won a European popularity contest against entries from a dozen countries. The Whistler Cork Oak, planted around 1783, is listed by Guinness as the largest cork oak in the world and won European Tree of the Year 2018 on 26,606 public votes. A single 1991 harvest of its bark produced enough cork for more than 100,000 wine-bottle stoppers. Free, standing in the open beside a playground and benches in the village streets.",
+  "meta_description": "The Whistler Cork Oak in Aguas de Moura: Guinness world-record cork oak, European Tree of the Year 2018, free to visit in the village.",
+  "question_meta": "Aguas de Moura's only mapped tree is the Whistler Cork Oak, the Guinness world record holder for largest cork oak, planted around 1783.",
+  "question_answer": "Aguas de Moura's only mapped tree is the Sobreiro Assobiador, the Whistler Cork Oak, standing in the open in the village streets beside a playground and benches. Guinness lists it as the largest cork oak in the world, and in 2018 it won European Tree of the Year on 26,606 public votes, beating the ancient elms of Cabeza del Buey in Spain. It was planted around 1783 to 1784, during the reign of Queen Maria I, and is free to visit.",
+  "question_context": "The tree earns its nickname, the Whistler, from the songbirds that gather in its crown at dusk. A single stripping of its bark in 1991 produced more than 1,200 kilos of cork, reportedly enough for over 100,000 wine-bottle stoppers, more than an average cork oak yields across its whole lifetime; it has been harvested more than twenty times since around 1820. Its trunk measures 4.15 metres round at chest height and over six metres at the base, where a cork oak flares hard, with a crown spreading more than 30 metres; its height is given as either 16.2 or 19 metres depending on the source, a gap this page does not resolve. Portugal classified it a Tree of Public Interest in 1988, and in 2000 nearby illegal building came close enough to threaten it before protection was tightened the following year. Aguas de Moura sits in Palmela municipality, roughly 20km and 39 minutes by an hourly bus from the already-published Setubal, just outside the usual day-trip radius and a nationally famous destination in its own right.",
+  "hero_tree_id": "agm_001",
+  "oldest_tree_id": "agm_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Aguas de Moura?",
+      "a": "The Whistler Cork Oak (Sobreiro Assobiador), the only mapped tree here, planted around 1783 to 1784 and now roughly 240 years old."
+    },
+    {
+      "q": "Why is it called the Whistler?",
+      "a": "Songbirds gather in its crown at dusk and the sound carries down the street. Sobreiro Assobiador means Whistling Cork Oak."
+    },
+    {
+      "q": "Is it really the largest cork oak in the world?",
+      "a": "Guinness World Records lists it as such. It also won European Tree of the Year 2018 on 26,606 public votes, ahead of entries from across the continent."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open in the village, beside a playground, benches and a car park, with only a small protective fence around the trunk. Nothing to book, nothing to ask permission for."
+    }
+  ],
+  "trees": [
+    {
+      "id": "agm_001",
+      "name": "The Whistler Cork Oak (Sobreiro Assobiador)",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "roughly 240 years, planted circa 1783-84",
+      "age_min": 240,
+      "age_max": 245,
+      "girth_cm": 415,
+      "location": {
+        "address": "Aguas de Moura, Palmela municipality, Setubal District, Portugal (in the village streets, marked as 'Sobreiro Monumental')",
+        "latitude": 38.58659,
+        "longitude": -8.69098,
+        "neighbourhood": "Aguas de Moura"
+      },
+      "story": "A single stripping of this tree in 1991 produced more than 1,200 kilos of cork, reportedly enough to stopper over 100,000 bottles of wine. Most cork oaks do not manage that in a whole lifetime. This one has been harvested more than twenty times since around 1820 and is still working.\n\nIt is called the Whistler for the noise. Songbirds gather in the crown at dusk and the sound carries down the street. Guinness lists it as the largest cork oak in the world, and in 2018 it won European Tree of the Year on 26,606 public votes, beating the ancient elms of Cabeza del Buey in Spain by a little over four thousand.\n\nIt was planted in about 1783 or 1784, during the reign of Queen Maria I. The trunk measures 4.15 metres round at chest height and over six metres at the base, where a cork oak flares hard, and the crown spreads more than 30 metres. Its height is either 16.2 metres or 19 depending on which account you read, and nobody locally seems troubled by the gap.\n\nPortugal has classified it a Tree of Public Interest since 1988. In 2000 illegal building nearby came close enough to be a genuine threat, and the protection around it was tightened the year after. It stands in the open in Aguas de Moura, beside a playground and a row of benches, with a low fence round the trunk and people sitting in its shade most days.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Sobreiro_Monumental",
+        "https://www.treeoftheyear.org/Previous-Years/2018/Svitorici-korkovy-dub",
+        "https://andarilho.pt/2023/09/05/sobreiro-assobiador-de-aguas-de-moura-e-um-dos-maiores-e-mais-antigos-no-mundo/"
+      ],
+      "access": "Free, public, no barrier beyond a small protective fence around the trunk. Stands in the open in the village of Aguas de Moura, beside a playground, benches and a car park with an EV charging point; signposted in the streets. Nothing to book, nothing to ask permission for.",
+      "transport": "In the village of Aguas de Moura itself, on foot from anywhere in the village centre; reachable from Setubal by the Carris Metropolitana 4540 bus (about 20km, roughly 39 minutes, hourly).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
