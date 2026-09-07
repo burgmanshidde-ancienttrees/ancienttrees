@@ -1,0 +1,27 @@
+[
+  {
+    "id": "rkm_001",
+    "name": "Rumskullaeken (the Kvill Oak)",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 1,000 years",
+    "age_min": 950,
+    "age_max": 1100,
+    "girth_cm": 1400,
+    "location": {
+      "address": "Kvills naturreservat, near Rumskulla, Vimmerby kommun, Smaland, Sweden",
+      "latitude": 57.73472,
+      "longitude": 15.62889,
+      "neighbourhood": "Kvill nature reserve, Rumskulla parish"
+    },
+    "verified_sources": [
+      "https://sv.wikipedia.org/wiki/Kvilleken",
+      "https://www.lansstyrelsen.se/kalmar/besoksmal/naturreservat/kvill.html",
+      "https://www.dn.se/sverige/hopplos-kamp-for-att-radda-sveriges-storsta-ek/"
+    ],
+    "access": "Free. Stands inside Kvills naturreservat, a small public nature reserve the Swedish state (via Naturvardsverket / the Kalmar county administrative board) created around the tree in 2008 specifically to protect it. A marked path (Vandringsled) leads from a car park to the tree; open access under Sweden's right of public access (allemansratten), no tickets or hours.",
+    "transport": "No public transport reaches the reserve directly; it is a rural car destination, reached by road from Vimmerby or Mariannelund via the village of Rumskulla and Venzelholm, where a signposted turn marks the way to a small car park beside the reserve.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "ALIVE BUT DYING, and this must be stated honestly rather than smoothed over: sv.wikipedia states plainly 'Eken ar dock doende' (the oak is, however, dying), and cites Dagens Nyheter (DN.se), a major national newspaper, dated 2025-07-26, for the fact that in 2025 one of the branches on the dying oak still had leaves. DN's own meta description (fetched directly, page otherwise paywalled): 'Den var gammal redan nar Gustav Vasa blev kung. Men nu ar slutet nara for Sveriges kanske mest kanda ek, trots raddningsinsatser och experthjalp' (it was already old when Gustav Vasa became king in 1523; now the end is near for perhaps Sweden's most famous oak, despite rescue efforts and expert help). So: CONFIRMED ALIVE as of July 2025 (at least one living, leafing branch), but visibly failing despite active conservation work, hollow, and held together by steel cables/wires since the 1950s (replaced 2012) after part of its crown began splitting apart. A saboteur cut the original supporting band in 2005 believing it was harming the tree (Svenska Dagbladet, 2005-07-15); climbing the tree was banned in 1998. This should be written as a tree in its final years, not as one that will stand for centuries more; a future run should re-check before this ships if much time passes, since the whole point of DN's 2025 piece is that the end is expected soon. SOURCES: sv.wikipedia.org/wiki/Kvilleken (itself citing DN 2025, Vimmerby kommun's own tourism page (archived), and Svenska Dagbladet); the official Kalmar county administrative board reserve page (lansstyrelsen.se), fetched directly, which calls it 'Sveriges grovsta ek' (Sweden's stoutest oak) and, in its own words, 'utan tvekan landets mest kanda tradjatte' (without doubt the country's most famous tree giant) -- this counts as the one official-register-equivalent source, since the reserve was designated specifically around this tree. AGE: a rigorous study in the late 1930s dated it to 950 years old, meaning it has since passed 1,000 years and is believed to be Sweden's only millennium-old oak (repeated across Vimmerby kommun's own tourism copy and Wikipedia); I aged it forward to roughly 1,000-1,050 today rather than repeating the 1930s figure as current. SIZE DISAGREEMENT, recorded rather than picked: girth is given as 14m (Lansstyrelsen's own reserve page, the Wikipedia intro, and Vimmerby tourism) but the historical section of the same Wikipedia article gives 'circa 13m' alongside a height of 14m and a volume of about 60 cubic metres -- I used the 14m/1400cm figure since it is the one repeated by the current official reserve page. HISTORY for the writer: first described in print in 1772 by district bailiff Magnus Gabriel Craelius; a scene of Vilgot Sjoman's 1967 film 'I Am Curious (Yellow)' was filmed inside the hollow trunk. CONTAINER: no published city or town is within day-trip range; Vimmerby itself is roughly 25km away and is not a published city, and the tree sits in open farmland near the small village of Rumskulla, reachable only by car. This stands as its own place under the 2026-08-31 single-famous-tree exception; suggested name 'Rumskulla' or 'Kvill Nature Reserve, near Vimmerby'. DESTINATION TEST: PASS. It is nationally famous in Sweden (millennium oak, its own dedicated nature reserve, national newspaper coverage of its decline in 2025, called the country's most famous tree giant by its own government custodian) and people already drive out from Vimmerby and further specifically to see it before it is gone."
+  }
+]

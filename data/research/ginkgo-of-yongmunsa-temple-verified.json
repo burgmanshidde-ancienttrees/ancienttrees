@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ymp_001",
+    "name": "The Ginkgo Tree of Yongmunsa Temple",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 1,100 years",
+    "age_min": 1000,
+    "age_max": 1300,
+    "girth_cm": 1520,
+    "location": {
+      "address": "Yongmunsa, 782 Yongmunsan-ro, Yongmun-myeon, Yangpyeong-gun, Gyeonggi-do, South Korea",
+      "latitude": 37.54972,
+      "longitude": 127.57083,
+      "neighbourhood": "Yongmunsan (Mount Yongmun), Yongmun-myeon, Yangpyeong-gun"
+    },
+    "verified_sources": [
+      "https://ko.wikipedia.org/wiki/%EC%96%91%ED%8F%89_%EC%9A%A9%EB%AC%B8%EC%82%AC_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4",
+      "https://www.gyeonggido-korea.com/2025/11/a-peaceful-fall-getaway-in-korea-1000.html",
+      "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1363100300000"
+    ],
+    "access": "Free entry, open year-round (temple grounds open roughly 08:30 to 17:00-18:00 depending on season per travel-site reporting; not independently confirmed on the temple's own site). Yongmunsa is an active Buddhist temple on public land; the tree stands in the temple courtyard.",
+    "transport": "Yongmun Station (Gyeongui-Jungang Line from Seoul), then a local bus (route 7 / 7-8 towards Yongmunsa) partway up the mountain road, roughly 20-30 minutes; about 2 hours total from central Seoul by public transport, or by car.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "CONFIRMED ALIVE: Gyeonggi Province's own official tourism blog (gyeonggido-korea.com) posted about the tree in November 2025 as a current fall-foliage destination, describing it as still standing and thriving. SOURCES: designated South Korea's Natural Monument No. 30 on 1962-12-07 (originally listed as '용문사의 은행나무', renamed to '양평 용문사 은행나무' in 2008 per Cultural Heritage Administration notice 2008-30), per ko.wikipedia's infobox which cites the Cultural Heritage Administration (heritage.go.kr) designation record directly (Wikidata Q12606443 for coordinates). This counts as the one official-register source; the Gyeonggi-do provincial government blog is the second, independent source. SPECIES: ginkgo (은행나무 = Ginkgo biloba), not in dispute anywhere. AGE/SIZE DISAGREEMENT, recorded rather than smoothed: ko.wikipedia's own two paragraphs disagree with each other, one saying age ~1,100 (as of 2024), height 38.8m, base girth 14m; the other saying age ~1,018, height 38.8m, root girth 15.2m. The Gyeonggi-do government blog and an earlier heritage.go.kr-sourced search snippet both give height 42m and girth 15.2m. Some travel sources cite experts estimating up to 1,300-1,500 years. I used the middle/most-repeated figures (roughly 1,100 years; 15.2m/1520cm girth) and flagged the tree because of this spread rather than picking a winner silently. HISTORY/LORE for the writer: legend says it was planted by Ma-ui Taeja, son of the last king of the Silla dynasty (Gyeongsun), on his way into exile at Geumgangsan after the fall of Silla in 935 CE; a second legend says it grew from the walking staff of the monk Uisang. Local lore holds the tree survived a Japanese army arson attack on the temple during the 1907 Jeongmi Righteous Army uprising while the rest of Yongmunsa burned, and that it 'cries out' before major national events. In the Joseon dynasty, King Sejong (r. 1418-1450) is said to have granted the tree an honorary third-rank court title. It is widely reported (Korean listicles, NamuWiki, Gyeonggi-do tourism) as the tallest and one of the largest ginkgo trees in Korea/Asia, and is a major autumn foliage pilgrimage site (late October to early November). ACCESS: free entry is repeated across multiple Korean travel sources (one page's own title literally reads '입장료 0원' / 'admission fee 0 won') but I could not load any of those pages directly (403s and empty JS shells) to treat as a primary source per the search-summary-is-a-lead rule, so access is corroborated by the search-summary layer only, not by a directly fetched page; flagged for that reason too. CONTAINER: no published city sits within day-trip range; Seoul is roughly 60+ km / about 2 hours away by public transport, well past the 30-minute day-trip boundary, so this does not join Seoul's page. It stands as its own place under the 2026-08-31 single-famous-tree exception. DESTINATION TEST: PASS. This is Natural Monument No. 30, one of the most cited old/tall ginkgo trees in the country, the subject of dedicated government tourism promotion and countless individual travel writeups that treat the tree itself (not the temple, not the mountain) as the reason to go, especially in autumn. Suggested place name: 'Yangpyeong' or 'Yongmunsa Temple, Yangpyeong'."
+  }
+]
