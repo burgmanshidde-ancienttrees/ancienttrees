@@ -1,0 +1,64 @@
+{
+  "city": "Herchies",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Herchies is a village in Hainaut known for one very specific tree: an oak beside a wayside chapel where visitors have been driving nails into the bark for generations, in a folk cure nobody can date the start of. It is one of the last places in Belgium where that custom is still practised in the open, and the tree reached the final six of Belgium's own Tree of the Year contest as recently as 2019.",
+  "meta_description": "The Chene a Clous of Herchies: an oak where a folk healing custom drives nails into the bark, a Belgian Tree of the Year finalist in 2019.",
+  "question_meta": "Herchies' Chene a Clous is an oak studded with nails, driven in by visitors following a still-living folk cure, beside a chapel to Saint Antoine de Padoue.",
+  "question_answer": "The tree in Herchies known as the Chene a Clous, the nail oak, carries a folk healing custom that is still practised today: rub a nail against whatever ails you, then hammer it into the bark, and the illness is said to stay behind in the wood. Thousands of nails now stud the trunk and low branches. It stands along the Sentier des Chats beside a small chapel to Saint Antoine de Padoue, and reached the final six of Belgium's Arbre de l'Annee in 2019.",
+  "question_context": "The oak visitors see today is not the original patient. Sources place the historic tree's death and this one's replanting in 1954, which puts the current oak at roughly 70 years old, young by the usual standard of a tree worth a detour and old by nobody's. What has carried through unbroken is the practice around it: the custom is recognised as Walloon regional heritage since 1985, and the tourist board still lists the site as a point of interest under its old name, chene de Saint-Antoine. The pin here marks the general position along the footpath rather than a surveyed trunk point, because the coordinate comes from a photograph's location rather than a ground survey, so allow a short walk along the Sentier des Chats to actually find the tree among its nails. A similar transfer-the-illness custom shows up at a handful of other European nail trees, but new nails still appear here, and the tree was one of six finalists for Belgium's Arbre de l'Annee in 2019 on the strength of it. Nobody has recorded who drove the first nail, or when the custom began at this spot.",
+  "hero_tree_id": "hrc_001",
+  "oldest_tree_id": "hrc_001",
+  "faq": [
+    {
+      "q": "Why does this oak have nails in it?",
+      "a": "A still-practised folk cure: rub a nail against an ailing body part, then drive it into the bark, and the illness is said to transfer into the tree. Thousands of nails now stud the trunk and branches."
+    },
+    {
+      "q": "Is this the original tree from the legend?",
+      "a": "No. The historic oak died and this one was replanted in 1954, so the tree standing today is around 70 years old. The custom around it is much older."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands along the public Sentier des Chats footpath outside the village, beside a small chapel."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Herchies is a village in Jurbise, Hainaut. There is no station nearby; it is reached on foot or by car from the village centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hrc_001",
+      "name": "The Chene a Clous of Herchies",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 70 years",
+      "age_min": 65,
+      "age_max": 75,
+      "location": {
+        "address": "Sentier des Chats / Rue des Chats, Herchies, Jurbise, Hainaut",
+        "latitude": 50.53777778,
+        "longitude": 3.955,
+        "neighbourhood": "Herchies (Jurbise)"
+      },
+      "story": "Visitors to this oak do not stand back and admire it, they drive a nail into it. Rub the nail against whatever ails you, hammer it into the bark, and the illness is said to stay behind in the wood. Thousands of nails now stud the trunk and low branches, a folk cure old enough that nobody can say who drove the first one. The tree stands beside a small chapel to Saint Antoine de Padoue along the Sentier des Chats outside Herchies, and the whole roadside shrine goes by the name chene de Saint-Antoine locally. What visitors see today is not the original patient: that oak died and this one was replanted in 1954, so at roughly 70 years old it is young by the usual standard of a project like this. What has not changed is the practice, recognised as Walloon regional heritage since 1985 and popular enough that the oak reached the final six of Belgium's 2019 Arbre de l'Annee. The pin here marks the general footpath rather than a surveyed trunk position, so expect a short walk along the Sentier des Chats to actually find it among the nails.",
+      "verified_sources": [
+        "https://www.visitmons.be/la-region-de-mons/jurbise/l-arbre-a-clous-d-herchies-entre-croyances-et-mystere-jurbise",
+        "https://www.rtbf.be/emission/jardins-et-loisirs/detail_le-chene-a-clous-d-herchies-en-lice-pour-l-arbre-belge-de-l-annee?id=10333004",
+        "https://www.patrimoinevivantwalloniebruxelles.be/patrimoines/pratiques/fiche_pratiques/?n=58"
+      ],
+      "access": "Free, along a public footpath (Sentier des Chats) set back from the village; a tourism-board listed point of interest",
+      "transport": "Rural, no station nearby; reached on foot or by car from Jurbise/Herchies village centre",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/0_Herchies_-_Chapelle_St-Antoine_de_Padoue_et_ch%C3%AAne_%C3%A0_clous.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Jean-Pol GRANDMONT, Wikimedia Commons",
+        "status": "approved",
+        "width": 3352,
+        "height": 2240
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "city": "Bioul",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Bioul is a village in Namur known for a single lime, reputed to be the largest small-leaved lime in Belgium, that stands in a grazed field and was named the country's Tree of the Year in 2017. It is a view-from-the-road tree rather than a walk-up-to-the-trunk one, and the road view is the point: maps have marked this exact spot since at least the 15th century.",
+  "meta_description": "The Grand Tilleul of Bioul: Belgium's Tree of the Year 2017, reputed to be the country's largest small-leaved lime, mapped since the 15th century.",
+  "question_meta": "The Grand Tilleul of Bioul is a lime, 21 metres tall and 7 metres round, named Belgium's Tree of the Year in 2017, mapped since the 15th century.",
+  "question_answer": "The Grand Tilleul, also called the tilleul do Vi Payis, stands in a grazed field beside the road it is named after in Bioul. At 21 metres tall and 7 metres round it is reputed to be the largest small-leaved lime in Belgium, and Belgians voted it Tree of the Year in 2017 with 1,701 public votes, sending it on to the European final the following year.",
+  "question_context": "Maps have marked this spot since the 15th century, according to Anhee's own environment alderman, which puts a floor of roughly 400 years under the tree without pinning an exact age. Local memory holds that the field may once have been a sacred site before it was a pasture, a claim recorded here as folklore rather than fact. The street is named Rue du Grand Tilleul after the tree rather than the other way round, which says something about how long this lime has outranked its village. Cows graze right up to the trunk today, kept off it only by a stock fence and a line of electric wire, so this is a tree to view from the roadside rather than walk up to. That distance has not hurt its reputation: the 2017 Tree of the Year title came with a 2,500 euro prize, and it went on to represent Belgium at the European final in 2018.",
+  "hero_tree_id": "bio_001",
+  "oldest_tree_id": "bio_001",
+  "faq": [
+    {
+      "q": "Can I walk up to the trunk?",
+      "a": "No. The tree stands in a grazed field behind a stock fence and electric wire. It is a view-from-the-road tree, unmistakable from Rue du Grand Tilleul."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Maps have marked this spot since the 15th century, which puts a floor of roughly 400 years under the tree, though no precise age has been measured."
+    },
+    {
+      "q": "Is it really Belgium's largest lime?",
+      "a": "It is reputed to be the largest small-leaved lime in the country, at 21 metres tall and 7 metres round."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Bioul is a village in Anhee, Namur province. There is no station; it is reached by road from Anhee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bio_001",
+      "name": "The Grand Tilleul of Bioul",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "over 400 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 700,
+      "location": {
+        "address": "Rue du Grand Tilleul, Bioul, Anhee, Namur",
+        "latitude": 50.33406,
+        "longitude": 4.78492,
+        "neighbourhood": "Bioul (Anhee)"
+      },
+      "story": "Cows graze right up to this lime, kept off the trunk itself only by a stock fence and a line of electric wire, which is why the Grand Tilleul of Bioul is a tree you view from the road rather than walk up to. That has not stopped Belgium naming it Tree of the Year in 2017, with 1,701 public votes and a 2,500 euro prize, and sending it on to represent the country at the European final the year after. At 21 metres tall and 7 metres round, it is reputed to be the largest small-leaved lime in the country. Maps have marked this spot since the 15th century, according to Anhee's own environment alderman, which puts a floor of roughly 400 years under the tree without pinning an exact one. Local memory holds that the field may once have been a sacred site before it was a pasture, a claim this project records as folklore rather than fact. The street here is named Rue du Grand Tilleul after the tree rather than the other way round, which is as good a sign as any of how long this particular lime has outranked its village. Look for it from the roadside; the fence around it is part of the point, not an obstacle to complain about.",
+      "verified_sources": [
+        "https://www.rtbf.be/info/regions/namur/detail_le-tilleul-du-vi-pays-a-bioul-designe-arbre-de-l-annee-2017?id=9734214",
+        "https://www.lalibre.be/belgique/voici-ce-que-le-tilleul-do-vi-payis-de-bioul-a-de-particulier-5a70d023cd70f924c7bf64d3",
+        "https://www.monumentaltrees.com/fr/bel/namur/anhee/1105_ruedugrandtilleul/"
+      ],
+      "access": "Visible from the public road (Rue du Grand Tilleul); stands in a grazed field behind a stock fence/electric wire, so the trunk itself is not walked up to, but the tree is unmistakable from the roadside",
+      "transport": "Rural village; no station, reached by road from Anhee/Bioul",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Bioul_AR1aJPG.jpg",
+        "license": "CC BY 2.5",
+        "attribution": "Jean-Pol GRANDMONT, Wikimedia Commons",
+        "status": "approved",
+        "width": 1650,
+        "height": 1100
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

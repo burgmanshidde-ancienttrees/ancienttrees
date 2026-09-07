@@ -1,0 +1,64 @@
+{
+  "city": "Westerlo",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Westerlo is a small town in Antwerp province built around a market square whose lime tree was trained flat, its crown grown into a disc on an iron frame, one of only a handful of such trees still protected in Flanders. It has stood there since around 1630, on the exact spot where the town's old market hall once stood before it burned down.",
+  "meta_description": "The Etagelinde of Westerlo: a lime trained flat into a disc-shaped crown on an iron frame, standing on the town's market square since around 1630.",
+  "question_meta": "The Etagelinde of Westerlo is a lime trained flat into a disc-shaped crown on a cast-iron frame, standing on the Grote Markt since around 1630.",
+  "question_answer": "The lime on Westerlo's Grote Markt was trained flat rather than left to grow into a dome. Its crown spreads out as a disc, held up by a cast-iron framework designed by Pieter Jozef Taeymans, and Flanders protects only a handful of such etagelindes, or tabletop limes. It has stood on the site of a burned-down medieval market hall since around 1630, trunk 3.9 metres round and its canopy 18 metres across.",
+  "question_context": "Four centuries of pruning are the real craft on display here: nobody grows a tree into a flat disc by accident, and the shape is only kept by continual training against the ironwork built to hold it. That ironwork has itself needed replacing once, in 1871. The tree stands on the site of a medieval market hall that burned down in the late 16th century, and a dairy market was traditionally held in its shade afterwards. Flanders protected the tree as landscape in 1951 and raised it to monument status in 1981, and Westerlo's own tourism office still points to it as a sight worth the detour rather than ordinary street furniture. It stands free in the middle of town, with no gate and no ticket, on the same square as the rest of daily life in Westerlo. Flanders protects only a handful of these trained tabletop limes, which makes the Grote Markt one of a short list of places where the practice still survives on a living tree.",
+  "hero_tree_id": "wtl_001",
+  "oldest_tree_id": "wtl_001",
+  "faq": [
+    {
+      "q": "What does 'trained flat' mean?",
+      "a": "Rather than growing into a natural dome, the crown has been pruned for centuries into a wide, flat disc, held in shape by a cast-iron framework built beneath it."
+    },
+    {
+      "q": "How old is it?",
+      "a": "It has stood on the Grote Markt since around 1630, making it roughly four centuries old."
+    },
+    {
+      "q": "Is it protected?",
+      "a": "Yes. Flanders protected it as landscape in 1951 and raised it to monument status in 1981. It is one of only a handful of such trained tabletop limes still standing in Flanders."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on Westerlo's Grote Markt, in the middle of town."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wtl_001",
+      "name": "The Etagelinde of Westerlo",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 400 years",
+      "age_min": 380,
+      "age_max": 420,
+      "girth_cm": 390,
+      "location": {
+        "address": "Grote Markt, Westerlo, Antwerp province",
+        "latitude": 51.08658,
+        "longitude": 4.91674,
+        "neighbourhood": "Westerlo town centre"
+      },
+      "story": "This lime was trained flat. Its crown grows as a disc rather than a dome, spread out and held up by a cast-iron framework designed by Pieter Jozef Taeymans, and Flanders protects only a handful of such etagelindes, trained tabletop limes, of which this is one. It has stood on Westerlo's Grote Markt since around 1630, on the site of a medieval market hall that burned down in the late 16th century, and a dairy market was traditionally held in its shade. The trunk measures 3.9 metres round and the disc-shaped canopy spans 18 metres, wide enough to shelter most of the old market square beneath it. Flanders protected it as landscape in 1951 and raised it to monument status in 1981, and Westerlo's own tourism office still points to it as a sight worth the detour rather than mere street furniture. Four centuries of pruning are the real craft on display here: nobody grows a tree into a flat disc by accident, and the ironwork holding the shape up has itself needed replacing once, in 1871. It stands free in the middle of town, no gate and no ticket, the easiest kind of remarkable tree there is to actually reach.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/7199",
+        "https://www.westerlo.be/nl/parel-van-de-kempen/westerlo/lindeboom-grote-markt"
+      ],
+      "access": "Free, stands on the public Grote Markt (market square) in the middle of town",
+      "transport": "Westerlo town centre; reached on foot from any point in the small town, no station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Etagelinde_met_oorlogmonument_-_390541_-_onroerenderfgoed.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Koen Berwaerts, Wikimedia Commons",
+        "status": "approved",
+        "width": 4608,
+        "height": 3456
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
