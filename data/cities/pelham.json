@@ -1,0 +1,66 @@
+{
+  "city": "Pelham",
+  "country": "Canada",
+  "status": "needs_curation",
+  "intro": "Pelham gave over an entire conservation area to one tree. The Comfort Maple, reckoned the oldest sugar maple in Canada and possibly the oldest tree of any species in Ontario, stands alone in a small park the Niagara Peninsula Conservation Authority runs for its sake. Roughly six metres round at the base and centuries old by growth-rate estimate rather than a ring count, it has survived at least one lightning strike and carries the scars, plus guy wires holding up its heavier limbs, and a conservation authority watching over what happens next.",
+  "meta_description": "The Comfort Maple, reckoned the oldest sugar maple in Canada, stands alone in a conservation area named for it near Fenwick, Ontario.",
+  "question_meta": "The Comfort Maple, a roughly 400-500 year old sugar maple near Fenwick, Ontario, is the tree Pelham built a park around.",
+  "question_answer": "Pelham's remarkable tree is the Comfort Maple, a sugar maple standing in the Comfort Maple Conservation Area near Fenwick, in North Pelham, Ontario. It measures about six metres round at the base, and the Ontario Forestry Association estimates its age at 400 to 500 years, widely reckoned the oldest sugar maple in Canada.",
+  "question_context": "The estimate comes from the Ontario Forestry Association, which put the maple at 400 to 500 years old in 1975 and has separately floated a figure as high as 541; nobody has counted its rings, since coring a tree this old would damage it, so the number stays a deliberately wide estimate. What has actually been measured is its size: about 24 metres tall, six metres round at the base, and a crown spreading close to 38 metres. The Comfort family held the land around it from 1816 and, for 145 years, the tree survived mainly because they left it standing; Edna Eleanor Comfort signed the property over to the Niagara Peninsula Conservation Authority on 30 April 1961, and Ontario listed the tree as a heritage tree in June 2000. It has not stayed pristine: lightning has struck it at least once, old wounds carry brick and concrete fill, and guy wires now take the weight of its heavier limbs. A certified arborist's assessment commissioned by the conservation authority calls it fair in structure and health, in slow decline consistent with its age, and manageable for continued retention.",
+  "hero_tree_id": "pel_001",
+  "oldest_tree_id": "pel_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree at Pelham?",
+      "a": "The Comfort Maple, a sugar maple in the Comfort Maple Conservation Area near Fenwick, in North Pelham, Ontario, widely reckoned the oldest sugar maple in Canada."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The Niagara Peninsula Conservation Authority runs the site as a small park built around this one tree, open year-round, sunrise to sunset, with no fee."
+    },
+    {
+      "q": "How old is the Comfort Maple really?",
+      "a": "Nobody has counted its rings, since coring a tree this size would damage it. The Ontario Forestry Association's 1975 estimate puts it at 400 to 500 years, with a higher figure of 541 also cited; either way it predates Ontario becoming a province in 1867."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pel_001",
+      "name": "The Comfort Maple",
+      "species": "Sugar Maple (Acer saccharum)",
+      "age_estimate": "roughly 400-500 years",
+      "age_min": 400,
+      "age_max": 541,
+      "girth_cm": 600,
+      "location": {
+        "address": "Comfort Maple Conservation Area, 636 Metler Rd, Fenwick (North Pelham), Ontario L0S 1C0, Canada",
+        "latitude": 43.059117,
+        "longitude": -79.345263,
+        "neighbourhood": "North Pelham / Fenwick, Niagara region"
+      },
+      "story": "Ontario built a conservation area around one tree, and this is the tree. The Comfort Maple is widely reckoned the oldest sugar maple in Canada and possibly the oldest tree of any species in the province. The Ontario Forestry Association put it at 400 to 500 years old in 1975 and has separately floated a figure as high as 541, but nobody has counted the rings: coring a living tree of this age damages it, so the number stays an estimate and a deliberately wide one. What has actually been measured is the size. Roughly 24 metres tall, six metres around at the base, a crown spreading close to 38 metres.\n\nThe Comfort family held the land around it from 1816, and for 145 years the tree survived mainly because they left it standing. Edna Eleanor Comfort signed it over to the Niagara Peninsula Conservation Authority on 30 April 1961. Ontario listed it as a heritage tree in June 2000.\n\nDo not expect it to look pristine. Lightning has struck it at least once, old wounds carry brick and concrete fill, and guy wires take the weight of the heavier limbs. A certified arborist's assessment commissioned by the conservation authority calls it fair in structure and health, in slow decline consistent with its age, and manageable for continued retention. That is a tree under professional watch rather than one being written off.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Comfort_Maple",
+        "https://npca.ca/parks-recreation/conservation-areas/comfort-maple",
+        "https://www.pelhamtoday.ca/local-news/concern-over-comfort-maple-decline-6348032"
+      ],
+      "access": "Free, year-round, sunrise to sunset. A small conservation area (a single-tree park, basically) run by the Niagara Peninsula Conservation Authority, with parking on site. No gate, no fee, no permission needed.",
+      "transport": "Rural site off Metler Road near Fenwick/North Pelham; no transit stop nearby, reached by car. Roughly 1.5 hours' drive from Toronto or 20-25 minutes from St. Catharines/Welland.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Comfort_Maple_00.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Mac Armstrong, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2816,
+        "height": 2112
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [10],
+        "kind": "autumn colour",
+        "label": "October, when a sugar maple this size turns the whole field orange"
+      }
+    }
+  ]
+}

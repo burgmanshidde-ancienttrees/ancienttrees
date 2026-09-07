@@ -1,0 +1,62 @@
+{
+  "city": "Itoshiro",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Itoshiro built 420 steps up a mountainside for one cedar. The Itoshiro Osugi is the only tree in Gifu Prefecture holding Japan's highest heritage tier, Special National Natural Monument, granted in 1957 after a lesser designation in 1924. Tradition puts its age past 1,800 years and credits the priest Taicho, who opened nearby Mount Hakusan to religious practice, with planting it as a walking staff. Half its trunk has died back; the other half, still green at 25 metres, is what the climb is for.",
+  "meta_description": "The Itoshiro Osugi, a roughly 1,800-year-old cedar reached by 420 steps up a mountainside in Gujo, Gifu, holds Japan's highest heritage tier.",
+  "question_meta": "Itoshiro's remarkable tree is the Itoshiro Osugi, a Special National Natural Monument cedar reached by a 420-step mountain trail.",
+  "question_answer": "Itoshiro's remarkable tree is the Itoshiro Osugi (Itoshiro no Osugi), a Japanese cedar standing beside the Mino Zenjo-do pilgrim trail in Itoshiro, Gujo, Gifu Prefecture. Its trunk measures roughly 13 to 14 metres round, and tradition puts its age at over 1,800 years, making it the only tree in Gifu Prefecture designated a Special National Natural Monument.",
+  "question_context": "Japan first protected the tree as a National Natural Monument on 9 December 1924 and raised it to Special National Natural Monument, the country's highest tier, on 2 July 1957. The age, cited everywhere as over 1,800 years by the prefectural tourism board, Wikipedia and Wikidata alike, rests on tradition rather than a documented dating method, so it is read here as the figure everyone repeats rather than a measurement. Girth is put at 14 metres by most sources and 13.1 by the sign at its own base; either way it is among the widest cedars in Japan. Legend credits the priest Taicho, who opened Mount Hakusan to religious practice, with planting his walking staff here and leaving it to grow; the tree still stands on the Mino Zenjo-do, the ascetic pilgrim route up the mountain. One side of the trunk has died back while the other stays green and running the full 25 metres, ordinary in cedars this old. The approach is 420 stone and concrete steps from a car park near Hakusan Chukyo Shrine, with no fee and no gate; the forest access road has closed at times for landslides, worth checking before travelling.",
+  "hero_tree_id": "ita_001",
+  "oldest_tree_id": "ita_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree at Itoshiro?",
+      "a": "The Itoshiro Osugi, a Japanese cedar beside the Mino Zenjo-do pilgrim trail in Itoshiro, Gujo, Gifu Prefecture, the only tree in the prefecture holding Special National Natural Monument status."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no entry fee or gate, only a maintained path of 420 steps from a car park near Hakusan Chukyo Shrine. Check the forest access road's condition before travelling, since landslides and fallen trees have closed it at times."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes, though not evenly. One side of the trunk has died back while the other remains green and growing, a pattern that is ordinary in cedars this old."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ita_001",
+      "name": "Itoshiro no Ōsugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 1,800 years",
+      "age_min": 1500,
+      "age_max": 1900,
+      "girth_cm": 1400,
+      "location": {
+        "address": "Itoshiro, Shirotori-cho, Gujo, Gifu Prefecture, Japan (within Hakusan National Park, on the Mino Zenjo-do pilgrim trail)",
+        "latitude": 36.03375,
+        "longitude": 136.760972,
+        "neighbourhood": "Itoshiro"
+      },
+      "story": "Somebody laid 420 steps up a mountainside so that people could reach one tree. They end at the Itoshiro cedar, a Japanese cedar of about 14 metres round, although the sign at its foot says 13.1, and the only tree in Gifu Prefecture holding Japan's highest heritage tier. It was made a National Natural Monument on 9 December 1924 and promoted to Special National Natural Monument in July 1957.\n\nIts age is given everywhere as over 1,800 years, by the prefectural tourism board, by Wikipedia, by Wikidata, and no source names a dating method, so take it as the figure everyone repeats rather than as a measurement. The legend is more precise than the arithmetic: the priest Taicho, who opened Mount Hakusan to religious practice, is said to have planted his walking staff here and left it to grow. The tree stands on the Mino Zenjo-do, the ascetic route up Hakusan, so for centuries the people who passed it were on their way somewhere else.\n\nHalf of it is dead. One side of the trunk has died back and the other has not, which is ordinary in cedars this old and is what makes the living half worth the climb, green and running the full 25 metres.\n\nThe approach from the car park by Hakusan Chukyo shrine is 300 metres and 90 vertical, and there is no fee and no gate. Check the forest road before you set out, because landslides and fallen trees have closed it.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%BE%B9%E7%99%BD%E3%81%AE%E5%A4%A7%E6%9D%89",
+        "https://www.wikidata.org/wiki/Q11586523",
+        "https://www.kankou-gifu.jp/spot/detail_3492.html",
+        "https://journeytotrees.com/2023/01/21/kyoju112/"
+      ],
+      "access": "Free, public. Reached by a maintained hiking path with 420 stone/concrete steps from a parking area near Hakusan Chukyo Shrine, about 300m distance and 90m elevation gain; roughly a 2-hour approach including the drive/bus from Mino-Shirotori. No entry fee or gate. Note: as of 2025 the forest access road to the trailhead has had closures from fallen trees and landslides, restricting general access at times; check current road status before travelling.",
+      "transport": "Nearest station Mino-Shirotori (Nagaragawa Railway), then bus/drive roughly 50 minutes to Itoshiro, then the 300m/420-step trail on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Itoshiro_no_%C5%8Dsugi.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Alpsdake, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3456,
+        "height": 5184
+      }
+    }
+  ]
+}

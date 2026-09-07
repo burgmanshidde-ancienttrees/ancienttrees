@@ -380,7 +380,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.19,
       "nearest_ours": "utr_002 The Oude Hortus Ginkgo (Utrecht)",
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Dead. bomenbieb's alive_per_source (Ja) is stale: RTV Utrecht and UStad (2026) report the original 184-year-old tree behind the Centraal Museum died of Dutch elm disease in 2022; only the stump and three young 2022+ cuttings remain. Never ships as an entry."
     },
     {
       "name": "hollandse iepen utrecht",
@@ -424,9 +425,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 0.44,
       "nearest_ours": "apd_005 The Copper Beech by the Pond (Apeldoorn)",
-      "status": "lead",
+      "status": "duplicate",
       "species": "Alder (Alnus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Identical location (0m) and species (zwarte-els = Black Alder) as already-published apd_010 The Black Alder of the Sculpture Garden (Apeldoorn), shipped 2026-09-06 from this same lead pile. nearest_ours_km was stale (computed before apd_010 existed)."
     },
     {
       "name": "pluimiep leeuwarden",
@@ -998,7 +1000,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 10.72,
       "nearest_ours": "utr_020 The Oriental Plane of Van Asch van Wijckskade (Utrecht)",
-      "status": "lead"
+      "status": "duplicate",
+      "reason": "Identical location (0m) and species (hollandse-linde) as already-published bkl_001 The Limes of Kasteel Nijenrode (Breukelen), shipped 2026-09-06 from this same lead pile. nearest_ours_km was stale (computed before bkl_001 existed)."
     },
     {
       "name": "marshavenpopulier zutphen",

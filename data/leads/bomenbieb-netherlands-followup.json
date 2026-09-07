@@ -1,0 +1,14 @@
+{
+  "country": "Netherlands",
+  "source": "bomenbieb.nl, verification pass on the batch of 18 nearest-to-published-city candidates, 2026-09-07",
+  "note": "Candidates that failed only on evidence or count (leads), or that must never ship (blocked), from the 18-item batch assigned this pass. See data/leads/_bomenbieb-netherlands.json for the full 45-lead shelf; that file's own leads/blocked lists are untouched by this pass except for status flips on the 18 attempted.",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "duiveltjesiep utrecht",
+      "source": "https://bomenbieb.nl/bijzondere-bomen/duiveltjesiep-utrecht/",
+      "place": "Utrecht",
+      "reason": "Dead. bomenbieb records alive_per_source Ja but this is stale: RTV Utrecht (2026) and UStad report the original 184-year-old duiveltjesiep behind the Centraal Museum died of Dutch elm disease in 2022; the trunk was left standing for insects/birds/fungi and three cuttings were replanted (two in Amelisweerd, one near the stump), none of which is the same collectible specimen. Never ships as this entry. The replanted cuttings are too young (2022 or later) to qualify on their own merit; not pursued further this pass."
+    }
+  ]
+}
