@@ -2,6 +2,55 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 (continuation 3) - Milan verify pass: 0 new (supply fully mined); Nara reader sightings processed, one photo held, deeper research dispatched
+
+Resumed a window a still earlier, unlogged attempt had stopped after 48
+minutes with 5 trees already shipped elsewhere and 72 of 120 minutes
+unspent. `passcheck.py --claims` showed two standing claims from that
+attempt, both verify passes claimed but never delivered: milan (empty
+delivery file) and prague (delivery file present but empty, `[]`).
+`leads.py --ready` had only the 1 Voorburg elm already known to be below
+the no-pass-under-six floor. Dispatched verify agents on both claimed
+cities per their passcheck briefs.
+
+**Milan: 0 new trees, and it is a real answer, not a stall.** All 14
+register candidates within reach of the walk were cross-matched against
+the live city file, the leads file and the blocked list: every one
+already published, already blocked (Villa Belgiojoso's children-only
+garden), or the one known single-source lead (a 625cm Montanelli plane).
+A fresh attempt to find a second source for that plane via RAMI
+(ilregistrodeglialberi.it) traced the record's own AMI code back to a
+*different*, already-published Milan plane, so it stays a lead. Milan's
+near-centre register supply is genuinely exhausted; logged to
+`data/agent-costs.json`, claim released.
+
+**Reader sightings: Hidde walked Nara this morning and used the app's
+own "add a tree" flow repeatedly.** `sightings_inbox.py` picked up 1
+photo queued against an existing tree (a second photo of nra_010, the
+Roben-sugi) and 6 fresh leads with no match in `data/cities`.
+Downloaded every photo from the private bucket and looked at the pixels
+before deciding anything, per the Cadiz standard:
+
+- The second nra_010 photo shows a much thicker, deeply furrowed,
+  steel-propped trunk than a photo of a ~60-year-old 1967 replacement
+  tree would suggest, and it cannot be confirmed as the same specimen
+  as the currently-approved photo without more evidence. Held rather
+  than swapped in (`sightings_publish.py`, verdict recorded).
+- Visual triage of the remaining leads found at least 3-4 genuinely
+  distinct large trees Hidde photographed nowhere near each other
+  (a large cedar by a small shrine ~99m from nra_010, another leaning
+  cedar by a gravel road, and what looks like a row of large trees
+  along a temple precinct wall near central Nara/Kofuku-ji), plus one
+  distant meadow view too far to read. None are register candidates,
+  so a normal verify pass cannot place them: dispatched a research
+  agent with the photos and my visual notes to identify and verify
+  what it can, deliver to
+  `data/research/nara-sightings-verified.json`. Result not in yet.
+
+Nothing committed to a city file yet; this entry covers the processing
+so far. See the next entry(ies) for what the Prague and Nara passes
+returned. Nothing FOR HIDDE.
+
 ## 2026-09-07 (continuation 2) - Merged a stranded write pass: Deventer +1, The Hague +1, Kasukabe and Aguas de Moura new (single-famous-tree), plus 2 photo approvals
 
 A prior attempt in this same window had already claimed and finished a
