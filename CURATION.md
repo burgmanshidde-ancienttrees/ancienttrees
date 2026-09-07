@@ -2,6 +2,46 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 (continuation 2) - Merged a stranded write pass: Deventer +1, The Hague +1, Kasukabe and Aguas de Moura new (single-famous-tree), plus 2 photo approvals
+
+A prior attempt in this same window had already claimed and finished a
+write-stories pass on 5 targets (`the-hague`, `deventer`, `rumskulla`,
+`kasukabe`, `aguas-de-moura`), and a photo-judge viewing pass on 18
+photo-less cities, but stopped after 24 minutes without committing
+either. `passcheck.py --claims` showed the 5 claims still standing
+(133 min left); `git status` showed the actual finished output sitting
+uncommitted: 2 new single-tree city files, 2 existing cities each +1
+tree, and 2 approved photographs already vendored into
+`data/cities/*.json`. Verified each city file (word counts, sources,
+`location_precision`) before trusting it, ran `preflight.py` (0
+problems) and a full `astro build` + `qa.py` (had to rebuild once,
+because `vendor_photos.py` had written the two new photo files into
+`site/public/photos` mid-build and the first build had already copied
+`public/` before they landed; second build picked them up, QA passed
+clean at 7488 pages).
+
+- **Deventer +1** (dev_009): The White Willow of Wilp, from the
+  Bomenbieb Netherlands register.
+- **The Hague +1** (hag_033): The Wych Elm of Park Middenburg, same
+  register.
+- **Kasukabe, Japan** (new, ksk_001, single-famous-tree exception):
+  Ushijima no Fuji, the Great Wisteria of Ushijima, Japan's only
+  wisteria at Special National Natural Monument rank, roughly 1,200
+  years old. The garden built around it opens only mid-April to
+  early May.
+- **Aguas de Moura, Portugal** (new, agm_001, single-famous-tree
+  exception): the Whistler Cork Oak (Sobreiro Assobiador).
+- **Rumskulla, Sweden** (new, rkm_001, single-famous-tree exception):
+  Rumskullaeken, the Kvill Oak.
+- Photo-judge viewing pass approved 2 of 47 candidates viewed as pixels:
+  the Molkenkur linden in Heidelberg (hei_001, CC BY-SA 4.0) and the
+  Olive of San Martin de Porres in Lima (lim_002, CC BY-SA 4.0, the
+  city's longest-lived tree, previously photo-less).
+
+Released all 5 claims after merging. `city_queue.py` re-run to fold the
+two new cities into CITY_QUEUE.md and city-list.json (now 247 entries).
+Nothing flagged for Hidde.
+
 ## 2026-09-07 (continuation) - Finished 4 stranded write-story passes: Pelham, Itoshiro, Yangpyeong ship; Osaka +1
 
 An earlier attempt this window stopped after 14 minutes having shipped

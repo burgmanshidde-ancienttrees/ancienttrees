@@ -1,0 +1,63 @@
+{
+  "city": "Rumskulla",
+  "country": "Sweden",
+  "status": "needs_curation",
+  "intro": "Rumskulla maps one tree, and it is dying. The Kvill Oak is roughly a thousand years old, the only Swedish oak known to have passed that mark, hollow, cabled since the 1950s, and in July 2025 the national paper Dagens Nyheter reported that despite years of rescue work the end is near. The Swedish state built a small nature reserve around it in 2008 for exactly this reason. Free, open under Sweden's right of public access, reached by a signposted rural road near Vimmerby.",
+  "meta_description": "The Kvill Oak near Rumskulla: Sweden's only known thousand-year-old oak, dying, free to visit in its own nature reserve.",
+  "question_meta": "Rumskulla's only mapped tree is the Kvill Oak, Sweden's stoutest and oldest known oak at roughly 1,000 years, now dying despite decades of rescue work.",
+  "question_answer": "Rumskulla's only mapped tree is Rumskullaeken, the Kvill Oak, standing inside Kvills naturreservat near the village of Rumskulla in Smaland. A study in the late 1930s dated it to 950 years old, making it the only Swedish oak known to have passed a thousand years, and the Kalmar county administration calls it the stoutest oak in the country at roughly 14 metres round. It is free to visit, reached by road via Rumskulla and Venzelholm.",
+  "question_context": "The tree is dying. Swedish sources say so plainly rather than softening it: Dagens Nyheter, the national paper, reported in July 2025 that despite steel cabling since the 1950s (renewed in 2012) and years of expert rescue work, the oak's end is expected soon, with only a single leafing branch left by the summer of that year. It was already old when Gustav Vasa became king in 1523; a district bailiff wrote the first printed description of it in 1772; Vilgot Sjoman filmed a scene of I Am Curious (Yellow) inside its hollow trunk in 1967; and in 2005 somebody cut through its supporting bands, believing they were harming the tree rather than holding it together. The Swedish state created a nature reserve around it in 2008 specifically to protect it, with a marked path from a small car park. Its girth is given as roughly 14 metres by the county's own reserve page and roughly 13 metres in the historical section of its own Wikipedia article; that gap is not resolved here.",
+  "hero_tree_id": "rkm_001",
+  "oldest_tree_id": "rkm_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Rumskulla?",
+      "a": "The Kvill Oak (Rumskullaeken), the only mapped tree here, at roughly 1,000 years old, the only Swedish oak known to have passed the millennium."
+    },
+    {
+      "q": "Is the Kvill Oak still alive?",
+      "a": "Yes, but it is dying. In July 2025 the national paper Dagens Nyheter reported that despite decades of rescue work, including steel cables since the 1950s, the tree's end is expected soon. As of that report at least one branch still carried leaves."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands inside Kvills naturreservat, a small public nature reserve created around it in 2008, open under Sweden's right of public access (allemansratten) with no tickets or hours."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "No public transport reaches the reserve. It is a rural car destination, reached by road from Vimmerby or Mariannelund via the village of Rumskulla and Venzelholm, where a signposted turn leads to a small car park beside the reserve."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rkm_001",
+      "name": "Rumskullaeken (the Kvill Oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 950,
+      "age_max": 1100,
+      "girth_cm": 1400,
+      "location": {
+        "address": "Kvills naturreservat, near Rumskulla, Vimmerby kommun, Smaland, Sweden",
+        "latitude": 57.73472,
+        "longitude": 15.62889,
+        "neighbourhood": "Kvill nature reserve, Rumskulla parish"
+      },
+      "story": "In the summer of 2025, one branch of Sweden's most famous oak still carried leaves. That is now the measure of it. The Kvill Oak is hollow, cabled and roughly a thousand years old, and it is dying. Swedish sources say so plainly, and the national paper Dagens Nyheter went out in July 2025 to report that the end is near despite years of rescue work and expert help.\n\nA careful study in the late 1930s put it at 950 years, which makes it the only Swedish oak known to have passed the millennium, and the county administration calls it the stoutest oak in the country at about 14 metres round. The historical section of its own Swedish Wikipedia article says roughly 13 metres instead. Nobody has settled that, and at this size the gap is a tape measure and where you hold it.\n\nIt was already old when Gustav Vasa took the throne in 1523. A district bailiff, Magnus Gabriel Craelius, wrote the first printed description of it in 1772. Steel bands have held the splitting crown together since the 1950s, renewed in 2012, and in 2005 somebody cut them through, convinced they were hurting the tree. Climbing it was banned in 1998. Vilgot Sjoman shot a scene of I Am Curious (Yellow) inside the hollow trunk in 1967. The state drew a nature reserve around it in 2008. People drive out from Vimmerby to stand in front of it while it is still there.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Kvilleken",
+        "https://www.lansstyrelsen.se/kalmar/besoksmal/naturreservat/kvill.html",
+        "https://www.dn.se/sverige/hopplos-kamp-for-att-radda-sveriges-storsta-ek/"
+      ],
+      "access": "Free. Stands inside Kvills naturreservat, a small public nature reserve the Swedish state (via Naturvardsverket / the Kalmar county administrative board) created around the tree in 2008 specifically to protect it. A marked path (Vandringsled) leads from a car park to the tree; open access under Sweden's right of public access (allemansratten), no tickets or hours.",
+      "transport": "No public transport reaches the reserve directly; it is a rural car destination, reached by road from Vimmerby or Mariannelund via the village of Rumskulla and Venzelholm, where a signposted turn marks the way to a small car park beside the reserve.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

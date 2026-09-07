@@ -238,7 +238,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 41 | Oahu | 15.97 | - | 11 | 1 | - | 160 | 20 | measured |
 | 42 | Porto | 11.98 | 120,415 | 27 | 14 | 2 | 40 | 20 | measured |
 | 43 | Utrecht | 11.69 | 67,963 | 33 | 4 | 2 | 345 | 20 | measured |
-| 44 | The Hague | 11.41 | 236,723 | 30 | 1 | 5 | 166 | 20 | measured |
+| 44 | The Hague | 11.41 | 236,723 | 31 | 1 | 5 | 167 | 20 | measured |
 | 45 | Jacksonville | 22.76 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 46 | Krakow | 15.12 | 140,824 | 34 | 3 | 3 | 198 | 30 | measured |
 | 47 | Chicago | 21.68 | 485,769 | 6 | - | - | - | 30 | measured |
@@ -349,7 +349,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 152 | Mexico City | 7.27 | 566,583 | 9 | 1 | - | - | 30 | measured |
 | 153 | Sapporo | 5.13 | 88,633 | 6 | - | - | - | 20 | measured |
 | 154 | Minneapolis | 7.53 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 155 | Osaka | 4.85 | 163,112 | 5 | 1 | - | - | 30 | measured |
+| 155 | Osaka | 4.85 | 163,112 | 6 | 1 | - | - | 30 | measured |
 | 156 | Oxford | 7.42 | 111,583 | 5 | 1 | 1 | - | 20 | measured |
 | 157 | Washington DC | 6.85 | 606,731 | 14 | 1 | 2 | - | 20 | measured |
 | 158 | Luang Prabang | 7.49 | 24,534 | - | - | - | - | 10 | predicted (travel demand) |
@@ -537,7 +537,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 340 | Ghent | 1.14 | 82,757 | 6 | 1 | 1 | - | 20 | measured |
 | 341 | Evora | 0.78 | 15,345 | - | - | - | - | 10 | predicted (travel demand) |
 | 342 | Beijing | 1.14 | 269,737 | 7 | - | - | - | 30 | measured |
-| 343 | Deventer | 0.57 | - | 8 | - | 1 | 213 | 20 | measured |
+| 343 | Deventer | 0.57 | - | 9 | - | 1 | 214 | 20 | measured |
 | 344 | Liverpool | 1.14 | 248,189 | 2 | - | - | - | 20 | measured |
 | 345 | San Diego | 1.14 | 214,939 | 4 | - | 1 | - | 20 | measured |
 | 346 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
@@ -551,7 +551,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 354 | Taipei | 0.86 | 143,193 | 4 | - | - | - | 30 | measured |
 | 355 | Ibiza | 0.46 | - | 1 | - | - | 4 | 10 | published, never ranked (may be uncrawled) |
 | 356 | Rouen | 0.57 | 72,334 | 12 | - | 1 | 6 | 20 | measured |
-| 357 | Lima | 0.51 | 132,792 | 5 | - | 1 | - | 10 | published, never ranked (may be uncrawled) |
+| 357 | Lima | 0.51 | 132,792 | 5 | 1 | 1 | - | 10 | published, never ranked (may be uncrawled) |
 | 358 | Leuven | 0.57 | 40,645 | 4 | - | - | - | 20 | measured |
 | 359 | Split | 0.57 | 132,399 | 4 | - | 1 | - | 20 | measured |
 | 360 | Phoenix | 0.55 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -560,7 +560,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 363 | Ferrara | 0.21 | 27,490 | 5 | 1 | 1 | 7 | 10 | published, never ranked (may be uncrawled) |
 | 364 | Toledo | 0.24 | 3,149 | - | - | - | - | 10 | predicted (travel demand) |
 | 365 | Bamberg | 0.29 | 28,716 | 5 | 3 | 1 | 10 | 20 | measured |
-| 366 | Heidelberg | 0.29 | 75,837 | 6 | - | 1 | - | 20 | measured |
+| 366 | Heidelberg | 0.29 | 75,837 | 6 | 1 | 1 | - | 20 | measured |
 | 367 | Hamburg | 0.29 | 191,221 | 6 | 1 | 1 | - | 30 | measured |
 | 368 | Freiburg | 0.29 | 92,752 | 7 | 1 | 1 | - | 20 | measured |
 | 369 | Bucharest | 0.29 | 136,836 | 4 | - | 1 | - | 20 | measured |

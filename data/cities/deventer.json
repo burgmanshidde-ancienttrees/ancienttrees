@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "The occupying French cut down the trees in Deventer's park across the river, and in 1822 the city planted it again. Most of the oaks, beeches and planes in the Worpplantsoen today are from that replanting, which makes the whole park a piece of restitution you can walk through. It is one of the oldest city parks in the Netherlands. The oldest tree is elsewhere: a lime at Diepenveen said to date from 1614, used as a lookout by Cossacks fighting the French in 1813.",
-  "meta_description": "Eight remarkable trees in Deventer: a lime the Cossacks watched from in 1813, and a park replanted in 1822 after the French felled everything in it.",
-  "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and seven more worth the walk.",
+  "meta_description": "Nine remarkable trees in Deventer: a lime the Cossacks watched from in 1813, and a park replanted in 1822 after the French felled everything in it.",
+  "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and eight more worth the walk.",
   "question_answer": "The oldest tree in Deventer is the Kozakkenlinde on the Kozakkenweg at Diepenveen, which the national register places in a planting band of 1600 to 1700 and, more specifically, suggests was planted in 1614 after the death of the Hijligen eik, the holy oak that had stood in the same spot. Its name comes from a later episode: during the French occupation of Deventer in 1813 the tree is said to have been used as a lookout by Cossacks fighting against the French. Both of those are traditions carried by the register rather than facts we can prove, and it cites an article by Wim de Weerd behind them. What is not in doubt is that this is a very old lime standing where an older sacred tree stood before it.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands. Two entries carry better reasoning than that and the pages say so. The register dates the black walnut in the Worpplantsoen to a specific replanting in 1820 to 1822, after the planting of 1816 was damaged by drifting ice on the IJssel. And for the poplar known as De Reus van De Worp it argues from a photograph: an image of the Lange Laan in the Ossenwaarde taken in 1917 shows the tree small and distant, clearly young, which supports a planting between 1900 and 1910 rather than anything earlier. That is a better piece of dating than most trees on this site have. The register is the 2024 edition and is the single source throughout, so everything here is flagged. Where a pin is marked approximate we know the park and not the trunk.",
   "hero_tree_id": "dev_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "Seven of the eight, yes. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, and the Frieswijk oak is on estate land recorded as visitable. The eighth, the Steenenkamer Maple out past the Bolwerksmolen windmill, grows in a private garden and is only seen from the road."
+      "a": "Eight of the nine, yes. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, the Frieswijk oak is on estate land recorded as visitable, and the White Willow of Wilp stands beside a public dike road. The ninth, the Steenenkamer Maple out past the Bolwerksmolen windmill, grows in a private garden and is only seen from the road."
     }
   ],
   "trees": [
@@ -289,6 +289,44 @@
       "transport": "Rural riverside lane, no station nearby; nearest is Deventer, roughly 15-20 minutes by bike or car from the city centre.",
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "dev_009",
+      "name": "The White Willow of Wilp",
+      "species": "White Willow (Salix alba)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 125,
+      "age_max": 135,
+      "girth_cm": 700,
+      "location": {
+        "address": "Bolwerksweg, along the IJssel dike near Wilp",
+        "latitude": 52.229672,
+        "longitude": 6.167772,
+        "neighbourhood": "Wilp (Voorst), on the IJssel foreland near the A1 viaduct"
+      },
+      "story": "Seven metres round, and not yet 140 years old. White willows grow at a rate oaks would find vulgar. This one went in somewhere between 1890 and 1900 on the river ridge of the IJssel foreland at Wilp, and a regional river-heritage survey measures it at about seven metres of circumference, still adding roughly ten centimetres a year. The trunk is hollow and the tree is vital, which for an old willow is normal rather than a contradiction.\n\nNobody pollarded it for decades, which is why it carries one enormous twisted stem instead of the neat cropped head of a working dike willow. A lightning strike in the 1990s took part of that stem and left it leaning, and the lean has stayed. Its neighbour, a three-stemmed willow of about the same age, was badly burned in the autumn of 2020 and is still standing as well.\n\nMost people meet this tree from the A1 bridge, at speed, on the way into Deventer. The better version is the Bolwerksweg on foot or by bike, roughly two kilometres along the same road from the Steenenkamer maple. Several old willows stand at this spot and we have not pinned the exact one to the metre, so look for the seven-metre waist and the lean. You will know it when you are in front of it.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/schietwilg-wilp/",
+        "https://rivierverhalen.nl/dikste-wilgen-langs-de-ijssel/",
+        "https://www.monumentaltrees.com/nl/nld/gelderland/voorst/8513_ijsselnabija1viaduct/"
+      ],
+      "access": "Free, standing beside the public Bolwerksweg dike road, part of the 'Langs Wilp en IJssel' walking route (dwarsdoorsalland.nl) and visible from the A1 motorway bridge toward Deventer. The floodplain path itself may be seasonally closed to protect nesting birds (15 March-15 July per the Deventer floodplain plan), but the tree stands by the road/dike rather than deep in the floodplain, so it is not affected.",
+      "transport": "No rail station nearby; reachable by bike or car along the Bolwerksweg from Deventer (roughly 2km/10-15 min cycle from dev_008 The Steenenkamer Maple on the same road), or bus toward Wilp village.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "best_time": {
+        "months": [
+          1
+        ],
+        "kind": "bare silhouette",
+        "label": "January, when the leaves are off and the hollow leaning trunk shows in full"
+      },
       "photo": {
         "url": null,
         "license": null,

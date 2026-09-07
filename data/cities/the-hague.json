@@ -2,10 +2,10 @@
   "city": "The Hague",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, kept there by a promise William of Orange made in 1576 that the Haagse Bos would never be sold or logged. Beside it a horse chestnut was hauled eighty metres across the same meadow on steel plates in 1997 rather than felled for a road tunnel. Thirty trees in all, from a royal garden cypress to a row of chestnuts beside the Hofvijver, and nearly every one of them free and open at any hour.",
-  "meta_description": "The Hague's oldest tree is a 300-year-old oak on the Koekamp deer meadow. 30 verified trees, including a chestnut moved eighty metres on steel plates.",
+  "intro": "Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, kept there by a promise William of Orange made in 1576 that the Haagse Bos would never be sold or logged. Beside it a horse chestnut was hauled eighty metres across the same meadow on steel plates in 1997 rather than felled for a road tunnel. Thirty-one trees in all, from a royal garden cypress to a row of chestnuts beside the Hofvijver, and nearly every one of them free and open at any hour.",
+  "meta_description": "The Hague's oldest tree is a 300-year-old oak on the Koekamp deer meadow. 31 verified trees, including a chestnut moved eighty metres on steel plates.",
   "question_answer": "The Hague's oldest tree is the Koekamp Oak, growing on the old deer meadow four minutes north of Den Haag Centraal, at roughly 300 years. It stands on ground that was never private: William of Orange promised in 1576 that the Haagse Bos would never be sold or logged, and that guarantee has held ever since, with one serious interruption during the wartime felling under German occupation. Its closest rival is the plane in Park Hoekenburg, which the national register bands between 1700 and 1750, so somewhere between 276 and 326 years, a fifty year band rather than a date. On the midpoints the two are within a few years of each other and this page does not pretend to separate them. Older than either was a pear of 1638 in an almshouse courtyard, and it is no longer on this page: it can only be seen on a booked tour, which is not a tree anybody can go and stand in front of.",
-  "question_meta": "The Hague's oldest tree is a roughly 300-year-old oak on the Koekamp, kept by a promise from 1576. Its story, exact location, and 29 more mapped.",
+  "question_meta": "The Hague's oldest tree is a roughly 300-year-old oak on the Koekamp, kept by a promise from 1576. Its story, exact location, and 30 more mapped.",
   "question_context": "Ages here come mostly from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than dates. The Koekamp oak, at roughly 300 years, grows on land that was never private at all, protected by a 1576 promise from William of Orange that the Haagse Bos would never be sold or logged, a guarantee that has held with one serious interruption, the wartime felling under German occupation. A second oak on the same meadow, and a London plane out at Leidschendam, are both banded by the register to somewhere between 1750 and 1800, which puts them between 225 and 275 years old. After those the list drops into the 19th century, onto estate land later built over, into two cemeteries and a painter's garden. One tree that used to head this page has come off it: the 1638 pear of the Heilige Geesthofje, which is genuinely the oldest tree in the city and can only be reached on a booked tour, and this site publishes trees a person can walk up to.",
   "faq": [
     {
@@ -1033,6 +1033,36 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "hag_033",
+      "name": "The Wych Elm of Park Middenburg",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "roughly 275 years",
+      "age_min": 250,
+      "age_max": 300,
+      "location": {
+        "address": "Park Middenburg, Voorburg",
+        "latitude": 52.063584,
+        "longitude": 4.359871,
+        "neighbourhood": "Voorburg, The Hague"
+      },
+      "story": "One of the oldest wych elms in the Netherlands stands on a lawn behind an office building. The office was a manor house first: Middenburg was a country estate by 1657, and the grass the elm stands on was somebody's private view until Voorburg council bought the place in 1952 and opened it as a park.\n\nA Dutch tree register puts the planting at 1750. That is a round number with no stated basis, so read it as a band rather than a birthday: somewhere between 250 and 300 years, which still makes this one of the oldest of its species in the country. It has spent the last century in a difficult neighbourhood for an elm. Dutch elm disease was first identified here in the 1920s and went on to take most of the country's elms with it. This one kept going, and was measured at just over 20 metres in the summer of 2017.\n\nOne open question, which we would rather ask than quietly answer. Some records suggest this is the Exeter Elm, a narrow upright cultivar, rather than the wild wych elm its Dutch name implies. If you know which it is, or have simply stood under it lately and can report it is still in leaf, tell us.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/ruwe-iep-voorburg/",
+        "https://www.monumentaltrees.com/nl/nld/zuidholland/leidschendamvoorburg/6004_parkmiddenburg/12650/",
+        "https://nl.wikipedia.org/wiki/Park_Middenburg/Sonnenburgh"
+      ],
+      "access": "Free, open at any hour. Park Middenburg/Sonnenburgh has been a public municipal park since the estate was bought by Voorburg council in 1952 (the manor house itself, now offices, is not open to visitors, but the tree stands on the open grass field, not near the house).",
+      "transport": "Voorburg railway station (NS), short walk into the park; also reachable from The Hague centre by tram/bus in well under 30 minutes.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "hag_002"

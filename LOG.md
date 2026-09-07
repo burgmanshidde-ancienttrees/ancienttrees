@@ -1,6 +1,41 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation 2) - 5 trees merged from a stranded write pass, 2 photos approved, nothing new researched
+
+Resumed a window a still earlier attempt had stopped after 24 minutes
+with 0 trees shipped and 96 of 120 minutes unspent, despite hitting no
+error and no usage limit. `passcheck.py --claims` showed that attempt
+had claimed 5 write targets (the-hague, deventer, rumskulla, kasukabe,
+aguas-de-moura) and, it turned out, had actually finished the work: a
+write-stories agent had produced 5 stories and a photo-judge pass had
+approved 2 photographs, all sitting on disk uncommitted, all correctly
+recorded in `data/agent-costs.json` already.
+
+Verified each piece before trusting it (word counts, sources,
+`location_precision`, that the claimed photos exist and are vendored),
+then `preflight.py` (0 problems, only pre-existing NOTEs), a full
+`npx astro build` (4890 pages, exit 0) and `scripts/qa.py`. First QA run
+failed on the 2 new photos (404 in the build) because `vendor_photos.py`
+had written them into `site/public/photos` while the astro build was
+still running and its `public/` copy had already happened; rebuilt and
+QA passed clean, 7488 pages.
+
+Shipped: Deventer +1 (dev_009, White Willow of Wilp), The Hague +1
+(hag_033, Wych Elm of Park Middenburg), both from the Bomenbieb
+Netherlands register; three new single-tree places under the
+2026-08-31 single-famous-tree exception, Kasukabe (ksk_001, Ushijima no
+Fuji wisteria), Aguas de Moura (agm_001, Whistler Cork Oak) and
+Rumskulla (rkm_001, the Kvill Oak); plus 2 photo approvals (Heidelberg's
+Molkenkur linden, Lima's olive of San Martin de Porres). Full detail in
+CURATION.md's matching entry. Ran `city_queue.py` afterward so the two
+brand-new cities are folded into CITY_QUEUE.md / city-list.json.
+
+Released all 5 claims. Checked `passcheck.py --claims` again after:
+clean, nothing standing. `leads.py --ready` is down to 1 (a Voorburg
+elm, single tree, below the no-pass-under-six-candidates floor, left
+for a future batch). Nothing FOR HIDDE.
+
 ## 2026-09-07 (continuation) - 4 trees shipped from stranded write passes (Pelham, Itoshiro, Yangpyeong, Osaka+1); bomenbieb verify continued, 2 duplicates caught, 15 dispatched
 
 Resumed a window an earlier attempt stopped after 14 minutes having
