@@ -50,8 +50,8 @@
       "at": "2026-09-06T08:48:35+00:00"
     },
     "2026-09-06": {
-      "note": "Both WARNs already fixed by c022899d before this run started: the three FAQ answers (canberra/gumeli/san-quirico-d-orcia) now say what IS here rather than explaining the publish threshold, and BUSINESS_RULE_PHRASES already lists 'below the usual four tree floor'/'four tree floor'. Contribute.swift anonymity-vs-account WARN is untouched (app copy, not a night run's to fix).",
-      "at": "2026-09-07T00:59:30+00:00"
+      "note": "Both WARNs already fixed by earlier work: canberra/gumeli/san-quirico-d-orcia FAQ no longer explains the publish-gate rule (grep for the phrase returns nothing), and BUSINESS_RULE_PHRASES in qa.py now guards 'below the usual four tree floor'/'four tree floor'. Contribute.swift line 89 now reads 'Nobody else sees who sent this' rather than the self-contradicting 'Nobody sees who sent this'. No further action needed.",
+      "at": "2026-09-07T06:23:52+00:00"
     }
   }
 }
