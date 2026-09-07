@@ -11,6 +11,81 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-07 (continuation 9) - Finished the standing _bomenbieb-netherlands and _famous-germany verify claims: 3 into existing cities, 16 new German single-tree places
+
+Resumed a window an earlier attempt had stopped 25 minutes in with 95
+unspent, having shipped nothing. `passcheck.py --claims` found three
+standing claims with real uncommitted output on disk.
+
+**`_bomenbieb-netherlands` (3 trees, all fully verified and written,
+`leads.py --ready` was correctly showing these as the only 3 READY
+leads).** `passcheck.py --brief` on each place name showed all three sit
+inside an already-published city's walk radius, so none became a new
+place: the Tulip Tree of Proosdijpark (Meerssen) deepened Maastricht to
+15 (maa_015), the Fallen Trumpet Tree of De Lathmer (Wilp) deepened
+Deventer to 10 (dev_010), and the Marialinde of Oisterwijk deepened
+Tilburg to 16 (til_016). Fixed each city's stale tree-count copy
+(meta_description, question_meta, one FAQ answer each). Released the
+claim.
+
+**`_famous-germany` (2 trees fully verified with no story, plus 26
+unprocessed leads still sitting as `status: lead`).** The two finished
+ones, the Tanzlinde of Himmelsberg (a lime trained into a dance floor
+three metres up, Naturdenkmal since 1971, on a 2001 German postage
+stamp) and the Koenigslinde of Schlosspark Linderhof (spared by Ludwig
+II when the terrace gardens were built around it), shipped first as new
+single-tree places (hmb_001, lnd_001), neither near a published city.
+
+While checking the pile, `tmp_eschelbronn.txt` (a stray file from an
+earlier attempt, a fetched German Wikipedia article) showed one of the
+26 leads, Winterlinde am Friedhof in Eschelbronn, was felled in October
+2019 after fungal rot; blocked as dead before dispatching anything
+further.
+
+Dispatched a `verify` agent on the remaining 25. Result: 14 shipped,
+10 held (real, alive, but nothing clearing the single-tree-destination
+bar: ordinary Dorflinden and Gerichtslinden with only a bare Naturdenkmal
+listing behind them), 1 blocked (Kandelaberlinde Dorla, confirmed dead,
+felled May 2023). The agent's own first pass at updating the leads file
+had a substring-matching bug that silently touched ~20 unrelated
+entries (including flipping the already-published Peter-Linde
+Coppenbruegge to `held`); it caught this itself, ran `git checkout --`
+to restore the clean baseline, and redid the update with exact-name
+matching, but that checkout also silently reverted this session's own
+Eschelbronn block, caught and reapplied afterward.
+
+Dispatched a `write-stories` agent on the 14 shipped trees (9.4k
+tokens/tree). Genuine hooks: a UNESCO Intangible-Cultural-Heritage dance
+custom performed on one specific lime every year since 1792
+(Limmersdorf), a cube-shaped tree-hall with a spiral staircase and its
+own museum (Peesten), Germany's own Nationalerbe-Baeume designee at
+14.4m girth, long assumed to be three trees until genetic testing proved
+one (Polchow), a lime planted in 1783 by a pastor's wife for her son's
+birth, with a succession tree already planted for the day it goes
+(Frankenthal), and a trained pair commemorating Franconian soldiers home
+from the 1683 relief of Vienna (Ottendorf). Built all 14 into new
+single-tree places by hand (intro/meta/question-page/FAQ, none of it
+templated), fixing several Contract B/C length violations the build
+caught (question_context under 150 words on 7 pages, intro under 60
+words on 10 pages, one question_answer that never named its own tree).
+New cities: bargischow, horn-bremen, eichigt, niedenstein, neuenrade,
+peesten, frankenthal-sachsen, polchow, schlettau, wilparting,
+baldenhain, limmersdorf, neudrossenfeld, ottendorf-gaedheim.
+
+None of these 16 single-tree places register in city-list.json/
+CITY_QUEUE.md (confirmed: no diff after `city_queue.py`), same as
+every prior single-tree-exception place; they sit outside the
+demand-ranked queue entirely.
+
+Two full builds, qa.py and preflight.py clean throughout (0 problems;
+the usual cross-country meta_description staleness NOTEs and one
+pre-existing superlative collision, both predating this session,
+untouched). `_famous-germany`'s 53 leads now carry a status on every
+row (27 published, 16 held, 7 blocked, 3 older verified/thin markers),
+none left as a bare `lead`. Released both claims. `_famous-taiwan`
+(claimed by an earlier attempt, untouched, no work on disk) left
+standing with 82 minutes left on its own clock.
+
 ## 2026-09-07 (continuation 8) - Six new single-tree places, one species page, a 60-candidate photo sweep
 
 7-day visits: 1130 visits, 1560 page views (30/90 on 08-31 climbing to 240/250

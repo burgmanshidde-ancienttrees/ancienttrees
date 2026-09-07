@@ -1,0 +1,70 @@
+{
+  "city": "Eichigt",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Eichigt is a small Saxon village on the Vogtland border with one tree that outranks every other in the district for thickness. It is named for a poet-soldier who slept beneath it for one night in 1813, months before he died in battle at twenty-one, and it still stands on the meadow that has carried his name ever since. The village calls it the thickest lime, and the thickest tree of any species, anywhere in the Vogtland, and asks nobody to take that on faith: the tape reads 7.27 metres round.",
+  "meta_description": "The Koernerlinde of Eichigt: the thickest lime and thickest tree in the Vogtland, where the poet-soldier Theodor Koerner bivouacked in 1813.",
+  "question_meta": "The Koernerlinde is the thickest lime in Germany's Vogtland region, named for the poet Theodor Koerner, who bivouacked beneath it on 8 June 1813.",
+  "question_answer": "Eichigt's one named tree is the Koernerlinde, a large-leaved lime standing beside the village church on the meadow still called the Husarenwiese, the Hussar Meadow. On the night of 8 June 1813 the poet and volunteer soldier Theodor Koerner camped there with part of his corps, days before a raid on Hof and months before he died in action at twenty-one. By the village's own reckoning it is the thickest lime, and the thickest tree of any species, in the whole Vogtland district, second in the wider historical region only to the Swedish Oak of Weida.",
+  "question_context": "The girth reads 7.27 metres round, and the height, an unusually tall 42 metres for a lime, comes from the dendrological register that surveyed the tree in February 2024 and found it vital. Its age is genuinely disputed: village and regional tradition put it at 350 to 400 years, while that same 2024 survey estimates closer to 500. Both figures are recorded here rather than resolved, and the wider band is the honest one to use. Either way, the tree was already substantial when Koerner's hussars camped beneath it in 1813, a young volunteer officer and Romantic poet who would be killed in battle near Gadebusch that August, three months after the night he spent on this meadow. Eichigt named the ground after his cavalry rather than after him directly, and the tree has carried both names since. It stands in the open on the Husarenwiese next to the church, free to visit, in a border village with no railway station of its own.",
+  "hero_tree_id": "eic_001",
+  "oldest_tree_id": "eic_001",
+  "faq": [
+    {
+      "q": "How old is the Koernerlinde?",
+      "a": "Disputed. Village and regional tradition put it at 350 to 400 years; a 2024 dendrological survey estimates closer to 500. Both figures are recorded rather than resolved."
+    },
+    {
+      "q": "Why is it named after Theodor Koerner?",
+      "a": "On the night of 8 June 1813 the poet and volunteer soldier Theodor Koerner camped beneath this tree with part of his corps, days before a raid on the town of Hof. He was killed in battle that August, aged 21."
+    },
+    {
+      "q": "Is it really the thickest tree in the Vogtland?",
+      "a": "By the village's own reckoning, yes: the thickest lime and the thickest tree of any species in the district, and second only to the Swedish Oak of Weida across the wider historical Vogtland region."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on the Husarenwiese meadow next to the village church, with no gate or fee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "eic_001",
+      "name": "Körnerlinde (Eichigt)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 500 years (source disagreement, see notes)",
+      "age_min": 350,
+      "age_max": 500,
+      "girth_cm": 727,
+      "height_m": 42,
+      "location": {
+        "address": "Beside the church, Eichigt, Vogtlandkreis, Saxony",
+        "latitude": 50.349727,
+        "longitude": 12.173125,
+        "neighbourhood": "Eichigt, Vogtland"
+      },
+      "story": "On the night of 8 June 1813 the poet Theodor Koerner bivouacked with part of his volunteer corps on the meadow beside this lime, days before a raid on Hof and months before he was killed in action at twenty-one. The village never let go of it. The meadow is still called the Husarenwiese, the Hussar Meadow, and the tree is the Koernerlinde. It is also, by the reckoning of the village itself, the thickest lime and the thickest tree of any kind in the Vogtland district, and second only to the Swedish Oak of Weida across the wider historical region. The tape reads 7.27 metres round. The height recorded by the dendrological register is 42 metres, which is tall for a lime and worth seeing for that alone. Its age is disputed and the gap is honest rather than careless: the village and regional tradition put it at 350 to 400 years, while the register that measured it in February 2024 and found it vital estimates about 500. Take the wider band. Either way it was already a substantial tree when Koerner's hussars lay under it, and it still stands where they did, on open grass beside the church in a Saxon border village with no railway station.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/4628-koerner_linde_in_eichigt/",
+        "https://www.eichigt.de/startseite/sehensw%C3%BCrdigkeiten/die-k%C3%B6rnerlinde/"
+      ],
+      "access": "Free, public. Publicly accessible per baumkunde.de ('oeffentlich zugaenglich'), on the meadow ('Husarenwiese') next to the village church.",
+      "transport": "Small village in the Vogtland, Saxony, near the border with Bavaria/Thuringia; no rail station, a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when it flowers over the Husarenwiese, the same weeks the hussars camped here"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "city": "Peesten",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Peesten is a Franconian village built around a tree you can walk inside. A spiral staircase climbs into the crown of its trained lime and comes out in an 87-square-metre room, a structure regional guides call unique in Europe, and the village has been dancing on it every June for more than 300 years. The tradition is older than the trunk holding it up: the original tree was felled in 1947 after three centuries of service, and the one standing today is its trained successor.",
+  "meta_description": "The Tanzlinde of Peesten: a trained lime with a spiral staircase into an 87-square-metre dance room in its crown, a structure unique in Europe.",
+  "question_meta": "The Tanzlinde of Peesten has a spiral staircase leading into an 87-square-metre dance floor built inside its crown, danced on every June since the 1600s.",
+  "question_answer": "Peesten's Tanzlinde is a working piece of village architecture built from a living tree. A spiral staircase rises into the crown and opens onto an 87-square-metre floor resting on 18th-century sandstone pillars, a squared, cube-like structure regional accounts describe as unique in Europe. Peesten has danced on it at the Kirchweih on the second weekend of June for more than 300 years, and a small village museum explains how a tree gets trained into a building.",
+  "question_context": "What stands today is not the original tree. The first Tanzlinde at this spot appears in a municipal record from 1657 and was probably planted between 1550 and 1600; it served the village for three centuries before it had to be felled in 1947, a casualty the same way an old tree eventually is. A new summer lime went in at the same spot in the early 1950s, the timber dance hall was faithfully rebuilt to its old design in 2001, and the tree standing there now measures 2.91 metres round and is roughly 70 to 80 years old. It is the tradition and the structure that are three centuries old, carried forward through a young tree, which is exactly how Germany's other dance limes have survived this long. It stands free in the open village centre next to the church, in the Fraenkische Schweiz district of Bavaria, and the small village museum beside it explains the practical craft of training a living tree into a load-bearing structure, step by step, for anyone who wants to know how the staircase and the floor actually stay up.",
+  "hero_tree_id": "pee_001",
+  "oldest_tree_id": "pee_001",
+  "faq": [
+    {
+      "q": "Is the Peesten Tanzlinde really centuries old?",
+      "a": "The tradition and the timber dance structure are, dating to the 1600s. The living tree itself is younger: the original was felled in 1947 after three centuries of service, and the current lime was planted in the early 1950s."
+    },
+    {
+      "q": "What can you actually see there?",
+      "a": "A spiral staircase climbing into the crown of the lime, opening onto an 87-square-metre dance floor on 18th-century sandstone pillars, described by regional guides as a structure unique in Europe."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open village centre next to the church, with a small museum in the village explaining the tree's history."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Peesten is a district of Kasendorf in the Kulmbach district of Bavaria, in the Fraenkische Schweiz region. A car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pee_001",
+      "name": "Tanzlinde (Peesten)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "current tree about 70-75 years (replanted 1953); the dance-floor tradition and stone structure are 300+ years old",
+      "age_min": 70,
+      "age_max": 80,
+      "girth_cm": 291,
+      "location": {
+        "address": "Village centre, next to the church, Peesten, a district of Kasendorf, Kulmbach district, Bavaria",
+        "latitude": 50.062988,
+        "longitude": 11.365927,
+        "neighbourhood": "Peesten, Kulmbach"
+      },
+      "story": "A spiral staircase runs up into this tree and comes out in a room. The dance floor built into the crown covers 87 square metres, resting on sandstone pillars raised in the 18th century, and regional accounts call the squared-off, cube-like shape of the whole thing unique in Europe. The village still uses it. Peesten has danced on its lime at the Kirchweih on the second weekend of June for more than 300 years, and there is a small museum in the village explaining how you train a tree into a building. Be clear about what you are looking at, because the structure is older than the trunk holding it. The first Tanzlinde here appears in a municipal record of 1657 and was probably planted between 1550 and 1600; it served the village for three centuries and had to be felled in 1947. A new summer lime went in on the same spot in the early 1950s, the timber hall was rebuilt to the old design in 2001, and the tree you climb into today measures 2.91 metres round and is about eighty years old. It is the tradition that is ancient, carried forward through a young tree, which is how these dance limes have always survived. Free, in the open village centre next to the church.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Tanzlinde_(Peesten)",
+        "https://www.baumkunde.de/baumregister/528-tanzlinde_in_peesten/"
+      ],
+      "access": "Free, public. Stands in the open village centre next to the church.",
+      "transport": "Peesten, a district of Kasendorf, Kulmbach district, Bavaria (Fraenkische Schweiz region); a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "mid-June, when the lime flowers and the village dances up in the crown at the Kirchweih"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

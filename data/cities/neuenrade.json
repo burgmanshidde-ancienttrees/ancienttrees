@@ -1,0 +1,61 @@
+{
+  "city": "Neuenrade",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Neuenrade is a small Sauerland town whose most storied resident predates the town itself. A lime tree served as the open-air courtroom for the district's bailiffs three centuries before Neuenrade received its own charter in 1355, and it still stands in the public park built on the old town rampart. The town has built a 42-plaque history trail around it, and nobody has ever recorded a girth or a height for the tree itself, which the page states plainly rather than dressing tradition up as measurement.",
+  "meta_description": "The Gerichtslinde of Neuenrade: a lime tree said to be about 900 years old, used as an open-air court three centuries before the town's 1355 charter.",
+  "question_meta": "The Gerichtslinde of Neuenrade is a lime traditionally dated to about 900 years old, used as the district's open-air court before the town existed.",
+  "question_answer": "Neuenrade's Gerichtslinde, a court lime, stands in the Stadtpark Auf dem Wall, the public park built on the town's old rampart, along a 200-metre history trail carrying 42 bronze plaques. Both the town's own tourism office and the standard local account put its age at about 900 years, which would make it roughly three centuries older than Neuenrade itself, chartered as a town in 1355.",
+  "question_context": "Justice in this part of the Sauerland was handed down under this tree by the bailiffs of Neuenrade, who rode out from a castle that has since vanished entirely, a role the tree held before there was a town to call it home. That is the definition of a Gerichtslinde: a tree chosen as a courtroom because everyone in the valley knew where it stood and because shade and a fixed meeting point were all a medieval assembly needed. No source gives a girth or a height for the tree, so its age is tradition passed down rather than a measurement, and it is stated honestly as such rather than dressed up as arithmetic. Even the exact species is unrecorded: neither source distinguishes a summer from a winter lime, so the page asks the reader who can tell from the leaf. The tree stands in the town's own public park, free to visit, reachable by regional bus or rail to Neuenrade followed by a short walk into the town centre.",
+  "hero_tree_id": "nrd_001",
+  "oldest_tree_id": "nrd_001",
+  "faq": [
+    {
+      "q": "How old is the Gerichtslinde of Neuenrade?",
+      "a": "By local tradition, about 900 years, which would put its planting roughly three centuries before Neuenrade received its own town charter in 1355. No girth or ring count has ever been published, so treat the figure as tradition rather than measurement."
+    },
+    {
+      "q": "What is a Gerichtslinde?",
+      "a": "A tree used as an open-air courtroom. In Neuenrade's case, the district's bailiffs rode out from a now-vanished castle to hold court beneath this exact lime, before the town itself existed."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the Stadtpark Auf dem Wall, the town's public park on the old rampart, alongside a 42-plaque history trail."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Neuenrade is a small town in the Maerkischer Kreis (Sauerland), North Rhine-Westphalia, reachable by regional bus or rail, then a short walk into the town centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nrd_001",
+      "name": "Gerichtslinde (Neuenrade)",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "about 900 years",
+      "age_min": 700,
+      "age_max": 900,
+      "location": {
+        "address": "Stadtpark 'Auf dem Wall', Neuenrade, Maerkischer Kreis, North Rhine-Westphalia",
+        "latitude": 51.2813024,
+        "longitude": 7.7817212,
+        "neighbourhood": "Neuenrade town centre"
+      },
+      "story": "The court came before the town. Justice in this corner of the Sauerland was handed down under this lime by the bailiffs of Neuenrade, who rode out from a castle that has since vanished completely, and they were doing it before Neuenrade received its town charter in 1355. That is what a Gerichtslinde is: a tree used as a courtroom, chosen because everyone in the valley knew where it stood and because shade and a fixed spot were all a medieval assembly needed. Both the town's own tourism office and the standard account of Neuenrade put the tree at about 900 years old, which would make it roughly three centuries older than the town that grew up around it. Nobody has published a girth or a height for it, so the age is tradition rather than arithmetic, and we are not going to dress it up as a measurement. It stands in the Stadtpark Auf dem Wall, the public park on the old town rampart, along a 200-metre history trail carrying 42 bronze plaques, so the town has already made a point of it. One thing we do not know: neither source says whether it is a summer or a winter lime. If you can tell from the leaf, tell us.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Neuenrade",
+        "https://www.neuenrade.de/Freizeit/Neuenrade-entdecken/Denkmaeler.htm/Freizeit/Seiten/Gerichtslinde.html"
+      ],
+      "access": "Free, public. Stands in the town's own public park, Stadtpark 'Auf dem Wall'.",
+      "transport": "Small town in the Maerkischer Kreis (Sauerland), North Rhine-Westphalia; regional bus/rail to Neuenrade, then a short walk into the town centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

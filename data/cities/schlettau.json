@@ -1,0 +1,68 @@
+{
+  "city": "Schlettau",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Schlettau is a small Ore Mountains town built around a castle nearly as old as its most storied tree. The Schlosslinde stands in the castle's own park, said to be over 750 years old, though nobody has ever measured it and the town would like to know. The park is free to walk, the castle itself now runs as a museum kept going by a local preservation association, and the tree has outlasted the mining boom that made this corner of Saxony rich.",
+  "meta_description": "The Schlosslinde of Schlettau: a lime said to be over 750 years old, standing in the park of Schloss Schlettau in Saxony's Ore Mountains.",
+  "question_meta": "The Schlosslinde of Schlettau is a lime said to be over 750 years old, in the park of an 800-year-old castle in Saxony's Erzgebirge.",
+  "question_answer": "Schlettau's Schlosslinde stands in the Schlosspark, the park laid out around Schloss Schlettau, a roughly 800-year-old castle now run as a museum by a local association. The town calls the small-leaved lime one of the oldest trees in the whole Erzgebirge, the Ore Mountains, and puts its age at over 750 years, meaning it would already have been a mature tree when the region's silver and tin mining boom made this corner of Saxony rich.",
+  "question_context": "The evidence here is honestly thinner than on most trees this project publishes, and it is worth saying so plainly. The age figure comes from the town's own account of itself; no independent dendrological survey has been found, and no girth or height measurement has ever been published anywhere searched. What is independently confirmed is the species, the tree's protected Naturdenkmal status, and its standing as a named specimen in its own right rather than an anonymous park tree, corroborated by its own dedicated Wikimedia Commons category under Saxony's famous trees. The Schlosspark itself is free to enter; only the castle's own museum interior charges admission. If a reader has measured the tree, or has seen a plaque anywhere on the grounds giving a number, the page would like to hear it. Schlettau sits in the Erzgebirgskreis of Saxony, reached by car or regional bus, and the castle's own museum tells the region's mining and textile history, which the tree in its garden has quietly outlasted.",
+  "hero_tree_id": "slt_001",
+  "oldest_tree_id": "slt_001",
+  "faq": [
+    {
+      "q": "How old is the Schlosslinde of Schlettau really?",
+      "a": "The town's own account says over 750 years, but this figure has not been independently verified by any dendrological survey found, and no girth or height has ever been published. Treat it as the town's own estimate."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "The Schlosspark is free to enter. Only the interior of Schloss Schlettau, now a museum, charges admission."
+    },
+    {
+      "q": "What is Schloss Schlettau?",
+      "a": "A roughly 800-year-old castle, now run as a museum by a local preservation association, with the tree standing in its surrounding park."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Schlettau is a small town in the Erzgebirgskreis (Ore Mountains) of Saxony, reachable by car or regional bus."
+    }
+  ],
+  "trees": [
+    {
+      "id": "slt_001",
+      "name": "Schlosslinde (Schlettau)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "over 750 years",
+      "age_min": 750,
+      "age_max": 850,
+      "location": {
+        "address": "Schlosspark, Schloss Schlettau, Schlettau, Erzgebirgskreis, Saxony",
+        "latitude": 50.561144,
+        "longitude": 12.951249,
+        "neighbourhood": "Schlosspark Schlettau"
+      },
+      "story": "The castle is about 800 years old and the lime in its park is not far behind. Schlettau calls this small-leaved lime one of the oldest trees in the whole Erzgebirge, the Ore Mountains, and puts it at over 750 years, which would mean it was already a mature tree when the mining boom made this corner of Saxony rich in silver and tin. It stands in the Schlosspark, the romantic park laid out around Schloss Schlettau, a castle that is now a museum kept going by a local association. The park is free; only the castle interior charges. Be straight about the evidence, because it is thinner here than on most trees we publish. The age figure comes from the town's own account of itself, no independent survey has put a tape around the trunk, and no girth or height has been recorded anywhere we can find. What is independently confirmed is the species, the protected Naturdenkmal status and the tree's standing as a named specimen rather than an anonymous park lime. If you have measured it, or you have seen a plaque that gives a number, we would like to hear it.",
+      "verified_sources": [
+        "https://www.schlettau.de/Kultur/Sehenswertes.html",
+        "https://commons.wikimedia.org/wiki/Category:Schlosslinde_(Schlettau)"
+      ],
+      "access": "Free. Stands in the Schlosspark of Schloss Schlettau; the park is open to visitors (the castle museum/interior is a separate, ticketed attraction).",
+      "transport": "Small town of Schlettau in the Erzgebirgskreis (Ore Mountains), Saxony; a car or regional bus is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the small-leaved lime flowers and the castle park smells of it"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

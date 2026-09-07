@@ -1,0 +1,69 @@
+{
+  "city": "Niedenstein",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Niedenstein is a small Hessian town west of Kassel whose most remarkable resident is a tree, not a person: a dance lime with three trunks that branch low and spread flat, possibly as old as the town's own 13th-century founding. Its girth alone runs to 8.6 metres, carried by limbs trained flat rather than left to climb, the shape generations of villagers worked into it so it could double as a hall.",
+  "meta_description": "The Niedensteiner Tanzlinde: a trained dance lime possibly 700 to 1000 years old, roughly as old as the Hessian town founded around it.",
+  "question_meta": "The Niedensteiner Tanzlinde is a dance lime estimated at 700 to 1000 years old, trained flat over three low-branching trunks in the town's centre.",
+  "question_answer": "Niedenstein's landmark tree is the Niedensteiner Tanzlinde, a large-leaved lime whose three trunks branch low, between one and two metres up, into six main limbs spread out flat rather than climbing skyward. That shape is deliberate: this is a Tanzlinde, one of the trained dance limes that villages in Hesse and Franconia worked over generations into a kind of living hall.",
+  "question_context": "Its age is an estimate rather than a count: the trunk is too gnarled and hollow to read, so the working figure of 700 to 1000 years is hung on the town's own founding in the 13th century, on the assumption the tree and the town are roughly the same age. The measured fact is the girth, 8.6 metres in July 2021. Northern Hesse has a whole family of these trained dance limes, most famously a cluster around Malsfeld about twenty kilometres away, but the Niedensteiner Tanzlinde stands alone in its own town rather than joining that group, and its age and its own dedicated Wikipedia article, rare for a German tree outside a bare register listing, earn it a place on its own merits. It is protected as a Naturdenkmal and stands on open public ground in the town centre, free to visit at any time. Niedenstein itself sits in the Schwalm-Eder-Kreis west of Kassel, reached practically only by car.",
+  "hero_tree_id": "ndn_001",
+  "oldest_tree_id": "ndn_001",
+  "faq": [
+    {
+      "q": "How old is the Niedensteiner Tanzlinde?",
+      "a": "An estimate of 700 to 1000 years, based on the assumption that the tree is roughly as old as Niedenstein's own 13th-century founding. The trunk is too hollow and gnarled for a ring count."
+    },
+    {
+      "q": "What is a Tanzlinde?",
+      "a": "A lime tree deliberately trained, usually over generations, so its limbs spread flat and can carry the weight of a village dance floor. This one branches low, into six main limbs, rather than climbing upward like an untrained tree."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It is a protected Naturdenkmal standing on open public ground in the town centre, with no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Niedenstein is a small town in the Schwalm-Eder-Kreis, Hesse, near Kassel. There is no rail station in the town itself; a car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ndn_001",
+      "name": "Niedensteiner Tanzlinde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 700 to 1000 years",
+      "age_min": 700,
+      "age_max": 1000,
+      "girth_cm": 860,
+      "location": {
+        "address": "Niedenstein, Schwalm-Eder-Kreis, Hesse",
+        "latitude": 51.236479,
+        "longitude": 9.307711,
+        "neighbourhood": "Niedenstein, Hesse"
+      },
+      "story": "The town and the tree may be the same age, and that is where the number comes from. Niedenstein was founded in the 13th century, local reckoning holds that the lime went in around then, and the resulting estimate is a wide 700 to 1000 years rather than a figure anyone has counted. Nobody can count them: the trunk is gnarled and long past reading. What is measured is the girth, 8.6 metres in July 2021, carried by three trunks that branch low, between one and two metres up, into six main limbs that spread out flat rather than climbing. That shape is not an accident. This is a Tanzlinde, a dance lime, one of the trained trees Hesse and Franconia used as village halls, their crowns worked flat over generations so that a village could dance up in the branches. Northern Hesse has a whole family of them, and this one stands alone in its town rather than in a cluster, about twenty kilometres from the trained limes around Malsfeld. It sits in Niedenstein west of Kassel, on open public ground, protected as a Naturdenkmal, and it is one of very few German trees with a Wikipedia entry to itself rather than a line in a register.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Niedensteiner_Tanzlinde",
+        "https://www.monumentale-eichen.de/andere-baumarten/linden/niedenstein/"
+      ],
+      "access": "Free, public. Naturdenkmal in the town.",
+      "transport": "Small town in the Schwalm-Eder-Kreis, Hesse, near Kassel; a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the flat trained crown comes into flower and the whole tree hums"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

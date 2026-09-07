@@ -95,7 +95,8 @@
         "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde1.jpg",
         "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde2.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Published 2026-09-07 as brc_001, new single-tree place Bargischow (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Belsener Linde",
@@ -148,9 +149,10 @@
         "https://commons.wikimedia.org/wiki/File:2015-10-24_Dorflinde_in_Neuenstein-Aua_(Hessen)_02.jpg",
         "https://commons.wikimedia.org/wiki/File:2016-11-28_Dorflinde_in_Neuenstein-Aua_(Hessen)_01.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Real, alive, ordinary Dorflinde with no distinguishing story, age or measurement found beyond its Naturdenkmal status; a member of the same Schwalm-Eder guided-linden family whose four strongest members were already published as Malsfeld (mls_001-004, 2026-09-03) and Niedenstein (see famousgermany-verified.json xxx_006, this pass). Checked and left as too far (15.5km) to join the Malsfeld cluster (recorded 2026-09-03). No stamp, no dedicated encyclopedia article, no press coverage or superlative found this pass. Held rather than shipped: nothing found makes this one specific tree a reason to travel."
     },
     {
       "name": "Dorflinde Lischeid",
@@ -160,9 +162,10 @@
         "https://commons.wikimedia.org/wiki/File:Lischeid,_Dorflinde.jpg",
         "https://commons.wikimedia.org/wiki/File:Lischeid2_-_Kirche_und_Dorflinde.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Real, alive guided/village linden documented in the LAGIS Hessen historic-sites register and a local history source (Hoeck's Dorflinden, Kirchhofslinden, Gerichtslinden), but no age, girth or distinguishing story surfaced this pass beyond being one of the Schwalm-Eder gallery's guided lindens (too far, 18-35km, from the published Malsfeld cluster, recorded 2026-09-03). No dedicated Wikipedia article, national designation or press coverage found. Held: a real tree, not a destination on its own evidence."
     },
     {
       "name": "Dorflinde Sebbeterode",
@@ -173,9 +176,10 @@
         "https://commons.wikimedia.org/wiki/File:Sebbeterode-Gerichtsplatz_im_S%C3%BCdwesten_der_Kirche)-Gerichtslinde_mit_Holzst%C3%BCtzenkranz_und_Steineinfassung_von_Ortsseite-26062013.JPG",
         "https://commons.wikimedia.org/wiki/File:Sebbeterode-Gerichtsplatz_im_S%C3%BCdwesten_der_Kirche-Gerichtslinde_mit_Holzst%C3%BCtzenkranz_und_Steineinfassung_in_%C3%9Cbersicht-26062013.JPG"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Real Gerichtslinde with its own preserved Gerichtsstein (court stone) and wooden support frame, documented in a dedicated village history book (800 Jahre Sebbeterode) and Hoeck's regional survey of Hessian court/village lindens, part of the same Schwalm-Eder gallery (too far, 18-35km, to join the published Malsfeld cluster). No age, girth, dedicated encyclopedia article or press coverage found this pass to lift it above an ordinary, well-preserved local Gerichtsplatz. Held rather than shipped."
     },
     {
       "name": "Einheitslinde in Haunstetten (Augsburg)",
@@ -228,7 +232,8 @@
         "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).Gedenkstein.2.ajb.jpg",
         "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).ajb.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "reason": "Real and documented: planted 1898 for the 50th anniversary of the Schleswig-Holstein Uprising (1848-1851), part of a regional series of similar 50th-anniversary freedom memorials (usually paired oaks with a memorial stone) put up across Schleswig-Holstein that year, per Wikimedia Commons categorisation (Gedenksteine zur Schleswig-Holsteinischen Erhebung). Not documented on the town of Boren's own German Wikipedia page at all. This is one of many broadly similar commemorative trees from the same 1898 wave rather than an individually famous specimen: modest age (~128 years), no distinctive girth or form, no dedicated article. Held: a real memorial, not a single-tree destination."
     },
     {
       "name": "Galenbecker Tanzlinde",
@@ -308,9 +313,10 @@
         "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_(Stamm)_jh.jpg",
         "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_jh.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as hrn_001, new single-tree place Horn-Lehe (Bremen) (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Kandelaberlinde Dorla",
@@ -321,7 +327,8 @@
         "https://commons.wikimedia.org/wiki/File:Dorla_Friedhofskandelaberlinde.JPG",
         "https://commons.wikimedia.org/wiki/File:Dorla_Friedhofslinde.JPG"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "DEAD: felled in May 2023 due to fungal infestation (per its dedicated German Wikipedia article Kandelaber-Linde von Dorla and Wikidata Q20184318), after already having been heavily pruned in 2015 for the same reason. Before it died it was a genuinely notable guided linden (unique in Hesse for its 11 candelabra-like candles, 500+ years old, 6.78m girth, a former dance and court linden with recorded court sessions until 1802), so this would very likely have shipped had it still been standing. Never publish: hard rule against dead trees."
     },
     {
       "name": "Körnerlinde",
@@ -332,7 +339,8 @@
         "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_03.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Published 2026-09-07 as eic_001, new single-tree place Eichigt (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Königslinde Linderhof",
@@ -357,9 +365,10 @@
         "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde_2013_.JPG",
         "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde_2024.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Real and actively used: the original large Tanzlinde was destroyed in a storm and replaced; the current young linden (girth only 0.87m) has had its branches trained sideways onto the historic rondell of 8 sandstone columns since 2010, when the annual Kirchweih dance tradition (last weekend of August) resumed. The real attraction here is the surviving 18th-century stone dance-floor structure and the revived custom, not the tree itself, which is still young and unremarkable on its own terms; no dedicated Wikipedia article or national designation found (unlike Peesten and Limmersdorf, which shipped this pass). Held: worth revisiting once the replacement tree has grown into the frame, or if the custom itself earns wider recognition."
     },
     {
       "name": "Linde (Ransbach, Hohenroda)",
@@ -370,9 +379,10 @@
         "https://commons.wikimedia.org/wiki/File:Ransbach_(Hohenroda),_Hauptstra%C3%9Fe_18_und_Linde.jpg",
         "https://commons.wikimedia.org/wiki/File:Ransbach_(Hohenroda),_Kirche_und_Linde.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Real: an old village Dorflinde next to the evangelical church, one of five registered Naturdenkmal lime/oak trees in Ransbach (Hohenroda), Hersfeld-Rotenburg district, Hesse. No age, girth, distinguishing story, dedicated article or press coverage found this pass beyond the bare fact of its Naturdenkmal status. Held: an ordinary, undocumented village linden."
     },
     {
       "name": "Linde bei Burg Gleichenstein",
@@ -382,9 +392,10 @@
         "https://commons.wikimedia.org/wiki/File:Gleichenstein_Linde_(1).jpg",
         "https://commons.wikimedia.org/wiki/File:Gleichenstein_Linde_(2).jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Real Gerichtslinde (court linden) with a genuinely documented planting date (1650, per baumkunde.de register 8432, citing the book Thueringens merkwuerdige Linden and Wikipedia), planted when the castle was rebuilt after Swedish troops destroyed it in the Thirty Years War. Girth 5.31m, height 16m, measured 13 Feb 2022, condition vital. Stands on the Vorburg (outer bailey) of Burg Gleichenstein near Wachstedt, Eichsfeld, Thuringia; could not confirm this pass whether the outer bailey is genuinely open to the public without asking anyone's permission (hard rule 10), and no dedicated encyclopedia article, national designation or press coverage was found to lift it above an otherwise unremarkable ~375-year-old Gerichtslinde. Held rather than shipped: real documentation, but neither the fame bar nor the access question is clearly settled."
     },
     {
       "name": "Linde bei Michaelskapelle, Bruchsal",
@@ -394,9 +405,10 @@
         "https://commons.wikimedia.org/wiki/File:Deutschland_Baden-Wuerttemberg_Untergrombach_Naturdenkmal_Linde_Foto_Lividus.jpg",
         "https://commons.wikimedia.org/wiki/File:Michaelskapelle_auf_dem_Michaelsberg,_Bruchsal-Untergrombach_(Baden)_-_panoramio_(1).jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Could not find any age, girth, planting date or distinguishing story this pass beyond a bare Naturdenkmal photograph on Commons; Wikipedia's article on the Michaelskapelle itself (a well-known regional Baroque pilgrimage chapel on the Michaelsberg near Untergrombach, first mentioned 1346, current building 1742-44) does not mention the tree at all. This is exactly the bare Naturdenkmal listing plus a Commons category case this brief warned is not enough on its own. Held, not blocked: the tree may well be real and fine, but nothing found this pass distinguishes it from an ordinary protected lime."
     },
     {
       "name": "Marienlinde (Linden, Wessobrunn)",
@@ -434,9 +446,11 @@
         "https://commons.wikimedia.org/wiki/File:2012-01-14_Tanzlinde_Niedenstein_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Niedenstein,_Fu%C3%9F_der_Tanzlinde.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Shipped as xxx_006, Niedensteiner Tanzlinde, in data/research/famousgermany-verified.json. The coordinate given in this lead (51.288051, 7.518602) is WRONG, it falls in the Ruhr area near Dortmund; the correct tree-level coordinate is 51.236479, 9.307711 (Niedenstein, Schwalm-Eder-Kreis, Hesse), confirmed via monumentale-eichen.de's dedicated survey. Fix this lead's lat/lng if this entry is ever consulted again.",
+      "reason": "Published 2026-09-07 as ndn_001, new single-tree place Niedenstein (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Neuenrader Gerichtslinde",
@@ -447,9 +461,10 @@
         "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde1-Bubo.JPG",
         "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde2-Bubo.JPG"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as nrd_001, new single-tree place Neuenrade (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Peesten dance lime tree",
@@ -460,9 +475,10 @@
         "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(10).jpg",
         "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(11).jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as pee_001, new single-tree place Peesten (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Pfarrlinde (Frankenthal, Sachsen)",
@@ -473,7 +489,8 @@
         "https://commons.wikimedia.org/wiki/File:Pfarr-_mit_Schwesterlinde_(1).JPG",
         "https://commons.wikimedia.org/wiki/File:Pfarr-_mit_Schwesterlinde_(2).JPG"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Published 2026-09-07 as fkn_001, new single-tree place Frankenthal (Sachsen) (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Polchower Linde",
@@ -484,9 +501,10 @@
         "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde_Stamm.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as plc_001, new single-tree place Polchow (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Gerichtslinde in Schlagsdorf",
@@ -511,7 +529,8 @@
         "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_02.jpg",
         "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_03.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Published 2026-09-07 as slt_001, new single-tree place Schlettau (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Naturdenkmal Winterlinde (Schönfeld im Barnim)",
@@ -522,9 +541,10 @@
         "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_(Barnim)_church_2016_SW.JPG",
         "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_Winterlinde_lub_2025-01-02.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Could not find any age, girth, planting date or distinguishing story specific to this tree this pass; general searches only turned up similarly-named but unrelated Winterlinden elsewhere in Brandenburg (Gross Schoenebeck, Tramper Park in Eberswalde) and the Landkreis Barnim's own generic Naturdenkmal-list page, which does not single this tree out. This is the bare-Naturdenkmal-plus-Commons-category case this brief said is not enough on its own. Held, not blocked: may be worth a dedicated Landkreis Barnim register lookup in a future pass rather than a generic web search."
     },
     {
       "name": "Schillerlinde (Schulau)",
@@ -534,9 +554,10 @@
         "https://commons.wikimedia.org/wiki/File:Schillerlinde_(Wedel-Schulau).Gedenkstein.ajb.jpg",
         "https://commons.wikimedia.org/wiki/File:Schillerlinde_(Wedel-Schulau).ajb.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Real and documented: planted for the 100th anniversary of Friedrich Schiller's death in 1905, with a memorial stone quoting Wilhelm Tell, at the corner of Bahnhofstrasse and Spitzerdorfstrasse in Wedel-Schulau; survived both world wars intact per the town's own local-history pages. This is one of many broadly similar Schillerlinde/Schiller-eiche memorial trees planted across Germany in 1859 and 1905 (a common national pattern, not a unique specimen), with no unusual age (~120 years), girth or physical form found. Held: a real, sweet local memorial, not a single-tree destination."
     },
     {
       "name": "Schwedenlinde",
@@ -558,9 +579,10 @@
         "https://commons.wikimedia.org/wiki/File:St.-Marinus-Linde_Wilparting_Irschenberg-1.jpg",
         "https://commons.wikimedia.org/wiki/File:St.-Marinus-Linde_Wilparting_Irschenberg-2.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as wpg_001, new single-tree place Wilparting (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Tanzlinde (Baldenhain)",
@@ -571,9 +593,10 @@
         "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34200.JPG",
         "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34201.JPG"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as bdh_001, new single-tree place Baldenhain (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Tanzlinde (Limmersdorf)",
@@ -584,18 +607,20 @@
         "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde_2014_(1).JPG",
         "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde_2014_(2).JPG"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as lmd_001, new single-tree place Limmersdorf (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Tanzlinde Neudrossenfeld",
       "lat": null,
       "lng": null,
       "photos": [],
-      "status": "lead",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Published 2026-09-07 as ndf_001, new single-tree place Neudrossenfeld (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Tanzlinde Sachsenbrunn",
@@ -621,7 +646,8 @@
         "https://commons.wikimedia.org/wiki/File:Tuerkenlinde_(1).JPG",
         "https://commons.wikimedia.org/wiki/File:T%C3%BCrkenlinde_3.JPG"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Published 2026-09-07 as otd_001, new single-tree place Ottendorf (verified and written this pass, cleared the single-tree-destination bar)."
     },
     {
       "name": "Tassilolinde (Wessobrunn)",
@@ -644,9 +670,10 @@
         "https://commons.wikimedia.org/wiki/File:Mahnmal_Friedhof_Eschelbronn.jpg",
         "https://commons.wikimedia.org/wiki/File:Winterlinde_am_Friedhof_Eschelbronn_01.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "2026-09-07 verify pass: CONFIRMED DEAD. German Wikipedia's own article (Winterlinde am Friedhof, Eschelbronn) states the tree was felled in October 2019 after a Brandkrustenpilz (Kretzschmaria deusta) fungal infection caused rot at the base and roots; a certified tree inspector assessed it as a public-safety risk ahead of the autumn/winter storm season and it was sawn down piece by piece. Two pieces of a fork went to a local woodturner for display in the village's Schreinermuseum. A sister Naturdenkmal lime at Bettweg (Alte Linde) also came down, in April 2025. Blocked per the never-publish-a-dead-tree rule; moved to blocked list."
     },
     {
       "name": "Everseiche",

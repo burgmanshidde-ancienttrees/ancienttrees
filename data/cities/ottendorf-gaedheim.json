@@ -1,0 +1,70 @@
+{
+  "city": "Ottendorf",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Ottendorf is a Lower Franconian village whose square holds a piece of architecture that happens to be alive: two lime trees, said to have been planted by soldiers home from the 1683 relief of Vienna, trained into balls, bound into a ring, and held up by sandstone pillars bought for 40 Gulden in 1789. Both trunks are still standing and in good condition, on open ground anyone can walk up to at any hour.",
+  "meta_description": "The Tuerkenlinde of Ottendorf: two limes trained into a ring since 1750, said to have been planted in 1683 by soldiers home from Vienna.",
+  "question_meta": "The Tuerkenlinde of Ottendorf is a pair of trained limes, by tradition planted in 1683 by Franconian soldiers who fought at the Siege of Vienna.",
+  "question_answer": "Ottendorf's Tuerkenlinde, the Turkish Lime, is a pair of small-leaved limes on the village square, said by tradition to have been planted in 1683 by Franconian soldiers newly home from the relief of the Ottoman siege of Vienna that year. The story is carried by the village's own record and a local history booklet written for the trees' 300th anniversary in 1983, so it is tradition rather than a document, but the modifications that follow it are dated and unusually precise.",
+  "question_context": "In 1686 the pair was trained into ball shapes. In 1750 their branches were bound together into a horizontal ring that still runs around both trees today. By 1789 the ring had grown heavy enough to need support, so two concentric rows of grey sandstone pillars were commissioned from a stonemason in Falkenstein for 40 Gulden, and they still carry the weight. The result is two trunks of 2.93 metres each, about 10 metres tall, joined into a single green structure that reads as architecture as much as tree. The regional heritage inventory of Lower Franconia lists it, and both trunks were recorded in vital condition at their last survey. One note for the record: in 2006 the district's own environmental report removed it from the formal Naturdenkmal list on a technicality, which changes nothing about its history, its documentation or its public accessibility. It stands free on the village square, in Ottendorf, a district of Gaedheim in the Hassberge district of Lower Franconia, reached practically only by car.",
+  "hero_tree_id": "otd_001",
+  "oldest_tree_id": "otd_001",
+  "faq": [
+    {
+      "q": "Were these trees really planted by soldiers from the Siege of Vienna?",
+      "a": "That is village tradition, carried by the village's own record and a 1983 anniversary booklet, rather than a contemporary document. The dated modifications that follow, from 1686 onward, are firmly documented."
+    },
+    {
+      "q": "What is the ring around the trees?",
+      "a": "In 1750 the branches of both limes were bound together into a horizontal ring, which still encircles both trunks today. By 1789 the ring needed support, so two rows of sandstone pillars were built to carry it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The trees stand on the open village square at any hour, with no gate or fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Ottendorf is a district of Gaedheim, in the Hassberge district of Lower Franconia, Bavaria. A car is the practical way in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "otd_001",
+      "name": "Türkenlinde von Ottendorf",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "343 years (documented planting year 1683)",
+      "age_min": 340,
+      "age_max": 345,
+      "girth_cm": 293,
+      "height_m": 10,
+      "location": {
+        "address": "Village square, Ottendorf, a district of Gaedheim, Hassberge district, Lower Franconia, Bavaria",
+        "latitude": 50.0198,
+        "longitude": 10.373367,
+        "neighbourhood": "Ottendorf, Gaedheim"
+      },
+      "story": "By village tradition these two limes were planted in 1683 by Franconian soldiers who had just come home from the relief of Vienna, which is how they got their name: the Turkish limes. The story is carried by the village's own record and by a local history booklet written for the tree's 300th anniversary in 1983, so treat it as tradition rather than as a document, but the dates that follow it are firm and they are strange enough on their own. In 1686 the pair was trained into balls. In 1750 their branches were bound together into a horizontal ring, and that ring still runs around both trees today. By 1789 the ring had grown heavy enough to need support, so two concentric rows of grey sandstone pillars were ordered from a stonemason in Falkenstein for 40 Gulden, and they are still holding it up. The result is a piece of village architecture that happens to be alive: two trunks of 2.93 metres each, about ten metres tall, joined into one green structure on the square at Ottendorf. The regional heritage inventory of Lower Franconia lists it. Both trees were in vital condition when last surveyed, and you can walk up to them at any hour.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/T%C3%BCrkenlinde_von_Ottendorf",
+        "https://www.baumkunde.de/baumregister/7791-tuerkenlinden_in_ottendorf/"
+      ],
+      "access": "Free, public. Baumkunde.de records it explicitly as publicly accessible ('oeffentlich zugaenglich'), standing on the village square.",
+      "transport": "Ottendorf, a district of Gaedheim, Hassberge district, Lower Franconia, Bavaria; a car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the bound ring of branches comes into flower over the village square"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

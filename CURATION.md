@@ -11,6 +11,29 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-07 (continuation 9) - Finished the _bomenbieb-netherlands and _famous-germany claims
+
+**Maastricht +1 (maa_015), Deventer +1 (dev_010), Tilburg +1 (til_016).**
+Three bomenbieb.nl leads (Meerssen tulip tree, Wilp trumpet tree,
+Oisterwijk's Marialinde) were fully verified and written but sat
+unmerged; `passcheck.py --brief` placed all three inside an existing
+city's radius rather than as new places.
+
+**16 new German single-tree places from `_famous-germany`.** hmb_001
+(Himmelsberg, a lime trained into a dance floor, on a 2001 postage
+stamp) and lnd_001 (Linderhof, spared by Ludwig II for the terrace
+gardens) were already fully verified with no story. The remaining 26
+leads on that file (all `status: lead`) went to a `verify` pass: 14
+shipped as new single-tree places (bargischow, horn-bremen, eichigt,
+niedenstein, neuenrade, peesten, frankenthal-sachsen, polchow,
+schlettau, wilparting, baldenhain, limmersdorf, neudrossenfeld,
+ottendorf-gaedheim), 10 held as real-but-ordinary Dorflinden/
+Gerichtslinden, 2 blocked as dead (Kandelaberlinde Dorla, felled 2023;
+Winterlinde am Friedhof Eschelbronn, felled 2019, caught from a stray
+`tmp_eschelbronn.txt` an earlier attempt had fetched and never
+processed). Every one of the file's 53 leads now carries a status;
+none are left as a bare `lead`.
+
 ## 2026-09-07 (continuation 7) - Leiden 18 to 20: two Hortus trees a prior write pass left unmerged
 
 `leiden-lrmb-written.json` carried 8 written trees; the prior continuation
