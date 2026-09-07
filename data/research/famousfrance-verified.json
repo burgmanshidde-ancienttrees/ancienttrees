@@ -1,0 +1,25 @@
+[
+  {
+    "name": "The Plane Tree of Fontenay Abbey",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "planted 1780, about 245 years",
+    "age_min": 240,
+    "age_max": 250,
+    "girth_cm": 600,
+    "location": {
+      "address": "Abbaye de Fontenay, 21500 Marmagne, Cote-d'Or, Burgundy",
+      "latitude": 47.639731,
+      "longitude": 4.388587,
+      "neighbourhood": "Grands Jardins (formal gardens) courtyard, Abbaye de Fontenay"
+    },
+    "verified_sources": [
+      "https://www.abbayedefontenay.com/decouvrir-fontenay/l-abbaye-et-ses-jardins/les-nouveaux-jardins",
+      "https://www.parcsetjardins.fr/jardins/1377-jardin-de-l-abbaye-de-fontenay"
+    ],
+    "access": "Paid entry: the Abbey of Fontenay (a UNESCO World Heritage Site) charges admission to enter the grounds and gardens where the tree stands.",
+    "transport": "Nearest station is Montbard (TGV stop), about 6km away; the abbey is not reachable on foot from a town centre and normally needs a short taxi/drive or the seasonal shuttle from Montbard.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Continuing an earlier pass's note (2026-09-05) rather than replacing it: found the second independent source it asked for (parcsetjardins.fr, the official Comite des Parcs et Jardins de France listing, independent of the abbey's own site), which corroborates an 18th-century plane tree among the garden's 'arbres centenaires'. The abbey's own site gives planting year 1780 and height ~40m; a girth of 6m (600cm) appears only in Alamy stock-photo captions describing the same tree, not in either primary source, so treat girth_cm as weaker-sourced and flag it as such for the writer. Planting date 1780 is a documented date FOR THIS SPECIMEN (not a bridge claim from the garden's own history), so the ~245-year age is a real estimate, not an invention. THE DESTINATION CALL asked for in the brief: this tree does NOT pass the single-famous-tree-destination test. The Abbaye de Fontenay is a UNESCO World Heritage Site and one of Europe's best-preserved Cistercian abbeys; visitors clearly travel for the abbey itself (its Romanesque church, cloister, forge, history), and the plane tree is one incidental feature among the abbey's 'Jardin Remarquable'-labelled grounds, not why anyone makes the trip. Recommend NOT treating this as a standalone single-tree exception entry; instead consider it only if a Marmagne/Fontenay-area page is ever built with enough OTHER independently-remarkable trees to clear the normal four-tree floor, or otherwise leave as a lead. Delivering the verified facts regardless per 'publish what verifies, the container decision is not mine to force.' RE-CONFIRMED 2026-09-07: still held, no container exists. Not written into a story; kept here as fully-verified research for whenever Marmagne/Fontenay earns other trees."
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "city": "Venon",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Venon is a small village above Grenoble, and its one mapped tree is the reason anyone from outside it has heard the name. The oak stands alone on an open hilltop, visible across the whole Gresivaudan valley and the Grenoble basin, a single dark mark on the skyline for people who have never walked up to it. France labelled it a national Arbre remarquable in 2017, and it survived a storm that tore off one of its three main limbs in 2024. Free, reached on foot from the village.",
+  "meta_description": "The Chene de Venon: a solitary oak above Grenoble, visible across the whole valley, French Arbre remarquable since 2017.",
+  "question_meta": "Venon's oldest tree is the Chene de Venon, a solitary oak of roughly 300 to 400 years on a hilltop above Grenoble.",
+  "question_answer": "The oldest tree in Venon is the Chene de Venon, an oak of roughly 300 to 400 years standing alone on open pasture on a hilltop above the village, overlooking the Gresivaudan valley and the Grenoble basin. France recognised it as an Arbre remarquable in April 2017.",
+  "question_context": "The oak's exact species has never been settled in any source we found: every one calls it simply a chene, oak, and stops there. The acorn stalks would settle it in an afternoon, so a visitor who looks closely can tell us more than any register has recorded. What is settled is its condition: a storm in late November 2024 tore off one of its three main limbs, and an arborist who examined the wound six months later called the tree in very good health, with centuries still ahead of it. It stands entirely alone on the hillside, which is what makes it visible from every direction across the valley floor, and about a hundred people climbed the hill for its 2017 recognition ceremony. An information panel with a QR code now stands at its foot. Visitors carve initials into the bark, which opens the wood to fungal decay in a tree that has already lost one limb; leave it alone.",
+  "hero_tree_id": "vno_001",
+  "oldest_tree_id": "vno_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Venon?",
+      "a": "The Chene de Venon, an oak of roughly 300 to 400 years standing alone on a hilltop above the village. France recognised it as an Arbre remarquable in 2017."
+    },
+    {
+      "q": "What species of oak is it?",
+      "a": "Nobody has recorded which one. Every source we found calls it simply a chene (oak) and stops there. If you visit and check the acorn stalks, tell us and we will update the page."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on open hillside pastureland above Venon with no gate or ticket, reachable on foot from the village."
+    },
+    {
+      "q": "Is the tree healthy?",
+      "a": "Yes. A storm tore off one of its three main limbs in late November 2024, but an arborist who examined it in 2025 called it in very good health, with centuries still ahead of it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vno_001",
+      "name": "Chene de Venon",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "roughly 300 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 500,
+      "height_m": 18,
+      "location": {
+        "address": "On a hillside above the village of Venon, Isere, overlooking the Gresivaudan valley and Grenoble basin",
+        "latitude": 45.178108,
+        "longitude": 5.80959,
+        "neighbourhood": "Venon, Isere"
+      },
+      "story": "A storm in late November 2024 tore one of its three main limbs off. Six months later an arborist looked at the wound and called the tree in very good health, with centuries still ahead of it.\n\nThe oak stands by itself on a hilltop above the village of Venon, on open pasture, with nothing else of its height anywhere near. Seen from the valley floor it is a single dark mark on the skyline, readable from every direction across the Grenoble basin and the Gresivaudan, which is how it came to work as a landmark for people who have never walked up to it. Eighteen metres tall, five metres round, and somewhere around 300 to 400 years old.\n\nFrance labelled it an Arbre remarquable in April 2017, and about a hundred people came up the hill for the ceremony, which is a good turnout for a tree in a field. There is an information panel at the foot of it now, with a QR code.\n\nEvery source we found calls it a chene and stops there. Nobody says which oak, and the acorn stalks would settle it in an afternoon, so if you go up and look, tell us what you see.\n\nOne last thing. Visitors carve their initials into the bark, and each cut opens the wood to fungal decay in a tree that has already been through a storm. Leave the knife in the car.",
+      "verified_sources": [
+        "https://www.echosciences-grenoble.fr/articles/le-chene-de-venon-labellise-arbre-remarquable-de-france",
+        "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/isere/grenoble/son-pouvoir-le-plus-impressionnant-c-est-sa-resilience-eventre-lors-d-une-tempete-le-celebre-chene-de-venon-est-en-pleine-forme-3160749.html"
+      ],
+      "access": "Free, stands alone on open hillside/pastureland above Venon; reachable on foot from the village. An information panel and QR code have been installed at the site.",
+      "transport": "No rail station in Venon itself; nearest is Grenoble, then a drive/hike up to the hillside above the village (roughly 10km from central Grenoble).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

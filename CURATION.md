@@ -2,6 +2,84 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 - Finished the standing _famous-france and _famous-poland verify claims: 5 trees, 3 new single-tree places plus one into Ghisonaccia
+
+Resumed into a window an earlier attempt had stopped 12 minutes in with 108
+of 120 minutes unspent. `passcheck.py --claims` showed two standing verify
+claims (`_famous-france`, `_famous-poland`, both by night-run) with real
+uncommitted output on disk: `data/research/famousfrance-verified.json` (4
+trees) and `famouspoland-verified.json` (5 trees), fully verified with
+sources and coordinates but no stories, so `leads.py --ready` correctly
+showed 0.
+
+Filtered to what should actually become a page before dispatching a
+write-stories pass, since two of the nine did not clear the bar: **the
+Fontenay Abbey plane tree**, whose own verify_notes recommend against a
+standalone page (a garden feature of an already-famous UNESCO abbey,
+people travel for the abbey rather than the tree), and **the Brzoza
+trio** (an oak and two limes near Torun, legally designated together but
+with no evidence of the wider fame the 2026-08-31 single-tree exception
+requires, only a municipal resolution and a forest-district webpage).
+Both are kept as fully-verified research rather than discarded: Fontenay
+back in `famousfrance-verified.json`, the Brzoza three in
+`famouspoland-verified.json`, for whenever a container opens (a Marmagne
+page with other trees; a Torun page; further evidence of fame).
+
+The other five got stories from a write-stories pass and were assembled
+into containers by hand:
+
+- **U Listincu** joined the existing Ghisonaccia page as arb_002. Its own
+  story already alluded to it ("the person who had already had
+  Ghisonaccia's other old tree, a mastic reckoned at a thousand years,
+  officially recognised"), so this closes a reference the page had been
+  carrying unfulfilled. Ghisonaccia is now 2 trees; oldest_tree_id moved
+  to arb_002 (700-1000 years vs arb_001's 200-250), intro/meta/question
+  page/FAQ all rewritten for two trees.
+- **Chene de Venon** (vno_001), a new single-tree place near Grenoble: a
+  solitary "vegetation lighthouse" oak visible across the whole valley,
+  French Arbre remarquable since 2017, ~100 people at its recognition
+  ceremony. Genus left unresolved (Quercus sp.), publish-and-ask.
+- **The Saman of Habitation Ceron** (lpr_001), a new place, Le Precheur,
+  Martinique: the park's headline attraction, survived the 1902 Pelee
+  eruption. Used the real commune name rather than the whole island,
+  matching the Venon/Rogalin/Sant'Alfio precedent of precise village-level
+  containers rather than a broad island page built for one tree. Country
+  set to France (Martinique is an overseas department), matching how
+  Corsica is treated. Its pin sits 6499km from the nearest other French
+  tree, which is real geography (island vs mainland/Corsica), not a data
+  error; added `lpr_001` to preflight's `CHECKED_BY_HAND` set alongside
+  the existing Pirangi do Norte precedent.
+- **Lech's Oak and Rus's Oak** (rog_001, rog_002), a new place, Rogalin,
+  Poland: two of a legendary named trio (Lech, Czech, Rus) beside Rogalin
+  Palace; Rus is dendrochronologically dated to 800-850 years (Institute
+  of Dendrology, Kornik, 2019), the oldest dated oak in Poland, Lech has
+  no dated age and the story says so plainly. The dead third oak, Czech,
+  appears only as context, never as its own entry, per the never-dead-tree
+  rule. Two distinct trees, two entries, not folded into one (unlike
+  Breukelen's indistinguishable lime pair), since each has its own
+  well-sourced, independent story.
+
+All four leads files updated with `status: published` and the tree id, so
+a future dedupe check reads them as done rather than re-litigating them
+(confirmed via `preflight.py`'s own "may already be published" NOTE, which
+now correctly flags all four against the new entries). Regenerated
+city-list.json/CITY_QUEUE.md, full Astro build (7435 pages), qa.py clean,
+preflight.py clean (0 problems after the CHECKED_BY_HAND fix),
+superlatives.py clean (694 claims, no collisions). Released both claims.
+
+Also checked rung 2 (site broken): the site itself is fully green (smoke,
+deploy, digest, review). The iOS app gate is red, on its fourth
+consecutive failed fix attempt for `testTappingAPinOpensItsTree` across
+several hours of CI time by (presumably) other continuations; did not
+duplicate that effort. REVIEW.md's two 2026-09-06 WARNs (business-rule
+phrasing in three FAQ answers, a contradiction in Contribute.swift) were
+both already fixed by an earlier pass; verified rather than re-fixed.
+
+`passcheck.py --pending` also surfaced 7 other already-verified
+single-tree files still needing only a story (Comfort Maple, Yongmunsa
+ginkgo, Itoshiro no Osugi, Myokoku-ji sotetsu, Rumskullaeken, Ushijima no
+Fuji, Whistler Cork Oak): bought and paid for, worth a write pass next.
+
 ## 2026-09-06 (continuation 18) - bomenbieb-netherlands verify claim finished: 5 trees, 4 new single-tree places, 1 into Apeldoorn
 
 Apeldoorn +1 (apd_010, Black Alder of the Sculpture Garden, single-sourced
