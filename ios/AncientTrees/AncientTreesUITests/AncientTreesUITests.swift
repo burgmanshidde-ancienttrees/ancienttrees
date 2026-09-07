@@ -460,7 +460,27 @@ final class AncientTreesUITests: XCTestCase {
             // a control, not that the camera framed one particular trunk. A tap on
             // a cluster zooms in instead, which only makes the next rows likelier
             // to land.
-            let top = map.frame.minY + 80          // clear of the compass and the notch
+            //
+            // THE REAL BUG, found 2026-09-07 from the failed run's own screenshot
+            // attachment (out/xcresult, not another blind guess): row 0 at a fixed
+            // 80pt never lands on the map at all. MapTab's search field and filter
+            // chips float in a .overlay(alignment: .top) OVER the full-bleed map
+            // (TreeMap ignoresSafeArea at .top), so a tap at map.frame.minY + 80
+            // hits that overlay first, wherever the device's safe area happens to
+            // put it. The captured screenshot shows exactly this: the species
+            // picker open with "Pedunculate Oak" selected, the map filtered to one
+            // tree, because row 0's taps landed on the Species chip and then on
+            // whatever the picker put under the next tap. Every prior fix here
+            // addressed WHEN to tap and never WHERE, which is why waiting longer,
+            // or on a real idle signal, changed nothing.
+            //
+            // So: anchor below the chip row itself rather than guessing a device
+            // safe-area offset. "Favourites" is the first chip and always exists,
+            // signed in or not (CLAUDE.md hard rule: nothing here signs anybody
+            // out), so its own frame is the one fact that is true on every device
+            // this runs on.
+            let favourites = app.buttons["Favourites"]
+            let top = favourites.exists ? favourites.frame.maxY + 16 : map.frame.minY + 170
             for row in 0...10 {
                 for dx in [0.5, 0.28, 0.72] {
                     let y = top + (visibleBottom - 40 - top) * Double(row) / 10
@@ -494,6 +514,13 @@ final class AncientTreesUITests: XCTestCase {
                     // reporting that the map has no pins.
                     if app.webViews.firstMatch.exists || app.buttons["Continue with Google"].exists {
                         XCTFail("a tap left the map: the sign-in sheet or a web view is up")
+                        return
+                    }
+                    // AND STOP IF A TAP HIT THE SPECIES PICKER RATHER THAN THE MAP,
+                    // which is the failure this whole rewrite exists to catch
+                    // early instead of silently: see the comment on `top` above.
+                    if app.navigationBars["Species"].exists {
+                        XCTFail("a tap opened the species picker instead of hitting the map")
                         return
                     }
                 }
