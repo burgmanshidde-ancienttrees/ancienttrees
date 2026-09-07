@@ -482,7 +482,25 @@ final class AncientTreesUITests: XCTestCase {
                     map.coordinate(withNormalizedOffset: .zero)
                        .withOffset(CGVector(dx: map.frame.width * dx, dy: y - map.frame.minY))
                        .tap()
-                    if app.buttons["Take me there"].waitForExistence(timeout: 0.5) {
+                    // 0.5s WAS TOO SHORT FOR WHAT A TREE TAP ACTUALLY DOES NOW,
+                    // diagnosed 2026-09-07 after three prior fixes (map-count
+                    // wait, then a retried sweep with growing pre-sweep delays)
+                    // both addressed waiting for the MAP to be ready and both
+                    // still failed the very next run. MapTab passes
+                    // onSelectTree: { navigator.push = .tree($0) } (see
+                    // TreeMap.Coordinator's tap handler, which calls it instead
+                    // of setting `selected` whenever the caller supplies it),
+                    // so a real pin tap here is a NavigationStack push to the
+                    // full TreeDetail page, not the inline sheet card this
+                    // test's older comments describe. A push transition plus
+                    // TreeDetail's own layout has more work to do than a sheet
+                    // height change, and 0.5s never gave it room to finish on a
+                    // loaded CI simulator. This also functions as the settle
+                    // time between grid taps: a cluster tap zooms the camera,
+                    // and the previous 0.5s let the next tap in the same sweep
+                    // land mid-animation, on coordinates that no longer matched
+                    // what the eye would see.
+                    if app.buttons["Take me there"].waitForExistence(timeout: 2.0) {
                         return
                     }
                     // AND STOP IF WE HAVE LEFT THE APP. Belt as well as braces:
