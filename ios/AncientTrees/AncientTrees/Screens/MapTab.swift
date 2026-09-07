@@ -30,6 +30,11 @@ struct MapTab: View {
     @State private var debugRefused =
         ProcessInfo.processInfo.arguments.contains("-refused")
 
+    /// Set once MapLibre reports itself idle (all requested tiles in, no
+    /// camera transition running), so a UI test can wait for pins to be
+    /// tappable instead of sleeping and hoping. See TreeMap.onMapIdle.
+    @State private var mapIdle = false
+
     @State private var selected: Tree?
     /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
     /// simctl cannot tap, so the one screen that only exists after a tap could
@@ -305,6 +310,7 @@ struct MapTab: View {
                     onLocationRefused: { refused = .location },
                     onSelectMine: { navigator.push = .mine($0) },
                     onSelectTree: { navigator.push = .tree($0) },
+                    onMapIdle: { mapIdle = true },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     // So the map can tell a fix from Dam square and retake its
                     // opening shot when the phone finally answers. See
@@ -332,6 +338,12 @@ struct MapTab: View {
                 // visible while the list scrolls and it is the handle that makes
                 // the sheet draggable again once it has (2026-08-25).
                 countStrip
+                // Invisible on purpose: a marker for testTappingAPinOpensItsTree
+                // to wait on, so it stops sleeping and guessing at when the
+                // pins are actually tappable. See TreeMap.onMapIdle.
+                if mapIdle {
+                    Color.clear.frame(width: 1, height: 1).accessibilityIdentifier("map-idle")
+                }
         } content: {
                 // The arbitration between dragging the sheet and scrolling what
                 // is inside it, which is the whole interaction and was wrong.
