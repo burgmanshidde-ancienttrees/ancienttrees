@@ -207,7 +207,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 10 | Leiden | 32.04 | 33,227 | 12 | 4 | 1 | 129 | 20 | measured |
 | 11 | Brisbane | 41.80 | 162,602 | 19 | 1 | 2 | 189 | 30 | measured |
 | 12 | Florence | 30.54 | 184,099 | 23 | 8 | 1 | 27 | 30 | measured |
-| 13 | Prague | 36.30 | 303,350 | 18 | 13 | 3 | 30 | 30 | measured |
+| 13 | Prague | 36.30 | 303,350 | 21 | 13 | 3 | 29 | 30 | measured |
 | 14 | Vienna | 34.55 | 283,090 | 32 | 13 | 5 | 376 | 30 | measured |
 | 15 | Arnhem | 25.03 | 31,478 | 38 | 1 | 3 | 200 | 20 | measured |
 | 16 | Palermo | 24.03 | 124,310 | 21 | 7 | 1 | 37 | 20 | measured |

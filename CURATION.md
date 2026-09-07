@@ -2,6 +2,68 @@
 
 <!-- archive-index -->
 
+## 2026-09-07 (continuation 4) - Prague write pass merged (+3); Nara reader sightings closed out (+4), 11 submissions answered
+
+Resumed a window a still earlier attempt had stopped after 57 minutes
+having shipped 5 trees elsewhere, with 63 of 120 minutes unspent.
+`passcheck.py --claims` showed a standing Prague verify claim with real
+output on disk (`data/research/prague-verified.json`, 3 trees fully
+verified, no story yet). Dispatched a write-stories pass on those 3
+(prg_019 Hungarian Oak of Italska Street, prg_020 Oak of U Malvazinky,
+prg_021 Plane of Jezerka Park), merged into `data/cities/prague.json`
+(18 to 21), fixed 3 stale count promises in the page copy (eighteen to
+twenty-one, sixteen more to twenty more, four planes to six), and one in
+`data/countries/czech-republic.json` (49 to 52 trees). Claim released.
+
+**11 unprocessed reader submissions were sitting in Supabase, all from
+this morning, all Hidde walking Nara with the app's "add a tree" camera
+flow.** A still-earlier continuation (see below) had already fetched and
+matched the 8 that carried photographs via `sightings_inbox.py`, filing
+them to `data/leads/_sightings.json`, but had dispatched a background
+research agent to identify them that never delivered: the session that
+started it ended first, the same Nara-loss pattern as 2026-08-03. Nothing
+had reached `data/research/`.
+
+Looked at all 8 photographs directly. Two ("I'm not sure which one it
+is") turned out to be the same Roben-sugi already published as nra_010,
+photographed seconds apart from the shot already approved as its page
+photo, not a new tree. The remaining 4 distinct trees (one cedar beside a
+small shrine near Nigatsu-do, a leaning cedar by the approach road, a
+broad tree by a park pond and pavilion, and a large ginkgo beside a
+temple wall in Suimon-cho, the last shot three times) went to a fresh
+verify pass with the photos, GPS and visual descriptions as the brief.
+
+**None of the four cleared the two-independent-source bar**: web and
+Japanese-language searches (municipal giant-tree lists, temple pages,
+OSM/Overpass reverse geocoding) found no named, individually documented
+tree at any of the four spots, only the photograph itself as evidence.
+Per Step 2 ("if sources conflict or only one source exists, include the
+tree but flag it"), published all four rather than leaving them in
+research limbo: nra_011 through nra_014, all `curation_status: flagged`,
+`location_precision: approximate`, no invented age, girth or name beyond
+a descriptive one, species left honestly uncertain on nra_013 and access
+phrased as view-only on nra_014 (temple ownership of the wall unclear).
+Each story ends by inviting the reader to name the exact spot. A
+title-length build break on nra_014's first-draft name (65 chars) was
+caught by the build and fixed before merging (renamed to fit under 60).
+Nara's meta_description count promise fixed (nine more to thirteen).
+
+Closed the loop on all 11 submissions via the service key: outcome set
+on each (`changed` for the 4 new trees and the first of the 3 ginkgo
+duplicates, `holds` with a composed reply for the 2 Roben-sugi
+duplicates and the other 2 ginkgo duplicates, `open_question` for one
+sighting whose photo never uploaded, `holds` for a worth-it vote on
+nra_005 and its undo). Custom replies checked clean against
+`mailcheck.py` before writing them to the rows; `contributor_reply.py`'s
+own scheduled run sends them. All 11 row ids appended to
+`data/submissions-processed.json`. `data/leads/_sightings.json` updated
+to `published`/`duplicate` with the resulting tree ids so a future pass
+does not re-litigate them.
+
+Build (4897 pages), qa.py, preflight.py (0 problems) and superlatives.py
+(702 claims, no collisions) all clean. `city_queue.py` rerun to keep
+`CITY_QUEUE.md`/`city-list.json` current. Nothing FOR HIDDE.
+
 ## 2026-09-07 (continuation 3) - Milan verify pass: 0 new (supply fully mined); Nara reader sightings processed, one photo held, deeper research dispatched
 
 Resumed a window a still earlier, unlogged attempt had stopped after 48
