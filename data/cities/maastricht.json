@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Maastricht's most remarkable trees sit on the edges of the things that shaped the city: a chestnut on a working farm above Amby, a grove of giant sequoias in a cemetery that has taken the city's dead since 1812, and a stand of 300-year-old oaks marking the outline of a baron's star-shaped forest garden above Kasteel Neercanne. Closer to the centre, Stadspark, one of the oldest city parks in the Netherlands, holds the country's tallest recorded plane tree alongside three beeches nearly as old as the park's own 19th-century layout.",
-  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. 14 verified trees, real stories, real locations.",
+  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. 15 verified trees, real stories, real locations.",
   "question_answer": "Maastricht's oldest tree with a reliable date is a stand of oaks ringing the edge of Cannerbos, a star-shaped forest garden Baron Daniel Wolfgang van Dopff laid out around 1700 beside Kasteel Neercanne, making them roughly 300 years old. A farm chestnut in Amby may be close in age or even older, but its planting date is genuinely disputed and unconfirmed.",
-  "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full 14.",
+  "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full 15.",
   "question_context": "Maastricht's oldest-tree claim goes to whichever standard matters more, a reliable date or a possibly older but unconfirmed one. The Cannerbos oaks ring the edge of a star-shaped forest garden a baron laid out around 1700, and their roughly 300-year age is treated as trustworthy because it is tied to a single, dated landscaping event rather than a guess from girth alone. The Molenweg chestnut could plausibly be just as old or older, but its own documentation shows real disagreement: the Bomenstichting's national register estimates an 1750-1800 planting, a 2022 measurement suggested 1800 plus or minus 40 years, and a persistent local legend crediting Russian Cossacks during the 1814 siege of Maastricht has been investigated and dismissed as implausible by the tree's own researchers. Only a core sample would settle it, and none has been taken. Stadspark's three oldest beeches and its record-height plane tree are both well measured but comparatively young, 150 to 160 years old, products of the park's 19th-century expansion rather than survivors of its 17th-century linden-lined origins, none of which are known to still stand.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Maastricht's remarkable trees free to visit?",
-      "a": "13 of the 14 are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
+      "a": "14 of the 15 are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
     },
     {
       "q": "Where is the tallest plane tree in the Netherlands?",
@@ -482,6 +482,41 @@
         "kind": "autumn colour",
         "label": "late October into November, when one tree carries red, orange and purple at once"
       }
+    },
+    {
+      "id": "maa_015",
+      "name": "The Tulip Tree of Proosdijpark",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly a century old",
+      "age_min": 100,
+      "age_max": 140,
+      "location": {
+        "address": "Proosdijpark, ter hoogte van de kerksteeg, Meerssen",
+        "latitude": 50.882864,
+        "longitude": 5.752402,
+        "neighbourhood": "Meerssen village centre"
+      },
+      "story": "The tulip tree is not a European tree at all. It belongs to the forests of the eastern United States, where it grows taller than almost anything else that drops its leaves in winter, and this one has spent roughly the last century doing it in a village park in Limburg, ten minutes on foot from Meerssen station.\n\nIt hides its best trick in plain sight. In June the crown fills with greenish-yellow cups streaked orange at the base, shaped near enough like tulips to have named the species, and held so high that most people walk under a flowering tree without seeing a single flower. The leaves settle the identification from the ground: four lobes and a flat top, as though someone took scissors to the tip. In October the whole crown turns clear yellow.\n\nIts age is softer than it looks written down. The register that records this tree puts the planting at around 1900 and marks even that with a question mark, so call it a century and leave room on either side. Nobody has put a tape around the trunk either. If you know when it went in, tell us.\n\nIt stands in the Proosdijpark, a listed monument site in the middle of the village, free and open, on the side towards the kerksteeg.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/tulpenboom-meerssen/"
+      ],
+      "access": "Free, in a public municipal park (Proosdijpark, a listed Rijksmonument site)",
+      "transport": "Meerssen NS railway station, about 10 minutes' walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the whole crown turns clear yellow"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }

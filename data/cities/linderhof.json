@@ -1,0 +1,62 @@
+{
+  "city": "Linderhof",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Schloss Linderhof is Ludwig II's smallest palace and the only one he lived to see finished, and one tree in its grounds predates the whole project by two centuries. When the landscape architect Carl von Effner cleared the site for the king's new terraces in the 1870s, a lime already standing where the Wasserparterre would go was left in place rather than felled. It is still there, still named for the king who spared it: the Konigslinde.",
+  "meta_description": "The Konigslinde of Schloss Linderhof: a roughly 300-year-old lime King Ludwig II spared from felling to build his terrace gardens around it.",
+  "question_meta": "The Konigslinde at Schloss Linderhof is a lime around 300 years old that King Ludwig II kept standing when he built the palace's terrace gardens around it.",
+  "question_answer": "The one tree worth naming at Schloss Linderhof is the Konigslinde, a small-leaved lime standing at the Wasserparterre that predates the palace itself. When Ludwig II's landscape architect Carl von Effner laid out the terrace gardens in the 1870s, this lime was already roughly 300 years old, and the king had it spared rather than cleared, building the new design around it instead.",
+  "question_context": "Two sources agree closely on this tree. Baumkunde.de's register entry, last field-measured 11 April 2025, records a girth of 5.88 metres, a height of 30 metres and an age of about 300 years. The Bavarian Palace Administration's own account of the park's development says the terraces were 'romantically transfigured by an already-existing, roughly 300-year-old linden, which the King spared from felling', putting the tree's own planting near the early 1600s, two centuries before Linderhof existed in any form. The trunk is now hollow, with two barred openings, and the crown is held together with cables, standard support for an old tree still carrying a full canopy. Baumkunde.de describes it as a slender, solitary specimen standing out against the much younger plantings around it, itself a clue to its age: everything else at Linderhof followed Effner's 1870s design, and this lime clearly did not. Linderhof, completed in 1878, is the smallest of Ludwig II's three palaces and the only one he lived to see finished. The palace interior and the small Konigshauschen charge admission; the park itself, including the Wasserparterre and this tree, is free.",
+  "hero_tree_id": "lnd_001",
+  "oldest_tree_id": "lnd_001",
+  "faq": [
+    {
+      "q": "How old is the Konigslinde at Linderhof?",
+      "a": "Around 300 years, based on a growth-rate estimate from its girth. That means it was already an old tree when King Ludwig II's gardens were laid out around it in the 1870s, roughly two centuries after it was likely planted."
+    },
+    {
+      "q": "Why is it called the King's Lime?",
+      "a": "Because Ludwig II chose to keep it. His landscape architect, Carl von Effner, cleared most of the site to build the Wasserparterre terrace gardens in the 1870s, but this lime was already standing there and the king had it spared rather than felled, so the new design was built around it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "The park is free to enter, including the Wasserparterre where the lime stands. Only the palace interior and the small Konigshauschen pavilion charge admission."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Schloss Linderhof is near Ettal and Oberammergau in Bavaria, reached by a regional RVO bus from either town. There is no rail station on site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lnd_001",
+      "name": "Königslinde (Schlosspark Linderhof)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 588,
+      "location": {
+        "address": "At the Wasserparterre, Schlosspark Linderhof, Ettal-Linderhof, Bavaria",
+        "latitude": 47.57022222,
+        "longitude": 10.96084722,
+        "neighbourhood": "Schlosspark Linderhof, Ettal"
+      },
+      "story": "When King Ludwig II laid out the gardens of Linderhof, his smallest and only fully finished palace, the plan called for clearing most of what already grew on the site to make way for Carl von Effner's new terraces. One tree was excused. A lime already standing where the Wasserparterre would go, already old, was left in place and folded into the design rather than felled, and the terrace was built to frame it. It is still there, and it is still the name most people use for that exact spot: the Konigslinde, the king's lime.\n\nIt was already around 300 years old when Ludwig spared it in the 1870s, which puts its own planting somewhere near the early 1600s, two centuries before Linderhof existed as anything at all. The trunk is hollow now, with two barred openings, and the crown is held together with cables, an old tree doing an old tree's structural work with some engineering help. A survey in April 2025 measured the girth at 5.88 metres, among the freshest measurements on record for any tree this project publishes.\n\nThe palace charges admission for its interior, the grottoes and the golden dining room Ludwig built to eat alone in. The park around the Konigslinde does not, so anybody walking those gardens can stand under the one tree the king decided not to cut down.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/3434-koenigslinde_im_schlosspark_linderhof/",
+        "https://www.schlosslinderhof.de/deutsch/park/entsteh.htm"
+      ],
+      "access": "Free. The palace park (Schlosspark Linderhof) has free entry; only the palace interior and the small Koenigshaeuschen charge admission. The linden stands in the open park at the Wasserparterre, a short walk from the palace.",
+      "transport": "Schloss Linderhof, near Ettal/Oberammergau, Bavaria; reached by a regional RVO bus from Oberammergau or Garmisch-Partenkirchen, no rail station on site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

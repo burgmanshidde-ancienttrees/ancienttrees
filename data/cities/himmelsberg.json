@@ -1,0 +1,70 @@
+{
+  "city": "Himmelsberg",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Himmelsberg is a hamlet in Hesse with one reason to visit: a lime tree trained, over centuries, into the shape of a room. Three metres up its trunk, four main limbs run out flat onto a steel-and-timber frame, floored like a dance floor grown rather than built. Villages used to hold their court sessions and their festivals under trees shaped this way; almost none of the type survive. This one does, a protected natural monument since 1971 and, since 2001, the tree on a German postage stamp.",
+  "meta_description": "The Tanzlinde of Himmelsberg: a lime trained into a dance floor three metres up, a protected natural monument since 1971, on a 2001 German postage stamp.",
+  "question_meta": "Himmelsberg's Tanzlinde, a lime trained into a dance floor, is disputed at 450 to over 750 years old.",
+  "question_answer": "Himmelsberg's only tree, and its only reason to appear on a map, is the Tanzlinde beside St. Nikolaus church: a large-leaved lime trained since long before living memory into a wide, floored platform three metres up its trunk. Its age is disputed rather than settled: a 2014 dendrology survey estimated 450 years from the girth, while the village's own account, tied to its 1243 founding charter, puts it at 750 years or more. The trunk is hollow, so no core sample can decide between them.",
+  "question_context": "The disagreement over this tree's age is not carelessness, it is what a hollow trunk does to dating. A 2014 survey by monumentale-eichen.de measured a girth of nearly nine metres and derived roughly 450 years from typical growth rates for the species. The village's own tourism page argues from documentary history instead, linking the tree to Himmelsberg's 1243 founding charter and putting it past 750 years, with some locals claiming closer to a thousand. Neither side has a ring count to settle it, because the district's nature conservation authority has refused permission to bore into the trunk, which would risk the tree to answer a question of curiosity. Both figures are recorded here rather than resolved. What is not in question is the tree's official status: a protected Naturdenkmal since 29 December 1971, and the subject of a Deutsche Post stamp issued in 2001 as part of a series on Germany's natural monuments. It is a Tanz- und Gerichtslinde, a lime deliberately trained flat to host village dances and, in earlier centuries, open-air court sessions, a tradition that has died out almost everywhere the trees themselves have not.",
+  "hero_tree_id": "hmb_001",
+  "oldest_tree_id": "hmb_001",
+  "faq": [
+    {
+      "q": "How old is the Tanzlinde of Himmelsberg?",
+      "a": "Disputed. A 2014 dendrology survey estimates about 450 years from its girth. The village's own account ties it to the 1243 founding charter and puts it past 750 years, possibly close to a thousand. The trunk is hollow, so no ring count can settle it, and the local authority has declined to allow boring into the tree to try."
+    },
+    {
+      "q": "What is a Tanzlinde?",
+      "a": "A lime tree deliberately trained flat, usually on a supporting frame, so its limbs form a platform villages could dance on or hold court sessions under. Himmelsberg's is a working example, floored and railed roughly three metres up the trunk."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open, beside St. Nikolaus church on what used to be the village churchyard, with no gate and no charge."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Himmelsberg is a small village in the Kirchhain district of Marburg-Biedenkopf, Hesse, with no rail station of its own. A car or regional bus from Kirchhain is the practical route."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hmb_001",
+      "name": "Tanzlinde (Himmelsberg)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "sources disagree, roughly 450 to 750+ years",
+      "age_min": 450,
+      "age_max": 1000,
+      "girth_cm": 896,
+      "location": {
+        "address": "Beside St. Nikolaus-Kirche, Himmelsberg (a Kirchhain district), Marburg-Biedenkopf, Hesse",
+        "latitude": 50.859196,
+        "longitude": 8.914606,
+        "neighbourhood": "Himmelsberg, Kirchhain"
+      },
+      "story": "Climb the ladder built against its trunk and you reach a room. Three metres up, this lime's four main limbs run out flat and horizontal, trained over generations onto a steel-and-timber frame into a wide platform, floored and railed like a dance floor built from a living tree. Villages across Germany once held court sessions and festivals under trees shaped exactly this way, a Tanz- und Gerichtslinde, but most of the type have died or been cut down. Himmelsberg's has been a protected natural monument since 1971 and still stands, still trained, on what used to be the village churchyard beside St. Nikolaus church.\n\nNobody agrees on its age, and the tree itself is why. The trunk is hollow, so no core sample can count its rings, and the district's nature authority has declined to let anyone drill for one rather than risk the tree to settle a number. A 2014 survey measured the girth at nearly nine metres and estimated 450 years from growth rate. The village's own telling runs longer, tying the lime to Himmelsberg's founding charter of 1243 and putting it at 750 years or more; some locals say closer to a thousand. Both figures are recorded here rather than picked.\n\nWhat is not disputed: in 2001 Deutsche Post put this exact tree on a postage stamp, in a series honouring the country's natural monuments. A tree trained into a room, still standing, still shaped, still argued about.",
+      "verified_sources": [
+        "https://www.monumentale-eichen.de/andere-baumarten/linden/himmelsberg",
+        "https://www.himmelsberg.net/tourismus/linde/"
+      ],
+      "access": "Free, public. Stands on the village's former churchyard, now a green space, about 100m into the village beside St. Nikolaus church.",
+      "transport": "Rural village near Kirchhain, Hesse; a car or regional bus is the practical way in, no station in the village itself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "June and July, when the lime flowers over the dance floor"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
