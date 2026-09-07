@@ -1,6 +1,34 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation 4) - Prague +3, Nara +4 from reader photos, 11 submissions answered
+
+Resumed a window a still earlier attempt had stopped after 57 minutes
+having shipped 5 trees, 63 minutes unspent. Two pieces of standing work
+were waiting: a claimed Prague verify pass with 3 trees already
+researched but not written, and 8 reader-submitted Nara photographs
+(Hidde walking Nara this morning with the app's own "add a tree" flow)
+whose identification had been dispatched by an earlier continuation to a
+background agent that never delivered, because its own session ended
+first.
+
+Wrote and merged Prague's 3 (18 to 21 trees), fixing 3 stale count
+promises in its page copy and one in the Czech Republic country page.
+
+Looked at all 8 Nara photographs directly. Two were the Roben-sugi
+already on the site (nra_010), photographed seconds apart from its
+approved photo. The other 4 are genuinely distinct trees near
+Nigatsu-do, in Nara Park and beside a temple wall, none matched to a
+named source despite searching, so all four published flagged, honest
+about the gaps (no age, no girth, uncertain species on one, view-only
+access on another), inviting the reader to help name them: nara now 14
+trees.
+
+Closed the loop on all 11 waiting submissions (outcomes set, 3 custom
+replies mailcheck-clean, the rest getting the standard template).
+`data/leads/_sightings.json` updated so nobody re-researches these.
+Build, qa, preflight and superlatives all clean. Nothing FOR HIDDE.
+
 ## 2026-09-07 (continuation 2) - 5 trees merged from a stranded write pass, 2 photos approved, nothing new researched
 
 Resumed a window a still earlier attempt had stopped after 24 minutes
