@@ -589,7 +589,7 @@
      "source": "inaturalist",
      "obs_location": "13.7518333333,100.4920583333",
      "judged": "reject",
-     "verdict": "Tourists with a parasol fill the foreground and the fig sits small behind them; the observation is identified as Ficus lyrata, not the bodhi tree."
+     "verdict": "species mismatch: iNat obs is Ficus lyrata (fiddle-leaf fig), the tree is Ficus religiosa (Bodhi tree)"
     },
     {
      "title": "iNat obs 196507425 (Ficus lyrata)",
@@ -607,7 +607,9 @@
      "licence": "CC BY",
      "author": "(c) Gonzalo Ganda Álvarez, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "13.751888032,100.4922042042"
+     "obs_location": "13.751888032,100.4922042042",
+     "judged": "reject",
+     "verdict": "unspecified Ficus, no confirmation it is F. religiosa or this specific temple tree"
     },
     {
      "title": "iNat obs 236549425 (Ficus)",
@@ -31016,7 +31018,9 @@
      "author": "Doug Kerr from Albany, NY, United States",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-2.0 Category:Extracted images Category:Flickr images reviewed by FlickreviewR 2 Category:Sorrento, Maine"
+     "cats": "Category:CC-BY-SA-2.0 Category:Extracted images Category:Flickr images reviewed by FlickreviewR 2 Category:Sorrento, Maine",
+     "judged": "reject",
+     "verdict": "wrong location entirely: Sorrento, Maine, USA, not Sorrento/Piano di Sorrento, Italy"
     },
     {
      "title": "File:Sorrento BW 2013-05-12 14-22-51.jpg",
@@ -32161,7 +32165,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "Close-up of lime leaves and flowers, no trunk and no whole tree. The sweep attached the same observation to both lindens of the pair."
+     "verdict": "species mismatch: this iNat obs is Tilia americana, the tree is Tilia platyphyllos Vitifolia"
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -32189,7 +32193,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "Same leaf-and-flower close-up the sweep also attached to ott_002; nothing that identifies either tree of the pair."
+     "verdict": "species mismatch: this iNat obs is Tilia americana, the tree is Tilia platyphyllos Vitifolia"
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -32217,7 +32221,7 @@
      "source": "inaturalist",
      "obs_location": "45.4272962,-75.6964251997",
      "judged": "reject",
-     "verdict": "a hand holding a flowering shoot, a foliage close-up rather than the tree"
+     "verdict": "close-up of a leaf and flowers in a hand, not the tree itself; fails the Cadiz framing standard regardless of species match"
     },
     {
      "title": "iNat obs 121738621 (Cladrastis kentukea)",
@@ -32263,7 +32267,9 @@
      "author": "",
      "lat": null,
      "lng": null,
-     "cats": "Category:Files with no machine-readable author Category:Mackenzie Bowell Category:Media lacking author information Category:PD-old missing SDC copyright status Category:PD Canada"
+     "cats": "Category:Files with no machine-readable author Category:Mackenzie Bowell Category:Media lacking author information Category:PD-old missing SDC copyright status Category:PD Canada",
+     "judged": "reject",
+     "verdict": "portrait of a person (PM Mackenzie Bowell), name-collision false match, not a tree at all"
     }
    ]
   },
@@ -36387,7 +36393,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:2025 in Alkmaar Category:CC-BY-SA-4.0 Category:Files by User:FakirNL Category:Gevelsteen Alcmaria Victrix Category:Netherlands photographs taken on 2025-11-10 Category:Self-published work"
+     "cats": "Category:2025 in Alkmaar Category:CC-BY-SA-4.0 Category:Files by User:FakirNL Category:Gevelsteen Alcmaria Victrix Category:Netherlands photographs taken on 2025-11-10 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "photo of a facade stone/plaque, not a tree"
     }
    ]
   },
@@ -36947,7 +36955,9 @@
      "author": "Ben Bender",
      "lat": 52.168981,
      "lng": 5.906435,
-     "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2013-02-10 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Ugchelen"
+     "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2013-02-10 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Ugchelen",
+     "judged": "reject",
+     "verdict": "2.5km from the pin, a generic village view, not the specific pollarded lime"
     },
     {
      "title": "File:Ugchelen, Netherlands - panoramio (2).jpg",
@@ -36957,7 +36967,9 @@
      "author": "Ben Bender",
      "lat": 52.166148,
      "lng": 5.902953,
-     "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2013-02-10 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Ugchelen"
+     "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2013-02-10 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Ugchelen",
+     "judged": "reject",
+     "verdict": "2.9km from the pin, a generic village view, not the specific pollarded lime"
     },
     {
      "title": "File:Ugchelen, Netherlands - panoramio (3).jpg",
@@ -39764,7 +39776,9 @@
      "author": "Pim van Tend",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Deventer Category:Gemeentelijke monumenten with known IDs Category:Self-published work"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Deventer Category:Gemeentelijke monumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "street view of houses on Diepenveenseweg, no tree or cemetery visible"
     },
     {
      "title": "File:Deventer-diepenveenseweg-2106120014.jpg",
@@ -40564,7 +40578,9 @@
      "author": "F.Eveleens",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-05-01 Category:On OSM Category:Self-published work Category:War memorials in the Netherlands with known IDs Category:Wilhelmina by Charlotte van Pallandt (Rotterdam)"
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-05-01 Category:On OSM Category:Self-published work Category:War memorials in the Netherlands with known IDs Category:Wilhelmina by Charlotte van Pallandt (Rotterdam)",
+     "judged": "reject",
+     "verdict": "wrong city: this is a Rotterdam statue of Queen Wilhelmina, matched only by the name-coincidence 'Wilhelmina Monument'; not a tree either"
     },
     {
      "title": "File:Statue of Queen Wilhelmina.jpg",
@@ -40574,7 +40590,9 @@
      "author": "Steven Lek",
      "lat": null,
      "lng": null,
-     "cats": "Category:2007 in The Hague Category:Netherlands photographs taken on 2007-12-23 Category:PD-self Category:Photographs by User:Tukka Category:Self-published work Category:War memorials in the Netherlands with known IDs Category:Wilhelmina by Charlotte van Pallandt (The Hague)"
+     "cats": "Category:2007 in The Hague Category:Netherlands photographs taken on 2007-12-23 Category:PD-self Category:Photographs by User:Tukka Category:Self-published work Category:War memorials in the Netherlands with known IDs Category:Wilhelmina by Charlotte van Pallandt (The Hague)",
+     "judged": "reject",
+     "verdict": "a statue, not a tree, matched only by name coincidence"
     },
     {
      "title": "File:Wilhelmina - Queen of the Netherlands.jpg",
@@ -41278,7 +41296,9 @@
      "author": "PCB75\n\n\nObject location41° 53′ 04.48″ N, 1° 58′ 49.58″ E View this and other nearby images on: OpenStreetMap 41.884578; ",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia España in 2011 Category:CC-BY-SA-3.0-ES Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Masia les Esglésies de Santa Maria Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ28"
+     "cats": "Category:All media supported by Wikimedia España in 2011 Category:CC-BY-SA-3.0-ES Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Masia les Esglésies de Santa Maria Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ28",
+     "judged": "reject",
+     "verdict": "photo of the farmhouse building Ca n'Iglesies, not a tree"
     },
     {
      "title": "File:Placa a Josep Iglesies, a la Mussara.JPG",
@@ -41328,7 +41348,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Attribution-gencat Category:Attribution only license Category:Files from external sources with reviewed licenses Category:Freixe de l'Aulet Category:Taken with Sony DSC-H7",
-     "source": "wikidata/Q21042519"
+     "source": "wikidata/Q21042519",
+     "judged": "approve",
+     "verdict": "trunk and lower crown fill the frame, in leaf, daylight; filename and Wikidata Q21042519 match the tree's own register name Freixe de l'Aulet exactly"
     }
    ]
   },
@@ -41347,7 +41369,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Attribution-gencat Category:Attribution only license Category:Files from external sources with reviewed licenses Category:Pi Gros d'en Cama",
-     "source": "wikidata/Q132058651"
+     "source": "wikidata/Q132058651",
+     "judged": "approve",
+     "verdict": "whole tree in frame, distinct silhouette, blue sky, well lit; filename matches the tree's own register name Pi Gros d'en Cama (the story names both this and Pi de Romanya)"
     }
    ]
   },
@@ -41366,7 +41390,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Attribution-gencat Category:Attribution only license Category:Files from external sources with reviewed licenses Category:Llentiscle de Torrent d'Empordà",
-     "source": "wikidata/Q132046416"
+     "source": "wikidata/Q132046416",
+     "judged": "approve",
+     "verdict": "whole shrub-tree in frame showing its sprawling gnarled form, matches the tree's own register name Llentiscle de Torrent via Wikidata"
     }
    ]
   },
@@ -41392,7 +41418,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Attribution-gencat Category:Attribution only license Category:Files from external sources with reviewed licenses Category:Pi Gros de l'Espinau Category:Unknown date",
-     "source": "wikidata/Q132204071"
+     "source": "wikidata/Q132204071",
+     "judged": "reject",
+     "verdict": "degraded archival slide scan, strong unnatural blue colour cast, looking straight up into canopy rather than showing the tree"
     }
    ]
   },
@@ -41736,7 +41764,9 @@
      "author": "Wutsje",
      "lat": 53.22126111,
      "lng": 6.56106944,
-     "cats": "Category:2009 in Groningen (city) Category:CC-BY-SA-3.0 Category:Guyotmonument (Groningen) Category:Guyotplein (Groningen) Category:Information field template with formatting Category:Netherlands photographs taken on 2009-04-20 Category:Panoramas of Groningen (city) Category:Rijksmonumenten with known IDs"
+     "cats": "Category:2009 in Groningen (city) Category:CC-BY-SA-3.0 Category:Guyotmonument (Groningen) Category:Guyotplein (Groningen) Category:Information field template with formatting Category:Netherlands photographs taken on 2009-04-20 Category:Panoramas of Groningen (city) Category:Rijksmonumenten with known IDs",
+     "judged": "reject",
+     "verdict": "wide distant panorama of the square with many similar trees in a row; cannot be sure which one is the specific maple"
     },
     {
      "title": "File:Groningen Guyotplein 2.JPG",
@@ -42051,7 +42081,9 @@
      "author": "Ludvig14",
      "lat": 52.017211,
      "lng": 4.351603,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 4° E) Category:Kalverbos, Delft Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 4° E) Category:Kalverbos, Delft Category:Self-published work",
+     "judged": "reject",
+     "verdict": "photo of a gravestone (Louis XVII memorial), not a tree"
     },
     {
      "title": "File:Delft Kalverbos seen from the south.jpg",
@@ -44399,7 +44431,9 @@
      "author": "Ymblanter",
      "lat": 52.283589,
      "lng": 4.661704,
-     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "2.8km from the pin, a bridge photo, not the specific maple by the church"
     },
     {
      "title": "File:Nieuw-Vennep Bennebroekerwegbrug 05.jpg",
@@ -44409,7 +44443,9 @@
      "author": "Ymblanter",
      "lat": 52.284278,
      "lng": 4.661768,
-     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "2.8km from the pin, a bridge photo, not the specific maple by the church"
     },
     {
      "title": "File:Nieuw-Vennep Hoofdweg 983-985.jpg",
@@ -44469,7 +44505,9 @@
      "author": "Pymouss",
      "lat": 52.2821,
      "lng": 4.663,
-     "cats": "Category:2019 in Haarlemmermeer Category:Aerial photographs of Hoofddorp Category:CC-BY-SA-4.0 Category:Files by Pymouss Category:Images supported by Wikimedia France - Sterenn Category:Media supported by Wikimedia France Category:Netherlands photographs taken on 2019-10-24 Category:Self-published work"
+     "cats": "Category:2019 in Haarlemmermeer Category:Aerial photographs of Hoofddorp Category:CC-BY-SA-4.0 Category:Files by Pymouss Category:Images supported by Wikimedia France - Sterenn Category:Media supported by Wikimedia France Category:Netherlands photographs taken on 2019-10-24 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "3.3km from the pin, an aerial photo of Hoofddorp, not the specific wingnut tree"
     },
     {
      "title": "File:Hoofddorp Toolenburgbrug 03.jpg",
@@ -44479,7 +44517,9 @@
      "author": "Ymblanter",
      "lat": 52.2896,
      "lng": 4.6715,
-     "cats": "Category:2016 in Haarlemmermeer Category:Bridges in Hoofddorp Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:Bridges in Hoofddorp Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Netherlands photographs taken on 2016-02-07 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "2.3km from the pin, a bridge photo, not the specific wingnut tree"
     },
     {
      "title": "File:Hoofddorp Toolenburgbrug 04.jpg",
@@ -45022,7 +45062,9 @@
      "author": "Rudolphous",
      "lat": 52.228731,
      "lng": 5.1589,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cryptomeria japonica (cultivated) Category:Cupressaceae at Pinetum Blijdenstein Category:Cupressaceae in the Netherlands Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cryptomeria japonica (cultivated) Category:Cupressaceae at Pinetum Blijdenstein Category:Cupressaceae in the Netherlands Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "species mismatch: filename names Cryptomeria japonica (Japanese cedar), the tree is Thuja plicata (Western Red Cedar)"
     },
     {
      "title": "File:Pinetum Blijdenstein 54 - Japanse Cipres (Cryptomeria japonica).jpg",
@@ -45032,7 +45074,9 @@
      "author": "Rudolphous",
      "lat": 52.228731,
      "lng": 5.1589,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cryptomeria japonica (cultivated) Category:Cupressaceae at Pinetum Blijdenstein Category:Cupressaceae in the Netherlands Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cryptomeria japonica (cultivated) Category:Cupressaceae at Pinetum Blijdenstein Category:Cupressaceae in the Netherlands Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "species mismatch: filename names Cryptomeria japonica (Japanese cedar), the tree is Thuja plicata (Western Red Cedar)"
     },
     {
      "title": "iNat obs 124510048 (Thuja plicata)",
@@ -46240,7 +46284,9 @@
      "author": "Unknown photographer (Verenigde Fotobureaux)",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Eduard Otto Joseph Maria van Hövell tot Westerflier Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Military people in Maastricht Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Eduard Otto Joseph Maria van Hövell tot Westerflier Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Military people in Maastricht Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)",
+     "judged": "reject",
+     "verdict": "1925 archival photo of a reburial ceremony, not a tree photo"
     },
     {
      "title": "File:Maastricht, Waldeckpark, herbegrafenis Des Tombes, 1925 (1a).jpg",
@@ -46416,7 +46462,9 @@
      "author": "FrankOverman",
      "lat": 50.84449,
      "lng": 5.68204,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Goldschmidt Stolpersteine Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Goldschmidt Stolpersteine Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht",
+     "judged": "reject",
+     "verdict": "a Stolperstein holocaust memorial paving stone, matched only by the surname Nussbaum(-boom); not a tree"
     },
     {
      "title": "File:Stolperstein für Markus Nussbaum (Maastricht).jpg",
@@ -46426,7 +46474,9 @@
      "author": "FrankOverman",
      "lat": 50.84449,
      "lng": 5.68204,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht",
+     "judged": "reject",
+     "verdict": "a Stolperstein holocaust memorial paving stone, matched only by the surname Nussbaum(-boom); not a tree"
     }
    ]
   },
@@ -47096,7 +47146,9 @@
      "author": "Sebleouf",
      "lat": 51.915999,
      "lng": 4.474294,
-     "cats": "Category:2019 in Rotterdam Category:CC-BY-SA-4.0 Category:Eendrachtsplein (Rotterdam metro) Category:Files by User:Sebleouf Category:Images of Rotterdam by Sebleouf Category:Netherlands photographs taken on 2019-04-19 Category:Self-published work"
+     "cats": "Category:2019 in Rotterdam Category:CC-BY-SA-4.0 Category:Eendrachtsplein (Rotterdam metro) Category:Files by User:Sebleouf Category:Images of Rotterdam by Sebleouf Category:Netherlands photographs taken on 2019-04-19 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "metro station entrance, not a tree"
     }
    ]
   },
@@ -47232,7 +47284,9 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Entomologists from France Category:Henri Gadeau de Kerville Category:PD-old missing SDC copyright status Category:Template Unknown (author)"
+     "cats": "Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Entomologists from France Category:Henri Gadeau de Kerville Category:PD-old missing SDC copyright status Category:Template Unknown (author)",
+     "judged": "reject",
+     "verdict": "1884 portrait photo of a person, not a tree"
     },
     {
      "title": "File:Tombe d'Henri Gadeau de Kerville (1858–1940) 1.jpg",
@@ -47242,7 +47296,9 @@
      "author": "Antoine Rex",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Chapelle du cimetière monumental de Rouen Category:Henri Gadeau de Kerville Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Chapelle du cimetière monumental de Rouen Category:Henri Gadeau de Kerville Category:Self-published work",
+     "judged": "reject",
+     "verdict": "photo of a grave/tomb, not a tree"
     },
     {
      "title": "File:Tombe d'Henri Gadeau de Kerville (1858–1940) 2.jpg",
@@ -52516,7 +52572,9 @@
      "lat": 54.89784,
      "lng": 23.92909,
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Kodak EasyShare V1003 Category:Vytautas park linden",
-     "source": "wikidata/Q16477220"
+     "source": "wikidata/Q16477220",
+     "judged": "approve",
+     "verdict": "trunk and crown fill the frame, confirmed by the tree's own on-site official sign reading Mazalape liepa (small-leaved lime), state-protected natural heritage object"
     }
    ]
   },
@@ -52542,7 +52600,9 @@
      "lat": 54.87434,
      "lng": 24.023,
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pažaislis oak Category:Self-published work Category:Taken with Kodak EasyShare V1003",
-     "source": "wikidata/Q16473814"
+     "source": "wikidata/Q16473814",
+     "judged": "approve",
+     "verdict": "trunk and canopy visible, identity confirmed by the tree's own on-site sign reading Taikos kalno azuolas (Peace Hill Oak); winter/bare but trunk detail and colour are good"
     }
    ]
   },
@@ -53878,7 +53938,9 @@
      "author": "Jacob Symons Bonga (1758-1848)",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:Jacob Symons Bonga Category:PD-Art (PD-old-auto-expired) Category:PD-old-100-expired Category:Prinsentuin, Leeuwarden"
+     "cats": "Category:CC-PD-Mark Category:Jacob Symons Bonga Category:PD-Art (PD-old-auto-expired) Category:PD-old-100-expired Category:Prinsentuin, Leeuwarden",
+     "judged": "reject",
+     "verdict": "a historical painting, not a photograph of the actual tree"
     },
     {
      "title": "File:Prinsentuin Leeuwarden muziekkoepel museum 2021.jpg",
@@ -58610,8 +58672,8 @@
      "author": "(c) Caleb Catto, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "-43.0982555,146.80252",
-     "judged": "reject",
-     "verdict": "One eucalypt stem among many in dense forest, crown not readable and nothing distinguishes it from its neighbours."
+     "judged": "hold",
+     "verdict": "72m from our pin in dense tall-eucalypt forest with many similar giant E. regnans nearby; no marker/signage visible confirming this specific trunk is Centurion, not just another tall tree in the same stand"
     },
     {
      "title": "iNat obs 321882049 (Eucalyptus regnans)",
@@ -59573,7 +59635,9 @@
      "author": "そらみみ",
      "lat": 39.923247,
      "lng": 116.392953,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Guilty Chinese Scholartree Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Guilty Chinese Scholartree Category:Self-published work",
+     "judged": "approve",
+     "verdict": "trunk and crown fill the frame, in leaf, filename names the exact species and park; matches the tree's own gnarled-trunk history"
     },
     {
      "title": "File:Styphnolobium japonicum in Jingshan Park 2.jpg",
@@ -61399,7 +61463,9 @@
      "author": "The original uploader was Redjar at English Wikipedia.",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bennington County Courthouse (Manchester, Vermont) Category:CC-BY-SA-3.0-migrated-with-disclaimers Category:GFDL-en Category:License migration completed"
+     "cats": "Category:Bennington County Courthouse (Manchester, Vermont) Category:CC-BY-SA-3.0-migrated-with-disclaimers Category:GFDL-en Category:License migration completed",
+     "judged": "reject",
+     "verdict": "wrong location: Manchester, Vermont, USA, not Manchester, UK"
     },
     {
      "title": "File:Manchester, Maine (8180315603).jpg",
@@ -61409,7 +61475,9 @@
      "author": "Doug Kerr from Albany, NY, United States",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Manchester, Maine"
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Manchester, Maine",
+     "judged": "reject",
+     "verdict": "wrong location: Manchester, Maine, USA, not Manchester, UK"
     },
     {
      "title": "File:Manchester MO edited.jpg",
@@ -61479,7 +61547,9 @@
      "author": "Gerald England",
      "lat": 53.40839093,
      "lng": -2.23011503,
-     "cats": "Category:CC-BY-SA-2.0 Category:Fletcher Moss Botanical Garden Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:CC-BY-SA-2.0 Category:Fletcher Moss Botanical Garden Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "general park pergola/lawn view, no specific tree identifiable as Adam's Laburnum"
     }
    ]
   },
@@ -61509,7 +61579,9 @@
      "author": "Gerald England",
      "lat": 53.40839093,
      "lng": -2.23011503,
-     "cats": "Category:CC-BY-SA-2.0 Category:Fletcher Moss Botanical Garden Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:CC-BY-SA-2.0 Category:Fletcher Moss Botanical Garden Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "general park pergola/lawn view, no specific tree identifiable as the Amur Cork Tree"
     }
    ]
   },
@@ -61527,7 +61599,9 @@
      "author": "Tom Jolliffe",
      "lat": 53.45101,
      "lng": -2.2486,
-     "cats": "Category:1987 in the City of Manchester Category:Alexandra Park, Manchester Category:CC-BY-SA-2.0 Category:Images by Tom Jolliffe Category:Images from Geograph Britain and Ireland Category:Information field template with formatting"
+     "cats": "Category:1987 in the City of Manchester Category:Alexandra Park, Manchester Category:CC-BY-SA-2.0 Category:Images by Tom Jolliffe Category:Images from Geograph Britain and Ireland Category:Information field template with formatting",
+     "judged": "reject",
+     "verdict": "generic bare-winter park view with several trees, no specific tree identifiable as the Variegated Green Ash"
     },
     {
      "title": "File:Holly Tree, Alexandra Park, Moss Side, Manchester - geograph.org.uk - 633149.jpg",
@@ -61537,7 +61611,9 @@
      "author": "Tom Jolliffe",
      "lat": 53.45101,
      "lng": -2.248,
-     "cats": "Category:1987 in the City of Manchester Category:Alexandra Park, Manchester Category:Aquifoliaceae in England Category:CC-BY-SA-2.0 Category:Images by Tom Jolliffe Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Trees in the City of Manchester"
+     "cats": "Category:1987 in the City of Manchester Category:Alexandra Park, Manchester Category:Aquifoliaceae in England Category:CC-BY-SA-2.0 Category:Images by Tom Jolliffe Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Trees in the City of Manchester",
+     "judged": "reject",
+     "verdict": "species mismatch: this is a holly tree, the tree is a Variegated Green Ash"
     },
     {
      "title": "File:Old bowling green in Alexandra Park with Smalldale Avenue behind - Whalley Range, Manchester, UK - panoramio.jpg",
@@ -62453,7 +62529,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy missing SDC depicts Category:Cultural heritage monuments in Italy missing SDC location of creation Category:Cultural heritage monuments in Italy with known IDs Category:Files uploaded via webapp Wiki Loves Monuments Italia - mobile version in 2023 Category:Images from Wiki Loves Monuments 2023 Category:Images from Wiki Loves Monuments 2023 in Italy Category:Images from Wiki Loves Monuments 2023 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2023 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2023 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2023 in Italy - without local award Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Trees in Modena",
-     "source": "wikidata/Q56629593"
+     "source": "wikidata/Q56629593",
+     "judged": "approve",
+     "verdict": "crown and trunk fill the frame, in leaf, well lit, matches the Cortile del Leccio courtyard (orange arcaded building visible behind)"
     }
    ]
   },

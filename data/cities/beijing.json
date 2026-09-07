@@ -226,10 +226,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Styphnolobium_japonicum_in_Jingshan_Park.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "そらみみ, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
       }
     }
   ]
