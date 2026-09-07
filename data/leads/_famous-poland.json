@@ -3,19 +3,6 @@
   "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
   "leads": [
     {
-      "name": "Baobab in Lublin",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ostatnia_godzina_baobabu_01.jpg"
-      ],
-      "status": "lead",
-      "species": "Baobab (Adansonia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Cis Henrykowski",
       "lat": 51.171776,
       "lng": 15.218362,
@@ -236,17 +223,6 @@
       "note": "Verified 2026-09-06, delivered as fpl_001 in data/research/famouspoland-batch-verified.json (temporary id, pending write pass). Alive, confirmed survived 2022 arson fire per 2023 expert assessment. Two independent sources for species/age/girth; height and exact age vary between sources (recorded in verify_notes)."
     },
     {
-      "name": "Dąb Czech",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
-        "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Czech_-_fotopolska.eu_(244120).jpg",
-        "https://commons.wikimedia.org/wiki/File:RogalinOaks.jpg"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "Dąb Dominik",
       "lat": 51.448311,
       "lng": 23.124111,
@@ -254,7 +230,7 @@
         "https://commons.wikimedia.org/wiki/File:Dominik_Oak_Poleski_National_Park.jpg",
         "https://commons.wikimedia.org/wiki/File:Poleski_National_Park_2018_P01_Dominik_Oak.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-07, delivered as pnp_001 (The Dominik Oak) in data/research/famouspoland-batch2-verified.json"
     },
     {
       "name": "Dąb Eichendorffa, Łubowice",
@@ -395,17 +371,6 @@
       "status": "lead"
     },
     {
-      "name": "Dąb Jagiełły",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P02_Jagiello_Oak.jpg",
-        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P03_Jagiello_Oak.jpg",
-        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P04_Jagiello_Oak.jpg"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "Jeremi Przybora oak in Bydgoszcz",
       "lat": 53.16261639,
       "lng": 18.150855,
@@ -440,9 +405,8 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_2.JPG",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_perkun_3.JPG"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "RESOLVED 2026-09-07, delivered as psz_001 (The Perkun Oak) in data/research/famouspoland-batch2-verified.json",
+      "species": "Pedunculate Oak (Quercus robur)"
     },
     {
       "name": "Regalinda Oak",
@@ -826,6 +790,32 @@
       "status": "blocked",
       "species": "Pedunculate Oak (Quercus robur)",
       "reason": "Confirmed DEAD since 1992 (Rogalin Palace museum encyclopedia page and visitpoznan.pl both state \"dead since 1992\"). Third of the legendary Lech/Czech/Rus trio; the other two are alive and delivered as xxx_001/xxx_002 (2026-09-07). Never publish as its own entry per the never-dead-tree rule; may appear as historical context in the Lech/Rus story."
+    },
+    {
+      "name": "Dąb Jagiełły",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P02_Jagiello_Oak.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P03_Jagiello_Oak.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bialowieski_National_Park_2016_P04_Jagiello_Oak.jpg"
+      ],
+      "status": "blocked",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "reason": "Confirmed DEAD: blown down by a storm on the night of 2 November 1974 (pl.wikipedia's own dedicated article on the tree opens 'martwy dab w Puszczy Bialowieskiej'; corroborated by bpn.com.pl and the Puszcza Bialowieska encyclopedia). Was at most ~450 years old at fall, girth 550cm at 130cm height, height 39m. Only its decomposing trunk remains on public display today, reached by a 4km marked trail 'Do Debu Jagielly'; a single acorn-grown descendant sapling ('Jagiellonczyk') survives in the Bialowieska Geobotanical Station's garden but is a different, young, non-public tree. Never publish the original as a collectible entry per the never-dead-tree rule; the Commons photos in this lead (dated 2016) show the decomposing trunk itself, consistent with the dead status, not a living tree."
+    },
+    {
+      "name": "Baobab in Lublin",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Lublin_-_plac_Litewski_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ostatnia_godzina_baobabu_01.jpg"
+      ],
+      "status": "blocked",
+      "species": "Black Poplar (Populus nigra)",
+      "reason": "Not a baobab at all and confirmed GONE: this was a black poplar on Plac Litewski (Lithuanian Square) in central Lublin, over 100 years old, popularly nicknamed 'baobab' by residents for its bulbous trunk shape, never an Adansonia (Wikidata Q9360082 labels it plainly: 'Topola czarna zwana baobabem na placu Litewskim w Lublinie', i.e. 'Black poplar called baobab...'). It was felled by the city on 23 May 2017 on the provincial heritage conservator's recommendation; naszemiasto.pl's detailed retrospective (published 2024-05-23, exactly 7 years later) describes the 2.5-hour felling in front of residents and journalists, and that a UMCS Botanical Garden dendrologist took 100 cuttings beforehand in hope some might one day be replanted on the square. The photo filename in this lead, 'Ostatnia godzina baobabu' ('the baobab's last hour'), documents the felling itself. No living tree at this location to verify or publish; blocked on both grounds (dead since 2017, and never the species its nickname implies)."
     }
   ]
 }
