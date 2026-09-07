@@ -6790,6 +6790,74 @@
    ],
    "trees": 8,
    "logged": true
+  },
+  {
+   "started": "2026-09-07T18:13:43+00:00",
+   "date": "2026-09-07",
+   "run_id": "34150757780",
+   "minutes": 113.1,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 540,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 180603142,
+   "claims_held": [],
+   "commits": 35,
+   "cities_touched": 12,
+   "cities": [
+    {
+     "city": "berga-elster",
+     "trees": 1
+    },
+    {
+     "city": "eisolzried",
+     "trees": 1
+    },
+    {
+     "city": "pisz-forest",
+     "trees": 1
+    },
+    {
+     "city": "poleski-national-park",
+     "trees": 1
+    },
+    {
+     "city": "wuppertal",
+     "trees": 1
+    },
+    {
+     "city": "zalgiriai",
+     "trees": 1
+    },
+    {
+     "city": "beijing",
+     "trees": 0
+    },
+    {
+     "city": "girona",
+     "trees": 0
+    },
+    {
+     "city": "groningen",
+     "trees": 0
+    },
+    {
+     "city": "hobart",
+     "trees": 0
+    },
+    {
+     "city": "kaunas",
+     "trees": 0
+    },
+    {
+     "city": "modena",
+     "trees": 0
+    }
+   ],
+   "trees": 6,
+   "logged": true
   }
  ],
  "schedule_changes": [
