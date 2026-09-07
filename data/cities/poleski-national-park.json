@@ -1,0 +1,57 @@
+{
+  "city": "Poleski National Park",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Poleski National Park maps one tree: a pedunculate oak so well known inside the park that an entire 2.5 to 3.5 kilometre boardwalk trail through the wetlands carries its name. The Dab Dominik path is named for Professor Dominik Fijalkowski, a botanist who spent his career arguing against draining the Polesie wetlands the park now protects, and the oak stands at stop three. It measures 3.8 metres round. Nobody has recorded its age, and this page says so plainly rather than guessing: if you know it, tell us.",
+  "meta_description": "The Dominik Oak, a Polish oak with its own named nature trail in Poleski National Park; no documented age, girthed at 3.8 metres.",
+  "question_meta": "Poleski National Park's mapped tree is the Dominik Oak, a pedunculate oak with its own named nature trail through the wetlands.",
+  "question_answer": "The tree mapped at Poleski National Park is the Dominik Oak, a pedunculate oak on the Dab Dominik nature trail, named for the botanist Professor Dominik Fijalkowski. It measures 3.8 metres round; its age has never been recorded.",
+  "question_context": "Poleski National Park named an entire nature trail after this one oak. The Dab Dominik path runs 2.5 to 3.5 kilometres of boardwalk through wet broadleaf forest, peat bog and the reeded edge of Lake Moszne, and the tree is stop three on it. Dominik was a person: Professor Dominik Fijalkowski was a botanist who spent much of his working life arguing against the draining of the Polesie wetlands, the flat waterlogged country this park now protects. The trail that carries his name walks through it, and the oak stands on the trail. The trunk measures about 3.8 metres round, a figure that comes from the park's own 2007 guidebook. A visitor writing in 2024 found it still standing and called it one of the oldest trees in the region, though they took no measurement of their own. Nobody has dated it, not the park, not the guidebook, not any source found so far, and a girth on its own will not give a century without a local growth rate to go with it. Getting there needs a car and a park entrance ticket; the boardwalk does the rest.",
+  "hero_tree_id": "pnp_001",
+  "oldest_tree_id": "pnp_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Poleski National Park?",
+      "a": "The Dominik Oak, a pedunculate oak on the Dab Dominik nature trail, named for the botanist Professor Dominik Fijalkowski."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Not documented. Nobody has dated it, and this page asks readers who know to tell us rather than guessing."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No, a park entrance ticket is required since the tree stands on the Dab Dominik trail inside Poleski National Park."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pnp_001",
+      "name": "The Dominik Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 380,
+      "location": {
+        "address": "Nature trail \"Dab Dominik\", stop 3, near Kolonia Lomnica, Poleski National Park",
+        "latitude": 51.448311,
+        "longitude": 23.124111,
+        "neighbourhood": "Lomnica, Wlodawa county, Lubelskie voivodeship"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/%C5%9Acie%C5%BCka_przyrodnicza_%E2%80%9ED%C4%85b_Dominik%E2%80%9D",
+        "https://polpn.gov.pl/szlaki-turystyczne/sciezka-przyrodnicza-dab-dominik",
+        "https://ostojapoleska.pl/sciezka-przyrodnicza-dab-dominik-w-poleskim-parku-narodowym/"
+      ],
+      "access": "Paid entry: the Dab Dominik nature trail is inside Poleski National Park and a park ticket is required.",
+      "transport": "No public transport reaches the trailhead. The path starts at Kolonia Lomnica on the minor road between Urszulin and Sosnowica; nearest town Urszulin is a few kilometres away by road, best reached by car.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Poleski National Park named an entire nature trail after this one oak. The Dab Dominik path runs 2.5 to 3.5 kilometres of boardwalk through wet broadleaf forest, peat bog and the reeded edge of Lake Moszne, and the tree is stop 3 on it.\n\nDominik was a person. Professor Dominik Fijalkowski was a botanist who spent much of his working life arguing against the draining of the Polesie wetlands, the flat waterlogged country this park now protects. The trail that carries his name walks through it, and the oak stands on the trail.\n\nThe trunk measures about 3.8 metres round, a figure that comes from the park's own 2007 guidebook. A visitor writing in 2024 found it still standing and called it one of the oldest trees in the region, though they took no measurement of their own.\n\nNobody has dated it. Not the park, not the guidebook, not any source we can find, and a girth on its own will not give you a century without a local growth rate to go with it. So the oak keeps its age to itself. If you know it, or you have put a tape around this trunk yourself, tell us and it goes on the page.\n\nGetting there needs a car and a park ticket. The boardwalk does the rest.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

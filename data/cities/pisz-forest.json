@@ -1,0 +1,61 @@
+{
+  "city": "Pisz Forest",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Pisz Forest maps one tree: a pedunculate oak named after Perkunas, the old Baltic god of thunder, standing beside the trail that traces poet Konstanty Ildefons Galczynski's old haunts along Lake Nidzkie. Local telling holds it as a sacred tree of the Prussians and Galindians, though only one source carries that story. The state forest district lists it as an official nature monument, its trunk hollow enough for several people to stand inside. Its claimed age, 600 to 800 years, rests on that same single, uncorroborated source, and this page says so rather than presenting it as settled.",
+  "meta_description": "The Perkun Oak, named for a Baltic thunder god, hollow enough for several people, in Pisz Forest; claimed 600-800 years, unverified.",
+  "question_meta": "Pisz Forest's mapped tree is the Perkun Oak, a hollow pedunculate oak named after the Baltic thunder god Perkunas.",
+  "question_answer": "The tree mapped at Pisz Forest is the Perkun Oak, a pedunculate oak beside the Sladami Galczynskiego trail near Lake Szelag Wielki, officially listed as a nature monument by the state forest district. Its age is claimed at 600 to 800 years by a single, uncorroborated source.",
+  "question_context": "This oak is named after a god of thunder. Perkun, or Perkunas, was the thunder god of the Baltic peoples of these forests, and by local telling the Prussians and Galindians held this tree sacred and left offerings at its foot. One source carries that story and nothing else corroborates it, so it stays legend rather than record. What is on the record is drier and still worth the walk. Nadlesnictwo Maskulinskie, the state forest district managing this ground, lists the Perkun Oak on its own register of nature monuments, protected alongside a neighbouring oak of about 300 years called Dab Dobko. It stands roughly 27 metres tall, and the hollow in its trunk is reported wide enough for several people to stand inside at once. Its age is given as 600 to 800 years by the single source that gives any age at all, a round span with no measurement behind it, repeated here as that source's claim rather than as a settled number. The tree sits beside the Sladami Galczynskiego trail, which follows ground the poet Konstanty Ildefons Galczynski knew along Lake Nidzkie, a few kilometres from the forester's lodge at Pranie where he wrote.",
+  "hero_tree_id": "psz_001",
+  "oldest_tree_id": "psz_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Pisz Forest?",
+      "a": "The Perkun Oak, a pedunculate oak beside the Sladami Galczynskiego trail near Lake Szelag Wielki, officially listed as a nature monument."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Claimed at 600 to 800 years by a single source with no measurement behind it; this page repeats that claim rather than presenting it as settled fact."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on state forest land open to the public under Poland's general right of access, beside a marked educational trail."
+    },
+    {
+      "q": "Is the sacred-tree story true?",
+      "a": "One source describes local legend of Prussian and Galindian offerings at the tree; nothing else corroborates it, so it is presented here as legend rather than history."
+    }
+  ],
+  "trees": [
+    {
+      "id": "psz_001",
+      "name": "The Perkun Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "600 to 800 years",
+      "age_min": 600,
+      "age_max": 800,
+      "location": {
+        "address": "Beside the \"Sladami Galczynskiego\" educational trail, near Lake Szelag Wielki and the Orlik forest ranger's lodge, Pisz Forest, Nadlesnictwo Maskulinskie",
+        "latitude": 53.61337778,
+        "longitude": 21.50080278,
+        "neighbourhood": "Pranie, Ruciane-Nida commune, Warminsko-Mazurskie voivodeship"
+      },
+      "verified_sources": [
+        "https://maskulinskie.bialystok.lasy.gov.pl/pomniki-przyrody",
+        "https://wyprawomaniak.pl/pomnik-przyrody-dab-perkun/"
+      ],
+      "access": "Free. Stands beside a marked educational trail (\"Sladami Galczynskiego\", tracing the poet Konstanty Ildefons Galczynski's old haunts along Lake Nidzkie) on Nadlesnictwo Maskulinskie state forest land, open to the public under Poland's general right of access to state forest.",
+      "transport": "No public transport reaches the tree directly. Nearest access point is Pranie (the Galczynski museum), a few kilometres from Ruciane-Nida; reached on foot along the lakeshore trail or by car to the Orlik ranger's lodge.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak is named after a god of thunder. Perkun, or Perkunas, was the thunder god of the Baltic peoples of these forests, and by local telling the Prussians and Galindians held this tree sacred and left offerings at its foot. One source carries that story and nothing else corroborates it, so it stays a legend rather than a record.\n\nWhat is on the record is drier and still worth the walk. Nadlesnictwo Maskulinskie, the state forest district that manages this ground, lists the Perkun Oak on its own register of nature monuments, giving it legal protection alongside a neighbouring oak of about 300 years called Dab Dobko.\n\nIt stands roughly 27 metres tall, and the hollow in its trunk is reported to be wide enough for several people to stand inside at once. Its age is given as 600 to 800 years by the single source that gives any age at all, a round span with no measurement behind it that we could check. It is repeated here as that source's claim rather than as a settled number.\n\nThe tree sits beside the Sladami Galczynskiego trail, which follows the ground the poet Konstanty Ildefons Galczynski knew along Lake Nidzkie, a few kilometres from the forester's lodge at Pranie where he wrote. Free, open, and reached on foot or by car to the Orlik ranger's lodge.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
