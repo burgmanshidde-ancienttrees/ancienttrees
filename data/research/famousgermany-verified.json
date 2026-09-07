@@ -1,6 +1,6 @@
 [
   {
-    "id": "dgy_001",
+    "id": "brb_001",
     "name": "Gedenkeiche von Berga (Erinnerungseiche an die Völkerschlacht bei Leipzig)",
     "species": "Oak (Quercus sp.)",
     "age_estimate": "about 163 years (planted 1863)",
@@ -24,7 +24,7 @@
     "verify_notes": "Distinct tree from Berga's much older, more famous 'Stadteiche'/'Deutsche Eiche' (the town's 300-500 year old coat-of-arms oak at/near the Markt, coords ~50.75208,12.16162, which nearly went to the saw in Dec 2012 and was saved by a public campaign, per de.wikipedia.org/wiki/Berga/Elster and heimatverein-berga-elster.de/eiche/*). This candidate is a SEPARATE, younger, purpose-planted memorial oak: citizens of Berga planted it on 18 October 1863 to mark the 50th anniversary of the Battle of Leipzig (Völkerschlacht), per its own Naturdenkmal information board (photographed by Wikimedia Commons contributor Geolina163, April 2019, 'Naturdenkmal Eiche von 1863, anlässlich des 50. Jahrestages der Völkerschlacht gepflanzt') and independently corroborated by a Komoot community waypoint ('Gedenkeiche von Berga') giving the same planting story and date. Age derived directly from the documented planting date (not a bridge claim: the source names this specific tree as the 1863 planting), so 2026 minus 1863 = 163 years; not narrowed further. No girth or height measurement found for this specific tree in the time available (do not confuse with the Stadteiche's 6.52m girth, which belongs to the other, older tree). Alive-now evidence is a dated April 2019 photograph of the tree/its sign plus an active February 2025 visitor comment on the same Komoot waypoint asking people to keep the area clean, which implies the site is still visited and maintained but does not itself describe the tree's crown or health; no photo newer than 2019 was found. Coordinates are a Komoot community-supplied point (50.7509850, 12.1564520), not an official register coordinate or a coordinate I geolocated myself from a photo, so location_precision is set to approximate rather than confirmed. Exact street address and walking distance from Berga town centre were not established this pass; a future pass or reader correction could tighten both. Species is recorded only as Oak (Quercus sp.); no source gave a specific species name, ask the reader."
   },
   {
-    "id": "dgy_002",
+    "id": "wpt_001",
     "name": "Jahrhunderteiche",
     "species": "Oak (Quercus sp.)",
     "age_estimate": "about 135 years (planted 1908 as an already 17-year-old sapling)",
@@ -48,7 +48,7 @@
     "verify_notes": "An individually named, individually documented memorial oak (Gedenkbaum), not a generic forest tree: it has its own German Wikipedia article, a physical wooden plaque at the trunk ('Jahrhundert Platz zur Erinnerung an das 100jaehrige Bestehen der Stadt Barmen am 3.2.1908'), and its own named clearing, the 'Jahrhundertplatz'. Planted 1 April 1908 by the Barmer Verschoenerungsverein (a still-active local park association) to mark the centenary of Barmen's 1808 city charter, in a ceremony attended by the deputy mayor; the crown prince's wife's presence and the new Barmer Rathaus groundbreaking are recorded as part of the same 1908 jubilee (per de.wikipedia.org/wiki/Jahrhunderteiche, itself citing Ruth Meyer-Kahrweg's 'Denkmaeler, Brunnen und Plastiken in Wuppertal', Born-Verlag 1991). At planting the tree was already 17 years old (grown by the association beforehand), 7.77m tall, 16cm trunk diameter, 51cm circumference at 1m: that 51cm girth is a HISTORICAL 1908 figure and must never be used as today's girth (118 years of growth since), so girth_cm is left null rather than misleading the thickest-trees ranking; age is derived from the documented 1908 planting plus the documented age-at-planting (17), giving germination around 1891 and roughly 135 years old today, not a bridge claim since the source states this specific tree's own age at planting. Location_precision set to confirmed: Wikipedia's own {{Coordinate}} landmark template (51.260256, 7.215979) and the Wikimedia Commons category's independently geocoded point (51.260300, 7.215981) agree to within a few metres. Alive-now evidence: the Barmer Verschoenerungsverein, the same organisation that planted the tree and still maintains the Barmer Wald today, scheduled a guided walk naming the Jahrhunderteiche as a waypoint for 5 December 2025 (Entdeckungstour 6, later cancelled for unrelated reasons, presumably weather), which is strong evidence the tree and its clearing are still an active, promoted public landmark. No photo newer than the 2008 Commons set was checked directly for canopy condition, so a fresher photograph is still worth chasing. Species recorded only as Oak (Quercus sp.); no source gives the exact species (most likely Quercus robur, the regional default, but not confirmed), ask the reader."
   },
   {
-    "id": "dgy_003",
+    "id": "eis_001",
     "name": "Schlosseiche bei Eisolzried",
     "species": "Pedunculate Oak (Quercus robur)",
     "age_estimate": "roughly 500 to 700 years (sources disagree)",
