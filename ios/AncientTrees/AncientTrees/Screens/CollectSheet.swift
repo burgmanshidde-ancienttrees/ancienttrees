@@ -859,8 +859,22 @@ struct CollectSheet: View {
     }
 
     private func subtitle(_ t: Tree) -> String {
-        let age = t.age.map { "\($0) old" }
-        return [t.commonName, age].compactMap { $0 }.joined(separator: ", ")
+        return [t.commonName, Self.agePhrase(t.age)].compactMap { $0 }
+            .joined(separator: ", ")
+    }
+
+    /// " old" belongs after "roughly 400 years" and nowhere else.
+    ///
+    /// It was appended to every age string, and 697 of our 2,342 are not bare
+    /// quantities: they already say "old", or they are whole sentences with a
+    /// comma in them. Hidde's own screenshot from Nara reads "current tree
+    /// roughly 60 years old, replanted after 1961 old", which is the payoff
+    /// line of the app's best moment ending in nonsense.
+    static func agePhrase(_ age: String?) -> String? {
+        guard let a = age?.trimmingCharacters(in: .whitespaces), !a.isEmpty else { return nil }
+        let lower = a.lowercased()
+        if lower.contains("old") || a.contains(",") { return a }
+        return "\(a) old"
     }
 
     // MARK: - A tree we do not have
