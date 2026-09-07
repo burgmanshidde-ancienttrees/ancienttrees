@@ -10,6 +10,7 @@ Stdlib only (hard rule 5). Safe to run twice a day: the second run is a no-op.
 """
 import datetime
 import hashlib
+import ours as _ours
 import glob
 import json
 import os
@@ -1044,21 +1045,14 @@ TEST_SUBMISSION_IDS = {1, 2, 3}
 # 2026-08-22 for the same reason. Add a line when another account of ours turns
 # up. Never add a stranger, because everything listed here is subtracted from
 # the only numbers that count people.
-OURS = {
-    "cc6a542385091392e455911c0d7e351bf0148a4b",  # his own account
-    "ef98f5dbe51e86e6236031d19bdce2364272c6b6",  # his +1 address, for testing
-    # 44 rows, all of them Baarn trees typed "Test" and worth-it votes toggled
-    # nine times on one tree inside one minute. The account itself is gone, so
-    # this one is recognisable only by the hash.
-    "d4e6c578be12fd0916a6277fa7bba4b482405484",
-}
-
-
+# The list itself moved to data/our-accounts.json on 2026-09-07 and is read
+# through scripts/ours.py, because two scripts that needed it more than this
+# one could not see it: the sightings inbox queued Hidde's own photograph as a
+# reader's contribution and published it, and the contributor mailer wrote to
+# him about his own submissions all day while he was testing in Nara.
 def is_ours(uid):
     """True when a row was made by us rather than by a reader."""
-    if not uid:
-        return False
-    return hashlib.sha1(str(uid).encode()).hexdigest() in OURS
+    return _ours.is_ours(uid)
 
 
 # Anything a block thinks should reach Hidde today. The verdict line at the top

@@ -1,0 +1,8 @@
+{
+  "_note": "Accounts that are OURS rather than a reader's, by sha1 of the Supabase user id. Everything listed here is subtracted from the only numbers that count people, so never add a stranger. Hashes rather than ids, because DATA.md is public and carries the output. Read through scripts/ours.py by the digest, the sightings inbox and the contributor mailer.",
+  "accounts": [
+    { "sha1": "cc6a542385091392e455911c0d7e351bf0148a4b", "who": "Hidde's own account" },
+    { "sha1": "ef98f5dbe51e86e6236031d19bdce2364272c6b6", "who": "his +1 address, for testing" },
+    { "sha1": "d4e6c578be12fd0916a6277fa7bba4b482405484", "who": "a deleted test account: 44 Baarn rows typed Test, votes toggled nine times on one tree inside a minute" }
+  ]
+}

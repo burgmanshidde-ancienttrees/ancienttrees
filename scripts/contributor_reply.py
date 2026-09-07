@@ -31,6 +31,10 @@ warmth; they are printed for the session to handle) and vote-undone
 bookkeeping rows.
 """
 import datetime
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import ours
 import json
 import os
 import re
@@ -371,8 +375,17 @@ def main():
                 or users.get(r.get("user_id") or "", "")).strip()
 
     def mailable(r):
-        """A privacy request is handled by hand and a vote-undo is bookkeeping."""
+        """A privacy request is handled by hand and a vote-undo is bookkeeping.
+
+        And we do not write to OURSELVES (2026-09-07). Hidde spent a day
+        testing the app in Nara and this mailer thanked him for each of his own
+        submissions: "i got a lot of emails with feedback". Every one of them
+        was a real mail sent to a real address, which is the same class of
+        error as the digest counting our own rows as traction, with the volume
+        landing in somebody's inbox instead of in a table.
+        """
         return (r.get("kind") != "privacy"
+                and not ours.is_ours(r.get("user_id"))
                 and not (r.get("why") or "").startswith("vote undone"))
 
     # One mail per address covers every unthanked row that address left, since
