@@ -1,0 +1,70 @@
+{
+  "city": "Liernu",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Liernu is a small village in Namur built around a single oak reputed to be Belgium's widest and oldest tree, hollow enough that a chapel was once built inside it. A local confraternity still keeps festival around it, it represented the country at a European final, and it has been a protected national monument since 1939, its status raised again in 1992 to exceptional heritage.",
+  "meta_description": "The Gros Chene of Liernu: a hollow oak reputed to be Belgium's widest, with a chapel built into its trunk in 1838 and a confraternity still tending it.",
+  "question_meta": "The Gros Chene of Liernu is an oak just over 14 metres round, reputed to be Belgium's widest, hollow enough to hold a small chapel built inside it in 1838.",
+  "question_answer": "The Gros Chene, standing beside the church in Liernu, is reputed to be the widest tree trunk in Belgium at just over 14 metres round. Village tradition puts its age near a thousand years, back to Charlemagne, though nobody has measured that scientifically. The trunk is hollow and fissured, and in 1838 someone fitted the inside out as a small chapel to Saint-Antoine Ermite. It has been a protected national monument since 1939.",
+  "question_context": "The oldest-tree-in-Belgium claim travels with this tree everywhere it is written about, and it is a village story more than a measurement: the trunk's hollow, fused structure makes it a poor candidate for ring-counting even if anyone wanted to try, so the age is carried here as tradition rather than as a dated fact. What is documented is the tree's standing in the village. It sits beside the church, the former rectory and a school, and local schoolchildren walk past it daily. The Confrerie du Gros-Chene, a local confraternity, has tended and celebrated the tree for decades with its own annual festival, and Belgium raised it from a 1939 monument to exceptional heritage status in 1992. It also represented the country at the European Tree of the Year final in 2016. The girth figure, just over 14 metres by direct measurement, describes a fused and hollow trunk mass rather than a single clean stem, which is worth knowing before comparing it to a solid trunk elsewhere.",
+  "hero_tree_id": "lie_001",
+  "oldest_tree_id": "lie_001",
+  "faq": [
+    {
+      "q": "Is the Gros Chene really a thousand years old?",
+      "a": "That figure is village oral tradition tied to Charlemagne, not a scientific measurement. Its hollow, fissured trunk makes ring-counting impossible, so the age is repeated here as tradition rather than fact."
+    },
+    {
+      "q": "Is it really the widest tree in Belgium?",
+      "a": "It is reputed to be, at just over 14 metres round by direct measurement, though the figure describes a fused, hollow trunk mass rather than a single clean stem."
+    },
+    {
+      "q": "What is the chapel inside the trunk?",
+      "a": "In 1838 someone fitted out the tree's hollow interior as a small chapel to Saint-Antoine Ermite, which still stands inside the trunk today."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Liernu is a village in Eghezee, Namur province. There is no station; it is reached by road from Eghezee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lie_001",
+      "name": "The Gros Chene of Liernu",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1400,
+      "location": {
+        "address": "Rue du Gros-Chene, Liernu, Eghezee, Namur",
+        "latitude": 50.584123,
+        "longitude": 4.827681,
+        "neighbourhood": "Liernu (Eghezee)"
+      },
+      "story": "At just over 14 metres round, the Gros Chene of Liernu is reputed to be the widest tree trunk in Belgium, and oral tradition in the village puts its age near a thousand years, back to Charlemagne. Nobody has cored it to check, and the tree does not make that easy: the trunk is hollow and fissured, and in 1838 someone furnished the inside as a small chapel to Saint-Antoine Ermite, so the girth reported is a fused, hollow mass rather than a single clean stem. It stands beside the church, the former rectory and a school in the small village of Liernu, and the local children who now walk past it daily continue a habit their grandparents had. The Confrerie du Gros-Chene has tended and celebrated the tree for decades, with its own annual festival. Belgium made it a protected monument by royal decree in 1939 and raised it to exceptional heritage status in 1992; it also represented the country at the European Tree of the Year final in 2016. The oldest-tree-in-Belgium claim is a village story more than a measurement, and this project repeats it as exactly that. Come in January, when the leaves are down and the whole fissured, chapel-holding shape of the trunk is easiest to read.",
+      "verified_sources": [
+        "https://www.rtbf.be/article/liernu-le-gros-chene-a-desormais-son-hymne-11732882",
+        "https://www.lavenir.net/actu/discover/2026/05/22/le-gros-chene-de-liernu-est-millenaire-la-meilleure-facon-de-le-conserver-et-de-lui-foutre-la-paix-HSEMG7WWTRBUBLBZ4JDK5VOZL4/",
+        "https://www.eghezee.org/lois/groschen.htm"
+      ],
+      "access": "Free, stands beside the church and former rectory in the village, next to a school; visited routinely by local schoolchildren and the tree's own confraternity",
+      "transport": "Rural village; no station, reached by road from Eghezee",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/2014-09-07_14.35.18-Gros_ch%C3%AAne_de_Liernu.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Mortier.Daniel, Wikimedia Commons",
+        "status": "approved",
+        "width": 2112,
+        "height": 2816
+      },
+      "best_time": {
+        "months": [1],
+        "kind": "bare silhouette",
+        "label": "January, when the leaves are down and the hollow, chapel-holding shape of the trunk is easiest to read"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

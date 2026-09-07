@@ -1,30 +1,18 @@
 {
  "country": "Belgium",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. Verified and written 2026-09-07: 4 candidates each passed the single-tree-destination test and shipped as new single-tree places under the 2026-08-31 exception, none within an existing city's walk radius: herchies (hrc_001, Chene a Clous), liernu (lie_001, Gros Chene), bioul (bio_001, Grand Tilleul), westerlo (wtl_001, Etagelinde). One (Allee de marronniers, Han-sur-Lesse) moved to blocked as an avenue rather than a single collectible point. List deduped (several names had been recorded twice).",
  "leads": [
   {
    "name": "Antoniusbaum (Sankt-Vith)",
-   "lat": null,
-   "lng": null,
+   "lat": 50.278973710809,
+   "lng": 6.1874485015869,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Sankt_Vith-Antoniusbaum_(1).jpg",
     "https://commons.wikimedia.org/wiki/File:Sankt_Vith-Antoniusbaum_(2).jpg",
     "https://commons.wikimedia.org/wiki/File:Sankt_Vith-Antoniusbaum_(3).jpg"
    ],
-   "status": "lead"
-  },
-  {
-   "name": "Le tilleul \"do Vî Payîs\" de Bioul",
-   "lat": 50.33406,
-   "lng": 4.78492,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018_The_Lime_of_the_Old_Country_BE.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bioul_AR1aJPG.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bioul_AR1bJPG.jpg"
-   ],
    "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "verify_progress": "2026-09-07 partial check: protected as landscape of the German-speaking Community of Belgium since 10-10-1985 (Wikidata Q57352818 and the English/Dutch Wikipedia lists of protected heritage sites in Sankt-Vith both confirm the designation and give a precise Wikidata coordinate, used here). Neither source gives species, age, girth or any story/folklore beyond the name (Antonius = Saint Anthony, so likely a devotional tree similar in kind to Herchies' chene a clous, but that is inference, not sourced). No news coverage or visitor-destination evidence found in the time available. Needs: species, age/girth, and evidence of why anyone would seek it out specifically (a local history source or the 'Unsere Gemeinde' municipal newsletter PDF at st.vith.be may have this, not fetched this pass). Does not currently pass the destination test on available evidence; a from-scratch pass with more time on ostbelgienkulturerbe.be (the region's own heritage database, linked from the Wikipedia entry) could change that."
   },
   {
    "name": "Solitaire plataan Prudens Van Duyseplein (Gent)",
@@ -37,19 +25,6 @@
    ],
    "status": "lead",
    "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Allée de marronniers (Han-sur-Lesse)",
-   "lat": 50.122797,
-   "lng": 5.194378,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:All%C3%A9e_de_marronniers_(Han-sur-Lesse).01.jpg",
-    "https://commons.wikimedia.org/wiki/File:All%C3%A9e_de_marronniers_(Han-sur-Lesse).02.jpg",
-    "https://commons.wikimedia.org/wiki/File:All%C3%A9e_de_marronniers_(Han-sur-Lesse).03.jpg"
-   ],
-   "status": "lead",
-   "species": "Horse Chestnut (Aesculus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -133,19 +108,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Chêne à clous (Herchies)",
-   "lat": 50.53777778,
-   "lng": 3.955,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:0_Herchies_-_Chapelle_St-Antoine_de_Padoue_et_ch%C3%AAne_%C3%A0_clous.JPG",
-    "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_%C3%A0_clous.JPG",
-    "https://commons.wikimedia.org/wiki/File:Herchies_JPG06a.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Chêne séculaire (Hamerenne)",
    "lat": 50.143939,
    "lng": 5.215567,
@@ -166,20 +128,8 @@
     "https://commons.wikimedia.org/wiki/File:Sawe-Jalhay,_Gospinal,_die_sieben_Br%C3%BCder.jpg",
     "https://commons.wikimedia.org/wiki/File:Solwaster_AR1aJPG.jpg"
    ],
-   "status": "lead"
-  },
-  {
-   "name": "Gros chêne, Liernu",
-   "lat": 50.584123,
-   "lng": 4.827681,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014-09-07_14.33.42-Gros_ch%C3%AAne_de_Liernu.jpg",
-    "https://commons.wikimedia.org/wiki/File:2014-09-07_14.34.48-Gros_ch%C3%AAne_de_Liernu.jpg",
-    "https://commons.wikimedia.org/wiki/File:2014-09-07_14.35.18-Gros_ch%C3%AAne_de_Liernu.jpg"
-   ],
    "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "verify_progress": "2026-09-07 partial check: WebSearch found no Belgian sources at all for this name (it collided with an unrelated, much more famous German Sieben-Bruder-Eiche near Friesack, Brandenburg). The Commons photo filenames (Sawe-Jalhay, Gospinal, Solwaster) place it in the Jalhay area near Spa, and the species is almost certainly oak (Quercus robur JPG file names). No age, girth or narrative found; likely needs a French or Walloon-dialect search ('sept freres' or the Walloon name) rather than German, since Jalhay is French-speaking and 'die sieben Bruder' may be a German nickname used by German-speaking visitors rather than the local name. Not verified this pass."
   },
   {
    "name": "Opgaande eik bij oude kleiwinning (Volkershouw, Wetteren)",
@@ -225,19 +175,6 @@
     "https://commons.wikimedia.org/wiki/File:2017_The_Village_Lime_Tree_of_Massemen_BE.jpg",
     "https://commons.wikimedia.org/wiki/File:Dorpslinde_Massemen_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Dorpslinde_Massemen_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Etagelinde, Westerlo",
-   "lat": 51.08658,
-   "lng": 4.91674,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Detail_lindeboom,_Westerlo.JPG",
-    "https://commons.wikimedia.org/wiki/File:Etagelinde_met_oorlogmonument_-_390541_-_onroerenderfgoed.jpg",
-    "https://commons.wikimedia.org/wiki/File:Leilinde_te_Westerlo_-_371786_-_onroerenderfgoed.jpg"
    ],
    "status": "lead",
    "species": "Lime (Tilia sp.)",
@@ -332,45 +269,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Dorpslinde, Massemen",
-   "lat": 50.98086,
-   "lng": 3.87325,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2017_The_Village_Lime_Tree_of_Massemen_BE.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dorpslinde_Massemen_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dorpslinde_Massemen_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gros chêne, Liernu",
-   "lat": 50.584123,
-   "lng": 4.827681,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014-09-07_14.33.42-Gros_ch%C3%AAne_de_Liernu.jpg",
-    "https://commons.wikimedia.org/wiki/File:2014-09-07_14.34.48-Gros_ch%C3%AAne_de_Liernu.jpg",
-    "https://commons.wikimedia.org/wiki/File:2014-09-07_14.35.18-Gros_ch%C3%AAne_de_Liernu.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Le tilleul \"do Vî Payîs\" de Bioul",
-   "lat": 50.33406,
-   "lng": 4.78492,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018_The_Lime_of_the_Old_Country_BE.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bioul_AR1aJPG.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bioul_AR1bJPG.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Nagelboom van 's-Gravenvoeren",
    "lat": null,
    "lng": null,
@@ -391,44 +289,19 @@
     "https://commons.wikimedia.org/wiki/File:Wetteren_Massemen_Maelbroekstraat_45_Fladderiep_(11)_-_190129_-_onroerenderfgoed.jpg"
    ],
    "status": "lead"
-  },
+  }
+ ],
+ "blocked": [
   {
    "name": "Allée de marronniers (Han-sur-Lesse)",
+   "reason": "Ensemble is an avenue of horse chestnuts (allee), not one collectible point: CLAUDE.md/BRIEF_RESEARCH.md block avenues and whole woods outright regardless of fame or age. No single tree to stand at.",
    "lat": 50.122797,
    "lng": 5.194378,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:All%C3%A9e_de_marronniers_(Han-sur-Lesse).01.jpg",
     "https://commons.wikimedia.org/wiki/File:All%C3%A9e_de_marronniers_(Han-sur-Lesse).02.jpg",
     "https://commons.wikimedia.org/wiki/File:All%C3%A9e_de_marronniers_(Han-sur-Lesse).03.jpg"
-   ],
-   "status": "lead",
-   "species": "Horse Chestnut (Aesculus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Chêne séculaire (Hamerenne)",
-   "lat": 50.143939,
-   "lng": 5.215567,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_s%C3%A9culaire,_Hamerenne.01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_s%C3%A9culaire,_Hamerenne.02.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tilleul des Lognards",
-   "lat": 50.447824,
-   "lng": 5.597218,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Chapelle_Sainte-Barbe_Xhoris.jpg",
-    "https://commons.wikimedia.org/wiki/File:Le_tilleul_des_Lognards_%C3%A0_Xhoris.jpg",
-    "https://commons.wikimedia.org/wiki/File:S5003041.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   ]
   }
  ]
 }
