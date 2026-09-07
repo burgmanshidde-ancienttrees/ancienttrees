@@ -483,6 +483,46 @@ struct WhenPermissionIsRefused {
                 "a candidate printed a distance from a coordinate we did not have")
     }
 
+    /// The direction is the half that makes the distance usable: between two
+    /// limes, "40 m" says nothing and "40 m north-east" says which way to walk.
+    @Test func aCandidateSaysWhichWayToWalk() {
+        #expect(CollectSheet.candidateLabel(species: "Lime", metres: 40,
+                                            direction: "north-east")
+                == "Lime · 40 m north-east")
+        #expect(CollectSheet.candidateLabel(species: "Lime", metres: 40)
+                == "Lime · 40 m",
+                "a direction appeared where none was measured")
+    }
+
+    /// Eight points, in words, and nothing at all when the two points are the
+    /// same, which is what a pin dropped exactly on a tree gives.
+    @Test func theCompassNamesEightDirections() {
+        let here = (lat: 52.0, lng: 5.0)
+        #expect(CollectSheet.compass(from: here, to: (52.001, 5.0)) == "north")
+        #expect(CollectSheet.compass(from: here, to: (51.999, 5.0)) == "south")
+        #expect(CollectSheet.compass(from: here, to: (52.0, 5.001)) == "east")
+        #expect(CollectSheet.compass(from: here, to: (52.0, 4.999)) == "west")
+        #expect(CollectSheet.compass(from: here, to: (52.001, 5.002)) == "north-east")
+        #expect(CollectSheet.compass(from: here, to: here) == "",
+                "a direction was invented for a tree we are standing on")
+    }
+
+    /// A sighting somebody could not place is NOT a tree they added. It belongs
+    /// to no tree yet, so it must not appear in their own finds and must not be
+    /// offered to us as a tree we are missing (2026-09-07).
+    @MainActor @Test func aSightingYouCouldNotPlaceIsNotOneOfYourOwnTrees() {
+        let p = Patch(); defer { p.clean() }
+        let store = Sightings(folder: p.url)
+        store.record(treeId: nil, name: "A tree I found",
+                     lat: 52.0, lng: 5.0, image: nil)
+        store.record(treeId: nil, name: "One of two limes",
+                     lat: 52.0, lng: 5.0, image: nil,
+                     unsureOf: ["utr_005", "utr_006"])
+        #expect(store.yoursOnly.count == 1,
+                "an unsure sighting was filed as a tree the person added")
+        #expect(store.all.count == 2, "the photograph was thrown away")
+    }
+
     /// Every simulator, and any iPad without a rear camera.
     @Test func noCameraAtAllIsTheLibraryWhateverTheAnswerWas() {
         for answer in [AVAuthorizationStatus.authorized, .denied, .notDetermined, .restricted] {
