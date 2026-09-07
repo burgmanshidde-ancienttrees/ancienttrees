@@ -1,6 +1,34 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 - Finished the standing famous-tree verify claims: 5 trees, 3 new places, one into Ghisonaccia
+
+Resumed a window an earlier attempt stopped 12 minutes in with 108 unspent.
+Two verify claims (`_famous-france`, `_famous-poland`) had real uncommitted
+research on disk, just missing stories. Wrote them, held back 2 of the 9
+that don't clear the fame/floor bar (a Fontenay Abbey plane tree that's a
+garden feature of an already-famous site, not its own destination; a
+3-tree Torun trio with only a municipal designation behind it, no evidence
+of wider fame) as kept-but-unpublished research rather than forcing pages.
+
+Shipped: **U Listincu** joins Ghisonaccia as a second tree (arb_002, a
+700-1,000 year mastic rooted in Roman-era ruins, now the city's oldest).
+**Chene de Venon**, a new French place: a solitary "vegetation lighthouse"
+oak visible across the whole Grenoble valley. **The Saman of Habitation
+Ceron**, a new place in Le Precheur, Martinique: the park's headline
+attraction, survived the 1902 Pelee eruption. **Lech's Oak and Rus's Oak**,
+a new Polish place, Rogalin: two of a legendary named trio beside Rogalin
+Palace, Rus dendro-dated to 800-850 years, the oldest dated oak in Poland.
+
+Full build (7435 pages), qa.py/preflight.py/superlatives.py all clean.
+Released both claims.
+
+**Rung 2 checked, not touched**: the site is fully green; the iOS app gate
+is on its fourth straight failed fix for `testTappingAPinOpensItsTree`
+across several hours of other continuations' CI time. Did not duplicate
+that effort, since nothing here suggested new insight over what's already
+been tried. FOR HIDDE only if this keeps recurring: worth a fresh look
+rather than a fifth patch attempt on the same test.
 ## 2026-09-06 (continuation 18) - Finished the last bomenbieb-netherlands verify claim: 5 trees, 4 new single-tree places plus one into Apeldoorn
 
 Resumed into a window an earlier attempt had stopped 23 minutes in with

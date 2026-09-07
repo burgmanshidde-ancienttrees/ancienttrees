@@ -1,0 +1,72 @@
+[
+  {
+    "id": "xxx_003",
+    "name": "Gniewko Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 375,
+    "location": {
+      "address": "Lesnictwo Rudak forest section 178n, Brzoza, Gmina Wielka Nieszawka",
+      "latitude": 52.930702,
+      "longitude": 18.711414,
+      "neighbourhood": "Brzoza, Gmina Wielka Nieszawka, near Torun"
+    },
+    "verified_sources": [
+      "https://www.gov.pl/web/nadlesnictwo-gniewkowo/ochrona-przyrody",
+      "https://www.wikidata.org/wiki/Q122086754"
+    ],
+    "access": "Free; stands in state forest (Lasy Panstwowe, Nadlesnictwo Gniewkowo, Lesnictwo Rudak) open to public foot access under Poland's general right of access to state forest land",
+    "transport": "No public-transport stop at Brzoza itself; roughly 10km / 20 minutes by car or bike north of Torun city centre",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "One of a trio of nature monuments designated together on the same forest plot (no. 3178/8, section 178n) by Wielka Nieszawka municipal council resolution XLIII/207/2014 of 7 October 2014, gazetted 31 October 2014: this oak plus two limes, Lipa Bolka (xxx_004) and Lipa Brata Alberta (xxx_005), all within about 15 metres of each other, a genuine walkable trio, one obvious place to stand. Girth CONFLICTS between sources: the forest district's own page (gov.pl/Nadlesnictwo Gniewkowo, citing the council resolution) gives 375cm; Wikidata gives 415cm and adds a height of 26m. Both agree on species, the Oct 2014 designation date and location; flagging the girth discrepancy rather than picking one. No age recorded in either source (Polish registers rarely carry one); left undocumented rather than estimated, since girth alone is a weak basis for oak dating without a source doing the calculation. Wikidata coordinate (52.930759, 18.711634) sits within about 15m of the Commons-geotagged coordinate used here, corroborating the pin. HELD 2026-09-07: this is a 3-tree cluster, below the 4-tree floor, and does not clearly pass the single-famous-tree-destination test (a municipal legal designation and a forest-district webpage, not evidence of a wider tourist destination the way Rogalin is). Kept here fully verified rather than published, in case a Torun page or further evidence of fame opens a container for it."
+  },
+  {
+    "id": "xxx_004",
+    "name": "Bolka Lime",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 380,
+    "location": {
+      "address": "Lesnictwo Rudak forest section 178n, Brzoza, Gmina Wielka Nieszawka",
+      "latitude": 52.930671,
+      "longitude": 18.711507,
+      "neighbourhood": "Brzoza, Gmina Wielka Nieszawka, near Torun"
+    },
+    "verified_sources": [
+      "https://www.gov.pl/web/nadlesnictwo-gniewkowo/ochrona-przyrody"
+    ],
+    "access": "Free; stands in state forest (Lasy Panstwowe, Nadlesnictwo Gniewkowo, Lesnictwo Rudak) open to public foot access under Poland's general right of access to state forest land",
+    "transport": "No public-transport stop at Brzoza itself; roughly 10km / 20 minutes by car or bike north of Torun city centre",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Part of the same trio as Gniewko Oak (xxx_003) and Brata Alberta Lime (xxx_005), designated together by Wielka Nieszawka municipal resolution XLIII/207/2014, 7 October 2014, on plot 3178/8, section 178n. Only ONE source found (gov.pl/Nadlesnictwo Gniewkowo, citing the resolution): 380cm girth, small-leaved lime. Flagged for single-sourcing. Coordinate is Commons-geotagged and sits ~15m from the other two trio members, consistent with the register's description of one plot. No age documented. HELD 2026-09-07, same reasoning as xxx_003: below the 4-tree floor, no clear evidence of the wider fame the single-tree exception requires."
+  },
+  {
+    "id": "xxx_005",
+    "name": "Brata Alberta Lime",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 320,
+    "location": {
+      "address": "Lesnictwo Rudak forest section 178n, Brzoza, Gmina Wielka Nieszawka",
+      "latitude": 52.930465,
+      "longitude": 18.711692,
+      "neighbourhood": "Brzoza, Gmina Wielka Nieszawka, near Torun"
+    },
+    "verified_sources": [
+      "https://www.gov.pl/web/nadlesnictwo-gniewkowo/ochrona-przyrody"
+    ],
+    "access": "Free; stands in state forest (Lasy Panstwowe, Nadlesnictwo Gniewkowo, Lesnictwo Rudak) open to public foot access under Poland's general right of access to state forest land",
+    "transport": "No public-transport stop at Brzoza itself; roughly 10km / 20 minutes by car or bike north of Torun city centre",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Named for St Brother Albert (Brat Albert Chmielowski), part of the same trio as Gniewko Oak (xxx_003) and Bolka Lime (xxx_004), designated together by Wielka Nieszawka municipal resolution XLIII/207/2014, 7 October 2014, on plot 3178/8, section 178n. Only ONE source found (gov.pl/Nadlesnictwo Gniewkowo, citing the resolution): 320cm girth, small-leaved lime. Flagged for single-sourcing, same caveat as xxx_004. Coordinate is Commons-geotagged and sits ~15m from the other two trio members. No age documented. HELD 2026-09-07, same reasoning as xxx_003 and xxx_004."
+  }
+]

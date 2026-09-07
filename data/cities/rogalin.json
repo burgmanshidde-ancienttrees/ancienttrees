@@ -1,0 +1,93 @@
+{
+  "city": "Rogalin",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Rogalin is a village south of Poznan built around a palace, and beside it stand two of the three oaks named for the legendary brothers who founded Poland, Bohemia and the Rus. Rus, at 9.15 metres round, was cored by the Institute of Dendrology in 2019 and dated to 800 to 850 years, the oldest dated oak in Poland. Lech, ninety metres away, is nearly as thick and has never been dated at all. The third brother, Czech, died in 1992; its trunk still stands nearby. Free and walkable, beside the palace grounds.",
+  "meta_description": "Lech's Oak and Rus's Oak at Rogalin Palace, Poland: two legendary giants, Rus dated to 800-850 years, the oldest dated oak in Poland.",
+  "question_meta": "Rogalin's oldest tree is Rus's Oak, dated to 800 to 850 years in 2019, the oldest dated oak in Poland.",
+  "question_answer": "The oldest tree in Rogalin is Rus's Oak, cored by the Institute of Dendrology at Kornik in 2019 and dated to roughly 800 to 850 years, making it the oldest dated oak in Poland. It stands in the open parkland beside Rogalin Palace, a branch of the National Museum in Poznan, ninety metres from its named companion, Lech's Oak.",
+  "question_context": "Lech, Czech and Rus are the legendary brothers who in Slavic founding myth set out from one place and founded Poland, Bohemia and the Rus, and Rogalin hung the names on three oaks growing together in a river meadow beside its palace. Rus earned its dating the hard way: in 2019 the Institute of Dendrology at Kornik put a core into the 9.15 metre trunk and came back with 800 to 850 years, the oldest dated oak anywhere in Poland. The institute also cloned it in vitro that year; the clone, Rusek, grows near the palace gate as a young sapling and should not be mistaken for the original. Lech, 6.33 metres round and ninety metres off, has no dated age in any source we found, so several hundred years is as far as the evidence honestly goes. Czech, the thickest of the three at 7.35 metres, died in 1992; its trunk still stands nearby, so the short walk between the oaks takes in two living giants and the remains of a third. The parkland is free, about twenty kilometres south of Poznan, with the cycle path along the Warta the easiest way in.",
+  "hero_tree_id": "rog_002",
+  "oldest_tree_id": "rog_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Rogalin?",
+      "a": "Rus's Oak, cored by the Institute of Dendrology at Kornik in 2019 and dated to roughly 800 to 850 years, the oldest dated oak in Poland."
+    },
+    {
+      "q": "Why are the oaks named after Lech, Czech and Rus?",
+      "a": "They are named for the legendary brothers who founded Poland, Bohemia and the Rus in Slavic origin myth. Two of the three named oaks are still alive at Rogalin; the third, Czech, died in 1992 and its trunk still stands nearby."
+    },
+    {
+      "q": "How old is Lech's Oak?",
+      "a": "Nobody has dated it. Every source calls it several hundred years old without a ring count behind the figure. If you hold a dendrochronological reading for it, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The oaks stand in open, publicly walkable parkland beside Rogalin Palace, about twenty kilometres south of Poznan, reachable by the cycle path along the Warta or a seasonal tourist bus."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rog_001",
+      "name": "Lech's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "several centuries",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 633,
+      "location": {
+        "address": "Rogalin, ul. Arciszewskiego 2, near Rogalin Palace",
+        "latitude": 52.236542,
+        "longitude": 16.926262,
+        "neighbourhood": "Rogalin, Greater Poland Voivodeship (Rogalin Landscape Park)"
+      },
+      "story": "Of the three oaks named for the brothers of the Slavic founding legend, Lech is the one nobody has dated.\n\nIt stands in open parkland beside Rogalin Palace, a branch of the National Museum in Poznan, with a trunk of 6.33 metres round. The museum's own encyclopedia and the Poznan tourist board both give that figure. Rus, ninety metres away, has been cored and dated by the Institute of Dendrology at Kornik. Lech has not, and no source we found puts a century on it, so several hundred years is as far as the evidence honestly goes. If anyone holds a ring count for this particular oak, tell us and we will put it on the page.\n\nThe third brother, Czech, was the thickest of them at 7.35 metres. It died in 1992 and the trunk still stands near the other two, so the short walk between the oaks takes in two giants and the remains of a third.\n\nLech, Czech and Rus are the brothers who in the legend founded Poland, Bohemia and the Rus. That is a heavy set of names to hang on three trees in a river meadow, and these ones have carried it long enough that the whole park is known by them.\n\nThe parkland is free and walkable. It lies about twenty kilometres south of Poznan with no stop of its own; the cycle path along the Warta is the good way in.",
+      "verified_sources": [
+        "https://mnp.art.pl/rogalin-archiwum/strona/encyklopedia-rogalinskie-deby.html",
+        "https://visitpoznan.pl/en/oak-trees-in-rogalin-lech-czech-and-rus"
+      ],
+      "access": "Free; stands in the open parkland by Rogalin Palace (a National Museum in Poznan branch), publicly walkable grounds",
+      "transport": "No public-transport stop in Rogalin itself; roughly 20km / 30-40 minutes by car south of Poznan, reachable by seasonal tourist bus or bike path along the Warta",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rog_002",
+      "name": "Rus's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 800 years",
+      "age_min": 700,
+      "age_max": 850,
+      "girth_cm": 915,
+      "location": {
+        "address": "Rogalin, ul. Arciszewskiego 2, near Rogalin Palace",
+        "latitude": 52.236818,
+        "longitude": 16.925093,
+        "neighbourhood": "Rogalin, Greater Poland Voivodeship (Rogalin Landscape Park)"
+      },
+      "story": "In 2019 the Institute of Dendrology at Kornik put a core into this trunk and came back with a number: 800 to 850 years, which makes it the oldest oak anybody has dated in Poland.\n\nIt is the thickest of the Rogalin oaks as well, 9.15 metres round, a figure carried both by the palace museum's own encyclopedia and by the Poznan tourist board. At nine metres a trunk stops reading as a trunk and starts reading as a piece of the ground standing up.\n\nThe dating was not the only thing done to it that year. The institute propagated the tree in vitro and the clone, named Rusek, was planted near the palace gate: the same oak genetically, a sapling physically, starting over a short walk from itself. Do not mistake the young one for this one.\n\nEight centuries means it was already a full-grown tree when Poland was partitioned out of existence, and it was still here when the country came back. Its neighbour Lech, ninety metres away, has never been dated at all. Czech, the third of the oaks named for the legendary brothers, died in 1992 and its trunk still stands.\n\nThe parkland beside Rogalin Palace is free and open, about twenty kilometres south of Poznan. The two living oaks and the dead one sit within a few minutes of each other, so the walk is short and the time goes on standing under this one.",
+      "verified_sources": [
+        "https://www.gazeta-mosina.pl/2019/dab-rus-w-rogalinie-ma-ponad-800-lat/",
+        "https://visitpoznan.pl/en/oak-trees-in-rogalin-lech-czech-and-rus",
+        "https://mnp.art.pl/rogalin-archiwum/strona/encyklopedia-rogalinskie-deby.html"
+      ],
+      "access": "Free; stands in the open parkland by Rogalin Palace (a National Museum in Poznan branch), publicly walkable grounds",
+      "transport": "No public-transport stop in Rogalin itself; roughly 20km / 30-40 minutes by car south of Poznan, reachable by seasonal tourist bus or bike path along the Warta",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1498,6 +1498,11 @@ def check_pin_is_in_its_own_country():
         # de Janeiro). Coordinate checked against the pt/en Wikipedia position
         # for the Cajueiro de Pirangi, 2026-09-04.
         "pir_001",
+        # Habitation Ceron stands in Le Precheur, Martinique, an overseas
+        # department of France, 6499km from the nearest other French tree we
+        # publish (mainland/Corsica). Coordinate checked against
+        # arbredelannee.com and voyage-martinique.fr, 2026-09-07.
+        "lpr_001",
     }
     by_country = collections.defaultdict(list)
     for path in sorted(glob.glob("data/cities/*.json")):

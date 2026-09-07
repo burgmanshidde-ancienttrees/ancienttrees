@@ -1,0 +1,62 @@
+{
+  "city": "Le Precheur",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Le Precheur sits on Martinique's north-west coast, a few kilometres from Saint-Pierre, wiped out almost entirely by Mount Pelee's 1902 eruption. This saman tree stood through that and every hurricane since, its canopy now spreading over roughly 5,000 square metres of a former 17th-century sugar plantation, Habitation Ceron. Reckoned at three centuries and more, it is the headline reason people visit the estate, now run as a botanical and heritage park with paid entry.",
+  "meta_description": "The Saman of Habitation Ceron, Martinique: a 300+ year rain tree with a 5,000 sq m canopy that survived the 1902 Pelee eruption.",
+  "question_meta": "Le Precheur's oldest tree is the Saman of Habitation Ceron, a rain tree of roughly 300 to 350 years on Martinique's north-west coast.",
+  "question_answer": "The oldest tree in Le Precheur is the Saman of Habitation Ceron, a rain tree (Samanea saman) whose age is put at around 300 years by France's Arbre de l'Annee competition, and at more than 350 by a Martinique tourism source. It grows in the grounds of Habitation Ceron, a former 17th-century sugar plantation now run as a botanical and heritage park.",
+  "question_context": "Sources disagree on the exact age and neither has a ring count behind it, so the honest range is three centuries and change rather than a single number. What is not disputed is what the tree has outlasted: Mount Pelee's 1902 eruption killed almost the entire population of Saint-Pierre a few kilometres down the coast, and this tree stood through it, and through every hurricane on the record since. Its crown covers something like 5,000 square metres, and encircling the trunk is said to take about ten people with their arms out, though nobody has published the figure in metres. Saman leaflets fold shut when rain arrives and reopen as the weather dries, a real trait of the species rather than a story attached to this particular tree. Habitation Ceron is a former sugar plantation, now a botanical and heritage park with paid entry, roughly 8 euros for adults, open daily 9:30am to 5pm. It is about an hour by car from Fort-de-France; there is no other way to reach it.",
+  "hero_tree_id": "lpr_001",
+  "oldest_tree_id": "lpr_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Le Precheur?",
+      "a": "The Saman of Habitation Ceron, a rain tree reckoned at roughly 300 to 350 years, the park's headline attraction on Martinique's north-west coast."
+    },
+    {
+      "q": "How old is it exactly?",
+      "a": "Sources disagree: France's Arbre de l'Annee competition puts it around 300 years, a Martinique tourism source calls it the oldest on the island at more than 350. Neither figure has a ring count behind it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No. Habitation Ceron charges paid entry, roughly 8 euros for adults and 5 for children, open daily from 9:30am to 5pm. The tree is part of the standard visit."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car, roughly an hour from Fort-de-France on Martinique's north-west coast. There is no rail on the island and no practical public transport to Le Precheur."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lpr_001",
+      "name": "The Saman of Habitation Ceron",
+      "species": "Rain Tree (Samanea saman)",
+      "age_estimate": "roughly 300 to 350 years",
+      "age_min": 300,
+      "age_max": 350,
+      "girth_cm": null,
+      "location": {
+        "address": "Habitation Ceron, Le Precheur, Martinique",
+        "latitude": 14.83038,
+        "longitude": -61.21936,
+        "neighbourhood": "Habitation Ceron park, Le Precheur"
+      },
+      "story": "In 1902 Mount Pelee erupted and wiped out almost the whole population of Saint-Pierre, a few kilometres down the coast. This tree stood, and it has stood through every hurricane on the record since.\n\nIt is a saman, zamana in Martinique, and its crown covers something like 5,000 square metres of the valley at Habitation Ceron. Encircling the trunk is said to take about ten people with their arms out; nobody has published the figure in metres. The age is disputed. Arbre de l'Annee, the national competition whose public prize it won in 2016, puts it at around 300 years. A Martinique tourism site calls it the oldest tree on the island at more than 350. Neither has a ring count behind it, so the honest answer is three centuries and change.\n\nThe leaves do something worth standing under. Saman leaflets fold shut when rain arrives and open again as the weather dries, so the shade moves with the sky. That is the species behaving normally, not a legend attached to this particular tree.\n\nIt grows on a former 17th-century sugar plantation on the north-west coast, run now as a botanical and heritage park, and it is what most visitors have come for. Entry is paid, roughly 8 euros for adults and 5 for children, open daily from 9:30 to 5. Reckon on an hour by car from Fort-de-France; there is no other way up there.",
+      "verified_sources": [
+        "https://www.arbredelannee.com/arbres/le-zamana-ceron",
+        "https://www.voyage-martinique.fr/habitation-ceron.html"
+      ],
+      "access": "Paid entry: Habitation Ceron is a former 17th-century sugar plantation now run as a botanical/heritage park, open daily 9:30am to 5pm, adult admission around 8 euros (5 euros for children). The tree is part of the standard visit.",
+      "transport": "Le Precheur, northern Martinique; no rail on the island, reached by car, roughly 45 minutes to an hour from Fort-de-France.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

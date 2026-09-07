@@ -295,7 +295,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Gniewko,_Brzoza,_Gmina_Wielka_Nieszawka,_okr._Toru%C5%88.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-07, delivered to famouspoland-verified.json as xxx_003 (Gniewko Oak, slug brzoza)"
     },
     {
       "name": "Dąb Książęcy, Park Leśny Zdroje",
@@ -318,7 +318,8 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%99by_Rogali%C5%84skie-Lech,Czech,Rus.JPG",
         "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Lech_-_fotopolska.eu_(244114).jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Verified and published as rog_001 Lech's Oak (Rogalin), a new single-tree-place exception, 2026-09-07."
     },
     {
       "name": "Dąb Madej, Lubiechów Dolny",
@@ -369,7 +370,8 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%99by_w_Rogalinie_Rus_2003_r.jpg",
         "https://commons.wikimedia.org/wiki/File:Rogalin,_D%C4%85b_Rus_-_fotopolska.eu_(244115).jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Verified and published as rog_002 Rus's Oak (Rogalin), a new single-tree-place exception, 2026-09-07."
     },
     {
       "name": "Dąb Słowianin",
@@ -607,7 +609,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:L%C3%ADpa_Bolka,_Brzoza,_obec_Gmina_Wielka_Nieszawka.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-07, delivered to famouspoland-verified.json as xxx_004 (Bolka Lime, slug brzoza)",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -618,7 +620,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Lipa_Brata_Alberta,_Brzoza,_obec_Gmina_Wielka_Nieszawka.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-07, delivered to famouspoland-verified.json as xxx_005 (Brata Alberta Lime, slug brzoza)",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -811,6 +813,19 @@
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "reason": "Confirmed DEAD: tree did not leaf out in 2020 or 2021 after a 2014 arson fire severely damaged it; Nadlesnictwo Szprotawa foresters declared it dead (obumarl). A genetic clone grown from 2013 material was planted near the dead trunk in November 2024, but that is a young, distinct tree, not this one. Never publish per the never-dead-tree rule."
+    },
+    {
+      "name": "Dąb Czech",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dęby_Rogalińskie-Lech,Czech,Rus.JPG",
+        "https://commons.wikimedia.org/wiki/File:Rogalin,_Dąb_Czech_-_fotopolska.eu_(244120).jpg",
+        "https://commons.wikimedia.org/wiki/File:RogalinOaks.jpg"
+      ],
+      "status": "blocked",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "reason": "Confirmed DEAD since 1992 (Rogalin Palace museum encyclopedia page and visitpoznan.pl both state \"dead since 1992\"). Third of the legendary Lech/Czech/Rus trio; the other two are alive and delivered as xxx_001/xxx_002 (2026-09-07). Never publish as its own entry per the never-dead-tree rule; may appear as historical context in the Lech/Rus story."
     }
   ]
 }

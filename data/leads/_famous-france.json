@@ -166,10 +166,10 @@
         "https://commons.wikimedia.org/wiki/File:Abbaye_de_Fontenay,_automne_2020_03.jpg",
         "https://commons.wikimedia.org/wiki/File:Abbaye_de_Fontenay-Galerie_Seguin-20170601.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-07, delivered to famousfrance-verified.json (fails single-tree-destination test, see note)",
       "species": "Plane (Platanus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Checked 2026-09-05: alive and well documented (official abbayedefontenay.com page: planted 1780, ~40m tall, in the abbey's own Jardin Remarquable-labelled gardens), but only one source found so far and it reads as a nice feature of an already-famous UNESCO site (people travel for the Abbey of Fontenay itself) rather than a specimen famous or record-holding in its own right, so it is not a clear single-tree-destination case. Left as a lead for a pass with time to find a second source and make that judgement call, rather than force a verdict."
+      "note": "Checked 2026-09-05: alive and well documented (official abbayedefontenay.com page: planted 1780, ~40m tall, in the abbey's own Jardin Remarquable-labelled gardens), but only one source found so far and it reads as a nice feature of an already-famous UNESCO site (people travel for the Abbey of Fontenay itself) rather than a specimen famous or record-holding in its own right, so it is not a clear single-tree-destination case. Left as a lead for a pass with time to find a second source and make that judgement call, rather than force a verdict. FOLLOW-UP 2026-09-07: found the second independent source (parcsetjardins.fr), corroborating an 18th-century plane tree, planted 1780, ~40m tall. Verified and delivered to data/research/famousfrance-verified.json with full facts, but the destination call comes out NO: this reads as a garden feature of the already-world-famous Abbey of Fontenay (UNESCO site) rather than a reason to travel in its own right, so it should not become a standalone single-tree-exception page. Left for the writer/dispatcher to decide the container (a Marmagne page with other trees, or stay a lead)."
     },
     {
       "name": "Platane de Branféré",
@@ -243,9 +243,10 @@
         "https://commons.wikimedia.org/wiki/File:Au_Bas-Br%C3%A9au_Foret_de_Fontainebleau,_PK-P-126.098.jpg",
         "https://commons.wikimedia.org/wiki/File:Carte_topographique_de_la_for%C3%AAt_de_Fontainebleau_-_1895_-_btv1b530291367.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "confirmed dead/gone: this Fontainebleau oak at Bas-Breau (subject of Karl Bodmer's 1850 Salon painting) has disappeared; no modern photo or mention found, only 19th-century artwork and its own Commons category of engravings. Blocked 2026-09-07."
     },
     {
       "name": "Briareus Oak",
@@ -256,9 +257,10 @@
         "https://commons.wikimedia.org/wiki/File:Cuvelier_-_Bouquet_de_l%27Empereur.png",
         "https://commons.wikimedia.org/wiki/File:Le_ch%C3%AAne_%22L%27Empereur%22_et_la_mare_%C3%A0_Dagneau_-_btv1b525193304.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "confirmed dead: uprooted by a violent storm on 1 January 1899 (per fr.wikipedia Chene Briaree and contemporary BnF-catalogued print 'chene seculaire deracine, avril 1899'), reputedly the oldest oak in the forest at ~800 years. Only 19th-century photos/engravings exist. Blocked 2026-09-07."
     },
     {
       "name": "Chêne (Montigny-sur-Avre, Eure-et-Loir)",
@@ -281,9 +283,10 @@
         "https://commons.wikimedia.org/wiki/File:Auguste_Louis_Lep%C3%A8re_-_Fontainebleau_Forest-_Le_Clovis,_Plateau_de_Bellecroix_(La_For%C3%AAt_de_Fontain_-_2014.708.v_-_Cleveland_Museum_of_Art.tif",
         "https://commons.wikimedia.org/wiki/File:Auguste_Louis_Lep%C3%A8re_-_Le_Clovis,_Plateau_de_Bellecroix_-_1921.1368_-_Cleveland_Museum_of_Art.tif"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "confirmed dead: destroyed in the great Fontainebleau forest fire of 14-15 August 1904 (per fr.wikipedia Chene Clovis and multiple sources on the 1904 fire), one of the oldest oaks in the forest at the time. Filename itself says the fall, 1904. Blocked 2026-09-07."
     },
     {
       "name": "Chêne de Cantaure",
@@ -308,9 +311,10 @@
         "https://commons.wikimedia.org/wiki/File:Boom_te_Fontainebleau,_RP-T-1912-34.jpg",
         "https://commons.wikimedia.org/wiki/File:Boomstronk_Le_Charlemagne_(Fontainebleau)_(originele_titel),_RP-P-1931-1535.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "confirmed dead: collapsed the night of 17-18 February 1925, roots rotted (per fr.wikipedia and fontainebleau-photo.fr); the fallen trunk (chablis) still lies in the Reserve Biologique Integrale du Nid de l'Aigle a century later but the standing tree is gone. Only 19th-century engravings/prints exist as photos. Blocked 2026-09-07."
     },
     {
       "name": "Chêne de la Vierge à Viroflay",
@@ -444,7 +448,8 @@
         "https://commons.wikimedia.org/wiki/File:Auguste_Louis_Lep%C3%A8re_-_Fontainebleau_Forest-_The_Raging_One_(La_For%C3%AAt_de_Fontainebleau-_Le_rageur)_-_2014.708.m_-_Cleveland_Museum_of_Art.tif",
         "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_de_la_for%C3%AAt_de_Fontainebleau,_le_Rageur_-_estampe_-_JB_1843_-_btv1b10463167n.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "no living specimen found: a famous contorted oak near Barbizon painted repeatedly by Corot and Barye in the 19th century (subject of a 2024 academic article on its artistic legacy), but no modern photograph, present-day mention, or evidence of a surviving tree could be found, only period paintings/prints. Given the Fontainebleau pattern of naming successive fallen oaks, treat as historical/likely gone rather than assume a modern tree occupies the name. Blocked 2026-09-07."
     },
     {
       "name": "Oak of Tombeboeuf",
@@ -534,9 +539,11 @@
         "https://commons.wikimedia.org/wiki/File:Arbre_Venon_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Arbre_Venon_2.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "slug: venon",
+      "reason": "Verified and published as vno_001 Chene de Venon (Venon), a new single-tree place, 2026-09-07."
     },
     {
       "name": "If commun de Nicorps",
@@ -776,7 +783,9 @@
         "https://commons.wikimedia.org/wiki/File:Zamana_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Zamana_Habitation_C%C3%A9ron.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "note": "slug: ceron",
+      "reason": "Verified and published as lpr_001 The Saman of Habitation Ceron (Le Precheur, Martinique), a new single-tree place, 2026-09-07."
     },
     {
       "name": "Oak of Tombeboeuf",
@@ -801,8 +810,10 @@
         "https://commons.wikimedia.org/wiki/File:Lentisque_remarquable_de_Ghisonaccia.jpg",
         "https://commons.wikimedia.org/wiki/File:Lentisque_remarquable_de_Ghisonaccia_(ext).jpg"
       ],
-      "status": "lead",
-      "note": "Same tree/area as Arburacellu above (OSM natural=tree node l'Arbre Oiseau sits at 42.0363173,9.3688794, about 1.3km from this lead's coordinate); Arburacellu is verified, see arb_001."
+      "status": "published",
+      "note": "CORRECTED 2026-09-07: this is NOT the same tree as Arburacellu (arb_001). Confirmed as a genuinely separate, distinct remarkable tree (Pistacia lentiscus, U Listincu, Tree of the Year 2011) about 1.3km from Arburacellu (a cork oak, l'Arbre Oiseau, Tree of the Year 2018), both on the Gattone plain near Ghisonaccia. Verified and delivered; see data/research/famousfrance-verified.json.",
+      "reason": "Verified and published as arb_002 U Listincu (Ghisonaccia), 2026-09-07."
     }
-  ]
+  ],
+  "blocked": []
 }
