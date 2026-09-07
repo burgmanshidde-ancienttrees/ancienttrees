@@ -6763,6 +6763,33 @@
    ],
    "trees": 7,
    "logged": true
+  },
+  {
+   "started": "2026-09-07T14:17:20+00:00",
+   "date": "2026-09-07",
+   "run_id": "34129291834",
+   "minutes": 32.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 226,
+   "denials": 8,
+   "denials_source": "permission_denials: Bash(cd), Bash(env), Bash(for), Bash(git), Bash(python3), Bash(rm), Bash(until)",
+   "ended": "success",
+   "tokens": 3773252,
+   "claims_held": [
+    "_famous-poland",
+    "_famous-lithuania"
+   ],
+   "commits": 10,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "leiden",
+     "trees": 8
+    }
+   ],
+   "trees": 8,
+   "logged": true
   }
  ],
  "schedule_changes": [
