@@ -1,6 +1,34 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation 7) - Leiden 18 to 20: the two trees a prior pass's write output left unmerged
+
+Resumed a window an earlier attempt had stopped after 10 minutes having
+shipped 6 trees, with 110 of 120 minutes unspent. `leads.py --ready` looked
+promising (4 candidates) but every one turned out stale or genuinely
+unready on inspection: the famouspoland trio is deliberately HELD (below
+the 4-tree floor, no container), the Berlin and Werfpark "ready" leads
+carry their own notes saying they still need a second source or an access
+answer, and the bomenbieb Voorburg elm was already merged as hag_033.
+`leads.py --ready` is necessary but not sufficient; the actual content of
+the `reason`/`why` field still has to be read.
+
+`passcheck.py --pending` found the real leftover: `leiden-lrmb-written.json`
+held 8 fully-written trees, 6 of which the prior continuation had already
+merged (12 to 18). The last two, lei_012 (Fern-leaved Beech of the Nut
+Field) and lei_013 (Grafted Ash of the Hortus), both in the Hortus, were
+still on disk unmerged. Merged both, added `paid_entry: true` to match
+their Hortus siblings (preflight caught the omission), fixed the four
+"eighteen"/"eight of eighteen" count lines to twenty/ten in both English
+and the Dutch overlay, and wrote the two Dutch story translations by
+hand (no write-stories pass needed for two trees). Leiden: 18 to 20 trees.
+
+Deleted `leiden-lrmb-written.json` and `leiden-lrmb-ready.json`, fully
+consumed. Released the `leiden` verify claim. Build (4917 pages), qa.py
+and preflight (0 problems) all clean.
+
+Two claims from the same earlier attempt still stand, `_famous-poland`
+and `_famous-lithuania`, both verify. Continuing into them next.
 ## 2026-09-07 (continuation 6) - Leiden 12 to 18, all free, one from a Dutch cultivar's origin planting
 
 Berlin and a repeat Milan pass both came back thin today (Berlin: 1 tree
