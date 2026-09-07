@@ -71,6 +71,15 @@ export interface FeedTree {
    * tropics, where phenologyFor refuses to guess a calendar at all. */
   peak: { months: number[]; effect: string; colour: string; level?: string } | null;
   story: string | null;
+  /** The one line that answers "which of the trees in front of me is it":
+   * what this trunk, bark or setting has that its neighbours do not.
+   * scripts/recognise.py already writes it and the website already prints it,
+   * and it never travelled, which is the failure this feed exists to stop. It
+   * is worth more on a phone than anywhere on the website, because the phone
+   * is the surface where somebody is actually standing between two limes
+   * trying to work out which one we mean. Null on most trees; a run adds them
+   * a city at a time. */
+  how_to_recognise: string | null;
   url: string;
   /** The photograph, with the two sizes a client actually paints and the
    * licence question already answered.
@@ -123,6 +132,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           return pk?.map ? { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } : null;
         })(),
         story: t.story ?? null,
+        how_to_recognise: (t as any).how_to_recognise ?? null,
         url: `/${city.id}/${slugify(t.name)}`,
         photo: p?.url
           ? {
