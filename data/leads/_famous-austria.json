@@ -1,254 +1,258 @@
 {
- "country": "Austria",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "1000-jährige Eiche Bad Blumau",
-   "lat": 47.105423,
-   "lng": 16.049133,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_Bad_Blumau.JPG",
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_in_Bierbaum_-_Bad_Blumau_in_der_Steiermark.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eiche_Kunstbild.jpg"
-   ],
-   "status": "published",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "location_precision": "confirmed",
-   "girth_cm": 875,
-   "age_estimate": "disputed, roughly 500 to 1,000 years",
-   "age_min": 500,
-   "age_max": 1000,
-   "why": "Well documented tree, locally nicknamed 'die dicke Oachn', standing in Bierbaum an der Safen at the end of the Eichenweg toward Loimeth (municipality of Bad Blumau, Steiermark), on a private plot ('auf einem privaten Grundstück, Ortsende von Bierbaum, nach der kleinen Kapelle' per meinbezirk.at) but treated as a public attraction with marked trails, information signage and guided tours (per meinbezirk.at's Hartberg-Fuerstenfeld article, 'thousands of annual visitors'). Species and measurements from baumkunde.de's tree register (dendrology enthusiast database, last visited/measured 09.08.2018): Stiel-Eiche/Pedunculate Oak (Quercus robur), girth 8.75m (875cm) at that visit, height 30m, coordinates N47 6.32538' E16 2.94798' (converted: 47.105423, 16.049133), status 'vital' and 'öffentlich zugänglich' (publicly accessible). AGE IS DISPUTED, both figures kept rather than one picked: baumkunde.de gives 500-600 years as its own measurement-based estimate and explicitly flags this as contradicting the popular name; meinbezirk.at's Hartberg-Fuerstenfeld piece instead states 'Experten bestaetigen: rund 1.000 Jahre alt' and repeats the legend that it was 'allegedly planted around the year 1020'. No source states which experts or method reached the 1000-year figure, so it reads as the same unverified local tradition rather than an independent dendrological measurement; baumkunde's girth-based figure is more likely the sounder one but I am not picking a winner. Alive: meinbezirk (graz community edition) reports a lightning strike in the 1970s that was clumsily filled with concrete, causing decay, and a restoration in 1989 by tree surgeon Manfred Saller funded by a donation from Heidi Horten, after which 'the oldest oak in Europe shines again in full vitality'; baumkunde's 2018 visit independently confirms 'vital' condition. Clears the bar: alive and vital as of the two most recent checks (1989 restoration outcome, 2018 measurement), two independent sources for species/age/location that actually disagree on age (flagged rather than resolved), one collectible point, publicly reachable despite private ownership of the plot. Sources: https://www.baumkunde.de/baumregister/1309-tausendjaehrige_eiche_in_bad_blumau/ ; https://www.meinbezirk.at/hartberg-fuerstenfeld/c-lokales/die-1000-jaehrige-eiche-von-bierbaum_a7441969 ; https://www.meinbezirk.at/graz/c-regionauten-community/die-1000-jaehrige-eiche-in-bierbaum-gemeinde-bad-blumau_a5050954",
-   "curation_status": "flagged",
-   "tree_id": "bib_001"
-  },
-  {
-   "name": "Bildstock Deutsch Minihof",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bildstock_Deutsch_Minihof.jpg",
-    "https://commons.wikimedia.org/wiki/File:Deutsch_Minihof_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Deutsch_Minihof_2.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Birnbaum auf dem Walserfeld",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Birnbaum_auf_dem_Walserfeld.jpg",
-    "https://commons.wikimedia.org/wiki/File:Birnbaum_auf_dem_Walserfeld_Gedenktafel.jpg"
-   ],
-   "status": "lead",
-   "species": "Pear (Pyrus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Breite Föhre",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:BreiteFoehreGedenkstein.JPG",
-    "https://commons.wikimedia.org/wiki/File:Breite_F%C3%B6hre,_Anninger.jpg",
-    "https://commons.wikimedia.org/wiki/File:Josef_Loewy_-_Breite_Foehre_bei_Moedling.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Friedenslärche",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-3.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kaiserbuche, Haunsberg",
-   "lat": 47.92672528,
-   "lng": 13.00879083,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:11_Kaiserbuche_-_Denkmal_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Alte_Kaiserbuche_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Alte_Kaiserbuche_2.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Nonnenbuche, Gutenstein",
-   "lat": 47.877173,
-   "lng": 15.89413,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Rehberger Kreuz, Hofamt Priel",
-   "lat": 48.190503,
-   "lng": 15.098468,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_01,_Hofamt_Priel.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_02,_Hofamt_Priel.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_03,_Hofamt_Priel.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tree near Völlegg 49b, Reith",
-   "lat": 47.414202,
-   "lng": 15.671777,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Tree_near_V%C3%B6llegg_49b,_Reith_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tree_near_V%C3%B6llegg_49b,_Reith_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tree_near_V%C3%B6llegg_49b,_Reith_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Weißkiefer, Wölbling",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Darf_ich_bitten_-_eure_majest%C3%A4t_die_wei%C3%9Fkiefer.JPG",
-    "https://commons.wikimedia.org/wiki/File:Die_weis(s)e_frau_aus_dem_dunkelsteinerwald.JPG",
-    "https://commons.wikimedia.org/wiki/File:Die_wei%C3%9Fkiefer_im_rad_der_zeit.JPG"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Bühler-Linde (Grünburg)",
-   "lat": 47.904657,
-   "lng": 14.23206,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Buehler-Linde_in_Leonstein_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hasenguetl_in_Leonstein_mit_Linde_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hasenguetl_in_Leonstein_mit_Linde_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Friedhofslinde Wiesen, Burgenland",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wiesen-Winterlinde_5135.JPG",
-    "https://commons.wikimedia.org/wiki/File:Wiesen-Winterlinde_5136.JPG",
-    "https://commons.wikimedia.org/wiki/File:Wiesen-Winterlinde_5137.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Linde am Schlossplatz in Karlstetten",
-   "lat": 48.25836111,
-   "lng": 15.56463889,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20141018_1_Sommerlinde_(Karlstetten)_4463.jpg",
-    "https://commons.wikimedia.org/wiki/File:20141018_1_Sommerlinde_(Karlstetten)_4464.jpg",
-    "https://commons.wikimedia.org/wiki/File:20141018_1_Sommerlinde_(Karlstetten)_4466.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde bei der Christuskirche (Salzburg)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-3.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde Hochosterwitz",
-   "lat": 46.75418,
-   "lng": 14.45041,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde im Gries",
-   "lat": 47.936844,
-   "lng": 13.484372,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Linde_im_Gries.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Linde_im_Gries_-_Wahrzeichen_von_St._Georgen_im_Attergau.jpg",
-    "https://commons.wikimedia.org/wiki/File:Durchblicke_-_Die_1000-j%C3%A4hreige_Linde_ist_hohl.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "NÖ-Naturdenkmal WB-032 Sommerlinde in Hochneukirchen",
-   "lat": 47.45692833,
-   "lng": 16.19928,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:AlteLinde_Hochneukirchen.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hochneukirchen_-_Linde_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:Hochneukirchen_-_Linde_(2).JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Japanischer Schnurbaum, Bregenz",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum,_Bregenz.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_2016.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_One_Minute.jpg"
-   ],
-   "status": "lead",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Naturdenkmal OÖ 665 (4 Schnurbäume in Linz)",
-   "lat": 48.29653,
-   "lng": 14.2872,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:4_Schnurb%C3%A4ume.JPG",
-    "https://commons.wikimedia.org/wiki/File:Photo_walk_linz_Schnurb%C3%A4ume_Stockhofstra%C3%9Fe_2023-09-29_80.jpg",
-    "https://commons.wikimedia.org/wiki/File:Photo_walk_linz_Schnurb%C3%A4ume_Stockhofstra%C3%9Fe_2023-09-29_81.jpg"
-   ],
-   "status": "lead",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Wiener Naturdenkmal 276 (Wien-Innere Stadt)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:GuentherZ_Naturdenkmal_276_2010-02-27_0138_Wien01_Stadtpark_Japanischer_Schnurbaum.jpg",
-    "https://commons.wikimedia.org/wiki/File:GuentherZ_Naturdenkmal_276_2010-02-27_0139_Wien01_Stadtpark_Japanischer_Schnurbaum_Plakette.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum1.jpg"
-   ],
-   "status": "lead"
-  }
- ]
+  "country": "Austria",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "1000-jährige Eiche Bad Blumau",
+      "lat": 47.105423,
+      "lng": 16.049133,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_Bad_Blumau.JPG",
+        "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_in_Bierbaum_-_Bad_Blumau_in_der_Steiermark.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eiche_Kunstbild.jpg"
+      ],
+      "status": "published",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location_precision": "confirmed",
+      "girth_cm": 875,
+      "age_estimate": "disputed, roughly 500 to 1,000 years",
+      "age_min": 500,
+      "age_max": 1000,
+      "why": "Well documented tree, locally nicknamed 'die dicke Oachn', standing in Bierbaum an der Safen at the end of the Eichenweg toward Loimeth (municipality of Bad Blumau, Steiermark), on a private plot ('auf einem privaten Grundstück, Ortsende von Bierbaum, nach der kleinen Kapelle' per meinbezirk.at) but treated as a public attraction with marked trails, information signage and guided tours (per meinbezirk.at's Hartberg-Fuerstenfeld article, 'thousands of annual visitors'). Species and measurements from baumkunde.de's tree register (dendrology enthusiast database, last visited/measured 09.08.2018): Stiel-Eiche/Pedunculate Oak (Quercus robur), girth 8.75m (875cm) at that visit, height 30m, coordinates N47 6.32538' E16 2.94798' (converted: 47.105423, 16.049133), status 'vital' and 'öffentlich zugänglich' (publicly accessible). AGE IS DISPUTED, both figures kept rather than one picked: baumkunde.de gives 500-600 years as its own measurement-based estimate and explicitly flags this as contradicting the popular name; meinbezirk.at's Hartberg-Fuerstenfeld piece instead states 'Experten bestaetigen: rund 1.000 Jahre alt' and repeats the legend that it was 'allegedly planted around the year 1020'. No source states which experts or method reached the 1000-year figure, so it reads as the same unverified local tradition rather than an independent dendrological measurement; baumkunde's girth-based figure is more likely the sounder one but I am not picking a winner. Alive: meinbezirk (graz community edition) reports a lightning strike in the 1970s that was clumsily filled with concrete, causing decay, and a restoration in 1989 by tree surgeon Manfred Saller funded by a donation from Heidi Horten, after which 'the oldest oak in Europe shines again in full vitality'; baumkunde's 2018 visit independently confirms 'vital' condition. Clears the bar: alive and vital as of the two most recent checks (1989 restoration outcome, 2018 measurement), two independent sources for species/age/location that actually disagree on age (flagged rather than resolved), one collectible point, publicly reachable despite private ownership of the plot. Sources: https://www.baumkunde.de/baumregister/1309-tausendjaehrige_eiche_in_bad_blumau/ ; https://www.meinbezirk.at/hartberg-fuerstenfeld/c-lokales/die-1000-jaehrige-eiche-von-bierbaum_a7441969 ; https://www.meinbezirk.at/graz/c-regionauten-community/die-1000-jaehrige-eiche-in-bierbaum-gemeinde-bad-blumau_a5050954",
+      "curation_status": "flagged",
+      "tree_id": "bib_001"
+    },
+    {
+      "name": "Bildstock Deutsch Minihof",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bildstock_Deutsch_Minihof.jpg",
+        "https://commons.wikimedia.org/wiki/File:Deutsch_Minihof_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Deutsch_Minihof_2.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Birnbaum auf dem Walserfeld",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Birnbaum_auf_dem_Walserfeld.jpg",
+        "https://commons.wikimedia.org/wiki/File:Birnbaum_auf_dem_Walserfeld_Gedenktafel.jpg"
+      ],
+      "status": "blocked",
+      "species": "European Pear (Pyrus communis)",
+      "species_basis": "confirmed by de.wikipedia",
+      "blocked_reason": "Same failure as the Kaiserbuche, and for the same structural reason: this is a symbolic site repeatedly replanted since at least 1564 (sagen.at; de.wikipedia.org/wiki/Birnbaum_auf_dem_Walserfeld), not a single old tree. De.wikipedia's own infobox lists it as an 'ehemaliges Naturdenkmal' (FORMER natural monument): the tree that held that status was planted in 1887 and stood until 2014/2015, then came down and was replaced; a new pear was planted in 2015 with a ceremonial dedication in 2016. The living tree today is roughly 10-11 years old, ordinary in size, ineligible as 'genuinely old' or 'visually spectacular'. The memorial plaque and local legends (tied to the Battle of Walserfeld, 1800, among older sagas) are about the SITE and the recurring planting, not about any one living specimen -- fails the destination test, since what draws a visit is the marker and the story, not a decade-old sapling. Both Austrian candidates in this file share this pattern and neither ships as a tree entry."
+    },
+    {
+      "name": "Breite Föhre",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:BreiteFoehreGedenkstein.JPG",
+        "https://commons.wikimedia.org/wiki/File:Breite_F%C3%B6hre,_Anninger.jpg",
+        "https://commons.wikimedia.org/wiki/File:Josef_Loewy_-_Breite_Foehre_bei_Moedling.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Friedenslärche",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-3.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kaiserbuche, Haunsberg",
+      "lat": 47.92672528,
+      "lng": 13.00879083,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:11_Kaiserbuche_-_Denkmal_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Alte_Kaiserbuche_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Alte_Kaiserbuche_2.jpg"
+      ],
+      "status": "blocked",
+      "species": "European Beech (Fagus sylvatica)",
+      "species_basis": "confirmed by de.wikipedia",
+      "blocked_reason": "Not a collectible tree: the historic beech planted in 1779/1791 to mark Emperor Joseph II's 1779 visit to the Haunsberg fell in a storm in 2004 after 225 years as one of Salzburg's oldest natural monuments (de.wikipedia.org/wiki/Kaiserbuche_(Haunsberg); meinbezirk.at). Its replacement was destroyed by an act of vandalism in February 2008. A further replacement was planted in summer 2009 and stands today behind a 2-metre fence -- so the current living 'Kaiserbuche' is roughly 17 years old, unremarkable in size, and fenced off from close approach. The site (viewpoint, 1898 memorial chapel, 1779/1957 pyramid) is genuinely a hiking destination, but the LIVING TREE fails the destination test on its own merits: nobody travels for a 17-year-old sapling behind a fence. CAUTION for any future photo pass: the Commons photo 'Alte_Kaiserbuche_1/2.jpg' (Alte = old) almost certainly depicts the pre-2004 original tree that no longer exists, not the current living planting -- do not use it as a photo of an extant tree."
+    },
+    {
+      "name": "Nonnenbuche, Gutenstein",
+      "lat": 47.877173,
+      "lng": 15.89413,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Rehberger Kreuz, Hofamt Priel",
+      "lat": 48.190503,
+      "lng": 15.098468,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_01,_Hofamt_Priel.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_02,_Hofamt_Priel.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_03,_Hofamt_Priel.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tree near Völlegg 49b, Reith",
+      "lat": 47.414202,
+      "lng": 15.671777,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Tree_near_V%C3%B6llegg_49b,_Reith_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tree_near_V%C3%B6llegg_49b,_Reith_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tree_near_V%C3%B6llegg_49b,_Reith_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Weißkiefer, Wölbling",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Darf_ich_bitten_-_eure_majest%C3%A4t_die_wei%C3%9Fkiefer.JPG",
+        "https://commons.wikimedia.org/wiki/File:Die_weis(s)e_frau_aus_dem_dunkelsteinerwald.JPG",
+        "https://commons.wikimedia.org/wiki/File:Die_wei%C3%9Fkiefer_im_rad_der_zeit.JPG"
+      ],
+      "status": "lead",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Bühler-Linde (Grünburg)",
+      "lat": 47.904657,
+      "lng": 14.23206,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Buehler-Linde_in_Leonstein_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hasenguetl_in_Leonstein_mit_Linde_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hasenguetl_in_Leonstein_mit_Linde_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Friedhofslinde Wiesen, Burgenland",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wiesen-Winterlinde_5135.JPG",
+        "https://commons.wikimedia.org/wiki/File:Wiesen-Winterlinde_5136.JPG",
+        "https://commons.wikimedia.org/wiki/File:Wiesen-Winterlinde_5137.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Linde am Schlossplatz in Karlstetten",
+      "lat": 48.25836111,
+      "lng": 15.56463889,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20141018_1_Sommerlinde_(Karlstetten)_4463.jpg",
+        "https://commons.wikimedia.org/wiki/File:20141018_1_Sommerlinde_(Karlstetten)_4464.jpg",
+        "https://commons.wikimedia.org/wiki/File:20141018_1_Sommerlinde_(Karlstetten)_4466.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Linde bei der Christuskirche (Salzburg)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-3.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Linde Hochosterwitz",
+      "lat": 46.75418,
+      "lng": 14.45041,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Linde im Gries",
+      "lat": 47.936844,
+      "lng": 13.484372,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Linde_im_Gries.jpg",
+        "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Linde_im_Gries_-_Wahrzeichen_von_St._Georgen_im_Attergau.jpg",
+        "https://commons.wikimedia.org/wiki/File:Durchblicke_-_Die_1000-j%C3%A4hreige_Linde_ist_hohl.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "NÖ-Naturdenkmal WB-032 Sommerlinde in Hochneukirchen",
+      "lat": 47.45692833,
+      "lng": 16.19928,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:AlteLinde_Hochneukirchen.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hochneukirchen_-_Linde_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:Hochneukirchen_-_Linde_(2).JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Japanischer Schnurbaum, Bregenz",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum,_Bregenz.jpg",
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_2016.jpg",
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_One_Minute.jpg"
+      ],
+      "status": "lead",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Naturdenkmal OÖ 665 (4 Schnurbäume in Linz)",
+      "lat": 48.29653,
+      "lng": 14.2872,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:4_Schnurb%C3%A4ume.JPG",
+        "https://commons.wikimedia.org/wiki/File:Photo_walk_linz_Schnurb%C3%A4ume_Stockhofstra%C3%9Fe_2023-09-29_80.jpg",
+        "https://commons.wikimedia.org/wiki/File:Photo_walk_linz_Schnurb%C3%A4ume_Stockhofstra%C3%9Fe_2023-09-29_81.jpg"
+      ],
+      "status": "lead",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Wiener Naturdenkmal 276 (Wien-Innere Stadt)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:GuentherZ_Naturdenkmal_276_2010-02-27_0138_Wien01_Stadtpark_Japanischer_Schnurbaum.jpg",
+        "https://commons.wikimedia.org/wiki/File:GuentherZ_Naturdenkmal_276_2010-02-27_0139_Wien01_Stadtpark_Japanischer_Schnurbaum_Plakette.jpg",
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum1.jpg"
+      ],
+      "status": "lead"
+    }
+  ]
 }
