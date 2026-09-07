@@ -5762,6 +5762,13 @@
     "tokens": 224527,
     "trees": 1,
     "note": "Deepen verify pass on 561 unmined Naturdenkmal register candidates plus 284 Wikidata candidates. Register has no age/girth field; de.wikipedia district Naturdenkmal lists trace to the same ordinance as the register so do not count as independent; monumentaltrees.com 403d throughout with no usable Wayback snapshots. Only 1 tree cleared the two-independent-source bar (ber_020, the Podbielski Oak at the Olympiastadion, age genuinely disputed between two sources, delivered flagged with both readings). 7 clusters recorded as open leads in data/leads/berlin.json pending an independent source or access confirmation, none confirmed dead ends. Low yield reflects a real register gap (no age field, no accessible second-source layer) rather than an unworked city."
+   },
+   {
+    "target": "milan",
+    "kind": "verify",
+    "tokens": 171197,
+    "trees": 0,
+    "note": "Independently re-confirmed near-centre register supply exhaustion: all 25 MASAF candidates within 5km resolve exactly to already-published (17), already-blocked (3) or already-tracked-lead (3+1 flagging miss) entries. The one genuine ambiguity (Villa Litta Modignani two distinct plane sheets, 550cm/480cm girth, possibly a 43m record height) could not be resolved: comune.milano.it 403d both language paths, no Wayback snapshot, milanoaffori.it now blocks this environment outright. Documented the failed routes in the lead so a future pass tries a browser session instead of text fetches. Did not chase the 8-17km metropolitan-area candidates per the brief instruction to prefer within-span trees."
    }
   ]
  }
