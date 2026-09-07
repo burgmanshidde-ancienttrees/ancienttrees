@@ -3339,6 +3339,79 @@ Machine: 4 chain attempts yesterday, 4 got real work time (~278 min total). Dead
 
 **Conclusion:** Search is the only channel with real data and it is still small: 14 clicks and 641 impressions on Google's freshest day (day before: c32/i1063). Directional at best; no strategic conclusions from these volumes.
 
+## Weekly analysis 2026-09-07
+
+Seventh weekly analysis, comparing the 10-day Search Console window ending
+2026-09-06 against the one ending 2026-08-30 (both read from the daily
+entries directly), plus the beacon's own 8-day windows for the same two
+boundaries. This window also covers the app's App Store launch on 09-03.
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Avg position | Visits (beacon, 8d) | Pageviews (beacon, 8d) | Directions (14d) | App-CTA (14d) | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-30 | 9,870 | 212 | 2.1% | 17.9 | 530 | 950 | 24 | 44 | 15 | 33 |
+| 2026-09-06 | 12,249 (still settling) | 299 (still settling) | 2.4% | 13.1 | 1,090 | 1,570 | 43 | 29 | 17 (Android-only) | 11 (reader-only) |
+
+**What moved:**
+1. Search kept growing for a second straight week: impressions 9,870 to
+   12,249 (+24%), clicks 212 to 299 (+41%), CTR up 2.1% to 2.4%, average
+   daily position improved from 17.9 to 13.1. Two consecutive weeks of
+   impressions and clicks both growing is exactly GO_TO_MARKET.md's stated
+   healthy bar, now met twice rather than once.
+2. Beacon visits more than doubled, 530 to 1,090 across the two 8-day
+   windows (+106%), while pageviews grew slower (950 to 1,570, +65%), so
+   pages/visit fell 1.79 to 1.44. This coincides with the app's App Store
+   launch on 09-03 (24 downloads in 3 days). Singapore alone supplied 480
+   of the 1,090 beacon visits (44%), more than double the next country
+   (US, 160), against only 198 Search Console impressions from Singapore
+   this window; the beacon cannot say what drove that traffic (cookieless,
+   no session), so it is a lead, not yet a reading.
+3. Milan is now flagged for a FIFTH straight weekly analysis (08-08,
+   08-10, 08-17, 08-28, 08-31, now 09-07): still 0% CTR, impressions
+   climbing again (199 to 211 to 281 over the last three windows) at a
+   strong position (7.6). LOG.md shows only tree-research passes against
+   Milan (a 0-new verify pass this week); the title/meta diagnostic that
+   fixed Rome and Malaga has still never been run against it.
+4. App-CTA (14d) fell 44 to 29 in the same week the app actually shipped
+   on the App Store, while directions (14d) rose 24 to 43. Worth a look:
+   either the web CTA is stale now that there is a real download link to
+   push instead of a waitlist pitch, or this is normal rolling-window
+   volatility (a high-click day dropping out of the 14-day frame); the
+   data here cannot tell which.
+5. The reader-submissions table now separates internal test rows from
+   real reader activity (a fix implied by three straight prior weeks
+   flagging test-account spikes inflating the number). This week's honest
+   reader total: 11 submissions (3 trees, 8 feedback), 17 Android waitlist
+   signups, 12 accounts total. All still single-digit-to-teens; read as
+   noise-level, not trend.
+
+**Suggestions, ranked:**
+1. **[sessie]** Fix Milan's title/meta. Five straight weekly analyses have
+   now named it, impressions keep climbing (199/211/281) at a rankable
+   position (7.6-9.6), and the fix that worked twice already (Rome,
+   Malaga: check P2 answer-first wording and the title/meta against the
+   actual top query, "oldest of its species" owl park) has never been
+   applied here. This is the single most persistent, best-evidenced open
+   problem in seven weeks of this analysis.
+2. **[run]** Check what is actually behind the Singapore beacon spike
+   (480 of 1,090 visits, 44%, against just 198 Search Console impressions
+   from Singapore). The beacon table in DATA.md has no referrer breakdown
+   by country, so this needs a direct Cloudflare query: a real audience
+   forming around Singapore's tree pages reads very differently from a
+   single referrer or bot pattern, and beacon growth this week should not
+   be read as broad traction until this is known.
+3. **[sessie]** Look at why app-cta (14d) fell 44 to 29 in the exact week
+   the app went live on the App Store (09-03, 24 downloads in 3 days).
+   Check whether the CTA still points at a waitlist pitch rather than the
+   live download link; if the copy never updated for launch, that would
+   explain a fall exactly where a rise was expected.
+
+**Watch next week:** whether Milan's CTR moves once its title/meta is
+actually touched, whether the Singapore beacon traffic repeats or was a
+one-window anomaly, and whether this week's search growth (two in a row
+now) continues into a third.
+
 ## Weekly analysis 2026-08-31
 
 Sixth weekly analysis, comparing the 10-day Search Console window ending
