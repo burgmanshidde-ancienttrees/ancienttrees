@@ -61,4 +61,9 @@ public enum Launch {
     /// which a simulator cannot do, so the screen shipped having never been
     /// looked at once. It is also the screen Hidde could not read in Nara.
     public static let collectIdentify = ProcessInfo.processInfo.arguments.contains("-collect-identify")
+
+    /// The payoff screen, which is the one Hidde photographed and objected to
+    /// on 2026-09-07 and which nothing had ever measured, for the same reason
+    /// as the two above: it comes after a camera a simulator does not have.
+    public static let collectTicked = ProcessInfo.processInfo.arguments.contains("-collect-ticked")
 }

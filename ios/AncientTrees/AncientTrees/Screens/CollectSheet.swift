@@ -279,6 +279,14 @@ struct CollectSheet: View {
             SignInSheet(reason: .feedback, localCount: saved.savedCount)
         }
         .task {
+            if Launch.collectTicked, let t = Self.nearby(origin: origin,
+                                                         trees: catalogue.trees).first {
+                at = origin
+                shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
+                    .image { _ in }
+                stage = .ticked(t.id)
+                return
+            }
             if Launch.collectIdentify {
                 // A one-pixel stand-in for the photograph, because every
                 // action on this screen needs one and a simulator has no
