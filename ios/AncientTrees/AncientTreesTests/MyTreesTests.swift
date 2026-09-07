@@ -523,6 +523,41 @@ struct WhenPermissionIsRefused {
         #expect(store.all.count == 2, "the photograph was thrown away")
     }
 
+    /// A tree built the way the app really gets one, through the feed's own
+    /// decoder, so these tests break the day the feed's shape does.
+    private static func feedTree(id: String, lat: Double, lng: Double,
+                                 precision: String,
+                                 species: String = "Japanese Cedar (Cryptomeria japonica)") -> Tree {
+        let json = """
+        {"id":"\(id)","name":"\(id)","species":"\(species)","age":null,
+         "age_min":null,"age_max":null,"lat":\(lat),"lng":\(lng),
+         "city":"Nara","city_slug":"nara","country":"Japan","neighbourhood":null,
+         "access":"","transport":null,"precision":"\(precision)","best_time":null,
+         "peak":null,"story":"","how_to_recognise":null,"url":"","photo":null}
+        """
+        return try! JSONDecoder().decode(Tree.self, from: Data(json.utf8))
+    }
+
+    /// A pin that only ever claimed the park must not tick a tree off for you.
+    ///
+    /// Hidde, testing in Nara 2026-09-07: "the pin was approximate, did I find
+    /// it?" Three Japanese cedars stand within 200 metres of Nigatsu-do, all
+    /// three on approximate pins, and the old rule would have picked one and
+    /// told him he had found it. Measuring a distance to a coordinate that was
+    /// never a claim about where the tree stands is arithmetic, not a match.
+    @Test func aRoughPinNeverClaimsATreeWithoutAsking() {
+        let here = (lat: 34.6892, lng: 135.8439)
+        let rough = Self.feedTree(id: "nra_010", lat: 34.68925, lng: 135.84394,
+                                  precision: "approximate")
+        #expect(CollectSheet.confident(origin: here, trees: [rough]) == nil,
+                "an approximate pin ticked a tree off without asking")
+
+        let exact = Self.feedTree(id: "nra_002", lat: 34.68925, lng: 135.84394,
+                                  precision: "confirmed")
+        #expect(CollectSheet.confident(origin: here, trees: [exact])?.id == "nra_002",
+                "a confirmed pin under eighty metres stopped matching")
+    }
+
     /// Every simulator, and any iPad without a rear camera.
     @Test func noCameraAtAllIsTheLibraryWhateverTheAnswerWas() {
         for answer in [AVAuthorizationStatus.authorized, .denied, .notDetermined, .restricted] {
