@@ -6666,6 +6666,64 @@
    ],
    "trees": 12,
    "logged": true
+  },
+  {
+   "started": "2026-09-07T07:48:36+00:00",
+   "date": "2026-09-07",
+   "run_id": "34092256498",
+   "minutes": 49.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 400,
+   "denials": 28,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 4391765,
+   "claims_held": [
+    "_bomenbieb-netherlands"
+   ],
+   "commits": 19,
+   "cities_touched": 9,
+   "cities": [
+    {
+     "city": "nara",
+     "trees": 4
+    },
+    {
+     "city": "prague",
+     "trees": 3
+    },
+    {
+     "city": "deventer",
+     "trees": 2
+    },
+    {
+     "city": "aguas-de-moura",
+     "trees": 1
+    },
+    {
+     "city": "kasukabe",
+     "trees": 1
+    },
+    {
+     "city": "rumskulla",
+     "trees": 1
+    },
+    {
+     "city": "the-hague",
+     "trees": 1
+    },
+    {
+     "city": "heidelberg",
+     "trees": 0
+    },
+    {
+     "city": "lima",
+     "trees": 0
+    }
+   ],
+   "trees": 13,
+   "logged": true
   }
  ],
  "schedule_changes": [
