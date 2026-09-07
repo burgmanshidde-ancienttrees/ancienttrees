@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ksk_001",
+    "name": "Ushijima no Fuji (the Great Wisteria of Ushijima)",
+    "species": "Japanese Wisteria (Wisteria floribunda)",
+    "age_estimate": "roughly 1,200 years",
+    "age_min": 1000,
+    "age_max": 1300,
+    "girth_cm": 400,
+    "location": {
+      "address": "Tokaen / Fujikaen garden, 786 Ushijima, Kasukabe, Saitama Prefecture, Japan",
+      "latitude": 35.985076,
+      "longitude": 139.773823,
+      "neighbourhood": "Ushijima, Kasukabe"
+    },
+    "verified_sources": [
+      "https://www.tobu.co.jp/en/sightseeing/news/1672.html",
+      "http://www.ushijimanofuji.co.jp/en/about_en.html",
+      "https://www.wikidata.org/wiki/Q11570113"
+    ],
+    "access": "Paid entry, 1,000 yen. Open to the public only during the bloom window, roughly mid-April to early May each year (2025's dates were 12 April to 4 May); closed the rest of the year. Free of any permission barrier during that window, just a ticket and a season.",
+    "transport": "10-minute walk from Fuji-no-Ushijima Station on the Tobu Noda Line; roughly 40-50 minutes by train from central Tokyo, so treat Kasukabe as its own destination rather than a Tokyo day-trip add-on (see container note).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "The only wisteria in Japan designated a Special National Natural Monument (Japan's highest tier), and the reason the garden (Tokaen / Fujikaen) exists at all -- it is built around this one plant. Designated a Natural Monument in January 1928, upgraded to Special Natural Monument on 1955-08-22 (dates corroborated by Wikidata and Japanese sources). Age given consistently as 'roughly 1,200 years' or '1,200-plus years' across the official site, Tobu Railway and Japanese tourism aggregators; one Japanese aggregator additionally calls it Japan's oldest example of the species, a claim not independently corroborated elsewhere, so it is noted here rather than repeated as fact. SIZE: the wisteria's trellis canopy is given as roughly 700 sqm by the official English site and 600 sqm by a Japanese aggregator (both may be rounding the same figure differently, or measuring at different times -- flagged rather than picked); root-base circumference given as 'over 4m' by one source, recorded as girth_cm 400; a separate figure of root spread '10 sqm' appears to describe root AREA rather than a circumference and should not be conflated with girth. Flower clusters reach up to 2 metres long, among the longest of any wisteria. SPECIES NOTE: one source describes it as closely resembling Wisteria brachybotrys (silky wisteria) in some respects (clockwise twining, no hairy tendrils) while classifying it as Wisteria floribunda -- record as floribunda per the official designation and Wikidata, note the resemblance comment for the writer. ALIVE/CURRENT: strong and recent -- the garden published and Tobu Railway promoted a specific 2025 opening window (12 April to 4 May 2025), which is direct, dated, current-year evidence the plant is alive, blooming and open. ACCESS: clean paid-entry case, no permission barrier, but the garden is only open roughly three weeks a year during bloom; the access line must say this plainly so nobody turns up in July to a locked gate. DESTINATION TEST: passes emphatically -- this is one of Japan's most visited flower-tourism destinations, gets national and railway-company promotion every spring, and the entire commercial operation around it exists solely because of this one plant. CONTAINER: Kasukabe is roughly 40-50 minutes by train from central Tokyo (Tobu Noda/Skytree lines), outside CLAUDE.md's 30-minute day-trip boundary for joining the already-published Tokyo page, and it is a well-known destination in its own right regardless of Tokyo. Recommend as its own single-tree place, 'Kasukabe' or 'Ushijima, Kasukabe', under the 2026-08-31 exception. PIN: geocoded from the garden's own postal address (786 Ushijima) via a Japanese mapping directory, consistent with the official 10-minute-walk-from-station distance (644m straight-line to the station per that same source) -- address-level, not a tree-specific survey or aerial confirmation, so marked approximate rather than confirmed. PHOTO NOTE (not fetched, per brief instructions): both lead photo filenames reference 'Kasukabe Wisteria' and 'Ushijima', matching this exact plant and location; a third filename variant differing only in file extension (.JPG vs .jpg) is very likely a duplicate upload of the same image, worth checking during the photo pass rather than treating as two separate candidates."
+  }
+]
