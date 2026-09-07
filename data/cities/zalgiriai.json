@@ -1,0 +1,62 @@
+{
+  "city": "Žalgiriai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Zalgiriai maps one tree, standing at the end of a trail with a strange claim to fame: the writer it is named for watched local peat-cutters at work here and turned their lives into a novella, which F.W. Murnau filmed in 1927 as Sunrise, winning three awards at the first Academy Awards. The oak is the only natural monument in Nemunas Delta Regional Park, three trunks from one base at a combined girth of 4.62 metres. Nobody has dated it: a combined multi-trunk measurement makes the usual growth-rate arithmetic unreliable, so this page asks rather than guesses.",
+  "meta_description": "The Hermann Sudermann Oak, sole monument tree in Nemunas Delta Regional Park, its story tied to a film that won three Oscars in 1927.",
+  "question_meta": "Zalgiriai's mapped tree is the Hermann Sudermann Oak, the only natural monument in Nemunas Delta Regional Park.",
+  "question_answer": "The tree mapped at Zalgiriai is the Hermann Sudermann Oak, a three-trunked pedunculate oak at the end of the Zalgiriai heritage trail, the sole natural monument in Nemunas Delta Regional Park. It is named for the writer whose novella about the local peat-cutters became F.W. Murnau's 1927 film Sunrise.",
+  "question_context": "Three Academy Awards trace back to the bog at the end of this trail. Hermann Sudermann, the writer the oak is named for, stayed often in Zalgiriai and watched the peat-cutters at work here, then wrote their lives into his novella Die Reise nach Tilsit. F.W. Murnau filmed it in 1927 as Sunrise: A Song of Two Humans, which took three awards at the first Academy Awards. The tree stands at the far end of the roughly two kilometre trail through that former peat-cutters colony, the reason for the walk rather than a stop along the way. It is also the only natural monument in the whole of Nemunas Delta Regional Park. Three trunks rise from one base, 4.62 metres round between them and 17.6 metres tall. Lithuania placed it under state protection in 2005. Sudermann died in 1928, a year after the film. The colony he wrote about is gone and the cutting has stopped, and the trail now runs through what those workers left behind. Nobody has dated the oak: the girth is a combined figure for three trunks rather than one stem, which makes the usual growth-rate arithmetic unreliable, so the age stays an open question.",
+  "hero_tree_id": "zal_001",
+  "oldest_tree_id": "zal_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Zalgiriai?",
+      "a": "The Hermann Sudermann Oak, a three-trunked pedunculate oak at the end of the Zalgiriai heritage trail, the sole natural monument in Nemunas Delta Regional Park."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Not documented. Its girth is a combined figure for three trunks rather than one stem, so the usual growth-rate estimate is not reliable here. If you know its age, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands at the end of a public, marked educational trail inside Nemunas Delta Regional Park, no ticket or restriction."
+    },
+    {
+      "q": "What is the connection to the Oscars?",
+      "a": "Hermann Sudermann watched the local peat-cutters and based his novella on their lives; F.W. Murnau's 1927 film adaptation, Sunrise, won three awards at the first Academy Awards."
+    }
+  ],
+  "trees": [
+    {
+      "id": "zal_001",
+      "name": "The Hermann Sudermann Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 462,
+      "location": {
+        "address": "End of the Zalgiriai educational nature trail (Zalgiriu pazintinis takas), Zalgiriai forest (compartment 15, section 23), on the Silute-Rusne road, within Nemunas Delta Regional Park, Silute district",
+        "latitude": 55.310218,
+        "longitude": 21.429515,
+        "neighbourhood": "Zalgiriai, Silute seniunija, Silute district, Nemunas Delta Regional Park"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Hermano_Zudermano_%C4%85%C5%BEuolas",
+        "https://saugoma.lt/lt/objektai/objektai-hermano-zudermano-azuolas",
+        "https://ve.lt/gyvenimas/laisvalaikis/unikali-vieta-silutes-rajone-ikvepusi-hermana-zudermana",
+        "https://www.15min.lt/gyvenimas/naujiena/keliones/pazintinis-takas-pasakojantis-apie-pelkiu-zmoniu-gyvenima-sunkiai-isivaizduojamos-salygos-ir-net-3-oscarai-1630-1459810"
+      ],
+      "access": "Free, public nature trail inside Nemunas Delta Regional Park; the tree stands at the far end of the marked, roughly 2 km Zalgiriai educational trail through a former peat-cutters' colony. No ticket, no restriction.",
+      "transport": "By car via the Silute-Rusne road to the Zalgiriai trail car park, then on foot along the marked educational trail (about 2 km) to the tree at its end. No direct public transport to the trailhead found.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Three Academy Awards trace back to the bog at the end of this trail. Hermann Sudermann, the German-language writer the oak is named for, stayed often in the village of Zalgiriai and watched the peat-cutters at work here, then wrote their lives into his novella Die Reise nach Tilsit. F.W. Murnau filmed it in 1927 as Sunrise: A Song of Two Humans, which took three awards at the first Academy Awards ceremony. The tree stands at the far end of the roughly two kilometre trail through that former peat-cutters' colony, and it is the reason for the walk rather than a stop along the way.\n\nIt is also the only natural monument in the whole of Nemunas Delta Regional Park. Three trunks rise from one base, 4.62 metres round between them and 17.6 metres tall. Lithuania placed it under state protection in 2005.\n\nSudermann died in 1928, a year after the film. The colony he wrote about is gone and the cutting has stopped, and the trail now runs through what those workers left behind. The oak is the last thing on it.\n\nNobody has dated this one. The recorded girth is a combined figure for three trunks rather than a single stem, which makes the usual growth-rate arithmetic unreliable, so the age stays an open question. If you know it, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
