@@ -1,6 +1,75 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation) - 4 trees shipped from stranded write passes (Pelham, Itoshiro, Yangpyeong, Osaka+1); bomenbieb verify continued, 2 duplicates caught, 15 dispatched
+
+Resumed a window an earlier attempt stopped after 14 minutes having
+shipped nothing, 106 of 120 minutes unspent. `passcheck.py --claims`
+showed one standing claim, `_bomenbieb-netherlands` (verify, by
+night-run, 146 min left). `leads.py --ready` was empty (0 of 2688).
+
+Before touching the claim, `git status` showed 5 modified research files
+unrelated to it: `comfort-maple-verified.json`,
+`ginkgo-of-yongmunsa-temple-verified.json`, `itoshiro-no-osugi-verified.json`,
+`myokokuji-no-sotetsu-verified.json`, `famouspoland-verified.json`, each
+carrying a `story` a write-stories pass had already drafted, never merged
+into a city file, never committed, no claim protecting them. Higher value
+than continuing the bomenbieb research cold, so merged them first:
+
+- **Pelham, Ontario** (new, pel_001, Comfort Maple), **Itoshiro, Japan**
+  (new, ita_001, Itoshiro Osugi), **Yangpyeong, South Korea** (new,
+  ymp_001, Ginkgo of Yongmunsa Temple), **Osaka +1** (osa_006, Myokoku-ji
+  cycad, folded into Osaka under the day-trip boundary rather than made
+  its own place, since Sakai alone has only this one candidate). Full
+  detail and reasoning in CURATION.md's matching entry.
+- Found and viewed photos for 3 of the 4 against the Cadiz standard
+  (downloaded via Wikimedia's API to get real filenames rather than
+  guessing thumbnail paths, then read with the image tool): Comfort
+  Maple (CC BY-SA 2.0, autumn colour), Itoshiro Osugi (CC BY-SA 4.0, the
+  trailhead sign in-frame confirms the stated age/girth), Yongmunsa
+  Ginkgo (KOGL Type 1, autumn gold, matches the best_time label). Rejected
+  two Myokoku-ji candidates on sight (a black-and-white archival print
+  with a person in period dress; a satellite/aerial map), so osa_006
+  ships without one.
+- Osaka's own intro was separately stale (claimed "three of the four"
+  trees were camphors against an actual five, predating this session's
+  edit), fixed to "four of the six" while adding the new tree. Updated
+  one FAQ answer and the Japanese overlay (new osa_006 translation, intro
+  trimmed to fit the 250-character Contract C limit for Japanese, which
+  the English 100-word edit had blown past at 255).
+- famouspoland's Brzoza trio (xxx_003-005) got stories but stays HELD:
+  below the 4-tree floor, no evidence of the wider fame a single-tree
+  place needs. Kept as finished research rather than discarded.
+
+**Then the standing claim.** The earlier attempt's own followup file
+(`data/leads/bomenbieb-netherlands-followup.json`) showed it had gotten
+through only 1 of its assigned 18 candidates in 14 minutes. Before
+dispatching a verify pass on the other 17, cross-checked every one's
+coordinates against the CURRENT full `data/cities` corpus by actual
+distance (haversine, not the stale `nearest_ours_km` field baked into
+the batch), because CURATION.md's own history showed this exact source
+had shipped a batch the day before (2026-09-06) under different
+place/tree names. That check caught 2 real duplicates at 0m: `zwarte els
+paleis loo` is already live as Apeldoorn's apd_010, `kasteellinden
+nijenrode` is already live as Breukelen's bkl_001. Marked both
+`duplicate` in `_bomenbieb-netherlands.json` with the coordinate match
+recorded as the reason, so no future pass re-researches them.
+
+Dispatched a `verify` agent (background) on the remaining 15 real
+candidates (Voorburg, Amsterdam, two in Wilp, Meerssen, Houten,
+Grubbenvorst, Oisterwijk, Achterberg, De Steeg, Zutphen, Midlaren, Tull
+en 't Waal, Slochteren, Putten), with full per-candidate data, the
+container question (day-trip addition to a named nearby city vs. a HELD
+single lead vs. lead/blocked) put explicitly in its brief, and delivery
+into the same followup/verified files the earlier attempt was already
+using. Result not in when this entry was written; the claim stays
+standing for whoever reads its output next.
+
+Build (4878 pages), qa.py and superlatives.py (697 claims, no crown
+collisions) all clean. Committed and pushed as `ab570643`. Logged as a
+`session` merge pass (not a fresh verify/write dispatch) in
+`data/agent-costs.json`.
+
 ## 2026-09-07 (continuation) - Found the actual bug behind testTappingAPinOpensItsTree: the sweep was tapping the filter chips, not the map
 
 Rung 2 again: `63e11fcd`'s "real idle signal" fix (previous entry below)
