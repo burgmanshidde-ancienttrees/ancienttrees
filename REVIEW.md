@@ -13,6 +13,102 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-07
+
+Reviewed commits since the last review (d52051f2, 2026-09-06 ~09:42 UTC)
+through 746c5f43 (~150 commits): mostly an iOS session driven by Hidde
+testing the collect flow live in Nara (the "I am not sure which" picker
+state, an honest age-string fix, an approximate-pin never auto-ticks a
+tree, a "first tree"/"first in this city" milestone line, "yours
+immediately, ours is a separate question" copy, a register-corroboration
+script for reader-added trees) plus the usual assembly-line research
+(Prague +3, Nara +4 from reader photos, single-tree famous-tree places
+opened in France, Poland, Japan and Corsica, Dutch bomenbieb verify
+batches, photo vendoring, three iOS map-test flakiness fixes). Ran
+`python3 scripts/qa.py` (7495 pages, clean), `python3 scripts/health.py`
+(rung 2 clear, no BLOCKER), `python3 scripts/preflight.py` (504 cities,
+0 problems) and `python3 scripts/superlatives.py` (702 claims, no
+collisions). Confirmed both 2026-09-06 WARNs are genuinely fixed rather
+than just claimed: Canberra/Gumeli/San Quirico d'Orcia's FAQ answers now
+name the actual fame case instead of the four-tree-floor threshold (and
+the two new phrases were added to `qa.py`'s `BUSINESS_RULE_PHRASES`,
+confirmed no page in the built site matches the old rule-explaining
+pattern), and Contribute.swift's line now reads "Nobody else sees who
+sent this." Spot-checked the new single-tree/low-tree-count places
+(`ghisonaccia`, `le-precheur`, `venon`, `rogalin`, `sulechow`) for the
+same rule-explaining anti-pattern and for the four-tree-floor exception:
+clean, and the 2-tree places (Rogalin's two named oaks, Sulechow's two
+pines, Ghisonaccia's two trees) match an existing, established site
+pattern (19 other 2-tree places already published, including Charleston
+and Savannah, the cases DECISIONS.md 2026-08-31 names directly), not new
+drift. Read the six rotated app screenshots
+(`own-tree.png`, `paywall.png`, `people.png`, `photo-viewer.png`,
+`place-pin.png`, `profile-edit.png`): all clean against the corpus.
+`people.png`'s "Find people" list (Marieke/Tom/Sofia) and `paywall.png`'s
+"We are building it" line were both already traced and accepted by
+earlier reviews (2026-08-27, `Kit/DemoPeople.swift` demo data; Hidde's
+own copy, kept deliberately). `own-tree.png`'s "Added to your trees...
+once it's verified, we will add it to our map" (TreeDetail.swift) does
+not contradict today's CollectSheet.swift copy change ("yours
+immediately, ours is a separate question") despite living in a different
+file; both say the same thing in the same order.
+
+Nothing found at BLOCKER or WARN for the last 24 hours' changes. This
+was an unusually careful session: four separate bugs Hidde found live
+in the field each got a real fix plus a benchmarked convention entry in
+CONVENTIONS.md (Merlin, geocaching FTF/DNF, Strava, AllTrails/Google
+Maps/Komoot compass words) rather than an invented pattern.
+
+**Monday corpus audit** (CLAUDE.md, PRINCIPLES.md, PRODUCT_IA.md,
+BACKLOG.md, GO_TO_MARKET.md, DECISIONS.md).
+
+**NOTE — CLAUDE.md's "The paywall line, SET by Hidde 2026-08-18" section
+lists a four-feature Plus bundle that a later standing decision
+explicitly replaced.** CLAUDE.md still reads: "four features behind it:
+Season Radar alerts, curated tree walks, **a personal tree log with
+badges and photo upload**, and full offline access." DECISIONS.md
+2026-08-26 ("the launch is free, the walks and the season are Plus, and
+the free scope freezes at launch") opens by saying it "REPLACES the
+four-feature Plus line of 2026-08-18" and rules explicitly: "Log, badges,
+photo upload and collecting stay free forever-in-practice because they
+ARE the flywheel." CLAUDE.md was never updated to match, so a run reading
+only CLAUDE.md (which nightly.yml points at, per its own "this paragraph
+is the only place either of them lives" convention elsewhere in the same
+file) would build photo-upload or badges as paid features, the opposite
+of the standing ruling. Suggest: rewrite the paywall section to say
+walks and the whole season story are Plus, log/badges/photo-upload/
+collecting are free, per the 2026-08-26 entry, or add an explicit
+superseded-by pointer the way other sections in this file do.
+
+**NOTE — the same CLAUDE.md section's account snapshot describes a
+sync mechanism that no longer exists.** "Where the account track
+actually stands (2026-08-14...)" lists as live: "cloud sync of saved
+trees as a union." DECISIONS.md 2026-08-30 reverses exactly this
+("saving needs an account... two stores merged as a union is where the
+drift lives, and it produced a real fault"), and 2026-09-02 goes
+further ("Nothing is stored on the device any more... Gone with it: ...
+the saved cache (`at_saved_v1`)"). The union mechanism CLAUDE.md
+describes as current was killed by two later rulings. Suggest: drop the
+"as a union" clause or point it at the 2026-08-30/09-02 DECISIONS.md
+entries.
+
+**NOTE — BACKLOG.md carries two parked items whose triggers already
+fired weeks ago and whose open questions are already answered.** "Web
+check-in moves to the app; web becomes discovery plus sales floor" says
+"Not yet executed... awaiting his confirm on framing before code is
+removed. Until then... nothing passport-related is built or removed" —
+but DECISIONS.md 2026-08-25/29/30 and 2026-09-02 already gated
+saving/collecting behind an account and then removed the local passport
+entirely ("nothing is stored on the device any more"), which is exactly
+the confirm-and-remove this item was waiting on. Likewise "Accounts, and
+a paywall on top" gives its trigger as "evidence that people want this"
+and needs Hidde — both accounts (2026-08-14) and the paywall line
+(2026-08-18, revised 2026-08-26) are long since decided and recorded in
+DECISIONS.md. Both backlog entries read as open questions to a reader
+today; they are resolved history. Suggest moving/removing both, per
+BACKLOG.md's own stated purpose ("things worth building, deliberately
+not being built yet... without a trigger an item is just a wish").
+
 ## 2026-09-06
 
 Reviewed commits since the last review (c7d4847e, 2026-09-05 ~11:00 UTC)
