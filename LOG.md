@@ -1,6 +1,29 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-07 (continuation 6) - Leiden 12 to 18, all free, one from a Dutch cultivar's origin planting
+
+Berlin and a repeat Milan pass both came back thin today (Berlin: 1 tree
+from 561 candidates, register has no age field; Milan: 0, duplicating a
+same-day finding I should have checked CURATION.md for first before
+dispatching). Leiden's Dutch LRMB register was a different story: it
+carries a planted-decade band on every entry, and 6 of the 399 unmined
+candidates verified clean, all free public trees, deliberately steered
+that way since Leiden already carried a heavy paid-entry share.
+
+The find worth naming: a 3-tree Persian Ironwood grove in the Plantsoen
+turns out to be the actual origin planting of Parrotia persica 'Het
+Plantsoen', a cultivar now sold by nurseries across Europe and named
+after this exact spot by the Dutch nursery that introduced it. Also
+shipped: two London planes and a weeping willow around a park statue,
+a Caucasian wingnut that beat a copper beech in a 2009 public tree vote,
+and an elm inside the 11th-century Burcht mound, one of the country's
+surviving monumental elms. Leiden: 12 to 18 trees, paid-entry share 67%
+to 44%. Upgraded one existing pin (lei_005) to confirmed using the
+register's own coordinate. Wrote the Dutch translation for all 6 new
+trees and fixed five stale "twelve trees" count lines in both languages.
+Build, QA, preflight and superlatives clean.
+
 ## 2026-09-07 (continuation 5) - Berlin +1 (ber_020) from a 561-candidate register verify pass; low yield is a real register gap
 
 Continued a window a still earlier attempt had stopped after 15 minutes

@@ -2,10 +2,10 @@
   "city": "Leiden",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Eight of Leiden's twelve remarkable trees stand inside one garden. Hortus Botanicus, founded in 1590, keeps a tulip tree sown by professor Herman Boerhaave in 1716, a date-plum with holes where a maple once grew inside its trunk, the first zelkovas ever to leave Japan, the thickest horse chestnut in the Netherlands, and a catalpa held out of the canal by cables tied to a neighbouring tree. Beyond the garden walls: a beech named for a student writer on the medieval fortress mound, South Holland's thickest beech in a cemetery, and two old planes in the Plantsoen along the Singel.",
-  "meta_description": "Twelve verified old trees in Leiden, eight inside a botanical garden founded in 1590, including the first zelkovas ever to leave Japan.",
+  "intro": "Eight of Leiden's eighteen remarkable trees stand inside one garden. Hortus Botanicus, founded in 1590, keeps a tulip tree sown by professor Herman Boerhaave in 1716, the first zelkovas ever to leave Japan and the thickest horse chestnut in the Netherlands. Beyond the garden walls: a beech named for a student writer on the medieval fortress mound, two planes and a willow around a statue in the Van der Werfpark, a Caucasian wingnut that beat a copper beech in a public vote, and a Persian ironwood grove that gave its name to a garden cultivar now sold across Europe.",
+  "meta_description": "Eighteen verified old trees in Leiden, eight inside a botanical garden founded in 1590, including the first zelkovas ever to leave Japan.",
   "question_answer": "Leiden's oldest documented tree is the Tulip Tree of Boerhaave in the Hortus Botanicus, sown on 12 October 1716 by professor Herman Boerhaave from seed shipped from Virginia, making it roughly 310 years old. The garden itself calls it the oldest tree of its species anywhere on the European continent. A date-plum in the same garden, dated 1740, is next.",
-  "question_meta": "A 1716 tulip tree sown by Herman Boerhaave himself is Leiden's oldest documented tree. All twelve, including one fighting for its life.",
+  "question_meta": "A 1716 tulip tree sown by Herman Boerhaave himself is Leiden's oldest documented tree. All eighteen, including one fighting for its life.",
   "question_context": "Leiden's oldest-tree claim rests on unusually good paperwork: the Hortus Botanicus has a dated planting record naming Herman Boerhaave, the seed's origin in Virginia and even the London merchant who shipped it, which is why the Tulip Tree of Boerhaave anchors this page with more confidence than most European cities can offer for anything close to 300 years old. The garden's date-plum, recorded as 1740, comes next, and its Golden Chain Tree very nearly beat both: a popular story once dated it to 1601 until the Hortus's own archival research debunked that in the 1930s and settled on the 1720s instead, a rare case of an institution correcting its own legend downward rather than letting it stand. Most of the others come from the national monumental tree register, which records a planting decade rather than a year, so several ages on this page are given as bands of twenty to fifty years instead of single dates. Two trees are honestly in trouble: the Beets Beech on the Burcht mound and the beech at Groenesteeg cemetery are both fighting root fungus, the second under active treatment by its caretakers. None of that changes what each of them has already lived through.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Leiden's remarkable trees free to visit?",
-      "a": "Eight of the twelve stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The Burcht mound, Groenesteeg cemetery and the Plantsoen park along the Singel are all free and open year-round."
+      "a": "Eight of the eighteen stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The rest, the Burcht mound, Groenesteeg cemetery, the Plantsoen park and the Van der Werfpark, are all free and open year-round."
     },
     {
       "q": "What is the thickest tree in Leiden?",
@@ -186,16 +186,17 @@
       "age_min": 180,
       "age_max": 190,
       "location": {
-        "address": "De Burcht van Leiden, on the mound's slope",
-        "latitude": 52.159,
-        "longitude": 4.4924,
+        "address": "De Burcht van Leiden, on the mound's outer ring, slope",
+        "latitude": 52.158781,
+        "longitude": 4.492708,
         "neighbourhood": "Binnenstad"
       },
       "story": "This tree is named after a student who wrote one of the Netherlands' best-loved books while it was still young. Nicolaas Beets studied theology in Leiden through the 1830s and, in 1839, the same year this copper beech was planted on the slope of the city's medieval fortress mound, published Camera Obscura under the pseudonym Hildebrand, a collection still assigned in Dutch schools today. Beets spent much of his student life around the Burcht, an 11th-century shell keep the municipality bought in 1651 and turned into a public park, and in 1989 the city formally named the tree in his honour, unveiling a bench beside it the same day. At 4.72 metres in circumference it is the thickest tree on the mound, one of a handful of veterans that survived the winter of 1945, when nearly every other tree in Leiden was felled for fuel during the Hunger Winter but the Burcht's older specimens were deliberately spared. That survival is now in question again, from a different direction: a root-rot fungus has been quietly turning the tree's root system to pulp, and as of the most recent inspection the municipality was investigating whether anything could extend its life rather than simply waiting for it to fall.",
       "verified_sources": [
         "https://openbomenkaart.org/galleries/leiden-de-burcht/",
         "https://leiden.headliner.nl/item/het-is-bijna-afgelopen-voor-de-monumentale-beets-beuk-op-de-leidse-burchtheuvel-reuzenzwam-verandert-de-wortels-in-rottende-pap-leidschdagblad-29610",
-        "https://www.erfgoedleiden.nl/component/lei_verhalen/verhaal/id/329"
+        "https://www.erfgoedleiden.nl/component/lei_verhalen/verhaal/id/329",
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690110, 'Beetsbeuk buitenring Burcht Leiden')"
       ],
       "access": "Free, open public park at any time",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -206,7 +207,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "notes": "Pin upgraded to confirmed 2026-09-07 using LRMB register nr 1690110's own tree-level coordinate for this exact tree, matched by name (Beetsbeuk = Beets Beech) and by standing inside the Burcht's outer ring per the register's own place note. Previous pin was an estimate roughly 30m off.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lei_006",
@@ -428,6 +430,201 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_019",
+      "name": "The Plane by the Garenmarkt Entrance",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years, planted in the 1880s",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Van der Werfpark, near the Garenmarkt entrance, Leiden",
+        "latitude": 52.155707,
+        "longitude": 4.491988,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690135, used with written permission)",
+        "https://openbomenkaart.org/galleries/leiden-van-der-werfpark-en-garenmarkt"
+      ],
+      "access": "Free, public city park, open at any time",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A ship loaded with gunpowder exploded here in 1807 and flattened much of this part of Leiden. The rubble field it left was known as the Grote Ruine, and it stayed waste ground until 1886, when municipal architect Daniel Knuttel laid a park across the scar. This plane, a few steps inside the Garenmarkt entrance, has stood over the result since close to the beginning.\n\nThe national register of monumental trees puts its planting in the 1880s, which makes it around 140 years old. A historical survey of the park reaches the same answer from the other direction: the two monumental planes here measure 1.64 and 1.60 metres across the trunk, and trees that thick can very well date from the laying out of the park. Which of those two figures belongs to this tree and which to its neighbour on the southeast side, nobody has recorded, so we have not assigned one. If you have measured it, tell us.\n\nAt the centre of the park stands Pieter van der Werff, the mayor who refused to surrender Leiden to the Spanish through the siege of 1573 and 1574. The park is small, free and open at any hour, with entrances on the Garenmarkt and the Doezastraat, and the two planes, the willow at the water and the silver maples make a circuit you can walk in ten minutes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lei_020",
+      "name": "The Plane on the Southeast Side",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years, planted in the 1880s",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Van der Werfpark, southeast side, Leiden",
+        "latitude": 52.155321,
+        "longitude": 4.491295,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690136, used with written permission)",
+        "https://openbomenkaart.org/galleries/leiden-van-der-werfpark-en-garenmarkt"
+      ],
+      "access": "Free, public city park, open at any time",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Leiden's monumental tree register counts this plane and the one at the Garenmarkt gate as two separate entries. The park's own historical survey counts them as a pair, and gives their trunk diameters as 1.64 and 1.60 metres without saying which belongs to which. Sixty-five metres of grass separate them.\n\nThis is the one on the southeast side, the corner nearest the Doezastraat, and the register dates its planting to the 1880s. The survey's argument for the same date is the trunk itself: planes of that thickness can very well go back to 1886, when municipal architect Daniel Knuttel laid the park out.\n\nWhat he laid it out on is the more interesting half. In 1807 a ship carrying gunpowder exploded in the middle of the city and flattened much of this quarter. The ruined ground stayed empty for close to eighty years, known simply as the Grote Ruine, until the park covered it. The statue at its centre is Pieter van der Werff, the mayor who held Leiden through the Spanish siege of 1573 and 1574, which means the park commemorates one siege while standing on the wreckage of a different disaster entirely.\n\nFree, open at any hour, fifteen minutes on foot from the station. No girth has been published for this tree on its own. If you measure it, we will record it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lei_021",
+      "name": "The Weeping Willow of the Van der Werf Statue",
+      "species": "Weeping Willow (Salix babylonica)",
+      "age_estimate": "roughly 120 years, planted in the 1900s",
+      "age_min": 116,
+      "age_max": 126,
+      "girth_cm": null,
+      "location": {
+        "address": "Van der Werfpark, at the water's edge near the Van der Werff statue, Leiden",
+        "latitude": 52.155677,
+        "longitude": 4.490623,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690139, used with written permission)"
+      ],
+      "access": "Free, public city park, open at any time",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register entry for this willow has a field for its history. The field says: unknown.\n\nThat is close to the whole record. The Dutch national register of monumental trees lists it as standing at the water, by the statue, in the Van der Werfpark, and puts its planting between 1900 and 1910, which makes it roughly 120 years old. It is municipal property and anyone can walk up to it. Beyond that one entry we have found nothing: no newspaper piece, no park survey, no local history page that names this tree at all. The park's two planes and its silver maples get written about. The willow does not.\n\nEven the species is a common name rather than a determination. The register calls it a Treurwilg, weeping willow, and gives no scientific name. In Dutch parks that usually means Salix babylonica, though the hybrid Salix x sepulcralis 'Chrysocoma' is the commoner modern planting, and nothing we found settles which of the two is standing here.\n\nWhat it does have is position. It stands at the water's edge beside Pieter van der Werff, the mayor who held Leiden through the Spanish siege of 1573 and 1574, in a park laid out in 1886 over ground a gunpowder explosion had left in ruins. If you know who planted it, or what it is, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lei_022",
+      "name": "The X-factor Wingnut of the Plantsoen",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 140 years, planted in the 1880s",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Plantsoen, near number 63, Leiden",
+        "latitude": 52.153674,
+        "longitude": 4.49853,
+        "neighbourhood": "Plantsoen"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690117, used with written permission)",
+        "https://degroenestad.nl/geen-categorie/de-kaukasische-vleugelnoot-heeft-de-x-factor-in-leiden/"
+      ],
+      "access": "Free, public city park, open at any time",
+      "transport": "20 minute walk from Leiden Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 2009 Leiden held a public vote to decide which of its trees had the X-factor. This one won with 160 votes. The runner-up, a copper beech, got 83.\n\nThe contest was run by the Bomenstichting together with the VSB-fonds, De Groene Stad and the Koninklijk Nederlandsche Heidemaatschappij, and alderman John Steegh turned up to honour the winner formally. The margin is the part worth noticing: nearly two to one against a copper beech, which is the kind of tree that normally wins these things.\n\nA Caucasian wingnut earns it. It is a relative of the walnut from the forests between the Black Sea and the Caspian, large and fast growing, with pinnate leaves long enough to look tropical and chains of winged nutlets that hang off the branches through late summer like green rope. Nothing else in the Plantsoen looks remotely like it.\n\nThe register dates its planting to the 1880s, roughly 140 years ago, which puts it a few decades younger than the park. The Plantsoen was laid out between 1835 and 1842 on Leiden's old city bulwarks, an English landscape park designed by Salomon van der Paauw and built in part to give unemployed men work. No girth has been published for this tree. If you take a tape to it, we will add the number.",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "kind": "fruit",
+        "label": "August and September, when chains of winged nutlets hang from every branch"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lei_023",
+      "name": "The Persian Ironwoods that Named Themselves",
+      "species": "Persian Ironwood (Parrotia persica)",
+      "age_estimate": "roughly 110 years, planted 1910-1920",
+      "age_min": 106,
+      "age_max": 116,
+      "girth_cm": null,
+      "location": {
+        "address": "Plantsoen, near number 45, Leiden",
+        "latitude": 52.153622,
+        "longitude": 4.499478,
+        "neighbourhood": "Plantsoen"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690118, used with written permission)",
+        "https://esveld.nl/a/product/parrotia-persica-het-plantsoen/"
+      ],
+      "access": "Free, public city park, open at any time",
+      "transport": "20 minute walk from Leiden Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nurseries across Europe sell a Persian ironwood called Parrotia persica 'Het Plantsoen'. It is named after this park, and these are the trees it is named after.\n\nThe naming was done by Esveld, the Dutch nursery that introduced it, and its catalogue explains the odd name without ceremony: the plant owes it to Het Plantsoen in Leiden, a park on the canal, where this weeping form of the ironwood, planted at the beginning of the twentieth century, was named by them. The national register agrees on the timing, putting the planting between 1910 and 1920, and gives the reason for protection as dendrological. It counts three ironwoods here, standing together near number 45, which is why they appear as one entry rather than three. Their shape is the broad, low, spreading form the cultivar was named for.\n\nA Persian ironwood is a witch hazel relative and behaves like one. Small dark red flowers open in February and March on bare branches, before anything else in the park has moved. In October and November the leaves turn yellow, then orange, then red and purple, often several of those at once on one tree.\n\nThe park itself was laid out between 1835 and 1842 on Leiden's old bulwarks, in the English landscape style, to a design by Salomon van der Paauw. No girth has been published for any of the three.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when one tree carries yellow, orange, red and purple at once"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lei_024",
+      "name": "The Elm Inside the Burcht",
+      "species": "Dutch Elm (Ulmus x hollandica)",
+      "age_estimate": "roughly 120 years, planted in the 1900s",
+      "age_min": 116,
+      "age_max": 126,
+      "girth_cm": null,
+      "location": {
+        "address": "De Burcht van Leiden, inside the mound's shell keep",
+        "latitude": 52.158884,
+        "longitude": 4.492341,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1679553, used with written permission)",
+        "https://www.absolutefacts.nl/kastelen/data/leidenburcht.htm"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Most of the street elms in the Netherlands are gone, killed since the 1970s by the disease that carries the country's name. This one is still standing, on top of an artificial mound raised in the eleventh century in the middle of Leiden, inside the ring wall of the Burcht.\n\nThe national register dates its planting to the first decade of the twentieth century and admits in the same breath what that is worth: the period is an estimate, and no historical records are known. Roughly 120 years old, then, with the register's own uncertainty attached. A Dutch heritage survey of the castle confirms what grows up there without dating any of it, describing several monumental trees inside the walls, two beeches and one elm, which give the interior its particular character. This is the elm.\n\nTrees of this kind are now maintenance rather than luck. The survivors tend to be kept alive on purpose, with fungicide injected year after year, because an elm this size cannot be replaced by planting another one.\n\nThe mound is older than all of it. Leiden bought the Burcht in 1651 and turned it into a public park, which it still is: free, open at any hour, and reached by a flight of steps up the side of the mound. The beeches the survey mentions are up there with it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
