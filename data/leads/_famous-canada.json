@@ -36,9 +36,11 @@
     "https://commons.wikimedia.org/wiki/File:Comfort_Maple_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Comfort_Maple_01_WV_Banner.jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Maple (Acer sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "published_as": "pel_001",
+   "resolve_2026-09-07": "SHIPPED 2026-09-07 as pel_001, merged into data/cities/pelham.json. Continuation of an earlier attempt's write-stories pass (story already drafted on disk, uncommitted); this session verified the photo against the Cadiz standard, built the page, ran QA, and committed."
   },
   {
    "name": "Copper Beech Tree (Niagara Falls, Ontario)",

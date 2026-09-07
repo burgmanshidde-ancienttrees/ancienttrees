@@ -1,0 +1,66 @@
+{
+  "city": "Yangpyeong",
+  "country": "South Korea",
+  "status": "needs_curation",
+  "intro": "Yangpyeong's mountain temple grew tall enough to earn its own legend. Tradition says the ginkgo at Yongmunsa was planted by the last Silla king's son as he walked into exile in 935, or grew from a monk's discarded walking staff; either way it predates the temple that later formed around it. Standing close to 40 metres, it is reckoned the tallest ginkgo in Korea and holds Natural Monument No. 30. For a few weeks each autumn the whole crown turns gold and the mountain road fills with people who drove up for one tree.",
+  "meta_description": "The Ginkgo Tree of Yongmunsa, reckoned Korea's tallest ginkgo at nearly 40 metres, stands at a mountain temple in Yangpyeong.",
+  "question_meta": "Yangpyeong's remarkable tree is the Ginkgo of Yongmunsa Temple, Korea's tallest ginkgo and Natural Monument No. 30.",
+  "question_answer": "Yangpyeong's remarkable tree is the Ginkgo Tree of Yongmunsa Temple, standing in the courtyard of Yongmunsa on Yongmunsan, Yongmun-myeon. Estimates put its age around 1,000 to 1,300 years and its height between 38.8 and 42 metres, reckoned the tallest ginkgo in Korea, and South Korea designated it Natural Monument No. 30 in December 1962.",
+  "question_context": "Sources disagree on the exact figures, and this page keeps that disagreement rather than picking a winner. Korean sources most often cite roughly 1,100 years; the same Korean-language encyclopedia entry gives 1,018 a paragraph later, and specialists quoted in travel coverage push the estimate past 1,300. Height is put at 38.8 metres by some sources and 42 by others, with the trunk's base measured at 15.2 metres round. By tradition, King Sejong granted the tree an honorary third-rank court title in the fifteenth century. Two origin legends compete: one holds it was planted by Ma-ui Taeja, son of the last Silla king Gyeongsun, as he walked into exile in the Geumgang mountains after Silla fell in 935; another says it grew from the walking staff of the monk Uisang. Local memory holds that it survived the Japanese army's burning of Yongmunsa during the 1907 righteous-army uprising, when the rest of the temple did not, and that it cries out before national troubles. Getting there from Seoul takes about two hours by public transport: Yongmun Station on the Gyeongui-Jungang Line, then a local bus partway up the mountain road.",
+  "hero_tree_id": "ymp_001",
+  "oldest_tree_id": "ymp_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree at Yangpyeong?",
+      "a": "The Ginkgo Tree of Yongmunsa Temple, standing in the temple courtyard on Yongmunsan and reckoned the tallest ginkgo in Korea."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Entry is widely reported as free in Korean travel coverage, though this page has not independently confirmed opening hours on the temple's own site. The tree stands in the courtyard of an active Buddhist temple on public land."
+    },
+    {
+      "q": "How old is the tree really?",
+      "a": "Nobody has settled it. Korean sources put it anywhere from about 1,000 to over 1,300 years old, and this page keeps that range rather than picking one figure."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ymp_001",
+      "name": "The Ginkgo Tree of Yongmunsa Temple",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 1,100 years",
+      "age_min": 1000,
+      "age_max": 1300,
+      "girth_cm": 1520,
+      "location": {
+        "address": "Yongmunsa, 782 Yongmunsan-ro, Yongmun-myeon, Yangpyeong-gun, Gyeonggi-do, South Korea",
+        "latitude": 37.54972,
+        "longitude": 127.57083,
+        "neighbourhood": "Yongmunsan (Mount Yongmun), Yongmun-myeon, Yangpyeong-gun"
+      },
+      "story": "A king is said to have given this tree a court rank. By tradition King Sejong, who ruled Korea in the fifteenth century, granted the ginkgo at Yongmunsa an honorary third-rank title. It has kept up its end: sources put the height between 38.8 and 42 metres and the base at 15.2 metres round, which makes it the tallest ginkgo in the country by most reckonings, and South Korea designated it Natural Monument No. 30 in December 1962.\n\nIts age is argued over and nobody has settled it. Korean sources give roughly 1,100 years, the same encyclopedia entry says 1,018 a paragraph later, and specialists quoted in travel coverage push it past 1,300. Anywhere in that band means the tree was already growing when the Silla dynasty ended.\n\nWhich is where the stories start. One holds that it was planted by Ma-ui Taeja, son of Gyeongsun, the last Silla king, as he walked into exile in the Geumgang mountains after the dynasty fell in 935. Another says it grew from the walking staff of the monk Uisang. Local memory has it standing through the Japanese army's burning of Yongmunsa during the 1907 uprising, when the rest of the temple went, and crying out before national troubles since.\n\nFor a few weeks from late October the crown turns gold and the mountain road fills with people who drove up for one tree.",
+      "verified_sources": [
+        "https://ko.wikipedia.org/wiki/%EC%96%91%ED%8F%89_%EC%9A%A9%EB%AC%B8%EC%82%AC_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4",
+        "https://www.gyeonggido-korea.com/2025/11/a-peaceful-fall-getaway-in-korea-1000.html",
+        "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1363100300000"
+      ],
+      "access": "Free entry is repeated across Korean travel sources (temple grounds reported open roughly 08:30 to 17:00-18:00 depending on season), though this has not been independently confirmed on the temple's own site. Yongmunsa is an active Buddhist temple on public land; the tree stands in the temple courtyard.",
+      "transport": "Yongmun Station (Gyeongui-Jungang Line from Seoul), then a local bus (route 7 / 7-8 towards Yongmunsa) partway up the mountain road, roughly 20-30 minutes; about 2 hours total from central Seoul by public transport, or by car.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "late October into early November, when the whole crown goes gold"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/%EC%96%91%ED%8F%89_%EC%9A%A9%EB%AC%B8%EC%82%AC_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4_%285%29.jpg",
+        "license": "KOGL Type 1",
+        "attribution": "Cultural Heritage Administration, via Wikimedia Commons",
+        "status": "approved",
+        "width": 574,
+        "height": 800
+      }
+    }
+  ]
+}

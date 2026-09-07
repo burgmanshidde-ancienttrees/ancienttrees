@@ -178,9 +178,11 @@
     "https://commons.wikimedia.org/wiki/File:Itoshiro_no_%C5%8Dsugi.JPG",
     "https://commons.wikimedia.org/wiki/File:Itoshiro_no_%C5%8Dsugi_from_north.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "published_as": "ita_001",
+   "resolve_2026-09-07": "SHIPPED 2026-09-07 as ita_001, merged into data/cities/itoshiro.json. Continuation of an earlier attempt's write-stories pass (story already drafted on disk, uncommitted); this session verified the photo against the Cadiz standard, built the page, ran QA, and committed."
   },
   {
    "name": "Jindai-zakura, Hokuto",
@@ -407,9 +409,11 @@
     "https://commons.wikimedia.org/wiki/File:Cycas_revoluta_-_Myokoku-ji,_Sakai,_Japan.jpg",
     "https://commons.wikimedia.org/wiki/File:Cycas_revoluta_1100_years_-_Japan_oldest_-_in_Myokoku-ji_Osakafu.jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Sago Palm (Cycas sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "published_as": "osa_006",
+   "resolve_2026-09-07": "SHIPPED 2026-09-07 as osa_006, merged into data/cities/osaka.json. Continuation of an earlier attempt's write-stories pass (story already drafted on disk, uncommitted); this session verified the photo against the Cadiz standard, built the page, ran QA, and committed."
   },
   {
    "name": "Nago no Hinpun Gajumaru",
