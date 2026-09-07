@@ -1103,7 +1103,15 @@ struct CollectSheet: View {
             Text("It is in your trees now, with your photograph.")
                 .font(.subheadline)
                 .foregroundStyle(Brand.inkSoft)
-            Text("Your photograph can appear on the tree's page. We read every word you send.")
+            // The two halves said apart, on Hidde's own sketch of the flow
+            // (2026-09-07): "it's added, we will do a double check for the
+            // platform, but added to your trees already?" Yes, and saying so
+            // is the whole point. Your collection is yours the second you
+            // press the shutter and nothing we decide later takes it away;
+            // whether the tree earns a place on the map is our question, not a
+            // condition on theirs. Left unsaid, somebody reasonably assumes
+            // their tree is on the map, and hears a later silence as a no.
+            Text("We will look at whether it belongs on the map as well. Either way it stays in your trees.")
                 .font(.footnote)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)

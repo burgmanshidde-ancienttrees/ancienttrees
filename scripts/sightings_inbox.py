@@ -46,6 +46,7 @@ import urllib.error
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import corroborate  # noqa: E402
 import ours  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -160,6 +161,24 @@ def fetch_photo(path, dest):
     with open(dest, "wb") as fh:
         fh.write(data)
     return True
+
+
+_REGISTERS = None
+
+
+def _corroborate(lat, lng):
+    """The nearest register entry to a reader's tree, as a verdict and a hit."""
+    global _REGISTERS
+    if lat is None or lng is None:
+        return None
+    try:
+        if _REGISTERS is None:
+            _REGISTERS = corroborate.rows()
+        hits = corroborate.nearest(lat, lng, _REGISTERS)
+        tag, why = corroborate.verdict(hits)
+        return {"verdict": tag, "why": why, "nearest": hits[:1]}
+    except Exception:
+        return None
 
 
 def light(dest):
@@ -298,6 +317,15 @@ def main():
                     "latitude": row.get("lat"), "longitude": row.get("lng"),
                     "taken_at": row.get("taken_at"), "photo": row.get("photo"),
                     "nearest_published_m": dist,
+                    # HAS ANYBODY OFFICIAL ALREADY SAID THIS IS REMARKABLE
+                    # (2026-09-07, Hidde: "in the end we want trees people find
+                    # worth the visit not all trees database. so how do we check
+                    # that"). Judgement stays judgement; this is the half a
+                    # script can do, against 59,000 register rows a state body
+                    # already designated. A match is not a pass and no match is
+                    # not a refusal: it decides which leads are worth a minute
+                    # first.
+                    "register": _corroborate(row.get("lat"), row.get("lng")),
                     "status": "lead",
                     "why": "added by a reader through the app; matches no tree we map. "
                            "Verify to the normal bar before it gets a page.",
