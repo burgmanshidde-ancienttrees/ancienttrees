@@ -2,7 +2,7 @@
   "city": "Sant'Alfio",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "One tree, and people cross Sicily for it. The Hundred-Horse Chestnut stands on the eastern slope of Etna above Sant'Alfio, put at roughly 2,200 years by a dendrological study in 2022, its original trunk long since split into three stems that measure 10.5, 23 and 23.6 metres round and grow from one root system. Italy made it a national monument in 1965 and UNESCO called it a Monument Messenger of Peace in 2006. It is free, open all year, and worth the drive up from Catania on its own.",
+  "intro": "The reason to come is one tree, and two more on the same slope are worth the trip. The Hundred-Horse Chestnut, on Etna above Sant'Alfio, is put at roughly 2,200 years by a 2022 study, its trunk long since split into three stems that measure 10.5, 23 and 23.6 metres round and grow from one root system. Five hundred metres further up the same path stands the Ship's Chestnut, itself estimated at around 1,800 years, and the forest at Magazzeni holds a birch found only on Etna. Italy made the Hundred-Horse a national monument in 1965. Free, open all year.",
   "meta_description": "The Hundred-Horse Chestnut above Sant'Alfio is around 2,200 years old and grows from one root system as three vast stems. Free, open all year.",
   "question_meta": "Sant'Alfio's oldest tree is the Hundred-Horse Chestnut on Etna, dated to about 2,200 years in 2022. Where it stands and how to reach it.",
   "question_answer": "The oldest tree in Sant'Alfio is the Hundred-Horse Chestnut, the Castagno dei Cento Cavalli, a sweet chestnut on the eastern slope of Mount Etna at Via Castagno 100 Cavalli, about 30 kilometres north of Catania. A dendrological study by CREA in 2022 put it at roughly 2,200 years old, and both the Italian Wikipedia entry and the comune of Sant'Alfio's own page cite that figure. Older estimates drawn from folklore and earlier botanical work ran from 2,000 to 4,000 years. It is free to visit and open all year.",
@@ -63,6 +63,74 @@
         "kind": "fruit",
         "label": "October, when the spiny burrs split and the chestnuts come down"
       }
+    },
+    {
+      "id": "sal_002",
+      "name": "The Ship's Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 1,800 years",
+      "age_min": 1000,
+      "age_max": 2000,
+      "height_m": 20,
+      "location": {
+        "address": "beside the path up from the Hundred-Horse Chestnut, about 500m further uphill, on the Sant'Alfio/Mascali boundary",
+        "latitude": 37.754167,
+        "longitude": 15.131111,
+        "neighbourhood": "Carpineto, Mascali, eastern slope of Mount Etna"
+      },
+      "story": "One source dates this chestnut to roughly 1,800 years old; a second confirms only that it is over a thousand, without putting a number on it. Either way it has been growing on Etna's slope above Sant'Alfio for a very long time, five hundred metres up the same path from the tree everyone comes for.\n\nIt carries two names, and neither is entirely flattering. Castagno della Nave, the Ship's Chestnut, describes the base, which flares out at the ground like a hull. Locals also call it arusbigghiasonnu, roughly wakes-you-from-sleep, for the racket the hundreds of birds roosting in its crown make at dusk.\n\nThe tree stands on private land, but right at the edge of the path, and the source describing it calls it clearly visible without stepping onto the property. No fee, no gate to pass, and no need to leave the route up to the Hundred-Horse Chestnut.\n\nReached the same way as its more famous neighbour: about an hour by car from Taormina, then on foot the last five hundred metres. Like most old chestnuts on this slope, it still drops chestnuts every October.",
+      "how_to_recognise": "You can recognise it by its base, which flares out like a ship's hull. It stands right at the edge of the path, about 500 metres uphill from the Hundred-Horse Chestnut, not set back in a garden.",
+      "verified_sources": [
+        "https://www.etnanatura.it/sentieri.php?nome=castagno_della_nave",
+        "https://www.go-etna.it/blog/il-castagno-dei-cento-cavalli-e-altri-alberi-storici-delletna/"
+      ],
+      "access": "Stands on private land, but directly at the edge of the path up from the Hundred-Horse Chestnut, described by the source as clearly visible without entering the property. Free, no ticket.",
+      "transport": "Same trip as the Hundred-Horse Chestnut, about 500m further along the same path. Roughly an hour by car from Taormina; no practical public transport.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [10],
+        "kind": "fruit",
+        "label": "October, when the chestnuts come down"
+      }
+    },
+    {
+      "id": "sal_003",
+      "name": "The Etna Birch of Magazzeni",
+      "species": "Etna Birch (Betula aetnensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 205,
+      "height_m": 12,
+      "location": {
+        "address": "Magazzeni, Sant'Alfio, eastern slope of Mount Etna, approx. 1010m altitude",
+        "latitude": 37.758778,
+        "longitude": 15.105275,
+        "neighbourhood": "Sant'Alfio, near Monti Sartorius"
+      },
+      "story": "Nobody has dated this birch, and nobody should guess: its case for a place here rests on rarity rather than age. Betula aetnensis grows only on Mount Etna, a glacial relict left behind when the ice retreated, and it normally keeps to a band between 1,450 and 2,000 metres up the mountain. This one, registered in the forest at Magazzeni above Sant'Alfio, grows at just over 1,000.\n\nIts bark runs unusually pale, almost white in patches, and that is not age showing, it is the ground: Etna's ash and lava carry too little lichen to darken a trunk the way rain and pollution would further down the slope.\n\nTwo separate registers, national and regional, agree on its size: 205 centimetres round and 12 metres tall.\n\nIt stands in open forest rather than behind any gate, a few kilometres from the two chestnuts that share this stretch of Etna's eastern slope, though no source describes a marked path leading to it specifically. Nobody has recorded when it was planted, or whether it planted itself. If you have stood in front of it and know either, tell us.",
+      "how_to_recognise": "You can recognise it by bark that runs unusually pale, almost white in patches, among Etna's darker native trees, and by standing far lower on the mountain than most Etna birches, which keep to colder ground above 1,450 metres.",
+      "verified_sources": [
+        "MASAF national monumental-tree register, sheet 03/I216/CT/19",
+        "Regione Siciliana, Elenco degli alberi monumentali di Sicilia, updated 2024-11-07"
+      ],
+      "access": "Free, in open forest on Etna's upper slopes within Sant'Alfio's territory. No gate or private boundary, though no source confirms a marked walking path to this specific tree.",
+      "transport": "A few kilometres from the two Sant'Alfio chestnuts, in the same Etna day-trip area; drivable together. No practical public transport, a car is needed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

@@ -11,6 +11,26 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (continuation) - Sant'Alfio: 1 tree to 3
+
+Continuation of an attempt that stopped after 34 minutes with 86 of its
+window unspent, having shipped 8 trees. Cleaned up two stale, already-
+consumed research files left uncommitted (Slovakia and Taiwan verify
+output whose trees were already live or already published elsewhere).
+
+`leads.py --ready` was empty and Taormina's own register supply is a
+dead end (all five in-town trees sit on one private hotel's grounds).
+But a lead file from the same 2026-08-30 pass held two more fully-
+verified trees on the same Etna slope as Sant'Alfio's Hundred-Horse
+Chestnut, deliberately left unwritten pending a fourth. Wrote them in:
+the Ship's Chestnut (~1,800 years, flagged) and the Etna Birch of
+Magazzeni (a glacial-relict endemic, no age source, girth and height
+corroborated by two registers). Sant'Alfio now has 3 trees; still
+below the 4-tree floor but that's fine, it already shipped under the
+single-tree exception and this is normal growth, not padding.
+
+Build (5023 pages), qa.py (7779 pages) and preflight (536 cities, 0
+problems) clean. No FOR HIDDE items.
 ## 2026-09-08 - Finished the standing Slovakia and Taiwan claims; 5 new Slovak places, 1 new Polish one
 
 Continuation of an earlier attempt that stopped after 10 minutes with 110
