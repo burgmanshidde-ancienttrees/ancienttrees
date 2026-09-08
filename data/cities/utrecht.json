@@ -538,10 +538,12 @@
       "verify_notes": "A named 'bevrijdingsbeuk' (liberation beech), planted as a living memorial to the Netherlands' liberation from German occupation, May 1945. Register band is 1940-1950 and reason code is herdenkingsboom (memorial tree); the independent blog source (photo dated 2014) confirms species (bruine beuk/copper beech), location (Servaasbolwerk) and the liberation-memorial purpose, but does not give an exact planting year, so age here is kept as the register's band rather than sharpened to 1945 specifically, even though a liberation tree of this kind is very likely planted at or shortly after VE-day 1945. Owner_category gemeente, visitable ja, visible ja. No girth recorded. This is a different, younger tree from the two other Servaasbolwerk-area beeches and planes verified in this pass; it stands out for the story (a living WWII liberation memorial) rather than for sheer age.",
       "story": "This copper beech was planted to be looked at and remembered, not simply grown. Bevrijdingsbomen, liberation trees, went into the ground across the Netherlands after May 1945 as living memorials to the country's liberation from German occupation, and the Dutch national monumental tree register marks this one at Servaasbolwerk with exactly that designation: a herdenkingsboom, a memorial tree, from the same decade as the liberation itself.\n\nFagus sylvatica f. purpurea, the copper or purple beech, is a straightforward garden variety chosen for its colour rather than any rarity, dark reddish purple leaves through the growing season rather than the species' usual green. An independent record from 2015, a local history blog that photographed the tree and named it directly as a bevrijdingsbeuk, confirms both the species and the memorial purpose without giving an exact planting year, so the age here rests on the register's decade band rather than a specific date tied to the liberation itself.\n\nAt around eighty years old it is the youngest tree on this list by some margin, a reminder planted deliberately rather than grown accidentally into significance, standing on the same historic bastion parkland as the older planes nearby. Free, public, in the heart of the old city.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+        "license": "CC BY 3.0",
+        "attribution": "Kattenkruid, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
       },
       "how_to_recognise": "You can recognise it as the youngest tree on this walk, a copper beech planted as a liberation memorial after May 1945. It stands on Servaasbolwerk, near number 15."
     },
@@ -785,7 +787,7 @@
     {
       "id": "utr_023",
       "name": "The Maple of the Memorial Beech",
-      "species": "Maple (Acer sp.)",
+      "species": "Sycamore (Acer pseudoplatanus)",
       "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
       "age_min": 136,
       "age_max": 146,
@@ -808,12 +810,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "This tree's address is another tree. The national register of monumental trees gives it no house number and no street: it is filed as the one standing just south of the memorial beech on Zonnenburg, which is what happens to a large maple in a park where the neighbours have better stories.\n\nZonnenburg is a bastion of Utrecht's medieval defensive wall. From 1835 the landscape architect Jan David Zocher jr turned that whole ring of fortifications into the Singelplantsoen, the chain of parks along the canal that the city still walks through, and the old observatory sits on this same piece of raised ground. The register dates the maple's planting to between 1880 and 1890, so roughly 136 to 146 years, a couple of generations later than the park it stands in.\n\nWhich maple it is, we cannot tell you. The register calls it a gewone esdoorn, a Dutch name that gets used for the sycamore and for the Norway maple both, and nobody has settled it for this specimen. The seeds decide it and you can do it from the path: sycamore carries its winged pairs hanging at roughly a right angle, Norway maple spreads them almost flat, in a straight line. Look up, then tell us which one is up there.",
-      "how_to_recognise": "You can recognise it as the large maple registered only by its position, standing just south of the memorial beech. It stands on Zonnenburg."
+      "how_to_recognise": "You can recognise it as the large maple registered only by its position, standing just south of the memorial beech. It stands on Zonnenburg.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_024",
       "name": "The Elm of the Wilhelminapark West Gate",
-      "species": "Elm (Ulmus sp.)",
+      "species": "Dutch Elm (Ulmus x hollandica)",
       "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
       "age_min": 136,
       "age_max": 146,
@@ -836,12 +839,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "Most elms this old are firewood. Dutch elm disease carries the country's name because Dutch pathologists were the ones who identified the fungus behind it, in 1921, not because it started here, and over the century that followed it killed the great majority of Europe's mature elms. This one is still standing at the west gate of Wilhelminapark, which is the whole reason to walk over and look at it.\n\nThe register puts its planting between 1880 and 1890, roughly 136 to 146 years, so it was already a grown tree when the disease was first named, and it has outlived generations of elms planted long after it. That band also runs slightly ahead of the park's own opening in 1898. Either the tree was on the ground before the park was drawn around it, or the band is a decade-wide estimate rather than a record, and nothing we found settles which.\n\nThe register calls it a Hollandse iep, Dutch elm, which is less precise than it sounds: the name covers a group of hybrids and a long list of nursery clones, several of them bred specifically for disease resistance in the decades after 1921. Nobody has pinned down which one this is. If you know your elms, the west entrance is the place to settle it.",
-      "how_to_recognise": "You can recognise it as a mature elm that survived Dutch elm disease, standing right at the park's west gate. It stands at the west entrance to Wilhelminapark."
+      "how_to_recognise": "You can recognise it as a mature elm that survived Dutch elm disease, standing right at the park's west gate. It stands at the west entrance to Wilhelminapark.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_025",
       "name": "The Pagoda Tree of Lepelenburg",
-      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
       "age_estimate": "roughly 66 to 76 years, from the register's planting band of 1950-1960",
       "age_min": 66,
       "age_max": 76,
@@ -871,12 +875,13 @@
         "kind": "flowers",
         "label": "August, when the cream pea flowers open and then carpet the path"
       },
-      "how_to_recognise": "You can recognise it in August by loose sprays of cream pea flowers, weeks after the limes and chestnuts have finished flowering. It stands in Lepelenburg, opposite Swanenberg."
+      "how_to_recognise": "You can recognise it in August by loose sprays of cream pea flowers, weeks after the limes and chestnuts have finished flowering. It stands in Lepelenburg, opposite Swanenberg.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_026",
       "name": "The Copper Beech of the Servaasbolwerk",
-      "species": "Copper Beech (Fagus sp.)",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
       "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890-1900",
       "age_min": 126,
       "age_max": 136,
@@ -899,12 +904,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "This stretch of canal has a beech problem, and it is worth saying out loud before you go looking. Within a few hundred metres the register holds another purple beech near Zonnenburg with a four metre trunk, a third by the Wittevrouwenbrug measuring 430 centimetres and rotting from the inside with giant polypore, and the liberation beech planted after 1945. None of those measurements belong to this tree. It is register number 1688712 and it carries no girth and no height of its own.\n\nWhat identifies it is what it looks at. It stands on the Servaasbolwerk facing the Leeuwenberghkerk, the small church put up in the 1560s as a plague house by a city that expected to need one. The register dates the tree's planting to between 1890 and 1900, roughly 126 to 136 years, so it is a good half century older than the liberation beech down the path.\n\nOne gap we cannot close from the paperwork. The register records the genus and stops. Purple leaf in a beech is a mutation that turns up both as a nursery variety and by accident, and nothing on file says whether this specimen is genuinely copper-leaved. Go in May, when the new leaves are at their most translucent, and tell us what colour it actually is.",
-      "how_to_recognise": "You can recognise it as the beech that faces the small Leeuwenberghkerk church directly, distinct from the other beeches further along Servaasbolwerk. It stands on Servaasbolwerk, opposite the Leeuwenberghkerk."
+      "how_to_recognise": "You can recognise it as the beech that faces the small Leeuwenberghkerk church directly, distinct from the other beeches further along Servaasbolwerk. It stands on Servaasbolwerk, opposite the Leeuwenberghkerk.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_027",
       "name": "The Horse Chestnut by the Herenstraat Bridge",
-      "species": "Horse Chestnut (Aesculus sp.)",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
       "age_estimate": "roughly 106 to 116 years, from the register's planting band of 1910-1920",
       "age_min": 106,
       "age_max": 116,
@@ -935,12 +941,13 @@
         "kind": "fruit",
         "label": "late September into October, when the cases split and the conkers hit the path"
       },
-      "how_to_recognise": "You can recognise it by white candle-shaped flowers held upright over the crown in May, standing at the same bridge as the Oriental Plane of Lepelenburg. It stands beside the Herenstraat bridge, Lepelenburg."
+      "how_to_recognise": "You can recognise it by white candle-shaped flowers held upright over the crown in May, standing at the same bridge as the Oriental Plane of Lepelenburg. It stands beside the Herenstraat bridge, Lepelenburg.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_028",
       "name": "The Lime of the Van Limburg Stirumlaan",
-      "species": "Lime (Tilia sp.)",
+      "species": "Common Lime (Tilia x europaea)",
       "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
       "age_min": 136,
       "age_max": 146,
@@ -963,12 +970,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "Park a car under a lime in July and you learn not to do it twice. Limes carry aphid colonies all summer, and what the aphids do not keep of the sap comes back down as honeydew, a fine sticky rain that sets on anything below it. That is the standing complaint against the most planted avenue tree in the Netherlands, and this is one of the older ones.\n\nThe register dates its planting to between 1880 and 1890, roughly 136 to 146 years, and files it as a Hollandse linde, the common lime. That tree is a hybrid of the small-leaved and large-leaved limes, and it rarely sets seed worth anything, so almost every one was raised from cuttings and layers. A Dutch lime avenue is closer to a row of copies than a row of siblings.\n\nIt stands in Wilhelminapark near the Van Limburg Stirumlaan. The park opened in 1898, laid out in the loose English landscape manner that was fashionable then, and it now holds around two dozen trees under monumental protection, of which this is one. Beyond the register we found nothing written about this specimen at all, only about the ground it stands on.\n\nWhich lime it is has not been recorded either. The tufts of hair in the vein angles on the underside of a leaf are what separate them. If you can read those, we want your verdict.",
-      "how_to_recognise": "You can recognise it by the sticky honeydew that drips from aphid activity through July, a common lime near the Van Limburg Stirumlaan. It stands in Wilhelminapark, near Van Limburg Stirumlaan."
+      "how_to_recognise": "You can recognise it by the sticky honeydew that drips from aphid activity through July, a common lime near the Van Limburg Stirumlaan. It stands in Wilhelminapark, near Van Limburg Stirumlaan.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_029",
       "name": "The Silver Maples of the Andrea Monument",
-      "species": "Maple (Acer sp.)",
+      "species": "Silver Maple (Acer saccharinum)",
       "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
       "age_min": 136,
       "age_max": 146,
@@ -991,12 +999,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "There are two of them, and they flower before winter has finished. Silver maples open small red and green tufts in February or March, weeks ahead of their own leaves and ahead of almost everything else in the park, then spend the rest of the year growing faster than a maple ought to.\n\nThe pair stands just west of the monument to burgemeester F. Andrea in Wilhelminapark, close enough together that the register holds them as a single entry of two trees, and close enough that a visitor sees one stop rather than two. Their planting band is 1880 to 1890, which puts them at roughly 136 to 146 years apiece.\n\nThe name is about the leaf. Green on top, silver-white underneath, cut so deeply that the crown reads as light and slightly shredded, and when wind gets under it the whole tree goes pale at once. That colour change is the old rural sign that rain is on its way. The species is North American, and its speed costs it: silver maple wood is brittle and sheds limbs in storms more readily than most, which is why city tree registers watch them.\n\nOur record keeps them at genus level. The register's Dutch entry reads zilveresdoorn, silver maple, but nobody has confirmed the two in the field. One glance at a leaf underside would settle it, and we would take that answer.",
-      "how_to_recognise": "You can recognise it as a pair of silver maples whose leaves flash pale silver-white underneath in the wind. It stands just west of the Burgemeester F. Andrea monument, Wilhelminapark."
+      "how_to_recognise": "You can recognise it as a pair of silver maples whose leaves flash pale silver-white underneath in the wind. It stands just west of the Burgemeester F. Andrea monument, Wilhelminapark.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_030",
       "name": "The Hornbeam of the Old Observatory Path",
-      "species": "Hornbeam (Carpinus sp.)",
+      "species": "Hornbeam (Carpinus betulus)",
       "age_estimate": "roughly 186 to 196 years, from the register's planting band of 1830-1840",
       "age_min": 186,
       "age_max": 196,
@@ -1019,7 +1028,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "Hornbeam is the hardest wood in Europe, which is why it was cut for the things that got hit: mill cogs, ox yokes, butcher's blocks. This one has been left alone for something close to 190 years, and that makes it one of the oldest trees standing anywhere on Utrecht's old defensive ring.\n\nThe register puts its planting between 1830 and 1840. Jan David Zocher jr began turning the demolished city wall into the Singelplantsoen in 1835, in the middle of that band, and nothing we found says whether this hornbeam went in with that work or was already growing when the plan arrived. Both are possible. Neither is written down, and the tidier version is not worth inventing.\n\nIt stands on the footpath along the north side of the old Sterrenwacht, the observatory on the Zonnenburg bastion, and you will know it by the trunk. A hornbeam does not grow a column. It grows fluted and sinewy, grey bark pulled tight over ridges that twist like a flexed forearm, and it hangs on to a good share of its dead brown leaves all winter while the beeches beside it stand bare.\n\nWe searched properly for a second source and came back with nothing. The register is the whole of the written record here, down to the species: it reads gewone haagbeuk, common hornbeam, and our own entry stops at the genus until somebody confirms it.",
-      "how_to_recognise": "You can recognise it by a fluted, sinewy trunk with ridges that twist like a flexed forearm, holding onto dead brown leaves through winter. It stands on the footpath along the north side of the old Sterrenwacht, Servaasbolwerk."
+      "how_to_recognise": "You can recognise it by a fluted, sinewy trunk with ridges that twist like a flexed forearm, holding onto dead brown leaves through winter. It stands on the footpath along the north side of the old Sterrenwacht, Servaasbolwerk.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_031",
@@ -1030,8 +1040,8 @@
       "age_max": 126,
       "location": {
         "address": "Geertebolwerk t.h.v. Zilverstraat a/h water, Utrecht",
-        "latitude": 52.08586,
-        "longitude": 5.12903,
+        "latitude": 52.086488,
+        "longitude": 5.118036,
         "neighbourhood": "Geertebolwerk"
       },
       "verified_sources": [
@@ -1055,12 +1065,13 @@
         "kind": "flowers",
         "label": "April, when it goes white all over at the water's edge"
       },
-      "how_to_recognise": "You can recognise it as a small, modest pear tree that still flowers and fruits each year, easy to walk past among the larger planes and beeches. It stands on Geertebolwerk, at the water's edge level with Zilverstraat."
+      "how_to_recognise": "You can recognise it as a small, modest pear tree that still flowers and fruits each year, easy to walk past among the larger planes and beeches. It stands on Geertebolwerk, at the water's edge level with Zilverstraat.",
+      "verify_notes": "Pin corrected 2026-09-08. The file carried 52.08586, 5.12903, which is utr_018's coordinate on the Servaasbolwerk beside the observatory, about 750 metres east of this tree: a copy error, and it was marked confirmed. LRMB entry nr 1678119 places it at 52.086488, 5.118036, 'Geertebolwerk t.h.v. Zilverstraat a/h water', which matches the address this entry already carried. Every other Utrecht entry was checked against its register row in the same pass and all matched exactly."
     },
     {
       "id": "utr_032",
       "name": "The Black Walnut of the Tolsteegbrug",
-      "species": "Walnut (Juglans sp.)",
+      "species": "Black Walnut (Juglans nigra)",
       "age_estimate": "roughly 136 to 156 years, from the register's planting band of 1870-1890",
       "age_min": 136,
       "age_max": 156,
@@ -1084,7 +1095,8 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "story": "This tree poisons the ground under it. Black walnut roots leak juglone, a compound that stunts or kills a long list of plants that try to grow within reach, which is why anyone who inherits one gives up on tomatoes. In its native North America it is also the most valuable timber tree going, worth enough per log that thieves take them standing.\n\nThis one is 19 metres tall with a trunk 332 centimetres around, measured by the canal-side survey of Utrecht's monumental trees. It stands by the Tolsteegbrug at the southern end of the singel, beside the building that housed the university's school of governance and organisation studies. The register dates its planting to somewhere between 1870 and 1890, so 136 to 156 years old, and the band is that wide because nobody wrote down the year.\n\nAutumn is when it makes itself known. The nuts come down in thick green husks the size of golf balls, and the husk stains whatever handles it a deep brown that takes a week to wear off, which is exactly what it was used for as a dye long before anyone in Europe planted the species to look at. The nut inside is worth eating and takes a hammer to reach.\n\nThe canal route through Utrecht's monumental trees ends at this tree, which makes it a reasonable place to stop walking.",
-      "how_to_recognise": "You can recognise it in autumn by thick green-husked walnuts underfoot that stain the hands brown, on a trunk 3.32 metres round. It stands by the Tolsteegbrug, beside the university's school of governance building."
+      "how_to_recognise": "You can recognise it in autumn by thick green-husked walnuts underfoot that stain the hands brown, on a trunk 3.32 metres round. It stands by the Tolsteegbrug, beside the university's school of governance building.",
+      "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus)."
     },
     {
       "id": "utr_033",
