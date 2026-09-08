@@ -1,0 +1,69 @@
+{
+  "city": "Harderwijk",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Harderwijk maps the ginkgo in its Hortus Botanicus, a small public garden in the old town. Local tradition says Carl Linnaeus planted it himself while taking his medical doctorate at the University of Harderwijk in 1735. Neither the national register nor bomenbieb can confirm that, and the register says so outright, but both band the planting to 1700 to 1750, which fits. Linnaeus did give the species its name in 1771. The garden is free, and the tree turns gold in November.",
+  "meta_description": "Harderwijk's Hortus Botanicus holds a ginkgo local tradition credits to Carl Linnaeus, planted between 1700 and 1750. Free to visit.",
+  "question_meta": "Harderwijk's oldest mapped tree is the ginkgo in the Hortus Botanicus, banded 1700 to 1750 and tied by legend to Linnaeus himself.",
+  "question_answer": "The oldest tree mapped in Harderwijk is the Linnaeus Ginkgo in the Hortus Botanicus on the Academiestraat, which both bomenbieb and the national register of monumental trees date to a planting between 1700 and 1750, so more than 270 years old. Local tradition holds that Carl Linnaeus planted it himself while he was taking his doctorate at the University of Harderwijk in 1735. Neither source confirms that, and the register flags the story as unverified.",
+  "question_context": "The date and the legend are two different claims and only one of them has support. Both sources band the planting to 1700 to 1750, which is the ordinary way Dutch monumental trees are dated and is enough to make the tree more than 270 years old. The Linnaeus connection is another matter. It is repeated by both sources and confirmed by neither, and the national register goes further than most register entries do by naming it as unverified and pointing readers at the Stadsmuseum Harderwijk, which holds the history of the old university. What is documented is that Linnaeus was in Harderwijk in 1735 and took his medical doctorate there in a matter of days, and that he later gave this species its scientific name, Ginkgo biloba, in 1771. The tree stands in the town's small Hortus Botanicus, which is free and municipally owned. A second monumental tree, a plane of the same planting period, stands about thirteen metres away in the same garden, and a larger, younger plane about a hundred metres north of it.",
+  "hero_tree_id": "hdw_001",
+  "oldest_tree_id": "hdw_001",
+  "faq": [
+    {
+      "q": "Did Linnaeus really plant this ginkgo?",
+      "a": "Nobody has shown that he did. Both bomenbieb and the national register repeat the story and neither confirms it, and the register names it as unverified and suggests asking the Stadsmuseum Harderwijk. What is certain is that Linnaeus was in Harderwijk in 1735 and that the planting band of 1700 to 1750 does not rule the story out."
+    },
+    {
+      "q": "What is the oldest tree in Harderwijk?",
+      "a": "The ginkgo in the Hortus Botanicus, banded to a planting between 1700 and 1750, so more than 270 years old."
+    },
+    {
+      "q": "Is the Hortus Botanicus free?",
+      "a": "Yes. It is a small public garden in the town centre, owned by the municipality, roughly fifteen minutes on foot from Harderwijk station."
+    },
+    {
+      "q": "When is the ginkgo at its best?",
+      "a": "November. Ginkgo turns a uniform gold late in the season and then sheds most of it within a few days, so the timing is worth checking before a long trip."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hdw_001",
+      "name": "The Linnaeus Ginkgo of Harderwijk",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over 270 years, from a planting band of 1700 to 1750; unconfirmed local tradition ties it to Carl Linnaeus's studies at Harderwijk in 1735",
+      "age_min": 270,
+      "age_max": 320,
+      "location": {
+        "address": "Academiestraat, Hortus Botanicus, Harderwijk",
+        "latitude": 52.348288,
+        "longitude": 5.618605,
+        "neighbourhood": "Harderwijk old town"
+      },
+      "story": "The man this ginkgo is credited to is the man who gave the species its name, thirty-six years later.\n\nThe story, repeated by both bomenbieb and the national register, is that Carl Linnaeus brought and planted this tree while he was at the University of Harderwijk. He was there in 1735, taking his medical doctorate in a matter of days, and that part is solid. The register is blunt about the rest: the planting is unverified, and it suggests asking the Stadsmuseum Harderwijk, which keeps the old university's history. Both sources band the planting to 1700 to 1750, which is consistent with the story and confirms nothing.\n\nGinkgo biloba L., 1771. The L. is Linnaeus. He took the genus name from a garbled transliteration in Engelbert Kaempfer's account of Japan and the species name from the two-lobed leaf, so whatever this tree's provenance, the name on its label is his.\n\nThe species earns the walk on its own. Ginkgo has no close living relatives anywhere, has been growing in more or less this form for something like two hundred million years, and turns an improbable flat gold in November before dropping the whole lot in a few days.\n\nIt stands in the small public Hortus Botanicus in the old town.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/ginkgo-harderwijk/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679816"
+      ],
+      "access": "Free. The Hortus Botanicus is a small public garden in the centre of Harderwijk, owned by the municipality.",
+      "transport": "In the old town of Harderwijk, roughly 15 minutes on foot from Harderwijk station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the leaves, flat fans split down the middle and unlike anything else in the garden. The other monumental tree in the Hortus, a plane, stands about thirteen metres away.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when it goes gold and then drops the lot within days"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

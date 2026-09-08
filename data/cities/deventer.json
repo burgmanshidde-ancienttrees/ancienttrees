@@ -2,11 +2,11 @@
   "city": "Deventer",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "The occupying French cut down the trees in Deventer's park across the river, and in 1822 the city planted it again. Most of the oaks, beeches and planes in the Worpplantsoen today are from that replanting, which makes the whole park a piece of restitution you can walk through. It is one of the oldest city parks in the Netherlands. The oldest tree is elsewhere: a lime at Diepenveen said to date from 1614, used as a lookout by Cossacks fighting the French in 1813.",
-  "meta_description": "Ten remarkable trees in Deventer: a lime the Cossacks watched from in 1813, and a park replanted in 1822 after the French felled everything in it.",
-  "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and nine more worth the walk.",
+  "intro": "The occupying French cut down the trees in Deventer's park across the river, and in 1822 the city planted it again. Most of the oaks, beeches and planes in the Worpplantsoen today are from that replanting, which makes the whole park a piece of restitution you can walk through. It is one of the oldest city parks in the Netherlands. The oldest tree is elsewhere: a lime at Diepenveen said to date from 1614, used as a lookout by Cossacks fighting the French in 1813. Two stand downstream at Zutphen, a tree of heaven and an old harbour poplar.",
+  "meta_description": "Twelve remarkable trees around Deventer: a lime the Cossacks watched from in 1813, a park replanted in 1822, and two downstream at Zutphen.",
+  "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and eleven more worth the walk.",
   "question_answer": "The oldest tree in Deventer is the Kozakkenlinde on the Kozakkenweg at Diepenveen, which the national register places in a planting band of 1600 to 1700 and, more specifically, suggests was planted in 1614 after the death of the Hijligen eik, the holy oak that had stood in the same spot. Its name comes from a later episode: during the French occupation of Deventer in 1813 the tree is said to have been used as a lookout by Cossacks fighting against the French. Both of those are traditions carried by the register rather than facts we can prove, and it cites an article by Wim de Weerd behind them. What is not in doubt is that this is a very old lime standing where an older sacred tree stood before it.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands. Two entries carry better reasoning than that and the pages say so. The register dates the black walnut in the Worpplantsoen to a specific replanting in 1820 to 1822, after the planting of 1816 was damaged by drifting ice on the IJssel. And for the poplar known as De Reus van De Worp it argues from a photograph: an image of the Lange Laan in the Ossenwaarde taken in 1917 shows the tree small and distant, clearly young, which supports a planting between 1900 and 1910 rather than anything earlier. That is a better piece of dating than most trees on this site have. The register is the 2024 edition and is the single source throughout, so everything here is flagged. Where a pin is marked approximate we know the park and not the trunk.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands. Two entries carry better reasoning than that and the pages say so. The register dates the black walnut in the Worpplantsoen to a specific replanting in 1820 to 1822, after the planting of 1816 was damaged by drifting ice on the IJssel. And for the poplar known as De Reus van De Worp it argues from a photograph: an image of the Lange Laan in the Ossenwaarde taken in 1917 shows the tree small and distant, clearly young, which supports a planting between 1900 and 1910 rather than anything earlier. That is a better piece of dating than most trees on this site have. The register is the 2024 edition and is the single source for everything here except the two trees downstream at Zutphen, which carry a second, so all of it ships flagged. Where a pin is marked approximate we know the park and not the trunk.",
   "hero_tree_id": "dev_001",
   "oldest_tree_id": "dev_001",
   "faq": [
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "Nine of the ten, yes. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, the Frieswijk oak is on estate land recorded as visitable, and the White Willow of Wilp stands beside a public dike road. The tenth, the Steenenkamer Maple out past the Bolwerksmolen windmill, grows in a private garden and is only seen from the road."
+      "a": "Eleven of the twelve, yes. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, the Frieswijk oak is on estate land recorded as visitable, and the White Willow of Wilp stands beside a public dike road. The twelfth, the Steenenkamer Maple out past the Bolwerksmolen windmill, grows in a private garden and is only seen from the road. The two at Zutphen, on the Lunetteplein and out on the Marshaven peninsula, are open ground as well."
     }
   ],
   "trees": [
@@ -373,6 +373,66 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise it lying down rather than standing: a low tangle of limbs at head height, still in leaf and flowering each summer. It stands in the park of Landgoed De Lathmer, Wilp."
+    },
+    {
+      "id": "dev_011",
+      "name": "The Tree of Heaven of Lunetteplein",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "age_estimate": "roughly 135 to 145 years",
+      "age_min": 135,
+      "age_max": 145,
+      "location": {
+        "address": "Lunetteplein, Zutphen",
+        "latitude": 52.135694,
+        "longitude": 6.204807,
+        "neighbourhood": "Zutphen"
+      },
+      "story": "Almost every tree of heaven in Europe today is a volunteer nobody planted. This one was chosen.\n\nAilanthus altissima came out of China in the middle of the eighteenth century as a fashionable garden exotic, and it was still being planted for ornament when this one went in between 1880 and 1890. Then it turned out to do things the nurseries had not advertised. It grows a metre or more a year, seeds by the thousand, throws suckers from any severed root, and loads the soil around it with a compound that holds other species back. It is now one of the most aggressively invasive trees on the continent, at home in railway sidings, demolition plots and cracks in walls.\n\nSo a deliberately planted specimen of about 140 years, standing on a public square in a Hanseatic town, is an odd survivor: ornamental planting from the years before anyone knew what the species would become.\n\nThe register knows nothing else about it. Species, owner, planting decade, and then the history field reads unknown. If you know how this tree came to be on the Lunetteplein, tell us and it goes on the page.\n\nIt stands in the open, a quarter of an hour on foot from Zutphen station.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/hemelboom-zutphen/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1680624"
+      ],
+      "access": "Free. A public square in Zutphen, open at any hour.",
+      "transport": "On the Lunetteplein in Zutphen, roughly 10 to 15 minutes on foot from Zutphen station, and about 20 minutes by train from Deventer.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the leaves, up to a metre long with a dozen or more leaflets down each stalk, longer than any other leaf on the street. It stands on the open Lunetteplein.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dev_012",
+      "name": "The Marshaven Poplar",
+      "species": "Canadian Poplar (Populus x canadensis)",
+      "age_estimate": "roughly 115 to 125 years",
+      "age_min": 115,
+      "age_max": 125,
+      "location": {
+        "address": "Marshaven, west side of the peninsula along the IJssel, Zutphen",
+        "latitude": 52.151279,
+        "longitude": 6.183618,
+        "neighbourhood": "Zutphen, harbour district"
+      },
+      "story": "A Canadian poplar is a crop. The hybrid went into Dutch ground by the million for matchwood, clogs and pulp, and the usual arrangement is that it comes down at thirty or forty years, before the timber loses value and the limbs start letting go. This one was planted around 1900 to 1910 and nobody has taken it out.\n\nIt stands on the peninsula at the Marshaven, where the harbour meets the IJssel. The national register looks at that position and wonders aloud whether Rijkswaterstaat, the state water authority, put it there on purpose as a marker for the harbour mouth. No document says so. It is a reasonable guess about a plausible tree in a plausible place, and it stays a guess.\n\nThe years do show. On 18 January 2018 a large limb came away, which is what a poplar of this age does; the register noted it and did not treat it as the beginning of the end. The tree is still standing.\n\nWhat you get is more than a century of a species almost nobody lets grow old, on open ground beside a working river harbour with the barge traffic going by. And on a windy day the leaves do what poplar leaves do, which is most of the reason to stand under one.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/marshavenpopulier-zutphen/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1694211"
+      ],
+      "access": "Free. It stands on a public peninsula beside the IJssel harbour, open ground with no gate.",
+      "transport": "In Zutphen's harbour district, a walk or short cycle from Zutphen station, and about 20 minutes by train from Deventer.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the size of the trunk: it is the one veteran poplar on the Marshaven peninsula, standing on the west side along the IJssel rather than on the harbour side.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

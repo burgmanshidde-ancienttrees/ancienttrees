@@ -11,6 +11,30 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation, previous attempt stopped after 50 min with 70 min unspent) - 13 bomenbieb.nl trees merged and committed: 5 new Dutch places, 8 folded into published cities
+
+Full account in CURATION.md's matching entry. Short version: the
+previous attempt in this window had run a full verify-and-write pass
+on the `_bomenbieb-netherlands` leads and left it uncommitted, still
+holding the claim. Everything was already researched and written to
+disk, so this attempt validated it (preflight, build, qa all clean)
+and shipped it rather than redoing anything.
+
+**13 trees, 5 new places**: Borculo, Giethoorn, Harderwijk,
+Heinkenszand and Oostkapelle each open with one tree; Rhenen, Arnhem,
+Groningen, Utrecht, Assen, Deventer (2) and Emmen each gained one.
+Every one sourced from bomenbieb.nl plus the national monumental-tree
+register, flagged (single narrative source), no photos yet, all
+honest gaps. Arnhem's addition also got a Dutch i18n overlay.
+
+Noted but not fixed: `data/city-list.json` has never carried entries
+for Assen or Rhenen, so their tree counts there have been silently
+absent since before this session. Left as a note for whoever next
+touches that file's generation.
+
+`preflight.py` (563 cities, 0 problems), `astro build` (5130 pages)
+and `qa.py` (8026 pages) all clean. Nothing for Hidde.
+
 ## 2026-09-08 (continuation, previous attempt stopped after 17 min with 103 min unspent) - Radomsko, Stokaičiai, Pajūris opened; an iOS gate fixed; Sweden verify pass fed a write pass
 
 Full account in CURATION.md's matching entry. Short version: merged two

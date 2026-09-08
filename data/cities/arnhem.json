@@ -3,10 +3,11 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane beside the village church that watched German soldiers move in and Allied paratroopers fight past. Five more stand in Velperplein park, laid out after an 1880 design competition. Park Sonsbeek adds seven, Park Zijpendaal and Gulden Bodem another five, and Park Angerenstein four within a hundred metres of each other, including a tulip tree 37 metres tall and 5.39 metres round. None require a ticket.",
-  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 38 verified trees, real stories, how to reach each one.",
+  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio at Kasteel Zijpendaal's gate. 39 verified trees, real stories, how to reach each one.",
   "question_answer": "Arnhem's oldest tree is very likely one of De Poortwachters, three sweet chestnuts planted around 1650 to 1700 at the entrance to Kasteel Zijpendaal, now roughly 350 to 375 years old. Locals have nicknamed the two thickest Hans and Gretel and the leaner third the Witch.",
-  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 37 on the city's list.",
-  "question_context": "De Poortwachters, three sweet chestnuts at the gate of Kasteel Zijpendaal, are the best-documented candidates for Arnhem's oldest tree, planted somewhere between 1650 and 1700 and now measured at roughly 750, 718 and 472 centimetres around. A local legend credits Karel van Egmond, the last independent Duke of Guelders, with planting them personally; the dates rule that out, since he died in 1538, more than a century before these trees are estimated to have gone in. What the legend gets right is their role: everyone visiting the castle since has had to walk between them, which is likely how they earned their name. The competing candidate is the Huissensedijk plane beside the Bonifatiuskerk in Elden, dated anywhere from 1725 to 1800, a spread wide enough that at its earliest it could be the older. Given that uncertainty, the chestnuts are the safer answer, and they are free to visit any day. Park Sonsbeek has a claimant of its own, an oak beside the Lorentz Monument that the national register dates to between 1750 and 1800 and calls possibly one of the oldest trees in that park, which is a claim to the park rather than to the city.",
+  "question_meta": "Three 350-year-old chestnuts at a castle gate are likely Arnhem's oldest trees. Where to find them, and the other 38 on the city's list.",
+  "question_context": "De Poortwachters, three sweet chestnuts at the gate of Kasteel Zijpendaal, are the best-documented candidates for Arnhem's oldest tree, planted somewhere between 1650 and 1700 and now measured at roughly 750, 718 and 472 centimetres around. A local legend credits Karel van Egmond, the last independent Duke of Guelders, with planting them personally; the dates rule that out, since he died in 1538, more than a century early. What the legend gets right is their role: everyone visiting the castle since has had to walk between them, which is likely how they earned their name. The competing candidate is the Huissensedijk plane beside the Bonifatiuskerk in Elden, dated anywhere from 1725 to 1800, a spread wide enough that at its earliest it could be the older. Given that uncertainty, the chestnuts are the safer answer, and they are free to visit any day. Park Sonsbeek has a claimant of its own, an oak by the Lorentz Monument banded 1750 to 1800, which the register calls possibly one of the oldest in that park rather than in the city. The yew at De Steeg, banded 1600 to 1700, may be older than all of them.",
+  "oldest_tree_id": "arn_001",
   "faq": [
     {
       "q": "What is the oldest tree in Arnhem?",
@@ -14,7 +15,7 @@
     },
     {
       "q": "Are Arnhem's ancient trees free to visit?",
-      "a": "Nearly all of them. 37 of 38 stand in public parks, public woodland, a free castle courtyard or beside public streets, with no ticket and no gate. Three need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk; the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you; and the copper beech on Velperweg stands in a private garden, visible from a public car park but not reachable, so that one is a look rather than a visit. The rare robinia at Kasteel Doorwerth, out past Renkum, is free to reach in the castle's own courtyard; only the castle building itself charges."
+      "a": "Nearly all of them. 37 of 39 stand in public parks, public woodland, a free castle courtyard or beside public streets, with no ticket and no gate. Four need a word of warning: the oak at the Zijpendaalseweg corner grows in a meadow that is sometimes fenced with electric wire for grazing livestock, so you may be looking from the path rather than standing at the trunk; the sweet chestnut north of the Hertenkamp sits off the paths in the forest, so take the coordinates with you; and two are looks rather than visits, the copper beech on Velperweg in a private garden seen from a public car park, and the yew at De Steeg in a front garden with an information post on the street outside it. The rare robinia at Kasteel Doorwerth, out past Renkum, is free to reach in the castle's own courtyard; only the castle building itself charges."
     },
     {
       "q": "Which Arnhem tree is the thickest of its kind in the Netherlands?",
@@ -1237,6 +1238,36 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "arn_039",
+      "name": "The Yew of Brantsenpark",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 300 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "location": {
+        "address": "Brantsenpark 11, De Steeg",
+        "latitude": 52.018531,
+        "longitude": 6.05911,
+        "neighbourhood": "De Steeg, municipality of Rheden"
+      },
+      "story": "This yew was one of the first trees written into the Dutch register of monumental trees when it opened in 1983.\n\nIt is widely called the oldest yew in the Netherlands. Nobody has settled that, and the register itself does not make the claim. What the register does say is that the tree went in somewhere between 1600 and 1700, which puts it at three to four centuries. Yew grows so slowly that girth tells you very little about a trunk this size, and it lives so long that a Dutch specimen of this age is unusual rather than remarkable in its own species.\n\nIt grew up inside the grounds of landgoed Rhederoord, the country estate whose park became the Brantsenpark, so the houses arrived at the tree rather than the other way round. A storm took the original top out decades ago. A resident writing to the register in 2018 remembered photographs of the tree from 1960 and 1961 and described the damage. Somebody once cut a flame shape out of the trunk, which showed that the wood inside is partly hollow. In an old yew that is ordinary rather than a warning.\n\nIt stands in the front garden of a private house on the Brantsenpark, with an information post in front of it.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/taxus-de-steeg/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1677451, one of the first trees added to the register in 1983"
+      ],
+      "access": "Free to look at from the street. The yew stands in the front garden of a private house on the Brantsenpark, with a municipal information post in front of it; the garden itself is not open, so this is a look from the pavement rather than a walk to the trunk.",
+      "transport": "De Steeg, in the municipality of Rheden about 11 km northeast of Arnhem. Trains stop at De Steeg-Laag Soeren, a short walk away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the flame shape cut out of the trunk and the flat top where a storm took the original crown. It stands in the front garden on the Brantsenpark, with an information post beside it.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

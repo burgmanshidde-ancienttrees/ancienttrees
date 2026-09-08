@@ -100,7 +100,7 @@
    "slug": "arnhem",
    "status": "published",
    "demand_views_90d": 31478,
-   "trees": 38
+   "trees": 39
   },
   {
    "city": "Prague",
@@ -285,7 +285,7 @@
    "slug": "utrecht",
    "status": "published",
    "demand_views_90d": 67963,
-   "trees": 33
+   "trees": 34
   },
   {
    "city": "Malaga",
@@ -595,7 +595,7 @@
    "slug": "groningen",
    "status": "published",
    "demand_views_90d": 31401,
-   "trees": 20
+   "trees": 21
   },
   {
    "city": "Quebec City",
@@ -1084,7 +1084,7 @@
    "country": "Netherlands",
    "slug": "deventer",
    "status": "published",
-   "trees": 10
+   "trees": 12
   },
   {
    "city": "Kuala Lumpur",
@@ -1578,7 +1578,7 @@
    "country": "Netherlands",
    "slug": "emmen",
    "status": "published",
-   "trees": 7
+   "trees": 8
   },
   {
    "city": "Erdmannrode",
@@ -1915,6 +1915,41 @@
    "city": "Zehdenick",
    "country": "Germany",
    "slug": "zehdenick",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Borculo",
+   "country": "Netherlands",
+   "slug": "borculo",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Oostkapelle",
+   "country": "Netherlands",
+   "slug": "oostkapelle",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Giethoorn",
+   "country": "Netherlands",
+   "slug": "giethoorn",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Harderwijk",
+   "country": "Netherlands",
+   "slug": "harderwijk",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Heinkenszand",
+   "country": "Netherlands",
+   "slug": "heinkenszand",
    "status": "published",
    "trees": 1
   }

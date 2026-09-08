@@ -11,6 +11,56 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation, previous attempt stopped after 50 min with 70 min unspent) - 13 bomenbieb.nl trees merged and committed: 5 new Dutch places, 8 folded into published cities
+
+Picked up an uncommitted verify+write pass left on disk by the previous
+attempt in this window, claimed as `_bomenbieb-netherlands` verify. All
+13 trees were already fully researched and written (`data/research/
+bomenbiebnetherlands-verified.json`), the leads file already marked
+each one delivered; nothing had been committed, built or QA'd. Ran
+`preflight.py` (0 problems), `astro build` (5130 pages) and `qa.py`
+(8026 pages) clean, then committed.
+
+**5 new single-tree places**, all bomenbieb.nl plus the national
+register (LRMB) as the second source:
+- **Borculo**: The Elm of Heure, European White Elm, ~175-195yr.
+- **Giethoorn** (Dwarsgracht hamlet): The Ash of Dwarsgracht, European
+  Ash, ~195-215yr, roots have raised the farmhouse De Essenbelt.
+- **Harderwijk**: The Linnaeus Ginkgo, Ginkgo, 270+yr, unconfirmed
+  local tradition ties it to Linnaeus's 1735 studies there.
+- **Heinkenszand**: The Weeping Beech, Fagus sylvatica 'Pendula',
+  ~155-165yr.
+- **Oostkapelle**: The Lime of Kasteel Westhove, age disputed between
+  two sources (1000-1400 signage vs a post-16th-century replanting),
+  stated honestly as unproven rather than picked.
+
+**8 trees folded into published cities**: Rhenen (rhe_002, Lime of
+Achterberg, ~350-400yr), Arnhem (arn_039, Yew of Brantsenpark,
+~300-400yr, also given a Dutch i18n overlay), Groningen (gro_021, Oak
+of the Hunenborg, approximate pin, standing beside a hunebed), Utrecht
+(utr_034, Dike Lime of Tull en 't Waal, ~225-275yr), Assen (ass_010,
+Thick Oak of Beilen, ~250-350yr), Deventer (dev_011 Tree of Heaven of
+Lunetteplein ~135-145yr, dev_012 Marshaven Poplar ~115-125yr), Emmen
+(emm_008, Variegated Maple of Coevorden Castle, ~135-145yr).
+
+All 13 flagged (single-sourced-plus-register rather than two fully
+independent narrative sources), all photos missing, honest gaps. The
+leads file (`data/leads/_bomenbieb-netherlands.json`) also picked up
+several access/species notes from re-checking LRMB against bomenbieb
+entries that stayed leads: a plane at Oldenaller blocked on the
+register's own `visitable: nee`, an espalier pear cluster at
+Grubbenvorst now understood as three register trees rather than one,
+and an Amsterdam olifantsiep-adjacent tree still stuck on one source
+after a second ArcGIS attempt failed to find a queryable endpoint.
+
+**Separately noticed, not fixed this pass**: `data/city-list.json` has
+no entries at all for Assen or Rhenen, despite both cities having been
+live for a while (assen.json, rhenen.json existed before this
+session). Their tree counts there were never tracked. Left as a gap
+for whichever pass next touches that file's generation, since fixing
+it meant guessing whether other cities are missing too and this pass
+had no time budget for that audit.
+
 ## 2026-09-08 (continuation, previous attempt stopped after 17 min with 103 min unspent) - Radomsko, Stokaičiai, Pajūris opened; a coordinate copy-error caught before it shipped
 
 Picked up per the standing instruction: two earlier attempts in this window

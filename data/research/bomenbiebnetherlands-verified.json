@@ -1,0 +1,327 @@
+[
+  {
+    "id": "rhe_002",
+    "name": "The Lime of Achterberg",
+    "species": "Common Lime (Tilia x europaea)",
+    "age_estimate": "roughly 350 to 400 years",
+    "age_min": 350,
+    "age_max": 400,
+    "girth_cm": 603,
+    "location": {
+      "address": "Levendaalselaan 6, Achterberg",
+      "latitude": 51.964114,
+      "longitude": 5.601507,
+      "neighbourhood": "Achterberg, near Rhenen/Veenendaal"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/linde-van-achterberg/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683006, coordinate 26m from bomenbieb's own pin"
+    ],
+    "access": "Stands on the former outer bailey (voorburcht) of the demolished Kasteel Levendael, now farmland beside Levendaalselaan; visible from the lane. LRMB records 'visitable: onbekend, visible: ja'. Treat as viewable from the public road pending a firmer access statement.",
+    "transport": "Village of Achterberg, between Veenendaal and Rhenen; nearest station Veenendaal-De Klomp, then bike/drive (no direct public transport to the door).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Popularly called 'the 1000-year lime of Achterberg', but LRMB's own register entry explicitly disputes this: 'zeker geen 1000 jaar oud... wel wordt ingeschat dat hij meer dan 350 jaar geleden is geplant' (certainly not 1000 years old; estimated planted more than 350 years ago). Girth 603cm. Stood in the outer bailey of Kasteel Levendael; local tradition says justice was dispensed under lindes (Old Germanic custom, 'onder lindes werd rechtgesproken'). The castle was demolished around 1820 and replaced by a farm. By 1922 the tree was well-known enough to be written into the property's deed of sale, obliging owners to preserve it. In 1965 it was slated for felling due to poor condition; the Copijn brothers intervened with tree-surgery techniques that introduced arboriculture as a discipline in the Netherlands. The trunk is now fully hollow with a new stem growing up through the middle. Two independent sources agree: bomenbieb.nl (planted ~1650, alive) and LRMB nr 1683006 (26m coordinate match, same girth-based estimate, no felling language in its history text). RECOMMENDATION: join Ede (7.65km, next free ede_ id) - within the doctrine's day-trip join range, and this is a genuinely good tree (girth, documented legal history, a real conservation story) worth the trip to a small village.",
+    "delivered": "written and merged into data/cities/rhenen.json on 2026-09-08"
+  },
+  {
+    "id": "arn_039",
+    "name": "The Yew of Brantsenpark",
+    "species": "Common Yew (Taxus baccata)",
+    "age_estimate": "roughly 300 to 400 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": null,
+    "location": {
+      "address": "Brantsenpark 11, De Steeg",
+      "latitude": 52.018531,
+      "longitude": 6.05911,
+      "neighbourhood": "De Steeg, municipality of Rheden"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/taxus-de-steeg/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1677451, coordinate 2m from bomenbieb's own pin, one of the first trees ever added to the register (1983)"
+    ],
+    "access": "Stands in the front garden of a private house on Brantsenpark, but is described as visible from the street; LRMB records 'visitable: ja, visible: ja' (municipally/gemeente-associated). Info post in front of the tree.",
+    "transport": "De Steeg, near Arnhem/Rheden; nearest station De Steeg-Laag Soeren is a short walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Widely described online (search results, not directly fetchable: waymarking.com entry 'Oldest Taxus in De Steeg', Cloudflare-blocked) as the oldest yew in the Netherlands, estimated 300-400 years old; a 'flame' was once cut from the trunk revealing it is partially hollow, and it lost its original top in a storm decades before being registered as one of the first trees in the Register van Monumentale Bomen in 1983. LRMB nr 1677451 (2m coordinate match) corroborates: within the historic grounds of landgoed Rhederoord (the park that became today's Brantsenpark), planted 1600-1700, top blown out in a storm (recollected in a 2018 email from a resident quoted in the register, describing photos of the tree from 1960/61). No felling language; two sources agree it stands. RECOMMENDATION: join Arnhem (10.3km, next free arn_ id) - solid age, documented, visible from a public street even though the tree itself is on private land.",
+    "delivered": "written and merged into data/cities/arnhem.json on 2026-09-08"
+  },
+  {
+    "id": "gro_021",
+    "name": "The Oak of the Hunenborg",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 150 to 200 years (the group); the oldest individual oak behind dolmen D4 appears older",
+    "age_min": 150,
+    "age_max": 200,
+    "girth_cm": null,
+    "location": {
+      "address": "Schutsweg 42, Midlaren",
+      "latitude": 53.107644,
+      "longitude": 6.671655,
+      "neighbourhood": "Midlaren, at the Hunenborg dolmens (hunebedden D3 and D4)"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/hunnebedboom-midlaren/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682461, coordinate 15m from bomenbieb's own pin"
+    ],
+    "access": "Free, public archaeological monument (a hunebed/dolmen site) just outside the village; LRMB records 'visitable: ja, visible: ja'.",
+    "transport": "Midlaren, between Groningen and Assen; nearest bus stop on the Groningen-Assen road, short walk to the site.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A group of four pedunculate oaks growing at the Hunenborg, the joint name for two Neolithic dolmens (D3, built 3400-3100 BCE by the Funnelbeaker culture, and D4) just south of Midlaren. LRMB nr 1682461 (15m match) planted band 1870-1880, describes the oak GROUP as beautiful but says explicitly the most special tree is a separate, older oak standing behind D4 which 'already appears on old paintings and looks genuinely older' than the rest of the group; no separate coordinate is given for that individual tree, hence approximate precision. The combination of veteran oaks directly beside a 5,000+ year-old megalithic tomb is a strong why-go on its own (a public, free archaeological site). No felling/death language in either source. RECOMMENDATION: join Groningen (11.77km, next free gro_ id), with the story naming the specific older oak behind D4 as the one to seek out rather than the group as a whole, and flagging that the exact tree cannot be pinned more precisely without a site visit.",
+    "delivered": "written and merged into data/cities/groningen.json on 2026-09-08"
+  },
+  {
+    "id": "utr_034",
+    "name": "The Dike Lime of Tull en 't Waal",
+    "species": "Common Lime (Tilia x europaea)",
+    "age_estimate": "roughly 225 to 275 years",
+    "age_min": 225,
+    "age_max": 275,
+    "girth_cm": null,
+    "location": {
+      "address": "Lekdijk 26, Tull en 't Waal",
+      "latitude": 51.967308,
+      "longitude": 5.193746,
+      "neighbourhood": "Tull en 't Waal, on the Lekdijk, municipality of Houten"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/dijklinde-schalkwijk-tull-en-t-waal/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683455, coordinate 3m from bomenbieb's own pin"
+    ],
+    "access": "Free; stands on the public dike (Lekdijk), a working flood-defence embankment with a public path along the top.",
+    "transport": "Tull en 't Waal, on the Lek river between Utrecht and Houten; nearest bus stop on the Lekdijk, or cycle from Houten (roughly 20 minutes).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A pollarded common lime on the dike at Tull en 't Waal, once topped at over 3m and now carrying a 20m crown grown up from the pollard cuts. LRMB nr 1683455 (3m match): historically a 'bakenboom', a landmark tree used by boatmen on the river for orientation; hit by an artillery shell in 1943 during the war and recovered well. No felling language; both sources agree it stands and describe the same tree (pollard history, dike setting). Dutch dike-lime avenues/rows are common but this is described and registered as a single tree, not a row. RECOMMENDATION: join Utrecht (11.91km, next free utr_ id) - within range, has real wartime and river-trade history, and stands on public flood-defence land with no access barrier.",
+    "delivered": "written and merged into data/cities/utrecht.json on 2026-09-08"
+  },
+  {
+    "id": "ass_010",
+    "name": "The Thick Oak of Beilen",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 250 to 350 years",
+    "age_min": 250,
+    "age_max": 350,
+    "girth_cm": 500,
+    "location": {
+      "address": "Crossing of Esweg/Eursingerweg and Asserweg, Beilen",
+      "latitude": 52.866533,
+      "longitude": 6.516963,
+      "neighbourhood": "Beilen, municipality of Midden-Drenthe"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/zomereik-beilen/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1681987, coordinate 1m from bomenbieb's own pin"
+    ],
+    "access": "Free, standing at a rural road junction (a boundary tree, grensboom); LRMB records 'visitable: ja, visible: ja'.",
+    "transport": "Beilen, on the Assen-Beilen road; nearest station Beilen (10-15 minute walk/cycle to the junction).",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Known locally as 'de Dikke Eik van Beilen' (the Thick Oak of Beilen), one of the most important monumental trees in Drenthe province. LRMB nr 1681987 (1m match, essentially the same point as bomenbieb's pin): planted as a boundary tree (grensboom) marking the edge of the Eursinge es (a historic open field). The register itself works through the dating: local information suggested 1600-1700 and the Drents Archief estimated 350 years, but given a measured growth rate of about 2.3cm/year and a girth of 5m (500cm) in 2010, the register argues a planting period of 1750-1800 is more realistic than the older estimate; both figures are given here rather than picking a winner. Crown cable-braced since the 1980s, in good condition, recovered fully from 1987 ice-storm damage. Documented in two published books (Gerrit de Graaff, 'Monumentale Bomen in Nederland', 1991; Frank Moens, 'Bijzondere bomen in Nederland', 2010). RECOMMENDATION: join Assen (13.47km, next free ass_ id) - well within range, well documented, girth recorded, and a genuinely important regional monument.",
+    "delivered": "written and merged into data/cities/assen.json on 2026-09-08"
+  },
+  {
+    "id": "dev_011",
+    "name": "The Tree of Heaven of Lunetteplein",
+    "species": "Tree of Heaven (Ailanthus altissima)",
+    "age_estimate": "roughly 135 to 145 years",
+    "age_min": 135,
+    "age_max": 145,
+    "girth_cm": null,
+    "location": {
+      "address": "Lunetteplein, Zutphen",
+      "latitude": 52.135694,
+      "longitude": 6.204807,
+      "neighbourhood": "Zutphen"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/hemelboom-zutphen/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1680624, coordinate 0m from bomenbieb's own pin"
+    ],
+    "access": "Free, standing on a public square (Lunetteplein); LRMB records 'visitable: ja, visible: ja', owner category gemeente (municipal).",
+    "transport": "Zutphen town centre; walkable from Zutphen railway station (roughly 10-15 minutes).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Planted 1880-1890 per both sources; the register itself records no further history ('onbekend') beyond confirming the tree, its species and municipal ownership. A tree of heaven of this age on a public square in a historic Hanseatic town is a solid, if modestly documented, entry. RECOMMENDATION: this and the Marsh Haven poplar (also Zutphen, see next entry) form the start of a small Zutphen cluster, but Zutphen has no published page of its own and only two candidates surfaced in this pass, below the four-tree floor for a new city. Given Zutphen (11-13km from Deventer) sits within the doctrine's join range, join Deventer for now (next free dev_ id); if a future pass finds two or three more Zutphen trees, splitting them into their own Zutphen page would likely read better than folding a historic city into its neighbour.",
+    "delivered": "written and merged into data/cities/deventer.json on 2026-09-08"
+  },
+  {
+    "id": "dev_012",
+    "name": "The Marshaven Poplar",
+    "species": "Canadian Poplar (Populus x canadensis)",
+    "age_estimate": "roughly 115 to 125 years",
+    "age_min": 115,
+    "age_max": 125,
+    "girth_cm": null,
+    "location": {
+      "address": "Marshaven (west side of the peninsula, along the IJssel), Zutphen",
+      "latitude": 52.151279,
+      "longitude": 6.183618,
+      "neighbourhood": "Zutphen, harbour district"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/marshavenpopulier-zutphen/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1694211, coordinate 5m from bomenbieb's own pin"
+    ],
+    "access": "Free, standing on a public peninsula beside the IJssel river harbour; LRMB records 'visitable: ja, visible: ja', owner category overige staat (other state body, likely Rijkswaterstaat).",
+    "transport": "Zutphen harbour district (Marshaven), a walk or cycle from Zutphen railway station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Planted around 1900-1910. LRMB nr 1694211 (5m match) speculates it may have been planted by Rijkswaterstaat (the national water authority) as a marker tree at the harbour entrance, given its position; no historical record confirms this, so it is speculation, not fact, and should read that way. A large limb broke off on 18 January 2018, noted in the register but not treated as a vitality concern (no felling language, tree still standing). RECOMMENDATION: pairs with the Tree of Heaven above as a small Zutphen cluster; join Deventer for now (next free dev_ id) per the same reasoning, or hold both as leads for a dedicated future Zutphen pass if the merge prefers not to fold a historic city's only two trees into a neighbour 11-13km away.",
+    "delivered": "written and merged into data/cities/deventer.json on 2026-09-08"
+  },
+  {
+    "id": "emm_008",
+    "name": "The Variegated Maple of Coevorden Castle",
+    "species": "Sycamore Maple 'Leopoldii' (Acer pseudoplatanus 'Leopoldii')",
+    "age_estimate": "roughly 135 to 145 years",
+    "age_min": 135,
+    "age_max": 145,
+    "girth_cm": null,
+    "location": {
+      "address": "Kasteel 29, Coevorden",
+      "latitude": 52.662404,
+      "longitude": 6.741973,
+      "neighbourhood": "Coevorden town centre, Kasteel Coevorden grounds"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/bonte-esdoorn-coevorden/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682295, coordinate 2m from bomenbieb's own pin"
+    ],
+    "access": "Free to view; stands on a prominent, view-defining spot at Kasteel Coevorden, now a hotel. LRMB records 'visitable: ja, visible: ja', owner category gemeente (the municipality bought the castle in 1938; a private owner has run it as a hotel since 2014).",
+    "transport": "Coevorden town centre, walkable from the bus station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A variegated (Leopoldii-form) sycamore maple planted 1880-1890 on a prominent spot beside Kasteel Coevorden. LRMB nr 1682295 (2m match): the castle was bought by the municipality in 1938, restored from 1968, and has been privately owned since 2014 (currently a hotel), but the tree's own setting is described as publicly visible and gemeente-associated; crown cable-braced for safety, no defects found, growing conditions improved after 2014. No felling language, condition described as good. Bomenbieb's own species field ('gewone-esdoorn-leopoldii') confirms the same cultivar name. RECOMMENDATION: join Emmen (13.32km, next free emm_ id) - within range, a distinctive ornamental variety (not a common species for this project) with a clear, free public vantage point even though the grounds are now a private hotel.",
+    "delivered": "written and merged into data/cities/emmen.json on 2026-09-08"
+  },
+  {
+    "id": "bcl_001",
+    "name": "The Elm of Heure",
+    "species": "European White Elm (Ulmus laevis)",
+    "age_estimate": "roughly 175 to 195 years",
+    "age_min": 175,
+    "age_max": 195,
+    "girth_cm": null,
+    "location": {
+      "address": "Heure 5, Landgoed Beekvliet, Heure (near Borculo)",
+      "latitude": 52.122941,
+      "longitude": 6.503955,
+      "neighbourhood": "Heure, a hamlet on the Beekvliet estate near Borculo, municipality of Berkelland"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/fladderiep-heure/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1685088, coordinate 12m from bomenbieb's own pin"
+    ],
+    "access": "On the private Beekvliet estate but LRMB records 'visitable: ja, visible: ja' despite 'particulier' (private) ownership, i.e. the owner allows visitors to the tree even though the land itself is private. State this plainly on the page rather than implying open parkland.",
+    "transport": "The hamlet of Heure, part of Borculo, municipality of Berkelland (Achterhoek region); no station nearby, best reached by car or bike from Borculo or Eibergen.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Bomenbieb and the LRMB register both call this THE thickest elm in the Netherlands ('de dikste iep van ons land'), a genuine national superlative worth stating plainly and sourcing to the register. It is a European white elm (fladderiep), a species distinguished by deep-grooved plank-buttress roots at the base that give riverbank species like this one and the black poplar extra stability against flooding and wind; the register notes fladderiep is unusually resistant to Dutch elm disease, which has killed most of the country's other elms, adding a real reason this species and this specimen matter. Full, healthy crown, low branches, good vitality per the register. No exact girth figure given in either source despite the superlative claim; note this gap rather than inventing a number. RECOMMENDATION: strong candidate for its own new single-tree place (a national superlative, in a tiny hamlet with no city nearby to join at 27.8km from Enschede, well past the join range) - would somebody travel specifically for the thickest elm in the country? Plausibly yes for tree enthusiasts, and the species story (disease resistance) gives it a reason beyond size alone. Suggest a fresh 3-letter prefix not on the reserved list, e.g. a place called 'Heure' or folded into 'Borculo'.",
+    "delivered": "written and merged into data/cities/borculo.json on 2026-09-08"
+  },
+  {
+    "id": "osk_001",
+    "name": "The Lime of Kasteel Westhove",
+    "species": "Common Lime (Tilia x europaea)",
+    "age_estimate": "disputed: local signage suggests planted 1000-1400, but a planting after the castle's late-16th-century rebuild is also proposed; treat both as unproven",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Duinvlietweg 8, Oostkapelle (Kasteel Westhove), near Domburg",
+      "latitude": 51.570004,
+      "longitude": 3.521538,
+      "neighbourhood": "Oostkapelle/Domburg, Walcheren, Zeeland"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/linde-van-kasteel-westhove/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679500, coordinate 1m from bomenbieb's own pin"
+    ],
+    "access": "Free to view; stands on the forecourt of Kasteel Westhove, now a youth hostel (jeugdherberg) in the dunes. LRMB records 'visitable: ja, visible: ja', owner category stichting.",
+    "transport": "Near Domburg/Oostkapelle on Walcheren, Zeeland; best reached by bike or car, roughly 20 minutes from Middelburg.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Both sources call this the oldest tree in Zeeland province ('de oudste boom van Zeeland'), a strong, sourced superlative. The castle itself is first mentioned in a charter to Floris V in 1277 and is now a youth hostel. THE AGE IS GENUINELY DISPUTED and both figures should be reported as disputed rather than picking one, per the bridge-claim rule: an information board at the site gives a planting year between 1000-1400, but the register's own text offers an alternative that it was planted after the castle's late-16th-century rebuild, which would make it roughly 400-450 years old rather than 600-1000. Neither claim is sourced to a documented planting record; both are estimates. A folk theory (also unsourced) holds that the current trunk is a 'daughter tree' that grew from the original root after the first trunk died. The tree is heavily cable-braced on all sides. Nearby (per the register) stand old oak avenues, ash and abele trees and a monumental sweet chestnut still bearing fruit, suggesting Westhove's grounds may hold more candidates for a future pass. RECOMMENDATION: strong candidate for its own new single-tree place given the 'oldest tree in Zeeland' claim and the castle's documented 750-year history; 44.6km from Bruges (a different country) so joining an existing city makes no sense. Suggest a fresh prefix for 'Domburg' or 'Oostkapelle'; flag the disputed age honestly on the page rather than picking the more dramatic figure.",
+    "delivered": "written and merged into data/cities/oostkapelle.json on 2026-09-08"
+  },
+  {
+    "id": "ghn_001",
+    "name": "The Ash of Dwarsgracht",
+    "species": "European Ash (Fraxinus excelsior)",
+    "age_estimate": "roughly 195 to 215 years",
+    "age_min": 195,
+    "age_max": 215,
+    "girth_cm": null,
+    "location": {
+      "address": "Dwarsgracht 27, Dwarsgracht (De Essenbelt farmhouse)",
+      "latitude": 52.725447,
+      "longitude": 6.035281,
+      "neighbourhood": "Dwarsgracht, part of Giethoorn, Noordwest Overijssel"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/es-dwarsgracht/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683405, coordinate 2m from bomenbieb's own pin"
+    ],
+    "access": "Free to view from the public path/waterway; stands beside a private working farmhouse (De Essenbelt) but LRMB records 'visible: ja' even though 'visitable: nee' (not enterable, but plainly visible from outside).",
+    "transport": "Dwarsgracht, immediately adjacent to Giethoorn (Overijssel's famous car-free canal village); reached by the same paths, punts and cycle routes as Giethoorn itself.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Called the most distinctive tree in the area and probably the thickest ash in Overijssel province by both bomenbieb and LRMB nr 1683405 (2m match). It stands beside De Essenbelt, a small farmhouse built in 1820 in Dwarsgracht, a hamlet that is part of the Giethoorn cluster (Noordwest Overijssel's famous car-free 'Venice of the North' canal village, one of the country's biggest tourist draws). The register notes the tree's root system has pushed up a substantial mound and has literally held up the front of the house while the rear stalls sank, and that recent restoration work on the farmhouse prevented it from splitting in two: a genuinely good, specific anecdote. RECOMMENDATION: strong candidate for a new single-tree place at or near Giethoorn. Given Giethoorn's existing fame as a destination, framing this as 'near Giethoorn' rather than inventing a standalone draw is honest and would pass the worth-the-visit bar on the back of Giethoorn's own pull (day-trip boundary doctrine) rather than needing the tree to carry the whole trip alone. Suggest a fresh prefix for 'Giethoorn'.",
+    "delivered": "written and merged into data/cities/giethoorn.json on 2026-09-08"
+  },
+  {
+    "id": "hdw_001",
+    "name": "The Linnaeus Ginkgo of Harderwijk",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "over 270 years, unconfirmed local tradition ties it to Carl Linnaeus's own studies at Harderwijk in 1735",
+    "age_min": 270,
+    "age_max": 320,
+    "girth_cm": null,
+    "location": {
+      "address": "Academiestraat, Hortus Botanicus, Harderwijk",
+      "latitude": 52.348288,
+      "longitude": 5.618605,
+      "neighbourhood": "Harderwijk old town"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/ginkgo-harderwijk/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679816, coordinate 2m from bomenbieb's own pin"
+    ],
+    "access": "Free, in the small public Hortus Botanicus (botanical garden) in Harderwijk town centre; LRMB records 'visitable: ja', owner category gemeente.",
+    "transport": "Harderwijk old town, walkable from Harderwijk railway station (roughly 15 minutes).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A local legend, repeated by both bomenbieb and LRMB nr 1679816 (2m match), holds that this ginkgo was brought and planted by Carl Linnaeus himself while he studied (and received his doctorate) at the University of Harderwijk in the 1730s. NEITHER SOURCE CONFIRMS THIS INDEPENDENTLY: the register explicitly flags it as an unverified story and suggests checking with the Stadsmuseum Harderwijk, which covers the university's history. Report the Linnaeus connection as legend/local tradition, not fact, in the story. Planted 1700-1750 per both sources, which is at least consistent with a Linnaeus-era planting (he studied there in 1735) without confirming it. A second monumental tree, an oriental/common plane planted 1700-1750, stands 13m away in the same small Hortus (LRMB nr 1679815), and a third, larger plane (1890-1900) stands about 117m north near the Hema. RECOMMENDATION: strong candidate for its own new single-tree place built around the Hortus Botanicus (Harderwijk itself has no published page and this pass found no other candidates there, so it stays below the four-tree floor for a full city, but the Linnaeus story plus a genuinely rare species in a public botanical garden clears the single-famous-tree bar on its own). If a future pass finds two more Hortus or Harderwijk candidates, this could grow into a proper small city page instead.",
+    "delivered": "written and merged into data/cities/harderwijk.json on 2026-09-08"
+  },
+  {
+    "id": "hkz_001",
+    "name": "The Weeping Beech of Heinkenszand",
+    "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+    "age_estimate": "roughly 155 to 165 years",
+    "age_min": 155,
+    "age_max": 165,
+    "girth_cm": null,
+    "location": {
+      "address": "Kerkdreef 6, Heinkenszand (churchyard of the Blasiuskerk)",
+      "latitude": 51.473105,
+      "longitude": 3.819336,
+      "neighbourhood": "Heinkenszand, Zeeland"
+    },
+    "verified_sources": [
+      "https://bomenbieb.nl/bijzondere-bomen/treurbeuk-heinkenszand/",
+      "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682787, coordinate 2m from bomenbieb's own pin"
+    ],
+    "access": "Free, in the public old churchyard (begraafplaats) behind the Blasiuskerk; LRMB records visitable: ja, owner category religieuze instantie.",
+    "transport": "Heinkenszand village centre, Zeeland; best reached by car or bike, roughly 15 minutes from Goes.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Both sources describe a roughly 24m-wide crown of hanging branches forming a dense curtain a visitor stands inside; a sign at the church itself calls it the largest weeping beech in the Netherlands, and the register adds the more cautious claim that it is probably the thickest in Zeeland (province-level, not national). REPORT BOTH CLAIMS AND WHO MAKES EACH ONE rather than picking the bigger one, per the bridge-claim rule: the church's own sign says national-largest, LRMB nr 1682787 (2m match) only commits to provincial-thickest. Historically notable people were buried close to the tree, and some graves now sit beneath its canopy because the crown has grown out over them; the first church on this site was built in 1406 by the local lord Jan van Schengen in his castle garden, which is separate historical colour about the SITE, not the tree itself (the tree is far younger, planted 1860-1870). RECOMMENDATION: candidate for a new single-tree place; Heinkenszand is 43.4km from Ghent (a different country) and has no other candidates in this pass, so it stays below the four-tree floor for a full city page. A weeping beech with a genuinely large, documented crown and a real superlative claim (even if only provincial) clears the single-famous-tree bar on its own. Note in the story that Zierikzee, Goes and Domburg/Oostkapelle (see other entries and leads from this pass) are all within 20-30km in the same Zeeland province and could form a loose car-based Zeeland cluster for a future pass, similar to the island-clustering doctrine (cluster by car, not on foot).",
+    "delivered": "written and merged into data/cities/heinkenszand.json on 2026-09-08"
+  }
+]

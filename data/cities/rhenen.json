@@ -2,11 +2,11 @@
   "city": "Rhenen",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Rhenen maps one thing: the pollard oaks of the Koningstafel, a cluster of low, repeatedly cut oaks on the plateau at the top of the Grebbeberg. They stand inside the Heimenberg ring-wall, a seventh-century earthwork and one of the largest defensive structures in the country, with the Rhine below. The plateau takes its name from Frederick V of the Palatinate, who is said to have feasted here in exile. Utrechts Landschap manages the site, the routes are waymarked and the walk up from the station takes about half an hour.",
-  "meta_description": "The pollard oaks of the Koningstafel: a cluster of cut oaks on the Grebbeberg plateau at Rhenen, inside a seventh-century ring-wall. Free, waymarked.",
+  "intro": "Rhenen maps two trees, just over a kilometre apart. On the plateau at the top of the Grebbeberg stand the pollard oaks of the Koningstafel, low oaks cut back over and over inside the Heimenberg ring-wall, a seventh-century earthwork with the Rhine below. Out at Achterberg, on the ground of a castle pulled down around 1820, stands a hollow lime with a new stem growing up inside the shell, written into a deed of sale in 1922 to stop anyone felling it. Both are free.",
+  "meta_description": "Two trees at Rhenen: the pollard oaks of the Koningstafel on the Grebbeberg, and a hollow lime at Achterberg older than 350 years. Both free.",
   "question_meta": "Rhenen's mapped trees are the pollard oaks of the Koningstafel on the Grebbeberg, documented since at least 1830. Free and waymarked.",
   "question_answer": "Rhenen's oldest mapped trees are the pollard oaks of the Koningstafel, Sessile Oaks (Quercus petraea) on the plateau at the top of the Grebbeberg. They are documented from at least 1830, and local tradition holds them considerably older.",
-  "question_context": "Dating any single trunk here is difficult, because these are low pollards cut back over and over and some of them stand in circular groupings. The sources disagree and both figures are kept rather than averaged: grebbeberg.nl says the pollards are documented from at least 1830 and are possibly much older, while bomenbieb offers a planting band running from 1200 to 1750. The 1830 record is the safe floor and the earlier dates are tradition. The plateau itself carries an older name story: it became the Koningstafel, the king's table, in the seventeenth century after Frederick V of the Palatinate, living in exile in the Dutch Republic, reportedly used it for hunting feasts and had a large stone table placed there. That is a place-name legend and says nothing about the age of the trees. The ground under them is genuinely ancient: the Heimenberg ring-wall around the plateau is a seventh-century earthwork and one of the oldest and largest defensive structures in the Netherlands. Utrechts Landschap manages the site, which is also a memorial of the battle of the Grebbeberg in May 1940.",
+  "question_context": "Dating any single trunk here is difficult, because these are low pollards cut back over and over and some of them stand in circular groupings. The sources disagree and both figures are kept rather than averaged: grebbeberg.nl says the pollards are documented from at least 1830 and are possibly much older, while bomenbieb offers a planting band running from 1200 to 1750. The 1830 record is the safe floor and the earlier dates are tradition. The plateau itself carries an older name story: it became the Koningstafel, the king's table, in the seventeenth century after Frederick V of the Palatinate, living in exile in the Dutch Republic, reportedly used it for hunting feasts and had a large stone table placed there. That is a place-name legend and says nothing about the age of the trees. The ground under them is genuinely ancient: the Heimenberg ring-wall around the plateau is a seventh-century earthwork and one of the oldest and largest defensive structures in the Netherlands. Utrechts Landschap manages the site, which is also a memorial of the battle of the Grebbeberg in May 1940. The hollow lime at Achterberg is dated more narrowly, at more than 350 years.",
   "hero_tree_id": "rhe_001",
   "oldest_tree_id": "rhe_001",
   "faq": [
@@ -24,7 +24,11 @@
     },
     {
       "q": "Is it free to visit?",
-      "a": "Yes. Utrechts Landschap manages the site, with waymarked walking and cycling routes. It is a signed walk of roughly 25 to 30 minutes up from Rhenen station."
+      "a": "Yes, both. Utrechts Landschap manages the Koningstafel plateau, with waymarked walking and cycling routes, a signed walk of roughly 25 to 30 minutes up from Rhenen station. The lime at Achterberg stands on private farmland and is looked at from the public lane."
+    },
+    {
+      "q": "What is the lime at Achterberg?",
+      "a": "A common lime with a trunk 6.03 metres round, now a hollow shell with a new stem growing up through the middle. It stood in the outer bailey of Kasteel Levendael, and in 1922 it was written into the deed of sale of the land, obliging the buyer to keep it. Locally it is called the thousand-year lime; the national register says it is certainly not that and puts the planting more than 350 years back."
     }
   ],
   "trees": [
@@ -67,6 +71,45 @@
         "status": "missing"
       },
       "how_to_recognise": "You are looking for pollards rather than one tree: low oaks cut back over and over, some of them standing in circular groups. They run along the west side of the Koningstafel plateau."
+    },
+    {
+      "id": "rhe_002",
+      "name": "The Lime of Achterberg",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 350 to 400 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 603,
+      "location": {
+        "address": "Levendaalselaan 6, Achterberg",
+        "latitude": 51.964114,
+        "longitude": 5.601507,
+        "neighbourhood": "Achterberg, Rhenen"
+      },
+      "story": "In 1922 this lime was written into the deed of sale of the land around it, obliging whoever bought the farm to keep it standing.\n\nLocally it is called the thousand-year lime of Achterberg. The national register of monumental trees rejects that flatly: certainly not a thousand years old, it says, and planted more than 350 years ago. That is still older than anything else on this stretch of the Gelderse Vallei. The trunk measures 6.03 metres around and is now entirely hollow, a standing shell with a fresh stem growing up through the middle of it.\n\nIt grew in the voorburcht, the outer bailey, of Kasteel Levendael. The castle was pulled down around 1820 and a farm went up on the site, so the tree is the last living piece of the place. Old Germanic custom held court under a lime, and local tradition says justice was done under this one, which is tradition rather than record.\n\nThe deed did not settle the matter. By 1965 the tree was in poor enough condition to be scheduled for felling, and the Copijn brothers argued for treating it instead. The techniques they used here are part of how tree surgery arrived in the Netherlands as a trade. Dutch arboriculture has a founding patient, and this is it.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/linde-van-achterberg/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683006"
+      ],
+      "access": "Free. The tree stands on farmland beside the Levendaalselaan and is visible from the public lane; the field itself is private, so this is a look rather than a walk up to the trunk.",
+      "transport": "In the village of Achterberg, about 3 km east of Rhenen. Nearest station is Rhenen, then a walk or cycle out along the Achterbergsestraatweg; no bus runs to the lane.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the hollow trunk, 6.03 metres round, with a new stem growing up out of the empty shell. It stands alone on the farmland beside the Levendaalselaan.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the bare crown shows the hollow shell and the stem inside it"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

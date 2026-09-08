@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Groningen's oldest tree keeps company with cows, not city planners: a lime planted in 1684 still stands before a private farmhouse northeast of the centre, decades before Groningen laid out a single public park. Its younger rivals cluster in the Sterrebos, an 18th-century star-shaped forest whose oaks turned out, after a 2024 storm and a ring count, to be far older than anyone had assumed. One of the park's rarest trees, a sessile oak spared from a paving project in 2025, is still fighting for root space today.",
-  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. 20 verified locations, real stories, one under threat.",
+  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. 21 verified locations, real stories, one under threat.",
   "question_answer": "Groningen's oldest tree is a Common Lime at De Rollen, a moated farm on the city's northeastern edge, planted in 1684 and now roughly 340 years old. The Dutch national heritage register calls it plainly the oldest tree in the province, older than anything in the city's own celebrated parks by more than a century.",
-  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full 20.",
+  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full 21.",
   "question_context": "Groningen's age claims split cleanly into documented and inferred. The Common Lime at De Rollen carries an actual date, 1684, recorded in the Rijksdienst voor het Cultureel Erfgoed's own listing for the farm and repeated in the municipality's 2018 monumental tree policy, which is why it anchors this page as the oldest tree in the city despite standing on private farmland rather than in a park built for visitors. Sterrebos's surviving oaks come close on a technicality: when a storm toppled one of their number in January 2024, a ring count revealed a germination year of around 1758, nearly 130 years earlier than the previous estimate, and heritage officials now assume its still-standing neighbours share that birth year, though none of the survivors have themselves been individually dated. The rest of the list is honestly younger and more provisional: Noorderplantsoen's ginkgo rests on a single municipal source, and Groenestein's plane tree is inferred from the size of its trunk and the age of the estate around it rather than any planting record. None of that uncertainty is unusual for trees planted before anyone thought to write the date down.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Groningen's remarkable trees free to visit?",
-      "a": "All are free. 19 of the 20 stand on public ground; the De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg. Most public trees are open at any time, though the walled Prinsentuin garden and the Oude Hortus keep their own daily opening hours, and the Pepergasthuis courtyard is open roughly 9:00-18:00."
+      "a": "All are free. 20 of the 21 stand on public ground; the De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg. Most public trees are open at any time, though the walled Prinsentuin garden and the Oude Hortus keep their own daily opening hours, and the Pepergasthuis courtyard is open roughly 9:00-18:00."
     },
     {
       "q": "What is Groningen's rarest tree?",
@@ -710,6 +710,36 @@
         "kind": "bare silhouette",
         "label": "January and February, when the leaves are off and the trained frames and old hollows show"
       }
+    },
+    {
+      "id": "gro_021",
+      "name": "The Oak of the Hunenborg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 150 to 200 years (the group); the oldest individual oak behind dolmen D4 appears older",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Schutsweg 42, Midlaren",
+        "latitude": 53.107644,
+        "longitude": 6.671655,
+        "neighbourhood": "Midlaren, at the Hunenborg dolmens D3 and D4"
+      },
+      "story": "The tree worth walking to here is the one the register mentions last.\n\nFour oaks stand at the Hunenborg, banded 1870 to 1880, and as a group they are handsome enough. Then the register adds that the special one is a different tree, standing behind hunebed D4, which already appears on old paintings and looks genuinely older than the four. Nobody has given that oak a coordinate of its own, so the pin here marks the site rather than the trunk. Go round behind D4 and look for the heavier tree.\n\nThe ground beneath it works on another scale. Hunebed D3 was built between 3400 and 3100 BCE by the people of the Funnel Beaker culture, who dragged glacial boulders into a chamber and covered them with an earth mound. D4 stands beside it, and the pair together are the Hunenborg. Five thousand years against a couple of hundred: the oaks are recent arrivals on this spot, and nothing about the tomb makes them older than they are.\n\nWhat the oaks do is make the tombs read properly. A hunebed with veteran oaks standing over it looks like what it is, a burial place nobody ploughed out, and this one lies just south of Midlaren, open ground at any hour.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/hunnebedboom-midlaren/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682461"
+      ],
+      "access": "Free. A public archaeological site holding the two Hunenborg dolmens, open ground just south of Midlaren with no gate and no ticket.",
+      "transport": "Midlaren, between Groningen and Assen, about 12 km southeast of Groningen. Buses on the Groningen to Assen road stop nearby, then a short walk to the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You are looking for the oak behind hunebed D4 rather than the four standing in front of it: heavier in the trunk and plainly older than the group.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }
