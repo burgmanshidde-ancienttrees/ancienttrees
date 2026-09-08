@@ -1,0 +1,67 @@
+{
+  "city": "Chishang",
+  "country": "Taiwan",
+  "status": "needs_curation",
+  "intro": "Chishang is a rice township in Taitung County, and the thing people travel here for is a farm road with one tree standing beside it. Mr. Brown Avenue runs through open paddy and is closed to cars, so the usual way to it is a bicycle rented outside the railway station. The bishop wood on it was planted by a farmer in the 1970s to tie his cattle to, and has been one of Taiwan's most photographed trees since an airline commercial was filmed under it in 2013.",
+  "meta_description": "The Takeshi Kaneshiro Tree: a lone bishop wood in the rice paddies of Chishang, planted by a farmer in the 1970s and famous across Taiwan since 2013.",
+  "question_meta": "The Takeshi Kaneshiro Tree is a bishop wood of roughly 50 years standing alone in a rice paddy on Mr. Brown Avenue in Chishang, Taitung County.",
+  "question_answer": "The tree people come to Chishang for is the Takeshi Kaneshiro Tree, a bishop wood standing alone in a working rice paddy beside Mr. Brown Avenue, a farm road closed to cars about five kilometres from Chishang railway station. It was planted around the 1970s by the farmer Wu A-mu for shade and for tethering cattle, making it roughly 50 to 55 years old, and it took its nickname from a June 2013 EVA Air television commercial filmed under it with the actor Takeshi Kaneshiro.",
+  "question_context": "Fame arrived fast and cost the tree something. Local tourism authorities put visitor spending at around NT$500 million a year at the peak, and the same period brought complaints about litter and about photographers walking into the crop, which is why the roots now sit inside a low fence. On 23 July 2014 Typhoon Matmo pushed the tree over; Japanese arborists Yamashita Tokuo and Kawaguchi Yoshihisa worked with Taiwanese colleagues to right it and treat it within days, and it was replanted on the same spot. It has recovered steadily and came through Typhoon Haikui in September 2023 with only minor branch damage. The sponsorship contract behind the nickname expired in 2023 and the official name reverted to the Fengcha Tree, the tea-offering tree, though almost nobody uses it. Mr. Brown Avenue itself is named after a different 2013 commercial, for a coffee brand, and is one of the best known cycling roads in eastern Taiwan.",
+  "hero_tree_id": "csg_001",
+  "oldest_tree_id": "csg_001",
+  "faq": [
+    {
+      "q": "Why is it called the Takeshi Kaneshiro Tree?",
+      "a": "Because EVA Air filmed a television commercial under it in June 2013 with the actor Takeshi Kaneshiro. The nickname stuck. The airline's naming contract expired in 2023 and the official name is now the Fengcha Tree, the tea-offering tree."
+    },
+    {
+      "q": "How old is the tree?",
+      "a": "Roughly 50 to 55 years. It was planted around the 1970s by the farmer Wu A-mu, who wanted shade and somewhere to tether his cattle."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in a working rice paddy beside Mr. Brown Avenue, a public farm road. The roots are fenced to protect them, so you look at the tree from the path rather than walking up to the trunk."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Take a train to Chishang Railway Station, then rent a bicycle from one of the stalls outside it and ride about 5 km, roughly 30 minutes, along Mr. Brown Avenue. The avenue is closed to cars."
+    },
+    {
+      "q": "Is it still standing after the typhoons?",
+      "a": "Yes. Typhoon Matmo toppled it on 23 July 2014 and a joint Japanese and Taiwanese arborist team righted and treated it within days. It has grown steadily since and came through Typhoon Haikui in September 2023 with minor branch damage."
+    }
+  ],
+  "trees": [
+    {
+      "id": "csg_001",
+      "name": "The Takeshi Kaneshiro Tree",
+      "species": "Bishop Wood (Bischofia javanica)",
+      "age_estimate": "roughly 50 years",
+      "age_min": 50,
+      "age_max": 60,
+      "girth_cm": 100,
+      "location": {
+        "address": "Mr. Brown Avenue (Bolang Dadao), Chishang Township, Taitung County, Taiwan",
+        "latitude": 23.097389,
+        "longitude": 121.204491,
+        "neighbourhood": "Mr. Brown Avenue, Chishang"
+      },
+      "story": "A farmer planted this tree so he had somewhere to tie his cattle. Wu A-mu put it in around the 1970s, a single bishop wood in the middle of his rice paddy, good for shade and a tether and nothing else. In June 2013 EVA Air filmed a television commercial under it with the actor Takeshi Kaneshiro, and within a year the tree had a nickname, a fence around its roots, and an estimated NT$500 million a year in visitor spending attached to it. It also had photographers walking into the crop to get the shot.\n\nThen on 23 July 2014 Typhoon Matmo pushed it over. Japanese arborists Yamashita Tokuo and Kawaguchi Yoshihisa came out with Taiwanese colleagues, righted it within days and treated it where it stood, and it was replanted on the same spot. It has grown steadily since and came through Typhoon Haikui in September 2023 with a few broken branches.\n\nThe sponsorship contract expired in 2023 and the official name reverted to the Fengcha Tree, the tea-offering tree. Nobody calls it that. It is about ten metres tall, barely a metre around the trunk, still alone in the paddy, and Mr. Brown Avenue past it is a farm road closed to cars. The usual approach is a rented bicycle from Chishang station and five kilometres of rice with no traffic on it.",
+      "how_to_recognise": "You can recognise it by being the only tree out there: one broad crown about ten metres high standing alone in the rice, with a low fence around its roots. It stands beside Mr. Brown Avenue, the farm road out of Chishang.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Takeshi_Kaneshiro_Tree",
+        "https://zh.wikipedia.org/wiki/金城武樹"
+      ],
+      "access": "Free. Stands in a working rice paddy beside Mr. Brown Avenue (Bolang Dadao), a farm road closed to cars but open to bikes and pedestrians; the tree is fenced to protect its roots but fully visible and photographable from the path.",
+      "transport": "Chishang Railway Station, then about 5 km (roughly 30 minutes) by rented bicycle along Mr. Brown Avenue; bike rental stalls sit right outside the station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}
