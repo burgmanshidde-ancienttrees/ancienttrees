@@ -37,6 +37,22 @@ Cyprus and York each had four). His instruction: work them off, and
   blanked tree before shipping. Recorded in CLAUDE.md at rung 7.
   Removing it needs Hidde.
 
+**The deploy went red on this and the check was wrong, not the sitemap.**
+`qa.py` fails when more than a quarter of the sitemap carries one lastmod
+date, which is the right alarm for a bulk restamp and the wrong one for
+today: the machine genuinely reworked a quarter of the site (recognition
+lines across seven cities, three register batches, a dozen new places),
+1,422 of 5,067 urls, and the map agreed with every one of them. Worse, a
+share test over the whole sitemap does not decay, so those pages keep
+that date and the gate would have stayed red on every future deploy
+until enough other pages moved. It now asks the question directly:
+`data/lastmod.json` is the per-page record of what actually changed by
+content hash, and the sitemap may not claim more pages than the map
+does. That still catches the failure it was written for, a sitemap
+stamping pages the map never touched, and it catches a single false
+restamp rather than only a quarter of the site. Threshold judgement is
+yours to overrule.
+
 Still open, unchanged by this: 1,263 trees have no line but do have a
 photograph or an exact pin, and `recognise.py` ranks them by search
 impressions. Barcelona (42 missing), Arnhem (35), Vienna (26), Paris

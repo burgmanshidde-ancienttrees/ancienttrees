@@ -7558,36 +7558,39 @@
   "nra_003": {
    "city": "Nara",
    "name": "The Five-Colour Camellia of Byakugo-ji",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nra_004": {
    "city": "Nara",
    "name": "The Soapberry with a Bamboo Through It",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nra_006": {
    "city": "Nara",
    "name": "The Great Nagi of Kasuga Taisha",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nra_008": {
    "city": "Nara",
    "name": "The Chinaberry of the East Pagoda Ruins",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ginkgo tree in the temple (52541975425).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ginkgo_tree_in_the_temple_%2852541975425%29.jpg/960px-Ginkgo_tree_in_the_temple_%2852541975425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ginkgo_tree_in_the_temple_%2852541975425%29.jpg/960px-Ginkgo_tree_in_the_temple_%2852541975425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_tree_in_the_temple_(52541975425).jpg",
      "licence": "CC BY 2.0",
-     "author": "Raita Futo from Tokyo, Japan"
+     "author": "Raita Futo from Tokyo, Japan",
+     "lat": 34.688052,
+     "lng": 135.844344,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Ginkgo biloba in Japan in autumn Category:Japan photographs taken on 2022-11-22 Category:November 2022 in Nara Category:Tamukeyama-hachimangu"
     }
    ]
   },
@@ -65443,6 +65446,858 @@
   "lei_021": {
    "city": "Leiden",
    "name": "The Weeping Willow of the Van der Werf Statue",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bra_001": {
+   "city": "Bracon",
+   "name": "The Great Lime of Grange Sauvaget",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Tilleul de Grange Sauvaget - dsmm05087.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Tilleul_de_Grange_Sauvaget_-_dsmm05087.jpg/960px-Tilleul_de_Grange_Sauvaget_-_dsmm05087.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_de_Grange_Sauvaget_-_dsmm05087.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pmau",
+     "lat": 46.919894,
+     "lng": 5.866617,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Pmau Category:Self-published work Category:Signs in Bracon Category:Tilleul de Grange Sauvaget"
+    },
+    {
+     "title": "File:Tilleul de Grange Sauvaget - dsmm05089.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Tilleul_de_Grange_Sauvaget_-_dsmm05089.jpg/960px-Tilleul_de_Grange_Sauvaget_-_dsmm05089.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_de_Grange_Sauvaget_-_dsmm05089.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pmau",
+     "lat": 46.917945,
+     "lng": 5.869685,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Pmau Category:Self-published work Category:Tilleul de Grange Sauvaget"
+    },
+    {
+     "title": "File:Tilleul de Grange Sauvaget - dsmm05090.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Tilleul_de_Grange_Sauvaget_-_dsmm05090.jpg/960px-Tilleul_de_Grange_Sauvaget_-_dsmm05090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_de_Grange_Sauvaget_-_dsmm05090.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pmau",
+     "lat": 46.917945,
+     "lng": 5.869685,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Pmau Category:Self-published work Category:Tilleul de Grange Sauvaget"
+    },
+    {
+     "title": "File:Tilleul de Grange Sauvaget - dsmm05091.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Tilleul_de_Grange_Sauvaget_-_dsmm05091.jpg/960px-Tilleul_de_Grange_Sauvaget_-_dsmm05091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_de_Grange_Sauvaget_-_dsmm05091.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pmau",
+     "lat": 46.917937,
+     "lng": 5.869921,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Pmau Category:Self-published work Category:Tilleul de Grange Sauvaget"
+    },
+    {
+     "title": "File:Tilleul de Grange Sauvaget - dsmm05093.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Tilleul_de_Grange_Sauvaget_-_dsmm05093.jpg/960px-Tilleul_de_Grange_Sauvaget_-_dsmm05093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_de_Grange_Sauvaget_-_dsmm05093.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pmau",
+     "lat": 46.918406,
+     "lng": 5.87002,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Pmau Category:Self-published work Category:Tilleul de Grange Sauvaget"
+    }
+   ]
+  },
+  "cma_001": {
+   "city": "Chatenay-Malabry",
+   "name": "The Weeping Cedar of the Vallée-aux-Loups (Cèdre pleureur)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Cedrus libani ssp. atlantica 'Glauca Pendula' 02 by Line1.jpg (Wikidata Q20667332)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cedrus_libani_ssp._atlantica_%27Glauca_Pendula%27_02_by_Line1.jpg/960px-Cedrus_libani_ssp._atlantica_%27Glauca_Pendula%27_02_by_Line1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedrus_libani_ssp._atlantica_%27Glauca_Pendula%27_02_by_Line1.jpg",
+     "licence": "CC BY 2.5",
+     "author": "Liné1",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:Cedre pleureur Category:Cedrus libani in Île-de-France Category:Cedrus libani subsp. atlantica 'Glauca Pendula' Category:GFDL Category:Garden paths in France Category:License migration redundant Category:Pinales in Hauts-de-Seine Category:Self-published work Category:Uploaded by Liné1",
+     "source": "wikidata/Q20667332"
+    },
+    {
+     "title": "File:2016 Weeping cedar blue FR.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/2016_Weeping_cedar_blue_FR.jpg/960px-2016_Weeping_cedar_blue_FR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2016_Weeping_cedar_blue_FR.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Emmanuel Boitier",
+     "lat": 48.77117,
+     "lng": 2.27116,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedre pleureur Category:Cedrus libani subsp. atlantica (cultivars) Category:Famous trees in France Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Tree of the Year (France)"
+    },
+    {
+     "title": "File:Cèdre Bleu Pleureur, arboretum de Châtenay Malabry.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/C%C3%A8dre_Bleu_Pleureur%2C_arboretum_de_Ch%C3%A2tenay_Malabry.jpg/960px-C%C3%A8dre_Bleu_Pleureur%2C_arboretum_de_Ch%C3%A2tenay_Malabry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:C%C3%A8dre_Bleu_Pleureur,_arboretum_de_Ch%C3%A2tenay_Malabry.jpg",
+     "licence": "CC0",
+     "author": "Nathan oliveau",
+     "lat": 48.771031,
+     "lng": 2.271058,
+     "cats": "Category:2026 in Châtenay-Malabry Category:Arboretum de la Vallée-aux-Loups Category:CC-Zero Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work"
+    },
+    {
+     "title": "File:Cèdre bleu pleureur (2763032869).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/C%C3%A8dre_bleu_pleureur_%282763032869%29.jpg/960px-C%C3%A8dre_bleu_pleureur_%282763032869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:C%C3%A8dre_bleu_pleureur_(2763032869).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Jean-Marc Astesana from Voisins le Bretonneux, France",
+     "lat": 48.771238,
+     "lng": 2.271015,
+     "cats": "Category:Arboretum de la Vallée-aux-Loups Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Jean-Marc Astesana"
+    }
+   ]
+  },
+  "fet_001": {
+   "city": "Feternes",
+   "name": "The Lime of Château-Vieux (Tilleul de Châteauvieux)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ruins of Château-Vieux d'Allinges with the Savoy flag, Allinges, Haute-Savoie.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Ruins_of_Ch%C3%A2teau-Vieux_d%27Allinges_with_the_Savoy_flag%2C_Allinges%2C_Haute-Savoie.jpg/960px-Ruins_of_Ch%C3%A2teau-Vieux_d%27Allinges_with_the_Savoy_flag%2C_Allinges%2C_Haute-Savoie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ruins_of_Ch%C3%A2teau-Vieux_d%27Allinges_with_the_Savoy_flag,_Allinges,_Haute-Savoie.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Christian David",
+     "lat": 46.331429,
+     "lng": 6.464368,
+     "cats": "Category:CC-BY-SA-4.0 Category:Château-Vieux d'Allinges Category:Files with coordinates missing SDC location of creation Category:Quality images Category:Quality images by Christian David Category:Quality images missing SDC Commons quality assessment Category:Quality images missing SDC creator Category:Quality images missing SDC source of file Category:Quality images of Haute-Savoie Category:Quality images of castles in France Category:Self-published work"
+    },
+    {
+     "title": "File:Tilleul Château-Vieux 01.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Tilleul_Ch%C3%A2teau-Vieux_01.JPG/960px-Tilleul_Ch%C3%A2teau-Vieux_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_Ch%C3%A2teau-Vieux_01.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Camster",
+     "lat": 46.353529,
+     "lng": 6.540693,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Été des Villes 2015 Category:Self-published work Category:Tilleul de Châteauvieux Category:Uploaded via Campaign:ÉtédesVilles"
+    },
+    {
+     "title": "File:Tilleul Château-Vieux 02.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Tilleul_Ch%C3%A2teau-Vieux_02.JPG/960px-Tilleul_Ch%C3%A2teau-Vieux_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_Ch%C3%A2teau-Vieux_02.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Camster",
+     "lat": 46.353529,
+     "lng": 6.540693,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Été des Villes 2015 Category:Self-published work Category:Tilleul de Châteauvieux Category:Uploaded via Campaign:ÉtédesVilles"
+    },
+    {
+     "title": "File:Tilleul Château-Vieux 03.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Tilleul_Ch%C3%A2teau-Vieux_03.JPG/960px-Tilleul_Ch%C3%A2teau-Vieux_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_Ch%C3%A2teau-Vieux_03.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Camster",
+     "lat": 46.353529,
+     "lng": 6.540693,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Été des Villes 2015 Category:Self-published work Category:Tilleul de Châteauvieux Category:Uploaded via Campaign:ÉtédesVilles"
+    },
+    {
+     "title": "File:Tilleul Château-Vieux 04.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Tilleul_Ch%C3%A2teau-Vieux_04.JPG/960px-Tilleul_Ch%C3%A2teau-Vieux_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_Ch%C3%A2teau-Vieux_04.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Camster",
+     "lat": 46.353529,
+     "lng": 6.540693,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Été des Villes 2015 Category:Self-published work Category:Tilia cordata in France Category:Tilleul de Châteauvieux Category:Uploaded via Campaign:ÉtédesVilles"
+    }
+   ]
+  },
+  "jau_001": {
+   "city": "Jauze",
+   "name": "The Yew of Jauzé (If de Jauzé)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kom_001": {
+   "city": "Komjatice",
+   "name": "The Plane Tree of Komjatice",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:2013 Plane tree from Komjatice SK.jpg (Wikidata Q110629603)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2013_Plane_tree_from_Komjatice_SK.jpg/960px-2013_Plane_tree_from_Komjatice_SK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_from_Komjatice_SK.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ekopolis Foundation",
+     "lat": 48.15572,
+     "lng": 18.181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Nominees in 2013 Category:Plane tree from Komjatice Category:Tree of the Year (Slovakia)",
+     "source": "wikidata/Q110629603"
+    },
+    {
+     "title": "File:2013 Plane tree from Komjatice SK.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2013_Plane_tree_from_Komjatice_SK.jpg/960px-2013_Plane_tree_from_Komjatice_SK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_from_Komjatice_SK.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ekopolis Foundation",
+     "lat": 48.15572,
+     "lng": 18.181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Nominees in 2013 Category:Plane tree from Komjatice Category:Tree of the Year (Slovakia)"
+    },
+    {
+     "title": "File:Ciconia ciconia nest Komjatice 20220704b.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Ciconia_ciconia_nest_Komjatice_20220704b.jpg/960px-Ciconia_ciconia_nest_Komjatice_20220704b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ciconia_ciconia_nest_Komjatice_20220704b.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Taz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ciconia ciconia nests in Komjatice Category:Self-published work"
+    },
+    {
+     "title": "File:Ciconia ciconia nest Komjatice 20230503.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Ciconia_ciconia_nest_Komjatice_20230503.jpg/960px-Ciconia_ciconia_nest_Komjatice_20230503.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ciconia_ciconia_nest_Komjatice_20230503.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Taz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ciconia ciconia nests in Komjatice Category:Self-published work"
+    },
+    {
+     "title": "File:Ciconia ciconia nest Komjatice 20230713.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Ciconia_ciconia_nest_Komjatice_20230713.jpg/960px-Ciconia_ciconia_nest_Komjatice_20230713.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ciconia_ciconia_nest_Komjatice_20230713.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Taz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ciconia ciconia nests in Komjatice Category:Self-published work"
+    },
+    {
+     "title": "File:Ciconia ciconia nest Komjatice 20240710a.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Ciconia_ciconia_nest_Komjatice_20240710a.jpg/960px-Ciconia_ciconia_nest_Komjatice_20240710a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ciconia_ciconia_nest_Komjatice_20240710a.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Taz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ciconia ciconia nests in Komjatice Category:Self-published work"
+    },
+    {
+     "title": "File:Ciconia ciconia nest Komjatice 20240710c.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ciconia_ciconia_nest_Komjatice_20240710c.jpg/960px-Ciconia_ciconia_nest_Komjatice_20240710c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ciconia_ciconia_nest_Komjatice_20240710c.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Taz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ciconia ciconia nests in Komjatice Category:Self-published work"
+    },
+    {
+     "title": "File:Ciconia ciconia nest Komjatice 20260728.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Ciconia_ciconia_nest_Komjatice_20260728.jpg/960px-Ciconia_ciconia_nest_Komjatice_20260728.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ciconia_ciconia_nest_Komjatice_20260728.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Taz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ciconia ciconia nests in Komjatice Category:Self-published work"
+    },
+    {
+     "title": "File:Event for the 210th anniversary of the national awakener, educator, priest, patron and writer, collector of fairy tales, co-founder Tatrín ONDREJ CABAN in Komjatice, May 2024.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Event_for_the_210th_anniversary_of_the_national_awakener%2C_educator%2C_priest%2C_patron_and_writer%2C_collector_of_fairy_tales%2C_co-founder_Tatr%C3%ADn_ONDREJ_CABAN_in_Komjatice%2C_May_2024.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Event_for_the_210th_anniversary_of_the_national_awakener,_educator,_priest,_patron_and_writer,_collector_of_fairy_tales,_co-founder_Tatr%C3%ADn_ONDREJ_CABAN_in_Komjatice,_May_2024.jpg",
+     "licence": "CC0",
+     "author": "Matica slovenská",
+     "lat": 48.156556,
+     "lng": 18.170425,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Komjatice Category:Lukáš Perný Category:Matica slovenská Category:Ondrej Caban Category:Self-published work"
+    },
+    {
+     "title": "File:Kalvária Komjatice.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Kalv%C3%A1ria_Komjatice.jpg/960px-Kalv%C3%A1ria_Komjatice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kalv%C3%A1ria_Komjatice.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Lukáš Perný",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Komjatice Category:Self-published work"
+    }
+   ]
+  },
+  "lei_022": {
+   "city": "Leiden",
+   "name": "The X-factor Wingnut of the Plantsoen",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:20210806 Leiden - Plantsoen Park 'Plantsoen'.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/20210806_Leiden_-_Plantsoen_Park_%27Plantsoen%27.jpg/960px-20210806_Leiden_-_Plantsoen_Park_%27Plantsoen%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20210806_Leiden_-_Plantsoen_Park_%27Plantsoen%27.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Rudolphous",
+     "lat": 52.154328,
+     "lng": 4.503031,
+     "cats": "Category:2021 in Leiden Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2021-08-06 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Plantsoen (Leiden) Category:Self-published work"
+    },
+    {
+     "title": "File:Jan Eijkelboom - O - 4e Binnenvestgracht, Leiden.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Jan_Eijkelboom_-_O_-_4e_Binnenvestgracht%2C_Leiden.JPG/960px-Jan_Eijkelboom_-_O_-_4e_Binnenvestgracht%2C_Leiden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jan_Eijkelboom_-_O_-_4e_Binnenvestgracht,_Leiden.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Tubantia",
+     "lat": 52.15407222,
+     "lng": 4.49666944,
+     "cats": "Category:2008 in Leiden Category:4e Binnenvestgracht, Leiden Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-09-14 Category:Self-published work Category:Taken with HP PhotoSmart M417 Category:Wall poems in Leiden by Jan Eijkelboom"
+    },
+    {
+     "title": "File:Leiden - Plantsoen (Avary).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Leiden_-_Plantsoen_%28Avary%29.jpg/960px-Leiden_-_Plantsoen_%28Avary%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Leiden_-_Plantsoen_(Avary).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vysotsky",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2014 in Leiden Category:Attribution only license Category:Aviaries in the Netherlands Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2014-04-29 Category:Photographs by User:Vysotsky Category:Plantsoen (Leiden) Category:Self-published work Category:Taken with Canon Digital IXUS 60"
+    },
+    {
+     "title": "File:Leiden - Plantsoen 91 GM-1010 20200418.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Leiden_-_Plantsoen_91_GM-1010_20200418.jpg/960px-Leiden_-_Plantsoen_91_GM-1010_20200418.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Leiden_-_Plantsoen_91_GM-1010_20200418.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Otter",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2020 in Leiden Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:Gemeentelijke monumenten in Leiden Category:Gemeentelijke monumenten with known IDs Category:Houses in Leiden Category:License migration redundant Category:Netherlands photographs taken on 2020-04-18 Category:Plantsoen (Leiden) Category:Self-published work"
+    },
+    {
+     "title": "File:Overzicht langs het plantsoen - Leiden - 20137574 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Overzicht_langs_het_plantsoen_-_Leiden_-_20137574_-_RCE.jpg/960px-Overzicht_langs_het_plantsoen_-_Leiden_-_20137574_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_langs_het_plantsoen_-_Leiden_-_20137574_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Gerard Dukker in Leiden (1973) Category:Plantsoen (Leiden) Category:Zoeterwoudsesingel"
+    }
+   ]
+  },
+  "lei_023": {
+   "city": "Leiden",
+   "name": "The Persian Ironwoods that Named Themselves",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Jan Eijkelboom - O - 4e Binnenvestgracht, Leiden.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Jan_Eijkelboom_-_O_-_4e_Binnenvestgracht%2C_Leiden.JPG/960px-Jan_Eijkelboom_-_O_-_4e_Binnenvestgracht%2C_Leiden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jan_Eijkelboom_-_O_-_4e_Binnenvestgracht,_Leiden.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Tubantia",
+     "lat": 52.15407222,
+     "lng": 4.49666944,
+     "cats": "Category:2008 in Leiden Category:4e Binnenvestgracht, Leiden Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-09-14 Category:Self-published work Category:Taken with HP PhotoSmart M417 Category:Wall poems in Leiden by Jan Eijkelboom"
+    }
+   ]
+  },
+  "lei_024": {
+   "city": "Leiden",
+   "name": "The Elm Inside the Burcht",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Pays-Bas Leyde Burcht Entree - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Pays-Bas_Leyde_Burcht_Entree_-_panoramio.jpg/960px-Pays-Bas_Leyde_Burcht_Entree_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pays-Bas_Leyde_Burcht_Entree_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "rene boulay",
+     "lat": 52.15871,
+     "lng": 4.492915,
+     "cats": "Category:2015 in Leiden Category:Burgsteeg, Leiden Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2015-05-29 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7081175"
+    },
+    {
+     "title": "iNat obs 313773688 (Ulmus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/566665227/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/313773688",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "52.1588945537,4.4923884075"
+    }
+   ]
+  },
+  "lei_012": {
+   "city": "Leiden",
+   "name": "The Fern-leaved Beech of the Nut Field",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 81855258 (Fagus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/134287151/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/81855258",
+     "licence": "CC BY",
+     "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "52.1561027778,4.4846027778"
+    },
+    {
+     "title": "iNat obs 81920852 (Fagus sylvatica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/134387489/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/81920852",
+     "licence": "CC BY",
+     "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "52.1560694444,4.4846472222"
+    },
+    {
+     "title": "iNat obs 81920852 (Fagus sylvatica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/134387461/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/81920852",
+     "licence": "CC BY",
+     "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "52.1560694444,4.4846472222"
+    }
+   ]
+  },
+  "lei_013": {
+   "city": "Leiden",
+   "name": "The Grafted Ash of the Hortus",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lmd_001": {
+   "city": "Limmersdorf",
+   "name": "Tanzlinde (Limmersdorf)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Limmersdorf Luftbild-20210808-RM-171944.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Limmersdorf_Luftbild-20210808-RM-171944.jpg/960px-Limmersdorf_Luftbild-20210808-RM-171944.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Limmersdorf_Luftbild-20210808-RM-171944.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.00462477,
+     "lng": 11.40286184,
+     "cats": "Category:Aerial photographs of Landkreis Bayreuth Category:Aerial photos by Ermell Category:Bavaria photographs taken on 2021-08-08 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2021 Category:Limmersdorf Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from unmanned aerial vehicles Category:Quality images missing SDC inception Category:Quality images of Franconian Switzerland by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with DJI FC3411 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Limmersdorf Luftbild-20210808-RM-172003.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Limmersdorf_Luftbild-20210808-RM-172003.jpg/960px-Limmersdorf_Luftbild-20210808-RM-172003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Limmersdorf_Luftbild-20210808-RM-172003.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.00462477,
+     "lng": 11.40286184,
+     "cats": "Category:Aerial photographs of Landkreis Bayreuth Category:Aerial photos by Ermell Category:Bavaria photographs taken on 2021-08-08 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2021 Category:Limmersdorf Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from unmanned aerial vehicles Category:Quality images missing SDC inception Category:Quality images of Franconian Switzerland by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with DJI FC3411 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Limmersdorf Tanzlinde 2014 (4).JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Limmersdorf_Tanzlinde_2014_%284%29.JPG/960px-Limmersdorf_Tanzlinde_2014_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde_2014_(4).JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Benreis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Images by Benreis/Franken Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy10.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Tanzlinde_Limmersdorf_2022_xy10.jpg/960px-Tanzlinde_Limmersdorf_2022_xy10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy10.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Tanzlinde_Limmersdorf_2022_xy2.jpg/960px-Tanzlinde_Limmersdorf_2022_xy2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tanzlinde_Limmersdorf_2022_xy3.jpg/960px-Tanzlinde_Limmersdorf_2022_xy3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tanzlinde_Limmersdorf_2022_xy4.jpg/960px-Tanzlinde_Limmersdorf_2022_xy4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy5.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Tanzlinde_Limmersdorf_2022_xy5.jpg/960px-Tanzlinde_Limmersdorf_2022_xy5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy6.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tanzlinde_Limmersdorf_2022_xy6.jpg/960px-Tanzlinde_Limmersdorf_2022_xy6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy6.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy7.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Tanzlinde_Limmersdorf_2022_xy7.jpg/960px-Tanzlinde_Limmersdorf_2022_xy7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy7.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy8.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Tanzlinde_Limmersdorf_2022_xy8.jpg/960px-Tanzlinde_Limmersdorf_2022_xy8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    },
+    {
+     "title": "File:Tanzlinde Limmersdorf 2022 xy9.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Tanzlinde_Limmersdorf_2022_xy9.jpg/960px-Tanzlinde_Limmersdorf_2022_xy9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Limmersdorf_2022_xy9.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Tanzlinde (Limmersdorf)"
+    }
+   ]
+  },
+  "lnd_001": {
+   "city": "Linderhof",
+   "name": "Königslinde (Schlosspark Linderhof)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Königslinde Schloss Linderhof.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/K%C3%B6nigslinde_Schloss_Linderhof.jpg/960px-K%C3%B6nigslinde_Schloss_Linderhof.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigslinde_Schloss_Linderhof.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Llez",
+     "lat": 47.57022222,
+     "lng": 10.96084722,
+     "cats": "Category:CC-BY-SA-3.0 Category:Famous Tilia in Germany Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Königslinde Linderhof Category:Large images Category:License migration redundant Category:Schlosspark Linderhof Category:Self-published work Category:Tilia in Upper Bavaria"
+    },
+    {
+     "title": "File:Königslinde in Rimsting.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/K%C3%B6nigslinde_in_Rimsting.jpg/960px-K%C3%B6nigslinde_in_Rimsting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigslinde_in_Rimsting.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Wolle1958",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bavaria photographs taken on 2021-06-19 Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Earth 2022 Category:Images from Wiki Loves Earth 2022, DE-BY Category:Images from Wiki Loves Earth 2022, DE landscape Category:Images from Wiki Loves Earth 2022 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Ludwig II of Bavaria Category:Natural monuments in Landkreis Rosenheim Category:Nature of Rimsting Category:Self-published work Category:Uploaded via Campaign:wle-de-by"
+    },
+    {
+     "title": "File:Linderhof-1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Linderhof-1.jpg/960px-Linderhof-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Linderhof-1.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Softeis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-migrated Category:Exteriors of Schloss Linderhof Category:Featured pictures on Wikipedia, German Category:Files with Assessments template missing SDC Commons no value quality assessment Category:Flora fountain in Schlosspark Linderhof Category:GFDL Category:License migration completed Category:Outside stairs in Bavaria Category:Wasserparterre (Linderhof)"
+    },
+    {
+     "title": "File:Linderhof Palace 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Linderhof_Palace_01.jpg/960px-Linderhof_Palace_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Linderhof_Palace_01.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Llez",
+     "lat": 47.57149444,
+     "lng": 10.96082222,
+     "cats": "Category:Bavaria photographs taken on 2023-09-08 Category:CC-BY-SA-3.0 Category:Clouds and blue sky in Bavaria Category:Exteriors of Schloss Linderhof Category:Featured pictures by User:Llez Category:Featured pictures of Bavaria Category:Featured pictures on Wikimedia Commons Category:Files with coordinates missing SDC location of creation Category:Front views of buildings in Bavaria Category:GFDL Category:License migration redundant Category:Quality images Category:Quality images of Bavaria Category:Self-published work Category:September 2023 in Upper Bavaria"
+    },
+    {
+     "title": "File:Linderhof Palace 10.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Linderhof_Palace_10.jpg/960px-Linderhof_Palace_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Linderhof_Palace_10.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Llez",
+     "lat": 47.57149444,
+     "lng": 10.96082222,
+     "cats": "Category:CC-BY-SA-3.0 Category:Exterior sculptures of Schloss Linderhof Category:Featured pictures by User:Llez Category:Featured pictures of Bavaria Category:Featured pictures on Wikimedia Commons Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Philipp Perron Category:Quality images Category:Quality images of Bavaria Category:Retouched pictures Category:Self-published work Category:Statues in Upper Bavaria"
+    },
+    {
+     "title": "File:Schlosspark Linderhof - Königslinde 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Schlosspark_Linderhof_-_K%C3%B6nigslinde_01.jpg/960px-Schlosspark_Linderhof_-_K%C3%B6nigslinde_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_K%C3%B6nigslinde_01.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Llez",
+     "lat": 47.57073056,
+     "lng": 10.96070556,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Königslinde Linderhof Category:License migration redundant Category:Quality images Category:Quality images missing SDC depicts Category:Quality images of Bavaria Category:Self-published work"
+    },
+    {
+     "title": "File:Schlosspark Linderhof - Terrassengärten - Wasserparterre 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Schlosspark_Linderhof_-_Terrasseng%C3%A4rten_-_Wasserparterre_01.jpg/960px-Schlosspark_Linderhof_-_Terrasseng%C3%A4rten_-_Wasserparterre_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_Terrasseng%C3%A4rten_-_Wasserparterre_01.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Llez",
+     "lat": 47.57015556,
+     "lng": 10.96082222,
+     "cats": "Category:Bavaria photographs taken on 2025-09-08 Category:CC-BY-SA-3.0 Category:Clouds and blue sky in Upper Bavaria Category:Exteriors of Schloss Linderhof Category:Featured pictures on Wikimedia Commons Category:Files with Assessments template missing SDC Commons featured picture assessment Category:Files with coordinates missing SDC location of creation Category:Flora fountain in Schlosspark Linderhof Category:GFDL Category:Königslinde Linderhof Category:License migration redundant Category:Musikpavillon (Linderhof) Category:Nordparterre (Linderhof) Category:Quality images Category:Quality images missing SDC depicts Category:Quality images of Bavaria Category:Self-published work Category:Summer 2025 in Germany Category:Terrassengärten (Linderhof) Category:Wasserparterre (Linderhof)"
+    }
+   ]
+  },
+  "maa_015": {
+   "city": "Maastricht",
+   "name": "The Tulip Tree of Proosdijpark",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Proosdijpark Meerssen (Ph v Gulpen, 1846).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Proosdijpark_Meerssen_%28Ph_v_Gulpen%2C_1846%29.jpg/960px-Proosdijpark_Meerssen_%28Ph_v_Gulpen%2C_1846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Proosdijpark_Meerssen_(Ph_v_Gulpen,_1846).jpg",
+     "licence": "Public domain",
+     "author": "Philippe van Gulpen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-PD-Mark Category:Charles Clément Roemers Category:Demolished buildings in Limburg Category:Drawings in HCL (Maastricht) Category:History of Meerssen Category:History of Sint-Bartholomeuskerk (Meerssen) Category:PD-Art (PD-old-auto-expired) Category:PD-old-100-expired Category:Philippe van Gulpen Category:Proosdij Meerssen Category:Proosdijpark (Meerssen)"
+    }
+   ]
+  },
+  "mgs_001": {
+   "city": "Magescq",
+   "name": "The Oak of Nerthe (Chêne de Nerthe)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Chene de Nerthe-1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Chene_de_Nerthe-1.jpg/960px-Chene_de_Nerthe-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.765077,
+     "lng": -1.117633,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Chene_de_Nerthe-2.jpg/960px-Chene_de_Nerthe-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.765009,
+     "lng": -1.117244,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Chene_de_Nerthe-3.jpg/960px-Chene_de_Nerthe-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.76537,
+     "lng": -1.117089,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Chene_de_Nerthe-4.jpg/960px-Chene_de_Nerthe-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.765465,
+     "lng": -1.117071,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-5.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Chene_de_Nerthe-5.jpg/960px-Chene_de_Nerthe-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.76502,
+     "lng": -1.11729,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Le chêne de nerthe.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Le_ch%C3%AAne_de_nerthe.jpg/960px-Le_ch%C3%AAne_de_nerthe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Le_ch%C3%AAne_de_nerthe.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ribeiro Bruno",
+     "lat": 43.76512222,
+     "lng": -1.11741944,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2022-10-04 Category:Self-published work Category:Trees Category:Uploaded with Mobile/Android"
+    }
+   ]
+  },
+  "nap_018": {
+   "city": "Naples",
+   "name": "The Cedar of Lebanon of the Principessa Jolanda Gardens",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nap_019": {
+   "city": "Naples",
+   "name": "The Podocarpus of Piazza Cavour",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (seconda foto).jpg (Wikidata Q55741304)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28seconda_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(seconda_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "source": "wikidata/Q55741304"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (Terza foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28Terza_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(Terza_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (prima foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28prima_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(prima_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (quarta foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28quarta_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(quarta_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (seconda foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28seconda_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(seconda_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    }
+   ]
+  },
+  "nap_020": {
+   "city": "Naples",
+   "name": "The Eucalyptus of the Villa Comunale",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Eucalitto rostrato.jpg (Wikidata Q55741293)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Eucalitto_rostrato.jpg/960px-Eucalitto_rostrato.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Eucalitto_rostrato.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Sordelli",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Eucalyptus robusta Category:Files with coordinates missing SDC location of creation Category:Flora of Campania in May Category:Self-published work",
+     "source": "wikidata/Q55741293"
+    }
+   ]
+  },
+  "nap_021": {
+   "city": "Naples",
+   "name": "The Ombu of Via Manzoni",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nap_022": {
+   "city": "Naples",
+   "name": "The Blue Palm of the Botanical Garden",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nap_023": {
+   "city": "Naples",
+   "name": "The Magnolia of Capodimonte",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Chandelier of the nineteenth century in the Museo di Capodimonte (Napoli).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_%28Napoli%29.jpg/960px-Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_%28Napoli%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_(Napoli).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Livioandronico2013",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ceilings in Naples Category:Chandeliers in Italy Category:Collections of art in the National Museum of Capodimonte (Naples) Category:Featured pictures by Livioandronico2013 Category:Featured pictures of Naples Category:Featured pictures of museums Category:Featured pictures of objects Category:Featured pictures on Wikimedia Commons Category:Painted ceilings in Italy Category:Quality images Category:Quality images by Livioandronico2013 Category:Quality images missing SDC depicts Category:Quality images of Naples Category:Quality images of chandeliers Category:Self-published work"
+    },
+    {
+     "title": "File:Museo Capodimonte Napoli fontana del belvedere.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg/960px-Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me",
+     "lat": 40.8662,
+     "lng": 14.25032,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Dolphin fountains Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Moroder/Naples Category:Palace of Capodimonte - Facade Category:Photos by Moroder Category:Quality images Category:Quality images by Moroder Category:Quality images of Naples Category:Self-published work Category:Taken with Nikon D800"
+    }
+   ]
+  },
+  "nap_024": {
+   "city": "Naples",
+   "name": "The Elephant's Foot of the Botanical Garden",
    "checked": "2026-09-08",
    "sweep": 5,
    "candidates": []

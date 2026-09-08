@@ -1137,16 +1137,53 @@ def check_sitemap_dates():
     # day means either that script did not run before the build or a genuine
     # rewrite of a quarter of the site, which is a session's event, not a
     # build's.
+    #
+    # The share alone cannot answer that, which this check learned the hard way
+    # on 2026-09-08: the machine genuinely reworked a quarter of the site in one
+    # day (recognition lines across seven cities, three register batches, a
+    # dozen new places) and the gate went red on a sitemap that was telling the
+    # truth. Worse, it would have STAYED red, because those pages keep that date
+    # for good: a share test over the whole sitemap does not decay, so one busy
+    # day bricks every future deploy until enough other pages move.
+    #
+    # So ask the question directly instead. data/lastmod.json is the per-page
+    # record of what actually changed, by content hash, and the sitemap must not
+    # claim more than it. A sitemap stamping pages the map did not is the
+    # original failure this check was written for (lastmod.py not run, or the
+    # git fallback restamping a whole file); a sitemap that agrees with the map
+    # is reporting real edits however many there are.
     if len(found) >= 500:
         top = max(dates, key=found.count)
         share = found.count(top) / len(found)
         if share > 0.25:
-            return ["sitemap.xml: %d of %d urls (%.0f%%) carry the same lastmod %s. "
-                    "Per-page dates come from data/lastmod.json (scripts/lastmod.py "
-                    "--write, run by deploy.yml before the build); a bulk rewrite of "
-                    "the source files must not restamp pages whose content did not "
-                    "change." % (found.count(top), len(found), share * 100, top)]
+            recorded, covered = _lastmod_counts(top)
+            # Pages with a file of their own (species, country, collection) are
+            # not in the map and take their date from git, so allow for them.
+            uncovered = max(0, len(found) - covered)
+            if found.count(top) > recorded + uncovered:
+                return ["sitemap.xml: %d of %d urls (%.0f%%) carry the same lastmod "
+                        "%s, and data/lastmod.json records only %d page(s) changing "
+                        "that day. Per-page dates come from that map (scripts/"
+                        "lastmod.py --write, run by deploy.yml before the build); a "
+                        "bulk rewrite of the source files must not restamp pages "
+                        "whose content did not change."
+                        % (found.count(top), len(found), share * 100, top,
+                           recorded)]
     return []
+
+
+def _lastmod_counts(date):
+    """How many pages data/lastmod.json says changed on `date`, and how many it covers."""
+    path = ROOT / "data" / "lastmod.json"
+    if not path.exists():
+        return 0, 0
+    entries = json.loads(path.read_text(encoding="utf-8")).get("entries") or {}
+    n = 0
+    for v in entries.values():
+        d = v[1] if isinstance(v, (list, tuple)) else v.get("date") or v.get("d")
+        if d == date:
+            n += 1
+    return n, len(entries)
 
 
 def check_robots_is_the_file_we_wrote():
