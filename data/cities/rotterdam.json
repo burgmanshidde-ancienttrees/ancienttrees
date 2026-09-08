@@ -55,7 +55,9 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its age: this is the tree het Park was laid out around from 1852, the only one there older than the park itself. It stands in het Park, near the Euromast, on the safety schedule the city keeps for its biggest trees.",
+      "verify_notes": "2026-09-08: the story says the trunk 'measures 185 centimetres across', and that is ambiguous in a way that changes the tree. Across reads as diameter in English, which would make it 5.81 metres round; Dutch registers publish omtrek, girth, and 185 cm of girth would be an ordinary tree rather than one het Park was designed around in 1852. The national register carries no entry within 120 metres of our pin, so it cannot settle it here. girth_cm is deliberately left empty rather than filled with either reading, and the recognition line does not use the number."
     },
     {
       "id": "rot_002",
@@ -85,7 +87,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its place on Rotterdam's poetry trail, the spot where Breyten Breytenbach recited and called it the grave of the unknown poet. It stands on the corner of Mauritsweg and Westersingel."
     },
     {
       "id": "rot_003",
@@ -114,7 +117,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the one that was dug up and moved: it grew on the west side of the Westersingel until the 1960s. It stands on the east bank now, and came second in the 2021 national Tree of the Year vote."
     },
     {
       "id": "rot_004",
@@ -143,7 +147,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the decorative iron fence around it, which holds its own listing on the Dutch national heritage register. It stands on the Parklaan in the Scheepvaartkwartier, planted for Wilhelmina's coronation in 1898."
     },
     {
       "id": "rot_005",
@@ -172,7 +177,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the purple-red leaves and the trunk, 325 centimetres around. It stands at the centre of Koningin Emmaplein, beside the 1890 urn designed by Hendrik Berlage, with the square's fifteen townhouses around it."
     },
     {
       "id": "rot_006",

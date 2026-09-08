@@ -139,7 +139,8 @@
       "curation_status": "flagged",
       "notes": "Two published sources give the same 400-year figure and both very likely trace to the palace museum itself; no press, botanical or register source dates it independently. Published as the palace's claim rather than as established fact. Pin is the garden, not a surveyed trunk position.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the height, over twenty-five metres and clear above the palace roofline, and by the small dark leathery leaves, closer to an olive's than to a lobed oak leaf. It stands in the middle of the garden of box parterres."
     },
     {
       "id": "cdb_004",
@@ -176,7 +177,8 @@
         "label": "May, when it turns violet before the new leaves arrive",
         "kind": "flowers"
       },
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the trunk, three grown together into what looks like one tree, under a crown twenty metres across and nearly nineteen metres tall. It stands in the Jardines de Orive, the old walled orchard opened in 2004."
     },
     {
       "id": "cdb_005",
@@ -206,7 +208,8 @@
       },
       "curation_status": "flagged",
       "notes": "The municipal catalogue gives the dimensions and calls the age probably centenarian without dating it. Pin is the central plazoleta: this is the largest of a group of similar planes there, and no source distinguishes the individual by coordinate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the tallest of the big planes ringing the small central plaza, thirty-seven metres, its crown disappearing above the others when you stand underneath. It stands in the gardens Cordobans call Los Patos."
     },
     {
       "id": "cdb_006",
@@ -515,7 +518,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the big trunk under a small crown: somebody cut the top off, and the regrowth is thin and sparse, about nine and a half metres in all. It stands on the north side of the church of Santa Marina."
     },
     {
       "id": "cdb_018",
@@ -546,7 +550,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the flat umbrella crown of a stone pine, 3.26 metres round and twenty-five metres tall. It stands somewhere in the village of Santa Maria de Trassierra; nobody has published where, so you will be looking."
     }
   ],
   "oldest_tree_id": "cdb_001"
