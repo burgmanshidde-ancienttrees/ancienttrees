@@ -11,6 +11,42 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation 5) - Two new Lithuanian places from a stranded write pass: Vytogala and Pagramantis Regional Park
+
+Merged completed-but-uncommitted work from an earlier attempt in this
+window: a `_famous-lithuania` write pass (data/research/famouslithuania-verified.json,
+5 trees, full stories) that had been assembled into two new city files
+but never committed.
+
+- **Vytogala** (1 tree, single-famous-tree exception): the Vytogala
+  Independence Oaks, four oaks around a memorial stone on the birthplace
+  of Stasys Girenas, who flew the Lituanica across the Atlantic in 1933.
+  Three planted in 1928 for the tenth anniversary of Lithuanian
+  independence, the fourth a 1989 replacement. Two sources, girth
+  recorded for two of the four, no photo.
+- **Pagramantis Regional Park** (4 trees): the Gudlaukis oak (6.30m
+  round, hollow, ~600 years by local tradition), the Geniai oak (5.6 to
+  5.8m, undated, largest healthy oak in the register pair), the
+  Tamosaiciai cemetery oak (4.3m, undated) and the Andriejaiciai oak
+  (5m, 300+ years by local tradition, old crosses at its foot). All four
+  are Lithuanian state-protected natural heritage objects, listed
+  February 2016. No photos.
+
+All 5 trees carry age gaps left honest (local-tradition estimates
+stated as such, or left empty with a reader question) rather than
+invented, per the estimate-vs-invention rule. `preflight.py` (0
+problems), `astro build` (5078 pages) and `qa.py` (7903 pages) all
+clean. Also fixed a `lastmod.py` bug found earlier this session: the
+translated-tree hash was including fields (`how_to_recognise`,
+`curation_status`, `submitted_by`) that `TranslatedTreePage.astro`
+never reads, so an English-only edit to one of those fields restamped
+every language variant's sitemap entry though nothing translated had
+changed; re-derived `data/lastmod.json` against the fix.
+
+Released the `_famous-lithuania` claim. ~30 scattered single-oak leads
+from the same batch remain unresearched for a future pass. Nothing
+flagged for Hidde.
+
 ## 2026-09-08 (continuation 4) - _famous-slovakia refilled, one new place, one live page corrected
 
 Two more parallel verify passes, this time on `_famous-slovakia`. Batch A

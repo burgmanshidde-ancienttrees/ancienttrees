@@ -1,0 +1,158 @@
+{
+  "city": "Pagramantis Regional Park",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Pagramantis Regional Park covers 136 square kilometres of the Jura valley in western Lithuania, and its four registered oaks are spread across it rather than gathered in one wood. The one to plan around is the Gudlaukis oak, 6.30 metres round, hollow enough to step inside and still leafing out every year. The other three stand within eight kilometres of it: a healthy giant on the Jura bank at Geniai, a cemetery oak at Tamosaiciai, and an oak on the Akmena valley rim at Andriejaiciai with old crosses at its foot. The park's own cycling route links them.",
+  "meta_description": "Four registered oaks in Pagramantis Regional Park, Lithuania, from a hollow 6.30 metre giant at Gudlaukis to a cemetery oak at Tamosaiciai.",
+  "question_meta": "The Gudlaukis oak, over 600 years old by local tradition, is the oldest tree in Pagramantis Regional Park. Where it stands, and three more oaks.",
+  "question_answer": "The oldest tree in Pagramantis Regional Park is the Gudlaukis oak, put at more than 600 years by long local tradition, standing in Gudlaukis about two kilometres southeast of Pagramantis village. It is free, fenced with a wooden barrier, signposted, and set directly on the park's own cycling and driving route.",
+  "question_context": "That figure is a local estimate rather than a measurement. Both records of the tree, the Lithuanian encyclopaedia entry and the national tourism portal, say over 600 years, and neither cites a ring count or a growth-rate calculation, so the number has been repeated rather than established. What has been measured is the trunk: 6.30 metres round at chest height, almost entirely hollow, with a cavity a person can step through, under a crown that stops at 16 metres because lightning has taken it off more than once. Lithuania made it a state-protected natural heritage object in February 2016. Nothing else in the park is dated at all. The Geniai oak, 2.4 kilometres away and 5.6 to 5.8 metres round, is the largest healthy oak here and carries no age. The Tamosaiciai cemetery oak, 4.3 metres round and 23 metres tall, has none either. The Andriejaiciai oak on the Akmena valley rim is credited with over 300 years, again an estimate nobody has checked against rings. If you know of a dated figure for any of them, tell us.",
+  "oldest_tree_id": "pgm_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Pagramantis Regional Park?",
+      "a": "The Gudlaukis oak, put at over 600 years by local tradition. It is 6.30 metres round and hollow enough to step inside through a cavity, and it still comes into leaf every year."
+    },
+    {
+      "q": "Are the park's oaks free to visit?",
+      "a": "Yes, all four. The Gudlaukis oak grows on privately owned land but is fenced, signposted and set on the park's own tourist route; the other three stand on open ground with information boards. No ticket and no gate at any of them."
+    },
+    {
+      "q": "Can you see all four in one day?",
+      "a": "Yes, with a car or a bicycle. They spread over about eight kilometres inside the park, from Gudlaukis in the southeast to Andriejaiciai on the Akmena valley rim, and the park's marked cycling route links them."
+    },
+    {
+      "q": "How do I get there without a car?",
+      "a": "With difficulty. There is no public transport to any of the four. The park visitor centre is at Ringiai village near Pagramantis, and every tree here is reached by gravel road or by bicycle from there."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pgm_001",
+      "name": "The Gudlaukis Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 600 years, by long local tradition",
+      "age_min": 400,
+      "age_max": 700,
+      "girth_cm": 630,
+      "height_m": 16,
+      "location": {
+        "address": "Gudlaukis village, Mazonu seniunija, Taurages district municipality, inside Pagramantis Regional Park, about 2km southeast of Pagramantis",
+        "latitude": 55.348233,
+        "longitude": 22.251091,
+        "neighbourhood": "Pagramantis Regional Park"
+      },
+      "story": "You can step through a hole in the side of this oak and stand inside it. The trunk is 6.30 metres round and almost entirely hollow, and it still comes into leaf every year.\n\nWhat it does not have is height. It stops at 16 metres, short for that bulk, and local tradition blames lightning, repeatedly, for taking the crown off. The same tradition gives the tree more than 600 years. Nobody has counted its rings or worked the figure out from a growth rate, so treat 600 as the village's number rather than a surveyor's. If even half of it holds, this oak was standing through the partitions of the Polish-Lithuanian state, both world wars, and fifty years of Soviet rule.\n\nLithuania made it a state-protected natural heritage object in February 2016, by ministerial order, in the same document that covers the Geniai oak a few kilometres west. The land around it is privately owned and the tree is treated as everybody's: a wooden barrier, an information sign, arrows pointing the way in, and a position directly on the regional park's own cycling and driving route. Both records of it call it one of the most visited natural sights in the park, which for a tree with no crown left is a decent second career.",
+      "how_to_recognise": "You can recognise it by the trunk, 6.30 metres round and hollow enough to step inside through a cavity, under a broken crown only 16 metres tall. It stands behind a wooden barrier with an information sign, in Gudlaukis.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Gudlaukio_%C4%85%C5%BEuolas",
+        "https://www.pamatyklietuvoje.lt/details/gudlaukio-azuolas/788"
+      ],
+      "access": "Grows on privately owned land but is treated as fully public: fenced with a wooden barrier, an information sign, waymarked arrows, and lies directly on the park's own cycling and driving tourist route. No fee or restriction mentioned by either source.",
+      "transport": "No public transit; reached by a good gravel road inside Pagramantis Regional Park, about 2km southeast of the Pagramantis visitor centre in Ringiai village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pgm_002",
+      "name": "The Geniai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented; comparably-sized Lithuanian oaks run several centuries old",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 580,
+      "location": {
+        "address": "Geniai village, Mazonu seniunija, Taurages district municipality, about 150m from the right bank of the Jura river, inside Pagramantis Regional Park",
+        "latitude": 55.351425,
+        "longitude": 22.209287,
+        "neighbourhood": "Pagramantis Regional Park"
+      },
+      "story": "Two and a half kilometres from a hollow, lightning-wrecked oak stands the version that got away with it: the same species, the same park, nearly the same waistline, and no damage at all.\n\nThe Geniai oak measures 5.8 metres round in one survey and 5.6 in the other, and reaches 26 metres in the first and 25 in the second. Nobody has reconciled the two, which is what happens when a tree is measured twice, years apart, by people who had no reason to compare notes. The Lithuanian record puts it among the largest oaks in the country, and both records agree it is in vigorous health, which at that girth is the rarer half of the sentence.\n\nIt grows about 150 metres back from the right bank of the Jura, reached by a gravel road and then a stretch of meadow, with an information board and arrows to bring you in. Lithuania listed it as a state-protected natural heritage object in February 2016, in the same ministerial order that covers the Gudlaukis oak.\n\nWhat it does not carry is a date or a legend. No ring count, no planting record, nobody's grandfather stopping here. Oaks this thick in Lithuania generally run to several centuries, but that has never been established for this one. If you know of an age with a source behind it, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.6 to 5.8 metres round under an undamaged crown some 25 metres tall. It stands in meadow about 150 metres from the right bank of the Jura, with an information board at its foot.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Geni%C5%B3_%C4%85%C5%BEuolas",
+        "https://www.pamatyklietuvoje.lt/details/geniu-azuolas/791"
+      ],
+      "access": "No ownership or restriction issue mentioned by either source; marked with an information board and directional arrows, reached by a good gravel road then a stretch through meadow, inside the regional park.",
+      "transport": "No public transit; inside Pagramantis Regional Park, about 2.5km (straight line) southwest of the Pagramantis visitor centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pgm_003",
+      "name": "The Tamosaiciai Cemetery Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 430,
+      "height_m": 23,
+      "location": {
+        "address": "Old cemetery grounds, Tamosaiciai village, Mazonu seniunija, Taurages district municipality, right bank of the Kernusupis stream, inside Pagramantis Regional Park",
+        "latitude": 55.361026,
+        "longitude": 22.164502,
+        "neighbourhood": "Pagramantis Regional Park"
+      },
+      "story": "The thickest oak in Tamosaiciai is not the Tamosaiciai oak. The name belongs to a tree in the old village cemetery, 4.3 metres round and 23 metres tall, which both records of it describe as in complete health, and which both call the real one.\n\nThe bigger tree stands out in a field a short walk away and measures 5.8 metres or 6.15 depending on which survey you take. It is also in trouble: storm damage, a large hollow, no information sign, and no place in the register of protected objects. Size is not the whole argument, and in Tamosaiciai the village and the register have both come down on the side of the healthy tree.\n\nSo the cemetery oak carries the name. It grows among the graves on the right bank of the Kernusupis stream, about a kilometre southeast of the Balskai dam, inside Pagramantis Regional Park. Burial ground tends to be left alone for centuries at a time, which is why so many of the oldest trees in this part of Europe are standing in it.\n\nNobody has dated this one. There is no ring count and no planting record, and the two sources that measured it agree on the girth and the height to the centimetre while saying nothing at all about its age. If you know of a figure with a source behind it, tell us.",
+      "how_to_recognise": "You can recognise it by its position among the graves in the old cemetery, 4.3 metres round and 23 metres tall in full health. The thicker oak nearby stands out in a field, hollow and storm damaged, with no sign on it.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Tamo%C5%A1ai%C4%8Di%C5%B3_%C4%85%C5%BEuolas",
+        "https://www.pamatyklietuvoje.lt/details/tamosaiciu-azuolas/798"
+      ],
+      "access": "Old village cemetery grounds, open; no gate, fee or restriction mentioned by either source. A second, thicker 'field oak' stands nearby but is in poor health (storm damage, large hollow) and, per lt.wikipedia, carries no information sign and is not in the official register; it is recorded here as a lead, not part of this entry.",
+      "transport": "No public transit; inside Pagramantis Regional Park, about 1km southeast of the Balskai dam.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pgm_004",
+      "name": "The Andriejaiciai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 300 years, undocumented exact age",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 500,
+      "height_m": 26,
+      "location": {
+        "address": "Azuolo gatve, Andriejaiciai village, Silale district municipality, on the rim of the Akmena river valley, inside Pagramantis Regional Park",
+        "latitude": 55.417135,
+        "longitude": 22.238819,
+        "neighbourhood": "Pagramantis Regional Park"
+      },
+      "story": "By local telling, the oak that stood here before this one had a hollow big enough to shelter five calves, and Vytautas the Great stopped his retinue under it for a meal on his way through. Both sources repeat the story. Neither offers any evidence for it, and Vytautas died in 1430, so whatever the legend belongs to, it is not the trunk standing here now: both records put this tree at over 300 years, which is an estimate nobody has checked against rings.\n\nWhat can be measured is agreed on. Five metres round at chest height, give or take ten centimetres, and 26 metres tall, which makes it a tall oak rather than a squat one. It grows on the rim of the Akmena river valley, at the end of a village street called Azuolo gatve, which is Lithuanian for Oak Street.\n\nOld crosses still stand underneath it, left from a small cemetery that once occupied the ground and is otherwise gone. Silale district listed the tree as a protected natural heritage object in 2006.\n\nRead the 300 years as a floor rather than a figure. Nobody has cored it, and the two records that give an age both give the same round number without saying where it came from. If somebody has a dated measurement, we would like to hear it.",
+      "how_to_recognise": "You can recognise it by the old crosses standing underneath it and by the trunk, about 5 metres round beneath a 26 metre crown. It stands on the rim of the Akmena valley at the end of Azuolo gatve.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Andriejai%C4%8Di%C5%B3_%C4%85%C5%BEuolas",
+        "https://www.pamatyklietuvoje.lt/details/andriejaiciu-azuolas/211"
+      ],
+      "access": "No ownership or restriction issue mentioned by either source; the tourism listing offers direct driving/navigation directions.",
+      "transport": "No public transit; inside Pagramantis Regional Park, on the Akmena valley rim in Andriejaiciai village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

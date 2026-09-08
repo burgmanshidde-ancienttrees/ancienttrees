@@ -1,0 +1,62 @@
+{
+  "city": "Vytogala",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Vytogala is a village in the Silale district with one thing to stand in front of: four oaks around a memorial stone, on the ground where Stasys Girenas was born in 1893. Girenas and Steponas Darius flew the Lituanica out of New York in 1933 and died in a crash short of Lithuania, and that flight is still a national story here. Three of the oaks were planted in 1928 for the tenth anniversary of independence, the fourth in 1989. They stand at the roadside, free, about nine kilometres from Silale.",
+  "meta_description": "Four oaks around a memorial stone in Vytogala, on the ground where the transatlantic pilot Stasys Girenas was born in 1893.",
+  "question_meta": "Vytogala's oldest trees are three oaks planted in 1928 for the tenth anniversary of Lithuanian independence, at Stasys Girenas's birthplace.",
+  "question_answer": "The oldest trees in Vytogala are the Independence Oaks, three of which were planted in 1928 to mark the tenth anniversary of Lithuanian independence and are now approaching a century. They stand beside road 4504 in the middle of the village, around a memorial stone on the birthplace of the pilot Stasys Girenas, and are free to visit at any time.",
+  "question_context": "There are four oaks in the group and they are not the same age. Three went in in 1928, beside a wooden cross raised for the tenth anniversary of the Lithuanian state. A fourth was planted in 1989 to replace one of the originals that had died, which makes it sixty-one years younger than its neighbours. The Soviet authorities removed the cross, a memorial stone took its place in 1969, and the cross was restored in 1990. The ground matters more here than the timber. Stasys Girenas was born on this spot in 1893, and in July 1933 he and Steponas Darius flew the Lituanica out of New York and came down in a forest near Soldin, a few hundred kilometres short of Kaunas. Only two of the four oaks have been measured, at 1.55 and 1.22 metres round, which is ordinary for the species. Silale district listed the group as a protected natural heritage object in 2006. Nobody has published a girth for the other two, and if you have measured them, tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vytogala?",
+      "a": "The Independence Oaks, three of which were planted in 1928 and are now approaching a hundred years old. The fourth in the group is a 1989 replacement for an original that had died."
+    },
+    {
+      "q": "Why are these oaks here?",
+      "a": "Three were planted in 1928 for the tenth anniversary of Lithuanian independence, beside a cross standing on the birthplace of Stasys Girenas, the pilot who flew the Lituanica across the Atlantic in 1933. A memorial stone replaced the cross in 1969, and the cross was restored in 1990."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes. They stand at the roadside in the village, in front of the community buildings, with no gate and no fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By road only. Vytogala sits on road 4504 between Skaudvile, Upyna and Balsiai, about nine kilometres from Silale, and no public transport reaches the village. A memorial museum at the Girenas birthplace stands nearby in the same village."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vyt_001",
+      "name": "The Vytogala Independence Oaks",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "about 100 years (three of the four); the fourth is younger",
+      "age_min": 90,
+      "age_max": 100,
+      "girth_cm": 155,
+      "location": {
+        "address": "Beside road no. 4504 (Skaudvile-Upyna-Balsiai), Vytogala village, Upynos seniunija, Silale district municipality",
+        "latitude": 55.4575,
+        "longitude": 22.37361,
+        "neighbourhood": "Vytogala"
+      },
+      "story": "Five years after three of these oaks went into the ground, the man born on this spot flew a single-engine plane out of New York and never arrived. Stasys Girenas and Steponas Darius crossed the Atlantic in the Lituanica in July 1933 and came down in a forest near Soldin, a few hundred kilometres short of Kaunas. In Lithuanian memory that flight sits roughly where Lindbergh's sits in American memory. Girenas was born here in 1893, on this roadside in Vytogala.\n\nThe trees went in in 1928, for the tenth anniversary of Lithuanian independence, beside a wooden cross. The Soviet authorities took the cross down. A memorial stone replaced it in 1969, the cross came back in 1990, and the oaks have stood around both ever since. Only three of the four are originals. The fourth was planted in 1989 to replace one that had died, so this is not an even-aged row but three trees approaching a century and one sixty-one years younger.\n\nNobody comes for the timber. The two anyone has measured are 1.55 and 1.22 metres round, ordinary for an oak. Silale district put the group under protection in 2006 with a zone of 300 square metres, which is about the size of the thing: four trees, one stone, and the story Lithuania tells about the summer of 1933.",
+      "how_to_recognise": "You can recognise them by the memorial stone they stand around, three oaks of matching size and a visibly younger fourth. They stand together beside road 4504, in front of the village community buildings.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Vytogalos_Nepriklausomyb%C4%97s_%C4%85%C5%BEuolai",
+        "https://www.pamatyklietuvoje.lt/details/stasio-gireno-gimtine/2419",
+        "https://www.vietoves.lt/gamtos_paveldas/Vytogalos_%C4%85%C5%BEuolai/%C5%A0ilal%C4%97s_rajono_savivaldyb%C4%97"
+      ],
+      "access": "Free, roadside in the village, in front of community buildings; no gate or fee mentioned by any source",
+      "transport": "No public transit nearby; nearest town Silale is about 9 km away. Rural, reached by road only.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
