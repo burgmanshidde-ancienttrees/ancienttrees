@@ -1,0 +1,64 @@
+{
+  "city": "Aizuwakamatsu",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Aizuwakamatsu maps one tree, and it is a big one: the Great Zelkova of Takase, 10.45 metres round at chest height and 12.55 at the base, which puts it among the six or seven thickest zelkovas in Japan. It has been a National Natural Monument since 1941. It stands on the site where Uesugi Kagekatsu started building Kanayama Castle in 1600 and never finished, six kilometres out of town down a farm road, free and open, with a boardwalk built around it. Published alone here because the tree itself is the destination.",
+  "meta_description": "The Great Zelkova of Takase, Aizuwakamatsu: 10.45 metres round, a National Natural Monument since 1941, free on an abandoned castle site.",
+  "question_meta": "Aizuwakamatsu's oldest and only mapped tree is the Great Zelkova of Takase, put at about 500 years and 10.45 metres round.",
+  "question_answer": "Aizuwakamatsu's only mapped tree, and its oldest, is the Great Zelkova of Takase, put at about 500 years old and measuring 10.45 metres round at chest height. It stands at Takase in Kanayama, about six kilometres from Aizuwakamatsu Station, on the site of the abandoned Kanayama Castle.",
+  "question_context": "The 500 years is an estimate rather than a ring count, and both records of the tree give the same round figure. What supports it is a date from somewhere else entirely: Uesugi Kagekatsu began building Kanayama Castle on this ground in 1600, and the zelkova was already a large tree when the work started. The castle was abandoned. The tree was not, and it has been a National Natural Monument since 27 January 1941. The measurements are agreed on to the centimetre by the city's own heritage record and by a specialist giant-tree survey: 10.45 metres round at chest height, 12.55 metres at the base, 24.64 metres tall. That girth places it sixth or seventh among Japanese zelkovas. It has not had an easy few decades. Both sources note repeated large-branch fractures and cracking in the trunk, and a 2018 visit found the wounds under treatment against fungal decay. A wooden boardwalk and handrail now ring the tree so nobody stands on its roots.",
+  "hero_tree_id": "azw_001",
+  "oldest_tree_id": "azw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Aizuwakamatsu?",
+      "a": "The Great Zelkova of Takase, put at about 500 years. The figure is an estimate, but it is supported by the castle works begun on this site in 1600, when the tree was already large."
+    },
+    {
+      "q": "How big is it?",
+      "a": "10.45 metres round at chest height, 12.55 metres at the base and 24.64 metres tall, which makes it the sixth or seventh thickest zelkova in Japan."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open ground with a wooden boardwalk and handrail built around it, so you can walk right up but not onto the root plate. No fee and no gate."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car. There is no station nearby and no dedicated car park: the approach is a narrow farm road off National Route 118, and Aizuwakamatsu Station is roughly six kilometres away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "azw_001",
+      "name": "The Great Zelkova of Takase",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "roughly 500 years (already a large tree before 1600)",
+      "age_min": 450,
+      "age_max": 550,
+      "girth_cm": 1045,
+      "height_m": 24.64,
+      "location": {
+        "address": "Takase, Kanayama-machi, Kozashi-cho, Aizuwakamatsu City, Fukushima Prefecture (site of the abandoned Kanayama Castle)",
+        "latitude": 37.513778,
+        "longitude": 139.895917,
+        "neighbourhood": "Kanayama, Aizuwakamatsu"
+      },
+      "story": "Uesugi Kagekatsu began building a castle on this ground in 1600 and never finished it. The zelkova was already a large tree when the diggers arrived.\n\nIt is a considerably larger one now: 10.45 metres round at chest height, 12.55 at the base, 24.64 metres tall. Those figures come from Aizuwakamatsu's own heritage record and from a specialist survey of Japan's giant trees, and they agree to the centimetre, which is rarer than it sounds. That girth puts it sixth or seventh among all the zelkovas in the country. The age, about 500 years, is an estimate nobody has checked against rings, though the abandoned castle beside it sets a floor under the figure. If it holds, this tree was standing here through the whole life of the Aizu domain and through the Boshin War that ended it.\n\nAge has cost it. Both records note large branches breaking off, repeatedly, and cracking through the trunk; a visit in 2018 found the wounds under active treatment against fungal decay. Both still describe the form as vigorous.\n\nThe protection is old too. It became a National Natural Monument on 27 January 1941. A wooden boardwalk and handrail now ring it, close enough to look up into the crown and far enough out to keep feet off the roots.",
+      "how_to_recognise": "You can recognise it by the trunk, 10.45 metres round at chest height and 12.55 at the base, ringed by a wooden boardwalk and handrail. It stands alone on the old Kanayama Castle ground at Takase.",
+      "verified_sources": [
+        "https://www.city.aizuwakamatsu.fukushima.jp/docs/2012110900031/",
+        "https://journeytotrees.com/2022/04/28/kyoju186/"
+      ],
+      "access": "Free, publicly accessible with a wooden boardwalk and handrail built around it so visitors cannot approach the trunk directly (protective measure, not a barrier to viewing). Reached via a narrow farm road off National Route 118; no dedicated car park.",
+      "transport": "No nearby train station; car access via National Route 118 (Wakamatsu West Bypass) then local farm roads. Aizuwakamatsu Station is roughly 6km away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
