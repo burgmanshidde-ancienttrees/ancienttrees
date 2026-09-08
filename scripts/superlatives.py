@@ -39,10 +39,20 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # "the oldest tree in Lisbon", "the largest plane in Europe", "the tallest
 # tree on this site". Deliberately narrow: a superlative with a noun and a
 # scope, which is the shape that can collide.
+#
+# The scope group's `[A-Z]` is meant to require a PROPER NOUN, so a lowercase
+# phrase like "the city of" never reads as a scope. Compiling the whole
+# pattern `re.I` (needed so "Oldest" at a sentence start still matches the
+# superlative word) silently defeated that too, because `re.I` makes `[A-Z]`
+# match lowercase letters as well. The result (found 2026-09-08, REVIEW.md):
+# "the largest tree in the city of Fukuoka" and "...in the city of Stockholm"
+# both truncated their scope to "the city of" and registered as the same
+# claim about two different cities. `(?-i:...)` turns case-sensitivity back
+# on for just that group, regardless of the flag on the rest of the pattern.
 CLAIM = re.compile(
     r"\b(?:the\s+)?(oldest|largest|biggest|tallest|thickest|widest|broadest|"
     r"heaviest|rarest|first)\s+([a-z][a-z-]{2,20}(?:\s+[a-z][a-z-]{2,20})?)\s+"
-    r"(?:in|of|on)\s+((?:the\s+)?[A-Z][\w'-]*(?:\s+[A-Z][\w'-]*)?)",
+    r"(?:in|of|on)\s+((?-i:(?:the\s+)?[A-Z][\w'-]*(?:\s+[A-Z][\w'-]*)?))",
     re.I,
 )
 # Words that are not the thing being ranked, so "the oldest of the three" and
@@ -54,6 +64,19 @@ STOP = {"the", "them", "these", "those", "his", "her", "its", "world", "war",
 # right, and flagging them would train a reader of this report to ignore it.
 NOT_A_CROWN = re.compile("\\bspecies\\b|\\bgenus\\b|\\bfamily\\b|\\bspecimen of\\b|"
                           "\\bhybrid\\b|\\bhybrids\\b", re.I)
+# "The SECOND largest tree in Washington" is not a claim to the crown, it is a
+# claim to be beaten by it, and the regex above has no way to see the ordinal
+# because it starts matching at the superlative word itself. Found 2026-09-08
+# alongside the case bug: wdc_007 and wdc_011 both say "second largest tree in
+# Washington" and both registered as claiming the same crown as wdc_003's
+# unqualified "The largest tree in Washington".
+RANK_QUALIFIER = re.compile(r"\b(second|third|fourth|fifth|sixth|seventh|"
+                             r"eighth|ninth|tenth|another|next)\s+$", re.I)
+# "Tree of the Year" is a competition's proper name, not a ranking of trees.
+# "Brno ran its first Tree of the Year contest" and "Slovakia crowned its
+# first Tree of the Year" both parse as (first, tree, the Year), a false
+# collision between two different countries' inaugural contests.
+AWARD_NAME_SCOPE = {"the year", "year"}
 
 
 def claims():
@@ -72,7 +95,10 @@ def claims():
                     # as a species fact rather than a crown BEFORE "first",
                     # outside the matched span itself.
                     window = text[max(0, m.start() - 40):m.end()]
-                    if noun.split()[0] in STOP or NOT_A_CROWN.search(window):
+                    before = text[max(0, m.start() - 15):m.start()]
+                    if (noun.split()[0] in STOP or NOT_A_CROWN.search(window)
+                            or RANK_QUALIFIER.search(before)
+                            or scope in AWARD_NAME_SCOPE):
                         continue
                     out.append({"city": city, "id": tree.get("id"),
                                 "name": tree.get("name"), "sup": sup,
