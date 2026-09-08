@@ -3,17 +3,6 @@
   "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. Verified and written 2026-09-07: Bilu Sacred Tree passed the single-tree-destination test and shipped as a new place, bilu (blu_001), a Taiwan fir over 3,000 years old on the Central Cross-Island Highway; not confused with the original Alishan Sacred Tree (a different, unlisted tree), which was cut down in 1998 after storm damage and is not a candidate here.",
   "leads": [
     {
-      "name": "Prayer trees in Taiwan",
-      "lat": 24.824367,
-      "lng": 121.24385,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2008_YODEX_Day1_2011_IDA_Taipei_Congress_Wish_Tree.jpg",
-        "https://commons.wikimedia.org/wiki/File:8_DSC04155Emerald_Sacred_Tree.jpg",
-        "https://commons.wikimedia.org/wiki/File:Prayer_tree_before_the_Yuanbao_Temple,_Taichung.jpg"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "Alishan Sianglin Sacred Tree",
       "lat": 23.517217,
       "lng": 120.808191,
@@ -95,6 +84,19 @@
         "https://commons.wikimedia.org/wiki/File:Xitou_Giant_Tree.JPG"
       ],
       "status": "lead"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Prayer trees in Taiwan",
+      "lat": 24.824367,
+      "lng": 121.24385,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2008_YODEX_Day1_2011_IDA_Taipei_Congress_Wish_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:8_DSC04155Emerald_Sacred_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Prayer_tree_before_the_Yuanbao_Temple,_Taichung.jpg"
+      ],
+      "reason": "Commons category name, not one tree: its photos show a wish tree at a Taipei convention center, an unlabeled site, and a prayer tree at Yuanbao Temple in Taichung, unrelated sites scattered across the island. Fails the one-collectible-point rule (whole-country category, not an avenue or ensemble with one place to stand). Checked 2026-09-08, no verify pass dispatched."
     }
   ]
 }
