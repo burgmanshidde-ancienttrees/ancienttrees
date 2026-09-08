@@ -5983,6 +5983,15 @@
         "note": "Final batch clearing recognise.py --stuck to 0 (these 9 were hidden behind the prior batch display cap). The --stuck worst-first pool is now fully empty; remaining recognition-line work moves to the broader --gaps pool per CLAUDE.md rung 7.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "photo viewing pass: Alishan, Bilu, Chishang, Baldenhain, Bargischow",
+        "kind": "photo",
+        "tokens": 25000,
+        "trees": 4,
+        "note": "Free API sweep (photo_hunt.py, 40 photo-less trees, worst-first) plus a viewing pass on 5 of them: 15 candidates fetched and looked at, 4 approved, 11 rejected with reasons recorded. Caught a wrong-tree candidate at Alishan (fallen original vs the living Sianglin tree we map) and a fully empty Bilu candidate set (road sign, flowerpot, mountainside, none of the tree).",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
