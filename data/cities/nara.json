@@ -3,7 +3,7 @@
   "country": "Japan",
   "status": "published",
   "intro": "Japan's first capital kept its trees the way it kept its temples, as part of the religion. Nara Park is not a park in the European sense but the shared grounds of Kasuga Taisha and Todai-ji, where deer have grazed for centuries and cutting a tree needed a reason. The result is a city whose oldest living things stand in the open with rope tied around them: a camphor that has watched a thousand years of festivals, a cedar drawn as a sapling in 1309, and a hollow trunk with a bamboo growing out of the top.",
-  "meta_description": "Nara's oldest tree is a camphor of a thousand years, its trunk twelve metres round. That, a cedar drawn as a sapling in 1309, and eight more.",
+  "meta_description": "Nara's oldest tree is a camphor of a thousand years, twelve metres round at the base. That, a cedar drawn as a sapling in 1309, and twelve more.",
   "question_meta": "Nara's oldest tree is the thousand-year camphor of Naratsuhiko Shrine, twelve metres round at the base and a protected natural monument since 1951.",
   "question_answer": "The oldest tree in Nara is the giant camphor behind the main hall of Naratsuhiko Shrine on the old Narazaka pass road, recorded as over a thousand years old and protected as a Nara Prefecture Natural Monument since 1951. It measures 12.8 metres around at ground level and roughly thirty metres tall, forking into two great limbs about seven metres up. It is free to visit.",
   "question_context": "The age is traditional rather than measured, as it is for almost every great camphor in Japan, but the size supports it and the shrine's own founding legend puts it at twelve centuries. What makes this tree worth the fifteen minute bus ride is what happens beneath it. On the evening of the eighth of October each year the shrine performs the Okina-mai, a masked dance recognised as an Important Intangible Folk Cultural Property and one of the oldest surviving ancestors of Noh theatre, and it is danced in the camphor's shade. The tree stands on Narazaka, the pass that carried travellers into the capital from the north, so anyone arriving in Nara from Kyoto in the eighth century walked past it. The only serious rival for the title is the great cedar at Kasuga Taisha, which sources date at somewhere between eight hundred and a thousand years and which has the better documentary evidence.",
@@ -63,7 +63,7 @@
       "location_precision": "confirmed",
       "girth_cm": 800.0,
       "height_m": 30,
-      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for クスノキ at 奈良豆比古神社. Survey figures, so the tree has grown since."
+      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for クスノキ at 奈良豆比古神社. Survey figures, so the tree has grown since. The two girth figures are both right and measure different things: 12.8 m is at the ground, as the story says, and the 800 cm in girth_cm is the Environment Ministry's survey at 130 cm, which is the standard the rankings compare on."
     },
     {
       "id": "nra_002",
@@ -207,7 +207,10 @@
       },
       "curation_status": "flagged",
       "notes": "Two different camphors stand on this meadow and local sources use overlapping names: the Environment Ministry places the three Meiji memorial trees (4.8m, 26m, about 140 years) here, while another source places a separate hollow camphor of 7.07m girth at the south end. The confirmed coordinate and the measurements match the Meiji triplets, which is what this entry describes. Photo licence and framing recorded but not yet viewed at full size, so it stays unapproved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 480.0,
+      "height_m": 26,
+      "verify_notes": "Girth 480 cm and height 26 m from the Environment Ministry's own Nara Park giant-tree course guide, which names this entry クスノキ三兄弟, the three camphor brothers, on the north side of Tobihino, and dates them to a commemorative planting at the spot where the Meiji emperor sat during the 1908 army manoeuvres. NOT applied: a separate ministry database record at 春日野町飛火野 reads 1110 cm with an age band of 99年以下. It is not attached here because this entry is an ensemble and hanging a single-trunk figure on an ensemble is a bridge claim; which trunk carries 1110 cm is an open question for a verify pass."
     },
     {
       "id": "nra_006",
@@ -226,8 +229,7 @@
       "verified_sources": [
         "https://www.city.nara.lg.jp/site/bunkazai/8348.html",
         "https://kyoju.biodic.go.jp/files/course/001/guide_narakouen_ja.pdf",
-        "https://www.city.nara.lg.jp/site/bunkazai/3337.html",
-        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=47050&branch_number=1"
+        "https://www.city.nara.lg.jp/site/bunkazai/3337.html"
       ],
       "access": "Kasuga Taisha precinct; outer grounds free, check on arrival which zone this tree falls in",
       "transport": "About 25 min walk from Kintetsu Nara, or bus to Kasuga Taisha Honden",
@@ -240,9 +242,9 @@
       "curation_status": "flagged",
       "notes": "The city's cultural-properties page dates the grove to roughly 1,000 years while the Environment Ministry gives this individual 500 or more; both are reported. Position is sourced as 'north of the Treasure Hall' with no published coordinate, so the pin is the Treasure Hall area and precision is approximate.",
       "location_precision": "approximate",
-      "girth_cm": 342.0,
-      "height_m": 18,
-      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for ナギ at 春日大社, surveyed 2000年5月18日. Survey figures, so the tree has grown since."
+      "girth_cm": 330.0,
+      "height_m": 13,
+      "verify_notes": "CORRECTED 2026-09-08 within the hour: a first pass took 342 cm and 18 m from the giant-tree database on the reasoning that it was the only ナギ recorded at 春日大社. Kasuga Taisha holds an entire nagi grove, 春日大社ナギ樹林, which is itself a natural monument, so 'the only one in the database' is not 'the only one there'. The ministry's own Nara Park course guide gives 330 cm and 13 m for the tree north of the treasure hall at over 500 years, which is this entry and agrees with our age. Those are the figures used."
     },
     {
       "id": "nra_007",
@@ -320,9 +322,9 @@
         "kind": "flowers"
       },
       "location_precision": "approximate",
-      "girth_cm": 425.0,
-      "height_m": 15,
-      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for センダン at 東大寺, surveyed 2000年6月21日. Survey figures, so the tree has grown since."
+      "girth_cm": 450.0,
+      "height_m": 20,
+      "verify_notes": "Girth 450 cm and height 20 m from the ministry's Nara Park course guide, which places the tree 100 m east of the East Pagoda ruins, and that is where our pin already stood. The giant-tree database's 2000 survey of the same tree reads 425 cm and 15 m, so it has put on roughly 25 cm of girth since."
     },
     {
       "id": "nra_009",
@@ -352,7 +354,9 @@
       },
       "curation_status": "flagged",
       "notes": "The Environment Ministry's park guide is the single substantive source for this individual, giving girth, height and an estimated 250 years. Position is sourced by description rather than coordinate, so the pin is approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 354.0,
+      "height_m": 28
     },
     {
       "id": "nra_010",
@@ -388,6 +392,135 @@
       "notes": "Sources agree the original Roben-sugi was destroyed by the Second Muroto Typhoon on 16 September 1961 and that today's tree is a replanting; they disagree on whether it is the third or the fourth generation, which is stated in the story rather than resolved. Pin is shrine-level: sources place the tree below Nigatsu-do's slope immediately north of Kojo Shrine, and the coordinate is mapped from that description, not from a register or a survey.",
       "why_go": "An eagle carried off a baby and left it in a cedar on this slope, and that baby grew up to found Todai-ji. The tree standing here now is a replanting from the 1960s, so what you walk to is the place rather than old timber, with the stone monument beside it recording the legend.",
       "how_to_recognise": "A young, narrow cedar standing on its own in the open court below Nigatsu-do, branches down to the ground and a stone monument at its foot. The thick old cedars further along the slope are not it."
+    },
+    {
+      "id": "nra_015",
+      "name": "The Kaya of Nigatsu-do",
+      "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+      "age_estimate": "200 to 299 years, from the national survey's age band",
+      "age_min": 200,
+      "age_max": 299,
+      "location": {
+        "address": "Nigatsu-do, Todai-ji outer precinct, Zoshi-cho, Nara",
+        "latitude": 34.68927,
+        "longitude": 135.84427,
+        "neighbourhood": "Nigatsu-do, Todai-ji precinct"
+      },
+      "story": "Nara's most famous tree at Nigatsu-do is a cedar of about sixty years, a replanting after the typhoon of 1961. Four metres round and two to three centuries old, this one is neither famous nor young, and almost nobody looks at it.\n\nIt is a kaya, Torreya nucifera, which is not a common thing to find at this size anywhere. The species grows so slowly that its timber is the material Japanese go and shogi boards are cut from, and a single board can take a tree's lifetime to earn. Four hundred and ten centimetres of girth on a kaya is therefore a great deal more time than the same figure on a cedar or a camphor. The national survey put it at twenty-seven metres and in good health, and recorded that it can be picked out from a distance, which on this slope means from the path below rather than from among the buildings.\n\nNigatsu-do is the hall whose balcony gives the view back over Nara, and where the Omizutori fire and water rites run every March. The tree stands in that company without a plaque or a legend to its name.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=47076&branch_number=1"
+      ],
+      "access": "Free, part of Todai-ji's outer precinct, open in daylight",
+      "transport": "About 20 min walk from Kintetsu Nara, uphill past Sangatsu-do",
+      "girth_cm": 410.0,
+      "height_m": 27,
+      "how_to_recognise": "A broad, dark, blunt-needled conifer, not a cedar: kaya needles are flat, stiff and sharp at the tip, and the crown spreads rather than tapers. It is the only Torreya the national survey records at Nigatsu-do.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced on the Environment Ministry's giant-tree database (巨樹・巨木林データベース, PDL 1.0, report 47076), which measured it in the 1988 to 2000 national survey and gives no coordinate. The pin is Nigatsu-do itself, not the trunk. Species is unique to this facility in that survey, which is what makes the identification safe; the exact stand needs a visit."
+    },
+    {
+      "id": "nra_016",
+      "name": "The Keyaki of Tamukeyama Hachimangu",
+      "species": "Japanese Zelkova (Zelkova serrata)",
+      "age_estimate": "200 to 299 years, from the national survey's age band",
+      "age_min": 200,
+      "age_max": 299,
+      "location": {
+        "address": "Tamukeyama Hachimangu, Zoshi-cho, Nara",
+        "latitude": 34.68797,
+        "longitude": 135.84468,
+        "neighbourhood": "Tamukeyama, Todai-ji slope"
+      },
+      "story": "Twenty-eight metres of zelkova on a shrine slope that most visitors cross without stopping, on their way between the Great Buddha and Nigatsu-do.\n\nKeyaki is the tree Japanese carpentry is built out of. Temple pillars, drum shells, the great beams of a hall: when a Japanese building needed timber that would hold a load for three hundred years, this was the species it was cut from. The irony of a four-metre keyaki standing in a temple precinct is that a tree this good was usually felled long before it got here. This one was measured at four hundred and five centimetres round in the national giant-tree survey, in good health, and it is the only zelkova the survey records at this shrine.\n\nTamukeyama Hachimangu sits on the rise immediately south of Nigatsu-do, and is the shrine that was brought to Nara in the eighth century to watch over the casting of the Great Buddha. In autumn the slope turns, and a zelkova is one of the reasons: the species goes copper rather than yellow.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=47079&branch_number=1"
+      ],
+      "access": "Free, open shrine grounds",
+      "transport": "About 20 min walk from Kintetsu Nara, on the path between Todai-ji and Nigatsu-do",
+      "girth_cm": 405.0,
+      "height_m": 28,
+      "how_to_recognise": "The vase shape gives it away: a keyaki splits into a fan of near-equal limbs low down and spreads outward, unlike the single leading trunk of the cedars around it. The only zelkova the national survey records at this shrine.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced on the Environment Ministry's giant-tree database (巨樹・巨木林データベース, PDL 1.0, report 47079). No coordinate exists in that source; the pin is the shrine, not the trunk. The autumn colour is a species trait rather than a recorded observation of this tree."
+    },
+    {
+      "id": "nra_017",
+      "name": "The Great Camphor of Wakamiya",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "over 300 years, from the national survey's age band",
+      "age_min": 300,
+      "age_max": 500,
+      "location": {
+        "address": "Kasuga Taisha Wakamiya Shrine, Kasugano-cho, Nara",
+        "latitude": 34.680262,
+        "longitude": 135.848781,
+        "neighbourhood": "Wakamiya, Kasuga Taisha"
+      },
+      "story": "Five hundred and seventy-eight centimetres round and thirty metres tall, which makes this the largest tree on the Kasuga side of Nara Park that is not inside the paid precinct.\n\nCamphor is the giant of warm Japan, and this is what the species does when nobody cuts it: a heavy, low, wide trunk carrying a crown the size of a small building, evergreen, and aromatic enough that a broken leaf smells of the stuff medicine cabinets used to smell of. The national survey put it at over three hundred years and recorded part of the crown as dying back, which is normal in a camphor of this age and not a sign of a tree in trouble.\n\nHow big it is exactly is an open question, and this page would rather say so than pick a number. The ministry's survey measured five hundred and seventy-eight centimetres at chest height and thirty metres tall. OpenStreetMap, which also carries the tree and marks it as a natural monument, records twelve and a half metres round and twenty-four tall. Both cannot be a measurement of the same thing. If you stand in front of it with a tape, you will know more than either of us.\n\nIt stands at Wakamiya, the shrine at the end of the stone lantern avenue south of Kasuga Taisha's main hall. Every December the On-matsuri procession comes here, a festival that has run without a break since 1136, and for one night the deity is carried out to a temporary shrine on the grass. The tree stands beside all of it and is on nobody's route map.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=47078&branch_number=1",
+        "https://www.openstreetmap.org/node/13037030797"
+      ],
+      "access": "Free, open shrine grounds; the Kasuga Taisha inner precinct charges but Wakamiya does not",
+      "transport": "About 30 min walk from Kintetsu Nara, or bus to Kasuga Taisha Honden and 10 min on foot",
+      "girth_cm": 578.0,
+      "height_m": 30,
+      "how_to_recognise": "The only camphor of this size at Wakamiya: a single massive low trunk with a wide evergreen crown, unmistakable among the cedars and the stone lanterns. OpenStreetMap marks it as a natural monument at this exact point.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Girth, height, age band and vitality from the Environment Ministry's giant-tree database (巨樹・巨木林データベース, PDL 1.0, report 47078), which gives no coordinate. The pin is an OpenStreetMap node 41 m from the shrine point, tagged Cinnamomum camphora and denotation=natural_monument, which corroborates species, existence and position independently. UNRESOLVED: that node also carries circumference=12.46 and height=24 against the ministry's 578 cm and 30 m. The likeliest reconciliation is that the two measured at different heights, since the ministry measures girth at 130 cm and records this as a single stem rather than a multi-stem, but nobody here has seen the trunk. The page says so rather than picking a number quietly."
+    },
+    {
+      "id": "nra_018",
+      "name": "The Enoki of Wakamiya",
+      "species": "Chinese Hackberry (Celtis sinensis)",
+      "age_estimate": "200 to 299 years, from the national survey's age band",
+      "age_min": 200,
+      "age_max": 299,
+      "location": {
+        "address": "Kasuga Taisha Wakamiya Shrine, Kasugano-cho, Nara",
+        "latitude": 34.68018,
+        "longitude": 135.84922,
+        "neighbourhood": "Wakamiya, Kasuga Taisha"
+      },
+      "story": "Five metres round and only seventeen metres tall, which is the shape a hackberry takes when it has had room and time: squat, heavy in the trunk, and spread out sideways rather than up.\n\nEnoki is a tree Japan planted deliberately at the roadside, on the earth mounds that marked each ri along the old highways, because it grows fast, casts a wide shade and is easy to see from a distance. Todai-ji has one of those milestone trees at its West Gate site. This one is not that: it stands on shrine ground at Wakamiya, and nothing recorded says why it is here. What the national survey does say is that it is over five hundred centimetres in girth, two to three centuries old, and in good health, which for a species most people walk past without naming is a considerable tree.\n\nIt shares the ground with the great camphor a few steps away, so the two are one stop rather than two, at the quiet end of the stone lantern avenue below Kasuga Taisha.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=47073&branch_number=1"
+      ],
+      "access": "Free, open shrine grounds",
+      "transport": "About 30 min walk from Kintetsu Nara, or bus to Kasuga Taisha Honden and 10 min on foot",
+      "girth_cm": 502.0,
+      "height_m": 17,
+      "how_to_recognise": "Squat and wide rather than tall, with a heavy short trunk and small toothed leaves, standing near the great camphor. The only hackberry the national survey records at Wakamiya.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced on the Environment Ministry's giant-tree database (巨樹・巨木林データベース, PDL 1.0, report 47073). No coordinate in the source; the pin is the shrine, not the trunk. The milestone-planting habit is a general fact about the species and about Todai-ji's West Gate tree, explicitly not a claim about this one."
     }
   ]
 }
