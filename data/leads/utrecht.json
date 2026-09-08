@@ -199,7 +199,7 @@
       "reason": "Checked this pass via kanokaartutrecht.nl (stop 16, fetched 2026-08-24): a small, vital old common pear (Pyrus communis) beside the canal, still fruiting and flowering white each spring, height 11m, girth 182cm. Gemeente-owned, visitable ja. An unusual story (a fruit tree old enough to be monumental) but a modest, minor specimen; good candidate for a follow-up pass if the city wants a lighter/curiosity entry rather than a giant. COORDINATE CORRECTED 2026-09-08: this lead carried 52.08586,5.12903, an exact copy of utr_018's coordinate (register nr 1678123, a different tree 750m away, on the Servaasbolwerk). The register's own row for nr 1678119 gives 52.086488,5.118036, matching its stated address at the Geertebolwerk water near Zilverstraat; corrected.",
       "species": "Pear (Pyrus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "status": "RESOLVED 2026-09-08, delivered as utr_034 (The Geertebolwerk Pear) in data/research/utrecht-pear-verified.json"
+      "status": "RESOLVED: this tree was already published as utr_031 (The Old Pear of the Geertebolwerk), same LRMB register nr 1678119. Its species (European Pear/Pyrus communis) and measurements (girth_cm 182, height_m 11) were folded into utr_031 on 2026-09-08; this lead is a duplicate, not a separate tree."
     },
     {
       "register_nr": 1678122,
