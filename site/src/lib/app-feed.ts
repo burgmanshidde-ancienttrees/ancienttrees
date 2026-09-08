@@ -80,6 +80,12 @@ export interface FeedTree {
    * trying to work out which one we mean. Null on most trees; a run adds them
    * a city at a time. */
   how_to_recognise: string | null;
+  /** Why somebody should walk to THIS trunk, one sentence. Travels because it
+   * is an ANSWER rather than a rule (CLAUDE.md, 2026-08-25): the website
+   * decides it once and both surfaces read it, which is the half of the
+   * both-surfaces rule that has never drifted. Null on most trees, where the
+   * age or the girth is the reason and no sentence is needed. */
+  why_go: string | null;
   url: string;
   /** The photograph, with the two sizes a client actually paints and the
    * licence question already answered.
@@ -133,6 +139,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         })(),
         story: t.story ?? null,
         how_to_recognise: (t as any).how_to_recognise ?? null,
+        why_go: (t as any).why_go ?? null,
         url: `/${city.id}/${slugify(t.name)}`,
         photo: p?.url
           ? {

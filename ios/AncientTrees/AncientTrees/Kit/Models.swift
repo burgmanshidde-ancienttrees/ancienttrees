@@ -158,6 +158,12 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// every use of it is conditional.
     let recogniseRaw: String?
     public var howToRecognise: String { recogniseRaw ?? "" }
+    /// Why somebody should walk to this one, one sentence, decided on the
+    /// website and read here (2026-09-08). Optional in both directions: a tree
+    /// whose age or girth is already the reason carries none, and an older
+    /// feed carries none at all, so every use is conditional.
+    let whyGoRaw: String?
+    public var whyGo: String { whyGoRaw ?? "" }
     public let url: String
     public let precision: Precision
     public let photo: Photo?
@@ -172,6 +178,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case ageMax = "age_max"
         case access, story, url, precision, photo, peak
         case recogniseRaw = "how_to_recognise"
+        case whyGoRaw = "why_go"
         case paidEntryRaw = "paid_entry"
         case citySlug = "city_slug"
         case bestTime = "best_time"
