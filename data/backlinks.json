@@ -1,0 +1,180 @@
+{
+  "note": "Pages we watch for a link back to us. See scripts/backlinks.py for why the referrer table cannot answer this. Add one with --add.",
+  "watch": [
+    {
+      "url": "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/",
+      "who": "getLISBON",
+      "why": "They offered a mutual link 2026-09-04; EN article",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://getlisbon.com/pt/descobrindo-pt/arvores-de-interesse-publico-em-lisboa/",
+      "who": "getLISBON",
+      "why": "PT article",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.baumkunde.de/baumregister/1136-gerichtslinde_in_scheessel/",
+      "who": "baumkunde.de (DE tree database)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.baumkunde.de/baumregister/1262-eiche_in_boetersheim/",
+      "who": "baumkunde.de (DE tree database)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.baumkunde.de/baumregister/1309-tausendjaehrige_eiche_in_bad_blumau/",
+      "who": "baumkunde.de (DE tree database)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.baumkunde.de/baumregister/1391-tanzlinde_in_baldenhain/",
+      "who": "baumkunde.de (DE tree database)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://bomenbieb.nl/bijzondere-bomen/adam-en-eva-stoutenburg/",
+      "who": "Bomenbieb, the Bomenstichting tree library",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://bomenbieb.nl/bijzondere-bomen/adoptie-eik-amerongen/",
+      "who": "Bomenbieb, the Bomenstichting tree library",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://bomenbieb.nl/bijzondere-bomen/bruine-beuk-groenesteeg/",
+      "who": "Bomenbieb, the Bomenstichting tree library",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://bomenbieb.nl/bijzondere-bomen/dorpslinde-nuenen/",
+      "who": "Bomenbieb, the Bomenstichting tree library",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "http://www.prazskestromy.cz/stromy/pamatne-stromy/1043-2/",
+      "who": "prazskestromy.cz, Prague memorial trees",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "http://www.prazskestromy.cz/stromy/pamatne-stromy/37-platan-javorolisty-v-parku-jezerka/",
+      "who": "prazskestromy.cz, Prague memorial trees",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "http://www.prazskestromy.cz/stromy/pamatne-stromy/39-dub-letni-v-ulici-u-malvazinky/",
+      "who": "prazskestromy.cz, Prague memorial trees",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.prazskestromy.cz/stromy/pamatne-stromy/15-platan-javorolisty-na-karlove-namesti/",
+      "who": "prazskestromy.cz, Prague memorial trees",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://jardinessinfronteras.com/2018/05/31/las-especies-de-ficus-existentes-enlos-jardines-de-sevilla/",
+      "who": "Jardines sin Fronteras (ES)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://jardinessinfronteras.com/2018/12/14/vicisitudes-de-la-alameda-de-hercules-a-traves-de-sus-arboles/",
+      "who": "Jardines sin Fronteras (ES)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://jardinessinfronteras.com/2018/12/19/ceiba-chodatii-el-palo-borracho-blanco-en-malaga/",
+      "who": "Jardines sin Fronteras (ES)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://jardinessinfronteras.com/2019/01/15/el-metrosidero-de-cadiz-propuesto-como-arbol-europeo-del-ano/",
+      "who": "Jardines sin Fronteras (ES)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.woodwideweb.be/fr/atlas/12.html",
+      "who": "woodwideweb.be (BE)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.woodwideweb.be/fr/atlas/120.html",
+      "who": "woodwideweb.be (BE)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.woodwideweb.be/fr/atlas/154.html",
+      "who": "woodwideweb.be (BE)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.woodwideweb.be/fr/atlas/36.html",
+      "who": "woodwideweb.be (BE)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
+      "who": "100 Mil Arvores (PT)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.100milarvores.pt/2017/12/arvores-do-campo-alegre-as-que-nos-fazem-sorrir.html",
+      "who": "100 Mil Arvores (PT)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    },
+    {
+      "url": "https://www.100milarvores.pt/2021/10/jardins-do-palacio-de-cristal-regresse-a-expo-de-1865.html",
+      "who": "100 Mil Arvores (PT)",
+      "why": "We cite this page; a reciprocal link would sit here",
+      "checked": "2026-09-08"
+    }
+  ],
+  "seen": {
+    "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/": {
+      "who": "getLISBON",
+      "target": "https://ancienttrees.app/lisbon",
+      "rel": "noreferrer noopener",
+      "followed": true,
+      "anchor": "Ancient Trees",
+      "count": 1,
+      "first_seen": "2026-09-08",
+      "last_seen": "2026-09-08",
+      "state": "live"
+    },
+    "https://getlisbon.com/pt/descobrindo-pt/arvores-de-interesse-publico-em-lisboa/": {
+      "who": "getLISBON",
+      "target": "https://ancienttrees.app/pt/lisbon",
+      "rel": "noreferrer noopener",
+      "followed": true,
+      "anchor": "Ancient Trees",
+      "count": 1,
+      "first_seen": "2026-09-08",
+      "last_seen": "2026-09-08",
+      "state": "live"
+    }
+  },
+  "checked": "2026-09-08"
+}

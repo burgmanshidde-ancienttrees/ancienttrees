@@ -150,7 +150,7 @@
         "longitude": 18.113735,
         "neighbourhood": "Sodra Djurgarden"
       },
-      "story": "Sweden once made cutting down an oak a capital offense, because the navy needed every mature oak trunk for warship hulls and the crown claimed ownership of the species outright, a protection that stayed in force in some form until the 1830s. This oak, growing today just north of the painter Prince Eugen's old home at Waldemarsudde, is one of the direct beneficiaries: at 300 to 400 years old, it predates that legal protection's repeal by a comfortable margin and is Stockholm's largest tree by volume, 45 cubic metres of wood by a 2006 measurement, with a trunk 9.2 metres around and a canopy 21 metres tall. It originally grew as three separate trunks fused near the base, the kind of multi-stemmed form old oaks take when a young tree loses its main leader and several side branches compete to replace it. Prince Eugen, the so-called Painter Prince, bought Waldemarsudde in 1899 and would have known this oak as an already-ancient fixture of the grounds decades before his own paintings made the estate famous; the tree outranks his tenure there by centuries in one direction and, since his death in 1947, has outlasted him by generations in the other. It remains the benchmark against which Djurgarden's roughly 3,000 other protected oaks are measured, the single largest specimen in a park that holds more ancient oaks than almost anywhere else in Northern Europe.",
+      "story": "Sweden once made cutting down an oak a capital offense, because the navy needed every mature trunk for warship hulls and the crown claimed the species outright, a protection that stayed in force in some form until the 1830s. This oak, just north of the painter Prince Eugen's old home at Waldemarsudde, is one of the direct beneficiaries: at 300 to 400 years old it predates the repeal comfortably, and it is the largest tree in the city of Stockholm, 45 cubic metres by a 2006 measurement, with a trunk 9.2 metres around and a canopy 21 metres tall.\n\nRead that volume as the size of the shape rather than a quantity of wood. The trunk is completely hollow, which is what an oak of this age is supposed to be: heartwood is dead weight and a veteran lets it go, living on in a cylinder a few centimetres thick. Stockholm county holds bigger oaks. The city does not.\n\nIt grew as three trunks fused near the base, the form old oaks take when a young tree loses its leader and several side branches compete to replace it. Prince Eugen bought Waldemarsudde in 1899 and knew this oak as an already-ancient fixture decades before his paintings made the estate famous. It outranks his tenure by centuries in one direction and, since his death in 1947, has outlasted him in the other. Djurgarden's roughly 3,000 other protected oaks are still measured against it.",
       "verified_sources": [
         "https://royaldjurgarden.se/en/attractions/the-prince-eugen-oak/",
         "https://sv.wikipedia.org/wiki/K%C3%A4nda_tr%C3%A4d_i_Stockholm"
@@ -175,7 +175,42 @@
         ],
         "label": "October to November: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 920,
+      "height_m": 21,
+      "verify_notes": "2026-09-07, Daniel Daggfeldt (veteran tree specialist, Stockholm), answering our outreach mail: the oak is the largest in the CITY of Stockholm but not in the county, and it is completely hollow, so the 45 cubic metre figure is not a quantity of wood. Story corrected on both counts; he found nothing else wrong on the page. Girth and height lifted out of the prose into fields at the same time."
+    },
+    {
+      "id": "sto_005",
+      "name": "Valkasken",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "over 300 years",
+      "age_min": 290,
+      "age_max": 350,
+      "location": {
+        "address": "Skutskepparvagen, Langholmen, 117 33 Stockholm",
+        "latitude": 59.32038,
+        "longitude": 18.032699,
+        "neighbourhood": "Langholmen"
+      },
+      "story": "Carl Linnaeus wrote this ash down in the 1740s and it is still standing. It had already turned up in a record of the Langholmen spinhouse garden in 1733, which gives it a paper trail of nearly three centuries, something almost no other tree in Stockholm can show.\n\nThe name is about its skin. Valkasken means the burl ash, for the lumps and swellings running up both of its trunks. Nobody has established what causes them. The likeliest explanation is a genetic mutation the tree has carried its whole life, which would put the thing it is famous for there before Linnaeus ever saw it. Stockholm has a few other burl ashes, in Humlegarden and in Ivar Los park, and none of them wears it like this one.\n\nIt grows double-stemmed beside Skutskepparvagen on Langholmen's southern shore, next to the Heleneborg boat club's winter storage yard, on an island that was a prison and a spinning house long before it was a park. Rutger Sernander listed it as natural monument 288 in his 1935 survey and the county's 2016 review counts it among 42 ashes worth protecting, but a 2003 proposal to give it actual legal protection went nowhere when the city stopped designating monuments. It stands on its reputation and nothing else.",
+      "why_go": "Linnaeus wrote this one down in the 1740s and it is still there. Both trunks are covered in burls the size of a fist, and nobody has worked out why.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Valkasken",
+        "https://www.lansstyrelsen.se/download/18.1b1d393819324610c37489c1/1732516171196/S%C3%A4rskilt%20skyddsv%C3%A4rda%20tr%C3%A4d%20i%20Stockholms%20l%C3%A4n.pdf"
+      ],
+      "access": "Free. Langholmen is a public island park, open at all hours; the tree stands beside Skutskepparvagen on the southern shore, next to the Heleneborg boat club's winter storage yard.",
+      "transport": "Hornstull metro, then about 10 minutes on foot across Langholmsbron.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "Two trunks from one base, both of them lumpy with burls; the other ashes along this shore are smooth.",
+      "verify_notes": "Sent in 2026-09-07 by Daniel Daggfeldt, a veteran tree specialist in Stockholm, answering our outreach mail via the Swedish Tree Association. Pin confirmed: his own map link gives 59.320380, 18.032699 and Swedish Wikipedia gives 59.320331, 18.032708, five metres apart. Girth and height not recorded anywhere found; flagged for that. He says his colleague, tree photographer Tina Axelsson, has photographed this tree."
     }
   ]
 }
