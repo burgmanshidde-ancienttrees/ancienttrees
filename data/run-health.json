@@ -8136,6 +8136,112 @@
    ],
    "trees": 9,
    "logged": true
+  },
+  {
+   "started": "2026-09-08T08:17:49+00:00",
+   "date": "2026-09-08",
+   "run_id": "34196390057",
+   "minutes": 92.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 455,
+   "denials": 55,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(jobs), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(set), Bash(until), Bash(wait), Bash(wc)",
+   "ended": "success",
+   "tokens": 16717286,
+   "claims_held": [
+    "_famous-japan"
+   ],
+   "commits": 23,
+   "cities_touched": 21,
+   "cities": [
+    {
+     "city": "pagramantis-regional-park",
+     "trees": 4
+    },
+    {
+     "city": "bracon",
+     "trees": 1
+    },
+    {
+     "city": "chatenay-malabry",
+     "trees": 1
+    },
+    {
+     "city": "feternes",
+     "trees": 1
+    },
+    {
+     "city": "jauze",
+     "trees": 1
+    },
+    {
+     "city": "komjatice",
+     "trees": 1
+    },
+    {
+     "city": "magescq",
+     "trees": 1
+    },
+    {
+     "city": "nicorps",
+     "trees": 1
+    },
+    {
+     "city": "pesselieres",
+     "trees": 1
+    },
+    {
+     "city": "reaumont",
+     "trees": 1
+    },
+    {
+     "city": "vytogala",
+     "trees": 1
+    },
+    {
+     "city": "aberford",
+     "trees": 0
+    },
+    {
+     "city": "aguas-de-moura",
+     "trees": 0
+    },
+    {
+     "city": "albersdorf",
+     "trees": 0
+    },
+    {
+     "city": "allouville-bellefosse",
+     "trees": 0
+    },
+    {
+     "city": "altrier",
+     "trees": 0
+    },
+    {
+     "city": "bosaca",
+     "trees": 0
+    },
+    {
+     "city": "brussels",
+     "trees": 0
+    },
+    {
+     "city": "lisbon",
+     "trees": 0
+    },
+    {
+     "city": "seville",
+     "trees": 0
+    },
+    {
+     "city": "singapore",
+     "trees": 0
+    }
+   ],
+   "trees": 14,
+   "logged": true
   }
  ],
  "schedule_changes": [
