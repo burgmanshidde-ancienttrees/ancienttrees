@@ -271,7 +271,8 @@
       "curation_status": "flagged",
       "notes": "Existence and front-garden location corroborated by the garden's own dedicated blog page; regional monumental-tree listing mentioned in general coverage of Bologna's botanical garden. No individual planting date or precise dimensions found for this specimen. Pin tightened 2026-07-27: the only Ginkgo biloba tree node OpenStreetMap maps near the garden sits right at its southern boundary; kept `approximate` since it isn't tied to an individual accession record from the garden's own collection. 2026-07-29: three iNaturalist Ginkgo biloba observations found within about 100m of the pin, but two are CC-BY-NC and one has no license set at all (null, meaning all-rights-reserved by default); genuine dead end on license grounds.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the fan-shaped leaves and a trunk 80 centimetres across. It dominates the garden's front section along Via Irnerio."
     },
     {
       "id": "bol_008",
@@ -363,7 +364,8 @@
       },
       "curation_status": "flagged",
       "notes": "General presence of camphor and mixed evergreen planting in the park's western section corroborated across two independent tourism-authority sources; neither names one specific individual camphor tree with its own measurements, so this entry describes the species' documented presence in the park rather than a singled-out specimen, the honest framing used elsewhere on this site for similar cases. 2026-07-29: checked the full upload history of Aneta Malinowska, the Wiki Loves Monuments photographer whose dedicated Bologna monumental-tree series supplied photos for bol_001, bol_002, bol_005 and bol_006 this same session; no camphor or San Michele in Bosco park file in her uploads. Genuine dead end for now.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the dense glossy canopy that holds its colour through the winter. It stands in the park's western section, the informal woodland of oaks and lindens rather than the dark conifer slope."
     },
     {
       "id": "bol_011",
@@ -398,7 +400,8 @@
       "height_m": 32.5,
       "verify_notes": "Height 32.5 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "girth_cm": 420
+      "girth_cm": 420,
+      "how_to_recognise": "You can recognise it by its height, 32 metres, over a trunk more than four metres round. It stands close to the ginkgo in the botanical garden's front section."
     },
     {
       "id": "bol_012",

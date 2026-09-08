@@ -965,6 +965,49 @@ def check_every_tree_names_a_source():
     return out
 
 
+def check_a_tree_can_be_told_apart():
+    """Nothing ships with a rough pin, no photograph and no recognition line.
+
+    Hidde, 2026-09-08, on being shown that 206 published trees carried none of
+    the three: "upload geen bomen meer die zo weinig hebben."
+
+    The three are not interchangeable and that is the point of counting them
+    together. A photograph lets somebody compare what is in front of them. A
+    confirmed pin lets them walk to the trunk. A recognition line tells them
+    which one it is when the other two cannot. A tree holding none of them is a
+    page that names a park and leaves the visitor to guess, which is the promise
+    this project cannot break: they are already standing there when they find
+    out.
+
+    The 206 were written off in one pass the day he said it, so the backlog is
+    zero and this can be a FAIL rather than a NOTE. It is also the cheapest of
+    the three to satisfy by a wide margin: the line is RESTATEMENT of what the
+    entry already holds, measured at about 1.5k tokens against 12k for a story,
+    and `python3 scripts/recognise.py --brief <city> --gaps` prints the material
+    for exactly these trees. BRIEF_WRITING.md has the rule for the sentence.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            if (tree.get("how_to_recognise") or "").strip():
+                continue
+            photo = tree.get("photo") or {}
+            if photo.get("url") and photo.get("status") != "held":
+                continue
+            if tree.get("location_precision") == "confirmed":
+                continue
+            out.append("%s: %s (%s) has no recognition line, no photograph and a "
+                       "pin that says it is approximate, so a reader standing there "
+                       "has nothing to tell it from its neighbours. Write "
+                       "how_to_recognise (see scripts/recognise.py --brief %s "
+                       "--gaps), or leave the tree in data/leads/."
+                       % (path, tree.get("id"), tree.get("name"),
+                          os.path.basename(path)[:-5]))
+    return out
+
+
 def check_a_tree_says_why_to_go():
     """Can we say, in one line, why somebody should walk to this one?
 
@@ -1797,6 +1840,7 @@ def main():
                 + check_contributor_photos_are_traceable()
                 + check_every_tree_names_a_source()
                 + check_a_tree_says_why_to_go()
+                + check_a_tree_can_be_told_apart()
                 + check_story_length()
                 + check_one_common_name_per_species())
     files = sorted(glob.glob("data/cities/*.json"))

@@ -232,7 +232,8 @@
       },
       "height_m": 15.5,
       "verify_notes": "Height 15.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 350
+      "girth_cm": 350,
+      "how_to_recognise": "You are looking for the avenues rather than one tree, holm oaks that stay dark and leafy all year. The two the register lists, 3.50 and 3.42 metres round, stand about 70 metres apart along them."
     },
     {
       "id": "pgi_007",
@@ -395,7 +396,8 @@
       "notes": "Promoted from data/leads/perugia.json on 2026-08-31. Single-sourced: the national register is the only document that names it, hence flagged and hence no age. Isolated, 4km from the nearest other Perugia register candidate. Pin is the register coordinate, unverified on the ground, so approximate.",
       "height_m": 20.5,
       "verify_notes": "Girth and height from the italy-masaf register (sheet 13/G478/PG/10), matched on our own pin (0 m away). No independent second source found for this specific tree.",
-      "girth_cm": 427
+      "girth_cm": 427,
+      "how_to_recognise": "You can recognise it as the one big oak standing alone on the hillside road, 4.27 metres round, holding its dead brown leaves through the winter instead of dropping them."
     },
     {
       "id": "pgi_012",
@@ -427,7 +429,8 @@
       "notes": "Promoted from data/leads/perugia.json on 2026-08-31. Single-sourced: the national register is the only document that names it, hence flagged and hence no age. The thickest trunk of any Perugia register tree (547cm, checked against all 38 comune entries and all published pgi_ trees). Isolated, 4km from the nearest other Perugia register candidate. Pin is the register coordinate, unverified on the ground, so approximate.",
       "height_m": 30.5,
       "verify_notes": "Girth and height from the italy-masaf register (sheet 09/G478/PG/10), matched on our own pin (0 m away). No independent second source found for this specific tree.",
-      "girth_cm": 547
+      "girth_cm": 547,
+      "how_to_recognise": "You can recognise it as a cypress grown singly to 5.47 metres round, the thickest trunk in Perugia's register, where the species is normally planted in rows. It stands on Via Giacomo Puccini."
     }
   ]
 }

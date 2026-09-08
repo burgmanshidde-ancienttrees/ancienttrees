@@ -58,10 +58,13 @@
       "curation_status": "ai_generated",
       "location_precision": "approximate",
       "best_time": {
-        "months": [12],
+        "months": [
+          12
+        ],
         "kind": "flowers",
         "label": "December, when the winter flowering comes and the Christmas sprig is cut"
-      }
+      },
+      "how_to_recognise": "You can recognise it by when it flowers, around midwinter as well as in spring, when nothing else in the churchyard is doing anything at all. It stands in the churchyard of St John the Baptist on the High Street."
     }
   ]
 }

@@ -242,7 +242,8 @@
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You are looking for a wood rather than one tree: the evergreen yew and laurel behind the formal cypress avenue, running down to the sixteenth century grotto."
     },
     {
       "id": "ver_007",
@@ -271,7 +272,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: the 2015 monumental-tree nomination request and general description come from one dedicated local-press article; no independent second source found despite a genuine search. Kept per the project's standard for single-sourced claims where the underlying facts (a private garden tree visible from a public street, a real petition) are plausible and specific rather than vague. Access honestly marked as street-visible only, not enterable, since the tree stands on private grounds. No usable photo found. 2026-07-29: Commons keyword search and an iNaturalist radius query both came back empty; genuine dead end, expected for a specimen on private grounds with no public garden visitors to photograph it.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the tree dominating the corner of Via Volta and Via Cipolla, standing over the Liberty villa it belongs to. Look from the street corner, because the grounds are private."
     },
     {
       "id": "ver_008",
@@ -309,7 +311,8 @@
         ],
         "label": "June into July, when the mulberries ripen",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the large mulberry of the old estate collection, standing among hornbeam, beech, tulip tree, ginkgo and cypress on the hillside."
     }
   ],
   "oldest_tree_id": "ver_001"

@@ -56,7 +56,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the tag, 34-21-1 in the library's own arboretum catalogue, on a trunk 2.11 metres round under a crown about 60 feet up. It stands on the library lawn."
     },
     {
       "id": "kcm_002",
@@ -89,10 +90,14 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "best_time": {
-        "months": [4, 5],
+        "months": [
+          4,
+          5
+        ],
         "kind": "flowers",
         "label": "late April into May, when the crown fills with double white candles"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the flowers, doubled white candles in late April and May, and by the ground under it: this form sets no conkers at all. It stands about a hundred feet off the library's northeast corner."
     },
     {
       "id": "kcm_003",
@@ -122,7 +127,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the deep red-purple leaves, which it holds from spring through to September rather than for one week. It carries the tag 14-2-1 on the library grounds."
     },
     {
       "id": "kcm_004",
@@ -152,7 +158,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the slim tree in the southeast corner of the grounds, 74 centimetres round, whose leaves hang together on fine threads of latex when they tear."
     }
   ]
 }
