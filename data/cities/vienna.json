@@ -701,7 +701,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise the pair by their matched, cone-shaped crowns about thirty metres apart, opposite TU Wien's main entrance. The thicker trunk, 2.81 metres round, is the older tree, planted in 1900."
     },
     {
       "id": "vie_020",
@@ -731,7 +732,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise them by steel cables running through both crowns since 2020 storm damage, and trunks about 4.2 metres round, standing 13 metres apart in front of Hietzing's parish church."
     },
     {
       "id": "vie_021",
@@ -769,7 +771,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its thick trunk, 6.21 metres round, and broad oak leaves, unlike the evergreen yew standing just twelve metres away. It stands near the Hietzinger Tor entrance to Schönbrunn's botanical garden."
     },
     {
       "id": "vie_022",
@@ -807,7 +810,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by dark, needle-like evergreen foliage, unchanged from February to July, unlike the broad-leaved oak twelve metres away. It stands near the Hietzinger Tor entrance to Schönbrunn's botanical garden."
     },
     {
       "id": "vie_023",
@@ -1089,7 +1093,8 @@
       },
       "notes": "Promoted from data/leads/vienna.json on 2026-08-31. Single-sourced on the city's Baumkataster; flagged for that reason, not for doubt about the tree. Stands beside vie_033, a second Kugeltrompetenbaum at the same address planted in 2016.",
       "girth_cm": 117,
-      "verify_notes": "Planted 1977, girth 117cm, per Vienna's own Baumkataster (Baum-ID 167096), offset 0.4m from the register address point."
+      "verify_notes": "Planted 1977, girth 117cm, per Vienna's own Baumkataster (Baum-ID 167096), offset 0.4m from the register address point.",
+      "how_to_recognise": "You can recognise it by its dense, perfectly round crown on a bare trunk, 1.17 metres round, the older and thicker of two ball-headed catalpas standing together at Schrankgasse 7-9."
     },
     {
       "id": "vie_033",
@@ -1120,7 +1125,8 @@
       },
       "notes": "Promoted from data/leads/vienna.json on 2026-08-31. Single-sourced on the city's Baumkataster; flagged for that reason, not for doubt about the tree. Stands beside vie_032, an older Kugeltrompetenbaum at the same address planted in 1977.",
       "girth_cm": 37,
-      "verify_notes": "Planted 2016, girth 37cm, per Vienna's own Baumkataster (Baum-ID 283099), offset 0.8m from the register address point."
+      "verify_notes": "Planted 2016, girth 37cm, per Vienna's own Baumkataster (Baum-ID 283099), offset 0.8m from the register address point.",
+      "how_to_recognise": "You can recognise it by the same round, ball-shaped crown as its neighbour but on a much slimmer trunk, 0.37 metres round against the older tree's 1.17. It stands a few metres away at Schrankgasse 7-9."
     }
   ],
   "oldest_tree_id": "vie_001"

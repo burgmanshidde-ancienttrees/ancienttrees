@@ -159,7 +159,8 @@
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-26 from the park's general location to the tree itself: OpenStreetMap carries this tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Parc del Laberint\", species Cedrus deodara, about 400m from the previous general-park estimate and matching the barcelona.cat catalogue page already cited as a source. Access note updated 2026-07-28: a fresh news sweep found the whole park, not just the vegetal maze, is closed to the public March 2025-March 2027 for a EUR1.5m cypress replacement and irrigation renovation (beteve.cat, 3Cat, El Punt Avui, all March 2025; confirmed still under way by an Ajuntament de Barcelona article dated 6 December 2025 on cypresses being planted). The tree itself is not reported damaged, only inaccessible while works continue; worth re-confirming reopening closer to March 2027 before removing this note.",
       "location_precision": "confirmed",
-      "girth_cm": 330
+      "girth_cm": 330,
+      "how_to_recognise": "You can recognise it by its slightly uneven crown, altered since a storm snapped its leading shoot, and by the silver lime planted beside it in the same garden plot. Trunk 3.30 metres round."
     },
     {
       "id": "bcn_005",
@@ -312,7 +313,8 @@
         ],
         "label": "July, when its pink silk-thread flowers open"
       },
-      "girth_cm": 280
+      "girth_cm": 280,
+      "how_to_recognise": "You can recognise it by fern-like leaves that fold shut at dusk and pink, thread-like flowers shaped like a powder puff each July. Its trunk, 2.80 metres round, is hollowed out by old infections though the crown still flowers every year."
     },
     {
       "id": "bcn_009",
@@ -559,7 +561,8 @@
       "curation_status": "ai_generated",
       "notes": "Municipal register (register_id 99400455080, catalogued 1994) for the tree, plus Catalan Wikipedia and carrers.barcelona for the estate history, which are independent of the tree catalogue and name the catalogued holm oak specifically. Dimensions differ between the register (16 m tall, crown 14 m, girth 2.1 m) and bcnsostenible (over 14 m, crown 8 m); the height is given as a rough figure and the crown is left out of the story rather than picking a side. Pin confirmed: register 41.380174/2.125790 and OSM node 6924087388 at four metres. The April 2026 renovation approval is from metropoliabierta and barnadiario; neither mentions the oak, so the story says only that the redesign was approved and the catalogue protects the tree, which is what the sources support. No open-licence photograph found this pass. 127 m from bcn_007, so Les Corts becomes a two-tree stop rather than a single pin.",
       "location_precision": "confirmed",
-      "girth_cm": 210
+      "girth_cm": 210,
+      "how_to_recognise": "You can recognise it by its small, dark evergreen leaves, unlike the palms and plane trees planted around it, and by a trunk just over two metres round. It stands about 16 metres tall, a remnant of the garden's original private planting."
     },
     {
       "id": "bcn_016",
@@ -682,7 +685,8 @@
       "curation_status": "ai_generated",
       "notes": "Municipal register (catalogue number 0154-03-11, catalogued 2011, planting year 1920) plus two sources independent of it: catacultural.com, which places the tree inside the garden ('abans d'arribar al mirador'), and iNaturalist observation 282020003 from May 2025, an identified Araucaria bidwillii 12 m from this pin. Pin confirmed three ways: register 41.37038/2.15920, OSM node 4506691425 at 6 m, iNaturalist at 12 m. Dimensions differ between the municipal renderings, 17 m tall and girth 1.4 m in the register against 16 m and 1.14 m on bcnsostenible; the story quotes neither as a precise figure. The Jurassic lineage, the fifty-metre wild height, the edible seeds and the three-to-six-month germination all come from the municipal record's own species note. No photo used: the only image found in place is iNaturalist observation 282020003, which is CC BY-NC and therefore outside the licences this project accepts. Honest gap.",
       "location_precision": "confirmed",
-      "girth_cm": 140
+      "girth_cm": 140,
+      "how_to_recognise": "You can recognise it by its silhouette alone: a straight column with branches held out in flat, symmetrical whorls, all right angles where every other tree here curves. It stands on the path just before the viewpoint."
     },
     {
       "id": "bcn_019",
@@ -1487,7 +1491,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its wide, flattened crown, spreading wider than the tree is tall, and by heavy green fruit each autumn with a surface like folded brain. Trunk 1.40 metres round, the younger of Barcelona's two Osage oranges."
     },
     {
       "id": "bcn_043",
@@ -1560,7 +1565,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by small, olive-sized fruit turning from green to deep red-brown, and a thorny, gnarled habit unlike the ornamental planting around it. Trunk 1.60 metres round, crown about 12 metres across."
     },
     {
       "id": "bcn_045",

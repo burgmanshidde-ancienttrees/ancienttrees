@@ -150,7 +150,8 @@
       },
       "curation_status": "flagged",
       "notes": "Planting date not documented; age is inferred from NParks' note that the species was 'extensively planted' at Fort Canning in the early 1900s, not from a source dating this specific tree.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by feathery, delicate foliage on wide, low-spreading branches, and flower buds that open lilac before fading through pink to white. Trunk 5.48 metres round. It stands at Fort Green."
     },
     {
       "id": "sgp_005",
@@ -180,7 +181,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age genuinely undocumented; NParks gives only girth growth since 2001 endorsement, so age_min/age_max are left at 0 rather than guessed. Three other terap heritage trees stand nearby on the same walk and one more on Canning Rise; this entry is specifically HT 2001-12.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by broad plank buttresses spreading from its base and, in season, cream-to-brown fruit about 18 centimetres long. Trunk 5.68 metres round. It stands beside the 14th Century Walk of History, near the Service Reservoir."
     },
     {
       "id": "sgp_006",
@@ -241,7 +243,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age undocumented by NParks for either tree; the pair's status as 'the only two mangrove trees in the Heritage Tree Register' is NParks' own register claim about its own designated trees. Coordinates are the midpoint of the two individually-surveyed trees (HT 2007-162 and HT 2007-163), roughly 20m apart at the same named location.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by pneumatophores poking straight up through the mud around their bases, and roots often partly submerged with the tide. They stand together beside House No. 1, the only mangroves in Singapore's heritage register."
     },
     {
       "id": "sgp_008",
@@ -358,7 +361,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the sausage-shaped fruit, a grey-brown cylinder up to a metre long, hanging from a cord-like stalk once it sets. It stands on the lawn beside the Sundial Garden."
     },
     {
       "id": "sgp_012",
@@ -621,7 +625,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its size, 2.90 metres round and 20.6 metres tall, one of the few teaks growing without the dry season the species usually needs. It stands along Office Ring Road, beside the Botany Centre."
     },
     {
       "id": "sgp_021",
@@ -651,7 +656,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its trunk, 44.5 metres tall and six metres round, with scaly bark and plank buttresses at the base. It stands inside the Rainforest patch, seen from Lower Ring Road near the Heritage Mengkulang."
     },
     {
       "id": "sgp_022",
@@ -681,7 +687,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by plank buttresses that fold vertically in pleats, a feature unique to the species, on a trunk 4.50 metres round and 26 metres tall. It stands along Lower Ring Road near the Bandstand."
     },
     {
       "id": "sgp_023",
