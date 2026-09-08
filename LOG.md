@@ -33,14 +33,28 @@ causing it (could not build/test locally, this sandbox has no Xcode;
 the scheduled job will confirm). Vendored 1 photograph, answered a
 REVIEW.md WARN already fixed by an earlier attempt.
 
-Dispatched a verify pass on Sweden's famous-tree leads (rung 0c): 3
-ready (Ekebyhovseken, Sweden's largest deciduous tree by volume;
-Sjukhuseken joining Stockholm; Trolleken anchoring Öland's Trollskogen
-reserve), 2 confirmed dead, 4 held. A write pass on those 3 was still
-in flight when this entry was written.
+Verified and wrote up 3 Sweden famous-tree leads (rung 0c): **Ekerö**
+(new place, Ekebyhovseken, Sweden's largest deciduous tree by volume, a
+girth dispute between two sources stated honestly rather than picked),
+**Trollskogen** (new place, Trolleken, Öland's oldest oak, 800-900yr,
+no girth or height found so left absent), and **Sjukhuseken** added to
+Stockholm as sto_006 (~800yr hollow oak on Danderyd Hospital grounds,
+framed honestly as a declining veteran, fire-scarred and heavily
+pruned after a 1989 limb fall, not a pristine specimen). Also fixed
+Stockholm's intro, stale at "the four" since before this pass (it now
+holds six). 2 candidates confirmed dead and blocked, 4 held for a
+later pass with only one source each.
 
-`preflight.py` (556 cities, 0 problems), `astro build` (5090 pages) and
-`qa.py` (7959 pages) all clean throughout. Nothing for Hidde.
+`preflight.py` (558 cities, 0 problems), `astro build` (5106 pages) and
+`qa.py` (7976 pages) all clean throughout.
+
+**Session total: 8 trees shipped across 9 new single-tree places**
+(Aizuwakamatsu, Iida, Kitakata, Oyodo, Radomsko, Stokaičiai, Pajūris,
+Ekerö, Trollskogen) **plus 2 folded into existing cities** (Stockholm's
+sto_006, and utr_031 enriched with species/measurements rather than
+duplicated), one iOS CI gate fixed, one photograph vendored, one
+coordinate-copy bug caught and fixed before publishing, and one
+REVIEW.md WARN closed out. Nothing for Hidde.
 
 ## 2026-09-08 (session) - The last 206 trees that had nothing to tell them apart, and a gate so it cannot happen again
 
