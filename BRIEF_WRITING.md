@@ -58,19 +58,34 @@ recorded, a lean nobody measured, a hollow nobody mentioned: fabrication under
 hard rule 2, and the fact that it sounds like a description rather than a claim
 makes it more dangerous rather than less.
 
+**Write it as the answer to a question somebody is asking out loud** (Hidde,
+2026-09-07: "ik zou de tekst wel echt schrijven in de vorm van hoe kan ik hem
+vinden? Je kunt hem herkennen aan... staat naast... zo en zo"). The reader is
+the subject and the shape is fixed:
+
+    You can recognise it by [what you see]. It stands [where, or beside what].
+
+Not a caption and not an inventory. "In the Glorieta de Juanita Reina, 4.42
+metres round" is a label on a museum wall; "You can recognise it by the trunk,
+4.42 metres round at chest height" is somebody answering you. Same facts, and
+only the second one is any use standing up.
+
 It answers "which one", not "how impressive". A ranked crown of a species
 nobody else in the park has beats "a magnificent old oak" every time. Prefer,
 in this order: what separates it from its NEIGHBOURS, where exactly it stands,
-and a measurement somebody could check.
+and a measurement somebody could check. Under 240 characters, which preflight
+enforces.
 
 Good ones, all from trees written this way:
 
-> The park's other great plane, on the Avenida de Bécquer, is wider still but
-> shorter.
-> Every leaf lobe ends in a bristle, unlike the rounded lobes of Belgium's
-> native oaks, and it turns scarlet a month before the ginkgo goes gold.
-> A broad old stool two metres round at the ground with a thin trunk only 36
-> centimetres round rising out of it.
+> You can recognise it by the trunk, 4.42 metres round at chest height and 5.02
+> at the base. It stands in the Glorieta de Juanita Reina; the park's other
+> great plane, on the Avenida de Bécquer, is wider but shorter.
+> You can recognise it by the leaves, every lobe ending in a bristle where
+> Belgium's native oaks are rounded, and by the scarlet it turns in October, a
+> month before the ginkgo goes gold. It stands across the path from that ginkgo.
+> You can recognise it in winter, when it stands bare: no other conifer here
+> drops its needles.
 
 `python3 scripts/recognise.py --stuck` is the standing backlog of trees that
 have neither this line nor a photograph and stand within 25 metres of another

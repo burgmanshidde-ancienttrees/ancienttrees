@@ -798,7 +798,7 @@ struct CollectSheet: View {
 
             if !t.howToRecognise.isEmpty {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("How to tell it apart")
+                    Text("How do I find it?")
                         .font(.brand(13, .bold)).foregroundStyle(Brand.inkSoft)
                     Text(t.howToRecognise)
                         .font(.body).foregroundStyle(Brand.ink)

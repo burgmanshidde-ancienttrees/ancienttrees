@@ -205,7 +205,13 @@ def brief(slug):
     return 0
 
 
-def apply(src):
+def apply(src, overwrite=False):
+    """Write the lines. Refuses to overwrite by default.
+
+    The guard exists because a second pass should never quietly replace a line
+    somebody wrote deliberately. --overwrite is for the case it was written
+    for: rewriting a batch in a better voice, knowingly, in one go.
+    """
     lines = json.load(open(src, encoding="utf-8"))
     if isinstance(lines, dict) and "lines" in lines:
         lines = lines["lines"]
@@ -218,7 +224,7 @@ def apply(src):
             if not line:
                 continue
             seen.add(t["id"])
-            if t.get("how_to_recognise"):
+            if t.get("how_to_recognise") and not overwrite:
                 skipped += 1
                 continue
             t["how_to_recognise"] = line.strip()
@@ -243,6 +249,8 @@ def main():
                     help="trees with no line, no photo and remarkable company nearby")
     ap.add_argument("--brief")
     ap.add_argument("--apply")
+    ap.add_argument("--overwrite", action="store_true",
+                    help="replace lines that already exist (deliberate rewrites only)")
     args = ap.parse_args()
     if args.stuck:
         stuck()
@@ -250,7 +258,7 @@ def main():
     if args.brief:
         return brief(args.brief)
     if args.apply:
-        return apply(args.apply)
+        return apply(args.apply, overwrite=args.overwrite)
     report()
     return 0
 
