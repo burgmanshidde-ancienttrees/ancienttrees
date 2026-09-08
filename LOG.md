@@ -11,6 +11,67 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation, previous attempt stopped after 22 min with 98 min unspent) - Finished 3 stranded claims, 5 trees shipped, a photo viewing pass across 24 trees found 0 usable
+
+**Finished what the prior attempt left claimed.** `passcheck.py --claims` showed
+three standing (`nara-kyoju`, `_famous-poland`, `_famous-czech-republic`, all
+`night-run`, all with 2+ hours left). nra_019 (The Great Ginkgo of Haraedo
+Shrine) was already written and merged into `nara.json`, uncommitted; the
+other two had verified-but-unwritten trees in `data/research/*-verified.json`.
+Dispatched one write-stories pass on the remaining 4 trees, then merged:
+
+- **lid_001, The Apple Tree at U Lidmanu**, a new single-tree place, Machov,
+  Czech Republic (first fruit tree ever to win Czech Tree of the Year, 2020).
+- **luk_002, The Six-Trunked Lime of Zamrsk**, joins Lukavice (a cut stump
+  that regrew as six trunks, also a Tree of the Year winner).
+- **rud_002, The Eichendorff Oak**, joins Rudy as a 16km day-trip addition
+  in Łubowice, named for the Romantic poet born and christened nearby.
+- **sul_003, Dąb 500-lecia**, joins Sulechów; the story explicitly refuses
+  the bridge claim its own name invites (a dedication anniversary, not an
+  age nobody has stated).
+
+Updated the three joined cities' intros so the tree count stays honest,
+marked all four leads published in their `_famous-*` files, released all
+three claims. `preflight.py` (564 cities, 0 problems), `astro build` (5137
+pages) and `qa.py` (8038 pages) clean.
+
+**Rung 4 (new coverage) was already exhausted today.** Checked `city_queue.py
+--next` and `scout_next.py --target` fresh rather than trusting memory:
+Taormina looked promising (5 register + 2 Wikidata) but its brief showed the
+in-town register supply is fully blocked on private hotel grounds, confirmed
+by two earlier passes today. Every other "OPENABLE TODAY" city (Ravenna,
+Salamanca, Ischia, Trier) is too thin to clear six candidates. Nothing to
+open. Rung 7 (`recognise.py --stuck`) and rung 8 (`pagegaps.py`) were both
+already at zero from earlier passes today.
+
+**Ran a photo viewing pass, rung 6.** `photo_fetch.py --zero` targets
+photo-less cities with 5+ trees (66 of them); started it, saw it would take
+far too long for one window, killed it after 8 cities. Dispatched a
+photo-judge agent on what it had already fetched (Alkmaar, Apeldoorn, Assen,
+Bangkok, Deventer, Dordrecht, Emmen, Haarlem): 62 images across 20 trees,
+**0 approved**, 1 held (Bangkok's Bodhi Tree of Wat Phra Kaew, a good
+photograph but 60m off pin), 19 trees exhausted. Then fetched Maastricht,
+Caserta and Tilburg directly; the latter two had nothing left (already
+exhausted earlier today), so judged Maastricht's 8 candidates myself: also
+archival or tree-less, 4 more trees exhausted, 0 approved.
+
+**What the pixels showed that the fetch sweep's filename-matching could
+not:** it repeatedly attaches one photograph to several different trees on
+the same estate or in the same named park (one Overcingel gate photo queued
+against 3 Assen trees; a 1925 reburial-ceremony photo matched by park name
+to two different Maastricht trees), and matches street names across
+different towns (two Deventer candidates were actually in Olst). All of it
+is now recorded in `data/photo-queue.json` as rejected/exhausted rather than
+left to be re-fetched.
+
+**Checked rung 0c (famous trees) before stopping.** `famous_demand.py --next`
+shows only Bulgaria left with any candidates, 4 unique ones after
+de-duplicating, below the six-candidate floor for a fresh dispatch. Left for
+a batch with more overhead.
+
+Three commits, all built/QA'd or confirmed not to touch the site before
+pushing. Nothing for Hidde.
+
 ## 2026-09-08 (continuation, previous attempt stopped after 50 min with 70 min unspent) - 13 bomenbieb.nl trees merged and committed: 5 new Dutch places, 8 folded into published cities
 
 Full account in CURATION.md's matching entry. Short version: the
