@@ -73,14 +73,14 @@
     },
     {
       "name": "Ekebyhovseken",
-      "lat": 59.267044,
-      "lng": 17.825175,
+      "lat": 59.279735,
+      "lng": 17.820145,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Ekebyhov-Ek1.jpg",
         "https://commons.wikimedia.org/wiki/File:Ekebyhovseken,_2017.jpg",
         "https://commons.wikimedia.org/wiki/File:Ekebyhovseken_dec_2011a.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-08, verified as eke_001 in data/research/famoussweden-batch1-verified.json. Coordinate corrected from the candidate list (was 1.4km off); does not clear Stockholm's day-trip boundary by public transport, recommend as its own place (Ekerö)."
     },
     {
       "name": "Gällstaöeken",
@@ -102,7 +102,8 @@
         "https://commons.wikimedia.org/wiki/File:Hagstaeken,_Huddinge,_nov_2018b.jpg",
         "https://commons.wikimedia.org/wiki/File:Hagstaeken,_Huddinge,_nov_2018c.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "blocked_reason": "DEAD. Felled the night of 2-3 December 2025 as a safety hazard (leaning further over Glömstavägen). Natural-monument protection had already been revoked by the county administrative board in 2020 on safety grounds, confirmed by the government in 2023. The trunk was moved to Sundby gård in Orlångens nature reserve to decompose naturally. Sources: sv.wikipedia.org/wiki/Hagstaeken, mitti.se 'Nu har den 500 år gamla eken fällts' (2025-12-03), mitti.se 'Regeringen: Historiska eken vid Glömstavägen får fällas'. Never republish as a live entry."
     },
     {
       "name": "Hägerums ek",
@@ -113,20 +114,24 @@
         "https://commons.wikimedia.org/wiki/File:H%C3%A4gerums_ek,_juni_2019b.jpg",
         "https://commons.wikimedia.org/wiki/File:H%C3%A4gerums_ek,_juni_2019c.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "held",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "hold_reason": "Real and documented but only ONE independent source found in a time-boxed pass (2026-09-08): sv.wikipedia.org/wiki/H%C3%A4gerum, which describes the oak (just west of the Hagerum manor farm buildings, Doderhults parish, Oskarshamn municipality, Kalmar county, not Oland despite the ek-name pattern) as protected as a natural monument in August 1958, girth 695cm measured 2003, wide branched crown. No age figure found anywhere. A second Lansstyrelsen Kalmar register document almost certainly exists (the pattern matches Trogareds ek and Sjukhuseken's official designation PDFs) but was not located in this pass; search results kept returning the same Wikipedia-derived text. No confirmation of current alive status beyond the sourced facts. Held rather than delivered for the missing second source; a register lookup by municipality (Oskarshamn) rather than by tree name would likely resolve this quickly."
     },
     {
       "name": "Häradseken",
-      "lat": 57.53117484,
-      "lng": 18.38599578,
+      "lat": 57.531119,
+      "lng": 18.386300,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:H%C3%A4radseken.jpg",
         "https://commons.wikimedia.org/wiki/File:H%C3%A4radseken_01.jpg",
         "https://commons.wikimedia.org/wiki/File:H%C3%A4radseken_02.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "genus read from the tree's own name and Commons category; ask the reader which species",
+      "hold_reason": "Confirmed real and officially protected (2026-09-08): Commons/Wikidata (Q86920232) gives it as Swedish natural-monument designation 2003621, decided 1959-03-10, operator Gotland County Administrative Board, coordinate 57.531852,18.386300 (close to the candidate coordinate, kept as given). This is one official-register-grade source. No second independent narrative source, no age, girth or access details found in a time-boxed search; general web searching returned nothing tree-specific beyond the register listing. Held for a follow-up pass to query Gotland's naturvardsregister/Skyddad natur map directly (61 natural monuments on Gotland, most of them oaks, per Länsstyrelsen Gotland) rather than by tree name."
     },
     {
       "name": "Ek Hässelby 1:9",
@@ -137,9 +142,10 @@
         "https://commons.wikimedia.org/wiki/File:Carballo_de_H%C3%A4sselby_91.jpg",
         "https://commons.wikimedia.org/wiki/File:Ek_H%C3%A4sselby.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "held",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "genus read from the tree's own name and Commons category; ask the reader which species",
+      "hold_reason": "Confirmed real and officially protected (2026-09-08): Wikidata Q86920135 ('Oak Hasselby 1:9'), Swedish protected-natural-area designation 2003631, Region Gotland. Named after the property (Hässelby 1:9) rather than after itself, which is itself a sign this is a register entry rather than a locally storied tree. No second independent narrative source, no age, girth or access details found in a time-boxed search. Held for the same follow-up as Häradseken: query Gotland's own naturvardsregister rather than the tree's name."
     },
     {
       "name": "Karl XI:s ek",
@@ -215,7 +221,8 @@
         "https://commons.wikimedia.org/wiki/File:Lojsta_Oak_in_Lojsta,_Gotland_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Lojsta_Oak_in_Lojsta,_Gotland_2.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "blocked_reason": "DEAD. Grew for roughly 1000 years, stopped sprouting in 2001 and has stood dead and hollow since (girth almost 8m at death). Stands at Lojsta prastange, a churchyard meadow nature reserve near Lojsta Church, central Gotland. Sources: gotlanduppochner.com/2022/06/18/lojstaeken (2022 blog visit confirms it is still standing as a dead snag, described as completely hollow), guteinfo.com/?id=1800. Never republish as a live entry; a dead standing snag could in principle be noted as CONTEXT inside another Gotland tree's story per CLAUDE.md, never as its own collectible entry."
     },
     {
       "name": "Rumskullaeken",
@@ -231,14 +238,14 @@
     },
     {
       "name": "Sjukhuseken",
-      "lat": 59.390448,
-      "lng": 18.035573,
+      "lat": 59.3905,
+      "lng": 18.03578,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Sjukhuseken,_Danderyd,_april_2020.jpg",
         "https://commons.wikimedia.org/wiki/File:Sjukhuseken,_Danderyd,_april_2020a.jpg",
         "https://commons.wikimedia.org/wiki/File:Sjukhuseken,_Danderyd,_april_2020b.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-08, verified as sto_006 in data/research/famoussweden-batch1-verified.json. Clears Stockholm's day-trip boundary easily (own metro stop); recommend joining the Stockholm page."
     },
     {
       "name": "Ek i Sånnaböke",
@@ -262,22 +269,21 @@
         "https://commons.wikimedia.org/wiki/File:Trogareds_ek_S%C3%B6dra_Ving_1973-06-21_image02.jpg",
         "https://commons.wikimedia.org/wiki/File:Trogareds_ek_S%C3%B6dra_Ving_1973-06-21_image03.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "held",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "sv.wikipedia and the official Länsstyrelsen Västra Götaland natural-monument designation both identify it as an oak (ek); Swedish veteran field oaks of this kind are near-universally Quercus robur",
+      "hold_reason": "Verified 2026-09-08: real, documented, at a rural crossroads in Trogared, Södra Vings parish, Ulricehamn municipality. Two independent sources: sv.wikipedia.org/wiki/Trogareds_ek and the Länsstyrelsen's own 1940-333 natural-monument decision (protected 1940-10-11, PDF at lansstyrelsen.se, could not be text-extracted but its existence and metadata confirm the designation). Girth given as 8.5m by wikipedia, 7.68m by a local history article (bygdehistoria.tranemo.se/article/vara-tradbjassar); recorded the larger, more commonly cited figure and noted the discrepancy. Age is a DERIVED estimate only, no documented planting date: the tranemo local-history article gives the working, roughly 1.5m of girth growth per century, yielding roughly 500 years for a hollow, deformed-crown veteran. First mentioned in print in 1878 (Ulricehamns tidning, called it 'queen of all trees in the area'). A 2018 blog visit (kulturinatur.blogspot.com) confirms it was still standing then; no death reports found. Access is a public road junction, unrestricted. HELD rather than delivered because it does not clearly clear the single-tree-destination test: 24 Wikipedia reads/month across one language, and the source material describes it as the region's biggest tree rather than a named or storied national landmark (contrast Rumskullaeken or Kvilleken, already published). The same tranemo article names two more giant oaks nearby, Brännareds-eken (7.58m girth, Öxnevalla parish) and Vasa-eken at Torpa (6.45m, 32m tall) - a future pass could check whether these three form a genuine small cluster worth an Ulricehamn/Tranemo tree-country page, which would be a stronger case than this tree alone."
     },
     {
       "name": "Troll Oak, Trollskogen",
-      "lat": 57.354312,
-      "lng": 17.124404,
+      "lat": 57.354626,
+      "lng": 17.124371,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Ek_Trollskogen_%C3%96land.jpg",
         "https://commons.wikimedia.org/wiki/File:Trolleken,_Trollskogen,_Borgholm_municipality,_%C3%96land_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Trolleken,_Trollskogen,_Borgholm_municipality,_%C3%96land_02.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "RESOLVED 2026-09-08, verified as trs_001 in data/research/famoussweden-batch1-verified.json. Recommend as its own place (Trollskogen nature reserve). NOTE: this entry was duplicated twice in this file under the same name; both instances refer to the same tree."
     },
     {
       "name": "Trångsunds ekruin",
@@ -300,19 +306,6 @@
         "https://commons.wikimedia.org/wiki/File:R%C3%A4dda_eken_2011-11-26a.jpg"
       ],
       "status": "lead"
-    },
-    {
-      "name": "Troll Oak, Trollskogen",
-      "lat": 57.354312,
-      "lng": 17.124404,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Ek_Trollskogen_%C3%96land.jpg",
-        "https://commons.wikimedia.org/wiki/File:Trolleken,_Trollskogen,_Borgholm_municipality,_%C3%96land_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Trolleken,_Trollskogen,_Borgholm_municipality,_%C3%96land_02.jpg"
-      ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
     }
   ]
 }
