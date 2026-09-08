@@ -1342,3 +1342,50 @@ It lets anybody test whether an address has an account, and Instagram, Strava
 and Polarsteps have all moved away from it. Search by the name somebody chose,
 plus an invitation, is what the field looks like now.
 
+
+---
+
+## Asking somebody why a place is worth visiting (2026-09-08)
+
+Looked up when Hidde asked whether we should add a rule: "why remarkable? why
+worth the walk? tell others why they should go and visit the tree", after four
+trees went live in Nara from his own photographs with no reason attached to any
+of them.
+
+**Reference: Google Maps, "Add a missing place".** Three fields are required and
+they are all FACTS: name, category, address. Phone, website and opening hours
+are optional. There is no field anywhere in that flow asking why the place is
+good. The opinion is a REVIEW, which is a separate act, performed later, usually
+by somebody who was not the one who added it.
+
+**Reference: iNaturalist.** Its notes field is for context a photograph cannot
+carry, and its own guide gives examples of exactly that shape ("this fungus was
+growing on a live spruce tree at the top of a hill"). Habitat and circumstance,
+not advocacy.
+
+**So the convention is a split, and it corrects what this project had.** What
+the thing IS is asked at submission. Why it is WORTH SOMETHING is either the
+publisher's editorial line or a reader's review, and neither is a gate on
+adding. A required justification before somebody may contribute appears in none
+of the references, and would turn a thirty-second act into homework.
+
+**What we had was the opposite of the split: one field doing both jobs, and the
+note silently becoming the title.** `CollectSheet.swift` asked "What makes it
+special? A name, a species, a story…" and then used that same text, cut at 60
+characters, as the tree's name. Writing a real sentence turned your sentence
+into the title; writing nothing produced a tidy-looking "A tree I found". The
+first eight photographs ever sent came in with the default name, seven of them
+with a completely empty note. The single field was the invention, not the pair.
+
+Now: "What is it called, or what kind of tree?" and "Why is it worth the walk?",
+both optional, the name feeding the name and the note feeding the note.
+
+**And the editorial half is ours, on the tree.** `why_go` in the schema is one
+sentence saying why somebody should walk to this trunk, rendered on the page and
+used as the meta description's lead where there is no age and no measurement to
+lead on. That is the place-page description Google Maps carries, not a question
+we put to the person holding the phone.
+
+Read 2026-09-08:
+- https://support.google.com/maps/answer/6320846
+- https://www.inaturalist.org/posts/34222-inaturalist-how-to-observations-guide

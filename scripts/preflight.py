@@ -949,6 +949,67 @@ def check_every_tree_names_a_source():
     return out
 
 
+def check_a_tree_says_why_to_go():
+    """Can we say, in one line, why somebody should walk to this one?
+
+    Hidde, 2026-09-08, after four trees went live in Nara from his own
+    photographs: "mss moeten we een regel toevoegen why remarkable? why worth
+    the walk? tell others why they should go and visit the tree."
+
+    Those four passed EVERY mechanical check that existed. Name, species, pin,
+    story, honest flags, all present. What none of them carried was a reason,
+    and nothing had ever asked for one. The run had confused "I can write an
+    honest page about this" with "this deserves a page".
+
+    A tree usually answers the question without a sentence: a recorded age or a
+    big trunk IS the reason, and 2,384 of 2,777 have one or the other. This
+    fires on the rest, where there is no fact to stand on and no words either.
+
+    Two severities, deliberately. A tree published from a READER'S PHOTOGRAPH
+    with nothing to say is a FAIL, because that is the exact path Nara took and
+    the one where a photograph flatters an ordinary tree into looking like a
+    find. Everything else is a NOTE listing the backlog, because 393 pages
+    predate the field and a gate that fails the whole night shift on its first
+    run is a gate somebody switches off.
+    """
+    return _why_to_go_split()[0]
+
+
+def note_trees_with_no_reason():
+    """The NOTE half of check_a_tree_says_why_to_go: the backlog, not a blocker."""
+    return _why_to_go_split()[1]
+
+
+def _why_to_go_split():
+    fails, backlog = [], []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            age = (tree.get("age_estimate") or "").strip()
+            dated = bool(age) and not re.search(
+                r"not documented|unknown|undated|not established", age, re.I) \
+                and bool(re.search(r"\d{2,4}", age.replace(",", "")))
+            measured = (tree.get("girth_cm") or 0) >= 250 or (tree.get("height_m") or 0) >= 20
+            if dated or measured or (tree.get("why_go") or "").strip():
+                continue
+            where = "%s: %s (%s)" % (path, tree.get("id"), tree.get("name"))
+            if (tree.get("photo") or {}).get("source") == "contributor":
+                fails.append("%s came from a reader's photograph and has no age, no "
+                             "measurement and no why_go. A photograph is not a reason. "
+                             "Give it one sentence saying why somebody should walk to "
+                             "THIS trunk, or move it to data/leads/." % where)
+            else:
+                backlog.append(where)
+    note = []
+    if backlog:
+        note.append("%d trees have no age, no measurement and no why_go, so nothing "
+                    "on the page says why to go and metaForTree has nothing to lead "
+                    "on. Backfill where there is demand. First few: %s"
+                    % (len(backlog), "; ".join(b.split(": ")[1] for b in backlog[:3])))
+    return fails, note
+
+
 def check_contributor_photos_are_traceable():
     """A reader's photograph must carry the account that sent it.
 
@@ -1612,7 +1673,8 @@ def main():
                 + check_no_two_language_switch()
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
-                + check_every_tree_names_a_source())
+                + check_every_tree_names_a_source()
+                + check_a_tree_says_why_to_go())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
@@ -1624,7 +1686,8 @@ def main():
         print("FAIL " + line)
     for line in (check_stacked_pins() + check_search_names() + check_paid_share()
                  + check_country_counts() + check_leads_already_published()
-                 + check_tree_labels_are_translated() + check_city_indent()):
+                 + check_tree_labels_are_translated() + check_city_indent()
+                 + note_trees_with_no_reason()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0

@@ -1,5 +1,68 @@
 # Decisions
 
+## 2026-09-08 - A tree needs a reason, not just an honest page
+
+Hidde, shown that four trees had gone live in Nara overnight from his own app
+photographs: "maar waarom zijn de nara fotos toegevoegd zijn het daadwerkelijk
+remarkable trees". They were not. Then, on what to do about it: "mss moeten we
+een regel toevoegen why remarkable? why worth the walk? tell others why they
+should go and visit the tree".
+
+**Why this is worth a decision entry rather than a fix.** Every mechanical check
+we had passed those four. They carried a name, a species, a pin, a story, and
+honest flags about everything missing. Their sources field was empty, which
+nothing looked at. What none of them carried was a REASON, and nothing had ever
+asked for one. The run had confused "I can write an honest page about this" with
+"this deserves a page", and it reached for two real rules to get there: publish
+and ask (2026-08-13), which covers an empty FIELD on a tree that clears the bar,
+and a judgement call never blocks publication (2026-08-10), which lists what does
+block and has the research standard on that list. Neither reaches this.
+
+The tell was in the prose. Each story argued against its own page: the Nigatsu-do
+slope "holds cedars like this by the dozen"; the pond by the pavilion could not
+be named; the temple behind the ginkgo's wall could not be established. A page
+that honest about having nothing is a lead wearing a page's clothes.
+
+**Three mechanisms, because a lesson twice seen becomes a check.**
+
+1. `check_every_tree_names_a_source()` refuses a published tree with an empty
+   source list. One, not the two the standard wants, because a single source
+   plus `flagged` is already allowed and this is the floor. It found two others,
+   in Munich, of a different kind: their prose quoted the city's Verordnung ueber
+   Naturdenkmaeler and the field was simply never filled. The data cannot tell
+   invention from bookkeeping, which is the argument for refusing both.
+2. `why_go` on the tree: one sentence saying why somebody should walk to THIS
+   trunk, rendered on the page. Public rather than a private checklist on
+   purpose, because a box gets ticked and a sentence a reader will see has to
+   survive being read. Most trees never write it: a recorded age or a big trunk
+   is the reason, and the field stays empty.
+3. `check_a_tree_says_why_to_go()` fires only where there is neither age nor
+   measurement nor sentence. FAIL when the tree came from a reader's photograph,
+   which is the path Nara took and the one where a photograph flatters an
+   ordinary tree into looking like a find; NOTE for the 475 that predate the
+   field, because a gate that fails the whole night shift on its first run is a
+   gate somebody switches off.
+
+**The correction the convention check made, and it was to my own proposal.** I
+had suggested the app demand a justification before somebody may add a tree.
+Google Maps requires name, category and address and asks nowhere why a place is
+good: the opinion is a review, a separate act, later. iNaturalist's notes field
+is for context a photograph cannot carry, not advocacy. Neither makes somebody
+argue for a place before contributing. So the editorial reason is OURS, on the
+tree, and the reader is asked in their own terms and never required.
+
+What the app did have wrong was one field doing two jobs: "What makes it special?
+A name, a species, a story…" whose text then became the tree's NAME, cut at 60
+characters. Writing a real sentence turned your sentence into the title; writing
+nothing produced a tidy-looking "A tree I found". The first eight photographs
+ever sent arrived with the default name and seven completely empty notes. Two
+fields now, both optional. Full entry in CONVENTIONS.md.
+
+**Nothing was thrown away.** The four Nara trees, their stories, coordinates and
+sighting ids are in `data/leads/nara.json`, their slugs in `REMOVED_TREE_SLUGS`
+so the URLs keep resolving, and `_sightings.json` says why so nobody researches
+them again. They go back the day a source names one.
+
 ## 2026-09-04 - A published photograph outlives the account, the person does not
 
 Hidde, on being told that deleting an account took a reader's published

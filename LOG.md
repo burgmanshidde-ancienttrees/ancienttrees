@@ -11,6 +11,56 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-09-08 (session with Hidde) - The Nara four retired, and 343 snippets stop repeating their own title
+
+**He asked two questions and both were right.** Shown the daily digest, he
+asked why the Nara trees his own photographs produced had been added and
+whether they were actually remarkable. They were not: `verified_sources: []`
+on all four, against two to four sources on Nara's other ten. Retired to
+`data/leads/nara.json` with everything kept, slugs into `REMOVED_TREE_SLUGS`,
+meta description corrected from "thirteen more" to "eight more" (preflight's
+own count check caught that). Nara is back to 10.
+
+**Then he asked for the underperforming CTR cities to be fixed, and checking
+them killed my own hypothesis.** All eleven city pages already carry a
+specific hand-written meta description and a title with the city's oldest age.
+The problem is a layer down: the answer-first lead composed for TREE pages is
+`A {species} in {where}.`, which repeats the title and costs 44 of 155
+characters. 817 pages, 29 percent, are in that state. The worst is measurable:
+/brussels/thornless-honey-locust-of-parc-degmont, 199 impressions at position
+6.1 in ten days, zero clicks, on a query asking which honey locust is oldest.
+
+343 of them now lead on a trunk girth or a height instead, in all eight
+languages. Two live bugs fell out of reading the output rather than the code:
+"An European Yew" (the article test is on the letter, the article follows the
+sound) and "3.67 metres round" (a register measures to the centimetre; a
+sentence does not). Rewrote the honey locust's story so its real hook, thorns
+sized for animals extinct for thirteen thousand years, is in the first
+sentence where Google can see it. 110 characters of restatement became 150.
+
+**Three new mechanisms**, all in DECISIONS.md 2026-09-08: a source floor, the
+`why_go` field with its page render and meta coupling, and the check that
+fires when a tree has no age, no measurement and no reason. Two Munich trees
+turned up in the first sweep with empty source fields while their prose quoted
+the city ordinance; fetched it, confirmed both entries verbatim, recorded.
+
+**The convention check corrected me mid-build.** My first proposal was that
+the app demand a justification before somebody may add a tree. Google Maps and
+iNaturalist do no such thing. What the app DID have wrong was one field doing
+two jobs, with the note silently becoming the tree's name at 60 characters,
+which is why the first eight photographs ever sent arrived with the default
+name and seven empty notes. Split into two optional fields. CONVENTIONS.md
+carries the lookup.
+
+Also: App Store downloads are now a required table in the digest contract (he
+asked for it, and `asc_downloads.py` had a day the digest did not: 14 on 09-07,
+the best yet, 38 since launch). Four photographs vendored to our own domain.
+
+**FOR HIDDE:** the app change is pushed but not built here. Walk the add-a-tree
+sheet when you next install: two fields where there was one, and the name no
+longer eats what you type as a reason.
+
 ## 2026-09-08 (session) - The first backlink is live
 
 Hidde asked whether the App Store listing could produce a backlink, then

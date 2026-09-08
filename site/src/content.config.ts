@@ -111,6 +111,30 @@ export const treeSchema = z.object({
    * because a visitor deserves to know that before the walk rather than
    * after. */
   how_to_recognise: z.string().optional(),
+  /** WHY WOULD SOMEBODY WALK TO THIS ONE? One sentence, in the reader's view,
+   * added on Hidde's ruling of 2026-09-08: "mss moeten we een regel toevoegen
+   * why remarkable? why worth the walk? tell others why they should go and
+   * visit the tree".
+   *
+   * It exists because four Nara trees went live from his own photographs and
+   * passed EVERY mechanical check we had. They carried a name, a species, a
+   * pin, a story and honest flags. What none of them carried was a reason, and
+   * nothing had ever asked for one. The run had confused "I can write an honest
+   * page about this" with "this deserves a page", and those are different: the
+   * first is always possible and the second is the product.
+   *
+   * It is public rather than a private checklist on purpose. A box gets ticked;
+   * a sentence a reader will see has to survive being read. It is also the
+   * answer Google wants: for a tree with no recorded age and no measurement,
+   * metaForTree leads on this, which is the only honest thing there is to say
+   * about such a page. See tree-copy.ts.
+   *
+   * What belongs here: the thing that makes THIS trunk worth the trip. What
+   * does not: praise ("a magnificent specimen"), the species, the age or girth
+   * when they are already fields, or a reason that would be equally true of any
+   * old tree. If the only honest answer is "it is one of dozens like it on this
+   * slope", the tree is a lead, not a page. */
+  why_go: z.string().optional(),
   label: z.string().optional(),
   notes: z.string().optional(),
   best_time: bestTimeSchema,
