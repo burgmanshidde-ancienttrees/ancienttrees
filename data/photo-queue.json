@@ -7558,39 +7558,36 @@
   "nra_003": {
    "city": "Nara",
    "name": "The Five-Colour Camellia of Byakugo-ji",
-   "checked": "2026-09-08",
-   "sweep": 5,
+   "checked": "2026-08-13",
+   "sweep": 2,
    "candidates": []
   },
   "nra_004": {
    "city": "Nara",
    "name": "The Soapberry with a Bamboo Through It",
-   "checked": "2026-09-08",
-   "sweep": 5,
+   "checked": "2026-08-13",
+   "sweep": 2,
    "candidates": []
   },
   "nra_006": {
    "city": "Nara",
    "name": "The Great Nagi of Kasuga Taisha",
-   "checked": "2026-09-08",
-   "sweep": 5,
+   "checked": "2026-08-13",
+   "sweep": 2,
    "candidates": []
   },
   "nra_008": {
    "city": "Nara",
    "name": "The Chinaberry of the East Pagoda Ruins",
-   "checked": "2026-09-08",
-   "sweep": 5,
+   "checked": "2026-08-13",
+   "sweep": 2,
    "candidates": [
     {
      "title": "File:Ginkgo tree in the temple (52541975425).jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ginkgo_tree_in_the_temple_%2852541975425%29.jpg/960px-Ginkgo_tree_in_the_temple_%2852541975425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ginkgo_tree_in_the_temple_%2852541975425%29.jpg/960px-Ginkgo_tree_in_the_temple_%2852541975425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_tree_in_the_temple_(52541975425).jpg",
      "licence": "CC BY 2.0",
-     "author": "Raita Futo from Tokyo, Japan",
-     "lat": 34.688052,
-     "lng": 135.844344,
-     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Ginkgo biloba in Japan in autumn Category:Japan photographs taken on 2022-11-22 Category:November 2022 in Nara Category:Tamukeyama-hachimangu"
+     "author": "Raita Futo from Tokyo, Japan"
     }
    ]
   },
@@ -10056,22 +10053,32 @@
   "utr_004": {
    "city": "Utrecht",
    "name": "The Oude Hortus Yew",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Citroenboom en zonnewijzer in Botanische tuin.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Citroenboom_en_zonnewijzer_in_Botanische_tuin.jpg/960px-Citroenboom_en_zonnewijzer_in_Botanische_tuin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Citroenboom_en_zonnewijzer_in_Botanische_tuin.jpg/960px-Citroenboom_en_zonnewijzer_in_Botanische_tuin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Citroenboom_en_zonnewijzer_in_Botanische_tuin.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Djuna Vaesen"
+     "author": "Djuna Vaesen",
+     "lat": 52.084911,
+     "lng": 5.126269,
+     "cats": "Category:2019 in Utrecht (city) Category:Armillary sphere sundials in the Netherlands Category:CC-BY-SA-4.0 Category:Lemon trees Category:Netherlands photographs taken on 2019-05-11 Category:Self-published work Category:Sundials in Utrecht (province) Category:Utrecht University Botanic Gardens",
+     "judged": "reject",
+     "verdict": "a lemon tree and a sundial, not the yew"
     },
     {
      "title": "File:Davidia Involicrata (Vaantjesboom of zakdoekenboom) in Botanische tuin.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Davidia_Involicrata_%28Vaantjesboom_of_zakdoekenboom%29_in_Botanische_tuin.jpg/960px-Davidia_Involicrata_%28Vaantjesboom_of_zakdoekenboom%29_in_Botanische_tuin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Davidia_Involicrata_%28Vaantjesboom_of_zakdoekenboom%29_in_Botanische_tuin.jpg/960px-Davidia_Involicrata_%28Vaantjesboom_of_zakdoekenboom%29_in_Botanische_tuin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Davidia_Involicrata_(Vaantjesboom_of_zakdoekenboom)_in_Botanische_tuin.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Djuna Vaesen"
+     "author": "Djuna Vaesen",
+     "lat": 52.08475,
+     "lng": 5.126836,
+     "cats": "Category:CC-BY-SA-4.0 Category:Davidia involucrata Category:Self-published work Category:Utrecht University Botanic Gardens",
+     "judged": "reject",
+     "verdict": "a handkerchief tree branch in flower, not the yew; and a branch close-up rather than a tree"
     }
    ]
   },
@@ -66100,207 +66107,1218 @@
     }
    ]
   },
-  "mgs_001": {
-   "city": "Magescq",
-   "name": "The Oak of Nerthe (Chêne de Nerthe)",
+  "utr_006": {
+   "city": "Utrecht",
+   "name": "The Copper Beech of Hieronymusplantsoen",
    "checked": "2026-09-08",
    "sweep": 5,
    "candidates": [
     {
-     "title": "File:Chene de Nerthe-1.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Chene_de_Nerthe-1.jpg/960px-Chene_de_Nerthe-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-1.jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_02.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_02.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Blef00fr",
-     "lat": 43.765077,
-     "lng": -1.117633,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the subject is the Hieronymusplantsoen public toilet"
     },
     {
-     "title": "File:Chene de Nerthe-2.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Chene_de_Nerthe-2.jpg/960px-Chene_de_Nerthe-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-2.jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_03.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_03.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Blef00fr",
-     "lat": 43.765009,
-     "lng": -1.117244,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the subject is the Hieronymusplantsoen public toilet"
     },
     {
-     "title": "File:Chene de Nerthe-3.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Chene_de_Nerthe-3.jpg/960px-Chene_de_Nerthe-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-3.jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_05.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_05.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Blef00fr",
-     "lat": 43.76537,
-     "lng": -1.117089,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the subject is the Hieronymusplantsoen public toilet"
     },
     {
-     "title": "File:Chene de Nerthe-4.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Chene_de_Nerthe-4.jpg/960px-Chene_de_Nerthe-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-4.jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_06.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_06.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Blef00fr",
-     "lat": 43.765465,
-     "lng": -1.117071,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
     },
     {
-     "title": "File:Chene de Nerthe-5.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Chene_de_Nerthe-5.jpg/960px-Chene_de_Nerthe-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-5.jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 07.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_07.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_07.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Blef00fr",
-     "lat": 43.76502,
-     "lng": -1.11729,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089947,
+     "lng": 5.129511,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
     },
     {
-     "title": "File:Le chêne de nerthe.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Le_ch%C3%AAne_de_nerthe.jpg/960px-Le_ch%C3%AAne_de_nerthe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Le_ch%C3%AAne_de_nerthe.jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 08.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_08.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_08.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Ribeiro Bruno",
-     "lat": 43.76512222,
-     "lng": -1.11741944,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2022-10-04 Category:Self-published work Category:Trees Category:Uploaded with Mobile/Android"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089947,
+     "lng": 5.129511,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
+    },
+    {
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 09.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_09.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_09.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089947,
+     "lng": 5.129511,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
+    },
+    {
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 10.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_10.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_10.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089947,
+     "lng": 5.129511,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
     }
    ]
   },
-  "nap_018": {
-   "city": "Naples",
-   "name": "The Cedar of Lebanon of the Principessa Jolanda Gardens",
-   "checked": "2026-09-08",
-   "sweep": 5,
-   "candidates": []
-  },
-  "nap_019": {
-   "city": "Naples",
-   "name": "The Podocarpus of Piazza Cavour",
+  "utr_007": {
+   "city": "Utrecht",
+   "name": "The Zocher Planes of Hieronymusplantsoen",
    "checked": "2026-09-08",
    "sweep": 5,
    "candidates": [
     {
-     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (seconda foto).jpg (Wikidata Q55741304)",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28seconda_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(seconda_foto).jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_01.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_01.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Jacksoniana1",
-     "lat": 40.854486,
-     "lng": 14.253067,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it",
-     "source": "wikidata/Q55741304"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the subject is the Hieronymusplantsoen public toilet"
     },
     {
-     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (Terza foto).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28Terza_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(Terza_foto).jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_02.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_02.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Jacksoniana1",
-     "lat": 40.854486,
-     "lng": 14.253067,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the subject is the Hieronymusplantsoen public toilet"
     },
     {
-     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (prima foto).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28prima_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(prima_foto).jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_03.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_03.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Jacksoniana1",
-     "lat": 40.854486,
-     "lng": 14.253067,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the subject is the Hieronymusplantsoen public toilet"
     },
     {
-     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (quarta foto).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28quarta_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(quarta_foto).jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_05.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_05.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Jacksoniana1",
-     "lat": 40.854486,
-     "lng": 14.253067,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
     },
     {
-     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (seconda foto).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28seconda_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(seconda_foto).jpg",
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_06.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_06.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Jacksoniana1",
-     "lat": 40.854486,
-     "lng": 14.253067,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089969,
+     "lng": 5.12795,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
+    },
+    {
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 07.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_07.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_07.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089947,
+     "lng": 5.129511,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
+    },
+    {
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 09.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_09.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_09.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089947,
+     "lng": 5.129511,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
+    },
+    {
+     "title": "File:Hieronymusplantsoen public toilet, Utrecht (2023) 10.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_10.jpg/960px-Hieronymusplantsoen_public_toilet%2C_Utrecht_%282023%29_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hieronymusplantsoen_public_toilet,_Utrecht_(2023)_10.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Origina",
+     "lat": 52.089947,
+     "lng": 5.129511,
+     "cats": "Category:April 2023 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2023-04-29 Category:Self-published work"
     }
    ]
   },
-  "nap_020": {
-   "city": "Naples",
-   "name": "The Eucalyptus of the Villa Comunale",
+  "utr_008": {
+   "city": "Utrecht",
+   "name": "The Oriental Plane of Janskerkhof",
    "checked": "2026-09-08",
    "sweep": 5,
    "candidates": [
     {
-     "title": "File:Eucalitto rostrato.jpg (Wikidata Q55741293)",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Eucalitto_rostrato.jpg/960px-Eucalitto_rostrato.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Eucalitto_rostrato.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Sordelli",
+     "title": "File:Janskerk op het Janskerkhof in Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Janskerk_op_het_Janskerkhof_in_Utrecht.jpg/960px-Janskerk_op_het_Janskerkhof_in_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Janskerk_op_het_Janskerkhof_in_Utrecht.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jan dijkstra",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Eucalyptus robusta Category:Files with coordinates missing SDC location of creation Category:Flora of Campania in May Category:Self-published work",
-     "source": "wikidata/Q55741293"
+     "cats": "Category:CC-BY-SA-4.0 Category:Janskerkhof Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Janskerkhof (Utrecht).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Janskerkhof_%28Utrecht%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Janskerkhof_(Utrecht).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Raph2009",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-migrated Category:FAL Category:GFDL Category:Janskerkhof Category:License migration redundant Category:Self-published work Category:Taken with Nikon Coolpix S210",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Janskerkhof 17 Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Janskerkhof_17_Utrecht.jpg/960px-Janskerkhof_17_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Janskerkhof_17_Utrecht.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Rosemoon",
+     "lat": 52.09381,
+     "lng": 5.12103,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Gemeentelijke monumenten in Utrecht (city) Category:Jacob de Petersen (1703–1780) Category:Janskerkhof Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ20",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
     }
    ]
   },
-  "nap_021": {
-   "city": "Naples",
-   "name": "The Ombu of Via Manzoni",
-   "checked": "2026-09-08",
-   "sweep": 5,
-   "candidates": []
-  },
-  "nap_022": {
-   "city": "Naples",
-   "name": "The Blue Palm of the Botanical Garden",
-   "checked": "2026-09-08",
-   "sweep": 5,
-   "candidates": []
-  },
-  "nap_023": {
-   "city": "Naples",
-   "name": "The Magnolia of Capodimonte",
+  "utr_009": {
+   "city": "Utrecht",
+   "name": "The Plane of Lucasbolwerk",
    "checked": "2026-09-08",
    "sweep": 5,
    "candidates": [
     {
-     "title": "File:Chandelier of the nineteenth century in the Museo di Capodimonte (Napoli).jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_%28Napoli%29.jpg/960px-Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_%28Napoli%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_(Napoli).jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Livioandronico2013",
-     "lat": null,
-     "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Ceilings in Naples Category:Chandeliers in Italy Category:Collections of art in the National Museum of Capodimonte (Naples) Category:Featured pictures by Livioandronico2013 Category:Featured pictures of Naples Category:Featured pictures of museums Category:Featured pictures of objects Category:Featured pictures on Wikimedia Commons Category:Painted ceilings in Italy Category:Quality images Category:Quality images by Livioandronico2013 Category:Quality images missing SDC depicts Category:Quality images of Naples Category:Quality images of chandeliers Category:Self-published work"
+     "title": "File:Lucasbolwerk, Utrecht - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Lucasbolwerk%2C_Utrecht_-_panoramio.jpg/960px-Lucasbolwerk%2C_Utrecht_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lucasbolwerk,_Utrecht_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "archengigi",
+     "lat": 52.093179,
+     "lng": 5.126753,
+     "cats": "Category:CC-BY-3.0 Category:Lucasbolwerk Category:Media needing category review as of 8 November 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Looked at. A park panorama whose subject is the fountain; no individual tree readable."
     },
     {
-     "title": "File:Museo Capodimonte Napoli fontana del belvedere.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg/960px-Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me",
-     "lat": 40.8662,
-     "lng": 14.25032,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Dolphin fountains Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Moroder/Naples Category:Palace of Capodimonte - Facade Category:Photos by Moroder Category:Quality images Category:Quality images by Moroder Category:Quality images of Naples Category:Self-published work Category:Taken with Nikon D800"
+     "title": "File:Luchtfoto van het Lucasbolwerk en omgeving te Utrecht - HUA-26352.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Luchtfoto_van_het_Lucasbolwerk_en_omgeving_te_Utrecht_-_HUA-26352.jpg/960px-Luchtfoto_van_het_Lucasbolwerk_en_omgeving_te_Utrecht_-_HUA-26352.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Luchtfoto_van_het_Lucasbolwerk_en_omgeving_te_Utrecht_-_HUA-26352.jpg",
+     "licence": "CC0",
+     "author": "Unknown - Het Utrechts Archief",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Aerial photographs of Utrecht (city) Category:Biltstraat Category:CC-Zero Category:Lucasbolwerk Category:Views of Utrecht (city) from south",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
     }
    ]
   },
-  "nap_024": {
-   "city": "Naples",
-   "name": "The Elephant's Foot of the Botanical Garden",
+  "utr_010": {
+   "city": "Utrecht",
+   "name": "The Caucasian Wingnut of Wilhelminapark",
    "checked": "2026-09-08",
    "sweep": 5,
    "candidates": []
+  },
+  "utr_011": {
+   "city": "Utrecht",
+   "name": "The Colchis Maple of Wilhelminapark",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "utr_012": {
+   "city": "Utrecht",
+   "name": "The Catalpa of Wilhelminapark",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "utr_013": {
+   "city": "Utrecht",
+   "name": "The Zocher Plane of Zonnenburg",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "this is utr_015's tree: the memorial sign at its foot reads BEVRIJDINGSBOOM. Geosearch attached the same file to every tree within ~120m"
+    },
+    {
+     "title": "File:HUA-135095-Gezicht uit het noorden over de stadsbuitengracht te Utrecht op het nog jonge singelplantsoen vanaf Lepelenburg naar Zonnenburg met links de Maliesing.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/HUA-135095-Gezicht_uit_het_noorden_over_de_stadsbuitengracht_te_Utrecht_op_het_nog_jonge_singelplantsoen_vanaf_Lepelenburg_naar_Zonnenburg_met_links_de_Maliesing.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-135095-Gezicht_uit_het_noorden_over_de_stadsbuitengracht_te_Utrecht_op_het_nog_jonge_singelplantsoen_vanaf_Lepelenburg_naar_Zonnenburg_met_links_de_Maliesing.jpg",
+     "licence": "Public domain",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-PD-Mark Category:Collection Drawings and Prints from Het Utrechts Archief Category:Files with no machine-readable author Category:Images from Het Utrechts Archief Category:Lepelenburg, Utrecht Category:Maliesingel Category:PD Old Category:Stadsbuitengracht Category:Uploaded with Img2Commons Category:Works after Reinier Craeyvanger Category:Zonnenburg, Utrecht",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:Zonnenburg, vanuit het zuiden - Utrecht - 20212402 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Zonnenburg%2C_vanuit_het_zuiden_-_Utrecht_-_20212402_-_RCE.jpg/960px-Zonnenburg%2C_vanuit_het_zuiden_-_Utrecht_-_20212402_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zonnenburg,_vanuit_het_zuiden_-_Utrecht_-_20212402_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "G.Th. Delemarre",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1955 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by G.Th. Delemarre Category:Rijksmonumentcomplexen with known IDs Category:Rijksmonumenten with known IDs Category:Sonnenborgh (Utrecht) Category:Water reflections of buildings in the Netherlands",
+     "judged": "reject",
+     "verdict": "Rijksdienst voor het Cultureel Erfgoed streetscape survey, the subject is the canal and buildings"
+    },
+    {
+     "title": "File:Zonnenburg - Utrecht - 20212400 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Zonnenburg_-_Utrecht_-_20212400_-_RCE.jpg/960px-Zonnenburg_-_Utrecht_-_20212400_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zonnenburg_-_Utrecht_-_20212400_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Unknown authorUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1950 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Rijksmonumentcomplexen with known IDs Category:Rijksmonumenten with known IDs Category:Sonnenborgh (Utrecht) Category:Template Unknown (author)"
+    },
+    {
+     "title": "File:Zonnenburg vanuit het noord-oosten - Utrecht - 20212403 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Zonnenburg_vanuit_het_noord-oosten_-_Utrecht_-_20212403_-_RCE.jpg/960px-Zonnenburg_vanuit_het_noord-oosten_-_Utrecht_-_20212403_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zonnenburg_vanuit_het_noord-oosten_-_Utrecht_-_20212403_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "G.Th. Delemarre",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1955 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by G.Th. Delemarre Category:Rijksmonumentcomplexen with known IDs Category:Rijksmonumenten with known IDs Category:Sonnenborgh (Utrecht)"
+    }
+   ]
+  },
+  "utr_014": {
+   "city": "Utrecht",
+   "name": "The Servaasbolwerk Plane",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "this is utr_015's tree: the memorial sign at its foot reads BEVRIJDINGSBOOM. Geosearch attached the same file to every tree within ~120m"
+    },
+    {
+     "title": "File:Hans Hubenet, Hans Rosenberg en Mart de Groot - Sterrenwacht Sonnenborgh, Servaasbolwerk, Utrecht 1968-1969.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hans_Hubenet%2C_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh%2C_Servaasbolwerk%2C_Utrecht_1968-1969.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Hans_Hubenet,_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh,_Servaasbolwerk,_Utrecht_1968-1969.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hans Nieuwenhuijzen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Attribution only license Category:CC-BY-SA-4.0 Category:Hans Rosenberg Category:Items with VRTS permission confirmed Category:Photographs by Hans Nieuwenhuijzen Category:Servaasbolwerk, Utrecht Category:Sonnenborgh (Utrecht)",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Servaasbolwerk 12, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Servaasbolwerk_12%2C_Utrecht.jpg/960px-Servaasbolwerk_12%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_12,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2010-07-06 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 11-13, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    },
+    {
+     "title": "File:Servaasbolwerk 14, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Servaasbolwerk_14%2C_Utrecht.jpg/960px-Servaasbolwerk_14%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_14,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 14, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10"
+    }
+   ]
+  },
+  "utr_015": {
+   "city": "Utrecht",
+   "name": "The Liberation Beech of Servaasbolwerk",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "approve",
+     "verdict": "Looked at. Copper beech in full leaf, whole crown and trunk readable, daylight, colour, tree fills the frame and survives a centre crop. Positively identified: the white memorial sign at its foot read"
+    },
+    {
+     "title": "File:Hans Hubenet, Hans Rosenberg en Mart de Groot - Sterrenwacht Sonnenborgh, Servaasbolwerk, Utrecht 1968-1969.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hans_Hubenet%2C_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh%2C_Servaasbolwerk%2C_Utrecht_1968-1969.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Hans_Hubenet,_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh,_Servaasbolwerk,_Utrecht_1968-1969.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hans Nieuwenhuijzen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Attribution only license Category:CC-BY-SA-4.0 Category:Hans Rosenberg Category:Items with VRTS permission confirmed Category:Photographs by Hans Nieuwenhuijzen Category:Servaasbolwerk, Utrecht Category:Sonnenborgh (Utrecht)",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Servaasbolwerk 12, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Servaasbolwerk_12%2C_Utrecht.jpg/960px-Servaasbolwerk_12%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_12,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2010-07-06 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 11-13, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    },
+    {
+     "title": "File:Servaasbolwerk 14, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Servaasbolwerk_14%2C_Utrecht.jpg/960px-Servaasbolwerk_14%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_14,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 14, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10"
+    }
+   ]
+  },
+  "utr_016": {
+   "city": "Utrecht",
+   "name": "The Oriental Plane of Lepelenburg",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:HUA-30650-Gezicht over de stadsbuitengracht op de stadswal te Utrecht uit het noordoosten met links de noordoostpunt van het bastion Lepelenburg rechts daarvan .jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/HUA-30650-Gezicht_over_de_stadsbuitengracht_op_de_stadswal_te_Utrecht_uit_het_noordoosten_met_links_de_noordoostpunt_van_het_bastion_Lepelenburg_rechts_daarvan_.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-30650-Gezicht_over_de_stadsbuitengracht_op_de_stadswal_te_Utrecht_uit_het_noordoosten_met_links_de_noordoostpunt_van_het_bastion_Lepelenburg_rechts_daarvan_.jpg",
+     "licence": "Public domain",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-PD-Mark Category:Collection Drawings and Prints from Het Utrechts Archief Category:Drawings by Dirk Verrijk Category:Files with no machine-readable author Category:Images from Het Utrechts Archief Category:Lepelenburg, Utrecht Category:PD-old missing SDC copyright status Category:PD Old Category:Uploaded with Img2Commons",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:HUA-35217-Gezicht op de zijgevels van het huis Lepelenburg te Utrecht uit het zuiden met links de tuinmuur langs de Brigittenstraat en rechts enkele bomen op de.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/HUA-35217-Gezicht_op_de_zijgevels_van_het_huis_Lepelenburg_te_Utrecht_uit_het_zuiden_met_links_de_tuinmuur_langs_de_Brigittenstraat_en_rechts_enkele_bomen_op_de.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-35217-Gezicht_op_de_zijgevels_van_het_huis_Lepelenburg_te_Utrecht_uit_het_zuiden_met_links_de_tuinmuur_langs_de_Brigittenstraat_en_rechts_enkele_bomen_op_de.jpg",
+     "licence": "Public domain",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-PD-Mark Category:Collection Drawings and Prints from Het Utrechts Archief Category:Files with no machine-readable author Category:Images from Het Utrechts Archief Category:Lepelenburg, Utrecht Category:PD Old Category:Uploaded with Img2Commons Category:Views of Utrecht (city) from south",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:Huis Lepelenburg te Utrecht.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/38/Huis_Lepelenburg_te_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Huis_Lepelenburg_te_Utrecht.jpg",
+     "licence": "Public domain",
+     "author": "AnonymousUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-PD-Mark Category:Lepelenburg, Utrecht Category:PD-old missing SDC copyright status Category:PD Old Category:Utrecht (city) in art",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Tekening Lepelenburg - Utrecht - 20234985 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Tekening_Lepelenburg_-_Utrecht_-_20234985_-_RCE.jpg/960px-Tekening_Lepelenburg_-_Utrecht_-_20234985_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tekening_Lepelenburg_-_Utrecht_-_20234985_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Kramer, W. (Fotograaf)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bruntskameren Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lepelenburg, Utrecht Category:Photographs by W. Kramer Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs"
+    }
+   ]
+  },
+  "utr_017": {
+   "city": "Utrecht",
+   "name": "The Markiezeneik of Amelisweerd",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Markiezeneik in het markiezenbos van Amelisweerd.jpg (Wikidata Q120727126)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Markiezeneik_in_het_markiezenbos_van_Amelisweerd.jpg/960px-Markiezeneik_in_het_markiezenbos_van_Amelisweerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Markiezeneik_in_het_markiezenbos_van_Amelisweerd.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "DrAttendoloSforza",
+     "lat": 52.071033,
+     "lng": 5.151456,
+     "cats": "Category:Amelisweerd Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Self-published work",
+     "source": "wikidata/Q120727126",
+     "judged": "reject",
+     "verdict": "Looked at. Unmistakably the Markiezeneik, but a worm-eye view straight up a bare winter trunk: no readable crown, effectively a bark close-up, dim grey light. Fails the Cadiz standard. A proper portra"
+    },
+    {
+     "title": "File:Amelisweerd Koningsweg Utrecht Nederland.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Amelisweerd_Koningsweg_Utrecht_Nederland.JPG/960px-Amelisweerd_Koningsweg_Utrecht_Nederland.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Amelisweerd_Koningsweg_Utrecht_Nederland.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Antoine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2012 in Utrecht (city) Category:Amelisweerd Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files by User:Antoine.01 Category:GFDL Category:Koningsweg (Utrecht) Category:License migration redundant Category:Netherlands photographs taken on 2012-10-18 Category:Self-published work Category:Taken with Olympus FE-130 / X-720",
+     "judged": "reject",
+     "verdict": "Looked at. Unmistakably the Markiezeneik, but a worm-eye view straight up a bare winter trunk: no readable crown, effectively a bark close-up, dim grey light. Fails the Cadiz standard. A proper portra"
+    },
+    {
+     "title": "File:Markiezeneik in het markiezenbos van Amelisweerd.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Markiezeneik_in_het_markiezenbos_van_Amelisweerd.jpg/960px-Markiezeneik_in_het_markiezenbos_van_Amelisweerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Markiezeneik_in_het_markiezenbos_van_Amelisweerd.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "DrAttendoloSforza",
+     "lat": 52.071033,
+     "lng": 5.151456,
+     "cats": "Category:Amelisweerd Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Self-published work"
+    }
+   ]
+  },
+  "utr_018": {
+   "city": "Utrecht",
+   "name": "The Thickest Plane of the Zocherpark",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "this is utr_015's tree: the memorial sign at its foot reads BEVRIJDINGSBOOM. Geosearch attached the same file to every tree within ~120m"
+    },
+    {
+     "title": "File:Lars Boom - Tour de France 2015 (18814779323).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg/960px-Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lars_Boom_-_Tour_de_France_2015_(18814779323).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Rob Schleiffert from Holland",
+     "lat": 52.085341,
+     "lng": 5.130144,
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Lars Boom in 2015 Category:Team Astana, Tour de France 2015 Category:Tour de France 2015, étape 1",
+     "judged": "reject",
+     "verdict": "a Tour de France cyclist, no tree is the subject"
+    }
+   ]
+  },
+  "utr_019": {
+   "city": "Utrecht",
+   "name": "The Old Copper Beech of Servaasbolwerk",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "this is utr_015's tree: the memorial sign at its foot reads BEVRIJDINGSBOOM. Geosearch attached the same file to every tree within ~120m"
+    },
+    {
+     "title": "File:Hans Hubenet, Hans Rosenberg en Mart de Groot - Sterrenwacht Sonnenborgh, Servaasbolwerk, Utrecht 1968-1969.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hans_Hubenet%2C_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh%2C_Servaasbolwerk%2C_Utrecht_1968-1969.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Hans_Hubenet,_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh,_Servaasbolwerk,_Utrecht_1968-1969.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hans Nieuwenhuijzen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Attribution only license Category:CC-BY-SA-4.0 Category:Hans Rosenberg Category:Items with VRTS permission confirmed Category:Photographs by Hans Nieuwenhuijzen Category:Servaasbolwerk, Utrecht Category:Sonnenborgh (Utrecht)",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Servaasbolwerk 12, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Servaasbolwerk_12%2C_Utrecht.jpg/960px-Servaasbolwerk_12%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_12,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2010-07-06 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 11-13, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    },
+    {
+     "title": "File:Servaasbolwerk 14, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Servaasbolwerk_14%2C_Utrecht.jpg/960px-Servaasbolwerk_14%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_14,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 14, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10"
+    }
+   ]
+  },
+  "utr_020": {
+   "city": "Utrecht",
+   "name": "The Oriental Plane of Van Asch van Wijckskade",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Utrecht - De Ouzerie - Van Asch van Wijckskade 26.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Utrecht_-_De_Ouzerie_-_Van_Asch_van_Wijckskade_26.jpg/960px-Utrecht_-_De_Ouzerie_-_Van_Asch_van_Wijckskade_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Utrecht_-_De_Ouzerie_-_Van_Asch_van_Wijckskade_26.jpg",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "Poculon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2011 in Utrecht (city) Category:CC-BY-SA-3.0-NL Category:Gemeentelijke monumenten in Utrecht (city) Category:Houses in Utrecht (city) Category:Netherlands photographs taken on 2011-09-29 Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ18 Category:Van Asch van Wijckskade",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    },
+    {
+     "title": "File:VanAschVanWijckskade.19.Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/VanAschVanWijckskade.19.Utrecht.jpg/960px-VanAschVanWijckskade.19.Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:VanAschVanWijckskade.19.Utrecht.jpg",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "China Crisis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-05 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-GF1 Category:Van Asch van Wijckskade 19, Utrecht",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    },
+    {
+     "title": "File:Van Asch van Wijckskade 1 Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Van_Asch_van_Wijckskade_1_Utrecht.jpg/960px-Van_Asch_van_Wijckskade_1_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Van_Asch_van_Wijckskade_1_Utrecht.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Arjandb",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus E-P1 Category:Van Asch van Wijckskade 1, Utrecht",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    },
+    {
+     "title": "File:Van Asch van Wijckskade 2-4 Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Van_Asch_van_Wijckskade_2-4_Utrecht.jpg/960px-Van_Asch_van_Wijckskade_2-4_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Van_Asch_van_Wijckskade_2-4_Utrecht.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Arjandb",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus E-P1 Category:Van Asch van Wijckskade 2, Utrecht"
+    },
+    {
+     "title": "File:Van Asch van Wijckskade 8, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Van_Asch_van_Wijckskade_8%2C_Utrecht.jpg/960px-Van_Asch_van_Wijckskade_8%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Van_Asch_van_Wijckskade_8,_Utrecht.jpg",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "Poculon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Netherlands photographs taken on 2011-09-29 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ18 Category:Van Asch van Wijckskade 8, Utrecht"
+    },
+    {
+     "title": "iNat obs 140391022 (Platanus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/240308786/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/140391022",
+     "licence": "CC BY",
+     "author": "(c) Gijs Romijn, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "52.096698,5.1226669722"
+    },
+    {
+     "title": "iNat obs 140391022 (Platanus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/240308807/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/140391022",
+     "licence": "CC BY",
+     "author": "(c) Gijs Romijn, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "52.096698,5.1226669722"
+    }
+   ]
+  },
+  "utr_021": {
+   "city": "Utrecht",
+   "name": "The Turkey Oaks of Geertebolwerk",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:HUA-35346-Gezicht op enige huizen aan het Geertebolwerk te Utrecht met rechts de ingang van de Andreasstraat.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/HUA-35346-Gezicht_op_enige_huizen_aan_het_Geertebolwerk_te_Utrecht_met_rechts_de_ingang_van_de_Andreasstraat.jpg/960px-HUA-35346-Gezicht_op_enige_huizen_aan_het_Geertebolwerk_te_Utrecht_met_rechts_de_ingang_van_de_Andreasstraat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-35346-Gezicht_op_enige_huizen_aan_het_Geertebolwerk_te_Utrecht_met_rechts_de_ingang_van_de_Andreasstraat.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Pol, A. van de, fotograaf/tekenaar/graficus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:A. van de Pol Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-BY-4.0 Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:Uploaded with Img2Commons",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:HUA-35348-Gezicht op de huizen aan het Geertebolwerk te Utrecht tussen de Tuinstraat links en de Andreasstraat rechts uit het zuidwesten.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/HUA-35348-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Tuinstraat_links_en_de_Andreasstraat_rechts_uit_het_zuidwesten.jpg/960px-HUA-35348-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Tuinstraat_links_en_de_Andreasstraat_rechts_uit_het_zuidwesten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-35348-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Tuinstraat_links_en_de_Andreasstraat_rechts_uit_het_zuidwesten.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Pol, A. van de, fotograaf/tekenaar/graficus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:A. van de Pol Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-BY-4.0 Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:Uploaded with Img2Commons",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:HUA-35349-Gezicht op de huizen aan het Geertebolwerk te Utrecht tussen de Andreasstraat geheel links en de Lange Smeestraat rechts uit het zuidwesten.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/HUA-35349-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Andreasstraat_geheel_links_en_de_Lange_Smeestraat_rechts_uit_het_zuidwesten.jpg/960px-HUA-35349-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Andreasstraat_geheel_links_en_de_Lange_Smeestraat_rechts_uit_het_zuidwesten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-35349-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Andreasstraat_geheel_links_en_de_Lange_Smeestraat_rechts_uit_het_zuidwesten.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Pol, A. van de, fotograaf/tekenaar/graficus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:A. van de Pol Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-BY-4.0 Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:Uploaded with Img2Commons",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:Van af Geertebolwerk - Utrecht - 20236981 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Van_af_Geertebolwerk_-_Utrecht_-_20236981_-_RCE.jpg/960px-Van_af_Geertebolwerk_-_Utrecht_-_20236981_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Van_af_Geertebolwerk_-_Utrecht_-_20236981_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1966 in Utrecht (city) Category:Bartholomeïgasthuis Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Geertebolwerk Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat Category:Photographs by Ton van der Wal Category:Rijksmonumenten with known IDs"
+    },
+    {
+     "title": "File:Van af Geertebolwerk - Utrecht - 20236982 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Van_af_Geertebolwerk_-_Utrecht_-_20236982_-_RCE.jpg/960px-Van_af_Geertebolwerk_-_Utrecht_-_20236982_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Van_af_Geertebolwerk_-_Utrecht_-_20236982_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1966 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat"
+    }
+   ]
+  },
+  "utr_022": {
+   "city": "Utrecht",
+   "name": "The Beech of Lucasbolwerk",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Lucasbolwerk, Utrecht - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Lucasbolwerk%2C_Utrecht_-_panoramio.jpg/960px-Lucasbolwerk%2C_Utrecht_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lucasbolwerk,_Utrecht_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "archengigi",
+     "lat": 52.093179,
+     "lng": 5.126753,
+     "cats": "Category:CC-BY-3.0 Category:Lucasbolwerk Category:Media needing category review as of 8 November 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Looked at. A park panorama whose subject is the fountain; no individual tree readable."
+    },
+    {
+     "title": "File:Luchtfoto van het Lucasbolwerk en omgeving te Utrecht - HUA-26352.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Luchtfoto_van_het_Lucasbolwerk_en_omgeving_te_Utrecht_-_HUA-26352.jpg/960px-Luchtfoto_van_het_Lucasbolwerk_en_omgeving_te_Utrecht_-_HUA-26352.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Luchtfoto_van_het_Lucasbolwerk_en_omgeving_te_Utrecht_-_HUA-26352.jpg",
+     "licence": "CC0",
+     "author": "Unknown - Het Utrechts Archief",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Aerial photographs of Utrecht (city) Category:Biltstraat Category:CC-Zero Category:Lucasbolwerk Category:Views of Utrecht (city) from south",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    }
+   ]
+  },
+  "utr_023": {
+   "city": "Utrecht",
+   "name": "The Maple of the Memorial Beech",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "this is utr_015's tree: the memorial sign at its foot reads BEVRIJDINGSBOOM. Geosearch attached the same file to every tree within ~120m"
+    },
+    {
+     "title": "File:Lars Boom - Tour de France 2015 (18814779323).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg/960px-Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lars_Boom_-_Tour_de_France_2015_(18814779323).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Rob Schleiffert from Holland",
+     "lat": 52.085341,
+     "lng": 5.130144,
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Lars Boom in 2015 Category:Team Astana, Tour de France 2015 Category:Tour de France 2015, étape 1",
+     "judged": "reject",
+     "verdict": "a Tour de France cyclist, no tree is the subject"
+    }
+   ]
+  },
+  "utr_024": {
+   "city": "Utrecht",
+   "name": "The Elm of the Wilhelminapark West Gate",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "utr_025": {
+   "city": "Utrecht",
+   "name": "The Pagoda Tree of Lepelenburg",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:HUA-30650-Gezicht over de stadsbuitengracht op de stadswal te Utrecht uit het noordoosten met links de noordoostpunt van het bastion Lepelenburg rechts daarvan .jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/HUA-30650-Gezicht_over_de_stadsbuitengracht_op_de_stadswal_te_Utrecht_uit_het_noordoosten_met_links_de_noordoostpunt_van_het_bastion_Lepelenburg_rechts_daarvan_.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-30650-Gezicht_over_de_stadsbuitengracht_op_de_stadswal_te_Utrecht_uit_het_noordoosten_met_links_de_noordoostpunt_van_het_bastion_Lepelenburg_rechts_daarvan_.jpg",
+     "licence": "Public domain",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-PD-Mark Category:Collection Drawings and Prints from Het Utrechts Archief Category:Drawings by Dirk Verrijk Category:Files with no machine-readable author Category:Images from Het Utrechts Archief Category:Lepelenburg, Utrecht Category:PD-old missing SDC copyright status Category:PD Old Category:Uploaded with Img2Commons",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:HUA-36562-Gezicht vanaf het bolwerk Lepelenburg over de stadsbuitengracht op de stadswal te Utrecht uit het noorden met op de achtergrond het bastion Zonnenburg.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/HUA-36562-Gezicht_vanaf_het_bolwerk_Lepelenburg_over_de_stadsbuitengracht_op_de_stadswal_te_Utrecht_uit_het_noorden_met_op_de_achtergrond_het_bastion_Zonnenburg.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-36562-Gezicht_vanaf_het_bolwerk_Lepelenburg_over_de_stadsbuitengracht_op_de_stadswal_te_Utrecht_uit_het_noorden_met_op_de_achtergrond_het_bastion_Zonnenburg.jpg",
+     "licence": "Public domain",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-PD-Mark Category:City walls of Utrecht (city) Category:Collection Drawings and Prints from Het Utrechts Archief Category:Drawings by Andries Both Category:Files with no machine-readable author Category:Images from Het Utrechts Archief Category:Lepelenburg, Utrecht Category:PD-old missing SDC copyright status Category:PD Old Category:Uploaded with Img2Commons Category:Views of Utrecht (city) from north",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:Huis Lepelenburg te Utrecht.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/38/Huis_Lepelenburg_te_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Huis_Lepelenburg_te_Utrecht.jpg",
+     "licence": "Public domain",
+     "author": "AnonymousUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-PD-Mark Category:Lepelenburg, Utrecht Category:PD-old missing SDC copyright status Category:PD Old Category:Utrecht (city) in art",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Tekening Lepelenburg - Utrecht - 20234985 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Tekening_Lepelenburg_-_Utrecht_-_20234985_-_RCE.jpg/960px-Tekening_Lepelenburg_-_Utrecht_-_20234985_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tekening_Lepelenburg_-_Utrecht_-_20234985_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Kramer, W. (Fotograaf)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bruntskameren Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lepelenburg, Utrecht Category:Photographs by W. Kramer Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs"
+    }
+   ]
+  },
+  "utr_026": {
+   "city": "Utrecht",
+   "name": "The Copper Beech of the Servaasbolwerk",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Hans Hubenet, Hans Rosenberg en Mart de Groot - Sterrenwacht Sonnenborgh, Servaasbolwerk, Utrecht 1968-1969.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hans_Hubenet%2C_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh%2C_Servaasbolwerk%2C_Utrecht_1968-1969.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Hans_Hubenet,_Hans_Rosenberg_en_Mart_de_Groot_-_Sterrenwacht_Sonnenborgh,_Servaasbolwerk,_Utrecht_1968-1969.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hans Nieuwenhuijzen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Attribution only license Category:CC-BY-SA-4.0 Category:Hans Rosenberg Category:Items with VRTS permission confirmed Category:Photographs by Hans Nieuwenhuijzen Category:Servaasbolwerk, Utrecht Category:Sonnenborgh (Utrecht)",
+     "judged": "reject",
+     "verdict": "the subject is the building, not a tree"
+    },
+    {
+     "title": "File:Servaasbolwerk 12, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Servaasbolwerk_12%2C_Utrecht.jpg/960px-Servaasbolwerk_12%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_12,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2010-07-06 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 11-13, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    },
+    {
+     "title": "File:Servaasbolwerk 14, Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Servaasbolwerk_14%2C_Utrecht.jpg/960px-Servaasbolwerk_14%2C_Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Servaasbolwerk_14,_Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08707778,
+     "lng": 5.12850556,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Servaasbolwerk 14, Utrecht Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    }
+   ]
+  },
+  "utr_027": {
+   "city": "Utrecht",
+   "name": "The Horse Chestnut by the Herenstraat Bridge",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Herenstraat.28.Utrecht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Herenstraat.28.Utrecht.jpg/960px-Herenstraat.28.Utrecht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Herenstraat.28.Utrecht.jpg",
+     "licence": "CC BY 3.0",
+     "author": "China Crisis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:Herenstraat 28, Utrecht Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-GF1",
+     "judged": "reject",
+     "verdict": "Looked at (Servaasbolwerk 12). A house facade with foliage overhanging; the subject is the building."
+    }
+   ]
+  },
+  "utr_028": {
+   "city": "Utrecht",
+   "name": "The Lime of the Van Limburg Stirumlaan",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "utr_029": {
+   "city": "Utrecht",
+   "name": "The Silver Maples of the Andrea Monument",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "utr_030": {
+   "city": "Utrecht",
+   "name": "The Hornbeam of the Old Observatory Path",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "this is utr_015's tree: the memorial sign at its foot reads BEVRIJDINGSBOOM. Geosearch attached the same file to every tree within ~120m"
+    },
+    {
+     "title": "File:Lars Boom - Tour de France 2015 (18814779323).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg/960px-Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lars_Boom_-_Tour_de_France_2015_(18814779323).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Rob Schleiffert from Holland",
+     "lat": 52.085341,
+     "lng": 5.130144,
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Lars Boom in 2015 Category:Team Astana, Tour de France 2015 Category:Tour de France 2015, étape 1",
+     "judged": "reject",
+     "verdict": "a Tour de France cyclist, no tree is the subject"
+    }
+   ]
+  },
+  "utr_031": {
+   "city": "Utrecht",
+   "name": "The Old Pear of the Geertebolwerk",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bevrijdingsboom Servaasbolwerk Utrecht.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG/960px-Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bevrijdingsboom_Servaasbolwerk_Utrecht.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Kattenkruid",
+     "lat": 52.08625,
+     "lng": 5.128356,
+     "cats": "Category:2010 in Utrecht (city) Category:CC-BY-3.0 Category:Fagus sylvatica in Utrecht (province) Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:GFDL Category:License migration redundant Category:Memorial trees in the Netherlands Category:Museumkwartier, Utrecht Category:Netherlands photographs taken on 2010-07-06 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
+     "judged": "reject",
+     "verdict": "this is utr_015's tree: the memorial sign at its foot reads BEVRIJDINGSBOOM. Geosearch attached the same file to every tree within ~120m"
+    },
+    {
+     "title": "File:HUA-35346-Gezicht op enige huizen aan het Geertebolwerk te Utrecht met rechts de ingang van de Andreasstraat.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/HUA-35346-Gezicht_op_enige_huizen_aan_het_Geertebolwerk_te_Utrecht_met_rechts_de_ingang_van_de_Andreasstraat.jpg/960px-HUA-35346-Gezicht_op_enige_huizen_aan_het_Geertebolwerk_te_Utrecht_met_rechts_de_ingang_van_de_Andreasstraat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-35346-Gezicht_op_enige_huizen_aan_het_Geertebolwerk_te_Utrecht_met_rechts_de_ingang_van_de_Andreasstraat.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Pol, A. van de, fotograaf/tekenaar/graficus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:A. van de Pol Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-BY-4.0 Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:Uploaded with Img2Commons",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:HUA-35348-Gezicht op de huizen aan het Geertebolwerk te Utrecht tussen de Tuinstraat links en de Andreasstraat rechts uit het zuidwesten.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/HUA-35348-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Tuinstraat_links_en_de_Andreasstraat_rechts_uit_het_zuidwesten.jpg/960px-HUA-35348-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Tuinstraat_links_en_de_Andreasstraat_rechts_uit_het_zuidwesten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-35348-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Tuinstraat_links_en_de_Andreasstraat_rechts_uit_het_zuidwesten.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Pol, A. van de, fotograaf/tekenaar/graficus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:A. van de Pol Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-BY-4.0 Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:Uploaded with Img2Commons"
+    },
+    {
+     "title": "File:HUA-35349-Gezicht op de huizen aan het Geertebolwerk te Utrecht tussen de Andreasstraat geheel links en de Lange Smeestraat rechts uit het zuidwesten.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/HUA-35349-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Andreasstraat_geheel_links_en_de_Lange_Smeestraat_rechts_uit_het_zuidwesten.jpg/960px-HUA-35349-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Andreasstraat_geheel_links_en_de_Lange_Smeestraat_rechts_uit_het_zuidwesten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-35349-Gezicht_op_de_huizen_aan_het_Geertebolwerk_te_Utrecht_tussen_de_Andreasstraat_geheel_links_en_de_Lange_Smeestraat_rechts_uit_het_zuidwesten.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Pol, A. van de, fotograaf/tekenaar/graficus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:A. van de Pol Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-BY-4.0 Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:Uploaded with Img2Commons"
+    },
+    {
+     "title": "File:Lars Boom - Tour de France 2015 (18814779323).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg/960px-Lars_Boom_-_Tour_de_France_2015_%2818814779323%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lars_Boom_-_Tour_de_France_2015_(18814779323).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Rob Schleiffert from Holland",
+     "lat": 52.085341,
+     "lng": 5.130144,
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Lars Boom in 2015 Category:Team Astana, Tour de France 2015 Category:Tour de France 2015, étape 1",
+     "judged": "reject",
+     "verdict": "a Tour de France cyclist, no tree is the subject"
+    },
+    {
+     "title": "File:Van af Geertebolwerk - Utrecht - 20236981 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Van_af_Geertebolwerk_-_Utrecht_-_20236981_-_RCE.jpg/960px-Van_af_Geertebolwerk_-_Utrecht_-_20236981_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Van_af_Geertebolwerk_-_Utrecht_-_20236981_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1966 in Utrecht (city) Category:Bartholomeïgasthuis Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Geertebolwerk Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat Category:Photographs by Ton van der Wal Category:Rijksmonumenten with known IDs"
+    },
+    {
+     "title": "File:Van af Geertebolwerk - Utrecht - 20236982 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Van_af_Geertebolwerk_-_Utrecht_-_20236982_-_RCE.jpg/960px-Van_af_Geertebolwerk_-_Utrecht_-_20236982_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Van_af_Geertebolwerk_-_Utrecht_-_20236982_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1966 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat"
+    }
+   ]
+  },
+  "utr_032": {
+   "city": "Utrecht",
+   "name": "The Black Walnut of the Tolsteegbrug",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Catharijnesingel bij Tolsteegbrug - Utrecht - 20212263 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Catharijnesingel_bij_Tolsteegbrug_-_Utrecht_-_20212263_-_RCE.jpg/960px-Catharijnesingel_bij_Tolsteegbrug_-_Utrecht_-_20212263_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Catharijnesingel_bij_Tolsteegbrug_-_Utrecht_-_20212263_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1967 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Catharijnesingel Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal Category:Tolsteegbrug",
+     "judged": "reject",
+     "verdict": "Rijksdienst voor het Cultureel Erfgoed streetscape survey, the subject is the canal and buildings"
+    },
+    {
+     "title": "File:Catharijnesingel vanaf Tolsteegbrug - Utrecht - 20212264 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Catharijnesingel_vanaf_Tolsteegbrug_-_Utrecht_-_20212264_-_RCE.jpg/960px-Catharijnesingel_vanaf_Tolsteegbrug_-_Utrecht_-_20212264_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Catharijnesingel_vanaf_Tolsteegbrug_-_Utrecht_-_20212264_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1967 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Catharijnesingel Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal Category:Stadsbuitengracht Category:Tolsteegbrug",
+     "judged": "reject",
+     "verdict": "Rijksdienst voor het Cultureel Erfgoed streetscape survey, the subject is the canal and buildings"
+    },
+    {
+     "title": "File:HUA-36866-Gezicht vanaf de Catharijnesingel over de stadsbuitengracht te Utrecht op de Tolsteegbrug uit het westen.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/HUA-36866-Gezicht_vanaf_de_Catharijnesingel_over_de_stadsbuitengracht_te_Utrecht_op_de_Tolsteegbrug_uit_het_westen.jpg/960px-HUA-36866-Gezicht_vanaf_de_Catharijnesingel_over_de_stadsbuitengracht_te_Utrecht_op_de_Tolsteegbrug_uit_het_westen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-36866-Gezicht_vanaf_de_Catharijnesingel_over_de_stadsbuitengracht_te_Utrecht_op_de_Tolsteegbrug_uit_het_westen.jpg",
+     "licence": "Public domain",
+     "author": "Wouters, A., tekenaar/graficus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-PD-Mark Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:PD-old missing SDC copyright status Category:PD Old Category:Tolsteegbrug Category:Uploaded with Img2Commons Category:Utrechtsche Volks-Almanak",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:HUA-804916-Gezicht op de stadsbuitengracht met de Tolsteegbrug te Utrecht uit het oosten.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/64/HUA-804916-Gezicht_op_de_stadsbuitengracht_met_de_Tolsteegbrug_te_Utrecht_uit_het_oosten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-804916-Gezicht_op_de_stadsbuitengracht_met_de_Tolsteegbrug_te_Utrecht_uit_het_oosten.jpg",
+     "licence": "Public domain",
+     "author": "Teyssen, G.F., schilder",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-PD-Mark Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:PD-old missing SDC copyright status Category:PD Old Category:Tolsteegbrug Category:Uploaded with Img2Commons Category:Views of Utrecht (city) from east"
+    },
+    {
+     "title": "File:Overzicht vanaf de Tolsteegbrug - Utrecht - 20329950 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Overzicht_vanaf_de_Tolsteegbrug_-_Utrecht_-_20329950_-_RCE.jpg/960px-Overzicht_vanaf_de_Tolsteegbrug_-_Utrecht_-_20329950_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_vanaf_de_Tolsteegbrug_-_Utrecht_-_20329950_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ger Barbiers",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2003 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Louis Hartlooper Complex Category:Netherlands photographs taken on 2003-05-07 Category:Photographs by Ger Barbiers Category:Rijksmonumenten with known IDs Category:Tolsteegbrug"
+    }
+   ]
+  },
+  "utr_033": {
+   "city": "Utrecht",
+   "name": "The Field Maple of the Bartholomeibrug",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:HUA-30985-Gezicht vanuit het plantsoen langs de Pelmolenweg op de stadsbuitengracht met de Bartholomeibrug te Utrecht uit het oosten met op de achtergrond de be.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/HUA-30985-Gezicht_vanuit_het_plantsoen_langs_de_Pelmolenweg_op_de_stadsbuitengracht_met_de_Bartholomeibrug_te_Utrecht_uit_het_oosten_met_op_de_achtergrond_de_be.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HUA-30985-Gezicht_vanuit_het_plantsoen_langs_de_Pelmolenweg_op_de_stadsbuitengracht_met_de_Bartholomeibrug_te_Utrecht_uit_het_oosten_met_op_de_achtergrond_de_be.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Tonneyck, R.P., tekenaar",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:Bartholomeusbrug, Utrecht Category:CC-BY-4.0 Category:Collection Drawings and Prints from Het Utrechts Archief Category:Images from Het Utrechts Archief Category:Uploaded with Img2Commons Category:Views of Utrecht (city) from east",
+     "judged": "reject",
+     "verdict": "Het Utrechts Archief historical photograph, archival/monochrome (never ships, whatever the atmosphere)"
+    },
+    {
+     "title": "File:Meanders Bartholomeibrug, Utrecht, 120930.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Meanders_Bartholomeibrug%2C_Utrecht%2C_120930.JPG/960px-Meanders_Bartholomeibrug%2C_Utrecht%2C_120930.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Meanders_Bartholomeibrug,_Utrecht,_120930.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "DirkvdM",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2012 in Utrecht (city) Category:Bartholomeusbrug, Utrecht Category:CC-BY-SA-3.0 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration completed Category:Netherlands photographs taken on 2012-09-30 Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ8",
+     "judged": "reject",
+     "verdict": "Looked at. A street and bridge scene; no individual tree is the subject."
+    },
+    {
+     "title": "File:Utrecht, de Bartholomeibrug 2015-11-01 15.36.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Utrecht%2C_de_Bartholomeibrug_2015-11-01_15.36.jpg/960px-Utrecht%2C_de_Bartholomeibrug_2015-11-01_15.36.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Utrecht,_de_Bartholomeibrug_2015-11-01_15.36.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michielverbeek",
+     "lat": 52.08527778,
+     "lng": 5.11888889,
+     "cats": "Category:Bartholomeusbrug, Utrecht Category:CC-BY-SA-4.0 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Looked at. A street and bridge scene; no individual tree is the subject."
+    }
+   ]
   }
  },
  "notes": [
