@@ -594,7 +594,8 @@
         "status": "missing"
       },
       "transport": "",
-      "verify_notes": "2026-09-08: source field was empty while the story already quoted Munich's Verordnung ueber Naturdenkmaeler. Checked the ordinance directly; both entries are in it verbatim. Single source, so flagged."
+      "verify_notes": "2026-09-08: source field was empty while the story already quoted Munich's Verordnung ueber Naturdenkmaeler. Checked the ordinance directly; both entries are in it verbatim. Single source, so flagged.",
+      "how_to_recognise": "You can recognise it by the crown, broad and heavy and slightly lopsided, reading as a single dome from right across the grass. It stands in the Englischer Garten, and it flowers in June, ahead of the other European limes."
     },
     {
       "id": "muc_021",
@@ -629,7 +630,8 @@
         "status": "missing"
       },
       "transport": "",
-      "verify_notes": "2026-09-08: source field was empty while the story already quoted Munich's Verordnung ueber Naturdenkmaeler. Checked the ordinance directly; both entries are in it verbatim. Single source, so flagged."
+      "verify_notes": "2026-09-08: source field was empty while the story already quoted Munich's Verordnung ueber Naturdenkmaeler. Checked the ordinance directly; both entries are in it verbatim. Single source, so flagged.",
+      "how_to_recognise": "You can recognise it by the branches, which come almost to the ground in a skirt you have to duck under to reach the trunk. It stands in the Flaucher, the riverside park along the Isar in the south of the city."
     },
     {
       "id": "muc_022",
@@ -696,7 +698,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by snapping a leaf stalk: a Norway maple bleeds white and the sycamore it gets mistaken for does not. It stands on Herrnstraße in the Lehel, one crown holding the middle of a street five storeys high on both sides."
     },
     {
       "id": "muc_024",
@@ -730,7 +733,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the deep shade: almost nothing germinates under a mature beech, so the floor stays bare leaf litter. It stands in the green strip on the south side of the Wilhelmsgymnasium, in the Lehel."
     },
     {
       "id": "muc_025",
@@ -763,7 +767,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the leaves, still green in August when the leaf miner has browned most chestnuts in Europe. It stands at the southwest corner of St.-Anna-Platz, between the small Klosterkirche and the larger parish church."
     },
     {
       "id": "muc_026",
@@ -851,7 +856,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the lower limbs thrown out sideways, where the street chestnuts around it are cut back into lollipops. It stands at the top of the slope down to the Isar, beside the Gasteig concert hall."
     },
     {
       "id": "muc_029",
@@ -911,7 +917,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the fine hairs on its young twigs, which is what separates a downy birch from a silver, and by the white trunk. It stands alone among the pine and poplar on the Isar gravel in the Flaucher."
     },
     {
       "id": "muc_031",
@@ -937,7 +944,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the crown, extremely wide-spreading where a woodland ash goes up tall and narrow. It stands on the corner of Leinthalerstraße and Sondermeierstraße in Freimann."
     },
     {
       "id": "muc_032",
@@ -963,7 +971,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the branch tips, which fall all the way to the ground and close the crown into a room you can walk inside. It stands at Situlistraße 73-75, about 70 metres from the protected copper beech."
     },
     {
       "id": "muc_033",
@@ -997,7 +1006,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the purple leaves, red and translucent when they open in late April and close to black by August. It stands at Situlistraße 73-75, about 70 metres from the weeping beech the city protects separately."
     },
     {
       "id": "muc_034",
@@ -1146,7 +1156,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the leaves, each lobe ending in a bristle where Munich's native oaks are round, and by the bark, smooth and grey far longer than theirs. It stands in Hartmannshofer Park in Moosach."
     },
     {
       "id": "muc_038",
@@ -1174,7 +1185,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it in the wind: the leaves are white underneath, so a gust turns the whole crown pale, and nothing else on the path does that. It stands alone on the riverside path, left bank of the Isar."
     },
     {
       "id": "muc_039",
@@ -1209,7 +1221,8 @@
         ],
         "label": "May, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the shape, a full dome from the ground up with no neighbours to crowd it. It stands alone on Kirchtruderinger Straße, the road named for the church end of Trudering."
     },
     {
       "id": "muc_040",
@@ -1245,7 +1258,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the even crown, which sweeps all the way down to the grass where a forest beech would be bare for its first ten metres. It stands alone on Kagerstraße in Ramersdorf-Perlach."
     },
     {
       "id": "muc_041",
@@ -1273,7 +1287,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, fluted into muscular vertical ridges that nothing else in the park has. It stands in Wilrampark, just south of the playground."
     },
     {
       "id": "muc_042",
@@ -1337,7 +1352,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the crown, wide and funnel-shaped: the limbs leave the trunk at a narrow angle and then swing out and up like a beaker. It stands on Bleibtreuplatz in Solln."
     },
     {
       "id": "muc_044",
@@ -1394,7 +1410,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the crown set low on the trunk, and in winter by the buds, matt black and blunt where nothing else in the park has them. It stands in Pasinger Stadtpark, by the Wurm."
     },
     {
       "id": "muc_046",
@@ -1459,7 +1476,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its size, the one tree on the street big enough to shape the view down it. It stands on Maria-Eich-Straße in Obermenzing, which is named for the pilgrimage oak at Planegg and not for this one."
     },
     {
       "id": "muc_048",

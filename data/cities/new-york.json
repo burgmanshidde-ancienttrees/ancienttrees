@@ -94,7 +94,8 @@
           10
         ],
         "label": "late September into October, often the first tree in the Ramble to turn, in brilliant scarlet"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the fall colour, scarlet and early, on a swamp tree growing where the park is bedrock. It stands on one of the Ramble's quieter, less trafficked paths."
     },
     {
       "id": "nyc_003",
@@ -350,7 +351,8 @@
       "curation_status": "ai_generated",
       "notes": "Coordinates are for the Botanical Garden's main entrance; the tree's specific position on the Spicebush Trail within the 50-acre forest is not separately surveyed.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the trunk, over five feet through, the largest specimen you will pass in the forest. It stands in the middle of the Spicebush Trail in the Thain Family Forest."
     },
     {
       "id": "nyc_010",
@@ -451,7 +453,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise them by the roots, spread flat across bare rock where there is barely any soil, under two gnarled trunks about 78 feet tall. They stand on the outcrop just east of the Mall."
     },
     {
       "id": "nyc_013",
@@ -482,7 +485,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the two unbroken rows of elms meeting overhead, low fencing along the path to keep feet off their roots. It stands on the Mall, the avenue also called Literary Walk."
     },
     {
       "id": "nyc_014",
@@ -548,7 +552,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it in October by the dark crimson haws and scarlet leaves on a small thorny tree, 35 feet up from a trunk 20 inches round. It stands across from the Lily Pool by the conservatory."
     },
     {
       "id": "nyc_016",
@@ -586,7 +591,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the props and cables holding its lower limbs up, and in midsummer by chains of winged nutlets a foot and a half long. It stands on the Flatbush Avenue side, north of the Rock Garden."
     },
     {
       "id": "nyc_017",
@@ -625,7 +631,8 @@
       },
       "curation_status": "flagged",
       "notes": "Two independent sources describe evergreen Cedar of Lebanon trees at the same spot, but disagree on count: Central Park Conservancy's own plant page describes 'a beautiful specimen' (singular); gardenindelight.com (2016) describes 'several... in a small grove' at the identical location, with the same dedication plaque. Delivered as a grove/ensemble since the plaque gives one obvious place to stand, per the collectible-point rule. No confirmed planting date; age range is a rough inference from a 2016 blog guess about the park's cedars generally, not a documented figure for this planting, hence the 'not documented' chip label. Coordinates are Conservatory Water's own published centre point (Wikipedia), not a tree-level GPS fix; distance-checked against the existing cluster: roughly 540m to nyc_002, 370m to nyc_012/013, 780m to nyc_011, comfortably within the same walk.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the plaque at the base dedicating the planting for grandchildren, and by evergreen cones that stand upright on the branch. It stands behind the information kiosk inside the 72nd Street entrance."
     },
     {
       "id": "nyc_018",
@@ -656,7 +663,8 @@
       },
       "curation_status": "flagged",
       "notes": "NYC Parks 'Great Trees of NYC' register (id=46, designated 1985): 94.3 ft tall, 68-inch trunk diameter, 80 ft canopy. Untapped Cities' Great Trees guide independently corroborates the same measurements and calls it the northernmost Great Tree in the park. Westside Rag's 2024-10-09 coverage of the citywide relaunch independently lists the same tree at 94 ft near the East 97th Street entrance. AGE: no source gives a planting year, both that address it say only 'dates to the 1800s' (127-226 years as of 2026), flagged for imprecision rather than disagreement. COORDINATES: nycgovparks.org returns HTTP 405 to direct fetch and web.archive.org was unreachable this pass; coordinates are a good-faith estimate from a geocoded reference point (2 East 90th Street / Engineers' Gate, cross-checked against Nominatim's own East 96th Street result, landing within about 60m), marked approximate rather than tree-level confirmed. DISTANCE: about 170m from nyc_019, 750m from nyc_020, forming a genuine second walk roughly 1.1-1.15km from the existing Ramble/Mall/CPW cluster.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the canopy, eighty feet and one of the broadest on the city's register, and by branches that twist rather than reach straight up. It stands right at the East 97th Street entrance."
     },
     {
       "id": "nyc_019",
@@ -687,7 +695,8 @@
       },
       "curation_status": "flagged",
       "notes": "NYC Parks 'Great Trees of NYC' register (id=43): multi-trunked London plane, Bridle Path near the East 96th Street entrance, northeast corner of the Reservoir, 95.94 ft tall, trunk diameter over 5 ft owing to multiple trunks. Untapped Cities independently corroborates the same tree and measurements, citing nature writer Dennis Burton's claim it was 'possibly planted when the Reservoir was dug' in 1862. A 2026-05-18 Ephemeral New York piece independently repeats the same 1862 dating and measurements, while noting a competing claim that nyc_002 (Black Tupelo of the Ramble) may date to 1858 instead, a dispute between two OTHER trees, not evidence against this one. AGE: 'possibly planted' 1862 is explicitly one writer's guess, not a documented planting record, hence 'not documented' in the chip and flagged status. COORDINATES: same nycgovparks.org access problem as nyc_018; estimate built from the Reservoir's published Wikipedia centroid projected to its northeast corner per the register's own 'near East 96th Street, east side' description, cross-checked against a Nominatim anchor landing within about 60m. Marked approximate. DISTANCE: about 170m from nyc_018, 670m from nyc_020, part of the same second walk.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the base, several trunks fused into one over five feet through, and by bark mottled green, tan and grey. It stands on the Bridle Path by the Reservoir near East 96th Street."
     },
     {
       "id": "nyc_020",
@@ -725,7 +734,8 @@
       },
       "curation_status": "flagged",
       "notes": "ENSEMBLE, judged against the collectible-point rule the way nyc_013 (the Mall elm allee) was judged: NYC Parks register (id=42) designates this as ONE 'Great Tree' entry, not many. Untapped Cities independently describes '35 Yoshino cherries... on the east side of the Reservoir', part of the 1912 gift distinct from Washington DC's Tidal Basin planting the same year. Westside Rag's 2024 coverage independently lists '28-foot Yoshino Cherries' at the same location. AGE / OPEN QUESTION: sources agree the SITE traces to 1912 (114 years in 2026), but Yoshino cherries often live only 30-60 years, and no source confirms whether today's 35 trees are original plantings or later replacements, the way DC's Tidal Basin cherries are a mix of survivors and generations of replacements. The honest claim is 'this planting traces to 1912', not 'these are 114-year-old trees'; age range reflects that uncertainty. COORDINATES: same nycgovparks.org access problem as nyc_018/019; estimate built from a Nominatim anchor projected 3 blocks south to East 87th Street, cross-checked within about 60m. Marked approximate. DISTANCE: about 670m from nyc_019, 750m from nyc_018. All three sit within roughly 900m of each other, forming a genuine second walk (about 750m end to end) roughly 1.1-1.15km from the existing Ramble/Mall/CPW cluster.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them in April by white flowers shading to pale pink, a week or two before the plum coloured Kwanzans on the opposite bank. They stand on the Reservoir's east side near East 87th Street."
     }
   ]
 }
