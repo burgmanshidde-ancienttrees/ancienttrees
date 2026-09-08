@@ -142,6 +142,11 @@ export function locationIsApproximate(tree: Tree): boolean {
   return (tree.location_precision ?? "approximate") !== "confirmed";
 }
 
+/** A trunk girth or a height, in metres, for the lead of a tree with no
+ *  recorded age. One or the other, never both: the lead has room for one
+ *  fact and two would read as a specification rather than a sentence. */
+export type TreeSize = { girth?: number; height?: number };
+
 /** A meta description that ANSWERS before it hooks, which is what Contract B
  *  has asked for since v1.0 and what the implementation never did.
  *
@@ -159,10 +164,11 @@ export function locationIsApproximate(tree: Tree): boolean {
  */
 export function metaForTree(tree: {
   species?: string; age_estimate?: string;
+  girth_cm?: number | null; height_m?: number | null;
   location?: { neighbourhood?: string | null; address?: string | null } | null;
   story?: string;
 }, cityName: string,
-   lead: (species: string, age: string, where: string) => string,
+   lead: (species: string, age: string, where: string, size?: TreeSize) => string,
    overrides?: { species?: string; age_estimate?: string; story?: string }): string {
   // Both bracket shapes: the Japanese overlays write the binomial inside a
   // full-width （ ）, so splitting on "(" alone left "スギ（Cryptomeria
@@ -183,7 +189,41 @@ export function metaForTree(tree: {
   const where = area && !area.toLowerCase().includes(cityName.toLowerCase())
     ? `${area}, ${cityName}` : cityName;
 
-  const opening = lead(species, age, where);
+  // WHEN THERE IS NO AGE, THE LEAD WAS A TAUTOLOGY (2026-09-08).
+  //
+  // The 2026-09-02 rewrite put the answer first and that was right, but the
+  // answer it composes is `A {species} in {where}.`, which on a page titled
+  // "The Thornless Honey Locust of Parc d'Egmont in Brussels" tells a searcher
+  // nothing the title had not already said. It cost 44 of 155 characters to
+  // repeat itself. 817 of 2,777 tree pages, 29 percent, were in that state,
+  // and the worst of them is measurable: that Brussels page took 199
+  // impressions at position 6.1 in ten days and returned zero clicks, on a
+  // query asking which honey locust is the OLDEST.
+  //
+  // 424 of those 817 already carry a girth or a height, captured by the
+  // registers work for exactly this kind of use. A trunk measurement is the
+  // strongest thing we can say about a tree nobody has dated, it is what a
+  // register itself leads with, and it is the fact a person uses to decide
+  // whether this one is worth the walk. Girth beats height when both exist:
+  // a wide trunk means old, a tall one mostly means it grew in a wood.
+  //
+  // The remaining 393 have no measurable fact at all. They keep the short
+  // lead rather than getting an invented one; the honest improvement there is
+  // a better opening sentence in the story, which is writing rather than code.
+  // ONE DECIMAL AND A FLOOR, both learned by reading the output on real trees.
+  // A register measures to the centimetre and "3.67 metres round" reads as a
+  // database field rather than a sentence, so it is rounded to 3.7. And a
+  // measurement only earns its place in a snippet when it is a reason to walk:
+  // below 2.5 metres of girth (69 of 396) or 20 metres of height (14 of 28) the
+  // number is honest and sells nothing, so those pages keep the short lead.
+  const girthM = tree.girth_cm && tree.girth_cm >= 250
+    ? Math.round(tree.girth_cm / 10) / 10 : undefined;
+  const heightM = tree.height_m && tree.height_m >= 20
+    ? Math.round(tree.height_m) : undefined;
+  const size: TreeSize | undefined = age ? undefined
+    : girthM ? { girth: girthM } : heightM ? { height: heightM } : undefined;
+
+  const opening = lead(species, age, where, size);
   const room = DESC_MAX - opening.length - 1;
   const story = overrides?.story ?? tree.story ?? "";
   const tail = room >= 45 ? metaFromStory(story, room) : "";

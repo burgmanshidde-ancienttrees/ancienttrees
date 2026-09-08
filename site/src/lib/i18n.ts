@@ -173,7 +173,13 @@ export interface UIStrings {
    *  how old, where. Contract B's "answer" half, per language, because
    *  the word order differs and a template cannot be translated word for
    *  word. `age` is already a bare number and may be empty. */
-  metaLead: (species: string, age: string, where: string) => string;
+  /** The answer-first opening of a tree page's meta description. `size` is
+   *  supplied only when there is no age: a girth or a height in metres, so a
+   *  tree nobody has dated still opens on a fact instead of repeating its own
+   *  title (2026-09-08). Render the number with this language's own decimal
+   *  separator; the caller passes it unformatted for exactly that reason. */
+  metaLead: (species: string, age: string, where: string,
+             size?: { girth?: number; height?: number }) => string;
   /** The short editorial tag beside a tree's name on a card. Keyed by the
    *  English value in data/cities, because that is what the canonical file
    *  holds; an unlisted label falls back to the English rather than
@@ -270,11 +276,23 @@ const EN: UIStrings = {
   photoFull: "See it at full size",
   distanceAway: (d) => `${d} away`,
   treeLabels: {},
-  metaLead: (sp, age, where) => {
-    const vowel = age ? /^(8|11|18|8\d)$/.test(age) : /^[AEIOU]/.test(sp);
+  metaLead: (sp, age, where, size) => {
+    // "An European Yew" has been shipping on every ageless vowel-initial
+    // species since this line was written, because the test is on the LETTER
+    // and the article follows the SOUND. "Eu" is the whole of the problem
+    // here: European (ash, beech, larch, pear, yew, white elm, hop-hornbeam)
+    // and Eucalyptus all start on a consonant "y" sound. Found 2026-09-08 by
+    // reading the generated snippets rather than the code.
+    const vowel = age ? /^(8|11|18|8\d)$/.test(age)
+      : /^[AEIOU]/.test(sp) && !/^Eu/i.test(sp);
     const a = vowel ? "An" : "A";
-    const head = age && sp ? `${a} ${age}-year-old ${sp}` : sp ? `${a} ${sp}`
-      : age ? `${a} ${age}-year-old tree` : "A remarkable tree";
+    const m = size?.girth ? `${size.girth} metres round`
+      : size?.height ? `${size.height} metres tall` : "";
+    const head = age && sp ? `${a} ${age}-year-old ${sp}`
+      : sp && m ? `${a} ${sp} ${m}`
+      : sp ? `${a} ${sp}`
+      : age ? `${a} ${age}-year-old tree`
+      : m ? `A tree ${m}` : "A remarkable tree";
     return `${head} in ${where}.`;
   },
   labelSpecies: "Species",
@@ -324,8 +342,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
       "Ensemble": "Conjunto",
       "Recent planting, ancient provenance": "Plantación reciente, origen antiguo",
     },
-    metaLead: (sp, age, where) => sp && age ? `${sp} de unos ${age} años en ${where}.`
-      : sp ? `${sp} en ${where}.` : age ? `Árbol de unos ${age} años en ${where}.` : `Árbol singular en ${where}.`,
+    metaLead: (sp, age, where, size) => {
+      const n = (v: number) => String(v).replace(".", ",");
+      const m = size?.girth ? `de ${n(size.girth)} m de perímetro`
+        : size?.height ? `de ${n(size.height)} m de altura` : "";
+      return sp && age ? `${sp} de unos ${age} años en ${where}.`
+        : sp && m ? `${sp} ${m} en ${where}.`
+        : sp ? `${sp} en ${where}.`
+        : age ? `Árbol de unos ${age} años en ${where}.`
+        : m ? `Árbol ${m} en ${where}.` : `Árbol singular en ${where}.`;
+    },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Especie",
     labelAge: "Edad estimada",
@@ -418,8 +444,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
       "Ensemble": "Insieme",
       "Recent planting, ancient provenance": "Impianto recente, origine antica",
     },
-    metaLead: (sp, age, where) => sp && age ? `${sp} di circa ${age} anni a ${where}.`
-      : sp ? `${sp} a ${where}.` : age ? `Albero di circa ${age} anni a ${where}.` : `Albero monumentale a ${where}.`,
+    metaLead: (sp, age, where, size) => {
+      const n = (v: number) => String(v).replace(".", ",");
+      const m = size?.girth ? `di ${n(size.girth)} m di circonferenza`
+        : size?.height ? `alto ${n(size.height)} m` : "";
+      return sp && age ? `${sp} di circa ${age} anni a ${where}.`
+        : sp && m ? `${sp} ${m} a ${where}.`
+        : sp ? `${sp} a ${where}.`
+        : age ? `Albero di circa ${age} anni a ${where}.`
+        : m ? `Albero ${m} a ${where}.` : `Albero monumentale a ${where}.`;
+    },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Specie",
     labelAge: "Età stimata",
@@ -512,8 +546,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
       "Ensemble": "Ensemble",
       "Recent planting, ancient provenance": "Recent geplant, oude herkomst",
     },
-    metaLead: (sp, age, where) => sp && age ? `${sp} van ongeveer ${age} jaar in ${where}.`
-      : sp ? `${sp} in ${where}.` : age ? `Boom van ongeveer ${age} jaar in ${where}.` : `Monumentale boom in ${where}.`,
+    metaLead: (sp, age, where, size) => {
+      const n = (v: number) => String(v).replace(".", ",");
+      const m = size?.girth ? `met een stam van ${n(size.girth)} meter omtrek`
+        : size?.height ? `van ${n(size.height)} meter hoog` : "";
+      return sp && age ? `${sp} van ongeveer ${age} jaar in ${where}.`
+        : sp && m ? `${sp} ${m} in ${where}.`
+        : sp ? `${sp} in ${where}.`
+        : age ? `Boom van ongeveer ${age} jaar in ${where}.`
+        : m ? `Boom ${m} in ${where}.` : `Monumentale boom in ${where}.`;
+    },
     distanceAway: (d) => `${d} verderop`,
     labelSpecies: "Soort",
     labelAge: "Geschatte leeftijd",
@@ -606,8 +648,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
       "Ensemble": "Ensemble",
       "Recent planting, ancient provenance": "Junge Pflanzung, alte Herkunft",
     },
-    metaLead: (sp, age, where) => sp && age ? `${sp}, rund ${age} Jahre alt, in ${where}.`
-      : sp ? `${sp} in ${where}.` : age ? `Baum, rund ${age} Jahre alt, in ${where}.` : `Bemerkenswerter Baum in ${where}.`,
+    metaLead: (sp, age, where, size) => {
+      const n = (v: number) => String(v).replace(".", ",");
+      const m = size?.girth ? `mit ${n(size.girth)} m Stammumfang`
+        : size?.height ? `von ${n(size.height)} m Höhe` : "";
+      return sp && age ? `${sp}, rund ${age} Jahre alt, in ${where}.`
+        : sp && m ? `${sp} ${m} in ${where}.`
+        : sp ? `${sp} in ${where}.`
+        : age ? `Baum, rund ${age} Jahre alt, in ${where}.`
+        : m ? `Baum ${m} in ${where}.` : `Bemerkenswerter Baum in ${where}.`;
+    },
     distanceAway: (d) => `${d} entfernt`,
     labelSpecies: "Art",
     labelAge: "Geschätztes Alter",
@@ -700,8 +750,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
       "Ensemble": "Conjunto",
       "Recent planting, ancient provenance": "Plantação recente, origem antiga",
     },
-    metaLead: (sp, age, where) => sp && age ? `${sp} com cerca de ${age} anos em ${where}.`
-      : sp ? `${sp} em ${where}.` : age ? `Árvore com cerca de ${age} anos em ${where}.` : `Árvore notável em ${where}.`,
+    metaLead: (sp, age, where, size) => {
+      const n = (v: number) => String(v).replace(".", ",");
+      const m = size?.girth ? `com ${n(size.girth)} m de perímetro`
+        : size?.height ? `com ${n(size.height)} m de altura` : "";
+      return sp && age ? `${sp} com cerca de ${age} anos em ${where}.`
+        : sp && m ? `${sp} ${m} em ${where}.`
+        : sp ? `${sp} em ${where}.`
+        : age ? `Árvore com cerca de ${age} anos em ${where}.`
+        : m ? `Árvore ${m} em ${where}.` : `Árvore notável em ${where}.`;
+    },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Espécie",
     labelAge: "Idade estimada",
@@ -794,8 +852,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
       "Ensemble": "Ensemble",
       "Recent planting, ancient provenance": "Plantation récente, origine ancienne",
     },
-    metaLead: (sp, age, where) => sp && age ? `${sp} d'environ ${age} ans à ${where}.`
-      : sp ? `${sp} à ${where}.` : age ? `Arbre d'environ ${age} ans à ${where}.` : `Arbre remarquable à ${where}.`,
+    metaLead: (sp, age, where, size) => {
+      const n = (v: number) => String(v).replace(".", ",");
+      const m = size?.girth ? `de ${n(size.girth)} m de circonférence`
+        : size?.height ? `de ${n(size.height)} m de haut` : "";
+      return sp && age ? `${sp} d'environ ${age} ans à ${where}.`
+        : sp && m ? `${sp} ${m} à ${where}.`
+        : sp ? `${sp} à ${where}.`
+        : age ? `Arbre d'environ ${age} ans à ${where}.`
+        : m ? `Arbre ${m} à ${where}.` : `Arbre remarquable à ${where}.`;
+    },
     distanceAway: (d) => `\u00e0 ${d}`,
     labelSpecies: "Espèce",
     labelAge: "Âge estimé",
@@ -888,8 +954,15 @@ const TABLE: Record<string, Partial<UIStrings>> = {
       "Ensemble": "群",
       "Recent planting, ancient provenance": "植えたのは最近、血筋は古い",
     },
-    metaLead: (sp, age, where) => sp && age ? `${where}にある樹齢約${age}年の${sp}。`
-      : sp ? `${where}にある${sp}。` : age ? `${where}にある樹齢約${age}年の木。` : `${where}にある巨木。`,
+    metaLead: (sp, age, where, size) => {
+      const m = size?.girth ? `幹周約${size.girth}mの`
+        : size?.height ? `高さ約${size.height}mの` : "";
+      return sp && age ? `${where}にある樹齢約${age}年の${sp}。`
+        : sp && m ? `${where}にある${m}${sp}。`
+        : sp ? `${where}にある${sp}。`
+        : age ? `${where}にある樹齢約${age}年の木。`
+        : m ? `${where}にある${m}木。` : `${where}にある巨木。`;
+    },
     distanceAway: (d) => `${d}\u5148`,
     labelSpecies: "樹種",
     labelAge: "推定樹齢",
