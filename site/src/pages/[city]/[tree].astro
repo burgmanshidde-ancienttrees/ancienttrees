@@ -324,6 +324,13 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           : `See the ${cityWalkCount} walks past ${cityName}'s other trees in the app →`}
       </a></p>
     )}
+    {/* WHY GO, above how-do-I-find-it because it decides whether there is a
+        walk at all, while recognition only matters once you are on your way.
+        Hidde, 2026-09-08: "why remarkable? why worth the walk? tell others why
+        they should go and visit the tree". */}
+    {tree.why_go && (
+      <p class="which-one"><b>Why go?</b> {tree.why_go}</p>
+    )}
     {tree.how_to_recognise && (
       <p class="which-one"><b>How do I find it?</b> {tree.how_to_recognise}</p>
     )}

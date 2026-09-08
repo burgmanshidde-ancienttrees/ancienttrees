@@ -163,7 +163,7 @@ export type TreeSize = { girth?: number; height?: number };
  *  on a clause boundary rather than mid-thought.
  */
 export function metaForTree(tree: {
-  species?: string; age_estimate?: string;
+  species?: string; age_estimate?: string; why_go?: string;
   girth_cm?: number | null; height_m?: number | null;
   location?: { neighbourhood?: string | null; address?: string | null } | null;
   story?: string;
@@ -225,7 +225,30 @@ export function metaForTree(tree: {
 
   const opening = lead(species, age, where, size);
   const room = DESC_MAX - opening.length - 1;
+  // WHY_GO BEATS THE STORY IN THE TAIL, and only in the case it was written
+  // for: a tree with neither a recorded age nor a usable measurement, where
+  // the lead is a bare `A {species} in {where}.` and the story's opening is
+  // whatever the writer chose to hook with. 393 pages are in that state, and
+  // for them why_go is the only sentence on the page that answers the question
+  // a searcher is actually asking. Where an age or a girth exists the lead
+  // already answers, so the story keeps the tail and nothing changes.
+  //
+  // Deliberately not translated: why_go lives once, on the canonical tree, and
+  // the overlays carry their own story. A translated page falls back to its
+  // own story rather than showing an English sentence in a French snippet.
+  const why = (tree.why_go ?? "").trim();
   const story = overrides?.story ?? tree.story ?? "";
-  const tail = room >= 45 ? metaFromStory(story, room) : "";
-  return tail ? `${opening} ${tail}` : opening;
+  // ONLY WHEN IT FITS WHOLE. A reason cut off at a comma is worse than no
+  // reason, and tested on the Brussels honey locust the naive version made the
+  // page WORSE: a 130-character why_go clause-cut to 59 replaced 106
+  // characters of story that were already doing the job. So why_go takes the
+  // front of the tail when it fits, and whatever room is left still goes to
+  // the story, which is how the answer and the hook end up in the same snippet
+  // instead of competing for it.
+  const useWhy = !overrides && !age && !size && !!why && why.length <= room;
+  const front = useWhy ? why : "";
+  const rest = room - (front ? front.length + 1 : 0);
+  const tail = rest >= 45 ? metaFromStory(story, rest) : "";
+  const body = [front, tail].filter(Boolean).join(" ");
+  return body ? `${opening} ${body}` : opening;
 }

@@ -125,6 +125,9 @@ struct CollectSheet: View {
     /// is up, and the record must not quietly move.
     @State private var at: (lat: Double, lng: Double)?
     @State private var why = ""
+    /// What the tree is called, or what kind it is. Its OWN field since
+    /// 2026-09-08; see the two-field note over the form below.
+    @State private var callsIt = ""
     @State private var sending = false
     @State private var signingIn = false
     /// Leaving with a photograph in hand asks first. See closeRow.
@@ -1089,11 +1092,46 @@ struct CollectSheet: View {
                     .accessibilityIdentifier("spot-camera")
             }
 
-            TextField("What makes it special? A name, a species, a story…",
-                      text: $why, axis: .vertical)
-                .lineLimit(3...6)
-                .padding(13)
-                .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+            // TWO FIELDS, NOT ONE, AND THIS IS THE CONVENTION RATHER THAN A
+            // REDESIGN. Until 2026-09-08 a single field asked "What makes it
+            // special? A name, a species, a story…" and then USED THE SAME TEXT
+            // AS THE TREE'S NAME, cut at 60 characters. So writing a real
+            // sentence turned your sentence into the title, and writing nothing
+            // was rewarded with a tidy-looking "A tree I found". Eight of the
+            // first eight photographs came in with the default name and an
+            // empty note, seven of them literally empty.
+            //
+            // Google Maps' "add a missing place" keeps the name as its own
+            // required field and never asks why the place is good; the opinion
+            // is a review, a separate act, later. iNaturalist's notes field is
+            // for context a photograph cannot carry, not for advocacy. Both
+            // separate what the thing IS from what you thought of it, and our
+            // single field had merged them.
+            //
+            // So the reason is asked in the reader's own terms, and it stays
+            // OPTIONAL: none of the references makes somebody argue for a place
+            // before they may add it, and a required justification would turn a
+            // thirty-second act into homework.
+            //
+            // The placeholder is the question and nothing else. The first draft
+            // added "Tell somebody else why they should come and see it", which
+            // is an order and is the exact habit PRODUCT_COPY.md exists to
+            // stop, and it is more words on a screen Hidde has twice said has
+            // too many.
+            VStack(alignment: .leading, spacing: 10) {
+                TextField("What is it called, or what kind of tree?",
+                          text: $callsIt)
+                    .padding(13)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+                    .accessibilityLabel("What the tree is called, or what kind it is")
+
+                TextField("Why is it worth the walk?",
+                          text: $why, axis: .vertical)
+                    .lineLimit(3...6)
+                    .padding(13)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+                    .accessibilityLabel("Why this tree is worth the walk")
+            }
 
             HStack(spacing: 8) {
                 Image(systemName: "leaf")
@@ -1189,8 +1227,13 @@ struct CollectSheet: View {
             return
         }
         let here = at ?? origin
+        // The name is its own field now, so the note is never silently promoted
+        // into a title. "A tree I found" survives only as the last resort, for
+        // somebody who fills in neither, and it is honest there: we genuinely
+        // do not know what it is called and neither did they.
+        let named = callsIt.trimmingCharacters(in: .whitespacesAndNewlines)
         let s = sightings.record(treeId: nil,
-                                 name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
+                                 name: named.isEmpty ? "A tree I found" : String(named.prefix(60)),
                                  note: why, lat: here.lat, lng: here.lng, image: shot,
                                  date: taken ?? Date())
         shot = nil
