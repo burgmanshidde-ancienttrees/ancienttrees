@@ -946,7 +946,8 @@ query($tag: String!, $since: Date!, $until: Date!) {
             "- Referrers: %s%s\n- Countries: %s\n- Devices: %s%s"
             % (trend, top, _dim(refs, "refererHost"), nav,
                _dim(countries, "countryName"), _dim(devices, "deviceType"), speed)
-            + "\n\n" + referrers_section(refs))
+            + "\n\n" + referrers_section(refs)
+            + "\n\n" + backlinks_section())
 
 
 # Hosts that are us, or a search engine sending us traffic we already measure
@@ -1014,6 +1015,38 @@ def referrers_section(refs):
     # are a spam network, every one nofollow, so the count is not the metric.
     return ("Links: external referrers (a link somebody actually clicked): %s%s"
             % (line, ai_line))
+
+
+def backlinks_section():
+    """The other half of the link picture, and the half the beacon cannot see.
+
+    getLISBON's link went live on 2026-09-04 and the referrer line above said
+    "none yet" every morning until 2026-09-08, because their link carries
+    rel="noreferrer" and a noreferrer click arrives as (direct). That is the
+    WordPress default on an outbound link, so it is the normal case rather
+    than an unlucky one. scripts/backlinks.py fetches the watched pages and
+    reads the actual anchor tag instead.
+
+    It runs the fetches itself, rotating through the watch list, so the digest
+    pays for a handful of requests rather than the whole list. A failure here
+    is never fatal to the digest: a link report nobody can produce this
+    morning is worth less than the rest of the numbers."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(
+            os.path.abspath(__file__))))
+        import backlinks
+        store = backlinks.load(backlinks.STORE, {"watch": [], "seen": {}})
+        events = backlinks.check(store, datetime.date.today().isoformat(),
+                                 limit=12, verbose=False)
+        with open(backlinks.STORE, "w", encoding="utf-8") as f:
+            json.dump(store, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        out = backlinks.digest_section(store)
+        if events:
+            out += "\nChanged since yesterday: " + "; ".join(events)
+        return out
+    except Exception as e:                      # noqa: BLE001
+        return "Backlinks (watched pages): check failed (%s)" % e
 
 
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
