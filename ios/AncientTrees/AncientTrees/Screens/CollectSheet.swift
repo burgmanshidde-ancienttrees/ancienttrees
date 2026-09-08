@@ -625,6 +625,11 @@ struct CollectSheet: View {
             Text(pickerBlurb)
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
+            // Said once here rather than repeated on every row: the rows are
+            // already carrying a name, a species, a distance, a direction and
+            // sometimes four lines telling the tree from its neighbours.
+            Text("Tap one to see how to tell it apart.")
+                .font(.footnote).foregroundStyle(Brand.inkSoft)
             // Tapping a candidate OPENS it rather than claiming it (Hidde,
             // 2026-09-07, sketching the flow he wanted: "dan als je op de boom
             // klikt dan krijg je uitleg of foto of een exacte pin om te
@@ -953,18 +958,34 @@ struct CollectSheet: View {
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             doneButton
-            // The escape hatch, small and always there: a confident match is
-            // still a guess, and the person holding the phone can see the
-            // trunk we cannot.
-            if candidates.count > 1 {
-                Button("That was a different tree") {
-                    if case .ticked(let id) = stage { saved.toggleVisited(id) }
-                    withAnimation(.snappy) { stage = .identify }
+            // THE ESCAPE FROM A CONFIDENT MATCH, and it used to be a grey link
+            // in the footnote size. Hidde photographed exactly this screen in
+            // Nara and said the thing that matters: "deze hele bevestiging is
+            // wel heel nice maar dan moet je wel 100% zeker weten of dat m was
+            // - ik heb geen idee en ik gok van niet." A page-wide green button
+            // saying You Found It, with the doubt hidden underneath it in the
+            // smallest type on the screen, is an interface arguing with the
+            // person holding it.
+            //
+            // So it is a bordered control the same size as Done, always shown.
+            // Where several trees are near, it reopens the list; where only
+            // this one is, being wrong means we do not map the tree at all, so
+            // it goes to the form.
+            Button {
+                if case .ticked(let id) = stage { saved.toggleVisited(id) }
+                withAnimation(.snappy) {
+                    stage = candidates.count > 1 ? .identify : .describe
                 }
-                .font(.footnote.weight(.semibold))
-                .foregroundStyle(Brand.inkSoft)
-                .frame(maxWidth: .infinity, minHeight: 44)
+            } label: {
+                HStack { Spacer(); Text("I am not sure it was this one")
+                    .font(.brand(16, .bold)); Spacer() }
+                    .padding(.vertical, 14)
+                    .overlay(RoundedRectangle(cornerRadius: 15)
+                        .stroke(Brand.inkSoft.opacity(0.35), lineWidth: 1))
+                    .foregroundStyle(Brand.ink)
             }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("collect-not-this-one")
         }
     }
 
