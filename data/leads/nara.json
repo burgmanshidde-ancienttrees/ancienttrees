@@ -200,6 +200,89 @@
       "access": "Visible from the public street; which temple's grounds lie behind the wall is not established",
       "contributor_photo": null,
       "sighting_id": null
+    },
+    {
+      "name": "The Cedars of Mizukoshi Shrine",
+      "species": "Cryptomeria japonica",
+      "lat": 34.70564,
+      "lng": 135.98072,
+      "status": "blocked",
+      "blocked_reason": "out of range",
+      "why": "NARA-KYOJU PASS 2026-09-08. Well-verified otherwise: Nara City-designated natural monument (1985-03-07, 'Mizukoshi Jinja Shasou'), giant cedars up to 650cm girth (register report_id 47042, matched independently by hitozato-kyoboku.com citing the Ministry of Environment's own 2000 survey), 300+ years, standing paired either side of the shrine building at Oji-cho near the Nunome Dam. Three sources: kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=47042&branch_number=1, city.nara.lg.jp/site/bunkazai/8379.html, hitozato-kyoboku.com/mizukoshijinja-sugi.htm. BLOCKED for distance, matching the precedent this file already applies to Takiyama (Tsuge-Hayama-cho, 'far over 30 minutes out') and Shoryaku-ji (Bodaisen-cho): Nara Kotsu bus route 94/102 from Kintetsu Nara Station to the Oji-Nakamura stop alone runs 53 to 59 minutes, then about a 25-minute walk to the shrine, well over an hour each way and nothing like the rest of Nara's cluster around Nara Park. Also note for whoever revisits this: the raw register carried 8 rows for this shrine that resolve to at most 3 to 4 living cedars (near-duplicate girths pairing 650~633, 580~570, 555~550, 520~520, almost certainly two ministry survey passes over the same trees), and hitozato-kyoboku's 2023 visit notes that one of the four originally registered cedars had already died and been removed by 2004 (stump and a marker post remain), so do not ship all 8 rows as separate trees if this is ever revisited. Worth keeping as a lead in case Oji-cho or the wider Yagyu/Nunome Dam area is ever treated as its own place rather than folded into the Nara city page."
+    },
+    {
+      "name": "Shimobe Shrine cedars and ginkgo",
+      "species": "Cryptomeria japonica, Ginkgo biloba",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "out of range",
+      "why": "NARA-KYOJU PASS 2026-09-08. 9 register rows (cedars 307-450cm, one ginkgo 327cm), none carrying an official designation (desig=なし throughout), ages 100-299 years. Facility is 下部神社 (Shimobe Shrine), address 奈良県奈良市都祁吐山町 (Tsuge-Hayama-cho) per Yahoo Map / Mapion listings. This is the SAME hamlet already blocked in this file for the Takiyama left-spiral Torreya ('inside the municipal boundary only through a merger and far over 30 minutes out'), roughly 6km north of Haibara/Sakurai and nowhere near Nara Park. Not independently re-timed this pass; blocked on the strength of the existing Takiyama precedent for the identical place name. Not designated, so even setting distance aside these would need a second source before shipping."
+    },
+    {
+      "name": "Yagyu Yamaguchi Shrine cedars",
+      "species": "Cryptomeria japonica",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "NARA-KYOJU PASS 2026-09-08. 5 register rows, girths 377cm to 540cm, ages 200 to 300+ years, no official designation. Facility is 夜支布山口神社 (Yagyu Yamaguchi Shrine), in the Yagyu district, a mountain hamlet in eastern Nara City historically associated with the Yagyu swordsman clan, roughly 12 to 16km from central Nara by road. Distance not independently timed this pass (unlike Mizukoshi and Shimobe above), so left as a lead rather than blocked outright, but expect the same day-trip problem: check Nara Kotsu bus timetables to Yagyu before spending more research time here, and note no designation was found for any of these five trees, so a second source is also needed regardless of distance."
+    },
+    {
+      "name": "Kasuga Taisha's other giant trees (ginkgo, deer park camphor)",
+      "species": "Ginkgo biloba, Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "NARA-KYOJU PASS 2026-09-08. Two candidates at the already-published Kasuga Taisha precinct, distinct from the Great Cedar (nra_002) and Great Nagi (nra_006) already live: (1) a 430cm ginkgo at the main shrine (register report_id 47074, no designation); (2) a 462cm camphor at Kasuga Taisha's Rokuen deer park (report_id 47077, NATIONALLY designated as a monument per the register, Rokuen itself confirmed open to visitors per narashikanko.or.jp/en/spot/park/rokuen/). Neither tree could be matched to an independent second source this pass: kasugataisha.or.jp's own 'forest walk' pages (guidance/morisanpo/ and morisanpo2/) hang on curl (exit 28, full 20s timeout, both attempts) and were not reachable via WebFetch either this pass; general search results confirm Kasuga Taisha has '33 giant trees over 3m girth' city-designated as of March 2019 but none of the summaries named this specific ginkgo or this specific camphor. Worth a dedicated pass that can get past the kasugataisha.or.jp hang (try Wayback Machine snapshots of guidance/morisanpo2/, per this project's standing playbook for hanging hosts)."
+    },
+    {
+      "name": "Todai-ji's other designated trees (Aragashi, Konara)",
+      "species": "Quercus glauca, Quercus serrata",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "NARA-KYOJU PASS 2026-09-08. Two candidates at the already-published Todai-ji precinct, distinct from the Chinaberry (nra_008, matches register report_id 47081) already live: (1) an Arakashi (Japanese blue oak) at 365cm, PREFECTURALLY designated plus urban-park designated (report_id 47082); (2) a Konara oak at 302cm, NATIONALLY plus prefecturally designated (report_id 47080), but the register itself flags visibility as 'cannot be confirmed without approaching', i.e. tucked away. Real official designations on both, but no independent second source turned up this pass beyond the register and the ministry's own Nara Park course guide PDF (kyoju.biodic.go.jp/files/course/001/guide_narakouen_ja.pdf, already used for nra_005/006/008/009, arguably not fully independent of the register itself; the PDF could not be parsed this pass, no PDF text tool available in this environment). Worth a dedicated pass with PDF tooling or a Japanese Wikipedia / prefecture cultural-property page check."
+    },
+    {
+      "name": "Toshodai-ji's camphor at Mizukagami Shrine",
+      "species": "Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "NARA-KYOJU PASS 2026-09-08. 360cm camphor (register report_id 47058), facility named 唐招提寺内水鏡社 ('within Toshodai-ji, at Mizukagami Shrine'). Toshodai-ji is one of Nara's major UNESCO World Heritage temples, not currently represented on our city page at all, so a good tree here would be a genuinely new site. Confirmed Mizukagami (Tenjin) Shrine is real: historically Toshodai-ji's own guardian shrine, separated from the temple administratively in the Meiji shinbutsu-bunri reforms but still managed by the temple today (ja.wikipedia.org/wiki/唐招提寺). Could not find any source, dedicated or general, naming a specific giant camphor there; age unknown even in the register (health/age fields largely blank for this row). Needs a dedicated look, ideally with a source that can be fetched (toshodaiji.jp itself was not tried this pass)."
+    },
+    {
+      "name": "Byakugo-ji's second tree (Zelkova)",
+      "species": "Zelkova serrata",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "NARA-KYOJU PASS 2026-09-08. 310cm Zelkova (register report_id 47053, age unrecorded, no designation), at the same temple as the already-published Five-Colour Camellia (nra_003). No independent source found naming this tree; Byakugo-ji's own coverage (narashikanko.or.jp, yamatoji.nara-kankou.or.jp) discusses the camellia and the temple's autumn bush clover but not a zelkova. Low priority: no designation, no second source, and a temple already represented by its more famous camellia."
+    },
+    {
+      "name": "Sugawara-area shrines (Tenmangu and Sugawara Shrine trees)",
+      "species": "mixed: Cryptomeria japonica, Quercus glauca, Zelkova serrata, Torreya nucifera, Celtis sinensis, Cinnamomum camphora, Quercus myrsinifolia",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "NARA-KYOJU PASS 2026-09-08. Two related facility names in the register, likely the same precinct or adjacent sites in west Nara: 天満宮 (8 rows, girths 300 to 455cm, ages 100 to 300+ years, no designation) and 菅原神社 (2 rows, camphor 300cm and hackberry 323cm, no designation). Best guess is Sugawara Tenmangu (菅原天満宮), described by its own site (sugawaratenmangu.com) and Wikipedia as Japan's oldest Tenmangu shrine, in Sugawara-Higashi, west Nara, well within the city's usual reach. Not confirmed against the register rows: could not find any source describing individual giant trees on the grounds, and with two similarly-named facilities in the raw data this needs a geocoding pass before anything can be pinned, let alone sourced. None of the 10 rows carry an official designation. Deprioritise unless a dedicated pass finds the naming source Nara's better-documented sites all have (per the 'does anybody NAME its trees' rule)."
+    },
+    {
+      "name": "Minor undesignated shrine trees (Hachioji, Hachiman, Ishiuchi, Hakusan, Jofuku-ji)",
+      "species": "mixed: Castanopsis cuspidata var. sieboldii, Cryptomeria japonica, Ginkgo biloba, Ilex rotunda",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "NARA-KYOJU PASS 2026-09-08. Consolidated note rather than five separate stubs, all low-priority on the same grounds: 八王神社 (Tsuburajii/chinquapin, 395cm), 八幡神社 (Tsuburajii, 390cm, carries a prefectural NATURAL PARK designation, not a monument designation), 石打寺脇 and 石打人柱神社 (sugi, 378cm and 370cm), 白山神社 (ginkgo, 318cm), 淨福寺 (Ilex rotunda, 315cm). None carry a natural-monument designation, none matched to any independent source this pass, and none were geocoded. Register report_ids: 47459, 47461, 47455, 47456, 47084, 47055. Worth a look only if a dedicated pass finds a naming source for this cluster of minor shrines; otherwise not worth the token spend per tree at this evidence level."
+    },
+    {
+      "name": "Private-land and no-facility register rows (nara-kyoju batch)",
+      "species": "mixed",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "private land or unlocatable",
+      "why": "NARA-KYOJU PASS 2026-09-08. Consolidated note, not itemised. 15 of the 136 rows in data/leads/nara-kyoju.json carry owner_ja='個人' (private individual): never ship per hard rule 10, skipped without further research. 73 of 136 carry no facility_ja at all and were left unresearched this pass: no name to search on, no coordinate, would need a from-zero approach outside this register-led pass's scope. 10 rows sit at 春日山原生林 (Kasugayama primeval forest), already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' blocked entries (not a collectible point); not re-added."
     }
   ]
 }
