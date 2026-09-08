@@ -1,0 +1,73 @@
+[
+  {
+    "id": "eke_001",
+    "name": "Ekebyhovseken",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 500 years",
+    "age_min": 400,
+    "age_max": 600,
+    "girth_cm": 1050,
+    "location": {
+      "address": "Meadow south of Ekebyhovs slott (Ekebyhov Castle), Ekerö",
+      "latitude": 59.279735,
+      "longitude": 17.820145,
+      "neighbourhood": "Ekerö"
+    },
+    "verified_sources": [
+      "https://sv.wikipedia.org/wiki/Ekebyhovseken",
+      "https://www.mitti.se/sidan-45/ekerojattarna-ar-storst-i-lanet-6.3.83679.7bba5504aa"
+    ],
+    "access": "Free. Stands in the open meadow of Ekebyhovs slott's park, which is open to the public year-round for walking.",
+    "transport": "Ekerö centrum, roughly 15 minutes' walk. Public transport from central Stockholm is not fast (bus via Brommaplan, over an hour); this is a day out to Ekerö rather than an in-town stop.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Sweden's largest living deciduous tree BY VOLUME (about 84 cubic metres), and Stockholm County's thickest oak. Declared a natural monument in 1956. Girth given as 10.5m by sv.wikipedia and as 1066cm ('about 11 metres') by the Mitt i local paper; recorded girth_cm as the lower, more precise wiki figure. Age is an estimate only: 'approximately 500 years', both sources note large hollow oaks cannot be ring-counted reliably. Height 17m; the damaged/thinned crown suggests it was once taller. Candidate coordinate supplied (59.26704,17.82518) was WRONG by about 1.4km: corrected here to 59.279735,17.820145 from Wikidata and a geotagged Commons photo (File:Ekebyhovseken,_2017.jpg), which agree to within a few metres. NOT a Stockholm day-trip tree despite the 15.3km straight-line distance: Ekerö is reached by bus via Brommaplan and public-transport time from T-Centralen runs over an hour, well past the ~30 minute boundary CLAUDE.md sets for folding a tree into a city page. Recommend as its own place (Ekerö/Ekebyhov) rather than joining Stockholm. Passes the single-tree-destination test on its own merits: being Sweden's largest deciduous tree by volume is a genuine, citable superlative. Note for a later pass: Ekerö also holds Gällstaöeken (1017cm girth, natural monument since 1928, second-largest oak in the county) nearby, which could join this as a small two-tree Ekerö cluster rather than a single-tree page; not verified in this pass."
+  },
+  {
+    "id": "sto_006",
+    "name": "Sjukhuseken",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 800 years",
+    "age_min": 650,
+    "age_max": 900,
+    "girth_cm": 786,
+    "location": {
+      "address": "Grounds of Danderyd Hospital (Danderyds sjukhus), on the slope above Edsviken, Danderyd",
+      "latitude": 59.3905,
+      "longitude": 18.03578,
+      "neighbourhood": "Danderyd"
+    },
+    "verified_sources": [
+      "https://sv.wikipedia.org/wiki/Sjukhuseken",
+      "Lansstyrelsen i Stockholms lan, 'Naturminnen i Stockholms lan' (ISBN 91-7281-160-9), p.45, cited by sv.wikipedia and Wikidata Q89466458 as the register source for the 1960 protection decision"
+    ],
+    "access": "Free. Stands in the open grounds of Danderyd Hospital, beside what the source describes as a public playground; no gate or restriction recorded.",
+    "transport": "Danderyds sjukhus metro station (Roslagsbanan/T-bana) is essentially at the site, about 15-20 minutes from central Stockholm. Comfortably inside the day-trip boundary; joins Stockholm.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Also called Morbyeken, after the former Morby Crown Park it grew up in before the hospital was built around it. First protected 1948, formally designated a natural monument 30 June 1960 when Stockholm County Council took the land for Danderyd Hospital. Girth 786cm, among the thickest natural-monument oaks in Stockholm County. Age given as 'approximately 800 years', sourced to the Lansstyrelsen's own natural-monuments report rather than derived here. The trunk is hollow all the way to the top and fire-scarred inside, walkable, with bird nests inside; a large limb fell onto an adjacent playground in 1989, prompting heavy pruning, so the tree is a veteran in visibly declining condition rather than a pristine specimen; the story should say so honestly. Coordinate 59.3905,18.03578 derived from Wikidata's DMS statement (59d23'25.68\"N 18d2'8.78\"E), matching the candidate list's own coordinate closely (within about 20m); kept as confirmed. Recommend joining the Stockholm city page, not a standalone place: it clears the day-trip boundary easily via its own named metro stop."
+  },
+  {
+    "id": "trs_001",
+    "name": "Trolleken (the Troll Oak of Trollskogen)",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "800 to 900 years",
+    "age_min": 800,
+    "age_max": 900,
+    "location": {
+      "address": "Trollskogsstigen trail, Trollskogen nature reserve, northeast Oland, near Naturum Trollskogen",
+      "latitude": 57.354626,
+      "longitude": 17.124371,
+      "neighbourhood": "Trollskogen, Boda, Borgholm municipality, Oland"
+    },
+    "verified_sources": [
+      "https://www.lansstyrelsen.se/kalmar/besoksmal/naturreservat/trollskogen.html",
+      "https://alltpaoland.se/platser/trolleken/"
+    ],
+    "access": "Free. Inside Trollskogen nature reserve, reached on the marked 4.5km Trollskogsstigen trail from Naturum Trollskogen (visitor centre with parking, toilets, cafe). Open access, no ticket.",
+    "transport": "No public transport; reached by car via route 136, about 65km north of Borgholm. A drive rather than a walk from any town; this is its own destination, not part of a city day.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Oland's oldest oak, standing in Trollskogen ('the troll forest'), one of Oland's most-visited nature reserves (established 1998, 266ha, its own visitor centre and four marked trails). Age given consistently as 800-900 years by the county authority (Lansstyrelsen Kalmar) and a local tourism site; kept as the range given rather than sharpened. No girth or height found in either source; flagged as missing rather than guessed. Local legend recorded by alltpaoland.se: seafarers may have used the oak as a landmark when the surrounding land was open grazed pasture rather than forest, stated as theory, not fact. Coordinate 57.354626,17.124371 matches the candidate list's own coordinate closely (within a few metres) and a named tourist-guide source; kept as confirmed. Clears the single-tree-destination test easily: it anchors one of Oland's most-visited reserves, with a naturum, marked trails and real visitor infrastructure built around it, not a lone field oak. Recommend as its own place (Trollskogen), 98.8km from the nearest published place, reached by car."
+  }
+]
