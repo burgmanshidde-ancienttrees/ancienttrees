@@ -359,13 +359,29 @@ def main():
                              "leads": []})
     lead_ids = {l.get("sighting_id") for l in leads_doc["leads"]}
 
-    queue, new_leads, skipped, mine = [], 0, 0, 0
+    queue, new_leads, skipped, mine, rematched = [], 0, 0, 0, 0
     today = datetime.date.today().isoformat()
     for row in rows:
         sid = row["id"]
+        # A LEAD IS RE-CHECKED AGAINST TODAY'S MAP (2026-09-08). Everything else
+        # in `done` is a decision somebody made and it stands. `lead` is not a
+        # decision, it is the ABSENCE of one: it means "no tree of ours was
+        # near this" at the moment it was read. The map gains trees every
+        # night, and that verdict never got to change its mind.
+        #
+        # Found by measuring Hidde's own Baarn photographs: three of them sit
+        # 7, 17 and 21 metres from the Cantonspark Giant Sequoia and the
+        # matcher pairs all three with it TODAY, at a radius of 30 m. They were
+        # filed as "matches no tree we map" and marked done forever, before
+        # that tree was there to match. His question was why nobody had ever
+        # looked at them; this is half the answer and the reporting hole is the
+        # other half.
         if sid in done:
-            skipped += 1
-            continue
+            if done[sid].get("outcome") != "lead" or match(row, index)[0] is None:
+                skipped += 1
+                continue
+            del done[sid]
+            rematched += 1
         # OUR OWN PHOTOGRAPHS ARE NOT CONTRIBUTIONS (2026-09-07). Hidde spent a
         # day testing in Nara and photographed a great deal: "i was testing so
         # fotographed a lot but we need to figure out how to judge which ones
@@ -443,7 +459,8 @@ def main():
         save(LEADS, leads_doc)
     print(f"sightings inbox: {len(rows)} row(s) with a photograph, {skipped} already handled, "
           f"{mine} ours, {len(queue)} queued for a look, "
-          f"{new_leads} new lead(s) for trees we do not map")
+          + (f"{rematched} lead(s) the map has since caught up with, " if rematched else "")
+          + f"{new_leads} new lead(s) for trees we do not map")
     for e in queue:
         print(f"  {e['sighting_id'][:8]}  {e['tree_id']}  {e['tree_name'][:40]}  "
               f"match={e['match']}{'' if e['distance_m'] is None else ' ' + str(e['distance_m']) + 'm'}  "
