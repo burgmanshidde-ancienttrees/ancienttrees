@@ -1,0 +1,69 @@
+{
+  "city": "Iida",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Iida maps one tree: a cherry over 450 years old that carries a twenty-metre crown on no supports at all, which both records of it single out as remarkable. About three metres up, the trunk splits into five limbs spread like a broom. Officially it is the Osahime Edo higan; everybody calls it the Yasutomi cherry, after the retainer family whose residence once stood on this ground. It flowers just after the spring equinox, is lit at night while it blooms, and stands free in the art museum's grounds.",
+  "meta_description": "The Yasutomi Cherry, Iida: over 450 years old, twenty metres tall on no props, flowering in late March in the art museum grounds.",
+  "question_meta": "Iida's oldest and only mapped tree is the Yasutomi Cherry, an Edo higan over 450 years old, free in the art museum grounds.",
+  "question_answer": "Iida's only mapped tree, and its oldest, is the Yasutomi Cherry, an Edo higan put at over 450 years old. It stands in the grounds of the Iida City Art Museum on Otemachi, free to walk up to, about sixteen minutes on foot from Iida Station.",
+  "question_context": "Iida City's cultural property record and the art museum's own pages agree on the figures: over 450 years, about 5.4 metres round at chest height, roughly twenty metres tall. Both single out the same thing about it, which is that it holds that height with no props or braces under it, unusual for a cherry of this age. The trunk divides about three metres up into five major limbs arranged like a broom, and the whole crown rides on them. Its formal name is Osahime no Edohigan. The common name comes from the ground it stands on, the former residence of the Yasutomi family, chief retainers to the Hori clan who held the Iida domain; the residence and the domain are gone and the city art museum occupies the site. Nagano Prefecture made the tree a prefectural natural monument on 22 May 1967. It opens slightly after the spring equinox, which in Iida usually means the last days of March into early April, and the city runs a public bloom tracker and lights the tree at night while it flowers.",
+  "hero_tree_id": "iid_001",
+  "oldest_tree_id": "iid_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Iida?",
+      "a": "The Yasutomi Cherry, an Edo higan put at over 450 years old, standing in the grounds of the Iida City Art Museum. Nagano Prefecture listed it as a natural monument in 1967."
+    },
+    {
+      "q": "When does it flower?",
+      "a": "Slightly after the spring equinox, which in Iida usually falls in the last days of March or the first days of April. The city publishes a bloom tracker through the season and lights the tree at night while it is out."
+    },
+    {
+      "q": "Why is it called the Yasutomi cherry?",
+      "a": "Its official name is Osahime no Edohigan. The common name comes from the Yasutomi family, chief retainers to the Hori lords of Iida domain, whose residence once stood on this ground."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open grounds of the Iida City Art Museum, three minutes' walk from the Prefectural Joint Government Building bus stop or sixteen minutes from Iida Station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "iid_001",
+      "name": "The Yasutomi Cherry",
+      "species": "Edo Higan Cherry (Prunus itosakura, syn. Prunus pendula f. ascendens)",
+      "age_estimate": "over 450 years",
+      "age_min": 450,
+      "age_max": 500,
+      "girth_cm": 540,
+      "height_m": 20,
+      "location": {
+        "address": "Iida City Art Museum grounds, 2-655-7 Otemachi, Iida City, Nagano Prefecture",
+        "latitude": 35.512256,
+        "longitude": 137.830536,
+        "neighbourhood": "Otemachi, Iida"
+      },
+      "story": "Japan's oldest cherries tend to end their days on timber props. This one is over 450 years old, twenty metres tall, and carries the whole crown unaided, which is the first thing both records of it reach for.\n\nAbout three metres up, the trunk divides into five major limbs spread like the head of a broom, and the entire crown rides on them. The trunk below is 5.4 metres round. Nagano Prefecture made it a prefectural natural monument on 22 May 1967.\n\nIts formal name is Osahime no Edohigan. Nobody uses it. The tree is the Yasutomi cherry, after the family who lived here: the Yasutomi were karo, chief retainers to the Hori clan who held the Iida domain, and this was their residence ground. The residence has gone, the domain has gone, and the Iida City Art Museum stands on the site with the cherry in its grounds, free to walk up to.\n\nHigan is the equinox, and that is roughly when the tree opens: in Iida, the final days of March running into early April. The city publishes a bloom tracker through the season and lights the tree after dark for as long as it holds its flowers.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.4 metres round, splitting about three metres up into five big limbs spread like a broom, and by the twenty-metre crown standing on no props. It is in the art museum grounds.",
+      "best_time": {
+        "months": [3, 4],
+        "kind": "flowers",
+        "label": "late March into early April, when the five-limbed crown opens just after the equinox and the city lights it at night"
+      },
+      "verified_sources": [
+        "https://www.city.iida.lg.jp/site/bunkazai/yasutomizakura.html",
+        "https://www.iida-museum.org/?s=%E5%AE%89%E5%AF%8C%E6%A1%9C"
+      ],
+      "access": "Free; stands in the grounds of the Iida City Art Museum, publicly open.",
+      "transport": "16-minute walk from JR Iida Station, or 3-minute walk from the 'Prefectural Joint Government Building' stop on the Shinnan Kotsu city loop bus.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

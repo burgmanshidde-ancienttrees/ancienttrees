@@ -1,0 +1,68 @@
+{
+  "city": "Kitakata",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kitakata maps one tree, and it is the reason people drive out to Shingu Kumano Shrine in November: a ginkgo 8.1 metres round and 30 metres tall, standing directly in front of the Nagatoko, an open-sided worship hall carried on forty-four pillars and listed as an Important Cultural Property. One national ranking of autumn foliage places it eleventh in Japan. It is free, unfenced and lit after dark in the second half of November. Published alone here because the tree itself is the destination, not because Kitakata's research is finished.",
+  "meta_description": "The Great Ginkgo of Shingu Kumano Shrine, Kitakata: 8.1 metres round, 30 metres tall, gold in late November and free to visit.",
+  "question_meta": "Kitakata's oldest and only mapped tree is the ginkgo of Shingu Kumano Shrine, put at 600 years by the city and over 800 by the shrine.",
+  "question_answer": "Kitakata's only mapped tree, and its oldest, is the Great Ginkgo of Shingu Kumano Shrine, put at about 600 years by the city and at over 800 by the shrine itself. It stands on open shrine ground in Keitoku-machi, about five kilometres from Kitakata Station in western Fukushima.",
+  "question_context": "The two figures come from two records and neither is a measurement. Kitakata City, which made the tree a city natural monument, gives about 600 years alongside the numbers it has actually measured: 8.1 metres round the trunk and 30 metres tall. Fukushima Prefecture's own tourism record gives no measurements at all and says the tree is held to be over 800 years old, calling it the shrine's goshinboku, its sacred tree. Nobody has cored it, so the gap between the two is two centuries of tradition rather than a dispute anybody can settle. What is not in doubt is the pairing the shrine is known for. The ginkgo stands directly in front of the Nagatoko, an open-sided worship hall carried on forty-four pillars and protected nationally as an Important Cultural Property. In the second half of November the leaves come down as a yellow floor between the two and the shrine lights the tree after dark, which is when most people come. If you know of a dated figure for the age, tell us.",
+  "hero_tree_id": "ktk_001",
+  "oldest_tree_id": "ktk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kitakata?",
+      "a": "The Great Ginkgo of Shingu Kumano Shrine. Kitakata City puts it at about 600 years; the shrine's own tradition says over 800. Nobody has cored it, so both figures are inherited rather than dated."
+    },
+    {
+      "q": "When is it at its best?",
+      "a": "Mid to late November, when the leaves turn and drop a yellow carpet in front of the Nagatoko hall. The shrine lights the tree after dark through that stretch."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open shrine ground in front of the worship hall, with no gate and no fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Kitakata Station is about five kilometres away and there is no direct bus. On weekdays the town runs an on-demand shared taxi service, and it is roughly ten minutes by car from Shiokawa interchange."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ktk_001",
+      "name": "The Great Ginkgo of Shingu Kumano Shrine",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 600 years (city figure); shrine tradition says over 800",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 810,
+      "location": {
+        "address": "Shingu Kumano Jinja, Keitoku-machi Shingu Kumano 2258, Kitakata City, Fukushima Prefecture",
+        "latitude": 37.618902,
+        "longitude": 139.830697,
+        "neighbourhood": "Kitakata"
+      },
+      "story": "Forty-four pillars hold up the Nagatoko and it has no walls at all. The ginkgo standing in front of it is 8.1 metres round.\n\nThat pairing is what Shingu Kumano Shrine is known for. The hall is protected nationally as an Important Cultural Property; the tree is a Kitakata city natural monument, thirty metres tall, and its age depends entirely on who is telling it. The city gives about 600 years. The shrine calls the ginkgo its goshinboku, its sacred tree, and says over 800. Nobody has cored it, so the two centuries between those numbers are tradition rather than a dispute anybody can settle.\n\nWhat the tree is unambiguously good at is November. One national ranking of autumn foliage spots puts it eleventh in the country and second in Fukushima Prefecture, which for a single tree standing in a village shrine is a strange sort of fame. In the second half of the month the leaves come down and lay a yellow floor between the trunk and the hall's forty-four pillars, and the shrine lights it after dark.\n\nGetting there is the part to plan. Kitakata Station is five kilometres off with no direct bus, though on weekdays the town runs an on-demand shared taxi, and it is about ten minutes by car from Shiokawa interchange.",
+      "how_to_recognise": "You can recognise it by its size, 8.1 metres round and thirty metres tall, and by where it stands: directly in front of the Nagatoko, the open-sided worship hall carried on forty-four pillars.",
+      "best_time": {
+        "months": [11],
+        "kind": "autumn colour",
+        "label": "mid to late November, when it drops a yellow floor in front of the hall and the shrine lights it after dark"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%AE%AE%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE",
+        "https://www.pref.fukushima.lg.jp/w4/fgr/perfectview/p17/"
+      ],
+      "access": "Free, on open shrine grounds in front of the Nagatoko (an Important Cultural Property worship hall). No gate or fee found.",
+      "transport": "Kitakata Station (JR Ban'etsu West Line) is about 5km away; the town also runs an on-demand shared-taxi service ('noruuto') on weekdays. Roughly 10 minutes by car from Shiokawa IC.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "city": "Oyodo",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Oyodo maps one tree, and a shrine in another town still sends priests to it. Every 26 July they draw water from the Yoshino River bank directly beneath this zelkova for a festival two days later, a ritual the town traces back to 1759. The tree is about eight metres round, roughly 700 years old by the town's record, and down to a single trunk after typhoons took the other three. It stands five minutes' walk from Koshibe Station, free, on open ground beside a small Inari shrine.",
+  "meta_description": "The Zelkova of Tsutta, Oyodo: about 700 years old, eight metres round, and the site of a water-drawing ritual recorded since 1759.",
+  "question_meta": "Oyodo's oldest and only mapped tree is the Zelkova of Tsutta, put at about 700 years, eight metres round, free beside the Yoshino River.",
+  "question_answer": "Oyodo's only mapped tree, and its oldest, is the Zelkova of Tsutta, put at about 700 years old by the town's own record. It stands on the north bank of the Yoshino River at Tsuchida, beside the Shoichii Sumiyoshi Inari Daimyojin shrine, five minutes' walk from Koshibe Station.",
+  "question_context": "Oyodo Town and a Nara tourism record give the same figures: about eight metres round at chest height, fifteen metres tall, roughly 700 years old. The age is a town estimate rather than a ring count. What is documented with a date is the ritual. Every 26 July, priests from Unebiyamaguchi Shrine in Kashihara come to the riverbank directly below this tree to draw water for their summer festival two days later, and the town's own record traces that practice to Horeki 9, which is 1759. Local tradition goes much further and credits the planting to Emperor Jinmu or Empress Jingu; that is legend, and it is worth reading as legend. The tree is also smaller than it was. Four main trunks once carried a crown spreading some forty metres east to west. Typhoons brought down three of them, the last in 2002, and one trunk remains, still leafing out fully each summer. Oyodo made it the town's first natural monument on 10 February 2003.",
+  "hero_tree_id": "oyd_001",
+  "oldest_tree_id": "oyd_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Oyodo?",
+      "a": "The Zelkova of Tsutta, put at about 700 years by the town's own record. It was made Oyodo's first town natural monument on 10 February 2003."
+    },
+    {
+      "q": "What is the water ritual under the tree?",
+      "a": "On 26 July each year, priests from Unebiyamaguchi Shrine in Kashihara draw water from the Yoshino River bank below the tree for their summer festival on 28 July. The town traces the practice to 1759."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open ground beside the Shoichii Sumiyoshi Inari Daimyojin shrine, with no gate and no fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About five minutes on foot from Koshibe Station on the Kintetsu Yoshino Line. The tree is close to the railway and Route 169, on the north bank of the river."
+    }
+  ],
+  "trees": [
+    {
+      "id": "oyd_001",
+      "name": "The Zelkova of Tsutta",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "roughly 700 years, by town record",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 800,
+      "height_m": 15,
+      "location": {
+        "address": "Tsuchida, Oyodo Town, Yoshino District, Nara Prefecture, on the north bank of the Yoshino River, beside Shoichii Sumiyoshi Inari Daimyojin shrine",
+        "latitude": 34.386152,
+        "longitude": 135.800913,
+        "neighbourhood": "Tsuchida, Oyodo"
+      },
+      "story": "Once a year, priests from another town come down to the riverbank under this tree and fill a vessel with water. The record of them doing it runs back to 1759.\n\nThe date is 26 July. The water goes to Unebiyamaguchi Shrine in Kashihara for its summer festival two days later, and Oyodo Town's own account traces the practice to Horeki 9. Local tradition reaches much further back and credits the planting to Emperor Jinmu or to Empress Jingu, which is legend and should be read as such. The measured version is plainer: about eight metres round at chest height, fifteen metres tall, roughly 700 years old by the town's record, made Oyodo's first town natural monument on 10 February 2003.\n\nIt used to be a great deal bigger. Four main trunks carried a crown that reached some forty metres from end to end, east to west. Typhoons took three of them, the last in 2002, and what stands now is the survivor, still coming into full green leaf every summer.\n\nIt is an easy tree to reach and an odd one to find: five minutes on foot from Koshibe Station, hard against the railway and Route 169, on open ground beside a small Inari shrine on the north bank of the Yoshino River.",
+      "how_to_recognise": "You can recognise it by the single surviving trunk, about eight metres round under a crown only fifteen metres tall, lopsided where three trunks broke away. It stands beside the small Inari shrine on the river bank.",
+      "verified_sources": [
+        "https://narayado.info/nara/tsutta-keyaki.html",
+        "http://www.town.oyodo.lg.jp/contents_detail.php?frmId=274"
+      ],
+      "access": "Free, on open shrine/riverside ground beside the Shoichii Sumiyoshi Inari Daimyojin shrine; no gate or fee found. Right next to the railway and Route 169.",
+      "transport": "About a 5-minute walk from Koshibe Station on the Kintetsu Yoshino Line.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
