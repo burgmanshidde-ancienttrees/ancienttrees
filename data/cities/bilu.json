@@ -1,0 +1,62 @@
+{
+  "city": "Bilu",
+  "country": "Taiwan",
+  "status": "needs_curation",
+  "intro": "Bilu is a rest stop on Taiwan's Central Cross-Island Highway, roughly 2,000 metres up in the mountains of Taroko National Park, built around a single Taiwan fir reputed to be over 3,000 years old. It is the largest old tree along the entire highway, and the road itself has no other reason to stop here: no town, no village, just the tree and the mountain air around it.",
+  "meta_description": "The Bilu Sacred Tree: a Taiwan fir over 3,000 years old, 50 metres tall, the largest old tree on the Central Cross-Island Highway.",
+  "question_meta": "The Bilu Sacred Tree is a Taiwan fir over 3,000 years old and 50 metres tall, at a mountain rest stop on Taiwan's Central Cross-Island Highway.",
+  "question_answer": "The Bilu Sacred Tree stands at a highway rest stop roughly 2,000 metres up on Taiwan's Central Cross-Island Highway, inside Taroko National Park. Hualien County's own tourism office and an independent Taiwanese outlet both record it as a Taiwan fir over 3,000 years old, about 50 metres tall and 3.5 metres wide, and describe it as the largest old tree found anywhere along the highway.",
+  "question_context": "The tree sits at a spot where cold-climate conifer forest meets warmer broadleaf forest, a transition zone Hualien County's tourism office calls valuable for observing how the two forest types mix. Despite its age it is described as still full of life, its branches carrying lichen. The rest stop around it has a parking area, a small cafe, a trail and a pavilion, built specifically because travellers on the highway stop here for the tree rather than for anything else at this point in the mountains. It is a useful contrast case for how differently Taiwan's named sacred trees have fared: Alishan's own Sacred Tree, the mountain's most famous, was cut down in 1998 after storm damage, while Bilu's has survived undamaged at a similar age and scale. Reaching it means driving the Central Cross-Island Highway itself, a mountain road that is an attraction in its own right and not a quick detour from anywhere else.",
+  "hero_tree_id": "blu_001",
+  "oldest_tree_id": "blu_001",
+  "faq": [
+    {
+      "q": "How old is the Bilu Sacred Tree?",
+      "a": "Both Taroko National Park and Hualien County's tourism office record it as over 3,000 years old."
+    },
+    {
+      "q": "Is it really the biggest tree on the highway?",
+      "a": "Yes, per the official record: it is described as the largest old tree found along the entire Central Cross-Island Highway."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands at a public rest stop with a car park, a small cafe, a trail and a pavilion, on the 14A line at the 127.6 km mark of the highway."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car or bus along Taiwan's Central Cross-Island Highway, in Xiulin Township, Hualien County, at about 2,000 metres elevation. There is no rail access this high in the mountains."
+    }
+  ],
+  "trees": [
+    {
+      "id": "blu_001",
+      "name": "The Bilu Sacred Tree",
+      "species": "Taiwan Fir (Cunninghamia konishii)",
+      "age_estimate": "over 3,000 years",
+      "age_min": 3000,
+      "age_max": 3300,
+      "girth_cm": null,
+      "location": {
+        "address": "Central Cross-Island Highway, 14A Line, 127.6 km mark, Xiulin Township, Hualien County",
+        "latitude": 24.18060556,
+        "longitude": 121.40308333,
+        "neighbourhood": "Bilu rest area, Taroko National Park, roughly 2,000m elevation"
+      },
+      "story": "Two Taiwanese sacred trees tell opposite stories at almost the same age. Alishan's, the island's most famous, was struck by lightning in 1956, half collapsed in a storm in 1997, and was finally cut down in 1998 after the damage made it unsafe. Bilu's has taken a different path: over 3,000 years old, about 50 metres tall and 3.5 metres across, and by both Hualien County's own tourism office and an independent Taiwanese account, still full of life, with lichen trailing along its branches. It stands roughly 2,000 metres up in the mountains, at a rest stop built onto the Central Cross-Island Highway specifically because of it, with a car park, a small cafe, a trail and a pavilion and nothing else to draw a stop at this exact bend in the road. The tree also marks an ecological seam: this is roughly where the highway's cold-climate conifer forest gives way to warmer broadleaf forest, a transition Hualien's tourism office calls valuable for watching the two mix. Getting here means driving the Central Cross-Island Highway itself, a mountain road that is an attraction in its own right, so this is a destination reached deliberately rather than passed on the way to somewhere else.",
+      "verified_sources": [
+        "https://tour-hualien.hl.gov.tw/en/TourContent.aspx?n=170&s=4255",
+        "https://etaiwan.news/2024/03/18/%E7%A2%A7%E7%B6%A0%E7%A5%9E%E6%9C%A8%EF%BD%9C%E9%AB%98%E5%A3%BD3000%E6%AD%B2%EF%BC%8C%E4%BE%9D%E7%84%B6%E6%9E%9D%E7%B9%81%E8%91%89%E8%8C%82%E3%80%81%E7%B6%A0%E6%84%8F%E7%9B%8E%E7%84%B6%EF%BC%8C/"
+      ],
+      "access": "Free, at a public highway rest stop with a car park, cafe, trail and pavilion",
+      "transport": "By car or bus on the Central Cross-Island Highway; no rail access at this elevation",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
