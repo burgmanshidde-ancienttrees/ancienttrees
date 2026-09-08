@@ -85,6 +85,7 @@ struct CollectSheet: View {
         case describe          // a tree we do not map
         case added(UUID)       // a tree we do not map, just written and sent
         case unsure            // one of ours, and they could not say which
+        case compare(String)   // looking at one candidate before committing
     }
 
     /// Where the coordinate on this record came from. Kept because it changes
@@ -200,6 +201,8 @@ struct CollectSheet: View {
                         case .describe: describeForm
                         case .added(let id): addedState(id)
                         case .unsure: unsureState
+                        case .compare(let id):
+                            if let t = catalogue.tree(id) { compareState(t) }
                         case .intro, .place: EmptyView()
                         }
                     }
@@ -279,6 +282,14 @@ struct CollectSheet: View {
             SignInSheet(reason: .feedback, localCount: saved.savedCount)
         }
         .task {
+            if Launch.collectCompare, let t = Self.nearby(origin: origin,
+                                                          trees: catalogue.trees).first {
+                at = origin
+                shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
+                    .image { _ in }
+                stage = .compare(t.id)
+                return
+            }
             if Launch.collectTicked, let t = Self.nearby(origin: origin,
                                                          trees: catalogue.trees).first {
                 at = origin
@@ -614,10 +625,18 @@ struct CollectSheet: View {
             Text(pickerBlurb)
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
+            // Tapping a candidate OPENS it rather than claiming it (Hidde,
+            // 2026-09-07, sketching the flow he wanted: "dan als je op de boom
+            // klikt dan krijg je uitleg of foto of een exacte pin om te
+            // confirmen, en dan kan je zeggen this is the one").
+            //
+            // It is Merlin's flow, which CONVENTIONS.md recorded this morning:
+            // a short list, then you decide by COMPARING against the example
+            // photographs and species details, and only then tap "This is my
+            // bird!". A list whose rows commit on touch skips the comparing,
+            // which is the only part that makes the answer worth anything.
             ForEach(candidates) { t in
-                Button {
-                    if let shot, let at { claim(t, image: shot, at: at) }
-                } label: { row(t) }
+                Button { withAnimation(.snappy) { stage = .compare(t.id) } } label: { row(t) }
                     .buttonStyle(.plain)
             }
             Divider().padding(.vertical, 4)
@@ -733,6 +752,85 @@ struct CollectSheet: View {
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("collect-unsure-done")
+        }
+    }
+
+    // MARK: - Is this the one
+
+    /// Everything we hold that could settle it, on one screen, and an honest
+    /// line when we hold nothing.
+    ///
+    /// The three things that can answer "which of these is it" are a
+    /// photograph of the tree, a sentence saying what tells it from its
+    /// neighbours, and a pin exact enough to walk to. 551 of our trees carry
+    /// none of the three, and this screen is where that costs somebody
+    /// something, so it says so in plain words rather than showing an empty
+    /// space. Hidde's rule, same day: without one of the three it should not
+    /// be offered as a thing you can confirm.
+    private func compareState(_ t: Tree) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(t.name)
+                .font(.brand(24, .heavy)).foregroundStyle(Brand.ink)
+                .fixedSize(horizontal: false, vertical: true)
+            Text(Self.candidateLabel(species: t.commonName,
+                                     metres: (at != nil || location.known)
+                                         ? Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)
+                                         : nil,
+                                     direction: (at != nil || location.known)
+                                         ? Self.compass(from: at ?? origin, to: (t.lat, t.lng))
+                                         : ""))
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+
+            // A photograph of OUR tree, as large as the sheet allows, because
+            // comparing two pictures is the one check anybody can do standing
+            // up. Merlin shows its example photographs at exactly this moment.
+            if let p = t.photo, let url = p.full ?? p.card {
+                TreePhoto(url: url) { Brand.surfaceMuted }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 220)
+                    .clipShape(.rect(cornerRadius: 14))
+            }
+
+            if !t.howToRecognise.isEmpty {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("How to tell it apart")
+                        .font(.brand(13, .bold)).foregroundStyle(Brand.inkSoft)
+                    Text(t.howToRecognise)
+                        .font(.body).foregroundStyle(Brand.ink)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+
+            if t.precision == .approximate {
+                Text("Our pin for this one is rough: it marks the place, not the trunk.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
+            // The honest empty state, and the reason the 551 matter.
+            if t.photo == nil && t.howToRecognise.isEmpty && t.precision == .approximate {
+                Text("We have no photograph of this one, nothing written down about what tells it from its neighbours, and only a rough pin. We cannot help you be sure, and we would rather say so.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
+            Button {
+                if let shot, let at { claim(t, image: shot, at: at) }
+            } label: {
+                HStack { Spacer(); Text("This is the one").font(.brand(17, .bold)); Spacer() }
+                    .padding(.vertical, 15)
+                    .background(Brand.moss, in: .rect(cornerRadius: 15))
+                    .foregroundStyle(.white)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("collect-this-is-the-one")
+
+            Button("Back to the list") {
+                withAnimation(.snappy) { stage = .identify }
+            }
+            .font(.footnote.weight(.semibold))
+            .foregroundStyle(Brand.inkSoft)
+            .frame(maxWidth: .infinity, minHeight: 44)
         }
     }
 
