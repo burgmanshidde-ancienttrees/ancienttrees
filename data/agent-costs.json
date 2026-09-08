@@ -5947,6 +5947,15 @@
         "note": "5 Dordrecht deepening trees (dor_009-013) merged, plus 2 new single-tree places (Chishang/Takeshi Kaneshiro Tree, Alishan/Sianglin Sacred Tree); stories, recognition lines, 2 best_time",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Deventer, Gdansk, Ichinohe, Kanazawa",
+        "kind": "write",
+        "tokens": 20000,
+        "trees": 8,
+        "note": "8 lines, worst-first by impressions from recognise.py --stuck",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
