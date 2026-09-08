@@ -734,16 +734,21 @@ struct CollectView: View {
             }
             Spacer(minLength: 0)
         }
-        .accessibilityIdentifier("mytrees-who")
-        // CONTAIN, not the default. Nothing in this row is itself the button:
-        // the name is (mytrees-edit-profile), the two counts are. Without
-        // this, SwiftUI collapses the whole row into one accessibility
-        // element the moment an identifier is attached, and it inherits the
-        // name Text's .isButton trait and a fraction of its frame, which is
-        // how appfit measured a "Button 'mytrees-who'" at 62 by 14, well
-        // under Apple's 44 by 44 (2026-09-06). .contain keeps every child a
-        // separate element, which is what VoiceOver and this test both want.
-        .accessibilityElement(children: .contain)
+        // NO identifier on this row, and that is the fix rather than an
+        // omission (2026-09-08). It carried "mytrees-who" plus
+        // .accessibilityElement(children: .contain) so nothing in the row
+        // (the name is mytrees-edit-profile, the two counts are their own
+        // buttons) would merge into one element. That held on iOS 26 but not
+        // on iOS 18, where appfit's floor check still found a "Button
+        // 'mytrees-who'" at 62 by 14, inheriting the name Text's .isButton
+        // trait and a fraction of its frame despite .contain: an OS
+        // accessibility-merging difference between versions, not a layout
+        // bug. Nothing reads this identifier (no test taps or measures the
+        // row itself, only its children), so removing it removes the
+        // false positive rather than trading it for another one. A plain
+        // HStack with no accessibility modifiers already exposes each
+        // child as its own element, which is the behaviour the container
+        // was trying to force in the first place.
     }
 
     /// Every tree you have stood in front of, framed together.
