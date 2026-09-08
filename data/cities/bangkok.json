@@ -55,7 +55,8 @@
       },
       "curation_status": "flagged",
       "notes": "Photo candidate rejected 2026-07-31 after direct viewing (a session with working image tooling): the Wikimedia file (filename/category matched the correct canal segment, Khlong Lot at Wat Ratchabophit) turns out to be a canal streetscape shot, buildings and water dominate the frame and the trees are a distant, barely-identifiable smudge in the background. Fails the subject test (Cadiz standard: the tree must be unmistakably the subject, not something to search for in a wide shot). Reverted to missing rather than approved; a future session should look for a photo actually framed on one of the five ironwoods themselves.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by the count, five Thai ironwoods left of the seven standing in 1998, over the water. They stand along the Khlong Lot canal on Atsadang Road, behind Wat Ratchabophit."
     },
     {
       "id": "bkk_002",
@@ -84,7 +85,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its place, the Bodhi tree at Lan Pho directly in front of the ordination hall. It stands below the Golden Mount that draws every visitor's eye up and past it, and the temple is nursing it back to health."
     },
     {
       "id": "bkk_003",
@@ -119,7 +121,8 @@
       "curation_status": "ai_generated",
       "notes": "The thapra.lib.su.ac.th source (Silpakorn University's Rattanakosin temple archive) could only be confirmed via search-indexed snippet this session; direct fetch failed with a socket error on every attempt. The 1864/Rama IV planting date is independently corroborated by becommon.co, an unrelated source, so the fact stands on two sources despite the direct-fetch failure.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the building it shades, the Prasat Phra Thep Bidon, the Royal Pantheon that opens one day a year. It stands beside it, on the route every Grand Palace visitor already walks to the Emerald Buddha."
     },
     {
       "id": "bkk_004",
@@ -151,7 +154,8 @@
       "curation_status": "ai_generated",
       "notes": "The thapra.lib.su.ac.th source could only be confirmed via search-indexed snippet this session; direct fetch failed with a socket error. The 1891 Bodh Gaya cutting, Si Racha nursery and 1900 planting are independently corroborated across today.line.me and posttoday.com.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its position, on the lawn behind the ordination hall and standing where a chedi would normally rise, which is unusual for a Thai temple. It stands behind the marble ubosot, planted there in 1900."
     },
     {
       "id": "bkk_005",
@@ -182,7 +186,8 @@
       },
       "curation_status": "flagged",
       "notes": "Exact planting date undocumented; sources agree the tree predates Thammasat's 1934 founding on this site but give no planting record, only that the land was inherited rather than landscaped. Included for historical and civic significance under CLAUDE.md's qualifying bar rather than confirmed age, the same pattern as Reykjavik's Spruce of Elliðaárhólmi.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the plaza named after it, Lan Pho, the Bodhi Court, where students gathered in October 1973 and again in 1976. It stands in front of the Faculty of Liberal Arts on the Tha Phra Chan campus."
     }
   ]
 }
