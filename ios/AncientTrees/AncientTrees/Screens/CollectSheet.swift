@@ -964,6 +964,13 @@ struct CollectSheet: View {
                 .font(.footnote)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
+            // THE ONE MOMENT THIS QUESTION CAN BE ASKED HONESTLY. Somebody is
+            // standing in front of a tree we already map, having just found
+            // it, which is the only state in the whole product where "was it
+            // worth the trip" has a real answer. It sits above Done rather
+            // than below it, because a control under the button that ends the
+            // screen is a control nobody sees.
+            WorthTheTripAsk(tree: t)
             doneButton
             // THE ESCAPE FROM A CONFIDENT MATCH, and it used to be a grey link
             // in the footnote size. Hidde photographed exactly this screen in

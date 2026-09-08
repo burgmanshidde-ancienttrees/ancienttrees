@@ -1389,3 +1389,55 @@ we put to the person holding the phone.
 Read 2026-09-08:
 - https://support.google.com/maps/answer/6320846
 - https://www.inaturalist.org/posts/34222-inaturalist-how-to-observations-guide
+
+
+---
+
+## Asking whether a place was worth going to (2026-09-08)
+
+Looked up when Hidde asked to end the photograph flow with "was it worth the
+trip", thumbs up and down, "zodat we langzaam leren of bomen echt de moeite
+zijn".
+
+**Reference: AllTrails.** The prompt to rate comes after a COMPLETED recorded
+activity, and only under two conditions: the activity attaches to a verified
+trail, and you have not already reviewed that trail in the last twelve months.
+Both halves matter here. It is asked about a thing the database already knows,
+and it is asked once.
+
+**Reference: Google Maps.** After you have been somewhere it asks "How was
+[place]? Help others know what to expect." After the visit, never during, and
+framed as helping the next person rather than as rating us. Its own support
+forum is full of people asking how to turn the prompts OFF, which is the
+warning that comes with the pattern: the ask is fine, the repetition is not.
+
+**Reference: Apple's HIG.** Ask for feedback at a natural pause, never during a
+time-sensitive or important task, and leave real time between asks because
+"repeated rating requests can be irritating, and may even negatively influence
+people's opinion of your app."
+
+**So: on the payoff screen, inline rather than modal, once per tree, and not
+answering IS the dismissal.** No skip button, because a skip button makes
+declining an act. It sits ABOVE the Done button, since a control below the
+control that ends a screen is a control nobody sees.
+
+**Where we differ from all three, deliberately: thumbs rather than stars, and
+the two thumbs mean different things to different audiences.** Hidde,
+2026-09-08: "ik wilde duim naar beneden weg op de boom pagina maar in deze flow
+is die bruikbaar - het is info voor ons niet voor de gebruiker. Thumbs up tonen
+we wel." So the down thumb is a private signal and the up thumb is public. That
+is a real distinction the references do not draw, and it resolves what looked
+like a contradiction with his own ruling of 2026-09-04 removing the down thumb
+from the tree page: on a PAGE, somebody has not been, so a thumbs-down blurs
+into "something is wrong" and that page routes the negative to a report
+instead. Here they have just stood in front of it, so the answer is
+unambiguous, and this is the only state in the product where the question can
+be asked honestly at all.
+
+Same Supabase rows as everywhere else, kind `feedback`, why `worth it` or `not
+worth it`, so the pipeline cannot tell the surfaces apart.
+
+Read 2026-09-08:
+- https://support.alltrails.com/hc/en-us/articles/360018930652-How-to-write-a-review-for-a-trail
+- https://support.google.com/maps/answer/6230175
+- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews
