@@ -212,7 +212,7 @@
     {
       "sighting_id": "0c00d472-ba14-4cf4-b53d-a1d407d2c2e4",
       "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
-      "name": "Unidentified veteran cedar above a stone stairway, Nigatsu-do slope",
+      "name": "The Veteran Cedar above the Nigatsu-do Steps",
       "species": "Japanese Cedar (Cryptomeria japonica)",
       "age": null,
       "note": "Reader wrote \"I am not sure which one it is\"",
@@ -222,8 +222,10 @@
       "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/0C00D472-BA14-4CF4-B53D-A1D407D2C2E4.jpg",
       "nearest_published_m": 53,
       "status": "lead",
-      "why": "Published as nra_010 (Roben-sugi) on 2026-09-07, held the same evening, withdrawn on 2026-09-08: it is a different tree. OSM carries the Roben-sugi as a surveyed node at 34.6892513/135.8439422, 53 m from this shot, and the two Commons photographs of it (RobenSugi DSCN9003 20100404.JPG, RobenSugi Cryptomeria japonica.jpg) show a slim conical replanting branched to the ground in an open court beside Nigatsu-do. This photograph is a veteran with a thick fluted bole above a stone stairway lined with lanterns and 500-yen donation steles. Not the same tree, and not yet identified. Verify to the normal bar before it gets a page or a photo credit.",
-      "seen": "2026-09-08"
+      "why": "Published as nra_010 (Roben-sugi) on 2026-09-07, held the same evening, withdrawn on 2026-09-08: it is a different tree. OSM carries the Roben-sugi as a surveyed node at 34.6892513/135.8439422, 53 m from this shot, and the two Commons photographs of it (RobenSugi DSCN9003 20100404.JPG, RobenSugi Cryptomeria japonica.jpg) show a slim conical replanting branched to the ground in an open court beside Nigatsu-do. This photograph is a veteran with a thick fluted bole above a stone stairway lined with lanterns and 500-yen donation steles. Not the same tree, and not yet identified. Verify to the normal bar before it gets a page or a photo credit. RESEARCHED 2026-09-08 and it is a real one: the trunk behind the row of 500-yen donation steles is deeply furrowed sugi bark roughly a metre through, many times the replanting's girth. Standing point 34.6887761/135.8438707 looking north up the steps (OSM way/1451832724), so the tree is near 34.68900/135.84381, about 30 m south of the Roben-sugi, between Sangatsu-do and Nigatsu-do. Not in OpenStreetMap, not in data/registers/japan-bunkacho.json, and no Commons photograph found of it. Naming it needs a Japanese source or Todai-ji's own material; the kyoju.biodic.go.jp giant-tree database is the register to try, and we have not imported it.",
+      "seen": "2026-09-08",
+      "latitude_estimated": 34.689,
+      "longitude_estimated": 135.84381
     }
   ]
 }

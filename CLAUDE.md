@@ -254,6 +254,15 @@ The target on the meter: **at or under 15,000 tokens per published tree**, read 
 6. **Cross-check and fill:** monumentaltrees.com for verification of age and location claims only (NEVER copy their photos or text), Atlas Obscura, local history blogs, park authority pages.
 
 - A tree qualifies if it is: genuinely old OR visually spectacular OR historically significant, AND publicly accessible
+
+**At every site, ask which trunk is worth the visit, not which trunk has the name (Hidde, 2026-09-08: "kun je altijd het hoofddoel trees worth the visit in ogenschouw houden. dan is die oude in een tempel toch een stuk interessanter?").** Said at Nigatsu-do, where the tree we map is the Roben-sugi, a famous cedar of a famous legend whose standing timber is a 1967 replanting, and where an unnamed veteran with a trunk four times its girth stands thirty metres down the same steps, unmapped by us, by OpenStreetMap and by the register.
+
+The bias is structural rather than a judgement anybody made, which is why it needs writing down. **Our pipeline finds trees by NAME.** A register entry, a legend, a Wikipedia article, a Commons category: all of them are how a tree becomes FINDABLE, and none of them is why somebody should walk to it. So fame is visible to every step in Step 1 and age is not, and the older tree beside the famous one is invisible at every stage: nothing searches for it, no source names it, and it never reaches a brief. It is also invisible from inside a pass, because every source will correctly agree that the famous tree is the famous tree.
+
+So: where a named tree turns out to be young, a successor or a replanting, look around the site before moving on, and record what is standing there as a lead with a coordinate even when nothing anywhere names it. `passcheck.py --brief` prints this, so a verification pass reads it without reading this file.
+
+This does not retire the famous replanting. The Roben-sugi keeps its page and it earns it on the legend, which is the same ground Hiroshima's survivors, Newton's apple tree and the 1948 dawn redwoods stand on. What changed is that the page has to SAY that, and that being the famous one is no longer a reason to stop looking. `note_a_young_tree_is_not_ancient()` in preflight holds the first half: under 100 years, with no big trunk and no why_go, the page offers an age as its argument and the age is not one.
+
 - **The day-trip boundary (Hidde, 2026-08-01):** a tree within roughly 30 minutes by public transport of the city centre belongs on the city page, labeled honestly: the real place name in its location fields, the true travel time in transport. Blarney counts for Cork, Fota counts for Cork, Coole Park counts for Galway. What it does not allow: quietly presenting an out-of-town tree as standing in the city.
 
 **The count follows the trees. Decided by Hidde 2026-07-26, reframed by him 2026-08-02, and given a number per city on 2026-08-12.** Ten was always the working default rather than a law: "de enige reden waarom ik met 10 begin is SEO strategie en haalbaarheid... uiteindelijk is de visie dat er een behapbaar aantal bomen in de buurt te vinden zijn, geen exacte nummers".
