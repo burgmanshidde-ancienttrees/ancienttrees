@@ -321,3 +321,95 @@ struct FlowChips<Content: View>: View {
         }
     }
 }
+
+
+/// WAS IT WORTH THE TRIP? Asked once, at the end of the flow, only about a
+/// tree we already map.
+///
+/// Hidde, 2026-09-08: "zou ik de flow willen eindigen met de vraag was het
+/// worth the trip met thumbs up en down (gelinkt aan de thumbs up die we al
+/// hebben) zodat we langzaam leren of bomen echt de moeite zijn."
+///
+/// THE DOWN THUMB IS BACK HERE AND ONLY HERE, and that is not a reversal of
+/// his 2026-09-04 ruling that removed it. He drew the line himself the same
+/// day he asked for this: "ik wilde duim naar beneden weg op de boom pagina
+/// maar in deze flow is die bruikbaar - het is info voor ons niet voor de
+/// gebruiker. Thumbs up tonen we wel." On a tree PAGE a thumbs-down is
+/// ambiguous, because somebody browsing has not been and "not worth it" and
+/// "something is wrong" get confused, which is why that page routes the
+/// negative to a report. Here the person has just stood in front of it, so the
+/// answer is unambiguous, and it is the only moment we can ever ask it
+/// honestly. What does not change: the up is public and the down is ours.
+///
+/// CONVENTION (CONVENTIONS.md 2026-09-08). AllTrails prompts for a rating
+/// after a recorded activity, and only when the activity attaches to a
+/// verified trail and you have not rated it recently; Google Maps asks "How
+/// was X? Help others know what to expect" after the visit rather than during
+/// it; Apple's HIG says to ask at a natural pause, never mid-task, and warns
+/// that repeated asks turn people against the app. So: on the payoff screen,
+/// inline rather than modal, no dismiss button because not answering IS the
+/// dismissal, and never shown twice for the same tree.
+struct WorthTheTripAsk: View {
+    let tree: Tree
+
+    @Environment(Account.self) private var account
+    @Environment(VoteCounts.self) private var counts
+    @AppStorage private var vote: String
+    @State private var signingIn = false
+
+    init(tree: Tree) {
+        self.tree = tree
+        _vote = AppStorage(wrappedValue: "", "at_worthit_\(tree.id)")
+    }
+
+    var body: some View {
+        Group {
+            if vote.isEmpty {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Was it worth the trip?")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Brand.ink)
+                    HStack(spacing: 10) {
+                        thumb("hand.thumbsup", "up", "Yes, worth the trip")
+                        thumb("hand.thumbsdown", "down", "No, not worth the trip")
+                    }
+                }
+                .accessibilityIdentifier("worth-the-trip")
+            } else {
+                // Acknowledged where it happened rather than by a toast, which
+                // leaves no trace for somebody coming back (CONVENTIONS.md,
+                // landing after you have added something). No thanks-for-the-
+                // negative variant: the same line either way, because a
+                // different one would read as us minding.
+                Text("Noted, that helps.")
+                    .font(.footnote)
+                    .foregroundStyle(Brand.inkSoft)
+            }
+        }
+        .sheet(isPresented: $signingIn) { SignInSheet(reason: .feedback, localCount: 0) }
+    }
+
+    private func thumb(_ icon: String, _ value: String, _ label: String) -> some View {
+        Button {
+            guard account.isSignedIn else { signingIn = true; return }
+            vote = value
+            if value == "up" { counts.record(tree.id, from: "", to: "up") }
+            let why = value == "up" ? "worth it" : "not worth it"
+            Task {
+                _ = await Submission.sendFeedback(city: tree.city,
+                                                  tree: "\(tree.id) (\(tree.name))",
+                                                  why: why,
+                                                  token: await account.freshToken())
+            }
+        } label: {
+            Image(systemName: icon)
+                .font(.system(size: 20, weight: .semibold))
+                .frame(width: 64, height: 44)
+                .background(Brand.surfaceMuted, in: .rect(cornerRadius: 12))
+                .foregroundStyle(Brand.ink)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(label)
+        .accessibilityIdentifier("worth-the-trip-\(value)")
+    }
+}
