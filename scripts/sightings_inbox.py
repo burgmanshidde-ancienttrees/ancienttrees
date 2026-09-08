@@ -242,9 +242,81 @@ def worth(entry):
     return rank, why
 
 
+def merge_leads(leads):
+    """One row per sighting_id, keeping whichever carries a human verdict."""
+    boiler = "matches no tree we map"
+    out, seen = [], {}
+    for l in leads:
+        sid = l.get("sighting_id")
+        if not sid:
+            out.append(l)
+            continue
+        if sid not in seen:
+            seen[sid] = len(out)
+            out.append(l)
+            continue
+        i = seen[sid]
+        keep, drop = out[i], l
+        why_keep = keep.get("why") or ""
+        why_drop = drop.get("why") or ""
+        if boiler in why_keep and why_drop and boiler not in why_drop:
+            keep, drop = drop, keep
+        merged = {**drop, **{k: v for k, v in keep.items() if v not in (None, "")}}
+        merged["why"] = keep.get("why") or drop.get("why") or ""
+        out[i] = merged
+    return out
+
+
+def open_leads():
+    """Photographs of trees we do NOT map, still without a verdict.
+
+    THE HOLE THIS CLOSES (2026-09-08). A sighting matching no tree we publish
+    was written to data/leads/_sightings.json and marked done in the same
+    breath, and nothing anywhere read that file: prepare.py and nightly.yml
+    both look at the QUEUE, which by construction holds only photographs of
+    trees we already have. So `--status` answered "0 photograph(s) waiting for
+    a look" while five of Hidde's own Nara and Baarn photographs sat in the
+    leads file that nobody opens. His words: "Hoe kan het dat die niet zijn
+    bekeken? Dat moet dicht."
+
+    A tree we do not map is the MORE interesting half of this inbox, not the
+    less: a photograph of a tree we already have is at best a better picture,
+    while this is a tree the map does not know about. It was the half being
+    dropped.
+
+    A lead counts as open until somebody writes a verdict into `why` that is
+    not the boilerplate the inbox itself puts there. That is deliberately a
+    low bar: "checked, one of dozens on this slope" closes it, and the point
+    is that a human sentence exists at all.
+    """
+    doc = load(LEADS, {"leads": []})
+    boiler = "matches no tree we map"
+    out = []
+    for l in doc.get("leads", []):
+        if l.get("status") in ("published", "duplicate"):
+            continue
+        why = (l.get("why") or "")
+        if why and boiler not in why:
+            continue
+        out.append(l)
+    return out
+
+
 def status():
     q = load(QUEUE, {"queue": []}).get("queue", [])
-    print(f"sightings inbox: {len(q)} photograph(s) waiting for a look")
+    leads = open_leads()
+    print(f"sightings inbox: {len(q)} photograph(s) waiting for a look, "
+          f"{len(leads)} of a tree we do not map")
+    for l in leads:
+        where = (f"{l.get('latitude'):.4f},{l.get('longitude'):.4f}"
+                 if l.get("latitude") is not None else "no coordinate")
+        print(f"  {str(l.get('sighting_id'))[:8]}  NOT ON THE MAP  "
+              f"{(l.get('name') or 'unnamed')[:34]}  {where}"
+              + (f"  note: {l['note'].strip()[:40]}" if (l.get("note") or "").strip() else ""))
+    if leads:
+        print("  ^ these need the normal bar, not a page. Check each with:")
+        print("      python3 scripts/corroborate.py <lat> <lng> --country <country>")
+        print("    then write a verdict into its `why` in data/leads/_sightings.json.")
     for e in q:
         print(f"  {e['sighting_id'][:8]}  {e.get('tree_id') or 'NO MATCH'}  "
               f"{(e.get('tree_name') or e.get('name') or '')[:40]}  "
@@ -359,6 +431,14 @@ def main():
                           "every knock from the rows without a verdict.",
                  "written": today, "queue": queue})
     save(PROCESSED, processed)
+    # SELF-HEALING DEDUPE. The guard above is `sid not in lead_ids`, which only
+    # works on rows that carry a sighting_id, and older ones did not: on
+    # 2026-09-08 six of fourteen leads were second copies of a photograph
+    # already in the file, so the count of what still needs looking at was
+    # wrong in the direction that hides work. Merging on write costs nothing
+    # and fixes the file the first time anything touches it. The row carrying a
+    # real verdict wins, because that is the one somebody wrote by hand.
+    leads_doc["leads"] = merge_leads(leads_doc["leads"])
     if new_leads:
         save(LEADS, leads_doc)
     print(f"sightings inbox: {len(rows)} row(s) with a photograph, {skipped} already handled, "
