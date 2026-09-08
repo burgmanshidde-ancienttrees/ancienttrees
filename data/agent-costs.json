@@ -5956,6 +5956,15 @@
         "note": "8 lines, worst-first by impressions from recognise.py --stuck",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Sorrento, Luxembourg, Eindhoven, Groningen, Miyazaki, Oss",
+        "kind": "write",
+        "tokens": 20000,
+        "trees": 8,
+        "note": "8 lines, worst-first by impressions from recognise.py --stuck. Session total: 94 recognition lines across 24 cities.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
