@@ -980,8 +980,20 @@ struct CollectSheet: View {
             // it goes to the form.
             Button {
                 if case .ticked(let id) = stage { saved.toggleVisited(id) }
+                // DOUBT IS NOT DENIAL, and this line used to treat it as one.
+                // With a single candidate near, it sent an unsure person
+                // straight to "We do not have this one" and a form asking them
+                // to name a new tree, which is how a duplicate of a tree we
+                // already map enters the database on the strength of somebody
+                // hesitating. It is the same mistake "None of these" makes,
+                // arrived at from the other side, and the flow walk caught it
+                // on its first run.
+                //
+                // The list is the honest destination whatever its length: it
+                // holds all three answers, including "I am not sure which".
+                // Only with nothing of ours near at all is the form right.
                 withAnimation(.snappy) {
-                    stage = candidates.count > 1 ? .identify : .describe
+                    stage = candidates.isEmpty ? .describe : .identify
                 }
             } label: {
                 HStack { Spacer(); Text("I am not sure it was this one")
