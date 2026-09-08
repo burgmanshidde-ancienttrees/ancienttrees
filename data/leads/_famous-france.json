@@ -334,7 +334,8 @@
         "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-2.jpg",
         "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-3.jpg"
       ],
-      "status": "lead",
+      "status": "verified",
+      "note": "Verified 2026-09-08 (batch A); see data/research/famousfrance-batchA-verified.json. Confirmed pin (GPS cross-checked to a 2009 log). Flagged only because exact species rests on an unreachable monumentaltrees.com title.",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -554,7 +555,8 @@
         "https://commons.wikimedia.org/wiki/File:Nicorps_-_If_remarquable.jpg",
         "https://commons.wikimedia.org/wiki/File:Nicorps_-_If_remarquable_(2).jpg"
       ],
-      "status": "lead"
+      "status": "verified",
+      "note": "Verified 2026-09-08 (batch A); see data/research/famousfrance-batchA-verified.json. Approximate pin and flagged: the churchyard holds two yews and which one the coordinate pins is uncertain; a photographer's caption disagrees with the official age."
     },
     {
       "name": "If de Jauzé",
@@ -564,7 +566,8 @@
         "https://commons.wikimedia.org/wiki/File:Jauz%C3%A9_-_if_01.JPG",
         "https://commons.wikimedia.org/wiki/File:Jauz%C3%A9_-_if_02.JPG"
       ],
-      "status": "lead"
+      "status": "verified",
+      "note": "Verified 2026-09-08 (batch A); see data/research/famousfrance-batchA-verified.json. Confirmed pin (matched an OSM node's camera-location metadata). Sarthe's oldest known tree per SEPENES, free access."
     },
     {
       "name": "If millénaire d'Estry",
@@ -684,7 +687,8 @@
         "https://commons.wikimedia.org/wiki/File:2010_11_28_Le_tilleul_le_Sully.JPG",
         "https://commons.wikimedia.org/wiki/File:Le_Sully_de_Pesseli%C3%A8res_-_2014.JPG"
       ],
-      "status": "lead"
+      "status": "verified",
+      "note": "Verified 2026-09-08 (batch A); see data/research/famousfrance-batchA-verified.json. Approximate pin, no independent geotag cross-check found. Documented planted 1598, over a century of photographic record."
     },
     {
       "name": "Tilleul d'Innimond",
