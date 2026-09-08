@@ -642,9 +642,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Tilleul_de_Joux,_Rh%C3%B4ne_(mai_2020).jpg"
       ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "blocked",
+      "species": "Common Lime / Small-leaved or Large-leaved Lime (Tilia sp.), locally called 'Tilleul Sully'",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Access, not evidence: the tree ('Tilleul Venerable Sully') stands within the walled grounds ('l'enceinte') of the Chateau de Joux in Rhone, which the commune's own official site (joux.fr, 'Carte d'identite de Joux') states is private property of the Ruyneau de Saint-Georges family. Searched for visiting hours or a public-access program for this (non-touristic) Rhone chateau, distinct from the much more famous state-owned Chateau de Joux fortress in Doubs which dominates search results; found no evidence of routine public access, only a periodic local 'fete du tilleul' community festival (recorded editions 1989, 1991, 1993, 1995, 2003, 2005), which reads as occasional rather than standing access. Per hard rule 10 ('private land not genuinely open to visitors... when in doubt, leave it out'), blocking rather than shipping. The tree itself is well evidenced otherwise and could ship if access is confirmed: the commune's own site dates it to a 1720 estate plan ('il apparait deja sur un plan de 1720'), calls it 'au diametre imposant', and it gave its name to the village's linden festival. Commons photo (Sebleouf, 20 May 2020) camera-located at 45.886769, 4.371478, matching the candidate coordinate exactly, so if access is later confirmed the pin is already tree-level. A future pass should try contacting the commune (joux.fr) or the BeaujolaisVert tourist office directly about whether the courtyard is visible from outside the walls or opens for the festival, rather than re-running the same web search."
     },
     {
       "name": "Tilleul de Pérouges",
@@ -707,9 +708,10 @@
         "https://commons.wikimedia.org/wiki/File:Chapelle_de_Ch%C3%A2teau-Vieux_(F%C3%A9ternes)_02.JPG",
         "https://commons.wikimedia.org/wiki/File:Tilleul_Ch%C3%A2teau-Vieux_01.JPG"
       ],
-      "status": "lead",
+      "status": "verified",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-08 (batch B); see data/research/famousfrance-batchB-verified.json. Species upgraded to Tilia cordata on one source's authority. Borderline single-tree-destination call (micro-regional pull, not national); not merged into a city file this pass."
     },
     {
       "name": "Tilleul de Grange Sauvaget",
@@ -720,9 +722,10 @@
         "https://commons.wikimedia.org/wiki/File:Tilleul_de_Grange_Sauvaget_-_dsmm05089.jpg",
         "https://commons.wikimedia.org/wiki/File:Tilleul_de_Grange_Sauvaget_-_dsmm05090.jpg"
       ],
-      "status": "lead",
+      "status": "verified",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-08 (batch B); see data/research/famousfrance-batchB-verified.json. Pin corrected roughly 300m via OSM/jura-tourism.com coordinates. Age (250-550y) and girth (13.2m measured vs 17m legend/sign) both disputed across sources, recorded unresolved. Strong single-tree-destination candidate; not merged into a city file this pass."
     },
     {
       "name": "Tilleul de Réaumont",
@@ -733,9 +736,10 @@
         "https://commons.wikimedia.org/wiki/File:Tilleul_de_R%C3%A9aumont_-_2017-10-14_-_B.jpg",
         "https://commons.wikimedia.org/wiki/File:Tilleul_de_R%C3%A9aumont_-_2017-10-14_-_C.jpg"
       ],
-      "status": "lead",
+      "status": "verified",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-08 (batch B); see data/research/famousfrance-batchB-verified.json. Species confirmed Tilia platyphyllos. Strong single-tree-destination candidate (dedicated association, biannual festival since 1995, Tree of the Year nomination, reachable by train from Grenoble); not merged into a city file this pass."
     },
     {
       "name": "Tilleuls de Sully",
@@ -770,9 +774,10 @@
         "https://commons.wikimedia.org/wiki/File:Arboretum_(3)_-_panoramio.jpg",
         "https://commons.wikimedia.org/wiki/File:Cedre_pleureur.jpg"
       ],
-      "status": "lead",
+      "status": "verified",
       "species": "Cedar (Cedrus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-08 (batch B) as 'Cèdre pleureur de la Vallée-aux-Loups'; see data/research/famousfrance-batchB-verified.json. This is the origin/mother specimen of the Cedrus atlantica 'Glauca Pendula' cultivar planted worldwide, at the Arboretum de la Vallee-aux-Loups, Chatenay-Malabry. Minor unresolved discrepancy on origin story (Croux vs Paillet nursery) and a stale-looking Wikipedia claim of paid entry (French sources agree it's free). Clears the single-tree-destination bar clearly; not merged into a city file this pass."
     },
     {
       "name": "Céron park saman",
