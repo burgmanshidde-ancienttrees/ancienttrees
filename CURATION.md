@@ -10,6 +10,39 @@
 - [2026-07](archive/CURATION-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-09-08 (continuation 4) - _famous-slovakia refilled, one new place, one live page corrected
+
+Two more parallel verify passes, this time on `_famous-slovakia`. Batch A
+delivered 4 candidates; batch B delivered 0 (3 confirmed avenues/rows,
+now blocked as non-collectible-points, one genuine pear tree that failed
+the single-tree-destination test, kept as a lead).
+
+The write pass then found 3 of batch A's 4 were **already published**:
+the Bosaca apple and pear (bsa_001, bsa_002) and the Velke Borove pine
+(vbo_001) all exist in data/cities already, under names close enough
+that the lead file's own duplicate-name matching missed them (the pear's
+lead was "Pink pear from Bosaca", the live tree is "The Pink Pear of
+Zabudisova"). `passcheck.py --pending` caught it before any duplicate
+prose was written; no harm done beyond the verify pass's own tokens.
+
+Only Komjatice's plane tree was genuinely new. Published as komjatice.json
+(kom_001): Slovakia's most commonly cited thickest trunk (930cm, though
+the story says plainly that Myjava's hollow lime measures wider), Tree
+of the Year 2012, European Tree of the Year top-5 in 2013.
+
+**The duplicate-work near-miss paid for itself**: the verify pass fetched
+pravda.sk and teraz.sk directly for the Bosaca pear and got "about 200
+years" from both, independently confirming a figure the live page had
+explicitly left open as unverifiable ("those articles are no longer
+reachable"). That also flips which of Bosaca's two trees is older (the
+pear at ~200y, not the apple at ~130y), so corrected bsa_002's age fields
+and story, and every city-level field on bosaca.json that named the old
+answer: intro, meta_description, question_meta/answer/context,
+oldest_tree_id, and two FAQ entries. This is rung-3 work (something
+published being imprecise), found as a byproduct of rung-4 work.
+
+Preflight and the Astro build both clean after all of it.
 <!-- archive-index -->
 ## 2026-09-08 (continuation 3) - 8 new single-tree French places from the famous-trees batch
 

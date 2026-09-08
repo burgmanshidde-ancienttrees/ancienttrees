@@ -10,6 +10,42 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-09-08 (continuation 3) - _famous-slovakia refilled: 1 new place, 1 live page corrected
+
+Continued straight on from the France batch, same pattern: shelf was
+empty for writing, `_famous-slovakia` was the next REFILL batch. Two
+verify passes in parallel; batch A delivered 4, batch B delivered 0
+(3 avenues/rows correctly blocked as not a single collectible point,
+one pear that verified but failed the destination test, kept as a lead).
+
+**The write pass caught something before it became a mistake**: 3 of
+batch A's 4 delivered trees turned out to already be published
+(bsa_001, bsa_002, vbo_001), matched under slightly different names than
+the lead file used. `passcheck.py --pending` caught it and the writer
+correctly refused to duplicate the prose. Only Komjatice's plane tree
+(kom_001, "Slovakia's thickest trunk", Tree of the Year 2012) was
+genuinely new; published it as its own place.
+
+**And it paid for itself anyway**: the verify pass's own fetches (pravda.sk,
+teraz.sk) independently confirmed an age (~200 years) for the Bosaca pear
+that the LIVE page had explicitly left open as unverifiable. That flips
+which of Bosaca's two trees is older, so corrected bsa_002 and every
+city-level field on bosaca.json that named the old answer (intro, meta
+fields, oldest_tree_id, two FAQ entries). Preflight and the build both
+clean.
+
+Also hit a real snag mid-session: the git push credential (the ghs_
+token in origin's URL) expired partway through and every push failed
+with "Invalid username or token" for a few minutes. Re-pointed origin
+at `DEFAULT_WORKFLOW_TOKEN` from the job's own environment and pushes
+went through again; nothing was lost, everything stayed committed
+locally in the meantime. Worth knowing for a future run that hits the
+same wall.
+
+Released the `_famous-slovakia` claim. `tree_index.py` and
+`agent-costs.json` both updated.
+
 <!-- archive-index -->
 ## 2026-09-08 (continuation 2) - 8 new single-tree French places, 5 photos, 3 held reader photos, 7-day visits 1199
 
