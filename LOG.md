@@ -11,6 +11,37 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation, previous attempt stopped after 17 min with 103 min unspent) - Radomsko, Stokaičiai, Pajūris opened; an iOS gate fixed; Sweden verify pass fed a write pass
+
+Full account in CURATION.md's matching entry. Short version: merged two
+stranded write/verify claims left uncommitted by earlier attempts this
+window (`_famous-japan` write: Aizuwakamatsu, Iida, Kitakata, Oyodo;
+`_famous-poland` verify: rad_001), then ran a write pass on the
+remaining READY leads. **3 new trees, 3 new places**: Radomsko (Poland),
+Stokaičiai and Pajūris (Lithuania). A fourth candidate, a stray Utrecht
+pear lead, turned out to be a coordinate-copy bug pointing at an
+already-published tree (utr_018's coordinate, not the pear's own); the
+real coordinate (from the LRMB register row) resolved to utr_031,
+already live, so folded its species and measurements in rather than
+shipping a duplicate page. Caught by passcheck.py's own duplicate
+detector before anything went out wrong.
+
+Fixed rung 2: `ios.yml`'s scheduled iOS-18 job has been failing since
+this morning on a false-positive tap-target FAIL that a 2026-09-06 fix
+only closed on iOS 26. Removed the unused accessibility identifier
+causing it (could not build/test locally, this sandbox has no Xcode;
+the scheduled job will confirm). Vendored 1 photograph, answered a
+REVIEW.md WARN already fixed by an earlier attempt.
+
+Dispatched a verify pass on Sweden's famous-tree leads (rung 0c): 3
+ready (Ekebyhovseken, Sweden's largest deciduous tree by volume;
+Sjukhuseken joining Stockholm; Trolleken anchoring Öland's Trollskogen
+reserve), 2 confirmed dead, 4 held. A write pass on those 3 was still
+in flight when this entry was written.
+
+`preflight.py` (556 cities, 0 problems), `astro build` (5090 pages) and
+`qa.py` (7959 pages) all clean throughout. Nothing for Hidde.
+
 ## 2026-09-08 (session) - The last 206 trees that had nothing to tell them apart, and a gate so it cannot happen again
 
 Hidde asked how many published trees carry none of the three things that

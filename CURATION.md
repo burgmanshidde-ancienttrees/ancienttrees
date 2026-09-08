@@ -11,6 +11,67 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation, previous attempt stopped after 17 min with 103 min unspent) - Radomsko, Stokaičiai, Pajūris opened; a coordinate copy-error caught before it shipped
+
+Picked up per the standing instruction: two earlier attempts in this window
+had claimed `_famous-japan` (write), `_famous-lithuania` (write) and
+`_famous-poland` (verify) and left completed-but-uncommitted work on disk.
+Merged and released `_famous-japan` first (4 single-tree places:
+Aizuwakamatsu, Iida, Kitakata, Oyodo), then `_famous-poland`'s verify
+output (1 tree, rad_001).
+
+Dispatched a write pass on the remaining READY leads across cities (2
+Lithuania, 1 Poland, 1 Utrecht):
+
+- **Radomsko** (Poland, 1 tree, flagged: 0): The Insurgents' Linden,
+  three limes planted 1863 on the grave of three killed insurgents,
+  fused into one trunk, 5.33m round, extensive 2021-2022 conservation
+  surgery.
+- **Stokaičiai** (Lithuania, 1 tree, flagged: 1): The Visbarai Pine,
+  single-sourced, no age.
+- **Pajūris** (Lithuania, 1 tree, flagged: 1): The Akmenynė Oak,
+  single-sourced (a second source confirms existence but not
+  measurements), no age.
+- **Utrecht's "Peer" lead was a duplicate, not a new tree.** Its
+  coordinate (52.08586, 5.12903) was an exact copy of utr_018's own
+  coordinate, a transcription bug caught by passcheck.py's duplicate
+  detector before anything shipped. The register's real row for that
+  entry (LRMB nr 1678119) gives 52.086488, 5.118036, which turned out
+  to be the ALREADY-PUBLISHED utr_031 (The Old Pear of the
+  Geertebolwerk). Folded its species (tightened to the canonical
+  "European Pear (Pyrus communis)") and measurements (girth_cm 182,
+  height_m 11) into utr_031 instead of shipping a second page for one
+  tree. Fixed the coordinate in the source lead file too.
+
+All three new places carry full page copy (intro, meta, FAQ) per
+Contracts B/C. `city_names.py` run for all three; Stokaičiai's own
+match resolved to the containing district rather than the village and
+was moved to `unresolved_names` rather than shipped as a wrong alias.
+`preflight.py` (556 cities, 0 problems), `astro build` (5090 pages) and
+`qa.py` (7959 pages) all clean.
+
+**Also fixed, rung 2:** `ios.yml`'s scheduled iOS-18-floor job has
+failed since this morning on a false-positive tap-target FAIL
+(`Button 'mytrees-who'` 62 by 14) that a 2026-09-06 fix (an identifier
+plus `.accessibilityElement(children: .contain)`) only closed on iOS 26,
+not iOS 18. Nothing reads that identifier, so removed it and the now-
+unneeded `.contain` rather than trading one false positive for another.
+Could not build or run a simulator in this sandbox (Linux, no Xcode);
+the scheduled job will confirm. Vendored the one photograph the session
+brief flagged as not yet on our own domain (utr_015). Recorded
+REVIEW.md's 2026-09-08 superlatives.py WARN as answered (already fixed
+in `bfaa50f3` by an earlier attempt this window).
+
+**Dispatched a verify pass on Sweden** (rung 0c, `famous_demand.py
+--next`): 9 candidates, 3 ready to write (Ekebyhovseken, Sweden's
+largest deciduous tree by volume; Sjukhuseken, an ~800yr hollow oak
+joining Stockholm; Trolleken, Öland's oldest oak anchoring Trollskogen
+nature reserve), 2 confirmed dead and blocked (Hagstaeken Huddinge,
+felled Dec 2025; Lojstaeken, dead since 2001), 4 held for a follow-up
+pass (genuine designated monuments, one source each so far). A write
+pass on those 3 is in flight as this entry is written; see the next
+entry or LOG.md for the outcome.
+
 ## 2026-09-08 (continuation 5) - Two new Lithuanian places from a stranded write pass: Vytogala and Pagramantis Regional Park
 
 Merged completed-but-uncommitted work from an earlier attempt in this
