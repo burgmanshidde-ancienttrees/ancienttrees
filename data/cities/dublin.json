@@ -255,7 +255,8 @@
       },
       "curation_status": "flagged",
       "notes": "Replaces The Sculpted Cypress on 2026-07-27: that entry's own story said plainly the tree had died before being carved, which fails Hidde's 'we doen niet aan dode bomen' living-tree rule (CLAUDE.md Step 1), the same violation as Vienna's Stock im Eisen. Id dub_007 reused so the existing URL keeps resolving, via the redirect added to scripts/build_site.py's RENAMED_TREE_SLUGS. This entry is GPS-located via GBIF's Heritage Trees of Ireland dataset (CC BY 4.0, field-surveyed 25 October 2009 by Aubrey Fennell, occurrence 368113488, recorded '100-150 years' old at survey time, category 'arboricultural curiosity', form 'multi-stem'), the same dataset already trusted for dub_003/dub_004/dub_006's pins elsewhere in this file. Age projected forward roughly 17 years from the 2009 estimate. The multi-stem form and curiosity classification are the surveyor's own field categorisation, not independently re-verified by a second source; the general 1870s Ardilaun planting context is corroborated by Wikipedia (already used for dub_008's avenue), so flagged rather than confirmed on that combination. No open-licensed photo found of this specific tree, distinct from the avenue photo already used for dub_008.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its several trunks rising from one base, unlike the single-stemmed holm oaks lining the avenue beside it. It stands near the coast road in St Anne's Park, Raheny."
     },
     {
       "id": "dub_008",

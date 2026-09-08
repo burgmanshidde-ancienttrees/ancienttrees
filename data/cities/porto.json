@@ -106,7 +106,8 @@
       "curation_status": "ai_generated",
       "notes": "Girth (over 6 m) confirmed by both the city council's parks page and an independent garden-history source. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); at that time the tree wasn't in the municipality's classified-trees open dataset, so it stayed a building-level anchor. Location upgraded to confirmed and classification status corrected, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries a Magnolia grandiflora record at 'Rua de Entre Quintas 219, Casa Tait' (id 531) matching this tree exactly, including a height of 22.5m consistent with the city's own '22 metres' figure elsewhere; gives a surveyed point about 28m from the previous building-level estimate. A news report (noticiasaominuto.com, 21 May 2021) confirms the ICNF classified this magnolia, alongside a second tulip tree in the same grounds, as a tree of public interest that day, so the story's 'currently working through classification' line was stale and has been corrected to say when it happened. Age corrected 2026-08-01, per Hidde's dispatch order: the fuller ICNF WFS export at data/registers/portugal-icnf.json (processo AIP131218102I, same address, 0m from this pin) carries an age_register field of 200 years as of its 2021 survey, which the 2026-07-29 session's live-API check apparently didn't pull in ('No documented planting date; age is an estimate from the tree's size' was wrong, not just stale). Projected to 2026 that's roughly 205; age_estimate updated from '100+ years' to match, previous figure was a guess from girth alone and undersold it by about a century. Photo search 2026-07-29: no openly-licensed photo found despite checking Wikimedia Commons, iNaturalist (multiple observations at this exact tree, all CC-BY-NC only), Openverse and a Flickr CC search. Still missing.",
       "location_precision": "confirmed",
-      "girth_cm": 450
+      "girth_cm": 450,
+      "how_to_recognise": "You can recognise it by its glossy, leathery leaves and a base over six metres round. It stands at Casa Tait, in the Jardins do Palacio de Cristal."
     },
     {
       "id": "por_003",
@@ -145,7 +146,8 @@
           7
         ],
         "label": "May into July, when it blazes with red flowers, six months off from the New Zealand Christmas the tree is named for"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the pohutukawa, a New Zealand species that blazes with red flowers in summer. It stands near the Biblioteca Almeida Garrett, in the Jardins do Palacio de Cristal."
     },
     {
       "id": "por_004",
@@ -627,7 +629,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 580
+      "girth_cm": 580,
+      "how_to_recognise": "You can recognise it by its trunk, 5.8 metres round, one of four protected trees in this garden. It stands in the Jardim do Palacete Burmester, on the FCUP campus."
     },
     {
       "id": "por_018",
@@ -867,7 +870,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 315
+      "girth_cm": 315,
+      "how_to_recognise": "You can recognise them by their aerial roots and grey, fibrous bark, wider than they are tall at just seven metres high. They stand together on the grass at Passeio Alegre."
     },
     {
       "id": "por_024",
