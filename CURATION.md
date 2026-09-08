@@ -62,15 +62,18 @@ brief flagged as not yet on our own domain (utr_015). Recorded
 REVIEW.md's 2026-09-08 superlatives.py WARN as answered (already fixed
 in `bfaa50f3` by an earlier attempt this window).
 
-**Dispatched a verify pass on Sweden** (rung 0c, `famous_demand.py
---next`): 9 candidates, 3 ready to write (Ekebyhovseken, Sweden's
-largest deciduous tree by volume; Sjukhuseken, an ~800yr hollow oak
-joining Stockholm; Trolleken, Öland's oldest oak anchoring Trollskogen
-nature reserve), 2 confirmed dead and blocked (Hagstaeken Huddinge,
-felled Dec 2025; Lojstaeken, dead since 2001), 4 held for a follow-up
-pass (genuine designated monuments, one source each so far). A write
-pass on those 3 is in flight as this entry is written; see the next
-entry or LOG.md for the outcome.
+**Verified and wrote up Sweden** (rung 0c, `famous_demand.py --next`):
+9 candidates, 3 shipped (Ekerö/Ekebyhovseken, Sweden's largest
+deciduous tree by volume, two sources' girth figures both stated
+honestly rather than picked; Trollskogen/Trolleken, Öland's oldest oak,
+no girth or height found so left absent; Sjukhuseken added to
+Stockholm as sto_006, honestly framed as a declining hollow veteran
+rather than a pristine specimen), 2 confirmed dead and blocked
+(Hagstaeken Huddinge, felled Dec 2025; Lojstaeken, dead since 2001), 4
+held for a follow-up pass (genuine designated monuments, one source
+each so far). Also fixed Stockholm's intro, stale at "the four" since
+before this pass. `preflight.py` (558 cities, 0 problems), `astro
+build` (5106 pages) and `qa.py` (7976 pages) all clean.
 
 ## 2026-09-08 (continuation 5) - Two new Lithuanian places from a stranded write pass: Vytogala and Pagramantis Regional Park
 
