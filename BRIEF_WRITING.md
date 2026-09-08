@@ -38,6 +38,45 @@ Flagged trees keep their hedged phrasing: "by that tradition", "a 1913 monument
 claims", "somewhere between". The flag is in the data; the honesty must also be
 in the prose.
 
+## Every tree also gets a recognition line
+
+One sentence in `how_to_recognise`, alongside the story, answering the only
+question somebody standing in the park actually has: WHICH of the trees in
+front of me is it.
+
+It exists because a pin is not enough and never will be. Hidde, on the day he
+tried to collect a cedar in Nara and could not tell which of three it was:
+"los van verzamelen gaan mensen er heen lopen, verwachten ze dat de pin een
+soort van klopt." Our pins average a hundred metres of honesty on the rough
+ones, and even an exact pin cannot separate nine trees standing in one Brussels
+park. The line can.
+
+It is RESTATEMENT, never new work. Species, girth, height, the setting, the
+access note, what the story already says about the trunk or the crown: all
+fair, because verification already paid for them. A bark colour nobody
+recorded, a lean nobody measured, a hollow nobody mentioned: fabrication under
+hard rule 2, and the fact that it sounds like a description rather than a claim
+makes it more dangerous rather than less.
+
+It answers "which one", not "how impressive". A ranked crown of a species
+nobody else in the park has beats "a magnificent old oak" every time. Prefer,
+in this order: what separates it from its NEIGHBOURS, where exactly it stands,
+and a measurement somebody could check.
+
+Good ones, all from trees written this way:
+
+> The park's other great plane, on the Avenida de Bécquer, is wider still but
+> shorter.
+> Every leaf lobe ends in a bristle, unlike the rounded lobes of Belgium's
+> native oaks, and it turns scarlet a month before the ginkgo goes gold.
+> A broad old stool two metres round at the ground with a thin trunk only 36
+> centimetres round rising out of it.
+
+`python3 scripts/recognise.py --stuck` is the standing backlog of trees that
+have neither this line nor a photograph and stand within 25 metres of another
+tree a government has called remarkable. Writing one at the same time as the
+story is what stops that list growing.
+
 ## Age: carry the basis, or carry the question
 
 Where `verify_notes` gives an ESTIMATED age, the story says what it is estimated
