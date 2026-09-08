@@ -1076,6 +1076,62 @@ def note_a_young_tree_is_not_ancient():
             "few: %s" % (len(young), "; ".join(young[:3]))]
 
 
+STORY_MIN, STORY_MAX = 150, 250   # CLAUDE.md Step 3, held by site/src/pages/[tree].astro
+
+
+def check_story_length():
+    """A tree story must be 150 to 250 words, the same range the build holds.
+
+    Third time this class of failure has cost a deploy, so it stops being a
+    lesson. This file's own header records the first two (a city intro over
+    Contract C's range, a question_context under Contract B's), and on
+    2026-09-08 a story of 269 words turned the deploy red while Hidde was
+    standing in Nara waiting for the trees to appear, one push after a species
+    name had turned it red for the same reason: a rule enforced only at build
+    time, which a session cannot run.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            wc = len((tree.get("story") or "").split())
+            if wc and not STORY_MIN <= wc <= STORY_MAX:
+                out.append("%s: %s story is %d words, CLAUDE.md Step 3 requires %d-%d"
+                           % (os.path.basename(path)[:-5], tree.get("id"), wc,
+                              STORY_MIN, STORY_MAX))
+    return out
+
+
+def check_one_common_name_per_species():
+    """Hard rule 9: one canonical common name per species, sitewide.
+
+    Mirrors checkSpeciesNames in site/src/lib/species.ts, which throws the
+    build. Written the same hour as check_story_length and for the same
+    reason: nara's zelkova shipped as "Japanese Zelkova" against twelve
+    "Saw-leaf Zelkova" elsewhere, and nothing a session can run said so.
+    """
+    names = collections.defaultdict(lambda: collections.defaultdict(set))
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        slug = os.path.basename(path)[:-5]
+        for tree in city.get("trees", []):
+            sp = (tree.get("species") or "").strip()
+            if "(" not in sp or not sp.endswith(")"):
+                continue
+            common, latin = sp.split("(", 1)
+            names[latin[:-1].strip().lower()][common.strip()].add(slug)
+    out = []
+    for latin, commons in sorted(names.items()):
+        if len(commons) > 1:
+            spread = "; ".join('"%s" in %s' % (c, ", ".join(sorted(v)[:2]))
+                               for c, v in sorted(commons.items()))
+            out.append("species %s uses %d common names, hard rule 9 allows one: %s"
+                       % (latin, len(commons), spread))
+    return out
+
+
 def check_contributor_photos_are_traceable():
     """A reader's photograph must carry the account that sent it.
 
@@ -1740,7 +1796,9 @@ def main():
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
                 + check_every_tree_names_a_source()
-                + check_a_tree_says_why_to_go())
+                + check_a_tree_says_why_to_go()
+                + check_story_length()
+                + check_one_common_name_per_species())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
