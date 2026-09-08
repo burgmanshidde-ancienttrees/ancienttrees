@@ -57,7 +57,8 @@
       "curation_status": "flagged",
       "notes": "Measurements (12.95m trunk perimeter, 22.70m height, 35m+ canopy) and the 2020 petrol station removal are corroborated across both sources; the 380,000 euro valuation figure comes from valenciabonita.es only. Photo viewed directly: shows a massive, spectacular ficus with huge buttress roots and a wide multi-trunk canopy in a paved plaza. Approved. Pin corrected ~400m via the Generalitat Valenciana's own Catálogo de Árboles Monumentales y Singulares (ArcGIS layer), which lists this exact tree by name, 'Ficus del Parterre' (IPA 512), with a 13.82m trunk measurement matching this entry's own figure almost exactly.",
       "location_precision": "confirmed",
-      "girth_cm": 1382
+      "girth_cm": 1382,
+      "how_to_recognise": "You can recognise it by a trunk nearly 13 metres round and a canopy wide enough to shade almost 1,000 square metres, the broadest in Valencia. It stands in the Jardin del Parterre."
     },
     {
       "id": "vlc_002",
@@ -97,7 +98,8 @@
         "label": "September to November: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
       },
-      "girth_cm": 400
+      "girth_cm": 400,
+      "how_to_recognise": "You can recognise it as the oldest tree on any of Valencia's five monumental tree routes, an olive among date palms, cypresses, carob trees and a cedar of Lebanon. It stands in Parque de la Rambleta."
     },
     {
       "id": "vlc_003",
@@ -136,7 +138,8 @@
       "curation_status": "flagged",
       "notes": "Age given as approximately 170 years by one source, tied to the garden's 1849 founding; no individually documented planting record for this specific tree beyond that estimate. Photo viewed directly: shows a large tree in golden autumn foliage with a garden statue visible in frame, consistent with Jardin de Monforte's neoclassical statuary garden. Approved. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 684, 'Ginkgo de Monfort'), the only Ginkgo biloba recorded citywide, moved about 900m to the catalogue's surveyed point.",
       "location_precision": "confirmed",
-      "girth_cm": 375
+      "girth_cm": 375,
+      "how_to_recognise": "You can recognise it as the best known ginkgo in Valencia, one of two growing in this neoclassical garden of marble statues and fountains. It stands in the Jardin de Monforte."
     },
     {
       "id": "vlc_004",
@@ -168,7 +171,8 @@
       "curation_status": "flagged",
       "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (CC BY 4.0) carries exactly one Ficus macrophylla registered at 'Legion Espanola Pl' (idarbol 99100614/2), matching this entry's species and its own 'stands alone' framing; four other Ficus macrophylla in the same neighbourhood are all in the separate Alameda gardens, not this plaza, so no ambiguity. Moved from a plaza-level Nominatim geocode to the tree's own individually registered point.",
       "location_precision": "confirmed",
-      "girth_cm": 1376
+      "girth_cm": 1376,
+      "how_to_recognise": "You can recognise it standing alone at the entrance to the square, the only trace left of a palace demolished in 1968. It stands in Plaza Legion Espanola."
     },
     {
       "id": "vlc_005",
@@ -198,7 +202,8 @@
       },
       "curation_status": "flagged",
       "notes": "The land-use history (1902 urbanisation, 1974 station removal, 1982 redevelopment) is documented by one source; a separate account attributes the tree's specific preservation to a 1980s councilwoman physically blocking excavators, a detail only found in one source, so it is not stated as confirmed fact in the story.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it growing alone on a traffic island between two avenues, next to the Mestalla stadium car park. It stands on Avenida de Aragon near Avenida Blasco Ibanez."
     },
     {
       "id": "vlc_006",
@@ -229,7 +234,8 @@
       },
       "curation_status": "flagged",
       "notes": "Species corrected during research: an initial source described these as Washingtonia palms, but a second, more specific source identifies them as Phoenix canariensis, which is the species used here. No individual planting date documented; age is an estimate. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (arbolado viario, CC BY 4.0, geoportal.valencia.es) carries exactly three Phoenix canariensis registered on Calle Albacete in the Arrancapins neighbourhood, matching this entry's own description of three named palms in that exact spot. Averaged the three registered points (idarbol 1140/188, 1140/189, 1140/190) for the group's coordinate. Previous pin was roughly 640m off, an old geocode-only estimate.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as three Canary Island date palms standing together, framing the entrance to the street they are named after. It stands on Calle Albacete near Plaza de Espana."
     },
     {
       "id": "vlc_007",
@@ -259,7 +265,8 @@
       },
       "curation_status": "flagged",
       "notes": "No individual planting date documented beyond 'early 20th century'; the species-confusion origin story is corroborated across both sources, though the second only summarises it as the nickname 'Skinny Rebel'.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the tallest, thinnest palm on the promenade, rising above the shorter rows planted around it. It stands in Jardines del Real (Viveros), on the path named for the Peris family of gardeners."
     },
     {
       "id": "vlc_008",
@@ -290,7 +297,8 @@
       "curation_status": "flagged",
       "notes": "The relocation story (Plaza Mirasol origin, early 1960s move, mayor's approval, two trucks) is corroborated across both sources with only minor variation in the gardener's recorded surname. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 673), which names this exact tree 'La Palmera de Vicente Peris', an exact match to this entry's own name; moved about 525m to the catalogue's surveyed point.",
       "location_precision": "confirmed",
-      "girth_cm": 130
+      "girth_cm": 130,
+      "how_to_recognise": "You can recognise it by its solitary trunk at the start of Avenida de Aragon, the palm moved here by truck one night in the early 1960s to save it from demolition. It stands beside La Alameda."
     },
     {
       "id": "vlc_009",
@@ -321,7 +329,8 @@
       "curation_status": "flagged",
       "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly. Tightened by about 50m on 2026-07-30 via an independently bulk-imported OpenStreetMap node carrying the same register reference (reg_ref 2375, name 'Eucaliptus de Benimàmet', 41.2m height), which gives a more precise coordinate than the earlier rounded transcription.",
       "location_precision": "confirmed",
-      "girth_cm": 597
+      "girth_cm": 597,
+      "how_to_recognise": "You can recognise it as the tallest tree in the province of Valencia, a eucalyptus over 41 metres high beside the tram line. It stands in the Parc Lineal in Benimamet, near Les Carolines metro station."
     },
     {
       "id": "vlc_010",
@@ -352,7 +361,8 @@
       "curation_status": "flagged",
       "notes": "No individual age or planting record documented; included for species rarity per the city's own official monumental trees route rather than for size or age. Location given as the university's Jardí Botanic since the route's own 'Culture Park (former hospital)' description could not be reconciled precisely with a single confirmed address during this run.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its bright blue-green foliage, unlike anything else in the conifer collection around it. It stands in the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_011",
@@ -382,7 +392,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 1370
+      "girth_cm": 1370,
+      "how_to_recognise": "You can recognise it by its fused, multi-trunked base behind a low fence protecting the roots, with a second giant fig visible thirty metres away over the wall. It stands in Plaza Centenar de la Ploma."
     },
     {
       "id": "vlc_013",
@@ -412,7 +423,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 620
+      "girth_cm": 620,
+      "how_to_recognise": "You can recognise it as the smallest of Valencia's registered giant figs, standing at the foot of the Torres de Serranos gate. It stands in the Alameditas de Serranos."
     },
     {
       "id": "vlc_014",
@@ -443,7 +455,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 968
+      "girth_cm": 968,
+      "how_to_recognise": "You can recognise it as one of three giant figs in the Glorieta, its trunk 9.7 metres round, a minute's walk from El Titan across the road. It stands in the Jardin de la Glorieta, next to the Palacio de Justicia."
     },
     {
       "id": "vlc_015",
@@ -482,7 +495,8 @@
         "kind": "autumn colour"
       },
       "paid_entry": true,
-      "girth_cm": 535
+      "girth_cm": 535,
+      "how_to_recognise": "You can recognise it by a crown of near-vertical branches bundled upright rather than spread wide, unusual among the garden's other trees. It stands in the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_016",
@@ -512,7 +526,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the single palm standing at the centre of the courtyard, with cafe tables arranged around its base. It stands in the Palacio de Pineda, Plaza del Carmen."
     },
     {
       "id": "vlc_017",
@@ -545,7 +560,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its barrel-shaped trunk, smooth greenish bark and the hard conical thorns studding its lower stem. It stands in the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_018",
@@ -578,7 +594,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it as an evergreen oak standing unusually upright rather than throwing branches sideways, near the garden's entrance. It stands in the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_019",
@@ -611,7 +628,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the widest crown in the garden, 26 metres across, casting the deepest shade of any tree here. It stands against the western wall of the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_020",
@@ -644,7 +662,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its unusually straight trunk, rising 30 metres with barely a lean, unlike the wind-bent pines typical of this coast. It stands in the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_021",
@@ -677,7 +696,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its slender profile, 33.4 metres tall on a narrow crown, in the teaching collection where trees are grouped by family. It stands in the Escola Botanica of the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_022",
@@ -710,7 +730,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by drooping, needle-like branchlets that are not needles at all but tiny jointed scales, unlike anything else nearby. It stands in the Escola Botanica of the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_023",
@@ -742,7 +763,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the biggest trunk and widest crown in the Glorieta, 11.35 metres round under a canopy of 39.5 metres. It stands in the Jardin de la Glorieta, next to the Palacio de Justicia."
     },
     {
       "id": "vlc_024",
@@ -774,7 +796,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the smallest of Valencia's four giant figs, standing at the eastern end of the Glorieta, furthest from the Palace of Justice. It stands in the Jardin de la Glorieta."
     },
     {
       "id": "vlc_025",
@@ -807,7 +830,8 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "notes": "Single-sourced: only the Comunitat Valenciana's register of monumental and singular trees (id 1150) carries this specimen; espores.org's own ten-tree feature on this garden, which corroborates several neighbours, does not include it."
+      "notes": "Single-sourced: only the Comunitat Valenciana's register of monumental and singular trees (id 1150) carries this specimen; espores.org's own ten-tree feature on this garden, which corroborates several neighbours, does not include it.",
+      "how_to_recognise": "You can recognise it by a wide, flat canopy nearly as broad as the tree is tall, shading one of the garden's paths. It stands in the Jardi Botanic de la Universitat de Valencia."
     },
     {
       "id": "vlc_026",
@@ -838,7 +862,8 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "notes": "No age or girth in any source. Independently named and described by the Jardi Botanic's own site (jardibotanic.org), which corroborates the register's coordinates and calls it 'la palmera mas especial del Jardin' for its 35+ branching stems, an unusual multi-trunk form for this species."
+      "notes": "No age or girth in any source. Independently named and described by the Jardi Botanic's own site (jardibotanic.org), which corroborates the register's coordinates and calls it 'la palmera mas especial del Jardin' for its 35+ branching stems, an unusual multi-trunk form for this species.",
+      "how_to_recognise": "You can recognise it by more than 35 trunks all rising and forking from a single base, like a firework caught mid-burst. It stands in the Jardi Botanic de la Universitat de Valencia."
     }
   ]
 }
