@@ -89,7 +89,9 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 685,
+      "height_m": 36.6
     },
     {
       "id": "maa_003",
@@ -191,7 +193,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "height_m": 39.0
     },
     {
       "id": "maa_006",
