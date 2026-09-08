@@ -5,6 +5,7 @@ Hidde checks in sporadically and should not have to ask where things stand.
 This prints the state of the project so it lands in context before he types.
 """
 
+import datetime
 import json
 import re
 import subprocess
@@ -73,6 +74,29 @@ def since_last_visit(out):
 # and a call per workflow would eat them. Silent on every failure: no network,
 # no gh, no auth, and the brief still prints. A briefing that breaks is worse
 # than a briefing that is missing a line.
+# How old the oldest fetched run must be before "nothing has passed" means
+# anything. Six hours is well past any push burst this repository produces and
+# well inside the daily cadence of every job worth watching.
+SPAN_HOURS = 6
+
+
+def _span_hours(runs):
+    """Hours between the oldest and the newest fetched run.
+
+    Returns 0.0 when the timestamps cannot be read, which keeps the alarm
+    silent rather than firing on a parse error."""
+    stamps = sorted(r.get("createdAt", "") for r in runs if r.get("createdAt"))
+    if len(stamps) < 2:
+        return 0.0
+    try:
+        fmt = "%Y-%m-%dT%H:%M:%SZ"
+        old = datetime.datetime.strptime(stamps[0], fmt)
+        new = datetime.datetime.strptime(stamps[-1], fmt)
+    except (ValueError, TypeError):
+        return 0.0
+    return (new - old).total_seconds() / 3600.0
+
+
 def broken_gates(out):
     """Name a broken gate above everything else.
 
@@ -88,7 +112,7 @@ def broken_gates(out):
                "data-digest.yml", "weekly-analysis.yml", "routes.yml"]
 
     def latest(wf):
-        raw = sh("gh", "run", "list", "--workflow", wf, "-L", "8",
+        raw = sh("gh", "run", "list", "--workflow", wf, "-L", "12",
                  "--json", "workflowName,conclusion,status,createdAt,event")
         try:
             rows = json.loads(raw) if raw else []
@@ -120,7 +144,21 @@ def broken_gates(out):
         elif not any(r["conclusion"] == "success" for r in runs):
             # Nothing has passed at all, which is what cancelled-only hides,
             # including a job cancelled by its own timeout.
-            never.append((name, len(runs)))
+            #
+            # But ask HOW FAR BACK the window actually reaches before saying
+            # so, because on a push burst it reaches almost nowhere. On
+            # 2026-09-08 a night run pushed eight commits in ten minutes and
+            # every one cancelled the deploy before it; the twelve fetched runs
+            # spanned eleven minutes, none had succeeded, and the brief opened
+            # with "Build and deploy site has not passed once", which cost a
+            # session its first twenty minutes. The deploy had in fact
+            # succeeded half an hour earlier and had not failed once in forty
+            # runs. A window younger than SPAN_HOURS is not evidence of
+            # anything, so say nothing rather than cry wolf: a real outage
+            # either shows up as a failure above, or spreads its cancellations
+            # over hours and trips this the next time anybody looks.
+            if _span_hours(runs) >= SPAN_HOURS:
+                never.append((name, len(runs)))
 
         # A JOB WHOSE SCHEDULED RUNS KEEP DYING WHILE MANUAL ONES PASS looks
         # perfectly healthy to both questions above. Not hypothetical: the
