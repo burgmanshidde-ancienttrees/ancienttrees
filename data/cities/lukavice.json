@@ -2,7 +2,7 @@
   "city": "Lukavice",
   "country": "Czech Republic",
   "status": "needs_curation",
-  "intro": "Before the First World War, the managers of the Auersberg estate tried to kill this oak by stripping away dozens of cartloads of soil from around its roots, a slow and deniable way to finish a tree. It survived, and in 2024 the country voted it Czech Tree of the Year. It grows on the open ground of a former fortress at Lukavice, more than seven metres round and estimated at nearly 800 years old, now a habitat in its own right for fungi, beetles and bats.",
+  "intro": "Before the First World War, the managers of the Auersberg estate tried to kill this oak by stripping away dozens of cartloads of soil from around its roots. It survived, and in 2024 the country voted it Czech Tree of the Year. It grows on the open ground of a former fortress at Lukavice, more than seven metres round and estimated at nearly 800 years old. About 24 kilometres away at Zamrsk stands the other winner: a lime that came back as six trunks from one cut stump, voted Tree of the Year nine years earlier.",
   "meta_description": "The Lukavický dub, Czech Tree of the Year 2024, is a 700cm oak on a former fortress site, nearly 800 years old, once targeted for a slow death.",
   "question_meta": "Lukavice's ancient tree is a 700cm oak, nearly 800 years old, voted Czech Tree of the Year in 2024. It once survived a deliberate attempt to kill it.",
   "question_answer": "The Lukavický dub is an oak on the open ground of a former fortress at Lukavice, its trunk exceeding seven metres round and estimated at nearly 800 years old. In 2024 it was voted Czech Tree of the Year.",
@@ -65,6 +65,37 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by standing alone on the open ground of the former Hradek fortress, 7 metres round and 31 metres tall. It stands at Lukavice, where a stripped-bare root zone once nearly killed it."
+    },
+    {
+      "id": "luk_002",
+      "name": "The Six-Trunked Lime of Zamrsk (Sestikmenna lipa v Zamrsku)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 150 to 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Castle park (zamecky park), Zamrsk, Usti nad Orlici District",
+        "latitude": 49.98759,
+        "longitude": 16.13052,
+        "neighbourhood": "Zamrsk, about 4km northeast of Vysoke Myto"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Pam%C3%A1tn%C3%A1_l%C3%ADpa_v_Z%C3%A1mrsku",
+        "https://www.turistika.cz/mista/sestikmenna-lipa-v-zamrsku/detail",
+        "https://pardubice.rozhlas.cz/sestikmenna-lipa-v-zamrsku-borovice-ve-snakove-a-buk-v-koclirove-6086496"
+      ],
+      "access": "Free, in the public castle park at Zamrsk, which also houses the regional state archive (Statni oblastni archiv) and serves as a recreation area for visitors. Reached via the blue-marked hiking trail from the Dobrikov u Chocne or Vysoke Myto train stations.",
+      "transport": "Nearest station Dobrikov u Chocne or Vysoke Myto, then the blue-marked hiking trail into the castle park.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Somebody cut this tree down, and it came back with six trunks. The original stem had gone hollow and was taken off; six shoots rose from the stump, and those are what stands in the castle park at Zamrsk today. One lime, six stems, about 25 metres tall. Czech Wikipedia puts each stem at over two metres round, turistika.cz measures them between two and four, and nobody has folded that into a single girth figure because there is no single trunk to measure.\n\nIts age is not settled either. Wikipedia says more than 150 years, turistika.cz says roughly 200, and neither explains how it arrived at the number, so the honest answer is somewhere in that band. What is dated is 1995, when the growth form alone was enough to make it a pamatny strom, a protected tree.\n\nNine years later the pupils of the local primary school put it forward for Strom roku, the national Tree of the Year, and the country voted for it. That makes two winners within about 24 kilometres of each other, since the oak at Lukavice took the same title in 2024.\n\nThe park is public and doubles as the grounds of the regional state archive. Blue waymarks bring walkers in from the stations at Dobrikov u Chocne and Vysoke Myto. Standing under it, the six stems read as a small grove until you follow them down to one stump.",
+      "how_to_recognise": "You can recognise it by the six trunks rising from a single stump, each over two metres round and reaching about 25 metres. It stands in the castle park at Zamrsk, the park around the regional state archive.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

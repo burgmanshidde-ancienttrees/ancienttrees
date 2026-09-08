@@ -185,7 +185,8 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Verified and published as sul_003, Dąb 500-lecia (joins Sulechów), 2026-09-08."
     },
     {
       "name": "Dąb Benedykta XVI, Rudy",
@@ -241,7 +242,8 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_02.jpg",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Eichendorffa,_%C5%81ubowice_03.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Verified and published as rud_002, The Eichendorff Oak (joins Rudy), 2026-09-08."
     },
     {
       "name": "Dąb Eliasz w Żytnej",
@@ -429,7 +431,8 @@
         "https://commons.wikimedia.org/wiki/File:Trzy_D%C4%99by,_K%C4%99dzierzyn-Ko%C5%BAle_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Trzy_D%C4%99by,_K%C4%99dzierzyn-Ko%C5%BAle_02.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "hold_reason": "Checked 2026-09-08. No register/GDOS/municipal listing found under this name (Kedzierzyn-Kozle's own BIP page of 53 designated monuments does not list a 'Trzy Deby'). A detailed local-history article (wachtyrz.eu, 'Festung Cosel') describes a different, well-documented set of three oaks on the Kozle riverside promenade (Promenada ks. Rutyny) said by tradition to honour Frederick the Great, compared in an 1899 photo against a 2014-ish present-day photo, but states plainly that 'by 2020 one of the three oaks had completely died and was removed', leaving only two. It is not confirmed whether the geotagged Commons photo (2023-09-16, at 50.33636,18.14681) shows that same promenade site (now down to two survivors, which would make the name 'Three Oaks' false) or a different set of three oaks entirely; no source ties the Commons coordinate to the promenade site or vice versa. Also unresolved: whether the surviving tree(s), if this is the promenade site, are individually remarkable or a collectible point on their own. Needs a pass that can see the photos/site clearly (geolocate the Commons images against the promenade) or find a source naming the exact current count and species before this can verify. Left as a lead rather than blocked, since a real ensemble may still be there under this or another name."
     },
     {
       "name": "Zdzisław Oak in Zwierzyniec",
@@ -479,9 +482,10 @@
         "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Strzelce_Opolskie_-_Zamek_-_panoramio.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "hold_reason": "Checked 2026-09-08. Existence confirmed (photo geotag 50.50909,18.30007 matches exactly, CC BY-SA, Fry72, 2023-07-02) but this yew is not individually documented: pl.wikipedia's own article on the park (Park Renardow / Park w Strzelcach Opolskich) speaks only of 'trzystuletnie cisy' (three-hundred-year-old yews, plural) with no girth or exact age for any single specimen, so it does not clear the single-tree-destination test on its own (no source distinguishes THIS yew from its neighbours). The third listed photo (Strzelce Opolskie - Zamek - panoramio.jpg) is a photo of the town castle, not the tree; do not use it. IMPORTANT FINDING for a future pass: the same park (65 ha, English-style, built for Andrzej Renard in the 19th c.) also holds, per the same Wikipedia article, a common spruce (Swierk pospolity) recorded in 1992 as one of the oldest common spruces in Poland, aged 337 years then, girth 490cm at 0.5m height, and the tallest common elm in Poland at 37.5m. Those two, plus this yew and any other pomnik przyrody in the park (the town's own site says the commune holds 9 designated trees/tree groups total), could add up to a genuine 4-tree cluster at this one park without needing the single-tree exception at all. Worth a dedicated Strzelce Opolskie pass rather than shipping this yew alone."
     },
     {
       "name": "Grupa Dwóch Drzew Cis Pospolity NR 346, Racibórz",
@@ -518,9 +522,10 @@
         "https://commons.wikimedia.org/wiki/File:Cis_pospolity,_Park,_Strzelce_Opolskie_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Strzelce_Opolskie_-_Zamek_-_panoramio.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "hold_reason": "Checked 2026-09-08. Existence confirmed (photo geotag 50.50909,18.30007 matches exactly, CC BY-SA, Fry72, 2023-07-02) but this yew is not individually documented: pl.wikipedia's own article on the park (Park Renardow / Park w Strzelcach Opolskich) speaks only of 'trzystuletnie cisy' (three-hundred-year-old yews, plural) with no girth or exact age for any single specimen, so it does not clear the single-tree-destination test on its own (no source distinguishes THIS yew from its neighbours). The third listed photo (Strzelce Opolskie - Zamek - panoramio.jpg) is a photo of the town castle, not the tree; do not use it. IMPORTANT FINDING for a future pass: the same park (65 ha, English-style, built for Andrzej Renard in the 19th c.) also holds, per the same Wikipedia article, a common spruce (Swierk pospolity) recorded in 1992 as one of the oldest common spruces in Poland, aged 337 years then, girth 490cm at 0.5m height, and the tallest common elm in Poland at 37.5m. Those two, plus this yew and any other pomnik przyrody in the park (the town's own site says the commune holds 9 designated trees/tree groups total), could add up to a genuine 4-tree cluster at this one park without needing the single-tree exception at all. Worth a dedicated Strzelce Opolskie pass rather than shipping this yew alone."
     },
     {
       "name": "Dąb 500-lecia, Zielona Góra - Nowe Miasto",
@@ -530,7 +535,8 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_500-lecia,_Zelen%C3%A1_Hora_-_Nowe_Miasto,_Zelen%C3%A1_Hora,_Lubu%C5%A1sk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "reason": "Verified and published as sul_003, Dąb 500-lecia (joins Sulechów), 2026-09-08."
     },
     {
       "name": "Dąb Lubuszan (Zielona Góra)",
