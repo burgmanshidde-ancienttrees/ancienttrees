@@ -22,6 +22,7 @@ actually clicked) and links to the Links report for a manual read.
 
 | Date | Who | What | State |
 |---|---|---|---|
+| 2026-09-08 | batch-011-uk-ie, nine UK and Irish institutions | OPW, Dublin City Council, South Dublin CC, National Botanic Gardens Glasnevin, City of London Corporation, Oxford Botanic Garden, National Trust Prior Park, Hammersmith and Fulham, York Museums Trust. Each holds trees we publish, each asked for a photograph of the specific ones we lack, plus a correction if anything is wrong and which tree they would send a visitor to. Glasnevin is the biggest prize: six Dublin trees, none photographed. | Sent, the last of the scouted pool. |
 | 2026-09-08 | Trees and Shrubs Online (info@treesandshrubsonline.org) | Their Franklinia page gave us Boston's Franklin Tree, the largest known specimen anywhere. Asks whether they would point a visitor at a specimen in Boston, Cambridge, Dublin, Edinburgh, London, Lyon or Oxford, and for a mention. | Sent, batch-010. |
 | 2026-09-08 | Pestbuda (pestbuda@pestbuda.hu) | Nine of Budapest's twelve trees lean on their articles, verified in verified_sources before sending. Asks which Budapest tree they would point a visitor to, and for a mention. | Sent, batch-010. |
 | 2026-09-08 | National Biodiversity Data Centre (info@biodiversityireland.ie) | Their CC BY Heritage Trees dataset gave us eight of Cork's thirteen and six of Dublin's seventeen. Asks whether the survey is still growing and whether there is a newer version to pull from. | Sent, batch-010. |
