@@ -5938,6 +5938,15 @@
         "note": "10 lines, worst-first by impressions from recognise.py --stuck",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "dordrecht + famoustaiwan (chishang, alishan)",
+        "kind": "write",
+        "tokens": 51000,
+        "trees": 7,
+        "note": "5 Dordrecht deepening trees (dor_009-013) merged, plus 2 new single-tree places (Chishang/Takeshi Kaneshiro Tree, Alishan/Sianglin Sacred Tree); stories, recognition lines, 2 best_time",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
