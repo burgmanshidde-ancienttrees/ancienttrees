@@ -144,6 +144,23 @@ def compare(path, live, new):
         # int alongside a float is nothing, and null is caught by this too,
         # because null is a type this never saw.
         added = families(now["types"]) - families(was["types"])
+        # A FIELD THAT WAS ONLY EVER NULL IS AN ABSENT FIELD (2026-09-08).
+        # Giving it a value for the first time is an ADDITION, which the note
+        # below calls always safe, and it fired as a breaking type change the
+        # first time one tree got a why_go.
+        #
+        # It is safe by the check's own logic. A client that survives today's
+        # feed must already treat this field as optional, because a null cannot
+        # decode into a non-optional; so a client that would break on a value
+        # here is a client that is broken TODAY. The reverse stays a problem
+        # and is caught above: a field that held values and now holds null is
+        # exactly the silent break this file exists for.
+        #
+        # This will fire on every new field, once, on the day the first row
+        # gets a value, which is why it is worth fixing rather than forcing:
+        # why_go alone has 475 trees still to fill in.
+        if added and was["types"] <= {"null"} and "null" not in added:
+            added = set()
         if added:
             problems.append(f"{path}  {field} is now sometimes "
                             f"{'/'.join(sorted(added))}, and never was "
