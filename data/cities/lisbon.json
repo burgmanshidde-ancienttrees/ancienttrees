@@ -65,7 +65,8 @@
         "height": 6264
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by four gnarled, driftwood-like olive trunks barely six metres tall. They stand outside the round Capela de Santo Amaro, on the hilltop above the Tagus in Alcantara."
     },
     {
       "id": "lis_002",
@@ -99,7 +100,8 @@
       "curation_status": "flagged",
       "notes": "Age is genuinely uncertain: the tree was already an adult specimen when transplanted in 1768 (258 years by that count alone), but several popular sources round up to 400 years assuming an earlier, undocumented origin. Presented here as a range rather than a single figure.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its forked crown propped on a steel frame, cut back to about half its old spread. It stands as the emblem tree of Jardim Botanico da Ajuda."
     },
     {
       "id": "lis_003",
@@ -134,7 +136,8 @@
       "curation_status": "flagged",
       "notes": "Portuguese press and heritage sources converge on approximately 150 years, tied to its 1940 classification. monumentaltrees.com states it was planted around 1740, implying roughly 285 years. The discrepancy is unresolved; the more heavily corroborated 150 year figure is used as the primary estimate, per monumentaltrees being used for verification only.",
       "location_precision": "confirmed",
-      "girth_cm": 390
+      "girth_cm": 390,
+      "how_to_recognise": "You can recognise it by its wide, thinned dome of a crown on a 3.90 metre trunk, above the Saturday organic market. It stands at the centre of Jardim do Principe Real."
     },
     {
       "id": "lis_004",
@@ -168,7 +171,8 @@
       "curation_status": "flagged",
       "notes": "Most sources cite 100 years; a local history blog notes the tree already appears as a mature adult in Lisbon Municipal Archive photographs from 1910, which would put its real age closer to 115 years.",
       "location_precision": "confirmed",
-      "girth_cm": 1050
+      "girth_cm": 1050,
+      "how_to_recognise": "You can recognise it by its swollen, fluted trunk, 10.50 metres round. It stands against the outer wall of the old Limoeiro prison, a few steps from the Portas do Sol viewpoint."
     },
     {
       "id": "lis_005",
@@ -209,7 +213,8 @@
         "label": "late winter into spring, when the garden turns a startling shade of orange"
       },
       "notes": "Photo removed 2026-08-02: the approved file (Chaimite no Jardim da Praca da Constituicao de 1976) is a photograph of an armoured car parked in the garden, not of the tipu tree. Caught by Hidde on the live site. Any replacement must show the tree itself, per the Cadiz standard. Pin corrected 2026-08-06: the stored coordinate was an address-level geocode of the garden, 244m from ICNF's own surveyed point for the same species, age and classification at Praca de S.Bento (processo KNJ1/347); no second Tipuana tipu found anywhere else in the register near Sao Bento, so treated as the same tree and the register's coordinate adopted, upgrading the pin from approximate to confirmed. Found while verifying an unrelated Lisbon cluster; flagged for a session decision rather than acted on blind, then adopted because the register point is the only tree-level GPS either source has ever given this entry.",
-      "girth_cm": 420
+      "girth_cm": 420,
+      "how_to_recognise": "You can recognise it by its 4.20 metre trunk and, in late winter and spring, orange flowers marked with a reddish spot. It stands in the small garden beside the Palacio de Sao Bento."
     },
     {
       "id": "lis_006",
@@ -246,7 +251,8 @@
           6
         ],
         "label": "June, when both trees erupt in flowers shaped like a rooster's crest"
-      }
+      },
+      "how_to_recognise": "You can recognise them by two trunks on the garden's south side, twelve and fifteen metres tall, crowned in June with red rooster-crest flowers. They stand in Jardim da Luz, Carnide."
     },
     {
       "id": "lis_007",
@@ -278,7 +284,8 @@
       "curation_status": "flagged",
       "notes": "Pin and age corrected 2026-07-26: matched to Portugal's national registry of classified trees of public interest (ICNF, si.icnf.pt/sigservices.icnf.pt), feature id 283, processo KNJ1/405, a lodao-bastardo (Celtis australis) named at exactly this junction (\"Av. Berlim (cruzamento com Av Dr. Francisco Luis Gomes)\"), height 15.7m matching this story's \"sixteen metres\" closely, last measured 2015 at age 75 (roughly 86 today). The stored pin was about 900m off (a geocode of the general avenue, not the junction); the registry point is now used instead. The registry's age (75 in 2015) conflicts with the two original tourism-site sources' \"100 years\" claim; treated the government measurement as authoritative and corrected the story and age fields rather than flag the conflict, since one source is a direct physical survey and the others are undated blog estimates.",
       "location_precision": "confirmed",
-      "girth_cm": 400
+      "girth_cm": 400,
+      "how_to_recognise": "You can recognise it by its broad, symmetrical 15.7 metre canopy on a 4.00 metre trunk, beside the scrap-metal sculpture Homem Sucata. It stands on the traffic island at Avenida de Berlim."
     },
     {
       "id": "lis_008",
@@ -314,7 +321,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far. An earlier candidate photo was checked and rejected: it was a general shot of the square with no confirmation the tree itself was in frame. A second candidate, File:Plantano na Praça Paiva Couceiro, Lisboa, 2024.jpg, was added at found_needs_check on 2026-07-29 on the strength of a paraphrased caption; that paraphrase was wrong. 2026-07-29 (later session): downloaded and personally viewed the file plus re-checked its Commons metadata directly via the API. Both the file's own title/description ('Plantano na Praça Paiva Couceiro', Portuguese for plane tree) and the photo itself (lobed plane-tree leaves, not ginkgo's fan shape) show a Platanus, not this tree's Ginkgo biloba. Reverted to missing. Also searched the Praça Paiva Couceiro Commons category (3 files, none a ginkgo) and several ginkgo/nogueira-do-japão query variants: no genuine match exists yet. Real dead end, not a tooling gap.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves, turning a uniform bright yellow each November. It stands in Praca Paiva Couceiro, in the Penha de Franca neighbourhood."
     },
     {
       "id": "lis_009",
@@ -353,7 +361,8 @@
           10
         ],
         "label": "October, when the tree turns the garden pink"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its thorny green trunk and, every October, cotton-candy pink blooms filling the small garden. It stands beside the bust of Alfredo Keil in Praca da Alegria."
     },
     {
       "id": "lis_010",
@@ -384,7 +393,8 @@
       },
       "curation_status": "flagged",
       "notes": "Not an ancient tree: origin and exact age are unknown, and researchers who have examined it consider it a modern escapee from a broken pot, likely under 40 years old. Included for its visual spectacle and local renown rather than its age, per the qualifying criteria in CLAUDE.md. No official classification or protected status; access and public visibility are well documented, unlike its history.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its trunk and branches filling the gap between two building facades, roots that once escaped a cracked pot. It stands on Rua de Sao Cristovao in Mouraria."
     },
     {
       "id": "lis_011",
@@ -417,7 +427,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is genuinely undocumented: Lisbon's own QR identification plate on this tree records the age as 'desconhecida'. The range given is bounded by the garden's 1852 opening and calibrated against ICNF-classified Ficus macrophylla elsewhere in Lisbon (Príncipe Real 145 years, Largo Hintze Ribeiro 100, Jardim Constantino 107). Not in the ICNF register: the nearest classified tree is 494m away. Pin is the fig at the pond's edge, the photographed and most-visited of the park's five or more mature figs; approximate because the park's figs are scattered and no source distinguishes them individually.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by aerial roots hanging like rope and spilling over the kerb toward the ducks. It stands at the pond's edge in Jardim da Estrela, its own plaque marked age unknown."
     },
     {
       "id": "lis_012",
@@ -450,7 +461,8 @@
       },
       "curation_status": "flagged",
       "notes": "No published age exists and dragon trees cannot be aged by rings; the range is bounded only by the garden's 1852 opening. Not in the ICNF register. Pin is a 12-observation iNaturalist centroid with under 19m spread, all with stated accuracy of 10m or better, so the individual is identifiable on the ground.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by a trunk forking into a tight umbrella of stiff blue-green blades; cut the bark and the sap runs red. It stands among the palms near the centre of Jardim da Estrela."
     },
     {
       "id": "lis_013",
@@ -596,7 +608,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "ICNF processo AIP11065946I, 'taxódio ou cipreste-mexicano', classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018. Register figures: girth 6.60 m, height 26 m, last measured 2009. SPECIES CONFLICT, unresolved and therefore flagged: ICNF records Taxodium mucronatum, while Wikipedia PT and the Junta de Freguesia de Campo de Ourique both say Taxodium distichum. The register is the classifying authority so its name is used; note that T. mucronatum is treated by some authorities as a Mexican variety of T. distichum, so the two may not be a real disagreement. AGE: the register leaves the age field empty for all three classified trees in this garden and no other source supplies one, so the 80-150 range is a wide bound from trunk size and the neighbourhood's own build-out, not a measurement. COUNT CORRECTION, worth keeping: Wikipedia PT and the parish both describe four classified trees here including a Sequoia sempervirens, but the national register holds exactly three processos, and the metro's own environmental documents refer to 'as três árvores classificadas' and '3 exemplares arbóreos classificados'. Never write four. ALIVE: photographed standing in this garden by two different Commons contributors, most recently 14 June 2024; the metro's felling list names six unclassified Celtis australis, not this tree. Photo viewed at full size before approval: the tree fills the frame in daylight, trunk and crown both readable, bandstand to the right, centre band holds the trunk so the card crop survives.",
-      "girth_cm": 660
+      "girth_cm": 660,
+      "how_to_recognise": "You can recognise it by its 6.60 metre trunk and 26 metre height, the largest tree in the garden, sometimes still hung with protest ribbons. It stands in Jardim Teofilo Braga, Campo de Ourique."
     },
     {
       "id": "lis_017",
@@ -638,7 +651,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "FOLDED TWINS. Two ICNF processos, AIP11065947I (38.71779,-9.16539, girth 4.55 m, height 18.7 m) and AIP11065948I (38.71787,-9.16541, girth 4.90 m, height 15 m), both classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018, standing about 10 m apart. Shipped as one entry per the register-twin rule; AIP11065948I is recorded as a lead. The pin is the midpoint of the two surveyed points and is therefore approximate by construction, no more than 10 m from either trunk. Second source: Wikipedia PT lists 'dois Metrosideros excelsa' among this garden's classified trees, and the Junta de Freguesia's own heritage page counts 'dois Metrosídero'. AGE: the register's age field is empty for all three classified trees here and no other source gives one, so the range is a wide bound from trunk size, not a measurement. Bloom timing May to June matches the corpus's two other Iberian pohutukawas (Cadiz, two-source confirmed; Porto), which is why best_time is set. ALIVE: photographed in this garden 14 February and 14 June 2024 by a Commons contributor. Photo viewed at full size before approval: huge multi-limbed tree filling the frame in daylight, aerial roots readable, second specimen visible behind it, trunk sits in the centre band so the card crop survives.",
-      "girth_cm": 455
+      "girth_cm": 455,
+      "how_to_recognise": "You can recognise it by its low tangle of grey limbs spreading almost horizontal, curtained with aerial roots, one of a pair ten metres apart. It stands at the edge of Jardim Teofilo Braga."
     },
     {
       "id": "lis_018",
@@ -746,7 +760,8 @@
         "width": 4032,
         "height": 1908
       },
-      "girth_cm": 298
+      "girth_cm": 298,
+      "how_to_recognise": "You can recognise it by its 2.98 metre trunk at the centre of a bus terminal, near the bronze Homem do Leme and an old ticket kiosk. It stands in Jardim Roque Gameiro at Cais do Sodre."
     },
     {
       "id": "lis_021",
@@ -777,7 +792,8 @@
         "status": "missing"
       },
       "notes": "ICNF processo AIP11066049I, Tipuana tipu, Praça São João Bosco / Jardim da Parada dos Prazeres, classified Despacho (extrato) n.º 782/2019, Diário da República 2.ª série n.º 13, 18 January 2019. Register figures: girth 3.42 m, height 23.5 m, crown 34 m, last measured 2010 at age 100 (register-only figure; AGE FLAGGED, no independent age source found). Second source for existence, species and status: Junta de Freguesia da Estrela's own news article on a March 2018 structural pruning of this exact tree, carried out with ICNF oversight. THIS IS A DIFFERENT GARDEN from lis_016/lis_017's 'Jardim da Parada' (Jardim Teofilo Braga, the Campo de Ourique barracks parade ground, roughly 500 m north): this one is Jardim da Parada dos Prazeres, a 7,000 sqm roundabout garden around the Sao Joao Bosco statue (inaugurated 1988), facing the Prazeres Cemetery, straddling Campo de Ourique and Estrela parishes (register lists freguesia as Estrela). Confirmed as a separate location by web search before naming, given the corpus already flags this exact 'two gardens share a nickname' risk on lis_016. Distance to the nearest existing published tree (lis_017, the Pohutukawa) is about 500 m, inside the walk radius: joins the Estrela cluster (lis_005, lis_011, lis_012, lis_016, lis_017) as its sixth tree.",
-      "girth_cm": 342
+      "girth_cm": 342,
+      "how_to_recognise": "You can recognise it by its wide crown, once measured at 34 metres, filling the roundabout around the statue of Don Bosco. It stands in Praca Sao Joao Bosco, across from the Prazeres cemetery."
     },
     {
       "id": "lis_022",
@@ -808,7 +824,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 312
+      "girth_cm": 312,
+      "how_to_recognise": "You can recognise it by its low, dense evergreen crown on a thick 3.12 metre trunk, the heavier of two holm oaks fifty metres apart. It stands in Parque Bensaude, Estrada da Luz."
     },
     {
       "id": "lis_023",
@@ -839,7 +856,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 172
+      "girth_cm": 172,
+      "how_to_recognise": "You can recognise it by its 1.72 metre trunk, slim enough to put your arms around, the shorter of two holm oaks classified the same day. It stands in Parque Bensaude, near its larger twin."
     },
     {
       "id": "lis_024",
@@ -877,7 +895,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 145
+      "girth_cm": 145,
+      "how_to_recognise": "You can recognise it by its small size, just seven metres tall, and a crown that turns scarlet with flowers in high summer. It stands in Parque Bensaude, near the field maple."
     },
     {
       "id": "lis_025",
@@ -907,7 +926,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 350
+      "girth_cm": 350,
+      "how_to_recognise": "You can recognise it by its unusually thick 3.50 metre trunk for a field maple, with small five-lobed leaves and blunt tips. It stands at the western end of Parque Bensaude."
     },
     {
       "id": "lis_026",
@@ -937,7 +957,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 158
+      "girth_cm": 158,
+      "how_to_recognise": "You can recognise it by its white, spongy bark peeling in papery sheets on a tall, thin 18 metre tree. It stands in Jardim Constantino, a few steps from the garden's wide Moreton Bay fig."
     },
     {
       "id": "lis_027",
@@ -967,7 +988,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 233
+      "girth_cm": 233,
+      "how_to_recognise": "You can recognise it by its wide 26 metre crown and buttressing roots, the shade tree of a quarter-hectare garden. It stands in Jardim Constantino, a few steps from the paperbark."
     },
     {
       "id": "lis_028",
@@ -998,7 +1020,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 1045
+      "girth_cm": 1045,
+      "how_to_recognise": "You can recognise them by two swollen, soft-wooded trunks over ten metres round, thirty metres apart. They stand around the Igreja de Nossa Senhora dos Anjos in Jardim Antonio Feijo."
     },
     {
       "id": "lis_029",
@@ -1028,7 +1051,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 1090
+      "girth_cm": 1090,
+      "how_to_recognise": "You can recognise it by roots that look like more trunks converging into one, a crown wider than the tree is tall. It stands beside a primary school in Praca Antonio Sardinha."
     },
     {
       "id": "lis_030",
@@ -1059,7 +1083,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 475
+      "girth_cm": 475,
+      "how_to_recognise": "You can recognise it by a crown nearly 14 metres across on a trunk barely 6.2 metres tall, wider than it is high. It stands in the Quinta Conde dos Arcos park in Olivais, near the old palace."
     },
     {
       "id": "lis_031",
@@ -1089,7 +1114,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 585
+      "girth_cm": 585,
+      "how_to_recognise": "You can recognise it by its huge 37 metre crown, nine metres wider than the tree is tall, over a 5.85 metre trunk. It stands in the forecourt of Edificio D. Carlos at Hospital Pulido Valente."
     },
     {
       "id": "lis_032",
@@ -1119,7 +1145,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 375
+      "girth_cm": 375,
+      "how_to_recognise": "You can recognise it by its 29 metre height and wide crown overtopping the rooflines of a quiet back lane. It stands on Travessa do Arco da Torre, two minutes from the Torre de Belem."
     },
     {
       "id": "lis_033",
@@ -1148,7 +1175,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 390
+      "girth_cm": 390,
+      "how_to_recognise": "You can recognise it by its flattened, wind-shaped top and horizontal limbs, foliage that smells of lemon when crushed. It stands in Parque do Caramao da Ajuda, not the neighbouring Tapada."
     },
     {
       "id": "lis_034",
@@ -1221,7 +1249,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "paid_entry": false
+      "paid_entry": false,
+      "how_to_recognise": "You can recognise it by its bottle-shaped trunk studded with blunt thorns, 4.20 metres round. It stands on Rua dos Jeronimos, two minutes from the monastery, in Belem."
     }
   ],
   "hero_tree_id": "lis_017"

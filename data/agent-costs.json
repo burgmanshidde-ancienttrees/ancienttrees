@@ -6073,6 +6073,24 @@
         "note": "3 of 4 briefed trees turned out already live (bsa_001, bsa_002, vbo_001; the verify pass duplicated existing work, caught this session by checking passcheck.py --pending before merging). Only Komjatice was new; its superlative reworked in prose to avoid colliding with Myjava's existing thickest-in-Slovakia claim. Separately used the pass's freshly-fetched sources (pravda.sk, teraz.sk) to correct bsa_002's live page: its age was published as an open question when both sources agree on ~200 years, which also flips which of Bosaca's two trees is the oldest; corrected the tree record and every city-level field that named the old answer.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Lisbon",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 0,
+        "note": "29 how_to_recognise lines written directly in session (not a dispatched agent), restated from species/girth/height/setting/story already on file; tokens not separately tracked for in-session work",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "nara-kyoju",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 0,
+        "note": "136-row register triage: 8 matched already-published trees (nra_001/002/008/015/016/017/018), 15 blocked private land, 10 blocked primeval-forest ensemble, 1 strong find (Mizukoshi Shrine cedar grove) blocked for distance (~90min round trip, matches nara.json's own precedent), ~9 left as leads for lack of a second source, 73 unresearched (no facility name to pin), 14 flagged likely out of range. All appended to data/leads/nara.json.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
