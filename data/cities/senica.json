@@ -1,0 +1,70 @@
+{
+  "city": "Senica",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Senica maps one tree in its own town centre: a white mulberry old enough to have outlived several generations of the people who grew up around it. Named the town's own Tree of the City in 2010, it went on to win Slovakia's national Tree of the Year in 2014 and placed eighth of fourteen at the European final in 2015. At roughly 210 years old, it stands in the open, freely visible, an easy walk from the station.",
+  "meta_description": "The White Mulberry of Senica: Slovakia's 2014 Tree of the Year, roughly 210 years old, standing in the open at the town's own centre.",
+  "question_meta": "Senica's only mapped tree is the White Mulberry of Senica, roughly 210 years old and Slovakia's national Tree of the Year in 2014.",
+  "question_answer": "Senica's only mapped tree is the White Mulberry of Senica, roughly 210 years old, declared the town's own Tree of the City in 2010 and Slovakia's national Tree of the Year in 2014, standing in the open at the town centre.",
+  "question_context": "The mulberry stands in the built-up centre of Senica, in western Slovakia, and carries two titles most trees never collect. The town itself declared it Senica's own tree in 2010, and four years later it won Slovakia's national Strom roka contest outright with 1,711 public votes. It went on to represent the country at the 2015 European Tree of the Year final and finished eighth of fourteen with 6,776 votes, a striking turnout for a mulberry from a town of under twenty thousand people. At the time of its 2014 win it was recorded at 200 years old, 20 metres tall and 355 centimetres round, which puts it at roughly 210 years today. Locals describe it less as a monument than as an ordinary fixture of the town, nicknamed a beacon of the past by residents who measured their own childhoods against it rather than a single dramatic event in its history. It stands publicly visible with nothing blocking access, an easy walk from Senica's own bus and train station.",
+  "hero_tree_id": "sen_001",
+  "oldest_tree_id": "sen_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Senica?",
+      "a": "The White Mulberry of Senica, roughly 210 years old, the town's own Tree of the City since 2010 and Slovakia's national Tree of the Year in 2014."
+    },
+    {
+      "q": "Why does it have two titles?",
+      "a": "The town declared it Senica's own Tree of the City in 2010; four years later it went on to win Slovakia's national contest too, and represented the country in Europe in 2015."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in the open in the town centre with nothing blocking access."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Senica is a town in western Slovakia; the tree stands in the town centre, an easy walk from the bus and train station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sen_001",
+      "name": "The White Mulberry of Senica",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "roughly 210 years",
+      "age_min": 190,
+      "age_max": 230,
+      "girth_cm": 355,
+      "location": {
+        "address": "in the built-up town centre of Senica",
+        "latitude": 48.67963,
+        "longitude": 17.36507,
+        "neighbourhood": "Senica town centre"
+      },
+      "story": "A white mulberry in the middle of Senica carries two titles most trees never get to hold: the town's own Tree of the City, and a national Tree of the Year champion four years later.\n\nSenica declared it the town's tree in 2010, and in 2014 it went on to win Slovakia's Strom roka contest outright with 1,711 public votes, before representing the country at the European final in 2015 and finishing eighth of fourteen with 6,776 votes, a genuinely large turnout for a mulberry from a town of nineteen thousand people. At the time of its national win it was put at 200 years old, 20 metres tall and 355 centimetres round, so it stands today at roughly 210 years, a Morus alba old enough to have outlived several generations of the townspeople who grew up around it.\n\nThat is the tree's whole appeal, in fact: locals describe it less as a landmark than as a fixture of ordinary life, something people who grew up nearby measured their own childhoods against, nicknamed locally as a beacon of the past. It carries none of the drama of a battle survivor or a royal planting, just decades of a town centre growing up around one very old fruit tree that kept fruiting anyway.\n\nIt stands in the inhabited heart of Senica, in western Slovakia, publicly visible with nothing blocking access, an easy walk from the town's own bus and train station.",
+      "verified_sources": [
+        "https://senica.sk/clanok/titulom-strom-roka-2014-sa-pysi-morusa-zo-senice",
+        "https://commons.wikimedia.org/wiki/File:2015_Mulberry_tree_in_Senica_SK.jpg"
+      ],
+      "access": "Free; stands in an inhabited part of the town centre, publicly visible, no gate mentioned.",
+      "transport": "Senica town centre, western Slovakia; walkable from the town's bus/train station.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "fruit",
+        "label": "June and July, when the pale sweet mulberries ripen"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

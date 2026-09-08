@@ -1,0 +1,70 @@
+{
+  "city": "Starý Smokovec",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Starý Smokovec maps one tree at the heart of Slovakia's best-known mountain resort: a weeping beech nicknamed the Tree of Lovers for the umbrella-shaped crown couples shelter under. It won the national Tree of the Year contest in 2021 on charm rather than age, roughly 80 years old and young by this site's usual standard. It stands in the open outside the Tatra information office, in the middle of town, free to reach and impossible to miss.",
+  "meta_description": "The Smokovec Beech, Slovakia's Tree of Lovers: a weeping beech in the middle of Starý Smokovec, the High Tatras' main resort town.",
+  "question_meta": "Starý Smokovec's only mapped tree is the Smokovec Beech, a weeping beech nicknamed the Tree of Lovers, Slovakia's Tree of the Year in 2021.",
+  "question_answer": "Starý Smokovec's only mapped tree is the Smokovec Beech, a weeping European beech nicknamed the Tree of Lovers, roughly 80 years old and Slovakia's Tree of the Year in 2021, standing in the open at the centre of town.",
+  "question_context": "Fagus sylvatica f. pendula is an ornamental, deliberately cultivated form of European beech grown for its cascading crown rather than found growing wild, and Slovakia's State Forests service estimated this specimen at around seventy years old in 2017, putting it near eighty today. Its fame rests entirely on shape and story rather than age: the drooping branches form a shelter wide enough to stand inside, and courting couples in the High Tatras are said to meet beneath it, which earned it the name Strom zaľúbencov, the Tree of Lovers, in July 2021. Months later it won Slovakia's national Strom roka contest with 4,833 public votes, a genuinely large turnout for the country's tree poll. At 250 centimetres round and roughly 13 metres tall it is modest by the standards of most trees on this site, and nobody claims otherwise. It stands in the open in front of the Mountain Rescue Service building, which also houses the Tatra information office, right at the centre of Starý Smokovec, the main town of the High Tatras resort, a short walk from the Tatra Electric Railway stop.",
+  "hero_tree_id": "sms_001",
+  "oldest_tree_id": "sms_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Starý Smokovec?",
+      "a": "The Smokovec Beech, a weeping European beech nicknamed the Tree of Lovers, roughly 80 years old and Slovakia's Tree of the Year in 2021."
+    },
+    {
+      "q": "Why is it called the Tree of Lovers?",
+      "a": "Its drooping, umbrella-shaped crown forms a shelter wide enough to stand inside, and courting couples in the High Tatras are said to meet and kiss beneath it, which earned it the name Strom zaľúbencov in July 2021."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open in front of a public building at the centre of town, with nothing blocking access."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Starý Smokovec is the main town of Slovakia's High Tatras resort, reached by the Tatra Electric Railway or bus; the tree is a short walk from the station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sms_001",
+      "name": "The Smokovec Beech (Tree of Lovers)",
+      "species": "European Beech (Fagus sylvatica f. pendula)",
+      "age_estimate": "roughly 80 years",
+      "age_min": 70,
+      "age_max": 90,
+      "girth_cm": 250,
+      "location": {
+        "address": "in front of the Mountain Rescue Service (Horská záchranná služba) building, which also houses the Tatra Information Office, Starý Smokovec",
+        "latitude": 49.14003,
+        "longitude": 20.22286,
+        "neighbourhood": "Starý Smokovec, Vysoké Tatry"
+      },
+      "story": "A weeping beech in the middle of Slovakia's best-known mountain resort has a nickname most trees never earn: the Tree of Lovers.\n\nFagus sylvatica f. pendula is an ornamental form of European beech, planted deliberately for its cascading, umbrella-shaped crown rather than found growing wild, and the State Forests service estimated this one at around seventy years old in 2017, which puts it near eighty today. What made it famous is what people do under it: the drooping branches form a natural shelter wide enough to stand inside, and courting couples in Starý Smokovec are said to meet and kiss beneath it, which is how it earned the name Strom zaľúbencov, the Tree of Lovers, in July 2021.\n\nA few months later it won Slovakia's national Strom roka contest with 4,833 public votes, a title it collected on charm rather than age: at 250 centimetres round and roughly 13 metres tall, it is a modest tree by this site's usual standard, and its story is entirely about what it looks like and what people do beneath it.\n\nIt stands in the open in front of the Mountain Rescue Service building, which also houses the Tatra information office, at the centre of Starý Smokovec, the main town of the High Tatras resort. The Tatra Electric Railway stops a short walk away, and nothing stands between the tree and anyone who wants to see it.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q109925101",
+        "https://presovregion.travel/en/trip/smokovec-beech-tree-of-the-year-and-tree-of-the-year-2021/"
+      ],
+      "access": "Free; stands in the open in the centre of Starý Smokovec, in front of a public building. No restriction.",
+      "transport": "Starý Smokovec is the main High Tatras resort town, reached by the Tatra Electric Railway (TEZ) and bus; the tree is a short walk from the station, at the town's central square.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when the weeping crown turns copper and russet"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
