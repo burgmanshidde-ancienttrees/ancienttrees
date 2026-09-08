@@ -335,7 +335,7 @@
         "https://commons.wikimedia.org/wiki/File:Visbar%C5%B3_pu%C5%A1ies_kamienas_2.JPG",
         "https://commons.wikimedia.org/wiki/File:Visbar%C5%B3_pu%C5%A1is,_2022.JPG"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, delivered as stk_001 (The Visbarai Pine, Stokaičiai) in data/cities/stokaiciai.json",
       "species": "Pine (Pinus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "reason": "Checked 2026-09-08: real, regionally protected pine (Tauragė district decision, 1988, designation S0310505020052), girth 2.85m, height 18.7m (measured 2010), near Stokaiciai village. Held as a lead: only lt.wikipedia found with measurements; no second independent source located this pass despite searching. Coordinate note: this lead's original coordinate (55.378479, 22.033282) sits about 12km west of the coordinate given by lt.wikipedia/the tree's own designation (55.37836, 22.221519, near Stokaiciai on road 4514 between Zygaiciai and Bikavenai); the wiki coordinate is treated as correct pending confirmation, since it matches the designation record. Roughly 6-8km from the verified Pagramantis Regional Park cluster."
@@ -374,7 +374,7 @@
         "https://commons.wikimedia.org/wiki/File:Akmenyn%C4%97s_%C4%85%C5%BEuolas,_kamienas.JPG",
         "https://commons.wikimedia.org/wiki/File:Akmenyn%C4%97s_%C4%85%C5%BEuolas,_prie_Paj%C5%ABrio.JPG"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, delivered as paj_001 (The Akmenynė Oak, Pajūris) in data/cities/pajuris.json",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "reason": "Checked 2026-09-08: real, state-protected (Environment Ministry order, ID 2017-06605, 10 April 2017), girth 4.45m, height 24m, on a slope above the Jura river near Pajuris, Silale district. Held as a lead: only lt.wikipedia carries measurements; a second source (vietoves.lt's Pajuris heritage list) confirms the tree's existence but gives no figures of its own, so it does not clear the two-independent-sources bar for age/measurements. No legend or record claim found. Also sits about 6.6km from the verified Pagramantis Regional Park cluster (pgm_001-004) and could extend it if a second source turns up."
