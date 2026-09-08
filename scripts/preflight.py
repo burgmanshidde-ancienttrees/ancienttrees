@@ -933,6 +933,22 @@ def check_every_tree_names_a_source():
     a lesson and becomes a check. It deliberately asks for ONE, not the two the
     research standard wants, because a single source plus `flagged` is already
     allowed by Step 2 and this check is the floor, not the standard.
+
+    WHAT IT DOES NOT SAY, and the distinction is Hidde's, 2026-09-08: "sommige
+    bomen hebben geen bronnen, maar moeten wel door gebruikers kunnen worden
+    toegevoegd." A tree with no source is UNVALIDATED, not disqualified, and
+    this check governs `data/cities` alone, which is publishing a page. Adding
+    is open to anybody with no source at all: the app takes it, sightings_inbox
+    files it, and it is a lead like any other. Nothing here touches that path
+    and nothing should.
+
+    A page is us telling a stranger this is worth their afternoon, so it needs
+    evidence. Today the only evidence we have is sources. His ruling is that
+    the best evidence is a person saying they went and were glad, and when
+    those votes arrive at volume they become the better kind and this check
+    gains a second way to pass. Three real reader votes exist as of the day
+    this was written, so that is a mechanism being built rather than a signal
+    to key a rule to. See "What validates a tree" in CLAUDE.md.
     """
     out = []
     for path in sorted(glob.glob("data/cities/*.json")):

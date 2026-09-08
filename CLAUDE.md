@@ -777,6 +777,29 @@ It is not settled, and it contradicts the older `2 trees free per city at €19,
 
 `LOG.md` is the only channel. Assume he has not looked in a week and opens it cold. Lead with what changed about the product, keep what broke separate and obvious, and only use `FOR HIDDE` when something genuinely cannot move without him. A run that quietly did nothing useful should say so plainly rather than dress up the attempt.
 
+## What validates a tree, ruled by Hidde 2026-09-08
+
+His words, and they are the strategy this whole pipeline serves: "We zoeken trees worth the visit. Als mensen aangeven dat dat zo is is de beste validatie. Tot die tijd doen wij het met bronnen die hopelijk worden aangevuld. Sommige bomen hebben geen bronnen. Maar moeten wel door gebruikers kunnen worden toegevoegd. We willen geen complete dataset, een beetje schaarste is beter dan alles."
+
+Four things, in his order, and the third contradicts a check written the same morning.
+
+**1. The question is worth the visit, and nothing else is the question.** Not old, not protected, not documented. Those are evidence FOR it and they are not it. A tree can carry a register entry, an age and two sources and still be one of dozens on a slope, which is exactly what the four Nara entries were.
+
+**2. A person saying it was worth it is the best evidence there is, and it is the only kind we cannot manufacture.** A source says somebody wrote this down; a vote says somebody went and was glad. That is why the worth-the-trip question now ends the photograph flow (CONVENTIONS.md 2026-09-08), and it is the destination this whole loop is walking toward.
+
+Read the honest number beside that ambition: **three real reader votes exist, from three accounts, in fourteen days.** Until there is volume, validation is a mechanism we are building rather than a signal we can act on, and any rule keyed to it would be a gate for nobody.
+
+**3. Sources are the stand-in until then, and they are not the bar itself.** "Tot die tijd doen wij het met bronnen die hopelijk worden aangevuld." So a source is scaffolding: it is how we guess at worth-the-visit while nobody has told us. It follows that **a tree with no source is not disqualified, it is unvalidated**, and the two are different words on purpose.
+
+This corrects `check_every_tree_names_a_source()`, written the same morning after four sourceless trees went live in Nara. The check is right about what it stops and wrong if read as the bar: it refuses a tree PUBLISHED on a city page with an empty source field, and it says nothing about what a reader may ADD. That distinction is the whole of it, and it is not a technicality:
+
+- **Adding** is open to anybody, today, with no source at all. The app takes it, `sightings_inbox` files it, and it becomes a lead like any other. Nothing about a missing source stops that and nothing should.
+- **Publishing a page** still needs evidence, because a page is us telling a stranger this is worth their afternoon. Today that evidence is sources. When votes arrive at volume, they become evidence of a better kind, and this section is where that gets rewritten.
+
+**4. Scarcity is a feature, not a shortfall: "we willen geen complete dataset, een beetje schaarste is beter dan alles."** This is the oldest line in the project restated at a new layer. It already governs the count (a city ships the trees that clear the bar, never a number filled to look finished) and photographs (better nothing than a random picture). It now governs USER SUPPLY, which is the layer where the pressure will actually come from: the moment readers add trees at any volume, the tempting move is to publish them all, because supply feels like progress and every one of them is somebody's gift.
+
+It is not progress. MonumentalTrees has more trees than this project ever will and it does not matter, because a list where everything is on it tells you nothing. A collector wants every entry to deserve its spot. So the answer to a reader whose tree does not make it is never a quiet no: it is kept as a lead, it is theirs to ask about, and it goes live the day something says it is worth the walk.
+
 ## Quality gate: the research standard, not Hidde
 
 Hidde is not the quality gate and will not be at 1,000 trees. Do not write anything that promises human review. The bar is the standard you already apply: two independent sources for existence, species and age, and a location you can place. Readers are the correction layer.
