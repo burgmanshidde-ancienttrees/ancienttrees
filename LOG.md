@@ -11,6 +11,39 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (continuation, previous attempt stopped early with 56 min unspent) - 116 recognition lines across five cities
+
+**Checked the ladder in order and found nothing to claim or write.** No
+standing claims (`passcheck.py --claims` clean), `leads.py --ready` empty (0
+READY), no unprocessed reader submissions (97 rows, all already processed),
+no sightings queued, and `health.py` confirmed rung 2 clear (the deploy runs
+showing "cancelled" in `gh run list` are just pushes cancelling each other's
+CI, not a broken pipeline).
+
+**Rung 4 (new coverage) turned out thinner than `city_queue.py --next` makes
+it look.** Every "OPENABLE TODAY" city checked (Taormina, Ravenna, Salamanca,
+Ischia, Trier) either has register supply already documented exhausted in
+CURATION.md (Taormina, blocked on private hotel grounds, confirmed four times
+now) or too few candidates, too scattered, to clear the four-tree floor
+without from-zero web research, which is off unless Hidde names the city.
+Worth a mechanical fix later: `city_queue.py` should filter out cities
+CURATION.md already marked exhausted rather than making every run re-check.
+
+**Moved to rung 7, recognition lines, `python3 scripts/recognise.py --stuck`
+worst-first by impressions.** Batched a city at a time per BRIEF_WRITING.md:
+Valencia (25), Naples (21), Toulouse (10), Utrecht (33), Munich (27), all
+restated only from species, girth, height, setting and story already on
+file, all under 240 characters, no em dashes, no invented detail. Built and
+ran `qa.py` after each batch (5018 pages, all clean) before committing in two
+pushes. The `--stuck` pool dropped from several dozen cities to a dozen
+smaller ones over the session; whoever picks this up next can keep going
+straight from `recognise.py --stuck`.
+
+**FOR HIDDE:** nothing broken, nothing blocked. This was pure restatement
+work, no research risk: the trees named already had a story, a girth or a
+setting on file, they just had no sentence telling a reader which trunk in a
+crowded park is the one we mean.
+
 ## 2026-09-08 (session with Hidde) - The Nara four retired, and 343 snippets stop repeating their own title
 
 **He asked two questions and both were right.** Shown the daily digest, he
