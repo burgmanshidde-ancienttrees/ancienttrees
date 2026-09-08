@@ -1124,6 +1124,20 @@ def brief(arg, live):
                       f"{c['n']} trees, nearest pin {d:.1f} km. Check its leads file before")
                 print("    researching anything, and do not take a tree it already holds.")
 
+    # Hidde, 2026-09-08, at Nigatsu-do, having found that the tree we map there
+    # is a famous 60-year replanting while an unnamed veteran cedar stands 30 m
+    # away unmapped: "kun je altijd het hoofddoel trees worth the visit in
+    # ogenschouw houden. dan is die oude in een tempel toch een stuk
+    # interessanter?" The pipeline finds trees by NAME, so fame is visible to it
+    # and age is not. This line exists because that bias is invisible from
+    # inside a pass: every source will agree the famous tree is the famous tree.
+    print("\nAT EVERY SITE, ASK WHICH TRUNK IS WORTH THE VISIT, NOT WHICH ONE HAS THE NAME.")
+    print("  A register entry, a legend and a Wikipedia article are how a tree becomes")
+    print("  FINDABLE, never why somebody should walk to it. Where a named tree turns out")
+    print("  to be young, a successor or a replanting, look around the site before moving")
+    print("  on: the older tree is often standing metres away with nothing written about")
+    print("  it. Record it as a lead with a coordinate even when you cannot name it.")
+
     print("\nTHE JOB, and only the job: VERIFY, do not write prose and do not hunt photos.")
     print("  Per candidate: (1) alive now, (2) species + age with two independent sources")
     print("  (one official register counts as one), (3) the exact spot, precision stated")
