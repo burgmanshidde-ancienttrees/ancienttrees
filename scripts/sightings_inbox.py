@@ -377,7 +377,16 @@ def main():
         # looked at them; this is half the answer and the reporting hole is the
         # other half.
         if sid in done:
-            if done[sid].get("outcome") != "lead" or match(row, index)[0] is None:
+            outcome = done[sid].get("outcome")
+            # `ours` was never a verdict either, it was a category, and until
+            # 2026-09-08 it meant the photograph was dropped rather than
+            # judged. Reopening them is the whole point: fourteen of Hidde's
+            # own were sitting behind it, including three within 21 metres of a
+            # tree we publish. A real verdict (published, held, duplicate)
+            # still stands, and so does a lead the map has not caught up with.
+            reopen = (outcome == "ours"
+                      or (outcome == "lead" and match(row, index)[0] is not None))
+            if not reopen:
                 skipped += 1
                 continue
             del done[sid]
@@ -391,15 +400,28 @@ def main():
         # a reader. Ours are recorded as handled and go no further; they are
         # still in the database and on his own phone, so nothing is lost, and
         # any of them can be published deliberately rather than by default.
-        if ours.is_ours(row.get("user_id")):
-            done[sid] = {"outcome": "ours", "date": today}
+        #
+        # WHICH IS WHAT THIS LINE FAILED TO DO UNTIL 2026-09-08. "Go no further"
+        # was implemented as `continue`, so ours landed in no queue and no leads
+        # file and appeared in no report: there was no way to publish one
+        # deliberately because there was no way to SEE one. Hidde photographed
+        # fourteen trees, asked whether we had taken the sequoia photograph, and
+        # the answer was no, because nothing had ever put it in front of anybody.
+        #
+        # "Ours" is a statement about CREDIT and about counting, not about
+        # quality. A photograph is a photograph: it may be the only one of that
+        # trunk, or better than the one on the page. So it goes in the queue
+        # like any other, carrying `mine`, and everything that flag protects
+        # stays protected: it is never auto-published, never credited, and never
+        # counted as a contribution in the digest's signup table.
+        is_mine = ours.is_ours(row.get("user_id"))
+        if is_mine:
             mine += 1
-            continue
         tid, how, dist = match(row, index)
         if tid is None:
             if sid not in lead_ids:
                 leads_doc["leads"].append({
-                    "sighting_id": sid, "user_id": row["user_id"],
+                    "sighting_id": sid, "user_id": row["user_id"], "mine": is_mine,
                     "name": row.get("name") or "", "species": row.get("species"),
                     "age": row.get("age"), "note": (row.get("note") or "")[:500],
                     "latitude": row.get("lat"), "longitude": row.get("lng"),
@@ -430,7 +452,7 @@ def main():
             "sighting_id": sid, "user_id": row["user_id"],
             "display_name": profiles.get(row["user_id"]) or "",
             "tree_id": tid, "city_slug": t["slug"], "city": t["city"], "tree_name": t["name"],
-            "match": how, "distance_m": dist,
+            "match": how, "distance_m": dist, "mine": is_mine,
             "current_photo": t["photo_status"], "current_source": t["photo_source"],
             "name": row.get("name") or "", "species": row.get("species"),
             "note": (row.get("note") or "")[:300],
