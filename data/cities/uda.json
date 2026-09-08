@@ -49,10 +49,21 @@
       ],
       "access": "Free, standing on the former Goto family samurai residence site; open ground with no gate or entry fee (parking only is charged, about 500 yen, during peak bloom).",
       "transport": "Kintetsu Osaka Line to Haibara Station, then Nara Kotsu bus toward Oudakoko-mae (Ouda High School front), about 20 minutes, then roughly 20 minutes on foot.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "best_time": { "months": [4], "kind": "flowers", "label": "the first half of April, when the whole weeping crown comes down in pink and stays lit after dark" }
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "the first half of April, when the whole weeping crown comes down in pink and stays lit after dark"
+      }
     },
     {
       "id": "uda_002",
@@ -76,10 +87,21 @@
       "access": "Paid entry: 200 yen temple grounds entry (plus 300 yen if also visiting the main hall), with an optional 100 yen conservation donation for the cherry tree itself. Free parking (about 10 spaces) at the temple.",
       "paid_entry": true,
       "transport": "Kintetsu Osaka Line to Haibara Station, then Nara Kotsu bus to Takaishita stop (about 16 min), then roughly 40 minutes / 2.2km on foot; or about 5 minutes by car from the Takaigosaki intersection on Route 369.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "best_time": { "months": [4], "kind": "flowers", "label": "early to mid April, when a cherry of this age flowers and stays lit until nine" }
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "early to mid April, when a cherry of this age flowers and stays lit until nine"
+      }
     },
     {
       "id": "uda_003",
@@ -102,9 +124,15 @@
       ],
       "access": "Free, on the grounds of Sakurami Shrine (public shrine precinct, open ground, no fee or gate mentioned by any source).",
       "transport": "Kintetsu Osaka Line to Haibara Station, then a bus toward the Utano area followed by roughly a 60-minute walk; or by car via National Routes 369/166 and Nara Prefectural Road 31 from the Hari interchange of the Nara Expressway.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its trunks fused at the base and twisting upward together, a shape called the reclining dragon, held up on steel cables since the 1970s. It stands beside the Sakurami Shrine building in Uda."
     }
   ]
 }
