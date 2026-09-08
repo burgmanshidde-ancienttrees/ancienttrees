@@ -64,7 +64,8 @@
       "curation_status": "ai_generated",
       "notes": "Arrival date (autumn-winter 1910, ex-La Granja de San Ildefonso), original count (25) and survivor count (10) confirmed by a dedicated botanical-history source on the Alcázar's own flora, cross-referenced against a second independent article on the gardens. Upgraded to confirmed 2026-07-29: the Real Alcázar's own living-collection database (nomadgarden.org, the garden's official specimen map, queried directly rather than through its JS-rendered map view) individually geotags 11 Ginkgo biloba specimens in the English Garden, clustered within about 110m of each other. Pin moved to their centroid, about 220m from the previous general-address estimate. Worth a note rather than a silent change: the database currently shows 11 living specimens against this entry's own sourced count of 10 survivors from the original 1910 planting; not resolved further this session, may reflect a later replacement planting rather than an error in either source.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise them by ten ginkgos turning the same intense yellow together each December and January. They stand in the Jardin Ingles of the Real Alcazar."
     },
     {
       "id": "sev_002",
@@ -97,7 +98,8 @@
       "curation_status": "flagged",
       "notes": "The Hernando Colón/1529 origin story rests on one detailed source (a dedicated old-trees blog); the CAAC's own site confirms the monastery's Colón-era history and the site's general access details but does not itself date the tree. Flagged for single-source dating rather than dropped, since the tree's existence, near-death in the 1990s and current protected status are independently corroborated. Coordinates are the museum's street address; the tree's exact spot within the grounds is not independently surveyed, hence approximate.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its soft, swollen trunk behind a protective fence and a no-walking perimeter. It stands in the courtyard of the Monasterio de la Cartuja (CAAC)."
     },
     {
       "id": "sev_003",
@@ -127,7 +129,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Girth (720 cm) and height (28 m) confirmed by Seville's official singular-trees register; the 1925 transplant-from-María-Luisa history confirmed by a second, independent local source. Pin resolved 2026-07-27 via Seville's Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13): exactly four Ficus macrophylla found clustered together in the Alfalfa neighbourhood immediately around this plaza, matching this entry's own count of four relocated figs. Moved about 230m to the centroid of that cluster. Flagged honestly rather than hidden: all four in this newer inventory measure larger (780-1020cm circumference) than the register's own 720cm figure for 'the biggest,' consistent with real growth since an unspecified survey date, but a real enough gap that it is recorded here rather than used to update the story's own sourced number.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by four buttress-rooted Moreton Bay figs, the biggest 7.2 metres round and 28 metres tall, pruned hard each spring for Semana Santa. They stand on Plaza del Cristo de Burgos."
     },
     {
       "id": "sev_004",
@@ -165,7 +168,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Planting window (1850-1870) and dimensions (5.82 m girth, 33 m height) confirmed by two independent sources, including Spain's own 'Árbol y Bosque del Año' historic-tree competition site. Coordinates from the Spanish Wikipedia infobox for this specific glorieta.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its needle-dropping bald cypress crown, 33 metres wide on a 5.82 metre trunk, ringed by the white marble Becquer monument. It stands at the centre of the Glorieta de Becquer, Parque de Maria Luisa."
     },
     {
       "id": "sev_005",
@@ -195,7 +199,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Height (over 50 m, one source measuring closer to 60 m) and 'tallest tree in Seville' status confirmed by the city's own 2025 press release plus an independent news report; the two sources vary on exact height, so a range is given rather than a single figure. No planting record found; age is an estimate based on the species' introduction period, not a documented date. Pin resolved 2026-07-27 via Seville's own Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13, a new source found after sevilla.org's own catalogue stayed connection-refused again this pass): exactly one Eucalyptus camaldulensis recorded in the Jardines de Murillo/Santa Cruz area, 571cm circumference, close to this entry's own sourced 'close to five metres around.' Moved about 100m to the exact match. The inventory's own height field (26m) is well short of the two press sources' 50-60m and is not used to override them, kept here as a data-quality note rather than acted on.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its height, over 50 metres, the tallest tree in Seville, on a trunk close to five metres round. It stands at the edge of Jardines de Murillo, on Paseo de Catalina de Ribera."
     },
     {
       "id": "sev_006",
@@ -225,7 +230,8 @@
       },
       "curation_status": "flagged",
       "notes": "Ensemble entry: multiple centennial hackberries confirmed by Seville's official singular-trees register and a second park-history source, but neither gives one definitive age or a single representative specimen, so this is presented as a group rather than one named tree. Pin confirmed 2026-07-28 via Seville's Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13): a dense cluster of Celtis australis specimens, several tagged mature phase, recorded in the 'Prado, Parque María Luisa' area within about 30m of the stored coordinate, matching this entry's own 'clustered most densely near the Glorieta Rafael de León' description. Still an ensemble pin over a cluster rather than one surveyed trunk, but now government-inventory-backed rather than estimated.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by mature Mediterranean hackberries giving deep shade along the park's oldest paths. They stand near the Glorieta Rafael de Leon, the Choza de los Carneros and the Paseo de los Rosales in Parque de Maria Luisa."
     },
     {
       "id": "sev_007",
@@ -257,7 +263,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Ensemble entry: 1574 founding, drainage planting and 1764 replanting confirmed by two independent local-history sources; the London planes at both ends are separately described as 'nearly a century old' without a precise planting year. Pin confirmed 2026-07-28 via Seville's Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13): dozens of Platanus hispanica individually recorded with the location tag 'Alameda De Hercules, Plaza' itself, several in the oldest age phase, directly around the stored coordinate. An exact place-name match from the city's own inventory rather than an estimate, though still an ensemble pin over the whole plaza rather than one surveyed trunk.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by dense stands of London planes at both ends of the promenade, with poplars lining the central walkway and two Roman columns at the southern entrance. They stand along the Alameda de Hercules."
     },
     {
       "id": "sev_008",
@@ -298,7 +305,8 @@
       "curation_status": "flagged",
       "notes": "Current trees confirmed as a 20th-century replanting (Félix Hernández restoration) rather than a surviving Almohad-era grove, so age is stated as an estimate bound by the restoration era, not a documented planting year. The 1992 shift from free to paid access is confirmed by a dedicated local news retrospective. Pin resolved 2026-07-29 via OpenStreetMap/Nominatim: a pedestrian feature individually named 'Patio de los Naranjos, Santa Cruz, Casco Antiguo, Sevilla' (an exact name match for the courtyard itself, not just the cathedral's general address), about 60m from the prior address-derived point. This is an ensemble entry (the whole orange-tree courtyard, not one trunk), so a courtyard-level pin is the appropriate precision; treated as confirmed on that basis.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise them by orange trees planted in rows across the cathedral's old ablutions courtyard, beside the Giralda tower. They stand in the Patio de los Naranjos, Catedral de Sevilla."
     },
     {
       "id": "sev_009",
@@ -330,7 +338,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Photo fetched and viewed directly 2026-07-27: a large Moreton Bay fig with buttress roots filling a circular railed clearing, its own caption confirming 'gran ficus en el centro' at the Glorieta de Goya, an unambiguous match. The 1929 pavilion history and surviving columns confirmed by two independent sources. No precise planting date found for the fig itself; age is estimated from the species' early-20th-century introduction to Seville. Pin corrected 2026-07-27, about 190m, via an OpenStreetMap feature individually named 'Glorieta de Goya' (an exact name match); no GPS coordinates were found in either original source, so the prior pin was estimated from a described position near Plaza de España's north tower rather than surveyed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by two four-metre marble Doric columns framing its crown, the last trace of a demolished pavilion. It stands in the Glorieta de Goya, Parque de Maria Luisa."
     },
     {
       "id": "sev_010",
@@ -390,7 +399,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources. Species and the tree's standing as the most significant Ficus microcarpa in Seville's squares come from Jose Elias Bonells, former head of the city's parks service, writing in 2018, four years before the municipal catalogue. Planting date, the 1966 paving, the root drainage shafts, the 2019 alcorque widening and the residents' association logo come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 20. The catalogue words the 1945 date as a probability read off period photographs, so the age is given as a range. Confirmed alive: the city announced conservation measures for this tree in October 2025. City records conservation Bueno, phytosanitary state without anomalies. Titularidad: Ayuntamiento de Sevilla, Arbomap id 11.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its wide 21 metre crown over a 4.77 metre trunk, beside the plaza's duck fountain. It stands on Plaza de San Leandro."
     },
     {
       "id": "sev_012",
@@ -429,7 +439,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources. The 2007 damage, the 18,500 euro restoration, the pH treatment, the irrigation and the pomegranate hedge are documented by the Asociacion Amigos de los Jardines de la Oliva in February 2021, before the municipal catalogue, and the hedge planting was separately reported by eldiario.es. Dating from absence in the 1931 and 1934 photographs, and the stressed-but-recovering assessment, come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 24. Neither independent source writes out grandiflora, though magnolio in Spanish horticulture means Magnolia grandiflora by default; the species is therefore catalogue-led and the age is a range. Confirmed alive: the city was working on it again in November 2025. Titularidad: Ayuntamiento de Sevilla, Arbomap id 123396.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its crown against the Gothic cathedral wall, ringed by a low pomegranate hedge planted to protect its roots. It stands on Avenida de la Constitucion, beside Seville Cathedral."
     },
     {
       "id": "sev_013",
@@ -467,7 +478,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources. The Asociacion Amigos de los Jardines de la Oliva recorded an ornamental Feijoa sellowiana in the Plaza de Santa Cruz in 2009, thirteen years before the municipal catalogue, and gives the family correctly as Myrtaceae. The 1921 laying out of the square by Juan Talavera with this specimen in the planting, the 1692 cross by Sebastian Conde and its earlier locations, and the flower and fruit description come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 52. Age is catalogue-led and given as a range. NOTE a catalogue error: ficha 52 files this species under Arecaceae, the palm family; it is Myrtaceae. The catalogue's Feijoa sellowiana is a synonym of the accepted Acca sellowiana, used here for species-page grouping. Smallest of this batch at 6 m and 78 cm girth, catalogued for rarity and age rather than size. City records physiological, phytosanitary and biomechanical state all Optimo. Titularidad: Ayuntamiento de Sevilla, Arbomap id 4.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its unusually tall six metre crown for a pineapple guava, near the wrought-iron Cruz de la Cerrajeria at the centre of the square. It stands in Plaza de Santa Cruz."
     },
     {
       "id": "sev_014",
@@ -498,7 +510,8 @@
       "curation_status": "ai_generated",
       "notes": "Two independent sources. Carlos Romero Zarco's botanical itinerary of the Alcazar for the University of Seville, October 2005, lists the pacanero in the Jardin del Marques de la Vega-Inclan by name and species, seventeen years before the municipal catalogue, confirming both tree and location. The 1913-1917 garden date, the lost older specimen by the Pabellon de Carlos V, the dimensions and the condition ratings come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 3. Age is a range because the catalogue dates the planting to the garden's construction window, not a year. The 37 m height is the tallest of the seven Alcazar trees in the catalogue; it is not the tallest tree in Seville, which the same catalogue records as El Gran Capitan at 55 m, already published here as sev_005. Titularidad: Real Alcazar de Sevilla.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its height, 37 metres, the tallest tree in the Alcazar gardens, behind a planted border keeping visitors off its roots. It stands in the Jardin del Marques de la Vega Inclan, Real Alcazar."
     },
     {
       "id": "sev_015",
@@ -529,7 +542,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Three independent sources, the best-verified tree of this batch. Jose Elias Bonells, former head of the city's parks service, names the Ficus macrophylla on Calle Palos de la Frontera in 2018 and calls it close to fifty years old, which puts planting around 1968 and corroborates the catalogue's 1970 within tolerance; the age range here spans both. The planting-for-a-son's-birth story, the 1970 date and the dimensions come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 19. The November 2025 Air Spade intervention and the quote from delegate Evelia Rincon come from Andalucia Informacion, which also confirms the tree alive and standing at that date. Note a figure clash to avoid repeating: the 2025 press says the species can exceed 30 m in height, which is a species statement, not this tree's crown spread of 28 m. City records physiological state Optimo. Titularidad: Ayuntamiento de Sevilla, Arbomap id 55.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its 6.12 metre trunk, thicker than any older fig in the city's inventory, its crown reaching over the old dry moat. It stands on Calle Palos de la Frontera, beside the University of Seville."
     },
     {
       "id": "sev_016",
@@ -559,7 +573,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources. Jose Elias Bonells, former head of the city's parks service, describes the Plaza del Altozano specimen in 2020 as a large Ficus elastica var. decora of the Moraceae planted when the Juan Belmonte monument was inaugurated, two years before the municipal catalogue and confirming species and planting event independently. The 1972 date, the origin as a municipal container plant, the Vela de Triana stove damage and the dimensions come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 18. The catalogue itself notes the tree is not especially old and rests its case on symbolic value and size, which the story states rather than dresses up. City records physiological state Normal, conservation Bueno. Titularidad: Ayuntamiento de Sevilla.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its wide 31 metre crown, the only shade on the square, beside the monument to the bullfighter Juan Belmonte. It stands on Plaza del Altozano, Triana, at the approach to the Puente de Isabel II."
     },
     {
       "id": "sev_017",
@@ -598,7 +613,8 @@
         "label": "April to May, when it flowers",
         "kind": "flowers"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its thick trunk, 6.10 metres round at the base, and a 20 metre crown over the vaulted rainwater tank below. It stands above the Banos de Dona Maria de Padilla, Real Alcazar."
     },
     {
       "id": "sev_018",
@@ -707,7 +723,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Single source, the municipal catalogue, hence flagged. Coordinate matches the stated street address on the Macarena wall, so the pin is confirmed. The catalogue files the tree as Platanus x hispanica; this site uses London Plane (Platanus x acerifolia) for that hybrid throughout, per the one-name-per-species rule. No superlative is claimed about size: the same catalogue holds larger planes on the Avenida de Becquer (470 cm) and the Glorieta de Juanita Reina (442 cm)."
+      "notes": "Single source, the municipal catalogue, hence flagged. Coordinate matches the stated street address on the Macarena wall, so the pin is confirmed. The catalogue files the tree as Platanus x hispanica; this site uses London Plane (Platanus x acerifolia) for that hybrid throughout, per the one-name-per-species rule. No superlative is claimed about size: the same catalogue holds larger planes on the Avenida de Becquer (470 cm) and the Glorieta de Juanita Reina (442 cm).",
+      "how_to_recognise": "You can recognise it by its 27 metre height and 4.20 metre trunk growing directly against the old Almohad city wall. It stands on Calle Munoz Leon, near the Puerta de la Macarena."
     },
     {
       "id": "sev_021",
@@ -1320,7 +1337,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its old fig trunk, 1.47 metres round at chest height and swelling to three metres at the ground, in a walled community garden. It stands in the Huerto del Rey Moro, entered through the gate at Calle Enladrillada 36."
     },
     {
       "id": "sev_039",
@@ -1352,7 +1370,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its flat, umbrella-shaped crown, 12.5 metres wide on a 2.80 metre trunk. It stands in the Jardines de Cristina, between the Puerta de Jerez and the river."
     },
     {
       "id": "sev_040",
@@ -1382,7 +1401,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its cluster of stems rather than one trunk, 8.75 metres round at the base for the whole bundle, rising 15.8 metres. It stands on Avenida de Conde de Colombi, Parque de Maria Luisa."
     },
     {
       "id": "sev_041",
@@ -1412,7 +1432,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its tall crown, 18 metres, on open riverside ground with no gate around it. It stands on the Anillo Verde path along the Guadalquivir, in Tablada."
     },
     {
       "id": "sev_042",
@@ -1445,7 +1466,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its large citrus crown, 14 metres tall with a 2.20 metre trunk, on the visitor route through the old orchard. It stands in the Huerta Grande of the Monasterio de la Cartuja."
     },
     {
       "id": "sev_043",
@@ -1485,7 +1507,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its pale pink, hibiscus-shaped flowers in early summer, on a tall 22 metre trunk. It stands in the Jardines de la Madrina, beside the Casino de la Exposicion."
     }
   ]
 }

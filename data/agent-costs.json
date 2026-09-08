@@ -6091,6 +6091,15 @@
         "note": "136-row register triage: 8 matched already-published trees (nra_001/002/008/015/016/017/018), 15 blocked private land, 10 blocked primeval-forest ensemble, 1 strong find (Mizukoshi Shrine cedar grove) blocked for distance (~90min round trip, matches nara.json's own precedent), ~9 left as leads for lack of a second source, 73 unresearched (no facility name to pin), 14 flagged likely out of range. All appended to data/leads/nara.json.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Seville",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 0,
+        "note": "23 how_to_recognise lines written directly in session (not a dispatched agent), restated from species/girth/height/setting/story already on file; tokens not separately tracked for in-session work",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
