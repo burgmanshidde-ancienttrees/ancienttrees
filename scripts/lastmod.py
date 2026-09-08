@@ -64,6 +64,14 @@ BULK_COMMITS = {
 TREE_ONLY = {"story", "verify_notes", "verified_sources", "curation_status",
              "how_to_recognise", "submitted_by"}
 
+# Of TREE_ONLY, the subset TranslatedTreePage.astro actually reads (story via
+# the English fallback, verified_sources via treeSources()). how_to_recognise,
+# curation_status and submitted_by render on the English tree page only, so a
+# change to them must not restamp the translated tree page's lastmod: it did
+# not change. Found 2026-09-08 when 23 how_to_recognise-only edits to Seville
+# restamped 184 sitemap entries (8 language variants apiece) instead of 23.
+TRANSLATED_TREE_UNUSED = TREE_ONLY - {"story", "verified_sources"}
+
 
 def h(obj):
     s = json.dumps(obj, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
@@ -125,7 +133,8 @@ def entries():
             out[f"{lang}:q:{slug}"] = (cv, rel)
             for t in city.get("trees", []):
                 if renderable(t) and t.get("id"):
-                    out[f"{lang}:tree:{t['id']}"] = (h({"overlay": ov_trees.get(t["id"]), "en": t}), rel)
+                    en = {k: v for k, v in t.items() if k not in TRANSLATED_TREE_UNUSED}
+                    out[f"{lang}:tree:{t['id']}"] = (h({"overlay": ov_trees.get(t["id"]), "en": en}), rel)
     return out
 
 

@@ -11,6 +11,37 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation 4) - Merged a stranded Lithuania write pass: Vytogala and Pagramantis Regional Park open, 5 trees
+
+Picked up per the standing instruction: check claims, check the READY
+queue, do the smallest complete thing first. `_famous-lithuania` had a
+verify pass already committed (7b573607) but its write pass output was
+sitting uncommitted on disk from an earlier attempt in this window,
+already fully assembled into two city files. Verified the work rather
+than redoing it: read all 5 stories, sources and location fields,
+confirmed `preflight.py` was clean, then a full `astro build` (5078
+pages) and `qa.py` (7903 pages), both clean.
+
+- **Vytogala** opens with one entry covering four oaks around a
+  memorial stone at the birthplace of Stasys Girenas, the pilot who
+  flew the Lituanica out of New York in 1933 and died short of Kaunas.
+  Single-famous-tree exception: the memorial is the destination, not
+  the timber.
+- **Pagramantis Regional Park** opens with 4 oaks spread across the
+  park's cycling route: the Gudlaukis oak (6.30m round, hollow, you can
+  step inside it), Geniai, Tamosaiciai and Andriejaiciai.
+
+Also cleaned up a `lastmod.py` bug from earlier this session in the
+same pass: the translated-tree hash was reading fields the translated
+page template never renders, so English-only edits (like Seville's 23
+how_to_recognise lines) were restamping every language variant's
+sitemap `lastmod` even though the translation itself hadn't changed.
+Fixed and re-derived `data/lastmod.json` against the corrected formula.
+
+Released the `_famous-lithuania` claim. Roughly 30 scattered single-oak
+leads from the same register batch are still unresearched. Nothing for
+Hidde.
+
 ## 2026-09-08 (continuation 3) - _famous-slovakia refilled: 1 new place, 1 live page corrected
 
 Continued straight on from the France batch, same pattern: shelf was
