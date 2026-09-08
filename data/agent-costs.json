@@ -5974,6 +5974,15 @@
         "note": "Cleared the recognise.py --stuck worst-first pool to empty (was 39 trees across 39 cities, each the only tree in its city with no photo, no line, and government-named company within 25m). Restated only from species, girth, height, setting, story already on file.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Nagoya, Uda, Untermerzbach, Velp, Vorden, Wolfheze, Yabu, Yoshida, Zalgiriai",
+        "kind": "write",
+        "tokens": 20000,
+        "trees": 9,
+        "note": "Final batch clearing recognise.py --stuck to 0 (these 9 were hidden behind the prior batch display cap). The --stuck worst-first pool is now fully empty; remaining recognition-line work moves to the broader --gaps pool per CLAUDE.md rung 7.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
