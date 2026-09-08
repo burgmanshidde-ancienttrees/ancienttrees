@@ -5920,6 +5920,15 @@
         "note": "19 lines, worst-first by impressions from recognise.py --stuck",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "dordrecht",
+        "kind": "verify",
+        "tokens": 169871,
+        "trees": 0,
+        "note": "5 trees verified to dordrecht-verified.json (dor_009-013), all flagged (register + aerial imagery only, no independent named second source), awaiting a write pass; 3 blocked as private land (Mammoetboom sequoia, De Onbeschaamde beech, neighbouring yew)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
