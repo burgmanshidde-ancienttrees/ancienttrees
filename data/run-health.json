@@ -8242,6 +8242,72 @@
    ],
    "trees": 14,
    "logged": true
+  },
+  {
+   "started": "2026-09-08T11:45:25+00:00",
+   "date": "2026-09-08",
+   "run_id": "34222331169",
+   "minutes": 92.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 498,
+   "denials": 27,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(python3), Bash(rm), Bash(until)",
+   "ended": "success",
+   "tokens": 12420934,
+   "claims_held": [
+    "_famous-bulgaria"
+   ],
+   "commits": 28,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "aizuwakamatsu",
+     "trees": 1
+    },
+    {
+     "city": "ekero",
+     "trees": 1
+    },
+    {
+     "city": "iida",
+     "trees": 1
+    },
+    {
+     "city": "kitakata",
+     "trees": 1
+    },
+    {
+     "city": "oyodo",
+     "trees": 1
+    },
+    {
+     "city": "pajuris",
+     "trees": 1
+    },
+    {
+     "city": "radomsko",
+     "trees": 1
+    },
+    {
+     "city": "stockholm",
+     "trees": 1
+    },
+    {
+     "city": "stokaiciai",
+     "trees": 1
+    },
+    {
+     "city": "trollskogen",
+     "trees": 1
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    }
+   ],
+   "trees": 10,
+   "logged": true
   }
  ],
  "schedule_changes": [
