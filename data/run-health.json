@@ -8056,6 +8056,86 @@
    ],
    "trees": 20,
    "logged": true
+  },
+  {
+   "started": "2026-09-08T06:32:47+00:00",
+   "date": "2026-09-08",
+   "run_id": "34195114342",
+   "minutes": 103.9,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 482,
+   "denials": 47,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(head), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 175610089,
+   "claims_held": [],
+   "commits": 17,
+   "cities_touched": 15,
+   "cities": [
+    {
+     "city": "bracon",
+     "trees": 1
+    },
+    {
+     "city": "chatenay-malabry",
+     "trees": 1
+    },
+    {
+     "city": "feternes",
+     "trees": 1
+    },
+    {
+     "city": "jauze",
+     "trees": 1
+    },
+    {
+     "city": "komjatice",
+     "trees": 1
+    },
+    {
+     "city": "magescq",
+     "trees": 1
+    },
+    {
+     "city": "nicorps",
+     "trees": 1
+    },
+    {
+     "city": "pesselieres",
+     "trees": 1
+    },
+    {
+     "city": "reaumont",
+     "trees": 1
+    },
+    {
+     "city": "aberford",
+     "trees": 0
+    },
+    {
+     "city": "aguas-de-moura",
+     "trees": 0
+    },
+    {
+     "city": "albersdorf",
+     "trees": 0
+    },
+    {
+     "city": "allouville-bellefosse",
+     "trees": 0
+    },
+    {
+     "city": "altrier",
+     "trees": 0
+    },
+    {
+     "city": "bosaca",
+     "trees": 0
+    }
+   ],
+   "trees": 9,
+   "logged": true
   }
  ],
  "schedule_changes": [
