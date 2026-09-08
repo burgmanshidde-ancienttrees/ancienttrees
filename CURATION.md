@@ -11,6 +11,30 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (continuation) - Photo hunt exhausted for 24 trees: Alkmaar, Apeldoorn, Assen, Bangkok, Deventer, Dordrecht, Emmen, Haarlem, Maastricht
+
+`photo_fetch.py` plus a viewing pass looked at every Commons candidate the
+sweep could find for alk_005, apd_002, apd_008, ass_001, ass_002, ass_004,
+ass_007, dev_003, dev_006, dor_001, dor_004, dor_010, dor_011, emm_001,
+emm_005, emm_008, haa_005, haa_007, haa_008, maa_007, maa_012, maa_013 and
+maa_014 (23 trees, plus bkk_003 held rather than exhausted). None had a
+usable photograph: the pool was almost entirely archival black-and-white
+material, street/house facades matched on address rather than tree, and
+wide park or estate views with no single tree as the subject. All recorded
+in `data/photo-queue.json` as rejected/exhausted, not to be re-hunted on
+the Commons sweep alone; they need a reader submission or a genuinely new
+source. **bkk_003, The Bodhi Tree of Wat Phra Kaew**, is `held`: a good
+daylight photograph of the right species, but its geotag sits 60m from our
+pin and its setting does not match "beside Prasat Phra Thep Bidon", so it
+needs a second look before it can be trusted to be the same tree.
+
+Also confirmed: the fetch sweep's filename-matching can attach one file to
+several different trees sharing a place name (an Overcingel gate photo
+queued against 3 Assen trees, a 1925 reburial photo against 2 Maastricht
+trees) and can cross municipality lines on a shared street name (2 Deventer
+candidates were actually in Olst). Worth fixing in `photo_gaps.py`'s
+matching logic at some point; not attempted this pass.
+
 ## 2026-09-08 (continuation, previous attempt stopped after 50 min with 70 min unspent) - 13 bomenbieb.nl trees merged and committed: 5 new Dutch places, 8 folded into published cities
 
 Picked up an uncommitted verify+write pass left on disk by the previous
