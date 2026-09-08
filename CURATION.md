@@ -11,6 +11,49 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (continuation) - Sant'Alfio grows from 1 tree to 3: the two chestnut/birch neighbours that had no home
+
+Continuation of an attempt that stopped after 34 minutes with 86 of its
+window unspent. No claims standing, `leads.py --ready` empty. Deleted
+two stale, already-consumed research files sitting uncommitted from the
+prior attempt: `famousslovakia-verified.json` (all 5 trees confirmed
+live under bosaca/senica/stary-smokovec/velke-borove) and
+`famoustaiwan-verified.json` (an empty array, its one candidate already
+shipped as bilu.json weeks ago).
+
+Then `city_queue.py --next` and `scout_next.py --target` for new
+coverage; Taormina's own register supply is exhausted (all five in-town
+trees blocked on the Excelsior Palace's private grounds, per
+`data/leads/taormina.json`). But `data/leads/santalfio-etna.json` held
+two more fully-verified trees, from the same 2026-08-30 pass that had
+already shipped the Hundred-Horse Chestnut alone under the single-tree
+exception, explicitly left for later ("A Sant'Alfio page of its own
+once four trees clear the bar on that slope; these three are already
+three of them"). Wrote their stories and added them to santalfio.json:
+
+- **sal_002, The Ship's Chestnut** (Castagno della Nave): ~1,800 years
+  by one source, a second only confirms "over a thousand"; 500m uphill
+  from the Hundred-Horse Chestnut. Stands on private land but at the
+  path's edge, described by the source as clearly visible without
+  entering the property, the view-only-tree allowance. Flagged for the
+  age and the access read.
+- **sal_003, The Etna Birch of Magazzeni** (Betula aetnensis): a
+  glacial-relict endemic growing at 1010m, well below its usual
+  1450-2000m band. No age source exists, so the field stays empty and
+  the story asks the reader rather than guess. Girth (205cm) and
+  height (12m) corroborated across the national and a regional
+  register. Flagged: no source confirms a marked path to this specific
+  tree, though it stands in open forest with no gate.
+
+Both carry a `how_to_recognise` line (bark colour/base shape are
+restatements of verify_notes, not new claims). Rewrote the city intro
+to reflect three trees instead of one, kept within the 60-100 word
+Contract C range. Still below the 4-tree floor at 3, which is fine:
+the page already shipped under the single-tree exception and growing
+it with genuinely verified neighbours is normal work, not padding.
+
+Build (5023 pages), qa.py (7779 pages) and preflight.py (536 cities,
+0 problems) all clean. No FOR HIDDE items.
 ## 2026-09-08 - Finished the standing _famous-slovakia and _famous-taiwan claims; a stranded Poland write also merged
 
 Continuation of an earlier attempt that stopped after 10 min with 110 of
