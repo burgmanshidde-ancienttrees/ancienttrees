@@ -168,6 +168,36 @@ def pipeline_status():
             print("      %s  %s  match=%s  the tree has: %s"
                   % (e.get("tree_id"), (e.get("tree_name") or "")[:38],
                      e.get("match"), e.get("current_photo")))
+
+    # AND THE HALF THAT WAS INVISIBLE (2026-09-08). The queue above only ever
+    # holds photographs of trees we ALREADY map. A photograph of a tree we do
+    # not map went to data/leads/_sightings.json and was marked done in the
+    # same breath, and nothing read that file, so `--status` said "0 waiting"
+    # while five of Hidde's own photographs sat in it untouched. His words:
+    # "Hoe kan het dat die niet zijn bekeken? Dat moet dicht."
+    #
+    # It is the more interesting half, not the less. A photograph of a tree we
+    # have is at best a better picture; this is a tree the map does not know
+    # about at all.
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "scripts"))
+        from sightings_inbox import open_leads
+        unmapped = open_leads()
+    except Exception:
+        unmapped = []
+    if unmapped:
+        print("  *** %d reader photograph(s) of a tree we do NOT map, still without a "
+              "verdict (RUNG 1). Check each against the bar, then write one sentence "
+              "into its `why` in data/leads/_sightings.json." % len(unmapped))
+        for l in unmapped[:10]:
+            where = ("%.4f %.4f" % (l["latitude"], l["longitude"])
+                     if l.get("latitude") is not None else "no coordinate")
+            print("      %s  %-30s %s%s"
+                  % (str(l.get("sighting_id"))[:8], (l.get("name") or "unnamed")[:30],
+                     where,
+                     ("  note: " + l["note"].strip()[:36]) if (l.get("note") or "").strip() else ""))
+        print("      python3 scripts/corroborate.py <lat> <lng> --country <country>"
+              "   asks the registers AND Wikipedia")
     print("  staged for verify : %d file(s)  %s" % (
         len(staged), " ".join(os.path.basename(p).split("-register")[0] for p in staged) or "(empty)"))
     # Count TREES that still need a story, not FILES that exist. A verified
