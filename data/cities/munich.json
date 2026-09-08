@@ -63,7 +63,8 @@
       },
       "curation_status": "flagged",
       "notes": "The Thirty Years' War planting date is local tradition, not a documented record; the 300-350 year range comes from the tree's own Wikipedia entry and matches independently, but no source gives a single precise figure. Photo viewed directly: shows a large, mature, dome-shaped linden standing alone on a grassy plot beside a rural-looking building, consistent with the tree's setting near Gut Nederling. Approved. Cross-checked against an OpenStreetMap node (denotation=natural_monument, name=Röth-Linde) within 5m of this entry's own coordinates: independent confirmation the pin is already right.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by eight metal crown braces holding up a hollow trunk over six metres round, kept alive as what one report calls an intensive-care patient. It stands near Gut Nederling, Moosach."
     },
     {
       "id": "muc_002",
@@ -103,7 +104,8 @@
       },
       "curation_status": "flagged",
       "notes": "The approximately 600-year age comes from a district citizen-assembly document rather than a dendrological survey; baumkunde.de independently suggests a planting date around 1440, consistent with but not identical to that figure. Any connection to Duke Albrecht III's 1436 wedding is local speculation found in searches but not confirmed by either source, so it is not stated as fact in the story. Pin corrected 2026-07-27, about 1.4km: German Wikipedia's own list of Munich's Naturdenkmäler (already a cited source) carries per-tree coordinates; independently geocoded 'Krüner Platz' via Nominatim to cross-check rather than trust the table blindly, and it lands within about 100m of the table's figure, confirming the table over the previous stored point, which was the actual error. Photo found and approved 2026-07-28: file titled \"Stieleiche (Naturdenkmal) in Sendling-Westpark\", an exact species and district match. Viewed directly: a massive old oak with a heavily gnarled, twisting branch structure and thick low limbs behind a garden fence, consistent with the story's description of storm-thinned limbs and the July 2022 protective fence.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by a thinning crown of snake-like, twisting branches behind a protective fence put up in 2022 to guard the compacted roots. It stands at the eastern corner of Krüner Platz, Sendling-Westpark."
     },
     {
       "id": "muc_003",
@@ -143,7 +145,8 @@
       },
       "curation_status": "flagged",
       "notes": "Planting date (1 July 1871) is explicit on the tree's own plaque per stadtgeschichte-muenchen.de, so age is calculated directly rather than estimated. Photo viewed directly: shows a large solitary oak on a park lawn with a memorial stone at its base, consistent with a commemorative planting. Approved. Pin corrected 2026-07-27, about 1.3km, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table against an independent Nominatim geocode).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the plaque at its base naming it the Reich and Peace Oak, planted by Munich schoolchildren on 1 July 1871, though the tree itself now looks entirely ordinary. It stands in the Flaucheranlagen, near Brudermühlbrücke."
     },
     {
       "id": "muc_004",
@@ -182,7 +185,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age given only as 'over 300 years' in the city's own Naturdenkmal register (via baumkunde.de and the Wikipedia list drawing on it); no more precise figure or measurement found. Pin corrected 2026-07-27, about 1.6km, using that same Wikipedia list's per-tree coordinates (see muc_002 for the cross-check that validated this table). Photo found and approved 2026-07-28: file titled \"Naturdenkmal Rotbuche Englischer Garten München\", the photographer's own title naming this as the specific protected specimen rather than any beech in the park. Viewed directly: a single tall, mature beech standing alone in an open grass clearing, bare in winter, consistent with the Englischer Garten's open meadow sections.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the beech that predates the park itself by decades, standing between the Forstweg and Friedrich-Ludwig-von-Sckell-Weg paths near the second riding trail. It stands in the Englischer Garten."
     },
     {
       "id": "muc_005",
@@ -214,7 +218,8 @@
       },
       "curation_status": "flagged",
       "notes": "'No older elms known in the city area' is the register's own wording, a comparative claim rather than an absolute age; no individual figure exists for either tree. Photo viewed directly: shows a tall, mature tree with a complex, high-branching crown rising above the surrounding autumn canopy in a park setting, consistent with the paired elms. Approved. Pin corrected 2026-07-27, about 1.5km: German Wikipedia's Naturdenkmäler list gives this exact coordinate, and independently, the approved photo's own file description places the trees 'in der Weggabelung etwa 200m nordwestlich des Monopteros' (at the path fork about 200m northwest of the Monopteros); geocoding the Monopteros directly and projecting 200m northwest lands within about 70m of the Wikipedia table's point, a genuine independent cross-check rather than trusting one source alone.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them as a pair of European white elms standing northwest of the Monopteros and southwest of the Chinese Tower, officially the oldest elms known anywhere in the city. It stands in the Englischer Garten."
     },
     {
       "id": "muc_006",
@@ -254,7 +259,8 @@
       "curation_status": "flagged",
       "notes": "Protected for rarity of form rather than age; no source gives a planting date or age estimate, so the age range here is a rough guess based on trunk girth rather than a documented figure, flagged accordingly. Photo viewed directly: shows a large dome-shaped beech with a finely textured autumn canopy in a park setting with benches beneath it, consistent with a protected specimen beech. Approved. Pin corrected 2026-07-27, about 1.4km, using German Wikipedia's Naturdenkmäler list coordinates (see muc_005 for the independent Monopteros cross-check that validated this same table for its immediate neighbour).",
       "location_precision": "confirmed",
-      "verify_notes": "Opening corrected 2026-08-26 at the request of Vera Donata Wesinger, Gartenreferentin of the Bayerische Schlossverwaltung, who was forwarded our outreach by the Englischer Garten administration. Our line said these trees are old 'because they survived', which reads as luck. Her correction: they survived because the Englischer Garten is protected as a Gartendenkmal, has been cared for by the Schlossverwaltung for over 200 years, and sits in a Landschaftsschutzgebiet, which together held off the building interests of the city that grew around it. The custodian of the ground is the better source on why the ground still exists."
+      "verify_notes": "Opening corrected 2026-08-26 at the request of Vera Donata Wesinger, Gartenreferentin of the Bayerische Schlossverwaltung, who was forwarded our outreach by the Englischer Garten administration. Our line said these trees are old 'because they survived', which reads as luck. Her correction: they survived because the Englischer Garten is protected as a Gartendenkmal, has been cared for by the Schlossverwaltung for over 200 years, and sits in a Landschaftsschutzgebiet, which together held off the building interests of the city that grew around it. The custodian of the ground is the better source on why the ground still exists.",
+      "how_to_recognise": "You can recognise it by leaves cut narrow, deeply lobed and lace-like instead of broad and oval, looking almost feathery beside an ordinary beech nearby. It stands on the west bank of the Schwabinger Bach, near the Chinese Tower."
     },
     {
       "id": "muc_007",
@@ -294,7 +300,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives this specific oak a documented age; 'unique in size within the city area' is the register's own claim about scale, not age, and is presented as such. Photo found via the city's own Naturdenkmal list, whose Commons category and filename explicitly name this exact tree. Viewed directly: shows a tall, thick-trunked oak with a gnarled, moss-covered lower crown, budding in early spring, next to a rustic tiled-roof building, consistent with the Dörfchen's farm-style setting. Approved. Pin corrected 2026-07-27, about 550m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the oak the city calls unique in size, standing near the Brunnhaus dairy building in the palace park's rustic little-village cluster. It stands in Schlosspark Nymphenburg, on the way to the Badenburg."
     },
     {
       "id": "muc_008",
@@ -326,7 +333,8 @@
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble of eight trees per the city's own register entry; no individual age or planting date documented for any of the eight. Photo found via the city's own Naturdenkmal list, whose Commons category and filename explicitly name this exact group. Viewed directly: shows a dense cluster of mature trees on a grass strip beside a road, with a Siemens-branded office building behind them, matching the story's own description exactly. Approved. Pin corrected 2026-07-27, about 415m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as a stand of eight Mediterranean trees together on a green strip beside a busy ring road, protected as an extremely rare species group in the city. It stands on Oskar-von-Miller-Ring, west of the Siemens headquarters."
     },
     {
       "id": "muc_009",
@@ -364,7 +372,8 @@
       },
       "curation_status": "flagged",
       "notes": "Attribution resolved by checking the file's own description page directly: Martinus KE, CC BY-SA 4.0. Photo viewed directly: shows a large tree with fine, compound pinnate foliage (consistent with Sophora japonica) beside a residential building near the square. Approved. Pin corrected 2026-07-27, about 280m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it in August by small cream-white flowers, blooming when almost nothing else in the city still is. It stands on the grounds of Karolinenplatz 2a."
     },
     {
       "id": "muc_010",
@@ -396,7 +405,8 @@
       },
       "curation_status": "flagged",
       "notes": "No individual age or planting date documented; rarity is explicitly tied to Dutch elm disease losses across the city rather than this tree's own age. Photo viewed directly: shows a tall mature tree in a city square with buildings visible behind the canopy, consistent with a Maximiliansplatz specimen. Approved. Pin tightened 2026-07-27, about 85m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as a mature wych elm of a size Dutch elm disease has made rare anywhere in the city, inner districts included. It stands in Maximiliansplatz."
     },
     {
       "id": "muc_011",
@@ -436,7 +446,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age undated: Munich's Naturdenkmal ordinance carries no age or girth column, and no second source gives this tree a date, so the 150-250 range is inferred from Sckell's documented 1799-1823 landscape redesign rather than measured. Existence, species, location and protection are legally attested by the 2021 ordinance; ownership is Freistaat Bayern, public parkland. Flagged because the ordinance is effectively the only source on the tree itself. Photo viewed directly at 1280px before approval: daylight, colour, deep blue sky, the dark purple crown unmistakable against the green trees beside it, trunk visible at the base, and the yellow baroque Badenburg in frame at left, which corroborates the register's stated Badenburg connection. Survives a wide card crop; the tree holds the centre band.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by leaves that open bright translucent red in late April and darken toward black by August, standing about 25 metres south of the Badenburg bathing pavilion. It stands in Schlosspark Nymphenburg."
     },
     {
       "id": "muc_012",
@@ -478,7 +489,8 @@
       },
       "curation_status": "flagged",
       "notes": "The 180-year figure comes from baumkunde.de register entry 4054, a community-compiled German tree register, used here as a lead and named as such in the story rather than as an authority; the city ordinance carries no age column. Its coordinates (48.15457, 11.49279) fall about 33 m from the ordinance's, which independently corroborates the pin. Flagged because the only numeric age is volunteer-sourced. Photo viewed directly at 1280px before approval and run through the Cadiz test deliberately, since it is a bare winter shot: it is daylight and in colour, not black and white, with blue sky, warm brown far bank and ice on the lake. The tree fills the left and centre of the frame with trunk and full crown readable, a bench at its base for scale and the Badenburg visible across the water. It survives a wide card crop because the trunk and the heavy lateral limbs sit in the centre band. Approved. The bare silhouette best_time is the register's own stated reason for protection, not an invented peak.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by a trunk leaning hard over the water with its heaviest limbs thrown sideways rather than up, a bench underneath facing the Monopteros. It stands on the Badenburger See shore, Schlosspark Nymphenburg."
     },
     {
       "id": "muc_013",
@@ -511,7 +523,8 @@
       },
       "curation_status": "flagged",
       "notes": "Named 'of the Amalienburg' deliberately: muc_006 is already 'The Fern-leaved Beech', in the Englischer Garten, and two entries cannot share a name. Same species, different tree, roughly 7 km apart. The 180-year figure and the vitality note come from baumkunde.de register entry 4055, a community-compiled German register, used as a lead and attributed in the story rather than treated as authority; the city ordinance carries no age column. Its coordinates (48.15538, 11.50030) fall about 15 m from the ordinance's, independently corroborating the pin, and its 2019 condition note is the only vitality evidence available for any tree in this cluster. Photo viewed directly at 1280px before approval: daylight, colour, the tree fills the frame with the smooth silvery trunk running the full height and the finely cut foliage readable, path and boulders at the base for scale. Survives a wide card crop, trunk squarely in the centre band. Approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by leaves shredded into narrow ribbons, with the odd branch reverting to ordinary broad beech leaves, standing alone at a path fork. It stands about 50 metres south of the Amalienburg, Schlosspark Nymphenburg."
     },
     {
       "id": "muc_014",
@@ -541,7 +554,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age undated and no second source beyond the ordinance itself, so flagged. The 120-200 range is bracketed from the cultivar's introduction date and Sckell's 1799-1823 landscaping, not measured; baumkunde.de has no entry for this tree. Photo deliberately left missing rather than filled. Three candidates exist on Wikimedia Commons and all three were checked: the register-linked 'Haengebuche im Schlosspark Nymphenburg.jpg' was viewed directly at 1280px and fails the Cadiz standard, being a close-up shot looking up into the canopy with no trunk base, no whole-tree shape and no sense of scale, plus a painted red heart on one limb; the other two ('Unter der Haengebuche', 'Laub der Haengebuche') are by the same photographer and are respectively an under-canopy and a foliage close-up, failing the same way. An honest gap beats a mediocre photo. Worth re-hunting when someone photographs this tree whole.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the beech whose limbs arch out and fall to the ground, closing around a hollow space you can walk into. It stands just south of the Schwanenbrücke, Schlosspark Nymphenburg."
     },
     {
       "id": "muc_019",
@@ -567,7 +581,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "transport": ""
+      "transport": "",
+      "how_to_recognise": "You can recognise it as the American ash on the green strip, a species Munich calls rare here, with a crown that comes into leaf later and drops earlier than its neighbours. It stands on the green strip at Maximiliansplatz."
     },
     {
       "id": "muc_020",
@@ -665,7 +680,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "transport": ""
+      "transport": "",
+      "how_to_recognise": "You can recognise it by a wide, heavily pruned crown built for shade, the type of lime once used as a village court tree, standing on open ground. It stands in the Englischer Garten."
     },
     {
       "id": "muc_023",
@@ -795,7 +811,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by a lopsided leaf base, one half running further down the stalk than the other, standing apart from the park's 1911 lime plantings. It stands in the Luitpoldpark."
     },
     {
       "id": "muc_027",
@@ -822,7 +839,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by thick, deeply ridged corky bark that dents under a thumb and springs back, its inner bark a startling sulphur yellow beneath. It stands in the Luitpoldpark, about 200 metres from the park's protected hackberry."
     },
     {
       "id": "muc_028",
@@ -891,7 +909,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as a horse chestnut given open ground on every side, growing into a full dome rather than the half-crown most street trees end up with. It stands where Sommerstraße meets Edlingerstraße, in the Au."
     },
     {
       "id": "muc_030",
@@ -1047,7 +1066,8 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the lime growing on the working grounds of the Nymphenburg Porcelain Manufactory, close enough to the palace park's other protected trees for a short walk between them. It stands at Nördliches Schlossrondell 8."
     },
     {
       "id": "muc_035",
@@ -1084,7 +1104,8 @@
         ],
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the one tree on this stretch of shopfronts and institutes with a crown worth standing under, a mountain species out of place on a flat gravel plain. It stands at Theresienstraße 90, Maxvorstadt."
     },
     {
       "id": "muc_036",
@@ -1120,7 +1141,8 @@
         ],
         "label": "May, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "how_to_recognise": "You can recognise it by a crown that overtops every other tree on the square, the one to look for among several. It stands on Gollierplatz, in the Westend."
     },
     {
       "id": "muc_037",
@@ -1324,7 +1346,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by white sap bleeding from a snapped leaf stalk, the trick that tells it apart from a sycamore maple, and by a crown large enough to define the whole square. It stands on Mondstraße, Untergiesing."
     },
     {
       "id": "muc_043",
@@ -1382,7 +1405,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by a trunk base flaring out into wide, chalice-shaped buttresses at ground level, wider than the crown above suggests. It stands at the pond on Muttenthalerstraße, Solln."
     },
     {
       "id": "muc_045",
@@ -1440,7 +1464,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the lime the city says shapes both the street and the town around it, on the old road that once ran west out of Munich toward Landsberg. It stands at Landsberger Straße 486, Pasing."
     },
     {
       "id": "muc_047",
@@ -1515,7 +1540,8 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by dark, almost black-green foliage that holds its colour through winter, the only colour on the street in the dead of the year. It stands on Laimer Kirchweg."
     },
     {
       "id": "muc_049",
@@ -1554,7 +1580,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by a trunk 4.2 metres round hiding behind a tennis club with no sign pointing to it, one of the largest red oaks in Munich. It stands in Hartmannshofer Park, about 100 metres north of the Fasanerie restaurant."
     }
   ]
 }
