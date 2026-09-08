@@ -1,0 +1,62 @@
+{
+  "city": "Borculo",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Borculo maps one tree, out at the hamlet of Heure on the Beekvliet estate: the thickest elm in the Netherlands. It is a fladderiep, a European white elm, a species markedly less susceptible to the disease that killed most of the country's other elms, and at nearly two centuries it still carries a full crown. The base is the part to look at, where the roots flare into deep plank buttresses. The estate is private and the owner lets people come to the tree.",
+  "meta_description": "The thickest elm in the Netherlands stands at Heure near Borculo: a European white elm that outlived the disease that took the rest.",
+  "question_meta": "The oldest tree mapped at Borculo is the white elm at Heure, roughly 175 to 195 years old and called the thickest elm in the country.",
+  "question_answer": "The oldest tree mapped at Borculo is the Elm of Heure, a European white elm of roughly 175 to 195 years standing on the Beekvliet estate at the hamlet of Heure. Both bomenbieb and the national register of monumental trees call it the thickest elm in the Netherlands, though neither publishes a girth for it. It branches low and shows the deep plank buttresses typical of the species where the trunk meets the ground.",
+  "question_context": "The elm is dated by planting band rather than by measurement, as nearly everything in the Dutch national register is: somewhere in the first half of the nineteenth century, which puts it at roughly 175 to 195 years. The superlative is better sourced than the age. Both bomenbieb and the register call it the thickest elm in the country, and both leave the girth field empty, so the claim is theirs and no published number stands behind it. A reader with a tape measure could settle that in a minute, and we would like the figure. Species matters more here than it usually does. Most Dutch elms were field elms and hybrids planted along roads and canals, and Dutch elm disease removed them at scale from the 1920s onward. The European white elm, fladderiep in Dutch, is markedly less susceptible, which is why the largest surviving elms in the country tend to be this species rather than the ones that were planted in the greatest numbers. The tree stands on private estate land whose owner allows visitors to it, and the register records it as both visitable and visible.",
+  "hero_tree_id": "bcl_001",
+  "oldest_tree_id": "bcl_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree at Borculo?",
+      "a": "The Elm of Heure, a European white elm of roughly 175 to 195 years on the Beekvliet estate, called the thickest elm in the Netherlands by both bomenbieb and the national register."
+    },
+    {
+      "q": "Why did this elm survive Dutch elm disease?",
+      "a": "Because of what it is. It is a European white elm, fladderiep in Dutch, a species the national register notes is markedly less susceptible than the field elms and hybrids that were planted along Dutch roads and canals and that the disease removed at scale."
+    },
+    {
+      "q": "How thick is it?",
+      "a": "Nobody has published a figure. Both sources call it the thickest elm in the country and neither records a girth, which is an odd gap under a national superlative. If you measure it, tell us and the number goes on the page."
+    },
+    {
+      "q": "Can I visit it?",
+      "a": "Yes. The tree stands on the private Beekvliet estate at Heure and the owner allows visitors to it; the register records it as visitable and visible. It is not open parkland, so go to the tree and not wandering. There is no station nearby, so it is a drive or a bike ride from Borculo or Eibergen."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bcl_001",
+      "name": "The Elm of Heure",
+      "species": "European White Elm (Ulmus laevis)",
+      "age_estimate": "roughly 175 to 195 years",
+      "age_min": 175,
+      "age_max": 195,
+      "location": {
+        "address": "Heure 5, Landgoed Beekvliet, Heure",
+        "latitude": 52.122941,
+        "longitude": 6.503955,
+        "neighbourhood": "Heure, a hamlet of Borculo, municipality of Berkelland"
+      },
+      "story": "The thickest elm in the country is not the kind of elm that died.\n\nDutch elm disease went through the Netherlands and took out most of what the word refers to here, avenue after avenue of them. This tree is a fladderiep, a European white elm, and the national register notes that the species is markedly less susceptible than the elms that were planted everywhere else. That is most of the reason one can be nearly two centuries old and still carrying a full crown.\n\nBoth the register and bomenbieb call it the thickest elm in the Netherlands. Neither of them records a girth, which is an odd gap to leave under a national superlative, so treat the claim as theirs and bring a tape measure if you have one. Send us the number and it goes on the page.\n\nLook at the base rather than the crown. White elm throws plank buttresses, deep-grooved fins of root flaring out where the trunk meets the ground, the same trick the black poplar uses to stay upright on a soaked riverbank in a gale. This one branches low as well, so the whole structure of it sits at eye level.\n\nIt stands at Heure, a hamlet on the Beekvliet estate. The land is private and the owner lets people come to the tree.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/fladderiep-heure/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1685088"
+      ],
+      "access": "The tree stands on the private Beekvliet estate and the owner allows visitors to it; the national register records it as both visitable and visible. It is not open parkland, so this is a walk to the tree rather than a wander through the grounds.",
+      "transport": "Heure, a hamlet of Borculo in the Achterhoek. There is no station nearby, so it is a drive or a bike ride out from Borculo or Eibergen.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the base, where deep fins of root flare out from the foot of the trunk, and by branches starting low down. It is the big elm at Heure on the Beekvliet estate.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

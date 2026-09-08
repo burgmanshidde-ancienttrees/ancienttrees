@@ -1,0 +1,62 @@
+{
+  "city": "Oostkapelle",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Oostkapelle maps the lime on the forecourt of Kasteel Westhove, in the dunes between the village and Domburg, which both the national register and bomenbieb call the oldest tree in Zeeland. How old is the open question. A board at the castle puts the planting between 1000 and 1400, the register proposes a planting after the late sixteenth-century rebuild, and no document settles it. The castle itself is documented from a charter of 1277 and is a youth hostel now. The tree is free to look at.",
+  "meta_description": "The oldest tree in Zeeland stands on the forecourt of Kasteel Westhove at Oostkapelle: a lime whose age nobody has ever settled. Free to see.",
+  "question_meta": "Oostkapelle's oldest tree is the lime at Kasteel Westhove, called the oldest in Zeeland, with two competing planting dates and no record.",
+  "question_answer": "The oldest tree in Oostkapelle is the Lime of Kasteel Westhove, on the forecourt of the castle in the dunes, which both bomenbieb and the national register of monumental trees call the oldest tree in Zeeland. Its age is genuinely disputed. An information board at the site gives a planting between 1000 and 1400; the register proposes instead that it went in after the castle was rebuilt in the late sixteenth century, which would make it roughly 400 to 450 years old. Neither figure rests on a planting record.",
+  "question_context": "Two ages circulate and this page keeps both, because there is nothing to choose between them beyond who is doing the estimating. The board at the castle claims a medieval planting, somewhere between 1000 and 1400, which would make the tree older than the first written mention of Westhove itself. The national register's own text offers the alternative that the lime was planted after the late sixteenth-century rebuild of the castle, roughly 400 to 450 years ago. No documented planting record exists for either, and the tree has never been cored. A third account, told locally and sourced nowhere, holds that the trunk standing today grew from the root of an older tree whose stem died, which would let both dates describe different things. What is documented is the ground. Westhove appears in a charter to Floris V in 1277, and it now houses a youth hostel in the dunes of Walcheren. The lime stands on the forecourt, braced with cables on all sides, and the grounds around it hold old oak avenues, ash, abele and a monumental sweet chestnut that still fruits.",
+  "hero_tree_id": "osk_001",
+  "oldest_tree_id": "osk_001",
+  "faq": [
+    {
+      "q": "How old is the lime at Kasteel Westhove?",
+      "a": "Nobody knows. A board at the castle gives a planting between 1000 and 1400. The national register proposes a planting after the late sixteenth-century rebuild, which would make it roughly 400 to 450 years old. Neither claim rests on a planting record."
+    },
+    {
+      "q": "Is it really the oldest tree in Zeeland?",
+      "a": "Both bomenbieb and the Bomenstichting's national register say so, and that is the strongest support the claim has. Given the state of the dating, read it as their claim rather than a measured fact."
+    },
+    {
+      "q": "Can I visit Kasteel Westhove?",
+      "a": "The tree yes, free, on the forecourt and in full view from the drive. The castle is a youth hostel, so the building itself is for guests."
+    },
+    {
+      "q": "What else grows in the grounds?",
+      "a": "The national register notes old oak avenues, ash and abele in the grounds, and a monumental sweet chestnut that still bears fruit."
+    }
+  ],
+  "trees": [
+    {
+      "id": "osk_001",
+      "name": "The Lime of Kasteel Westhove",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "disputed: a board at the castle gives a planting between 1000 and 1400, while the national register proposes a planting after the late sixteenth-century rebuild, roughly 400 to 450 years ago",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Duinvlietweg 8, Oostkapelle (Kasteel Westhove)",
+        "latitude": 51.570004,
+        "longitude": 3.521538,
+        "neighbourhood": "Oostkapelle, between the village and Domburg, Walcheren"
+      },
+      "story": "The oldest tree in Zeeland is either about four hundred years old or about a thousand, and nobody can prove either.\n\nAn information board at Kasteel Westhove puts the planting somewhere between 1000 and 1400. The national register offers a different reading: that the lime went in after the castle was rebuilt in the late sixteenth century, which would make it four hundred to four hundred and fifty. Neither figure rests on a planting record, because none exists. Both sources still call it the oldest tree in the province.\n\nThere is a third account, told locally and sourced nowhere, that the trunk standing today is a daughter grown up out of the root of the original after the first stem died. If that were true both dates could be right about different things, which is presumably why the story keeps going.\n\nThe castle behind it is at least documented. Westhove turns up in a charter to Floris V in 1277, was rebuilt in the late sixteenth century, and is a youth hostel in the dunes now.\n\nThe lime stands out on the forecourt, cabled on every side to hold what is left of it together. Around it are old oak avenues, ash, abele and a sweet chestnut that still fruits.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/linde-van-kasteel-westhove/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679500"
+      ],
+      "access": "Free to look at. The lime stands on the forecourt of Kasteel Westhove, which is now a youth hostel, and is in full view from the drive.",
+      "transport": "Between Oostkapelle and Domburg on Walcheren, Zeeland. Best reached by bike or car, roughly 20 minutes from Middelburg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the cables running out through the crown on every side. It is the big lime standing on the forecourt in front of Kasteel Westhove.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "city": "Giethoorn",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "The tree mapped here stands at Dwarsgracht, the hamlet next to Giethoorn, and it is holding up a house. Its roots have pushed the ground into a mound under the front of a farmhouse of 1820, which has stayed level while the stalls behind it sank into the peat. The house is called De Essenbelt, the ash mound. Both the national register and bomenbieb call this the most striking tree in the area and probably the thickest ash in Overijssel. You look at it from the path and the water.",
+  "meta_description": "At Dwarsgracht beside Giethoorn stands an ash whose roots hold up the front of a farmhouse of 1820, probably the thickest ash in Overijssel.",
+  "question_meta": "The tree mapped at Giethoorn is the ash of Dwarsgracht, roughly 195 to 215 years old, whose roots have raised the ground under a farmhouse.",
+  "question_answer": "The oldest tree mapped at Giethoorn is the Ash of Dwarsgracht, a European ash of roughly 195 to 215 years standing beside the farmhouse called De Essenbelt in the hamlet of Dwarsgracht, next to Giethoorn itself. Both bomenbieb and the national register of monumental trees call it the most striking tree in the area and probably the thickest ash in Overijssel. Its root system has raised a mound that holds up the front of the house.",
+  "question_context": "The age is a planting band from the national register rather than a measurement, which is how nearly every Dutch monumental tree is dated: roughly 195 to 215 years, so the tree is of the same generation as the farmhouse of 1820 beside it, without either fact dating the other. The provincial superlative is the register's own and is hedged in its own words: probably the thickest ash in Overijssel, which is a claim about a province rather than the country, and nobody has published a girth for it. What the register describes in detail is the relationship between the tree and the building. The roots have pushed up a substantial mound, the front of the house sits on it and has stayed level, and the stalls at the back have sunk, so recent restoration work on the farmhouse was what kept it from splitting in two. Dwarsgracht is part of the Giethoorn cluster in northwest Overijssel, peat country where the canals came first and the roads largely never arrived. The house is private and worked, and the tree is looked at from the public path and the water.",
+  "hero_tree_id": "ghn_001",
+  "oldest_tree_id": "ghn_001",
+  "faq": [
+    {
+      "q": "Is the tree in Giethoorn itself?",
+      "a": "No. It stands in Dwarsgracht, the hamlet immediately next to Giethoorn, reached by the same paths, punts and cycle routes."
+    },
+    {
+      "q": "Is it really holding up the house?",
+      "a": "That is what the national register describes. The root system has raised a mound under the front of the farmhouse, which has stayed level while the stalls at the rear sank, and restoration work on the building was what stopped it splitting along the line between the two."
+    },
+    {
+      "q": "How thick is it?",
+      "a": "No girth has been published. Both sources call it probably the thickest ash in Overijssel, a provincial claim rather than a national one. If you measure it, tell us."
+    },
+    {
+      "q": "Can I walk up to it?",
+      "a": "No. De Essenbelt is a private working farmhouse. The register records the tree as visible but the site as not enterable, so this is a look from the public path and the water."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ghn_001",
+      "name": "The Ash of Dwarsgracht",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "roughly 195 to 215 years",
+      "age_min": 195,
+      "age_max": 215,
+      "location": {
+        "address": "Dwarsgracht 27, Dwarsgracht (the De Essenbelt farmhouse)",
+        "latitude": 52.725447,
+        "longitude": 6.035281,
+        "neighbourhood": "Dwarsgracht, beside Giethoorn, northwest Overijssel"
+      },
+      "story": "This ash is holding up a farmhouse.\n\nThe roots have pushed the ground into a mound under the front of the building, which has stayed level while the stalls at the back sank into the peat. Restoration work on the house is what stopped it splitting in two along the line between the risen part and the sunk part. The house is called De Essenbelt, which means the ash mound.\n\nIt was built in 1820. The tree is banded at roughly 195 to 215 years, so the same generation, though neither fact dates the other. Both bomenbieb and the national register call it the most striking tree in the area and probably the thickest ash in Overijssel, a provincial claim rather than a national one, and neither publishes a girth.\n\nDwarsgracht belongs to the Giethoorn cluster, peat country where the canals came first and the roads largely never arrived. The ground is soft and wet, buildings go up on whatever will bear them, and a big tree next to a house is not a neutral neighbour. Here it turned out to be the reliable half of the arrangement.\n\nYou look at it from the path and the water. The farm is private and worked, so this one is a look rather than a visit.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/es-dwarsgracht/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683405"
+      ],
+      "access": "Free. The ash stands beside De Essenbelt, a private working farmhouse, and is visible from the public path and the water; the grounds are not open, so this is a look from outside.",
+      "transport": "Dwarsgracht, immediately next to Giethoorn in northwest Overijssel, reached by the same paths, punts and cycle routes as Giethoorn itself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the mound its roots have raised under the front of the farmhouse called De Essenbelt. It is the big ash standing against that house, on the water at Dwarsgracht.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

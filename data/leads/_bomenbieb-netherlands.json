@@ -554,7 +554,7 @@
       "nearest_ours_km": 1.72,
       "nearest_ours": "ams_006 The Olifantsiep (Amsterdam)",
       "status": "lead",
-      "verify_note": "Checked 2026-09-07: genuinely new (1.72km from nearest published tree, Amsterdam). Searched for a second independent source (Amsterdam municipal bijzondere-bomen map, Bomenstichting Amsterdam monumental-trees PDF walking guide, general web) and found none naming this specific tree at Middenweg 116/Frankendael; only bomenbieb.nl describes it. Stays a lead pending a second source (e.g. reading the Amsterdam bomen_bijzonder ArcGIS layer directly, which was not reached this pass)."
+      "verify_note": "Checked 2026-09-07: genuinely new (1.72km from nearest published tree, Amsterdam). Searched for a second independent source (Amsterdam municipal bijzondere-bomen map, Bomenstichting Amsterdam monumental-trees PDF walking guide, general web) and found none naming this specific tree at Middenweg 116/Frankendael; only bomenbieb.nl describes it. Stays a lead pending a second source (e.g. reading the Amsterdam bomen_bijzonder ArcGIS layer directly, which was not reached this pass). | Re-checked 2026-09-08: still only one source (bomenbieb). Tried Amsterdam's own bijzondere-bomen ArcGIS/open-data map (maps.amsterdam.nl/bomen_bijzonder) to find the FeatureServer endpoint via search; could not locate the direct REST path in two attempts (search results point at the map UI, not a queryable endpoint). No entry found in the Amsterdam SD Oost CBH advice PDF search snippet either (PDF too large to fetch whole). Stays a lead pending either a working Amsterdam ArcGIS query or a Bomenstichting Amsterdam PDF walking-guide match."
     },
     {
       "name": "juliana trompetboom",
@@ -806,7 +806,7 @@
       "nearest_ours_km": 6.37,
       "nearest_ours": "vnl_003 The Sequoia of the Toernooiveld (Venlo)",
       "status": "lead",
-      "verify_note": "Checked 2026-09-07: espalier pear (leipeer) pergola along the inside of an old monastery wall (Ursulinenklooster de Bisweide, now an elderly-care facility) on Kloosterstraat. bomenbieb.nl says the oldest trees are over a century old and the garden gate is open to the public. Searched for a second source naming this specific tree/wall: de Bomenstichting's own 'Bomen van de Ereklasse: 10 bijzondere bomen in Limburg' page names other regional espalier pears (Mechelen, Ransdaal, Beesel, Meerlo) but not Grubbenvorst; nl.wikipedia's Ursulinenklooster de Bisweide article confirms the convent's history and current use as a care centre but says nothing about public access to the grounds or about the pear trees. Left as a lead: only one directly-verifiable source for the tree itself, and access is only bomenbieb's own claim of an open gate on a now-care-facility site, not independently confirmed. A future pass could settle access via OSM (the Ypres technique) or by checking the care facility's own visitor information."
+      "verify_note": "Checked 2026-09-07: espalier pear (leipeer) pergola along the inside of an old monastery wall (Ursulinenklooster de Bisweide, now an elderly-care facility) on Kloosterstraat. bomenbieb.nl says the oldest trees are over a century old and the garden gate is open to the public. Searched for a second source naming this specific tree/wall: de Bomenstichting's own 'Bomen van de Ereklasse: 10 bijzondere bomen in Limburg' page names other regional espalier pears (Mechelen, Ransdaal, Beesel, Meerlo) but not Grubbenvorst; nl.wikipedia's Ursulinenklooster de Bisweide article confirms the convent's history and current use as a care centre but says nothing about public access to the grounds or about the pear trees. Left as a lead: only one directly-verifiable source for the tree itself, and access is only bomenbieb's own claim of an open gate on a now-care-facility site, not independently confirmed. A future pass could settle access via OSM (the Ypres technique) or by checking the care facility's own visitor information. | Re-checked 2026-09-08: found a strong NEW lead via the LRMB register (not previously used by this pass) - three closely-spaced register entries at Ursulinenweide 5, Grubbenvorst (nr 1685016 zomereik 132m, nr 1685017 treures 62m, nr 1685018 peer 101m), all on 'terrein van voormalig klooster, nu Stichting La Providence', all visitable: ja / visible mostly ja. This is likely the SAME convent garden bomenbieb describes (Ursulinenklooster de Bisweide) but the register's own coordinates sit 60-130m from bomenbieb's pin and from each other, so which exact pear tree (of possibly several) bomenbieb means is not yet certain. Two sources now exist for the SITE (a convent garden with old espalier trees, publicly visitable per the register despite being on Stichting La Providence care-home grounds), but not confidently for the SPECIFIC pear bomenbieb names. A future pass should treat Ursulinenweide 5 as a small register-led cluster (oak + pear + a 'treures' possibly the same espalier feature) rather than one lone tree, and pin from the register's own coordinates rather than bomenbieb's."
     },
     {
       "name": "wonderboom zeisterbos",
@@ -899,9 +899,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 7.65,
       "nearest_ours": "ede_004 The Oak in the Hoekelum Meadow (Ede)",
-      "status": "lead",
+      "status": "delivered as rhe_002 (Rhenen)",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "heilige eik den hout",
@@ -994,9 +995,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 10.3,
       "nearest_ours": "arn_002 The Dalweg Oak (Arnhem)",
-      "status": "lead",
+      "status": "delivered as arn_039 (Arnhem)",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "kasteellinden nijenrode",
@@ -1025,7 +1027,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 11.22,
       "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-      "status": "lead"
+      "status": "delivered as dev_012 (Deventer)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "hunnebedboom midlaren",
@@ -1039,7 +1042,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 11.77,
       "nearest_ours": "gro_005 The Groenestein Plane (Groningen)",
-      "status": "lead"
+      "status": "delivered as gro_021 (Groningen)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "dijklinde schalkwijk tull en t waal",
@@ -1053,21 +1057,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 11.91,
       "nearest_ours": "utr_017 The Markiezeneik of Amelisweerd (Utrecht)",
-      "status": "lead"
-    },
-    {
-      "name": "zwarte walnoot fraeylemaborg",
-      "source": "https://bomenbieb.nl/bijzondere-bomen/zwarte-walnoot-fraeylemaborg/",
-      "lat": 53.215264,
-      "lng": 6.810407,
-      "place": "Slochteren",
-      "address": "Hoofdweg 30",
-      "planted": "1830-1840",
-      "species_nl": "zwarte-walnoot",
-      "alive_per_source": "Ja",
-      "nearest_ours_km": 12.0,
-      "nearest_ours": "gro_001 The Linden of De Rollen (Groningen)",
-      "status": "lead"
+      "status": "delivered as utr_034 (Utrecht)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "plataan oldenaller putten",
@@ -1083,7 +1074,8 @@
       "nearest_ours": "ame_005 The Weeping Silver Lime of Park Schothorst (Amersfoort)",
       "status": "lead",
       "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1682066 (1m from bomenbieb's pin) matches exactly but records 'visitable: nee' for this specific plane tree, described as standing 'links voor het koetshuis, binnenterrein Oldenaller' (in front of the coach house, on the estate's INNER/private terrain). A different maple 29m away on the same estate is marked visitable: ja. Two sources now agree the tree exists (bomenbieb + LRMB nr 1682066), but hard rule 10 access is unresolved: the register itself says this specific tree cannot be visited. Stays a lead pending explicit access evidence (open days, a public path per the OSM/Ypres technique) rather than shipping a tree the register itself flags as inaccessible."
     },
     {
       "name": "hemelboom zutphen",
@@ -1097,7 +1089,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 13.26,
       "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-      "status": "lead"
+      "status": "delivered as dev_011 (Deventer)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "bonte esdoorn coevorden",
@@ -1111,9 +1104,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 13.32,
       "nearest_ours": "emm_007 The Oak of Erica (Emmen)",
-      "status": "lead",
+      "status": "delivered as emm_008 (Emmen)",
       "species": "Maple (Acer sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "zomereik beilen",
@@ -1127,7 +1121,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 13.47,
       "nearest_ours": "ass_009 The Oak of Port Natal (Assen)",
-      "status": "lead"
+      "status": "delivered as ass_010 (Assen)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "leipeer kerk avezaath",
@@ -1141,7 +1136,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 14.76,
       "nearest_ours": "oss_002 The Lime of the Old School (Oss)",
-      "status": "lead"
+      "status": "lead",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entries at Huize Landzicht, Daver 13, Kerk-Avezaath (nr 1681229 beech 55m, nr 1681230 pear 56m - likely the tree bomenbieb means, nr 1688151 lime 73m) exist and corroborate the SITE, but access is 'onbekend'/'nee' across the board (private house grounds). Two sources for existence now, still no access evidence. Stays a lead."
     },
     {
       "name": "adoptie eik amerongen",
@@ -1217,7 +1213,8 @@
       "nearest_ours": "lon_006 The Mulberry of Charlton House (London)",
       "status": "lead",
       "species": "Hornbeam (Carpinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08: this candidate is in ENGLAND (Lullingstone, Kent), not the Netherlands, so the Dutch LRMB register does not apply and cannot corroborate it. Found a possible match via the Sevenoaks Society's 'Remarkable Trees of Sevenoaks' photo exhibition page, which lists a 'Dancing Hornbeam' among visitor-voted favourites, but the only description given ('the wizened face on a sweet chestnut') is confusing and does not clearly confirm species, location or that this is the same tree bomenbieb describes. Lullingstone Country Park is independently documented (Kent Downs / Historic England context) as holding 300+ veteran oak, beech, ash, hornbeam and sweet chestnut trees up to roughly 800 years old, which makes the AREA a strong candidate for a future dedicated pass, but this specific named tree could not be confirmed to the two-source bar in the time available. Stays a lead; a future pass should search Kent Wildlife Trust, the Woodland Trust's Ancient Tree Inventory (note: CLAUDE.md gates Woodland Trust data without written permission) and local Kent press rather than relying on the Sevenoaks Society page alone."
     },
     {
       "name": "zwarte moerbei wijk bij duurstede",
@@ -1233,7 +1230,8 @@
       "nearest_ours": "utr_001 The Uithof Linden (Utrecht)",
       "status": "lead",
       "species": "Mulberry (Morus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1681282 (3m match) corroborates existence at Volderstraat 15/17 (bomenbieb gives 'Volderpark 15', likely the same address) but gives no age/history ('Leeftijd onbekend' in the register too) and visitable/visible are 'onbekend'/'nee'. An ordinary black mulberry with no strong individual story; 16.81km from Utrecht is just past this pass's join threshold and it does not clear the single-tree worth-the-trip bar on its own. Stays a lead."
     },
     {
       "name": "zomerlinde wedde",
@@ -1247,7 +1245,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 16.99,
       "nearest_ours": "hed_001 The Riesenlinde zu Heede (Giant Lime of Heede) (Heede)",
-      "status": "lead"
+      "status": "lead",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1679757 (10m match) confirms this is a SINGEL (ring) of pollarded limes around the Burcht van Wedde, not one tree - 7 trees re-pollarded together in 2004 and again in 2020, most hollow. This reads as an ensemble around a small historic castle mound rather than a single collectible point; per hard rule ('an avenue or a whole wood is blocked' unless a compact famous ensemble with one obvious place to stand), a future pass should judge whether the Burcht itself is the 'one place to stand'. 16.99km from Groningen, too far to join. Pairs with zilverlinde blijham (5km away) as a possible future 'Westerwolde' micro-cluster with more candidates. Left as a lead rather than delivered, pending that ensemble judgement."
     },
     {
       "name": "dikke boom verwolde",
@@ -1291,7 +1290,8 @@
       "nearest_ours": "hed_001 The Riesenlinde zu Heede (Giant Lime of Heede) (Heede)",
       "status": "lead",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1679751 (8m match) strongly corroborates - one of the thickest silver limes in the Netherlands, with a dramatic and well-documented history (a WWII bomber crashed into the adjacent church tower in 1941, killing its crew who are buried nearby; lightning strike 1955; storm damage 2013 requiring pollarding in 2014; further breakage recorded in 2026; recently redesignated as a managed 'veteran tree' by the municipality, Bomenstichting and arborists working together). This is a genuinely good, well-sourced tree, but alone (19.11km from any of our cities, cross-border-adjacent) it is a strong regional story rather than a clear national why-travel-for-this-one draw. RECOMMEND: hold as a lead paired with zomerlinde wedde (5km away) for a future dedicated Westerwolde-area pass rather than force it into a single-tree page now; if that pass finds 2 more candidates it could become a proper small place."
     },
     {
       "name": "hollandse iep dokkum",
@@ -1320,7 +1320,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 19.82,
       "nearest_ours": "utr_032 The Black Walnut of the Tolsteegbrug (Utrecht)",
-      "status": "lead"
+      "status": "lead",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1678530 (3m match) corroborates - described as possibly the thickest walnut in the Dutch river landscape, on the Lekdijk. Decent tree, but ordinary compared to the stronger candidates in this batch, and 19.82km from Utrecht is past the join range. Stays a lead."
     },
     {
       "name": "duizendjarige eik altrier",
@@ -1379,7 +1380,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 20.62,
       "nearest_ours": "ens_007 The Plane of 't Zwik (Enschede)",
-      "status": "lead"
+      "status": "lead",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1685101 (6m match) corroborates existence and gemeente ownership, visitable/visible ja, but the register's own history field is empty ('onbekend') and gives no distinguishing story beyond species (a second, rarer riverbank elm, same species as the much better-documented Elm of Heure delivered this pass). 20.62km from Enschede. Stays a lead; could pair with the Elm of Heure as a 'rare elm' theme in a future pass but does not clear the bar alone."
     },
     {
       "name": "linde van sambeek",
@@ -1410,7 +1412,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 22.09,
       "nearest_ours": "lee_004 The Plane of the Old City Cemetery (Leeuwarden)",
-      "status": "lead"
+      "status": "lead",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1677523 (23m match) confirms this is explicitly a LINDENLAAN (lime avenue) leading via a landmark forked wooden bridge to the Fogelsanghstate manor house (now a museum). Per the hard rule, an avenue is blocked as not one collectible point unless it is a compact, famous ensemble with one obvious place to stand; this avenue leads to a museum with paid entry, which could arguably be that one place, but that judgement should be made by someone weighing the museum-ticket angle, not defaulted here. Left as a lead (not delivered, not blocked outright) pending that call."
     },
     {
       "name": "es dwarsgracht",
@@ -1424,7 +1427,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 22.5,
       "nearest_ours": "zwo_007 The Oak of the Kranenburg Cemetery (Zwolle)",
-      "status": "lead"
+      "status": "delivered as ghn_001 (Giethoorn)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "schietwilg noordoostpolder",
@@ -1438,7 +1442,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 23.11,
       "nearest_ours": "zwo_005 The Gate Beech of the Park Eekhout (Zwolle)",
-      "status": "lead"
+      "status": "lead",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1688892 (5m match) confirms it as a 'herdenkingsboom' (commemorative/memorial tree), reason field literally 'herdenkingsboom', planted 1940-1950 (bomenbieb says 1942, the year the Noordoostpolder was drained). No history text in the register beyond that classification, and no source found this pass that confirms what specifically it commemorates or that it was literally the first tree planted in the reclaimed polder (that framing was my own inference, not a sourced claim - flagging so a future pass does not repeat it as fact). At roughly 84 years old it is young for this project and the single sourced fact (memorial designation) is thin on its own. Stays a lead; a future pass should search Rijkswaterstaat / Nieuw Land Erfgoedcentrum sources for what the memorial actually marks before this could ship."
     },
     {
       "name": "ginkgo harderwijk",
@@ -1452,9 +1457,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 24.44,
       "nearest_ours": "ame_005 The Weeping Silver Lime of Park Schothorst (Amersfoort)",
-      "status": "lead",
+      "status": "delivered as hdw_001 (Harderwijk)",
       "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "zwarte populier heiligerlee",
@@ -1470,7 +1476,8 @@
       "nearest_ours": "gro_001 The Linden of De Rollen (Groningen)",
       "status": "lead",
       "species": "Poplar (Populus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1686433 (6m match) corroborates - planted 1873 alongside the Graaf Adolfmonument, commemorating the Slag bij Heiligerlee (1568), the opening battle of the Dutch Revolt/Eighty Years' War. The MONUMENT is nationally significant; the poplar planted beside it (per local information only, not an official planting record) is not itself old enough or distinctive enough to be the reason someone travels (roughly 150 years, ordinary species). 26.09km from Groningen, too far to join. Stays a lead; if this pass or a future one finds more monumental-trees near the battlefield/monument it could become a themed entry, but one ordinary poplar does not clear the bar alone."
     },
     {
       "name": "kroezeboom ruurlo",
@@ -1499,7 +1506,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 27.83,
       "nearest_ours": "ens_001 The Wellingtonia of the Ledeboerpark (Enschede)",
-      "status": "lead"
+      "status": "delivered as bcl_001 (Borculo)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "klasema boom lelystad",
@@ -1531,22 +1539,6 @@
       "status": "lead"
     },
     {
-      "name": "hulst zelhem",
-      "source": "https://bomenbieb.nl/bijzondere-bomen/hulst-zelhem/",
-      "lat": 52.017889,
-      "lng": 6.349271,
-      "place": "Zelhem",
-      "address": "Rietgeld",
-      "planted": "1830-1840",
-      "species_nl": "hulst",
-      "alive_per_source": "Ja",
-      "nearest_ours_km": 29.2,
-      "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-      "status": "lead",
-      "species": "Holly (Ilex sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "oosterse plataan zierikzee",
       "source": "https://bomenbieb.nl/bijzondere-bomen/oosterse-plataan-zierikzee/",
       "lat": 51.65041,
@@ -1560,7 +1552,8 @@
       "nearest_ours": "roo_010 The Dutch Lime of Emile van Loonpark (Roosendaal)",
       "status": "lead",
       "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1680306 (6m match) confirms existence at the Algemene Begraafplaats de Zille cemetery, Zierikzee, but its own history field is empty ('onbekend'). NOTABLE FINDING: two more monumental trees sit in the SAME cemetery per the register - a weeping silver lime 16m away (nr 1691481) and a Caucasian wingnut 19m away (nr 1680307) - meaning this one cemetery alone holds a small three-tree cluster. Zierikzee is a historic walled Zeeland town with no published page. None of the three trees individually carries a strong enough story to clear the single-tree bar (all three history fields are largely empty), and three trees is still below the four-tree floor for a full city page. RECOMMEND: hold all three as leads and flag Zierikzee (and its cemetery specifically) as a promising target for a dedicated future pass rather than deliver a thin, story-less entry now."
     },
     {
       "name": "iep schiermonnikoog",
@@ -1576,7 +1569,8 @@
       "nearest_ours": "gro_004 The Duck's Foot Tree of Noorderplantsoen (Groningen)",
       "status": "lead",
       "species": "Elm (Ulmus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08 via LRMB: closest match is actually a horse chestnut 42m away (nr 1685272); the elm bomenbieb names is a second match 47m away (nr 1685271, 'Hollandse iep Willemshof Schiermonnikoog'), and a THIRD similar elm sits 69m away at Kerklaantje (nr 1690491). All are near the village hall (gemeentehuis) on this car-free Wadden Sea island, none has a distinguishing history in the register ('onbekend'), and with three near-identical candidates in one small area it is unclear which exact tree bomenbieb's photo/description matches (a held-not-approved situation if this were a photo). Schiermonnikoog's status as a unique island destination is a real asset (comparable to the Tenerife precedent), but this pass did not find a single specimen with a strong enough individual story to lead a page. Stays a lead; recommend a dedicated island pass (like Tenerife) rather than forcing one of three near-identical elms into a page now."
     },
     {
       "name": "bruine beuk goes",
@@ -1592,7 +1586,8 @@
       "nearest_ours": "roo_010 The Dutch Lime of Emile van Loonpark (Roosendaal)",
       "status": "lead",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08: NO LRMB register match found within 150m of bomenbieb's coordinate (Van de Spiegelstraat 4, Goes), and no independent second source found via web search in two attempts (results returned bomenbieb.nl itself and unrelated copper-beech nursery/sales pages). Still only one source. Stays a lead pending a second source (try Goese Courant/PZC local newspaper archives, or the Zeeland provincial/municipal tree register if one exists separately from LRMB)."
     },
     {
       "name": "treurbeuk heinkenszand",
@@ -1606,7 +1601,8 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 43.4,
       "nearest_ours": "gnt_006 The Peace Oak of Vroonstalledries (Ghent)",
-      "status": "lead"
+      "status": "delivered as hkz_001 (Heinkenszand)",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     },
     {
       "name": "linde van kasteel westhove",
@@ -1620,9 +1616,10 @@
       "alive_per_source": "Ja",
       "nearest_ours_km": 44.64,
       "nearest_ours": "bge_003 Den Olifant (Bruges)",
-      "status": "lead",
+      "status": "delivered as osk_001 (Oostkapelle)",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "VERIFIED this pass (2026-09-08) and delivered to data/research/bomenbiebnetherlands-verified.json. See that file for the full record and container recommendation."
     }
   ],
   "blocked": [
@@ -1637,6 +1634,38 @@
       "source": "https://bomenbieb.nl/bijzondere-bomen/kroezeboom-ruurlo/",
       "place": "Ruurlo",
       "reason": "Stands in the private garden of a house (Villa Arcadia) at the Borculoseweg/Kroezelaan crossing. Visible from the public road but not on public ground; hard rule 10 excludes private houses and their grounds regardless of fame or visibility. Alive and recently restored (2023 cable/anchor replacement by Praktijk Centrum Bomen) after an October 2023 vehicle strike, so this is a location block, not a health block."
+    },
+    {
+      "name": "zwarte walnoot fraeylemaborg",
+      "source": "https://bomenbieb.nl/bijzondere-bomen/zwarte-walnoot-fraeylemaborg/",
+      "lat": 53.215264,
+      "lng": 6.810407,
+      "place": "Slochteren",
+      "address": "Hoofdweg 30",
+      "planted": "1830-1840",
+      "species_nl": "zwarte-walnoot",
+      "alive_per_source": "Ja",
+      "nearest_ours_km": 12.0,
+      "nearest_ours": "gro_001 The Linden of De Rollen (Groningen)",
+      "status": "blocked",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1680911 (2m match, exact tree) confirms it is the thickest black walnut in the Netherlands with a rich history (on the Fraeylemaborg estate, guyed with cables against a lean, torsion cracks in the trunk) - a genuinely excellent tree with two solid sources. BUT the register explicitly records 'visitable: nee, visible: nee' for this SPECIFIC tree, unlike two nearby Fraeylemaborg register trees (a maple and estate-moat limes, both 56-65m away) which ARE visitable. This reads as the walnut standing in a restricted part of the grounds the museum/estate does not open to visitors. Per hard rule 10, moved to blocked rather than delivered: a source stating a tree cannot be visited or seen is exactly the case the rule exists for. Worth revisiting if the Fraeylemaborg estate's own visitor information ever states otherwise."
+    },
+    {
+      "name": "hulst zelhem",
+      "source": "https://bomenbieb.nl/bijzondere-bomen/hulst-zelhem/",
+      "lat": 52.017889,
+      "lng": 6.349271,
+      "place": "Zelhem",
+      "address": "Rietgeld",
+      "planted": "1830-1840",
+      "species_nl": "hulst",
+      "alive_per_source": "Ja",
+      "nearest_ours_km": 29.2,
+      "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
+      "status": "blocked",
+      "species": "Holly (Ilex sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Checked 2026-09-08 via LRMB: register entry nr 1685037 (0m, exact match) confirms existence at Rietgeld 2, Zelhem, but explicitly records 'visitable: nee, visible: nee'. No access route or public vantage point found. Moved to blocked per hard rule 10."
     }
   ]
 }

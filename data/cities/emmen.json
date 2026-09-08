@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Two of the oaks here are growing at megalithic tombs, and one of them is growing inside one. The Hondsrug ridge that Emmen sits on carries the greatest concentration of hunebedden in the Netherlands, stone chambers built about five thousand years ago and covered with earth, and where the mounds were never ploughed out the trees came instead. Hunebed D43 is the only long grave in the country, 52 stones round a forty metre mound with two chambers in it. D42 has an enormous oak standing in the middle of the stones.",
-  "meta_description": "Seven remarkable trees around Emmen: two oaks at five-thousand-year-old megalithic tombs, one growing inside the stones, and a lime from about 1790.",
-  "question_meta": "Emmen's oldest tree is a lime at the Noordeind, banded 1750 to 1800 and possibly planted in 1790. Where it stands, and six more.",
+  "meta_description": "Eight remarkable trees around Emmen: two oaks at five-thousand-year-old tombs, one inside the stones, and a variegated maple at Coevorden.",
+  "question_meta": "Emmen's oldest tree is a lime at the Noordeind, banded 1750 to 1800 and possibly planted in 1790. Where it stands, and seven more.",
   "question_answer": "The oldest tree in Emmen is a Dutch lime at the Noordeind, opposite number 9, which the national register places in a planting band of 1750 to 1800 and suggests may have gone in around 1790. The Noordeind is the oldest part of Emmen, which began as an esdorp, a village organised around a shared arable field, on the southeastern shoulder of the Hondsrug. The characteristic Drenthe farmhouses that stood along it are largely gone. A lime at the heart of an old Drenthe village is not decoration: a village lime was a meeting place, a shade tree and often the point at which local business was done, which is why so many of them outlived the buildings around them.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. Two of these trees are dated far more loosely than they look, because their interest is not their age: the oaks at the hunebedden are recent by comparison with what they stand on, which is neolithic. Nothing on this page is anywhere near as old as the stones, and the pages say so rather than borrowing the tomb's age for the tree. That is the bridge claim this site is most careful about: two true facts standing next to each other do not make a third. Access is worth reading: several of these trees stand in front gardens and parish grounds that the register records as visitable but which are not public parks, so behave accordingly, and where a pin is marked approximate we know the site and not the trunk.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source for all but the Coevorden maple, which carries a second, so everything here is flagged. Two of these trees are dated far more loosely than they look, because their interest is not their age: the oaks at the hunebedden are recent by comparison with what they stand on, which is neolithic. Nothing on this page is anywhere near as old as the stones, and the pages say so rather than borrowing the tomb's age for the tree. That is the bridge claim this site is most careful about: two true facts standing next to each other do not make a third. Access is worth reading: several of these trees stand in front gardens and parish grounds that the register records as visitable but which are not public parks, so behave accordingly, and where a pin is marked approximate we know the site and not the trunk.",
   "hero_tree_id": "emm_002",
   "oldest_tree_id": "emm_001",
   "faq": [
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "The hunebedden and the Noordeind lime are open ground. The Rensenpark is a public park in the centre of Emmen. The trees at the Bonifatius parish centre in Nieuw-Schoonebeek and the two in village front gardens are recorded as visitable, but they are not parks; look from where you are welcome to stand."
+      "a": "The hunebedden and the Noordeind lime are open ground. The Rensenpark is a public park in the centre of Emmen. The trees at the Bonifatius parish centre in Nieuw-Schoonebeek and the two in village front gardens are recorded as visitable, but they are not parks; look from where you are welcome to stand. The variegated maple stands out in front of Kasteel Coevorden, now a hotel, and is in full view from the forecourt."
     }
   ],
   "trees": [
@@ -274,6 +274,36 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       }
+    },
+    {
+      "id": "emm_008",
+      "name": "The Variegated Maple of Coevorden Castle",
+      "species": "Sycamore 'Leopoldii' (Acer pseudoplatanus 'Leopoldii')",
+      "age_estimate": "roughly 135 to 145 years",
+      "age_min": 135,
+      "age_max": 145,
+      "location": {
+        "address": "Kasteel 29, Coevorden",
+        "latitude": 52.662404,
+        "longitude": 6.741973,
+        "neighbourhood": "Coevorden town centre, Kasteel Coevorden grounds"
+      },
+      "story": "From across the grounds this maple looks as though somebody is shining a light on it.\n\nThat is the cultivar. 'Leopoldii' is a sycamore whose leaves come out flecked and streaked with cream, yellow and pink instead of plain green, so a whole tree of it reads as permanently dappled. Nurseries pushed variegated forms hard in the nineteenth century, when one of them on a good lawn was a statement rather than a plant.\n\nThis one went into the ground between 1880 and 1890, on the most conspicuous spot at Kasteel Coevorden, and it still frames the view of the building.\n\nEverything around it has changed hands more often than the tree has. The municipality bought the castle in 1938, restoration began in 1968, and since 2014 it has been privately run as a hotel. The register notes that the maple's growing conditions actually improved after that last handover, which is not the usual direction of travel. Its crown carries cables as a precaution and the last inspection found no defects in it.\n\nThe castle is a hotel now. The maple stands out in front of it in full view, and the register still lists the municipality as its owner, which is a fair description of how a lot of Dutch castle grounds work.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/bonte-esdoorn-coevorden/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682295"
+      ],
+      "access": "Free to look at. The maple stands on open ground at Kasteel Coevorden, which is now a hotel, and is in full view from the forecourt.",
+      "transport": "In the centre of Coevorden, a short walk from the bus station, and about 15 km southeast of Emmen.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the leaves, splashed and streaked with cream rather than plain green. It is the maple on the open ground in front of Kasteel Coevorden.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

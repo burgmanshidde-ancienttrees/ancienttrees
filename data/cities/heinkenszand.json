@@ -1,0 +1,69 @@
+{
+  "city": "Heinkenszand",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "The weeping beech in the old churchyard at Heinkenszand hangs its branches to the ground in a curtain about twenty-four metres across, and you can walk in under it. The church's own sign calls it the largest weeping beech in the Netherlands; the national register commits only to probably the thickest in Zeeland. It was planted between 1860 and 1870, and its crown has since grown out over gravestones that were there first. The churchyard behind the Blasiuskerk is free and open.",
+  "meta_description": "A weeping beech at Heinkenszand hangs a curtain of branches 24 metres across over an old Zeeland churchyard. Free, and you can stand inside it.",
+  "question_meta": "Heinkenszand's mapped tree is the weeping beech behind the Blasiuskerk, planted 1860 to 1870, with a hanging crown 24 metres across.",
+  "question_answer": "The tree mapped at Heinkenszand is the Weeping Beech in the old churchyard of the Blasiuskerk, planted between 1860 and 1870 and so roughly 155 to 165 years old. Its branches hang to the ground in a crown about twenty-four metres across that you can walk in under. A sign at the church calls it the largest weeping beech in the Netherlands; the national register of monumental trees says only that it is probably the thickest in Zeeland.",
+  "question_context": "Two superlatives are attached to this tree and they are not the same size, so both are given here with the name of whoever makes them. The sign at the church claims the largest weeping beech in the Netherlands, a national claim with no published measurement behind it. The Bomenstichting's national register is more cautious and says probably the thickest in Zeeland, a provincial claim, hedged in its own wording. The measurement both agree on is the spread: a crown roughly twenty-four metres across, hanging to the ground in a dense curtain. The age is a planting band of 1860 to 1870, which makes the tree far younger than the ground under it. A church has stood on this spot since 1406, when the local lord Jan van Schengen built the first one in his castle garden, and that is the history of the site rather than of the beech. People of local standing were buried near the tree, and the crown has since grown out over some of the stones, so a few graves now lie inside the curtain. The churchyard is free and open.",
+  "hero_tree_id": "hkz_001",
+  "oldest_tree_id": "hkz_001",
+  "faq": [
+    {
+      "q": "Is it the largest weeping beech in the Netherlands?",
+      "a": "A sign at the church says so. The national register will only say it is probably the thickest in Zeeland, which is a provincial claim rather than a national one, and neither publishes a girth. Both claims are on this page because they are different claims."
+    },
+    {
+      "q": "Can you stand inside it?",
+      "a": "Yes. The branches hang to the ground in a crown about twenty-four metres across, and the space beneath is enclosed and dim. Some gravestones stand inside it, because the crown grew out over them."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Planted between 1860 and 1870 per the national register and bomenbieb, so roughly 155 to 165 years. The church on the site is far older, from 1406, which says nothing about the age of the tree."
+    },
+    {
+      "q": "Is the churchyard free to enter?",
+      "a": "Yes. It is the old burial ground behind the Blasiuskerk on the Kerkdreef, open ground and recorded as visitable in the national register. It is roughly 15 minutes from Goes by bike or car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hkz_001",
+      "name": "The Weeping Beech of Heinkenszand",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "roughly 155 to 165 years",
+      "age_min": 155,
+      "age_max": 165,
+      "location": {
+        "address": "Kerkdreef 6, Heinkenszand (churchyard of the Blasiuskerk)",
+        "latitude": 51.473105,
+        "longitude": 3.819336,
+        "neighbourhood": "Heinkenszand, Zeeland"
+      },
+      "story": "Walk in under this beech and you are standing in a room about twenty-four metres across.\n\nA weeping beech does not spread its branches so much as hang them. The crown comes down to the ground in a dense curtain, and the space inside it is dim, enclosed and quieter than the churchyard outside. The church's own sign calls this the largest weeping beech in the Netherlands. The national register is more careful and will say only that it is probably the thickest in Zeeland. Both claims are here because they are not the same claim, and the more modest one is the better sourced.\n\nThe graves came first. This is the old burial ground behind the Blasiuskerk, and several of the people lying nearest the tree were of local standing in their day. The crown has since grown out over their stones, so some of them are now inside the curtain, which was nobody's plan.\n\nThe beech was planted between 1860 and 1870, which makes it much younger than the ground it stands on. A church has been here since 1406, when the local lord Jan van Schengen built the first one in his castle garden. That is the site's history rather than the tree's. What the tree inherited was a piece of land nobody was ever going to build on.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/treurbeuk-heinkenszand/",
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682787"
+      ],
+      "access": "Free. The old churchyard behind the Blasiuskerk on the Kerkdreef, open ground, recorded as visitable in the national register.",
+      "transport": "In the centre of Heinkenszand in Zeeland. Best reached by bike or car, roughly 15 minutes from Goes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the curtain of branches hanging to the ground, about twenty-four metres across, with gravestones standing inside it. It is behind the Blasiuskerk in the old churchyard.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the hanging curtain turns copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
