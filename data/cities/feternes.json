@@ -1,0 +1,59 @@
+{
+  "city": "Feternes",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Two separate surveys measured this lime's trunk at 10.18 and 10.2 metres round, about as close as tape measures around an old tree ever get. It stands on the square beside the thirteenth-century Chapelle de Chateau-Vieux, a hamlet a kilometre and a half from Feternes in the hills above Lac Leman, labelled a Remarkable Tree of France in 2000. The commune built a signposted walking loop around it and a nearby prehistoric cup-marked stone. Free, no gate, no ticket.",
+  "meta_description": "The Tilleul de Chateauvieux near Feternes is a 10.2m lime by a 13th-century chapel, at least 400 years old. Free, on a signposted loop.",
+  "question_meta": "Feternes' remarkable tree is a 10.2 metre lime beside the Chapelle de Chateau-Vieux, at least 400 years old.",
+  "question_answer": "Feternes' notable tree is the Tilleul de Chateauvieux, a Small-leaved Lime 10.2 metres round on the square beside the thirteenth-century Chapelle de Chateau-Vieux, labelled a Remarkable Tree of France in 2000 and at least 400 years old.",
+  "question_context": "The lime stands on the public square beside the Chapelle de Chateau-Vieux, a thirteenth-century chapel in a hamlet a kilometre and a half west of Feternes centre, in the hills above Lac Leman. Two separate surveys came back with 10.18 and 10.2 metres round, which is about as close to agreement as tape measures around an old lime ever get, and the crown rises about 20 metres above it. The A.R.B.R.E.S. association labelled it a Remarkable Tree of France in 2000, and its age is given as at least 400 years, with no source pushing the figure further. The species is Tilia cordata, the small-leaved lime, with heart-shaped leaves and a flush of scented flower in early summer. The commune built a walking loop around it, the Boucle du tilleul et de la pierre a cupules, which takes in the tree and a prehistoric cup-marked stone in one afternoon. It is a hamlet's own landmark in a corner of Haute-Savoie people already come to walk in, rather than a tree worth crossing the country for on its own; there is no gate and no ticket, and the last stretch from Feternes is on foot or by road.",
+  "hero_tree_id": "fet_001",
+  "oldest_tree_id": "fet_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Feternes?",
+      "a": "The Tilleul de Chateauvieux, a Small-leaved Lime 10.2 metres round beside the thirteenth-century Chapelle de Chateau-Vieux."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open public square beside the chapel, with no gate or ticket."
+    },
+    {
+      "q": "How old is it?",
+      "a": "At least 400 years by the tree's official Remarkable Tree of France label; no source pushes the figure further."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fet_001",
+      "name": "The Lime of Château-Vieux (Tilleul de Châteauvieux)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "at least 400 years",
+      "age_min": 400,
+      "age_max": null,
+      "girth_cm": 1019,
+      "location": {
+        "address": "Place de la Chapelle de Château-Vieux, hameau de Châteauvieux, 74500 Féternes, Haute-Savoie",
+        "latitude": 46.353429,
+        "longitude": 6.541991,
+        "neighbourhood": "Châteauvieux hamlet, 1.5 km west of Féternes centre"
+      },
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2010/05/21/tilleul-de-chapelle-de-chateauvieux-feternes-haute-savoie/",
+        "https://fr.wikipedia.org/wiki/Chapelle_de_Ch%C3%A2teauvieux"
+      ],
+      "access": "Free. Stands on the public square beside the 13th-century Chapelle de Château-Vieux, and is the named stop on a signposted local walking loop (\"Boucle du tilleul et de la pierre à cupules à Féternes\", per lofficiel.net and the Pays d'Evian tourist office cc-peva.fr, which references a downloadable \"Sentier du Tilleul\" trail leaflet). No gate, no ticket.",
+      "transport": "Rural hamlet with no rail/transit stop; reached by road from Féternes centre (about 1.5km) or Thonon-les-Bains further out. Walking or driving only, no public transport.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This lime measures 10.2 metres around the trunk at chest height. Two separate surveys came back with 10.18 and 10.2, which is about as close to agreement as tape measures around an old lime ever get.\n\nIt stands on the square beside the Chapelle de Château-Vieux, a thirteenth-century chapel in a hamlet a kilometre and a half west of Féternes, in the hills above Lac Léman. The A.R.B.R.E.S. association labelled it a Remarkable Tree of France in 2000. Its age is given as at least 400 years, and no source pushes the figure further, so that is where it stays.\n\nThe crown goes up about 20 metres. The species is Tilia cordata, the small-leaved lime: heart-shaped leaves, and a flush of scented flower in early summer that the bees find before you do.\n\nThe commune built a walking loop around it, the Boucle du tilleul et de la pierre à cupules, which takes in the tree and a prehistoric cup-marked stone in one afternoon. That is the honest measure of this one. It is a hamlet's own landmark in a corner of Haute-Savoie people already come to walk in, rather than a tree you cross the country for. No gate and no ticket, and no bus either: the last stretch is road from Féternes, then your feet.",
+      "how_to_recognise": "You can recognise it by the trunk, 10.2 metres round at chest height, under a crown about 20 metres up. It stands on the square beside the thirteenth-century Chapelle de Château-Vieux, and the walking loop is signposted to it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

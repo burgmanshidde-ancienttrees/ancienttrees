@@ -6028,6 +6028,24 @@
         "note": "Free API sweep (photo_hunt.py --recheck, 40 photo-less trees) plus a viewing pass: approved a Cadiz-standard photo of the famous Chene Chapelle d'Allouville-Bellefosse (its only tree, previously photo-less); rejected 4 mismatched Helmond candidates (street/building photos matched by street name only, 600m+ from the pins).",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "famousfrance-write",
+        "kind": "write",
+        "tokens": 96000,
+        "trees": 8,
+        "note": "8 rural French single-tree places written (stories, recognition lines, 2 best_time): Chene de Nerthe, If commun de Nicorps, If de Jauze, Le Sully de Pesselieres, Tilleul de Chateauvieux, Tilleul de Grange Sauvaget, Tilleul de Reaumont, Cedre pleureur de la Vallee-aux-Loups. Merged into 8 new city files this session (mgs, nic, jau, pes, fet, bra, rea, cma), fixed a species name collision (Common Yew -> European Yew) and an over-length tree-page title before merging.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "photo viewing: bug fix in city_names.py output",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Ran city_names.py to look up search aliases for the 8 new places; it wrote a wrong alias (bracon -> Arbois/Arbosia), the exact proximity-matching failure its own docstring warns about (Bracon and Arbois are distinct Jura communes 7.4km apart). Removed the bad entry from both search_names and wikipedia_titles in data/city-aliases.json; kept the other 4 resolved names.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

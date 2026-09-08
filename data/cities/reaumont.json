@@ -1,0 +1,67 @@
+{
+  "city": "Reaumont",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "In 1891 somebody filled this tree's hollow trunk with masonry; in 2000 somebody else dug it all back out. It now stands on its own, held by metal bolts with a prop under one heavy limb, about 9.2 metres round and reckoned the oldest known tree in the Isere at roughly 620 years. Reaumont has organised itself around it: the road was rerouted to give it room, a local association runs a festival twice a year, and a train from Grenoble gets you most of the way there.",
+  "meta_description": "The Tilleul de Reaumont is a hollow 9.2m lime, about 620 years old, the Isere's oldest tree. Free, reachable by train.",
+  "question_meta": "Reaumont's remarkable tree is a hollow 620-year-old lime behind the church, reckoned the oldest tree in the Isere.",
+  "question_answer": "Reaumont's notable tree is the Tilleul de Reaumont, a Large-leaved Lime behind the Eglise Saint-Jean-Baptiste, entirely hollow, about 9.2 metres round, and reckoned the oldest known tree in the Isere at roughly 620 years, planted around 1390.",
+  "question_context": "The trunk is entirely hollow, which is ordinary for a lime this old and was once thought to need fixing: in 1891 somebody filled it with masonry, and in 2000 somebody else dug it all back out. It now stands on its own, held by metal bolts with a prop under one heavy limb, and measures about 9.2 metres round, though visits between 2010 and 2017 came back with 9.05, 9.2 and 9.36, because a hollow, buttressed trunk does not measure the same way twice. It is reckoned the oldest known tree in the Isere, planted around 1390, which makes it roughly 620 years old, and independent sources across a decade give the same figure, unusually consistent for a tree dated by tradition rather than a core sample. Reaumont has organised itself around it: the road was rerouted to give the tree room, a local association called La Maison de l'Arbre was founded in 2001, the village has run a tree festival twice a year since 1995, and in 2013 it was shortlisted for France's Arbre de l'Annee. A train from Grenoble reaches the Reaumont Saint-Cassien halt in about 25 minutes, then a path across the fields on foot.",
+  "hero_tree_id": "rea_001",
+  "oldest_tree_id": "rea_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Reaumont?",
+      "a": "The Tilleul de Reaumont, a hollow lime behind the church, about 9.2 metres round and reckoned the oldest tree in the Isere."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Late June, when the whole crown comes into scented flower."
+    },
+    {
+      "q": "How do I get there without a car?",
+      "a": "A train from Grenoble reaches the Reaumont Saint-Cassien halt in about 25 minutes, then a 10 to 15 minute walk on a path through fields."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rea_001",
+      "name": "The Hollow Lime of Réaumont (Tilleul de Réaumont)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "about 620 years, planted around 1390",
+      "age_min": 600,
+      "age_max": 630,
+      "girth_cm": 920,
+      "location": {
+        "address": "Behind the Église Saint-Jean-Baptiste, village centre, 38480 Réaumont, Isère",
+        "latitude": 45.367005,
+        "longitude": 5.526088,
+        "neighbourhood": "Réaumont village centre"
+      },
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2010/05/17/le-tilleul-de-reaumont-isere/",
+        "https://www.arbredelannee.com/arbres/le-tilleul-a-grandes-feuilles-de-reaumont",
+        "https://mairie-reaumont.fr/la-maison-de-larbre/"
+      ],
+      "access": "Free. Stands in the open village square/churchyard behind the Église Saint-Jean-Baptiste in the centre of Réaumont, with a dedicated grassed and protected area around it (the local road was rerouted to give it room, per krapooarboricole). Reachable by train from Grenoble in about 25 minutes to the Réaumont Saint-Cassien halt, then a short walk on foot through fields to the village square (per merveillescachees.com, 2020).",
+      "transport": "Réaumont Saint-Cassien station (SNCF TER, Saint-Andre-le-Gaz line), about 25 minutes from Grenoble, then roughly a 10-15 minute walk on a path through fields to the village centre.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 1891 somebody filled this tree with masonry. In 2000 somebody else dug it all back out.\n\nThe trunk is entirely hollow, which is ordinary for a lime this old and was once thought to need fixing. It now stands on its own, held by metal bolts with a prop under one heavy limb, and it measures about 9.2 metres round. Visits between 2010 and 2017 came back with 9.05, 9.20 and 9.36, because a hollow, buttressed trunk does not measure the same way twice.\n\nIt is reckoned the oldest known tree in the Isère, planted around 1390, which makes it roughly 620 years old. Independent sources across a decade give the same figure, which is unusually consistent for a tree dated by tradition rather than by a core sample.\n\nRéaumont has organised itself around it. The road was rerouted to give the tree room. A local association, La Maison de l'Arbre, was founded in 2001, and the village has run a tree festival twice a year since 1995. In 2013 it was shortlisted for France's Arbre de l'Année. In July 2020 a visitor described the crown as particularly well furnished with leaves, hollow trunk notwithstanding.\n\nTwenty-five minutes on the train from Grenoble puts you at the Réaumont Saint-Cassien halt, and a path across the fields does the last of it.",
+      "how_to_recognise": "You can recognise it by the ironwork: metal bolts through the trunk and a prop under one heavy limb, on a hollow trunk 9.2 metres round. It stands on its own grassed ground behind the Église Saint-Jean-Baptiste.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "late June, when the whole crown comes into scented flower"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
