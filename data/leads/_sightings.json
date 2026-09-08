@@ -13,8 +13,8 @@
    "taken_at": "2026-09-03T14:40:37+00:00",
    "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/E3FA3F6B-E016-42F5-999A-E01CE41E82A0.jpg",
    "nearest_published_m": 409,
-   "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "status": "not a tree",
+   "why": "LOOKED at 2026-09-08: the frame is a home office windowsill (blinds, a clock, headphones) with an ordinary tree visible through the glass in the background. Not a candidate for the normal bar, this is a feature test rather than a submission. No page, no further action.",
    "seen": "2026-09-04"
   },
   {
@@ -29,8 +29,8 @@
    "taken_at": "2026-09-04T14:46:40+00:00",
    "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/4D6FB810-870D-40B1-92DB-D5E3820BBA06.jpg",
    "nearest_published_m": 554,
-   "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "status": "not a tree",
+   "why": "LOOKED at 2026-09-08: a home windowsill (soft toy, earbuds, a phone) with an ordinary young garden tree in the back garden beyond the glass. A feature test, not a submission worth the normal bar. No page, no further action.",
    "seen": "2026-09-04"
   },
   {
@@ -45,8 +45,8 @@
    "taken_at": "2026-09-05T07:12:55+00:00",
    "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/FF725D9A-9950-4F0F-A657-1CF19901C9C0.jpg",
    "nearest_published_m": 141,
-   "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "status": "held",
+   "why": "LOOKED at 2026-09-08 and held against brn_002 (the Cantonspark Giant Sequoia, distance-matched at 21 m) via sightings_publish.py, not published: the reader's own note says Watercypres (dawn redwood), and the foliage and trunk in the photo are a deciduous conifer, not Sequoiadendron giganteum. Likely brn_001 (the Cantonspark Dawn Redwood, 128 m away) or an unmapped third specimen in this former pinetum. Verdict recorded in data/sightings-processed.json; not a fresh lead.",
    "seen": "2026-09-05"
   },
   {
@@ -61,8 +61,8 @@
    "taken_at": "2026-09-05T07:15:07+00:00",
    "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/D09C4709-FD01-4476-889A-4D1B860AEACD.jpg",
    "nearest_published_m": 143,
-   "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "status": "held",
+   "why": "LOOKED at 2026-09-08 and held against brn_002 via sightings_publish.py, not published: a dense low conifer with branches sweeping to the ground, no readable trunk or crown, does not clear the Cadiz standard. Verdict recorded in data/sightings-processed.json; not a fresh lead.",
    "seen": "2026-09-05"
   },
   {
@@ -77,8 +77,8 @@
    "taken_at": "2026-09-05T07:15:51+00:00",
    "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/9A4DB707-9393-4C31-B7C1-5DFCF25CC155.jpg",
    "nearest_published_m": 127,
-   "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "status": "held",
+   "why": "LOOKED at 2026-09-08 and held against brn_002 via sightings_publish.py, not published: same feathery, flat-sprayed crown as ff725d9a (taken 44 seconds later), which the reader labelled Watercypres. Not Sequoiadendron foliage. Same likely mismatch as ff725d9a. Verdict recorded in data/sightings-processed.json; not a fresh lead.",
    "seen": "2026-09-05"
   },
   {
@@ -246,7 +246,7 @@
     "nearest": []
    },
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "why": "LOOKED at 2026-09-08: a genuinely striking multi-stemmed, moss-covered tree with heavily exposed buttress roots, standing over a stream bed with deer visible in the background, consistent with Nara Park. Worth a verify pass: needs species ID (broadleaf, glossy pointed leaves, possibly a camphor or oak), a second source and a precise pin before it can get a page. Not yet researched beyond the photo.",
    "seen": "2026-09-08"
   }
  ]
