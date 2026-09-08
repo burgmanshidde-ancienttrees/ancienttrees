@@ -14853,7 +14853,7 @@
   "ams_018": {
    "city": "Amsterdam",
    "name": "The Westkant Plane of Wertheimpark",
-   "checked": "2026-09-06",
+   "checked": "2026-09-08",
    "sweep": 5,
    "candidates": [
     {
@@ -14864,7 +14864,9 @@
      "author": "Fons Heijnsbroek",
      "lat": null,
      "lng": null,
-     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark"
+     "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark",
+     "judged": "reject",
+     "verdict": "LOOKED at the pixels: a general park path view with multiple trees, no single tree is clearly the subject."
     },
     {
      "title": "File:Berlage door Krop, westkant (2).jpg",
@@ -14894,7 +14896,9 @@
      "author": "Fons Heijnsbroek from Amsterdam, Netherlands",
      "lat": 52.366179,
      "lng": 4.908549,
-     "cats": "Category:CC-Zero Category:Flickr images reviewed by FlickreviewR 2 Category:J.W. van Overloopplantsoen Category:Nieuwe Keizersgracht, Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2019) Category:Photographs by Fons Heijnsbroek in Amsterdam (2020) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek"
+     "cats": "Category:CC-Zero Category:Flickr images reviewed by FlickreviewR 2 Category:J.W. van Overloopplantsoen Category:Nieuwe Keizersgracht, Amsterdam Category:Photographs by Fons Heijnsbroek in Amsterdam (2019) Category:Photographs by Fons Heijnsbroek in Amsterdam (2020) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek",
+     "judged": "reject",
+     "verdict": "LOOKED at the pixels: a general Wertheimpark view with several trees and people on benches, no single tree is clearly the subject or identifiable as the Westkant Plane specifically."
     },
     {
      "title": "File:Tree House @ Plantage Muidergracht - panoramio.jpg",
@@ -31823,14 +31827,14 @@
   "ams_023": {
    "city": "Amsterdam",
    "name": "The Van Loon Copper Beech",
-   "checked": "2026-09-06",
+   "checked": "2026-09-08",
    "sweep": 5,
    "candidates": []
   },
   "ams_024": {
    "city": "Amsterdam",
    "name": "The Rijksmuseum Poplar",
-   "checked": "2026-09-03",
+   "checked": "2026-09-08",
    "sweep": 5,
    "candidates": [
     {
@@ -31868,7 +31872,7 @@
   "ams_025": {
    "city": "Amsterdam",
    "name": "The Weteringplantsoen Wych Elm",
-   "checked": "2026-09-03",
+   "checked": "2026-09-08",
    "sweep": 5,
    "candidates": []
   },

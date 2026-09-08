@@ -6046,6 +6046,24 @@
         "note": "Ran city_names.py to look up search aliases for the 8 new places; it wrote a wrong alias (bracon -> Arbois/Arbosia), the exact proximity-matching failure its own docstring warns about (Bracon and Arbois are distinct Jura communes 7.4km apart). Removed the bad entry from both search_names and wikipedia_titles in data/city-aliases.json; kept the other 4 resolved names.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "_famous-slovakia-batchB",
+        "kind": "verify",
+        "tokens": 131000,
+        "trees": 0,
+        "note": "All 4 named candidates failed publication: 3 confirmed avenues/rows (one settled directly from the national register) blocked as non-collectible-points, 1 genuine single pear tree verified to two sources but rejected on the single-tree-destination test and kept as a lead.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-slovakia-batchA",
+        "kind": "verify",
+        "tokens": 105000,
+        "trees": 4,
+        "note": "All 4 named candidates verified and delivered (2 Bosaca heritage fruit trees, national Tree of the Year winners ~370m apart in the same orchard valley, walkable as a pair; the Velke Borove pine, Tree of the Year 2004; the Komjatice plane, Slovakia's thickest tree); no register hit, sourced from Slovak Tree-of-the-Year press coverage plus Commons GPS metadata; komjatice.sk added to fetch-blocklist for hanging.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

@@ -1,0 +1,98 @@
+[
+  {
+    "id": null,
+    "name": "The Apple Tree of Zabudišová",
+    "species": "Apple (Malus domestica), local heritage cultivar 'Citrónové zimné Zabudišovské'",
+    "age_estimate": "over 130 years",
+    "age_min": 120,
+    "age_max": 150,
+    "girth_cm": 250,
+    "location": {
+      "address": "Roadside orchard land in the Zabudišová part of Bošáca, Nové Mesto nad Váhom district",
+      "latitude": 48.86885,
+      "longitude": 17.83468,
+      "neighbourhood": "Zabudišová, Bošáca"
+    },
+    "verified_sources": [
+      "https://spravy.pravda.sk/domace/clanok/446045-strom-roka-2017-je-stara-bosacka-jablon/",
+      "https://commons.wikimedia.org/wiki/File:2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg"
+    ],
+    "access": "Free. Stands beside a road in open orchard countryside in the Zabudišová part of Bošáca; no gate or restriction reported.",
+    "transport": "Rural village land; no public transport, reachable by car or on foot from Bošáca village centre (Zabudišová is an outlying part of the municipality).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "National 'Strom roka' (Tree of the Year) 2017 winner, chosen by public vote (7,303 of 23,370 votes cast across 12 finalists), organised by Nadacia Ekopolis (pravda.sk, fetched directly). Went on to place 6th in the European Tree of the Year 2018 competition, the only fruit tree in that final. Variety is a little-known, almost-forgotten local apple cultivar, 'Citronove zimne Zabudisovske' (Lemon Winter of Zabudisova), planted by itinerant orchardists per the mayor of Bosaca, Daniel Juracek. As of the 2017 article: over 120 years old (so over 130 now), 13m tall, trunk girth 250cm, still bearing fruit despite surviving at least four storm/calamity events. Coordinate is the photographer's own GPS tag on the Commons file (48.86885/17.83468), matching the brief exactly. Photo candidate on file: https://commons.wikimedia.org/wiki/File:2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg (not judged this pass, no photo hunting done). Alive-now evidence: no fetched source is more recent than the 2017/2018 contest coverage; flagged for thin recency, though the village's Zabudisova part remains an active community (2026 festival listings found) and no report of removal turned up. SINGLE-TREE-DESTINATION TEST: passes, and more easily as a pair with the Pink Pear of Bosaca roughly 370m away (also a national/European Tree of the Year winner from the same historic orchard valley, Bosacka dolina): two separately nationally-recognised heritage fruit trees within an easy walk of each other, in a valley actively rebuilding its old-orchard culture (an OZ Pangaea project has replanted ~500 fruit trees in the valley in recent years). Not merely 'a fine regional tree'; it is a repeated public-vote national and European finalist."
+  },
+  {
+    "id": null,
+    "name": "The Pink Pear of Bošáca",
+    "species": "Pear (Pyrus communis), local heritage cultivar 'Ružová' (Pink)",
+    "age_estimate": "roughly 200 years",
+    "age_min": 180,
+    "age_max": 220,
+    "girth_cm": null,
+    "location": {
+      "address": "Bošácka dolina valley, Zabudišová part of Bošáca, Nové Mesto nad Váhom district",
+      "latitude": 48.86824,
+      "longitude": 17.83962,
+      "neighbourhood": "Zabudišová, Bošáca"
+    },
+    "verified_sources": [
+      "https://spravy.pravda.sk/regiony/clanok/372007-stromom-roka-je-200-rocna-hruska-ruzova-z-bosace/",
+      "https://www.teraz.sk/regiony/treti-najkrajsi-strom-europy-bosaca/252217-clanok.html"
+    ],
+    "access": "Free. Stands alone as a solitary tree in open orchard/farmland (former kopanice smallholdings) in the Zabudišová part of Bošáca; no gate or restriction reported.",
+    "transport": "Rural village land; no public transport, reachable by car or on foot from Bošáca village centre (Zabudišová is an outlying part of the municipality), roughly 400m from the Apple Tree of Zabudišová.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "'Ruzova' (Pink) pear, a rare local heirloom variety of Pyrus communis found only in the Bosacka dolina valley, where only about 25-30 trees of the variety remain (pravda.sk, fetched directly). This specific solitary tree won the national 'Strom roka' (Tree of the Year) 2015 competition by public vote (3,092 of nearly 13,000 votes cast) and went on to place 3rd in the European Tree of the Year 2016 competition with 29,114 votes (teraz.sk, fetched directly, and corroborated by the WebSearch summary of zn.sk though that page's own article body could not be fetched, JS-rendered). Both sources independently give the age as 'about 200 years old'; probably planted by the valley's first settlers (kopanicari), who were known for making fruit brandy (palenka). No girth or height figure found on a fetched page for THIS specific tree (a WebSearch AI summary offered 231cm/14m but that number never appeared on a directly fetched page, so per the search-summary-is-a-lead-never-a-source rule it is NOT recorded here; girth_cm left null). IMPORTANT DISTINCT-TREE NOTE for a future pass: Bosaca's orchard valley has produced MULTIPLE separate 'Strom roka'-winning pear trees over the years and they must not be conflated. A different Bosaca pear (10m tall, 195cm girth, on the slope of Lysica hill) won Strom roka 2024; that is NOT this tree and was not investigated further here. Coordinate for THIS tree (48.86824/17.83962) comes from the Commons file's own location metadata, tagged by the tree-of-the-year contest submission (Credit: www.epa.org and www.nadacepartnerstvi.cz, the European Tree of the Year organisers), roughly 370m from the Apple Tree of Zabudisova coordinate, consistent with being a distinct, separate tree in the same small valley. Alive-now evidence: no fetched source more recent than the 2015/2016 contest coverage; flagged for thin recency, same caveat as the apple tree. SINGLE-TREE-DESTINATION TEST: passes, chiefly as a walking pair with the Apple Tree of Zabudisova (see that entry's notes): two separate national/European Tree-of-the-Year fruit trees in one small, historically significant orchard valley, an easy joint visit."
+  },
+  {
+    "id": null,
+    "name": "The Pine of Veľké Borové",
+    "species": "Scots Pine (Pinus sylvestris)",
+    "age_estimate": "roughly 250 to 350 years",
+    "age_min": 250,
+    "age_max": 350,
+    "girth_cm": 460,
+    "location": {
+      "address": "Forested slope of Súšava hill (1076m) above the village of Veľké Borové, Liptovský Mikuláš district",
+      "latitude": 49.2047,
+      "longitude": 19.5052,
+      "neighbourhood": "Veľké Borové"
+    },
+    "verified_sources": [
+      "https://www.geocaching.com/geocache/GC5BYRB_strom-roka-2004-borovica-v-borovom",
+      "https://sk.wikipedia.org/wiki/Strom_roka"
+    ],
+    "access": "Free, on a forested hillside above the village (public forest land, not a garden or private plot). A geocaching log (undated, filed some time before the cache was archived) reports the marked information board gone and the approach trail overgrown, so reaching it may now require some routefinding off any formal path; recorded honestly rather than assumed still well-marked.",
+    "transport": "Rural forest land above Veľké Borové village; no public transport, reachable by car to the village then on foot up the hillside.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "National 'Strom roka' (Tree of the Year) 2004 winner, per sk.wikipedia's 'Strom roka' article (fetched directly), which cites REC Slovensko's official 2004 results announcement (archived at web.archive.org/web/20070921110328/http://www.zelen.sk/strom_archiv.htm). A geocaching multi-cache built around the tree (fetched directly) gives specific measurements read off the tree's own information board: 23m tall, trunk girth 460cm measured at 130cm height, age estimated 250-350 years. Located above the village of Velke Borove at the foot of Susava hill (1076m elevation). Coordinate (49.2047/19.5052) is an exact match to the brief and to the GPS tag on a 2008 'own work' Commons photograph by a named photographer (User:Teslaton), which is a stronger coordinate source than a contest submission since it is the photographer's own on-site GPS reading. Commons' own category carries a Wikidata infobox confirming species (Pinus sylvestris) and the 2004 Tree of the Year designation. ALIVE-NOW CAVEAT, the reason this is flagged: the most recent dated evidence found is the 2008 photograph; the geocaching page's own log (posted by the cache owner, undated within the fetched page but before the cache's archival) says the information board is gone and the once-trodden path is now overgrown jungle, which speaks to reduced visitor access/maintenance rather than to the tree's health, but no source after 2008 confirms the tree standing. No report of felling or death found either. This is exactly the kind of thin-but-honest case the research standard says to publish and flag rather than hold back. SINGLE-TREE-DESTINATION TEST: passes on its own merits, a genuinely exceptional individual specimen: at 460cm girth and 250-350 years this pine is unusually massive and old for the species (Scots pine rarely reaches this girth), it is a national award winner, and reaching it involves a real short hillside walk with a view, which is the kind of thing this project already publishes elsewhere for standalone veteran trees."
+  },
+  {
+    "id": null,
+    "name": "The Plane Tree of Komjatice",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 140 to 150 years",
+    "age_min": 138,
+    "age_max": 155,
+    "girth_cm": 930,
+    "location": {
+      "address": "Kaštieľsky park (former Grassalkovich manor park), Komjatice, Nové Zámky district",
+      "latitude": 48.15572,
+      "longitude": 18.181,
+      "neighbourhood": "Komjatice"
+    },
+    "verified_sources": [
+      "https://spravy.pravda.sk/regiony/clanok/259699-slovensko-reprezentuje-strom-lasky-a-vitality-platan/",
+      "https://lepsiageografia.sk/rubriky/najhrubsi-strom-slovenska-najdete-v-komjaticiach/"
+    ],
+    "access": "Free public park. The renovated Kastiel park (Komjatice manor park, reconstructed 2009/2010) is open and freely walkable; multiple independent descriptions call it a public recreation area for residents and visitors, and a March 2024 YouTube video shows a visitor cycling up to and filming the tree.",
+    "transport": "Village of Komjatice, Nove Zamky district; no rail station, reachable by road/bus to Komjatice then on foot into the park.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Widely reported as the thickest tree trunk in Slovakia: trunk girth 930cm (measured at breast height per lepsiageografia.sk, fetched directly), height over 28m. Pravda.sk's 2013 article (fetched directly) independently corroborates a 'nine-metre trunk' ('najhrubsim devatmetrovym kmenom') and calls it one of the seven largest living organisms in Europe by some accounts (a popular superlative claim, recorded per hard rule 8, not independently checked against a scientific ranking). Age given as about 138 years in the 2013 article (planted, per local tradition traced through historical sources, by Baron Moric Wodianer, a merchant who brought exotic trees including ginkgo from South America; explicitly described in the source as inference rather than certainty, 'este len domnienka') and as 'nearly 150 years' in the 2015 lepsiageografia.sk piece; age range recorded as 138-155 to cover both. Stands in the reconstructed public park of the former Grassalkovich family manor in Komjatice (park rebuilt 2009-2010 after decades of neglect following WWII bombing of the manor house; the tree itself survived the war, 1950s excavation works that felled many neighbouring trees for flood-control measures, and a recent arson attempt on one of its trunk cavities). Won the national 'Strom roka' (Tree of the Year) 2012 competition and placed in the top five of the European Tree of the Year 2013. Locals call it the 'tree of love', its bark carved with generations of lovers' initials. Coordinate (48.15572/18.181) is an exact match to the brief and to the Commons file's own GPS-tagged location metadata (contest submission, Files from treeoftheyear.org). ALIVE-NOW evidence is the strongest of this batch: a YouTube video dated 29 March 2024 ('Komjatice -150 rocny platan- BIKE') shows the tree standing and visited two years ago, well within the 'last few years' bar; not flagged. Attempted to fetch komjatice.sk's own official park page for a primary-source access statement; it hung on both attempts (curl -m 20, exit 28), recorded for the fetch blocklist. SINGLE-TREE-DESTINATION TEST: clearly passes; 'the thickest tree in Slovakia', a national superlative with real public fascination (love-token carving tradition, dedicated visitor content), is exactly the kind of claim that gets someone to travel specifically for one tree."
+  }
+]

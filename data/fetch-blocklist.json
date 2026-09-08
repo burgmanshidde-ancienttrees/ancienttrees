@@ -480,6 +480,12 @@
    "seen": "2026-09-06",
    "cost": "two fetch attempts (Renavas spruce and Stakai oak state-register pages) during the Lithuania famous-trees batch B verify pass, both wasted",
    "workaround": "This is the state Register of Protected Territories (Saugomų teritorijų valstybės kadastras) map portal, cited by nearly every lt.wikipedia protected-tree article as source name=stk. Its figures are usually already quoted inline in the citing Wikipedia article, which substitutes fine. A rendering fetch (headless browser) would likely work per the Tenerife/Cabildo precedent in BRIEF_RESEARCH.md, not tried this pass."
+  },
+  "komjatice.sk": {
+   "behaviour": "hangs, no response at all (curl -m 20, exit 28) on /obec/kultura-a-sport/park-komjatice/, the municipality's own page about its Kastiel park",
+   "seen": "2026-09-08",
+   "cost": "two 20s timeouts during the _famous-slovakia batch A verify pass, trying to get a primary-source access statement for the Komjatice plane tree's park",
+   "workaround": "unknown this pass; spravy.pravda.sk (2013) and lepsiageografia.sk (2015) covered the tree and its park's history well enough without it, and a search summary of a third site described the park as freely open to the public"
   }
  }
 }
