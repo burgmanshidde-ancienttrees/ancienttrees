@@ -204,14 +204,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "story": "This horse chestnut stands behind the pond in Emile van Loonpark, banded by the national register to a planting around 1870, roughly 160 years old. The park's own lime, registered elsewhere on this list's original candidates, was declared dead as far back as 1998, which makes this chestnut the park's surviving veteran rather than one of a matched pair.\n\nA horse chestnut planted beside water has usually had reliable growing conditions its whole life, and at 160 years this one should show the full domed crown and heavy branch structure the species develops when left largely alone. Every May it produces the upright white flower spikes chestnuts are planted for across Europe, and reflected in the pond behind it, the display reads differently than a chestnut standing on hard pavement elsewhere in this list.\n\nThe register gives no further history for this tree, only species and decade. Emile van Loonpark is public and open daily, and this chestnut is the reason to walk to the far side of the pond rather than stopping at the park's edge. If you know more about it, tell us.",
+      "story": "This horse chestnut stands behind the pond in Emile van Loonpark, banded by the national register to a planting around 1870, roughly 160 years old. It shares the park with an older tree still: a Dutch lime the national register bands to somewhere between 1750 and 1800, growing here a century before the mayor the park is named after began laying it out.\n\nA horse chestnut planted beside water has usually had reliable growing conditions its whole life, and at 160 years this one should show the full domed crown and heavy branch structure the species develops when left largely alone. Every May it produces the upright white flower spikes chestnuts are planted for across Europe, and reflected in the pond behind it, the display reads differently than a chestnut standing on hard pavement elsewhere in this list.\n\nThe register gives no further history for this tree, only species and decade. Emile van Loonpark is public and open daily, and this chestnut is the reason to walk to the far side of the pond rather than stopping at the park's edge. If you know more about it, tell us.",
       "best_time": {
         "months": [
           5
         ],
         "kind": "flowers",
         "label": "May, when the white flower spikes cover the crown and reflect in the pond"
-      }
+      },
+      "verify_notes": "2026-09-08: the story claimed the park's lime was declared dead in 1998 and that this chestnut was therefore the park's surviving veteran. Both halves are wrong. The Landelijk Register Monumentale Bomen still carries nr 1680922, Hollandse linde, Emile van Loonpark, band 1750-1800, and it is not among the register's dead entries. We publish that lime ourselves as roo_010, so the page contradicted its own neighbour. Sentence replaced with what the register says."
     },
     {
       "id": "roo_009",
