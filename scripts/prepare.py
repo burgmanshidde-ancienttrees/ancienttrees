@@ -165,8 +165,9 @@ def pipeline_status():
               "files in out/sightings/, then apply with scripts/sightings_publish.py."
               % len(waiting_photos))
         for e in waiting_photos[:10]:
-            print("      %s  %s  match=%s  the tree has: %s"
-                  % (e.get("tree_id"), (e.get("tree_name") or "")[:38],
+            print("      %s%s  %s  match=%s  the tree has: %s"
+                  % ("[ours] " if e.get("mine") else "",
+                     e.get("tree_id"), (e.get("tree_name") or "")[:38],
                      e.get("match"), e.get("current_photo")))
 
     # AND THE HALF THAT WAS INVISIBLE (2026-09-08). The queue above only ever
