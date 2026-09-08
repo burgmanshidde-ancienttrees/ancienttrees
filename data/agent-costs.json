@@ -6005,9 +6005,9 @@
       {
         "target": "_famous-france-batchA",
         "kind": "verify",
-        "tokens": 0,
-        "trees": 0,
-        "note": "Dispatched, awaiting completion at time of this log entry; cost line to follow when it reports back.",
+        "tokens": 165000,
+        "trees": 4,
+        "note": "4 of 5 named candidates verified and delivered (Chene de Nerthe, If commun de Nicorps, If de Jauze, Le Sully de Pesselieres), 2 confirmed pins via independent GPS/OSM cross-check, 2 approximate; Tilleul de Joux blocked for unconfirmed private-chateau access, matching batch B's independent verdict on the same tree.",
         "wasted": 0,
         "brief_wrong": false
       },
