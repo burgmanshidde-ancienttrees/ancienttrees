@@ -387,6 +387,13 @@ Spain has no national register; every autonomous community keeps its own, and th
 
 ## Japan: the Environment Ministry giant-tree database (scouted 2026-08-04, VERDICT: usable with one real caveat)
 
+**Corrected 2026-09-08: the detail page carries far more than the result list, and we had only ever read the list.** Hunting a veteran cedar at Todai-ji for Hidde, who was standing in front of it. The list gives species, girth and health. Each record's own page gives, in a plain th/td table: 樹齢（推定） an age band, 樹高 a height, 名称（施設名） the shrine, temple or forest the tree stands in, 所有者・管理者区分 an owner category, 視認性 how far away it is visible from, 解説板等 whether there is an interpretive sign, and 位置の公表について with a reason-for-withholding beside it.
+
+Measured on Nara city's 136 ministry records: **123 carry an age band and 134 a height**, and 67 of them read 300年以上. That is not a detail. An age and a place name are most of what turns a lead into a publishable tree, and this database was recorded here as girth-and-species-only, so every Japanese leads file we hold (Hiroshima, Sapporo, Kobe, Nagoya, Kamakura, Nikko, Kagoshima) is missing both. `scripts/jp_kyoju.py --detail` reads them at one throttled fetch per tree; re-running it over those prefectures is cheap and compounds.
+
+**And 所有者・管理者区分 answers hard rule 10 from the data rather than from a search**, the way the Dutch register's `visitable` does: 社寺 is shrine or temple ground and publishable under the churches clause, 個人 is somebody's private land and stays out. Nara city: 94 社寺, 15 個人, 10 国, 11 都道府県.
+
+
 `https://kyoju.biodic.go.jp/`, the 巨樹・巨木林データベース, the national record of every tree in Japan over 300 cm girth at breast height, with measured girth, height, species, and location. It is the closest thing Japan has to Portugal's ICNF, and it is the spine of any cheap layer-two coverage for Japanese cities.
 
 **Licence, with the proving sentence.** The Biodiversity Centre's terms page (`https://www.biodic.go.jp/copyright/terms_of_service.html`) states that its content may be used under 「公共データ利用規約（第1.0版）」（PDL1.0）, the Public Data License 1.0, which permits commercial reuse with attribution and which CLAUDE.md already names as an acceptable register licence. Attribution must give the title, 環境省生物多様性センター, and the URL or download date; any editing or adaptation must be stated separately along with who did it.

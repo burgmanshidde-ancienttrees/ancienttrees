@@ -137,6 +137,57 @@ def parse(body):
     return out
 
 
+DETAIL_WANTED = {
+    "名称（施設名）": "facility_ja",
+    "住所（町）": "town_ja",
+    "住所（番地）": "address_ja",
+    "近くの目印となるもの": "landmark_ja",
+    "樹齢（推定）": "age_band_ja",
+    "伝承等による樹齢": "age_lore_ja",
+    "樹高": "height_m_detail",
+    "独特の呼称": "nickname_ja",
+    "解説板等": "sign_ja",
+    "所有者・管理者区分": "owner_ja",
+    "視認性": "visibility_ja",
+    "保護制度・指定": "designation_ja",
+    "位置の公表について": "position_published_ja",
+    "公表不可の理由": "position_withheld_reason_ja",
+    "故事・伝承の内容": "lore_ja",
+}
+
+
+def detail(op, url):
+    """The fields the RESULT LIST does not carry, read off the record's own page.
+
+    Found 2026-09-08, hunting a veteran cedar at Todai-ji. The list page gives
+    species, girth and health, and this crawler had only ever read that, so the
+    corpus recorded this database as girth-and-species-only and every Japanese
+    leads file we hold is missing what follows. The detail page carries an AGE
+    BAND (123 of Nara city's 136 ministry records have one), a HEIGHT (134 of
+    136), and the name of the shrine, temple or forest the tree stands in,
+    which is the only locating string this coordinate-less register ever gives.
+    An age and a place are most of what turns a lead into a tree.
+
+    The page is a plain th/td table, so it is read as pairs rather than by
+    scanning flattened text: a label whose value is empty otherwise swallows
+    the next label, and labels carrying a <br /> split in two.
+    """
+    body = op.open(urllib.request.Request(
+        url, headers={"User-Agent": UA}), timeout=25).read().decode("utf-8", "replace")
+    body = re.sub(r"<script.*?</script>", "", body, flags=re.S)
+    out = {}
+    pairs = re.findall(r'<th[^>]*scope="row"[^>]*>(.*?)</th>\s*<td[^>]*>(.*?)</td>',
+                       body, flags=re.S)
+    for label, value in pairs:
+        label = re.sub(r"<[^>]+>", "", label).replace("&nbsp;", "").strip()
+        value = re.sub(r"<[^>]+>", " ", value).replace("&nbsp;", " ")
+        value = re.sub(r"\s+", " ", value).strip()
+        key = DETAIL_WANTED.get(label)
+        if key and value:
+            out[key] = value
+    return out
+
+
 def cm(v):
     m = re.match(r"(\d+(?:\.\d+)?)", (v or "").replace(",", ""))
     return float(m.group(1)) if m else None
@@ -148,6 +199,9 @@ def main():
     ap.add_argument("--city", help="keep only rows whose 市区町村 contains this")
     ap.add_argument("--max-pages", type=int, default=200)
     ap.add_argument("--out")
+    ap.add_argument("--detail", action="store_true",
+                    help="also read each kept record's own page: age band, height, "
+                         "and the shrine or temple it stands in (one throttled fetch per tree)")
     a = ap.parse_args()
 
     op, tok = session()
@@ -195,6 +249,16 @@ def main():
         "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=%s&branch_number=%s"
                   % (r.get("report_id"), r.get("branch_number")),
     } for r in admin]
+
+    if a.detail:
+        for n, t in enumerate(trees, 1):
+            try:
+                t.update(detail(op, t["source"]))
+            except Exception as exc:            # one bad page is not the crawl
+                t["detail_error"] = str(exc)
+            if n % 25 == 0:
+                print("  detail %d/%d" % (n, len(trees)), file=sys.stderr)
+            time.sleep(2.5)                     # somebody's ministry server
 
     doc = {
         "source": "環境省生物多様性センター 巨樹・巨木林データベース "
