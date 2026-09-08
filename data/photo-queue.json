@@ -589,7 +589,7 @@
      "source": "inaturalist",
      "obs_location": "13.7518333333,100.4920583333",
      "judged": "reject",
-     "verdict": "species mismatch: iNat obs is Ficus lyrata (fiddle-leaf fig), the tree is Ficus religiosa (Bodhi tree)"
+     "verdict": "duplicate queue row for the same observation: tourist with an umbrella in the foreground, and identified as Ficus lyrata"
     },
     {
      "title": "iNat obs 196507425 (Ficus lyrata)",
@@ -598,7 +598,9 @@
      "licence": "CC BY",
      "author": "(c) Анна Митрошенкова, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "13.7518333333,100.4920583333"
+     "obs_location": "13.7518333333,100.4920583333",
+     "judged": "reject",
+     "verdict": "second frame of the same observation and the same picture: tourist under a green umbrella, and the fig is a Ficus lyrata"
     },
     {
      "title": "iNat obs 236549425 (Ficus)",
@@ -609,7 +611,7 @@
      "source": "inaturalist",
      "obs_location": "13.751888032,100.4922042042",
      "judged": "reject",
-     "verdict": "unspecified Ficus, no confirmation it is F. religiosa or this specific temple tree"
+     "verdict": "duplicate queue row for the same observation: leaf close-up, no trunk or crown"
     },
     {
      "title": "iNat obs 236549425 (Ficus)",
@@ -618,7 +620,9 @@
      "licence": "CC BY",
      "author": "(c) Gonzalo Ganda Álvarez, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "13.751888032,100.4922042042"
+     "obs_location": "13.751888032,100.4922042042",
+     "judged": "reject",
+     "verdict": "second frame of the same observation: leaves against white sky, no trunk, no crown"
     },
     {
      "title": "iNat obs 250861782 (Ficus religiosa)",
@@ -627,7 +631,9 @@
      "licence": "CC BY",
      "author": "(c) Nick Knutson, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "13.7519073541,100.4926725354"
+     "obs_location": "13.7519073541,100.4926725354",
+     "judged": "hold",
+     "verdict": "duplicate queue row for the held observation: good bodhi photograph inside Wat Phra Kaew, but 60 m off our pin and the courtyard does not match the Prasat Phra Thep Bidon terrace"
     },
     {
      "title": "iNat obs 250861782 (Ficus religiosa)",
@@ -636,7 +642,9 @@
      "licence": "CC BY",
      "author": "(c) Nick Knutson, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "13.7519073541,100.4926725354"
+     "obs_location": "13.7519073541,100.4926725354",
+     "judged": "reject",
+     "verdict": "bark close-up of a single limb with a gilded chedi behind it; a detail shot, not a photograph of the tree"
     }
    ]
   },
@@ -36306,7 +36314,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.633075,
      "lng": 4.740428,
-     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Kennemersingel, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work"
+     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Kennemersingel, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work",
+     "judged": "reject",
+     "verdict": "wide canal-and-lawn park scene, no single plane is the subject; centre band is water and sky"
     },
     {
      "title": "File:Alkmaar - Clarissenbolwerk - View West on Kennemersingel.jpg",
@@ -36316,7 +36326,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.632747,
      "lng": 4.74075,
-     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Kennemersingel, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work"
+     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Kennemersingel, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work",
+     "judged": "reject",
+     "verdict": "same scenery series, backlit lawn and canal, trees are dark silhouettes at the frame edges"
     },
     {
      "title": "File:Alkmaar - Clarissenbolwerk - View West towards Murmellius Gymnasium.jpg",
@@ -36326,7 +36338,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.633753,
      "lng": 4.741844,
-     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Geestersingel, Alkmaar Category:Murmellius Gymnasium (Alkmaar) Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work"
+     "cats": "Category:2011 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Geestersingel, Alkmaar Category:Murmellius Gymnasium (Alkmaar) Category:Netherlands photographs taken on 2011-07-15 Category:Parks in Alkmaar Category:Self-published work",
+     "judged": "reject",
+     "verdict": "two unidentified trees flanking a park view, neither readable as the Clarissenbolwerk plane"
     },
     {
      "title": "File:Alkmaar - Geestersingel - Winterview East on Clarissenbolwerk & Grote Sint Laurenskerk.jpg",
@@ -36336,9 +36350,12 @@
      "author": "Txllxt TxllxT",
      "lat": 52.633253,
      "lng": 4.739119,
-     "cats": "Category:2010 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Clarissenbolwerk 1, Alkmaar Category:Distant views of the Sint Laurenskerk, Alkmaar Category:Netherlands photographs taken on 2010-01-30 Category:Self-published work Category:Snow in Alkmaar"
+     "cats": "Category:2010 in Alkmaar Category:CC-BY-SA-4.0 Category:Clarissenbolwerk Category:Clarissenbolwerk 1, Alkmaar Category:Distant views of the Sint Laurenskerk, Alkmaar Category:Netherlands photographs taken on 2010-01-30 Category:Self-published work Category:Snow in Alkmaar",
+     "judged": "reject",
+     "verdict": "grey snowy winter view across the singel; a row of leafless trees at a distance, no plane is the subject"
     }
-   ]
+   ],
+   "exhausted": "all three candidates are the same photographer's wide Kennemersingel park views; no plane is the subject in any of them"
   },
   "alk_006": {
    "city": "Alkmaar",
@@ -36940,7 +36957,9 @@
      "author": "Ben Bender",
      "lat": 52.165723,
      "lng": 5.902431,
-     "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2013-02-10 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Ugchelen"
+     "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2013-02-10 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Ugchelen",
+     "judged": "reject",
+     "verdict": "snow-covered heath and conifer treeline, no lime and no single subject; geotag 2.9 km from the pin"
     },
     {
      "title": "File:Ugchelen-zendmast.jpg",
@@ -36950,7 +36969,9 @@
      "author": "Apdency",
      "lat": 52.168114,
      "lng": 5.896603,
-     "cats": "Category:2009 in Apeldoorn Category:PD-self Category:Self-published work Category:Zendmast Ugchelen"
+     "cats": "Category:2009 in Apeldoorn Category:PD-self Category:Self-published work Category:Zendmast Ugchelen",
+     "judged": "reject",
+     "verdict": "a radio transmission mast, not a tree at all"
     },
     {
      "title": "File:Zendmast Ugchelen 2013.jpg",
@@ -36960,9 +36981,12 @@
      "author": "Apdency",
      "lat": null,
      "lng": null,
-     "cats": "Category:2013 in Apeldoorn Category:CC-Zero Category:Self-published work Category:Taken with Canon PowerShot SX30 IS Category:Zendmast Ugchelen"
+     "cats": "Category:2013 in Apeldoorn Category:CC-Zero Category:Self-published work Category:Taken with Canon PowerShot SX30 IS Category:Zendmast Ugchelen",
+     "judged": "reject",
+     "verdict": "the same radio mast above a distant treeline, matched on the place name only"
     }
-   ]
+   ],
+   "exhausted": "one snowy heath panorama and two photographs of a radio mast; nothing shows the pollarded lime"
   },
   "apd_003": {
    "city": "Apeldoorn",
@@ -37096,7 +37120,9 @@
      "author": "Apdency",
      "lat": null,
      "lng": null,
-     "cats": "Category:2012 in Apeldoorn Category:Autumn in the Netherlands Category:CC-Zero Category:Oranjepark, Apeldoorn Category:Self-published work Category:Taken with Canon PowerShot SX30 IS"
+     "cats": "Category:2012 in Apeldoorn Category:Autumn in the Netherlands Category:CC-Zero Category:Oranjepark, Apeldoorn Category:Self-published work Category:Taken with Canon PowerShot SX30 IS",
+     "judged": "reject",
+     "verdict": "wide autumn park view; centre band is the pond, bandstand and path, and the big tree at left is not identifiable as the pin oak"
     },
     {
      "title": "File:Oranjepark in Apeldoorn, RP-F-00-1080.jpg",
@@ -37106,7 +37132,9 @@
      "author": "Rijksmuseum",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Cabinet cards in the Rijksmuseum Amsterdam Category:Donation Vosmaer Category:History of Apeldoorn Category:Oranjepark, Apeldoorn Category:Photographs of the Netherlands in the Rijksmuseum Amsterdam"
+     "cats": "Category:CC-Zero Category:Cabinet cards in the Rijksmuseum Amsterdam Category:Donation Vosmaer Category:History of Apeldoorn Category:Oranjepark, Apeldoorn Category:Photographs of the Netherlands in the Rijksmuseum Amsterdam",
+     "judged": "reject",
+     "verdict": "sepia archival cabinet card of the park pond, bare winter trees, museum image not a go-there photograph"
     },
     {
      "title": "File:Oranjepark in Apeldoorn, RP-P-2019-1654.jpg",
@@ -37116,9 +37144,12 @@
      "author": "Rijksmuseum",
      "lat": null,
      "lng": null,
-     "cats": "Category:Apeldoorn in the 19th century Category:Autotypes in the Rijksmuseum Amsterdam Category:CC-Zero Category:Oranjepark, Apeldoorn"
+     "cats": "Category:Apeldoorn in the 19th century Category:Autotypes in the Rijksmuseum Amsterdam Category:CC-Zero Category:Oranjepark, Apeldoorn",
+     "judged": "reject",
+     "verdict": "a scanned 19th-century print plate of villas with a colour calibration strip, not a photograph of a tree"
     }
-   ]
+   ],
+   "exhausted": "one wide park view where no tree is the subject, plus two archival Rijksmuseum images"
   },
   "ass_001": {
    "city": "Assen",
@@ -37182,7 +37213,9 @@
      "author": "Yvonique",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS",
+     "judged": "reject",
+     "verdict": "the estate's wrought-iron entrance gate in a beech hedge; no chestnut visible, and this same file is queued against three different Overcingel trees"
     },
     {
      "title": "File:Landgoed Overcingel Assen.jpg",
@@ -37204,7 +37237,9 @@
      "author": "Anthony Ruijtenbeek",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:June 2024 in Assen Category:Netherlands photographs taken on 2024-06-27 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:June 2024 in Assen Category:Netherlands photographs taken on 2024-06-27 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the Overcingel manor house is the subject, trees only as background screening"
     },
     {
      "title": "File:Overcingel Assen.jpg",
@@ -37218,7 +37253,8 @@
      "judged": "reject",
      "verdict": "viewed at 960px: the same crocus-and-manor view, no subject tree"
     }
-   ]
+   ],
+   "exhausted": "both candidates are the estate gate and the manor house, neither shows the horse chestnut"
   },
   "ass_002": {
    "city": "Assen",
@@ -37282,7 +37318,9 @@
      "author": "Yvonique",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS",
+     "judged": "reject",
+     "verdict": "entrance gate and hedge, no oak in frame; byte-identical file also queued against two other Overcingel trees"
     },
     {
      "title": "File:Landgoed Overcingel Assen.jpg",
@@ -37304,7 +37342,9 @@
      "author": "Anthony Ruijtenbeek",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:June 2024 in Assen Category:Netherlands photographs taken on 2024-06-27 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:June 2024 in Assen Category:Netherlands photographs taken on 2024-06-27 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "manor house frontage, no hollow oak visible"
     },
     {
      "title": "File:Overcingel Assen.jpg",
@@ -37318,7 +37358,8 @@
      "judged": "reject",
      "verdict": "viewed at 960px: the same crocus-and-manor view, no subject tree"
     }
-   ]
+   ],
+   "exhausted": "both candidates are estate scenery shared with other Overcingel trees, no oak readable"
   },
   "ass_003": {
    "city": "Assen",
@@ -37378,9 +37419,12 @@
      "author": "Ronn",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Grafmonument Valkenstijn Category:Photographs by Ronn Boef Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Grafmonument Valkenstijn Category:Photographs by Ronn Boef Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a cast-iron grave monument fills the frame, foliage is only backdrop; not a photograph of the oak"
     }
-   ]
+   ],
+   "exhausted": "the only candidate is the Valkenstijn grave monument, not the tree"
   },
   "ass_005": {
    "city": "Assen",
@@ -37434,7 +37478,9 @@
      "author": "Anthony Ruijtenbeek",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:March 2024 in Assen Category:Netherlands photographs taken on 2024-03-29 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten missing SDC location of creation Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:March 2024 in Assen Category:Netherlands photographs taken on 2024-03-29 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten missing SDC location of creation Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a white bench and the canal are the subject, bare winter trees line both banks and no bald cypress is identifiable"
     },
     {
      "title": "File:Landgoed Overcingel, Assen.JPG",
@@ -37444,7 +37490,9 @@
      "author": "Yvonique",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS",
+     "judged": "reject",
+     "verdict": "the estate gate seen from the pavement, hedge and canopy only, no cypress"
     },
     {
      "title": "File:Landgoed Overcingel 2.JPG",
@@ -37454,7 +37502,9 @@
      "author": "Yvonique",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-29 Category:Overcingel Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A3000 IS",
+     "judged": "reject",
+     "verdict": "byte-identical to the gate photograph queued against two other Overcingel trees, and it shows no cypress"
     },
     {
      "title": "File:Landgoed Overcingel Assen.jpg",
@@ -37476,7 +37526,9 @@
      "author": "Anthony Ruijtenbeek",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:June 2024 in Assen Category:Netherlands photographs taken on 2024-06-27 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:June 2024 in Assen Category:Netherlands photographs taken on 2024-06-27 Category:Overcingel Category:Photographs by Anthony Ruijtenbeek Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the manor house frontage again, queued a second time against this tree; no bald cypress in the frame"
     },
     {
      "title": "File:Overcingel Assen.jpg",
@@ -37490,7 +37542,8 @@
      "judged": "reject",
      "verdict": "viewed at 960px: the same crocus-and-manor view, no subject tree"
     }
-   ]
+   ],
+   "exhausted": "canal bench view plus two frames of the estate gate; the broken cypress appears in none of them"
   },
   "ass_008": {
    "city": "Assen",
@@ -39480,9 +39533,12 @@
      "author": "JanB46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Malvaceae in the Netherlands Category:Self-published work Category:Trees in the Netherlands Category:Unidentified Tilia Category:Worpplantsoen, Deventer"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Malvaceae in the Netherlands Category:Self-published work Category:Trees in the Netherlands Category:Unidentified Tilia Category:Worpplantsoen, Deventer",
+     "judged": "reject",
+     "verdict": "a grove of park trees with no single subject; the nearest trunk is cropped and nothing identifies it as the black walnut"
     }
-   ]
+   ],
+   "exhausted": "the only candidate is a general woodland view of the Worpplantsoen"
   },
   "dev_004": {
    "city": "Deventer",
@@ -39745,7 +39801,9 @@
      "author": "Rijksmuseum",
      "lat": null,
      "lng": null,
-     "cats": "Category:Albumen prints in the Rijksmuseum Amsterdam Category:Auditoria in Overijssel Category:CC-Zero Category:Deventer in the 19th century Category:Oude Algemene begraafplaats Diepenveenseweg"
+     "cats": "Category:Albumen prints in the Rijksmuseum Amsterdam Category:Auditoria in Overijssel Category:CC-Zero Category:Deventer in the 19th century Category:Oude Algemene begraafplaats Diepenveenseweg",
+     "judged": "reject",
+     "verdict": "sepia archival albumen print of the cemetery chapel, no weeping beech and not a colour photograph"
     },
     {
      "title": "File:Deventer-diepenveenseweg-208557.jpg",
@@ -39767,7 +39825,9 @@
      "author": "Pim van Tend",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Deventer Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Template Unknown (unspecified)"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Deventer Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Template Unknown (unspecified)",
+     "judged": "reject",
+     "verdict": "a brick institutional building on the street, matched on the street name; the trees in frame are young street limes"
     },
     {
      "title": "File:Diepenveenseweg 22 - 26 Deventer.jpg",
@@ -39777,7 +39837,9 @@
      "author": "JanB46",
      "lat": null,
      "lng": null,
-     "cats": "Category:2013 in Deventer Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Deventer Category:Houses in Deventer Category:Netherlands photographs taken on 2013-08-30 Category:Self-published work Category:Taken with Canon PowerShot A1200"
+     "cats": "Category:2013 in Deventer Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Deventer Category:Houses in Deventer Category:Netherlands photographs taken on 2013-08-30 Category:Self-published work Category:Taken with Canon PowerShot A1200",
+     "judged": "reject",
+     "verdict": "a row of brick houses is the subject, one young street tree at the right edge, no weeping beech"
     },
     {
      "title": "File:Diepenveenseweg 70 Deventer 2013.jpg",
@@ -39787,7 +39849,9 @@
      "author": "JanB46",
      "lat": null,
      "lng": null,
-     "cats": "Category:2013 in Deventer Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Deventer Category:Houses in Deventer Category:Netherlands photographs taken on 2013-09-03 Category:Self-published work Category:Taken with Canon PowerShot A1200"
+     "cats": "Category:2013 in Deventer Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Deventer Category:Houses in Deventer Category:Netherlands photographs taken on 2013-09-03 Category:Self-published work Category:Taken with Canon PowerShot A1200",
+     "judged": "reject",
+     "verdict": "a brick house with an estate agent's board, matched on the street number; no beech"
     },
     {
      "title": "File:Olst-diepenveenseweg-254080.jpg",
@@ -39797,7 +39861,9 @@
      "author": "Pim van Tend",
      "lat": null,
      "lng": null,
-     "cats": "Category:2025 in Olst-Wijhe Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Olst-Wijhe Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2025-06-12 Category:Self-published work"
+     "cats": "Category:2025 in Olst-Wijhe Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Olst-Wijhe Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2025-06-12 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a garden and chapel gable in OLST, a different municipality matched on the same street name; the copper-leaved tree here is not our weeping beech"
     },
     {
      "title": "File:Olst-diepenveenseweg-254081.jpg",
@@ -39807,7 +39873,9 @@
      "author": "Pim van Tend",
      "lat": null,
      "lng": null,
-     "cats": "Category:2025 in Olst-Wijhe Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Olst-Wijhe Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2025-06-12 Category:Self-published work"
+     "cats": "Category:2025 in Olst-Wijhe Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Olst-Wijhe Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2025-06-12 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a farmhouse behind a hedge in Olst, wrong town, no beech"
     },
     {
      "title": "File:Woning Diepenveenseweg 68 Deventer.jpg",
@@ -39817,9 +39885,12 @@
      "author": "JanB46",
      "lat": null,
      "lng": null,
-     "cats": "Category:2013 in Deventer Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Deventer Category:Houses in Deventer Category:Netherlands photographs taken on 2013-08-30 Category:Self-published work Category:Taken with Canon PowerShot A1200"
+     "cats": "Category:2013 in Deventer Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Deventer Category:Houses in Deventer Category:Netherlands photographs taken on 2013-08-30 Category:Self-published work Category:Taken with Canon PowerShot A1200",
+     "judged": "reject",
+     "verdict": "a house front with a garden table, matched on the street number; no beech"
     }
-   ]
+   ],
+   "exhausted": "one archival cemetery print and two street-name matches showing buildings; no weeping beech in any of them"
   },
   "dev_007": {
    "city": "Deventer",
@@ -39866,7 +39937,9 @@
      "author": "CasparusJeronimus",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Muscovy ducks (domesticated) Category:Park Merwestein, Dordrecht Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Muscovy ducks (domesticated) Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a muscovy duck on the pond bank; no tree in the frame at all"
     },
     {
      "title": "File:Park Merwestein, Dordrecht - IMG 0144.jpg",
@@ -39876,7 +39949,9 @@
      "author": "CasparusJeronimus",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Domesticated geese Category:Park Merwestein, Dordrecht Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Domesticated geese Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a greylag goose in front of a thin smooth trunk; the bird is the subject and the trunk is not a black locust"
     },
     {
      "title": "File:Park Merwestein, Dordrecht - IMG 9899.jpg",
@@ -39886,7 +39961,9 @@
      "author": "CasparusJeronimus",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Dama dama in zoos Category:Park Merwestein, Dordrecht Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Dama dama in zoos Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a fallow deer on the park paving, trees only as a dark background"
     },
     {
      "title": "File:Park Merwestein - Dordrecht - 20063312 - RCE.jpg",
@@ -39896,9 +39973,12 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:1896 in Dordrecht Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten with known IDs Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Park Merwestein, Dordrecht Category:Template Unknown (author)"
+     "cats": "Category:1896 in Dordrecht Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten with known IDs Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Park Merwestein, Dordrecht Category:Template Unknown (author)",
+     "judged": "reject",
+     "verdict": "archival black-and-white glass-plate view of the park pond; no single tree is the subject and it is not a colour photograph"
     }
-   ]
+   ],
+   "exhausted": "all three candidates are wildlife photographs taken in Park Merwestein, none shows the black locust"
   },
   "dor_002": {
    "city": "Dordrecht",
@@ -39953,7 +40033,9 @@
      "author": "Rudolphous",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht"
+     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht",
+     "judged": "reject",
+     "verdict": "a brick house facade fills the frame; only a conifer edge at left, no copper beech"
     },
     {
      "title": "File:Dordrecht - Varkenmarkt 128-130.JPG",
@@ -39963,7 +40045,9 @@
      "author": "Rudolphous",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht"
+     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht",
+     "judged": "reject",
+     "verdict": "a listed house on the Varkenmarkt, no tree anywhere in the frame"
     },
     {
      "title": "File:Dordrecht - Varkenmarkt 142-144.JPG",
@@ -39973,7 +40057,9 @@
      "author": "Rudolphous",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht"
+     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht",
+     "judged": "reject",
+     "verdict": "street corner with a poem on a gable end, matched on the street name only; no beech"
     },
     {
      "title": "File:Dordrecht - Varkenmarkt 39.JPG",
@@ -39983,7 +40069,9 @@
      "author": "Rudolphous",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht"
+     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht",
+     "judged": "reject",
+     "verdict": "a white house front on the Varkenmarkt, no tree at all"
     },
     {
      "title": "File:Dordrecht - Varkenmarkt 78.JPG",
@@ -39993,7 +40081,9 @@
      "author": "Rudolphous",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht"
+     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht",
+     "judged": "reject",
+     "verdict": "brick house facade with ivy on the door, matched on the address; no beech"
     },
     {
      "title": "File:Dordrecht - Varkenmarkt 84.JPG",
@@ -40003,7 +40093,9 @@
      "author": "Rudolphous",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht"
+     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht",
+     "judged": "reject",
+     "verdict": "another Varkenmarkt house front, no tree in the frame"
     },
     {
      "title": "File:Dordrecht - Varkenmarkt 94.JPG",
@@ -40013,7 +40105,9 @@
      "author": "Rudolphous",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht"
+     "cats": "Category:2011 in Dordrecht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:Images from Wiki Loves Monuments missing SDC creator Category:License migration redundant Category:Netherlands photographs taken on 2011-09-22 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten in Dordrecht Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A350 Category:Varkenmarkt, Dordrecht",
+     "judged": "reject",
+     "verdict": "a grey rendered house with a parked car, no tree"
     },
     {
      "title": "File:Varkenmarkt - Dordrecht - 20060185 - RCE.jpg",
@@ -40023,9 +40117,12 @@
      "author": "Gerard Dukker",
      "lat": null,
      "lng": null,
-     "cats": "Category:Automobiles in the Netherlands Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Gerard Dukker in Dordrecht (1979) Category:Varkenmarkt, Dordrecht Category:Varkenmarkt 13, Dordrecht Category:Varkenmarkt 9, Dordrecht"
+     "cats": "Category:Automobiles in the Netherlands Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Gerard Dukker in Dordrecht (1979) Category:Varkenmarkt, Dordrecht Category:Varkenmarkt 13, Dordrecht Category:Varkenmarkt 9, Dordrecht",
+     "judged": "reject",
+     "verdict": "archival black-and-white 1970s street survey photograph, no beech"
     }
-   ]
+   ],
+   "exhausted": "all three candidates are Varkenmarkt building photographs matched on the address, none shows the copper beech"
   },
   "dor_005": {
    "city": "Dordrecht",
@@ -40641,9 +40738,12 @@
      "author": "Gerard Dukker",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Noordeind 21, Emmen Category:Photographs by Gerard Dukker Category:Rijksmonumenten with known IDs Category:Thatched roofs in Emmen, Netherlands"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Noordeind 21, Emmen Category:Photographs by Gerard Dukker Category:Rijksmonumenten with known IDs Category:Thatched roofs in Emmen, Netherlands",
+     "judged": "reject",
+     "verdict": "black-and-white heritage survey photograph of a thatched farmhouse with a dog; the lime is only overhanging foliage at the top corner"
     }
-   ]
+   ],
+   "exhausted": "the only candidate is an archival black-and-white RCE farmhouse survey photograph"
   },
   "emm_002": {
    "city": "Emmen",
@@ -40680,7 +40780,9 @@
      "author": "Hans van Beelen",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Netherlands photographs taken on 1946-04-10 Category:Nieuw-Schoonebeek Category:Photographs by J.A. van Beelen Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Potato barns in the Netherlands"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Netherlands photographs taken on 1946-04-10 Category:Nieuw-Schoonebeek Category:Photographs by J.A. van Beelen Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Potato barns in the Netherlands",
+     "judged": "reject",
+     "verdict": "archival black-and-white photograph of a thatched potato hut with two boys; birches in the background, no copper beech"
     },
     {
      "title": "File:Achtergevel - Nieuw-Schoonebeek - 20461948 - RCE.jpg",
@@ -40690,7 +40792,9 @@
      "author": "Hans van Beelen",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Farms in Emmen, Netherlands Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Netherlands photographs taken on 1946-05-01 Category:Nieuw-Schoonebeek Category:Photographs by J.A. van Beelen Category:Possible Rijksmonumenten in Nieuw-Schoonebeek"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Farms in Emmen, Netherlands Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Netherlands photographs taken on 1946-05-01 Category:Nieuw-Schoonebeek Category:Photographs by J.A. van Beelen Category:Possible Rijksmonumenten in Nieuw-Schoonebeek",
+     "judged": "reject",
+     "verdict": "archival black-and-white rear elevation of a farm building, matched on the village name"
     },
     {
      "title": "File:Deur met inscripties - Nieuw-Schoonebeek - 20516119 - RCE.jpg",
@@ -40700,7 +40804,9 @@
      "author": "Hans van Beelen",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Low quality images of doors in Drenthe Category:Netherlands photographs taken on 1946-05-01 Category:Nieuw-Schoonebeek Category:Photographs by J.A. van Beelen Category:Possible Rijksmonumenten in Nieuw-Schoonebeek"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Low quality images of doors in Drenthe Category:Netherlands photographs taken on 1946-05-01 Category:Nieuw-Schoonebeek Category:Photographs by J.A. van Beelen Category:Possible Rijksmonumenten in Nieuw-Schoonebeek",
+     "judged": "reject",
+     "verdict": "black-and-white close-up of an inscribed plank door, no tree at all"
     },
     {
      "title": "File:Gevel boerderij - Nieuw-Schoonebeek - 20414129 - RCE.jpg",
@@ -40710,7 +40816,9 @@
      "author": "Elias Canneman",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Farms in Emmen, Netherlands Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nieuw-Schoonebeek Category:Photographs by E.A. Canneman Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Thatched roofs in Drenthe"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Farms in Emmen, Netherlands Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nieuw-Schoonebeek Category:Photographs by E.A. Canneman Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Thatched roofs in Drenthe",
+     "judged": "reject",
+     "verdict": "black-and-white heritage photograph of a thatched barn gable, no copper beech"
     },
     {
      "title": "File:Plaggenhut ? - Nieuw-Schoonebeek - 20507000 - RCE.jpg",
@@ -40720,7 +40828,9 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Netherlands photographs taken on 1943-03-18 Category:Nieuw-Schoonebeek Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Template Unknown (author)"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Netherlands photographs taken on 1943-03-18 Category:Nieuw-Schoonebeek Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Template Unknown (author)",
+     "judged": "reject",
+     "verdict": "black-and-white archival photograph of a sod hut among birches"
     },
     {
      "title": "File:Zij- en achtergevel - Nieuw-Schoonebeek - 20507001 - RCE.jpg",
@@ -40730,7 +40840,9 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Farms in Emmen, Netherlands Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Netherlands photographs taken on 1943-03-18 Category:Nieuw-Schoonebeek Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Template Unknown (author)"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Farms in Emmen, Netherlands Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Netherlands photographs taken on 1943-03-18 Category:Nieuw-Schoonebeek Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Template Unknown (author)",
+     "judged": "reject",
+     "verdict": "black-and-white archival farm building elevation"
     },
     {
      "title": "File:Zijgevel - Nieuw-Schoonebeek - 20510320 - RCE.jpg",
@@ -40740,9 +40852,12 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Low quality images of barns in the Netherlands Category:Netherlands photographs taken on 1956-09-10 Category:Nieuw-Schoonebeek Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Template Unknown (author)"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Low quality images of barns in the Netherlands Category:Netherlands photographs taken on 1956-09-10 Category:Nieuw-Schoonebeek Category:Possible Rijksmonumenten in Nieuw-Schoonebeek Category:Template Unknown (author)",
+     "judged": "reject",
+     "verdict": "black-and-white archival barn side elevation, bare scrub in front, no beech"
     }
-   ]
+   ],
+   "exhausted": "all three candidates are archival black-and-white RCE heritage photographs of buildings in the village"
   },
   "emm_006": {
    "city": "Emmen",
@@ -42780,9 +42895,12 @@
      "author": "Michiel1972",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2010 Category:Images from Wiki takes Haarlem Category:License migration redundant Category:Netherlands photographs taken on 2010-09-25 Category:Prinsenhof 7, Haarlem Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot SX200 IS"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2010 Category:Images from Wiki takes Haarlem Category:License migration redundant Category:Netherlands photographs taken on 2010-09-25 Category:Prinsenhof 7, Haarlem Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot SX200 IS",
+     "judged": "reject",
+     "verdict": "a brick Prinsenhof street facade under grey rain; no beech in the frame"
     }
-   ]
+   ],
+   "exhausted": "the only candidate is a listed-building photograph of Prinsenhof 7"
   },
   "haa_006": {
    "city": "Haarlem",
@@ -42829,7 +42947,9 @@
      "author": "archengigi",
      "lat": 52.385992,
      "lng": 4.631821,
-     "cats": "Category:CC-BY-3.0 Category:Kenaupark Category:Media needing category review as of 4 November 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-3.0 Category:Kenaupark Category:Media needing category review as of 4 November 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "wide canal panorama with a church and bare spring trees; no conifer and no single subject"
     },
     {
      "title": "File:Kenaupark 1 Haarlem.jpeg",
@@ -42839,7 +42959,9 @@
      "author": "Familieman",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Kenaupark Category:License migration redundant Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Kenaupark Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a horse chestnut in flower on the Kenaupark lawn in front of the villas, a broadleaf and not the bald cypress; the same file is also queued against the planes"
     },
     {
      "title": "File:Kenaupark Haarlem.JPG",
@@ -42849,7 +42971,9 @@
      "author": "Marcelmulder68",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Kenaupark Category:Kenaupark 19, Haarlem Category:Kenaupark 21, Haarlem Category:Kenaupark 23, Haarlem Category:Kenaupark 25, Haarlem Category:Kenaupark 27, Haarlem Category:Kenaupark 29, Haarlem Category:Kenaupark 31, Haarlem Category:Kenaupark 33, Haarlem Category:Photographs by Marcel Mulder Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Kenaupark Category:Kenaupark 19, Haarlem Category:Kenaupark 21, Haarlem Category:Kenaupark 23, Haarlem Category:Kenaupark 25, Haarlem Category:Kenaupark 27, Haarlem Category:Kenaupark 29, Haarlem Category:Kenaupark 31, Haarlem Category:Kenaupark 33, Haarlem Category:Photographs by Marcel Mulder Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "crocus lawn with two bare broadleaf trees before the white villa terrace; no bald cypress, and the villas hold the centre band"
     },
     {
      "title": "File:Kenaupark Haarlem 4.JPG",
@@ -42859,9 +42983,12 @@
      "author": "Arch",
      "lat": null,
      "lng": null,
-     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work"
+     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a stitched panorama of park paths and bare trees, no conifer and nothing that fills the frame"
     }
-   ]
+   ],
+   "exhausted": "every candidate is a wide Kenaupark scene of broadleaf trees, villas or the canal; no bald cypress is readable in any of them"
   },
   "haa_008": {
    "city": "Haarlem",
@@ -42913,7 +43040,9 @@
      "author": "Familieman",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Kenaupark Category:License migration redundant Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Kenaupark Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a flowering horse chestnut is the subject, not a plane; byte-identical file also queued against the bald cypresses"
     },
     {
      "title": "File:Kenaupark Haarlem.JPG",
@@ -42923,7 +43052,9 @@
      "author": "Marcelmulder68",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Kenaupark Category:Kenaupark 19, Haarlem Category:Kenaupark 21, Haarlem Category:Kenaupark 23, Haarlem Category:Kenaupark 25, Haarlem Category:Kenaupark 27, Haarlem Category:Kenaupark 29, Haarlem Category:Kenaupark 31, Haarlem Category:Kenaupark 33, Haarlem Category:Photographs by Marcel Mulder Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Kenaupark Category:Kenaupark 19, Haarlem Category:Kenaupark 21, Haarlem Category:Kenaupark 23, Haarlem Category:Kenaupark 25, Haarlem Category:Kenaupark 27, Haarlem Category:Kenaupark 29, Haarlem Category:Kenaupark 31, Haarlem Category:Kenaupark 33, Haarlem Category:Photographs by Marcel Mulder Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a plane is visible bare among crocuses but the white villa terrace fills the centre band and the tree is one element of a park view"
     },
     {
      "title": "File:Kenaupark Haarlem 4.JPG",
@@ -42933,9 +43064,12 @@
      "author": "Arch",
      "lat": null,
      "lng": null,
-     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work"
+     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work",
+     "judged": "reject",
+     "verdict": "panoramic park view of paths and bare trees, no plane fills the frame"
     }
-   ]
+   ],
+   "exhausted": "all candidates are wide Kenaupark views; the planes appear only as part of the scenery, never as the subject"
   },
   "haa_009": {
    "city": "Haarlem",
@@ -64746,9 +64880,12 @@
      "author": "Henk Monster",
      "lat": 51.812031,
      "lng": 4.668278,
-     "cats": "Category:2014 in Dordrecht Category:CC-BY-3.0 Category:Netherlands photographs taken on 2014-08-01 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Spaarbank, Dordrecht"
+     "cats": "Category:2014 in Dordrecht Category:CC-BY-3.0 Category:Netherlands photographs taken on 2014-08-01 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Spaarbank, Dordrecht",
+     "judged": "reject",
+     "verdict": "a red-brick monumental building is the subject; the tree at the left edge is a lime and is cut off by the frame"
     }
-   ]
+   ],
+   "exhausted": "the only candidate is a building photograph with a lime clipped at the frame edge"
   },
   "dor_011": {
    "city": "Dordrecht",
@@ -64764,9 +64901,12 @@
      "author": "Paul van de Velde",
      "lat": 51.812477,
      "lng": 4.660466,
-     "cats": "Category:2022 in Dordrecht Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Netherlands photographs taken on 2022-03-25 Category:Spuihaven (Dordrecht)"
+     "cats": "Category:2022 in Dordrecht Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Netherlands photographs taken on 2022-03-25 Category:Spuihaven (Dordrecht)",
+     "judged": "reject",
+     "verdict": "misty canal view of apartment blocks with a bare avenue on the far bank; no single lime is the subject and its geotag sits 270 m from our pin"
     }
-   ]
+   ],
+   "exhausted": "the only candidate is a wide misty canal view 270 m from the pin"
   },
   "dor_012": {
    "city": "Dordrecht",
@@ -67347,7 +67487,9 @@
      "author": "JakobHosp",
      "lat": 52.65680773,
      "lng": 6.69040354,
-     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android"
+     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "a fenced industrial yard with graffitied sheds 3.5 km from the pin; no maple, no castle"
     },
     {
      "title": "File:Coevorden nieuwe krim Slagharen opslagloodsen (15709).jpg",
@@ -67357,7 +67499,9 @@
      "author": "JakobHosp",
      "lat": 52.66042061,
      "lng": 6.7059678,
-     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android"
+     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "the same industrial site from another angle, 2.4 km from the pin, no tree is the subject"
     },
     {
      "title": "File:Coevorden nieuwe krim Slagharen opslagloodsen (87025).jpg",
@@ -67367,9 +67511,12 @@
      "author": "JakobHosp",
      "lat": 52.65800702,
      "lng": 6.66966696,
-     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android"
+     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "corrugated storage units with a for-sale board, 4.9 km from the pin"
     }
-   ]
+   ],
+   "exhausted": "all three candidates are the same industrial estate kilometres from Coevorden Castle"
   },
   "ghn_001": {
    "city": "Giethoorn",
