@@ -336,6 +336,8 @@ final class Sightings {
              // Your own tree needs no line telling it apart from its
              // neighbours: you are the only person who has one.
              recogniseRaw: nil,
+             // Nor a line saying why to go: you already went.
+             whyGoRaw: nil,
              url: "",
              // You photographed it where you stood, which is the one field a
              // tree of yours is never vague about.
