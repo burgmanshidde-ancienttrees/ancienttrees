@@ -50,7 +50,12 @@
       ],
       "access": "Free, temple grounds open daily 9:00-17:00 year-round. Public Zen temple courtyard, no appointment needed.",
       "transport": "About 40 minutes by bus from Kofu Station",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed"
     },
@@ -77,10 +82,22 @@
       ],
       "access": "Free, no ticket. Stands on municipal land (the site of a former shrine), reached by public residential streets/alleys. The lane in is narrow with no dedicated parking, and it sits among houses, so visitors should be quiet and considerate of residents.",
       "transport": "About 30 minutes by bus from JR Kofu Station to Nakajo-iriguchi stop, then about 15 minutes on foot; about 10 minutes by car from the Chubu-Odan Expressway's Minami-Alps IC",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when a crown this wide turns rust and drops inside a fortnight" }
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when a crown this wide turns rust and drops inside a fortnight"
+      },
+      "how_to_recognise": "You can recognise it by looking like two trees leaning together, lightning having burned out the trunk's core, 14.2 metres round. It stands on the site of a former shrine at Terabe, down a narrow residential lane."
     }
   ]
 }

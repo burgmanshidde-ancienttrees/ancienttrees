@@ -61,7 +61,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its trunk, 8.1 metres round, the thickest of Japan's three great kaya trees. It stands on the Kanazawa family's private land at Yokomuro, Fujimi-cho, on ground a Suwa Shrine once occupied."
     },
     {
       "id": "mae_002",
@@ -88,7 +89,9 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "best_time": {
-        "months": [10],
+        "months": [
+          10
+        ],
         "kind": "flowers",
         "label": "mid-October, when it opens for three or four days and the air goes sweet"
       },
