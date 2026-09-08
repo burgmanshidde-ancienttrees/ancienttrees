@@ -9,9 +9,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Apple (Malus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Apple Tree of Zabudišová', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Borovica lesná zo Veľké Borové",
@@ -22,9 +23,10 @@
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_03.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Pine of Veľké Borové', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Buk lesný zo Starý Smokovec",
@@ -107,9 +109,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2016_Pear_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Pear (Pyrus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Pink Pear of Bošáca', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Plane tree from Budatin",
@@ -130,9 +133,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_from_Komjatice_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Plane Tree of Komjatice', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Sorb tree near Uzovská Panica",
@@ -285,18 +289,6 @@
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "note_verify": "One source only, so not shipped. Matches our own register (data/registers/slovakia-chranene-stromy.json, register_id 335, 'Silicka lipa', lipa malolista/small-leaved lime, single tree, publishable true, 'vo vnutri oplotenia objektu reform. kostola' = inside the fence of the reformed church building, 48.5552/20.5245, closely matching this lead's 48.555034/20.524493) and confirmed the church itself is real and historic (slovensky-kras.eu, reformed church built ~1525, late-Romanesque with a 13th-century tower, highest point in the village), but that church page does not mention the tree, and two more searches ('Silicka lipa chraneny strom vek obvod') returned nothing with an age or girth for this specific tree within a quick pass. Left as a lead; the register alone is one source and this project's bar needs two."
-    },
-    {
-      "name": "Lipová alej Pavla Ďurka, Beluša",
-      "lat": 49.073835,
-      "lng": 18.309638,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Lipov%C3%A1_alej_Pavla_%C4%8Eurka,_Belu%C5%A1a,_okres_P%C3%BAchov,_Tren%C4%8D%C3%ADnsk%C3%BD_kraj,_Slovensko_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Lipov%C3%A1_alej_Pavla_%C4%8Eurka,_Belu%C5%A1a,_okres_P%C3%BAchov,_Tren%C4%8D%C3%ADnsk%C3%BD_kraj,_Slovensko_02.jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
       "name": "Lipy pri Hronseckom kostolíku",
@@ -545,9 +537,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_from_Komjatice_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Plane Tree of Komjatice', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Buk lesný zo Starý Smokovec",
@@ -582,9 +575,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Apple (Malus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Apple Tree of Zabudišová', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Lipa u Belanských",
@@ -632,9 +626,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2016_Pear_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Pear (Pyrus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Pink Pear of Bošáca', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Tilia of King Matthias Corvinus in Bojnice",
@@ -669,7 +664,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Hrani%C4%8Dn%C3%A1_hru%C5%A1ka,_Borsk%C3%BD_Sv%C3%A4t%C3%BD_J%C3%BAr,_okres_Senica.jpg"
       ],
-      "status": "lead"
+      "status": "lead",
+      "note_verify": "Verified as real: wild pear (Pyrus pyraster), roughly 200 years old, 240cm circumference, 12m tall, standing on the boundary between the Kuty and Borsky Svaty Jur cadastral areas by the Myjava river (Senica district). Two independent sources agree on the figures: Ekopolis's Strom Roka 2022 finalist page (ekopolis.sk/zivotne-prostredie/strom-roka/finalisti/hruska_plana_kuty, read via search summary, direct fetch returned 404) and zahori.sk's article on three 2022 Zahorie Strom Roka nominees, which independently reports the same age, girth and height and adds that a local civic association harvests its fruit for brandy each autumn. Not in the national protected-trees register (nearest register entry over 25km away). Likely planted deliberately as a boundary marker; the source itself notes other similarly old wild pears stand further along the same river, i.e. this is one of a small local family of comparable boundary pears rather than a unique specimen. REJECTED on the single-tree-destination test: a 2022 regional competition finalist that did not win, valued locally rather than famous, no photo beyond one Commons image. Two-source bar clears; destination bar does not. Also too far (>25km) from any published city cluster to fold in as a day-trip addition. Left as a lead in case a later win, wider press or a stronger why-go changes the picture."
     },
     {
       "name": "Lime tree of Kopčany",
@@ -706,9 +702,10 @@
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_03.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
       "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified as 'The Pine of Veľké Borové', see data/research/famousslovakia-batchA-verified.json"
     },
     {
       "name": "Javor v Žiline",
@@ -722,19 +719,6 @@
       "status": "RESOLVED 2026-09-06, delivered as zil_003 (joined Žilina cluster)",
       "species": "Maple (Acer sp.), Slovak register says javor cukrovy (usually Acer saccharum, sugar maple), sk.wikipedia's own protected-tree list gives the binomial as Acer saccharinum (silver maple) for this exact register row -- a real conflict, not resolved here, ask the reader/writer to check the leaves in person",
       "note_verify": "Existence/species/locality confirmed on two sources: our own register (register_id 188, publishable: true, Sokolovska ulica, Zilina) and sk.wikipedia's 'Zoznam chranenych stromov na Slovensku' (S188, same locality, managed by Sprava NP Mala Fatra). Register's own protection reason is a real hook: 'the only specimen of this species of advanced age in the district', a North American exotic. NOT SHIPPED as a place of its own: no dedicated coverage found beyond the two register-derived listings, no legend or wider fame, so it does not clear the single-famous-tree destination bar on its own. Its sibling lead 'Lipy v Ziline' sits about 1.2km away (not walkable as one stop) and is in the same position. Held together as two leads for a future Zilina cluster if more register/press material for that city turns up; Zilina is Slovakia's 4th-largest city and currently unpublished, worth a dedicated scouting pass rather than being forced into a place on this evidence."
-    },
-    {
-      "name": "Linden alley in Liptovský Hrádok",
-      "lat": 49.034764,
-      "lng": 19.723169,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Liptovsk%C3%BD_Hr%C3%A1dok_-_Lipov%C3%A1_alej_v_zime.JPG",
-        "https://commons.wikimedia.org/wiki/File:Liptovsk%C3%BD_Hr%C3%A1dok_-_Lipov%C3%A1_aleja_-_18._10._2020.jpg",
-        "https://commons.wikimedia.org/wiki/File:Liptovsk%C3%BD_Hr%C3%A1dok_-_Lipov%C3%A1_aleja_-_2._4._2021.jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
       "name": "Lipy v Žiline",
@@ -786,18 +770,6 @@
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
-      "name": "Stromoradia líp v Zázrivej",
-      "lat": 49.278496,
-      "lng": 19.156557,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Z%C3%A1zriv%C3%A1_-_Chr%C3%A1nen%C3%A9_lipy_ve%C4%BEkolist%C3%A9_pri_starom_kostole_(ev._%C4%8D._S_268)_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Z%C3%A1zriv%C3%A1_-_Chr%C3%A1nen%C3%A9_lipy_ve%C4%BEkolist%C3%A9_pri_starom_kostole_(ev._%C4%8D._S_268)_02.jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "The Lime of Slovak statehood in Dolný Kubín",
       "lat": null,
       "lng": null,
@@ -822,6 +794,48 @@
       "status": "lead",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Lipová alej Pavla Ďurka, Beluša",
+      "lat": 49.073835,
+      "lng": 18.309638,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lipov%C3%A1_alej_Pavla_%C4%8Eurka,_Belu%C5%A1a,_okres_P%C3%BAchov,_Tren%C4%8D%C3%ADnsk%C3%BD_kraj,_Slovensko_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Lipov%C3%A1_alej_Pavla_%C4%8Eurka,_Belu%C5%A1a,_okres_P%C3%BAchov,_Tren%C4%8D%C3%ADnsk%C3%BD_kraj,_Slovensko_02.jpg"
+      ],
+      "status": "blocked",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "blocked_reason": "Confirmed as a lime avenue, not a single tree: no source names a single specimen at its head, and the naming pattern (alej = avenue) matches the other Slovak avenues in this file. No register entry within 1.8km to corroborate a single point either. Fails the collectible-point rule (CLAUDE.md): an avenue/row is not a single collectible point unless it is a compact, famous ensemble with one obvious place to stand, which this is not (no single vantage point documented, no fame beyond a Commons category)."
+    },
+    {
+      "name": "Linden alley in Liptovský Hrádok",
+      "lat": 49.034764,
+      "lng": 19.723169,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Liptovsk%C3%BD_Hr%C3%A1dok_-_Lipov%C3%A1_alej_v_zime.JPG",
+        "https://commons.wikimedia.org/wiki/File:Liptovsk%C3%BD_Hr%C3%A1dok_-_Lipov%C3%A1_aleja_-_18._10._2020.jpg",
+        "https://commons.wikimedia.org/wiki/File:Liptovsk%C3%BD_Hr%C3%A1dok_-_Lipov%C3%A1_aleja_-_2._4._2021.jpg"
+      ],
+      "status": "blocked",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "blocked_reason": "Confirmed via visitliptov.sk and local press (mymikulas.sme.sk, Lipova alej dostala penize na najnutnejsie osetrenie): planted 1777, declared a protected natural monument 1975, currently 123 small-leaved linden trees aged 80-230 years, spanning a park-like area Pod lipami with a chapel and church. This is unambiguously an ensemble of 123 trees over an extended area, not a single collectible point. Blocked under the avenue/whole-wood rule."
+    },
+    {
+      "name": "Stromoradia líp v Zázrivej",
+      "lat": 49.278496,
+      "lng": 19.156557,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Z%C3%A1zriv%C3%A1_-_Chr%C3%A1nen%C3%A9_lipy_ve%C4%BEkolist%C3%A9_pri_starom_kostole_(ev._%C4%8D._S_268)_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Z%C3%A1zriv%C3%A1_-_Chr%C3%A1nen%C3%A9_lipy_ve%C4%BEkolist%C3%A9_pri_starom_kostole_(ev._%C4%8D._S_268)_02.jpg"
+      ],
+      "status": "blocked",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "blocked_reason": "Confirmed by Slovakia's own national protected-trees register (data/registers/slovakia-chranene-stromy.json, register_id 268, Stromoradia lip pri starom kostole, tree_count 15, coordinates within 150m of the Commons photo location), which itself flags this designation publishable=false because it covers 15 trees, not one. Blocked under the avenue/row rule; the register's own field agrees."
     }
   ]
 }
