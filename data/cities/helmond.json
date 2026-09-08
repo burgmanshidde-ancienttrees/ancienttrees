@@ -2,17 +2,21 @@
   "city": "Helmond",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Kasteel Helmond has stood in the middle of this town for nearly seven hundred years, and until the middle of the last century it sat in a large landscape park. Most of that park went after 1921, when the last private owner sold up. Four trees from it are still standing, which makes the castle grounds the best surviving fragment of the thing. The rest of this page is a beech in a wood that was once hunting ground of the lords of Helmond, an oak beside a tower from about 1400, and an oak somebody wrote a book about.",
-  "meta_description": "Seven remarkable trees in Helmond: four survivors of the castle's lost landscape park, an oak by a tower from 1400, and the old oak of farmer Peeters.",
-  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and six more worth the walk.",
+  "intro": "Kasteel Helmond has stood here for nearly seven hundred years, and until the middle of the last century it sat in a large landscape park. Most of that went after 1921, when the last private owner sold up. Seven trees here still stand in what is left of the grounds, one a Chinese beech the register calls the oldest of its kind in the country. The rest of the page is a cemetery planted almost entirely in weeping trees, an oak beside a tower from about 1400, and an oak somebody wrote a book about.",
+  "meta_description": "Thirteen remarkable trees in Helmond: seven in the castle grounds including a rare Chinese beech, a cemetery of weeping trees, and the Peeters oak.",
+  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and twelve more worth the walk.",
   "question_answer": "The oldest tree in Helmond is the one known as de oude eik van boer Peeters, the old oak of farmer Peeters, on the Rijnlaan at Brouwhuis, which the national register places in a planting band of 1820 to 1830, so around two centuries old. Its name is not folklore we have collected: the register itself says the name comes from the book 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, which is a local history of the trees of Helmond and its surroundings. That is worth knowing because it means somebody in this town went to the trouble of writing down what its trees are called, and the national register then read it.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. Four of the seven stand in the grounds of Kasteel Helmond and share one piece of history: the castle has been here nearly seven hundred years, was surrounded by a large landscape park until the middle of the twentieth century, and lost most of that park after the last private owner sold it in 1921. The trees are what is left, and the three planted between 1880 and 1930 straddle that sale, so the oak belongs to the private park and the lime and the chestnut to the years just after it ended. Where a pin is marked approximate we know the grounds and not the trunk, which in a castle park is a real difference, and if you find one of these gone, tell us and it comes off the same day.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and for most of these trees it is the only source, so everything is flagged. Seven of the thirteen stand in the grounds of Kasteel Helmond and share one piece of history: the castle has been here nearly seven hundred years, was surrounded by a large landscape park until the middle of the twentieth century, and lost most of that park after the last private owner sold it in 1921. The trees there run from the 1880s to the 1940s, so some of them belong to the private park and some were planted into grounds that had already become the town's. Two more stand in the Molenstraat cemetery, founded in 1880. Where a pin is marked approximate we know the grounds and not the trunk, which in a castle park is a real difference, and if you find one of these gone, tell us and it comes off the same day.",
   "hero_tree_id": "hlm_001",
   "oldest_tree_id": "hlm_002",
   "faq": [
     {
       "q": "What happened to the park around Kasteel Helmond?",
-      "a": "It was largely lost. The castle stood in a large landscape park until the middle of the twentieth century, and most of that disappeared after the last private owner sold the castle in 1921. Four of the trees on this page are survivors of it."
+      "a": "It was largely lost. The castle stood in a large landscape park until the middle of the twentieth century, and most of that disappeared after the last private owner sold the castle in 1921. Seven of the trees on this page stand in what is left of the grounds, planted between the 1880s and the 1940s."
+    },
+    {
+      "q": "Which is the rarest tree in Helmond?",
+      "a": "The Chinese beech in the castle park, Fagus engleriana, which the register's own description calls the oldest and thickest of its kind in the Netherlands. The same entry's species field says European beech, most likely because the tree is grafted low onto ordinary beech rootstock. It is not the tree in those grounds that catches the eye, which the register also says."
     },
     {
       "q": "Who was farmer Peeters?",
@@ -24,7 +28,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All seven. The castle park is open ground in the centre of town, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis."
+      "a": "All thirteen. The castle park is open ground in the centre of town, the Molenstraat cemetery is a general public cemetery open in daylight, the cedar on the Julianalaan stands on a public square, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis."
     }
   ],
   "trees": [
@@ -279,6 +283,206 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "hlm_008",
+      "name": "The Chinese Beech of the Castle Park",
+      "species": "Chinese Beech (Fagus engleriana)",
+      "age_estimate": "roughly 95 to 105 years, from the register's planting band of 1920 to 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "girth_cm": 206,
+      "location": {
+        "address": "Castle park, Kasteelplein 1",
+        "latitude": 51.477469,
+        "longitude": 5.653585,
+        "neighbourhood": "Kasteelplein"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.monumentaltrees.com/en/nld/northbrabant/helmond/1100_kasteelpark/"
+      ],
+      "access": "Free. Open castle grounds in the centre of town.",
+      "transport": "In the centre of Helmond, at the Kasteelplein.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The national register lists this tree's species as European beech. The register's own description of it disagrees, at length.\n\nWhat that description says is that this is a Chinese beech, Fagus engleriana, a species almost nobody plants here, and that as far as anyone knows it is the oldest and thickest one in the Netherlands. It also says the thing that makes it worth the detour: it does not stand out. In grounds holding a silver maple, a silver lime, two horse chestnuts and a century-old oak, the rare tree is the plain one.\n\nThe register files it under three headings that between them explain the confusion. Rare species in the region. Of national importance. Clearly visible to the public.\n\nIt is grafted, low to the ground, onto the rootstock of an ordinary European beech, which is presumably where the species field got its answer. A nurseryman quoted in the entry gives the reason for the graft: seed of this species will not germinate in this country, so a Chinese beech in Dutch soil has to be carried on Dutch roots.\n\nThe town's own records put the planting at 1930. The single independent record of its size gives 2.06 metres round and 16.4 metres tall. For a European beech that would be ordinary. For this species in this country it is, apparently, the record.\n\nNobody has checked that ranking. If you know of a bigger one, tell us.",
+      "how_to_recognise": "You can recognise it by the graft low on the trunk, where ordinary beech rootstock meets the Chinese beech growing out of it. It stands in the castle park and reads as a plain beech until you look at the base.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hlm_009",
+      "name": "The Holly of the Castle Park",
+      "species": "Common Holly (Ilex aquifolium)",
+      "age_estimate": "roughly 75 to 85 years, from the register's planting band of 1940 to 1950",
+      "age_min": 76,
+      "age_max": 86,
+      "location": {
+        "address": "Castle park, Kasteelplein 1",
+        "latitude": 51.47643,
+        "longitude": 5.653068,
+        "neighbourhood": "Kasteelplein"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.monumentaltrees.com/nl/nld/noordbrabant/helmond/1100_kasteelpark/8469/"
+      ],
+      "access": "Free. Open castle grounds in the centre of town.",
+      "transport": "In the centre of Helmond, at the Kasteelplein.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the one tree in the castle park you will have to hunt for, and the register says so itself: it marks the holly as not visible from any path.\n\nHolly is a strange thing to find on a monumental tree register at all. It is usually a shrub, it grows slowly, and at seventy-five to eighty-five years old this one is nowhere near the bulk of the maple, the lime or the two chestnuts around it. The register protected it anyway, and it wrote down a different reason for doing so. Every other tree in these grounds is listed as monumentaal. This one is listed as dendrologisch, a botanical specimen rather than a landmark.\n\nWhat it does not say is which botanical quality earned the listing. Its history field for this entry is a single word: onbekend. Unknown.\n\nThe date is the other thing worth knowing. The band runs 1940 to 1950, which puts the planting somewhere across the war and the years directly after it. Nothing else on this page went in that late.\n\nHolly is dioecious, so only a female plant carries the red berries everyone associates with it. Nobody has recorded which this is. If you get there in December and find berries, tell us and we will write it down.",
+      "how_to_recognise": "You can recognise it by the spiny evergreen leaves and the low dense crown, shrub-shaped where everything around it is a canopy tree. The register marks it as not visible from any path, so you will have to look off them.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hlm_010",
+      "name": "The Younger Horse Chestnut of the Castle Park",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 85 to 95 years, from the register's planting band of 1930 to 1940",
+      "age_min": 86,
+      "age_max": 96,
+      "location": {
+        "address": "Castle park, Kasteelplein 1",
+        "latitude": 51.477761,
+        "longitude": 5.65268,
+        "neighbourhood": "Kasteelplein"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open castle grounds in the centre of town.",
+      "transport": "In the centre of Helmond, at the Kasteelplein.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "There are two horse chestnuts in these grounds, and on paper the only thing separating them is ten years.\n\nThis is the younger. The register bands it 1930 to 1940; the other, about fifty metres east, is banded 1920 to 1930. They carry separate entry numbers and separate coordinates, so this is two trees rather than one tree counted twice, which is a thing registers do often enough to be worth checking.\n\nThe decade matters more here than it usually would. Kasteel Helmond was sold by its last private owner in 1921 and the landscape park around it broke up over the years that followed. The older chestnut's band straddles that sale. This one's does not. Anything planted between 1930 and 1940 went into grounds that had already stopped being anybody's private garden.\n\nThe species is having a bad century in this country. Bleeding canker has been killing mature trees since the 1990s, and the leaf miner moth browns the foliage of nearly every horse chestnut in the Netherlands from July onward.\n\nWhich is why May is the month. The flowers stand upright over the whole crown in white candles, for two or three weeks, before anything has gone wrong with the leaves.\n\nOnly the register records this one. If you get there and it is gone, tell us and it comes off the page.",
+      "how_to_recognise": "You can recognise it as the westerly of the park's two horse chestnuts, the one standing about thirty-five metres from the silver maple. The other chestnut is roughly fifty metres further east.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candles stand up over the whole crown"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hlm_011",
+      "name": "The Variegated Cedar of the Julianalaan",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "age_estimate": "roughly 95 to 105 years, from the register's planting band of 1920 to 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Julianalaan 45",
+        "latitude": 51.484301,
+        "longitude": 5.646807,
+        "neighbourhood": "Oranjebuurt"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Stands on a public square (plein).",
+      "transport": "About 0.7 km northwest of Helmond centre, in the Oranjebuurt.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In the Pacific Northwest this species reaches sixty metres and can live past a thousand years. This one stands on a square in a Helmond housing district, is about a century old, and is splashed with cream and gold.\n\nThe register calls it a bonte reuzenlevensboom, a variegated giant arborvitae, and then stops. Which variegated form it is, it does not say, and no other source names one. Several are in cultivation and telling them apart takes somebody standing underneath with a key. If you know which this is, tell us.\n\nVariegation is not an advantage. Pale tissue carries less chlorophyll, so a variegated plant grows slower than its plain green parent and holds its place in a planting purely because somebody liked the look of it. Getting to a hundred years with that handicap, on a public square rather than in a sheltered garden, is the part worth respecting.\n\nThe register logs the setting as a plein, a square, and the owner as the municipality, so this was town planting from the start rather than a garden specimen that a street later grew around. It is banded 1920 to 1930, and the register's history field for it is blank.\n\nCrush a spray of the foliage between your fingers when you get there. Thuja plicata smells of pineapple.",
+      "how_to_recognise": "You can recognise it by the foliage, flat sprays splashed cream and gold rather than plain green. It stands on the square at Julianalaan 45 and is the only variegated conifer there.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hlm_012",
+      "name": "The Weeping Beech of the Molenstraat Cemetery",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Molenstraat 72, Algemene Begraafplaats (former Catholic cemetery)",
+        "latitude": 51.478101,
+        "longitude": 5.668485,
+        "neighbourhood": "Molenstraat"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://monumentenwerkgroephelmond.nl/monumenten/molenstraat-72/"
+      ],
+      "access": "Free. General public cemetery (Algemene Begraafplaats Molenstraat, formerly Roman Catholic), open during daylight hours as is standard for Dutch municipal cemeteries.",
+      "transport": "About 1.1 km east of Helmond centre, on the Molenstraat.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Almost everything planted at this cemetery weeps. A dendrological survey of the ground lists, besides this beech, a weeping elm, weeping poplars, a weeping ash, a weeping acacia, a weeping lime and cypresses.\n\nThat is not an accident of taste. Nineteenth century burial grounds used pendulous forms deliberately, and a Dutch cemetery of the 1880s was working from the same nursery catalogues as everywhere else in Europe. Somebody ordered the mood along with the trees.\n\nThe cemetery was founded in 1880 as an expansion of an older Catholic burial ground on the Molenstraat, laid out with a central path and a Calvary mount, and it is a general public cemetery today. The beech is banded 1900 to 1910, so it arrived a generation after the ground was consecrated, into a plan that already had its shape. Nobody has dated it more precisely than that decade.\n\nA weeping beech is one tree pretending to be a room. The branches arch out and then fall vertically to the ground, and a mature one encloses a space underneath that you can walk into. This one has had a century to build it.\n\nThe register marks it as not visible from the path, which in a cemetery full of weeping trees is a specific problem rather than a general one. Go by the leaf.",
+      "how_to_recognise": "You can recognise it by the beech leaf, oval and wavy-edged and glossy, on branches that fall straight to the ground in a curtain you can step inside. The cemetery's other weepers are elm, ash, lime, acacia and poplar.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when the falling curtain turns copper"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hlm_013",
+      "name": "The Silver Maple of the Molenstraat Cemetery",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Molenstraat 72, Algemene Begraafplaats (former Catholic cemetery)",
+        "latitude": 51.479515,
+        "longitude": 5.667989,
+        "neighbourhood": "Molenstraat"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://monumentenwerkgroephelmond.nl/monumenten/molenstraat-72/"
+      ],
+      "access": "Free. General public cemetery (Algemene Begraafplaats Molenstraat, formerly Roman Catholic), open during daylight hours as is standard for Dutch municipal cemeteries.",
+      "transport": "About 1.1 km east of Helmond centre, on the Molenstraat.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register thinks this tree is as old as the ground it stands on, and it hedges the claim rather than making it. Its note reads: probably planted around 1880 at the opening of the cemetery.\n\nThat is a guess admitting it is a guess, which is worth more than a confident date. The Molenstraat cemetery was founded in 1880 as an expansion of an older Catholic burial ground, laid out with a central path and a Calvary mount, and the maple's planting band of 1880 to 1890 sits across that opening. A tree put in at a cemetery's founding has a job to do: it is there to be the thing that is already large when the first mourners arrive.\n\nSilver maple is North American and grows fast, which is how it got into so many nineteenth century plantings on this side of the Atlantic. The bark breaks into long shaggy plates with age. The leaf is cut into five narrow lobes and is silver-white underneath, so the whole crown flickers pale whenever there is wind.\n\nOne thing to expect on arrival: the register logs this entry as two trees rather than one, so look for a pair.\n\nThe other silver maple on this page stands in the castle park across town, banded 1890 to 1900. This is the older of the two.",
+      "how_to_recognise": "You can recognise it by the leaf, cut into five narrow lobes and silver-white underneath so the crown flashes pale in wind, and by bark in long shaggy plates. The register logs this entry as two trees, so expect a pair.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fruit",
+        "label": "late May, when the big winged seeds spin down"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
