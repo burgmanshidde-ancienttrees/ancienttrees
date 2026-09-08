@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "csg_001",
+    "name": "The Takeshi Kaneshiro Tree",
+    "species": "Bishop Wood (Bischofia javanica)",
+    "age_estimate": "roughly 50 years",
+    "age_min": 50,
+    "age_max": 60,
+    "girth_cm": 100,
+    "location": {
+      "address": "Mr. Brown Avenue (Bolang Dadao), Chishang Township, Taitung County, Taiwan",
+      "latitude": 23.097389,
+      "longitude": 121.204491,
+      "neighbourhood": "Mr. Brown Avenue, Chishang"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Takeshi_Kaneshiro_Tree",
+      "https://zh.wikipedia.org/wiki/金城武樹"
+    ],
+    "access": "Free. Stands in a working rice paddy beside Mr. Brown Avenue (Bolang Dadao), a farm road closed to cars but open to bikes and pedestrians; the tree is fenced to protect its roots but fully visible and photographable from the path.",
+    "transport": "Chishang Railway Station, then about 5 km (roughly 30 minutes) by rented bicycle along Mr. Brown Avenue; bike rental stalls sit right outside the station.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Lone Bischofia javanica (bishop wood, Chinese: 茄苳) planted around the 1970s by farmer Wu A-mu to tether cattle and shade himself, so roughly 50-55 years old by two independent sources (en.wikipedia, zh.wikipedia). Height about 10 m; zh.wikipedia gives girth about 1 m (diameter 0.45 m); the English Wikipedia's figure of a 10 m girth looks like a copy error (equal to the height figure) and should not be used. Became internationally famous after a June 2013 EVA Air TV commercial filmed actor Takeshi Kaneshiro standing beneath it; the nickname stuck even though EVA Air's naming-rights/sponsorship contract expired in 2023 and the tree's official name reverted to 'Fengcha Tree' (奉茶樹, tea-offering tree). Local tourism authorities estimated the tree drove roughly NT$500 million a year in visitor spending at peak popularity, with complaints at the time about littering and crop trampling by photographers straying off the path. Toppled by Typhoon Matmo on 23 July 2014; Japanese arborists (Yamashita Tokuo, Kawaguchi Yoshihisa) and Taiwanese counterparts righted and treated it within days, and it was replanted on the same spot. It has recovered steadily since, described by zh.wikipedia as increasingly vigorous, and weathered Typhoon Haikui in September 2023 with only minor branch damage, so it is confirmed alive and well as of recent reporting. Stands alone in open rice-paddy scenery on Mr. Brown Avenue, one of Taiwan's most photographed rural roads (itself named after a 2013 Mr. Brown coffee commercial); the tree is the single most obvious point on that road to stand at. Suggested place name/container: Chishang (or 'Mr. Brown Avenue, Chishang'), Taitung County. Passes the single-tree-destination test: it is a nationally famous photo pilgrimage site independent of any city, drawing a steady stream of visitors purely to stand under this specific tree."
+  },
+  {
+    "id": "alh_001",
+    "name": "The Sianglin Sacred Tree",
+    "species": "Taiwan Red Cypress (Chamaecyparis formosensis)",
+    "age_estimate": "disputed: about 626 years by the newest study, versus a long-quoted 2,300 years",
+    "age_min": 626,
+    "age_max": 2300,
+    "girth_cm": 1230,
+    "location": {
+      "address": "Trail 1 (the giant-tree boardwalk), beside Ciyun Temple and Xianglin Elementary School, Alishan National Forest Recreation Area, Alishan Township, Chiayi County, Taiwan",
+      "latitude": 23.517457,
+      "longitude": 120.807533,
+      "neighbourhood": "Alishan National Forest Recreation Area"
+    },
+    "verified_sources": [
+      "https://www.ali-nsa.net/zh-tw/attractions/detail/251",
+      "https://zh.wikipedia.org/zh-hans/阿里山神木群"
+    ],
+    "access": "Paid entry to Alishan National Forest Recreation Area (around NT$300, less for Taiwan residents/students), open year round; from the park entrance it is a short, easy walk along the paved 600 m Trail 1 boardwalk past Ciyun Temple.",
+    "transport": "Alishan Forest Railway or bus (Alishan Route B) from Chiayi Railway Station, roughly 2.5 to 3 hours; alight at Alishan Bus Station just outside the park's official entrance gate, then walk in.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "TWO Commons/Wikidata leads folded into one entry: 'Alishan Sianglin Sacred Tree' (23.517217, 120.808191) and 'Sianglin Sacred Tree' (23.517696, 120.806875) sit about 150 m apart, both named after the single well-known second-generation sacred tree of Alishan; there is only one tree of this name in the park, so these are the same specimen photographed/geotagged from slightly different points along the boardwalk, not two trees. Coordinates recorded above are the midpoint; precision is approximate because neither lead's coordinate is confirmed as the exact trunk. Formosan red cypress, originally called 'Guangwu Cypress' (光武檜) because a former Taiwan provincial governor believed it germinated during the Eastern Han dynasty's Guangwu era. After the original ~3,000-year-old Alishan Sacred Tree (a different, older tree, already blocked/superseded by Bilu Sacred Tree elsewhere in our data) collapsed in heavy rain in 1997/98, the Forestry Bureau ran a public online vote in 2006 (about 25,000 participants) and this tree was crowned Alishan's second-generation Sacred Tree on 1 January 2007 by the county magistrate. AGE DISPUTE, deliver both: tourism materials and older sources have long cited roughly 2,300 years (some older tourist copy goes as high as 3,000); a 2022 tree-ring/coring study by National Chiayi University, commissioned by the Forestry Bureau, revised the MAIN TRUNK's age down to about 626 years, on the finding that the visible mass is a 'merged tree' (合併木), several red cypress stems that fused together over time, which explains why the whole standing structure looks older than its youngest dateable trunk. Neither figure should be silently preferred; state both. Dimensions also vary slightly by source: height 45 m (ali-nsa.net, the park's own site) vs 43.5 m (an older secondary source); trunk circumference/girth 12.3 m per ali-nsa.net (used here, 1230 cm) vs 13.1 m in one older account, diameter at breast height given as 4.1 m which is roughly consistent with the 12.3 m circumference. Stands on Trail 1, a 600 m boardwalk near Ciyun Temple and Xianglin Elementary School that also passes other named giant trees (the Thousand-Year Cypress / 千歲檜神木, the Tree of Three Generations / 三代木, and the Tree Spirit Pagoda), so this could grow into a small walkable cluster of two or three trees inside Alishan on a later pass; only this one tree was verified this pass (capped at 4 candidates). Suggested container/place name: Alishan (Alishan National Forest Recreation Area, Chiayi County) rather than a city; Alishan is itself a globally recognised destination name (forest railway, sunrise, sea of clouds, cherry blossoms) so it can carry its own place page. Passes the single-tree-destination test: this specific tree is a named, publicly voted symbol of one of Taiwan's most visited scenic areas, and visitors specifically seek it out on the giant-tree boardwalk rather than passing it incidentally."
+  }
+]

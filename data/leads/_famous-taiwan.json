@@ -1,29 +1,7 @@
 {
   "country": "Taiwan",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. Verified and written 2026-09-07: Bilu Sacred Tree passed the single-tree-destination test and shipped as a new place, bilu (blu_001), a Taiwan fir over 3,000 years old on the Central Cross-Island Highway; not confused with the original Alishan Sacred Tree (a different, unlisted tree), which was cut down in 1998 after storm damage and is not a candidate here.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. Verified and written 2026-09-07: Bilu Sacred Tree passed the single-tree-destination test and shipped as a new place, bilu (blu_001), a Taiwan fir over 3,000 years old on the Central Cross-Island Highway; not confused with the original Alishan Sacred Tree (a different, unlisted tree), which was cut down in 1998 after storm damage and is not a candidate here. Verified and written 2026-09-08 (verification pass on the remaining four batch candidates): Takeshi Kaneshiro Tree shipped as its own place, Chishang (csg_001), a c.50-year-old bishop wood on Mr. Brown Avenue in Taitung County, famous from a 2013 EVA Air ad and toppled/restored after Typhoon Matmo in 2014. The two Sianglin Sacred Tree leads (150 m apart) were confirmed as the same tree, Alishan's publicly-voted second-generation Sacred Tree, and folded into one entry, Alishan (alh_001), age disputed between an old 2,300-year figure and a 2022 university re-dating to about 626 years for the main trunk (it is a fused/composite tree). Couple Trees (the Tataka husband-and-wife trees near Yushan) moved to blocked: confirmed dead since a 1963 forest fire. Xiangyang Famous Tree stays a lead: alive and genuinely ancient but reached only via a permit-gated overnight trek, so it fails the day-trip/single-tree-destination test for now.",
   "leads": [
-    {
-      "name": "Alishan Sianglin Sacred Tree",
-      "lat": 23.517217,
-      "lng": 120.808191,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2017-08-10_Alishan_Sianglin_Sacred_Tree.jpg",
-        "https://commons.wikimedia.org/wiki/File:Alisan_2000years_tree.JPG",
-        "https://commons.wikimedia.org/wiki/File:Alishan_National_Scenic_Area_(61306731).jpeg"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Couple Trees",
-      "lat": 23.513807,
-      "lng": 120.890572,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Bus_stop_sign_in_front_of_Couple_Trees_under_clear_sky_on_28_January_2017.jpg",
-        "https://commons.wikimedia.org/wiki/File:Couple_Tree_and_Yuanlin_Bus_stop_sign_20170128a.jpg",
-        "https://commons.wikimedia.org/wiki/File:Couple_Tree_and_Yuanlin_Bus_stop_sign_20170128b.jpg"
-      ],
-      "status": "lead"
-    },
     {
       "name": "Lulin Sacred Tree",
       "lat": null,
@@ -45,22 +23,13 @@
       "status": "lead"
     },
     {
-      "name": "Sianglin Sacred Tree",
-      "lat": 23.517696,
-      "lng": 120.806875,
+      "name": "Xitou Giant Tree",
+      "lat": 23.674263,
+      "lng": 120.798281,
       "photos": [
-        "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E6%B9%BE_%E9%98%BF%E9%87%8C%E5%B1%B1_%E9%A6%99%E6%9E%97%E7%A5%9E%E6%9C%A8_(%E7%B4%85%E6%AA%9C%E6%A0%91)_-_panoramio.jpg"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Takeshi Kaneshiro Tree",
-      "lat": 23.097359,
-      "lng": 121.204476,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2023-09-13_EVA_Air_photo_plate_at_Takeshi_Kaneshiro_Tree.jpg",
-        "https://commons.wikimedia.org/wiki/File:2023-09-13_Takeshi_Kaneshiro_Tree_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:2023-09-13_Takeshi_Kaneshiro_Tree_02.jpg"
+        "https://commons.wikimedia.org/wiki/File:558,_Taiwan,_%E5%8D%97%E6%8A%95%E7%B8%A3%E9%B9%BF%E8%B0%B7%E9%84%89%E5%85%A7%E6%B9%96%E6%9D%91_-_panoramio_(29).jpg",
+        "https://commons.wikimedia.org/wiki/File:Giant_tree_in_the_mountain_area_of_Xitou.jpg",
+        "https://commons.wikimedia.org/wiki/File:Xitou_Giant_Tree.JPG"
       ],
       "status": "lead"
     },
@@ -72,18 +41,8 @@
         "https://commons.wikimedia.org/wiki/File:Xiangyang_Famous_Tree_under_clear_sky_on_19_July_2018.jpg",
         "https://commons.wikimedia.org/wiki/File:Yu_Shan_National_Park_ansonwu_DSC_1719-1s.jpg"
       ],
-      "status": "lead"
-    },
-    {
-      "name": "Xitou Giant Tree",
-      "lat": 23.674263,
-      "lng": 120.798281,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:558,_Taiwan,_%E5%8D%97%E6%8A%95%E7%B8%A3%E9%B9%BF%E8%B0%B7%E9%84%89%E5%85%A7%E6%B9%96%E6%9D%91_-_panoramio_(29).jpg",
-        "https://commons.wikimedia.org/wiki/File:Giant_tree_in_the_mountain_area_of_Xitou.jpg",
-        "https://commons.wikimedia.org/wiki/File:Xitou_Giant_Tree.JPG"
-      ],
-      "status": "lead"
+      "status": "lead",
+      "note": "Real, alive, well-documented Yushan cypress (Juniperus squamata subsp. morrisonicola) estimated 700-800 years old, but it sits at 3,300 m on DAY TWO of the multi-day, permit-gated Jiaming Lake National Trail out of Xiangyang National Forest Recreation Area, reachable only via an overnight wilderness trek with a mountain entry permit filed in advance. Fails the day-trip standard and the single-tree-destination test: hikers travel for Jiaming Lake, and this tree (locally nicknamed the 'thousand-year-old grandfather', officially a female specimen since 2021 research) is a highlight along the way rather than the reason for the trip. Left as a lead rather than blocked outright in case a future pass finds evidence that demand centres on the tree itself rather than the lake. Checked 2026-09-08."
     }
   ],
   "blocked": [
@@ -97,6 +56,17 @@
         "https://commons.wikimedia.org/wiki/File:Prayer_tree_before_the_Yuanbao_Temple,_Taichung.jpg"
       ],
       "reason": "Commons category name, not one tree: its photos show a wish tree at a Taipei convention center, an unlabeled site, and a prayer tree at Yuanbao Temple in Taichung, unrelated sites scattered across the island. Fails the one-collectible-point rule (whole-country category, not an avenue or ensemble with one place to stand). Checked 2026-09-08, no verify pass dispatched."
+    },
+    {
+      "name": "Couple Trees",
+      "lat": 23.513807,
+      "lng": 120.890572,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bus_stop_sign_in_front_of_Couple_Trees_under_clear_sky_on_28_January_2017.jpg",
+        "https://commons.wikimedia.org/wiki/File:Couple_Tree_and_Yuanlin_Bus_stop_sign_20170128a.jpg",
+        "https://commons.wikimedia.org/wiki/File:Couple_Tree_and_Yuanlin_Bus_stop_sign_20170128b.jpg"
+      ],
+      "reason": "DEAD, confirmed by two sources (English and Chinese coverage of Tataka/塔塔加夫妻樹, Yushan National Park): two Formosan cypress trunks killed by a forest fire in 1963, standing since only as bleached dead wood at 2,478 m elevation on the New Central Cross-Island Highway near the Yushan trailhead (coordinates match Wikidata Q10930747, 23.5126, 120.8906, within 20 m of this lead). Fails the never-a-dead-tree-as-an-entry rule outright, however famous the remains. Checked 2026-09-08."
     }
   ]
 }

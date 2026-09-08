@@ -5893,6 +5893,24 @@
         "note": "37 lines; kag_012 has no girth, height or age",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "famoustaiwan",
+        "kind": "verify",
+        "tokens": 158913,
+        "trees": 0,
+        "note": "2 candidates verified to famoustaiwan-verified.json (Takeshi Kaneshiro Tree/Chishang, Sianglin Sacred Tree/Alishan), awaiting a write pass; Couple Trees blocked (confirmed dead since a 1963 fire); Xiangyang Famous Tree left as lead (fails day-trip/destination test, 3300m multi-day trek)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Berlin, Arnhem, Palermo, Alicante, Sardinia, Krakow, Dublin, Portland, The Hague, Melbourne, Nijmegen, Porto, Cagliari, Strasbourg",
+        "kind": "write",
+        "tokens": 55000,
+        "trees": 40,
+        "note": "40 lines, worst-first by impressions from recognise.py --stuck",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
