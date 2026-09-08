@@ -380,7 +380,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single-source tree: the 'most beautiful in the garden' description and general presence come from one dedicated garden-history blog, and no second independent source confirming this specific specimen was found despite a real search. Kept because the underlying facts (species, general garden context, presence of a comparative cedar collection) are independently verifiable even though this exact tree isn't cross-confirmed; age left unknown rather than guessed. Checked 2026-07-29 against ICNF's national register of classified trees (sigservices.icnf.pt, BDG/AIP layer): the only Cedrus atlantica record for the whole of Porto is at 'Jardim da Casa do Professor' (id 360), a distinct site roughly 300m from the Botanical Garden's own coordinates with no clear connection to the garden in any source found, so it was not used to upgrade this pin; still approximate. Photo search 2026-07-29: no openly-licensed photo found on Wikimedia Commons (no 'Cedrus atlantica in Portugal' category exists), iNaturalist, Openverse or Flickr CC search. Still missing.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You are looking for one of three cedars planted close together in the conifer collection. The Atlas is told from the Lebanon and Himalayan ones by branch angle and needle colour, so get close."
     },
     {
       "id": "por_011",
@@ -943,7 +944,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 243
+      "girth_cm": 243,
+      "how_to_recognise": "You are looking for thirteen magnolias among 96 planes and 57 camellias: thick dark leaves with rust-brown felt on the underside, and in early summer flowers the size of a plate."
     },
     {
       "id": "por_026",

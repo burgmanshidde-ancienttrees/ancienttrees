@@ -55,7 +55,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Girth/height and champion status from York Museums Trust's two official pages (the garden's own site and its sister Yorkshire Museum collections site), both citing the Tree Register as the verifying body; treated as two independent confirmations given the Tree Register is a distinct national organisation from the trust. Coordinates: the only 'Ash' (as opposed to 'Common ash') record in the Woodland Trust's Ancient Tree Inventory within the garden's footprint sits at this point (girth 3.75m, consistent with the champion's measured 3.58m allowing for growth since the Tree Register's own measurement date); the ATI is a non-commercial lead list only, so this is a plausible coordinate lead, not a confirmed identification, hence approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the leaves, narrow like a willow's rather than an ash's, on the tallest tree in the gardens at 24 metres. Its upper branches have started to die back."
     },
     {
       "id": "yor_002",
@@ -165,7 +166,8 @@
         ],
         "label": "February and March, when its reddish-purple catkins hang before the leaves appear",
         "kind": "catkins"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the leaves, cut so finely they read as feathery, and by the small woody cones it carries all winter. It stands on the lawn closest to the river."
     },
     {
       "id": "yor_005",
@@ -195,7 +197,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Same two-source basis as the Willow-Leaved Ash. No iNaturalist record for Pyrus elaeagrifolia exists anywhere near York, and no distinguishing Ancient Tree Inventory pear record identifies this specific specimen, so its coordinate is only the garden's general location; marked approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the lean, and by the narrow silvery-grey leaves that look more like an olive's than a pear's. It stands among the garden's champions beside the abbey ruins."
     },
     {
       "id": "yor_006",
@@ -232,7 +235,8 @@
         ],
         "label": "October, when its small heart-shaped leaves turn a clean yellow",
         "kind": "autumn colour"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the shape, tall and arrow-straight to 25 metres where the garden's other champions are contorted, over a trunk nearly three metres round."
     }
   ]
 }

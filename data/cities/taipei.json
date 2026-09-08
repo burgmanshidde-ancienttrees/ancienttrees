@@ -49,9 +49,15 @@
       ],
       "access": "Free entry. Inside Zhishan Rock Cultural History Park, a public hillside park and historic site open daily with no admission fee (the adjacent ticketed Zhishan Culture and Ecology Garden, NT$50, is a separate enclosed section; this tree stands in the free trail/park area near Yunong Library).",
       "transport": "Zhishan MRT Station (Red Line, Danshui-Xinyi), exit 1, roughly 8-10 minute walk via Zhicheng Rd and the trail entrance; alternatively via the Yunong Bridge riverside parking area and the 120-step Bai'erkan staircase.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the big old camphor near the Yunong Library, on the open trail rather than off it, with the grave of six Japanese schoolteachers beneath it."
     },
     {
       "id": "tpe_002",
@@ -74,9 +80,15 @@
       ],
       "access": "Free. Open university campus with no gate or admission fee; the pines stand on a public plaza in front of a teaching building that students, staff and visitors walk through freely.",
       "transport": "NTU main campus; roughly 10-15 minute walk from Gongguan MRT Station (Songshan-Xindian Line) or Taipower Building MRT Station.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You are looking for three pines rather than one tree, standing on a raised wooden deck laid round their feet, with the teaching building's floor plan recessed to leave them where they were."
     },
     {
       "id": "tpe_003",
@@ -99,9 +111,15 @@
       ],
       "access": "Free entry. Taipei Confucius Temple is a public temple and municipal historic monument open to visitors daily (typical hours morning to early evening; confirm current hours locally). Sits directly beside Bao'an Temple in the Dalongdong cultural district, an easy joint walk.",
       "transport": "Roughly 10 minute walk from Yuanshan MRT Station (Red Line); several bus routes stop at Hami St / Dalongdong.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You are looking for two junipers rather than one tree, on Qingyun Road between the Pan Pond and the Lingxing Gate. Accounts mention inscribed stones beside them, so look for those too."
     },
     {
       "id": "tpe_004",
@@ -123,10 +141,22 @@
       ],
       "access": "Free. Open university campus with no gate or admission fee.",
       "transport": "NTU main campus; roughly 10-15 minute walk from Gongguan MRT Station (Songshan-Xindian Line) or Taipower Building MRT Station. Close to the Common Three Pines, an easy joint stop on the same campus walk.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "best_time": { "months": [1], "kind": "autumn colour", "label": "January, when the lowland heat finally lets it turn gold" }
+      "best_time": {
+        "months": [
+          1
+        ],
+        "kind": "autumn colour",
+        "label": "January, when the lowland heat finally lets it turn gold"
+      },
+      "how_to_recognise": "You can recognise it by the dawn redwood planted next to it outside the Geology Science Building, and by turning gold in January rather than in autumn."
     }
   ]
 }

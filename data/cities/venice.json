@@ -130,7 +130,8 @@
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You are looking for three young cedars rather than one old tree, carried here from Bcharre and planted in January 2008. The monastery's guided tour passes them."
     },
     {
       "id": "ven_004",
@@ -192,7 +193,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives this specific poplar a measured age; described consistently as 'gigantic' and among the largest specimens on the island, treated here as an unverified age range rather than a claimed superlative. Pin nudged 2026-07-28 to the island's own OSM polygon centroid (~100m from the earlier estimate), a textually-justified proxy since multiple sources independently describe the tree as standing in the middle of the island's wood; not a surveyed point for the tree itself. 2026-07-29: Commons keyword search (\"Isola della Certosa Venezia\") and an iNaturalist radius query around the pin both came back empty for Populus nigra specifically; genuine dead end, not yet tried with a browser-based image search.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the big poplar standing alone at the heart of the island's wild wood, among the white poplars and ash that took the old firing range back."
     },
     {
       "id": "ven_006",
@@ -231,7 +233,8 @@
         ],
         "label": "October to December: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the one olive in a garden of more than 400 species, among Canary palms and agaves. It was planted for the pharmacy the island once supplied."
     },
     {
       "id": "ven_007",

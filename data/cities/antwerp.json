@@ -173,7 +173,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single source for the champion measurement. Modest girth (128cm) is normal for the species, not a data error; flagged clearly in the story so it doesn't read as a lesser version of the robinia entry.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by how small it is for a record holder, 1.28 metres round, a mulberry rather than a big-trunked park tree. It stands in Hertoghepark, near Belgium's thickest black locust."
     },
     {
       "id": "ant_005",
@@ -209,7 +210,8 @@
       },
       "curation_status": "flagged",
       "notes": "Circumference (135cm, 2016) is the only hard data point found; no planting date. monumentaltrees.com used for cross-check only, per hard rule 1, not copied.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the leaves: every leaflet narrow and deeply serrated where an ordinary horse chestnut's are broad fans. It stands among the sculptures in Park Middelheim, 1.35 metres round."
     },
     {
       "id": "ant_006",
@@ -343,7 +345,8 @@
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble since no single tree is individually dated; the 1935 replanting under Florent Blockx is the earliest documented date for the current tree cover, so age range is capped there rather than assuming any tree survives from 1843.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You are looking for grounds rather than one tree. The planting is the zoo's landscaped garden, laid out from 1935 and protected as a landscape in 1975; no single trunk carries this entry."
     },
     {
       "id": "ant_010",
@@ -379,7 +382,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Planting winter (1999-2000) is documented; age given as of 2026. Story is honest that this is a young tree included for what it represents (the park's own historic tree loss and a deliberate long-lived replacement), not for antiquity.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by how young it is: a slim ginkgo with fan-shaped leaves, planted in the winter of 1999 to 2000 among the Stadspark's nineteenth century trees."
     }
   ],
   "oldest_tree_id": "ant_001"

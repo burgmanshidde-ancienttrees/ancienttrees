@@ -11,6 +11,39 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-08 (session) - The last 206 trees that had nothing to tell them apart, and a gate so it cannot happen again
+
+Hidde asked how many published trees carry none of the three things that
+settle which trunk we mean: a recognition line, a photograph, an exact
+pin. The answer was **206**, 7 percent of 2,811, spread thin across 99
+places and never more than four in any single one (Chicago, Antwerp,
+Modena, Brisbane, Reykjavik, Kamakura, Zurich, Bucharest, Taipei,
+Sydney, Thessaloniki, Oxford, Kansas City, Dublin, Sofia, The Hague,
+Cyprus and York each had four). His instruction: work them off, and
+**"upload geen bomen meer die zo weinig hebben"**.
+
+- **204 recognition lines written and applied** (the count differs from
+  206 because two of those trees carry a photograph that is queued
+  rather than held, which `recognise.py` already counts as something to
+  compare against). Restatement only, per BRIEF_WRITING.md: species,
+  measurements, setting, and what the story already says. Nothing new
+  was researched and nothing was invented. Coverage is now **1,548 of
+  2,811 trees, 55 percent**, up from 47.
+- **Trees with none of the three: 0.**
+- **`check_a_tree_can_be_told_apart()` in scripts/preflight.py** now
+  FAILS the build on any tree published without a line, a photograph or
+  a confirmed pin. It is a FAIL rather than a NOTE only because the
+  backlog was cleared first; the check was tested against a deliberately
+  blanked tree before shipping. Recorded in CLAUDE.md at rung 7.
+  Removing it needs Hidde.
+
+Still open, unchanged by this: 1,263 trees have no line but do have a
+photograph or an exact pin, and `recognise.py` ranks them by search
+impressions. Barcelona (42 missing), Arnhem (35), Vienna (26), Paris
+(23), Brisbane (20 of 20), Berlin (18), London (16) are the next work.
+Rome, Brussels, Lisbon, Milan, Amsterdam, Singapore and Seville are
+complete.
+
 ## 2026-09-08 (continuation 4) - Merged a stranded Lithuania write pass: Vytogala and Pagramantis Regional Park open, 5 trees
 
 Picked up per the standing instruction: check claims, check the READY

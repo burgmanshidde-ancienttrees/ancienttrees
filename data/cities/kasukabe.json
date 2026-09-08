@@ -54,7 +54,9 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "best_time": {
-        "months": [4],
+        "months": [
+          4
+        ],
         "kind": "flowers",
         "label": "late April, when the flower clusters hang up to two metres long"
       },
@@ -63,7 +65,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You are looking for one plant spread over a trellis of 600 to 700 square metres, a base over four metres round and flower clusters hanging up to two metres long. The garden is built around nothing else."
     }
   ]
 }
