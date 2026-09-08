@@ -1010,6 +1010,56 @@ def _why_to_go_split():
     return fails, note
 
 
+def note_a_young_tree_is_not_ancient():
+    """A recorded age only counts as a reason when the age is actually old.
+
+    Hidde, 2026-09-08, standing at Nigatsu-do in front of a veteran cedar we do
+    not map, having just been told that the tree we DO map there is a 60-year
+    replanting: "waarom hebben we deze jongere boom die veel minder oud is op
+    het platform ipv degene die ik heb en hoezo stel jij niet de vraag we zijn
+    ancient trees."
+
+    check_a_tree_says_why_to_go() was written the same day and cannot see this.
+    It treats any parseable age as a reason, so "About 10 years, planted 2016"
+    satisfies it exactly as "roughly 800 years" does. That is the hole: the
+    field is full, the check is quiet, and the page still gives an outdoor
+    reader no reason to walk anywhere. 124 published trees sit in it today and
+    not one carries a why_go.
+
+    Under 100 years, an age is a fact and not an argument. Plenty of these
+    trees have a real answer and should simply write it down: Hiroshima's eight
+    survivors stood through the bomb, Newton's apple tree is Newton's, the 1948
+    dawn redwoods were the first of their species grown in the West. The ones
+    that cannot answer are leads wearing a page.
+
+    A NOTE rather than a FAIL, for the reason the sibling check gives: a gate
+    that fails the whole night shift on its first run is a gate somebody
+    switches off. Girth over 250 cm or height over 20 m still answers on its
+    own, and an age of 0 means undocumented, which the sibling check already
+    sees.
+    """
+    young = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            age = tree.get("age_max")
+            if not age or age >= 100:
+                continue
+            if (tree.get("girth_cm") or 0) >= 250 or (tree.get("height_m") or 0) >= 20:
+                continue
+            if (tree.get("why_go") or "").strip():
+                continue
+            young.append("%s %s (%s, ~%s yr)"
+                         % (tree.get("id"), tree.get("name"), city.get("city"), age))
+    if not young:
+        return []
+    return ["%d trees are under 100 years old with no why_go, so the page offers "
+            "an age as its reason and the age is not a reason. We are Ancient "
+            "Trees. Give each one a sentence or move it to data/leads/. First "
+            "few: %s" % (len(young), "; ".join(young[:3]))]
+
+
 def check_contributor_photos_are_traceable():
     """A reader's photograph must carry the account that sent it.
 
@@ -1687,7 +1737,8 @@ def main():
     for line in (check_stacked_pins() + check_search_names() + check_paid_share()
                  + check_country_counts() + check_leads_already_published()
                  + check_tree_labels_are_translated() + check_city_indent()
-                 + note_trees_with_no_reason()):
+                 + note_trees_with_no_reason()
+                 + note_a_young_tree_is_not_ancient()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0
