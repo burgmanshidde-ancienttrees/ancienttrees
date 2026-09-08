@@ -6127,6 +6127,15 @@
         "note": "4 stories + recognition lines, 1 best_time; lid_001 new place Machov, luk_002/rud_002/sul_003 joined existing places",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "alkmaar, apeldoorn, assen, bangkok, deventer, dordrecht, emmen, haarlem",
+        "kind": "photo-judge",
+        "tokens": 231000,
+        "trees": 0,
+        "note": "62 images viewed across 20 trees in 8 photo-less cities; 0 approved, 1 held (Bangkok bodhi, 60m off pin), 19 trees exhausted. Commons sweep is matching on place/street names: one Overcingel gate photo was queued against 3 different trees, 2 Deventer candidates were in Olst (wrong town).",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
