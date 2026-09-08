@@ -2190,6 +2190,10 @@
       "Padue",
       "Padui"
     ],
+    "pajuris": [
+      "Pojurze",
+      "Pajūre"
+    ],
     "palermo": [
       "Palerme",
       "Palerm",
@@ -2375,6 +2379,9 @@
       "Kebeku",
       "Quebecstad",
       "Kota Quebec"
+    ],
+    "radomsko": [
+      "Radomskas"
     ],
     "rambynas": [
       "Rambyno kalnas",
@@ -3626,6 +3633,7 @@
     "oxford": "Oxford",
     "oyodo": "Ōyodo, Nara",
     "padua": "Padua",
+    "pajuris": "Pajūris",
     "palermo": "Palermo",
     "palma-de-mallorca": "Palma de Mallorca",
     "palo-alto": "Palo Alto, California",
@@ -3653,6 +3661,7 @@
     "princeton-new-jersey": "Princeton, New Jersey",
     "przybudki": "Przybudki",
     "quebec-city": "Quebec City",
+    "radomsko": "Radomsko",
     "rambynas": "Rambynas",
     "ramsau-am-dachstein": "Ramsau am Dachstein",
     "ramsau-bei-berchtesgaden": "Ramsau bei Berchtesgaden",
@@ -3938,6 +3947,7 @@
     "wilparting": "no article within 40 km, tried Wilparting; Wilparting, Germany",
     "wisniowa": "no article within 40 km, tried Wiśniowa (Wiśniowa, no coordinates, disambiguation page); Wiśniowa, Poland; search: Wrocław Water Tower; search: Kraków metropolitan area; search: Soplica",
     "zalgiriai": "no article within 40 km, tried Žalgiriai; Žalgiriai, Lithuania; search: List of schools in Lithuania; search: Vincas Pietaris",
-    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany"
+    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany",
+    "stokaiciai": "wrong match removed 2026-09-08: city_names.py matched the containing district (Tauragė District Municipality) rather than the village itself, which has no standalone Wikipedia article; kept unresolved rather than alias a one-tree page to a whole district's search terms."
   }
 }

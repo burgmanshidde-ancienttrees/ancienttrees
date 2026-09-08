@@ -1,0 +1,53 @@
+{
+  "city": "Stokaičiai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Stokaičiai is a village in the Tauragė district of western Lithuania, and the tree mapped here stands outside it, at the edge of road 4514 between Žygaičiai and Bikavėnai. The Visbarai pine is a Scots pine 2.85 metres round and 18.7 metres tall, measured in 2010 and under district protection since 1988. Almost every protected veteran in this part of the country is an oak, and very little Scots pine is left standing long enough to reach this girth. Nobody has published an age for it.",
+  "meta_description": "The Visbarai pine near Stokaičiai, Tauragė district: a Scots pine 2.85 metres round and 18.7 metres tall, protected since 1988, standing beside road 4514.",
+  "question_meta": "Stokaičiai's mapped tree is the Visbarai pine, a Scots pine 2.85 metres round beside road 4514, protected since 1988.",
+  "question_answer": "The Visbarai pine, a Scots pine beside road 4514 between Žygaičiai and Bikavėnai, near Stokaičiai in the Tauragė district. It is 2.85 metres round and 18.7 metres tall, measured in 2010, and it is the only tree mapped here. No age has been published for it, so nobody can say in years how old it is.",
+  "question_context": "The Tauragė district put the pine under protection in 1988, while Lithuania was still Soviet, and it carries its own designation number. What it does not carry is a date. There is no ring count and no growth-rate estimate on record, and a single Lithuanian entry holds the measurements, the designation and the protection year between them; nothing independent repeats them, so read the numbers as that one survey's rather than as a settled result.\n\nThe girth is the argument for the walk. Scots pine grows tall and narrow, is normally cut for timber long before it thickens, and reaches 2.85 metres round only where it has been left alone in the open for a very long time. The tree stands at the roadside on public ground, free at any hour, and is reached by car through the Tauragė district lanes. If you know when it went in, or have put a tape around it more recently than 2010, tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Stokaičiai?",
+      "a": "The Visbarai pine is the only tree mapped here. Its age has never been published, so the honest answer is that nobody has dated it; its trunk is 2.85 metres round."
+    },
+    {
+      "q": "How big is the Visbarai pine?",
+      "a": "2.85 metres round and 18.7 metres tall, both figures measured in 2010. That is large for a Scots pine, a species usually felled long before it thickens."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside a public road near Stokaičiai village, with no fee and no gate."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car. Take road 4514 between Žygaičiai and Bikavėnai in the Tauragė district; there is no public transport to the tree."
+    }
+  ],
+  "trees": [
+    {
+      "id": "stk_001",
+      "name": "The Visbarai Pine",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "species_basis": "genus confirmed by name; species per lt.wikipedia (paprastoji pušis)",
+      "girth_cm": 285,
+      "height_m": 18.7,
+      "location": {
+        "address": "Beside road 4514 between Žygaičiai and Bikavėnai, near Stokaičiai village, Tauragė district",
+        "latitude": 55.37836,
+        "longitude": 22.221519,
+        "neighbourhood": "Stokaičiai, Tauragė district, Lithuania"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Visbar%C5%B3_pu%C5%A1is"
+      ],
+      "access": "Free; stands beside a public road near Stokaičiai village.",
+      "transport": "Rural Tauragė district; reached by car via road 4514 between Žygaičiai and Bikavėnai.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Almost every protected veteran in this corner of Lithuania is an oak. This one is a pine.\n\nThe Visbarai pine stands beside road 4514 in the Tauragė district, on the run between Žygaičiai and Bikavėnai near the village of Stokaičiai, and the district put it under protection in 1988, while the country was still Soviet. Its trunk is 2.85 metres round and it carries 18.7 metres of height, both figures taken in 2010.\n\nThose are ordinary numbers on an oak and large ones on a Scots pine. The species grows tall and narrow, is normally cut for timber long before it thickens, and reaches this sort of girth only where it has been left alone in the open for a very long time. Lithuania is full of Scots pine. Very little of it is allowed to end up looking like this.\n\nWhat is not recorded is most of the rest. A single Lithuanian record carries the measurements, the designation number and the protection date, and nothing independent repeats them. Nobody has published an age for the tree, so there is no figure here to trust or to doubt. If you know when this pine went in, or you have put a tape around it more recently than 2010, tell us.",
+      "how_to_recognise": "You can recognise it by being the one big pine on this stretch, a trunk 2.85 metres round under about 19 metres of tree. It stands right at the edge of road 4514, between Žygaičiai and Bikavėnai near Stokaičiai."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "city": "Pajūris",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Pajūris is a village in the Šilalė district of western Lithuania. The tree mapped here stands just outside it, on a slope above the Jūra river: the Akmenynė oak, 4.45 metres round at chest height and 24 metres tall, on the state's protected list since April 2017. Six or seven kilometres east, inside Pagramantis Regional Park, four more registered oaks run from 4.3 metres round up to a hollow giant of 6.30. The park's own cycling route does not reach this far west, so this oak is a trip of its own.",
+  "meta_description": "The Akmenynė oak near Pajūris, Šilalė district: 4.45 metres round and 24 metres tall on a slope above the Jūra river, state-protected since 2017.",
+  "question_meta": "Pajūris's mapped tree is the Akmenynė oak, 4.45 metres round on a slope above the Jūra river, state-protected since 2017.",
+  "question_answer": "The Akmenynė oak, a pedunculate oak on the slope above the Jūra river just outside Pajūris in the Šilalė district. It is 4.45 metres round at chest height and 24 metres tall, and it is the only tree mapped here. Nobody has published an age for it, so the trunk is the whole of what is known.",
+  "question_context": "Lithuania made the oak a state-protected natural heritage object by ministry order on 10 April 2017. Two records name it and put it on this slope, and only one of them, the Lithuanian encyclopaedia entry, carries the measurements, so read them as one survey's figures rather than a settled result. Neither record carries an age: no ring count, no growth-rate calculation, not even a local tradition of the kind the Gudlaukis oak up the valley has collected.\n\nWhat the trunk says is that the tree is in the same class as the registered oaks of Pagramantis Regional Park, which run from 4.3 to 6.30 metres round a few kilometres east. It grows on open ground above the water rather than inside a wood, which makes it easy to see whole. Access is free and unfenced, and the approach is by car through the lanes around Pajūris. If somebody has dated this oak, or measured it since, tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Pajūris?",
+      "a": "The Akmenynė oak is the only tree mapped here, and nobody has dated it. Its trunk is 4.45 metres round, which puts it among the larger oaks of the region."
+    },
+    {
+      "q": "How big is the Akmenynė oak?",
+      "a": "4.45 metres round at chest height and 24 metres tall. The registered oaks in nearby Pagramantis Regional Park run from 4.3 to 6.30 metres round."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open ground above the Jūra river near Pajūris, with no fee and no gate."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car through the Šilalė district lanes around Pajūris. There is no public transport to the tree."
+    }
+  ],
+  "trees": [
+    {
+      "id": "paj_001",
+      "name": "The Akmenynė Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "genus confirmed by name; species per lt.wikipedia (paprastasis ąžuolas), the common native oak of the region",
+      "girth_cm": 445,
+      "height_m": 24,
+      "location": {
+        "address": "On a slope above the Jūra river, near Pajūris, Šilalė district",
+        "latitude": 55.4382,
+        "longitude": 22.03261,
+        "neighbourhood": "Pajūris, Šilalė district, Lithuania"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Akmenyn%C4%97s_%C4%85%C5%BEuolas",
+        "https://vietoves.lt (Pajūris heritage list, confirms the tree's existence and location; no independent measurements of its own)"
+      ],
+      "access": "Free; stands on open ground above the river near Pajūris village.",
+      "transport": "Rural Šilalė district; reached by car near Pajūris village on the Jūra river.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Four and a half metres of trunk, and the Lithuanian state did not get round to protecting it until April 2017.\n\nThe Akmenynė oak stands on a slope above the Jūra river outside Pajūris, in the Šilalė district, 24 metres tall and 4.45 metres round at chest height. It grows on open ground above the water rather than inside a wood. Six or seven kilometres east, in Pagramantis Regional Park, four registered oaks run from 4.3 metres round up to a hollow giant of 6.30, and by trunk alone this one belongs in that company. The park's own cycling route does not reach this far west, so this oak is a trip of its own.\n\nTwo records name it and put it on this slope. Only one of them, the Lithuanian encyclopaedia entry, carries the measurements, and neither carries an age. No ring count, no growth-rate estimate, not even a local tradition of the kind the Gudlaukis oak up the valley has collected. The ministry order of 10 April 2017 is the oldest dated fact anybody has recorded about a tree that was already this size when it was signed.\n\nSo the trunk is the whole of the evidence, and it is enough to be worth the detour. If somebody has dated this oak, or measured it since, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.45 metres round at chest height under 24 metres of crown, an oak standing alone in the open. It stands on the slope above the Jūra river, outside Pajūris."
+    }
+  ]
+}
