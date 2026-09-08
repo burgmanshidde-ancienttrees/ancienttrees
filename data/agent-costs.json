@@ -5965,6 +5965,15 @@
         "note": "8 lines, worst-first by impressions from recognise.py --stuck. Session total: 94 recognition lines across 24 cities.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Frydlant, Grybiskes, Heerlen, Higashiagatsuma, Higashimiyoshi, Hilvarenbeek, Horni Bradlo, Iwaki, Iwata, Jachymov, Kaunas, Kawago, Kawazu, Kintai, Koriyama, Lipany, Lukavice, Maebashi, Minami-Alps, Mito, Myjava, Nagano, Naha, Nihonmatsu, Padua, Peesten, Priekule, Rambynas, Ramsau bei Berchtesgaden, Raudone, Rimov, San Quirico dOrcia, Shinkamigoto, Stoutenburg, Takahama, Takayama, Tatobity, Toga, Trencianske Stankovce",
+        "kind": "write",
+        "tokens": 60000,
+        "trees": 39,
+        "note": "Cleared the recognise.py --stuck worst-first pool to empty (was 39 trees across 39 cities, each the only tree in its city with no photo, no line, and government-named company within 25m). Restated only from species, girth, height, setting, story already on file.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
