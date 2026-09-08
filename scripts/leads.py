@@ -409,6 +409,18 @@ def classify(entry, blocking):
     # a fresh paid-ratio check (not a blind readd) before any of them ship.
     if entry.get("pulled_from_city"):
         return {"label": "pulled from a published city on a ratio/reach ruling, not merely unattended"}
+    # A tree carrying `retired_id` was PUBLISHED and then pulled, which is a
+    # stronger decline than anything prose-matching can catch. Found
+    # 2026-09-08: four Nara trees retired the same day they were published
+    # ("Published from a reader's photograph with ZERO verified sources")
+    # came straight back through leads.py --ready an hour later, because
+    # their `why` field IS the retirement note, so has_source_evidence() read
+    # it as proof a pass had looked at the tree rather than as the pass's own
+    # refusal. A retired_id is unambiguous: this exact tree already failed
+    # the bar once, under a name we already used, and shipping it again from
+    # the same zero sources would repeat the mistake the retirement recorded.
+    if entry.get("retired_id"):
+        return {"label": "retired after publication (id %s); the why field is the retirement note, not new sourcing" % entry["retired_id"]}
     # The fix above only works when a pass remembers to also set status to
     # "held", and in practice it often does not: Braga's own two entries still
     # read status "lead" today, prose only. Found 2026-08-16 when a Guimaraes
