@@ -121,6 +121,35 @@ final class FlowWalk: XCTestCase {
                 Step(name: "tap-the-camera") { Self.tap($0, "tab-collect") },
             ]),
 
+            // WHICH ONE IS IT, walked rather than photographed (2026-09-08).
+            // Every screen in this flow already had a launch argument and a
+            // frame in the sweep, and not one of the paths BETWEEN them had
+            // ever been taken. That gap is the whole reason this suite exists:
+            // Hidde's Nara afternoon was a fault in the movement between two
+            // screens, not in either screen.
+            //
+            // The route is the one he sketched. Open the list, look at a
+            // candidate properly, come back without committing, then say you
+            // cannot tell. Every step has to leave a way out, which is the one
+            // thing a machine can be sure of here.
+            Flow(name: "which-one-is-it",
+                 args: ["-collect", "-collect-identify"] + signedIn, steps: [
+                Step(name: "open-a-candidate") { Self.tap($0, "collect-candidate-0") },
+                Step(name: "back-to-the-list") { Self.tap($0, "Back to the list") },
+                Step(name: "open-it-again") { Self.tap($0, "collect-candidate-0") },
+                Step(name: "say-it-is-the-one") { Self.tap($0, "collect-this-is-the-one") },
+                // The escape from a confident match, which used to be a grey
+                // link and is now the same size as Done.
+                Step(name: "doubt-it-afterwards") { Self.tap($0, "collect-not-this-one") },
+            ]),
+
+            // The honest exit, and the one that must never lose a photograph.
+            Flow(name: "not-sure-which",
+                 args: ["-collect", "-collect-identify"] + signedIn, steps: [
+                Step(name: "say-you-cannot-tell") { Self.tap($0, "collect-not-sure") },
+                Step(name: "done") { Self.tap($0, "collect-unsure-done") },
+            ]),
+
             // MODERATION, built 2026-08-27 and therefore the least walked thing
             // in the app. Apple's reviewer taps exactly this sequence, so it is
             // the one flow where a dead end would cost a release rather than an

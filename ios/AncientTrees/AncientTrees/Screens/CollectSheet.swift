@@ -643,9 +643,13 @@ struct CollectSheet: View {
             // photographs and species details, and only then tap "This is my
             // bird!". A list whose rows commit on touch skips the comparing,
             // which is the only part that makes the answer worth anything.
-            ForEach(candidates) { t in
+            ForEach(Array(candidates.enumerated()), id: \.element.id) { i, t in
                 Button { withAnimation(.snappy) { stage = .compare(t.id) } } label: { row(t) }
                     .buttonStyle(.plain)
+                    // Indexed rather than named: a UI test runs in its own
+                    // process and cannot know which trees are near the
+                    // simulator's fixed location.
+                    .accessibilityIdentifier("collect-candidate-\(i)")
             }
             Divider().padding(.vertical, 4)
             Button { withAnimation(.snappy) { stage = .describe } } label: {
