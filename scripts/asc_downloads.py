@@ -162,12 +162,41 @@ def daily_download_totals(days=14):
                     if k.strip().lower() in ("counts", "count", "units"):
                         count_col = k
                         break
-            if count_col:
-                try:
-                    totals[date] = totals.get(date, 0) + int(row[count_col])
-                except (ValueError, TypeError):
-                    pass
+            if not count_col or not _is_new_person(row):
+                continue
+            try:
+                totals[date] = totals.get(date, 0) + int(row[count_col])
+            except (ValueError, TypeError):
+                pass
     return totals, None
+
+
+# AUTO-UPDATES ARE NOT DOWNLOADS, and summing every row said they were
+# (2026-09-08). Hidde asked why Apple and PostHog disagreed so badly on how many
+# people had the app, and this was most of the answer: the report carries a
+# "Download Type" column and we were adding up all of it, so 09-06 read as 12
+# when four people had actually arrived and seven existing phones had quietly
+# updated themselves to 1.0.1 overnight. Across the first four days that turned
+# 28 real arrivals into 38.
+#
+# The distinction is the whole point of the number. An update is a phone doing
+# housekeeping and tells us nothing; a first-time download is a person who read
+# the page and pressed the button, which is the only figure we have that counts
+# somebody DECIDING rather than arriving. A redownload is a person too, and a
+# returning one, so it counts.
+NEW_PERSON = ("first-time download", "redownload")
+
+
+def _is_new_person(row):
+    """A row that represents somebody getting the app, not a phone updating it.
+
+    Absent column means an older or narrower report shape, and there the honest
+    default is to count the row rather than silently drop the whole day.
+    """
+    for key in row:
+        if key.strip().lower() == "download type":
+            return str(row[key]).strip().lower() in NEW_PERSON
+    return True
 
 
 if __name__ == "__main__":

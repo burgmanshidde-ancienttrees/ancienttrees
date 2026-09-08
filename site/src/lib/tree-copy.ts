@@ -238,15 +238,28 @@ export function metaForTree(tree: {
   // own story rather than showing an English sentence in a French snippet.
   const why = (tree.why_go ?? "").trim();
   const story = overrides?.story ?? tree.story ?? "";
-  // ONLY WHEN IT FITS WHOLE. A reason cut off at a comma is worse than no
+  // ONLY WHEN IT ENDS CLEANLY. A reason cut off mid-thought is worse than no
   // reason, and tested on the Brussels honey locust the naive version made the
   // page WORSE: a 130-character why_go clause-cut to 59 replaced 106
-  // characters of story that were already doing the job. So why_go takes the
-  // front of the tail when it fits, and whatever room is left still goes to
-  // the story, which is how the answer and the hook end up in the same snippet
+  // characters of story that were already doing the job. metaFromStory ends
+  // with an ellipsis exactly when it had to cut, so that is the test, and it
+  // works whether why_go is one sentence or five: whole sentences are taken
+  // from the front until the room runs out. Whatever room is left still goes
+  // to the story, which is how the answer and the hook share the snippet
   // instead of competing for it.
-  const useWhy = !overrides && !age && !size && !!why && why.length <= room;
-  const front = useWhy ? why : "";
+  // WHOLE SENTENCES ONLY, and its own loop rather than metaFromStory's,
+  // because the two want different things. metaFromStory keeps filling toward
+  // DESC_MIN and accepts an ellipsis to get there, which is right for a story
+  // (more of it is more reason to go) and wrong for a reason (half a reason is
+  // not a short reason). So: take sentences from the front while they fit, and
+  // if not even the first one fits, take none and let the story have the room.
+  // A reason that ends mid-thought never ships.
+  const whyFront = why.split(/(?<=[.!?]) /).reduce((acc, s) => {
+    const next = acc ? `${acc} ${s}` : s;
+    return next.length <= room ? next : acc;
+  }, "");
+  const useWhy = !overrides && !age && !size && !!whyFront;
+  const front = useWhy ? whyFront : "";
   const rest = room - (front ? front.length + 1 : 0);
   const tail = rest >= 45 ? metaFromStory(story, rest) : "";
   const body = [front, tail].filter(Boolean).join(" ");
