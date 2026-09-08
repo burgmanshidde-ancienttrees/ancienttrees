@@ -1,0 +1,117 @@
+[
+  {
+    "id": "dor_009",
+    "name": "The Pedunculate Oak of the Weizigtpark",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 195 to 205 years, from the register's planting band of 1820 to 1830",
+    "age_min": 196,
+    "age_max": 206,
+    "location": {
+      "address": "Weizigtpark, wooded strip along the railway (bosgedeelte langs het spoor)",
+      "latitude": 51.80666,
+      "longitude": 4.667376,
+      "neighbourhood": "Weizigt"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695555",
+      "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08"
+    ],
+    "access": "Free. Public park, open daily.",
+    "transport": "About 500 m west of Dordrecht station, in the wooded strip beside the railway tracks.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register source (LRMB nr 1695555): planted 1820-1830 in Weizigtpark's wooded strip along the railway. Unusual dating method: the register states the planting year was determined from the growth rings of a NEIGHBOURING tree of the same generation, which has since been felled ('Het plantjaar is bepaald aan de hand van de jaarringen van de boom ernaast die helaas is gekapt') - so this tree's own age is inferred by association, not measured directly. Owner category gemeente (municipality), visitable=ja, visible=ja in the register. PDOK aerial imagery (accessed 2026-09-08) confirms mature tree cover standing in the wooded strip at this location today, alongside the Weizigtpark's 2024 full renovation (paths, water, banks redone per dordrecht.nl and IVN Dordrecht); the renovation plan documents were not fetchable to confirm this specific tree by name within the search budget, so treat as flagged: register plus dated aerial confirmation of continued tree cover, not a named second source for this individual oak. About 170 m from the published Silver Maple (dor_003) and 265 m from the published Pond Cypress (dor_008), both also in Weizigtpark, so this adds a third stop to that cluster's already-published pair. No girth recorded in the register entry."
+  },
+  {
+    "id": "dor_010",
+    "name": "The Weeping Beech by the Vest",
+    "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+    "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890 to 1900",
+    "age_min": 126,
+    "age_max": 136,
+    "location": {
+      "address": "Vest, beside the La Venezia ice cream parlour building (Vest 180-184)",
+      "latitude": 51.811559,
+      "longitude": 4.668884,
+      "neighbourhood": "Vest"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1680296",
+      "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08"
+    ],
+    "access": "Free. Public green strip (plantsoen) beside the Vest canal, open at all times.",
+    "transport": "About 1 km northeast of Dordrecht station, on the Vest near the canal junction.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register source (LRMB nr 1680296): 'Treurbeuk, Vest naast Lavanesia' ('naast Lavanesia' is the register's own spelling of what is now the La Venezia ice cream parlour at Vest 180-184, in the current building opened in 1981; the tree predates that building by nine decades). Setting plantsoen, owner gemeente, visitable=ja. Reason code 'potentieel' (potential) rather than the register's usual 'monumentaal', which the register uses for candidates awaiting full confirmation; note this in the story as a slightly lower designation tier than most of this page's trees. PDOK aerial imagery (accessed 2026-09-08) shows a small cluster of mature trees still standing in the public green strip at the canal junction matching this location; could not find a second named source describing this specific tree, so flagged. No girth recorded."
+  },
+  {
+    "id": "dor_011",
+    "name": "The Dutch Lime of the Spuiboulevard",
+    "species": "Dutch Lime (Tilia x europaea)",
+    "age_estimate": "roughly 86 to 96 years, from the register's planting band of 1930 to 1940",
+    "age_min": 86,
+    "age_max": 96,
+    "location": {
+      "address": "Spuiboulevard, opposite number 250",
+      "latitude": 51.811722,
+      "longitude": 4.6642,
+      "neighbourhood": "Spuiboulevard"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695557",
+      "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08"
+    ],
+    "access": "Free. Public street/canalside verge, open at all times.",
+    "transport": "About 1.4 km southwest of Dordrecht station, on the Spuiboulevard.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register source (LRMB nr 1695557): 'Hollandse linde Spuiboulevard', opposite house number 250, owner gemeente, visitable=ja, visible=ja. Register notes it was already kept once: 'Bij de bouw van de appartementencomplexen in 2004 is deze boom behouden' (kept during construction of the apartment complexes in 2004). IMPORTANT CONTEXT CHECKED: the Spuiboulevard is undergoing a large 2026 redevelopment, and stad-en-groen.nl / dordrecht.nl report that 28 mature lindens were relocated off the east side of the boulevard (near the Dordthuis) in January 2026 to four other Dordrecht sites - but those relocated trees are explicitly described as having stood roughly thirty years (so planted around the 1990s), which does not match this register tree's much older 1930-1940 planting band. Treat as a different, older, so-far-unmoved specimen rather than one of the 28, but this is inference rather than a direct statement that THIS tree was spared, hence flagged. PDOK aerial imagery (accessed 2026-09-08) shows a row of mature trees still standing along the canalside verge at this coordinate, with active construction visible nearby, consistent with an ongoing but not-yet-arrived redevelopment at this specific spot. No girth recorded."
+  },
+  {
+    "id": "dor_012",
+    "name": "The White Horse Chestnut of the Boogjes Courtyard",
+    "species": "White Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880 to 1890",
+    "age_min": 136,
+    "age_max": 146,
+    "location": {
+      "address": "Inner courtyard bounded by Boogjes, Ruitenstraat, Voorstraat, Botgensstraat and Kleine Spuistraat",
+      "latitude": 51.812803,
+      "longitude": 4.66106,
+      "neighbourhood": "Centrum"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1680490",
+      "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08"
+    ],
+    "access": "Free. Municipality-owned inner courtyard reached via a passage off the surrounding streets; visitable per the register.",
+    "transport": "About 900 m northwest of Dordrecht station, in the old centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register source (LRMB nr 1680490): 'Witte paardenkastanje', in the shared inner courtyard (binnentuin) bounded by five named streets: Boogjes, Ruitenstraat, Voorstraat, Botgensstraat and Kleine Spuistraat. Owner category gemeente (municipality), not a private individual, and visitable=ja, which distinguishes it from the two Wijnstraat trees blocked this pass. PDOK aerial imagery (accessed 2026-09-08) shows a real cluster of mature trees and what looks like a small pond inside the block interior at this coordinate, consistent with a planted inner-city courtyard garden. Not the same tree as the White Horse Chestnut at Willem Kes Plantsoen near the Kunstmin theatre (register nr 1680501, a different, separately registered specimen about 1.9 km away near Sint Jorisweg) or the 1830 chestnut moved 80 m during the 1990s Koningstunnel works described on the Bomenridders/In Dordrecht tree-knights walk, which is a third, different tree again. Could not find a named second source describing this specific courtyard specimen within the search budget, so flagged. No girth recorded. This is the sole exact spelling and street list the register itself gives for the address; a writer should describe it as a shared block-interior garden entered from one of those streets rather than a normal street tree."
+  },
+  {
+    "id": "dor_013",
+    "name": "The Grey Poplar of the Weizigtpark",
+    "species": "Grey Poplar (Populus x canescens)",
+    "age_estimate": "roughly 76 to 86 years, from the register's planting band of 1940 to 1950",
+    "age_min": 76,
+    "age_max": 86,
+    "location": {
+      "address": "Weizigtpark, southeast edge of the park (Z.oost rand park Weizigt)",
+      "latitude": 51.805083,
+      "longitude": 4.669481,
+      "neighbourhood": "Weizigt"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1680303",
+      "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08"
+    ],
+    "access": "Free. Public park, open daily.",
+    "transport": "About 900 m southwest of Dordrecht station, at the southeast edge of Weizigtpark.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register source (LRMB nr 1680303): planted 1940-1950 at the southeast edge of Weizigtpark, owner gemeente, visitable=ja. Grey poplar is a natural cross of white poplar and aspen and can reach around 35 m; a web search surfaced a description of a Weizigtpark specimen 'over 35 metres tall' (via a Laag Holland / bomenbieb-linked snippet) but the exact source page could not be confirmed by direct fetch within the search budget, so that height figure is NOT recorded here and should not be repeated as fact; noting it only so a later pass knows to chase it down properly. PDOK aerial imagery (accessed 2026-09-08) confirms a stand of mature trees at the park's southeast edge along a public path, consistent with this location. About 88 m from the published Silver Maple (dor_003) - close enough that a writer should mention them as neighbours in the same park rather than treat them as unrelated stops - and 227 m from the new Pedunculate Oak (dor_009) and 449 m from the published Pond Cypress (dor_008), all four now in the same Weizigtpark cluster. No girth recorded."
+  }
+]

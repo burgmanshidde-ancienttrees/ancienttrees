@@ -1,0 +1,29 @@
+{
+  "place": "Dordrecht",
+  "country": "Netherlands",
+  "note": "Deepen pass, 2026-09-08, working the netherlands-lrmb register candidates within ~1.1km of the published cluster. Verified trees went to data/research/dordrecht-verified.json as dor_009 onward.",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "Mammoetboom (Giant Sequoia), achtertuin Kromhout 160",
+      "reason": "Register (LRMB nr 1680484) records this tree's OWN history field as 'Boom is geveld door nieuwe bewoner volgens de voormalig eigenaar' (felled by the new resident, according to the former owner) -- a direct dead-tree signal from the register itself, and it also sits in a private back garden (owner_category particulier, visitable unknown) rather than open ground. Never ships: known-dead signal plus private land.",
+      "lat": 51.812663,
+      "lng": 4.672649,
+      "register_nr": 1680484
+    },
+    {
+      "name": "Bruine beuk 'De Onbeschaamde' (Copper Beech), Wijnstraat 123-125",
+      "reason": "Register (LRMB nr 1689583) explicitly records visitable=nee, visible=nee: it stands in the private back garden (achtertuin) of the historic house 'De Onbeschaamde' (built 1650 for mayor Abraham van Beveren, now owned by heritage body Vereniging Hendrick de Keyser). A genuinely good story but not open ground per the register's own field and no evidence found of regular public access. Leave for a later pass if Hendrick de Keyser is found to open the garden (e.g. Open Monumentendag).",
+      "lat": 51.817619,
+      "lng": 4.667622,
+      "register_nr": 1689583
+    },
+    {
+      "name": "Venijnboom (Yew), Wijnstraat 123-125",
+      "reason": "Same private back garden as 'De Onbeschaamde' beech above (register confirms the two stand together, ~15m apart, in one courtyard behind the Wijnstraat 123-125 house). Register (LRMB nr 1689584) records visitable=nee, visible=nee. Not a separate access case; blocked for the same reason.",
+      "lat": 51.817567,
+      "lng": 4.667758,
+      "register_nr": 1689584
+    }
+  ]
+}
