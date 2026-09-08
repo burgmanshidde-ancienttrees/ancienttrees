@@ -1,0 +1,55 @@
+{
+  "city": "Ekerö",
+  "country": "Sweden",
+  "status": "needs_curation",
+  "intro": "Ekerö is an island municipality in Lake Mälaren west of Stockholm, and it holds the largest deciduous tree in Sweden. Ekebyhovseken stands alone in the open meadow below Ekebyhov Castle: roughly 84 cubic metres of oak, 10.5 metres round at chest height and only 17 metres tall, because nearly all of it is trunk. It is also the thickest oak in Stockholm County, protected as a natural monument since 1956, and hollow enough that nobody has ever been able to count its rings. The castle park is open all year and costs nothing.",
+  "meta_description": "Ekebyhovseken on Ekerö is Sweden's largest deciduous tree: about 84 cubic metres of oak, 10.5 metres round, in the meadow below Ekebyhov Castle.",
+  "question_meta": "Ekerö's oldest and largest tree is Ekebyhovseken, an oak estimated at 500 years and 10.5 metres round, below Ekebyhov Castle.",
+  "question_answer": "Ekebyhovseken, the oak standing in the meadow south of Ekebyhov Castle. It is estimated at roughly 500 years old and measures 10.5 metres round at chest height, which makes it the thickest oak in Stockholm County and, at about 84 cubic metres, the largest deciduous tree in Sweden. It is free to visit at any hour; the castle park is open year-round.",
+  "question_context": "The age is an estimate and both sources say so outright. A hollow veteran oak has no heartwood left to core, so nobody has counted the rings and nobody can. Approximately 500 years is the figure that gets repeated, and the range kept here runs from 400 to 600 because that is how wide the honest band is. What can be measured has been. Swedish Wikipedia gives the girth as 10.5 metres and the local paper Mitt i as about 11, a difference of some fifteen centimetres that nobody has reconciled; the lower figure is the one recorded here. The volume, about 84 cubic metres, is what earns the tree its national title, and it sits oddly against a height of only 17 metres. That is what an old broadleaf does with its last centuries: it widens rather than climbs. The crown is thinned and damaged today and the tree was probably taller once. Sweden declared it a natural monument in 1956. Getting there from central Stockholm takes over an hour by bus via Brommaplan, then fifteen minutes on foot from Ekerö centrum. If you have measured the trunk yourself, tell us which girth is right.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ekerö?",
+      "a": "Ekebyhovseken, the great oak below Ekebyhov Castle, estimated at roughly 500 years old. It is also the largest deciduous tree in Sweden by volume."
+    },
+    {
+      "q": "How big is Ekebyhovseken?",
+      "a": "About 84 cubic metres of tree, 10.5 metres round at chest height and 17 metres tall. Swedish Wikipedia gives the girth as 10.5 metres, the local paper Mitt i as nearer 11."
+    },
+    {
+      "q": "How do you get there from Stockholm?",
+      "a": "Bus via Brommaplan to Ekerö centrum, which takes over an hour from the centre, then about fifteen minutes on foot to the castle meadow. It is a day out rather than a city stop."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The tree stands in the open park of Ekebyhovs slott, which is open to the public year-round for walking."
+    }
+  ],
+  "trees": [
+    {
+      "id": "eke_001",
+      "name": "Ekebyhovseken",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 1050,
+      "location": {
+        "address": "Meadow south of Ekebyhovs slott (Ekebyhov Castle), Ekerö",
+        "latitude": 59.279735,
+        "longitude": 17.820145,
+        "neighbourhood": "Ekerö"
+      },
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Ekebyhovseken",
+        "https://www.mitti.se/sidan-45/ekerojattarna-ar-storst-i-lanet-6.3.83679.7bba5504aa"
+      ],
+      "access": "Free. Stands in the open meadow of Ekebyhovs slott's park, which is open to the public year-round for walking.",
+      "transport": "Ekerö centrum, roughly 15 minutes' walk. Public transport from central Stockholm is not fast (bus via Brommaplan, over an hour); this is a day out to Ekerö rather than an in-town stop.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Sweden's largest deciduous tree by volume is only 17 metres tall.\n\nAlmost all of Ekebyhovseken is trunk. About 84 cubic metres of oak stand in the meadow below Ekebyhov Castle on the island of Ekerö, on a stem 10.5 metres round in Swedish Wikipedia's measurement and nearer 11 metres in the local paper Mitt i. The two figures differ by about fifteen centimetres and nobody has reconciled them. It is the thickest oak in Stockholm County and the largest living broadleaf in the country. The crown above that trunk is damaged and thinned, and the tree was very likely taller once.\n\nNobody has counted its rings and nobody is going to. An oak this old is hollow, the heartwood long since given up, and there is no centre left to read. Both sources give the age as approximately 500 years and both say plainly that the figure is an estimate rather than a count, which is why the range here runs from 400 to 600 and stays that wide.\n\nSweden made it a protected natural monument in 1956. Getting to it is the price of it: an hour or more from central Stockholm by bus via Brommaplan, then a quarter of an hour on foot from Ekerö centrum, into an open meadow where the biggest broadleaf in the country stands by itself. If you have put a tape around it yourself, tell us which girth is right.",
+      "how_to_recognise": "You can recognise it by the trunk, 10.5 metres round under a tree only 17 metres tall; nothing else here is that shape. It stands by itself in the open meadow south of Ekebyhov Castle."
+    }
+  ]
+}

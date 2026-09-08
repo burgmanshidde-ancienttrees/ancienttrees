@@ -3,7 +3,7 @@
   "country": "Sweden",
   "status": "needs_curation",
   "oldest_tree_id": "sto_001",
-  "intro": "Stockholm protects nearly 3,000 ancient oaks, most of them on Djurgården, a legacy of a royal law that made felling one a capital crime because the navy needed the timber for warships. The four gathered here go beyond simple age: an 800-year oak the city built a motorway junction around rather than remove, an oak a Scottish geologist used to help prove Scandinavia's land was rising out of the sea, elm trees Stockholmers once occupied overnight to save from chainsaws, and the single largest tree in the city by volume.",
+  "intro": "Stockholm protects nearly 3,000 ancient oaks, most of them on Djurgården, a legacy of a royal law that made felling one a capital crime because the navy needed the timber for warships. The six gathered here go beyond simple age: an 800-year oak the city built a motorway junction around rather than remove, an oak a Scottish geologist used to help prove Scandinavia's land was rising out of the sea, elm trees Stockholmers once occupied overnight to save from chainsaws, an ash Linnaeus recorded in the 1740s, and a hollow oak on a hospital's own grounds you can step inside.",
   "meta_description": "Stockholm's most remarkable trees: the 800-year Birger Jarl's Oak, Lyell's oak, the protest-saved Kungstradgarden elms, and Prince Eugen's giant oak.",
   "question_answer": "Stockholm's oldest tree is generally considered Birger Jarl's Oak, on a traffic island at the Kristineberg motorway interchange on Kungsholmen, estimated at roughly 800 years old, as old as the city itself. Its trunk is more than two metres across, among the nine thickest oaks recorded in Stockholm.",
   "question_meta": "Birger Jarl's Oak on Kungsholmen, roughly 800 years old and named for Stockholm's founder, is the city's oldest tree, on a motorway traffic island.",
@@ -212,6 +212,31 @@
       "location_precision": "confirmed",
       "how_to_recognise": "Two trunks from one base, both of them lumpy with burls; the other ashes along this shore are smooth.",
       "verify_notes": "Sent in 2026-09-07 by Daniel Daggfeldt, a veteran tree specialist in Stockholm, answering our outreach mail via the Swedish Tree Association. Pin confirmed: his own map link gives 59.320380, 18.032699 and Swedish Wikipedia gives 59.320331, 18.032708, five metres apart. Girth and height not recorded anywhere found; flagged for that. He says his colleague, tree photographer Tina Axelsson, has photographed this tree."
+    },
+    {
+      "id": "sto_006",
+      "name": "Sjukhuseken",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 800 years",
+      "age_min": 650,
+      "age_max": 900,
+      "girth_cm": 786,
+      "location": {
+        "address": "Grounds of Danderyd Hospital (Danderyds sjukhus), on the slope above Edsviken, Danderyd",
+        "latitude": 59.3905,
+        "longitude": 18.03578,
+        "neighbourhood": "Danderyd"
+      },
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Sjukhuseken",
+        "Lansstyrelsen i Stockholms lan, 'Naturminnen i Stockholms lan' (ISBN 91-7281-160-9), p.45, cited by sv.wikipedia and Wikidata Q89466458 as the register source for the 1960 protection decision"
+      ],
+      "access": "Free. Stands in the open grounds of Danderyd Hospital, beside what the source describes as a public playground; no gate or restriction recorded.",
+      "transport": "Danderyds sjukhus metro station (Roslagsbanan/T-bana) is essentially at the site, about 15-20 minutes from central Stockholm. Comfortably inside the day-trip boundary; joins Stockholm.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This oak is hollow from the ground to the top of the trunk, and you can walk inside it.\n\nThe inside is scarred by an old fire, and birds nest in it. Sjukhuseken, the hospital oak, is about 800 years old by the county administration's own report on the natural monuments of Stockholm County, and 7.86 metres round, among the thickest of the protected oaks in the county.\n\nIts other name is the older one. Mörbyeken, after Mörby Crown Park, the ground it grew up in long before anyone put a hospital here. The hospital came to the tree rather than the other way round: it was first protected in 1948, and formally declared a natural monument on 30 June 1960, when Stockholm County Council took the land to build Danderyd Hospital around it.\n\nIt is not a pristine specimen. In 1989 a large limb came down onto the playground beside it and the tree was heavily pruned in response. What stands on the slope above Edsviken today is a hollow, fire-marked, cut-back veteran keeping its place among hospital buildings, which is roughly what eight centuries look like from the outside.\n\nThe metro station is named after the hospital and sits essentially at the site, fifteen to twenty minutes from the middle of Stockholm.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, 7.86 metres round and open enough to step inside, under a crown cut hard back after 1989. It stands on the slope above Edsviken, beside the playground in the hospital grounds."
     }
   ]
 }
