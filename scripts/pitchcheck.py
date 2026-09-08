@@ -152,6 +152,30 @@ HIDDEN_FEATURES = re.compile(
 # the kind of document where "it is only for one editor" feels like an excuse.
 OWNER_NAME = re.compile(r"\b(hidde|burgmans)\b", re.I)
 
+# EXCEPT WHERE HE IS THE SENDER. A personal reply is signed, and his own mails
+# in drafts/HIS_VOICE.md all end "Hidde"; the rule above is about a stranger
+# meeting his name in copy that speaks ABOUT the product, not about a letter
+# that comes FROM him. The pre-push hook caught a mailcheck-clean reply to a
+# Stockholm arborist on 2026-09-08 purely for its sign-off, which would have
+# made every future reply need --no-verify, and a check routinely bypassed is
+# a check nobody has.
+#
+# The test is deliberately narrow: the name alone on the last few lines, which
+# is what a signature looks like and what a sentence about him never does. His
+# name in the body of a pitch still fires.
+SIGNATURE = re.compile(r"^\s*(hidde|burgmans)[\s,.!-]*$", re.I | re.M)
+
+
+def without_signature(text):
+    """Drop a trailing sign-off line so a signed letter is not read as a pitch."""
+    lines = text.rstrip().splitlines()
+    keep = len(lines)
+    for i in range(len(lines) - 1, max(-1, len(lines) - 4), -1):
+        if SIGNATURE.match(lines[i]):
+            keep = i
+            break
+    return "\n".join(lines[:keep])
+
 
 def body_of(text):
     """The copy a stranger will read, not the notes around it.
@@ -200,7 +224,7 @@ def check(text, label="text"):
                 hits.append(("the opening sets up a negative so we can answer it",
                              TICS[1][2],
                              " ".join(opening.split())[:90]))
-        for m in OWNER_NAME.finditer(body):
+        for m in OWNER_NAME.finditer(without_signature(body)):
             hits.append(("the owner's name",
                          "Hidde, 2026-09-04: \"dont mention me ever\". It applies to "
                          "anything a stranger reads, an Apple nomination included. "
