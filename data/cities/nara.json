@@ -3,7 +3,7 @@
   "country": "Japan",
   "status": "published",
   "intro": "Japan's first capital kept its trees the way it kept its temples, as part of the religion. Nara Park is not a park in the European sense but the shared grounds of Kasuga Taisha and Todai-ji, where deer have grazed for centuries and cutting a tree needed a reason. The result is a city whose oldest living things stand in the open with rope tied around them: a camphor that has watched a thousand years of festivals, a cedar drawn as a sapling in 1309, and a hollow trunk with a bamboo growing out of the top.",
-  "meta_description": "Nara's oldest tree is a camphor of a thousand years, twelve metres round at the base. That, a cedar drawn as a sapling in 1309, and twelve more.",
+  "meta_description": "Nara's oldest tree is a camphor of a thousand years, twelve metres round at the base. That, a cedar drawn as a sapling in 1309, and thirteen more.",
   "question_meta": "Nara's oldest tree is the thousand-year camphor of Naratsuhiko Shrine, twelve metres round at the base and a protected natural monument since 1951.",
   "question_answer": "The oldest tree in Nara is the giant camphor behind the main hall of Naratsuhiko Shrine on the old Narazaka pass road, recorded as over a thousand years old and protected as a Nara Prefecture Natural Monument since 1951. It measures 12.8 metres around at ground level and roughly thirty metres tall, forking into two great limbs about seven metres up. It is free to visit.",
   "question_context": "The age is traditional rather than measured, as it is for almost every great camphor in Japan, but the size supports it and the shrine's own founding legend puts it at twelve centuries. What makes this tree worth the fifteen minute bus ride is what happens beneath it. On the evening of the eighth of October each year the shrine performs the Okina-mai, a masked dance recognised as an Important Intangible Folk Cultural Property and one of the oldest surviving ancestors of Noh theatre, and it is danced in the camphor's shade. The tree stands on Narazaka, the pass that carried travellers into the capital from the north, so anyone arriving in Nara from Kyoto in the eighth century walked past it. The only serious rival for the title is the great cedar at Kasuga Taisha, which sources date at somewhere between eight hundred and a thousand years and which has the better documentary evidence.",
@@ -524,6 +524,44 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Single-sourced on the Environment Ministry's giant-tree database (巨樹・巨木林データベース, PDL 1.0, report 47073). No coordinate in the source; the pin is the shrine, not the trunk. The milestone-planting habit is a general fact about the species and about Todai-ji's West Gate tree, explicitly not a claim about this one."
+    },
+    {
+      "id": "nra_019",
+      "name": "The Great Ginkgo of Haraedo Shrine",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over 300 years, from the national survey's age band",
+      "age_min": 300,
+      "age_max": 500,
+      "location": {
+        "address": "Haraedo Shrine, Kasuga Taisha, Kasugano-cho, Nara",
+        "latitude": 34.68024,
+        "longitude": 135.84283,
+        "neighbourhood": "Kasuga Taisha, on the approach between the Second Torii and Nanmon Gate"
+      },
+      "story": "Before you reach Kasuga Taisha itself, the approach path stops at a small purification shrine, Haraedo, where visitors were traditionally meant to be cleansed before going on to the main sanctuary. Its ginkgo has stood over that ritual for more than three centuries.\n\nFour metres and thirty centimetres round and twenty-five metres tall, with some dieback in the crown by the time the national survey measured it in 2000, which for a tree this size is ordinary rather than a warning. Ginkgo biloba is the oldest surviving tree lineage on Earth, essentially unchanged for two hundred million years, and it exists today mostly because people kept planting it around temples and shrines for a thousand years rather than because it thrives in the wild. This one earned its place at Haraedo the way most did, as a shrine tree rather than a survivor of anything.\n\nKasuga Taisha's own walking guide names it directly, the only ginkgo it names anywhere on either of its two forest routes, and says plainly what to come back for: not the ritual, but late autumn, when the tree turns and draws people who never knew Haraedo existed.\n\nIt stands on the free public approach, well before the ticketed inner precinct that holds the shrine's famous stone lanterns, so nobody needs a ticket to see it turn.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=47074&branch_number=1",
+        "http://web.archive.org/web/20260616151640/https://www.kasugataisha.or.jp/guidance/morisanpo2/"
+      ],
+      "access": "Free, on the open public approach path to Kasuga Taisha, before the paid inner precinct",
+      "transport": "About 30 min walk from Kintetsu Nara, or bus to Kasuga Taisha Honden and a few minutes on foot",
+      "girth_cm": 430.0,
+      "height_m": 25,
+      "how_to_recognise": "You can recognise it by being the only ginkgo Kasuga Taisha's own walking guide names, standing at Haraedo Shrine on the approach between the Second Torii and Nanmon Gate, well before the ticketed precinct.",
+      "best_time": {
+        "months": [11],
+        "label": "November, when the ginkgo turns gold",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Register: Environment Ministry giant-tree database (巨樹・巨木林データベース, PDL 1.0), report 47074, facility 春日大社, girth 430cm, height 25m, age band 300+ years, surveyed 2000-06-21 (so likely over 320 years by now), health shows some dieback (alive_hint true), no official designation. Second source: Kasuga Taisha's own official site (kasugataisha.or.jp/guidance/morisanpo2/, fetched via a Wayback Machine snapshot since the live page hangs on direct fetch) names and photographs 祓戸神社の大イチョウ (Great Ginkgo of Haraedo Shrine) as a specific stop on its own course between the Second Torii and Nanmon Gate, the only ginkgo named on either of its two forest-walk pages, which is what makes it safe to treat as the same tree as the register row rather than a different giant ginkgo elsewhere on the grounds. No independent girth figure was found to cross-check the register's 430cm. No coordinate in either source; the pin is the Kasuga Taisha facility point, not the trunk."
     }
   ]
 }

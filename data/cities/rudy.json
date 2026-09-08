@@ -2,7 +2,7 @@
   "city": "Rudy",
   "country": "Poland",
   "status": "needs_curation",
-  "intro": "Rudy is a single village built around a former Cistercian abbey, and its one remarkable tree stands in the abbey's own park. In October 2022 someone set the oak alight from inside its hollow trunk; a forestry expert's assessment the following year found it alive and recovering. Its 7.35-metre girth puts it among the widest oaks recorded in Upper Silesia, and it already stood in this park when a 1752 engraving of the abbey grounds was made.",
+  "intro": "Rudy is a village built around a former Cistercian abbey, and its own oak stands in the abbey's park. In October 2022 someone set it alight from inside its hollow trunk; an expert assessment the following year found it alive and recovering, 7.35 metres round. Sixteen kilometres away in Łubowice, a second oak carries the name of the poet Joseph von Eichendorff, born and christened close to where it still stands.",
   "meta_description": "Dab Cysters, a 7.35-metre-round oak in the Cistercian abbey park at Rudy, Poland, survived an arson attack in 2022 and is still growing.",
   "question_meta": "Rudy's remarkable tree is Dab Cysters, a veteran oak in the Cistercian abbey park that survived an arson attack in 2022.",
   "question_answer": "The remarkable tree at Rudy is Dab Cysters (the Cistercians' Oak), a pedunculate oak standing in the park of the former Cistercian abbey in Rudy, Silesian Voivodeship, Poland. Its trunk measures 7.35 metres round, and estimates put its age between 400 and 550 years depending on the source.",
@@ -54,7 +54,39 @@
         "height": 3872
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the fire scar and the hollow low trunk, 7.35 metres round. It stands in the abbey's own park at Rudy, on ground three dendrology trails run through."
+    },
+    {
+      "id": "rud_002",
+      "name": "The Eichendorff Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 300 years",
+      "age_min": 270,
+      "age_max": 330,
+      "girth_cm": null,
+      "location": {
+        "address": "Near the village square and palace ruins, Łubowice",
+        "latitude": 50.16013,
+        "longitude": 18.23309,
+        "neighbourhood": "Łubowice, gmina Rudnik, Racibórz County"
+      },
+      "verified_sources": [
+        "https://trasynawczasy.pl/182-lubowice-z-wizyta-u-eichendorffa",
+        "https://www.echoprzygody.pl/raciborz/"
+      ],
+      "access": "Free, stands near the public village square and the ruins of the Eichendorff family palace, open ground",
+      "transport": "Small village roughly 16 km from Rudy; no direct public transport confirmed, best reached by car or bike as a day-trip stop",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The poet was christened in a wooden church that has since disappeared, next to an oak that has not. Joseph von Eichendorff, born in 1788 at the palace here in Łubowice, was baptised in a church that once stood near this tree. The church is gone. The palace is a ruin. The oak carries his name and still stands on the open ground by the village square.\n\nTwo Polish heritage sources agree on what it is and roughly how old: a pedunculate oak of about 300 years, they say, on dendrochronological calculation, so read it as a band of roughly 270 to 330 rather than a birthday. If that is right the tree was already seventy years old or so on the morning of the christening, and it has since watched the palace beside it fall into ruin and the region it stands in change country. It is a pomnik przyrody, a natural monument, which in Poland means nobody may fell it.\n\nEichendorff became one of the central poets of German Romanticism, and the village trades on him: the palace ruins, the park and a museum room devoted to him are all a short walk from the trunk.\n\nNobody has published a girth for this oak. If you get a tape around it, tell us.",
+      "how_to_recognise": "You can recognise it by where it stands: the oak on the open ground by the village square at Łubowice, a short walk from the ruins of the Eichendorff palace.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

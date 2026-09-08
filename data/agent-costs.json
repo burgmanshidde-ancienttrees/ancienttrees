@@ -6118,6 +6118,15 @@
         "note": "Merged 5 already-verified, already-written trees stranded uncommitted on disk from an earlier attempt (famouslithuania-verified.json): the Vytogala Independence Oaks ensemble (vyt_001, single-famous-tree exception, Girenas birthplace memorial) and a new 4-tree Pagramantis Regional Park cluster (pgm_001-004, Gudlaukis/Geniai/Tamosaiciai/Andriejaiciai oaks). No research or write-stories dispatch needed this attempt. Also fixed a lastmod.py false-positive-restamp bug found the same session (TRANSLATED_TREE_UNUSED) and re-derived data/lastmod.json against it. Tokens not tracked by an agent report; session merge work.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "famous-czech-republic + famous-poland-batch4",
+        "kind": "write",
+        "tokens": 47000,
+        "trees": 4,
+        "note": "4 stories + recognition lines, 1 best_time; lid_001 new place Machov, luk_002/rud_002/sul_003 joined existing places",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

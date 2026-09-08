@@ -1,0 +1,72 @@
+{
+  "city": "Machov",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Machov is a small border village near Broumov, a stop for hikers, cyclists and cross-country skiers on their way through the hills toward Poland. In 2020 the country voted its apple tree, growing in the garden of the U Lidmanu inn, its Tree of the Year, the first fruit tree ever to win the title. It is an ordinary orchard apple, about eighty years old, that a country chose over the usual oaks and limes.",
+  "meta_description": "Machov's apple tree, at the U Lidmanu inn near the Polish border, was the first fruit tree to win Czech Tree of the Year, in 2020.",
+  "question_meta": "Machov's remarkable tree is the Apple Tree at U Lidmanu, Czech Tree of the Year 2020, the first fruit tree ever to win.",
+  "question_answer": "The remarkable tree at Machov is the apple tree growing in the garden of the U Lidmanu inn at Machovska Lhota, a Blenheim Rennet planted around 1945. In 2020 it became the first fruit tree ever voted Czech Tree of the Year.",
+  "question_context": "The tree is a Blenheim Rennet, a late cooking apple, and Czech Wikipedia dates it to around 1945, the year its trunk is said to match the birth of Jarka Lidman, the inn's long-time owner. A 2020 report measured its trunk at 140 centimetres round and gave its age as seventy then, putting it near eighty now. That year it took 2,191 votes in the national Strom roku poll, the first time a fruit tree had won, and the following year it placed seventh in the European Tree of the Year vote. Local telling has it that the tree was once failing and was saved when a regular visitor advised burying iron nails around its roots. In 2026 it is on the ballot again, this time for Tree of the Quarter Century. It grows in the garden of U Lidmanu, a working country inn a kilometre from the Polish border where hikers, cyclists and cross-country skiers commonly stop to eat; no source confirms a right to enter without patronising the inn, so treat a visit as a stop at the inn rather than open access to a private garden.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree at Machov?",
+      "a": "An apple tree, a Blenheim Rennet, growing in the garden of the U Lidmanu inn at Machovska Lhota. In 2020 it became the first fruit tree ever voted Czech Tree of the Year."
+    },
+    {
+      "q": "How old is it?",
+      "a": "About eighty years, dated to around 1945. A 2020 report put it at seventy then with a trunk 140 centimetres round."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "It stands in the garden of a working inn and pension, not a gated private garden, but no source confirms a right to enter without eating or staying there. Treat a visit as a stop at U Lidmanu."
+    },
+    {
+      "q": "When is it worth visiting?",
+      "a": "Late September and October, when the apples ripen."
+    }
+  ],
+  "oldest_tree_id": "lid_001",
+  "trees": [
+    {
+      "id": "lid_001",
+      "name": "The Apple Tree at U Lidmanu (Jablon u Lidmanu)",
+      "species": "Apple (Malus domestica 'Blenheim Orange')",
+      "age_estimate": "about 80 years",
+      "age_min": 75,
+      "age_max": 85,
+      "girth_cm": 140,
+      "location": {
+        "address": "Garden of Restaurace a Penzion U Lidmanu, Machovska Lhota (village of Machov), Nachod District",
+        "latitude": 50.49748,
+        "longitude": 16.29385,
+        "neighbourhood": "Machovska Lhota, near the Polish border"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Jablo%C5%88_U_Lidman%C5%AF",
+        "https://www.stromroku.cz/vylety/jablon-u-lidmanu",
+        "https://nachodsky.denik.cz/zpravy-region/jablon-machov-strom-ctvrtstoleti-anketa-konkurence/"
+      ],
+      "access": "Free to view in the garden of the U Lidmanu restaurant and pension; a working country inn where hikers, cyclists and cross-country skiers commonly stop for food, not a gated private garden. No source explicitly confirms a public right to enter without patronising the inn, so state this plainly on the page.",
+      "transport": "Rural village Machovska Lhota (Machov), Nachod District, about 1 km from the Polish border; no rail, reached by local road; nearest larger town is Broumov.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "container": {
+        "type": "own_place",
+        "place": "Machov, Czech Republic"
+      },
+      "story": "In 2020 the Czech Republic gave its Tree of the Year title to an apple tree in an inn's garden. Strom roku normally goes to oaks and limes with several centuries behind them. This one took 2,191 votes, the first fruit tree ever to win it, and the following year it placed seventh in the European vote.\n\nIt grows at U Lidmanu, a country inn at Machovska Lhota a kilometre from the Polish border, where walkers, cyclists and cross-country skiers stop to eat. It is a Blenheim Rennet, a late apple grown for cooking. Czech Wikipedia dates it to around 1945, the year the war ended, and says it went in the same year as the birth of Jarka Lidman, the inn's long-time owner; a 2020 report called it seventy and measured its trunk at 140 centimetres round. Somewhere near eighty, then, which is a good age for an orchard apple.\n\nIt nearly did not get there. The story told locally is that the tree was failing until a regular visitor advised burying iron nails around its roots, after which it recovered. In 2026 it is on the ballot again, this time for Tree of the Quarter Century.\n\nWhich is the whole case for the drive out. Not girth, not centuries, but an ordinary orchard apple that a country voted for.",
+      "how_to_recognise": "You can recognise it by the trunk, about 140 centimetres round, and by the fruit: it is the old apple standing in the garden of the U Lidmanu inn at Machovska Lhota.",
+      "best_time": {
+        "months": [9, 10],
+        "kind": "fruit",
+        "label": "late September and October, when the Blenheim Rennet apples ripen"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
