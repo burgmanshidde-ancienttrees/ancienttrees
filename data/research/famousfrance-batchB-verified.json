@@ -1,0 +1,101 @@
+[
+  {
+    "id": null,
+    "name": "Tilleul de Châteauvieux",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "at least 400 years",
+    "age_min": 400,
+    "age_max": null,
+    "girth_cm": 1019,
+    "location": {
+      "address": "Place de la Chapelle de Château-Vieux, hameau de Châteauvieux, 74500 Féternes, Haute-Savoie",
+      "latitude": 46.353429,
+      "longitude": 6.541991,
+      "neighbourhood": "Châteauvieux hamlet, 1.5 km west of Féternes centre"
+    },
+    "verified_sources": [
+      "https://krapooarboricole.wordpress.com/2010/05/21/tilleul-de-chapelle-de-chateauvieux-feternes-haute-savoie/",
+      "https://fr.wikipedia.org/wiki/Chapelle_de_Ch%C3%A2teauvieux"
+    ],
+    "access": "Free. Stands on the public square beside the 13th-century Chapelle de Château-Vieux, and is the named stop on a signposted local walking loop (\"Boucle du tilleul et de la pierre à cupules à Féternes\", per lofficiel.net and the Pays d'Evian tourist office cc-peva.fr, which references a downloadable \"Sentier du Tilleul\" trail leaflet). No gate, no ticket.",
+    "transport": "Rural hamlet with no rail/transit stop; reached by road from Féternes centre (about 1.5km) or Thonon-les-Bains further out. Walking or driving only, no public transport.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "TWO INDEPENDENT SOURCES agree closely: krapooarboricole.wordpress.com (a specialist French tree blog) gives circumference 10.18m at 1.3m height, height about 20m, species Tilia cordata Mill., age 'at least 400 years', labeled a Remarkable Tree of France by the A.R.B.R.E.S. association in 2000. fr.wikipedia.org's Chapelle de Châteauvieux article independently gives circumference 10.2m at 1.3m, height about 20m, and the same 2000 remarkable-tree label. Figures are consistent (10.18 vs 10.2m); recorded girth_cm as 1019 (midpoint/rounding of the two). Age is a vague figure from a real source ('at least 400 years') and is kept exactly that vague per the age rules; do not sharpen to a precise number. Species is stated as Tilia cordata by krapooarboricole; the original famous_trees.py sweep only had a genus guess, this pass upgrades it to species level on that source's authority alone (only one source names the species precisely, so treat with slight caution, but it is a specific dendrological claim from a source that measured the tree, not a guess). A third tourism source (cc-peva.fr, the Pays d'Evian Vallée d'Abondance intercommunal tourist office) independently corroborates the tree is 'remarquable' and sits beside the chapel, and names a dedicated walking trail built around it, which also settles access as genuinely public (a signposted village square, not private land). DESTINATION CALL: borderline-positive. This is a genuinely large, old, officially labeled remarkable lime with its own named hiking loop built around it in a tourist micro-region (Lac Léman/Pays d'Evian), real evidence of local pride and some pull, but it is a small hamlet stop rather than a nationally famous specimen; someone touring the Léman/Abondance valley area could well be drawn to walk the loop, but it is unlikely to be a trip's sole reason on its own merits nationally. Recommend treating as a single-tree destination entry for its immediate micro-region rather than assuming national pull; flag for the writer to frame honestly rather than oversell."
+  },
+  {
+    "id": null,
+    "name": "Tilleul de Grange Sauvaget",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "disputed: legend says about 550 years, one arborist's measurement suggests closer to 250",
+    "age_min": 250,
+    "age_max": 550,
+    "girth_cm": 1320,
+    "location": {
+      "address": "Lieu-dit Grange Sauvaget, hiking trail toward the Arloz farmstead, 39110 Bracon/Ivory, Jura",
+      "latitude": 46.9182628,
+      "longitude": 5.8697197,
+      "neighbourhood": "Grange Sauvaget hamlet, between the villages of Bracon and Ivory"
+    },
+    "verified_sources": [
+      "https://krapooarboricole.wordpress.com/2008/02/13/venerable-tilleul-jurassien/",
+      "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/jura/il-faut-sauver-le-tilleul-de-grange-sauvaget-bracon-826589.html",
+      "https://www.jura-tourism.com/patrimoine-naturel/tilleul-de-granges-sauvaget/"
+    ],
+    "access": "Free, on a public hiking trail (chemin de randonnée) between Bracon and the Arloz farmstead, with a picnic area and parking nearby per jura-tourism.com. A protective barrier rings the trunk itself (visible in krapooarboricole's photos) to stop visitors compacting the roots or climbing it, but the tree is otherwise openly viewable and the site is set up for visitors.",
+    "transport": "Rural, no rail or bus stop; reached on foot via the signposted trail from Bracon or by car to the trailhead parking near Ivory/Bracon.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "PIN CORRECTED: the sweep's original coordinate (46.919894, 5.866617) sits about 300m from the tree's actual position. Cross-checked two independent tree-level sources that agree closely: an OpenStreetMap natural=tree node (id 2435508905, mapped 2023, name 'Tilleul de Granges Sauvaget', species Tilia cordata, height 25m, start_date 1477) at 46.9182628/5.8697197, and jura-tourism.com's own page giving GPS 46.9182785/5.86970676 for the same tree, roughly 20m apart from each other and clearly the same specimen. Used the OSM coordinate above; location_precision confirmed on that basis. TWO INDEPENDENT SOURCES for existence/species/history: krapooarboricole.wordpress.com (visited and measured the tree in August 2009) and france3-regions.franceinfo.fr (a regional news outlet, article dated 2015/updated 2020), both describing the same named tree at Grange Sauvaget/Bracon; a third, jura-tourism.com (the official departmental tourist board), corroborates location and the 1477 planting legend. AGE DISPUTE, not resolved, both figures kept per the register-pitfall rule against picking a winner silently: local legend/tradition (repeated by jura-tourism.com, bourgognefranchecomte.com and others) holds the tree was planted in 1477 for the wedding of Marie of Burgundy (Charles the Bold's daughter) to Maximilian of Habsburg, which would make it about 549 years old; krapooarboricole's own on-site visit and measurement notes this is folklore and that a scientific dendrological read of the trunk suggests 'no more than 250 years'. Recorded as a broad band (250-550) rather than picking either. GIRTH DISPUTE, also unresolved: tourist/legend sources (repeated across several sites, apparently originating from a sign or a 2003 measurement) say circumference 17m, once billed as 'the largest linden tree in France'; krapooarboricole's own tape measurement on site in August 2009 gives 13.2m at 1.3m height (12.9m at 1m), and that same source notes the discrepancy directly, suggesting either a measurement-methodology difference or genuine girth loss over time (old photos show a larger trunk). Recorded girth_cm as 1320 (the direct on-site 2009 measurement) as the better-sourced figure, but the 17m/'largest in France' claim is real material for the writer to mention as a contested superlative rather than a fact, per hard rule 8's looser bar (name the source, do not adjudicate). ALIVE CHECK: confirmed alive as of the France3 article (dated 2015, updated June 2020), which describes the tree having lost a large limb in an autumn storm (Sept 2019) and the Bracon municipality working to save it; no source found more recent than 2020 confirming continued life, so flagging curation_status as a precaution even though nothing suggests it has since died (a legally protected, locally treasured, actively monitored specimen like this would likely have made regional news if it had come down). Designated a tree of public utility ('utilite publique') in 1996 and classed among the Remarkable Trees of the Jura. DESTINATION CALL: clears the bar. A named tree tied to a specific 15th-century royal wedding legend, repeatedly billed (rightly or wrongly) as the largest or oldest linden in France, with its own regional news coverage of a campaign to save it and an official hiking-trail/picnic-area setup built around it, is a genuine draw for anyone interested in old trees, independent of any city; recommend as a strong single-tree-destination candidate."
+  },
+  {
+    "id": null,
+    "name": "Tilleul de Réaumont",
+    "species": "Large-leaved Lime (Tilia platyphyllos)",
+    "age_estimate": "about 620 years, planted around 1390",
+    "age_min": 600,
+    "age_max": 630,
+    "girth_cm": 920,
+    "location": {
+      "address": "Behind the Église Saint-Jean-Baptiste, village centre, 38480 Réaumont, Isère",
+      "latitude": 45.367005,
+      "longitude": 5.526088,
+      "neighbourhood": "Réaumont village centre"
+    },
+    "verified_sources": [
+      "https://krapooarboricole.wordpress.com/2010/05/17/le-tilleul-de-reaumont-isere/",
+      "https://www.arbredelannee.com/arbres/le-tilleul-a-grandes-feuilles-de-reaumont",
+      "https://mairie-reaumont.fr/la-maison-de-larbre/"
+    ],
+    "access": "Free. Stands in the open village square/churchyard behind the Église Saint-Jean-Baptiste in the centre of Réaumont, with a dedicated grassed and protected area around it (the local road was rerouted to give it room, per krapooarboricole). Reachable by train from Grenoble in about 25 minutes to the Réaumont Saint-Cassien halt, then a short walk on foot through fields to the village square (per merveillescachees.com, 2020).",
+    "transport": "Réaumont Saint-Cassien station (SNCF TER, Saint-Andre-le-Gaz line), about 25 minutes from Grenoble, then roughly a 10-15 minute walk on a path through fields to the village centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Coordinate independently cross-checked against an OpenStreetMap natural=tree node named 'Tilleul de Réaumont' (id 2434480448, mapped 2017) at 45.3671152/5.5261715, about 15m from the candidate coordinate, so treated as tree-level confirmed. TWO INDEPENDENT SOURCES agree closely on the core facts: krapooarboricole.wordpress.com (a specialist French tree blog that visited in 2010) gives circumference 9.20m at 1.3m, height 15m, planted circa 1390 (about 620 years old), species not stated by name there but described as tilleul; arbredelannee.com (France's official 'Arbre de l'Annee'/Tree of the Year competition site, which shortlisted this tree in 2013) independently gives circumference 9.05m, height 15m, age 620 years, and names the species precisely as Tilia platyphyllos. A third source (a 2019 survey of old Isere lindens, lestetardsarboricoles.fr, not fully fetched this pass but consistent in the search snippet) gives 9.36m in 2017, so the girth is recorded here as 920cm, a representative figure within the 905-936cm range different visits have measured; note the range for the writer rather than treating any single figure as exact, since a hollow, propped trunk this old plausibly measures differently by hand each time. Age is consistently reported at approximately 600-630 years across multiple independent sources spanning 2010 to 2020 (unusually consistent for a folk-dated tree), so recorded as a real, if broad, estimate rather than flagged as pure legend. CONDITION: the trunk is entirely hollow, was once filled with masonry/concrete (1891), which was excavated out in 2000, and the tree now stands with metal reinforcement bolts and a wooden/metal prop holding up a heavy branch; this is a genuinely fragile veteran, but multiple sources across a decade describe active, funded conservation rather than decline. ALIVE CHECK: confirmed alive as recently as July 2020 (merveillescachees.com), which describes the crown as 'particulierement bien fourni en feuilles' (particularly well-leafed) despite the hollow trunk; the tree also has an active local association ('La Maison de l'Arbre de Réaumont', founded 2001) that has run a biannual tree festival since 1995, which as of the 2020 source was still running, a strong indirect sign of continued life and care. Labeled a Remarkable Tree of France by the ARBRES association in 2000, and repeatedly cited as the oldest known tree in the Isère department. DESTINATION CALL: clears the bar clearly. This tree has its own dedicated preservation association, a long-running twice-yearly public festival built specifically around it, national 'Tree of the Year' recognition, and is reachable directly by train from a regional city (Grenoble); it is a genuine, well-supported single-tree destination independent of any city page."
+  },
+  {
+    "id": null,
+    "name": "Cèdre pleureur de la Vallée-aux-Loups",
+    "species": "Blue Weeping Atlas Cedar (Cedrus atlantica 'Glauca Pendula')",
+    "age_estimate": "about 150 years, since around 1873",
+    "age_min": 145,
+    "age_max": 155,
+    "girth_cm": 500,
+    "location": {
+      "address": "Domaine départemental de la Vallée-aux-Loups (Arboretum), 87-102 Rue de Chateaubriand, 92290 Châtenay-Malabry, Hauts-de-Seine",
+      "latitude": 48.77117,
+      "longitude": 2.27116,
+      "neighbourhood": "Arboretum de la Vallée-aux-Loups, adjoining the Maison de Chateaubriand"
+    },
+    "verified_sources": [
+      "https://destination.hauts-de-seine.fr/cedre-bleu-pleureur-atlas-arboretum-vallee-aux-loups-92.html",
+      "https://en.wikipedia.org/wiki/Arboretum_de_la_Vall%C3%A9e-aux-Loups",
+      "https://www.hauts-de-seine.fr/sortir-et-decouvrir/patrimoine-vert/les-espaces-verts-pres-de-chez-vous/les-jardins-et-les-bois/larboretum"
+    ],
+    "access": "Free. The arboretum and the wider Domaine départemental de la Vallée-aux-Loups (Arboretum, Île Verte, wooded park, Jardin de l'Aigle Blanc) are open to the public at no charge, per the Hauts-de-Seine department's own tourism pages and multiple independent visitor guides (only the adjoining Maison de Chateaubriand house tour charges separately, a few euros). Note: the English Wikipedia article on the arboretum states 'an admission fee is charged', which conflicts with every French-language official and tourism source found; treated as likely stale or referring only to the house, but flagged for a check before publishing.",
+    "transport": "Tram T10 stops directly at 'Vallée aux Loups' in Châtenay-Malabry. Alternatively RER B to Robinson station, then bus 194 (Marc Sangnier or Lycée de Châtenay-Malabry stops) or a 20-25 minute signposted walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "This is not an ordinary remarkable tree: it is the ORIGIN SPECIMEN of the Cedrus atlantica 'Glauca Pendula' cultivar, the blue weeping Atlas cedar sold and planted in parks and gardens worldwide, all of which are cuttings or grafts descended from this one tree. TWO INDEPENDENT SOURCES: destination.hauts-de-seine.fr (the official Hauts-de-Seine department tourism site) gives height 14m, trunk circumference approximately 5m, crown spread approximately 700 sqm (compared to a tennis court), age approximately 150 years, and states it 'remains the largest in the world' of its cultivar; it also documents roughly 30 resin support props shaped as stalagmites, made by artist Francis Ballu and installed in 2011, holding up the weeping branches while keeping the tree safe for visitors to walk under, which is a strong, specific, verifiable and visually interesting detail for the story. en.wikipedia.org's Arboretum de la Vallée-aux-Loups article independently confirms the site's history (developed as the modern arboretum in 1890 by nurseryman Louis-Gustave Croux, on grounds with plant nurseries dating to the 19th century) and depicts this cedar as the arboretum's featured specimen, though it gives no separate measurements for the tree itself. ORIGIN STORY, MINOR DISCREPANCY noted rather than resolved: one search snippet (a garden-writing site, gralon.net/sakartonn.fr, not independently fetched and verified this pass) credits the mutation to 'Paillet nurseries' in Sceaux/Chatenay-Malabry around 1873, while the destination.hauts-de-seine.fr and Wikipedia sources both credit Gustave (Louis-Gustave) Croux specifically; these are not necessarily contradictory (nursery ownership and site history in this area is tangled, Croux's nursery may itself have grown from or absorbed the Paillet operation) but the exact origin story should be checked once more before being stated as fact in the published story; the physical tree, its age and its location are not in doubt. Labelled a nationally Remarkable Tree ('arbre remarquable au niveau national') and won France's 'prix national de l'arbre' (National Tree Prize / Tree of the Year) in 2015, per jardinsdefrance.org and multiple sources. ALIVE CHECK: confirmed current via the official, actively maintained hauts-de-seine.fr tourism page and a December 2022 dendrology-society (arbres.org) feature naming it as a highlight of their 'tree advent calendar', both describing it in the present tense as a living, visitable specimen; no reports found of decline or removal. DESTINATION CALL: clears the bar clearly, arguably the strongest of this batch. This is the literal mother tree of a globally cultivated ornamental variety, a national prize winner, an easy tram/RER ride from central Paris, free to visit, and visually spectacular (branches trained to fan out over a tennis-court-sized area, propped on sculptural supports); genuinely worth a special trip on its own, independent of any city page or park visit for other reasons."
+  }
+]
