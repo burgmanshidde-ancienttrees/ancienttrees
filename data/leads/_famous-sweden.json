@@ -80,7 +80,9 @@
         "https://commons.wikimedia.org/wiki/File:Ekebyhovseken,_2017.jpg",
         "https://commons.wikimedia.org/wiki/File:Ekebyhovseken_dec_2011a.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified as eke_001 in data/research/famoussweden-batch1-verified.json. Coordinate corrected from the candidate list (was 1.4km off); does not clear Stockholm's day-trip boundary by public transport, recommend as its own place (Ekerö)."
+      "status": "published",
+      "tree_id": "eke_001",
+      "published_in": "ekero"
     },
     {
       "name": "Gällstaöeken",
@@ -122,7 +124,7 @@
     {
       "name": "Häradseken",
       "lat": 57.531119,
-      "lng": 18.386300,
+      "lng": 18.3863,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:H%C3%A4radseken.jpg",
         "https://commons.wikimedia.org/wiki/File:H%C3%A4radseken_01.jpg",
@@ -245,7 +247,9 @@
         "https://commons.wikimedia.org/wiki/File:Sjukhuseken,_Danderyd,_april_2020a.jpg",
         "https://commons.wikimedia.org/wiki/File:Sjukhuseken,_Danderyd,_april_2020b.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified as sto_006 in data/research/famoussweden-batch1-verified.json. Clears Stockholm's day-trip boundary easily (own metro stop); recommend joining the Stockholm page."
+      "status": "published",
+      "tree_id": "sto_006",
+      "published_in": "stockholm"
     },
     {
       "name": "Ek i Sånnaböke",
@@ -283,7 +287,9 @@
         "https://commons.wikimedia.org/wiki/File:Trolleken,_Trollskogen,_Borgholm_municipality,_%C3%96land_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Trolleken,_Trollskogen,_Borgholm_municipality,_%C3%96land_02.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified as trs_001 in data/research/famoussweden-batch1-verified.json. Recommend as its own place (Trollskogen nature reserve). NOTE: this entry was duplicated twice in this file under the same name; both instances refer to the same tree."
+      "status": "published",
+      "tree_id": "trs_001",
+      "published_in": "trollskogen"
     },
     {
       "name": "Trångsunds ekruin",

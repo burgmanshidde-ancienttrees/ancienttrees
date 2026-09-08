@@ -3425,6 +3425,7 @@
     "effeltrich": "Effeltrich",
     "eichigt": "Eichigt",
     "eindhoven": "Eindhoven",
+    "ekero": "Ekerö",
     "emmen": "Emmen, Netherlands",
     "enschede": "Enschede",
     "estry": "Estry",
@@ -3763,6 +3764,7 @@
     "trencianske-stankovce": "Trenčianske Stankovce",
     "trento": "Trento",
     "trieste": "Trieste",
+    "trollskogen": "Trollskogen",
     "tsuruoka": "Tsuruoka",
     "turin": "Turin",
     "turku": "Turku",
@@ -3831,6 +3833,7 @@
     "doornenburg": "Doornenburg",
     "effeltrich": "Effeltrich",
     "eichigt": "Eichigt",
+    "ekero": "Ekerö",
     "estry": "Estry",
     "galenbeck": "Galenbeck",
     "gjerrild": "Gjerrild",
@@ -3885,6 +3888,7 @@
     "teleci": "Telecí",
     "tillamook": "Tillamook, Oregon",
     "tolpuddle": "Tolpuddle",
+    "trollskogen": "Trollskogen",
     "ueki": "Ueki, Kumamoto",
     "untermerzbach": "Untermerzbach",
     "velke-opatovice": "Velké Opatovice",
@@ -3937,6 +3941,7 @@
     "plauginiai-forest": "no article within 40 km, tried Plauginiai Forest; Plauginiai Forest, Lithuania",
     "prosec-pod-jestedem": "no article within 40 km, tried Prosec pod Jestedem; Prosec pod Jestedem, Czech Republic; search: List of German names for places in the Czech Republic; search: List of municipalities in the Czech Republic; search: Surname inflection",
     "reinborn": "no article within 40 km, tried Reinborn; Reinborn, Germany; search: List of mountains and hills of the Taunus",
+    "stokaiciai": "wrong match removed 2026-09-08: city_names.py matched the containing district (Tauragė District Municipality) rather than the village itself, which has no standalone Wikipedia article; kept unresolved rather than alias a one-tree page to a whole district's search terms.",
     "takahama": "no article within 40 km, tried Takahama (Takahama, no coordinates, disambiguation page); Takahama, Japan; search: Japan Air Lines Flight 123; search: Takahama, Aichi; search: Kyoshi Takahama",
     "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",
     "timber-creek": "no article within 40 km, tried Timber Creek (Timber Creek, no coordinates, disambiguation page); Timber Creek, Australia; search: Breakfast Creek Hotel; search: Cedar Creek, Queensland (Logan & Gold Coast); search: Wellington Mill, Western Australia",
@@ -3947,7 +3952,6 @@
     "wilparting": "no article within 40 km, tried Wilparting; Wilparting, Germany",
     "wisniowa": "no article within 40 km, tried Wiśniowa (Wiśniowa, no coordinates, disambiguation page); Wiśniowa, Poland; search: Wrocław Water Tower; search: Kraków metropolitan area; search: Soplica",
     "zalgiriai": "no article within 40 km, tried Žalgiriai; Žalgiriai, Lithuania; search: List of schools in Lithuania; search: Vincas Pietaris",
-    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany",
-    "stokaiciai": "wrong match removed 2026-09-08: city_names.py matched the containing district (Tauragė District Municipality) rather than the village itself, which has no standalone Wikipedia article; kept unresolved rather than alias a one-tree page to a whole district's search terms."
+    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany"
   }
 }
