@@ -787,7 +787,11 @@ Four things, in his order, and the third contradicts a check written the same mo
 
 **2. A person saying it was worth it is the best evidence there is, and it is the only kind we cannot manufacture.** A source says somebody wrote this down; a vote says somebody went and was glad. That is why the worth-the-trip question now ends the photograph flow (CONVENTIONS.md 2026-09-08), and it is the destination this whole loop is walking toward.
 
-Read the honest number beside that ambition: **three real reader votes exist, from three accounts, in fourteen days.** Until there is volume, validation is a mechanism we are building rather than a signal we can act on, and any rule keyed to it would be a gate for nobody.
+Read the honest number beside that ambition: **three real reader votes exist, from three accounts, in fourteen days, and ZERO trees have been added by anybody but Hidde.** Every sighting on file comes from one account and it is his own. Until there is a population, validation is a mechanism we are building rather than a signal we can act on, and any rule keyed to it would be a gate for nobody.
+
+**So the decision for now is HIS EYES, on his own offer (2026-09-08: "of ik doe af en toe handmatige check"), and what that needs is a cheap look rather than a threshold.** `python3 scripts/sightings_inbox.py --judge` prints one screen per pending tree: the coordinate with a maps link, what the reader typed, the nearest tree we already publish, what the registers say and whether anybody has ever written it up. Everything needed to answer "is this worth a page", and nothing that answers it for you.
+
+**And the rule for when the population arrives, recorded so nobody re-derives it: two different accounts adding a tree within 30 metres of each other.** That is the two-independent-sources bar restated for people instead of documents, and it is arithmetic we already hold the data for; our own account never counts as one of the two. It is switched off, and the thing that switches it on is a second person, not a date.
 
 **3. Sources are the stand-in until then, and they are not the bar itself.** "Tot die tijd doen wij het met bronnen die hopelijk worden aangevuld." So a source is scaffolding: it is how we guess at worth-the-visit while nobody has told us. It follows that **a tree with no source is not disqualified, it is unvalidated**, and the two are different words on purpose.
 

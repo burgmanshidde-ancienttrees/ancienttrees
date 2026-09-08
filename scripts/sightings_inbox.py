@@ -302,6 +302,69 @@ def open_leads():
     return out
 
 
+def judge():
+    """One screen per pending user-added tree, so a manual check is minutes.
+
+    Hidde, 2026-09-08, offered three ways to decide whether a tree nobody has
+    written about deserves a page: wait for votes, wait for two different
+    people to add the same tree, or "ik doe af en toe handmatige check".
+
+    Measured the moment he said it, and the measurement picks the answer.
+    EVERY sighting on file comes from ONE account and it is his own. Not too
+    few to key a rule to: zero readers have added a tree. Both automatic rules
+    need a population that does not exist, so the third is not the lesser
+    option, it is the only one that works, and what it needs is not a
+    threshold but a cheap look.
+
+    THE TWO-PEOPLE RULE IS RECORDED HERE FOR WHEN IT CAN FIRE, so nobody
+    re-derives it: two different accounts adding a tree within 30 metres of
+    each other is the two-independent-sources bar restated for people instead
+    of documents, and it is arithmetic we already hold the data for. Our own
+    account never counts as one of the two. It stays switched off while the
+    population is one.
+
+    So this prints, per open lead: where it is, what the reader typed, the
+    nearest tree we already publish, and what the registers and Wikipedia say.
+    Everything needed to answer "is this worth a page" without opening five
+    files, and nothing that answers it for you.
+    """
+    import corroborate as corr
+    leads = open_leads()
+    if not leads:
+        print("nothing waiting: no reader-added tree is missing a verdict")
+        return 0
+    table = corr.rows()
+    index = tree_index()
+    print(f"{len(leads)} tree(s) somebody added that we have not decided on\n")
+    for l in leads:
+        lat, lng = l.get("latitude"), l.get("longitude")
+        mine_tag = " [ours]" if l.get("mine") or ours.is_ours(l.get("user_id")) else ""
+        print(f"  {str(l.get('sighting_id'))[:8]}{mine_tag}  {(l.get('name') or 'unnamed')[:44]}")
+        if (l.get("note") or "").strip():
+            print(f"      they wrote: {l['note'].strip()[:90]}")
+        if lat is None:
+            print("      no coordinate, so nothing can be checked against it\n")
+            continue
+        print(f"      {lat:.5f}, {lng:.5f}   https://www.google.com/maps/search/{lat},{lng}")
+        near = sorted(((metres(lat, lng, t["lat"], t["lng"]), i) for i, t in index.items()))[:1]
+        if near:
+            dist, tid = near[0]
+            print(f"      nearest tree we publish: {tid} at {dist:.0f} m")
+        tag, why = corr.verdict(corr.nearest(lat, lng, table, 100.0))
+        print(f"      register: {tag.upper()} {why[:88]}")
+        try:
+            written = corr.wikipedia_trees_near(lat, lng, None)
+        except Exception:
+            written = []
+        print("      written up: " + (", ".join(f"{t} ({lang}, {m} m)"
+                                                for t, _q, m, lang in written)
+                                      if written else "nobody has"))
+        print()
+    print("  A page needs evidence; adding never did. Leave it a lead and say so in")
+    print("  its `why`, or research it to the normal bar and publish.")
+    return 0
+
+
 def status():
     q = load(QUEUE, {"queue": []}).get("queue", [])
     leads = open_leads()
@@ -328,6 +391,8 @@ def status():
 def main():
     if "--status" in sys.argv:
         return status()
+    if "--judge" in sys.argv:
+        return judge()
     if not KEY:
         print("sightings inbox: SUPABASE_SERVICE_KEY absent, nothing read")
         return 0
