@@ -7152,6 +7152,218 @@
    ],
    "trees": 25,
    "logged": true
+  },
+  {
+   "started": "2026-09-08T01:27:59+00:00",
+   "date": "2026-09-08",
+   "run_id": "34176721227",
+   "minutes": 104.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 564,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(git), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 36570488,
+   "claims_held": [],
+   "commits": 29,
+   "cities_touched": 48,
+   "cities": [
+    {
+     "city": "brzoza",
+     "trees": 3
+    },
+    {
+     "city": "bosaca",
+     "trees": 2
+    },
+    {
+     "city": "santalfio",
+     "trees": 2
+    },
+    {
+     "city": "senica",
+     "trees": 1
+    },
+    {
+     "city": "stary-smokovec",
+     "trees": 1
+    },
+    {
+     "city": "velke-borove",
+     "trees": 1
+    },
+    {
+     "city": "athens",
+     "trees": 0
+    },
+    {
+     "city": "barcelona",
+     "trees": 0
+    },
+    {
+     "city": "beijing",
+     "trees": 0
+    },
+    {
+     "city": "boston",
+     "trees": 0
+    },
+    {
+     "city": "brussels",
+     "trees": 0
+    },
+    {
+     "city": "budapest",
+     "trees": 0
+    },
+    {
+     "city": "caserta",
+     "trees": 0
+    },
+    {
+     "city": "cork",
+     "trees": 0
+    },
+    {
+     "city": "dallas",
+     "trees": 0
+    },
+    {
+     "city": "edinburgh",
+     "trees": 0
+    },
+    {
+     "city": "florence",
+     "trees": 0
+    },
+    {
+     "city": "genoa",
+     "trees": 0
+    },
+    {
+     "city": "groningen",
+     "trees": 0
+    },
+    {
+     "city": "haarlem",
+     "trees": 0
+    },
+    {
+     "city": "heidelberg",
+     "trees": 0
+    },
+    {
+     "city": "helsinki",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    },
+    {
+     "city": "kagoshima",
+     "trees": 0
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    },
+    {
+     "city": "las-vegas",
+     "trees": 0
+    },
+    {
+     "city": "leiden",
+     "trees": 0
+    },
+    {
+     "city": "lisbon",
+     "trees": 0
+    },
+    {
+     "city": "london",
+     "trees": 0
+    },
+    {
+     "city": "maastricht",
+     "trees": 0
+    },
+    {
+     "city": "munich",
+     "trees": 0
+    },
+    {
+     "city": "naples",
+     "trees": 0
+    },
+    {
+     "city": "new-york",
+     "trees": 0
+    },
+    {
+     "city": "nijmegen",
+     "trees": 0
+    },
+    {
+     "city": "oahu",
+     "trees": 0
+    },
+    {
+     "city": "paris",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "roosendaal",
+     "trees": 0
+    },
+    {
+     "city": "seattle",
+     "trees": 0
+    },
+    {
+     "city": "seville",
+     "trees": 0
+    },
+    {
+     "city": "singapore",
+     "trees": 0
+    },
+    {
+     "city": "toulouse",
+     "trees": 0
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    },
+    {
+     "city": "valencia",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
+     "trees": 0
+    },
+    {
+     "city": "washington-dc",
+     "trees": 0
+    },
+    {
+     "city": "zaragoza",
+     "trees": 0
+    },
+    {
+     "city": "nara",
+     "trees": -4
+    }
+   ],
+   "trees": 6,
+   "logged": true
   }
  ],
  "schedule_changes": [
