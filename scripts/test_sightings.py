@@ -55,16 +55,32 @@ class TestPhotoBlock(unittest.TestCase):
         self.assertEqual(b["status"], "approved")
         self.assertEqual((b["width"], b["height"]), (1200, 1600))
 
-    def test_credit_is_display_name_and_licence_reads_as_a_gift(self):
+    def test_no_name_is_printed_beside_a_readers_photograph(self):
+        """Hidde, 2026-09-04: "laten we niet mensen hun naam noemen, laten we
+        alleen hun fotos gebruiken als ze goed zijn, het kan mensen afschrikken
+        als hun naam erbij staat."
+
+        These two tests asserted the OPPOSITE until 2026-09-08, because they
+        were written the day before that ruling and nothing failed loudly
+        enough to get them read: they had been red for four days. A red test
+        nobody fixes is a gate nobody has, which is the same lesson this
+        project already recorded about ios.yml.
+        """
         b = pub.photo_block(self.ENTRY, 1, 1, "", "2026-09-04")
-        self.assertEqual(b["attribution"], "Katy")
+        self.assertIsNone(b["attribution"])
         self.assertTrue(b["license"].lower().startswith("provided by"))
+        self.assertNotIn("Katy", json_dump(b))
         self.assertNotIn("@", json_dump(b))
 
-    def test_missing_display_name_gets_a_neutral_credit(self):
-        e = dict(self.ENTRY, display_name="")
-        b = pub.photo_block(e, 1, 1, "", "2026-09-04")
-        self.assertEqual(b["attribution"], pub.FALLBACK_NAME)
+    def test_the_account_id_travels_even_though_the_name_does_not(self):
+        """The id is the whole of the deletion promise in /terms: a published
+        photograph is a copy no database cascade reaches, so photo_takedown.py
+        needs something to ask Supabase about. Preflight refuses one without
+        the other in either direction."""
+        b = pub.photo_block(dict(self.ENTRY, display_name=""), 1, 1, "", "2026-09-04")
+        self.assertEqual(b["source"], "contributor")
+        self.assertTrue(b["contributor_user_id"])
+        self.assertIsNone(b["attribution"])
 
     def test_url_is_ours_and_named_after_the_tree(self):
         b = pub.photo_block(self.ENTRY, 1, 1, "", "2026-09-04")
