@@ -8466,6 +8466,28 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-08T20:27:17+00:00",
+   "date": "2026-09-08",
+   "run_id": "34274863934",
+   "minutes": 18.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 154,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(curl), Bash(env), Bash(find), Bash(ls), Bash(mkdir), Bash(nohup), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 4703955,
+   "claims_held": [
+    "oahu",
+    "dordrecht"
+   ],
+   "commits": 3,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
