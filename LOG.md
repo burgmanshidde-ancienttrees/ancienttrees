@@ -11,6 +11,35 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (session) - The first backlink is live
+
+Hidde asked whether the App Store listing could produce a backlink, then
+whether we have one at all. Both answered by checking rather than guessing.
+
+**The App Store cannot.** Fetched a live product page and read its outgoing
+links: every external link on an apps.apple.com page carries
+`rel="nofollow noopener noreferrer"`, and a url typed into the description
+is plain text, not a link at all. Fill the Marketing and Support URL fields
+anyway, they send people, but they never move the referring-domains meter.
+
+**We do have one, and it is real.** getLISBON placed both links they offered
+on 2026-09-04, and nobody here had noticed. The EN article points at
+/lisbon and the PT one at /pt/lisbon, exactly as asked, and both carry
+`rel="noreferrer noopener"` with NO nofollow. A followed link from a real
+Lisbon city blog, after 220 outreach mails.
+
+**Why we missed it, and this is the part worth keeping.** `noreferrer`
+strips the referrer header, so every click arriving from that link shows up
+in Cloudflare as `(direct)`. The digest's own line, "external referrers
+(a link somebody actually clicked): none yet", is therefore not evidence
+that no link exists. It measures the wrong thing for exactly the kind of
+link we are trying to win, because the modern default rel on a WordPress
+outbound link includes noreferrer. Backlinks have to be checked by fetching
+the page, or in Search Console's Links report by hand.
+
+Recorded in drafts/OUTREACH.md. Still open with them: which two jacarandas
+stand in the Ajuda garden.
+
 ## 2026-09-08 (continuation) - Sant'Alfio: 1 tree to 3
 
 Continuation of an attempt that stopped after 34 minutes with 86 of its
