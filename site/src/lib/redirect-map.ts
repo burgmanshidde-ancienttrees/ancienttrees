@@ -144,6 +144,10 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // research, the story and the sources are kept in data/leads/ in full and go
 // back the day the access changes.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["nara", "cedar-of-the-shrine-path-near-nigatsu-do"],
+  ["nara", "leaning-cedar-of-the-nigatsu-do-approach"],
+  ["nara", "spreading-tree-by-the-nara-park-pond-pavilion"],
+  ["nara", "ginkgo-by-the-temple-wall-in-suimon-cho"],
   ["granada", "cedars-of-carmen-de-la-victoria"],
   ["kyoto", "heian-cedar-of-katanami"],
   ["malaga", "avocado-of-ciudad-de-jaen-school"],
