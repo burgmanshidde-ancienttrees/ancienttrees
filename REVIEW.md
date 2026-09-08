@@ -13,6 +13,91 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-08
+
+Reviewed commits since the last review (~230 commits in 24h): dominated by
+`cd4e1f69`, a single pass writing `how_to_recognise` lines for the last 206
+published trees that carried none of the three things that settle which
+trunk is meant (recognition line, photograph, confirmed pin), plus the new
+`check_a_tree_can_be_told_apart()` gate in scripts/preflight.py that now
+fails the build on a recurrence. Also in the window: two new Lithuanian
+places (Vytogala, Pagramantis Regional Park), a `_famous-japan` verify
+pass, a `_famous-lithuania` verify pass (5 ready, 3 dead trees correctly
+blocked rather than published), a large walk-routes regeneration, and
+batch-011 outreach (nine mails, Hidde's own "doe die laatste 9 maar",
+status `approved_by_hidde`, so hard rule 4 is not in play here). Ran
+`python3 scripts/qa.py` (7903 pages, clean), `python3 scripts/health.py`
+(rung 2: **Build and deploy** and **iOS app** both failing on their newest
+runs, already surfaced by the session-start brief and outside what this
+review duplicates), `python3 scripts/preflight.py` (549 cities, 0 FAILs)
+and `python3 scripts/superlatives.py` (720 claims, see WARN below).
+Spot-checked the new `how_to_recognise` lines against BRIEF_WRITING.md
+(fixed "You can recognise it by X. It stands Y" shape, all under 240
+chars, restatement only, numbers traced back to each tree's own
+`girth_cm`/`height_m`/story, no banned words or em dashes), read
+`vytogala.json` and `pagramantis-regional-park.json` in full (honest
+hedged ages throughout, "nobody has cored it, tell us" pattern used
+correctly, the Regional Park container correctly framed as reached "by
+car or bicycle" rather than dressed up as walkable), and read the six
+rotated app screenshots (`contribute.png`, `directions.png`,
+`explore.png`, `feedback.png`, `map-full.png`, `map.png`).
+
+**WARN — `scripts/superlatives.py`'s scope regex is compiled with
+`re.I`, which silently defeats its own "capitalised place name" check
+and produced two false-positive collisions today.** The pattern's scope
+group is `[A-Z][\w'-]*`, meant to require a proper noun so that e.g. "in
+the city of Fukuoka" is read as scope "Fukuoka". Because the whole
+`CLAIM` regex is compiled `re.IGNORECASE`, `[A-Z]` matches lowercase
+letters too, so the scope match stops at the next capped-length word
+instead of reaching the actual city name: "the largest tree in the city
+of Fukuoka" and "the largest tree in the city of Stockholm" (fuk_008,
+`data/cities/fukuoka.json`; sto_004, `data/cities/stockholm.json`,
+touched today in `f5deab19`) both truncate to scope "the city of" and
+register as the same claim about two different cities. The same bug
+paired "the first decade of the twentieth century" in `haarlem.json`
+(`66e4f759`, today) and `leiden.json`, a date phrase with no ranking
+content at all, misread as a "first ... of ..." claim. Both trees in
+both pairs are correct as written; nothing needs to change in the data.
+The risk is the tool crying wolf into a future run's hands: CLAUDE.md's
+own account of hard rule 8 says a writer "no longer has to hold the
+whole corpus in their head" because this script does the checking, so a
+false collision is exactly the kind of finding that gets "fixed" by
+quietly rewriting a true sentence to make the phantom contradiction go
+away. Fix is narrow: require the scope group to stay case-sensitive
+regardless of the rest of the pattern's flags (e.g. an inline
+`(?-i:...)` around just that group, or split scope-matching into its
+own non-`I` regex) rather than something for a run to patch by hand
+without checking the fix against the two known-good pairs above.
+
+**WARN APP — `map-full.png`'s second tree card renders a floating cloud
+icon and a "Map" pill button where the photo and title should be,
+obscuring the tree's name.** In the Map tab's bottom sheet list ("24
+trees you can see"), the first card (Rijksmuseum Wingnut) is a normal
+photo card; the second card beneath it is solid dark green with a white
+cloud glyph and a rounded "Map" button centred over it, and the tree's
+name is visible only as a sliver of cut-off text ("Wych ElIm") right at
+the bottom screen edge, half hidden behind the button. Nothing on
+screen explains what tapping "Map" here would do, and it reads as
+either a broken/unloaded state for a photo-less tree (the app's
+placeholder for "no photo" apparently differs from the website's
+labelled silhouette-plus-caption treatment) or a stray render of the
+tab bar's own "Map" control caught mid-transition; either way a person
+scrolling this list would stop on it as visibly wrong, which is
+PRINCIPLES.md's own bar ("does a screen contradict itself, show a
+control with no obvious purpose"). Tagged APP: this is visual-taste
+work a night run may not touch (CLAUDE.md), for a session with Xcode to
+reproduce via `appsweep.py` and look at directly.
+
+Nothing else found at BLOCKER or WARN. `contribute.png`, `explore.png`,
+`feedback.png`, `directions.png` and `map.png` are clean against the
+corpus (the "24 trees you can see" / "536 places" copy and the
+feedback screen's "Nobody else sees who sent this... Sending needs a
+free account" line are consistent with the account-gated-feedback and
+never-publish-a-name rules, not a contradiction: the account identifies
+a sender to us for a reply, "nobody else" is about other readers).
+
+No Monday corpus-rot audit today (Tuesday UTC).
+
 ## 2026-09-07
 
 Reviewed commits since the last review (d52051f2, 2026-09-06 ~09:42 UTC)
