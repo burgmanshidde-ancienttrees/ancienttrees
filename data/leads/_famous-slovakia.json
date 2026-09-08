@@ -9,10 +9,11 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Apple (Malus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Apple Tree of Zabudišová', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Apple Tree of Zabudišová', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "bsa_001"
     },
     {
       "name": "Borovica lesná zo Veľké Borové",
@@ -23,10 +24,11 @@
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_03.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Pine (Pinus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Pine of Veľké Borové', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Pine of Veľké Borové', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "vbo_001"
     },
     {
       "name": "Buk lesný zo Starý Smokovec",
@@ -109,10 +111,11 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2016_Pear_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Pear (Pyrus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Pink Pear of Bošáca', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Pink Pear of Bošáca', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "bsa_002"
     },
     {
       "name": "Plane tree from Budatin",
@@ -133,10 +136,11 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_from_Komjatice_SK.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Plane (Platanus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Plane Tree of Komjatice', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Plane Tree of Komjatice', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "kom_001"
     },
     {
       "name": "Sorb tree near Uzovská Panica",
@@ -537,10 +541,11 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2013_Plane_tree_from_Komjatice_SK.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Plane (Platanus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Plane Tree of Komjatice', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Plane Tree of Komjatice', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "kom_001"
     },
     {
       "name": "Buk lesný zo Starý Smokovec",
@@ -575,10 +580,11 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Apple (Malus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Apple Tree of Zabudišová', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Apple Tree of Zabudišová', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "bsa_001"
     },
     {
       "name": "Lipa u Belanských",
@@ -626,10 +632,11 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2016_Pear_from_Bo%C5%A1%C3%A1ca_SK.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Pear (Pyrus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Pink Pear of Bošáca', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Pink Pear of Bošáca', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "bsa_002"
     },
     {
       "name": "Tilia of King Matthias Corvinus in Bojnice",
@@ -702,10 +709,11 @@
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Strom_roka_borovica_velke_borove_03.jpg"
       ],
-      "status": "RESOLVED 2026-09-08, verified and delivered to data/research/famousslovakia-batchA-verified.json (awaiting city assembly/id assignment)",
+      "status": "published",
       "species": "Pine (Pinus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified as 'The Pine of Veľké Borové', see data/research/famousslovakia-batchA-verified.json"
+      "note": "Verified as 'The Pine of Veľké Borové', see data/research/famousslovakia-batchA-verified.json",
+      "tree_id": "vbo_001"
     },
     {
       "name": "Javor v Žiline",

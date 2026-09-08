@@ -2,17 +2,17 @@
   "city": "Bošáca",
   "country": "Slovakia",
   "status": "needs_curation",
-  "intro": "Bošáca maps two trees from the same hillside hamlet, Zabudišová, and both are national champions. An heirloom apple variety won Slovakia's Tree of the Year contest in 2017 and placed sixth in Europe; a rare pink-fleshed pear won it in 2015 and placed third. They stand 350 metres apart, on ordinary farmland, planted for their fruit rather than for looking at. No other Slovak village has produced two national tree champions from one small stretch of ground, and both still bear fruit every year.",
+  "intro": "Bošáca maps two trees from the same hillside hamlet, Zabudišová, and both are national champions. An heirloom apple, about 130 years old, won Slovakia's Tree of the Year contest in 2017 and placed sixth in Europe; a rare pink-fleshed pear, roughly 200 years old, won it in 2015 and placed third. They stand 350 metres apart, on ordinary farmland, planted for their fruit rather than for looking at. No other Slovak village has produced two national tree champions from one small stretch of ground, and both still bear fruit every year.",
   "meta_description": "Two Slovak Tree of the Year champions, an heirloom apple and a rare pink pear, growing 350 metres apart in the village of Bošáca.",
-  "question_meta": "Bošáca's oldest documented tree is the Apple Tree of Zabudišová, roughly 130 years old; a pink pear 350 metres away carries no confirmed age.",
-  "question_answer": "Bošáca's oldest documented tree is the Apple Tree of Zabudišová, a heirloom variety estimated at roughly 130 years old and Slovakia's 2017 Tree of the Year; the pink pear growing 350 metres away carries no confirmed age and may in fact be older.",
-  "question_context": "Both trees grow in Zabudišová, a hillside hamlet of the village of Bošáca in western Slovakia, and both are national tree champions. The apple carries the rare local variety Citrónové zimné Zabudišovské, planted an estimated 130 years ago by itinerant fruit-growers who moved through the region, and won Slovakia's Strom roka title in 2017 before placing sixth at the European final in 2018. Its girth was measured at 251 centimetres at the time. The pear, Bošácka ružová, is a locally distinctive pink-fleshed variety that won the same national contest two years earlier, in 2015, then placed third in Europe, an unusually strong result. Its age was widely reported in Slovak news as around 200 years, but those articles cannot currently be verified directly, so this page leaves the figure open rather than repeat an unconfirmed number; local tradition ties it to the area's first settlers, which would make it older than the apple. Both trees stand on open farmland with no gate or ticket, reachable on foot from the Zabudišová lane, roughly 15 minutes by car from Nové Mesto nad Váhom.",
+  "question_meta": "Bošáca's oldest documented tree is the Pink Pear of Zabudišová, roughly 200 years old; an heirloom apple 350 metres away is younger, about 130.",
+  "question_answer": "Bošáca's oldest documented tree is the Pink Pear of Zabudišová, a heirloom variety estimated at roughly 200 years old and Slovakia's 2015 Tree of the Year; the heirloom apple growing 350 metres away is younger, about 130 years old and the 2017 champion.",
+  "question_context": "Both trees grow in Zabudišová, a hillside hamlet of the village of Bošáca in western Slovakia, and both are national tree champions. The pear, Bošácka ružová, is a locally distinctive pink-fleshed variety that won Slovakia's Strom roka title in 2015, then placed third at the European final the following year, an unusually strong result. Two separate outlets covering that win, pravda.sk and teraz.sk, independently give its age as around 200 years; local tradition ties it to the area's first settlers, who were known for making fruit brandy from orchards like this one. The apple carries the rare local variety Citrónové zimné Zabudišovské, planted an estimated 130 years ago by itinerant fruit-growers who moved through the region, and won the same contest two years later, in 2017, before placing sixth at the European final in 2018. Its girth was measured at 251 centimetres at the time; nobody has published a reliable girth for the older pear. Both trees stand on open farmland with no gate or ticket, reachable on foot from the Zabudišová lane, roughly 15 minutes by car from Nové Mesto nad Váhom.",
   "hero_tree_id": "bsa_001",
-  "oldest_tree_id": "bsa_001",
+  "oldest_tree_id": "bsa_002",
   "faq": [
     {
       "q": "What is the oldest tree in Bošáca?",
-      "a": "The Apple Tree of Zabudišová, estimated at roughly 130 years old and Slovakia's 2017 Tree of the Year. A pink pear 350 metres away has no confirmed age and may be older."
+      "a": "The Pink Pear of Zabudišová, estimated at roughly 200 years old and Slovakia's 2015 Tree of the Year. An heirloom apple 350 metres away is younger, about 130 years old."
     },
     {
       "q": "Are both trees free to visit?",
@@ -20,7 +20,7 @@
     },
     {
       "q": "How do the two trees compare?",
-      "a": "The apple has a documented age of roughly 130 years; the pear's age is unconfirmed but local tradition ties it to the area's first settlers, and it placed higher in the European final. Neither has been remeasured since its contest year."
+      "a": "The pear is older, roughly 200 years against the apple's 130, and placed higher in the European final, third against sixth. Neither has been remeasured since its contest year."
     },
     {
       "q": "How do I get there?",
@@ -62,9 +62,9 @@
       "id": "bsa_002",
       "name": "The Pink Pear of Zabudišová",
       "species": "European Pear (Pyrus communis 'Bošácka ružová')",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 200 years",
+      "age_min": 180,
+      "age_max": 220,
       "girth_cm": null,
       "location": {
         "address": "near the Zabudišová locality, Bošáca, Nové Mesto nad Váhom District",
@@ -72,10 +72,12 @@
         "longitude": 17.83962,
         "neighbourhood": "Zabudišová, Bošáca"
       },
-      "story": "Slovakia's national tree contest has been won only once by a pear, and this pink-fleshed local variety is it.\n\nBošácka ružová grows almost nowhere outside this stretch of the Bošáca countryside: a pear whose flesh runs pink rather than white, a curiosity local orchardists have kept going for generations. In 2015 it won the national Strom roka title, then went to the European final and placed third, an unusually strong result for a tree nobody outside its own region had heard of a year earlier.\n\nLocal tradition holds that it was planted by the area's first settlers, though nothing pins that to a date. Slovak news coverage after its 2015 win reported a specific age of around two hundred years, a girth of 231 centimetres and a height of 14 metres, but those articles are no longer reachable to check directly, so this page leaves the age open rather than repeat a number it cannot verify itself. What is confirmed, from the region's own tourism writing, is a solitary tree on open land near Zabudišová, unfenced and reachable without asking anyone.\n\nIt stands 350 metres from another national champion, an heirloom apple that won two years later. Two prize-winning fruit trees, in one small corner of western Slovakia, planted for eating rather than for looking at. If you know its age, tell us.",
+      "story": "Slovakia's national tree contest has been won only once by a pear, and this pink-fleshed local variety is it.\n\nBošácka ružová grows almost nowhere outside this stretch of the Bošáca countryside: a pear whose flesh runs pink rather than white, a curiosity local orchardists have kept going for generations. In 2015 it won the national Strom roka title, then went to the European final and placed third, an unusually strong result for a tree nobody outside its own region had heard of a year earlier.\n\nLocal tradition holds that it was planted by the area's first settlers, known for making fruit brandy from orchards like this one, though nothing pins that to a date. Two separate outlets covering its 2015 win, pravda.sk and teraz.sk, independently give its age as about two hundred years, which this page repeats with confidence. Nobody has published a reliable girth or height for this specific tree, so those stay open. What is confirmed, from the region's own tourism writing, is a solitary tree on open land near Zabudišová, unfenced and reachable without asking anyone.\n\nIt stands 350 metres from another national champion, an heirloom apple that won two years later. Two prize-winning fruit trees, in one small corner of western Slovakia, planted for eating rather than for looking at. If you have measured its girth, tell us.",
       "verified_sources": [
         "https://sk.wikipedia.org/wiki/Strom_roka",
-        "https://obecne-noviny.sk/clanky/majestatna-hruska-zo-slovenska-bojuje-o-titul-europsky-strom-roka"
+        "https://obecne-noviny.sk/clanky/majestatna-hruska-zo-slovenska-bojuje-o-titul-europsky-strom-roka",
+        "https://spravy.pravda.sk/regiony/clanok/372007-stromom-roka-je-200-rocna-hruska-ruzova-z-bosace/",
+        "https://www.teraz.sk/regiony/treti-najkrajsi-strom-europy-bosaca/252217-clanok.html"
       ],
       "access": "Free, a solitary tree on open agricultural/village land near Zabudišová; described as reachable, no gate mentioned.",
       "transport": "Rural village lane, Bošáca; nearest town Nové Mesto nad Váhom roughly 15 minutes by car.",

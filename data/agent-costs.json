@@ -6064,6 +6064,15 @@
         "note": "All 4 named candidates verified and delivered (2 Bosaca heritage fruit trees, national Tree of the Year winners ~370m apart in the same orchard valley, walkable as a pair; the Velke Borove pine, Tree of the Year 2004; the Komjatice plane, Slovakia's thickest tree); no register hit, sourced from Slovak Tree-of-the-Year press coverage plus Commons GPS metadata; komjatice.sk added to fetch-blocklist for hanging.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "famousslovakia-write",
+        "kind": "write",
+        "tokens": 95000,
+        "trees": 1,
+        "note": "3 of 4 briefed trees turned out already live (bsa_001, bsa_002, vbo_001; the verify pass duplicated existing work, caught this session by checking passcheck.py --pending before merging). Only Komjatice was new; its superlative reworked in prose to avoid colliding with Myjava's existing thickest-in-Slovakia claim. Separately used the pass's freshly-fetched sources (pravda.sk, teraz.sk) to correct bsa_002's live page: its age was published as an open question when both sources agree on ~200 years, which also flips which of Bosaca's two trees is the oldest; corrected the tree record and every city-level field that named the old answer.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

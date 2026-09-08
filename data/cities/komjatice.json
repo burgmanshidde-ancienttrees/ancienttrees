@@ -1,0 +1,59 @@
+{
+  "city": "Komjatice",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Nine metres and thirty centimetres round, this plane tree is routinely called the thickest trunk in Slovakia, though a hollow lime at Myjava measures wider still. It stands in the middle of a rebuilt manor park in the village of Komjatice, carved over with generations of lovers' initials and known locally as the tree of love. It won the national Strom roka title in 2012 and placed in Europe's top five the following year, and has survived wartime bombing, 1950s flood-control clearing and an arson attempt on its own trunk. Free, open, no ticket.",
+  "meta_description": "The Plane Tree of Komjatice is Slovakia's 2012 Tree of the Year, a 930cm trunk in a free public manor park, carved with lovers' initials.",
+  "question_meta": "Komjatice's remarkable tree is a 930cm plane, routinely called Slovakia's thickest trunk, standing in the village's rebuilt manor park.",
+  "question_answer": "Komjatice's notable tree is the Plane Tree of Komjatice, a London Plane 9.3 metres round in the village's manor park, routinely called the thickest tree trunk in Slovakia (though a hollow lime at Myjava measures wider) and winner of the national Strom roka title in 2012.",
+  "question_context": "The tree stands in the middle of the reconstructed Kastiel park, once the grounds of the Grassalkovich family manor in Komjatice. Its trunk measures 930 centimetres round, and Slovak coverage routinely calls it the country's thickest, though a hollow lime at Myjava measures wider still. It clears 28 metres in height, won the national Strom roka title in 2012 and finished in the top five of the European Tree of the Year the following spring. Its age is given as about 138 years in 2013 reporting and nearly 150 by 2015, so somewhere in that band; local tradition credits Baron Moric Wodianer, a merchant who stocked the manor grounds with exotic trees, but the source that records this calls it a supposition rather than a fact. The manor house beside it was bombed during the war and the park went to seed for decades; flood-control excavation in the 1950s took down many of its neighbours, and more recently somebody set a fire in one of its trunk cavities. The park was rebuilt in 2009 and 2010 and is free to walk through, and the plane still stands at its centre, its bark carved over with generations of lovers' initials.",
+  "hero_tree_id": "kom_001",
+  "oldest_tree_id": "kom_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Komjatice?",
+      "a": "The Plane Tree of Komjatice, a London Plane 9.3 metres round, routinely called the thickest tree trunk in Slovakia."
+    },
+    {
+      "q": "Is it really the thickest tree in Slovakia?",
+      "a": "It is usually described that way in Slovak coverage, but a hollow lime at Myjava measures wider still, so the two pages disagree and this one says so plainly."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the reconstructed, freely open Kastiel park in the centre of Komjatice."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kom_001",
+      "name": "The Plane Tree of Komjatice",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 to 150 years",
+      "age_min": 138,
+      "age_max": 155,
+      "girth_cm": 930,
+      "location": {
+        "address": "Kaštieľsky park (former Grassalkovich manor park), Komjatice, Nové Zámky district",
+        "latitude": 48.15572,
+        "longitude": 18.181,
+        "neighbourhood": "Komjatice"
+      },
+      "verified_sources": [
+        "https://spravy.pravda.sk/regiony/clanok/259699-slovensko-reprezentuje-strom-lasky-a-vitality-platan/",
+        "https://lepsiageografia.sk/rubriky/najhrubsi-strom-slovenska-najdete-v-komjaticiach/"
+      ],
+      "access": "Free public park. The renovated Kastiel park (Komjatice manor park, reconstructed 2009/2010) is open and freely walkable; multiple independent descriptions call it a public recreation area for residents and visitors, and a March 2024 YouTube video shows a visitor cycling up to and filming the tree.",
+      "transport": "Village of Komjatice, Nove Zamky district; no rail station, reachable by road/bus to Komjatice then on foot into the park.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Nine metres and thirty centimetres round, and a good deal of that bark is carved with initials. Komjatice calls this plane the tree of love, and couples have been adding to it for generations.\n\nSlovak coverage routinely calls it the thickest trunk in the country, though a hollow lime at Myjava measures wider still. It clears 28 metres, won the national Strom roka title in 2012 and finished in the top five of the European Tree of the Year the following spring. Its age is given as about 138 years in 2013 reporting and nearly 150 by 2015, so somewhere in that band. Local tradition credits Baron Moric Wodianer, a merchant who stocked the manor grounds with exotics, but the account that records it calls the attribution a supposition rather than a fact.\n\nWhat the tree has lived through is better documented than who planted it. The Grassalkovich manor house beside it was bombed in the war and the park went to seed for decades afterwards. Flood-control excavation in the 1950s took down many of its neighbours. More recently somebody set a fire in one of the cavities in its trunk. The park was rebuilt in 2009 and 2010 and is open to walk through, and the plane is still standing at the middle of it, thicker than anything that was cut down around it.",
+      "how_to_recognise": "You can recognise it by the trunk, over nine metres round at chest height and carved with generations of initials, and by the mottled, flaking bark of a plane. It stands in the manor park, where no other trunk is close to its size.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
