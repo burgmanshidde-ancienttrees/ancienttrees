@@ -1,0 +1,62 @@
+{
+  "city": "Veľké Borové",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Veľké Borové maps one tree: a wild Scots pine on the forested hillside above the village, at the foot of Súšava hill. It won Slovakia's very first Tree of the Year contest in 2004, a 23-metre pine estimated at 250 to 350 years old, exceptional size and age for its species. No dated sighting has confirmed it still standing since a hiking route to it was abandoned in 2014, so this page says that plainly rather than pretend otherwise.",
+  "meta_description": "Slovakia's first Tree of the Year, a wild Scots pine above Veľké Borové estimated at 250 to 350 years old, its recent status unconfirmed.",
+  "question_meta": "Veľké Borové's only mapped tree is a wild Scots pine above the village, Slovakia's first-ever Tree of the Year in 2004.",
+  "question_answer": "Veľké Borové's only mapped tree is a wild Scots pine on the hillside above the village, Slovakia's first-ever Tree of the Year in 2004, estimated at 250 to 350 years old with a girth of 460 centimetres.",
+  "question_context": "The pine grows wild on a forested slope above Veľké Borové, at the foot of Súšava hill in the Liptovský Mikuláš district, and won Slovakia's inaugural Strom roka title in 2004 ahead of every other nominated tree in the country. Foresters recorded it at 23 metres tall and 460 centimetres round at chest height, and estimated its age at 250 to 350 years, old enough to predate any living memory of the village. An information plaque was installed at the site after the win, and for a decade a geocache route guided hikers up the hillside path to find it. That geocache was archived in 2014 over deteriorated trail conditions, not any report about the tree, but no dated photograph or news mention has surfaced since confirming the pine is still standing, so this page states that gap honestly rather than assume it. The coordinates given here come from a photograph's own location tag rather than a source naming the exact trunk, so the pin marks the hillside area rather than a precise spot. Veľké Borové sits roughly 50 kilometres from Žilina, the nearest published Slovak city, well outside any day-trip pairing.",
+  "hero_tree_id": "vbo_001",
+  "oldest_tree_id": "vbo_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Veľké Borové?",
+      "a": "A wild Scots pine on the hillside above the village, Slovakia's first-ever Tree of the Year in 2004, estimated at 250 to 350 years old."
+    },
+    {
+      "q": "Is the pine still standing?",
+      "a": "Probably, but nobody has confirmed it recently. No dated photograph or report has surfaced since a hiking route to the site was abandoned in 2014, so this page states that gap rather than assume the best. If you have seen it, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, reached on foot up a hillside path above the village; no gate or ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Veľké Borové is a small village in the Liptovský Mikuláš district, roughly 50km from Žilina; the pine stands above the village on the slope of Súšava hill."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vbo_001",
+      "name": "The Pine of Veľké Borové",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "age_estimate": "250 to 350 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 460,
+      "location": {
+        "address": "forest hillside above the village of Veľké Borové, at the foot of Súšava hill (1076 m)",
+        "latitude": 49.20467,
+        "longitude": 19.50519,
+        "neighbourhood": "Veľké Borové, Liptovský Mikuláš District"
+      },
+      "story": "When Slovakia crowned its very first Tree of the Year in 2004, the winner was a Scots pine growing wild on a forested hillside above the small village of Veľké Borové, at the foot of Súšava hill.\n\nAt 23 metres tall and 460 centimetres round at chest height, it is a genuinely large specimen of a species that rarely gets this big or this old; foresters have estimated it at somewhere between 250 and 350 years, old enough to have been a mature tree when the Habsburg empire still ran this part of Europe. An information plaque was put up at the site after the win, and for years a geocache route led hikers up the hillside path to find it.\n\nThat geocache was archived in 2014, its owner citing deteriorated trail conditions rather than any problem with the tree itself, and no dated photograph or local report has surfaced since to confirm the pine is still standing. Slovakia's oldest pines are not the country's most closely watched trees, and one two decades removed from its moment of fame can go quiet in the record without anything having actually happened to it.\n\nThe pin here marks the hillside area rather than the exact trunk: the tree's own coordinates come from a photograph's location tag, not from a source that names the precise spot. If you have walked up and seen it recently, we would like to know.",
+      "verified_sources": [
+        "https://sk.wikipedia.org/wiki/Strom_roka",
+        "https://www.geocaching.com/geocache/GC5BYRB_strom-roka-2004-borovica-v-borovom"
+      ],
+      "access": "Free; reached by a forest path above the village to an information plaque at the tree, per a former geocache route to the site (the cache itself was archived in 2014 for deteriorated trail conditions, which is about the waymark, not necessarily the tree).",
+      "transport": "Veľké Borové village, Liptovský Mikuláš District; walk up the hillside path above the village.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

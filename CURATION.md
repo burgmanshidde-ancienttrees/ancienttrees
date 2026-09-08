@@ -11,6 +11,57 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 - Finished the standing _famous-slovakia and _famous-taiwan claims; a stranded Poland write also merged
+
+Continuation of an earlier attempt that stopped after 10 min with 110 of
+its window unspent. `passcheck.py --claims` showed two standing,
+`_famous-taiwan` and `_famous-slovakia`, both verify, with uncommitted
+output already on disk. `famoustaiwan-verified.json` was an empty array:
+that pass's one candidate, the Bilu Sacred Tree, had already shipped as
+bilu.json in an earlier commit, so the claim was pure orientation cost.
+Released it. `famousslovakia-verified.json` held 5 fully verified trees
+with no story; `passcheck.py --pending` also surfaced a fully-written but
+unmerged `famouspoland-verified.json` (3 trees) from an even earlier
+session.
+
+**5 new single-tree/small-cluster Slovak places, all under the
+2026-08-31 single-tree-destination exception (national Strom roka
+contest wins standing in for global fame, per the Amt Neuhaus
+precedent):**
+- **Bošáca** (new, bsa_001/bsa_002): two national Tree of the Year
+  fruit trees 350m apart in the Zabudišová hillside hamlet, an heirloom
+  apple (2017 winner, 6th in Europe) and a rare pink-fleshed pear (2015
+  winner, 3rd in Europe). Reassigned from the verify pass's `bsc_001`/
+  `bsc_002` ids, which collided with live Bucaco (Portugal) trees;
+  `passcheck.py --pending` caught it before merge.
+- **Veľké Borové** (new, vbo_001): Slovakia's first-ever Tree of the
+  Year (2004), a Scots pine estimated 250-350 years old. Flagged: no
+  dated sighting since a geocache route to it was archived in 2014, so
+  the page says plainly that its current status is unconfirmed rather
+  than assume the best.
+- **Starý Smokovec** (new, sms_001): the Smokovec Beech, "Tree of
+  Lovers," a weeping beech (~80 years) in the centre of the High Tatras'
+  main resort town, 2021 Tree of the Year.
+- **Senica** (new, sen_001): the White Mulberry of Senica, ~210 years,
+  the town's own Tree of the City (2010) and national Tree of the Year
+  (2014), 8th of 14 in the 2015 European final.
+
+**Brzoza, Poland (new, brp_001/002/003):** an oak and two limes standing
+within 15m of each other in state forest north of Toruń, all made nature
+monuments in one 2014 council resolution. Renumbered from the verify
+pass's placeholder `xxx_003/004/005` ids. None of the three carries a
+documented age; two of three rest on a single source and are flagged.
+Ships below the 4-tree floor as a genuine below-floor cluster rather than
+one tree, per the exception's "local documentation, not global fame"
+standard.
+
+`city_names.py` run for the 4 new Slovak places (Brzoza's own name is a
+common Polish toponym and could not be resolved to one Wikipedia article;
+left unresolved rather than guessed). Build (5021 pages), qa.py (7777
+pages, 0 problems) and preflight.py (536 cities, 0 problems) all clean.
+Deleted 3 stale `data/research/*-verified.json` files whose contents were
+already fully merged (bilu, brisbane, famouspoland).
+
 ## 2026-09-07 (continuation 9) - Finished the _bomenbieb-netherlands and _famous-germany claims
 
 **Maastricht +1 (maa_015), Deventer +1 (dev_010), Tilburg +1 (til_016).**

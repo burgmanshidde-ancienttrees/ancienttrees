@@ -11,6 +11,34 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 - Finished the standing Slovakia and Taiwan claims; 5 new Slovak places, 1 new Polish one
+
+Continuation of an earlier attempt that stopped after 10 minutes with 110
+of its window unspent. Two claims were standing: `_famous-taiwan` (empty
+verify output; its one candidate had already shipped as bilu.json, so
+released clean) and `_famous-slovakia` (5 verified trees, no stories).
+`passcheck.py --pending` also turned up a fully-written but unmerged
+`famouspoland-verified.json` left over from an earlier session.
+
+**5 new Slovak places, all single-tree or small-cluster, under the
+2026-08-31 exception:** Bošáca (two national "Tree of the Year" fruit
+trees 350m apart, an apple and a rare pink pear), Veľké Borové (Slovakia's
+first-ever Tree of the Year, 2004, a Scots pine whose current status is
+honestly flagged unconfirmed since 2014), Starý Smokovec (the Smokovec
+Beech, "Tree of Lovers," in the middle of the High Tatras resort), and
+Senica (the White Mulberry, the town's own tree since 2010 and a national
+champion since 2014). The Bošáca pair needed new ids: the verify pass's
+own `bsc_001`/`bsc_002` collided with live Bucaco, Portugal trees, caught
+by `passcheck.py --pending` before merge.
+
+**1 new Polish place, Brzoza:** an oak and two limes standing within 15
+metres of each other in state forest north of Toruń, all protected by one
+2014 council resolution. Renumbered from the write pass's placeholder
+`xxx_` ids.
+
+Build, qa.py (7777 pages) and preflight.py (536 cities) all clean. No
+FOR HIDDE items.
+
 ## 2026-09-07 (continuation 10) - Finished all 4 standing claims: 5 new trees across 2 new single-tree places, 1 deepen, 1 released clean
 
 Resumed a window an earlier attempt stopped 17 minutes in with 103
