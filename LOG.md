@@ -86,6 +86,57 @@ work, no research risk: the trees named already had a story, a girth or a
 setting on file, they just had no sentence telling a reader which trunk in a
 crowded park is the one we mean.
 
+## 2026-09-08 (session with Hidde, later) - The reader loop was leaking at three points, and all three are closed
+
+**An arborist in Stockholm answered our outreach mail**, which is the first
+time anybody has audited one of our pages. Daniel Daggfeldt sent a tree we had
+missed and two corrections. **Valkasken** is live: an ash on Langholmen that
+Linnaeus wrote down in the 1740s, two sources, pin confirmed because his map
+link and Wikipedia land five metres apart. His corrections to the Prins Eugen
+oak are in and they made the story better: largest in the CITY not the county,
+and the trunk is hollow so the 45 cubic metres is the shape and not the wood.
+**FOR HIDDE: the reply is drafted and mailcheck-clean in
+`drafts/reply-daniel-daggfeldt-stockholm.md`. Ask him for Valkasken's girth; he
+is an arborist and it is the one field missing. His colleague Tina Axelsson has
+photographed all of these and that thread is yours.**
+
+**Then he asked why five of his own photographs had never been looked at, and
+the answer was three separate leaks, all now closed.**
+
+1. Our own photographs were dropped entirely, not queued. "Ours are not
+   contributions" was right; implementing it as `continue` meant there was no
+   way to publish one deliberately because there was no way to see one.
+2. A photograph of a tree we do NOT map went to a leads file nothing reads, so
+   `--status` said "0 waiting" while five sat in it.
+3. A `lead` verdict was permanent, while the map gains trees every night. Three
+   of his Baarn photographs match the Cantonspark Giant Sequoia TODAY at 7, 17
+   and 21 metres.
+
+**`corroborate.py` now actively searches** rather than only reading registers we
+happen to hold: Wikipedia by coordinate, then Wikidata to ask whether the
+article is about a TREE, which works in every language at once. Proved both
+ways: it finds Valkasken at 5 m and finds nothing at all for the Nara four.
+
+**The doctrine he set is in CLAUDE.md**, "What validates a tree": the question
+is worth-the-visit and nothing else; a person saying they went and were glad is
+the best evidence; sources are the stand-in; a tree with no source is
+UNVALIDATED rather than disqualified, so adding stays open to anybody; and
+scarcity is a feature. The measurement that decided the rest: **every sighting
+on file comes from one account and it is his own.** Zero readers have added a
+tree, so both automatic validation rules are switched off and
+`sightings_inbox.py --judge` makes his occasional manual check one screen per
+tree instead. The two-people rule (two accounts within 30 m) is recorded for
+when a second person exists.
+
+**And the flow now ends by asking whether it was worth the trip**, thumbs up
+and down, on his ruling that the down thumb is data for us rather than a
+verdict we show. Convention looked up rather than designed: AllTrails,
+Google Maps and Apple's HIG, all in CONVENTIONS.md.
+
+Deploy, smoke and the iOS build are all green. **FOR HIDDE: walk the add-a-tree
+sheet on your next install. Two fields where there was one, and the question at
+the end.**
+
 ## 2026-09-08 (session with Hidde) - The Nara four retired, and 343 snippets stop repeating their own title
 
 **He asked two questions and both were right.** Shown the daily digest, he
