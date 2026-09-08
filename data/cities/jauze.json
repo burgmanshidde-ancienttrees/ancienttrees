@@ -1,0 +1,68 @@
+{
+  "city": "Jauze",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "The oldest tree in the Sarthe stands beside the church in a village most of France has never heard of. SEPENES, the association that inventories the department's remarkable trees, calls it the doyen de la Sarthe and puts it at seven to nine centuries on a trunk 5.7 metres round. It is also the only classified yew in the Sarthe that flowers as a male, shedding pollen in late winter rather than carrying the red berries most churchyard yews are known for. Free, in the open, reached by car.",
+  "meta_description": "The If de Jauze is the Sarthe's oldest tree, a 5.7m yew by the church, 700 to 900 years old. Free, flowers late winter.",
+  "question_meta": "Jauze's remarkable tree is a 700 to 900 year old yew by the church, the oldest known tree in the Sarthe.",
+  "question_answer": "Jauze's notable tree is the If de Jauze, a European Yew beside the church, 5.7 metres round and reckoned the oldest known tree in the Sarthe at 700 to 900 years, per SEPENES, the association that inventories the department's remarkable trees.",
+  "question_context": "SEPENES calls the tree le doyen de la Sarthe, its oldest known specimen, on a trunk that measures 5.7 metres round. Local tradition goes further and has Vikings planting it eight hundred to a thousand years ago; the regional tourism board repeats the story and calls it a legend in the same breath, which is the right way round, since nobody has produced a source for either figure beyond the seven to nine centuries the people who measured the tree are willing to put their name to. It carries one genuinely unusual credential: it is the only classified yew in the Sarthe that flowers as a male. Yews come in separate sexes, and the females, the ones that carry red arils in autumn, are what churchyards usually keep; this one sheds pollen instead, in late winter. Access is free and it stands in the open in the village centre, not behind a wall or a fence, though reaching Jauze itself takes a car since no public transport serves the village. It is a regional tree rather than a national one, but for anyone working through the old yews of France, the Sarthe puts this one forward.",
+  "hero_tree_id": "jau_001",
+  "oldest_tree_id": "jau_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Jauze?",
+      "a": "The If de Jauze, a European Yew beside the church, 5.7 metres round and the oldest known tree in the Sarthe."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Late winter, February to March, when its male flowers open and shed pollen."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open village centre beside the church, with confirmed free access."
+    }
+  ],
+  "trees": [
+    {
+      "id": "jau_001",
+      "name": "The Yew of Jauzé (If de Jauzé)",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 700 to 900 years",
+      "age_min": 700,
+      "age_max": 900,
+      "girth_cm": 570,
+      "location": {
+        "address": "Le bourg, next to the church, 72110 Jauzé",
+        "latitude": 48.21222222,
+        "longitude": 0.37805556,
+        "neighbourhood": "Jauzé, Sarthe"
+      },
+      "verified_sources": [
+        "https://www.sepenes.fr/arbres-remarquables",
+        "https://www.enpaysdelaloire.com/visites/autour-de-la-nature/if-millenaire-de-jauze",
+        "https://commons.wikimedia.org/wiki/File:Jauz%C3%A9_-_if_01.JPG"
+      ],
+      "access": "Free (confirmed explicitly by the regional tourism board's own listing: 'Acces au site gratuit: Oui'). It stands in the village ('le bourg'), by the church, not on enclosed private land.",
+      "transport": "No public transport found serving Jauzé, a small village in Sarthe; reachable by car. Nearest larger town is La Ferte-Bernard (SEPENES, the association that inventories Sarthe's remarkable trees, is based there), a short drive away.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The oldest tree in the Sarthe stands beside the church in Jauzé, a village most of France has never heard of. SEPENES, the association that keeps the department's inventory of remarkable trees, calls it le doyen de la Sarthe and puts it at seven to nine centuries, on a trunk 5.70 metres round.\n\nLocal tradition goes further and has Vikings planting it, eight hundred to a thousand years ago. The regional tourism board repeats that story and calls it a legend in the same breath, which is the right way round. A visitor's photo caption elsewhere calls it the thousand-year yew. Nobody has produced a source for either figure, so the seven to nine centuries stands: it is the number the people who measured the tree are willing to put their name to.\n\nIt carries one genuinely unusual credential. It is the only classified yew in the Sarthe that flowers as a male. Yews come in separate sexes, and the females, the ones that carry red arils in autumn, are what churchyards usually keep; this one sheds pollen in late winter instead.\n\nAccess is free and it stands in the open in the bourg, not behind a wall. Reaching Jauzé takes a car. It is a regional tree rather than a national one, but if you are working your way through the old yews of France, this is the one the Sarthe puts forward.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.70 metres round, standing in the open in the village centre beside the church rather than inside an enclosure. It is the only tree of that bulk in the bourg.",
+      "best_time": {
+        "months": [
+          2,
+          3
+        ],
+        "kind": "flowers",
+        "label": "late winter, when the male flowers open and shed pollen"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

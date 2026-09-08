@@ -1,0 +1,61 @@
+{
+  "city": "Nicorps",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "In October 1987 a hurricane took roughly seven metres off the top of this yew, and it has grown most of them back. People have measured it since 1930, which makes its record unusually good for a village tree: a trunk that has thickened from 6.28 to over 7 metres while the crown fell and recovered. It stands free in the churchyard of a village of a few hundred people, reckoned about 600 years old, alongside a missionary, a professor and the founder of an Argentine town.",
+  "meta_description": "The yew in Nicorps' churchyard lost 7 metres of crown to a 1987 storm and grew it back. Free, 600 years old, 7.15 metres round.",
+  "question_meta": "Nicorps' remarkable tree is a 600-year-old yew in the churchyard of the Eglise Saint-Corneille.",
+  "question_answer": "Nicorps' notable tree is a European Yew in the churchyard of the Eglise Saint-Corneille, 7.15 metres round and about 600 years old by the church's own account. A 1987 hurricane took roughly seven metres off its crown, which has since regrown to about 16 metres.",
+  "question_context": "The record on this yew is unusually good, because people keep measuring it. The naturalist Henri Gadeau de Kerville taped the trunk at 6.28 metres and the crown at 18.5 in 1930, for his survey of Normandy's old trees. When the CAUE de la Manche came back in 1998, an October 1987 hurricane had cost the tree a major limb and the crown stood under 12 metres, while the trunk had thickened to 7.15. Aerial photographs from 1947 onward show the canopy retreating on the north-east side, and the crown has since climbed back to around 16 metres, with the 1998 survey describing the girth as still increasing. Its age comes from the church's own account of 600 years; a photographer once captioned it l'if millenaire, and that thousand-year claim circulates with nothing behind it, so 600 is the number to work from. Two yews stand in the churchyard and this is the larger of the pair. The same ground holds a missionary, a professor of medicine, and Emile Daireaux, who founded a town in Argentina that still carries his name.",
+  "hero_tree_id": "nic_001",
+  "oldest_tree_id": "nic_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Nicorps?",
+      "a": "A European Yew in the churchyard of the Eglise Saint-Corneille, 7.15 metres round and about 600 years old."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the public churchyard, open in daylight hours."
+    },
+    {
+      "q": "Which of the two yews in the churchyard is it?",
+      "a": "The larger of the pair, over seven metres round, with a crown that stops short at about 16 metres where the 1987 storm took its top."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nic_001",
+      "name": "The Yew of Nicorps (If commun de Nicorps)",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 715,
+      "location": {
+        "address": "Churchyard of the Eglise Saint-Corneille, Nicorps",
+        "latitude": 49.02733889,
+        "longitude": -1.42211667,
+        "neighbourhood": "Nicorps, Manche"
+      },
+      "verified_sources": [
+        "https://wikimanche.fr/%C3%89glise_Saint-Corneille_(Nicorps)",
+        "https://www.tourisme-coutances.fr/vivez-lexperience/du-patrimoine/caue-arbres-remarquables-cmb/",
+        "https://www.wikimanche.fr/Liste_des_arbres_remarquables_de_la_Manche",
+        "https://www.monumentaltrees.com/fr/fra/manche/nicorps/2656_eglisesaintcorneille/4442/"
+      ],
+      "access": "Free. It stands in the churchyard/cemetery of the Eglise Saint-Corneille, a village church with a public cemetery, open in daylight hours; no restriction found in any source.",
+      "transport": "No specific transit stop found. Nicorps is a small village about 6km south-west of Coutances (which has an SNCF station); reaching the village itself requires a car or bicycle from Coutances.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "In October 1987 a hurricane took roughly seven metres off the top of this yew. It has grown most of them back.\n\nThe record is unusually good, because people keep measuring it. On 11 June 1930 the naturalist Henri Gadeau de Kerville taped the trunk at 6.28 metres and the crown at 18.50 for his survey of Normandy's old trees. When the CAUE de la Manche came back on 10 November 1998, the storm had cost the tree a major limb and the crown stood under 12 metres, while the trunk had thickened to 7.15. Aerial photographs from 1947 onwards show the canopy retreating on the north-east side. The crown is back to around 16 metres now, and the 1998 dossier describes the girth as still increasing, which makes 7.15 a floor rather than a figure.\n\nIts age comes from the church's own account, which puts it at 600 years. A photographer once captioned a picture of it \"l'if millénaire\", and that thousand-year claim circulates with nothing behind it, so the six centuries are the number to work from and the millennium is village talk. Call it somewhere between 500 and 700.\n\nThis is a churchyard tree in a village of a few hundred people, and that is the honest scale of it. Buried in the same ground: a missionary, a professor of medicine, and Émile Daireaux, who founded a town in Argentina that still carries his name.",
+      "how_to_recognise": "You can recognise it by size: two yews stand in the churchyard of Saint-Corneille and this is the larger, over seven metres round, with a crown that stops short at about 16 metres where the 1987 storm took its top.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

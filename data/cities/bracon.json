@@ -1,0 +1,60 @@
+{
+  "city": "Bracon",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Depending on who measured it, this lime is either 17 metres round and the largest in France, or 13.2 metres and merely enormous: a specialist who taped it himself in 2009 published the lower figure rather than picking the flattering one. Local tradition dates the planting to a 1477 royal wedding; a dendrological reading from the same 2009 visit suggests no more than 250 years. What is settled is that a barrier protects its roots, and when a 2019 storm took a major limb, the whole commune campaigned to save it.",
+  "meta_description": "The Tilleul de Grange Sauvaget near Bracon is a 13.2m lime, age disputed at 250 to 550 years. Free, on a signposted trail.",
+  "question_meta": "Bracon's remarkable tree is a giant lime on the trail toward Arloz, its exact age and girth both disputed.",
+  "question_answer": "Bracon's notable tree is the Tilleul de Grange Sauvaget, a Small-leaved Lime on the hiking trail toward the Arloz farmstead, measured at 13.2 metres round in 2009 despite a 17-metre figure that circulates on tourist pages, with its age disputed between roughly 250 and 550 years.",
+  "question_context": "The tree's own numbers are argued over rather than settled. A 17-metre girth appears on tourist pages and traces to a measurement made around 2003; in August 2009 a specialist put a tape around the trunk himself and got 13.2 metres at chest height, publishing the discrepancy rather than quietly picking a side, since older photographs do show a fatter trunk and he could not say whether the gap was method or genuine loss. The age runs the same way: local tradition holds it was planted in 1477 for the marriage of Marie of Burgundy to Maximilian of Habsburg, which would make it about 550, while the same 2009 dendrological reading came out at no more than 250, three centuries of disagreement left unresolved. What nobody argues about is that the tree was declared of public utility in 1996, that a barrier now rings the trunk to keep feet off its roots, and that when an autumn storm took a large limb in 2019 Bracon launched a campaign to save it that reached regional television. The signposted trail out from Bracon toward the Arloz farmstead has parking at one end and a picnic table at the tree.",
+  "hero_tree_id": "bra_001",
+  "oldest_tree_id": "bra_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree near Bracon?",
+      "a": "The Tilleul de Grange Sauvaget, a giant lime on the trail toward the Arloz farmstead, 13.2 metres round."
+    },
+    {
+      "q": "How old is it really?",
+      "a": "Disputed. Local tradition says about 550 years from a 1477 planting; a 2009 dendrological reading suggests no more than 250."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a public hiking trail with parking and a picnic area nearby."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bra_001",
+      "name": "The Great Lime of Grange Sauvaget",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "disputed: legend says about 550 years, one arborist's measurement suggests closer to 250",
+      "age_min": 250,
+      "age_max": 550,
+      "girth_cm": 1320,
+      "location": {
+        "address": "Lieu-dit Grange Sauvaget, hiking trail toward the Arloz farmstead, 39110 Bracon/Ivory, Jura",
+        "latitude": 46.9182628,
+        "longitude": 5.8697197,
+        "neighbourhood": "Grange Sauvaget hamlet, between the villages of Bracon and Ivory"
+      },
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2008/02/13/venerable-tilleul-jurassien/",
+        "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/jura/il-faut-sauver-le-tilleul-de-grange-sauvaget-bracon-826589.html",
+        "https://www.jura-tourism.com/patrimoine-naturel/tilleul-de-granges-sauvaget/"
+      ],
+      "access": "Free, on a public hiking trail (chemin de randonnée) between Bracon and the Arloz farmstead, with a picnic area and parking nearby per jura-tourism.com. A protective barrier rings the trunk itself (visible in krapooarboricole's photos) to stop visitors compacting the roots or climbing it, but the tree is otherwise openly viewable and the site is set up for visitors.",
+      "transport": "Rural, no rail or bus stop; reached on foot via the signposted trail from Bracon or by car to the trailhead parking near Ivory/Bracon.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Depending on who measured it, this lime is either 17 metres round and the largest in France, or 13.2 metres and merely enormous.\n\nThe 17 metre figure sits on tourist pages and appears to trace back to a measurement around 2003. In August 2009 a specialist put a tape around the trunk himself and got 13.2 metres at chest height, 12.9 lower down, and published the discrepancy rather than quietly picking a side. He could not say whether the gap is method or whether the tree has genuinely lost girth, since older photographs do show a fatter trunk. So 13.2 is the figure here, and the largest-in-France billing stays a billing.\n\nThe age runs the same way. Local tradition has it planted in 1477 for the marriage of Marie of Burgundy, daughter of Charles the Bold, to Maximilian of Habsburg, which would make it about 550. The same 2009 visit read the trunk dendrologically and came out at no more than 250. Three centuries of disagreement over one tree, unresolved.\n\nWhat nobody argues about: it was declared of public utility in 1996, a barrier rings the trunk to keep feet off its roots, and when an autumn storm took a large limb in 2019 the commune of Bracon launched a campaign to save it that reached regional television. The trail out from Bracon has parking at one end and a picnic table at the tree.",
+      "how_to_recognise": "You can recognise it by the barrier ringing the trunk, put there to keep feet off the roots, and by the size of what it encloses, over 13 metres round. It stands on the trail between Bracon and the Arloz farmstead.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

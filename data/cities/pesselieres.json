@@ -1,0 +1,60 @@
+{
+  "city": "Pesselieres",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "France has hundreds of trees called a Tilleul de Sully, planted on the orders of Henri IV's roads minister after the Wars of Religion. Most inherited the name by association alone. This one has a birth year: 1598, according to the regional paper L'Yonne republicaine, which is also why the hamlet threw two days of festivities for its four hundredth birthday in 1998. It stands free in the open near the old halles, on one of thirteen walking routes that pass through the Puisaye.",
+  "meta_description": "Le Sully de Pesselieres is a lime planted in 1598, about 428 years old, free and in the open in a Puisaye hamlet.",
+  "question_meta": "Pesselieres' remarkable tree is Le Sully, a lime dated to 1598, one of hundreds of Sully-named trees in France.",
+  "question_answer": "Pesselieres' notable tree is Le Sully de Pesselieres, a lime planted in 1598 according to the regional paper L'Yonne republicaine, making it about 428 years old. It stands in the open hamlet near the rue du chateau and the old halles.",
+  "question_context": "Maximilien de Bethune, Duke of Sully and Henri IV's chief roads officer, spent the years after the Wars of Religion pressing villages to plant a lime or an elm by the church or the square, and hundreds of French trees carry his name today by that association alone. Le Sully de Pesselieres is different because it is dated: L'Yonne republicaine gives 1598 as its planting year, which is also why the hamlet held two days of festivities for its four hundredth birthday in 1998, putting the tree at about 428 years old now. Pesselieres is a hamlet inside the commune of Sougeres-en-Puisaye, and the lime stands in the open near the rue du chateau and the old halles, not enclosed by a garden or a churchyard. A photograph of it survives from the early twentieth century, with more from 2008 and 2014, rare for a tree this far off the main roads. Nobody has published a trunk measurement; other Sully limes run five to seven metres round, but those are different trees, and this page asks any visitor with a tape measure to send in the real number. Thirteen walking routes through the Puisaye pass it.",
+  "hero_tree_id": "pes_001",
+  "oldest_tree_id": "pes_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Pesselieres?",
+      "a": "Le Sully de Pesselieres, a lime dated to 1598 and about 428 years old, one of hundreds of French trees named for the Duke of Sully."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open hamlet near the rue du chateau and the old halles."
+    },
+    {
+      "q": "How wide is the trunk?",
+      "a": "Not published. If you have measured it, tell us and we will add it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pes_001",
+      "name": "The Sully Lime of Pesselières (Le Sully de Pesselières)",
+      "species": "Lime (Tilia sp.), a 'Tilleul de Sully'",
+      "age_estimate": "about 428 years (planted 1598)",
+      "age_min": 420,
+      "age_max": 430,
+      "girth_cm": null,
+      "location": {
+        "address": "Pesselières, a hamlet of the commune of Sougères-en-Puisaye",
+        "latitude": 47.56425556,
+        "longitude": 3.3432,
+        "neighbourhood": "Pesselières, Sougères-en-Puisaye, Yonne, Burgundy"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Pesseli%C3%A8res",
+        "https://www.visorando.com/randonnee-tilleul-de-sully.html",
+        "https://commons.wikimedia.org/wiki/File:2008_02_23_le_tilleul_le_Sully.jpg"
+      ],
+      "access": "Free. It stands in the open hamlet of Pesselières (references place it near the 'rue du chateau' and 'place des halles', both public streets/square), not on enclosed private land.",
+      "transport": "No public transport found. Pesselières is a small hamlet within Sougères-en-Puisaye, Yonne (Burgundy); reachable by car or as part of a countryside walk (Visorando lists 13 different hiking routes passing it).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "France has hundreds of trees called a Tilleul de Sully. This one has a birth year, and a party to prove it.\n\nMaximilien de Béthune, Duke of Sully and Henri IV's chief roads officer, spent the years after the Wars of Religion pressing villages to plant a lime or an elm by the church or on the square. Most of the trees carrying his name inherited it by association. Le Sully de Pesselières is dated: planted in 1598, according to the regional paper L'Yonne républicaine, which is also why the hamlet held two days of festivities for its four hundredth birthday in 1998. That puts it at about 428 years now.\n\nPesselières is a hamlet inside the commune of Sougères-en-Puisaye, and the lime stands out in the open near the rue du château and the old halles. There is a photograph of it from the early twentieth century and more from 2008 and 2014, so the last hundred years of it are on record, which is rare for a tree this far off the main roads.\n\nNobody has published a measurement of the trunk. Surveys of other Sully limes put the type at five to seven metres round, but those are other trees. If you go with a tape measure, tell us the number and we will add it.\n\nThirteen walking routes through the Puisaye pass it, which is roughly what Sully had in mind: a tree where the road goes.",
+      "how_to_recognise": "You can recognise it by where it stands, out in the open in the hamlet between the rue du château and the old halles rather than in a garden or a churchyard. It is the lime that carries the Sully name here.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

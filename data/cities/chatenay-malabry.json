@@ -1,0 +1,60 @@
+{
+  "city": "Chatenay-Malabry",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Every blue weeping Atlas cedar in the world descends from this one tree, a mutation that appeared here around 1873. Roughly five metres round and only 14 metres tall, it spreads its drooping branches across an area the size of a tennis court, held up since 2011 by about thirty resin supports shaped like stalagmites, so visitors can still walk in underneath the canopy. It stands free in a public arboretum, a tram ride from Paris, and won France's national tree prize in 2015.",
+  "meta_description": "The Cedre pleureur at Chatenay-Malabry is the origin of every blue weeping Atlas cedar. Free arboretum, tram from Paris.",
+  "question_meta": "Chatenay-Malabry's remarkable tree is the original blue weeping Atlas cedar, ancestor of every specimen grown worldwide.",
+  "question_answer": "Chatenay-Malabry's notable tree is the Cedre pleureur de la Vallee-aux-Loups, a Blue Weeping Atlas Cedar in the free public arboretum, about 150 years old and the original mutation from which every blue weeping Atlas cedar grown anywhere descends.",
+  "question_context": "The cultivar Cedrus atlantica 'Glauca Pendula' appeared here as a mutation around 1873, and every specimen since has been a cutting or a graft descended from it, so any blue weeping Atlas cedar draped over a lawn elsewhere is a copy of this one. It is about 150 years old, roughly five metres round and only 14 metres tall, and it spreads its branches across roughly 700 square metres, near enough a tennis court; the department calls it the largest of its kind anywhere, which more or less follows from being the first. Weeping branches that long cannot hold themselves up, so in 2011 the artist Francis Ballu set around thirty resin supports shaped like stalagmites under the limbs, turning the ground beneath the canopy into something like a cave floor visitors can still walk through. Who raised the original mutation is not quite settled: the department and Wikipedia credit the nurseryman Gustave Croux, while some garden histories point instead to the Paillet nurseries in the same corner of Chatenay-Malabry, and nobody has untangled the two claims. It won France's national tree prize in 2015. The arboretum is free, and the T10 tram stops directly at Vallee aux Loups.",
+  "hero_tree_id": "cma_001",
+  "oldest_tree_id": "cma_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Chatenay-Malabry?",
+      "a": "The Cedre pleureur de la Vallee-aux-Loups, the original blue weeping Atlas cedar, ancestor of every specimen grown worldwide."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The arboretum is free; only the adjoining Maison de Chateaubriand house tour charges separately."
+    },
+    {
+      "q": "How do I get there without a car?",
+      "a": "Tram T10 stops directly at Vallee aux Loups in Chatenay-Malabry."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cma_001",
+      "name": "The Weeping Cedar of the Vallée-aux-Loups (Cèdre pleureur)",
+      "species": "Blue Weeping Atlas Cedar (Cedrus atlantica 'Glauca Pendula')",
+      "age_estimate": "about 150 years, since around 1873",
+      "age_min": 145,
+      "age_max": 155,
+      "girth_cm": 500,
+      "location": {
+        "address": "Domaine départemental de la Vallée-aux-Loups (Arboretum), 87-102 Rue de Chateaubriand, 92290 Châtenay-Malabry, Hauts-de-Seine",
+        "latitude": 48.77117,
+        "longitude": 2.27116,
+        "neighbourhood": "Arboretum de la Vallée-aux-Loups, adjoining the Maison de Chateaubriand"
+      },
+      "verified_sources": [
+        "https://destination.hauts-de-seine.fr/cedre-bleu-pleureur-atlas-arboretum-vallee-aux-loups-92.html",
+        "https://en.wikipedia.org/wiki/Arboretum_de_la_Vall%C3%A9e-aux-Loups",
+        "https://www.hauts-de-seine.fr/sortir-et-decouvrir/patrimoine-vert/les-espaces-verts-pres-de-chez-vous/les-jardins-et-les-bois/larboretum"
+      ],
+      "access": "Free. The arboretum and the wider Domaine départemental de la Vallée-aux-Loups (Arboretum, Île Verte, wooded park, Jardin de l'Aigle Blanc) are open to the public at no charge, per the Hauts-de-Seine department's own tourism pages and multiple independent visitor guides (only the adjoining Maison de Chateaubriand house tour charges separately, a few euros). Note: the English Wikipedia article on the arboretum states 'an admission fee is charged', which conflicts with every French-language official and tourism source found; treated as likely stale or referring only to the house, but flagged for a check before publishing.",
+      "transport": "Tram T10 stops directly at 'Vallée aux Loups' in Châtenay-Malabry. Alternatively RER B to Robinson station, then bus 194 (Marc Sangnier or Lycée de Châtenay-Malabry stops) or a 20-25 minute signposted walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Every blue weeping Atlas cedar in the world came off this one tree. The cultivar Cedrus atlantica 'Glauca Pendula' appeared here as a mutation around 1873, and every specimen since has been a cutting or a graft descended from it. If you have seen one draped over a lawn in a park or a garden somewhere, you have seen a copy of this.\n\nIt is about 150 years old, roughly five metres round and only 14 metres tall, and it spreads its branches across about 700 square metres, near enough a tennis court. The department calls it the largest of its kind anywhere, which more or less follows from being the first.\n\nWeeping branches that long cannot hold themselves up. In 2011 the artist Francis Ballu made around thirty resin supports shaped like stalagmites and set them under the limbs, so the thing holding the tree together looks like a cave floor and visitors can still walk in underneath the canopy.\n\nWho raised the original mutation is not quite settled. The department and Wikipedia credit the nurseryman Gustave Croux; some garden histories point instead to the Paillet nurseries in the same corner of Châtenay-Malabry. Both were in the business here in the same decades, and nobody has untangled it.\n\nIt won France's national tree prize in 2015. The arboretum is free, and the T10 tram stops at Vallée aux Loups.",
+      "how_to_recognise": "You can recognise it by the props: about thirty resin supports shaped like stalagmites, holding up branches that sweep the ground across an area the size of a tennis court. It is the tree you can walk in underneath.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

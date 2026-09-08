@@ -11,6 +11,48 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (continuation 2) - 8 new single-tree French places, 5 photos, 3 held reader photos, 7-day visits 1199
+
+`visitors.py`: 1199 visits / 1545 views over 7 days, climbing from 106 to
+223 before a partial final day. `prepare.py`: shelf empty for writing (0
+ready), REFILL flagged with `_famous-france` (35 unsourced) at the top.
+
+**Rung 1 first, per Step 0b.** 3 reader photos of Baarn's Cantonspark Giant
+Sequoia (brn_002) matched by distance only; looked at the pixels and held
+rather than approved, since the foliage in all three (and the reader's own
+"Watercypres" note on one) says Dawn Redwood, not Giant Sequoia, and brn_001
+sits 128m away. 2 more leads turned out to be indoor window-test shots, not
+tree submissions. Kept a genuinely striking unidentified multi-stemmed tree
+by a stream in Nara as a lead for a later verify pass.
+
+**Refilled the shelf**: claimed `_famous-france`, dispatched two verify
+passes in parallel on its remaining unsourced leads (5 + 4 named
+candidates, each with a coordinate and Commons photos already), 8 of 9
+verified, 1 (Tilleul de Joux) blocked on both passes independently for
+unconfirmed private-chateau access. Dispatched one write pass on the 8;
+fixed a species-name collision (Common Yew -> European Yew, to match the
+site's existing convention) and an over-60-char tree title before merging.
+
+**Merged into 8 new city files**, each a single verified rural French tree
+under the single-famous-tree-destination exception: Magescq, Nicorps,
+Jauze, Pesselieres, Feternes, Bracon, Reaumont, Chatenay-Malabry (the
+origin tree of every blue weeping Atlas cedar grown anywhere). Preflight
+and the Astro build both clean. `city_names.py` produced one wrong search
+alias (bracon -> Arbois, a different Jura commune 7.4km off); caught and
+removed it, kept the other 4 resolved names.
+
+**5 more photos**, all previously-photo-less single-tree pages: the Chene
+Chapelle d'Allouville-Bellefosse (its own tree, missed earlier), Nellie's
+Tree (Aberford), the Whistler Cork Oak (Aguas de Moura, the 2018 European
+Tree of the Year), the Funffingerlinde (Albersdorf), the Oak of Hersberg
+(Altrier). 12 mismatched candidates rejected along the way (wrong commune,
+a trail sign, generic village/castle shots).
+
+`tree_index.py` run, `agent-costs.json` logged for both verify passes, the
+write pass, and the photo/alias work. Nothing left claimed. Stopped here
+short of the usage limit; window still had time but the batch was a clean
+place to close out and commit.
+
 ## 2026-09-08 (continuation, previous attempt stopped after 72 min with 48 min unspent) - Helmond claim finished, the --stuck pool cleared to zero, two page gaps, first photo viewing pass in a while
 
 **Finished what the prior attempt left claimed.** `passcheck.py --claims`

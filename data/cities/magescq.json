@@ -1,0 +1,61 @@
+{
+  "city": "Magescq",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "In August 2010 a storm broke a single branch off this oak that measured 3.3 metres around on its own; a month later the tree carried the label Arbre remarquable de France. It stands alone on an old airial, a forest clearing where Landes farmers once built their houses, at the end of a kilometre of pine forestry track from the hamlet of Nerthe. Free to reach on foot, somewhere between 500 and 700 years old, and nobody has cored it to settle the number.",
+  "meta_description": "The Chene de Nerthe near Magescq is a 650cm oak, 500 to 700 years old, alone on a Landes forest clearing. Free, a walk down a pine track.",
+  "question_meta": "Magescq's remarkable tree is the Chene de Nerthe, a solitary oak on an old forest clearing in the Landes pines.",
+  "question_answer": "Magescq's notable tree is the Chene de Nerthe, a Pedunculate Oak 6.5 metres round standing alone on an old airial in the pine forest near the hamlet of Nerthe. It carries the label Arbre remarquable de France and is reckoned 500 to 700 years old.",
+  "question_context": "The oak stands on an airial, one of the clearings where Landes farmers once built isolated farmhouses among the pines; the farm here is now ruins and the nearest occupied house is two or three kilometres off. In August 2010 it shed a single branch measuring 3.3 metres around, and a month later, on 18 September, the A.R.B.R.E.S. association labelled it a Remarkable Tree of France. Its age is unsettled: local tradition says 600 years, the official label rounds to 600 or 700, and a growth-rate reading of the girth comes out lower, at 500 to 600, so the honest range is 500 to 700 and nobody has taken a core to close it. The last kilometre to reach it is on foot down a forestry track, which is a real part of why so few people had written about it before four separate hiking platforms began publishing routes out to it, the newest from 2023.",
+  "hero_tree_id": "mgs_001",
+  "oldest_tree_id": "mgs_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Magescq?",
+      "a": "The Chene de Nerthe, a Pedunculate Oak 6.5 metres round standing alone on an old forest clearing near the hamlet of Nerthe."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open land reached by a public forestry track, about a kilometre's walk each way."
+    },
+    {
+      "q": "How old is the tree really?",
+      "a": "Unsettled. Estimates from local tradition and from its girth range between 500 and 700 years; nobody has cored it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mgs_001",
+      "name": "The Oak of Nerthe (Chêne de Nerthe)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 650,
+      "location": {
+        "address": "In the pine forest near the hamlet of Nerthe, on an old airial (forest clearing with house ruins), commune of Magescq",
+        "latitude": 43.765077,
+        "longitude": -1.117633,
+        "neighbourhood": "Nerthe, Magescq, Landes"
+      },
+      "verified_sources": [
+        "https://www.mairie-magescq.fr/archives-2011/decouvrir-le-chene-de-nerthe",
+        "https://krapooarboricole.wordpress.com/2009/08/20/le-chene-de-nerthe-magescq-landes/",
+        "https://www.tourismelandes.com/patrimoine-naturel/chene-de-nerthe-pnaaqu040v50ghcg/",
+        "https://www.monumentaltrees.com/fr/fra/landes/magescq/28184_lancienairialdenerthe/"
+      ],
+      "access": "Free, on foot. The tree stands on privately owned pine-plantation land within an old airial but is openly and regularly visited by hikers, joggers and mountain bikers via a forestry track from the Nerthe hamlet (about 1km walk each way, difficult by car); no gate, fence or restriction signage was found in any source. The Magescq tourist office also runs a separate, optional guided minibus tour in summer (booking required for that specific tour only, not for general access).",
+      "transport": "No public transport reaches the site. Nearest town with an SNCF station is Dax (TGV), roughly 10km away; from there it is a drive to the forestry track near Nerthe hamlet, then a ~1km walk on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In August 2010 this oak shed a single branch that measured 3.3 metres around. A month later, on 18 September, the A.R.B.R.E.S. association hung an Arbre Remarquable de France label on what was left: 6.50 metres of trunk at chest height, under a crown 27 metres up.\n\nIt grew up alone. The oak stands on an airial, one of the clearings where Landes farmers built their houses among the pines, and the farm here is ruins. The nearest occupied house is two or three kilometres off down a forestry track. For most of its life its only visitors were whoever happened along that track, joggers and hikers and mountain bikers, and nobody wrote any of it down until the label arrived.\n\nIts age is an argument nobody has settled. Local tradition says 600 years, the official label rounds that up to 600 or 700, and growth-rate calculations worked from the girth come out lower, at 500 to 600. Nobody has cored it, so the honest answer is somewhere in the 500 to 700 range.\n\nAfter the branch came down, visitors reported the wound being dressed with tar, and they kept coming. Four separate hiking platforms now publish routes out to it, the newest of them from 2023. The last kilometre is on foot, which is a good part of why it stayed unknown for so long.",
+      "how_to_recognise": "You can recognise it by the trunk, 6.50 metres round at chest height under a crown 27 metres up. It stands alone on the old airial, a clearing in the pine forest, with the ruins of the farm buildings around it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

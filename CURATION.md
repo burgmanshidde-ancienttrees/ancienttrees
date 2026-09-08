@@ -11,6 +11,50 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (continuation 3) - 8 new single-tree French places from the famous-trees batch
+
+Refilled the shelf with two verify passes on `_famous-france`'s remaining
+unsourced leads (batch A: 5 candidates, batch B: 4 candidates, run in
+parallel), then a write pass on the 8 that verified. All 8 are standalone
+rural French trees, none part of a city cluster, each judged against the
+single-famous-tree-destination test in its own `verify_notes`.
+
+Published as 8 new city files, one tree each: Magescq (Chene de Nerthe,
+mgs_001), Nicorps (If commun de Nicorps, nic_001), Jauze (If de Jauze,
+jau_001), Pesselieres (Le Sully de Pesselieres, pes_001), Feternes (Tilleul
+de Chateauvieux, fet_001), Bracon (Tilleul de Grange Sauvaget, bra_001),
+Reaumont (Tilleul de Reaumont, rea_001), Chatenay-Malabry (Cedre pleureur
+de la Vallee-aux-Loups, cma_001). Tilleul de Joux blocked instead (private
+chateau grounds, no evidence of routine public access); both verify passes
+reached that verdict independently.
+
+Fixed two writer-side issues before merging: a species-name collision
+(both yews delivered as "Common Yew", the site's existing convention is
+"European Yew") and an over-60-char tree-page title (Bracon's tree name
+carried a redundant French-name parenthetical). Ran `city_names.py` for
+search aliases afterward and it produced one wrong one: "bracon" ->
+"Arbois", the exact proximity-matching failure its own docstring warns
+about (Bracon and Arbois are distinct Jura communes 7.4km apart, not the
+same place under two names). Removed that entry from both `search_names`
+and `wikipedia_titles`; kept the other 4 (chatenay-malabry, feternes,
+magescq, reaumont), which look like genuine local-language spellings of
+the same place.
+
+Also, separately: a viewing pass on the Commons photo sweep gave 4 more
+single-tree pages (previously photo-less) their first photograph -
+Allouville-Bellefosse's Chene Chapelle, Aberford's Nellie's Tree, Aguas de
+Moura's Whistler Cork Oak (the 2018 European Tree of the Year) and
+Albersdorf's Funffingerlinde - plus the Oak of Hersberg in Altrier. 12
+mismatched candidates rejected (wrong commune, a trail sign, generic
+village/castle shots, Helmond's two candidates 600m+ from the pins).
+
+And rung 1: 3 reader photographs of Baarn's Cantonspark Giant Sequoia held
+rather than approved (matched by distance only; the reader's own
+"Watercypres" label and the foliage in all three point to the Dawn Redwood
+128m away instead), 2 leads turned out to be indoor test shots through a
+window, and a striking unidentified multi-stemmed tree by a stream in Nara
+kept as a lead for a verify pass.
+
 ## 2026-09-08 (continuation 2) - 40 recognition lines across 8 cities, worst-first by impressions
 
 Week still had headroom, so continued past the Sant'Alfio work. New coverage
