@@ -1,0 +1,49 @@
+[
+  {
+    "id": "stk_001",
+    "name": "The Visbarai Pine",
+    "species": "Scots Pine (Pinus sylvestris)",
+    "species_basis": "genus confirmed by name; species per lt.wikipedia (paprastoji pušis)",
+    "girth_cm": 285,
+    "height_m": 18.7,
+    "location": {
+      "address": "Beside road 4514 between Žygaičiai and Bikavėnai, near Stokaičiai village, Tauragė district",
+      "latitude": 55.37836,
+      "longitude": 22.221519,
+      "neighbourhood": "Stokaičiai, Tauragė district, Lithuania"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Visbar%C5%B3_pu%C5%A1is"
+    ],
+    "access": "Free; stands beside a public road near Stokaičiai village.",
+    "transport": "Rural Tauragė district; reached by car via road 4514 between Žygaičiai and Bikavėnai.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Almost every protected veteran in this corner of Lithuania is an oak. This one is a pine.\n\nThe Visbarai pine stands beside road 4514 in the Tauragė district, on the run between Žygaičiai and Bikavėnai near the village of Stokaičiai, and the district put it under protection in 1988, while the country was still Soviet. Its trunk is 2.85 metres round and it carries 18.7 metres of height, both figures taken in 2010.\n\nThose are ordinary numbers on an oak and large ones on a Scots pine. The species grows tall and narrow, is normally cut for timber long before it thickens, and reaches this sort of girth only where it has been left alone in the open for a very long time. Lithuania is full of Scots pine. Very little of it is allowed to end up looking like this.\n\nWhat is not recorded is most of the rest. A single Lithuanian record carries the measurements, the designation number and the protection date, and nothing independent repeats them. Nobody has published an age for the tree, so there is no figure here to trust or to doubt. If you know when this pine went in, or you have put a tape around it more recently than 2010, tell us.",
+    "how_to_recognise": "You can recognise it by being the one big pine on this stretch, a trunk 2.85 metres round under about 19 metres of tree. It stands right at the edge of road 4514, between Žygaičiai and Bikavėnai near Stokaičiai."
+  },
+  {
+    "id": "paj_001",
+    "name": "The Akmenynė Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "species_basis": "genus confirmed by name; species per lt.wikipedia (paprastasis ąžuolas), the common native oak of the region",
+    "girth_cm": 445,
+    "height_m": 24,
+    "location": {
+      "address": "On a slope above the Jūra river, near Pajūris, Šilalė district",
+      "latitude": 55.4382,
+      "longitude": 22.03261,
+      "neighbourhood": "Pajūris, Šilalė district, Lithuania"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Akmenyn%C4%97s_%C4%85%C5%BEuolas",
+      "https://vietoves.lt (Pajūris heritage list, confirms the tree's existence and location; no independent measurements of its own)"
+    ],
+    "access": "Free; stands on open ground above the river near Pajūris village.",
+    "transport": "Rural Šilalė district; reached by car near Pajūris village on the Jūra river.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Four and a half metres of trunk, and the Lithuanian state did not get round to protecting it until April 2017.\n\nThe Akmenynė oak stands on a slope above the Jūra river outside Pajūris, in the Šilalė district, 24 metres tall and 4.45 metres round at chest height. It grows on open ground above the water rather than inside a wood. Six or seven kilometres east, in Pagramantis Regional Park, four registered oaks run from 4.3 metres round up to a hollow giant of 6.30, and by trunk alone this one belongs in that company. The park's own cycling route does not reach this far west, so this oak is a trip of its own.\n\nTwo records name it and put it on this slope. Only one of them, the Lithuanian encyclopaedia entry, carries the measurements, and neither carries an age. No ring count, no growth-rate estimate, not even a local tradition of the kind the Gudlaukis oak up the valley has collected. The ministry order of 10 April 2017 is the oldest dated fact anybody has recorded about a tree that was already this size when it was signed.\n\nSo the trunk is the whole of the evidence, and it is enough to be worth the detour. If somebody has dated this oak, or measured it since, tell us.",
+    "how_to_recognise": "You can recognise it by the trunk, 4.45 metres round at chest height under 24 metres of crown, an oak standing alone in the open. It stands on the slope above the Jūra river, outside Pajūris."
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "city": "Radomsko",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Radomsko, in Łódź Voivodeship, protects thirteen natural monuments and every one of them is a tree. The oldest and the thickest stands in the Old Cemetery: three limes planted in 1863 on the grave of three insurgents killed by Russian soldiers, long since grown together into one trunk 5.33 metres round. Storms have taken most of its crown, and the town spent two years on trunk surgery, steel bindings and a concrete pylon to keep the rest of it standing beside the cemetery chapel.",
+  "meta_description": "The Insurgents' Linden in Radomsko: three limes planted in 1863 on the grave of three killed insurgents, now a single trunk 5.33 metres round.",
+  "question_meta": "Radomsko's oldest and thickest tree is the Insurgents' Linden, about 165 years old, in the Old Cemetery.",
+  "question_answer": "The Insurgents' Linden, a small-leaved lime in Radomsko's Old Cemetery, opposite the Chapel of the Dying Jesus. It is about 165 years old and 5.33 metres round at chest height, the oldest and thickest tree in the town and a protected natural monument since 1998. It is free to visit in daylight hours, like any Polish cemetery.",
+  "question_context": "The tree's own record says three saplings were planted in 1863 on the grave of three Radomsko insurgents killed by Russian soldiers on the night of 23 to 24 January, at the opening of the uprising against Russian rule. The town's register of natural monuments enters the year of origin as 1860 instead. Neither figure has a ring count behind it, and about 165 years covers both. The three stems thickened and fused, so what stands there now reads as a single trunk: 5.33 metres round in the register, 540 centimetres in the tree's own entry, and 23 metres tall.\n\nProtection came in July 1998, by regulation of the Piotrków Voivode. Storms since have reduced the crown to two main limbs spreading about twelve metres by eleven. Between 2021 and 2022 the tree was given corrective and health pruning, surgery inside the trunk, a living brace, steel bindings and a reinforced concrete pylon, partly to stop it falling on the chapel beside it, and the finished work was formally unveiled in May 2023. If you know a dated figure for the planting, tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Radomsko?",
+      "a": "The Insurgents' Linden in the Old Cemetery, about 165 years old and 5.33 metres round. It is also the thickest tree in the town."
+    },
+    {
+      "q": "Why is it called the Insurgents' Linden?",
+      "a": "Three limes were planted in 1863 on the grave of three Radomsko insurgents killed by Russian soldiers during the January Uprising. The three stems have since fused into what reads as one tree."
+    },
+    {
+      "q": "Is the tree healthy?",
+      "a": "It is alive and heavily supported. Storms cut the crown back to two main limbs, and conservation work in 2021 and 2022 added a brace inside the trunk, steel bindings and a concrete pylon."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the Old Cemetery on ul. Wyszyńskiego, open in daylight hours, an easy walk from the town centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rad_001",
+      "name": "The Insurgents' Linden (Lipa Powstańców)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 165 years",
+      "age_min": 160,
+      "age_max": 170,
+      "girth_cm": 533,
+      "location": {
+        "address": "Old Cemetery (Cmentarz Stary), section B-1, opposite the Chapel of the Dying Jesus, ul. Wyszyńskiego 42, Radomsko",
+        "latitude": 51.064368,
+        "longitude": 19.453721,
+        "neighbourhood": "Radomsko, Łódź Voivodeship"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Lipa_Powsta%C5%84c%C3%B3w",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Radomsku"
+      ],
+      "access": "Free; stands in Radomsko's Old Cemetery, open to the public in daylight hours like any Polish cemetery.",
+      "transport": "In central Radomsko; the Old Cemetery entrance is on ul. Wyszyńskiego, an easy walk from the town centre.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Three saplings went into one grave in 1863, and they are now a single tree.\n\nOn the night of 23 to 24 January that year, at the opening of the uprising against Russian rule, Russian soldiers killed three insurgents from Radomsko. They were buried together in the town's Old Cemetery, and three small limes were planted over them. The stems thickened, met and fused. What stands opposite the Chapel of the Dying Jesus now reads as one trunk, 5.33 metres round at chest height under 23 metres of tree.\n\nThe dates disagree slightly. The tree's own record gives the 1863 planting and ties it to the burial; the town's register of natural monuments enters its year of origin as 1860. Either way it is about 165 years old, the oldest and thickest tree in Radomsko, and one of thirteen protected natural monuments in the town, every one of them a tree. The protection itself came late, in July 1998.\n\nAge has cost it. Storms took most of the crown, which is down to two main limbs spreading barely twelve metres. Rather than fell it, the town spent 2021 and 2022 on surgery: corrective pruning, work inside the trunk, a living brace, steel bindings and a reinforced concrete pylon, partly to stop the whole thing coming down on the chapel it has stood beside since the funeral. The finished tree was formally unveiled in May 2023.",
+      "how_to_recognise": "You can recognise it by the steel bindings and the concrete pylon holding up its two remaining limbs, above a trunk 5.33 metres round. It stands in the Old Cemetery, opposite the Chapel of the Dying Jesus."
+    }
+  ]
+}
