@@ -55,7 +55,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 97 inches round under a crown 60 feet across, on the Elm Street side of the plaza. It stands by the pergola, over the spot where the limousine came out from behind it on 22 November 1963."
     },
     {
       "id": "dal_002",
@@ -85,7 +86,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the biggest of the plaza's oaks, a 96 foot crown on a trunk 125 inches round. It stands on the grassy knoll, the slope on the north side of Elm Street, below the picket fence at the top."
     },
     {
       "id": "dal_003",
@@ -145,7 +147,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 47 inches through and roughly twelve feet round, under a crown 65 feet across. It stands beside the spring in the Big Spring Preserve, a walk in from the Texas Horse Park entrance."
     },
     {
       "id": "dal_005",
@@ -178,7 +181,8 @@
         "note": "right species, 83 m from an approximate pin in Reverchon Park, but the park holds many oaks and nothing in the observation names the Centennial Tree. Also bare and flared. Held rather than attached",
         "width": 768,
         "height": 1024
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, roughly sixteen feet round, on a bur oak about 70 feet tall. It stands in Reverchon Park, on the slope running down off Maple Avenue near the Katy Trail."
     },
     {
       "id": "dal_006",
@@ -208,7 +212,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the designation plaque, put up in 2023, and by the three major limbs it has lost. It stands at the Beckley Avenue end of the Commerce Street bridge, on the south side of the junction."
     },
     {
       "id": "dal_007",
@@ -248,7 +253,7 @@
       "age_estimate": "roughly 150 years, disputed",
       "age_min": 125,
       "age_max": 190,
-      "girth_cm": 472,
+      "girth_cm": 305,
       "location": {
         "address": "1900 E. 8th Street, Dallas, TX 75203 (Moore Park), on the south bank of Cedar Creek near its confluence with the Trinity River",
         "latitude": 32.7484,
@@ -277,7 +282,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise the grove by its scale, sixteen or so old trees 70 to 80 feet tall with crowns over 100 feet, mostly pecans with a bur oak and a bois d'arc among them. It stands on the south bank of Cedar Creek, in from East 8th Street.",
+      "verify_notes": "2026-09-08: girth_cm was 472, the TOP of the source's range ('somewhere between ten and fifteen and a half feet round'), which made the tree look bigger in the data than the source supports and ranked it that way on /collections/thickest-trees. Set to the lower bound, 305 cm, on the same principle the oldest collection uses: rank on what has been shown, never on the flattering end."
     }
   ]
 }

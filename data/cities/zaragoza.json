@@ -63,7 +63,10 @@
       },
       "curation_status": "ai_generated",
       "notes": "ALIVE, confirmed December 2025 by the national Arbol del Ano 2026 result and the accompanying press. Catalogued as Arbol Singular Urbano de Zaragoza in 2019. Current figures 15 m tall and 4.05 m girth at 1.30 m, published with the 2025 candidacy, date of measurement not stated. THE CRITICAL DISTINCTION: Parque Bruil holds two registered hackberries and this is the surviving one. It is NOT ficha 54 of the 2006 catalogue. Ficha 54 is the twin, which dried out, was carved into a sculpture of Aragonese fauna by Jose Llorente in December 2017 and was felled in July 2022 after insect rot; the identification is certain because the city's 2017 announcement quotes ficha 54's exact measurements, 13 m tall and 16.30 m crown. PIN IS APPROXIMATE AND NEEDS WORK: no source anywhere gives the living tree's position. The coordinate used here is ficha 54's, datum-corrected, because the 2006 book says the second hackberry of similar size stands close to it at the back of the park near the andador Albericio Conchan. OSM has 9 unnamed tree nodes in the park and Commons has no interior imagery. The tree is fenced, which is the one thing that identifies it on the ground. Age is genuinely unrecorded; 'seguramente arbol centenario' is the only public claim and the 150 year figure is inference from the Bruil gardens being laid out after 1842.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the fence around its base, put there in 2017 to keep feet off its roots, and by a trunk just over four metres round on a tree fifteen metres tall. It stands in Parque Bruil, off the Calle Asalto.",
+      "girth_cm": 400,
+      "height_m": 15.0
     },
     {
       "id": "zar_002",
@@ -95,7 +98,10 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED ON VITALITY. Confirmed alive and locally prominent in February 2012, when a neighbourhood campaign and public gathering were organised around it after park remodelling damaged its roots. No source found later than 2012. Condition was 'bueno' in the 2004 catalogue. Ficha 6, girth 2.40 m at 1.30 m, 2.60 m at base, 14 m tall, owner Ayuntamiento de Zaragoza per the Ordenanza's Anejo III. Age is not recorded anywhere; local sources say only 'centenaria'. The 150 to 180 year range is inference from the Bruil gardens being laid out after 1842 and is stated as inference in the story. Coordinate is the 2006 book's ED50 UTM, datum-corrected, so approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the leaves, small and dark and furred pale underneath, evergreen all year, on a trunk two metres forty round. It stands in Parque Bruil; the park's hackberry is wider and a metre taller.",
+      "girth_cm": 240,
+      "height_m": 14.0
     },
     {
       "id": "zar_003",
@@ -125,7 +131,8 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED ON VITALITY AND ON SOURCES. Ficha 34: girth 2.80 m at 1.30 m, 3.60 m at base, 17 m tall, condition 'regular' in 2005 with large pruning stubs, owner Ayuntamiento de Zaragoza. No source later than 2005. Both listed sources are the same municipal catalogue, the 2006 book and its 2013 legal annex, so this tree has one source and not two. It is included ahead of the register's other 'regular' trees because London plane is long-lived and tolerant and a mediocre rating twenty years ago is far less alarming for this species than for the poplars and the black locust, which were dropped to leads for exactly that reason. No age is recorded and none is claimed here. The wall opposite and the 1809 breach are well documented independently, but they are context and not evidence about the tree. Coordinate is datum-corrected from the book's ED50 UTM.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the big pruning stubs where structural branches were taken off, and by the bark shedding in plates. It stands on the Calle Asalto pavement, opposite the surviving stretch of the medieval wall."
     },
     {
       "id": "zar_004",
@@ -166,7 +173,8 @@
         ],
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it as one of a pair of yews, both male, so neither ever carries the red berries. They stand in front of the Paraninfo's brick and ceramic facade, thirteen metres tall on a trunk a metre twenty round."
     },
     {
       "id": "zar_005",
@@ -204,7 +212,8 @@
         ],
         "label": "September to November: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the base, four metres ninety around at the ground and folded half hollow, on a tree only five metres tall. It stands behind the Facultad de Medicina, near the Colegio Mayor Pedro Cerbuna."
     },
     {
       "id": "zar_006",
@@ -233,7 +242,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the crown, flat and wide and almost horizontal on a short trunk, after three main branches were taken out. It stands on the Calle Aznar Molina in Tenerias, three hundred metres from the Parque Bruil trees."
     },
     {
       "id": "zar_007",
@@ -262,7 +272,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the pinnate leaves, up to a metre long, on a trunk two metres fifty-seven round and a tree fifteen metres seventy tall. It stands at the entrance to the Jardin Botanico inside the Parque Grande."
     }
   ],
   "not_ready_to_publish": "DO NOT MOVE THIS TO data/cities/ AS IT STANDS. Four trees is the floor and this file holds four, but only zar_001 has dated proof of life. The 2006 catalogue this city was built from is not a list of living trees: the arborist Ismael Sanz is quoted saying that by 2012 nearly half of it had already disappeared or was in poor condition, and two of the four trees checked on 2026-08-05 were confirmed dead, including one that had already been written into this file. What each tree still needs is in its own notes field. The cheapest way to unblock the city is the 2019 'Arbol Singular Urbano de Zaragoza' catalogue, reported as 56 trees plus 15 conjuntos, which would be the city confirming what still stands; no run has yet found that document."

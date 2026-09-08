@@ -99,7 +99,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise them by their line, the old oaks along the southern boundary of the Sterrebos, set on the original 18th-century planting. They stand nearest the gap left by the oak Storm Henk brought down in January 2024."
     },
     {
       "id": "gro_003",
@@ -129,7 +130,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the stalkless acorns and the straight trunk, and by the paving laid tight against its base. It stands beside the footpath on the north side of the Zuiderplantsoen, near the Waterloolaan."
     },
     {
       "id": "gro_004",
@@ -164,7 +166,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the fan-shaped leaves that gave it the local name eendenpootboom, duck's foot tree. It stands in the Noorderplantsoen off the Kruissingel, the oldest tree in a park of more than fifty labelled species."
     },
     {
       "id": "gro_005",
@@ -193,7 +196,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its size, the plane the rest of the estate's planting was arranged around. It stands south of the villa Groenestein in the park of the same name, a short walk along the Helperzoom."
     },
     {
       "id": "gro_006",
@@ -509,7 +513,8 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "how_to_recognise": "You can recognise the pair by their scars, one in front of the Nieuwe Kerk with a long-healed wound, the other beside the church with a woodpecker-hollowed break and a self-seeded oak at its foot. They stand on the church lawn."
     },
     {
       "id": "gro_015",
@@ -533,14 +538,15 @@
       "transport": "Groningen Centraal station, about 15 minute walk",
       "location_precision": "approximate",
       "curation_status": "ai_generated",
-      "verify_notes": "Register (netherlands-lrmb nr 1680851, n_trees: 2) records a pair of common planes in the Noorderplantsoen near Werfstraat 6. Noorderplantsoen is a former city-wall/moat site converted into an English-landscape-style public park that opened in 1880 (Rijksmonument since 1971, per Wikipedia), holding over fifty tree species along a dedicated tree trail. Register planted_band 1880-1890, consistent with the parks own 1880 opening; age estimate uses the park-opening date as the earliest plausible planting point, roughly 136-146 years as of 2026. The register entry itself gives no individual measurements or condition notes beyond situating the trees in the park. Because the register pin represents a pair rather than one named trunk, and the parks own history (not a per-tree source) supplies the corroboration, location_precision is approximate: a visitor will find the pair in this part of the park, not necessarily at the exact coordinate. Second source: English Wikipedias Noorderplantsoen article, independently confirming the parks 1880 planting, Rijksmonument status and species-rich planting scheme.",
+      "verify_notes": "Register (netherlands-lrmb nr 1680851, n_trees: 2) records a pair of common planes in the Noorderplantsoen near Werfstraat 6. Noorderplantsoen is a former city-wall/moat site converted into an English-landscape-style public park that opened in 1880 (Rijksmonument since 1971, per Wikipedia), holding over fifty tree species along a dedicated tree trail. Register planted_band 1880-1890, consistent with the parks own 1880 opening; age estimate uses the park-opening date as the earliest plausible planting point, roughly 136-146 years as of 2026. The register entry itself gives no individual measurements or condition notes beyond situating the trees in the park. Because the register pin represents a pair rather than one named trunk, and the parks own history (not a per-tree source) supplies the corroboration, location_precision is approximate: a visitor will find the pair in this part of the park, not necessarily at the exact coordinate. Second source: English Wikipedias Noorderplantsoen article, independently confirming the parks 1880 planting, Rijksmonument status and species-rich planting scheme. 2026-09-08: the first recognition line put these planes on the park's WESTERN side, which no source says. The national register places them 'ter hoogte van Werfstraat 6' and the mespilifolia oak at the 'oostrand bij Werfstraat 10', 110 metres apart on the same side. Rewritten to what the register carries.",
       "story": "Noorderplantsoen used to be a fortress moat. The park was laid out in 1880 over Groningen's demolished seventeenth century city walls, in the informal English landscape style cities across the Netherlands favoured once their old defences stopped being useful, and it has carried national monument protection since 1971. Along its paths grow more than fifty labelled tree species, among them this pair of London planes, planted close to the park's own opening date and now well past a century old.\n\nThe Dutch national monumental tree register records the pair without individual measurements, situating them near Werfstraat on the park's western side. London plane, a hybrid bred in seventeenth century Europe from American sycamore and Oriental plane, tolerates compacted city soil and hard pruning better than almost any other large tree, which is why it anchors so much of Europe's oldest parkland alongside species chosen purely for looks.\n\nBecause the register treats this as one paired entry rather than two individually pinned trunks, the coordinates mark the general spot rather than one exact tree; the pair stands close enough together to find both without wandering. Free, public parkland, about a fifteen minute walk from Centraal station.",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise them as a pair of planes standing close together, planted about when the park opened in 1880. They stand at the Werfstraat side of the Noorderplantsoen, about a hundred metres south of the mespilifolia oak."
     },
     {
       "id": "gro_016",
@@ -571,7 +577,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the leaves, narrower and more textured than an ordinary sessile oak's, and by the drooping tips of its broad loose crown. It stands on the east edge of the Noorderplantsoen, in sight of Werfstraat."
     },
     {
       "id": "gro_017",
