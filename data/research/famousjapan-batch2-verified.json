@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ktk_001",
+    "name": "The Great Ginkgo of Shingu Kumano Shrine",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 600 years (city figure); shrine tradition says over 800",
+    "age_min": 600,
+    "age_max": 800,
+    "girth_cm": 810,
+    "location": {
+      "address": "Shingu Kumano Jinja, Keitoku-machi Shingu Kumano 2258, Kitakata City, Fukushima Prefecture",
+      "latitude": 37.618902,
+      "longitude": 139.830697,
+      "neighbourhood": "Kitakata"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%AE%AE%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE",
+      "https://www.pref.fukushima.lg.jp/w4/fgr/perfectview/p17/"
+    ],
+    "access": "Free, on open shrine grounds in front of the Nagatoko (an Important Cultural Property worship hall). No gate or fee found.",
+    "transport": "Kitakata Station (JR Ban'etsu West Line) is about 5km away; the town also runs an on-demand shared-taxi service ('noruuto') on weekdays. Roughly 10 minutes by car from Shiokawa IC.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources: ja.wikipedia's shrine article and the Fukushima prefecture tourism page. Measurements agree closely: wikipedia/aggregate sources give height 30m, girth 8.1m (810cm), age 'about 600 years', designated a Kitakata City natural monument. The prefecture page instead gives 'said to be over 800 years old' without measurements, calling it the shrine's sacred tree (goshinboku) -- record both ages, do not silently pick one. Stands directly in front of the Nagatoko, a nationally Important Cultural Property open-sided worship hall with 44 pillars; the ginkgo and the hall are the shrine's signature pairing. Ranked (per one tourism source) 11th nationwide and 2nd in Fukushima Prefecture for autumn-foliage popularity; illuminated at night in mid-to-late November when a yellow leaf-carpet forms on the ground. No recent (last few years) dated sighting found beyond current tourism/event pages describing ongoing annual illumination -- evidence of being alive is the standard 'actively promoted, currently signposted' kind rather than a dated 2024/2025 visit report, hence flagged rather than unflagged.\n\nCONTAINER: No published city or place sits within day-trip range. Kitakata and Aizuwakamatsu (ktk_001 and azw_001 in this batch) are about 13km apart, connected directly by the JR Ban'etsu West Line (roughly 20-25 minutes). Both trees are individually strong (a national natural monument and a top-10-nationally-ranked foliage spot), so each could plausibly open as its own single-famous-tree place under the 2026-08-31 exception, OR the two could eventually anchor a shared 'Aizu' page once more Aizuwakamatsu/Kitakata-area trees are found (both sit below the four-tree floor alone). Leaving the container call to the assembling session."
+  },
+  {
+    "id": "azw_001",
+    "name": "The Great Zelkova of Takase",
+    "species": "Japanese Zelkova (Zelkova serrata)",
+    "age_estimate": "roughly 500 years (already a large tree before 1600)",
+    "age_min": 450,
+    "age_max": 550,
+    "girth_cm": 1045,
+    "location": {
+      "address": "Takase, Kanayama-machi, Kozashi-cho, Aizuwakamatsu City, Fukushima Prefecture (site of the abandoned Kanayama Castle)",
+      "latitude": 37.513778,
+      "longitude": 139.895917,
+      "neighbourhood": "Kanayama, Aizuwakamatsu"
+    },
+    "verified_sources": [
+      "https://www.city.aizuwakamatsu.fukushima.jp/docs/2012110900031/",
+      "https://journeytotrees.com/2022/04/28/kyoju186/"
+    ],
+    "access": "Free, publicly accessible with a wooden boardwalk and handrail built around it so visitors cannot approach the trunk directly (protective measure, not a barrier to viewing). Reached via a narrow farm road off National Route 118; no dedicated car park.",
+    "transport": "No nearby train station; car access via National Route 118 (Wakamatsu West Bypass) then local farm roads. Aizuwakamatsu Station is roughly 6km away.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources: Aizuwakamatsu City's own cultural-heritage page and a specialist giant-tree blog (journeytotrees.com), which agree closely: height 24.64m, trunk girth at breast height 10.45m (base circumference given as 12.55m by the city page), estimated age about 500 years. Designated a national natural monument on 27 January 1941. Ranked among the 6th or 7th largest zelkova trees in Japan by trunk girth (source's own claim). History: stands on the site where Uesugi Kagekatsu began building Kanayama Castle in 1600 (Keicho 5); the tree already predated the castle attempt. Condition: repeated large-branch fractures and trunk cracking noted by both sources, but described as still standing with a dignified, vigorous form; most recent dated visit found was September 2018 (blog), showing active fungal-damage prevention treatment on the wounds -- flagged for a somewhat dated direct sighting, though the city's own current heritage page still lists it as extant.\n\nCONTAINER: see ktk_001's note -- no published city within reach; Kitakata sits ~13km away via direct JR Ban'etsu West Line service (~20-25 min). Recommend the assembling session decide between a shared 'Aizu' place or two standalone single-famous-tree pages; this tree's national-monument status and top-6/7-in-Japan girth ranking make the single-tree destination case strong on its own."
+  },
+  {
+    "id": "oyd_001",
+    "name": "The Zelkova of Tsutta",
+    "species": "Japanese Zelkova (Zelkova serrata)",
+    "age_estimate": "roughly 700 years, by town record",
+    "age_min": 600,
+    "age_max": 800,
+    "girth_cm": 800,
+    "location": {
+      "address": "Tsuchida, Oyodo Town, Yoshino District, Nara Prefecture, on the north bank of the Yoshino River, beside Shoichii Sumiyoshi Inari Daimyojin shrine",
+      "latitude": 34.386152,
+      "longitude": 135.800913,
+      "neighbourhood": "Tsuchida, Oyodo"
+    },
+    "verified_sources": [
+      "https://narayado.info/nara/tsutta-keyaki.html",
+      "http://www.town.oyodo.lg.jp/contents_detail.php?frmId=274"
+    ],
+    "access": "Free, on open shrine/riverside ground beside the Shoichii Sumiyoshi Inari Daimyojin shrine; no gate or fee found. Right next to the railway and Route 169.",
+    "transport": "About a 5-minute walk from Koshibe Station on the Kintetsu Yoshino Line.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree closely: a Nara tourism/inn blog (narayado.info) and Oyodo Town's own official page (town.oyodo.lg.jp), both giving height ~15m, chest-height girth ~8m (800cm), estimated age 700 years, and a former east-west branch spread of about 40m before typhoon damage. Designated Oyodo Town's first town natural monument on 10 February 2003. Condition: of four original main trunks, three fell in typhoons (the town page specifically names 2002/Heisei 14); one trunk remains, still showing vigorous green foliage in summer per both sources, most recently visited/photographed June 2023 (narayado.info) -- reasonably current alive evidence.\n\nHistory/fame case: local tradition attributes its planting to Emperor Jinmu or Empress Jingu (unverifiable legend, recorded as legend not fact). More concretely and independently documented: every year on 26 July, Unebiyamaguchigu Shrine (in Kashihara City) sends priests to draw water for its summer festival (28 July) from the riverbank directly below this tree, a mizutori shinji ritual with a documented record going back to Horeki 9 (1759) per the town's own page. That continuous, dated ritual is stronger evidence for a real destination case than the imperial legend.\n\nCONTAINER: no published city or place within day-trip range (Nara city centre is roughly 33km north, too far). Recommend standalone single-famous-tree place given the annual shrine ritual with a 260+ year documented record and 5-minute walk from a train station; note this is a different part of Nara Prefecture from the already-HELD Amidaji no Keyaki (Sakurai City, ~30km east)."
+  },
+  {
+    "id": "iid_001",
+    "name": "The Yasutomi Cherry",
+    "species": "Edo Higan Cherry (Prunus itosakura, syn. Prunus pendula f. ascendens)",
+    "age_estimate": "over 450 years",
+    "age_min": 450,
+    "age_max": 500,
+    "girth_cm": 540,
+    "location": {
+      "address": "Iida City Art Museum grounds, 2-655-7 Otemachi, Iida City, Nagano Prefecture",
+      "latitude": 35.512256,
+      "longitude": 137.830536,
+      "neighbourhood": "Otemachi, Iida"
+    },
+    "verified_sources": [
+      "https://www.city.iida.lg.jp/site/bunkazai/yasutomizakura.html",
+      "https://www.iida-museum.org/?s=%E5%AE%89%E5%AF%8C%E6%A1%9C"
+    ],
+    "access": "Free; stands in the grounds of the Iida City Art Museum, publicly open.",
+    "transport": "16-minute walk from JR Iida Station, or 3-minute walk from the 'Prefectural Joint Government Building' stop on the Shinnan Kotsu city loop bus.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources: Iida City's official cultural-property page and the Iida City Art Museum's own site, agreeing on height ~20m, chest-height girth ~5.4m (540cm), age 450+ years. Officially named 'Osahime no Edohigan' (長姫のエドヒガン); commonly called Yasutomi-zakura because it stands on the former residence grounds of the Yasutomi family, chief retainers (karo) to the Hori clan, lords of Iida domain. Designated a Nagano Prefecture Natural Monument on 22 May 1967. Notable form: the trunk forks into five major limbs about 3m up, arranged like a broom, and carries its ~20m height with no support props, which both sources call remarkable. Blooms slightly after the spring equinox in Iida's climate (typically very late March/early April); the city runs a public bloom-tracking blog ('Sakurasaku') and night illumination during flowering, which is current, active evidence the tree is alive and maintained.\n\nCONTAINER: no published city nearby; Iida is not on the city list at all. Best_time candidate for the writer: months [3,4], kind 'flowers', label along the lines of 'late March into April, when the five-limbed crown blooms before most of the city's other cherries'. Recommend standalone single-famous-tree place: a named, prefecturally protected, actively promoted signature cherry with a strong visual/seasonal destination case (broom-shaped five-trunk crown, no support despite 20m height, night illumination) clears the single-tree bar comfortably."
+  }
+]

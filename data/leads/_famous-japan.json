@@ -699,7 +699,8 @@
         "https://commons.wikimedia.org/wiki/File:Shrine_Shingu-Kumano-jinja_3.JPG",
         "https://commons.wikimedia.org/wiki/File:Unnamed2_-_panoramio_(5703).jpg"
       ],
-      "status": "lead"
+      "status": "verified",
+      "verify_2026-09-08": "Verified 2026-09-08 (famousjapan-batch2 verify pass, candidate 1 of 5): real, alive, delivered to data/research/famousjapan-batch2-verified.json as ktk_001, 'The Great Ginkgo of Shingu Kumano Shrine'. Kitakata City, Fukushima Prefecture, at the Nagatoko worship hall of Shingu Kumano Jinja. Height 30m, girth 8.1m, age 'about 600 years' per city designation, though shrine tradition claims over 800 (both recorded, not reconciled). Kitakata City natural monument. Two sources: ja.wikipedia and a Fukushima prefecture tourism page. No published city within reach; see verify_notes on the delivered record for the container question (possible pairing with azw_001, Takase, ~13km away by direct train, or standalone)."
     },
     {
       "name": "Shinmachi no O Sotetsu",
@@ -750,7 +751,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Takese-no-Keyaki.jpg"
       ],
-      "status": "lead"
+      "status": "verified",
+      "verify_2026-09-08": "Verified 2026-09-08 (famousjapan-batch2 verify pass, candidate 2 of 5): real, alive, delivered to data/research/famousjapan-batch2-verified.json as azw_001, 'The Great Zelkova of Takase'. Aizuwakamatsu City, Fukushima Prefecture, at the site of the abandoned Kanayama Castle. Height 24.64m, girth 10.45m (base 12.55m), age ~500 years, national natural monument since 1941, said to rank 6th-7th largest zelkova in Japan by girth. Two sources: Aizuwakamatsu City's own heritage page and journeytotrees.com. Most recent dated sighting found was 2018 (structural stress noted but alive and treated), so flagged rather than unflagged. No published city within reach; see delivered record for the container question."
     },
     {
       "name": "Takeo no Ōkusu",
@@ -789,7 +791,8 @@
         "https://commons.wikimedia.org/wiki/File:Tate-no-Omayumi_(8112790876).jpg",
         "https://commons.wikimedia.org/wiki/File:%E8%88%98%E3%81%AE%E5%A4%A7%E3%83%9E%E3%83%A6%E3%83%9F_-_panoramio.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "verify_2026-09-08": "Held 2026-09-08 (famousjapan-batch2 verify pass, candidate 3 of 5). Real and alive: 館の大マユミ 'Tate no Omayumi', a Mayumi/spindle tree (Euonymus hamiltonianus, aka E. sieboldianus), Konan-cho, Tate, Nakayachi 1459, Koriyama City, Fukushima Prefecture, beside Ofuda Shrine on a road curve with no dedicated parking. Municipal natural monument, age 300+ years, girth ~3m (trunk diameter 100cm per a Commons Flickr-reviewed photo description citing local tourism info), height reported as 6m (Commons/tourism info) or 'approximately 10m, possibly lower' (journeytotrees.com blog) -- sources disagree on height, both agree on girth and age. Last documented visit June 2024 (journeytotrees.com), actively flowering and attracting insects despite visible trunk ageing. Two independent sources: journeytotrees.com and the Commons photo description citing local tourism info; could not find an official Koriyama City page for it (the city's old-town cultural-property list does not include it; Tate/Konan is a separate, merged area of the city). HELD rather than shipped: mayumi is normally a shrub-scale species and even as an exceptional giant specimen (the blog notes only one other giant mayumi is registered nationally, in Gunma) this is a modest, roadside tree with no parking and no wider fame signal (no festival, no record-holder claim beyond 'rare for its species'), so it does not clearly clear the single-tree-destination bar. Koriyama itself is not on the city queue/list at all, so there is no container to fold it into either. Keep as a lead; a future pass with stronger fame evidence (or a Koriyama city opening) could revisit."
     },
     {
       "name": "Tatsuno no Katashibo Chikurin",
@@ -836,9 +839,10 @@
         "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD_2012.2.20_-_panoramio.jpg",
         "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD_A_zelkova_tree_in_Tsutta_2011.11.12_-_panoramio.jpg"
       ],
-      "status": "lead",
-      "species": "Zelkova (Zelkova sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "verified",
+      "species": "Zelkova (Zelkova serrata)",
+      "species_basis": "confirmed by narayado.info and Oyodo Town official page",
+      "verify_2026-09-08": "Verified 2026-09-08 (famousjapan-batch2 verify pass, candidate 4 of 5): real, alive, delivered to data/research/famousjapan-batch2-verified.json as oyd_001, 'The Zelkova of Tsutta'. Species confirmed as Zelkova serrata (was genus-only in this file before). Tsuchida, Oyodo Town, Nara Prefecture, on the Yoshino River bank beside Shoichii Sumiyoshi Inari Daimyojin shrine, 5 min walk from Koshibe Station (Kintetsu Yoshino Line). Height ~15m, girth ~8m, age 'roughly 700 years' per Oyodo Town's own designation record (its first town natural monument, 2003). One trunk remains of four after typhoon damage, still green and healthy as of a June 2023 sighting. Notable continuous annual water-drawing ritual (mizutori shinji) for Unebiyamaguchigu Shrine's summer festival, documented back to 1759. Two sources: narayado.info and Oyodo Town's own official page. No published city within reach (Nara city ~33km away); recommended as a standalone single-famous-tree place."
     },
     {
       "name": "Ushijima no Fuji",
@@ -899,9 +903,10 @@
         "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(2).jpg",
         "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(3).jpg"
       ],
-      "status": "lead",
-      "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "verified",
+      "species": "Edo Higan Cherry (Prunus itosakura)",
+      "species_basis": "confirmed by Iida City official page and Iida City Art Museum",
+      "verify_2026-09-08": "Verified 2026-09-08 (famousjapan-batch2 verify pass, candidate 5 of 5): real, alive, delivered to data/research/famousjapan-batch2-verified.json as iid_001, 'The Yasutomi Cherry'. Species confirmed as Edo Higan Cherry, Prunus itosakura (was genus-only in this file before). Officially 'Osahime no Edohigan', in the grounds of Iida City Art Museum, Nagano Prefecture, 16 min walk from JR Iida Station. Height ~20m, girth ~5.4m, age 450+ years, Nagano Prefecture natural monument since 1967. Five-limbed broom-shaped crown with no support props despite the height; blooms slightly after the spring equinox (late March/early April); the city runs a public bloom-tracking blog and night illumination in season, current and active evidence of life. Two sources: Iida City's own heritage page and the Iida City Art Museum's own site. No published city nearby (Iida is not on the city list at all); recommended as a standalone single-famous-tree place."
     },
     {
       "name": "Yougou no Matsu",
