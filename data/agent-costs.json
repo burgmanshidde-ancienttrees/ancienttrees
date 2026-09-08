@@ -5911,6 +5911,15 @@
         "note": "40 lines, worst-first by impressions from recognise.py --stuck",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "recognition lines: Haarlem, Warsaw, Tilburg, Bucaco",
+        "kind": "write",
+        "tokens": 35000,
+        "trees": 19,
+        "note": "19 lines, worst-first by impressions from recognise.py --stuck",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
