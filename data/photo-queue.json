@@ -7558,66 +7558,48 @@
   "nra_003": {
    "city": "Nara",
    "name": "The Five-Colour Camellia of Byakugo-ji",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nra_004": {
    "city": "Nara",
    "name": "The Soapberry with a Bamboo Through It",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nra_006": {
    "city": "Nara",
    "name": "The Great Nagi of Kasuga Taisha",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nra_008": {
    "city": "Nara",
    "name": "The Chinaberry of the East Pagoda Ruins",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ginkgo tree in the temple (52541975425).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ginkgo_tree_in_the_temple_%2852541975425%29.jpg/960px-Ginkgo_tree_in_the_temple_%2852541975425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ginkgo_tree_in_the_temple_%2852541975425%29.jpg/960px-Ginkgo_tree_in_the_temple_%2852541975425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_tree_in_the_temple_(52541975425).jpg",
      "licence": "CC BY 2.0",
-     "author": "Raita Futo from Tokyo, Japan"
+     "author": "Raita Futo from Tokyo, Japan",
+     "lat": 34.688052,
+     "lng": 135.844344,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Ginkgo biloba in Japan in autumn Category:Japan photographs taken on 2022-11-22 Category:November 2022 in Nara Category:Tamukeyama-hachimangu"
     }
    ]
   },
   "nra_009": {
    "city": "Nara",
    "name": "The Thickest Black Pine of Nara Park",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": [
-    {
-     "title": "File:Interior of the thickest wall of Cathair Chomain - geograph.org.uk - 950399.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Interior_of_the_thickest_wall_of_Cathair_Chomain_-_geograph.org.uk_-_950399.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Interior_of_the_thickest_wall_of_Cathair_Chomain_-_geograph.org.uk_-_950399.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "C Michael Hogan"
-    },
-    {
-     "title": "File:Kaive oak - thickest tree in Eastern Europe - panoramio.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kaive_oak_-_thickest_tree_in_Eastern_Europe_-_panoramio.jpg/960px-Kaive_oak_-_thickest_tree_in_Eastern_Europe_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Kaive_oak_-_thickest_tree_in_Eastern_Europe_-_panoramio.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Laima Gūtmane (simka…"
-    },
-    {
-     "title": "File:NASA Finds Thickest Parts of Arctic Ice Cap Melting Faster (6941907057).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/NASA_Finds_Thickest_Parts_of_Arctic_Ice_Cap_Melting_Faster_%286941907057%29.jpg/960px-NASA_Finds_Thickest_Parts_of_Arctic_Ice_Cap_Melting_Faster_%286941907057%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:NASA_Finds_Thickest_Parts_of_Arctic_Ice_Cap_Melting_Faster_(6941907057).jpg",
-     "licence": "Public domain",
-     "author": "NASA Goddard Space Flight Center from Greenbelt, MD, USA"
-    },
     {
      "title": "iNat obs 263224952 (Pinus thunbergii)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/472841777/medium.jpeg",
@@ -7641,22 +7623,22 @@
   "nyc_002": {
    "city": "New York",
    "name": "The Black Tupelo of the Ramble",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nyc_006": {
    "city": "New York",
    "name": "The Manchurian Linden of Kissena Park",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": []
   },
   "nyc_007": {
    "city": "New York",
    "name": "The Clove Lakes Colossus",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Apennine Colossus panorama (81988p).jpg",
@@ -7684,53 +7666,14 @@
      "author": "Bernard Gagnon",
      "judged": "reject",
      "verdict": "the Colossus of Barletta, a bronze statue in Italy"
-    },
-    {
-     "title": "File:Colossus signage.JPG",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Colossus_signage.JPG/960px-Colossus_signage.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Colossus_signage.JPG",
-     "licence": "CC BY 3.0",
-     "author": "Alton"
-    },
-    {
-     "title": "File:Colossus tp.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Colossus_tp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Colossus_tp.jpg",
-     "licence": "Public domain",
-     "author": "Sebastianoutfin at English Wikipedia"
-    },
-    {
-     "title": "File:Montreal Comiccon 2015 - Colossus (19267529469).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Montreal_Comiccon_2015_-_Colossus_%2819267529469%29.jpg/960px-Montreal_Comiccon_2015_-_Colossus_%2819267529469%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Montreal_Comiccon_2015_-_Colossus_(19267529469).jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Pikawil from Laval, Canada"
-    },
-    {
-     "title": "File:The loops of Colossus - geograph.org.uk - 1293587.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f4/The_loops_of_Colossus_-_geograph.org.uk_-_1293587.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:The_loops_of_Colossus_-_geograph.org.uk_-_1293587.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Sebastian Ballard"
-    },
-    {
-     "title": "File:Thorpe Colossus.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Thorpe_Colossus.jpg/960px-Thorpe_Colossus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Thorpe_Colossus.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Stefan Scheer"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "nyc_008": {
    "city": "New York",
    "name": "The Yew of Hero Park",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-08",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Marching Up Bay Street (195053483).jpeg",
@@ -67317,6 +67260,838 @@
      "cats": "Category:Bartholomeusbrug, Utrecht Category:CC-BY-SA-4.0 Category:Self-published work",
      "judged": "reject",
      "verdict": "Looked at. A street and bridge scene; no individual tree is the subject."
+    }
+   ]
+  },
+  "azw_001": {
+   "city": "Aizuwakamatsu",
+   "name": "The Great Zelkova of Takase",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "arn_039": {
+   "city": "Arnhem",
+   "name": "The Yew of Brantsenpark",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ass_010": {
+   "city": "Assen",
+   "name": "The Thick Oak of Beilen",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bcl_001": {
+   "city": "Borculo",
+   "name": "The Elm of Heure",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dev_011": {
+   "city": "Deventer",
+   "name": "The Tree of Heaven of Lunetteplein",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dev_012": {
+   "city": "Deventer",
+   "name": "The Marshaven Poplar",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "eke_001": {
+   "city": "Ekerö",
+   "name": "Ekebyhovseken",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ekebyhovseken, 2017.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Ekebyhovseken%2C_2017.jpg/960px-Ekebyhovseken%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ekebyhovseken,_2017.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Holger.Ellgaard",
+     "lat": 59.279735,
+     "lng": 17.820145,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ekebyhovseken Category:Files with coordinates missing SDC location of creation Category:Photographs by Holger Ellgaard Category:Self-published work"
+    },
+    {
+     "title": "File:Ekebyhovseken dec 2011b.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Ekebyhovseken_dec_2011b.jpg/960px-Ekebyhovseken_dec_2011b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ekebyhovseken_dec_2011b.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Holger.Ellgaard",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Ekebyhovseken Category:Natural monument signs in Sweden Category:Photographs by Holger Ellgaard Category:Self-published work Category:Taken with Nikon Coolpix S51"
+    },
+    {
+     "title": "File:Ekebyhovseken dec 2011f.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Ekebyhovseken_dec_2011f.jpg/960px-Ekebyhovseken_dec_2011f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ekebyhovseken_dec_2011f.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Holger.Ellgaard",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Ekebyhovseken Category:Natural monument signs in Sweden Category:Photographs by Holger Ellgaard Category:Self-published work Category:Taken with Nikon Coolpix S51"
+    }
+   ]
+  },
+  "emm_008": {
+   "city": "Emmen",
+   "name": "The Variegated Maple of Coevorden Castle",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Coevorden nieuwe krim Slagharen opslagloodsen.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Coevorden_nieuwe_krim_Slagharen_opslagloodsen.jpg/960px-Coevorden_nieuwe_krim_Slagharen_opslagloodsen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Coevorden_nieuwe_krim_Slagharen_opslagloodsen.jpg",
+     "licence": "CC BY 4.0",
+     "author": "JakobHosp",
+     "lat": 52.65680773,
+     "lng": 6.69040354,
+     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android"
+    },
+    {
+     "title": "File:Coevorden nieuwe krim Slagharen opslagloodsen (15709).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Coevorden_nieuwe_krim_Slagharen_opslagloodsen_%2815709%29.jpg/960px-Coevorden_nieuwe_krim_Slagharen_opslagloodsen_%2815709%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Coevorden_nieuwe_krim_Slagharen_opslagloodsen_(15709).jpg",
+     "licence": "CC BY 4.0",
+     "author": "JakobHosp",
+     "lat": 52.66042061,
+     "lng": 6.7059678,
+     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android"
+    },
+    {
+     "title": "File:Coevorden nieuwe krim Slagharen opslagloodsen (87025).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Coevorden_nieuwe_krim_Slagharen_opslagloodsen_%2887025%29.jpg/960px-Coevorden_nieuwe_krim_Slagharen_opslagloodsen_%2887025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Coevorden_nieuwe_krim_Slagharen_opslagloodsen_(87025).jpg",
+     "licence": "CC BY 4.0",
+     "author": "JakobHosp",
+     "lat": 52.65800702,
+     "lng": 6.66966696,
+     "cats": "Category:2025 in Coevorden Category:Buildings in Coevorden Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Netherlands photographs taken on 2025-03-29 Category:Self-published work Category:Uploaded with Mobile/Android"
+    }
+   ]
+  },
+  "ghn_001": {
+   "city": "Giethoorn",
+   "name": "The Ash of Dwarsgracht",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:2014055 Oude Kerkweg tussen Dwarsgracht en Giethoorn.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/2014055_Oude_Kerkweg_tussen_Dwarsgracht_en_Giethoorn.jpg/960px-2014055_Oude_Kerkweg_tussen_Dwarsgracht_en_Giethoorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2014055_Oude_Kerkweg_tussen_Dwarsgracht_en_Giethoorn.jpg",
+     "licence": "CC0",
+     "author": "Gouwenaar",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Dwarsgracht Category:Self-published work"
+    },
+    {
+     "title": "File:Dwarsgracht - 2016 - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Dwarsgracht_-_2016_-_panoramio.jpg/960px-Dwarsgracht_-_2016_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dwarsgracht_-_2016_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "StevenL",
+     "lat": 52.720545,
+     "lng": 6.039138,
+     "cats": "Category:CC-BY-SA-3.0 Category:Dwarsgracht Category:Netherlands photographs taken on 2016-10-07 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Taken with Samsung NX2000"
+    },
+    {
+     "title": "File:Dwarsgracht - Unknown - 20522310 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dwarsgracht_-_Unknown_-_20522310_-_RCE.jpg/960px-Dwarsgracht_-_Unknown_-_20522310_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dwarsgracht_-_Unknown_-_20522310_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hans van Beelen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Dwarsgracht Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images from the Rijksdienst voor het Cultureel Erfgoed (lowres) Category:Netherlands photographs taken on 1947-06-01 Category:Photographs by J.A. van Beelen Category:Possible Rijksmonumenten in Dwarsgracht"
+    },
+    {
+     "title": "File:Dwarsgracht 33.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Dwarsgracht_33.jpg/960px-Dwarsgracht_33.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dwarsgracht_33.jpg",
+     "licence": "Public domain",
+     "author": "Gouwenaar",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Dwarsgracht 33, Dwarsgracht Category:Netherlands photographs taken on 2010-05-19 Category:PD-self Category:Rijksmonumenten with known IDs Category:Self-published work"
+    }
+   ]
+  },
+  "gro_021": {
+   "city": "Groningen",
+   "name": "The Oak of the Hunenborg",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hdw_001": {
+   "city": "Harderwijk",
+   "name": "The Linnaeus Ginkgo of Harderwijk",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Harderwijk - Academiestraat - Linnaeustorentje.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Harderwijk_-_Academiestraat_-_Linnaeustorentje.jpg/960px-Harderwijk_-_Academiestraat_-_Linnaeustorentje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_-_Academiestraat_-_Linnaeustorentje.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.348268,
+     "lng": 5.618352,
+     "cats": "Category:Academiestraat (Harderwijk) Category:CC-BY-SA-4.0 Category:Hortuspark (Harderwijk) Category:Kruidentuin De Hortus (Harderwijk) Category:Linnaeustoren (Harderwijk) Category:Self-published work Category:Snow in Harderwijk Category:Snow in the Netherlands in 2021"
+    },
+    {
+     "title": "File:Harderwijk - Friesegracht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Harderwijk_-_Friesegracht.jpg/960px-Harderwijk_-_Friesegracht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_-_Friesegracht.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.34633,
+     "lng": 5.617437,
+     "cats": "Category:2021 in Harderwijk Category:CC-BY-SA-4.0 Category:Canals in Harderwijk Category:Netherlands photographs taken on 2021-02-09 Category:Self-published work Category:Snow in Harderwijk Category:Snow in the Netherlands in 2021"
+    },
+    {
+     "title": "File:Harderwijk - Hortuspark 07.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Harderwijk_-_Hortuspark_07.jpg/960px-Harderwijk_-_Hortuspark_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_-_Hortuspark_07.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.349352,
+     "lng": 5.618976,
+     "cats": "Category:CC-BY-SA-4.0 Category:Hortuspark (Harderwijk) Category:Self-published work Category:Snow in Harderwijk Category:Snow in the Netherlands in 2021 Category:Stadhuis Harderwijk"
+    },
+    {
+     "title": "File:Harderwijk - Kloosterplein 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Harderwijk_-_Kloosterplein_01.jpg/960px-Harderwijk_-_Kloosterplein_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_-_Kloosterplein_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.347757,
+     "lng": 5.617229,
+     "cats": "Category:CC-BY-SA-4.0 Category:Klooster (Harderwijk) Category:Self-published work Category:Sint Catharinakerk, Harderwijk Category:Sint Catharinaklooster (Harderwijk) Category:Snow in Harderwijk Category:Snow in the Netherlands in 2021"
+    },
+    {
+     "title": "File:Harderwijk - Kloosterplein 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Harderwijk_-_Kloosterplein_04.jpg/960px-Harderwijk_-_Kloosterplein_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_-_Kloosterplein_04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.34806,
+     "lng": 5.617918,
+     "cats": "Category:CC-BY-SA-4.0 Category:Klooster (Harderwijk) Category:Self-published work Category:Sint Catharinakerk, Harderwijk Category:Sint Catharinaklooster (Harderwijk) Category:Snow in Harderwijk Category:Snow in the Netherlands in 2021"
+    },
+    {
+     "title": "File:Harderwijk - Plantagepark 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Harderwijk_-_Plantagepark_04.jpg/960px-Harderwijk_-_Plantagepark_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_-_Plantagepark_04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.348108,
+     "lng": 5.614078,
+     "cats": "Category:CC-BY-SA-4.0 Category:Plantage (Harderwijk) Category:Self-published work Category:Snow in Harderwijk Category:Snow in the Netherlands in 2021"
+    },
+    {
+     "title": "File:Harderwijk - Smeepoortstraat - Stationslaan - Friesegracht.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Harderwijk_-_Smeepoortstraat_-_Stationslaan_-_Friesegracht.jpg/960px-Harderwijk_-_Smeepoortstraat_-_Stationslaan_-_Friesegracht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_-_Smeepoortstraat_-_Stationslaan_-_Friesegracht.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.346063,
+     "lng": 5.617128,
+     "cats": "Category:CC-BY-SA-4.0 Category:Canals in Harderwijk Category:Friesegracht (Harderwijk) Category:Self-published work Category:Smeepoort, Harderwijk Category:Smeepoortstraat (Harderwijk) Category:Snow in Harderwijk Category:Snow in the Netherlands in 2021 Category:Stationslaan (Harderwijk)"
+    },
+    {
+     "title": "File:Harderwijk muziekschool A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Harderwijk_muziekschool_A.jpg/960px-Harderwijk_muziekschool_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Harderwijk_muziekschool_A.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Wouter Hagens",
+     "lat": 52.34988889,
+     "lng": 5.61838889,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Markt 1, Harderwijk Category:Open air restaurant and café areas in the Netherlands Category:Self-published work Category:Taken with Nikon D80"
+    }
+   ]
+  },
+  "hkz_001": {
+   "city": "Heinkenszand",
+   "name": "The Weeping Beech of Heinkenszand",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Aanzicht - Heinkenszand - 20107042 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Aanzicht_-_Heinkenszand_-_20107042_-_RCE.jpg/960px-Aanzicht_-_Heinkenszand_-_20107042_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Aanzicht_-_Heinkenszand_-_20107042_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1966 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Gerard Dukker"
+    },
+    {
+     "title": "File:Gevel - Heinkenszand - 20107051 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Gevel_-_Heinkenszand_-_20107051_-_RCE.jpg/960px-Gevel_-_Heinkenszand_-_20107051_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gevel_-_Heinkenszand_-_20107051_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Gerard Dukker"
+    },
+    {
+     "title": "File:Voorgevel - Heinkenszand - 20107015 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Voorgevel_-_Heinkenszand_-_20107015_-_RCE.jpg/960px-Voorgevel_-_Heinkenszand_-_20107015_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Voorgevel_-_Heinkenszand_-_20107015_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Gerard Dukker"
+    },
+    {
+     "title": "File:Wiel - Heinkenszand - 20107056 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Wiel_-_Heinkenszand_-_20107056_-_RCE.jpg/960px-Wiel_-_Heinkenszand_-_20107056_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wiel_-_Heinkenszand_-_20107056_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nature of Borsele Category:Photographs by Gerard Dukker"
+    },
+    {
+     "title": "File:Wiel - Heinkenszand - 20107057 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Wiel_-_Heinkenszand_-_20107057_-_RCE.jpg/960px-Wiel_-_Heinkenszand_-_20107057_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wiel_-_Heinkenszand_-_20107057_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nature of Borsele Category:Photographs by Gerard Dukker"
+    }
+   ]
+  },
+  "iid_001": {
+   "city": "Iida",
+   "name": "The Yasutomi Cherry",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Iida City Museum Yasutomi Zakura ac (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Iida_City_Museum_Yasutomi_Zakura_ac_%281%29.jpg/960px-Iida_City_Museum_Yasutomi_Zakura_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(1).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Asturio Cantabrio",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Yasutomi zakura"
+    },
+    {
+     "title": "File:Iida City Museum Yasutomi Zakura ac (3).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Iida_City_Museum_Yasutomi_Zakura_ac_%283%29.jpg/960px-Iida_City_Museum_Yasutomi_Zakura_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(3).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Asturio Cantabrio",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Yasutomi zakura"
+    }
+   ]
+  },
+  "ktk_001": {
+   "city": "Kitakata",
+   "name": "The Great Ginkgo of Shingu Kumano Shrine",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mgs_001": {
+   "city": "Magescq",
+   "name": "The Oak of Nerthe (Chêne de Nerthe)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Chene de Nerthe-1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Chene_de_Nerthe-1.jpg/960px-Chene_de_Nerthe-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.765077,
+     "lng": -1.117633,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Chene_de_Nerthe-2.jpg/960px-Chene_de_Nerthe-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.765009,
+     "lng": -1.117244,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Chene_de_Nerthe-3.jpg/960px-Chene_de_Nerthe-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.76537,
+     "lng": -1.117089,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Chene_de_Nerthe-4.jpg/960px-Chene_de_Nerthe-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.765465,
+     "lng": -1.117071,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Chene de Nerthe-5.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Chene_de_Nerthe-5.jpg/960px-Chene_de_Nerthe-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chene_de_Nerthe-5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Blef00fr",
+     "lat": 43.76502,
+     "lng": -1.11729,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Le chêne de nerthe.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Le_ch%C3%AAne_de_nerthe.jpg/960px-Le_ch%C3%AAne_de_nerthe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Le_ch%C3%AAne_de_nerthe.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ribeiro Bruno",
+     "lat": 43.76512222,
+     "lng": -1.11741944,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Nerthe Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2022-10-04 Category:Self-published work Category:Trees Category:Uploaded with Mobile/Android"
+    }
+   ]
+  },
+  "nap_018": {
+   "city": "Naples",
+   "name": "The Cedar of Lebanon of the Principessa Jolanda Gardens",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nap_019": {
+   "city": "Naples",
+   "name": "The Podocarpus of Piazza Cavour",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (seconda foto).jpg (Wikidata Q55741304)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28seconda_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(seconda_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "source": "wikidata/Q55741304"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (Terza foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28Terza_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(Terza_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (prima foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28prima_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(prima_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (quarta foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28quarta_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(quarta_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Podocarpus Macrophyllus, Piazza Cavour, Napoli (seconda foto).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Podocarpus_Macrophyllus%2C_Piazza_Cavour%2C_Napoli_%28seconda_foto%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Podocarpus_Macrophyllus,_Piazza_Cavour,_Napoli_(seconda_foto).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jacksoniana1",
+     "lat": 40.854486,
+     "lng": 14.253067,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Campania Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Nature of Naples Category:Piazza Cavour (Naples) Category:Podocarpus macrophyllus (cultivated) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    }
+   ]
+  },
+  "nap_020": {
+   "city": "Naples",
+   "name": "The Eucalyptus of the Villa Comunale",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Eucalitto rostrato.jpg (Wikidata Q55741293)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Eucalitto_rostrato.jpg/960px-Eucalitto_rostrato.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Eucalitto_rostrato.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Sordelli",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Eucalyptus robusta Category:Files with coordinates missing SDC location of creation Category:Flora of Campania in May Category:Self-published work",
+     "source": "wikidata/Q55741293"
+    }
+   ]
+  },
+  "nap_021": {
+   "city": "Naples",
+   "name": "The Ombu of Via Manzoni",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nap_022": {
+   "city": "Naples",
+   "name": "The Blue Palm of the Botanical Garden",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nap_023": {
+   "city": "Naples",
+   "name": "The Magnolia of Capodimonte",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Chandelier of the nineteenth century in the Museo di Capodimonte (Napoli).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_%28Napoli%29.jpg/960px-Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_%28Napoli%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_(Napoli).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Livioandronico2013",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ceilings in Naples Category:Chandeliers in Italy Category:Collections of art in the National Museum of Capodimonte (Naples) Category:Featured pictures by Livioandronico2013 Category:Featured pictures of Naples Category:Featured pictures of museums Category:Featured pictures of objects Category:Featured pictures on Wikimedia Commons Category:Painted ceilings in Italy Category:Quality images Category:Quality images by Livioandronico2013 Category:Quality images missing SDC depicts Category:Quality images of Naples Category:Quality images of chandeliers Category:Self-published work"
+    },
+    {
+     "title": "File:Museo Capodimonte Napoli facciata Sudovest.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Museo_Capodimonte_Napoli_facciata_Sudovest.jpg/960px-Museo_Capodimonte_Napoli_facciata_Sudovest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Museo_Capodimonte_Napoli_facciata_Sudovest.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me",
+     "lat": 40.86584,
+     "lng": 14.25023,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Moroder/Naples Category:Palace of Capodimonte - Facade Category:Photos by Moroder Category:Quality images Category:Quality images by Moroder Category:Quality images of Naples Category:Self-published work Category:Taken with Nikon D800"
+    },
+    {
+     "title": "File:Museo Capodimonte Napoli fontana del belvedere.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg/960px-Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Museo_Capodimonte_Napoli_fontana_del_belvedere.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me",
+     "lat": 40.8662,
+     "lng": 14.25032,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Dolphin fountains Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Moroder/Naples Category:Palace of Capodimonte - Facade Category:Photos by Moroder Category:Quality images Category:Quality images by Moroder Category:Quality images of Naples Category:Self-published work Category:Taken with Nikon D800"
+    }
+   ]
+  },
+  "nap_024": {
+   "city": "Naples",
+   "name": "The Elephant's Foot of the Botanical Garden",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nra_010": {
+   "city": "Nara",
+   "name": "The Roben-sugi of Nigatsu-do",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nra_015": {
+   "city": "Nara",
+   "name": "The Kaya of Nigatsu-do",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nra_016": {
+   "city": "Nara",
+   "name": "The Saw-leaf Zelkova of Tamukeyama Hachimangu",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ginkgo tree in the temple (52541975425).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ginkgo_tree_in_the_temple_%2852541975425%29.jpg/960px-Ginkgo_tree_in_the_temple_%2852541975425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_tree_in_the_temple_(52541975425).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Raita Futo from Tokyo, Japan",
+     "lat": 34.688052,
+     "lng": 135.844344,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Ginkgo biloba in Japan in autumn Category:Japan photographs taken on 2022-11-22 Category:November 2022 in Nara Category:Tamukeyama-hachimangu"
+    }
+   ]
+  },
+  "nra_017": {
+   "city": "Nara",
+   "name": "The Great Camphor of Wakamiya",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nra_018": {
+   "city": "Nara",
+   "name": "The Enoki of Wakamiya",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "neb_001": {
+   "city": "Neba",
+   "name": "Tsukize no Osugi",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "prn_001": {
+   "city": "Nedvedice",
+   "name": "The Pernstejn Yew",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ndf_001": {
+   "city": "Neudrossenfeld",
+   "name": "Alte Tanzlinde von Neudrossenfeld",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Neudrossenfeld Epitaph-20201011-RM-153551.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Neudrossenfeld_Epitaph-20201011-RM-153551.jpg/960px-Neudrossenfeld_Epitaph-20201011-RM-153551.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Epitaph-20201011-RM-153551.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.01591667,
+     "lng": 11.50284167,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:CC-BY-SA-4.0 Category:Dreifaltigkeitskirche (Neudrossenfeld) Category:Epitaphs in Landkreis Kulmbach Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia Category:Reliefs in Neudrossenfeld Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Neudrossenfeld Kirche-20201011-RM-153602.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Neudrossenfeld_Kirche-20201011-RM-153602.jpg/960px-Neudrossenfeld_Kirche-20201011-RM-153602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Kirche-20201011-RM-153602.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.01591667,
+     "lng": 11.50284167,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:CC-BY-SA-4.0 Category:Dreifaltigkeitskirche (Neudrossenfeld) Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia Category:Quality images of doors by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki Category:Wooden doors in Landkreis Kulmbach"
+    },
+    {
+     "title": "File:Neudrossenfeld Kirche Wappen-20201011-RM-153243.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Neudrossenfeld_Kirche_Wappen-20201011-RM-153243.jpg/960px-Neudrossenfeld_Kirche_Wappen-20201011-RM-153243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Kirche_Wappen-20201011-RM-153243.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:CC-BY-SA-4.0 Category:Coats of arms in Landkreis Kulmbach Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:HRS mode images by E-M1 Mark II Category:HRS mode images by Ermell Category:Images by User:Ermell taken in 2020 Category:Interior of Dreifaltigkeitskirche (Neudrossenfeld) Category:Large images Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia Category:Quality images of church interiors by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Neudrossenfeld Kriegerdenkmal-20201011-RM-154714.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Neudrossenfeld_Kriegerdenkmal-20201011-RM-154714.jpg/960px-Neudrossenfeld_Kriegerdenkmal-20201011-RM-154714.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Kriegerdenkmal-20201011-RM-154714.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.01566667,
+     "lng": 11.50271833,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:Buildings in Neudrossenfeld Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Franco-Prussian War memorials in Landkreis Bayreuth Category:Images by User:Ermell taken in 2020 Category:Memorials of the Austro-Prussian War in Upper Franconia Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Neudrossenfeld Pfarrhaus-20201011-RM-154902.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Neudrossenfeld_Pfarrhaus-20201011-RM-154902.jpg/960px-Neudrossenfeld_Pfarrhaus-20201011-RM-154902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Pfarrhaus-20201011-RM-154902.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.015625,
+     "lng": 11.50242833,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:Buildings in Neudrossenfeld Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Cultural heritage monuments in Neudrossenfeld Category:Images by User:Ermell taken in 2020 Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Neudrossenfeld Schloss-20201011-RM-155409.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Neudrossenfeld_Schloss-20201011-RM-155409.jpg/960px-Neudrossenfeld_Schloss-20201011-RM-155409.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Schloss-20201011-RM-155409.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.01469,
+     "lng": 11.50379333,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia by Ermell Category:Schloss Neudrossenfeld Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Neudrossenfeld Tanzlinde-20201011-RM-154027.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Neudrossenfeld_Tanzlinde-20201011-RM-154027.jpg/960px-Neudrossenfeld_Tanzlinde-20201011-RM-154027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Tanzlinde-20201011-RM-154027.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.015095,
+     "lng": 11.50416667,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:CC-BY-SA-4.0 Category:Famous Tilia in Germany Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Neudrossenfeld dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Tanzlinde Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Neudrossenfeld Wohnhaus-20201011-RM-154458.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Neudrossenfeld_Wohnhaus-20201011-RM-154458.jpg/960px-Neudrossenfeld_Wohnhaus-20201011-RM-154458.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Wohnhaus-20201011-RM-154458.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.01571333,
+     "lng": 11.50413,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:Buildings in Neudrossenfeld Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Neudrossenfeld Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Peesten Tanzlinde-20200823-RM-153802.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Peesten_Tanzlinde-20200823-RM-153802.jpg/960px-Peesten_Tanzlinde-20200823-RM-153802.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Peesten_Tanzlinde-20200823-RM-153802.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.06308695,
+     "lng": 11.36705383,
+     "cats": "Category:Bavaria photographs taken on 2020-08-23 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020, DE-BY Category:Images from Wiki Loves Monuments 2020 in Germany Category:Images from Wiki Loves Monuments by Ermell Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Peesten dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Monuments 2020 in Germany Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Peesten Tanzlinde-20200823-RM-154416.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Peesten_Tanzlinde-20200823-RM-154416.jpg/960px-Peesten_Tanzlinde-20200823-RM-154416.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Peesten_Tanzlinde-20200823-RM-154416.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.06313812,
+     "lng": 11.36697157,
+     "cats": "Category:Bavaria photographs taken on 2020-08-23 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020, DE-BY Category:Images from Wiki Loves Monuments 2020 in Germany Category:Images from Wiki Loves Monuments by Ermell Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Peesten dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Monuments 2020 in Germany Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 7-14mm f/2.8 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Peesten Tanzlinde-20200823-RM-154937.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Peesten_Tanzlinde-20200823-RM-154937.jpg/960px-Peesten_Tanzlinde-20200823-RM-154937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Peesten_Tanzlinde-20200823-RM-154937.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.06318202,
+     "lng": 11.36690093,
+     "cats": "Category:Bavaria photographs taken on 2020-08-23 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020, DE-BY Category:Images from Wiki Loves Monuments 2020 in Germany Category:Images from Wiki Loves Monuments by Ermell Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Peesten dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Monuments 2020 in Germany Category:Quality images of Franconian Switzerland by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 7-14mm f/2.8 PRO Category:Trees in Bavaria in August Category:Uploaded with LrMediaWiki"
+    }
+   ]
+  },
+  "nrd_001": {
+   "city": "Neuenrade",
+   "name": "Gerichtslinde (Neuenrade)",
+   "checked": "2026-09-08",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Gerichtslinde Amönau (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Gerichtslinde_Am%C3%B6nau_%281%29.jpg/960px-Gerichtslinde_Am%C3%B6nau_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Am%C3%B6nau_(1).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hydro",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:Hydro Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Gerichtslinde Amönau Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-HE Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Quality images Category:Quality images from Wiki Loves Earth 2014 in Germany Category:Quality images of Tilia Category:Quality images of Wetter (Hessen) Category:Quality images of cultural heritage monuments in Hesse Category:Quality images of trees in Germany Category:Self-published work Category:Uploaded via Campaign:wle-de Category:Winners of Wiki Loves Earth 2014 in Germany"
+    },
+    {
+     "title": "File:Neuenrade-Gerichtslinde-1-Asio.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Neuenrade-Gerichtslinde-1-Asio.JPG/960px-Neuenrade-Gerichtslinde-1-Asio.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde-1-Asio.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Asio otus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 7° E) Category:Information field template with formatting Category:Neuenrader Gerichtslinde Category:Photographs taken on 2019-08-21 Category:Self-published work"
+    },
+    {
+     "title": "File:Neuenrade-Gerichtslinde1-Bubo.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Neuenrade-Gerichtslinde1-Bubo.JPG/960px-Neuenrade-Gerichtslinde1-Bubo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde1-Bubo.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Bubo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration redundant Category:Neuenrader Gerichtslinde Category:Self-published work Category:Taken with Canon EOS 400D"
+    },
+    {
+     "title": "File:Neuenrade-Gerichtslinde2-Bubo.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Neuenrade-Gerichtslinde2-Bubo.JPG/960px-Neuenrade-Gerichtslinde2-Bubo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde2-Bubo.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Bubo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration redundant Category:Neuenrader Gerichtslinde Category:Self-published work Category:Signs in Neuenrade Category:Taken with Canon EOS 400D"
+    },
+    {
+     "title": "File:Neuenrade-Panorama1-Bubo.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Neuenrade-Panorama1-Bubo.JPG/960px-Neuenrade-Panorama1-Bubo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neuenrade-Panorama1-Bubo.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Bubo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration redundant Category:Panoramics in Neuenrade Category:Self-published work Category:Taken with Canon EOS 400D"
+    },
+    {
+     "title": "File:Neuenrade - Alte Burg -Gerichtslinde 01 ies.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Neuenrade_-_Alte_Burg_-Gerichtslinde_01_ies.jpg/960px-Neuenrade_-_Alte_Burg_-Gerichtslinde_01_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neuenrade_-_Alte_Burg_-Gerichtslinde_01_ies.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Frank Vincentz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Alte Burg (Neuenrade) Category:Benches in Neuenrade Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Neuenrader Gerichtslinde Category:Self-published work Category:Taken with Canon EOS 400D"
+    },
+    {
+     "title": "File:Neuenrade - Am Stadtgarten - Gerichtslinde 01 ies.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Neuenrade_-_Am_Stadtgarten_-_Gerichtslinde_01_ies.jpg/960px-Neuenrade_-_Am_Stadtgarten_-_Gerichtslinde_01_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neuenrade_-_Am_Stadtgarten_-_Gerichtslinde_01_ies.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Frank Vincentz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Neuenrader Gerichtslinde Category:Self-published work Category:Signs in Neuenrade Category:Symbols of Neuenrade Category:Taken with Canon EOS 400D"
+    },
+    {
+     "title": "File:Neuenrade - Am Stadtgarten - Gerichtslinde 02 ies.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Neuenrade_-_Am_Stadtgarten_-_Gerichtslinde_02_ies.jpg/960px-Neuenrade_-_Am_Stadtgarten_-_Gerichtslinde_02_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neuenrade_-_Am_Stadtgarten_-_Gerichtslinde_02_ies.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Frank Vincentz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Am Stadtgarten (Neuenrade) Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Neuenrader Gerichtslinde Category:Self-published work Category:Taken with Canon EOS 400D"
     }
    ]
   }
