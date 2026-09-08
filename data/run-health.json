@@ -7028,6 +7028,130 @@
    ],
    "trees": 19,
    "logged": true
+  },
+  {
+   "started": "2026-09-07T23:11:46+00:00",
+   "date": "2026-09-08",
+   "run_id": "34166432851",
+   "minutes": 64.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 388,
+   "denials": 38,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 6073889,
+   "claims_held": [
+    "_famous-taiwan",
+    "_famous-bulgaria",
+    "_famous-sweden"
+   ],
+   "commits": 15,
+   "cities_touched": 25,
+   "cities": [
+    {
+     "city": "baldenhain",
+     "trees": 1
+    },
+    {
+     "city": "bargischow",
+     "trees": 1
+    },
+    {
+     "city": "bilu",
+     "trees": 1
+    },
+    {
+     "city": "bioul",
+     "trees": 1
+    },
+    {
+     "city": "brisbane",
+     "trees": 1
+    },
+    {
+     "city": "deventer",
+     "trees": 1
+    },
+    {
+     "city": "eichigt",
+     "trees": 1
+    },
+    {
+     "city": "frankenthal-sachsen",
+     "trees": 1
+    },
+    {
+     "city": "herchies",
+     "trees": 1
+    },
+    {
+     "city": "himmelsberg",
+     "trees": 1
+    },
+    {
+     "city": "horn-bremen",
+     "trees": 1
+    },
+    {
+     "city": "liernu",
+     "trees": 1
+    },
+    {
+     "city": "limmersdorf",
+     "trees": 1
+    },
+    {
+     "city": "linderhof",
+     "trees": 1
+    },
+    {
+     "city": "maastricht",
+     "trees": 1
+    },
+    {
+     "city": "neudrossenfeld",
+     "trees": 1
+    },
+    {
+     "city": "neuenrade",
+     "trees": 1
+    },
+    {
+     "city": "niedenstein",
+     "trees": 1
+    },
+    {
+     "city": "ottendorf-gaedheim",
+     "trees": 1
+    },
+    {
+     "city": "peesten",
+     "trees": 1
+    },
+    {
+     "city": "polchow",
+     "trees": 1
+    },
+    {
+     "city": "schlettau",
+     "trees": 1
+    },
+    {
+     "city": "tilburg",
+     "trees": 1
+    },
+    {
+     "city": "westerlo",
+     "trees": 1
+    },
+    {
+     "city": "wilparting",
+     "trees": 1
+    }
+   ],
+   "trees": 25,
+   "logged": true
   }
  ],
  "schedule_changes": [
