@@ -11,6 +11,64 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-07 (continuation 10) - Finished all 4 standing claims: 5 new trees across 2 new single-tree places, 1 deepen, 1 released clean
+
+Resumed a window an earlier attempt stopped 17 minutes in with 103
+unspent, having shipped 19 trees. `passcheck.py --claims` found four
+standing claims: `_famous-belgium` and `brisbane` had real uncommitted
+verify-pass output on disk, `_famous-taiwan` and `krakow` had nothing
+started yet.
+
+**`_famous-belgium` (4 candidates fully verified, no stories written).**
+Wrote all four as new single-tree places under the 2026-08-31 exception,
+none near a published city: herchies (Chene a Clous, a still-practised
+nail folk cure, Belgian Tree of the Year finalist 2019), liernu (Gros
+Chene, reputed widest trunk in Belgium, an 1838 chapel built into its
+hollow), bioul (Grand Tilleul, Belgian Tree of the Year 2017), westerlo
+(Etagelinde, a lime trained flat into a disc on an iron frame since
+around 1630). Looked at all 12 Commons photo candidates (3 per tree)
+before approving one per tree; rejected several close-up/trunk-only
+shots in favour of whole-tree, in-leaf, daylight photos per the Cadiz
+standard. Noted a species discrepancy for Bioul (Commons tags the photo
+Tilia platyphyllos, our press sources say Tilia cordata; kept the
+press-sourced species, flagged rather than resolved).
+
+**`brisbane` (deepen, verify file empty, but a rich standing lead).**
+The Bunya Pine of Manly West lead (planted 1891, sole heritage-register
+source) got a second source this pass (Queensland Places, corroborating
+the surrounding Hargreaves/cannery history though not the tree itself)
+and shipped as bne_021, flagged single-sourced same as the bne_020
+precedent. Included despite sitting outside the ~30 minute day-trip
+guideline (14km, ~35-40 min out) per the Blarney-for-Cork precedent,
+labeled with its real travel time. Updated every tree-count reference
+on the Brisbane page (19 to 20). Left the 143-candidate significant-
+landscape-trees register unmined: it carries no species or name field,
+so identifying any one of them needs per-candidate cross-referencing
+against council pages that a short pass cannot do cheaply.
+
+**`_famous-taiwan` (unclaimed until this pass, 10 leads).** Verified and
+wrote one: the Bilu Sacred Tree, a Taiwan fir over 3,000 years old on
+the Central Cross-Island Highway inside Taroko National Park, largest
+old tree on that highway per two independently fetched sources. Shipped
+as a new single-tree place, bilu. Along the way, checked and ruled out
+a look-alike trap: the original, more famous "Alishan Sacred Tree" was
+cut down in 1998 after storm damage and is dead, confirmed via Taipei
+Times and Atlas Obscura's own "Sacred Tree Relics" listing, so it
+correctly never appears in this leads file and should not be revisited.
+9 leads remain for a future pass.
+
+**`krakow` (unclaimed until this pass, deepen).** The one distinctive
+register candidate (a rare Acer monspessulanum street tree, already
+flagged by an earlier pass as needing a second source) still has none
+after a fresh search; the rest of the 809 unmined register candidates
+sit within 80m of already-published trees. Released clean, nothing
+shipped.
+
+Three separate builds, qa.py and preflight.py runs, all clean. Four
+commits, four claims released. `leads.py --ready` stayed at 0 the whole
+window; the readable leads pile is genuinely dry right now, not a
+detection problem.
+
 ## 2026-09-07 (continuation 9) - Finished the standing _bomenbieb-netherlands and _famous-germany verify claims: 3 into existing cities, 16 new German single-tree places
 
 Resumed a window an earlier attempt had stopped 25 minutes in with 95
