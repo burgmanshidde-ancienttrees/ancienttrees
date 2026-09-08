@@ -51,10 +51,23 @@
       ],
       "access": "Free, no ticket, shrine grounds open to the public like any Shinto shrine precinct. No parking at the site. Reached only by bus/taxi plus a real walk (see transport); a genuinely rural approach, not a doorstep visit.",
       "transport": "About 40 minutes by car from Nagano IC. By public transport (weekdays only): bus from JR Nagano Station (about 5 min) to 'Hana no Komichi', then a shared taxi (about 21 min) to 'Sakagaku', then about a 30-minute walk. An alternative cited route is roughly 30 minutes by bus from Nagano Station followed by a 30-minute walk.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "best_time": { "months": [4, 5], "kind": "flowers", "label": "late April into early May, when the old, supported crown flowers again" }
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "flowers",
+        "label": "late April into early May, when the old, supported crown flowers again"
+      },
+      "how_to_recognise": "You can recognise it by its two remaining limbs propped on supports after a third broke off decades ago, 11.3 metres round at chest height. It stands in Suzakura Shrine's grounds, reached by bus, taxi and a 30 minute walk."
     }
   ]
 }

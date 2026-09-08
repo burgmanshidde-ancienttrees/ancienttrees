@@ -50,10 +50,23 @@
       ],
       "access": "Free to view; the tree stands in the open temple grounds of Hida Kokubunji, a working temple whose grounds are open to worshippers/visitors daily 9:00-16:00. The temple posts visitor etiquette rules confirming it is a place the public is expected to walk into, not a closed precinct.",
       "transport": "About 5 minutes on foot from JR Takayama Station",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "best_time": { "months": [11, 12], "kind": "autumn colour", "label": "late November into early December, when it goes gold and lets the whole crown go at once" }
+      "best_time": {
+        "months": [
+          11,
+          12
+        ],
+        "kind": "autumn colour",
+        "label": "late November into early December, when it goes gold and lets the whole crown go at once"
+      },
+      "how_to_recognise": "You can recognise it by aerial roots hanging like breasts, the reason it is called Chichi Icho, with stone jizo statues at its base, 10 metres round. It stands between the main hall and bell tower gate of Hida Kokubunji."
     }
   ]
 }
