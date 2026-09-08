@@ -170,6 +170,13 @@ const REMOVED_TREE_SLUGS: [string, string][] = [
   ["munich", "fern-leaved-beech-of-nymphenburg"],
   ["munich", "weeping-beech-of-nymphenburg"],
   ["warsaw", "sowinskis-linden"],
+  // utr_034 (2026-09-08): "The Geertebolwerk Pear" duplicated utr_031, "The
+  // Old Pear of the Geertebolwerk", already live at the same LRMB register
+  // number (1678119) and the same coordinate. A stray lead's coordinate had
+  // been copy-corrupted to utr_018's, which is what let it past the
+  // duplicate check the first time; re-verifying against the register row
+  // resolved it back to utr_031 and utr_034 was removed from data/cities/utrecht.json.
+  ["utrecht", "geertebolwerk-pear"],
 ];
 
 
