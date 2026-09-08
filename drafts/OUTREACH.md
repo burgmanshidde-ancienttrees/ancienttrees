@@ -22,7 +22,7 @@ actually clicked) and links to the Links report for a manual read.
 
 | Date | Who | What | State |
 |---|---|---|---|
-| 2026-09-04 | getLISBON (contact@getlisbon.com) | Reply to their own mail offering a mutual link and two jacarandas. Both trees published first (lis_034, lis_035), getLISBON cited with a link on each. Asks which two jacarandas stand in the Ajuda garden, a photograph if they have one, and that their PT article link to /pt/lisbon and the EN one to /lisbon. | **Sent.** First backlink offer in 220 mails. |
+| 2026-09-04 | getLISBON (contact@getlisbon.com) | Reply to their own mail offering a mutual link and two jacarandas. Both trees published first (lis_034, lis_035), getLISBON cited with a link on each. Asks which two jacarandas stand in the Ajuda garden, a photograph if they have one, and that their PT article link to /pt/lisbon and the EN one to /lisbon. | **LIVE, checked 2026-09-08.** They placed both links exactly as asked: the EN article links to /lisbon, the PT one to /pt/lisbon, both `rel="noreferrer noopener"` with no nofollow, so it is a followed link. The pages are getlisbon.com/discovering/public-interest-tree-in-lisbon/ and /pt/descobrindo-pt/arvores-de-interesse-publico-em-lisboa/. First real backlink the project has, after 220 mails. Note for every future digest: `noreferrer` strips the referrer header, so clicks from it land in Cloudflare as `(direct)` and "external referrers: none yet" is NOT evidence the link is absent. Still open on their side: which two jacarandas stand in the Ajuda garden. |
 
 ## Tier 1, send first: data we cannot use without them
 
