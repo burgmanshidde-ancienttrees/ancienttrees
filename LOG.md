@@ -11,6 +11,48 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (continuation, previous attempt stopped after 72 min with 48 min unspent) - Helmond claim finished, the --stuck pool cleared to zero, two page gaps, first photo viewing pass in a while
+
+**Finished what the prior attempt left claimed.** `passcheck.py --claims`
+showed Helmond held by `night-run` (verify, 121 min left). Its verify pass
+had already produced `data/research/helmond-verified.json` (6 register
+trees, stories already written) and merged it into `data/cities/helmond.json`
+uncommitted. Built, ran `qa.py` and `preflight.py` clean, committed, released
+the claim. Helmond: 7 to 13 trees (Chinese Beech the national register
+misfiles as European beech, two horse chestnuts a decade apart, a holly the
+register itself says is not visible from any path).
+
+**Cleared `recognise.py --stuck` to zero.** It had 48 trees queued across 39
+cities the display table showed plus 9 more hidden behind a display cap that
+only became visible once the first batch cleared. Wrote and applied all 48,
+restated only from species, girth, height, setting and story on file, all
+under 240 characters. Built and QA'd twice (once per batch) before committing.
+
+**Helmond's deepening earned two page gaps, closed the same session.**
+`pagegaps.py` found Castle Park had crossed the 5-tree park-page threshold
+(7 trees, once the register additions landed) and Taiwan had never had a
+country intro (7 trees across 4 places, none register-fed). Wrote both from
+each subject's own trees per P3; the park page's meta description needed
+trimming twice to clear the 155-char build gate.
+
+**Ran a real viewing pass, not just the API sweep.** `photo_hunt.py`'s free
+Commons sweep found candidates for 40 more photo-less trees; fetched and
+LOOKED AT 15 of them across 5 cities before approving anything. Two catches
+worth keeping: Alishan's third candidate was the wrong tree entirely, the
+FALLEN original Alishan Sacred Tree lying on a viewing deck 202m from the
+living Sianglin Sacred Tree we actually map (filename said so plainly once
+looked at rather than assumed from the search match). And all three Bilu
+candidates turned out not to be photos of the tree at all: a road sign
+pointing at it, a flowerpot on a railing, a distant mountainside. Bilu stays
+photo-less rather than shipping any of the three. 4 approved (Alishan,
+Chishang, Baldenhain, Bargischow), 11 rejected with reasons recorded so a
+later pass does not re-judge them.
+
+Six commits, all built and QA'd before pushing, no FOR HIDDE items. New
+coverage (rung 4) was not re-checked: the prior attempt already confirmed the
+OPENABLE TODAY list thin (Taormina, Ravenna, Salamanca, Ischia, Trier), and
+nothing in this window changed that.
+
 ## 2026-09-08 (continuation, previous attempt stopped early with 56 min unspent) - 116 recognition lines across five cities
 
 **Checked the ladder in order and found nothing to claim or write.** No
