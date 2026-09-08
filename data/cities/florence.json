@@ -206,7 +206,8 @@
       "curation_status": "flagged",
       "notes": "No age or planting date documented anywhere found; range estimated from girth and species growth rate alone, stated as a wide honest range rather than a false precise figure.",
       "location_precision": "confirmed",
-      "girth_cm": 403
+      "girth_cm": 403,
+      "how_to_recognise": "You can recognise it by unusually large buttress roots and long exposed roots flaring out from its base like something built rather than grown. It stands beside the Arno-facing path, near the weekly Tuesday market."
     },
     {
       "id": "flo_006",
@@ -239,7 +240,8 @@
       "location_precision": "confirmed",
       "height_m": 21.0,
       "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (4 m away).",
-      "girth_cm": 525
+      "girth_cm": 525,
+      "how_to_recognise": "You can recognise it by its solitary position at a quiet residential corner and a trunk 5.25 metres round, among the largest recorded for the species. It is honey locust, not the pink-flowered Judas tree people often picture instead."
     },
     {
       "id": "flo_007",
@@ -281,7 +283,8 @@
       },
       "height_m": 22.5,
       "verify_notes": "Height 22.5 m from the italy-masaf register, matched on our own pin (1 m away).",
-      "girth_cm": 455
+      "girth_cm": 455,
+      "how_to_recognise": "You can recognise it by its wide, flat-tiered cedar of Lebanon branches, standing near the centre of the Bobolino garden, a few steps from the incense cedar known as the Tree of the Newlyweds."
     },
     {
       "id": "flo_008",
@@ -576,7 +579,8 @@
       },
       "curation_status": "flagged",
       "notes": "MASAF 11/D612/FI/09. Chosen specifically to thicken an existing walk: it stands about 45 m from the live flo_007 (Cedar of the Bobolino) and roughly 600 m from flo_008, so it costs a visitor nothing to add. RAMI 6484 gives girth 5.40 m at 130 cm, height 15.00 m, health 'good', accessibility 'accessible', survey 14 Oct 2021, GPS 43.757674/11.248871, and records both nicknames. The comune's own parks page independently confirms the tree ('cedro dell'incenso', on the left of the central bed) and dates the garden to Poggi, 1865-1877. FLAGGED FOR AGE: no source gives this tree an age. RAMI records 'not available'. The range published here is inferred from the garden's construction dates and is stated as undocumented in the age_estimate field, matching how the live flo_007 and flo_008 handle the same problem. A figure of 1850 plus or minus 20 circulates on monumentaltrees.com; per hard rule 1 that was used only to check that the inference is not absurd, and it is not cited or relied on. Species naming: no Calocedrus entry exists elsewhere on the site, so 'Incense Cedar' is set as the canonical form here in preference to the national 'California Incense-cedar'. Photo: no open-licence image found in the one Commons pass run for this city; the photo budget for this pass was already spent on the three garden trees.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by two enormous branches rising parallel to the trunk like a pair of horns, and a trunk five and a half metres round. It stands left of the central flowerbed, a few steps from the cedar of Lebanon."
     },
     {
       "id": "flo_016",

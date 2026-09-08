@@ -11,6 +11,42 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-08 (continuation 2) - 40 recognition lines across 8 cities, worst-first by impressions
+
+Week still had headroom, so continued past the Sant'Alfio work. New coverage
+was thin everywhere checked: `city_queue.py --next`'s OPENABLE cities mostly
+carry 1-2 Wikidata leads each, well under a single verify pass's 6-candidate
+floor, and Florida's champion-tree register (the only one covering Daytona
+Beach, scout_next.py's suggested target) was already fully scouted and
+recorded as a dead end for exactly this reason in an earlier Jacksonville
+pass. Rather than force a thin pass, moved to rung 7: `recognise.py --stuck`
+(270 trees with no photo, no recognition line, and a government-designated
+neighbour within 25m).
+
+Wrote and applied 40 lines, worst-first by search impressions: Lisbon (2),
+Barcelona (6), Singapore (7), Vienna (6), Leiden (11), Paris (3), Florence
+(4), Prague (1). All restatement from each tree's own story and verify
+data per BRIEF_WRITING.md's rule (species, girth, height, setting, what
+already distinguishes it from its stuck neighbour), nothing new claimed.
+Several pairs needed the "which one" answer directly: Leiden's two Siebold
+zelkovas (single-trunk vs five-stemmed), Vienna's oak and yew twelve
+metres apart at Schönbrunn (deciduous vs evergreen), the two Bobolino
+cedars in Florence (cedar of Lebanon vs the horned incense cedar).
+`recognise.py --stuck` backlog: 270 to 230.
+
+**Also fixed a real fabrication risk in `leads.py`**: four Nara trees
+retired the same day they were published (zero verified sources, see the
+prior continuation's brief) were showing up as READY again within the
+hour, because their own `why` field IS the retirement note and
+`has_source_evidence()` read its mere presence as proof a pass had
+looked at the tree. Added a `retired_id` check to `classify()` so a
+retired lead short-circuits straight to BLOCKED. Also cleared two stale,
+fully-consumed verify-pass leftovers (`famousslovakia-verified.json`,
+`famoustaiwan-verified.json`) sitting uncommitted since the prior
+continuation.
+
+Build (5023 pages), qa.py (7779 pages) and preflight.py (536 cities, 0
+problems) all clean. No FOR HIDDE items.
 ## 2026-09-08 (continuation) - Sant'Alfio grows from 1 tree to 3: the two chestnut/birch neighbours that had no home
 
 Continuation of an attempt that stopped after 34 minutes with 86 of its

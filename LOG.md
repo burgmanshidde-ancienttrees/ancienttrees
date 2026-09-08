@@ -11,7 +11,6 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-
 ## 2026-09-08 (session with Hidde) - The Nara four retired, and 343 snippets stop repeating their own title
 
 **He asked two questions and both were right.** Shown the daily digest, he
@@ -90,6 +89,27 @@ the page, or in Search Console's Links report by hand.
 Recorded in drafts/OUTREACH.md. Still open with them: which two jacarandas
 stand in the Ajuda garden.
 
+## 2026-09-08 (continuation 2) - 40 recognition lines, and a leads.py bug that would have republished 4 zero-source Nara trees
+
+New coverage was thin everywhere on `city_queue.py --next` (mostly 1-2
+Wikidata leads per city, under a pass's break-even) and Florida's
+register, the only one covering scout_next.py's suggested Daytona
+Beach, is already a documented dead end from an earlier Jacksonville
+scout. Moved to rung 7 instead: `recognise.py --stuck` (270 trees with
+no photo, no recognition line, and a government-named neighbour within
+25m). Wrote and applied 40 lines, worst-first by impressions: Lisbon,
+Barcelona, Singapore, Vienna, Leiden, Paris, Florence, Prague. Backlog
+270 to 230.
+
+Also fixed a real bug: 4 Nara trees retired hours earlier for zero
+verified sources were showing up as READY again, because their own
+retirement note sat in the field `leads.py` reads as proof of sourcing.
+Added a `retired_id` check so that can't happen again, and cleared two
+stale, already-consumed verify files left over from the prior
+continuation.
+
+Build (5018 pages), qa.py and preflight (536 cities, 0 problems) clean.
+No FOR HIDDE items.
 ## 2026-09-08 (continuation) - Sant'Alfio: 1 tree to 3
 
 Continuation of an attempt that stopped after 34 minutes with 86 of its
