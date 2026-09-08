@@ -790,7 +790,8 @@
       "notes": "FLAGGED for having no age at all. The city register's planting-year field is empty and the Generalitat's file gives none either, so no age_min or age_max is set and the age_estimate says so plainly rather than inventing a range from the neighbours (the green ash beside it, bcn_006, is dated 1924). Everything else is unusually well sourced for Barcelona, because two separate authorities cover it: the city register (register_id 99400637941, catalogued 2015, 29 m tall, girth 2.5 m, crown 15 m) and the Generalitat de Catalunya, which registers it as the Freixe de Montjuic, code MA-13.931.02, at 29.0 x 2.5 x 15.4 m and declared it monumental on 2 April 2025. The tallest-in-Catalonia claim and the up-to-four-degrees microclimate figure both come from the Museu de Ciencies Naturals de Barcelona's own account of the declaration, which is the garden's operator and independent of the tree register. Pin approximate, and deliberately so: the city register gives 41.366868/2.152084 and the Generalitat gives 41.366939/2.151886, 18 m apart, and the neighbouring monumental sycamore (bcn_022) stands about 7 m from this point. An 18 m uncertainty cannot tell the two apart on the ground, so the pin gets someone into the right corner of the ravine and the garden's own labels do the rest. Photo: the Generalitat publishes File:Freixe de Montjuic.jpg on Commons under its attribution-gencat licence, but it was viewed directly and rejected. The frame is a dark shaded ravine in which an araucaria takes the foreground and no ash is identifiable, which fails the Cadiz standard on every count. Honest gap.",
       "location_precision": "approximate",
       "paid_entry": true,
-      "girth_cm": 250
+      "girth_cm": 250,
+      "how_to_recognise": "You can recognise it by the shape, 29 metres of tree under a crown only 15 metres across, on a trunk 2.5 metres round. It stands at the bottom of the Sot de l'Estany quarry pit with three monumental neighbours."
     },
     {
       "id": "bcn_022",
@@ -830,7 +831,8 @@
       "notes": "FLAGGED for having no age. The city register's planting year reads 'Per determinar' and the Generalitat's file gives none, so no age_min or age_max is set. Two independent authorities cover the tree: the city register (register_id 99400637939, catalogued 2015, 30 m tall, girth 1.4 m, crown 12 m) and the Generalitat de Catalunya, which registers it as the Platan Fals de Montjuic, code MA-13.931.04, at 30.0 x 1.38 x 12.0 m, declared monumental 2 April 2025. The rarity-in-Barcelona point comes from the Museu de Ciencies Naturals account of the declaration. Pin approximate: city register 41.36677/2.152069 against the Generalitat's 41.366884/2.151851, 22 m apart, and the monumental ash (bcn_021) stands about 7 m away. See the note on bcn_021: the pin puts a visitor in the right corner of the ravine, not on the exact trunk. PHOTO PROBLEM WORTH KEEPING. The Generalitat publishes File:Platan Fals de Montjuic.jpg on Commons under attribution-gencat, sourced from its own monumental-tree file for this tree. It was viewed directly and NOT used, because the tree in the frame has pinnate compound leaves, which is an ash, not a maple; Acer pseudoplatanus has palmate lobed leaves. Either the file is mislabelled or the photographer shot the wrong trunk in a ravine where the ash stands seven metres away. Recording it rather than acting on it: the identification of the tree itself rests on two official registers, not on this photograph.",
       "location_precision": "approximate",
       "paid_entry": true,
-      "girth_cm": 140
+      "girth_cm": 140,
+      "how_to_recognise": "You can recognise it by the slenderness, thirty metres of tree on a trunk 1.38 metres round, and by being the one maple among them. It stands in the Sot de l'Estany quarry pit inside the historic botanical garden."
     },
     {
       "id": "bcn_023",
@@ -1212,7 +1214,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the crown, 27 metres across on a tree only 15 metres tall, and by a trunk 4.4 metres round. It stands in the Sector de la Masia of the historic botanical garden."
     },
     {
       "id": "bcn_035",
@@ -1252,7 +1255,8 @@
         ],
         "kind": "flowers",
         "label": "late April into May, when the whole crown hangs with white pea flowers you can smell from the path"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 4.3 metres round on a tree only 12 metres tall, stout where black locusts are usually thin. It stands in the parterre between the Passeig de Joaquim Renart and the Cascada."
     },
     {
       "id": "bcn_036",
@@ -1350,7 +1354,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the tiers, whorls of branches up a straight 27 metre mast on a trunk only 1.5 metres round, visible above the rooftops. It stands in the courtyard off Carrer d'Elisabets."
     },
     {
       "id": "bcn_039",
@@ -1448,7 +1453,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by being small for this list, eight metres tall on a 1.6 metre trunk with a crown about as wide as it is high. It stands on Carrer de Joaquim Blume at the foot of Montjuic."
     },
     {
       "id": "bcn_042",
@@ -1520,7 +1526,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by being the only horse chestnut on the city register, 20 metres tall on a trunk 1.9 metres round. It stands in Placa de Carles Buigas beside a tipu tree also on the register."
     },
     {
       "id": "bcn_044",
@@ -1933,7 +1940,8 @@
       "location_precision": "approximate",
       "paid_entry": true,
       "story": "Common hornbeam barely grows wild anywhere on the Iberian peninsula, which makes the specimen in Barcelona's Jardi Botanic Historic an outlier by definition. It has found the one pocket of the city cool and damp enough to suit it: the Sot de l'Estany, a shaded former quarry hollow that already holds four of Barcelona's officially monumental trees, a wingnut, two kinds of ash and a sycamore maple among them.\n\nAt roughly 80 years old the hornbeam is younger than those neighbours, which is why the city lists it one rank down, as a tree of local interest rather than a monument. It has still reached 18 metres with a crown 13 metres across, respectable for a species this far outside its natural range.\n\nThe garden was Barcelona's original botanical collection, on this same hill, before a newer one opened elsewhere on Montjuic. The ravine has kept its own microclimate ever since: cooler, wetter and stubbornly hospitable to trees with no business surviving this far south. Same ticket as the rest of the garden's veterans.",
-      "girth_cm": 120
+      "girth_cm": 120,
+      "how_to_recognise": "You can recognise it by being the youngest tree in the hollow at about 80 years, 18 metres tall under a crown 13 metres across. It stands in the Sot de l'Estany among the garden's four monumental trees."
     },
     {
       "id": "bcn_059",

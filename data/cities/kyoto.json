@@ -380,7 +380,8 @@
       },
       "curation_status": "flagged",
       "notes": "No age figure exists in any source: Kamigyo Ward's pride-tree register records dimensions only. Second source (Ministry of Environment) describes Kyoto Gyoen's giant-tree population generally and does not name this individual tree, so this is effectively single-sourced and flagged for that reason, not for doubt about the tree's existence or species. Coordinates are a gate-area estimate, not a GPS fix on the trunk.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the crown, 32.9 metres across on a tree only 22.5 metres tall, and by a trunk 4.98 metres round. It stands inside Demizu-guchi, the pedestrian gate in the park's west wall."
     },
     {
       "id": "kyo_012",
@@ -410,7 +411,8 @@
       },
       "curation_status": "flagged",
       "notes": "No age figure exists in any source; the ward register records dimensions only. Second source (Ministry of Environment) corroborates that trees of this scale exist in Kyoto Gyoen but does not name this one, so this is effectively single-sourced and flagged for that reason. Coordinates are a gate-position estimate, not a GPS fix on the trunk.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the trunk, 4.29 metres round under a crown 29.6 metres wide. It stands just inside Ishiyakushi-gomon on the Teramachi-dori side, 1.1 kilometres from the hackberry at the Demizu gate."
     },
     {
       "id": "kyo_013",
@@ -440,7 +442,8 @@
       },
       "curation_status": "flagged",
       "notes": "Effectively single-sourced: Wikipedia confirms the shrine's identity, 1885 founding and coordinates but its tree content covers only the katsura known locally as the Tree of Love, not this hackberry. No age given anywhere. The story states the katsura distinction explicitly so a visitor does not mistake one tree for the other. Coordinates are the shrine's, not the tree's position within the grounds.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its size, 21 metres tall on a trunk 3.72 metres round, and by not being the katsura the shrine is known for. It stands in the walled precinct on Teramachi-dori against Kyoto Gyoen's east wall."
     },
     {
       "id": "kyo_014",
@@ -478,7 +481,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age is a source estimate ('several hundred years', tabiiro.jp), not a measured figure, hence the wide age_min/age_max band and the hedged phrasing in the story. Wikipedia confirms the shrine's identity and coordinates but names only a quince as its notable tree, so it is used for location only. Coordinates are the shrine's; the tree stands north of the honden and is not itself GPS-fixed.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by being the tallest thing on the grounds, 25 metres on a trunk 3.18 metres round, the largest of six ginkgos here. It stands north of the main hall, behind the stone boars at the gate."
     },
     {
       "id": "kyo_016",
@@ -503,7 +507,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the acorns on the gravel beneath it, sweet where oak acorns are bitter, and by a trunk 2.78 metres round under 14.6 metres of evergreen crown. It stands at the Omiya gate on the south side."
     },
     {
       "id": "kyo_018",
@@ -535,7 +540,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round under 19.5 metres of ginkgo. It stands at Inui-gomon, the gate in the northwest corner of the park, a kilometre and a half up the gravel from the Demizu gate."
     },
     {
       "id": "kyo_015",
@@ -571,7 +577,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it in April by the flowers, single five-petalled ones and crowded double rosettes opening together on the same crown. It stands southwest of Seisho-mon gate."
     },
     {
       "id": "kyo_017",
@@ -597,7 +604,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by being the small camphor, 12.3 metres tall on a trunk 2.76 metres round, not the far larger one at Munakata Shrine nearby. It stands just inside Shimodachiuri-gomon in the west wall."
     }
   ],
   "oldest_tree_id": "kyo_007",

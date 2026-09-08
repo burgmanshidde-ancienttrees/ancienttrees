@@ -56,7 +56,8 @@
       },
       "curation_status": "flagged",
       "notes": "Planting date (1823), planter (Archduke Joseph), and measurements (664cm trunk circumference, 42m height, 55m crown per welovebudapest's dedicated 2026 article) cross-checked against pestbuda.hu's 2017 feature and a 2012 arborist blog post; minor variation between sources on exact trunk girth (six-and-a-half metres versus 664cm) and height (40m versus 42m) reflects different measurement years, not a real dispute. The 2026 'Tree of Science' naming is a joint Budapest Municipality/Hungarian Academy of Sciences initiative reported by multiple contemporary outlets.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the crown, 55 metres across on a trunk 6.64 metres round. It stands between the ruins of the Dominican convent and the 1911 water tower on Margaret Island."
     },
     {
       "id": "bud_002",
@@ -95,7 +96,8 @@
       },
       "curation_status": "flagged",
       "notes": "Planting date (c.1790), planter/gardener attribution (Antal Tost for Palatine Joseph), the 1862 lecture reference, the 1848-49 revolution survival, the late-19th-century removal plan and Karoly Mraz's intervention, and WWII survival are corroborated across the official FOKERT (Budapest parks authority) page and pestbuda.hu's English feature, independently reported in the same terms. Age is given as a range (230-250 years) because sources use both a rough 'around 250 years' figure and a more specific '1790s planting' date, which yield slightly different totals depending on the reference year.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the biggest tree in the castle garden, which an 1862 lecture already called it and why locals say Nagy Fa, the Big Tree. It stands beside the Great Rondella in the South Gardens."
     },
     {
       "id": "bud_003",
@@ -133,7 +135,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age estimate, location, 1980s branch damage and ongoing structural support independently confirmed by welovebudapest's 2023 feature on Budapest's old trees and a dedicated 2018 pestbuda.hu article on this specific tree. No age or planting-date dispute found between the two.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the lean, held at two points by the city's own props, and by the dried-out upper branch it has carried since the 1980s. It stands at the corner of Erzsebet ter toward Jozsef Attila utca."
     },
     {
       "id": "bud_004",
@@ -171,7 +174,8 @@
         ],
         "label": "June into July, when the mulberries ripen",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the sign at its foot asking you not to climb the branches, and by the props holding it up. It stands on the Taban Botanical Trail near the Komuves lepcso, the Stonemason's Stairs."
     },
     {
       "id": "bud_005",
@@ -201,7 +205,8 @@
       },
       "curation_status": "flagged",
       "notes": "The distinction between the original 'Het Testver' plane (died c.1935) and this successor tree (war-damaged and regrown after January 1945, renamed 'Hetvezer' in tribute) is documented in detail and consistently across pestbuda.hu's dedicated feature and szeretlekmagyarorszag.hu's independent piece; kept the two trees clearly separate in the story to avoid the same original-versus-successor conflation this project has caught in other cities. Coordinates are Palatinus Strand's general location, not a surveyed point for the tree itself.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the seven limbs it threw out after the wrecked trunk was cut back in 1945, and by the mottled peeling bark. It stands opposite the Palatinus Strand, nearly 30 metres tall."
     },
     {
       "id": "bud_006",
@@ -239,7 +244,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it as the solitary tree with the wide low crown, 11.2 metres tall where a St Lucie cherry is usually a six-metre shrub. It stands about 80 metres along the main path from the Illes utca gate."
     },
     {
       "id": "bud_007",
@@ -276,7 +282,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the trunk, two adults with their arms spread to get round it, and by the crown left blunt by safety pruning. It stands along the perimeter wall near the Ferenczy Istvan utca gate."
     },
     {
       "id": "bud_008",
@@ -345,7 +352,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the plaque on the trunk and the lopsided crown, which cannot spread toward the building behind it. It stands over the Platan beer garden; the other plane here is by the Rudas baths."
     },
     {
       "id": "bud_010",
@@ -382,7 +390,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, the thickest black walnut on the island by a clear margin, and by the crown cut hard back in 2016. It stands by the Franciscan ruins on Arnyas setany, a hundred metres from the yew."
     },
     {
       "id": "bud_011",
@@ -419,7 +428,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the crown, asymmetric from a life hemmed in by neighbours, on a trunk 345 centimetres round and 28 to 30 metres tall. It stands in the Upper Rose Garden beside Zielinszky Szilard setany."
     },
     {
       "id": "bud_012",
@@ -457,7 +467,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the larger of the two yews by the Franciscan ruins, the one that still reads as a tree; the other is 4.5 metres tall under a crown 7 to 8 metres wide. It stands on the Lower Great Meadow."
     }
   ]
 }

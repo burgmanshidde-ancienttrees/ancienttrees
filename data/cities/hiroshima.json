@@ -59,7 +59,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Age, girth and height are not recorded: Hiroshima's A-bombed tree register carries species, address, owner and distance from the hypocentre only. The 370 m and the identification code N03a1-01 are the city's own. The pin is the west side of the Youth Centre as the register describes it, not a surveyed position for the trunk. The regrowth-from-the-roots account is the general pattern the city and its sources describe for trees at this distance rather than a statement sourced about this individual, and the story says so."
+      "notes": "Age, girth and height are not recorded: Hiroshima's A-bombed tree register carries species, address, owner and distance from the hypocentre only. The 370 m and the identification code N03a1-01 are the city's own. The pin is the west side of the Youth Centre as the register describes it, not a surveyed position for the trunk. The regrowth-from-the-roots account is the general pattern the city and its sources describe for trees at this distance rather than a statement sourced about this individual, and the story says so.",
+      "how_to_recognise": "You can recognise it by the setting: a weeping willow standing alone on the grass west of the Youth Centre, 370 metres from the hypocentre. It stands in the Chuo Park green space at Motomachi 14."
     },
     {
       "id": "hir_002",
@@ -89,7 +90,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "One entry covering the three camphors the register groups as S04a4-01 to 03, all at the same shrine and none transplanted. No age or girth is published for any of them. The pin is the shrine, which is small. The account of why camphors survive better at short range is general species behaviour, not a sourced statement about these three."
+      "notes": "One entry covering the three camphors the register groups as S04a4-01 to 03, all at the same shrine and none transplanted. No age or girth is published for any of them. The pin is the shrine, which is small. The account of why camphors survive better at short range is general species behaviour, not a sourced statement about these three.",
+      "how_to_recognise": "You can recognise them by the count: three big camphors in one small courtyard, on the rock outcrop the shrine was built on. They stand at Shirakami Shrine, wedged between office blocks off Peace Boulevard."
     },
     {
       "id": "hir_003",
@@ -127,7 +129,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Registered as S05a6-11 in a group of trees at 530 m in front of Shirakami Shrine; not transplanted. No age, girth or height published. The pin is the planting strip described in the register, not a surveyed position. Fruiting months are the species' habit in a warm-temperate climate."
+      "notes": "Registered as S05a6-11 in a group of trees at 530 m in front of Shirakami Shrine; not transplanted. No age, girth or height published. The pin is the planting strip described in the register, not a surveyed position. Fruiting months are the species' habit in a warm-temperate climate.",
+      "how_to_recognise": "You can recognise it by the fruit, hard and orange on bare branches into December, the only persimmon in a group that is otherwise hackberry, muku, holly and bead tree. It stands on Peace Boulevard outside Shirakami Shrine."
     },
     {
       "id": "hir_004",
@@ -234,7 +237,8 @@
         ],
         "label": "October: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the ginkgo in the temple grounds, the old tree left in a gap between new buildings on Teramachi. It stands at Hosenbo, on the single street the city's temples were moved together into."
     },
     {
       "id": "hir_007",
@@ -272,7 +276,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Registered as E13a25-01 at 1,370 m, not transplanted. No age, girth or height published for the tree; the 1620 date is the garden's, not the tree's, and the story keeps the two apart. The pin is the garden, which is large, so expect to look. The only paid-entry tree on this page.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the yellow it turns in the second half of November, with the garden's maples. It stands in Shukkeien among the three registered survivors there, the other two a muku and a black pine."
     },
     {
       "id": "hir_008",
@@ -311,7 +316,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Registered as N21a53-01 at 2,160 m, not transplanted. Girth 4.55 m and height 20 m from Hiroshima's tourism authority page for this tree, which is the only measurement published for any tree on this page; no age anywhere. The gate with the hole in its roof was built in 1990 and repaired in 1994 and is separately registered as an A-bombed building. The pin is the temple."
+      "notes": "Registered as N21a53-01 at 2,160 m, not transplanted. Girth 4.55 m and height 20 m from Hiroshima's tourism authority page for this tree, which is the only measurement published for any tree on this page; no age anywhere. The gate with the hole in its roof was built in 1990 and repaired in 1994 and is separately registered as an A-bombed building. The pin is the temple.",
+      "how_to_recognise": "You can recognise it without asking anyone: it grows up through a hole cut in the roof of the temple gate. It stands at Anrakuji, 20 metres tall on a trunk 4.55 metres round, beside a gate that leans north."
     },
     {
       "id": "hir_009",
@@ -343,7 +349,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "girth_cm": 640,
-      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop."
+      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop.",
+      "how_to_recognise": "You can recognise it as the larger of the two camphors, 6.4 metres round and 35 metres tall against the other's 5.4 and 23. It stands beside its pair at Shinjo-no-miya Shrine, and is called Otoko-gusu, the husband."
     },
     {
       "id": "hir_010",
@@ -375,7 +382,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "girth_cm": 540,
-      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop."
+      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop.",
+      "how_to_recognise": "You can recognise it as the smaller of the two camphors, 5.4 metres round and 23 metres tall where the husband is 6.4 and 35. It stands beside him at Shinjo-no-miya Shrine, and is called Onna-gusu, the wife."
     },
     {
       "id": "hir_011",
@@ -406,7 +414,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "girth_cm": 482,
-      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop."
+      "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop.",
+      "how_to_recognise": "You can recognise it as the hackberry at 26 metres, three metres taller than the wife camphor, on a trunk 4.82 metres round. It stands in the shrine's wood rather than out in front, and unlike the camphors it has no name."
     },
     {
       "id": "hir_012",
@@ -438,7 +447,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Ministry of Environment giant-tree register (report_id 69339), surveyed 2000, girth 560cm, unrelated to the A-bombed register. Age genuinely disputed: one source about 300 years, another 135+, neither tied to a planting record, so age_estimate is left blank rather than picking a winner. The pin marks the Ujina Lighthouse (built 1950) beside which the tree stands; no independent tree-level survey coordinate exists."
+      "notes": "Ministry of Environment giant-tree register (report_id 69339), surveyed 2000, girth 560cm, unrelated to the A-bombed register. Age genuinely disputed: one source about 300 years, another 135+, neither tied to a planting record, so age_estimate is left blank rather than picking a winner. The pin marks the Ujina Lighthouse (built 1950) beside which the tree stands; no independent tree-level survey coordinate exists.",
+      "how_to_recognise": "You can recognise it by the lighthouse above it, a thick trunk 5.6 metres round under a spreading crown at the foot of the light. It stands in Motoujina Park on the water; our pin marks the lighthouse."
     },
     {
       "id": "hir_013",
@@ -470,7 +480,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "notes": "Ministry of Environment giant-tree register (report_id 69344), surveyed 2000, girth 350cm (the temple's own information board gives 320cm, used as girth_cm since it is the more specific site-level source). Age is temple tradition tied to the 1630 relocation (one account says 1624), corroborated by the register's own age band of 300 years or more; not a measured ring count. Pinned to the temple building (OSM place_of_worship node), no independent tree-level coordinate. Unrelated to the A-bombed register; the gate and Kannon hall beside it survived 1945, the pine's own history does not mention the bombing."
+      "notes": "Ministry of Environment giant-tree register (report_id 69344), surveyed 2000, girth 350cm (the temple's own information board gives 320cm, used as girth_cm since it is the more specific site-level source). Age is temple tradition tied to the 1630 relocation (one account says 1624), corroborated by the register's own age band of 300 years or more; not a measured ring count. Pinned to the temple building (OSM place_of_worship node), no independent tree-level coordinate. Unrelated to the A-bombed register; the gate and Kannon hall beside it survived 1945, the pine's own history does not mention the bombing.",
+      "how_to_recognise": "You can recognise it by the twenty-four wooden posts holding its branches out almost level: nine metres tall and twenty-six across. It stands in the grounds of Renkoji, beside the temple's Edo-period gate."
     },
     {
       "id": "hir_014",
@@ -509,7 +520,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the torii in front of it, put up in 2012 after the 1943 flood took the old one, and by the limbs reaching nearly ten metres north. It stands behind that gate at Tomohiro Shrine, 25 metres tall."
     },
     {
       "id": "hir_015",
@@ -541,7 +553,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, which divides three or four metres up into four stems each more than a metre thick. It stands on the descent path on Mount Togo, in national forest, at no address you can walk to."
     },
     {
       "id": "hir_016",
@@ -574,7 +587,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them as the three cedars past the Niomon gate, up the 53 stone steps, with a 2.2 metre stump beside them where a fourth was cut back in 2004. They stand about 37 metres tall at Fukuoji."
     },
     {
       "id": "hir_017",
@@ -607,10 +621,13 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "kind": "autumn colour",
         "label": "late November, when the whole crown turns gold"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the roots hanging out of its own branches in pale columns, which is what gives it the name Chichisagari, the milk-drop ginkgo. It stands in the grounds of Nukui Hachiman Shrine, 24 metres tall."
     }
   ]
 }

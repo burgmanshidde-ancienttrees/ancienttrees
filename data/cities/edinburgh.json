@@ -135,7 +135,8 @@
       "curation_status": "flagged",
       "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding. Location corrected 2026-07-28 to a park-level estimate (55.9564, -3.3215), then to a specific surveyed tree 2026-07-30: the Woodland Trust's Ancient Tree Inventory (queried directly via its public ArcGIS FeatureServer) has exactly one Ash within the reserve, record 102509, veteran status, measured girth 4.74m, matching this entry's own 'trunk over a metre and a half across' almost exactly (a 1.5m+ diameter implies a circumference of roughly 4.7m). Its coordinate independently reverse-geocodes to South Avenue, Cammo, postcode EH4 8AW, the same postcode already cited for this entry. Moved about 390m to the surveyed point and upgraded to confirmed.",
       "location_precision": "approximate",
-      "curation_status_note": "Pin precision downgraded 2026-08-09: the confirmed status rested on a coordinate a prior pass pulled from the Woodland Trust ATI FeatureServer, a source that is off-limits until their written permission arrives. The coordinate itself is retained as the best approximate knowledge but no longer claims confirmation. Re-confirm via a non-ATI source or the owner permission."
+      "curation_status_note": "Pin precision downgraded 2026-08-09: the confirmed status rested on a coordinate a prior pass pulled from the Woodland Trust ATI FeatureServer, a source that is off-limits until their written permission arrives. The coordinate itself is retained as the best approximate knowledge but no longer claims confirmation. Re-confirm via a non-ATI source or the owner permission.",
+      "how_to_recognise": "You can recognise it by the trunk, over a metre and a half across, one of the oldest ash trees in the city. It stands among the yews, rhododendron and pine of the Cammo Estate, past the ruined tower."
     },
     {
       "id": "edi_004",
@@ -174,7 +175,8 @@
         ],
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the broad flat tiers of branches, spreading further every decade since it was planted in 1826. It stands near the Glasshouses, which are shut for restoration until 2027."
     },
     {
       "id": "edi_005",
@@ -267,7 +269,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single source found for this tree's existence and girth claim (edinburghoutdoors.org). The 'Scottish champion' framing in that source conflicts with the Tree Register of Britain and Ireland's own published champion Camperdown elms, which it lists at Baxters Park, Dundee and Ayr Cemetery, not here, so the superlative is softened to an unconfirmed local claim per hard rule 8. No age data found anywhere; the range given is a rough estimate for a Victorian-introduced cultivar at a church rebuilt in 1894, not a sourced figure. Pin tightened 2026-07-28 to the church's own OSM/Nominatim geocode (~160-170m from the earlier estimate, which appears to have sat in Princes Street Gardens rather than at the church); still a building point rather than a tree-specific one, so precision stays approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the branches, arching down and knotting into themselves instead of reaching up, a low tangled canopy unlike anything else around it. It stands by the main door of St Cuthbert's."
     },
     {
       "id": "edi_008",
@@ -304,7 +307,8 @@
         ],
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, growing sideways out of bare rock and out over the water before turning back skyward. It stands at the start of the River Almond Walkway, its roots gripping a ledge."
     },
     {
       "id": "edi_009",
@@ -381,7 +385,8 @@
       },
       "curation_status": "flagged",
       "notes": "A candidate photo exists (Geograph, M J Richardson, CC BY-SA 2.0) but its own caption places it 'in the Royal Botanic Garden', a different corstorphinense specimen RBGE grows for conservation, not the churchyard replacement tree itself. Not used, to avoid the same misidentification error flagged in other cities' runs (e.g. Rome's Villa Torlonia, Amsterdam's Kirstenbosch photo). Exact replanting year of the current cutting not found in any source; age range is an estimate based on the 2005 death date. Pin tightened 2026-07-28 to the church's own OSM/Nominatim geocode (~110-150m from the earlier estimate), cross-checked against Historic Environment Scotland's listing for the same building; still a building point rather than a tree-specific one, so precision stays approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its age: a young tree, under 25 years, cloned from the golden-leaved original that died in 2005. It stands in the churchyard of Corstorphine Old Parish Church."
     },
     {
       "id": "edi_011",
@@ -404,7 +409,8 @@
       "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
       "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
       "location_precision": "approximate",
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the arrangement, a circle of giant sequoias over 24 metres tall, the space they enclose being the destination rather than any one trunk. It stands in the Upper Woodland Garden."
     },
     {
       "id": "edi_012",
@@ -427,7 +433,8 @@
       "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
       "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street; enter at the East Gate on Inverleith Row rather than the West Gate",
       "location_precision": "approximate",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise them by how small and easy to walk past they are, several grafted trees rather than one. They stand beside the coffee shop at the East Gate, with other Arran whitebeams alongside."
     },
     {
       "id": "edi_013",
@@ -457,7 +464,8 @@
       "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
       "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
       "location_precision": "approximate",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it in May by the hundreds of white bracts hanging and turning in any breeze, which are modified leaves rather than flowers. It stands in the Caledonian Hall area of the garden."
     },
     {
       "id": "edi_014",
@@ -487,7 +495,8 @@
       },
       "curation_status": "flagged",
       "notes": "RBGE's Garden Explorer living-collection database lists five specimens tracing to the same 1948 wild-collected seed accession (19480054), scattered across the garden; this entry is the Chinese Hillside individual (accession suffix *H), chosen because it sits closest to the rest of this Inverleith cluster. No planting date, girth or height is recorded for this specific specimen, only the 1948 seed-collection date, so age is estimated from seed arrival rather than a measured planting. No dated recent photo or news item confirms this exact specimen is alive today; the Garden Explorer entry is part of RBGE's actively maintained catalogue but that is not dated field evidence, so this ships flagged rather than confirmed. A future pass or a visitor could confirm which physical tree on the Chinese Hillside carries RBGE's own signage for this accession.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the conifer that drops its needles, rust orange, each autumn. It stands on the Chinese Hillside, one of five in the garden grown from the 1948 seed shipment."
     },
     {
       "id": "edi_015",
@@ -517,7 +526,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "UK & Ireland champion for girth per the Tree Register of the British Isles, corroborated independently by Trees and Shrubs Online (International Dendrology Society), which carries a dated August 2023 photo captioned 'in good health'. Planted 1981 from accession SABE 1317/19810835*B. Species carries two valid names in the literature, Sorbus hemsleyi and the more recent Griffitharia hemsleyi; this project keeps the Sorbus genus name for consistency with its other whitebeam entries (e.g. edi_012's Sorbus pseudomeinichii). Location is approximate: known by RBGE's own adoption-map bed code (E46) rather than a GPS-surveyed point.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the girth, on record with Britain's tree registry as the champion of its species. It stands in bed E46 near the Chinese Hillside, a few paces from the Catacol whitebeams."
     },
     {
       "id": "edi_016",
