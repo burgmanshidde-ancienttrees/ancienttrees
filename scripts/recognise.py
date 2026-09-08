@@ -171,19 +171,33 @@ def stuck(limit=40):
     print("\nBy city: " + ", ".join("%s %d" % (k, v) for k, v in top))
 
 
-def brief(slug):
+def brief(slug, gaps_only=False):
     path = os.path.join(ROOT, "data", "cities", slug + ".json")
     if not os.path.exists(path):
         print("no such city file: %s" % path)
         return 1
     doc = json.load(open(path, encoding="utf-8"))
     print("=== RECOGNITION BRIEF: %s ===" % doc["city"])
-    print("Write one sentence per tree, answering which of the trees in front of me")
-    print("is it. Re-state only: species, girth, height, setting, access, and what")
-    print("the story already says. Invent nothing. Deliver {\"id\": \"line\", ...}\n")
+    print("Write ONE sentence per tree, in this shape and no other:")
+    print("    You can recognise it by [what you can see]. It stands [where, or beside what].")
+    print("It answers a question somebody is asking out loud, 'how do I find it',")
+    print("so the reader is the subject. Not a caption, not an inventory.")
+    print("Re-state ONLY what is printed below: species, girth, height, setting,")
+    print("access, and what the story already says. A bark colour nobody recorded")
+    print("is fabrication. Under 240 characters. No em dashes.")
+    print("Deliver {\"id\": \"line\", ...}\n")
     for t in doc["trees"]:
         if t.get("how_to_recognise"):
             continue
+        # The trees that need it most: no photograph to compare against and a
+        # pin that only claims the place. A tree with a good photograph can be
+        # matched by eye, and an exact pin can be walked to.
+        if gaps_only:
+            ph0 = t.get("photo") or {}
+            if ph0.get("url") and ph0.get("status") != "held":
+                continue
+            if t.get("location_precision") == "confirmed":
+                continue
         loc = t.get("location") or {}
         ph = (t.get("photo") or {})
         print("--- %s  %s" % (t["id"], t.get("name")))
@@ -248,6 +262,8 @@ def main():
     ap.add_argument("--stuck", action="store_true",
                     help="trees with no line, no photo and remarkable company nearby")
     ap.add_argument("--brief")
+    ap.add_argument("--gaps", action="store_true",
+                    help="with --brief: only trees with no photo and a rough pin")
     ap.add_argument("--apply")
     ap.add_argument("--overwrite", action="store_true",
                     help="replace lines that already exist (deliberate rewrites only)")
@@ -256,7 +272,7 @@ def main():
         stuck()
         return 0
     if args.brief:
-        return brief(args.brief)
+        return brief(args.brief, gaps_only=args.gaps)
     if args.apply:
         return apply(args.apply, overwrite=args.overwrite)
     report()
