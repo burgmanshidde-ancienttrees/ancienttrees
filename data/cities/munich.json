@@ -584,14 +584,17 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "access": "",
-      "verified_sources": [],
+      "verified_sources": [
+        "https://stadt.muenchen.de/rathaus/stadtrecht/vorschrift/910/version2/0.html"
+      ],
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "transport": ""
+      "transport": "",
+      "verify_notes": "2026-09-08: source field was empty while the story already quoted Munich's Verordnung ueber Naturdenkmaeler. Checked the ordinance directly; both entries are in it verbatim. Single source, so flagged."
     },
     {
       "id": "muc_021",
@@ -616,14 +619,17 @@
         "kind": "autumn colour",
         "label": "late October into November, when a crown this size turns the whole clearing copper"
       },
-      "verified_sources": [],
+      "verified_sources": [
+        "https://stadt.muenchen.de/rathaus/stadtrecht/vorschrift/910/version2/0.html"
+      ],
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "transport": ""
+      "transport": "",
+      "verify_notes": "2026-09-08: source field was empty while the story already quoted Munich's Verordnung ueber Naturdenkmaeler. Checked the ordinance directly; both entries are in it verbatim. Single source, so flagged."
     },
     {
       "id": "muc_022",

@@ -911,6 +911,44 @@ def check_no_sender_names():
 
 
 
+def check_every_tree_names_a_source():
+    """A published tree must name at least one source. The ratchet, twice earned.
+
+    Nara, 2026-09-07: four trees were published straight from a reader's
+    photographs with `verified_sources: []`. Not thin evidence, none. The run
+    reached for two real rules and used them where they do not reach.
+    "Publish and ask" (2026-08-13) covers an empty FIELD on a tree that clears
+    the bar; it does not decide whether the tree clears it. "A judgement call
+    never blocks publication" (2026-08-10) lists what does block, and the
+    research standard is on that list. Each of the four stories argued against
+    its own page: the Nigatsu-do slope "holds cedars like this by the dozen".
+
+    Munich, earlier and differently: muc_020 and muc_021 quoted the city's
+    Verordnung ueber Naturdenkmaeler in their prose and left the field empty,
+    which is bookkeeping rather than invention. The data cannot tell those two
+    cases apart, and that is the point: an empty field is unauditable either
+    way, so it is refused either way and the fix is one line of typing.
+
+    Two occasions on two days is the ratchet in CLAUDE.md, so this stops being
+    a lesson and becomes a check. It deliberately asks for ONE, not the two the
+    research standard wants, because a single source plus `flagged` is already
+    allowed by Step 2 and this check is the floor, not the standard.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            srcs = [s for s in (tree.get("verified_sources") or []) if str(s).strip()]
+            if not srcs:
+                out.append("%s: %s (%s) is published with no verified_sources at "
+                           "all. One source minimum, and set curation_status to "
+                           "flagged when it is the only one. If none exists, the "
+                           "tree belongs in data/leads/, not on a city page."
+                           % (path, tree.get("id"), tree.get("name")))
+    return out
+
+
 def check_contributor_photos_are_traceable():
     """A reader's photograph must carry the account that sent it.
 
@@ -1573,7 +1611,8 @@ def main():
                 + check_translated_components_are_neutral()
                 + check_no_two_language_switch()
                 + check_pin_is_in_its_own_country()
-                + check_contributor_photos_are_traceable())
+                + check_contributor_photos_are_traceable()
+                + check_every_tree_names_a_source())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
