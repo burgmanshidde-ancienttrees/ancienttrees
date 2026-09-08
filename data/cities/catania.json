@@ -57,7 +57,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 1400
+      "girth_cm": 1400,
+      "how_to_recognise": "You can recognise it by the long, coiling sprawl of root buttresses spreading across the ground like tentacles. It stands in Villa Bellini on Via Etnea, Catania's main public park."
     },
     {
       "id": "cat_002",
@@ -92,7 +93,8 @@
       },
       "height_m": 45.0,
       "verify_notes": "Height 45.0 m from the italy-masaf register, matched on our own pin (0 m away). 2026-09-04: a deepen pass on Catania found this tree's own citation and story text quoted the neighbour's girth (340cm) instead of its own (300cm, which matches sheet 03 at this pin's exact coordinate); corrected the citation and prose, girth_cm field was already right.",
-      "girth_cm": 300
+      "girth_cm": 300,
+      "how_to_recognise": "You can recognise it by its straight bare trunk topped with a dark, dome-shaped crown of stiff spiralled leaves. It stands in Villa Bellini, twenty to thirty metres from its near-identical bunya pine neighbour."
     },
     {
       "id": "cat_003",
@@ -127,7 +129,8 @@
       },
       "height_m": 40.0,
       "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away). 2026-09-04: this tree's citation quoted the neighbour's girth (300cm) instead of its own (340cm, which matches sheet 02 at this pin's exact coordinate); corrected. Note this tree is named 'Smaller' but its own register girth (340cm) is larger than its neighbour's (300cm); RAMI's independent measurements run the other way (305 vs 333), so which is truly thicker is genuinely disputed between the two sources and the names are not re-ordered on that basis alone, per house style on not over-precisifying a girth comparison.",
-      "girth_cm": 340
+      "girth_cm": 340,
+      "how_to_recognise": "You can recognise it by standing near enough identical to its bunya pine neighbour nearby, forty centimetres smaller round the trunk. It stands in Villa Bellini, a few steps from the larger of the pair."
     },
     {
       "id": "cat_004",
@@ -164,7 +167,8 @@
       "height_m": 7.0,
       "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "girth_cm": 200
+      "girth_cm": 200,
+      "how_to_recognise": "You can recognise it by its pale grey trunk forking into a flat crown of stiff blue-green rosettes, flanking the botanical garden's marble staircase. It stands beside an identical dragon tree on the opposite side of the steps."
     }
   ]
 }
