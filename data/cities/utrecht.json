@@ -1034,7 +1034,7 @@
     {
       "id": "utr_031",
       "name": "The Old Pear of the Geertebolwerk",
-      "species": "Pear (Pyrus sp.)",
+      "species": "European Pear (Pyrus communis)",
       "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900-1910",
       "age_min": 116,
       "age_max": 126,
@@ -1066,7 +1066,9 @@
         "label": "April, when it goes white all over at the water's edge"
       },
       "how_to_recognise": "You can recognise it as a small, modest pear tree that still flowers and fruits each year, easy to walk past among the larger planes and beeches. It stands on Geertebolwerk, at the water's edge level with Zilverstraat.",
-      "verify_notes": "Pin corrected 2026-09-08. The file carried 52.08586, 5.12903, which is utr_018's coordinate on the Servaasbolwerk beside the observatory, about 750 metres east of this tree: a copy error, and it was marked confirmed. LRMB entry nr 1678119 places it at 52.086488, 5.118036, 'Geertebolwerk t.h.v. Zilverstraat a/h water', which matches the address this entry already carried. Every other Utrecht entry was checked against its register row in the same pass and all matched exactly."
+      "verify_notes": "Pin corrected 2026-09-08. The file carried 52.08586, 5.12903, which is utr_018's coordinate on the Servaasbolwerk beside the observatory, about 750 metres east of this tree: a copy error, and it was marked confirmed. LRMB entry nr 1678119 places it at 52.086488, 5.118036, 'Geertebolwerk t.h.v. Zilverstraat a/h water', which matches the address this entry already carried. Every other Utrecht entry was checked against its register row in the same pass and all matched exactly.",
+      "girth_cm": 182,
+      "height_m": 11
     },
     {
       "id": "utr_032",
