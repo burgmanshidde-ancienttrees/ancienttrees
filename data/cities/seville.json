@@ -359,7 +359,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single-source tree: the 'only camphor tree in Seville' claim and its 2016 proposal for the singular-trees catalogue both trace to one dedicated local gardens blog, and no second independent source confirming this specific specimen was found despite a real search. Kept on the list because the underlying facts (species rarity, general behaviour, 2023 memorial corner nearby) are independently verifiable even though this exact tree is not cross-confirmed; age left as unknown rather than guessed.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "In the Glorieta de Doña Sol clearing, and the only confirmed camphor tree in Seville, so nothing else in the park is this species."
     },
     {
       "id": "sev_011",
@@ -635,7 +636,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Single source, the municipal catalogue, hence flagged. Pin marked approximate deliberately: the catalogue places the tree in the Jardin Ingles, but its coordinate sits about 80 metres west of the pin this site already publishes for the ginkgo grove in that same garden (sev_001), and the catalogue is known to carry misplaced coordinates (its ficha 15 holds ficha 14's position, 1.2 km away). Inside a walled ticketed garden the named location does the work the pin cannot. The 1910 planting date for the English Garden comes from sev_001's sources and is stated about the garden, not about this tree. best_time follows the species' well known March flowering in southern Spain, not a dated local record.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "In the Alcázar's English Garden, sixteen metres tall where a Judas tree normally stops at eight or ten, with a trunk 2.20 metres round. In March the magenta flowers open straight out of the bare bark."
     },
     {
       "id": "sev_019",
@@ -674,7 +676,8 @@
         ],
         "label": "March to April, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "how_to_recognise": "Between the Pabellón de Carlos V and the Cenador del León: a broad old stool two metres round at the ground with a thin trunk only 36 centimetres round rising out of it, three metres tall."
     },
     {
       "id": "sev_020",
@@ -736,7 +739,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Coordinate is the catalogue's own; not independently re-verified against a second source, so pin stays approximate."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Coordinate is the catalogue's own; not independently re-verified against a second source, so pin stays approximate.",
+      "how_to_recognise": "By the Torre Norte, 44 metres and the second tallest tree in the city's own survey, its branches in even whorls up a perfectly straight trunk."
     },
     {
       "id": "sev_022",
@@ -768,7 +772,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. Filed as Platanus x hispanica; this site uses London Plane (Platanus x acerifolia) throughout per hard rule 9. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. Filed as Platanus x hispanica; this site uses London Plane (Platanus x acerifolia) throughout per hard rule 9. No age given, none claimed.",
+      "how_to_recognise": "In the Glorieta de Juanita Reina, 4.42 metres round at chest height and 5.02 at the base, 25 metres tall. The park's other great plane, on the Avenida de Bécquer, is wider still but shorter."
     },
     {
       "id": "sev_023",
@@ -800,7 +805,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Coordinate is the catalogue's own, not independently verified."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Coordinate is the catalogue's own, not independently verified.",
+      "how_to_recognise": "On the artificial hill of Monte Gurugú, with the flat umbrella crown the species is named for, 21.5 metres across and among the widest in the city's catalogue."
     },
     {
       "id": "sev_024",
@@ -839,7 +845,8 @@
         "kind": "autumn colour",
         "label": "November, when it drops its needles like a deciduous tree, the habit that confuses visitors expecting a conifer to stay green"
       },
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Coordinate is the catalogue's own, not independently verified."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Coordinate is the catalogue's own, not independently verified.",
+      "how_to_recognise": "On the Isla de los Patos in the pond, 35.7 metres and the tallest deciduous conifer in the city's survey. It drops its needles and stands bare through winter, which no other conifer here does."
     },
     {
       "id": "sev_025",
@@ -871,7 +878,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. Filed as Platanus x hispanica; London Plane (Platanus x acerifolia) used per hard rule 9. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. Filed as Platanus x hispanica; London Plane (Platanus x acerifolia) used per hard rule 9. No age given, none claimed.",
+      "how_to_recognise": "On the Avenida de Bécquer, 4.70 metres round and the widest plane in the city's survey, about 6 metres at the base, though at 23 metres shorter than the plane in the Glorieta de Juanita Reina."
     },
     {
       "id": "sev_026",
@@ -904,7 +912,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Pin approximate: inside a large walled garden with several other catalogued trees close together, the named corner location is the more reliable guide.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "At a corner of the Alcázar's inner wall, fifteen metres tall, its trunk wrapped in the dense fibrous mat this palm never sheds."
     },
     {
       "id": "sev_027",
@@ -936,7 +945,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. girth_130_cm not applicable (catalogue records base girth of two stems only), so girth_cm left unset rather than guessed.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "At the Puerta de Marchena, a climber grown into two woody trunks, 91 and 54 centimetres round at the base, rising thirteen metres."
     },
     {
       "id": "sev_028",
@@ -969,7 +979,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "In the garden around the Cenador del León pavilion, 7.2 metres tall where this palm usually stays a low clump under three."
     },
     {
       "id": "sev_029",
@@ -1001,7 +1012,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Not a palm despite the common name; the story says so directly rather than letting the name mislead.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "In the Jardín de las Damas, 5.5 metres tall, which is a very long accumulation for a cycad: they add a centimetre or two a year."
     },
     {
       "id": "sev_030",
@@ -1033,7 +1045,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed.",
+      "how_to_recognise": "In the San Fernando cemetery, 23 metres tall with a trunk 2.79 metres round, in the narrow flame-shaped silhouette the species is known for."
     },
     {
       "id": "sev_031",
@@ -1065,7 +1078,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Not claimed as tallest in the catalogue: two trees already published or added this pass (the Torre Norte araucaria, the Isla de los Patos taxodium) are taller or the survey's own ranking differs; this entry says third tallest per the survey's measurements alone."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Not claimed as tallest in the catalogue: two trees already published or added this pass (the Torre Norte araucaria, the Isla de los Patos taxodium) are taller or the survey's own ranking differs; this entry says third tallest per the survey's measurements alone.",
+      "how_to_recognise": "Over the residential Calle Pedro Salinas, 42 metres and the third tallest tree in the city's survey, 5.30 metres round at chest height and 7.70 at the base, plainly out of scale with the buildings around it."
     },
     {
       "id": "sev_032",
@@ -1096,7 +1110,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed.",
+      "how_to_recognise": "In the Jardines de Chapina along the old canal, two trunks from one root at 2.10 and 1.97 metres round. The other Indian laurel fig we map stands 500 metres away at El Altozano."
     },
     {
       "id": "sev_033",
@@ -1135,7 +1150,8 @@
         "kind": "fruit",
         "label": "June, when the mulberries ripen and drop"
       },
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed.",
+      "how_to_recognise": "By the old Cortijo farmstead inside the Parque del Alamillo, with a trunk 4 metres round, unusually thick for a mulberry."
     },
     {
       "id": "sev_034",
@@ -1166,7 +1182,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed.",
+      "how_to_recognise": "In the Jardines de las Delicias, several curved leaning stems from one clump rather than the single straight trunk of the other palms, 9.70 metres round at the base."
     },
     {
       "id": "sev_035",
@@ -1198,7 +1215,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Access described as open per the Spanish public-university convention (compare Cork's UCC arboretum, already published on this site); not independently confirmed for this specific campus, so worded without overclaiming a guarantee."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Access described as open per the Spanish public-university convention (compare Cork's UCC arboretum, already published on this site); not independently confirmed for this specific campus, so worded without overclaiming a guarantee.",
+      "how_to_recognise": "On the engineering school campus on Avenida Reina Mercedes, 26 metres tall with a trunk 2.50 metres round."
     },
     {
       "id": "sev_036",
@@ -1237,7 +1255,8 @@
         "kind": "flowers",
         "label": "June, when sprays of yellow-orange flowers cover the crown and then carpet the ground beneath it"
       },
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed.",
+      "how_to_recognise": "In the Parque de los Príncipes, 32 metres and taller than anything else here planted for its flowers; in early summer the whole crown carries yellow-orange sprays and the pavement below turns the same colour."
     },
     {
       "id": "sev_037",
@@ -1269,7 +1288,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Species name follows the catalogue's own current taxonomy (Parasenegalia visco); the older synonym Acacia visco is noted in the story since it is the more commonly used name in most sources."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Species name follows the catalogue's own current taxonomy (Parasenegalia visco); the older synonym Acacia visco is noted in the story since it is the more commonly used name in most sources.",
+      "how_to_recognise": "On the Paseo de Colón opposite the Maestranza bullring, 12.3 metres with a trunk 1.75 metres round, and a species rarely planted anywhere in Europe."
     },
     {
       "id": "sev_038",
