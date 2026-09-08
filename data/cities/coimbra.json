@@ -48,7 +48,12 @@
       ],
       "access": "Paid entry, University of Coimbra Botanical Garden ticket; reached through the Arcos do Jardim gate under the aqueduct arches.",
       "transport": "5-10 minute walk from Praca da Republica / central Coimbra.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "paid_entry": true
@@ -75,9 +80,15 @@
       ],
       "access": "Free; inside the Mata Nacional de Vale de Canas, a small enclosed national forest with a marked path from a small parking area.",
       "transport": "About 3.6 km from central Coimbra (car or taxi), then roughly a 15-minute walk from the parking area.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as the tallest tree in Europe, somewhere between 73 and 75 metres depending on who measured it. It stands in the Mata Nacional de Vale de Canas, a quarter hour's walk from the car park."
     },
     {
       "id": "cbr_003",
@@ -101,9 +112,15 @@
       ],
       "access": "Free; same Mata Nacional de Vale de Canas forest as the Karri Knight, a few dozen metres away on the same path.",
       "transport": "Same as the Karri Knight: about 3.6 km from central Coimbra, then a roughly 15-minute walk from the parking area.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its mast-like trunk, the tallest bunya pine recorded in Portugal, standing a few dozen metres from the Karri Knight on the same path. It stands in the Mata Nacional de Vale de Canas."
     },
     {
       "id": "cbr_004",
@@ -126,7 +143,12 @@
       ],
       "access": "On the campus of ESAC, a public agricultural college in Bencanta; visible from campus paths. General public walk-in access was not independently confirmed this pass; the school directs formal visit requests through its external relations office (gac@esac.pt), so it is worth confirming before a special trip.",
       "transport": "Near the Bencanta railway station (Linha do Norte, Coimbra suburban services), about 3.7 km from central Coimbra.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
       "curation_status": "flagged"
     }
