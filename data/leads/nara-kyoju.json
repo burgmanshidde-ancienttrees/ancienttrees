@@ -32,7 +32,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47003,
@@ -53,7 +54,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47004,
@@ -74,7 +76,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47005,
@@ -95,7 +98,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47006,
@@ -116,7 +120,8 @@
    "facility_ja": "奈良豆比古神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（b都道府県）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Matches the already-published nra_001 (The Giant Camphor of Naratsuhiko Shrine); this register row's 800cm figure is the one already on that page."
   },
   {
    "report_id": 47007,
@@ -136,7 +141,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47008,
@@ -155,7 +161,8 @@
    "sign_ja": "なし",
    "owner_ja": "社寺",
    "age_band_ja": "200～299年",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47010,
@@ -175,7 +182,8 @@
    "owner_ja": "社寺",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47011,
@@ -195,7 +203,8 @@
    "owner_ja": "社寺",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47012,
@@ -215,7 +224,8 @@
    "owner_ja": "社寺",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47013,
@@ -235,7 +245,8 @@
    "owner_ja": "社寺",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47014,
@@ -253,7 +264,8 @@
    "height_m_detail": "13m",
    "sign_ja": "なし",
    "owner_ja": "社寺",
-   "designation_ja": "天然記念物（c市町村）"
+   "designation_ja": "天然記念物（c市町村）",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47015,
@@ -271,7 +283,8 @@
    "height_m_detail": "14m",
    "sign_ja": "なし",
    "owner_ja": "社寺",
-   "designation_ja": "天然記念物（c市町村）"
+   "designation_ja": "天然記念物（c市町村）",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47017,
@@ -289,7 +302,8 @@
    "height_m_detail": "20m",
    "sign_ja": "なし",
    "owner_ja": "社寺",
-   "designation_ja": "天然記念物（c市町村）"
+   "designation_ja": "天然記念物（c市町村）",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47018,
@@ -307,7 +321,8 @@
    "height_m_detail": "23m",
    "sign_ja": "なし",
    "owner_ja": "社寺",
-   "designation_ja": "天然記念物（c市町村）"
+   "designation_ja": "天然記念物（c市町村）",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47019,
@@ -325,7 +340,8 @@
    "height_m_detail": "13m",
    "sign_ja": "なし",
    "owner_ja": "社寺",
-   "designation_ja": "天然記念物（c市町村）"
+   "designation_ja": "天然記念物（c市町村）",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47020,
@@ -343,7 +359,8 @@
    "height_m_detail": "20m",
    "sign_ja": "なし",
    "owner_ja": "社寺",
-   "designation_ja": "天然記念物（c市町村）"
+   "designation_ja": "天然記念物（c市町村）",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47021,
@@ -361,7 +378,8 @@
    "height_m_detail": "25m",
    "sign_ja": "なし",
    "owner_ja": "社寺",
-   "designation_ja": "天然記念物（c市町村）"
+   "designation_ja": "天然記念物（c市町村）",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47022,
@@ -381,7 +399,8 @@
    "owner_ja": "社寺",
    "town_ja": "飛火野",
    "age_band_ja": "99年以下",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47023,
@@ -400,7 +419,8 @@
    "sign_ja": "なし",
    "owner_ja": "社寺",
    "age_band_ja": "100～199年",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47024,
@@ -419,7 +439,8 @@
    "sign_ja": "なし",
    "owner_ja": "社寺",
    "age_band_ja": "300年以上",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47025,
@@ -440,7 +461,8 @@
    "facility_ja": "春日山原生林",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47026,
@@ -461,7 +483,8 @@
    "facility_ja": "春日山原生林",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47027,
@@ -482,7 +505,8 @@
    "facility_ja": "春日山原生林",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47028,
@@ -503,7 +527,8 @@
    "facility_ja": "春日山原生林",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47029,
@@ -522,7 +547,8 @@
    "sign_ja": "なし",
    "owner_ja": "国",
    "facility_ja": "春日山原生林",
-   "designation_ja": "天然記念物（a国）"
+   "designation_ja": "天然記念物（a国）",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47030,
@@ -541,7 +567,8 @@
    "sign_ja": "なし",
    "owner_ja": "国",
    "facility_ja": "春日山原生林",
-   "designation_ja": "天然記念物（a国）"
+   "designation_ja": "天然記念物（a国）",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47031,
@@ -560,7 +587,8 @@
    "sign_ja": "なし",
    "owner_ja": "国",
    "facility_ja": "春日山原生林",
-   "designation_ja": "天然記念物（a国）"
+   "designation_ja": "天然記念物（a国）",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47032,
@@ -579,7 +607,8 @@
    "sign_ja": "なし",
    "owner_ja": "国",
    "facility_ja": "春日山原生林",
-   "designation_ja": "天然記念物（a国）"
+   "designation_ja": "天然記念物（a国）",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47033,
@@ -598,7 +627,8 @@
    "sign_ja": "なし",
    "owner_ja": "国",
    "facility_ja": "春日山原生林",
-   "designation_ja": "天然記念物（a国）"
+   "designation_ja": "天然記念物（a国）",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47034,
@@ -617,7 +647,8 @@
    "sign_ja": "なし",
    "owner_ja": "国",
    "facility_ja": "春日山原生林",
-   "designation_ja": "天然記念物（a国）"
+   "designation_ja": "天然記念物（a国）",
+   "why": "Blocked: already covered by this file's existing 'Kasugayama Primeval Forest' and 'Kasuga Ichiigashi giant-tree group' entries. A wood, not a collectible point, and likely off-trail."
   },
   {
    "report_id": 47035,
@@ -636,7 +667,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47036,
@@ -656,7 +688,8 @@
    "owner_ja": "法人等",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47037,
@@ -676,7 +709,8 @@
    "owner_ja": "個人",
    "age_band_ja": "不明",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47038,
@@ -696,7 +730,8 @@
    "owner_ja": "社寺",
    "age_band_ja": "不明",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47039,
@@ -716,7 +751,8 @@
    "owner_ja": "個人",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47040,
@@ -737,7 +773,8 @@
    "town_ja": "中町",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47042,
@@ -760,7 +797,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47043,
@@ -783,7 +821,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47044,
@@ -806,7 +845,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47045,
@@ -829,7 +869,8 @@
    "facility_ja": "水越神社",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'The Cedars of Mizukoshi Shrine' in data/leads/nara.json): well-verified as a Nara City natural monument (1985-03-07) but BLOCKED for distance, a well-over-an-hour round trip from central Nara by bus plus a 25-minute walk, matching this file's Takiyama/Shoryaku-ji distance precedent. The register's 8 rows for this shrine resolve to at most 3-4 living cedars (near-duplicate girths from two survey passes); one of four originally registered cedars is already known dead and removed."
   },
   {
    "report_id": 47047,
@@ -849,7 +890,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47048,
@@ -870,7 +912,8 @@
    "town_ja": "春日野町飛火野",
    "facility_ja": "春日大社",
    "age_band_ja": "99年以下",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Nara-kyoju's biggest tree in the whole extract: 1110cm kusunoki at facility '春日大社' (register text; the course-guide cross-check in data/research/nara-kyoju-shortlist.md places it at Tobihino/飛火野). NOT applied to nra_005 (The Camphors of Tobihino): that entry is an ensemble ('three camphor brothers') and hanging one single-trunk measurement on it would be the bridge-claim error. Also its age band (99 years or under) does not fit an 11m-round trunk, suggesting a multi-stem measured as one. A dedicated pass should settle which trunk (if any at Tobihino) actually carries this figure before it ships as anything."
   },
   {
    "report_id": 47050,
@@ -891,7 +934,8 @@
    "town_ja": "春日野町",
    "facility_ja": "春日大社",
    "age_band_ja": "300年以上",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Considered for nra_006 (The Thickest Black Pine of Nara Park... actually the Great Nagi) then SUPERSEDED: a first pass used this row's 342cm, then corrected within the hour because Kasuga Taisha holds a whole nagi grove and this is not provably the same tree as the one at the published pin. nra_006 now cites the ministry's own Nara Park course guide (330cm/13m) instead. Not deleted: kept as a lead in case a second nagi at Kasuga Taisha is ever worth its own entry."
   },
   {
    "report_id": 47051,
@@ -912,7 +956,8 @@
    "town_ja": "今小路町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47052,
@@ -931,7 +976,8 @@
    "sign_ja": "なし",
    "owner_ja": "個人",
    "age_band_ja": "不明",
-   "designation_ja": "なし"
+   "designation_ja": "なし",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47053,
@@ -954,7 +1000,8 @@
    "facility_ja": "白亳寺",
    "age_band_ja": "不明",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead: \"Byakugo-ji's second tree (Zelkova)\" in data/leads/nara.json. 310cm zelkova at the same temple as the published nra_003 camellia. No designation, no independent source naming this tree; low priority."
   },
   {
    "report_id": 47054,
@@ -974,7 +1021,8 @@
    "owner_ja": "個人",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47055,
@@ -997,7 +1045,8 @@
    "facility_ja": "淨福寺",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead ('Minor undesignated shrine trees', data/leads/nara.json): Ilex rotunda, 315cm, no designation, not geocoded, no independent source."
   },
   {
    "report_id": 47057,
@@ -1019,7 +1068,8 @@
    "facility_ja": "菅原神社",
    "age_band_ja": "100～199年",
    "designation_ja": "不明",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 2 rows (camphor 300cm, hackberry 323cm), no designation, likely the same precinct as the 天満宮 rows above. Deprioritised: no source describes individual giant trees on these grounds."
   },
   {
    "report_id": 47058,
@@ -1041,7 +1091,8 @@
    "address_ja": "13",
    "facility_ja": "唐招提寺内水鏡社",
    "age_band_ja": "不明",
-   "designation_ja": "なし"
+   "designation_ja": "なし",
+   "why": "Lead: 'Toshodai-ji's camphor at Mizukagami Shrine' in data/leads/nara.json. 360cm camphor, age/health fields blank even in the register. Toshodai-ji itself confirmed real and unrepresented on our city page; Mizukagami Shrine confirmed as the temple's historic guardian shrine (ja.wikipedia.org). No source yet names a specific giant camphor there; toshodaiji.jp itself not tried."
   },
   {
    "report_id": 47059,
@@ -1063,7 +1114,8 @@
    "facility_ja": "菅原神社",
    "age_band_ja": "不明",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 2 rows (camphor 300cm, hackberry 323cm), no designation, likely the same precinct as the 天満宮 rows above. Deprioritised: no source describes individual giant trees on these grounds."
   },
   {
    "report_id": 47060,
@@ -1083,7 +1135,8 @@
    "owner_ja": "不明",
    "age_band_ja": "99年以下",
    "designation_ja": "不明",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47061,
@@ -1103,7 +1156,8 @@
    "owner_ja": "不明",
    "age_band_ja": "100～199年",
    "designation_ja": "不明",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47062,
@@ -1124,7 +1178,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47063,
@@ -1145,7 +1200,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47064,
@@ -1166,7 +1222,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47065,
@@ -1187,7 +1244,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47066,
@@ -1208,7 +1266,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47067,
@@ -1229,7 +1288,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47068,
@@ -1250,7 +1310,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47069,
@@ -1271,7 +1332,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47070,
@@ -1292,7 +1354,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47071,
@@ -1313,7 +1376,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47072,
@@ -1334,7 +1398,8 @@
    "town_ja": "春日野周遊道路",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47073,
@@ -1356,7 +1421,8 @@
    "facility_ja": "春日若宮",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Shipped as nra_018, The Enoki of Wakamiya."
   },
   {
    "report_id": 47074,
@@ -1378,7 +1444,8 @@
    "facility_ja": "春日大社",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead: 'Kasuga Taisha's other giant trees (ginkgo, deer park camphor)' in data/leads/nara.json. 430cm ginkgo at the main shrine, no designation. No independent second source found yet (kasugataisha.or.jp's forest-walk pages hang on fetch); try a Wayback Machine snapshot of guidance/morisanpo2/ next."
   },
   {
    "report_id": 47075,
@@ -1402,7 +1469,8 @@
    "age_band_ja": "300年以上",
    "age_lore_ja": "D年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Matches the already-published nra_002 (The Great Cedar of Kasuga Taisha); this register row's 720cm figure is the one already on that page."
   },
   {
    "report_id": 47076,
@@ -1424,7 +1492,8 @@
    "facility_ja": "東大寺二月堂",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Shipped as nra_015, The Kaya of Nigatsu-do."
   },
   {
    "report_id": 47077,
@@ -1446,7 +1515,8 @@
    "facility_ja": "春日大社鹿苑",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Lead: 'Kasuga Taisha's other giant trees (ginkgo, deer park camphor)' in data/leads/nara.json. 462cm camphor at Rokuen deer park, NATIONALLY designated per the register, Rokuen itself confirmed open to visitors. No independent second source found yet for this specific tree."
   },
   {
    "report_id": 47078,
@@ -1468,7 +1538,8 @@
    "facility_ja": "春日若宮",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）、都市公園（b都道府県）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Shipped as nra_017, The Great Camphor of Wakamiya."
   },
   {
    "report_id": 47079,
@@ -1490,7 +1561,8 @@
    "facility_ja": "手向山八幡宮",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Shipped as nra_016, The Saw-leaf Zelkova of Tamukeyama Hachimangu."
   },
   {
    "report_id": 47080,
@@ -1512,7 +1584,8 @@
    "facility_ja": "東大寺",
    "age_band_ja": "100～199年",
    "designation_ja": "天然記念物（a国）、都市公園（b都道府県）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Lead: 'Todai-ji's other designated trees (Aragashi, Konara)' in data/leads/nara.json. Konara oak, 302cm, nationally + prefecturally designated, but the register itself flags visibility as needing a close approach. No independent second source found yet; the ministry's own Nara Park course guide PDF could not be parsed this pass (no PDF tool in that pass's environment)."
   },
   {
    "report_id": 47081,
@@ -1534,7 +1607,8 @@
    "facility_ja": "東大寺",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（a国）、都市公園（b都道府県）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Matches the already-published nra_008 (The Chinaberry of the East Pagoda Ruins); this register row's 425cm figure is recorded there as the database's own survey figure alongside the course guide's 450cm."
   },
   {
    "report_id": 47082,
@@ -1556,7 +1630,8 @@
    "facility_ja": "東大寺",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（b都道府県）、都市公園（b都道府県）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead: 'Todai-ji's other designated trees (Aragashi, Konara)' in data/leads/nara.json. Arakashi (Japanese blue oak), 365cm, prefecturally + urban-park designated. No independent second source found yet; same PDF-parsing gap as the Konara row."
   },
   {
    "report_id": 47083,
@@ -1577,7 +1652,8 @@
    "town_ja": "高畑町飛火野南",
    "age_band_ja": "200～299年",
    "designation_ja": "天然記念物（a国）",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47084,
@@ -1599,7 +1675,8 @@
    "facility_ja": "白山神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead ('Minor undesignated shrine trees', data/leads/nara.json): ginkgo, 318cm, no designation, not geocoded, no independent source."
   },
   {
    "report_id": 47086,
@@ -1621,7 +1698,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47087,
@@ -1643,7 +1721,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47088,
@@ -1665,7 +1744,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47089,
@@ -1687,7 +1767,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47090,
@@ -1709,7 +1790,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47091,
@@ -1731,7 +1813,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47092,
@@ -1753,7 +1836,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47093,
@@ -1775,7 +1859,8 @@
    "facility_ja": "天満宮",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Lead (Sugawara-area shrines, data/leads/nara.json): 8 rows, 300-455cm, no designation. Best guess is Sugawara Tenmangu (Japan's oldest Tenmangu shrine, west Nara) but not confirmed against these specific rows; needs a geocoding pass since more than one facility of this name exists in the raw data."
   },
   {
    "report_id": 47094,
@@ -1797,7 +1882,8 @@
    "facility_ja": "夜支布山口神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead (Yagyu Yamaguchi Shrine cedars, data/leads/nara.json): 5 rows, 377-540cm, no official designation, in the Yagyu hamlet roughly 12-16km from central Nara by road. Distance not independently timed; check Nara Kotsu bus timetables before spending more time, and a second source is needed regardless of distance."
   },
   {
    "report_id": 47095,
@@ -1819,7 +1905,8 @@
    "facility_ja": "夜支布山口神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead (Yagyu Yamaguchi Shrine cedars, data/leads/nara.json): 5 rows, 377-540cm, no official designation, in the Yagyu hamlet roughly 12-16km from central Nara by road. Distance not independently timed; check Nara Kotsu bus timetables before spending more time, and a second source is needed regardless of distance."
   },
   {
    "report_id": 47096,
@@ -1841,7 +1928,8 @@
    "facility_ja": "夜支布山口神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead (Yagyu Yamaguchi Shrine cedars, data/leads/nara.json): 5 rows, 377-540cm, no official designation, in the Yagyu hamlet roughly 12-16km from central Nara by road. Distance not independently timed; check Nara Kotsu bus timetables before spending more time, and a second source is needed regardless of distance."
   },
   {
    "report_id": 47097,
@@ -1863,7 +1951,8 @@
    "facility_ja": "夜支布山口神社",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead (Yagyu Yamaguchi Shrine cedars, data/leads/nara.json): 5 rows, 377-540cm, no official designation, in the Yagyu hamlet roughly 12-16km from central Nara by road. Distance not independently timed; check Nara Kotsu bus timetables before spending more time, and a second source is needed regardless of distance."
   },
   {
    "report_id": 47098,
@@ -1885,7 +1974,8 @@
    "facility_ja": "夜支布山口神社",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead (Yagyu Yamaguchi Shrine cedars, data/leads/nara.json): 5 rows, 377-540cm, no official designation, in the Yagyu hamlet roughly 12-16km from central Nara by road. Distance not independently timed; check Nara Kotsu bus timetables before spending more time, and a second source is needed regardless of distance."
   },
   {
    "report_id": 47455,
@@ -1907,7 +1997,8 @@
    "facility_ja": "石打寺脇",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead ('Minor undesignated shrine trees', data/leads/nara.json): sugi, 378cm, no designation, not geocoded, no independent source."
   },
   {
    "report_id": 47456,
@@ -1929,7 +2020,8 @@
    "facility_ja": "石打人柱神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Lead ('Minor undesignated shrine trees', data/leads/nara.json): sugi, 370cm, no designation, not geocoded, no independent source."
   },
   {
    "report_id": 47457,
@@ -1949,7 +2041,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "自然公園（c都道府県立自然公園）",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47458,
@@ -1969,7 +2062,8 @@
    "owner_ja": "個人",
    "age_band_ja": "200～299年",
    "designation_ja": "自然公園（c都道府県立自然公園）",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47459,
@@ -1991,7 +2085,8 @@
    "facility_ja": "八王神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead ('Minor undesignated shrine trees', data/leads/nara.json): Tsuburajii (chinquapin), 395cm, no monument designation, not geocoded, no independent source."
   },
   {
    "report_id": 47460,
@@ -2011,7 +2106,8 @@
    "owner_ja": "個人",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47461,
@@ -2033,7 +2129,8 @@
    "facility_ja": "八幡神社",
    "age_band_ja": "300年以上",
    "designation_ja": "自然公園（c都道府県立自然公園）",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Lead ('Minor undesignated shrine trees', data/leads/nara.json): Tsuburajii, 390cm, carries a prefectural NATURAL PARK designation (not a monument one), not geocoded, no independent source."
   },
   {
    "report_id": 47462,
@@ -2053,7 +2150,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47463,
@@ -2073,7 +2171,8 @@
    "owner_ja": "個人",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47464,
@@ -2094,7 +2193,8 @@
    "town_ja": "都祁友田町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47465,
@@ -2115,7 +2215,8 @@
    "town_ja": "都祁友田町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47466,
@@ -2136,7 +2237,8 @@
    "town_ja": "都祁友田町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47467,
@@ -2157,7 +2259,8 @@
    "town_ja": "藺生町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47468,
@@ -2178,7 +2281,8 @@
    "town_ja": "都祁南之庄町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47469,
@@ -2199,7 +2303,8 @@
    "town_ja": "都祁小山戸町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47470,
@@ -2220,7 +2325,8 @@
    "town_ja": "都祁小山戸町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47471,
@@ -2241,7 +2347,8 @@
    "town_ja": "都祁吐山町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47472,
@@ -2262,7 +2369,8 @@
    "town_ja": "都祁吐山町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47473,
@@ -2283,7 +2391,8 @@
    "town_ja": "都祁吐山町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47474,
@@ -2304,7 +2413,8 @@
    "town_ja": "都祁吐山町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47475,
@@ -2324,7 +2434,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（b都道府県）",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47476,
@@ -2345,7 +2456,8 @@
    "town_ja": "来迎寺町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47477,
@@ -2366,7 +2478,8 @@
    "town_ja": "来迎寺町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47478,
@@ -2387,7 +2500,8 @@
    "town_ja": "都祁白石町",
    "age_band_ja": "300年以上",
    "designation_ja": "不明",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47479,
@@ -2408,7 +2522,8 @@
    "town_ja": "都祁白石町",
    "age_band_ja": "300年以上",
    "designation_ja": "不明",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47480,
@@ -2429,7 +2544,8 @@
    "town_ja": "都祁白石町",
    "age_band_ja": "300年以上",
    "designation_ja": "不明",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47481,
@@ -2450,7 +2566,8 @@
    "town_ja": "上深川町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47482,
@@ -2471,7 +2588,8 @@
    "town_ja": "上深川町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47483,
@@ -2492,7 +2610,8 @@
    "town_ja": "下深川町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47484,
@@ -2513,7 +2632,8 @@
    "town_ja": "下深川町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47485,
@@ -2534,7 +2654,8 @@
    "town_ja": "針ケ別所町",
    "age_band_ja": "300年以上",
    "designation_ja": "天然記念物（c市町村）",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47486,
@@ -2555,7 +2676,8 @@
    "town_ja": "針ケ別所町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47487,
@@ -2576,7 +2698,8 @@
    "town_ja": "針ケ別所町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47488,
@@ -2597,7 +2720,8 @@
    "town_ja": "針ケ別所町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47489,
@@ -2618,7 +2742,8 @@
    "town_ja": "荻町",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "遠方より確認できる"
+   "visibility_ja": "遠方より確認できる",
+   "why": "Unresearched by design (2026-09-08 pass, consolidated note in data/leads/nara.json under 'Private-land and no-facility register rows'): no facility_ja, no coordinate, nothing to search on within a register-led pass's scope. Would need a from-zero approach to place."
   },
   {
    "report_id": 47490,
@@ -2638,7 +2763,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47491,
@@ -2657,7 +2783,8 @@
    "owner_ja": "個人",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked, hard rule 10: owner_ja is '個人' (private individual). Never ship without a public-access source; not researched further."
   },
   {
    "report_id": 47492,
@@ -2679,7 +2806,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47493,
@@ -2701,7 +2829,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47494,
@@ -2723,7 +2852,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47495,
@@ -2745,7 +2875,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47496,
@@ -2767,7 +2898,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47497,
@@ -2789,7 +2921,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "300年以上",
    "designation_ja": "なし",
-   "visibility_ja": "ある程度の距離より確認できる"
+   "visibility_ja": "ある程度の距離より確認できる",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47498,
@@ -2811,7 +2944,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47499,
@@ -2833,7 +2967,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "200～299年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   },
   {
    "report_id": 47500,
@@ -2855,7 +2990,8 @@
    "facility_ja": "下部神社",
    "age_band_ja": "100～199年",
    "designation_ja": "なし",
-   "visibility_ja": "付近まで来ないと確認できない"
+   "visibility_ja": "付近まで来ないと確認できない",
+   "why": "Blocked (lead 'Shimobe Shrine cedars and ginkgo' in data/leads/nara.json): facility is in Tsuge-Hayama-cho, the same far hamlet already blocked in this file for the Takiyama torreya, well over 30 minutes from Nara Park and not independently re-timed. None of these 9 rows carry an official designation either."
   }
  ]
 }
