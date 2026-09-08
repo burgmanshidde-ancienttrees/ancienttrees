@@ -52,6 +52,10 @@
     "2026-09-06": {
       "note": "Both WARNs already fixed by earlier work: canberra/gumeli/san-quirico-d-orcia FAQ no longer explains the publish-gate rule (grep for the phrase returns nothing), and BUSINESS_RULE_PHRASES in qa.py now guards 'below the usual four tree floor'/'four tree floor'. Contribute.swift line 89 now reads 'Nobody else sees who sent this' rather than the self-contradicting 'Nobody sees who sent this'. No further action needed.",
       "at": "2026-09-07T06:23:52+00:00"
+    },
+    "2026-09-08": {
+      "note": "superlatives.py WARN (re.I scope regex false positives) fixed in bfaa50f3: scoped case-sensitivity back on for the scope group with (?-i:...); verified against the two known-good pairs (Fukuoka/Stockholm, Haarlem/Leiden 'first decade').",
+      "at": "2026-09-08T12:17:46+00:00"
     }
   }
 }
