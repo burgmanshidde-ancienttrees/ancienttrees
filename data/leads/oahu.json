@@ -17,6 +17,25 @@
       "species": "Chinese Banyan (Ficus microcarpa)",
       "locality": "Nuuanu Park",
       "reason": "Register girth is 1332cm (13.3m circumference), which if accurate would be an exceptional specimen, but I could not find any independent write-up describing or naming this specific banyan (as opposed to the monkeypods at the same park, which are documented and shipped this pass as hnl_011). Worth a targeted search pass; the park itself (Nuuanu Valley Park, 2925 Pali Highway) is confirmed free and public."
+    },
+    {
+      "register_id": "1211, 1212, 102",
+      "species": "Tamarind / Banyan / Pili Nut",
+      "locality": "Washington Place, 320 S. Beretania St., Downtown",
+      "reason": "Washington Place is the historic former Governor's residence, now a state house museum, about 1km from Iolani Palace. Not investigated for access this pass: it may offer free guided tours (reservation-based) rather than open grounds, unlike Iolani Palace's freely walkable grounds. Worth checking hawaii.gov/washingtonplace or DLNR for whether the grounds themselves (as opposed to the house) are walk-up accessible before using any of these three register entries.",
+      "reason_short": "access to grounds not confirmed"
+    },
+    {
+      "register_id": "850",
+      "species": "Monkeypod (Albizia saman)",
+      "locality": "Central Union Church, 1660 S. Beretania St. (Atherton Chapel courtyard)",
+      "reason": "The register places this specific 'exceptional tree' monkeypod in the Atherton Chapel courtyard (per SAH Archipedia, which says the 1949 chapel was designed to incorporate an existing exceptional monkeypod within an adjoining courtyard). A separate source (imagesofoldhawaii.com) describes a different-sounding monkeypod on the church's grounds with a treehouse, dating to the pre-church Dillingham estate (Woodlawn) era; it is not certain these are the same tree. More importantly, no source found states whether the Atherton Chapel courtyard (as opposed to the church's public street-facing grounds) is open to casual visitors versus only congregants/event guests. Needs a targeted look at the church's own visitor information or an OSM access check (per the Ypres technique in BRIEF_RESEARCH.md) before shipping."
+    },
+    {
+      "register_id": "401",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "locality": "Honolulu Zoo, outside entrance, mauka tree",
+      "reason": "Not a lead in the sense of unshipped: folded into hnl_015 (The Zoo Gate Banyans) alongside id 402 this pass. Recorded here because its own diameter figure (83.8cm) is inconsistent with its girth (2545.1cm) by roughly a factor of ten and looks like a register data-entry error (should be nearer 810cm by circumference=pi*diameter); a future pass touching this register more broadly should flag or fix this row rather than trust the diameter column at face value."
     }
   ],
   "blocked": [
