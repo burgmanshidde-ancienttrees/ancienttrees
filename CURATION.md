@@ -11,6 +11,41 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 - Cagliari +3, Sorrento +1: finished the stranded write claims from a prior attempt's git-push failure
+
+Picked up the two claims left standing after an earlier attempt in this
+window died on an expired git-push token (see LOG.md). Both cities'
+verified research was already sitting on disk unmerged:
+`data/research/cagliari-verified.json` (3 Orto Botanico specimens) and
+`data/research/sorrento-verified.json` (1 tree, the Rovere of Vallone San
+Giuseppe). Dispatched a write-stories pass across both in one context,
+merged, fixed count-promising copy (intro/question_meta/question_context/
+faq) in both cities and in Cagliari's Italian translation overlay
+(`data/i18n/it/cagliari.json`, which needed the three new trees added too
+or the build fails on `translatedTreePaths`'s "no translation" check).
+Two word-count contract violations surfaced only at build time (intro
+over 100 words, question_context over 200) in both languages and needed
+trimming after the fact; worth remembering for future writes that touch
+an already-live page's summary copy, since the writer only sees the
+brief, not the live contract bars.
+
+Normalised two species-name collisions the writer flagged rather than
+silently resolved: `cag_013` from "Canary Islands Dragon Tree" to the
+canonical "Dragon Tree (Dracaena draco)" (11 other live trees already use
+the short form) and `cag_011` from "...subsp. columnaris" to the plain
+"Moreton Bay Fig (Ficus macrophylla)" used everywhere else on the site.
+
+Cagliari: 10 -> 13 trees, 8 of 13 now within 1.5km of each other in the
+centre (the Orto Botanico's three sit 0.55-1.3km from the existing
+Piazza Matteotti/Giardini Pubblici cluster). Sorrento: 6 -> 7, the new
+oak a separate 25-30 minute uphill walk rather than joining the existing
+Villa Fondi/cemetery cluster. Both flagged (derived ages: the three
+botanical-garden trees have no register entry at all and are dated from
+the garden's own claim that its notable specimens are founding-era,
+1866; the Sorrento oak repeats "secolare" as vaguely as its regional
+source gives it and notes nothing newer than a 2008 survey confirms it
+still stands).
+
 ## 2026-09-09 - Dordrecht: finished the stranded verify claim, +3 trees
 
 Continuation of an earlier attempt in the same window that stopped after

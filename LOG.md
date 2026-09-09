@@ -11,6 +11,48 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Finished the stranded Cagliari/Sorrento write claims, +4 trees; 26 Vienna recognition lines
+
+Followed the harness's start order: pulled and pushed the two commits left
+stranded by the prior attempt's expired git-push token (both went through
+cleanly this time), then `passcheck.py --claims` showed the two write
+claims it had left standing (cagliari, sorrento). `leads.py --ready` was
+empty, so per the harness's own instructions the claims were the work: the
+verify pass underneath them had already returned clean research
+(`data/research/cagliari-verified.json`, 3 Orto Botanico specimens;
+`sorrento-verified.json`, 1 tree), just never written into stories.
+
+Dispatched a write-stories pass across both cities in one context, merged:
+Cagliari 10 -> 13 trees, Sorrento 6 -> 7. Normalised two species-name
+collisions the writer correctly flagged rather than silently resolved
+(`cag_013` to canonical "Dragon Tree (Dracaena draco)", `cag_011` to plain
+"Moreton Bay Fig (Ficus macrophylla)", matching every other live use).
+Updated count-promising copy in both cities' intro/question_meta/
+question_context/faq, and in Cagliari's Italian translation overlay,
+which needed the three new trees translated too or `astro build` fails on
+`translatedTreePaths`'s "city grew past the overlay" check. Two word-count
+contract violations only surfaced at build time in both languages (intro
+over the 100-word Contract C ceiling, question_context over Contract B's
+200) after adding a clause about the new trees; trimmed both down. Full
+detail in CURATION.md.
+
+While that ran, checked `recognise.py --stuck` (0, clean) and `pagegaps.py`
+(0, clean), both fully cleared by earlier passes today. Sorted the
+remaining 1,203 trees citywide missing `how_to_recognise` by count and
+cross-referenced against DATA.md's demand table: Vienna topped the list at
+26 missing and carries 131 ten-day impressions, the highest of the
+high-count cities. Generated its brief, dispatched a second write-stories
+pass in parallel with the Cagliari/Sorrento one, applied all 26 lines with
+`recognise.py --apply` (0 not found, 0 already had one). Four of them
+needed care distinguishing trees in the same park (Rathauspark's three
+planes plus its fern-leaved beech; Stadtpark's ginkgo, wingnut and pagoda
+tree), which is exactly the case this field exists for.
+
+Rebuilt (8067 pages), `preflight.py` (564 cities, 0 problems, only
+pre-existing NOTEs), `qa.py` (8067 pages, clean), `superlatives.py` (346
+claims, still no collisions), `tree_index.py` refreshed. Logged both
+passes' costs to `data/agent-costs.json`. Released both claims.
+
 ## 2026-09-09 (continuation, FOR HIDDE) - Stopped on a git push authentication failure, one commit stranded locally
 
 This window shipped, in order (all pushed and live): Oahu +4 (15 total),
