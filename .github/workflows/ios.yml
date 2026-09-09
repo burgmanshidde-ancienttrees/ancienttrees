@@ -257,7 +257,19 @@ jobs:
           # "<file>:<line>: error: -[Class test] : ...", which the
           # COMPILE_ERR pattern above never matches because that one always
           # carries a column number.
-          if grep -qE ': error: -\[' /tmp/xcodebuild.log; then
+          # And a per-ATTEMPT failure line is not a per-RUN one: with
+          # -retry-tests-on-failure, a test that fails once and passes on
+          # retry still leaves its failure line sitting in the log, and this
+          # check used to fire on that line alone, right next to xcodebuild's
+          # own "** TEST SUCCEEDED **" a few lines later. That false red is
+          # what "fails on schedule, passes by hand" turned out to be
+          # (2026-09-09): a run under more contention hits the flake once
+          # more often, and this exact grep failed the job anyway. The last
+          # ** TEST ...** marker in the log is xcodebuild's own final verdict
+          # for the whole run, retries included, so trust that over a line
+          # that a retry may have already overturned.
+          LAST_VERDICT=$(grep -oE '\*\* TEST (SUCCEEDED|FAILED) \*\*' /tmp/xcodebuild.log | tail -1)
+          if grep -qE ': error: -\[' /tmp/xcodebuild.log && [ "$LAST_VERDICT" != "** TEST SUCCEEDED **" ]; then
             echo "::error::The app built. Tests FAILED, named below. This is not a build problem."
             grep -E ': error: -\[' /tmp/xcodebuild.log | sed 's/^.*: error: //' | sort -u
             exit 1
@@ -493,6 +505,7 @@ jobs:
             -scheme AncientTrees \
             -destination "id=$UDID" \
             -derivedDataPath /tmp/dd \
+            -retry-tests-on-failure -test-iterations 2 \
             -parallel-testing-enabled NO \
             -skip-testing:AncientTreesUITests/SweepFrames \
             -skip-testing:AncientTreesUITests/RefusedWalk \
