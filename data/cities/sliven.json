@@ -1,0 +1,63 @@
+{
+  "city": "Sliven",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "intro": "Sliven's most famous tree does not look like the one on the coin. This roughly thousand-year-old field elm was Bulgaria's European Tree of the Year in 2014 and appears on a 2018 commemorative coin, then lost most of its crown to Dutch elm disease. What survives, two branches still leafing out each spring under active care, stands free in the town square exactly where its ancestors have stood for generations.",
+  "meta_description": "Sliven's Old Elm won European Tree of the Year 2014 and appears on a Bulgarian coin. Reduced by disease, still alive and tended, free to visit.",
+  "question_meta": "The Old Elm of Sliven, Bulgaria's 2014 European Tree of the Year, is down to two living branches after Dutch elm disease. Its history, and how to visit.",
+  "question_answer": "The oldest tree in Sliven is the Old Elm (Stariyat Bryast), a field elm traditionally dated to about 1,000 years old, standing beside the Sliven Municipality building in the town centre. It won European Tree of the Year in 2014 with 77,523 votes and has appeared on Sliven's coat of arms and a 2018 Bulgarian commemorative coin. Dutch elm disease has since reduced it to two living branches near ground level, kept growing by ongoing forestry care, and it stands free in the open square.",
+  "question_context": "The figure of about 1,000 years is a long-repeated one rather than a ring count, but the tree's fame is not in doubt: it won European Tree of the Year in 2014, beating every other European entrant with 77,523 votes, and has stood on Sliven's coat of arms since the 1990s. A 2018 Bulgarian National Bank commemorative ten-lev silver coin carries its image. Ottoman-era accounts also name the tree as a site where Bulgarian revolutionaries were executed, a harder history than the coin usually suggests. The tree is not thriving today. Dutch elm disease reached it around 2014, and a large dead crown was cut back in 2018; Bulgarian press wrote it off more than once. What survives is two branches still growing near ground level, watched over by specialists from the University of Forestry who monitor the trunk and reinforce its cavities. English-language sources describe the outlook as of 2025 as cautiously improving rather than lost. The tree to see today is not the giant on the coin, but a much reduced, actively tended survivor standing exactly where that giant stood, in the middle of a working town square.",
+  "hero_tree_id": "slv_001",
+  "oldest_tree_id": "slv_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sliven?",
+      "a": "The Old Elm (Stariyat Bryast), a field elm traditionally dated to about 1,000 years old, standing next to the Sliven Municipality building in the town centre."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes, though much reduced. Dutch elm disease has cost it most of its crown since around 2014, and only two branches near ground level remain alive, kept growing under active forestry care. As of 2025, sources describe the outlook as cautiously improving."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open in central Sliven, next to the municipality building, with no entry fee or restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands in the centre of Sliven, right beside the town hall, walkable from anywhere in the town centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "slv_001",
+      "name": "The Old Elm (Stariyat Bryast)",
+      "species": "Field Elm (Ulmus minor)",
+      "age_estimate": "about 1,000 years",
+      "age_min": 900,
+      "age_max": 1100,
+      "girth_cm": 565,
+      "location": {
+        "address": "Next to the Sliven Municipality building, city centre, Sliven, Bulgaria",
+        "latitude": 42.6806,
+        "longitude": 26.31687,
+        "neighbourhood": "City centre, Sliven"
+      },
+      "story": "Bulgaria's central bank put this elm on a coin before anyone gave it a birth certificate. The 2018 ten-lev commemorative silver piece shows the same tree that stands today beside Sliven's town hall, a field elm whose age is usually given as about a thousand years, a figure repeated for generations rather than counted in rings.\n\nIt has earned its fame honestly. In 2014 the tree won European Tree of the Year, taking 77,523 votes, more than any other entrant that year, and it has stood on Sliven's coat of arms since the 1990s. Ottoman-era accounts name it as a site where Bulgarian revolutionaries were executed, a harder history than a commemorative coin usually carries.\n\nThe tree is not thriving. Dutch elm disease reached it around 2014, and a large dead crown was cut back in 2018; Bulgarian papers wrote it off more than once. What survives is two branches still growing near ground level, kept alive by specialists from the University of Forestry who monitor the trunk and reinforce its cavities. As of 2025, English-language sources describe the outlook as cautiously improving rather than lost.\n\nSo the tree to see today is not the thousand-year giant on the coin. It is a much reduced, actively tended survivor standing exactly where that giant stood, in the middle of a working town square, free to walk up to any day of the week.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/The_Old_Elm",
+        "https://bg.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D1%80%D0%B8%D1%8F%D1%82_%D0%B1%D1%80%D1%8F%D1%81%D1%82_(%D0%A1%D0%BB%D0%B8%D0%B2%D0%B5%D0%BD)"
+      ],
+      "access": "Free, standing in the open in the centre of Sliven next to the municipality building, no restriction.",
+      "transport": "Central Sliven, next to city hall; walkable from anywhere in the town centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "Two independent sources (en.wikipedia + bg.wikipedia) agree: Field Elm (Ulmus minor), circumference over 5.65m at the base (en.wikipedia also gives 5.75m perimeter as an alternate figure), height about 10m, age given as 'about 1,000 years' with a possible range up to 1,100 (seeded circa 925 per en.wikipedia). This is a long-repeated figure with no cited ring count, not a growth-rate estimate, flagged accordingly. Health is the risky part: Dutch elm disease around 2014, major sanitation cutting of the dead crown in 2018, Bulgarian press ran 'the Old Elm is dying but the symbol remains' (Capital.bg, 2018, could not fetch directly, 403 on automated request). En.wikipedia's current text (accessed 2026-09) says 'as of 2025, chances of the Old Elm surviving were becoming increasingly hopeful' due to two living branches surviving near ground level, with ongoing care by University of Forestry specialists. Extremely famous nationally: European Tree of the Year 2014 winner (77,523 votes), on Sliven's coat of arms since 1995/96, on a 2018 Bulgarian National Bank commemorative 10-leva silver coin, reportedly used as an execution site for Bulgarian revolutionaries during Ottoman rule (multiple sources). Coordinates from en.wikipedia (42 40'50\"N 26 19'01\"E = 42.6806, 26.3169) match the lead file's coordinates exactly, both point to the spot next to Sliven's city hall, confirmed. DESTINATION TEST: passes clearly under the 2026-08-31 single-famous-tree exception; arguably Bulgaria's single most nationally famous tree (European Tree of the Year, coat of arms, currency), standing as the literal symbol of its town in the town square. PHOTOS for a later pass (not judged, not fetched): https://commons.wikimedia.org/wiki/File:2014_Old_elm_Sliven_BG.jpg, https://commons.wikimedia.org/wiki/File:Elm_tree_in_Sliven_Province,_Bulgaria.jpg, https://commons.wikimedia.org/wiki/File:%D0%A2he_Eternal_%D0%95%D0%BB%D0%BC_-_panoramio.jpg"
+    }
+  ]
+}
