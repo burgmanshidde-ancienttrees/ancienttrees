@@ -486,6 +486,12 @@
    "seen": "2026-09-08",
    "cost": "two 20s timeouts during the _famous-slovakia batch A verify pass, trying to get a primary-source access statement for the Komjatice plane tree's park",
    "workaround": "unknown this pass; spravy.pravda.sk (2013) and lepsiageografia.sk (2015) covered the tree and its park's history well enough without it, and a search summary of a third site described the park as freely open to the public"
+  },
+  "ortobotanicoitalia.it": {
+   "behaviour": "403 Forbidden to plain curl (with a browser user agent) on its per-garden pages (e.g. /sardegna/cagliari/). Fast fail, not a hang.",
+   "seen": "2026-09-09",
+   "cost": "one fetch attempt",
+   "workaround": "apgi.it and luoghi.italianbotanicalheritage.com cover the same gardens (Associazione Parchi e Giardini Italiani and Italian Botanical Heritage directories) and both load fine via curl with a browser user agent; used as substitutes for the Cagliari Orto Botanico entry."
   }
  }
 }
