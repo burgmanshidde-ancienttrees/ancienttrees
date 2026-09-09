@@ -6146,6 +6146,17 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-09-09": [
+      {
+        "target": "Alicante",
+        "kind": "verify",
+        "tokens": 145526,
+        "trees": 0,
+        "note": "register-radius candidate set (44 rows, 0-4.4km) fully exhausted; every candidate already published, grouped, leaded or blocked by prior passes; zero new trees deliverable without a non-register source",
+        "wasted": 0,
+        "brief_wrong": false
+      }
     ]
   }
 }
