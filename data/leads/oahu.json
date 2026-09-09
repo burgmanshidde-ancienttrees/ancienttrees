@@ -10,26 +10,32 @@
       "register_id": "72,73",
       "species": "Kamani (Calophyllum inophyllum)",
       "locality": "Kualoa Regional Park, near fishpond",
-      "reason": "Not investigated this pass. Kualoa Regional Park is a genuine free public park, but it is on the windward/Koolauloa side of Oahu, roughly 30-40km from downtown Honolulu, a real stretch beyond the 30-minute transit day-trip framing this city page otherwise uses (all 8 published trees plus this pass's 3 additions cluster in central Honolulu / UH Manoa / Nuuanu). Worth a dedicated look, but likely needs honest 'about an hour's drive' framing rather than a day-trip label, per the island rules in BRIEF_RESEARCH.md."
+      "reason": "Register locality is only 'Kualoa Regional Park, near fishpond' with grid-rounded coordinates, no tree-level fix. A light search this pass (Molii/Apua fishpond history, park pages) found plenty on the ancient fishponds themselves but nothing describing this specific kamani tree or pair of kamani trees individually; still needs a targeted second source before it could ship even setting the distance question aside. Kualoa Regional Park is a genuine free public park, but it is on the windward/Koolauloa side of Oahu, roughly 30-40km from downtown Honolulu, a real stretch beyond the 30-minute transit day-trip framing this city page otherwise uses (all published trees cluster in central Honolulu / UH Manoa / Nuuanu). Worth a dedicated look with more time, but likely needs honest 'about an hour's drive' framing rather than a day-trip label, per the island rules in BRIEF_RESEARCH.md."
+    },
+    {
+      "register_id": "909 or 910 (whichever is not George Hall)",
+      "species": "Skunk Tree / Java Olive (Sterculia foetida)",
+      "locality": "UH Manoa campus, either near Sinclair Library or adjacent the Architecture Building",
+      "reason": "This pass shipped hnl_018 (register id 910, register locality 'George Hall') using an independent UH student-newspaper feature (manoanow.org, 2019/2020) as the second source. That same article says there are TWO skunk trees on campus, one near Sinclair Library and one adjacent the Architecture Building, neither named as George Hall; it is genuinely unclear which of the two the register row and the article refer to, or whether a third specimen exists. The register's OTHER Oahu Sterculia foetida row (id 909) is at a different address entirely (Tennet Family Foundation, 203 Prospect St, not UH), so it does not resolve this. Worth a future look: find the exact building each of the article's two trees stands beside (a campus arboretum map, e.g. manoa.hawaii.edu/landscaping/plants/campusarboretum.php, was not reachable this pass) and check whether the second one is a distinct, separately publishable candidate near the existing hnl_009/hnl_010 cluster."
     },
     {
       "register_id": "1207",
       "species": "Chinese Banyan (Ficus microcarpa)",
       "locality": "Nuuanu Park",
-      "reason": "Register girth is 1332cm (13.3m circumference), which if accurate would be an exceptional specimen, but I could not find any independent write-up describing or naming this specific banyan (as opposed to the monkeypods at the same park, which are documented and shipped this pass as hnl_011). Worth a targeted search pass; the park itself (Nuuanu Valley Park, 2925 Pali Highway) is confirmed free and public."
+      "reason": "Register girth is 1332cm (13.3m circumference), which if accurate would be an exceptional specimen. SECOND PASS, STILL UNRESOLVED: a fresh round of searches (Yelp reviews for Nuuanu Valley Park, general web search for the register locality plus 'banyan' and 'exceptional tree') again found only generic descriptions of the park having 'massive banyans and monkeypod trees', never a write-up naming or describing this individual specimen. This now looks like a dead end for generic web research specifically (two passes, same result); the park itself (2925 Pali Highway) is confirmed free and public, so it is not an access problem, only an evidence one. A future attempt should try the City & County of Honolulu Parks and Recreation office directly, a records request for the original 1975 Exceptional Tree designation file (which usually includes a site description), or a reader/site-visit photo, rather than another generic search sweep."
     },
     {
       "register_id": "1211, 1212, 102",
       "species": "Tamarind / Banyan / Pili Nut",
       "locality": "Washington Place, 320 S. Beretania St., Downtown",
-      "reason": "Washington Place is the historic former Governor's residence, now a state house museum, about 1km from Iolani Palace. Not investigated for access this pass: it may offer free guided tours (reservation-based) rather than open grounds, unlike Iolani Palace's freely walkable grounds. Worth checking hawaii.gov/washingtonplace or DLNR for whether the grounds themselves (as opposed to the house) are walk-up accessible before using any of these three register entries.",
-      "reason_short": "access to grounds not confirmed"
+      "reason": "MOVED TO BLOCKED this pass: access confirmed and it fails hard rule 10. See blocked list.",
+      "reason_short": "superseded, see blocked"
     },
     {
       "register_id": "850",
       "species": "Monkeypod (Albizia saman)",
       "locality": "Central Union Church, 1660 S. Beretania St. (Atherton Chapel courtyard)",
-      "reason": "The register places this specific 'exceptional tree' monkeypod in the Atherton Chapel courtyard (per SAH Archipedia, which says the 1949 chapel was designed to incorporate an existing exceptional monkeypod within an adjoining courtyard). A separate source (imagesofoldhawaii.com) describes a different-sounding monkeypod on the church's grounds with a treehouse, dating to the pre-church Dillingham estate (Woodlawn) era; it is not certain these are the same tree. More importantly, no source found states whether the Atherton Chapel courtyard (as opposed to the church's public street-facing grounds) is open to casual visitors versus only congregants/event guests. Needs a targeted look at the church's own visitor information or an OSM access check (per the Ypres technique in BRIEF_RESEARCH.md) before shipping."
+      "reason": "The register places this specific 'exceptional tree' monkeypod in the Atherton Chapel courtyard (per SAH Archipedia, which says the 1949 chapel was designed to incorporate an existing exceptional monkeypod within an adjoining courtyard). A separate source (imagesofoldhawaii.com) describes a different-sounding monkeypod on the church's grounds with a treehouse, dating to the pre-church Dillingham estate (Woodlawn) era; it is not certain these are the same tree. SECOND PASS: checked the church's own site (centralunionchurch.org, no page addresses public grounds access) and ran an Overpass query over the church's ~8-acre campus (way 468548377, bounded roughly 21.2984-21.2993 N, -157.8339 to -157.8329 W): no access=private tag on the church parcel itself, and public foot=designated footways cross the block, but that is suggestive rather than a confirmed answer, since it is a large multi-building campus (sanctuary, chapel, offices, Great Lawn) and the OSM tags do not distinguish the chapel courtyard specifically from the street-facing green. Wedding-venue write-ups describe ceremonies happening 'on the lawn under the grand Monkeypod tree' outside the chapel, which suggests the tree itself may stand on the open Great Lawn rather than inside a closed courtyard, but no source states this as a fact about general public access on an ordinary day (as opposed to a booked event). Still needs a call to the church office or a one-off site visit before shipping; not blocked, just unresolved."
     },
     {
       "register_id": "401",
@@ -39,6 +45,12 @@
     }
   ],
   "blocked": [
+    {
+      "register_id": "1211, 1212, 102",
+      "species": "Tamarind (Tamarindus indica) / Banyan (Ficus sp) / Pili Nut (Canarium vulgare)",
+      "locality": "Washington Place, 320 S. Beretania St., Downtown",
+      "reason": "Washington Place's own site (washingtonplace.hawaii.gov/tours-and-gardens/) states the grounds are open to the public Monday to Friday BY APPOINTMENT ONLY (guided tours), and that on-site tours are currently suspended for renovation and restoration work expected to continue through 2027, with limited tour openings possibly resuming later in 2026. This fails the walk-up access test in BRIEF_RESEARCH.md/hard rule 10: the gate between a visitor and these trees is somebody's permission and a booking, not a price and a schedule anyone can just turn up to, and right now it is not even bookable. Revisit once (a) tours resume and (b) it is clear the GARDENS rather than only the house interior are covered by a booking a member of the public can actually make."
+    },
     {
       "register_id": "389, 16, 921",
       "species": "Indian Banyan / Queensland Kauri / Tamarind",
