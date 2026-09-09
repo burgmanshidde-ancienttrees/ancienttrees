@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dor_014",
+    "name": "The Oak-leaved Hornbeam of Park Merwestein",
+    "species": "Oak-leaved Hornbeam (Carpinus betulus 'Quercifolia')",
+    "age_estimate": "roughly 166 to 176 years, from the register's planting band of 1850 to 1860",
+    "age_min": 166,
+    "age_max": 176,
+    "location": {
+      "address": "Along the path around the deer enclosure, Park Merwestein, Dordrecht",
+      "latitude": 51.811238,
+      "longitude": 4.676849,
+      "neighbourhood": "Merwestein"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695553",
+      "Park Merwestein's own numbered tree inventory (parkmerwestein.nl/bomenwijzer), tree 48, listed as Carpinus betulus 'Quercifolia'; the same tree is stop 8 of the Bomenridders Dordrecht walking route (indordrecht.nl), described as having two leaf shapes on one tree"
+    ],
+    "access": "Free. Municipality-owned, in the public Park Merwestein, on the path around the deer enclosure.",
+    "transport": "Park Merwestein, about 1.7 km northeast of Dordrecht Centraal.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "This cultivar of the common hornbeam is a genuine curiosity: it carries two distinct leaf shapes on the same tree, an oak-like lobed leaf alongside the ordinary hornbeam leaf, which is what the local Bomenridders (Tree Knights) walking route leads with when it stops here. Owner: gemeente (municipality). Register says visitable: ja, visible: ja. Two independent sources agree on species and site: the LRMB register and Park Merwestein's own tree-by-tree inventory, tree number 48, which the city's own walking-tour site independently lists as stop 8 with the same species description. No girth recorded by either source. Confirmed by satellite imagery: the path and deer enclosure are visible in PDOK aerial imagery exactly where the register places the tree."
+  },
+  {
+    "id": "dor_015",
+    "name": "The Plane Trees of the Dordrechts Museum Garden",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 176 to 186 years, from the register's planting band of 1840 to 1850",
+    "age_min": 176,
+    "age_max": 186,
+    "location": {
+      "address": "Garden of the Dordrechts Museum, Museumstraat 40, Dordrecht",
+      "latitude": 51.814161,
+      "longitude": 4.671823,
+      "neighbourhood": "Centrum"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1680495",
+      "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum: independently describes plane trees planted in the museum's early years, growing alongside younger chestnuts and beeches in the same garden",
+      "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin), which independently confirms three plane trees from the founding period, aged 100 to 200 years"
+    ],
+    "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
+    "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Three plane trees (n_trees: 3 in the register) standing together in the small garden of the Dordrechts Museum, one of the oldest museums in the Netherlands, founded 1842 in the old Boterbeurs. The register's own history note says the planes date from the museum's founding period, so visitors have been walking past them since before the museum itself existed in this building. Two independent sources: the LRMB register and the Bomenridders Dordrecht walking route, which independently names plane trees at this stop planted in the museum's early years, plus younger beeches and horse chestnuts in the same garden (those beeches are the separate dor_016 candidate below). No girth recorded. Owner: gemeente. Register says visitable: ja, visible: ja."
+  },
+  {
+    "id": "dor_016",
+    "name": "The Beeches of the Dordrechts Museum Garden",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "age_estimate": "roughly 101 to 146 years; the register itself is unsure which of the three is which age",
+    "age_min": 101,
+    "age_max": 146,
+    "girth_cm": 315,
+    "location": {
+      "address": "Garden of the Dordrechts Museum, Museumstraat 40, Dordrecht",
+      "latitude": 51.814195,
+      "longitude": 4.671552,
+      "neighbourhood": "Centrum"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695549",
+      "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum: independently describes beeches completing the same garden alongside the museum's plane trees",
+      "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin), which independently confirms three beeches, the oldest along the fence with a full crown and two younger ones already of considerable size"
+    ],
+    "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
+    "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Three beeches near the garden gate: two copper beeches with a 2020 girth of 315 cm and 300 cm, and one green (ordinary) European beech at 300 cm girth, standing in the same small garden as the museum's plane trees (dor_015). The register's own text says one of the three would date from 1880 and the other two from 1925, but adds plainly that the source for those dates 'moet nog worden achterhaald' (still needs to be tracked down), so the dating is the register's own open question, not a dispute we are introducing. Age range given here spans both figures honestly. Second source, the Bomenridders Dordrecht walking route, independently corroborates beeches in this same garden without giving ages. Owner: gemeente. Register says visitable: ja, visible: ja."
+  }
+]

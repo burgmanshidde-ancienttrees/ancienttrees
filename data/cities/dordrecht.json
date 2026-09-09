@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "In September 2020 the city of Dordrecht worked out how old the black locust in Park Merwestein actually is, and came back with 300 to 325 years. That makes it one of the few trees in the country with a municipal investigation behind its age instead of a guess. The rest of this page is a plane in a charity courtyard built in 1625 by a man trying to fix his reputation, a beech where a synagogue used to stand, and a tree of heaven surviving on nothing but paving.",
-  "meta_description": "Thirteen remarkable trees in Dordrecht: a black locust dated to 300 years, a plane in a 1625 almshouse court, and a rare pond cypress in Weizigtpark.",
-  "question_meta": "Dordrecht's oldest tree is the black locust in Park Merwestein, which the city dated to 300 to 325 years in 2020. Where it stands, and twelve more.",
+  "meta_description": "Sixteen remarkable trees in Dordrecht: a black locust dated to 300 years, a plane in a 1625 almshouse court, and a rare pond cypress in Weizigtpark.",
+  "question_meta": "Dordrecht's oldest tree is the black locust in Park Merwestein, which the city dated to 300 to 325 years in 2020. Where it stands, and fifteen more.",
   "question_answer": "The oldest tree in Dordrecht is a black locust near the S. van Hoogstratensingel entrance of Park Merwestein. This one does not need estimating: research carried out by the municipality in September 2020 put it at 300 to 325 years old, which matches the national register's planting band of 1700 to 1750. That is unusually solid ground for an age on this site, where most figures are a decade-wide band from a register and nothing more. Black locust is a North American species that reached Europe in the early seventeenth century, so a tree planted here around 1700 was among the first generation of them in the country.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements. The Merwestein black locust is the exception and says so: the city investigated it in September 2020 and arrived at 300 to 325 years. The register is the 2024 edition and is the single source for most of the rest, which is why they are flagged. Several of these trees are recorded as older than the ground they stand in, which is a pattern rather than a coincidence: the silver maple in the Weizigtpark was standing in a meadow before the park was laid out around it in 1947, and the plane at Dordwijk belongs to a country estate begun about 1635. Read the access line on the Sorghvliet plane before setting out: Dordwijk is private ground south of the city, even though the register records it as visitable. Where a pin is marked approximate we know the park and not the trunk, which on an estate of that size is a real difference.",
   "hero_tree_id": "dor_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "Twelve of the thirteen are freely reachable: Park Merwestein, the Weizigtpark, the Van Baerleplantsoen, the Vest canalside and the street trees are all public, and the Arend Maartenshof and Boogjes courtyards are open ground. The plane at Dordwijk stands on a private estate south of the city and is recorded as visitable in the register; check before you set out."
+      "a": "Fourteen of the sixteen are freely reachable: Park Merwestein, the Weizigtpark, the Van Baerleplantsoen, the Vest canalside and the street trees are all public, and the Arend Maartenshof and Boogjes courtyards are open ground. The plane at Dordwijk stands on a private estate south of the city and is recorded as visitable in the register; check before you set out. The plane trees and beeches in the Dordrechts Museum garden need a museum ticket."
     }
   ],
   "trees": [
@@ -427,6 +427,83 @@
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 900 m southwest of Dordrecht station, at the southeast edge of Weizigtpark.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dor_014",
+      "name": "The Oak-leaved Hornbeam of Park Merwestein",
+      "species": "Oak-leaved Hornbeam (Carpinus betulus 'Quercifolia')",
+      "age_estimate": "roughly 166 to 176 years, from the register's planting band of 1850 to 1860",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Along the path around the deer enclosure, Park Merwestein, Dordrecht",
+        "latitude": 51.811238,
+        "longitude": 4.676849,
+        "neighbourhood": "Merwestein"
+      },
+      "story": "Two different leaves grow off the same twigs on this hornbeam: some lobed like an oak's, some plain like an ordinary hornbeam's. That is exactly what the cultivar name says, Carpinus betulus 'Quercifolia', the oak-leaved hornbeam, and it is a genuine grafting curiosity rather than a description anyone exaggerated.\n\nThe national register bands its planting to 1850 to 1860, which puts it at roughly 166 to 176 years old. It has spent that whole span beside the path that circles the deer enclosure in Park Merwestein, one of Dordrecht's older public parks. A tree like this is exactly what a Victorian-era planting scheme reached for: something a nurseryman had found doing something odd, worth a spot in a park built for paying visitors to stroll through.\n\nDordrecht's own walking route, run by the local Bomenridders, stops here as number eight of nine and leads with the same two-leaf trick, which is a good sign the oddity still reads clearly a century and a half on.\n\nNo girth has ever been recorded for it. That is unremarkable among Dutch register trees, but worth saying plainly rather than leaving the field blank without comment.",
+      "how_to_recognise": "You can recognise it by two leaf shapes on one tree, oak-like lobed leaves growing beside ordinary hornbeam leaves. It stands on the path that circles the deer enclosure in Park Merwestein.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695553",
+        "Park Merwestein's own numbered tree inventory (parkmerwestein.nl/bomenwijzer), tree 48; the same tree is stop 8 of the Bomenridders Dordrecht walking route (indordrecht.nl)"
+      ],
+      "access": "Free. Municipality-owned, in the public Park Merwestein, on the path around the deer enclosure.",
+      "transport": "Park Merwestein, about 1.7 km northeast of Dordrecht Centraal.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dor_015",
+      "name": "The Plane Trees of the Dordrechts Museum Garden",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 176 to 186 years, from the register's planting band of 1840 to 1850",
+      "age_min": 176,
+      "age_max": 186,
+      "location": {
+        "address": "Garden of the Dordrechts Museum, Museumstraat 40, Dordrecht",
+        "latitude": 51.814161,
+        "longitude": 4.671823,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Three plane trees in the museum's garden have outlived every renovation the building around them has had, because they arrived first.\n\nThe Dordrechts Museum opened in 1842 in the old Boterbeurs, one of the oldest museums in the Netherlands, founded by a group of the city's more public-spirited residents. The national tree register bands the planes to 1840 to 1850, which means they went into the ground within a few years of that opening rather than growing up around an institution already established. The museum's own account of its garden agrees, putting the planes at 100 to 200 years old and crediting them with having watched the whole of that development, and millions of visitors, walk past.\n\nTwo later plantings followed: a chestnut avenue leading to the front door, and younger beeches nearer the garden gate (a separate entry on this page). The planes are the ones that were already there before any of it.\n\nNo girth is on record for any of the three. Seeing them means buying a ticket: the garden sits inside the museum grounds rather than open to the street.",
+      "how_to_recognise": "You can recognise them by flaking, camouflage-patterned bark and round seed balls that hang through winter. They stand together in the museum's garden, apart from the chestnut avenue and the younger beeches near the fence.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1680495",
+        "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum",
+        "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)"
+      ],
+      "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
+      "paid_entry": true,
+      "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dor_016",
+      "name": "The Beeches of the Dordrechts Museum Garden",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 101 to 146 years; the register itself is unsure which of the three is which age",
+      "age_min": 101,
+      "age_max": 146,
+      "girth_cm": 315,
+      "location": {
+        "address": "Garden of the Dordrechts Museum, Museumstraat 40, Dordrecht",
+        "latitude": 51.814195,
+        "longitude": 4.671552,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Nobody, including the register that lists them, is sure which of these three beeches is the old one.\n\nTwo copper beeches and one green beech stand together by the garden gate at the Dordrechts Museum. The national tree register records a 2020 girth of 315 and 300 centimetres for the copper pair and 300 for the green one, and its own history note says one of the three would date from 1880 and the other two from 1925, then adds that nobody has yet tracked down where that claim comes from. That puts the group at somewhere between about 100 and 145 years old, an honest range rather than a tidy number.\n\nThe museum's own account of its garden calls the oldest of the three, standing along the fence, a tree with a full, well-shaped crown, and notes that beeches like these can live 200 to 300 years if their shallow, sensitive roots are left undisturbed. That may be exactly why nobody has put a spade near them to settle the dating question.\n\nThey share the garden with three older plane trees from the museum's founding years. Reaching them means a museum ticket.",
+      "how_to_recognise": "You can recognise them by two dark purple-leaved copper beeches standing beside one green-leaved beech, all three near the garden gate. They stand apart from the older plane trees further into the same garden.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695549",
+        "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum",
+        "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)"
+      ],
+      "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
+      "paid_entry": true,
+      "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
     }

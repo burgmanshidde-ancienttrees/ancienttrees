@@ -1,8 +1,30 @@
 {
   "place": "Dordrecht",
   "country": "Netherlands",
-  "note": "Deepen pass, 2026-09-08, working the netherlands-lrmb register candidates within ~1.1km of the published cluster. Verified trees went to data/research/dordrecht-verified.json as dor_009 onward.",
-  "leads": [],
+  "note": "Deepen pass, 2026-09-08, working the netherlands-lrmb register candidates within ~1.1km of the published cluster. Verified trees went to data/research/dordrecht-verified.json as dor_009 onward. Continuation 2026-09-09 shipped dor_014/015/016 (Park Merwestein hornbeam, Dordrechts Museum garden planes and beeches); the three inner-courtyard candidates below were aerial-checked but left unresolved on access, and several open register candidates (Weizigtpark oak, Amerikaanse es and Merwesteinpark, Kromhout oak, Baerleplantsoen and Begraafplaats Dubbeldam planes, Huis van Gijn museum garden trees) were not reached this pass.",
+  "leads": [
+    {
+      "name": "Gewone esdoorn (Norway Maple), Binnentuin Botgenstraat/Spuistraat",
+      "reason": "Register (LRMB nr 1680489) says visitable ja, owner gemeente, but PDOK aerial imagery shows an enclosed private-looking backyard with a parked car and no visible public through-route, unlike the confirmed public passage at dor_012's Boogjes courtyard 80m away. Needs a source confirming public access (a through-alley, an open hofje) before it can ship.",
+      "lat": 51.812942,
+      "lng": 4.663155,
+      "register_nr": 1680489
+    },
+    {
+      "name": "Gewone esdoorn (Norway Maple), Binnentuin Botgenstraat/Pelserstraat",
+      "reason": "Register (LRMB nr 1680491) says visitable ja, owner gemeente. Aerial imagery shows a small green court (looks like a shared lawn/pitch) reached by a footpath from an alley, more plausibly public than the Spuistraat maple above, but not confirmed by any independent source. Worth a closer look next pass.",
+      "lat": 51.812811,
+      "lng": 4.661881,
+      "register_nr": 1680491
+    },
+    {
+      "name": "Bruine beuk (Copper Beech), Binnentuin AMRObank, Stationsweg 2",
+      "reason": "Register (LRMB nr 1680274) says visitable ja, but the place name itself (bank's inner courtyard) and PDOK aerial imagery (parked cars behind the bank building, no visible public route) both point to an employee car park rather than open ground. Treat as private unless a source says otherwise.",
+      "lat": 51.808594,
+      "lng": 4.668781,
+      "register_nr": 1680274
+    }
+  ],
   "blocked": [
     {
       "name": "Mammoetboom (Giant Sequoia), achtertuin Kromhout 160",

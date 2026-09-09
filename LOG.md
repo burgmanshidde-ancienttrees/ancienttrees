@@ -11,6 +11,38 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation, previous attempt in this window stopped after 36 min with 84 unspent) - Finished the stranded Dordrecht verify claim, +3 trees
+
+Followed the harness's start order: pulled (nothing new), found one standing
+claim (Dordrecht, verify, by an earlier attempt in the same window that had
+already downloaded PDOK aerial imagery for nine candidates plus a
+Bomenstichting PDF but written no verdict), and `leads.py --ready` was empty
+so there was no write-pass queue to clear first.
+
+Picked the Dordrecht claim back up: judged the nine aerial images against
+the register candidates, cross-checked the plausible ones against
+independent sources (indordrecht.nl's Bomenridders walking route; the
+Dordrechts Museum's own garden page for the two museum-garden entries), and
+shipped three trees. Dordrecht goes from 13 to 16:
+- dor_014, Oak-leaved Hornbeam, Park Merwestein (a real two-leaf-shape
+  cultivar, stop 8 of the city's own walking route)
+- dor_015, three London Planes in the Dordrechts Museum garden, dated to the
+  museum's 1842 founding
+- dor_016, three beeches in the same garden, girths 315/300/300 cm, ages the
+  register itself calls unresolved
+
+Left three "binnentuin" candidates (Botgenstraat/Spuistraat,
+Botgenstraat/Pelserstraat, an AMRO bank courtyard) as leads rather than
+guessing at access from an aerial photo alone; several more open register
+candidates remain for a future pass. Full detail in CURATION.md. Rebuilt
+the site, ran preflight (clean on Dordrecht) and qa.py, committed and
+pushed, released the claim.
+
+Not investigated this run: the "iOS app failing on schedule" item the
+session-start brief flagged. Flagging it here since it outranks new coverage
+per rung 2 and this run went straight to finishing the stranded claim
+instead.
+
 ## 2026-09-09 - Photo pass: 63 photographs, and the seam that produced them
 
 A heavy photo session on Hidde's ask. It changed where we look, and that is
