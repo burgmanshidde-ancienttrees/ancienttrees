@@ -705,15 +705,30 @@ struct CollectView: View {
                         // exactly here, and following back is the whole point
                         // of knowing you have a follower.
                         HStack(spacing: 14) {
+                            // GENUINELY 44 TALL, not the merge artifact the
+                            // 2026-09-08 fix removed from the row above (2026-09-09).
+                            // That fix was right that "mytrees-who" was a false
+                            // positive, an OS accessibility merge rather than a
+                            // layout fault, but removing it only unmasked what was
+                            // underneath: these two buttons are their own elements
+                            // at 62 by 14, and 14 points tall was never enough on
+                            // its own, merged or not. minHeight rather than a
+                            // hit-test-only trick, because contentShape everywhere
+                            // else in this codebase enlarges an already-44 frame,
+                            // it does not fake one.
                             Button { peopleList = .followers } label: {
                                 Text("\(profiles.followers) followers")
                             }
                             .buttonStyle(.plain)
+                            .frame(minHeight: 44)
+                            .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-followers")
                             Button { peopleList = .following } label: {
                                 Text("\(profiles.following) following")
                             }
                             .buttonStyle(.plain)
+                            .frame(minHeight: 44)
+                            .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-following")
                         }
                         .font(.caption).foregroundStyle(Brand.inkSoft)
