@@ -2,11 +2,11 @@
   "city": "Cagliari",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Cagliari's biggest tree stands on the square outside the central railway station: a Moreton Bay fig with a trunk twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest park, adds twinned figs, a honey locust and a jacaranda. Further out, a cypress in Pirri, two pines in Dolianova, and a blue gum and a lime in the hills above Sinnai. Six of ten stand within a kilometre and a half.",
+  "intro": "Cagliari's biggest tree stands outside the central railway station: a Moreton Bay fig twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest park, adds twinned figs, a honey locust and a jacaranda, and the botanical garden nearby holds a third fig, an ombu and a dragon tree from its 1866 founding. Further out: a Pirri cypress, two Dolianova pines, and a blue gum and lime above Sinnai. Eight of thirteen stand within a kilometre and a half.",
   "meta_description": "Cagliari's monumental trees: a fig twelve metres round outside the station, another on the Via Roma waterfront, and three in Sardinia's oldest park.",
-  "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus nine more.",
+  "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus twelve more.",
   "question_answer": "The oldest tree in Cagliari is the cypress in the Pirri cemetery, which Sardinian press covering its 2025 protection puts at more than two hundred years old: it was already standing when the burial ground was consecrated in November 1913. The only tree here that comes close is the Tintitaco in the Parco della Rimembranza, and its own record disagrees with itself, roughly 166 years on the Italian tree registry against about 200 in local reporting. The figs are younger than both. The two on the city squares are given 140 to 150 years, and the pair in the Giardini Pubblici anywhere between 140 and 195, a range nobody has narrowed.",
-  "question_context": "Ages are the soft part of the record in Cagliari. Italy's national register of monumental trees, which covers every tree on this page, measures girth and height and carries no age field. Every year given here comes from somewhere else: local and regional newspapers, the council's own designation notices, or the independent Italian tree registry, the only source that has dated the Tintitaco. Where two of those disagree, this page gives both figures rather than choosing. Access is simpler. All ten trees stand on free public ground, six within a kilometre and a half of each other in the centre, the seventh four kilometres out in Pirri on a bus route, the eighth in Dolianova on the regional train, and the last two reachable only by car, into the hills above Sinnai. Two qualifications: a precautionary fence rings the station fig, and the Pirri cypress is in a working cemetery with visiting hours. Two further register trees were checked and left off, a Norfolk Island pine and a coral tree, both on private ground.",
+  "question_context": "Ages are the soft part of the record in Cagliari. Italy's national register of monumental trees, which covers most trees on this page, measures girth and height but carries no age field. The three botanical garden trees carry no register entry; their ages come instead from the garden's own account of which specimens date from its 1866 founding, held to a wide band rather than a year. Every other year here comes from local and regional newspapers, council designation notices, or the independent Italian tree registry, the only source to date the Tintitaco. Where sources disagree, this page gives both figures. Access is simpler for most. Eleven of thirteen stand on free public ground; eight of those, including the botanical garden three, sit within a kilometre and a half in the centre, the rest reached by bus, regional train or car into the hills above Sinnai. The botanical garden charges four euros, the only paid ground here. A precautionary fence rings the station fig, and the Pirri cypress sits in a working cemetery with visiting hours. Two further register trees, a Norfolk Island pine and a coral tree, were checked and left off: both on private ground.",
   "faq": [
     {
       "q": "What is the oldest tree in Cagliari?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Six of the ten, yes. The station fig, the Via Roma fig, the Tintitaco and the three Giardini Pubblici trees sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus. Dolianova's two pines are further still, an 18km train ride, and both the blue gum near Sinnai and the lime at Corongiu are car-only trips into the hills above town; each makes its own separate day out."
+      "a": "Eight of the thirteen, yes. The station fig, the Via Roma fig, the Tintitaco, the three Giardini Pubblici trees and the three in the university's botanical garden all sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus. Dolianova's two pines are further still, an 18km train ride, and both the blue gum near Sinnai and the lime at Corongiu are car-only trips into the hills above town; each makes its own separate day out."
     }
   ],
   "hero_tree_id": "cag_004",
@@ -366,6 +366,108 @@
         "kind": "flowers"
       },
       "how_to_recognise": "You can recognise it by its trunk, 2.6 metres round and 18 metres tall, standing where the valley holds water and shelter both. It stands at the historic Corongiu dam site above Sinnai."
+    },
+    {
+      "id": "cag_011",
+      "name": "The Moreton Bay Fig of the Orto Botanico",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "over a century, among the garden's founding-era plantings",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": null,
+      "location": {
+        "address": "Orto Botanico di Cagliari, Viale Sant'Ignazio da Laconi 1, Cagliari",
+        "latitude": 39.2224,
+        "longitude": 9.1112,
+        "neighbourhood": "Stampace, Valle di Palabanda"
+      },
+      "story": "Cagliari's botanical garden was laid out in a valley the Romans had already used, on the site of an amphitheatre and a run of Punic and Roman cisterns, and it opened on 15 November 1866. This fig is one of the trees that went in at the start.\n\nThe date comes from the garden itself. Its account of its notable trees says they are the oldest specimens on the ground because they were planted during the founding phase, and it names this Ficus macrophylla in that list, alongside the ombu and the dragon tree. Allow the founding planting a decade or two beyond the opening and the fig comes out somewhere around 140 to 160 years old. Nobody has put a tape around it, so there is no girth to quote.\n\nCagliari's other Moreton Bay figs are public property in every sense: the giant on Piazza Matteotti outside the railway station, fenced off as a precaution and argued over in the local press, and the pair on the avenue in the Giardini Pubblici. This one has had the quieter life. It grew up inside a working university collection, on five hectares designed by the architect Gaetano Cima for the garden's first director Patrizio Gennari, among people whose job is to notice what trees do. Four euros gets you in, Monday to Saturday.",
+      "how_to_recognise": "You can recognise it by its size and its big leathery evergreen leaves: it is the garden's one Moreton Bay fig. It stands apart from the ombu on the main avenue and from the dragon tree up by the department building.",
+      "verified_sources": [
+        "https://sites.unica.it/hbk/notizie-generali/presentazione/",
+        "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
+        "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
+        "https://www.inaturalist.org/observations/23043126",
+        "https://www.inaturalist.org/observations/339587710"
+      ],
+      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups per italianbotanicalheritage.com). Open Monday to Saturday, closed Sundays and some public holidays.",
+      "transport": "In central Cagliari; about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003), roughly 700m-1.2km from the other Piazza Matteotti/Ingrao figs (cag_004, cag_005).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "cag_012",
+      "name": "The Ombu of the Orto Botanico",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "over a century, among the garden's founding-era plantings",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": null,
+      "location": {
+        "address": "Orto Botanico di Cagliari, Viale Sant'Ignazio da Laconi 1, Cagliari",
+        "latitude": 39.2223,
+        "longitude": 9.1114,
+        "neighbourhood": "Stampace, Valle di Palabanda"
+      },
+      "story": "The ombu is not built like a tree. Phytolacca dioica is a pachycaul, a plant that puts its bulk into a broad soft water-holding stem instead of into hard timber, which is how a South American relative of pokeweed ends up thickening at the base in a way no timber tree does.\n\nCagliari's grows along the main avenue of the botanical garden, past the bald cypresses and short of the Pampanini fountain, which is where the garden's own visitor route places it. Both the Italian parks and gardens association and the Italian Botanical Heritage survey list it among the garden's significant specimens, which is good company for a species most visitors would walk past without a second look.\n\nIts age comes from the garden's own account, which says the notable trees are the oldest on the ground because they were planted during the founding phase, and names the Phytolacca dioica among them. The garden opened on 15 November 1866, so the ombu is up to about 160 years old, give or take however long that first planting ran on. What nobody has published is a girth, and on a trunk of this shape that is the measurement worth having. If you have stood beside it with a tape, tell us.",
+      "how_to_recognise": "You can recognise it by the broad swollen base of the trunk, unlike anything else growing here. It stands along the garden's main avenue, past the bald cypresses and before the Pampanini fountain.",
+      "verified_sources": [
+        "https://sites.unica.it/hbk/notizie-generali/presentazione/",
+        "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
+        "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
+        "https://www.inaturalist.org/observations/120986565",
+        "https://www.inaturalist.org/observations/29103958"
+      ],
+      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups). Open Monday to Saturday, closed Sundays and some public holidays.",
+      "transport": "In central Cagliari; about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "cag_013",
+      "name": "The Dragon Tree of the Orto Botanico",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "over a century, among the garden's founding-era plantings",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": null,
+      "location": {
+        "address": "Orto Botanico di Cagliari, near the Dipartimento di Scienze della Vita e dell'Ambiente building, Viale Sant'Ignazio da Laconi 1, Cagliari",
+        "latitude": 39.223,
+        "longitude": 9.1109,
+        "neighbourhood": "Stampace, Valle di Palabanda"
+      },
+      "story": "Cut a dragon tree and it bleeds. The red resin that runs out is what gave Dracaena draco its name and what made the species worth shipping off the Canary Islands for centuries, as a dye, a varnish and a medicine.\n\nThis one stands near the Department of Botanical Sciences building at the top of Cagliari's botanical garden, and it is an odd thing to meet in Sardinia. Not a conifer and not a palm: a succulent that has worked out the shape of a tree, thickening slowly and dividing its crown into fistfuls of stiff sword-shaped leaves. The older it gets, the more branched and the more particular that crown becomes.\n\nDating one is hard, because a dragon tree lays down none of the annual rings you can count in an oak, and its age is usually read from how often the crown has forked. Here the figure comes from the garden instead. Its own account of its notable trees says they are the oldest specimens on the ground because they were planted during the founding phase, and it names the Dracaena draco in that list beside the ombu and the Moreton Bay fig. The garden opened on 15 November 1866 in the Valle di Palabanda, above Roman cisterns and the site of an amphitheatre, so this dragon tree has had up to about 160 years to build the head it carries now. Nobody has measured its trunk.",
+      "how_to_recognise": "You can recognise it by the stiff sword-shaped leaves bunched at the ends of thick pale branches, more succulent than tree. It stands near the Department of Botanical Sciences building at the top of the garden.",
+      "verified_sources": [
+        "https://sites.unica.it/hbk/notizie-generali/presentazione/",
+        "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
+        "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
+        "https://www.inaturalist.org/observations/299477412",
+        "https://www.inaturalist.org/observations/66819968"
+      ],
+      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups). Open Monday to Saturday, closed Sundays and some public holidays.",
+      "transport": "In central Cagliari; about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged"
     }
   ]
 }
