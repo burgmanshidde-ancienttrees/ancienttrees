@@ -9038,6 +9038,40 @@
    "cities": [],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-09-09T16:31:22+00:00",
+   "date": "2026-09-09",
+   "run_id": "34377222686",
+   "minutes": 54.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 322,
+   "denials": 40,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(git), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 8548655,
+   "claims_held": [
+    "leeuwarden"
+   ],
+   "commits": 12,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "helsinki",
+     "trees": 2
+    },
+    {
+     "city": "sliven",
+     "trees": 1
+    },
+    {
+     "city": "tallinn",
+     "trees": 1
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
