@@ -38,10 +38,27 @@ candidates remain for a future pass. Full detail in CURATION.md. Rebuilt
 the site, ran preflight (clean on Dordrecht) and qa.py, committed and
 pushed, released the claim.
 
-Not investigated this run: the "iOS app failing on schedule" item the
-session-start brief flagged. Flagging it here since it outranks new coverage
-per rung 2 and this run went straight to finishing the stranded claim
-instead.
+Checked rung 2 after finishing the claim. `health.py` flagged one live
+item: "Night shift" (nightly.yml) failing on its own error, not the usage
+window. The named error is `SDK execution error: ReferenceError: Claude
+Code native binary not found at /home/runner/.local/bin/claude`, from the
+`anthropics/claude-code-action@v1` install step, on two runs 3 minutes apart
+at 2026-09-08 23:42/23:44 (54-59s each, install log shows "Claude Code
+successfully installed!" immediately followed by the binary not being
+found, a race rather than a real missing dependency). The next scheduled
+run after that, and this very session, both ran the install step fine, so
+this reads as a transient upstream hiccup in the action rather than
+something wrong in our workflow config; nothing changed.
+
+The "iOS app failing on schedule" item the session-start brief named was
+already fixed before this session started: `gh run view` on the failing
+scheduled run (2026-09-08 19:43) showed a genuine `appfit.py` FAIL, two
+buttons on the People screen ('mytrees-followers'/'mytrees-following') at
+62 by 14 points against Apple's 44 by 44, across all 4 tested phone/OS
+combinations. `git log` on Collect.swift shows an earlier attempt in this
+same window already fixed it (commits ff8442e8, eadba6bc, e5d10c51, the
+last a revert of a duplicate fix). No scheduled iOS run has fired since the
+fix to confirm green, but the code and the CI finding now agree.
 
 ## 2026-09-09 - Photo pass: 63 photographs, and the seam that produced them
 
