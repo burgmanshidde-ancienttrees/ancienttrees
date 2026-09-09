@@ -44,46 +44,36 @@
       "source": "https://historischcentrumleeuwarden.nl/images/pdf/wandelroute_vosseparkwijk.pdf"
     },
     {
-      "name": "Zilverlinde, Druifstreek tegenover Blokhuispoort",
-      "species": "Silver Linden (Tilia tomentosa)",
-      "why_lead": "Named by IVN Leeuwarden e.o.'s monumental-trees walking page (silvery hairs on the leaf undersides noted). No coordinate and no matching LRMB register entry found near Leeuwarden for a Zilverlinde at this address; needs a precise location before it can be pinned.",
-      "source": "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/"
-    },
-    {
-      "name": "Zilverlinde, Eewal tegenover Restaurant Spinoza",
-      "species": "Silver Linden (Tilia tomentosa)",
-      "why_lead": "Same IVN page as above. No coordinate and no matching LRMB register entry found; needs a precise location before it can be pinned.",
-      "source": "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/"
-    },
-    {
-      "name": "Witte acacia (leaning, propped), Westerpark/Vosseparkje near Westersingel 8",
-      "species": "Black Locust (Robinia pseudoacacia)",
-      "why_lead": "HCL brochure top-10 entry VIII, dated 1924, described as leaning and propped up. No LRMB register entry found for an acacia/Robinia in Leeuwarden municipality, and no precise coordinate beyond 'near Westersingel 8'. One source only. CONFIRMED as the same tree the brochure's Westerpark stop (16) separately calls out: 'Bijzonder is ook de scheefhangende en ondersteunde witte acacia (VIII)' (re-read 2026-09-09 during the Vosseparkje verify pass), so this is the brochure's own numbered stop VIII, not a stray mention; still needs a coordinate before it can ship.",
-      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
-    },
-    {
-      "name": "Libanonceder, Wijbrand de Geeststraat 42 (voor het Gabbema Gasthuis)",
-      "species": "Cedar of Lebanon (Cedrus libani)",
-      "why_lead": "HCL brochure top-10 entry VII, dated 1906. No LRMB register entry found and no coordinate obtained this pass (Wijbrand de Geeststraat lies further east than the radius pulled for this brief). One source only.",
-      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
-    },
-    {
-      "name": "Krimlinde, Blokhuisplein (links van de entree tot de Blokhuispoort)",
-      "species": "Crimean Linden (Tilia x euchlora)",
-      "why_lead": "HCL brochure top-10 entry X, dated 1954. No LRMB register entry found for a Krimlinde in Leeuwarden and no coordinate obtained this pass. One source only.",
-      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
-    },
-    {
       "name": "Gewone beuk achter De Koperen Tuin, Prinsentuin",
       "species": "European Beech (Fagus sylvatica)",
       "why_lead": "HCL brochure top-10 entry II, dated 1874, described as having a low branch that limits the height of delivery traffic behind the De Koperen Tuin pavilion in Prinsentuin. Could not be confidently matched to any LRMB register coordinate in Prinsentuin (all register beeches there, nrs 1688389 and 1688418/1688918-equivalent already match the published lee_003 and lee_005); may be a further, distinct beech or may be one of those under a different description. Needs a site visit or a clearer source before publishing to avoid duplicating an already-live tree under a new id.",
       "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
-    },
+    }
+  ],
+  "resolved_2026-09-09": [
     {
       "name": "Rode paardenkastanjes / Gewone plataan / Witte paardenkastanje, tuin Diakonessenziekenhuis",
-      "species": "Red Horse Chestnut, London Plane, Horse Chestnut (various)",
-      "why_lead": "LRMB register nrs 1688394, 1687120, 1688396, planted 1880-1890, in the former hospital garden off Noordersingel. The HCL brochure corroborates only in general terms ('a few beautiful trees remain from the 1895 Vlaskamp-designed hospital garden') without naming species one to one. Two of the three register entries are owner=particulier; access needs checking on the ground rather than assumed from the register's visitable=ja before these ship, since 'particulier' plus a former hospital site (now used by other institutions) is exactly the case hard rule 10 asks to check carefully.",
-      "source": "https://www.monumentalebomen.nl/"
+      "outcome": "Shipped as lee_019, lee_020, lee_021. Researched what now occupies the former hospital garden: the Diakonessenhuis closed in 1987 and was converted into apartments in 1988-1990; the garden survives as a landscaped courtyard now named Diaconessenpark. Checked access via OpenStreetMap (Overpass): the courtyard is tagged leisure=park, wheelchair-accessible paved footways run past all three trees, there is a public bench beside them, and no gate or access=private tag exists anywhere in the courtyard (only two low 0.6m garden walls). Judged genuinely open despite two of three register entries listing owner=particulier, and flagged accordingly. See data/research/leeuwarden-verified.json for full verify_notes."
+    },
+    {
+      "name": "Zilverlinde, Druifstreek tegenover Blokhuispoort",
+      "outcome": "Shipped as lee_025 with an approximate, landmark-anchored coordinate (Nominatim geocode of the Druifstreek segment nearest Blokhuispoort). Still single-sourced (IVN Leeuwarden e.o.) and no age found; flagged."
+    },
+    {
+      "name": "Zilverlinde, Eewal tegenover Restaurant Spinoza",
+      "outcome": "Shipped as lee_026 with an approximate coordinate corroborated by two independent geocodes (Restaurant Spinoza's address and the Eewal street segment, agreeing within about 15m). Still single-sourced (IVN Leeuwarden e.o.) and no age found; flagged."
+    },
+    {
+      "name": "Witte acacia (leaning, propped), Westerpark/Vosseparkje near Westersingel 8",
+      "outcome": "Shipped as lee_024 with an approximate coordinate (Nominatim geocode of Westersingel 8, used as the park-edge anchor; the trunk itself is inside the park and not pinned exactly). Still single-sourced (HCL brochure, seen twice in the same document); flagged."
+    },
+    {
+      "name": "Libanonceder, Wijbrand de Geeststraat 42 (voor het Gabbema Gasthuis)",
+      "outcome": "Shipped as lee_023 with an approximate coordinate (two geocodes of the address and the institution's name agreed within about 40m). Access is genuinely uncertain: the Gabbema Gasthuis is a historic almshouse of the same kind as the already-blocked Sint Anthony Gasthuis, but OSM tags a pedestrian gate right at this point as access=permissive, foot=yes, and the brochure's own wording ('voor het Gasthuis', in front of the almshouse) reads as street-facing. Shipped flagged with an honest access caveat rather than blocked outright; a future pass should settle this on the ground or check whether the Gasthuis's own website says anything about its grounds."
+    },
+    {
+      "name": "Krimlinde, Blokhuisplein (links van de entree tot de Blokhuispoort)",
+      "outcome": "Shipped as lee_022 with an approximate coordinate (Nominatim geocode of Blokhuisplein itself; Blokhuispoort's own entrance geocodes 250-300m further southeast, so the true trunk could sit anywhere along that stretch of the square). Still single-sourced (HCL brochure); flagged."
     }
   ],
   "blocked": [
