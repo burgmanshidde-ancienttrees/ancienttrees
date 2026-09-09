@@ -806,10 +806,12 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Ravenscourt_Park_Tree_of_Heaven_%282%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
       }
     }
   ]
