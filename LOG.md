@@ -11,6 +11,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation 3) - Florence: 3 thin entries backfilled instead of duplicated
+
+Claimed Florence for verify. Found second sources (RAMI's independent
+per-tree surveys) for 3 of 4 single-sourced hillside leads, but the write
+pass caught that all three were already published under different ids
+(flo_016/018/019, matched on their MASAF register codes) and refused to
+ship duplicates. Retargeted as a backfill: filled the three thin live
+entries with the new sources, addresses, access and transport, upgraded
+their pins to confirmed on RAMI's own survey GPS, and corrected story
+sentences that had said "no second source" now that there is one. One
+lead (a Monterey cypress) still doesn't clear the bar and stays a lead.
+Full detail in CURATION.md. Claim released.
+
 ## 2026-09-09 (continuation 2) - Milan +1 (22 -> 23), closed a stuck lead and confirmed its official register is exhausted
 
 Moved to rung 4 (new coverage/deepening) after the Leeuwarden claim closed.

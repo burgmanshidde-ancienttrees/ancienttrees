@@ -11,6 +11,47 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation 3) - Florence: backfilled 3 thin entries rather than duplicating them, caught before it shipped
+
+Claimed Florence (rank #13, register-backed room to grow toward its 30-tree
+target) for verify. Dispatched a pass against four single-sourced leads in
+`data/leads/florence.json` (the Bobolino stone pine, the Giardino Simone
+Weil Monterey cypress, the Monte alle Croci cypress, the Via Giramondino
+Aleppo pine), each blocked only for want of a second source. Found RAMI
+(ilregistrodeglialberi.it) per-tree pages for three of the four, each
+carrying an independent site-visit survey (its own GPS, a re-measured
+height, a vitality call, sometimes a dated photo) that genuinely
+corroborates the MASAF national register designation rather than repeating
+it, plus a comune di Firenze elenco announcement as a third confirmation.
+
+**The write pass caught what the verify pass missed: all three were already
+published**, as flo_016, flo_018 and flo_019, matched one to one on their
+MASAF designation codes. Good process working as intended: BRIEF_WRITING.md
+told the writer not to ship a duplicate over good live copy, it refused,
+and it flagged exactly the right next step instead. Retargeted as a
+backfill: the three live entries were thin (empty access, address,
+transport, single bare-string source, `location_precision: approximate`)
+against what this pass had just found. Filled all three from the verified
+research, added the RAMI and comune sources, and moved `location_precision`
+to `confirmed` on the strength of RAMI's own independent survey GPS
+matching the register point to 5 decimal places. Lightly edited each story
+where it flatly said "one source" or "no corroboration", since that
+sentence is now false and would sit on the page telling a reader something
+untrue; kept the storytelling voice and trimmed flo_018 back under 250
+words after the edit. The Monte alle Croci cypress's access field carries
+the comune's own restoration-phasing caveat (only the lower section to the
+Rose Garden entrance was confirmed reopened as of Dec 2024), written as a
+plain fact for the visitor rather than an instruction to ourselves, which
+the write pass flagged as a TONE_OF_VOICE.md v1.1 issue in the verify
+record's draft wording.
+
+The fourth lead (Giardino Simone Weil Monterey cypress) did not clear the
+bar: RAMI's only Monterey cypress in Florence is a different, already-
+blocked tree at the Arcetri Observatory. Left as a lead with the search
+documented so a future pass does not repeat it. Build, preflight and qa all
+pass. Claim released. No new tree count change (still 23 trees), but three
+pages are now real pages instead of near-empty placeholders.
+
 ## 2026-09-09 (continuation 2) - Milan +1 (22 -> 23): resolved a lead stuck since 2026-08-06, confirmed the city's official register is exhausted
 
 Milan is rank #3 in CITY_QUEUE.md with room to grow toward its 30-tree target
