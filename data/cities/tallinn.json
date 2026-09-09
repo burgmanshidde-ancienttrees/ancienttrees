@@ -2,11 +2,11 @@
   "city": "Tallinn",
   "country": "Estonia",
   "status": "needs_curation",
-  "intro": "Four trees, and they do not make one walk. Two stand in the Old Town: a hollow lime beside Niguliste church, generally called the oldest tree in Tallinn and said to have a chronicler buried at its foot, and a pair of limes planted in 1883 for two hundred years of one family at one address. A few streets away grows the largest ginkgo in Estonia, which stopped a Soviet parade grandstand in the 1980s. The fourth is out at Maarjamae, in the park of a manor house that burned down in 1995.",
-  "meta_description": "Four remarkable trees in Tallinn: the lime said to be the city's oldest, Estonia's largest ginkgo that stopped a Soviet grandstand, and a pair from 1883.",
+  "intro": "Five trees, and they do not make one walk. Two stand in the Old Town: a hollow lime beside Niguliste church, generally called the oldest tree in Tallinn, and a pair of limes planted in 1883 for two hundred years of one family at one address. A few streets away grows the largest ginkgo in Estonia, which stopped a Soviet parade grandstand. Out at Kadriorg an oak grows beside the Russalka memorial, on a stretch of seafront a coastal road was bent around to save it. The fifth stands further out at Maarjamae, in a manor park.",
+  "meta_description": "Five remarkable trees in Tallinn: the lime said to be the city's oldest, Estonia's largest ginkgo, and the oak a road was bent around to save.",
   "question_meta": "Tallinn's oldest tree is Kelch's Linden beside Niguliste church, around 370 years old. Where it stands, and three more worth the walk.",
   "question_answer": "The oldest tree in Tallinn is Kelch's Linden, which stands beside Niguliste church in the Old Town, a few minutes on foot from Town Hall Square. A ring assessment in 1999 put it at 340 to 350 years and measured the trunk at 462 centimetres round, which makes it roughly 370 years old now; a 1938 newspaper gave its planting year as 1680, which fits. It is named for Christian Kelch, the Baltic-German pastor who wrote a chronicle of Livonia and died in 1710, and the tradition in Tallinn holds that he is buried at its foot. Nobody has dug to check. The tree looks its age. Two main branches are what remains of the crown, the base is hollow and has been sealed against further rot, and it has been pruned repeatedly to keep weight off what is still holding. When Tallinn was named European Tree City in 2015, this lime was part of the case. It stands beside the church that burned in the air raid of March 1944 and took decades to rebuild; the tree, by then already close to three centuries old, needed no rebuilding.",
-  "question_context": "Estonia's EELIS register of protected individual natural objects gives each tree a position, a designation date and a manager, and carries no age, girth or vitality field at all. So every year on this page comes from a measurement someone published separately: a 1999 ring assessment for Kelch's Linden, a 2017 dendrological survey for the ginkgo and for the Windecki red oak, and a hedged newspaper account for the Huecki lindens, which the culture weekly Sirp dates to 1883 with an explicit apparently. Where a figure rests on an assumption, the tree's own page says which assumption. The Windecki oak is the clearest case: its age holds only if it went into the ground with the manor park's original planting before 1886, and that if is the whole basis for the number. The register lists several dozen more protected trees in Tallinn, most of them nineteenth-century ornamental cultivars in and around Kadriorg's park planting, copper beeches and globe maples and weeping birches designated as botanical specimens rather than for age or size. See the full list of four on the Tallinn page.",
+  "question_context": "Estonia's EELIS register of protected individual natural objects gives each tree a position, a designation date and a manager, and carries no age, girth or vitality field at all. So every year on this page comes from a measurement someone published separately: a 1999 ring assessment for Kelch's Linden, a 2017 dendrological survey for the ginkgo and for the Windecki red oak, and a hedged newspaper account for the Huecki lindens, which the culture weekly Sirp dates to 1883 with an explicit apparently. Where a figure rests on an assumption, the tree's own page says which assumption. The Windecki oak is the clearest case: its age holds only if it went into the ground with the manor park's original planting before 1886. The Russalka Oak is the youngest and least documented of the five, put at 60 to 100 years by an ERR news report and a European Tree of the Year entry, with no ring count or girth figure behind it. The register lists several dozen more protected trees in Tallinn, mostly nineteenth-century ornamental cultivars around Kadriorg's park planting, designated as botanical specimens rather than for age or size. See the full list of five on the Tallinn page.",
   "faq": [
     {
       "q": "What is the oldest tree in Tallinn?",
@@ -14,15 +14,15 @@
     },
     {
       "q": "Are these all the protected trees in Tallinn?",
-      "a": "No. Estonia protects several dozen individual trees in the city. Most of them are nineteenth-century ornamental cultivars in the park planting around Kadriorg, copper beeches, globe maples and weeping birches, designated as botanical specimens rather than for age or size. The four here are the ones that are old or remarkable in their own right."
+      "a": "No. Estonia protects several dozen individual trees in the city. Most of them are nineteenth-century ornamental cultivars in the park planting around Kadriorg, copper beeches, globe maples and weeping birches, designated as botanical specimens rather than for age or size. The five here are the ones that are old or remarkable in their own right."
     },
     {
       "q": "Can I see them in one walk?",
-      "a": "Three of the four, comfortably. Kelch's Linden and the Huecki lindens are both in the Old Town, and the ginkgo is a short walk out at the corner of Peeter Suda street and Parnu maantee. The Windecki red oak is about twenty minutes further out at Maarjamae and needs its own trip."
+      "a": "Four of the five, comfortably. Kelch's Linden and the Huecki lindens are both in the Old Town, the ginkgo is a short walk out at the corner of Peeter Suda street and Parnu maantee, and the Russalka Oak sits on the Pirita tee tram route out toward Kadriorg. The Windecki red oak is about twenty minutes further out at Maarjamae and needs its own trip."
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes, all four stand in public space: two on Old Town streets, one on a street corner, and one in a small former manor park that is open ground."
+      "a": "Yes, all five stand in public space: two on Old Town streets, one on a street corner, one on a public seaside promenade, and one in a small former manor park that is open ground."
     }
   ],
   "hero_tree_id": "tln_001",
@@ -176,6 +176,37 @@
         "label": "July to August, when it flowers",
         "kind": "flowers"
       }
+    },
+    {
+      "id": "tln_005",
+      "name": "The Russalka Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "60 to 100 years",
+      "age_min": 60,
+      "age_max": 100,
+      "girth_cm": null,
+      "location": {
+        "address": "By the Russalka Memorial, Pirita tee, near Kadriorg",
+        "latitude": 59.4428,
+        "longitude": 24.79007,
+        "neighbourhood": "Kadriorg / Russalka"
+      },
+      "story": "Estonia moved a road rather than cut this oak down. When the Reidi tee coastal scheme was drawn up, the new carriageway ran straight through the tree; local objection got the alignment bent around it instead, and when the road opened in 2019 the oak was still there. Estonians call it the Reidi tee tamm, after the thing it survived.\n\nThat fight is what put it forward. In 2017 it stood as Estonia's entry to the European Tree of the Year and finished eleventh, a respectable placing for a tree this young. The reports put this one at somewhere between sixty and a hundred years, and nobody has published a girth for it, so the age stays a band rather than a number.\n\nIt grows on the seafront green beside the Russalka, the bronze angel raised in 1902 for the crew lost when the warship of that name went down crossing to Helsinki. The memorial is older than the tree. Tallinn walks, runs and cycles past both on the Pirita promenade, which puts the oak, the monument and the swerve in the road within a few metres of each other.\n\nTwo things are still open here: how old it is, and how thick. If you go past with a tape measure, we would like the number.",
+      "verified_sources": [
+        "https://eeter.err.ee/294135/euroopa-puu-tiitlile-kandideerib-tanavu-russalka-juures-olev-tamm",
+        "https://et.wikipedia.org/wiki/Euroopa_aasta_puu"
+      ],
+      "access": "Free, public seaside promenade beside the Russalka Memorial, open at all times",
+      "transport": "Tram 1 to the 'Rusalka' stop, right beside it; or a 15-minute walk from the Kadriorg tram stop along Pirita tee",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by its place in the road: it is the oak that Reidi tee bends around, standing on the green strip between the carriageway and the Russalka memorial.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }
