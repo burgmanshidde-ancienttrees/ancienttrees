@@ -1825,6 +1825,45 @@ def check_city_indent():
     return out
 
 
+def check_a_by_licence_names_its_author():
+    """A CC BY or BY-SA photograph must name the photographer on the page.
+
+    That is hard rule 4 and it is the licence's own price: the name is the
+    whole of what the photographer gets, and it is the one thing we can never
+    quietly drop. It shipped anyway. On 2026-09-09 a viewing pass approved an
+    Oahu bodhi tree whose Commons file carries no Artist at all, and the same
+    sweep had already left Warsaw's poplar and Bologna's plane credited to
+    nobody, both under CC BY-SA, both with a name sitting on Commons that our
+    own record had lost.
+
+    photo_apply.credit() writes "via Wikimedia Commons" when the author field
+    is empty, which reads like a credit and is not one, so nothing downstream
+    could tell the difference. This check can: it asks whether anything is
+    left once the "via <source>" tail comes off.
+
+    A FAIL rather than a NOTE, because it is a licence obligation to a person
+    rather than a matter of taste, and because there were two of them.
+    """
+    out = []
+    for p in sorted(glob.glob("data/cities/*.json")):
+        with open(p, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for t in city.get("trees", []):
+            photo = t.get("photo") or {}
+            if not photo.get("url") or photo.get("status") == "held":
+                continue
+            licence = (photo.get("license") or "").lower()
+            if "cc by" not in licence:
+                continue
+            name = re.sub(r"(?i),?\s*via [a-z .]+$", "",
+                          photo.get("attribution") or "").strip(" ,")
+            if not name:
+                out.append(f"{t['id']} ({city['city']}) ships a {photo.get('license')} "
+                           "photograph crediting nobody; find the author on the source "
+                           "page or take the photograph off")
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
@@ -1855,6 +1894,7 @@ def main():
     for line in (check_stacked_pins() + check_search_names() + check_paid_share()
                  + check_country_counts() + check_leads_already_published()
                  + check_tree_labels_are_translated() + check_city_indent()
+                 + check_a_by_licence_names_its_author()
                  + note_trees_with_no_reason()
                  + note_a_young_tree_is_not_ancient()):
         print("NOTE " + line)
