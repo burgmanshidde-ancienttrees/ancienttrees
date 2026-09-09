@@ -65,7 +65,8 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the hollow trunk, propped up and nearly eight metres round, cut back hard by repeated pollarding. It stands in St Andrew's churchyard at Totteridge, older by a thousand years than the church beside it."
     },
     {
       "id": "lon_002",
@@ -105,7 +106,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the huge hollow pollard trunk, split and gnarled and wide enough to shelter a small football team. It stands near Pen Ponds in Richmond Park, usually with fallow deer grazing around it."
     },
     {
       "id": "lon_003",
@@ -137,7 +139,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Look Up London both independently corroborate the St Peter Cheap site, the 1853 cab-company advert, the 1901 'most valuable tree' claim and the Wordsworth connection.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the buildings beside it, held to two storeys by their leases so its crown keeps open sky. It stands on the corner of Wood Street and Cheapside, in the churchyard of a church that burned in 1666."
     },
     {
       "id": "lon_004",
@@ -169,7 +172,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources now back the planting date, Bouverie attribution, 2008 valuation and Great Trees of London designation. This entry describes the square's plane trees collectively (30+ specimens, one individually named and valued); coordinates mark the square itself rather than one specific trunk among many, so location_precision stays approximate honestly.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by there being more than thirty of them, planted together in 1789 as one scheme, which is why this entry marks the square rather than a single trunk. It stands in the railed garden of Mayfair's Berkeley Square."
     },
     {
       "id": "lon_005",
@@ -209,7 +213,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Replaces the dead/fallen Queen Elizabeth's Oak on 2026-07-27 per Hidde's living-trees rule. Coordinates upgraded 2026-07-28 to Woodland Trust ATI open-data record Id 2919 (girth 7.26m, Ancient, alive, verified 2021), the only ancient chestnut in that corner of the Flower Garden and ~30m from the approved photo's EXIF point, so precision is confirmed. Great-Tree identification is convergent (Wikipedia lists the Great Tree chestnut in the Flower Garden; this is the garden's largest ancient chestnut) and phrased as attributed. Deliberately NOT claiming Tree of the Year 2023: that shortlisted chestnut stands in the avenue near the Roman Temple, ~350m away. Age derives from the documented 1660-64 planting, not a ring count.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the thickened, part hollow trunk of a sweet chestnut, pollarded more than once, and by the spiny green cases it drops across the grass every October. It stands in the Flower Garden of Greenwich Park."
     },
     {
       "id": "lon_006",
@@ -247,7 +252,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Morus Londinium (a Woodland Trust/academic mulberry-mapping project) and London Remembers both corroborate the 1608 planting and James I connection independently. Location corrected the same pass: a systematic geocode audit flagged the stored coordinate as 1055m from Charlton House; Nominatim's own geocode of Charlton House, Charlton Road places it at 51.4807, 0.0371 (postcode SE7 7TH, not the stored SE7 8RE), matching this entry's own 'Charlton, South East London' neighbourhood. Fixed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the wooden props holding it up and by the lean that brings its lower branches almost to the grass. It stands in the garden of Charlton House, the Jacobean mansion now used as a community centre."
     },
     {
       "id": "lon_007",
@@ -279,7 +285,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from Fulham Palace itself; Nominatim's own geocode agrees on two separate queries (51.4704-51.4705, -0.2152 to -0.2154), one of them matching this entry's own postcode (SW6 6EA) exactly. Moved onto the palace grounds; still confirmed since the palace itself, not just a neighbourhood, is now correctly pinpointed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its evergreen leaves, a Mediterranean holm oak still in leaf when its neighbours are bare, and by the low base it was once coppiced to. It stands in Fulham Palace Gardens, free and open daily."
     },
     {
       "id": "lon_009",
@@ -320,7 +327,8 @@
         "label": "August to September, when it flowers",
         "kind": "flowers"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the small marker naming it one of the Old Lions: the Japanese pagoda tree planted in 1762, the most storied of Kew's five oldest survivors. It stands inside Kew Gardens, which charges entry."
     },
     {
       "id": "lon_010",
@@ -358,7 +366,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Morus Londinium (a Woodland Trust/academic mulberry-mapping project) both corroborate the Evelyn garden, the tree's age and the Peter the Great story; both also independently note historians doubt Peter himself planted it, consistent with this entry's own careful phrasing ('may have survived even that') rather than crediting him with planting it. Location corrected the same pass: the stored coordinate was about 700m from Sayes Court Street itself, whose Nominatim geocode (51.484, -0.031) agrees closely with the independently found Sayes Court Park coordinate from a parks-data source (51.4848, -0.0310). Moved onto the actual street/park cluster.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the fence around it and the stone marker at its base telling the wheelbarrow story about Peter the Great. It stands propped in Sayes Court Park in Deptford, where nothing else of the garden survives."
     },
     {
       "id": "lon_008",
@@ -390,7 +399,8 @@
       },
       "curation_status": "flagged",
       "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026). A second independent source found 2026-07-26: Open Plaques records a Great Trees of London commemorative plaque for this exact tree ('the oldest in London... platanus x hispanica') at 51.47441, -0.23106, about 9 metres from the EXIF position, close enough to be the same tree. Location precision upgraded on that agreement. Story rewritten 2026-07-28 to reach the standard word count, grounded entirely in facts already established above, no new claims added.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the small Great Trees of London plaque at its foot, which calls it simply the oldest plane in London. It stands at Barn Elms, on the edge of the land beside the London Wetland Centre."
     },
     {
       "id": "lon_011",
@@ -488,7 +498,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the roots, risen clear of the ground in ridges across the forecourt with the hotel's garden tucked underneath them. It stands on The Dorchester's forecourt on Park Lane, in view from the pavement."
     },
     {
       "id": "lon_014",
@@ -518,7 +529,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its height, more than 100 feet by the Great Trees map, and by the way it leans out over the pavement toward the road. It stands outside the Memorial Garden of Rest on Marylebone High Street."
     },
     {
       "id": "lon_015",
@@ -548,7 +560,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by being the odd one out, an Oriental Plane rather than the London Planes on the streets around it, and by its size, one of the largest on that corner. It stands where Horse Guards Avenue meets the Embankment."
     },
     {
       "id": "lon_016",
@@ -578,7 +591,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the information board beside it and by its size, the one very large plane in a small square. It stands in Brunswick Square Gardens in Bloomsbury, with the Foundling Museum on the far side."
     },
     {
       "id": "lon_017",
@@ -640,7 +654,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the swollen, knobbled trunk under a crown far too small for it. It stands south of the lower grassy area in Ravenscourt Park, near the elm avenue, about 150 metres from the park's tree of heaven."
     },
     {
       "id": "lon_019",
@@ -812,7 +827,8 @@
         "status": "approved",
         "width": 4032,
         "height": 3024
-      }
+      },
+      "how_to_recognise": "You can recognise it by the circular green plaque at its foot naming it a Great Tree of London and one of the largest of its species in the country. It stands by the sports area and playground in Ravenscourt Park."
     }
   ]
 }

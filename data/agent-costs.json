@@ -6348,6 +6348,15 @@
     "note": "batched write pass: Warsaw 7 (war_021-027), Maastricht 3 (maa_016-018); 1 best_time (maa_016 autumn colour); 2 species strings normalised (war_024 Wych Elm, war_026 European Ash); merged, city copy counts fixed (warsaw 19->26, maastricht 15->18), 2 species page gaps closed (White Poplar, Japanese Maple) opened by the new supply; preflight/build/qa all clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "london",
+    "kind": "write",
+    "tokens": 33000,
+    "trees": 0,
+    "note": "16 recognition lines for published London trees, restatement only, no stories",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
