@@ -106,6 +106,38 @@ def _has_evidence(tree, cand):
     return cand.get("lat") is not None and (tree.get("location") or {}).get("latitude") is not None
 
 
+def _one_file_one_tree(rows):
+    """Drop a candidate the sweep offered to more than one tree in the city.
+
+    A photograph is of ONE trunk, so the same file arriving against several
+    trees is the sweep guessing, never evidence, and it has now cost three
+    passes: Cagliari's file was attached to two trees on 2026-08-16, and on
+    2026-09-09 one iNaturalist observation went to both Ottawa lindens while
+    "Sant'Olcese-villa Serra di Comago-albero.jpg" was downloaded four times
+    for four different Genoa trees and matched the species of none of them.
+
+    Where one tree's filename match is strictly better, that tree keeps it and
+    the others lose it, which is the case a judge could settle anyway. Where
+    the scores tie the file is dropped for all of them: nothing in the data
+    says which trunk it is, so it is a hold before anyone has looked, and a
+    hold is not worth a download or a viewing pass's attention."""
+    best = {}
+    for score, tid, tree, c in rows:
+        key = c.get("url") or c.get("thumb")
+        prev = best.get(key)
+        if prev is None or score > prev[0]:
+            best[key] = (score, tid, False)
+        elif score == prev[0] and tid != prev[1]:
+            best[key] = (prev[0], prev[1], True)
+    out = []
+    for score, tid, tree, c in rows:
+        key = c.get("url") or c.get("thumb")
+        top_score, top_tid, tied = best[key]
+        if tid == top_tid and not tied:
+            out.append((score, tid, tree, c))
+    return out
+
+
 def fetch(url, dest):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=45) as r:
@@ -158,6 +190,7 @@ def main():
             cands.sort(key=lambda c: SL.rank(tree, c), reverse=True)
             for c in cands[:per_tree]:
                 rows.append((SL.rank(tree, c), tid, tree, c))
+        rows = _one_file_one_tree(rows)
         rows.sort(key=lambda r: r[0], reverse=True)
         rows = rows[:per_city]
         if not rows:
