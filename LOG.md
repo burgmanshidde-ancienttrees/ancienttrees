@@ -11,6 +11,30 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 - Write pass: Oahu, +4 trees (15 total)
+
+Checked the flagged BROKEN item first (iOS app failing on schedule): stale by
+the time this run started, `gh run list --workflow=ios.yml` shows the newest
+run succeeded 1h28m before this run, and `health.py` confirms rung 2 is clear.
+No action needed there.
+
+`prepare.py` showed 5 verified trees awaiting a writer: 4 in Oahu
+(hnl_012-015, already-verified register trees from an earlier pass today) and
+1 in `famousfrance-verified.json` (the Fontenay Abbey plane tree, which its
+own verify_notes correctly hold back: it fails the single-tree-destination
+test and has no container, so it stays a lead, not a write target). Claimed
+Oahu for write, dispatched write-stories on the 4 Iolani Palace / Queen's
+Medical Center / Zoo Gate trees, merged into `data/cities/oahu.json`
+(11 -> 15 trees, paid-entry share unchanged at 6 paid), fixed the count
+promises in intro/question_meta/question_context/faq (11 -> 15, added the
+three new locations), reran preflight (clean, only pre-existing NOTEs) and
+the Astro build (5140 pages, exit 0) and qa.py (8048 pages, clean). Deleted
+the now-published `data/research/oahu-verified.json`, ran `tree_index.py`.
+`pagegaps.py` currently shows nothing missing. Released the oahu claim.
+
+Visitors, last 7 days: 1213 visits, 1573 views, trending down toward today
+(24 visits so far, partial day).
+
 ## 2026-09-09 - Night run 2026-09-09 02:02 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 33.0 minutes of its 120 minute window, 251 turns, 35 commands refused by the allowlist, ended clean (success). 13 commit(s), none of them a published tree. Claims left behind: singapore, which block the top of the queue until they expire.

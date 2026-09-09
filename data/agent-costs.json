@@ -6303,6 +6303,15 @@
     "note": "4 free-access register trees verified (Iolani Palace banyan, 2 at Queens Medical Center, Zoo Gate Banyans), improving paid-access ratio from 6/11 to 6/15; 3 new leads and 1 register data error recorded",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "oahu",
+    "kind": "write",
+    "tokens": 46000,
+    "trees": 4,
+    "note": "4 stories + recognition lines for hnl_012-015 (Iolani Palace banyan, Queens Medical Center bombax and baobab, Zoo Gate Banyans); 1 best_time set (bombax bloom); merged, city copy counts fixed 11->15, preflight and build clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
