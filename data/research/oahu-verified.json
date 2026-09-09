@@ -1,0 +1,51 @@
+[
+ {
+  "id": "hnl_016",
+  "name": "The Moana Banyan",
+  "species": "Indian Banyan (Ficus benghalensis)",
+  "age_estimate": "about 122 years (planted 1904)",
+  "age_min": 120,
+  "age_max": 124,
+  "girth_cm": null,
+  "location": {
+   "address": "2365 Kalakaua Avenue, Waikiki, Honolulu, HI 96815 (the Banyan Court, the hotel's oceanfront courtyard, Moana Surfrider hotel)",
+   "latitude": 21.2765,
+   "longitude": -157.826639,
+   "neighbourhood": "Waikiki"
+  },
+  "verified_sources": [
+   "https://www.historichotels.org/us/hotels-resorts/moana-surfrider-a-westin-resort-and-spa/history",
+   "https://en.wikipedia.org/wiki/Moana_Hotel"
+  ],
+  "access": "Free to view. The Banyan Court is the hotel's open oceanfront courtyard; non-guests may walk through it and the adjoining Beach Bar is open to the general public, but it sits inside a working hotel (Moana Surfrider, a Westin Resort) rather than a park.",
+  "transport": "Central Waikiki, on Kalakaua Ave; TheBus routes along Kalakaua Ave stop within a couple of minutes' walk; walkable from any Waikiki hotel.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Planted 1904 by Jared Smith (Director, Dept. of Agriculture Experiment Station), about 7 feet tall and 7 years old at planting; two independent sources (historichotels.org official hotel history page, en.wikipedia.org) agree on the 1904 date and on current size, 75 ft (23 m) high, 150 ft (46 m) spread across the courtyard. Listed 1979 as one of the first trees on Hawaii's Rare and Exceptional Tree List (register id 392, hawaii-exceptional-trees.json, height_ft 75.0 matches independently). REGISTER DATA WARNING: the register's girth_cm for id 392 is 4572.0, which converts to exactly 150 feet, i.e. it matches the tree's canopy SPREAD reported everywhere else, not a trunk girth; almost certainly a field mislabel in the source data. Do not use 4572 cm / 45.7 m as a trunk measurement; girth_cm left null here rather than repeating a spread as a girth. Coordinates are the hotel's address (Wikipedia infobox), not a tree-level GPS fix; the banyan is the single dominant feature filling the whole courtyard so the address is a close proxy, but marked approximate rather than confirmed since no tree-level fix or satellite crown check was done this pass. Was designated a Hawaii Millennium Landmark Tree. Genuinely famous, distinct from the other Waikiki banyans in the same register (Zoo entrance, Aquarium, Natatorium, Kuhio Beach, International Market Place) which are separate specimens."
+ },
+ {
+  "id": "hnl_017",
+  "name": "The International Market Place Banyan",
+  "species": "Indian Banyan (Ficus benghalensis)",
+  "age_estimate": "at least a century old; one account says planted around 1850",
+  "age_min": 100,
+  "age_max": 176,
+  "girth_cm": null,
+  "location": {
+   "address": "2330 Kalakaua Avenue, Waikiki, Honolulu, HI 96815 (centre of the International Market Place, under the open-air lattice canopy structure)",
+   "latitude": 21.2776233,
+   "longitude": -157.8269007,
+   "neighbourhood": "Waikiki"
+  },
+  "verified_sources": [
+   "https://www.hawaiimagazine.com/new-international-market-place-to-save-this-iconic-100-year-old-waikiki-banyan-tree/",
+   "https://www.honolulumagazine.com/the-rise-fall-and-rebirth-of-waikikis-international-market-place/",
+   "https://en.wikipedia.org/wiki/International_Market_Place"
+  ],
+  "access": "Free. Stands at the centre of the open-air International Market Place shopping centre in Waikiki, publicly walkable with no ticket or entry fee.",
+  "transport": "Central Waikiki, on Kalakaua Ave; TheBus routes along Kalakaua/Kuhio stop within a few minutes' walk.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Sources agree this is a genuinely old, very large Indian banyan that predates the shopping centre itself (which opened 1957) and was the centrepiece the entire multi-hundred-million-dollar 2013-2016 redevelopment was engineered around (new steel canopy structure built to route around it rather than remove it; daily arborist monitoring). SOURCES CONFLICT ON AGE: hawaiimagazine.com and Wikipedia both describe it loosely as \"century old\" / \"100-year-old\"; Honolulu Magazine gives a more specific historical account, planted mid-1850s by New Zealand entrepreneur Harry Macfarlane on land that later belonged to King Lunalilo (died there 1874) and then Queen Emma, cared for by arborist Steve Nimz since 1971, which would make it roughly 170+ years old rather than ~100. Neither figure is invented, both are repeated as given; delivering the wider range (100-176) rather than picking a winner, per the two-sources-disagree rule. No girth or height figure found in any of the three sources this pass (register id 394, hawaii-exceptional-trees.json, also carries no girth for this entry). Famous Waikiki tree, restaurateur Donn Beach (Don the Beachcomber) once kept an office built into its branches in the 1950s. Coordinates are the mall's own address/plaza centre (Wikipedia infobox), not a laser-measured trunk fix, so marked approximate."
+ }
+]
