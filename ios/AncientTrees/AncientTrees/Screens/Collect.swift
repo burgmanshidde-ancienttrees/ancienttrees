@@ -704,6 +704,13 @@ struct CollectView: View {
                         // Polarsteps, Strava and Instagram all open a list from
                         // exactly here, and following back is the whole point
                         // of knowing you have a follower.
+                        // 44 HIGH, for the same reason the name above it is,
+                        // and found the same way the name's was not: the floor
+                        // job. On the newest iOS these measure past Apple's 44;
+                        // on iOS 18 a .plain button is exactly its caption text
+                        // and they came out 62 by 14. That is the whole point of
+                        // walking the deployment target, because every other
+                        // check here runs on the newest OS and passed.
                         HStack(spacing: 14) {
                             // GENUINELY 44 TALL, not the merge artifact the
                             // 2026-09-08 fix removed from the row above (2026-09-09).
@@ -718,6 +725,7 @@ struct CollectView: View {
                             // it does not fake one.
                             Button { peopleList = .followers } label: {
                                 Text("\(profiles.followers) followers")
+                                    .frame(minWidth: 44, minHeight: 44)
                             }
                             .buttonStyle(.plain)
                             .frame(minHeight: 44)
@@ -725,6 +733,7 @@ struct CollectView: View {
                             .accessibilityIdentifier("mytrees-followers")
                             Button { peopleList = .following } label: {
                                 Text("\(profiles.following) following")
+                                    .frame(minWidth: 44, minHeight: 44)
                             }
                             .buttonStyle(.plain)
                             .frame(minHeight: 44)
