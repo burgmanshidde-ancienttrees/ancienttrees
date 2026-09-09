@@ -16,39 +16,32 @@
       "source": "https://www.monumentalebomen.nl/"
     },
     {
-      "name": "Kaukasische vleugelnoot Vosseparkje",
-      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-      "coordinate": "53.201185, 5.78439",
-      "why_lead": "LRMB register nr 1688399, planted band 1900-1910, west side of Westerpark/Vosseparkje. Register-only; the monumentaltrees.com Westerpark page and a WebSearch AI summary both mention a wingnut in this park (girth ~130cm) but monumentaltrees.com 403s automated fetches so its figures could not be read on the actual page and were not used, per the search-summary-is-not-a-source rule. No second independent source verified. Owner=gemeente, visitable=ja, visible=ja.",
-      "source": "https://www.monumentalebomen.nl/"
-    },
-    {
-      "name": "Grauwe abeel Vosseparkje",
-      "species": "Grey Poplar (Populus x canescens)",
-      "coordinate": "53.201525, 5.786394",
-      "why_lead": "LRMB register nr 1688398, planted band 1900-1910, east side of the pond in Westerpark/Vosseparkje. Register-only, no second source found this pass. Owner=gemeente, visitable=ja, visible=ja.",
-      "source": "https://www.monumentalebomen.nl/"
-    },
-    {
       "name": "Pluimiep Vosseparkje (x2)",
       "species": "Feather Elm (Ulmus glabra 'Exoniensis' or similar cultivar)",
       "coordinate": "53.202071, 5.784453 and 53.201043, 5.786476",
-      "why_lead": "LRMB register nrs 1692406 and 1692405, planted band 1900-1910, same cultivar type as the already-published lee_008 (Molenstraat feather elms) but different specimens in Vosseparkje. Register-only, no second source found this pass. Owner=gemeente, visitable=ja, visible=ja.",
+      "why_lead": "LRMB register nrs 1692406 and 1692405, planted band 1900-1910, same cultivar type as the already-published lee_008 (Molenstraat feather elms) but different specimens in Vosseparkje. Register-only. This pass (2026-09-09) fetched and OCR'd both the HCL 'Voetstappen in de Vosseparkwijk' walking-tour PDF and the HCL 'Wandelroute MONUMENTAAL GROEN' brochure (its Westerpark stop, entry 16) and neither mentions a pluimiep/iep by name in this park; also searched WebSearch directly for the term with no hit beyond the register itself. Second source found: none this pass. Owner=gemeente, visitable=ja, visible=ja.",
       "source": "https://www.monumentalebomen.nl/"
     },
     {
       "name": "Canadese populier Vosseparkje",
       "species": "Canadian Poplar (Populus x canadensis)",
       "coordinate": "53.200901, 5.784892",
-      "why_lead": "LRMB register nr 1692404, planted band 1890-1900, west side of Vosseparkje. Register-only, no second source found this pass. Owner=gemeente, visitable=ja, visible=onbekend.",
+      "why_lead": "LRMB register nr 1692404, planted band 1890-1900, west side of Vosseparkje. Register-only. This pass (2026-09-09) checked the same two HCL PDFs (walking-tour and MONUMENTAAL GROEN brochure) and WebSearch directly; no independent mention of a Canadese populier specifically in Vosseparkje/Westerpark found (the brochure's Prinsentuin stop describes a DIFFERENT Canadian poplar, the already-published lee_007 Marilandica poplar). Second source found: none this pass. Owner=gemeente, visitable=ja, visible=onbekend.",
       "source": "https://www.monumentalebomen.nl/"
     },
     {
       "name": "Kaukasische/Perzische eik, zuidoostelijke ingang Vosseparkje",
       "species": "Oak, species uncertain (Quercus sp., possibly Q. macranthera or Q. castaneifolia)",
       "coordinate": "53.20107, 5.786676",
-      "why_lead": "LRMB register nr 1686956, planted band 1870-1880, at the south-east entrance of Vosse/Westerpark. Register-only, no second source found this pass; species itself is ambiguous in the register name. Owner=gemeente, visitable=ja, visible=ja.",
+      "why_lead": "LRMB register nr 1686956, planted band 1870-1880, at the south-east entrance of Vosse/Westerpark. Register-only; species itself is ambiguous in the register name. This pass (2026-09-09) checked the same two HCL PDFs and WebSearch directly; no independent mention found. Second source found: none this pass. Owner=gemeente, visitable=ja, visible=ja.",
       "source": "https://www.monumentalebomen.nl/"
+    },
+    {
+      "name": "Unnamed large tree beside the Vosseparkje wingnut ('Goudes...', possibly a golden ash or similar golden-leaved cultivar)",
+      "species": "Unidentified, name cut off in source (Latin/common name starting 'Goudes...')",
+      "coordinate": "approximately 53.2024, 5.7814 (where a park path meets Molenstraat, beside the former MTS school building)",
+      "why_lead": "Found 2026-09-09 while verifying the Vosseparkje Caucasian Wingnut (now lee_016): the HCL 'Voetstappen in de Vosseparkwijk' walking-tour PDF says the park path comes out onto Molenstraat 'direct na twee enorme bomen, de Kaukasische Vleugelnoot ... en een Goudes[?]' (right after two huge trees, the wingnut and a 'Goudes...'). No LRMB register entry matches this second tree, no coordinate beyond the path/Molenstraat junction, and the species name is truncated in the extracted PDF text (this environment has no pdftotext/PyPDF and text was pulled from raw PDF content streams by regex, which garbles some words). Needs a clean read of the source PDF (or a site visit) to identify the species before it can be verified.",
+      "source": "https://historischcentrumleeuwarden.nl/images/pdf/wandelroute_vosseparkwijk.pdf"
     },
     {
       "name": "Zilverlinde, Druifstreek tegenover Blokhuispoort",
@@ -65,7 +58,7 @@
     {
       "name": "Witte acacia (leaning, propped), Westerpark/Vosseparkje near Westersingel 8",
       "species": "Black Locust (Robinia pseudoacacia)",
-      "why_lead": "HCL brochure top-10 entry VIII, dated 1924, described as leaning and propped up. No LRMB register entry found for an acacia/Robinia in Leeuwarden municipality, and no precise coordinate beyond 'near Westersingel 8'. One source only.",
+      "why_lead": "HCL brochure top-10 entry VIII, dated 1924, described as leaning and propped up. No LRMB register entry found for an acacia/Robinia in Leeuwarden municipality, and no precise coordinate beyond 'near Westersingel 8'. One source only. CONFIRMED as the same tree the brochure's Westerpark stop (16) separately calls out: 'Bijzonder is ook de scheefhangende en ondersteunde witte acacia (VIII)' (re-read 2026-09-09 during the Vosseparkje verify pass), so this is the brochure's own numbered stop VIII, not a stray mention; still needs a coordinate before it can ship.",
       "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
     },
     {
