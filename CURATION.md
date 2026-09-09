@@ -11,6 +11,56 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Leeuwarden +8 (18 -> 26), third verify+write pass on the same claim today, released
+
+The standing `leeuwarden` verify claim (made 22:12 UTC by an earlier attempt
+in this same window, which pivoted to finishing Valencia instead and never
+did the work) was picked up and finished rather than released unworked. This
+is the third time today Leeuwarden has been deepened; the register-candidate
+pile is now genuinely thin, so this was a bounded 30-minute pass rather than
+another full sweep.
+
+Three trees from the Diakonessenhuis garden cluster (lee_019 red horse
+chestnuts, lee_020 white horse chestnuts, lee_021 London plane, LRMB register,
+planted 1880-1890): the former hospital (closed 1987) became apartments in
+1988-1990 and its garden survives as Diaconessenpark. Checked current access
+from OpenStreetMap rather than assuming from the register's mixed owner field
+(2 of 3 entries say owner=particulier): the courtyard is tagged as a public
+park with paved, gate-free footways past all three trees, so shipped as open.
+lee_020's register history flags a real health problem, a cavity with fungal
+infection and bleeding canker; said so plainly in the story rather than
+hiding it, per the standing "alive but declining is fine to say" rule.
+
+Five more from named-but-previously-uncoordinated HCL brochure and IVN
+walking-page entries, each single-sourced and geocoded to their named
+landmark rather than a trunk, so all ship `location_precision: approximate`
+and `curation_status: flagged`: lee_022 the Crimean Linden of Blokhuisplein
+(dated 1954), lee_023 the Cedar of Lebanon at the Gabbema Gasthuis (dated
+1906, access left as "visible from the street, unconfirmed" since it's an
+almshouse like the already-blocked Sint Anthony Gasthuis trees), lee_024 the
+leaning, propped Black Locust of Westerpark (dated 1924, named twice in the
+same brochure), and two Silver Limes (lee_025 Druifstreek, lee_026 Eewal)
+from IVN's own page, both undated, age left empty per the ask-the-reader rule
+rather than guessed.
+
+`data/leads/leeuwarden.json` updated: the 6 leads these trees resolve moved
+into a `resolved_2026-09-09` section explaining each outcome; 7 unresolved
+leads (two cemetery trees, two Vosseparkje elms, a Vosseparkje poplar and oak,
+a PDF-garbled tree name, a possible beech) and the 2 blocked Sint Anthony
+Gasthuis entries are untouched. City intro/meta/FAQ text updated from
+eighteen to twenty-six trees. Species normalised: the two Silver Limes
+arrived as "Tilia tomentosa" / "Silver Linden" and were renamed to the
+canonical "Silver Lime" already used by 9 other trees and data/species/
+silver-lime.json (hard rule 9). Build, preflight and qa all pass. Claim
+released.
+
+Left in `data/leads/leeuwarden.json`, not chased this pass: the municipal
+"Lijst van monumentale en waardevolle bomen" PDF likely carries addresses for
+the remaining 7 leads, but its font has no ToUnicode CMap and this
+environment has no PDF text-extraction library and no pip install
+permission, so regex extraction on the decompressed content streams produced
+only garbled glyph codes. A future pass with PDF tooling should re-fetch it.
+
 ## 2026-09-09 (continuation) - Valencia +3 (25 -> 28): finished a stranded verify+write pass, closed a species gap, released the claim
 
 Picked up this window's own standing Valencia verify claim: the working tree

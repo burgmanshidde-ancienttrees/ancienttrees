@@ -11,6 +11,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Leeuwarden +8 (18 -> 26), finished a claim an earlier attempt in this window left standing
+
+`leads.py --ready` was empty, so no write-only pass was available. Found a
+standing `leeuwarden` verify claim from an earlier attempt in this same
+window (it had claimed Leeuwarden, then pivoted to finishing Valencia
+instead, and stopped after 42 minutes without touching Leeuwarden). Finished
+it rather than releasing it unworked: a 30-minute bounded verify pass on the
+remaining register leads (a 3-tree hospital-garden cluster whose access
+needed an OSM check rather than trusting the register's owner field, plus 5
+single-sourced brochure/walking-page trees that only needed a geocode) found
+8 more genuinely good trees, all flagged honestly on sourcing. Written up and
+merged; Leeuwarden now 26 trees, still 0 photos. Full detail in CURATION.md.
+This is the third pass on this city today; the remaining leads are thin
+(missing coordinates, one PDF that needs text-extraction tooling this
+environment lacks), so the city is left there rather than forced further.
+
 ## 2026-09-09 - Night run 2026-09-09 18:55 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 24.7 minutes of its 120 minute window, 208 turns, 51 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: arnhem, alicante, krakow, which block the top of the queue until they expire.
