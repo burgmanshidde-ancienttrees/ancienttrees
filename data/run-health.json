@@ -8866,6 +8866,27 @@
    ],
    "trees": -1,
    "logged": true
+  },
+  {
+   "started": "2026-09-09T02:02:18+00:00",
+   "date": "2026-09-09",
+   "run_id": "34301574540",
+   "minutes": 33.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 251,
+   "denials": 35,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(gh), Bash(git), Bash(python3), Bash(rm), Bash(test)",
+   "ended": "success",
+   "tokens": 4647084,
+   "claims_held": [
+    "singapore"
+   ],
+   "commits": 13,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
