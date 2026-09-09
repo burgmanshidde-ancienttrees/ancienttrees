@@ -11,6 +11,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 - Alicante's register radius is exhausted
+
+A verify pass re-checked all 44 candidates in the Valencia region register
+within 4.4km of Alicante's centre (up from 23 rows checked on 2026-09-07,
+same conclusion). Every one is already published (16 trees), folded into a
+documented grove (Portal de Elche fig grove, Pintor Aparicio olive/euphorbia
+group), held as a lead with a specific reason (unresolved access, single
+source, an avenue rather than a collectible point), or blocked (a private
+Parque el Botanico trunk, a felled-elm cluster). Zero new trees deliverable
+from this register without a non-register source (local news survey, a
+second walking brochure, reader submissions). Do not re-run this hunt.
+
 ## 2026-09-09 - Photo pass over the named candidates, and three trees called Kabouterboom
 
 A sweep and a viewing pass over the candidates whose Commons FILENAME names
