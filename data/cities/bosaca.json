@@ -52,10 +52,12 @@
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Martin Babarik, via Wikimedia Commons",
+        "status": "approved",
+        "width": 5184,
+        "height": 3456
       }
     },
     {
@@ -84,10 +86,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/2016_Pear_from_Bo%C5%A1%C3%A1ca_SK.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Alena Hroncová, via Wikimedia Commons",
+        "status": "approved",
+        "width": 799,
+        "height": 532
       }
     }
   ]
