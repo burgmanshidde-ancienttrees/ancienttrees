@@ -53,16 +53,20 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "kind": "autumn colour",
         "label": "November, when the whole crown turns gold and the town lights it at night"
       },
       "story": "From the road it reads as a small wood of ginkgos. It is one tree. The thicket around the base is root suckers crowding a single female trunk, and the Japanese record says so plainly, because the illusion has been fooling visitors for years. The designation, made on 28 December 1934, covers one specimen. Japan has nationally designated twenty ginkgos; this is one of two in Kumamoto and reputed the largest in the prefecture.\n\nHow thick the trunk is depends on who measured it. Published figures run from 9.6 to 12 metres round at chest height and the sources contradict each other openly, so the range is the honest version. The root collar, sucker mass and all, comes to about 21 metres, which is a different measurement and gets quoted as though it were the trunk. Height is around 25 metres and the crown has been recorded as wide as 40. Both the town and the Japanese record give the age as over a thousand years, in that rounded form, and neither says how they got there.\n\nLocally it is Chichikobu-san. Women wanting milk for a baby came here to pray and to scrape its bark, and the scrape marks are still on the trunk. Another story makes it the grave marker of a local lord and his mother.\n\nIt stands on a rise straight off Route 212 between Oguni town and Tsuetate Onsen, with parking directly below, and the town lights it after dark once it turns gold.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ginkgo_Trees_Oguni_Kumamoto01.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "STA3816, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1536,
+        "height": 2048
       }
     }
   ]
