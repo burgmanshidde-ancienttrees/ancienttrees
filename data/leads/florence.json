@@ -5,36 +5,12 @@
   "note": "From the 2026-08-05 MASAF register pass on comune Firenze (29 register entries). This was a deepening pass on an already-published city, not a new city. Leads failed only our evidence bar or the count; blocked can never ship as they stand. The 'off_cluster_currently_published' section is not a lead list, it is an observation about the live page for whoever next edits it.",
   "leads": [
     {
-      "name": "The Stone Pine of the Bobolino",
-      "species": "Pinus pinea",
-      "lat": 43.757833,
-      "lng": 11.249194,
-      "status": "lead",
-      "why": "MASAF 14/D612/FI/09, girth 412 cm, height 31.5 m. Stands about 25 m from the live flo_007 and 45 m from flo_015, so it is the single cheapest addition left in Florence: a visitor already standing at the Bobolino cedars would not take a step. Held back only for want of a genuinely independent second source. The comune's list and the intoscana article that reports it both derive from the same MASAF designation, so they are one source repeated, not two. A RAMI per-tree page or the comune's own park inventory would settle it in one fetch."
-    },
-    {
       "name": "The Monterey Cypress of the Giardino Simone Weil",
       "species": "Cupressus macrocarpa",
       "lat": 43.758658,
       "lng": 11.248544,
       "status": "lead",
-      "why": "MASAF 15/D612/FI/09, girth 388 cm, height 18.5 m, in a free public garden about 90 m from the Bobolino cluster. Same problem as the stone pine above: one register, no independent corroboration found in this pass. Monterey cypress is a striking species with a tiny native range on the California coast, so it would earn its place on the story alone if a second source turns up."
-    },
-    {
-      "name": "The Cypress of the Monte alle Croci Steps",
-      "species": "Cupressus sempervirens",
-      "lat": 43.762661,
-      "lng": 11.262575,
-      "status": "lead",
-      "why": "MASAF 19/D612/FI/09, girth 346 cm, height 21.5 m. Sits on the stepped pilgrim climb from Piazza Poggi up to San Miniato al Monte, about 250 m from the live flo_009 ginkgo at Piazzale Michelangelo, so it would join the two hillside stops into a continuous route. Only the register and its municipal republication were found, which is one source. Worth one targeted search on the Via del Monte alle Croci scalinata before the next Florence pass."
-    },
-    {
-      "name": "The Aleppo Pine of Via Giramondino",
-      "species": "Pinus halepensis",
-      "lat": 43.757781,
-      "lng": 11.258919,
-      "status": "lead",
-      "why": "MASAF 17/D612/FI/09, girth 323 cm, height 22.5 m, on Viale Galileo roughly midway between the Bobolino cluster and Piazzale Michelangelo. Would be the connecting stop on Poggi's Viale dei Colli walk. Single-sourced, and the smallest girth of the hillside candidates, so it is the weakest of the four on merit as well as on evidence."
+      "why": "MASAF 15/D612/FI/09, girth 388 cm, height 18.5 m, in a free public garden about 90 m from the Bobolino cluster. Same problem as the stone pine above: one register, no independent corroboration found in this pass. Monterey cypress is a striking species with a tiny native range on the California coast, so it would earn its place on the story alone if a second source turns up. CHECKED AGAIN 2026-09-09 (verification pass looking specifically for a RAMI per-tree page): searched all 5 pages of ilregistrodeglialberi.it's Florence listing (146 trees total) directly and by targeted search ('Simone Weil', 'viale Machiavelli' + cipresso). RAMI's only Monterey cypress entry for Florence is a DIFFERENT tree, 'Cipresso dell'Osservatorio' (AMI 16/D612/FI/09, girth 480 cm, height 16.5 m, at the Arcetri Observatory, already correctly BLOCKED below under 'The Monterey Cypress of Largo Enrico Fermi'), not this one (AMI 15). No RAMI page, no comune inventory page and no news piece naming this specific Simone Weil specimen were found. Do not re-run the same RAMI/Wikipedia sweep on a future pass without a new angle; the comune's own Giardino Simone Weil page (if one exists beyond the 055firenze.it naming article) or a fresh geosearch of iNaturalist/OSM around 43.7587/11.2485 are the untried angles left."
     },
     {
       "name": "The Strawberry Tree of the Giardino dell'Iris",
