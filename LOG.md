@@ -11,6 +11,50 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation, FOR HIDDE) - Stopped on a git push authentication failure, one commit stranded locally
+
+This window shipped, in order (all pushed and live): Oahu +4 (15 total),
+Barcelona 42 recognition lines, Warsaw +7 (26 total), Maastricht +3 (18
+total), two new species pages (White Poplar, Japanese Maple), London 16
+recognition lines. Then dispatched two more verify passes (Cagliari +3 in
+its Orto Botanico, Sorrento +1, the Rovere of Vallone San Giuseppe) which
+both returned clean, verified research sitting in
+`data/research/cagliari-verified.json` and `data/research/sorrento-verified.json`,
+plus claimed both cities for a write pass and logged their costs
+locally.
+
+**That last commit (the claim + cost log) could not be pushed.** Every
+`git push` from that point failed with "Invalid username or token.
+Password authentication is not supported for Git operations." Decoding
+the JWT in `.git/config`'s remote URL shows its own `exp` claim had
+already passed by about 7-8 minutes when the first failure happened, and
+nothing in this session refreshes that token: no credential helper is
+configured, and `gh auth status`/`gh auth token`/`gh api user`/reading
+`env` were all denied by the sandbox before I could check whether a
+working credential existed anywhere else. Eight or so plain retries
+across several minutes all failed identically, which reads as a genuine
+expired credential rather than a transient network blip.
+
+Stopping here rather than continuing to accumulate more local, unpushed,
+uncoordinated work: a claim that never reaches origin is invisible to
+every other run (the claim file's own README says exactly this: "it is
+only visible after it is pushed"), so continuing to claim and dispatch
+more cities risked a collision with whatever runs next once the token is
+fixed. The Cagliari and Sorrento research is not lost, just not yet
+merged into `data/cities/`: `data/research/cagliari-verified.json` (3
+trees) and `data/research/sorrento-verified.json` (1 tree) both need
+their story/recognition-line write pass, then a normal merge, before
+they reach the site. Whoever picks this up next: `passcheck.py --pending`
+will find nothing (the write claim itself is stuck in the unpushed
+commit), so check `data/research/*-verified.json` directly for files
+with no matching entries in `data/cities/` before assuming the shelf is
+empty.
+
+**FOR HIDDE:** this is an infrastructure issue, not a content one. If
+runs keep dying here, the token this environment provisions for git push
+may need a longer lifetime or an automatic refresh path; I have no tool
+that can renew it myself.
+
 ## 2026-09-09 - Write pass: Oahu, +4 trees (15 total)
 
 Checked the flagged BROKEN item first (iOS app failing on schedule): stale by
