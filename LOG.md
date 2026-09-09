@@ -68,13 +68,16 @@ file cannot be four trees (`photo_fetch.py` now drops a candidate offered to
 several trees where the scores tie), and the same image under two titles is
 one decision (dedupe by bytes before the manifest).
 
-**FOR HIDDE, one thing worth knowing.** A photo-judge pass reported eight
-approvals whose tree ids do not exist in our data, and its verdicts file never
-reached disk. Nothing shipped: `photo_verdicts.py` refuses an id the queue
-does not hold, and I checked the ids before applying. That batch is being
-judged again from the images already downloaded. The lesson is the one this
-corpus already carries about handover notes: a pass's report is a claim to
-check, and the check has to be a script rather than a habit.
+**One thing worth knowing about the machinery.** A photo-judge pass sent an
+intermediate report listing eight approvals whose tree ids do not exist in our
+data, before finishing properly some minutes later with a correct file of 40
+rows, 14 of them approvals that shipped. So the bad ids were a half-finished
+summary rather than a bad pass, and nothing was ever at risk of being applied:
+`photo_verdicts.py` refuses an id the queue does not hold, and the ids get
+checked against data/cities before anything runs. Worth writing down because I
+acted on that intermediate report and re-dispatched the batch for nothing. A
+pass is finished when its file is on disk and its ids check out, not when it
+says something.
 
 ## 2026-09-08 - Night run 2026-09-08 23:44 UTC ended without saying anything
 
