@@ -3,9 +3,9 @@
   "country": "Finland",
   "status": "needs_curation",
   "intro": "Helsinki's oldest trees are young by European standards; the city only became Finland's capital in 1812, and this far north the best specimens rarely pass four centuries. What the city lacks in age it makes up in official care: 31 individual trees and tree groups hold formal protection as natural monuments, most standing on former manor estates the city later opened to everyone. The list here leans on national records more than raw age: Finland's thickest oak, its thickest willow, a sea buckthorn that decided to become a tree.",
-  "meta_description": "Helsinki's ancient trees range from a king's legendary oak to a willow that once hid 20 children in its trunk. Ten verified locations, real stories.",
+  "meta_description": "Helsinki's ancient trees range from a king's legendary oak to a willow that once hid 20 children in its trunk. Twelve verified locations, real stories.",
   "question_answer": "Helsinki's oldest tree is understood to be a Scots pine growing beside a Bronze Age burial cairn in Meilahti, dated by core sampling and ring counting to roughly 340 years old. The claim rests on a single dendrological source and has not been independently corroborated, so treat the age, and the exact tree, as the best current estimate rather than a settled fact.",
-  "question_meta": "A 340-year-old pine beside a Bronze Age grave in Meilahti is likely Helsinki's oldest tree. The full ten, and how each survived this far north.",
+  "question_meta": "A 340-year-old pine beside a Bronze Age grave in Meilahti is likely Helsinki's oldest tree. The full twelve, and how each survived this far north.",
   "oldest_tree_id": "hel_006",
   "question_context": "Dendrochronology is unusually hard to apply honestly here: coring a tree to count its rings is invasive, so most age claims for Helsinki's protected trees rest on trunk girth and historical records rather than an actual ring count. The Meilahti pine is the exception, credited by the Finnish outlet Kirkko ja kaupunki with a genuine core-sampled age of around 340 years, which is why this entry treats the figure carefully rather than repeating it as settled. The tree most likely to actually be older, Tali Manor's oak, has never been cored at all; its 616-centimetre girth in 2013 implies an origin somewhere in the 1600s or 1700s, possibly older than the Meilahti pine, but that is inference from thickness, not a counted ring, so it is presented as a range rather than a claim to the title. Helsinki's own natural monument register protects 31 trees and formations city-wide, most valued for size or rarity rather than confirmed age, the honest reason this list leans on national records: Finland's thickest willow, its thickest park lime, its tallest snake-branch spruce, over any single oldest tree.",
   "faq": [
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Helsinki's ancient trees free to visit?",
-      "a": "Yes, all ten stand on public land or in open parks. The Tali Manor Oak is the one exception worth noting: it stands within a working golf course, so stick to the estate's public paths rather than crossing the fairways."
+      "a": "Yes, most stand on public land or in open parks. The Tali Manor Oak is one exception worth noting: it stands within a working golf course, so stick to the estate's public paths rather than crossing the fairways. The Seurasaari Anthill Pine is the other: it stands inside the Seurasaari Open-Air Museum's fenced grounds, which charge admission when the museum is open (15 May to 15 September)."
     },
     {
       "q": "Why does Helsinki have so few genuinely ancient trees?",
@@ -368,6 +368,70 @@
         "attribution": null,
         "status": "missing"
       },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hel_011",
+      "name": "The Seurasaari Anthill Pine",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 307,
+      "location": {
+        "address": "Seurasaari Open-Air Museum, in the yard behind the Yusupoff stable (Jusupoffin talli)",
+        "latitude": 60.18130176,
+        "longitude": 24.88599738,
+        "neighbourhood": "Seurasaari"
+      },
+      "story": "An anthill lives in this pine. It began at the roots and worked its way up into the cracks in the bark, and about five metres above the ground a birch seedling has taken hold in a hole in the trunk. That is a lot of tenants for one tree.\n\nHelsinki's city board protected it on 16 February 1956, by its own decision rather than under the national conservation act, which is the unusual half of its paperwork. The base of the trunk measured 280 centimetres round that year. By the 2003 survey it had reached 307 and the tree stood around twenty metres tall, and the city's register calls it the second thickest unbranched pine in Greater Helsinki.\n\nIt stands in the yard behind the Yusupoff stable, a building put up in 1842 and carted onto Seurasaari in 1916. So the pine has spent a century in a courtyard with a transplanted stable while the open-air museum assembled the rest of old Finland around it, one relocated building at a time. Almost everything a visitor sees on Seurasaari was carried there from somewhere else in the country; the pine is one of the few things that grew where it stands.\n\nTwo gaps worth saying out loud. Nobody has published an age for it, and those 2003 figures are the newest anyone has taken. If you get out to the island and find it in good health, tell us.",
+      "verified_sources": [
+        "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
+        "https://www.hel.fi/static/hkr/julkaisut/seurasaari/seurasaari_raportti.pdf"
+      ],
+      "access": "Seurasaari island is free to walk year-round, but this pine stands in the yard of the Yusupoff stable inside the Seurasaari Open-Air Museum's fenced grounds, which charge admission (adult ~14 EUR) when the museum is open, 15 May to 15 September. Outside the season the fenced yards are not staffed; treat as paid entry in season.",
+      "transport": "Bus 24 to the Seurasaari terminus, then a 5-10 minute walk across the footbridge to the museum area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the anthill running up into the cracks in its bark, and by the birch seedling growing out of a hole about five metres up the trunk. It stands in the yard behind the Yusupoff stable.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "paid_entry": true
+    },
+    {
+      "id": "hel_012",
+      "name": "The Tullisaari Burl Pine",
+      "species": "Burl Pine (Pinus sylvestris f. gibberosa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 175,
+      "location": {
+        "address": "Eastern end of Kumianpää, a path branching east off Henrik Borgströmintie, Laajasalo",
+        "latitude": 60.17701811,
+        "longitude": 25.03990198,
+        "neighbourhood": "Laajasalo (bordering Tullisaari)"
+      },
+      "story": "Trees of this kind rarely pass ten metres. This one is nineteen.\n\nPinus sylvestris f. gibberosa is a rare natural growth form of the ordinary Scots pine, scattered thinly through southern and central Finland, in which the trunk, the branches and even the roots swell into woody lumps. In Finnish it is the mukuramänty, the burl pine. It is a shape rather than a separate species, and it usually comes with a stunted, low-slung habit, which is what makes this one strange: it grew the lumps and then grew tall anyway.\n\nThe Provincial Government of Uusimaa protected it on 20 September 1956, decision number 8805. At its last measurement, in 2003, it stood nineteen metres, with a trunk 175 centimetres round, or 225 if you run the tape over the burls rather than between them.\n\nIt is one of seven protected natural monuments in Laajasalo, out of thirty-three in the whole of Helsinki, and the local residents' association still sends people to it: the eastern end of Kumianpää, beside a public path, no gate and no ticket. The Tullisaari Lime, already on this list, stands four hundred metres away in the old manor park.\n\nNobody has dated it, and the growth form makes the usual girth arithmetic useless, so its age is an open question. If you know when this one started, tell us.",
+      "verified_sources": [
+        "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
+        "https://www.laajasalo-degero.fi/laajasalo/upea-luonto/luonto/"
+      ],
+      "access": "Free. Stands beside a public recreational path (the eastern end of Kumianpää, off Henrik Borgströmintie); no ticket or gate.",
+      "transport": "Bus from central Helsinki to Laajasalo (roughly 20 minutes), then a short walk to Kumianpää",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the lumps: trunk, branches and roots all swollen with woody burls, which no other pine on the path has. It stands at the eastern end of Kumianpää, right beside the path.",
+      "why_go": "A rare burl form of Scots pine, gnarled from roots to branches, that grew to nineteen metres when trees of this kind usually stay under ten. It is a five-minute detour off a public path.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
     }
