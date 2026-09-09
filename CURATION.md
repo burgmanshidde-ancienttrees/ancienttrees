@@ -46,6 +46,29 @@ approval this run does not have. Its content was not needed this pass since
 web sources covered the same trees, but a future pass with rendering tools
 available could still get more out of it.
 
+## 2026-09-09 - Brisbane: sixth deepen attempt, still zero new trees
+
+A verify pass hardened two open leads rather than repeating dead searches.
+Bald Hills Hoop Pines: an Overpass query on the private school's own internal
+driveways/footways confirms every one is `access=private` or `access=permit`,
+turning the access block from an absence of evidence into a positive one; it
+stays a lead. Toowong Cemetery's Ann Hill hoop pine: a WebSearch summary
+claiming her grave is "marked by an urn-topped column opposite the brick tool
+shed" turned out to be a fabrication when the actual source page
+(museumofbrisbane.com.au) was fetched directly and contained no such
+sentence; discarded per the search-summary-is-a-lead-never-a-source rule, and
+the tree stays unpinned. New ground checked and closed: Kangaroo Point (no
+named tree on Council's own trail page) and a Milton fig heritage listing
+that turned out to be the already-published bne_020. One new lead recorded:
+Indooroopilly Golf Club's own detailed ancient-trees page names real
+100+-year specimens by golf hole, but gives no coordinates and sits on a
+private members' course with only paid, booked visitor access, so it does
+not clear hard rule 10 this pass. Five to six passes over the same ground
+have now found everything the City Botanic Gardens/Eagle Street, Newstead
+and Toowong clusters have to give; the 558-point significant-landscape-tree
+overlay remains unusable without names or species. Do not re-run this hunt
+without a reader submission or a genuinely new source.
+
 ## 2026-09-09 - Alicante's register radius is exhausted
 
 A verify pass re-checked all 44 candidates in the Valencia region register
