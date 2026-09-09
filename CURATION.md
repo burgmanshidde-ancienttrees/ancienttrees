@@ -11,6 +11,60 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Valencia +3 (25 -> 28): finished a stranded verify+write pass, closed a species gap, released the claim
+
+Picked up this window's own standing Valencia verify claim: the working tree
+already held a complete, unmerged write pass (3 new trees fully sourced and
+written into data/cities/valencia.json, plus how_to_recognise lines) from an
+earlier attempt in the same window that stopped without committing. Verified
+the work rather than redoing it, fixed what was wrong, and shipped it.
+
+**The three trees, all in the Jardi Botanic de la Universitat de Valencia**,
+sourced from the regional monumental-tree register plus the garden's own
+virtual species catalogue (two independent sources each): vlc_027 a
+Brachychiton populneus (register nickname "Arbre botella del Botanic II"),
+vlc_028 a Pecan (Carya illinoinensis, 32.9m/3.88m girth), vlc_029 a Common
+Persimmon (Diospyros virginiana, dioecious, cannot fruit alone). None carries
+an age; each says so once and asks the reader, per the standing rule.
+
+**Two fixes before merging.** The new tree's species field said "Kurrajong
+(Brachychiton populneus)"; Barcelona and Caserta already use "Bottle Tree" for
+this species, so hard rule 9 requires one canonical name and it was renamed
+to match (preflight had this as the sole FAIL). And the city's own count
+copy was stale: question_meta said "twenty-four more" (25-tree count) and the
+FAQ said "the other ten" share the paid Jardi Botanic; both updated to
+twenty-seven/thirteen for the new 28-tree total.
+
+**Paid share is now 13 of 28 (46%), further over the roughly-a-third ceiling
+from CLAUDE.md's Amsterdam/Leiden ruling** (it was already 40% before this
+batch). All three new trees sit in the same paid garden as most of Valencia's
+existing depth, so this pass pushed the wrong direction; `check_paid_share()`
+flags it as a NOTE, not a FAIL, but the next Valencia work should prioritise
+FREE trees (Jardines del Parterre/Glorieta figs, street and park trees)
+over further Jardi Botanic depth.
+
+**Wrote the Spanish overlay for all three** (data/i18n/es/valencia.json),
+translated by hand, including the species-name fix and the same count
+corrections in the Spanish title/question_meta/FAQ; i18ncheck.py clean.
+`check_overlay_coverage()` in preflight is a hard FAIL otherwise.
+
+**Closed the species-page gap this created.** Adding the species-name fix put
+Bottle Tree (Brachychiton populneus) at 3 trees site-wide (Barcelona, Caserta,
+Valencia), which is pagegaps.py's threshold; wrote
+`data/species/bottle-tree.json` (Contract F) in the same pass rather than
+leaving it for a later run.
+
+Build, qa.py (8097 pages), preflight (0 FAIL), superlatives.py (347 claims, no
+collisions), tree_index.py and route_walks.py all clean. No token count for
+this pass is logged to data/agent-costs.json: the write agent that produced
+the 3 trees ran in an earlier, unlogged attempt in this window and its report
+never landed, so a number here would be invented rather than measured.
+Released the valencia claim.
+
+The leeuwarden claim (also standing from an earlier attempt, register
+candidates staged but unverified) is untouched this entry; see the next one
+if a verify pass ran on it before the window closed.
+
 ## 2026-09-09 (continuation) - Sorrento verify claim finished: 0 new trees, register candidates exhausted at this radius
 
 Picked up the standing sorrento verify claim (by night-run, from an earlier

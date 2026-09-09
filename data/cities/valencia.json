@@ -5,7 +5,7 @@
   "intro": "Valencia protects more monumental and singular trees than any other region in Spain, over 2,400 across the Comunitat Valenciana under a 2006 law, and the city maps five routes past its own share of them. Several of its most-loved trees share an oddly specific origin story: 19th century gardeners meant to plant a magnolia and grabbed a fig sapling by mistake, or a species imported because it had just become fashionable on the French Riviera. What survives from those errors and fashions includes the widest tree canopy in the city, a 400-year-old olive, and the tallest tree in the province.",
   "meta_description": "Valencia protects more monumental trees than any Spanish region. Meet El Titan, a 174-year-old fig planted by mistake, and a 400-year-old olive.",
   "question_answer": "The oldest tree in Valencia is generally cited as the olive tree of Parque de la Rambleta, in the San Marcelino neighbourhood, estimated at around 400 years old and described by the city's own monumental trees route as the oldest specimen among all five of its walking trails.",
-  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-four more monumental trees across the city.",
+  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-seven more monumental trees across the city.",
   "question_context": "Valencia is unusually well documented for this kind of question: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares under a 2006 regional law, now covering more than 2,400 protected trees, and the city government separately publishes five named walking and cycling routes past its own monumental specimens, complete with individual profiles. Within that system, the olive of Parque de la Rambleta is the one most consistently named as the oldest, though as with most old olives, its 400-year figure comes from general estimate rather than a ring count or documented planting record. El Titan, the city's giant Ficus macrophylla in the Jardines del Parterre, is younger by comparison at 174 years but has a firmer, more specifically documented planting date, the tradeoff between the two runs through most of this list. The park sits in the San Marcelino neighbourhood on Pio IX street, next to the city's General Cemetery, a short bus ride south of the historic centre.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Valencia's monumental trees free to see?",
-      "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other ten, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
+      "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other thirteen, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
     },
     {
       "q": "How does Valencia protect its monumental trees?",
@@ -867,6 +867,108 @@
       "paid_entry": true,
       "notes": "No age or girth in any source. Independently named and described by the Jardi Botanic's own site (jardibotanic.org), which corroborates the register's coordinates and calls it 'la palmera mas especial del Jardin' for its 35+ branching stems, an unusual multi-trunk form for this species.",
       "how_to_recognise": "You can recognise it by more than 35 trunks all rising and forking from a single base, like a firework caught mid-burst. It stands in the Jardi Botanic de la Universitat de Valencia."
+    },
+    {
+      "id": "vlc_027",
+      "name": "The Second Bottle Tree of the Botanic Garden",
+      "species": "Bottle Tree (Brachychiton populneus)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 288,
+      "height_m": 30.1,
+      "crown_m": 13.8,
+      "location": {
+        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+        "latitude": 39.47613,
+        "longitude": -0.386164,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "verified_sources": [
+        "data/registers/valencia-arboles-monumentales.json (register_id 1144, 'Arbre botella del Botanic II', species Brachychiton populneus, girth 2.88m, height 30.1m, crown 13.8m)",
+        "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=352 (garden's own virtual species catalogue, confirms Brachychiton populneus, common name BRAQUIQUITO/KURRAJONG, held in the garden's Escuela Botanica collection)"
+      ],
+      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the other Botanic Garden specimens",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the garden's second 'bottle tree', and it barely resembles the first. The regional register lists it as Arbre botella del Botanic II, right behind the Silk Floss Tree that carries the same nickname and the Roman numeral I. The two share only that name. This one is a Kurrajong, Brachychiton populneus, from eastern Australia, related to the true bottle trees whose trunks swell dramatically into a barrel, but keeping a slimmer, more upright shape of its own.\n\nThe garden's own virtual catalogue confirms which tree is which: this individual is listed under braquiquito, the Spanish name for Brachychiton populneus specifically, held in the Escola Botanica collection, matching the register's species assignment. Worth stating plainly, because more than one Brachychiton grows here and the shared nickname alone would not tell you which is which.\n\nAt 30.1 metres tall on a trunk 2.88 metres round, with a crown spreading 13.8 metres, it is a solid, upright tree, thinner through the trunk than its barrel-shaped namesake nearby. No age or planting record survives for it anywhere. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by its slim, upright trunk, 2.88 metres round, next to the barrel-shaped Silk Floss Tree that shares its 'bottle tree' nickname. It stands in the Escola Botanica of the Jardi Botanic de la Universitat de Valencia.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "vlc_028",
+      "name": "The Pecan of the Botanic Garden",
+      "species": "Pecan (Carya illinoinensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 388,
+      "height_m": 32.9,
+      "crown_m": 16.1,
+      "location": {
+        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+        "latitude": 39.476621,
+        "longitude": -0.387157,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "verified_sources": [
+        "data/registers/valencia-arboles-monumentales.json (register_id 1153, 'Nouer americà del Botanic I', girth 3.88m, height 32.9m, crown 16.1m)",
+        "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=455 (garden's own virtual species catalogue: Carya illinoinensis, common names PACANA/PECAN/NOGAL AMERICANO, listed in the garden's own Bosque and Escuela Botanica collections)"
+      ],
+      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the other Botanic Garden specimens",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The regional register calls this tree an American walnut, and that is close but not quite right. Carya illinoinensis is a pecan, in the same family as the true walnuts but a different genus, native to the river valleys of the American South. The garden's own catalogue lists it under three names at once, pacana, pecan and nogal americano, and places it in both the Bosque and the Escola Botanica collections.\n\nIt is already a serious tree: 32.9 metres tall on a trunk 3.88 metres round, with a crown 16.1 metres across, large enough to earn its own entry in the region's monumental tree register. And yet the garden's own catalogue puts the species' full mature height nearer 50 metres in its native range, which means this specimen, whatever its age, still has real growing left to do.\n\nNo planting record survives for it. The register measures the trunk and stops there; the garden's catalogue confirms the species grows in this collection but describes it in general rather than naming this individual tree by a date. It stands in the Bosque, a short walk from the Plane Tree, taller than that tree but carrying a far narrower crown, 16.1 metres against the Plane's 26.",
+      "how_to_recognise": "You can recognise it by its narrow crown, just 16.1 metres across on a trunk 3.88 metres round, taller but narrower than the wide-crowned Plane Tree nearby. It stands in the Bosque of the Jardi Botanic de la Universitat de Valencia.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "vlc_029",
+      "name": "The Persimmon of the Botanic Garden",
+      "species": "Common Persimmon (Diospyros virginiana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 221,
+      "height_m": 30.3,
+      "crown_m": 10.8,
+      "location": {
+        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+        "latitude": 39.476051,
+        "longitude": -0.386248,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "verified_sources": [
+        "data/registers/valencia-arboles-monumentales.json (register_id 1134, 'Caquier de Virginia del Botanic I', girth 2.21m, height 30.3m, crown 10.8m)",
+        "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=878 (garden's own virtual species catalogue: Diospyros virginiana, common names CAQUI DE VIRGINIA/GUAYACAN DE VIRGINIA, listed in the garden's Escuela Botanica collection)"
+      ],
+      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the other Botanic Garden specimens",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree cannot fruit by itself. Diospyros virginiana is dioecious, meaning each individual is either male or female, and only a female growing near a male will set fruit at all. The garden's own catalogue confirms the point and adds a use: the ripe orange fruit gets made into compotes locally, once it has softened past the sharp astringency the unripe fruit is known for.\n\nThe species is native to the eastern United States. Valencia's specimen has reached 30.3 metres on a trunk 2.21 metres round, the slimmest trunk among the botanic garden's cluster of tall trees, with a narrow 10.8 metre crown to match, more upright than spreading.\n\nNo planting record survives for it. The regional register lists it as a protected singular tree and measures the trunk; the garden's catalogue confirms the species grows in the Escola Botanica collection but, like its neighbours in this cluster, names the species rather than dating this individual. If you know when it went in, tell us.\n\nIt grows a short walk from the Caucasian Elm and the Hartwiss Oak, in the same teaching collection where the university groups its trees by family rather than by size.",
+      "how_to_recognise": "You can recognise it by the slimmest trunk in this corner of the garden, 2.21 metres round, with a narrow 10.8 metre crown. It stands in the Escola Botanica near the Caucasian Elm and the Hartwiss Oak.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
     }
   ]
 }
