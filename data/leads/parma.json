@@ -11,6 +11,105 @@
       "species": "Platanus acerifolia",
       "locality": "Palazzo Ducale",
       "reason": "Registered as 'Insieme omogeneo di Platanus acerifolia' (a homogeneous group of planes near the palace), not a single collectible point. Not individually researched this pass."
+    },
+    {
+      "sheet_id": "01/C904/PR/08",
+      "species": "Zelkova carpinifolia",
+      "locality": "Reggia di Colorno, Colorno",
+      "latitude": 44.928675,
+      "longitude": 10.377664,
+      "girth_cm": 612.0,
+      "height_m": 26.0,
+      "km_from_parma": 14.3,
+      "reason": "2026-09-09 verify pass: not a Parma tree, wrong comune (Colorno, Parma province, ~14km NE, outside any day-trip boundary walkable from central Parma). Strong candidate for a FUTURE COLORNO page, not Parma's: stands in the grounds of the Reggia di Colorno, a major Bourbon ducal palace and public gardens, urban=true in the register. Not individually researched beyond the register entry this pass; needs a second source and access confirmation before it could ship anywhere."
+    },
+    {
+      "sheet_id": "05/D673/PR/08",
+      "species": "Platanus acerifolia",
+      "locality": "Piazza Giuseppe Garibaldi 2, Fontanellato",
+      "latitude": 44.882422,
+      "longitude": 10.173631,
+      "girth_cm": 445.0,
+      "height_m": 32.0,
+      "km_from_parma": 14.5,
+      "reason": "2026-09-09 verify pass: not a Parma tree, wrong comune (Fontanellato, Parma province, ~14.5km W, outside a Parma day-trip boundary). Promising candidate for a FUTURE FONTANELLATO page: stands on the town's own main square (Piazza Garibaldi), home to the moated Rocca Sanvitale, a well-known destination in its own right. Not individually researched beyond the register entry this pass."
+    },
+    {
+      "sheet_id": "14/D673/PR/08",
+      "species": "Platanus acerifolia",
+      "locality": "Ghiara, Strada Vecchia di Bellena 44, Fontanellato",
+      "latitude": 44.868722,
+      "longitude": 10.196136,
+      "girth_cm": 439.0,
+      "height_m": 25.5,
+      "km_from_parma": 12.2,
+      "reason": "2026-09-09 verify pass: not a Parma tree, wrong comune (Fontanellato, rural hamlet Ghiara, ~12.2km SW). urban=false and the address reads as a private rural property; access not established. Pairs with the Piazza Garibaldi plane above if a future Fontanellato pass is opened, but check access before treating as public."
+    },
+    {
+      "sheet_id": "08/L346/PR/08",
+      "species": "Cedrus atlantica",
+      "locality": "Museo Magnani Rocca, Via Fondazione Magnani Rocca 4, Traversetolo",
+      "latitude": 44.667778,
+      "longitude": 10.349444,
+      "girth_cm": 490.0,
+      "height_m": 30.0,
+      "km_from_parma": 15.5,
+      "reason": "2026-09-09 verify pass: not a Parma tree, wrong comune (Traversetolo, ~15.5km S, well outside a Parma day-trip boundary). Part of a genuinely promising three-tree cluster (with sheet 04/L346/PR/08 and 07/L346/PR/08 below) all at the same address, the grounds of the Fondazione Magnani Rocca art museum, a paid but genuinely public destination with its own identity. Worth a dedicated pass (Traversetolo or a single-place Magnani Rocca page) rather than folding into Parma. Not individually researched beyond the register entry this pass."
+    },
+    {
+      "sheet_id": "04/L346/PR/08",
+      "species": "Platanus acerifolia",
+      "locality": "Museo Magnani Rocca, Via Fondazione Magnani Rocca 4, Traversetolo",
+      "latitude": 44.666939,
+      "longitude": 10.348611,
+      "girth_cm": 505.0,
+      "height_m": 35.0,
+      "km_from_parma": 15.6,
+      "reason": "2026-09-09 verify pass: not a Parma tree, same Magnani Rocca cluster as sheet 08/L346/PR/08 above, see that entry. Not individually researched beyond the register entry this pass."
+    },
+    {
+      "sheet_id": "07/L346/PR/08",
+      "species": "Sequoia sempervirens",
+      "locality": "Museo Magnani Rocca, Via Fondazione Magnani Rocca 4, Traversetolo",
+      "latitude": 44.666669,
+      "longitude": 10.349167,
+      "girth_cm": 440.0,
+      "height_m": 40.0,
+      "km_from_parma": 15.6,
+      "reason": "2026-09-09 verify pass: not a Parma tree, same Magnani Rocca cluster as sheet 08/L346/PR/08 above, see that entry. Not individually researched beyond the register entry this pass."
+    },
+    {
+      "sheet_id": "01/M325/PR/08",
+      "species": "Populus alba",
+      "locality": "Viarolo, Sissa Trecasali",
+      "latitude": 44.880633,
+      "longitude": 10.2485,
+      "girth_cm": 650.0,
+      "height_m": 35.0,
+      "km_from_parma": 10.2,
+      "reason": "2026-09-09 verify pass: not a Parma tree, wrong comune (Sissa Trecasali, ~10.2km N, rural, urban=false). No naming body or destination found for this hamlet this pass; a lead rather than a strong candidate for any future page."
+    },
+    {
+      "sheet_id": "01/D526/PR/08",
+      "species": "Platanus acerifolia",
+      "locality": "Villa Caumont Caimi, Via G. Verdi 12, Felino",
+      "latitude": 44.691744,
+      "longitude": 10.244961,
+      "girth_cm": 497.0,
+      "height_m": 37.0,
+      "km_from_parma": 14.1,
+      "reason": "2026-09-09 verify pass: not a Parma tree, wrong comune (Felino, ~14.1km S). Register locality names a private villa (Villa Caumont Caimi); access not established and the address reads as private grounds. Do not treat as publishable without confirming public access."
+    },
+    {
+      "sheet_id": "01/D934/RE/08",
+      "species": "Quercus robur",
+      "locality": "Pantaro di Sotto, Via Monte Grappa, Gattatico",
+      "latitude": 44.788611,
+      "longitude": 10.43,
+      "girth_cm": 450.0,
+      "height_m": 27.0,
+      "km_from_parma": 8.7,
+      "reason": "2026-09-09 verify pass: not a Parma tree, wrong PROVINCE (Reggio nell'Emilia, not Parma), reverse-geocodes to an isolated rural dwelling (Pantaro di Sotto). urban=false, no naming body found, access unknown. Weak lead; would belong to a future Reggio Emilia area pass, not Parma."
     }
   ],
   "blocked": []
