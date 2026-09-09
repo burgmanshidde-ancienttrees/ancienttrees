@@ -11,6 +11,44 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation 2) - Milan +1 (22 -> 23): resolved a lead stuck since 2026-08-06, confirmed the city's official register is exhausted
+
+Milan is rank #3 in CITY_QUEUE.md with room to grow toward its 30-tree target
+(rung 4/CITY_QUEUE.md stage 2 deepening, register-backed so cheap). Claimed
+for verify. Four prior verify passes (2026-08-06 through 2026-09-07) had
+already worked the near-centre MASAF register candidates to exhaustion; this
+pass independently re-confirmed that rather than trusting the note, then
+found one new angle: the comune di Milano's own monumental-tree pages moved
+to a new URL path (`/aree-tematiche/verde/manutenzione-progettazione/
+alberi-monumentali/...`) that is not 403ing the way the old path was.
+
+That closed the long-standing single-sourced "Two further planes inside the
+Giardini Montanelli" lead: **mil_023, Il Platano Grande dei Giardini
+Montanelli**, 625 cm girth, one of the widest trunks the city has measured,
+crown split by lightning and cabled back together, a woodpecker cavity in
+the burn scar, a Universita Bicocca microfauna study, and a healed-over
+attempt to saw into the trunk. Age is undocumented in both sources; derived
+a broad 100-200 year band by analogy with two sibling planes in the same
+garden already published from girth, stated as an estimate rather than a
+fact. One numeric discrepancy recorded rather than resolved: the comune's
+own page states a 260cm diameter (about 817cm circumference) against the
+register's 625cm girth for the same sheet id.
+
+Cross-checking the comune's own 13-tree official monumental list against
+our data closed the loop: **Milan's official municipal register is now
+fully exhausted**, all 13 sheet ids accounted for (11 published, 2 already
+blocked as the children-only Villa Belgiojoso garden). The wider MASAF
+national register still carries additional Milan-area rows beyond this
+official 13 (e.g. the Villa Litta Modignani plane pair at ~4.7km, a Parco
+Sempione cedar with a documented felling risk); those remain leads in
+`data/leads/milan.json`, unchanged, needing a source beyond the register
+alone. Updated the Italian translation overlay (`data/i18n/it/milan.json`)
+with mil_023 and the count fix (22 -> 23), since Milan/it already earns
+impressions and every change ships in every language. Intro/meta/FAQ counts
+fixed in both languages; the English intro had been stuck at "Twenty-one
+trees" against a meta description already saying twenty-two, a pre-existing
+mismatch fixed in passing. Build, preflight and qa all pass. Claim released.
+
 ## 2026-09-09 (continuation) - Leeuwarden +8 (18 -> 26), third verify+write pass on the same claim today, released
 
 The standing `leeuwarden` verify claim (made 22:12 UTC by an earlier attempt

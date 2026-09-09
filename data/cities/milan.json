@@ -2,10 +2,10 @@
   "city": "Milan",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-one trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's twenty-two remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-three trees, and almost every one owes its survival to a specific human decision.",
+  "meta_description": "Milan's twenty-three remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus twenty-one more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus twenty-two more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Milan's remarkable trees free to visit?",
-      "a": "All twenty-two on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
+      "a": "All twenty-three on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
     },
     {
       "q": "Why does Milan have so few genuinely ancient trees compared to Rome or Florence?",
@@ -829,6 +829,40 @@
         "status": "missing"
       },
       "how_to_recognise": "In the old tram-line median outside number 3 near Porta Venezia, 5.70 metres round, which is nearly double the tree that was felled on this stretch in 2018."
+    },
+    {
+      "id": "mil_023",
+      "name": "Il Platano Grande dei Giardini Montanelli",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "age undocumented, likely 100 to 200 years",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Giardini Pubblici Indro Montanelli, Via Palestro, 20121 Milano",
+        "latitude": 45.473889,
+        "longitude": 9.200833,
+        "neighbourhood": "Porta Venezia"
+      },
+      "story": "Milan's monumental-tree register calls this one simply the platano grande, the big plane, and at 6.25 metres round it is among the widest trunks the city has measured in any park. Lightning found it at some point and split part of its crown; rather than remove the damage, the city's arborists cabled the broken limbs back to the trunk, and the cables have held since. Woodpeckers moved into the wound the strike left behind, hollowing a nesting cavity into wood already opened by the burn, and researchers from Universita Bicocca have used the tree to study what actually lives in an urban canopy this size, cataloguing the insects and small fauna that treat 28 metres of storm-scarred plane as home. Someone once tried to saw into the trunk itself; the cut has healed over but is still readable if you know where to look. No source records when it was planted, so this is Ancient Trees' own honest estimate rather than a documented age: judged against two smaller, similarly dated planes elsewhere in the same garden, it is probably a century old at the least, maybe close to two. It stands inside Giardini Montanelli, a five-minute walk from the tree the city calls its own 'biodiversity plane', which makes this corner of the park worth slowing down for twice over.",
+      "verified_sources": [
+        "MASAF national register, sheet 03/F205/MI/03, Giardini Indro Montanelli - Corso Venezia",
+        "https://www.comune.milano.it/aree-tematiche/verde/manutenzione-progettazione/alberi-monumentali/il-platano-grande-dei-giardini-montanelli"
+      ],
+      "access": "Free, public park (opening hours vary by season)",
+      "transport": "5 min walk from Palestro (M1) or Moscova (M2)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Long-standing single-sourced lead ('Two further planes inside the Giardini Montanelli', MASAF sheet 03/F205/MI/03) since 2026-08-06, resolved 2026-09-09 by joining the comune di Milano's own open-data CSV (dati.comune.milano.it/dataset/ ds2489), which names it tree VTA 35574 and independently confirms the lightning damage, cabling, woodpecker nest, vandalism attempt and the Universita Bicocca study. Numeric discrepancy recorded rather than resolved: the comune page states a trunk diameter of 260 cm (about 817 cm of circumference), well above the register's 625 cm girth for the same sheet id; girth_cm keeps the register's tree-level measurement. Age has no basis in either source and is derived only by analogy with two other MASAF/comune-confirmed planes in the same garden (mil_012, mil_018), broadened outward for this larger girth, so the band is kept wide. This closes out the comune of Milano's full 13-tree official monumental list: all 13 sheet ids are now accounted for (11 published, 2 blocked as the children-only Villa Belgiojoso garden).",
+      "location_precision": "confirmed",
+      "height_m": 28.0,
+      "girth_cm": 625,
+      "verify_notes": "MASAF gives a tree-level sheet coordinate; the comune's own CSV gives an independent coordinate 27 m away in the same garden, consistent with the same plaque-identified tree (VTA 35574).",
+      "how_to_recognise": "The widest-trunked plane in Giardini Montanelli, 6.25 metres round, its storm-broken limbs held together with visible cabling."
     }
   ],
   "oldest_tree_id": "mil_004"
