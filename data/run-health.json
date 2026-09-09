@@ -8943,6 +8943,38 @@
    ],
    "trees": 18,
    "logged": true
+  },
+  {
+   "started": "2026-09-09T08:29:47+00:00",
+   "date": "2026-09-09",
+   "run_id": "34329160559",
+   "minutes": 65.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 260,
+   "denials": 34,
+   "denials_source": "permission_denials: Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(mkdir), Bash(nohup), Bash(python3), Bash(rm), Bash(test)",
+   "ended": "success",
+   "tokens": 7545443,
+   "claims_held": [],
+   "commits": 9,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "oahu",
+     "trees": 3
+    },
+    {
+     "city": "brisbane",
+     "trees": 0
+    },
+    {
+     "city": "the-hague",
+     "trees": 0
+    }
+   ],
+   "trees": 3,
+   "logged": false
   }
  ],
  "schedule_changes": [
