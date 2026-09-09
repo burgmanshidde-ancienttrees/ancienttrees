@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tln_005",
+    "name": "The Russalka Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "60 to 100 years",
+    "age_min": 60,
+    "age_max": 100,
+    "girth_cm": null,
+    "location": {
+      "address": "By the Russalka Memorial, Pirita tee, near Kadriorg",
+      "latitude": 59.4428,
+      "longitude": 24.79007,
+      "neighbourhood": "Kadriorg / Russalka"
+    },
+    "verified_sources": [
+      "https://eeter.err.ee/294135/euroopa-puu-tiitlile-kandideerib-tanavu-russalka-juures-olev-tamm",
+      "https://et.wikipedia.org/wiki/Euroopa_aasta_puu"
+    ],
+    "access": "Free, public seaside promenade beside the Russalka Memorial, open at all times",
+    "transport": "Tram 1 to the 'Rusalka' stop, right beside it; or a 15-minute walk from the Kadriorg tram stop along Pirita tee",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Locally called the Reidi tee tamm. ERR (eeter.err.ee, 2017) reports it as an oak roughly 60 to 100 years old standing by the Russalka Memorial, and says it was originally in the direct path of the planned Reidi tee coastal road; local opposition got the road redesigned around it rather than felling it. It went on to represent Estonia in the 2017 European Tree of the Year contest and placed 11th (confirmed independently by et.wikipedia.org's 'Euroopa aasta puu' article, which names 'Russalka tamm' as Estonia's 2017 entry, 11th place; no dedicated article exists for the tree itself). A planning document snippet (digikogu.taltech.ee, seen only via search extract) separately describes a 'sajaaastane tamm' (hundred-year-old oak) as a factor the Reidi tee/Russalka intersection design had to work around, consistent with but not independently fetched as a primary source, so not counted as one of the two. Species is 'tamm' in both sources without qualifier; Quercus robur is the only native oak in Estonia so this is effectively certain, but no source states the Latin name, hence flagged. Coordinate is from a Wikidata 'individual protected natural object' entry for this specific tree (Q105637334), roughly 230m from the Russalka Memorial's own published coordinates, which fits the sources' 'by the Russalka Memorial' description but was not corroborated by a mapped photo or a register entry, hence approximate rather than confirmed. No girth found. Alive: the whole story is about it having been actively saved from removal in 2017-2019 (Reidi tee opened 2019); no report found of it being removed since, and it is distinct from an unrelated old oak felled near the Tammsaare House Museum elsewhere in Kadriorg in August 2024 (err.ee), which is a different tree."
+  }
+]
