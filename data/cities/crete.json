@@ -157,8 +157,8 @@
       "age_max": null,
       "location": {
         "address": "Gortyn archaeological site, Agioi Deka, Gortyna municipality, Heraklion regional unit, Crete, Greece",
-        "latitude": 35.0590445,
-        "longitude": 24.9512647,
+        "latitude": 35.06347,
+        "longitude": 24.94667,
         "neighbourhood": "at the back of the archaeological site, near the Odeon and the Law Code"
       },
       "story": "Every other oriental plane on Crete is bare in January. This one is not. The tree at Gortyn is Platanus orientalis var. cretica, an evergreen form of a deciduous species, reported from perhaps fifty places on the island and from almost nowhere else, and it holds its leaves straight through the winter. That is the reason to walk to the back of the archaeological site, and it is a better reason than the one the guidebooks give.\n\nThe guidebook reason is Europa. Gortyn is where Zeus, in the shape of a bull, is said to have carried her, and their union under a plane tree is stamped on the city's own ancient coins. That story belongs to the place and not to this trunk, and nothing connects the two. Read the coins as evidence of how long people here have associated the site with a plane tree, which is genuinely interesting, and not as a birth certificate for the one growing there now.\n\nNobody has dated it, and there is a botanical reason why nobody easily could. Planes regenerate from the root, so what looks eternal can be a succession of new stems on an old base, and the sources describing this one note that in its present form it is relatively small. It is protected, it is evergreen, and its age is an open question. If you know more, tell us.",
@@ -169,19 +169,17 @@
       "access": "Paid entry to the Gortyn archaeological site, open daylight hours. The tree stands at the back of the enclosure, near the Odeon and the Law Code, rather than by the entrance, so plan on buying a ticket.",
       "transport": "Gortyn lies beside the old national road at Agioi Deka, about 45 km south of Heraklion in the Messara plain. A car, or the Heraklion to Mires bus; the site entrance is on the main road.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Gortys_Evergreen_Platanus_20230607_105504.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Rigorius, via Wikimedia Commons",
-        "status": "held",
-        "note": "Looks like the fenced Gortyn plane with its plaque, but the geotag sits 658m from our pin; either the pin or the file is wrong and I cannot settle which.",
-        "width": 3000,
-        "height": 4000
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "WHAT MAKES THIS TREE WORTH A PAGE IS BOTANICAL, NOT MYTHOLOGICAL. It is an evergreen plane, Platanus orientalis var. cretica, a rare Cretan variety that keeps its leaves through winter while every ordinary oriental plane drops them. About fifty such trees are reported on the island. The Gortyn tree and the ones at Azogires in Chania are described as declared protected natural monuments. THE MYTH IS A FACT ABOUT THE PLACE, NOT ABOUT THIS TRUNK, and the story deliberately keeps them apart: Gortyn is where Zeus, in bull form, is said to have brought Europa, and their union under a plane is depicted on the city's ancient coins, but nothing ties the individual tree standing there today to that story. AGE: NOT ESTABLISHABLE, AND THE SOURCE SAYS WHY. cretanbeaches.com: 'plane trees are constantly regenerating from their roots, seeming eternal, but actually being new trees', and it notes this tree 'in its current form seems relatively small'. So the honest reading is a continuous rootstock rather than an ancient stem, and age_estimate stays EMPTY. PIN: site-level from Nominatim, approximate; the sources place the tree at the back of the enclosure but give no coordinate, and no OSM natural=tree node was found. The access field as delivered by verification carried an instruction to establish on the ground whether the tree can be seen from the road outside; that was rewritten at write time into reader-facing prose, since it is not established, the honest line is to plan on a ticket.",
       "paid_entry": true,
-      "how_to_recognise": "At the back of the archaeological site near the Odeon and the Law Code, and the one plane on Crete still in leaf in January."
+      "how_to_recognise": "At the back of the archaeological site near the Odeon and the Law Code, and the one plane on Crete still in leaf in January.",
+      "verify_notes": "2026-09-09: pin moved 600 m northwest, from 35.059044,24.951265 to 35.06347,24.94667. Our own address field and cretanbeaches.com both place the tree at the back of the FENCED archaeological site, near the Odeon and the Law Code, while the coordinate sat southeast of the enclosure in open ground. Three Commons photographs of the tree (Gortys Evergreen Platanus 20230607, one photographer, one visit) are geotagged 35.0633-35.0636, 24.9467, which agrees with the address and not with the old pin. Still approximate: a camera's own fix is where the photographer stood."
     }
   ]
 }
