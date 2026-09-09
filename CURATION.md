@@ -11,6 +11,26 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 - Leeuwarden +6 (9 -> 15), from a stranded verify claim
+
+Wrote up 6 trees a prior attempt's verify pass had already fully sourced:
+the Wilhelminaboom and Julianaboom (two royal commemorative limes on
+Raadhuisplein and at the Jacobijnerkerkhof, both corroborated between the
+Landelijk Register Monumentale Bomen and the gemeente/HCL 2022 walking
+brochure), a horse chestnut and an oriental plane on the same brochure's
+top-10 list, a Leopoldii maple in Rengerspark dated to the park's own 1904
+opening, and a copper beech at Willemskade that used to be a fused pair:
+the register's own history records the southern half felled in 2026 after
+a fungus weakened its base, and the story says so plainly rather than
+repeating the older IVN guide that still calls it a pair. All 6 flagged
+where the two sources only roughly agree (a year or a decade band); none
+invented. 0 flagged as unverifiable, 0 photos found this pass (none
+hunted; out of scope for a write pass). 14 further leads from the same
+register sweep sit in `data/leads/leeuwarden.json` for later, mostly
+Vosseparkje register trees needing a second source and two twin-plane/
+weeping-beech candidates near already-published trees that need walking
+and pinning separately rather than guessing a coordinate from prose.
+
 ## 2026-09-09 - Cagliari +3, Sorrento +1: finished the stranded write claims from a prior attempt's git-push failure
 
 Picked up the two claims left standing after an earlier attempt in this
