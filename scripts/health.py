@@ -39,6 +39,15 @@ WATCHED = {
     # website geven, er gaat veel fout volgens mij". The gate was not the
     # missing piece. Somebody looking at it was.
     "ios.yml": ("iOS app", None, None),
+    # THE NIGHT SHIFT ITSELF, watched from 2026-09-09. Everything else on this
+    # list was watched and the engine was not: nightly.yml appeared here only as
+    # a knock COUNT, and a knock that arrives and fails is counted as delivered.
+    # On 2026-09-08 upstream shipped a claude-code-action whose installer
+    # reported success and never wrote the binary, so two knocks died in 50
+    # seconds each and the only check that could have seen it was the idle
+    # streak, four runs and eight hours away. Reading the conclusion costs one
+    # call. The staleness question stays with the knock count below, so no age.
+    "nightly.yml": ("Night shift", None, None),
     "data-digest.yml": ("Data digest", datetime.timedelta(hours=26),
                         "gh workflow run data-digest.yml"),
     "review.yml": ("Fresh-eyes review", datetime.timedelta(hours=26),
@@ -116,6 +125,62 @@ def looks_starved(workflow):
         return fast >= 2
     except Exception:
         return False
+
+
+# Duration alone cannot tell the two apart, and on 2026-09-08 it got it exactly
+# backwards. Upstream shipped a claude-code-action whose native installer said
+# "Claude Code installed successfully" and never created /home/runner/.local/bin,
+# so every knock died in 50 seconds: the same fingerprint as an exhausted
+# allowance, and the check above would have said "nothing to fix, wait for the
+# window" about a break that no window reset was ever going to clear. The log
+# says which it is in one line, so ask it rather than guessing from a stopwatch.
+ALLOWANCE_MARKERS = (
+    "usage limit",
+    "rate limit",
+    "credit balance",
+    "quota",
+    "insufficient credit",
+    "exceeded your",
+)
+
+
+def failure_evidence(workflow):
+    """('allowance'|'broken', line) from the newest failed run's log, or None.
+
+    None means the log could not be read or said nothing either way, and the
+    caller falls back to the duration heuristic. Deliberately conservative:
+    only an error line that clearly is NOT about allowance returns 'broken',
+    because the 2026-08-26 lesson (a session burned its window on a stale
+    credential while the account was simply out of tokens) is still the more
+    expensive mistake of the two.
+    """
+    try:
+        out = subprocess.run(
+            ["gh", "run", "list", "--workflow", workflow, "-L", "5",
+             "--json", "conclusion,status,databaseId"],
+            capture_output=True, text=True, timeout=60, cwd=ROOT)
+        if out.returncode != 0:
+            return None
+        failed = [r for r in json.loads(out.stdout or "[]")
+                  if r.get("status") == "completed"
+                  and r.get("conclusion") == "failure"]
+        if not failed:
+            return None
+        log = subprocess.run(
+            ["gh", "run", "view", str(failed[0]["databaseId"]), "--log-failed"],
+            capture_output=True, text=True, timeout=120, cwd=ROOT)
+        if log.returncode != 0 or not log.stdout:
+            return None
+        errors = [ln.split("##[error]", 1)[1].strip()
+                  for ln in log.stdout.splitlines() if "##[error]" in ln]
+        if not errors:
+            return None
+        for ln in errors:
+            if any(m in ln.lower() for m in ALLOWANCE_MARKERS):
+                return "allowance", ln[:200]
+        return "broken", errors[0][:200]
+    except Exception:
+        return None
 
 
 # The starvation check above only sees workflows that FAIL. A night run that
@@ -258,8 +323,18 @@ def main():
             # should be told which thing is broken. `gh run view --log-failed`
             # on the newest ios.yml run prints the failed assertions; the
             # xcresult artifact carries the screenshot XCTest took at each one.
-            starved = wf in CLAUDE_WORKFLOWS and looks_starved(wf)
-            if starved:
+            evidence = failure_evidence(wf) if wf in CLAUDE_WORKFLOWS else None
+            named_error = evidence[1] if evidence and evidence[0] == "broken" else None
+            # The log gets the vote when it has one. Only when it says nothing
+            # either way does the stopwatch decide, which is what it was doing
+            # alone until 2026-09-09.
+            starved = (wf in CLAUDE_WORKFLOWS and not named_error
+                       and (evidence is not None or looks_starved(wf)))
+            if named_error:
+                problems.append(f"{label} is failing for a reason the log names, "
+                                f"not the usage window (its newest run, "
+                                f"{hours:.0f}h ago): {named_error}")
+            elif starved:
                 # Not a problem to fix, so it does not join `problems` and does
                 # not fail the exit code. There is nothing to do but wait.
                 notes.append(f"{label} is failing, but its runs die in under "
@@ -270,11 +345,16 @@ def main():
                              f"later, then it is not the allowance and the log is "
                              f"worth reading after all.")
             else:
-                what = ("The APP is broken, not the site; the failed assertions are "
-                        "in the log and the screenshots are in its xcresult artifact"
-                        if wf == "ios.yml"
-                        else "The site may be broken; read the failing log before "
-                             "anything else")
+                if wf == "ios.yml":
+                    what = ("The APP is broken, not the site; the failed assertions "
+                            "are in the log and the screenshots are in its xcresult "
+                            "artifact")
+                elif wf == "nightly.yml":
+                    what = ("The ENGINE is broken, not the site: no knock will do any "
+                            "work until this is dealt with. Read the failing log")
+                else:
+                    what = ("The site may be broken; read the failing log before "
+                            "anything else")
                 problems.append(f"{label} is {conclusion} (its newest run, "
                                 f"{hours:.0f}h ago). {what}.")
         if max_age and age > max_age:
