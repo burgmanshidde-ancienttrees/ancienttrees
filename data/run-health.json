@@ -9015,6 +9015,29 @@
    ],
    "trees": 9,
    "logged": true
+  },
+  {
+   "started": "2026-09-09T14:01:17+00:00",
+   "date": "2026-09-09",
+   "run_id": "34360813771",
+   "minutes": 42.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 324,
+   "denials": 47,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(if), Bash(mkdir), Bash(pdftotext), Bash(python3), Bash(rm), Bash(test), Bash(wc)",
+   "ended": "success",
+   "tokens": 7515332,
+   "claims_held": [
+    "helsinki",
+    "gdansk",
+    "tallinn"
+   ],
+   "commits": 6,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
