@@ -11,7 +11,7 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
-## 2026-09-09 (continuation) - 54 recognition lines across Krakow and Arnhem, the two biggest gaps site-wide
+## 2026-09-09 (continuation) - 75 recognition lines across Krakow, Arnhem and Porto, the three biggest gaps site-wide
 
 After finishing the Leeuwarden claim, checked the rest of the ladder:
 `leads.py --ready` empty, `city_queue.py --next`'s OPENABLE TODAY list
@@ -21,11 +21,12 @@ candidates are BLOCKED on private hotel grounds per CURATION.md
 2026-08-31/09-08, re-checked rather than re-researched), `recognise.py
 --stuck` and `pagegaps.py` both zero. Counted trees missing
 `how_to_recognise` site-wide: 1,118 across 373 cities. Wrote lines for
-the two biggest gaps, Krakow (30 trees) and Arnhem (24), all restated
-from already-verified girth, species and setting per BRIEF_WRITING.md's
-how_to_recognise rule, all under the 240-character limit, written and
-applied myself in-session rather than dispatched (cheap restatement,
-no research). Built, ran qa.py clean both times, two commits.
+the three biggest gaps, Krakow (30 trees), Arnhem (24) and Porto (21),
+all restated from already-verified girth, species and setting per
+BRIEF_WRITING.md's how_to_recognise rule, all under the 240-character
+limit, written and applied myself in-session rather than dispatched
+(cheap restatement, no research). Built, ran qa.py clean each time,
+three commits. Site-wide gap now 1,118 -> 1,043 across the run.
 
 ## 2026-09-09 (continuation) - Finished the second stranded Leeuwarden verify claim, +3 trees (15 -> 18)
 
