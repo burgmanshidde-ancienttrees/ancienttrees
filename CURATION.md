@@ -11,6 +11,23 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Sorrento verify claim finished: 0 new trees, register candidates exhausted at this radius
+
+Picked up the standing sorrento verify claim (by night-run, from an earlier
+attempt in this window). Dispatched a verify agent on all 19 MASAF register
+candidates within 20km. Result: every close-in candidate was an exact
+sheet-id/coordinate duplicate of a tree already live or already recorded as
+a lead/blocked entry (the Grand Hotel Parco dei Principi cluster, the Antico
+Parco del Principe trio, the Via Bagnulo pine, the Riviera Massa olive
+group). The one genuinely unexamined candidate, Eucalitto blu of Matignano
+(2.9km), turned out to be in Vico Equense on a private residence's boundary
+wall (Villa Thuja) with no source confirming street visibility, so it's
+blocked on both container and access. Two more distant candidates (a
+mulberry and an olive in Massa Lubrense) filed as leads for a future
+Massa Lubrense page rather than researched further. Sorrento's register
+supply is exhausted at this pass's scope; not worth another verify pass
+without a new source. Released the claim.
+
 ## 2026-09-09 (continuation) - Leeuwarden +3 (15 -> 18), finished the second verify claim
 
 Two earlier attempts in this window had stopped early with time still on
