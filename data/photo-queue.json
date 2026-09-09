@@ -27777,7 +27777,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "species mismatch: this iNat obs is Tilia americana, the tree is Tilia platyphyllos Vitifolia"
+     "verdict": "Close-up of lime leaves and flowers; no crown or trunk."
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -27805,7 +27805,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "species mismatch: this iNat obs is Tilia americana, the tree is Tilia platyphyllos Vitifolia"
+     "verdict": "Same leaf close-up offered for both trees of the pair; no crown or trunk."
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -27833,7 +27833,7 @@
      "source": "inaturalist",
      "obs_location": "45.4272962,-75.6964251997",
      "judged": "reject",
-     "verdict": "close-up of a leaf and flowers in a hand, not the tree itself; fails the Cadiz framing standard regardless of species match"
+     "verdict": "Leaf held in a hand against the sky; a close-up, not the tree."
     },
     {
      "title": "iNat obs 121738621 (Cladrastis kentukea)",
@@ -38746,7 +38746,9 @@
      "author": "Torsade de Pointes",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Kenaupark Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Kenaupark Category:Self-published work",
+     "judged": "reject",
+     "verdict": "street scene, white villas the subject, bare trees only as framing"
     },
     {
      "title": "File:Kenaupark, Haarlem - panoramio - archengigi.jpg",
@@ -38756,7 +38758,9 @@
      "author": "archengigi",
      "lat": 52.385992,
      "lng": 4.631821,
-     "cats": "Category:CC-BY-3.0 Category:Kenaupark Category:Media needing category review as of 4 November 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-3.0 Category:Kenaupark Category:Media needing category review as of 4 November 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "canal panorama, no single tree readable as subject"
     },
     {
      "title": "File:Kenaupark 1 Haarlem.jpeg",
@@ -39748,7 +39752,9 @@
      "author": "Radosław Botev",
      "lat": null,
      "lng": null,
-     "cats": "Category:2005 in Haarlem Category:Bolwerken (Haarlem) Category:CC-BY-3.0-PL Category:Fundacja Kontroli Społecznej Nomos - Holandia Category:Houses in Haarlem Category:March 2005 Netherlands photographs Category:Schotersingel, Haarlem Category:Self-published work"
+     "cats": "Category:2005 in Haarlem Category:Bolwerken (Haarlem) Category:CC-BY-3.0-PL Category:Fundacja Kontroli Społecznej Nomos - Holandia Category:Houses in Haarlem Category:March 2005 Netherlands photographs Category:Schotersingel, Haarlem Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Overcast water-and-houses view with distant bare trees; no ginkgo visible."
     },
     {
      "title": "File:Bolwerken Haarlem 2019.jpg",
@@ -39758,7 +39764,9 @@
      "author": "Steven Lek",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bolwerken (Haarlem) Category:CC-BY-SA-4.0 Category:Self-published work"
+     "cats": "Category:Bolwerken (Haarlem) Category:CC-BY-SA-4.0 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "park and water view, no ginkgo identifiable"
     }
    ]
   },
@@ -39776,7 +39784,9 @@
      "author": "Pim van Tend",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Haarlem Category:Gemeentelijke monumenten with known IDs Category:Self-published work"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Haarlem Category:Gemeentelijke monumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Brick villa facade with bare twigs at the edges; the oaks are not in the frame."
     },
     {
      "title": "File:Haarlem statenbolwerk.JPG",
@@ -39786,7 +39796,9 @@
      "author": "Arch",
      "lat": null,
      "lng": null,
-     "cats": "Category:2010 in Haarlem Category:PD-self Category:Rijksmonumenten with known IDs Category:Self-published work Category:Staten Bolwerk bij 1, Haarlem Category:Taken with Sony DSC-H7"
+     "cats": "Category:2010 in Haarlem Category:PD-self Category:Rijksmonumenten with known IDs Category:Self-published work Category:Staten Bolwerk bij 1, Haarlem Category:Taken with Sony DSC-H7",
+     "judged": "reject",
+     "verdict": "yellow villa is the subject, chestnut branches only frame it"
     },
     {
      "title": "File:Statenbolwerk, aanzicht nr.1 - Haarlem - 20098210 - RCE.jpg",
@@ -40111,7 +40123,9 @@
      "author": "Uberprutser",
      "lat": null,
      "lng": null,
-     "cats": "Category:Boezemgemaal De Waterwolf Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2013-04-24 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-L10 Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:Boezemgemaal De Waterwolf Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2013-04-24 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-L10 Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Pumping station building; a bare tree clipped at the frame edge, not the subject."
     },
     {
      "title": "File:Waterwolf 7.jpg",
@@ -40121,7 +40135,9 @@
      "author": "Uberprutser",
      "lat": null,
      "lng": null,
-     "cats": "Category:Boezemgemaal De Waterwolf Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2013-04-24 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-L10 Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:Boezemgemaal De Waterwolf Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2013-04-24 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-L10 Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Pumping station from the water; no tree in the frame at all."
     },
     {
      "title": "File:Waterwolf 8.jpg",
@@ -40239,7 +40255,9 @@
      "author": "Ymblanter",
      "lat": 52.27847,
      "lng": 4.65422,
-     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Haarlemmermeer Category:Hoofdvaart/Hoofdweg (Haarlemmermeer) Category:Hoofdweg (Nieuw-Vennep) Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Haarlemmermeer Category:Hoofdvaart/Hoofdweg (Haarlemmermeer) Category:Hoofdweg (Nieuw-Vennep) Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Not viewed: geotag 2009 m from our pin, so it is a different spot."
     },
     {
      "title": "File:Nieuw-Vennep field.jpg",
@@ -40249,7 +40267,9 @@
      "author": "Ymblanter",
      "lat": 52.276976,
      "lng": 4.652036,
-     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Hoofdweg (Nieuw-Vennep) Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:CC-BY-SA-4.0 Category:Hoofdweg (Nieuw-Vennep) Category:Netherlands photographs taken on 2016-02-07 Category:Nieuw-Vennep Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Not viewed: geotag 1786 m from our pin, so it is a different spot."
     },
     {
      "title": "File:Nieuw-Vennep side canal along N520.jpg",
@@ -40313,7 +40333,9 @@
      "author": "Ymblanter",
      "lat": 52.2899,
      "lng": 4.6708,
-     "cats": "Category:2016 in Haarlemmermeer Category:Bridges in Hoofddorp Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Hoofdvaart/Hoofdweg (Haarlemmermeer) Category:Netherlands photographs taken on 2016-02-07 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:Bridges in Hoofddorp Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Hoofdvaart/Hoofdweg (Haarlemmermeer) Category:Netherlands photographs taken on 2016-02-07 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Not viewed: geotag 2291 m from our pin, a bridge on the other side of Hoofddorp."
     },
     {
      "title": "File:Hoofddorp Toolenburgbrug 05.jpg",
@@ -40323,7 +40345,9 @@
      "author": "Ymblanter",
      "lat": 52.29021,
      "lng": 4.671,
-     "cats": "Category:2016 in Haarlemmermeer Category:Bridges in Hoofddorp Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Hoofdvaart/Hoofdweg (Haarlemmermeer) Category:Netherlands photographs taken on 2016-02-07 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work"
+     "cats": "Category:2016 in Haarlemmermeer Category:Bridges in Hoofddorp Category:CC-BY-SA-4.0 Category:Calatravabruggen Category:Hoofdvaart/Hoofdweg (Haarlemmermeer) Category:Netherlands photographs taken on 2016-02-07 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Not viewed: geotag 2257 m from our pin, a bridge on the other side of Hoofddorp."
     },
     {
      "title": "File:Hoofddorp fields.jpg",
@@ -40730,7 +40754,9 @@
      "author": "A. J. van der Wal",
      "lat": null,
      "lng": null,
-     "cats": "Category:1987 in Hilversum Category:Buildings in Hilversum Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Netherlands photographs taken on 1987-08-24 Category:Photographs by Ton van der Wal"
+     "cats": "Category:1987 in Hilversum Category:Buildings in Hilversum Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Netherlands photographs taken on 1987-08-24 Category:Photographs by Ton van der Wal",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and it is an RCE facade survey rather than a tree portrait."
     }
    ]
   },
@@ -40760,7 +40786,9 @@
      "author": "A. J. van der Wal",
      "lat": null,
      "lng": null,
-     "cats": "Category:1987 in Hilversum Category:Buildings in Hilversum Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Netherlands photographs taken on 1987-08-24 Category:Photographs by Ton van der Wal"
+     "cats": "Category:1987 in Hilversum Category:Buildings in Hilversum Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Netherlands photographs taken on 1987-08-24 Category:Photographs by Ton van der Wal",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and it is an RCE facade survey rather than a tree portrait."
     }
    ]
   },
@@ -40873,7 +40901,9 @@
      "licence": "CC BY",
      "author": "(c) Michel Langeveld, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.2287305556,5.1589"
+     "obs_location": "52.2287305556,5.1589",
+     "judged": "approve",
+     "verdict": "Whole tree fills the frame in summer sun, crown and low branching readable; observation geotag sits 26 m from our pin in the pinetum. Use photo 211047885 (the second photo of this observation is a fol"
     },
     {
      "title": "iNat obs 124510048 (Thuja plicata)",
@@ -40918,7 +40948,9 @@
      "author": "Dick van Aggelen",
      "lat": 52.212489,
      "lng": 5.199033,
-     "cats": "Category:Built in the Netherlands in 1912 Category:CC-BY-SA-4.0 Category:Houses in Hilversum Category:Images from Wiki Loves Monuments 2017 Category:Images from Wiki Loves Monuments 2017 in the Netherlands Category:Jacob London Category:New images from Wiki Loves Monuments 2017 in the Netherlands Category:Rijksmonumenten in Hilversum Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:Built in the Netherlands in 1912 Category:CC-BY-SA-4.0 Category:Houses in Hilversum Category:Images from Wiki Loves Monuments 2017 Category:Images from Wiki Loves Monuments 2017 in the Netherlands Category:Jacob London Category:New images from Wiki Loves Monuments 2017 in the Netherlands Category:Rijksmonumenten in Hilversum Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Not viewed: geotag 1153 m from our pin, a different address on the same road."
     }
    ]
   },
@@ -41604,7 +41636,9 @@
      "author": "Erik Baas",
      "lat": 52.6424043,
      "lng": 5.0622779,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files by User:Erik Baas/Hoorn Category:GFDL Category:License migration redundant Category:Rijksmonumenten in Hoorn, North Holland Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files by User:Erik Baas/Hoorn Category:GFDL Category:License migration redundant Category:Rijksmonumenten in Hoorn, North Holland Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Brick warehouse facade down the street; no plane tree in the frame."
     },
     {
      "title": "File:Pakhuisstraat, Hoorn.jpg",
@@ -41614,7 +41648,9 @@
      "author": "Dqfn13",
      "lat": 52.6426037,
      "lng": 5.06242433,
-     "cats": "Category:2026 in Hoorn, North Holland Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Hatches Category:Houses in Hoorn, North Holland Category:North Holland photographs taken on 2026-05-14 Category:Pakhuisbrug (Hoorn) Category:Self-published work Category:Street lights in the Netherlands Category:Uploaded with Mobile/Android"
+     "cats": "Category:2026 in Hoorn, North Holland Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Hatches Category:Houses in Hoorn, North Holland Category:North Holland photographs taken on 2026-05-14 Category:Pakhuisbrug (Hoorn) Category:Self-published work Category:Street lights in the Netherlands Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "Empty cobbled street; only small distant trees at the far end."
     },
     {
      "title": "File:Pakhuisstraat 10, Hoorn.JPG",
@@ -41689,7 +41725,9 @@
      "author": "Erik Baas at Dutch Wikipedia",
      "lat": 52.640995,
      "lng": 5.068737,
-     "cats": "Category:Oosterpoort (Hoorn) Category:PD-user Category:Rijksmonumenten with known IDs"
+     "cats": "Category:Oosterpoort (Hoorn) Category:PD-user Category:Rijksmonumenten with known IDs",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR."
     },
     {
      "title": "File:Hoorn Oosterpoort 009.jpg",
@@ -41699,7 +41737,9 @@
      "author": "M.Minderhoud",
      "lat": 52.6413936,
      "lng": 5.0692597,
-     "cats": "Category:Files by User:Michiel1972 Category:Oosterpoort (Hoorn) Category:PD-self Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A530"
+     "cats": "Category:Files by User:Michiel1972 Category:Oosterpoort (Hoorn) Category:PD-self Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A530",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR."
     },
     {
      "title": "File:Oosterpoort, buitenzijde - Hoorn - 20115607 - RCE.jpg",
@@ -41744,7 +41784,9 @@
      "author": "Dqfn13",
      "lat": 52.64137464,
      "lng": 5.06699036,
-     "cats": "Category:2026 in Hoorn, North Holland Category:CC-BY-SA-4.0 Category:Ditches in North Holland Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Houses in Hoorn, North Holland Category:Netherlands photographs taken on 2026-05-05 Category:Self-published work Category:Street lights in the Netherlands Category:Terraced houses in the Netherlands Category:Uploaded with Mobile/Android"
+     "cats": "Category:2026 in Hoorn, North Holland Category:CC-BY-SA-4.0 Category:Ditches in North Holland Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Houses in Hoorn, North Holland Category:Netherlands photographs taken on 2026-05-05 Category:Self-published work Category:Street lights in the Netherlands Category:Terraced houses in the Netherlands Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "Alley beside a housing block with the park edge to one side; no single tree as subject."
     }
    ]
   },
@@ -41873,7 +41915,9 @@
      "author": "G. Th. Delemarre",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Demolished buildings in Maastricht Category:Vrijthof (Maastricht) Category:Vrijthof 44, Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Demolished buildings in Maastricht Category:Vrijthof (Maastricht) Category:Vrijthof 44, Maastricht",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and it is an archival survey photograph."
     },
     {
      "title": "File:Montage Maastricht Vrijthof.jpg",
@@ -41883,7 +41927,9 @@
      "author": "Kleon3",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Montages of Maastricht Category:Self-published work Category:Vrijthof (Maastricht)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Montages of Maastricht Category:Self-published work Category:Vrijthof (Maastricht)",
+     "judged": "reject",
+     "verdict": "A five-panel montage of the square including night shots; not a photograph of a tree."
     },
     {
      "title": "File:Monumental building at Vrijthof square Maastricht - panoramio.jpg",
@@ -42123,7 +42169,9 @@
      "author": "Unknown photographer (Het Zuiden)",
      "lat": null,
      "lng": null,
-     "cats": "Category:1957 in Maastricht Category:CC-BY-SA-3.0 Category:Cannons in Maastricht Category:Het Zuiden photographs in HCL (Maastricht) Category:People of Maastricht Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)"
+     "cats": "Category:1957 in Maastricht Category:CC-BY-SA-3.0 Category:Cannons in Maastricht Category:Het Zuiden photographs in HCL (Maastricht) Category:People of Maastricht Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and it is a 1957 press photograph of a ceremony."
     },
     {
      "title": "File:Stolperstein für Friederike Gobes-Nussbaum (Maastricht).jpg",
@@ -42202,7 +42250,9 @@
      "author": "Otter",
      "lat": null,
      "lng": null,
-     "cats": "Category:Aldenhofpark 3, Maastricht Category:Aldenhofpark 4, Maastricht Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:Gemeentelijke monumenten with known IDs Category:License migration redundant Category:Self-published work"
+     "cats": "Category:Aldenhofpark 3, Maastricht Category:Aldenhofpark 4, Maastricht Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:Gemeentelijke monumenten with known IDs Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Monument photograph of a brick house with a parked car; no tree."
     },
     {
      "title": "File:Maastricht - Aldenhofpark GM-1009 20190330.jpg",
@@ -42212,7 +42262,9 @@
      "author": "Otter",
      "lat": null,
      "lng": null,
-     "cats": "Category:Aldenhofpark (park in Maastricht) Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:Gemeentelijke monumenten with known IDs Category:License migration redundant Category:Self-published work"
+     "cats": "Category:Aldenhofpark (park in Maastricht) Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:Gemeentelijke monumenten with known IDs Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wide bare-winter park lawn with a dozen trees; nothing singles out the golden rain tree."
     },
     {
      "title": "File:Maastricht - rijksmonument 28012 - Aldenhofpark - walmuur 20100513.jpg",
@@ -42331,7 +42383,9 @@
      "author": "Unknown photographer (Verenigde Fotobureaux)",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Flags in Maastricht Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Flags in Maastricht Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and it is a 1925 archival press photograph."
     },
     {
      "title": "File:Maastricht, Waldeckpark, schenking kanon, 1957.jpg",
@@ -54508,8 +54562,8 @@
      "author": "(c) Caleb Catto, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "-43.0982555,146.80252",
-     "judged": "hold",
-     "verdict": "72m from our pin in dense tall-eucalypt forest with many similar giant E. regnans nearby; no marker/signage visible confirming this specific trunk is Centurion, not just another tall tree in the same stand"
+     "judged": "reject",
+     "verdict": "Forest canopy shot; several trunks, no crown or base readable and nothing identifies Centurion."
     },
     {
      "title": "iNat obs 321882049 (Eucalyptus regnans)",
@@ -57359,7 +57413,9 @@
      "author": "Smallbones",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:High schools in Pennsylvania Category:Manchester, Pennsylvania Category:Self-published work"
+     "cats": "Category:CC-Zero Category:High schools in Pennsylvania Category:Manchester, Pennsylvania Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Northeastern High School in Manchester, Pennsylvania; wrong Manchester and no poplar."
     }
    ]
   },
