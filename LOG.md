@@ -11,6 +11,48 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Finished the stranded Leeuwarden verify claim, +6 trees; FOR HIDDE on a broken CI fix a run cannot push
+
+Two earlier attempts in this same window had stopped early. `passcheck.py
+--claims` showed one standing: Leeuwarden, verify, 140 min left, and
+`data/research/leeuwarden-verified.json` already held 6 fully verified
+candidates (lee_010-015) with sources and coordinates, just no stories.
+`leads.py --ready` (the general pool) was empty, so per the harness's own
+start order the claim was the work. Also found the Leiden recognition-line
+pass from an even earlier attempt sitting complete but uncommitted
+(8 lines, lei_002-006/019-021) and committed it first, separately.
+
+Dispatched a write-stories pass on the 6 Leeuwarden trees (Wilhelminaboom,
+Julianaboom, the Noorderweg horse chestnut, the Stationsplein oriental
+plane, the Rengerspark Leopoldii maple, the Willemskade beech). Renamed
+lee_014's species from "Sycamore Maple 'Leopoldii'" to the canonical
+"Sycamore 'Leopoldii'" (the form already live on emmen.json) before
+merging, since the build fails on one species under two names. Merged,
+fixed the two count-promising fields the writer can't see (`intro` said
+"five of these nine", `meta_description` said "Nine remarkable trees";
+both now say fifteen), rebuilt, ran qa.py and preflight.py clean, released
+the claim. Leeuwarden: 9 -> 15 trees.
+
+**FOR HIDDE: the broken iOS-app CI gate has a real, understood cause and a
+one-line fix, and a run cannot push it.** Three of the last four scheduled
+"iOS app" runs failed, always in the iOS-18-floor job, on two different
+flaky assertions (a search UI test that occasionally can't find "Beethoven
+Plane" in time, and once an appfit layout NOTE that a later commit already
+fixed). The main "test" job (newest OS) never shows either failure because
+its `xcodebuild test` call already carries `-retry-tests-on-failure
+-test-iterations 2`; the floor job's call never got that flag, so the same
+class of timing flake goes straight to red there instead of being quietly
+absorbed. The fix is adding those two flags to the floor job's `xcodebuild
+test` invocation in `.github/workflows/ios.yml` (the "Build and test on
+the floor" step), matching the sibling job exactly. I wrote and tested the
+diff, then `git push` refused it: "refusing to allow a GitHub App to
+create or update workflow `.github/workflows/ios.yml` without `workflows`
+permission." That's a GitHub-level restriction on this bot's token, not a
+project rule, so it needs your hands (or a token with the `workflows`
+scope) to land. The diff is one line, immediately after the `-derivedDataPath
+/tmp/dd \` line in the "Build and test on the floor" step: add
+`-retry-tests-on-failure -test-iterations 2 \`.
+
 ## 2026-09-09 - Night run 2026-09-09 08:29 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 65.0 minutes of its 120 minute window, 260 turns, 34 commands refused by the allowlist, ended clean (success). 3 tree(s) reached data/cities across 3 city file(s), and the run still wrote no log entry of its own.

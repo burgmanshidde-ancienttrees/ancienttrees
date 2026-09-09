@@ -1,0 +1,110 @@
+{
+  "city": "Leeuwarden",
+  "country": "Netherlands",
+  "leads": [
+    {
+      "name": "Treurbeuk, Oude Begraafplaats (Algemene Begraafplaats)",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "why_lead": "Named and dated (circa 1900) by the gemeente/HCL brochure 'Wandelroute Monumentaal Groen' (2022, top-10 entry IV) as standing between sections 2 and 3 of the old cemetery off Spanjaardslaan, with a photo. No matching entry found in the LRMB register within 20km of the city centre, and only a verbal location ('tussen tweede en derde afdeling'), not a coordinate. That path description is close to or the same as lee_004's plane tree location, so a future pass should walk the path and pin both trees individually rather than guess a coordinate from the brochure text alone. One source only; needs a second independent source or a precise coordinate before it can ship.",
+      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+    },
+    {
+      "name": "Gewone plataan Oude Stadsbegraafplaats (second entry)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "coordinate": "53.209503, 5.790241",
+      "why_lead": "LRMB register nr 1692402, planted band 1850-1860, 'pad tussen afdeling 2 en 4', about 30m from the already-published lee_004 (LRMB nr 1692403, 'pad tussen afdeling 2 en 3', age 1840-1850) in the same cemetery. Register-only, one source; no second independent source found in this pass naming a second plane specifically. Owner=gemeente, visitable=ja, visible=nee.",
+      "source": "https://www.monumentalebomen.nl/"
+    },
+    {
+      "name": "Kaukasische vleugelnoot Vosseparkje",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "coordinate": "53.201185, 5.78439",
+      "why_lead": "LRMB register nr 1688399, planted band 1900-1910, west side of Westerpark/Vosseparkje. Register-only; the monumentaltrees.com Westerpark page and a WebSearch AI summary both mention a wingnut in this park (girth ~130cm) but monumentaltrees.com 403s automated fetches so its figures could not be read on the actual page and were not used, per the search-summary-is-not-a-source rule. No second independent source verified. Owner=gemeente, visitable=ja, visible=ja.",
+      "source": "https://www.monumentalebomen.nl/"
+    },
+    {
+      "name": "Grauwe abeel Vosseparkje",
+      "species": "Grey Poplar (Populus x canescens)",
+      "coordinate": "53.201525, 5.786394",
+      "why_lead": "LRMB register nr 1688398, planted band 1900-1910, east side of the pond in Westerpark/Vosseparkje. Register-only, no second source found this pass. Owner=gemeente, visitable=ja, visible=ja.",
+      "source": "https://www.monumentalebomen.nl/"
+    },
+    {
+      "name": "Pluimiep Vosseparkje (x2)",
+      "species": "Feather Elm (Ulmus glabra 'Exoniensis' or similar cultivar)",
+      "coordinate": "53.202071, 5.784453 and 53.201043, 5.786476",
+      "why_lead": "LRMB register nrs 1692406 and 1692405, planted band 1900-1910, same cultivar type as the already-published lee_008 (Molenstraat feather elms) but different specimens in Vosseparkje. Register-only, no second source found this pass. Owner=gemeente, visitable=ja, visible=ja.",
+      "source": "https://www.monumentalebomen.nl/"
+    },
+    {
+      "name": "Canadese populier Vosseparkje",
+      "species": "Canadian Poplar (Populus x canadensis)",
+      "coordinate": "53.200901, 5.784892",
+      "why_lead": "LRMB register nr 1692404, planted band 1890-1900, west side of Vosseparkje. Register-only, no second source found this pass. Owner=gemeente, visitable=ja, visible=onbekend.",
+      "source": "https://www.monumentalebomen.nl/"
+    },
+    {
+      "name": "Kaukasische/Perzische eik, zuidoostelijke ingang Vosseparkje",
+      "species": "Oak, species uncertain (Quercus sp., possibly Q. macranthera or Q. castaneifolia)",
+      "coordinate": "53.20107, 5.786676",
+      "why_lead": "LRMB register nr 1686956, planted band 1870-1880, at the south-east entrance of Vosse/Westerpark. Register-only, no second source found this pass; species itself is ambiguous in the register name. Owner=gemeente, visitable=ja, visible=ja.",
+      "source": "https://www.monumentalebomen.nl/"
+    },
+    {
+      "name": "Zilverlinde, Druifstreek tegenover Blokhuispoort",
+      "species": "Silver Linden (Tilia tomentosa)",
+      "why_lead": "Named by IVN Leeuwarden e.o.'s monumental-trees walking page (silvery hairs on the leaf undersides noted). No coordinate and no matching LRMB register entry found near Leeuwarden for a Zilverlinde at this address; needs a precise location before it can be pinned.",
+      "source": "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/"
+    },
+    {
+      "name": "Zilverlinde, Eewal tegenover Restaurant Spinoza",
+      "species": "Silver Linden (Tilia tomentosa)",
+      "why_lead": "Same IVN page as above. No coordinate and no matching LRMB register entry found; needs a precise location before it can be pinned.",
+      "source": "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/"
+    },
+    {
+      "name": "Witte acacia (leaning, propped), Westerpark/Vosseparkje near Westersingel 8",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "why_lead": "HCL brochure top-10 entry VIII, dated 1924, described as leaning and propped up. No LRMB register entry found for an acacia/Robinia in Leeuwarden municipality, and no precise coordinate beyond 'near Westersingel 8'. One source only.",
+      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+    },
+    {
+      "name": "Libanonceder, Wijbrand de Geeststraat 42 (voor het Gabbema Gasthuis)",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "why_lead": "HCL brochure top-10 entry VII, dated 1906. No LRMB register entry found and no coordinate obtained this pass (Wijbrand de Geeststraat lies further east than the radius pulled for this brief). One source only.",
+      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+    },
+    {
+      "name": "Krimlinde, Blokhuisplein (links van de entree tot de Blokhuispoort)",
+      "species": "Crimean Linden (Tilia x euchlora)",
+      "why_lead": "HCL brochure top-10 entry X, dated 1954. No LRMB register entry found for a Krimlinde in Leeuwarden and no coordinate obtained this pass. One source only.",
+      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+    },
+    {
+      "name": "Gewone beuk achter De Koperen Tuin, Prinsentuin",
+      "species": "European Beech (Fagus sylvatica)",
+      "why_lead": "HCL brochure top-10 entry II, dated 1874, described as having a low branch that limits the height of delivery traffic behind the De Koperen Tuin pavilion in Prinsentuin. Could not be confidently matched to any LRMB register coordinate in Prinsentuin (all register beeches there, nrs 1688389 and 1688418/1688918-equivalent already match the published lee_003 and lee_005); may be a further, distinct beech or may be one of those under a different description. Needs a site visit or a clearer source before publishing to avoid duplicating an already-live tree under a new id.",
+      "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+    },
+    {
+      "name": "Rode paardenkastanjes / Gewone plataan / Witte paardenkastanje, tuin Diakonessenziekenhuis",
+      "species": "Red Horse Chestnut, London Plane, Horse Chestnut (various)",
+      "why_lead": "LRMB register nrs 1688394, 1687120, 1688396, planted 1880-1890, in the former hospital garden off Noordersingel. The HCL brochure corroborates only in general terms ('a few beautiful trees remain from the 1895 Vlaskamp-designed hospital garden') without naming species one to one. Two of the three register entries are owner=particulier; access needs checking on the ground rather than assumed from the register's visitable=ja before these ship, since 'particulier' plus a former hospital site (now used by other institutions) is exactly the case hard rule 10 asks to check carefully.",
+      "source": "https://www.monumentalebomen.nl/"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Witte paardenkastanje Sint Anthony Gasthuis",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "coordinate": "53.203404, 5.794158",
+      "reason": "LRMB register nr 1682924 explicitly sets visitable=nee (owner=stichting, private grounds of the Sint Anthony Gasthuis almshouse). Do not publish without new evidence the grounds are open."
+    },
+    {
+      "name": "Treurbeuk Sint Anthony Gasthuis",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "coordinate": "53.203608, 5.794327",
+      "reason": "LRMB register nr 1682925 explicitly sets visitable=nee (owner=stichting, same private almshouse grounds as above). Not the same tree as the HCL brochure's cemetery Treurbeuk lead above; do not conflate the two."
+    }
+  ]
+}

@@ -2,8 +2,8 @@
   "city": "Leeuwarden",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Five of these nine stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
-  "meta_description": "Nine remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
+  "intro": "Five of these fifteen stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
+  "meta_description": "Fifteen remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
   "question_meta": "Leeuwarden's oldest tree is a copper beech by the Westerkerk, banded 1750 to 1800, and the register expects it will have to be felled.",
   "question_answer": "The oldest tree in Leeuwarden is a copper beech standing by the Westerkerk on the Sint Anthonystraat, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It is also the one tree here with a warning attached. The register records that its rooting ground was compacted in the 1990s, that the tree took a blow from which it never recovered, and that although the ground has since been improved its condition has not come back, so it will in time have to be felled. It is standing now. If you want to see the oldest tree in Leeuwarden, this is an argument for going this year rather than in ten.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged. It is a careful source: for several of these it records the tree's condition as well as its age, which is where the note about the Westerkerk beech comes from and why we have passed it on rather than quietly leaving it out. The Prinsentuin trees are dated indirectly, because the register reasons from the park's own history that the oldest trees in it must come from between 1830 and 1880 rather than from a record of any individual planting. Pins are as the register surveyed them; where one is marked approximate we know the park and not the trunk.",
@@ -326,6 +326,189 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      }
+    },
+    {
+      "id": "lee_010",
+      "name": "The Wilhelminaboom",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 128 years, planted in 1898",
+      "age_min": 126,
+      "age_max": 130,
+      "location": {
+        "address": "Raadhuisplein, in front of the old town hall, Leeuwarden",
+        "latitude": 53.202033,
+        "longitude": 5.795389,
+        "neighbourhood": "City centre"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1684252, 'Hollandse linde Wilhelminaboom', planted band 1890-1900)",
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, stop 4)"
+      ],
+      "access": "Free, on the public Raadhuisplein square in front of the old town hall (het Stadhuis); the tree stands inside an ornamental iron fence but the square itself is open at all times.",
+      "transport": "About 600m (roughly 8 minutes on foot) from Leeuwarden Centraal station; in the city centre.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Most commemorative trees get a plaque. This one got a fence carrying the state sword, the sceptre and the orb.\n\nThe lime went into the Raadhuisplein in 1898, the year Wilhelmina took the throne at eighteen, and the city set the architect Hendrik Kramer to work on the ironwork around its bed. Gates face each street that meets the square. Crowned letter W's and halberds stand along the rails, with orange twigs, blossom and apples worked into the metal between them. It is a great deal of blacksmithing for one lime, and it tells you precisely how a small provincial capital felt about its new queen.\n\nA tinted postcard from around 1910 shows the result a decade in: a young tree inside a fence that already looks the more permanent of the two. The fence has not changed since. The tree has had a century and a quarter to catch up.\n\nThe date holds up from two directions. The city's own monumental-green walking route puts the planting at 1898, and the national register separately lists a Hollandse linde at this coordinate with a planting band of 1890 to 1900.\n\nFifty years later Leeuwarden planted a second royal lime a few hundred metres north, for Wilhelmina's daughter Juliana. Both are still standing.",
+      "how_to_recognise": "You can recognise it by the ornamental iron fence around its bed, worked with crowned W's, halberds and the state sword, sceptre and orb. It stands alone on the Raadhuisplein, in front of the old town hall.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June and early July, when the lime flowers and the scent hangs over the square"
+      }
+    },
+    {
+      "id": "lee_011",
+      "name": "The Julianaboom",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 78 years, planted in 1948",
+      "age_min": 77,
+      "age_max": 79,
+      "location": {
+        "address": "Jacobijnerkerkhof, near the entrance to the Boshuizen Gasthuis, Leeuwarden",
+        "latitude": 53.204154,
+        "longitude": 5.796501,
+        "neighbourhood": "City centre"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1683830, 'Hollandse linde Julianaboom', planted band 1940-1950)",
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, stop 7 and top-10 entry IX)"
+      ],
+      "access": "Free, in the public square around the Jacobijnerkerk (Grote Kerk); the tree stands in a rectangular bed in the north-west corner of the churchyard, open at all times.",
+      "transport": "About 850m (roughly 11 minutes on foot) from Leeuwarden Centraal station; in the city centre.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Leeuwarden's official list of its ten most special trees includes one that people now living watched go into the ground.\n\nA photograph from 1948 shows alderman M.H. Geerts with a spade in front of the double gateway of the Boshuisen Gasthuis. The lime he is planting is still there, in the same rectangular bed in the north-west corner of the Jacobijnerkerkhof, and it carries the name of Princess Juliana. The country was three years out of the German occupation. The city planted a tree for the heir to the throne and had the alderman photographed doing it.\n\nAt 78 it is young for a register that mostly deals in centuries, and the national register does carry it: a Hollandse linde at this coordinate, planting band 1940 to 1950, which is about as close to a countersignature on the 1948 date as a register gets.\n\nBehind it stands the gateway of the Boshuisen Gasthuis, an almshouse founded in 1652 by Anna van Eysinga, which makes the lime by nearly three centuries the newest thing on the corner. The Jacobijnerkerk takes up the rest of the square.\n\nTwo limes, two queens, fifty years and a few hundred metres apart, and both still standing.",
+      "how_to_recognise": "You can recognise it by the rectangular bed it stands in on its own, in the north-west corner of the churchyard around the Jacobijnerkerk. It stands in front of the double gateway of the Boshuisen Gasthuis.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June and early July, when it flowers and the churchyard fills with the sound of bees"
+      }
+    },
+    {
+      "id": "lee_012",
+      "name": "The Horse Chestnut of Noorderweg",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 120 to 127 years",
+      "age_min": 116,
+      "age_max": 127,
+      "location": {
+        "address": "Noorderweg, beside the walking path near the Noorderbrug and the Stedelijk Gymnasium, Leeuwarden",
+        "latitude": 53.206098,
+        "longitude": 5.797598,
+        "neighbourhood": "Noordersingel / Vliet area"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1682934, 'Witte paardenkastanje Noorderbrug', planted band 1900-1910)",
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry III, dated 1899)"
+      ],
+      "access": "Free, beside the public walking path along the Noorderweg/Arendstuin between the Noorderbrug and the Stedelijk Gymnasium.",
+      "transport": "About 1.1km (roughly 13 minutes on foot) from Leeuwarden Centraal station.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This chestnut made the city's top ten on the strength of one branch.\n\nThe monumental-green walking route that the gemeente publishes with the Historisch Centrum names ten trees as Leeuwarden's most special, and the entry for this one turns almost entirely on a single zware gesteltak: a heavy, low main limb that leaves the trunk and reaches out over the footpath. You meet it on the far side of the Stedelijk Gymnasium, on the stretch of the Noorderweg between the Noorderbrug and the flower shop Blomke fan Romke.\n\nThe two sources do not quite agree on when it went in. The brochure says 1899. The national register, which carries it as a witte paardenkastanje by the Noorderbrug, gives a planting band of 1900 to 1910. The disagreement is a year or so wide and settles nothing important: this is a tree from the turn of the twentieth century, so somewhere between 116 and 127 years old.\n\nIt has been putting that limb out over the path for longer than anyone now walking under it has been alive, through two wars, the arrival of the cars and every set of schoolchildren the gymnasium has sent past.\n\nIn May the crown goes up in white candles, the low limb included, which is the week to look at the branch that got it listed.",
+      "how_to_recognise": "You can recognise it by the one heavy limb that leaves the trunk low down and reaches out over the footpath, well below the rest of the crown. It stands on the Noorderweg between the Noorderbrug and the Stedelijk Gymnasium.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candles stand up across the whole crown, low limb included"
+      }
+    },
+    {
+      "id": "lee_013",
+      "name": "The Oriental Plane of Stationsplein",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 116 to 126 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Stationsplein, Leeuwarden (in front of the railway station)",
+        "latitude": 53.196957,
+        "longitude": 5.792879,
+        "neighbourhood": "Stationsplein"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1682915, 'Oosterse plataan Stationsplein', planted band 1900-1910)",
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry V, dated circa 1900)"
+      ],
+      "access": "Free, on the public square directly in front of Leeuwarden railway station.",
+      "transport": "At Leeuwarden Centraal station, on the station square itself.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Step off the train at Leeuwarden and the first old tree you meet is the wrong plane.\n\nAlmost every plane on a Dutch square is a London plane, the hybrid bred for city air and planted by the thousand. This one is the parent species, an Oriental plane, which is rare this far north and which the national register carries under its Dutch name, oosterse plataan, at the Stationsplein.\n\nIt has held the open ground in front of the station since about 1900. Both sources that carry it agree: the city's own list of its ten most special trees dates it circa 1900, and the register gives a planting band of 1900 to 1910, so it is somewhere between 116 and 126 years old. The crown has spread the way planes on open squares do, low and wide over the paving, with the station front behind it.\n\nWhich means every arrival in this city by rail for more than a century has walked past it, most of them watching the clock rather than the tree. It stood there through the war and through the century of traffic that has crossed this square since.\n\nNobody has taped its girth. If you have a tape measure and a few minutes between trains, tell us.",
+      "how_to_recognise": "You can recognise it by the broad, low-spreading crown standing on its own out in the open paving. It stands on the Stationsplein directly in front of the railway station, with the station building behind it."
+    },
+    {
+      "id": "lee_014",
+      "name": "The Variegated Maple of Rengerspark",
+      "species": "Sycamore 'Leopoldii' (Acer pseudoplatanus 'Leopoldii')",
+      "age_estimate": "about 122 years, planted around 1904",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Rengerspark, just inside the entrance on Spanjaardslaan, Leeuwarden",
+        "latitude": 53.207609,
+        "longitude": 5.793305,
+        "neighbourhood": "Rengerspark"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1695808, 'Bontbladige esdoorn Rengerspark', planted band 1900-1910)",
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry VI, dated 1904)"
+      ],
+      "access": "Free, inside the public Rengerspark (a former private gift to the city, opened 1904, rijksmonument since 2001), just left of the entrance gate on Spanjaardslaan.",
+      "transport": "About 1.2km (roughly 15 minutes on foot) from Leeuwarden Centraal station.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The park gate carries 1904 in its ironwork, and so, near enough, does the tree standing just inside it.\n\nRengerspark was a private gift. In 1902 the former mayor W.J. van Welderen baron Rengers and his wife handed the ground to the city, Hendrik Copijn laid it out, and it opened in 1904 with more than fifty labelled tree species in it. A few steps inside the entrance on the Spanjaardslaan stands a sycamore of the cultivar 'Leopoldii', which the city's list of its ten most special trees names outright and dates to that opening year. The national register agrees within a decade: a bontbladige esdoorn on the south side of the park, planting band 1900 to 1910.\n\nSpring is when the cultivar earns its place. The new leaves come out mottled pink, cream and green rather than plain green, as though somebody had been careless with the paint, and they hold that colouring for weeks before darkening. Nothing about it is accidental. Somebody choosing the trees for a brand new park in 1904 wanted a maple that would do this at the gate, and 122 years later it still does.\n\nThe park became a rijksmonument in 2001, which put Copijn's layout under protection. The maple has stood through the whole of it, and through the two wars that came in between.",
+      "how_to_recognise": "You can recognise it by the leaves, mottled pink, cream and green rather than plain green. It stands just inside the park's Spanjaardslaan entrance gate, the one whose ironwork carries the year 1904.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "late April and May, when the new leaves open mottled pink and cream before they darken"
+      }
+    },
+    {
+      "id": "lee_015",
+      "name": "The Beech of Willemskade",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "about 160 years, planted around 1865",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Willemskade 27, along the garden boundary facing the street, Leeuwarden",
+        "latitude": 53.198158,
+        "longitude": 5.792555,
+        "neighbourhood": "Willemskade"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1682937, 'Bruine beuk stadsvilla Willemskade', planted band 1860-1870, designated by the municipality and entered in the national register in 1988)",
+        "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/ (IVN Leeuwarden e.o., 'Wandelen langs monumentale bomen in Leeuwarden', names two brown beeches at Willemskade 27, dated circa 1865)"
+      ],
+      "access": "Free to view from Willemskade street; the tree stands in the garden of a private 19th-century villa (a national heritage building, built 1874) along the boundary facing the street. Register marks it visitable=ja and visible=ja.",
+      "transport": "About 1km south of Leeuwarden Centraal station, along the Willemskade waterfront.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "For most of its life this beech was half of something else.\n\nTwo copper beeches went into the garden at Willemskade 27 around 1865, close enough together that over the decades they grew into and through one another. The IVN's walking guide to Leeuwarden's monumental trees calls them relatiebomen and still describes a pair. That guide has been overtaken. The national register's own history for the entry records that the southern tree was felled in 2026 after a fungus weakened its base, a problem first written up at an inspection in 2023. The northern beech is the one left standing, and it is the one on this page.\n\nIt was in the ground before the house was. The villa behind it, now a listed building, went up in 1874; the register gives the trees a planting band of 1860 to 1870 and the IVN says circa 1865, which puts this one at roughly 160 years old. The municipality designated it and entered it in the national register in 1988.\n\nYou look at it from the pavement. It stands along the garden boundary facing the Willemskade, on private ground with a public view, which is how the waterfront has seen it for a century and a half. In late April the new leaves open translucent red before they darken, and for a fortnight the whole crown holds the light.",
+      "how_to_recognise": "You can recognise it by its dark purple leaves, the single beech now left on the garden boundary at Willemskade 27, where a fused pair stood until 2026. It faces the street, in front of the 1874 villa.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "late April and May, when the new leaves open translucent red before they darken"
       }
     }
   ]
