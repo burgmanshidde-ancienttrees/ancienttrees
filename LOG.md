@@ -35,6 +35,54 @@ the now-published `data/research/oahu-verified.json`, ran `tree_index.py`.
 Visitors, last 7 days: 1213 visits, 1573 views, trending down toward today
 (24 visits so far, partial day).
 
+## 2026-09-09 (continuation) - Recognition lines for Barcelona (42 trees), verify passes dispatched on Warsaw and Maastricht
+
+Fixed rung 2's flagged BROKEN item first (see entry above: already stale,
+no action). Checked REVIEW.md's two 2026-09-08 WARNs: the app UI bug is
+tagged APP and needs a session with Xcode, left alone; the
+`superlatives.py` case-sensitivity regex bug was already fixed by an
+earlier pass (the `(?-i:...)` group is in place), confirmed clean with
+`python3 scripts/superlatives.py` (346 claims, no collisions).
+
+`prepare.py`'s shelf: 49 cities staged for verify, 0 ready-to-write leads,
+1 tree held correctly (famousfrance, no container per its own
+verify_notes). Rather than pick blind, checked `city_queue.py --next` and
+`data/city-queue.json` against today's earlier agent-costs entries: several
+top-ranked staged cities (Brisbane, Alicante, Sintra) were already
+exhausted by passes earlier today or in prior sessions, several others
+(Krakow, Nijmegen, Haarlem, Utrecht, Geneva, Groningen) had already passed
+their target tree count and needed nothing. Picked two below-target cities
+with real register supply and no recent exhaustion: **Warsaw** (rank 142,
+19/30, 1490 register+Wikidata rows) and **Maastricht** (rank 148, 15/20,
+143 rows from the Dutch national LRMB). Claimed both, dispatched verify
+passes in parallel.
+
+While those ran, used `recognise.py` to find the highest-impact
+independent work: Barcelona carries 312 ten-day impressions and had 42 of
+its 56 trees with no recognition line, the highest-value gap in the city
+list. Dispatched a write-stories pass for recognition lines only (pure
+restatement from already-published data, no new research), applied all 42
+with `recognise.py --apply`, and fixed one girth inconsistency the pass
+surfaced (bcn_019: story said 2.6m, data field said 2.7m; corrected the
+story to match).
+
+Warsaw's verify pass returned 7 trees (war_021-027, two small walkable
+park clusters plus three standalone named trees) and updated its leads
+file (2 newly blocked on private-land evidence, one still-young
+commemorative sapling correctly blocked, three new leads). Maastricht's
+returned 3 trees (maa_016-018) and blocked 4 more candidates on hard
+rule 10 (private gardens/villa grounds the register itself flags as not
+publicly visitable).
+
+Dispatched a combined write pass (BRIEF_WRITING.md's cross-city batching)
+for the 10 verified Warsaw+Maastricht trees; still running as this entry
+is written. Deleted the stale, fully-merged `singapore-verified.json`
+(routine shelf cleanup). Build (5140 pages) and qa.py (8048 pages) both
+clean throughout.
+
+Logged this window's three new passes to `data/agent-costs.json` (warsaw
+verify, maastricht verify, barcelona recognition write).
+
 ## 2026-09-09 - Night run 2026-09-09 02:02 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 33.0 minutes of its 120 minute window, 251 turns, 35 commands refused by the allowlist, ended clean (success). 13 commit(s), none of them a published tree. Claims left behind: singapore, which block the top of the queue until they expire.
