@@ -6357,6 +6357,24 @@
     "note": "16 recognition lines for published London trees, restatement only, no stories",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "cagliari",
+    "kind": "verify",
+    "tokens": 80000,
+    "trees": 3,
+    "note": "3 Orto Botanico specimens verified (tightens cluster, 0.7-1.2km from existing trees); near-city register candidates all already published or blocked; 4 leads/1 blocklist entry added",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "sorrento",
+    "kind": "verify",
+    "tokens": 45000,
+    "trees": 1,
+    "note": "Deepen pass: shipped 1 tree (Rovere of Vallone San Giuseppe) via MASAF+regional scheda+OSM access check; confirmed 4 candidate clusters already blocked/duplicate needed no rework; re-checked 1 stalled lead",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
