@@ -11,6 +11,71 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 - Photo pass: 63 photographs, and the seam that produced them
+
+A heavy photo session on Hidde's ask. It changed where we look, and that is
+the finding worth keeping.
+
+**The count.** 483 trees carried a photograph this morning and 546 do now, in
+one session. Cities with no photograph at all went from 383 to 355. Every
+approval names its photographer and carries a verified open licence.
+
+**The seam.** The standing photo aim points at cities with five or more trees
+and no photograph, and `photo_fetch.py --zero` fetched candidates for all 66
+of them. It produced 37 images and ONE usable photograph, because those
+cities' queues are the ones a sweep has already picked over: squares, canals
+and facades with foliage as edge framing.
+
+The yield was somewhere else entirely. Sorting every unjudged candidate on
+photo-less trees by how well the FILENAME names the tree gave 515 candidates
+across 182 trees in 126 cities, and those cities produced 62 of the 63. The
+best of it is the places we publish for a single famous tree: Baikushev's
+Pine, the Guillotin Oak, the Llangernyw Yew, Morioka's Ishiwari-zakura rising
+out of its granite boulder, Iwata's wisteria in full flower, the Platano di
+Curinga with a geotag one metre from our pin. Central European village limes
+were the densest single seam of all.
+
+**The working signal is the geotag, not the score.** Most approvals rest on
+one, and nine of one wave's eleven were inside 35 metres. A high filename
+score is not evidence the tree is in the frame: Krakow's palm scored 119 with
+a perfect geotag and the photograph is the palm house from outside, with no
+palm in it. The highest three scores of another wave were the nave, font and
+portal of a church named Our Lady of the Olive Tree.
+
+**What the passes found besides photographs.**
+
+- **Crete's Gortyn plane stood 646 m from where our own address says it is.**
+  A pass held a candidate because its geotag disagreed with our pin. The
+  photograph was right. Our address field, cretanbeaches.com and three
+  Commons photographs from one visit all place the tree at the back of the
+  fenced site near the Odeon; the coordinate sat outside the enclosure. Moved,
+  still approximate.
+- **Two live photographs credited nobody under CC BY-SA**, and a third was
+  approved that way this morning before being pulled. Warsaw's poplar is by
+  Panek and Bologna's plane by GennaroBologna, both names sitting on Commons
+  and lost from our own record. `check_a_by_licence_names_its_author()` in
+  preflight now fails the build on it.
+- **Higashiomi's two hananoki are alive**, which needed checking because their
+  Commons files show a trunk in a shelter and trees titled "successors".
+  Japanese Wikipedia says the 2010 collapse spared the tree and it flowered
+  the following spring. Recorded in verify_notes so it is not reopened.
+- **Palermo's yucca survives a doubt**: two independent sources call it Yucca
+  gigantea, and the dragon-tree file the sweep offered is a mismatch, not
+  evidence.
+
+**Two filters shipped, both from faults a pass reported twice or more.** One
+file cannot be four trees (`photo_fetch.py` now drops a candidate offered to
+several trees where the scores tie), and the same image under two titles is
+one decision (dedupe by bytes before the manifest).
+
+**FOR HIDDE, one thing worth knowing.** A photo-judge pass reported eight
+approvals whose tree ids do not exist in our data, and its verdicts file never
+reached disk. Nothing shipped: `photo_verdicts.py` refuses an id the queue
+does not hold, and I checked the ids before applying. That batch is being
+judged again from the images already downloaded. The lesson is the one this
+corpus already carries about handover notes: a pass's report is a claim to
+check, and the check has to be a script rather than a habit.
+
 ## 2026-09-08 - Night run 2026-09-08 23:44 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.3 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). Nothing reached data/cities.
