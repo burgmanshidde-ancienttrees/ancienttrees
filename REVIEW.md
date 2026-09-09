@@ -13,6 +13,69 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-09
+
+Reviewed commits since the last review (fad01a7f, 2026-09-08 ~06:10 UTC)
+through e73d9788 (~125 commits): a night-and-morning assembly-line stretch
+across many small claims (Oahu +7 across a verify+write pair, Cagliari +3,
+Sorrento +1, Warsaw +7, Maastricht +3, Dordrecht +3, Utrecht +3), a batch of
+recognition lines (Barcelona 42, Vienna 26, London 16, Arnhem 10), two new
+species pages (White Poplar, Japanese Maple, both 3+ trees with hand-written
+intros per Contract F), a large photo-vendoring commit (dc1ce46d, 78
+backlogged approvals copied to site/public/photos), a fix to
+`superlatives.py`'s `re.I` scope-matching bug flagged as WARN in yesterday's
+review (bfaa50f3, confirmed: 347 claims, no collisions today), a new
+build-time check that a BY/BY-SA photo names its photographer (4737c21c,
+caught and fixed two live credits reading only "via Wikimedia Commons"), and
+two real corrections worth calling out on their own: Utrecht's pin for the
+Geertebolwerk Pear was 750m wrong and has been fixed to its register
+coordinate (96911214), and seven of Utrecht's 34 trees turned out to be
+recorded as felled by the register's own inspection layer and were retired
+correctly, with leads kept, `REMOVED_TREE_SLUGS` updated, page copy (meta
+description, question_meta, FAQ) corrected to the new count, and the count
+re-corrected again three commits later when three more trees were added
+(ebad8429, 72959c1b; verified the live page's paid/free FAQ arithmetic,
+"three of the 30 ... the other 27", is internally consistent). Ran
+`python3 scripts/qa.py` (8070 pages, clean), `python3 scripts/health.py`
+(rung 2: **iOS app** failing on its newest scheduled run, already the
+session-start brief's own top item, not a new finding) and
+`python3 scripts/preflight.py` (564 cities, 0 problems; only pre-existing
+NOTEs, none touching a page changed in this window). Spot-checked Oahu's,
+Cagliari's, and Sorrento's new trees' `verified_sources` (real, reachable
+citations, not monumentaltrees.com), a sample of the new recognition lines
+against BRIEF_WRITING.md's shape (all restatement, traceable to the tree's
+own girth/height/story, no invented detail), and the built HTML for
+Utrecht, Cagliari (Italian), Oahu, Warsaw and Maastricht: every title,
+meta description and question_meta on the changed pages matches its city's
+current tree count.
+
+Read the six rotated app screenshots (own-tree.png, paywall.png,
+people.png, photo-viewer.png, place-pin.png, profile-edit.png): all clean
+against the corpus, and all previously traced and accepted by the
+2026-09-07 review (DemoPeople.swift's demo people, the "Plus is not open
+yet... we are building it" line, which is the sanctioned coming-soon
+exception TONE_OF_VOICE.md carves out of the builder-speak ban, not a
+violation of it).
+
+**NOTE — the app-screenshot rotation this review reads from is not
+actually rotating, and the cause is the same broken CI job rung 2 already
+names.** review.yml downloads screenshots from the newest GREEN ios.yml
+run (`.github/workflows/review.yml` line 96 on); today's set came from an
+`appsweep-ios18-*` artifact (the scheduled iOS-18-floor job), and its six
+picked screens are the exact same six, in the same order, that the
+2026-09-07 review already read and cleared. Since push-triggered ios.yml
+runs have been failing (session-start brief: "iOS app keeps failing ON ITS
+SCHEDULE"), the newest green run this workflow can find is stale, so the
+"every screen seen inside four nights" guarantee this file's own
+instructions describe is not holding: two reviews two days apart saw
+identically the same six screens rather than a fresh rotation. Nothing on
+the pages themselves is wrong; this is a coverage gap in the review
+process, not a product finding, and it self-heals the moment ios.yml goes
+green again. Worth knowing rather than acting on, since acting on it means
+fixing the iOS app, which is already rung-2 work.
+
+No Monday corpus-rot audit today (Wednesday UTC).
+
 ## 2026-09-08
 
 Reviewed commits since the last review (~230 commits in 24h): dominated by
