@@ -17,6 +17,7 @@ carrying, for each file: the tree, its name and species, the candidate's title,
 page url, licence, author, how far the photograph was taken from our pin, and
 the photo_light verdict. It judges nothing.
 """
+import hashlib
 import json
 import os
 import re
@@ -200,6 +201,7 @@ def main():
         cdir = os.path.join(out, slug(city))
         os.makedirs(cdir, exist_ok=True)
         manifest = []
+        seen_bytes = {}
         print(f"\n{city}: fetching {len(rows)}")
         for i, (score, tid, tree, c) in enumerate(rows, 1):
             url = c.get("thumb")
@@ -211,6 +213,16 @@ def main():
             except Exception as e:
                 print(f"  {tid}-{i}  FETCH FAILED {e}")
                 continue
+            # Commons files the same photograph under several titles, and the
+            # sweep collects each one, so a pass is handed the identical image
+            # twice and pays to judge it twice. Ferrara and Palermo each did
+            # this on 2026-09-09. The bytes settle it where the titles cannot.
+            digest = hashlib.md5(open(dest, "rb").read()).hexdigest()
+            if digest in seen_bytes:
+                os.unlink(dest)
+                print(f"  {tid}-{i}  same image as {seen_bytes[digest]}, skipped")
+                continue
+            seen_bytes[digest] = os.path.basename(dest)
             verdict = ""
             if LIGHT is not None:
                 try:
