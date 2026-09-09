@@ -6438,6 +6438,15 @@
     "note": "6 stories + 6 recognition lines, 5 best_time; ~24k/tree, inflated by fixed context on a 6-tree pass (rulebook expects 15-20); renamed lee_014 species to canonical Sycamore Leopoldii form on merge",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Leeuwarden",
+    "kind": "verify",
+    "tokens": 250171,
+    "trees": 3,
+    "note": "Second verify pass on the ~329 unmined register candidates, close-in Vosseparkje/Westerpark cluster; 2 PDFs hand-extracted (no pdftotext); stories and recognition lines written in-session (not a separate write pass, 3 trees is under the 15-20 batch size).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

@@ -11,6 +11,28 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Finished the second stranded Leeuwarden verify claim, +3 trees (15 -> 18)
+
+Two earlier attempts in this window stopped early with time unspent.
+Followed the harness's start order: pulled (nothing new), `passcheck.py
+--claims` showed one standing (Leeuwarden, verify, by night-run, 140 min
+left), `leads.py --ready` was empty (0 READY across the whole project),
+health.py's rung 2 showed only the already-diagnosed iOS CI failure
+(logged FOR HIDDE twice already, blocked on a workflow-file push a run
+cannot make), and no new submissions. So: finished the claim.
+
+Dispatched a verify agent on Leeuwarden's ~329 unmined register
+candidates, focused on the close-in Vosseparkje/Westerpark cluster. It
+found second sources (Historisch Centrum Leeuwarden and IVN walking-tour
+PDFs, hand-extracted since this environment has no pdftotext) for 3
+trees: a Caucasian wingnut, a grey poplar dated to 1909, and an oriental
+plane by the former Beursgebouw. Wrote the stories and recognition lines
+myself in-session rather than dispatching a separate write pass (3 trees
+is under the usual 15-20 batch size, and finishing the claim outweighed
+the batching saving). Fixed the city's meta_description and intro, both
+of which still said "fifteen" trees. Built, ran qa.py and preflight.py
+clean, released the claim. Full detail in CURATION.md.
+
 ## 2026-09-09 (continuation) - Second look at the iOS CI gate: the "test" job has its own false-negative, same push wall
 
 Re-checked the newest scheduled "iOS app" failure (run 34335112776, 2026-09-09

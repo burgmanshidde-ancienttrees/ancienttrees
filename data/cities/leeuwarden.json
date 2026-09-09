@@ -2,8 +2,8 @@
   "city": "Leeuwarden",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Five of these fifteen stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
-  "meta_description": "Fifteen remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
+  "intro": "Five of these eighteen stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
+  "meta_description": "Eighteen trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
   "question_meta": "Leeuwarden's oldest tree is a copper beech by the Westerkerk, banded 1750 to 1800, and the register expects it will have to be felled.",
   "question_answer": "The oldest tree in Leeuwarden is a copper beech standing by the Westerkerk on the Sint Anthonystraat, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It is also the one tree here with a warning attached. The register records that its rooting ground was compacted in the 1990s, that the tree took a blow from which it never recovered, and that although the ground has since been improved its condition has not come back, so it will in time have to be felled. It is standing now. If you want to see the oldest tree in Leeuwarden, this is an argument for going this year rather than in ten.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged. It is a careful source: for several of these it records the tree's condition as well as its age, which is where the note about the Westerkerk beech comes from and why we have passed it on rather than quietly leaving it out. The Prinsentuin trees are dated indirectly, because the register reasons from the park's own history that the oldest trees in it must come from between 1830 and 1880 rather than from a record of any individual planting. Pins are as the register surveyed them; where one is marked approximate we know the park and not the trunk.",
@@ -510,6 +510,81 @@
         "kind": "fresh leaves",
         "label": "late April and May, when the new leaves open translucent red before they darken"
       }
+    },
+    {
+      "id": "lee_016",
+      "name": "The Caucasian Wingnut of Vosseparkje",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "girth_cm": 130,
+      "location": {
+        "address": "Westerpark / Vosseparkje, west side, Leeuwarden",
+        "latitude": 53.201185,
+        "longitude": 5.78439,
+        "neighbourhood": "Vosseparkwijk"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1688399)",
+        "https://historischcentrumleeuwarden.nl/images/pdf/wandelroute_vosseparkwijk.pdf"
+      ],
+      "access": "Free, public park (Westerpark/Vosseparkje), open daily",
+      "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "An ice storm in March 1987 damaged this wingnut badly enough that the scar is still visible behind an old branch, and decades on it is one of two enormous trees flanking the path where Vosseparkje opens onto Molenstraat.\n\nThe Caucasian wingnut is native to forests around the Caspian Sea, thousands of kilometres from Friesland. Leeuwarden's own specimen has grown a trunk 130 centimetres round, a figure the national tree register does not even record: it comes from a walking-tour pamphlet published by the city's own historical centre, which found the tree standing beside a second, gold-leaved companion nobody has identified yet.\n\nThe park itself dates to 1872, laid out by garden architect Gerrit Vlaskamp around a drinking-water reservoir the city needed more than it needed a park, and the wingnut went in a generation later, sometime between 1900 and 1910. It has outlived the reservoir's original purpose, the ice storm, and watched the technical school built beside the park in 1936 grow old itself.\n\nTwo sources place it slightly differently, one at the Molenstraat path junction and one on the park's west side, close enough that this reads as one tree rather than two, but worth a second look on the ground.",
+      "how_to_recognise": "You can recognise it by the trunk, 130 centimetres round, and by the gold-leaved companion tree growing right beside it. It stands where the park path meets Molenstraat, near the old MTS school building."
+    },
+    {
+      "id": "lee_017",
+      "name": "The Grey Poplar of Vosseparkje",
+      "species": "Grey Poplar (Populus x canescens)",
+      "age_estimate": "117 years (planted 1909)",
+      "age_min": 116,
+      "age_max": 118,
+      "girth_cm": null,
+      "location": {
+        "address": "Westerpark / Vosseparkje, east side of the pond, Leeuwarden",
+        "latitude": 53.201525,
+        "longitude": 5.786394,
+        "neighbourhood": "Vosseparkwijk"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1688398)",
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+      ],
+      "access": "Free, public park (Westerpark/Vosseparkje), open daily",
+      "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A Historisch Centrum Leeuwarden walking brochure and the national tree register agree down to the year: this grey poplar on the east side of Vosseparkje's pond went into the ground in 1909, one of the exotic and unusual trees the brochure singles out on a route otherwise lined with white and red horse chestnuts.\n\nIt survived the storm of 1970 that flattened trees across the Netherlands and remains, in the register's own words, healthy and structurally sound more than a century later. The species is a hybrid of white poplar and aspen, common enough as roadside planting but rarely old enough to earn a place in a national monumental-trees register.\n\nIt stands on the pond's east bank in Westerpark, known locally as Vosseparkje, alongside a leaning white acacia the same brochure records as propped up nearby, and, on the park's far side, a Caucasian wingnut with a trunk more than a metre round. Together they form the park's own cluster of registered trees, a short walk from the Prinsentuin and Princessehof gardens where most of Leeuwarden's other old trees stand.",
+      "how_to_recognise": "You can recognise it by where it stands, on the east bank of Vosseparkje's pond, among white and red horse chestnuts, paper birches and a blue Atlas cedar the brochure lists nearby."
+    },
+    {
+      "id": "lee_018",
+      "name": "The Oriental Plane of the Beursgebouw",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "girth_cm": null,
+      "location": {
+        "address": "Wirdumerdijk 34, in front of the former Beursgebouw, opposite the Campus Fryslan (Rijksuniversiteit Groningen) building, Leeuwarden",
+        "latitude": 53.198865,
+        "longitude": 5.796942,
+        "neighbourhood": "City centre"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1682932)",
+        "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/"
+      ],
+      "access": "Free, public square (Wirdumerdijk, in front of the former Beursgebouw), open at all times",
+      "transport": "Central Leeuwarden, short walk from the Waagplein/Nieuwestad shopping area",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The plane tree in front of Leeuwarden's former stock exchange spent years hemmed in by brick paving before the city dug it back out in 2005 and built a proper rooting structure around the trunk. Inspectors called its condition merely adequate for years afterward; by 2022 they wrote that it was clearly thriving.\n\nThe Beursgebouw behind it went up in 1880 for the city's grain and commodity traders and now houses part of the University of Groningen's Campus Fryslan. The tree came a generation later, planted sometime between 1900 and 1910 on what was then a green strip beside the building. A local nature guide's walking route singles it out for the fountain beside it and for the spiky seed balls the species drops each year.\n\nIt is not Leeuwarden's only oriental plane. A second one, planted around the same years, stands 800 metres away in front of the railway station. This one is the one with the fountain and the old trading floor at its back, on Wirdumerdijk, in the middle of the old town rather than at its edge.",
+      "how_to_recognise": "You can recognise it by the fountain beside it, in front of the former Beursgebouw on Wirdumerdijk. Leeuwarden's other oriental plane stands 800 metres away at the railway station, not here."
     }
   ]
 }

@@ -11,6 +11,28 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Leeuwarden +3 (15 -> 18), finished the second verify claim
+
+Two earlier attempts in this window had stopped early with time still on
+the clock; `passcheck.py --claims` showed a standing Leeuwarden verify
+claim from the second of them, with 329 unmined register candidates and
+an empty `data/research/leeuwarden-verified.json`. Dispatched a verify
+pass focused on the close-in Vosseparkje/Westerpark cluster (~1km from
+the Prinsentuin cluster already published) plus one central single-tree
+candidate. It found second independent sources, mostly Historisch
+Centrum Leeuwarden and IVN walking-tour PDFs, for 3 trees the earlier
+register sweep had filed as single-source leads: a Caucasian wingnut
+(130cm girth, flagged, the two sources place its immediate setting
+slightly differently), a grey poplar dated to 1909 by name, and an
+oriental plane by the former Beursgebouw, a different tree from the
+already-published Stationsplein plane 800m away. Wrote all 3 stories and
+recognition lines, merged, fixed the city's meta_description and intro
+(both said "fifteen", now "eighteen"). 3 more Vosseparkje leads (two
+feather elms, a Canadian poplar, a Caucasian/Persian oak) still lack a
+second source; an unidentified golden-leaved companion tree beside the
+wingnut and an unpinned leaning acacia (brochure stop VIII) are new
+leads. Released the claim. qa.py and preflight.py both clean.
+
 ## 2026-09-09 - Leeuwarden +6 (9 -> 15), from a stranded verify claim
 
 Wrote up 6 trees a prior attempt's verify pass had already fully sourced:
