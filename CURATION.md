@@ -11,6 +11,42 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 - Photo pass over the named candidates, and three trees called Kabouterboom
+
+A sweep and a viewing pass over the candidates whose Commons FILENAME names
+the tree, rather than over the zero-photo cities, which is where the yield
+turned out to be. Recorded so the next pass starts from the findings rather
+than the pile.
+
+**The Hague's Kabouterboom is not the famous one.** The two RCE photographs
+the sweep offered for hag_005 are captioned "de Kabouterboom, een tamme
+kastanje en de dikste boom van Nederland", and the interpretation sign in
+frame reads Geldersch Landschap en Kasteelen: that is the sweet chestnut
+near Rozendaal in Gelderland, not our Pedunculate Oak in Haagse Hout. A
+third candidate was a Kabouterboom in Nijmegen. Three trees carry the name,
+ours is the least known of them, and it is a candidate for a recognition
+line for exactly that reason (rung 7).
+
+**Valencia vlc_014 and Milan mil_018 are held, not rejected.** Both are good
+photographs whose subject cannot be tied to our trunk: the Glorieta holds
+three catalogued Ficus macrophylla and neither file says which, and Milan's
+plane sits 70 m from the pin with three other named planes within 300 m.
+Either becomes approvable the moment anything names the trunk.
+
+**One file offered to several trees, for the third time.** A Miramare
+castle photograph reached tri_001, tri_002 and tri_003; an iNaturalist
+observation reached both Ottawa lindens; a Genoa villa file was downloaded
+four times for four trees and matched the species of none. That is now a
+filter in `photo_fetch.py` rather than a note.
+
+**What the loose matching drags in, so nobody re-judges it:** a church named
+after an olive tree (Guimaraes, and it scored highest of the whole batch),
+butterflies whose French names contain oak and birch (Brussels), a family
+grave for "Ciechomski's Pear" (Warsaw), a Suffolk cottage named Sideways
+(Setubal), and the right species on the wrong continent again and again:
+Valencia's Kashmir cypresses are in San Diego, Oxford's mulberry is in
+Tallinn, Paris's Anne Frank chestnut pulled saplings from three countries.
+
 ## 2026-09-08 (continuation) - Photo hunt exhausted for 24 trees: Alkmaar, Apeldoorn, Assen, Bangkok, Deventer, Dordrecht, Emmen, Haarlem, Maastricht
 
 `photo_fetch.py` plus a viewing pass looked at every Commons candidate the
