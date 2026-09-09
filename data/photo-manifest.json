@@ -127,6 +127,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c8/Ginkgo_Tree_Arita_01.jpg": {
+   "base": "art_001-the-great-ginkgo-of-arita",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/0/03/Imposant_Chessnuttrees_%22Adam_and_Eve%22_near_Castle_Zypendaal_-_panoramio.jpg": {
    "base": "arn_001-de-poortwachters",
    "widths": [
@@ -187,6 +193,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/0/01/George_V_Coronation_Tree%2C_Takapuna.jpg": {
+   "base": "akl_003-george-v-coronation-tree",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/8/8f/Baarn_Kasteel_Groeneveld_tulpenboom_94.JPG": {
    "base": "brn_003-the-tulip-tree-grove-at-kasteel-groeneveld",
    "widths": [
@@ -220,6 +232,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/2/24/Bamberg_Rothof_Linde-20170517-RM-153414.jpg": {
    "base": "bam_004-the-linden-of-the-old-rothof",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/de/Baikushev%27s_pine_kz01.jpg": {
+   "base": "bkp_001-baikushev-s-pine-baikushevata-mura",
    "widths": [
     500
    ]
@@ -296,6 +314,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arbre_de_l%27amor_de_la_pla%C3%A7a_Joanic_-_arbre_d%27inter%C3%A8s_local_-_20240806_151140.jpg": {
+   "base": "bcn_046-the-judas-tree-of-placa-joanic",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/e/e9/BargischowKircheFranzosenlinde.jpg": {
    "base": "brc_001-franzosenlinde-bargischow",
    "widths": [
@@ -310,6 +334,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/6/67/London_plane_at_Abbey_Green%2C_Bath_2025-07-23.jpg": {
    "base": "bat_002-the-plane-tree-of-abbey-green",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/91/London_Plane_trees_at_The_Circus%2C_Bath_2025-07-24.jpg": {
+   "base": "bat_003-the-plane-trees-of-the-circus",
    "widths": [
     500
    ]
@@ -422,6 +452,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bojnice_Linden_tree_of_King_Matthias.jpg": {
+   "base": "boj_001-the-linden-of-king-matthias",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/3/36/Montagnola_%2C.jpg": {
    "base": "bol_001-the-monumental-planes-of-the-montagnola",
    "widths": [
@@ -464,8 +500,26 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ea/2018_Apple_tree_from_Bo%C5%A1%C3%A1ca_SK.jpg": {
+   "base": "bsa_001-the-apple-tree-of-zabudi-ov",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2f/2016_Pear_from_Bo%C5%A1%C3%A1ca_SK.jpg": {
+   "base": "bsa_002-the-pink-pear-of-zabudi-ov",
+   "widths": [
+    500
+   ]
+  },
   "https://inaturalist-open-data.s3.amazonaws.com/photos/644130068/large.jpg": {
    "base": "bos_001-the-shaw-memorial-elms",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3b/Newton%27s_Apple_Tree%2C_MIT.jpg": {
+   "base": "bos_011-newton-s-apple-tree-at-mit",
    "widths": [
     500
    ]
@@ -494,6 +548,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/0/06/Mangrove_Tree_Roots_-_panoramio.jpg": {
+   "base": "bne_006-the-eagle-street-fig-trees",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/a/ac/BCBG_Ficus_Religiosa_01.JPG": {
    "base": "bne_008-the-bodhi-tree",
    "widths": [
@@ -506,8 +566,20 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5a/Strawberries_and_Cream_Tree.jpg": {
+   "base": "bri_006-the-strawberries-and-cream-tree",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/f/f5/Platan_javorolist%C3%BD_na_Petrov%C4%9B%2C_Brno.JPG": {
    "base": "brq_004-the-plane-tree-below-petrov",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brno%2C_st%C5%99ed%2C_pam%C3%A1tn%C3%BD_platan_javorolist%C3%BD_%28Platanus_hispanica%29.JPG": {
+   "base": "brq_007-professor-chudoba-s-plane",
    "widths": [
     500
    ]
@@ -550,6 +622,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/3/31/Cedro_de_S%C3%A3o_Jos%C3%A9_-_Considerado_o_cipreste-do-Bu%C3%A7aco_mais_antigo_da_Mata.jpg": {
    "base": "bsc_006-the-cedro-de-sao-jose",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/de/A_tree_near_Necropolis_%28Recoleta%29.jpg": {
+   "base": "bai_001-the-gomero-de-la-recoleta",
    "widths": [
     500
    ]
@@ -602,6 +680,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/8/84/Lone_Pine_at_the_AWM.jpg": {
+   "base": "can_001-the-lone-pine-australian-war-memorial",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/e/e3/Pino_del_Queensland_monumentale.jpg": {
    "base": "cat_002-the-larger-bunya-pine-of-villa-bellini",
    "widths": [
@@ -638,8 +722,20 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/8/87/Cedrus_libani_ssp._atlantica_%27Glauca_Pendula%27_02_by_Line1.jpg": {
+   "base": "cma_001-the-weeping-cedar-of-the-vall-e-aux-loups-c-dre-",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/5/59/2023-09-13_Takeshi_Kaneshiro_Tree_01.jpg": {
    "base": "csg_001-the-takeshi-kaneshiro-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d5/1000_-_j%C3%A4hrige_Linde_in_Collm.JPG": {
+   "base": "col_001-the-collmer-linde",
    "widths": [
     500
    ]
@@ -658,6 +754,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/4/47/Villa_Geno_cedro_dell%27_Himalaya.jpg": {
    "base": "com_002-the-himalayan-cedar-of-villa-geno",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/ba/Arbre_remarquable_de_mille_ans_%2C_le_ch%C3%AAne_%C3%A0_Guillotin_%28mars_2011%29_-_panoramio.jpg": {
+   "base": "gth_001-the-guillotin-oak-ch-ne-guillotin",
    "widths": [
     500
    ]
@@ -710,14 +812,62 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a7/Krassi_huge_Platanus_13_02_18_069000.jpeg": {
+   "base": "crt_003-the-plane-tree-of-krasi",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/36/2021_Curinga_plane_IT.jpg": {
+   "base": "cur_001-platano-di-curinga",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/6/6c/Weichselboom_%283000295248%29.jpg": {
    "base": "dbo_001-the-weichselboom-of-parklaan",
    "widths": [
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Lindeboom_op_de_terp_-_panoramio.jpg": {
+   "base": "dbo_012-the-annenborch-lime",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/44/00_1996_Boab_Prison_Tree_-_Derby%2C_Westaustralien.jpg": {
+   "base": "der_001-boab-prison-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/16/Oldest_oak_tree_in_the_Netherlands.jpg": {
+   "base": "drn_001-the-thousand-year-oak-of-doornenburg",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4b/Dordrecht_-_Dordrechts_Museum.jpg": {
+   "base": "dor_015-the-plane-trees-of-the-dordrechts-museum-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/33/Naturdenkmal_Zerr-Eiche_%28Quercus_Cerris%29_Trinitatisplatz_1%2C_Dresden_im_Fr%C3%BChling.jpg": {
+   "base": "dre_001-the-zerr-eiche-of-trinitatisplatz",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/c/c8/Kaditzer_Linde_Hauptstamm.JPG": {
    "base": "dre_005-the-kaditzer-linde",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4d/2021_Ancient_Oak_from_Drnava_SK.jpg": {
+   "base": "drz_001-the-oak-of-drnava",
    "widths": [
     500
    ]
@@ -782,6 +932,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ormiston_Yew_panorama.jpg": {
+   "base": "edi_016-the-great-yew-of-ormiston",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/f/fd/Enschede_Ledeboerpark_Giant_Sequioa_20050628.jpg": {
    "base": "ens_001-the-wellingtonia-of-the-ledeboerpark",
    "widths": [
@@ -794,8 +950,32 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/5/51/2015_Olive_Tree_from_Canneto_Sabino_IT.jpg": {
+   "base": "far_001-l-olivo-di-canneto-sabino",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bagolaro%2C_parco_Massari_%28Ferrara%29_0.jpg": {
    "base": "fer_002-the-bagolaro-of-parco-massari",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ef/Alberi_di_Ginkgo_biloba_nel_Parco_Massari.JPG": {
+   "base": "fer_003-the-ginkgo-of-parco-massari",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29.jpg": {
+   "base": "fer_004-the-ginkgo-of-the-biblioteca-ariostea",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/06/Cazneaux_Tree.JPG": {
+   "base": "flr_001-the-cazneaux-tree",
    "widths": [
     500
    ]
@@ -867,6 +1047,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/1/16/Shoji%27s_Big_Cedar_C.jpg": {
+   "base": "fjk_001-shoji-no-osugi",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/1/1c/Jotakuji_no_Ohatsuki_Icho_July_2019_A.jpg": {
    "base": "fjk_002-the-ohatsuki-ginkgo-of-jotakuji-temple",
    "widths": [
@@ -911,6 +1097,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/f/fe/Kushida_Shrine_Meoto-ginan_the_preserved_trees_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231207.jpg": {
    "base": "fuk_010-the-married-ginkgos-of-kushida",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7a/%22Seichozakura%22_Cherry_Tree_in_front_of_Nishtetsu-Kashii_Station.jpg": {
+   "base": "fuk_014-seicho-zakura",
    "widths": [
     500
    ]
@@ -975,14 +1167,50 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/d/df/Ch%C3%AAne_p%C3%A9doncul%C3%A9_-_Jardin_Botanique_-_Gen%C3%A8ve_-_panoramio_%281%29.jpg": {
+   "base": "gen_007-the-venerable-oak-of-the-botanical-garden",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/3/3a/Maestoso_e_monumentale_albero_di_Canfora_nel_giardino_del_Parco.jpg": {
    "base": "gnv_009-the-camphor-tree-of-villa-durazzo-pallavicini",
    "widths": [
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bunya_Pine_-_panoramio.jpg": {
+   "base": "gnv_011-the-bunya-pine-of-villa-groppallo",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/5/5b/Gent_Muinkpark_Japanse_notenboom_-_180834_-_onroerenderfgoed.jpg": {
    "base": "gnt_002-the-ginkgo-of-muinkpark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/92/2019_The_bird-tree_FR.jpg": {
+   "base": "arb_001-the-arburacellu-the-bird-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f4/2012_Pistacia_in_Ghisonaccia_%28Haute-Corse%29_FR.jpg": {
+   "base": "arb_002-u-listincu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a0/Gie%C3%9Fen-R%C3%B6dgen%2C_Alte_Eiche_01.jpg": {
+   "base": "gie_002-alte-eiche",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/19/Gie%C3%9Fen-L%C3%BCtzellinden%2C_Lindengruppe_an_der_Lindbachquelle_02.jpg": {
+   "base": "gie_004-lindengruppe-an-der-lindbachquelle",
    "widths": [
     500
    ]
@@ -995,6 +1223,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/5/57/Scotlands_Tree_of_the_Year_2015_%28geograph_6057313%29.jpg": {
    "base": "gla_002-the-suffragette-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1b/A_Glastonbury_Thorn%2C_St_John_the_Baptist%2C_Glastonbury%2C_Somerset.jpg": {
+   "base": "gls_001-the-glastonbury-thorn",
    "widths": [
     500
    ]
@@ -1041,6 +1275,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Groton_Winthrop_Mulberry_Tree_-_geograph.org.uk_-_185502.jpg": {
+   "base": "wtm_001-the-groton-winthrop-mulberry",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/f/f1/Colonel_Armstrong_tree_%2853178526444%29.jpg": {
    "base": "gue_001-colonel-armstrong",
    "widths": [
@@ -1071,6 +1311,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d5/2016_Millennial_Lime_Tree_of_Heede_DE.jpg": {
+   "base": "hed_001-the-riesenlinde-zu-heede-giant-lime-of-heede",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/5/51/Old_plane_tree_Terworm_-_panoramio.jpg": {
    "base": "hee_006-the-plane-of-terworm",
    "widths": [
@@ -1095,8 +1341,26 @@
     500
    ]
   },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/211047885/medium.jpg": {
+   "base": "hil_006-the-cedar-of-pinetum-blijdenstein",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/f/f4/A-bombed_tree_%28eucalyptus%2C_N07a7-01%29_No.1.jpg": {
    "base": "hir_004-the-eucalyptus-of-hiroshima-castle",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e5/A-bombed_tree_%28ginkgo%2C_N11a19-01%29_No.1.jpg": {
+   "base": "hir_006-the-ginkgo-of-hosenbo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/91/A-bombed_tree_%28ginkgo%2C_N21a53-01%29_No.1.jpg": {
+   "base": "hir_008-the-ginkgo-growing-through-the-gate-at-anrakuji",
    "widths": [
     500
    ]
@@ -1109,6 +1373,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kam_Tin_Tree_House.jpg": {
    "base": "hkg_003-the-kam-tin-tree-house",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/93/Pam%C3%A1tn%C3%BD_strom_L%C3%ADpa_v_Lipce_%282%29.jpg": {
+   "base": "hbr_001-the-linden-of-lipka",
    "widths": [
     500
    ]
@@ -1143,6 +1413,18 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f0/Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.2.jpg": {
+   "base": "iwt_001-yuya-no-naga-fuji-the-long-wisteria-of-yuya",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/20/Kitahama_no_Okyayanoki_Torreya_trunk_and_hanging_branches_A.jpg": {
+   "base": "iwt_002-kitahama-no-okayanoki-the-great-kaya-of-kitahama",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kongeegen2.jpg": {
    "base": "jae_001-kongeegen-the-king-oak",
    "widths": [
@@ -1163,6 +1445,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/e0/Kam%C5%8D_no_Kusu_01.jpg": {
    "base": "kag_010-the-great-camphor-of-kamo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/56/%E5%94%90%E5%B4%8E%E6%9D%BE_Karasaki_Pine_-_panoramio_%281%29.jpg": {
+   "base": "kan_003-the-karasaki-pine",
    "widths": [
     500
    ]
@@ -1191,6 +1479,24 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c1/Kawako_camphor_tree.jpg": {
+   "base": "kwg_001-kawago-no-okusu-the-great-camphor-of-kawago",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tsukazaki_no_Kusu%2C_zenkei-2.jpg": {
+   "base": "kmt_001-tsukazaki-no-kusu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/K%C3%B6nigslutter-am-Elm_Kaiser-Lothar-Linde_Mai-2018_DSC_0914.JPG": {
+   "base": "klu_001-the-kaiser-lothar-linde",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/3/3f/D%C4%85b_Jagiello%C5%84ski_OB10.jpg": {
    "base": "kra_001-the-jagiellonian-oak",
    "widths": [
@@ -1205,6 +1511,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/5/52/Krak%C3%B3w_ul._Kopernika_27_Pomnik_przyrody_Dere%C5%84_jadalny_Cornus_mas_1.jpg": {
    "base": "kra_004-the-sniadecki-dogwoods",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/14/Platanus_acerifolia%2C_Strzelecki_Garden%2C_16_Lubicz_street%2C_Krak%C3%B3w%2C_Poland.jpg": {
+   "base": "kra_030-the-strzelecki-garden-plane",
    "widths": [
     500
    ]
@@ -1323,6 +1635,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/1/17/Arbre_de_Diane%2C_Les_Clayes-sous-Bois%2C_Yvelines_14.jpg": {
+   "base": "cly_001-diane-de-poitiers-tree",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/8/8f/2014-09-07_14.35.18-Gros_ch%C3%AAne_de_Liernu.jpg": {
    "base": "lie_001-the-gros-chene-of-liernu",
    "widths": [
@@ -1331,6 +1649,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/6/63/Olivo_patrimonial_de_San_Isidro_19.jpg": {
    "base": "lim_002-the-olive-of-san-martin-de-porres",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7c/2012_Lime_Tree_in_Lipany_SK.jpg": {
+   "base": "lip_001-the-linden-of-lipany",
    "widths": [
     500
    ]
@@ -1395,6 +1719,18 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2c/2020_The_Allerton_Oak_UKE.jpg": {
+   "base": "lvp_001-the-allerton-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b5/Llangernyw_yew.jpg": {
+   "base": "lgy_001-the-llangernyw-yew",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/2/28/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg": {
    "base": "lon_001-the-totteridge-yew",
    "widths": [
@@ -1455,6 +1791,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/9/97/Ravenscourt_Park_Tree_of_Heaven_%282%29.jpg": {
+   "base": "lon_023-the-ravenscourt-park-tree-of-heaven",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/9/9c/LAHCM_19_-_Moreton_Bay_Fig_Tree_%28Los_Angeles%2C_California%29.jpg": {
    "base": "lax_003-the-moreton-bay-fig-at-st-johns-presbyterian-chu",
    "widths": [
@@ -1511,6 +1853,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jardin_des_Chartreux_1.JPG": {
    "base": "lyo_009-the-garden-trees-of-jardin-des-chartreux",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/70/2021_Apple_tree_near_Lidmans_CZ.jpg": {
+   "base": "lid_001-the-apple-tree-at-u-lidmanu-jablon-u-lidmanu",
    "widths": [
     500
    ]
@@ -1581,6 +1929,24 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/3/32/Yokomuro_no_O-Kaya_A.jpg": {
+   "base": "mae_001-the-great-kaya-of-yokomuro",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/41/Kezoji_Osmanthus_tree._A.jpg": {
+   "base": "mae_002-the-kinmokusei-of-kezoji",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ae/Chene_de_Nerthe-2.jpg": {
+   "base": "mgs_001-the-oak-of-nerthe-ch-ne-de-nerthe",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/6/60/Plaza_del_Olivo_Centenario.JPG": {
    "base": "mlg_001-the-transplanted-olive-of-la-concepcion",
    "widths": [
@@ -1619,6 +1985,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/7/73/Parque_Espa%C3%B1a_-_Ciudad_de_M%C3%A9xico_-_14_-_Ahuehuete_inaugural.jpg": {
    "base": "mex_005-ahuehuete-de-parque-espana",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Ahuehuete_Tree.jpg": {
+   "base": "mex_008-ahuehuete-de-san-diego-churubusco",
    "widths": [
     500
    ]
@@ -1677,6 +2049,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/3/37/Mitsue-no-Okeyaki_Zelkova_serrata_A.JPG": {
+   "base": "mna_002-the-great-zelkova-of-mitsue",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/5/55/Ginkgo_Tree_in_Sarukawa_2008.jpg": {
    "base": "myz_001-the-sarukawa-ginkgo",
    "widths": [
@@ -1685,6 +2063,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/6/68/Modena_-_Leccio_-_2023-09-14_18-59-11_001.jpeg": {
    "base": "mod_001-the-holm-oak-of-the-cortile-del-leccio",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/20/Ishiwari-zakura_%28Rock-splitting_cherry_tree%29_-_Morioka%2C_Iwate_-_DSC04024.jpg": {
+   "base": "mor_001-ishiwari-zakura-the-rock-splitting-cherry",
    "widths": [
     500
    ]
@@ -1769,6 +2153,24 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/6/61/Naturdenkmal_Winterlinde_Schlossrondell_M%C3%BCnchen.jpg": {
    "base": "muc_034-the-lime-of-the-porcelain-manufactory",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b3/Naturdenkmal_Hainbuche_Carpinus_betulus_Wilrampark_Muenchen-1.jpg": {
+   "base": "muc_041-the-hornbeam-of-wilrampark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/Suzakura-jinja_Jindaizakura.jpg": {
+   "base": "ngn_001-the-jindai-zakura-of-suzakura-shrine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nago_Banyan_tree.jpg": {
+   "base": "nag_001-nago-no-hinpun-gajumaru",
    "widths": [
     500
    ]
@@ -1899,8 +2301,26 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ae/Kohata%27s_large_cedar_and_Kado_Shrine_building._B.jpg": {
+   "base": "nhm_001-kohata-no-o-sugi-kohata-s-great-cedar",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Sugisawa_large_cedar_tree._A.jpg": {
+   "base": "nhm_002-sugisawa-no-o-sugi-sugisawa-s-great-cedar",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/0/05/Kabouterboom_in_Beek.jpg": {
    "base": "nij_009-the-kabouterboom",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/51/Shinmeisha_no_Osii_tree_of_Castanopsis_sieboldii_A.jpg": {
+   "base": "nis_001-shinmeisha-no-oshii",
    "widths": [
     500
    ]
@@ -1917,6 +2337,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/4/48/Ginkgo_Trees_Oguni_Kumamoto01.jpg": {
+   "base": "ogn_001-shimojo-no-oichou-the-great-ginkgo-of-shimojo",
+   "widths": [
+    500
+   ]
+  },
   "https://inaturalist-open-data.s3.amazonaws.com/photos/292407471/large.jpg": {
    "base": "okc_001-the-survivor-tree",
    "widths": [
@@ -1925,6 +2351,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/6/66/The_Kalaloch_Cedar_-_Flickr_-_rachel_thecat.jpg": {
    "base": "oly_001-the-kalaloch-redcedar",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1b/Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_near_Oyamazumi_Shrine.jpg": {
+   "base": "omi_001-ikiki-no-gomon-the-living-gate",
    "widths": [
     500
    ]
@@ -2007,6 +2439,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1d/Albero_Giardino_Inglese_Palermo.jpg": {
+   "base": "pal_015-the-fig-of-the-giardino-inglese",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/3/31/Olivenbaum_pla%C3%A7a_de_Cort_Palma_2019-10-30.jpg": {
    "base": "plm_001-s-olivera-de-cort",
    "widths": [
@@ -2073,8 +2511,20 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3b/Gija_Jumula.jpg": {
+   "base": "per_001-gija-jumulu",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/5/50/Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg": {
    "base": "per_002-the-moreton-bay-fig-tree-royal-perth-hospital",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b6/Proclamation_tree.jpg": {
+   "base": "per_004-the-proclamation-tree",
    "widths": [
     500
    ]
@@ -2260,6 +2710,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/8/82/Dub_letn%C3%AD_v_%C5%98%C3%A1snovce-I-05-2021-praha.jpg": {
    "base": "prg_016-the-old-town-s-only-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6c/Platan_javorolist%C3%BD_u_klimentsk%C3%A9ho_kostela_%281%29.JPG": {
+   "base": "prg_017-the-plane-of-nove-mlyny",
    "widths": [
     500
    ]
@@ -2488,6 +2944,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/a/aa/Prins_Eugens_ek_h%C3%B6st.jpg": {
    "base": "sto_004-prince-eugen-s-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/629757452/medium.jpg": {
+   "base": "stg_001-the-ginkgos-of-place-de-la-r-publique",
    "widths": [
     500
    ]
@@ -2806,6 +3268,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/f/f2/Stadtpark_Japanischer_Schnurbaum.jpg": {
    "base": "vie_016-the-pagoda-tree-of-the-stadtpark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b2/Wien-Alsergrund_-_Naturdenkmal_762_-_Judasbaum_im_Alten_AKH_-_1.jpg": {
+   "base": "vie_017-the-judas-tree-of-the-altes-akh",
    "widths": [
     500
    ]

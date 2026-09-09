@@ -2622,15 +2622,15 @@
   "por_002": {
    "city": "Porto",
    "name": "The Magnolia of Casa Tait",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "por_003": {
    "city": "Porto",
    "name": "The Metrosidero of the Library",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "por_004": {
@@ -2643,15 +2643,15 @@
   "por_007": {
    "city": "Porto",
    "name": "The Texas Madrone of the Botanical Garden",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "por_010": {
    "city": "Porto",
    "name": "The Atlas Cedar of the Botanical Garden",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "iNat obs 1454596 (Cedrus libani)",
@@ -8583,8 +8583,8 @@
   "par_009": {
    "city": "Paris",
    "name": "The Plane of Parc Montsouris",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ligne Petite Ceinture parc Montsouris Paris.jpg",
@@ -8632,17 +8632,26 @@
      "verdict": "a tram stop street scene, no tree as subject"
     },
     {
-     "title": "File:Station Tramway Ligne 3a Montsouris Paris 7.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Station_Tramway_Ligne_3a_Montsouris_Paris_7.jpg/960px-Station_Tramway_Ligne_3a_Montsouris_Paris_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Station_Tramway_Ligne_3a_Montsouris_Paris_7.jpg",
+     "title": "File:Station Tramway Ligne 3a Montsouris Paris 10.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Station_Tramway_Ligne_3a_Montsouris_Paris_10.jpg/960px-Station_Tramway_Ligne_3a_Montsouris_Paris_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Station_Tramway_Ligne_3a_Montsouris_Paris_10.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Chabe01"
+     "author": "Chabe01",
+     "lat": 48.821606,
+     "lng": 2.333403,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Images by Chabe01 taken with iPhone XS Category:Images of Paris 14e arrondissement by Chabe01 Category:Images of Paris tramway by Chabe01 Category:Montsouris (tramway d'Île-de-France) Category:Paris photographs taken on 2019-11-17 Category:Self-published work"
+    },
+    {
+     "title": "File:Station Tramway Ligne 3a Montsouris Paris 11.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Station_Tramway_Ligne_3a_Montsouris_Paris_11.jpg/960px-Station_Tramway_Ligne_3a_Montsouris_Paris_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Station_Tramway_Ligne_3a_Montsouris_Paris_11.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chabe01",
+     "lat": 48.821608,
+     "lng": 2.333397,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Images by Chabe01 taken with iPhone XS Category:Images of Paris 14e arrondissement by Chabe01 Category:Images of Paris tramway by Chabe01 Category:Montsouris (tramway d'Île-de-France) Category:Paris photographs taken on 2019-11-17 Category:Self-published work"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "par_010": {
    "city": "Paris",
@@ -8672,22 +8681,22 @@
   "par_013": {
    "city": "Paris",
    "name": "The Caucasian Elm of Square Samuel Paty",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_014": {
    "city": "Paris",
    "name": "The Oriental Planes of Square Michel-Foucault",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_015": {
    "city": "Paris",
    "name": "The Plane of Quai Saint-Bernard",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "iNat obs 148966110 (Platanus occidentalis)",
@@ -8717,15 +8726,15 @@
   "par_016": {
    "city": "Paris",
    "name": "The Twisted Beech of Square des Arenes de Lutece",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_017": {
    "city": "Paris",
    "name": "The Anne Frank Chestnut",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Anne-frank-tree-yv.jpg",
@@ -8753,27 +8762,6 @@
      "author": "DavidThack98",
      "judged": "reject",
      "verdict": "another Anne Frank sapling in a modern brick courtyard, shot through glass; not Paris"
-    },
-    {
-     "title": "File:Anne Frank tree crop.JPG",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/11/Anne_Frank_tree_crop.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Anne_Frank_tree_crop.JPG",
-     "licence": "CC BY-SA 3.0",
-     "author": "Sdalu on en.wiki"
-    },
-    {
-     "title": "File:Anne Frank tree cutting - Stek van de Anne Frankboom, Utrecht, 2020.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Anne_Frank_tree_cutting_-_Stek_van_de_Anne_Frankboom%2C_Utrecht%2C_2020.jpg/960px-Anne_Frank_tree_cutting_-_Stek_van_de_Anne_Frankboom%2C_Utrecht%2C_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Anne_Frank_tree_cutting_-_Stek_van_de_Anne_Frankboom,_Utrecht,_2020.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Hansmuller"
-    },
-    {
-     "title": "File:Bournemouth, Anne Frank's tree, Central Gardens - geograph.org.uk - 1038863.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bournemouth%2C_Anne_Frank%27s_tree%2C_Central_Gardens_-_geograph.org.uk_-_1038863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Bournemouth,_Anne_Frank%27s_tree,_Central_Gardens_-_geograph.org.uk_-_1038863.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Chris Downer"
     }
    ],
    "exhausted": "2026-08-08: all 9 candidates viewed or identified as OTHER cities' Anne Frank trees (Yad Vashem, Bedford, Utrecht, Bournemouth, the fallen Amsterdam original). Re-sweeping Commons cannot help; only a new source can."
@@ -8781,8 +8769,8 @@
   "par_018": {
    "city": "Paris",
    "name": "The Fig Tree of Square Georges Cain",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Enseigne de la brasserie Le Sévigné et street art (30293877518).jpg",
@@ -11120,100 +11108,158 @@
   "par_019": {
    "city": "Paris",
    "name": "The Sequoia of the Champs-Élysées Gardens",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_020": {
    "city": "Paris",
    "name": "The Twin Planes of Avenue Winston Churchill",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_021": {
    "city": "Paris",
    "name": "The Magnolia of Square d'Ajaccio",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_022": {
    "city": "Paris",
    "name": "The Plane of Square d'Ajaccio",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_023": {
    "city": "Paris",
    "name": "The Turkish Hazel of Square du Temple",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_024": {
    "city": "Paris",
    "name": "The Old Hazel of Square Maurice-Gardette",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:P1300957 Paris XI square Maurice-Gardette rwk.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/P1300957_Paris_XI_square_Maurice-Gardette_rwk.jpg/960px-P1300957_Paris_XI_square_Maurice-Gardette_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/P1300957_Paris_XI_square_Maurice-Gardette_rwk.jpg/960px-P1300957_Paris_XI_square_Maurice-Gardette_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:P1300957_Paris_XI_square_Maurice-Gardette_rwk.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Mbzt"
+     "author": "Mbzt",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Panneau Histoire in Paris 11e arrondissement Category:Self-published work Category:Square Maurice-Gardette"
     },
     {
      "title": "File:P1300958 Paris XI square Maurice-Gardette rwk.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/P1300958_Paris_XI_square_Maurice-Gardette_rwk.jpg/960px-P1300958_Paris_XI_square_Maurice-Gardette_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/P1300958_Paris_XI_square_Maurice-Gardette_rwk.jpg/960px-P1300958_Paris_XI_square_Maurice-Gardette_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:P1300958_Paris_XI_square_Maurice-Gardette_rwk.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Mbzt"
+     "author": "Mbzt",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Square Maurice-Gardette"
     },
     {
      "title": "File:P1300959 Paris XI square Maurice-Gardette rwk.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/P1300959_Paris_XI_square_Maurice-Gardette_rwk.jpg/960px-P1300959_Paris_XI_square_Maurice-Gardette_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/P1300959_Paris_XI_square_Maurice-Gardette_rwk.jpg/960px-P1300959_Paris_XI_square_Maurice-Gardette_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:P1300959_Paris_XI_square_Maurice-Gardette_rwk.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Mbzt"
+     "author": "Mbzt",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Square Maurice-Gardette"
     }
    ]
   },
   "par_025": {
    "city": "Paris",
    "name": "The Caucasian Wingnut of Square d'Estienne d'Orves",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "par_026": {
    "city": "Paris",
    "name": "The Chinaberry of Square Boucicaut",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
-     "title": "File:Jardin de l'ancien hôpital Boucicaut @ Ecoquartier Boucicaut @ Paris (33549382353).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_%40_Ecoquartier_Boucicaut_%40_Paris_%2833549382353%29.jpg/960px-Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_%40_Ecoquartier_Boucicaut_%40_Paris_%2833549382353%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_@_Ecoquartier_Boucicaut_@_Paris_(33549382353).jpg",
-     "licence": "CC BY 2.0",
-     "author": "Guilhem Vellut from Paris, France"
+     "title": "File:Square Boucicaut Paris Aug 2026 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Square_Boucicaut_Paris_Aug_2026_01.jpg/960px-Square_Boucicaut_Paris_Aug_2026_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Square_Boucicaut_Paris_Aug_2026_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Heidi Meudt",
+     "lat": 48.851577,
+     "lng": 2.324978,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work Category:Square Boucicaut"
     },
     {
-     "title": "File:Jardin de l'ancien hôpital Boucicaut @ Ecoquartier Boucicaut @ Paris (33975759160).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_%40_Ecoquartier_Boucicaut_%40_Paris_%2833975759160%29.jpg/960px-Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_%40_Ecoquartier_Boucicaut_%40_Paris_%2833975759160%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_@_Ecoquartier_Boucicaut_@_Paris_(33975759160).jpg",
-     "licence": "CC BY 2.0",
-     "author": "Guilhem Vellut from Paris, France"
+     "title": "File:Square Boucicaut Paris Aug 2026 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Square_Boucicaut_Paris_Aug_2026_02.jpg/960px-Square_Boucicaut_Paris_Aug_2026_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Square_Boucicaut_Paris_Aug_2026_02.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Heidi Meudt",
+     "lat": 48.85152,
+     "lng": 2.325222,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work Category:Square Boucicaut"
     },
     {
-     "title": "File:Jardin de l'ancien hôpital Boucicaut @ Ecoquartier Boucicaut @ Paris (34229434561).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_%40_Ecoquartier_Boucicaut_%40_Paris_%2834229434561%29.jpg/960px-Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_%40_Ecoquartier_Boucicaut_%40_Paris_%2834229434561%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Jardin_de_l%27ancien_h%C3%B4pital_Boucicaut_@_Ecoquartier_Boucicaut_@_Paris_(34229434561).jpg",
-     "licence": "CC BY 2.0",
-     "author": "Guilhem Vellut from Paris, France"
+     "title": "File:Square Boucicaut Paris Aug 2026 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Square_Boucicaut_Paris_Aug_2026_03.jpg/960px-Square_Boucicaut_Paris_Aug_2026_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Square_Boucicaut_Paris_Aug_2026_03.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Heidi Meudt",
+     "lat": 48.851427,
+     "lng": 2.325537,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work Category:Square Boucicaut"
+    },
+    {
+     "title": "File:Square Boucicaut Paris Aug 2026 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Square_Boucicaut_Paris_Aug_2026_04.jpg/960px-Square_Boucicaut_Paris_Aug_2026_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Square_Boucicaut_Paris_Aug_2026_04.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Heidi Meudt",
+     "lat": 48.851448,
+     "lng": 2.32558,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work Category:Square Boucicaut"
+    },
+    {
+     "title": "File:Square Boucicaut Paris Aug 2026 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Square_Boucicaut_Paris_Aug_2026_05.jpg/960px-Square_Boucicaut_Paris_Aug_2026_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Square_Boucicaut_Paris_Aug_2026_05.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Heidi Meudt",
+     "lat": 48.85145,
+     "lng": 2.325777,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work Category:Square Boucicaut"
+    },
+    {
+     "title": "File:Square Boucicaut Paris Aug 2026 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Square_Boucicaut_Paris_Aug_2026_06.jpg/960px-Square_Boucicaut_Paris_Aug_2026_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Square_Boucicaut_Paris_Aug_2026_06.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Heidi Meudt",
+     "lat": 48.851513,
+     "lng": 2.326263,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work Category:Square Boucicaut"
+    },
+    {
+     "title": "File:Square Boucicaut Paris Aug 2026 07.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Square_Boucicaut_Paris_Aug_2026_07.jpg/960px-Square_Boucicaut_Paris_Aug_2026_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Square_Boucicaut_Paris_Aug_2026_07.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Heidi Meudt",
+     "lat": 48.851622,
+     "lng": 2.326386,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Self-published work Category:Square Boucicaut"
     }
    ]
   },
@@ -15297,8 +15343,8 @@
   "par_027": {
    "city": "Paris",
    "name": "The Amur Cork Tree of Square Michel-Foucault",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "ams_018": {
@@ -20024,81 +20070,90 @@
   "ptl_001": {
    "city": "Portland",
    "name": "The Watson Beech",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "ptl_002": {
    "city": "Portland",
    "name": "The Farrell Planetree",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:USCGC Planetree during World War II.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USCGC_Planetree_during_World_War_II.jpg/960px-USCGC_Planetree_during_World_War_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/USCGC_Planetree_during_World_War_II.jpg/960px-USCGC_Planetree_during_World_War_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:USCGC_Planetree_during_World_War_II.jpg",
      "licence": "Public domain",
-     "author": "Unknown, likely U.S. Navy"
+     "author": "Unknown, likely U.S. Navy",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-PD-Mark Category:PD US Government Category:Ships built in 1943 Category:Ships with pennant number 307 Category:USCGC Planetree Category:United States Coast Guard vessels"
     }
    ]
   },
   "ptl_003": {
    "city": "Portland",
    "name": "The Eliot Hawthorns",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "ptl_004": {
    "city": "Portland",
    "name": "The Kamm Walnut",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "ptl_005": {
    "city": "Portland",
    "name": "The Miller Pine",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "ptl_006": {
    "city": "Portland",
    "name": "The Rockey Elm",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Maple tree (Japanese Garden, Portland).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg/960px-Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg/960px-Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Maple_tree_(Japanese_Garden,_Portland).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "stu_spivack"
+     "author": "stu_spivack",
+     "lat": 45.525,
+     "lng": -122.6986,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Stu Spivack Category:Portland Japanese Garden"
     }
    ]
   },
   "ptl_007": {
    "city": "Portland",
    "name": "The Storm Elm",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Maple tree (Japanese Garden, Portland).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg/960px-Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg/960px-Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Maple_tree_(Japanese_Garden,_Portland).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "stu_spivack"
+     "author": "stu_spivack",
+     "lat": 45.525,
+     "lng": -122.6986,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Stu Spivack Category:Portland Japanese Garden"
     }
    ]
   },
   "ptl_008": {
    "city": "Portland",
    "name": "The Patton Road Sequoia",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "ptl_009": {
@@ -20148,8 +20203,8 @@
   "ptl_010": {
    "city": "Portland",
    "name": "The Hoyt Dawn Redwood",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "rom_025": {
@@ -26607,29 +26662,29 @@
   "plm_002": {
    "city": "Palma de Mallorca",
    "name": "The Ficus de la Misericòrdia",
-   "checked": "2026-08-17",
-   "sweep": 4,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "plm_003": {
    "city": "Palma de Mallorca",
    "name": "The Lagunària de la Llotja",
-   "checked": "2026-08-17",
-   "sweep": 4,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "plm_004": {
    "city": "Palma de Mallorca",
    "name": "The Ficus del Cementeri",
-   "checked": "2026-08-17",
-   "sweep": 4,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": []
   },
   "plm_005": {
    "city": "Palma de Mallorca",
    "name": "The Mata de Bellver",
-   "checked": "2026-08-17",
-   "sweep": 4,
+   "checked": "2026-09-09",
+   "sweep": 5,
    "candidates": [
     {
      "title": "iNat obs 104571527 (Pistacia lentiscus)",
@@ -71509,6 +71564,1318 @@
    "name": "The Dike Lime of Tull en 't Waal",
    "candidates": [],
    "last_resort": "2026-09-09"
+  },
+  "dor_014": {
+   "city": "Dordrecht",
+   "name": "The Oak-leaved Hornbeam of Park Merwestein",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Dordrecht ParkMerwestein 018 0813.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Dordrecht_ParkMerwestein_018_0813.jpg/960px-Dordrecht_ParkMerwestein_018_0813.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dordrecht_ParkMerwestein_018_0813.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ludvig14",
+     "lat": 51.812369,
+     "lng": 4.676706,
+     "cats": "Category:2022 in Dordrecht Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "wide pond/deer-enclosure view, no single tree identifiable, tree not the subject"
+    },
+    {
+     "title": "File:Dordrecht ParkMerwestein 018 0828.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Dordrecht_ParkMerwestein_018_0828.jpg/960px-Dordrecht_ParkMerwestein_018_0828.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dordrecht_ParkMerwestein_018_0828.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ludvig14",
+     "lat": 51.811822,
+     "lng": 4.677144,
+     "cats": "Category:2022 in Dordrecht Category:CC-BY-SA-4.0 Category:Dama dama in zoos Category:Files with coordinates missing SDC location of creation (51° N, 4° E) Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "photo of fallow deer, no tree visible as subject"
+    },
+    {
+     "title": "File:Park Merwestein, Dordrecht - IMG 0066.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Park_Merwestein%2C_Dordrecht_-_IMG_0066.jpg/960px-Park_Merwestein%2C_Dordrecht_-_IMG_0066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Park_Merwestein,_Dordrecht_-_IMG_0066.jpg",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "CasparusJeronimus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Muscovy ducks (domesticated) Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "categorised Muscovy ducks; animal photo, not a tree photo"
+    },
+    {
+     "title": "File:Park Merwestein, Dordrecht - IMG 0144.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Park_Merwestein%2C_Dordrecht_-_IMG_0144.jpg/960px-Park_Merwestein%2C_Dordrecht_-_IMG_0144.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Park_Merwestein,_Dordrecht_-_IMG_0144.jpg",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "CasparusJeronimus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Domesticated geese Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "categorised domesticated geese; animal photo, not a tree photo"
+    },
+    {
+     "title": "File:Park Merwestein, Dordrecht - IMG 9899.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Park_Merwestein%2C_Dordrecht_-_IMG_9899.jpg/960px-Park_Merwestein%2C_Dordrecht_-_IMG_9899.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Park_Merwestein,_Dordrecht_-_IMG_9899.jpg",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "CasparusJeronimus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Dama dama in zoos Category:Park Merwestein, Dordrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "categorised Dama dama (fallow deer) in zoos; animal photo, not a tree photo"
+    },
+    {
+     "title": "File:Park Merwestein - Dordrecht - 20063312 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Park_Merwestein_-_Dordrecht_-_20063312_-_RCE.jpg/960px-Park_Merwestein_-_Dordrecht_-_20063312_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Park_Merwestein_-_Dordrecht_-_20063312_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Unknown authorUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1896 in Dordrecht Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten with known IDs Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Park Merwestein, Dordrecht Category:Template Unknown (author)",
+     "judged": "reject",
+     "verdict": "1896 black-and-white archival photo, banned regardless of atmosphere"
+    }
+   ]
+  },
+  "dor_015": {
+   "city": "Dordrecht",
+   "name": "The Plane Trees of the Dordrechts Museum Garden",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Dordrecht - Dordrechts Museum.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Dordrecht_-_Dordrechts_Museum.jpg/960px-Dordrecht_-_Dordrechts_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dordrecht_-_Dordrechts_Museum.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michiel1972",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:Dordrechts Museum Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-02-18 Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A530",
+     "judged": "approve",
+     "verdict": "the museum's two plane trees fill most of the frame, mottled bark clearly the subject, well lit, survives a wide crop"
+    }
+   ]
+  },
+  "dor_016": {
+   "city": "Dordrecht",
+   "name": "The Beeches of the Dordrechts Museum Garden",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Dordrecht - Dordrechts Museum.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Dordrecht_-_Dordrechts_Museum.jpg/960px-Dordrecht_-_Dordrechts_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dordrecht_-_Dordrechts_Museum.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michiel1972",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:Dordrechts Museum Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-02-18 Category:Rijksmonumenten uploaded by User:Michiel1972 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A530",
+     "judged": "reject",
+     "verdict": "shows the museum's plane trees (mottled bark), not the beeches; wrong species for this entry, used for dor_015 instead"
+    }
+   ]
+  },
+  "pgm_002": {
+   "city": "Pagramantis Regional Park",
+   "name": "The Geniai Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pgm_003": {
+   "city": "Pagramantis Regional Park",
+   "name": "The Tamosaiciai Cemetery Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Tamošaičių ąžuolas 1.JPG (Wikidata Q119079100)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Tamo%C5%A1ai%C4%8Di%C5%B3_%C4%85%C5%BEuolas_1.JPG/960px-Tamo%C5%A1ai%C4%8Di%C5%B3_%C4%85%C5%BEuolas_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tamo%C5%A1ai%C4%8Di%C5%B3_%C4%85%C5%BEuolas_1.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.361028,
+     "lng": 22.164433,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tamošaičiai oaks",
+     "source": "wikidata/Q119079100"
+    }
+   ]
+  },
+  "pgm_004": {
+   "city": "Pagramantis Regional Park",
+   "name": "The Andriejaiciai Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:2022, Andriejaičių ąžuolas.JPG (Wikidata Q16443646)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/2022%2C_Andriejai%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG/960px-2022%2C_Andriejai%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2022,_Andriejai%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.417299,
+     "lng": 22.23871,
+     "cats": "Category:Andriejaičiai oak Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural heritage sites in Lithuania with known IDs Category:Self-published work",
+     "source": "wikidata/Q16443646"
+    }
+   ]
+  },
+  "paj_001": {
+   "city": "Pajūris",
+   "name": "The Akmenynė Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Akmenynės ąžuolas, prie Pajūrio.JPG (Wikidata Q119079145)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Akmenyn%C4%97s_%C4%85%C5%BEuolas%2C_prie_Paj%C5%ABrio.JPG/960px-Akmenyn%C4%97s_%C4%85%C5%BEuolas%2C_prie_Paj%C5%ABrio.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Akmenyn%C4%97s_%C4%85%C5%BEuolas,_prie_Paj%C5%ABrio.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.4382,
+     "lng": 22.03261,
+     "cats": "Category:Akmenynė oak Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural heritage sites in Lithuania with known IDs Category:Self-published work",
+     "source": "wikidata/Q119079145"
+    }
+   ]
+  },
+  "pam_001": {
+   "city": "Pamplona",
+   "name": "The Sequoia of the Palacio de Navarra",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pam_002": {
+   "city": "Pamplona",
+   "name": "The Oak of Orkin",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pam_003": {
+   "city": "Pamplona",
+   "name": "The Oak of Eltzaburu",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pam_004": {
+   "city": "Pamplona",
+   "name": "The Oaks of Jauntsarats",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Kisulabeko haritza Kartela Jaunsarats-en 04.jpg (Wikidata Q106862688)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Kisulabeko_haritza_Kartela_Jaunsarats-en_04.jpg/960px-Kisulabeko_haritza_Kartela_Jaunsarats-en_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_Kartela_Jaunsarats-en_04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ksarasola",
+     "lat": 43.0027,
+     "lng": -1.7976,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kisulabe oak Category:Self-published work",
+     "source": "wikidata/Q106862688"
+    }
+   ]
+  },
+  "pam_005": {
+   "city": "Pamplona",
+   "name": "The Oak of Azanza",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pam_006": {
+   "city": "Pamplona",
+   "name": "The Quejigo of Garinoain",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "par_028": {
+   "city": "Paris",
+   "name": "The Oriental Plane of Square Louise Michel",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "par_029": {
+   "city": "Paris",
+   "name": "The Caucasian Wingnut of Square Louise Michel",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "par_030": {
+   "city": "Paris",
+   "name": "The Horse Chestnut of Square Louise Michel",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 131075271 (Aesculus parviflora)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/223005360/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/131075271",
+     "licence": "CC BY",
+     "author": "(c) Xavier JAPIOT, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.8848190306,2.3445091247"
+    }
+   ]
+  },
+  "par_031": {
+   "city": "Paris",
+   "name": "The Horse Chestnut of Square Rene-Le Gall",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "par_032": {
+   "city": "Paris",
+   "name": "The Plane of Square Montholon",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Station Square Montholon Vélib' Métropole Rue Montholon - Paris IX (FR75) - 2026-04-10 - 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Station_Square_Montholon_V%C3%A9lib%27_M%C3%A9tropole_Rue_Montholon_-_Paris_IX_%28FR75%29_-_2026-04-10_-_1.jpg/960px-Station_Square_Montholon_V%C3%A9lib%27_M%C3%A9tropole_Rue_Montholon_-_Paris_IX_%28FR75%29_-_2026-04-10_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Station_Square_Montholon_V%C3%A9lib%27_M%C3%A9tropole_Rue_Montholon_-_Paris_IX_(FR75)_-_2026-04-10_-_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chabe01",
+     "lat": 48.87654167,
+     "lng": 2.34601111,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 2° E) Category:Images by Chabe01 taken with iPhone 16 Pro Category:Images of Paris 9e arrondissement by Chabe01 Category:Paris photographs taken on 2026-04-10 Category:Self-published work Category:Station Vélib' Métropole 9009 (Square Montholon)"
+    }
+   ]
+  },
+  "par_033": {
+   "city": "Paris",
+   "name": "The Turkey Oak of Square Rene-Le Gall",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pee_001": {
+   "city": "Peesten",
+   "name": "Tanzlinde (Peesten)",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Neudrossenfeld Tanzlinde-20201011-RM-154027.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Neudrossenfeld_Tanzlinde-20201011-RM-154027.jpg/960px-Neudrossenfeld_Tanzlinde-20201011-RM-154027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neudrossenfeld_Tanzlinde-20201011-RM-154027.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.015095,
+     "lng": 11.50416667,
+     "cats": "Category:Bavaria photographs taken on 2020-10-11 Category:CC-BY-SA-4.0 Category:Famous Tilia in Germany Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Neudrossenfeld dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Tanzlinde Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Peesten Tanzlinde-20200823-RM-153802.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Peesten_Tanzlinde-20200823-RM-153802.jpg/960px-Peesten_Tanzlinde-20200823-RM-153802.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Peesten_Tanzlinde-20200823-RM-153802.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.06308695,
+     "lng": 11.36705383,
+     "cats": "Category:Bavaria photographs taken on 2020-08-23 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020, DE-BY Category:Images from Wiki Loves Monuments 2020 in Germany Category:Images from Wiki Loves Monuments by Ermell Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Peesten dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Monuments 2020 in Germany Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-100mm f/4 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Peesten Tanzlinde-20200823-RM-154416.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Peesten_Tanzlinde-20200823-RM-154416.jpg/960px-Peesten_Tanzlinde-20200823-RM-154416.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Peesten_Tanzlinde-20200823-RM-154416.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.06313812,
+     "lng": 11.36697157,
+     "cats": "Category:Bavaria photographs taken on 2020-08-23 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020, DE-BY Category:Images from Wiki Loves Monuments 2020 in Germany Category:Images from Wiki Loves Monuments by Ermell Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Peesten dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Monuments 2020 in Germany Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 7-14mm f/2.8 PRO Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Peesten Tanzlinde-20200823-RM-154937.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Peesten_Tanzlinde-20200823-RM-154937.jpg/960px-Peesten_Tanzlinde-20200823-RM-154937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Peesten_Tanzlinde-20200823-RM-154937.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ermell",
+     "lat": 50.06318202,
+     "lng": 11.36690093,
+     "cats": "Category:Bavaria photographs taken on 2020-08-23 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 11° E) Category:Images by User:Ermell taken in 2020 Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020, DE-BY Category:Images from Wiki Loves Monuments 2020 in Germany Category:Images from Wiki Loves Monuments by Ermell Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Peesten dance lime tree Category:Photographs by Ermell Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Monuments 2020 in Germany Category:Quality images of Franconian Switzerland by Ermell Category:Quality images of Upper Franconia by Ermell Category:Self-published work Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 7-14mm f/2.8 PRO Category:Trees in Bavaria in August Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Peesten Tanzlinde.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Peesten_Tanzlinde.JPG/960px-Peesten_Tanzlinde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Peesten_Tanzlinde.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Benreis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files from Wikivoyage Shared Category:GFDL Category:Images by Benreis/Franken Category:License migration redundant Category:Peesten dance lime tree Category:Self-published work Category:Taken with Kodak EasyShare P712"
+    },
+    {
+     "title": "File:Tanzlinde Peesten 2022 xy1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tanzlinde_Peesten_2022_xy1.jpg/960px-Tanzlinde_Peesten_2022_xy1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Peesten_2022_xy1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Peesten dance lime tree Category:Self-published work"
+    },
+    {
+     "title": "File:Tanzlinde Peesten 2022 xy6.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Tanzlinde_Peesten_2022_xy6.jpg/960px-Tanzlinde_Peesten_2022_xy6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Peesten_2022_xy6.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Peesten dance lime tree Category:Self-published work"
+    },
+    {
+     "title": "File:Tanzlinde Peesten 2022 xy8.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Tanzlinde_Peesten_2022_xy8.jpg/960px-Tanzlinde_Peesten_2022_xy8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Peesten_2022_xy8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PeterBraun74",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Peesten dance lime tree Category:Self-published work"
+    },
+    {
+     "title": "File:Tanzlinde Peesten Steintreppe.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Tanzlinde_Peesten_Steintreppe.JPG/960px-Tanzlinde_Peesten_Steintreppe.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Peesten_Steintreppe.JPG",
+     "licence": "CC0",
+     "author": "Benreis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Images by Benreis/Franken Category:Peesten dance lime tree Category:Self-published work Category:Taken with Canon EOS 500D"
+    },
+    {
+     "title": "File:Tanzlinde Peesten laublos.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Tanzlinde_Peesten_laublos.JPG/960px-Tanzlinde_Peesten_laublos.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Peesten_laublos.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Benreis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:Images by Benreis/Franken Category:License migration redundant Category:Peesten dance lime tree Category:Self-published work Category:Taken with Canon EOS 500D"
+    },
+    {
+     "title": "File:Tanzlinde Peesten unten.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Tanzlinde_Peesten_unten.JPG/960px-Tanzlinde_Peesten_unten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tanzlinde_Peesten_unten.JPG",
+     "licence": "CC0",
+     "author": "Benreis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Images by Benreis/Franken Category:Peesten dance lime tree Category:Self-published work Category:Taken with Canon EOS 500D"
+    }
+   ]
+  },
+  "pem_001": {
+   "city": "Pemberton",
+   "name": "The Gloucester Tree",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Climbing the gloucester tree (845071407).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Climbing_the_gloucester_tree_%28845071407%29.jpg/960px-Climbing_the_gloucester_tree_%28845071407%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Climbing_the_gloucester_tree_(845071407).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "badjonni from Adelaide, Australia",
+     "lat": -34.444831,
+     "lng": 116.034538,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files uploaded by OceanAtoll Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Gloucester Tree Category:Tree climbing"
+    },
+    {
+     "title": "File:Gloucester Tree, Western Australia.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Gloucester_Tree%2C_Western_Australia.jpg/960px-Gloucester_Tree%2C_Western_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gloucester_Tree,_Western_Australia.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "David La Rosa",
+     "lat": -34.4476102,
+     "lng": 116.0566846,
+     "cats": "Category:Australia photographs taken on 2016-01-03 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gloucester Tree Category:Images from Wiki Loves Earth 2016 Category:Images from Wiki Loves Earth 2016 in Australia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wle-au"
+    },
+    {
+     "title": "File:Gloucester Tree Warningsign.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Gloucester_Tree_Warningsign.jpg/960px-Gloucester_Tree_Warningsign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gloucester_Tree_Warningsign.jpg",
+     "licence": "Public domain",
+     "author": "Heiko Volland",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Gloucester Tree Category:PD-self Category:Self-published work Category:Tree climbing Category:Warning signs in Australia"
+    },
+    {
+     "title": "File:OIC pemberton gloucester tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/OIC_pemberton_gloucester_tree.jpg/500px-OIC_pemberton_gloucester_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:OIC_pemberton_gloucester_tree.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "User:Orderinchaos",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Gloucester Tree Category:Photographs by Orderinchaos Category:Self-published work Category:Taken with Canon PowerShot A80"
+    },
+    {
+     "title": "File:OIC pemberton gloucester tree climbers.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/OIC_pemberton_gloucester_tree_climbers.jpg/500px-OIC_pemberton_gloucester_tree_climbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:OIC_pemberton_gloucester_tree_climbers.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "User:Orderinchaos",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Gloucester Tree Category:Photographs by Orderinchaos Category:Self-published work Category:Taken with Canon PowerShot A80 Category:Tree climbing"
+    },
+    {
+     "title": "File:Pemberton Gloucester Tree Base.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Pemberton_Gloucester_Tree_Base.jpg/960px-Pemberton_Gloucester_Tree_Base.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pemberton_Gloucester_Tree_Base.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Bjørn Christian Tørrissen",
+     "lat": -34.4475,
+     "lng": 116.05777778,
+     "cats": "Category:Australia photographs taken on 2008-12-08 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Gloucester Tree Category:License migration redundant Category:Self-published work Category:Taken with Sony DSC-H50"
+    },
+    {
+     "title": "File:Up the tree - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Up_the_tree_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Up_the_tree_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Stephen Edmonds",
+     "lat": -34.447694,
+     "lng": 116.057288,
+     "cats": "Category:Australia photographs taken on 2011-03-14 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Pemberton, Western Australia Category:Photos from Panoramio Category:Photos from Panoramio ID 7091098"
+    },
+    {
+     "title": "File:View from top of Gloucester Tree, Western Australia, Dec 2005.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/07/View_from_top_of_Gloucester_Tree%2C_Western_Australia%2C_Dec_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:View_from_top_of_Gloucester_Tree,_Western_Australia,_Dec_2005.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "BoundaryRider",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Gloucester Tree Category:Self-published work"
+    }
+   ]
+  },
+  "pgs_001": {
+   "city": "Pérouges",
+   "name": "The Tilleul de Pérouges (Liberty Tree)",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Tilleul Place Halle Pérouges 4.jpg (Wikidata Q3528519)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Tilleul_Place_Halle_P%C3%A9rouges_4.jpg/960px-Tilleul_Place_Halle_P%C3%A9rouges_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_Place_Halle_P%C3%A9rouges_4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chabe01",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:August 2016 in Pérouges Category:Auvergne-Rhône-Alpes photographs taken on 2016-08-27 Category:CC-BY-SA-4.0 Category:Images by Chabe01 taken with Canon EOS 1200D Category:Images of Pérouges by Chabe01 Category:Self-published work Category:Tilleul de Pérouges",
+     "source": "wikidata/Q3528519"
+    },
+    {
+     "title": "File:20171001 Pérouges.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/20171001_P%C3%A9rouges.jpg/960px-20171001_P%C3%A9rouges.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20171001_P%C3%A9rouges.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pierre Goiffon",
+     "lat": 45.90338,
+     "lng": 5.17947,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Place de la Halle dite du Tilleul (Pérouges) Category:Self-published work"
+    },
+    {
+     "title": "File:Cité médiévale de Pérouges - Marilou Perino.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_-_Marilou_Perino.jpg/960px-Cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_-_Marilou_Perino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_-_Marilou_Perino.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marilou Perino",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2020 in Pérouges Category:CC-BY-SA-4.0 Category:May 2020 in Ain Category:Self-published work Category:Views of medieval city of Pérouges"
+    },
+    {
+     "title": "File:La cité médiévale de Pérouges vue de l'extérieur.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/La_cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_vue_de_l%27ext%C3%A9rieur.jpg/960px-La_cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_vue_de_l%27ext%C3%A9rieur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:La_cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_vue_de_l%27ext%C3%A9rieur.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marilou Perino",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2020 in Pérouges Category:CC-BY-SA-4.0 Category:May 2020 in Ain Category:Self-published work Category:Views of medieval city of Pérouges"
+    },
+    {
+     "title": "File:Maison Rouby Pérouges 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Maison_Rouby_P%C3%A9rouges_2.jpg/960px-Maison_Rouby_P%C3%A9rouges_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Maison_Rouby_P%C3%A9rouges_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chabe01",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:April 2017 in Pérouges Category:Auvergne-Rhône-Alpes photographs taken on 2017-04-13 Category:CC-BY-SA-4.0 Category:Images by Chabe01 taken with Canon EOS 1200D Category:Images of Pérouges by Chabe01 Category:Maison Rouby Category:Self-published work"
+    },
+    {
+     "title": "File:Place de la Halle dite du Tilleul (Pérouges) en mars 2022.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Place_de_la_Halle_dite_du_Tilleul_%28P%C3%A9rouges%29_en_mars_2022.JPG/960px-Place_de_la_Halle_dite_du_Tilleul_%28P%C3%A9rouges%29_en_mars_2022.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Place_de_la_Halle_dite_du_Tilleul_(P%C3%A9rouges)_en_mars_2022.JPG",
+     "licence": "CC0",
+     "author": "Benoît Prieur",
+     "lat": 45.90337778,
+     "lng": 5.17949167,
+     "cats": "Category:2022 images by Benoît Prieur Category:2022 in Pérouges Category:Auvergne-Rhône-Alpes photographs taken on 2022-03-05 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images of Pérouges by Benoît Prieur Category:March 2022 in Ain Category:Photographs by Benoît Prieur Category:Place de la Halle dite du Tilleul (Pérouges) Category:Self-published work Category:Uploaded with PyCommonist"
+    },
+    {
+     "title": "File:Place du Tilleul Pérouges Marilou Perino.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Place_du_Tilleul_P%C3%A9rouges_Marilou_Perino.jpg/960px-Place_du_Tilleul_P%C3%A9rouges_Marilou_Perino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Place_du_Tilleul_P%C3%A9rouges_Marilou_Perino.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marilou Perino",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2020 in Pérouges Category:August 2020 in Ain Category:CC-BY-SA-4.0 Category:Place de la Halle dite du Tilleul (Pérouges) Category:Self-published work"
+    },
+    {
+     "title": "File:Porte Haut Pérouges 3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Porte_Haut_P%C3%A9rouges_3.jpg/960px-Porte_Haut_P%C3%A9rouges_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Porte_Haut_P%C3%A9rouges_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chabe01",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:August 2016 in Pérouges Category:Auvergne-Rhône-Alpes photographs taken on 2016-08-27 Category:CC-BY-SA-4.0 Category:Coats of arms of Pérouges Category:Images by Chabe01 taken with Canon EOS 1200D Category:Images of Pérouges by Chabe01 Category:Porte d'En-Haut (Pérouges) Category:Self-published work"
+    },
+    {
+     "title": "File:Pérouges, monument du jubilé de 1886.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/P%C3%A9rouges%2C_monument_du_jubil%C3%A9_de_1886.jpg/960px-P%C3%A9rouges%2C_monument_du_jubil%C3%A9_de_1886.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:P%C3%A9rouges,_monument_du_jubil%C3%A9_de_1886.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Cayambe",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1886 Jubilee cross of Pérouges Category:2022 in Pérouges Category:CC-BY-SA-4.0 Category:July 2022 in Ain Category:Quality images Category:Quality images by Cayambe Category:Quality images of Pérouges Category:Quality images of crosses Category:Self-published work"
+    },
+    {
+     "title": "File:Tilleul de Pérouges en avril 2021.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Tilleul_de_P%C3%A9rouges_en_avril_2021.jpg/960px-Tilleul_de_P%C3%A9rouges_en_avril_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_de_P%C3%A9rouges_en_avril_2021.jpg",
+     "licence": "CC0",
+     "author": "Benoît Prieur",
+     "lat": 45.90351944,
+     "lng": 5.17947778,
+     "cats": "Category:2021 images by Benoît Prieur Category:2021 in Pérouges Category:April 2021 in Ain Category:Auvergne-Rhône-Alpes photographs taken on 2021-04-10 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images of Pérouges by Benoît Prieur Category:Photographs by Benoît Prieur Category:Self-published work Category:Tilleul de Pérouges Category:Uploaded with PyCommonist"
+    },
+    {
+     "title": "File:Un restaurant place du Tilleul (Pérouges) en avril 2021.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Un_restaurant_place_du_Tilleul_%28P%C3%A9rouges%29_en_avril_2021.jpg/960px-Un_restaurant_place_du_Tilleul_%28P%C3%A9rouges%29_en_avril_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Un_restaurant_place_du_Tilleul_(P%C3%A9rouges)_en_avril_2021.jpg",
+     "licence": "CC0",
+     "author": "Benoît Prieur",
+     "lat": 45.90347222,
+     "lng": 5.17960556,
+     "cats": "Category:2021 images by Benoît Prieur Category:2021 in Pérouges Category:April 2021 in Ain Category:Auvergne-Rhône-Alpes photographs taken on 2021-04-25 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images of Pérouges by Benoît Prieur Category:Le Relais de la Tour (Pérouges) Category:Photographs by Benoît Prieur Category:Restaurants in France photographed in 2021 Category:Self-published work Category:Uploaded with PyCommonist"
+    },
+    {
+     "title": "File:Vue drone de la cité médiévale de Pérouges (avril 2021) au premier plan Porte-d'en-Bas.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Vue_drone_de_la_cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_%28avril_2021%29_au_premier_plan_Porte-d%27en-Bas.JPG/960px-Vue_drone_de_la_cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_%28avril_2021%29_au_premier_plan_Porte-d%27en-Bas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vue_drone_de_la_cit%C3%A9_m%C3%A9di%C3%A9vale_de_P%C3%A9rouges_(avril_2021)_au_premier_plan_Porte-d%27en-Bas.JPG",
+     "licence": "CC0",
+     "author": "Benoît Prieur",
+     "lat": 45.9025,
+     "lng": 5.18166667,
+     "cats": "Category:2021 images by Benoît Prieur Category:2021 in Pérouges Category:Aerial photographs of Pérouges Category:April 2021 in Ain Category:Auvergne-Rhône-Alpes photographs taken on 2021-04-25 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images of Pérouges by Benoît Prieur Category:Images taken from DJI Spark by Benoît Prieur Category:Photographs by Benoît Prieur Category:Self-published work Category:Taken with DJI FC1102 in France Category:Uploaded with PyCommonist Category:Views of medieval city of Pérouges"
+    },
+    {
+     "title": "iNat obs 110269510 (Pyrrhocoris apterus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/185988312/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/110269510",
+     "licence": "CC BY",
+     "author": "(c) luluchouette, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.9026206249,5.1796486816"
+    },
+    {
+     "title": "iNat obs 180924683 (Tilia tomentosa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/315241492/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/180924683",
+     "licence": "CC BY",
+     "author": "(c) Julien Lepage, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.9035033,5.1795257"
+    }
+   ]
+  },
+  "pes_001": {
+   "city": "Pesselieres",
+   "name": "The Sully Lime of Pesselières (Le Sully de Pesselières)",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Tilleul de Pesselières.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Tilleul_de_Pesseli%C3%A8res.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Tilleul_de_Pesseli%C3%A8res.jpg",
+     "licence": "Public domain",
+     "author": "Unknown authorUnknown author",
+     "lat": 47.563437,
+     "lng": 3.343451,
+     "cats": "Category:Files with coordinates missing SDC location of creation Category:Le Sully de Pesselières Category:Old images of Yonne uploaded by Benoît Prieur Category:PD-anon-70-EU Category:Postcards of Arrondissement Auxerre Category:Semeuse stamps on covers and postcards (5c) Category:Template Unknown (author) Category:Éditions Blin et Mouchon"
+    }
+   ]
+  },
+  "phl_001": {
+   "city": "Philadelphia",
+   "name": "Bartram's Ginkgo",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 64828179 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/104286818/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/64828179",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "39.9324033333,-75.2115466667"
+    },
+    {
+     "title": "iNat obs 64828179 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/104286827/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/64828179",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "39.9324033333,-75.2115466667"
+    },
+    {
+     "title": "iNat obs 23827090 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/36868772/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/23827090",
+     "licence": "CC BY",
+     "author": "(c) Navin Sasikumar, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "39.9320983887,-75.2115249634"
+    },
+    {
+     "title": "iNat obs 284633883 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/511554725/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/284633883",
+     "licence": "CC BY",
+     "author": "(c) Keenan Pepper, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "39.9324458208,-75.2116207991"
+    },
+    {
+     "title": "iNat obs 284633883 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/511554767/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/284633883",
+     "licence": "CC BY",
+     "author": "(c) Keenan Pepper, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "39.9324458208,-75.2116207991"
+    },
+    {
+     "title": "iNat obs 273378246 (Bartheletia paradoxa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/491692008/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/273378246",
+     "licence": "CC BY",
+     "author": "(c) Jeff, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "39.9325333333,-75.211655"
+    }
+   ]
+  },
+  "pir_001": {
+   "city": "Pirangi",
+   "name": "Cajueiro de Pirangi (The Cashew of Pirangi)",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Alex Regis Cajueiro de Pirangi Natal RN (40261562644).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Alex_Regis_Cajueiro_de_Pirangi_Natal_RN_%2840261562644%29.jpg/960px-Alex_Regis_Cajueiro_de_Pirangi_Natal_RN_%2840261562644%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Alex_Regis_Cajueiro_de_Pirangi_Natal_RN_(40261562644).jpg",
+     "licence": "Public domain",
+     "author": "MTur Destinos",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Cajueiro de Pirangi Category:Cashews in art Category:Files from MTur Destinos Flickr stream Category:Flickr images missing SDC creator Category:Flickr images missing SDC source of file Category:Flickr images reviewed by FlickreviewR 2 Category:PD-author-FlickrPDM"
+    },
+    {
+     "title": "File:Cajueiro (Alagoas) acesso.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cajueiro_%28Alagoas%29_acesso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Cajueiro_(Alagoas)_acesso.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "W Thiago M Galvao Barros",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brazil photographs taken on 2006-12-12 Category:CC-BY-SA-3.0 Category:Cajueiro (Alagoas) Category:Self-published work Category:Taken with Sony DSC-P93"
+    },
+    {
+     "title": "File:Cajueiro de Pirangi, Rio Grande do Norte.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Cajueiro_de_Pirangi%2C_Rio_Grande_do_Norte.jpg/960px-Cajueiro_de_Pirangi%2C_Rio_Grande_do_Norte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cajueiro_de_Pirangi,_Rio_Grande_do_Norte.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Flaviohmg",
+     "lat": -5.983728,
+     "lng": -35.122724,
+     "cats": "Category:Brazil photographs taken on 2017-10-12 Category:CC-BY-SA-4.0 Category:Cajueiro de Pirangi Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Trees in Brazil"
+    },
+    {
+     "title": "File:Cajueiro de Pirangi Rota do Sol.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cajueiro_de_Pirangi_Rota_do_Sol.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Cajueiro_de_Pirangi_Rota_do_Sol.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Marina Almeida",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.0 Category:Cajueiro de Pirangi Category:Flickr images missing SDC Flickr photo ID Category:Flickr images missing SDC creator Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR Category:Streets in Natal (Rio Grande do Norte) Category:Taken with Canon EOS 400D"
+    },
+    {
+     "title": "File:Macro cajueiro de Pirangi.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Macro_cajueiro_de_Pirangi.JPG/960px-Macro_cajueiro_de_Pirangi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Macro_cajueiro_de_Pirangi.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mateussf",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cajueiro de Pirangi Category:Images of Brazil by User:Mateussf Category:Self-published work Category:Taken with Sony DSC-W110"
+    },
+    {
+     "title": "File:Maior cajueiro do mundo 3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Maior_cajueiro_do_mundo_3.jpg/960px-Maior_cajueiro_do_mundo_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Maior_cajueiro_do_mundo_3.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Wolfhardt",
+     "lat": -5.973991,
+     "lng": -35.12902,
+     "cats": "Category:Brazil photographs taken on 2006-04-09 Category:CC-BY-SA-3.0 Category:Cajueiro de Pirangi Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon Coolpix 2100"
+    },
+    {
+     "title": "File:Mico no cajueiro de Pirangi.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Mico_no_cajueiro_de_Pirangi.JPG/960px-Mico_no_cajueiro_de_Pirangi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Mico_no_cajueiro_de_Pirangi.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mateussf",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cajueiro de Pirangi Category:Images of Brazil by User:Mateussf Category:Self-published work Category:Taken with Sony DSC-W110"
+    },
+    {
+     "title": "File:Pirangi cashew tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Pirangi_cashew_tree.jpg/960px-Pirangi_cashew_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pirangi_cashew_tree.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "edsonaoki",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Anacardium occidentale trunks Category:CC-BY-SA-3.0 Category:Cajueiro de Pirangi Category:Files by Wikivoyage user Edsonaoki Category:Files from Wikivoyage wts Category:Files moved from wts.oldwikivoyage to Commons requiring review Category:Files moved to Commons requiring review as of 30 November 2012 Category:Self-published work Category:Taken with Sony DSC-P200"
+    },
+    {
+     "title": "File:The World's Biggest Cajueiro (Cashew Tree) (8226022231).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/The_World%27s_Biggest_Cajueiro_%28Cashew_Tree%29_%288226022231%29.jpg/960px-The_World%27s_Biggest_Cajueiro_%28Cashew_Tree%29_%288226022231%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_World%27s_Biggest_Cajueiro_(Cashew_Tree)_(8226022231).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Ben Tavener from Curitiba, Brazil",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.0 Category:Cajueiro de Pirangi Category:Cashews in art Category:Flickr images reviewed by FlickreviewR 2 Category:Signs in Brazil"
+    },
+    {
+     "title": "File:The World's Biggest Cajueiro (Cashew Tree) (8226028635).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/The_World%27s_Biggest_Cajueiro_%28Cashew_Tree%29_%288226028635%29.jpg/960px-The_World%27s_Biggest_Cajueiro_%28Cashew_Tree%29_%288226028635%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_World%27s_Biggest_Cajueiro_(Cashew_Tree)_(8226028635).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Ben Tavener from Curitiba, Brazil",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.0 Category:Cajueiro de Pirangi Category:Cashew nuts as food Category:Flickr images reviewed by FlickreviewR 2"
+    },
+    {
+     "title": "File:Vista do mirante do cajueiro de Pirangi.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Vista_do_mirante_do_cajueiro_de_Pirangi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Vista_do_mirante_do_cajueiro_de_Pirangi.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Marina Almeida",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.0 Category:Cajueiro de Pirangi Category:Flickr images reviewed by FlickreviewR"
+    },
+    {
+     "title": "iNat obs 148064561 (Anacardium occidentale)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/254901731/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/148064561",
+     "licence": "CC BY",
+     "author": "(c) Martin Vallejos, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-5.9791916667,-35.1231694444"
+    }
+   ]
+  },
+  "psz_001": {
+   "city": "Pisz Forest",
+   "name": "The Perkun Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Dąb Perkun pomnik przyrody w rezerwacie „Jezioro Nidzkie\".jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/D%C4%85b_Perkun_pomnik_przyrody_w_rezerwacie_%E2%80%9EJezioro_Nidzkie%22.jpg/960px-D%C4%85b_Perkun_pomnik_przyrody_w_rezerwacie_%E2%80%9EJezioro_Nidzkie%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:D%C4%85b_Perkun_pomnik_przyrody_w_rezerwacie_%E2%80%9EJezioro_Nidzkie%22.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Marta Reszka",
+     "lat": 53.613528,
+     "lng": 21.501944,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wikiwakacje 2016 Category:Images from Wikiwakacje 2016 (nature) Category:Leśniczówka Pranie Category:Natural monuments in Warmian-Masurian Voivodeship Category:Puszcza Piska Category:Self-published work Category:Uploaded via Campaign:wikiwakacje-n"
+    }
+   ]
+  },
+  "pgn_001": {
+   "city": "Plauginiai Forest",
+   "name": "The Beautiful Oak of Plauginiai Forest",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "plg_001": {
+   "city": "Plunge",
+   "name": "Perkūnas Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:House of Perkūnas Kaunas 1994.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/House_of_Perk%C5%ABnas_Kaunas_1994.jpg/960px-House_of_Perk%C5%ABnas_Kaunas_1994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:House_of_Perk%C5%ABnas_Kaunas_1994.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "JopkeB",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1994 in Kaunas Category:CC-BY-SA-4.0 Category:House of Perkūnas Category:Lithuania photographs taken on 1994-07-27 Category:Self-published work Category:Uploads by user:JopkeB"
+    }
+   ]
+  },
+  "plg_002": {
+   "city": "Plunge",
+   "name": "Aukštasis Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "plg_003": {
+   "city": "Plunge",
+   "name": "Mykolas Oginskis Linden",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Teodoras Bohdanas Oginskis (1568–1640) thombstone, Kruonis, Lithuania.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Teodoras_Bohdanas_Oginskis_%281568%E2%80%931640%29_thombstone%2C_Kruonis%2C_Lithuania.jpg/960px-Teodoras_Bohdanas_Oginskis_%281568%E2%80%931640%29_thombstone%2C_Kruonis%2C_Lithuania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Teodoras_Bohdanas_Oginskis_(1568%E2%80%931640)_thombstone,_Kruonis,_Lithuania.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vytautas Budvytis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Church of Saint Mary of the Angels in Kruonis Category:Gravestones in Lithuania Category:House of Ogiński"
+    }
+   ]
+  },
+  "plg_004": {
+   "city": "Plunge",
+   "name": "Laikrodinė Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "plg_005": {
+   "city": "Plunge",
+   "name": "Mingėlos Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Mingėlos ąžuolas.JPG (Wikidata Q31198409)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Ming%C4%97los_%C4%85%C5%BEuolas.JPG/960px-Ming%C4%97los_%C4%85%C5%BEuolas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ming%C4%97los_%C4%85%C5%BEuolas.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.86959,
+     "lng": 21.74322,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mingėlos ąžuolas Category:Quercus in Lithuania Category:Self-published work",
+     "source": "wikidata/Q31198409"
+    },
+    {
+     "title": "File:2020. Mingėlos ąžuolas.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/2020._Ming%C4%97los_%C4%85%C5%BEuolas.JPG/960px-2020._Ming%C4%97los_%C4%85%C5%BEuolas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2020._Ming%C4%97los_%C4%85%C5%BEuolas.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.869523,
+     "lng": 21.743283,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mingėlos ąžuolas Category:Self-published work"
+    },
+    {
+     "title": "File:Mingėlos ąžuolas, drevė.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Ming%C4%97los_%C4%85%C5%BEuolas%2C_drev%C4%97.JPG/960px-Ming%C4%97los_%C4%85%C5%BEuolas%2C_drev%C4%97.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ming%C4%97los_%C4%85%C5%BEuolas,_drev%C4%97.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.869523,
+     "lng": 21.743283,
+     "cats": "Category:Blue cats in trees Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mingėlos ąžuolas Category:Self-published work Category:Tree hollows"
+    },
+    {
+     "title": "File:Mingėlos ąžuolas.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Ming%C4%97los_%C4%85%C5%BEuolas.JPG/960px-Ming%C4%97los_%C4%85%C5%BEuolas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ming%C4%97los_%C4%85%C5%BEuolas.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.86959,
+     "lng": 21.74322,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mingėlos ąžuolas Category:Quercus in Lithuania Category:Self-published work"
+    },
+    {
+     "title": "File:Vieštovėnai, Mingėlos ąžuolas.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Vie%C5%A1tov%C4%97nai%2C_Ming%C4%97los_%C4%85%C5%BEuolas.JPG/960px-Vie%C5%A1tov%C4%97nai%2C_Ming%C4%97los_%C4%85%C5%BEuolas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vie%C5%A1tov%C4%97nai,_Ming%C4%97los_%C4%85%C5%BEuolas.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.869523,
+     "lng": 21.743283,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Mingėlos ąžuolas Category:Self-published work"
+    }
+   ]
+  },
+  "plg_006": {
+   "city": "Plunge",
+   "name": "The Witch's Ash",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:65 - Raganos uosis.jpg (Wikidata Q12670714)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/65_-_Raganos_uosis.jpg/960px-65_-_Raganos_uosis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:65_-_Raganos_uosis.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Žemaitijos kelias",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Raganos uosis Category:Self-published work",
+     "source": "wikidata/Q12670714"
+    }
+   ]
+  },
+  "plc_001": {
+   "city": "Polchow",
+   "name": "Polchower Linde",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Polchower Sommerlinde.jpg (Wikidata Q123483116)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Polchower_Sommerlinde.jpg/960px-Polchower_Sommerlinde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Markus Göllnitz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Polchower Linde Category:Self-published work",
+     "source": "wikidata/Q123483116"
+    },
+    {
+     "title": "File:Linde Polchow, 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Linde_Polchow%2C_1.jpg/960px-Linde_Polchow%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Linde_Polchow,_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Rainer Lippert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Creative Commons Attribution-Share Alike 4.0 missing SDC copyright license Category:Creative Commons Attribution-Share Alike missing SDC copyright status Category:Media lacking a description Category:Polchower Linde Category:Self-published work Category:Self-published work missing SDC copyright license"
+    },
+    {
+     "title": "File:Linde Polchow, 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Linde_Polchow%2C_2.jpg/960px-Linde_Polchow%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Linde_Polchow,_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Rainer Lippert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Creative Commons Attribution-Share Alike 4.0 missing SDC copyright license Category:Creative Commons Attribution-Share Alike missing SDC copyright status Category:Media lacking a description Category:Polchower Linde Category:Self-published work Category:Self-published work missing SDC copyright license"
+    }
+   ]
+  },
+  "pnp_001": {
+   "city": "Poleski National Park",
+   "name": "The Dominik Oak",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 346398781 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/631424910/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/346398781",
+     "licence": "CC BY",
+     "author": "(c) Bobo-X, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "51.448375989,23.12410591"
+    },
+    {
+     "title": "iNat obs 280863231 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/504480568/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/280863231",
+     "licence": "CC BY",
+     "author": "(c) Bobo-X, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "51.4483219,23.1242072997"
+    },
+    {
+     "title": "iNat obs 280863231 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/504480615/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/280863231",
+     "licence": "CC BY",
+     "author": "(c) Bobo-X, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "51.4483219,23.1242072997"
+    }
+   ]
+  },
+  "prv_001": {
+   "city": "Port Renfrew",
+   "name": "Big Lonely Doug",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Big Lonely Doug 2 (cropped 3).jpg (Wikidata Q60594140)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Big_Lonely_Doug_2_%28cropped_3%29.jpg/960px-Big_Lonely_Doug_2_%28cropped_3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Big_Lonely_Doug_2_(cropped_3).jpg",
+     "licence": "CC BY 4.0",
+     "author": "Ryan Cutler",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Big Lonely Doug Category:CC-BY-4.0 Category:Extracted images Category:Vancouver Island",
+     "source": "wikidata/Q60594140"
+    },
+    {
+     "title": "iNat obs 347627959 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/633862788/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/347627959",
+     "licence": "CC BY",
+     "author": "(c) James Telford, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.646222,-124.450567"
+    },
+    {
+     "title": "iNat obs 323030915 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/584464411/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/323030915",
+     "licence": "CC BY",
+     "author": "(c) harrii, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.6462616332,-124.4504811575"
+    },
+    {
+     "title": "iNat obs 109298465 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/184189779/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/109298465",
+     "licence": "CC BY",
+     "author": "(c) Jenn (McPhee) Dyson, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.6466466667,-124.4493466667"
+    },
+    {
+     "title": "iNat obs 395986351 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/726138842/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/395986351",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "48.6462444444,-124.4506833333"
+    }
+   ]
+  },
+  "prv_002": {
+   "city": "Port Renfrew",
+   "name": "Red Creek Fir",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Red Creek Fir being tree-hugged..jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Red_Creek_Fir_being_tree-hugged..jpg/960px-Red_Creek_Fir_being_tree-hugged..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Red_Creek_Fir_being_tree-hugged..jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jorijnsmit",
+     "lat": 48.57976111,
+     "lng": -124.22072778,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:People hugging trees Category:Pseudotsuga menziesii (bark) Category:Pseudotsuga menziesii subsp. menziesii Category:Red Creek Fir Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 146378373 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/251647155/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/146378373",
+     "licence": "CC BY",
+     "author": "(c) Mark Pollock, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.579455,-124.2208416667"
+    }
+   ]
+  },
+  "ptl_011": {
+   "city": "Portland",
+   "name": "The Mount Tabor Sequoia",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 232187416 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/412476051/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/232187416",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "45.5110049722,-122.5987169722"
+    },
+    {
+     "title": "iNat obs 232187416 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/412476079/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/232187416",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "45.5110049722,-122.5987169722"
+    }
+   ]
+  },
+  "ptl_012": {
+   "city": "Portland",
+   "name": "The Powell Butte Poplar",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ptl_013": {
+   "city": "Portland",
+   "name": "The Parkrose Beech",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Parkrose-Sumner Transit Center (2017).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Parkrose-Sumner_Transit_Center_%282017%29.jpg/960px-Parkrose-Sumner_Transit_Center_%282017%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parkrose-Sumner_Transit_Center_(2017).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steve Morgan",
+     "lat": 45.55835278,
+     "lng": -122.56500556,
+     "cats": "Category:Buses in the United States photographed in 2017 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:June 2017 in Portland, Oregon Category:License migration redundant Category:New Flyer D40LF buses of TriMet Category:Parkrose/Sumner Transit Center Category:Self-published work Category:TriMet buses"
+    },
+    {
+     "title": "File:Parkrose High School - Portland, Oregon.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Parkrose_High_School_-_Portland%2C_Oregon.JPG/960px-Parkrose_High_School_-_Portland%2C_Oregon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parkrose_High_School_-_Portland,_Oregon.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "M.O. Stevens",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2012 in Portland, Oregon Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Parkrose High School Category:Self-published work Category:Taken with Pentax K200D"
+    },
+    {
+     "title": "File:Parkrose Sumner TC MAX Station.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Parkrose_Sumner_TC_MAX_Station.jpg/960px-Parkrose_Sumner_TC_MAX_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parkrose_Sumner_TC_MAX_Station.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Electro Ultra 217.",
+     "lat": 45.50306944,
+     "lng": -122.67083056,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:March 2016 in Portland, Oregon Category:Parkrose/Sumner Transit Center Category:Self-published work"
+    }
+   ]
+  },
+  "ptl_014": {
+   "city": "Portland",
+   "name": "The Knott Street Wingnuts",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Caucasian Wingnut sign - Portland Oregon.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Caucasian_Wingnut_sign_-_Portland_Oregon.jpg/960px-Caucasian_Wingnut_sign_-_Portland_Oregon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Caucasian_Wingnut_sign_-_Portland_Oregon.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ian Poellet",
+     "lat": 45.542193,
+     "lng": -122.650687,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Irvington, Portland, Oregon Category:January 2017 in Portland, Oregon Category:Pterocarya fraxinifolia in the United States Category:Self-published work Category:Signs in Portland, Oregon Category:Trees in Portland, Oregon"
+    }
+   ]
+  },
+  "ptl_015": {
+   "city": "Portland",
+   "name": "The Eighteenth Avenue Planes",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:19190117 Prohibition - Eighteenth Amendment - The New York Times.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/19190117_Prohibition_-_Eighteenth_Amendment_-_The_New_York_Times.jpg/960px-19190117_Prohibition_-_Eighteenth_Amendment_-_The_New_York_Times.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:19190117_Prohibition_-_Eighteenth_Amendment_-_The_New_York_Times.jpg",
+     "licence": "Public domain",
+     "author": "The New York Times newspaper (published January 17, 1919)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1919-01-17 Category:Eighteenth Amendment to the United States Constitution Category:January 1919 in the United States Category:PD US expired Category:The New York Times, 1919"
+    }
+   ]
+  },
+  "ptl_016": {
+   "city": "Portland",
+   "name": "The Irvington Elm",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ptl_017": {
+   "city": "Portland",
+   "name": "The Thompson Street Horsechestnut",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ptl_018": {
+   "city": "Portland",
+   "name": "The Twenty-Fourth Avenue Catalpas",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ptl_019": {
+   "city": "Portland",
+   "name": "The Overlook Planes",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ptl_020": {
+   "city": "Portland",
+   "name": "The Irvington Sycamore",
+   "checked": "2026-09-09",
+   "sweep": 5,
+   "candidates": []
   }
  },
  "notes": [

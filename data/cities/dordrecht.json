@@ -478,7 +478,15 @@
       "paid_entry": true,
       "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Dordrecht_-_Dordrechts_Museum.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Michiel1972, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2048,
+        "height": 1536
+      }
     },
     {
       "id": "dor_016",
