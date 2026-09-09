@@ -6276,6 +6276,15 @@
     "note": "40 distinct images, 36 viewed; 14 approvals, 0 holds. Sent an intermediate report with eight non-existent tree ids before finishing correctly, which cost a needless re-dispatch. Sweep matched two dead stumps of other Oyamazumi camphors and a villa named Marienboom.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Utrecht",
+    "kind": "write",
+    "tokens": 34000,
+    "trees": 3,
+    "note": "3 stories + recognition lines from verified register entries (utr_035-037, all sharing small clusters with already-published trees of different species); 1 best_time set, 2 correctly left empty; single-source hedging and publish-and-ask species question in prose",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
