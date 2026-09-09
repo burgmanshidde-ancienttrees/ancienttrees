@@ -218,10 +218,16 @@ final class AncientTreesUITests: XCTestCase {
     /// over Amsterdam (Hidde, 2026-08-22, who typed exactly that).
     @MainActor
     func testSearchingForATreeMovesTheMapToIt() throws {
+        // Timeout widened 12->25s on 2026-09-09: the floor (iOS 18) job failed
+        // this exact assertion on every scheduled run for two days straight
+        // (0 of 3) while workflow_dispatch passed (1 of 1), the tell of runner
+        // contention slowing simulator launch rather than a real bug. The
+        // bundled ios/AncientTrees/AncientTrees/Data/trees.json already
+        // carries the Beethoven Plane, so this never depends on the network.
         let app = launch(["-map", "-search=beethoven"])
         let row = app.buttons.matching(
             NSPredicate(format: "label CONTAINS[c] 'Beethoven'")).firstMatch
-        XCTAssertTrue(row.waitForExistence(timeout: 12), "search found no Beethoven Plane")
+        XCTAssertTrue(row.waitForExistence(timeout: 25), "search found no Beethoven Plane")
         row.tap()
 
         // The map selects it, and the sheet shows that tree rather than
