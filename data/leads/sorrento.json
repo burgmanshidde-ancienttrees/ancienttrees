@@ -5,6 +5,22 @@
  "note": "Candidates found during the 2026-08-16 verify pass (Italy MASAF national monumental-trees register, 19 candidates within the comune) that did not ship this pass. Kept because the platform's direction is to map every remarkable tree eventually. Never rendered: these are leads, not entries. Four trees shipped to data/research/sorrento-verified.json (Villa Fondi holm oak and stone pine, the cemetery cypress, the Via Maresca plane), all in Piano di Sorrento / Sant'Agnello, which adjoin Sorrento on the peninsula.",
  "leads": [
   {
+   "name": "Gelso nero (Morus nigra), Via Partenope 31, Massa Lubrense",
+   "species": "Morus nigra L.",
+   "lat": 40.624844,
+   "lng": 14.343319,
+   "status": "lead",
+   "why": "2026-09-09 deepen pass, MASAF sheet 02/F030/NA/15, girth 400cm, height 6m. Comune Massa Lubrense, not Sorrento/Piano di Sorrento/Sant'Agnello, and further from Sorrento centre than this page's day-trip cluster in the opposite direction along the peninsula. Not researched beyond the register row this pass: wrong container for the Sorrento page, belongs to a future Massa Lubrense city page. Recorded so a future pass does not treat it as new."
+  },
+  {
+   "name": "Olivo, Via San Liberatore 78, Massa Lubrense",
+   "species": "Olea europaea L.",
+   "lat": 40.605908,
+   "lng": 14.337922,
+   "status": "lead",
+   "why": "2026-09-09 deepen pass, MASAF sheet 01/F030/NA/15, no girth recorded, height 10m. Same reason as the Gelso nero above: comune Massa Lubrense, wrong container for this page, not researched further this pass. Belongs to a future Massa Lubrense city page."
+  },
+  {
    "name": "Pino domestico of Via Bagnulo",
    "species": "Pinus pinea",
    "lat": 40.636703,
@@ -22,6 +38,10 @@
   }
  ],
  "blocked": [
+  {
+   "name": "Eucalitto blu (Eucalyptus globulus) of Matignano, Villa Thuja, Vico Equense",
+   "reason": "2026-09-09 deepen pass. MASAF sheet 05/L845/NA/15, girth 450cm, height 20m, presumed age 150 years (via scheda_86 on agricoltura.regione.campania.it, directly fetched; corroborated by a 2018 Positanonews piece on the same designation round, also directly fetched). Locally known well enough that the street is called 'via Calipso' after it. Two reasons this does not ship on the Sorrento page. Container: it is in Vico Equense (locality Matignano), not Sorrento or its published day-trip neighbours (Piano di Sorrento, Sant'Agnello); it belongs to a future Vico Equense page. Access: the scheda's own text places the trunk 'along the property's boundary wall' of Villa Thuja, a private residence, and neither source states or shows the tree is visible or reachable from the public street (via Calipso runs past the property). Blocked on both grounds; reconsider only when/if a Vico Equense page opens AND a source or streetview-equivalent confirms the trunk or canopy is genuinely visible from public ground."
+  },
   {
    "name": "Roverella, Tasso and Tiglio of the Antico Parco del Principe (Colli di San Pietro)",
    "reason": "RESOLVED this pass, moved from leads to blocked. All three at Via Cermenna 12, Piano di Sorrento, ~4.7km from Sorrento centre (already past or at the edge of the 30-minute day-trip boundary on its own). Confirmed via two independent sources each: MASAF register plus dedicated Regione Campania schede (scheda_41 Tilia platyphyllos girth 365cm, scheda_42 Quercus pubescens girth 495cm, both directly fetched; a scheda for the yew/tasso was searched for but not located by number, though scheda_43 'il Tasso del Parco del Principe' was seen in a search result and is presumed to exist). Access is now settled rather than merely suspected: the site trades today as 'Hotel & Resort Antico Parco del Principe', a wedding/event venue and hotel with trekking paths, stables, tennis, two pools and rooms for hire (confirmed via the hotel's own trivago/trip.com/superdossier listings), i.e. a reservation-and-reception-desk property, not a walk-in park. Fails hard rule 10's first test outright. Do not re-research; if a future pass finds evidence of a public path through the grounds or open days, reconsider."
