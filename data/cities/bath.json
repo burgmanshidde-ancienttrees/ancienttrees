@@ -120,10 +120,12 @@
       "access": "Free, open access, public green",
       "transport": "15 min walk from Bath Spa railway station",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/London_Plane_trees_at_The_Circus%2C_Bath_2025-07-24.jpg",
+        "license": "CC0",
+        "attribution": "Andy Li, via Wikimedia Commons",
+        "status": "approved",
+        "width": 8160,
+        "height": 6144
       },
       "curation_status": "flagged",
       "notes": "Presented as a single ensemble entry per CLAUDE.md's collectible-point test: five trees in one compact, famous, self-contained green with one obvious place to stand, the same pattern as the Lomanstraat tunnel and Meiji Jingu Gaien avenue precedents. Planting date ('around 1820') is Wikipedia's figure, citing Bath & North East Somerset Council and Bath Preservation Trust records directly (both primary-ish sources, inaccessible to direct fetch this run but independently corroborated by multiple secondary summaries). No single-tree girth or height figures found; flagged for that reason, not for doubt about the trees' existence or age bracket.",
