@@ -60,6 +60,26 @@ same window already fixed it (commits ff8442e8, eadba6bc, e5d10c51, the
 last a revert of a duplicate fix). No scheduled iOS run has fired since the
 fix to confirm green, but the code and the CI finding now agree.
 
+With rung 2 clear and no new submissions, no ready leads, no page gaps and
+nothing stuck on recognition, ran `photo_hunt.py`'s free API sweep (rung 6),
+which found 6 fresh candidates for dor_014 and one each for dor_015/016. All
+6 of dor_014's were rejected on sight: two deer photos, a wide pond view
+with no single tree, two more animal shots and an 1896 black-and-white
+archival plate. The one candidate shared by dor_015 and dor_016 (matched to
+both by category, not by species) showed the museum's mottled-bark plane
+trees clearly, so it approved for dor_015 and rejected for dor_016, whose
+beeches are not in the frame. Then ran `vendor_photos.py`, which cleared the
+whole 78-photo not-on-our-domain backlog the session-start brief named, not
+only the one just approved. Rebuilt, qa.py clean, committed and pushed.
+
+`out_dordrecht_bomen.pdf` (the Bomenstichting's Dordrecht tree-walk booklet,
+downloaded by the earlier attempt) could not be read in this environment:
+no text layer WebFetch could extract, and a manual zlib stream-extraction
+attempt found only image data. poppler-utils is not installed and
+apt-get/pip both need approval this run does not have. Left on disk;
+harmless if a future session with rendering tools wants it, otherwise safe
+to ignore.
+
 ## 2026-09-09 - Photo pass: 63 photographs, and the seam that produced them
 
 A heavy photo session on Hidde's ask. It changed where we look, and that is
