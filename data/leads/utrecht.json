@@ -96,7 +96,7 @@
       "longitude": 5.127723,
       "place": "Naast brug Herenstraat/Lepelenburg, Utrecht",
       "planted_band": "1910-1920",
-      "reason": "gemeente-owned, visitable ja, right beside utr_016 (Oriental Plane), same bridge. Good cluster candidate for a follow-up pass.",
+      "reason": "ALREADY PUBLISHED: written and merged into data/cities/utrecht.json as utr_035. Do not re-verify or re-publish; recorded here only so a future pass does not repeat the lookup.",
       "species": "Horse Chestnut (Aesculus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -127,7 +127,7 @@
       "longitude": 5.139382,
       "place": "z-westen van Burgm.F.Andreamonument, Wilhelminapark, Utrecht",
       "planted_band": "1880-1890",
-      "reason": "gemeente-owned, visitable ja, n_trees 2 (register records a pair near the Andrea monument). Wilhelminapark cluster.",
+      "reason": "ALREADY PUBLISHED: written and merged into data/cities/utrecht.json as utr_036. Do not re-verify or re-publish; recorded here only so a future pass does not repeat the lookup.",
       "species": "Maple (Acer sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -138,7 +138,7 @@
       "longitude": 5.128886,
       "place": "Aan voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
       "planted_band": "1830-1840",
-      "reason": "gemeente-owned, visitable ja, Zonnenburg/Sterrenwacht cluster, one of the oldest bands in the whole candidate set. Checked this pass: no independent second source found. Searched web + monumentaltrees.com's Zocherpark page (403s automated fetches) + the Bomenstichting 'Langs monumentale bomen in Utrecht' PDF and the Wilhelminapark 'Rondje Oude Reuzen' PDF, both of which use a custom-encoded font that defeats text extraction (tried twice, gave up per the two-attempts rule; a browser-rendered read, not a raw fetch, would be needed). kanokaartutrecht.nl's canal-side monumental-trees route (19 numbered trees, each citing an LRMB register nr, see the Gewone plataan/utr_018 note) does NOT include this hornbeam's register nr among its 19 stops. Still just a lead.",
+      "reason": "ALREADY PUBLISHED: written and merged into data/cities/utrecht.json as utr_037. Do not re-verify or re-publish; recorded here only so a future pass does not repeat the lookup.",
       "species": "Hornbeam (Carpinus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
