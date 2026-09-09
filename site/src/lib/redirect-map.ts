@@ -143,7 +143,25 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // open, and there was none. Nothing is wrong with any of the trees. The
 // research, the story and the sources are kept in data/leads/ in full and go
 // back the day the access changes.
+// utrecht utr_010/024/025/027/028/029/030 (2026-09-09): seven trees the
+// national register itself records as gone. The LRMB import read every field
+// except the one that says whether the tree still exists: `status`, whose own
+// coded domain is 3 Monumentaal, 5 Dood/geveld. All seven were status 5 and
+// went live anyway. The Bomenstichting's inspection layer carries the notes:
+// "alleen nog een behoorlijke stamvoet" (the wingnut, 2022), "al geveld tussen
+// juli 2014 en augustus 2015" (the horse chestnut), "op die plek een andere en
+// veel jongere boom" (the silver maples, 2024), and the hornbeam simply
+// "onvindbaar" (2015). Two were recorded dead as early as 1985. Only Utrecht
+// was affected: of 38 published trees citing an LRMB number, these were the
+// only rows that were not status 3.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["utrecht", "caucasian-wingnut-of-wilhelminapark"],
+  ["utrecht", "elm-of-the-wilhelminapark-west-gate"],
+  ["utrecht", "pagoda-tree-of-lepelenburg"],
+  ["utrecht", "horse-chestnut-by-the-herenstraat-bridge"],
+  ["utrecht", "lime-of-the-van-limburg-stirumlaan"],
+  ["utrecht", "silver-maples-of-the-andrea-monument"],
+  ["utrecht", "hornbeam-of-the-old-observatory-path"],
   ["nara", "cedar-of-the-shrine-path-near-nigatsu-do"],
   ["nara", "leaning-cedar-of-the-nigatsu-do-approach"],
   ["nara", "spreading-tree-by-the-nara-park-pond-pavilion"],
