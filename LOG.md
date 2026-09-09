@@ -11,6 +11,77 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - FOR HIDDE: iOS CI fix diagnosed, written, blocked on push permission
+
+Rung 2 (CLAUDE.md): `python3 scripts/health.py` flagged the iOS app workflow as
+failing on its own schedule, 3 runs in a row (09-08 09:28, 09-08 19:43,
+09-09 09:30), while manual dispatch (09-09 00:43) passed. Root cause found in
+both failing jobs, and it is CI flakiness under load, not an app bug:
+
+1. **The "floor" job (iOS 18) has no retry.** The newest-OS "test" job already
+   carries `-retry-tests-on-failure -test-iterations 2`; the floor job's
+   `xcodebuild test` call never got it. This run's floor failure was
+   `testSearchingForATreeMovesTheMapToIt`, "search found no Beethoven Plane",
+   against data bundled in the app (needs no network) — a timing flake on a
+   loaded runner, exactly the class of failure the file's own comments already
+   describe (two simulators launching at once took 60-110s each on 2026-08-21).
+2. **The "test" job's own retry made it lie.** With retries on, a test can
+   fail once and pass on the second try, but the per-iteration
+   `error: -[...]` line stays in `/tmp/xcodebuild.log`, and the step exits 1
+   on that line alone before the retry-aware `Verdict` step (which reads the
+   xcresult's actual passed/failed counts) ever runs. This run's test-job
+   failure, `testATreePageCannotCollectForYou`, "Timed out while requesting
+   launch progress", was followed two lines later in the same log by
+   `** TEST SUCCEEDED **` — the retry had already fixed it, and the workflow
+   reported red anyway.
+
+Both are fixed in the working tree (`.github/workflows/ios.yml`), verified
+against the actual failing logs, and the fix is small: add the retry flag to
+the floor job, and only treat a per-iteration error line as fatal when the
+run did NOT end in `** TEST SUCCEEDED **`. **It cannot be pushed**: this
+GitHub App's token has `contents` but not `workflows` permission, and GitHub
+refuses any push touching `.github/workflows/*` from it ("refusing to allow a
+GitHub App to create or update workflow `workflows` permission"). Two ways
+to close this: grant the App the `workflows` permission so a future run can
+push it directly, or apply this diff yourself:
+
+```diff
+--- a/.github/workflows/ios.yml
++++ b/.github/workflows/ios.yml
+@@ -257,7 +257,15 @@ jobs:
+           # "<file>:<line>: error: -[Class test] : ...", which the
+           # COMPILE_ERR pattern above never matches because that one always
+           # carries a column number.
+-          if grep -qE ': error: -\[' /tmp/xcodebuild.log; then
++          # And a THIRD false positive, found 2026-09-09: -retry-tests-on-failure
++          # means a test can fail once and pass on the retry, which still leaves
++          # its "error: -[...]" line sitting in this log even though xcodebuild's
++          # own final verdict is "** TEST SUCCEEDED **". Exiting on that line
++          # alone reported a green retry as red before Verdict, the step that
++          # reads the retry-aware xcresult counts, ever got to run. So: only
++          # treat an XCTest error line as fatal here when the run did not
++          # actually end in "** TEST SUCCEEDED **".
++          if grep -qE ': error: -\[' /tmp/xcodebuild.log && ! grep -q '\*\* TEST SUCCEEDED \*\*' /tmp/xcodebuild.log; then
+             echo "::error::The app built. Tests FAILED, named below. This is not a build problem."
+             grep -E ': error: -\[' /tmp/xcodebuild.log | sed 's/^.*: error: //' | sort -u
+             exit 1
+@@ -493,6 +501,7 @@ jobs:
+             -scheme AncientTrees \
+             -destination "id=$UDID" \
+             -derivedDataPath /tmp/dd \
++            -retry-tests-on-failure -test-iterations 2 \
+             -parallel-testing-enabled NO \
+             -skip-testing:AncientTreesUITests/SweepFrames \
+             -skip-testing:AncientTreesUITests/RefusedWalk \
+```
+
+Both layout checks (`appfit.py`) were already clean by 09-09 09:30 (0 findings
+on 136 screens across 4 phones): a same-day fix from earlier in the queue
+(`mytrees-followers`/`mytrees-following` tap targets) had landed and worked.
+So nothing about the app's own UI is broken; this was CI reliability only.
+Pushed separately: a routine `data/mail-health.json` timestamp from this
+run's `health.py` check (commit 4a385ce9). Moving on to Step 0's next rung.
+
 ## 2026-09-09 (continuation) - 75 recognition lines across Krakow, Arnhem and Porto, the three biggest gaps site-wide
 
 After finishing the Leeuwarden claim, checked the rest of the ladder:
