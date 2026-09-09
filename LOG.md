@@ -11,6 +11,63 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - The iOS CI fix DID push once, then got reverted 22 seconds later with no reason on record; re-tried, wall confirmed still up
+
+Picked up after an earlier attempt in this window had stopped early with 93
+minutes unspent. Followed the resume order: `passcheck.py --claims` showed
+one standing claim (sorrento, verify, by night-run), dispatched a verify
+agent on it in the background (still running as this entry is written; its
+result lands separately). `leads.py --ready` was empty.
+
+While that ran, checked rung 2: `health.py` still flags "iOS app" as the
+one broken thing. Looked at `git log` before touching anything, since the
+entry below this one (the newest at the time) claimed the fix "cannot be
+pushed" — and found that claim was already stale: a LATER attempt in this
+same window (16:56:19 UTC, commit b75e637b) had written a similar fix and
+`git push` had actually SUCCEEDED, only for the very next commit 22 seconds
+later (45863346) to revert it with no message beyond the auto-generated
+revert text, no LOG entry, and no explanation on record. So the picture
+this file gave at its own top ("blocked on push permission") was wrong by
+the time it was read: the wall came down once, and something (not a
+recorded decision) put it back up.
+
+Re-wrote the same two fixes (floor job never got `-retry-tests-on-failure
+-test-iterations 2`; the "test" job's own grep-and-exit-1 kills a run its
+own retry already recovered, ignoring xcodebuild's own `** TEST SUCCEEDED
+**` verdict two lines later) and tried to push again, expecting to either
+land it for good or get a clean answer. Got the clean answer:
+`refusing to allow a GitHub App to create or update workflow
+.github/workflows/ios.yml without workflows permission`, same wall as
+every attempt except the one 22 seconds of history above. Reverted locally
+(`git reset --soft HEAD~1` then `git checkout -- .github/workflows/ios.yml`)
+rather than leave a stranded commit blocking the next push. Nothing else
+changed.
+
+**FOR HIDDE: two possibilities, and only you can tell which.** Either the
+GitHub App's `workflows` permission is genuinely absent and b75e637b's
+push should not have been possible (in which case it landing was a GitHub
+transient, and reverting it it 22 seconds later without comment was
+probably the right instinct even though nobody wrote why), or the
+permission was briefly present and something external removed it. Either
+way, the fix itself is small, understood, and has now been independently
+re-derived twice with the same diagnosis. If you grant the App `workflows`
+permission (Settings -> GitHub Apps -> this app -> Permissions), a future
+run can land it directly. Otherwise, apply by hand in
+`.github/workflows/ios.yml`:
+
+1. "Build and test on the floor" step (~line 491, the `xcodebuild test`
+   call): add `-retry-tests-on-failure -test-iterations 2 \` right after
+   `-derivedDataPath /tmp/dd \`, matching the sibling "test" job.
+2. "Build and test" step (~line 260, the "test" job): replace
+   `if grep -qE ': error: -\[' /tmp/xcodebuild.log; then` with:
+   ```
+   LAST_VERDICT=$(grep -oE '\*\* TEST (SUCCEEDED|FAILED) \*\*' /tmp/xcodebuild.log | tail -1)
+   if grep -qE ': error: -\[' /tmp/xcodebuild.log && [ "$LAST_VERDICT" != "** TEST SUCCEEDED **" ]; then
+   ```
+
+Not re-attempting a third push this window: the wall is now confirmed
+twice in the last hour, and a third try buys nothing new.
+
 ## 2026-09-09 (continuation) - FOR HIDDE: iOS CI fix diagnosed, written, blocked on push permission
 
 Rung 2 (CLAUDE.md): `python3 scripts/health.py` flagged the iOS app workflow as
