@@ -644,10 +644,12 @@
       ],
       "verify_notes": "2026-08-30: reader submission #54 flagged that this tree has no photograph, which the page already shows as an honest gap. The submitter also filled in the form's location field with our own published address, which is not independent confirmation of the pin and must not be read as one. Nothing about the location changed. Outcome: holds; asked whether they have a photograph. Submitter's name deliberately not recorded here, per the standing rule that no sender is ever named in the data.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Platan_javorolist%C3%BD_u_klimentsk%C3%A9ho_kostela_%281%29.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Jan Polák, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3072,
+        "height": 2304
       },
       "transport": "Petrska ctvrt, Nove Mesto; tram 3, 8 or 24 to Prazska trznice or Revolucni, short walk",
       "girth_cm": 342,

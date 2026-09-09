@@ -1635,10 +1635,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arbre_de_l%27amor_de_la_pla%C3%A7a_Joanic_-_arbre_d%27inter%C3%A8s_local_-_20240806_151140.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Pere López Brosa, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4080,
+        "height": 3060
       },
       "best_time": {
         "months": [
