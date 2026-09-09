@@ -52,10 +52,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Lone_Pine_at_the_AWM.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Bidgee, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1064,
+        "height": 1600
       }
     }
   ]

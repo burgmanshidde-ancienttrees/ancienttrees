@@ -50,16 +50,21 @@
       "access": "Free, public park, open daily during park hours. The tree stands behind a protective double fence and cannot be approached to touch, but is fully visible.",
       "transport": "Mossley Hill or West Allerton rail station, about a 15-20 minute walk; bus routes 61A, 75, 76, 86C stop near the park entrance on Menlove Avenue.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/2020_The_Allerton_Oak_UKE.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Jill Jennings, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3500,
+        "height": 2333
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Girth 5.5m (18ft) reported independently by Historic Liverpool and Wikipedia. Do not use the girth to sharpen the age claim: no published growth-rate calculation for this specimen was found. The hundred-court and Lottie Sleigh stories are recorded as unproven tradition in both sources. A WWII anecdote about acorns sent to Liverpool servicemen came only from a search summary and is deliberately not used.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "September and October, when it puts down something close to a hundred thousand acorns"
       }
@@ -95,7 +100,9 @@
       "location_precision": "approximate",
       "notes": "Single source: a Liverpool Botanical Society field-trip report of 31 October 2015. Age derived by the society from girth at a stated 2.5cm/year growth rate, not a ring count. Coordinates are the park's published centroid, not a tree-level fix, hence approximate.",
       "best_time": {
-        "months": [10],
+        "months": [
+          10
+        ],
         "kind": "fruit",
         "label": "October, when the spiny burrs open and the chestnuts land in the grass"
       }
