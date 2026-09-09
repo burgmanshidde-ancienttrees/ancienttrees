@@ -11,6 +11,43 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation) - Second look at the iOS CI gate: the "test" job has its own false-negative, same push wall
+
+Re-checked the newest scheduled "iOS app" failure (run 34335112776, 2026-09-09
+09:30 UTC) expecting the already-diagnosed floor-job flake below. Found that,
+and something new: the "test" job (newest OS, the one that already carries
+`-retry-tests-on-failure -test-iterations 2`) failed too, on a DIFFERENT bug
+in its own verdict logic. Its log shows `testATreePageCannotCollectForYou`
+failing once ("Failed to get launch progress... Timed out"), then
+`** TEST SUCCEEDED **` two lines later, xcodebuild's own confirmation that the
+retry recovered it. The job still went red, because the "Build and test" step
+greps the whole log for any `: error: -[` line and exits 1 on the first match,
+regardless of what xcodebuild decided afterwards. So a per-attempt failure a
+retry already fixed still kills the job: exactly the "fails on schedule,
+passes by hand" shape, since contention on a shared runner makes the flake
+land more often and this check has no way to tell a recovered attempt from a
+real one.
+
+Wrote and verified both fixes locally (this one plus the already-known
+floor-job retry flag): `git push` refused both, same wall as before
+("refusing to allow a GitHub App to create or update workflow
+`.github/workflows/ios.yml` without `workflows` permission"). Reverted to a
+net-zero diff against origin so the revert itself could push (confirmed: it
+did), rather than leave a stranded local commit blocking every later push in
+this session.
+
+**FOR HIDDE, two diffs for `.github/workflows/ios.yml`, both needing your
+push:**
+1. Floor job (~line 503, "Build and test on the floor" step): add
+   `-retry-tests-on-failure -test-iterations 2 \` after `-derivedDataPath
+   /tmp/dd \`, matching the test job.
+2. Test job (~line 260, "Build and test" step): replace
+   `if grep -qE ': error: -\[' /tmp/xcodebuild.log; then` with a check that
+   also confirms xcodebuild's own last verdict marker was not
+   `** TEST SUCCEEDED **`, e.g.
+   `LAST_VERDICT=$(grep -oE '\*\* TEST (SUCCEEDED|FAILED) \*\*' /tmp/xcodebuild.log | tail -1)`
+   then `if grep -qE ': error: -\[' /tmp/xcodebuild.log && [ "$LAST_VERDICT" != "** TEST SUCCEEDED **" ]; then`.
+
 ## 2026-09-09 (continuation) - Finished the stranded Leeuwarden verify claim, +6 trees; FOR HIDDE on a broken CI fix a run cannot push
 
 Two earlier attempts in this same window had stopped early. `passcheck.py
