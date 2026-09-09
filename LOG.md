@@ -11,6 +11,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 (continuation 2) - Milan +1 (22 -> 23), closed a stuck lead and confirmed its official register is exhausted
+
+Moved to rung 4 (new coverage/deepening) after the Leeuwarden claim closed.
+CITY_QUEUE.md ranks Milan #3 with cheap register-backed room to grow.
+Claimed it for verify, found the near-centre register genuinely exhausted
+(four prior passes had already worked it), but found the comune's own
+monumental-tree pages had moved to a new URL that isn't blocked any more,
+which resolved a lead stuck since 2026-08-06 into mil_023. That also let me
+confirm Milan's full official 13-tree municipal list is now accounted for,
+so a future pass should not re-scan it; what remains are MASAF-only rows
+further out that still need a non-register source. Updated the Italian
+translation overlay to match (mil_023 added, tree count fixed in both
+languages). Full detail in CURATION.md. Claim released.
+
 ## 2026-09-09 (continuation) - Leeuwarden +8 (18 -> 26), finished a claim an earlier attempt in this window left standing
 
 `leads.py --ready` was empty, so no write-only pass was available. Found a
