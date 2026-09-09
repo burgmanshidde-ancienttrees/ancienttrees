@@ -5,7 +5,7 @@
   "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
   "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
   "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 17, and the history each carries.",
+  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 26, and the history each carries.",
   "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "15 of the 19 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
+      "a": "22 of the 26 stand on public streets or in public parks and squares, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -684,6 +684,181 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "war_021",
+      "name": "The Oak of Skwer Ziemi Aniolow",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 203,
+      "location": {
+        "address": "Skwer Ziemi Aniolow, ul. Bialobrzeska 14 (corner of ul. Opaczewska), Ochota",
+        "latitude": 52.210802777,
+        "longitude": 20.971608333,
+        "neighbourhood": "Ochota"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://ochota.um.warszawa.pl/-/bedzie-skwer-ziemi-aniolow"
+      ],
+      "access": "Free. Stands on Skwer Ziemi Aniolow, a public square at a street corner, named by the Ochota district authority for its Budapest twin district; open at all times, no gate.",
+      "transport": "Ochota district, near the corner of ul. Bialobrzeska and ul. Opaczewska",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Warsaw's natural monument register measures this oak three times over. It is a multi-stemmed pedunculate oak, and the paperwork that protected it on 8 October 2001 records three girths rising from one base: 203, 164 and 180 centimetres. There is no single clean trunk here to put your arms around. What stands on the lawn is one tree behaving like a small grove, 23 metres to the top of it.\n\nIts address is a piece of municipal diplomacy. The strip of grass it grows on was named Skwer Ziemi Aniolow by the Ochota district authority, after the Budapest district Ochota is twinned with, and the district's own announcement of that naming points to the oak standing there.\n\nNobody has dated it. If you know when it went in, tell us.\n\nOne thing worth saying plainly: the most recent dated evidence we could find of it standing is a pair of photographs from May 2015, showing a healthy multi-stemmed oak on a corner lawn matching the register's description. Nothing anywhere reports it felled or delisted since, and Quercus robur is among the hardiest trees a city can plant, so the odds are good. If you walk past the corner of Bialobrzeska and Opaczewska, we would like to hear that it is still there.",
+      "how_to_recognise": "You can recognise it by the three trunks rising from one base, the thickest 203 centimetres round, carrying a crown 23 metres up. It stands on the open lawn of Skwer Ziemi Aniolow, at the corner of Bialobrzeska and Opaczewska."
+    },
+    {
+      "id": "war_022",
+      "name": "The Pear of the Wolski Family",
+      "species": "Pear (Pyrus communis / Pyrus pyraster; sources disagree, see notes)",
+      "age_estimate": "documented standing since before World War II, so at least about 85 years",
+      "age_min": 85,
+      "age_max": null,
+      "girth_cm": 285,
+      "location": {
+        "address": "Skwer Rodziny Wolskich, between ul. Grojecka and ul. Banacha, near Osrodek Kultury Ochoty, Ochota",
+        "latitude": 52.211973,
+        "longitude": 20.978814,
+        "neighbourhood": "Ochota"
+      },
+      "verified_sources": [
+        "https://iochota.pl/artykul/pomnik-przyrody-na-skwerze/1414103",
+        "https://zzw.waw.pl/edukacja/w-koronach-miasta/drzeworoku/drzeworoku-2024/"
+      ],
+      "access": "Free. Stands on Skwer Rodziny Wolskich, a public square between apartment blocks near the Ochota district's own culture centre; open at all times, no gate.",
+      "transport": "Ochota district, on the square between Grojecka and Banacha streets",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Everything else that stood on this square is gone. The Wolski family's farmhouse garden was here, and beneath it, through the German occupation, an underground shelter known as Bunkier Krysia, where roughly forty people of Jewish origin were hidden. It was discovered in March 1944, and the family and everyone sheltering with them were murdered. The local Ochota press describes this pear as the only living witness left on the site, the oldest tree in the area, already growing during the war.\n\nThat sentence is also the only age anybody has given it. No planting date survives, so the floor is about 85 years and nobody has set a ceiling.\n\nWarsaw's city council made it a natural monument on 4 August 2024 and recorded it then as in good condition with no visible damage, a fresher check on a tree's health than most pages on this site can offer. The same year it was Ochota's finalist in the city's public Tree of the Year vote.\n\nTwo things about it are unsettled, and neither has been resolved. The council designation gives a girth of 285 centimetres and calls it a common pear, Pyrus communis. The city's green-space authority, running that same Tree of the Year vote, gives 293 centimetres and calls it a wild pear, Pyrus pyraster. One puts its height at roughly six metres, the other at nine.",
+      "how_to_recognise": "You can recognise it by how low it sits, six to nine metres depending on which survey you read, on a trunk of 285 to 293 centimetres round. It is the one veteran tree on Skwer Rodziny Wolskich, near the Ochota culture centre."
+    },
+    {
+      "id": "war_023",
+      "name": "The White Poplar of Park Zaslawa Malickiego",
+      "species": "White Poplar (Populus alba)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 498,
+      "location": {
+        "address": "Park im. Zaslawa Malickiego, near ul. Wislicka and the sports field, Ochota",
+        "latitude": 52.202691666,
+        "longitude": 20.979963888,
+        "neighbourhood": "Rakowiec, Ochota"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://otwartawarszawa.pl/przewodnik/park-im-zaslawa-malickiego"
+      ],
+      "access": "Free. Stands in Park im. Zaslawa Malickiego, an ordinary public neighbourhood park with playgrounds and a pond, open at all times.",
+      "transport": "Rakowiec area of Ochota, Park im. Zaslawa Malickiego, near ul. Wislicka",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Nearly five metres round, in a park with a playground and a pond. The white poplar at the southern end of Park im. Zaslawa Malickiego measures 498 centimetres at the trunk and runs 32 metres up, and it was made a natural monument on 30 December 1987, a quarter of a century before either of the two protected trees standing with it here.\n\nThose three are what makes this corner of Rakowiec worth the walk: a wych elm and a silver maple within about 150 metres of the poplar, three separate designations inside one ordinary neighbourhood park. Nothing about the place announces itself. Benches, a sports field, the local cultural centre, summer events for the people in the blocks around it, and then a tree the width of a small room.\n\nThe poplar is the easiest of the three to name from across the grass. The undersides of white poplar leaves are felted white, so the whole crown turns and flickers silver whenever wind crosses the park, and the bark stays pale, marked with dark diamond shapes rather than furrowing the way the elm's does.\n\nNobody has dated it. The register records the size and the protection and stops there, so if you have seen a planting record for this park, tell us.",
+      "how_to_recognise": "You can recognise it by the leaves, felted white underneath so the crown flickers silver in wind, above a trunk 498 centimetres round and 32 metres tall. It stands at the southern end of the park, near the sports field."
+    },
+    {
+      "id": "war_024",
+      "name": "The Mountain Elm of Park Zaslawa Malickiego",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 312,
+      "location": {
+        "address": "Park im. Zaslawa Malickiego, ul. Wislicka 8, Ochota",
+        "latitude": 52.203744444,
+        "longitude": 20.978516666,
+        "neighbourhood": "Rakowiec, Ochota"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://otwartawarszawa.pl/przewodnik/park-im-zaslawa-malickiego"
+      ],
+      "access": "Free. Stands in Park im. Zaslawa Malickiego, an ordinary public neighbourhood park with playgrounds and a pond, open at all times.",
+      "transport": "Rakowiec area of Ochota, Park im. Zaslawa Malickiego, near a bend in ul. Wislicka",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Most of Europe's big elms are gone. Dutch elm disease moved through the continent in waves across the twentieth century, which is why a wych elm with a trunk over three metres round is a stranger sight in a European city than an oak twice that size. This one measures 312 centimetres and stands 28 metres tall, and Warsaw protected it as a natural monument on 10 October 2012.\n\nIt is the middle of three protected trees in one small Ochota park, by date rather than by size: the white poplar at the southern end was signed off in 1987, the silver maple by the pond in 2016. All three stand within about 150 metres of each other, which is unusually generous for a neighbourhood park with a playground in it.\n\nWych elm gives itself away in the hand. Its leaves are the largest of any European elm, rough as fine sandpaper on the upper side, and set lopsided on the stalk so that one half of the leaf base runs further down than the other. In late winter it flowers before it leafs, and the bare crown reddens with them for a few weeks before anything green appears.\n\nNobody has dated this one and the register does not try. If you know the planting history of this park, tell us.",
+      "how_to_recognise": "You can recognise it by the leaves, the biggest of any European elm, rough on top and lopsided at the base where one side runs further down the stalk. It stands near a bend in ul. Wislicka, trunk 312 centimetres round."
+    },
+    {
+      "id": "war_025",
+      "name": "The Silver Maple of Park Zaslawa Malickiego",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 502,
+      "location": {
+        "address": "Park im. Zaslawa Malickiego, ul. Mariana Nowickiego, western shore of the pond, Ochota",
+        "latitude": 52.203474,
+        "longitude": 20.9792,
+        "neighbourhood": "Rakowiec, Ochota"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://otwartawarszawa.pl/przewodnik/park-im-zaslawa-malickiego"
+      ],
+      "access": "Free. Stands in Park im. Zaslawa Malickiego, an ordinary public neighbourhood park with playgrounds and a pond, open at all times.",
+      "transport": "Rakowiec area of Ochota, Park im. Zaslawa Malickiego, western shore of Staw Rakowiecki pond",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The thickest of this park's three protected trees is also the shortest. The silver maple on the western shore of Staw Rakowiecki measures 502 centimetres round and stops at 17.5 metres, where the white poplar 150 metres away is four centimetres slimmer and nearly twice as tall. That squat build is what a maple does with room to spare: grown in the open with nothing crowding it, it spends on width and on heavy low limbs instead of racing anything for light.\n\nSilver maple is a North American tree, planted across European parks in the nineteenth and twentieth centuries for exactly this habit of getting large fast beside water. Its leaves are cut almost to the midrib into five sharp lobes and are pale, close to white, on the underside, so a breeze off the pond turns the whole crown two colours at once.\n\nWarsaw protected it on 22 September 2016, the last of the three designations here to be signed: the poplar in 1987, the wych elm in 2012, then this one. Three protected trees, one pond, one playground, about 150 metres of walking between the lot of them.\n\nNobody has dated it. If you know when this pond bank was planted, tell us.",
+      "how_to_recognise": "You can recognise it by its width against its height, 502 centimetres round but only 17.5 metres tall, with heavy limbs low over the water. It stands on the western shore of the pond, on the ul. Mariana Nowickiego side."
+    },
+    {
+      "id": "war_026",
+      "name": "The Ash Trees of Park Wielkopolski",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 430,
+      "location": {
+        "address": "Park Wielkopolski (Zieleniec Wielkopolski), between ul. Filtrowa and ul. Leczycka, about 50 m from ul. Filtrowa, Ochota",
+        "latitude": 52.218625,
+        "longitude": 20.994088888,
+        "neighbourhood": "Ochota"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://pl.wikipedia.org/wiki/Park_Wielkopolski_w_Warszawie"
+      ],
+      "access": "Free. Stands in Park Wielkopolski, a historic public park (laid out 1938, entered on the register of monuments in 1983) in Ochota, open at all times.",
+      "transport": "Ochota district, Park Wielkopolski, between ul. Filtrowa and ul. Leczycka",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "One set of papers, two trees. When Warsaw protected the ashes of Park Wielkopolski on 31 July 1973 it wrote them up as a single natural monument: two European ashes, both 29 metres tall, one 430 centimetres round and the other 398. They stand together about 50 metres in from ul. Filtrowa, and anyone walking up to them sees a pair rather than two separate errands, which is how the register saw them as well.\n\nThe trees were protected a decade before the ground they grow on. Park Wielkopolski was laid out in 1938 to a design by Zygmunt Hellwig and Leon Danielewicz, and went onto the register of monuments in 1983; the ashes had already been protected since 1973. Nothing anywhere records when they were planted. If you have seen a planting record for this park, tell us.\n\nAsh is one of the easier trees to read out of season. The bark is smooth and grey on a young stem and finely ridged with age, the leaves are made of paired leaflets along a central rib, and the winter buds are matt black and blunt, which no other tree in this park offers.\n\nA third natural monument stands somewhere in the same 4.7 hectares, a poplar, though nobody has recorded its size or its position. The pair is what to walk in for.",
+      "how_to_recognise": "You can recognise them as a pair of the same height, 29 metres, one trunk 430 centimetres round and the other 398, with matt black buds on grey twigs in winter. They stand together about 50 metres in from ul. Filtrowa."
+    },
+    {
+      "id": "war_027",
+      "name": "Odolanka, the Poplar of Odolany",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 600,
+      "location": {
+        "address": "Between ul. Wladyslawa III Warnenczyka and the Dobra Wola housing estate, Odolany, Wola",
+        "latitude": 52.225131,
+        "longitude": 20.950287,
+        "neighbourhood": "Odolany, Wola"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://www.warszawa.pl/odolanka/"
+      ],
+      "access": "Free. Stands on green ground between the street and a housing estate in Odolany, an ordinary residential neighbourhood tree, visible and reachable at all times.",
+      "transport": "Odolany district, Wola, between ul. Wladyslawa III Warnenczyka and the Dobra Wola estate",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The neighbourhood asked for this one. In 2017, with new housing going up around them in Odolany, residents petitioned to have their black poplar protected before the ground under it could be cleared. The City of Warsaw's own page about the tree is dated 19 May that year. The Wola district board gave a positive opinion, and the council signed the designation on 4 October.\n\nWhat they kept is not one trunk but three, rising symmetrically from a shared base and measuring, at the widest point the city recorded, more than 600 centimetres round the lot of them. It reaches roughly the height of a five-storey block, which in Odolany means level with the windows of the flats it grows beside. Locally it is simply Odolanka, and the city's page calls it a symbol of the neighbourhood.\n\nBlack poplar is a floodplain species, built for wet ground and quick growth, with a heavily fissured, often burred trunk and leaves on flattened stalks that shake at almost no wind at all. It is the sound of the tree as much as the shape of it.\n\nNobody has dated it, and no one has separated those three trunks into individual measurements. If you know either, tell us. Nothing since 2017 reports it gone.",
+      "how_to_recognise": "You can recognise it by three trunks rising symmetrically from one base, more than 600 centimetres round together, standing about as tall as a five-storey block. It grows on the grass between the street and the Dobra Wola estate."
     }
   ]
 }

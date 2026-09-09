@@ -83,6 +83,32 @@ clean throughout.
 Logged this window's three new passes to `data/agent-costs.json` (warsaw
 verify, maastricht verify, barcelona recognition write).
 
+## 2026-09-09 (continuation) - Warsaw +7, Maastricht +3, two species pages opened
+
+Merged the Warsaw and Maastricht write pass (dispatched above): Warsaw
+19 -> 26 trees, Maastricht 15 -> 18. Fixed the count-promising copy in both
+(question_meta, faq paid-share numbers) the same way as Oahu earlier.
+Normalised two species strings the writer flagged (war_024 to "Wych Elm",
+war_026 to "European Ash", matching existing usage elsewhere on the site).
+Left war_022's disputed species string as delivered rather than collapsing
+a live source disagreement.
+
+The two new supplies of White Poplar and Japanese Maple crossed the
+3-tree species-page threshold (rung 8, pagegaps.py), so wrote both intros
+grounded in their own trees rather than a template: white-poplar.json
+(Vainiai's 6.85m Lithuanian giant, Warsaw's 1987 natural monument,
+Amsterdam's admittedly-unimpressive-but-oldest-in-its-park veteran) and
+japanese-maple.json (Arnhem and Maastricht's two Dutch register
+specimens, Iwaki's undated temple maple whose autumn colour the city
+tracks and publishes yearly instead). Both closed pagegaps.py's list to
+zero. Rebuilt (5152 pages), qa.py (8060 pages) clean, tree_index.py
+refreshed. Released both claims.
+
+Three verify/write cycles completed this window: Oahu (+4), Warsaw (+7),
+Maastricht (+3), plus Barcelona's 42 recognition lines and 2 new species
+pages. 14 trees published, city page counts fixed everywhere they
+changed, nothing left mid-flight.
+
 ## 2026-09-09 - Night run 2026-09-09 02:02 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 33.0 minutes of its 120 minute window, 251 turns, 35 commands refused by the allowlist, ended clean (success). 13 commit(s), none of them a published tree. Claims left behind: singapore, which block the top of the queue until they expire.
