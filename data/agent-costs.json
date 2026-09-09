@@ -6312,6 +6312,33 @@
     "note": "4 stories + recognition lines for hnl_012-015 (Iolani Palace banyan, Queens Medical Center bombax and baobab, Zoo Gate Banyans); 1 best_time set (bombax bloom); merged, city copy counts fixed 11->15, preflight and build clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "warsaw",
+    "kind": "verify",
+    "tokens": 130000,
+    "trees": 7,
+    "note": "Wikidata natural-monument candidates + Wikipedia registry join; 7 shipped (2 walkable park clusters, Wolski pear, oak, poplar), 6 leads/2 blocked recorded, 4 stalled leads re-checked with OSM building-type evidence",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "maastricht",
+    "kind": "verify",
+    "tokens": 50000,
+    "trees": 3,
+    "note": "Register-led deepen pass; 3 trees verified (Waldeckpark maple, Servaasbron plane, Nolenspark plane trio), 4 candidates blocked on hard rule 10 (private gardens/villa), 3 leads recorded",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Barcelona",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 0,
+    "note": "recognition lines only, 42 trees, no stories; applied via recognise.py --apply; fixed one girth inconsistency (bcn_019, story said 2.6m vs data 2.7m)",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

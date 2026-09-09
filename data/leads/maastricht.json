@@ -1,6 +1,31 @@
 {
   "city": "Maastricht",
-  "leads": [],
+  "leads": [
+    {
+      "nr": 1691880,
+      "name": "Esdoorns-Paardenkastanjes St. Servaasbron",
+      "species": "Maple and Horse Chestnut grove (mixed, n_trees=23)",
+      "latitude": 50.83308,
+      "longitude": 5.670054,
+      "reason": "A register-designated grove of 23 maples and horse chestnuts surrounding the Sint-Servaasbron spring (see published maa_017, the single plane tree at the same coordinates). Independent sources (nl.wikipedia) confirm the site is 'surrounded by chestnut trees and elder bushes' but do not distinguish individual specimens. Not published as its own entry because 23 trees scattered around a spring is a weaker fit for 'one collectible point' than the single named plane tree already published there; worth revisiting if a single standout specimen within the grove can be individually identified (e.g. via a site visit, aerial imagery, or a more detailed source), or if the site is judged to qualify as a compact ensemble on a future pass."
+    },
+    {
+      "nr": 1696503,
+      "name": "Zilverlinde Mgr. Nolenspark Maastricht",
+      "species": "Silver Lime (Tilia tomentosa), natural (non-weeping) form",
+      "latitude": 50.843458,
+      "longitude": 5.692169,
+      "reason": "Public park (gemeente-owned, visitable ja), planted band 1880-1890, about 10 m from register nr 1696502 'Hangende zilverlinde Mgr.Nolenspark' (a likely register twin/duplicate of the same or an adjacent lime, not separately researched). Not pursued this pass: the already-published maa_009 'Weeping Silver Limes of Haet ende Nijt' covers the same species and same small park (Nolenspark), only about 85 m away, so a second silver lime story here risks reading as repetitive without a more distinct angle. Left as a lead for a future pass with time to find a differentiating fact (girth, a distinguishing form, a documented history) rather than researched to a flat conclusion this pass, per the 4-candidate exposure limit."
+    },
+    {
+      "nr": 1691693,
+      "name": "Chinese vernisboom (Aldenhofpark)",
+      "species": "possibly Chinese Lacquer Tree (Toxicodendron/Rhus verniciflua), per register name",
+      "latitude": 50.843589,
+      "longitude": 5.68328,
+      "reason": "DATA QUALITY FLAG, not a new tree: this register entry's coordinates (50.843589, 5.68328) are identical to six decimal places with the already-published maa_013 'Golden Rain Tree of Aldenhofpark' (Koelreuteria paniculata, 50.843589, 5.68328). Either this is the same physical specimen registered under a different Dutch common name than we published it under, or two genuinely different trees occupy the exact same point (unlikely). Needs a north-Aldenhofpark site check or a look at the register's own photo/ID before treating as a distinct tree; not researched further this pass to stay within the 4-candidate exposure limit. Flag for whoever next touches maa_013's sourcing."
+    }
+  ],
   "blocked": [
     {
       "nr": 1678452,
@@ -8,7 +33,31 @@
       "species": "Osage Orange (Maclura pomifera)",
       "latitude": 50.844724,
       "longitude": 5.696065,
-      "reason": "LIKELY DEAD / NOT THE REGISTERED TREE: the LRMB register lists this Osage orange at Stadspark/Maasboulevard with a planted_band of 1880-1890, but IVN Maastricht's own Stadspark tree-walk page (https://www.ivn.nl/afdeling/maastricht/bomenwandeling-van-hemel-tot-fossiel/) states the park's Osage orange (Maclura pomifera/Goudappel) was 130 years old when it fell in October 2009, and was replaced with a new planting in 2011. If this register point is that same spot, the tree standing there today is a c.15-year-old replacement, not the historic specimen the register's date describes, and it is not yet a remarkable/collectible tree. The register carries no vitality field and was not updated to reflect the loss. Needs an on-the-ground or dated-aerial-imagery check before ever being considered again: confirm whether the current tree is the young 2011 replacement (block stands) or whether this register point is actually a different, still-living Osage orange elsewhere in the park (in which case re-open)."
+      "reason": "LIKELY DEAD / NOT THE REGISTERED TREE: the LRMB register lists this Osage orange at Stadspark/Maasboulevard with a planted_band of 1880-1890, but IVN Maastricht's own Stadspark tree-walk page (https://www.ivn.nl/afdeling/maastricht/bomenwandeling-van-hemel-tot-fossiel/) states the park's Osage orange (Maclura pomifera/Goudappel) was 130 years old when it fell in October 2009, and was replaced with a new planting in 2011. If this register point is that same spot, the tree standing there today is a c.15-year-old replacement, not the historic specimen the register's date describes, and it is not yet a remarkable/collectible tree. The register carries no vitality field and was not updated to reflect the loss. Needs an on-the-ground or dated-aerial-imagery check before ever being considered again: confirm whether the current tree is the young 2011 replacement (block stands) or whether this register point is actually a different, still-living Osage orange elsewhere in the park (in which case re-open). RE-CHECKED 2026-09-09: no new evidence found this pass; not re-litigated, block stands per brief instruction."
+    },
+    {
+      "nr": 1679961,
+      "name": "Treurginkgo (Polvertorenplein)",
+      "species": "Weeping Ginkgo (Ginkgo biloba, weeping form)",
+      "latitude": 50.846029,
+      "longitude": 5.684249,
+      "reason": "PRIVATE PROPERTY: the register itself places this tree 'in particuliere tuin van een nieuwbouwwoning' (in the private garden of a newly built house, since 2021), with owner_category particulier, visitable 'onbekend' and visible only 'beperkt' (limited). Fails hard rule 10's no-permission-needed test outright: this is somebody's home. A genuinely interesting specimen (reportedly brought from Japan around 1800 by G.J. Colpin) but not publishable under any circumstance while it stands in a private residential garden."
+    },
+    {
+      "nr": 1692172,
+      "name": "Gewone plataan (Sint Lambertuslaan 6, Villa Marguerite)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "latitude": 50.84255,
+      "longitude": 5.691804,
+      "reason": "The register marks this 'visitable: ja', but Villa Marguerite is a private 1890 villa (national monument for its architecture, per rijksmonumenten.nl) in Maastricht's residential 'Villapark', currently divided into rentable apartments. No evidence of any public path, garden opening, or business use that would let a stranger walk up to this tree without knocking on a resident's door. The register's 'visitable' field appears to describe whether the tree itself is inspectable in principle, not whether the public may enter the grounds. Fails hard rule 10's no-permission-needed test; blocked as a private garden unless future evidence shows the grounds are genuinely open (e.g. a public event, a through-path, or commercial/institutional use of the building)."
+    },
+    {
+      "nr": 1692073,
+      "name": "Witte paardenkastanje (Witmakerstraat 5)",
+      "species": "White Horse Chestnut (Aesculus hippocastanum)",
+      "latitude": 50.846528,
+      "longitude": 5.691406,
+      "reason": "Private back garden ('achtertuin') of a residential address; register itself marks visitable 'nee' and visible 'nee'. Clear hard rule 10 fail, blocked outright."
     }
   ]
 }

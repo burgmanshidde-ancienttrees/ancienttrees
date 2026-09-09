@@ -58,7 +58,8 @@
       "curation_status": "ai_generated",
       "notes": "A Wikimedia Commons file named similarly (\"Alzina del passeig de Gracia\") turned out on inspection to be a different holm oak, L'alzina de Mossen Cinto, elsewhere on Passeig de Gracia. Not used, to avoid misattributing a photo to the wrong tree. Pin corrected 2026-07-26: OpenStreetMap carries this tree as a mapped node from Barcelona's own \"Arbres d'interes local\" catalogue, tagged protected=yes, species Quercus ilex ssp. ilex, described as \"c. Encarnacio 13\", about 75m from the previous street-level estimate. Confirmed on that official-catalogue sourcing. Photo found and approved 2026-07-28: Commons category \"Jardi de l'Alzina\" (a companion photo in the same series shows graffiti reading \"SALVEM L'ALZINA\", the exact neighbourhood campaign named above). Viewed directly: shows the garden with a wooden-fenced planting bed and a sign explicitly reading \"Aquest corralet protegeix les arrels de l'alzina\" (\"This enclosure protects the oak's roots\"), the oak's own dark evergreen canopy visible overhanging top-right of frame. Not a clean full portrait, the tree is only partially in frame, but the sign gives an explicit textual identification of this exact tree that the photo itself carries, stronger confirmation than most park photos get.",
       "location_precision": "confirmed",
-      "girth_cm": 270
+      "girth_cm": 270,
+      "how_to_recognise": "You can recognise it by the trunk, 2.7 metres round, under a crown as wide as the tree is tall, 22 metres each way. It stands in the small public garden behind the surviving facades of the Casetes de l'Encarnacio."
     },
     {
       "id": "bcn_002",
@@ -91,7 +92,8 @@
       "notes": "Access note needs on-the-ground confirmation: sources describe the viaducts as being in Park Guell's freely accessible wooded perimeter rather than the ticketed Monumental Zone, but this should be double-checked against current park signage before publishing with full confidence. Photo is historical (1904), not a modern photograph. Included because it is confirmed to be this specific tree and clearly dated, not because it shows the tree's current appearance. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e2/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 0/0a. Fetched and viewed directly, the same 1904 stereoscopic photo of a tree trunk between the viaduct's stone arches, before swapping.",
       "location_precision": "confirmed",
       "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the sloped stone columns of Gaudi's viaduct built around it, the one living trunk inside a colonnade made to look like trees. It stands on the Carretera del Carmel side of Park Guell."
     },
     {
       "id": "bcn_003",
@@ -126,7 +128,8 @@
       "location_precision": "confirmed",
       "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide.",
       "girth_cm": 410,
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the slim young trunk, about 90 centimetres round, standing inside the twisted dead wood of the four metre carob it regrew from. It stands by the Placa de la Natura in Park Guell."
     },
     {
       "id": "bcn_004",
@@ -201,7 +204,8 @@
       "curation_status": "ai_generated",
       "notes": "Height (~40m) is the municipal catalogue's own estimate, flagged there as uncertain due to measurement difficulty in the confined ravine; reported here as an estimate rather than a precise figure. Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Jardi Botanic Historic. Sector de l'estany\", species Pterocarya x rehderiana, which names both the right garden and the right ravine sector. Confirmed on that match.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its height, roughly 40 metres and the biggest tree in the city, and by being the only wingnut recorded in Barcelona. It stands at the bottom of the Sot de l'Estany, the old quarry pit in the botanical garden."
     },
     {
       "id": "bcn_006",
@@ -236,7 +240,8 @@
       "notes": "Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Antic Jardi Botanic\", species Fraxinus pennsylvanica, matching both the garden (an alternate name for the Jardi Botanic Historic) and the species. Confirmed on that match.",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "girth_cm": 320
+      "girth_cm": 320,
+      "how_to_recognise": "You can recognise it by the trunk, 3.2 metres round under 24 metres of height, on an American swamp ash almost nobody plants here. It stands in the same Sot de l'Estany ravine as the garden's much taller wingnut."
     },
     {
       "id": "bcn_007",
@@ -275,7 +280,8 @@
       },
       "curation_status": "flagged",
       "notes": "No precise planting date found in either source; both describe the tree only as 'centenaria' (100+ years). Age range left wide to reflect that honestly rather than implying precision that doesn't exist.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the crown, over 15 metres across on a tree only 12 metres tall, wide enough to shade a small plaza by itself. It stands in the Jardins de la Maternitat, probably the largest magnolia in the city."
     },
     {
       "id": "bcn_008",
@@ -346,7 +352,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Photo found 2026-07-26: CC0 iNaturalist observation 15m from this pin. Viewed directly, shows a massive gnarled, rippled trunk in an urban plaza setting consistent with an ombu and with Placa Prim.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the rippled, root-like folds of the trunk, two and a half metres round at chest height on a tree 9.5 metres tall. It stands in Placa de Prim, one of the three ombus that give the square its character."
     },
     {
       "id": "bcn_010",
@@ -379,7 +386,8 @@
       },
       "curation_status": "flagged",
       "notes": "Access described as best understood from available sources; opening hours for the courtyard itself (as distinct from the cafe) were not confirmed and should be checked before a visitor relies on this. Photo found 2026-07-26: file's own title and description name this exact location (\"Casa de la Misericordia, Carrer Elisabets 24\") and cite the trees' Catalan heritage protection ID (MA-080193/0096-01-94), a direct match rather than a lookalike. Its embedded GPS (41.383536, 2.168661) also lands within about 15m of the existing pin, corroborating it independently.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by four fan palms standing together in one enclosed courtyard, planted around 1904. They stand in the old Casa de la Misericordia, reached from Carrer d'Elisabets or through La Central bookshop."
     },
     {
       "id": "bcn_011",
@@ -415,7 +423,8 @@
       "curation_status": "ai_generated",
       "notes": "Sourced from the municipal Arbres d'interes local register (register_id 99400455029, catalogued 1994) plus an independent beteve.cat feature on the park's notable trees, which supplies the Australian origin, the not-a-conifer point and the claim that its trunk perimeter is the second largest in Barcelona. That claim is deliberately softened in the story to 'one of the thickest', per hard rule 8, because it is a different metric from the 'biggest tree' claim the city page already makes for the Sot de l'Estany wingnut and the two should not be set against each other. Height and girth differ between the register (27 m, 5.5 m) and bcnsostenible (22.5 m, 5 m); both are given as a range. Pin is the register coordinate alone, about 35 m from the Cascada monument, with no OSM node to cross-check, so precision is approximate rather than confirmed. Photo viewed directly before approval: Wiki Loves Earth Catalonia 2014 upload, full tree in daylight, trunk and crown both readable, tree occupies the centre band and survives a wide card crop.",
       "location_precision": "confirmed",
-      "girth_cm": 550
+      "girth_cm": 550,
+      "how_to_recognise": "You can recognise it by what looks like a pine and is not: drooping grey green jointed twigs, and two trunks fused at the base that split about 90 centimetres up to a combined five metres round. It stands facing the Cascada."
     },
     {
       "id": "bcn_012",
@@ -450,7 +459,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Municipal register (register_id 99400454956, catalogue number 0130-01-97, catalogued 1997) plus an independent beteve.cat feature, which is the source for the only-one-in-Catalonia claim and for the unlobed leaves. Pin: the register gives 41.388892, 2.186420 while OSM node 6924278485, carrying the same catalogue geocoded by address, gives 41.38829, 2.18680, 75 m apart. The Commons photograph shows the tree standing beside the park's bandstand, which supports the OSM position, so that one is used, but two municipal renderings disagreeing by 75 m is not a confirmed pin and it is marked approximate. Photo viewed directly before approval: leaning trunk fills the centre of frame, daylight, colour, crown readable, categorised on Commons under 'Roure de Mexic del parc de la Ciutadella'. Its upload path was resolved against the Commons API rather than guessed. File 3 in the same series was rejected: the bandstand takes the centre band and the tree sits at the left edge, which would not survive the card crop.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the leaves, leathery and plain edged with none of an oak's lobes, and by the leaning stem that throws an 11 metre crown sideways, low enough to put a hand on. It stands on the sand near the Ciutadella bandstand."
     },
     {
       "id": "bcn_013",
@@ -493,7 +503,8 @@
       "curation_status": "ai_generated",
       "notes": "Municipal register (register_id 99400679805, catalogue number 0039-01-93, catalogued 1993) plus an independent beteve.cat article about the species in Barcelona, which supplies the fruit description, the fact that it is not edible, and the timing: the fruit falls in late autumn with some hanging into winter. That article is the basis for best_time. Dimensions differ between the register (16 m tall, crown 19 m) and bcnsostenible (14 m, crown 13.5 m) and are given as a range. Pin confirmed on three-way agreement: register 41.388569/2.187622, OSM node 6924265087 at 19 m, and iNaturalist observation 330848719 at 12 m, the last of which is a photograph taken in the park. Photo approved 2026-08-08 in a viewing pass: the Commons file by Teresa Grau Ros names the same catalogue number 0039-01-93 and shows the bare winter crown filling the frame in daylight. The iNaturalist observation, a close-up of a split fruit on the ground, was rejected as no portrait of the tree. The megafauna explanation for the fruit is presented as a hypothesis, which is what it is.",
       "location_precision": "confirmed",
-      "girth_cm": 260
+      "girth_cm": 260,
+      "how_to_recognise": "You can recognise it in late autumn by the fruit on the path, grapefruit sized, yellow green and folded like a brain. It stands beside the Ciutadella lake, on a trunk about two and a half metres round."
     },
     {
       "id": "bcn_014",
@@ -527,7 +538,8 @@
       "curation_status": "flagged",
       "notes": "FLAGGED for a single-source age. Everything traceable about the 1904 planting year is a rendering of the same municipal record (register_id 99400455018, catalogued 1994): barcelona.cat, guia.barcelona and bcnsostenible are three faces of one catalogue, not three sources. No independent confirmation was found, and the two municipal renderings disagree with each other on the tree's size, 29 m and 3.1 m girth in the register against 26 m and 2.90 m on guia.barcelona. The story states this plainly rather than implying a firm date. Existence and species are not in doubt: the tree is catalogued, mapped, and 70 m from bcn_010. Pin confirmed: register 41.382401/2.167735 and OSM node 6924165385 at 41.382393/2.167705, three metres apart. Casa de la Caritat's identity as the present-day CCCB is from Catalan Wikipedia, independent of the tree register. No open-licence photograph of this tree was found on Commons, iNaturalist or Flickr this pass; an honest gap rather than a substitute of the courtyard.",
       "location_precision": "confirmed",
-      "girth_cm": 310
+      "girth_cm": 310,
+      "how_to_recognise": "You can recognise it by the pale straight trunk, about three metres round and bare a long way up before the crown begins, close to 30 metres tall. It stands inside the Casa de la Caritat grounds, in full view from Placa de les Caramelles."
     },
     {
       "id": "bcn_015",
@@ -608,7 +620,8 @@
       "location_precision": "confirmed",
       "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide.",
       "girth_cm": 290,
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by an ullastre, the low scrubby wild olive, grown into a proper tree of 14 to 17 metres with a crown over 13 metres wide. It stands above a retaining wall in the east sector of Park Guell."
     },
     {
       "id": "bcn_017",
@@ -651,7 +664,8 @@
       "curation_status": "ai_generated",
       "notes": "Municipal register (catalogue number 0010-03-93, catalogued 1993, planting year 1923) plus catacultural.com, which is independent of the city and places the tree precisely inside the garden ('a l'esquerra de l'amfiteatre, a sota del restaurant') and gives the pica-pica name and the reason for it. Pin confirmed: the register coordinate and OSM node 4492855030, which carries the same catalogue as a surveyed node tagged Lagunaria patersonia, are the same point. Dimensions differ between the two municipal renderings, 18 m tall / girth 2.4 m / crown 20 m in the register against 15 m / 2.02 m / crown 10 m on bcnsostenible; the story uses only the girth, which is the closer of the two pairs. The two renderings also give different addresses for the same tree, Passatge de Martras 26 and Passeig de Santa Madrona 38; both are entrances to the same garden. Species spelling: the register writes patersonia, the corpus canonical name is Lagunaria patersonii, used here per hard rule 9. best_time is June only, deliberately, because the flowering runs into July and the garden is shut from 15 June; a badge that lights up while the gate is locked would be a broken promise. Photo viewed directly before approval: full tree in daylight, colour, trunk and crown both readable, tree fills the frame and holds the centre band, people on a bench at the left edge for scale.",
       "location_precision": "confirmed",
-      "girth_cm": 240
+      "girth_cm": 240,
+      "how_to_recognise": "You can recognise it by the thousands of pink mallow flowers that fill the whole crown once a year, fifteen metres up, and by the trunk 2.4 metres round. It stands to the left of the Teatre Grec amphitheatre, below the restaurant terrace."
     },
     {
       "id": "bcn_018",
@@ -701,7 +715,7 @@
         "longitude": 2.15861,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
-      "story": "Barcelona cannot decide what this tree is. The city's own tree pages call it Erythrina corallodendron and say it is the only one of its kind in any garden in the city. The city's open data file calls it Erythrina falcata. The surveyor who mapped it for OpenStreetMap wrote down Erythrina lysistemon. Three names for one trunk, and all three are coral trees, a genus that flowers in blazing red spikes and has kept botanists arguing for two centuries. What nobody disputes is the tree. It stands on the path running between the Teatre Grec gardens and the Laribal gardens, planted around 1923, and it has thrown a crown twenty metres wide over a walkway barely three metres across, so the path goes underneath it rather than around. The trunk is 2.6 metres round and leans out over the slope. The city credits the placement to Jean-Claude Nicolas Forestier, the French landscape engineer who terraced this side of Montjuic for the 1929 Exposition, and notes that the tree was given an ideal spot and duly took advantage of it. Whatever it turns out to be, there is only one here.",
+      "story": "Barcelona cannot decide what this tree is. The city's own tree pages call it Erythrina corallodendron and say it is the only one of its kind in any garden in the city. The city's open data file calls it Erythrina falcata. The surveyor who mapped it for OpenStreetMap wrote down Erythrina lysistemon. Three names for one trunk, and all three are coral trees, a genus that flowers in blazing red spikes and has kept botanists arguing for two centuries. What nobody disputes is the tree. It stands on the path running between the Teatre Grec gardens and the Laribal gardens, planted around 1923, and it has thrown a crown twenty metres wide over a walkway barely three metres across, so the path goes underneath it rather than around. The trunk is 2.7 metres round and leans out over the slope. The city credits the placement to Jean-Claude Nicolas Forestier, the French landscape engineer who terraced this side of Montjuic for the 1929 Exposition, and notes that the tree was given an ideal spot and duly took advantage of it. Whatever it turns out to be, there is only one here.",
       "verified_sources": [
         "https://www.bcnsostenible.cat/es/web/punt/eritrina-jardins-del-teatre-grec-arbre-dinteres-local",
         "https://www.catacultural.com/jardins-del-teatre-grec/",
@@ -721,7 +735,8 @@
       "curation_status": "flagged",
       "notes": "FLAGGED for the species, which is the point of the story rather than a hidden weakness. Three sources give three names: barcelona.cat and bcnsostenible (two renderings of the municipal record, catalogue number 0023-03-93, catalogued 1993) say Erythrina corallodendron; our import of the city's open data file says Erythrina falcata; OSM node 4492857600 says Erythrina lysistemon. The Commons category created for this tree is filed under corallodendron too. The species field follows the municipal record and the Commons category, which is the majority and the only one carrying a descriptive assessment, and the story states the disagreement out loud rather than picking quietly. Existence, position and age are not in doubt. Second source independent of the city: catacultural.com, which describes 'un exemplar de grans dimensions al cami que comunica els Jardins del Teatre Grec amb els Jardins Laribal' and confirms its protected status. Pin approximate: the register gives 41.36928/2.15860, OSM node 4492857600 gives 41.36939/2.15861 (12 m), bcnsostenible gives 41.36953/2.15909 (about 50 m from the register). The OSM node is used because it is the surveyed one, but three municipal-derived positions spread over 50 m is not a confirmed pin. Dimensions differ too: 20 m tall and girth 2.7 m in the register against 15 m and 2.6 m on bcnsostenible. The Forestier attribution is from the municipal assessment text. No best_time set: with the species unresolved, the flowering month cannot be stated honestly. Photo viewed directly before approval: the low wide crown over the path, trunk and main limbs readable, daylight, colour, tree fills the frame and holds the centre band. Slightly backlit but not dark.",
       "location_precision": "approximate",
-      "girth_cm": 270
+      "girth_cm": 270,
+      "how_to_recognise": "You can recognise it by the crown, twenty metres wide over a walkway barely three metres across, so the path runs underneath it. It stands on the path linking the Teatre Grec and Laribal gardens, leaning out over the slope."
     },
     {
       "id": "bcn_020",
@@ -762,7 +777,8 @@
       "curation_status": "flagged",
       "notes": "FLAGGED twice. First for the age: everything traceable about the 1925 planting is a rendering of the same municipal record (register_id 99400661117), and no independent source was found. Second for the pin: the two municipal renderings disagree badly. The register and guia.barcelona give Placa de Carles Buigas 8 at 41.37208/2.15334; bcnsostenible gives Passeig de les Cascades 1 at 41.37007/2.15413, about 250 m away up the hill. Both addresses sit on the same terraced slope above Avinguda Maria Cristina and there is no OSM node for this tree to break the tie (Overpass returns only the neighbouring Aesculus of the same square, node 6924151985, which matches its own register coordinate exactly, so the register's geocoding is not systematically wrong here). The register coordinate is used because it matches the register's own address, and the precision is marked approximate. Third oddity worth recording: bcnsostenible describes the tree as 'una de les Tipuana tipu mes grans de la ciutat de Barcelona, malgrat no estar catalogada', not catalogued, while the register carries it with a register_id. The superlative in the story is deliberately hedged and species-limited per hard rule 8, so it does not collide with the girth claim already made for the Ciutadella casuarina (bcn_011). The honeydew is a well documented property of the species in Barcelona and is stated as a species trait, not as a measurement of this tree. No open-licence photograph found on Commons, iNaturalist or Flickr this pass.",
       "location_precision": "confirmed",
-      "girth_cm": 330
+      "girth_cm": 330,
+      "how_to_recognise": "You can recognise it by the trunk, 3.3 metres round and possibly the thickest tipu tree in the city, under a crown 23 metres across. It stands in Placa de Carles Buigas at the foot of Montjuic, a few steps from the Magic Fountain."
     },
     {
       "id": "bcn_021",
@@ -867,7 +883,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 350
+      "girth_cm": 350,
+      "how_to_recognise": "You can recognise it by the flat umbrella crown on a trunk three and a half metres round, standing alone in open meadow rather than among other trees. It stands beside the palace, next to a sculpted female figure."
     },
     {
       "id": "bcn_024",
@@ -897,7 +914,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 340
+      "girth_cm": 340,
+      "how_to_recognise": "You can recognise them by the drooping leader shoots and branches sweeping down nearly to the grass, a group of 23 cedars rather than one trunk. They stand near the entrance of the Pedralbes gardens, the tallest about 25 metres."
     },
     {
       "id": "bcn_025",
@@ -928,7 +946,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 120
+      "girth_cm": 120,
+      "how_to_recognise": "You can recognise it by foliage in small jointed, scaled sprays and four valved woody cones closer to hardware than to a pine cone. It stands in the Pedralbes gardens on a trunk 1.2 metres round, shorter than nearly everything around it."
     },
     {
       "id": "bcn_026",
@@ -958,7 +977,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 360
+      "girth_cm": 360,
+      "how_to_recognise": "You can recognise them by the pair of them, two stone pines 21 metres tall on trunks 3.6 metres round. They stand in the Torre Girona gardens beside the old chapel that now holds the MareNostrum supercomputer in a glass box."
     },
     {
       "id": "bcn_027",
@@ -988,7 +1008,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 290
+      "girth_cm": 290,
+      "how_to_recognise": "You can recognise it by its height, 23 metres and the tallest of the three protected trees here, on a trunk 2.9 metres round. It stands on the slope beside the ornamental pond and its viewpoint in the Torre Girona gardens."
     },
     {
       "id": "bcn_028",
@@ -1018,7 +1039,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 250
+      "girth_cm": 250,
+      "how_to_recognise": "You can recognise it by the trunk swelling at the base into a bottle shape, 2.5 metres round on a tree 22 metres tall. It stands halfway into the wooded part of the Torre Girona gardens, off the obvious route."
     },
     {
       "id": "bcn_029",
@@ -1048,7 +1070,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 350
+      "girth_cm": 350,
+      "how_to_recognise": "You can recognise it by the shape, 26 metres tall and 26 metres across on a trunk three and a half metres round, a plane nobody has ever cut back. It stands on open lawn in the Vil.la Amelia gardens."
     },
     {
       "id": "bcn_030",
@@ -1078,7 +1101,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 520
+      "girth_cm": 520,
+      "how_to_recognise": "You can recognise it by the bark hanging off in long ribbons over the smooth grey white surface underneath, and by the trunk, 5.2 metres round on a tree only 18 metres tall. It stands in the Vil.la Amelia gardens, the thickest trunk there."
     },
     {
       "id": "bcn_031",
@@ -1116,7 +1140,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 270
+      "girth_cm": 270,
+      "how_to_recognise": "You can recognise it by the fine weeping sprays of foliage that move in any wind at all, and by the clusters of pink berries that hang on from autumn into winter. It stands 12 metres tall on a 2.7 metre trunk in the Vil.la Amelia gardens."
     },
     {
       "id": "bcn_032",
@@ -1154,7 +1179,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 230
+      "girth_cm": 230,
+      "how_to_recognise": "You can recognise them by the double row flanking the main avenue like a colonnade with the path down the middle, 19 metres tall. They stand in the Vil.la Amelia gardens; the register counts fourteen, the garden's chronicler fifteen."
     },
     {
       "id": "bcn_033",
@@ -1185,7 +1211,8 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide. Answered by Park Guell on 2026-08-28, in reply to our own question about this specific tree: 'este se encuentra fuera de la zona regulada, por lo que no requiere de acceso con entrada.' So the three inside the fence need a ticket and this one does not. The park's own administration is the authority on where its fence runs; do not flip this back from a map that predates 2020.",
-      "girth_cm": 70
+      "girth_cm": 70,
+      "how_to_recognise": "You can recognise it by two main limbs running out nearly horizontal, one of them resting on the ground, spreading a canopy from a base no wider than a doorway. It stands on the shared path beside the Hort de l'Avi allotments."
     },
     {
       "id": "bcn_034",
@@ -1293,7 +1320,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the crown, 24 metres across on a tree 25 metres tall, unpruned where the city's other planes are cut back to knuckles each winter. It stands between the Ciutadella lake and the zoo fence."
     },
     {
       "id": "bcn_037",
@@ -1326,7 +1354,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by a single trunk 1.55 metres round on a plant usually clipped into a waist high hedge, under a crown six metres wide. It stands in front of the Glorieta de la Transsexual Sonia, the park's old bandstand."
     },
     {
       "id": "bcn_038",
@@ -1392,7 +1421,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the leaves, cut far more deeply into narrow lobes than the hybrid planes on every street around it, and by its lower, looser shape. It stands in Placa de la Universitat in front of the university's main building."
     },
     {
       "id": "bcn_040",
@@ -1425,7 +1455,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the height, 17 metres of avocado on a trunk only 80 centimetres round, gone straight up where a picked orchard tree is kept low and wide. It stands in Placa de Can Bruixa in Les Corts."
     },
     {
       "id": "bcn_041",
@@ -1606,7 +1637,8 @@
         ],
         "kind": "autumn colour",
         "label": "November, when the whole crown turns butter gold and then drops in a day or two"
-      }
+      },
+      "how_to_recognise": "You can recognise it in autumn by the flat butter yellow it turns over about a fortnight before dropping almost all at once. It stands 17 metres tall on a trunk 1.4 metres round in the terraced bulb garden on the Montjuic hillside."
     },
     {
       "id": "bcn_046",
@@ -1649,7 +1681,8 @@
         ],
         "label": "March to April, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the shape, twice as wide as it is tall: five metres high, a crown ten metres across and one trunk 1.8 metres round. It stands in Placa de Joanic, a single tree rather than the group of three trunks."
     },
     {
       "id": "bcn_047",
@@ -1681,7 +1714,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its height, about 32 metres, and by trunk figures that disagree, 4.1 metres in the register against 2.4 measured in 2017. It stands alone among paths lined with 30 illuminated panels of the Declaration."
     },
     {
       "id": "bcn_048",
@@ -1712,7 +1746,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the broad crown, 20 metres across on a trunk 2.9 metres round, the smaller of the garden's two catalogued trees. It stands about 130 metres from the much taller silky oak in the Jardins dels Drets Humans."
     },
     {
       "id": "bcn_049",
@@ -1743,7 +1778,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it as the one broad leaved tree in a garden of cacti and succulents, three metres round under a crown spreading 20 metres. It stands on the terraces of the Jardins de Mossen Costa i Llobera."
     },
     {
       "id": "bcn_050",
@@ -1773,7 +1809,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by a yucca grown to 12 metres on a trunk 1.6 metres round, tree sized where most people expect a shrub. It stands on the seaward side of the path at the foot of the Miramar steps."
     },
     {
       "id": "bcn_051",
@@ -1805,7 +1842,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the canopy, 15 metres across on a trunk 1.6 metres round, far wider than an avocado tree is usually allowed to grow. It stands on Placa Margarida Xirgu in front of the Teatre Lliure entrance."
     },
     {
       "id": "bcn_052",
@@ -1843,7 +1881,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by being the only thing on the street worth looking at, 20 metres tall on a trunk 2.3 metres round, with cream white flower clusters in late summer. It stands on Carrer de la Guardia Urbana in Poble-sec."
     },
     {
       "id": "bcn_053",
@@ -1880,7 +1919,8 @@
       "curation_status": "flagged",
       "notes": "Single source: Barcelona's own Catalog of Trees of Local Interest (catalogue 0131-03-97, register_id 99400455030), catalogued 1997, born approx. 1937, height 15.5m, girth 1.84m at 1.3m, crown 11m. The plaza is named for Carles Buigas i Sans (1898-1979), the engineer who designed the Font Magica de Montjuic that stands in the same square, confirmed independently (Wikipedia, general sources on the fountain's history); this is background/orientation, not a claim about the tree itself.",
       "location_precision": "confirmed",
-      "story": "The horse chestnut in Placa de Carles Buigas went into the ground around 1937, in the middle of the Spanish Civil War, in a city then still held by the Republic. Barcelona calls it a castanyer bord, or bastard chestnut, the old label for Aesculus hippocastanum: it looks like the sweet chestnut that gives Catalonia its autumn treat, but its conkers are bitter and inedible.\n\nCatalogued as a tree of local interest in 1997, it has grown to 15.5 metres with a trunk 1.84 metres round and a crown spreading 11 metres, respectable rather than record-setting, which is exactly why the city keeps a list of local-interest trees at all: not every tree worth keeping is the biggest one in town.\n\nThe square takes its name from Carles Buigas, the engineer who built the Font Magica, Montjuic's musical fountain, right where this tree now stands. A visitor can watch the evening light show and stand under a tree not far off the fountain's own age.\n\nNo record we found says how freely it flowers each April compared with other horse chestnuts in the city; if you know, tell us."
+      "story": "The horse chestnut in Placa de Carles Buigas went into the ground around 1937, in the middle of the Spanish Civil War, in a city then still held by the Republic. Barcelona calls it a castanyer bord, or bastard chestnut, the old label for Aesculus hippocastanum: it looks like the sweet chestnut that gives Catalonia its autumn treat, but its conkers are bitter and inedible.\n\nCatalogued as a tree of local interest in 1997, it has grown to 15.5 metres with a trunk 1.84 metres round and a crown spreading 11 metres, respectable rather than record-setting, which is exactly why the city keeps a list of local-interest trees at all: not every tree worth keeping is the biggest one in town.\n\nThe square takes its name from Carles Buigas, the engineer who built the Font Magica, Montjuic's musical fountain, right where this tree now stands. A visitor can watch the evening light show and stand under a tree not far off the fountain's own age.\n\nNo record we found says how freely it flowers each April compared with other horse chestnuts in the city; if you know, tell us.",
+      "how_to_recognise": "You can recognise it as the horse chestnut rather than the square's much thicker tipu tree, 15.5 metres tall on a trunk 1.84 metres round under an 11 metre crown. It stands in Placa de Carles Buigas beside the Font Magica."
     },
     {
       "id": "bcn_054",
@@ -1917,7 +1957,8 @@
       "curation_status": "flagged",
       "notes": "Barcelona catalogue 0118-06-96 (register_id 99400455041), catalogued 1996, planted 1956. The register lists three individual trunks under this one entry (heights 9/9/10m, girths at 1.3m of 1.65/1.25/1.45m), described as a small grove rather than a single specimen; the story treats them as one collectible ensemble per the register's own grouping. Beteve (the city broadcaster) covers this species blooming citywide each spring; not used as a tree-specific second source, only as context that the flowering display is locally well known.",
       "location_precision": "confirmed",
-      "story": "Barcelona calls this small grove at Placa Joanic 'the trees of love', and each April they make the case themselves: the whole crown erupts in magenta flowers that break straight out of the bark, trunk and branches both, before a single leaf shows. It is one of the few flowering habits dramatic enough that the city's own broadcaster runs a story most springs pointing readers toward wherever it is blooming that year.\n\nThe three trunks here, planted in 1956 in what is now Vila de Gracia, are old enough and large enough that Barcelona catalogued them as trees of local interest in 1996, unusual for a species that rarely reaches this size in the city. Their crowns spread up to 10 metres, and the widest trunk measures 1.65 metres round.\n\nThe Judas tree takes its English name from a legend that Judas Iscariot hanged himself from one; in the Mediterranean it is better known simply as the tree that turns a street corner purple every spring. This one gets noticed on schedule, in the second half of April, when Gracia's small square briefly does exactly that."
+      "story": "Barcelona calls this small grove at Placa Joanic 'the trees of love', and each April they make the case themselves: the whole crown erupts in magenta flowers that break straight out of the bark, trunk and branches both, before a single leaf shows. It is one of the few flowering habits dramatic enough that the city's own broadcaster runs a story most springs pointing readers toward wherever it is blooming that year.\n\nThe three trunks here, planted in 1956 in what is now Vila de Gracia, are old enough and large enough that Barcelona catalogued them as trees of local interest in 1996, unusual for a species that rarely reaches this size in the city. Their crowns spread up to 10 metres, and the widest trunk measures 1.65 metres round.\n\nThe Judas tree takes its English name from a legend that Judas Iscariot hanged himself from one; in the Mediterranean it is better known simply as the tree that turns a street corner purple every spring. This one gets noticed on schedule, in the second half of April, when Gracia's small square briefly does exactly that.",
+      "how_to_recognise": "You can recognise them by three trunks flowering together in the second half of April, magenta straight out of the bark before a leaf shows, crowns up to ten metres and the widest trunk 1.65 metres round. They stand in Placa Joanic."
     },
     {
       "id": "bcn_055",
@@ -1973,7 +2014,8 @@
       "transport": "Palau Reial (Metro L3), about 10 min walk",
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "story": "The city catalogued fourteen trees here as one. Osage oranges grow as a double row buried in the wooded part of the Torre Girona gardens, planted so long ago and grown so thoroughly into the surrounding vegetation that Barcelona's own tree register lists them under a single heritage number rather than fourteen separate entries, the same treatment it gives the garden's own stone pines a short walk away. The ajuntament's own record calls the species barely used today, with very few examples left anywhere in the city, which is what makes an old, unbothered row of them worth finding rather than an ordinary planting.\n\nMaclura pomifera comes from the south-central United States, the Arkansas and Louisiana river country that gave the local Catalan name tarongers de Louisiana, Louisiana oranges, for the huge, wrinkled, inedible fruit that female trees carry. Osage Nation bowyers once prized its wood above every other American timber for its spring, which is where the tree gets its English name. In this garden it has spent its life doing nothing more dramatic than standing, on ground that went from a banker's private estate to a university campus with a supercomputer installed in its old chapel, and has been a public city park since April 2019.\n\nNobody has recorded when these went in. The register leaves the planting year blank, 'to be determined', still unresolved after a century of city cataloguing. If you know, the page welcomes the correction."
+      "story": "The city catalogued fourteen trees here as one. Osage oranges grow as a double row buried in the wooded part of the Torre Girona gardens, planted so long ago and grown so thoroughly into the surrounding vegetation that Barcelona's own tree register lists them under a single heritage number rather than fourteen separate entries, the same treatment it gives the garden's own stone pines a short walk away. The ajuntament's own record calls the species barely used today, with very few examples left anywhere in the city, which is what makes an old, unbothered row of them worth finding rather than an ordinary planting.\n\nMaclura pomifera comes from the south-central United States, the Arkansas and Louisiana river country that gave the local Catalan name tarongers de Louisiana, Louisiana oranges, for the huge, wrinkled, inedible fruit that female trees carry. Osage Nation bowyers once prized its wood above every other American timber for its spring, which is where the tree gets its English name. In this garden it has spent its life doing nothing more dramatic than standing, on ground that went from a banker's private estate to a university campus with a supercomputer installed in its old chapel, and has been a public city park since April 2019.\n\nNobody has recorded when these went in. The register leaves the planting year blank, 'to be determined', still unresolved after a century of city cataloguing. If you know, the page welcomes the correction.",
+      "how_to_recognise": "You can recognise them by a double row of trunks grown thoroughly into the surrounding woodland, and by the big wrinkled inedible fruit the trees drop. They stand in the wooded part of the Torre Girona gardens, fourteen catalogued as one."
     }
   ],
   "oldest_tree_id": "bcn_001"

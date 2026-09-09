@@ -9,19 +9,8 @@
         "latitude": 52.20998537011468,
         "longitude": 21.031183273704034
       },
-      "why_leads_not_shipped": "Access, not evidence. The register (via pl.wikipedia's raw wikitext reproduction of Pomniki przyrody w Warszawie, kodinspire PL.ZIPOP.1393.PP.1465011.4400, designated 2009-08-14, girth 614cm, height 34m) and a dedicated Polish Wikipedia article on Willa Narutowicza (citing Gazeta Wyborcza) together clear the two-source bar easily, and the story is strong: Gabriel Narutowicz, Poland's first president, lived in this villa from his 11 December 1922 swearing-in to his assassination five days later on 16 December, and the poplar named for him still stands on the grounds. But a 2026 web search shows the villa is currently (as of a March 2025 report) being rebuilt into a branch of the Museum of the History of the Polish People's Movement, i.e. an active state-owned construction/renovation site, not a place the public can currently walk onto without permission. No source found states the tree is visible from ul. Parkowa itself. Direct CRFOP fetch was blocked by Incapsula bot protection (crfop.gdos.gov.pl), so nothing further could be checked there this pass. Revisit once the museum work finishes and check for a public entrance, or check street-level visibility (34m poplar may well clear the garden wall) before shipping.",
+      "why_leads_not_shipped": "Access, not evidence, still unresolved. The register (via pl.wikipedia's raw wikitext reproduction of Pomniki przyrody w Warszawie, kodinspire PL.ZIPOP.1393.PP.1465011.4400, designated 2009-08-14, girth 614cm, height 34m) and a dedicated Polish Wikipedia article on Willa Narutowicza (citing Gazeta Wyborcza) together clear the two-source bar easily, and the story is strong: Gabriel Narutowicz, Poland's first president, lived in this villa from his 11 December 1922 swearing-in to his assassination five days later on 16 December, and the poplar named for him still stands on the grounds. RE-CHECKED 2026-09-09: a fresh search confirms the villa is a construction site for the Museum of the History of the Polish People's Movement's third branch (architecture competition won by BDR Architekci; per an April 2026 status update the branch 'is currently under construction'), so it is not a place the public can currently walk onto without permission. No source found states the tree is visible from ul. Parkowa itself. Direct CRFOP fetch was blocked by Incapsula bot protection (crfop.gdos.gov.pl) both this pass and the last. Revisit once the museum construction finishes and check for a public entrance, or check street-level visibility (34m poplar may well clear the garden wall) before shipping.",
       "verify_notes": "Register + Willa Narutowicza wiki article are solid; only the access test is unresolved. Commons has a dated photo (2019-04-22, File:Topola Narutowicza ul. Parkowa 23.jpg) confirming the tree stood then."
-    },
-    {
-      "name": "Drzewa Romana Witkowskiego (Roman Witkowski's Trees: a ginkgo and a honey locust)",
-      "species": "Ginkgo (Ginkgo biloba) and Honey Locust (Gleditsia triacanthos)",
-      "location": {
-        "address": "ul. Pilicka 13, Mokotow",
-        "latitude": 52.19149091189019,
-        "longitude": 21.018980774410345
-      },
-      "why_leads_not_shipped": "Access uncertain. Register entry (kodinspire PL.ZIPOP.1393.PP.1465011.3273, designated 1988-12-28, two species under one designation name) is solid as a single source, matching the established pattern of already-published war_012/war_013 (single-source botanical-garden entries shipped per CLAUDE.md's 2026-08-10 no-single-source-block ruling). But ul. Pilicka 13 is a small plot (773 sqm / 224 sqm building footprint per a Warsaw property record) on a street otherwise described as holding historic villas and at least one embassy; no source found confirms this specific address is a public building, school, or open ground rather than a private residence, which hard rule 10 forbids absolutely regardless of the tree's quality. Nobody identified for certain who Roman Witkowski was. Needs an access check (OSM tag, street view, or a source naming the current occupant) before it can ship.",
-      "verify_notes": "No independent second source found beyond the register/its Wikipedia reproduction; would ship flagged single-source once access clears, matching war_012/013's precedent."
     },
     {
       "name": "Elm(s) of ul. Belgijska 3 (Wiaz polny / field elm, designated 1983-09-06)",
@@ -31,20 +20,74 @@
         "latitude": 52.20256397862663,
         "longitude": 21.026817543620155
       },
-      "why_leads_not_shipped": "Access uncertain. Register (kodinspire PL.ZIPOP.1393.PP.1465011.3000, designated 1983-09-06) gives the address but a web search returned an unrelated summary describing '6 common elm trees plus a pear' at this address, which per the search-summary-is-a-lead rule was not trusted or used. Belgijska is a street associated with diplomatic villas in this part of Mokotow; whether this address is a public garden, embassy grounds, or a private residence was not established this pass. Genuinely rare species locally (Dutch elm disease has killed most mature elms in Europe), worth chasing with a direct look rather than a search summary.",
+      "why_leads_not_shipped": "Access uncertain, though softened this pass. Register (kodinspire PL.ZIPOP.1393.PP.1465011.3000, designated 1983-09-06) gives the address. RE-CHECKED 2026-09-09 via OpenStreetMap reverse geocoding: the nearest building at ul. Belgijska 3 is tagged as an ordinary 'apartments' building (a multi-unit residential block), not a detached villa or an embassy as the previous pass assumed from the street's general diplomatic-villa reputation; the tree's own coordinate sits roughly 40m from that building, which is consistent with an ordinary street tree on public ground rather than a private courtyard, but no source or imagery was found this pass confirming the tree stands on the public verge rather than inside a residents-only courtyard. Genuinely rare species locally (Dutch elm disease has killed most mature elms in Europe), worth chasing with a direct street-view look or OSM foot/highway tag check (the Ypres technique in BRIEF_RESEARCH.md) rather than a search summary.",
       "verify_notes": "Distance to war_009 (already-published Szustra Oaks cluster): roughly 380m, would join the existing Mokotow cluster if access clears."
     },
     {
       "name": "Weeping ash, ul. Pulawska 97 (Jesion wyniosly odm. zwisla)",
       "species": "Weeping European Ash (Fraxinus excelsior 'Pendula')",
       "location": {
-        "address": "ul. Pulawska 97, Mokotow",
+        "address": "ul. Pulawska 97, Mokotow (grounds of Mlodziezowy Dom Kultury Mokotow, the former Puslowski Palace)",
         "latitude": 52.19883257944113,
         "longitude": 21.024916101676514
       },
-      "why_leads_not_shipped": "Not verified this pass. Register (kodinspire PL.ZIPOP.1393.PP.1465011.3264, designated 1990-12-27, wikitext confirms address ul. Pulawska 97) is a real, single-tree source, but a web search returned a fotopolska.eu page that on direct fetch turned out to document a DIFFERENT ash tree entirely (ul. Pustola, Wola-Ulrychow, kodinspire .3275), which the search's own AI summary had wrongly conflated with this one. Caught before anything was recorded, per the search-summary-is-a-lead-never-a-source rule, but it means no verified second source or photo exists for THIS specific tree yet. Worth a clean re-search next pass, not re-using this one's search terms verbatim.",
-      "verify_notes": "Would sit roughly 640m from war_009, within the existing Mokotow cluster."
+      "why_leads_not_shipped": "Location resolved this pass, access still not confirmed. Register (kodinspire PL.ZIPOP.1393.PP.1465011.3264, designated 1990-12-27, wikitext confirms address ul. Pulawska 97, no measurements given) is a real, single-tree source. RE-CHECKED 2026-09-09: OpenStreetMap confirms ul. Pulawska 97 is a Mlodziezowy Dom Kultury (Youth Culture Centre), housed in a mid-19th-century palace built by Henryk Marconi for Ksawery Puslowski; from 1862 it was the Institute for the Moral Improvement of (later Morally Neglected) Children, whose WWII-era director Wladyslaw Sala helped evacuate roughly 500 Jewish children from the Warsaw ghetto; rebuilt after Uprising damage, it has housed the youth centre since 1968, which its own site describes as having a playground and 'a small garden'. This is genuinely a strong story and a public institution, not a private home, BUT it is a children's facility, the same category CLAUDE.md's hard rule 10 flags for schools: ships only with real evidence the grounds are open to casual adult visitors rather than only to enrolled children and their families during class hours. No such evidence was found this pass. A second independent source for the tree itself (beyond the bare register row) is also still missing; the previously-flagged fotopolska.eu page b368090 was re-confirmed this pass to document a DIFFERENT ash entirely, at ul. Pustola 12/14, not Pulawska, so it still cannot be used. Next pass: check mdk-mokotow.pl or call ahead for whether the garden is open to visitors outside class hours.",
+      "verify_notes": "Would sit roughly 640m from war_009, within the existing Mokotow cluster. The palace history (Marconi architect, Institute for Moral Improvement of Children, WWII ghetto-children evacuation) is a strong verify_notes asset for whenever this ships."
+    },
+    {
+      "name": "Maria (jawor Maria), the sycamore maple of the Oncology Institute",
+      "species": "Sycamore Maple (Acer pseudoplatanus)",
+      "location": {
+        "address": "Grounds of the National Institute of Oncology (Narodowy Instytut Onkologii), ul. Wawelska 15, Ochota",
+        "latitude": 52.215361111,
+        "longitude": 20.983738888
+      },
+      "why_leads_not_shipped": "Evidence is excellent, access is the open question. pl.wikipedia's dedicated article 'Maria (jawor)' reproduces the 2012 city council resolution (uchwala nr XLI/1138/2012, designated 2012-10-10, CRFOP-style record), cites a 2012 Gazeta Wyborcza (Agora) feature and the 2020 book 'Drzewa Warszawy' (Stowarzyszenie Z Siedziba w Warszawie), which is a strong, well-sourced, genuinely two-independent-source case. Height 19m, girth 232cm. Real historical texture: long believed planted by Maria Sklodowska-Curie herself on 1932-05-29 at the opening of the Radium Institute she founded, but the 2020 book's own photo analysis of the ceremony concludes Sklodowska-Curie and President Moscicki actually planted two hornbeams (graby) that day, which stood elsewhere and were partly removed for later building work, while the maple was ALREADY growing there and probably germinated in the late 19th century; this is a genuine, sourced correction to the popular legend, not a bridge claim, and should be reported as such rather than repeating the planting legend as fact. The problem is access: pl.wikipedia states plainly the tree stands 'na wewnetrznym terenie Instytutu Onkologii' (on the INNER grounds of the Oncology Institute), a working cancer hospital, adjacent to but administratively distinct from the genuinely public Maria Sklodowska-Curie Park next door (2.16 ha, run by the city, with playgrounds; ochota.um.warszawa.pl and eko.um.warszawa.pl both host pages on it). No source found this pass confirms whether a visitor may walk onto the hospital's own inner grounds without business there. Sending readers into a working oncology hospital's inner grounds to look at a tree is exactly the kind of case hard rule 10's three-part test exists for, and 'can they get in without asking anyone's permission' could not be answered honestly either way. Next pass: check whether the tree is visible from the public park side, or whether the hospital campus itself has unrestricted pedestrian access (many Polish hospital campuses do allow public through-walking, but this needs a source, not an assumption).",
+      "verify_notes": "If access resolves, this is one of the best-documented and best-storied trees found this pass: a named, dated, cross-sourced monument with a genuine correction to its own founding legend. Would sit in the same general Ochota area as the already-published war_002 (Poplar of the Defenders, ul. Grojecka 95), roughly 900m away."
+    },
+    {
+      "name": "Dab piramidalny Hoserow (Hoser pyramidal oak)",
+      "species": "Pyramidal/columnar form of Pedunculate Oak (Quercus robur, likely 'Fastigiata')",
+      "location": {
+        "address": "Near ul. 1 Sierpnia 46, beside Aleja Krakowska, Wlochy (Jadwisin/Okecie area)",
+        "latitude": 52.195972222,
+        "longitude": 20.963694444
+      },
+      "why_leads_not_shipped": "Thin sourcing. A WebSearch AI summary claims it was planted in 1930 by Wincenty Hoser, of the famous 19th-century Warsaw nursery-owning family (Bracia Hoser bought the Rakowiec colony in 1879 and ran tree nurseries there); per the search-summary-is-a-lead-never-a-source rule that specific claim was NOT used as a fact this pass because no fetched page stating it directly was found. What is confirmed: a Wikidata item and Wikimedia Commons category exist (Category:Hoser pyramidal oak in Warsaw) with a caption describing it as originally standing in the Hoser nursery at Rakowiec and now 'w Warszawie przy alei Krakowskiej w poblizu ul. 1 sierpnia'; a City of Warsaw participatory-budget project (bo.um.warszawa.pl/projekt/3469, blocked to fetch, 403) proposes an educational plaque about the tree and the pre-war Hoser farmstead, suggesting local recognition but not itself a designation. No CRFOP/GDOS register entry was found for this tree, meaning it may not be an officially protected natural monument at all, only a locally known specimen. OSM classifies the nearest building at ul. 1 Sierpnia 46 as a retail building, and the tree is described as standing in front of it beside Aleja Krakowska, which suggests street frontage (plausibly public) rather than enclosed private ground, but this is inference, not a stated source. Needs: a second real source (a news article or the participatory-budget page itself once fetchable) with a girth or age figure, and a clearer access statement.",
+      "verify_notes": "If the ~1930 planting date is later confirmed from a real source, that would put it at roughly 95 years old this year, a genuine near-century specimen with a good local-history story (the Hoser nursery family). Do not repeat the 1930/Wincenty Hoser claim in a published story until it is seen on a fetched page."
+    },
+    {
+      "name": "Unmeasured poplar of Park Wielkopolski",
+      "species": "Poplar (Populus sp.)",
+      "location": {
+        "address": "Somewhere within Park Wielkopolski (Zieleniec Wielkopolski), Ochota",
+        "latitude": 52.217883333,
+        "longitude": 20.995266666
+      },
+      "why_leads_not_shipped": "Evidence gap rather than access gap. This is the THIRD natural monument in the same park as the two ashes shipped this pass as war_026 (CRFOP id PL.ZIPOP.1393.PP.1465011.4749, designated 2019-09-26); pl.wikipedia's register reproduction gives no height or girth for it (unlike the ashes), and the park's own Wikipedia article confirms only that 'a very tall poplar' exists among the park's three monuments without a number. Access itself is fine, since it is the same public historic park as the ashes. Needs a girth/height figure from a source actually seen (not a search summary) and a more specific in-park position before it can be marked confirmed.",
+      "verify_notes": "Would join the war_026 cluster in the same park at essentially no extra travel cost."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "name": "Drzewa Romana Witkowskiego (Roman Witkowski's Trees: a ginkgo and a honey locust)",
+      "species": "Ginkgo (Ginkgo biloba) and Honey Locust (Gleditsia triacanthos)",
+      "location": {
+        "address": "ul. Pilicka 13, Mokotow",
+        "latitude": 52.19149091189019,
+        "longitude": 21.018980774410345
+      },
+      "reason": "Private residence, per hard rule 10. RE-CHECKED 2026-09-09: OpenStreetMap classifies the building at ul. Pilicka 13 as type 'detached' (a single-family detached house), matching the earlier finding of a small plot (773 sqm) on a street of historic villas. No source found describes this address as a public building, school, embassy or institution of any kind. Register entry (kodinspire PL.ZIPOP.1393.PP.1465011.3273, designated 1988-12-28) is real and the trees are presumably genuinely fine specimens, but hard rule 10's 'not somebody's home' test fails on the evidence available. Leave blocked unless a future source names an institutional or public use for this specific address."
+    },
+    {
+      "name": "Gabriel (Dab Gabriel / Dab pamieci Gabriela Narutowicza)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location": {
+        "address": "Plac Gabriela Narutowicza, Ochota",
+        "latitude": 52.21886,
+        "longitude": 20.98409
+      },
+      "reason": "Not a collectible tree yet: too young. Wikidata Q117378015 ('oak Gabriel' / pl: 'Gabriel', described as 'pamiatkowy dab w Warszawie', a commemorative oak) resolves by coordinate to Plac Gabriela Narutowicza (confirmed via OSM reverse geocode) and by its Commons category filenames ('Dab gabriel tablica.jpg', a plaque photo) to the oak planted on 11 November 2022 to commemorate Gabriel Narutowicz, Poland's first president, assassinated five days after taking office in December 1922. A genuinely moving commemorative act, echoing the 1918-1928 'oaks of independence' tradition, but the tree itself is a sapling only a few years old: no trunk, no canopy, nothing visually remarkable, and the 'worth the visit' test this project applies (CLAUDE.md, 2026-09-08 ruling) is about the tree as a destination, not the plaque beside it. Access would be fine (a public city square) if the tree merited a page on its own terms. Revisit in decades once it has grown into something a visitor would actually stand in front of; do not publish on the strength of the commemoration alone."
+    }
+  ]
 }
