@@ -67,7 +67,8 @@
       "curation_status": "ai_generated",
       "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Location upgraded to confirmed: the municipality's own open-data register of classified trees carries a Liriodendron tulipifera record with the exact same legal reference and 1950-09-01 classification date cited above, giving a surveyed point about 170m from the previous whole-garden estimate. A second Liriodendron tulipifera also appears in the open-data set nearby, classified separately in 2021 (a different legal reference and date), matching the story's own note about a second, less formally distinguished tulip tree in the same grounds; the 1950 record was used since it matches this tree's own citation. Photo search 2026-07-29: no openly-licensed photo found. Checked Wikimedia Commons (full-text and category search, including the dedicated 'Liriodendron tulipifera in Portugal' category, which has no Porto entries), iNaturalist (one CC-BY-NC-only observation logged at this exact tree's coordinates, unusable), Openverse and a Flickr CC search. Still missing.",
       "location_precision": "confirmed",
-      "girth_cm": 500
+      "girth_cm": 500,
+      "how_to_recognise": "You can recognise it by the trunk, five metres round, growing beside Casa Tait. A second, taller tulip tree stands nearby in the same grounds but carries no formal protection; this is the protected one."
     },
     {
       "id": "por_002",
@@ -180,7 +181,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Location (Quinta da Macieirinha) and classification status confirmed by the city council's parks page; the Museu Romântico/Charles Albert history confirmed independently via the Portuguese Wikipedia article on the gardens. No individual age or measurement found; estimated as a mature 19th-century planting. Pin moved 2026-07-27 about 150m to the Quinta da Macieirinha building itself (Nominatim); checked the municipality's classified-trees open dataset for a surveyed point but this plane isn't in it yet (still under formal review, not yet legally classified), so this stays a building-level anchor, hence approximate. Re-checked 2026-07-29 against ICNF's national register (sigservices.icnf.pt, BDG/AIP layer, the successor/authoritative source for this same classification process): no Platanus entry exists yet at Quinta da Macieirinha; the only two Porto plane-tree records in that register are at Jardim da Cordoaria and Jardim da Casa do Professor, both different sites, so the pin stays approximate. Photo search 2026-07-29: no openly-licensed photo found on Wikimedia Commons, iNaturalist, Openverse or Flickr CC search. Still missing.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by where it stands, in the garden beside Quinta da Macieirinha, the manor house now serving as Porto's Museu Romantico."
     },
     {
       "id": "por_005",
@@ -221,7 +223,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Ensemble entry: over 60 camellia specimens at Casa Tait, several centenarian, confirmed by a dedicated garden-history source; Porto's 'City of Camellias' civic branding confirmed independently via the city's own environment department. No single representative specimen is named in either source, hence a group entry rather than one tree. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim), the same correction applied to this garden's other Casa Tait entry; stays approximate since this is a scattered ensemble, not one trunk. Photo replaced 2026-09-02, and the gap it closes was flagged here since 2026-07-29: the old image was a correctly licensed but generic Camellia japonica bloom with no tie to Casa Tait, which is the 'never a generic photograph of the species' rule live on the page. Paulo V. Araujo's photograph is the camellia walk itself, in flower, with the house behind it.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them as hedges rather than single trees, more than sixty camellias sectioning the paths and glorietas around Casa Tait."
     },
     {
       "id": "por_006",
@@ -255,7 +258,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age range, joint classification and 'oldest of species in Portugal' status confirmed by the city council's own classification announcement; garden history and species count confirmed independently via Wikipedia. Location upgraded to confirmed: an iNaturalist observation of this species inside the garden, the only Bischofia javanica recorded there, gives a surveyed point for one of the three (Bischofia javanica being rare enough in Portugal that a species match this specific is strong corroboration), about 130m from the previous whole-garden estimate. Photo replaced 2026-09-02: the iNaturalist image from that observation was a close-up of foliage and fruit, which the Cadiz standard rejects. Paulo V. Araujo's photograph, viewed directly, shows a whole tree in leaf with trunk and crown readable, in the garden. Flat overcast light (POOR on photo_light for contrast) and it still beats a leaf close-up: the subject is the tree. The observation stays the pin's evidence.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them as three trees growing together, evergreen with small dark fruit that stains when crushed. They stand in the Jardim Botanico do Porto."
     },
     {
       "id": "por_007",
@@ -287,7 +291,8 @@
       "curation_status": "flagged",
       "notes": "Classification status confirmed by the city council's announcement; general garden context via Wikipedia. No age, planting date or measurement found in either source, so age is left as unknown rather than guessed. Location upgraded to confirmed, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries an Arbutus xalapensis record (id 539) explicitly at 'Jardim Botânico da universidade do Porto', the only one in the whole city dataset, a genuinely distinctive species match; no legal classification reference is filled in yet there, consistent with this story's 'under formal review' status. Gives a surveyed point about 57m from the previous whole-garden estimate. Photo search 2026-07-29: no openly-licensed photo found; the two iNaturalist observations at this tree and a Flickr photo (karlgercens) from the same garden are all-rights-reserved, so none used. Still missing.",
       "location_precision": "confirmed",
-      "girth_cm": 100
+      "girth_cm": 100,
+      "how_to_recognise": "You can recognise it by the reddish, peeling bark, close kin to the strawberry tree native to Portugal's own hillsides. It stands in the Jardim Botanico do Porto."
     },
     {
       "id": "por_008",
@@ -319,7 +324,8 @@
       },
       "curation_status": "flagged",
       "notes": "Height (~24 m) and 'possibly largest in the city' claim come from one detailed garden-history source describing a Porto cedar of this size and species; softened to 'one of the largest' per hard rule 8, since a comparable claim exists for other Porto cedars and no single citywide record-holder has been confirmed. The photo's own Commons categorisation and species identification (Cedrus deodara, Jardins do Palácio de Cristal) place it specifically in this garden, which fixed the location for this entry. No age or planting date found. Checked 2026-07-29 against ICNF's national register of classified trees (sigservices.icnf.pt, BDG/AIP layer) for a surveyed point: the only Cedrus deodara record for Porto is at 'FCUP - Faculdade de Ciências da Universidade do Porto' (id 536), a campus site near the Botanical Garden, not the Jardins do Palácio de Cristal where this tree and its photo are placed, so it was not used. No better source for this pin found; stays approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its drooping, weeping branch tips, unlike the stiffer cedars of Lebanon and Atlas in Porto's other gardens. It stands high on the hillside of the Jardins do Palacio de Cristal, with a view over the Douro."
     },
     {
       "id": "por_009",
@@ -351,7 +357,8 @@
       },
       "curation_status": "flagged",
       "notes": "'Among the largest in the city' status confirmed by two independent sources describing the garden's conifer collection. No age, planting date or precise height measurement found for this individual tree, so age is left as unknown rather than guessed, still flagged for that gap. Location upgraded to confirmed: an iNaturalist observation of this species inside the garden, the only Sequoia sempervirens recorded there, gives a surveyed point about 60m from the previous whole-garden estimate. Photo from the same observation, viewed directly: a tall reddish fibrous-barked trunk rising into a conifer canopy, consistent with the species.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its crown, a landmark rising above the rest of the conifer collection. It stands in the Jardim Botanico do Porto."
     },
     {
       "id": "por_010",
@@ -422,7 +429,8 @@
         "height": 1600,
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-01, with the permission in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
-      "girth_cm": 485
+      "girth_cm": 485,
+      "how_to_recognise": "You can recognise it by the trunk, 4.85 metres round, on the FAUP campus a short walk from the Casa Cor-de-Rosa and the Pavilhao Carlos Ramos."
     },
     {
       "id": "por_012",
@@ -452,7 +460,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 425
+      "girth_cm": 425,
+      "how_to_recognise": "You can recognise it by the healed wound low on the trunk and by its size, four metres round at chest height and six at the base. It stands on private land beside Via Panoramica Edgar Cardoso; view it from the public road only."
     },
     {
       "id": "por_013",
@@ -482,7 +491,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 405
+      "girth_cm": 405,
+      "how_to_recognise": "You can recognise it by the trunk, 4.05 metres round, one of three protected trees sharing the same lawn at Casa Primo Madeira, alongside a tulip tree and a London plane."
     },
     {
       "id": "por_014",
@@ -520,7 +530,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 435
+      "girth_cm": 435,
+      "how_to_recognise": "You can recognise it by its crown, 23.5 metres wide and wider than the tree is tall. It shares the lawn at Casa Primo Madeira with the Atlas cedar and the plane, a different tulip tree from the one at Casa Tait, 750 metres away."
     },
     {
       "id": "por_015",
@@ -550,7 +561,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 640
+      "girth_cm": 640,
+      "how_to_recognise": "You can recognise it by the trunk, 6.4 metres round, one of the thickest measured anywhere in Porto, short at 17 metres with a crown spreading 25 metres. It shares the lawn at Casa Primo Madeira with the cedar and tulip tree."
     },
     {
       "id": "por_016",
@@ -591,7 +603,8 @@
         "height": 3008,
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-02, with the permission he gave for the first batch in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
-      "girth_cm": 315
+      "girth_cm": 315,
+      "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round, one of four protected trees on the same lawn at Palacete Burmester, alongside a Himalayan cedar, a tulip tree and a yew."
     },
     {
       "id": "por_017",
@@ -673,7 +686,8 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "notes": "Reader tip by email, 2026-08-11; the sender is recorded off-site and is NOT named here or on the page, because a private email is not consent to be published. Confirmed in the ICNF national register as processo KNJ1/451, Ginkgo biloba, Jardim das Virtudes, classified D.R. n.o 6, II Serie de 10/01/2005, 200 years at the 2004 measurement, girth 4.3 m, height 35.5 m, crown 17 m. Register coordinate used directly, hence confirmed. The Dias com Arvores blog calls it by far the largest of its species in the country and possibly in Europe; that superlative is NOT repeated on the page under hard rule 8, since no survey settles it. Its December colour is documented there on 06/12/2004 and 05/12/2005. Photograph added 2026-08-11 with explicit written permission for this one image, from the 'Alerta amarelo' post of 05/12/2005 (the 2004 post's photographs belong to somebody else and were NOT granted). Shot on a Nikon D70s on 2005-12-04, which matches the post and the tree's December peak. Viewed before approving: the ginkgo fills the frame in full golden leaf, crown and trunk both readable, daylight, colour. Small at 319x480, so it will not fill the widest layouts, and it is the only photograph of this tree we have. Credited to the publication rather than the person, per the 2026-08-11 rule against putting a reader's name on the site.",
-      "girth_cm": 430
+      "girth_cm": 430,
+      "how_to_recognise": "You can recognise it as the Rainha das Virtudes, the tallest tree in central Porto at 35.5 metres, seen whole from below on the terraced slope of the Jardim das Virtudes above the Douro."
     },
     {
       "id": "por_019",
@@ -710,7 +724,8 @@
       },
       "girth_cm": 360,
       "height_m": 40,
-      "verify_notes": "2026-08-26: merged with por_029, which was a second page for this same tree (both cite ICNF processo KNJ1/450 at identical coordinates). por_029's girth and height measurements and its 100 Mil Arvores source are folded in here. por_029 retired and its slug redirected to this page."
+      "verify_notes": "2026-08-26: merged with por_029, which was a second page for this same tree (both cite ICNF processo KNJ1/450 at identical coordinates). por_029's girth and height measurements and its 100 Mil Arvores source are folded in here. por_029 retired and its slug redirected to this page.",
+      "how_to_recognise": "You can recognise it as the dark dome breaking the roofline at the far end of the plane tunnel, a straight trunk 3.6 metres round rising some 40 metres. It stands in the Jardim da Cordoaria."
     },
     {
       "id": "por_020",
@@ -753,7 +768,8 @@
         "height": 798,
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-01, with the permission in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
-      "girth_cm": 524
+      "girth_cm": 524,
+      "how_to_recognise": "You can recognise it by the trunk, 5.24 metres round at chest height (7.75 at the base), 31 metres tall with a 29-metre crown. It stands in the garden of Casa Allen, now Casa das Artes."
     },
     {
       "id": "por_021",
@@ -795,7 +811,8 @@
         "height": 2000,
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-02, with the permission he gave for the first batch in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
-      "girth_cm": 260
+      "girth_cm": 260,
+      "how_to_recognise": "You can recognise them as a ring of twelve southern magnolias around the lake, each trunk about 2.6 metres round and 16 metres tall. They stand in the Jardim de Sao Lazaro, Porto's oldest public garden."
     },
     {
       "id": "por_022",
@@ -832,7 +849,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 115
+      "girth_cm": 115,
+      "how_to_recognise": "You can recognise them as two camellias standing a few metres apart, 6.5 metres tall with crowns 10 metres across, reading from a distance as one green wall. They stand in front of the Igreja de Sao Verissimo de Paranhos."
     },
     {
       "id": "por_023",
@@ -905,7 +923,8 @@
         "width": 3008,
         "height": 2000,
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-02, with the permission he gave for the first batch in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
-      }
+      },
+      "how_to_recognise": "You can recognise them as seven Mexican fan palms standing in a line, all the same age, reaching almost 25 metres. They stand along the Avenida das Tilias in the Jardins do Palacio de Cristal."
     },
     {
       "id": "por_025",
@@ -982,7 +1001,8 @@
       },
       "girth_cm": 540,
       "height_m": 19,
-      "verify_notes": "2026-08-26: merged with por_028, which was a second page for this same avenue (both cite ICNF processo KNJ3/050 at identical coordinates). por_028's elephant's-foot deformity, the Emile David / around-1866 planting and the 1941 cyclone are folded in here, along with its girth and height measurements and its 100 Mil Arvores source. por_028 retired and its slug redirected to this page."
+      "verify_notes": "2026-08-26: merged with por_028, which was a second page for this same avenue (both cite ICNF processo KNJ3/050 at identical coordinates). por_028's elephant's-foot deformity, the Emile David / around-1866 planting and the 1941 cyclone are folded in here, along with its girth and height measurements and its 100 Mil Arvores source. por_028 retired and its slug redirected to this page.",
+      "how_to_recognise": "You can recognise them by the swollen, splayed trunk bases, like an elephant's foot, on every one of the 37 planes lining this avenue. Look up at the far end: the dark dome is the bunya pine."
     },
     {
       "id": "por_027",
@@ -1020,7 +1040,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 360
+      "girth_cm": 360,
+      "how_to_recognise": "You can recognise them as four tulip trees, each about 22 metres tall with a leaf cut square at the tip, unlike anything else on the square. They stand beside the former Liceu D. Manuel II on Praca Pedro Nunes."
     }
   ],
   "hero_tree_id": "por_008",
