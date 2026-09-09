@@ -54,8 +54,8 @@
       "at": "2026-09-07T06:23:52+00:00"
     },
     "2026-09-08": {
-      "note": "superlatives.py WARN (re.I scope regex false positives) fixed in bfaa50f3: scoped case-sensitivity back on for the scope group with (?-i:...); verified against the two known-good pairs (Fukuoka/Stockholm, Haarlem/Leiden 'first decade').",
-      "at": "2026-09-08T12:17:46+00:00"
+      "note": "superlatives.py scope regex already fixed with (?-i:...) case-sensitive group; verified clean run, 346 claims, 0 collisions. App WARN (map-full.png cloud icon) is visual-taste app work, left for a session with Xcode.",
+      "at": "2026-09-09T08:37:25+00:00"
     }
   }
 }
