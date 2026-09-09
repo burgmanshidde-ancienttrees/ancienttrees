@@ -1,0 +1,101 @@
+[
+  {
+    "id": "vlc_027",
+    "name": "The Second Bottle Tree of the Botanic Garden",
+    "species": "Kurrajong (Brachychiton populneus)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 288,
+    "height_m": 30.1,
+    "crown_m": 13.8,
+    "location": {
+      "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+      "latitude": 39.47613,
+      "longitude": -0.386164,
+      "neighbourhood": "Ciutat Vella"
+    },
+    "verified_sources": [
+      "data/registers/valencia-arboles-monumentales.json (register_id 1144, 'Arbre botella del Botanic II', species Brachychiton populneus, girth 2.88m, height 30.1m, crown 13.8m)",
+      "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=352 (garden's own virtual species catalogue, confirms Brachychiton populneus, common name BRAQUIQUITO/KURRAJONG, held in the garden's Escuela Botanica collection)"
+    ],
+    "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the other Botanic Garden specimens",
+    "transport": "10 min walk from Angel Guimera metro station",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "This is the SECOND of the garden's two register-listed 'bottle trees': register_id 1143 ('Arbre botella del Botanic I', Ceiba speciosa) is already published as vlc_017. This one, register_id 1144, is Brachychiton populneus, a different genus that shares the same Spanish common name 'arbol botella' informally, which is what caused an earlier pass to flag a species ambiguity (a jardibotanic.org page it found described a bottle tree as Brachychiton discolor, in the same garden). That ambiguity is resolved here: jardibotanic.org's own catalogue independently lists a Brachychiton populneus specifically (not discolor), under its own common name BRAQUIQUITO/KURRAJONG (distinct from 'arbol botella'), held in the Escuela Botanica collection, which matches the register's species assignment for this individual. The catalogue page describes the species generally rather than this specific trunk's measurements, so it corroborates identity and presence in the collection rather than confirming which exact tree, the same caveat already carried by vlc_022 in this cluster. No age or planting date found anywhere. Alive: the Jardi Botanic is an active, currently operating institution (confirmed via its own live website, fetched 2026-09-09).",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "paid_entry": true
+  },
+  {
+    "id": "vlc_028",
+    "name": "The Pecan of the Botanic Garden",
+    "species": "Pecan (Carya illinoinensis)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 388,
+    "height_m": 32.9,
+    "crown_m": 16.1,
+    "location": {
+      "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+      "latitude": 39.476621,
+      "longitude": -0.387157,
+      "neighbourhood": "Ciutat Vella"
+    },
+    "verified_sources": [
+      "data/registers/valencia-arboles-monumentales.json (register_id 1153, 'Nouer americà del Botanic I', girth 3.88m, height 32.9m, crown 16.1m)",
+      "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=455 (garden's own virtual species catalogue: Carya illinoinensis, common names PACANA/PECAN/NOGAL AMERICANO, listed in the garden's own Bosque and Escuela Botanica collections)"
+    ],
+    "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the other Botanic Garden specimens",
+    "transport": "10 min walk from Angel Guimera metro station",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Second source is the garden's own species catalogue page, fetched directly (not from a search summary): it confirms Carya illinoinensis grows in the garden's Bosque/Escuela Botanica collections, matching the register's species and general area, but describes the species rather than this individual trunk's own measurements, so treat as corroborating identity rather than confirming which exact tree (same caveat as vlc_022). No age or planting record found. Girth recorded per the register (3.88m); a 50m mature height is cited for the species generally by the garden, well above this specimen's registered 32.9m, so this individual has room to grow further, worth a line in the story. Alive: garden is an active, currently operating institution (confirmed 2026-09-09).",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "paid_entry": true
+  },
+  {
+    "id": "vlc_029",
+    "name": "The Persimmon of the Botanic Garden",
+    "species": "Common Persimmon (Diospyros virginiana)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 221,
+    "height_m": 30.3,
+    "crown_m": 10.8,
+    "location": {
+      "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+      "latitude": 39.476051,
+      "longitude": -0.386248,
+      "neighbourhood": "Ciutat Vella"
+    },
+    "verified_sources": [
+      "data/registers/valencia-arboles-monumentales.json (register_id 1134, 'Caquier de Virginia del Botanic I', girth 2.21m, height 30.3m, crown 10.8m)",
+      "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=878 (garden's own virtual species catalogue: Diospyros virginiana, common names CAQUI DE VIRGINIA/GUAYACAN DE VIRGINIA, listed in the garden's Escuela Botanica collection)"
+    ],
+    "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the other Botanic Garden specimens",
+    "transport": "10 min walk from Angel Guimera metro station",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Second source is the garden's own species catalogue page, fetched directly: confirms Diospyros virginiana grows in the Escuela Botanica collection, matching the register's species and area, but is a species description rather than a record of this individual trunk, so it corroborates identity rather than confirming which exact tree (same caveat as vlc_022 and the two other Botanic Garden trees delivered this pass). No age or planting record found anywhere. The species is dioecious (separate male and female trees) and produces edible fruit used for compotes, per the garden's own catalogue text, worth a line for the writer. Alive: garden is an active, currently operating institution (confirmed 2026-09-09).",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "paid_entry": true
+  }
+]
