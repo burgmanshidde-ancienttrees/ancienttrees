@@ -240,6 +240,7 @@ NOT_READY_MARKER = re.compile(
     r"\bno second source\b|\bneeds a second source\b|\bfor a second source\b|"
     r"\bnot individually destination-level\b|"
     r"\bnot researched in depth this pass\b|"
+    r"\bnot researched beyond the register\b|\bwrong container\b|"
     r"\b(?:not pursued|left unverified|left undelivered|"
     r"ship once|not delivered on|removed from protection|"
     r"survival is a genuine question|identity unresolved|unresolved conflict|"
