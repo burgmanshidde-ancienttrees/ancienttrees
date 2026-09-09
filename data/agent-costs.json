@@ -6339,6 +6339,15 @@
     "note": "recognition lines only, 42 trees, no stories; applied via recognise.py --apply; fixed one girth inconsistency (bcn_019, story said 2.6m vs data 2.7m)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "warsaw+maastricht",
+    "kind": "write",
+    "tokens": 47000,
+    "trees": 10,
+    "note": "batched write pass: Warsaw 7 (war_021-027), Maastricht 3 (maa_016-018); 1 best_time (maa_016 autumn colour); 2 species strings normalised (war_024 Wych Elm, war_026 European Ash); merged, city copy counts fixed (warsaw 19->26, maastricht 15->18), 2 species page gaps closed (White Poplar, Japanese Maple) opened by the new supply; preflight/build/qa all clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
