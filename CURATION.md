@@ -11,6 +11,41 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-09 - Dordrecht: finished the stranded verify claim, +3 trees
+
+Continuation of an earlier attempt in the same window that stopped after
+claiming Dordrecht for verify and downloading PDOK aerial imagery for nine
+register candidates plus a Bomenstichting PDF booklet, without writing any
+verdict. Picked the claim back up, judged the aerial evidence, cross-checked
+against two independent sources (the Bomenridders Dordrecht walking route at
+indordrecht.nl and, for the museum garden trees, the Dordrechts Museum's own
+garden page) and shipped three: dor_014 (Oak-leaved Hornbeam, Park
+Merwestein, a genuine two-leaf-shape cultivar and stop 8 of the city's own
+walking route), dor_015 (three London Planes in the Dordrechts Museum
+garden, dated to the museum's 1842 founding period) and dor_016 (three
+beeches in the same garden, girths 315/300/300 cm, ages disputed by the
+register's own admission). Dordrecht is now 16 trees.
+
+Left unresolved rather than guessed at: three register candidates
+("binnentuin" inner-courtyard trees behind Botgenstraat/Spuistraat,
+Botgenstraat/Pelserstraat and the AMRO bank on Stationsweg) where aerial
+imagery could not settle whether the ground is genuinely open to the public,
+recorded as leads in data/leads/dordrecht.json with the specific aerial
+evidence so a future pass does not re-fetch the same imagery. Also not
+reached this pass: the Weizigtpark oak, Amerikaanse es near Merwesteinpark's
+Vrieseweg entrance, the Kromhout canalside oak, two more planes (Baerleplantsoen,
+Begraafplaats Dubbeldam) and the Huis van Gijn museum garden trees, all still
+open in data/research/dordrecht-register-candidates.json.
+
+The out_dordrecht_bomen.pdf the earlier attempt downloaded (the
+Bomenstichting's "Langs monumentale bomen in Dordrecht" booklet) turned out
+to carry no extractable text layer in this environment (WebFetch read it as
+binary, and a manual zlib stream-extraction attempt found only image data,
+not text streams); poppler-utils is not installed and apt-get/pip both need
+approval this run does not have. Its content was not needed this pass since
+web sources covered the same trees, but a future pass with rendering tools
+available could still get more out of it.
+
 ## 2026-09-09 - Alicante's register radius is exhausted
 
 A verify pass re-checked all 44 candidates in the Valencia region register
