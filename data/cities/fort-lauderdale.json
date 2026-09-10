@@ -1,0 +1,178 @@
+{
+  "city": "Fort Lauderdale",
+  "country": "United States",
+  "status": "needs_curation",
+  "oldest_tree_id": "ftl_001",
+  "intro": "Fort Lauderdale's own downtown holds little worth this list, but twenty minutes inland in Davie, Flamingo Gardens has quietly become the densest concentration of state-record trees anywhere in Florida: more than twenty species that the Florida Forest Service has measured as the biggest of their kind in the state, planted since the botanical collection began on the Wray family's homestead in 1927. Four stand out here, an earpod tree wider than most cars are long, a sandbox tree that detonates its own seed pods, El Salvador's national tree in bloom, and the Maya's staple breadnut.",
+  "meta_description": "Inland in Davie: an earpod tree over 6m round, a self-detonating sandbox tree, and Florida's densest cluster of state champion trees.",
+  "question_meta": "Fort Lauderdale's champion trees carry no documented age; the state register measures size, not years. Full list of 4, all at one Davie garden.",
+  "question_answer": "No tree on this page has a documented age, and that is the honest answer rather than a gap being hidden: the Florida Champion Tree Register ranks trees on trunk girth, height and crown spread scored into points, not years, and none of Flamingo Gardens' champions carries a recorded planting date. The biggest trunk measured is the Earpod Tree of Flamingo Gardens, just over six metres round, which makes it the largest rather than provably the oldest, since a tropical hardwood can put on real girth within a few decades. Flamingo Gardens itself has existed as a botanical collection since 1927, which sets a rough ceiling on how long any planted specimen here has had to grow.",
+  "question_context": "The trees on this page come from the Florida Forest Service's Champion Tree Register, which crowns one champion per species statewide on a points formula combining trunk circumference, height and a quarter of the average crown spread. It measures size, not years, and comparing girths across species says nothing about age: a tropical hardwood can put on in a few decades what a slow-growing oak needs a century to build. All four champions here stand at Flamingo Gardens, a private 60-acre botanical garden and wildlife sanctuary in Davie that has assembled Florida's densest concentration of state-record trees, more than twenty in total, since the property was first planted as the Wray family homestead in 1927. The largest by circumference is the Earpod Tree, just over six metres round; the tallest is the Sandbox Tree, at roughly 31 metres. None of the four carries a documented planting date in the register or anywhere else found so far. Flamingo Gardens' own horticultural records, if they specify when any of these went into the ground, would settle it, and a reader who knows should tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Fort Lauderdale?",
+      "a": "No tree on this page has a documented age. The Florida Champion Tree Register measures trunk girth, height and crown spread, not planting dates, so the biggest trunk, the Earpod Tree of Flamingo Gardens at just over six metres round, is the largest rather than provably the oldest."
+    },
+    {
+      "q": "Are Fort Lauderdale's remarkable trees free to see?",
+      "a": "No, all four stand inside Flamingo Gardens, a private botanical garden and wildlife sanctuary in Davie that charges general admission, currently $24 for adults and $17 for children aged 3 to 11. The ticket also covers daily wildlife shows and a narrated tram tour."
+    },
+    {
+      "q": "Why are Fort Lauderdale's champion trees all at one garden?",
+      "a": "Flamingo Gardens has spent nearly a century assembling tropical species on one 60-acre property in Davie, and the Florida Forest Service has since measured more than twenty of them as the largest recorded specimen of their species anywhere in the state, more than any other single site in Florida."
+    },
+    {
+      "q": "What does \"Florida Champion\" mean?",
+      "a": "It means the Florida Forest Service has measured a tree as the biggest recorded specimen of its species anywhere in the state, scored on a formula combining trunk circumference, height and a quarter of the average crown spread. It says nothing about the tree's age."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ftl_001",
+      "name": "The Earpod Tree of Flamingo Gardens",
+      "species": "Earpod Tree (Enterolobium cyclocarpum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 607,
+      "height_m": 27.7,
+      "location": {
+        "address": "Flamingo Gardens, 3750 S Flamingo Rd, Davie, FL 33330",
+        "latitude": 26.07372,
+        "longitude": -80.31239,
+        "neighbourhood": "Davie"
+      },
+      "verified_sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0 (Florida Forest Service, Florida Champion Tree Register)",
+        "https://en.wikipedia.org/wiki/Flamingo_Gardens"
+      ],
+      "access": "Paid entry: Flamingo Gardens general admission, $24 adults, $17 children 3-11, under 2 free. Open daily 9:30am-5pm, last entry 4pm, closed Thanksgiving and Christmas.",
+      "transport": "No direct public transit; about a 20-25 minute drive from downtown Fort Lauderdale via I-595 west and Flamingo Road. Free on-site parking.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "Florida Champion Tree Register (Florida Forest Service, ArcGIS FeatureServer, register row 'Monkeysoap', SNAME Enterolobium cyclocarpum, STATUS Florida Champion): CIRCUMFERE 239, HEIGHT 91, CROWN_MAX 159, CROWN_MIN 118, TOTAL_PTS 365. Register units confirmed as inches/feet by reconstructing the American Forests points formula (circumference_in + height_ft + avg_crown_ft/4) against TOTAL_PTS across all 43 Broward County rows, exact match. Converted: 239in = 607cm girth, 91ft = 27.7m height. Wikipedia's Flamingo Gardens article independently names 'Enterolobium cyclocarpum (ear tree)' as one of the garden's 23 Champion Trees, corroborating existence/species/location without relying on the register alone. No planting date found in either source; flagged for missing age per the publish-and-ask rule rather than held back.",
+      "how_to_recognise": "You can recognise it by the trunk alone, over six metres round and spreading into one of the widest canopies in the garden, and by seed pods that curl into a dark, ear-shaped coil.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "story": "An earpod tree's seed pods curl into something that looks unmistakably like a human ear, dark brown and coiled, which is where the genus name comes from, Enterolobium, roughly \"intestine pod,\" and where Costa Ricans got the tree's other common name, guanacaste. This one has grown wide rather than tall: over six metres round the trunk, spreading into one of the broadest canopies at Flamingo Gardens, a private botanical garden and wildlife sanctuary in Davie. The Florida Forest Service lists it as the state's Champion Enterolobium cyclocarpum, the biggest recorded specimen of the species anywhere in Florida.\n\nGuanacaste trees are native to the tropical dry forests of Central America and northern South America, from Mexico to Venezuela, where a single hollowed trunk was traditionally large enough to carve into a dugout canoe. Costa Rica made the species its national tree in 1959, honouring the province of the same name. This one has had none of that use. It has simply been left to grow since the garden's early decades, in the collection assembled around the 1927 homestead of the Wray family, who later opened the grounds to the public.\n\nNo planting date survives for it specifically, so its age is unrecorded rather than estimated. What is measured is the trunk, wider than most cars are long, standing in a garden that holds more Florida state champion trees in one place than anywhere else in the state.",
+      "paid_entry": true
+    },
+    {
+      "id": "ftl_002",
+      "name": "The Dynamite Tree of Flamingo Gardens",
+      "species": "Sandbox Tree (Hura crepitans)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 404,
+      "height_m": 30.8,
+      "location": {
+        "address": "Flamingo Gardens, 3750 S Flamingo Rd, Davie, FL 33330 (west side of the children's garden)",
+        "latitude": 26.07389,
+        "longitude": -80.31325,
+        "neighbourhood": "Davie"
+      },
+      "verified_sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0 (Florida Forest Service, Florida Champion Tree Register)",
+        "https://en.wikipedia.org/wiki/Flamingo_Gardens"
+      ],
+      "access": "Paid entry: Flamingo Gardens general admission, $24 adults, $17 children 3-11, under 2 free. Open daily 9:30am-5pm, last entry 4pm, closed Thanksgiving and Christmas.",
+      "transport": "No direct public transit; about a 20-25 minute drive from downtown Fort Lauderdale via I-595 west and Flamingo Road. Free on-site parking.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "Florida Champion Tree Register: register row 'Sandbox Tree', SNAME Hura crepitans, STATUS Florida Champion, location text 'Located on west side of children's garden at Flamingo Garden[s]'. CIRCUMFERE 159, HEIGHT 101, CROWN_MAX 90, CROWN_MIN 88, TOTAL_PTS 282, matching the reconstructed points formula (inches/feet). Converted: 159in = 404cm girth, 101ft = 30.8m height. A second, smaller Challenger-status Hura crepitans (circ 132in/335cm) is also registered at Flamingo Gardens in the 'rainforest ridge area'; not published as a separate entry to avoid a register-twin problem, kept as a lead. Wikipedia's Flamingo Gardens article independently names 'dynamite tree' among the garden's Champion Trees, corroborating this species' presence at the site. No planting date found; flagged for missing age.",
+      "how_to_recognise": "You can recognise it by the rows of short conical spines covering the bark from base to crown, unlike any other tree nearby, and a trunk over four metres round. It stands on the west side of the children's garden.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "story": "A ripe sandbox tree pod detonates on its own, no touch required, throwing its seeds up to thirty metres and cracking loud enough to startle anyone standing nearby, which is how the tree earned its other common name, the dynamite tree. This one has grown to over four metres round the trunk and above thirty metres tall, standing on the west side of the children's garden at Flamingo Gardens in Davie, and the Florida Forest Service records it as the state's Champion Hura crepitans, the largest of its species measured anywhere in Florida.\n\nThe trunk carries a second warning most visitors notice before any pod goes off: rows of short conical spines cover the bark from base to crown, a defence against animals that might otherwise climb or gnaw it. The pale sap running beneath that bark is caustic enough that people in parts of its native range once used the crushed bark and seeds to stun fish in still water, which is thought to be where the genus name Hura comes from.\n\nNone of this makes the tree unusual for a botanical garden; sandbox trees are planted worldwide as ornamentals for their glossy leaves and sheer bulk, sap and spines included. No planting date survives for this specimen, so its age is unrecorded. What is on record is the girth, wider than most sandbox trees anywhere in the state get to grow.",
+      "paid_entry": true
+    },
+    {
+      "id": "ftl_003",
+      "name": "The Maquilishuat of Flamingo Gardens",
+      "species": "Pink Trumpet Tree (Tabebuia rosea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 239,
+      "height_m": 20.1,
+      "location": {
+        "address": "Flamingo Gardens, 3750 S Flamingo Rd, Davie, FL 33330",
+        "latitude": 26.07333,
+        "longitude": -80.31325,
+        "neighbourhood": "Davie"
+      },
+      "verified_sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0 (Florida Forest Service, Florida Champion Tree Register)",
+        "https://en.wikipedia.org/wiki/Flamingo_Gardens",
+        "https://en.wikipedia.org/wiki/Tabebuia_rosea"
+      ],
+      "access": "Paid entry: Flamingo Gardens general admission, $24 adults, $17 children 3-11, under 2 free. Open daily 9:30am-5pm, last entry 4pm, closed Thanksgiving and Christmas.",
+      "transport": "No direct public transit; about a 20-25 minute drive from downtown Fort Lauderdale via I-595 west and Flamingo Road. Free on-site parking.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "Florida Champion Tree Register: register row 'Pink trumpet-tree', SNAME Tabebuia rosea, STATUS Florida Champion. CIRCUMFERE 94, HEIGHT 66, CROWN_MAX 77, CROWN_MIN 55, TOTAL_PTS 176, matching the points formula. Converted: 94in = 239cm girth, 66ft = 20.1m height. Wikipedia's Flamingo Gardens article independently names 'pink trumpet tree' among the garden's Champion Trees. Tabebuia rosea's own Wikipedia article confirms it is El Salvador's national tree (maquilishuat) and flowers on bare branches February-April. No planting date found for this specimen; flagged for missing age.",
+      "how_to_recognise": "Out of flower, you can recognise it by its pale grey bark and modest size beside the garden's bigger champions; in bloom, February to April, the canopy turns pink and leafless at once.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          2,
+          3,
+          4
+        ],
+        "label": "February to April, when the whole canopy blooms pink before the leaves return",
+        "kind": "flowers"
+      },
+      "story": "Once a year this tree drops every leaf and turns entirely pink for a week or two, then leafs out green again as if nothing happened. Tabebuia rosea flowers on bare branches between February and April across its native range from Mexico to Peru, a bloom so complete that the whole canopy briefly reads as a single flower rather than a tree. The specimen at Flamingo Gardens in Davie stands close to twenty metres tall with a trunk nearly two and a half metres round, and the Florida Forest Service lists it as the state's Champion Tabebuia rosea, the largest recorded in Florida.\n\nEl Salvador made this exact species its national tree, calling it the maquilishuat, and across Central America it is planted as a street and park tree specifically for this one performance: an unremarkable green canopy most of the year, then, briefly, impossible to miss. Flamingo Gardens keeps this one among a wider collection of more than twenty Florida Champion trees spread across sixty acres, gathered around a hammock of old live oaks at the heart of the property.\n\nNo planting record survives for this individual tree, so its age is unrecorded rather than estimated; a tree like this can put on real girth within a few decades, so size alone says little about its years. What is documented is the state record it holds, and the week or two each year, usually late winter into spring, when it is the loudest thing in the garden.",
+      "paid_entry": true
+    },
+    {
+      "id": "ftl_004",
+      "name": "The Maya Breadnut of Flamingo Gardens",
+      "species": "Breadnut (Brosimum alicastrum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 323,
+      "height_m": 23.2,
+      "location": {
+        "address": "Flamingo Gardens, 3750 S Flamingo Rd, Davie, FL 33330 (picnic area)",
+        "latitude": 26.07367,
+        "longitude": -80.31384,
+        "neighbourhood": "Davie"
+      },
+      "verified_sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0 (Florida Forest Service, Florida Champion Tree Register)",
+        "https://en.wikipedia.org/wiki/Flamingo_Gardens",
+        "https://en.wikipedia.org/wiki/Brosimum_alicastrum"
+      ],
+      "access": "Paid entry: Flamingo Gardens general admission, $24 adults, $17 children 3-11, under 2 free. Open daily 9:30am-5pm, last entry 4pm, closed Thanksgiving and Christmas.",
+      "transport": "No direct public transit; about a 20-25 minute drive from downtown Fort Lauderdale via I-595 west and Flamingo Road. Free on-site parking.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "Florida Champion Tree Register: register row 'Mayan breadnut', SNAME Brosimum alicastrum, STATUS Florida Champion, location 'In picnic area of Flamingo Gardens'. CIRCUMFERE 127, HEIGHT 76, CROWN_MAX 87, CROWN_MIN 62.5, TOTAL_PTS 222, matching the points formula. Converted: 127in = 323cm girth, 76ft = 23.2m height. Wikipedia's Flamingo Gardens article independently names 'bread nut tree' among the garden's Champion Trees; Brosimum alicastrum's own Wikipedia article covers the ramon/breadnut common names, Maya-era dietary use and the unresolved academic debate over deliberate ancient cultivation versus natural growth on disturbed ground. No planting date found for this specimen; flagged for missing age.",
+      "how_to_recognise": "You can recognise it by its position in the garden's picnic area, a trunk over three metres round with smooth grey bark, unlike the spiny or buttressed trunks of the garden's other champions nearby.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "story": "Archaeologists have argued for decades over whether this tree helped keep Maya cities fed through droughts that failed their corn. Brosimum alicastrum produces a starchy, protein-rich seed the Maya ground into flour and ate roasted, and the species turns up in unusually dense stands around ancient Maya ruin sites across the Yucatan and the Peten, dense enough that some researchers think the trees were deliberately planted or favoured by people managing the forest around their cities centuries ago. Others argue the pattern is simply what the tree does naturally on the disturbed, phosphorus-rich ground people happened to leave behind. The debate has not settled either way.\n\nThe specimen at Flamingo Gardens in Davie has grown over three metres round the trunk and above twenty metres tall, standing in the picnic area of the sixty-acre garden, and the Florida Forest Service records it as the state's Champion Brosimum alicastrum, the largest of its species measured in Florida. Local names for the tree, ramon and breadnut, both point at the same use: the seed, not the fruit around it, was the food.\n\nNo planting date survives for this individual, so its age is unrecorded. What survives instead is the size of the trunk, the largest example of a tree that may or may not have helped feed an empire, standing now beside a garden's picnic tables.",
+      "paid_entry": true
+    }
+  ]
+}
