@@ -11,6 +11,25 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
+
+The deploy had been red since 00:04 UTC: `i18ncheck.py` was refusing the
+build over 6 missing access/transport fields in the Italian Florence
+overlay, left behind by yesterday's Florence backfill (English got the
+fields, Italian did not). Fixed, and confirmed clean across
+preflight/i18ncheck/astro build/qa.py.
+
+While there, found and finished the 4 claims the previous night-run had left
+standing (`passcheck.py --claims`): Valencia's verify pass had 3 trees ready
+but with colliding ids; renumbered and wrote them up (+3, now 31 trees).
+Cordoba's "write" claim turned out to be a finished Spanish translation
+overlay, not stories; committed and released. Applied and vendored 3 photo
+approvals that were sitting judged-but-unapplied (2 Krakow, 1 Utrecht),
+which also cleared the "2 photos not on our domain" warning from session
+start. Dispatched a further photo-judge batch on Utrecht/Arnhem's remaining
+unjudged candidates; still running as this entry is written. Full detail in
+CURATION.md.
+
 ## 2026-09-09 (continuation 3) - Florence: 3 thin entries backfilled instead of duplicated
 
 Claimed Florence for verify. Found second sources (RAMI's independent
