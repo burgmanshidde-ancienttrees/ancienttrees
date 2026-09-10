@@ -56,7 +56,8 @@
       },
       "curation_status": "flagged",
       "notes": "The 'Pin de Napoléon' nickname's origin is not documented in any source checked; not claimed as connected to Napoleon himself, only reported as a local name. A matching photo exists on Flickr (user Michele 69600) but is marked All Rights Reserved, not a usable open licence, so not used per hard rule 4. Photo viewed directly: shows a multi-trunked pine with distinctive pale, mottled grey-cream-green patchwork bark, exactly the trait the story describes, beside a small park information sign. Approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its bark peeling into patches of grey, green and cream, a pale patchwork that only develops with age. It stands on the arboretum perimeter path in Parc de la Tete d'Or."
     },
     {
       "id": "lyo_002",
@@ -88,7 +89,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age given as 'plus que centenaire' (over a century) by the dendrology source rather than a precise figure, based on girth and trunk condition rather than a documented planting record. Photo viewed directly: shows a mature specimen tree with a gnarled, irregular crown standing alone on a park lawn next to an information sign, consistent with a labelled park specimen. Approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its ridged, hollowed trunk over the lower two metres, about 3.70 metres round. It stands in the arboretum of Parc de la Tete d'Or."
     },
     {
       "id": "lyo_003",
@@ -124,7 +126,8 @@
       },
       "curation_status": "flagged",
       "notes": "No documented planting date; age estimated from the park's 1850s founding given the tree's exceptional measured size (5.45m girth, 30.5m height) rather than a verified record. Cross-checked against an OpenStreetMap-tagged arboretum inventory node (ref 13912) recording the same 5.45m circumference in 2014 and 5.74m in 2025, within 5m of this entry's own coordinates: independent confirmation the pin is right, not a correction.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its deeply fluted, buttressed trunk, 5.45 metres round and over 30 metres tall, among the largest in the arboretum. It stands near the lake in Parc de la Tete d'Or."
     },
     {
       "id": "lyo_004",
@@ -161,7 +164,8 @@
       },
       "curation_status": "flagged",
       "notes": "No individual age or precise girth documented beyond 'enormous trunk with multiple branches'; the national label confirms formal recognition but not a specific age. Location confirmed 2026-07-29 against the Metropole de Lyon's own PLU-H remarkable-tree register: a single Aesculus hippocastanum listed at 'Rue de la Garde', described as 'tres grand exemplaire en bonne sante', within 90m of Parc de la Garde's own geocoded centre and about 1.8km from this entry's prior approximate coordinate, which sat outside the park entirely.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its enormous trunk carrying multiple large branches, standing out even among the park's other mature trees. It stands at the centre of Parc de la Garde."
     },
     {
       "id": "lyo_005",
@@ -295,7 +299,8 @@
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble; no individual tree in the garden is named or dated in the sources checked, so no single specimen is claimed as remarkable on its own.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by the mix of magnolia, cedar and horse chestnut across the garden's lawns, with a view over the Saone and Fourviere. They stand in the Jardin des Chartreux."
     },
     {
       "id": "lyo_010",
@@ -332,7 +337,8 @@
           11
         ],
         "label": "October into November, when its leaves turn a rich butter yellow"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its clean, even yellow autumn colour and a trunk about 3.20 metres round, 26 metres tall. It stands in the arboretum of Parc de la Tete d'Or."
     },
     {
       "id": "lyo_011",
@@ -370,7 +376,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by being a full-grown oak on an ordinary residential street, where plane and lime are the usual planting. It stands at Rue Viret and Rue Francis de Pressense, Villeurbanne."
     },
     {
       "id": "lyo_012",
@@ -406,7 +413,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by being a young, unmarked chestnut at the centre of a small square, no plaque beyond its own planting. It stands in Place Marc-Aron, rue Moncey."
     },
     {
       "id": "lyo_013",
@@ -436,7 +444,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by standing alone at the centre of a square barely bigger than a tennis court, where four small streets meet. It stands in Place Antoine-Rivoire."
     },
     {
       "id": "lyo_014",
@@ -475,7 +484,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its tiered, almost horizontal branches, each level wider than the one above it. It stands in Square Gabrielle Dupond-Ebrard, rue des Aqueducs."
     }
   ]
 }
