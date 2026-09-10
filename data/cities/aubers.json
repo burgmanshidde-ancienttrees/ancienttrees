@@ -35,8 +35,8 @@
       "height_m": 12,
       "location": {
         "address": "5 Chemin du Joncquoy, 59249 Aubers, France",
-        "latitude": 50.6625,
-        "longitude": 2.772328,
+        "latitude": 50.587625,
+        "longitude": 2.813241,
         "neighbourhood": "Aubers, Weppes, Hauts-de-France"
       },
       "story": "Shellfire levelled the village of Aubers in the First World War. This lime, standing apart from the houses, came through it.\n\nThat is only the most recent thing it has outlasted. A map of 1706 shows three more lindens on the same site, all of them long gone. The tree was reportedly split by lightning in 1721 and grew on regardless. The Chateau de Joncquoy and its Le Notre gardens, which stood here, both went in the Revolution, and this is the last living piece of that estate. It also took the storm of 1999, which flattened woodland across northern France, without going over.\n\nA deed of 1490 is cited for the planting, which would put it past 530 years. It is 12 metres tall today and 5.1 metres round: low and thick rather than grand, which is roughly what five centuries of weather leave behind.\n\nIt was nominated for France's Tree of the Year in 2020, and the Weppes tourism office thought enough of it to put it on its own logo. You reach it on foot along the Chemin du Joncquoy, on an ordinary walking route out of the village, free and at any hour, with nothing between you and it.",
@@ -47,14 +47,17 @@
       "access": "Free, standing beside the Chemin du Joncquoy, a short distance from the village; described by a hiking-route page as a stop on an ordinary public walking route.",
       "transport": "No station; reached by car or on foot from Aubers village, in the Weppes area near Lille.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aubers.-_Tilleul_du_Joncquoy_%282%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Pierre André Leclercq, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4896,
+        "height": 3672
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its shape, only 12 metres tall and 5.1 metres round, low and thick rather than grand. It stands alone beside the Chemin du Joncquoy, apart from the village houses."
+      "how_to_recognise": "You can recognise it by its shape, only 12 metres tall and 5.1 metres round, low and thick rather than grand. It stands alone beside the Chemin du Joncquoy, apart from the village houses.",
+      "verify_notes": "2026-09-10: pin moved 8.8 km southeast, from 50.662500,2.772328 to 50.587625,2.813241. The old coordinate sat north-northwest of Aubers near Armentieres, contradicting our own address field, which says 5 Chemin du Joncquoy in Aubers itself. A photo pass caught it: the Commons photograph of this tree carries a geotag at the new point, a kilometre from the village centre, and the same photographer's second file shows the tree's own stone plaque reading TILLEUL du JONCQUOY. Still approximate: a camera's fix is where the photographer stood."
     }
   ]
 }
