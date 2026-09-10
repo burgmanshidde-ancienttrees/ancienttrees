@@ -756,20 +756,28 @@ apt-get/pip both need approval this run does not have. Left on disk;
 harmless if a future session with rendering tools wants it, otherwise safe
 to ignore.
 
-## 2026-09-10 - Photo round five: fifty-five candidates, zero approvals, and that is the finding
+## 2026-09-10 - Photo round five: seventy-two candidates, one approval, and that is the finding
 
 Round four took the cities-without-a-photograph count from 263 to 240 by
 judging only candidates in those cities. Round five ran the same play again and
-returned **nothing at all**: 55 candidates across 14 photo-less cities, 55
-rejections, not one photograph.
+returned **one photograph**: 72 candidates across 14 photo-less cities, 71
+rejections, and Eichigt's Koernerlinde. 240 cities to 239.
 
 That is information rather than a failure, and it is the most useful number of
 the five rounds. **The Commons well for these cities is dry.** They have
-survived four rounds of picking, and what is left in their queues is archival
-sepia plates from the 1890s (Alkmaar's top three, which the standard bans
-outright), bronze sculptures on plinths, a framed museum painting, and building
-facades. There is no photograph in there being missed by a careless pass; there
-is no photograph in there.
+survived four rounds of picking, and what is left in their queues is not
+marginal tree photographs, it is not trees at all: a grilled cheese, a
+sandwich and a burrito attached to Chicago from one photographer's trip
+album; a swan, a wallaby and a cat on Bordeaux; busts of Bihari and Vorosmarty
+on Budapest's planes; PSV stadium interiors on Eindhoven; six Het Loo garden
+panoramas on Apeldoorn; six Dealey Plaza views on Dallas; sepia plates from
+the 1890s on Alkmaar, which the standard bans outright. Not one candidate in
+the whole batch was `held`, because not one reached the question of which
+trunk it showed.
+
+The cause is worth naming: proximity alone, in a dense city, pulls in whole
+unrelated upload sets. That is the price of the last-resort sweep and it is
+why its judged rate is what it is.
 
 **The yield curve across the week, so nobody re-derives it:**
 
