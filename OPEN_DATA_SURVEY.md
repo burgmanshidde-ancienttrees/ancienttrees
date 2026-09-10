@@ -2745,7 +2745,12 @@ one we had wrongly parked.
 **IMPORTED: Landelijk Register Monumentale Bomen v2024 (Bomenstichting).**
 `data/registers/netherlands-lrmb.json`, 16,094 trees with surveyed coordinates.
 Licence from their own DCAT catalogue: "Onder bronvermelding te gebruiken:
-(c)Bomenstichting", plus Hidde's own written permission by email. It carries
+(c)Bomenstichting". That licence alone is sufficient and was verified independently.
+This line used to add "plus Hidde's own written permission by email"; corrected
+2026-09-10, he never had a reply from the national Bomenstichting and they are
+still tier 1 unsent in drafts/OUTREACH.md. The permission that does exist is
+Bomenstichting AMSTERDAM's, for their own booklet, a different organisation.
+Their inspection PHOTOGRAPHS are not licensed to us. It carries
 `visitable` and `owner_category` per tree, so hard rule 10 becomes a filter
 rather than a hunt, and `planted_band` gives a decade. Slices, counting only
 visitable and non-private: Utrecht 253, Amsterdam 206, Haarlem 125,
