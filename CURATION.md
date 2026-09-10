@@ -460,6 +460,42 @@ Parque el Botanico trunk, a felled-elm cluster). Zero new trees deliverable
 from this register without a non-register source (local news survey, a
 second walking brochure, reader submissions). Do not re-run this hunt.
 
+## 2026-09-10 - Photo lanes measured empty, and two famous trees with no photograph
+
+Recorded after three rounds of photo passes over two days so no later window
+goes back to them.
+
+**Exhausted on Commons, confirmed by repeat passes.** Frankfurt's Palmengarten
+returned glasshouse interiors, ferns and pond views on THREE separate passes;
+both its copper beeches keep an honest gap. Helsinki's Kaisaniemi botanic
+garden and Hamburg do the same, as does Craigends, whose yew grove holds only
+understorey and moss-tangle shots. Cordoba's Patio de los Naranjos returns the
+Mezquita's arcade. Nuremberg's Kontumazgarten returns its benches and paths.
+
+**Two famous trees have no usable photograph there at all.** The **Ankerwycke
+Yew** at Runnymede: two bole-only frames, one of which says so in its own
+title, and a distant winter waterside view. The **Castagno dei Cento Cavalli**
+at Sant'Alfio: its best-known image on Commons is an eighteenth-century Houel
+painting, and the only other frames are a burr close-up and a low-resolution
+under-canopy view. Both need a new source or a reader, not another sweep.
+
+**Where photographs DO come from, measured across the three rounds.** Places we
+publish for a single named, protected veteran. One pass counted it exactly: 13
+of its 16 approvals came from those, 3 of 12 from big-city parks, and none at
+all from Rome or Paris. Such a tree is photographed whole, in daylight, by
+somebody who came for it, and it carries its own evidence into the frame: a
+Naturdenkmal sign, a pomnik plaque, a shimenawa, a natural-monument stele, or a
+register number in the filename.
+
+**Two identity questions answered rather than obeyed, both raised twice.**
+Nuremberg's two Hallerwiese planes are NOT mislabelled: the city's own 2020
+Naturdenkmal ordinance records two planes there as ND-3, and the lime the sweep
+keeps finding is our own nbg_001 on the same lawn, which already carries a
+photograph from the identical series. And Higashiomi's Minamihanazawa hananoki
+is alive: the photograph shows vigorous regrowth around a tarpaulin-wrapped
+stump, which is what our first sentence already says. Both are recorded in the
+trees' verify_notes.
+
 ## 2026-09-09 - Photo pass over the named candidates, and three trees called Kabouterboom
 
 A sweep and a viewing pass over the candidates whose Commons FILENAME names
