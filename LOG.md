@@ -11,6 +11,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation 8) - Finished an abandoned write claim (3 new single-tree places), fixed a broken deploy (rung 2), caught an id collision before it shipped
+
+An earlier attempt in this same window stopped after 65 minutes with 55 unspent, having claimed `_famous-spain` for a write pass and written only 1 of its 4 verified trees (Lecina, left uncommitted). Finished the other three directly.
+
+**Fixed the broken deploy first (CLAUDE.md rung 2).** `health.py` showed Build and deploy failing on the newest push: Florence's `flo_021` (added last continuation) had `access`/`transport` filled in English but not in the Italian overlay, which `i18ncheck.py` gates the build on. Filled both fields in `data/i18n/it/florence.json`.
+
+**Then the write pass: 3 new single-tree places, all Spanish, all under the 2026-08-31 destination exception** (a single tree may be its own place when it is itself the reason to travel): **Mendaza** (Encina Tres Patas, a hollow holm oak standing on three buttress legs, Spain's 2007 national longevity award and a European Tree of the Year top-10 finalist), **Cabeza del Buey** (the Centenary Elms of the Ermita de Belen, seven trees that survived Dutch elm disease, Spain's Tree of the Year 2017), and **Muxika** (Urkietako Artea, a holm oak far outside its usual Mediterranean range, one of only two centenarian holm oaks recorded in Biscay). Muxika's own verify notes flagged it as the weakest destination case of the four (no international recognition, just a local 1995 protection decree) and unresolved for folding into Bilbao (45-50 min by train, past the day-trip boundary); shipped it anyway as its own place, per the standing rule that a fame judgement call never blocks publication.
+
+**Caught an id collision preflight would have caught anyway, but before it reached preflight**: the verified research file had the elm grove as `cdb_001`, colliding with Cordoba's existing `cdb_` prefix (18 trees already using it). Renamed to `ebe_001`.
+
+preflight then caught four more problems on the first run, all fixed: Ulmus minor needed one canonical common name across the site (Field Elm, matching Paris and Parma, not Common Elm), two meta_descriptions over 155 characters, one question_context 28 words over Contract B's range.
+
+Build (5334 pages), preflight (0 problems), superlatives (355, no collisions) and qa.py (1 pre-existing sitemap/lastmod artifact, same one flagged as unrelated last continuation) all clean. Released the `_famous-spain` claim, emptied its now-fully-written verified file, logged costs.
+
 ## 2026-09-10 (continuation 7) - Cleared a claim backlog from a prior attempt that shipped nothing, wrote 2 deepen trees and 1 new single-tree place, caught and reverted a dead-register tree before push, and closed the gap in leads.py that let it through
 
 Found three standing claims (brisbane, milan, taormina) already released by a concurrent run before this one could act on them; the write/verify shelf itself (`prepare.py`) showed only a handful of writable candidates: `_famous-italy-verified.json` had 9 verified trees stuck unwritten (4 already published under other names, 2 confirmed dead, leaving 3 real candidates) plus 2 READY leads (Dordrecht, Genoa) and a thin Prague oak held back on an unresolved access question (a sports-club/kindergarten boundary, never confirmed open to a stranger).
