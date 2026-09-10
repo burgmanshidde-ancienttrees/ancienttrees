@@ -7066,6 +7066,24 @@
     "note": "session work, tokens not tracked; recognition-line pass, 7 how_to_recognise lines onto live Luxembourg City trees, closing that city's gap to zero; no new trees, restatement only",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "hobart",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 7 how_to_recognise lines onto live Hobart trees, closing that city's gap to zero; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Eindhoven",
+    "kind": "write",
+    "tokens": 46000,
+    "trees": 5,
+    "note": "5 stories + recognition lines, all with flagged source conflicts (LRMB vs Gemeente Eindhoven open data); 2 species normalised to canonical names; merged into data/cities (eindhoven 11->16), fixed stale meta_description/question_meta/FAQ count promises",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
