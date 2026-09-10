@@ -56,7 +56,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age (about 400 years) and 'largest urban tree' status from SCMP's 2015 report on the 1997 government recognition, corroborated by the Conservancy Association's own campaign page describing the tree's brown root rot treatment. Coordinates converted from the government's own Old and Valuable Trees register (OVTNo LCSD YTM/97, HK1980 Grid easting 835547 / northing 818183, data.gov.hk / greening.gov.hk, free reuse with attribution per data.gov.hk's terms and conditions) using a Transverse Mercator inverse transform implemented and sanity-checked this session (origin round-trip exact; several other converted points cross-checked against independently known Hong Kong locations). Whitfield Barracks dates (1890s construction, returned to government 1967, redeveloped into Kowloon Park 1970) corroborated via Wikipedia and Hong Kong Antiquities and Monuments Office material. Photo search this session found no clearly identifiable, individually-tagged open photo of this specific banyan among Kowloon Park's many trees; stays an honest gap.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its cracked, partly missing trunk, a third torn away by a 2007 typhoon, still the widest in the city. It stands above the spectator stand of Kowloon Park's mini soccer pitch."
     },
     {
       "id": "hkg_002",
@@ -88,7 +89,8 @@
       },
       "curation_status": "flagged",
       "notes": "Ensemble entry (27 individual banyans/figs on one wall), the collectible point is the wall itself, matching the site's ensemble bar (Amsterdam's Lomanstraat, Barcelona's Ciutadella silk tree precedent) since it is compact, famous for being exactly that, with one obvious place to stand. MTR rerouting and 2005 campaign corroborated by the Conservancy Association's own project page (cahk.org.hk) and an independent local heritage site (stonewalltreehk.com). Several individual trees on this wall carry their own OVT/SWT register entries (e.g. Department Ref ARCHSD CW/44, CW/45, CW/47), confirming government recognition, though this entry treats the wall as one collectible ensemble rather than listing each tree separately. Coordinates are the register's own grid point for the OVT-listed tree nearest the playground entrance (ARCHSD CW/47), converted from HK1980 Grid as described in hkg_001's notes. Photo viewed directly 2026-07-31: the wall's cascading roots are unmistakably the subject, daylight, colour, well framed, passes the Cadiz standard.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by their trunks and roots fused directly into three stone masonry retaining walls. They stand along Forbes Street, near Exit C of Kennedy Town MTR station."
     },
     {
       "id": "hkg_003",
@@ -121,7 +123,8 @@
       },
       "curation_status": "flagged",
       "notes": "1661 Qing coastal evacuation order and the tree's 100+ year age corroborated across two independent travel/history sources (Hong Kong Footprint, Chestnut Journal) plus the official Hong Kong Tourism-linked gohk.gov.hk district guide. Coordinates from the government's own Old and Valuable Trees register (OVTNo LCSD YL/6, 'Shui Mei Village Playground', HK1980 Grid 824313/834252), converted as described in hkg_001's notes; this is the same public playground the sources describe, so identity is not in question even though the register entry does not itself name the tree house. Photo viewed directly 2026-07-31: the roots and trunk consuming the ruin are unmistakably the subject, daylight, colour, well framed, passes the Cadiz standard.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its trunk and roots growing straight through the walls and window openings of an abandoned stone ruin. It stands in Shui Mei Village Playground, Kam Tin."
     },
     {
       "id": "hkg_004",
@@ -151,7 +154,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age (300-500 years, commonly cited as 400), crown size (32m) and trunk girth (ten adults linking arms) come from one detailed source, culture-hongkong.com; a second search pass through Wikipedia's She Shan Tsuen article and the government's own Herbarium fung shui woods overview confirmed the woodland's 1975 SSSI designation and the village's location but added no independent corroboration of the individual tree's age or size, so this stays flagged for a single-source age claim rather than presented as fully cross-verified. Existence, species and exact location are independently confirmed via the government's own Old and Valuable Trees register (OVTNo LANDSD TP/1, 'She Shan Tsuen, Tai Po, She Shan Fung Shui Woodland SSSI', condition notes matching: severe cavity, dead branches), coordinates converted from its HK1980 Grid reference (833000/834524) as described in hkg_001's notes. A future session should look for a second independent source on the specific age figure before upgrading this out of flagged.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its trunk, too wide for ten adults linking arms to encircle, under a 32 metre crown. It stands behind She Shan Tsuen village, off Lam Kam Road."
     },
     {
       "id": "hkg_005",
@@ -181,7 +185,8 @@
       },
       "curation_status": "flagged",
       "notes": "The '1,000+ years' figure is a local/official claim, sourced to the government's own South Development and Sustainable Lantau Office (CEDD) storytelling page, repeated by other tourism material, but not a scientifically dated figure; the story presents it explicitly as a claim rather than a fact per the honesty rule. age_min/age_max are deliberately kept to a conservative, defensible 200-300 rather than encoding the unverified 1,000-year figure into age_max: this field feeds mechanical site-wide comparisons (the per-city oldest-tree page, any future oldest-trees-in-the-world collection), and hard rule 8 requires superlative-driving numbers to be checked rather than passed through from an unverified local claim. hong-kong.json sets oldest_tree_id to hkg_001 for the same reason, so this entry's own claimed age never silently drives the city's 'oldest tree' answer. The WWII guardian-spirit story is independently corroborated by a second, unrelated source (a personal blog, nstecker.com, predating and unconnected to the government page). Existence, species and exact location confirmed via the government's own Old and Valuable Trees register (OVTNo AFCD/KS/005, 'The slope next to Sha Lo Wan School, Lantau Island', condition notes: minor cavity, fair health, sign of termite infestation), coordinates converted from its HK1980 Grid reference (808051/816127) as described in hkg_001's notes.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by standing on the slope directly beside Sha Lo Wan's old village school. It stands in Sha Lo Wan, on Lantau Island's north-west coast."
     },
     {
       "id": "hkg_006",
@@ -211,7 +216,8 @@
       },
       "curation_status": "flagged",
       "notes": "WWII branch-loss story and village history corroborated across two independent sources (EJ Insight news article, 360Cities panorama caption); village settlement date and rural-revival programme also appear on Hong Kong Tourism Board's own Lai Chi Wo page. No source gives a specific planting date or age for the tree itself, so age_min/age_max left at 0 rather than guessed, per the honesty rule (same convention as Singapore's undated heritage-register entries). Existence, species and exact location confirmed via the government's own Old and Valuable Trees register (OVTNo AFCD/LK/009, TR no. AFCD/N/00002, 'Lai Chi Wo, Sha Tau Kok', condition notes: asymmetric canopy, minor cavity, moderate decay), coordinates converted from its HK1980 Grid reference (844630/842966) as described in hkg_001's notes.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its four trunks splaying from one shared base, a fifth cut away during the wartime occupation. It stands behind Lai Chi Wo village, Sha Tau Kok."
     },
     {
       "id": "hkg_007",
@@ -274,7 +280,8 @@
         "status": "missing"
       },
       "height_m": 13.0,
-      "verify_notes": "Height 13.0 m from the hongkong-ovt register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 13.0 m from the hongkong-ovt register, matched on our own pin (0 m away).",
+      "how_to_recognise": "You can recognise it by its trunk, 1.8 metres through, under an 18 metre crown, in the Kowloon version of the park rather than the one in Sai Ying Pun. It stands on Canton Road, Jordan."
     },
     {
       "id": "hkg_009",
@@ -307,7 +314,8 @@
         "height": 3096
       },
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the hongkong-ovt register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the hongkong-ovt register, matched on our own pin (0 m away).",
+      "how_to_recognise": "You can recognise it by its trunk, 2 metres through, thicker than any other camphor on this page, beside a children's playground near the aviary. It stands in Kowloon Park."
     },
     {
       "id": "hkg_010",
