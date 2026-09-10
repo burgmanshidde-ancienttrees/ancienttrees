@@ -94,6 +94,35 @@ def _plain(s):
     return _html.unescape(re.sub(r"<[^>]+>", "", s or "")).strip().strip(",")[:120]
 
 
+ASKS_RATHER_THAN_NAMES = ("credit line", "please", "thank you", "if you use",
+                          "attribution is required", "when reusing", "in case of reuse")
+
+
+def _author(meta):
+    """The photographer's name, which a BY licence obliges us to print.
+
+    Commons' Artist field is free text and some photographers fill it with a
+    re-use request instead of a name: "Thank you to indicate this credit line
+    next to the image in case of reuse: Credit: Polymagou - CC BY-SA ...". That
+    is not empty, so nothing downstream can see it is not a credit, and it
+    shipped on a Clayes-sous-Bois cedar on 2026-09-09 as the sentence itself.
+    A second one turned up the next day on a Msecke Zehrovice file.
+
+    The same files carry an Attribution field which is short and holds the
+    name, so prefer that whenever Artist reads as a request. Neither field is
+    reliable enough to trust blindly: preflight still fails the build on a BY
+    licence crediting nobody, and a viewing pass still reads what it approves.
+    """
+    artist = _plain((meta.get("Artist") or {}).get("value", ""))
+    low = artist.lower()
+    if artist and not any(p in low for p in ASKS_RATHER_THAN_NAMES):
+        return artist
+    fallback = _plain((meta.get("Attribution") or {}).get("value", ""))
+    fallback = re.sub(r"^\W+", "", fallback)
+    fallback = re.sub(r"\s*/\s*wikimedia commons\s*$", "", fallback, flags=re.I).strip()
+    return fallback or artist
+
+
 def imageinfo(titles):
     """Batched imageinfo with licence metadata for up to 50 File: titles."""
     if not titles:
@@ -114,7 +143,7 @@ def imageinfo(titles):
                 "thumb": ii.get("thumburl"),
                 "url": ii.get("descriptionurl"),
                 "licence": short,
-                "author": _plain((meta.get("Artist") or {}).get("value", "")),
+                "author": _author(meta),
                 "lat": coord.get("lat"),
                 "lng": coord.get("lon"),
                 "cats": " ".join(c.get("title", "") for c in page.get("categories") or []),
