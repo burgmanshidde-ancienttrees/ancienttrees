@@ -162,10 +162,10 @@ jobs:
           # You have unstaged changes". The commit had already succeeded, so the
           # digest wrote its entry and then threw it away: DATA.md simply had no
           # row for 2026-08-17 and nothing anywhere said why.
-          git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html \
+          git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
             data/outreach-sent.json data/cities \
             data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
-            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/city-coords.json data/outreach-sent.json
+            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/outreach-sent.json
           if git diff --cached --quiet; then
             echo "No new entry today."
           else
