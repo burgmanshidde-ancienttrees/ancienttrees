@@ -6967,6 +6967,15 @@
     "note": "Wilhelminapark weeping silver lime + manna ash + Pontic oak, and the twin planes at the Stadhuis, delivered to data/research/tilburg-verified.json (til_017-020), not yet written/merged; correctly skipped the Heuvel lime (already known felled 1994) and the Leijpark kloosterpark trio (already published as til_013-015) instead of duplicating research",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "ronda",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 6 how_to_recognise lines onto all live Ronda trees, closing that city's gap to zero (was 0 of 6); no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
