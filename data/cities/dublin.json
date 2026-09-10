@@ -56,7 +56,8 @@
         "height": 2448
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the cast iron Victorian bench disappearing into its trunk, bark spilling over the seat's arms and back. It stands near the south gate of King's Inns off Constitution Hill."
     },
     {
       "id": "dub_002",
@@ -125,7 +126,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is a wide, disputed range (500-700 years) and the Swift association is unverified legend, stated as such in the story. Access is genuinely limited to Section 482 open days; this is disclosed honestly per hard rule 10 rather than presented as freely open. Pin tightened 2026-07-26 via GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, a 2009 field GPS survey), which carries a single Taxus baccata record at 'Old Glebe, Co. Dublin' matching this tree exactly. No open-licensed photo found; the garden's limited access likely explains the gap.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its thick, split ancient trunk, about 5 metres round, in a garden corner ringed with visitor benches. It stands at the Old Glebe in Newcastle, Co. Dublin."
     },
     {
       "id": "dub_004",
@@ -164,7 +166,8 @@
       },
       "curation_status": "flagged",
       "notes": "Sources disagree on the chronology: Tickell is said to have planted the walk before his death in 1740, but the garden itself was not founded until 1795, and no source reconciles the two dates. Presented as tradition rather than fact. Pin tightened 2026-07-26 via GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, 2009 field GPS survey), which carries exactly one Taxus baccata record in the gardens; this is one specimen within the double row rather than a survey of the whole avenue, but a specific point inside the actual yew walk rather than the garden's general address. No open-licensed photo found tied specifically to this walk.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the dark, clipped double row of yews forming a formal avenue rather than a single tree. It stands as Addison's Walk in the National Botanic Gardens, Glasnevin."
     },
     {
       "id": "dub_005",
@@ -227,7 +230,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Photo viewed directly: shows two large, burred-trunk plane trees standing together in a campus quadrangle. That resolves the earlier open question (the caption alone didn't tie it to New Square rather than the campus's other notable plane, the Provost's Plane, dub_005): the Provost's Plane is a single tree, so a photographed pair can only be this entry. Approved. Species corrected 2026-07-26 from London Plane to Oriental Plane: both the approved photo's own Commons filename ('Platanus_orientalis-Trinity_College_Dublin.jpg') and an independent field identification in GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, 2009 survey, two Platanus orientalis records 15m apart matching this exact pair) agree on the species, against the original ai_generated field. Pin tightened to the midpoint of those two GBIF-surveyed points.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by the pair of huge plane trees on the lawn, the larger with a trunk over 5 metres round, the widest on campus. They stand in New Square, Trinity College Dublin."
     },
     {
       "id": "dub_007",
@@ -291,7 +295,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Photo verified on Commons: filed under both Category:Saint Anne's Park, Dublin and Category:Quercus ilex (cultivated), showing a straight avenue of dense dark evergreen trees consistent with the holm oak avenue described. Pin resolved 2026-07-28: the European Garden Heritage Network's own account (eghn.org) explicitly states Main Avenue itself, not the separate All Saints Avenue elsewhere in the park, is 'lined with Austrian Pine and Holm Oak'. Queried OpenStreetMap for the park's named ways and found Main Avenue mapped as an actual surveyed path (running roughly east-west, several nodes between -6.178 and -6.194 longitude at ~53.372 latitude); the pin now sits on that mapped path rather than an estimate, replacing the earlier address's confusing reference to All Saints Road, which belongs to a real but different avenue in the same park (a prior pass's OSM candidate near All Saints Road, previously left unresolved as possibly unrelated, is that separate All Saints Avenue, not this one). Upgraded to confirmed since the pin now sits on the actual named, sourced avenue this entry describes.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the long row of dark, evergreen holm oaks lining the avenue, unchanged through winter and summer alike. It stands along the Main Avenue of St Anne's Park, Raheny."
     },
     {
       "id": "dub_009",
@@ -331,7 +336,8 @@
       },
       "curation_status": "flagged",
       "notes": "The '220 years' age and 'donkey field' location both trace back to a single repeated estate description rather than two independently verifiable sources; included per the single-source rule with the gap stated in the story itself. Photo candidate found 2026-07-26 (Commons file captioned 'Acer pseudoplatanus (the large tree), at Farmleigh'), downloaded and viewed directly 2026-07-27: shows a single massive, ancient, low-branching sycamore with a protective fence around its base, in an open parkland setting, exactly matching the described landmark tree. Approved.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the older, unplanned tree at the edge of the donkey field, apart from the estate's later cedars and sequoias. It stands on the Farmleigh grounds in Phoenix Park."
     },
     {
       "id": "dub_010",
@@ -429,7 +435,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Part of a 6-tree National Botanic Gardens cluster around dub_004 (Addison's Walk), all within 200m of each other and the register's own Aubrey Fennell 2009 field survey (Heritage Trees of Ireland, GBIF, CC BY 4.0), designated 'Exceptional specimen trees'. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added and stated as a round range. Register coordinates converted from Irish Grid, checked accurate to within ~40m elsewhere in the dataset."
+      "notes": "Part of a 6-tree National Botanic Gardens cluster around dub_004 (Addison's Walk), all within 200m of each other and the register's own Aubrey Fennell 2009 field survey (Heritage Trees of Ireland, GBIF, CC BY 4.0), designated 'Exceptional specimen trees'. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added and stated as a round range. Register coordinates converted from Irish Grid, checked accurate to within ~40m elsewhere in the dataset.",
+      "how_to_recognise": "You can recognise it by its blue-green needles held in dense, upswept clusters along near-horizontal branches. It stands in the National Botanic Gardens, Glasnevin, near Addison's Walk."
     },
     {
       "id": "dub_013",
@@ -458,7 +465,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Part of the same Glasnevin cluster as dub_004/012, 115m from dub_004. Single source (register only); age band recorded at the 2009 survey (50-100 years) with roughly 17 years added. Same coordinate-conversion caveat as the rest of the cluster."
+      "notes": "Part of the same Glasnevin cluster as dub_004/012, 115m from dub_004. Single source (register only); age band recorded at the 2009 survey (50-100 years) with roughly 17 years added. Same coordinate-conversion caveat as the rest of the cluster.",
+      "how_to_recognise": "You can recognise it by its feathery needles, which turn rusty bronze and drop each autumn, unlike an evergreen fir or pine. It stands in the National Botanic Gardens, Glasnevin."
     },
     {
       "id": "dub_014",
@@ -496,7 +504,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Two sources: the register, and Trees and Shrubs Online (International Dendrology Society), which independently confirms a Zelkova carpinifolia 'Glasnevin' cultivar was named after and propagated from this exact tree. Age is register-only (no second source dates it), so flagged. 200m from dub_004."
+      "notes": "Two sources: the register, and Trees and Shrubs Online (International Dendrology Society), which independently confirms a Zelkova carpinifolia 'Glasnevin' cultivar was named after and propagated from this exact tree. Age is register-only (no second source dates it), so flagged. 200m from dub_004.",
+      "how_to_recognise": "You can recognise it by its multiple upright stems forming a vase shape rather than one trunk, with smooth grey-brown bark. It stands in the National Botanic Gardens, about 200 metres from Addison's Walk."
     },
     {
       "id": "dub_015",
@@ -525,7 +534,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Part of the same Glasnevin cluster, 146m from dub_004. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added."
+      "notes": "Part of the same Glasnevin cluster, 146m from dub_004. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added.",
+      "how_to_recognise": "You can recognise it by its feathery needles that drop each winter like the dawn redwood nearby, easy to confuse on the same walk. It stands in the National Botanic Gardens, near the Atlas Cedar."
     },
     {
       "id": "dub_016",
@@ -555,7 +565,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Two sources agree on existence, species and superlative (largest Ailanthus in Ireland, per Trees and Shrubs Online, an independent dendrology reference, so the claim per hard rule 8 is theirs, not ours); age genuinely disputed between the register's 2009 band (100-150 years, +17 now) and general species lore that Ailanthus rarely reaches old age. Both figures stated rather than one silently picked, per Step 2's conflict rule. 179m from dub_004."
+      "notes": "Two sources agree on existence, species and superlative (largest Ailanthus in Ireland, per Trees and Shrubs Online, an independent dendrology reference, so the claim per hard rule 8 is theirs, not ours); age genuinely disputed between the register's 2009 band (100-150 years, +17 now) and general species lore that Ailanthus rarely reaches old age. Both figures stated rather than one silently picked, per Step 2's conflict rule. 179m from dub_004.",
+      "how_to_recognise": "You can recognise it by its size, 17 metres tall with a trunk over a metre thick, framed between two Victorian glasshouses. It stands in the National Botanic Gardens, facing the Palm House."
     },
     {
       "id": "dub_017",
@@ -585,7 +596,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Two sources, weaker corroboration than the rest of the cluster: the register, and a Trees and Shrubs Online photo captioned 'Glasnevin, Dublin, October 2017' for the same species, likely but not certainly the same individual tree. 117m from dub_004. Do not confuse with Arbutus unedo 'Quercifolia', a different Glasnevin specimen with its own separately-sourced measurement."
+      "notes": "Two sources, weaker corroboration than the rest of the cluster: the register, and a Trees and Shrubs Online photo captioned 'Glasnevin, Dublin, October 2017' for the same species, likely but not certainly the same individual tree. 117m from dub_004. Do not confuse with Arbutus unedo 'Quercifolia', a different Glasnevin specimen with its own separately-sourced measurement.",
+      "how_to_recognise": "You can recognise it by its peeling chestnut brown bark curling back to reveal a glossy copper red layer underneath. It stands in the National Botanic Gardens, Glasnevin."
     }
   ]
 }
