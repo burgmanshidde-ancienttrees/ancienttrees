@@ -50,11 +50,19 @@ class SL:
     @staticmethod
     def rank(tree, cand):
         score = GAPS.names_match(tree, cand)
-        if (cand.get("source") or "") != "last-resort":
+        if score > 0 and (cand.get("source") or "") != "last-resort":
             return score
+        # A candidate whose filename says nothing about the tree scores zero,
+        # and every one of them then ties, so a per-city cap picks five of them
+        # at random. The only evidence such a file carries is where the camera
+        # stood. That was written for last-resort candidates and it applies to
+        # any scoreless one: measured across a full day of viewing passes on
+        # 2026-09-09, a geotag is what settled identity in almost every
+        # approval, and a score of zero with no geotag at all was worthless
+        # every single time. So the tie is broken the same way here.
+        #
         # A last-resort candidate is here precisely BECAUSE its filename says
-        # nothing ("Kontumazgarten 04.jpg"), so names_match scores it zero and
-        # every one of them ties. The only evidence such a file carries is
+        # nothing ("Kontumazgarten 04.jpg"). The only evidence such a file carries is
         # where the camera stood, so that is what orders them: 20 metres from
         # the pin is a different bet from 120, and an untitled photograph taken
         # at the trunk is the likeliest thing in an otherwise empty city.
