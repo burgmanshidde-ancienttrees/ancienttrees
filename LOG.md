@@ -1,36 +1,31 @@
 ## 2026-09-10 (session with Hidde) - The waitlist mail is drafted, the send is his
 
 He asked whether we should mail the waitlist that the app is live. Yes, and it
-is nine days overdue: LOG.md 2026-09-03 recorded the mail as owed and the draft
-as mine, and the draft was never written. It is now `drafts/waitlist-app-live.md`.
+is a week overdue: LOG.md 2026-09-03 recorded the mail as owed and the draft as
+mine, and the draft was never written. It is now `drafts/waitlist-app-live.md`.
 
-**The one thing that needed checking first: the list is two promises, not one.**
-Rows before 2026-09-03 signed up under a general "we will tell you when the app
-is out". Rows after it saw the device-aware form, which promises a mail the day
-an ANDROID app exists, and the newest row is four days old. One mail carries
-both, with the Android sentence kept, rather than splitting seventeen addresses
-into two sends.
+**Who gets it is his ruling, and it narrowed my first draft.** I had written one
+mail for all seventeen rows with the Android promise kept inside it; his answer
+was to leave the post-rename signups out altogether ("behalve de mensen die zich
+hebben aangemeld na de Android waitlist hernoeming"). He is right, and it is the
+same reasoning this file applies to copy everywhere: those people were promised a
+mail the day an ANDROID app exists, and the iPhone app being live is not that
+mail. The newest such row is four days old.
 
-Named only what ships: Kit/Launch.swift has walks, the season story and Plus
-off for every real user, so the mail says trees around you, why the walk is
-worth it, ticking one off, and adding one with a photograph. mailcheck and
-pitchcheck clean. Counts verified today (2,884 trees, 565 places).
+**The cut is `created_at < 2026-09-03T14:16:33Z`**, the commit that put the
+device-aware form live, and deliberately NOT the `source` field: two commits from
+that same afternoon (04af8338, 49865e1b) record two submit listeners racing on
+/app and writing different sources for one submit, swallowed by the unique-email
+constraint. A timestamp cannot have that problem.
+
+Named only what ships: Kit/Launch.swift has walks, the season story and Plus off
+for every real user, so the mail says trees around you, why the walk is worth it,
+ticking one off, and adding one with a photograph. One line says iPhone only,
+because this group never told us what phone they hold. mailcheck and pitchcheck
+clean. Counts verified today (2,884 trees, 565 places).
 
 **FOR HIDDE:** the addresses live in the Supabase `waitlist` table and this
 session has no key, so the send needs either your pull or a run that has one.
-
-# LOG
-
-<!-- archive-index -->
-
-<!-- archive-index -->
-
-**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
-
-- [2026-08](archive/LOG-2026-08.md)
-- [2026-07](archive/LOG-2026-07.md)
-
-So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 
