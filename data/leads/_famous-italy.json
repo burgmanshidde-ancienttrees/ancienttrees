@@ -204,10 +204,9 @@
         "https://commons.wikimedia.org/wiki/File:Il_cerro.jpg",
         "https://commons.wikimedia.org/wiki/File:Il_cerro_a_cerro.jpg"
       ],
-      "status": "held",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified: the town of Cerro Veronese is literally named after this oak-cork hybrid and the municipality's own coat of arms depicts it, girth about 4m, over three centuries old, two sources. Pinned only to the town centre this pass (approximate), not to the actual piazza coordinate. Strong story, thin on hard measurement; a future pass should get the exact piazza coordinate (OSM or a mapped photo) and check lessiniapark.it's own monumental-tree list for neighbours before publishing."
+      "status": "published",
+      "species": "Crenate Oak (Quercus crenata)",
+      "note": "Published as cerro-veronese (cvr_001), new single-tree place under the 2026-08-31 destination exception, verify+write pass 2026-09-10. Third source added this pass (English Wikipedia's own Cerro Veronese article independently confirms the coat-of-arms/place-name fact). Pin still approximate (village centre, not the piazza); a future pass could tighten it via OSM or a mapped photo and check lessiniapark.it's own monumental-tree list for neighbours."
     },
     {
       "name": "Roverella (Pedara)",

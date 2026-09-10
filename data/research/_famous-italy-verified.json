@@ -1,200 +1,44 @@
 [
- {
-  "name": "The Linden of Sant'Orso",
-  "species": "Broad-leaved Lime (Tilia platyphyllos)",
-  "age_estimate": "roughly 475 years",
-  "age_min": 450,
-  "age_max": 500,
-  "girth_cm": 461,
-  "location": {
-   "address": "Via Sant'Orso, beside the Collegiata dei Santi Pietro e Orso, Borgo Sant'Orso, Aosta",
-   "latitude": 45.739153,
-   "longitude": 7.324838,
-   "neighbourhood": "Borgo Sant'Orso, Aosta"
+  {
+    "name": "The Downy Oak of Fonte Colombo (Tree of Perfect Gaiety)",
+    "species": "Downy Oak (Quercus pubescens)",
+    "age_estimate": null,
+    "location": {
+      "address": "Grounds of the Santuario di Fonte Colombo, Vazia, Rieti",
+      "latitude": 42.37836,
+      "longitude": 12.82803,
+      "neighbourhood": "Fonte Colombo, Rieti"
+    },
+    "verified_sources": [
+      "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg"
+    ],
+    "access": "Free to visit; stands on the grounds of the Santuario di Fonte Colombo, an active Franciscan sanctuary and pilgrimage site (a stop on the Cammino di Francesco) that is open to visitors and pilgrims. Exact rules on approaching this specific tree within the grounds not independently confirmed.",
+    "transport": "In the Valle Santa reatina, a few km from Rieti (not from Fara in Sabina, see note); no public transport confirmed, likely reached by car/pilgrim trail from Rieti.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "ONE clear source so far, flagged rather than blocked: the Commons file description (photo credited to Legambiente Centro Italia, used with permission from treeoftheyear.org) gives exact coordinates 42 22'42.10\"N 12 49'40.91\"E (=42.37836,12.82803), matching the lead's coordinate exactly, species Quercus pubescens (downy oak/roverella), photographed 2012, and states the tree was a nominee in Italy's 2014 'Albero dell'Anno' (Tree of the Year) competition under the name 'The Tree of Perfect Gaiety' (L'Albero della Perfetta Letizia), referencing the famous Franciscan parable Francis told Brother Leo at this sanctuary. Could not independently find a second corroborating source in this session (Legambiente's own 2014 archive page was not located; Lazio's regional monumental-tree list link found was dead). No age or girth found anywhere. DO NOT CONFUSE WITH A DIFFERENT, ALREADY-DEAD TREE AT THE SAME SITE: the Italian Wikipedia article on the sanctuary describes a holm oak (leccio, Quercus ilex) stump, fenced off, marking where the sanctuary's apparition legend says Christ appeared to confirm St Francis's Rule - that tree fell in a heavy snowfall in winter 1622 and is long dead, its wood carved into a 1645 sculpture now in the church. The 'Tree of Perfect Gaiety' downy oak is a SEPARATE, different specimen and was alive as of the 2012 photo and 2014 nomination; do not merge the two stories or use the 1622 date for this tree's age. CONTAINER: do not attach to Fara in Sabina - measured straight-line distance is 23.2km from Fara's own tree (fara-in-sabina.json), which fails the ~30-minute public-transport day-trip test on both distance and (likely) transport availability. The natural container is Rieti, which is not currently in the city queue/published cities; until Rieti exists as a page, treat this as a single-famous-tree candidate on the strength of the sanctuary's Franciscan fame and the tree's own 2014 national competition nomination. Recommend a fresh, more thorough source search (Legambiente press archives, local Rieti press) before publishing, given only one source was found in this pass."
   },
-  "verified_sources": [
-   "https://it.wikipedia.org/wiki/Tiglio_di_Sant'Orso",
-   "https://ilregistrodeglialberi.it/3-tiglio-nostrale-aosta-valle-daosta"
-  ],
-  "access": "Free, always visible from the street/borgo, but the tree stands in a raised, fenced planter bed and cannot be approached or touched directly.",
-  "transport": "In the historic centre of Aosta, beside the Collegiata di Sant'Orso; walkable from Piazza Chanoux (city centre), exact walk time not confirmed.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "TWO independent sources agree closely on coordinates (RAMI national monumental-tree registry ID 01/A326/AO/02: 45.739153,7.324838; matches the Commons lead's coordinate almost exactly) and on species/measurements (Tilia platyphyllos, height ~14-14.5m, girth 4.61m measured at 130cm). Age: RAMI gives an estimated ~475 years; Italian Wikipedia independently gives 450-500 years from a documented planting tradition of 1530-1550 (a previous elm or linden stood on the spot before). LEGEND VS HISTORY, keep separate: local legend holds that Saint Orso himself (a 6th-century hermit) planted it and that the valley's council of elders met under it to settle disputes; this is explicitly unverified tradition, not documented fact, and the tree's actual dated origin (1530s-1550s) contradicts the legend's implied age. Do not bridge the two. National monument since 1924, protected by regional law since 1990. Condition: RAMI rates it 'mediocre' - trunk hollow from the base to the first branching, stabilised with metal braces/cables to keep the crown from splitting the trunk, cavity treated against further decay. No dated 2020s news/photo found confirming it is alive today, but it is an actively monitored, cabled and maintained national monument (not an abandoned/forgotten tree), which is reasonably strong standing evidence; flagged rather than confirmed on recency alone. WORTH-THE-VISIT: strong candidate for the single-famous-tree exception (or as the anchor of a future Aosta city page - Aosta is not currently in the city queue/published cities; a regional capital, so it may earn its own city page later rather than needing the exception). It has its own dedicated Italian Wikipedia article, national-monument status since 1924, and a named legend tying it to the city's patron saint; task brief cites 74 monthly reads across 2 Wikipedia language versions. Sits directly beside the Collegiata di Sant'Orso and its famous Romanesque cloister, which people already visit, so the tree adds to an existing destination rather than requiring a trip of its own merit alone."
- },
- {
-  "name": "Quercia Castagnara (Novi Ligure)",
-  "species": "Oak (Quercus virgiliana)",
-  "age_estimate": "roughly 300-305 years",
-  "age_min": 280,
-  "age_max": 330,
-  "girth_cm": 540,
-  "location": {
-   "address": "Strada del Castellone 9-11, in the hills above Novi Ligure",
-   "latitude": 44.738363,
-   "longitude": 8.821518,
-   "neighbourhood": "Castellone, Novi Ligure"
-  },
-  "verified_sources": [
-   "https://ilregistrodeglialberi.it/244-quercia-virgiliana-",
-   "https://www.ilpiccolo.net/2024/03/19/la-quercia-del-castellone-negli-spot-tv-grazie-alle-foto-di-giraudo/"
-  ],
-  "access": "Free; stands beside Strada del Castellone, a public rural road in the hills above Novi Ligure, and has hosted public guided walks (the 2018 Invasioni Digitali heritage event). Whether the exact trunk is reached from the roadside or requires crossing the edge of farmland was not independently confirmed; state this honestly rather than as a flat 'free' until a reader corrects it.",
-  "transport": "Rural hillside site outside Novi Ligure town, reachable by car; no public transport stop identified near the tree.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "TWO independent sources: the RAMI national monumental-tree register (#244, registered 2021-10-14, coordinates 44.738363,8.821518, matching the Commons lead's coordinate almost exactly) gives species Quercus virgiliana (Ten.) Ten., height 22.00m, girth 5.40m at 130cm, estimated age ~305 years, health rated 'Sufficiente'. Il Piccolo (local newspaper, 2024-03-19) independently corroborates: 'at least 300 years old', ~20m tall, 'over four metres' circumference, crown diameter ~28m - the girth figures are close but not identical (5.40m register vs 'over 4m' press estimate); recorded both rather than picking a winner. RECENCY: the 2024 article is strong alive-today evidence - the tree was chosen by Italy's Ministry of Agriculture for a national TV campaign on monumental trees (RAI broadcast, International Forest Day), with new 2024 photographs by local photographer Adriano Giraudo. HISTORY: locally called 'Nonna Quercia' (Grandma Oak); local retelling connects it to the 1799 Battle of Novi, said to mark a position held by French infantry - this is a local tradition repeated in press coverage, not an independently documented military record, so it should read as local lore rather than settled history. WORTH-THE-VISIT: fame is real but modest (brief cites ~29 Wikipedia reads/month, 33.5km from the nearest ranked place) - it clears the bar mainly on the national ministry campaign and its own dedicated entry in Piedmont's official regional monumental-tree list, not on broad renown. Judgement call for whoever assembles the page: weaker single-tree case than Sant'Orso, but has real third-party evidence of being sought out (guided heritage walks, government feature) rather than just registered."
- },
- {
-  "name": "Re Leone",
-  "species": "Swiss Stone Pine (Pinus cembra)",
-  "age_estimate": "roughly 700-800 years",
-  "age_min": 700,
-  "age_max": 800,
-  "girth_cm": 710,
-  "location": {
-   "address": "Pian della Fava, near Malga/Lago delle Buse, above Passo Manghen, municipality of Castello-Molina di Fiemme",
-   "latitude": 46.18295,
-   "longitude": 11.46189,
-   "neighbourhood": "Val di Fiemme / Lagorai, Passo Manghen area"
-  },
-  "verified_sources": [
-   "https://www.latrentina.it/blog/castello-di-fiemme-re-leone-albero-monumentale",
-   "http://www.ascuoladaglialberi.net/provincia-di-trento/",
-   "https://www.comunitavaldifiemme.tn.it/Il-Territorio/I-Comuni/Comune-di-Cavalese/Alberi-monumentali-della-Val-di-Fiemme"
-  ],
-  "access": "Free and outdoors, but this is NOT a simple walk: reachable only by driving from Castello di Fiemme to Passo Manghen (about 18.6km/30min by provincial road SP31), then hiking trail 322 to roughly 2050m near Lago delle Buse, descending off-trail toward Malga Buse; the tree stands about 150m below/off the marked trail at 1950m altitude. No public transport reaches Passo Manghen. State plainly that this is a mountain hike requiring a car and proper hiking gear, not a town walk.",
-  "transport": "No public transport. Car to Passo Manghen (from Castello di Fiemme, ~30 min / 18.6 km via SP31), then on foot via trail 322, roughly 1-1.5 hours round trip including the off-trail descent to the tree.",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "THREE sources agree: latrentina.it (travel blog with a detailed access writeup) and ascuoladaglialberi.net (a Trentino monumental-tree cataloguing site) both give exact coordinates 46 10' 58.62\"N 11 27' 42.82\"E (=46.18295,11.46189), matching the Commons lead's coordinate (46.183203,11.46271) closely; the official Val di Fiemme territorial community page (comunitavaldifiemme.tn.it) confirms Re Leone as one of the valley's three headline named monumental trees (alongside 'Il Maestro dei Pertegari' and 'Le Colonne della Casaia'), though without further detail. Species Pinus cembra (Swiss stone pine, locally 'cirmolo'). Measurements agree closely: girth at ground level 7.10m, girth at 1.3m breast height 5.40m, height 20-23m depending on source (recorded the lower, more specific 20m figure; noted the 23m variant). Age given consistently as 700-800 years across sources. ALIVE: explicitly described as alive today with 'enormous roots and thick branches raised skyward', and with a smaller 'heir' cirmolo (over 1m diameter) growing beside it, roots intertwined - a good, specific, recent-reading description rather than an old record. STORY: named after Leone Vaia, a forestry worker assigned in the 1970s to fell it who refused, calling it 'un monumento', and persuaded his supervisor to spare it - a strong, sourced anecdote (two sources both carry it). CONTAINER: does NOT belong to Trento. Straight-line distance from Trento is ~28-30km, but the real barrier is access, not distance: this is a high-altitude Lagorai hike reached by a 30-minute drive to a mountain pass plus roughly an hour of hiking/off-trail descent, with no public transport at all, which fails BRIEF_RESEARCH's ~30-minutes-by-public-transport day-trip test outright and would misrepresent the trip if attached to a Trento page. It reads as either its own place (something like 'Passo Manghen' or 'Val di Fiemme') or, given the official page's naming of three headline giants (Re Leone, Il Maestro dei Pertegari, Le Colonne della Casaia) plus a separately reported count of '13 giants of Fiemme', a strong candidate for a future dedicated Val di Fiemme monumental-tree cluster once the other named trees are verified. On its own it clears the single-famous-tree destination test: it is a named hiking-guide destination with its own rescue story, not merely a registered specimen."
- },
- {
-  "name": "L'Eterno",
-  "species": "Swiss Stone Pine (Pinus cembra)",
-  "age_estimate": null,
-  "location": {
-   "address": "Near Lago delle Buse, above Passo Manghen, Val di Fiemme/Lagorai",
-   "latitude": 46.17778,
-   "longitude": 11.448977,
-   "neighbourhood": "Passo Manghen area, Val di Fiemme"
-  },
-  "verified_sources": [
-   "http://www.ascuoladaglialberi.net/provincia-di-trento/"
-  ],
-  "access": "N/A - not for publication",
-  "transport": "N/A - not for publication",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "REJECTED, do not publish: this tree is DEAD. Multiple independent sources describe it consistently as a bare, standing dead trunk: ascuoladaglialberi.net says explicitly 'Stato: Morto, conservato come scultura naturale' equivalent - 'di cui resta il tronco nudo e suggestivo' (of which the bare, evocative trunk remains), and a second search summary (magicoveneto.it, a Lagorai hiking-trail site) independently describes it the same way, calling it a preserved natural sculpture rather than a living tree. This satisfies the hard rule against publishing a tree known to be dead. It could still appear as CONTEXT within a Re Leone or Val di Fiemme story (a dead patriarch nearby), never as its own collectible entry. Left here only as a record of why it was rejected, so a future pass does not re-research it; delete this object before merging into any city/place file rather than publishing it as-is."
- },
- {
-  "name": "The Downy Oak of Fonte Colombo (Tree of Perfect Gaiety)",
-  "species": "Downy Oak (Quercus pubescens)",
-  "age_estimate": null,
-  "location": {
-   "address": "Grounds of the Santuario di Fonte Colombo, Vazia, Rieti",
-   "latitude": 42.37836,
-   "longitude": 12.82803,
-   "neighbourhood": "Fonte Colombo, Rieti"
-  },
-  "verified_sources": [
-   "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg"
-  ],
-  "access": "Free to visit; stands on the grounds of the Santuario di Fonte Colombo, an active Franciscan sanctuary and pilgrimage site (a stop on the Cammino di Francesco) that is open to visitors and pilgrims. Exact rules on approaching this specific tree within the grounds not independently confirmed.",
-  "transport": "In the Valle Santa reatina, a few km from Rieti (not from Fara in Sabina, see note); no public transport confirmed, likely reached by car/pilgrim trail from Rieti.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "ONE clear source so far, flagged rather than blocked: the Commons file description (photo credited to Legambiente Centro Italia, used with permission from treeoftheyear.org) gives exact coordinates 42 22'42.10\"N 12 49'40.91\"E (=42.37836,12.82803), matching the lead's coordinate exactly, species Quercus pubescens (downy oak/roverella), photographed 2012, and states the tree was a nominee in Italy's 2014 'Albero dell'Anno' (Tree of the Year) competition under the name 'The Tree of Perfect Gaiety' (L'Albero della Perfetta Letizia), referencing the famous Franciscan parable Francis told Brother Leo at this sanctuary. Could not independently find a second corroborating source in this session (Legambiente's own 2014 archive page was not located; Lazio's regional monumental-tree list link found was dead). No age or girth found anywhere. DO NOT CONFUSE WITH A DIFFERENT, ALREADY-DEAD TREE AT THE SAME SITE: the Italian Wikipedia article on the sanctuary describes a holm oak (leccio, Quercus ilex) stump, fenced off, marking where the sanctuary's apparition legend says Christ appeared to confirm St Francis's Rule - that tree fell in a heavy snowfall in winter 1622 and is long dead, its wood carved into a 1645 sculpture now in the church. The 'Tree of Perfect Gaiety' downy oak is a SEPARATE, different specimen and was alive as of the 2012 photo and 2014 nomination; do not merge the two stories or use the 1622 date for this tree's age. CONTAINER: do not attach to Fara in Sabina - measured straight-line distance is 23.2km from Fara's own tree (fara-in-sabina.json), which fails the ~30-minute public-transport day-trip test on both distance and (likely) transport availability. The natural container is Rieti, which is not currently in the city queue/published cities; until Rieti exists as a page, treat this as a single-famous-tree candidate on the strength of the sanctuary's Franciscan fame and the tree's own 2014 national competition nomination. Recommend a fresh, more thorough source search (Legambiente press archives, local Rieti press) before publishing, given only one source was found in this pass."
- },
- {
-  "name": "Quercia Vallonea di Tricase (Quercia dei Cento Cavalieri)",
-  "species": "Vallonea Oak (Quercus ithaburensis subsp. macrolepis)",
-  "age_estimate": "roughly 700-900 years",
-  "age_min": 700,
-  "age_max": 900,
-  "girth_cm": 450,
-  "location": {
-   "address": "Along the road between Tricase and Marina Serra, toward Santa Maria di Leuca, Salento",
-   "latitude": 39.92793,
-   "longitude": 18.37875,
-   "neighbourhood": "Tricase, Province of Lecce, Puglia"
-  },
-  "verified_sources": [
-   "https://www.italiachecambia.org/2020/02/quercia-vallonea-albero-piu-antico-salento-piu-amato-italia/",
-   "https://www.lentium.it/la-quercia-vallonea-o-dei-cento-cavalieri-di-tricase/",
-   "https://www.hdsalento.com/en/salento-the-quercia-vallonea-vallonea-oak-tricase-turns-900-years-old/"
-  ],
-  "access": "Free, roadside; stands beside the road from Tricase toward Marina Serra/Santa Maria di Leuca. Visitor notes mention little parking and that it is easiest to approach from the Leuca direction (a U-turn is needed coming from Otranto), but no gate or private-land restriction found in any source.",
-  "transport": "Rural roadside site outside Tricase; reached by car, no public transport identified.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "THREE independent sources agree on species (Quercus ithaburensis subsp. macrolepis, the Vallonea oak, an unusual species for Italy) and the core measurements: height 18-20m, girth 'over 4 metres'/4.5m, crown covering nearly 700 sqm (one source separately gives a 25m crown diameter). Age varies by source: italiachecambia.org and most press say 'more than 700 years'; hdsalento.com and lentium.it say 'approximately 900 years' - recorded as a range (700-900) rather than picking a winner, per the sources-conflict rule. FAME, well documented: named Italy's 'Albero dell'Anno' (Tree of the Year) in 2019/2020 and went on to compete for the European Tree of the Year 2020 title; named Puglia's WWF symbol tree in 2000. Known locally as 'Quercia dei Cento Cavalieri' (Oak of the Hundred Knights) from a legend that Emperor Frederick II sheltered there with 100 knights during a storm - flagged clearly as legend, not documented history. Historically its acorns supplied tannin for the local leather-tanning trade. ALIVE: multiple 2020-era sources and visitor reviews describe recent visits ('a great emotion to find oneself before such an ancient living being'); one review calls the site poorly maintained/signposted for a tree of this stature, which is a site-care note, not a health concern. WORTH-THE-VISIT: easily clears the single-famous-tree bar - a national tree-of-the-year winner with its own legend and WWF recognition. CONTAINER: Tricase is not currently in the city queue or published cities, so this reads as a new single-tree place (comparable to the San Quirico d'Orcia precedent already shipped from this same leads file)."
- },
- {
-  "name": "The Old Lime of Macugnaga (Tiglio secolare)",
-  "species": "Lime (Tilia sp.)",
-  "age_estimate": "roughly 500-700+ years",
-  "age_min": 500,
-  "age_max": 700,
-  "girth_cm": 700,
-  "location": {
-   "address": "Near the Chiesa Vecchia and cemetery, Dorf/Staffa, Macugnaga (VB)",
-   "latitude": 45.9709,
-   "longitude": 7.9640,
-   "neighbourhood": "Dorf, Macugnaga"
-  },
-  "verified_sources": [
-   "https://www.illagomaggiore.it/poi/chiesa-vecchia-di-macugnaga-e-il-vecchio-tiglio/",
-   "https://www.ascuoladaglialberi.net/il-tiglio-monumentale-di-macugnaga-vco/"
-  ],
-  "access": "Free; stands beside the historic Chiesa Vecchia and its cemetery in the Walser hamlet of Dorf/Staffa, an open heritage site.",
-  "transport": "In the hamlet of Dorf, near Staffa, Macugnaga (upper Anzasca valley); walkable within the village, no further detail confirmed.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "NO COORDINATES in the original lead; PINNED this pass from the Chiesa Vecchia's own address (Via Chiesa Vecchia 15, 28876 Staffa VB, coordinates 45 58'15.1\"N 7 57'50.3\"E = approx 45.9709,7.9640). The tree itself stands 'poco distante' (a short distance) from the church, near the cemetery, so this is the SITE, not the individual trunk - location_precision is approximate, not confirmed. TWO independent sources agree the tree is a centuries-old lime beside the Chiesa Vecchia, historically used for community judicial/administrative meetings, part of the Walser (German-speaking Alpine settler) heritage of Macugnaga. They DISAGREE on age: illagomaggiore.it says 'more than 700 years' with a base circumference of 7m (700cm); ascuoladaglialberi.net (article dated 2021-02-14, photos from July 2019) says 'approximately 500 years' ('five centuries') and gives no girth - recorded both, flagged, never bridged into one figure. ALIVE: ascuoladaglialberi.net is the stronger recency evidence, describing the tree in 2019/2021 as alive but frail ('cavo', hollow, some broken upper branches, propped/braced) and still flowering every July. WORTH-THE-VISIT: a genuinely old, named heritage tree next to a historic Walser church; reasonable single-tree/site candidate, though modest compared to Sant'Orso or the Tricase oak - no national award or wide press found, just steady local/regional documentation."
- },
- {
-  "name": "Avez del Prinzipe",
-  "species": "Silver Fir (Abies alba)",
-  "age_estimate": null,
-  "location": {
-   "address": "Malga Laghetto, Lavarone (TN), Trentino Prealps",
-   "latitude": 45.9589,
-   "longitude": 11.2977,
-   "neighbourhood": "Lavarone"
-  },
-  "verified_sources": [
-   "https://it.wikipedia.org/wiki/Avez_del_Prinzipe",
-   "https://ilmanifesto.it/in-morte-di-un-larice-millenario"
-  ],
-  "access": "N/A - not for publication",
-  "transport": "N/A - not for publication",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "REJECTED, do not publish: this tree is DEAD, confirmed by two independent sources. Italian Wikipedia and Wikidata record it as a former state-registered monumental silver fir (Abies alba) in Lavarone (TN), locality Malga Laghetto; il manifesto's own headline ('In morte di un larice millenario' - on the death of a thousand-year larch, though the tree was actually a fir, a species mismatch in that headline worth noting) reports its death in November 2017, reportedly Italy's tallest known silver fir before it fell/died. Coordinates given (45 57'31.97\"N 11 17'51.79\"E = 45.9589,11.2977) are from search-summary text, not independently confirmed on a primary page in this pass, so treat as approximate only, and this record is for the leads file's reference/blocked list, never for publication. Note the species confusion in press coverage (larice vs abete bianco) so a future pass does not get misled by the 'larice millenario' phrase into thinking this is a different, living larch."
- },
- {
-  "name": "Il Cerro (Cerro Veronese)",
-  "species": "Turkey/Cork Oak hybrid (Quercus crenata, locally 'cerro-sughera')",
-  "age_estimate": "over three centuries",
-  "age_min": 300,
-  "age_max": 400,
-  "girth_cm": 400,
-  "location": {
-   "address": "Piazza Don Angelo Vinco, beside the parish church, Cerro Veronese",
-   "latitude": 45.5667,
-   "longitude": 11.0333,
-   "neighbourhood": "Cerro Veronese, Lessinia, Province of Verona"
-  },
-  "verified_sources": [
-   "https://www.visitlessinia.eu/it/la-lessinia/icomuni/Cerro-Veronese/",
-   "https://www.donangelovinco.org/cerro-v-se"
-  ],
-  "access": "Free; stands in the town's main square, between the parish theatre and the church - fully public, no restriction found.",
-  "transport": "In the historic centre of Cerro Veronese, a small town in the Lessinia plateau about 15km north of Verona; walkable within the village.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "TWO independent sources (visitlessinia.eu, the official Lessinia tourism site; donangelovinco.org, a local parish/history site) agree closely: species Quercus crenata (a natural Turkey oak x cork oak hybrid, locally 'cerro-sughera'), girth about 4 metres (400cm), height over 19m, age 'over three centuries'. PINNED this pass to the town's own centre coordinates (45 34'0\"N 11 2'0\"E, from a general Cerro Veronese location search) since no source gave a tree-level fix; location_precision is approximate, not confirmed - a future pass should get the exact piazza coordinate from OSM or a mapped photo. WORTH-THE-VISIT, and unusually strong for a single small-town tree: the town is literally NAMED after this tree ('cerro' = the tree's name), and the municipality's own coat of arms depicts a cerro tree with roots in the ground and a silver cross above it - the tree is the origin of the place-name and the civic symbol, not just an old oak that happens to stand there. Stands in the central piazza next to the parish church, fully public. Good candidate either as its own single-place entry or, more naturally, as the anchor of a small Cerro Veronese page (Lessinia regional park's own monumental-tree list, lessiniapark.it/natura/alberi-monumentali, was seen in search results and likely names others nearby - worth a follow-up register check before treating this as a lone tree)."
- }
+  {
+    "name": "The Old Lime of Macugnaga (Tiglio secolare)",
+    "species": "Lime (Tilia sp.)",
+    "age_estimate": "roughly 500-700+ years",
+    "age_min": 500,
+    "age_max": 700,
+    "girth_cm": 700,
+    "location": {
+      "address": "Near the Chiesa Vecchia and cemetery, Dorf/Staffa, Macugnaga (VB)",
+      "latitude": 45.9709,
+      "longitude": 7.964,
+      "neighbourhood": "Dorf, Macugnaga"
+    },
+    "verified_sources": [
+      "https://www.illagomaggiore.it/poi/chiesa-vecchia-di-macugnaga-e-il-vecchio-tiglio/",
+      "https://www.ascuoladaglialberi.net/il-tiglio-monumentale-di-macugnaga-vco/"
+    ],
+    "access": "Free; stands beside the historic Chiesa Vecchia and its cemetery in the Walser hamlet of Dorf/Staffa, an open heritage site.",
+    "transport": "In the hamlet of Dorf, near Staffa, Macugnaga (upper Anzasca valley); walkable within the village, no further detail confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "NO COORDINATES in the original lead; PINNED this pass from the Chiesa Vecchia's own address (Via Chiesa Vecchia 15, 28876 Staffa VB, coordinates 45 58'15.1\"N 7 57'50.3\"E = approx 45.9709,7.9640). The tree itself stands 'poco distante' (a short distance) from the church, near the cemetery, so this is the SITE, not the individual trunk - location_precision is approximate, not confirmed. TWO independent sources agree the tree is a centuries-old lime beside the Chiesa Vecchia, historically used for community judicial/administrative meetings, part of the Walser (German-speaking Alpine settler) heritage of Macugnaga. They DISAGREE on age: illagomaggiore.it says 'more than 700 years' with a base circumference of 7m (700cm); ascuoladaglialberi.net (article dated 2021-02-14, photos from July 2019) says 'approximately 500 years' ('five centuries') and gives no girth - recorded both, flagged, never bridged into one figure. ALIVE: ascuoladaglialberi.net is the stronger recency evidence, describing the tree in 2019/2021 as alive but frail ('cavo', hollow, some broken upper branches, propped/braced) and still flowering every July. WORTH-THE-VISIT: a genuinely old, named heritage tree next to a historic Walser church; reasonable single-tree/site candidate, though modest compared to Sant'Orso or the Tricase oak - no national award or wide press found, just steady local/regional documentation."
+  }
 ]

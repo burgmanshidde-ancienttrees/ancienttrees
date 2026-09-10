@@ -5,7 +5,9 @@
  "leads": [
   {
    "name": "Oosterse plataan (Oriental Plane), Van Baerleplantsoen bij NS",
-   "reason": "Register (LRMB nr 1680276) says visitable ja, owner gemeente, planting band 1830-1840, in a public plantsoen (park strip) by the railway station, reason=monumentaal. Genuinely promising (oldest planting band of any fresh candidate this pass, public land, 300m from the centre point) but only one source: no independent corroboration found this pass despite searching (the municipality's own 2020 'Bomenlijst' of valuable trees exists at raad.dordrecht.nl/Documenten/Bomenlijst-2020.pdf but the live host serves an Anubis bot-challenge to curl/WebFetch; a Wayback Machine copy of the PDF loaded but is a scanned/glyph-encoded PDF that did not yield extractable text with the tools available this pass). Worth a second attempt: either a browser session that can read the live PDF, or an OCR pass on the Wayback copy, or a fresh search for 'Van Baerleplantsoen' plus a species/tree word.",
+   "status": "blocked",
+   "resolved_note": "SHIPPED then REVERTED same day, 2026-09-10: a write pass published this as dor_021 without noticing that LRMB entry nr 1680276 carries status 5 (Dood/geveld, dead/felled) in the register's own status column. preflight.py's check_register_says_the_tree_is_gone() (added earlier the same day, after the Utrecht incident) caught it before push. Never ship this candidate; the register itself says the tree is gone.",
+   "reason": "Register (LRMB nr 1680276): status 5, Dood/geveld. Dead/felled per the register's own inspection layer, not merely undated.",
    "lat": 51.807574,
    "lng": 4.664017,
    "register_nr": 1680276,
