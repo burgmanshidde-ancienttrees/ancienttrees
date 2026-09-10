@@ -1,0 +1,160 @@
+{
+ "_note": "Spanish overlay for Cordoba, hand-written 2026-09-09 under Contract J rung 0b: translate a page whose English twin already earns impressions (58 in the ten-day window, 1 click, 16 trees), in a language with a ROLL OUT verdict. Text only: names, species in Spanish, ages, access, transport, stories, plus the city and question sets. Coordinates, photos, licences, best_time and walks stay in data/cities/cordoba.json and are never duplicated here. European Spanish, hand-written sentence by sentence, faithful to the English facts including every hedge; no machine patching (the accent disaster of 2026-08-09 is the standing warning).",
+ "city": "Córdoba",
+ "title": "Árboles singulares de Córdoba: 16 ejemplares",
+ "meta_description": "El árbol más viejo de Córdoba es un olivo dibujado en un plano de 1741 que aún da fruto sobre medio tronco. Ese, una encina de 400 años y catorce más.",
+ "intro": "Córdoba guarda sus árboles más viejos detrás de muros. Sus jardines públicos se trazaron en los siglos XIX y XX, así que su catálogo de árboles singulares está lleno de ejemplares magníficos de apenas ochenta años, mientras que los de verdad antiguos crecen en el patio de una catedral y en el jardín de un palacio. Lo que la ciudad tiene en abundancia es tamaño y olor: un plátano de treinta y siete metros, otro partido por un ciclón y aún en pie, y un patio de naranjos amargos regado por las mismas acequias desde hace siglos.",
+ "question_title": "¿Cuál es el árbol más antiguo de Córdoba?",
+ "question_meta": "El árbol más antiguo de Córdoba es el olivo del Patio de los Naranjos: aparece en un plano de 1741 y aún da sesenta kilos al año sobre medio tronco.",
+ "question_answer": "El árbol más antiguo de Córdoba es el olivo que crece junto a la fuente del Patio de los Naranjos, el patio de la Mezquita-Catedral. Ya aparece en un plano del patio dibujado en 1741, lo que le da unos 285 años, y esa edad está documentada en lugar de estimada. El Patio se visita gratis todos los días, así que este es un árbol antiguo que no cuesta nada ver de cerca.",
+ "question_context": "Le falta la mitad del tronco. El árbol se ahuecó a lo largo del siglo XX y se pudrió gravemente a partir de los años ochenta, así que lo que hoy se inclina hacia la fuente es una cáscara que aún produce unos sesenta kilos de aceitunas al año, y el cabildo de la catedral ha plantado cerca un olivo joven para que lo releve. En 2018 un equipo de investigadores tomó muestras de sus hojas y sus frutos sin dañarlo y encontró una variedad local apenas registrada en ningún otro sitio, que han propuesto bautizar con el nombre de la ciudad. Algunos folletos turísticos le atribuyen mil años; no hay ninguna base para esa cifra, y el plano de 1741 es la prueba real. El único árbol de Córdoba que podría ser más viejo es la encina del jardín del Palacio de Viana, que según el palacio lleva cuatro siglos en pie y que se alza por encima de los tejados con más de veinticinco metros, aunque esa edad se apoya en la palabra del propio palacio y no en ningún estudio forestal. Todo lo demás en la ciudad es más joven de lo que aparenta.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Córdoba?",
+   "a": "El olivo que crece junto a la fuente del Patio de los Naranjos, de unos 285 años y documentado en un plano del patio de 1741. Sobrevive sobre medio tronco y sigue dando fruto. Se ve gratis, todos los días."
+  },
+  {
+   "q": "¿Cuándo huele el azahar en Córdoba?",
+   "a": "La floración del naranjo amargo alcanza su punto álgido a finales de marzo y principios de abril, y el olor dura alrededor de un mes en el árbol. La fecha exacta se mueve cada año con el tiempo, así que nadie puede prometerte una semana concreta."
+  },
+  {
+   "q": "¿Tiene Córdoba árboles realmente antiguos?",
+   "a": "Dos, siendo honestos. El resto de los árboles notables de la ciudad tienen entre ochenta y ciento treinta años, porque sus jardines públicos se trazaron en los siglos XIX y XX. Varios son espectaculares de todos modos."
+  },
+  {
+   "q": "¿Cuáles se pueden ver gratis?",
+   "a": "Todos menos dos. El Patio de los Naranjos con su olivo, el jardín de Orive, los Jardines de la Agricultura, el plátano del Alpargate y el árbol del amor del cementerio no cuestan nada. La encina de Viana está dentro de un museo de pago, y el olmo del Alcázar dentro de un jardín con entrada."
+  }
+ ],
+ "strings_note": "Campos por árbol: name, species (nombre común español, mismo latín), age_estimate, access, transport, story.",
+ "trees": {
+  "cdb_001": {
+   "name": "El olivo del Patio de los Naranjos",
+   "species": "Olivo (Olea europaea)",
+   "age_estimate": "unos 285 años",
+   "access": "Gratuito, el Patio de los Naranjos abre a diario de 08:30 a 19:00 (la sala de oración se paga aparte)",
+   "transport": "En el centro histórico, a pocos minutos a pie desde cualquier punto del casco antiguo",
+   "story": "Este árbol figura en un plano dibujado en 1741, que es una cosa bastante más rara que ser viejo. Casi todas las edades que se atribuyen a un árbol antiguo vienen de la tradición; esta viene de un inventario del patio que contó, junto al olivo, noventa y cinco naranjos, seis cipreses, diez palmeras y un cinamomo. Dos siglos y medio después le falta aproximadamente la mitad del tronco. Se ahuecó a lo largo del siglo XX, se pudrió con fuerza a partir de los años ochenta, y lo que hoy se inclina hacia la fuente es una cáscara que todavía saca unos sesenta kilos de aceitunas al año. El cabildo de la catedral ha conservado lo que queda y ha plantado cerca un olivo joven para que algún día tome el relevo. En 2018 un equipo tomó muestras de hoja y fruto sin dañar el árbol y encontró una variedad apenas registrada en ningún otro sitio, que han propuesto bautizar con el nombre de la ciudad. La fuente que tiene al lado es oficialmente la Fuente de Santa María, terminada en diciembre de 1741, pero todo el mundo llama a su caño el Caño del Olivo, por el árbol. A los pretendientes se les decía que bebieran de él para tener suerte en el amor."
+  },
+  "cdb_002": {
+   "name": "El Patio de los Naranjos de la Mezquita",
+   "species": "Naranjo amargo (Citrus aurantium)",
+   "age_estimate": "un naranjal documentado desde 1512, replantado árbol a árbol",
+   "access": "Gratuito, abierto a diario de 08:30 a 19:00",
+   "transport": "En el centro histórico, a pie",
+   "story": "Noventa y ocho naranjos amargos crecen aquí en hileras que se alinean con las columnas de la sala de oración de al lado, de modo que el patio se lee como el edificio continuando al aire libre. Puede que sea el jardín más antiguo que sobrevive en Europa: el recinto se remonta a la mezquita fundada en 784, hay naranjos documentados en él desde al menos 1512, y las acequias poco profundas que enlazan los alcorques siguen llevando el agua que los alimenta. En 2001 unos operarios encontraron un aljibe del siglo X a doce metros bajo el pavimento, construido para almacenar mil doscientos metros cúbicos y que ni el riego ni las abluciones se detuvieran nunca. Conviene ser honesto sobre los árboles: son naranjos amargos corrientes, sustituidos uno a uno según fallan, así que lo viejo es la cuadrícula y no los individuos. Lo que sí merece que se planifique un viaje son los últimos días de marzo, cuando el patio entero florece a la vez y el olor del azahar sale a las calles de alrededor. Desde 2026 el cabildo convierte la cosecha amarga, que antes se tiraba, en vinagre."
+  },
+  "cdb_003": {
+   "name": "La encina del Palacio de Viana",
+   "species": "Encina (Quercus ilex)",
+   "age_estimate": "el palacio le atribuye más de 400 años",
+   "access": "Entrada de pago al museo del Palacio de Viana; cierra los lunes y reduce horario en julio y agosto",
+   "transport": "Unos 15 minutos a pie al noreste de la Mezquita",
+   "story": "Doce patios, dieciocho familias nobles, cinco siglos de propietarios, y el habitante más antiguo de la casa es un árbol. El palacio atribuye a esta encina cuatrocientos años, lo que la haría mayor que buena parte del edificio que la rodea, y con más de veinticinco metros se alza muy por encima de los tejados, así que se ve desde la calle antes de pagar la entrada. Crece en medio de un jardín que solo empezó a ser jardín en 1814, cuando el séptimo marqués de Villaseca compró el terreno y lo trazó a la francesa con dieciséis parterres de boj que hoy tienen ellos mismos dos siglos. Contra los muros crecen limoneros, limeros, mandarinos, naranjos y pomelos en espaldera, las plantas más viejas del palacio después de la propia encina. Una encina es perenne, así que no hay temporada que aprovechar: sus hojas son pequeñas, oscuras y coriáceas, más cercanas a las de un olivo que a la hoja lobulada de roble de los carteles ingleses, y no se caen en todo el año. Conviene saberlo antes de ir: la cifra de cuatro siglos se apoya en el relato del propio palacio, sin ningún estudio forestal detrás."
+  },
+  "cdb_004": {
+   "name": "La jacarandá del jardín de Orive",
+   "species": "Jacarandá (Jacaranda mimosifolia)",
+   "age_estimate": "posiblemente un siglo",
+   "access": "Gratuito, jardín municipal público",
+   "transport": "Unos 12 minutos a pie al noreste de la Mezquita",
+   "story": "Durante cuatrocientos años nadie de fuera pudo ver este árbol. Creció en una huerta amurallada que perteneció primero a un convento dominico, sobre un suelo cedido en 1241, y después a un palacio renacentista levantado en 1560 por el arquitecto Hernán Ruiz II, y la cancela no se abrió al público hasta 2004. Desde entonces ha estado cerca de morir dos veces. Los naturalistas que lo han descrito cuentan que apenas sobrevivió a la helada de 2003, cuando Córdoba llegó a nueve grados bajo cero, y el catálogo municipal recuerda que los inviernos de 2010 y 2011 mataron jacarandás por toda la ciudad mientras esta aguantaba. Lo que hay allí ahora son tres troncos crecidos juntos hasta parecer uno solo, con una copa de veinte metros de diámetro y casi diecinueve metros de altura, probablemente la mayor de su especie en la ciudad. La mayor parte del año es un buen techo verde sobre una plaza tranquila. Durante un par de semanas de mayo se pone violeta y florece en gran medida antes de que salgan las hojas nuevas, que es justo la razón por la que se plantaron jacarandás por todo el sur de España."
+  },
+  "cdb_005": {
+   "name": "El plátano gigante de los Jardines de la Agricultura",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "probablemente un siglo o más",
+   "access": "Gratuito, parque público",
+   "transport": "Unos 16 minutos a pie al noroeste de la Mezquita",
+   "story": "Con treinta y siete metros es el árbol más alto del catálogo municipal de árboles singulares, y está en el jardín público más antiguo de la ciudad, inaugurado el uno de marzo de 1811 por un alcalde que había pasado años viajando por el mundo islámico disfrazado de príncipe sirio. El tronco mide casi cuatro metros de perímetro y pasa de cinco en la base, que es lo que hace un plátano cuando nadie le ha metido prisa. Los cordobeses no llaman a este sitio Jardines de la Agricultura. Lo llaman Los Patos, por el estanque, y llevan generaciones haciéndolo. El árbol rodea una plazoleta central junto con otros plátanos grandes, así que el que hay que buscar es el más alto, aquel cuya copa desaparece por encima de las demás cuando te pones debajo. Los jardines se reordenaron en 1864 y el ayuntamiento los compró en 1866, de modo que el suelo lleva ciento sesenta años siendo público, lo que en una ciudad que guarda sus mejores árboles detrás de muros tiene su valor. El otoño de un plátano en Andalucía es de un pardo apagado, así que ven por el tamaño y no por la estación."
+  },
+  "cdb_006": {
+   "name": "El plátano partido del Alpargate",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "uno de los plátanos más viejos de la ciudad",
+   "access": "Gratuito, plaza abierta",
+   "transport": "Unos 22 minutos a pie al noreste de la Mezquita",
+   "story": "Un ciclón partió este árbol por la mitad y sigue midiendo veinticuatro metros. Lo que hoy cubre la plaza del Cristo de Gracia es la parte que sobrevivió de algo que llegó a ser aproximadamente el doble de grande, y el catálogo municipal lo considera muy probablemente uno de los plátanos más viejos de Córdoba. Su copa ocupa veinte de esos veinticuatro metros, así que desde abajo prácticamente no hay otra cosa que mirar. Da sombra a una fuente barroca que la ciudad pagó con la recaudación de tres corridas de toros celebradas en 1747 y que se trasladó a esta plaza desde la Puerta Nueva en 1950. En Semana Santa la hermandad de los Padres de Gracia saca y mete sus pasos por debajo de las ramas, que es la única semana del año en la que el árbol tiene que dejar sitio a algo. La fotografía del propio catálogo recoge una pequeña indignidad que merece mencionarse, porque dice mucho sobre cómo tratan las ciudades a sus árboles grandes: alguien le ha atornillado una caja eléctrica al tronco."
+  },
+  "cdb_007": {
+   "name": "El árbol del amor del cementerio de San Rafael",
+   "species": "Árbol del amor (Cercis siliquastrum)",
+   "age_estimate": "sin datar, el mayor de su especie en la provincia",
+   "access": "Gratuito, el cementerio abre a las 08:30 y cierra entre las 18:00 y las 20:00 según la temporada",
+   "transport": "Unos 20 minutos a pie al este de la Mezquita",
+   "story": "Un árbol que florece directamente sobre su propia corteza, plantado en la puerta de un cementerio. Los árboles del amor no sacan la flor en los brotes nuevos como hace casi todo el mundo vegetal: las flores magenta empujan directamente a través de la madera vieja del tronco y de las ramas gruesas, antes de que aparezca ninguna hoja, de manera que durante dos o tres semanas de comienzos de primavera el esqueleto entero del árbol queda coloreado en vez de cubierto. Los botánicos que han inventariado los árboles notables de Córdoba señalan a este como el mayor ejemplar de su especie en la provincia: dos metros y tres cuartos de perímetro, aunque solo diez metros de altura, y se abre en tres brazos por debajo de la altura de la cabeza. Comparte la entrada con una palmera mexicana, dos eucaliptos rojos grandes y un azufaifo poco común, en un cementerio por el que pasan miles de personas en los últimos días de octubre. Que es el momento equivocado para verlo. Ven en marzo, cuando la puerta está tranquila y el árbol hace lo único por lo que es famoso."
+  },
+  "cdb_008": {
+   "name": "El ciprés de la entrada del Alcázar",
+   "species": "Ciprés mediterráneo (Cupressus sempervirens)",
+   "age_estimate": "unos 77 años",
+   "access": "Gratuito, fuera de la taquilla del Alcázar",
+   "transport": "Centro histórico, junto al Alcázar; a poca distancia a pie de la Mezquita-Catedral",
+   "story": "Veintiséis metros y medio de altura sobre una copa de tres metros y medio de ancho. Esa es una proporción más cercana a la de una farola que a la de un árbol, y es lo que hace un ciprés mediterráneo cuando se le deja crecer como quiere: recto hacia arriba, en una sola columna oscura, con las ramas tan pegadas al tronco que el conjunto se lee como una línea.\n\nEstá fuera de la taquilla del Alcázar de los Reyes Cristianos, lo que significa que verlo no cuesta nada. Todo lo demás queda detrás del muro y detrás del torno: los estanques largos, los setos recortados, la fortaleza que Alfonso XI levantó en 1328, donde después tuvieron corte los Reyes Católicos y donde la Inquisición mantuvo su tribunal durante tres siglos. El ciprés es lo único que la ciudad dejó fuera.\n\nAdemás es joven. El catálogo de árboles singulares de Córdoba le calculó unos setenta y siete años cuando lo midió, y la edad de un registro es siempre la edad del día en que alguien la anotó, así que hay que sumarle lo que haya pasado desde entonces. Ese catálogo es la única fuente que describe este árbol. Los cipreses llegan a varios siglos, lo que deja a este recién empezado, y está en la lista por la forma y no por los años."
+  },
+  "cdb_009": {
+   "name": "El olmo siberiano del Alcázar",
+   "species": "Olmo siberiano (Ulmus pumila)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (jardines del Alcázar); gratis las mañanas de verano",
+   "transport": "Centro histórico, dentro de los jardines del Alcázar; a poca distancia a pie de la Mezquita-Catedral",
+   "story": "Un olmo siberiano no debería llegar a veintisiete metros. La especie rara vez pasa de quince, que es parte de la razón por la que se plantó por toda España en cantidades enormes durante el siglo XX: rápido, barato, indiferente a la sequía y al suelo pobre, resistente a la grafiosis que estaba acabando con las olmedas del país, y lo bastante modesto como para no convertirse en un problema más adelante. Este se saltó el encargo.\n\nCrece dentro de los jardines del Alcázar de los Reyes Cristianos, entre las albercas alargadas y los setos recortados que se extienden bajo la fortaleza, donde casi todo lo demás se mantiene dentro de una forma. Al olmo lo dejaron correr. El catálogo de árboles singulares de Córdoba anota su altura y su especie y nada sobre su edad, y ninguna otra fuente lo menciona, así que cómo llegó hasta aquí y cuándo simplemente no está documentado.\n\nVerlo cuesta dinero la mayor parte del año, porque el Alcázar cobra entrada, aunque las mañanas de verano los jardines son gratuitos. Esa es una diferencia real con el ciprés que está fuera de la misma puerta, y conviene saberla antes de planear el paseo.\n\nUlmus pumila viene de la estepa del norte de China, Mongolia y Siberia oriental, un terreno donde los árboles se quedan bajos porque el viento y la sequía los mantienen así. Dale riego andaluz y un jardín que nunca lo dejó pasar sed, y se convierte en esto."
+  },
+  "cdb_010": {
+   "name": "El cedro del Himalaya de la plaza del Cardenal Toledo",
+   "species": "Cedro del Himalaya (Cedrus deodara)",
+   "age_estimate": "unos 102 años",
+   "access": "Gratuito, en una plaza pública",
+   "transport": "Centro histórico; a poca distancia a pie al norte de la Mezquita-Catedral",
+   "story": "La plaza se ordenó alrededor del árbol. La plaza del Cardenal Toledo recibió su jardín en 1945, y este cedro ya estaba allí, así que los paseos y los bancos se colocaron donde el cedro dejó. Sigue siendo prácticamente el único árbol de la plaza, veintidós metros y medio de árbol, lo que en una placita al norte de la Mezquita significa que también es el techo.\n\nEl catálogo de árboles singulares de Córdoba le calculó unos ciento dos años cuando lo midió, que es un suelo más que una cifra, porque ha seguido creciendo desde que alguien lo anotó. Ese catálogo es además la única fuente que dice algo de este árbol. Nada más lo nombra, lo cual es lo normal en un cedro de plaza y merece decirse en voz alta en lugar de disimularlo.\n\nCedrus deodara procede del Himalaya occidental, de Afganistán a Nepal pasando por Cachemira, donde es un árbol maderero de bosque de montaña y donde su nombre sánscrito significa la madera de los dioses. En Andalucía es un ornamental, plantado a finales del siglo XIX y principios del XX en jardines y plazas nuevas, y va bien mientras se le riegue. El porte lo delata de lejos: una guía recta, ramas que se abren y caen, cada punta de brote colgando, de modo que el árbol entero parece inclinarse un poco hacia ti."
+  },
+  "cdb_011": {
+   "name": "El cinamomo de la Puerta de Almodóvar",
+   "species": "Cinamomo (Melia azedarach)",
+   "age_estimate": "unos 70 u 80 años",
+   "access": "Gratuito, en los jardines públicos que rodean la puerta de Almodóvar",
+   "transport": "Centro histórico, a pocos minutos a pie del Alcázar y de la Mezquita",
+   "story": "Cuatrocientos metros cuadrados de sombra, dados por una especie que la mayoría de las ciudades planta como un árbol de calle discreto. Los cinamomos suelen quedarse alrededor de los diez metros. Este mide veinticuatro y medio, lo que lo convierte menos en un árbol de los jardines de la Puerta de Almodóvar que en el techo de esos jardines, y en la razón por la que la gente mira hacia arriba antes de mirar la puerta.\n\nEl catálogo de árboles singulares de Córdoba le midió unos setenta y dos años, y la edad de un registro es la edad del día en que alguien la escribió, así que hay que sumar lo transcurrido. Ese catálogo es la única fuente que lo ha datado. Las guías locales de la puerta describen aquí un cinamomo gigantesco, lo que confirma el árbol y la especie sin confirmar los años: la edad es la estimación de la ciudad y no un hecho cerrado.\n\nLa puerta que tiene al lado acumula seis siglos de todos modos: lo que hay hoy es una reconstrucción cristiana del siglo XIV sobre la línea de una puerta árabe anterior, y la muralla que arranca hacia el Alcázar es contra la que crece el árbol.\n\nMelia azedarach salió del sur de Asia y se extendió por las ciudades mediterráneas por su sombra y su flor lila, y con sus huesos duros se ensartaban rosarios, que es como se ganó su otro nombre de árbol de las cuentas."
+  },
+  "cdb_013": {
+   "name": "El ginkgo de los Jardines de la Agricultura",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "unos 70 u 80 años",
+   "access": "Gratuito, jardín público, conocido popularmente como el Jardín de los Patos",
+   "transport": "Centro histórico / Ciudad Jardín, a pie desde la Ronda de los Tejares",
+   "story": "Todos los demás árboles de este jardín tienen parientes vivos. Este no tiene ninguno. Ginkgo biloba es la única especie superviviente de un orden entero de plantas, y la hoja en abanico que se recoge debajo tiene la misma forma que las impresas en rocas de hace doscientos millones de años.\n\nEl catálogo de árboles singulares de Córdoba lo llama el ginkgo más viejo de los jardines públicos de la ciudad y le calculó unos setenta y dos años cuando lo midió, una cifra que ninguna fuente independiente ha comprobado nunca. Lo que otras fuentes sí confirman es de qué árbol se habla: las páginas de historia local del jardín lo nombran, y un geocaché colocado a sus pies lleva su nombre y sigue figurando como activo, que es un pequeño recibo moderno de que el árbol sigue en pie.\n\nLos Jardines de la Agricultura se abrieron en 1811 y nadie en Córdoba los llama así. Son Los Patos, por el estanque. Un ginkgo de setenta años apenas ha empezado para una especie que en China y Japón pasa con normalidad de los mil; esto es un capítulo temprano, no un veterano.\n\nVen a finales de otoño. Las hojas del ginkgo se ponen de un dorado uniforme y luego se sueltan casi a la vez, de manera que el árbol pasa de encendido a desnudo en pocos días, y en los mejores de esos días el oro está a la vez en las ramas y en el suelo."
+  },
+  "cdb_014": {
+   "name": "Las casuarinas de la plaza de Jerónimo Páez",
+   "species": "Casuarina (Casuarina equisetifolia)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, plaza pública abierta en el centro histórico",
+   "transport": "Cinco minutos a pie desde la Mezquita-Catedral",
+   "story": "Tres árboles que desde el otro lado de la plaza se leen como pinos y que no tienen ningún parentesco con los pinos. Lo que cuelga de una casuarina en hilos verdes finos es ramilla articulada, no acícula; las hojas quedan reducidas a anillos de escamas en cada nudo, el árbol da flor, y el parecido con una conífera es pura coincidencia. Con viento silban en lugar de susurrar, que es la razón por la que la especie viaja bajo el nombre de pino que silba en media docena de países.\n\nEl catálogo municipal de árboles singulares registra tres ejemplares en esta placita frente al Museo Arqueológico y sitúa al mayor por encima de los treinta metros. No da ninguna edad, y ninguna otra fuente la aporta. Una descripción independiente de la plaza menciona sus grandes casuarinas sin medir nada, y hasta ahí llega la corroboración; además la plaza se remodeló y se volvió a cerrar en fases que no terminaron hasta enero de 2011, así que cuánto de lo que hay en pie es anterior a esa obra está genuinamente abierto.\n\nEl suelo que pisan está mejor datado que ellas. La plaza toma su nombre del Palacio de los Páez de Castillejo, hoy Museo Arqueológico, y debajo hay un teatro romano que un terremoto derribó en el siglo III.\n\nLas tres crecen juntas contra el muro del museo, lo que las convierte en una sola visita con un solo sitio donde ponerse y no en tres recados distintos."
+  },
+  "cdb_016": {
+   "name": "El eucalipto rojo del parque Celia Méndez",
+   "species": "Eucalipto rojo (Eucalyptus camaldulensis)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público (horario sin confirmar)",
+   "transport": "Distrito Sureste, a unos 3 km al este del centro histórico; queda fuera del paseo de 2,3 km",
+   "story": "El tronco más grueso del catálogo de árboles singulares de Córdoba pertenece a un australiano. Este eucalipto rojo mide 4,86 metros de perímetro y 34,8 metros de altura, en un parque público a tres kilómetros al este de la Mezquita, bastante fuera del anillo de árboles viejos que la ciudad pone en sus mapas.\n\nEstá ahí porque ese suelo fue huerta, de las regadas que alimentaron a Córdoba a orillas del Guadalquivir antes de que la ciudad creciera hacia el este por encima de ellas. El catálogo llama a este árbol un relicto de aquellas huertas. Eucalyptus camaldulensis sigue los cursos de agua en su país de origen y se plantó por toda España en el siglo XX precisamente por esa costumbre, madera barata sobre terreno húmedo, y este ha sobrevivido a la razón por la que lo pusieron.\n\nUna advertencia, dicha claramente. El catálogo municipal es la única fuente que registra este árbol. Buscarlo en internet lleva a otro eucalipto cordobés distinto y bastante más conocido, a varios kilómetros de aquí, así que quien lo compruebe acabará casi seguro leyendo sobre el equivocado. El perímetro y la altura son mediciones propias del ayuntamiento y nadie ha publicado un segundo juego.\n\nNo hay edad en ningún archivo, y no debería adivinarse ninguna. Los eucaliptos rojos engordan deprisa donde hay agua, así que cinco metros de tronco aquí no implican siglos, y nada en el expediente los reclama."
+  },
+  "cdb_017": {
+   "name": "El fresno de Santa Marina",
+   "species": "Fresno común (Fraxinus excelsior)",
+   "age_estimate": "se le atribuye más de un siglo, sin datación precisa",
+   "access": "Gratuito, junto a una iglesia pública en una plaza pública",
+   "transport": "Centro histórico, a poca distancia a pie",
+   "story": "Alguien le cortó la copa a este árbol y sigue siendo el fresno más grande de Córdoba. Lo que hay en el lado norte de la iglesia de Santa Marina es un tronco viejo y pesado que sostiene un rebrote fino y ralo, con poca hoja, unos nueve metros y medio en total. Por perímetro de tronco se ha registrado dos veces como el mayor de su especie en la ciudad: en un libro de 1984 sobre los árboles de Córdoba, y de nuevo en el inventario provincial de árboles singulares de 2002.\n\nLa edad se argumenta más que se documenta. Rafa Tamajón, el botánico local que más ha escrito sobre estos árboles, lo lee como centenario por su patrón de crecimiento y por la historia del sitio, pero no hay conteo de anillos ni registro de plantación, así que entre uno y siglo y medio es todo lo preciso que se puede ser con honestidad. El tronco presenta pudrición visible y el árbol se describe en declive. Merece saberse, porque es el argumento para ir ahora y no algún día.\n\nEl fresno quiere suelo húmedo y Córdoba no es tierra húmeda, que es parte de la razón por la que uno de este tamaño llegó a anotarse aquí.\n\nUna nota práctica: las fuentes lo sitúan en la plaza y en el costado norte de la iglesia, y hasta ahí llega la precisión del punto. Recorre el muro norte y busca el tronco grande bajo la copa pequeña."
+  },
+  "cdb_018": {
+   "name": "El pino piñonero de Santa María de Trassierra",
+   "species": "Pino piñonero (Pinus pinea)",
+   "age_estimate": "unos 90 años",
+   "access": "Está en el pequeño pueblo de Santa María de Trassierra, en la Sierra de Córdoba, por encima de la ciudad. Figura en el catálogo municipal de árboles singulares, que en general recoge ejemplares accesibles, pero este trabajo no pudo confirmar de forma independiente su entorno exacto a pie de calle (plaza, calle o recinto institucional) más allá de la coordenada del catálogo, así que conviene tratar el emplazamiento como probablemente público y no verificado uno por uno.",
+   "transport": "Se llega en la línea L-T de autobuses Aucorsa desde el centro de Córdoba en unos 19 minutos, pero la línea tiene solo unos cinco servicios al día, lo que fuerza el límite de la excursión de un día; conviene mirar el horario antes de planear la visita.",
+   "story": "Santa María de Trassierra es un pueblo de las lomas por encima de Córdoba, y este pino piñonero es uno de los ejemplares que el catálogo municipal de árboles singulares sale a buscar más allá de la ciudad. Tres metros veintiséis de perímetro, veinticinco metros de altura y unos noventa años estimados: es más joven que casi todos los árboles de esta lista, pero lo bastante viejo, y lo bastante grande, como para ganarse una ficha propia en un registro oficial que sobre todo protege ejemplares mucho mayores.\n\nPinus pinea es el pino que dibuja media silueta del Mediterráneo español, con esa copa plana en forma de paraguas cultivada por la sombra y por los piñones que guardan sus piñas, dos cosas que costaron siglos de plantación selectiva hasta producir el árbol que la gente imagina hoy como silvestre. Un árbol de este tamaño a esta edad ha crecido rápido incluso para el criterio de su propia especie, probablemente ayudado por el terreno abierto y el sol pleno de un pueblo pequeño en lugar de la competencia de una masa plantada.\n\nLlegar desde el centro de Córdoba significa el autobús L-T de Aucorsa, unos diecinueve minutos, pero la línea pasa solo un puñado de veces al día, así que conviene mirar el horario antes de montar un viaje alrededor. Nadie ha publicado un relato más preciso de dónde está exactamente dentro del pueblo. Si lo has visto, cuéntanoslo."
+  }
+ }
+}
