@@ -756,6 +756,44 @@ apt-get/pip both need approval this run does not have. Left on disk;
 harmless if a future session with rendering tools wants it, otherwise safe
 to ignore.
 
+## 2026-09-10 - Photo round five: fifty-five candidates, zero approvals, and that is the finding
+
+Round four took the cities-without-a-photograph count from 263 to 240 by
+judging only candidates in those cities. Round five ran the same play again and
+returned **nothing at all**: 55 candidates across 14 photo-less cities, 55
+rejections, not one photograph.
+
+That is information rather than a failure, and it is the most useful number of
+the five rounds. **The Commons well for these cities is dry.** They have
+survived four rounds of picking, and what is left in their queues is archival
+sepia plates from the 1890s (Alkmaar's top three, which the standard bans
+outright), bronze sculptures on plinths, a framed museum painting, and building
+facades. There is no photograph in there being missed by a careless pass; there
+is no photograph in there.
+
+**The yield curve across the week, so nobody re-derives it:**
+
+| round | what it targeted | result |
+|---|---|---|
+| 1 | filename names the tree, whole map | 77 photographs |
+| 2 | geotag within 50 m, whole map | 65 |
+| 3 | the same two seams, refilled | 69 |
+| 4 | ONLY cities with no photograph at all | 24 photographs, **23 cities** |
+| 5 | the same, one round later | **0** |
+
+**What is actually left, measured.** 240 cities still show no photograph. 94 of
+them hold an unjudged candidate, but round five's sample says what those are
+worth. 146 hold nothing at all, and `photo_last_resort.py` has not run on most
+of them; that sweep is free and does create supply, but its judged rate is 2
+approvals in 34, so it buys perhaps five to ten cities for hours of sweeping and
+several hundred images.
+
+**So the next hundred photographs are not on Commons.** They are readers through
+the app, which has been set up for exactly this since last week and which
+`sightings_inbox.py` already watches on every knock, or a new source: a national
+register that publishes images, or a photographer who is written to and says
+yes. Anyone reaching for another Commons round should read this entry first.
+
 ## 2026-09-10 - Photo round four: aim at the city counter, not the tree counter
 
 **The count.** 263 cities had no photograph at all when this round started and
