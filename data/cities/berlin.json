@@ -740,6 +740,38 @@
       "notes": "Register (4-6/B, designated 1993-03-02) gives species as Quercus petraea and the same coordinates as de.wikipedia's district Naturdenkmal list, which is not independent of the register (same ordinance) but corroborates the pin. Age genuinely disputed between two independent sources: de.wikipedia's Olympiastadion article implies continuity from a c.1820s original ('etwa 200 Jahre alt'), golocal.de says the 1914-named original was felled with the 1913 Deutsches Stadion and a replacement planted in 1936 (~90 years old); both recorded rather than picking a winner. A Commons photo filename ('Westend Olympiastation Stieleiche.jpg') suggests possible confusion with Quercus robur (Stieleiche); not resolved this pass, register's Quercus petraea kept as the recorded species. monumentaltrees.com 403'd throughout, no girth recorded.",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by being the only tree on the whole Olympiastadion site, 810 metres by 320 and otherwise bare. It stands behind the Preussenturm at the Osttor, visible from outside the fence."
+    },
+    {
+      "id": "ber_021",
+      "name": "Berlin's Tallest Tree",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "documented planting in 1843, roughly 180 years old",
+      "age_min": 170,
+      "age_max": 190,
+      "girth_cm": 302,
+      "location": {
+        "address": "Mühlenweg, southern Tegeler Forst, near the junction with Heiligenseer Weg, 13505 Berlin-Tegel",
+        "latitude": 52.59576,
+        "longitude": 13.24125,
+        "neighbourhood": "Tegel, Reinickendorf"
+      },
+      "verified_sources": [
+        "https://l-u-m-o.de/buche",
+        "https://de.wikipedia.org/wiki/Burgsdorff-L%C3%A4rche",
+        "https://de.wikipedia.org/wiki/Tegeler_Forst"
+      ],
+      "access": "Free, in the public Tegeler Forst (Landschaftsschutzgebiet). No gate or ticket; reached on forest trails.",
+      "transport": "No direct public transport; nearest station is Alt-Tegel (U6), then roughly 3km (35-40 min walk or a short cycle) into the forest along the Heiligenseer Weg trail. The Revierförsterei Tegelsee has placed a visible marker sign on the trail pointing to the tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "For decades Berlin's tallest tree was the wrong tree. The record belonged to the Burgsdorff Larch, planted in 1795 by the forester whose name it carries and measured by climbers at 45 metres in 2000 and 42.5 in 2012. Then an airborne laser survey scanned the city's forests in 2021 and put the larch at 41.05 metres. The same scan found a beech 180 metres to the west standing at 43.15, and the title changed hands. Regional press reported the new holder in October 2022 and RBB television filmed it a year after that. The larch itself came down in a storm in June 2025.\n\nNothing on the ground announces any of this. The beech has no register entry and no protection order, and no name has stuck to it: Friedensbuche and Hohe Buche have both been floated and neither took. Forestry records date its planting to 1843, which makes it about 183 years old, no age at all beside the yews and oaks elsewhere on this site, and quite enough to have stood through the German Empire, two world wars and the forty years when this forest sat at the edge of West Berlin. Its trunk measures 96 centimetres across, so roughly three metres round, which is unremarkable. Height is the whole argument here.\n\nThe Tegelsee forestry office has put a sign on the trail pointing at it, which helps more than it sounds: a stand of tall beeches gives away nothing about which one is tallest.",
+      "how_to_recognise": "You can recognise it by the forestry office's marker sign on the trail, which points straight at it, and by a trunk of only 96 centimetres across. It stands in the Tegeler Forst where the Muhlenweg meets the Heiligenseer Weg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

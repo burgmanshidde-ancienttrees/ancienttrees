@@ -6,7 +6,7 @@
   "meta_description": "Oahu's most remarkable trees: a baobab and a Bodhi tree in one Honolulu garden, the Hitachi Tree at Moanalua, a palace banyan and free hospital giants.",
   "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 19.",
   "question_answer": "Oahu's oldest documented tree is the Hillebrand Kapok in Foster Botanical Garden, planted around 1851 by the garden's founder, William Hillebrand, on what was then his own homestead. That makes it roughly 175 years old, older than the garden itself.",
-  "question_context": "Foster Botanical Garden holds five of the nineteen trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before it became a public garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, the two sources disagreeing. Two more carry documented dates: a Bodhi tree of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s, thirteen metres round. Fourteen more trees stand elsewhere, nearly all free: banyans at Thomas Square, the Honolulu Zoo gate, Iolani Palace, the Moana hotel's beachfront courtyard and the Kuhio Beach hula mound; the banyan the International Market Place rebuilt its steel canopy around rather than fell; the Geometry Tree of Ala Moana Beach Park; a monkeypod in Nuuanu Valley Park; a baobab, a cannonball tree and a tree that smells of dung once a year at UH Manoa; and a baobab and a pink bombax at Queen's Medical Center. The Hitachi Tree, famous across Japan as a company emblem, is the one paid exception, at Moanalua Gardens.",
+  "question_context": "Foster Botanical Garden holds seven of the twenty-one trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before it became a public garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, the two sources disagreeing. Two more carry documented dates: a Bodhi tree of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s, thirteen metres round. Fourteen more trees stand elsewhere, nearly all free: banyans at Thomas Square, the Honolulu Zoo gate, Iolani Palace, the Moana hotel's beachfront courtyard and the Kuhio Beach hula mound; the banyan the International Market Place rebuilt its steel canopy around rather than fell; the Geometry Tree of Ala Moana Beach Park; a monkeypod in Nuuanu Valley Park; a baobab, a cannonball tree and a tree that smells of dung once a year at UH Manoa; and a baobab and a pink bombax at Queen's Medical Center. The Hitachi Tree, famous across Japan as a company emblem, is the one paid exception, at Moanalua Gardens.",
   "faq": [
     {
       "q": "What is the oldest tree in Oahu?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Where are Oahu's most remarkable trees?",
-      "a": "Five stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other. The rest stand apart and cost nothing but the Hitachi Tree does: Moanalua Gardens keeps that one under its own ticket, while Thomas Square, Ala Moana Beach Park, the UH Manoa campus, Nuuanu Valley Park, Iolani Palace, Queen's Medical Center, the gate of the Honolulu Zoo, the Moana Surfrider's courtyard and the International Market Place all keep their trees free."
+      "a": "Seven stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other. The rest stand apart and cost nothing but the Hitachi Tree does: Moanalua Gardens keeps that one under its own ticket, while Thomas Square, Ala Moana Beach Park, the UH Manoa campus, Nuuanu Valley Park, Iolani Palace, Queen's Medical Center, the gate of the Honolulu Zoo, the Moana Surfrider's courtyard and the International Market Place all keep their trees free."
     },
     {
       "q": "Is Foster Botanical Garden free to visit?",
@@ -611,6 +611,75 @@
       },
       "age_min": null,
       "age_max": null
+    },
+    {
+      "id": "hnl_020",
+      "name": "The Foster Garden Rainbow Shower Tree",
+      "species": "Rainbow Shower Tree (Cassia x nealiae 'Wilhelmina Tenney')",
+      "age_estimate": "about 78 years, planted in the late 1940s",
+      "age_min": 76,
+      "age_max": 80,
+      "girth_cm": 323.1,
+      "height_m": 16.2,
+      "location": {
+        "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden, Daibutso Terrace)",
+        "latitude": 21.3167,
+        "longitude": -157.8592,
+        "neighbourhood": "Chinatown / Downtown Honolulu"
+      },
+      "verified_sources": [
+        "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 106)",
+        "https://www.queerhistoriesofhawaii.org/rainbow-shower-tree",
+        "https://plantpono.org/pono-plants/cassia-x-nealiae-rainbow-shower/"
+      ],
+      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "notes": "Cultivar of Cassia x nealiae, a hybrid of Cassia fistula (yellow) and Cassia javanica (pink/white) that territorial forester David Hughes hand-pollinated in 1918; the hybrid is sterile, which is why it flowers more fully and longer than either parent and drops few seed pods. Edward D. Tenney received an early specimen around 1920 and grew it at his Makiki Heights property; his descendant Wilhelmina Tenney donated a cutting from that tree to Foster Botanical Garden in the late 1940s, and the cultivar now carries her name. The original Tenney tree no longer survives, so the Foster Garden specimen is a direct link to the 1918 hybrid. In 1960 Walter Wall, Territorial Surveyor General, perfected a grafting method and the tree was distributed widely; Honolulu adopted it as the official City and County tree in 1965. Register gives diameter 102.9cm (girth 323.1cm) and height 53ft (16.2m), both consistent with queerhistoriesofhawaii.org's description of the Foster Garden specimen as 'one of the prize specimens' on the Daibutso Terrace, about fifty feet tall. An informational plaque was installed there in 2024 by the Lei Pua Ala Queer Histories of Hawaii project, which also documents a Mahu/LGBTQ+ history angle to the tree's story; free public talks were held there 2024-10-05, which is also recent evidence the tree is alive and maintained. Register vitality: Excellent, assessed 2017 (date not itemised per-tree in this register export, matches other Foster Garden entries).",
+      "story": "Every rainbow shower tree in Hawaii is a clone of a tree that no longer exists, and this garden holds a cutting taken from it while it was still alive.\n\nIn 1918 territorial forester David Hughes hand-pollinated a yellow shower tree with a pink-and-white one. The hybrid is sterile, which is why it puts its energy into flowering rather than seed pods and blooms longer than either parent. Businessman Edward Tenney planted an early specimen at his Makiki Heights home around 1920. That original tree is gone. What survives is what his descendant Wilhelmina Tenney cut from it and gave to this garden in the late 1940s, which is why the cultivar carries her name rather than the forester's.\n\nA grafting method perfected in 1960 let the city plant the hybrid everywhere, and in 1965 Honolulu made it the official tree of the city and county, an odd honour for a plant that cannot reproduce on its own. This one, on the garden's Daibutso Terrace, measures just over three metres round the trunk and stands about sixteen metres tall, rated excellent at its last inspection.\n\nSince 2024 a plaque beside it has told a second story: a local history project's research into the tree's place in Hawaii's mahu and queer histories, marked with talks held under its branches that October.",
+      "how_to_recognise": "You can recognise it by its position on the Daibutso Terrace and by flowering nearly year round in pink, white and yellow at once, since the hybrid rarely stops. It carries a small interpretive plaque placed in 2024.",
+      "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hnl_021",
+      "name": "The Foster Garden Chaulmoogra Tree",
+      "species": "Chaulmoogra Tree (Hydnocarpus anthelminthica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 298.7,
+      "height_m": 13.4,
+      "location": {
+        "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
+        "latitude": 21.3167,
+        "longitude": -157.8592,
+        "neighbourhood": "Chinatown / Downtown Honolulu"
+      },
+      "verified_sources": [
+        "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 594)",
+        "https://www.hawaii.edu/news/2020/03/02/cultivating-a-uh-legacy/"
+      ],
+      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "notes": "Species used for centuries in Ayurvedic and Chinese medicine, and in early 20th-century Western medicine, to treat leprosy (Hansen's disease); chaulmoogra oil was the standard treatment before sulfone antibiotics. IMPORTANT for the writer: this Foster Garden tree is NOT the tree at UH Manoa honoring chemist Alice Ball (that is a separate specimen on campus, gifted by the King of Siam in 1935, with its own 2000-era memorial plaque) -- do not conflate the two. The genuine, sourced link for THIS tree: hawaii.edu (2020) reports that Oahu Master Gardeners took seed pods from the Foster Botanical Garden chaulmoogra tree to Kalaupapa (the former Hansen's disease settlement on Molokai) to propagate an exhibit tree there, which is also recent evidence the tree was alive and fruiting in 2020. No planting date or age found in any source; register gives diameter 95.2cm (girth 298.7cm), height 44ft (13.4m), vitality Good. Flagged only for the missing age/planting date, not for identity or aliveness; the page should ask the reader if anyone knows when it was planted.",
+      "story": "For decades before antibiotics, this tree's seed oil was one of the only real treatments for leprosy, and in 2020 gardeners carried its pods to the one place in Hawaii where that history still matters most.\n\nChaulmoogra oil, pressed from the seeds of Hydnocarpus anthelminthica, treated Hansen's disease across Asia for centuries and then in the West through the early twentieth, before sulfone drugs replaced it in the 1940s. This is not the chaulmoogra tree on the University of Hawaii's Manoa campus that honours chemist Alice Ball, who worked out how to make the oil injectable; that is a separate tree, a gift from the King of Siam in 1935. This one stands in Foster Botanical Garden with no plaque, just a trunk pushing three metres round and a crown thirteen metres up, rated in good health.\n\nIn 2020 Oahu's Master Gardeners collected its pods and took them to Kalaupapa, the Molokai settlement where people with Hansen's disease were once confined by law, to grow an exhibit tree on that ground. Nobody has recorded when this one itself went in. If you know, the page is asking.",
+      "how_to_recognise": "You can recognise it by asking a garden map for the chaulmoogra tree; it carries no plaque of its own, unlike its more famous namesake at UH Manoa.",
+      "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

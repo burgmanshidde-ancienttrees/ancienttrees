@@ -11,6 +11,23 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation 4) - Committed three stranded write/verify passes: Berlin +1, Prague +4, Oahu +2; caught and reverted an incomplete fourth
+
+An earlier attempt in this window stopped after 39 minutes having shipped 0 trees, with 81 of its 120 minutes unspent, and left real finished work uncommitted on disk. `passcheck.py --claims` showed no standing claims (they had already been released), so the work had to be found by reading `git status` and `data/agent-costs.json` rather than by a claim record.
+
+Found and verified three complete, good passes sitting uncommitted:
+- **Berlin +1** (ber_021, Berlin's Tallest Tree, a European beech in Tegeler Forst that took the title from the storm-felled Burgsdorff Larch in a 2021 lidar survey), with its German i18n overlay entry.
+- **Prague +4** (prg_022-025: two registered oaks in the Na Cibulkach forest park 90m apart, one cracked and one barrel-trunked; two Hvezda reserve trees, a beech and an oak whose own register cannot agree on its species). Title/meta/question copy updated 21->25 trees.
+- **Oahu +2** (hnl_020 the Foster Garden Rainbow Shower Tree, a sterile clonal cultivar traced to a 1918 hand-pollination; hnl_021 the Foster Garden Chaulmoogra Tree, once a source of leprosy treatment, pods sent to Kalaupapa in 2020). Foster Garden count and city total corrected 19->21 in question_context and FAQ.
+
+All three checked against preflight (0 problems), superlatives (352 claims, no collisions), word counts (150-250, all in range), banned words and em dashes (none), and a full local build (5290 pages, exit 0) before committing.
+
+**A fourth stranded piece did not check out and was reverted rather than finished from memory.** The same window's `agent-costs.json` note claimed a Dordrecht tree (dor_021, "Oosterse plataan") had shipped, and `data/leads/dordrecht.json` had already dropped that candidate from the leads pile as if it had been promoted, and `first-seen.json` carried a `dor_021` date. But no tree by that id, or any new tree at all, was ever written to `data/cities/dordrecht.json`, and `data/lastmod.json`'s dordrecht hash was untouched, confirming the file was never touched. The underlying candidate is also thin: a single register row (LRMB, planting band 1830-1840 only, no girth or height), with two earlier attempts at a second source both failing on an unreadable municipal PDF. Rather than write a story from a single uncorroborated row, reverted the leads-file removal and the first-seen entry, and corrected the agent-costs note to say what actually happened. The candidate is back in `data/leads/dordrecht.json`, waiting on a second source or a measurement.
+
+Left in place, not committed: `data/research/oahu-verified.json` (superseded, already merged into oahu.json) and seven `scripts/_tmp_*.py` scratch files from the earlier attempt's merge work. This session's permission mode denied `rm` on all of them, the same failure mode recorded on 2026-08-13; they are harmless leftovers, not tracked, and will not be committed.
+
+Build, preflight and qa clean (qa's one standing finding is the pre-existing shallow-clone sitemap-lastmod artifact, unrelated to this session, tried `git fetch --unshallow` which did not clear it either).
+
 ## 2026-09-10 (continuation 3) - Leeuwarden 34 -> 41, a 116-tree recognition-line sweep, and git push is stuck again
 
 **FOR HIDDE: git push is failing again, same error as earlier today ("Invalid username or token. Password authentication is not supported").** Fetch works, only push fails, so it is the installation token rather than anything wrong here. Everything below is committed and sitting safely local; it will reach GitHub the moment push works again. If you read this before it does, that is the thing worth checking.
