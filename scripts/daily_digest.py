@@ -2359,11 +2359,12 @@ def main():
     # gsc_data, not a name that only existed inside gsc_section's argument:
     # the first version referenced `gsc`, which is undefined in this scope, and
     # the NameError hid in the force-rewrite path until a --force test hit it.
-    promote(gsc_data[2] if gsc_data else None)
+    promote(gsc_data[2] if gsc_data else None,
+            gsc_data[4] if gsc_data else None)
     return 0
 
 
-def promote(pages):
+def promote(pages, pairs=None):
     """Feed measured demand back into the queue, so a city that starts ranking
     climbs the list on its own.
 
@@ -2405,6 +2406,29 @@ def promote(pages):
             continue
         c, i = per.get(slug, (0, 0))
         per[slug] = (c + r["clicks"], i + r["impressions"])
+
+    # NOT DEMAND, subtracted 2026-09-10. Google's exact-phrase operator is the
+    # fingerprint of a scraper or an SEO tool: on the day this went in, six
+    # pages carried 16 percent of all measured impressions for quoted queries
+    # and took 4 clicks between them, an index of 0.09 against 0.67 for
+    # ordinary queries. Milan's 350 impressions and Brussels' 434 were almost
+    # entirely this, and the queue was ranking both as demand and sending
+    # depth work at them under the 10-impression rule. Counting a machine's
+    # curiosity as a person wanting something is the one way this file can lie
+    # to every rung below it at once. See scripts/seolearn.py.
+    for r in (pairs or []):
+        query = (r.get("keys") or ["", ""])[1]
+        if '"' not in query and "\u201c" not in query and "\u201d" not in query:
+            continue
+        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        if not path:
+            continue
+        lang, slug = split_path(path)
+        if lang != "en" or slug not in per:
+            continue
+        c, i = per[slug]
+        per[slug] = (max(0, c - r.get("clicks", 0)),
+                     max(0, i - r.get("impressions", 0)))
     moved = []
     for city in doc["cities"]:
         clicks, imps = per.get(city.get("slug") or "", (0, 0))
