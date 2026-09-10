@@ -13,6 +13,66 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-10
+
+Reviewed commits since the last review (0d4e001b, 2026-09-09) through
+10097533 (~340 commits): dominated by the assembly line's ordinary work
+across many small claims (Leeuwarden deepened 9->41 across five stranded
+verify claims, Eindhoven +5, Tilburg completed to its 20-tree target,
+Valencia +6, Milan +1, plus recognition-line batches across well over 150
+cities), five photo-hunt rounds against the last-resort ("plant-word filter
+off") seam (round five's own log: 95 candidates, 0 approvals, correctly
+read as "the well is dry" rather than re-run), two real corrections
+(Utrecht's Geertebolwerk Pear pin fixed 750m, Seattle's Sylvia correctly
+kept alive against a misleading plaque, `verify_notes` recorded so it is
+not relitigated), and the day's one substantial feature: continuous,
+self-closing copy testing on city titles (`scripts/copytest.py`,
+blueprint bumped to v1.16 then v1.17 for Hidde's "Approval do this without
+me!"). Checked that feature specifically since it is new and touches every
+demand page's title tag: read `site/src/lib/copy-test.ts` and the
+`[city].astro` wiring, then the built output for all three seeded cities
+(`lisbon.html` age_first: "Oldest 457 Years, 35 to See"; `rome.html` and
+`barcelona.html` control: "N to See, Oldest Age Years"). The head phrase
+"Ancient Trees in [City]" is identical in both arms as the contract
+requires, the H1 stays plain ("Ancient Trees in Lisbon"), and both
+rendered titles sit under the 60-character limit. Working as specified.
+
+Ran `python3 scripts/qa.py` (8199 pages, clean), `python3 scripts/health.py`
+(rung 2 clear: iOS app back to success, the failure the 2026-09-08/09
+reviews carried is resolved), `python3 scripts/preflight.py` (565 cities, 0
+problems; the standing NOTEs, paid-entry ratios, stale country
+meta-descriptions, four one-space-indented city files, the why_go/age
+backlog, are all pre-existing and none touch a page changed in this
+window) and `python3 scripts/superlatives.py` (352 claims, no collisions).
+Spot-checked `miharu.json`/`motosu.json`'s unusually large diffs in the
+recognition-line commit: pure re-indentation (1-space to 2-space) plus one
+added `how_to_recognise` line each, not a content change.
+
+Read the six rotated app screenshots
+(profile-signed-in.png, profile.png, refused.png, search.png,
+signin-email.png, signin.png), a fresh rotation this time (not the
+2026-09-07/09 repeat).
+
+**WARN APP — a single-tree place shows "1 trees" in the map search
+results, in `ios/AncientTrees/AncientTrees/Screens/MapSearch.swift`.**
+`search.png` (query "lis") shows "Liskiava / Lithuania - 1 trees" and
+"Alishan / Taiwan - 1 trees" under Places, while the Species row two lines
+below it correctly reads "1 tree" for the same count. Confirmed in source:
+lines 210 and 217 build the places subtitle as `"\(c.count) trees"`
+unconditionally, while the file's own `pluralized(_:)`-style helper three
+lines away, at line 307 (`"\(n) \(n == 1 ? "tree" : "trees")"`), already
+does this correctly and is used elsewhere in the same screen. TONE_OF_VOICE
+and PRODUCT_COPY.md hold this site to being precise and unpretentious about
+its own data; a grammatically wrong count on every single-tree place (34
+of 190 published places sit at the four-tree floor or below per CLAUDE.md,
+so single-tree places are not rare) reads as sloppy rather than deliberate.
+Not visual-taste, a one-line fix once picked up: route both sites through
+the existing helper. Tagged APP per instructions; a night run may not
+touch app UI-adjacent Swift under CLAUDE.md's visual-taste rule, so this
+waits for a session.
+
+No Monday corpus-rot audit today (Thursday UTC).
+
 ## 2026-09-09
 
 Reviewed commits since the last review (fad01a7f, 2026-09-08 ~06:10 UTC)
