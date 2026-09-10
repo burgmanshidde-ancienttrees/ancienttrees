@@ -65,7 +65,8 @@
         ],
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its tall crown rising beside the Roman Arena, its roots recently anchored with concrete piles after a 2025 scare. It stands in Piazza Bra, among the square's circular flowerbeds."
     },
     {
       "id": "ver_002",
@@ -97,7 +98,8 @@
       },
       "curation_status": "flagged",
       "notes": "Dimensions (505cm circumference, 35.5m height) from the official AMI national monumental-trees listing, corroborated by the city's own press office covering the same tree as part of its tree-heritage app project. No individual planting date documented beyond 'already mature by 1941'. Photo verified directly: shows a large plane trunk and canopy in a garden square setting with a stone balustrade, consistent with the described location. Pin refined 2026-07-27 and set to confirmed: ilregistrodeglialberi.it, a registry aggregator explicitly citing this tree's AMI listing, gives GPS coordinates (45.442705, 11.000061) with an identical circumference and height (505cm, 35.50m) to this entry's own figures, an exact match rather than a mere corroboration.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its huge trunk, over five metres round, filling most of the small garden. It stands at the centre of Piazza Indipendenza, beside a ginkgo."
     },
     {
       "id": "ver_003",
@@ -136,7 +138,8 @@
       },
       "curation_status": "flagged",
       "notes": "Dimensions (323cm average circumference, 23.5m average height) from the official AMI national monumental-trees listing; the tree's own dedicated Wikimedia Commons category (structured data, coordinates matching Piazza Indipendenza) independently corroborates its identity and location. Presented as a group entry since the register itself lists it that way rather than as one single specimen. Photo verified directly: shows unmistakable ginkgo fan-shaped foliage and bark, matching the species and general setting. Coordinates now taken from the register's own GIS record for this entry (its circumference and height match this story's figures exactly, confirmed identically across two independent fetches of the source spreadsheet), about 45m from the previous square-wide estimate. The plane tree and cedar entries in the same register file could not be matched with the same confidence this pass (the tool's reads of those two rows were inconsistent across attempts), so ver_002 and ver_004 stay approximate rather than risk a wrong pin.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the group of ginkgos sharing the small garden with the square's much taller plane tree. It stands in Piazza Indipendenza."
     },
     {
       "id": "ver_004",
@@ -169,7 +172,8 @@
       "location_precision": "confirmed",
       "height_m": 28.0,
       "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 309
+      "girth_cm": 309,
+      "how_to_recognise": "You can recognise it by its tall crown rising over the avenue, reaching 28 metres. It stands on Viale Nino Bixio, in Borgo Trento, between the city hospital and Ponte Garibaldi."
     },
     {
       "id": "ver_005",
@@ -202,7 +206,8 @@
       "curation_status": "flagged",
       "notes": "Ensemble entry describing the garden's cypress avenue as it exists today, deliberately not claiming the historic Goethe cypress is still standing. The 2020 storm loss and subsequent replanting corroborated across two independent local press sources. An earlier candidate set of 1993-94 architectural documentation photos predates the storm and was correctly not used. 2026-07-29: a real post-storm candidate found, File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 01.jpg (CC BY-SA 4.0, Annika of Nine), photographed August 2025, five years after the replanting. Its Commons page describes a formal Italian garden avenue of tall cypress trees with a fountain, matching this entry exactly and dated to well after the loss the story describes. 2026-07-29 (later session): downloaded and personally viewed the file. Shows the formal cypress avenue with clipped box hedges and the garden's stone fountain, matching this entry's framing. Approved.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it as the avenue of cypresses climbing from the palace toward the grotto, mixing younger replanted trees with older survivors. It stands along the main axis of Giardino Giusti."
     },
     {
       "id": "ver_006",
