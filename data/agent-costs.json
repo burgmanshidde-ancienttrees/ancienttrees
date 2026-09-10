@@ -6699,6 +6699,15 @@
     "note": "CORE-cluster shortlist in the brief turned out to duplicate ott_001-008 already live; pivoted to genuinely unpublished QED/Green Island/Dow's Lake candidates. Delivered ott_009-014 to data/research/ottawa-verified.json (not yet written to story or merged); 3 leads recorded (2 duplicates/generic, 1 candidate found to actually sit in Gatineau QC, out of scope); tokens is the agent's own estimate, not metered",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "lyon",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 10 how_to_recognise lines onto live Lyon trees, closing that city's gap to zero; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
