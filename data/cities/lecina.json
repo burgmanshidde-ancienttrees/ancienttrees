@@ -1,0 +1,64 @@
+{
+  "city": "Lecina",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Lecina is a stone hamlet on the edge of the Sierra de Guara, and it is on this map for one tree. The carrasca standing by the church cemetery wall won European Tree of the Year in 2021 with 104,264 votes, the largest count the contest has recorded, a year after Spain named it its own tree of the year. It is a holm oak of the dry inland form, wider than it is tall, with a crown covering roughly 615 square metres. The walk from the village centre takes four minutes.",
+  "meta_description": "Lecina's Carrasca Milenaria won European Tree of the Year 2021 with a record 104,264 votes: a holm oak, 28 metre crown, four minutes from the village.",
+  "question_meta": "The Carrasca Milenaria de Lecina is the tree to see in Lecina: European Tree of the Year 2021. Its age, its size, and how to reach it.",
+  "question_answer": "The tree to see in Lecina is the Carrasca Milenaria, a holm oak standing beside the church cemetery wall at the edge of the village in Barcabo, Huesca province. It won European Tree of the Year in 2021 with a record 104,264 votes, and local tradition puts it at around a thousand years old, though nobody has dated it with a core sample.",
+  "question_context": "The Carrasca Milenaria is a carrasca, the drought-adapted form of the holm oak that grows across inland Aragon, and its shape is what makes it worth the drive: a crown around 28 metres across, covering some 615 square metres of ground, on a tree only about 16.5 metres tall. The numbers on the trunk depend on the source. Spanish Wikipedia and the tree's own site give a girth of 610 centimetres; Wikidata records 700. The age is looser again. Every source repeats a round thousand or eleven hundred years and none of them cites a study, so it is the village's traditional reckoning rather than a measurement. Aragon lists it in its catalogue of singular trees, and Spain named it national tree of the year in 2020 before the European vote in 2021. Reaching it takes four minutes on foot from the village centre, along a path between stone walls and past an old threshing floor. Low barriers ring the base to keep feet off the root plate; you can still walk right up to it. There is no public transport to Lecina, so this one is a car journey into the Sobrarbe.",
+  "faq": [
+    {
+      "q": "How old is the Carrasca Milenaria de Lecina?",
+      "a": "Sources say around a thousand to eleven hundred years, but none of them cites a core sample or a ring study. Treat it as a traditional estimate rather than a measured age."
+    },
+    {
+      "q": "Can you visit the tree in Lecina?",
+      "a": "Yes, free and at any time. It is a four minute walk from the village centre, and barriers at the base protect the roots rather than block access. The local cultural park also runs guided visits."
+    },
+    {
+      "q": "Why is it famous?",
+      "a": "It won European Tree of the Year 2021 with 104,264 votes, the highest total in the contest's history, after taking Spain's national title in 2020."
+    },
+    {
+      "q": "How do you get to Lecina?",
+      "a": "By car. Lecina sits in Barcabo, in the Sierra de Guara area of Huesca province, and no public transport serves the village."
+    }
+  ],
+  "hero_tree_id": "lec_001",
+  "oldest_tree_id": "lec_001",
+  "trees": [
+    {
+      "id": "lec_001",
+      "name": "Carrasca Milenaria de Lecina",
+      "species": "Holm Oak, the carrasca/ballota form (Quercus ilex subsp. ballota)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 610,
+      "location": {
+        "address": "Beside the street next to the cemetery wall of the church, Lecina, Barcabo, Huesca province, Aragon",
+        "latitude": 42.22975,
+        "longitude": 0.03846,
+        "neighbourhood": "Village edge, Lecina"
+      },
+      "story": "In 2021 a holm oak at the edge of a Huesca village collected 104,264 votes and won European Tree of the Year, the largest total the contest has recorded. Spain had named it its own tree of the year the season before. The Carrasca Milenaria is a carrasca, the drought-adapted form of holm oak that inland Aragon grows, and what it has done with a thousand years of space is the whole argument for the drive: a crown roughly 28 metres across, covering some 615 square metres of ground, on a tree only about 16.5 metres tall. Wider than it is high, which is what a holm oak becomes when nothing crowds it.\n\nThe trunk depends on who measured it. Spanish Wikipedia and the tree's own site give a girth of 610 centimetres; Wikidata records 700. The age is vaguer still. Every source repeats a round thousand or eleven hundred years, and not one of them cites a core sample or a ring study, so this is the village's traditional reckoning rather than a dated figure. Nobody has established it properly. If you know of a study that has, tell us.\n\nGetting there takes four minutes from the village centre, along a path between stone walls and past an old threshing floor. Low barriers ring the base, there to keep feet off the root plate rather than to keep you back.",
+      "how_to_recognise": "You can recognise it by the crown, roughly 28 metres across on a tree only 16.5 metres tall, and by the low barriers ringing the base. It stands alone beside the cemetery wall of the church at the village edge.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Carrasca_milenaria_de_Lecina",
+        "https://www.lacarrascadelecina.com/",
+        "https://www.wikidata.org/wiki/Q109316184"
+      ],
+      "access": "Free, publicly accessible. A short walk (about four minutes) from the village centre along a path bordered by stone walls, past an old threshing ground; protective barriers stand at the base to keep foot traffic off the root plate, but the tree itself is not fenced off from view or from a close approach. Guided visits are also organised via parqueculturalriovero.com.",
+      "transport": "Rural village in the Sierra de Guara / Sobrarbe area of Huesca; no confirmed public transport to Lecina, reachable by car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

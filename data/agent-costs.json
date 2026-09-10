@@ -7270,6 +7270,20 @@
         "tokens": 0,
         "trees": 0,
         "note": "Main-session work: merged the write pass, upgraded Cerro Veronese's pin from approximate to confirmed using a MASAF register match found while merging, renamed the tree to fix a title collision, caught and reverted the dead-register tree, closed the leads.py gap that let it through (register_nr dead-status check, caught 20 leads corpus-wide), ran a photo viewing pass on 7 photo-less cities (0 usable), full build/preflight/qa/superlatives pass. Tokens not separately metered from the orchestrating session."
+      },
+      {
+        "target": "_famous-spain",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 3,
+        "note": "Continuation 8: finished a standing write claim from a prior attempt that stopped early. Lecina (lec_001) had already been written and left uncommitted; wrote the remaining 3 verified trees directly in this session rather than dispatching (Mendaza mza_001, Cabeza del Buey ebe_001, Muxika urk_001), each as its own single-tree place under the 2026-08-31 destination exception. Renamed cdb_001 to ebe_001 to avoid an id-prefix collision with Cordoba (cdb_ already in use there), caught by preflight/passcheck before commit. Tokens not separately metered from the orchestrating session."
+      },
+      {
+        "target": "florence-it-overlay-fix",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "rung-2 fix: deploy.yml had been failing since the prior push on i18ncheck.py (it/florence overlay flo_021 missing access/transport, added by the same push). Filled both fields in data/i18n/it/florence.json; i18ncheck.py clean after."
       }
     ]
   }

@@ -1,0 +1,63 @@
+{
+  "city": "Muxika",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Muxika is a small municipality in Biscay, Basque Country, and its tree stands by a road crossing near the village railway station. The Urkietako Artea is a holm oak, unusual this far north and west, pruned wide rather than tall at some point in its history so that it now spreads a 26 metre crown on a trunk that branches barely a metre and a half off the ground. It is one of only two centenarian holm oaks recorded in the whole province.",
+  "meta_description": "Urkietako Artea, Muxika: a holm oak with a 26 metre crown on a trunk that branches at 1.5 metres, one of only two centenarian holm oaks in Biscay province.",
+  "question_meta": "Muxika's notable tree is the Urkietako Artea, a holm oak by the San Roman crossroads. Its size, its protection, and how to reach it.",
+  "question_answer": "The tree at Muxika is the Urkietako Artea, a holm oak standing beside a crossroads in the San Roman district, opposite the village railway station in Biscay, Basque Country. Its trunk branches at only 1.5 metres and spreads into a crown 26 metres across, and it is one of only two centenarian holm oaks recorded anywhere in the province.",
+  "question_context": "Two independent sources, a regional landscape blog and a Spanish tree-reference site, agree closely on its measurements: a girth of 430 centimetres, a height of 12 metres and a crown 26 metres across, low and wide because the trunk branches at only 1.5 metres rather than climbing. The Basque Government declared it a singular tree under Decreto 265/1995. It is one of just two centenarian holm oaks recorded in Biscay province, the other standing in nearby Garai. Holm oak is more at home in Aragon and Andalusia than in the Atlantic, rain-fed Basque Country, which is part of what makes this one worth noting. No age figure has been published for it and none is derivable responsibly from girth alone without a published growth-rate study for the species in hand, so the field is left for a reader to help settle. It stands beside a public road junction reached by turning off the BI-6315 near Muxika railway station, itself served by the Bilbao-Bermeo coastal line, though the journey from central Bilbao runs 45 to 50 minutes each way, past this site's usual day-trip boundary.",
+  "faq": [
+    {
+      "q": "How old is the Urkietako Artea?",
+      "a": "Unknown. No source gives an age and none should be guessed from girth alone without a published growth-rate study for holm oak in this climate. If you know its age, tell us."
+    },
+    {
+      "q": "Why is a holm oak this far north unusual?",
+      "a": "Holm oak is a Mediterranean species, more at home in the dry inland climates of Aragon or Andalusia. It is rare enough in the wetter, Atlantic Basque Country that this is one of only two centenarian holm oaks recorded in Biscay province."
+    },
+    {
+      "q": "Can you visit the tree?",
+      "a": "Yes, free and open. It stands beside a public road junction in the San Roman district of Muxika, opposite the village railway station. No source mentions a gate, fee or restriction."
+    },
+    {
+      "q": "How do you get to Muxika?",
+      "a": "By train from Bilbao on the Bilbao-Bermeo coastal line to Muxika station, though the journey runs 45 to 50 minutes each way. It can also be reached by car."
+    }
+  ],
+  "hero_tree_id": "urk_001",
+  "oldest_tree_id": "urk_001",
+  "trees": [
+    {
+      "id": "urk_001",
+      "name": "Urkietako Artea (Encina de Urkieta)",
+      "species": "Holm Oak (Quercus ilex subsp. ilex)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 430,
+      "location": {
+        "address": "Barrio de San Roman, crossroads toward Besangiz, Muxika, Biscay, Basque Country (opposite Muxika railway station, off the BI-6315 Amorebieta-Gernika road)",
+        "latitude": 43.28164,
+        "longitude": -2.71034,
+        "neighbourhood": "San Roman, Muxika"
+      },
+      "story": "Holm oak belongs to dry, inland Spain, to Aragon and Andalusia and the country's hot interior. It has no obvious business in the rain-fed Basque Country, which is exactly what makes this one worth a detour: it is one of only two centenarian holm oaks recorded anywhere in Biscay province.\n\nThe Urkietako Artea stands beside a road crossing in Muxika's San Roman district, opposite the village railway station. At some point its trunk was encouraged to branch low rather than climb, and it has taken that instruction seriously: the crown forks at just 1.5 metres and spreads into a canopy 26 metres across, on a tree only 12 metres tall. A regional landscape blog and a Spanish tree-reference site agree on the numbers, including a girth of 430 centimetres, corrected from an early misreading of the same figure as a diameter rather than a circumference.\n\nThe Basque Government declared it a singular tree in 1995. No age has ever been published for it, and none should be guessed from girth alone without a growth-rate study for the species in hand, so the field stays open here. What it has is protection, a good crown and a rare address for its kind. If you have stood under it and know more, tell us.",
+      "how_to_recognise": "You can recognise it by the low, wide crown, 26 metres across on a tree only 12 metres tall, with the trunk forking into branches just 1.5 metres off the ground. It stands alone at the San Roman crossroads opposite the railway station.",
+      "verified_sources": [
+        "http://paisajesdebizkaia.blogspot.com/2018/08/encina-de-urkieta-muxika.html",
+        "https://www.floresyplantas.net/encina-de-urkieta/"
+      ],
+      "access": "Free, open. Stands beside a public road/crossroads in the San Roman district, reached by turning off the BI-6315 regional road near Muxika train station and continuing about 2km through the neighbourhood; no source mentions any gate, fee or restriction.",
+      "transport": "Muxika station (Euskotren line, Bilbao-Matiko to Bermeo/Mundaka) sits by the turning to the tree, with trains from central Bilbao roughly every 30 minutes on weekdays; the journey itself runs 45 to 50 minutes each way on this coastal branch line.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
