@@ -137,12 +137,22 @@ def _segment_rows(token, instance_id):
     return rows
 
 
-def daily_download_totals(days=14):
-    """{date: total_downloads} for the most recent DAILY instances, newest
-    Apple has processed first. Sums every numeric 'Counts'-style column
-    across whatever breakdown columns the report carries (territory, device
-    etc.), because the totals table wants one number per day, not a
-    dimension the report happens to include this week."""
+def daily_downloads_by_type(days=14):
+    """{date: {"first-time download": n, "redownload": n}} per day.
+
+    Split rather than summed since 2026-09-10, because the total could never
+    be reconciled with the screen Hidde actually looks at. App Store Connect's
+    Trends screen shows UNITS, which is first-time downloads only; we count a
+    redownload as well, deliberately (see NEW_PERSON below: a returning person
+    is a person). Both numbers are right and they will never match, so his own
+    reading of the app was that ours was broken: 42 over six days here against
+    22 over seven days there.
+
+    A number nobody can reconcile with the source they can see gets distrusted,
+    and the fix is the one this project uses everywhere, which is to say what
+    the number is rather than to pick a side. The digest prints both, and the
+    first-time column is the one that should equal Trends to the unit.
+    """
     token = bearer_token()
     state = _load_state()
     request_id = _ensure_request(token, state)
@@ -151,7 +161,7 @@ def daily_download_totals(days=14):
     if not instances:
         return {}, "no report instances yet (first one can take up to 48h " \
                     "after the request was created)"
-    totals = {}
+    split = {}
     for inst in instances:
         date = inst["attributes"].get("processingDate")
         rows = _segment_rows(token, inst["id"])
@@ -162,13 +172,26 @@ def daily_download_totals(days=14):
                     if k.strip().lower() in ("counts", "count", "units"):
                         count_col = k
                         break
-            if not count_col or not _is_new_person(row):
+            if not count_col:
+                continue
+            kind = _download_type(row)
+            if kind not in NEW_PERSON:
                 continue
             try:
-                totals[date] = totals.get(date, 0) + int(row[count_col])
+                bucket = split.setdefault(date, {})
+                bucket[kind] = bucket.get(kind, 0) + int(row[count_col])
             except (ValueError, TypeError):
                 pass
-    return totals, None
+    return split, None
+
+
+def daily_download_totals(days=14):
+    """{date: total_downloads}, first-time plus redownload. Kept because it is
+    the shape every caller before 2026-09-10 expects."""
+    split, note = daily_downloads_by_type(days)
+    if note:
+        return {}, note
+    return {d: sum(v.values()) for d, v in split.items()}, None
 
 
 # AUTO-UPDATES ARE NOT DOWNLOADS, and summing every row said they were
@@ -187,21 +210,27 @@ def daily_download_totals(days=14):
 NEW_PERSON = ("first-time download", "redownload")
 
 
-def _is_new_person(row):
-    """A row that represents somebody getting the app, not a phone updating it.
+def _download_type(row):
+    """Which kind of download this row is, lowercased.
 
     Absent column means an older or narrower report shape, and there the honest
-    default is to count the row rather than silently drop the whole day.
+    default is to count the row as a first-time download rather than silently
+    drop the whole day.
     """
     for key in row:
         if key.strip().lower() == "download type":
-            return str(row[key]).strip().lower() in NEW_PERSON
-    return True
+            return str(row[key]).strip().lower()
+    return "first-time download"
 
 
 if __name__ == "__main__":
-    totals, note = daily_download_totals()
+    split, note = daily_downloads_by_type()
     if note:
         print(note)
-    for date in sorted(totals):
-        print(date, totals[date])
+    print("%-12s %10s %11s %7s" % ("date", "first-time", "redownload", "total"))
+    for date in sorted(split):
+        v = split[date]
+        f, r = v.get("first-time download", 0), v.get("redownload", 0)
+        print("%-12s %10d %11d %7d" % (date, f, r, f + r))
+    print("first-time is the column that should equal App Store Connect's "
+          "Trends screen, which counts units and not redownloads.")
