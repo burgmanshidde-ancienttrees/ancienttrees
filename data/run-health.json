@@ -11848,6 +11848,50 @@
    ],
    "trees": 10,
    "logged": true
+  },
+  {
+   "started": "2026-09-10T20:50:52+00:00",
+   "date": "2026-09-10",
+   "run_id": "34524914086",
+   "minutes": 0.5,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 9,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "cabeza-del-buey",
+     "trees": 1
+    },
+    {
+     "city": "lecina",
+     "trees": 1
+    },
+    {
+     "city": "mendaza",
+     "trees": 1
+    },
+    {
+     "city": "muxika",
+     "trees": 1
+    },
+    {
+     "city": "cerro-veronese",
+     "trees": 0
+    },
+    {
+     "city": "florence",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
