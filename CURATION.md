@@ -11,6 +11,40 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation 6) - Recognition-line backlog closed to zero; a photo shortlist viewing pass found nothing usable
+
+Closed the recognition-line backlog (CLAUDE.md rung 7, "every tree gets one
+eventually") to zero: 110 trees across 104 cities, the last alphabetical tail
+from Nedvedice through Zywiec, all restated from species/girth/height/setting
+/access/story already on file, none of it new research. `recognise.py --stuck`
+was already at zero; this closes the wider gap, not just the trees with nothing
+else to go on. Build (5296 pages), preflight (0 problems) clean.
+
+Also released three stale claims found standing at the top of the window
+(brisbane, milan, taormina), all already documented dead ends this same week:
+Milan's register verify pass has returned zero twice, Brisbane is on its fifth
+zero-yield deepen attempt, Taormina's in-comune register trees are confirmed
+private hotel grounds (four times over).
+
+**Photo shortlist viewing pass, 8 cities, 0 usable.** `photo_gaps.py --shortlist`
+named one candidate per photo-less city (leeuwarden, tilburg, helmond,
+maastricht, budapest, delft, dallas, kamakura); fetched and looked at the
+closest-distance candidate for leeuwarden, helmond and kamakura by eye rather
+than trusting the filename match. All three were wrong: a bird sculpture (De
+Zeven Snippen) for Helmond's Copper Beech, a wide shot of Kenchoji's main hall
+for the Junipers of Kenchoji it was nominally matched to, and a canal cityscape
+for Leeuwarden's Julianaboom. The remaining five cities' top candidates read the
+same way by filename alone (a Stolperstein memorial plaque for Maastricht, a
+sculpture and building photos for Tilburg, nothing queued at all for Budapest/
+Delft/Dallas) and were not fetched, since the pattern was already established.
+This is filename-matching noise of the kind CLAUDE.md already documents
+(Cagliari, Copenhagen); a `photo_hunt.py --recheck` API sweep across all 8
+cities' 40 unchecked trees afterward found almost nothing new (0 new
+candidates on 36 of 40, one new candidate each on two Molenstraat Cemetery
+trees, four new on the Copper Beech of the Kromme Steenweg), confirming the
+Commons coverage for this batch is close to genuinely exhausted rather than
+merely unhunted.
+
 ## 2026-09-10 (continuation 5) - Fort Lauderdale opened (4 trees), Daytona Beach stays closed
 
 Daytona Beach (#65): scouted, empty. Its county's only register supply (2 Florida Champion Trees, Volusia County) sits 20+ km out with no public transport, too thin and too far to open the city. New entry in `data/register-scouting.json`.
