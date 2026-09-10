@@ -9796,7 +9796,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:2024 in Berg en Dal (municipality) Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Berg en Dal Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2024-10-02 Category:Self-published work"
+     "cats": "Category:2024 in Berg en Dal (municipality) Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Berg en Dal Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2024-10-02 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: the Gelderland Kabouterboom near Beek (sign of Geldersch Landschap), a chestnut not our oak, and a trunk close-up"
     },
     {
      "title": "File:Kabouterboom anno 2024 - verticaal panorama 01.jpg",
@@ -9816,7 +9818,9 @@
      "author": "Marczoutendijk",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2015-02-06 Category:On OSM Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2015-02-06 Category:On OSM Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: the Kabouterboom near Nijmegen, not the Hague oak"
     },
     {
      "title": "File:Zicht op de Kabouterboom, een tamme kastanje en de dikste boom van Nederland - Beek - 20536999 - RCE.jpg",
@@ -9826,7 +9830,9 @@
      "author": "Bert van As",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2010-07-28 Category:Photographs by Bert van As Category:Quercetea robori-petraeae"
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2010-07-28 Category:Photographs by Bert van As Category:Quercetea robori-petraeae",
+     "judged": "reject",
+     "verdict": "Wrong tree and wrong species: the sweet chestnut at Beek near Nijmegen"
     },
     {
      "title": "File:Zicht op de Kabouterboom, een tamme kastanje en de dikste boom van Nederland - Beek - 20537000 - RCE.jpg",
@@ -9838,7 +9844,8 @@
      "lng": null,
      "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2010-07-28 Category:Photographs by Bert van As"
     }
-   ]
+   ],
+   "exhausted": "name collision, not a photo gap: every candidate Commons returns is the Gelderland Kabouterboom near Beek, a sweet chestnut and the thickest tree in the Netherlands, one frame showing its Geldersch Landschap en Kasteelen sign. Ours is a 94-year-old oak in the Bosjes van Zanen. Three passes have now judged the same wrong tree. Only a new source or a reader closes this."
   },
   "the_001": {
    "city": "Thessaloniki",
@@ -10303,7 +10310,9 @@
      "lat": 52.084672,
      "lng": 5.1259439,
      "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2012-09-02 Category:Oranjerie, Oude Hortus Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Garden pond and glasshouse view, no identifiable yew"
     },
     {
      "title": "File:Lange Nieuwstraat, Utrecht, Netherlands - panoramio (11).jpg",
@@ -10545,7 +10554,9 @@
      "lat": 52.08464212,
      "lng": 5.12578726,
      "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration redundant Category:Self-published work Category:University Museum Utrecht",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Museum street frontage, no yew in frame"
     },
     {
      "title": "File:Utrecht, de Beyerskameren RM36273 foto9 2015-11-01 15.09.jpg",
@@ -10684,7 +10695,9 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/200313_021_SD_Botanic_Gdn_-_Lawn_Garden%2C_Araucaria_columnaris_Cook_Pine%2CCupressus_cashmeriana_Kashmir_Cypress%2C_Rosa_sp%2C_Canna_x_generalis_cv.jpg/960px-200313_021_SD_Botanic_Gdn_-_Lawn_Garden%2C_Araucaria_columnaris_Cook_Pine%2CCupressus_cashmeriana_Kashmir_Cypress%2C_Rosa_sp%2C_Canna_x_generalis_cv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:200313_021_SD_Botanic_Gdn_-_Lawn_Garden,_Araucaria_columnaris_Cook_Pine,Cupressus_cashmeriana_Kashmir_Cypress,_Rosa_sp,_Canna_x_generalis_cv.jpg",
      "licence": "CC BY 2.0",
-     "author": "cultivar413"
+     "author": "cultivar413",
+     "judged": "reject",
+     "verdict": "San Diego Botanic Garden, not Valencia; a general border view with no subject tree"
     }
    ]
   },
@@ -14135,7 +14148,9 @@
      "licence": "CC BY",
      "author": "(c) froggymum, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "39.4794029722,-0.375549"
+     "obs_location": "39.4794029722,-0.375549",
+     "judged": "reject",
+     "verdict": "Leaf close-up, 300 px wide"
     },
     {
      "title": "iNat obs 278243359 (Ficus macrophylla)",
@@ -14177,14 +14192,18 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/161_Ficus_macrophylla%2C_jardins_de_la_Glorieta_%28Val%C3%A8ncia%29.jpg/960px-161_Ficus_macrophylla%2C_jardins_de_la_Glorieta_%28Val%C3%A8ncia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:161_Ficus_macrophylla,_jardins_de_la_Glorieta_(Val%C3%A8ncia).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Enric"
+     "author": "Enric",
+     "judged": "reject",
+     "verdict": "Root and buttress study, no crown; and nothing separates it from the Glorieta's other catalogued ficus"
     },
     {
      "title": "File:Ficus du Parterre, avril 2025.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Ficus_du_Parterre%2C_avril_2025.jpg/960px-Ficus_du_Parterre%2C_avril_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ficus_du_Parterre,_avril_2025.jpg",
      "licence": "CC BY 4.0",
-     "author": "Artvill"
+     "author": "Artvill",
+     "judged": "reject",
+     "verdict": "photo_light POOR, rejected without viewing"
     },
     {
      "title": "File:Ficus monumental.jpg",
@@ -14198,7 +14217,9 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Ficus_xard%C3%ADns_da_Glorieta_02.jpg/960px-Ficus_xard%C3%ADns_da_Glorieta_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ficus_xard%C3%ADns_da_Glorieta_02.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Bene Riobó"
+     "author": "Bene Riobó",
+     "judged": "reject",
+     "verdict": "Frame holds two or more of the Glorieta ficus with only proximity behind it, and a road fills the lower third"
     }
    ]
   },
@@ -66488,7 +66509,9 @@
      "lat": 52.089896,
      "lng": 5.127268,
      "cats": "Category:CC-BY-SA-3.0 Category:Donkere Gaard 13, Utrecht Category:Lijnmarkt 24, Utrecht Category:Lijnmarkt 26, Utrecht Category:Lijnmarkt 28, Utrecht Category:Lijnmarkt 30, Utrecht Category:Lijnmarkt 32, Utrecht Category:Netherlands photographs taken on 2014-10-13 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 2728263",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Canal scene of bicycles and houses, no readable plane"
     },
     {
      "title": "File:Nieuwegracht-Oost, 3512 Utrecht, Netherlands - panoramio (6).jpg",
@@ -66554,7 +66577,7 @@
      "cats": "Category:Amelisweerd Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Self-published work",
      "source": "wikidata/Q120727126",
      "judged": "reject",
-     "verdict": "Upward trunk view, bare and near-monochrome grey light, crown not readable"
+     "verdict": "Foot-of-trunk upward shot, no readable tree, flat grey winter light"
     },
     {
      "title": "File:Amelisweerd Koningsweg Utrecht Nederland.JPG",
@@ -67777,7 +67800,9 @@
      "lat": 52.08604637,
      "lng": 5.12842892,
      "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Sculptures by Oswald Wenckebach Category:Sculptures in Utrecht-Centre Category:Self-published work Category:Sputnik-1 in art Category:Taken with Kodak EasyShare Z650 Category:Zocherpark",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Bronze statue photographed as the subject, no tree"
     },
     {
      "title": "File:De baan van de planetoïde 2012 DA14 aan de hemel voor een waarnemer in Utrecht.png",
@@ -81929,7 +81954,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Russalka oak",
      "source": "wikidata/Q105637334",
      "judged": "approve",
-     "verdict": "Whole oak in autumn leaf filling the frame, crown and trunk readable; Wikidata id in the title, 0 m from pin"
+     "verdict": "Whole oak in autumn leaf filling the frame, crown and trunk readable; Wikidata id in title, 0 m from pin"
     },
     {
      "title": "File:Tallinn - Russalka - 2025-09-23 17-26-19 001.jpg",
@@ -82088,7 +82113,9 @@
      "lat": 50.56818,
      "lng": 15.27466,
      "cats": "Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Tatobitská lípa Category:Tree of the Year (Czech Republic)",
-     "source": "wikidata/Q12058344"
+     "source": "wikidata/Q12058344",
+     "judged": "approve",
+     "verdict": "Whole lime in full leaf filling the frame, daylight, its information board at the foot; Wikidata id, 0 m from pin"
     },
     {
      "title": "File:2016 The Thousand Year Old Lime CZ.jpg",
@@ -82108,7 +82135,9 @@
      "author": "Hadonos",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Taken with Canon PowerShot G11 Category:Tatobity"
+     "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Taken with Canon PowerShot G11 Category:Tatobity",
+     "judged": "reject",
+     "verdict": "Village welcome board photographed as the subject, no tree"
     },
     {
      "title": "File:Obec Tatobity 02.JPG",
@@ -82204,7 +82233,9 @@
      "lat": 51.985581,
      "lng": 7.78179,
      "cats": "Category:2013 in Telgte Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 7° E) Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-NW Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Marienlinde Telgte Category:Photographs by User:YvoBentele Category:Self-published work Category:Uploaded via Campaign:wle-de",
-     "source": "wikidata/Q1282681"
+     "source": "wikidata/Q1282681",
+     "judged": "approve",
+     "verdict": "Whole Marienlinde in full leaf, hollow trunk sections and Marian column at its foot, blue sky, 0 m from pin"
     },
     {
      "title": "File:2013-08 Marienlinde TelgteNRW.jpg",
@@ -82224,7 +82255,9 @@
      "author": "Carsten Peters",
      "lat": 51.9833,
      "lng": 7.78333,
-     "cats": "Category:2014 in Telgte Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 7° E) Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-NW Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Marienlinde Telgte Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:2014 in Telgte Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 7° E) Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-NW Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Marienlinde Telgte Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "reject",
+     "verdict": "photo_light POOR, rejected without viewing"
     },
     {
      "title": "File:Carsten Marienlinde Telgte.jpg",
@@ -82353,7 +82386,9 @@
      "author": "Андрей Колычев",
      "lat": 28.366817,
      "lng": -16.722019,
-     "cats": "Category:CC-BY-3.0 Category:Drago de Icod de los Vinos Category:Files with coordinates missing SDC location of creation Category:Media needing category review as of 23 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-3.0 Category:Drago de Icod de los Vinos Category:Files with coordinates missing SDC location of creation Category:Media needing category review as of 23 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Drago readable but small in a wide hillside view with palms and houses taking most of the frame"
     },
     {
      "title": "File:Dragon's blood tree (ДРАКОНОВО ДЕРЕВО) - panoramio (1).jpg",
@@ -82363,7 +82398,9 @@
      "author": "Андрей Колычев",
      "lat": 28.366817,
      "lng": -16.722019,
-     "cats": "Category:CC-BY-3.0 Category:Details of Drago de Icod de los Vinos Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-3.0 Category:Details of Drago de Icod de los Vinos Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Trunk close-up, no crown"
     },
     {
      "title": "File:Dragon's blood tree (ДРАКОНОВО ДЕРЕВО) - panoramio (2).jpg",
@@ -82373,7 +82410,9 @@
      "author": "Андрей Колычев",
      "lat": 28.366817,
      "lng": -16.722019,
-     "cats": "Category:CC-BY-3.0 Category:Drago de Icod de los Vinos Category:Files with coordinates missing SDC location of creation Category:Media needing category review as of 23 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-3.0 Category:Drago de Icod de los Vinos Category:Files with coordinates missing SDC location of creation Category:Media needing category review as of 23 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "approve",
+     "verdict": "El Drago fills the frame in daylight, umbrella crown and massive trunk both fully readable"
     },
     {
      "title": "File:Dragon's blood tree (ДРАКОНОВО ДЕРЕВО) - panoramio (3).jpg",
@@ -82476,7 +82515,9 @@
      "lat": 28.166239,
      "lng": -16.637074,
      "cats": "Category:CC-BY-SA-4.0 Category:Files by Fry72 from the Canary Islands/2024 Category:Files with coordinates missing SDC location of creation Category:Pino de las dos Pernadas, Vilaflor de Chasna Category:Self-published work",
-     "source": "wikidata/Q125426611"
+     "source": "wikidata/Q125426611",
+     "judged": "reject",
+     "verdict": "photo_light POOR, rejected without viewing"
     },
     {
      "title": "File:Huge Pinus canariensis.jpg",
@@ -82496,7 +82537,9 @@
      "author": "Fry72",
      "lat": 28.166356,
      "lng": -16.637261,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by Fry72 from the Canary Islands/2024 Category:Files with coordinates missing SDC location of creation Category:Pino de las dos Pernadas, Vilaflor de Chasna Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by Fry72 from the Canary Islands/2024 Category:Files with coordinates missing SDC location of creation Category:Pino de las dos Pernadas, Vilaflor de Chasna Category:Self-published work",
+     "judged": "reject",
+     "verdict": "photo_light POOR, rejected without viewing"
     },
     {
      "title": "File:Pino de las dos Pernadas, Vilaflor de Chasna, Tenerife 02.jpg",
@@ -83211,7 +83254,9 @@
      "author": "OSeveno",
      "lat": 52.082508,
      "lng": 4.320014,
-     "cats": "Category:2018 in The Hague Category:CC-BY-SA-3.0 Category:Homomonument in The Hague Category:Netherlands photographs taken on 2018-03-14 Category:Self-published work Category:Tilia × europaea"
+     "cats": "Category:2018 in The Hague Category:CC-BY-SA-3.0 Category:Homomonument in The Hague Category:Netherlands photographs taken on 2018-03-14 Category:Self-published work Category:Tilia × europaea",
+     "judged": "approve",
+     "verdict": "Whole lime, crown and trunk readable, crocus lawn and Koningskade skyline; title's species and 138 years match the 1880 planting, 29 m from pin"
     },
     {
      "title": "File:Tilia × europaea tree (138 years old) next to the memorial at Koningskade, The Hague img. 02.jpg",
@@ -83221,7 +83266,9 @@
      "author": "OSeveno",
      "lat": 52.082506,
      "lng": 4.320128,
-     "cats": "Category:2018 in The Hague Category:CC-BY-SA-3.0 Category:Homomonument in The Hague Category:Netherlands photographs taken on 2018-03-14 Category:Self-published work Category:Tilia × europaea"
+     "cats": "Category:2018 in The Hague Category:CC-BY-SA-3.0 Category:Homomonument in The Hague Category:Netherlands photographs taken on 2018-03-14 Category:Self-published work Category:Tilia × europaea",
+     "judged": "reject",
+     "verdict": "Same tree closer in with the crown cut off at both edges; the sibling frame is the whole tree"
     },
     {
      "title": "File:Tilia × europaea tree (138 years old) next to the memorial at Koningskade, The Hague img. 03.jpg",
@@ -83322,7 +83369,9 @@
      "author": "B222",
      "lat": 51.566581,
      "lng": 5.077917,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Ginkgo biloba leaves Category:Self-published work Category:Wilhelminapark (Tilburg)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Ginkgo biloba leaves Category:Self-published work Category:Wilhelminapark (Tilburg)",
+     "judged": "reject",
+     "verdict": "Ginkgo leaf close-up on grass; wrong species, our tree is a poplar"
     }
    ]
   },
@@ -83350,7 +83399,9 @@
      "author": "Rosemoon",
      "lat": 51.548682,
      "lng": 5.068075,
-     "cats": "Category:CC-BY-SA-4.0 Category:Korvelse kerk Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:CC-BY-SA-4.0 Category:Korvelse kerk Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Brick house frontage, no readable tree"
     },
     {
      "title": "File:Korvelplein 184, Tilburg.jpg",
@@ -83400,7 +83451,9 @@
      "author": "Rosemoon",
      "lat": 51.548847,
      "lng": 5.068843,
-     "cats": "Category:CC-BY-SA-4.0 Category:Rijksmonumenten in Tilburg Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:CC-BY-SA-4.0 Category:Rijksmonumenten in Tilburg Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Street view of a pharmacy building, the oak is only a bare edge trunk"
     },
     {
      "title": "File:Korvelplein 8, Tilburg (2).jpg",
@@ -83410,7 +83463,9 @@
      "author": "Rosemoon",
      "lat": 51.548762,
      "lng": 5.068815,
-     "cats": "Category:CC-BY-SA-4.0 Category:Rijksmonumenten in Tilburg Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:CC-BY-SA-4.0 Category:Rijksmonumenten in Tilburg Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Same building frontage, the oak is not the subject"
     }
    ]
   },
@@ -83580,7 +83635,9 @@
      "author": "Rosemoon",
      "lat": 51.58113,
      "lng": 5.198328,
-     "cats": "Category:CC-BY-SA-4.0 Category:De Lind 42, Oisterwijk Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:CC-BY-SA-4.0 Category:De Lind 42, Oisterwijk Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "House facade photographed as the subject, no tree"
     },
     {
      "title": "File:Overzicht - Oisterwijk - 20171965 - RCE.jpg",
