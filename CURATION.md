@@ -67,6 +67,28 @@ fields in English and never touched the Italian overlay. Translated and
 filled the three missing pairs. `i18ncheck.py`, `preflight.py`, `astro
 build` and `qa.py` all clean afterward.
 
+## 2026-09-10 (continuation) - Alicante verify claim: register radius confirmed exhausted, one new news-sourced lead recorded, zero delivered
+
+Dispatched the standing `alicante` verify claim (picked up from an earlier
+attempt in this same window rather than left to expire). Re-confirmed
+independently that the register radius is exhausted exactly as the
+2026-09-09 entry above already recorded: all 43 "unmined" candidates in
+`passcheck.py --brief alicante`'s printed list resolve to already-published
+trees or already-recorded leads/blocked entries in `data/leads/alicante.json`.
+
+Found one genuinely new thread via local news search (a source class outside
+the register): an August 2026 emergency-pruning story (todoalicante.es,
+cope.es, elperiodic.com, alicantepress.com, all one underlying event) about a
+"ficus centenario" near the Castillo de Santa Barbara elevator tunnel,
+Avenida Juan Bautista Lafora, roughly 100-150m from the published ali_011
+(Paseito de Ramiro figs). No girth, height or exact address given, and two
+nearby OSM `denotation=natural_monument` nodes carry no species tag and are
+not in the Valencia register. Genuinely unresolved whether this is ali_011
+described loosely or a third, uncaptured fig, so recorded as a lead with
+both OSM node ids and what a future pass needs (a photo comparison or a
+street-level look) rather than guessed at. Claim released; zero trees
+added to Alicante this pass (still 16, target 20).
+
 ## 2026-09-09 (continuation 3) - Florence: backfilled 3 thin entries rather than duplicating them, caught before it shipped
 
 Claimed Florence (rank #13, register-backed room to grow toward its 30-tree

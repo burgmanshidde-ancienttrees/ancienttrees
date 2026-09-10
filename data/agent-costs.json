@@ -6458,6 +6458,15 @@
     "note": "3 stories + recognition lines (vlc_030-032), merged to city file, Spanish overlay written for all 3, count promises fixed in EN and ES; preflight and astro build clean, qa.py blocked by a concurrent build",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "Register radius confirmed exhausted (re-verified CURATION.md 2026-09-09 finding); one new non-register lead found and recorded (Aug-2026 news of a fig near the Santa Barbara castle elevator tunnel, unresolved whether it's ali_011 or a third specimen), zero deliverable trees",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
