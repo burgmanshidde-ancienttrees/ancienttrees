@@ -6994,6 +6994,24 @@
     "note": "session work, tokens not tracked; recognition-line pass, 6 how_to_recognise lines onto all live Frankfurt trees, closing that city's gap to zero (was 0 of 6); no new trees, restatement only",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "bratislava",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 6 how_to_recognise lines onto live Bratislava trees, closing that city's gap to zero; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "tilburg",
+    "kind": "write",
+    "tokens": 34000,
+    "trees": 4,
+    "note": "4 stories + recognition lines, Tilburg deepen to exactly target 20; 2 best_time set, 1 why_go; species name aligned to site canon for Fraxinus ornus (Flowering Ash); not yet merged into data/cities",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
