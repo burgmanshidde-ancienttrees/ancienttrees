@@ -2225,8 +2225,9 @@ def app_store_downloads_lines():
         return []
     try:
         sys.path.insert(0, os.path.dirname(__file__))
-        from asc_downloads import daily_download_totals
-        totals, note = daily_download_totals(days=14)
+        from asc_downloads import daily_downloads_by_type
+        split, note = daily_downloads_by_type(days=14)
+        totals = {d: sum(v.values()) for d, v in split.items()}
     except Exception as e:
         return ["", "**App Store downloads**", "- Unreadable (%s)" % str(e)[:100]]
     out = ["", "**App Store downloads** (Apple's own count, not PostHog)"]
@@ -2238,11 +2239,27 @@ def app_store_downloads_lines():
         return out
     days_sorted = sorted(totals)
     out.append("")
-    out.append("| Day | Downloads |")
-    out.append("|---|---:|")
+    out.append("| Day | First-time | Redownload | Total |")
+    out.append("|---|---:|---:|---:|")
+    tf = tr = 0
     for d in days_sorted:
-        out.append("| %s | %d |" % (d, totals[d]))
-    out.append("| **%d days** | **%d** |" % (len(days_sorted), sum(totals.values())))
+        f = split[d].get("first-time download", 0)
+        r = split[d].get("redownload", 0)
+        tf += f
+        tr += r
+        out.append("| %s | %d | %d | %d |" % (d, f, r, f + r))
+    out.append("| **%d days** | **%d** | **%d** | **%d** |"
+               % (len(days_sorted), tf, tr, tf + tr))
+    # Split on 2026-09-10, when Hidde read App Store Connect's Trends screen
+    # (22 units over seven days) against this table (42 over six) and
+    # reasonably concluded ours was wrong. Neither was. Trends counts UNITS,
+    # which is first-time downloads only; we also count a redownload, on
+    # purpose, because a returning person is a person. The two can never
+    # match, so the table now says which is which and the first-time column
+    # is the one that should equal his screen to the unit.
+    out.append("- First-time should match App Store Connect's Trends screen, "
+               "which counts units and excludes redownloads. A redownload is "
+               "still a person, which is why the total carries both.")
     return out
 
 
