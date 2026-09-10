@@ -57,7 +57,8 @@
       },
       "curation_status": "flagged",
       "notes": "Species confirmed as Ficus macrophylla by a Cadiz-based botanist per Jardines Sin Fronteras; monumentaltrees.com labels it 'Rubber Fig' (usually Ficus elastica), checked for cross-reference only per hard rule 1 and treated as a likely generic mislabel rather than followed. Planting year (1903) and the nun/Hospital de Mora legend corroborated by two independent sources. Photo viewed directly: an unmistakable huge fig with buttressed, thickened roots on a seafront marble terrace, balustrade and bay visible behind, matching the setting exactly. Coordinates tightened 2026-07-30, moved about 220m along the promenade from the old place-level Alameda Apodaca geocode: an OpenStreetMap node individually tagged 'Ficus macrophylla' (natural=tree, species and common names in three languages) sits at 36.537325, -6.298715, still within the Alameda. The story's own 'Ficus Gemelos' pair means this node marks one of the two twin trees rather than a single unambiguous trunk, so this stays a real improvement over a generic promenade-level pin without claiming survey-grade precision for the specific twin.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its aerial roots thickening into extra trunks over the marble terrace, larger than its twin fig nearby. It stands on the Alameda Apodaca seafront."
     },
     {
       "id": "cad_002",
@@ -90,7 +91,8 @@
       },
       "curation_status": "flagged",
       "notes": "Existence and species confirmed independently by the Ayuntamiento de Cadiz's own parks pages and two independent Cadiz-focused sources; the 2013 collapse of the Drago del Tinte at the former Escuela de Artes y Oficios is separately confirmed (Andalucia Informacion, plus a Wikimedia Commons photo documenting it before the fall) and this tree is not confused with that one. Age is a genuine, unresolved source disagreement (100 vs 200 years), presented as a range rather than a picked figure. Location is park-level only ('near the north entrance'), no registry or survey point names this specific tree, so kept honestly approximate. Photo found via iNaturalist observation 165917823 (CC BY 4.0) and viewed directly: a large multi-trunk dragon tree beside a children's playground with a domed gazebo behind it, both identifiable Parque Genoves features, confirming this is the park's dragon tree despite one automated field on the same observation carrying a mismatched label ('Drago del Obispado', a different, older dragon tree at the Bishop's Palace elsewhere in the old town); the photo's own visual content, not that label, is what was trusted. Checked 2026-07-28 while tightening cad_003 and cad_005's pins from their own iNaturalist observations: this observation's own recorded GPS (queried directly via the API) is roughly 36.5348, -6.3051, place_guess 'Hotel Atlantico, 11003 Cadiz', nowhere near Parque Genoves. That confirms rather than contradicts the earlier call to trust the photo's visual content over its metadata: the coordinate almost certainly belongs to the Bishop's Palace dragon tree the mismatched label already named, not this one. Deliberately NOT used to move this pin, which stays at its original park-level estimate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its squat grey trunk branching into an umbrella-shaped crown. It stands near the north entrance of Parque Genoves."
     },
     {
       "id": "cad_003",
@@ -129,7 +131,8 @@
           6
         ],
         "label": "May and June, when it blooms crimson"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its multiple trunks rising from the base, more shrub than tree until you see the size of the limbs, with a support structure fitted after storm damage. It stands in Parque Genoves."
     },
     {
       "id": "cad_004",
@@ -192,7 +195,8 @@
       },
       "curation_status": "flagged",
       "notes": "Species and specific in-park location ('behind the cafe bar near the fountain statue') confirmed by two independent sources. No planting date documented anywhere found, so age is presented as a wide, honest estimate rather than invented; bloom month not confirmed precisely enough for Cadiz specifically to set a best_time field, so left unset rather than guessed. Photo found via iNaturalist observation 165918188 (CC BY 4.0) and viewed directly: a tree with the swollen, bottle-shaped, lightly thorned trunk characteristic of Ceiba speciosa, standing in a raised wooden planter among palms and park benches. Its place_guess reads only 'Cadiz', not 'Parque Genoves' specifically, but the coordinates sit close to the confirmed in-park dragon tree and pohutukawa observations, same photographer, same day (2023-06-06), and the species' distinctive trunk makes a different specimen elsewhere in the city unlikely; approved on that basis, weaker than the other two but not a guess. Coordinates tightened 2026-07-28 to this exact observation's own recorded GPS position (queried directly via the iNaturalist API); kept approximate since the underlying place_guess is only city-level, not park-specific.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its swollen, bottle-shaped trunk studded with conical thorns. It stands behind the cafe in Parque Genoves, near the fountain statue."
     }
   ]
 }
