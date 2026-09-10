@@ -11,6 +11,45 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 - SEO learning loop, and continuous copy testing
+
+Hidde asked whether the runs have an SEO learning mechanism. They did not:
+everything we had asked "does this page have demand", and nothing asked what
+the pages that convert have that the others lack. Built and wired into the
+daily digest, so it lands in DATA.md without anybody running anything:
+
+- `scripts/seolearn.py` compares our own pages on CTR against the CTR their
+  position normally earns. Six declared variables; only photograph share shows
+  a clean signal so far (index 0.43 under 20% coverage, 0.91 at 40% and over,
+  and the mechanism is visible in the HTML, since a photo-less city falls back
+  to og-default.png). Tree count is flat to negative: the 26th tree buys no
+  clicks, the 5th photograph does.
+- It found that six pages carried 16% of all measured impressions for queries
+  written with Google's exact-phrase operator, and 4 clicks between them.
+  Milan's 350 and Brussels' 434 were almost entirely this, and the queue was
+  ranking both as demand. `promote()` now subtracts it.
+- `scripts/copytest.py` runs one test at a time, closes itself on the review
+  date, promotes a winner by writing a default (no code change) and starts the
+  next queued test. Test 1 is live on city titles, 28 pages per arm, review
+  2026-11-05. Test 2 is queued with its template already written.
+- Blueprint at v1.17: copy tests no longer need his approval per test
+  ("Approval do this without me!"). The bound is written into the changelog:
+  new page types, contracts, schema and Layer 1 still need him.
+
+**One real bug, found from his own Search Console screenshot.** Prague fronted
+the Beethoven Plane in search and the Plane of Karlovo namesti in the app;
+Seville wore two trees the same way. The city page picked its og:image with
+the first tree that had a photograph while the app and the cards used
+cityFaceTree()'s ranking. Fixed, verified live, and `check_one_face_per_city()`
+now guards the pairing nothing was watching.
+
+**What broke, and it was mine.** Two red deploys, roughly 40 minutes without a
+deploy, both from checks I wrote asserting things about filenames without
+looking first: Astro writes `london.html` and not `london/index.html`, and
+iNaturalist names every photograph `medium.jpg` with the identity one segment
+up. Nothing was lost, the live site stayed up throughout. Both fixed and the
+final deploy is green.
+
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 
 The deploy had been red since 00:04 UTC: `i18ncheck.py` was refusing the
