@@ -5,8 +5,8 @@
   "intro": "Stuttgart's designated trees are scattered across the whole city rather than clustered in one district, from a churchyard lime in Rohracker to a 6.72-metre ash at Schloss Solitude and three swamp cypresses beside a former gravel-pit lake. The oldest by measurement is the Solitude ash, put at roughly 250 years by a dendrological register. All are protected natural monuments, free and open at any time, each its own short outing rather than one connected walk.",
   "meta_description": "Stuttgart's ancient trees: a 6.72m ash at Schloss Solitude, swamp cypresses by a lake, a duel-legend oak, a churchyard lime and more. All free.",
   "question_meta": "Stuttgart's oldest measured tree is the Ash at Schloss Solitude, put at roughly 250 years by a dendrological register. Where it stands.",
-  "question_answer": "The oldest tree in Stuttgart with a measured estimate is the Ash at Schloss Solitude, a European ash with a trunk 6.72 metres round, put at roughly 250 years by the German tree register baumkunde.de. Several other designated trees on this page, including the Hutteneiche and the Max-Eyth-See Oak, carry no recorded age at all and could in principle be older.",
-  "question_context": "The Solitude ash's age comes from baumkunde.de, a dendrological register that measured the trunk at 6.72 metres round in May 2026 and estimated 250 years from that girth, a figure this page carries as a band, 200 to 300 years, rather than a false-precise number. It stands on the open lawn in front of Schloss Solitude, a baroque hunting lodge whose grounds are free at any hour, part of a designated group with two unmeasured sycamore maples. Nothing else on this page has a comparable reading. The Hutteneiche carries a story to 1515, when Duke Ulrich of Württemberg is said to have hanged his stable master from an oak on this spot, but no source claims the standing tree is that same individual, so no age follows from the legend. The Max-Eyth-See Oak, the Oberdorfplatz Mulberry and the Kurpark's three bald cypresses are all documented only by their 2003 designation date, which records when the city started protecting them, not when they were planted. Where a tree's own age is unknown, this page says so rather than guessing, and asks anyone who can help to tell us.",
+  "question_answer": "The oldest tree in Stuttgart with a measured estimate is the Ash at Schloss Solitude, a European ash with a trunk 6.72 metres round, put at roughly 250 years by the German tree register baumkunde.de. Several other designated trees on this page, including the Hutteneiche, carry no recorded age at all and could in principle be older.",
+  "question_context": "The Solitude ash's age comes from baumkunde.de, a dendrological register that measured the trunk at 6.72 metres round in May 2026 and estimated 250 years from that girth, a figure this page carries as a band, 200 to 300 years, rather than a false-precise number. It stands on the open lawn in front of Schloss Solitude, a baroque hunting lodge whose grounds are free at any hour, part of a designated group with two unmeasured sycamore maples. Nothing else on this page has a comparable reading. The Hutteneiche carries a story to 1515, when Duke Ulrich of Wurttemberg is said to have hanged his stable master from an oak on this spot, but no source claims the standing tree is that same individual, so no age follows from the legend. The Oberdorfplatz Mulberry and the Kurpark's three bald cypresses are documented only by their 2003 designation date, which records when the city started protecting them, not when they were planted. Where a tree's own age is unknown, this page says so rather than guessing, and asks anyone who can help to tell us.",
   "hero_tree_id": "stu_006",
   "oldest_tree_id": "stu_006",
   "faq": [
@@ -96,44 +96,6 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise it by the signboard the city put up in the forest in January 2013, which names it. Nobody has dated or measured the tree, and it carries no designation of its own."
-    },
-    {
-      "id": "stu_003",
-      "name": "The Max-Eyth-See Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Max-Eyth-See lakeside park, Mühlhausen/Hofen, Stuttgart",
-        "latitude": 48.83698,
-        "longitude": 9.21885,
-        "neighbourhood": "Mühlhausen/Hofen"
-      },
-      "story": "Stuttgart's protection ordinance obliges the city to have this oak examined once a year for its health and safety. That is a level of attention most trees never get, and it comes with the natural monument status the pedunculate oak was given in June 2003, for its character and for its value as habitat.\n\nIt stands on the shore of the Max-Eyth-See, which is not a natural lake at all. The water sits in a gravel quarry that was worked out and then flooded in 1935, put under landscape protection in 1961, and has been Stuttgart's biggest outdoor escape ever since. On a warm weekend up to 15,000 people come out here, and the paths run the whole way round the water.\n\nSo this oak has spent its recent decades as a piece of public furniture, which is a harder life than a forest. It has watched a working pit turn into a lake, then into a protected landscape, then into a place where a good part of the city spends its Sundays.\n\nWhat no source will tell us is how old it is. Nobody has recorded an age or a girth, so we do not know whether it stood here before the quarry filled with water or arrived with the park. A photograph taken in May 2022 puts it firmly alive and standing. If you know its age, tell us.",
-      "verified_sources": [
-        "https://www.stuttgart.de/medien/ibs/3-8.pdf",
-        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_am_Max-Eyth-See_Stuttgart.jpg"
-      ],
-      "access": "In the public lakeside park around the Max-Eyth-See, a free and heavily used recreation area with paths all around the lake; open at all times, no ticket.",
-      "transport": "Stadtbahn U14 to the Max-Eyth-See stop, a few minutes' walk",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      }
     },
     {
       "id": "stu_004",
