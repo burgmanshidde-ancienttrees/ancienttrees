@@ -169,7 +169,26 @@ def names_match(tree, cand):
                             "ginkgo", "mulberry", "palm", "eucalyptus", "ficus",
                             "quercus", "platanus", "fagus", "tilia", "pinus",
                             "eik", "buche", "chene", "tiglio", "quercia",
-                            "medis", "drzewo", "strom", "traeet"}
+                            "medis", "drzewo", "strom", "traeet",
+                            # Added 2026-09-10 WITH the measurement this comment
+                            # demands, after two approvals scored zero here on
+                            # filenames that are the tree's own name: Dresden's
+                            # "Splittereiche Sommer (1).jpg" and Lodz's "Dab
+                            # Fabrykant 2022.jpg". Across the 1,993 unjudged
+                            # candidates then scoring zero, these six admit 163
+                            # and 130 of those also carry a word from the tree's
+                            # own name, which is the case worth rescuing:
+                            # eiche 13 of which 12, linde 130 of which 99,
+                            # tilleul 15 of which 15, dab 2 of 2, azuolas 1 of 1,
+                            # chene-with-accent 2 of which 1. Measured and
+                            # REJECTED in the same pass: platane (3, none naming
+                            # the tree), lipa (1, none), and bare "platan" (38,
+                            # only 7). The accented spellings are deliberate:
+                            # this is the substring test the note above warns
+                            # about, and it is ASCII "dab" that rescues
+                            # roundabouts, not "d\u0105b".
+                            "eiche", "linde", "tilleul", "d\u0105b",
+                            "\u0105\u017euolas", "ch\u00eane"}
     # In the TITLE, not the categories. Commons files land in categories like
     # "Trees in Perugia" almost regardless of subject, so testing cats let a
     # Raphael painting score 4 and an equestrian bronze score 58. The title is
