@@ -629,6 +629,60 @@ apt-get/pip both need approval this run does not have. Left on disk;
 harmless if a future session with rendering tools wants it, otherwise safe
 to ignore.
 
+## 2026-09-10 - Photo round three: the protected veteran is the seam
+
+**The count.** 625 trees carried a photograph when this round started and 676
+do now; cities with none at all went from 308 to 276. Across the three rounds
+of these two days: 483 to 676 trees, and 383 photo-less cities down to 276.
+
+**What this round settles about where photographs come from.** The first hour
+looked like the well had run dry: two passes over eighteen European cities
+produced three photographs between them. It had not. The yield had simply moved
+somewhere specific, and one pass put it exactly: **the single-veteran monument
+places gave 13 of its 16 approvals, the big-city parks gave 3 of 12, and Rome
+and Paris gave none at all.**
+
+The reason is mechanical rather than lucky. A protected tree with a name is
+photographed WHOLE, in daylight, by somebody who came for it, and it usually
+carries its own evidence into the frame: a Naturdenkmal sign, a pomnik plaque, a
+POMNIK PRZYRODY post, a shimenawa, a natural-monument stele, a register number
+in the filename. A city park tree is photographed as scenery, and proximity
+cannot say which trunk. Lithuania, Latvia, Poland, Bohemia, Slovakia, rural
+France and Germany, and Japanese shrine precincts were the ground; Big Lonely
+Doug, the Witches' Spruce of Rambynas, the Betteleiche of the Hainich, the
+Tanzlinde of Sachsenbrunn, the Alamo's live oak, Uncle John's Tree.
+
+**What is now measured as empty, so nobody spends another window on it.**
+Frankfurt's Palmengarten returned glasshouse interiors on three separate
+passes. Helsinki's and Hamburg's botanic gardens do the same. Craigends' yew
+grove holds only understorey shots. And two famous trees have no usable
+photograph on Commons at all: the **Ankerwycke Yew** (two bole-only frames and
+a distant winter view) and the **Castagno dei Cento Cavalli**, whose
+best-known image there is an eighteenth-century Houel painting.
+
+**Two sweep faults worth fixing when somebody is in that code.** The
+Splittereiche in Dresden scored ZERO on a filename that is the tree's exact
+name, because the name matcher cannot see German compound names where the
+tree's name and its species word are one word. And rank_score scores PLACE
+rather than taxon, which is how a Fukuoka ehretia drew three files whose own
+titles say camphor at the highest scores in their batch.
+
+**FOR HIDDE, on how this work is going.** Photo-judge passes now routinely send
+an interim report that does not match the file they eventually write: this
+round one named an approval for a city that appears in no manifest, one gave a
+licence and photographer matching no file on disk, one quoted a checker's output
+for a file that did not exist. **Nothing wrong has reached the site**, because
+`scripts/verdict_check.py` refuses any verdict whose (tree_id, url) pair is not
+in the manifest the pass was handed, and because every approval this round was
+cross-checked against our own species field before it shipped: Buk is beech,
+azuolas is oak, liepa is lime, Bergahorn is sycamore, castagno is chestnut.
+Passes are also told to write their file before they start looking and to keep
+it current, so progress is visible on disk rather than claimed in a summary.
+
+The honest reading is that the summaries are unreliable and the files are
+sound, and the checking costs a command. It is worth knowing before anyone
+trusts one of those reports at face value.
+
 ## 2026-09-10 - Photo round two: the geotag seam, 65 more photographs
 
 Yesterday's round worked the candidates whose FILENAME names the tree. This one

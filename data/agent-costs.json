@@ -6780,6 +6780,76 @@
     "note": "session work, tokens not tracked; recognition-line pass, 8 how_to_recognise lines onto live Trento trees, closing that city's gap to zero; no new trees, restatement only",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "photo-pass4 r3A (9 places)",
+    "kind": "photo-judge",
+    "tokens": 120000,
+    "trees": 0,
+    "photos_approved": 2,
+    "note": "28 candidates, 22 viewed; the sweep re-offered two candidates earlier passes had rejected",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass4 r3B (9 places)",
+    "kind": "photo-judge",
+    "tokens": 190000,
+    "trees": 0,
+    "photos_approved": 3,
+    "note": "37 candidates, 29 viewed; Frankfurt's Palmengarten lane empty on a third pass; the Splittereiche scored ZERO on a filename that is the tree's exact name",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass4 r3C (16 places)",
+    "kind": "photo-judge",
+    "tokens": 91000,
+    "trees": 0,
+    "photos_approved": 7,
+    "note": "60 candidates, 55 viewed; Helsinki's and Hamburg's botanic-garden lanes are exhausted the way Frankfurt's is",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass4 r3D (13 places)",
+    "kind": "photo-judge",
+    "tokens": 105000,
+    "trees": 0,
+    "photos_approved": 4,
+    "note": "56 candidates viewed; largest loss class was species collisions, including five Nuremberg candidates that are a lime against two plane entries",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass4 r3E (23 places)",
+    "kind": "photo-judge",
+    "tokens": 96000,
+    "trees": 0,
+    "photos_approved": 16,
+    "note": "71 rows; single-veteran monument places yielded 13 of 16, big-city parks 3 of 12, Rome and Paris none",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass4 r3F (16 places)",
+    "kind": "photo-judge",
+    "tokens": 105000,
+    "trees": 0,
+    "photos_approved": 14,
+    "note": "57 candidates; Ankerwycke Yew and the Castagno dei Cento Cavalli both have no usable photograph in the queue",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass4 r3G (19 places)",
+    "kind": "photo-judge",
+    "tokens": 90000,
+    "trees": 0,
+    "photos_approved": 4,
+    "note": "in progress at session end",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
