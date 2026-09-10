@@ -1,0 +1,71 @@
+{
+  "city": "Macugnaga",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Macugnaga's mapped tree is an old lime beside the Chiesa Vecchia in the Staffa hamlet, where the German-speaking Walser settlers of this Alpine valley once held their own assemblies and administered justice in its shade. Sources disagree by two centuries on its age, five hundred years against more than seven hundred, and by 2019 it stood hollow and braced. It still flowers every July. Free to see, a short walk from the old church.",
+  "meta_description": "The Old Lime of Macugnaga: a five to seven hundred year old Walser meeting tree beside the Chiesa Vecchia, hollow, braced and still flowering.",
+  "question_answer": "Macugnaga's mapped tree is a centuries-old lime standing near the Chiesa Vecchia in the Staffa hamlet, historically used by the valley's German-speaking Walser settlers for community assemblies and justice. Sources disagree on its age, one saying more than 700 years and another roughly 500, and by 2019 it was hollow and braced but still flowering.",
+  "question_meta": "Macugnaga's Old Lime, a Walser meeting tree by the Chiesa Vecchia. Its age, its condition, and where to find it.",
+  "question_context": "Two independent sources describe a centuries-old lime standing a short distance from the Chiesa Vecchia, near the cemetery, in the Staffa hamlet of Macugnaga: historically used by the valley's German-speaking Walser settlers, medieval Alpine migrants, for community assemblies and the administration of justice, the tree's shade doing the work of a town hall. The sources disagree on age by two centuries: one gives more than 700 years with a trunk 7 metres round, the other roughly 500 years with no measurement recorded; neither is a ring count, and both figures are carried here rather than resolved into one. By 2019 the tree was hollow and visibly frail, some upper branches broken and the crown propped and braced, and it still flowered that July, as it does most years. No coordinates were published for the trunk itself, so the pin here marks the neighbouring church's own address and is approximate rather than confirmed.",
+  "faq": [
+    {
+      "q": "How old is the Old Lime of Macugnaga?",
+      "a": "Sources disagree: one says more than 700 years with a 7-metre girth, another says roughly 500 years. Neither figure comes from a ring count, so both are carried rather than resolved."
+    },
+    {
+      "q": "Why did people gather under this tree?",
+      "a": "The Walser, German-speaking Alpine settlers who reached this valley in the Middle Ages, held community assemblies and administered justice in its shade, much as a town hall would elsewhere."
+    },
+    {
+      "q": "Is the Old Lime of Macugnaga still alive?",
+      "a": "Yes, though hollow and frail. By 2019 it needed propping and bracing, and it still flowers every July."
+    },
+    {
+      "q": "Can you visit the Old Lime of Macugnaga?",
+      "a": "Yes, free and open. It stands a short distance from the Chiesa Vecchia, near the cemetery, in the Staffa hamlet of Macugnaga."
+    }
+  ],
+  "hero_tree_id": "mac_001",
+  "oldest_tree_id": "mac_001",
+  "trees": [
+    {
+      "id": "mac_001",
+      "name": "The Old Lime of Macugnaga (Tiglio secolare)",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 500-700+ years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 700,
+      "location": {
+        "address": "Near the Chiesa Vecchia and cemetery, Dorf/Staffa, Macugnaga (VB)",
+        "latitude": 45.9709,
+        "longitude": 7.964,
+        "neighbourhood": "Dorf, Macugnaga"
+      },
+      "story": "For centuries the Walser community of Macugnaga gathered under this lime to run its own affairs. The German-speaking Alpine settlers who reached this valley in the Middle Ages held their assemblies and administered justice in its shade, beside the Chiesa Vecchia, the old parish church at Staffa, the way a town hall would do elsewhere.\n\nSources disagree by two centuries on how old it actually is. One count puts it at more than seven hundred years with a trunk seven metres round; another describes five centuries and gives no measurement at all. Neither is a ring count, so both are stated here rather than averaged into a tidier number.\n\nBy 2019 it stood hollow and visibly frail, some upper branches broken and the crown propped and braced, and it still flowered that July, as it does most years. A tree that has stood on Walser ground for somewhere between five and seven centuries, worked hard enough by age to need bracing, and still puts out flowers every summer is doing what a lime this old is supposed to do.\n\nIt stands a short distance from the church, near the cemetery, rather than against its wall, so treat the pin as marking the site rather than the exact trunk.",
+      "why_go": "A five to seven hundred year old lime that served as Macugnaga's traditional Walser meeting and justice site for centuries, still flowering every July despite a hollow, braced trunk.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the old lime flowers as it has for centuries"
+      },
+      "how_to_recognise": "You can recognise it by its size and frailty: a huge, hollow lime with a braced and propped crown. It stands a short distance from the Chiesa Vecchia, near the cemetery, in the Staffa hamlet of Macugnaga.",
+      "verified_sources": [
+        "https://www.illagomaggiore.it/poi/chiesa-vecchia-di-macugnaga-e-il-vecchio-tiglio/",
+        "https://www.ascuoladaglialberi.net/il-tiglio-monumentale-di-macugnaga-vco/"
+      ],
+      "access": "Free; stands beside the historic Chiesa Vecchia and its cemetery in the Walser hamlet of Dorf/Staffa, an open heritage site.",
+      "transport": "In the hamlet of Dorf, near Staffa, Macugnaga (upper Anzasca valley); walkable within the village, no further detail confirmed.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

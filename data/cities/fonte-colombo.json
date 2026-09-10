@@ -1,0 +1,62 @@
+{
+  "city": "Fonte Colombo",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Fonte Colombo's mapped tree is a downy oak in the wooded grounds of the Franciscan sanctuary outside Rieti, nominated for Italy's Tree of the Year in 2014 under the name L'Albero della Perfetta Letizia, the Tree of Perfect Gaiety. Francis of Assisi is said to have told Brother Leo his famous parable of true joy somewhere near this ground. No age or girth has ever been published for it. Free to see, within the sanctuary's own grounds.",
+  "meta_description": "The Tree of Perfect Gaiety at Fonte Colombo: a downy oak named for Francis of Assisi's own parable, nominated for Italy's Tree of the Year.",
+  "question_answer": "Fonte Colombo's mapped tree is a downy oak known as L'Albero della Perfetta Letizia, the Tree of Perfect Gaiety, standing in the wooded grounds of the Franciscan sanctuary outside Rieti. It was nominated for Italy's Tree of the Year in 2014 under that name, taken from Francis of Assisi's own parable of true joy. No age or girth has been published for it.",
+  "question_meta": "Fonte Colombo's Tree of Perfect Gaiety, named for a Franciscan parable. Its legend, its nomination, and where it stands.",
+  "question_context": "A Commons photograph credited to Legambiente Centro Italia, used with permission from treeoftheyear.org, names this downy oak, Quercus pubescens, and gives its coordinates within the Sanctuary of Fonte Colombo, matching independently. It records the tree's nomination for Italy's 2014 Albero dell'Anno competition under the name L'Albero della Perfetta Letizia, the Tree of Perfect Gaiety, taken from the parable Francis of Assisi is said to have told Brother Leo somewhere near this sanctuary: that true joy is bearing hardship for Christ's sake rather than working miracles. It should not be confused with a different, already-dead holm oak on the same grounds, which Italian Wikipedia describes as a fenced stump marking where tradition says Christ appeared to confirm Francis's Rule; that tree fell in the winter of 1622 and its wood was carved into a church sculpture. No age or girth has been published anywhere for the living downy oak. The Sanctuary of Fonte Colombo sits in wooded hills outside Rieti, one of the Franciscan Valley sites, open to visitors with no gate restricting the grounds.",
+  "faq": [
+    {
+      "q": "How old is the Tree of Perfect Gaiety?",
+      "a": "No age or girth has ever been published for it. If you have measured it, tell us."
+    },
+    {
+      "q": "Why is it called the Tree of Perfect Gaiety?",
+      "a": "It carries the name of one of the best known parables in the Fioretti, the Little Flowers of St Francis, which Francis of Assisi is said to have told Brother Leo somewhere near this sanctuary."
+    },
+    {
+      "q": "Is this the same tree as the sanctuary's apparition tree?",
+      "a": "No. A separate holm oak once marked the spot where tradition says Christ appeared to confirm Francis's Rule; that tree fell in a snowstorm in 1622 and its wood was carved into a church sculpture. The Tree of Perfect Gaiety is a different, living tree."
+    },
+    {
+      "q": "Can you visit the Tree of Perfect Gaiety?",
+      "a": "Yes, free and open, within the wooded grounds of the Sanctuary of Fonte Colombo outside Rieti."
+    }
+  ],
+  "hero_tree_id": "fcl_001",
+  "oldest_tree_id": "fcl_001",
+  "trees": [
+    {
+      "id": "fcl_001",
+      "name": "The Downy Oak of Fonte Colombo (Tree of Perfect Gaiety)",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Grounds of the Santuario di Fonte Colombo, Vazia, Rieti",
+        "latitude": 42.37836,
+        "longitude": 12.82803,
+        "neighbourhood": "Fonte Colombo, Rieti"
+      },
+      "story": "Francis of Assisi is said to have told Brother Leo the story of perfect joy somewhere near this sanctuary: that true gaiety is not miracles or fame but bearing insult and hardship for Christ's sake, patiently, without bitterness. It is one of the best known parables in the Fioretti, the Little Flowers of St Francis, and in 2014 this downy oak was put forward for Italy's Tree of the Year under the parable's own name, L'Albero della Perfetta Letizia, the Tree of Perfect Gaiety.\n\nIt is easy to confuse with an older story on the same grounds. A holm oak once stood nearby marking the spot where the sanctuary's own tradition says Christ appeared to confirm Francis's Rule; that tree came down in a heavy snowfall in the winter of 1622, and its wood was carved into a sculpture that still stands inside the church. The downy oak carrying the Perfect Gaiety name is a separate, living tree, photographed in 2012 for the nomination two years later.\n\nNobody has published an age or a girth for it, an odd gap for a tree carrying this much legend; if you have measured it, tell us.\n\nThe Sanctuary of Fonte Colombo sits in wooded hills outside Rieti, one of the Franciscan Valley sites where Francis is thought to have written much of his Rule, reachable on the sanctuary's own grounds with no gate keeping the tree itself from view.",
+      "why_go": "A Franciscan parable, one of the best known in the Fioretti, is named after this exact tree, which was nominated for Italy's Tree of the Year in 2014 under that name; it stands in the wooded Franciscan Valley sanctuary where Francis of Assisi is thought to have written much of his Rule.",
+      "how_to_recognise": "You can recognise it as a living downy oak, not the fenced stump elsewhere on the grounds marking where tradition says Christ appeared (that older tree fell in 1622). It stands within the Sanctuary of Fonte Colombo, outside Rieti.",
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg"
+      ],
+      "access": "Free to visit; stands on the grounds of the Santuario di Fonte Colombo, an active Franciscan sanctuary and pilgrimage site (a stop on the Cammino di Francesco) that is open to visitors and pilgrims. Exact rules on approaching this specific tree within the grounds not independently confirmed.",
+      "transport": "In the Valle Santa reatina, a few km from Rieti (not from Fara in Sabina, see note); no public transport confirmed, likely reached by car/pilgrim trail from Rieti.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

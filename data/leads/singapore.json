@@ -1,6 +1,9 @@
 {
   "leads": [
     {
+      "note": "2026-09-10 deepen pass (verify): shipped 6 trees to data/research/singapore-verified.json, sgp_029-sgp_034 (Penaga Laut/HT 2001-20 near Botany Centre, Kapur/HT 2012-192 on Lawn E, Mountain Teak/HT 2012-201 on Lawn B, Senegal Mahogany/HT 2013-212 near Swan Lake, Marsh Pulai/HT 2010-183 and Jamuju/HT 2012-191 both on Lawn H), all extending the existing Botanic Gardens cluster (all within roughly 700m of the core, most within a few hundred metres of already-published trees). Selection method: the brief's proximity flags ('within 80m of a live tree') were checked by exact coordinate distance against the live city file rather than taken at face value; six flagged rows turned out to be the SAME tree already published under a different register row (0-6m apart, identical species: Tectona grandis, Anthoshorea roxburghii, Stereospermum fimbriatum, Adenanthera pavonina, Cyrtophyllum fragrans, Rubroshorea pauciflora) and were skipped as duplicates, while six were a genuinely different species standing near a published tree and were treated as new candidates. Two of those six turned into the two BLOCKED entries below (Kapok/Holttum Hall, likely dead since 2019; Kempas/Fernery, absent from the current official tree list) rather than shipping. Key technique this pass: sbg.nparks.gov.sg's 'Heritage Trees and Landscapes' page is a comprehensive CURRENT list of every heritage tree by Gardens entrance, and cross-checking a register candidate against it catches a stale register entry that the heritagetrees.nparks.gov.sg profile page alone cannot, because no register anywhere carries a vitality field. All six shipped trees were confirmed present on that current list before shipping. Time-boxed at roughly 40 minutes; the leftover Lawn B/O/H rows below (Monkey Pot pair, second Kapur at Lawn O, Senegal Mahogany already done, Putat Laut) remain open for a future pass."
+    },
+    {
       "note": "2026-08-31 deepen pass (verify): shipped 6 trees to data/research/singapore-verified.json, sgp_023-sgp_028 (Temak and Snake Tree from Lawn B/Main Gate Road, West Indian Locust Tree and Chengal Pasir from the Corner House/Cluny Park Way lawn, Kempas from behind Corner House, Johor Fig from the rainforest boardwalk), all extending the existing Botanic Gardens cluster (all within roughly 600m of the core). Two more candidates from the same shortlist, the Ordeal Tree (HT 2019-301) and Hazel Sterculia (HT 2019-307), were checked and BLOCKED: both stand in the National Orchid Garden Nursery, which NParks' own citation states is not accessible to the public. Stopped at 6 per this pass's time-box (~30 min), not because candidates ran out; remaining unmined Lawn B/H/E rows from the earlier leads note (Marsh Pulai HT 2010-183, Jamuju HT 2012-191, Mountain Teak HT 2012-201, Monkey Pot pair HT 2013-214/215) are still open for a future pass."
     },
     {
@@ -75,6 +78,20 @@
     }
   ],
   "blocked": [
+    {
+      "ht_id": "HT 2008-171",
+      "name": "Kapok (Ceiba pentandra)",
+      "location": "Singapore Botanic Gardens, beside Holttum Hall",
+      "coords": [1.308499, 103.817444],
+      "reason": "LIKELY DEAD, do not ship without on-ground confirmation. The heritagetrees.nparks.gov.sg profile is still live and describes a Kapok planted 1933 beside Holttum Hall, a gift of seed from Bogor Botanic Gardens planted by former director Eric Holttum -- but a 2019-11-05 Mothership.sg article ('Majestic 85-year-old Kapok tree in S'pore Botanic Garden removed after storm') describes, in matching detail (planted 1934, seed gift from Bogor, planted by the former director, near Holttum Hall), a Kapok that split in a storm on 2019-01-23 (after a branch failure had already weakened it in 2014) and was removed at the start of 2019, quoting SBG's own group director Nigel Taylor. The area was replanted with 30+ trees of 15 other species. Corroborating this: the current official sbg.nparks.gov.sg 'Heritage Trees and Landscapes' page (fetched this pass, comprehensive across all four Gardens entrances) lists only ONE Kapok Tree today, located 'near the entrance of the Heritage Museum' -- a different spot from Holttum Hall entirely. The heritagetrees.nparks.gov.sg profile carrying 'Heritage Tree in 2024' and 'Heritage Tree in 2011' photo captions appears to be a stale/unmaintained entry rather than evidence of a living tree. Needs a fresh photo or an on-ground check before ever shipping; until then this is the same species already covered by sgp_006 (Kapok Tree of Seah Im Road, a different specimen at Mount Faber)."
+    },
+    {
+      "ht_id": "HT 2016-280",
+      "name": "Kempas (Koompassia malaccensis)",
+      "location": "Singapore Botanic Gardens, near the Fernery / Lawn O",
+      "coords": [1.310508, 103.817405],
+      "reason": "SET ASIDE, uncertain rather than confirmed dead. Register profile (heritagetrees.nparks.gov.sg/ht-2016-280) still describes it as a current Heritage Tree (girth 3m @ 1.3m, height 36.6m, endangered emergent species, buttresses to 6m), same as a prior pass found (see the 'Kempas, considered and set aside this pass' note below). This pass checked it against the current sbg.nparks.gov.sg 'Heritage Trees and Landscapes' page, which appears comprehensive (it correctly lists both blocked nursery trees, the Ordeal Tree and Hazel Sterculia, as 'no public access', matching our own blocked entries exactly) -- and Koompassia does not appear anywhere on that page, across any of the four Gardens entrance sections. That absence is suggestive but not proof (the page could simply be incomplete for this one species); it is not the same strength of evidence as the Kapok's matching newspaper story above. A future pass should look for a dated recent photo (iNaturalist, a nature blog, Commons) before shipping or before moving this to the dead-tree-confirmed list."
+    },
     {
       "ht_id": "HT 2019-301",
       "name": "Ordeal Tree (Erythrophleum suaveolens)",

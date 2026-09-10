@@ -52,10 +52,12 @@
         "https://commons.wikimedia.org/wiki/File:Macugnaga,_Chiesa_Vecchia_e_Tiglio_secolare.jpg",
         "https://commons.wikimedia.org/wiki/File:Macugnaga_-_Vecchio_Tiglio_-_202209031655.jpg"
       ],
-      "status": "held",
+      "status": "published",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified and pinned this pass (approximate, from the neighbouring Chiesa Vecchia's address, not the trunk itself): a centuries-old lime beside a historic Walser church in Macugnaga's Dorf hamlet, two sources disagreeing on age (roughly 500 vs 700+ years, both recorded rather than resolved). Genuinely old and locally documented, but modest compared to Sant'Orso or the Tricase oak, no national award or wide press. Held rather than published this pass; a tighter pin and a second age source would make it ready."
+      "note": "Verified and pinned this pass (approximate, from the neighbouring Chiesa Vecchia's address, not the trunk itself): a centuries-old lime beside a historic Walser church in Macugnaga's Dorf hamlet, two sources disagreeing on age (roughly 500 vs 700+ years, both recorded rather than resolved). Genuinely old and locally documented, but modest compared to Sant'Orso or the Tricase oak, no national award or wide press. Held rather than published this pass; a tighter pin and a second age source would make it ready.",
+      "published_id": "mac_001",
+      "published_place": "Macugnaga"
     },
     {
       "name": "Insieme omogeneo di Liquidambar styracyflua L.",
@@ -230,10 +232,12 @@
         "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg",
         "https://commons.wikimedia.org/wiki/File:Giardino_del_Santuario.jpg"
       ],
-      "status": "held",
+      "status": "published",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified from one source only (a Commons file description, itself credited to Legambiente/treeoftheyear.org): a downy oak nominated in Italy's 2014 Tree of the Year competition as 'The Tree of Perfect Gaiety', referencing the Franciscan parable Francis told Brother Leo at this sanctuary. Do not confuse with the sanctuary's OTHER, already-dead holm oak (fell 1622, carved into a 1645 sculpture): this is a separate, different specimen. No second source found this pass despite two search attempts; held rather than published on a single-source bar. Does not belong to Fara in Sabina (23.2km, fails the day-trip test); the natural container is Rieti, not currently in the city queue."
+      "note": "Verified from one source only (a Commons file description, itself credited to Legambiente/treeoftheyear.org): a downy oak nominated in Italy's 2014 Tree of the Year competition as 'The Tree of Perfect Gaiety', referencing the Franciscan parable Francis told Brother Leo at this sanctuary. Do not confuse with the sanctuary's OTHER, already-dead holm oak (fell 1622, carved into a 1645 sculpture): this is a separate, different specimen. No second source found this pass despite two search attempts; held rather than published on a single-source bar. Does not belong to Fara in Sabina (23.2km, fails the day-trip test); the natural container is Rieti, not currently in the city queue.",
+      "published_id": "fcl_001",
+      "published_place": "Fonte Colombo"
     },
     {
       "name": "Vallonea of Tricase",

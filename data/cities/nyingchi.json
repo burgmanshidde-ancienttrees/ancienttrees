@@ -1,0 +1,64 @@
+{
+  "city": "Nyingchi",
+  "country": "China",
+  "status": "needs_curation",
+  "intro": "Nyingchi's mapped tree is the King Cypress, the largest known specimen of Cupressus gigantea, a species that grows wild only in a handful of Tibetan river valleys. Bon tradition calls it the life tree of the religion's own founder, and pilgrims still leave prayer flags at its base. It stands close to 50 metres tall on a trunk nearly six metres through, its age put at either 2,600 or over 3,200 years depending on the source. Ticketed as the World Cypress King Garden, a short minibus ride from Bayi town.",
+  "meta_description": "The King Cypress near Nyingchi, Tibet: the largest known Cupressus gigantea, sacred to Bon tradition and 2,600 to 3,200 years old.",
+  "question_answer": "Nyingchi's mapped tree is the King Cypress, a Tibetan cypress standing in the fenced World Cypress King Garden near Bajie village, about 6 to 7 kilometres from Bayi town. It is the largest known specimen of Cupressus gigantea, close to 50 metres tall on a trunk nearly six metres through, with sources putting its age at 2,600 to over 3,200 years.",
+  "question_meta": "Nyingchi's King Cypress, the largest known Tibetan cypress. Its age, its Bon legend, and how to reach it.",
+  "question_context": "English Wikipedia and Baidu Baike agree closely on the tree's scale and story: about 50 metres tall, a trunk close to six metres through, and Bon tradition's life tree of Tonpa Shenrab Miwoche, the religion's own founder, which is why pilgrims leave prayer flags and mani stones around it. Locally it is called the God of Tree. The two sources disagree on age, English-language records giving a calculated 2,600 years and the Chinese encyclopaedia entry over 3,200, and both figures are carried here rather than resolved. It stands inside a wider grove of ancient cypress, a tenth of a square kilometre averaging 44 metres tall, which makes the King the tallest tree in a stand of giants. The site has long been fenced, named and ticketed as the World Cypress King Garden, about 6 to 7 kilometres from Bayi town in Nyingchi, reached by shared minibus for a few yuan. Local advice favours April to October, which also catches the peach blossom season at Nyingchi's start.",
+  "faq": [
+    {
+      "q": "How old is the King Cypress?",
+      "a": "Sources disagree: the English-language record gives a calculated 2,600 years, the Chinese encyclopaedia entry says over 3,200. Both figures are carried here rather than picked between."
+    },
+    {
+      "q": "Why is it called the King Cypress?",
+      "a": "It is the largest known specimen of Cupressus gigantea, a Tibetan cypress that grows wild only in a few river valleys, and it stands as the tallest tree in a wider grove of ancient cypress around it."
+    },
+    {
+      "q": "Is the King Cypress a religious site?",
+      "a": "Yes. Bon tradition holds it as the life tree of Tonpa Shenrab Miwoche, the religion's founder, and pilgrims leave prayer flags and mani stones at its base."
+    },
+    {
+      "q": "How do you get to the King Cypress?",
+      "a": "It stands in the ticketed World Cypress King Garden near Bajie village, about 6 to 7 kilometres from Bayi town in Nyingchi, reached by shared minibus for around five yuan or by taxi."
+    }
+  ],
+  "hero_tree_id": "nyi_001",
+  "oldest_tree_id": "nyi_001",
+  "trees": [
+    {
+      "id": "nyi_001",
+      "name": "King Cypress",
+      "species": "Tibetan Cypress (Cupressus gigantea)",
+      "age_estimate": "roughly 2,600 to 3,200 years (sources disagree)",
+      "age_min": 2600,
+      "age_max": 3200,
+      "girth_cm": 1820,
+      "location": {
+        "address": "World Cypress King Garden (世界柏树王园林), Bajie village (巴吉村), Bayi District, Nyingchi, Tibet Autonomous Region",
+        "latitude": 29.622891,
+        "longitude": 94.402868,
+        "neighbourhood": "Bajie, Bayi District, Nyingchi (Linzhi)"
+      },
+      "story": "Bon tradition makes this cypress the life tree of Tonpa Shenrab Miwoche, the man who founded the religion. Locally it is called the God of Tree, and pilgrims leave prayer flags and mani stones in the grove around it.\n\nIt is also the largest known specimen of Cupressus gigantea, a cypress that grows wild only in a few Tibetan river valleys. It stands about 50 metres tall on a trunk close to six metres through, which works out at roughly eighteen metres around, though that circumference is calculated from the diameter rather than taped.\n\nIts age depends on who you ask. The English-language record gives a calculated 2,600 years; the Chinese encyclopaedia entry says over 3,200. Both numbers put it here long before Buddhism reached Tibet in the seventh century, and before the Yarlung kings who brought it in. The grove around it is old too, a tenth of a square kilometre of ancient cypress averaging 44 metres tall, which makes the King the tallest tree in a stand of giants.\n\nIt has been fenced, named and ticketed for years as the World Cypress King Garden, six or seven kilometres out of Bayi town, with minibuses from the centre for about five yuan. The local advice is April to October, which also catches Nyingchi's peach blossom at the start of it.",
+      "how_to_recognise": "You can recognise it by its height, about 50 metres, some six above the ancient cypresses around it, and by the prayer flags at its foot. It stands at the centre of the fenced World Cypress King Garden, outside Bajie village.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/King_Cypress",
+        "https://baike.baidu.com/item/%E5%B7%A8%E6%9F%8F%E6%9E%97/1471083"
+      ],
+      "access": "Paid entry: a fenced, ticketed nature reserve/garden (¥15 entry per Baidu Baike) within the larger Bajie giant-cypress forest, reached by shared minibus, taxi or on foot from Bayi town (Nyingchi city). Best months April to October per the local source. Genuinely open to the public, a maintained tourist site rather than a wild grove.",
+      "transport": "About 6-7 km southeast of Bayi town/Nyingchi city centre; shared minibuses run from town (~5 yuan) or taxi (~15 yuan one-way). No rail/air distances checked beyond that.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}
