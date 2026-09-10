@@ -90,7 +90,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Not a tree in the botanical sense; framed honestly in the story. Three sources agree on 'over 400 years' and arrival during Victoria's reign. Most concrete dated evidence of life is survival of the 2005 Palm House renovation; no dated 2020s sighting or photograph found, so the recency gap is stated in the prose. Pin is the Palm House building, not the individual bed inside it."
+      "notes": "Not a tree in the botanical sense; framed honestly in the story. Three sources agree on 'over 400 years' and arrival during Victoria's reign. Most concrete dated evidence of life is survival of the 2005 Palm House renovation; no dated 2020s sighting or photograph found, so the recency gap is stated in the prose. Pin is the Palm House building, not the individual bed inside it.",
+      "how_to_recognise": "You can recognise it by its dark, leafless trunk built from packed old leaf bases rather than wood, utterly unlike anything else in the room. It stands inside Belfast Botanic Gardens' Palm House."
     },
     {
       "id": "bfs_003",
@@ -123,7 +124,10 @@
       "location_precision": "confirmed",
       "notes": "Age estimated from the documented planting/distribution era for the species after its 1946 rediscovery, not from a girth measurement. A search summary claiming a 22m height from monumentaltrees.com was NOT verified on the page and is deliberately excluded. Two other Metasequoia specimens stand in the same gardens, which matters for any photo match.",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "kind": "autumn colour",
         "label": "late October into November, when the needles turn rust orange and drop, which is not what a conifer is supposed to do"
       }
@@ -160,7 +164,9 @@
       "location_precision": "approximate",
       "notes": "No numeric age or girth found anywhere; described only as old and reclining. Council's page places it in the centre of the cemetery, hence the park-level pin. No dated 2020s sighting of the specific tree found, though the site is actively managed and toured. Access is bookable and free, which is the 2026-09-01 ruling's price-and-schedule case rather than somebody's permission.",
       "best_time": {
-        "months": [5],
+        "months": [
+          5
+        ],
         "kind": "flowers",
         "label": "May, when a hawthorn turns white all over and the whole graveyard smells of it"
       }

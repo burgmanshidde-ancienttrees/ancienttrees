@@ -7197,6 +7197,27 @@
     "note": "34 judged, 2 approved; the honest rate for unvetted filenames, on supply that did not exist this morning",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "sintra",
+    "kind": "verify",
+    "tokens": 158939,
+    "trees": 0,
+    "note": "4th consecutive pass confirming ICNF register exhausted for Sintra; general-web sweep of Regaleira/Pena/Monserrate/Capuchos found only duplicates of published trees or non-collectible collective descriptions"
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 152332,
+    "trees": 0,
+    "note": "register radius confirmed exhausted again; Castillo ficus lead re-checked and still unresolved; zero delivered"
+   },
+   {
+    "target": "seattle/leeuwarden/tilburg/maastricht",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session viewing pass on the 4 zero-photo-city shortlist candidates: 1 approved (sea_006 Sylvia, coordinate-matched CC BY-SA 4.0), 22 rejected (wrong tree/city, street scenes, plaques, archival, unidentifiable multi-tree settings)"
    }
   ]
  }

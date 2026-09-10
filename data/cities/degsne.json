@@ -52,7 +52,9 @@
       "transport": "No public transport reaches the forest road itself; nearest towns are Balbieriškis (about 3km) and Prienai (about 7km). A car or bicycle is the practical way in.",
       "story": "The tallest tree in Lithuania is a larch, and it is under two metres round.\n\nAt 49 metres it beats everything else growing in the country, and the State Protected Areas Service register lists it under exactly that title. It is a demonstration of what larches do with their energy: nearly all of it goes upward. The trunk carries no green branch at all for its first 29 metres, and at chest height it measures 186 centimetres round. Anyone arriving with a churchyard oak in mind is looking for the wrong shape entirely.\n\nIt did not turn up by accident. The first larches here were planted in 1849, when this was a corner of the Russian Empire, and the stand they grew into is now the tallest forest in Lithuania, averaging around 42 metres. The forest was protected in 1960. This one tree was designated in its own right in 2002, by which point it had stood through two world wars and watched Lithuania become an independent country twice. A survey that year called its condition satisfactory, with the first signs of age on it.\n\nNo legend attaches to it, which feels right. The record is the story.\n\nGetting there takes a car or a bicycle. A gravel forest road runs about three kilometres off the Kaunas to Alytus road north of Balbieriškis, and no bus goes near it.",
       "best_time": {
-        "months": [10],
+        "months": [
+          10
+        ],
         "kind": "autumn colour",
         "label": "late October, when the larch turns gold and drops its needles"
       },
@@ -63,7 +65,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the tallest tree around by far, 49m up on a trunk under two metres round, bare of branches for its first 29 metres. It stands off a gravel forest road in Degsne Forest, Nemuno Loops park."
     },
     {
       "id": "deg_002",
@@ -94,7 +97,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its lopsided condition, one side healthy with heavy branches, the other lichened over with damaged bark. It stands in Balbieriskis Forest near Budininkai village."
     }
   ]
 }

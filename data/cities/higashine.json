@@ -51,10 +51,22 @@
       ],
       "access": "Free, no ticket. It stands in the yard of a working elementary school, but the tree is treated as an open tourist attraction by the city itself and visitors describe walking in and viewing it, including on weekends when school is out. The base used to be open to crawl through but is now fenced off and closed to entry, so visitors view it rather than touch it.",
       "transport": "About 20 minutes on foot from JR Sakuranbo-Higashine Station (Ou Main Line), or about 8 minutes by car / 3 km",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when the leaves come down and the schoolchildren chase them" }
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the leaves come down and the schoolchildren chase them"
+      },
+      "how_to_recognise": "You can recognise it by forking into two massive stems about five and a half metres up, its hollow base fenced off, the crown thinner on the north side since a 1902 storm. It stands in the Higashine Elementary School yard."
     }
   ]
 }

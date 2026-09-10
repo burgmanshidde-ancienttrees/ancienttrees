@@ -75,6 +75,14 @@
       "lng": null,
       "status": "lead",
       "why": "Vyznamny strom 19, 255 cm, in Stresovice, recorded as the largest white mulberry in Prague. A species we do not have anywhere in the city and a genuine July fruit peak, which the season radar is short of. Failed on position: it stands in a residential street 3 km west of the centre with nothing else near it, and on evidence, since no second source was looked for this pass."
+    },
+    {
+      "name": "Dub na sportovisti v Dejvicich",
+      "species": "Quercus robur",
+      "lat": 50.1055639,
+      "lng": 14.3783324,
+      "status": "lead",
+      "why": "Pamatny strom, register kod 105861, girth 402 cm (2024 register update, 371 cm per a 2012 measurement quoted on Czech Wikipedia). Stands at the fence of the TJ Sokol Praha-Hanspaulka sports ground, at its eastern boundary next to a kindergarten. Failed on evidence rather than on the tree itself: no source read this pass settles whether the ground itself, or a public path along its edge, is open to a stranger, and the register's own last update is from 2012, the oldest of any candidate looked at this pass. Worth an OSM access-tag check (the Ypres technique in BRIEF_RESEARCH.md) or a direct enquiry to the Sokol club before this ships."
     }
   ],
   "blocked": [
@@ -196,12 +204,34 @@
       "lat": null,
       "lng": null,
       "reason": "Five horse chestnuts planted close together west of the Petrinska brana, said to have been set in the shape of a crown by Maria Theresa after her 1743 coronation. A group rather than one identifiable tree, and Hvezda already has prg_005."
+    },
+    {
+      "name": "Platan javorolisty v Podbabe",
+      "species": "Platanus x acerifolia",
+      "lat": 50.123159,
+      "lng": 14.3906936,
+      "reason": "Register kod 104293 (via drusop), girth 404-440 cm. Stands in the middle of the private courtyard of a heritage-protected neo-Renaissance villa at V Podbabe 20/2523, per prazskestromy.cz's own entry (no. 48). A private courtyard, not public ground; hard rule 10 excludes it."
+    },
+    {
+      "name": "Hrusen obecna nad ulici Zdikovska",
+      "species": "Pyrus communis",
+      "lat": 50.0772455,
+      "lng": 14.3719199,
+      "reason": "Register kod 104305, girth 295-313 cm. Czech Wikipedia's own entry says it now stands behind a fence on private land (parcel 554782/729051/4261/220) and that access to the fenced private plots around it is difficult, reachable only past fenced-off garden allotments from a point below Spiritka. Not genuinely open to a visitor; hard rule 10 excludes it."
+    },
+    {
+      "name": "Dub v ulici Slavickova v Bubenci",
+      "species": "Quercus robur",
+      "lat": 50.0984935,
+      "lng": 14.4088444,
+      "reason": "Register kod 105657, girth 260 cm (Wikipedia, older) to 286 cm (2024 register update). Stands, per the register's own note and a WebSearch summary of the villa's history, in the southern part of the garden of a private villa at Slavickova 151/15 (the Sucharda brothers' studio villa, near the wall separating the garden from the railway track). A private residential garden; hard rule 10 excludes it unless a source later confirms the garden is genuinely open to visitors."
     }
   ],
   "open_questions": [
     "The centre is register-poor. Of 118 pamatne stromy rows with coordinates, only six sit within 2.5 km of the centre route and are neither published nor dead, and three of those six are inaccessible or private. Density in Prague 1 has to come from the vyznamne stromy tier, which has 321 entries but only one publisher, Agentura Koniklec, so the two-source rule is the binding constraint rather than supply.",
     "prazskestromy.cz also runs an 8 km QR-code audio trail. It was not opened this pass; its stops are in Praha 4 around Branisovska rather than in the centre, so it is a second-cluster tool, not a centre one.",
     "The 2020 Koniklec printed maps carry a per-tree significance line for both tiers and are a far better index than the website, which paginates nine at a time. Four PDFs, roughly 60,000 characters of text once extracted. Worth importing to data/registers/ as a proper Prague file if Czech cities go further, which would also settle whether the licence permits it; nothing was imported this pass because the licence was not read.",
-    "Masaryk's lime (prg_014) has a 100 cm girth disagreement between prazskestromy (249 cm, 2016) and the Koniklec map (349 cm, 2017), which are the same organisation. One of them is a typo and neither is correctable from outside."
+    "Masaryk's lime (prg_014) has a 100 cm girth disagreement between prazskestromy (249 cm, 2016) and the Koniklec map (349 cm, 2017), which are the same organisation. One of them is a typo and neither is correctable from outside.",
+    "A verify pass on 2026-09-10 mined the AOPK register out to 20 km: of ~129 unmined register rows, most within a few hundred metres of the centre were near-duplicates of trees already published (within 80 m). Four genuinely new, publicly accessible trees were found and delivered (prg_022 to prg_025: two oaks in the Na Cibulkach forest park, a beech and a sessile/pedunculate oak in Obora Hvezda), all confirmed via the Czech-Wikipedia registry-join technique. Several other candidates within 2 km of the centre (Dub v ulici Slavickova v Bubenci, girth 260-286 cm, standing in the garden of a private villa at Slavickova 151 per a WebSearch summary of the villa's own history; Platan javorolisty v Podbabe, blocked above; Hrusen obecna nad Zdikovska, blocked above) turned out to sit on private land. The remaining ~100 unmined rows sit mostly 5 km or more from the centre, oak-heavy, and mostly single trees rather than clusters; a future pass could work outward from the Cibulky/Hvezda pairs delivered this time, or from the Cimicky haj oak (Dub za Cimickou hajovnou, register kod 104833, 5.5 km northeast in Bohnice, not checked for access this pass)."
   ]
 }
