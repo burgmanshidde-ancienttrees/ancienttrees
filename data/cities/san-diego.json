@@ -59,7 +59,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Age counted from the 1914 planting, not from the exposition's 1915 opening. Girth is a buttressed fig mass, not a round trunk; do not restate it as a diameter. The Natural History Museum's own page explicitly says the Kate Sessions attribution has no documentation, so the story says so rather than repeating it. Flagged only because the registry measurements date from 1996."
+      "notes": "Age counted from the 1914 planting, not from the exposition's 1915 opening. Girth is a buttressed fig mass, not a round trunk; do not restate it as a diameter. The Natural History Museum's own page explicitly says the Kate Sessions attribution has no documentation, so the story says so rather than repeating it. Flagged only because the registry measurements date from 1996.",
+      "how_to_recognise": "You can recognise it by a buttressed, accumulated trunk mass 12.3 metres round and aerial roots hanging from the limbs. It stands outside the north entrance of the San Diego Natural History Museum, Balboa Park."
     },
     {
       "id": "sdg_002",
@@ -159,7 +160,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Existence, species and position confirmed from a geotagged, photographed iNaturalist observation (id 342689280, 2016-07-09, 32.7313561/-117.1511082), the only Agathis australis record near San Diego on that platform. The second source listed by the verify pass (sandiegoreader.com) returned HTTP 403 on every fetch route and was dropped rather than cited unread, so this ships single-sourced. Its reported height (~65ft, or 52ft measured 1994) and a late-1930s/early-1940s planting estimate came only from search summaries and are deliberately not recorded. sandiegoreader.com and pacifichorticulture.org are blocklist candidates."
+      "notes": "Existence, species and position confirmed from a geotagged, photographed iNaturalist observation (id 342689280, 2016-07-09, 32.7313561/-117.1511082), the only Agathis australis record near San Diego on that platform. The second source listed by the verify pass (sandiegoreader.com) returned HTTP 403 on every fetch route and was dropped rather than cited unread, so this ships single-sourced. Its reported height (~65ft, or 52ft measured 1994) and a late-1930s/early-1940s planting estimate came only from search summaries and are deliberately not recorded. sandiegoreader.com and pacifichorticulture.org are blocklist candidates.",
+      "how_to_recognise": "You can recognise it by a straight grey column of a trunk holding its crown right at the top, unlike the spreading subtropicals around it. It stands beside the Mingei International Museum on the Plaza de Panama."
     }
   ]
 }
