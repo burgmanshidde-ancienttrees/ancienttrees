@@ -1,0 +1,67 @@
+{
+  "city": "Cerro Veronese",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Cerro Veronese is named after one tree, and that tree is still standing in the square by the parish church. The town put it on its own coat of arms: a cerro with its roots showing in the earth and a silver cross above the crown, on a red field. Local sources give it over three centuries, about four metres round and more than nineteen metres tall. It is a cerro-sughera, a natural cross between the Turkey oak and the cork oak, which makes the name only approximately true.",
+  "meta_description": "The oak that named a town: Cerro Veronese's cerro-sughera stands in the church square, over three centuries old and drawn on the municipal coat of arms.",
+  "question_meta": "Cerro Veronese's notable tree is the cerro in the church square that gave the town its name. Its age, its species, and how to find it.",
+  "question_answer": "The tree we map at Cerro Veronese is the cerro standing in Piazza Don Angelo Vinco, between the parish church and the theatre, roughly fifteen kilometres north of Verona on the Lessinia plateau. It is the tree the municipality is named after and the one drawn on its coat of arms, local sources put it at over three centuries old, about four metres round and more than nineteen metres tall, and it is free to walk up to at any hour.",
+  "question_context": "Despite the name, it is not a true cerro. The species is Quercus crenata, the natural hybrid of the Turkey oak (cerro in Italian) and the cork oak (sughera), which Italian calls cerro-sughera after both parents. The hybrid is nowhere common and does not breed true, so specimens tend to be one-offs. Three sources agree on the civic half of the story: the Lessinia tourist board, a local parish history site, and the English Wikipedia article on the municipality all describe a coat of arms showing a cerro with roots in the earth and a silver cross above it, and all say the tree in the main square gave the place its name. The measurements come from the first two: over three centuries, roughly four metres of girth, and a height above nineteen metres. No source narrows the age further, which is why it is published as a 300 to 400 year band. No exact coordinate for the tree has been published, so the pin marks the village centre rather than the trunk, which costs a visitor a minute at most in a piazza this small. No confirmed public transport reaches the village from Verona.",
+  "faq": [
+    {
+      "q": "Why is Cerro Veronese called Cerro Veronese?",
+      "a": "After the tree. A cerro stands in the square by the parish church, the town takes its name from it, and the municipal coat of arms is a drawing of it: a cerro with its roots in the earth and a silver cross above, on a red field."
+    },
+    {
+      "q": "How old is the tree?",
+      "a": "Over three centuries, according to the Lessinia tourist board and a local history site. Neither gives a precise figure, so it is published here as a 300 to 400 year band."
+    },
+    {
+      "q": "Is it really a cerro?",
+      "a": "Not quite. It is a cerro-sughera, Quercus crenata, the natural hybrid of the Turkey oak and the cork oak. The bark thickens toward the cork oak's spongy layer and the leaves hang on into winter instead of dropping cleanly."
+    },
+    {
+      "q": "Can you visit it?",
+      "a": "Yes, free and at any hour. It stands in Piazza Don Angelo Vinco between the church and the parish theatre, in the middle of the village. Reaching the village itself is a drive: we found no confirmed public transport route from Verona, about fifteen kilometres to the south."
+    }
+  ],
+  "hero_tree_id": "cvr_001",
+  "oldest_tree_id": "cvr_001",
+  "trees": [
+    {
+      "id": "cvr_001",
+      "name": "The Cerro Oak",
+      "species": "Crenate Oak (Quercus crenata)",
+      "age_estimate": "over three centuries, per local sources; no firmer figure published",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 375,
+      "location": {
+        "address": "Piazza Don Angelo Vinco, beside the parish church, Cerro Veronese",
+        "latitude": 45.574422,
+        "longitude": 11.041206,
+        "neighbourhood": "Village centre"
+      },
+      "story": "The town is named after this tree, and the tree is not quite what the name says.\n\nCerro Veronese sits on the Lessinia plateau about fifteen kilometres north of Verona and takes its name from the cerro in the square beside the parish church. The municipality then drew it. The coat of arms is that oak on a red field, roots showing in the earth, a silver cross above the crown.\n\nWhat is actually standing there is a cerro-sughera, Quercus crenata, the natural hybrid of the Turkey oak, which Italian calls cerro, and the cork oak, sughera. The hybrid is nowhere common and does not breed true, so most specimens are one-offs rather than a population. You can read both parents off the trunk and the leaves: bark thickening toward the cork oak's spongy layer, and shallow rounded teeth all round the leaf margin, which hang on into winter instead of dropping cleanly.\n\nItaly's own national register of monumental trees has measured it: 375 centimetres round and 17.5 metres tall, at 722 metres of altitude in the piazza itself. Local tourism and parish sources round the same tree to about four metres and call it over three centuries old, and nobody publishes a firmer figure than that, so the age stays a wide band.\n\nIt stands between the church and the parish theatre, free to walk up to at any hour.",
+      "why_go": "The town is named after this tree. Cerro Veronese takes its name from the cerro in the church square, and the municipality drew that same tree on its coat of arms: an oak with its roots showing in the earth and a silver cross above it, on a red field. Very few places anywhere have a single living tree as their civic symbol, and this is that tree, still standing where the name came from.",
+      "how_to_recognise": "You can recognise it by the leaves, shallow-toothed the whole way round the margin and still hanging on in midwinter, and by bark thickening toward cork. It is the large old oak in the piazza, between the parish church and the theatre.",
+      "verified_sources": [
+        "MASAF, Elenco degli alberi monumentali d'Italia, sheet 01/C538/VR/05: Quercus crenata Lam. ('Cerro-sughera'), Piazza Don Angelo Vinco, Cerro Veronese, girth 375cm, height 17.5m, altitude 722m (register file: data/registers/italy-masaf.json)",
+        "https://www.visitlessinia.eu/it/la-lessinia/icomuni/Cerro-Veronese/",
+        "https://www.donangelovinco.org/cerro-v-se",
+        "https://en.wikipedia.org/wiki/Cerro_Veronese"
+      ],
+      "access": "Free, no restriction. The tree stands in the village's central piazza, between the parish theatre and the church, open ground at any hour.",
+      "transport": "In the historic centre of Cerro Veronese, about 15 km north of Verona. Reachable by car; no public transport route to the village is confirmed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "height_m": 17.5
+    }
+  ]
+}

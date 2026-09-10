@@ -106,14 +106,14 @@
    "country": "Germany",
    "slug": "berlin",
    "status": "published",
-   "trees": 20
+   "trees": 21
   },
   {
    "city": "Prague",
    "country": "Czech Republic",
    "slug": "prague",
    "status": "published",
-   "trees": 21
+   "trees": 25
   },
   {
    "city": "Paris",
@@ -127,7 +127,7 @@
    "country": "United States",
    "slug": "oahu",
    "status": "published",
-   "trees": 19
+   "trees": 21
   },
   {
    "city": "Palermo",
@@ -269,7 +269,7 @@
    "country": "Netherlands",
    "slug": "dordrecht",
    "status": "published",
-   "trees": 20
+   "trees": 21
   },
   {
    "city": "Palma de Mallorca",
@@ -1046,7 +1046,7 @@
    "status": "published",
    "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
    "demand_views_90d": 145206,
-   "trees": 12
+   "trees": 13
   },
   {
    "city": "Potsdam",
