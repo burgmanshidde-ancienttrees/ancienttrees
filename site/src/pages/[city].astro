@@ -118,6 +118,15 @@ const agedTitles = titleArm === "age_first"
       `Ancient Trees in ${cityName}: Oldest ${ageHook} Years, ${seeN}`,
       `Ancient Trees in ${cityName}: Oldest ${ageHook} Years, ${treesN}`,
     ]
+  // Queued test 2 (city-title-no-count): does the count earn its place at all,
+  // or is it inventory taking room the age could use. Template written ahead of
+  // the test so copytest.py can start it on its own; an arm with no template
+  // renders as the control everywhere and reports nothing after eight weeks.
+  : titleArm === "no_count"
+  ? [
+      `Ancient Trees in ${cityName}: the Oldest Is ${ageHook} Years`,
+      `Ancient Trees in ${cityName}: Oldest ${ageHook} Years`,
+    ]
   : [
       `Ancient Trees in ${cityName}: ${seeN}, Oldest ${ageHook} Years`,
       `Ancient Trees in ${cityName}: ${treesN}, Oldest ${ageHook} Years`,
