@@ -763,17 +763,18 @@
       "species": "Chilean Wine Palm (Jubaea chilensis)",
       "age_estimate": "",
       "location": {
-        "address": "",
+        "address": "Parco di Villa di Rusciano, Via Benedetto Fortini 37, Florence",
         "latitude": 43.759778,
         "longitude": 11.279306,
-        "neighbourhood": ""
+        "neighbourhood": "Gavinana"
       },
       "story": "This palm was very nearly harvested out of existence for its sap, which was boiled down into a honey. Getting the sap meant felling the tree.\n\nJubaea chilensis carries one of the thickest trunks in the palm family, a grey column more than a metre across, and it grows slowly enough that a tapped tree meant a century of growth spent on a single harvest of palm honey. Chile's wild population collapsed under that trade and now survives in a few protected valleys. The species is also among the hardiest palms there is, which is how it reached Italian villa gardens in the nineteenth century: a palm that could take a frost was worth a great deal to anyone laying out an exotic garden in a climate that kills most of them.\n\nThis one measures 349 centimetres around and stands 15.5 metres, in the park of a municipal villa east of the centre. Its record is a single line, the national listing of monumental trees with the city republishing the same entry, and it carries no age and no planting date.\n\nIt sits well east of the hillside trees and makes its own errand rather than joining a walk. Whether that is worth an afternoon depends on how many palms with a trunk like a stone column you have stood next to.",
       "location_precision": "approximate",
       "curation_status": "flagged",
-      "access": "",
+      "access": "Free, public park (Comune di Firenze), open during listed hours",
       "verified_sources": [
-        "MASAF 22/D612/FI/09"
+        "MASAF 22/D612/FI/09",
+        "https://www.comune.firenze.it/vivere-il-comune/luoghi/villa-di-rusciano"
       ],
       "photo": {
         "url": null,
@@ -781,9 +782,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "transport": "",
+      "transport": "Bus 23A, 23B, 31 or 32 to Salutati Gavinana, about 4 minutes' walk",
       "height_m": 15.5,
-      "verify_notes": "Height 15.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 15.5 m from the italy-masaf register, matched on our own pin (0 m away). Address, neighbourhood, access and transport filled 2026-09-10 from the register's own locality field (Via Benedetto Fortini 37) and the Comune di Firenze's own park page, which confirms the park is public and free.",
       "girth_cm": 349,
       "how_to_recognise": "You can recognise it by the trunk, a grey column more than a metre across and 3.49 metres round, under 15.5 metres of palm. It stands in the park of Villa di Rusciano, east of the centre."
     },

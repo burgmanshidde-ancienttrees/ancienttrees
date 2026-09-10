@@ -11,7 +11,10 @@
     "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_02.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "verified_id": "cdb_001",
+   "verified_file": "data/research/_famous-spain-verified.json",
+   "verify_note": "2026-09-10 verification pass: seven Ulmus minor elms around the Ermita/Santuario de Belen, judged a single compact collectible ensemble (Lomanstraat precedent), alive, officially designated Arbol Singular de Extremadura (Decreto 140/2005). Girth not found anywhere; age given only as 'over 150 years'."
   },
   {
    "name": "Kisulabe oak",
@@ -72,9 +75,12 @@
     "https://commons.wikimedia.org/wiki/File:Carrasca_milenaria_de_Lecina.jpg",
     "https://commons.wikimedia.org/wiki/File:PPA2587_Encina_milenaria_de_Lecina.jpg"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified",
+   "verified_id": "lec_001",
+   "verified_file": "data/research/_famous-spain-verified.json",
+   "species": "Holm Oak, carrasca/ballota form (Quercus ilex subsp. ballota)",
+   "species_basis": "confirmed to subspecies via Wikidata Q109316184",
+   "verify_note": "2026-09-10 verification pass: European Tree of the Year 2021, Spain's Tree of the Year 2020, own dedicated tourism site. Flagged for minor girth (610 vs 700cm) and age (1000 vs 1100yr) conflicts between sources; not large enough to doubt the tree."
   },
   {
    "name": "Encina Tres Patas, Mendaza",
@@ -85,9 +91,12 @@
     "https://commons.wikimedia.org/wiki/File:Encino_de_las_Tres_Patas,_Mendaza_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Encino_de_las_Tres_Patas,_Mendaza_02.jpg"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified",
+   "verified_id": "mza_001",
+   "verified_file": "data/research/_famous-spain-verified.json",
+   "species": "Holm Oak (Quercus ilex)",
+   "species_basis": "confirmed via Spanish Wikipedia and Wikidata Q584899",
+   "verify_note": "2026-09-10 verification pass: Natural Monument of Navarre since 1991 (Foral Decree 165/1991), national 'oldest tree' prize 2007, European Tree of the Year 2020 finalist. No source conflicts found."
   },
   {
    "name": "Eraulgo artea",
@@ -168,9 +177,12 @@
     "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz02.jpg",
     "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz03.jpg"
    ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified",
+   "verified_id": "urk_001",
+   "verified_file": "data/research/_famous-spain-verified.json",
+   "species": "Holm Oak (Quercus ilex subsp. ilex)",
+   "species_basis": "confirmed via paisajesdebizkaia.blogspot.com and floresyplantas.net",
+   "verify_note": "2026-09-10 verification pass: real train station (Muxika, Euskotren E4) close by, but honest journey time from Bilbao is 45-50 minutes, past the ~30-minute day-trip boundary, so it does not fold into Bilbao's page as written; whether it earns its own page (low measured demand, no major awards, only a 1995 regional protection decree) is a placement call for whoever assembles the site, not decided here. No age found or safely derivable; girth 430cm corrected from a mislabelled 'diameter' figure on first read."
   },
   {
    "name": "Aprisquillo Pine",
