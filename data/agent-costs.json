@@ -6467,6 +6467,42 @@
     "note": "Register radius confirmed exhausted (re-verified CURATION.md 2026-09-09 finding); one new non-register lead found and recorded (Aug-2026 news of a fig near the Santa Barbara castle elevator tunnel, unresolved whether it's ali_011 or a third specimen), zero deliverable trees",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "oahu",
+    "kind": "verify",
+    "tokens": 180700,
+    "trees": 1,
+    "note": "One new tree (Kuhio Beach Hula Mound Banyan, hnl_019) pinned via an OSM natural_monument node cross-checked against the register and tourism sources; three Nuuanu/Diamond Head leads updated with dead-end findings; delivered to data/research/oahu-verified.json, not yet written to story or merged",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Tokyo",
+    "kind": "write",
+    "tokens": 111781,
+    "trees": 0,
+    "note": "recognition-line pass, 15 how_to_recognise lines onto live Tokyo trees; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Madrid",
+    "kind": "write",
+    "tokens": 114223,
+    "trees": 0,
+    "note": "recognition-line pass, 15 how_to_recognise lines onto live Madrid trees; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Palermo",
+    "kind": "write",
+    "tokens": 112609,
+    "trees": 0,
+    "note": "recognition-line pass, 14 how_to_recognise lines onto live Palermo trees; no new trees, restatement only; flagged a pre-existing superlative inconsistency (pal_015 story calls itself the smallest fig, but pal_002 at 2.91m is smaller) for a future pass to fix",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
