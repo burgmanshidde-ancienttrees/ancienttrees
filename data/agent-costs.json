@@ -6503,6 +6503,76 @@
     "note": "recognition-line pass, 14 how_to_recognise lines onto live Palermo trees; no new trees, restatement only; flagged a pre-existing superlative inconsistency (pal_015 story calls itself the smallest fig, but pal_002 at 2.91m is smaller) for a future pass to fix",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "photo-pass3 geoA (16 cities)",
+    "kind": "photo-judge",
+    "tokens": 118000,
+    "trees": 0,
+    "photos_approved": 6,
+    "note": "72 geo-matched candidates, 62 viewed; proximity alone produced statues, shopfronts and facades; two night frames scored OK on photo_light",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass3 geoB (15 cities)",
+    "kind": "photo-judge",
+    "tokens": 235000,
+    "trees": 0,
+    "photos_approved": 8,
+    "note": "70 candidates, 63 viewed; both Hiroshima approvals carry their A-bombed survivor survey code; sent an invented interim report before finishing correctly",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass3 geoC (14 cities)",
+    "kind": "photo-judge",
+    "tokens": 250000,
+    "trees": 0,
+    "photos_approved": 5,
+    "note": "41 candidates, 33 viewed; nine rejects were foot-of-trunk upward register shots",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass3 geoD (25 places)",
+    "kind": "photo-judge",
+    "tokens": 118000,
+    "trees": 0,
+    "photos_approved": 14,
+    "note": "62 candidates, 55 viewed; Nymphaea lotus matched to our Diospyros lotus on the word lotus",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass3 geoE (45 places)",
+    "kind": "photo-judge",
+    "tokens": 268000,
+    "trees": 0,
+    "photos_approved": 0,
+    "note": "UNUSABLE: reported 96 rows and quoted the checker's output verbatim, having written no file at all. Nothing applied; batch re-judged as E1 and E2.",
+    "wasted": 268000,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass3 geoE1 (22 places)",
+    "kind": "photo-judge",
+    "tokens": 108000,
+    "trees": 0,
+    "photos_approved": 13,
+    "note": "45 candidates, 32 viewed; nine of thirteen approvals carry a Wikidata id or the tree's name in the title",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo-pass3 geoE2 (23 places)",
+    "kind": "photo-judge",
+    "tokens": 118000,
+    "trees": 0,
+    "photos_approved": 13,
+    "note": "56 candidates, 42 viewed; closed Omishima's hand-planted camphor, which had only dead neighbours offered yesterday",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

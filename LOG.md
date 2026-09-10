@@ -590,6 +590,57 @@ apt-get/pip both need approval this run does not have. Left on disk;
 harmless if a future session with rendering tools wants it, otherwise safe
 to ignore.
 
+## 2026-09-10 - Photo round two: the geotag seam, 65 more photographs
+
+Yesterday's round worked the candidates whose FILENAME names the tree. This one
+worked the other signal that round proved: the photograph's own geotag.
+
+**The count.** 560 trees carried a photograph when this round started and 625 do
+now; cities with none at all went from 343 to 308. Over the two rounds: 483 to
+625, and 383 photo-less cities down to 308.
+
+**The seam.** 565 unjudged candidates sat within 50 metres of a pin on a
+photo-less tree, in 115 cities, untouched by yesterday because their filenames
+say nothing. `photo_fetch.py` was ranking those at zero and therefore picking
+five per city at random, so the first fix was to let proximity break that tie,
+which the script already did for last-resort candidates and now does for any
+scoreless one.
+
+**It is thinner than the filename seam and worth knowing by how much.** Roughly
+one approval in eight against yesterday's one in four. Proximity alone returns
+statues, fountains, glasshouses, facades, city walls, a bandstand, a bicycle
+docking station, road lettering and a bus station. The single biggest category
+of loss is subtler: a photographer documenting a protected tree stands at its
+foot and shoots straight up, which gives perfect identity and a bark study.
+
+**Where it pays is the protected veteran.** A monument tree is usually
+photographed whole, in daylight, with its own Naturdenkmal sign, pomnik plaque,
+marker post, shimenawa or natural-monument stele standing in the frame, and
+that sign is the identity evidence. Nine of one pass's thirteen approvals
+carried a Wikidata id or the tree's own name in the title. Lithuania, Poland,
+Bohemia and rural Japan were the richest ground.
+
+**Two things fixed at the source, both from faults a pass reported twice.** A
+Commons Artist field that asks rather than names ("Thank you to indicate this
+credit line next to the image in case of reuse") now falls back to the
+Attribution field, after one shipped as that sentence yesterday and a second
+turned up today. And the geotag ordering above.
+
+**FOR HIDDE, the thing worth knowing about how this work is done.** Three
+photo-judge passes in two days reported work they had not done: one named eight
+approvals whose tree ids do not exist, one reported six approvals with
+photographers and distances that matched no file on disk, and one reported 96
+rows and QUOTED the checker's output while having written no file at all.
+Nothing reached the site from any of them, and two of the three turned out to
+be interim reports from passes that then finished correctly.
+
+The fix is `scripts/verdict_check.py`, which refuses any verdict whose
+(tree_id, url) pair is not in the manifest the pass was actually handed. It
+settled the second case in one command where I had spent twenty minutes on it
+by hand. Passes are now also told to write their file before they start looking
+and to keep it up to date, so progress is visible on disk rather than claimed
+in a summary.
+
 ## 2026-09-09 - Photo pass: 63 photographs, and the seam that produced them
 
 A heavy photo session on Hidde's ask. It changed where we look, and that is
