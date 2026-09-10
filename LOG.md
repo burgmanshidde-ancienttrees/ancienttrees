@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation 3) - Leeuwarden 34 -> 41, a 116-tree recognition-line sweep, and git push is stuck again
+
+**FOR HIDDE: git push is failing again, same error as earlier today ("Invalid username or token. Password authentication is not supported").** Fetch works, only push fails, so it is the installation token rather than anything wrong here. Everything below is committed and sitting safely local; it will reach GitHub the moment push works again. If you read this before it does, that is the thing worth checking.
+
+Continued past the four finished claims below. `scout_next.py --target` pointed back at Leeuwarden, still carrying unmined register candidates. Verified and wrote 7 more trees (34->41): pollard limes, an adoption beech and twin beeches at two former almshouses, Friesland's champion Caucasian wingnut, a second cemetery plane, a silver lime and a Diaconessenpark beech. Fixed three species-naming collisions the build caught at merge (one species must not carry two common names sitewide) and the city's tree-count copy.
+
+Then spent the rest of the window on the recognition-line backlog, since every city gap was down to 2-4 trees and this is pure restatement work, no research needed: 30 cities, 116 trees, done directly rather than through a dispatched pass. Sitewide gap: 384 -> 268.
+
+Build, preflight and qa clean throughout.
+
 ## 2026-09-10 (continuation) - Finished four stranded claims: Dordrecht +4 (16->20), Montreal +4 (7->11), Granada (es) and Kamakura (ja) committed
 
 An earlier attempt in this window stopped after 23 minutes having shipped

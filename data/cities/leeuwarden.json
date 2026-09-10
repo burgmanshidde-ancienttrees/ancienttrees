@@ -2,8 +2,8 @@
   "city": "Leeuwarden",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Five of these thirty-four stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
-  "meta_description": "Thirty-four trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
+  "intro": "Five of these forty-one stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
+  "meta_description": "Forty-one trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
   "question_meta": "Leeuwarden's oldest tree is a copper beech by the Westerkerk, banded 1750 to 1800, and the register expects it will have to be felled.",
   "question_answer": "The oldest tree in Leeuwarden is a copper beech standing by the Westerkerk on the Sint Anthonystraat, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It is also the one tree here with a warning attached. The register records that its rooting ground was compacted in the 1990s, that the tree took a blow from which it never recovered, and that although the ground has since been improved its condition has not come back, so it will in time have to be felled. It is standing now. If you want to see the oldest tree in Leeuwarden, this is an argument for going this year rather than in ten.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged. It is a careful source: for several of these it records the tree's condition as well as its age, which is where the note about the Westerkerk beech comes from and why we have passed it on rather than quietly leaving it out. The Prinsentuin trees are dated indirectly, because the register reasons from the park's own history that the oldest trees in it must come from between 1830 and 1880 rather than from a record of any individual planting. Pins are as the register surveyed them; where one is marked approximate we know the park and not the trunk.",
@@ -1100,6 +1100,179 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      }
+    },
+    {
+      "id": "lee_035",
+      "name": "The Pollard Limes of the Liauckama House",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Grote Kerkstraat 9, in front of the Liauckama House (part of Museum Princessehof), Leeuwarden",
+        "latitude": 53.202949,
+        "longitude": 5.792462,
+        "neighbourhood": "City centre"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1682919, two pollarded limes, planted band 1830-1840)"
+      ],
+      "access": "Free. Stand on the public street (Grote Kerkstraat) in front of the building, register setting weg (road).",
+      "transport": "Central Leeuwarden, short walk from Leeuwarden Centraal station, in the museum quarter around the Prinsentuin.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "One of these two limes carries a cavity in its trunk the shape of a letterbox.\n\nThey stand as a matched pair in front of the Liauckama House on the Grote Kerkstraat, and both are pollards: trees cut back to the same points, over and over. A tree answers that treatment by thickening the cut ends into knuckles and throwing a burst of young shoots off the top of them, so a pollard lime ends up short, heavy and knobbled where a free-grown lime would be tall and even. The knuckles are the tally of every cut.\n\nThe building behind them is much older. The Liauckama House goes back to the second half of the sixteenth century, possibly 1580, and is now part of Museum Princessehof. The trees came far later, and the national register cannot quite decide when. Its planting band puts them at 1830 to 1840, while its own history text for this pair says they have probably stood on this spot for over two hundred years. The two readings sit a good half-century apart, and both of them are the register's.\n\nThe register calls this a striking place for a tree to stand, and rates both of them fair to reasonable in condition. Nobody else has written them up, so if you know more, tell us.",
+      "how_to_recognise": "You can recognise them by the pollard knuckles, two short heavy trunks each topped with a fist of cut ends and a burst of young shoots. They stand as a pair on the Grote Kerkstraat; the eastern one has a letterbox-shaped cavity."
+    },
+    {
+      "id": "lee_036",
+      "name": "The Adoption Beech of the Sint Anthony Gasthuis",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 156 to 166 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Voortuin (front garden) of the Nieuw Sint Anthony Gasthuis, Perkswaltje, Leeuwarden",
+        "latitude": 53.203804,
+        "longitude": 5.795032,
+        "neighbourhood": "City centre"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1682926, planted band 1860-1870, visitable=ja, owner=publiekrechtelijke organisatie)",
+        "OpenStreetMap (queried 2026-09-10): the Nieuw Sint Anthonygasthuis building (wikidata Q15879818, rce heritage id 24160) fronts onto Perkswaltje, tagged access=private/foot=permissive, i.e. a courtyard walkway pedestrians may use even though it is not a through public road"
+      ],
+      "access": "Free to view from the almshouse's front garden/courtyard. The street it fronts, Perkswaltje, is a permissive pedestrian route rather than a fully public road (OSM tags it access=private, foot=permissive), consistent with the register's own visitable=ja. Not the same site as the Sint Anthony Gasthuis entries at Perkswaltje 11 already excluded from this project as private (a different part of the same almshouse complex, owner=stichting there vs owner=publiekrechtelijke organisatie here).",
+      "transport": "Central Leeuwarden, short walk from Leeuwarden Centraal station.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This copper beech used to have a twin. Look at the other side of the front garden and you will find a ginkgo.\n\nThe Nieuw Sint Anthony Gasthuis was built between 1862 and 1864 to a design by F. Stoett, and two copper beeches went into its front garden, one on each side, each mirroring the other. The national register puts their planting somewhere between 1860 and 1870 and suspects, without stating it as fact, that they arrived with the building itself. That would make this one around 160 years old.\n\nThe western tree lost. A wound opened in its trunk, a fungus nobody identified got into it, and it declined quickly. When inspectors came back in 2017 they found it had been felled and a ginkgo planted where it had stood. Symmetry is a hard thing to hold on to for a century and a half.\n\nThe eastern tree is the one still standing, and it has been looked after. The Bomenstichting made it their adoption tree in 1987, and the register still describes it as in good condition. Look down at the base of the trunk: the boundary fence has been cut and reshaped around the tree rather than the other way round.\n\nThe register carries no measurement of the trunk, and only one coordinate for what were once two trees, so the pin marks the garden rather than the beech.",
+      "how_to_recognise": "You can recognise it by the purple-black leaves, and by what stands opposite it: a ginkgo, planted where its twin was felled. It stands on the eastern side of the front garden of the Nieuw Sint Anthony Gasthuis."
+    },
+    {
+      "id": "lee_037",
+      "name": "The Twin Beeches of the Goverts Gasthuis",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Marcelis Goverts Gasthuis, Noordersingel 54, Leeuwarden",
+        "latitude": 53.205868,
+        "longitude": 5.793443,
+        "neighbourhood": "Noordersingel, across from the Prinsentuin"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1682928, two beeches planted in symmetric layout, planted band 1900-1910)",
+        "https://nl.wikipedia.org/wiki/Marcelis_Goverts_Gasthuis (building history: founded 1658, this Noordersingel almshouse built 1877 to a design by H.R. Stoett; corroborates the register's own building-history note, not the trees themselves)"
+      ],
+      "access": "Free to view. The almshouse's garden faces the public Noordersingel street, directly across from the Prinsentuin; register marks the trees visitable=ja, owned by the almshouse's public-body trust.",
+      "transport": "Central Leeuwarden, short walk from the Prinsentuin cluster.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "These two beeches were dated by a photograph. In a picture of the almshouse taken in 1904 they are saplings, thin enough to be easy to miss.\n\nThat photograph is most of the evidence for their age, and the national register says so plainly. It reads the picture, puts the planting somewhere between 1900 and 1910, and leaves the question there. It also notes what the image makes obvious: the two were set deliberately in mirror image, one on each side of the building, the way an institution used to announce itself.\n\nThe institution is far older than either the trees or the house they stand against. The Marcelis Goverts Gasthuis was founded in 1658 by Marcelis Goverts and Mayke Marcus for Leeuwarden's Mennonite congregation, and it moved to the Noordersingel in 1877 into a Neo-Renaissance building by the architect H.R. Stoett. The beeches came a generation after that.\n\nThe most dangerous thing to happen to them since went on underground. In 1994 sewer works were dug close by, the kind of job that quietly kills a mature tree by taking out its roots, and both came through it. Inspected in 2017, both were in good leaf with nothing wrong at the base of the trunk.\n\nNeither trunk has been measured, and the register is the only source that mentions the trees at all. They stand directly across the Noordersingel from the Prinsentuin, which puts them on the same short walk.",
+      "how_to_recognise": "You can recognise them by the symmetry: two beeches of matching size set one on each side of the almshouse front, planted to mirror the building. They stand on the Noordersingel, across from the Prinsentuin."
+    },
+    {
+      "id": "lee_039",
+      "name": "The Second Plane of the Old City Cemetery",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 166 to 176 years, from the register's planting band of 1850 to 1860",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Oude Stadsbegraafplaats, Jelsummerstraat, on the path between sections 2 and 4",
+        "latitude": 53.209503,
+        "longitude": 5.790241,
+        "neighbourhood": "Vlietzone"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1692402, planted band 1850-1860)",
+        "https://nl.wikipedia.org/wiki/Oude_Stadsbegraafplaats_Leeuwarden (independently confirms the cemetery's 1830 design by Lucas Pieters Roodbaard, 1833 opening and 1967 national-monument status, matching the register's own account of the site; does not mention this specific tree)"
+      ],
+      "access": "Free. Open ground, a former cemetery no longer in use, the same site as the already-published plane (lee_004) on the path between sections 2 and 3.",
+      "transport": "About 1.5 km north of Leeuwarden station, on the Jelsummerstraat.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register gives this cemetery two separate plane entries, and they stand half a kilometre apart inside the same walled ground.\n\nThis is the second of them: a pair of planes on the path between sections two and four, with a planting band of 1850 to 1860. The oldest trees here date from around 1830, so these two arrived a good twenty years into the cemetery's working life, when the ground they shade had already been filling for a generation.\n\nThat ground was laid out in 1833 to a design by Lucas Pieters Roodbaard, who also drew the Prinsentuin, which is why a burial ground reads here as a landscape garden with graves in it. Burials stopped long ago and the site became a national monument in 1967.\n\nWhat it has become since is closer to a wood. Ivy has climbed most of the trunks. Grey herons nest in the crowns, colonially and noisily, and they start early enough in the year that the racket arrives before the leaves do.\n\nThe planes themselves do what planes do everywhere. The bark comes away in plates and leaves a mottle of cream, olive and grey underneath, which makes them the easiest trunks to pick out among all the ivy around them.\n\nNeither of the two has been measured, and the register is the only source that records them. If you know more about this pair than a planting decade, tell us.",
+      "how_to_recognise": "You can recognise them by the flaking cream and olive bark, and by there being two side by side. They stand on the path between sections 2 and 4; the cemetery's other registered plane is a single tree 500 metres off."
+    },
+    {
+      "id": "lee_040",
+      "name": "The Silver Lime of Sophiaplantsoen",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Sophiaplantsoen, near Lange Marktstraat, Leeuwarden",
+        "latitude": 53.197461,
+        "longitude": 5.792342,
+        "neighbourhood": "Schapenweide / Sophiaplantsoen"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1682940, planted band 1900-1910, owner=gemeente, visitable=ja)"
+      ],
+      "access": "Free, on the public Sophiaplantsoen green strip near Lange Marktstraat and the station area. Checked against OpenStreetMap (2026-09-10): the surrounding streets (Sophialaan, Van Swietenstraat, Lange Marktstraat) are ordinary public roads and cycleways with no access=private tags, unlike the nearby former Schapenweide estate ground now occupied by the Aegon office campus about 100m away, which this project has already excluded as private (see data/leads/leeuwarden.json). This is a different, public corner of the old Schapenweide name.",
+      "transport": "Near Leeuwarden station, on the Sophiaplantsoen/Lange Marktstraat side.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The national register carries these two limes, and in the space where it keeps a tree's history it has written one word: onbekend. Unknown.\n\nWhat it does record is short. Two silver limes on the Sophiaplantsoen, planted somewhere between 1900 and 1910, owned by the city, free for anyone walking past. That is the whole file on them.\n\nThe species is the interesting part. Tilia tomentosa comes from the Balkans and Anatolia rather than from anywhere near Friesland, and the give-away sits on the back of the leaf: dense white felt underneath, dark green on the face. Turn one leaf over and you have the species.\n\nLeeuwarden turns out to hold a small collection of them. One stands on the Druifstreek opposite the Blokhuispoort, another north of it on the Eewal, and this pair a few minutes from the station, which is enough to make silver lime a species you can tick off across a single afternoon in one city.\n\nNobody has taped either trunk, and nothing has been written about the pair beyond the register's two lines. If you know when they went in, tell us.",
+      "how_to_recognise": "You can recognise them by there being two of the same tree side by side, and by the leaf undersides, felted white where the common limes around town are green on both faces. They stand on the Sophiaplantsoen strip."
+    },
+    {
+      "id": "lee_041",
+      "name": "The Beech of Diaconessenpark",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Diaconessenpark, in front of the former main building of the Diakonessenziekenhuis, Leeuwarden",
+        "latitude": 53.204913,
+        "longitude": 5.79098,
+        "neighbourhood": "Diaconessenpark"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1688395, planted band 1880-1890)"
+      ],
+      "access": "Free. About 75m from the already-published Diaconessenpark trees (lee_019, lee_020, lee_021), the same landscaped courtyard of the 1990s apartment redevelopment of the former Diakonessenhuis hospital grounds. An earlier pass established via OSM that this whole courtyard is mapped leisure=park with open, gate-free, paved footways and no private-access tags; that finding is extended here since this tree sits inside the same courtyard.",
+      "transport": "About 700 m from Leeuwarden Centraal station, in the Diaconessenpark courtyard.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The flats around this beech went up in the 1990s. The tree was already a century old when the builders arrived.\n\nWhat stood here before them was the Diakonessenhuis, Leeuwarden's deaconess hospital, which closed in 1987 and had its grounds turned into apartments over the decade that followed. The old garden came through the conversion as a courtyard, paved through and open at every side, and it still holds its trees. Three more of them are mapped about 75 metres from this one.\n\nThis is the least documented of the set. The national register gives it a planting band of 1880 to 1890 and then stops. The history field is empty. The red chestnut down the courtyard has a written record behind it, of the hospital garden it was planted for and of the root damage the 1990s building work did to it; the beech has nothing attached at all, so what it went through during that decade of digging is simply not on record.\n\nYou can still pick it out. Common beech carries bark like nothing else of its size: smooth, pale grey and close to unbroken, more skin than bark, where the chestnuts around it are rough and plated.\n\nThe register lists it as privately owned, as it does two of the three trees already mapped in this courtyard, which is a fact about the deeds rather than about a gate.",
+      "how_to_recognise": "You can recognise it by the bark, smooth pale grey and close to unbroken, where the chestnuts sharing the courtyard are rough and plated. It stands in the Diaconessenpark courtyard, in front of the former hospital's main building."
+    },
+    {
+      "id": "lee_038",
+      "name": "The Caucasian Wingnut of Rengerspark",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Rengerspark, south side, Leeuwarden",
+        "latitude": 53.208087,
+        "longitude": 5.79293,
+        "neighbourhood": "Rengerspark"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (LRMB register nr 1695807, planted with the park's founding, 1900-1910)",
+        "https://web.archive.org/web/20250522131935/https://www.welkominleeuwarden.nl/stem-op-de-mooiste-boom-van-de-gemeente-leeuwarden/ (2020 municipal 'Most Beautiful Tree' public vote: 'de grote vleugelnoot in het Rengerspark' was one of ten trees nominated, confirming the tree's local recognition and standing as of 2020)"
+      ],
+      "access": "Free. Open public park (Rengerspark, rijksmonument since 2001).",
+      "transport": "About 1.2 km north of Leeuwarden station, on foot; joins the already-published maple (lee_014) and Turkey oak (lee_030) in the same park.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A large branch tore out of this tree and took much of the trunk with it. What is left stands as two halves, held by an anchor braced between them.\n\nThe national register is not alarmed by that. It calls this wingnut one of the heaviest of its species in the Netherlands and the undisputed champion of Friesland, reads the wound as an early entry into the veteran phase, and says the tree can safely carry on for at least another decade. It is being left to age and decay where it stands, deliberately, for the wildlife that a rotting tree of this size supports.\n\nRengerspark was a gift. The Rengers family handed the ground to Leeuwarden, Hendrik Copijn laid it out between 1902 and 1906, and the wingnut went in with that planting. In 2020 the municipality ran a public vote for the most beautiful tree in the district, and the big wingnut in Rengerspark was one of the ten on the ballot.\n\nLate summer is its moment. Caucasian wingnut is a walnut relative from the Caucasus, and it fruits in long green strings of winged nutlets that hang off the branches like beads on a curtain.\n\nFor a champion it is strangely unmeasured: no girth, no height, no figure of any kind on record anywhere we can find. If you own a tape measure, we would like the number.",
+      "how_to_recognise": "You can recognise it by the trunk, split into two halves by a torn-out branch and held by an anchor braced between them. It stands on the south side of Rengerspark; no other tree here hangs strings of winged nutlets in late summer.",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "kind": "fruit",
+        "label": "August and September, when the long strings of winged nutlets hang from the branches"
       }
     }
   ]
