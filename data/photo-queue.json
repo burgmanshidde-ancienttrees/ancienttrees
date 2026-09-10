@@ -6788,7 +6788,9 @@
      "author": "Cornelis Troost",
      "lat": null,
      "lng": null,
-     "cats": "Category:1730s paintings in the Netherlands Category:1730s portrait paintings from the Netherlands (male) Category:1735 oil on canvas paintings Category:1735 portrait paintings of men Category:18th-century oil portraits of men at half length Category:18th-century portrait paintings in the Netherlands Category:Artworks with known accession number Category:CC-PD-Mark Category:Images with annotations Category:Inscriptions in portrait paintings Category:PD-Art (PD-old-auto-expired) Category:PD-Art missing SDC copyright status Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Paintings in the Museum Boerhaave Category:Paintings without Wikidata item Category:Portrait paintings by Cornelis Troost Category:Portrait paintings with gray background Category:Portraits of Herman Boerhaave"
+     "cats": "Category:1730s paintings in the Netherlands Category:1730s portrait paintings from the Netherlands (male) Category:1735 oil on canvas paintings Category:1735 portrait paintings of men Category:18th-century oil portraits of men at half length Category:18th-century portrait paintings in the Netherlands Category:Artworks with known accession number Category:CC-PD-Mark Category:Images with annotations Category:Inscriptions in portrait paintings Category:PD-Art (PD-old-auto-expired) Category:PD-Art missing SDC copyright status Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Paintings in the Museum Boerhaave Category:Paintings without Wikidata item Category:Portrait paintings by Cornelis Troost Category:Portrait paintings with gray background Category:Portraits of Herman Boerhaave",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and it is an 18th-century portrait painting, not a photograph of a tree"
     }
    ]
   },
@@ -6829,7 +6831,9 @@
      "licence": "CC BY",
      "author": "(c) Erin Lalime, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.1586944444,4.4921583333"
+     "obs_location": "52.1586944444,4.4921583333",
+     "judged": "reject",
+     "verdict": "Leaf and beechnut close-up, and the foliage is green, not the copper form"
     },
     {
      "title": "iNat obs 313773687 (Fagus sylvatica)",
@@ -6838,7 +6842,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "52.1591028422,4.4925088534"
+     "obs_location": "52.1591028422,4.4925088534",
+     "judged": "reject",
+     "verdict": "Leaf close-up, green foliage, no trunk or crown"
     },
     {
      "title": "iNat obs 34824036 (Fagus sylvatica)",
@@ -6847,7 +6853,9 @@
      "licence": "CC BY",
      "author": "(c) Mikko Heikkinen, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.1590495278,4.4924313056"
+     "obs_location": "52.1590495278,4.4924313056",
+     "judged": "reject",
+     "verdict": "Leaf close-up shot upward into the canopy, green foliage, no tree readable"
     },
     {
      "title": "iNat obs 34824036 (Fagus sylvatica)",
@@ -7108,7 +7116,9 @@
      "author": "Tournasol7",
      "lat": 45.77396,
      "lng": 4.85519,
-     "cats": "Category:Acer opalus (leaves) Category:Auvergne-Rhône-Alpes photographs taken on 2024-06-07 Category:Botanical specimens in the Parc de la Tête d'Or Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:June 2024 in Lyon Category:Self-published work"
+     "cats": "Category:Acer opalus (leaves) Category:Auvergne-Rhône-Alpes photographs taken on 2024-06-07 Category:Botanical specimens in the Parc de la Tête d'Or Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:June 2024 in Lyon Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Single leaf close-up, and the species is Acer opalus, not the Cappadocian maple"
     },
     {
      "title": "File:Acer opalus in Parc de la Tete d'Or (6).jpg",
@@ -7118,7 +7128,9 @@
      "author": "Tournasol7",
      "lat": 45.77396,
      "lng": 4.85519,
-     "cats": "Category:Acer opalus Category:Auvergne-Rhône-Alpes photographs taken on 2024-06-07 Category:Botanical specimens in the Parc de la Tête d'Or Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:June 2024 in Lyon Category:Self-published work"
+     "cats": "Category:Acer opalus Category:Auvergne-Rhône-Alpes photographs taken on 2024-06-07 Category:Botanical specimens in the Parc de la Tête d'Or Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:June 2024 in Lyon Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Close-up of samaras on a twig, and the species is Acer opalus, not the Cappadocian maple"
     },
     {
      "title": "File:Magnolia à grandes fleurs (Magnolia grandiflora) - 102.jpg",
@@ -7128,7 +7140,9 @@
      "author": "Another one of my pictures:\n\n\n\nThis photograph was taken by Medium69 (William Crochot) and released under the license st",
      "lat": 45.77357667,
      "lng": 4.85493833,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Medium69 Category:Information field template with formatting Category:Magnolia grandiflora Category:Photographs by Medium69 Category:Self-published work Category:Specimens in the Jardin Botanique de Lyon Category:Taken with Canon EOS 6D and Canon EF 24-70mm F2.8L II USM Category:Unassessed QI candidates"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Medium69 Category:Information field template with formatting Category:Magnolia grandiflora Category:Photographs by Medium69 Category:Self-published work Category:Specimens in the Jardin Botanique de Lyon Category:Taken with Canon EOS 6D and Canon EF 24-70mm F2.8L II USM Category:Unassessed QI candidates",
+     "judged": "reject",
+     "verdict": "A Magnolia grandiflora, not our maple, and the CC BY-SA author field holds a re-use notice rather than a name"
     }
    ]
   },
@@ -13501,7 +13515,9 @@
      "author": "Christine Matthews",
      "lat": 51.51461,
      "lng": -0.0982,
-     "cats": "Category:CC-BY-SA-2.0 Category:Cafés in the City of London Category:Chapter house of St. Paul's Cathedral Category:Images by Christine Matthews Category:Images from Geograph Britain and Ireland Category:Information field template with formatting"
+     "cats": "Category:CC-BY-SA-2.0 Category:Cafés in the City of London Category:Chapter house of St. Paul's Cathedral Category:Images by Christine Matthews Category:Images from Geograph Britain and Ireland Category:Information field template with formatting",
+     "judged": "reject",
+     "verdict": "Street scene of brick offices and a cafe terrace; one bare tree at the right edge, not the subject"
     },
     {
      "title": "File:Paternoster Square, London EC2 - geograph.org.uk - 2162659.jpg",
@@ -13531,7 +13547,9 @@
      "author": "Christine Matthews",
      "lat": 51.51452,
      "lng": -0.0982,
-     "cats": "Category:2008 in the City of London Category:CC-BY-SA-2.0 Category:December 2008 in London Category:Images by Christine Matthews Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Temple Bar Gate in Paternoster Square Category:United Kingdom photographs taken on 2008-12-19"
+     "cats": "Category:2008 in the City of London Category:CC-BY-SA-2.0 Category:December 2008 in London Category:Images by Christine Matthews Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Temple Bar Gate in Paternoster Square Category:United Kingdom photographs taken on 2008-12-19",
+     "judged": "reject",
+     "verdict": "Proximity junk: the Temple Bar gateway, no tree in the frame at all"
     },
     {
      "title": "File:View of the Stratos Tower, One Blackfriars, the South Bank Tower and the London Eye from the roof of the One New Change - geograph.org.uk - 5449629.jpg",
@@ -13668,7 +13686,9 @@
      "author": "ClemRutter",
      "lat": 51.506708,
      "lng": -0.152257,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Self-published work Category:Unite for Europe March"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Self-published work Category:Unite for Europe March",
+     "judged": "reject",
+     "verdict": "Proximity junk: a street demonstration with flags and crowds, a bare tree only at the top edge"
     },
     {
      "title": "File:Waiting for london .11 - Flickr - Tom Wolf - Automotive Photography.jpg",
@@ -15281,7 +15301,9 @@
      "author": "Paulitzer",
      "lat": 51.49669,
      "lng": -0.238691,
-     "cats": "Category:2018 in the London Borough of Hammersmith and Fulham Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Platanus in the United Kingdom Category:Platanus orientalis (cultivated) Category:Ravenscourt Park Category:Self-published work"
+     "cats": "Category:2018 in the London Borough of Hammersmith and Fulham Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Platanus in the United Kingdom Category:Platanus orientalis (cultivated) Category:Ravenscourt Park Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Title names this tree, 6 m from the pin, whole tree in leaf filling the frame with the swollen baobab base clearly readable"
     },
     {
      "title": "File:Ravenscourt Park picnic area, view under black walnut tree - geograph.org.uk - 8007757.jpg",
@@ -15315,7 +15337,9 @@
      "author": "Derek Harper",
      "lat": 51.49552493,
      "lng": -0.23790124,
-     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Ravenscourt Park Category:Trees in the London Borough of Hammersmith and Fulham"
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Ravenscourt Park Category:Trees in the London Borough of Hammersmith and Fulham",
+     "judged": "reject",
+     "verdict": "A group of bare winter planes 139 m from the pin; no single tree is the subject and the swollen baobab trunk is absent"
     },
     {
      "title": "File:Trees and a lake in the spring sunshine. - geograph.org.uk - 1231552.jpg",
@@ -53333,7 +53357,9 @@
      "author": "Rudolphous",
      "lat": 52.154328,
      "lng": 4.503031,
-     "cats": "Category:2021 in Leiden Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2021-08-06 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Plantsoen (Leiden) Category:Self-published work"
+     "cats": "Category:2021 in Leiden Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2021-08-06 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Plantsoen (Leiden) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "General park path scene; no single tree is the subject and the centre band is the gravel path"
     },
     {
      "title": "File:Leiden - Plantsoen (Avary).jpg",
@@ -58257,7 +58283,9 @@
      "lat": 49.61373398,
      "lng": 6.12484038,
      "cats": "Category:April 2009 Luxembourg photographs Category:CC-BY-SA-3.0-LU Category:Files with coordinates missing SDC location of creation (49° N, 6° E) Category:Remarkable giant sequoia in Parc Amélie Category:Self-published work Category:Taken with Canon Digital IXUS 50",
-     "source": "wikidata/Q13105015"
+     "source": "wikidata/Q13105015",
+     "judged": "reject",
+     "verdict": "Two sequoias side by side with a statue between them, so which trunk is ours is a guess, and the centre band of a wide crop holds only the hedge"
     },
     {
      "title": "iNat obs 184838687 (Sequoiadendron giganteum)",
@@ -58544,7 +58572,9 @@
      "author": "GilPe",
      "lat": 49.6113811,
      "lng": 6.1351064,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 6° E) Category:January 2024 Luxembourg photographs Category:Remarkable European beech next to Saint Michael's Church Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 6° E) Category:January 2024 Luxembourg photographs Category:Remarkable European beech next to Saint Michael's Church Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "Same copper beech on the Corniche from a second angle; ours is a sycamore"
     },
     {
      "title": "File:Luxembourg, hêtre pourpre remarquable Corniche (104).jpg",
@@ -58554,7 +58584,9 @@
      "author": "GilPe",
      "lat": 49.6113839,
      "lng": 6.1351056,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 6° E) Category:January 2024 Luxembourg photographs Category:Remarkable European beech next to Saint Michael's Church Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 6° E) Category:January 2024 Luxembourg photographs Category:Remarkable European beech next to Saint Michael's Church Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "Species collision: the title and the tree are a copper beech, ours is a sycamore"
     },
     {
      "title": "File:Luxembourg, érable sycomore remarquable Pfaffenthal (101).jpg",
@@ -58707,7 +58739,9 @@
      "lat": 49.610619,
      "lng": 6.122232,
      "cats": "Category:CC-BY-SA-3.0 Category:Chêne Krombach Category:Files with coordinates missing SDC location of creation (49° N, 6° E) Category:January 2020 Luxembourg photographs Category:Taken with Huawei Mate 20 Pro Category:Uploaded with VicuñaUploader",
-     "source": "wikidata/Q13103645"
+     "source": "wikidata/Q13103645",
+     "judged": "approve",
+     "verdict": "Title names the Krombach oak and carries its Wikidata id; whole tree fills the frame, trunk and limb structure readable, daylight and in colour, bare only"
     },
     {
      "title": "File:Luxembourg, chêne Krombach, parc Louvigny (101).jpg",
@@ -58776,7 +58810,9 @@
      "author": "Romainbehar",
      "lat": 45.75819,
      "lng": 4.794643,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:January 2022 in Lyon Category:Plaques in Lyon 5e arrondissement Category:Plaques referencing 1893 in Lyon Category:Plaques referencing 1985 in Lyon Category:Self-published work Category:Square Gabrielle Dupond-Ebrard"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:January 2022 in Lyon Category:Plaques in Lyon 5e arrondissement Category:Plaques referencing 1893 in Lyon Category:Plaques referencing 1985 in Lyon Category:Self-published work Category:Square Gabrielle Dupond-Ebrard",
+     "judged": "reject",
+     "verdict": "Photograph of the square's name plaque; only a scrap of cedar foliage behind it"
     },
     {
      "title": "File:Lyon 5e - Square Gabrielle Dupond-Ebrard, aire de jeux (juil 2024).jpg",
@@ -59005,7 +59041,9 @@
      "author": "さかおり",
      "lat": 35.328182,
      "lng": 136.348425,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Ryotokuji no Ohatsuki Icho Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Ryotokuji no Ohatsuki Icho Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Filename names this tree, 22 m from the pin; whole ginkgo in leaf against blue sky, crown and trunk both readable and centred"
     },
     {
      "title": "File:Ryotokuji no Ohatsuki Icho C.jpg",
@@ -59025,7 +59063,9 @@
      "author": "さかおり",
      "lat": 35.328152,
      "lng": 136.34862,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Ryotokuji no Ohatsuki Icho Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Ryotokuji no Ohatsuki Icho Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Shot upward from the foot of the trunk; the crown fills the frame but the tree's form is not readable"
     },
     {
      "title": "File:Ryotokuji no Ohatsuki Icho E.jpg",
@@ -59035,7 +59075,9 @@
      "author": "さかおり",
      "lat": 35.328208,
      "lng": 136.348567,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Ryotokuji no Ohatsuki Icho Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Ryotokuji no Ohatsuki Icho Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Right tree but the lower third is temple roofs and playground clutter; the cleaner frame B is approved instead"
     },
     {
      "title": "File:Ryotokuji no Ohatsuki Icho F.jpg",
@@ -59173,7 +59215,9 @@
      "author": "Magnus Manske",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-1.0 Category:CC-BY-SA-3.0-migrated Category:Dagobertshausen (Malsfeld) Category:Files tagged CC-by-sa-old Category:GFDL Category:License migration completed"
+     "cats": "Category:CC-BY-SA-1.0 Category:CC-BY-SA-3.0-migrated Category:Dagobertshausen (Malsfeld) Category:Files tagged CC-by-sa-old Category:GFDL Category:License migration completed",
+     "judged": "reject",
+     "verdict": "Village entry sign over a fenced meadow; no lime in the frame"
     }
    ]
   },
@@ -59192,7 +59236,9 @@
      "lat": 51.103018,
      "lng": 9.473815,
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 9° E) Category:On OSM Category:Self-published work Category:Taken with Casio Exilim EX-Z110 Category:Tanzlinde (Hilgershausen)",
-     "source": "wikidata/Q113027163"
+     "source": "wikidata/Q113027163",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR"
     },
     {
      "title": "File:2015-04 ND-3-Stufen-Linde Hilgershausen(Hessen).jpg",
@@ -59226,7 +59272,9 @@
      "author": "Yvonne Bentele",
      "lat": 51.10284137,
      "lng": 9.47335168,
-     "cats": "Category:2015 photographs of Hesse Category:21st-century photographs of Schwalm-Eder-Kreis Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 9° E) Category:Germany photographs taken on 2015-04-18 Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015, DE-HE Category:Images from Wiki Loves Earth 2015 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photographs by User:YvoBentele Category:Self-published work Category:Tanzlinde (Hilgershausen) Category:Uploaded via Campaign:wle-de-he"
+     "cats": "Category:2015 photographs of Hesse Category:21st-century photographs of Schwalm-Eder-Kreis Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 9° E) Category:Germany photographs taken on 2015-04-18 Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015, DE-HE Category:Images from Wiki Loves Earth 2015 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photographs by User:YvoBentele Category:Self-published work Category:Tanzlinde (Hilgershausen) Category:Uploaded via Campaign:wle-de-he",
+     "judged": "reject",
+     "verdict": "Close detail of the pollarded limbs resting on the timber frame against a house wall; no whole tree"
     },
     {
      "title": "File:Felsberg-Hilgershausen Linde.jpg",
@@ -59265,7 +59313,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Evangelische Kirche Ostheim (Malsfeld) Category:Famous trees in Hesse Category:Files with coordinates missing SDC location of creation (51° N, 9° E) Category:GFDL Category:License migration redundant Category:Natural monuments in Malsfeld Category:On OSM Category:Ostheim (Malsfeld) Category:Self-published work Category:Tilia in Hesse Category:Trees in Schwalm-Eder-Kreis",
-     "source": "wikidata/Q118727231"
+     "source": "wikidata/Q118727231",
+     "judged": "approve",
+     "verdict": "Title carries this tree's Wikidata id; the trained dance-lime in full leaf on its posts beside the church, unmistakably the subject and centred"
     }
    ]
   },
@@ -59585,7 +59635,9 @@
      "author": "Mary and Andrew",
      "lat": 20.871686,
      "lng": -156.677581,
-     "cats": "Category:2013 in Lahaina Category:CC-BY-2.0 Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Flickr images reviewed by FlickreviewR 2 Category:Lahaina Banyan Tree Category:March 2013 in Hawaii"
+     "cats": "Category:2013 in Lahaina Category:CC-BY-2.0 Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Flickr images reviewed by FlickreviewR 2 Category:Lahaina Banyan Tree Category:March 2013 in Hawaii",
+     "judged": "reject",
+     "verdict": "Stitched letterbox panorama about 260 px tall, backlit and washed out; the banyan reads as a distant hedge"
     },
     {
      "title": "File:Panorama- inside the Banyan tree (8626121904).jpg",
@@ -59595,7 +59647,9 @@
      "author": "Mary and Andrew",
      "lat": 20.871686,
      "lng": -156.677623,
-     "cats": "Category:2013 in Lahaina Category:CC-BY-2.0 Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Flickr images reviewed by FlickreviewR 2 Category:Lahaina Banyan Tree Category:March 2013 in Hawaii"
+     "cats": "Category:2013 in Lahaina Category:CC-BY-2.0 Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Flickr images reviewed by FlickreviewR 2 Category:Lahaina Banyan Tree Category:March 2013 in Hawaii",
+     "judged": "reject",
+     "verdict": "360 degree panorama taken from inside the canopy; no readable tree and an unusable aspect ratio"
     },
     {
      "title": "File:Relaxing under the Banyan Tree.jpg",
@@ -59605,7 +59659,9 @@
      "author": "Derek van Vliet from Toronto, Ontario, Canada",
      "lat": 20.871849,
      "lng": -156.677682,
-     "cats": "Category:2009 in Lahaina Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Lahaina Banyan Tree Category:Taken with Canon EOS 400D"
+     "cats": "Category:2009 in Lahaina Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Lahaina Banyan Tree Category:Taken with Canon EOS 400D",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR"
     },
     {
      "title": "File:The main root of the Banyan tree at Lahaina, Maui, Hawaii.jpg",
@@ -59948,7 +60004,9 @@
      "author": "さかおり",
      "lat": 35.595883,
      "lng": 138.470508,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kochozenji no Byakushin Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kochozenji no Byakushin Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Shot from under the canopy into the dead spar; foliage fills the frame and no tree form is readable"
     },
     {
      "title": "File:Kochozenji no Byakushin trees. Northwest tree. C.jpg",
@@ -59958,7 +60016,9 @@
      "author": "さかおり",
      "lat": 35.595702,
      "lng": 138.470527,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kochozenji no Byakushin Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kochozenji no Byakushin Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Lower half of the frame is mown grass and the juniper merges with the conifers beside it; it does not fill the frame"
     },
     {
      "title": "File:Kochozenji no Byakushin trees. Southeast tree.jpg",
@@ -59968,7 +60028,9 @@
      "author": "さかおり",
      "lat": 35.595695,
      "lng": 138.470478,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kochozenji no Byakushin Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kochozenji no Byakushin Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Fine twisted trunk but taken from beneath the canopy, so the crown is cut off and the tree's shape cannot be read"
     },
     {
      "title": "File:Kochozenji no Byakushin trees. Southwest tree. A.jpg",
@@ -74082,7 +74144,9 @@
      "lat": 53.20206433,
      "lng": 5.79549467,
      "cats": "Category:2010 in Leeuwarden Category:CC-BY-SA-3.0-NL Category:Netherlands photographs taken on 2010-09-08 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon EOS 1000D Category:Wilhelminaboom (Leeuwarden)",
-     "source": "wikidata/Q17329489"
+     "source": "wikidata/Q17329489",
+     "judged": "reject",
+     "verdict": "The ornamental railing and fountain are the subject; trunk part-hidden, crown cropped away"
     },
     {
      "title": "File:Stadsgezichten Leeuwarden de Wilhelminaboom op het Raadhuisplein met sierhek en, Bestanddeelnr 922-2758.jpg",
@@ -74092,7 +74156,9 @@
      "author": "Eric Koch for Anefo",
      "lat": null,
      "lng": null,
-     "cats": "Category:1969 in Leeuwarden Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1969-04-08 Category:Photographs by Eric Koch (flat list) Category:Photographs by Eric Koch in Leeuwarden (1969) Category:Wilhelminaboom (Leeuwarden)"
+     "cats": "Category:1969 in Leeuwarden Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1969-04-08 Category:Photographs by Eric Koch (flat list) Category:Photographs by Eric Koch in Leeuwarden (1969) Category:Wilhelminaboom (Leeuwarden)",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and an Anefo press archive frame"
     },
     {
      "title": "File:Wilhelminaboom Leeuwarden.jpg",
@@ -74102,7 +74168,9 @@
      "author": "Pierrette13",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Images with extracted images Category:Self-published work Category:Wilhelminaboom (Leeuwarden)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Images with extracted images Category:Self-published work Category:Wilhelminaboom (Leeuwarden)",
+     "judged": "reject",
+     "verdict": "Backlit close-up of the crowned monogram on the railing; bare branches only, no readable tree"
     },
     {
      "title": "File:Wilhelminaboom Leeuwarden (cropped).jpg",
@@ -74170,7 +74238,9 @@
      "author": "Otter",
      "lat": null,
      "lng": null,
-     "cats": "Category:2010 in Maastricht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Fences in Maastricht Category:GFDL Category:Julianaboom, Keizer Karelplein, Maastricht Category:License migration redundant Category:Netherlands photographs taken on 2010-07-18 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A100"
+     "cats": "Category:2010 in Maastricht Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Fences in Maastricht Category:GFDL Category:Julianaboom, Keizer Karelplein, Maastricht Category:License migration redundant Category:Netherlands photographs taken on 2010-07-18 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSLR-A100",
+     "judged": "reject",
+     "verdict": "Wrong city: Maastricht's Julianaboom railing, and only the railing and suckers are visible"
     }
    ]
   },
@@ -74437,7 +74507,9 @@
      "author": "Ymblanter",
      "lat": 53.20041,
      "lng": 5.79992,
-     "cats": "Category:2015 in Leeuwarden Category:CC-BY-SA-3.0-NL Category:Druifstreek 63, Leeuwarden Category:Netherlands photographs taken on 2015-04-05 Category:Photographs of the Netherlands by Ymblanter Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:2015 in Leeuwarden Category:CC-BY-SA-3.0-NL Category:Druifstreek 63, Leeuwarden Category:Netherlands photographs taken on 2015-04-05 Category:Photographs of the Netherlands by Ymblanter Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Street facade photo; a bare leafless tree at the left edge, not the subject, centre band is brickwork"
     }
    ]
   },
@@ -74502,7 +74574,9 @@
      "author": "FrankOverman",
      "lat": 50.84449,
      "lng": 5.68204,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht",
+     "judged": "reject",
+     "verdict": "Not viewed: exposure POOR, and the subject is a Stolperstein pavement plaque"
     },
     {
      "title": "File:Stolperstein für Hanchen Nussbaum-Goldschmidt (Maastricht).jpg",
@@ -74540,7 +74614,9 @@
      "author": "Kleon3",
      "lat": 50.83295,
      "lng": 5.670046,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Maastricht photographs taken on 2021-08-15 Category:Self-published work Category:Sint-Servaasbron Category:Statues of Saint Servatius in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Maastricht photographs taken on 2021-08-15 Category:Self-published work Category:Sint-Servaasbron Category:Statues of Saint Servatius in Maastricht",
+     "judged": "reject",
+     "verdict": "The saint's shrine over the well is the subject; only unidentifiable foliage behind it"
     },
     {
      "title": "File:2021 Maastricht, Sint-Servaasbron (2).jpg",
@@ -74550,7 +74626,9 @@
      "author": "Kleon3",
      "lat": 50.83295,
      "lng": 5.670046,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Maastricht photographs taken on 2021-08-15 Category:Self-published work Category:Sint-Servaasbron"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Maastricht photographs taken on 2021-08-15 Category:Self-published work Category:Sint-Servaasbron",
+     "judged": "reject",
+     "verdict": "Looking down the well shaft at the water; no tree in the frame"
     },
     {
      "title": "File:Maastricht-Sint-Servaasbron (1).JPG",
@@ -74618,7 +74696,9 @@
      "author": "Romaine",
      "lat": 50.84423611,
      "lng": 5.69197778,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "General canal and path view; no individual plane tree readable"
     },
     {
      "title": "File:Maastricht-Monseigneur Nolenspark (7).jpg",
@@ -74628,7 +74708,9 @@
      "author": "Romaine",
      "lat": 50.84430278,
      "lng": 5.69285,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Proximity junk: the park's brick sluice wall, trees only as background foliage"
     },
     {
      "title": "File:Maastricht - Mgr. Nolenspark GM-1393 20190330.jpg",
