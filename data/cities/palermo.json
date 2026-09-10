@@ -61,7 +61,8 @@
       "location_precision": "confirmed",
       "height_m": 21.0,
       "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 3600
+      "girth_cm": 3600,
+      "how_to_recognise": "You can recognise it by the thicket of secondary trunks and aerial roots, grown into a colonnade measured at 36 metres round and 21 metres tall. It stands in the Giardino Garibaldi in the middle of Piazza Marina."
     },
     {
       "id": "pal_002",
@@ -97,7 +98,8 @@
       "location_precision": "confirmed",
       "height_m": 14.5,
       "verify_notes": "Height 14.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 291
+      "girth_cm": 291,
+      "how_to_recognise": "You can recognise it by the messages, photographs and poems taped to the trunk, renewed every 23 May, on a fig only 2.91 metres round. It stands on the pavement outside the 1960s apartment block at Via Notarbartolo 23."
     },
     {
       "id": "pal_003",
@@ -134,7 +136,8 @@
       "height_m": 25.0,
       "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "girth_cm": 2400
+      "girth_cm": 2400,
+      "how_to_recognise": "You can recognise it by the 44 secondary trunks dropping from the branches and thickening into columns where they reach the ground, under a crown of some 3,000 square metres. It stands inside the ticketed Orto Botanico."
     },
     {
       "id": "pal_004",
@@ -170,7 +173,8 @@
       "location_precision": "confirmed",
       "height_m": 12.0,
       "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 590
+      "girth_cm": 590,
+      "how_to_recognise": "You can recognise it by the tiered, umbrella-shaped crown, each segment ending in a burst of stiff blue green leaves, on a trunk 5.9 metres round. It stands in the garden, away from the house; the big fig is nearer that."
     },
     {
       "id": "pal_005",
@@ -204,7 +208,8 @@
       "location_precision": "confirmed",
       "height_m": 7.0,
       "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 600
+      "girth_cm": 600,
+      "how_to_recognise": "You can recognise it by its girth, six metres round on a tree only seven metres tall, the largest of the group. They stand in front of the Palazzina Cinese, the Chinese pavilion in Parco della Favorita."
     },
     {
       "id": "pal_006",
@@ -240,7 +245,8 @@
       "location_precision": "confirmed",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 480
+      "girth_cm": 480,
+      "how_to_recognise": "You can recognise it by the trunk, nearly five metres round, the thickest of the roughly twenty figs planted on these grounds. It stands in the public park at Villa Trabia, the estate that now holds a library."
     },
     {
       "id": "pal_007",
@@ -273,7 +279,8 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register (a single 'Palma da datteri' point with its own circumference measurement, distinct from a grove-wide ensemble entry), confirmed. This entry describes one specific registered specimen rather than the c.400-palm planting as a whole, so it passes as a single collectible tree rather than an unbounded ensemble; the historical grove context is background, not the claim. History corroborated by Italian Wikipedia and the Comune di Palermo's tourism page. Exact planting date not documented for this individual palm, estimated from the 1905 garden layout. Photo found 2026-07-30 via a coordinate-radius Commons geosearch rather than category browsing (the file isn't in the Villa Bonanno category, which is why the earlier dedicated search missed it): its own embedded GPS metadata reads 38.112417, 13.355300, matching this entry's AMI-register coordinate to 6 decimal places. Viewed directly: a mature fruiting date palm against open sky, consistent with the species and the register's measured specimen.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its trunk, up to 2.5 metres round, one of the mature survivors among the hundreds of date palms planted here in 1905. It stands in the unfenced garden of Villa Bonanno, facing the Norman Palace."
     },
     {
       "id": "pal_008",
@@ -306,7 +313,8 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register ('Palme messicane', Villa Giulia), confirmed. Treated as a compact ensemble entry (the entrance avenue itself, a single obvious place to stand) rather than the whole garden, the same pattern that passed Amsterdam's Lomanstraat tunnel and Tokyo's Meiji Jingu Gaien avenue, and the reasoning that failed Barcelona's old La Rambla entry. History (first-public-garden claim, Goethe visit, sundial and fountain) corroborated by Italian Wikipedia; the RAMI registry independently corroborates the palm avenue itself but also registers it as a grouped entry, consistent with treating it as an avenue rather than a single specimen. Exact planting date for the 19th century expansion not established in sources found, presented as a wide honest range. Photo viewed directly: an unmistakable palm-lined avenue with visitors walking beneath it, matching the story exactly.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by the colonnade of fan palms tall enough to shade the whole length of the entrance avenue. They line the Via Lincoln approach into Villa Giulia."
     },
     {
       "id": "pal_009",
@@ -341,7 +349,8 @@
       },
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 2100
+      "girth_cm": 2100,
+      "how_to_recognise": "You can recognise it by the long horizontal branches running out parallel to the ground, reading as a low green ceiling rather than a column. It stands closest to the house at Villa Malfitano; the dragon tree is elsewhere."
     },
     {
       "id": "pal_010",
@@ -375,7 +384,8 @@
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "girth_cm": 2730
+      "girth_cm": 2730,
+      "how_to_recognise": "You can recognise it by the shade it throws over half the Lago dei Cigni, on a trunk system 27.3 metres round and 30 metres tall. It stands at the swan lake in the Villa Tasca grounds, across the water from the plane tree."
     },
     {
       "id": "pal_011",
@@ -543,7 +553,8 @@
       },
       "story": "Eight metres round the trunk and eleven metres tall: this is a fig that spent its growth going sideways. It stands in the Giardino Inglese, the long public park Giovan Battista Filippo Basile laid out from 1851 as Palermo pushed north out of its old walls along Via della Libertà, and of the several big Moreton Bay Figs growing there it is the one Sicily's register of monumental trees actually measured, at 820 centimetres of girth and 11 metres of height. The park's figs trace back to stock raised at the Orto Botanico across town, which is where most of this city's Australian giants began. Ficus macrophylla behaves the same way wherever it is comfortable: branches send roots down, the roots reach soil and thicken into trunks of their own, and a single stem slowly turns into a colonnade. The garden around it has changed names along with the century. It carries Piersanti Mattarella's name now, after the president of Sicily shot dead in Palermo in 1980, and on a warm afternoon it is full of people treating it as a park rather than a memorial. Nobody has published an age for this tree. The Italian register has no age column, and no one appears to have dated this specimen. If you have seen a figure for it, send it over and we will add it.",
       "height_m": 11.0,
-      "verify_notes": "Height 11.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 11.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "how_to_recognise": "You can recognise it by the trunk, 8.2 metres round under a crown just 11 metres tall. It stands in the Giardino Inglese, the one of the park's several big figs that Sicily's monumental tree register measured."
     },
     {
       "id": "pal_016",
@@ -575,7 +586,8 @@
         "status": "missing"
       },
       "story": "A stone pine in the Royal Gardens is slowly disappearing into a fig. Over the decades this Ficus macrophylla has grown around a large Pinus pinea beside it and taken part of it inside itself. The Sicilian Regional Assembly, which occupies the Palazzo dei Normanni above the garden, describes the fig as embracing the pine. An Italian nature writer, less diplomatically, called it a deadly embrace. Both are looking at the same thing.\n\nIt is the largest of the three Moreton Bay Figs in the Giardini Reali, ten metres round and twenty metres tall, and the register that recorded it rates its health as excellent. Its age is a dendrological estimate rather than a documented planting: roughly 135 years, which in honest terms means somewhere between about 115 and 155. That leaves it younger and far smaller than the fig in Piazza Marina, which is the one holding Palermo's records.\n\nWhat it grows on is the other half of the story. The Giardini Reali are a terraced garden on top of the walls of the Palazzo dei Normanni, the palace the Norman kings raised over the old city and which now houses the island's parliament. Against that the fig is a newcomer, and it is still the thing people stop for.\n\nThat is also the catch for a visitor. The gardens open on limited days around parliamentary business and charge an entry fee, so check the current hours before you cross town for this one.",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the stone pine it has grown around and partly absorbed. It stands on the terraced garden atop the walls of the Palazzo dei Normanni, the largest of the three figs there at ten metres round."
     },
     {
       "id": "pal_017",
@@ -649,7 +661,8 @@
         "label": "May and June, when it flowers scarlet on bare branches"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "how_to_recognise": "You can recognise it by the bare branches covered in small scarlet bells, in the years it flowers, on a trunk 4.5 metres round. It stands in the working nursery, 85 metres from the dragon tree at the same address."
     },
     {
       "id": "pal_019",
@@ -682,7 +695,8 @@
       "location_precision": "confirmed",
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the single trunk and one crown, 30 metres tall, where the fig beside the lake spreads into a colonnade instead. It stands 184 metres from that fig, on the far side of the Villa Tasca swan lake."
     },
     {
       "id": "pal_020",
