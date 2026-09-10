@@ -1,6 +1,28 @@
 {
  "leads": [
   {
+   "name": "Unidentified tree, Higashiyama (submission 98)",
+   "species": null,
+   "location": {
+    "latitude": 35.00566,
+    "longitude": 135.77446,
+    "neighbourhood": "Higashiyama, roughly 600m west of kyo_005 (Weeping Cherry of Gion), near Kennin-ji / central Gion"
+   },
+   "reason": "Reader submission #98 (contribute form, kind tree, app:collect), 2026-09-10: a bare GPS pin with no name, species or photo attached, 'GPS, standing at the tree'. Higashiyama is dense with temple grounds (Kennin-ji, Yasui Konpira-gu) at this longitude and no single candidate can be named from coordinates alone without over-claiming. Not enough to verify or publish. Needs a name, species or photo from the submitter before this can become a candidate.",
+   "sources": []
+  },
+  {
+   "name": "Unidentified tree, Higashiyama near Maruyama Park (submission 99)",
+   "species": null,
+   "location": {
+    "latitude": 35.00522,
+    "longitude": 135.77953,
+    "neighbourhood": "Higashiyama, 183m from kyo_005 (Weeping Cherry of Gion), inside or near Maruyama Park / Chion-in / Shoren-in grounds"
+   },
+   "reason": "Reader submission #99 (contribute form, kind tree, app:collect), 2026-09-10: bare GPS pin, no name, species or photo. 183m from the already-published kyo_005 puts it plausibly inside Maruyama Park itself (which holds more than one notable tree) or the adjoining Chion-in/Shoren-in grounds, but that is too wide a net (400m+ to Shoren-in's camphors) to assign to a specific named tree on coordinates alone. Needs a name, species or photo from the submitter before this can become a candidate.",
+   "sources": []
+  },
+  {
    "name": "Sakon-no-Sakura, Kyoto Imperial Palace (Shishinden)",
    "species": "Yamazakura, likely (Prunus jamasakura)",
    "location": {
