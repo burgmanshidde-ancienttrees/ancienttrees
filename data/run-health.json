@@ -10872,6 +10872,42 @@
    ],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-09-10T12:27:29+00:00",
+   "date": "2026-09-10",
+   "run_id": "34476798764",
+   "minutes": 80.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 490,
+   "denials": 32,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(env), Bash(find), Bash(for), Bash(if), Bash(ls), Bash(python3), Bash(rm), Bash(tail), Bash(timeout), Bash(wait)",
+   "ended": "success",
+   "tokens": 45933163,
+   "claims_held": [],
+   "commits": 6,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "fort-lauderdale",
+     "trees": 4
+    },
+    {
+     "city": "prague",
+     "trees": 4
+    },
+    {
+     "city": "oahu",
+     "trees": 2
+    },
+    {
+     "city": "berlin",
+     "trees": 1
+    }
+   ],
+   "trees": 11,
+   "logged": true
   }
  ],
  "schedule_changes": [
