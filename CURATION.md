@@ -11,6 +11,62 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 - Finishing four claims an earlier attempt left standing, plus the deploy break it was sitting next to
+
+Started from `python3 scripts/passcheck.py --claims`: valencia (verify, 25 min
+left), cordoba (write, 147 min), utrecht (photo, 147 min), arnhem (photo, 147
+min), all held by the previous night-run. Finished or advanced all four
+rather than releasing them unfinished, per the standing instruction that an
+unfinished claim is the strongest predictor of a wasted window.
+
+**Valencia (verify -> write, released):** the earlier verify pass had left 3
+verified trees in `data/research/valencia-verified.json` numbered vlc_027-029,
+which collided with 3 Botanic Garden trees a concurrent pass had already
+published under those exact ids. Renumbered to vlc_030-032 (confirmed free via
+`passcheck.py --brief valencia`), then dispatched a write-stories pass. Added:
+the Norfolk Pine of Vila de Sant Josep (Burjassot, a separate municipality
+4.3km out, labelled honestly as a day-trip stop rather than folded into
+Valencia proper), the Canary Palm of Gran Via (flagged for the red palm
+weevil risk reported on the same avenue), and the Fig of the Hort de les
+Camelies (flagged for a thin second source and 3.3km distance from the
+published cluster). Valencia now 31 trees, was 28. The write pass caught two
+stale tree-count promises (question_meta, the access FAQ's free-count) in
+both the English and the Spanish overlay and fixed them same pass. Claim
+released.
+
+**Cordoba (write claim, actually a translation; released):** no
+`cordoba-verified.json` existed, so there was no story-writing work standing
+behind this claim. What was actually sitting uncommitted was a complete,
+hand-quality Spanish overlay (`data/i18n/es/cordoba.json`, rung 0b: Spanish
+holds a ROLL OUT verdict and Cordoba's English page already earns
+impressions), all 16 trees translated, `i18ncheck.py` clean. Committed as is.
+Claim released; the mismatch between the claimed kind and the actual work
+product is worth naming so a future `--claim` call names the true kind.
+
+**Krakow (unclaimed, found alongside these):** a general photo-judge sweep
+sitting in the same uncommitted diff had approved 2 Krakow photos (the
+Straszewskiego ash, the Karmelicka elm) among ~30 rejects across several
+cities. Applied and vendored (`vendor_photos.py`); both were still pointing
+at upload.wikimedia.org, which is how the app's images start failing per the
+session-start warning.
+
+**Utrecht (photo, in progress):** the same sweep had judged some but not all
+candidates for Utrecht's queue and found one approval already sitting
+unapplied: the Liberation Beech of Servaasbolwerk (utr_015), a copper beech
+positively identified by its own memorial sign. Applied and vendored.
+Dispatched a further photo-judge batch on the remaining unjudged Utrecht/
+Arnhem candidates before releasing either claim; see the next entry once it
+reports back.
+
+**The actual rung-2 item: Build and deploy was failing**, and it had nothing
+to do with any of the above. `gh run view --log-failed` on the newest failed
+run showed `scripts/i18ncheck.py` refusing the build over 6 missing
+access/transport fields in `data/i18n/it/florence.json` (flo_016, flo_018,
+flo_019), left behind by the 2026-09-09 Florence backfill that filled those
+fields in English and never touched the Italian overlay. Translated and
+filled the three missing pairs. `i18ncheck.py`, `preflight.py`, `astro
+build` and `qa.py` all clean afterward.
+
 ## 2026-09-09 (continuation 3) - Florence: backfilled 3 thin entries rather than duplicating them, caught before it shipped
 
 Claimed Florence (rank #13, register-backed room to grow toward its 30-tree
