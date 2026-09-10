@@ -90,5 +90,28 @@
     "location_precision": "confirmed",
     "curation_status": "flagged",
     "verify_notes": "Two independent sources agree almost exactly on location (0.8m apart, effectively the same tree): the national LRMB register (nr 1690254, planted_band 1890-1900, reason 'dendrologisch', owner gemeente, visitable=ja, visible=nee) and the Gemeente Eindhoven open-data 'bomen' dataset (species Castanea sativa, status_ter_indicatie 'Monumentaal', plantjaar 1940, hoogte 15-18m), current as of the dataset's 2026-09-07 refresh (good 'alive now' evidence). AGE CONFLICT: register implies planted 1890-1900 (about 126-136 years old today), municipal record says 1940 (about 86 years old); no winner picked, both reported. Same park and planting history as ein_014 (the Honey Locust a few dozen metres away): the Stadswandelpark grew from the 19th-century Landgoed Den Elzent estate, became a public park in 1921 and was formally named in 1931; this corner behind the former coach house (now the Stadspaviljoen) carries a cluster of other 'Monumentaal'-rated trees from the same 1910/1940 planting phases (beeches, pin oaks, black locusts), good context for the story, and this chestnut plus the honey locust could be described as two stops on the same short walk. No girth or diameter figure found in either source. Sweet chestnuts are edible-fruiting trees; if it still produces chestnuts that could be a seasonal (best_time, autumn) detail for the writer to check on a future visit, though this pass found no direct evidence of fruiting either way."
+  },
+  {
+    "id": "ein_016",
+    "name": "The Plane of Marienhage",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "about a century old (sources disagree on the decade)",
+    "age_min": 91,
+    "age_max": 146,
+    "location": {
+      "address": "Kanaalstraat 6, behind the former Marienhage monastery, Eindhoven",
+      "latitude": 51.438072,
+      "longitude": 5.485747,
+      "neighbourhood": "Eindhoven city centre, on the Dommel"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://data.eindhoven.nl/explore/dataset/bomen/table/?flg=nl-nl"
+    ],
+    "access": "Free; the LRMB register lists it as visitable, but it is not visible from the street. It stands behind the former Marienhage monastery (now a hotel, DomusDELA/Hotel Marienhage) against the Dommel; reach it via the public Dommelpad riverside walking route, which is documented as passing this exact site (Marienhage is a marked stage point of the long-distance 'Ons Kloosterpad' trail).",
+    "transport": "Eindhoven Centraal, about 10 minutes on foot, near Kanaalstraat / the Dommel.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree closely on location (4.8m apart): the national LRMB register (nr 1690274, planted_band 1880-1890, reason 'monumentaal', owner gemeente, visitable=ja, visible=nee) and the Gemeente Eindhoven open-data 'bomen' dataset (species Platanus hispanica, status_ter_indicatie 'Monumentaal', plantjaar 1935, hoogte '>24 m'), current as of the dataset's 2026-09-07 refresh (good 'alive now' evidence). AGE CONFLICT: register implies planted 1880-1890 (about 136-146 years old today), municipal record says 1935 (about 91 years old); no winner picked, both reported; either way this is a large (>24m) old specimen. ACCESS CAVEAT, flag for the writer/curator: the register itself marks 'visible: nee', meaning it cannot be seen from the public street, and the site (Klooster Marienhage, founded 1419 for Augustinian hermits, rebuilt after 1876/1890, sold 2017) is now a boutique hotel/DomusDELA. A web search found the redevelopment plan explicitly making 'the garden... public' with a new bridge over the Dommel, and Marienhage is listed as a marked point on the long-distance Dommelpad/Ons Kloosterpad walking route, which is reasonable evidence of a public path reaching the riverside behind the building, but this pass could not directly confirm on the ground (no OSM check run, no site photo seen) whether that path currently passes within sight of this specific tree or whether it crosses hotel-controlled grounds. Checked per the Ypres technique in BRIEF_RESEARCH.md: an Overpass query within 60m of the tree's coordinate found several `highway=footway`/`highway=pedestrian` ways with paving-stone or sett surfaces and a `leisure=garden` area, none tagged `access=private` or otherwise restricted; this is supporting evidence (not proof) that the riverside grounds behind Kanaalstraat 6 carry public paths rather than being sealed off, consistent with the redevelopment plan's own claim that the garden was being made public. No girth or diameter figure found in either source."
   }
 ]
