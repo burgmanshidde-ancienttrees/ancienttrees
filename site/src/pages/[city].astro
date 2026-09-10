@@ -15,6 +15,7 @@ import { peakFor } from "../lib/phenology";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { nTrees } from "../lib/tree-count";
 import { fitTitle } from "../lib/title";
+import { arm } from "../lib/copy-test";
 import { submitLink, ageToken } from "../lib/tree-copy";
 import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
@@ -106,11 +107,23 @@ const ageHook = oldestYears >= 200 ? oldestAge : null;
 const one = trees.length === 1;
 const seeN = one ? "One Tree to See" : `${trees.length} to See`;
 const treesN = one ? "One Tree" : `${trees.length} Trees`;
+// COPY TEST, running since 2026-09-10 (scripts/copytest.py, Contract C
+// v1.16). Half the pages with real demand name the age before the count, on
+// the hypothesis that the age is the hook and the count is inventory. The
+// assignment is frozen in data/copy-tests.json, so a title never flips
+// between builds; a city not in it gets the control it always had.
+const titleArm = arm("city title", cslug);
+const agedTitles = titleArm === "age_first"
+  ? [
+      `Ancient Trees in ${cityName}: Oldest ${ageHook} Years, ${seeN}`,
+      `Ancient Trees in ${cityName}: Oldest ${ageHook} Years, ${treesN}`,
+    ]
+  : [
+      `Ancient Trees in ${cityName}: ${seeN}, Oldest ${ageHook} Years`,
+      `Ancient Trees in ${cityName}: ${treesN}, Oldest ${ageHook} Years`,
+    ];
 const title = fitTitle([
-  ...(ageHook ? [
-    `Ancient Trees in ${cityName}: ${seeN}, Oldest ${ageHook} Years`,
-    `Ancient Trees in ${cityName}: ${treesN}, Oldest ${ageHook} Years`,
-  ] : []),
+  ...(ageHook ? agedTitles : []),
   `Ancient Trees in ${cityName}: ${one ? "One Remarkable Tree" : `${trees.length} Remarkable Trees`} Worth Visiting`,
   `Ancient Trees in ${cityName}: ${treesN} Worth Visiting`,
   `Ancient Trees in ${cityName}`,

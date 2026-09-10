@@ -480,6 +480,28 @@ def city_demand_rows(pages, pairs=None):
     return out
 
 
+def copy_test_lines():
+    """Where the running copy test stands, every morning.
+
+    Hidde, 2026-09-10: "i'd like to do continuous testing of copy tbh and make
+    it part of the learning cycle." Continuous means it reports itself without
+    anybody running anything, and it means a finished test is followed by the
+    next one rather than by a gap. The reading rules live in
+    scripts/copytest.py; this only carries the answer into DATA.md, which is
+    the file every night run reads."""
+    try:
+        import copytest
+    except ImportError:
+        return []
+    try:
+        body = copytest.report()
+    except Exception as exc:  # a test must never take the digest down
+        return ["", "**Copy test:** reading failed (%s)" % exc]
+    if not body:
+        return []
+    return ["", "**Copy test**", "", "```", body, "```"]
+
+
 def learning_lines(pages, pairs=None):
     """What the pages that convert have that the others lack.
 
@@ -694,6 +716,7 @@ def gsc_section(gsc):
         gap_line,
         *demand_lines(pages, pairs),
         *learning_lines(pages, pairs),
+        *copy_test_lines(),
         *language_lines(pages),
         *zero_click_queries(pages, pairs),
         *leak_lines,
