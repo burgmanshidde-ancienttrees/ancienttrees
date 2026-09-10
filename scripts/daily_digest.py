@@ -22,6 +22,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_MD = os.path.join(ROOT, "DATA.md")
 ZONE_NAME = "ancienttrees.app"
@@ -382,6 +384,34 @@ def demand_lines(pages, pairs=None):
     the ten-day window: below that a page is one person scrolling past, and
     treating it as demand would make the rule mean nothing. Cities only, since
     depth work is per city; a tree page's impressions count toward its city."""
+    rows = city_demand_rows(pages, pairs)
+    if not rows:
+        if not pages:
+            return []
+        return ["", "**Depth is allowed on:** no city cleared 10 impressions this window."]
+    out = ["", "**Depth is allowed on these cities** (10+ impressions in the window;"
+               " photos, pins and best_time go here and nowhere else):", "",
+           "| City | Clicks | Impressions | CTR | Position | Normal there |"
+           " Biggest query, and where it really sits |",
+           "|---|---:|---:|---:|---:|---:|---|"]
+    for r in rows:
+        q = r["query_row"]
+        qcell = ("%s (i%d, p%.0f)" % (clean_query(q[0]), q[1], q[2])) if q else "-"
+        out.append("| %s | %d | %d | %.1f%% | %.1f | %.1f%% | %s |"
+                   % (r["city"], r["clicks"], r["impressions"], r["ctr"],
+                      r["position"], r["expected"], qcell))
+    return out
+
+
+def city_demand_rows(pages, pairs=None):
+    """One row per city with real demand: clicks, impressions, weighted
+    position, the CTR that position normally earns, and the city's biggest
+    single query.
+
+    SPLIT OUT OF demand_lines() 2026-09-10, so the depth roster and
+    scripts/seolearn.py read the same numbers instead of each aggregating
+    Search Console their own way. One authority per number, the rule this file
+    already applies to scoring."""
     if not pages:
         return []
     by_city = {}
@@ -401,11 +431,11 @@ def demand_lines(pages, pairs=None):
         c, i, wp = by_city.get(city, (0, 0, 0.0))
         by_city[city] = (c + r["clicks"], i + r["impressions"],
                          wp + r.get("position", 0) * r["impressions"])
-    rows = sorted(((c, v[0], v[1], (v[2] / v[1]) if v[1] else 0)
-                   for c, v in by_city.items()), key=lambda x: -x[2])
-    rows = [r for r in rows if r[2] >= 10]
-    if not rows:
-        return ["", "**Depth is allowed on:** no city cleared 10 impressions this window."]
+    ranked = sorted(((c, v[0], v[1], (v[2] / v[1]) if v[1] else 0)
+                     for c, v in by_city.items()), key=lambda x: -x[2])
+    ranked = [r for r in ranked if r[2] >= 10]
+    if not ranked:
+        return []
     # Position, impression-weighted across the city's pages, and the CTR a
     # result at that position normally earns. Added 2026-08-14 after a session
     # read Palermo's 2% CTR as a titles-and-thumbnails problem and Hidde asked
@@ -437,17 +467,42 @@ def demand_lines(pages, pairs=None):
         if cur is None or r["impressions"] > cur[1]:
             top_q[city] = (r["keys"][1], r["impressions"], r.get("position", 0))
 
-    out = ["", "**Depth is allowed on these cities** (10+ impressions in the window;"
-               " photos, pins and best_time go here and nowhere else):", "",
-           "| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |",
-           "|---|---:|---:|---:|---:|---:|---|"]
-    for c, cl, im, pos in rows:
-        ctr = 100.0 * cl / im if im else 0
+    out = []
+    for c, cl, im, pos in ranked:
         q = top_q.get(c)
-        qcell = ("%s (i%d, p%.0f)" % (clean_query(q[0]), q[1], q[2])) if q else "-"
-        out.append("| %s | %d | %d | %.1f%% | %.1f | %.1f%% | %s |"
-                   % (c, cl, im, ctr, pos, expected_ctr(pos), qcell))
+        out.append({
+            "city": c, "clicks": cl, "impressions": im, "position": pos,
+            "ctr": 100.0 * cl / im if im else 0,
+            "expected": expected_ctr(pos),
+            "query": ("%s (i%d, p%.0f)" % (clean_query(q[0]), q[1], q[2])) if q else "-",
+            "query_row": q,
+        })
     return out
+
+
+def learning_lines(pages, pairs=None):
+    """What the pages that convert have that the others lack.
+
+    Wired in 2026-09-10, the same day the pass was written, because Hidde
+    asked the question that mattered more than the analysis: does this happen
+    daily without him touching it. It did not. A script nobody runs is a note,
+    and this file's own ratchet says a lesson becomes a mechanism or it does
+    not count."""
+    try:
+        import seolearn
+    except ImportError:
+        return []
+    rows = city_demand_rows(pages, pairs)
+    if not rows:
+        return []
+    try:
+        body = seolearn.report_from_rows(rows)
+    except Exception as exc:  # never let the learning pass kill the digest
+        return ["", "**What converts:** learning pass failed (%s)" % exc]
+    if not body:
+        return []
+    return ["", "**What converts, and what does not** (scripts/seolearn.py)", "",
+            "```", body, "```"]
 
 
 def pages_table(pages):
@@ -638,6 +693,7 @@ def gsc_section(gsc):
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
         *demand_lines(pages, pairs),
+        *learning_lines(pages, pairs),
         *language_lines(pages),
         *zero_click_queries(pages, pairs),
         *leak_lines,

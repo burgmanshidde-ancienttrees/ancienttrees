@@ -111,11 +111,25 @@ def page_facts():
         shown = sum(1 for t in trees
                     if (t.get("photo") or {}).get("url")
                     and (t.get("photo") or {}).get("status") in ("approved", "found_needs_check"))
+        n = len(trees)
         facts[os.path.basename(path)[:-5]] = {
-            "trees": len(trees),
+            "trees": n,
             "photos": shown,
-            "photo_share": shown / len(trees),
-            "confirmed": sum(1 for t in trees if t.get("location_precision") == "confirmed"),
+            "photo_share": shown / n,
+            "pin_share": sum(1 for t in trees
+                             if t.get("location_precision") == "confirmed") / n,
+            # A line saying which trunk this is when the pin cannot. Hidde's
+            # rung 7, and the cheapest thing on the ladder, so worth knowing
+            # whether it moves anything in search as well as on the ground.
+            "recognise_share": sum(1 for t in trees if t.get("how_to_recognise")) / n,
+            "age_share": sum(1 for t in trees if t.get("age_estimate")) / n,
+            "girth_share": sum(1 for t in trees if t.get("girth_cm")) / n,
+            # A seasonal peak is the one thing on a page that says go THIS
+            # month, so if anything we write converts a searcher, it is a
+            # candidate.
+            "season_share": sum(1 for t in trees if t.get("best_time")) / n,
+            "story_words": (sum(len((t.get("story") or "").split())
+                                for t in trees) / n),
         }
     return facts
 
@@ -152,6 +166,61 @@ def band(rows, label):
     }
 
 
+def _quarters(key):
+    """Four buckets of a 0-to-1 share, the shape most of these facts have."""
+    return [("none", lambda r, k=key: r[k] == 0),
+            ("under 20%", lambda r, k=key: 0 < r[k] < 0.2),
+            ("20 to 40%", lambda r, k=key: 0.2 <= r[k] < 0.4),
+            ("40% and over", lambda r, k=key: r[k] >= 0.4)]
+
+
+# EVERY VARIABLE WE CAN MEASURE PER PAGE, and the point of the list is that
+# adding one is a single entry rather than a code change. Hidde asked on
+# 2026-09-10 whether this learns anything beyond photographs; it learns
+# whatever is declared here, and the honest limit is sample size rather than
+# imagination. At 60-odd pages and 150-odd clicks a bucket needs a large gap
+# before it means anything, so read a single week as a hint and never as a
+# finding.
+FEATURES = [
+    ("SHARE OF TREES CARRYING A PHOTOGRAPH", _quarters("photo_share")),
+    ("SHARE WITH A CONFIRMED PIN", _quarters("pin_share")),
+    ("SHARE WITH A RECOGNITION LINE", _quarters("recognise_share")),
+    ("SHARE WITH A RECORDED AGE", _quarters("age_share")),
+    ("SHARE WITH A SEASONAL PEAK", _quarters("season_share")),
+    ("TREES ON THE PAGE", [
+        ("4 to 6", lambda r: r["trees"] <= 6),
+        ("7 to 15", lambda r: 7 <= r["trees"] <= 15),
+        ("16 to 25", lambda r: 16 <= r["trees"] <= 25),
+        ("over 25", lambda r: r["trees"] > 25),
+    ]),
+    ("AVERAGE STORY LENGTH", [
+        ("under 120 words", lambda r: r["story_words"] < 120),
+        ("120 to 170", lambda r: 120 <= r["story_words"] < 170),
+        ("170 and over", lambda r: r["story_words"] >= 170),
+    ]),
+]
+
+
+def report_from_rows(rows):
+    """The pass, run on Search Console rows the digest already holds.
+
+    Called from daily_digest.py so the learning lands in DATA.md every day
+    without anybody running anything. The standalone path below reads DATA.md
+    instead, because a night run holds no Search Console credentials."""
+    facts = page_facts()
+    out = []
+    for r in rows:
+        f = facts.get(r["city"])
+        if not f or r["impressions"] < MIN_IMPRESSIONS:
+            continue
+        r = dict(r)
+        r.update(f)
+        r["bot"] = bool(BOT_QUERY.search(r.get("query") or ""))
+        r["index"] = (r["ctr"] / r["expected"]) if r["expected"] else 0.0
+        out.append(r)
+    return report(out) if out else ""
+
+
 def report(rows):
     clean = [r for r in rows if not r["bot"]]
     bots = [r for r in rows if r["bot"]]
@@ -183,18 +252,8 @@ def report(rows):
                     % (b["label"], b["n"], b["impressions"], b["clicks"], b["ctr"], b["index"]))
         add("")
 
-    group("SHARE OF TREES CARRYING A PHOTOGRAPH", [
-        ("none", lambda r: r["photo_share"] == 0),
-        ("under 20%", lambda r: 0 < r["photo_share"] < 0.2),
-        ("20 to 40%", lambda r: 0.2 <= r["photo_share"] < 0.4),
-        ("40% and over", lambda r: r["photo_share"] >= 0.4),
-    ])
-    group("TREES ON THE PAGE", [
-        ("4 to 6", lambda r: r["trees"] <= 6),
-        ("7 to 15", lambda r: 7 <= r["trees"] <= 15),
-        ("16 to 25", lambda r: 16 <= r["trees"] <= 25),
-        ("over 25", lambda r: r["trees"] > 25),
-    ])
+    for title, buckets in FEATURES:
+        group(title, buckets)
 
     # The actionable list. A page with real demand, a real query and an index
     # under 0.5 is losing clicks it has already earned the right to, which is
