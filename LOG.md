@@ -631,9 +631,20 @@ to ignore.
 
 ## 2026-09-10 - Photo round three: the protected veteran is the seam
 
-**The count.** 625 trees carried a photograph when this round started and 676
-do now; cities with none at all went from 308 to 276. Across the three rounds
-of these two days: 483 to 676 trees, and 383 photo-less cities down to 276.
+**The count.** 625 trees carried a photograph when this round started and 690
+do now; cities with none at all went from 308 to 265. Across the three rounds
+of these two days: 483 to 690 trees, and 383 photo-less cities down to 265.
+
+**And one tree came OFF the site.** A photo pass rejected a candidate for
+Stuttgart's Max-Eyth-See Oak because it shows a dead trunk. It was right, and
+the candidate is our own entry's second source: a Commons photograph dated 21
+May 2022, taken 27 metres from our pin, showing every limb sawn off with fresh
+cut faces and not one leaf while everything around it stands in full spring
+green. Stuttgart protected that oak partly for its habitat value, which is why
+the dead trunk is left standing. Removed under the no-dead-trees rule, research
+kept in leads, slug redirected, and the city's question page rewritten because
+it named the tree twice. That is twice this week that looking at pixels
+answered a question about a TREE rather than about a picture.
 
 **What this round settles about where photographs come from.** The first hour
 looked like the well had run dry: two passes over eighteen European cities
