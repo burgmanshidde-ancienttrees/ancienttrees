@@ -6645,6 +6645,15 @@
     "note": "Cluster 1 (Protestant cemetery) + Cluster 2 (Warande oaks) + Cluster 3 (Kromme Steenweg, Weg op den Heuvel); 3 of 10 shortlisted candidates were already published, 2 blocked as group plantings; delivered to data/research/helmond-verified.json (hlm_014-018), not yet written to story or merged",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "groningen",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 12 how_to_recognise lines onto live Groningen trees, closing that city's gap to zero; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
