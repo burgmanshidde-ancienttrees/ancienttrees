@@ -1,0 +1,64 @@
+{
+  "city": "Yangshuo",
+  "country": "China",
+  "status": "needs_curation",
+  "intro": "Yangshuo's mapped tree is the Big Banyan, a roughly 1,400-year-old fig spreading wide over the Jinbao River at the old Rongyin ferry crossing. In 1960 it was the backdrop for the most famous scene in the film Liu Sanjie, and most visitors arrive already knowing the shot. Zhuang families still bring offerings at the new and full moon. It is a ticketed stop on the Ten Mile Gallery route south of town, reachable by bike, bus or bamboo raft.",
+  "meta_description": "The Big Banyan Tree of Yangshuo: a 1,400-year-old fig at the Rongyin ferry crossing, film location for Liu Sanjie and a Zhuang sacred site.",
+  "question_answer": "Yangshuo's mapped tree is the Big Banyan, a Chinese banyan standing on the Jinbao River at the old Rongyin ferry crossing, about 7 kilometres south of Yangshuo town. Sources agree on roughly 1,400 years and a Sui dynasty planting, with a trunk 7.05 metres round spreading into a crown wider than the tree is tall.",
+  "question_meta": "Yangshuo's Big Banyan, a 1,400-year-old fig at an old river crossing. Its age, its film history, and how to reach it.",
+  "question_context": "Baidu Baike and TravelChinaGuide, corroborated by several other Chinese and English travel sources, agree the tree is about 1,400 years old, planted in the Sui dynasty, with a trunk 7.05 metres round on a crown far broader than its own 17-metre height. In 1960 the film Liu Sanjie shot its best-known scene here, the singer Liu Sanjie throwing an embroidered ball to Aniu, and a film marker still stands under the branches. Zhuang families treat the tree as sacred and bring offerings at the new and full moon. The site keeps the old name Rongyin Gudu, the ferry in the banyan's shade, from the river crossing it once shaded. It is now a ticketed scenic area, 15 to 18 yuan, open 08:00 to 17:30, and a stop on the Ten Mile Gallery route that runs south of Yangshuo town through the karst, reachable by sightseeing bus, by bike along the road, or by bamboo raft down the Yulong River to Gongnong Bridge and a short walk.",
+  "faq": [
+    {
+      "q": "How old is the Big Banyan Tree of Yangshuo?",
+      "a": "Sources agree on roughly 1,400 years, with a Sui dynasty planting. The trunk is 7.05 metres round."
+    },
+    {
+      "q": "Why is the Big Banyan Tree famous?",
+      "a": "The 1960 film Liu Sanjie shot its most famous scene under the tree, and a film marker stands there today. Zhuang families also treat it as sacred, bringing offerings at the new and full moon."
+    },
+    {
+      "q": "Is the Big Banyan Tree free to visit?",
+      "a": "No, it is a ticketed scenic area, roughly 15 to 18 yuan, open 08:00 to 17:30 daily."
+    },
+    {
+      "q": "How do you get to the Big Banyan Tree?",
+      "a": "It stands about 7 kilometres south of Yangshuo town on the Ten Mile Gallery route: reachable by sightseeing bus, by bike along the road, or by bamboo raft down the Yulong River to Gongnong Bridge and a short walk."
+    }
+  ],
+  "hero_tree_id": "yas_001",
+  "oldest_tree_id": "yas_001",
+  "trees": [
+    {
+      "id": "yas_001",
+      "name": "Big Banyan Tree, Yangshuo",
+      "species": "Chinese Banyan (Ficus concinna)",
+      "age_estimate": "roughly 1,400 years",
+      "age_min": 1300,
+      "age_max": 1500,
+      "girth_cm": 705,
+      "location": {
+        "address": "Big Banyan Tree Scenic Area (大榕树景区), on the Jinbao River, Gaotian Township, Yangshuo County, Guilin, Guangxi",
+        "latitude": 24.734739,
+        "longitude": 110.481648,
+        "neighbourhood": "Gaotian, Yangshuo County, Guilin"
+      },
+      "story": "In 1960 the film Liu Sanjie shot its most famous scene under this tree, the moment the Zhuang singer throws her embroidered ball to Aniu. A film marker stands under the branches today, and most Chinese visitors arrive knowing the shot before they see the tree.\n\nIt was already old by then. The sources agree on about 1,400 years and a Sui dynasty planting, which would put its first century in the decades when the Sui reunified China after three hundred years of division. The trunk is 7.05 metres round and the tree only 17 metres tall, so it spreads rather than climbs: a fig with a crown wide enough to cover the river crossing at its foot, still called Rongyin Gudu, the old ferry in the banyan's shade.\n\nZhuang families treat it as sacred and bring offerings at the new and full moon. The rest of the year it works as a stop on the Ten Mile Gallery, the road and river route that runs south of Yangshuo town through the karst: a gate, a ticket of fifteen to eighteen yuan, open eight until half past five, and a posted visit of about half an hour. Reach it by bike along the road, by sightseeing bus from town, or by bamboo raft down the Yulong to Gongnong Bridge and walk the last stretch.",
+      "how_to_recognise": "You can recognise it by the shape, only 17 metres tall and far broader than that, on a trunk seven metres round. It stands on the riverbank at the old Rongyin ferry crossing, with the Liu Sanjie film marker underneath it.",
+      "verified_sources": [
+        "https://baike.baidu.com/item/%E9%98%B3%E6%9C%94%E5%A4%A7%E6%A6%95%E6%A0%91/10989344",
+        "https://www.travelchinaguide.com/attraction/guangxi/yangshuo/big-banyan-tree.htm"
+      ],
+      "access": "Paid entry: a dedicated, ticketed scenic area (roughly 15-18 yuan solo, or a combo ticket with nearby Moon Hill), open 08:00-17:30 daily. Part of the well-trodden 'Ten Mile Gallery' cycling/tourist route south of Yangshuo town.",
+      "transport": "About 7-7.5km south of Yangshuo County town, on the west/south bank of the Jinbao River near Moon Hill. Reachable by the Ten Mile Gallery sightseeing bus line from Yangshuo's Fengming Tourist Transport Center (~10 yuan), by bike along the Ten Mile Gallery road, or by bamboo raft on the Yulong River to Gongnong Bridge and a short walk.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

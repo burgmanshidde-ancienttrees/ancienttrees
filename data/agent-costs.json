@@ -7284,6 +7284,51 @@
         "tokens": 0,
         "trees": 0,
         "note": "rung-2 fix: deploy.yml had been failing since the prior push on i18ncheck.py (it/florence overlay flo_021 missing access/transport, added by the same push). Filled both fields in data/i18n/it/florence.json; i18ncheck.py clean after."
+      },
+      {
+        "target": "_famous-china",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 3,
+        "note": "Finished an abandoned write claim: 3 of 4 verified trees already had stories from an earlier attempt (King Cypress, Big Banyan Tree Yangshuo, Ginkgo of Shaolin Temple), merged as 3 new single-tree places (Nyingchi, Yangshuo, Dengfeng); the 4th (Six-Dynasty Juniper) deliberately kept unwritten, held as a seed for a future Nanjing page per its own verify_notes destination call",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-italy",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 2,
+        "note": "Finished an abandoned write claim: wrote stories for the 2 remaining verified trees (Downy Oak of Fonte Colombo, Old Lime of Macugnaga) and merged as 2 new single-tree places; _famous-italy-verified.json now empty and deleted",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "famousfrance",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Claim released with no change: the one entry (Fontenay Abbey plane) is deliberately held, fails the single-tree destination test and has no container, per its own re-confirmed verify_notes",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "singapore",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 6,
+        "note": "Botanic Gardens deepen pass (dispatched agent); caught one likely-dead register entry (Kapok/Holttum Hall) and one stale-register suspect (Kempas/Fernery) by cross-checking against sbg.nparks.gov.sg current tree list rather than trusting the register alone",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "singapore",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 6,
+        "note": "Wrote and merged the 6 verified Botanic Gardens trees (sgp_029-034) directly; fixed 2 species-name collisions at merge (Khaya senegalensis to African Mahogany, Podocarpus neriifolius to Willowleaf Podocarp, matching existing corpus usage)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
