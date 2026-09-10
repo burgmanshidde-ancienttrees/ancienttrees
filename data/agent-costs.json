@@ -7084,6 +7084,15 @@
     "note": "5 stories + recognition lines, all with flagged source conflicts (LRMB vs Gemeente Eindhoven open data); 2 species normalised to canonical names; merged into data/cities (eindhoven 11->16), fixed stale meta_description/question_meta/FAQ count promises",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "heerlen",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 7 how_to_recognise lines onto all live Heerlen trees, closing that city's gap to zero (was 0 of 8, one tree already had a line); no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
