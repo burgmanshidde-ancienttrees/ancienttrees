@@ -1,0 +1,25 @@
+[
+  {
+    "id": "hnl_019",
+    "name": "The Kuhio Beach Hula Mound Banyan",
+    "species": "Indian Banyan (Ficus benghalensis)",
+    "age_estimate": "",
+    "girth_cm": 4053.8,
+    "location": {
+      "address": "Kuhio Beach Park, beside the Hula Mound and the Duke Kahanamoku Statue, Kalakaua Avenue, Waikiki, Honolulu, HI 96815",
+      "latitude": 21.2749708,
+      "longitude": -157.8248207,
+      "neighbourhood": "Waikiki (Kuhio Beach Park)"
+    },
+    "verified_sources": [
+      "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf (City & County of Honolulu, Exceptional Trees register, Act 105 of 1975, CC0; register id 391, Ficus benghalensis, Kuhio Beach Park, girth 4053.8 cm, height 70 ft, vitality Good)",
+      "https://www.openstreetmap.org/node/5216796590 (OSM node individually tagged genus=Ficus, denotation=natural_monument, last checked by a mapper 2026-03-29, at 21.2749708,-157.8248207, ~60m from the Duke Kahanamoku Statue beside the Hula Mound)",
+      "https://thishawaiilife.com/kuhio-beach-park/ (describes the 'giant banyan tree' at Kuhio Beach as the site of free Saturday-evening hula and music performances)"
+    ],
+    "access": "Free, always open. Kuhio Beach Park is a public city beach park in central Waikiki with no gate and no entry fee.",
+    "transport": "In central Waikiki, an easy walk (under 15 minutes) from the Moana Banyan and the International Market Place Banyan already on this page; TheBus routes 8, 19, 20 and 23 and the Waikiki Trolley stop on Kalakaua Ave nearby.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Honolulu's official Exceptional Tree register (Act 105 of 1975, City & County of Honolulu, licensed CC0) lists id 391 as an Indian Banyan (Ficus benghalensis) at 'Kuhio Beach Park': girth 4053.8 cm, height 70 ft (~21 m), vitality 'Good'. The register's own coordinates are grid-rounded to 2 decimal places (21.28, -157.82) and are not tree-level. Cross-referenced against an OpenStreetMap node (5216796590) tagged genus=Ficus and denotation=natural_monument, last verified by a mapper on 2026-03-29 (i.e. recent evidence the tree is standing), sitting about 60 m from the Duke Kahanamoku Statue (21.2754760,-157.8253422) beside the Kuhio Beach Hula Mound. Independent tourism/cultural sources (thishawaiilife.com, and others found via search: waikikibeachstays.com and panpacificfestival.org on the Hula Mound) describe a single well-known giant banyan shading the Hula Mound, where the Waikiki Improvement Association's long-running free public hula and music shows are held; the register lists only one banyan for this locality, so this is very likely the same specimen, which is why the pin follows the OSM node rather than the register's own coarse grid point. Girth is the aggregate circumference of a fused banyan aerial-root mass, not a single trunk: recorded as-is, but do not repeat it as a trunk measurement, and do not derive an age from it, since growth-rate dating assumes a single stem and a banyan's massed prop roots do not grow that way. No documented planting date was found anywhere; age_estimate is left empty on purpose, and the page should ask readers if anyone knows when it was planted. Flagged because of that reliance on cross-referencing rather than a register-given tree-level fix, and because the girth figure needs the aggregate-measurement caveat carried into the story rather than dropped. Passes hard rule 10 cleanly: this is one of the most unrestricted public spaces in Waikiki, open around the clock, no ticket, no gate."
+  }
+]

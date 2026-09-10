@@ -89,6 +89,30 @@ both OSM node ids and what a future pass needs (a photo comparison or a
 street-level look) rather than guessed at. Claim released; zero trees
 added to Alicante this pass (still 16, target 20).
 
+## 2026-09-10 (continuation) - Recognition lines: Tokyo (15), Madrid (15), Palermo (14) written
+
+Rung 7 work (recognise.py --stuck was 0, but the wider "every tree eventually"
+backlog stood at 1004 trees missing `how_to_recognise` across the site).
+Dispatched three write-stories passes in parallel, one per city, each given
+the full `recognise.py --brief <city>` output and told to restate only,
+never invent. All three applied cleanly: `recognise.py --apply`, then
+`preflight.py` (565 cities, 0 problems) and an astro build, all clean.
+Longest line 236 characters, under the 240 limit; no em dashes anywhere.
+
+**One pre-existing issue surfaced, not fixed this pass:** Palermo's pal_015
+story claims to be "the smallest and shortest of the figs on this list" at
+8.2m round, but pal_002 (the Falcone Tree, a memorial fig) is 2.91m round,
+genuinely smaller. The recognition-line pass for pal_002 and pal_015
+deliberately avoided repeating pal_015's false superlative in the new lines,
+but the story text itself still says it. Worth a one-line story edit in a
+future pass.
+
+Remaining recognition-line backlog after this pass: roughly 960 trees
+across the rest of the site (was 1004; Tokyo, Madrid and Palermo's combined
+44 are now written). Biggest remaining: Bucaco (13), Fukuoka (12), Dublin
+(12), Warsaw (12), Istanbul (12), Groningen (12), Florence (12), Cordoba
+(11), Rouen (11), Padua (11).
+
 ## 2026-09-09 (continuation 3) - Florence: backfilled 3 thin entries rather than duplicating them, caught before it shipped
 
 Claimed Florence (rank #13, register-backed room to grow toward its 30-tree
