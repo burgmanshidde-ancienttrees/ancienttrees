@@ -90,6 +90,8 @@ def slug(name):
 
 
 FAR_KM = 25
+# See _has_evidence: measured, not chosen.
+LAST_RESORT_METRES = 30
 
 
 def _within(tree, cand):
@@ -109,10 +111,28 @@ def _has_evidence(tree, cand):
     "London Plane of Curtain Square" pulled in a map of Shakespearean London
     theatres, via a category search that read Curtain Square as the Curtain
     Theatre and a name match that read London as a place. Ordinary candidates
-    are unaffected; they earned their place by naming the tree."""
+    are unaffected; they earned their place by naming the tree.
+
+    And the geotag has to be CLOSE, which is the second half, added 2026-09-10
+    with the measurement. The sweep runs at a 100 m radius, and in a village
+    that is a garden while in a dense city it is a different block: viewing
+    passes were handed a photographer's grilled cheese, sandwich and burrito
+    against a Chicago tree at 65 to 77 m, PSV stadium interiors against an
+    Eindhoven beech at 47 m, and busts of Bihari and Vorosmarty against
+    Budapest's planes. Proximity alone drags in whole unrelated upload sets.
+
+    Measured across every last-resort candidate this seam has had judged, 3
+    approvals and 182 rejections: the approvals sit at 9, 17 and 21 metres.
+    A 30 m gate keeps all three and removes 113 of the 182, so it costs
+    nothing that has ever been worth anything and buys back most of a viewing
+    pass. Widen it only against the same measurement."""
     if (cand.get("source") or "") != "last-resort":
         return True
-    return cand.get("lat") is not None and (tree.get("location") or {}).get("latitude") is not None
+    loc = tree.get("location") or {}
+    if cand.get("lat") is None or loc.get("latitude") is None:
+        return False
+    return km((loc["latitude"], loc["longitude"]),
+              (cand["lat"], cand["lng"])) * 1000 <= LAST_RESORT_METRES
 
 
 def _one_file_one_tree(rows):
