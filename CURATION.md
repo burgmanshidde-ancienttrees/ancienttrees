@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation 8, photo follow-up)
+
+Ran `photo_hunt.py`'s free API sweep against the 40 oldest photo-less trees; five of the day's new single-tree places (Lecina, Mendaza, Cabeza del Buey, Muxika, Cerro Veronese) turned up candidates. Fetched and looked at all 15 images by eye against the Cadiz standard. **5 approved**, all CC BY-SA with named authors: Lecina (a wide shot with people for scale, matches the platform/wall setting), Mendaza (shows the hollow trunk and buttresses precisely), Cabeza del Buey (the elm grove in leaf with support props visible), Muxika (the low-branching crown structure), Cerro Veronese (crown and trunk in the piazza). 1 held (Lecina's second candidate, a good wide crown shot, kept as backup rather than shipped since one photo per tree ships). 3 rejected: two of Cabeza del Buey's candidates were an interpretive sign and a commemorative plaque, not the tree; one of Muxika's was a leaf close-up.
+
+**The Cabeza del Buey sign photo turned out to carry a real measurement we did not have**: "PERÍMETRO DEL TRONCO: 7 metros" (girth), matching the age band and height already on file. Added as a fourth source (an on-site interpretive panel is a primary source, photographed and Commons-hosted under CC BY-SA) and filled `girth_cm: 700`; adjusted the story, FAQ context word count stayed within Contract B's 150-200 range after the edit.
+
 ## 2026-09-10 (continuation 8) - Finished a standing write claim, 3 new single-tree places from `_famous-spain`, and a rung-2 build fix
 
 An earlier attempt in this window stopped early having claimed `_famous-spain` for a write pass and written only one of its four verified trees (Lecina, left uncommitted). Finished the remaining three directly rather than dispatching a fresh write-stories pass, since three trees is under BRIEF_WRITING.md's usual batch size and the facts were already sitting verified in `data/research/_famous-spain-verified.json`.
