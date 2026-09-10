@@ -332,10 +332,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Fico_magnolioide.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "FrankAdamo, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2768,
+        "height": 1848
       },
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
