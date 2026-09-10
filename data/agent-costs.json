@@ -6448,6 +6448,17 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-09-10": [
+   {
+    "target": "valencia",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 3,
+    "note": "3 stories + recognition lines (vlc_030-032), merged to city file, Spanish overlay written for all 3, count promises fixed in EN and ES; preflight and astro build clean, qa.py blocked by a concurrent build",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }
