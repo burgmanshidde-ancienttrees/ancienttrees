@@ -24,8 +24,18 @@ ticking one off, and adding one with a photograph. One line says iPhone only,
 because this group never told us what phone they hold. mailcheck and pitchcheck
 clean. Counts verified today (2,884 trees, 565 places).
 
-**FOR HIDDE:** the addresses live in the Supabase `waitlist` table and this
-session has no key, so the send needs either your pull or a run that has one.
+**Where it can actually run, which he asked next.** Not here: this web
+session's egress policy answers 403 to supabase.co outright, so no key would
+have helped. It does not need to run here. `SUPABASE_SERVICE_KEY` and the five
+`OUTREACH_SMTP_*` secrets already sit in the same job in both nightly.yml and
+data-digest.yml, so the whole send runs in Actions with no secret passing
+through a session or through him. `scripts/waitlist_batch.py` pulls the rows
+under the cutoff and writes `drafts/batches/waitlist-app-live.json`; the
+sending, the do-not-contact list, the never-mail-twice guard and the daily cap
+stay in outreach_send.py, which refuses any batch not marked
+`approved_by_hidde`.
+
+**FOR HIDDE:** the batch is built with status `draft`. Flip it and it goes.
 
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 

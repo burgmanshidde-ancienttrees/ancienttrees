@@ -30,8 +30,10 @@ they cannot use.
 
 Counts checked today: 2,884 trees across 565 places. Store id 6806177833.
 
-To: the `waitlist` rows with `created_at < 2026-09-03T14:16:33Z`. This session
-has no service key, so pulling them is yours or a run's that has one.
+To: the `waitlist` rows with `created_at < 2026-09-03T14:16:33Z`, pulled by
+`python3 scripts/waitlist_batch.py`. It writes the batch and sends nothing;
+outreach_send.py does the rest and refuses any batch not marked
+`approved_by_hidde`.
 Subject: Ancient Trees is out
 
 ---
