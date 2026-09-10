@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "In September 2020 the city of Dordrecht worked out how old the black locust in Park Merwestein actually is, and came back with 300 to 325 years. That makes it one of the few trees in the country with a municipal investigation behind its age instead of a guess. The rest of this page is a plane in a charity courtyard built in 1625 by a man trying to fix his reputation, a beech where a synagogue used to stand, and a tree of heaven surviving on nothing but paving.",
-  "meta_description": "Sixteen remarkable trees in Dordrecht: a black locust dated to 300 years, a plane in a 1625 almshouse court, and a rare pond cypress in Weizigtpark.",
-  "question_meta": "Dordrecht's oldest tree is the black locust in Park Merwestein, which the city dated to 300 to 325 years in 2020. Where it stands, and fifteen more.",
+  "meta_description": "Twenty remarkable trees in Dordrecht: a black locust dated to 300 years, a plane in a 1625 almshouse court, and a rare pond cypress in Weizigtpark.",
+  "question_meta": "Dordrecht's oldest tree is the black locust in Park Merwestein, which the city dated to 300 to 325 years in 2020. Where it stands, and nineteen more.",
   "question_answer": "The oldest tree in Dordrecht is a black locust near the S. van Hoogstratensingel entrance of Park Merwestein. This one does not need estimating: research carried out by the municipality in September 2020 put it at 300 to 325 years old, which matches the national register's planting band of 1700 to 1750. That is unusually solid ground for an age on this site, where most figures are a decade-wide band from a register and nothing more. Black locust is a North American species that reached Europe in the early seventeenth century, so a tree planted here around 1700 was among the first generation of them in the country.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements. The Merwestein black locust is the exception and says so: the city investigated it in September 2020 and arrived at 300 to 325 years. The register is the 2024 edition and is the single source for most of the rest, which is why they are flagged. Several of these trees are recorded as older than the ground they stand in, which is a pattern rather than a coincidence: the silver maple in the Weizigtpark was standing in a meadow before the park was laid out around it in 1947, and the plane at Dordwijk belongs to a country estate begun about 1635. Read the access line on the Sorghvliet plane before setting out: Dordwijk is private ground south of the city, even though the register records it as visitable. Where a pin is marked approximate we know the park and not the trunk, which on an estate of that size is a real difference.",
   "hero_tree_id": "dor_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "Fourteen of the sixteen are freely reachable: Park Merwestein, the Weizigtpark, the Van Baerleplantsoen, the Vest canalside and the street trees are all public, and the Arend Maartenshof and Boogjes courtyards are open ground. The plane at Dordwijk stands on a private estate south of the city and is recorded as visitable in the register; check before you set out. The plane trees and beeches in the Dordrechts Museum garden need a museum ticket."
+      "a": "Sixteen of the twenty are freely reachable: Park Merwestein, the Weizigtpark, the Van Baerleplantsoen, the Willem Kes Plantsoen, the Vest canalside and the street trees are all public, and the Arend Maartenshof and Boogjes courtyards are open ground. The plane at Dordwijk stands on a private estate south of the city and is recorded as visitable in the register; check before you set out. The plane trees and beeches in the Dordrechts Museum garden and the plane and maple in the Huis van Gijn garden need a museum ticket."
     }
   ],
   "trees": [
@@ -514,6 +514,113 @@
       "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "dor_017",
+      "name": "The Plane of the Willem Kes Plantsoen",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Willem Kes Plantsoen, Sint Jorisweg (in front of the Kunstmin theatre), Dordrecht",
+        "latitude": 51.813364,
+        "longitude": 4.677016,
+        "neighbourhood": "Centrum"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680502 (register file: data/registers/netherlands-lrmb.json)",
+        "https://indordrecht.nl/en/routes/bomenridders-wandeling/ (the city's own 'Tree Knights' walking route, which stops at Kunstmin theatre, Sint Jorisweg 76, and names a plane tree there alongside a white horse chestnut)"
+      ],
+      "access": "Free. Public plantsoen (green square) in front of the Kunstmin theatre, open at all times.",
+      "transport": "About 1.4 km northeast of Dordrecht station, in the old centre, at the Kunstmin theatre on Sint Jorisweg.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The national tree register knows the decade this plane was planted and admits it knows nothing else. Under history, the entry says: unknown.\n\nWhat it does give is a planting band of 1880 to 1890, which puts the tree somewhere around 136 to 146 years old, that the municipality owns it, and that visitors are welcome. Nobody has ever put a tape around the trunk. There is no girth figure in the file at all, which for a monumental plane in the middle of a Dutch city centre is an odd blank.\n\nIt stands in the Willem Kes Plantsoen, the small public square on Sint Jorisweg named after the conductor born in this city, directly in front of the Kunstmin theatre. So it has spent well over a century watching audiences arrive in daylight and leave in the dark, and it has stood through everything the twentieth century sent down this street.\n\nDordrecht signposts it, which is the useful part. The city's own Bomenridders walking route, the Tree Knights, stops at the theatre at Sint Jorisweg 76 and names this plane alongside the white horse chestnut about 25 metres away. That turns the visit into a two-tree errand on one small green rather than a single stop.\n\nIf anyone has measured that trunk, tell us and we will add the number.",
+      "how_to_recognise": "You can recognise it by the flaking, jigsaw-patterned bark that no other tree here has. It stands on the small green in front of the Kunstmin theatre, about 25 metres from the horse chestnut that shares the square with it."
+    },
+    {
+      "id": "dor_018",
+      "name": "The Horse Chestnut of the Willem Kes Plantsoen",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Willem Kes Plantsoen, Sint Jorisweg (in front of the Kunstmin theatre), Dordrecht",
+        "latitude": 51.813557,
+        "longitude": 4.677233,
+        "neighbourhood": "Centrum"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680501 (register file: data/registers/netherlands-lrmb.json)",
+        "https://indordrecht.nl/en/routes/bomenridders-wandeling/ (the city's own 'Tree Knights' walking route: 'White horse chestnut, Kunstmin Theatre, Sint Jorisweg 76')"
+      ],
+      "access": "Free. Public plantsoen (green square) in front of the Kunstmin theatre, open at all times.",
+      "transport": "About 1.4 km northeast of Dordrecht station, in the old centre, at the Kunstmin theatre on Sint Jorisweg.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In May this tree puts up its white flower candles directly in front of a theatre entrance, which is about as well staged as a chestnut gets.\n\nThe national register lists it as a witte paardenkastanje, a white horse chestnut, planted somewhere between 1880 and 1890 and so roughly 136 to 146 years old. The city owns it, the file marks it as visitable, and the reason recorded for its protected status is simply that it is monumental. Under history the entry is blank, and so is the line where a girth would go. For a tree of this size on public ground in the old centre, that is a gap somebody with a tape measure could close in a minute.\n\nIt shares the Willem Kes Plantsoen with a plane of the same planting band, standing about 25 metres away, which makes the two of them a single short errand off the theatre forecourt. Both have been in front of the Kunstmin theatre since the 1880s, through two world wars and every audience that has come and gone in between.\n\nDordrecht points visitors at it itself. The Bomenridders route, the city's own tree walk, lists the stop in plain words: white horse chestnut, Kunstmin Theatre, Sint Jorisweg 76. Come in May for the flowers, or in October when the conkers come down.",
+      "how_to_recognise": "You can recognise it by the leaves, five to seven leaflets spread from one stalk like a hand, and by the white flower spikes in May. It is the chestnut on the green in front of the Kunstmin theatre; the other big tree there is a plane.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candles stand up all over the crown in front of the theatre"
+      }
+    },
+    {
+      "id": "dor_019",
+      "name": "The Plane of the Huis van Gijn Garden",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 165 to 185 years; sources disagree on the planting date",
+      "age_min": 165,
+      "age_max": 185,
+      "girth_cm": 400,
+      "location": {
+        "address": "Museum Huis van Gijn garden, Nieuwe Haven 30, Dordrecht",
+        "latitude": 51.816545,
+        "longitude": 4.663361,
+        "neighbourhood": "Nieuwe Haven"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680493 (register file: data/registers/netherlands-lrmb.json)",
+        "https://www.huisvangijn.nl/ontdek-het-huis/tuin/ (Museum Huis van Gijn's own page on its garden)"
+      ],
+      "access": "Paid entry, through Museum Huis van Gijn, Nieuwe Haven 30 (adult ticket about EUR 14 as of this pass). The tree stands in the museum's own back garden; visitors can sit on the terrace beneath it. visitable=ja and visible=ja in the register.",
+      "transport": "About 1.1 km north of Dordrecht station, in the old centre, at the Museum Huis van Gijn garden off Nieuwe Haven.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The museum that owns this plane and the national register that protects it are twenty years apart on when it went into the ground.\n\nThe register describes a sizeable tree from 1860, more than four metres round the trunk, with knob-like burrs swelling along the stem and its condition rated fair. The museum's own garden page says the plane, and the maple standing near it, were probably planted around 1840, which would put them here before the Van Gijn family arrived at Nieuwe Haven 30 in 1864. Neither source shows its working, so the age stays broad: somewhere between roughly 165 and 185 years.\n\nWhichever date is right, the tree has spent its entire life inside one walled town garden a few streets back from the water, through the family's fifty-eight years in the house, through two world wars, and through the decades since the place became a museum.\n\nFour metres of trunk is a lot of tree for a garden this size, and the reward for the ticket is unusual. The museum has put a terrace underneath it, so the visit is sitting down and looking up rather than standing at a fence. Adult entry runs to about 14 euro, and the plane is at the back of the house.",
+      "how_to_recognise": "You can recognise it by the flaking, patchwork bark and the knobbly burrs swelling along a trunk more than four metres round. It is the big plane at the back of the Huis van Gijn garden, with the museum's terrace under it.",
+      "paid_entry": true
+    },
+    {
+      "id": "dor_020",
+      "name": "The Variegated Maple of the Huis van Gijn Garden",
+      "species": "Variegated Sycamore Maple (Acer pseudoplatanus 'Variegatum'; exact cultivar not confirmed)",
+      "age_estimate": "roughly 136 to 146 years, register-derived; the museum's own site suggests older",
+      "age_min": 136,
+      "age_max": 186,
+      "girth_cm": 300,
+      "location": {
+        "address": "Museum Huis van Gijn garden, Nieuwe Haven 30, Dordrecht",
+        "latitude": 51.816782,
+        "longitude": 4.663549,
+        "neighbourhood": "Nieuwe Haven"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680494 (register file: data/registers/netherlands-lrmb.json)",
+        "https://www.huisvangijn.nl/ontdek-het-huis/tuin/ (Museum Huis van Gijn's own page on its garden, describing 'a plane tree and a maple probably planted around 1840')"
+      ],
+      "access": "Paid entry, through Museum Huis van Gijn, Nieuwe Haven 30, for the full garden view. The register notes the trunk and crown are ALSO visible without paying, from the public Hoge Nieuwstraat behind the garden wall. visitable=ja and visible=ja.",
+      "transport": "About 1.1 km north of Dordrecht station, in the old centre, at the Museum Huis van Gijn garden off Nieuwe Haven; also partly visible from Hoge Nieuwstraat.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the tree in the Huis van Gijn garden you can see without buying a ticket. The national register goes out of its way to record that the trunk and crown show from the Hoge Nieuwstraat, the street running along the back of the garden wall.\n\nWhat the register will not tell you is exactly what it is. The entry says only bonte esdoorn, a variegated maple, with no Latin name attached. The marked leaves point at a variegated form of sycamore maple, and that is as far as the evidence goes; nobody has written down the cultivar. If you can name it, tell us and we will correct the page.\n\nIts age is unsettled in the same way as the plane standing near it. The register gives a planting band of 1880 to 1890. The museum's own garden page groups the maple with that plane and says both were probably planted around 1840. That is a spread of roughly 136 to 186 years, and neither source shows its working.\n\nThe register is more confident about the state of it: three metres round, condition good, a fine trunk and a well-developed crown, growing at the edge of the garden along the wall. Under either date it was already here while the Van Gijn family still lived in the house.",
+      "how_to_recognise": "You can recognise it by the variegated leaves, marked pale where every other tree in this garden is plain green. It stands along the wall at the edge of the garden, its crown showing over the top from Hoge Nieuwstraat behind.",
+      "paid_entry": true
     }
   ]
 }

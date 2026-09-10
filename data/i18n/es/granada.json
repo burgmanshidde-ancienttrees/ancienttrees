@@ -1,0 +1,104 @@
+{
+ "_note": "Spanish overlay for Granada, hand-written 2026-09-10 from data/cities/granada.json, written around 'árboles singulares', the term Spain's own catalogues and Granada's own scattered research actually use, rather than a literal rendering of 'ancient trees'. Text only: every coordinate, photo, licence and pin stays in data/cities/granada.json.",
+ "city": "Granada",
+ "title": "Árboles singulares de Granada: 9, de la Alhambra al Realejo",
+ "meta_description": "Los nueve árboles más notables de Granada: el ciprés de 440 años que plantó San Juan de la Cruz, las secuoyas del Generalife, la robinia del Cuarto Real.",
+ "intro": "Granada planta sus árboles como levanta sus jardines: detrás de una tapia, dentro de un convento, ladera arriba de un palacio. Un poeta místico plantó un ciprés con sus manos mientras era prior en el Carmen de los Mártires. Dos siglos más tarde, en la Alhambra, se midió una secuoya que resultó anterior a la descripción científica de su propia especie. Entre el bosque de la Alhambra y los cármenes del Albaicín, esta lista se apoya en la investigación dispersa sobre los árboles singulares de la ciudad, porque Granada nunca ha reunido un catálogo propio.",
+ "question_title": "¿Cuál es el árbol más antiguo de Granada? Unos 440 años",
+ "question_meta": "El árbol más antiguo de Granada es un ciprés de unos 440 años del Carmen de los Mártires, plantado por San Juan de la Cruz. Su historia y ocho más.",
+ "question_answer": "El árbol más antiguo documentado de Granada es el ciprés de San Juan de la Cruz, en el Carmen de los Mártires, plantado por el místico y poeta carmelita entre 1582 y 1588, durante los años en que fue prior allí, lo que le da unos 440 años. Crece dentro del jardín público y gratuito de la Antequeruela Alta, a un paseo corto de la Alhambra.",
+ "question_context": "Granada no tiene un registro municipal de arbolado como sí lo tienen otras ciudades, así que esta lista se apoya en investigación dispersa: un reportaje de revista sobre doce árboles singulares repartidos por la ciudad, la documentación patrimonial de la propia Alhambra y el Generalife, y los registros del Jardín Botánico de la Universidad de Granada sobre sus ejemplares fundacionales. Dentro de ese conjunto, el ciprés de San Juan de la Cruz del Carmen de los Mártires es el que está datado con más precisión, gracias a una estancia documentada de seis años (1582-1588) del místico carmelita y no a una estimación más vaga. Algunas fuentes populares redondean su edad hasta los 500 años; aquí se usa la cifra más prudente y mejor documentada, la ligada al tiempo que San Juan de la Cruz pasó realmente en el convento, que aun así es anterior a las secuoyas del Generalife o al ginkgo del jardín botánico, plantaciones ambas del siglo XIX. El jardín es gratuito y está abierto al público, a un paseo corto de la Alhambra.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Granada?",
+   "a": "El ciprés de San Juan de la Cruz, en el Carmen de los Mártires, plantado por el místico y poeta entre 1582 y 1588, lo que le da unos 440 años. Algunas fuentes lo redondean a 500; aquí se usa la cifra más prudente, ligada a su estancia documentada."
+  },
+  {
+   "q": "¿Se pueden ver gratis los árboles de la Alhambra?",
+   "a": "Sí. El Bosque de la Alhambra, el paseo arbolado que sube hasta el monumento por la Puerta de las Granadas, es gratuito y no requiere entrada, e incluye algunos de los castaños de Indias más viejos de la ciudad. Los palacios nazaríes y los jardines del Generalife sí exigen entrada de pago con hora asignada."
+  },
+  {
+   "q": "¿Cuál es el misterio de la secuoya de la Alhambra?",
+   "a": "En 1926 un botánico de visita midió una gran secuoya de la Alhambra y calculó que era lo bastante vieja como para ser anterior al descubrimiento científico formal de la especie, en la década de 1850. El enigma se explicó después por un probable viaje de recogida de semillas a California en 1791, a cargo de un naturalista al servicio de España, décadas antes de que los botánicos catalogaran el árbol. Aquel ejemplar original murió antes de 2002; las secuoyas que hoy se ven en los Jardines Altos del Generalife se plantaron más tarde, entre 1854 y 1856."
+  },
+  {
+   "q": "¿Son gratuitos los árboles singulares de Granada?",
+   "a": "La mayoría sí: están en jardines públicos, plazas y en el bosque gratuito de la propia Alhambra. Excepciones: las secuoyas del Generalife y los cipreses y la sófora del Parador requieren entrada de pago de la Alhambra o entrar en el hotel, el Cuarto Real de Santo Domingo cobra una pequeña entrada para visitar el monumento (aunque su robinia está en la placita de entrada, que es libre) y el Carmen de la Victoria es gratuito pero hay que reservar cita con antelación."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "gra_001": {
+   "name": "El ciprés de San Juan de la Cruz",
+   "species": "Ciprés mexicano (Cupressus lusitanica)",
+   "age_estimate": "unos 440 años",
+   "access": "Gratuito, jardín público.",
+   "transport": "15 min a pie desde el centro, junto al Auditorio Manuel de Falla.",
+   "story": "Este ciprés no es de España, ni siquiera del continente con el que suele asociarse. Hesperocyparis lusitanica, pese al nombre, procede de México y Centroamérica, y llegó a Europa de la mano de los misioneros carmelitas, que lo introdujeron primero en Portugal y después en los jardines conventuales españoles. Uno de aquellos carmelitas fue San Juan de la Cruz, místico y poeta, prior del Convento de los Mártires entre 1582 y 1588, los años más serenos y productivos de su vida según su propia orden. La tradición sostiene que plantó este árbol con sus manos, ayudándose del báculo de prior, y que eligió la especie como símbolo personal del camino hacia el cielo. Fue aquí donde dio forma a los poemas que había compuesto de memoria en una cárcel de Toledo, entre ellos los versos que acabaron siendo la Noche oscura del alma. Hace unas dos décadas un rayo se llevó por delante buena parte de la copa, y el árbol sigue enseñando el destrozo: los brotes nuevos salen del muñón truncado en lugar de un tronco entero. Aguanta de todos modos, dentro de un jardín público y gratuito que conserva buena parte del trazado original del convento, con su lago y su huerta incluidos."
+  },
+  "gra_002": {
+   "name": "Las secuoyas de los Jardines Altos del Generalife",
+   "species": "Secuoya roja (Sequoia sempervirens)",
+   "age_estimate": "unos 170 años",
+   "access": "Entrada de pago, Alhambra y Generalife (con hora asignada).",
+   "transport": "Autobús de la Alhambra (C30/C32) o 25 min a pie cuesta arriba desde el centro.",
+   "story": "Las secuoyas rojas llegaron a Europa en 1843, y Granada plantó algunas de las primeras del continente poco más de una década después: las de los Jardines Altos del Generalife entraron en tierra entre 1854 y 1856, cuando el recinto era todavía propiedad privada. Sequoia sempervirens puede vivir tres mil años y superar los 100 metros en su California natal; estos ejemplares, comparativamente jóvenes, ya son de los seres vivos más altos de todo el conjunto de la Alhambra. La relación de Granada con la especie viene de más atrás de lo que sugiere esa fecha de plantación. En 1926 un botánico estadounidense examinó otra secuoya distinta y más vieja del recinto y calculó que tenía unos 120 años, edad suficiente para haber sido plantada antes de que la ciencia europea hubiera identificado formalmente la especie. El enigma se atribuyó con el tiempo a Thaddäus Haenke, naturalista de la expedición Malaspina de 1791, de quien se cree que trajo semilla de California décadas antes de que la secuoya entrara en los catálogos botánicos. Aquel árbol del misterio murió en algún momento anterior a 2002. Las secuoyas que hoy están en los Jardines Altos son la plantación posterior y mejor documentada, y solo se llega a ellas con entrada de pago y hora asignada de la Alhambra y el Generalife."
+  },
+  "gra_003": {
+   "name": "El ginkgo del Jardín Botánico",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "unos 135 años",
+   "access": "Gratuito, abierto en días laborables de la universidad.",
+   "transport": "10 min a pie desde Puerta Real, en el centro.",
+   "story": "Este fue el primer ginkgo que tuvo Granada, plantado en 1889 en un jardín que solo existía desde 1840, sobre un terreno que había sido la huerta de un colegio jesuita antes de que la Facultad de Derecho de la Universidad de Granada ocupara el sitio. Ginkgo biloba es el último miembro vivo de un orden vegetal que cubrió el planeta entero en la era de los dinosaurios, un linaje tan aislado que los botánicos lo llaman a veces fósil viviente, y las hojas en abanico de este ejemplar, que se vuelven de un dorado uniforme cada noviembre, siguen siendo casi idénticas a las de los ginkgos fósiles de hace más de 200 millones de años. La especie es famosa además por una supervivencia más dura: seis ginkgos situados a poco más de kilómetro y medio del epicentro de la bomba atómica de Hiroshima aguantaron la explosión y siguen creciendo hoy, un dato que el cartel del propio jardín, junto a un poema escrito para el árbol por la poeta granadina Elena Martín Vivaldi, no deja de mencionar. El jardín abre al público los días laborables de la universidad, de forma gratuita, escondido detrás del edificio de la Facultad de Derecho, en pleno centro de la ciudad."
+  },
+  "gra_004": {
+   "name": "Las palmeras del palacio del arzobispo",
+   "species": "Washingtonia mexicana (Washingtonia robusta)",
+   "age_estimate": "unos 100 años",
+   "access": "Gratuito, plaza pública; las palmeras están dentro del jardín de la Curia Diocesana y se ven desde la plaza, no se entra.",
+   "transport": "5 min a pie desde la Catedral.",
+   "story": "Cuatro washingtonias se levantan sobre la Plaza de Gracia, plantadas en 1923, el año en que terminaron las obras del Palacio de los Yanguas, el edificio que cierra la plaza tras una tapia de jardín en la calle Gracia. El arquitecto Fernando Wilhelmi lo construyó entre 1920 y 1925 para la familia del marqués de Casablanca; más tarde pasó a ser sede de la Curia Diocesana de Granada, las oficinas administrativas del arzobispado, y por eso en la ciudad se le sigue llamando el palacio del arzobispo aunque nunca se levantara como tal. Washingtonia robusta crece más deprisa y más alto que casi cualquier otra palmera cultivada en el sur de España, capaz de pasar de los 30 metros en un siglo, y este cuarteto lleva casi exactamente ese tiempo: más de 100 años de crecimiento, plantadas a propósito y no supervivientes por casualidad, como sí lo son muchos de los árboles más viejos de la ciudad. El género debe su nombre a Washington y el epíteto a lo robusto de su tronco, una importación americana que se puso de moda en las ciudades del sur de Europa a principios del siglo XX justamente por el efecto que produce aquí: cuatro columnas verdes muy por encima de los tejados. Verlas desde la plaza es todo lo que alcanza la mayoría de los visitantes, porque el jardín del palacio no está abierto al público."
+  },
+  "gra_005": {
+   "name": "Los plátanos de la Fuente de las Batallas",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "sin datar, ejemplares maduros",
+   "access": "Gratuito, plaza pública.",
+   "transport": "5 min a pie desde Puerta Real.",
+   "story": "Cuatro plátanos enormes dan identidad a la Plaza del Campillo, rodeando una fuente barroca de piedra cuya historia es menos segura que la de los árboles que le dan sombra. La fuente, conocida como Fuente de las Batallas por los alardes de tropas medievales que se celebraban en este terreno, entonces fuera de las murallas de la ciudad, pudo pertenecer en origen a un convento del siglo XVII y no llegó a su emplazamiento actual hasta 1950. Los plátanos que la rodean son bastante más jóvenes que ese origen, pero lo bastante grandes como para que sus troncos pasen de los cinco metros de perímetro y sus copas alcancen unos 30 metros, visibles por encima de los tejados del Realejo. No se conserva ninguna fecha de plantación para estos ejemplares concretos, y aquí se quedan sin datar en lugar de aventurar una cifra, pero su tamaño por sí solo ha convertido la plaza en uno de los puntos de reunión más constantes del centro de Granada, sede de conciertos durante el festival de cantautores de la primavera y de la feria del libro anual."
+  },
+  "gra_006": {
+   "name": "La robinia del Cuarto Real de Santo Domingo",
+   "species": "Falsa acacia (Robinia pseudoacacia)",
+   "age_estimate": "unos 200 años",
+   "access": "Gratuito, está en la placita pública de entrada (el monumento del Cuarto Real cobra entrada aparte).",
+   "transport": "10 min a pie desde Puerta Real.",
+   "story": "Esta robinia se ha hecho lo bastante famosa en Granada como para salir en un cupón de lotería. En 2023 la ONCE la imprimió en cinco millones de cupones, dentro de una serie dedicada a los árboles urbanos más emblemáticos de España, junto al escudo del propio Ayuntamiento de Granada: mucho reconocimiento público para una especie que se suele valorar más por los postes de valla que por su belleza. Lo que hace que este ejemplar merezca la tirada es el tronco: apenas 7,5 metros de altura, poca cosa para la especie, pero engordado hasta unos 4,6 metros de perímetro, grueso y tan curtido que parece bastante más viejo que los dos siglos que se le estiman. Crece justo delante de la entrada del Cuarto Real de Santo Domingo, el pabellón palaciego mejor conservado que queda de la Granada almohade y nazarí temprana, y lo hace en la pequeña plaza pública que hay ante el monumento, así que verlo no exige pagar la entrada del propio monumento. Cada mayo sus ramas se llenan de racimos colgantes de flores blancas, que atraen una atención muy distinta de la que atrae su tronco el resto del año."
+  },
+  "gra_007": {
+   "name": "Los cipreses gemelos del Parador",
+   "species": "Ciprés mediterráneo (Cupressus sempervirens)",
+   "age_estimate": "centenarios, sin datar",
+   "access": "Gratuito a través de la terraza pública de la cafetería y el restaurante (terrenos del Parador).",
+   "transport": "Autobús de la Alhambra (C30/C32) o 25 min a pie cuesta arriba desde el centro.",
+   "story": "Dos cipreses centenarios flanquean lo que fue la entrada a unas tumbas reales, dentro de un jardín que ha pasado los últimos cinco siglos siendo primero convento franciscano y después hotel. El Parador de Granada ocupa el antiguo Convento de San Francisco, levantado en el siglo XV dentro de las murallas de la Alhambra, sobre un terreno que los Reyes Católicos, Fernando e Isabel, eligieron brevemente como sepultura propia antes de que sus restos pasaran a la Capilla Real, en la ciudad de abajo. El jardín que creció alrededor del convento acabó convertido en una muestra botánica con etiquetas de identificación para cada especie, mezclando plantas mediterráneas, lavanda, tomillo, romero, con los pinos, las higueras y los cipreses plantados por altura y estructura; estos dos flanquean la puerta con más carga histórica del recinto. El Parador sigue funcionando como hotel y su jardín está técnicamente en terreno privado, pero la terraza de la cafetería y el restaurante da directamente a él, de modo que cualquier visitante dispuesto a pagarse un café puede recorrer los mismos caminos y pasar junto a los mismos árboles que dieron sombra a la tumba prevista de unos monarcas."
+  },
+  "gra_008": {
+   "name": "La sófora del jardín del Parador",
+   "species": "Árbol de las pagodas (Styphnolobium japonicum)",
+   "age_estimate": "unos 200 años",
+   "access": "Gratuito a través de la terraza pública de la cafetería y el restaurante (terrenos del Parador).",
+   "transport": "Autobús de la Alhambra (C30/C32) o 25 min a pie cuesta arriba desde el centro.",
+   "story": "Sophora japonica florece lo bastante tarde como para resultar útil: casi todos los árboles ornamentales de los jardines de Granada terminan de florecer mucho antes del pleno verano, pero esta especie se guarda el espectáculo para julio y agosto, cuando sus ramas se llenan de racimos colgantes de florecillas blancas, una rareza de verdad en un calendario de jardín mediterráneo organizado por lo demás alrededor de la primavera. Pese al nombre, la especie es originaria de China y no de Japón, y viajó hacia el oeste por las rutas comerciales siglos antes de que los botánicos europeos aclarasen su origen. Este ejemplar lleva cerca de dos siglos en el jardín de lo que hoy es el Parador de Granada, parte del mismo antiguo recinto conventual franciscano donde están los dos cipreses que flanquean la vieja puerta. Comparte jardín con esos cipreses, plantados por estructura, y con los pinos plantados por altura, y se gana su sitio solo por tamaño y por un calendario poco común: es uno de los pocos árboles grandes de hoja caduca y con flor en un jardín construido sobre todo con perennes."
+  },
+  "gra_010": {
+   "name": "Los castaños de Indias del Bosque de la Alhambra",
+   "species": "Castaño de Indias (Aesculus hippocastanum)",
+   "age_estimate": "plantados entre los siglos XVI y XIX, sin datar uno a uno",
+   "access": "Gratuito, paseo público por el bosque (no requiere entrada).",
+   "transport": "Entrada por la Puerta de las Granadas, 10 min a pie desde Plaza Nueva.",
+   "story": "La ladera arbolada por la que los visitantes suben hasta la Alhambra no existía cuando la fortaleza estaba aún en manos musulmanas. Bajo los nazaríes esta cuesta era un cementerio, al parecer el lugar de enterramiento de Muhammad I, fundador de la dinastía, y de sus descendientes, y el bosque solo empezó a tomar forma tras la llegada de Carlos V en el siglo XVI; se completó bajo Fernando VII, ya a principios del XIX, con especies como el castaño de Indias, el plátano, la acacia y el almez. Los castaños se han adaptado lo bastante bien a competir por la luz con las especies más altas del bosque como para que algunos ejemplares lleguen a los 20 metros, y cada primavera, en general de finales de abril a mayo, montan el espectáculo que los ha convertido en los árboles más conocidos del Bosque: espigas densas de flores blancas cubriendo la copa durante unas semanas, antes de dar paso a un fruto espinoso y no comestible que solo de lejos se parece a una castaña de verdad. A diferencia de los monumentos de pago a los que rodea, este paseo, al que se entra por la monumental Puerta de las Granadas, no cuesta nada ni exige entrada."
+  }
+ }
+}

@@ -7120,6 +7120,15 @@
         "note": "8 stories + recognition lines + 3 best_time for lee_027-034, merged into city file; fixed a species-name mismatch between two feather elm entries (lee_031/032) and lee_008 to keep one canonical name; intro/meta_description tree-count updated 26->34",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Dordrecht + Montreal",
+        "kind": "write",
+        "tokens": 47000,
+        "trees": 6,
+        "note": "6 stories + recognition lines across 2 cities (dor_019/020, mtl_008/010/011/012); no best_time warranted on any; mtl_010 passcheck duplicate flag checked by hand and cleared (different species, ginkgo vs tulip tree); mtl_009 held back at merge for a bad coordinate, folded into leads/montreal.json",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

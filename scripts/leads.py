@@ -271,7 +271,10 @@ NOT_READY_MARKER = re.compile(
     r"access is not confirmed|leaning no|"
     r"ran out of time|worth a closer look|"
     r"clears the two-source bar|worth a dedicated future pass|"
-    r"no tree-specific second source|ACCESS UNRESOLVED)\b",
+    r"no tree-specific second source|ACCESS UNRESOLVED|"
+    r"second source not found|sources conflict|do not ship on the register alone|"
+    r"leave for a future pass|does not clear the .{0,40}bar on its own|"
+    r"even the register.{0,20}own location is marked uncertain)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
