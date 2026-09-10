@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation 5) - Fort Lauderdale opened (4 trees), Daytona Beach stays closed
+
+Daytona Beach (#65): scouted, empty. Its county's only register supply (2 Florida Champion Trees, Volusia County) sits 20+ km out with no public transport, too thin and too far to open the city. New entry in `data/register-scouting.json`.
+
+Fort Lauderdale (#57): opened with 4, all at Flamingo Gardens (Davie), all flagged for missing age since the Florida Champion Tree register scores size into points rather than dates. A fifth candidate, a Hollywood baobab the register lists at 10.6m round, was held rather than shipped: no second source could be reached to corroborate that specific figure (monumentaltrees.com's matching page is Cloudflare-gated, no Wayback snapshot). Kept as a note in OPEN_DATA_SURVEY.md. The page is currently 100% paid entry (Flamingo Gardens admission); free candidates exist nearby in Broward County's remaining register rows for a future pass.
+
 ## 2026-09-10 (continuation 4) - Finished stranded Berlin/Prague/Oahu passes; Dordrecht's Oosterse plataan stays a lead
 
 Berlin +1, Prague +4, Oahu +2 (see LOG.md for the trees): all three verified against preflight and superlatives, no gaps beyond the usual honest ones (Berlin's beech and both new Prague oaks have no photo yet). Dordrecht's Van Baerleplantsoen Oosterse plataan (LRMB register nr 1680276, planting band 1830-1840, no girth or height) is still a single-source candidate: the municipality's 2020 Bomenlijst PDF that would corroborate it serves a bot challenge live and did not OCR from the Wayback copy, on two separate attempts now. Stays in `data/leads/dordrecht.json`; needs either a readable copy of that PDF or a fresh search on "Van Baerleplantsoen" plus a species word.

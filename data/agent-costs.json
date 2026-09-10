@@ -7249,6 +7249,13 @@
     "tokens": 0,
     "trees": 0,
     "note": "An earlier attempt in this window removed the Oosterse plataan lead (Van Baerleplantsoen bij NS, LRMB register-only, no girth/height, species not corroborated) from data/leads/dordrecht.json and recorded dor_021 in first-seen.json, apparently meaning to write it up, but never actually added a tree to data/cities/dordrecht.json before stopping. Found uncommitted and inconsistent (lastmod.json's dordrecht hash was untouched, confirming the file was never written). Reverted the lead removal and the first-seen entry rather than inventing a story from a single uncorroborated register row; it remains a lead for a pass that can find a second source or a girth/height reading. Prague's other READY lead (Dub na sportovisti v Dejvicich) was checked and held: it sits on a private sports club's fenced ground next to a kindergarten with no evidence of public access, so it stays a lead rather than shipping on a bare register entry."
+   },
+   {
+    "target": "fort-lauderdale",
+    "kind": "scout+verify+write",
+    "tokens": 0,
+    "trees": 4,
+    "note": "scout_next.py --target pointed at Daytona Beach (#65); its own Volusia County register supply was too thin (2 trees, both 20+ km out). Widened to the state register itself and found a live ArcGIS Feature Service the 2026-09-06 scouting pass had missed (see corrected data/register-scouting.json Fort Lauderdale entry and OPEN_DATA_SURVEY.md), 404 rows statewide, 25 of them at one site, Flamingo Gardens in Davie (Broward County, day-trip distance from Fort Lauderdale #57). Opened Fort Lauderdale with 4 (ftl_001-004: Earpod Tree, Dynamite/Sandbox Tree, Maquilishuat/Pink Trumpet Tree, Maya Breadnut), each corroborated against Wikipedia's Flamingo Gardens article as a second independent source. All flagged for missing age (register measures size, not years, same shape as Nevada/Las Vegas). One candidate (Hollywood's Young Circle baobab, register circumference 416in/10.6m) held back, not shipped: no second source could corroborate that specific figure this pass. Preflight, superlatives, city_names.py and a full build/qa clean."
    }
   ]
  }
