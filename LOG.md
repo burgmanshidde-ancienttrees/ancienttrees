@@ -756,6 +756,46 @@ apt-get/pip both need approval this run does not have. Left on disk;
 harmless if a future session with rendering tools wants it, otherwise safe
 to ignore.
 
+## 2026-09-10 - Photo round four: aim at the city counter, not the tree counter
+
+**The count.** 263 cities had no photograph at all when this round started and
+240 do now, so **23 whole pages went from showing nothing to showing a tree**.
+Trees with a photograph went 694 to 718.
+
+**What changed is the target, not the method.** Earlier rounds judged whatever
+scored best anywhere. This one judged ONLY candidates in cities that have no
+photograph, because an approval there flips a page and an approval in a city
+that already has five does not. Same bar, different ordering, and it is the
+first round whose headline number is the one Hidde asked about.
+
+**The supply problem underneath it, and the fix.** Of the 263 photo-less
+cities, only 103 held any unjudged candidate at all; 160 held nothing, because
+the ordinary Commons sweep had already come back empty for them. That is
+exactly what `photo_last_resort.py` exists for: the same geosearch with the
+plant-word filter switched off and a 100 metre leash. Run over 45 of the
+emptiest, it produced **534 candidates on 103 trees in 33 cities that had none
+this morning** — Helmond 81, Budapest 65, Bordeaux 43, Alkmaar 40.
+
+Its yield when judged is low, 2 approvals from 34, and that is the honest
+price of an unvetted filename. It is still worth running, because a low rate on
+new supply beats a high rate on an empty queue. Austin's two, the Seiders Oaks
+and Old Baldy, came from it.
+
+**Three trees answered rather than obeyed.** A pass flagged Seattle's Sylvia as
+dead because a ground plaque reads "Toppled January 20, 1993"; the storm took
+her TOP off, all three sources say so, and one is titled "Meet Sylvia, the
+topless fir". Higashiomi's hananoki came up again and is still alive. Aubers'
+lime, on the other hand, really was wrong: its pin sat 8.8 km north-west of the
+village, contradicting our own address field, and the photograph's geotag put
+it right.
+
+**Two lanes closed for good.** Neudrossenfeld's entire candidate set is the
+PEESTEN dance lime 11 km away, so it is marked exhausted; Peesten then got that
+lime, correctly, in the next wave. And Takayama, Toba and Toga are one finding
+rather than three: nine candidates between them, every one shot from the trunk
+base looking up through the support props, which is simply how Japanese natural
+monuments are photographed on Commons.
+
 ## 2026-09-10 - Photo round three: the protected veteran is the seam
 
 **The count.** 625 trees carried a photograph when this round started and 690
