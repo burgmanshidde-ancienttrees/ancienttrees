@@ -11,6 +11,61 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 - Two verify passes merged (12 new trees), 23 cities' recognition-line gap closed
+
+7-day visits line from `visitors.py`: 1,194 visits, 1,508 views, trending down
+day over day (202 on 09-03 to 13 on 09-10, but that last figure is a partial
+day). `prepare.py` showed 49 cities staged for verify but almost all of them
+turned out to be stale shelf entries (already exhausted or already past
+target from earlier passes nobody had cleaned up); only two genuinely fresh,
+untouched, register-backed cities stood out: Helmond and Ottawa, both already
+open, both with rich official registers (Netherlands' LRMB with `visitable`
+fields answering hard rule 10 directly, and the NCC's own "Remarkable Trees"
+register with full descriptive paragraphs per tree).
+
+Claimed and dispatched both in parallel per BRIEF_RESEARCH.md. Helmond
+13->18: two oaks in the Warande walking park, a copper beech and a plane
+tree on ordinary streets, and a Nootka cypress in the Protestant cemetery
+adjoining the Catholic one already published (three of ten shortlisted
+candidates turned out already live, two more were blocked as group
+plantings). Ottawa 8->14: a second cluster along the Rideau Canal (Queen
+Elizabeth Driveway, Green Island, Dow's Lake) a few kilometres from the
+original downtown-core eight; rewrote Ottawa's intro, meta_description,
+question page and FAQ, which had claimed all trees sat within half a
+kilometre of Parliament Hill and that six shared one dated planting
+programme, both now false with the second cluster in.
+
+Combined the resulting 12 verified trees with the one already-waiting Oahu
+tree (`hnl_019`, the Kuhio Beach Hula Mound Banyan) into one write-stories
+pass rather than running one under the six-candidate floor, since
+`data/research/famousfrance-verified.json`'s one entry stays deliberately
+unwritten (fails the single-famous-tree test, no container city). Merged all
+13, fixed five stale count-promise FAILs preflight caught after the merge,
+ran `tree_index.py`, `npm run build` (clean) and `preflight.py` (0 problems)
+before each push.
+
+While both verify passes ran, worked the recognition-line backlog
+(`scripts/recognise.py`) rather than sit idle: Mexico City, Istanbul, Rouen,
+Padua, Turin, Dublin, Fukuoka, Groningen, Florence, Cordoba, New York,
+Melbourne, Lyon, Lucca, Genoa, Geneva, Nuremberg, Bologna, Kyoto, Venice,
+Trento, Strasbourg and Hong Kong, 217 lines total, each city's gap closed to
+zero. Every batch went through preflight (0 problems each time) before
+committing. Several pushes collided with a concurrent night run also active
+on main (photo approvals, new veteran trees); resolved each with
+`git pull --rebase` and verified no conflicts, since the recognition-line
+edits and the other run's photo/tree edits never touched the same fields.
+
+Logged every pass to `data/agent-costs.json`, including session work at
+tokens=0 with a note, per the instruction that an empty day and a quiet day
+should not look the same in RETRO.md.
+
+Continuing: more recognition-line cities remain (roughly 700 of the original
+960-tree gap still open), and the shelf's stale-entries problem (`prepare.py`
+staged 49 cities, most already exhausted or past target) is worth a future
+session's attention, since it means `prepare.py`'s own "staged for verify"
+line cannot be trusted at face value without checking each one's leads file
+first.
+
 ## 2026-09-10 - SEO learning loop, and continuous copy testing
 
 Hidde asked whether the runs have an SEO learning mechanism. They did not:
