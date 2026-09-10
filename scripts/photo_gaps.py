@@ -3,16 +3,29 @@
 
 Hidde, 2026-08-17: "can we make part of the nightly runs that we aim to get at
 least 1 photo per city". Yes, with one hard constraint that shapes the whole
-design: **a night run cannot judge a photograph.** The CI runner's egress proxy
-blocks upload.wikimedia.org, measured 2026-08-07 when 313 of 337 candidates were
-unreachable and a whole window went on discovering it. And approving an image
-without looking at it is forbidden outright (CLAUDE.md, the Cadiz standard).
+design: **nothing is approved without somebody looking at the pixels**
+(CLAUDE.md, the Cadiz standard). That is a rule about honesty and it does not
+expire.
+
+What DID expire is the reason this file used to give for it. It said a night
+run cannot judge a photograph because the CI runner's egress proxy blocks
+upload.wikimedia.org, measured 2026-08-07. Re-probed from the runner on
+2026-09-01: the full-size file, the 500px and 960px buckets, the Commons API,
+Openverse and iNaturalist all return 200. The 2026-08-07 failures were 400s on
+a thumbnail width Wikimedia does not render, read as a network block, and the
+verdict then outlived the fact for 25 days. So a night run MAY view, throttled
+to roughly one request every three seconds, because Wikimedia rate-limits
+rather than blocks (a burst of 29 fetches took a 429 after twelve).
+
+Egress is per environment and worth re-probing rather than remembering: a
+remote session on 2026-09-10 could reach github and pypi and had every image
+source refused at the gateway, which is the opposite shape from CI.
 
 So the goal splits in two, and this script is the seam:
 
-    the night run   sweeps the free APIs, keeps the queue stocked, and runs
-                    THIS to leave a ranked shortlist behind
-    a session       opens the shortlist, looks at the pixels, approves or
+    a sweep         stocks the queue from the free APIs and runs THIS to
+                    leave a ranked shortlist behind
+    a viewing pass  opens the shortlist, looks at the pixels, approves or
                     rejects
 
 Run it with no arguments for the city view, --shortlist for the work list.
@@ -41,6 +54,10 @@ import glob
 import json
 import os
 import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import geo  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -95,7 +112,31 @@ def queue():
     return trees if isinstance(trees, dict) else {t.get("id"): t for t in trees}
 
 
-def names_match(tree, cand):
+_PINS = {}
+
+
+def pins():
+    """tree id -> (lat, lng, location_precision), for every tree we publish.
+
+    The queue does not carry a pin: its entries are id, city, name and
+    candidates, so the only thing names_match() could ever say about a geotag
+    was that one EXISTED. That is why the geotag was worth a flat +4 here for
+    weeks while photo_fetch.py, which is handed the real tree, was already
+    ordering scoreless candidates by how far the camera stood from the trunk.
+    One signal, measured in one file and unavailable in the other.
+    """
+    if not _PINS:
+        for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+            doc = json.load(open(path, encoding="utf-8"))
+            for t in doc.get("trees") or []:
+                loc = t.get("location") or {}
+                if loc.get("latitude") is not None:
+                    _PINS[t.get("id")] = (loc["latitude"], loc["longitude"],
+                                          t.get("location_precision"))
+    return _PINS
+
+
+def names_match(tree, cand, pin=None):
     """How likely this file actually shows THIS tree. 0 means look last.
 
     It does NOT mean discard, and photo_fetch.py must never use it as a gate.
@@ -145,8 +186,35 @@ def names_match(tree, cand):
                 "monument to", "street", "square", "bridge", "night", "snow"):
         if bad in title:
             score -= 12
-    if cand.get("lat") is not None:
-        score += 4        # a geotag is what settles which trunk it is
+    # A geotag is what settles which trunk it is, so what matters is HOW FAR
+    # it sits from the pin, not that it exists. The flat +4 this replaces gave
+    # a photograph taken at the trunk exactly the same credit as one taken in
+    # the next town, which is the Copenhagen failure the docstring above
+    # describes, scored as if it were a success.
+    #
+    # Measured 2026-09-10 across the 918 unjudged candidates then passing this
+    # gate: 261 sit within 50 m of the pin, 247 within 150 m, 48 within 400 m,
+    # 6 within 1.5 km, 9 beyond it, and 347 carry no geotag at all. The far
+    # tail is not noise, it is wrong trees that the filename flatters, and
+    # Germany supplies both worked examples because Germany names its trees
+    # after what they are: Giessen's "Lindengruppe an der Lindbachquelle" drew
+    # four photographs of the Lindengruppe at Kraftsolms 14 km away, and
+    # Peesten's Tanzlinde drew the Tanzlinde at Neudrossenfeld 11 km away.
+    # Both scored 37 on the filename alone.
+    #
+    # It ORDERS and never gates, which is why every term here is a bonus and
+    # none is a penalty: a distant candidate falls to the bottom of the list
+    # and stays on it. The far ones that also name the tree are worth a minute
+    # of somebody's time rather than a silent reject, because each is either a
+    # wrong tree, a wrong pin or a bad geotag; --conflict prints them.
+    if pin is None:
+        loc = tree.get("location") or {}
+        if loc.get("latitude") is not None:
+            pin = (loc["latitude"], loc["longitude"],
+                   tree.get("location_precision"))
+    if pin is not None and cand.get("lat") is not None:
+        m = geo.km((pin[0], pin[1]), (cand["lat"], cand["lng"])) * 1000
+        score += 30 if m <= 50 else 18 if m <= 150 else 8 if m <= 400 else 2 if m <= 1500 else 0
     # A filename that is only a PLACE is a photograph of that place, and the
     # trees are scenery in it. "Giardini del Frontone.JPG" scored 62 on the
     # park's name and turned out to be statues, event chairs and a dog, with
@@ -238,7 +306,7 @@ def shortlist(limit):
             if cand.get("judged"):
                 continue
             title = str(cand.get("title") or cand.get("file") or "")
-            s = names_match(entry, cand)
+            s = names_match(entry, cand, pin=pins().get(tid))
             if s and (best is None or s > best[0]):
                 best = (s, title, cand.get("licence"))
         if best:
@@ -354,14 +422,89 @@ def famous_near(limit, photo_only=False, per_city=3):
     return out
 
 
+# Far enough that the camera cannot have been at the trunk. A photographer
+# steps back to fit a big crown in, and a phone geotag drifts, so the honest
+# floor is generous: below this, disagreement means nothing.
+CONFLICT_M = 400
+# A filename has to actually name the tree before its distance is interesting.
+# Below this the file is matching on a species word or a place, and a species
+# word 2 km away is not a contradiction, it is a different tree of that species.
+CONFLICT_SCORE = 20
+
+
+def conflicts(limit):
+    """Candidates whose filename names the tree and whose geotag says elsewhere.
+
+    Every one of these is exactly one of three things, and they need opposite
+    answers, which is why this is a list for a person and not a verdict:
+
+      a wrong tree   Germany names its trees after what they are, so Giessen's
+                     Lindengruppe drew the Lindengruppe at Kraftsolms 14 km
+                     off, and Peesten's Tanzlinde drew Neudrossenfeld's. This
+                     is the Copenhagen pacifier tree again: a good photograph,
+                     right species, right name, wrong trunk.
+      a wrong PIN    the file names the tree, the tree is unique, and we are
+                     the ones in the wrong place. That outranks every photo
+                     question here (CLAUDE.md: location is the one field that
+                     carries the product) and it is the reason this view is
+                     worth more than the reject it replaced.
+      a bad geotag   Commons carries the camera position, and for a transfer
+                     from elsewhere sometimes nothing better than a guess.
+
+    Ordered by distance, worst first, because the far end is where the wrong
+    tree lives and the near end is where the drift does.
+    """
+    q = queue()
+    rows = []
+    for tid, entry in q.items():
+        pin = pins().get(tid)
+        if not pin:
+            continue
+        for cand in entry.get("candidates") or []:
+            if cand.get("judged") or cand.get("lat") is None:
+                continue
+            s = names_match(entry, cand, pin=pin)
+            if s < CONFLICT_SCORE:
+                continue
+            m = geo.km((pin[0], pin[1]), (cand["lat"], cand["lng"])) * 1000
+            if m < CONFLICT_M:
+                continue
+            rows.append({"m": m, "score": s, "id": tid, "prec": pin[2] or "unset",
+                         "city": entry.get("city") or "?",
+                         "name": entry.get("name") or "?",
+                         "title": str(cand.get("title") or ""),
+                         "url": cand.get("url") or ""})
+    rows.sort(key=lambda r: -r["m"])
+    return rows[:limit]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--shortlist", action="store_true")
     ap.add_argument("--famous", action="store_true")
+    ap.add_argument("--conflict", action="store_true")
     ap.add_argument("--photo-only", action="store_true", dest="photo_only")
     ap.add_argument("--per-city", type=int, default=3, dest="per_city")
     ap.add_argument("--limit", type=int, default=20)
     a = ap.parse_args()
+
+    if a.conflict:
+        rows = conflicts(a.limit)
+        print("GEOTAG AGAINST PIN: the filename names the tree, the coordinate")
+        print("disagrees. Each is a wrong tree, a wrong pin or a bad geotag, and")
+        print("a wrong pin outranks anything else on this page. Look, do not guess.\n")
+        if not rows:
+            print("  Nothing over %d m. Every named candidate sits near its pin." % CONFLICT_M)
+            return 0
+        for r in rows:
+            far = "%.1f km" % (r["m"] / 1000) if r["m"] >= 1000 else "%d m" % r["m"]
+            print("  %-8s %-9s hit %3.0f  %-9s %s"
+                  % (far, r["prec"], r["score"], r["id"], r["name"][:40]))
+            print("           %s" % r["title"][:88])
+        print("\n  %d candidate(s). Start at the top: a kilometre of disagreement is a"
+              % len(rows))
+        print("  different tree or a broken pin, and 400 m is usually the camera.")
+        return 0
 
     if a.famous:
         groups = famous_near(a.limit, photo_only=a.photo_only, per_city=a.per_city)
@@ -410,7 +553,7 @@ def main():
 
     rows = shortlist(a.limit)
     print("\nVIEWING SHORTLIST, one candidate per photo-less city, biggest city first.")
-    print("A SESSION does this: the CI runner cannot reach upload.wikimedia.org,")
+    print("Fetch throttled (Wikimedia rate-limits: ~1 request per 3 seconds),")
     print("and no photograph ships without somebody looking at the pixels.\n")
     if not rows:
         print("  Nothing queued for any photo-less city. Run photo_hunt.py --recheck,")

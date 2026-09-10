@@ -1217,6 +1217,46 @@ def check_contributor_photos_are_traceable():
     return out
 
 
+def check_one_photograph_per_tree():
+    """No two trees may wear the same photograph.
+
+    The Cagliari case, recorded in CLAUDE.md: the sweep attached one file to
+    two different trees at once, and a viewing pass that judges candidates one
+    at a time cannot see it, because each one looks fine on its own. Copenhagen
+    is the same error at a distance, and Dublin and Nuremberg are where it is
+    waiting: measured 2026-09-10, 634 unjudged files in the queue are offered
+    to more than one tree, and 96 of them score above zero for more than one,
+    which is the set a viewing pass could plausibly approve twice.
+
+    A photograph showing two of our trees still illustrates ONE of them. The
+    other page is then telling a reader that the trunk in the picture is the
+    trunk they are walking to, and it is not, which is the promise this site
+    trades on. So the honest handling of a file that could be either is `held`
+    on both until somebody settles it, never approved on both.
+
+    It passes at zero today, which is the moment to write it: nothing has to be
+    unpicked, and the next sweep cannot introduce it quietly.
+    """
+    seen, out = {}, []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            photo = tree.get("photo") or {}
+            url = photo.get("url")
+            if not url or photo.get("status") == "held":
+                continue
+            first = seen.get(url)
+            if first:
+                out.append("%s: %s wears the same photograph as %s (%s). One file "
+                           "cannot be the portrait of two trees; hold it on both "
+                           "until somebody has looked and settled which trunk it is."
+                           % (path, tree.get("id"), first[0], url[:70]))
+            else:
+                seen[url] = (tree.get("id"), path)
+    return out
+
+
 def check_translated_components_are_neutral():
     """A component that renders every language must not have one typed into it.
 
@@ -1927,6 +1967,7 @@ def main():
                 + check_no_two_language_switch()
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
+                + check_one_photograph_per_tree()
                 + check_every_tree_names_a_source()
                 + check_a_tree_says_why_to_go()
                 + check_a_tree_can_be_told_apart()

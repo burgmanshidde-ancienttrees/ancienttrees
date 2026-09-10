@@ -78,6 +78,26 @@ def api(params):
         return json.load(r)
 
 
+# Every source here swallows its own exceptions and returns nothing, which is
+# right: one dead API must not end a sweep. What was wrong is what happened
+# next. The sweep wrote `checked: <today>` regardless, so "we asked Commons and
+# it holds no photograph of this tree" and "nothing would answer us" were
+# recorded as the same thing, and the first one stops a later sweep re-asking.
+#
+# Found 2026-09-10 in a session whose gateway refused every image host: seven
+# Dordrecht and Eindhoven trees were written down as swept with zero candidates
+# without a single request leaving the machine. That is the failure this
+# project's own corpus keeps naming, a verdict outliving the fact, and it was
+# being manufactured automatically.
+FAILURES = 0
+
+
+def failed(where, e):
+    global FAILURES
+    FAILURES += 1
+    print(f"    {where} failed: {e}", file=sys.stderr)
+
+
 def licence_ok(short):
     """Open licences only; any NC or ND variant disqualifies outright."""
     s = (short or "").lower()
@@ -278,7 +298,7 @@ def inat_candidates(tree):
         with urllib.request.urlopen(req, timeout=20) as r:
             d = json.load(r)
     except Exception as e:
-        print(f"    inaturalist failed: {e}", file=sys.stderr)
+        failed("inaturalist", e)
         return []
     out = []
     for o in d.get("results", []):
@@ -341,7 +361,7 @@ def wikidata_candidates(tree):
     try:
         found = imageinfo([w["commons"]])
     except Exception as e:
-        print(f"    wikidata imageinfo failed: {e}", file=sys.stderr)
+        failed("wikidata imageinfo", e)
         return []
     for f in found:
         f["source"] = f"wikidata/{w['qid']}"
@@ -379,7 +399,7 @@ def openverse_token():
         with urllib.request.urlopen(req, timeout=25) as r:
             _OV_TOKEN.append(json.load(r).get("access_token"))
     except Exception as e:
-        print(f"    openverse auth failed: {e}", file=sys.stderr)
+        failed("openverse auth", e)
         _OV_TOKEN.append(None)
     return _OV_TOKEN[0]
 
@@ -420,7 +440,7 @@ def openverse_candidates(tree, city, places):
         with urllib.request.urlopen(req, timeout=25) as r:
             d = json.load(r)
     except Exception as e:
-        print(f"    openverse failed: {e}", file=sys.stderr)
+        failed("openverse", e)
         return []
     out = []
     plant = tree_tokens(tree)
@@ -587,12 +607,12 @@ def candidates_for(tree, city=""):
                 d2 = api({"action": "query", "list": "search", "srnamespace": "6",
                           "srsearch": token, "srlimit": "8"})
             except Exception as e:
-                print(f"    token search failed: {e}", file=sys.stderr)
+                failed("token search", e)
                 continue
             named += [s["title"] for s in d2.get("query", {}).get("search", [])
                       if token in s["title"].lower() and keeps(s["title"])]
     except Exception as e:
-        print(f"    name search failed: {e}", file=sys.stderr)
+        failed("name search", e)
     tokens = tree_tokens(tree)
     try:
         d = api({"action": "query", "list": "geosearch", "gsnamespace": "6",
@@ -604,7 +624,7 @@ def candidates_for(tree, city=""):
         nearby = [g["title"] for g in d.get("query", {}).get("geosearch", [])
                   if any(mentions(g["title"].lower(), tok) for tok in tokens)]
     except Exception as e:
-        print(f"    geosearch failed: {e}", file=sys.stderr)
+        failed("geosearch", e)
     seen, uniq = set(), []
     for t in named + nearby:  # name hits first: they are the strongest signal
         if JUNK_TITLE.search(t):
@@ -615,7 +635,7 @@ def candidates_for(tree, city=""):
     try:
         commons = imageinfo(uniq[:12])
     except Exception as e:
-        print(f"    imageinfo failed: {e}", file=sys.stderr)
+        failed("imageinfo", e)
         commons = []
     # A file that carries its own coordinates settles the question no word
     # match can. Added 2026-08-13 after the name lane, which lets a distinctive
@@ -706,8 +726,27 @@ def main():
 
     where = f" in {', '.join(c.title() for c in cities)}" if cities else ""
     print(f"{len(todo)} photo-less trees unchecked{where}; sweeping {min(limit, len(todo))}")
+    silent = recorded = 0
     for city, tree in todo[:limit]:
+        before = FAILURES
         cands = candidates_for(tree, city)
+        # Nothing found AND nothing answered is not a result. Leave the entry
+        # exactly as it was, so the next sweep asks again instead of reading
+        # today's date as an answer. A tree that genuinely has no candidate
+        # still gets written, because that IS a result.
+        if not cands and FAILURES > before:
+            silent += 1
+            print(f"  {tree['id']}  {tree['name'][:44]:44s}  "
+                  f"no source answered, not recorded")
+            # Five in a row with nothing recorded is not a run of unlucky
+            # trees, it is the network, and carrying on costs a whole window
+            # to learn that. The 2026-08-07 pass spent one discovering it.
+            if silent >= 5 and recorded == 0:
+                print("\nFive trees, no source answered for any of them, nothing "
+                      "written. Check egress before trusting a sweep from here.",
+                      file=sys.stderr)
+                return
+            continue
         # Never clobber what a viewing pass already decided. Re-sweeping used
         # to overwrite the whole entry, which threw away every "rejected:
         # street scene, no tree in frame" verdict an Opus pass had paid for,
@@ -725,12 +764,16 @@ def main():
         }
         if prev.get("exhausted"):
             entries[tree["id"]]["exhausted"] = prev["exhausted"]
+        recorded += 1
         note = f", {len(kept)} judged kept" if kept else ""
         print(f"  {tree['id']}  {tree['name'][:44]:44s}  "
               f"{len(fresh)} new candidate(s){note}")
         json.dump(queue, open(QUEUE, "w"), indent=1, ensure_ascii=False)
         time.sleep(0.5)  # be polite to the API
 
+    if silent:
+        print(f"\n{silent} tree(s) left unrecorded: no source answered for them. "
+              f"They stay unchecked and the next sweep will ask again.")
     with_c = sum(1 for v in entries.values() if v["candidates"])
     print(f"\nQueue now: {len(entries)} trees swept, {with_c} with at least one open-licence "
           f"candidate. A viewing pass judges them against the Cadiz standard; this "
