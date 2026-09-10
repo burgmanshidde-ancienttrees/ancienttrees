@@ -63,7 +63,8 @@
       "location_precision": "confirmed",
       "girth_cm": 800.0,
       "height_m": 30,
-      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for クスノキ at 奈良豆比古神社. Survey figures, so the tree has grown since. The two girth figures are both right and measure different things: 12.8 m is at the ground, as the story says, and the 800 cm in girth_cm is the Environment Ministry's survey at 130 cm, which is the standard the rankings compare on."
+      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for クスノキ at 奈良豆比古神社. Survey figures, so the tree has grown since. The two girth figures are both right and measure different things: 12.8 m is at the ground, as the story says, and the 800 cm in girth_cm is the Environment Ministry's survey at 130 cm, which is the standard the rankings compare on.",
+      "how_to_recognise": "You can recognise it by its trunk forking into two great limbs about seven metres up, each forking again, with a rope tied around it. It stands behind the main hall at Naratsuhiko Shrine."
     },
     {
       "id": "nra_002",
@@ -99,7 +100,8 @@
       "location_precision": "confirmed",
       "girth_cm": 720.0,
       "height_m": 22,
-      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for スギ (春日大社の大杉) at 春日大社, surveyed 2000年6月21日. Survey figures, so the tree has grown since."
+      "verify_notes": "Girth and height from the Environment Ministry's giant-tree database (巨樹・巨木林データベース), the only record for スギ (春日大社の大杉) at 春日大社, surveyed 2000年6月21日. Survey figures, so the tree has grown since.",
+      "how_to_recognise": "You can recognise it by the second tree growing from its base, reaching toward the neighbouring hall through a hole cut in the roof. It stands beside the Naoraiden, near Kasuga Taisha's inner gate."
     },
     {
       "id": "nra_003",
@@ -137,7 +139,8 @@
         "label": "late March into mid-April, when one tree opens red, white and pink at once",
         "kind": "flowers"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its blossoms, red, white, peach, striped and variegated all on the same plant, shedding petal by petal rather than whole. It stands atop over a hundred stone steps at Byakugo-ji."
     },
     {
       "id": "nra_004",
@@ -175,7 +178,8 @@
         "label": "October and November, when the translucent amber fruit ripens",
         "kind": "fruit"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the bamboo growing up through its hollow trunk and out through the crown. It stands on the bend of the Kasuga Taisha approach, near the Nara National Museum."
     },
     {
       "id": "nra_005",
@@ -210,7 +214,8 @@
       "location_precision": "confirmed",
       "girth_cm": 480.0,
       "height_m": 26,
-      "verify_notes": "Girth 480 cm and height 26 m from the Environment Ministry's own Nara Park giant-tree course guide, which names this entry クスノキ三兄弟, the three camphor brothers, on the north side of Tobihino, and dates them to a commemorative planting at the spot where the Meiji emperor sat during the 1908 army manoeuvres. NOT applied: a separate ministry database record at 春日野町飛火野 reads 1110 cm with an age band of 99年以下. It is not attached here because this entry is an ensemble and hanging a single-trunk figure on an ensemble is a bridge claim; which trunk carries 1110 cm is an open question for a verify pass."
+      "verify_notes": "Girth 480 cm and height 26 m from the Environment Ministry's own Nara Park giant-tree course guide, which names this entry クスノキ三兄弟, the three camphor brothers, on the north side of Tobihino, and dates them to a commemorative planting at the spot where the Meiji emperor sat during the 1908 army manoeuvres. NOT applied: a separate ministry database record at 春日野町飛火野 reads 1110 cm with an age band of 99年以下. It is not attached here because this entry is an ensemble and hanging a single-trunk figure on an ensemble is a bridge claim; which trunk carries 1110 cm is an open question for a verify pass.",
+      "how_to_recognise": "You can recognise it by its three trunks grown into one dome-shaped crown, inside a ring fence with deer grazing up to it. It stands in the middle of the Tobihino meadow, in Nara Park."
     },
     {
       "id": "nra_006",
@@ -284,7 +289,8 @@
         "label": "late March, when it opens before every other cherry in Nara",
         "kind": "flowers"
       },
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the way it leans out over the pond in front of the shrine gate. It stands beside the approach to Himuro Shrine."
     },
     {
       "id": "nra_008",
@@ -549,7 +555,9 @@
       "height_m": 25,
       "how_to_recognise": "You can recognise it by being the only ginkgo Kasuga Taisha's own walking guide names, standing at Haraedo Shrine on the approach between the Second Torii and Nanmon Gate, well before the ticketed precinct.",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when the ginkgo turns gold",
         "kind": "autumn colour"
       },
