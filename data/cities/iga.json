@@ -49,7 +49,12 @@
       ],
       "access": "Free, on Takakura Shrine's open grounds; Wikipedia notes the tree is deliberately left unsignposted (to protect it, as its rare seeds were historically valuable), so it takes some looking but nothing blocks entry.",
       "transport": "Iga Railway to Ueno-ichi Station, then a bus toward Toriiide (get off at Toriiide, about 6 minutes' walk to the shrine); or about 10 minutes by car from the regional highway.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed"
     },
@@ -78,15 +83,20 @@
       "curation_status": "flagged",
       "story": "Japan protects two or three trees of this kind nationally. Two of them stand a kilometre apart in Iga, and this is the second.\n\nKagoji no Shibunashigaya grows in the northeastern part of Kagoji Temple's grounds. Shibunashi means without astringency: the seed of an ordinary kaya arrives wrapped in a bitter skin and the kernels of this variety do not, which made them worth something in the Edo period. They were pressed for cooking oil and sugar-coated into kaya arare, a confection made in Iga and in Kiso.\n\nIt measures 3.7 metres round half a metre above the ground and forks into three main limbs about 90 centimetres up. The crown runs 15 metres east to west and 18 north to south under a height of roughly 20 metres, which makes it a broad tree rather than a tall one. Every year in late summer it fruits heavily, which is the plainest evidence available that a tree of unknown age is in good health.\n\nNobody has dated it. The national designation and Mie Prefecture's own hundred-tree list both record what it is rather than how old, and no source found closes that gap. If you know of a figure, tell us.\n\nIt is free, with parking and restrooms at the temple, about 15 minutes by taxi from Ueno-shi Station.",
       "best_time": {
-        "months": [8, 9],
+        "months": [
+          8,
+          9
+        ],
         "kind": "fruit",
         "label": "late summer, when it carries its yearly crop of kernels with no bitter skin on them"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Kagoji_no_Shibunashigaya_E.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "さかおり, via Wikimedia Commons",
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       }
     }
   ]
