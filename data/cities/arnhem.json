@@ -231,10 +231,12 @@
         "kind": "flowers"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Seems_like_a_willow_tree%2C_onset_of_spring_-_panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Marikit Louppen, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2848,
+        "height": 4288
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -1266,10 +1268,12 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/58572613/medium.jpg",
+        "license": "CC0",
+        "attribution": "jane023, via iNaturalist",
+        "status": "approved",
+        "width": 500,
+        "height": 375
       },
       "how_to_recognise": "You can recognise it by its leaves, a single blade rather than the feathery leaflets black locusts usually carry, a rare cultivar called Unifoliola. It stands in the inner courtyard of Kasteel Doorwerth."
     },
