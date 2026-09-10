@@ -184,6 +184,17 @@ def check_auth_corpus_agreement():
     return []
 
 
+def built_page(slug):
+    """The built file for a top-level page.
+
+    astro.config.ts sets `format: "file"`, so a city is dist/london.html and
+    NOT dist/london/index.html. Both checks below got that wrong on the day
+    they were written (2026-09-10): one failed the deploy for a bug that was
+    not there, the other silently checked nothing at all. One helper now, so
+    the layout is written down once."""
+    return DIST / f"{slug}.html"
+
+
 def check_one_face_per_city():
     """The tree a city wears in Google must be the tree it wears in the app.
 
@@ -208,7 +219,7 @@ def check_one_face_per_city():
         face, slug = c.get("face"), c.get("slug")
         if not face or not slug:
             continue
-        page = DIST / slug / "index.html"
+        page = built_page(slug)
         if not page.exists():
             continue
         m = re.search(r'<meta property="og:image" content="([^"]+)"',
@@ -266,23 +277,31 @@ def check_copy_test_renders():
     if not assigned:
         return []
     seen = 0
+    found = 0
     for slug in assigned:
-        page = DIST / slug / "index.html"
+        page = built_page(slug)
         if not page.exists():
             continue
+        found += 1
         head = page.read_text(encoding="utf-8")[:4000]
         m = re.search(r"<title>([^<]*)</title>", head)
         # The challenger names the age before the count. The control names the
         # count first. Anything else means the arm did not reach the page.
         if m and re.search(r":\s*Oldest\b", m.group(1)):
             seen += 1
+    if found == 0:
+        # Said separately on purpose. "I could not find the pages" and "the arm
+        # is not rendering" are different faults with different fixes, and
+        # collapsing them into one message is what cost a deploy here.
+        return ["copy test %s: none of its %d challenger pages were found under "
+                "%s, so nothing was checked" % (test["id"], len(assigned), DIST)]
     if seen == 0:
         return ["copy test %s is running and NOT ONE of its %d challenger pages "
                 "renders the challenger title: the arm is not reaching the build"
-                % (test["id"], len(assigned))]
-    if seen < len(assigned) * 0.6:
-        return ["copy test %s reaches only %d of %d challenger pages; the split "
-                "is not what the registry says" % (test["id"], seen, len(assigned))]
+                % (test["id"], found)]
+    if seen < found * 0.6:
+        return ["copy test %s reaches only %d of %d built challenger pages; the "
+                "split is not what the registry says" % (test["id"], seen, found)]
     return []
 
 
