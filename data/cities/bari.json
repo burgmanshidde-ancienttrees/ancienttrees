@@ -58,7 +58,8 @@
         "status": "missing"
       },
       "height_m": 6.0,
-      "verify_notes": "Height 6.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 6.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "how_to_recognise": "You can recognise it by its low, heavy grey trunk, leaning where it reaches past the holm oaks for light. It stands in the gardens of Piazza Umberto I, five minutes from the central station."
     },
     {
       "id": "bar_002",
@@ -91,7 +92,8 @@
         "status": "missing"
       },
       "height_m": 4.5,
-      "verify_notes": "Height 4.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 4.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "how_to_recognise": "You can recognise it by its swollen grey base, like an elephant's foot, standing a few metres from the ombu in the same flowerbed. It stands in the gardens of Piazza Umberto I."
     },
     {
       "id": "bar_003",
@@ -125,7 +127,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "height_m": 17.0
+      "height_m": 17.0,
+      "how_to_recognise": "You can recognise it by its thick trunk, close to six metres round, inside a fenced bed behind a low concrete wall people climb over. It stands at the corner of Corso Alcide De Gasperi and Via Ugo La Malfa, in Carrassi."
     },
     {
       "id": "bar_004",
@@ -162,7 +165,8 @@
         "width": 1080,
         "height": 1080
       },
-      "height_m": 11.0
+      "height_m": 11.0,
+      "how_to_recognise": "You can recognise it by the way it stands right in front of the old masseria gate, so awkwardly placed that carts once had to work around it. It stands on Viale della Pineta, in the centre of Quasano."
     },
     {
       "id": "bar_005",
@@ -189,7 +193,8 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "The Roverella of Pilapalucci grows inside the walls of a working farm, which means nobody wanders up to it by accident. Masseria Storica Pilapalucci is a fortified farmstead dating to the 16th century, listed among Italy's historic private houses, and this downy oak stands in its olive and almond groves rather than beside a public road. The masseria opens its gates for scheduled events, among them a guided walk through the groves that stops at the tree it calls its own monumental specimen, which is how an outsider gets to stand under it at all.\n\nDowny oak is the working oak of the Murgia plateau, built for thin limestone soil and dry summers rather than for spectacle, and this one has done the ordinary thing for a very long time: a trunk just over three metres round, a crown reaching twenty metres up. Nobody wrote down when it was planted. Centuries of farm labour around a masseria rarely leave that kind of note, and the regional register that protects it records size and species, never a birth date.\n\nThe visit is real, just conditional. Check the masseria's own event calendar before making the drive out to Toritto, and go on a day it is actually open.",
-      "verify_notes": "Species and girth agree between the two register imports (one underlying source, per the two-source rule). Second, independent source is the masseria's own 2026 Ferragosto event page, fetched directly rather than from a search summary, confirming the tree by name, its 'albero monumentale' designation and its place on a 2026 guided walk, which is decent alive-now evidence. No age source found anywhere; left undocumented rather than derived without a supportable growth-rate basis for downy oak on this soil. Access is the booking case (2026-09-01 ruling): a private working farm, not walk-up, but its scheduled public events are bookable by anyone, so it clears hard rule 10 as a price-and-schedule case rather than a private-permission refusal. Not within Bari's usual day-trip boundary; published as a Toritto entry alongside bar_004 (Quasano, also in Toritto), the same pattern this city already uses."
+      "verify_notes": "Species and girth agree between the two register imports (one underlying source, per the two-source rule). Second, independent source is the masseria's own 2026 Ferragosto event page, fetched directly rather than from a search summary, confirming the tree by name, its 'albero monumentale' designation and its place on a 2026 guided walk, which is decent alive-now evidence. No age source found anywhere; left undocumented rather than derived without a supportable growth-rate basis for downy oak on this soil. Access is the booking case (2026-09-01 ruling): a private working farm, not walk-up, but its scheduled public events are bookable by anyone, so it clears hard rule 10 as a price-and-schedule case rather than a private-permission refusal. Not within Bari's usual day-trip boundary; published as a Toritto entry alongside bar_004 (Quasano, also in Toritto), the same pattern this city already uses.",
+      "how_to_recognise": "You can recognise it as the oak standing in the olive and almond groves inside the masseria's walls. It stands at Masseria Storica Pilapalucci, in Contrada Pilapalucci, Toritto."
     }
   ]
 }
