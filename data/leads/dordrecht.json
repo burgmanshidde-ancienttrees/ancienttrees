@@ -1,65 +1,67 @@
 {
-  "place": "Dordrecht",
-  "country": "Netherlands",
-  "note": "Deepen pass, 2026-09-08, working the netherlands-lrmb register candidates within ~1.1km of the published cluster. Verified trees went to data/research/dordrecht-verified.json as dor_009 onward. Continuation 2026-09-09 shipped dor_014/015/016 (Park Merwestein hornbeam, Dordrechts Museum garden planes and beeches); the three inner-courtyard candidates below were aerial-checked but left unresolved on access, and several open register candidates (Weizigtpark oak, Amerikaanse es and Merwesteinpark, Kromhout oak, Baerleplantsoen and Begraafplaats Dubbeldam planes, Huis van Gijn museum garden trees) were not reached this pass. 2026-09-10 verify pass shipped dor_017-020 (Willem Kes Plantsoen plane and horse chestnut, Huis van Gijn garden plane and variegated maple) to data/research/dordrecht-verified.json; the Amerikaanse es turned out to be dead (see blocked below) and the Oosterse plataan near the station is a lead below. Kromhout oak (Zomereik Kromhout Dordrecht, register nr 1688376, tuin at a private house address) and Essenhof cemetery entries (Witte paardenkastanje nr 1680294, Bruine beuk nr 1680295, Eenbladige es nr 1688215) plus Italiaanse populier Rozenhof (nr 1695556) and the private-owner Groenmarkt horse chestnut (nr 1680487) still were not reached this pass; register data for all of them is already in data/registers/netherlands-lrmb.json for whoever picks this up next.",
-  "leads": [
-    {
-      "name": "Oosterse plataan (Oriental Plane), Van Baerleplantsoen bij NS",
-      "reason": "Register (LRMB nr 1680276) says visitable ja, owner gemeente, planting band 1830-1840, in a public plantsoen (park strip) by the railway station, reason=monumentaal. Genuinely promising (oldest planting band of any fresh candidate this pass, public land, 300m from the centre point) but only one source: no independent corroboration found this pass despite searching (the municipality's own 2020 'Bomenlijst' of valuable trees exists at raad.dordrecht.nl/Documenten/Bomenlijst-2020.pdf but the live host serves an Anubis bot-challenge to curl/WebFetch; a Wayback Machine copy of the PDF loaded but is a scanned/glyph-encoded PDF that did not yield extractable text with the tools available this pass). Worth a second attempt: either a browser session that can read the live PDF, or an OCR pass on the Wayback copy, or a fresh search for 'Van Baerleplantsoen' plus a species/tree word.",
-      "lat": 51.807574,
-      "lng": 4.664017,
-      "register_nr": 1680276
-    },
-    {
-      "name": "Gewone esdoorn (Norway Maple), Binnentuin Botgenstraat/Spuistraat",
-      "reason": "Register (LRMB nr 1680489) says visitable ja, owner gemeente, but PDOK aerial imagery shows an enclosed private-looking backyard with a parked car and no visible public through-route, unlike the confirmed public passage at dor_012's Boogjes courtyard 80m away. Needs a source confirming public access (a through-alley, an open hofje) before it can ship.",
-      "lat": 51.812942,
-      "lng": 4.663155,
-      "register_nr": 1680489
-    },
-    {
-      "name": "Gewone esdoorn (Norway Maple), Binnentuin Botgenstraat/Pelserstraat",
-      "reason": "Register (LRMB nr 1680491) says visitable ja, owner gemeente. Aerial imagery shows a small green court (looks like a shared lawn/pitch) reached by a footpath from an alley, more plausibly public than the Spuistraat maple above, but not confirmed by any independent source. Worth a closer look next pass.",
-      "lat": 51.812811,
-      "lng": 4.661881,
-      "register_nr": 1680491
-    },
-    {
-      "name": "Bruine beuk (Copper Beech), Binnentuin AMRObank, Stationsweg 2",
-      "reason": "Register (LRMB nr 1680274) says visitable ja, but the place name itself (bank's inner courtyard) and PDOK aerial imagery (parked cars behind the bank building, no visible public route) both point to an employee car park rather than open ground. Treat as private unless a source says otherwise.",
-      "lat": 51.808594,
-      "lng": 4.668781,
-      "register_nr": 1680274
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Mammoetboom (Giant Sequoia), achtertuin Kromhout 160",
-      "reason": "Register (LRMB nr 1680484) records this tree's OWN history field as 'Boom is geveld door nieuwe bewoner volgens de voormalig eigenaar' (felled by the new resident, according to the former owner) -- a direct dead-tree signal from the register itself, and it also sits in a private back garden (owner_category particulier, visitable unknown) rather than open ground. Never ships: known-dead signal plus private land.",
-      "lat": 51.812663,
-      "lng": 4.672649,
-      "register_nr": 1680484
-    },
-    {
-      "name": "Bruine beuk 'De Onbeschaamde' (Copper Beech), Wijnstraat 123-125",
-      "reason": "Register (LRMB nr 1689583) explicitly records visitable=nee, visible=nee: it stands in the private back garden (achtertuin) of the historic house 'De Onbeschaamde' (built 1650 for mayor Abraham van Beveren, now owned by heritage body Vereniging Hendrick de Keyser). A genuinely good story but not open ground per the register's own field and no evidence found of regular public access. Leave for a later pass if Hendrick de Keyser is found to open the garden (e.g. Open Monumentendag).",
-      "lat": 51.817619,
-      "lng": 4.667622,
-      "register_nr": 1689583
-    },
-    {
-      "name": "Venijnboom (Yew), Wijnstraat 123-125",
-      "reason": "Same private back garden as 'De Onbeschaamde' beech above (register confirms the two stand together, ~15m apart, in one courtyard behind the Wijnstraat 123-125 house). Register (LRMB nr 1689584) records visitable=nee, visible=nee. Not a separate access case; blocked for the same reason.",
-      "lat": 51.817567,
-      "lng": 4.667758,
-      "register_nr": 1689584
-    },
-    {
-      "name": "Amerikaanse es (American Ash), Merwesteinpark near the Vrieseweg entrance",
-      "reason": "Register (LRMB nr 1688197) looked promising: gemeente-owned, visitable=ja, reason=dendrologisch, planting band 1920-1930, at the Vrieseweg park entrance, girth ~301cm implied by the matching monumentaltrees.com record. But that monumentaltrees.com record (Park Merwestein's own numbered tree 'Boom 2', girth 3.01m @ 1.30m, height 18m, recovered via a Wayback Machine snapshot from 2023-11-06 since the live site 403s) shows the entry STRUCK THROUGH, which on that site marks a tree confirmed gone. Cross-checked against the park's own current tree guide (parkmerwestein.nl/bomenwijzer/tegel/boom-2/), which today lists 'Boom 2' as a Fraxinus americana 'Autumn Purple' planted in 2018, i.e. a young replacement reusing the same tile number, not the original tree the register describes. Conclusion: the register's Amerikaanse es is very likely dead/removed and replaced; do not publish as a living tree. A future pass could try to confirm directly with Stichting Park Merwestein, but treat as blocked until then.",
-      "lat": 51.809787,
-      "lng": 4.678207,
-      "register_nr": 1688197
-    }
-  ]
+ "place": "Dordrecht",
+ "country": "Netherlands",
+ "note": "Deepen pass, 2026-09-08, working the netherlands-lrmb register candidates within ~1.1km of the published cluster. Verified trees went to data/research/dordrecht-verified.json as dor_009 onward. Continuation 2026-09-09 shipped dor_014/015/016 (Park Merwestein hornbeam, Dordrechts Museum garden planes and beeches); the three inner-courtyard candidates below were aerial-checked but left unresolved on access, and several open register candidates (Weizigtpark oak, Amerikaanse es and Merwesteinpark, Kromhout oak, Baerleplantsoen and Begraafplaats Dubbeldam planes, Huis van Gijn museum garden trees) were not reached this pass. 2026-09-10 verify pass shipped dor_017-020 (Willem Kes Plantsoen plane and horse chestnut, Huis van Gijn garden plane and variegated maple) to data/research/dordrecht-verified.json; the Amerikaanse es turned out to be dead (see blocked below) and the Oosterse plataan near the station is a lead below. Kromhout oak (Zomereik Kromhout Dordrecht, register nr 1688376, tuin at a private house address) and Essenhof cemetery entries (Witte paardenkastanje nr 1680294, Bruine beuk nr 1680295, Eenbladige es nr 1688215) plus Italiaanse populier Rozenhof (nr 1695556) and the private-owner Groenmarkt horse chestnut (nr 1680487) still were not reached this pass; register data for all of them is already in data/registers/netherlands-lrmb.json for whoever picks this up next.",
+ "leads": [
+  {
+   "name": "Oosterse plataan (Oriental Plane), Van Baerleplantsoen bij NS",
+   "reason": "Register (LRMB nr 1680276) says visitable ja, owner gemeente, planting band 1830-1840, in a public plantsoen (park strip) by the railway station, reason=monumentaal. Genuinely promising (oldest planting band of any fresh candidate this pass, public land, 300m from the centre point) but only one source: no independent corroboration found this pass despite searching (the municipality's own 2020 'Bomenlijst' of valuable trees exists at raad.dordrecht.nl/Documenten/Bomenlijst-2020.pdf but the live host serves an Anubis bot-challenge to curl/WebFetch; a Wayback Machine copy of the PDF loaded but is a scanned/glyph-encoded PDF that did not yield extractable text with the tools available this pass). Worth a second attempt: either a browser session that can read the live PDF, or an OCR pass on the Wayback copy, or a fresh search for 'Van Baerleplantsoen' plus a species/tree word.",
+   "lat": 51.807574,
+   "lng": 4.664017,
+   "register_nr": 1680276,
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Gewone esdoorn (Norway Maple), Binnentuin Botgenstraat/Spuistraat",
+   "reason": "Register (LRMB nr 1680489) says visitable ja, owner gemeente, but PDOK aerial imagery shows an enclosed private-looking backyard with a parked car and no visible public through-route, unlike the confirmed public passage at dor_012's Boogjes courtyard 80m away. Needs a source confirming public access (a through-alley, an open hofje) before it can ship.",
+   "lat": 51.812942,
+   "lng": 4.663155,
+   "register_nr": 1680489
+  },
+  {
+   "name": "Gewone esdoorn (Norway Maple), Binnentuin Botgenstraat/Pelserstraat",
+   "reason": "Register (LRMB nr 1680491) says visitable ja, owner gemeente. Aerial imagery shows a small green court (looks like a shared lawn/pitch) reached by a footpath from an alley, more plausibly public than the Spuistraat maple above, but not confirmed by any independent source. Worth a closer look next pass.",
+   "lat": 51.812811,
+   "lng": 4.661881,
+   "register_nr": 1680491
+  },
+  {
+   "name": "Bruine beuk (Copper Beech), Binnentuin AMRObank, Stationsweg 2",
+   "reason": "Register (LRMB nr 1680274) says visitable ja, but the place name itself (bank's inner courtyard) and PDOK aerial imagery (parked cars behind the bank building, no visible public route) both point to an employee car park rather than open ground. Treat as private unless a source says otherwise.",
+   "lat": 51.808594,
+   "lng": 4.668781,
+   "register_nr": 1680274
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Mammoetboom (Giant Sequoia), achtertuin Kromhout 160",
+   "reason": "Register (LRMB nr 1680484) records this tree's OWN history field as 'Boom is geveld door nieuwe bewoner volgens de voormalig eigenaar' (felled by the new resident, according to the former owner) -- a direct dead-tree signal from the register itself, and it also sits in a private back garden (owner_category particulier, visitable unknown) rather than open ground. Never ships: known-dead signal plus private land.",
+   "lat": 51.812663,
+   "lng": 4.672649,
+   "register_nr": 1680484
+  },
+  {
+   "name": "Bruine beuk 'De Onbeschaamde' (Copper Beech), Wijnstraat 123-125",
+   "reason": "Register (LRMB nr 1689583) explicitly records visitable=nee, visible=nee: it stands in the private back garden (achtertuin) of the historic house 'De Onbeschaamde' (built 1650 for mayor Abraham van Beveren, now owned by heritage body Vereniging Hendrick de Keyser). A genuinely good story but not open ground per the register's own field and no evidence found of regular public access. Leave for a later pass if Hendrick de Keyser is found to open the garden (e.g. Open Monumentendag).",
+   "lat": 51.817619,
+   "lng": 4.667622,
+   "register_nr": 1689583
+  },
+  {
+   "name": "Venijnboom (Yew), Wijnstraat 123-125",
+   "reason": "Same private back garden as 'De Onbeschaamde' beech above (register confirms the two stand together, ~15m apart, in one courtyard behind the Wijnstraat 123-125 house). Register (LRMB nr 1689584) records visitable=nee, visible=nee. Not a separate access case; blocked for the same reason.",
+   "lat": 51.817567,
+   "lng": 4.667758,
+   "register_nr": 1689584
+  },
+  {
+   "name": "Amerikaanse es (American Ash), Merwesteinpark near the Vrieseweg entrance",
+   "reason": "Register (LRMB nr 1688197) looked promising: gemeente-owned, visitable=ja, reason=dendrologisch, planting band 1920-1930, at the Vrieseweg park entrance, girth ~301cm implied by the matching monumentaltrees.com record. But that monumentaltrees.com record (Park Merwestein's own numbered tree 'Boom 2', girth 3.01m @ 1.30m, height 18m, recovered via a Wayback Machine snapshot from 2023-11-06 since the live site 403s) shows the entry STRUCK THROUGH, which on that site marks a tree confirmed gone. Cross-checked against the park's own current tree guide (parkmerwestein.nl/bomenwijzer/tegel/boom-2/), which today lists 'Boom 2' as a Fraxinus americana 'Autumn Purple' planted in 2018, i.e. a young replacement reusing the same tile number, not the original tree the register describes. Conclusion: the register's Amerikaanse es is very likely dead/removed and replaced; do not publish as a living tree. A future pass could try to confirm directly with Stichting Park Merwestein, but treat as blocked until then.",
+   "lat": 51.809787,
+   "lng": 4.678207,
+   "register_nr": 1688197
+  }
+ ]
 }

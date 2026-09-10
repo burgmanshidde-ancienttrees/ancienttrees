@@ -162,18 +162,6 @@
    "status": "lead"
   },
   {
-   "name": "Winter-Linde - Stein-Linde (Small-leaved Lime) at St. Annen-Kirchhof, Dahlem (ND 6-37/B)",
-   "species": "Small-leaved Lime (Tilia cordata)",
-   "location": {
-    "address": "Friedhof der St. Annen-Kirche, Koenigin-Luise-Strasse 57, Berlin-Dahlem",
-    "latitude": 52.458821,
-    "longitude": 13.286196,
-    "neighbourhood": "Dahlem, Steglitz-Zehlendorf"
-   },
-   "reason": "NEW this pass (2026-09-07). St. Annen-Kirchhof is a small (~2200 sqm) public churchyard founded in the 13th century with a Romanesque brick church (15th-century parts); per hard rule 10's churchyard exception, access is not in question. But no second source was found for this specific tree: stiftung-historische-friedhoefe.de's page for the churchyard returned HTTP 503 (Retry-After 86400) both attempts this pass, and de.wikipedia's 'Friedhof Dahlem' article mentions general linden rows along the paths without naming this specific Naturdenkmal specimen. Register (6-37/B) is the only source so far. Worth a retry on the Stiftung site next pass, or the church's own parish page.",
-   "status": "lead"
-  },
-  {
    "name": "Stiel-Eiche (Pedunculate Oak) at Oekowerk entrance, Grunewald forest (ND 4-39/B); and Trauben-Eiche x3 scattered through Forst Grunewald (ND 4-17/B, 4-18/B, 4-38/B)",
    "species": "Pedunculate Oak (Quercus robur) and Sessile Oak (Quercus petraea)",
    "location": {
@@ -198,7 +186,7 @@
    "status": "lead"
   },
   {
-   "name": "Berlin's tallest tree: an unnamed beech (Rotbuche) on Muehlenweg, southern Tegeler Forst",
+   "name": "[RESOLVED 2026-09-10, delivered as ber_021] Berlin's tallest tree: an unnamed beech (Rotbuche) on Muehlenweg, southern Tegeler Forst",
    "species": "Common Beech (Fagus sylvatica)",
    "location": {
     "address": "Muehlenweg, southern Tegeler Forst, Berlin-Reinickendorf",
@@ -206,7 +194,7 @@
     "longitude": null,
     "neighbourhood": "Tegeler Forst, Reinickendorf"
    },
-   "reason": "NEW this pass (2026-09-08), found while checking on the (now-dead, see blocked list) Burgsdorff-Laerche. 2021 airborne laser scanning (LiDAR) commissioned by the Senatsverwaltung fuer Umwelt found this beech to be Berlin's tallest tree at 43.15m, overtaking the Burgsdorff-Laerche (41.05m by the same survey). Covered by de.wikipedia's 'Tegeler Forst' article and an enthusiast page (l-u-m-o.de/buche, 404 on this pass, may be a dead link now) plus a 2025 Tagesspiegel storm-damage piece. No precise coordinate found this pass beyond 'on Muehlenweg in the southern part of the forest, one of three tree superlatives there'; that is at best a several-hundred-metre approximate location, not a tree-level pin, and this project's honesty bar on location precision means it cannot ship without a tighter fix. Also unclear whether it is individually named, marked with a sign, or a Naturdenkmal (no register match attempted this pass). Worth a future pass: try the Senatsverwaltung's own LiDAR/tree-superlative press material directly, or a Tegeler Forst trail map that marks the three superlative trees Berlin.de's press release describes.",
+   "reason": "NEW this pass (2026-09-08), found while checking on the (now-dead, see blocked list) Burgsdorff-Laerche. 2021 airborne laser scanning (LiDAR) commissioned by the Senatsverwaltung fuer Umwelt found this beech to be Berlin's tallest tree at 43.15m, overtaking the Burgsdorff-Laerche (41.05m by the same survey). Covered by de.wikipedia's 'Tegeler Forst' article and an enthusiast page (l-u-m-o.de/buche, 404 on this pass, may be a dead link now) plus a 2025 Tagesspiegel storm-damage piece. No precise coordinate found this pass beyond 'on Muehlenweg in the southern part of the forest, one of three tree superlatives there'; that is at best a several-hundred-metre approximate location, not a tree-level pin, and this project's honesty bar on location precision means it cannot ship without a tighter fix. Also unclear whether it is individually named, marked with a sign, or a Naturdenkmal (no register match attempted this pass). Worth a future pass: try the Senatsverwaltung's own LiDAR/tree-superlative press material directly, or a Tegeler Forst trail map that marks the three superlative trees Berlin.de's press release describes. RESOLVED 2026-09-10 (verify pass): l-u-m-o.de/buche (independent nature/LiDAR blogger, primary publisher of the 2021 Berlin-wide airborne laser scan) publishes the exact laser-scanned base coordinate for this specific beech, 52.59576N 13.24125E, 180m from the Burgsdorff-Laerche's own scanned base (52.59537N 13.24341E), plus a physical marker sign the local Revierfoersterei Tegelsee placed on the trail pointing hikers to it. Trunk diameter 96cm (girth converted via pi), planted 1843 per forestry records per the same source. Corroborated by de.wikipedia's Burgsdorff-Laerche and Tegeler Forst articles (which also confirm, via an official 2026-07-02 Berlin Senate press release, that the Burgsdorff-Laerche itself fell in a June 2025 storm while Dicke Marie/ber_001 survived the same storm). See data/research/berlin-verified.json ber_021.",
    "status": "lead"
   }
  ],
@@ -221,6 +209,18 @@
     "neighbourhood": "Tegeler Forst, Reinickendorf"
    },
    "reason": "BLOCKED 2026-09-08 (verify pass). Checked as a Wikidata candidate (Q51772354, 'highest tree in Berlin' framing). Was Berlin's tallest tree (41.05m per 2021 LiDAR survey) and a long-planted specimen, dated to 1795 (planted by royal-Prussian chief forester F.A.L. von Burgsdorff), designated Naturdenkmal. CONFIRMED DEAD: felled by a storm in June 2025 per de.wikipedia's 'Burgsdorff-Laerche' article and a Tagesspiegel piece on storm damage to Berlin's prominent forest trees ('Sturmschaden auch bei Berlins prominentesten Waldbaeumen', berlin.de press release, 2025). Never to be added as a collectible entry per the project's living-tree rule; recorded here so no future pass re-researches a felled tree."
+  },
+  {
+   "name": "[BLOCKED 2026-09-10] Winter-Linde - Stein-Linde (Small-leaved Lime) at St. Annen-Kirchhof, Dahlem (ND 6-37/B)",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "location": {
+    "address": "Friedhof der St. Annen-Kirche, Koenigin-Luise-Strasse 57, Berlin-Dahlem",
+    "latitude": 52.458821,
+    "longitude": 13.286196,
+    "neighbourhood": "Dahlem, Steglitz-Zehlendorf"
+   },
+   "reason": "NEW this pass (2026-09-07). St. Annen-Kirchhof is a small (~2200 sqm) public churchyard founded in the 13th century with a Romanesque brick church (15th-century parts); per hard rule 10's churchyard exception, access is not in question. But no second source was found for this specific tree: stiftung-historische-friedhoefe.de's page for the churchyard returned HTTP 503 (Retry-After 86400) both attempts this pass, and de.wikipedia's 'Friedhof Dahlem' article mentions general linden rows along the paths without naming this specific Naturdenkmal specimen. Register (6-37/B) is the only source so far. Worth a retry on the Stiftung site next pass, or the church's own parish page. BLOCKED 2026-09-10 (verify pass): the Charlottenburg-Wilmersdorf list was the wrong district file to check for a Steglitz-Zehlendorf tree; fetched Liste der Naturdenkmale im Bezirk Steglitz-Zehlendorf as WIKITEXT instead (ND 6-37/B), which carries a footnote the register itself does not: Beschreibung='Tilia cordata; Stand November 2024 gefaellt' (as of November 2024, FELLED). This is the same Wikipedia-registry-join technique that caught Krakow and Warsaw dead monuments (BRIEF_RESEARCH.md). Do not ship; do not re-research unless a source says a replacement was planted.",
+   "status": "blocked"
   }
  ]
 }
