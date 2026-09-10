@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ber_021",
+    "name": "Berlin's Tallest Tree",
+    "species": "Common Beech (Fagus sylvatica)",
+    "age_estimate": "documented planting in 1843, roughly 180 years old",
+    "age_min": 170,
+    "age_max": 190,
+    "girth_cm": 302,
+    "location": {
+      "address": "Mühlenweg, southern Tegeler Forst, near the junction with Heiligenseer Weg, 13505 Berlin-Tegel",
+      "latitude": 52.59576,
+      "longitude": 13.24125,
+      "neighbourhood": "Tegel, Reinickendorf"
+    },
+    "verified_sources": [
+      "https://l-u-m-o.de/buche",
+      "https://de.wikipedia.org/wiki/Burgsdorff-L%C3%A4rche",
+      "https://de.wikipedia.org/wiki/Tegeler_Forst"
+    ],
+    "access": "Free, in the public Tegeler Forst (Landschaftsschutzgebiet). No gate or ticket; reached on forest trails.",
+    "transport": "No direct public transport; nearest station is Alt-Tegel (U6), then roughly 3km (35-40 min walk or a short cycle) into the forest along the Heiligenseer Weg trail. The Revierförsterei Tegelsee has placed a visible marker sign on the trail pointing to the tree.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "This is a genuinely independent-of-any-register find, not a Naturdenkmal: it has no register entry at all (checked against data/registers/berlin-naturdenkmale.json, no match near this coordinate). WHY REMARKABLE: this beech is, as of a 2021 citywide airborne LiDAR (laser) survey commissioned via the Berlin forestry administration, the tallest tree in Berlin at 43.15m, having quietly overtaken the long-famous 'Burgsdorff-Larche' (Burgsdorff Larch, planted 1795 by forester Friedrich August Ludwig von Burgsdorff), which the laser scan showed was actually only 41.05m and had been over-estimated for decades by climber-based measurements (45m in 2000, 42.5m in 2012). The Burgsdorff-Larche itself fell in a storm in June 2025 per an official Berlin Senate press release (Sturmschaden auch bei Berlins prominentesten Waldbaeumen, 2 July 2025: 'die Dicke Marie blieb standhaft' -- our ber_001 survived the same storm) and is NOT this entry; do not confuse the two, they stand about 180m apart. This beech was discovered as the new record-holder in the same 2021 survey, announced publicly around 2022 (Reinickendorfer Allgemeine Zeitung, 24 Oct 2022, 'Neuer hoechster Baum') and covered by RBB television (Studio 3, 12 Oct 2023, 'Der neue hoechste Baum von Berlin'). AGE: l-u-m-o.de states the tree was planted in 1843 'laut forstlichen Aufzeichnungen' (according to forestry records) -- a documented planting date for this specific tree, not a bridge claim from the surrounding forest's history, so treated as a real estimate per the age rules; that makes it roughly 183 years old in 2026. GIRTH: l-u-m-o.de gives a trunk DIAMETER of 96cm (not circumference); girth_cm above is diameter x pi, converted, and should be read as an approximation from a diameter figure, not a tape-measured circumference. LOCATION: l-u-m-o.de itself publishes the exact laser-scan coordinate for the tree's base, 52.59576N 13.24125E, distinct from the Burgsdorff-Larche's own laser-scanned base at 52.59537N 13.24341E (180m to the east); the site also carries a physical marker sign (Hinweistafel) placed by the local forestry office (Revierfoersterei Tegelsee) pointing hikers to the correct tree, which is what makes this CONFIRMED rather than approximate despite there being no street address. No common/proper name has caught on yet (l-u-m-o.de floats 'Friedensbuche' or 'Hohe Buche' but says none has stuck); delivered here as 'Berlin's Tallest Tree' as a descriptive working title for the writer, not a claimed official name. SUPERLATIVE (hard rule 8): 'tallest tree in Berlin' is stated on the strength of the city's own 2021 LiDAR survey as reported by an independent nature-tech blogger and corroborated by German Wikipedia and regional press; check scripts/superlatives.py before shipping in case any other Berlin entry claims a height superlative. TWO SOURCES: l-u-m-o.de (independent nature/LiDAR blogger, primary publisher of the 2021 scan comparison and coordinates) and de.wikipedia's Burgsdorff-Laerche and Tegeler Forst articles (independently written encyclopedia entries, which in turn cite the Berlin Senate's own storm-damage press release and RBB coverage); neither traces to a government register, since this tree carries no Naturdenkmal designation at all."
+  }
+]
