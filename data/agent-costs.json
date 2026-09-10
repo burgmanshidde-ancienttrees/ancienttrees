@@ -7228,6 +7228,27 @@
     "note": "72 candidates, 64 viewed; 1 approval (Eichigt Koernerlinde), 0 held. Overwhelmingly proximity junk with no tree in frame: a photographer's food pictures on Chicago at 65-77 m, PSV stadium interiors on Eindhoven at 47 m, busts on Budapest's planes, six Het Loo panoramas on Apeldoorn. Proximity alone in a dense city drags in whole unrelated upload sets.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "berlin/prague",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 5,
+    "note": "Finished a standing write claim left uncommitted by an earlier attempt in this window: merge output (data/research/berlin-verified.json, prague-verified.json) was already on disk (1 Berlin tree, 4 Prague trees) but never merged/committed. Verified content against preflight/superlatives/astro build/qa, merged, committed. Claim released."
+   },
+   {
+    "target": "oahu",
+    "kind": "verify",
+    "tokens": 45000,
+    "trees": 2,
+    "note": "Deepened Foster Botanical Garden cluster (+2: hnl_020 Rainbow Shower Tree, hnl_021 Chaulmoogra Tree), both register + 2 independent sources. 3 new leads recorded (ambiguous 2nd kapok, Thomas Square Panama Tree, new unmined Lyon Arboretum cluster). Stories written directly in-session (batch too small for a dedicated write-stories dispatch) and merged. Claim released."
+   },
+   {
+    "target": "dordrecht",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "An earlier attempt in this window removed the Oosterse plataan lead (Van Baerleplantsoen bij NS, LRMB register-only, no girth/height, species not corroborated) from data/leads/dordrecht.json and recorded dor_021 in first-seen.json, apparently meaning to write it up, but never actually added a tree to data/cities/dordrecht.json before stopping. Found uncommitted and inconsistent (lastmod.json's dordrecht hash was untouched, confirming the file was never written). Reverted the lead removal and the first-seen entry rather than inventing a story from a single uncorroborated register row; it remains a lead for a pass that can find a second source or a girth/height reading. Prague's other READY lead (Dub na sportovisti v Dejvicich) was checked and held: it sits on a private sports club's fenced ground next to a kindergarten with no evidence of public access, so it stays a lead rather than shipping on a bare register entry."
    }
   ]
  }
