@@ -6,10 +6,22 @@
  "renderable_arms": {
   "city title": [
    "control",
-   "age_first"
+   "age_first",
+   "no_count"
   ]
  },
- "queue": [],
+ "queue": [
+  {
+   "id": "city-title-no-count",
+   "surface": "city title",
+   "hypothesis": "The count is inventory rather than a reason to click, so dropping it and leading with the age alone earns at least as many clicks.",
+   "arms": {
+    "control": "Ancient Trees in {city}: {n} to See, Oldest {age} Years",
+    "no_count": "Ancient Trees in {city}: the Oldest Is {age} Years"
+   },
+   "weeks": 8
+  }
+ ],
  "tests": [
   {
    "id": "city-title-age-first",
