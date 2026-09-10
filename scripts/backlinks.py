@@ -123,14 +123,22 @@ def check(store, today, limit=12, verbose=True):
 
     A page that fails to load is NOT recorded as a lost link: a 503 or a
     timeout is our problem, not theirs, and marking a live link gone on one
-    bad morning would turn this table into noise."""
+    bad morning would turn this table into noise.
+
+    For the same reason a failed fetch does not advance `checked`. The date
+    says when we last READ the page, so stamping it after a 403 would record
+    a verification that never happened, and `due()` sorts on it, so a page we
+    could not reach would drift to the back of the rotation and be retried
+    least often of all. A deliberate blocklist skip does advance it: that is
+    a decision rather than a failure, and retrying it first forever would
+    starve the rest of the list."""
     bad = blocked_hosts()
     seen = store.setdefault("seen", {})
     events = []
     for item in due(store.get("watch", []), limit):
         url = item["url"]
-        item["checked"] = today
         if any(b in url.lower() for b in bad):
+            item["checked"] = today
             if verbose:
                 print("  skipped (blocklist): %s" % url, file=sys.stderr)
             continue
@@ -143,6 +151,7 @@ def check(store, today, limit=12, verbose=True):
             continue
         finally:
             time.sleep(PAUSE)
+        item["checked"] = today
 
         hits = links_on(html)
         prev = seen.get(url)
