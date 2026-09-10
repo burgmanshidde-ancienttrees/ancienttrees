@@ -56,7 +56,8 @@
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble: the garden's 1810 founding and mid-19th-century redesign are well documented, but no source dates or measures any individual tree. Age range spans the redesign era to the founding date. Photo viewed directly: shows a brick footbridge over a canal flanked by mature pines and broadleaf trees, with people relaxing on benches along the waterfront, a genuine match for the garden's own avenues and groves. Approved.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by the mix of lindens, hackberries and plane trees along both straight avenues and winding paths, over a hundred species in all. They stand in the Giardini della Biennale."
     },
     {
       "id": "ven_002",
@@ -88,7 +89,8 @@
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble: the cemetery's 1813-1839 construction is well documented, but no source dates any individual cypress. Two earlier candidates (File:Cimitero_san_michele_venezia_10.jpg, File:Isola di San Michele (50444433737).jpg) were rejected for showing grave sections or a cloister courtyard instead. 2026-07-29: a new candidate found via Commons category search, File:Cimetiere ile san michele vu du vaporetto.jpg (CC BY 2.0, zedecoh/Flickr, 2008), described on its own Commons page as the island's brick perimeter wall seen from the water with cypress trees rising above it, exactly this entry's own framing. 2026-07-29 (later session): downloaded and personally viewed the file. Shows the cemetery's brick perimeter wall and chapel facade seen from the water, with dark cypress spires rising behind, matching this entry's ensemble framing exactly. Approved. Pin tightened 2026-07-28 to the cemetery's own mapped OSM polygon centroid (~65m from the earlier estimate); still ensemble-level, since no source dates or locates any individual cypress.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by their dark cypress spires rising above the cemetery's brick walls, visible from the water. They stand ringing the Cimitero di San Michele."
     },
     {
       "id": "ven_003",
@@ -163,7 +165,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is genuinely undated in every source checked; the legendary 1220 pine is explicitly a different, no-longer-living tree and not claimed as the age of today's cypresses. Photo viewed directly: shows the island entirely ringed by a dense band of dark cypresses, exactly the 'green band around the convent walls' the story describes. Approved.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by the dense green band of cypresses ringing the island, visible from the water around the convent walls. They stand around Isola di San Francesco del Deserto."
     },
     {
       "id": "ven_005",
@@ -266,7 +269,8 @@
       },
       "curation_status": "flagged",
       "notes": "Photo coordinates (45°26'18.37\"N, 12°19'14.3\"E) match this entry's own pin closely and the filename translates as 'trees', a strong textual match. Viewed directly: shows a wooded garden path lined with tall mature trees, matching the ensemble description. Approved.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by the mature planes, holm oaks, cypresses and horse chestnuts shading the garden's terraced paths. They stand in the Giardini Papadopoli, by the train station."
     },
     {
       "id": "ven_008",
@@ -296,7 +300,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Pin corrected 2026-07-28 from a district-level estimate for Sant'Alvise (~400m off) to the park's own mapped OSM boundary centroid, a real improvement though still park-level rather than pinned to the two specific trees. 2026-07-29: three iNaturalist Celtis australis observations found right at this pin (one within about 8m), confirming the location, but all three are unlicensed or CC-BY-NC; genuine dead end on the photo specifically.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by the two hackberries lining the path toward the small Neo-Gothic teatrino. They stand in the Parco di Villa Groggia, Cannaregio."
     },
     {
       "id": "ven_009",
@@ -328,7 +333,8 @@
       },
       "curation_status": "flagged",
       "notes": "Photo viewed directly: shows the garden's gravel path flanked by cypresses, a palm and statuary leading to the palazzo, a representative view of the garden ensemble this entry describes rather than a single named tree. Approved. Pin nudged 2026-07-28 to the garden/building's own OSM relation centroid (~30m from the earlier street-address estimate).",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by the row of black locusts leading to the neoclassical loggia, among yews, laurels, cypresses and hackberries. They stand in the garden of Ca' Zenobio degli Armeni."
     },
     {
       "id": "ven_010",
@@ -360,7 +366,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source dates or measures an individual tree at the fort; description as 'secolare' (century-old) is consistent across sources but unspecific. 2026-07-30: the 2026-07-29 lead resolved. Viewed the 50-file \"Baia Baia del Forte\" series (Category:Forte Marghera, CC0, all by the same photographer/day) directly rather than relying on filenames alone. Photo 13 shows a genuine mature tree on the fort's grassy grounds beside the water, consistent with the story's description; used it since this entry describes the ensemble of century-old grounds trees rather than one named specimen, so no single-tree identity risk applies the way it would for a named tree. The \"Entrada al Forte Marghera\" series (also viewed, sampled) was building/entrance shots throughout, no trees; not used.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by the large poplars, limes, planes and hackberries planted across the old parade grounds and ramparts. They stand at Forte Marghera, Mestre."
     },
     {
       "id": "ven_011",
@@ -392,7 +399,8 @@
       "location_precision": "confirmed",
       "height_m": 10.5,
       "verify_notes": "Height 10.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 188
+      "girth_cm": 188,
+      "how_to_recognise": "You can recognise it by standing right at the boat landing, the first tree to meet arriving visitors, its trunk 1.88 metres round. It stands on Isola di San Servolo."
     }
   ],
   "oldest_tree_id": "ven_001"
