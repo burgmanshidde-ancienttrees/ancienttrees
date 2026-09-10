@@ -10908,6 +10908,460 @@
    ],
    "trees": 11,
    "logged": true
+  },
+  {
+   "started": "2026-09-10T17:14:12+00:00",
+   "date": "2026-09-10",
+   "run_id": "34506923002",
+   "minutes": 84.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 337,
+   "denials": 29,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(if), Bash(mkdir), Bash(pip), Bash(printenv), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 81369560,
+   "claims_held": [
+    "_famous-spain"
+   ],
+   "commits": 12,
+   "cities_touched": 108,
+   "cities": [
+    {
+     "city": "aosta",
+     "trees": 1
+    },
+    {
+     "city": "novi-ligure",
+     "trees": 1
+    },
+    {
+     "city": "passo-manghen",
+     "trees": 1
+    },
+    {
+     "city": "tricase",
+     "trees": 1
+    },
+    {
+     "city": "nedvedice",
+     "trees": 0
+    },
+    {
+     "city": "neudrossenfeld",
+     "trees": 0
+    },
+    {
+     "city": "neuenrade",
+     "trees": 0
+    },
+    {
+     "city": "newtown",
+     "trees": 0
+    },
+    {
+     "city": "niedenstein",
+     "trees": 0
+    },
+    {
+     "city": "nihonmatsu",
+     "trees": 0
+    },
+    {
+     "city": "nikaho",
+     "trees": 0
+    },
+    {
+     "city": "nishio",
+     "trees": 0
+    },
+    {
+     "city": "nuenen",
+     "trees": 0
+    },
+    {
+     "city": "numata",
+     "trees": 0
+    },
+    {
+     "city": "oahu",
+     "trees": 0
+    },
+    {
+     "city": "odawara",
+     "trees": 0
+    },
+    {
+     "city": "ofunato",
+     "trees": 0
+    },
+    {
+     "city": "oguni",
+     "trees": 0
+    },
+    {
+     "city": "oklahoma-city",
+     "trees": 0
+    },
+    {
+     "city": "okuizumo",
+     "trees": 0
+    },
+    {
+     "city": "olympic-national-park",
+     "trees": 0
+    },
+    {
+     "city": "omishima",
+     "trees": 0
+    },
+    {
+     "city": "ono",
+     "trees": 0
+    },
+    {
+     "city": "otama",
+     "trees": 0
+    },
+    {
+     "city": "otoyo",
+     "trees": 0
+    },
+    {
+     "city": "ottendorf-gaedheim",
+     "trees": 0
+    },
+    {
+     "city": "oxford",
+     "trees": 0
+    },
+    {
+     "city": "palo-alto",
+     "trees": 0
+    },
+    {
+     "city": "pelham",
+     "trees": 0
+    },
+    {
+     "city": "pemberton",
+     "trees": 0
+    },
+    {
+     "city": "perouges",
+     "trees": 0
+    },
+    {
+     "city": "pirangi",
+     "trees": 0
+    },
+    {
+     "city": "pisz-forest",
+     "trees": 0
+    },
+    {
+     "city": "plauginiai-forest",
+     "trees": 0
+    },
+    {
+     "city": "polchow",
+     "trees": 0
+    },
+    {
+     "city": "poleski-national-park",
+     "trees": 0
+    },
+    {
+     "city": "port-renfrew",
+     "trees": 0
+    },
+    {
+     "city": "potsdam",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "prety",
+     "trees": 0
+    },
+    {
+     "city": "princeton-new-jersey",
+     "trees": 0
+    },
+    {
+     "city": "przybudki",
+     "trees": 0
+    },
+    {
+     "city": "ramsau-am-dachstein",
+     "trees": 0
+    },
+    {
+     "city": "regensburg",
+     "trees": 0
+    },
+    {
+     "city": "reinborn",
+     "trees": 0
+    },
+    {
+     "city": "renavas",
+     "trees": 0
+    },
+    {
+     "city": "reyersviller",
+     "trees": 0
+    },
+    {
+     "city": "roosendaal",
+     "trees": 0
+    },
+    {
+     "city": "rumskulla",
+     "trees": 0
+    },
+    {
+     "city": "runnymede",
+     "trees": 0
+    },
+    {
+     "city": "sachsenbrunn",
+     "trees": 0
+    },
+    {
+     "city": "sakegawa",
+     "trees": 0
+    },
+    {
+     "city": "sambeek",
+     "trees": 0
+    },
+    {
+     "city": "samoens",
+     "trees": 0
+    },
+    {
+     "city": "san-antonio",
+     "trees": 0
+    },
+    {
+     "city": "santa-maria-del-tule",
+     "trees": 0
+    },
+    {
+     "city": "santalfio",
+     "trees": 0
+    },
+    {
+     "city": "scheessel",
+     "trees": 0
+    },
+    {
+     "city": "schenklengsfeld",
+     "trees": 0
+    },
+    {
+     "city": "schlettau",
+     "trees": 0
+    },
+    {
+     "city": "senica",
+     "trees": 0
+    },
+    {
+     "city": "sequoia-national-park",
+     "trees": 0
+    },
+    {
+     "city": "shimizu",
+     "trees": 0
+    },
+    {
+     "city": "shingu",
+     "trees": 0
+    },
+    {
+     "city": "shiwa",
+     "trees": 0
+    },
+    {
+     "city": "simsbury",
+     "trees": 0
+    },
+    {
+     "city": "sliven",
+     "trees": 0
+    },
+    {
+     "city": "solingen",
+     "trees": 0
+    },
+    {
+     "city": "stary-smokovec",
+     "trees": 0
+    },
+    {
+     "city": "stelmuze",
+     "trees": 0
+    },
+    {
+     "city": "sulechow",
+     "trees": 0
+    },
+    {
+     "city": "sunderland-massachusetts",
+     "trees": 0
+    },
+    {
+     "city": "suzuka",
+     "trees": 0
+    },
+    {
+     "city": "taasinge",
+     "trees": 0
+    },
+    {
+     "city": "takahagi",
+     "trees": 0
+    },
+    {
+     "city": "takeo",
+     "trees": 0
+    },
+    {
+     "city": "tamba",
+     "trees": 0
+    },
+    {
+     "city": "teleci",
+     "trees": 0
+    },
+    {
+     "city": "telgte",
+     "trees": 0
+    },
+    {
+     "city": "tillamook",
+     "trees": 0
+    },
+    {
+     "city": "timber-creek",
+     "trees": 0
+    },
+    {
+     "city": "toba",
+     "trees": 0
+    },
+    {
+     "city": "tolpuddle",
+     "trees": 0
+    },
+    {
+     "city": "toronto",
+     "trees": 0
+    },
+    {
+     "city": "trainiskis",
+     "trees": 0
+    },
+    {
+     "city": "tsuruoka",
+     "trees": 0
+    },
+    {
+     "city": "turku",
+     "trees": 0
+    },
+    {
+     "city": "ueda",
+     "trees": 0
+    },
+    {
+     "city": "ueki",
+     "trees": 0
+    },
+    {
+     "city": "unnan",
+     "trees": 0
+    },
+    {
+     "city": "uzovska-panica",
+     "trees": 0
+    },
+    {
+     "city": "vainiai",
+     "trees": 0
+    },
+    {
+     "city": "vancouver",
+     "trees": 0
+    },
+    {
+     "city": "velke-opatovice",
+     "trees": 0
+    },
+    {
+     "city": "venon",
+     "trees": 0
+    },
+    {
+     "city": "vilnius",
+     "trees": 0
+    },
+    {
+     "city": "volkenroda",
+     "trees": 0
+    },
+    {
+     "city": "westerlo",
+     "trees": 0
+    },
+    {
+     "city": "wilparting",
+     "trees": 0
+    },
+    {
+     "city": "wisniowa",
+     "trees": 0
+    },
+    {
+     "city": "wuppertal",
+     "trees": 0
+    },
+    {
+     "city": "wye-mills-maryland",
+     "trees": 0
+    },
+    {
+     "city": "yakushima",
+     "trees": 0
+    },
+    {
+     "city": "yamanashi-city",
+     "trees": 0
+    },
+    {
+     "city": "yangpyeong",
+     "trees": 0
+    },
+    {
+     "city": "zehdenick",
+     "trees": 0
+    },
+    {
+     "city": "zwieslerwaldhaus",
+     "trees": 0
+    },
+    {
+     "city": "zywiec",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
