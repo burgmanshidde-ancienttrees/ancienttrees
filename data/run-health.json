@@ -9189,6 +9189,250 @@
    ],
    "trees": 15,
    "logged": true
+  },
+  {
+   "started": "2026-09-10T01:58:49+00:00",
+   "date": "2026-09-10",
+   "run_id": "34427597420",
+   "minutes": 31.8,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 188,
+   "denials": 20,
+   "denials_source": "permission_denials: Bash(cd), Bash(command), Bash(curl), Bash(for), Bash(git), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3)",
+   "ended": "success",
+   "tokens": 4939870,
+   "claims_held": [],
+   "commits": 23,
+   "cities_touched": 56,
+   "cities": [
+    {
+     "city": "argoules",
+     "trees": 0
+    },
+    {
+     "city": "bamberg",
+     "trees": 0
+    },
+    {
+     "city": "berlin",
+     "trees": 0
+    },
+    {
+     "city": "boetersheim",
+     "trees": 0
+    },
+    {
+     "city": "bracon",
+     "trees": 0
+    },
+    {
+     "city": "braga",
+     "trees": 0
+    },
+    {
+     "city": "brno",
+     "trees": 0
+    },
+    {
+     "city": "brzoza",
+     "trees": 0
+    },
+    {
+     "city": "cesky-krumlov",
+     "trees": 0
+    },
+    {
+     "city": "cooper-creek",
+     "trees": 0
+    },
+    {
+     "city": "copenhagen",
+     "trees": 0
+    },
+    {
+     "city": "dresden",
+     "trees": 0
+    },
+    {
+     "city": "effeltrich",
+     "trees": 0
+    },
+    {
+     "city": "ekero",
+     "trees": 0
+    },
+    {
+     "city": "freiburg",
+     "trees": 0
+    },
+    {
+     "city": "gliniak",
+     "trees": 0
+    },
+    {
+     "city": "gojaus-miskas",
+     "trees": 0
+    },
+    {
+     "city": "graz",
+     "trees": 0
+    },
+    {
+     "city": "grybiskes",
+     "trees": 0
+    },
+    {
+     "city": "henrykow-lubanski",
+     "trees": 0
+    },
+    {
+     "city": "higashimiyoshi",
+     "trees": 0
+    },
+    {
+     "city": "higashiomi",
+     "trees": 0
+    },
+    {
+     "city": "himi",
+     "trees": 0
+    },
+    {
+     "city": "hinode",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    },
+    {
+     "city": "hokuto",
+     "trees": 0
+    },
+    {
+     "city": "hong-kong",
+     "trees": 0
+    },
+    {
+     "city": "iwaki",
+     "trees": 0
+    },
+    {
+     "city": "kawazu",
+     "trees": 0
+    },
+    {
+     "city": "kintai",
+     "trees": 0
+    },
+    {
+     "city": "kitamoto",
+     "trees": 0
+    },
+    {
+     "city": "komjatice",
+     "trees": 0
+    },
+    {
+     "city": "ksiaz",
+     "trees": 0
+    },
+    {
+     "city": "kybarciai",
+     "trees": 0
+    },
+    {
+     "city": "lazy-cheb",
+     "trees": 0
+    },
+    {
+     "city": "le-precheur",
+     "trees": 0
+    },
+    {
+     "city": "leiden",
+     "trees": 0
+    },
+    {
+     "city": "lisbon",
+     "trees": 0
+    },
+    {
+     "city": "luxembourg-city",
+     "trees": 0
+    },
+    {
+     "city": "madrid",
+     "trees": 0
+    },
+    {
+     "city": "malsfeld",
+     "trees": 0
+    },
+    {
+     "city": "mcely",
+     "trees": 0
+    },
+    {
+     "city": "milan",
+     "trees": 0
+    },
+    {
+     "city": "mito",
+     "trees": 0
+    },
+    {
+     "city": "nagai",
+     "trees": 0
+    },
+    {
+     "city": "nantes",
+     "trees": 0
+    },
+    {
+     "city": "omishima",
+     "trees": 0
+    },
+    {
+     "city": "ora",
+     "trees": 0
+    },
+    {
+     "city": "ottendorf-gaedheim",
+     "trees": 0
+    },
+    {
+     "city": "pagramantis-regional-park",
+     "trees": 0
+    },
+    {
+     "city": "pajuris",
+     "trees": 0
+    },
+    {
+     "city": "palermo",
+     "trees": 0
+    },
+    {
+     "city": "perouges",
+     "trees": 0
+    },
+    {
+     "city": "plunge",
+     "trees": 0
+    },
+    {
+     "city": "tokyo",
+     "trees": 0
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
