@@ -9,7 +9,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, type CityEntry } from "../lib/trees";
 import { speciesCommon, speciesPageSlugs } from "../lib/species";
-import { usablePhoto, metaImageUrls, ogImageUrl } from "../lib/images";
+import { usablePhoto, metaImageUrls, ogImageUrl, cityFaceTree } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { peakFor } from "../lib/phenology";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -199,10 +199,18 @@ const listElements = trees.map((t, i) => {
 // The page's own face: whichever tree photo the city cards already use. Google
 // picks a result thumbnail from the page, and with neither og:image nor a
 // schema image it was falling back to our logo on 94 of 95 city pages.
+// ONE FACE PER CITY, fixed 2026-09-10 on Hidde's "should we use the same trees
+// as cover as we do on website app? Keep it consistent at all times." It did
+// not: this picked the FIRST tree with a usable photograph while the city
+// cards and /api/browse.json both used cityFaceTree()'s ranking, so Prague
+// wore the Beethoven Plane in Google and the Plane of Karlovo namesti in the
+// app, and Seville wore two different trees the same way. That is the
+// 2026-08-25 rule broken in the one place its own check could not see: the
+// check compared browse.json against the Swift screens and never looked at
+// what the meta tags say. Same function now, so there is one answer.
 const facePhotoUrl = (() => {
-  const hero = city.data.hero_tree_id ? trees.find((t) => t.id === city.data.hero_tree_id) : undefined;
-  const p = (hero && usablePhoto(hero)) || trees.map((t) => usablePhoto(t)).find(Boolean);
-  return p?.url ?? null;
+  const t = cityFaceTree({ hero_tree_id: city.data.hero_tree_id, trees });
+  return t ? (usablePhoto(t)?.url ?? null) : null;
 })();
 const cityOgImage = facePhotoUrl ? `\n<meta property="og:image" content="${esc(ogImageUrl(facePhotoUrl))}">` : "";
 const graph = [
