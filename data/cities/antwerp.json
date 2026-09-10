@@ -61,7 +61,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is a documented range, not a single figure: protected since 1949 on the strength of it likely being a liberty tree from either 1789 or 1830, per Flanders' own heritage inventory. Neither date is confirmed. monumentaltrees.com used for cross-check only, per hard rule 1, not copied. Pin corrected 2026-07-26: the prior coordinate was about 1.1km from the church itself; the city's own Groeninventaris tree layer places a single large-trunked Fagus sylvatica (505cm circumference, matching this entry's own 495cm measurement) right beside Heilig Hartstraat, with no other beech of comparable size anywhere nearby (every other Fagus in the area is a small ornamental 'Dawyck' street tree under 60cm).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its huge trunk, nearly five metres round, and wide canopy spreading 32 metres. It stands in the small square between the rectory and Sint-Willibrorduskerk."
     },
     {
       "id": "ant_002",
@@ -100,7 +101,8 @@
       },
       "curation_status": "flagged",
       "notes": "No specific age, circumference or planting date found for this individual tree despite its 2010 monument protection; the estate's own documented history (15th-17th century) is used only as context, not as evidence of this specific tree's age.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its broad, high crown visible across the meadow. It stands opposite the entrance to the Sterckshof manor house, in Rivierenhof park."
     },
     {
       "id": "ant_003",
@@ -137,7 +139,8 @@
       },
       "curation_status": "flagged",
       "notes": "National champion girth (410cm, 2009) confirmed by Belgium's own dendrological inventory as referenced in the heritage listing; no specific planting date found, so age range reflects typical robinia longevity rather than a documented figure. Pin confirmed 2026-07-26 via the city's own Groeninventaris tree layer: exactly one Robinia pseudoacacia is recorded inside the park's bounds.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its thick trunk, 4.10 metres round, the widest black locust recorded in Belgium. It stands in Hertoghepark, hemmed in by Desguinlei, Karel Oomsstraat and Markgravelei."
     },
     {
       "id": "ant_004",
@@ -243,7 +246,8 @@
       },
       "curation_status": "flagged",
       "notes": "Second source added 2026-07-30: Beeldbank Onroerend Erfgoed (the Flanders heritage agency's separate image-archive database, distinct from the Inventaris record already cited), image 192759, captioned \"Opgaande Canadapopulier\" at Eric Sasselaan, photographed 2011-10-18 by Geert Van der Linden, the same photo already used for this entry's approved photo. Independently confirms species and street. Age range reflects typical Canadian poplar growth rates rather than a documented planting date; included on size and visual grounds, not claimed antiquity. Pin corrected 2026-07-27: the previous coordinates (51.201, 4.395) were about 800m from the actual street, verified by geocoding 'Eric Sasselaan, Antwerpen' directly (Nominatim) and cross-checking the street's own OpenStreetMap geometry, which runs through the Tentoonstellingswijk along the former Brialmont fortress's ravelin moat, exactly as the heritage inventory describes. Moved to the street's curved midsection nearest that former moat. The heritage record itself claims only 15m precision and its exact point sits behind a JS-rendered map this session's tools could not read, so this stays approximate rather than confirmed.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by its 35 metre height and trunk running clear of branches for six metres before the crown begins. It stands beside the bridge on Eric Sasselaan."
     },
     {
       "id": "ant_007",
@@ -283,7 +287,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age and planting date are exactly documented (3 September 1994), unusually precise for this list. Included for historical significance rather than age, labelled 'Youngest tree' for honesty, same pattern as other cities' young-but-significant entries. Pin tightened 2026-07-26 via the city's own Groeninventaris tree layer: the only Tilia x europaea recorded on the Grote Markt (a second lime nearby is Tilia cordata, a different species).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the bronze plaque set into four chained posts around its base. It stands in the middle of the Grote Markt."
     },
     {
       "id": "ant_008",
@@ -315,7 +320,8 @@
       },
       "curation_status": "flagged",
       "notes": "Presented deliberately as an ensemble: no individual tree in Den Brandt has a documented age or circumference in the sources checked. The estate's own ownership history (1396, 1790, 1804, 1910, 1911) is documented and used as context only.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them as the collection of solitary trees and tree groups around the pond and open lawn. They stand in the park behind Kasteel Den Brandt."
     },
     {
       "id": "ant_009",
