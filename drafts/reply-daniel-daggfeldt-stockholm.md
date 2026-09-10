@@ -6,8 +6,9 @@ proceed"). A separate mail to somebody who was cc'd reads as going round the
 person who introduced her, and it splits a thread that is currently one
 conversation. Hence the single line addressed to her at the bottom.
 
-**Not sent yet.** Drafted 2026-09-08, rewritten 2026-09-10 to lead on Prague
-and the app, on Hidde's steer. Nothing in data/outreach-sent.json for this
+**Not sent yet.** Drafted 2026-09-08, cut to the bone 2026-09-10 on Hidde's
+steer: "just ask him for feedback, and don't dwell on the tree details". What
+changed on the pages is one line and a link; the question is the mail. Nothing in data/outreach-sent.json for this
 address.
 
 - **Valkasken is live and verified**, two independent sources: Swedish
@@ -47,19 +48,14 @@ address.
 
 Hi Daniel,
 
-Thanks, this is the mail I hoped for.
+Thanks, this is the mail I hoped for. Valkasken is live and both your
+corrections to the Prince Eugen oak are in:
+https://ancienttrees.app/stockholm/valkasken
 
-Valkasken is on the page now: https://ancienttrees.app/stockholm/valkasken
-Linne writing it down in the 1740s beats anything else Stockholm had. And
-Prince Eugen's oak now says largest in the city, and that the trunk is hollow,
-so the 45 cubic metres is the shape of the tree and not an amount of wood.
-Better story than we had.
+Good to hear you used it to plan Prague. What did you think of it, and was
+anything missing?
 
-The part I am most curious about is Prague. You planned that trip with it, so
-I would like to hear what was missing, and how it holds up once you are
-actually standing in front of them.
-
-We put the app on the App Store a week ago and I am eager to hear what you
+We put the app on the App Store a week ago and I would like to hear what you
 make of that as well:
 https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
 
