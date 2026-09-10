@@ -64,7 +64,8 @@
         ],
         "label": "August to September, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its species alone among the plane trees lining the embankment, easy to miss unless you already know it is there. It stands in the small park on Vajanského nábrežie."
     },
     {
       "id": "brt_002",
@@ -94,7 +95,8 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 227) plus a 2026 dnes24.sk news roundup of Bratislava's protected trees independently name this ash. No published height, girth or age found for this specific specimen despite searching krizom-krazom.eu and enviroportal.sk, both of which cover sibling register entries but not this one. Age left empty rather than guessed. Does not appear on the bratislava.oma.sk/stare-mesto.oma.sk protected-tree map listings despite being in the register and the news article; noted rather than resolved, worth a recheck that the tree still stands.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its crown, cleared well above the surrounding rooftops. It stands on Rudnayovo námestie, in front of St. Martin's Cathedral."
     },
     {
       "id": "brt_003",
@@ -124,7 +126,8 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 211) plus enviroportal.sk's protected-tree catalogue agree on species, 20m height, 315cm girth, 1996 protection. Age genuinely conflicts between sources: one figure (traced to a 2008 press mention) gives ~150 years, another (closer to the register catalogue) gives 60 years with a 24m crown. Left age_estimate empty rather than pick a winner; story states both. Access confirmed independently via local reporting on a 2020s volunteer renovation of this exact park.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it in May and June by upright spikes of lavender flowers appearing before the leaves fill in. It stands in Park Škarniclova, by the former dormitory."
     },
     {
       "id": "brt_004",
@@ -154,7 +157,8 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 214) plus krizom-krazom.eu agree on species (Quercus virgiliana, Adriatic oak, uncommon this far north), 25m height, 360cm girth, 24m crown, double protection 1982 and 1996. Age derived: 'about 100 years' figure at time of the second source's writing, 2026-adjusted here to 100-120. Access is a judgement call: register's own locality text places the tree 'na hranici súkromného pozemku a schodov' (on the boundary of a private plot and the steps); passes the public-access test from the stairs, honestly worded rather than treated as fully open ground.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its crown directly overhead as you climb the public stairway, its base close to a private plot's boundary. It stands at the top of the Šulekova stairway."
     },
     {
       "id": "brt_005",
@@ -184,7 +188,8 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 223) plus krizom-krazom.eu agree on species (Betula papyrifera, an unusual North American ornamental for the region), 8m height, 94cm girth, 8m crown, given as 50 years old at the 1996 designation (age_min/max 75-85 is a 2026-adjusted derivation from that dated figure). Locality 'pred domom' (in front of the house) read as street frontage rather than an enclosed private garden, unlike several sibling register entries marked 'v záhrade' (in the garden) left as leads. No photo confirming the birch stands on the public verge rather than inside a low front fence; flagged for that.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its pale, papery bark peeling in thin horizontal strips, the smallest tree on this list. It stands on the street in front of Mišíkova 36."
     },
     {
       "id": "brt_006",
@@ -247,7 +252,8 @@
         "status": "approved",
         "width": 3888,
         "height": 5184
-      }
+      },
+      "how_to_recognise": "You can recognise it by its trunk, 7.05 metres round, standing in the open with no fence between the road and it. It stands beside Limbašská cesta, near the former Strapák's Mill."
     }
   ]
 }
