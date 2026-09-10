@@ -1,0 +1,66 @@
+{
+  "city": "Novi Ligure",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Novi Ligure's mapped tree stands alone in the hills above the town: an oak known locally as Nonna Quercia, Grandma Oak, five and a half metres round and put at roughly 300 years old. Italy's Ministry of Agriculture chose it for a national television campaign in 2024, and Piedmont's own monumental-tree register protects it. Reaching it means a drive into the countryside around Strada del Castellone; there is no gate, only a rural road and a field.",
+  "meta_description": "The Quercia Castagnara of Novi Ligure: a 300-year-old oak in Piedmont's monumental-tree register, featured on Italian state television in 2024.",
+  "question_answer": "Novi Ligure's mapped tree is the Quercia Castagnara, an oak in the hills above the town at Strada del Castellone, put at roughly 300 to 305 years old with a trunk 5.40 metres round. Piedmont's monumental-tree register protects it, and Italy's Ministry of Agriculture featured it in a national television campaign for International Forest Day in 2024.",
+  "question_meta": "Novi Ligure's oldest tree is Quercia Castagnara, a 300-year-old oak that appeared on Italian state television in 2024.",
+  "question_context": "The tree carries entry 244 in Italy's RAMI national monumental-tree register, registered on 14 October 2021, which gives species Quercus virgiliana, a height of 22 metres and a girth of 5.40 metres at chest height, with an estimated age of about 305 years and a health rating of 'sufficient'. Il Piccolo, a local newspaper, independently corroborated the tree in a 2024 article timed to its appearance in a national RAI television campaign for International Forest Day, giving a rougher figure of 'over four metres' for the girth and a crown spread of about 28 metres, alongside new photographs by a local photographer who has documented the tree for years. Locals call it Nonna Quercia, Grandma Oak, and connect it to the 1799 Battle of Novi, said to mark a position held by French infantry that day; no military record backs the claim, so it is carried here as neighbourhood memory rather than settled history. The tree has hosted guided heritage walks since at least 2018, including the Invasioni Digitali cultural event, and stands on public rural land beside Strada del Castellone rather than on a fenced or ticketed site.",
+  "hero_tree_id": "ncl_001",
+  "oldest_tree_id": "ncl_001",
+  "faq": [
+    {
+      "q": "How old is the Quercia Castagnara?",
+      "a": "Roughly 300 to 305 years, by the estimate in Italy's national monumental-tree register. A 2024 newspaper account independently calls it 'at least 300 years old'."
+    },
+    {
+      "q": "Why was it on Italian television?",
+      "a": "Italy's Ministry of Agriculture featured it in a 2024 national RAI campaign for International Forest Day, alongside fresh photographs by a local photographer who had documented the tree for years."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no ticket or gate. It stands beside Strada del Castellone, a public rural road in the hills above Novi Ligure, and has hosted guided heritage walks since at least 2018."
+    },
+    {
+      "q": "Is the story about the Battle of Novi true?",
+      "a": "It is local memory rather than a documented fact. The tale that it marks a position held by French infantry during the 1799 Battle of Novi has no military record behind it, so treat it as neighbourhood tradition."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ncl_001",
+      "name": "Quercia Castagnara",
+      "species": "Adriatic Oak (Quercus virgiliana)",
+      "age_estimate": "roughly 300-305 years",
+      "age_min": 280,
+      "age_max": 330,
+      "girth_cm": 540,
+      "height_m": 22.0,
+      "location": {
+        "address": "Strada del Castellone 9-11, in the hills above Novi Ligure",
+        "latitude": 44.738363,
+        "longitude": 8.821518,
+        "neighbourhood": "Castellone, Novi Ligure"
+      },
+      "story": "State television found this oak in 2024, and the ministry that runs Italy's monumental-tree register did the finding: the Quercia Castagnara went out on RAI as part of a national campaign for International Forest Day, freshly photographed by a local photographer who had been documenting it for years. Locals call it Nonna Quercia, Grandma Oak, and the retelling ties it to the Battle of Novi in 1799, said to mark a spot French infantry held that day. No military record backs that story; it survives as neighbourhood memory rather than history, and the tree is kept apart from it here.\n\nWhat is measured: 5.40 metres round at chest height by the national register, twenty-two metres tall, a crown spanning some 28 metres, and an estimated 300 to 305 years old. A 2024 newspaper account gives a rougher 'over four metres' for the girth, which is the same tree read with less precision rather than a disagreement worth resolving.\n\nIt stands on a public rural road in the hills above Novi Ligure, in Piedmont's own register of its most important trees, and has hosted guided heritage walks since at least 2018. Getting there needs a car; nothing marks a fixed parking spot, so the last stretch is worked out on the day.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/244-quercia-virgiliana-",
+        "https://www.ilpiccolo.net/2024/03/19/la-quercia-del-castellone-negli-spot-tv-grazie-alle-foto-di-giraudo/"
+      ],
+      "access": "Free; stands beside Strada del Castellone, a public rural road in the hills above Novi Ligure, and has hosted public guided walks (the 2018 Invasioni Digitali heritage event). Whether the exact trunk is reached from the roadside or requires crossing the edge of farmland is not confirmed.",
+      "transport": "Rural hillside site outside Novi Ligure town, reachable by car; no public transport stop identified near the tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_sotto.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Matteo Vignoli, Wikimedia Commons",
+        "status": "approved",
+        "width": 4000,
+        "height": 3000
+      },
+      "how_to_recognise": "You can recognise it by its immense fanning crown and gnarled 5.4-metre trunk, standing alone in an open field. It stands on Strada del Castellone, in the hills above Novi Ligure."
+    }
+  ]
+}

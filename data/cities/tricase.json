@@ -1,0 +1,67 @@
+{
+  "city": "Tricase",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Tricase's mapped tree stands on the roadside toward Santa Maria di Leuca: a Vallonea oak known locally as the Oak of a Hundred Knights, its canopy wide enough that Emperor Frederick II is said to have sheltered a hundred riders beneath it in a storm. Italy named it Tree of the Year in 2019 and sent it to compete for the European title the year after. Put at 700 to 900 years old, it is free to reach by car, on the ordinary roadside between Tricase and Marina Serra.",
+  "meta_description": "The Vallonea Oak of Tricase, Italy's Tree of the Year 2019: a 700-to-900-year-old oak known as the Oak of a Hundred Knights.",
+  "question_answer": "Tricase's mapped tree is the Quercia Vallonea, a Vallonea oak on the roadside toward Marina Serra, put at 700 to 900 years old with a girth of about 4.5 metres. Locally it is the Quercia dei Cento Cavalieri, the Oak of a Hundred Knights, after a legend that Emperor Frederick II sheltered a hundred riders under its canopy. Italy named it Tree of the Year in 2019.",
+  "question_meta": "Tricase's Vallonea Oak, Italy's 2019 Tree of the Year, known as the Oak of a Hundred Knights. Its age, its legend, and where to find it.",
+  "question_context": "Three independent sources (italiachecambia.org, lentium.it and hdsalento.com) agree on the species, an unusual one for Italy, Quercus ithaburensis subsp. macrolepis, and on its core measurements: height 18 to 20 metres, girth over 4 metres (recorded here as 4.5 metres), and a crown spread giving roughly 700 square metres of shade. They disagree on age: most call it 'more than 700 years', two independent write-ups say roughly 900; both figures are carried rather than resolved. Locally it is the Quercia dei Cento Cavalieri, the Oak of a Hundred Knights, from a legend that Emperor Frederick II sheltered with a hundred mounted knights beneath it during a storm; no historical record confirms the visit, and the story is carried as legend rather than history. Its acorns historically supplied tannin for the regional leather trade. Italy named it Tree of the Year in 2019 or 2020 depending on source, and it went on to the European Tree of the Year title; the WWF separately made it Puglia's symbol tree in 2000. It stands on the public roadside between Tricase and Marina Serra, with no gate or private-land restriction found, though visitor accounts note the parking is informal.",
+  "hero_tree_id": "trc_001",
+  "oldest_tree_id": "trc_001",
+  "faq": [
+    {
+      "q": "How old is the Vallonea Oak of Tricase?",
+      "a": "Sources disagree: most call it more than 700 years old, two independent write-ups put it nearer 900. Both figures are given here rather than picked between."
+    },
+    {
+      "q": "Where does the name Oak of a Hundred Knights come from?",
+      "a": "Local legend holds that Emperor Frederick II sheltered a hundred mounted knights beneath its canopy during a storm. No historical record confirms the visit; it survives as legend."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the public roadside between Tricase and Marina Serra, on the way to Santa Maria di Leuca, with no gate or ticket, though parking is informal."
+    },
+    {
+      "q": "What award has it won?",
+      "a": "Italy named it Albero dell'Anno, Tree of the Year, in 2019, and it went on to compete for the European Tree of the Year title. The WWF separately named it Puglia's own symbol tree in 2000."
+    }
+  ],
+  "trees": [
+    {
+      "id": "trc_001",
+      "name": "Quercia Vallonea di Tricase",
+      "species": "Valonia Oak (Quercus ithaburensis subsp. macrolepis)",
+      "age_estimate": "roughly 700-900 years",
+      "age_min": 700,
+      "age_max": 900,
+      "girth_cm": 450,
+      "height_m": 19.0,
+      "location": {
+        "address": "Along the road between Tricase and Marina Serra, toward Santa Maria di Leuca, Salento",
+        "latitude": 39.92793,
+        "longitude": 18.37875,
+        "neighbourhood": "Tricase, Province of Lecce, Puglia"
+      },
+      "story": "Legend puts the Holy Roman Emperor Frederick II and a hundred mounted knights under this oak's canopy during a storm, which is where its local name comes from: Quercia dei Cento Cavalieri, the Oak of a Hundred Knights. Nobody has ever documented the emperor's visit, and the crown alone makes the story easy to picture regardless: it shades nearly 700 square metres, wide enough that a hundred riders sheltering under it is an easy thing to imagine rather than an obvious exaggeration.\n\nIt is a Vallonea oak, a species barely present in Italy outside a handful of specimens, with a girth of about 4.5 metres and a trunk that has fed the region's leather-tanning trade for generations, its acorns rich in the tannin that trade needed. Sources put its age at 700 to 900 years, a spread nobody has closed, and give it the height of a middling office building, 18 to 20 metres.\n\nItaly named it Albero dell'Anno, Tree of the Year, in 2019, sent it on to compete for the European title in 2020, and the WWF made it Puglia's own symbol tree back in 2000. It stands on the roadside between Tricase and Marina Serra on the way to Santa Maria di Leuca, at the southern tip of the Salento peninsula, free to reach by car, with parking that visitors describe as an afterthought for a tree this well known.",
+      "verified_sources": [
+        "https://www.italiachecambia.org/2020/02/quercia-vallonea-albero-piu-antico-salento-piu-amato-italia/",
+        "https://www.lentium.it/la-quercia-vallonea-o-dei-cento-cavalieri-di-tricase/",
+        "https://www.hdsalento.com/en/salento-the-quercia-vallonea-vallonea-oak-tricase-turns-900-years-old/"
+      ],
+      "access": "Free, roadside; stands beside the road from Tricase toward Marina Serra/Santa Maria di Leuca. Visitor notes mention little parking and that it is easiest to approach from the Leuca direction, but no gate or private-land restriction found in any source.",
+      "transport": "Rural roadside site outside Tricase; reached by car, no public transport identified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Quercia_Vallonea_di_Tricase.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "FedericaPiccinniPhoto, Wikimedia Commons",
+        "status": "approved",
+        "width": 5616,
+        "height": 3744
+      },
+      "how_to_recognise": "You can recognise it by its huge, low, spreading crown, wide enough to have sheltered a hundred riders by local legend. It stands on the roadside between Tricase and Marina Serra."
+    }
+  ]
+}
