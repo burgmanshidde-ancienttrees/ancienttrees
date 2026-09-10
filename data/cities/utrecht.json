@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "hero_tree_id": "utr_002",
   "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a science campus, and a park cluster of century-old planes planted when the city's old defences became parkland.",
-  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 30 verified locations, real stories.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 27 verified locations, real stories.",
   "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
-  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full 30.",
+  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full 27.",
   "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
   "faq": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Utrecht's remarkable trees free to visit?",
-      "a": "Three of the 30, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other 27, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk, Geertebolwerk, Lucasbolwerk, Lepelenburg and the bastion-belt canal walk, are free and visible from public streets or open parkland at any hour."
+      "a": "Three of the 27, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other 24, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk, Geertebolwerk, Lucasbolwerk, Lepelenburg and the bastion-belt canal walk, are free and visible from public streets or open parkland at any hour."
     },
     {
       "q": "Why does Utrecht have so few very old street trees?",
@@ -963,104 +963,6 @@
       "girth_cm": 526,
       "height_m": 18,
       "verify_notes": "Alive and inspected 2016-08-15: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1683455)."
-    },
-    {
-      "id": "utr_035",
-      "name": "Witte paardenkastanje (White Horse Chestnut)",
-      "species": "Horse Chestnut (Aesculus sp.)",
-      "location": {
-        "address": "Naast brug Herenstraat/Lepelenburg, Utrecht",
-        "latitude": 52.090038,
-        "longitude": 5.127723,
-        "neighbourhood": "Lepelenburg, Utrecht"
-      },
-      "story": "The bridge at Herenstraat carries two trees off the national register, not one. A few steps from the Oriental plane already mapped at this crossing stands a white horse chestnut, filed separately under its own number in the Landelijk Register Monumentale Bomen, owned by the city and standing on ground anyone can walk.\n\nLepelenburg was a bastion on Utrecht's medieval wall before it became parkland around 1860, part of the conversion that turned the whole ring of fortifications into the Singelplantsoen. The register puts this chestnut's planting somewhere between 1910 and 1920, which makes it roughly 105 to 115 years old and a good half century younger than the park around it. It was put in while the Netherlands sat out the first war as a neutral country, it stood here through the occupation of the second, and it has watched a century of bicycles cross the bridge beside it.\n\nWhich horse chestnut it is, we cannot tell you. The register gives only the Dutch witte paardenkastanje, the white-flowered kind, and never settles the species in Latin. No other source we could find names this trunk at all, so the entry rests on that single record, corroborated by the well documented history of the park rather than by anything specific to this tree. If you know which one is standing there, tell us.",
-      "how_to_recognise": "You can recognise it by leaves of five to seven leaflets spread from a single stalk like fingers, and by the white flower candles it carries in May. It stands at the Herenstraat bridge, a few steps from the Oriental plane mapped here.",
-      "best_time": {
-        "months": [
-          5
-        ],
-        "kind": "flowers",
-        "label": "May, when the white candles open along the bridge"
-      },
-      "age_min": 105,
-      "age_max": 115,
-      "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1688783"
-      ],
-      "access": "Free. Stands beside the Herenstraat/Lepelenburg bridge over the old fortification canal, on public ground.",
-      "transport": "Lepelenburg park, a short walk east of Utrecht Centraal station, inside the old city ramparts.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "girth_cm": 288,
-      "height_m": 20
-    },
-    {
-      "id": "utr_036",
-      "name": "Zilveresdoorn (Silver Maple), pair",
-      "species": "Maple (Acer sp.)",
-      "location": {
-        "address": "Zuidwesten van het Burgemeester F. Andreamonument, Wilhelminapark, Utrecht",
-        "latitude": 52.087817,
-        "longitude": 5.139382,
-        "neighbourhood": "Wilhelminapark, Utrecht"
-      },
-      "story": "The register dates these two silver maples to the 1880s, which would put them here before the park was. Wilhelminapark was laid out in 1898 in the informal English landscape style; the Landelijk Register Monumentale Bomen gives this planting a band of 1880 to 1890, so roughly 135 to 145 years. The register offers no basis for that band beyond its own record, so the overlap is a curiosity worth standing under rather than a settled story about who planted them and when.\n\nThey are filed as one entry, two trunks together southwest of the Burgemeester F. Andrea monument, and they are a different tree from the Cappadocian maple mapped a little over twenty metres away at the park's west entrance. Acer saccharinum is a North American river-bottom tree, brought to Europe as an ornamental for the reason you can see from the path: the leaves are cut almost to the midrib and silver-white underneath, so one gust turns the whole crown pale and the next turns it green again.\n\nThe register names them by the Dutch zilveresdoorn and gives no Latin species, and no second source we could find names these two trunks. If you can settle which maple is standing southwest of the monument, tell us; somebody with the seeds in hand will answer it faster than we can from a record.",
-      "how_to_recognise": "You can recognise them by being two, and by leaves cut almost to the midrib and silver-white underneath, so wind turns the crown pale. They stand together southwest of the Burgemeester F. Andrea monument in Wilhelminapark.",
-      "age_min": 135,
-      "age_max": 145,
-      "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1678147"
-      ],
-      "access": "Free. Stands in Wilhelminapark, a public park open at all hours, near the Burgemeester F. Andreamonument.",
-      "transport": "Wilhelminapark, about a 15 minute walk south of Utrecht Centraal station.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "girth_cm": 440,
-      "height_m": 28
-    },
-    {
-      "id": "utr_037",
-      "name": "Gewone haagbeuk (Common Hornbeam)",
-      "species": "Hornbeam (Carpinus sp.)",
-      "location": {
-        "address": "Voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
-        "latitude": 52.086086,
-        "longitude": 5.128886,
-        "neighbourhood": "Zonnenburg / Servaasbolwerk, Utrecht"
-      },
-      "story": "This tree was already growing when the observatory behind it went up. The Landelijk Register Monumentale Bomen puts the planting of this hornbeam between 1830 and 1840, so roughly 185 to 195 years, and the Sterrenwacht on the Zonnenburg bastion opened in the 1850s. The tree stands on the footpath along its north side, on a piece of raised ground that was built to hold cannon and now holds telescopes and trees.\n\nZonnenburg and Servaasbolwerk are stretches of Utrecht's medieval defensive wall. From 1835 Jan David Zocher jr turned that whole ring into the Singelplantsoen, the chain of canal-side parks the city still walks through. The register's planting band overlaps Zocher's work, and nothing we found says this hornbeam belongs to it, so the two dates stay two dates rather than one tidy explanation.\n\nIt is not the sycamore mapped ten metres away beside the memorial beech. That is a separate register entry with its own number, and so is this one.\n\nWhich hornbeam it is stays open. The register gives the Dutch gewone haagbeuk and no Latin species, and no second source we could find names this trunk: the city's printed tree walks skip it, and the canal-side monumental tree route running past here has nineteen numbered stops, none of them this tree. If you know it, tell us.",
-      "how_to_recognise": "You can recognise it by the fluted, muscled trunk mature hornbeams grow, and by small leaves with neat parallel veins and a saw-toothed edge. It stands on the footpath north of the old observatory, ten metres from the sycamore mapped here.",
-      "age_min": 185,
-      "age_max": 195,
-      "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1688711"
-      ],
-      "access": "Free. Stands on the footpath on the north side of the old Sterrenwacht (observatory), on the Servaasbolwerk section of the Zonnenburg city rampart, open ground.",
-      "transport": "Zonnenburg/Servaasbolwerk, on the old city rampart a short walk south of Utrecht Centraal station.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "girth_cm": 300,
-      "height_m": 20,
-      "verify_notes": "Alive and inspected 2015-03-06: the Bomenstichting's own inspector rated its condition 'onvindbaar' (LRMB inspection layer, entry nr 1688711)."
     }
   ]
 }

@@ -435,6 +435,33 @@
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688711, data/registers/netherlands-lrmb.json"
       ],
       "story": "Hornbeam is the hardest wood in Europe, which is why it was cut for the things that got hit: mill cogs, ox yokes, butcher's blocks. This one has been left alone for something close to 190 years, and that makes it one of the oldest trees standing anywhere on Utrecht's old defensive ring.\n\nThe register puts its planting between 1830 and 1840. Jan David Zocher jr began turning the demolished city wall into the Singelplantsoen in 1835, in the middle of that band, and nothing we found says whether this hornbeam went in with that work or was already growing when the plan arrived. Both are possible. Neither is written down, and the tidier version is not worth inventing.\n\nIt stands on the footpath along the north side of the old Sterrenwacht, the observatory on the Zonnenburg bastion, and you will know it by the trunk. A hornbeam does not grow a column. It grows fluted and sinewy, grey bark pulled tight over ridges that twist like a flexed forearm, and it hangs on to a good share of its dead brown leaves all winter while the beeches beside it stand bare.\n\nWe searched properly for a second source and came back with nothing. The register is the whole of the written record here, down to the species: it reads gewone haagbeuk, common hornbeam, and our own entry stops at the genus until somebody confirms it."
+    },
+    {
+      "was_published_as": "utr_035",
+      "name": "Witte paardenkastanje (White Horse Chestnut)",
+      "species": "Horse Chestnut (Aesculus sp.)",
+      "latitude": 52.090038,
+      "longitude": 5.127723,
+      "place": "Naast brug Herenstraat/Lepelenburg, Utrecht",
+      "reason": "DEAD/FELLED. LRMB entry nr 1688783 is status 5 (Dood/geveld). Re-imported by a night run on 2026-09-09 hours after the same register row was removed as utr_027, the Horse Chestnut by the Herenstraat Bridge, because nothing read the status field. Removed again 2026-09-10, and check_register_says_the_tree_is_gone() in scripts/preflight.py now makes this unshippable."
+    },
+    {
+      "was_published_as": "utr_036",
+      "name": "Zilveresdoorn (Silver Maple), pair",
+      "species": "Maple (Acer sp.)",
+      "latitude": 52.087817,
+      "longitude": 5.139382,
+      "place": "Zuidwesten van het Burgemeester F. Andreamonument, Wilhelminapark, Utrecht",
+      "reason": "DEAD/FELLED. LRMB entry nr 1678147 is status 5 (Dood/geveld). Re-imported by a night run on 2026-09-09 hours after the same register row was removed as utr_029, the Silver Maples of the Andrea Monument, because nothing read the status field. Removed again 2026-09-10, and check_register_says_the_tree_is_gone() in scripts/preflight.py now makes this unshippable."
+    },
+    {
+      "was_published_as": "utr_037",
+      "name": "Gewone haagbeuk (Common Hornbeam)",
+      "species": "Hornbeam (Carpinus sp.)",
+      "latitude": 52.086086,
+      "longitude": 5.128886,
+      "place": "Voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
+      "reason": "DEAD/FELLED. LRMB entry nr 1688711 is status 5 (Dood/geveld). Re-imported by a night run on 2026-09-09 hours after the same register row was removed as utr_030, the Hornbeam of the Old Observatory Path, because nothing read the status field. Removed again 2026-09-10, and check_register_says_the_tree_is_gone() in scripts/preflight.py now makes this unshippable."
     }
   ]
 }
