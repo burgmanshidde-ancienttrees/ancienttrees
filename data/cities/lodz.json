@@ -55,7 +55,15 @@
       "access": "Free, publicly accessible. Stands in an ordinary public city park in central Łódź, open to all.",
       "transport": "Central Łódź, within Park im. ks. bp. Michała Klepacza; reachable on foot or by Łódź city tram/bus, a short walk from the city centre.",
       "location_precision": "confirmed",
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/D%C4%85b_Fabrykant_2022.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Śryż, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1110,
+        "height": 784
+      }
     }
   ]
 }
