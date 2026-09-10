@@ -494,12 +494,23 @@ def copy_test_lines():
     except ImportError:
         return []
     try:
+        # THE AUTONOMOUS STEP. Does nothing until a test reaches its review
+        # date, then decides it, promotes a winner into the surface's default
+        # and starts whatever is queued next. Runs before the report so the
+        # block below shows the state it just moved to, and the workflow
+        # commits data/copy-tests.json alongside DATA.md.
+        did = copytest.tick()
         body = copytest.report()
     except Exception as exc:  # a test must never take the digest down
         return ["", "**Copy test:** reading failed (%s)" % exc]
-    if not body:
+    if not (body or did):
         return []
-    return ["", "**Copy test**", "", "```", body, "```"]
+    out = ["", "**Copy test**", ""]
+    if did:
+        out += ["\n".join("- " + l.strip() for l in did), ""]
+    if body:
+        out += ["```", body, "```"]
+    return out
 
 
 def learning_lines(pages, pairs=None):

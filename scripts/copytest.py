@@ -169,56 +169,172 @@ def start(test_id, surface, hypothesis, arms, weeks=8, seed=None):
     return 0
 
 
-def report(test=None):
-    """Where each arm stands, as difference in differences."""
-    test = test or running()
-    if not test:
-        return ""
+# HOW A TEST IS DECIDED, written down rather than judged each time.
+#
+# A challenger is promoted only if it beats control by this much. 0.25 index
+# points on a base of about 0.7 is roughly a third better, which is the size
+# this design can actually resolve (see the header). Anything smaller is
+# INCONCLUSIVE and the control stays, and inconclusive has to be the ordinary
+# outcome: a loop that promotes whatever is ahead on the day promotes noise,
+# and it would do it forever without anybody noticing, because each promotion
+# looks exactly like a result.
+WIN_MARGIN = 0.25
+
+
+def measure(test):
+    """Per arm: how many pages, the index before, the index now, the change.
+
+    The index is clicks over the clicks that arm's positions should have
+    earned, so it already carries the position correction. Comparing the
+    CHANGE is what removes the city differences: the two arms in this test
+    started at 0.80 and 0.61, so comparing levels would hand us a winner on
+    day one."""
     rows = {r["city"]: r for r in seolearn.joined()}
     arms = {}
     for city, arm in test["assignment"].items():
         now, was = rows.get(city), test["before"].get(city)
         if not now or not was:
             continue
-        a = arms.setdefault(arm, {"n": 0, "bc": 0, "bi": 0, "be": 0.0,
-                                  "ac": 0, "ai": 0, "ae": 0.0})
+        a = arms.setdefault(arm, {"n": 0, "bc": 0, "be": 0.0, "ac": 0, "ae": 0.0})
         a["n"] += 1
-        a["bc"] += was["clicks"]; a["bi"] += was["impressions"]
+        a["bc"] += was["clicks"]
         a["be"] += was["impressions"] * was["expected"] / 100
-        a["ac"] += now["clicks"]; a["ai"] += now["impressions"]
+        a["ac"] += now["clicks"]
         a["ae"] += now["impressions"] * now["expected"] / 100
+    for a in arms.values():
+        a["before"] = a["bc"] / a["be"] if a["be"] else 0.0
+        a["after"] = a["ac"] / a["ae"] if a["ae"] else 0.0
+        a["delta"] = a["after"] - a["before"]
+    return arms
+
+
+def days_in(test):
+    return (datetime.date.today() - datetime.date.fromisoformat(test["started"])).days
+
+
+def due(test):
+    return datetime.date.today() >= datetime.date.fromisoformat(test["review"])
+
+
+def verdict(test):
+    """(winner, margin, why). winner is None when nothing is promoted."""
+    arms = measure(test)
+    if "control" not in arms or len(arms) < 2:
+        return None, 0.0, "not enough arms reporting"
+    base = arms["control"]["delta"]
+    best, margin = None, 0.0
+    for arm, a in arms.items():
+        if arm == "control":
+            continue
+        m = a["delta"] - base
+        if best is None or m > margin:
+            best, margin = arm, m
+    if margin >= WIN_MARGIN:
+        return best, margin, "beat control by %+.2f, over the %.2f margin" % (margin, WIN_MARGIN)
+    return None, margin, ("best challenger was %+.2f against control, under the %.2f "
+                          "margin, so the control stays" % (margin, WIN_MARGIN))
+
+
+def report(test=None):
+    test = test or running()
+    if not test:
+        return ""
+    arms = measure(test)
     if not arms:
         return ""
-    started = test["started"]
-    days = (datetime.date.today() - datetime.date.fromisoformat(started)).days
+    total = (datetime.date.fromisoformat(test["review"])
+             - datetime.date.fromisoformat(test["started"])).days
     out = ["Copy test: %s (day %d of %d, review %s)"
-           % (test["id"], days,
-              (datetime.date.fromisoformat(test["review"])
-               - datetime.date.fromisoformat(started)).days, test["review"]),
+           % (test["id"], days_in(test), total, test["review"]),
            test["hypothesis"], ""]
-    base = None
     for arm in sorted(arms):
         a = arms[arm]
-        before = a["bc"] / a["be"] if a["be"] else 0
-        after = a["ac"] / a["ae"] if a["ae"] else 0
-        delta = after - before
-        if arm == "control":
-            base = delta
         out.append("  %-12s n%-3d  before %.2f  now %.2f  change %+.2f"
-                   % (arm, a["n"], before, after, delta))
-    if base is not None and len(arms) > 1:
-        for arm in sorted(arms):
-            if arm == "control":
-                continue
-            a = arms[arm]
-            d = (a["ac"] / a["ae"] if a["ae"] else 0) - (a["bc"] / a["be"] if a["be"] else 0)
-            out.append("")
-            out.append("  %s against control: %+.2f index points" % (arm, d - base))
-    if days < 42:
-        out.append("")
-        out.append("  TOO EARLY. At about 2 clicks per page per ten days this needs "
-                   "the full window; a lead now is noise wearing a result's clothes.")
+                   % (arm, a["n"], a["before"], a["after"], a["delta"]))
+    if "control" in arms and len(arms) > 1:
+        _, margin, why = verdict(test)
+        out += ["", "  against control: %+.2f index points (promote at %+.2f)"
+                % (margin, WIN_MARGIN)]
+    if days_in(test) < 42:
+        out += ["", "  TOO EARLY. At about 2 clicks per page per ten days this needs "
+                "the full window; a lead now is noise wearing a result's clothes."]
     return "\n".join(out)
+
+
+def promoted_default(doc, surface):
+    """The arm every page wears when no test is running on this surface."""
+    return (doc.get("defaults") or {}).get(surface, "control")
+
+
+def renderable(doc, surface, arms):
+    """Whether the site can actually draw these arms.
+
+    A queued test whose arm has no template renders as the control on every
+    page, which is the exact silent failure this file already cost a deploy
+    over: it would run for eight weeks and report no difference, which is what
+    it would report if the idea were wrong. So a test does not start until
+    somebody has written its wording into the template, and until then the
+    queue says so out loud instead of quietly starting it."""
+    known = (doc.get("renderable_arms") or {}).get(surface, ["control"])
+    return [a for a in arms if a not in known]
+
+
+def close(doc, test):
+    """Decide, record, and promote a winner into the surface's default."""
+    winner, margin, why = verdict(test)
+    test["status"] = "closed"
+    test["closed"] = datetime.date.today().isoformat()
+    test["result"] = {"winner": winner, "margin": round(margin, 3), "why": why,
+                      "arms": {k: {kk: round(vv, 3) if isinstance(vv, float) else vv
+                                   for kk, vv in v.items()}
+                               for k, v in measure(test).items()}}
+    lines = ["Copy test %s CLOSED after %d days: %s" % (test["id"], days_in(test), why)]
+    if winner:
+        doc.setdefault("defaults", {})[test["surface"]] = winner
+        lines.append("  %s promoted: every %s now uses it." % (winner, test["surface"]))
+    else:
+        lines.append("  Nothing promoted. The control stays, which is the ordinary "
+                     "outcome and not a failure of the test.")
+    return lines
+
+
+def start_next(doc, surface):
+    """Take the next queued test on this surface, if the site can draw it."""
+    queue = doc.get("queue") or []
+    for i, q in enumerate(queue):
+        if q.get("surface") != surface:
+            continue
+        missing = renderable(doc, surface, q.get("arms", {}))
+        if missing:
+            return ["  Next queued test %s cannot start: no template for %s. "
+                    "A session has to write it into the page first."
+                    % (q.get("id"), ", ".join(missing))]
+        queue.pop(i)
+        doc["queue"] = queue
+        save(doc)
+        rc = start(q["id"], surface, q["hypothesis"], q["arms"],
+                   weeks=q.get("weeks", 8))
+        return ["  Started the next queued test: %s" % q["id"]] if rc == 0 else []
+    return ["  Nothing queued on %s. The surface rests until one is added." % surface]
+
+
+def tick():
+    """The autonomous step, run daily from the digest.
+
+    Does nothing at all until a test reaches its review date. Then it decides,
+    promotes or does not, records the result and starts whatever is queued
+    next. Everything it does is reversible by editing data/copy-tests.json."""
+    doc = load()
+    said = []
+    for test in doc.get("tests", []):
+        if test.get("status") != "running" or not due(test):
+            continue
+        said += close(doc, test)
+        save(doc)
+        said += start_next(doc, test["surface"])
+    if said:
+        save(doc)
+    return said
 
 
 def main():
@@ -234,6 +350,10 @@ def main():
                 "age_first": "Ancient Trees in {city}: Oldest {age} Years, {n} to See",
             },
         )
+    if args and args[0] == "--tick":
+        said = tick()
+        print("\n".join(said) if said else "copytest: nothing due")
+        return 0
     body = report()
     print(body or "copytest: no test running")
     return 0

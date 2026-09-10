@@ -22,19 +22,22 @@ type Test = {
   status: string;
   assignment: Record<string, string>;
 };
+type Registry = { tests: Test[]; defaults: Record<string, string> };
 
-let cached: Test[] | null = null;
+let cached: Registry | null = null;
 
-function tests(): Test[] {
+function registry(): Registry {
   if (cached) return cached;
+  const empty: Registry = { tests: [], defaults: {} };
   const f = path.join(DATA, "copy-tests.json");
-  if (!fs.existsSync(f)) return (cached = []);
+  if (!fs.existsSync(f)) return (cached = empty);
   try {
-    cached = (JSON.parse(fs.readFileSync(f, "utf-8")).tests ?? []) as Test[];
+    const raw = JSON.parse(fs.readFileSync(f, "utf-8"));
+    cached = { tests: raw.tests ?? [], defaults: raw.defaults ?? {} };
   } catch {
     // A malformed registry must never take the build down: every page simply
     // renders its control wording, which is what it shipped yesterday.
-    cached = [];
+    cached = empty;
   }
   return cached;
 }
@@ -43,9 +46,14 @@ function tests(): Test[] {
  *  A city added after a test started is not in the assignment and gets the
  *  control, because an arm somebody joins halfway through is not an arm. */
 export function arm(surface: string, slug: string): string {
-  for (const t of tests()) {
+  const reg = registry();
+  // When no test is running, every page wears the surface's promoted default,
+  // which is how a finished test's winner reaches the whole site: copytest.py
+  // writes one line of JSON and nothing here changes.
+  const fallback = reg.defaults[surface] ?? "control";
+  for (const t of reg.tests) {
     if (t.status !== "running" || t.surface !== surface) continue;
     return t.assignment[slug] ?? "control";
   }
-  return "control";
+  return fallback;
 }

@@ -1,5 +1,15 @@
 {
  "note": "",
+ "defaults": {
+  "city title": "control"
+ },
+ "renderable_arms": {
+  "city title": [
+   "control",
+   "age_first"
+  ]
+ },
+ "queue": [],
  "tests": [
   {
    "id": "city-title-age-first",
