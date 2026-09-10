@@ -87,6 +87,11 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // muc_011-014, giving the same four physical trees two ids and two pages
 // each. The earlier ids (with address/age/best_time filled in) survive;
 // these four newer, thinner duplicates were removed from data/cities/munich.json.
+// stuttgart/max-eyth-see-oak (stu_003, 2026-09-10): dead. Its own Commons
+// photograph, dated 21 May 2022 and taken 27 m from our pin, shows every limb
+// sawn off with fresh cut faces and no leaf on the trunk, in full spring green.
+// The city protected it partly for its habitat value, which is why the dead
+// trunk is left standing. Research kept in data/leads/stuttgart.json.
 // warsaw/sowinskis-linden (war_003, 2026-08-17): Poland's own GDOS register
 // (reproduced on Polish Wikipedia's Pomniki przyrody w Warszawie) records
 // this exact monument, at this exact location, blown down by wind in 1986,
@@ -161,6 +166,7 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["stuttgart", "max-eyth-see-oak"],
   ["utrecht", "witte-paardenkastanje-white-horse-chestnut"],
   ["utrecht", "zilveresdoorn-silver-maple-pair"],
   ["utrecht", "gewone-haagbeuk-common-hornbeam"],
