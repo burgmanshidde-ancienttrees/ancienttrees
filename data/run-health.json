@@ -9433,6 +9433,590 @@
    ],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-09-10T04:32:24+00:00",
+   "date": "2026-09-10",
+   "run_id": "34437548852",
+   "minutes": 82.1,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 621,
+   "denials": 34,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(python3), Bash(rm), Bash(which)",
+   "ended": "success",
+   "tokens": 296311722,
+   "claims_held": [],
+   "commits": 171,
+   "cities_touched": 141,
+   "cities": [
+    {
+     "city": "leeuwarden",
+     "trees": 8
+    },
+    {
+     "city": "ottawa",
+     "trees": 6
+    },
+    {
+     "city": "eindhoven",
+     "trees": 5
+    },
+    {
+     "city": "helmond",
+     "trees": 5
+    },
+    {
+     "city": "tilburg",
+     "trees": 4
+    },
+    {
+     "city": "oahu",
+     "trees": 1
+    },
+    {
+     "city": "aarhus",
+     "trees": 0
+    },
+    {
+     "city": "antwerp",
+     "trees": 0
+    },
+    {
+     "city": "asago",
+     "trees": 0
+    },
+    {
+     "city": "assen",
+     "trees": 0
+    },
+    {
+     "city": "athens",
+     "trees": 0
+    },
+    {
+     "city": "auckland",
+     "trees": 0
+    },
+    {
+     "city": "bari",
+     "trees": 0
+    },
+    {
+     "city": "bergamo",
+     "trees": 0
+    },
+    {
+     "city": "bologna",
+     "trees": 0
+    },
+    {
+     "city": "bordeaux",
+     "trees": 0
+    },
+    {
+     "city": "bratislava",
+     "trees": 0
+    },
+    {
+     "city": "brno",
+     "trees": 0
+    },
+    {
+     "city": "bucaco",
+     "trees": 0
+    },
+    {
+     "city": "cadiz",
+     "trees": 0
+    },
+    {
+     "city": "como",
+     "trees": 0
+    },
+    {
+     "city": "cordoba",
+     "trees": 0
+    },
+    {
+     "city": "dresden",
+     "trees": 0
+    },
+    {
+     "city": "dublin",
+     "trees": 0
+    },
+    {
+     "city": "edinburgh",
+     "trees": 0
+    },
+    {
+     "city": "florence",
+     "trees": 0
+    },
+    {
+     "city": "fort-worth",
+     "trees": 0
+    },
+    {
+     "city": "frankfurt",
+     "trees": 0
+    },
+    {
+     "city": "freiburg",
+     "trees": 0
+    },
+    {
+     "city": "fujikawaguchiko",
+     "trees": 0
+    },
+    {
+     "city": "fukuoka",
+     "trees": 0
+    },
+    {
+     "city": "geneva",
+     "trees": 0
+    },
+    {
+     "city": "genoa",
+     "trees": 0
+    },
+    {
+     "city": "giessen",
+     "trees": 0
+    },
+    {
+     "city": "girona",
+     "trees": 0
+    },
+    {
+     "city": "graz",
+     "trees": 0
+    },
+    {
+     "city": "groningen",
+     "trees": 0
+    },
+    {
+     "city": "haarlem",
+     "trees": 0
+    },
+    {
+     "city": "haarlemmermeer",
+     "trees": 0
+    },
+    {
+     "city": "hainich-national-park",
+     "trees": 0
+    },
+    {
+     "city": "heerlen",
+     "trees": 0
+    },
+    {
+     "city": "helsinki",
+     "trees": 0
+    },
+    {
+     "city": "hilversum",
+     "trees": 0
+    },
+    {
+     "city": "himmelsberg",
+     "trees": 0
+    },
+    {
+     "city": "hobart",
+     "trees": 0
+    },
+    {
+     "city": "hong-kong",
+     "trees": 0
+    },
+    {
+     "city": "iga",
+     "trees": 0
+    },
+    {
+     "city": "istanbul",
+     "trees": 0
+    },
+    {
+     "city": "ito",
+     "trees": 0
+    },
+    {
+     "city": "kagoshima",
+     "trees": 0
+    },
+    {
+     "city": "kaunas",
+     "trees": 0
+    },
+    {
+     "city": "krakow",
+     "trees": 0
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    },
+    {
+     "city": "leipzig",
+     "trees": 0
+    },
+    {
+     "city": "lima",
+     "trees": 0
+    },
+    {
+     "city": "lodz",
+     "trees": 0
+    },
+    {
+     "city": "london",
+     "trees": 0
+    },
+    {
+     "city": "lucca",
+     "trees": 0
+    },
+    {
+     "city": "luxembourg-city",
+     "trees": 0
+    },
+    {
+     "city": "lyon",
+     "trees": 0
+    },
+    {
+     "city": "maibara",
+     "trees": 0
+    },
+    {
+     "city": "malsfeld",
+     "trees": 0
+    },
+    {
+     "city": "melbourne",
+     "trees": 0
+    },
+    {
+     "city": "menorca",
+     "trees": 0
+    },
+    {
+     "city": "mexico-city",
+     "trees": 0
+    },
+    {
+     "city": "miyazaki",
+     "trees": 0
+    },
+    {
+     "city": "nagoya",
+     "trees": 0
+    },
+    {
+     "city": "naha",
+     "trees": 0
+    },
+    {
+     "city": "nara",
+     "trees": 0
+    },
+    {
+     "city": "new-york",
+     "trees": 0
+    },
+    {
+     "city": "nice",
+     "trees": 0
+    },
+    {
+     "city": "nuremberg",
+     "trees": 0
+    },
+    {
+     "city": "oyodo",
+     "trees": 0
+    },
+    {
+     "city": "padua",
+     "trees": 0
+    },
+    {
+     "city": "pamplona",
+     "trees": 0
+    },
+    {
+     "city": "perth",
+     "trees": 0
+    },
+    {
+     "city": "perugia",
+     "trees": 0
+    },
+    {
+     "city": "port-renfrew",
+     "trees": 0
+    },
+    {
+     "city": "portland",
+     "trees": 0
+    },
+    {
+     "city": "poznan",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "prety",
+     "trees": 0
+    },
+    {
+     "city": "priekule",
+     "trees": 0
+    },
+    {
+     "city": "prosec-pod-jestedem",
+     "trees": 0
+    },
+    {
+     "city": "quebec-city",
+     "trees": 0
+    },
+    {
+     "city": "rambynas",
+     "trees": 0
+    },
+    {
+     "city": "ramsau-am-dachstein",
+     "trees": 0
+    },
+    {
+     "city": "raudone",
+     "trees": 0
+    },
+    {
+     "city": "reaumont",
+     "trees": 0
+    },
+    {
+     "city": "reinborn",
+     "trees": 0
+    },
+    {
+     "city": "reyersviller",
+     "trees": 0
+    },
+    {
+     "city": "riga",
+     "trees": 0
+    },
+    {
+     "city": "ronda",
+     "trees": 0
+    },
+    {
+     "city": "rothenburg-ob-der-tauber",
+     "trees": 0
+    },
+    {
+     "city": "rotterdam",
+     "trees": 0
+    },
+    {
+     "city": "rouen",
+     "trees": 0
+    },
+    {
+     "city": "sachsenbrunn",
+     "trees": 0
+    },
+    {
+     "city": "sakegawa",
+     "trees": 0
+    },
+    {
+     "city": "salzburg",
+     "trees": 0
+    },
+    {
+     "city": "sambeek",
+     "trees": 0
+    },
+    {
+     "city": "san-antonio",
+     "trees": 0
+    },
+    {
+     "city": "san-diego",
+     "trees": 0
+    },
+    {
+     "city": "san-francisco",
+     "trees": 0
+    },
+    {
+     "city": "santalfio",
+     "trees": 0
+    },
+    {
+     "city": "sapporo",
+     "trees": 0
+    },
+    {
+     "city": "sardinia",
+     "trees": 0
+    },
+    {
+     "city": "savannah",
+     "trees": 0
+    },
+    {
+     "city": "scheessel",
+     "trees": 0
+    },
+    {
+     "city": "segovia",
+     "trees": 0
+    },
+    {
+     "city": "senica",
+     "trees": 0
+    },
+    {
+     "city": "seoul",
+     "trees": 0
+    },
+    {
+     "city": "setubal",
+     "trees": 0
+    },
+    {
+     "city": "shingu",
+     "trees": 0
+    },
+    {
+     "city": "shiwa",
+     "trees": 0
+    },
+    {
+     "city": "singapore",
+     "trees": 0
+    },
+    {
+     "city": "sintra",
+     "trees": 0
+    },
+    {
+     "city": "sittard-geleen",
+     "trees": 0
+    },
+    {
+     "city": "sliven",
+     "trees": 0
+    },
+    {
+     "city": "solingen",
+     "trees": 0
+    },
+    {
+     "city": "stary-smokovec",
+     "trees": 0
+    },
+    {
+     "city": "stockholm",
+     "trees": 0
+    },
+    {
+     "city": "strasbourg",
+     "trees": 0
+    },
+    {
+     "city": "sulechow",
+     "trees": 0
+    },
+    {
+     "city": "sydney",
+     "trees": 0
+    },
+    {
+     "city": "taipei",
+     "trees": 0
+    },
+    {
+     "city": "takahama",
+     "trees": 0
+    },
+    {
+     "city": "takeo",
+     "trees": 0
+    },
+    {
+     "city": "tallinn",
+     "trees": 0
+    },
+    {
+     "city": "tamba",
+     "trees": 0
+    },
+    {
+     "city": "tarragona",
+     "trees": 0
+    },
+    {
+     "city": "tatobity",
+     "trees": 0
+    },
+    {
+     "city": "telgte",
+     "trees": 0
+    },
+    {
+     "city": "tenerife",
+     "trees": 0
+    },
+    {
+     "city": "the-hague",
+     "trees": 0
+    },
+    {
+     "city": "trento",
+     "trees": 0
+    },
+    {
+     "city": "turin",
+     "trees": 0
+    },
+    {
+     "city": "venice",
+     "trees": 0
+    },
+    {
+     "city": "verona",
+     "trees": 0
+    },
+    {
+     "city": "warsaw",
+     "trees": 0
+    },
+    {
+     "city": "wroclaw",
+     "trees": 0
+    },
+    {
+     "city": "stuttgart",
+     "trees": -1
+    }
+   ],
+   "trees": 28,
+   "logged": true
   }
  ],
  "schedule_changes": [
