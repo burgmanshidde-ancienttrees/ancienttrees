@@ -56,7 +56,8 @@
       },
       "curation_status": "flagged",
       "notes": "Ensemble entry describing the park's surviving Napoleonic-era plane trees rather than one dated individual specimen, consistent with how the sources themselves describe the planting (roughly ten monumental specimens among fifty total). 1805 redesign and circumference figures (1-1.5m diameter, several over 4m circumference) corroborated across two independent sources. 2026-07-29: found via the same Wiki Loves Monuments Italia photographer (Aneta Malinowska) already used for bol_002's sequoia and bol_006's ginkgo, who shot a dedicated series of Bologna's monumental/veteran trees. File:Montagnola ,.jpg, geotagged 44.5026,11.3464 (about 40m from this entry's own pin), described on its own Commons page as an autumn shot of mature trees in the park. 2026-07-29 (later session): downloaded and personally viewed the file. Shows plane trunks with the species' characteristic pale, patchy bark in the foreground, alongside the park's own 1896-dated ironwork and balustrade visible in frame, confirming both the species and the specific park. Approved.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them by their thick trunks, several over four metres round, lining the park's two concentric paths. They stand in Parco della Montagnola."
     },
     {
       "id": "bol_002",
@@ -91,7 +92,8 @@
       "location_precision": "confirmed",
       "height_m": 37.5,
       "verify_notes": "Height 37.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 520
+      "girth_cm": 520,
+      "how_to_recognise": "You can recognise it by being visibly taller than everything around it, long before you reach the lake it stands beside. It stands in the Giardini Margherita."
     },
     {
       "id": "bol_003",
@@ -126,7 +128,8 @@
       "location_precision": "confirmed",
       "height_m": 39.5,
       "verify_notes": "Height 39.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 455
+      "girth_cm": 455,
+      "how_to_recognise": "You can recognise it by its height, 39.5 metres, the tallest monumental tree in the whole province, rising directly behind the Minghetti statue. It stands in Piazza Minghetti."
     },
     {
       "id": "bol_004",
@@ -161,7 +164,8 @@
       "location_precision": "confirmed",
       "height_m": 36.0,
       "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (4 m away).",
-      "girth_cm": 520
+      "girth_cm": 520,
+      "how_to_recognise": "You can recognise it by growing in a garden raised more than four metres above the piazza below, close by the Rusconi family's palazzo. It stands in Piazza Malpighi."
     },
     {
       "id": "bol_005",
@@ -193,7 +197,8 @@
       },
       "curation_status": "flagged",
       "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. 2026-07-29: found via the same photographer (Aneta Malinowska, Wiki Loves Monuments Italia) whose dedicated Bologna monumental-tree series also supplied bol_001, bol_002 and bol_006's photos. File:4.rizzoli cedro dell'himalaya (12).jpg, filename naming this exact tree, geotagged 44.4811,11.3408, essentially identical to this entry's own AMI-registry pin. 2026-07-29 (later session): downloaded and personally viewed the file, plus confirmed via the Commons API that its own description reads 'cedro dell'Himalaya'. Shows a single-stemmed conifer with the species' characteristic weeping, cascading branch tips beside a garden bust on a plinth, consistent with an institutional garden setting. Approved. Pin corrected by about 130m to Italy's national monumental tree registry point (MASAF, AMI code 03/A944/BO/08, \"Istituto Ortopedico Rizzoli - Via Pupilli 1\", Cedro dell'Himalaya), read identically across two independent fetches of the source spreadsheet.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its drooping branch tips and height near 30 metres, in the garden framing the hospital building. It stands at the Istituto Ortopedico Rizzoli."
     },
     {
       "id": "bol_006",
@@ -234,7 +239,8 @@
       "location_precision": "confirmed",
       "height_m": 29.5,
       "verify_notes": "Height 29.5 m from the italy-masaf register, matched on our own pin (6 m away).",
-      "girth_cm": 338
+      "girth_cm": 338,
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves turning a uniform, near-luminous yellow within days each autumn, unlike anything else on this list. It stands in Piazza Cavour."
     },
     {
       "id": "bol_007",
@@ -302,7 +308,8 @@
       },
       "curation_status": "flagged",
       "notes": "Carducci's burial location and the Certosa's own history corroborated across two independent sources. No individual age or planting date documented for the specific cypress; presented as a broad mature estimate. Photo verified directly: shows Carducci's named tomb flanked by tall columnar cypresses, a clear match to the described setting. Pin corrected by about 550m 2026-07-27: the prior coordinate was just the cemetery's main-gate address, not the grave itself, inside a 30-hectare complex. Moved to the tomb's own Wikidata-sourced coordinate (rank \"preferred\", cross-referenced to an OSM node named `Tomba di Giosue Carducci`), which this entry's own already-cited sources describe the cypress as standing directly over; the cypress itself isn't independently geotagged, but its position relative to the tomb was already an established, sourced fact before this pass.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by standing taller than the low funerary monuments around it, directly over Carducci's plain granite tomb. It stands in the Certosa di Bologna."
     },
     {
       "id": "bol_009",
@@ -334,7 +341,8 @@
       },
       "curation_status": "flagged",
       "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. Photo found 2026-07-28, correctly inside the dedicated 'Villa Ghigi (Bologna) - Cedro dell'Himalaya' Commons category this entry already cites as a source (unlike the earlier search-surfaced candidates that turned out to be the Vallerano mixup, flagged and avoided). Viewed directly: a single large Cedrus deodara with the species' characteristic drooping habit, standing on an open lawn behind the same split-rail wooden fence visible in the park's other confirmed photos, with a hilltop villa in the distance, matching the story's own description of its position on the open lawn. Approved. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and the same Commons category name, resolving the Vallerano mixup: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by dominating the open meadow in front of the villa, with visible lightning-strike scarring on part of its crown. It stands in the Parco di Villa Ghigi."
     },
     {
       "id": "bol_010",
@@ -432,7 +440,8 @@
       },
       "height_m": 32.0,
       "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 545
+      "girth_cm": 545,
+      "how_to_recognise": "You can recognise it as the largest tree in the garden, its foliage held in flat, ascending, tiered plates. It stands in the gardens of Villa delle Rose."
     }
   ]
 }
