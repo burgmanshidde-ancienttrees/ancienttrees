@@ -67,5 +67,28 @@
     "location_precision": "confirmed",
     "curation_status": "flagged",
     "verify_notes": "Two independent sources agree closely on location (3.7m apart): the national LRMB register (nr 1690253, planted_band 1890-1900, reason 'dendrologisch', owner gemeente, visitable=ja, visible=nee) and the Gemeente Eindhoven open-data 'bomen' dataset (status_ter_indicatie 'Monumentaal', plantjaar 1940, hoogte '>24 m'), current as of the dataset's 2026-09-07 refresh (good 'alive now' evidence). AGE CONFLICT: register implies planted 1890-1900 (about 126-136 years old today), municipal record says planted 1940 (about 86 years old); no winner picked, both reported, though either way this is a genuinely old, over-24-metre specimen. The Stadswandelpark grew out of the 19th-century Landgoed Den Elzent estate (tobacco manufacturer H.F.C. Coolen, sold 1876 to Amsterdam merchant B.H.A. Sinkel, who had Leonard Springer lay out a landscape garden); the Stadspaviljoen behind which this tree stands was the estate's former coach house, later a music kiosk, and the grounds became a public park in 1921, formally named Stadswandelpark in 1931. The municipal dataset shows this whole corner of the park is a genuine grove of 1910/1940-dated 'Monumentaal' trees (beeches, pin oaks, black locusts, a sweet chestnut) from the same historic planting phases, good context for the story. No girth or diameter figure found in either source; the >24m height is the one hard number to use instead."
+  },
+  {
+    "id": "ein_015",
+    "name": "The Sweet Chestnut of the Stadspaviljoen",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "about a century old (sources disagree on the decade)",
+    "age_min": 86,
+    "age_max": 136,
+    "location": {
+      "address": "Alberdingk Thijmlaan, Stadswandelpark, behind the Stadspaviljoen, Eindhoven",
+      "latitude": 51.426959,
+      "longitude": 5.483242,
+      "neighbourhood": "Stadswandelpark, Stratum"
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/",
+      "https://data.eindhoven.nl/explore/dataset/bomen/table/?flg=nl-nl"
+    ],
+    "access": "Free. Public park (Stadswandelpark), open daily.",
+    "transport": "About 1.3 km south of Eindhoven Centraal, inside the Stadswandelpark; several bus lines serve the park's edges, or about 15-20 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree almost exactly on location (0.8m apart, effectively the same tree): the national LRMB register (nr 1690254, planted_band 1890-1900, reason 'dendrologisch', owner gemeente, visitable=ja, visible=nee) and the Gemeente Eindhoven open-data 'bomen' dataset (species Castanea sativa, status_ter_indicatie 'Monumentaal', plantjaar 1940, hoogte 15-18m), current as of the dataset's 2026-09-07 refresh (good 'alive now' evidence). AGE CONFLICT: register implies planted 1890-1900 (about 126-136 years old today), municipal record says 1940 (about 86 years old); no winner picked, both reported. Same park and planting history as ein_014 (the Honey Locust a few dozen metres away): the Stadswandelpark grew from the 19th-century Landgoed Den Elzent estate, became a public park in 1921 and was formally named in 1931; this corner behind the former coach house (now the Stadspaviljoen) carries a cluster of other 'Monumentaal'-rated trees from the same 1910/1940 planting phases (beeches, pin oaks, black locusts), good context for the story, and this chestnut plus the honey locust could be described as two stops on the same short walk. No girth or diameter figure found in either source. Sweet chestnuts are edible-fruiting trees; if it still produces chestnuts that could be a seasonal (best_time, autumn) detail for the writer to check on a future visit, though this pass found no direct evidence of fruiting either way."
   }
 ]
