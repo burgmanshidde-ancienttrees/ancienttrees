@@ -184,6 +184,26 @@ def check_auth_corpus_agreement():
     return []
 
 
+# A photograph's identity, independent of the size it is being served at.
+# Wikimedia puts the size in a "960px-" filename prefix; iNaturalist names every
+# file medium.jpg and carries the identity one segment up, in the photo id. A
+# basename comparison therefore says "different tree" for every iNaturalist
+# photograph the moment og:image asks for another size, which is exactly what it
+# said about Hilversum, Portland, Strasbourg and Trieste on 2026-09-10.
+_SIZE_FILE = re.compile(r"^(original|large|medium|small|thumb|square)\.\w+$", re.I)
+
+
+def photo_key(url):
+    path = (url or "").split("?")[0].rstrip("/")
+    parts = [p for p in path.split("/") if p]
+    if not parts:
+        return ""
+    last = parts[-1]
+    if _SIZE_FILE.match(last) and len(parts) >= 2:
+        return parts[-2]
+    return re.sub(r"^\d+px-", "", last)
+
+
 def built_page(slug):
     """The built file for a top-level page.
 
@@ -239,9 +259,10 @@ def check_one_face_per_city():
         url = ((tree or {}).get("photo") or {}).get("url") or ""
         if not url:
             continue
-        # Compare the file, not the url: og:image is resized and the feed is not.
-        name = url.rsplit("/", 1)[-1]
-        if name and name not in og:
+        # Compare the photograph's identity, not the url: og:image is resized
+        # and the feed is not.
+        key = photo_key(url)
+        if key and key != photo_key(og):
             bad.append(f"{slug}: app face {face} but og:image is a different tree")
     if bad:
         return [f"{len(bad)} cities wear one tree in search and another in the app: "
