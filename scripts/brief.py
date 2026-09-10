@@ -245,8 +245,26 @@ def main():
                 p = t.get("photo") or {}
                 if p.get("url"):
                     photos += 1
+        # These counts read the WORKING TREE, while the commit news above reads
+        # origin/main after a fetch. Two sources in one brief, and nothing said
+        # which was which. On 2026-09-10 that cost a real wrong conclusion: the
+        # brief printed "746/2927 have a photo" on two consecutive days and
+        # Hidde read it, correctly on the evidence he was given, as the photo
+        # work having produced nothing. It had produced 167 approved
+        # photographs across 143 cities in those 24 hours; this checkout was
+        # simply 33 commits behind and the line could not say so.
+        #
+        # Recounting from origin/main would mean reading 565 files out of git
+        # at session start, which is slow enough that the brief stops being
+        # cheap. Saying how stale the number is costs nothing and is honest,
+        # which is this project's standing answer to a figure it cannot make
+        # exact (see location_precision).
+        behind = sh("git", "rev-list", "--count", "HEAD..origin/main")
+        stale = (f"  [this checkout, {behind} commits behind main]"
+                 if behind and behind != "0" else "")
         out += [f"{len(done)} cities live, {trees} trees. Next up: {nxt}.",
-                f"{photos}/{trees} have a photo. {approx} pins are only approximate.", ""]
+                f"{photos}/{trees} have a photo. {approx} pins are only "
+                f"approximate.{stale}", ""]
     except Exception as e:
         out += [f"(could not read city data: {e})", ""]
 
