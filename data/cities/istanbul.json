@@ -55,7 +55,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is disputed between sources: 1,300 years per Hürriyet Daily News quoting Istanbul University's Süleyman Çoban, versus 1,400 years and a roughly 5m diameter in Turkish wire coverage of the same forest survey. Presented as a range. Pin refined further 2026-07-27: the same national GIS layer (turkiye_anit_agaclari) carries an individual tree record in this forest aged exactly 1,382 years, an almost exact match to the 1,300-1,400 range already sourced here, about 1.9km from the prior campus-building geocode and deeper into the actual research forest rather than the campus courtyard, which fits the story's own description of a tree standing in forest rather than among the campus buildings. Upgraded to confirmed 2026-07-28: pulled every Platanus record the same registry carries for all of Sarıyer district (40 trees) to test the species-mislabel theory directly rather than leave it asserted. This 1,382-year record is the single oldest of the 40 by nearly 600 years, the next being 823; several other records the registry also labels 'Londra Çınarı/Platanus acerifolia' carry ages of 816 and 579 years, which are themselves taxonomically impossible for a true London Plane hybrid (the cross only originated around 1670, capping a real specimen near 350 years), confirming the registry's Turkish-name-to-Latin-name pairing is unreliable site-wide for old plane trees rather than uniquely wrong for this one record. Combined with the independent, non-registry news sourcing already matching this record's age almost exactly and its coordinates already sitting at the stored pin, treating the location itself as confirmed while the species-label caveat stays recorded rather than resolved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its immense hollow trunk, 4.5 metres across, fed only by a thin surviving layer of outer bark. It stands inside the university forestry research station in Bahçeköy's Belgrad Forest."
     },
     {
       "id": "ist_002",
@@ -85,7 +86,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is disputed: some sources give roughly 580 years (tying early growth to Suleiman the Magnificent's reign), others a more conservative 400. Presented as a range. Pin refined 2026-07-27: Turkey's national monumental-tree GIS layer (turkiye_anit_agaclari) carries an individual tree record 380m from the Oldest Plane of Bahçeköy's own registry point (ist_001), aged exactly 579 years, essentially an exact match to this entry's 'up to 580 years' figure, but the registry labels that record's species Platanus acerifolia rather than the Platanus orientalis this entry's Turkish sources describe, most likely a mislabeling given the extreme age, so kept approximate despite the strong age match. Upgraded to confirmed 2026-07-28: OpenStreetMap carries a separately mapped node (id 11816636713) named \"Yatık Çınar\", denotation=natural_monument, matching this entry's own already-cited source (dogadakiler.com's page is titled \"Yatik-Cinar-Anit-Agac\", Yatık Çınar being the tree's registry name and Ahtapot Çınar/Octopus Plane its popular nickname for the same specimen). About 47m from the prior pin, well within the same site. The node carries no survey/imagery provenance in its OSM edit history, so this rests on a name match across two independent sources rather than a government-surveyed coordinate; recorded honestly.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its low, spreading limbs that touch the ground and thicken into what look like separate trunks, the Octopus shape. It stands at a bend on the old Çayırbaşı to Bahçeköy road."
     },
     {
       "id": "ist_003",
@@ -118,7 +120,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Photo's own GPS metadata (41.0107, 28.9657) lands within about 50 metres of the existing pin, corroborating the location.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the second-hand booksellers' stalls set up beneath its canopy every day. It stands at the entrance to the Sahaflar Çarşısı book bazaar on Beyazıt Meydanı."
     },
     {
       "id": "ist_004",
@@ -150,7 +153,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Upgraded to confirmed 2026-07-29: found the registry's own underlying data feed (anitagac.istanbul/treeList, a GeoJSON layer the site's map loads client-side, not reachable through page-rendering tools but fetchable directly) and matched record AVR-20AA0027, already cited as this entry's source, against it directly. The record's age (446), height (26m) and girth (328cm) all match this entry's own figures exactly, confirming it as the same tree rather than a same-species neighbour. Its surveyed coordinate is about 417m from the prior street-corner estimate. Photo added 2026-07-29: an iNaturalist CC BY 4.0 observation (Platanus orientalis, observed 2026-05-30) about 200m from this pin, at the Archaeology Museum/Gülhane boundary. Viewed directly: a large, clearly old plane trunk behind an official heritage-protection fence bearing a municipal culture-department seal, next to a carved stone architectural fragment and an old stone building, consistent with this street corner. Held at found_needs_check rather than approved since more than one large plane could plausibly stand in this immediate micro-area and the photo doesn't itself carry the tree's name.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the visible cavity partway up its trunk, left after a centuries-old embedded stone was removed. It stands on Alemdar Caddesi outside Gülhane Park's Alemdar gate."
     },
     {
       "id": "ist_005",
@@ -181,7 +185,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age reported between roughly 176 and 190 years depending on the source (176 per Evrensel, 181 per Diken, 184 in other coverage of the same 2017 storm and rescue). Presented as a range rather than one figure.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its uneven, still-recovering crown, propped upright after a 2017 storm tore it from the ground. It stands at Çengelköy's ferry pier square beside the Çınaraltı tea garden."
     },
     {
       "id": "ist_006",
@@ -213,7 +218,8 @@
       },
       "curation_status": "flagged",
       "notes": "Nine cypresses at Karacaahmet officially carry Monument Tree status from Istanbul's Parks and Gardens Department, but no source specifies which one this entry refers to individually or gives an age for any single trunk. The cemetery's cypress-planting tradition dates to 1582, but like Kameido Tenjin's wisteria in Tokyo this is a continuous practice rather than proof any one tree is that old, so the age range is left wide. Pin refined 2026-07-27 and set to confirmed: Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) shows exactly 8 individually protected Cupressus sempervirens clustered within about 300m of this point, matching this entry's own 'nine cypresses' claim closely enough (one may be recorded slightly outside the immediate cluster or since removed) to treat the cemetery position itself as confirmed, even though no single trunk among the nine is individually distinguished. Photo shows the cemetery's cypress canopy generally, not one identified trunk, which matches that same honesty caveat.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by their tall, dark, narrow cypress columns rising above the gravestones around them. They stand scattered through Karacaahmet Mezarlığı, Turkey's largest cemetery, in Üsküdar."
     },
     {
       "id": "ist_007",
@@ -243,7 +249,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Upgraded to confirmed 2026-07-28: re-queried Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) directly for its trunk-diameter field (govde_capi) rather than circumference, since the two are different measurements of the same tree. Feature OBJECTID 754, a Pinus pinea in Üsküdar, carries agac_yasi=397 (exact match to this entry's age) and govde_capi=145 (exact match to '145 centimetres across'), and its own coordinates (41.018625, 29.067384) land within about 3 metres of the pin already stored here. The 2026-07-27 note's '520cm circumference doesn't match' concern was comparing the wrong field; the diameter field matches exactly. The registry's own photo (anadoluanitagaclar.com) was not used: the site returned no reachable terms-of-use page to verify an open licence, so treated as verification-only, same as monumentaltrees.com.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its broad stone pine crown reaching 25 metres, among a grove of younger, individually named pines. It stands in Küçük Çamlıca Korusu, the hilltop park these pines gave its name."
     },
     {
       "id": "ist_008",
@@ -304,7 +311,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Upgraded to confirmed 2026-07-29: matched record AND-01KDA0036, already cited as this entry's source, against the registry's own underlying data feed (anitagac.istanbul/treeList, fetched directly rather than through the site's JS-rendered map). The record's title (Ehrami Servi), age (244), height (18m) and girth (75cm) all match this entry exactly, and its street/neighbourhood/district fields match this entry's address verbatim. Its surveyed coordinate is about 1.15km from the prior neighbourhood-level estimate.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its tall, narrow, pyramid-shaped cypress form, about 18 metres high on an ordinary residential street. It stands on Şehit Murat Yüksel Sokak on the car-free island of Büyükada."
     },
     {
       "id": "ist_010",
@@ -336,7 +344,8 @@
       },
       "curation_status": "flagged",
       "notes": "These are 3-4 individual plane trees on Beykoz Çayırı rather than one tree; the 400-500 year figure is an average forestry estimate, not a per-tree age. Pin corrected 2026-07-27, about 1km: OpenStreetMap carries a leisure=park feature individually named 'Beykoz Çayırı' in Ortaçeşme Mahallesi, and Turkey's national monumental-tree GIS layer independently shows a dense cluster of a dozen-plus protected Platanus orientalis at essentially the same coordinates, confirming this as the real meadow rather than the previous stored guess. Pin tightened further 2026-07-27, about 260m, to the exact centroid of three individually registered Platanus orientalis in that same GIS layer (ages 390, 406 and 406, all within 150m of each other), a clean match on species, count ('three or four individually protected') and age range to this entry's own description. Treated as confirmed: unlike ist_001 and ist_002's nearby Bahçeköy records, these three all carry the matching Platanus orientalis species with no discrepancy.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by the small group of broad old planes standing apart across an open meadow, the Bosphorus visible beyond. They stand on Beykoz Çayırı, the former Sultan's hunting meadow."
     },
     {
       "id": "ist_011",
@@ -396,7 +405,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its tall, straight trunk about 170 centimetres across, rising to 33 metres. It stands in Gülhane Park, about 40 metres from the registered nettle tree beside it."
     },
     {
       "id": "ist_013",
@@ -425,7 +435,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the hackberry rather than a plane, a slimmer trunk about 145 centimetres across and 23 metres tall. It stands in Gülhane Park, about 40 metres from the registered London plane."
     },
     {
       "id": "ist_014",
@@ -464,7 +475,8 @@
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its dark, dense, modest yew crown, only 13 metres tall beside the taller planes elsewhere on this list. It stands in Topkapı Palace's Fourth Courtyard, near the Baghdad Kiosk."
     }
   ]
 }
