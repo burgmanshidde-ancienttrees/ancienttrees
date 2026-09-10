@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 - Night run 2026-09-10 22:28 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 73.5 minutes of its 120 minute window, 424 turns, 31 commands refused by the allowlist, ended clean (success). 11 tree(s) reached data/cities across 6 city file(s), and the run still wrote no log entry of its own. Claims left behind: ravenna, salamanca, ischia, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-10 (continuation 8) - Finished an abandoned write claim (3 new single-tree places), fixed a broken deploy (rung 2), caught an id collision before it shipped
 
 An earlier attempt in this same window stopped after 65 minutes with 55 unspent, having claimed `_famous-spain` for a write pass and written only 1 of its 4 verified trees (Lecina, left uncommitted). Finished the other three directly.

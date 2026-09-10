@@ -11892,6 +11892,54 @@
    ],
    "trees": 4,
    "logged": true
+  },
+  {
+   "started": "2026-09-10T22:28:02+00:00",
+   "date": "2026-09-10",
+   "run_id": "34537557046",
+   "minutes": 73.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 424,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(gh), Bash(jobs), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(while)",
+   "ended": "success",
+   "tokens": 19363266,
+   "claims_held": [
+    "ravenna",
+    "salamanca",
+    "ischia"
+   ],
+   "commits": 9,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "singapore",
+     "trees": 6
+    },
+    {
+     "city": "dengfeng",
+     "trees": 1
+    },
+    {
+     "city": "fonte-colombo",
+     "trees": 1
+    },
+    {
+     "city": "macugnaga",
+     "trees": 1
+    },
+    {
+     "city": "nyingchi",
+     "trees": 1
+    },
+    {
+     "city": "yangshuo",
+     "trees": 1
+    }
+   ],
+   "trees": 11,
+   "logged": false
   }
  ],
  "schedule_changes": [
