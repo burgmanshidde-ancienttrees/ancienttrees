@@ -44,10 +44,47 @@
       "source": "https://historischcentrumleeuwarden.nl/images/pdf/wandelroute_vosseparkwijk.pdf"
     },
     {
+      "name": "Beuk, Rijksscholengemeenschap/Gerechtshof, Zaailand 104",
+      "species": "European Beech (Fagus sylvatica)",
+      "coordinate": "53.198909, 5.794349",
+      "why_lead": "LRMB register nr 1682938, planted band 1860-1870, setting 'tuin' (garden). The register's place name combines the old Rijksscholengemeenschap (a 19th-century secondary school on the Zaailand, per nl.wikipedia's Rijks Hogere Burgerschool article, designed by T.A. Romein) with 'Gerechtshof', Leeuwarden's historic Palace of Justice/Court of Appeal building nearby, also a Romein design. The coordinate sits near the modern Zaailand square (redeveloped around 2012 with underground parking) and the Willemskade/Zuiderstraat streets, which OSM shows as ordinary public streets and a pedestrian square with no private-access tags nearby. However, the register's own 'tuin' setting suggests the tree may stand in a courtyard behind the school/courthouse building rather than on the open square itself, and courthouses commonly restrict courtyard access even where the surrounding streets are public. This pass (2026-09-10) could not settle it: an Overpass query for building/amenity tags at the exact coordinate timed out (the host was rate-limiting) and was not retried. Needs either a successful OSM check, a photo showing the tree's actual setting, or a site visit before it can ship either way.",
+      "source": "https://www.monumentalebomen.nl/"
+    },
+    {
       "name": "Gewone beuk achter De Koperen Tuin, Prinsentuin",
       "species": "European Beech (Fagus sylvatica)",
       "why_lead": "HCL brochure top-10 entry II, dated 1874, described as having a low branch that limits the height of delivery traffic behind the De Koperen Tuin pavilion in Prinsentuin. Could not be confidently matched to any LRMB register coordinate in Prinsentuin (all register beeches there, nrs 1688389 and 1688418/1688918-equivalent already match the published lee_003 and lee_005); may be a further, distinct beech or may be one of those under a different description. Needs a site visit or a clearer source before publishing to avoid duplicating an already-live tree under a new id.",
       "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+    }
+  ],
+  "resolved_2026-09-10": [
+    {
+      "name": "Gewone plataan (Theater Harmonie)",
+      "outcome": "Shipped as lee_027. LRMB nr 1682933 plus an independent second source, a 1 June 1991 letters-page item in 't Kleine Krantsje (HCL's digitised archive) that names this exact tree, calls it more than a hundred years old already in 1991, and records it as the subject of a public preservation campaign that year."
+    },
+    {
+      "name": "Witte paardenkastanje Blokhuispoort (Keizersgracht/Oosterkade)",
+      "outcome": "Shipped as lee_028, register-only, flagged. A different tree from lee_022 (Crimean Linden at Blokhuisplein), about 550m away on the same historic complex."
+    },
+    {
+      "name": "Witte paardenkastanje Spanjaardslaan",
+      "outcome": "Shipped as lee_029, register-only for the specific tree, with a 25 April 2025 local news item added as honest disease-risk context for the street (bleeding canker, one chestnut felled at no. 134) rather than as direct confirmation of this specimen."
+    },
+    {
+      "name": "Moseik Rengerspark",
+      "outcome": "Shipped as lee_030, 'The Turkey Oak of Rengerspark'. Species resolved: Dutch 'moseik' = Quercus cerris, Turkey oak, confirmed via nl.wikipedia and multiple Dutch nursery sites. Register's own superlative (among the heaviest Turkey oaks in the Netherlands) carried through per hard rule 8."
+    },
+    {
+      "name": "Pluimiep Vosseparkje x2",
+      "outcome": "Both shipped: lee_031 (north-west side, register nr 1692406) and lee_032 (south-east side by the pond, register nr 1692405). Register-only, flagged, per the honest-single-source rule; no second source found this pass either, consistent with the 2026-09-09 pass's finding."
+    },
+    {
+      "name": "Canadese populier Vosseparkje",
+      "outcome": "Shipped as lee_033, register-only, flagged. Confirmed distinct from lee_007 (the Marilandica poplar in the Prinsentuin, a different park)."
+    },
+    {
+      "name": "Kaukasische/Perzische eik, zuidoostelijke ingang Vosseparkje",
+      "outcome": "Shipped as lee_034, register-only, flagged, species left as 'not established' (register name is ambiguous between two species). Confirmed distinct from the blocked oak at the former Schapenweide/Aegon site."
     }
   ],
   "resolved_2026-09-09": [
@@ -77,6 +114,43 @@
     }
   ],
   "blocked": [
+    {
+      "name": "Bruine beuk Friesland college",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "coordinate": "53.202633, 5.792509",
+      "reason": "LRMB register nr 1688391. The register's own site history says the tree stood at the Friesland College, was in moderate condition by 2006, then declined quickly and 'is de boom geveld. De boom is vervangen door een jong exemplaar' (the tree was felled and replaced by a young specimen). The registered monumental tree is dead; the replacement is not a monumental tree. Access to the school grounds was also never confirmed. Do not publish."
+    },
+    {
+      "name": "Witte paardenkastanje, Achtertuin Prinsessenhof",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "coordinate": "53.203405, 5.791947",
+      "reason": "LRMB register nr 1682920. The register's own site history ends: 'In 2006 werd geconstateerd dat de boom niet fraai is gesnoeid en matig in conditie was. Niet lang daarna is de boom omgevallen bij een storm' (blown over in a storm not long after 2006). Dead. Do not publish."
+    },
+    {
+      "name": "Bruine beuk Princessehof (voorplein)",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "coordinate": "53.202907, 5.792112",
+      "reason": "LRMB register nr 1682922. The register's own site history: a fungal infection (platte tonderzwam) was found in the mid-1990s and 'Uiteindelijk is de boom in 2015 geveld' (the tree was felled in 2015). A 1 June 1991 letters-page item in 't Kleine Krantsje (HCL archive) independently confirms this was a well-known tree that survived an earlier removal threat in the early 1970s after public protest, but the register's later felling record post-dates that and is more recent evidence. Dead. Do not publish. Not the same tree as the two Sint Anthony Gasthuis entries already blocked."
+    },
+    {
+      "name": "Bruine beuk, Achtertuin Prinsessenhof (second beech)",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "coordinate": "53.203372, 5.79215",
+      "reason": "LRMB register nr 1682921, about 14m from the horse chestnut (nr 1682920, blown over in a storm, blocked above) at the same 'achtertuin Prinsessenhof' site. Its own site history is only one line ('De boom stond op een prachtige locatie achter Het Princessehof') using the past tense 'stond', which is ambiguous: Dutch register entries elsewhere in this same file use 'stond'/'staat' inconsistently regardless of whether the tree survives. This pass (2026-09-10) found no independent source confirming this specific beech alive or dead; given two of the three registered trees at this same back garden are confirmed dead (the chestnut blown over, and a beech at the adjoining voorplein felled in 2015), treat this one as uncertain rather than assume it survives. Needs a site check or a newer register read before it can ship either way.",
+      "why_lead": "Same as above; keep as a lead rather than blocked outright, since nothing confirms it is dead, only that its neighbours are."
+    },
+    {
+      "name": "Kaukasische/Perzische eik, Schapenweide (now Aegon office site)",
+      "species": "Oak (Quercus sp.)",
+      "coordinate": "53.197268, 5.790809",
+      "reason": "LRMB register nr 1682942, planted band 1900-1910. The register's own site note says the historic Schapenweide location is 'nu locatie kantoor Aegon, Lange Marktstraat' (now the site of the Aegon office). This pass (2026-09-10) queried Overpass around the coordinate and found the immediate surroundings tagged access=private: a private leisure=garden way, a private highway=footway and a private highway=service road, consistent with Aegon's corporate campus grounds (the 77m Averotoren office tower sits right there). No public path found crossing the site. Treat as private land, not genuinely open, per hard rule 10, unless a future pass finds evidence of a public route through the campus."
+    },
+    {
+      "name": "Treures (Weeping Ash), Schapenweide (now Aegon office site)",
+      "species": "Weeping Ash (Fraxinus excelsior 'Pendula')",
+      "coordinate": "53.197204, 5.791374",
+      "reason": "LRMB register nr 1682943, planted band 1920-1930, register place name 'Schapenweide' (an old estate name), setting 'landgoed'. About 110m from the blocked oak above, in the same area. This pass (2026-09-10) queried Overpass around the coordinate and found a private amenity=parking lot centred within 40m and two buildings dated 2021 (recent office redevelopment), no public highway or footway tagged through the immediate site. Treat as private/office-campus land per hard rule 10 until a future pass finds an access route."
+    },
     {
       "name": "Witte paardenkastanje Sint Anthony Gasthuis",
       "species": "Horse Chestnut (Aesculus hippocastanum)",
