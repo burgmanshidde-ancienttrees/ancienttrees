@@ -19,16 +19,23 @@ listeners racing on /app and writing different sources for the same submit,
 absorbed silently by the table's unique-email constraint. The timestamp has no
 such history.
 
-**Only what actually ships is named.** Walks, the season story and anything
-Plus sit behind flags that are off for every real user (Kit/Launch.swift), so
-the mail says trees around you, why it is worth the walk, ticking one off, and
-adding one with a photograph. Nothing else.
+**The text is his, rendered rather than rewritten (2026-09-10).** He supplied
+the substance in his own words and HIS_VOICE.md says what to do with that: he
+writes it, I render it. So the shape, the two "supers", the thanks, the ask
+back and the honest Android sentence are all his. What I added is the link and
+the capitals.
 
-One line still says iPhone only, because this group never told us what phone
-they hold: some of them are on Android and would otherwise be left with a link
-they cannot use.
+Gone with it: the feature paragraph and the counts. These eleven signed up for
+this app and know what it is, and his letter asks them a question instead of
+selling them the thing they already asked for.
 
-Counts checked today: 2,884 trees across 565 places. Store id 6806177833.
+No opt-out line, matching batch-010-app-launch, which carried none either. At
+eleven addresses with a real reply address and a sentence asking them to write
+back, this is a letter rather than a mailing.
+
+The link is the store rather than /app, because his own first sentence says
+iOS, so nobody is misled, and the people who can install it get one tap.
+Store id 6806177833.
 
 To: the `waitlist` rows with `created_at < 2026-09-03T14:16:33Z`, pulled by
 `python3 scripts/waitlist_batch.py`. It writes the batch and sends nothing;
@@ -40,15 +47,15 @@ Subject: Ancient Trees is out
 
 Hi,
 
-You left your address to hear when the app was ready. It is out:
+We are super happy to announce that the first version of the app is live on iOS:
 
 https://apps.apple.com/app/id6806177833
 
-Open it and it shows you the remarkable old trees around you, what you are looking at, and why that one is worth the walk. You can tick off the ones you have stood in front of, and if you find a tree we are missing you can add it with a photograph.
+Thanks so much for subscribing. It gave the confidence to put more effort into making this tree app.
 
-It is iPhone only so far. If you are on Android you stay on the list, and I will write again the day that one exists.
+It is only the first version and we are super curious what you think. What you miss, what you don't like. If anything comes up, let us know and we can improve it. Let's keep in touch.
 
-2,884 trees in 565 places, and more every week. If you would rather not hear from me again, say so and I will take you off.
+We are working on the Android version too, but in all honesty it will take a while before that one is finished.
 
 Hidde
 https://ancienttrees.app

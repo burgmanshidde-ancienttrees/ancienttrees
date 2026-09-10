@@ -1,0 +1,69 @@
+name: Waitlist mail
+
+# The waitlist mail, fired by hand and never by a schedule. It exists because
+# the secrets it needs already live here: SUPABASE_SERVICE_KEY and the five
+# OUTREACH_SMTP_* values share a job in nightly.yml and data-digest.yml, so the
+# send can run without a key passing through a session or through Hidde.
+#
+# It sends the batch exactly as committed. The guards are outreach_send.py's
+# and are not repeated here: it refuses a batch that is not approved_by_hidde,
+# refuses the do-not-contact list, refuses an address mailed before unless the
+# mail carries a resend_reason, and caps the day.
+#
+# `confirm` is not ceremony. A workflow_dispatch button sitting in a list is
+# one misclick away from mailing real people, so the box has to be typed.
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "Batch file to send"
+        default: "drafts/batches/waitlist-app-live.json"
+        required: true
+      confirm:
+        description: "Type SEND to actually send. Anything else is a dry run."
+        default: "dry"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: waitlist-mail
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # Always, whatever the confirmation says: the dry run prints who would be
+      # written to, and it is the last chance to read that list in the log.
+      - name: Dry run
+        run: python3 scripts/outreach_send.py "${{ inputs.batch }}"
+
+      - name: Send
+        if: inputs.confirm == 'SEND'
+        env:
+          OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
+          OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
+          OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
+          OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
+        run: python3 scripts/outreach_send.py "${{ inputs.batch }}" --send
+
+      # The record is the guard. An address sent here and not written back is an
+      # address the never-mail-twice check will happily mail again tomorrow.
+      - name: Record what went out
+        if: inputs.confirm == 'SEND'
+        run: |
+          git config user.name "burgmanshidde-ancienttrees"
+          git config user.email "304936064+burgmanshidde-ancienttrees@users.noreply.github.com"
+          git add data/outreach-sent.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Waitlist mail sent: record the addresses"
+            git -c rebase.autoStash=true pull --rebase
+            git push
+          fi
