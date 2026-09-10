@@ -11,6 +11,21 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 - Two Kyoto submissions (98, 99): GPS only, not enough to identify a tree
+
+Submissions #98 and #99 in the `submissions` table, kind `tree`, `page: app:collect`,
+both from the same account (Hidde's own, burgmans.hidde@gmail.com, the same one
+behind the Nara and Baarn sightings) via the contribute form on 2026-09-10. Both
+carry nothing but a GPS fix ("standing at the tree") and a city name: no name, no
+species, no note, no photo. #98 sits at 35.00566, 135.77446 (Higashiyama, ~600m
+from kyo_005, near Kennin-ji/central Gion). #99 sits at 35.00522, 135.77953
+(Higashiyama, 183m from kyo_005, plausibly inside Maruyama Park or the adjoining
+Chion-in/Shoren-in grounds, but too wide a net at that distance to name a specific
+tree honestly). Recorded as two thin leads in `data/leads/kyoto.json` rather than
+guessed at; neither can be verified or published from coordinates alone. Both ids
+added to `data/submissions-processed.json`. Needs a name, species or photograph to
+become a real candidate; a future pass or the submitter can close the gap.
+
 ## 2026-09-10 - Finishing four claims an earlier attempt left standing, plus the deploy break it was sitting next to
 
 Started from `python3 scripts/passcheck.py --claims`: valencia (verify, 25 min
