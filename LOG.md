@@ -11,6 +11,57 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (session) - A heavy photo hunt with no network: the geotag now scores by distance, and a sweep can no longer record an answer nobody gave
+
+Hidde asked for a zware foto zoektocht. There was none to run: this session's
+gateway refuses commons.wikimedia.org, upload.wikimedia.org, api.inaturalist.org,
+api.openverse.org, Flickr and ancienttrees.app, while github and pypi answer
+normally. Not a tooling fault and not routable around, so no candidate could be
+fetched and none could be looked at. Three offline changes instead, all of which
+make the next viewing pass convert better.
+
+**The geotag is now scored by distance rather than by existing.** photo_gaps
+gave a flat +4 for a geotag, so a photograph taken at the trunk and one taken in
+the next town scored alike, which is the Copenhagen pacifier-tree failure counted
+as a success. The queue carries no pin, which is why: the function had nothing to
+measure against, while photo_fetch.py, handed the real tree, was already ordering
+by distance. One signal, live in one file and unavailable in the other. It now
+loads the pins and grades 30/18/8/2 at 50 m, 150 m, 400 m and 1.5 km. Every term
+is a bonus, so it still orders and never gates.
+
+**`photo_gaps.py --conflict` is new, and it is worth more than the rejects it
+replaces.** 15 unjudged candidates name their tree and sit over 400 m from its
+pin. Each is a wrong tree, a wrong pin or a bad geotag, and those need opposite
+answers. Giessen's "Lindengruppe an der Lindbachquelle" drew four photographs of
+the Lindengruppe at Kraftsolms 14 km away; Peesten's Tanzlinde drew
+Neudrossenfeld's, 11 km. Both scored 37 on the filename alone, and Germany
+supplies both because Germany names its trees after what they are. A wrong pin
+outranks every photo question on the page, so this is a list for eyes, not a
+verdict.
+
+**A sweep that reaches nothing no longer writes that it found nothing.**
+photo_hunt.py wrote `checked: <today>` whether Commons held no photograph or
+nothing answered. Seven Dordrecht and Eindhoven trees were recorded as swept in
+this session without one request leaving the machine, and that date would have
+stopped a later sweep asking again. Reverted, and the script now leaves such a
+tree unrecorded and stops after five in a row. Verified against the live
+failure: the queue file came back untouched.
+
+**preflight: no two trees may wear the same photograph** (the Cagliari case).
+Zero today, which is the cheap moment to write it: 634 unjudged files are offered
+to more than one tree and 96 score above zero for more than one.
+
+Also corrected the stale verdict at the top of photo_gaps.py, which still said
+the CI runner cannot reach upload.wikimedia.org. CLAUDE.md retired that on
+2026-09-01: the 2026-08-07 failures were 400s on a thumbnail width Wikimedia does
+not serve, and the runner gets 200 on everything. Wikimedia rate-limits rather
+than blocks, so a viewing pass throttles.
+
+FOR HIDDE: nothing here needs you. The queue still holds 3,575 unjudged
+candidates against 650 photo-less trees, and the shortlist is now ordered so the
+best of them come first; it needs a run with egress to the image hosts, which
+this session did not have.
+
 ## 2026-09-10 (continuation 3) - Leeuwarden 34 -> 41, a 116-tree recognition-line sweep, and git push is stuck again
 
 **FOR HIDDE: git push is failing again, same error as earlier today ("Invalid username or token. Password authentication is not supported").** Fetch works, only push fails, so it is the installation token rather than anything wrong here. Everything below is committed and sitting safely local; it will reach GitHub the moment push works again. If you read this before it does, that is the thing worth checking.
