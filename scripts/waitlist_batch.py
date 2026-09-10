@@ -14,6 +14,16 @@ from that same afternoon, record two submit listeners racing on /app and
 writing different sources for one submit, swallowed silently by the table's
 unique-email constraint. A row's creation time has no such history.
 
+Four exclusions, all applied here rather than by eye. Our own test rows
+(@ancienttrees.app: two of the seventeen are `chain-test` and `formuliertest`).
+Anybody Hidde names as family or a colleague, in SKIP below with his words.
+Anybody who ALREADY had the launch news in the 010-app-launch outreach batch,
+which ran 3 to 8 September and reached 258 people; Quercus Setubal is on both
+lists and being told twice in five days reads as a mailing list rather than a
+letter. And anybody mailed about something ELSE keeps outreach_send.py's
+never-twice guard satisfied on purpose, with a resend_reason, rather than
+around it.
+
 It writes a batch and sends nothing. The sending, its do-not-contact list, its
 never-mail-twice guard and its daily cap all stay in outreach_send.py, which
 also refuses to send a batch whose status is not `approved_by_hidde`:
@@ -44,6 +54,19 @@ OUT = os.path.join(ROOT, "drafts", "batches", "waitlist-app-live.json")
 # moment saw a promise about Android and is not ours to mail here.
 CUTOFF = "2026-09-03T14:16:33Z"
 
+# The batch that already carried the launch to 258 correspondents, 3 to 8
+# September. Anybody on it has heard.
+LAUNCH_BATCH = "010-app-launch"
+
+# Hidde, 2026-09-10: "ignore myrthe and eric - family and the last one is for
+# android". The third is already outside the cutoff.
+SKIP = {
+    "myrthe@koos.agency": "his own agency, not a stranger who signed up",
+    "ep.burgmans@casema.nl": "family",
+}
+
+SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
+
 
 def draft():
     """Subject from the notes, body from below the --- separator."""
@@ -58,6 +81,22 @@ def draft():
     return m.group(1).strip(), body
 
 
+def history():
+    """Who has been mailed at all, and who already had the launch news."""
+    try:
+        log = json.load(open(SENT_PATH, encoding="utf-8"))
+    except Exception:
+        return set(), set(), set()
+    mailed, launched = set(), set()
+    for row in log.get("sent", []):
+        addr = row.get("to", "").lower()
+        mailed.add(addr)
+        if str(row.get("batch", "")).startswith(LAUNCH_BATCH):
+            launched.add(addr)
+    dnc = {a.lower().strip() for a in log.get("do_not_contact", [])}
+    return mailed, launched, dnc
+
+
 def rows(url, key):
     req = urllib.request.Request(
         f"{url.rstrip('/')}/rest/v1/waitlist"
@@ -68,23 +107,55 @@ def rows(url, key):
         return json.load(r)
 
 
+def source_rows(url, key):
+    """Supabase, or a pasted export where supabase.co is unreachable."""
+    if "--from-file" in sys.argv:
+        path = sys.argv[sys.argv.index("--from-file") + 1]
+        return json.load(open(path, encoding="utf-8"))
+    return rows(url, key)
+
+
 def main():
     url = os.environ.get("SUPABASE_URL")
     key = os.environ.get("SUPABASE_SERVICE_KEY")
-    if not (url and key):
-        sys.exit("REFUSED: needs SUPABASE_URL and SUPABASE_SERVICE_KEY.")
+    if "--from-file" not in sys.argv and not (url and key):
+        sys.exit("REFUSED: needs SUPABASE_URL and SUPABASE_SERVICE_KEY, or "
+                 "--from-file <export.json>.")
     subject, body = draft()
-    seen, mails = set(), []
-    for row in rows(url, key):
+    mailed, launched, dnc = history()
+    seen, mails, dropped = set(), [], []
+    for row in source_rows(url, key):
         addr = (row.get("email") or "").strip()
-        if not addr or addr.lower() in seen:
+        low = addr.lower()
+        when = str(row.get("created_at") or "")[:19].replace(" ", "T")
+        if not addr or low in seen:
             continue
-        seen.add(addr.lower())
-        mails.append({"to": addr,
-                      "outlet": f"waitlist signup, {str(row.get('created_at'))[:10]}"
-                                f", via {row.get('source') or 'unknown'}",
-                      "subject": subject,
-                      "body": body})
+        seen.add(low)
+        if when >= CUTOFF.rstrip("Z"):
+            dropped.append((addr, "after the Android rename"))
+            continue
+        if low.endswith("@ancienttrees.app"):
+            dropped.append((addr, "one of ours, not a person"))
+            continue
+        if low in dnc:
+            dropped.append((addr, "do not contact"))
+            continue
+        if low in SKIP:
+            dropped.append((addr, SKIP[low]))
+            continue
+        if low in launched:
+            dropped.append((addr, f"already had the launch in {LAUNCH_BATCH}"))
+            continue
+        mail = {"to": addr,
+                "outlet": f"waitlist signup, {str(row.get('created_at'))[:10]}"
+                          f", via {row.get('source') or 'unknown'}",
+                "subject": subject,
+                "body": body}
+        if low in mailed:
+            mail["resend_reason"] = ("They asked on the waitlist to be told when "
+                                     "the app was ready; the earlier mail to this "
+                                     "address was about something else.")
+        mails.append(mail)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump({
         "batch": "waitlist-app-live",
@@ -95,9 +166,14 @@ def main():
         "status": "draft",
         "mails": mails,
     }, open(OUT, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
-    print(f"{len(mails)} address(es) before {CUTOFF} -> {os.path.relpath(OUT, ROOT)}")
+    print(f"{len(mails)} address(es) -> {os.path.relpath(OUT, ROOT)}")
     for m in mails:
-        print(f"  {m['to']}  ({m['outlet']})")
+        tail = "  [resend]" if m.get("resend_reason") else ""
+        print(f"  {m['to']}  ({m['outlet']}){tail}")
+    if dropped:
+        print(f"\n{len(dropped)} left out:")
+        for addr, why in dropped:
+            print(f"  {addr}  ({why})")
     print("\nStatus is 'draft'. Hidde reads the text, flips it to "
           "'approved_by_hidde', then outreach_send.py --send will go.")
     return 0

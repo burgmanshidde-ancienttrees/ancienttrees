@@ -35,7 +35,21 @@ sending, the do-not-contact list, the never-mail-twice guard and the daily cap
 stay in outreach_send.py, which refuses any batch not marked
 `approved_by_hidde`.
 
-**FOR HIDDE:** the batch is built with status `draft`. Flip it and it goes.
+**The list, once he pasted the export: seventeen rows become eleven people.**
+Out: two of our own test rows (@ancienttrees.app), Eric and Myrthe on his word
+(family and his own agency), thomas.luetjens as the one row past the cutoff,
+and **Quercus Setubal, who already had the launch news on 5 September in the
+010-app-launch batch** and would otherwise have been told twice in five days.
+That last one is the guard earning its keep rather than a judgement anybody
+made: outreach_send.py's never-twice check found it, not a pair of eyes.
+atruthbrarian stays, with a resend_reason, because their earlier mail was a
+contributor reply about a London plane and this is the thing they actually
+asked for. Every one of those exclusions is in `waitlist_batch.py` rather than
+in a head, and `--from-file` builds the batch from a pasted export for exactly
+the case that produced it.
+
+**FOR HIDDE:** the batch is built, eleven addresses, status `draft`, dry run
+clean through every guard. Flip the status and it goes.
 
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 
