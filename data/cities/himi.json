@@ -53,16 +53,20 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "best_time": {
-        "months": [4],
+        "months": [
+          4
+        ],
         "kind": "flowers",
         "label": "April, when it carries deep red flowers for about a month"
       },
       "story": "Japan's thickest wild camellia stands in a village burial ground at the end of a dead-end valley. The Oidani camellia is ordinary yabu-tsubaki, Camellia japonica as it grows in the hills without anyone's help, and the surveyor Miyake Kazuyoshi ranked it first in the country for the species. It measures 3.89 metres round and 7.5 metres tall, spreading 7.9 metres east to west and 11 north to south.\n\nIts age is disputed and we are not going to settle it. Himi City's own cultural-properties page says about 500 years. A 1998 published survey of Japan's giant trees says 700 to 800 instead. Neither explains how it got to its number.\n\nThe shape is what people come up here for. It splits into three thick trunks less than a metre off the ground, and their branches have grown back into each other into a tangle solid enough at around two and a half metres up to sit on. Locally it is the Sasumata Camellia, after the Y-shaped pole once used to pin a man against a wall.\n\nThe graveyard has a story attached. A samurai of Ikeda Castle executed on a false charge; his widow turned away by her own family and dead of grief; the two buried on the hill facing the castle, with a camellia planted where a stone should have gone. Toyama Prefecture designated the tree in 1965. It opens deep red for about a month from early April.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Oidani_no_Otsubaki_Camellia_japonica_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "さかおり, via Wikimedia Commons",
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       }
     }
   ]
