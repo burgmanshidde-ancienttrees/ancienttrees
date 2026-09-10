@@ -50,10 +50,12 @@
       "access": "Free, in the open park outside the Natural History Museum. The ground beneath its crown has been fenced off since 1989 to protect the tree's surface roots from foot traffic, but the tree itself is fully visible from the plaza.",
       "transport": "Served by MTS bus route 7 to Balboa Park (Park Blvd pedestrian overpass stop), about a 10 minute walk to the museum plaza.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Moreton_Bay_Fig%2C_Balboa_Park%2C_SD_1.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "BrokenSphere, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2272,
+        "height": 1704
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -91,7 +93,10 @@
       "location_precision": "approximate",
       "notes": "A directly documented Sessions planting, unlike the Balboa Park fig: several sources independently name her as the planter of this specific tree. Landmark coordinates mark the plaque at the corner rather than the tree, hence approximate precision. No girth or height found in any source checked.",
       "best_time": {
-        "months": [5, 6],
+        "months": [
+          5,
+          6
+        ],
         "kind": "flowers",
         "label": "late May and June, when the crown turns yellow-orange and then drops the lot onto the pavement"
       }
