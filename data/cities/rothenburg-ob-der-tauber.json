@@ -48,14 +48,23 @@
       ],
       "access": "Free, on a public path along the town wall near the youth hostel",
       "transport": "About 10 minutes on foot south of the Marktplatz, near the Rossmuhle youth hostel below the Spitalbastei",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "best_time": {
-        "months": [1, 2],
+        "months": [
+          1,
+          2
+        ],
         "kind": "bare silhouette",
         "label": "January and February, when the leaves are off and the broken frame of the old trunk shows"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its six-metre trunk, broken into surviving fragments rather than one whole column. It stands below the Spitalbastei, beside the town wall at the Muhlacker."
     },
     {
       "id": "rob_002",
@@ -79,9 +88,15 @@
       ],
       "access": "Free; the tree stands roadside on the public Taubertalweg cycle and walking path beside the Fuchsmuhle guesthouse, not inside the guesthouse grounds.",
       "transport": "About 2 km downstream along the Taubertalweg from Rothenburg's old town; a level 25-30 minute walk or a short ride on the cycle path",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as the lime standing roadside beside the Fuchsmuhle guesthouse. It stands on the Taubertalweg, two kilometres downstream of the town walls."
     },
     {
       "id": "rob_003",
@@ -105,9 +120,15 @@
       ],
       "access": "Free; register location text places it by the mill on the roadside, the same wording pattern as the Fuchsmuhle entry. The Langenmuhle itself is a private residence and farm, but the tree stands by the valley road rather than inside its grounds.",
       "transport": "About 2.3 km downstream along the Taubertalweg from Rothenburg's old town, roughly a 30 minute level walk",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as the lime standing by the Langenmuhle mill. It stands on the Taubertalweg, 2.3 kilometres downstream of the town walls."
     },
     {
       "id": "rob_004",
@@ -131,9 +152,15 @@
       ],
       "access": "Free; the valley is reached by a public Gemeindeverbindungsstrasse (local connecting road) and lies on the W8 'Postbotenweg' waymarked hiking trail out of Rothenburg, which passes directly through the Vorbachtal and the neighbouring hamlet of Vorbach.",
       "transport": "About 2.5 km west of Rothenburg's Marktplatz via the W8 Postbotenweg trail through the Vorbachtal; roughly 35-40 minutes on foot",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise them as the two spruces standing together over a small waterfall, in a narrow wooded valley. They stand in the Vorbachtal, near the hamlet of Vorbach."
     }
   ]
 }
