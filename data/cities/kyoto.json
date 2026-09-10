@@ -59,7 +59,8 @@
       "curation_status": "ai_generated",
       "notes": "OpenStreetMap carries a contributor-mapped, heritage-tagged node named \"遊龍松\" (Yuryu-matsu) at this spot, matching the tree's own Japanese name exactly and its 1932 national-monument designation; its species tag (Pinus thunbergii) contradicts our own two independent sources, which agree this is a five-needle pine (Pinus parviflora, matching the story's description), so the location was used but the species tag was not.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its trunk running almost flat and horizontal rather than climbing upward, above the stone steps. It stands between Yoshimine-dera's main hall and its pagoda."
     },
     {
       "id": "kyo_002",
@@ -94,7 +95,8 @@
       "curation_status": "ai_generated",
       "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/8/8e/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 4/4f. Fetched and viewed directly, the same boat-shaped trained pine beside Kinkaku-ji's roofline, before swapping.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its trunk and branches clipped into the shape of a sailing ship, bow pointed west. It stands beside the Kyoko-chi pond at Kinkaku-ji."
     },
     {
       "id": "kyo_003",
@@ -128,7 +130,8 @@
       "curation_status": "flagged",
       "notes": "The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved. Pin corrected 2026-07-28, about 625m: the previous coordinate was a street-level address estimate that turned out to be a genuine error, not just imprecise; OpenStreetMap carries two independently mapped nodes both named Hosen-in within about 150m of each other, one explicitly tagged with this entry's own street number (187), used here instead. The temple is a single small building around one guest hall and garden, so this building-level point puts a visitor at the pine itself, not just in the neighbourhood.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its shape, trained to echo the cone of Mount Mikami, framed through the temple hall's doorway. It stands in the garden of Hosen-in, Ohara."
     },
     {
       "id": "kyo_004",
@@ -167,7 +170,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Photo (\"Grand Ginkgo Tree in West Honganji Temple\") viewed directly: shows a massive, wide, low-spreading ginkgo fenced off in a temple courtyard, consistent with the Sakasa Icho (inverted ginkgo) shape the story describes. Approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its low, wide shape, heavy branches spreading close to the ground before the trunk narrows above them. It stands in front of Nishi Honganji's Goeido Hall."
     },
     {
       "id": "kyo_005",
@@ -206,7 +210,8 @@
           4
         ],
         "label": "late March into early April, when its cascading blossoms draw crowds for night illumination"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its cascading pale pink canopy, floodlit most nights in bloom season. It stands at the centre of Maruyama Park."
     },
     {
       "id": "kyo_006",
@@ -238,7 +243,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age given as a wide range (600-800 years) because sources disagree substantially and no single registry figure was found. Location upgraded to confirmed: two independent iNaturalist observations of this species (one CC BY-SA with photo, one CC0), 20m apart from each other and both consistent with the shrine's southwest-corner position in Kyoto Gyoen, about 140m from the previous estimate. Photo viewed directly: a large mature broadleaf tree ringed by protective bollards on a gravel path, consistent with a protected shrine tree in a formal park.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the oldest and largest tree in Kyoto Gyoen. It stands at Munakata Shrine, in the park's southwest corner."
     },
     {
       "id": "kyo_007",
@@ -271,7 +277,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Photo is titled \"Shoryu Benzaiten\" (樟龍弁財天), an alternate name Japanese-language sources confirm is used for this exact great camphor at Imakumano Shrine, since its large limbs are said to resemble a dragon and the tree is worshipped as the seat of a dragon-riding Benzaiten. Embedded coordinates (34.9843, 135.7742) sit within about 50m of this entry's pin. A text-search workflow cannot visually confirm the tree fills the frame, so flagged found_needs_check per house practice.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its canopy, 23.5 metres wide, visible from the surrounding streets before the shrine buildings themselves. It stands at Imakumano Shrine."
     },
     {
       "id": "kyo_008",
@@ -312,7 +319,8 @@
         ],
         "label": "late March into early April, when its blossoms recreate the display Hideyoshi once staged here"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its cascading weeping form, the subject of the painter Okumura Togyu's work Daigo. It stands in the garden of Sanboin, Daigo-ji."
     },
     {
       "id": "kyo_010",
@@ -350,7 +358,8 @@
           4
         ],
         "label": "late March into early April, among the first of the shrine's cherries to bloom"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its white weeping blossom, standing beside the deep red flowers of its companion tree Saio-zakura. It stands between Kamigamo Shrine's first and second torii."
     },
     {
       "id": "kyo_011",
