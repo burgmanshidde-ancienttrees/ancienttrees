@@ -10017,6 +10017,194 @@
    ],
    "trees": 28,
    "logged": true
+  },
+  {
+   "started": "2026-09-10T07:01:57+00:00",
+   "date": "2026-09-10",
+   "run_id": "34447932916",
+   "minutes": 108.0,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 492,
+   "denials": 47,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(if), Bash(pip), Bash(printenv), Bash(printf), Bash(python3), Bash(rm), Bash(sleep), Bash(wc)",
+   "ended": "success",
+   "tokens": 77454013,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 42,
+   "cities": [
+    {
+     "city": "leeuwarden",
+     "trees": 7
+    },
+    {
+     "city": "dordrecht",
+     "trees": 4
+    },
+    {
+     "city": "montreal",
+     "trees": 4
+    },
+    {
+     "city": "belgrade",
+     "trees": 0
+    },
+    {
+     "city": "boston",
+     "trees": 0
+    },
+    {
+     "city": "brno",
+     "trees": 0
+    },
+    {
+     "city": "bruges",
+     "trees": 0
+    },
+    {
+     "city": "brzoza",
+     "trees": 0
+    },
+    {
+     "city": "cagliari",
+     "trees": 0
+    },
+    {
+     "city": "caserta",
+     "trees": 0
+    },
+    {
+     "city": "delft",
+     "trees": 0
+    },
+    {
+     "city": "eindhoven",
+     "trees": 0
+    },
+    {
+     "city": "glasgow",
+     "trees": 0
+    },
+    {
+     "city": "granada",
+     "trees": 0
+    },
+    {
+     "city": "helsinki",
+     "trees": 0
+    },
+    {
+     "city": "higashiomi",
+     "trees": 0
+    },
+    {
+     "city": "kanazawa",
+     "trees": 0
+    },
+    {
+     "city": "kauai",
+     "trees": 0
+    },
+    {
+     "city": "los-angeles",
+     "trees": 0
+    },
+    {
+     "city": "matera",
+     "trees": 0
+    },
+    {
+     "city": "nijmegen",
+     "trees": 0
+    },
+    {
+     "city": "oss",
+     "trees": 0
+    },
+    {
+     "city": "plunge",
+     "trees": 0
+    },
+    {
+     "city": "san-diego",
+     "trees": 0
+    },
+    {
+     "city": "sardinia",
+     "trees": 0
+    },
+    {
+     "city": "savannah",
+     "trees": 0
+    },
+    {
+     "city": "shokawa",
+     "trees": 0
+    },
+    {
+     "city": "sorrento",
+     "trees": 0
+    },
+    {
+     "city": "stockholm",
+     "trees": 0
+    },
+    {
+     "city": "sydney",
+     "trees": 0
+    },
+    {
+     "city": "tarragona",
+     "trees": 0
+    },
+    {
+     "city": "tilburg",
+     "trees": 0
+    },
+    {
+     "city": "uda",
+     "trees": 0
+    },
+    {
+     "city": "waipoua-forest",
+     "trees": 0
+    },
+    {
+     "city": "washington-dc",
+     "trees": 0
+    },
+    {
+     "city": "wessobrunn",
+     "trees": 0
+    },
+    {
+     "city": "yabu",
+     "trees": 0
+    },
+    {
+     "city": "york",
+     "trees": 0
+    },
+    {
+     "city": "ypres",
+     "trees": 0
+    },
+    {
+     "city": "zaanstad",
+     "trees": 0
+    },
+    {
+     "city": "zilina",
+     "trees": 0
+    },
+    {
+     "city": "zurich",
+     "trees": 0
+    }
+   ],
+   "trees": 15,
+   "logged": true
   }
  ],
  "schedule_changes": [
