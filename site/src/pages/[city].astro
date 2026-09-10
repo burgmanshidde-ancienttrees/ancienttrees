@@ -8,6 +8,7 @@ import { checkCountPromises } from "../lib/count-promises";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, type CityEntry } from "../lib/trees";
+import { collectionEntries } from "../lib/collection-rank";
 import { speciesCommon, speciesPageSlugs } from "../lib/species";
 import { usablePhoto, metaImageUrls, ogImageUrl } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
@@ -144,11 +145,16 @@ const markers: WalkMarker[] = trees.map((t, i) => {
 });
 
 const faq = city.data.faq!;
-const cityCollections = collections.filter((c) => c.data.entries.some((e) => e.city_slug === cslug));
+// collectionEntries rather than c.data.entries: a generated collection computes
+// its list at build time and its file holds an empty array, so a city whose
+// trees are in one got no cross-link at all.
+const citiesBySlug = new Map(allCities.map((c) => [c.id, c]));
+const collEntries = new Map(collections.map((c) => [c.data.slug, collectionEntries(c, citiesBySlug)]));
+const cityCollections = collections.filter((c) => collEntries.get(c.data.slug)!.some((e) => e.city_slug === cslug));
 const coll = cityCollections[0] ?? null;
 let collLinkText: { phrase: string; verb: string } | null = null;
 if (coll) {
-  const n = coll.data.entries.filter((e) => e.city_slug === cslug).length;
+  const n = collEntries.get(coll.data.slug)!.filter((e) => e.city_slug === cslug).length;
   collLinkText = { phrase: n === 1 ? "One of these trees" : `${n} of these trees`, verb: n === 1 ? "appears" : "appear" };
 }
 

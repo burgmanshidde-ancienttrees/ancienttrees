@@ -772,6 +772,52 @@ def check_every_feed_is_in_the_version():
             f"never fetches the file that moved. Hash them into the version."]
 
 
+def check_no_collection_is_empty():
+    """A collection page nobody can see any trees on.
+
+    Four of them shipped that way and stayed that way. A GENERATED collection
+    (the tallest, the thickest, the autumn and the harvest lists) ranks itself
+    at build time and carries an EMPTY entries array in its own file, so every
+    reader other than the collection page itself saw a collection with nothing
+    in it: /collections printed "0 trees, 0 cities" under a placeholder where a
+    photograph belongs, and /api/browse.json dropped them from the app outright
+    on a "has no trees" filter. The pages themselves were fine the whole time,
+    which is why nobody caught it from the pages.
+
+    So the check asks the question a reader asks, of both surfaces at once:
+    does this collection show me any trees. It cannot be answered from the data
+    files, because for half of them the answer is only true after a build."""
+    out = []
+    index = DIST / "collections.html"
+    if not index.exists():
+        return ["collections.html missing from the build"]
+    html = index.read_text(encoding="utf-8")
+    cards = re.findall(r'<a class="exc-card" href="/collections/([^"]+)">(.*?)</a>', html, re.S)
+    if not cards:
+        return ["collections.html lists no collections at all"]
+    for slug, body in cards:
+        m = re.search(r"<span>\s*(\d+) trees", body)
+        if not m:
+            out.append(f"/collections: the {slug} card names no tree count")
+        elif m.group(1) == "0":
+            out.append(f"/collections: the {slug} card says 0 trees; a generated "
+                       f"collection's own file holds an empty entries array, so "
+                       f"read it through collectionEntries()")
+        page = DIST / "collections" / f"{slug}.html"
+        if page.exists() and "tree-card-top" not in page.read_text(encoding="utf-8"):
+            out.append(f"/collections/{slug}: the page renders no tree cards")
+
+    browse_path = DIST / "api" / "browse.json"
+    if browse_path.exists():
+        feed = json.loads(browse_path.read_text(encoding="utf-8"))
+        in_feed = {c.get("slug") for c in feed.get("collections", [])}
+        for slug, _ in cards:
+            if slug not in in_feed:
+                out.append(f"/api/browse.json: {slug} is public on the website and "
+                           f"missing from the app's feed")
+    return out
+
+
 def check_faces_travel_to_the_app():
     """The thirteenth ratchet check, from 2026-08-25.
 
@@ -1286,6 +1332,7 @@ def main():
     failures += check_no_owner_name()
     failures += check_no_personal_address()
     failures += check_walks_go_to_the_app()
+    failures += check_no_collection_is_empty()
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     pages = sorted(DIST.rglob("*.html"))
