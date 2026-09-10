@@ -6850,6 +6850,33 @@
     "note": "in progress at session end",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Helmond + Ottawa + Oahu",
+    "kind": "write",
+    "tokens": 165000,
+    "trees": 12,
+    "note": "12 stories + recognition lines across 3 cities, 3 best_times; merged into data/cities (helmond 13->18, ottawa 8->14 with a rewritten two-cluster intro/FAQ, oahu 18->19); fixed 5 stale count-promise FAILs preflight caught after merge",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "strasbourg",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 8 how_to_recognise lines onto live Strasbourg trees, closing that city's gap to zero; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "hong-kong",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 8 how_to_recognise lines onto live Hong Kong trees, closing that city's gap to zero; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
