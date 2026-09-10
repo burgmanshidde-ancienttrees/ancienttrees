@@ -5,6 +5,7 @@ import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, oldestTree, treeSlugsForCity, slugify, type CityEntry } from "../../lib/trees";
 import { ageToken } from "../../lib/tree-copy";
+import { collectionEntries } from "../../lib/collection-rank";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
 import { mapHead, singlePinScript } from "../../lib/map";
@@ -40,7 +41,9 @@ export async function getStaticPaths() {
     if (contextWc < 150 || contextWc > 200) {
       throw new Error(`${city.id}/oldest-tree: question_context is ${contextWc} words, Contract B requires 150-200`);
     }
-    return { params: { city: city.id }, props: { city, trees, old, countryPages, collections } };
+    return { params: { city: city.id },
+             props: { city, trees, old, countryPages, collections,
+                      citiesBySlug: new Map(allCities.map((c) => [c.id, c])) } };
   });
 }
 
@@ -50,8 +53,9 @@ interface Props {
   old: ReturnType<typeof oldestTree>;
   countryPages: Map<string, string>;
   collections: Awaited<ReturnType<typeof getCollection<"collectionPages">>>;
+  citiesBySlug: Map<string, CityEntry>;
 }
-const { city, trees, old, countryPages, collections } = Astro.props as Props;
+const { city, trees, old, countryPages, collections, citiesBySlug } = Astro.props as Props;
 
 const cityName = city.data.city;
 const country = city.data.country;
@@ -87,7 +91,10 @@ const faqEntities = [
   ...related.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 ];
 
-const cityCollections = collections.filter((c) => c.data.entries.some((e) => e.city_slug === cslug));
+// collectionEntries rather than c.data.entries: a generated collection holds an
+// empty array on disk and ranks itself at build time.
+const cityCollections = collections.filter((c) =>
+  collectionEntries(c, citiesBySlug).some((e) => e.city_slug === cslug));
 const coll = cityCollections[0] ?? null;
 
 const graph = [...SITE_SCHEMA, { "@type": "FAQPage", mainEntity: faqEntities }, breadcrumbSchema(crumbItems, canonical)];

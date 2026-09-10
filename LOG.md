@@ -11,6 +11,40 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 - Four collections were showing no trees; the ranking now travels
+
+Hidde: "I see some collections in the website that are empty of trees." He is
+right, and it was worse than the /collections page it shows on.
+
+The tallest, the thickest, the autumn and the harvest lists are GENERATED
+collections: they rank themselves at build time and their files on disk carry
+an empty `entries` array on purpose. Only the collection page itself knew that,
+because the ranking lived inside `collections/[slug].astro`. Everything else
+read the file's own empty array and believed it:
+
+- /collections printed **"0 trees, 0 cities"** on four cards, each under the
+  no-photograph placeholder, next to cards showing real counts.
+- **/api/browse.json dropped all four from the app entirely**, on a filter that
+  removes a collection with no trees, so the Collection tab has never once
+  shown the tallest, the thickest, the autumn or the harvest list.
+- City, country and question pages never cross-linked a tree that appears only
+  in a generated collection. 515 city pages now carry a collection link.
+- A fifth, `trees-older-than-400-years`, generated as well but holding six
+  hand-written notes, advertised itself as "6 trees, 1 city". It holds 299
+  across 231.
+
+The ranking moved to `site/src/lib/collection-rank.ts`, and a consumer now asks
+that module what a collection holds instead of reading the array. What the
+cards say after the change: thickest 794, harvest 334, oldest 299, tallest 266,
+autumn 226. The collection pages themselves render exactly as before.
+
+Two things found on the way. The app feed gated drafts on `status != "draft"`
+while Contract D's draft status is `needs_curation`, so a drafted collection
+would have gone straight to the app while the website held it back; it uses
+/collections' own gate now. And `check_no_collection_is_empty()` in qa.py is
+the ratchet: it asks the reader's question of both surfaces, does this
+collection show me any trees, which is a question only a built site can answer.
+
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 
 The deploy had been red since 00:04 UTC: `i18ncheck.py` was refusing the
