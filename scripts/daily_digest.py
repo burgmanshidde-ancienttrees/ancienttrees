@@ -2187,6 +2187,39 @@ def app_section(today):
         out.append("- At one or two installs this is a person or two, not an "
                    "audience. Read nothing into a single tap.")
 
+    # HOW CONCENTRATED WAS YESTERDAY, added 2026-09-10 because the table could
+    # not answer the first question anybody asks of it. Hidde read 60 tree
+    # opens against 4 app opens and asked whether it was real. Nothing here
+    # could say: a busy stranger and one of us on a fresh install produce the
+    # identical row, and `excluded_installs` in data/app-measure.json is empty
+    # precisely because a reinstall after go-live makes an id the first-seen
+    # rule cannot catch. That file's own note says so.
+    #
+    # One install making nearly all of a day is the fingerprint of testing, and
+    # it is arithmetic rather than judgement, so it belongs in the table rather
+    # than in somebody's suspicion. It never decides anything: a genuinely
+    # engaged stranger looks the same, which is why this prints the shape and
+    # leaves the reading to a person.
+    conc = _posthog(
+        """
+        SELECT count(DISTINCT distinct_id), count(), max(n)
+        FROM (SELECT distinct_id, count() AS n FROM events
+              WHERE toDate(timestamp) = toDate('%s') %s
+              GROUP BY distinct_id)
+        """ % (yday, and_ours), key, project)
+    if conc and conc[0] and int(conc[0][1] or 0):
+        installs, events, busiest = (int(conc[0][0]), int(conc[0][1]),
+                                     int(conc[0][2] or 0))
+        share = (100.0 * busiest / events) if events else 0
+        out.append("- Yesterday came from %d install%s, and the busiest made "
+                   "%d of %d events (%.0f%%).%s"
+                   % (installs, "" if installs == 1 else "s", busiest, events,
+                      share,
+                      " One install making most of a day is what our own"
+                      " reinstall looks like: add its id to excluded_installs"
+                      " in data/app-measure.json if it is ours."
+                      if share >= 70 else ""))
+
     # Which tabs people move to. The one breakdown worth its own query,
     # because it says whether the map is the product in practice as well as
     # on paper.
