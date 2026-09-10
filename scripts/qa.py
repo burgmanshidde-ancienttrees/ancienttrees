@@ -184,6 +184,54 @@ def check_auth_corpus_agreement():
     return []
 
 
+def check_copy_test_renders():
+    """A running copy test must actually be visible in the built pages.
+
+    Added 2026-09-10, the hour the test was wired, because the first version
+    looked up `city.slug` in a file whose variable is `cslug`. Everything
+    compiled, every page built, and every single page silently rendered the
+    control. A test that quietly has one arm is worse than no test: it burns
+    eight weeks and then reports no difference, which is exactly what it would
+    report if the idea were wrong.
+
+    So this asserts the challenger wording reaches the pages assigned to it.
+    It cannot judge whether the wording is any good, only whether the split is
+    real. Removing it needs Hidde."""
+    reg = ROOT / "data" / "copy-tests.json"
+    if not reg.exists():
+        return []
+    try:
+        tests = json.loads(reg.read_text(encoding="utf-8")).get("tests", [])
+    except ValueError:
+        return ["data/copy-tests.json is not valid JSON, so no page can read it"]
+    test = next((t for t in tests
+                 if t.get("status") == "running" and t.get("surface") == "city title"), None)
+    if not test:
+        return []
+    assigned = [c for c, a in test.get("assignment", {}).items() if a != "control"]
+    if not assigned:
+        return []
+    seen = 0
+    for slug in assigned:
+        page = DIST / slug / "index.html"
+        if not page.exists():
+            continue
+        head = page.read_text(encoding="utf-8")[:4000]
+        m = re.search(r"<title>([^<]*)</title>", head)
+        # The challenger names the age before the count. The control names the
+        # count first. Anything else means the arm did not reach the page.
+        if m and re.search(r":\s*Oldest\b", m.group(1)):
+            seen += 1
+    if seen == 0:
+        return ["copy test %s is running and NOT ONE of its %d challenger pages "
+                "renders the challenger title: the arm is not reaching the build"
+                % (test["id"], len(assigned))]
+    if seen < len(assigned) * 0.6:
+        return ["copy test %s reaches only %d of %d challenger pages; the split "
+                "is not what the registry says" % (test["id"], seen, len(assigned))]
+    return []
+
+
 def check_one_city_order():
     import json as _json
     root = Path(__file__).resolve().parent.parent
@@ -1391,6 +1439,7 @@ def main():
 
     failures += check_no_strategy_in_workflows()
     failures += check_one_city_order()
+    failures += check_copy_test_renders()
     failures += check_sitemap_dates()
     failures += check_no_name_promise(pages)
     failures += check_tree_count_claims(pages)
