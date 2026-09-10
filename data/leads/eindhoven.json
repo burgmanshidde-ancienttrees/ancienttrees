@@ -1,0 +1,35 @@
+{
+  "leads": [
+    {
+      "name": "Witte moerbei (White Mulberry) at the Van Abbemuseum",
+      "species": "White Mulberry (Morus alba)",
+      "location": {
+        "address": "Bilderdijklaan 10, Van Abbemuseum, Eindhoven",
+        "latitude": 51.434367, "longitude": 5.481573
+      },
+      "reason": "Register (LRMB nr 1690223, reason 'dendrologisch', age unknown) says monumental, but the Gemeente Eindhoven open-data 'bomen' dataset shows a Morus alba 1.4m from this point classed only 'Waardevol' (valuable), not 'Monumentaal', and planted 1970 (about 55 years old, not old by this project's bar). Sources conflict on both age and status; no visual or narrative evidence found that it is otherwise spectacular. Worth a second look if a photo or a stronger account turns up, but as it stands it does not clear the 'worth the walk' bar on its own.",
+      "sources_checked": ["https://www.monumentalebomen.nl/", "https://data.eindhoven.nl/explore/dataset/bomen/table/?flg=nl-nl"]
+    },
+    {
+      "name": "Papier moerbei (Paper Mulberry), Stadswandelpark",
+      "species": "Paper Mulberry (Broussonetia papyrifera)",
+      "location": {
+        "address": "Alberdingk Thijmlaan 104-118, Stadswandelpark, Eindhoven",
+        "latitude": 51.42564, "longitude": 5.479932
+      },
+      "reason": "Only the LRMB register (nr 1690255, planted_band 1920-1930) places a tree here. The Gemeente Eindhoven open-data 'bomen' dataset has exactly one Papiermoerbei citywide, and it sits about 50m away near the Van Abbemuseum area (boomnummer 61975, planted 2002, 'Waardevol'), not at this coordinate, so it is not the same tree. A 60m radius search of the municipal dataset around this point found no paper mulberry at all (found instead a cluster of 1960-planted ginkgos, dawn redwoods and swamp cypresses, an arboretum-like planting near the Sterrenwacht). Two searches for independent confirmation (web search, municipal open data) came up empty. Second source not found; do not ship on the register alone.",
+      "sources_checked": ["https://www.monumentalebomen.nl/", "https://data.eindhoven.nl/explore/dataset/bomen/table/?flg=nl-nl"]
+    },
+    {
+      "name": "Spaanse eik (likely Northern Red Oak) near the Sterrenwacht, Stadswandelpark",
+      "species": "possibly Northern Red Oak (Quercus rubra); unconfirmed",
+      "location": {
+        "address": "near the Sterrenwacht, Stadswandelpark, Eindhoven",
+        "latitude": 51.425544, "longitude": 5.479909
+      },
+      "reason": "Only the LRMB register (nr 1690256, planted_band 1930-1940, place given only as '* Nabij de Sterrenwacht, Stadspark, Eindhoven', visible='onbekend') places a tree here; the asterisk in the register's own place field suggests even the register is uncertain about the exact spot. No matching 'Spaanse eik' entry exists anywhere in the Gemeente Eindhoven open-data 'bomen' dataset citywide (checked by name, zero hits), and a 150m radius search around this coordinate found no Quercus rubra either, only a 1960s-era conifer/ginkgo planting. Web search found nothing specific. Second source not found and even the register's own location is marked uncertain; leave for a future pass with a site visit or better register scan.",
+      "sources_checked": ["https://www.monumentalebomen.nl/", "https://data.eindhoven.nl/explore/dataset/bomen/table/?flg=nl-nl"]
+    }
+  ],
+  "blocked": []
+}
