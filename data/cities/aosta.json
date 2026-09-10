@@ -1,0 +1,66 @@
+{
+  "city": "Aosta",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Aosta's oldest mapped tree is one lime, standing in a raised bed beside the Collegiata dei Santi Pietro e Orso in the historic Borgo Sant'Orso. Local legend credits a sixth-century hermit with planting it; the tree the city actually protects was set into the ground roughly a thousand years later, in the 1530s or 1540s. Its hollow crown, held together now by metal braces, has been a national monument since 1924. Free to see, a short walk from Piazza Chanoux.",
+  "meta_description": "The Linden of Sant'Orso in Aosta: a national monument since 1924, its true planting a thousand years younger than the legend attached to it.",
+  "question_answer": "Aosta's mapped tree is the Linden of Sant'Orso, a broad-leaved lime beside the Collegiata dei Santi Pietro e Orso in the historic Borgo Sant'Orso. It measures 4.61 metres round and is put at roughly 475 years old, documented to a planting in the 1530s or 1540s rather than the sixth-century legend often attached to it. Italy listed it a national monument in 1924.",
+  "question_meta": "Aosta's oldest tree is a lime beside the Collegiata di Sant'Orso, documented from the 1530s despite a much older legend attached to it.",
+  "question_context": "This page follows Italy's own registers rather than the legend: the RAMI national monumental-tree registry (entry 01/A326/AO/02) and the tree's dedicated Italian Wikipedia article agree closely on its coordinates, species and measurements, and give an age of 450 to 500 years from a documented planting tradition of 1530 to 1550, when this lime is recorded as replacing an earlier tree on the same spot. Local legend holds that Saint Orso, a sixth-century hermit, planted the tree himself and that the valley's council of elders once settled disputes in its shade; neither claim is documented, and the tree's own dated origin sits roughly a thousand years after the saint is said to have died, so the two stories are kept separate rather than joined. The regional monumental-tree authority rates its condition mediocre: the trunk is hollow from the base to the first branching and stabilised with metal braces and cavity treatment, an actively monitored decline rather than an abandoned tree. It stands in a raised, fenced planter bed beside the Collegiata's well-known Romanesque cloister, which already draws its own visitors.",
+  "hero_tree_id": "aos_001",
+  "oldest_tree_id": "aos_001",
+  "faq": [
+    {
+      "q": "How old is the Linden of Sant'Orso really?",
+      "a": "Roughly 475 years, from a documented planting tradition of 1530 to 1550. The tree is often linked to Saint Orso, a sixth-century hermit said to have planted it himself, but that legend predates the tree's own dated origin by about a thousand years and the two should not be conflated."
+    },
+    {
+      "q": "Can I touch the trunk?",
+      "a": "No. The lime stands in a raised, fenced planter bed beside the Collegiata dei Santi Pietro e Orso, which keeps visitors a few steps back. You can see the whole crown clearly from the street."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open in Aosta's historic Borgo Sant'Orso, a short walk from Piazza Chanoux, with no ticket or gate."
+    },
+    {
+      "q": "Why does this page map only one tree in Aosta?",
+      "a": "Because this lime is the one tree in the city with its own national-monument status, dedicated Wikipedia article and documented history; Aosta itself is not yet a published city on this site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "aos_001",
+      "name": "The Linden of Sant'Orso",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 475 years",
+      "age_min": 450,
+      "age_max": 500,
+      "girth_cm": 461,
+      "height_m": 14.0,
+      "location": {
+        "address": "Via Sant'Orso, beside the Collegiata dei Santi Pietro e Orso, Borgo Sant'Orso, Aosta",
+        "latitude": 45.739153,
+        "longitude": 7.324838,
+        "neighbourhood": "Borgo Sant'Orso, Aosta"
+      },
+      "story": "Legend says a sixth-century hermit planted this lime with his own hands, and the tree the city protects today contradicts him: its documented planting sits in the 1530s or 1540s, roughly a thousand years after Saint Orso is meant to have died. The two stories should not be joined. What is recorded is that an earlier tree, an elm or an earlier lime, stood on this spot before, and this lime replaced it sometime in that Renaissance decade, which still makes it one of the oldest trees in the Aosta Valley.\n\nIts trunk has hollowed from the base up to the first branching, and metal braces now hold the crown from splitting the shell apart, a slow, monitored decline rather than an abandoned ruin. Italy listed it a national monument in 1924 and regional law has protected it since 1990. Local memory keeps the valley's council of elders meeting in its shade to settle disputes, though nobody has dated that tradition either.\n\nIt stands in a raised planter bed beside the Collegiata dei Santi Pietro e Orso, whose Romanesque cloister already draws its own visitors, in the historic borgo that carries the saint's name. You can see it clearly from the street. You cannot touch the trunk: the bed keeps everyone a few steps back, which for a tree this hollow is probably the point.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Tiglio_di_Sant'Orso",
+        "https://ilregistrodeglialberi.it/3-tiglio-nostrale-aosta-valle-daosta"
+      ],
+      "access": "Free, always visible from the street/borgo, but the tree stands in a raised, fenced planter bed and cannot be approached or touched directly.",
+      "transport": "In the historic centre of Aosta, beside the Collegiata di Sant'Orso; walkable from Piazza Chanoux, the city's main square.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/2068AostaTiglioSOrso.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Geobia, Wikimedia Commons",
+        "status": "approved",
+        "width": 800,
+        "height": 600
+      },
+      "how_to_recognise": "You can recognise it by the metal braces holding its hollow crown together, in a raised planter bed beside the church. It stands beside the Collegiata dei Santi Pietro e Orso, in Aosta's historic Borgo Sant'Orso."
+    }
+  ]
+}

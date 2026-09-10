@@ -1,0 +1,66 @@
+{
+  "city": "Passo Manghen",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "One pine in the Lagorai high country above Passo Manghen carries the name of the man who refused to cut it down. Re Leone, the Lion King, is a Swiss pine put at 700 to 800 years old, 7.10 metres round at the base, saved in the 1970s when forestry worker Leone Vaia told his supervisor it was 'un monumento' rather than timber. Reaching it takes a mountain drive and an off-trail climb; there is no bus, no path sign, and no easy version of this visit.",
+  "meta_description": "Re Leone, a 700-year-old Swiss pine in Val di Fiemme's Lagorai high country, saved from felling by the forestry worker who named it.",
+  "question_answer": "The tree mapped here is Re Leone, the Lion King, a Swiss pine in the Lagorai mountains above Passo Manghen, put at 700 to 800 years old with a girth of 7.10 metres at the base. A forestry worker named Leone Vaia, assigned to fell it in the 1970s, refused and called it a monument instead, which is where the tree's name comes from.",
+  "question_meta": "Val di Fiemme's Re Leone is a 700-year-old Swiss pine saved from the axe by the forestry worker who named it. Where it stands, and what the climb takes.",
+  "question_context": "Two Trentino sources, a travel blog (latrentina.it) with a detailed access account and a monumental-tree cataloguing site (ascuoladaglialberi.net), give matching coordinates and measurements: species Pinus cembra, girth 7.10 metres at ground level and 5.40 metres at chest height, height 20 to 23 metres depending on source, age 700 to 800 years. The Val di Fiemme territorial community's own page names Re Leone as one of the valley's three headline monumental trees, alongside a masters' oak and a set of ancient beeches, confirming its standing without adding further detail. Its name comes from Leone Vaia, a forestry worker assigned in the 1970s to fell it, who refused and told his supervisor it was un monumento, a story both sources carry independently. A smaller heir pine, itself more than a metre through, grows beside it with its roots grown into the parent's. This is not a town walk: reaching the tree means a roughly thirty-minute drive from Castello di Fiemme to Passo Manghen, then trail 322 on foot to around 2050 metres near Lago delle Buse, followed by an off-trail descent of about 150 metres to the tree at 1950 metres. No public transport reaches the pass.",
+  "hero_tree_id": "pmn_001",
+  "oldest_tree_id": "pmn_001",
+  "faq": [
+    {
+      "q": "How hard is it to reach Re Leone?",
+      "a": "This is a mountain hike, not a town walk. Plan on a roughly thirty-minute drive from Castello di Fiemme to Passo Manghen, then about an hour on foot via trail 322, including an off-trail descent to the tree. No public transport reaches the pass."
+    },
+    {
+      "q": "Where does the name Re Leone come from?",
+      "a": "From Leone Vaia, a forestry worker sent to fell the tree in the 1970s, who refused and told his supervisor it was a monument rather than timber. The name has stuck ever since."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 700 to 800 years, by the two independent Trentino sources that have measured and catalogued it."
+    },
+    {
+      "q": "Is this the only monumental tree in Val di Fiemme?",
+      "a": "No. The valley's own tourism office names two others, a masters' oak and a set of ancient beeches, and a separately reported count puts thirteen named giants across the valley. Re Leone is the one this page currently maps."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pmn_001",
+      "name": "Re Leone",
+      "species": "Swiss Pine (Pinus cembra)",
+      "age_estimate": "roughly 700-800 years",
+      "age_min": 700,
+      "age_max": 800,
+      "girth_cm": 710,
+      "height_m": 20.0,
+      "location": {
+        "address": "Pian della Fava, near Malga/Lago delle Buse, above Passo Manghen, municipality of Castello-Molina di Fiemme",
+        "latitude": 46.18295,
+        "longitude": 11.46189,
+        "neighbourhood": "Val di Fiemme / Lagorai, Passo Manghen area"
+      },
+      "story": "A forestry worker was sent up this slope in the 1970s with instructions to fell it, and Leone Vaia refused. He told his supervisor it was 'un monumento', not timber, and persuaded him to let it stand, which is how a nameless old cirmolo in the Lagorai high country became Re Leone, the Lion King, after the man who saved it rather than after any royal legend.\n\nSwiss pine grows slowly at altitude and rarely reaches size at all above 1900 metres, which makes this one's numbers worth stating plainly: 7.10 metres round at the base, 5.40 at chest height, roughly 20 metres tall, put at 700 to 800 years old by every source that has measured it. A smaller heir, itself more than a metre through, grows beside it with its roots grown into the parent's, the valley's own next generation already underway.\n\nVal di Fiemme's own tourism office names Re Leone as one of three headline monumental trees in the valley, alongside a masters' oak and a set of ancient beeches, though this one stands apart from both, deep in the Lagorai above Passo Manghen. Reaching it means a thirty-minute drive to the pass and roughly an hour on foot, off the marked trail for the last stretch. No bus goes anywhere near it. Bring boots and a map, not a timetable.",
+      "verified_sources": [
+        "https://www.latrentina.it/blog/castello-di-fiemme-re-leone-albero-monumentale",
+        "https://www.comunitavaldifiemme.tn.it/Il-Territorio/I-Comuni/Comune-di-Cavalese/Alberi-monumentali-della-Val-di-Fiemme"
+      ],
+      "access": "Free and outdoors, but not a simple walk: reachable only by driving from Castello di Fiemme to Passo Manghen (about 18.6 km / 30 min by provincial road SP31), then hiking trail 322 to roughly 2050m near Lago delle Buse, descending off-trail toward Malga Buse; the tree stands about 150m below the marked trail at 1950m altitude. No public transport reaches Passo Manghen.",
+      "transport": "No public transport. Car to Passo Manghen (from Castello di Fiemme, about 30 minutes / 18.6 km via SP31), then on foot via trail 322, roughly 1 to 1.5 hours round trip including the off-trail descent to the tree.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Il_Re_Leone_%2C_albero_monumentale_della_Val_di_Fiemme_di_600_anni_circonferenza_alla_base_7%2C10_m_-_panoramio.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Maurizio Ceol, Wikimedia Commons",
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
+      },
+      "how_to_recognise": "You can recognise it by its thick, twisted trunk and heavy limbs raised skyward, with a smaller heir pine growing beside it, roots intertwined. It stands off the trail below Passo Manghen, in the Lagorai high country."
+    }
+  ]
+}
