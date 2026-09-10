@@ -1,0 +1,128 @@
+[
+  {
+    "id": "hlm_017",
+    "name": "The Copper Beech of the Kromme Steenweg",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "age_estimate": "about 130 years, planted 1890-1900",
+    "age_min": 126,
+    "age_max": 136,
+    "location": {
+      "address": "Kromme Steenweg 4, Helmond",
+      "latitude": 51.477385,
+      "longitude": 5.648166,
+      "neighbourhood": "Centrum"
+    },
+    "verified_sources": [
+      "data/registers/netherlands-lrmb.json (LRMB record 1683268, Bruine beuk, Kromme Steenweg 4, planted_band 1890-1900, owner_category gemeente, setting plantsoen, visitable ja)",
+      "https://lokaleregelgeving.overheid.nl/CVDR70440/2 (Helmond municipal tree map/catalogue, Vaststelling bomenkaart en bomencatalogus Helmond 2009, Article I Section A: Kromme Steenweg 4 lists a kastanje, 2 platanen and a rode beuk)"
+    ],
+    "access": "Free. Stands in a public green strip (plantsoen) owned by the municipality on Kromme Steenweg, in central Helmond.",
+    "transport": "About 9 minutes' walk (roughly 0.7 km) from Helmond centre.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "story": "Nobody has ever put a tape around this tree, which is the first thing a big copper beech makes you want to do.\n\nThe purple leaf is a mutation. It turns up now and then among ordinary green beeches and gets propagated on purpose, because people liked the colour enough to keep it going. Dutch calls the result a rode beuk, a red beech, which is closer to what the leaf actually does: it opens red in spring and darkens through the summer until it reads almost black against a grey sky.\n\nThis one went into a municipal green strip on the Kromme Steenweg somewhere between 1890 and 1900. The national monumental tree register gives that decade band and does not narrow it, so neither do we. Helmond's own tree catalogue, the 2009 amendment that put the town's protected trees on a map, lists it at number 4 in the company of a horse chestnut and two planes.\n\nThat is the entire documented record. No girth, no height, no note of who chose it or why. What is on the ground is a large purple beech on a public verge, nine minutes' walk from the centre of town, still on the protected list seventeen years after that catalogue was drawn up.\n\nIf you know its measurements, or when it went in, tell us.",
+    "how_to_recognise": "You can recognise it by the leaves, dark red-purple where everything around it is green. It stands in the public green strip on the Kromme Steenweg, at number 4.",
+    "best_time": {
+      "months": [
+        5
+      ],
+      "kind": "fresh leaves",
+      "label": "May, when the new leaves open red before they darken"
+    }
+  },
+  {
+    "id": "hlm_018",
+    "name": "The Plane Tree of Weg op den Heuvel",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "about 190 years, planted 1830-1840",
+    "age_min": 186,
+    "age_max": 196,
+    "location": {
+      "address": "Weg op den Heuvel 37/39, Helmond (beside the Stadskantoor)",
+      "latitude": 51.47659,
+      "longitude": 5.657014,
+      "neighbourhood": "Stationskwartier"
+    },
+    "verified_sources": [
+      "data/registers/netherlands-lrmb.json (LRMB record 1683271, Gewone plataan, Weg op den Heuvel 37/39, planted_band 1830-1840, owner_category gemeente, setting plantsoen, visitable ja, multi-stemmed form; register history note: stood beside the home of physician Holtus on the shored bank of the Ameide, a branch of the Aa river; the Holtus house dates to about 1870 and the tree's own age is estimated from the same period)"
+    ],
+    "access": "Free. Stands in the public plantsoen along Weg op den Heuvel, next to Helmond's Stadskantoor (city hall).",
+    "transport": "About 11 minutes' walk (roughly 0.9 km) from Helmond centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "The water this plane tree was planted beside is gone. The Ameide, a branch of the river Aa, ran along here between shored banks. It has since been built over, and the tree now stands on a strip of municipal grass beside Helmond's Stadskantoor.\n\nOnly one source describes this specimen: the Dutch national register of monumental trees. It is an official one, but it is still a single voice, and its account of the tree argues with itself. The planting band it records is 1830 to 1840, which is where the age on this page comes from. Its history note ties the tree instead to the house of the physician Holtus, which stood next to it and dates from around 1870. A generation apart, and nobody has settled it.\n\nWhat the register is unambiguous about is the shape. Meerstammig, it says: multi-stemmed. This is not a single column but several trunks leaving the ground together.\n\nLondon plane is itself a hybrid, an accidental cross between the oriental and the American plane that turned out to shrug off soot, salt and hard pruning. Nineteenth century Europe planted it along everything for exactly that reason. The reward for the pedestrian is the bark, which sheds in irregular plates and leaves the trunk in patches of cream, olive and grey.\n\nThe house is still there. The river is not.",
+    "how_to_recognise": "You can recognise it by the trunk, which divides low into several stems instead of one, and by bark flaking off in pale patches. It stands on the grass strip along Weg op den Heuvel, beside the Stadskantoor."
+  },
+  {
+    "id": "hlm_015",
+    "name": "The South Oak of the Warande",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 170 years, planted 1850-1860",
+    "age_min": 166,
+    "age_max": 176,
+    "location": {
+      "address": "Stadswandelpark de Warande, near De Kluis 2, Helmond",
+      "latitude": 51.485981,
+      "longitude": 5.638506,
+      "neighbourhood": "Warande"
+    },
+    "verified_sources": [
+      "data/registers/netherlands-lrmb.json (LRMB record 1696333, Zomereik, De Kluis 2 / stadswandelpark de Warande, planted_band 1850-1860, owner_category gemeente, setting bos, visitable ja; register's own history note: 'een van de weinige exemplaren die nog over zijn na de aanleg van de Warande in het midden van de negentiende eeuw, rond 1850-1860', i.e. one of the few specimens surviving from the park's mid-19th-century layout)",
+      "https://nl.wikipedia.org/wiki/Warande_(park_in_Helmond) (the park's current form dates to 1757; 'the oldest plantings currently found date from 1834', with many significant specimens from around 1850; oak avenues throughout)",
+      "https://monumentenwerkgroephelmond.nl/warande/ (oak is the dominant species in the park, with straight lanes/avenues, many replanted 1830-1860; describes a specific oak that fell in 2018 aged about 150, grown from an acorn around 1865, confirming this is a real, documented population of veteran oaks of exactly this era in this park)"
+    ],
+    "access": "Free. Stands inside Stadswandelpark de Warande, a public city park open at all times, which also hosts the free public zoo Dierenpark de Warande.",
+    "transport": "About 11 minutes' walk (roughly 0.85 km) from Helmond centre.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "story": "The Warande is older than any tree standing in it. The park took its present shape in 1757, and the oldest plantings anyone can still point to date from 1834, which means the first eighty years of it have gone.\n\nThis oak belongs to the generation that replaced them. The national register puts it in the 1850s and calls it one of the few specimens left from the mid nineteenth century layout of the park. It gets a coordinate of its own rather than being counted into the stand around it.\n\nThat generation is thinning. In 2018 one of its contemporaries came down elsewhere in the same park, an oak grown from an acorn around 1865 and about 150 years old when it fell.\n\nOak is the dominant tree here and it was planted in straight lanes, which is what the nineteenth century did with a wood: rows you can see down, so a walker always has a view of something.\n\nOne warning the register hands over itself. This tree is marked as not visible from a path. It stands inside the stand rather than along the edge of it, so reaching it means stepping off the lane and in among the trunks. The park is free and open at all hours, and the small zoo inside it is free as well.",
+    "how_to_recognise": "You can recognise it by where it stands, in among the trees rather than along a lane. It is the southern of the Warande's two registered oaks; the other is about 470 metres north-west, deeper into the park."
+  },
+  {
+    "id": "hlm_016",
+    "name": "The North Oak of the Warande",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 170 years, planted 1850-1860",
+    "age_min": 166,
+    "age_max": 176,
+    "location": {
+      "address": "Stadswandelpark de Warande, near De Kluis 2, Helmond",
+      "latitude": 51.489297,
+      "longitude": 5.634236,
+      "neighbourhood": "Warande"
+    },
+    "verified_sources": [
+      "data/registers/netherlands-lrmb.json (LRMB record 1696332, Zomereik, De Kluis 2 / stadswandelpark de Warande, planted_band 1850-1860, owner_category gemeente, setting bos, visitable ja; same history note as hlm_015: one of the few specimens surviving the park's mid-19th-century layout)",
+      "https://nl.wikipedia.org/wiki/Warande_(park_in_Helmond) (oldest plantings from 1834, many significant specimens from around 1850, oak avenues throughout the park)",
+      "https://monumentenwerkgroephelmond.nl/warande/ (oak is the dominant species, straight lanes/avenues largely replanted 1830-1860; a documented fallen oak from the same generation, c.1865)"
+    ],
+    "access": "Free. Stands inside Stadswandelpark de Warande, a public city park open at all times, which also hosts the free public zoo Dierenpark de Warande.",
+    "transport": "About 16 minutes' walk (roughly 1.28 km) from Helmond centre.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "story": "Pedunculate means stalked, and the stalk belongs to the acorn rather than to the tree. That is the whole trick for telling this oak apart from the sessile oak it is usually confused with. Quercus robur hangs its acorns out on long stems and sits its leaves almost directly on the twig; the other one does exactly the reverse.\n\nThis is the northern of the two oaks in the Warande that carry an entry of their own in the Dutch national register, about 470 metres from the other. Both are dated to the 1850s, both are described as survivors of the mid nineteenth century replanting of the park, and both are marked in the register as standing inside the wood rather than beside a path, which is a polite way of saying you will have to go and find them.\n\nThe park is much older than either. It took its present form in 1757, and the oldest plantings still standing date from 1834. Oak took over from there and never handed the ground back: it is still the dominant species here, still arranged in the straight lanes a nineteenth century designer would have drawn.\n\nNeither oak has ever been measured. No girth, no height, no record of who put them in. If you get a tape around this one, we would like the number.",
+    "how_to_recognise": "You can recognise it by the acorns on long stalks and the leaves on almost none, the mark of a pedunculate oak. It stands inside the wood in the north of the Warande, about 470 metres from the park's other registered oak."
+  },
+  {
+    "id": "hlm_014",
+    "name": "The Nootka Cypress of the Protestant Cemetery",
+    "species": "Nootka Cypress (Cupressus nootkatensis)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Molenstraat 70a, Protestantse Begraafplaats, Helmond",
+      "latitude": 51.477947,
+      "longitude": 5.668932,
+      "neighbourhood": "Molenstraat"
+    },
+    "verified_sources": [
+      "data/registers/netherlands-lrmb.json (LRMB record 1694365, Nootkacipres, Molenstraat 70a / protestantse begraafplaats, planted_band recorded as 'Leeftijd onbekend' i.e. age unknown, owner_category gemeente, visitable ja, status 5 (a lower-confidence status flag in the register itself))",
+      "https://pghas.protestantsekerk.net/begraafplaatsen (the Protestant church's own page for this cemetery: in place at Molenstraat 70 since 1865, freely open sunrise to sunset, described as having monumentale bomen that give the grounds a distinctive green character)"
+    ],
+    "access": "Free. The cemetery is open daily from sunrise to sunset per the managing church's own site.",
+    "transport": "About 18 minutes' walk (roughly 1.44 km) from Helmond centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Botanists have moved this species between genera more than once and are not obviously finished. Older books file it as Chamaecyparis nootkatensis, newer ones as Cupressus nootkatensis, and a few as Xanthocyparis. In Dutch it is simply the nootkacipres, and nobody argues about that.\n\nWherever it is filed, it comes from a long way off. Its home range is the Pacific coast of North America, from Alaska down through British Columbia, on cold wet slopes above the sea. This one grows in a Protestant burial ground on the eastern edge of Helmond, the better part of eight thousand kilometres from there.\n\nIts age is a blank, and unusually the register says so outright. The Dutch national register normally gives at least a planting decade; for this tree it records leeftijd onbekend, age unknown, and marks the entry as less certain than most. So there is no number on this page and we are not going to invent one.\n\nWhat is dated is the ground under it. The Protestant cemetery has been at Molenstraat 70a since 1865, and the parish that runs it opens the gates from sunrise to sunset, free, every day. It is a separate burial ground from the general cemetery at number 72 a few paces along the same street, where the weeping beech and the silver maple on this page stand.\n\nIf anyone knows when this cypress was planted, that is the missing line.",
+    "how_to_recognise": "You can recognise it by the drooping habit: flat sprays of dark evergreen foliage hanging limp from the branch tips. It stands in the Protestant burial ground at Molenstraat 70a, a separate cemetery from the one at number 72."
+  }
+]

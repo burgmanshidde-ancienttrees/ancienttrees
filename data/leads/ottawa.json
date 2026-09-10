@@ -1,0 +1,30 @@
+{
+  "leads": [
+    {
+      "species": "Golden Weeping Willow (Salix x sepulcralis)",
+      "register_objectid": 144,
+      "sector": "OUL",
+      "latitude": 45.41084884158057,
+      "longitude": -75.68331241850933,
+      "reason": "Near-duplicate of ott_013 (register objectid 143), a golden weeping willow roughly 300m south along the same Queen Elizabeth Driveway pathway. This one's NCC description is a generic species blurb with no planting date or distinguishing detail ('an ideal ornamental species for areas near ponds, lakes...'), unlike ott_013's dated, specimen-specific description. Shipping both this close together, of the same species with one having nothing to say for itself, would read as padding. Worth reconsidering only if a distinguishing fact turns up for this specific tree."
+    },
+    {
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "register_objectid": 9,
+      "sector": "CORE",
+      "latitude": 45.44130906018505,
+      "longitude": -75.69279233944413,
+      "reason": "Location confirmed via reverse geocoding as the Rideau River Eastern Pathway, New Edinburgh/Rockcliffe Park border, Ottawa (genuinely in Ottawa, unlike the Jacques-Cartier Park entries below). But the NCC register description is entirely generic ('a hardy species... planted extensively in North America... able to reproduce in the wild'), naming no age, size or specific history for this individual tree, so it does not argue for itself as worth the walk. Note for whoever picks this up: Rockcliffe Park does have a well-documented 'grove of Black Locust trees' embellished with a stone circle by Carver, Hazeland and Graham as part of a 1967 Centennial Village Green project (rockcliffepark.ca/environment-and-outdoor-spaces), but that feature sits near Springfield Road and Mariposa Avenue, a different location within the historic district from this tree's coordinate on the Rideau River pathway. Do not bridge that story onto this specimen without confirming they are the same trees; it looks like they are not."
+    },
+    {
+      "species": "White Oak (Quercus alba)",
+      "register_objectid": 2,
+      "sector": "CORE",
+      "latitude": 45.43861890292773,
+      "longitude": -75.70710250194185,
+      "reason": "Register describes this as standing in Jacques-Cartier Park, which reverse geocoding confirms is in Hull, Gatineau, Quebec, not Ottawa, Ontario. Out of scope for the Ottawa city file; would need a Gatineau city file if/when one exists. Do not publish under Ottawa."
+    }
+  ],
+  "blocked": [],
+  "note": "This is a small slice of the National Capital Commission 'Remarkable Trees' register reviewed during the 2026-09-10 Ottawa deepen pass, not an exhaustive triage. 106 of the 114 candidates in data/research/ottawa-register-candidates.json (all except the 8 already published as ott_001-008) remain unresearched: most are in sectors RH, QUL and CEF_ARBORETUM (the Dominion Arboretum at the Central Experimental Farm), further from the core cluster. A future pass can pick up from that file directly; the 6 candidates verified this pass (ott_009 to ott_014) and the 3 leads above are the only ones reviewed so far."
+}

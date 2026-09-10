@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ott_009",
+    "name": "The Improvement Commission Sycamore",
+    "species": "American Sycamore (Platanus occidentalis)",
+    "age_estimate": "roughly 125 years",
+    "age_min": 120,
+    "age_max": 130,
+    "location": {
+      "address": "Queen Elizabeth Driveway, along the Rideau Canal pathway",
+      "latitude": 45.419188987458405,
+      "longitude": -75.68240242521988,
+      "neighbourhood": "Golden Triangle, Centretown"
+    },
+    "verified_sources": [
+      "data/registers/canada-capital-ncc-remarkable-trees.json (objectid 140, NCC 'A Living Legacy')",
+      "https://en.wikipedia.org/wiki/Queen_Elizabeth_Driveway"
+    ],
+    "access": "Free, on the public Rideau Canal pathway (Queen Elizabeth Driveway); the roadway itself closes to cars on weekends for pedestrians and cyclists.",
+    "transport": "About a 15 minute walk south along the canal pathway from Confederation Park, where the linden and horse chestnut cluster (ott_001-008) stands; no transit stop directly at the tree.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "The register that lists this tree files it under Northern eccentric, which is a polite way of saying it should not really be here. American sycamore is a tree of the eastern and central United States and reaches Canada only in the far south of Ontario. This one is growing beside the Rideau Canal, several hundred kilometres north of where its species gives up.\n\nIt arrived by programme. Between 1899 and 1904 the Ottawa Improvement Commission planted 14,000 trees and shrubs along what is now Queen Elizabeth Driveway, with another 11,000 waiting in the nursery, the work done by staff from the Central Experimental Farm. The National Capital Commission's remarkable trees register ties this sycamore to that campaign, which puts it at roughly 125 years old. Nobody has published a girth or an independent dating, so the age comes from the register's account of the planting rather than from the tree itself. The register also records an Indigenous name for it: Chikimeminij.\n\nSycamore is easy once you know the bark. The outer layer sheds in plates and leaves the trunk mottled cream, olive and grey, palest on the upper limbs, which is why a sycamore in winter reads almost white from the far bank.\n\nThe roadway closes to cars at weekends, so you can stand in the middle of the lane and look up without anybody minding.",
+    "how_to_recognise": "You can recognise it by the bark, shedding in plates to leave the trunk mottled cream and olive and the upper limbs nearly white. It stands on the canal pathway along Queen Elizabeth Driveway, north of the coffee-tree."
+  },
+  {
+    "id": "ott_010",
+    "name": "The Coffee-tree of Queen Elizabeth Driveway",
+    "species": "Kentucky Coffeetree (Gymnocladus dioica)",
+    "age_estimate": "roughly 125 years",
+    "age_min": 118,
+    "age_max": 130,
+    "location": {
+      "address": "Queen Elizabeth Driveway, along the Rideau Canal pathway",
+      "latitude": 45.41859879769535,
+      "longitude": -75.68108190221427,
+      "neighbourhood": "Golden Triangle, Centretown"
+    },
+    "verified_sources": [
+      "data/registers/canada-capital-ncc-remarkable-trees.json (objectid 124, NCC 'A Living Legacy')",
+      "https://en.wikipedia.org/wiki/William_Saunders_(scientist)",
+      "https://cossaroagency.ca/wp-content/uploads/2022/04/COSSARO-Kentucky-Coffee-Tree-November-2021-final.pdf"
+    ],
+    "access": "Free, on the public Rideau Canal pathway (Queen Elizabeth Driveway); the roadway itself closes to cars on weekends for pedestrians and cyclists.",
+    "transport": "About a 15-20 minute walk south along the canal pathway from Confederation Park; roughly 150 metres further along the same pathway as the sycamore (ott_009).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "The name is literal. Settlers in Kentucky roasted the seeds of this tree and drank them, which is how a member of the pea family came to be called a coffee-tree.\n\nIt has no business being this far north. Ontario's own species at risk assessment, published in 2021, lists the Kentucky coffee-tree as threatened in the province, rarely found growing wild, and known as a planted tree as far north and east as Ottawa. This is one of those planted trees. The National Capital Commission's register says William Saunders had several of them put in near Queen Elizabeth Driveway at the beginning of the twentieth century, while the driveway was still being built, amid what it calls the general enthusiasm for growing rare North American trees. Saunders ran the Dominion Experimental Farms from 1887 until around 1911, which fits the claim, though no source outside the register connects him to this particular tree.\n\nCoffee-trees are male or female, and only a female with a male in pollen range sets the thick leathery pods the species is known for. Nobody has recorded which this one is. That is a five second observation for anyone standing under it in autumn, and we would take the answer.\n\nThe leaf is the other thing to look for: doubly compound, up to about a metre long, and so late to appear that the tree spends half of spring looking dead.",
+    "how_to_recognise": "You can recognise it by the leaf, doubly compound and up to about a metre long, and by the bare stubby twigs it carries well into spring. It stands on the canal pathway about 150 metres south of the sycamore."
+  },
+  {
+    "id": "ott_011",
+    "name": "The Bur Oak of Queen Elizabeth Driveway",
+    "species": "Bur Oak (Quercus macrocarpa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Queen Elizabeth Driveway, along the Rideau Canal pathway",
+      "latitude": 45.414348750127445,
+      "longitude": -75.6833519450421,
+      "neighbourhood": "Golden Triangle, Centretown"
+    },
+    "verified_sources": [
+      "data/registers/canada-capital-ncc-remarkable-trees.json (objectid 120, NCC 'A Living Legacy')",
+      "https://www.songonline.ca/ecsong/essays/buroak.html"
+    ],
+    "access": "Free, on the public Rideau Canal pathway (Queen Elizabeth Driveway); the roadway itself closes to cars on weekends for pedestrians and cyclists.",
+    "transport": "About a 20 minute walk south along the canal pathway from Confederation Park, near where Queen Elizabeth Driveway approaches Fifth Avenue/Dow's Lake; roughly 350 metres past the coffee-tree (ott_010).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Bur oak is built to survive what kills other trees. The bark is thick and corky, the roots go deep, and the species tolerates the compacted, salted, drought-prone ground that a city road hands a tree. The National Capital Commission's register credits exactly that toughness for the size of this one, and calls it one of the most admired trees along Queen Elizabeth Driveway.\n\nWhat the register does not give is a date. The sycamore and the coffee-tree a few hundred metres back are both tied to the Ottawa Improvement Commission's planting campaign of 1899 to 1904. This oak is tied to nothing, and lending it that date would be a guess wearing a fact's clothes. Open grown bur oaks in Canada can reach around two centuries, so the honest answer is that this one is somewhere under that and nobody has said where. If you know when it went in, or you have had a tape around the trunk, tell us and we will put the number on the page.\n\nFind an acorn on the ground and you have the name. The cup is fringed with a shaggy burr and can swallow most of the nut.\n\nThe species is native to this part of the Ottawa valley, which is not true of the sycamore or the coffee-tree up the path. This is the local tree, and it is the one people stop for.",
+    "how_to_recognise": "You can recognise it by the acorn cup, fringed with a shaggy burr that wraps most of the nut, and by deeply corky bark. It stands on the canal pathway where Queen Elizabeth Driveway runs down towards Fifth Avenue."
+  },
+  {
+    "id": "ott_012",
+    "name": "The Green Island Catalpa",
+    "species": "Northern Catalpa (Catalpa speciosa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Green Island, off Sussex Drive at Rideau Falls",
+      "latitude": 45.43873929498907,
+      "longitude": -75.69286240871865,
+      "neighbourhood": "Green Island (Rideau Falls), Lowertown"
+    },
+    "verified_sources": [
+      "data/registers/canada-capital-ncc-remarkable-trees.json (objectid 1, NCC 'A Living Legacy')",
+      "https://en.wikipedia.org/wiki/Green_Island_(Rideau_River)",
+      "https://en.wikipedia.org/wiki/Minto_Bridges"
+    ],
+    "access": "Free, public park island with war memorials meant to be visited (the Ottawa Memorial, the Mackenzie-Papineau Monument, the National Artillery Monument, a 2015 John McCrae sculpture); reached on foot via the Minto Bridges footpath/bike path from Union Street, or from Sussex Drive at the north end.",
+    "transport": "About a 20 minute walk from Confederation Square via Sussex Drive/Beechwood Avenue to the Rideau Falls area, then across the Minto Bridges onto Green Island; this is a separate stop from the Queen Elizabeth Driveway walk (ott_001-011), in the opposite direction, along the Rideau River rather than the canal.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "For a couple of weeks in June this is the loudest thing on the island, hung with upright clusters of white flowers, each one frilled at the lip and spotted yellow and purple down the throat. For the rest of the year it carries beans. Northern catalpa fruits in slim pods up to half a metre long that stay on the tree all winter and rattle in the wind off the falls.\n\nThe island is Green Island, a scrap of land in the Rideau River at the waterfall, reached on foot over the Minto Bridges. The register that lists this tree dates those bridges to 1900 and names them for Lord Minto, then governor general; other accounts put the building at 1900 to 1902, and the two have never been reconciled.\n\nThe catalpa grows near the federal building that served as Ottawa's city hall from 1958, when Princess Margaret opened it, until amalgamation on the first day of 2001. The rest of the island belongs to the dead: the Ottawa Memorial, the Mackenzie-Papineau Monument, the National Artillery Monument, and a sculpture of John McCrae put up in 2015.\n\nThe tree has no date at all. The register dates the bridge and the building beside it and says nothing about the catalpa, and borrowing either number would be inventing an age. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it by the leaves, heart-shaped and as big as two hands, and by the slim bean pods hanging from the crown all winter. It stands on Green Island near the old city hall building, off Sussex Drive at the falls.",
+    "best_time": {
+      "months": [
+        6
+      ],
+      "kind": "flowers",
+      "label": "June, when the crown fills with white flowers spotted inside"
+    }
+  },
+  {
+    "id": "ott_013",
+    "name": "The Century Willow of Dow's Lake",
+    "species": "Golden Weeping Willow (Salix x sepulcralis)",
+    "age_estimate": "around a century old",
+    "age_min": 110,
+    "age_max": 130,
+    "location": {
+      "address": "Queen Elizabeth Driveway, near Dow's Lake",
+      "latitude": 45.40814903426771,
+      "longitude": -75.68199189561005,
+      "neighbourhood": "The Glebe, near Dow's Lake"
+    },
+    "verified_sources": [
+      "data/registers/canada-capital-ncc-remarkable-trees.json (objectid 143, NCC 'A Living Legacy')",
+      "https://en.wikipedia.org/wiki/Queen_Elizabeth_Driveway"
+    ],
+    "access": "Free, on the public Rideau Canal pathway (Queen Elizabeth Driveway) near Dow's Lake; the roadway itself closes to cars on weekends for pedestrians and cyclists.",
+    "transport": "About a 25 minute walk south along the canal pathway from Confederation Park, near where the driveway meets Dow's Lake; also reachable via the pathways around Dow's Lake itself.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "The weeping willow is not from Babylon. The species that carries the name, Salix babylonica, came from China. This tree is a hybrid of it with the European white willow, and the hybrid is the only reason a weeping willow can stand an Ottawa winter at all.\n\nThe National Capital Commission's register calls this one huge and says it goes back to the earliest days of the Ottawa Improvement Commission, which planted it in the early twentieth century. That is as precise as the source gets, so around a century old is as precise as this page gets. The driveway it stands on was built between 1900 and 1905 and was lined with trees and gardens from the start, which is documented independently, though no source outside the register singles out this willow.\n\nGolden weeping willow earns the first half of its name in late winter, when the leaves are gone and the hanging twigs turn a clear yellow that carries right across the water of Dow's Lake. It earns the second half from April on, when the crown comes down in curtains to the grass.\n\nNobody has measured the trunk. A willow this size is one of the few trees on the canal you can walk into rather than merely up to, which is worth doing once, preferably when nobody is watching.",
+    "how_to_recognise": "You can recognise it by the curtain of hanging twigs reaching the ground, yellow in late winter. It stands beside the canal path where Queen Elizabeth Driveway meets Dow's Lake; a second, similar willow stands about 300 metres north."
+  },
+  {
+    "id": "ott_014",
+    "name": "The Turn-of-the-Century Linden of Dow's Lake",
+    "species": "Large-leaved Lime (Tilia platyphyllos)",
+    "age_estimate": "roughly 125 years",
+    "age_min": 115,
+    "age_max": 130,
+    "location": {
+      "address": "Queen Elizabeth Driveway, near Dow's Lake",
+      "latitude": 45.40731907500817,
+      "longitude": -75.68244195136897,
+      "neighbourhood": "The Glebe, near Dow's Lake"
+    },
+    "verified_sources": [
+      "data/registers/canada-capital-ncc-remarkable-trees.json (objectid 146, NCC 'A Living Legacy')",
+      "https://en.wikipedia.org/wiki/Queen_Elizabeth_Driveway"
+    ],
+    "access": "Free, on the public Rideau Canal pathway (Queen Elizabeth Driveway) near Dow's Lake; the roadway itself closes to cars on weekends for pedestrians and cyclists.",
+    "transport": "About a 25 minute walk south along the canal pathway from Confederation Park, close to the golden weeping willow (ott_013) near Dow's Lake.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "The register's entry for this tree is mostly about medicine. Large-leaved lime supplies Western pharmacology, homeopathy and herbal medicine with its flowers and its sapwood, mother tinctures included, and that is what the National Capital Commission chose to record about this specimen instead of its size.\n\nYou can see why once the flowers arrive. They open in late June, pale yellow-white, hanging in small clusters from a papery green bract that afterwards works as a wing and carries the seed away from the tree. They smell of honey from several metres off, and for a fortnight the crown is loud with bees. Dried, the same flowers are the tilleul sold in every French supermarket.\n\nThe register puts the planting at the turn of the twentieth century, along a driveway independently documented as built between 1900 and 1905, which fits, though that source does not name this tree.\n\nOne detail for anyone who has already walked Ottawa's other limes. This is the straight species, Tilia platyphyllos, not the cut-leaved cultivar of the pair standing in Major's Hill Park. Same genus, bigger and softer leaf, hairy underneath, and the earliest of the limes to flower, which means it goes over while the others are still in bud.\n\nNobody has put a tape around this one either. The path is free and the road beside it belongs to walkers at weekends.",
+    "how_to_recognise": "You can recognise it by the leaf, heart-shaped, soft and hairy on the underside, and by the honey smell of the flowers in late June. It stands on the canal path near Dow's Lake, close to the big weeping willow.",
+    "best_time": {
+      "months": [
+        6
+      ],
+      "kind": "flowers",
+      "label": "late June, when the flowers open and the crown fills with bees"
+    }
+  }
+]

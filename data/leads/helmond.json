@@ -1,0 +1,37 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "register_id": 1694364,
+      "name": "Bruine beuk (Copper Beech group)",
+      "place": "Helmond, Molenstraat 70a, protestantse begraafplaats",
+      "latitude": 51.477496,
+      "longitude": 5.668688,
+      "reason": "Register entry itself covers a group of six trees planted at the cemetery entrance ('vier dikkere bomen aan de rechterkant en twee aan de linkerkant', four thicker on the right, two on the left), not one identifiable specimen. No source found distinguishes one individual tree from the group, so it fails the one-collectible-point rule (an avenue/group planting, not a single point to stand at). Would need a source naming one specific standout tree within the group to become publishable."
+    },
+    {
+      "register_id": 1694368,
+      "name": "Zomereik (Pedunculate Oak group)",
+      "place": "Helmond, Molenstraat 70a, protestantse begraafplaats",
+      "latitude": 51.478007,
+      "longitude": 5.669409,
+      "reason": "Register entry covers ten oaks planted together at the cemetery's 1865 opening (n_trees: 10), effectively a row/avenue rather than a single collectible point. No source distinguishes an individual specimen. Same fix as the Bruine beuk group above would apply if a future source names one standout tree."
+    },
+    {
+      "register_id": 1683269,
+      "name": "Witte paardenkastanje (White Horse Chestnut)",
+      "place": "Helmond, Kromme Steenweg 4, tuin",
+      "latitude": 51.477402,
+      "longitude": 5.648663,
+      "reason": "owner_category particulier (private) and register's own visitable/visible fields are both 'onbekend' (unknown). Confirmed present in Helmond's 2009 municipal tree catalogue (CVDR70440/2) alongside the Copper Beech at the same address, but that catalogue lists it under the same private-garden setting. No evidence found that this specific chestnut is visible or reachable from public ground. Leave blocked under hard rule 10 unless a source establishes public visibility (e.g. it stands close enough to the street to be seen, per the Kromme Steenweg entries' shared address)."
+    },
+    {
+      "register_id": 1683267,
+      "name": "Gewone plataan (London Plane group, 4 trees)",
+      "place": "Helmond, Kromme Steenweg 4, tuin",
+      "latitude": 51.477421,
+      "longitude": 5.648288,
+      "reason": "Not in this pass's shortlist (a different plane tree at Weg op den Heuvel 37/39 was researched instead and shipped as hlm_018). owner_category 'overig' (other/institutional), setting tuin (garden), n_trees 4: a group in a garden setting, not a single collectible point, and access is unconfirmed. Recorded here only because it surfaced while cross-checking the municipal tree catalogue; not independently researched beyond that."
+    }
+  ]
+}

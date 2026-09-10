@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "intro": "Oahu's most remarkable trees cluster in eleven places. Foster Botanical Garden holds five behind one modest entrance fee: a baobab, a Bodhi tree of the Bodh Gaya lineage, a kapok older than the garden, a cannonball tree and a quipo. Moanalua Gardens keeps the Hitachi Tree, famous from Japanese television, under its own ticket. Everything else is free: banyans at Thomas Square, the Honolulu Zoo gate, the Moana hotel's courtyard and the International Market Place, a monkeypod in Nuuanu Valley Park, three trees on the UH Manoa campus, and a baobab and a pink bombax at Queen's Medical Center.",
   "meta_description": "Oahu's most remarkable trees: a baobab and a Bodhi tree in one Honolulu garden, the Hitachi Tree at Moanalua, a palace banyan and free hospital giants.",
-  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 18.",
+  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 19.",
   "question_answer": "Oahu's oldest documented tree is the Hillebrand Kapok in Foster Botanical Garden, planted around 1851 by the garden's founder, William Hillebrand, on what was then his own homestead. That makes it roughly 175 years old, older than the garden itself.",
-  "question_context": "Foster Botanical Garden holds five of the eighteen trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before it became a public garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, the two sources disagreeing. Two more carry documented dates: a Bodhi tree of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s, thirteen metres round. Thirteen more trees stand elsewhere, nearly all free: banyans at Thomas Square, the Honolulu Zoo gate, Iolani Palace and the Moana hotel's beachfront courtyard, where one went in during 1904; the banyan the International Market Place rebuilt its steel canopy around rather than fell; the Geometry Tree of Ala Moana Beach Park; a monkeypod in Nuuanu Valley Park; a baobab, a cannonball tree and a tree that smells of dung once a year at UH Manoa; and a baobab and a pink bombax at Queen's Medical Center. The Hitachi Tree, famous across Japan as a company emblem, is the one paid exception, at Moanalua Gardens.",
+  "question_context": "Foster Botanical Garden holds five of the nineteen trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before it became a public garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, the two sources disagreeing. Two more carry documented dates: a Bodhi tree of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s, thirteen metres round. Fourteen more trees stand elsewhere, nearly all free: banyans at Thomas Square, the Honolulu Zoo gate, Iolani Palace, the Moana hotel's beachfront courtyard and the Kuhio Beach hula mound; the banyan the International Market Place rebuilt its steel canopy around rather than fell; the Geometry Tree of Ala Moana Beach Park; a monkeypod in Nuuanu Valley Park; a baobab, a cannonball tree and a tree that smells of dung once a year at UH Manoa; and a baobab and a pink bombax at Queen's Medical Center. The Hitachi Tree, famous across Japan as a company emblem, is the one paid exception, at Moanalua Gardens.",
   "faq": [
     {
       "q": "What is the oldest tree in Oahu?",
@@ -579,6 +579,38 @@
       "curation_status": "flagged",
       "story": "Once a year part of the University of Hawaii's Manoa campus starts to smell like a stable, and it takes people a while to work out why. The source is this one. Sterculia foetida flowers once a year, the flowers stink for about three weeks, and the Latin means foul-smelling; the campus calls it the skunk tree. A library staffer told the student paper that on a hot, humid day the smell settles into the open space and sits there. Richard Criley, emeritus professor of tropical plant and soil sciences, was kinder: this is one of the sort of tree that calls attention to itself.\n\nWhen to catch it is not settled. The Ka Leo O Hawaii feature that put all this on the record in 2019 has it blooming around that May, while other accounts give a January to March window, so pick your month at your own risk. Nobody has dated the tree either. The city register gives a trunk 2.9 metres round on a tree only about 7.5 metres tall, condition good, and no age at all.\n\nNor is it perfectly clear which tree. The register puts its entry near George Hall. The same student feature describes two skunk trees on campus, one by Sinclair Library and one beside the Architecture Building, and names neither as George Hall. All of those stand a few hundred metres apart, so the pin sits on George Hall and says approximate. In flower, your nose will settle it.",
       "how_to_recognise": "You can recognise it in flower by the smell, and otherwise by a trunk 2.9 metres round on a tree only about 7.5 metres tall. It stands in open landscaping near George Hall; a second skunk tree grows elsewhere on campus."
+    },
+    {
+      "id": "hnl_019",
+      "name": "The Kuhio Beach Hula Mound Banyan",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "",
+      "girth_cm": 4053.8,
+      "location": {
+        "address": "Kuhio Beach Park, beside the Hula Mound and the Duke Kahanamoku Statue, Kalakaua Avenue, Waikiki, Honolulu, HI 96815",
+        "latitude": 21.2749708,
+        "longitude": -157.8248207,
+        "neighbourhood": "Waikiki (Kuhio Beach Park)"
+      },
+      "verified_sources": [
+        "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf (City & County of Honolulu, Exceptional Trees register, Act 105 of 1975, CC0; register id 391, Ficus benghalensis, Kuhio Beach Park, girth 4053.8 cm, height 70 ft, vitality Good)",
+        "https://www.openstreetmap.org/node/5216796590 (OSM node individually tagged genus=Ficus, denotation=natural_monument, last checked by a mapper 2026-03-29, at 21.2749708,-157.8248207, ~60m from the Duke Kahanamoku Statue beside the Hula Mound)",
+        "https://thishawaiilife.com/kuhio-beach-park/ (describes the 'giant banyan tree' at Kuhio Beach as the site of free Saturday-evening hula and music performances)"
+      ],
+      "access": "Free, always open. Kuhio Beach Park is a public city beach park in central Waikiki with no gate and no entry fee.",
+      "transport": "In central Waikiki, an easy walk (under 15 minutes) from the Moana Banyan and the International Market Place Banyan already on this page; TheBus routes 8, 19, 20 and 23 and the Waikiki Trolley stop on Kalakaua Ave nearby.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register puts forty metres of circumference around this tree, and not one centimetre of it is a trunk.\n\nBanyans grow sideways and downward. The limbs throw out aerial roots, the roots reach the sand and thicken into pillars, and the pillars fuse into a mass that a tape measure has to treat as one object because there is no honest way to treat it as several. Honolulu's exceptional tree register, set up under a 1975 state law that let the counties protect individual trees by name, records this one at 4,053.8 centimetres around and about 21 metres tall, vitality good. That circumference is the whole fused base rather than a stem, and it cannot be turned into an age: growth rate dating assumes a single trunk, and nothing about a banyan is single.\n\nSo nobody knows how old it is. No planting date has surfaced anywhere, which is a strange gap for a tree with a stage underneath it.\n\nThe Hula Mound sits directly beneath the crown, on Kuhio Beach, and on Saturday evenings the free hula and music shows run there with the banyan as the roof. The Duke Kahanamoku statue stands about sixty metres up the sand. No gate, no ticket, no closing time.\n\nIf anyone has a date for it, we will take it.",
+      "how_to_recognise": "You can recognise it by the aerial roots dropping from the limbs and thickening into extra trunks, forty metres round the fused base. It stands over the Kuhio Beach Hula Mound, sixty metres from the Duke Kahanamoku statue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "age_min": null,
+      "age_max": null
     }
   ]
 }
