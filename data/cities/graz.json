@@ -125,10 +125,12 @@
       "access": "Free, public park, open on all sides",
       "transport": "Short walk from Graz Hauptbahnhof (about 1km)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Platane_Volksgarten_Graz_1290_%284%29.JPG",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "Gerdsch, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1670,
+        "height": 2506
       },
       "curation_status": "flagged",
       "notes": "Register (id 119) and Wikipedia geocode within 3m. Register and Wikipedia use slightly different Latin binomials for the same London Plane hybrid (Platanus x hispanica / Platanus x acerifolia); recorded here as Platanus x acerifolia to match this project's existing canonical name for the species (hard rule 9). A dated Commons photo filed under Naturdenkmal 1290 independently corroborates the tree stands in the Volksgarten itself. No age or girth found. Part of a three-tree Volksgarten cluster with grz_002 and grz_004.",
@@ -222,10 +224,12 @@
       "access": "Free, on Schillerplatz, a public city square, open at all times",
       "transport": "Tram or bus to the Schillerplatz stop, directly on the square",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/2014-05-02_Platane_Schillerplatz_Graz_%282%29.JPG",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "Gerdsch, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1670,
+        "height": 2506
       },
       "curation_status": "flagged",
       "notes": "Register (id 89) and Wikipedia geocode within 2m. A dated 2014 Commons photo, filed under the Naturdenkmal 1138 category, independently shows the tree standing at that date. No age or girth found in any source checked.",
@@ -400,10 +404,12 @@
       "access": "Free, on publicly owned ground per the city register (owner: oeffentlich/public)",
       "transport": "Walkable from Graz city centre along Elisabethstrasse; tram/bus lines serve the street",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Platane_Elisabethstra%C3%9Fe_Graz_1000_%282%29.JPG",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "Gerdsch, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1670,
+        "height": 2506
       },
       "curation_status": "flagged",
       "notes": "Register (id 27) and Wikipedia's independent Naturdenkmal list agree on coordinates within 4.5m. A dated Commons photo (Platane Elisabethstrasse 48.JPG, taken 14 May 2014, GPS-tagged at the exact register coordinate) independently shows the tree alive at that date; no more recent sighting found. Register lists species as Platanus x hispanica; recorded here as Platanus x acerifolia to match this project's existing canonical name for the species (hard rule 9). Reverse-geocoding the coordinate (Nominatim) returns a bridge feature (man_made=bridge) on Elisabethstrasse at this exact point, independent corroboration of a streamside public setting rather than a claim joining separate sources. No age or girth found.",
