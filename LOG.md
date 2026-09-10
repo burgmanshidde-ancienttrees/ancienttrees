@@ -11,6 +11,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation) - Two more verify passes merged, 20 more cities' recognition-line gap closed, and git push stopped working
+
+**FOR HIDDE: git push has been failing since partway through this run, `remote: Invalid username or token. Password authentication is not supported for Git operations.`** Fetch and rebase still work fine, only push fails, and it has failed on every retry for a long stretch (dozens of attempts across roughly the second half of this run). This is the installation token embedded in `git remote -v`'s URL, not anything in this repo's config, so it is not something a run can fix from inside the checkout. Nothing is lost: every commit below is sitting local in the shared runner checkout, 27 of them as of this entry, and they will reach GitHub the moment push works again, whether that is the harness refreshing the token on its own or something you need to poke. If you are reading this in LOG.md, either it fixed itself and a later run pushed everything, or it is still stuck and someone should check the GitHub App installation for this repo.
+
+Continuing straight on from the entry below in the same run. Claimed and dispatched two more register-backed verify passes, same pattern as Helmond and Ottawa:
+
+**Tilburg 16->20** (now exactly at target): a documented 1898 planting (Weeping Silver Lime), a flagged-approximate Flowering Ash, a deliberately young Pontic Oak kept for its dendrological rarity rather than its age, and the twin Stadhuisplein planes, folded per the register's own twin entry, carrying an honest open question about whether both survived a 2019-2021 renovation a council study once called risky for one of them. The verify pass correctly skipped the famous Heuvel lime (already known felled in 1994, per an existing CURATION.md finding) and a three-tree Leijpark cluster already published, rather than re-researching either.
+
+**Eindhoven 11->16**: a catalpa and cedar near the Van Abbemuseum and on Pastoor Sickingstraat, two trees behind the Stadspaviljoen (honey locust, sweet chestnut), and a plane at Marienhage. All five carry a genuine, stated-not-resolved conflict between the LRMB national register and a second independent source found this pass, Eindhoven's own open-data municipal tree dataset, which disagreed with the register's planting band on all five and, on the cedar, disagreed on the species label too (Atlas cedar in one field, Cedrus libani in the species code of the same record). Both write passes were small (4 and 5 trees, well under the usual 15-20) but each completed real, waiting work, so ran anyway rather than sitting idle for a bigger batch that had nothing else queued.
+
+Both merges went through the same discipline as the first pair: `preflight.py` (0 problems both times, after fixing five more stale count-promise FAILs the merges triggered in meta_description/question_meta/FAQ), `tree_index.py`, `npm run build` (clean both times), commit, claim released.
+
+Kept working the recognition-line backlog in between and while both passes ran: Bucaco (13), Warsaw (12), Haarlemmermeer (8, a full city closed from zero), Sittard-Geleen (7, full city), Leipzig (7, full city), Girona (7, full city), Freiburg (7, full city), Aarhus (7, full city), Segovia (6, full city), Ronda (6, full city), Pamplona (6, full city), Frankfurt (6, full city), Bratislava (6), Edinburgh (6), Setubal (7), Rotterdam (7), Perugia (7), Nice (7), Luxembourg City (7) and Hobart and Heerlen (7 each, Heerlen a near-full city). That is 20 more cities and roughly 145 more lines on top of the 23 cities logged below, all through the same preflight-then-commit discipline, all logged to `data/agent-costs.json` at tokens=0 with a note.
+
+The recognition-line backlog was 960 trees when this run started and stands well under 500 now. Cities still open at meaningful size: Portland, Nara, Haarlem, Kagoshima, Bordeaux, Poznan, Seoul, Salzburg, Miyazaki, Menorca and others `python3 scripts/_tmp_recognition_gap.py` (a scratch script, not committed) will list.
+
 ## 2026-09-10 - Two verify passes merged (12 new trees), 23 cities' recognition-line gap closed
 
 7-day visits line from `visitors.py`: 1,194 visits, 1,508 views, trending down
