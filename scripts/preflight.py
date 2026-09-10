@@ -1825,6 +1825,56 @@ def check_city_indent():
     return out
 
 
+def check_register_says_the_tree_is_gone():
+    """No published tree may cite a register row the register itself calls dead.
+
+    Written 2026-09-10. Utrecht published seven trees the Landelijk Register
+    Monumentale Bomen records as felled. The row carries a `status` field whose
+    own coded domain reads 3 Monumentaal, 5 Dood/geveld, and the import read
+    every other column and not that one: species, girth, owner, visitable, all
+    of it, while the field that says whether the tree still exists went past
+    unread. The Bomenstichting's inspectors had written the rest down plainly,
+    "alleen nog een behoorlijke stamvoet", "al geveld tussen juli 2014 en
+    augustus 2015", and two were recorded dead as early as 1985, so we sent
+    people to two stumps for a decade.
+
+    A FAIL, not a note, because it is hard rule territory (we doen niet aan
+    dode bomen) and because the register holds 4,472 status-5 rows against
+    10,637 live ones: roughly a third of any Dutch city built from it is a
+    felled tree waiting to be published. The check costs one pass over the
+    entries and needs no network. Removing it needs Hidde.
+    """
+    reg = os.path.join("data", "registers", "netherlands-lrmb.json")
+    if not os.path.exists(reg):
+        return []
+    with open(reg, encoding="utf-8") as fh:
+        entries = json.load(fh).get("entries", [])
+    # 3 Monumentaal is the only status that means a living registered tree.
+    # 1 Aanmelding and 2 Potentieel monumentaal are pending rather than gone,
+    # so they are left alone; this check is about death, not about paperwork.
+    dead = {str(e["nr"]): e for e in entries if e.get("status") == 5}
+    if not dead:
+        return []
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+        for t in doc.get("trees", []):
+            for src in t.get("verified_sources") or []:
+                m = re.search(r"entry nr (\d+)", str(src))
+                if not m or m.group(1) not in dead:
+                    continue
+                out.append(
+                    "%s %s (%s) cites LRMB entry nr %s, which the register "
+                    "itself carries as status 5, Dood/geveld. Check the "
+                    "inspection layer, and if it is gone move it to "
+                    "data/leads/ with the reason and add its slug to "
+                    "REMOVED_TREE_SLUGS."
+                    % (t["id"], t.get("name", "?"), doc.get("city", "?"), m.group(1)))
+                break
+    return out
+
+
 def check_a_by_licence_names_its_author():
     """A CC BY or BY-SA photograph must name the photographer on the page.
 
@@ -1881,7 +1931,8 @@ def main():
                 + check_a_tree_says_why_to_go()
                 + check_a_tree_can_be_told_apart()
                 + check_story_length()
-                + check_one_common_name_per_species())
+                + check_one_common_name_per_species()
+                + check_register_says_the_tree_is_gone())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

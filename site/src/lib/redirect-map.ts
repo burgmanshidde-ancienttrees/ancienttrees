@@ -154,7 +154,16 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // "onvindbaar" (2015). Two were recorded dead as early as 1985. Only Utrecht
 // was affected: of 38 published trees citing an LRMB number, these were the
 // only rows that were not status 3.
+// utrecht utr_035/036/037 (2026-09-10): the same three felled register rows
+// as above, re-imported by a night run within hours of being removed, under
+// new ids and their Dutch register names. Nothing read `status`, so the
+// register handed them straight back. That is what made this a build check
+// rather than a cleanup: check_register_says_the_tree_is_gone() in
+// scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["utrecht", "witte-paardenkastanje-white-horse-chestnut"],
+  ["utrecht", "zilveresdoorn-silver-maple-pair"],
+  ["utrecht", "gewone-haagbeuk-common-hornbeam"],
   ["utrecht", "caucasian-wingnut-of-wilhelminapark"],
   ["utrecht", "elm-of-the-wilhelminapark-west-gate"],
   ["utrecht", "pagoda-tree-of-lepelenburg"],
