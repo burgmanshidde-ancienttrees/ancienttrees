@@ -7012,6 +7012,24 @@
     "note": "4 stories + recognition lines, Tilburg deepen to exactly target 20; 2 best_time set, 1 why_go; species name aligned to site canon for Fraxinus ornus (Flowering Ash); not yet merged into data/cities",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "setubal",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, tokens not tracked; recognition-line pass, 7 how_to_recognise lines onto live Setubal trees, closing that city's gap to zero; no new trees, restatement only",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "eindhoven",
+    "kind": "verify",
+    "tokens": 120000,
+    "trees": 5,
+    "note": "Van Abbemuseum catalpa, Pastoor Sickingstraat cedar, Stadspaviljoen honey locust + sweet chestnut, Marienhage plane; each cross-checked against a genuinely independent second source, the Gemeente Eindhoven open-data bomen dataset, which disagreed with the LRMB planting band on all five (recorded as honest conflicts, not resolved); 3 candidates left as leads (mulberries, uncertain oak); delivered to data/research/eindhoven-verified.json (ein_012-016), not yet written to story or merged; tokens is this session's estimate, agent could not report its own usage",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
