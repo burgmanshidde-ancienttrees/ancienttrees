@@ -64,7 +64,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is genuinely disputed between two credible sources: Berlin forestry authorities (800-900 years, per visitBerlin.de and multiple secondary sources) versus the German Dendrological Society's 2021 National Heritage Tree assessment (500-600 years, per de.wikipedia). Presented as a range with the disagreement named in the story per P7, rather than picking one figure. Coordinates from the German Wikipedia infobox.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the gnarled, hollow trunk close to six metres round, on a tree only 15 to 16 metres tall. It stands in the open Tegel Forest at An der Malche, outside the Schlosspark where the thicker Humboldt Oak grows."
     },
     {
       "id": "ber_002",
@@ -104,7 +105,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal since 1939, registration 12-25/B. Girth (7.80 m) and age range (400-500 years) confirmed by two independent sources. Coordinates from a GPS-tagged tree registry source, used for cross-check.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the trunk, 7.80 metres round, the widest in Berlin, under a crown spanning 18 metres. It stands inside the grounds of Schloss Tegel, past the donation gate, a few hundred metres from Dicke Marie."
     },
     {
       "id": "ber_003",
@@ -144,7 +146,8 @@
       },
       "curation_status": "flagged",
       "notes": "Two independent measurements disagree slightly (6.48 m/2018 survey vs. 6.70 m in the more commonly cited figure; 350 vs. 400 years), presented as a range rather than picking one. Coordinates from a GPS-tagged source, cross-checked against the forest management site's own description of the location. Photo found and approved 2026-07-28: a Wiki Loves Earth 2024 upload explicitly titled \"Naturdenkmal Stiel-Eiche Forst Grunewald Jagen 100\", its own embedded geolocation (52.451547, 13.191778) landing within about 45m of this entry's own stored coordinate, essentially the same tree. Viewed directly: a large oak with a visibly damaged, hollowed lower trunk beside a small building's roofline, consistent with the DLRG lifeguard station this entry's story describes standing near.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the weathered trunk, around 6.70 metres round, and the thinned upper crown left by lightning. It stands at the Große Steinlanke inlet on the Havel, signed from the Großes Fenster clearing."
     },
     {
       "id": "ber_004",
@@ -183,7 +186,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age (~200 years), girth (~5 m) and height (>15 m) confirmed by two independent sources reporting matching figures. Coordinates converted from a degrees/minutes tree-registry reading of this specific specimen.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the conifer that drops all its needles each winter, on a trunk five metres round. It stands in the looser English section of Schlosspark Charlottenburg, about a hundred metres from the carp pond elm."
     },
     {
       "id": "ber_005",
@@ -216,7 +220,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate. A second independent source agrees within 15m: a geotagged Wikimedia Commons photo of this exact tree (file title names it directly), also the photo used below.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the trunk, 6.35 metres round under a 25 metre crown, growing with its roots straight into the Spree bank. It stands near the Rosengarten in Treptower Park, a short walk from the boat landing."
     },
     {
       "id": "ber_006",
@@ -257,7 +262,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Replacement for the former ber_006, 'The Bellevue Oak', pulled 2026-07-29 after independent confirmation the original tree is dead: berliner-woche.de's own 2015 headline read 'Die alte Stieleiche ist tot' (the old oak is dead), and ostdeutsches-baumarchiv.de states it was fully dead by 2018 ('ein schneller Tod'). The prior entry's 'declining' framing undersold this; per CLAUDE.md's living-tree rule a dead tree is never a collectible entry. Id reused so the old URL redirects rather than 404s (see RENAMED_TREE_SLUGS in scripts/build_site.py). New tree researched from scratch: age is a floor ('at least 300 years' per Wikipedia, citing Vieth 2004) presented as a range rather than a false precise figure; confirmed still standing and actively protected via alles-mahlsdorf.de (2021), which reports it explicitly retained Naturdenkmal status in that year's register update while two other Mahlsdorf trees were delisted. Photo personally viewed and confirmed: a dramatically leaning, moss-covered, clearly living trunk in full leaf beside the church wall, dated 29 June 2019.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the squat, hollowed crown barely topping the church roof and by the steel cables bracing its limbs. It stands on public ground in front of the old parish church on Hönower Straße, behind a low fence."
     },
     {
       "id": "ber_007",
@@ -290,7 +296,8 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal since 2 March 1993 for regional historical significance, with additional protection for distinctive character added 20 May 2021. Common name standardized to 'London Plane' per project convention for Platanus x acerifolia/x hispanica. Coordinates from the German Wikipedia infobox.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by the branches grown together into single fused limbs, on a trunk 4.65 metres round and 25 metres tall. It stands inside the Tierpark, the oldest tree on the old Friedrichsfelde palace grounds."
     },
     {
       "id": "ber_008",
@@ -330,7 +337,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age calculated from the 1883 replacement planting, not the 1879 original, since the two are different physical trees per both sources. Coordinates from the German Wikipedia infobox.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the plaque at its foot marking 125 years since the first Kaisereiche was planted. It stands alone on the street corner where Rheinstraße meets Moselstraße, at the bus stop that carries its name."
     },
     {
       "id": "ber_009",
@@ -370,7 +378,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). Location upgraded to confirmed: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (ref:schlossgutshofbritz=7), the same reference scheme used on neighbouring catalogued trees in the same park, about 120m from the previous palace-address estimate, corroborated independently by Wikidata's coordinates for the same tree's Naturdenkmal designation (ND-8-2/B), about 110m away. Photo is from a dedicated Commons category for this exact tree; viewed directly, shows a tall mature tree with characteristic ginkgo fan-shaped leaves and a monument information sign on site. Approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the uniform gold it turns in late October, every leaf at once. It stands in the free Gutspark behind Schloss Britz, over three metres round and close to 20 metres, the largest ginkgo in Berlin."
     },
     {
       "id": "ber_010",
@@ -402,7 +411,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal 1-41/B. Planting year (1891) confirmed by the district's own Naturdenkmale page; species arrival in Europe (1853 seed import) is well-established botanical history, cited independently. Coordinates from the Wikipedia natural monuments list entry for this specific tree.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the bulk of it, the heaviest conifer in the Tiergarten and among the tallest trees in Berlin. It stands in the Englischer Garten section near Altonaer Straße, a short walk from Schloss Bellevue."
     },
     {
       "id": "ber_011",
@@ -504,7 +514,8 @@
         "status": "approved",
         "width": 4080,
         "height": 3072
-      }
+      },
+      "how_to_recognise": "You can recognise it by the wide crown branching low over the path. It stands north of the Wasservogelteich, the waterfowl pond, about a kilometre deeper into Pfaueninsel than the island's other two registered oaks."
     },
     {
       "id": "ber_014",
@@ -533,7 +544,8 @@
       },
       "curation_status": "flagged",
       "notes": "Berlin Naturdenkmal register_id 6-71/B, designated 1993-03-02, reason given as 'Schoenheit, landeskundliche Gruende' (beauty, regional-historical significance), not age or rarity, so no age is claimed. Only one source found: the register (and the underlying berlin.de ordinance PDF, which is the same government designation read twice, not a second independent source). Two verify passes searched baumkunde.de and monumentaltrees.com (403-blocked) for a tree-specific second source; none found. Commons geosearch within 250m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed. Location finding worth keeping: the register address (Pfaueninselchaussee 100) is confirmed via ADAC Maps and pfaueninsel.de as the mainland ferry-dock side, not the island, so this tree is free to see without a ferry ticket.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the one plane among Pfaueninsel's registered trees, and the only one on the mainland side of the water. It stands beside the Wirtshaus zur Pfaueninsel at Pfaueninselchaussee 100, by the ferry dock."
     },
     {
       "id": "ber_015",
@@ -562,7 +574,8 @@
       },
       "curation_status": "flagged",
       "notes": "Berlin Naturdenkmal register_id 6-108/B, designated 1993-03-02, reason 'Seltenheit' (rarity) for the cut-leaf variety specifically ('Geschlitzblaettrige Trauben-Eiche' in the ordinance text). Distinctness confirmed against the already-published ber_011 (45m away, register 6-102/B): baumkunde.de's entry for ber_011's exact coordinates describes an ordinary crown with no cut-leaf note, while the ordinance separately and specifically designates 6-108/B for its dissected foliage at a distinct coordinate, so these are two real trees, not one register duplicate. Only one source found (the register/ordinance, one government designation read two ways, not two independent sources); two verify passes searched baumkunde.de, ostdeutsches-baumarchiv.de and monumentaltrees.com (403-blocked) without finding a tree-specific second source. Commons geosearch within 100m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the deeply cut, almost fern-like leaves, unlike the plain oval leaf of every other oak on the island. It stands forty five metres from the Great Oak, roughly 150 metres northeast of the Schloss."
     },
     {
       "id": "ber_016",
@@ -591,7 +604,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the single trunk, 6.43 metres round and 22 metres tall, the sixth thickest tree recorded in Berlin. It stands on the north shore of the Lietzensee, about 170 metres along the path from the wingnut."
     },
     {
       "id": "ber_017",
@@ -628,7 +642,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk splitting into several stems close to the ground, so it reads as a small grove on one root plate. It stands in the northeast corner of Lietzenseepark, 170 metres from the single-trunked plane."
     },
     {
       "id": "ber_018",
@@ -657,7 +672,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 4.88 metres round and 21.5 metres tall, on an elm where most of Europe's big elms are gone. It stands at the southeastern corner of the carp pond behind Charlottenburg Palace."
     },
     {
       "id": "ber_019",
@@ -720,7 +736,8 @@
       },
       "curation_status": "flagged",
       "notes": "Register (4-6/B, designated 1993-03-02) gives species as Quercus petraea and the same coordinates as de.wikipedia's district Naturdenkmal list, which is not independent of the register (same ordinance) but corroborates the pin. Age genuinely disputed between two independent sources: de.wikipedia's Olympiastadion article implies continuity from a c.1820s original ('etwa 200 Jahre alt'), golocal.de says the 1914-named original was felled with the 1913 Deutsches Stadion and a replacement planted in 1936 (~90 years old); both recorded rather than picking a winner. A Commons photo filename ('Westend Olympiastation Stieleiche.jpg') suggests possible confusion with Quercus robur (Stieleiche); not resolved this pass, register's Quercus petraea kept as the recorded species. monumentaltrees.com 403'd throughout, no girth recorded.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by being the only tree on the whole Olympiastadion site, 810 metres by 320 and otherwise bare. It stands behind the Preussenturm at the Osttor, visible from outside the fence."
     }
   ]
 }
