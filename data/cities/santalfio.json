@@ -59,7 +59,9 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "best_time": {
-        "months": [10],
+        "months": [
+          10
+        ],
         "kind": "fruit",
         "label": "October, when the spiny burrs split and the chestnuts come down"
       }
@@ -87,15 +89,19 @@
       "access": "Stands on private land, but directly at the edge of the path up from the Hundred-Horse Chestnut, described by the source as clearly visible without entering the property. Free, no ticket.",
       "transport": "Same trip as the Hundred-Horse Chestnut, about 500m further along the same path. Roughly an hour by car from Taormina; no practical public transport.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Castagno_Sant%27Agata.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "AusTitz, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3542,
+        "height": 1842
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
       "best_time": {
-        "months": [10],
+        "months": [
+          10
+        ],
         "kind": "fruit",
         "label": "October, when the chestnuts come down"
       }
