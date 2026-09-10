@@ -57,7 +57,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age given as a range (300-346 years) because sources genuinely disagree, from NYC Parks' cautious 'more than 300 years' to a commonly cited 346. Pin confirmed 2026-07-27: OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Hangman's Elm\" (species Ulmus procera, planted 1679, matching this entry's high-end age estimate of 346 years almost exactly), a few metres from the existing estimate.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as one of the oldest trees on Manhattan, standing at the northwest corner of the park. It stands at Washington Square Park."
     },
     {
       "id": "nyc_002",
@@ -128,7 +129,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-27 (about 70m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Camperdown Elm\" (species Ulmus glabra 'Camperdownii', planted 1872, matching this entry's own planting year exactly), replacing the previous Boathouse-area estimate. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e0/...) 404'd, caught by a site-wide hash-path check against Commons' API; the real current path is 2/20. Fetched and viewed directly to confirm it's still the same weeping, umbrella-canopied elm before swapping.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its low, twisted, weeping canopy, propped and cabled, spreading wide enough that you duck to walk beneath it. It stands near the Boathouse in Prospect Park, Brooklyn."
     },
     {
       "id": "nyc_004",
@@ -167,7 +169,8 @@
         ],
         "label": "October, when its leaves turn a mix of yellow, orange and purple, sometimes all on the same branch"
       },
-      "verify_notes": "Green-Wood's own great-trees page has gone 404 since it was cited; repointed to the Internet Archive snapshot of the same page rather than dropping the citation. The cemetery's indexed text places this tree in Section 54, between Forest and Locust Avenues, west of Cedar Dell, which is more precise than our current gate-level pin and is the obvious upgrade when somebody geocodes it."
+      "verify_notes": "Green-Wood's own great-trees page has gone 404 since it was cited; repointed to the Internet Archive snapshot of the same page rather than dropping the citation. The cemetery's indexed text places this tree in Section 54, between Forest and Locust Avenues, west of Cedar Dell, which is more precise than our current gate-level pin and is the obvious upgrade when somebody geocodes it.",
+      "how_to_recognise": "You can recognise it by its pair of trunks standing a few feet apart, likely survivors of one older root system. It stands in Green-Wood Cemetery, Brooklyn."
     },
     {
       "id": "nyc_005",
@@ -206,7 +209,8 @@
           10
         ],
         "label": "October, when its canopy turns a luminous golden yellow"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its height, 133.8 feet, the tallest carefully measured tree in New York City, rising from uncleared forest. It stands in Alley Pond Park, Queens."
     },
     {
       "id": "nyc_006",
@@ -236,7 +240,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives a specific planting date for this individual tree; age is estimated from the nursery's known 1870s-1900s active period. Pin corrected 2026-07-29 (about 387m, from a park-wide estimate near the tennis courts): NYC Parks' own Great Trees page links this entry to NYC Tree Map ID 5342202, whose record in the Forestry Tree Points open dataset gives an exact point; an independent iNaturalist observation identified as Tilia mandshurica sits about 6m from that same point, two independent sources converging. Worth flagging: the city's own Forestry Tree Points dataset mislabels this record's species as \"Tilia cordata\" (littleleaf linden), which conflicts with both NYC Parks' own Great Trees text and the iNaturalist identification, both of which agree on Manchurian Linden; treated as a City GIS species-code error rather than evidence this is the wrong tree, since the location link and DBH context still line up.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by standing alone 75 feet north of the restroom beside the tennis courts, a leftover from a 19th century tree nursery. It stands in Kissena Park, Flushing, Queens."
     },
     {
       "id": "nyc_007",
@@ -274,7 +279,8 @@
           10
         ],
         "label": "October, when its canopy turns golden yellow"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its trunk, 21.4 feet around, dwarfing everything nearby along the paved path. It stands at the north end of Clove Lakes Park, Staten Island."
     },
     {
       "id": "nyc_008",
@@ -313,7 +319,8 @@
         ],
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it as one of 144 evergreens planted around the glacial boulder called Sugar Loaf Rock, each marking a fallen soldier. It stands in Hero Park, Staten Island."
     },
     {
       "id": "nyc_009",
@@ -388,7 +395,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives a specific planting date; NYC Parks itself only states the tree is 'believed' to have been planted by a Van Cortlandt family member, making it 'over a century old.' Age range left wide to reflect that genuine uncertainty. Pin corrected 2026-07-29, about 72m: NYC Parks' own Great Trees page for this entry links to NYC Tree Map ID 5081918, a 42-inch DBH Aesculus x carnea (matching this story's 'trunk over three feet across') at this point. Some residual ambiguity remains honestly noted: NYC Parks' own reporting mentions three horse chestnuts on the house's east lawn, so this is specifically the one the registry tagged for this listing, not necessarily the only one a visitor might notice first.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its size, nearly 88 feet tall with a trunk over 3 feet across, standing on the east lawn. It stands beside the Van Cortlandt House Museum, the Bronx."
     },
     {
       "id": "nyc_011",
@@ -422,7 +430,8 @@
         "status": "approved",
         "width": 375,
         "height": 500
-      }
+      },
+      "how_to_recognise": "You can recognise it by being wider than it is tall, just under 51 feet high with a 55 foot canopy, right at the park's edge. It stands at Central Park West and 77th Street."
     },
     {
       "id": "nyc_012",
@@ -515,7 +524,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its limbs arching downward and tangling into a low dark dome you duck into rather than stand under. It stands in Green-Wood Cemetery, at Garden Path and Pink Avenue."
     },
     {
       "id": "nyc_015",
