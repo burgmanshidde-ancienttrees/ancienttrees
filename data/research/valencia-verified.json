@@ -1,0 +1,80 @@
+[
+  {
+    "id": "vlc_030",
+    "name": "The Norfolk Pine of Vila de Sant Josep",
+    "species": "Norfolk Island Pine (Araucaria heterophylla)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 260,
+    "height_m": 32.5,
+    "location": {
+      "address": "Vila de Sant Josep, next to Burjassot metro station (Calle del Maestro Lope), Burjassot",
+      "latitude": 39.508252,
+      "longitude": -0.406103,
+      "neighbourhood": "Burjassot (a separate municipality bordering Valencia, about 4.3 km / roughly 15 minutes by Metrovalencia Line 1 from the city centre; day-trip distance, not inside Valencia proper)"
+    },
+    "verified_sources": [
+      "data/registers/valencia-arboles-monumentales.json (register_id 1954, girth 2.6m, height 32.5m, crown 7.4m)",
+      "https://www.elperiodic.com/burjassot/burjassot-cuenta-arboles-monumentales-catalogo-comunidad-valenciana_138418"
+    ],
+    "access": "Free. Stands in the open area in front of Burjassot's Metrovalencia station (the Vila de Sant Josep grounds), which reads as accessible public ground bordering the station; not confirmed by a direct site visit or street-level imagery, so treat as likely open rather than certain.",
+    "transport": "Burjassot station, Metrovalencia Line 1, at the tree (about 15 minutes by metro from Valencia's centre)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Burjassot has two officially monumental trees, and one of them is dead. That leaves this Norfolk Island pine, 32.5 metres of it, standing on the open ground in front of the town's metro station.\n\nHeight alone is what protected it. Burjassot's municipal sustainability office put the tree forward in 2011, and the regional government's technicians concluded that it qualified solo por existir, by its scale alone, as the local paper reported at the time. The trunk is 2.6 metres round and the crown just 7.4 metres wide, which is the shape of the species: a straight mast carrying branches in flat, even tiers. Araucaria heterophylla is not a pine, and it is not from anywhere near here. It comes from Norfolk Island, a single speck of land in the South Pacific.\n\nIt grows in the grounds of the Vila de Sant Josep, a mansion built for the Basque industrialist Julian Maestre Tome, taken over by the Colegio San Jose in 1918 and seized by the Republic in 1934. Those dates belong to the building. Nobody has dated the tree, and if you know when it went in, tell us.\n\nOne thing to be clear about: Burjassot is a separate municipality rather than a Valencia neighbourhood. It sits 4.3 km out, about fifteen minutes on Metrovalencia line 1, and the tree is right at the station.",
+    "how_to_recognise": "You can recognise it by its shape, a single straight mast 32.5 metres tall carrying flat tiers of branches on a narrow 7.4 metre crown. It stands on the open ground in front of Burjassot metro station."
+  },
+  {
+    "id": "vlc_031",
+    "name": "The Canary Palm of Gran Via",
+    "species": "Canary Island Date Palm (Phoenix canariensis)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 215,
+    "height_m": 24.4,
+    "location": {
+      "address": "Median of Gran Via del Marques del Turia (avenue laid out 1884, landscaped 1907), Valencia",
+      "latitude": 39.467696,
+      "longitude": -0.367314,
+      "neighbourhood": "Gran Via / Pla del Remei"
+    },
+    "verified_sources": [
+      "data/registers/valencia-arboles-monumentales.json (register_id 716, girth 2.15m, height 24.4m, individually designated a natural monument)",
+      "Diego Lopez, 'Arboles asombrosos de la Comunidad Valenciana' (2017), individually indexed as 'Palmera canaria de Gran Via Marques del Turia en Valencia' (index confirmed via venerablesarboles.blogspot.com, page content not seen)"
+    ],
+    "access": "Free. Stands on the open, planted median of a public city avenue.",
+    "location_precision": "confirmed",
+    "transport": "Xativa or Colon area; roughly 15-20 minute walk from the Parterre/city centre along Gran Via del Marques del Turia",
+    "curation_status": "flagged",
+    "story": "The beetle killing palms along this avenue prefers this palm's species. In February 2026 local reporting counted ten date palms on the Gran Via del Marques del Turia sick or dead from red palm weevil, and pointed out that the insect's favourite host in Valencia is not the date palm at all but Phoenix canariensis, which is exactly what this tree is. No source names this palm as infested, and the regional register still carried it after that report went out. Worth knowing before you make the trip.\n\nWhat you go for is a Canary Island date palm 24.4 metres tall on a trunk 2.15 metres round, growing on the planted median of a city avenue and individually designated a natural monument, which is not a status Valencia hands out to ordinary street planting. The avenue's better known monumental trees are its Moreton Bay figs, four of which the council was still pruning in 2023. The palm gets less attention.\n\nThe Gran Via was laid out in 1884 and landscaped in 1907. Whether this palm belongs to that planting, nobody has written down, and the two dates are the avenue's rather than the tree's. Palms carry no growth rings, which makes them hard to age even when somebody tries. If you know how old it is, tell us.",
+    "how_to_recognise": "You can recognise it by the thick single trunk and dense crown of a Canary palm, 24.4 metres tall and 2.15 metres round, among the slimmer date palms around it. It stands on the planted median of Gran Via del Marques del Turia."
+  },
+  {
+    "id": "vlc_032",
+    "name": "The Fig of the Hort de les Camelies",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 1095,
+    "height_m": 22.0,
+    "location": {
+      "address": "Hort de les Camelies (Parque de las Camelias), Ayora/Aiora district, Valencia",
+      "latitude": 39.464908,
+      "longitude": -0.343395,
+      "neighbourhood": "Aiora (Ayora)"
+    },
+    "verified_sources": [
+      "data/registers/valencia-arboles-monumentales.json (register_id 672, girth 10.95m, height 22.0m, crown 31.0m)",
+      "Diego Lopez, 'Arboles asombrosos de la Comunidad Valenciana' (2017), individually indexed as \"Ficus de l'Hort de les Camelies en Valencia\" (index confirmed via venerablesarboles.blogspot.com, page content not seen)"
+    ],
+    "access": "Free. Small public neighbourhood garden run by the city's Parks and Gardens department, no gate or fee found.",
+    "location_precision": "confirmed",
+    "transport": "Aiora/Ayora district, eastern Valencia; roughly 3.3 km from the city centre",
+    "curation_status": "flagged",
+    "story": "A trunk of 10.95 metres puts this fig in the same weight class as El Titan and the giants of the Glorieta. It grows in neither. It stands in the Hort de les Camelies, a small public garden in the Aiora district, 3.3 km east of the centre and well clear of the cluster of famous figs downtown.\n\nFicus macrophylla builds sideways rather than up, and this one holds to type: 22 metres tall under a crown 31 metres across, nine metres wider than the tree is high. A canopy that size over a small neighbourhood garden is most of the experience of the place.\n\nThe garden belongs to the city's parks and gardens department and costs nothing to walk into. It is not manicured. Residents writing about it in January 2024 complained about its upkeep and described a palm there eaten out by weevil; the fig itself they left alone.\n\nNobody has dated it. The register measures the trunk and stops there, and no planting record for the garden has surfaced. If you know, tell us.\n\nOne warning worth carrying with you: the Jardi d'Aiora, 300 metres away, has its own group of old ficus and its own history of fallen trees. It is a different garden, and this tree is not in it.",
+    "how_to_recognise": "You can recognise it by the trunk, 10.95 metres round under a crown 31 metres across. It stands in the small Hort de les Camelies, not in the larger Jardi d'Aiora 300 metres away."
+  }
+]
