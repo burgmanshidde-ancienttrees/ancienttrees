@@ -7129,6 +7129,24 @@
         "note": "6 stories + recognition lines across 2 cities (dor_019/020, mtl_008/010/011/012); no best_time warranted on any; mtl_010 passcheck duplicate flag checked by hand and cleared (different species, ginkgo vs tulip tree); mtl_009 held back at merge for a bad coordinate, folded into leads/montreal.json",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "leeuwarden",
+        "kind": "verify",
+        "tokens": 100000,
+        "trees": 7,
+        "note": "Register-led deepen pass (LRMB), 7 new trees + 5 blocked (1 confirmed dead, 4 visitable=nee), one Gerechtshof lead left unresolved; caught a fabricated search-summary measurement before it reached a record; three PDFs unreadable in this sandbox (CID fonts / scanned images)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Leeuwarden",
+        "kind": "write",
+        "tokens": 136000,
+        "trees": 7,
+        "note": "7 stories + recognition lines for lee_035-041; 1 best_time (lee_038, wingnut fruit) and 6 deliberately empty; fixed at merge: lee_039 species aligned to London Plane to match lee_004, lee_035 dropped a redundant pollarded suffix, lee_037/lee_041 aligned to European Beech, all hard rule 9",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
