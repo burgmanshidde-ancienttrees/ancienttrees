@@ -57,7 +57,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is presented as a range because sources genuinely and substantially disagree (1633 legend vs. post-1814 estimates from city technicians), per the site's honesty standard rather than picking one figure. Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 4565394685, \"Ahuehuete del Parterre\"), which independently corroborates a Comunidad de Madrid singular-tree ficha reporting near-identical coordinates (40.41564, -3.68798) for the same tree. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e4/...) 404'd, a genuine dead link caught by a site-wide approved-photo spot-check, not just a rate limit; Commons' own API gives this exact filename's real path as f/f2, fetched and viewed directly there to confirm it is still the same fenced, multi-trunked Ahuehuete before swapping the URL.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the buttressed trunk and feathery foliage of a Mexican wetland cypress, standing in formal Spanish planting. It stands in the Jardin del Parterre, and Madrid calls it El Abuelo, the grandfather."
     },
     {
       "id": "mad_002",
@@ -87,7 +88,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is an estimate based on the Palacio de Cristal's 1887 construction date and typical planting-alongside-building practice; no source gives a precise planting date for this specific tree. Pin moved 2026-07-27 about 160m to the Palacio de Cristal building itself, still an anchor rather than a surveyed point. Resolved to confirmed 2026-07-29: an individually-tagged OpenStreetMap node named \"Cedro del Himalaya\" (Spanish for this exact species) sits on Paseo Julio Romero de Torres, the pond-side walkway immediately beside the Palacio de Cristal, about 30m from mad_004's already-confirmed Bald Cypress pin in the same pond and roughly 115m from the prior building-level anchor. A second \"Cedro del Himalaya\" node exists elsewhere in Retiro (Paseo de Lagasca, over 700m away, clearly a different specimen) and was not used.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the dark, tiered branches of a deodar cedar. It stands directly in front of the pond at the Palacio de Cristal, the glass and iron pavilion of 1887, and frames the usual postcard view of it."
     },
     {
       "id": "mad_003",
@@ -128,7 +130,8 @@
         ],
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the three separate trunks, 142, 120 and 140 centimetres round, fused into one crown 18 metres wide, and by the wooden fence around it. It stands against the eastern wall of the Palacio de Velazquez."
     },
     {
       "id": "mad_004",
@@ -166,7 +169,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "This entry represents the grove of bald cypresses in the pond as a group, of which one specific specimen holds official singular tree status; sources do not distinguish which exact tree in the group carries the designation. Coordinates corrected 2026-07-26 to OpenStreetMap's own node for this tree (id 3919471940, named \"Ciprés Calvo del Estanque del Palacio de Cristal\", matching this entry's Spanish Wikipedia source), which at least pins the specific specimen the community has mapped under that name, even though which physical trunk in the pond that corresponds to is still not independently surveyed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise them by the trunks standing in the water itself, with the cypress knees breaking the surface around them. They grow calf deep in the pond in front of the Palacio de Cristal, not on the bank beside it."
     },
     {
       "id": "mad_005",
@@ -200,7 +204,8 @@
       "curation_status": "ai_generated",
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3170278091, \"Ciprés del Real Jardín Botánico\"), inside the garden on the Plano de la Flor terrace rather than the garden's street entrance.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its height, 32 metres and the tallest tree in the garden, on a trunk a metre and a half across. It stands on the Plano de la Flor terrace, and it is the Mediterranean cypress there."
     },
     {
       "id": "mad_006",
@@ -242,7 +247,8 @@
         "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
         "kind": "autumn colour"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its height, over 30 metres, and by what it is: a Caucasian zelkova, a relative of the elms without being one. It stands in the garden's north zone along the Paseo de Mutis, catalogued as singular tree 260."
     },
     {
       "id": "mad_007",
@@ -272,7 +278,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Pin was genuinely wrong, not just approximate: the previous coordinates, converted from a sourced DMS reading (40°24'58.2\"N 3°44'46.3\"W), sat about 600m from the tree's actual position. Corrected 2026-07-27 via an OpenStreetMap node individually named \"Encina del Trillo,\" tagged as a Comunidad de Madrid natural monument with species Quercus ilex and an 18.5m crown diameter, an exact match to this entry's own '18.5 metres across' figure. Two more nearby OSM features (a \"Glorieta del Trillo\" locality node and its own information board) corroborate the same cluster.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the trunk, 4.6 metres round, under a crown 18.5 metres across. It stands alone at the centre of the Glorieta del Trillo in Casa de Campo, where three roads meet and the roundabout is named after it."
     },
     {
       "id": "mad_008",
@@ -335,7 +342,8 @@
       },
       "curation_status": "flagged",
       "notes": "No source found gives a specific planting date or precise current age for this tree; the age range given is bounded only by the species' 1840 introduction to Europe and general knowledge of Atlas cedar growth rates, stated honestly as an estimate rather than a researched figure. Coordinates corrected 2026-07-26 to a named \"Cedro del Atlas\" node in OpenStreetMap (id 10261810384), the only tree in Parque del Oeste tagged with that Spanish common name, about 300m from the previous estimate but inside the same park and consistent with the Fuente de la Salud/Ruperto Chapi area sources describe. Photo added 2026-07-29: File:Cedrus atlantica 20090311.jpg (CC BY 3.0), whose own Commons description explicitly names Cedrus atlantica, Parque del Oeste, Madrid. Downloaded and personally viewed: a genuine, correctly-identified Atlas cedar branch and needle close-up, species confirmed by the silvery-blue needle clusters. Held at found_needs_check rather than approved: the photo carries no GPS data and is a needle macro with no trunk or landmark in frame, so it cannot positively confirm this is El Abuelo specifically rather than another Atlas cedar elsewhere in the park (OSM shows only one tree named that way, which favours it being the same tree, but the photo itself can't prove it).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the Atlas cedar that people here call El Abuelo, the grandfather. It stands beside the artificial stream in the northern part of Parque del Oeste, near the Fuente de la Salud."
     },
     {
       "id": "mad_010",
@@ -367,7 +375,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is estimated from the park's known 1784-1839 construction period rather than a specific planting-date source. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.4km from El Capricho. Nominatim's own geocode of the park's official name, \"Jardin historico El Capricho de la Alameda Osuna,\" places it at 40.4563, -3.5980, matching the Barajas neighbourhood already stated here. Moved onto the park; still approximate since no source gives the Casa del Cura hermitage's own position within it. Photo added 2026-07-29: an iNaturalist CC BY observation (Cenaida, 22 Sept 2024, id 243394911) of a Pinus pinea inside El Capricho, viewed directly and confirmed as a genuine stone-pine photo taken in a shrubby, wooded corner of the park. Held at found_needs_check rather than approved because the park's own documentation describes several catalogued stone pines near the Casa del Cura meadow, and this photo's generic place_guess cannot confirm it is specifically the one singled out as the singular specimen rather than one of its neighbours. A 2026-07-31 session with working image tooling rendered it directly and agrees with this read: the frame shows two to three similar stone-pine trunks together from below, with no way to tell which, if any, is the catalogued specimen rather than a neighbour. Left at found_needs_check; this is an identity question a photo can't settle, not a framing or quality one, so a future session would need a source that individually locates the catalogued tree before promoting any photo here.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by where it grows, half hidden among shrubs rather than out in the open. It stands beside the Casa del Cura, the small hermitage in El Capricho, and it is the stone pine there."
     },
     {
       "id": "mad_011",
@@ -449,7 +458,8 @@
         ],
         "label": "August to October: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by the flat horizontal plates of branches and a crown 22 metres across on a tree 26 metres tall, so nearly as wide as it is high. It stands beside the Velazquez statue, by the Prado's busiest door."
     },
     {
       "id": "mad_013",
@@ -480,7 +490,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Catalogued by the Comunidad de Madrid as 'Almez del Paseo del Prado'; both the Ayuntamiento's Paseo del Prado material and Telemadrid's August 2024 survey place it at the Plaza de Murillo corner of the museum, give the species as Celtis australis and the age as about 140 years with a height of 25 metres. Pin is the individually named OpenStreetMap node 'Almez' tagged denotation=natural_monument at 40.4128287, -3.6924632, which matches the published coordinate exactly. It is the only hackberry at this corner."
+      "notes": "Catalogued by the Comunidad de Madrid as 'Almez del Paseo del Prado'; both the Ayuntamiento's Paseo del Prado material and Telemadrid's August 2024 survey place it at the Plaza de Murillo corner of the museum, give the species as Celtis australis and the age as about 140 years with a height of 25 metres. Pin is the individually named OpenStreetMap node 'Almez' tagged denotation=natural_monument at 40.4128287, -3.6924632, which matches the published coordinate exactly. It is the only hackberry at this corner.",
+      "how_to_recognise": "You can recognise it as the one broadleaf among the square's four catalogued conifers, 25 metres tall on a smooth grey trunk. It stands in the Plaza de Murillo, at the corner of the Museo del Prado."
     },
     {
       "id": "mad_014",
@@ -513,7 +524,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Protected by the Comunidad de Madrid since the 1992 decree and carried through into the 2015 consolidated catalogue. Second source is Telemadrid's August 2024 survey (species, location, 22 metres, 140 years); the long-running ArbolesdeMadrid blog independently identifies the specimen and its 1992 protection. Age flagged as a range because the two figures in circulation, about 140 years and a planting around 1790, cannot both be right and neither is sourced to a core count. Pin is the OpenStreetMap node 'Picea del Himalaya' carrying Wikidata Q108653996 (40.4126313, -3.6918174), about six metres from the published coordinate. It is the only Picea smithiana in the square."
+      "notes": "Protected by the Comunidad de Madrid since the 1992 decree and carried through into the 2015 consolidated catalogue. Second source is Telemadrid's August 2024 survey (species, location, 22 metres, 140 years); the long-running ArbolesdeMadrid blog independently identifies the specimen and its 1992 protection. Age flagged as a range because the two figures in circulation, about 140 years and a planting around 1790, cannot both be right and neither is sourced to a core count. Pin is the OpenStreetMap node 'Picea del Himalaya' carrying Wikidata Q108653996 (40.4126313, -3.6918174), about six metres from the published coordinate. It is the only Picea smithiana in the square.",
+      "how_to_recognise": "You can recognise it by the side branches hanging almost vertically, carrying the longest needles of any spruce, so the tree looks like it is melting. It stands in the Plaza de Murillo, between the Prado and the Botanic Garden."
     },
     {
       "id": "mad_015",
@@ -546,7 +558,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Species is Acer saccharinum, the silver maple, per the Comunidad de Madrid catalogue and the tree's own name; the OpenStreetMap node tags it 'Acer saccharum', which is a different species and is treated here as a tagging error, not a source. Existence and centenarian age confirmed independently by Telemadrid's August 2024 survey, which places it in the Cecilio Rodriguez gardens. Pin is the individually named OpenStreetMap node carrying Wikidata Q108472384 (40.4139598, -3.678499)."
+      "notes": "Species is Acer saccharinum, the silver maple, per the Comunidad de Madrid catalogue and the tree's own name; the OpenStreetMap node tags it 'Acer saccharum', which is a different species and is treated here as a tagging error, not a source. Existence and centenarian age confirmed independently by Telemadrid's August 2024 survey, which places it in the Cecilio Rodriguez gardens. Pin is the individually named OpenStreetMap node carrying Wikidata Q108472384 (40.4139598, -3.678499).",
+      "how_to_recognise": "You can recognise it by the trunk splitting into four stems at about head height, and by the leaf undersides, pale silver white, so a breeze changes the colour of the whole crown. It stands in the Jardines de Cecilio Rodriguez."
     },
     {
       "id": "mad_016",
@@ -588,7 +601,8 @@
         ],
         "label": "August to October: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its height, 33 metres, and a crown still conical at the top while it spreads below, where the Prado cedar is flat topped. It stands where the Avenida del Peru meets the Plaza de Guatemala."
     },
     {
       "id": "mad_017",
@@ -619,7 +633,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "This entry is deliberately the replacement, not the tree it replaced. ORDEN 68/2015 Anexo I strikes 'Eucalipto del Parque del Retiro' (Eucalyptus globulus, Madrid) from the catalogue as dead or gone; Anexo II of the same order adds 'Eucalipto azul del Retiro' (Madrid, motivo: significacion historica). Verified alive in August 2024 by Telemadrid's survey of the 15 singular trees of Retiro, Recoletos and the Prado. Pin agrees between the published coordinate and an OpenStreetMap node named 'Eucalipto Azul del Parque del Retiro' with species=globulus and denotation=natural_monument at 40.418848, -3.6821557, about four metres apart. A second OSM node with the same name and Wikidata Q108473045 sits roughly 60 metres south-west; treated as a duplicate record rather than a second tree, since the two published sources both point at the northern position."
+      "notes": "This entry is deliberately the replacement, not the tree it replaced. ORDEN 68/2015 Anexo I strikes 'Eucalipto del Parque del Retiro' (Eucalyptus globulus, Madrid) from the catalogue as dead or gone; Anexo II of the same order adds 'Eucalipto azul del Retiro' (Madrid, motivo: significacion historica). Verified alive in August 2024 by Telemadrid's survey of the 15 singular trees of Retiro, Recoletos and the Prado. Pin agrees between the published coordinate and an OpenStreetMap node named 'Eucalipto Azul del Parque del Retiro' with species=globulus and denotation=natural_monument at 40.418848, -3.6821557, about four metres apart. A second OSM node with the same name and Wikidata Q108473045 sits roughly 60 metres south-west; treated as a duplicate record rather than a second tree, since the two published sources both point at the northern position.",
+      "how_to_recognise": "You can recognise it by the bark peeling away in long ribbons and by the initials carved into the trunk, which is too wide to get your arms halfway round. It stands north of the Estanque Grande, near the Paseo de Coches."
     }
   ]
 }
