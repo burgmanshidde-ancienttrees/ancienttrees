@@ -2,7 +2,7 @@
   {
     "id": "ein_012",
     "name": "The Catalpa of the Van Abbemuseum",
-    "species": "Catalpa (Catalpa bignonioides)",
+    "species": "Southern Catalpa (Catalpa bignonioides)",
     "age_estimate": "around a century old (sources disagree on the decade)",
     "age_min": 96,
     "age_max": 126,
@@ -20,7 +20,15 @@
     "transport": "Eindhoven Centraal, about 15 minutes on foot south along the Dommel, or bus to the Van Abbemuseum stop.",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "Two independent sources: the national LRMB register (nr 1690225, planted_band 1900-1910, reason 'monumentaal', owner gemeente, visitable=ja, visible=ja) and the Gemeente Eindhoven open-data 'bomen' dataset (boomnummer 35956, Catalpa bignonioides, status_ter_indicatie 'Monumentaal', plantjaar 1930, hoogte 15-18m), matched at 16m from the register point, current as of the dataset's 2026-09-07 refresh (good 'alive now' evidence). AGE CONFLICT: register implies planted 1900-1910 (about 116-126 years old today), municipal record says planted 1930 (about 96 years old); no winner picked, both reported. The Van Abbemuseum (Bilderdijklaan 10) was built 1936 for cigar manufacturer Henri van Abbe's art collection, architect A.J. Kropholler; if the earlier planting date is right the tree predates the museum building, a nice detail but not stated as fact given the conflict. The same municipal dataset shows four more Catalpa bignonioides within 35m all marked 'Monumentaal', planted 1930, forming a small grove near the museum entrance; this one is the closest match to the register point (16m) and is the one to feature, though the writer could mention the grove as context. No girth or diameter figure found in either source."
+    "story": "Nobody can say whether this catalpa or the museum beside it came first. The national tree register puts its planting between 1900 and 1910. Eindhoven's own tree database, refreshed this month, records 1930. Both are official, both list the tree as monumental, and the gap between them is a generation. It matters here, because the Van Abbemuseum went up in 1936, built by A.J. Kropholler for the cigar manufacturer Henri van Abbe to hold his collection. On the register's dating the tree was already thirty years old and watched the building arrive on its doorstep. On the city's dating it went in six years before the builders did. We have not picked a winner between the two.\n\nWhat is not in dispute: this is a southern catalpa of fifteen to eighteen metres, on the public green strip between the museum and the Dommel, and it is not alone. Four more catalpas stand within thirty five metres, all of them carrying the same monumental rating in the city's records. Catalpa comes from the southeastern United States, and it keeps American hours: it is one of the last trees in a Dutch park to come into leaf, so in April this corner still looks bare while everything around it has gone green. By July the crown is full of white flowers marked in yellow and purple.\n\nIf you know when these were planted, tell us.",
+    "how_to_recognise": "You can recognise it by the broad heart-shaped leaves, which appear weeks later than anything around them, and by its height of fifteen to eighteen metres. It stands on the green strip between the Van Abbemuseum and the Dommel.",
+    "best_time": {
+      "months": [
+        7
+      ],
+      "kind": "flowers",
+      "label": "July, when the white flowers open across the crown"
+    }
   },
   {
     "id": "ein_013",
