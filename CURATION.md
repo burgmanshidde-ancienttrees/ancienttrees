@@ -11,6 +11,68 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation) - Finished four claims an earlier attempt in this window left standing: Dordrecht +4, Montreal +4, Granada (es) and Kamakura (ja) committed
+
+The previous attempt in this window stopped after 23 minutes having shipped
+nothing, with 97 of its 120 minutes unspent. `passcheck.py --claims` found
+four standing claims, all with fully- or partly-finished work already on
+disk: dordrecht (verify), montreal (verify), granada (translate-es), kamakura
+(translate-ja). Finished all four rather than releasing them.
+
+**Dordrecht (verify, released): +4 trees, 16 -> 20.** dor_017 and dor_018
+(the plane and horse chestnut of the Willem Kes Plantsoen, Bomenridders
+route corroborated) already had stories from the earlier attempt. dor_019
+(Huis van Gijn garden plane) and dor_020 (Huis van Gijn garden variegated
+maple) were verified but storyless; dispatched a write-stories pass for
+those two plus four Montreal trees. Fixed the tree-count copy (meta
+description, question_meta, the free-vs-paid FAQ) from sixteen to twenty and
+added `paid_entry: true` on dor_019/020 (Huis van Gijn charges for garden
+access), which preflight's paid-entry-mismatch check caught.
+
+**Montreal (verify, released): +4 trees, 7 -> 11.** mtl_008 (Second Oak of
+Summit Woods, Westmount, a separate peak of the same massif), mtl_010 (Class
+of '49 Tulip Tree), mtl_011 (Roddick Gates Black Walnut) and mtl_012 (the
+purple-leaved European beech by Redpath Hall, corrected to "Copper Beech" at
+merge: the astro build caught it claiming a second common name against
+graz/leipzig's "Copper Beech" for the same cultivar, hard rule 9). Rewrote
+the city's intro, meta description, question_meta, question_context and the
+"one walk" FAQ to describe the new shape: six trees on Mont-Royal itself,
+four in a walkable McGill-campus cluster (was one, the ginkgo, now four),
+one on Westmount's own summit as a separate short outing.
+
+**mtl_009, the McKenna Cottonwoods, held back rather than shipped.**
+`passcheck.py --pending` flagged it as sitting exactly 0m from the
+already-published mtl_004, a different species (cottonwood vs Austrian
+pine). Refetched the source page directly: it gives no coordinate at all for
+this tree, only a cemetery block and headstone number, so the verify pass
+had filled the coordinate field with the cemetery's generic main-entrance
+point, identical to mtl_004's. Publishing it would have sent a reader to the
+wrong tree at the one field that cannot be corrected after the fact. Folded
+into `data/leads/montreal.json` with the block/headstone detail preserved,
+ready the moment someone can place it on a cemetery section map. The
+"passcheck flags mtl_010 too" question was also checked by hand: different
+species (ginkgo vs tulip tree), two independently documented specimens 46m
+apart on a large campus, not a duplicate, written as normal.
+
+**Granada (es) and Kamakura (ja): both already hand-quality, both
+committed.** `i18ncheck.py` clean on both, overlay coverage complete (9/9
+Granada trees, 6/6 Kamakura trees), no action needed beyond verifying and
+releasing the claim.
+
+**A gap closed in `scripts/leads.py`'s READY classification.** Sampling the
+three "READY" Eindhoven leads by hand found all three were actually
+declined, in language the `NOT_READY_MARKER` regex did not catch: "second
+source not found" (word order reversed from the existing "no second
+source"), "do not ship on the register alone", and a register whose own
+location field is marked uncertain. Added three patterns; Eindhoven's three
+leads now correctly classify as BLOCKED instead of READY. None were written
+up.
+
+Full rebuild and `preflight.py`/`qa.py`/`superlatives.py`/`i18ncheck.py` all
+clean (the sitemap-lastmod QA warning is the same shallow-clone sandbox
+artifact noted in earlier entries, not a content problem). All four claims
+released. `data/agent-costs.json` logged for the write pass.
+
 ## 2026-09-10 - Two Kyoto submissions (98, 99): GPS only, not enough to identify a tree
 
 Submissions #98 and #99 in the `submissions` table, kind `tree`, `page: app:collect`,

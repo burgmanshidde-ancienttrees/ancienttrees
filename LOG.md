@@ -11,6 +11,40 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-10 (continuation) - Finished four stranded claims: Dordrecht +4 (16->20), Montreal +4 (7->11), Granada (es) and Kamakura (ja) committed
+
+An earlier attempt in this window stopped after 23 minutes having shipped
+nothing, with most of its 120-minute window unspent. Rather than starting
+fresh, followed the standing instruction: `passcheck.py --claims` found four
+stranded claims with real, mostly-finished work sitting on disk, and
+finished all four instead of re-picking new work.
+
+**Dordrecht 16->20** (Willem Kes Plantsoen plane and horse chestnut, Huis van
+Gijn garden plane and variegated maple) and **Montreal 7->11** (a Westmount
+Summit oak and a three-tree McGill campus cluster: black walnut, tulip tree,
+and a beech the build's own species-name check caught claiming a second
+common name for a cultivar already published elsewhere as "Copper Beech").
+One Montreal candidate, the McKenna Cottonwoods, was held back rather than
+shipped: its assigned coordinate turned out to be an exact copy of a
+different, already-published tree's pin, because the actual source gives no
+coordinate at all for it, only a cemetery block number. Folded into leads
+rather than sent to a wrong address. Both cities' intro/meta/FAQ copy
+updated for their new tree counts and, for Montreal, its new shape (four
+trees now cluster on McGill's campus instead of one).
+
+**Granada (Spanish) and Kamakura (Japanese)** translation overlays were
+already complete and hand-quality; verified with `i18ncheck.py` and
+committed as is.
+
+Also fixed a real gap this session's own leads check surfaced: three
+Eindhoven leads that `leads.py --ready` called READY were each an earlier
+pass's explicit decline (no second source, an uncertain register location);
+the classifier's regex didn't recognise that phrasing. Added three patterns
+so they now correctly sort as blocked.
+
+Full rebuild, `preflight.py`, `qa.py`, `superlatives.py` and `i18ncheck.py`
+all clean. All four claims released.
+
 ## 2026-09-10 (continuation) - Leeuwarden 26 -> 34, and 36 more cities' recognition-line gap closed
 
 **Git push is working again**, for whatever that is worth to the FOR HIDDE note two entries below: every commit in this entry pushed cleanly on the first try, no retries needed.
