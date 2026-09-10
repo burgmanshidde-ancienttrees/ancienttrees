@@ -184,6 +184,60 @@ def check_auth_corpus_agreement():
     return []
 
 
+def check_one_face_per_city():
+    """The tree a city wears in Google must be the tree it wears in the app.
+
+    Added 2026-09-10 on Hidde's "keep it consistent at all times", after Prague
+    turned out to front the Beethoven Plane in search results and the Plane of
+    Karlovo namesti in the app, with Seville doing the same. Both surfaces were
+    already reading a face; they were reading two different functions for it.
+
+    check_faces_travel_to_the_app() guards browse.json against the Swift
+    screens and could not see this, because the third reader of a city's face
+    is a meta tag. This compares the built og:image against the face
+    browse.json publishes, which is the only pairing that was never checked."""
+    browse = DIST / "api" / "browse.json"
+    if not browse.exists():
+        return []
+    try:
+        cities = json.loads(browse.read_text(encoding="utf-8")).get("cities", [])
+    except ValueError:
+        return ["api/browse.json is not valid JSON"]
+    bad = []
+    for c in cities:
+        face, slug = c.get("face"), c.get("slug")
+        if not face or not slug:
+            continue
+        page = DIST / slug / "index.html"
+        if not page.exists():
+            continue
+        m = re.search(r'<meta property="og:image" content="([^"]+)"',
+                      page.read_text(encoding="utf-8")[:6000])
+        if not m:
+            continue
+        og = m.group(1)
+        # The face's own photograph, read from the same data the feed used.
+        src = ROOT / "data" / "cities" / f"{slug}.json"
+        if not src.exists():
+            continue
+        try:
+            trees = json.loads(src.read_text(encoding="utf-8")).get("trees") or []
+        except ValueError:
+            continue
+        tree = next((t for t in trees if t.get("id") == face), None)
+        url = ((tree or {}).get("photo") or {}).get("url") or ""
+        if not url:
+            continue
+        # Compare the file, not the url: og:image is resized and the feed is not.
+        name = url.rsplit("/", 1)[-1]
+        if name and name not in og:
+            bad.append(f"{slug}: app face {face} but og:image is a different tree")
+    if bad:
+        return [f"{len(bad)} cities wear one tree in search and another in the app: "
+                + "; ".join(bad[:5])]
+    return []
+
+
 def check_copy_test_renders():
     """A running copy test must actually be visible in the built pages.
 
@@ -1440,6 +1494,7 @@ def main():
     failures += check_no_strategy_in_workflows()
     failures += check_one_city_order()
     failures += check_copy_test_renders()
+    failures += check_one_face_per_city()
     failures += check_sitemap_dates()
     failures += check_no_name_promise(pages)
     failures += check_tree_count_claims(pages)
