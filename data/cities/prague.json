@@ -3,9 +3,9 @@
   "country": "Czech Republic",
   "status": "needs_curation",
   "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All of them are free to visit.",
-  "meta_description": "Prague protects its old trees by law. 27 remarkable trees, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
+  "meta_description": "Prague protects its old trees by law. 30 remarkable trees, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
   "question_answer": "The oldest tree in Prague that anyone can actually go and see is the Beethoven Plane, a London plane growing in the garden of the Grand Priory Palace on Velkoprevorske namesti in Mala Strana, estimated at somewhere between 200 and 300 years old. Its exact planting date is disputed, but its trunk, seven and a half metres around, is the thickest of any protected tree in the city, and it towers over the wall where tourists photograph the Lennon Wall without ever looking up.",
-  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and twenty-six more remarkable trees.",
+  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and twenty-nine more remarkable trees.",
   "question_context": "Prague has an older tree than this one, but nobody can visit it. Dub Karel, a 550 year old oak in a private castle park at Kolodeje, is Prague's oldest tree by a wide margin, and its own official record calls it the most massive tree in the city. The land is privately owned and closed to visitors, so per this site's rule on withheld locations it is left off the list rather than published as a destination nobody can reach. That leaves the Beethoven Plane as the oldest tree anyone can actually walk up to. It grows in the garden of the Grand Priory Palace, once the Prague seat of the Order of Malta, on Velkoprevorske namesti in Mala Strana, its trunk towering above the same wall famous today as the Lennon Wall. The romantic story, that a young Beethoven sat dreaming beneath it during his 1796 visit, does not survive contact with the calendar: he was in Prague in February, an unlikely month for garden reveries. Its real age is disputed among Czech sources, ranging from around 200 to nearly 300 years, but no other protected tree in the city comes close to its girth.",
   "faq": [
     {
@@ -1005,6 +1005,79 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       }
+    },
+    {
+      "id": "prg_028",
+      "name": "The Oak Behind the Ranger's Lodge, Čimický háj",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated around 190 years",
+      "age_min": 170,
+      "age_max": 220,
+      "girth_cm": 381,
+      "location": {
+        "address": "Čimický háj, behind the Čimická hájovna (forester's lodge), Praha 8-Bohnice",
+        "latitude": 50.130128,
+        "longitude": 14.441117,
+        "neighbourhood": "Bohnice, Praha 8"
+      },
+      "story": "Two great oaks stand behind this forestry lodge and only one of them is still alive. This is the living one, and it is the smaller and younger of the pair. The other, where the path meets the lodge, is five metres round and about three hundred years old, and what is left of it is a hollow trunk carrying a thin ring of living crown at the top, an owl inside and a colony of bees; it keeps its protection as a habitat rather than as a living tree.\n\nThis oak is the one still putting on wood. It measured 3.55 metres round in 2011 and 3.81 when the register came back to it in August 2024, and it stands 32.5 metres tall, its crown carried upward rather than out. A 2013 survey put its age at about 180 years, which makes it roughly 190 now. Both trees were protected on the same day in 2004, and both sat for a portrait in 1969, when the painter Jaroslav Turek put the pair on one canvas. Only one of them has changed much since.\n\nČimický háj around them is working woodland that Bohnice and Kobylisy have turned into weekend ground, walked, run and cycled through all year, and the building in front of the tree is still a forestry lodge. That 2024 measurement is the newest hard record anyone has of this oak. If you get out there, tell us how it looks.",
+      "how_to_recognise": "You can recognise it by being the healthy one of the two great oaks behind the forestry lodge: 3.81 metres round, with a full crown carried upward. Its neighbour is five metres round, hollow, and dead but for a ring of leaves at the top.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Dub_za_%C4%8Cimickou_h%C3%A1jovnou",
+        "http://www.prazskestromy.cz/stromy/pamatne-stromy/73-duby-letni-u-hajovny-v-cimickem-haji/"
+      ],
+      "access": "Free, inside Čimický háj, a public recreational forest between Bohnice, Kobylisy and Čimice used year-round for walking, running and cycling. The tree stands a short way past a fence behind the Čimická hájovna (a working forestry lodge), which prazskestromy.cz's own access note does not flag as restricted; the lodge area carries information boards as a marked point of interest. No source states the tree itself is closed to visitors.",
+      "transport": "Bus stop \"Čimický háj\" (lines 102, 144, 152, 177, 200), on the forest edge",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "prg_029",
+      "name": "The Oak of Pod Labuťkou Street",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated around 180 years",
+      "age_min": 160,
+      "age_max": 200,
+      "girth_cm": 314,
+      "location": {
+        "address": "Pod Labuťkou street, opposite house no. 13, Praha 8-Libeň",
+        "latitude": 50.111587,
+        "longitude": 14.478217,
+        "neighbourhood": "Libeň, Praha 8"
+      },
+      "story": "In 2010 the Czech state drew a twelve-metre protected circle around a tree on a residential street in Libeň. This is it: an oak opposite number 13 on Pod Labuťkou, standing on ground that used to be a children's playground, under a slope grown over with scrub.\n\nIt is not a giant. The trunk came to 3.00 metres round in a 2016 survey and 3.14 when the register was updated in August 2024, and the tree reaches twenty metres. What it has is a shape street trees are almost never allowed to keep: a bushy crown whose lowest branches run all the way down to the ground, so the whole tree is one piece from the pavement up rather than a trunk with foliage parked on top. The same survey rated its health very good, noting a few dry branches and algae in the bark crevices, which is what the damp of this slope leaves on a trunk.\n\nIts age is an estimate and not a record. The surveyors put it at about 170 years in 2016, so somewhere near 180 now. Beyond those two measurements and a short Czech account of them, almost nothing about this oak is written down anywhere. If you know more of its story, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, bushy and dropping its lowest branches right down to the ground, and by the trunk at 3.14 metres round. It stands on the slope side of Pod Labuťkou, opposite house number 13.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Dub_v_ulici_Pod_Labu%C5%A5kou"
+      ],
+      "access": "Free, stands beside the public street Pod Labuťkou in Libeň, on the site of a former children's playground below a vegetated slope. An ordinary street tree, not inside any park or private grounds.",
+      "transport": "In Libeň, Praha 8; nearest tram/bus stops are in the surrounding Libeň streets (not pinned down to a single stop this pass)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "prg_030",
+      "name": "The Oak of Kobylisy",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated around 200 years",
+      "age_min": 180,
+      "age_max": 220,
+      "girth_cm": 436,
+      "location": {
+        "address": "Park north of Střelničná street, Sídliště Ďáblice housing estate, Praha 8-Kobylisy",
+        "latitude": 50.126862,
+        "longitude": 14.46385,
+        "neighbourhood": "Kobylisy, Praha 8"
+      },
+      "story": "For its first century this oak stood inside a military shooting range. The Kobylisy range closed in 1938, the Ďáblice housing estate went up across the land afterwards, and the ground under the tree was turned into the estate's park. The oak stayed where it was and is now the largest thing in it.\n\nA 2016 survey measured it at 3.80 metres round and 27 metres tall. The register came back in October 2024 with 4.36 metres, and the gap between those two numbers is wider than eight years of growth on its own explains, so read the waistline as the distance between two people with a tape rather than as a precise figure. By either of them it is a heavier trunk than the living oak behind the forestry lodge in Čimický háj, or the one on Pod Labuťkou down in Libeň, both of them a couple of kilometres from here.\n\nThe same surveyors dated its planting to around 1825, which puts it near two hundred years old, and it has the build of a tree given room: one straight sturdy stem, and above it a fan of branches all running upward. Protection came in January 2000 and takes in nineteen metres of ground in every direction from the trunk. Nothing more recent than that October 2024 measurement has been published about it, so the newest thing known about this oak is its waistline.",
+      "how_to_recognise": "You can recognise it by the trunk, straight and 4.36 metres round, under a fan of branches all reaching upward. It is the biggest tree by some way in the park north of Střelničná.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Dub_letn%C3%AD_v_Kobylis%C3%ADch"
+      ],
+      "access": "Free, in a public park (the green space of the Sídliště Ďáblice housing estate) north of Střelničná street. An ordinary open park tree, no restrictions.",
+      "transport": "Kobylisy district, Praha 8; reachable from the Kobylisy or Střelničná tram/bus stops on the surrounding estate roads (not pinned to one specific stop this pass)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
     }
   ]
 }
