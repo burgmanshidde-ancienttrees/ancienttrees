@@ -6,6 +6,18 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Species recognition from a photograph, as a Plus feature (Hidde, 2026-09-11, "nu geen tijd voor")
+
+Take the photograph, get the species back. His ruling is that it is PAID and that it waits on his time rather than on evidence, so there is nothing to measure before starting; the full record is DECISIONS.md 2026-09-11.
+
+**The shape, already decided so it needs no rethinking.** Photograph first and answer from a server, which is what every product with identification as a feature does (AllTrails' Outdoor Lens, PictureThis, iNaturalist's main app); a model on the phone is what Seek and Merlin do and only pays off when identification IS the product. The answer is a ranked list with a probability and alternatives underneath, never one confident name, which is both the AllTrails pattern and the honest reading of our own 2026-08-29 measurement that a species guessed from neighbours is right 9 percent of the time. It lands in the space `SpeciesChooser` already keeps open above its list.
+
+**What it costs:** about half a cent per identification on Haiku 4.5, a cent on Sonnet 5, no fixed floor, on a Supabase Edge Function. Build it with a per-account daily cap. Design the offline path in from the start (queue the scan, identify when the signal returns) because Plus promises the outdoors and a server call does not work there; `SightingSync` already queues an unsent photograph.
+
+**What it is worth:** 14 of the 15 trees ever added through the app carry no species, and species is the field that makes a reader's tree publishable rather than a lead.
+
+**Trigger: Hidde says go.** It also needs two things only he can give, an API account in his name and the pricing call (hard rules 2 and 5), so a run may not start this even when the trigger fires without those in hand.
+
 ## Sydney: the licence ask for the Register of Significant Trees (Hidde, 2026-08-15, "put the sydney email on the backlog")
 
 The draft is written and sits ready as section 4 of `drafts/permission-us-registers.md`. Parked rather than sent, on Hidde's instruction, because outreach is his lane and his queue, not a run's.

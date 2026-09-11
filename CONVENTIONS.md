@@ -1476,10 +1476,11 @@ a suggestion, which is where a ranked answer lands, and `SightingSync` already
 queues a photograph that could not be sent, which is the offline half. What we
 do not have and they do is the model.
 
-**One thing they do that we would have to think about: AllTrails put Outdoor
-Lens behind Peak, their paid tier.** Ours is not priced and that is Hidde's
-alone (hard rule 2), so this is recorded as what the reference does, not as a
-proposal.
+**One thing they do that we now do too: AllTrails put Outdoor Lens behind Peak,
+their paid tier.** Hidde ruled the same way for ours the day this entry was
+written, so recognition is Plus and waits on his time (DECISIONS.md
+2026-09-11). What stays his alone under hard rule 2 is the price and whether it
+sits inside Plus or beside it.
 
 Read 2026-09-11:
 - https://support.alltrails.com/hc/en-us/articles/40312229299348-Introducing-Outdoor-Lens

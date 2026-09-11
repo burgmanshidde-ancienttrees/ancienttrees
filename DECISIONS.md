@@ -1,5 +1,59 @@
 # Decisions
 
+## 2026-09-11 - Species recognition from the camera is a Plus feature, and it waits
+
+Hidde, asked how hard live species recognition in the camera would be and shown
+what it costs: "Onthou dat we dit als premium optie gaan bouwen nu geen tijd
+voor."
+
+**Two things settled, and the second is the one worth writing down.** It is
+PAID, on his own ruling, and it is NOT NOW, for time rather than for evidence.
+That second half matters because it is a different reason from the one this
+project usually parks things for. Nothing is waiting on a measurement here: the
+cost is known, the route is known, and the convention is looked up. It waits
+because his week is full, so the trigger is him saying go, never a number
+arriving.
+
+**It resolves the 2026-08-29 "guessing waits" into a date-less yes.** That entry
+said naming a species is a picker and guessing it from the photograph waits, on
+his "nog niet, alleen de kiezer". The picker shipped. This says what the waiting
+was for.
+
+**And it settles a genuine ambiguity in the launch freeze of 2026-08-26.** Rule
+5 there says every new feature defaults to Plus unless it feeds the flywheel by
+bringing in data or users, and recognition does both halves of that exception:
+14 of the 15 trees ever added through the app carry no species, and the field is
+what makes such a tree publishable. So it could honestly have gone either way,
+and he has chosen. Worth remembering when the next feature sits on that line,
+because the exception is narrower than it reads.
+
+**The route, decided by the convention rather than by taste.** Photograph first,
+answer from a server, per CONVENTIONS.md 2026-09-11: every product that has
+identification as a FEATURE does it that way, AllTrails included, and only the
+apps whose whole product is identification (Seek, Merlin) put a model on the
+phone. Live-in-the-viewfinder is therefore the expensive shape and not the
+convention, which is a happy coincidence rather than an argument.
+
+**What it costs, so nobody prices it again.** Roughly half a cent per
+identification on Haiku 4.5 and about a cent on Sonnet 5, for a photograph
+downscaled to about 1000 pixels. There is no fixed floor: the endpoint is a
+Supabase Edge Function, which is a provider we already have, and the site itself
+stays static on GitHub Pages. At any volume this product has ever seen it is
+under a euro a month; a hundred identifications a day is a tenner. Pl@ntNet is
+still ruled out for the same reason as in August, a EUR 1,000 Pro floor the
+moment we charge for anything, and we now would be. A per-account daily cap
+ships with it so a bug cannot run up a bill.
+
+**Two things this does NOT decide, both his.** Whether it sits inside Plus or is
+priced separately, and what anything costs, under hard rule 2. And the API
+account itself, since a run never opens an account in his name.
+
+**One flag for whoever builds it: a server call needs a network and Plus
+promises the outdoors.** AllTrails and PictureThis both answer this the same
+way, by queueing the scan and identifying it when the signal returns rather than
+failing. `SightingSync` already holds an unsent photograph, so we have the
+machinery; it just has to be the design from the start rather than a patch.
+
 ## 2026-09-08 - A tree needs a reason, not just an honest page
 
 Hidde, shown that four trees had gone live in Nara overnight from his own app
