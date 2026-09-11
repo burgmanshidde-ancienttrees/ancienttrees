@@ -9,21 +9,21 @@
   "claims": [
     {
       "target": "hallstatt",
-      "kind": "verify",
+      "kind": "write",
       "by": "night-run",
-      "claimed_at": "2026-09-11T02:11:22+00:00"
+      "claimed_at": "2026-09-11T02:24:32+00:00"
     },
     {
       "target": "busan",
       "kind": "write",
       "by": "night-run",
-      "claimed_at": "2026-09-11T02:19:31+00:00"
+      "claimed_at": "2026-09-11T02:24:32+00:00"
     },
     {
       "target": "saopaulo",
       "kind": "write",
       "by": "night-run",
-      "claimed_at": "2026-09-11T02:19:31+00:00"
+      "claimed_at": "2026-09-11T02:24:32+00:00"
     }
   ]
 }
