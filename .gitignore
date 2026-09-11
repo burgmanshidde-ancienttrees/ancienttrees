@@ -6,6 +6,7 @@ site/dist/
 _scratch_*
 press-trees.csv
 out/
+photo-pass/
 
 # Translation overlays being written. Contract J is enforced by the build, so a
 # half-finished overlay in HEAD takes the whole deploy down: that happened on

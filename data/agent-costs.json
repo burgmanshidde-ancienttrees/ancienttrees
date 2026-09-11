@@ -7412,6 +7412,24 @@
         "note": "2 new Liboc/Hvezda trees verified via registry-join (oak on Libocky pond dam, beech below the summer palace, both flagged for honest open points); 2 existing leads (Knights of the Cross linden, Stresovice mulberry) investigated further, still unresolved on access/second-source grounds",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "prague+boise+indianapolis+monterey+spokane",
+        "kind": "write",
+        "tokens": 61000,
+        "trees": 11,
+        "note": "11 stories + recognition lines in one batched context, 5 cities; 1 best_time (spk_003 dawn redwood autumn colour); prg_026/prg_027 merged into prague.json live (27 trees now), boise/indianapolis/monterey/spokane banked verified-and-written below the 4-tree floor",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "session",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 2,
+        "note": "merged prague write pass into data/cities, fixed prague + czech-republic count promises, build/qa/superlatives clean; free photo_hunt.py --recheck sweep (2522 trees); photo_fetch.py candidate download for 6 depth-allowed photo-less cities (Leeuwarden, Tilburg, Helmond, Maastricht, Eindhoven, Kamakura) awaiting a viewing pass",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

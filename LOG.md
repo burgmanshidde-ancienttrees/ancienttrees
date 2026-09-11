@@ -11,7 +11,17 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
-## 2026-09-11 (continuation) - New city Hallstatt (4 trees, Austria's 7th), cleared two stale write claims
+## 2026-09-11 (continuation 2) - Write pass on 5 stranded verified cities, Prague deepened to 27, photo shortlist staged for a viewing pass
+
+7-day visits (`visitors.py`): 1069 visits, 1335 page views, still trending down (223 on 09-05 to 7 partial-day on 09-11). `prepare.py`: shelf already stocked (49 files staged for verify), 16 trees awaiting a writer across boise/busan/indianapolis/monterey/prague/saopaulo/spokane/_famous-china/famousfrance, 3 READY leads.
+
+Per the prompt's "first dispatch is a write pass" rule, claimed and dispatched a batched write-stories pass on the 11 trees still needing a story (skipped busan and saopaulo, already written and unmergeable below floor per the prior run): prg_026/027, boi_001/002, ind_001, mty_001/002/003, spk_001/002/003. All 11 came back written and clean (150-250 words, recognition lines, no bridge claims; `best_time` set only on spk_003's dawn redwood autumn colour). Merged Prague's 2 into `data/cities/prague.json` (25 to 27 trees); the other 9 stay banked in their `*-verified.json` files, still below the 4-tree floor (Boise 2, Indianapolis 1, Monterey 3, Spokane 3). Fixed Prague's and Czech Republic's stale count promises (meta_description, question_meta, country intro). Build (5381 pages), qa.py (8393 pages, clean) and superlatives.py (360 claims, no collisions) all clean. Logged cost (61k tokens, 11 trees, ~5.5k/tree against the 15k target).
+
+**Free work alongside it, since the write pass ran as a background agent**: `python3 scripts/photo_hunt.py --recheck` refreshed the whole 2522-tree API sweep queue. `python3 scripts/photo_gaps.py --shortlist` named 7 photo-less, depth-allowed cities (checked each against DATA.md's 2026-09-09 roster: Leeuwarden, Tilburg, Helmond, Maastricht, Eindhoven, Budapest, Kamakura all qualify); ran `photo_fetch.py` to download their candidates into `photo-pass/` (gitignored) for a viewing pass. Budapest had nothing left to fetch. On a first look at the manifests most titles read as likely misses (Maastricht's top hits are Stolpersteine and city-wall remains, Leeuwarden pulled in an unrelated Amsterdam park and a Zutphen monument by filename coincidence) rather than genuine tree photographs; did not get to the actual pixel-by-pixel judging this window, so nothing was approved or rejected. That is next window's or a photo-judge pass's job.
+
+Checked `health.py` (rung 2 clear, no BLOCKER; one APP-tagged WARN in REVIEW.md about a "1 trees" pluralization bug in MapSearch.swift, correctly left alone per its own note that night runs don't touch app UI Swift), `sightings_inbox.py --status` (nothing waiting) and `recognise.py --stuck` (backlog still at zero) before starting.
+
+
 
 An earlier attempt in this window stopped after 24 minutes with 96 unspent, having already released cleanly (no half-finished work behind it). Started from three standing claims left by attempts before that: `hallstatt` (verify, already finished, 4 trees sitting uncommitted), `busan` and `saopaulo` (write, but both cities are below the 4-tree floor with their register/Wikidata supply already exhausted, so nothing productive to write toward publication). Released busan and saopaulo's stale write claims rather than force research that CLAUDE.md itself rules out (from-zero web research on an unnamed city).
 
