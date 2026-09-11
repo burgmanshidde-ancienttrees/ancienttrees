@@ -1,0 +1,200 @@
+{
+ "_note": "Dutch overlay for Haarlem, hand-written 2026-09-11. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/haarlem.json. The search term is 'monumentale bomen', which is what Dutch readers type, what the national register behind most of this page is actually called (Landelijk Register Monumentale Bomen), and the exact phrase the IVN/Bomenstichting walk for this city uses ('Langs monumentale bomen in Haarlem'); 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and uncertainty comes from the English file and is rendered, never sharpened.",
+ "city": "Haarlem",
+ "title": "Monumentale bomen in Haarlem: de 21 mooiste",
+ "meta_description": "De oudste bomen van Haarlem, met een beuk waarin een verbannen koning kerfde en de dikste boom van de stad in de tuin van het provinciehuis.",
+ "intro": "De oudste bomen van Haarlem komen grotendeels uit dezelfde hoek: de modieuze negentiende-eeuwse landschapsstijl, en vooral uit één familie. De Zochers vormden een gesloopte vestinglinie om tot het Kenaupark, hertekenden de middeleeuwse Haarlemmerhout en legden de begraafplaats aan de Kleverlaan in Engelse landschapsstijl aan, alle drie binnen een paar decennia van elkaar. Ouder nog zijn een beuk waarin een verbannen koning op zijn eigen regeringsbuiten de tijd verdreef met kerven, en een plataan die zo dik is dat er meerdere mensen nodig zijn om hem te omvatten, in de tuin van het provinciehuis zelf.",
+ "question_title": "Wat is de oudste boom van Haarlem? (ruim 230 jaar)",
+ "question_meta": "Een beuk waarin de verbannen koning van Holland tussen 1808 en 1810 kerfde is de oudste boom van Haarlem. De kerving is nu bijna dichtgegroeid.",
+ "question_answer": "De oudste gedocumenteerde boom van Haarlem is de beuk van Lodewijk Napoleon in de Haarlemmerhout, waarin de verbannen koning van Holland ergens tussen 1808 en 1810 een gekroond koninklijk monogram sneed. De kerving zelf is inmiddels bijna helemaal dichtgegroeid, maar de boom, waarschijnlijk ruim 230 jaar oud, staat nog altijd in het oudste stadspark van Nederland.",
+ "question_context": "De leeftijdsclaims van Haarlem splitsen zich langs een duidelijke lijn: aan de beuk van Lodewijk Napoleon hangt een echte historische gebeurtenis, een specifieke verbannen koning die in een tijdvak van twee jaar een specifiek teken sneed, en daarom ankert hij deze lijst als de oudste, ook al heeft niemand ooit zijn ringen geteld. De drie andere kandidaten zijn eerlijk gezegd minder zeker. Van de dikste boom van Haarlem, de plataan bij het provinciehuis, is helemaal geen plantjaar vastgelegd; alleen zijn omvang wijst op een negentiende-eeuwse herkomst, en dat is een gevolgtrekking uit de stamomtrek en geen gedocumenteerd feit. De taxus op de begraafplaats aan de Kleverlaan en de rode beuk in het Kenaupark horen allebei bij de negentiende-eeuwse landschapsplannen van de familie Zocher, binnen een paar decennia van elkaar aangelegd, en ze zijn allebei oud genoeg om hun eigen terrein te ankeren zonder dat een bron een precieze leeftijd geeft. Die onzekerheid is niets ongewoons voor stadsbomen die zijn geplant voordat gemeentelijke administratie routine werd; het betekent alleen dat de gekroonde R in de bast van één beuk, hoe vaag inmiddels ook, het meest specifieke bewijsstuk blijft dat de boomgeschiedenis van deze stad te bieden heeft.",
+ "faq": [
+  {
+   "q": "Wat is de oudste boom van Haarlem?",
+   "a": "De beuk van Lodewijk Napoleon in de Haarlemmerhout, waarin de verbannen koning van Holland tussen 1808 en 1810 een koninklijk monogram sneed, waarschijnlijk ruim 230 jaar oud."
+  },
+  {
+   "q": "Zijn de monumentale bomen van Haarlem gratis te bezoeken?",
+   "a": "Bijna allemaal. Twintig van de eenentwintig staan in openbare parken of op een openbare begraafplaats, tijdens de gewone openingstijden gratis toegankelijk. De uitzondering is een Kaukasische vleugelnoot in een particuliere villatuin aan het Statenbolwerk, te zien vanaf het openbare voetpad ervoor, maar niet iets waar je naartoe kunt lopen."
+  },
+  {
+   "q": "Wat is de dikste boom van Haarlem?",
+   "a": "Een plataan in de tuin van Paviljoen Welgelegen, het provinciehuis van Noord-Holland, met een stam van zes meter in omtrek."
+  },
+  {
+   "q": "Waarom komen zoveel oude bomen van Haarlem uit de negentiende eeuw?",
+   "a": "De landschapsarchitectenfamilie Zocher hertekende binnen een paar decennia een groot deel van het groen van de stad: de Haarlemmerhout, het Kenaupark en de begraafplaats aan de Kleverlaan dragen allemaal hun plantplan."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "haa_001": {
+   "name": "De beuk van Lodewijk Napoleon",
+   "species": "Beuk (Fagus sylvatica)",
+   "age_estimate": "ruim 230 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "15 tot 20 minuten lopen vanaf station Haarlem Centraal, of met tram of bus",
+   "story": "Een eenzame, verbannen koning verdreef de tijd door zijn eigen koninklijke monogram in een beuk te kerven, en twee eeuwen later is er bijna niets meer van te zien. Lodewijk Napoleon, die in 1806 door zijn broer als eerste koning van Holland was neergezet, verbleef op het regeringsbuiten dat nu Paviljoen Welgelegen heet, een klein stukje lopen van dit deel van de Haarlemmerhout, en sneed ergens tussen 1808 en 1810 een gekroonde letter R in de bast, R van Roi, het Franse woord voor koning. Naar Nederlandse maatstaven was hij geen populaire vorst, vooral onthouden omdat hij zich verzette tegen de hardere eisen die zijn broer aan de Nederlandse economie stelde, tot Napoleon hem in 1810 afzette en het koninkrijk rechtstreeks bij Frankrijk inlijfde. De kerving overleefde die regeerperiode met twee eeuwen, langzaam dichtgroeiend terwijl de bast om de oude wond heen groeide en heelde, zoals elk litteken op een boom die blijft leven uiteindelijk wegtrekt. In 2025 meldden boomverzorgers bij een inspectie dat er praktisch niets meer van te onderscheiden was, kroontje en letter allebei opgeslokt door de groei. De beuk staat in de Haarlemmerhout, het oudste stadspark van Nederland, dat zelf tijdens het Spaanse beleg van Haarlem in 1572 en 1573 tot de grond toe afbrandde en vanaf 1584 opnieuw werd geplant. Deze boom is dus een tweede of derde generatie bos op grond waarover meer dan eens is gevochten."
+  },
+  "haa_002": {
+   "name": "De plataan van het provinciehuis",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "niet gedocumenteerd, waarschijnlijk negentiende-eeuws",
+   "access": "Gratis, tuin op elk moment open; het provinciehuis zelf gaat alleen open voor tentoonstellingen, openbare vergaderingen of Open Monumentendag",
+   "transport": "15 tot 20 minuten lopen vanaf station Haarlem Centraal, of met tram of bus",
+   "story": "De dikste boom van Haarlem staat in de tuin van het provinciebestuur zelf, een plataan met een stam van zes meter omtrek, gemeten op borsthoogte, waar meerdere volwassenen met de handen in elkaar voor nodig zijn om hem helemaal te omvatten. Hij staat op het terrein van Paviljoen Welgelegen, een buitenhuis dat in de jaren 1780 voor een rijke Haarlemse koopman werd gebouwd en later het provinciehuis van Noord-Holland werd, met een tuin die de Griffietuin heet. Geen enkele bron legt vast wanneer de boom precies is geplant, al betekent een plataan die in het Nederlandse klimaat zo dik wordt doorgaans anderhalve eeuw of meer gestaag groeien, wat de herkomst waarschijnlijk ergens in de negentiende eeuw plaatst, ongeveer in de tijd dat de buitenplaats van particuliere lusttuin tot bestuurszetel werd. Bij de renovatie van de Griffietuin van de afgelopen jaren is die bewust weer verbonden met het naastgelegen Frederikspark, waarmee een stuk groen terug is dat bezoekers vrij kunnen doorlopen, ook als het bestuursgebouw zelf dicht is. Dat gebouw gaat alleen helemaal open voor tentoonstellingen, openbare vergaderingen of Open Monumentendag, maar voor de tuin en zijn reuzenplataan heb je geen afspraak nodig, een zeldzaam geval waarin de boom makkelijker te bezoeken is dan de instelling die hem huisvest."
+  },
+  "haa_003": {
+   "name": "De taxus van de Kleverlaan",
+   "species": "Taxus (Taxus baccata)",
+   "age_estimate": "niet gedocumenteerd, beschreven als echt oud",
+   "access": "Gratis, begraafplaats overdag open tijdens de gewone openingstijden",
+   "transport": "Tram of bus naar Kleverpark en dan een klein stukje lopen, ruwweg 15 tot 20 minuten vanaf het centrum van Haarlem",
+   "story": "De oudste algemene begraafplaats van Haarlem is ook een van de beste plekken in de stad om te zien hoe een negentiende-eeuws idee van een vredig hiernamaals eruitzag, uitgedrukt in bomen. Zocher, dezelfde familie landschapsarchitecten die achter een groot deel van het Haarlemse parkgroen zit, legde begraafplaats Kleverlaan in 1828 aan op de plek van een voormalige boerderij, en koos daarbij de Engelse landschapsstijl boven de strakke formele rijen die toen gangbaarder waren voor begraafplaatsen: kronkelende paden, vijvers, flauwe hellingen en bomen die om hun eigen karakter werden geplant in plaats van in eentonige rijen van dezelfde soort. Tussen het resultaat staat een oude taxus, een soort die eeuwenlang bewust en keer op keer op Europese begraafplaatsen is geplant vanwege de associatie met rouw en, iets minder somber, omdat taxussen simpelweg langer leven dan bijna alles wat ernaast de grond in gaat, onder de juiste omstandigheden zelfs langer dan de begraafplaats zelf. Naast hem groeien watercipressen en moerascipressen, een Atlasceder en een ginkgo, allemaal uit hetzelfde oorspronkelijke plantplan, al geeft geen enkele bron de precieze leeftijd van de taxus, verder dan dat hij echt oud is en niet alleen volgroeid. De begraafplaats blijft tijdens de gewone openingstijden gratis open voor bezoekers, een werkende dodenakker die tegelijk, bijna en passant, een van de betere bomencollecties van Haarlem is."
+  },
+  "haa_004": {
+   "name": "De rode beuk van het Kenaupark",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "niet gedocumenteerd, waarschijnlijk ongeveer 150 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "10 tot 15 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Deze rode beuk staat voor een negentiende-eeuwse villa met zo'n theatrale, diep purperrode kroon dat hij bijna te bewust gecomponeerd lijkt om echt te zijn, het soort boom dat niet zou misstaan achter een staatsieportret, als de schilders van de Haarlemse Gouden Eeuw het Kenaupark nog hadden meegemaakt. Het park zelf stamt uit 1865 en is ontworpen door vader en zoon Zocher, dezelfde familie die een eeuw eerder de Haarlemmerhout hertekende en de begraafplaats aan de Kleverlaan aanlegde, hier op de plek van de oude stadsvestingwerken, nadat de Haarlemse muren waren gevallen en de grond eronder een nieuwe bestemming nodig had. Het Kenaupark is genoemd naar Kenau Simonsdochter Hasselaer, een Haarlemse vrouw die, met enige historische overdrijving, wordt geroemd om haar aandeel in de verdediging van de stad tijdens het beleg van 1572 en 1573, een van de weinige Nederlandse vrouwen uit die tijd van wie de naam het tot een plein heeft gebracht. Van de beuk zelf is geen precieze plantdatum vastgelegd, al wijzen zijn omvang en het stichtingsjaar van het park op ruwweg anderhalve eeuw groei. Hij deelt het park met monumentale platanen, een cipressengroep, eiken, een walnoot en een groep kastanjes, allemaal onderdeel van hetzelfde oorspronkelijke plantplan waarmee een Haarlemse gemeenteraad van een gesloopte vestinglinie iets sierlijks maakte in plaats van alleen iets functioneels."
+  },
+  "haa_005": {
+   "name": "De treurbeuk van het Prinsenhof",
+   "species": "Treurbeuk (Fagus sylvatica 'Pendula')",
+   "age_estimate": "ongeveer 120 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "10 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Het Prinsenhof is al langer tuin dan Haarlem een vorstenhuis heeft om een park naar te noemen: een kloostertuin van voor 1477, toen het kerkhof van het klooster zelf de grond overnam, en in 1721 trok de officiële stadskruidentuin er in en bleef. Wat bezoekers vandaag doorlopen is een gemeentelijk plantsoen dat nog altijd een werkende kruidencollectie onderhoudt, met daarnaast een monumentale treurbeuk die aan het begin van de twintigste eeuw is geplant, een lijn van kloostergeneeskunde naar openbaar stadsgroen die de meeste Nederlandse steden niet zo zuiver op één perceel kunnen trekken. Treurbeuk is geen wilde vorm maar een gecultiveerde, Fagus sylvatica 'Pendula', met takken die naar beneden zijn geleid in plaats van naar het licht te reiken, waardoor de boom er zelfs in blakende gezondheid uitziet als een boom die halverwege een instorting is stilgezet. De tuin ligt op een paar tientallen meters van een kastanje en, iets verder lopen, van een eik in de naastgelegen Wijngaardtuin, allebei uit dezelfde reeks Haarlemse tuinen die op oude kloostergrond zijn aangelegd. Hij staat in de open lucht, gratis, op land dat al ruim vijf eeuwen op de een of andere manier in cultuur is, ook al heeft deze boom daar maar een klein deel van meegemaakt."
+  },
+  "haa_006": {
+   "name": "De zomereik van de Wijngaardtuin",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ongeveer 150 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "10 minuten lopen vanaf station Haarlem Centraal",
+   "story": "De Wijngaardtuin is genoemd naar een kloosterwijngaard die hier in de zestiende eeuw werd geplant, grond die generaties lang onder religieuze cultuur bleef voordat de stad hem als openbaar park overnam. Aan het eind van de negentiende eeuw werd de tuin opnieuw ingericht, waarschijnlijk door L.P. Zocher, uit dezelfde dynastie van landschapsarchitecten die de Haarlemmerhout hertekende en binnen een paar decennia van dezelfde opdracht het Kenaupark aanlegde. Deze zomereik stamt uit die herinrichting, ergens rond 1870 tot 1880 geplant. Hij staat bij een beeld dat Ontmoeting heet, een van de recentere toevoegingen aan een tuin waarvan de eigen geschiedenis ruwweg vijf eeuwen teruggaat, naar wijnranken in plaats van eiken. Een klein stukje lopen verderop, in het naastgelegen Prinsenhof, groeit een treurbeuk uit ongeveer dezelfde periode op grond met een nog oudere kloosterlijke stamboom; samen vormen de twee tuinen een kleine, beloopbare strook van wat eerst helemaal kerkelijk land was, pas aan openbaar gebruik gegeven nadat de gebouwen die de muren rechtvaardigden waren verdwenen. De eik groeit in de open lucht, op elk moment gratis om naartoe te lopen, niet anders dan elke andere boom in een stadspark, behalve om wat er vroeger op de grond eronder groeide."
+  },
+  "haa_007": {
+   "name": "De moerascipressen van het Kenaupark",
+   "species": "Moerascipres (Taxodium distichum)",
+   "age_estimate": "ongeveer 130 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "5 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Zes moerascipressen groeien samen op de laagste, natste grond van het Kenaupark, en die plek is geen toeval. Taxodium distichum is een van de weinige naaldbomen die stilstaand water verdraagt, van nature thuis in de moerassen van het zuidoosten van de Verenigde Staten, en wie deze groep aan het eind van de negentiende eeuw plantte, kende de soort duidelijk goed genoeg om hem precies daar te zetten waar een gewone boom het moeilijk zou hebben. Naaldbomen zo in groepen zetten was een gewoonte van de familie Zocher, vader en zoon, de landschapsarchitecten die het Kenaupark in 1865 ontwierpen op de plek van de gesloopte Haarlemse vestingwerken, met de villa's rondom het park die in de jaren direct daarna verrezen. Het register voert de zes als één monumentale vermelding in plaats van als zes losse bomen, en beschouwt daarmee de groep als het beschermwaardige in plaats van een enkele stam, dezelfde logica als bij de platanengroep en de rode beuk van het Kenaupark ernaast. Moerascipres laat elk najaar zijn naalden vallen, wat een naaldboom niet vaak doet en in gematigde tuinen een zeldzaamheid is, dus die lage grond gaat van groen naar roestoranje en een paar weken later kaal. De groep staat in het open park, gratis, een paar stappen van de rode beuk van het Kenaupark en de platanengroep ernaast."
+  },
+  "haa_008": {
+   "name": "De platanen van het Kenaupark",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ongeveer 160 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "5 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Drie gewone platanen staan samen bij het begin van het Kenaupark, geplant in de eerste jaren nadat de familie Zocher het park in 1865 uitlegde over de gesloopte linie van de oude Haarlemse vestingwerken. De villa's die het park nu omringen kwamen er in de jaren direct daarna, dus deze platanen zijn ouder dan bijna elk gebouw dat ernaar kijkt, bij de eerste aanplant op grond die een paar jaar eerder nog aarden wal en gracht was. De gewone plataan is zelf een kruising, tussen de Amerikaanse en de oosterse plataan, voor het eerst gekweekt in het zeventiende-eeuwse Europa en geliefd omdat hij precies de verdichte, omgewoelde bodem verdraagt die een net dichtgegooide vesting te bieden heeft. Het register behandelt de drie bomen als één monumentale vermelding in plaats van als drie afzonderlijke, waarbij de groep en niet een enkele stam als beschermwaardig is beoordeeld, net zoals de moerascipressengroep een paar tientallen meters verderop is ingeschreven. Ze staan in de open lucht op openbaar parkgroen, elke dag gratis om langs te lopen, en zo dicht bij de rode beuk en de linde van het Kenaupark dat je met één halte vier van de oudste aanplantingen van het park meepakt."
+  },
+  "haa_009": {
+   "name": "De Hollandse linde van het Kenaupark",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ongeveer 110 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "5 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Deze Hollandse linde is de jongste van de beschermde bomen in het Kenaupark, geplant aan het begin van de twintigste eeuw, decennia nadat het ontwerp van de familie Zocher uit 1865 al was uitgegroeid tot het park waar bezoekers vandaag door lopen. De oudste aanplant van het Kenaupark, de platanen en de moerascipressengroep, ging de grond in tijdens de eerste jaren van het park; deze linde is een latere toevoeging aan een al gevestigd landschap, dicht genoeg bij het oorspronkelijke ontwerp dat het register hem nog steeds tot hetzelfde historische plantplan rekent in plaats van hem als late indringer te behandelen. De Hollandse linde is zelf een hybride en geen zelfstandige wilde soort, een natuurlijke kruising tussen de winterlinde en de zomerlinde, die eeuwenlang de standaardboom van Nederlandse straten en parken was, gewaardeerd omdat hij snoeien en stadsomstandigheden beter verdraagt dan de meeste bomen van zijn formaat. Deze staat binnen honderd meter van de rode beuk, de platanengroep en de moerascipressen van het Kenaupark, op grond die nog binnen het geheugen van de eerste planters hier open vestingwal was. Hij staat in het open park, gratis, een paar minuten lopen van station Haarlem Centraal."
+  },
+  "haa_010": {
+   "name": "De ginkgo van de Bolwerken",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "ongeveer 110 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "10 tot 12 minuten lopen vanaf station Haarlem Centraal",
+   "story": "De Bolwerken is de oudere groene ring van Haarlem, vanaf 1828 aangelegd door JD Zocher toen de vestingwerken van de stad vielen en een openbare bestemming nodig hadden, decennia voordat zijn zoon meehielp aan het ontwerp van het Kenaupark een paar honderd meter oostelijker. Het meeste groen in het park is van datzelfde ontwerp uit 1828. Deze ginkgo niet: het register dateert hem in de jaren tien van de twintigste eeuw, aangekomen op het gazon aan de voet van een lage heuvel, bijna een eeuw nadat Zocher de paden eromheen had gelegd, een latere toevoeging aan een al volgroeid landschap in plaats van een deel van de oorspronkelijke aanplant. Ginkgo biloba is een van de oudste boomgeslachten die nog leven, zonder verwantschap met enige andere levende boomfamilie, en dat is een deel van de reden dat parken uit deze periode er graag een aan toevoegden: een curiositeit die de dinosaurussen al had overleefd lang voordat iemand bedacht hem in een Nederlands park te zetten. Doordat hij alleen op open gazon staat in plaats van in een groep zoals de beuken en eiken in de buurt, heeft hij ruimte en licht gehad die een dichte aanplant hem niet had gegeven. Hij staat tussen de Noorderbrug en de kruising met de Kruisweg, in een gratis, open stuk park op zo'n tien minuten van Haarlem Centraal, en is een logische uitbreiding van een wandeling die de groep in het Kenaupark toch al meepakt."
+  },
+  "haa_011": {
+   "name": "Het eikenduo van het Statenbolwerk",
+   "species": "Eik (Quercus robur of Quercus petraea; het register zegt niet welke)",
+   "age_estimate": "ongeveer 170 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "10 tot 12 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Twee eiken flankeren het begin van een voetpad aan de westkant van het Statenbolwerk, in de jaren 1850 geplant om de ingang te markeren zoals een poort dat zou doen, een jaar of tien voordat de villa's verrezen die het park nu omzomen. Het Haarlemse register houdt ze als één vermelding in plaats van twee, want het paar zelf is het punt: een eik aan weerszijden van een pad leest als een ingang op een manier die één losse eik nooit zou halen. Het register zegt niet welke eik het is. Quercus robur, de zomereik, en Quercus petraea, de wintereik, groeien allebei in Nederlandse parken van deze leeftijd, en noch het register noch een andere bron die deze ronde is gevonden brengt het verder, dus deze pagina noemt het paar eerlijk eik, soort niet vastgesteld, tot iemand die beter naar blad en eikel kijkt ons vertelt welke van de twee. Dat gat doet niets af aan de bomen zelf: met hun ongeveer 170 jaar zijn ze precies even oud als de villa's van het Statenbolwerk, geplant in hetzelfde decennium waarin het wandelpark van Zochers oorspronkelijke ontwerp uit 1828 uitgroeide tot de woonwijk die er nog omheen ligt. Ze staan vrij en open op openbaar parkgroen, een paar minuten van drie andere Statenbolwerkbomen op deze pagina en van de groep in het Kenaupark een paar honderd meter verder, deel van dezelfde groene ring die de gesloopte stadsmuren van Haarlem verving."
+  },
+  "haa_012": {
+   "name": "De Kaukasische vleugelnoot van het Statenbolwerk",
+   "species": "Kaukasische vleugelnoot (Pterocarya fraxinifolia)",
+   "age_estimate": "ongeveer 120 jaar",
+   "access": "Te zien vanaf het openbare voetpad langs het Statenbolwerk; de boom staat op het terrein van Staten Bolwerk 1, een particuliere villa (in het register staat de eigenaar als particulier), dus naar de stam zelf kun je niet toelopen. Het register noemt hem zelf bezoekbaar en zichtbaar, beide met ja.",
+   "transport": "10 tot 12 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Deze Kaukasische vleugelnoot groeit in de tuin van een particuliere villa aan het Statenbolwerk 1, en de eerlijke manier om hem te bekijken is vanaf het voetpad ervoor en niet bij de stam: het landelijke register van monumentale bomen noteert hem als zichtbaar vanaf openbare grond, ook al is de grond waarop hij staat dat niet. Pterocarya fraxinifolia komt uit de bossen rond de Kaukasus en de zuidoever van de Kaspische Zee, een verwant van de walnoot die wordt geplant om zijn lange hangende kettingen gevleugelde zaden en niet om zijn hout, en hij wortelde hier in het eerste decennium van de twintigste eeuw, toen de statige villa's van het Statenbolwerk al langs de oude vestingwandeling stonden die Zocher in 1828 aanlegde. Met zijn ongeveer 120 jaar is hij een van de jongere bomen op deze pagina, maar vleugelnoten groeien snel en breed, en deze heeft er de ruimte van een particuliere tuin voor gehad, zonder de gebruikelijke krapte van een park. Wat een bezoeker krijgt is een uitzicht en geen wandeling tot aan de stam: ga op het pad langs het Statenbolwerk staan en de kroon komt boven de heg van de villa uit, in hetzelfde korte stukje park dat ook twee andere van de nieuwste bomen op deze pagina herbergt, het eikenduo en het beukenensemble, die allebei netjes op openbare grond staan, een paar tientallen meters verderop."
+  },
+  "haa_013": {
+   "name": "Het beukenensemble van het Statenbolwerk",
+   "species": "Beuk (Fagus sylvatica)",
+   "age_estimate": "ongeveer 170 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "10 tot 12 minuten lopen vanaf station Haarlem Centraal",
+   "story": "Vier beuken groeien samen langs het voetpad van het Statenbolwerk bij huisnummer 26, geplant in de jaren 1850 als onderdeel van dezelfde plantgolf die het wandelpark tien jaar later zijn villa's gaf. Het Nederlandse register van monumentale bomen telt de vier als één vermelding, waarbij de rij en niet een enkele stam de bescherming verdiende, net zoals de platanen- en cipressengroepen van het Kenaupark een paar honderd meter verderop zijn ingeschreven. Een verwant heeft het niet gered. Een losse rode beuk op ongeveer 200 meter van deze groep, aan het Statenbolwerk 2, was naar verluidt rond de 222 jaar oud toen storm Eunice hem in februari 2022 neerhaalde; de lokale berichtgeving over de val meldde dat zijn hout later tot snijplanken en messen is verwerkt in plaats van te blijven liggen. Dit ensemble is een andere boom, een gewone groene beuk, een andere registervermelding en een andere leeftijdsklasse, maar dat verlies herinnert eraan dat een storm het papierwerk van een boom niet controleert voordat hij valt. De vier staan in de open lucht op openbaar parkgroen, op elk moment gratis om langs te lopen, een kort stukje van het eikenduo, de vleugelnoot en de groep in het Kenaupark, die deze hoek van de oude Haarlemse vestingring tot een van de dichtste op de hele pagina maken."
+  },
+  "haa_014": {
+   "name": "De es van de Kleverlaan",
+   "species": "Gewone es (Fraxinus excelsior)",
+   "age_estimate": "ruwweg 140 tot 155 jaar",
+   "access": "Gratis, openbare begraafplaats (Algemene Begraafplaats Kleverlaan), overdag open tijdens de gewone openingstijden",
+   "transport": "Tram of bus naar Kleverpark en dan een klein stukje lopen, ruwweg 15 tot 20 minuten vanaf het centrum van Haarlem (dezelfde halte als de taxus van de Kleverlaan)",
+   "story": "De algemene begraafplaats aan de Kleverlaan is waar Haarlem zijn beste bomen bewaart, en deze es is een van de redenen dat begeleide bomenwandelingen hier überhaupt stoppen. Hij staat in het oudste deel, aan de zuidkant, in een bocht van het pad met de graven dicht om zijn wortels heen. Het landelijke register van monumentale bomen zet de aanplant ergens tussen 1870 en 1880, dus is hij ruwweg 140 tot 155 jaar oud, en die band is zo precies als de administratie toelaat. Een es krijgt zelden de kans de boom te zijn die mensen opvalt. Herfstkleur die de naam waard is heeft hij niet, de bast blijft grijs en stil, en het blad valt vroeg en min of meer in één keer. Wat hij in plaats daarvan heeft is hoogte en een lichte, open kroon waardoor het gras tot tegen de stam doorgroeit, en na anderhalve eeuw boven dezelfde graven heeft deze van beide ruim voldoende. Het register is de enige bron die juist deze boom benoemt, en daarom staan de jaartallen hier toegeschreven en niet beweerd; de beuken, de ceder, de walnoot en de taxus van de begraafplaats zijn veel beter gedocumenteerd dan haar es. Weet je wanneer hij de grond in ging, of wie hem plantte, laat het ons weten. Hij staat op ongeveer honderd meter van de taxus van de Kleverlaan, dus de twee vormen één halte in plaats van twee."
+  },
+  "haa_015": {
+   "name": "De Amerikaanse eik van de Kleverlaan",
+   "species": "Amerikaanse eik (Quercus rubra)",
+   "age_estimate": "ruwweg 115 tot 125 jaar",
+   "access": "Gratis, openbare begraafplaats, overdag open tijdens de gewone openingstijden",
+   "transport": "Tram of bus naar Kleverpark en dan een klein stukje lopen, ruwweg 15 tot 20 minuten vanaf het centrum van Haarlem",
+   "story": "Kom binnen door het hek aan de Kleverlaan en het eerste wat je tegenkomt is een laan vleugelnoten. Deze Amerikaanse eik staat één verbindingspad naar links daarvan, precies waar het register je zegt te kijken. Quercus rubra is geen Nederlandse boom. Hij kwam van de oostkust van Noord-Amerika en Nederlandse parken en begraafplaatsen plantten hem vanaf de negentiende eeuw op grote schaal, vooral om wat hij in de herfst doet. Inheemse eiken worden bruin en houden het blad de halve winter vast. Deze wordt eind oktober dieprood en laat los. Het register dateert de aanplant tussen 1900 en 1910, wat hem ruwweg 115 tot 125 jaar oud maakt, jong voor een monumentale boom en respectabel voor een Amerikaanse eik op een Nederlandse begraafplaats. Hij heeft ruim een eeuw begrafenissen naast het hek zien langskomen. De begraafplaats is een van de drie haltes op de monumentale bomenwandeling van de Bomenstichting door Haarlem, en deze eik is een van de redenen dat de route hier komt, al is het landelijke register nog steeds de enige bron die de boom zelf vastlegt. Neem de jaartallen dus als die van het register en niet als een meting. Zijn blad is de makkelijke controle: breed, met ondiepe lobben die uitlopen in fijne stekelpuntjes, en veel groter dan wat een inheemse eik maakt."
+  },
+  "haa_016": {
+   "name": "De robinia van de Kleverlaan",
+   "species": "Gewone robinia (Robinia pseudoacacia)",
+   "age_estimate": "ruwweg 95 tot 105 jaar",
+   "access": "Gratis, openbare begraafplaats, overdag open tijdens de gewone openingstijden",
+   "transport": "Tram of bus naar Kleverpark en dan een klein stukje lopen, ruwweg 15 tot 20 minuten vanaf het centrum van Haarlem",
+   "story": "Deze robinia heeft zijn voeten in een heg. Het register zet hem in het eerste vak links als je door de ingang komt, langs het pad, met de voet van de stam in geschoren groen, een vreemde ligplaats voor een boom van bijna een eeuw. Robinia pseudoacacia kwam in het begin van de zeventiende eeuw uit de Appalachen naar Europa en draagt de naam van Jean Robin, hovenier van de Franse koningen. Hij verspreidde zich over het continent als straat- en parkboom omdat hij snel groeit, arme dunne grond verdraagt en ongeveer twee weken per jaar buitengewoon ruikt. Eind mei en begin juni hangt hij witte vlinderbloemen in trossen en draagt de geur een heel eind over een stil pad. De rest van het jaar is hij een sjofeler geval: diep gegroefde bast als gedraaid touw, een kroon die half in elkaar gezet lijkt, takken die in stormen afbreken. Het register dateert de aanplant tussen 1920 en 1930, dus ruwweg 95 tot 105 jaar, en het is de enige vastlegging van juist deze boom die we hebben gevonden. Geen tweede bron noemt hem, dus lees de leeftijd als de schatting van het register. Hij staat binnen honderd meter van de Amerikaanse eik en de zilverlinde, waarmee de drie samen één kort rondje net binnen het hek vormen."
+  },
+  "haa_017": {
+   "name": "De zilverlinde van de Kleverlaan",
+   "species": "Zilverlinde (Tilia tomentosa)",
+   "age_estimate": "ruwweg 175 tot 185 jaar",
+   "access": "Gratis, openbare begraafplaats, overdag open tijdens de gewone openingstijden",
+   "transport": "Tram of bus naar Kleverpark en dan een klein stukje lopen, ruwweg 15 tot 20 minuten vanaf het centrum van Haarlem",
+   "story": "Elke zomer liggen er dode hommels onder zilverlindes, en botanici bakkeleien al een eeuw over waarom. De oude verklaring was dat de nectar van Tilia tomentosa licht giftig is voor bijen. De huidige is duffer en triester: de boom bloeit als bijna niets anders meer bloeit, dus late hommels met niets over om te bezoeken werken hem af tot ze uitgeput raken. Hoe dan ook is dit een boom die insecten trekt nadat de rest van de stad klaar is met bloeien. Hij staat in het oudste deel van de begraafplaats aan de Kleverlaan, op een pad langs het water. Het landelijke register zet de aanplant tussen 1840 en 1850, wat hem ruwweg 175 tot 185 jaar oud maakt en een van de oudste dingen die op deze grond groeien. Draai een blad om en de onderkant is wit van vilt, waar de naam vandaan komt en waarom de hele kroon bleek flikkert als er wind door trekt. Het is ook de reden dat de soort stadsvuil zo goed overleeft: het vilt schudt het af. Het register is de enige bron die we voor deze boom hebben gevonden. Niemand heeft een omtrek of een gemeten leeftijd gepubliceerd, dus de band hierboven is de schatting van het register en niet iemands meetlint. Heb je hem gemeten, dan willen we het getal graag hebben."
+  },
+  "haa_018": {
+   "name": "De Zocherbeuken",
+   "species": "Beuk (Fagus sylvatica)",
+   "age_estimate": "ruwweg 175 tot 225 jaar",
+   "access": "Gratis, openbare begraafplaats, overdag open tijdens de gewone openingstijden",
+   "transport": "Tram of bus naar Kleverpark en dan een klein stukje lopen, ruwweg 15 tot 20 minuten vanaf het centrum van Haarlem",
+   "story": "De twee mannen die deze begraafplaats aanlegden liggen er zelf begraven, en drie beuken dragen hun naam. Vader en zoon Zocher waren de landschapsarchitecten van het terrein aan de Kleverlaan, en twee begraafplaatsregisters plaatsen hun graven aan de oostkant, bij de Schoterweg. Het register voert op diezelfde plek drie beuken die bij elkaar staan onder één vermelding: Zocherbeuk. Of de bomen bij de graven zijn geplant of de graven tussen al staande beuken zijn gelegd, staat in geen enkele bron die we konden bereiken helder vermeld, en we gaan niet doen alsof dat anders is. Het register geeft een plantband van 1800 tot 1850, dus ruwweg 175 tot 225 jaar, een marge die ruim genoeg is voor beide versies. Wat niet ter discussie staat is wat ze met de grond doen. Een volgroeide beuk houdt zijn laagste takken laag en zwiept ze zijwaarts naar buiten, en drie samen maken één donkere kamer met een vloer van napjes en niets dat er groeit. Dat is de boom aan het werk: beukenblad geeft de diepste schaduw van alle Europese loofbomen, en eronder overleeft heel weinig. In november gaan de kronen samen koper. In februari, kaal, zijn de grijze stammen het mooiste op het pad. Er circuleert voor deze groep een omtrek van vier meter, en die hebben we niet kunnen bevestigen."
+  },
+  "haa_019": {
+   "name": "De plataan van het Frederikspark",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 155 tot 165 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "Ongeveer 20 tot 25 minuten lopen vanaf station Haarlem Centraal, of een korte busrit naar het Houtplein",
+   "story": "Vijf en een halve meter rond de stam en vierentwintig meter omhoog, op een restje groen tussen een druk kruispunt en de bushaltes van het Houtplein. Een professioneel boomverzorgingsbedrijf mat deze plataan op 175 centimeter stamdiameter, en daar komt dat omtrekcijfer vandaan; het landelijke register dateert de aanplant tussen 1860 en 1870, dus ruwweg 155 tot 165 jaar. Hij stond hier lang voordat het verkeer er was. De gewone plataan is de boom die steden aanhouden als ze niets anders aanhouden, en deze laat zien waarom. Hij neemt uitlaatgassen, verdichte grond, hard snoeien en wortelschade en gaat door. In plaats van te proberen door een eeuw roet te ademen laat hij zijn bast in platen los, en daarom is de stam gevlekt crème, olijf en grijs in plaats van gelijkmatig smerig. De soort is een hybride, een ongeluk tussen de Amerikaanse en de oosterse plataan dat in de zeventiende eeuw in Europa opdook en taaier bleek dan beide ouders. Ga er in de winter onder staan en het geraamte leest helder: een korte zware stam, dan takken die bijna horizontaal naar buiten gaan voordat ze omhoog draaien, met bobbelige zaadbollen die tot in het voorjaar aan lange draden blijven hangen. Twee onafhankelijke bronnen zijn het over deze boom eens, wat hem de best gedocumenteerde vermelding van het Frederikspark maakt en de makkelijkste om te vinden."
+  },
+  "haa_020": {
+   "name": "Het eikenduo van het Frederikspark",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 180 tot 190 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "Ongeveer 20 tot 25 minuten lopen vanaf station Haarlem Centraal, of een korte busrit naar het Houtplein",
+   "story": "Twee zomereiken staan samen aan de westkant van het Frederikspark, en op de datering van het register zijn zij het oudste wat erin staat. De plantband is 1840 tot 1850, dus ruwweg 180 tot 190 jaar, een paar decennia voor op de grote plataan aan de kant van het Houtplein. Oude eiken zijn in Nederlandse steden schaars om een onromantische reden: Quercus robur was de houtboom van de Republiek, gekapt meer waard dan overeind, en alles wat recht genoeg was ging in schepen, sluizen en sluisdeuren. Deze twee zijn lang genoeg met rust gelaten om geen hout meer te zijn en meubilair voor een park te worden. Een paar dat dicht bij elkaar wordt geplant groeit uit tot één ruzie om licht. Elke kroon helt van de ander weg en de takken aan de naar elkaar gekeerde kanten blijven kort, dus van een afstand lezen de twee als één scheve boom en vallen ze pas in twee uiteen als je eromheen loopt. In een goed mastjaar ligt het gras eronder in oktober vol eikels. Het landelijke register is de enige bron die we voor een van beide bomen hebben gevonden, dus de leeftijd is zijn schatting en geen gemeten cijfer, en niemand heeft een omtrek gepubliceerd. Krijg je hier een meetlint om een stam, dan horen we het getal graag."
+  },
+  "haa_021": {
+   "name": "De moeraseik van het Frederikspark",
+   "species": "Moeraseik (Quercus palustris)",
+   "age_estimate": "ruwweg 180 tot 190 jaar",
+   "access": "Gratis, openbaar park, op elk moment toegankelijk",
+   "transport": "Ongeveer 20 tot 25 minuten lopen vanaf station Haarlem Centraal, of een korte busrit naar het Houtplein",
+   "story": "De moeraseik bereikte de Europese tuinen aan het begin van de negentiende eeuw, wat betekent dat deze, als de datering van het register klopt, tot de eerste generatie hoort die hier is geplant. De band is 1840 tot 1850, dus ruwweg 180 tot 190 jaar oud, en hij staat langs het pad midden aan de noordkant van het Frederikspark. Quercus palustris is makkelijk zodra je er één hebt gezien. De onderste takken strijken naar de grond in plaats van naar het licht te reiken, het blad is ingesneden in diepe smalle lobben met stekelpunten, en de kroon houdt veel langer een nette kegelvorm dan een inheemse eik voor elkaar krijgt. Eind oktober wordt hij dan scharlaken en houdt die kleur weken vast, nadat de lindes en de essen het hebben opgegeven. De Engelse naam van de soort, pin oak, heeft niets met het blad te maken. Die komt van de korte harde pinachtige stompjes dode takjes die langs de stam en de binnenste takken blijven staan, een gewoonte die deze soort heeft en de meeste eiken niet. Van oorsprong is het een moerasboom, uit de natte laaglanden van het Amerikaanse Midwesten, en dat is een van de redenen dat hij het zo goed doet in een land dat op drassige grond is gebouwd. Het landelijke register is de enige bron die we hebben gevonden, dus lees de leeftijdsband als zijn schatting. Er is geen omtrek gepubliceerd."
+  }
+ }
+}

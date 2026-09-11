@@ -11,6 +11,50 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - Baltimore and Boise open at 4 trees each
+
+Committing verify+write work an earlier attempt in this window had already staged
+but not merged (city files sat untracked, claims still held). Checked both files
+against the research standard before shipping rather than trusting the claim:
+both clear the four-tree floor, every tree has honest sourcing (two of Baltimore's
+four and one of Boise's four are single-sourced and flagged accordingly, per
+Step 2's rule that a single source ships rather than holds a tree back), and
+location_precision is set honestly (confirmed where a source gives a trunk-level
+fix, approximate everywhere else).
+
+**Baltimore, 4 trees.** The Ruxton Liberty Tree (bal_001), a 350-380 year old
+white oak on private land, viewable from the public road at Dunlora Road and
+Bellona Avenue, its owners paying for 5,000 gallons of weekly watering to keep it
+alive; the Frederick Douglass Elm (bal_002) near Camden Yards, an undated English
+elm carrying an unproven but honestly-labelled local tradition that Douglass
+planted it as an enslaved child; and two Cylburn Arboretum champions, a cockspur
+hawthorn (bal_003, single-sourced, flagged) and a paperbark maple (bal_004,
+two sources). Both arboretum trees carry only park-level coordinates
+(location_precision: approximate) since neither this pass nor the Maryland Big
+Tree Program's JS-rendered database gave an exact spot; a future pass with a
+JS-capable fetch could tighten both. Photos missing on all four, an honest gap.
+
+**Boise, 4 trees.** Three Idaho state/city champions from the University of
+Idaho's Big Tree Program register (largest bur oak, largest Kentucky coffeetree,
+both in Julia Davis Park; largest giant sequoia, moved a quarter mile by flatbed
+in 2017 so St. Luke's Hospital could expand without felling it) plus a horse
+chestnut sapling grafted from the Amsterdam tree Anne Frank watched from the
+annex window, one of only eleven such grafts in the US, now older than the storm-
+felled 2010 parent. None of the three champions carry a documented age (Idaho's
+register measures size, not years, stated honestly on the page rather than
+guessed). Photos missing on all four.
+
+Also ran, since both cities had never been resolved in other languages:
+`scripts/city_names.py` (found local-name variants for both, no action needed
+beyond the alias file update), `scripts/city_queue.py` (re-ranked, rebuilt
+CITY_QUEUE.md and LEDGER.html), `scripts/tree_index.py` (67,610 trees indexed),
+`scripts/superlatives.py` (364 claims, no collisions), full Astro build and
+`scripts/qa.py` (8550 pages, clean). Both claims released. Note: city-list.json's
+rebuild only updates rows already present in the file and does not add new ones,
+so Baltimore and Boise do not yet appear there; harmless since nothing but
+brief.py reads city/status from it and CITY_QUEUE.md (the actual order) carries
+both correctly, but worth a look if a future session is touching that script.
+
 ## 2026-09-11 (continuation) - Tallinn deepened to 6: the Tammesalu Oak, Tallinn's thickest tree
 
 Verify pass on Tallinn (5 trees, rank 109, real demand: 36 impressions in the

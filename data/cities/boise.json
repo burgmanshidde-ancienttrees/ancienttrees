@@ -1,0 +1,160 @@
+{
+  "city": "Boise",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Boise's most remarkable trees are state and city champions rather than legends: the largest bur oak, the largest Kentucky coffeetree and the largest giant sequoia recorded anywhere in Idaho, the last of which travelled a quarter mile through the city on a flatbed in 2017 so a hospital could expand without cutting it down. A sapling grown from the Amsterdam tree Anne Frank could see from her window completes the four, planted at a memorial downtown after two years in quarantine.",
+  "meta_description": "Boise's champion trees: a sequoia moved a quarter mile by flatbed, the state's largest bur oak and coffeetree, and a sapling from Anne Frank's own tree.",
+  "question_meta": "Boise's oldest documented tree is a giant sequoia in Fort Boise Park, planted around 1912 and moved across the city in 2017.",
+  "question_answer": "Boise's oldest tree with a documented planting date is the giant sequoia in Fort Boise Park, planted around 1912 and moved a quarter mile from its original site behind St. Luke's Boise Medical Center in 2017. It is roughly 114 years old and the largest giant sequoia recorded in Idaho.",
+  "question_context": "The sequoia's age comes from its original planting date at the Pittenger family home around 1912, recorded in the Idaho Big Tree Program's champion register at its old address before a hospital expansion forced the 2017 move. Family history says the seedling arrived from California by way of the naturalist John Muir, a story repeated for a century and resting on the family's own telling rather than any document, kept here as the story the tree arrived with rather than a fact. Moving a hundred-year-old sequoia was a gamble; the arborists on the job put its remaining span at three to five more centuries if the roots took hold, and nine years on it is thriving in a public park. Two other champions in Julia Davis Park, a bur oak and a Kentucky coffeetree, are each the largest of their species recorded in Idaho, but the state's register measures size rather than years and gives no age for either. The fourth tree, a young horse chestnut grafted from the Amsterdam tree Anne Frank watched from the annex window, is only about a decade old, the newest planting on this list by far, at the city's own Anne Frank memorial downtown.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Boise?",
+      "a": "The giant sequoia in Fort Boise Park, planted around 1912 at a private home and moved a quarter mile across the city in 2017 so a hospital could expand on its original site. It is Idaho's largest recorded giant sequoia."
+    },
+    {
+      "q": "Are Boise's champion trees free to visit?",
+      "a": "Yes. All four stand in free public parks or at a free public memorial: Julia Davis Park, Fort Boise Park and the Idaho Anne Frank Human Rights Memorial."
+    },
+    {
+      "q": "Why don't the bur oak and coffeetree have a recorded age?",
+      "a": "Idaho's official Big Tree Program register measures the size of its champion trees, not their age, and neither species grows in a way that lets girth alone settle the question honestly. If you know when either was planted, tell us."
+    },
+    {
+      "q": "What is the connection between Boise and Anne Frank?",
+      "a": "Boise was one of only eleven U.S. sites chosen to receive a grafted sapling from the horse chestnut tree Anne Frank could see from the Amsterdam annex window before that parent tree fell in a 2010 storm. The sapling now grows at the city's own Anne Frank memorial."
+    }
+  ],
+  "trees": [
+    {
+      "id": "boi_001",
+      "name": "The Idaho Champion Bur Oak of Julia Davis Park",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 429,
+      "location": {
+        "address": "Julia Davis Park, Boise, Idaho",
+        "latitude": 43.6079,
+        "longitude": -116.2021,
+        "neighbourhood": "Julia Davis Park, central Boise"
+      },
+      "verified_sources": [
+        "https://www.newsbf.com/news/201511/20151124idahobigtreelist.pdf (Idaho Big Tree Program, University of Idaho Extension, official state champion-tree register, January 2014 edition, accessed and re-fetched this pass)",
+        "https://www.uidaho.edu/extension/forestry/big-trees"
+      ],
+      "access": "Free, public city park",
+      "transport": "Central Boise, walkable from downtown; Julia Davis Park also holds the Boise Art Museum, Zoo Boise and Idaho State Historical Museum",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Idaho's biggest bur oak is a tree that does not grow wild anywhere near Idaho. The species belongs to the prairies and river bottoms of the American Midwest, a thousand miles east. This one stands in Julia Davis Park in central Boise, and the University of Idaho's Big Tree Program, which keeps the state's official champion list, puts it at the top for its kind.\n\nThe measurements are 169 inches around the trunk, 429 centimetres, 54 inches through, and 105 feet tall. The height is the part worth pausing on. Bur oak on open ground is a spreading, heavy-limbed tree that puts its effort sideways, and thirty-two metres is tall for one.\n\nNobody has dated it. Champion registers record size rather than age, and bur oaks grow slowly enough that a girth figure alone will not settle the question, so this page carries no number instead of a flattering one. If you know when it went in, tell us.\n\nIt was nominated for the state list in 2008 and measured for the register's January 2014 edition, the most recent published figure we could find. The park around it also holds Zoo Boise, the Boise Art Museum and the Idaho State Historical Museum, so most people crossing it are on their way somewhere, walking past the largest tree of its species in the state.",
+      "how_to_recognise": "You can recognise it by the trunk, 429 centimetres round with 105 feet of tree above it, and by the acorns, whose cups carry a ragged fringe around the rim. It stands in Julia Davis Park; no bur oak in Idaho is bigger.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "boi_002",
+      "name": "The Moved Giant Sequoia of Fort Boise Park",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 114 years (planted 1912)",
+      "age_min": 110,
+      "age_max": 118,
+      "girth_cm": 569,
+      "location": {
+        "address": "Fort Boise Park, Boise, Idaho (moved here in 2017 from its original site behind St. Luke's Boise Medical Center, about a quarter mile away)",
+        "latitude": 43.6155,
+        "longitude": -116.1889,
+        "neighbourhood": "East End, Boise"
+      },
+      "verified_sources": [
+        "https://www.newsbf.com/news/201511/20151124idahobigtreelist.pdf (Idaho Big Tree Program register, official state champion listing, recorded at its original St. Luke's Hospital site, nominated by T. Kennedy in 2006)",
+        "https://abc7news.com/sequoia-giant-tree-moved-fort-boise-park/2149195/",
+        "https://www.kivitv.com/news/boises-giant-sequoia-on-the-move-saturday-night"
+      ],
+      "access": "Free, public city park (moved here specifically to remain publicly accessible when St. Luke's Hospital expanded on its original site)",
+      "transport": "Central Boise, walkable from downtown East End neighbourhood",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In June 2017 a hospital paid around $300,000 to move a tree a quarter of a mile. The tree was this giant sequoia, ten storeys of it by the local reckoning, lifted with its roots intact and walked through Boise on a Saturday night from the garden where it had stood since about 1912 to Fort Boise Park. St. Luke's Medical Center wanted a new tower on the old spot and did not want to be the people who cut the sequoia down.\n\nIt had been planted beside the home of Drs. Fred and Alice Pittenger. Family history holds that the seedling material came from California by way of the naturalist John Muir, which has been repeated for a century and rests on the family's own telling rather than on any document. Take it as the story the tree arrived with.\n\nThe University of Idaho's champion register measured it at its old address: 224 inches around, 569 centimetres, 70 inches through the trunk, 89 feet tall. It is the largest known giant sequoia in the state.\n\nMoving a sequoia at a hundred years old is a gamble. The arborists on the job put its remaining span at another three to five centuries if the roots took hold. Nine years on it is standing in a public park where anybody can walk up to it, which was the entire point of the exercise.",
+      "how_to_recognise": "You can recognise it by the bark, thick and fibrous and red-brown, on a trunk 569 centimetres round, and by the single tapering spire of its crown. It stands in Fort Boise Park, on the spot it was lowered onto in 2017.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "boi_003",
+      "name": "The Anne Frank Chestnut Sapling",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 11 to 15 years old",
+      "age_min": 11,
+      "age_max": 15,
+      "girth_cm": null,
+      "location": {
+        "address": "Idaho Anne Frank Human Rights Memorial, 770 S 8th St, Boise, Idaho 83702 (also cited as 800 S 8th St by the City of Boise's own page; the memorial address is disputed between two of its own official pages, not between our sources and a third party)",
+        "latitude": 43.61259,
+        "longitude": -116.2062,
+        "neighbourhood": "Near Boise State University / Boise River Greenbelt, downtown Boise"
+      },
+      "verified_sources": [
+        "https://www.spokesman.com/stories/2009/oct/28/a-living-connection/ (Spokesman-Review, 28 Oct 2009: Boise named one of 11 US sites to receive a grafted sapling from the Amsterdam Anne Frank tree, sapling then about 3ft tall, to undergo a 2-year quarantine at a city tree nursery before planting on a grassy berm near the Frank Church memorial tablet, in sightline of the Anne Frank statue)",
+        "https://www.wassmuthcenter.org/about-the-anne-frank-memorial/ (Wassmuth Center for Human Rights, co-operator of the memorial: confirms the sapling as a prominent installation; confirms the memorial is free, open year-round dawn to dusk, at 770 S 8th St)",
+        "https://www.cityofboise.org/departments/parks-and-recreation/parks/idaho-anne-frank-human-rights-memorial/ (City of Boise's own parks page: confirms the sapling 'is planted in the Memorial', address given as 800 S 8th St)",
+        "https://commons.wikimedia.org/wiki/File:AnneFrankHumanRightsMemorialSapling.jpg (CC BY-SA 4.0 photograph dated 13 May 2017, captioned 'a sapling from the Anne Frank tree, one of only 11 in the U.S., at the Anne Frank Human Rights Memorial in Boise, Idaho' -- direct dated evidence the tree was alive and already an established juvenile by 2017)",
+        "https://en.wikipedia.org/wiki/Anne_Frank_Human_Rights_Memorial (corroborates: sapling is one of only 11 Anne Frank saplings in the US, a prominent installation at the memorial)"
+      ],
+      "access": "Free, public memorial and park. Open year-round, seven days a week, dawn to dusk (Wassmuth Center for Human Rights, which co-maintains the site with the City of Boise). No admission fee; guided tours available with 48 hours' notice.",
+      "transport": "Downtown Boise, near Boise State University and the Boise River Greenbelt; walkable from downtown.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Anne Frank could see one tree from the annex, and this is its child. Chestnuts from that Amsterdam horse chestnut were raised into saplings, eleven of which were planted in the United States, one of them here. The parent, roughly 150 to 170 years old, came down in a storm in August 2010, so this graft has now outlived the tree it came from.\n\nNothing about its size or age argues for the trip. It reached Boise around October 2009 at about three feet tall and had to sit out roughly two years of quarantine in a city nursery before it could go in the ground. Nobody has published a firm planting date, so we date it loosely, somewhere between eleven and fifteen years old. If you know the year it went in, tell us.\n\nThe lineage is the whole case, and the company it keeps says what the distributors thought they were doing: the other American recipients include the White House, the 9/11 Memorial in New York and Central High School in Little Rock.\n\nIt grows on a grassy berm behind a low iron fence, ringed with pink roses, across from the plaza where a bronze Anne Frank stands at a window looking out. The memorial is free and open dawn to dusk, every day of the year.",
+      "how_to_recognise": "You can recognise it by the low iron fence and the ring of pink roses around it, and by its size: a young chestnut, not a big one. It stands on the grassy berm across from the plaza with the bronze statue of Anne Frank at her window.",
+      "why_go": "A direct graft of the Amsterdam horse chestnut Anne Frank watched from the annex window, one of only eleven planted in the United States, now older than the storm-felled parent tree itself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "boi_004",
+      "name": "The Idaho Champion Kentucky Coffeetree of Julia Davis Park",
+      "species": "Kentucky Coffeetree (Gymnocladus dioica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 328,
+      "location": {
+        "address": "Julia Davis Park, Boise, Idaho (exact spot within the park not independently pinned this pass; same public park as the already-published boi_001 Bur Oak)",
+        "latitude": 43.6079,
+        "longitude": -116.2021,
+        "neighbourhood": "Julia Davis Park, central Boise"
+      },
+      "verified_sources": [
+        "https://www.newsbf.com/news/201511/20151124idahobigtreelist.pdf (Idaho Big Tree Program, University of Idaho Extension, official state champion-tree register, January 2014 edition, page 19: Gymnocladus dioicus, Kentucky coffeetree, STATE record, 41in DBH, 129in circumference, 74ft tall, 12ft 1/4-avg-crown, 215 points, 'Julia Davis Park, Boise, Ada Co., ID', nominated by R. Mahoney, 1986)",
+        "https://sites.stat.washington.edu/jaw/CAW/june-2019-id-registry-big-trees.pdf (Idaho's Registry of Champion Big Trees, 13 June 2019 edition, University of Idaho Extension, page 9: identical figures -- 41in DBH, 129in circumference, 74ft, 12ft crown, 215 points, Julia Davis Park, Boise, Ada Co., ID, R. Mahoney, 1986 -- the same record still current five years after the first document checked here, i.e. not delisted as dead or removed in the intervening period)",
+        "https://www.uidaho.edu/extension/forestry/big-trees (Idaho Big Tree Program's own general programme page, same institution/register; cited the same way boi_001 and boi_002 already cite it in this city's published file)"
+      ],
+      "access": "Free, public city park (same park as boi_001, the Julia Davis Park Bur Oak). Also home to the Boise Art Museum, Zoo Boise and Idaho State Historical Museum.",
+      "transport": "Central Boise, walkable from downtown.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The largest Kentucky coffeetree in Idaho grows in a city park that also holds an art museum and a zoo. It stands 74 feet tall with a trunk 328 centimetres round, and it has held the state record since a University of Idaho forester nominated it in 1986.\n\nIt is an odd thing to be champion of. The species belongs to the Midwest rather than to the high desert, and its name is literal: settlers roasted the seeds as a substitute for coffee. Raw, the seeds and pods are mildly toxic, which is why the seedless cultivars are the ones cities plant today. The register does not record which kind this one is.\n\nEverything we know about it comes from one place. The Idaho Big Tree Program printed identical figures in its 2014 and 2019 editions, five years apart: 41 inches through the trunk at chest height, 74 feet tall, 215 points. That is one register republished rather than two sources agreeing, so the entry is flagged. What the repetition does tell us is that nobody struck the tree off in between.\n\nNobody has dated it. The register gives no age for any of its cultivated trees, so the field stays empty rather than filled with a guess. If you know when it went in, tell us. It shares Julia Davis Park with the champion bur oak, which makes the two an easy pair in one walk.",
+      "how_to_recognise": "You can recognise it by its height, 74 feet, and by the trunk, 328 centimetres round: no other Kentucky coffeetree in Idaho is bigger. It stands in Julia Davis Park, the same park as the champion bur oak.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
