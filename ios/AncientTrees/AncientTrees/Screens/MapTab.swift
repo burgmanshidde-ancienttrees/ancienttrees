@@ -367,11 +367,20 @@ struct MapTab: View {
         // inside the sheet they were below the peek height, so the one control
         // that changes what the whole screen shows was invisible until you
         // dragged. A filter you cannot see is a filter nobody uses.
+        // NOT RENDERED while search is open, rather than merely
+        // .accessibilityHidden: that modifier was tried first (976342c12) and
+        // did not stop appfit's element query from still finding this same
+        // button and its label underneath the search sheet on iOS 26.2 (it
+        // may have worked for VoiceOver; the query still saw it). Removing
+        // the view from the hierarchy outright cannot leak into any query,
+        // accessibility-based or not.
         .overlay(alignment: .top) {
-            VStack(spacing: 8) {
-                searchField
-                whereChip
-                filterRow
+            if !searching {
+                VStack(spacing: 8) {
+                    searchField
+                    whereChip
+                    filterRow
+                }
             }
         }
         // AT FULL HEIGHT ONLY, which is his own correction within the minute:
