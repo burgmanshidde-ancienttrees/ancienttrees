@@ -1059,7 +1059,6 @@ struct TreeDetail: View {
     private var factsBlock: some View {
         VStack(alignment: .leading, spacing: 0) {
             columns
-            girthLine
             locationLine
             if mine == nil, tree.paidEntry { ticketBand }
         }
@@ -1084,6 +1083,12 @@ struct TreeDetail: View {
     /// day ("ik ben voor labels on top"): a value that wraps grows downward and
     /// the labels stay level, so the row keeps its baseline. A moving divider
     /// had no such consolation.
+    ///
+    /// A THIRD COLUMN FOR GIRTH, when there is one to show or to fill (Hidde,
+    /// 2026-09-11: "kan girth niet gewoon als derde optie op dezelfde rij als
+    /// age en species?"). A row of its own under the two looked like a second
+    /// card. Thirds wrap a long species sooner, which labels-on-top absorbs
+    /// for the same reason it absorbed halves.
     private var columns: some View {
         HStack(alignment: .top, spacing: 0) {
             ageColumn
@@ -1093,6 +1098,13 @@ struct TreeDetail: View {
             speciesColumn
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 16)
+                .padding(.trailing, showsGirth ? 16 : 0)
+            if showsGirth {
+                Divider().frame(height: 44)
+                girthColumn
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 16)
+            }
         }
         .padding(.top, 12)
         .padding(.bottom, 4)
@@ -1246,36 +1258,30 @@ struct TreeDetail: View {
         // on every one of these pages.
     }
 
-    /// Girth, as a row of its own under the two columns: a third column would
-    /// wrap the species at 375 points. Shown when there is a figure, and on
-    /// your own tree as a blank to fill; a tree of ours with no figure gets no
-    /// row, the same as the location line when the pin is exact.
-    @ViewBuilder private var girthLine: some View {
-        if tree.girthCm != nil || mine != nil {
-            // "Girth", beside "Age" and "Species" and matching "Change the
-            // girth" in the menu. "Around the trunk" read as a sentence
-            // pretending to be a label (Hidde, 2026-09-11: "around the trunk
-            // als title wtf").
-            column("Girth") {
-                if let cm = tree.girthCm {
-                    Text("\(Sightings.metres(cm)) m")
-                        .font(.brand(19, .bold, relativeTo: .headline))
-                        .foregroundStyle(Brand.ink)
-                } else {
-                    Button { editing = .girth } label: { addValue }
-                        .buttonStyle(.plain)
-                        .frame(minHeight: 44, alignment: .topLeading)
-                        .contentShape(.rect)
-                        .accessibilityLabel("Add the girth")
-                }
+    /// Shown when there is a figure, and on your own tree as a blank to fill;
+    /// a tree of ours with no figure keeps its two columns.
+    private var showsGirth: Bool { tree.girthCm != nil || mine != nil }
+
+    /// "Girth", beside "Age" and "Species" and matching "Change the girth" in
+    /// the menu. "Around the trunk" read as a sentence pretending to be a label
+    /// (Hidde, 2026-09-11: "around the trunk als title wtf").
+    private var girthColumn: some View {
+        column("Girth") {
+            if let cm = tree.girthCm {
+                Text("\(Sightings.metres(cm)) m")
+                    .font(.brand(19, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+            } else {
+                Button { editing = .girth } label: { addValue }
+                    .buttonStyle(.plain)
+                    .frame(minHeight: 44, alignment: .topLeading)
+                    .contentShape(.rect)
+                    .accessibilityLabel("Add the girth")
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal, 16)
-            .padding(.top, 8)
-            .padding(.bottom, 4)
-            .overlay(alignment: .top) { hairline }
-            .accessibilityIdentifier("tree-girth-fact")
         }
+        .accessibilityIdentifier("tree-girth-fact")
     }
 
     private var hairline: some View {
