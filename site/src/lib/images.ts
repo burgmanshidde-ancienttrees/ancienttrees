@@ -392,6 +392,8 @@ export interface Photo {
   license?: string | null;
   attribution?: string | null;
   status?: string | null;
+  /** "contributor" for a photograph a reader sent through the app. */
+  source?: string | null;
 }
 
 export interface TreeLike {
@@ -404,13 +406,22 @@ export interface TreeLike {
  * Python version this does not push to a global ERRORS list on a wiki
  * File: page; callers that need build-time validation should check that
  * themselves (see the content collection Zod schema, which is the earlier
- * and stricter place for this in the Astro build). */
+ * and stricter place for this in the Astro build).
+ *
+ * A READER'S PHOTOGRAPH HAS NO ATTRIBUTION, ON PURPOSE, and passes without
+ * one. Since 2026-09-04 nothing beside it says who took it (Hidde: "laten we
+ * niet mensen hun naam noemen"), so sightings_publish.py writes attribution
+ * null, and this gate kept asking for a name. Every reader photograph ever
+ * approved was therefore dropped from every page and from the app feed, and
+ * the Camphor of Munakata Shrine lost the iNaturalist picture it replaced as
+ * well: found 2026-09-11, six trees, nothing red anywhere. qa.py's
+ * check_approved_photos_reach_the_feed() now fails the deploy on it. */
 export function usablePhoto(tree: TreeLike): Photo | null {
   const photo = tree.photo ?? {};
   if (
     photo.url &&
     photo.license &&
-    photo.attribution &&
+    (photo.attribution || photo.source === "contributor") &&
     (photo.status === "approved" || photo.status === "found_needs_check")
   ) {
     if (photo.url.includes("/wiki/File:")) return null;

@@ -11,6 +11,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session with Hidde) - Your own photographs come back, reader photographs actually reach the site, and a species check that cannot be skipped
+
+Hidde spent the day in Kyoto Gyoen with the App Store build and could not find any photograph he had taken of a tree we already map. Nothing was lost: all 29 of his sightings sit in Supabase with their photographs. Three separate faults, all fixed here.
+
+**1. The app never showed your photograph of one of OUR trees.** The tree page only looked for a photograph when the tree was yours alone, and your own list skips a sighting that carries our tree's id. Now: a "Your photographs" row with dates on the tree page (tap opens the full-screen viewer), your photograph as the hero when we have none, and your picture on the card in My trees. Looked at on the SE and a Pro Max through the new `-mine-of=<tree id>` launch argument; unit tests pass.
+
+**2. Every reader photograph ever published was invisible, on the site and in the app.** `usablePhoto()` required an attribution and reader photographs have none on purpose since 2026-09-04. Six trees (brn_001, brn_002, kyo_006, kyo_011, kyo_016, kyo_018); kyo_006 had its working iNaturalist picture replaced and so showed nothing at all. Fixed in images.ts, and `check_approved_photos_reach_the_feed()` in qa.py now fails the deploy when an approved photograph does not reach /api/trees.json. Simulated against the live feed first: it fires on exactly those six and nothing else.
+
+**3. The morning's viewing pass judged light and composition and never asked what tree it was looking at.** The Sudajii of Omiya Gate photograph shows a pale, smooth trunk, not a Castanopsis, so kyo_016 is now `held`. `sightings_publish.py` refuses an approval without `species_seen` and `species_match: yes`, and photo-judge.md makes the comparison a named step. The Hackberry photograph is plausible but not certain; left live, and asked of Hidde.
+
+Also: the camera now keeps a copy in Photos with date and place (add-only permission, the iNaturalist default, CONVENTIONS.md), and /terms says that a photograph should be of the tree, that people in it are fine, that the sender makes sure a recognisable person is happy to be there, and that anybody recognisable can ask for it to come off (the convention across Google Maps, Commons, iNaturalist, AllTrails and Tripadvisor).
+
+Still open: the app changes need a TestFlight build, which is what Hidde asked for next. Nine stale git worktrees sit beside the repo (Xcode showed him two projects); all their commits are in main, but `at-pin` holds 17 uncommitted changes, so nothing is deleted without a look.
+
 ## 2026-09-11 (continuation 4) - Cardiff published, Zwolle deepened to 14, and 4 stranded passes shipped under the single-famous-tree exception
 
 An earlier attempt in this same window stopped after 54 minutes having shipped

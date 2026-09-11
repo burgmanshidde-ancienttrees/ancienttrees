@@ -1258,6 +1258,36 @@ def check_vendored_photos_are_served():
     return failures
 
 
+def check_approved_photos_reach_the_feed():
+    """Every approved photograph in the data must reach the app feed.
+
+    Written 2026-09-11. usablePhoto() in site/src/lib/images.ts asked every
+    photograph for an attribution, and a reader's photograph has none on
+    purpose (no names beside them since 2026-09-04). So all six reader
+    photographs ever approved were dropped from every page and from the app,
+    one of them replacing a working iNaturalist picture, and every gate stayed
+    green, because a missing photograph looks exactly like a tree nobody has
+    photographed yet. The data said approved; nothing asked whether the build
+    agreed.
+    """
+    feed = DIST / "api" / "trees.json"
+    if not feed.exists():
+        return []
+    data = json.loads(feed.read_text(encoding="utf-8"))
+    trees = data if isinstance(data, list) else data.get("trees", [])
+    has = {t.get("id"): bool(t.get("photo")) for t in trees}
+    failures = []
+    for path in sorted((ROOT / "data" / "cities").glob("*.json")):
+        for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
+            p = t.get("photo") or {}
+            if (p.get("status") == "approved" and p.get("url") and p.get("license")
+                    and t.get("id") in has and not has[t.get("id")]):
+                failures.append(
+                    f"{t['id']}: photo is approved in {path.name} but the app feed "
+                    "carries none, so no page and no phone shows it (usablePhoto refused it)")
+    return failures
+
+
 def check_sitemap_dates():
     sm = DIST / "sitemap.xml"
     if not sm.exists():
@@ -1430,6 +1460,7 @@ def main():
     failures += check_walks_go_to_the_app()
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
+    failures += check_approved_photos_reach_the_feed()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")
