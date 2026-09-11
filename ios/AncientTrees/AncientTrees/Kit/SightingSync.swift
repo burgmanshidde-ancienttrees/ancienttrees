@@ -45,6 +45,7 @@ enum SightingSync {
                                           note: (row["note"] as? String) ?? "",
                                           species: row["species"] as? String,
                                           age: row["age"] as? String,
+                                          girthCm: row["girth_cm"] as? Int,
                                           lat: lat, lng: lng)
             if let t = row["taken_at"] as? String,
                let d = ISO8601DateFormatter().date(from: t) { made.date = d }
@@ -139,6 +140,10 @@ enum SightingSync {
         row["tree_id"] = sighting.treeId
         row["species"] = sighting.species
         row["age"] = sighting.age
+        // Sent only when there is one. A key PostgREST does not know rejects
+        // the whole row, so a phone meeting a database where supabase/girth.sql
+        // has not been run yet keeps syncing every tree that has no girth.
+        if let g = sighting.girthCm { row["girth_cm"] = g }
         row["photo"] = stored
         // Explicit, like every other field here, rather than left to the
         // column's own default: the LOCAL value is the one somebody may have

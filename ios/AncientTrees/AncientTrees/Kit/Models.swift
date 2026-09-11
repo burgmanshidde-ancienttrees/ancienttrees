@@ -169,6 +169,10 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public let photo: Photo?
     public let bestTime: BestTime?
     public let peak: Peak?
+    /// Around the trunk, in centimetres. A `var` with a default so the
+    /// memberwise initialiser keeps compiling at every call site and a feed
+    /// that does not carry it decodes to nil.
+    public var girthCm: Int? = nil
 
     enum CodingKeys: String, CodingKey {
         case id, name, species, age, lat, lng, city, country
@@ -182,6 +186,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case paidEntryRaw = "paid_entry"
         case citySlug = "city_slug"
         case bestTime = "best_time"
+        case girthCm = "girth_cm"
     }
 
     /// The common name only, without the Latin in parentheses. Map pins and

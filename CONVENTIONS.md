@@ -686,7 +686,6 @@ beyond the second confirmation. The website does not: /account is one flat card
 with sign out and delete side by side on it, where a mis-click is one pixel
 away from the other.
 
-
 ---
 
 ## When the location question is asked (2026-08-31)
@@ -1342,7 +1341,6 @@ It lets anybody test whether an address has an account, and Instagram, Strava
 and Polarsteps have all moved away from it. Search by the name somebody chose,
 plus an invitation, is what the field looks like now.
 
-
 ---
 
 ## Asking somebody why a place is worth visiting (2026-09-08)
@@ -1389,7 +1387,6 @@ we put to the person holding the phone.
 Read 2026-09-08:
 - https://support.google.com/maps/answer/6320846
 - https://www.inaturalist.org/posts/34222-inaturalist-how-to-observations-guide
-
 
 ---
 
@@ -1485,3 +1482,31 @@ Read 2026-09-11:
 - https://www.inaturalist.org/pages/terms
 - https://support.alltrails.com/hc/en-us/articles/4412179068692-AllTrails-UGC-license-agreement
 - https://www.tripadvisorsupport.com/hc/en-us/articles/200615067-Photo-Guidelines
+
+## Asking somebody to measure a trunk (2026-09-11)
+
+Looked up when Hidde asked to add girth as a data point ("we zouden girth
+toevoegen als data punt").
+
+**Reference: the Woodland Trust's Ancient Tree Inventory**, the largest
+volunteer tree-recording scheme there is and the one whose volunteers do
+exactly this. Measure at 1.5 m above the ground, record it in metres, keep the
+tape flat and level; on a slope measure from the upper side, on a leaning tree
+from underneath. And for somebody without a tape: **one hug is about 1.5 m.**
+
+**So: one optional field, in metres, with the method in one line under it.**
+"In metres, at chest height. One hug is about 1.5 m." Chest height rather than
+"1.5 m" because nobody standing at a trunk knows where 1.5 m is and everybody
+knows where their chest is. Optional everywhere, because the references never
+make a measurement the price of adding a tree. The slope and leaning-tree
+cases stay out of the app: they are right, they are the recorder's manual, and
+a field hint is not a manual.
+
+Stored as whole centimetres (`girth_cm`, the same field our city files and the
+registers use), and read generously: "4.2", "4,2", "4.2 m" and "420 cm" are one
+trunk, and a bare number under 30 is metres. One rule in two places,
+`Sightings.girthCm(parsing:)` and `girthCm()` in contribute.astro, each with the
+same twelve cases.
+
+Read 2026-09-11:
+- https://ati.woodlandtrust.org.uk/how-to-record/recording-guide/how-to-record-the-girth-of-a-tree/

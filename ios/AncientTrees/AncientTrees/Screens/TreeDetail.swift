@@ -340,6 +340,9 @@ struct TreeDetail: View {
                         Button { editing = .age } label: {
                             Label("Change the age", systemImage: "calendar")
                         }
+                        Button { editing = .girth } label: {
+                            Label("Change the girth", systemImage: "ruler")
+                        }
                         Button { placing = true } label: {
                             Label("Move the pin", systemImage: "mappin.and.ellipse")
                         }
@@ -973,6 +976,14 @@ struct TreeDetail: View {
                         switch field {
                         case .name: sightings.update(m.id, name: text)
                         case .age: sightings.update(m.id, age: text)
+                        case .girth:
+                            // Empty clears it; something unreadable keeps what
+                            // was there rather than wiping a real measurement.
+                            if text.isEmpty {
+                                sightings.update(m.id, girthCm: 0)
+                            } else if let cm = Sightings.girthCm(parsing: text) {
+                                sightings.update(m.id, girthCm: cm)
+                            }
                         case .story: sightings.update(m.id, note: text)
                         }
                         editing = nil
@@ -984,21 +995,30 @@ struct TreeDetail: View {
         switch field {
         case .name: tree.name
         case .age: tree.age ?? ""
+        case .girth: tree.girthCm.map(Sightings.metres) ?? ""
         case .story: tree.story
         }
     }
 
     /// A field on your own tree that nobody has filled in yet.
     enum EditableField: String, Identifiable {
-        case name, age, story
+        case name, age, girth, story
         var id: String { rawValue }
 
         var prompt: String {
             switch self {
             case .name: "What do you call it?"
             case .age: "How old is it, roughly?"
+            case .girth: "How far round is the trunk?"
             case .story: "What makes this tree special?"
             }
+        }
+
+        /// How to measure, under the field. The Ancient Tree Inventory's own
+        /// method: metres, at 1.5 m up, and a hug is about 1.5 m for somebody
+        /// standing there without a tape (CONVENTIONS.md, 2026-09-11).
+        var hint: String? {
+            self == .girth ? "In metres, at chest height. One hug is about 1.5 m." : nil
         }
 
         /// Long answers get room; a species or an age is one line.
@@ -1039,6 +1059,7 @@ struct TreeDetail: View {
     private var factsBlock: some View {
         VStack(alignment: .leading, spacing: 0) {
             columns
+            girthLine
             locationLine
             if mine == nil, tree.paidEntry { ticketBand }
         }
@@ -1223,6 +1244,34 @@ struct TreeDetail: View {
         // whatever the answer is stops being read. Somebody who finds the pin
         // wrong anyway still has the report button in the top right, which is
         // on every one of these pages.
+    }
+
+    /// Girth, as a row of its own under the two columns: a third column would
+    /// wrap the species at 375 points. Shown when there is a figure, and on
+    /// your own tree as a blank to fill; a tree of ours with no figure gets no
+    /// row, the same as the location line when the pin is exact.
+    @ViewBuilder private var girthLine: some View {
+        if tree.girthCm != nil || mine != nil {
+            column("Around the trunk") {
+                if let cm = tree.girthCm {
+                    Text("\(Sightings.metres(cm)) m")
+                        .font(.brand(19, .bold, relativeTo: .headline))
+                        .foregroundStyle(Brand.ink)
+                } else {
+                    Button { editing = .girth } label: { addValue }
+                        .buttonStyle(.plain)
+                        .frame(minHeight: 44, alignment: .topLeading)
+                        .contentShape(.rect)
+                        .accessibilityLabel("Add the girth")
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 16)
+            .padding(.top, 8)
+            .padding(.bottom, 4)
+            .overlay(alignment: .top) { hairline }
+            .accessibilityIdentifier("tree-girth-fact")
+        }
     }
 
     private var hairline: some View {
@@ -1658,7 +1707,14 @@ struct FieldEditor: View {
                         .focused($focused)
                 } else {
                     TextField(field.prompt, text: $text)
+                        .keyboardType(field == .girth ? .decimalPad : .default)
                         .focused($focused)
+                }
+                if let hint = field.hint {
+                    Text(hint)
+                        .font(.footnote)
+                        .foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer()
             }
@@ -1676,7 +1732,8 @@ struct FieldEditor: View {
                 }
             }
         }
-        .presentationDetents(field.long ? [.medium, .large] : [.height(220)])
+        .presentationDetents(field.long ? [.medium, .large]
+                             : [.height(field.hint == nil ? 220 : 260)])
         .onAppear { text = initial; focused = true }
     }
 }

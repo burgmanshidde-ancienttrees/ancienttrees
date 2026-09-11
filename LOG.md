@@ -25,6 +25,18 @@ Also: the camera now keeps a copy in Photos with date and place (add-only permis
 
 Still open: the app changes need a TestFlight build, which is what Hidde asked for next. Nine stale git worktrees sit beside the repo (Xcode showed him two projects); all their commits are in main, but `at-pin` holds 17 uncommitted changes, so nothing is deleted without a look.
 
+## 2026-09-11 (session) - Girth is a data point readers can send, in the app and on /contribute
+
+Hidde: "we zouden girth toevoegen als data punt". Girth plus a species is how every register dates a tree, and roughly half our trees carry none, so a reader standing at the trunk is the cheapest source of the one number that turns an age guess into an estimate.
+
+- **Database:** `supabase/girth.sql` adds `girth_cm` (whole centimetres, 10 to 5000) to `sightings` and `submissions`, and to the `shared_trees` view. A fact about a tree, no personal data. Needs pasting in the SQL editor; handed to Hidde in session.
+- **App:** your own tree's page gets an "Around the trunk" row under age and species, with Add when empty, and "Change the girth" in its menu. The field asks in metres with the Ancient Tree Inventory's method under it ("In metres, at chest height. One hug is about 1.5 m."), on a decimal keypad. It syncs as `girth_cm`, sent only when set, so a phone that meets a database without the column keeps syncing everything else. `Tree.girthCm` decodes `girth_cm` from the feed, but the feed does not send it yet, so trees of ours show no row.
+- **Web:** /contribute has the same optional field, same parsing rule, sent only when filled in.
+- **Pipeline:** `sightings_inbox.py` carries `girth_cm` into the queue and the leads, so a run can fill a missing `girth_cm` from a reader's measurement, recorded as a reader's measurement in `verify_notes`.
+- **Checks:** `GirthTests` (4 cases, all passing: every way of typing one trunk, nonsense refused, metres read back, an old saved file still decoding) and the web parser against the same 12 cases through JavaScriptCore. CONVENTIONS.md has the entry.
+
+Not done, and the obvious next step: send `girth_cm` in the app feed so the trees of ours that have one show it in the app as they already do on the website.
+
 ## 2026-09-11 (continuation 4) - Cardiff published, Zwolle deepened to 14, and 4 stranded passes shipped under the single-famous-tree exception
 
 An earlier attempt in this same window stopped after 54 minutes having shipped
@@ -99,8 +111,6 @@ Per the prompt's "first dispatch is a write pass" rule, claimed and dispatched a
 **Free work alongside it, since the write pass ran as a background agent**: `python3 scripts/photo_hunt.py --recheck` refreshed the whole 2522-tree API sweep queue. `python3 scripts/photo_gaps.py --shortlist` named 7 photo-less, depth-allowed cities (checked each against DATA.md's 2026-09-09 roster: Leeuwarden, Tilburg, Helmond, Maastricht, Eindhoven, Budapest, Kamakura all qualify); ran `photo_fetch.py` to download their candidates into `photo-pass/` (gitignored) for a viewing pass. Budapest had nothing left to fetch. On a first look at the manifests most titles read as likely misses (Maastricht's top hits are Stolpersteine and city-wall remains, Leeuwarden pulled in an unrelated Amsterdam park and a Zutphen monument by filename coincidence) rather than genuine tree photographs; did not get to the actual pixel-by-pixel judging this window, so nothing was approved or rejected. That is next window's or a photo-judge pass's job.
 
 Checked `health.py` (rung 2 clear, no BLOCKER; one APP-tagged WARN in REVIEW.md about a "1 trees" pluralization bug in MapSearch.swift, correctly left alone per its own note that night runs don't touch app UI Swift), `sightings_inbox.py --status` (nothing waiting) and `recognise.py --stuck` (backlog still at zero) before starting.
-
-
 
 An earlier attempt in this window stopped after 24 minutes with 96 unspent, having already released cleanly (no half-finished work behind it). Started from three standing claims left by attempts before that: `hallstatt` (verify, already finished, 4 trees sitting uncommitted), `busan` and `saopaulo` (write, but both cities are below the 4-tree floor with their register/Wikidata supply already exhausted, so nothing productive to write toward publication). Released busan and saopaulo's stale write claims rather than force research that CLAUDE.md itself rules out (from-zero web research on an unnamed city).
 
@@ -2630,7 +2640,6 @@ ladder (something broken outranks new coverage). FOR HIDDE: if the next
 scheduled iOS run is still red on this same test, the diagnosis above is
 wrong and it needs a session with a simulator.
 
-
 Resumed into a window where the previous attempt had stopped early with
 most of its time unspent. `passcheck.py --claims` showed two standing
 verify claims, `_famous-japan` and `_famous-poland`, both by night-run.
@@ -2773,7 +2782,6 @@ as continuation 13 found and cleaned up two similar leftovers this
 morning. Three untracked `tmp_*.html` scratch fetch files from an earlier,
 shorter attempt this window are also still sitting in the repo root and
 harmless; also worth a delete next time someone is in there.
-
 
 ## 2026-09-06 (continuation 13) - Cleanup: two stale write-pass leftovers found and fixed, two verify passes dispatched
 
@@ -3525,7 +3533,6 @@ committing).
 
 Build clean (4617 pages), `qa.py` clean (6917 pages). Released
 `_famous-japan`.
-
 
 Opened per the runner checklist: `git pull` (clean), `passcheck.py --claims`
 (two standing: `_famous-poland` and `_famous-lithuania`, both verify, with
@@ -4512,8 +4519,6 @@ left as empty/stale on disk (the tool available this session could not
 delete files); they are untracked and harmless, but whoever next touches
 `data/research/` should remove them.
 
-
-
 Followed the resume instructions. Pulled (nothing new). `passcheck.py
 --claims` found one standing claim, `_famous-japan` verify by night-run,
 112 min left. `leads.py --ready` was empty (0 READY), as it has been for
@@ -5197,7 +5202,6 @@ not fit a reader writing from inside the app: a draft may declare
 reaches the reader. Checked that an ordinary draft still fails without the
 link.
 
-
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-08](archive/LOG-2026-08.md)
@@ -5559,7 +5563,6 @@ Geographic clustering over the 71 lead candidates in `_famous-germany.json` foun
 Published **Malsfeld** (Germany, mls_001-mls_004): the Guided Lindens of Berndshausen (~400y, before a fortified church on an 18th-century court site), the Guided Lindens of Dagobertshausen (~120-160y, a trio), the Tanzlinde of Hilgershausen (a three-tiered lime with a seat trained into its own trunk, sources disagree on planting date by roughly a century, both recorded honestly), and the Tanzlinde of Ostheim (thickest at 3.34m girth, shortest at 5m from heavy pruning). All free, no train station, a car is the practical way to see more than one. Along the way found and fixed a stale Germany country-page meta_description and intro (still said 30 cities/161 trees; actual was already 31/165 before this run).
 
 Build, QA gate and preflight all clean (preflight's only Germany note, the stale count, is now fixed). Claim released, committed, pushed. Week budget: 2013/5000 min, nowhere near the ceiling.
-
 
 **The "Share this tree" button ("That did not send") was never a location bug**, though
 it looked like one. `supabase/shared-sightings.sql` (the 2026-09-02 unlisted
@@ -6654,7 +6657,6 @@ Cost: one write-stories pass, ~39k tokens for 4 trees (~9.8k/tree, under the 15k
 logged to `data/agent-costs.json`. No other agents dispatched; the merge, build and QA
 work was done in-session.
 
-
 Picked up after an earlier attempt in the same window stopped at 15 minutes with
 nothing shipped, three standing verify claims (hamburg, bamberg, nuremberg) and
 three research files already on disk.
@@ -6757,7 +6759,6 @@ shallow git history (3 commits visible locally), not a real problem. Committed a
 
 7-day visits from visitors.py: 587 visits, 1049 page views, trending up (48-101/day, no clear
 trend beyond weekday noise).
-
 
 Three viewing passes this evening rather than one. The first is logged below; these
 are the second and third, and the difference between them is the finding.
@@ -7210,7 +7211,6 @@ Followed the harness's own order. **Claims first:** the earlier attempt in this 
 **Then dispatched a verify pass to open Regensburg from zero**, the best remaining `openable.py` candidate not already claimed by the other concurrent session (Sapporo, Matera): Bavaria's Naturdenkmal register mixes trees with rocks, caves and ruins, and of 25 candidates within 20km only about 6 are actually trees in range, closest 1.4km. Result not in yet at the time of this entry.
 
 Built, QA'd (clean bar the sandbox's shallow-clone sitemap-lastmod NOTE), preflighted (0 problems) and superlatives-checked (no collisions) after each merge.
-
 
 ## 2026-08-31 (session) - leads.py --ready was mostly declined leads in disguise; Perugia +2, Vienna +2
 
