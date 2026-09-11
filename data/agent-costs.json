@@ -7552,6 +7552,15 @@
     "note": "in-session write pass on 4 register-sourced READY leads (spk_011-014); no new research, prose only from data/leads/spokane.json's own register text. Four other cities' READY leads (hallstatt, lagos-pt, genoa, prague) read and declined: not actually ready on inspection (deferred cluster, non-tree placeholder, self-flagged padding risk, hard-rule-10 access block). See CURATION.md.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 0,
+    "note": "Register radius re-confirmed exhausted (all 73 candidates independently cross-matched to already-resolved leads); sharpened the unresolved Castillo elevator-ficus lead's coordinates via Overpass but it still fails the two-source bar; no new supply found via UA campus, Casa Tapena or the Diputacion gardens PDF (unreadable, no PDF tooling).",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }
