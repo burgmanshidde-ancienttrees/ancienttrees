@@ -274,6 +274,28 @@ def names_match(tree, cand, pin=None):
     return max(score, 0)
 
 
+def slugify_city(name):
+    """The digest writes the slug already; this only normalises spacing."""
+    return str(name).strip().lower().replace(" ", "-")
+
+
+def demand_cities():
+    """The cities Search Console says have readers, newest digest first.
+
+    Parsed by seolearn.city_rows rather than here: langcheck.py, recognise.py
+    and seolearn.py each grew their own reader of this one table, which is the
+    disease geo.py was written to cure, and a fourth would be worse than the
+    three. Credentials live in the digest workflow, so DATA.md is the only
+    place this answer exists outside CI (CLAUDE.md, rule two of the course).
+    """
+    try:
+        import seolearn
+        rows = seolearn.city_rows(seolearn.newest_entry())
+    except Exception:
+        return []
+    return [(r["city"], r["impressions"]) for r in rows]
+
+
 # Hidde, 2026-08-17: "focus should be first get it to +5 trees than get photos".
 # A city under this many trees is a TREE problem, not a photo problem, and a
 # photograph on a three-tree page does not make it an afternoon out. So those
@@ -282,10 +304,45 @@ def names_match(tree, cand, pin=None):
 PHOTO_FLOOR = 5
 
 
-def shortlist(limit):
+def shortlist(limit, demand=False):
+    """What to view next.
+
+    Two modes, because this project holds two of Hidde's rules about photos
+    and only one of them had ever been scripted.
+
+    The DEFAULT is coverage: a city with no photograph at all, five trees or
+    more, biggest first. That is the standing aim of 2026-08-17 and it is
+    unchanged.
+
+    `--demand` is rule two of the course (CLAUDE.md, 2026-08-12): photos go to
+    cities that clear 10 impressions and nowhere else. Coverage had quietly
+    eaten it, because `c["photos"] == 0` excludes a city the moment it gains
+    its first photograph, and every city with measured readers has one.
+    Measured 2026-09-11 across the nine cities the newest digest allows depth
+    on: all nine were invisible here, and between them they hold 228 trees
+    with no photograph. Brussels is the sharpest case, 4 photographs against
+    31 trees on the site's second largest page by impressions, 15 of the gaps
+    standing in one park.
+
+    It matters because the payoff is measured rather than assumed.
+    scripts/seolearn.py, same digest: a city page whose trees are 40 percent
+    photographed converts at index 0.77, one with none at 0.47. Brussels sits
+    at 13 percent, which is the 0.50 bucket.
+
+    Neither mode is the right one. Coverage lights up pages nobody has found
+    yet; demand makes the pages people already find worth clicking. The switch
+    exists so the choice is made rather than inherited from whichever rule got
+    written down as code.
+    """
     q = queue()
-    need = {c["slug"]: c for c in cities()
-            if c["photos"] == 0 and c["trees"] >= PHOTO_FLOOR}
+    if demand:
+        want = {slugify_city(c): i for c, i in demand_cities()}
+        need = {c["slug"]: dict(c, impressions=want[c["slug"]])
+                for c in cities()
+                if c["slug"] in want and c["trees"] > c["photos"]}
+    else:
+        need = {c["slug"]: c for c in cities()
+                if c["photos"] == 0 and c["trees"] >= PHOTO_FLOOR}
     rows = []
     for tid, entry in q.items():
         slug = (entry.get("city") or "").lower().replace(" ", "-")
@@ -312,6 +369,14 @@ def shortlist(limit):
         if best:
             rows.append((best[0], city["trees"], slug, tid,
                          entry.get("name", "?"), best[1], best[2]))
+    if demand:
+        # Impressions first, then the filename. NO per-city cap here, which is
+        # the whole difference: coverage wants one photograph in each of many
+        # cities, demand wants many photographs in each of a few. A city at 13
+        # percent photographed does not reach the 40 percent bucket one tree
+        # at a time across nine cities.
+        rows.sort(key=lambda r: (-need[r[2]]["impressions"], -r[0]))
+        return rows[:limit]
     # City need first (a city with no photo at all and many trees is the
     # biggest hole), then how well the filename names the tree.
     rows.sort(key=lambda r: (-r[1], -r[0]))
@@ -483,6 +548,7 @@ def main():
     ap.add_argument("--shortlist", action="store_true")
     ap.add_argument("--famous", action="store_true")
     ap.add_argument("--conflict", action="store_true")
+    ap.add_argument("--demand", action="store_true")
     ap.add_argument("--photo-only", action="store_true", dest="photo_only")
     ap.add_argument("--per-city", type=int, default=3, dest="per_city")
     ap.add_argument("--limit", type=int, default=20)
@@ -551,8 +617,14 @@ def main():
         print("\n  python3 scripts/photo_gaps.py --shortlist   what to view next")
         return 0
 
-    rows = shortlist(a.limit)
-    print("\nVIEWING SHORTLIST, one candidate per photo-less city, biggest city first.")
+    rows = shortlist(a.limit, demand=a.demand)
+    if a.demand:
+        print("\nVIEWING SHORTLIST, cities Search Console says have readers,")
+        print("most impressions first. No per-city cap: the aim is a city's")
+        print("photo SHARE, which seolearn measures as the difference between")
+        print("converting at 0.47 and at 0.77.")
+    else:
+        print("\nVIEWING SHORTLIST, one candidate per photo-less city, biggest city first.")
     print("Fetch throttled (Wikimedia rate-limits: ~1 request per 3 seconds),")
     print("and no photograph ships without somebody looking at the pixels.\n")
     if not rows:
