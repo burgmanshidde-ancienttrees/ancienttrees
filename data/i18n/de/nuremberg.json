@@ -1,0 +1,124 @@
+{
+  "_note": "German overlay for Nuremberg, hand-written 2026-09-11 under Contract J. Twelfth and last of this run from the corrected langcheck queue: 15 impressions in the ten-day window, in the strongest ROLL OUT area. Umlauts restored (Wöhrd, Naturdenkmäler, Nürnberg), and the park is written Cramer-Klett-Park throughout; the English file spells it Kramer Klett in one tree name and Cramer Klett in the other, which is a slip rather than two places.",
+  "city": "Nürnberg",
+  "title": "Naturdenkmäler in Nürnberg: 12 geschützte Bäume",
+  "meta_description": "Zwölf geschützte Bäume in Nürnberg, neun auf einem Weg: eine 400-jährige Linde, sechs in einem früheren Quarantänegarten, Buchen und Platanen in Wöhrd.",
+  "intro": "Neun der zwölf geschützten Bäume Nürnbergs stehen im Umkreis eines Kilometers um die Altstadt, und sechs teilen sich einen Park von keinen zwei Hektar. Der Kontumazgarten trägt seinen Namen von einer Quarantänestation und hält heute Platanen, Buchen und eine Kastanie, jede einzeln durch Verordnung geschützt. Drei weitere stehen abseits in Wöhrd: eine Linde im Stadtpark mit acht Metern Stammumfang, die am besten belegte von allen mit rund vierhundert Jahren, und zwei Buchen achtzig Meter auseinander im Cramer-Klett-Park, jede mit eigener Nummer und keine von beiden datiert.",
+  "question_title": "Was ist der älteste Baum in Nürnberg?",
+  "question_meta": "Nürnbergs ältester Baum ist die Linde im Stadtpark, rund 400 Jahre alt mit acht Metern Stammumfang. Wo sie steht, und elf weitere.",
+  "question_answer": "Der älteste Baum Nürnbergs ist die Sommerlinde im Stadtpark, auf rund vierhundert Jahre geschätzt, mit einem Stamm von etwa acht Metern Umfang, womit sie zugleich der älteste und der dickste Baum auf dieser Seite ist. Sie steht in einem frei zugänglichen öffentlichen Park, etwa fünfzehn Gehminuten von der Gruppe im Kontumazgarten. Sie ist außerdem die am besten belegte: Zwei unabhängige Quellen beschreiben sie, wo die meisten geschützten Bäume der Stadt allein auf der Verordnung beruhen.",
+  "question_context": "Nürnberg schützt einzelne Bäume durch städtische Verordnung und nicht über eine staatliche Denkmalliste, und das bayerische Verzeichnis, das sie führt, gibt eine Nummer, einen deutschen Namen und eine Koordinate, ohne Artenspalte, ohne Umfang und ohne Alter. Die Arten auf dieser Seite wurden deshalb aus der städtischen Verordnung von 2020 und aus örtlichen Quellen bestimmt, und mehrere sind nur auf Gattungsebene bestimmt oder aus dem deutschen Namen des Baumes erschlossen statt bestätigt; jede von ihnen sagt das in ihrer eigenen Geschichte. Dieselbe Dünnheit schneidet auch in die andere Richtung. Ein Abgleich der staatlichen Ebene mit der geltenden Verordnung förderte zwei geschützte Bäume zutage, die der Freistaat noch als aktuell führt und die die Verordnung nicht mehr trägt, beide an Adressen, an denen deutsche Quellen den Verlust eines Naturdenkmals durch Pilzbefall festhalten. Die fehlen hier. Vier weitere stehen auf privatem Grund, eines ist eine Allee aus neunundsiebzig Bäumen ohne Ort zum Stehen, und zwei liegen in Innenhöfen von Einrichtungen.",
+  "faq": [
+    {
+      "q": "Was ist der älteste Baum in Nürnberg?",
+      "a": "Die Sommerlinde im Stadtpark, auf etwa vierhundert Jahre geschätzt, mit acht Metern Stammumfang. Sie ist kostenlos zu besichtigen."
+    },
+    {
+      "q": "Kann man Nürnbergs geschützte Bäume auf einem Weg sehen?",
+      "a": "Neun der zwölf, ja. Sechs stehen im Kontumazgarten und drei auf der Hallerwiese, alle im Umkreis eines Kilometers um das Zentrum. Die Linde im Stadtpark und die beiden Buchen im Cramer-Klett-Park sind eigene Stationen in Wöhrd, weitere fünfzehn bis zwanzig Gehminuten von der Altstadt."
+    },
+    {
+      "q": "Sind sie kostenlos zu besichtigen?",
+      "a": "Ja. Jeder Baum auf dieser Seite steht in einem öffentlichen Park oder an einer öffentlichen Straße, ohne Eintritt. Geschützte Bäume auf privatem Grund sind hier bewusst nicht aufgeführt."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (German common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+  "trees": {
+    "nbg_001": {
+      "name": "Die knorrige Linde auf der Hallerwiese",
+      "species": "Linde (Tilia sp.)",
+      "age_estimate": "rund 350 Jahre",
+      "access": "Kostenlos, öffentlicher Stadtpark (Hallerwiese, St. Johannis)",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "In diese Linde hat der Blitz eingeschlagen und ein Sturm hat Teile von ihr geholt, und sie legt immer noch zu. Nürnbergs eigene Übersicht der ältesten Bäume der Stadt beschreibt sie als knorrige Linde von rund dreihundertfünfzig Jahren am Südende der Hallerwiese, beschädigt und gesund zugleich, was eine faire Zusammenfassung dessen ist, was so viele Jahrhunderte mit etwas machen, das sich nicht wegbewegen kann. Sie ist als ND-5 in der Naturdenkmalverordnung der Stadt von 2020 geschützt.\n\nWas niemand geklärt hat, ist, welche Linde es ist. Deutsche Parks dieser Zeit wurden mit dreien fast austauschbar bepflanzt, Sommerlinde, Winterlinde und der Hybrid dazwischen, und keine Quelle bestimmt diese, also bleibt sie eine Linde und geht nicht weiter.\n\nDreihundertfünfzig Jahre decken das meiste ab, was Nürnberg zugestoßen ist. Der Baum war schon erwachsen, als die Stadt noch freie Reichsstadt war und niemandem außer dem Kaiser antwortete, und weit über hundert Jahre alt, als das 1806 endete und Nürnberg bankrott und seiner Unabhängigkeit beraubt an Bayern fiel.\n\nZwei große Platanen stehen auf der Wiese unmittelbar dahinter, ungefähr gleichzeitig gepflanzt."
+    },
+    "nbg_002": {
+      "name": "Die erste Platane auf der Hallerwiese",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "über 300 Jahre",
+      "access": "Kostenlos, öffentlicher Stadtpark (Hallerwiese, St. Johannis)",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Die Platane ist nicht viel älter als dieser Baum. Der Hybrid tauchte irgendwann im siebzehnten Jahrhundert in europäischen Gärten auf, eine Kreuzung aus amerikanischer und morgenländischer Platane, die niemand geplant hatte, und Nürnbergs Übersicht seiner ältesten Bäume setzt diese und ihre Nachbarin auf über dreihundert Jahre, womit das Paar auf ein paar Generationen an den Anfang des Hybrids selbst heranrückt.\n\nBeide stehen auf der Wiese hinter der alten knorrigen Linde, fast gleichzeitig gepflanzt, und beide tragen ihren eigenen Eintrag in der Naturdenkmalverordnung von 2020, diese als ND-4. Das Verzeichnis führt sie getrennt. Die Zeitungsübersicht beschreibt sie als Paar und unterscheidet sie nicht, weshalb auch diese Seite nicht so tut, als könnte sie es.\n\nAußer Frage steht die Größe. Platanen legen schneller an Umfang zu als Linden und halten ihn dann, und drei Jahrhunderte auf der Hallerwiese haben diesen beiden die schweren Stämme gegeben, an denen man die Art vom anderen Ende eines Parks erkennt, mit Rinde, die in Puzzleplatten abblättert und darunter eine Tarnfarbe aus Creme, Oliv und Grau hinterlässt. Es ist der eine große Baum, der jedes Jahr auf dieselbe Weise anders aussieht."
+    },
+    "nbg_003": {
+      "name": "Die zweite Platane auf der Hallerwiese",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "über 300 Jahre",
+      "access": "Kostenlos, öffentlicher Stadtpark (Hallerwiese, St. Johannis)",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Stadtförster pflanzen Platanen, weil sie schwer umzubringen sind, und diese hatte Gelegenheit, das zu beweisen. Sie ist die zweite der beiden großen Platanen auf der Hallerwiese, geschützt als ND-3, steht etwa vierzig Meter von ihrer Zwillingsschwester und ist nach der eigenen Rechnung der Stadt über dreihundert Jahre alt.\n\nPlatanen vertragen verdichteten Boden, Streusalz, Trockenheit und Rauch besser als fast jeder andere große Laubbaum, weshalb sie in ganz Europa Boulevards säumen, und weshalb dieses Paar noch stand nach der Nacht des 2. Januar 1945, in der ein Angriff der RAF rund neun Zehntel der Nürnberger Altstadt jenseits der Pegnitz zerstörte. Der mittelalterliche Kern wurde in den folgenden Jahrzehnten nach Fotografien und aus geborgenem Stein wiederaufgebaut. Die Bäume brauchten nichts.\n\nNürnbergs eigene Übersicht behandelt die beiden Platanen als Paar und trennt sie nie, während die Verordnung jeder ihre eigene Nummer gibt, also hält diese Seite sie als zwei Einträge und gibt zu, dass sie ein Anblick sind.\n\nGehen Sie zuerst zur knorrigen Linde, dem Ältesten auf der Wiese; die Platanen stehen unmittelbar dahinter."
+    },
+    "nbg_004": {
+      "name": "Die Kastanie im Kontumazgarten",
+      "species": "Rosskastanie (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Stadtpark (Kontumazgarten, Kleinweidenmühle), mit Spielplatz",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Dieser Park war eine Quarantänestation. Kontumaz ist das alte deutsche Wort dafür, und auf diesem Grund hielt Nürnberg ankommende Reisende und Waren fest, bis die Stadt überzeugt war, dass sie nichts Schlimmeres mit sich führten als sich selbst. Heute ist es eine Wiese mit einem Spielplatz, und diese Kastanie steht darauf als ND-6 unter der Naturdenkmalverordnung von 2020.\n\nDie Verordnung nennt sie Kastanie und belässt es dabei, ohne zu sagen, welche. In einem angelegten deutschen Stadtpark ist eine unbestimmte Kastanie fast immer die Rosskastanie und nicht die Edelkastanie, also hält diese Seite das fest, aus Schluss und nicht auf jemandes botanisches Wort hin. Ein Alter nennt auch keine Quelle. Was das Verzeichnis bestätigt, ist, dass die Stadt sie 2020 noch namentlich für schützenswert hielt.\n\nKommen Sie im Mai. Rosskastanien blühen, indem sie Hunderte weißer Kerzen auf einmal aufstellen, aufrecht über die ganze Krone, und eine alte, die das über einem Spielplatz tut, sind die besten zehn Tage, die dieser Park im Jahr hat. Ende September fallen die Kastanien in stacheligen grünen Hüllen, die am Boden aufspringen."
+    },
+    "nbg_005": {
+      "name": "Die erste Platane im Kontumazgarten",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Stadtpark (Kontumazgarten, Kleinweidenmühle), mit Spielplatz",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Sechs einzeln geschützte Bäume stehen hier auf 1,7 Hektar, was für einen kleinen Park eine Menge juristischer Aufmerksamkeit ist. Der Kontumazgarten ist eine Wiese, ein Spielplatz und ein paar alte Bäume, und die Naturdenkmalverordnung von 2020 führt darin ND-6 bis ND-11: eine Kastanie, zwei Buchen und drei Platanen, jede mit eigener Nummer und eigenem Schutz. Dies ist die erste der Platanen, ND-7.\n\nEin Naturdenkmal ist keine Plakette. Es ist eine Ausweisung nach deutschem Naturschutzrecht, die an einem einzelnen benannten Gegenstand hängt und nicht an einer Fläche, und sie macht das Fällen, Beschädigen oder Verändern des Baumes zur Ordnungswidrigkeit. Deshalb wird ein Stadtpark um einen Baum herum umgestaltet und nicht durch ihn hindurch.\n\nDie Verordnung ist zugleich die einzige Quelle. Sie gibt Art und Lage und hört auf: kein Alter, kein Umfang, keine Beschreibung, und kein Artikel nennt diese Platane einzeln. Dokumentiert ist also das Urteil der Stadt selbst, sechsmal wiederholt auf einer kleinen Grünfläche.\n\nDie sechs liegen innerhalb von etwa hundertfünfzig Metern, was den Park zu einer Station macht und nicht zu sechs Besorgungen."
+    },
+    "nbg_006": {
+      "name": "Die erste Buche im Kontumazgarten",
+      "species": "Rotbuche (Fagus sylvatica)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Stadtpark (Kontumazgarten, Kleinweidenmühle), mit Spielplatz",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Unter einer Buche wächst fast nichts, und der Baum tut das mit Absicht. Die Rotbuche hält ihre Blätter in dichten, einander überlappenden Lagen, die sehr wenig Licht auf den Boden lassen, also ist die Erde unter einer alten meist kahl und braun, weshalb Buchenwälder sich wie Räume anfühlen und nicht wie Dickicht.\n\nDies ist die erste von zwei Buchen, die im Kontumazgarten geschützt sind, geführt als ND-8 in der Naturdenkmalverordnung von 2020. Die Stadt hat sie erfasst und dort aufgehört. Kein Alter, keine Maße, keine Beschreibung, und keine unabhängige Quelle nennt sie, also ist die ehrliche Lage: alt genug, dass eine Stadt sie namentlich schützt, und niemand hat eine Zahl veröffentlicht.\n\nDie Rinde ist der Weg, eine Buche zu lesen. Sie behält ihr Leben lang eine glatte graue Haut, verbirgt also anders als eine Eiche nichts, und jede Narbe, jede Schnitzerei und jede alte Wunde bleibt jahrzehntelang lesbar.\n\nKommen Sie Ende Oktober oder im November. Die Buche ist der beste Herbstbaum Mitteleuropas, sie geht über Gelb in Kupfer und Rostrot und hält die Farbe wochenlang."
+    },
+    "nbg_007": {
+      "name": "Die nahe Platane im Kontumazgarten",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Stadtpark (Kontumazgarten, Kleinweidenmühle), mit Spielplatz",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Diese beiden Platanen stehen fünf Meter auseinander, und das Recht zählt sie als getrennte Denkmale. ND-9 und ND-10 der Naturdenkmalverordnung von 2020 haben jeweils eigene Nummer, eigene Koordinate und eigenen Schutz, und wer in den Kontumazgarten läuft, sieht ein Baumpaar. Dieser Abstand zwischen der Sicht eines Verzeichnisses auf einen Park und der eines Menschen ist gut zu wissen, bevor man hier zehn getrennte Bäume sucht.\n\nDies ist ND-9, die der Wiese nähere der beiden. Keine der beiden hat ein Alter in den Akten, keine wurde in einer veröffentlichten Quelle vermessen, und kein Artikel nennt eine von ihnen einzeln, also gibt es die Ausweisung der Stadt und die Bäume selbst.\n\nSo eng gewachsene Platanen tun etwas, wofür sich das Hinaufschauen lohnt: Statt zweier runder Kronen bauen sie ein gemeinsames Dach, jede lehnt sich aus dem Schatten der anderen, bis das Paar weiter ausgreift, als es jede allein täte, während die Stämme gerade bleiben, weil keine Raum hat, sich in die Lücke zu legen. Die Naht ist direkt über einem, wenn man dazwischen steht."
+    },
+    "nbg_008": {
+      "name": "Die zweite Platane des Paares im Kontumazgarten",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Stadtpark (Kontumazgarten, Kleinweidenmühle), mit Spielplatz",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Deutschland schützt einzelne Bäume so, wie andere Länder Gebäude schützen. Ein Naturdenkmal ist eine Ausweisung, die an einem einzelnen benannten Gegenstand hängt und nicht an einer Landschaft, und Nürnbergs Verordnung von 2020 führt Dutzende davon, jedes mit Nummer, Ort und Art. Diese Platane ist ND-10. Sie steht etwa fünf Meter von ND-9, ihrer Nachbarin, die beiden faktisch ein Anblick mit zwei Einträgen im Recht.\n\nDie Verordnung ist außerdem das Einzige, was je über sie geschrieben wurde. Kein Alter, kein Umfang, keine Höhe, nichts über die Art und einen Punkt auf der Karte hinaus, und keine Übersicht nennt sie für sich. Das ist dünn, und man sagt es besser, als es aufzuhübschen: Der Grund, hierherzugehen, ist der Park als Ganzes, sechs geschützte Bäume auf einer kleinen Grünfläche, und nicht die Biografie dieser einzelnen Platane.\n\nWas eine Platane gibt, ist Größe ohne das Warten. Die Art wächst schneller als fast jeder andere große Laubbaum, der auch lange lebt, was genau der Grund ist, warum Parkgestalter des neunzehnten Jahrhunderts so oft zu ihr griffen, und warum drei der sechs geschützten Bäume hier Platanen sind und nichts Langsameres."
+    },
+    "nbg_009": {
+      "name": "Die zweite Buche im Kontumazgarten",
+      "species": "Rotbuche (Fagus sylvatica)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Stadtpark (Kontumazgarten, Kleinweidenmühle), mit Spielplatz",
+      "transport": "Kurzer Weg (etwa 15 bis 20 Minuten) von der Nürnberger Altstadt/Hauptmarkt; eine bestimmte Haltestelle ist nicht geprüft",
+      "story": "Zwei Bäume in diesem Park wären auch ohne Zutun hier, und beide sind Buchen. Die Rotbuche ist die natürliche Herrscherin Mitteldeutschlands: Sich selbst überlassen, würde der größte Teil Frankens binnen zweier Jahrhunderte zu Buchenwald zurückkehren und fast alles andere ausschatten. Die Rosskastanie in diesem Park kam vom Balkan, und die drei Platanen sind ein Gartenhybrid, den es vor dem siebzehnten Jahrhundert nicht gab, was diese Buche und ihre Nachbarin als die Einheimischen übrig lässt.\n\nSie ist ND-11 der Naturdenkmalverordnung von 2020, die letzte der sechs geschützten Bäume im Kontumazgarten. Wie bei den übrigen ist das Verzeichnis die gesamte Akte: Art, Lage, Schutz, und nirgends ein Alter, eine Messung oder eine Beschreibung.\n\nDie Buche leidet außerdem in Städten, was die andere Hälfte der Erklärung ist, warum eine alte in einem kleinen Stadtpark eine Ausweisung verdient. Sie hat flache Wurzeln, dünne Rinde, die in voller Sonne verbrennt, und wenig Geduld mit verdichtetem Boden oder Trockenheit, was eine öffentliche Wiese reichlich liefert.\n\nEnde Oktober und November ist die Zeit, wenn sie kupfern wird und die Farbe hält."
+    },
+    "nbg_010": {
+      "name": "Die alte Linde im Stadtpark",
+      "species": "Sommerlinde (Tilia platyphyllos)",
+      "age_estimate": "rund 400 Jahre",
+      "access": "Kostenlos, öffentlicher Stadtpark",
+      "transport": "Haltestelle Stadtpark (Linie N1); etwa 15 bis 20 Gehminuten vom Nürnberger Hauptbahnhof",
+      "story": "Das Schild am Fuß dieses Baumes und die Botaniker, die sich seine Blätter angesehen haben, sind sich nicht einig, was er ist. Das Schild sagt Winterlinde. Ein unabhängiges deutsches Baumregister beurteilte die Behaarung der Blätter und kam auf Sommerlinde, was diese Seite festhält, mit der Uneinigkeit stehen gelassen statt still aufgelöst.\n\nAlles andere an ihr ist geklärt und beträchtlich. Nürnbergs eigene Übersicht der ältesten Bäume nennt sie eine der stärksten und ältesten der Stadt, rund vierhundert Jahre alt mit einem Stamm von etwa acht Metern Umfang, gewachsen im Stadtpark südlich des Schillerdenkmals und nordöstlich des Weihers. Sie ist der am besten belegte alte Baum Nürnbergs: zwei unabhängige Quellen plus die Verordnung von 2020, in der sie als ND-38 steht.\n\nVierhundert Jahre setzen ihre ersten Jahrzehnte in den Dreißigjährigen Krieg, der Franken leerte und verarmte und Nürnberg einen großen Teil seiner Bevölkerung an Hunger und Pest kostete, während die Heere um die Stadt herum zogen. Damals war sie ein Schössling, auf Grund, der noch kein Park war. Der Park wurde viel später um sie herum angelegt."
+    },
+    "nbg_011": {
+      "name": "ND Nr. 29 Rotbuche im Cramer-Klett-Park",
+      "species": "Rotbuche (Fagus sylvatica)",
+      "age_estimate": "nicht dokumentiert",
+      "access": "Kostenlos, öffentlicher Stadtpark (Cramer-Klett-Park, Wöhrd; seit 1929 im Besitz der Stadt, 1931 für die Öffentlichkeit geöffnet, 2019 saniert)",
+      "transport": "Kurzer Weg aus Wöhrd, etwa 15 bis 20 Minuten vom Nürnberger Hauptbahnhof oder der Altstadt",
+      "story": "Achtzig Meter von dieser Buche steht eine zweite, die genauso aussieht, und Nürnbergs eigenes Verzeichnis hält sie als zwei getrennte Rechtsgegenstände: Naturdenkmal Nr. 28 und Nr. 29, jedes mit eigener Ausweisung statt einer gemeinsamen für das Paar.\n\nDies ist Nr. 29, eine Rotbuche in dem, was früher der private Garten der Familie Cramer-Klett war, bevor die Stadt das Gelände 1929 kaufte und es zwei Jahre später der Öffentlichkeit öffnete. Der Garten wurde im Zweiten Weltkrieg schwer beschädigt und erst 2019 saniert, eine der älteren Grünflächen in Wöhrd, die sowohl die Familie überdauert hat, die sie anlegte, als auch den Krieg, der sie beinahe ausgelöscht hätte.\n\nDie Liste der geschützten Bäume der Stadt nennt genau zwei Naturdenkmäler, die an Pilzbefall verloren gingen: eine Buche beim Laufer Schlagturm und eine Blutbuche andernorts in genau diesem Park. Nr. 29 ist keine davon, und ihre Nachbarin achtzig Meter weiter auch nicht.\n\nEinen Umfang oder ein Alter hat für diesen Baum niemand veröffentlicht, ungewöhnlich für ein Exemplar, das wichtig genug ist, eine eigene städtische Registriernummer zu tragen."
+    },
+    "nbg_012": {
+      "name": "ND Nr. 28 Rotbuche im Cramer-Klett-Park",
+      "species": "Rotbuche (Fagus sylvatica)",
+      "age_estimate": "nicht dokumentiert",
+      "access": "Kostenlos, öffentlicher Stadtpark (Cramer-Klett-Park, Wöhrd; dasselbe Gelände wie die Nachbarin ND 29)",
+      "transport": "Kurzer Weg aus Wöhrd, etwa 15 bis 20 Minuten vom Nürnberger Hauptbahnhof oder der Altstadt",
+      "story": "Diese Buche und ihre Nachbarin achtzig Meter weiter sind die zwei Überlebenden eines Trios. Eine Blutbuche andernorts im selben Cramer-Klett-Park wurde 1996 ausgewiesen, mit vier Metern Stammumfang und einer Krone von 23 Metern, und starb um 2009 an Pilzbefall. Dieser Baum, getrennt als Naturdenkmal Nr. 28 geführt, trägt weder im staatlichen noch im städtischen Verzeichnis vergleichbare Maße, und keine der Zahlen des toten Baumes gehört zu ihm, wie auch immer eine flüchtige Lektüre der Parkgeschichte das nahelegen mag.\n\nWas die Akten bestätigen, ist, dass er lebt und im bayerischen Verzeichnis aktuell geführt wird, in einem Park, der für die Familie Cramer-Klett angelegt wurde, bevor die Stadt das Gelände 1929 kaufte und zwei Jahre später öffnete. Die Kriegsschäden und die Sanierung von 2019 gehören zur Geschichte des Parks und nicht zu diesem Baum im Besonderen, weil die Quellen ihn nie für sich erzählen.\n\nEine Buche, die so still überlebt, dass niemand ihren Umfang gemessen oder sie datiert hat, ist in einem Park, der bereits eine Buche an Krankheit verloren hat, die gewöhnlichere Geschichte, und gewöhnlich ist hier nicht dasselbe wie unbemerkenswert."
+    }
+  }
+}

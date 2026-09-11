@@ -1,0 +1,80 @@
+{
+  "_note": "German overlay for Stuttgart, hand-written 2026-09-11 under Contract J. Ninth from the corrected langcheck queue: 17 impressions in the ten-day window, in the strongest ROLL OUT area. Umlauts restored throughout: the English file writes Wuerttemberg, Hohenheimer Gaerten and Nationalerbe-Baeume in ASCII because it is written for readers who search in English.",
+  "city": "Stuttgart",
+  "title": "Naturdenkmale in Stuttgart: 6 alte Bäume",
+  "meta_description": "Stuttgarts alte Bäume: eine Esche von 6,72 m an Schloss Solitude, Sumpfzypressen am See, eine Eiche mit Duellsage, eine Kirchhoflinde. Alle kostenlos.",
+  "intro": "Stuttgarts ausgewiesene Bäume verteilen sich über die ganze Stadt statt sich in einem Stadtteil zu drängen, von einer Kirchhoflinde in Rohracker über eine Esche von 6,72 Metern Stammumfang an Schloss Solitude bis zu drei Sumpfzypressen an einem ehemaligen Baggersee. Der älteste nach Messung ist die Esche an der Solitude, die ein dendrologisches Register auf rund 250 Jahre schätzt. Alle sind geschützte Naturdenkmale, kostenlos und jederzeit zugänglich, jeder für sich ein kurzer Ausflug und kein zusammenhängender Weg.",
+  "question_title": "Was ist der älteste Baum in Stuttgart?",
+  "question_meta": "Stuttgarts ältester gemessener Baum ist die Esche an Schloss Solitude, von einem dendrologischen Register auf rund 250 Jahre geschätzt. Wo sie steht.",
+  "question_answer": "Der älteste Baum Stuttgarts mit einer gemessenen Schätzung ist die Esche an Schloss Solitude, eine Gemeine Esche mit 6,72 Metern Stammumfang, die das deutsche Baumregister baumkunde.de auf rund 250 Jahre schätzt. Mehrere andere ausgewiesene Bäume auf dieser Seite, darunter die Hutteneiche, tragen überhaupt kein erfasstes Alter und könnten im Prinzip älter sein.",
+  "question_context": "Das Alter der Solitude-Esche stammt von baumkunde.de, einem dendrologischen Register, das den Stamm im Mai 2026 mit 6,72 Metern Umfang vermaß und daraus 250 Jahre schätzte, eine Zahl, die diese Seite als Spanne führt, 200 bis 300 Jahre, statt als falsche Genauigkeit. Sie steht auf der offenen Wiese vor Schloss Solitude, einem barocken Jagdschloss, dessen Anlage jederzeit frei zugänglich ist, und gehört zu einem ausgewiesenen Bestand mit zwei nicht vermessenen Bergahornen. Nichts sonst auf dieser Seite hat einen vergleichbaren Wert. Die Hutteneiche trägt eine Geschichte bis 1515, als Herzog Ulrich von Württemberg seinen Stallmeister an dieser Stelle an einer Eiche aufgehängt haben soll, aber keine Quelle behauptet, der heute stehende Baum sei dieselbe Eiche, also folgt aus der Sage kein Alter. Der Maulbeerbaum am Oberdorfplatz und die drei Sumpfzypressen im Kurpark sind nur durch ihr Ausweisungsjahr 2003 belegt, das festhält, wann die Stadt sie unter Schutz stellte, und nicht, wann sie gepflanzt wurden. Wo das Alter eines Baumes unbekannt ist, sagt diese Seite das, statt zu raten.",
+  "faq": [
+    {
+      "q": "Was ist der älteste Baum in Stuttgart?",
+      "a": "Die Esche an Schloss Solitude, von einem dendrologischen Register anhand ihres Stammumfangs von 6,72 Metern auf rund 250 Jahre geschätzt. Mehrere andere Bäume hier tragen kein erfasstes Alter und könnten älter sein."
+    },
+    {
+      "q": "Stehen Stuttgarts alte Bäume beieinander?",
+      "a": "Nein. Sie verteilen sich über die Stadt, von Rohracker im Osten bis zur Solitude im Westen, also nehmen Sie jeden als eigenen kurzen Ausflug und nicht als eine Route."
+    },
+    {
+      "q": "Sind sie kostenlos zu besichtigen?",
+      "a": "Ja, jeder Baum hier steht auf offenem öffentlichem Grund: Kirchhöfe, Parks, Wald und die Anlage von Schloss Solitude. Für keinen von ihnen braucht es ein Ticket."
+    },
+    {
+      "q": "Was steckt hinter der Hutteneiche?",
+      "a": "Die örtliche Überlieferung sagt, Herzog Ulrich von Württemberg habe 1515 hier seinen Stallmeister Hans von Hutten an einer Eiche aufgehängt. Keine Quelle behauptet, der stehende Baum sei dieselbe Eiche; die Geschichte gehört dem Ort."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (German common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+  "trees": {
+    "stu_001": {
+      "name": "Die Linde an der Bernhardskirche",
+      "species": "Winterlinde (Tilia cordata)",
+      "age_estimate": "rund 150 Jahre",
+      "access": "Im Garten der Bernhardskirche in Rohracker; tagsüber für Besucher offen, kostenlos, kein Ticket.",
+      "transport": "Bus 62 bis Haltestelle Rohracker, dann ein kurzer Weg",
+      "story": "Die Kirche war schon drei Jahrhunderte alt, bevor jemand den Baum davor pflanzte. Rohrackers Bernhardskirche entstand nach 1447. Die Gemeinde selbst gibt an, die Linde in ihrem Garten sei um 1870 gesetzt worden, was sie etwa 150 Jahre alt macht und damit klar zur Jüngeren der beiden.\n\nStuttgart wies sie 2003 als Naturdenkmal aus und nannte zwei Gründe: ihre Eigenart und die Tiere, die in ihr leben. Das Register ist bei diesem Baum etwas durcheinander und führt ihn zweimal, unter zwei Nummern bei identischen Koordinaten. Die Verordnung der Stadt klärt das, indem sie genau eine Linde in der Rohrackerstraße 257 nennt, also ist das ein Baum mit zwei Einträgen und nicht zwei Bäume.\n\nWas sie erlebt hat, ist keine Schlacht und kein Herzog, und genau darum geht es. Sie hat das ganze moderne Deutschland hindurch in einem arbeitenden Dorfkirchhof an Stuttgarts Osthängen gestanden und das getan, wofür Kirchhofbäume immer da waren: ein Stück Schatten machen, in das sich Leute setzen.\n\nKommen Sie in der letzten Juni- oder ersten Juliwoche. Dann blühen Winterlinden, der Duft trägt über den ganzen Garten, und in der Krone sind genug Bienen, um sie von der Bank darunter zu hören."
+    },
+    "stu_002": {
+      "name": "Die Hutteneiche",
+      "species": "Eiche (Quercus sp.)",
+      "age_estimate": "",
+      "access": "Im öffentlichen Vaihinger Wald, einem bewirtschafteten Staatswald, der Wanderern offensteht; ein im Januar 2013 im Wald aufgestellter Wegweiser leitet vom Hauptweg zum Baum.",
+      "transport": "S-Bahn bis Stuttgart-Vaihingen oder Rohr, dann ein Weg in den Wald",
+      "story": "Am 7. Mai 1515 nahm Herzog Ulrich von Württemberg seinen Stallmeister mit auf die Jagd in diesen Wald und tötete ihn. Der Tote war Hans von Hutten, und der Streit wird meist als eine Sache um Huttens Frau erzählt, der der Herzog nachstellte. Nach der Überlieferung, die an diesem Ort hängt, hängte Ulrich den Leichnam anschließend an eine Eiche, und die Eiche, die hier steht, trägt den Namen.\n\nSeien Sie vorsichtig damit, was das heißt und was nicht. Keine Quelle behauptet, der Baum, zu dem Sie laufen, sei derselbe, der 1515 hier stand; die Geschichte gehört dem Ort, und dieser Baum hat sie geerbt. Zwei unabhängige Darstellungen, ein Lexikoneintrag und eine Wanderwegnotiz, erzählen es gleich, und weiter lässt sich ein fünfhundert Jahre altes Gerücht kaum erhärten.\n\nNiemand hat diese Eiche datiert oder ihren Umfang gemessen, und das sagen wir lieber, als eine Zahl zu erfinden.\n\nSie steht nicht auf Stuttgarts Liste der 89 amtlichen Naturdenkmale, sondern auf ihrer Geschichte. Eine ehrliche Warnung zum Weg: Der Punkt markiert die Angabe unserer Quellen, und eine Besuchernotiz setzt den Stamm rund 130 Meter südöstlich des Wegweisers, abseits des markierten Pfades."
+    },
+    "stu_004": {
+      "name": "Der Maulbeerbaum am Oberdorfplatz",
+      "species": "Maulbeerbaum (Morus sp.)",
+      "age_estimate": "",
+      "access": "Am Oberdorfplatz, einem öffentlichen Platz im alten Ortskern von Möhringen; kostenlos, jederzeit zugänglich.",
+      "transport": "Stadtbahn bis Möhringen Rathaus, kurzer Weg",
+      "story": "Stuttgart schützt diesen Maulbeerbaum aus drei Gründen, und einer davon ist Kultur. Das Register der Stadt gibt einem Baum normalerweise Eigenart und Lebensraumwert und belässt es dabei. Dieser wurde im Juni 2003 wegen seiner Eigenart, seiner Seltenheit und seiner kulturellen Bedeutung ausgewiesen, eine Kombination, die verrät, dass hier die Baumart mindestens so geschützt wird wie der einzelne Stamm.\n\nEr steht am Oberdorfplatz, dem Platz des alten Ortskerns von Möhringen, heute ein Stuttgarter Stadtbezirk mit Stadtbahn. Wer ihn dort gepflanzt hat und warum, hat niemand aufgeschrieben, und Maulbeerbäume wurden in Europa aus zwei Gründen gesetzt, wegen der Früchte und wegen der Blätter, die Seidenraupen fressen. Aktenkundig ist nur, dass dieser zugesehen hat, wie das Dorf um ihn herum aufhörte, ein Dorf zu sein.\n\nZwei Dinge können wir nicht sagen. Ein Alter oder ein Stammumfang ist nirgends veröffentlicht, also erfinden wir keines. Und keine Quelle sagt, ob es eine Schwarze oder eine Weiße Maulbeere ist, was sich davorstehend klären ließe: Blätter der Weißen sind glänzend, die der Schwarzen rau wie Schmirgelpapier."
+    },
+    "stu_005": {
+      "name": "Die Sumpfzypressen im Kurpark",
+      "species": "Sumpfzypresse (Taxodium distichum)",
+      "age_estimate": "",
+      "access": "Im Kurpark in Bad Cannstatt, einem kostenlosen öffentlichen Park; jederzeit zugänglich, kein Ticket.",
+      "transport": "Stadtbahn bis Bad Cannstatt, kurzer Weg durch den Kurpark",
+      "story": "Drei Sumpfbäume aus dem amerikanischen Süden, in einem deutschen Kurpark, gesetzlich geschützt dafür, dass sie ungewöhnlich sind. Sumpfzypressen gehören in die Auen des Mississippi und der Carolinas; Stuttgart wies diese Gruppe im Juni 2003 wegen Eigenart und Seltenheit als Naturdenkmal aus, womit das Register geradeheraus einräumt, dass sie hier nicht von selbst wachsen.\n\nSie sind außerdem der Nadelbaum, der die Regel über Nadelbäume bricht. Eine Sumpfzypresse wirft jeden Winter ihre Nadeln ab, und bevor sie das tut, färbt sich die ganze Krone in ein Rostorange, das sonst nichts in einem deutschen Park kann. Auf nassem Grund schiebt die Wurzel hölzerne Knie um den Stamm, also schauen Sie nicht nur hinauf, sondern auch hinunter.\n\nDer Kurpark ist Bad Cannstatts Kurpark, sein Baumbestand stammt weitgehend aus dem 19. Jahrhundert und wird Baum für Baum erneuert.\n\nWas wir nicht bestätigen können: Der jüngste Beleg dafür, dass diese drei stehen, ist eine Fotografie vom Mai 2017 mit ihrer genauen Registernummer, und seither nennt sie nichts mehr. Wenn Sie vorbeigehen, schreiben Sie uns, was Sie vorfinden."
+    },
+    "stu_006": {
+      "name": "Die Esche an Schloss Solitude",
+      "species": "Gemeine Esche (Fraxinus excelsior)",
+      "age_estimate": "rund 250 Jahre",
+      "access": "In der offenen Grünanlage vor Schloss Solitude; kostenlos und jederzeit zugänglich. Nur das Schlossinnere selbst kostet Eintritt.",
+      "transport": "Bus 92 bis Haltestelle Solitude, kurzer Weg",
+      "story": "Ein deutsches Baumregister hat diese Esche im Mai 2026 vermessen und kam auf 6,72 Meter Stammumfang, tief gemessen bei 60 Zentimetern. So weit kommt eine Gemeine Esche normalerweise nicht. Derselbe Besuch hielt 23 Meter Höhe fest und, im eigenen Wort des Registers, vital: ein dicker alter Baum in gutem Zustand und kein Denkmal, das gestützt wird.\n\nDas Register setzt ihr Alter auf 250 Jahre. Das ist die Schätzung des Registers, Ringe hat niemand gezählt, also führen wir sie als Spanne, irgendwo zwischen 200 und 300 Jahren; der Baum ist so oder so derselbe. Er steht auf der Wiese vor Schloss Solitude, dem barocken Jagdschloss auf dem Höhenrücken westlich der Stadt, dessen Anlage heute frei und jederzeit zugänglich ist.\n\nStuttgart schützt ihn, aber nicht allein. Die Verordnung der Stadt weist hier ein Denkmal aus, eine Gruppe: diese Esche und zwei Bergahorne, im Juni 2003 gemeinsam wegen Eigenart und als Lebensraum gelistet. Die beiden Ahorne hat keine Quelle vermessen, also ist die Esche die belegte und die anderen zwei sind ihre Begleitung.\n\nIhr Stamm gabelt sich tief in eine weite, vielästige Krone, die man unbelaubt sehen sollte. Kommen Sie im Januar oder Februar."
+    },
+    "stu_007": {
+      "name": "Die Hohenheimer Liebesplatane",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "rund 245 Jahre",
+      "access": "Im kostenlosen, öffentlich zugänglichen Exotischen Garten der Hohenheimer Gärten (Universität Hohenheim); ganzjährig geöffnet, den ganzen Tag, kein Ticket. Parkplätze vorhanden.",
+      "transport": "Stadtbahn U3 bis Plieningen (Endhaltestelle), etwa 300 m Fußweg",
+      "story": "Herzog Carl Eugen von Württemberg pflanzte diese Platane 1779, der Überlieferung nach als Geste an die Frau, die seine Gattin werden sollte. Etwa vier Meter über dem Boden teilt sich der Stamm sauber in zwei, und Hohenheim liest diese Gabel seither als Liebesgeschichte: zwei Liebende, in der Wurzel vereint, in der Krone jeder für sich.\n\nWas der Herzog auch immer vorhatte, der Baum hat es gut gemacht. Mit 34 Metern zählt sie zu den höchsten Platanen Deutschlands, der Stamm wurde im Dezember 2022 mit 7,70 Metern Umfang gemessen, und im Mai 2023 nahm die Deutsche Dendrologische Gesellschaft sie unter die Nationalerbe-Bäume auf, eine Liste von rund hundert. Sie wächst im Exotischen Garten der Hohenheimer Gärten, offen und kostenlos an jedem Tag des Jahres.\n\nAlter hat sie nicht dekorativ gemacht. Die Höhlen in diesem Vierteljahrtausend Holz beherbergen Eulen, Bilche und Fledermäuse, und der Baum ist eines der bekannten deutschen Quartiere des Eremiten, einer geschützten Käferart, die genau auf solches alt werdendes Holz angewiesen ist. Zweimal im Jahr wird sie fachlich begutachtet.\n\nDie Hohenheimer Liebesplatane, sagen die Leute hier."
+    }
+  }
+}

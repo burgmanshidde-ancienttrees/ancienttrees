@@ -1,0 +1,128 @@
+{
+  "_note": "German overlay for Graz, hand-written 2026-09-11 under Contract J. Tenth from the corrected langcheck queue: 17 impressions in the ten-day window, in the strongest ROLL OUT area. Umlauts and ß restored: the English file writes Muhlgasse, Ruckerlberg, Elisabethstrasse and oeffentlich in ASCII for readers who search in English. The register's own vocabulary is kept: Naturdenkmal, gegenüber, öffentlich.",
+  "city": "Graz",
+  "title": "Naturdenkmäler in Graz: 12 geschützte Bäume",
+  "meta_description": "Graz' geschützte Bäume: eine Eichen-und-Platanen-Gruppe im Volksgarten, zwei sehr ungleiche Eichen in der Panoramagasse, Kiefer und Buche in Eggenberg.",
+  "intro": "Die Stadt Graz führt ein laufendes Register ihrer Naturdenkmäler, und zwölf davon stehen hier, in drei Gruppen: neun in der Innenstadt, vom Feldahorn am Schlossberg über das Trio im Volksgarten und zwei sehr ungleiche Eichen in der Panoramagasse bis zu einer Platane in der Elisabethstraße, und drei weitere im Westen, eine Kiefer und eine Blutbuche im kostenpflichtigen Schlosspark Eggenberg sowie eine frei zugängliche Eiche in einem nahen öffentlichen Park. Die meisten tragen kein erfasstes Alter, eine ehrliche Lücke, die hier benannt und nicht überschrieben wird.",
+  "question_title": "Was ist der älteste Baum in Graz?",
+  "question_meta": "Der am besten datierte Naturdenkmalbaum in Graz ist ein Feldahorn im Augarten, schon 1956 verzeichnet. Seine Geschichte und elf weitere.",
+  "question_answer": "Der am solidesten datierte geschützte Baum in Graz ist der Feldahorn im Augarten, am Ostrand des Parks im Bezirk Jakomini. Sein förmlicher Schutz stammt von 1979, doch Wikipedias eigene Aufstellung der Grazer Naturdenkmäler zitiert eine ältere Quelle, eine Erhebung der gepflanzten Laubbäume der Stadt aus dem Jahr 1956, in der genau dieser Ahorn bereits als schützenswert geführt wird. Das ergibt eine belegte Untergrenze von mindestens siebzig Jahren, Jahrzehnte vor den meisten anderen geschützten Bäumen der Stadt, deren Ausweisungsdaten sich um 1979, 1990 und 2000 häufen, ohne dass je ein Alter veröffentlicht worden wäre. Zwei Eichen in der Panoramagasse, am selben Tag im Juli 1979 geschützt, tragen echte Messwerte aus dem Jahr 2015 (2,80 und 4,90 Meter Umfang), die zumindest die größere älter erscheinen lassen, aber einen Umfang in ein Jahr umzurechnen braucht eine belegte Zuwachsrate, die dieser Seite nicht vorliegt, also wird keine Zahl geraten.",
+  "question_context": "Diese Seite beruht auf dem laufenden Naturdenkmal-Register der Stadt Graz (geodaten.graz.at, CC BY 4.0), Baum für Baum gegen die unabhängig gepflegte Liste der Naturdenkmäler in Graz auf Wikipedia geprüft, die jeden Eintrag eigenständig verortet und mitunter eine echte Messung oder einen historischen Beleg trägt, den das Register selbst nicht hat. Veröffentlicht werden zwölf Bäume, die gegen zwei unabhängige Quellen bestehen und die Zugangsprüfung bestehen: neun rund um die Innenstadt, über den Schlossberg, den Volksgarten, den Augarten, den Schillerplatz, die Elisabethstraße und den Hang der Panoramagasse, sowie drei weitere im Westen beim Schlosspark Eggenberg, einem UNESCO-Welterbe etwa 3,5 km entfernt, wo von zehn ausgewiesenen Bäumen nur eine Kiefer und eine Buche gut genug dokumentiert sind, dazu eine freie Eiche in einem öffentlichen Park 900 Meter vom Schlosstor. Die übrigen acht Eggenberger Bäume teilen Adresse und Datum, aber keinen einzeln unterscheidbaren Eintrag und lesen sich als eine Allee statt als einzelne Punkte. Mehrere weitere Kandidaten wurden zurückgehalten, weil ohne klaren Beleg niemand auf fremde Grundstücke geschickt wird.",
+  "faq": [
+    {
+      "q": "Was ist der älteste Baum in Graz?",
+      "a": "Der Feldahorn im Augarten ist der am besten datierte: Eine Erhebung von 1956 führte ihn bereits als schützenswert, was ihm heute eine belegte Untergrenze von mindestens siebzig Jahren gibt, deutlich vor seiner förmlichen Ausweisung 1979. Zwei Eichen in der Panoramagasse tragen echte Messwerte von 2015 (2,80 m und 4,90 m), aber aus einem Umfang wird hier ohne belegte Zuwachsrate kein Alter abgeleitet."
+    },
+    {
+      "q": "Sind Graz' geschützte Bäume kostenlos zu sehen?",
+      "a": "Zehn der zwölf, ja, alle kostenlos. Die anderen beiden stehen im Schlosspark Eggenberg und brauchen ein Ticket in den Schlosspark."
+    },
+    {
+      "q": "Kann man alle auf einem Weg sehen?",
+      "a": "Nicht auf einem. Die neun in der Innenstadt teilen sich in ein Paar aus Schlossberg und Volksgarten innerhalb eines Kilometers und einen weiteren Gang über Augarten, Schillerplatz, Elisabethstraße und Panoramagasse. Kiefer und Buche in Eggenberg, rund 3,5 km westlich, und die freie Eiche am Annaplatz, etwa 900 Meter vom Schlosstor, sind ein eigener zweiter Besuch."
+    },
+    {
+      "q": "Warum schützt Graz Bäume ohne erfasstes Alter?",
+      "a": "Das Naturdenkmal-Register der Stadt hält ein Schutzdatum, eine Art und einen Eigentümer fest, aber selten ein Pflanzjahr oder einen Stammumfang; nur drei der zwölf Bäume hier tragen eine dokumentierte Messung. Diese Seite benennt die Lücke, statt eine Zahl zu erfinden, und freut sich über einen Leser mit Maßband."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (German common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+  "trees": {
+    "grz_001": {
+      "name": "Der Feldahorn am Schlossberg",
+      "species": "Feldahorn (Acer campestre)",
+      "age_estimate": "",
+      "access": "Kostenlos, im öffentlichen Schlossbergpark, jederzeit zugänglich",
+      "transport": "Straßenbahn 3 oder 5 bis Schlossbergbahn, dann ein kurzer Weg den Hügel hinauf (es fährt auch eine kostenpflichtige Standseilbahn)",
+      "story": "Graz führt ein laufendes öffentliches Register seiner Naturdenkmäler, und dieser Feldahorn hat darin seit dem Jahr 2000 seinen Platz, auf dem bewaldeten Hügel über der Altstadt, wo einmal eine Festung stand und ein Uhrturm noch steht.\n\nFeldahorne werden fast nirgends einzeln hervorgehoben. Sie sind der Heckenbaum, der die Lücken zwischen größeren Arten füllt, statt einen Park allein zu tragen. Dieser hat den Schutz trotzdem bekommen, auf einem Hügel, dessen Buchen, Hainbuchen und Eschen seit Jahrhunderten als Landschaftspark rund um die Ruine am Gipfel gepflegt werden.\n\nDas amtliche Verzeichnis Österreichs und das Register der Stadt Graz sind sich über den genauen Standort auf drei Meter einig, doch keines der beiden hat je den Stammumfang gemessen oder eine Zahl für das Alter genannt, eine ehrliche Lücke bei einem sonst gut dokumentierten Baum.\n\nDer Schlossberg braucht niemandem vorgestellt zu werden, der Graz besucht hat; sein Uhrturm ist über die ganze Stadt hin sichtbar. Der Weg hinauf an diesem Ahorn vorbei ist zu jeder Stunde frei, zu Fuß oder mit der Bahn, die die Beine schont."
+    },
+    "grz_002": {
+      "name": "Die Eiche im Volksgarten",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Park (4,6 ha), an allen Seiten offen, kein Eintritt",
+      "transport": "Kurzer Weg vom Grazer Hauptbahnhof (etwa 1 km)",
+      "story": "Drei der amtlich geschützten Bäume von Graz stehen in einem einzigen kleinen Park, und diese Eiche ist die erste von ihnen, an der Mühlgasse-Seite des Volksgartens verwurzelt.\n\nDie Geschichte des Parks verzeichnet eine gepflanzte Eichenreihe, die etwa von Nord nach Süd durch seine Mitte läuft, siebzig bis hundert Jahre alt. Aber keine Quelle bestätigt, dass gerade dieser ausgewiesene Baum zu jener Reihe gehört und nicht zu einer eigenen Pflanzung daneben, also bleiben die beiden Angaben hier zwei Angaben, statt zu einer hübscheren Geschichte verbunden zu werden, die niemand so gesagt hat.\n\nWorüber sich das laufende Baumregister der Stadt und die unabhängige Liste auf Wikipedia einig sind, ist der Standort, auf zwei Meter genau, und der Schutz: Diese Stieleiche ist seit Mai 2000 Naturdenkmal.\n\nDer Volksgarten umfasst viereinhalb Hektar, an jeder Seite offen, kein Tor und keine Gebühr, fünf Gehminuten vom Grazer Hauptbahnhof. Zwei weitere geschützte Platanen wachsen innerhalb von hundertsiebzig Metern von dieser Eiche, was den Park selbst zum Ziel macht und nicht zur einzelnen Station."
+    },
+    "grz_003": {
+      "name": "Die Platane im Volksgarten (Mühlgasse)",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Park, an allen Seiten offen",
+      "transport": "Kurzer Weg vom Grazer Hauptbahnhof (etwa 1 km)",
+      "story": "Eine datierte Aufnahme auf Wikimedia Commons, abgelegt unter der eigenen Schutznummer genau dieses Baumes, zeigt diese Platane Jahre nach ihrer förmlichen Ausweisung noch im Volksgarten stehend, einer jener kleinen Belege, die dieses Projekt einem bloßen Datenbankeintrag vorzieht.\n\nEs ist eine Platane, der Hybrid, zu dem Stadtplaner in ganz Europa greifen, wenn sie einen Baum wollen, der Abgase und schlechten Boden abschüttelt, und dieser tut den Dienst hier seit dem Jahr 2000.\n\nSie wächst wenige Schritte von einer geschützten Eiche und einer zweiten geschützten Platane, die drei zusammen die dichteste Gruppe ausgewiesener Bäume in Graz, alle in einem kleinen öffentlichen Park erreichbar.\n\nKeine der beiden Quellen nennt ein Alter oder einen Stammumfang, eine ehrliche Lücke bei einem Baum, der alt genug ist, um aus eigenem Recht gesetzlichen Schutz bekommen zu haben. Der Volksgarten öffnet sich an jeder Seite, ohne Gebühr und ohne Sperrstunde, fünf Gehminuten vom Grazer Hauptbahnhof. Wer vom Bahnhof kommt, hat damit drei Naturdenkmäler erreicht, bevor er überhaupt in der Innenstadt war."
+    },
+    "grz_004": {
+      "name": "Die Platane im Volksgarten (Volksgartenstraße)",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Kostenlos, öffentlicher Park, an allen Seiten offen",
+      "transport": "Kurzer Weg vom Grazer Hauptbahnhof (etwa 1 km), Zugang über die Volksgartenstraße",
+      "story": "Register führen gelegentlich denselben Baum zweimal unter zwei Adressen, anderswo auf dieser Seite ein echtes Problem, und diese Platane ist eine belastbare Gegenprobe genau dazu: Sie steht auf einem eigenen Grundstück, hundertsiebzig Meter von den beiden anderen ausgewiesenen Bäumen des Parks entfernt, und wurde vier Monate später in einem eigenen Beschluss des Jahres 2000 geschützt. Keine Dublette, sondern ein dritter Baum, der die kleine Sammlung des Volksgartens vervollständigt.\n\nSie wächst nahe dem Eingang Volksgartenstraße statt an der Mühlgasse-Seite, wo ihre beiden Nachbarn stehen, was heißt, dass man den Park von beiden Straßen betreten kann und binnen weniger Schritte einen geschützten Baum findet.\n\nDas Register der Stadt Graz und die unabhängige Liste auf Wikipedia setzen sie auf drei Meter genau an denselben Ort. Wie bei ihren Nachbarn hat niemand ein Alter oder einen Stammumfang veröffentlicht, was jeder Leser mit einem Maßband in der Zeit beheben könnte, die ein Gang durch den Park kostet."
+    },
+    "grz_005": {
+      "name": "Der Feldahorn im Augarten",
+      "species": "Feldahorn (Acer campestre)",
+      "age_estimate": "mindestens 70 Jahre",
+      "access": "Kostenlos zu sehen; steht am Rand des öffentlichen Augartens neben einem denkmalgeschützten Gebäude (Museum der Wahrnehmung). Vor Ort nicht bestätigt, ob der Baum selbst auf dem Grundstück des Museums oder auf dem angrenzenden Parkgrund steht.",
+      "transport": "Zu Fuß vom Grazer Hauptbahnhof oder aus der Innenstadt; Straßenbahn oder Bus Richtung Elisabethstraße/Jakominiplatz, dann ein kurzer Weg zum Augarten",
+      "story": "Dieser Feldahorn hat einen ungewöhnlich festen Boden unter seinem Alter. Seine förmliche Ausweisung als Naturdenkmal stammt von 1979, doch Wikipedias eigener Eintrag zitiert eine ältere Quelle, eine Erhebung der gepflanzten Laubbäume von Graz aus dem Jahr 1956 durch F. Hanselmayer, die genau diesen Ahorn bereits als schützenswert führte, Jahrzehnte bevor der rechtliche Schutz nachzog.\n\nDaraus ergibt sich eine harte Untergrenze von heute mindestens siebzig Jahren, hergeleitet aus einem datierten Beleg und nicht aus einer Vermutung, ohne Obergrenze, weil nichts eine belegt.\n\nEr wächst am Ostrand des Augartens, eines öffentlichen Parks in Jakomini, neben einem denkmalgeschützten Badegebäude, in dem heute das Museum der Wahrnehmung untergebracht ist. Ob der Baum mit seinem Fuß auf dem Grundstück des Museums oder auf dem angrenzenden öffentlichen Parkgrund steht, konnte in diesem Durchgang keine Quelle bestätigen, weshalb dieser Eintrag gekennzeichnet und nicht mit voller Sicherheit behauptet wird, eine ehrliche schmale Lücke bei einem sonst gut verankerten Baum."
+    },
+    "grz_006": {
+      "name": "Die Platane am Schillerplatz",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Kostenlos, am Schillerplatz, einem öffentlichen Platz, jederzeit zugänglich",
+      "transport": "Straßenbahn oder Bus bis Schillerplatz, direkt am Platz",
+      "story": "Eine Aufnahme vom 2. Mai 2014, auf Wikimedia Commons unter der eigenen Schutznummer dieses Baumes abgelegt, ist genau die Art kleiner datierter Beleg, die dieses Projekt schätzt: Sie zeigt den Baum vor zwölf Jahren lebend und erkennbar, ein Datenpunkt unabhängig sowohl vom laufenden Register der Stadt als auch von Wikipedias eigener Liste, die sich über den Standort auf zwei Meter einig sind.\n\nDie Platane hält ihren Naturdenkmalstatus seit September 1990 und wächst am Schillerplatz, einem gewöhnlichen öffentlichen Platz im Bezirk St. Leonhard und nicht in einem angelegten Park, die Art geschützter Baum also, an dem Leute vorbeigehen, ohne ein zweites Mal hinzusehen, weil ihn nichts vom Straßenmobiliar ringsum abhebt.\n\nEin Alter oder ein Stammumfang wurde nie veröffentlicht, was auf die meisten geschützten Bäume in Graz zutrifft und kein Grund ist, diesen zurückzuhalten: Er steht auf offenem öffentlichem Grund, mit Straßenbahn oder Bus direkt erreichbar, zu jeder Stunde kostenlos. Die Platane in der Elisabethstraße, ebenfalls auf dieser Seite, steht keinen Kilometer entfernt, also lassen sich die beiden gut zu einem Gang verbinden."
+    },
+    "grz_007": {
+      "name": "Die Eiche in der Panoramagasse (Nr. 54)",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "",
+      "access": "Kostenlos, auf öffentlichem Grund gegenüber der genannten Hausnummer",
+      "transport": "Bus Richtung Rückerlberggürtel/Geidorf, dann ein Weg die Panoramagasse hinauf",
+      "story": "Zwei Stieleichen stehen vierzig Meter voneinander entfernt an derselben Hangstraße, am exakt selben Tag im Juli 1979 geschützt, und dies ist die kleinere der beiden: ein Stamm, der in einer Feldaufnahme von 2015 mit 2,80 Metern Umfang gemessen wurde, gegen 4,90 Meter bei ihrer Nachbarin weiter oben.\n\nEine belegte Zuwachsrate für diese Art wurde in diesem Durchgang nicht gefunden und geprüft, also wird dieser Umfang hier nicht in ein Alter umgerechnet, statt zu einer Vermutung im Gewand einer Berechnung zu werden.\n\nDas Register führt den Baum gegenüber Hausnummer 54 in der Panoramagasse, einer steilen Straße am Rückerlberghang in Geidorf, die ihren Namen ehrlich verdient und über die Dächer der Stadt hinaufsteigt. Gegenüber ist das eigene Wort des Registers für die Lage des Baumes: auf dem öffentlichen Grünstreifen vis-à-vis dem Haus, nicht in einem privaten Garten.\n\nErreichbar mit dem Bus Richtung Rückerlberggürtel und einem Weg den Hügel hinauf, mit der größeren Nachbarin kaum eine Minute weiter."
+    },
+    "grz_008": {
+      "name": "Die Eiche in der Panoramagasse (Nr. 56)",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "",
+      "access": "Kostenlos, auf öffentlichem Grund gegenüber der genannten Hausnummer",
+      "transport": "Bus Richtung Rückerlberggürtel/Geidorf, dann ein Weg die Panoramagasse hinauf; etwa eine Minute von der Eiche bei Nr. 54",
+      "story": "Diese Eiche und ihre Nachbarin vierzig Meter weiter unten wurden am selben Tag im Juli 1979 geschützt, nahezu identische Akten für zwei Bäume, die sich als völlig ungleich erwiesen: Eine Feldaufnahme von 2015 maß diese hier mit 4,90 Metern Umfang, fast das Doppelte der 2,80 Meter ihrer Nachbarin, bei einer Adresse und einem Schutzdatum, die sich sonst wie ein Paar lesen.\n\nNichts in den Quellen erklärt den Unterschied, ob die eine Jahrzehnte vor der anderen gepflanzt wurde oder auf besserem Boden einfach schneller wuchs, also nennt diese Seite die Messung, statt einen Grund zu raten.\n\nSie steht gegenüber Hausnummer 56 in der Panoramagasse, einer Hangstraße in Geidorf am Rückerlberg, laut Wortlaut des Registers auf dem öffentlichen Grünstreifen und nicht in einem privaten Grundstück.\n\nEin veröffentlichtes Alter gibt es nicht und hier wird keines erfunden. Ein Umfang dieser Größe bedeutet bei einer Eiche für gewöhnlich echtes Alter, aber das eine ins andere umzurechnen braucht eine belegte Zuwachsrate, die nicht vorlag, also bleibt die Zahl ein Umfang und wird keine Vermutung."
+    },
+    "grz_009": {
+      "name": "Die Weymouth-Kiefer in Eggenberg",
+      "species": "Weymouth-Kiefer (Pinus strobus)",
+      "age_estimate": "",
+      "access": "Kostenpflichtig: steht im Schlosspark Eggenberg, der Anlage von Schloss Eggenberg (UNESCO-Welterbe), betrieben vom Universalmuseum Joanneum. Aktuelle Preise für das Parkticket auf der Seite des Museums prüfen.",
+      "transport": "Grazer Öffis Richtung Eggenberg; Eggenberger Allee 90 ist der beschilderte Haupteingang des Schlosses",
+      "story": "Eine Feldmessung vom Oktober 2016, zitiert in Wikipedias Liste der Grazer Naturdenkmäler, gibt dieser Weymouth-Kiefer einen Stamm von 3,70 Metern Umfang und eine Höhe von etwa 27 Metern, Werte, deren Standort das laufende Register der Stadt unabhängig auf drei Meter genau bestätigt.\n\nSie ist einer von zehn ausgewiesenen Bäumen, die gemeinsam am Eingang des Schlossparks Eggenberg gepflanzt wurden, darunter fünf Platanen und vier weitere Weymouth-Kiefern, aber sie ist die einzige mit einer eigenen Messung in den Akten. Deshalb steht sie hier allein und nicht als Gruppeneintrag: Der Rest liest sich als eine Allee und nicht als neun einzeln sehenswerte Dinge.\n\nPinus strobus stammt aus dem Osten Nordamerikas, und dieses Exemplar ist auf österreichischem Boden groß genug geworden, um 1979 aus eigenem Recht unter Schutz gestellt zu werden.\n\nSchloss Eggenberg ist ein UNESCO-Welterbe am Westrand der Stadt, sein Park wird mit Ticket betreten und nicht frei, die einzige Ausnahme auf dieser Seite. Eine ebenfalls geschützte Blutbuche wächst siebenundfünfzig Meter entfernt im selben Park."
+    },
+    "grz_010": {
+      "name": "Die Blutbuche in Eggenberg",
+      "species": "Blutbuche (Fagus sylvatica 'Purpurea')",
+      "age_estimate": "",
+      "access": "Kostenpflichtig: steht im Schlosspark Eggenberg, der Anlage von Schloss Eggenberg (UNESCO-Welterbe), etwa 57 Meter von der Weymouth-Kiefer entfernt.",
+      "transport": "Grazer Öffis Richtung Eggenberg; Eggenberger Allee 90 ist der beschilderte Haupteingang des Schlosses",
+      "story": "Wikipedias Liste setzt diese Blutbuche an die Eggenberger Allee 90, mit Koordinaten, die auf sechs Nachkommastellen mit dem GPS-Vermerk einer Aufnahme übereinstimmen, die hier im Juni 2014 gemacht und auf Wikimedia Commons unter der Schutznummer des Baumes abgelegt wurde. Zwei Angaben, die so genau zusammenfallen, sind ungefähr das Sicherste, was ein Standort auf dieser Seite haben kann.\n\nDabei trägt der Baum weniger Dokumentation als die meisten seiner Nachbarn: Er steht im österreichischen Denkmalverzeichnis und nicht im getrennt geführten Register der Stadt Graz, das ihn gar nicht kennt, und seit jenem einen Bild von 2014 hat ihn niemand fotografiert oder vermessen.\n\nFagus sylvatica 'Purpurea' ist eine Zuchtform wegen des dunkelroten Laubs und keine Wildform, in europäischen Parks genau dieser Farbe wegen breit gepflanzt, und diese hier bekam 1979 ihren förmlichen Schutz, ungeachtet der fehlenden Zahlen zu Umfang und Alter.\n\nSie wächst im Schlosspark Eggenberg, siebenundfünfzig Meter von einer geschützten Weymouth-Kiefer, die Adresse und Ausweisungsjahr mit ihr teilt, auf demselben Ticket erreichbar."
+    },
+    "grz_011": {
+      "name": "Die Platane in der Elisabethstraße",
+      "species": "Platane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Kostenlos, auf öffentlichem Grund laut Register der Stadt (Eigentümer: öffentlich)",
+      "transport": "Zu Fuß aus der Grazer Innenstadt die Elisabethstraße entlang; Straßenbahn- und Buslinien bedienen die Straße",
+      "story": "Diese Platane hält ihren Naturdenkmalstatus seit 1979, aus der ersten Welle von Bäumen, die Graz überhaupt je geschützt hat, und ihre Nummer ist eine runde: Steirisches Naturdenkmal 1000. Sie wächst in der Elisabethstraße in St. Leonhard, genau dort, wo OpenStreetMap unabhängig eine kleine Brücke über einen Bach verzeichnet, ein Detail, das zu einer Pflanzung am Bachrand passt, ohne für sich allein irgendeine Quelle zu bestätigen.\n\nEine Aufnahme vom 14. Mai 2014, auf Wikimedia Commons abgelegt und auf die Koordinate des Registers GPS-verortet, zeigt den Baum vor zwölf Jahren lebend und erkennbar. Seither hat ihn niemand fotografiert, also ruht sein Jetzt-noch-da auf diesem Bild und seiner laufenden öffentlichen Eintragung statt auf einer frischen Sichtung, eine ehrliche Lücke und keine Gewissheit.\n\nDas laufende Register der Stadt und die getrennt gepflegte Naturdenkmalliste auf Wikipedia sind sich über den Ort auf viereinhalb Meter einig. Keines trägt ein Alter oder eine Messung. Der Baum steht auf öffentlichem Grund, das Eigentümerfeld des Registers liest sich öffentlich, jederzeit frei zu sehen, keinen Kilometer von der Platane am Schillerplatz."
+    },
+    "grz_012": {
+      "name": "Die Eiche am Annaplatz",
+      "species": "Eiche (Quercus sp.)",
+      "age_estimate": "",
+      "access": "Kostenlos, am Annaplatz, einem öffentlichen Park im Bezirk Algersdorf/Eggenberg, von der Stadt (Holding Graz) gepflegt, jederzeit zugänglich",
+      "transport": "Grazer Öffis Richtung Eggenberg/Algersdorf; etwa 900 m zu Fuß vom Haupteingang des Schlossparks Eggenberg",
+      "story": "Beide Quellen, die diese Eiche beschreiben, sind sich über ihren Standort einig, und keine von beiden kann sagen, welche Eiche es ist.\n\nDas laufende Baumregister von Graz und die unabhängige Naturdenkmalliste auf Wikipedia setzen sie an den Annaplatz, einen kleinen öffentlichen Park in Algersdorf nahe der Annakapelle, auf viereinhalb Meter genau beieinander, und beide halten ihren Schutz vom September 1990 fest, ohne je eine Art über Eiche hinaus zu nennen. Also geht sie hier mit nicht bestimmter Art online, die genaue Eiche eine offene Frage für den, der als Nächstes mit einem brauchbaren Blick für Rinde und Blattform vorbeikommt.\n\nDer Annaplatz selbst ist eindeutig öffentlich: Die Stadtgärtnerei pflegt ihn, und es finden Veranstaltungen darauf statt, Yogastunden darunter, die Art gewöhnlicher Grünfläche im Viertel, die ein geschützter Baum ohne Aufhebens teilen kann.\n\nEr liegt rund neunhundert Meter zu Fuß von Kiefer und Blutbuche im Schlosspark Eggenberg, nah genug für denselben Ausflug, und steht anders als jene frei statt hinter dem Ticket des Schlosses."
+    }
+  }
+}

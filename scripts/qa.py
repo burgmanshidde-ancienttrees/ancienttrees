@@ -1400,6 +1400,44 @@ def check_no_personal_address():
     return out
 
 
+def check_dist_is_newer_than_the_source():
+    """Refuse to judge a build that predates the data it is supposed to contain.
+
+    Written 2026-09-11 after making the same mistake three times in one
+    session: writing a translation overlay while an Astro build was running,
+    so qa walked a dist that was part old and part new. It fails in a way that
+    looks like a real defect and is not. The first time it reported 188 dead
+    links and 317 missing pages; the third it reported two dead links to
+    Japanese pages whose overlays had been written mid-build. Each cost a
+    round of diagnosis to conclude that nothing was wrong with the site.
+
+    The invariant is simple and nothing else here holds it: qa must judge a
+    dist built from the tree as it stands now. So the newest source file must
+    be older than the newest thing the build wrote. It also catches the plain
+    version of the same error, running qa after editing and forgetting to
+    rebuild, which produces exactly the same misleading output.
+    """
+    def newest(root, pattern="**/*"):
+        best = 0.0
+        for f in Path(root).glob(pattern):
+            if f.is_file():
+                best = max(best, f.stat().st_mtime)
+        return best
+
+    if not DIST.exists():
+        return []
+    built = newest(DIST)
+    source = max(newest("data", "**/*.json"), newest("site/src"))
+    if source <= built:
+        return []
+    return ["The build is older than the source it should contain: a file "
+            "under data/ or site/src changed %.0f seconds after the newest "
+            "page was written. Rebuild before running qa, and never edit "
+            "while a build is running. Any failures below would be about the "
+            "stale build rather than about the site."
+            % (source - built)]
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1416,6 +1454,13 @@ def main():
         # relative Path against an absolute one, silently orphaning every
         # non-excluded page in the build.
         DIST = args.dist.resolve()
+
+    # FIRST, and it returns rather than accumulating: every failure below is
+    # meaningless if the build is older than the data it should hold.
+    stale = check_dist_is_newer_than_the_source()
+    if stale:
+        print("QA REFUSED: " + stale[0])
+        return 1
 
     failures = []
     failures += check_auth_corpus_agreement()
