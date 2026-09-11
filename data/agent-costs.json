@@ -7579,6 +7579,24 @@
     "note": "deepen pass on 7 old leads: 4 turned out already published (leads file was stale), 2 genuinely unresolved (access/alive-now doubt), 4 Wikidata candidates misattributed to Fiesole not Florence",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "prague",
+    "kind": "verify",
+    "tokens": 115000,
+    "trees": 3,
+    "note": "Deepened NE Prague (Bohnice/Kobylisy/Liben/Vysocany) from unmined AOPK register rows 5.3-7km out: 3 oaks verified via register+cs.wikipedia registry-join (prg_028/029/030), 1 cedar left as a lead on unresolved sports-club access, all near-town register duplicates and prior BLOCKED entries confirmed rather than re-litigated",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Prague",
+    "kind": "write",
+    "tokens": 48000,
+    "trees": 3,
+    "note": "3 flagged Praha 8 oaks (prg_028/029/030) written from the verify pass; no best_time and no why_go on any of them, girth plus recorded age is the reason. Batch of 3 rather than the 15-20 the rulebook prices at, so the fixed corpus read is amortised over 3 trees instead of 18: ~16k per tree against the ~12k target, overrun is batch size not per-story cost. Restored Czech diacritics the write pass had flattened to ASCII (place and street names) before merging, cross-checked against the register's own name_cz fields.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
