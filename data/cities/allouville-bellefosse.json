@@ -60,7 +60,15 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the spiral staircase wrapped around its huge hollow trunk (15m round), leading up to two tiny chapels built inside. It stands in the open village centre, next to the church."
+      "how_to_recognise": "You can recognise it by the spiral staircase wrapped around its huge hollow trunk (15m round), leading up to two tiny chapels built inside. It stands in the open village centre, next to the church.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

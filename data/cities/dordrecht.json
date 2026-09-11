@@ -318,7 +318,15 @@
       "access": "Free. Public park, open daily.",
       "transport": "About 500 m west of Dordrecht station, in the wooded strip beside the railway tracks.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "dor_010",
@@ -373,7 +381,15 @@
       "access": "Free. Public street/canalside verge, open at all times.",
       "transport": "About 1.4 km southwest of Dordrecht station, on the Spuiboulevard.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "dor_012",

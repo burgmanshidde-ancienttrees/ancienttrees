@@ -59,7 +59,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its crown trained flat into an 18-metre disc, held up on a cast-iron framework. It stands on the Grote Markt in the middle of Westerlo."
+      "how_to_recognise": "You can recognise it by its crown trained flat into an 18-metre disc, held up on a cast-iron framework. It stands on the Grote Markt in the middle of Westerlo.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

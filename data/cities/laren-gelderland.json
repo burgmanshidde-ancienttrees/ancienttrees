@@ -58,7 +58,15 @@
       },
       "how_to_recognise": "The huge low, spreading oak at the end of the Dikke Boompad, unmistakably the biggest tree on the estate.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

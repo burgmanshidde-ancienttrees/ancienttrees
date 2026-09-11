@@ -751,7 +751,15 @@
       },
       "how_to_recognise": "You are looking for the oak behind hunebed D4 rather than the four standing in front of it: heavier in the trunk and plainly older than the group.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

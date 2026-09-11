@@ -58,7 +58,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its hollow, steel-banded trunk, now down to a single branch still carrying leaves. It stands inside Kvills nature reserve, near Rumskulla."
+      "how_to_recognise": "You can recognise it by its hollow, steel-banded trunk, now down to a single branch still carrying leaves. It stands inside Kvills nature reserve, near Rumskulla.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -59,7 +59,15 @@
       "location_precision": "confirmed",
       "girth_cm": 1300,
       "height_m": 23,
-      "how_to_recognise": "You can recognise it by its hollow trunk, the crown long gone, with only side branches still in leaf. It stands in the former manor park beside the Stelmužė Church of St Anne."
+      "how_to_recognise": "You can recognise it by its hollow trunk, the crown long gone, with only side branches still in leaf. It stands in the former manor park beside the Stelmužė Church of St Anne.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }
