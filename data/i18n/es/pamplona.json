@@ -1,0 +1,84 @@
+{
+  "_note": "Spanish overlay for Pamplona, hand-written 2026-09-11 under Contract J. Second pick from the corrected langcheck queue: /pamplona takes 26 impressions and 2 clicks in the ten-day window, the most clicks of any untranslated city in a ROLL OUT language area. Peninsular Spanish with the Navarrese vocabulary the register itself uses: Monumento Natural, robles trasmochos, quejigo, Valdorba.",
+  "city": "Pamplona",
+  "title": "Árboles singulares de Pamplona: 6 monumentos naturales",
+  "meta_description": "Navarra declara Monumento Natural a árboles concretos, y seis están cerca de Pamplona: robles trasmochos de valle y una secuoya gigante en el Palacio.",
+  "intro": "Navarra protege 47 árboles por su nombre, declarando a cada uno Monumento Natural por derecho propio, y seis de ellos están a media hora de Pamplona. Cinco son robles de los valles al norte y al sur de la ciudad, casi todos trasmochados durante siglos por los pueblos dueños del terreno, que es la razón de sus troncos cortos y gruesos bajo copas enormes. El sexto está en la propia Pamplona, una secuoya gigante en el jardín del palacio del Gobierno foral, que es más o menos lo más lejos que se puede estar de un roble navarro de monte.",
+  "question_title": "¿Cuál es el árbol más antiguo de Pamplona?",
+  "question_meta": "El Roble de Orkin, en Ultzama, es probablemente el árbol más antiguo cerca de Pamplona. Por qué Navarra no publica ninguna edad, y 5 monumentos más.",
+  "question_answer": "El árbol más antiguo cerca de Pamplona es con toda probabilidad el Roble de Orkin, en el valle de Ultzama, un roble común al que su tamaño ha valido el apelativo de milenario, aunque Navarra no publica ninguna edad ni para él ni para ninguno de los 47 árboles que tiene declarados Monumento Natural.",
+  "question_context": "El registro de Navarra es el más corto de este sitio y el más tajante. Nombra 47 árboles, declara a cada uno Monumento Natural individual y anota de cada uno la especie, el lugar, el año de la declaración y una coordenada, y nada más: ni altura, ni perímetro, ni edad, ni una nota sobre si el árbol sigue vivo. El catálogo en su forma actual se aprobó a finales de 2009, con una primera tanda declarada en 1991. Eso deja la cuestión de la edad en manos de fuentes ajenas al registro, y ahí el terreno es blando. Al roble de Orkin, en el valle de Ultzama, se le llama milenario por su tamaño, que es una manera habitual de fechar un roble grande y no una medición. El roble de Eltzaburu está mejor documentado: se le atribuyen más de 26 metros de altura y una base cercana a los dos metros de diámetro, sobrevivió tanto a una tala como a un rayo que se llevó una de sus ramas principales, y fue declarado Monumento Natural en 1991. Para llegar a Eltzaburu: unos 25 km al norte de Pamplona, en el valle de Ultzama, con una ruta señalizada a pie hasta el árbol.",
+  "faq": [
+    {
+      "q": "¿Cuál es el árbol más antiguo cerca de Pamplona?",
+      "a": "Probablemente el Roble de Orkin, en el valle de Ultzama, al que se suele llamar milenario por su tamaño. Navarra no publica edades de ninguno de sus árboles declarados, así que eso es una fama y no una cifra."
+    },
+    {
+      "q": "¿Qué significa Monumento Natural en Navarra?",
+      "a": "Una declaración legal individual. Navarra ha nombrado 47, casi todos árboles, cada uno protegido por derecho propio; el catálogo tal y como está se aprobó a finales de 2009 y amplía un primer grupo declarado en 1991."
+    },
+    {
+      "q": "¿Por qué tantos son robles?",
+      "a": "Porque los valles húmedos al norte de Pamplona son tierra atlántica y no mediterránea, y ahí crece el roble, y porque los pueblos los trasmocharon durante siglos para leña y carbón, cortando la copa una y otra vez. Eso produce un tronco corto y grueso bajo una copa ancha, que es la forma que después acaba declarada monumento."
+    },
+    {
+      "q": "¿Se visitan gratis?",
+      "a": "Los cinco robles sí, están en terreno comunal y en monte con pistas hasta ellos; Eltzaburu tiene una ruta señalizada a pie. La secuoya está en el jardín cerrado del Palacio de Navarra, en plena ciudad, así que normalmente es una vista desde la calle y no una visita."
+    },
+    {
+      "q": "¿Se puede ir andando de uno a otro?",
+      "a": "Solo entre los dos de Jauntsarats, que están a unos 570 metros el uno del otro. El resto están en valles distintos, entre 13 y 25 kilómetros de Pamplona y en direcciones diferentes."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+  "trees": {
+    "pam_001": {
+      "name": "La Secuoya del Palacio de Navarra",
+      "species": "Secuoya gigante (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "access": "Se ve gratis desde la calle; el jardín del Palacio de Navarra está cerrado y no suele abrirse, así que es una vista y no una visita",
+      "transport": "En la Avenida Carlos III, en pleno centro de Pamplona, a pocos minutos a pie de la Plaza del Castillo",
+      "story": "Hay una secuoya californiana en el centro de Pamplona y es del Gobierno. El Palacio de Navarra, en la Avenida Carlos III, es la sede de la administración foral, y el jardín amurallado que hay detrás de su fachada guarda una secuoya gigante que Navarra declaró Monumento Natural en 1991, en la primera tanda. Es el único de los 47 árboles declarados de la comunidad que está dentro de una ciudad. Sequoiadendron giganteum llegó a Europa como semilla en 1853 y en menos de una década era el árbol que quería toda institución y toda finca de occidente, así que un palacio administrativo del siglo XIX con una secuoya en el jardín no es una excentricidad, es exactamente lo que produjo aquella moda.\n\nLo que Navarra no publica es ninguna medida del árbol, ni una edad. El registro lleva la especie, el lugar, el año de la declaración y una coordenada, y ahí se detiene.\n\nEl jardín está cerrado, lo que convierte a este en un árbol que por lo general se mira por encima de un muro desde la avenida en vez de uno bajo el que uno se pone. Es lo bastante alto como para que eso funcione."
+    },
+    "pam_002": {
+      "name": "El Roble de Orkin",
+      "species": "Roble común (Quercus robur)",
+      "age_estimate": "se le llama milenario por su tamaño, sin ninguna cifra publicada",
+      "access": "Gratuito, en terreno comunal del valle de Ultzama",
+      "transport": "Arraitz-Orkin, a unos 19 km al norte de Pamplona, y después un paseo corto",
+      "story": "Este es el árbol al que la gente de Navarra se refiere cuando dice el roble grande. Está en Orkin, en el valle de Ultzama al norte de Pamplona, y se le describe habitualmente como milenario, que es una fama construida sobre su tamaño y no sobre ninguna medición: el registro de Navarra le da una especie, un lugar, un año de declaración y una coordenada, y nada más, así que nadie ha publicado un perímetro, una altura ni una edad.\n\nLo que sí se describe de manera constante es la forma. Está trasmochado, cortado una y otra vez a lo largo de generaciones a la manera en que los pueblos vascos y navarros manejaron sus robles para leña y carbón, y el resultado es una copa ancha y redondeada sobre un tronco que se abre en la base en una masa de raíces con huecos lo bastante grandes como para que los animales se metan debajo.\n\nUltzama es tierra atlántica y húmeda, de hayas, robles y pasto, nada mediterráneo, a 20 kilómetros y un clima entero de distancia de Pamplona. Navarra lo declaró Monumento Natural en 2009. Si alguien le ha pasado una cinta alrededor, nos gustaría saber el número."
+    },
+    "pam_003": {
+      "name": "El Roble de Eltzaburu",
+      "species": "Roble común (Quercus robur)",
+      "age_estimate": "",
+      "access": "Gratuito, se llega por una ruta señalizada a pie desde el hayedo de Sastrain",
+      "transport": "Eltzaburu, a unos 23 km al norte de Pamplona, en el valle de Ultzama",
+      "story": "Un rayo se llevó una de sus ramas principales y sigue en pie. Al roble de Eltzaburu se le atribuyen más de 26 metros de altura y una base cercana a los dos metros de diámetro, y lleva encima las marcas de dos intentos distintos contra su vida: se libró de una tala, en un momento que nadie ha fechado, y perdió una rama mayor por un rayo hace años.\n\nNavarra lo declaró Monumento Natural en 1991, en el primer grupo, y ocupa el número 10 de la lista. Es el más accesible de los robles de esta página, porque hay una ruta señalizada a pie hasta él desde el hayedo de Sastrain, lo que significa que alguien decidió que la gente debía venir a verlo y puso carteles.\n\nEl valle de Ultzama es la mitad verde y húmeda de Navarra, donde el tiempo atlántico consigue pasar la divisoria y el haya y el roble crecen como crecen en el País Vasco y no como crecen en el Ebro. No se publica ninguna edad para él, igual que no se publica para ninguno de los 47 árboles declarados de Navarra."
+    },
+    "pam_004": {
+      "name": "Los Robles de Jauntsarats",
+      "species": "Roble común (Quercus robur)",
+      "age_estimate": "",
+      "access": "Gratuito, en monte de terreno comunal del valle de Basaburua",
+      "transport": "Jauntsarats, a unos 25 km al norte de Pamplona",
+      "story": "Son dos, declarados por separado, a unos 570 metros el uno del otro dentro del mismo bosque. Navarra inscribió los robles de Jauntsarats como Roble de Jauntsarats I y Roble de Jauntsarats II en 1991, dando a cada uno su propia declaración de Monumento Natural en lugar de tratarlos como una pareja, que es como funciona este registro: protege individuos y no agrupa.\n\nEstán en el valle de Basaburua, en la tierra húmeda del norte, dentro de un bosque y no a campo abierto, lo cual es raro en un roble monumental navarro; la mayoría de los declarados están en pasto o en terreno comunal, donde se conservaron como árboles aislados para sombra y para hoja. Dos gigantes dentro de un hayedo y robledal son otra experiencia, porque uno se los encuentra encima en vez de verlos venir desde lejos.\n\nNavarra no publica ninguna medida ni ninguna edad de ninguno de los dos. Esta entrada cubre el primero, y el segundo queda 570 metros al sur; los dos están en el mismo paseo, lo que hace de Jauntsarats el único sitio cerca de Pamplona donde se pueden ver dos árboles declarados Monumento Natural en una sola salida."
+    },
+    "pam_005": {
+      "name": "El Roble de Azanza",
+      "species": "Roble pubescente (Quercus pubescens)",
+      "age_estimate": "",
+      "access": "Gratuito, en terreno del pueblo, en el valle de Goñi",
+      "transport": "Azanza, a unos 16 km al noroeste de Pamplona",
+      "story": "Este es un roble distinto de los demás, y la diferencia es justamente la razón de que merezca una parada aparte. Quercus pubescens, el roble pubescente, es el roble de la tierra seca del sur de Europa: hoja más pequeña y con el envés afieltrado, tolerante con los suelos calizos delgados y con los veranos largos, y va sustituyendo al roble común según uno baja hacia el sur y el oeste saliendo de los valles atlánticos.\n\nAzanza está en el valle de Goñi, justo en esa frontera, en los montes bajo la Sierra de Andía, y el cambio de los árboles en 20 kilómetros de carretera desde Ultzama es la lección de geografía navarra más clara que nadie podría pedir.\n\nNavarra declaró este árbol Monumento Natural en 2009 y, como con los 47, publicó una especie, un lugar, un año y una coordenada, y ninguna medida. Ese es el estado honesto de la cosa: un roble protegido oficialmente, de una especie que el norte de Navarra no cría, en pie donde se tocan dos climas, y nadie ha dicho lo grande ni lo viejo que es. Si usted lo ha medido, díganoslo."
+    },
+    "pam_006": {
+      "name": "El Quejigo de Garinoain",
+      "species": "Quejigo (Quercus faginea)",
+      "age_estimate": "",
+      "access": "Gratuito, a campo abierto en la Valdorba",
+      "transport": "Garinoain, a unos 25 km al sur de Pamplona",
+      "story": "Salga de Pamplona hacia el sur en vez de hacia el norte y los robles vuelven a cambiar. El quejigo, Quercus faginea, es el roble ibérico del terreno intermedio entre el norte húmedo y el llano seco del Ebro: aguanta la hoja seca todo el invierno y solo la suelta cuando empuja la nueva, así que un quejigo en febrero es un árbol marrón en un paisaje pelado, que es precisamente como se encuentra uno.\n\nEste es el Monumento Natural declarado de la Valdorba, una comarca de pueblos pequeños e iglesias románicas en los montes al sur de Pamplona que casi nadie visita, y Navarra lo inscribió en 2009. Como todos los árboles de esta página, viene con una especie, un lugar, un año y una coordenada, y ninguna medida en absoluto.\n\nLa Valdorba merece el viaje por sí sola, e ir a ver un roble protegido es una excusa tan buena como cualquier otra para acabar en ella. Si conoce su perímetro, o alguien lo ha fechado, díganoslo y pondremos la cifra en esta página."
+    }
+  }
+}
