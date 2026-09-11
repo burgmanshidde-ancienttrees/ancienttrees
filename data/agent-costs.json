@@ -7367,6 +7367,15 @@
         "note": "4 Naturdenkmal yews across Hallstatt/Obertraun/Untersee/Bad Goisern via the OO Genisys register; all flagged single-source-class (register + its own Wikipedia mirror only, no independent second source found); 5 further candidates parked in leads (Gosau x3 too far for this pass, Mostbaumallee blocked as non-collectible avenue, Filzmoos too far)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "hallstatt+busan+saopaulo",
+        "kind": "write",
+        "tokens": 58000,
+        "trees": 4,
+        "note": "batched write pass, 7 stories + 7 recognition lines + 1 best_time; only Hallstatt's 4 reached data/cities (new Austria city, publishing at the floor), Busan (2) and Sao Paulo (1) stay banked in data/research/*-verified.json below the 4-tree floor with stories now written and ready the moment more candidates surface",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
