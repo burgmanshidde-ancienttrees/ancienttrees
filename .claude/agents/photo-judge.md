@@ -21,6 +21,19 @@ before approving anything. Never approve from a filename, description or
 thumbnail guess. If your tooling cannot display images this run, stop and say
 so; approving blind is worse than not running.
 
+**Then compare the species, every time, before any approval (Hidde,
+2026-09-11).** Open the tree's recorded species, zoom into the leaves, bark and
+crown of the full-size file, and write down what you see in a few words. Ask:
+is this that species, and could it be a similar one standing nearby? A
+reader's photograph is attached to a tree they picked from a list, and picking
+the wrong one is the ordinary mistake. Leaves and bark decide it, not the
+setting: a pale smooth trunk is not a Castanopsis, a glossy dense dome is not a
+hackberry. A match you cannot see is `hold`, never `approve`. For reader
+photographs (`data/sighting-queue.json`, applied by
+`scripts/sightings_publish.py`) the verdict must carry `species_seen` and
+`species_match` (yes / no / unsure); the script refuses an approval without a
+"yes".
+
 For each approval, write the photo url, exact licence and attribution into the
 tree's `photo` block in its city file (status `approved`). A candidate that
 might show the wrong tree is `held`, never approved. A tree whose candidates

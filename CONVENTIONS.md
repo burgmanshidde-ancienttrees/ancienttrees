@@ -1441,3 +1441,47 @@ Read 2026-09-08:
 - https://support.alltrails.com/hc/en-us/articles/360018930652-How-to-write-a-review-for-a-trail
 - https://support.google.com/maps/answer/6230175
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews
+
+## Saving a photograph taken in the app to the camera roll (2026-09-11)
+
+**Reference: iNaturalist.** Its camera saves every photograph it takes to the
+phone's Photos by default. The requests on its forum run the other way: a
+switch to turn it OFF for people short on space, and the location travelling
+with the copy. Nobody asks for a way in, because people expect a photograph
+they took to be in their photographs.
+
+**So: the camera path saves a copy, with the date and where it was taken, and
+a photograph picked from the library is not copied again.** Add-only
+permission, the smallest iOS offers: the app can put a picture in and never
+read one back. Refused is silent, and the photograph is still recorded in the
+app. Hidde, 2026-09-11: "doe dit maar dit willen mensen". No switch yet; the
+day somebody asks for one, iNaturalist's forum says that is the switch to add.
+
+Read 2026-09-11:
+- https://forum.inaturalist.org/t/add-toggle-for-not-saving-photos-automatically-to-camera-roll/80231
+- https://forum.inaturalist.org/t/photo-metadata-not-saved-in-ios-camera-roll/30582
+
+## People who can be recognised in a photograph somebody sent (2026-09-11)
+
+**Reference: Google Maps, Wikimedia Commons, iNaturalist, AllTrails,
+Tripadvisor.** All five put it on the UPLOADER: whoever sends the photograph
+confirms that anybody recognisable in it is fine with it. None of them blurs
+faces in contributed photographs (Google's blurring is Street View only), and
+all of them remove on request. Commons is the one that draws the useful line:
+a bystander or background figure is judged very differently from a photograph
+whose subject is a person.
+
+**So, in /terms: a photograph should be of the tree, people in it are fine,
+the sender makes sure a recognisable person is happy to be there, and anybody
+recognisable can ask for it to come off.** Hidde, 2026-09-11, on his
+girlfriend standing under the Sudajii of Omiya Gate: "als er mensen op staan,
+tja dat is niet aan ons ... zet dat iig in de voorwaarden op die manier." A
+viewing pass still prefers, on the Cadiz standard, the photograph where the
+tree is the subject; a person in frame is never on its own a reason to refuse.
+
+Read 2026-09-11:
+- https://support.google.com/contributionpolicy/answer/7401426
+- https://commons.wikimedia.org/wiki/Commons:Photographs_of_identifiable_people
+- https://www.inaturalist.org/pages/terms
+- https://support.alltrails.com/hc/en-us/articles/4412179068692-AllTrails-UGC-license-agreement
+- https://www.tripadvisorsupport.com/hc/en-us/articles/200615067-Photo-Guidelines

@@ -9,8 +9,20 @@ lose each other's work.
 
     python3 scripts/sightings_publish.py verdicts.json [more.json] [--send]
 
-Input: a JSON array of {sighting_id, verdict, reason}, verdict one of
-approve, hold, reject. Every verdict is recorded in
+Input: a JSON array of {sighting_id, verdict, reason, species_seen,
+species_match}, verdict one of approve, hold, reject.
+
+THE SPECIES IS COMPARED BEFORE ANYTHING SHIPS (Hidde, 2026-09-11: "heb je
+soort vergelijker als vaste stap ingebouwd"). An approval must say what the
+viewing pass SAW in the photograph (`species_seen`: leaf, bark, crown, in a
+few words) and whether that matches the tree's recorded species
+(`species_match`: yes, no, unsure). Only "yes" publishes. The case that made
+it a gate rather than a habit: on 2026-09-11 a night run approved a photograph
+for the Sudajii of Omiya Gate whose pale, smooth trunk is not a Castanopsis,
+because it judged light and composition and never asked what tree it was
+looking at. A reader picks from a list of nearby trees, and picking the wrong
+one is the ordinary mistake, not a rare one. An approval missing either
+field is refused and stays in the queue. Every verdict is recorded in
 data/sightings-processed.json so a photograph is never judged twice; a hold
 is a verdict too (two similar trees stand nearby, the picture cannot settle
 which), and stays a hold until somebody knows more.
@@ -294,6 +306,14 @@ def main():
             counts[verdict] += 1
             print(f"  {verdict.upper():7} {entry['tree_id']} {entry['tree_name'][:40]}: {reason[:80]}")
             continue
+        seen = (r.get("species_seen") or "").strip()
+        match = (r.get("species_match") or "").strip().lower()
+        if match != "yes" or not seen:
+            print(f"  REFUSED {entry['tree_id']} {entry['tree_name'][:40]}: an approval needs "
+                  f"species_seen and species_match 'yes' (got {match or 'nothing'!r}); "
+                  f"a mismatch or doubt is a hold. Left in the queue.")
+            continue
+        reason = f"{reason.strip()} Species seen: {seen}.".strip()
         src = os.path.join(ROOT, entry["file"])
         if not os.path.exists(src):
             print(f"  {sid}: file missing at {entry['file']}, run sightings_inbox.py again")
