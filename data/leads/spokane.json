@@ -1,0 +1,25 @@
+{
+  "city": "Spokane",
+  "country": "United States",
+  "city_slug": "spokane",
+  "note": "Verify pass 2026-09-11. passcheck had only one Wikidata lead (an Anne Frank sapling, not chased, same reasoning as Boise's) and no register. City has its own 18-tree Heritage Tree register (Spokane Historic Preservation Office / Urban Forestry, established 1998) but neither historicspokane.org nor my.spokanecity.org's program pages list the actual 18 trees in fetchable text; both point to an interactive 'historic properties map' that could not be read this pass. 3 trees delivered (spk_001-003), below the 4-tree floor.",
+  "leads": [
+    {
+      "name": "Spokane's 18-tree Heritage Tree register",
+      "species": "Various",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Official City of Spokane / Spokane Historic Preservation Office register, established 1998, procedures set 2009, currently 18 trees. The list itself sits behind an interactive map at historicspokane.org that a plain fetch could not read this pass. This is the single highest-value lead for growing Spokane past the floor, exactly the kind of naming body BRIEF_RESEARCH.md flags as predicting yield; worth a browser-session pass."
+    },
+    {
+      "name": "Indian Canyon Golf Course old trees / South Hill bluffs old trees",
+      "species": "Unknown, likely ponderosa pine and Douglas fir",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "The 2019 Spokesman-Review piece (spk_001-003's source) says old trees 'can still find them on the South Hill bluffs, on Mount Spokane, as well as in the Mica Peak and Dishman Hills areas' but names no individual specimen at any of these; not pursued this pass, would need its own hunt for a named tree."
+    }
+  ],
+  "blocked": []
+}

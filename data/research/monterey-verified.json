@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mty_001",
+    "name": "The Lone Cypress",
+    "species": "Monterey Cypress (Cupressus macrocarpa)",
+    "age_estimate": "roughly 275 years",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": null,
+    "location": {
+      "address": "17-Mile Drive, between Cypress Point Club and Pebble Beach Golf Links, Pebble Beach, California",
+      "latitude": 36.5686,
+      "longitude": -121.9653,
+      "neighbourhood": "Pebble Beach"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Lone_Cypress",
+      "https://www.roadtripusa.com/pacific-coast/california/central-california/17-mile-drive-pebble-beach"
+    ],
+    "access": "View only, from a fenced roadside viewpoint on 17-Mile Drive; the tree itself has been fenced off from the public since 1969 to protect its roots. 17-Mile Drive is a private, gated scenic road with a per-vehicle toll (about $12.50 at last check); bicyclists enter free. About a 10-15 minute drive from central Monterey via the Pacific Grove Gate; no direct public transit reaches it, this is a car trip, not a walk.",
+    "transport": "Car only; nearest gate (Pacific Grove Gate, Hwy 68) about 10 minutes from downtown Monterey",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of the most photographed trees in North America; a registered trademark (drawing registered 1919) of the Pebble Beach Company. Standing atop a granite headland over Carmel Bay. Believed seeded circa 1750, but Wikipedia itself is explicit that 'the precise age of the tree is unknown and can only be inferred' since coring/dating would harm it; treating the 1750 date as a broad, hedged estimate rather than a fact, hence the wide age_min/age_max band and the flag. History: retaining wall built 1941, support cables added 1948, survived a 1984 arson attempt, lost a major limb in a February 2019 storm. The longest-lived Monterey cypress on record reached 284 years, which the tree is approaching, per Wikipedia. VIEW-ONLY per the Hobart precedent in CLAUDE.md/BRIEF_RESEARCH.md: genuinely visible from public-accessible (paid-toll) ground, pin marks the viewing pullout rather than the trunk itself, and access says plainly what a visitor will and won't be able to do. Second source (roadtripusa.com) independently confirms location, toll, trademark status and the tree's dependence on structural support ('trussed-up old'), but not the age figure, which rests on Wikipedia alone."
+  },
+  {
+    "id": "mty_002",
+    "name": "The Old Veteran of Point Lobos",
+    "species": "Monterey Cypress (Cupressus macrocarpa)",
+    "age_estimate": "roughly 200 to 250 years",
+    "age_min": 200,
+    "age_max": 250,
+    "girth_cm": null,
+    "location": {
+      "address": "Point Lobos State Natural Reserve, near Headland Cove, Carmel Highlands, California",
+      "latitude": 36.5147,
+      "longitude": -121.9428,
+      "neighbourhood": "Point Lobos State Natural Reserve (near Carmel-by-the-Sea)"
+    },
+    "verified_sources": [
+      "https://gdanmitchell.com/2024/08/15/the-old-tree/",
+      "https://www.americansouthwest.net/california/point-lobos/cypress-tree_l.html"
+    ],
+    "access": "Free (state park day-use fee applies for parking), on a public trail within Point Lobos State Natural Reserve, clinging to a rocky outcrop at the edge of a cliff above a cove. Not in the city of Monterey itself: about a 20-minute drive south, near Carmel-by-the-Sea; no reliable direct public transit, best reached by car.",
+    "transport": "Car; about 20 minutes from downtown Monterey via CA-1 south",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of the most painted and photographed trees on the Monterey Peninsula (a Raymond Yelland portrait from 1879 is one of the earliest of many depictions). A 2024 photography blog post (gdanmitchell.com, direct observation) puts its age at 'probably 200-250 years' and notes the tree looks 'increasingly stressed' compared with older photographs, having lost a prominent limb since then; still alive and standing as of that August 2024 visit, no report found of it having died since. A WebSearch AI summary (not independently fetched, so treated only as a lead per the search-summary rule) cited monumentaltrees.com for a 10m girth measured at 20cm height and a carbon-dated age of up to 1000 years; monumentaltrees.com itself 403s automated fetches so this could not be verified directly this pass and is NOT used as a fact, only flagged here as a lead for a future pass with browser access. Girth left null rather than repeating an unverified figure. Location is park-level (near Headland Cove per the second source); no tree-level coordinate found."
+  },
+  {
+    "id": "mty_003",
+    "name": "The Moon Tree of Friendly Plaza",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "50 years (planted 1976)",
+    "age_min": 50,
+    "age_max": 50,
+    "girth_cm": null,
+    "location": {
+      "address": "Friendly Plaza, next to Colton Hall, Monterey, California",
+      "latitude": 36.5978,
+      "longitude": -121.8975,
+      "neighbourhood": "Downtown Monterey"
+    },
+    "verified_sources": [
+      "https://www.montereycountynow.com/people/831/monterey-s-moon-tree-hits-50-and-a-new-one-grows-in-greenfield-amid-renewed/article_756305ee-cef9-41c3-b156-b8d24252ace0.html",
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/friendly_plaza_tree.html (NASA's own Moon Tree registry; page exists per WebSearch results and per the general NASA moon-tree program record, but could not be directly fetched this pass, connection failed with a certificate error; treat as a lead/corroboration only, not independently confirmed by direct fetch this pass)"
+    ],
+    "access": "Free, in a public plaza in downtown Monterey next to Colton Hall (where California's first constitution was drafted) and the Old Monterey Jail.",
+    "transport": "Central downtown Monterey, walkable from anywhere in the historic district",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Grown from one of about 2,000 Coast Redwood, Loblolly Pine, Sycamore, Sweetgum and Douglas Fir seeds carried around the Moon by astronaut Stuart Roosa in the Apollo 14 command module, February 1971 (an experiment testing whether cosmic-radiation exposure would affect germination). Of 150 redwood seeds in the batch, only 20 germinated at a US Forest Service nursery in Placerville and 16 survived their first year; per montereycountynow.com's 2026 (50th-anniversary) piece, only nine of the original California 'Moon Trees' remain alive today, and the article's framing (a 50th-anniversary celebration, 'a new one grows... amid renewed' effort) strongly implies Monterey's is one of the living ones, though no source found this pass states that in so many words. Planted 27 July 1976, two feet tall, dedicated to the people of Monterey for the US Bicentennial; a plaque marks it. Flagged because the 'still alive' inference, while strong, is not a sentence any source states outright, and because the NASA registry page (the natural second/primary source for the whole Moon Tree program) could not be fetched directly this pass due to a TLS/certificate error from this environment; a future pass with different network access should try it again. Historically significant rather than ancient, which is an explicitly allowed qualifying route per BRIEF_RESEARCH.md ('genuinely old OR visually spectacular OR historically significant')."
+  }
+]

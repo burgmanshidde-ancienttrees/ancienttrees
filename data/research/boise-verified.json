@@ -1,0 +1,51 @@
+[
+  {
+    "id": "boi_001",
+    "name": "The Idaho Champion Bur Oak of Julia Davis Park",
+    "species": "Bur Oak (Quercus macrocarpa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 429,
+    "location": {
+      "address": "Julia Davis Park, Boise, Idaho",
+      "latitude": 43.6079,
+      "longitude": -116.2021,
+      "neighbourhood": "Julia Davis Park, central Boise"
+    },
+    "verified_sources": [
+      "https://www.newsbf.com/news/201511/20151124idahobigtreelist.pdf (Idaho Big Tree Program, University of Idaho Extension, official state champion-tree register, January 2014 edition, accessed and re-fetched this pass)",
+      "https://www.uidaho.edu/extension/forestry/big-trees"
+    ],
+    "access": "Free, public city park",
+    "transport": "Central Boise, walkable from downtown; Julia Davis Park also holds the Boise Art Museum, Zoo Boise and Idaho State Historical Museum",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Idaho STATE CHAMPION bur oak per the University of Idaho's official Big Tree Program register (a state-affiliated program, counted as one official register source per BRIEF_RESEARCH.md): 54 inches DBH, 169 inches (429cm) circumference, 105 feet (32m) tall, nominated by Marti J. in 2008. This register entry is being treated as ONE source per the rules; a second, truly independent confirmation of this specific tree was not found this pass (a general WebSearch summary mentioned Julia Davis Park having 'historically significant trees, including ancient sycamores and silver maples' but that is a search-summary lead, not a fetched source, and does not independently name this oak). Flagged for that reason: single-source on this specific tree, though the source itself is an official state register. No age recorded in the register (Idaho's program, like most, has no age field); age left undocumented rather than estimated, since bur oaks are notoriously slow-growing and hard to date from girth alone without a local growth-rate reference. This is a state CHAMPION, i.e. the largest known bur oak in Idaho, which is itself the qualifying 'visually spectacular' / remarkable fact. A note for a future pass: the register is nine years old (2014); worth checking the tree is still standing and whether a newer edition exists."
+  },
+  {
+    "id": "boi_002",
+    "name": "The Moved Giant Sequoia of Fort Boise Park",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "about 114 years (planted 1912)",
+    "age_min": 110,
+    "age_max": 118,
+    "girth_cm": 569,
+    "location": {
+      "address": "Fort Boise Park, Boise, Idaho (moved here in 2017 from its original site behind St. Luke's Boise Medical Center, about a quarter mile away)",
+      "latitude": 43.6155,
+      "longitude": -116.1889,
+      "neighbourhood": "East End, Boise"
+    },
+    "verified_sources": [
+      "https://www.newsbf.com/news/201511/20151124idahobigtreelist.pdf (Idaho Big Tree Program register, official state champion listing, recorded at its original St. Luke's Hospital site, nominated by T. Kennedy in 2006)",
+      "https://abc7news.com/sequoia-giant-tree-moved-fort-boise-park/2149195/",
+      "https://www.kivitv.com/news/boises-giant-sequoia-on-the-move-saturday-night"
+    ],
+    "access": "Free, public city park (moved here specifically to remain publicly accessible when St. Luke's Hospital expanded on its original site)",
+    "transport": "Central Boise, walkable from downtown East End neighbourhood",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Idaho's largest known Giant Sequoia, grown from a cutting/seed given to Drs. Fred and Alice Pittenger and planted beside their home around 1912 (family oral history says the seedling material came via naturalist John Muir in California, per a WebSearch summary drawing on multiple news pieces; treated as a well-corroborated claim but the ultimate Muir connection itself rests on family oral history rather than a document). The tree stood at what became the site of a planned St. Luke's Boise Medical Center hospital tower; in June 2017, St. Luke's paid roughly $300,000 to relocate the entire tree, roots and all, about a quarter mile to Fort Boise Park rather than remove it, a move covered by multiple independent local news outlets (ABC7/KGO republishing a Boise story, KIVI-TV). Height given as 'ten stories' / about 100 feet (30m) in the news coverage; the University of Idaho's 2014 official state-champion register lists it at that (then) location with 70in DBH, 224in (569cm) circumference, 89ft (27m) height. The register and the 2017 news coverage together give two independent sources confirming existence, species, and the tree's status as Idaho's state champion. location_precision set CONFIRMED because the 2017 move was a single, well-documented, deliberate relocation to a named park, unlike a vague 'somewhere in the park' case. Experts quoted at the time of the move expected the tree could live another 300-500 years if the transplant took; no report found this pass of it having since died, and Fort Boise Park's own landmark status as its home is now well established in the record."
+  }
+]

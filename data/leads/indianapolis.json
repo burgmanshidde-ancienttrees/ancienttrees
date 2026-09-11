@@ -1,0 +1,25 @@
+{
+  "city": "Indianapolis",
+  "country": "United States",
+  "city_slug": "indianapolis",
+  "note": "Verify pass 2026-09-11. passcheck's Wikidata leads were the Anne Frank sapling (not chased) and the Kile Oak (Q130425459), which verified and shipped as ind_001. No imported register. Found Indiana DNR's official Heritage Trees page, which names the Temple Oak, but could not settle its access this pass. 1 tree delivered (ind_001), well below the 4-tree floor.",
+  "leads": [
+    {
+      "name": "The Temple Oak",
+      "species": "Chinkapin Oak (Quercus muehlenbergii)",
+      "lat": 39.786,
+      "lng": -86.114,
+      "status": "lead",
+      "why": "Named on Indiana DNR's official state Heritage Trees register page and independently covered by WFYI (Indianapolis public radio): nearly 400 years old, almost 18ft (549cm) circumference, believed the largest Chinkapin Oak in Marion County, a well-loved neighbourhood icon that won a 2007 city 'most huggable and remarkable tree' contest and got a mayoral proclamation. NOT delivered as verified this pass because ACCESS could not be settled: it stands on what reads as a residential corner (the WFYI piece describes a family that 'moved to the property' beside it), and whether the tree itself is on public right-of-way, a front yard visible from the street, or fully private ground was not established. Per BRIEF_RESEARCH.md, when in doubt on private-land access the tree waits rather than ships. Also needs a tighter coordinate: Nominatim could not resolve the exact Temple Avenue/Brookside Parkway South Drive intersection this pass (the two streets returned non-intersecting segments), so even the approximate pin used here is a best-effort placement in the right neighbourhood rather than a real fix. Otherwise the strongest remaining Indianapolis candidate found this pass; resolving access (an OSM highway/access tag check per the Ypres technique in BRIEF_RESEARCH.md, or a direct look at the WFYI photos, would likely settle it fast) would make this a strong 2nd verified tree."
+    },
+    {
+      "name": "Crown Hill Cemetery and Arboretum's largest/oldest trees",
+      "species": "Various, 137 species across 11,000+ inventoried trees",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Level II accredited arboretum, over 11,000 inventoried and tagged trees. The Foundation's own Tree Map PDFs (crownhillhf.org, 2019 and 2021 editions) almost certainly name specific large/old tagged specimens but returned only binary/unparseable content to this pass's PDF-reading tool (unlike the Idaho and Pittsburgh PDFs, which parsed cleanly; this one may be image-based or differently encoded). Worth a retry with different tooling; a public cemetery-arboretum with individual tagged trees is exactly the kind of naming body BRIEF_RESEARCH.md flags as predicting yield."
+    }
+  ],
+  "blocked": []
+}

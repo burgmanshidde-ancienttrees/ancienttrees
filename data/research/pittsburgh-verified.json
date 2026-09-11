@@ -1,0 +1,97 @@
+[
+  {
+    "id": "pit_001",
+    "name": "The Pittsburgh Champion Bald Cypress of Mellon Park",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Mellon Park, south of Fifth Avenue near Beechwood Boulevard, Pittsburgh, Pennsylvania",
+      "latitude": 40.4535,
+      "longitude": -79.9168,
+      "neighbourhood": "Shadyside/Point Breeze, Pittsburgh"
+    },
+    "verified_sources": [
+      "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (official Pittsburgh Shade Tree Commission meeting minutes, 2023-03-16, recording the Remarkable Trees subcommittee's designations: 'Champion Tree: Bald Cypress - Mellon Park')",
+      "https://pittsburghparks.org/remarkable-trees-pecpa/ (Pittsburgh Parks Conservancy, independently confirms a Bald Cypress as one of Mellon Park's three inaugural Remarkable Trees of Pittsburgh)"
+    ],
+    "access": "Free, public city park (Mellon Park, the City's first public arboretum)",
+    "transport": "Point Breeze/Shadyside, Pittsburgh; walkable from Fifth Avenue and Beechwood Boulevard, bus routes serve the area",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a Pittsburgh 'Champion Tree' (the largest of its species on public property in the city) by the City of Pittsburgh Shade Tree Commission's Remarkable Trees of Pittsburgh program, a partnership with Tree Pittsburgh, out of 44 public submissions and 15 that met criteria (per the March 2023 minutes). A WebSearch-aggregated description (not independently re-fetched, so not used as a verified fact) said it 'towers over the area... provides shade... the cones are always great fun for the kids to collect', and gave the location as 'south of Fifth Avenue near Beechwood Boulevard', which is consistent with and used for the pin. No age, girth or height measurement found in either directly-fetched source. Flagged for the missing measurements and for the location being sourced partly from an unfetched aggregate summary rather than a directly-viewed page (remarkabletreespgh.com itself is JavaScript-rendered and returned no readable text to this pass's fetch tools)."
+  },
+  {
+    "id": "pit_002",
+    "name": "The Katsura of Mellon Park",
+    "species": "Katsura (Cercidiphyllum japonicum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Mellon Park, south of Fifth Avenue near Beechwood Boulevard, Pittsburgh, Pennsylvania",
+      "latitude": 40.4535,
+      "longitude": -79.9168,
+      "neighbourhood": "Shadyside/Point Breeze, Pittsburgh"
+    },
+    "verified_sources": [
+      "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (official Pittsburgh Shade Tree Commission meeting minutes, 2023-03-16: 'Tree of a Kind: Katsura Tree in Mellon Park')",
+      "https://pittsburghparks.org/remarkable-trees-pecpa/ (Pittsburgh Parks Conservancy, independently confirms a Katsura as one of Mellon Park's three inaugural Remarkable Trees of Pittsburgh)"
+    ],
+    "access": "Free, public city park",
+    "transport": "Point Breeze/Shadyside, Pittsburgh; walkable from Fifth Avenue and Beechwood Boulevard",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a 'Tree of a Kind' (unique in appearance, origin or growth form) by Pittsburgh's Remarkable Trees program, standing near the Champion bald cypress (pit_001) at the same Fifth Avenue/Beechwood Boulevard entrance to Mellon Park. Katsura trees are known for a sweet, cotton-candy-like scent their fallen leaves give off in autumn, a widely reported species trait (per an unfetched WebSearch aggregate, not used as a verified fact specific to this individual tree). No age, girth or height found in either directly-fetched source; flagged for that and for the same location-sourcing caveat as pit_001."
+  },
+  {
+    "id": "pit_003",
+    "name": "The Lacebark Pine of Mellon Park",
+    "species": "Lacebark Pine (Pinus bungeana)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Mellon Park, north of Fifth Avenue near Penn Avenue, Pittsburgh, Pennsylvania",
+      "latitude": 40.4548,
+      "longitude": -79.9168,
+      "neighbourhood": "Shadyside/Point Breeze, Pittsburgh"
+    },
+    "verified_sources": [
+      "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (official Pittsburgh Shade Tree Commission meeting minutes, 2023-03-16: 'Tree of a Kind: Lacebark pine in Mellon Park')",
+      "https://pittsburghparks.org/remarkable-trees-pecpa/ (Pittsburgh Parks Conservancy, independently confirms a Lacebark Pine as one of Mellon Park's three inaugural Remarkable Trees of Pittsburgh)"
+    ],
+    "access": "Free, public city park",
+    "transport": "Point Breeze/Shadyside, Pittsburgh; walkable from Fifth Avenue near the Penn Avenue side of the park",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a 'Tree of a Kind' by Pittsburgh's Remarkable Trees program, on the opposite (north, Penn Avenue) side of Mellon Park from the bald cypress and katsura (an unfetched WebSearch aggregate gave this location, not used as a verified fact beyond the general side-of-park placement, hence approximate precision). Lacebark pines are prized ornamentally for their mottled, exfoliating bark. No age, girth or height found in either directly-fetched source; flagged for that."
+  },
+  {
+    "id": "pit_004",
+    "name": "The Giving Tree White Oak of Phillips Park",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Phillips Park, Pittsburgh, Pennsylvania",
+      "latitude": 40.3906,
+      "longitude": -79.9916,
+      "neighbourhood": "Beechview, Pittsburgh"
+    },
+    "verified_sources": [
+      "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (official Pittsburgh Shade Tree Commission meeting minutes, 2023-03-16: 'Giving Tree: White Oak in Phillips Park')"
+    ],
+    "access": "Free, public city park",
+    "transport": "Beechview, Pittsburgh",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE SOURCE this pass: only the official Shade Tree Commission minutes name this tree, designated a 'Giving Tree' (for wildlife/ecosystem value) in Pittsburgh's Remarkable Trees program. A second, independent source was not found this pass; remarkabletreespgh.com itself, which likely carries the tree's own nomination writeup and a photo, is JavaScript-rendered and returned no readable text to this pass's fetch tools (WebFetch and curl both). An unfetched WebSearch aggregate described it as 'one of the tallest white oaks in the park', not used as a verified fact. Flagged accordingly; a future pass with browser-rendering access should retry remarkabletreespgh.com directly, which likely also carries better location precision and photos for all four Pittsburgh entries in this file."
+  }
+]

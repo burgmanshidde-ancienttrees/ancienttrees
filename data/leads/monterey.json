@@ -1,0 +1,42 @@
+{
+  "city": "Monterey",
+  "country": "United States",
+  "city_slug": "monterey",
+  "note": "Verify pass 2026-09-11, web research from zero (passcheck had no coordinate on file and no register). This is Monterey, California, on the Monterey Peninsula. 3 trees delivered (mty_001-003), below the 4-tree floor; leaves the city one short. City's own 13-tree Local Landmark Tree ordinance (Monterey Municipal Code 37-12) could not be read this pass, monterey.municipal.codes and monterey.gov both 403 plain fetchers and no wayback snapshot of the code page exists yet; a browser-session pass or a different fetch route should try again, since the ordinance is exactly the kind of naming-body BRIEF_RESEARCH.md says predicts a city's yield. Time-boxed; did not exhaust every candidate.",
+  "leads": [
+    {
+      "name": "Crocker Grove's oldest Monterey cypresses",
+      "species": "Cupressus macrocarpa",
+      "lat": 36.5715,
+      "lng": -121.9611,
+      "status": "lead",
+      "why": "17-Mile Drive stop 11, named after Charles Crocker; TripAdvisor and voicemap.me call it home to some of the oldest Monterey cypress specimens in the world, 'nearly 300 years old' per one WebSearch summary (not independently fetched, so treat that figure as a lead only). It is a GROVE though, not a single collectible point; would need a specific named/marked individual specimen within it to qualify, which was not found this pass."
+    },
+    {
+      "name": "The Ghost Tree(s) of Pescadero Point",
+      "species": "Cupressus macrocarpa",
+      "lat": 36.5713,
+      "lng": -121.9679,
+      "status": "lead",
+      "why": "Famous bleached cypress formation on 17-Mile Drive, 'a few paces' from the Lone Cypress. NOT pursued as a candidate this pass because search summaries describe it as having 'lost all of their foliage and been bleached white', which reads as possibly dead rather than alive, and CLAUDE.md's dead-tree rule is absolute. Also described in the plural ('Ghost Trees'), which may not be one collectible point. Needs a direct-fetched source establishing whether it (or which specimen) is alive before this can be considered."
+    },
+    {
+      "name": "City of Monterey's 13 Local Landmark Trees",
+      "species": "Unknown, various",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Monterey Municipal Code Chapter 37-12 designates 13 individual trees as Local Landmark Trees, 'of such unusual size, prominence or health as to be of significant value to the community'. The actual list of 13 (names/species/addresses) could not be retrieved this pass: monterey.municipal.codes/Code/37-12 and the monterey.gov ordinance page both return 403 to curl and WebFetch, and no wayback snapshot exists for the code page (checked). The ordinance's ownership-consent nomination process suggests many landmark trees are on private property, so access would need checking per tree once the list is found. This is the single highest-value lead for reaching and growing past the floor: a real municipal naming body, per BRIEF_RESEARCH.md's 'what predicts yield' section."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Vizcaino-Serra Oak (Junipero Oak)",
+      "species": "Quercus agrifolia (California live oak)",
+      "lat": 36.6007,
+      "lng": -121.8947,
+      "status": "blocked",
+      "why": "Dead. Declared dead in 1904 and cut down in 1905; the preserved trunk was displayed at the Cathedral of San Carlos Borromeo for most of the 20th century and has since been removed. Hard rule: never doen aan dode bomen. Its site (Mission San Carlos / Monterey State Historic Park) could be mentioned in prose as history but is not a collectible entry."
+    }
+  ]
+}
