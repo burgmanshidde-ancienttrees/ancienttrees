@@ -1441,3 +1441,49 @@ Read 2026-09-08:
 - https://support.alltrails.com/hc/en-us/articles/360018930652-How-to-write-a-review-for-a-trail
 - https://support.google.com/maps/answer/6230175
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews
+
+---
+
+## Telling somebody what species they are looking at (2026-09-11)
+
+**Two conventions, not one, and which one applies is decided by whether
+identification IS the product or is a feature beside it.**
+
+**Live in the viewfinder means the model is on the phone.** Seek by iNaturalist
+puts the name on screen while you move the camera, and Merlin does the same for
+birds; both run a model on the device and both work with no signal. Merlin is
+the one that shows the price: it only fits because you download a Bird Pack for
+one region first, so the model never has to hold the world. Neither is a
+camera screen with a clever feature on it; identification is the whole app.
+
+**Everything that has identification as a FEATURE takes a photograph first and
+answers from a server.** AllTrails shipped exactly this as Outdoor Lens: you
+point their in-app camera at a tree, snap, and land on a results page. So does
+PictureThis, and so does iNaturalist's own main app, which keeps a small
+on-device model only as the offline fallback. AllTrails is the closest shape to
+ours, an outdoors product that added identification, and it is the one that
+went to the server.
+
+**Three details of the AllTrails result screen worth copying, all three of them
+about honesty rather than accuracy.** It shows a probability rather than a
+verdict. It lists up to five alternatives underneath, so the screen admits it is
+ranking rather than knowing. And offline it does not fail: the scan is saved to
+the logbook and identified when the signal comes back, which is the same thing
+PictureThis does with the photographs you take in a garden with no reception.
+
+Ours is the second shape. `SpeciesChooser` already keeps room above its list for
+a suggestion, which is where a ranked answer lands, and `SightingSync` already
+queues a photograph that could not be sent, which is the offline half. What we
+do not have and they do is the model.
+
+**One thing they do that we would have to think about: AllTrails put Outdoor
+Lens behind Peak, their paid tier.** Ours is not priced and that is Hidde's
+alone (hard rule 2), so this is recorded as what the reference does, not as a
+proposal.
+
+Read 2026-09-11:
+- https://support.alltrails.com/hc/en-us/articles/40312229299348-Introducing-Outdoor-Lens
+- https://www.picturethisai.com/faq
+- https://apps.apple.com/us/app/seek-by-inaturalist/id1353224144
+- https://support.ebird.org/en/support/solutions/articles/48000961587-merlin-bird-id-faqs
+- https://www.inaturalist.org/blog/108940-new-inaturalist-app-for-iphone
