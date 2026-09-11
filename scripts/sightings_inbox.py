@@ -96,6 +96,15 @@ def tree_index():
                 "photo_status": ph.get("status") if ph.get("url") else "none",
                 "photo_source": ph.get("source"),
                 "path": p,
+                # What the viewing pass compares the photograph against
+                # (Hidde, 2026-09-11: check the species yourself, and judge
+                # whether it matches the description). The reader never has
+                # to name a species; this is ours.
+                "species": t.get("species"),
+                "recognise": t.get("how_to_recognise"),
+                "why_go": t.get("why_go"),
+                "girth_cm": t.get("girth_cm"), "height_m": t.get("height_m"),
+                "story": (t.get("story") or "")[:700],
             }
     return out
 
@@ -520,6 +529,12 @@ def main():
             "tree_id": tid, "city_slug": t["slug"], "city": t["city"], "tree_name": t["name"],
             "match": how, "distance_m": dist, "mine": is_mine,
             "current_photo": t["photo_status"], "current_source": t["photo_source"],
+            # The tree as WE describe it, for the species and description
+            # check. `species` below is the reader's own, optional, and often
+            # empty; it is a hint and never the thing checked against.
+            "tree_species": t.get("species"), "recognise": t.get("recognise"),
+            "why_go": t.get("why_go"), "tree_girth_cm": t.get("girth_cm"),
+            "tree_height_m": t.get("height_m"), "story": t.get("story"),
             "name": row.get("name") or "", "species": row.get("species"),
             # A reader's measurement of a tree we map. Where our tree carries
             # no girth_cm it is a candidate for it, stated as a reader's

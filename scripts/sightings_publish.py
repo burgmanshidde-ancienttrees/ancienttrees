@@ -10,7 +10,24 @@ lose each other's work.
     python3 scripts/sightings_publish.py verdicts.json [more.json] [--send]
 
 Input: a JSON array of {sighting_id, verdict, reason, species_seen,
-species_match}, verdict one of approve, hold, reject.
+species_match, description_seen, description_match}, verdict one of
+approve, hold, reject.
+
+WHO CHECKS: the viewing pass, never the reader (Hidde, 2026-09-11: "i dont
+want the user to input the species though they can if they want... i want
+you to check the specie if it matches before you put it live. also you
+should sort of judge if it matches the description"). A reader may name a
+species in the app and it arrives as a hint; nothing requires it. Both
+checks below are made against OUR record of the tree, which the queue
+carries as tree_species, recognise, why_go, tree_girth_cm, tree_height_m
+and story.
+
+THE PHOTOGRAPH MUST FIT THE DESCRIPTION, as well as the species. A big
+camphor is still the wrong photograph for "the oldest and largest tree in
+the park" if the one in frame is a modest one beside a path. So an approval
+also says what in the photograph matches what we wrote (`description_seen`:
+the size, the shape, the setting, the thing the recognition line points at)
+and `description_match`: yes, no, unsure. Only "yes" publishes.
 
 THE SPECIES IS COMPARED BEFORE ANYTHING SHIPS (Hidde, 2026-09-11: "heb je
 soort vergelijker als vaste stap ingebouwd"). An approval must say what the
@@ -313,7 +330,15 @@ def main():
                   f"species_seen and species_match 'yes' (got {match or 'nothing'!r}); "
                   f"a mismatch or doubt is a hold. Left in the queue.")
             continue
-        reason = f"{reason.strip()} Species seen: {seen}.".strip()
+        fits = (r.get("description_seen") or "").strip()
+        fit = (r.get("description_match") or "").strip().lower()
+        if fit != "yes" or not fits:
+            print(f"  REFUSED {entry['tree_id']} {entry['tree_name'][:40]}: an approval needs "
+                  f"description_seen and description_match 'yes' (got {fit or 'nothing'!r}); "
+                  f"a photograph that does not fit what we wrote about the tree is a hold. "
+                  f"Left in the queue.")
+            continue
+        reason = f"{reason.strip()} Species seen: {seen}. Fits the description: {fits}.".strip()
         src = os.path.join(ROOT, entry["file"])
         if not os.path.exists(src):
             print(f"  {sid}: file missing at {entry['file']}, run sightings_inbox.py again")

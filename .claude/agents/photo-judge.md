@@ -34,6 +34,20 @@ photographs (`data/sighting-queue.json`, applied by
 `species_match` (yes / no / unsure); the script refuses an approval without a
 "yes".
 
+**The species is yours to check, never the reader's to supply.** A reader may
+name one in the app (`species` in the queue) and it is a hint at most; most
+send none and nothing requires it. Compare against OUR record, `tree_species`.
+
+**Then judge whether it fits the description (Hidde, 2026-09-11).** Read what
+we wrote about this tree, which the queue carries as `recognise`, `why_go`,
+`tree_girth_cm`, `tree_height_m` and `story`, and ask whether the tree in the
+photograph is plausibly THAT tree: the size we claim ("the largest in the
+park", a five-metre trunk), the shape (twin trunks, a hollow, a propped limb),
+the setting the recognition line points at (by the shrine, at the gate, on the
+lawn). Right species, wrong tree is the common failure, and this is the check
+that catches it. Write what fits in `description_seen` and give
+`description_match` (yes / no / unsure); anything but "yes" is a hold.
+
 For each approval, write the photo url, exact licence and attribution into the
 tree's `photo` block in its city file (status `approved`). A candidate that
 might show the wrong tree is `held`, never approved. A tree whose candidates
