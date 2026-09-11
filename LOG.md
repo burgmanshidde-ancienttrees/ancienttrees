@@ -11,6 +11,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session with Hidde) - The tree in the wrong-tree photograph gets its own page: the Twisted Muku of Omiya Gate
+
+Hidde's photograph sent as kyo_016, the Sudajii of Omiya Gate, was held this morning on a species check. Compared this afternoon against the ward's own Sudajii photograph (a broad dome on open gravel) and the Gyoen office's photograph of the named muku 大宮家の椋 (a tall tree on open lawn): it is neither. It is a pale, twisting, burled trunk on the stone wall at the park's edge, most likely a muku (Aphananthe aspera). Hidde: "voeg m maar gewoon toe ik vind hem vet", and it stands at kyo_016's spot on the edge of the park.
+
+- **kyo_019 live**, English and Japanese, with his photograph, `why_go`, a recognition line, `approximate` on kyo_016's gate-area pin, `flagged`. The one source documents the SETTING (the Gyoen office on the outer woodland's giant muku, enoki and keyaki), not this trunk, and verify_notes says so. The page asks readers for the species and a girth.
+- kyo_016 photo back to `missing`. Kyoto FAQ and meta counts moved to eighteen in both languages; preflight and i18ncheck clean.
+- **App bug found, not fixed:** ticking a tree from the list records OUR pin as the sighting's coordinate (`CollectSheet.swift:544`, `t.lat, t.lng`), not the phone's fix, so every app-matched photograph reads distance 0 and a wrong-trunk photograph cannot be placed. The inbox now keeps the row's coordinate for matched sightings too, ready for the day the app sends the real one. Offered to Hidde as a small change for the next build.
+- Unchecked: where 大宮御門 actually is. kyo_016's pin sits in the southwest corner of the park, while the Omiya palace compound is in the southeast; worth a pin pass before relying on either pin.
+
 ## 2026-09-11 (session with Hidde) - Your own photographs come back, reader photographs actually reach the site, and a species check that cannot be skipped
 
 Hidde spent the day in Kyoto Gyoen with the App Store build and could not find any photograph he had taken of a tree we already map. Nothing was lost: all 29 of his sightings sit in Supabase with their photographs. Three separate faults, all fixed here.

@@ -3,7 +3,7 @@
   "country": "Japan",
   "status": "needs_curation",
   "intro": "Kyoto's remarkable trees rarely stand alone. They grow inside temple gardens and shrine precincts, shaped for centuries by monks, gardeners and shoguns who treated a living pine as seriously as any building. One was a shogun's bonsai before it was a tree. A camphor was planted in 1160 by imperial order and still grows where his workers put it. These are cultivated monuments, not wild survivors. The exception is Kyoto Gyoen, the walled park around the Imperial Palace, where nine grow inside or beside its walls, close enough to walk in two clusters of about a kilometre each.",
-  "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and fifteen more.",
+  "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and sixteen more.",
   "question_answer": "Kyoto's oldest tree with a documented planting date is the great camphor of Imakumano Shrine, planted in 1160 on the order of the retired emperor Go-Shirakawa, who had it brought from the Kumano shrines in Wakayama. It is roughly 866 years old and still grows in the shrine's grounds in Higashiyama Ward, a two minute walk from Sennyuji-michi bus stop.",
   "question_meta": "Kyoto's oldest documented tree is an 866-year-old camphor planted in 1160 by imperial order. Its story, exact location, and 16 more remarkable trees.",
   "question_context": "The camphor at Imakumano Shrine has a planting date most ancient trees never get: 1160, the year the retired emperor Go-Shirakawa founded the shrine as a branch of the Kumano sanctuaries in Wakayama, and reportedly had this tree brought north with the transplant. Camphor trees are native to warmer parts of Japan and Kumano's coast fits that range better than inland Kyoto, which makes the tree itself a small piece of evidence for the transplant story, not just a legend attached after the fact. It has grown since into a trunk 6.58 metres around and a canopy spreading 23.5 metres east to west, a size camphors, among Japan's longest lived broadleaf trees, take centuries to reach. A deeper claim exists in the hills northwest of the city: a cedar in the Katanami river headwaters said to be 1,200 years old, tied to the same forests that supplied timber for the original Heian-kyo palace. That tree's age is harder to confirm and needs prior arrangement with the city to visit, which is why the documented camphor answers this question instead. Getting to Imakumano Shrine: Keihan Bus to Sennyuji-michi from Kyoto Station, then a two minute walk.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Where is the best place to see old trees in Kyoto?",
-      "a": "Kyoto Gyoen, the park around the old Imperial Palace. Seven trees on this list grow inside its walls and two more stand immediately beside them, close enough to cover in two walks of about a kilometre each, which makes it the one place in the city where several can be seen in an afternoon. Everywhere else they are spread thin across working temples and shrines: Kinkaku-ji, Yoshimine-dera, Daigo-ji and Nishi Honganji each hold one."
+      "a": "Kyoto Gyoen, the park around the old Imperial Palace. Eight trees on this list grow inside its walls and two more stand immediately beside them, close enough to cover in two walks of about a kilometre each, which makes it the one place in the city where several can be seen in an afternoon. Everywhere else they are spread thin across working temples and shrines: Kinkaku-ji, Yoshimine-dera, Daigo-ji and Nishi Honganji each hold one."
     },
     {
       "q": "Are Kyoto's remarkable trees free to see?",
-      "a": "Most are. Thirteen of the seventeen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. The other four stand inside temples that charge general admission, not a tree-specific fee."
+      "a": "Most are. Fourteen of the eighteen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. The other four stand inside temples that charge general admission, not a tree-specific fee."
     },
     {
       "q": "Did any of Kyoto's remarkable trees start life as a bonsai?",
@@ -530,16 +530,11 @@
       "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
       "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
       "photo": {
-        "url": "https://ancienttrees.app/photos/kyo_016-sudajii-of-omiya-gate-kyoto-gyoen.jpg",
-        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "url": null,
+        "license": null,
         "attribution": null,
-        "status": "held",
-        "width": 1200,
-        "height": 1600,
-        "source": "contributor",
-        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
-        "sighting_id": "84ebae36-c683-4d39-86ac-a7db33d70910",
-        "note": "Photographed by a reader and sent through the app (2026-09-11); a viewing pass approved it on 2026-09-11: kyo_016 had no photo. Whole tree in frame, twisted pale trunk and crown both readable, daylight, in leaf, person for scale. Meets the Cadiz standard.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py). Held 2026-09-11 on a species check: the photographed trunk is pale grey and smooth, where a Sudajii (Castanopsis sieboldii) has dark, deeply furrowed bark, so this is probably a neighbouring tree picked from the list. Back to approved the day somebody confirms it is the Sudajii."
+        "status": "missing",
+        "note": "2026-09-11: the photograph sent as this tree showed a neighbouring muku at the park's edge, not the Sudajii; it now illustrates kyo_019. The ward's own photograph shows the Sudajii as a broad dome on open gravel."
       },
       "how_to_recognise": "You can recognise it by the acorns on the gravel beneath it, sweet where oak acorns are bitter, and by a trunk 2.78 metres round under 14.6 metres of evergreen crown. It stands at the Omiya gate on the south side.",
       "girth_cm": 278,
@@ -649,6 +644,42 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by being the small camphor, 12.3 metres tall on a trunk 2.76 metres round, not the far larger one at Munakata Shrine nearby. It stands just inside Shimodachiuri-gomon in the west wall."
+    },
+    {
+      "id": "kyo_019",
+      "name": "The Twisted Muku of Omiya Gate, Kyoto Gyoen",
+      "species": "Muku Tree (Aphananthe aspera)",
+      "age_estimate": "Not documented",
+      "location": {
+        "latitude": 35.017,
+        "longitude": 135.7605,
+        "address": "",
+        "neighbourhood": "On the stone perimeter wall near Omiya-gomon, Kyoto Gyoen, Kamigyo-ku"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Go looking for the old chinkapin at the Omiya gate and this is the tree that catches your eye. Its trunk is pale grey and smooth, shedding in long strips, and it does not so much rise as wander: it leans, twists back on itself and swells into a burl where it clears the top of the stone wall, while its roots spill over the kerb onto the path.\n\nIt stands on the edge of the park, in the outer belt of woodland that the garden's own managers describe as full of big muku, hackberry and zelkova. We believe it is a muku, Aphananthe aspera, from the bark and the leaves in the one photograph we have. Nobody has measured it, dated it or put it on a register, so if you know better, or have a tape measure with you, we would like to hear from you.\n\nIf it is a muku, the leaves are worth touching. They are rough enough that craftsmen once used them as sandpaper, to polish wood, horn and lacquer. In autumn it drops small black fruit that is sweet enough to eat straight from the ground.\n\nThe camphor at Munakata Shrine is a few minutes' walk away.",
+      "why_go": "Its trunk. Pale, twisting and knotted with burls, it climbs out of a spill of roots over the park's stone wall, and among the straight-stemmed giants of Kyoto Gyoen it is the one that stops you.",
+      "how_to_recognise": "You can recognise it by its pale grey trunk, shedding in long strips, that twists up past the top of the stone wall into a big burl, with roots spilling over the kerb and a darker, mossy trunk right behind it.",
+      "verified_sources": [
+        "https://kyotogyoen.go.jp/highlights3/woods.html"
+      ],
+      "access": "Free. It stands at the edge of Kyoto Gyoen, beside a paved path along the park's stone wall.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "84ebae36-c683-4d39-86ac-a7db33d70910",
+        "note": "Hidde's own photograph, sent through the app on 2026-09-11 while looking for kyo_016 (the Sudajii); it shows this tree instead. Looked at in session 2026-09-11: whole tree in frame, trunk and crown readable, daylight, in leaf. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "verify_notes": "Added 2026-09-11 on Hidde's own ruling after seeing it: 'voeg m maar gewoon toe ik vind hem vet'. The evidence for this trunk is his photograph alone. Species is our identification from bark and leaves in that photograph (muku; keyaki the alternative, less likely because the bark shows no orange patches). No register, measurement or age. The cited source (the Kyoto Gyoen office, Ministry of the Environment) documents the setting, the park's outer woodland with many giant muku, enoki and keyaki, not this tree. Pin is kyo_016's approximate gate-area coordinate: Hidde reports it stands at that spot on the park's edge. The app recorded our pin rather than his phone's fix (CollectSheet.swift records t.lat/t.lng for a listed tree), so there is no GPS for the photograph.",
+      "curation_note": "species identified from a photograph; ask readers"
     }
   ],
   "oldest_tree_id": "kyo_007",

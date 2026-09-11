@@ -542,6 +542,13 @@ def main():
             "girth_cm": row.get("girth_cm"),
             "note": (row.get("note") or "")[:300],
             "taken_at": row.get("taken_at"), "photo_path": row["photo"],
+            # The row's coordinate (2026-09-11), kept for a tree picked from the
+            # list too, not only for a lead. CAUTION: until the app records the
+            # phone's own fix on that path, CollectSheet writes OUR pin here
+            # (t.lat, t.lng), which is why every app match reads distance 0.
+            # Kyoto's kyo_016 photograph was the wrong tree and nobody could
+            # say where it was taken, for exactly that reason.
+            "latitude": row.get("lat"), "longitude": row.get("lng"),
             "file": os.path.relpath(dest, ROOT),
             "light": light(dest),
         })
