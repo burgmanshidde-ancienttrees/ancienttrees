@@ -91,14 +91,29 @@ export const PROFILE_JS = `
     }).join('');
     node.hidden = false;
     if (window.atPaintSaves) window.atPaintSaves();
+    // A photograph you took of one of our trees goes on that tree's card, and
+    // its signed url may have arrived before this list existed.
+    if (window.atPaintMine) window.atPaintMine();
   }
 
   // YOUR OWN MAP, the Polarsteps half of the profile (2026-09-02). Both lists
   // go on it, drawn differently: a tree you have stood in front of is done and
   // is filled in, a tree you saved is still ahead of you and is hollow. Same
   // filled-versus-hollow language the heart itself uses.
-  function pins(saves, visited, cards) {
+  //
+  // The trees somebody ADDED go on it too, from my-trees-js, which is the
+  // other half of the same list: the app's Collect map has always drawn them
+  // beside the ticked ones and this map drew only ours (2026-09-11). They
+  // arrive on their own request, so each side keeps its own features and the
+  // map is repainted from both whenever either lands.
+  var ourPins = [], ownPins = [];
+
+  function drawPins() {
     if (!window.atSetMyTrees) return;
+    window.atSetMyTrees(ourPins.concat(ownPins));
+  }
+
+  function pins(saves, visited, cards) {
     var got = {};
     visited.forEach(function(id) { got[id] = true; });
     var all = visited.concat(saves.filter(function(id) { return !got[id]; }));
@@ -112,8 +127,14 @@ export const PROFILE_JS = `
         properties: { name: c.n, city: c.c || '', url: c.u, got: got[id] ? 1 : 0 }
       });
     });
-    window.atSetMyTrees(features);
+    ourPins = features;
+    drawPins();
   }
+
+  window.atAddMyPins = function(features) {
+    ownPins = features || [];
+    drawPins();
+  };
 
   function load(token) {
     identity(token);

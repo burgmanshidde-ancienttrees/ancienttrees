@@ -15,6 +15,26 @@
 // THE PHOTOGRAPHS ARE IN A PRIVATE BUCKET and stay there. Each one is fetched
 // through a signed url that lasts an hour, which is the same route the app
 // uses. Nothing here makes anything public.
+//
+// TWO KINDS OF SIGHTING, and until 2026-09-11 this file treated them as one.
+// A photograph taken while ticking off a tree WE map carries that tree's id;
+// one taken while adding a tree only you have carries none. Rendering both as
+// cards of their own put Hidde's own photograph of the Sudajii at the Omiya
+// gate in a second card below our card for the same tree, which showed no
+// photograph at all, and counted that one tree twice. His question was the
+// obvious one: "waarom zie ik hier niet de foto die ik heb gemaakt in de app
+// bij m'n eigen boom."
+//
+// So a tree-linked photograph goes ON that tree's card, and the app, which
+// hides these rows entirely (Sightings.yoursOnly filters treeId == nil), shows
+// it on the tree's page for the same reason. Which photograph wins where both
+// exist is the Google Maps convention: the place keeps its own picture and
+// yours is yours (CONVENTIONS.md, "Your own photograph of a place somebody
+// else maps"). So yours fills an empty slot, and where we publish one already,
+// ours stays.
+//
+// A linked row whose tree we no longer map keeps a card of its own, because
+// the alternative is a photograph that silently disappears.
 import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
 
 export const MY_TREES_JS = `
@@ -55,7 +75,7 @@ export const MY_TREES_JS = `
 
   // An hour is long enough to look at a page and short enough that a url
   // copied out of the markup is worth nothing tomorrow.
-  function sign(token, path, img) {
+  function sign(token, path, then) {
     fetch(SB + '/storage/v1/object/sign/sightings/' + path, {
       method: 'POST',
       headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token,
@@ -64,37 +84,118 @@ export const MY_TREES_JS = `
     }).then(function(r) { return r.ok ? r.json() : null; })
       .then(function(j) {
         if (!j || !j.signedURL) return;
-        img.src = j.signedURL.indexOf('http') === 0 ? j.signedURL
-                                                    : SB + '/storage/v1' + j.signedURL;
+        then(j.signedURL.indexOf('http') === 0 ? j.signedURL
+                                               : SB + '/storage/v1' + j.signedURL);
       }).catch(function() {});
   }
+
+  // YOUR PHOTOGRAPH ON OUR CARD. tree id -> signed url, painted onto whatever
+  // cards are on the screen now and again whenever the profile redraws them,
+  // because the two lists arrive from two requests and either can land first.
+  var yours = {};
 
   function clear() {
     list.innerHTML = '';
     list.hidden = true;
     if (empty) empty.hidden = true;
+    yours = {};
+    paintYours();
     if (window.atMineCounted) window.atMineCounted(0);
+    if (window.atAddMyPins) window.atAddMyPins([]);
+  }
+
+  function paintYours() {
+    Object.keys(yours).forEach(function(id) {
+      var url = yours[id];
+      if (!url) return;
+      var cards = document.querySelectorAll('[data-tree-id="' + id.replace(/[^A-Za-z0-9_-]/g, '') + '"]');
+      Array.prototype.forEach.call(cards, function(art) {
+        // Ours wins where we have one, which is the Google Maps reading: the
+        // place keeps its own picture. An empty slot is where yours goes.
+        if (art.querySelector('.tree-card-photo')) return;
+        var box = document.createElement('div');
+        box.className = 'tree-card-photo tree-card-yours-photo';
+        var img = document.createElement('img');
+        img.src = url;
+        img.loading = 'lazy';
+        var named = art.querySelector('.tree-name');
+        img.alt = 'Your photograph of ' + ((named && named.textContent) || 'this tree');
+        var tag = document.createElement('span');
+        tag.className = 'tree-card-yours';
+        tag.textContent = 'Your photograph';
+        box.appendChild(img);
+        box.appendChild(tag);
+        art.insertBefore(box, art.firstChild);
+      });
+    });
   }
 
   function load(token) {
     if (!token) { clear(); return; }
-    fetch(SB + '/rest/v1/sightings?select=id,name,species,status,photo,taken_at&order=taken_at.desc', {
-      headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
+    var cards = window.atCollection ? window.atCollection.catalogue()
+                                    : Promise.resolve({});
+    var rows = fetch(SB + '/rest/v1/sightings?select=id,tree_id,name,species,status,photo,lat,lng,shared,taken_at'
+                     + '&order=taken_at.desc',
+      { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
       .then(function(r) { return r.ok ? r.json() : null; })
-      .then(function(rows) {
-        if (!rows) return;
-        if (window.atMineCounted) window.atMineCounted(rows.length);
-        if (!rows.length) { list.hidden = true; return; }
-        list.innerHTML = rows.map(function(row) { return '<li>' + card(row) + '</li>'; }).join('');
-        list.hidden = false;
-        rows.forEach(function(row) {
-          if (!row.photo) return;
-          var el = list.querySelector('[data-id="' + row.id + '"] img');
-          if (el) sign(token, row.photo, el);
+      .catch(function() { return null; });
+
+    Promise.all([rows, cards]).then(function(r) {
+      var all = r[0], known = r[1] || {};
+      if (!all) return;
+      // A row belongs to one of our trees only when we still map that tree.
+      // One we have since retired keeps a card of its own rather than
+      // vanishing with the page it pointed at.
+      var linked = all.filter(function(row) { return row.tree_id && known[row.tree_id]; });
+      var own = all.filter(function(row) { return linked.indexOf(row) === -1; });
+
+      yours = {};
+      linked.forEach(function(row) {
+        if (!row.photo || yours[row.tree_id]) return;
+        yours[row.tree_id] = '';
+        sign(token, row.photo, function(url) {
+          yours[row.tree_id] = url;
+          paintYours();
         });
-      })
-      .catch(function() {});
+      });
+
+      // The count is the app's count: trees you stood in front of plus trees
+      // only you have. A tree you ticked off AND photographed is one tree, and
+      // it was being counted twice here until 2026-09-11.
+      if (window.atMineCounted) window.atMineCounted(own.length);
+      // And your own trees go on the map beside them, which the app's Collect
+      // map has always drawn and this one did not.
+      if (window.atAddMyPins) {
+        window.atAddMyPins(own.filter(function(row) {
+          return typeof row.lat === 'number' && typeof row.lng === 'number';
+        }).map(function(row) {
+          return { type: 'Feature',
+                   geometry: { type: 'Point', coordinates: [row.lng, row.lat] },
+                   properties: { name: row.name || 'A tree you photographed',
+                                 city: 'A tree only you have',
+                                 // Its own unlisted page, when there is one.
+                                 // A sighting somebody unshared has none, and
+                                 // the popup leaves the link off rather than
+                                 // pointing at a page that would 404.
+                                 url: row.shared === false ? '' : '/t/' + row.id,
+                                 got: 1 } };
+        }));
+      }
+
+      if (!own.length) { list.innerHTML = ''; list.hidden = true; return; }
+      list.innerHTML = own.map(function(row) { return '<li>' + card(row) + '</li>'; }).join('');
+      list.hidden = false;
+      own.forEach(function(row) {
+        if (!row.photo) return;
+        var el = list.querySelector('[data-id="' + row.id + '"] img');
+        if (el) sign(token, row.photo, function(url) { el.src = url; });
+      });
+    });
   }
+
+  // Called by profile-js every time it redraws a list, so a photograph landing
+  // before the cards do still finds them.
+  window.atPaintMine = paintYours;
 
   // Named on the window so the page's own sign-in and sign-out can call them.
   // A fresh sign-in arrives in the url hash AFTER this file has run, and

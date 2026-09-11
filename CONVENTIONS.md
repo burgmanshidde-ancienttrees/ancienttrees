@@ -1441,3 +1441,36 @@ Read 2026-09-08:
 - https://support.alltrails.com/hc/en-us/articles/360018930652-How-to-write-a-review-for-a-trail
 - https://support.google.com/maps/answer/6230175
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews
+
+## Your own photograph of a place somebody else maps (2026-09-11)
+
+The situation: you tick off one of our trees and photograph it. The tree has a
+page of ours, with our own picture or, for two thousand of them, none at all.
+Whose picture does the page show?
+
+What the references do, read 2026-09-11:
+
+- **Google Maps.** A place keeps its own cover photo, chosen by Google. Yours
+  lands in the place's photo set and in "Your contributions", labelled as
+  yours, and it can become the cover only through their ranking, never by
+  arriving. https://support.google.com/maps/answer/7013631
+- **iNaturalist.** Your photograph belongs to your OBSERVATION, which is your
+  record of standing there. The taxon page keeps its own curated images and
+  only promotes a photograph through a separate community step.
+  https://www.inaturalist.org/pages/help
+- **AllTrails and Strava.** The photograph belongs to your activity or review
+  and shows there; the trail keeps its own hero.
+
+The shared rule: **the place keeps its own picture, and yours is yours,
+labelled.** Nobody's snapshot silently replaces the curated image, and nobody's
+snapshot is thrown away either.
+
+Ours, and where it differs: most of our trees have NO picture, which is not a
+state Google Maps is ever in. An empty slot is not a curated choice, so yours
+fills it, with the label "Your photograph" so the two are never confused. Where
+we publish one, ours stays and yours stays yours. Same rule on both surfaces:
+`TreeDetail.myShot` in the app, `my-trees-js.ts` on the website.
+
+What this is NOT: publishing. A photograph on the page for everybody is a
+separate decision made by a viewing pass (CLAUDE.md, Step 0b), and it needs
+somebody to look at the pixels first.

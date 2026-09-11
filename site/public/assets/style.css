@@ -234,6 +234,15 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   color: #fff; font-size: 12px; font-weight: 600; padding: 5px 9px 5px 7px;
   border-radius: 999px; }
 .tree-card-seen svg { width: 14px; height: 14px; flex-shrink: 0; }
+/* YOUR OWN PHOTOGRAPH, on the card of a tree we map but have no picture of
+   (my-trees-js.ts, 2026-09-11). Labelled rather than silent, because the same
+   card carries our photographs everywhere else and a reader should never have
+   to guess which of the two they are looking at. Bottom left, so it cannot
+   collide with the Seen badge above it. */
+.tree-card-yours { position: absolute; bottom: 10px; left: 10px; z-index: 1;
+  display: inline-flex; align-items: center; background: rgba(0, 0, 0, 0.62);
+  color: #fff; font-size: 12px; font-weight: 600; padding: 5px 9px;
+  border-radius: 999px; }
 .tree-card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
 .tree-card:hover .tree-card-photo img { transform: scale(1.04); }
 .tree-card-credit { font-size: 10px; color: var(--ink-light); margin: -0.6rem 0 0.85rem; }

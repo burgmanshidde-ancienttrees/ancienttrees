@@ -1,5 +1,73 @@
 # Decisions
 
+## 2026-09-11 - A photograph you took belongs on the tree, on every device
+
+Hidde, looking at his own account page on the website and at the card for the
+Sudajii at the Omiya gate in Kyoto, a tree he had ticked off and photographed
+with the app days earlier: "waarom zie ik hier niet de foto die ik heb gemaakt
+in de app bij m'n eigen boom, alles moet cross device beschikbaar zijn wat onder
+je account hangt. Check of dit voor alles geldt."
+
+**The photograph had travelled. Nothing showed it.** The app writes a sighting
+for every photograph, and one taken while ticking off a tree WE map carries that
+tree's id. SightingSync pushes it to the account with its file, so it survives a
+lost phone, which is what that machinery was built for on 2026-08-27. Then:
+
+- the app filters those rows out of your own list on purpose
+  (`Sightings.yoursOnly` keeps only `treeId == nil`, because a tree of ours is
+  not a tree only you have), and `Sightings.forTree`, written for exactly this,
+  **had no caller anywhere**;
+- the website rendered them as cards of their OWN, below our card for the same
+  tree, so one tree appeared twice and the picture sat next to the tree rather
+  than on it. It also counted that tree twice in the three numbers at the top.
+
+So the picture went up to the server and appeared on no screen of either
+surface. Not lost, not private, just never asked for.
+
+**The rule, and it is the references' rule rather than ours.** The place keeps
+its own picture and yours is yours, labelled: Google Maps ranks its own cover
+photo and files yours under your contributions, iNaturalist keeps your
+photograph on your observation and the taxon page curated separately, AllTrails
+and Strava attach it to your activity. Full entry, with sources, in
+CONVENTIONS.md, "Your own photograph of a place somebody else maps".
+
+Where we differ is that 2,000-odd of our trees have no picture at all, which is
+not a state Google Maps is ever in. An empty slot is not a curated choice. So
+**your photograph fills an empty slot, marked "Your photograph", and where we
+publish one of our own, ours stays.** Identical on both surfaces:
+`TreeDetail.myShot` in the app, `my-trees-js.ts` on the website.
+
+This is not publishing. A photograph reaching everybody is still a viewing
+pass's decision after somebody looks at the pixels (CLAUDE.md, Step 0b), and
+nothing here changes that.
+
+**The audit he asked for, and what it found.** Two more things under the account
+were not reaching a second device, both in the same corner:
+
+1. **Your votes never travelled in the app.** `MyVotes.load` keyed them on the
+   submissions row's `tree` column, which both surfaces write as "id (name)",
+   and every view reads `at_worthit_<id>`. So the restore at launch was writing
+   `at_worthit_kyo_016 (Sudajii of Omiya Gate, Kyoto Gyoen)`, which nothing
+   reads. The website, which matches on the id prefix, had been right all along,
+   so the two surfaces disagreed on a second phone.
+2. **A report was read back as a vote.** Everything in those rows that was not
+   "worth it" counted as a thumb down, including "report: wrong location", on a
+   page whose thumb down was removed on 2026-09-04. Reporting a tree left it
+   looking voted on. Reports now travel as reports, which is what the website
+   already did.
+
+Everything else came back clean: saves and ticks, the sightings themselves,
+display name and avatar, blocks, kilometres-or-miles, follows.
+
+**And the check, because "everything" is the kind of promise that rots.**
+`scripts/crossdevice.py` refuses a store nobody has ruled on: every key the app
+writes to UserDefaults and the website to localStorage has to be named in
+`data/cross-device.json` with a verdict, `account` (and which table carries it)
+or `device` (and why staying here is right). It cannot tell whether a verdict is
+correct, only whether anybody asked the question, which is the same thing
+`conventioncheck.py` does and the reason that one works. In the pre-push hook.
+25 stores today, 6 account and 14 device. Removing it needs Hidde.
+
 ## 2026-09-08 - A tree needs a reason, not just an honest page
 
 Hidde, shown that four trees had gone live in Nara overnight from his own app
