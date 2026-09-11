@@ -11,6 +11,7 @@ import Base from "../layouts/Base.astro";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../lib/trees";
 import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX } from "../lib/images";
 import { speciesCommon, COUNTRY_MIN_CITIES } from "../lib/species";
+import { belongsInCityIndex } from "../lib/city-index";
 import { groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../lib/parks";
 import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
@@ -100,7 +101,12 @@ const treesCol = oldest.slice(0, 9).map((o) => `<a href="/${o.citySlug}/${o.tree
 // button that reveals ten more cities made this one behave differently for no
 // gain, since /cities is one click away and holds all of them. Hidde,
 // 2026-08-13: "die show 10 more is denk ik ook een rare knop."
-const moreBlock = `<a class="dir-morelink" href="/cities">All ${published.length} cities</a>`;
+// Counts the cities /cities actually lists as cities, not every place file:
+// since 2026-09-11 that index keeps single famous trees in a section of their
+// own (../lib/city-index.ts), and a signpost promising a number the page it
+// points at does not show is the count-promise failure one level up.
+const cityCount = renderable.filter(belongsInCityIndex).length;
+const moreBlock = `<a class="dir-morelink" href="/cities">All ${cityCount} cities</a>`;
 const directoryHtml =
   '<div class="dir-cols">' +
   `<div class="dir-group"><h3>Top cities</h3>${citiesCol}${moreBlock}</div>` +

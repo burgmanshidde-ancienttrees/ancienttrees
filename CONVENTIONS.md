@@ -1441,3 +1441,29 @@ Read 2026-09-08:
 - https://support.alltrails.com/hc/en-us/articles/360018930652-How-to-write-a-review-for-a-trail
 - https://support.google.com/maps/answer/6230175
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews
+
+## A directory of places, when most places hold one thing (2026-09-11)
+
+The question: /cities listed all 582 place files as equal cards, so Cooper
+Creek with one tree sat between Brisbane with twenty and Hobart with eleven.
+Hidde: "Ik zou in de city lijst wel echt cities alleen tonen en niet bomen die
+random in een park staan."
+
+**Reference: AllTrails, from the check already recorded in SEO_GEO_BLUEPRINT.md
+v1.14 (2026-08-24) rather than a new fetch, because their robots.txt disallows
+ClaudeBot and that check was made by hand at Hidde's request.** Their place URL
+(`/netherlands/north-holland/amsterdam`) holds a computed list of trails, and a
+single named trail lives at its own permanent `/trail/...`. A trail is never
+promoted into the place directory because it happens to be famous: the two are
+different kinds of object with different URLs, and the directory lists places.
+
+**Reference: Google Maps.** A landmark is a place with a pin and a page, and it
+never appears in "cities" browse. Administrative browse lists administrative
+things.
+
+Read across to us: a single famous tree that was given a place of its own under
+the floor exception (CLAUDE.md, 2026-08-31) is our `/trail/...`, not our
+`/amsterdam`. It keeps its page, its pin and its country-page row, and the city
+directory lists cities. Where we differ from both references, and it is forced
+by our own data model: our famous tree IS a place file, so the split cannot be
+a URL shape and has to be a listing rule (site/src/lib/city-index.ts).

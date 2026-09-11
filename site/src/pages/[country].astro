@@ -198,7 +198,10 @@ const mapScript = countryMapScript(
     </p>
     <div class="prose-block"><p>{introRest}</p></div>
     <div class="map-embed"><div id="map" class="map"></div></div>
-    <h2>Every mapped city in {disp}</h2>
+    {/* "Place", not "city": this list is where the single famous trees live
+        now that /cities keeps them in a section of its own (2026-09-11), and
+        the Flinders Ranges have never been a city. */}
+    <h2>Every place we map in {disp}</h2>
     <div class="ctry-list">
       {rows.map((r) => (
         <a class="ctry-row" href={`/${r.slug}`}>
