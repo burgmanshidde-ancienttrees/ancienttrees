@@ -492,6 +492,12 @@
    "seen": "2026-09-09",
    "cost": "one fetch attempt",
    "workaround": "apgi.it and luoghi.italianbotanicalheritage.com cover the same gardens (Associazione Parchi e Giardini Italiani and Italian Botanical Heritage directories) and both load fine via curl with a browser user agent; used as substitutes for the Cagliari Orto Botanico entry."
+  },
+  "www.tulsapeople.com": {
+   "behaviour": "429 Too Many Requests via WebFetch on two separate attempts, minutes apart, to a single article page (the Creek Council Oak Tree preservation piece).",
+   "seen": "2026-09-11",
+   "cost": "two fetch attempts during a batched Adelaide/Busan/Zagreb/Sao Paulo/Tulsa verify pass",
+   "workaround": "Wikipedia, MVSKOKE Media (mvskokemedia.com) and a dated 2026 KOSU public-radio piece covered the same tree independently and loaded fine; not chased further per the two-attempts-then-move-on rule."
   }
  }
 }

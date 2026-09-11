@@ -1,0 +1,27 @@
+[
+  {
+    "id": "tsa_001",
+    "name": "The Creek Council Oak Tree",
+    "species": "Post Oak or Bur Oak (Quercus stellata or Quercus macrocarpa; sources disagree, see verify_notes)",
+    "age_estimate": "at least 190 years; already a mature tree in 1836",
+    "age_min": 190,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "1750 South Cheyenne Avenue, Creek Nation Council Oak Park, Tulsa, Oklahoma, USA",
+      "latitude": 36.1362,
+      "longitude": -95.9901,
+      "neighbourhood": "Riverview"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Creek_Council_Oak_Tree",
+      "https://www.mvskokemedia.com/cycle-of-rebirth-continues-at-council-oak-tree-park/",
+      "https://www.kosu.org/local-news/2026-04-07/rematriation-retreat-returns-to-tulsa-linking-indigenous-language-to-resistance"
+    ],
+    "access": "Free, public city/tribal park (Creek Nation Council Oak Park, 1.86 acres), open to visitors; includes an ethno-horticultural garden and Trail of Tears memorial.",
+    "transport": "Central Tulsa, Riverview neighbourhood overlooking the Arkansas River; no transit stop confirmed this pass, check current bus routes",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "ALIVE, recently confirmed: KOSU public radio (fetched directly, 2026-04-07) reports Tulsa's fourth annual Rematriation Retreat held a 'closing circle and picnic under the Council Oak' on 2026-04-12, which is a first-hand, dated, this-year confirmation the tree is standing and in active ceremonial use. Wikipedia (fetched directly) separately states the tree 'was still living as of 2024'. MVSKOKE Media, the Muscogee (Creek) Nation's own outlet (fetched directly), confirms the tree 'still resides in its original location today' and notes lightning rods were installed in January 1980 for its protection, plus an annual Creek Nation Council Oak Tree Day ceremony held since 1986-10-26. HISTORY: in 1836 the Lochapoka Tribal Town of the Creek (Muscogee) Nation ended their forced removal (Trail of Tears) march at this tree, scattered ashes from their last ceremonial fire in Alabama, lit a new fire, and used the site as their new busk ground / town hall / church / courthouse -- this is the founding site of what became Tulsa. Only 161 of the original 660 who set out survived the march (Wikipedia). NATIONAL REGISTER: listed 1976-09-29 (NRIS 76001576, Criterion A); placed in a Historic Preservation Zone in January 1992. OWNERSHIP: transferred from the City of Tulsa to the Muscogee (Creek) Nation; Wikipedia dates this 2024-11-09, while a 2026 news search surfaced a formal return ceremony for Council Oak and Stickball Parks on 2025-11-01 -- both dates recorded, not resolved, likely an announcement/ceremony split rather than a contradiction. SPECIES DISAGREEMENT, not resolved: Wikipedia notes conflicting identification between a source calling it Quercus stellata (post oak) and the Tulsa Preservation Commission calling it a bur oak; the original Wikidata lead also tags Quercus macrocarpa. Both names kept in the species field rather than picking a winner; a writer or reader correction can settle it. AGE: no source gives a specific number with a stated derivation (no girth found either, despite this being exactly the kind of tree a girth measurement would date well; a future pass or a reader with a tape measure could close this). Treated as a hard floor of 190 years (at least since 1836) plus the documented claim it was 'believed to have been a mature tree when the Creeks arrived', which implies real age well beyond that, but no source states a number so none is invented; a widely repeated 'over 500 years' figure was seen only in unfetched search-summary text (blogoklahoma.us 404'd, a Medium piece 403'd after two attempts each) and is NOT used per the search-summary-is-a-lead-never-a-source rule. PARK CONDITION: the Riverview Neighborhood Association has criticised the surrounding park's upkeep (faded/corroded plaques, broken lighting) as of a 2024 tulsapeople.com piece that could not be fetched this pass (429 rate-limited twice) -- the TREE itself is not reported as damaged or unhealthy by any source found, only the park infrastructure around it. SINGLE-FAMOUS-TREE TEST: clearly clears the 2026-08-31 destination exception -- this is the founding site of the city of Tulsa itself and a National Register listed Trail of Tears memorial actively used by the Muscogee Nation; recommend it ship alone as its own place. Container name left to the write pass: 'Tulsa' fits given the tree's role in the city's own founding story, or 'Creek Nation Council Oak Park' if a narrower place name is preferred; either is honest."
+  }
+]
