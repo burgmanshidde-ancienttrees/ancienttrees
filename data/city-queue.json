@@ -181,7 +181,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 43,
-   "photos": 6,
+   "photos": 9,
    "walks": 2,
    "register": 0,
    "ready": 0,
@@ -893,7 +893,30 @@
    "wikidata": 3
   },
   {
+   "city": "Spokane",
+   "country": "United States",
+   "status": "published",
+   "trees": 9,
+   "travel": 7831,
+   "source": "pool_audit 2026-09-01",
+   "score": 15.66,
+   "basis": "predicted (travel demand)",
+   "work_score": 22.86,
    "rank": 39,
+   "photos": 0,
+   "walks": 2,
+   "register": 18,
+   "ready": 4,
+   "wikidata": 1,
+   "supply": 23,
+   "target": 10,
+   "ease": 1.46,
+   "slug": "spokane",
+   "impressions_10d": 0,
+   "clicks_10d": 0
+  },
+  {
+   "rank": 40,
    "city": "Fukuoka",
    "country": "Japan",
    "slug": "fukuoka",
@@ -925,7 +948,7 @@
    "score": 22.76,
    "basis": "predicted (travel demand)",
    "work_score": 22.76,
-   "rank": 40,
+   "rank": 41,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -939,7 +962,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 41,
+   "rank": 42,
    "city": "Boston",
    "country": "United States",
    "slug": "boston",
@@ -976,7 +999,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 22.12,
-   "rank": 42,
+   "rank": 43,
    "impressions_10d": 53,
    "clicks_10d": 0,
    "score": 11.06,
@@ -986,7 +1009,7 @@
    "slug": "dordrecht"
   },
   {
-   "rank": 43,
+   "rank": 44,
    "city": "Malaga",
    "country": "Spain",
    "slug": "malaga",
@@ -1009,7 +1032,7 @@
    "wikidata": 0
   },
   {
-   "rank": 44,
+   "rank": 45,
    "city": "Geneva",
    "country": "Switzerland",
    "slug": "geneva",
@@ -1032,7 +1055,7 @@
    "wikidata": 1
   },
   {
-   "rank": 45,
+   "rank": 46,
    "city": "Vilnius",
    "country": "Lithuania",
    "slug": "vilnius",
@@ -1055,7 +1078,7 @@
    "wikidata": 6
   },
   {
-   "rank": 46,
+   "rank": 47,
    "city": "Palma de Mallorca",
    "country": "Spain",
    "slug": "palma-de-mallorca",
@@ -1078,7 +1101,7 @@
    "wikidata": 0
   },
   {
-   "rank": 47,
+   "rank": 48,
    "city": "Asheville",
    "country": "United States",
    "slug": "asheville",
@@ -1099,29 +1122,6 @@
    "work_score": 20.89,
    "travel": 10445,
    "wikidata": 0
-  },
-  {
-   "city": "Boise",
-   "country": "United States",
-   "status": "pending",
-   "trees": 0,
-   "travel": 10143,
-   "source": "pool_audit 2026-09-01",
-   "score": 20.29,
-   "basis": "predicted (travel demand)",
-   "work_score": 20.7,
-   "rank": 48,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "wikidata": 1,
-   "supply": 1,
-   "target": 10,
-   "ease": 1.02,
-   "slug": "boise",
-   "impressions_10d": 0,
-   "clicks_10d": 0
   },
   {
    "city": "Long Beach",
@@ -1170,7 +1170,30 @@
    "clicks_10d": 0
   },
   {
+   "city": "Boise",
+   "country": "United States",
+   "status": "published",
+   "trees": 4,
+   "travel": 10143,
+   "source": "pool_audit 2026-09-01",
+   "score": 20.29,
+   "basis": "predicted (travel demand)",
+   "work_score": 20.29,
    "rank": 51,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 0,
+   "wikidata": 0,
+   "supply": 0,
+   "target": 10,
+   "ease": 1.0,
+   "slug": "boise",
+   "impressions_10d": 0,
+   "clicks_10d": 0
+  },
+  {
+   "rank": 52,
    "city": "Houston",
    "country": "United States",
    "slug": "houston",
@@ -1193,7 +1216,7 @@
    "wikidata": 0
   },
   {
-   "rank": 52,
+   "rank": 53,
    "city": "Reykjavik",
    "country": "Iceland",
    "slug": "reykjavik",
@@ -1229,7 +1252,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 19.2,
-   "rank": 53,
+   "rank": 54,
    "impressions_10d": 46,
    "clicks_10d": 1,
    "score": 9.6,
@@ -1239,7 +1262,7 @@
    "slug": "leeuwarden"
   },
   {
-   "rank": 54,
+   "rank": 55,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -1272,7 +1295,7 @@
    "score": 18.81,
    "basis": "predicted (travel demand)",
    "work_score": 18.81,
-   "rank": 55,
+   "rank": 56,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1286,7 +1309,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 56,
+   "rank": 57,
    "city": "Granada",
    "country": "Spain",
    "slug": "granada",
@@ -1309,7 +1332,7 @@
    "wikidata": 0
   },
   {
-   "rank": 57,
+   "rank": 58,
    "city": "Oslo",
    "country": "Norway",
    "slug": "oslo",
@@ -1345,7 +1368,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 18.78,
-   "rank": 58,
+   "rank": 59,
    "impressions_10d": 45,
    "clicks_10d": 0,
    "score": 9.39,
@@ -1355,7 +1378,7 @@
    "slug": "helmond"
   },
   {
-   "rank": 59,
+   "rank": 60,
    "city": "Hilo",
    "country": "United States",
    "slug": "hilo",
@@ -1387,7 +1410,7 @@
    "score": 18.28,
    "basis": "predicted (travel demand)",
    "work_score": 18.65,
-   "rank": 60,
+   "rank": 61,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1411,7 +1434,7 @@
    "score": 18.25,
    "basis": "predicted (travel demand)",
    "work_score": 18.25,
-   "rank": 61,
+   "rank": 62,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1434,7 +1457,7 @@
    "score": 18.19,
    "basis": "predicted (travel demand)",
    "work_score": 18.19,
-   "rank": 62,
+   "rank": 63,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1448,7 +1471,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 63,
+   "rank": 64,
    "city": "Cork",
    "country": "Ireland",
    "slug": "cork",
@@ -1480,7 +1503,7 @@
    "score": 18.11,
    "basis": "predicted (travel demand)",
    "work_score": 18.11,
-   "rank": 64,
+   "rank": 65,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1494,7 +1517,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 65,
+   "rank": 66,
    "city": "New Orleans",
    "country": "United States",
    "slug": "new-orleans",
@@ -1515,29 +1538,6 @@
    "work_score": 17.94,
    "travel": 4428,
    "wikidata": 0
-  },
-  {
-   "city": "Spokane",
-   "country": "United States",
-   "status": "published",
-   "trees": 6,
-   "travel": 7831,
-   "source": "pool_audit 2026-09-01",
-   "score": 15.66,
-   "basis": "predicted (travel demand)",
-   "work_score": 17.85,
-   "rank": 66,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 6,
-   "wikidata": 1,
-   "supply": 7,
-   "target": 10,
-   "ease": 1.14,
-   "slug": "spokane",
-   "impressions_10d": 0,
-   "clicks_10d": 0
   },
   {
    "city": "Daytona Beach",
@@ -2150,7 +2150,7 @@
    "demand": 51351,
    "basis": "measured",
    "status": "published",
-   "trees": 13,
+   "trees": 14,
    "photos": 1,
    "walks": 2,
    "register": 15,
@@ -2526,7 +2526,7 @@
    "demand": 124888,
    "basis": "measured",
    "status": "published",
-   "trees": 5,
+   "trees": 6,
    "photos": 3,
    "walks": 1,
    "register": 42,
@@ -3406,7 +3406,7 @@
    "status": "published",
    "trees": 4,
    "photos": 0,
-   "walks": 0,
+   "walks": 1,
    "register": 1,
    "ready": 0,
    "supply": 1,
@@ -3720,8 +3720,8 @@
   {
    "city": "Baltimore",
    "country": "United States",
-   "status": "pending",
-   "trees": 0,
+   "status": "published",
+   "trees": 4,
    "travel": 3550,
    "source": "pool_audit 2026-09-01",
    "score": 7.1,
@@ -4866,7 +4866,7 @@
    "status": "published",
    "trees": 8,
    "photos": 0,
-   "walks": 0,
+   "walks": 1,
    "register": 0,
    "ready": 0,
    "supply": 0,

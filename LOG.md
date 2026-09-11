@@ -1,6 +1,42 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (continuation 3) - Shipped Baltimore and Boise: two new cities, 8 trees, both stopped earlier attempts left staged
+
+The wake-up brief said the prior attempt stopped after 31 minutes having shipped
+zero trees with 89 minutes still unspent. What it had actually done was the real
+work and not the commit: two verify passes had already produced complete,
+research-standard city files for Baltimore and Boise (4 trees each) plus a
+finished Dutch overlay for Haarlem, all sitting untracked, with both claims still
+held. Nothing was wrong with the work, only the last step.
+
+Checked both city files line by line against Step 2's bar (sources, sourcing
+flags, honest location_precision) before trusting the claim message and shipping:
+both hold up. Ran the full pipeline before committing: `city_names.py` (both
+cities had never been resolved in other languages), `city_queue.py` (re-ranked
+CITY_QUEUE.md/LEDGER.html), `tree_index.py`, `superlatives.py` (no collisions),
+`preflight.py` (0 problems), Astro build (5483 pages) and `qa.py` (8550 pages,
+clean). Released both claims. Full detail in CURATION.md.
+
+**Baltimore, new city, 4 trees.** The Ruxton Liberty Tree, a 350-380 year white
+oak on private land visible from Bellona Avenue; the Frederick Douglass Elm near
+Camden Yards, carrying an honestly-labelled unproven tradition; two Cylburn
+Arboretum state/city champions (a cockspur hawthorn, a paperbark maple).
+
+**Boise, new city, 4 trees.** Three Idaho Big Tree Program state/city champions
+(bur oak, Kentucky coffeetree, and a giant sequoia moved a quarter mile by
+flatbed in 2017 to save it from a hospital expansion) plus a horse chestnut
+sapling grafted from the Amsterdam tree Anne Frank watched from her window, one
+of only eleven such grafts in the US.
+
+Also committed the already-finished Haarlem Dutch overlay (21 trees, full
+coverage) that was sitting untracked alongside the city files.
+
+**For the next run:** city-list.json's rebuild only updates rows already present
+in the file, so it never picked up Baltimore or Boise as new entries even after
+`city_queue.py` ran. Not urgent (CITY_QUEUE.md, the actual order, has both
+correctly), but worth a fix if a session is in that script anyway.
+
 ## 2026-09-11 (continuation 2) - Finished a stalled write pass, scouted two registers, added 3 trees
 
 The previous attempt this window stopped after 44 minutes with 76 minutes
