@@ -7570,6 +7570,15 @@
     "note": "Photo-judge viewing pass on the two highest-demand depth-allowed cities missing photos (rom_007/009/011/013/016/017, bru_005/025). 27 candidates rendered and judged, 0 approvals: rom_009s 8 candidates are all the neighbouring cedar (rom_008, already photographed) or generic villa views, no Aleppo pine exists in this queue; rom_007s best-named file is black-and-white; rom_011 has an exact-geotag candidate whose trunk is hidden behind scrub and crown does not clearly read as deodar; the rest (rom_013/016/017, bru_005/025) matched on keywords only (mausoleums, a bust, butterflies, street corners). All 27 recorded as rejects via photo_verdicts.py so a future sweep does not re-pay to judge them. These 8 trees need a reader photograph or a new source, not another Commons/iNaturalist sweep.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Florence",
+    "kind": "verify",
+    "tokens": 151281,
+    "trees": 0,
+    "note": "deepen pass on 7 old leads: 4 turned out already published (leads file was stale), 2 genuinely unresolved (access/alive-now doubt), 4 Wikidata candidates misattributed to Fiesole not Florence",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }
