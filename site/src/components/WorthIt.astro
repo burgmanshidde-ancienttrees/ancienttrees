@@ -16,48 +16,67 @@
 // error report are siblings, never nested. Nesting hides the report from the
 // people most likely to have one and interrogates the people least likely.
 //
-// So: thumbs are a pure vote, one tap, no follow-up. "Something's wrong" is its
-// own button that opens the fact chips, and "Not that special" is gone, because
-// the thumbs-down already says it. The two are independent: someone may vote up
-// and still report a wrong pin.
+// THE SAME CONTROL AS THE APP, since 2026-09-11 (Hidde: "zorg dat deze pagina
+// gelijk wordt getrokken met de app die is goed"). On 2026-09-04 he moved the
+// app's thumb up beside the place name and took the question away ("de worth
+// the visit tekst mag helemaal weg, zet die thumb omhoog gewoon naast de
+// stadsnaam"), put "Something's wrong" low on the page, and the app had
+// already dropped the thumbs-down. The website kept all of it for a week. So
+// the two halves now render in two places, chosen with `part`:
+//
+//   part="vote"    one thumb, inline beside the place, nothing else. The
+//                  pressed state IS the confirmation, which is what the script
+//                  already said; "Thanks, counted" is gone with it.
+//   part="report"  "Something's wrong" and its chips, low on the page.
+//   (no part)      both, for any page that has no place line to sit in.
+//
+// There is no thumbs-down on either surface. "Not worth it" is what a missing
+// thumb already says, and the fault chips carry every reason that is a fault.
 //
 // Where a report goes is unchanged: the same Supabase submissions table the
 // /contribute form uses (kind 'feedback'), where Step 0b picks it up, and a
 // dead or wrong-location report gets checked the same day.
 //
-// Votes are stored from day one and shown to nobody: at current volume a count
-// would be fake authority, and re-ranking waits until the numbers are honest
-// (DECISIONS.md 2026-08-14). One vote per tree per browser via localStorage,
-// the passport pattern; the report carries its own separate key so a vote never
-// blocks a correction.
+// Both halves carry the tree on their own box, because worthit-js.ts scopes
+// everything to the nearest `.worthit` and reads the tree from it; the vote
+// state is shared per tree, so the two boxes never disagree.
 interface Props {
   treeId: string;
   city: string;
   treeName: string;
   compact?: boolean;
+  part?: "vote" | "report";
 }
-const { treeId, city, treeName, compact = false } = Astro.props;
+const { treeId, city, treeName, compact = false, part } = Astro.props;
+const showVote = part !== "report";
+const showReport = part !== "vote";
+const cls = ["worthit", compact ? "worthit-compact" : "", part === "vote" ? "worthit-inline" : ""].filter(Boolean).join(" ");
 ---
-<div class={`worthit${compact ? " worthit-compact" : ""}`} data-tree={treeId} data-city={city} data-name={treeName}>
+<div class={cls} data-tree={treeId} data-city={city} data-name={treeName}>
   <div class="worthit-row">
-    <span class="worthit-q">Been here? Worth the visit?</span>
-    <button type="button" class="worthit-btn" data-vote="up" aria-label={`Yes, ${treeName} was worth the visit`}>👍</button>
-    <button type="button" class="worthit-btn" data-vote="down" aria-label={`No, ${treeName} was not worth the visit`}>👎</button>
-    <span class="worthit-done" hidden>Thanks, counted. Tap again to undo.</span>
-    <button type="button" class="worthit-report" aria-expanded="false">Something's wrong</button>
+    {showVote && (
+      <button type="button" class="worthit-btn" data-vote="up" aria-label={`Yes, ${treeName} was worth the visit`}>👍</button>
+    )}
+    {showReport && (
+      <button type="button" class="worthit-report" aria-expanded="false">Something's wrong</button>
+    )}
   </div>
-  <div class="worthit-why" hidden>
-    <span class="worthit-q">What's wrong?</span>
-    <button type="button" class="worthit-chip" data-reason="dead or gone" data-q="What did you find there? (optional)" data-ph="A stump, a fallen trunk, nothing at all, and when you were there">It's dead or gone</button>
-    <button type="button" class="worthit-chip" data-reason="wrong location" data-q="Where is it really? (optional)" data-ph="A street corner, a landmark, or paste a maps pin">Wrong location</button>
-    <button type="button" class="worthit-chip" data-reason="could not tell which tree" data-q="Which one did you look at? (optional)" data-ph="The thicker trunk, the one nearest the path, the one by the bench">Couldn't tell which tree</button>
-    <button type="button" class="worthit-chip" data-reason="could not reach it" data-q="What stopped you? (optional)" data-ph="A locked gate, a fence, opening hours, private land">Couldn't reach it</button>
-    <button type="button" class="worthit-chip" data-reason="something else" data-q="Tell us in a line." data-ph="What we got wrong, or what we are missing">Something else</button>
-  </div>
-  <span class="worthit-thanks" hidden>Thanks, we'll check it.</span>
-  <form class="worthit-detail" hidden>
-    <label class="worthit-q" for={`wd-${treeId}`}>Anything that helps us check? (optional)</label>
-    <textarea id={`wd-${treeId}`} rows="2" placeholder=""></textarea>
-    <button type="submit" class="worthit-chip">Send</button>
-  </form>
+  {showReport && (
+    <Fragment>
+      <div class="worthit-why" hidden>
+        <span class="worthit-q">What's wrong?</span>
+        <button type="button" class="worthit-chip" data-reason="dead or gone" data-q="What did you find there? (optional)" data-ph="A stump, a fallen trunk, nothing at all, and when you were there">It's dead or gone</button>
+        <button type="button" class="worthit-chip" data-reason="wrong location" data-q="Where is it really? (optional)" data-ph="A street corner, a landmark, or paste a maps pin">Wrong location</button>
+        <button type="button" class="worthit-chip" data-reason="could not tell which tree" data-q="Which one did you look at? (optional)" data-ph="The thicker trunk, the one nearest the path, the one by the bench">Couldn't tell which tree</button>
+        <button type="button" class="worthit-chip" data-reason="could not reach it" data-q="What stopped you? (optional)" data-ph="A locked gate, a fence, opening hours, private land">Couldn't reach it</button>
+        <button type="button" class="worthit-chip" data-reason="something else" data-q="Tell us in a line." data-ph="What we got wrong, or what we are missing">Something else</button>
+      </div>
+      <span class="worthit-thanks" hidden>Thanks, we'll check it.</span>
+      <form class="worthit-detail" hidden>
+        <label class="worthit-q" for={`wd-${treeId}`}>Anything that helps us check? (optional)</label>
+        <textarea id={`wd-${treeId}`} rows="2" placeholder=""></textarea>
+        <button type="submit" class="worthit-chip">Send</button>
+      </form>
+    </Fragment>
+  )}
 </div>

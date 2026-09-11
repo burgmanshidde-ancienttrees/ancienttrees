@@ -1,0 +1,30 @@
+{
+  "_note": "Strings that live on ONE surface on purpose, read by scripts/paritycheck.py. Each entry is a decision with its reason, never a way to silence the check. Anything not listed here that is removed from the app must leave the website too, and the other way round (Hidde, 2026-09-11: 'zorg dat dit volgende keer wel gelijk app en web doet').",
+  "one_surface_only": [
+    {
+      "text": "Ancient Trees is a passion project. I'm building it to let others appreciate nature and go outside. Marvel at something older than you can imagine.",
+      "surface": "web",
+      "reason": "The sponsor page is web-only by design. The app's sponsor sheet was taken out of the build while the paywall line settles; the page on the website stays."
+    },
+    {
+      "text": "Running the website and app does cost money. A donation would help me enormously: more time and more resources to make this much better, and to get more of these trees on the map.",
+      "surface": "web",
+      "reason": "Same sponsor page, same reason."
+    },
+    {
+      "text": "Sponsor this project",
+      "surface": "web",
+      "reason": "The link to that same web-only sponsor page."
+    },
+    {
+      "text": "Suggest a tree",
+      "surface": "web",
+      "reason": "The /contribute page and its footer link are web-only; the app adds a tree through the camera, which is its own flow and its own words."
+    },
+    {
+      "text": "Which one is it?",
+      "surface": "app",
+      "reason": "Two different features that happened to share three words. In the app it heads the identify stage of the camera flow, when a photograph matches several trees nearby (CollectSheet.identifyState). The website used the same words as the heading over a tree page's recognition line, and that heading was taken out in the 2026-09-04 tree-block redesign. Nothing on the website asks somebody to pick between candidate trees."
+    }
+  ]
+}

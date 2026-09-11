@@ -267,7 +267,14 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           the card that names it, and on this tree it read "Moreton Bay Fig
           (Ficus macrophylla)" over "Moreton Bay Fig". A fact belongs in one
           place per page. */}
-      <p class="tree-place"><a href={`/${cslug}`}>{[loc.neighbourhood, cityName].filter(Boolean).join(", ")}</a></p>
+      {/* The place, a dot and the thumb: the same row the app draws under a
+          tree's name since 2026-09-04, and on the website since 2026-09-11
+          (Hidde: "zorg dat deze pagina gelijk wordt getrokken met de app"). */}
+      <div class="tree-place-row">
+        <p class="tree-place"><a href={`/${cslug}`}>{[loc.neighbourhood, cityName].filter(Boolean).join(", ")}</a></p>
+        <span class="tree-place-dot" aria-hidden="true">·</span>
+        <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} part="vote" />
+      </div>
     </div>
     {/* EVERYTHING SOMEBODY NEEDS BEFORE SETTING OFF, in one block: two
         columns for the facts that are short, then a line for the location and
@@ -339,14 +346,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <p class="which-one"><b>How do I find it?</b> {tree.how_to_recognise}</p>
     )}
     <div class="prose-block"><p>{tree.story}</p></div>
-    {/* Directly under the story, moved up from the foot of the page 2026-08-16
-        (Hidde: "de thumb up and thumb down opties lijken een beetje weggestopt
-        ... op de diepere pagina veel hoger"). It sat as the second-to-last
-        element of 212 lines. The convention puts a rating summary at the top of
-        a place page and the act of rating after the content; we deliberately
-        show no counts, so there is no summary to hoist, and the honest place is
-        the moment the reader has just learned what the tree is. */}
-    <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} />
     <Fragment set:html={seasonHtml} />
     <dl class="facts">
       <dt>Species</dt><dd>{tree.species ?? ""}</dd>
@@ -357,6 +356,10 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     </dl>
     <div class="map-embed"><div id="map" class="map"></div></div>
     <p class="go-note">The button above opens directions in your maps app. {tree.transport ?? ""}</p>
+    {/* "Something's wrong", low on the page and under the map, which is what
+        most reports are about. Its vote half sits beside the place name; the
+        two were one block under the story until 2026-09-11. */}
+    <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} part="report" />
     {sources.length > 0 && (
       <section class="tree-sources">
         <h2>Sources</h2>

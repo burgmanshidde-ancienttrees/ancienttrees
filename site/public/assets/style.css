@@ -1785,3 +1785,15 @@ main.content-page.has-tree-bar .prose-block,
 main.content-page.has-tree-bar .facts,
 main.content-page.has-tree-bar .map-embed,
 main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-bottom: 1.75rem; }
+
+/* THE THUMB BESIDE THE PLACE (2026-09-11), the same row the app draws under a
+   tree's name: the place, a dot, and the vote. Light on purpose, so it reads as
+   part of the line rather than a button parked on it, while the hit area stays
+   44 points, which is Apple's floor and ours. */
+.tree-place-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem; margin: 0; }
+.tree-place-row .tree-place { margin: 0; }
+.tree-place-dot { color: var(--ink-light); }
+.worthit.worthit-inline { display: inline-flex; flex-direction: row; margin: 0; gap: 0; }
+.worthit-inline .worthit-row { gap: 0; }
+.worthit-inline .worthit-btn { border: 0; background: transparent; padding: 0 0.4rem; font-size: 17px; }
+.worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; }
