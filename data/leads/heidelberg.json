@@ -7,7 +7,10 @@
     49.4099583,
     8.699005
    ],
-   "reason": "Register-confirmed Naturdenkmal (LUBW, designated 1981-04-15) but only one source found. A WebSearch AI summary claimed it stands in a courtyard reached through a passage at Plöck Nr. 63, but this could NOT be corroborated: direct fetches of the two most likely pages (a Plöck courtyard walking tour, the Wikipedia Hauptstrasse article) contain no mention of a Ginkgo at all. Per the search-summary-is-a-lead-never-a-source rule, that detail is not usable. Without it, the exact spot on the roughly 1.6km Hauptstrasse and whether it sits on private/courtyard ground is unknown, so both location precision and public access are unresolved. Needs either a direct sighting/photo, a local source naming the courtyard, or a reader tip."
+   "reason": "Register-confirmed Naturdenkmal (LUBW, designated 1981-04-15) but only one source found. A WebSearch AI summary claimed it stands in a courtyard reached through a passage at Plöck Nr. 63, but this could NOT be corroborated: direct fetches of the two most likely pages (a Plöck courtyard walking tour, the Wikipedia Hauptstrasse article) contain no mention of a Ginkgo at all. Per the search-summary-is-a-lead-never-a-source rule, that detail is not usable. Without it, the exact spot on the roughly 1.6km Hauptstrasse and whether it sits on private/courtyard ground is unknown, so both location precision and public access are unresolved. Needs either a direct sighting/photo, a local source naming the courtyard, or a reader tip.",
+   "lat": 49.4099583,
+   "lng": 8.699005,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
   },
   {
    "name": "2 Zypressen (Nutka- und Scheinzypresse) Bergstrasse",
@@ -16,7 +19,10 @@
     49.4183033,
     8.692185
    ],
-   "reason": "Sits at essentially the same point as the delivered Krimlinde Bergstrasse (hei_005), on the same street. Not researched this pass for time; a natural companion/second entry on a return visit to that address, or could be folded into the Krimlinde entry if a future pass confirms they stand together as one visitable spot."
+   "reason": "Sits at essentially the same point as the delivered Krimlinde Bergstrasse (hei_005), on the same street. Not researched this pass for time; a natural companion/second entry on a return visit to that address, or could be folded into the Krimlinde entry if a future pass confirms they stand together as one visitable spot.",
+   "lat": 49.4183033,
+   "lng": 8.692185,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
   },
   {
    "name": "Schlosspark Wieblingen (49 Baeume)",
@@ -25,7 +31,10 @@
     49.4255533,
     8.649015
    ],
-   "reason": "A 2.7ha park-level Naturdenkmal covering 49 trees, not a single collectible point. Worth a dedicated look in a future pass to see whether one or two individual trees inside it stand out (a park's own veteran, a champion specimen); not pursued this round because it needs on-site or park-specific research, not just the register line."
+   "reason": "A 2.7ha park-level Naturdenkmal covering 49 trees, not a single collectible point. Worth a dedicated look in a future pass to see whether one or two individual trees inside it stand out (a park's own veteran, a champion specimen); not pursued this round because it needs on-site or park-specific research, not just the register line.",
+   "lat": 49.4255533,
+   "lng": 8.649015,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
   },
   {
    "name": "2 Kastanien, 1 Platane, 1 Magnolie Ploeck 45-49",
@@ -36,7 +45,10 @@
    ],
    "reason": "Register gives an address matching two real, publicly-accessible courtyard-tour stops (Tagespflege St. Anna, Ploeck 45, and Cafe Manna, Ploeck 49, both confirmed freely open to the public via vielmehr.heidelberg.de's own Hinterhoefe tour). Genuinely promising: central Altstadt, public access confirmed, four trees of three species at one address. Not delivered this pass only because the tour page describes the courtyards, not these specific four trees, so species-level confirmation for each tree individually is still needed. Strong candidate for the next Heidelberg pass.",
    "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "lat": 49.409445,
+   "lng": 8.6972,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
   },
   {
    "name": "Stieleiche am Aukopf / Stieleiche Muenchelstrasse (1) and (2) / Stieleiche Orthopaedie",
@@ -51,7 +63,10 @@
     49.4181767,
     8.7746633
    ],
-   "reason": "Not researched this pass. Sits in Ziegelhausen near the two Muenchelstrasse oaks above; could anchor a second, separate eastern-Heidelberg cluster in a future pass."
+   "reason": "Not researched this pass. Sits in Ziegelhausen near the two Muenchelstrasse oaks above; could anchor a second, separate eastern-Heidelberg cluster in a future pass.",
+   "lat": 49.4181767,
+   "lng": 8.7746633,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
   },
   {
    "name": "Pyramidenpappel Wilhelmstrasse",
@@ -60,7 +75,10 @@
     49.403005,
     8.6852433
    ],
-   "reason": "Lombardy poplar, Weststadt. Not researched this pass; no time to search for a second source or confirm access."
+   "reason": "Lombardy poplar, Weststadt. Not researched this pass; no time to search for a second source or confirm access.",
+   "lat": 49.403005,
+   "lng": 8.6852433,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
   },
   {
    "name": "2 Ginkgo biloba Amalienstrasse / Weymouthskiefer Schmitthenner Str. / 2 Lärchen and 2 Rotbuchen Ochsenlagerweg",

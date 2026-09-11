@@ -1,64 +1,70 @@
 {
-  "leads": [
-    {
-      "candidate": "Kruidtuin champion trees (Gewone plataan 5.47m girth / 33.8m; Tulpenboom 4.88m girth / 29.2m; Moerascipres; Mammoetboom)",
-      "location": "Stedelijke Kruidtuin, Kapucijnenvoer 30, Leuven",
-      "coordinates": {
-        "latitude": 50.8783,
-        "longitude": 4.6906
-      },
-      "reason": "The Kruidtuin is confirmed free and open year-round (site is a protected heritage garden itself, entry 42252) and is Belgium's oldest botanical garden (1738), a strong candidate site. Figures for its champion trees only turned up via search-engine AI summaries citing monumentaltrees.com; monumentaltrees.com itself 403'd every curl attempt and its Cloudflare challenge did not clear in a live browser session either, so per the rulebook ('a search summary is a lead, never a source') none of those girth/height figures were used. The garden's own centuries-old elm (planted at its 1826 opening) fell in a June 2026 storm and is confirmed dead, so it cannot be used. No individual Kruidtuin specimen is separately listed in the Onroerend Erfgoed inventory. Worth a return pass: view monumentaltrees.com's Kruidtuin page in a real browser session (their disclaimer permits verification-only use), or find the garden's own tree list/audio guide script."
-    },
-    {
-      "candidate": "Filosofenfontein grey alder (Alnus incana), and its swamp cypresses (Taxodium distichum incl. cultivar Pendens)",
-      "register_id": 300821,
-      "location": "Filosofenfontein, Waversebaan 352, Heverlee, Leuven",
-      "coordinates": {
-        "latitude": 50.8513,
-        "longitude": 4.6739
-      },
-      "reason": "The best evidence found this pass and NOT shipped, on access grounds alone. The Onroerend Erfgoed register entry for this site (a former Dominican retreat house domain, now a lay faith community's ontmoetingshuis) quotes a proper dendrological source (BAUDOUIN J.C. e.a., Bomen in Belgie: Dendrologische inventaris 1987-1992, Belgische Dendrologische Vereniging, 1992, p.337) plus its own field survey of 16 October 2002: a grey alder (Alnus incana) with a 205cm girth at 150cm height, stated to be 'far and away the thickest registered specimen in Belgium' (veruit het dikste geregistreerde exemplaar in Belgie), and a swamp cypress cultivar (Taxodium distichum Pendens) at 344cm. That is a genuine national superlative with a real, checkable published source, which is rare. BLOCKED FOR NOW because OpenStreetMap's own routing data tags the access road to this address (way 390045508, 'Weg naar Filosofenfontein') access=private, service=driveway, and no source found in this pass states the pond/garden grounds themselves are open to casual visitors; the site functions as a Dominican-founded lay community's retreat house (evening programmes open to interested people, registration desired) rather than a public park. Fails the 'can they get in without asking anyone's permission' test on current evidence. Worth a direct email to info@filosofenfontein.be asking whether the garden itself is open to walk-in visitors; if yes, this is an easy, excellent addition."
-    },
-    {
-      "candidate": "Calvary spruces at the Begijnhofkerk (Sint-Jan-de-Doper), Groot Begijnhof",
-      "register_id": 125415,
-      "location": "Churchyard of the Begijnhofkerk, Groot Begijnhof, Leuven",
-      "reason": "Register text (from the 1971 Bouwen door de eeuwen heen survey, not updated since for this detail) mentions 'Calvarie van circa 1500 in de schaduw van drie grote sparren' (a circa-1500 Calvary in the shade of three large spruces) in the churchyard. The Groot Begijnhof itself is genuinely and freely public (UNESCO site, KU Leuven-owned open quarter with public streets running through it), so access is not the problem here. Not shipped because the tree description is 55 years old with no girth, no age, and no confirmation the spruces still stand; spruces are not long-lived and this reads as exactly the kind of stale claim the rulebook warns against reviving without fresh evidence. A future pass should check a recent photo of the Begijnhofkerk churchyard (Sint-Jan-de-Doper) before pursuing this further; also checked and found nothing individually notable: Abdij van Park (public, freely accessible, but the register and a Natuurpunt search turned up only an orchard, an avenue and a 2026 newly-planted linden, no veteran specimen); the British and De Jacht cemeteries in Heverlee (public, register text describes only generic boundary tree screens, birches and a fan-shaped grave layout, no named tree)."
-    }
-  ],
-  "blocked": [
-    {
-      "candidate": "Japanse honingboom 'Boom van 't Groot Verdriet' (Japanese pagoda tree, Styphnolobium japonicum)",
-      "register_id": 302651,
-      "location": "Courtyard of the Atrechtcollege, Naamsestraat 63, Leuven",
-      "reason": "Genuinely remarkable and locally famous (a KU Leuven economists' study valued it at EUR 1.3-2.5 million, protected as a monument since 1974, one of the first two specimens of the species grown in Belgium from Japanese seed circa 1800) but stands on the inner courtyard (binnenkoer) of the Atrechtcollege, now KU Leuven's International Office. Both a direct fetch of a Leuven Actueel article and the register's own wording confirm it is on the courtyard, not visible from or reachable from Naamsestraat. No source found stating the courtyard is open to visitors. Fails hard rule 10 / the 'can they get in without asking anyone's permission' test. Revisit only if evidence of open courtyard access to the public turns up."
-    },
-    {
-      "candidate": "Twee opgaande beuken 'Quercoides' (two rare bark-oak beeches, Fagus sylvatica 'Quercoides')",
-      "register_id": 133352,
-      "location": "Restant van park Bodart, behind Parking Bodart, Veilingweg, Leuven",
-      "reason": "The rarest find of the pass (the thicker of the two, girth 404cm, is recorded as the thickest of its rare variety in Flanders) but the register's own context tag for this record is 'private parken' (private parks), and the site is described as an overgrown remnant of a demolished 1889 villa's park, with its more accessible northern half already paved over as a car park in the 1990s. No source found describing public access to the remaining fragment. Blocked on the register's own private-land classification, not merely on doubt."
-    },
-    {
-      "candidate": "Ginkgo biloba 'Pendula' bij herenhuis / Twee Robinia's bij herenhuis",
-      "register_id": [
-        307877,
-        307917
-      ],
-      "location": "Brusselsestraat 190, Leuven",
-      "reason": "Register's own wording places both 'bij herenhuis' (at a private mansion/townhouse); no evidence of public grounds or visiting access found."
-    },
-    {
-      "candidate": "Ginkgo biloba in tuin Blauwe Schuit",
-      "register_id": 307867,
-      "location": "Vismarkt 16, Leuven",
-      "reason": "Register's own wording places it 'in tuin' (in a garden), i.e. a private garden behind a Vismarkt address; no evidence of public access found."
-    },
-    {
-      "candidate": "Plataan bij Sint-Annacollege",
-      "register_id": 42174,
-      "location": "Naamsestraat 37-39 / Sint-Michielsstraat 7-11, Leuven",
-      "reason": "Another KU Leuven college site of the same type as the blocked Atrechtcollege tree; no evidence found that its grounds are open to the public. Not researched further given the pass's four-candidate limit; worth checking on a future pass rather than assumed blocked."
-    }
-  ]
+ "leads": [
+  {
+   "candidate": "Kruidtuin champion trees (Gewone plataan 5.47m girth / 33.8m; Tulpenboom 4.88m girth / 29.2m; Moerascipres; Mammoetboom)",
+   "location": "Stedelijke Kruidtuin, Kapucijnenvoer 30, Leuven",
+   "coordinates": {
+    "latitude": 50.8783,
+    "longitude": 4.6906
+   },
+   "reason": "The Kruidtuin is confirmed free and open year-round (site is a protected heritage garden itself, entry 42252) and is Belgium's oldest botanical garden (1738), a strong candidate site. Figures for its champion trees only turned up via search-engine AI summaries citing monumentaltrees.com; monumentaltrees.com itself 403'd every curl attempt and its Cloudflare challenge did not clear in a live browser session either, so per the rulebook ('a search summary is a lead, never a source') none of those girth/height figures were used. The garden's own centuries-old elm (planted at its 1826 opening) fell in a June 2026 storm and is confirmed dead, so it cannot be used. No individual Kruidtuin specimen is separately listed in the Onroerend Erfgoed inventory. Worth a return pass: view monumentaltrees.com's Kruidtuin page in a real browser session (their disclaimer permits verification-only use), or find the garden's own tree list/audio guide script.",
+   "lat": 50.8783,
+   "lng": 4.6906,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
+  },
+  {
+   "candidate": "Filosofenfontein grey alder (Alnus incana), and its swamp cypresses (Taxodium distichum incl. cultivar Pendens)",
+   "register_id": 300821,
+   "location": "Filosofenfontein, Waversebaan 352, Heverlee, Leuven",
+   "coordinates": {
+    "latitude": 50.8513,
+    "longitude": 4.6739
+   },
+   "reason": "The best evidence found this pass and NOT shipped, on access grounds alone. The Onroerend Erfgoed register entry for this site (a former Dominican retreat house domain, now a lay faith community's ontmoetingshuis) quotes a proper dendrological source (BAUDOUIN J.C. e.a., Bomen in Belgie: Dendrologische inventaris 1987-1992, Belgische Dendrologische Vereniging, 1992, p.337) plus its own field survey of 16 October 2002: a grey alder (Alnus incana) with a 205cm girth at 150cm height, stated to be 'far and away the thickest registered specimen in Belgium' (veruit het dikste geregistreerde exemplaar in Belgie), and a swamp cypress cultivar (Taxodium distichum Pendens) at 344cm. That is a genuine national superlative with a real, checkable published source, which is rare. BLOCKED FOR NOW because OpenStreetMap's own routing data tags the access road to this address (way 390045508, 'Weg naar Filosofenfontein') access=private, service=driveway, and no source found in this pass states the pond/garden grounds themselves are open to casual visitors; the site functions as a Dominican-founded lay community's retreat house (evening programmes open to interested people, registration desired) rather than a public park. Fails the 'can they get in without asking anyone's permission' test on current evidence. Worth a direct email to info@filosofenfontein.be asking whether the garden itself is open to walk-in visitors; if yes, this is an easy, excellent addition.",
+   "lat": 50.8513,
+   "lng": 4.6739,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
+  },
+  {
+   "candidate": "Calvary spruces at the Begijnhofkerk (Sint-Jan-de-Doper), Groot Begijnhof",
+   "register_id": 125415,
+   "location": "Churchyard of the Begijnhofkerk, Groot Begijnhof, Leuven",
+   "reason": "Register text (from the 1971 Bouwen door de eeuwen heen survey, not updated since for this detail) mentions 'Calvarie van circa 1500 in de schaduw van drie grote sparren' (a circa-1500 Calvary in the shade of three large spruces) in the churchyard. The Groot Begijnhof itself is genuinely and freely public (UNESCO site, KU Leuven-owned open quarter with public streets running through it), so access is not the problem here. Not shipped because the tree description is 55 years old with no girth, no age, and no confirmation the spruces still stand; spruces are not long-lived and this reads as exactly the kind of stale claim the rulebook warns against reviving without fresh evidence. A future pass should check a recent photo of the Begijnhofkerk churchyard (Sint-Jan-de-Doper) before pursuing this further; also checked and found nothing individually notable: Abdij van Park (public, freely accessible, but the register and a Natuurpunt search turned up only an orchard, an avenue and a 2026 newly-planted linden, no veteran specimen); the British and De Jacht cemeteries in Heverlee (public, register text describes only generic boundary tree screens, birches and a fan-shaped grave layout, no named tree)."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Japanse honingboom 'Boom van 't Groot Verdriet' (Japanese pagoda tree, Styphnolobium japonicum)",
+   "register_id": 302651,
+   "location": "Courtyard of the Atrechtcollege, Naamsestraat 63, Leuven",
+   "reason": "Genuinely remarkable and locally famous (a KU Leuven economists' study valued it at EUR 1.3-2.5 million, protected as a monument since 1974, one of the first two specimens of the species grown in Belgium from Japanese seed circa 1800) but stands on the inner courtyard (binnenkoer) of the Atrechtcollege, now KU Leuven's International Office. Both a direct fetch of a Leuven Actueel article and the register's own wording confirm it is on the courtyard, not visible from or reachable from Naamsestraat. No source found stating the courtyard is open to visitors. Fails hard rule 10 / the 'can they get in without asking anyone's permission' test. Revisit only if evidence of open courtyard access to the public turns up."
+  },
+  {
+   "candidate": "Twee opgaande beuken 'Quercoides' (two rare bark-oak beeches, Fagus sylvatica 'Quercoides')",
+   "register_id": 133352,
+   "location": "Restant van park Bodart, behind Parking Bodart, Veilingweg, Leuven",
+   "reason": "The rarest find of the pass (the thicker of the two, girth 404cm, is recorded as the thickest of its rare variety in Flanders) but the register's own context tag for this record is 'private parken' (private parks), and the site is described as an overgrown remnant of a demolished 1889 villa's park, with its more accessible northern half already paved over as a car park in the 1990s. No source found describing public access to the remaining fragment. Blocked on the register's own private-land classification, not merely on doubt."
+  },
+  {
+   "candidate": "Ginkgo biloba 'Pendula' bij herenhuis / Twee Robinia's bij herenhuis",
+   "register_id": [
+    307877,
+    307917
+   ],
+   "location": "Brusselsestraat 190, Leuven",
+   "reason": "Register's own wording places both 'bij herenhuis' (at a private mansion/townhouse); no evidence of public grounds or visiting access found."
+  },
+  {
+   "candidate": "Ginkgo biloba in tuin Blauwe Schuit",
+   "register_id": 307867,
+   "location": "Vismarkt 16, Leuven",
+   "reason": "Register's own wording places it 'in tuin' (in a garden), i.e. a private garden behind a Vismarkt address; no evidence of public access found."
+  },
+  {
+   "candidate": "Plataan bij Sint-Annacollege",
+   "register_id": 42174,
+   "location": "Naamsestraat 37-39 / Sint-Michielsstraat 7-11, Leuven",
+   "reason": "Another KU Leuven college site of the same type as the blocked Atrechtcollege tree; no evidence found that its grounds are open to the public. Not researched further given the pass's four-candidate limit; worth checking on a future pass rather than assumed blocked."
+  }
+ ]
 }

@@ -13,7 +13,10 @@
    "species": "London Plane (Platanus x acerifolia)",
    "coordinate": "53.209503, 5.790241",
    "why_lead": "LRMB register nr 1692402, planted band 1850-1860, 'pad tussen afdeling 2 en 4', about 30m from the already-published lee_004 (LRMB nr 1692403, 'pad tussen afdeling 2 en 3', age 1840-1850) in the same cemetery. Register-only, one source; no second independent source found in this pass naming a second plane specifically. Owner=gemeente, visitable=ja, visible=nee.",
-   "source": "https://www.monumentalebomen.nl/"
+   "source": "https://www.monumentalebomen.nl/",
+   "lat": 53.209503,
+   "lng": 5.790241,
+   "position_basis": "recovered from the lead's own `coordinate` field (field)"
   },
   {
    "name": "Pluimiep Vosseparkje (x2)",
@@ -27,14 +30,20 @@
    "species": "Canadian Poplar (Populus x canadensis)",
    "coordinate": "53.200901, 5.784892",
    "why_lead": "LRMB register nr 1692404, planted band 1890-1900, west side of Vosseparkje. Register-only. This pass (2026-09-09) checked the same two HCL PDFs (walking-tour and MONUMENTAAL GROEN brochure) and WebSearch directly; no independent mention of a Canadese populier specifically in Vosseparkje/Westerpark found (the brochure's Prinsentuin stop describes a DIFFERENT Canadian poplar, the already-published lee_007 Marilandica poplar). Second source found: none this pass. Owner=gemeente, visitable=ja, visible=onbekend.",
-   "source": "https://www.monumentalebomen.nl/"
+   "source": "https://www.monumentalebomen.nl/",
+   "lat": 53.200901,
+   "lng": 5.784892,
+   "position_basis": "recovered from the lead's own `coordinate` field (field)"
   },
   {
    "name": "Kaukasische/Perzische eik, zuidoostelijke ingang Vosseparkje",
    "species": "Oak, species uncertain (Quercus sp., possibly Q. macranthera or Q. castaneifolia)",
    "coordinate": "53.20107, 5.786676",
    "why_lead": "LRMB register nr 1686956, planted band 1870-1880, at the south-east entrance of Vosse/Westerpark. Register-only; species itself is ambiguous in the register name. This pass (2026-09-09) checked the same two HCL PDFs and WebSearch directly; no independent mention found. Second source found: none this pass. Owner=gemeente, visitable=ja, visible=ja.",
-   "source": "https://www.monumentalebomen.nl/"
+   "source": "https://www.monumentalebomen.nl/",
+   "lat": 53.20107,
+   "lng": 5.786676,
+   "position_basis": "recovered from the lead's own `coordinate` field (field)"
   },
   {
    "name": "Unnamed large tree beside the Vosseparkje wingnut ('Goudes...', possibly a golden ash or similar golden-leaved cultivar)",
@@ -48,7 +57,10 @@
    "species": "European Beech (Fagus sylvatica)",
    "coordinate": "53.198909, 5.794349",
    "why_lead": "LRMB register nr 1682938, planted band 1860-1870, setting 'tuin' (garden). The register's place name combines the old Rijksscholengemeenschap (a 19th-century secondary school on the Zaailand, per nl.wikipedia's Rijks Hogere Burgerschool article, designed by T.A. Romein) with 'Gerechtshof', Leeuwarden's historic Palace of Justice/Court of Appeal building nearby, also a Romein design. The coordinate sits near the modern Zaailand square (redeveloped around 2012 with underground parking) and the Willemskade/Zuiderstraat streets, which OSM shows as ordinary public streets and a pedestrian square with no private-access tags nearby. However, the register's own 'tuin' setting suggests the tree may stand in a courtyard behind the school/courthouse building rather than on the open square itself, and courthouses commonly restrict courtyard access even where the surrounding streets are public. This pass (2026-09-10) could not settle it: an Overpass query for building/amenity tags at the exact coordinate timed out (the host was rate-limiting) and was not retried. Needs either a successful OSM check, a photo showing the tree's actual setting, or a site visit before it can ship either way.",
-   "source": "https://www.monumentalebomen.nl/"
+   "source": "https://www.monumentalebomen.nl/",
+   "lat": 53.198909,
+   "lng": 5.794349,
+   "position_basis": "recovered from the lead's own `coordinate` field (field)"
   },
   {
    "name": "Gewone beuk achter De Koperen Tuin, Prinsentuin",
