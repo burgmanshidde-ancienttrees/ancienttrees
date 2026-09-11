@@ -1,6 +1,17 @@
 {
  "leads": [
   {
+   "name": "Unidentified tree, near Omiya Gate area (submission 100)",
+   "species": null,
+   "location": {
+    "latitude": 35.01452,
+    "longitude": 135.75093,
+    "neighbourhood": "914m from kyo_016/kyo_019 (Omiya Gate, Kyoto Gyoen), the nearest published trees; too far to assign confidently to either"
+   },
+   "reason": "Reader submission #100 (contribute form, kind tree, app:collect), 2026-09-11, same account as submissions 98/99: a bare GPS pin ('GPS, standing at the tree'), no name, species or photo. Nearest published tree is over 900m away, so this cannot be assigned to an existing entry or named from coordinates alone. Needs a name, species or photo from the submitter before this can become a candidate.",
+   "sources": []
+  },
+  {
    "name": "Unidentified tree, Higashiyama (submission 98)",
    "species": null,
    "location": {

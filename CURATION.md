@@ -11,6 +11,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - Two unprocessed submissions (100, 101): a third GPS-only Kyoto lead, a plain worth-it vote
+
+Submission #100 (kind `tree`, `page: app:collect`, same account as 98/99): another
+bare GPS pin near Kyoto Gyoen with no name, species or photo, 914m from the nearest
+published tree (kyo_016/kyo_019, Omiya Gate). Same shape as the two already recorded
+2026-09-10, so recorded the same way: added as a thin lead to `data/leads/kyoto.json`,
+`outcome: open_question` set on the row, and this time a `reply_text` was actually
+composed (the account is answerable and the prior two were left without one), asking
+for a name, species or photo. Submission #101 (kind `feedback`, `why: "worth it"`) on
+Tamba's tmb_001: a plain positive vote, no free-text complaint, nothing to check
+against sources. Set `outcome: holds`, no reply needed, matching the standing pattern
+(Utrecht #63, Amsterdam #40, Sardinia #39, Rome). Both ids added to
+`data/submissions-processed.json`.
+
 ## 2026-09-11 (continuation) - Lausanne, Minneapolis, Salamanca, Spokane opened; Monterey deepened to 3
 
 Merged the results of a verify pass an earlier attempt this window left
