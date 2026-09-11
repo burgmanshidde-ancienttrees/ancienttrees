@@ -1,6 +1,49 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (continuation 2) - Finished a stalled write pass, scouted two registers, added 3 trees
+
+The previous attempt this window stopped after 44 minutes with 76 minutes
+still unspent, leaving one claim standing (cagliari, verify) and a partly
+written batch file. Picked that up first per the wake-up brief.
+
+**Finished the banked write pass** (`data/research/batch-writes-20260911.json`):
+cag_014's story was already written; wrote stories and recognise lines for
+spk_007 (Dwight's Linden) and spk_008 (The Massive Miyabe), merged all three
+into `data/cities/`. Cagliari's argan (cag_014) sits 14m from the already-
+published cag_011 by a shared garden-centre placeholder pin; checked by
+hand, confirmed not a duplicate (different species, no shared register id,
+preflight's own duplicate check agreed). Fixed a pre-existing stale-count
+bug in Cagliari's English and Italian copy while updating for the 14th tree
+(the walkable-cluster count had been wrong since before this pass; recomputed
+from actual coordinates: 10 of 14, not the old 8/9-of-13). Released the
+cagliari claim.
+
+**Scouted two cities named by `scout_next.py --target`.** Granada (#56):
+no city-specific register beyond the already-imported Andalusian one; found
+a 2020 local-press survey naming 12 trees, 8 already published, checked the
+other 4 (a 1998 pomegranate, a dead elm, a confirmed-dead legendary Generalife
+cypress, and a thin Science Campus pinsapo lead with no measurements yet).
+Recorded EMPTY in `register-scouting.json`, two new leads filed.
+
+Spokane (#66): traced the Heritage Tree Register everyone had been quoting
+by name for two passes to its actual ArcGIS endpoint, saved all 19 entries
+to `data/registers/spokane-heritage-trees.json` (no licence stated, usable
+as a layer-1 source, not a layer-2 import). Cross-checking the full register
+against our data found two entries already published under different names
+(no action needed) and one new one, the Treaty Tree, a Ponderosa Pine tied
+to an 1858/1887 treaty story and the Baptiste Peone homestead. It got a real
+second source (HistoryLink Essay 10030) but stays a lead: no confirmed
+public access to what was private homestead land, and the two sources
+disagree on the treaty date. Claimed and released spokane for a verify pass;
+delivered spk_010, the Saw-leaf Zelkova of Webster Park, on the register plus
+an independent HistoryLink photo credit (species name corrected from
+"Japanese Zelkova" to the site's canonical "Saw-leaf Zelkova", caught by
+preflight's hard-rule-9 check). Spokane now has 9 trees.
+
+Nothing FOR HIDDE. All work merged, built, QA'd and pushed; no BLOCKER in
+REVIEW.md, health.py rung 2 was clear at the start of this window.
+
 ## 2026-09-11 (continuation) - Finished and merged 4 banked cities: Lausanne, Minneapolis, Salamanca, Spokane; deepened Monterey
 
 An earlier attempt this window claimed Lausanne, Salamanca, Spokane, Boise,
