@@ -82,19 +82,16 @@
       "status": "resolved"
     },
     {
-      "name": "Milan's other Villa Litta planes",
+      "name": "Villa Litta's two unmeasured planes (register sheets 14 and 15)",
       "species": "Platanus x acerifolia",
-      "girth_cm": 550,
-      "height_m": 43,
       "location": {
-        "latitude": 45.516944,
-        "longitude": 9.166111
+        "latitude": 45.516925,
+        "longitude": 9.167047
       },
       "sources": [
-        "MASAF national register, Viale Affori - Villa Litta Modignani (550 cm / 43 m and 480 cm / 38 m, plus two entries with no girth at 30 m and 28 m)",
-        "https://milanoaffori.it/parco-villa-litta-affori-tra-i-piu-antichi-di-milano/"
+        "MASAF national register, Villa Litta - Viale Affori, sheet 14/F205/MI/03 (no girth, height 28 m) and sheet 15/F205/MI/03 (no girth, height 30 m, at 45.515147,9.166122)"
       ],
-      "why_not_published": "The register holds four Villa Litta plane entries and the comune publishes pages for two of them; only the Siamese survives the identification test cleanly. The 43 m specimen is the tallest registered tree in Milan and is almost certainly one of the surviving 18th-century planes a local history source describes as still standing 'oltre i trenta metri', but no source ties a name, a page or a photograph to a specific coordinate, and one of these four rows may well be the tree felled in 2015. Do not publish any of them until a site visit or a current municipal inventory says which is which. UPDATE 2026-09-07 verify pass: confirmed via the register file directly that the four MASAF rows are genuinely distinct sheet ids (14, 15: no girth, 28m/30m; 23: 550cm/43m; 24: 480cm/38m), none of them at the same coordinate as mil_015's approximate pin (nearest is sheet 14 at 69m, sheet 15 at 257m), so this is not simply mil_015 restated under different sheet numbers. Tried to find a name or photo for sheet 23 (the 43m one) specifically: WebSearch for 'Villa Litta Affori platano 43 metri' and 'comune.milano.it Villa Litta alberi monumentali' returned only the already-known felled-1773-tree page and general park history, no page distinguishing the four register rows. Direct fetch of comune.milano.it's monumental-tree page (both the it/ and newly found en/ URL paths) 403s to WebFetch on both. milanoaffori.it now serves an 'Access Blocked, IP Not Allowed' page to curl from this environment (previously fetchable). No Wayback snapshot exists for the comune page. Still unresolved; still a lead, not blocked. A future pass with different network access or a browser session (per the monumentaltrees.com precedent) is the next real avenue, not another text search."
+      "why_not_published": "RESOLVED AS FAR AS THIS CAN GO 2026-09-11: sheets 23 and 24 (550cm/43m and 480cm/38m, about 12m apart) were distinct enough from mil_015 (140-150m away) to publish as mil_024, folded into one entry per the register-twins rule; see data/cities/milan.json. These two remaining rows are the harder case and stay a lead. Sheet 14 sits only 69m from mil_015's own (already approximate) pin, and mil_015's own notes admit its pin is itself about 70m off the nearest register point, so sheet 14 may simply BE mil_015 restated rather than a fourth distinct tree; sheet 15 sits 257m off and carries no girth at all to distinguish it from anything. Neither carries a name, a comune page, or a measurement. Note for a future photo pass: two CC BY-SA 4.0 Commons images (Platano comune a02.jpg, a03.jpg, Alberto Panzani 2018) are geotagged exactly at sheet 15's coordinate (45.515147,9.166122), already flagged unusable on mil_015's own record for the same reason; they would need a girth or a second angle before they could illustrate anything here. UPDATE 2026-09-11 verify pass: comune.milano.it's monumental-tree index now loads fine under a NEW url path (aree-tematiche/verde/manutenzione-progettazione/alberi-monumentali/, browser user agent, 200 OK) and lists exactly the same 13 named trees the city has always published (the old /argomenti/... path 403s, apparently retired rather than newly blocked); no page exists for sheets 14 or 15 there. it.wikipedia's 'Alberi monumentali della Lombardia' list carries four Villa Litta Modignani rows (650/500/450/590 cm, 35/35/30/30 m) but cites the same politicheagricole.it/MASAF dataset at a different scrape date, so it is not an independent source and does not resolve which row is which. milanoaffori.it not retried this pass (previously 'Access Blocked, IP Not Allowed'). Needs a site visit, a dated aerial/orthophoto pass distinguishing two crowns near this coordinate, or a park map; not a text-search problem any more."
     },
     {
       "name": "Monumental trees in the wider metropolitan area",

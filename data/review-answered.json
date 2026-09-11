@@ -58,8 +58,8 @@
       "at": "2026-09-09T08:37:25+00:00"
     },
     "2026-09-11": {
-      "note": "Fixed both WARNs (empty 'Photo: ' credit caption, self-repeating 'The X: X in City' title) in commit ef66e113, before this window's health check.",
-      "at": "2026-09-11T13:04:46+00:00"
+      "note": "Both WARNs already fixed in current code/build, verified by grepping built HTML: PhotoFigure.astro already guards null creditText (no figcaption emitted for kyo_019 etc), and title fallback already produces 'X in City' not 'The X: X in City' for the three flagged Manchester/Munich trees. No source change needed; likely fixed same-day after the review ran.",
+      "at": "2026-09-11T18:24:53+00:00"
     }
   }
 }
