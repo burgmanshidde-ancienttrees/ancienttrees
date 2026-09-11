@@ -56,6 +56,22 @@ account, 14 device.
 
 Build clean (5360 pages), qa clean (8357 pages), preflight 0 problems.
 
+**Later the same session, two mail fixes.** Hidde, on the thank-you he got for a
+tree he had added in the app, which closed by pointing him at the App Store:
+"onder deze mail hoeft geen verwijzing naar de app." Right, and it is the rule
+this file already followed for a published photograph: a link to the thing in
+your hand is not an invitation. A thank-you to somebody writing from inside the
+app now ends without it; everybody else still gets his standing 2026-09-03 line.
+
+**And the bug that fix uncovered: the "it is on the site now" mail has never been
+sent, not once, since 2026-09-03.** The auto-composed change confirmation
+carried no App Store link, mailcheck has required one on every letter since that
+morning, and the run prints HOLD and moves on, so a reader whose tip we acted on
+heard nothing. It carries the line now, and an app user's copy declares
+`audience: app user` in the draft header the way sightings_publish.py does, so
+the check passes without inviting somebody to an app they are holding. Both
+variants verified against mailcheck.
+
 **FOR HIDDE:** the app half is written but NOT built or swept: no Mac in this
 session, so Xcode never ran. The website half is verified. The app changes are
 small and mechanical (one new optional property on TreeDetail, one extra hero

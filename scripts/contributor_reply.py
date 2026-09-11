@@ -203,6 +203,17 @@ def tip_lines(row):
     return [head] + ([url] if url else [])
 
 
+def from_the_app(rows):
+    """Whether every one of these came from inside the app.
+
+    The `page` column carries where the submission was made, and the app
+    writes "app" into it. One place decides it now, because two branches were
+    reading the same thing and only one of them acted on it.
+    """
+    return bool(rows) and all((r.get("page") or "").startswith("app")
+                              for r in rows)
+
+
 def thanks_body(rows_for_addr, addr=None):
     """The thank-you, saying which tree it is about.
 
@@ -257,9 +268,19 @@ def thanks_body(rows_for_addr, addr=None):
     # are holding.
     if addr and addr.lower() in NO_APP_LINK:
         pass
-    elif all((r.get("page") or "").startswith("app") for r in rows_for_addr):
-        out += ["We would like to know what you think of the app:", "",
-                APP_STORE_URL, ""]
+    elif from_the_app(rows_for_addr):
+        # NOTHING. Hidde, 2026-09-11, on a thank-you he got for a tree he had
+        # added in the app, which closed by pointing him at the App Store:
+        # "onder deze mail hoeft geen verwijzing naar de app."
+        #
+        # It used to send the shorter form, on the reasoning that somebody
+        # holding the app can still be asked what they think of it. That was
+        # the wrong read of the same instruction this file already follows for
+        # a published photograph (sightings_publish.py): a link to the thing
+        # in your hand is not an invitation, it is a letter that has not
+        # noticed who it is writing to. His 2026-09-03 instruction was that
+        # the app is live, so TELL PEOPLE, and these people know.
+        pass
     else:
         out += ["Our app is also live now. We would like to know what you "
                 "think of it:", "", APP_STORE_URL, ""]
@@ -286,10 +307,16 @@ def supa(path, key, method="GET", body=None):
         return json.loads(raw) if raw else None
 
 
-def mailcheck_ok(text):
-    """Run mailcheck.py on the draft; nonzero exit means hold it."""
+def mailcheck_ok(text, app_user=False):
+    """Run mailcheck.py on the draft; nonzero exit means hold it.
+
+    `app_user` declares that this one goes to somebody writing from inside the
+    app, which is what exempts it from the App Store line. The declaration
+    sits in the header, above the --- separator, so it never reaches the
+    reader; sightings_publish.py says it the same way.
+    """
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as f:
-        f.write("draft\n---\n" + text)
+        f.write("draft\n" + ("audience: app user\n" if app_user else "") + "---\n" + text)
         path = f.name
     try:
         out = subprocess.run([sys.executable,
@@ -430,6 +457,7 @@ def main():
             # select did not even carry, and which holds the referrer rather
             # than the tree: a reader who arrived from Google would have been
             # sent a link to Google.
+            low_addr = addr.lower()
             page = tip_link(r)
             if not page and r.get("city"):
                 page = "%s/%s" % (SITE, r["city"].strip().lower().replace(" ", "-"))
@@ -444,14 +472,23 @@ def main():
             lines += ["",
                       "Have a look and tell us if anything is still wrong. And "
                       "if you know another tree worth adding, we would like to "
-                      "hear about it.",
-                      "", "Ancient Trees", "https://ancienttrees.app"]
+                      "hear about it.", ""]
+            # THE STANDING APP LINE, which this mail never carried, so
+            # mailcheck held every single one of them from the day the line
+            # became standing (2026-09-03) until this was found on 09-11. The
+            # symptom was invisible: the run prints HOLD and moves on, so a
+            # reader whose tip we acted on was told nothing at all. Same rule
+            # as the thank-you above, including the exemptions.
+            if not (low_addr in NO_APP_LINK or from_the_app([r])):
+                lines += ["Our app is also live now. We would like to know "
+                          "what you think of it:", "", APP_STORE_URL, ""]
+            lines += ["Ancient Trees", "https://ancienttrees.app"]
             r["reply_text"] = "\n".join(lines) + "\n"
             supa("/rest/v1/submissions?id=eq.%s" % r["id"], key, "PATCH",
                  {"reply_text": r["reply_text"]})
             print("AUTO composed a change confirmation for row %s" % r["id"])
         if r.get("reply_text") and not r.get("replied_at"):
-            ok, report = mailcheck_ok(r["reply_text"])
+            ok, report = mailcheck_ok(r["reply_text"], app_user=from_the_app([r]))
             if not ok:
                 print("HOLD reply for row %s: mailcheck says:\n%s"
                       % (r["id"], report))
