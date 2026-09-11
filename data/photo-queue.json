@@ -16493,8 +16493,9 @@
      "url": "https://commons.wikimedia.org/wiki/File:Access_balconies,_Henszlmann_street_7.,_2018_Belv%C3%A1ros-Lip%C3%B3tv%C3%A1ros.jpg",
      "licence": "CC BY-SA 3.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Globetrotter19\" title=\"User:Globetrotter19\">Globetrotter19</a>",
-     "judged": "rejected: viewed as pixels, the access balconies of the Henszlmann utca 7 apartment block, no tree",
-     "judged_date": "2026-08-09"
+     "judged": "reject",
+     "judged_date": "2026-08-09",
+     "verdict": "Looked at the file: a photograph of a building's access balconies, not the Count's Mulberry or any tree."
     },
     {
      "title": "File:Henszlmann street 7., courtyard, 2018 Belváros-Lipótváros.jpg",
@@ -59676,7 +59677,9 @@
      "lat": 35.312825,
      "lng": 139.533657,
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Japan photographs taken on 2008-04-19 Category:Nagomi-Jizo Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 551200",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Looked at the file: a Jizo statue among garden shrubs, not the Crabapple of Kosokuji. Generic panoramio street-scene match."
     },
     {
      "title": "File:Fukusuke etc in shop window 2025 6 30.jpeg",
@@ -74188,7 +74191,7 @@
      "lng": 5.658501,
      "cats": "Category:2025 in Helmond Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Molenstraat, Helmond Category:North Brabant photographs taken on 2025-02-23 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400",
      "judged": "reject",
-     "verdict": "LOOKED at the pixels: a street-corner shop building, not a tree at all. Matched by street name only, 695m from the pin."
+     "verdict": "Looked at the file: a photograph of a house/shopfront at Molenstraat 196, no tree in frame at all. Matched on street name only."
     },
     {
      "title": "File:Helmond Molenstraat 201-203.jpg",
@@ -74230,7 +74233,7 @@
      "lng": 5.658501,
      "cats": "Category:2025 in Helmond Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Molenstraat, Helmond Category:North Brabant photographs taken on 2025-02-23 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400",
      "judged": "reject",
-     "verdict": "LOOKED at the pixels: a street-corner shop building, not a tree at all. Matched by street name only, 662m from the pin."
+     "verdict": "Same file as rejected for hlm_012 (also matched here by street name): a house/shopfront, no tree in frame."
     },
     {
      "title": "File:Helmond Molenstraat 201-203.jpg",
@@ -97345,7 +97348,9 @@
      "author": "B222",
      "lat": 51.566581,
      "lng": 5.077917,
-     "cats": "Category:CC-BY-SA-4.0 Category:Dutch-language signs in the Netherlands Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Ginkgo biloba in the Netherlands Category:Ginkgo biloba leaves Category:Images containing text available in image description Category:Information boards about trees Category:Self-published work Category:Wilhelminapark (Tilburg)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Dutch-language signs in the Netherlands Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Ginkgo biloba in the Netherlands Category:Ginkgo biloba leaves Category:Images containing text available in image description Category:Information boards about trees Category:Self-published work Category:Wilhelminapark (Tilburg)",
+     "judged": "reject",
+     "verdict": "Looked at the file: it is a photograph of an information sign reading 'Ginkgo Biloba', not the Weeping Silver Lime (til_017). Wrong species entirely, a filename-matching miss."
     },
     {
      "title": "File:IMG 20171005 183320 Wilhelminapark Tilburg fallen leaf Ginkgo Biloba.jpg",
