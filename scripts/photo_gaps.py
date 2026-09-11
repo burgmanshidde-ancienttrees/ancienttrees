@@ -304,35 +304,43 @@ def demand_cities():
 PHOTO_FLOOR = 5
 
 
-def shortlist(limit, demand=False):
+def shortlist(limit, demand=True):
     """What to view next.
 
-    Two modes, because this project holds two of Hidde's rules about photos
-    and only one of them had ever been scripted.
+    DEMAND IS THE DEFAULT since 2026-09-11, on Hidde's ruling, and the reason
+    is that the two rules turned out not to compete at all.
 
-    The DEFAULT is coverage: a city with no photograph at all, five trees or
-    more, biggest first. That is the standing aim of 2026-08-17 and it is
-    unchanged.
+    The old default was coverage: a city with no photograph, five trees or
+    more. That is his 2026-08-17 aim and it is not retired. What the switch
+    answers is a worry he raised about it and was right to: does aiming at
+    demand abandon the cities that have nothing? Measured the day he asked:
 
-    `--demand` is rule two of the course (CLAUDE.md, 2026-08-12): photos go to
-    cities that clear 10 impressions and nowhere else. Coverage had quietly
-    eaten it, because `c["photos"] == 0` excludes a city the moment it gains
-    its first photograph, and every city with measured readers has one.
-    Measured 2026-09-11 across the nine cities the newest digest allows depth
-    on: all nine were invisible here, and between them they hold 228 trees
-    with no photograph. Brussels is the sharpest case, 4 photographs against
-    31 trees on the site's second largest page by impressions, 15 of the gaps
-    standing in one park.
+        coverage lane   54 cities, 7 of them with a candidate worth viewing
+        demand lane    176 cities, 53 with one
+        in both          7
 
-    It matters because the payoff is measured rather than assumed.
-    scripts/seolearn.py, same digest: a city page whose trees are 40 percent
-    photographed converts at index 0.77, one with none at 0.47. Brussels sits
-    at 13 percent, which is the 0.50 bucket.
+    Those two sevens are the same seven cities. EVERY coverage city where a
+    viewing pass could still do anything is already in the demand list, so
+    demand is a superset rather than a rival. The other 47 are blocked on
+    supply and no ordering fixes that: 24 are swept with candidates none of
+    which passes the plant gate, 20 have an empty queue, 3 were never swept.
+    Their medicine is photo_last_resort.py (the same question with the plant
+    filter off) and famous_trees.py (trees that arrive carrying a photograph),
+    neither of which is a shortlist.
 
-    Neither mode is the right one. Coverage lights up pages nobody has found
-    yet; demand makes the pages people already find worth clicking. The switch
-    exists so the choice is made rather than inherited from whichever rule got
-    written down as code.
+    What demand adds is where the readers are. CLAUDE.md's rule two of the
+    2026-08-12 course sends photos only to cities clearing 10 impressions, and
+    `photos == 0` had silently excluded every one of them, because a city with
+    readers has always got its first photograph already. The nine cities the
+    digest allowed depth on held 228 photo-less trees and were invisible here.
+
+    The payoff is measured rather than assumed. scripts/seolearn.py, 2026-09-10
+    digest: a city page whose trees are 40 percent photographed converts at
+    index 0.77 against 0.47 for one with none. Brussels sat at 13 percent, on
+    the site's second largest page by impressions.
+
+    `--coverage` still prints the old list. It is the right call again the day
+    the last-resort and famous-tree lanes have refilled those 47 queues.
     """
     q = queue()
     if demand:
@@ -548,7 +556,8 @@ def main():
     ap.add_argument("--shortlist", action="store_true")
     ap.add_argument("--famous", action="store_true")
     ap.add_argument("--conflict", action="store_true")
-    ap.add_argument("--demand", action="store_true")
+    ap.add_argument("--coverage", action="store_true",
+                    help="the old default: cities with no photograph at all")
     ap.add_argument("--photo-only", action="store_true", dest="photo_only")
     ap.add_argument("--per-city", type=int, default=3, dest="per_city")
     ap.add_argument("--limit", type=int, default=20)
@@ -617,8 +626,8 @@ def main():
         print("\n  python3 scripts/photo_gaps.py --shortlist   what to view next")
         return 0
 
-    rows = shortlist(a.limit, demand=a.demand)
-    if a.demand:
+    rows = shortlist(a.limit, demand=not a.coverage)
+    if not a.coverage:
         print("\nVIEWING SHORTLIST, cities Search Console says have readers,")
         print("most impressions first. No per-city cap: the aim is a city's")
         print("photo SHARE, which seolearn measures as the difference between")
