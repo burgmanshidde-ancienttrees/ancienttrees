@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Zwolle pulled down its fortifications and made a ring of parks out of the earth, which is why almost every old tree in the city is standing on a seventeenth century rampart. The best of them is a plane on the Potgietersingel: 33.6 metres tall with a trunk 719 centimetres round, which are measured figures rather than estimates. The oldest is a beech in the grounds of a small country house outside town, where Rhijnvis Feith, poet and mayor of Zwolle, spent his free time writing and in 1799 published an ode to the place in 34 verses.",
-  "meta_description": "Seven remarkable trees in Zwolle: a plane 33.6 metres tall on a 17th-century rampart, and a beech in the grounds a mayor wrote a 34-verse ode about.",
+  "meta_description": "14 remarkable trees in Zwolle: a plane 33.6 metres tall on a 17th-century rampart, and a beech in the grounds a mayor wrote a 34-verse ode about.",
   "question_meta": "Zwolle's oldest tree is a beech at Park Boschwijk, banded 1750 to 1800. The tallest is a 33.6 metre plane on the Potgietersingel.",
   "question_answer": "The oldest tree in Zwolle is a beech on the west side of the beech avenue in Park Boschwijk, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. Boschwijk is a small country house just outside the city, and its most famous owner was Rhijnvis Feith, who lived from 1753 to 1824 and was both a poet and mayor of Zwolle. He came here in his free time to write, and in 1799 he published an ode to Boschwijk running to 34 verses. The beech was already a young tree when he was writing, which makes it one of the very few things named in this city that Feith could plausibly have walked past.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements, and the beech at Boschwijk carries a band fifty years wide. The plane on the Potgietersingel is the exception: the register gives it a measured height of 33.6 metres and a trunk girth of 719 centimetres, and those two numbers are the firmest facts on this page. The register is the 2024 edition and is the single source for all seven, which is why they are all flagged. One pattern worth knowing before you walk: the singels and the Park Eekhout are laid out on the city's former defensive works, so the ground under these trees is made ground rather than natural soil. That matters for the trees at Boschwijk and at the Kranenburg cemetery, where the register places the tree in a row or a section rather than at a spot, and where a pin is marked approximate we know the grounds and not the trunk. If you find one of these gone, tell us and it comes off the same day.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements, and the beech at Boschwijk carries a band fifty years wide. The plane on the Potgietersingel is the exception: the register gives it a measured height of 33.6 metres and a trunk girth of 719 centimetres, and those two numbers are the firmest facts on this page. The register is the 2024 edition and is the single source for the first seven found here, which is why those are all flagged. A second batch of seven, cross-checked against the municipality's own protected-tree ordinance, mostly still carries a flag where the two disagree on age or exactly which tree is meant. The singels and Park Eekhout sit on the city's former defensive works, made ground rather than natural soil, which is why several pins there mark a row rather than a trunk. If you find one of these gone, tell us and it comes off the same day.",
   "hero_tree_id": "zwo_001",
   "oldest_tree_id": "zwo_002",
   "faq": [
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All seven. The Potgietersingel, the Park Eekhout, the Van Nahuysplein and the Kranenburg cemetery are public, and Park Boschwijk is open ground east of the city."
+      "a": "Yes, all free. Most stand on public ground: the singels, Park Eekhout, Ter Pelkwijkpark, the Van Nahuysplein, the Kranenburg cemetery and Park Boschwijk. Three grow on private land at Groot Wezenland and beside a restaurant in Wipstrik, but the national register itself records them as visible from where the public can stand."
     }
   ],
   "trees": [
@@ -275,6 +275,232 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "zwo_008",
+      "name": "The Turkey Oak of the Coehoornsingel",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "roughly 100 years, from a planting date around 1920-1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Menno van Coehoornsingel, Zwolle",
+        "latitude": 52.514971,
+        "longitude": 6.099208,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712",
+        "https://www.inaturalist.org/observations/372240194"
+      ],
+      "access": "Free. Stands on a public green strip (plantsoen) along the singel, owned by the municipality.",
+      "transport": "About 1.5 km north of Zwolle station, roughly 18 to 20 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Zwolle's own list of special trees names exactly one Turkey oak in the whole city. This is it.\n\nEverything else along the Menno van Coehoornsingel is what a Dutch town plants: limes, beeches, pedunculate oaks. Quercus cerris belongs to southern Europe and Asia Minor, which means somebody chose it deliberately, around 1920 to 1930 by the register's reckoning. The street carries the name of Menno van Coehoorn, the engineer who rebuilt the fortresses of the Dutch Republic against Louis XIV. His earthworks around Zwolle came down in the nineteenth century and the ground was handed to garden designers. This oak went in on that made ground, into a defensive ring that had already been converted into somewhere to walk.\n\nThe species gives itself away once you know the tells. Leaves cut into deep, irregular, sharply pointed lobes where the native oak is rounded, and buds sitting in a nest of long thin whiskers. The acorn cups wear the same whiskers, which is why the other name for the tree is the mossy-cupped oak.\n\nThe national register lists it as municipal property, protected for dendrological reasons rather than for size or age, which is an unusually honest entry: it is here because it is rare, not because it is enormous. A naturalist photographed and identified it in June 2026, so it is more than a line in a database.",
+      "how_to_recognise": "You can recognise it by the leaves, cut into deep sharply pointed lobes where every other oak on this street is rounded. It stands on the public green strip along the Menno van Coehoornsingel, the only Turkey oak the city's register lists.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_009",
+      "name": "The Copper Beech of Groot Wezenland",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 140 years, from a registered planting date around 1880-1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Groot Wezenland 37, Zwolle",
+        "latitude": 52.512244,
+        "longitude": 6.1016,
+        "neighbourhood": "Groot Wezenland, edge of Assendorp"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://zwolle.bestuurlijkeinformatie.nl/Document/View/80c2fa94-c63e-4111-a585-45cd4e1a4f03"
+      ],
+      "access": "Privately owned, but the national register itself records it as visitable and visible ('visitable: ja, visible: ja'); it stands close to a residential complex near the old canal ring. This has not been independently walked or OSM-checked, so a reader confirming exactly how close one can stand would help.",
+      "transport": "About 1.4 km northeast of Zwolle station, roughly 17 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A fence went up beside this beech, and the tree has been taking it in ever since.\n\nThe national register says so in its own note: growing space here is tight, and sections of fence have grown into the trunk. That is less dramatic than it sounds and more inevitable. A tree lays a new layer of wood over its entire surface every year and cannot step sideways, so anything left leaning against it long enough ends up inside it. Give a beech a hundred and forty years and it will swallow railings, chains and signs without noticing.\n\nThe register puts the planting between 1880 and 1890, on private ground beside a housing complex just off the line of Zwolle's old canal ring. Copper beech was the strong colour of that period of Dutch planting, a mutation of the common beech that has to be grafted rather than grown from seed, and it went wherever a scheme needed its darkest tone. This one has held that job through two world wars and the rebuilding of the street around it.\n\nZwolle's own 2015 list of special trees records it as well, surveyed by a different office entirely: rode beuk, monumental, privately owned. Two registers, one tree, no argument between them.\n\nWhat neither of them settles is how close a visitor can actually stand. If you have been, tell us.",
+      "how_to_recognise": "You can recognise it by the dark purple foliage and by the sections of fence grown into the trunk. It stands on private ground beside the housing complex at Groot Wezenland, just off the line of the old canal ring.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_010",
+      "name": "The Beech of Ter Pelkwijkpark",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "disputed: register says roughly 140 years, the municipality's 2024 list says roughly 95 years",
+      "age_min": 96,
+      "age_max": 146,
+      "location": {
+        "address": "Ter Pelkwijkpark, Zwolle",
+        "latitude": 52.512138,
+        "longitude": 6.098773,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712"
+      ],
+      "access": "Free. Public park (Ter Pelkwijkpark), owned by the municipality, open to all.",
+      "transport": "About 1.3 km northeast of Zwolle station, roughly 15 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two official bodies have dated this beech and they are fifty years apart.\n\nThe national register of monumental trees puts the planting between 1880 and 1890. Zwolle's own 2024 list of special trees, describing the same species in the same park under the same municipal ownership and the same monumental status, says 1930. Neither is a guess by us and neither gets dismissed here. Both are the work of people who went and looked, decades apart, and the honest answer is that this tree is somewhere between about 95 and 145 years old.\n\nThe gap changes what it lived through. On the register's dating it was already a substantial tree when German troops entered Zwolle in May 1940. On the municipality's it was a ten year old sapling that grew up through the occupation and the Canadian liberation of the city in April 1945.\n\nWhat is not in dispute is that it is the odd one out. Ter Pelkwijkpark is an oak park: more than a dozen pedunculate oaks carry register entries here, a dense municipal stand of one species. This beech is the only one of its kind among them, which makes it the easiest tree in the park to find and the hardest to date.\n\nIf anyone has a girth measurement, it would settle the argument.",
+      "how_to_recognise": "You can recognise it as the only beech in a park of oaks: smooth grey bark instead of furrowed, and oval leaves with wavy edges rather than lobes. It stands among the dozen registered pedunculate oaks of Ter Pelkwijkpark.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when it turns copper and russet"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_011",
+      "name": "The Plane of the Badhuiswal",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "disputed: register says roughly 160 years, the municipality's 2024 list says roughly 75 years",
+      "age_min": 76,
+      "age_max": 166,
+      "location": {
+        "address": "Badhuiswal, next to the former Party restaurant Zizi, Zwolle",
+        "latitude": 52.514654,
+        "longitude": 6.100569,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712"
+      ],
+      "access": "Free. Stands on the public Badhuiswal, owned by the municipality.",
+      "transport": "About 1.6 km north of Zwolle station, roughly 19 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This plane is either about 160 years old or about 75, and the two official sources may not be describing the same tree at all.\n\nThe national register carries a gewone plataan on the Badhuiswal planted between 1860 and 1870, owned by the municipality, rated monumental. Zwolle's own 2024 list carries a plane on the Badhuiswal planted in 1950, owned by the municipality, rated a tier lower at waardevol. Same street, same owner, same species, ninety years of daylight between them. The Badhuiswal is a short quay and it holds several registered planes and oaks, so the likeliest reading is that two surveys walked past two different trees.\n\nThe dating decides what it has seen. On the earlier one it went in while Zwolle was pulling down its old defences and rebuilding the ground as a ring of water and planting, and it has stood on this quay through every war since. On the later one it is a postwar tree, planted into a city five years out of occupation.\n\nGirth would settle it in about a minute, because a plane of 160 years and a plane of 75 are not remotely the same size, and nobody has published a measurement for this one. If you walk past with a tape, tell us what it says.",
+      "how_to_recognise": "You can recognise it by the bark, flaking off in cream and olive plates like camouflage, and by the bristly seed balls that hang on all winter. It stands on the Badhuiswal beside the building that was Party restaurant Zizi.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_012",
+      "name": "The Copper Beech of the Badhuiswal",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "disputed: register says roughly 160 years, the municipality's 2024 list says roughly 115 years",
+      "age_min": 116,
+      "age_max": 166,
+      "location": {
+        "address": "Badhuiswal, near the bridge known as Stenen Pijp, Zwolle",
+        "latitude": 52.514811,
+        "longitude": 6.09995,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712"
+      ],
+      "access": "Free. Stands on the public Badhuiswal, owned by the municipality.",
+      "transport": "About 1.6 km north of Zwolle station, roughly 19 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The purple is a mask. A copper beech leaf is loaded with anthocyanin, which sits over the chlorophyll and hides it, so the green is still down there doing the work while the tree looks almost black from across the water.\n\nThis one stands on the Badhuiswal, a few steps from the bridge Zwolle calls the Stenen Pijp. Both bodies that have surveyed it call it monumental and municipal property, and both name the copper form rather than the plain beech. They differ only on the date. The national register bands the planting 1860 to 1870; the city's own 2024 list writes it as Fagus sylvatica Atropunicea and puts it at 1910. Same species, same status, same owner, so this is one tree recorded twice with fifty years of uncertainty attached to it. Call it somewhere between 115 and 165 years old and let a girth measurement decide later.\n\nEither dating has it standing on this quay before the first cars came down it, and through the occupation and liberation of the city in the 1940s.\n\nCome in the first half of May rather than midsummer. The new leaves open thin and translucent red, lit from behind, and hold that for a week or two before the pigment thickens and the whole crown settles into its usual near black purple.",
+      "how_to_recognise": "You can recognise it by the dark purple foliage and the smooth grey bark. It stands on the Badhuiswal beside the bridge known as the Stenen Pijp, a few dozen metres from the quay's big plane.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "early May, when the new leaves open translucent red before darkening"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_013",
+      "name": "The Plane by Restaurant Urbana",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly a century, from planting dates recorded between 1910 and 1930",
+      "age_min": 96,
+      "age_max": 116,
+      "location": {
+        "address": "Wipstrikkerallee 213, next to the former restaurant Urbana (now Loetje), Zwolle",
+        "latitude": 52.506317,
+        "longitude": 6.12369,
+        "neighbourhood": "Wipstrik"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712"
+      ],
+      "access": "Privately owned grounds, but the register records it as visitable and visible; it stands beside a long-running restaurant building (Urbana, now Loetje) fronting the Wipstrikkerallee, so it is plausible it can be seen from the street or terrace, but this has not been independently walked or OSM-checked.",
+      "transport": "About 2.3 km southwest of Zwolle station, roughly 27 minutes on foot; a bus or short bike ride is quicker.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register says this plane was already standing when the tea house opened. The city's list says the tea house got here first.\n\nVilla Urbana began serving on the Wipstrikkerallee in 1924, an inn and tea house on a long avenue leading out of Zwolle, and it is still a restaurant today under the name Loetje. The national register of monumental trees bands the plane beside it at 1910 to 1920, which puts the tree a few years ahead of the building. Zwolle's own 2024 list records the same species on the same street under the same private ownership and dates it to 1930, which puts it a few years behind. Everything else in the two entries lines up, so the tree is roughly a century old and only the order of arrival is unsettled.\n\nIts condition is not in doubt, and the register is blunt about it: growth and vigour have diminished. This is a plane with a hundred years of roadside city life behind it and a crown that has thinned, rather than one in its prime.\n\nGo for the pairing instead. It stands with a copper beech at a corner of the avenue where people have been sitting outside with a drink for a century.",
+      "how_to_recognise": "You can recognise it as the plane of the pair by the restaurant: mottled bark flaking in pale plates and broad maple-shaped leaves, where its neighbour is a dark purple beech. It stands beside the former Urbana tea house, now Loetje.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_014",
+      "name": "The Copper Beech by Restaurant Urbana",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "disputed and species detail uncertain: register says roughly 160 years, the municipality's 2024 list may describe a different, younger private beech on the same street",
+      "age_min": 86,
+      "age_max": 166,
+      "location": {
+        "address": "Wipstrikkerallee 213, in front of the former restaurant Urbana (now Loetje), Zwolle",
+        "latitude": 52.506042,
+        "longitude": 6.123456,
+        "neighbourhood": "Wipstrik"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712"
+      ],
+      "access": "Privately owned grounds; visitability and visibility are unrecorded ('onbekend') in the national register. Given it stands in front of the same restaurant building as zwo_013, it is plausible it is street-visible, but this is not confirmed.",
+      "transport": "About 2.3 km southwest of Zwolle station, roughly 27 minutes on foot; a bus or short bike ride is quicker.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The national register lists this beech, gives it monumental status, and then leaves two boxes blank. Can you visit it: unknown. Can you see it: unknown.\n\nWhat the entry does say is specific. A bruine beuk, a copper beech rather than a plain one, on private ground at the Wipstrikkerallee, planted between 1860 and 1870. That dating would make it a grown tree well before Villa Urbana opened as a tea house next door in 1924, and by some distance the oldest thing at this corner of the avenue.\n\nThe corroboration is thinner than we would like. Zwolle's 2024 list of special trees records no copper beech on this street at all. It does record a private plain beech here, dated 1940, which is either the same tree written up loosely by a different surveyor or an entirely different one, and the avenue holds more than a dozen registered beeches, so either is possible. The age therefore sits in a wide band, somewhere between about 85 and 165 years.\n\nBoth questions come apart with one visit. Purple leaves mean the register has it right, green leaves mean it does not, and either way you will know whether you can stand in front of it. Tell us which.",
+      "how_to_recognise": "You can recognise it by the purple foliage, which is what separates it from the plain green beeches further along the avenue. It stands in front of the former Urbana tea house, now Loetje, with the big plane beside the building.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

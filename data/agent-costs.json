@@ -7444,6 +7444,24 @@
     "tokens": 265000,
     "trees": 7,
     "note": "deepened Zwolle from LRMB register; found and cross-referenced Zwolle's own 2015+2024 municipal tree registers as second sources, plus one dated iNaturalist observation; 2 candidates lack a 2nd source (leads), 2 blocked (private/unreachable garden, avenue tree with no distinguishing landmark)"
+   },
+   {
+    "target": "zwolle",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 7,
+    "note": "7 register-backed Zwolle deepen trees written from verified notes (4 carry stated two-source age disputes, 2 best_time set from existing species phenology); merged into data/cities/zwolle.json (7 -> 14 trees)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "indianapolis+saopaulo+busan+monterey",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 5,
+    "note": "merged 4 stranded verify-and-write passes into data/cities under the single-famous-tree exception (Indianapolis 1, Sao Paulo 1, Busan 2, Monterey trimmed to 1 of 3); fixed a hard-rule-9 species collision in Busan and a stale Zwolle tree-count promise; regenerated tree-index.json, preflight/superlatives/build/qa all clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
