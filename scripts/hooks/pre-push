@@ -11,6 +11,10 @@
 # within a week. The slow half is CI's job and the brief now makes its verdict
 # unmissable. This is only the checks that cost nothing:
 #
+#   crossdevice every place either surface keeps something is named in
+#               data/cross-device.json with a verdict: it hangs under the
+#               account and lives on the server, or it belongs to this device.
+#               A new store has to say which (Hidde, 2026-09-11).
 #   netcheck    every network call goes through Kit/Net.swift, so every one of
 #               them can have the network taken away by a test
 #   check-lists the screen sweep and the layout gate agree on the screen list
@@ -72,7 +76,7 @@ for f in $PITCH; do
     fi
 done
 
-echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark))' || exit 0
+echo "$CHANGED" | grep -qE '^(ios/|site/src/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|crossdevice|darkcheck|map_style_dark))' || exit 0
 
 fail=0
 for check in \
@@ -80,6 +84,7 @@ for check in \
     "scripts/appsweep.py --check-lists" \
     "scripts/icon_check.py" \
     "scripts/conventioncheck.py" \
+    "scripts/crossdevice.py" \
     "scripts/darkcheck.py" \
     "scripts/map_style_dark.py --check"
 do

@@ -390,10 +390,12 @@ function initMine() {
             'circle-stroke-color': ['case', ['==', ['get', 'got'], 1], '#F6F2E9', '#4A6B2A']}});
   map.on('click', 'mine-tree', function(e) {
     var p = e.features[0].properties;
+    // A tree only you have may have no page at all: sharing is what gives it
+    // one, and somebody who turned that off has no url to point at.
     new maplibregl.Popup({offset: 12})
       .setLngLat(e.features[0].geometry.coordinates)
       .setHTML('<strong>' + p.name + '</strong><br>' + p.city +
-               '<br><a href="' + p.url + '">See this tree &rarr;</a>')
+               (p.url ? '<br><a href="' + p.url + '">See this tree &rarr;</a>' : ''))
       .addTo(map);
   });
   map.on('click', 'mine-clusters', function(e) {

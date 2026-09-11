@@ -277,7 +277,14 @@ struct ContentView: View {
         switch route {
         case .tree(let id):
             if let t = cat.tree(id) {
-                TreeDetail(tree: t, catalogue: cat, origin: origin)
+                // YOUR OWN PHOTOGRAPH OF IT, when you ticked it off with one.
+                // `Sightings.forTree` had been written and never called, so a
+                // photograph taken at one of our trees went up to the account
+                // and appeared on no screen (2026-09-11). It fills the slot
+                // only where we have no picture of our own; see TreeDetail's
+                // `myShot`.
+                TreeDetail(tree: t, myPhoto: sightings.forTree(t.id),
+                           catalogue: cat, origin: origin)
             } else {
                 ContentUnavailableView("That tree is no longer on the map",
                                        systemImage: "tree",
@@ -360,7 +367,8 @@ struct ContentView: View {
                     // plus) and `checkmark.circle` for the ones ticked off.
                     stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
-                            TreeDetail(tree: t, catalogue: cat, origin: origin)
+                            TreeDetail(tree: t, myPhoto: sightings.forTree(t.id),
+                                       catalogue: cat, origin: origin)
                         } else {
                             MapTab(catalogue: cat, origin: origin,
                                    located: location.coordinate != nil || debugOrigin != nil,
@@ -841,6 +849,17 @@ struct ContentView: View {
                 await myVotes.load(account: account)
                 for (tree, vote) in myVotes.byTree {
                     UserDefaults.standard.set(vote, forKey: "at_worthit_\(tree)")
+                }
+                // And what this account has already REPORTED, for the same
+                // reason: the report entry on a tree page reads these two keys
+                // and, until 2026-09-11, only ever found what this phone had
+                // tapped. The website has read them off the same rows all
+                // along, so the two surfaces disagreed on a second device.
+                for tree in myVotes.reported {
+                    UserDefaults.standard.set("reported", forKey: "at_wrong_\(tree)")
+                }
+                for tree in myVotes.detailed {
+                    UserDefaults.standard.set(true, forKey: "at_wrong_detail_\(tree)")
                 }
                 if let remote = profiles.me?.units {
                     units.unit = remote == "mi" ? .imperial : .metric

@@ -18,6 +18,19 @@ struct TreeDetail: View {
     /// de eindgebruiker de velden kan invullen"). A second screen for your own
     /// trees would drift from this one inside a week.
     var mine: Sightings.Sighting? = nil
+    /// YOUR photograph of one of OUR trees, which is a different thing from
+    /// `mine` and must not be confused with it: `mine` means this whole page is
+    /// a tree only you have, and it turns on editing, deleting and sharing it.
+    /// This one is a picture and nothing else.
+    ///
+    /// It exists because the picture was going nowhere (2026-09-11). Ticking a
+    /// tree off with a photograph writes a sighting carrying that tree's id;
+    /// `Sightings.yoursOnly` filters those out of your list by design, and
+    /// `forTree` had no caller at all, so the photograph went up to the account
+    /// and was then shown on no screen of either surface. Hidde asked the
+    /// obvious question of his own Sudajii photograph: "waarom zie ik hier niet
+    /// de foto die ik heb gemaakt in de app bij m'n eigen boom."
+    var myPhoto: Sightings.Sighting? = nil
     let catalogue: Catalogue
     /// Where the phone thinks it is, for the walking view. Defaults to the
     /// tree itself, which is honest when nobody has given us a location: the
@@ -445,6 +458,16 @@ struct TreeDetail: View {
         }
     }
 
+    /// Your own photograph, where there is one to show. OURS WINS where we
+    /// publish one: the Google Maps reading, where the place keeps its own
+    /// picture and yours is yours (CONVENTIONS.md). So this only ever fills an
+    /// empty slot, and the website's account page does the same.
+    private var myShot: UIImage? {
+        if let m = mine { return sightings.image(m) }
+        guard tree.photo == nil, let m = myPhoto else { return nil }
+        return sightings.image(m)
+    }
+
     /// The photograph, or the species drawn, edge to edge. AllTrails leads every
     /// route with a picture and it is most of why their pages feel like an
     /// invitation rather than a database record.
@@ -518,7 +541,7 @@ struct TreeDetail: View {
                     .buttonStyle(.plain)
                     .accessibilityLabel("Open the full map")
                 }
-        } else if let m = mine, let shot = sightings.image(m) {
+        } else if let shot = myShot, mine != nil {
             // Your own photograph, from Documents rather than the network. The
             // same empty box with the picture laid over it as below, for the
             // same reason: an unbounded image drags the whole page sideways.
@@ -579,6 +602,42 @@ struct TreeDetail: View {
                     .overlay(alignment: .topLeading) { addPhotoButton }
 
             }
+        } else if let shot = myShot {
+            // A TREE OF OURS THAT NOBODY HAS PHOTOGRAPHED, AND YOU HAVE
+            // (2026-09-11). 2,000-odd of ours carry no picture, and the person
+            // reading this page is the one who stood in front of this one and
+            // took one. Until today that photograph reached the account and no
+            // screen: the slot below drew a species mark instead.
+            //
+            // LABELLED, in the same words the website's card uses, because
+            // every other picture on this page is one we publish under a
+            // licence and nobody should have to guess which of the two they
+            // are looking at.
+            Color.clear
+                .frame(height: 300)
+                .overlay {
+                    Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
+                }
+                .clipped()
+                .accessibilityElement(children: .combine)
+                .accessibilityIdentifier("tree-your-photo")
+                .accessibilityLabel("Your photograph of this tree")
+                .overlay(alignment: .bottomLeading) {
+                    Text("Your photograph")
+                        .font(.brand(12, .semibold, relativeTo: .caption))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 9)
+                        .padding(.vertical, 5)
+                        .background(.black.opacity(0.62), in: .capsule)
+                        .padding(10)
+                }
+                .overlay(alignment: .bottomTrailing) {
+                    Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap.toggle() } } label: {
+                        MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Show this tree on the map")
+                }
         } else {
             // The whole empty frame is the door to the camera, on a tree of
             // ours that nobody has photographed (Hidde, 2026-08-26). The map
@@ -1343,7 +1402,7 @@ struct TreeDetail: View {
     /// which is what the page shows full size in that case.
     @ViewBuilder private var photoInset: some View {
         Group {
-            if let m = mine, let shot = sightings.image(m) {
+            if let shot = myShot {
                 Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
             } else if let p = tree.photo, let url = p.card {
                 TreePhoto(url: url) { Brand.surfaceMuted }

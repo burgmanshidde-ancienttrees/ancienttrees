@@ -11,6 +11,58 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session) - The photograph you take in the app now shows on the tree, and everything under the account was audited for it
+
+**Hidde, on his own account page: "waarom zie ik hier niet de foto die ik heb gemaakt in de app bij m'n eigen boom, alles moet cross device beschikbaar zijn wat onder je account hangt. Check of dit voor alles geldt."**
+
+**What was wrong, and it was not the sync.** The photograph had reached the
+account days earlier, file and all. Ticking off a tree WE map writes a sighting
+carrying that tree's id, and nothing ever showed those rows: the app filters
+them out of your list by design (`Sightings.yoursOnly` keeps `treeId == nil`)
+and `Sightings.forTree`, written for exactly this, had no caller anywhere; the
+website drew them as cards of their OWN, below our card for the same tree, which
+showed no photograph at all, and counted that tree twice in the numbers at the
+top. So the picture existed on the server and on no screen.
+
+**Fixed on both surfaces, to the references' rule** (Google Maps, iNaturalist,
+AllTrails, recorded in CONVENTIONS.md): the place keeps its own picture and
+yours is yours, labelled. Ours has 2,000-odd trees with no picture at all, which
+is not a state Google Maps is ever in, so **your photograph fills an empty slot,
+marked "Your photograph", and where we publish one, ours stays.**
+`TreeDetail.myShot` in the app, `my-trees-js.ts` on the website. One tree, one
+card, counted once. Rendered and LOOKED at, at 375px and desktop, against a
+stubbed account holding exactly his case.
+
+**Your own trees are on the profile map now too.** The app's Collect map has
+always drawn them beside the ticked ones; the website drew only ours.
+
+**The audit found two more, both in the same corner.** (1) **Votes never
+travelled in the app**: `MyVotes.load` keyed them on the submissions row's
+`tree` column, written as "id (name)", while every view reads `at_worthit_<id>`,
+so the restore at launch wrote a key nothing reads. The website, which matches
+on the id prefix, was right all along. (2) **A report was read back as a vote**:
+everything that was not "worth it" counted as a thumb down, including "report:
+wrong location", on a page whose thumb down was removed on 2026-09-04. Both
+fixed; reports now travel as reports. Everything else came back clean: saves,
+ticks, sightings, display name and avatar, blocks, units, follows.
+
+**And a check, because "everything" is the kind of promise that rots.**
+`scripts/crossdevice.py` refuses a store nobody has ruled on: every key the app
+writes to UserDefaults and the website to localStorage has to be named in
+`data/cross-device.json` as `account` (and which table carries it) or `device`
+(and why staying here is right). Same move as conventioncheck: it cannot judge
+the answer, only whether anybody asked. In the pre-push hook. 25 stores, 6
+account, 14 device.
+
+Build clean (5360 pages), qa clean (8357 pages), preflight 0 problems.
+
+**FOR HIDDE:** the app half is written but NOT built or swept: no Mac in this
+session, so Xcode never ran. The website half is verified. The app changes are
+small and mechanical (one new optional property on TreeDetail, one extra hero
+branch, two call sites, the MyVotes keying), and `ios.yml` will build and
+measure them on its next scheduled run. Worth a look on your own phone at a tree
+you have photographed: the picture should now be at the top of its page.
+
 ## 2026-09-11 - New city Tulsa (1 tree), 159 trees got a real best_time for free, 13 country pages' stale counts fixed, and a batched verify pass cleared 5 thin cities
 
 7-day visits (`visitors.py`): 1264 visits, 1593 page views, trending down day over day (202 on 09-03 to 83 on 09-10).
