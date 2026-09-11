@@ -1,0 +1,49 @@
+[
+  {
+    "id": "bal_003",
+    "name": "The Cockspur Hawthorn of Cylburn Arboretum",
+    "species": "Cockspur Hawthorn (Crataegus crus-galli)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Cylburn Arboretum, 4915 Greenspring Ave, Baltimore, MD 21209 (exact spot within the 207-acre grounds not pinned this pass; not one of the 17 specimens on the arboretum's own printed 'Notable Trees' map, so it stands somewhere else on the property)",
+      "latitude": 39.3525,
+      "longitude": -76.65278,
+      "neighbourhood": "Cylburn, northwest Baltimore"
+    },
+    "verified_sources": [
+      "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/ (Baltimore Sun guest commentary, 29 Nov 2023, by a named tree tour guide describing a walk through Cylburn Arboretum: calls this tree 'Cylburn's only remaining state champion' and describes it firsthand in late autumn as 'leafless but teeming with berry-like fruit called haws', with 'long sharp thorns that resemble a giant's toothpick' -- a specific, physically checkable eyewitness description, not a copied stat)"
+    ],
+    "access": "Free, public city-owned arboretum (Baltimore City Department of Recreation and Parks / Cylburn Arboretum Friends). Open daily except Mondays, no admission charge, per Wikipedia's Cylburn Arboretum article and the arboretum's own trail map.",
+    "transport": "Northwest Baltimore, accessible by MTA Bus Route #1; parking on site.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE SOURCE this pass, shipped per Step 2's explicit rule that a single-sourced tree ships flagged rather than being held back. Tried and failed to get a second source or exact location in the time available: (1) Cylburn Arboretum Friends' own official 'Notable Trees' map (cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf), which letter-codes 17 specimens A-Q with approximate positions relative to the Mansion/Visitor Center/Greenhouses, does NOT include this hawthorn -- it lists a Castor Aralia (Kalopanax pictus) as the arboretum's STATE Champion (point O on that map) instead, which conflicts with the Sun's 2023 'only remaining state champion' description of the hawthorn. Read together, the two most likely explanations are that the printed map (undated on its face, hosted since at least 2013) is simply older than 2023 and the Castor Aralia has since died or lost its state-champion status, or that the map was never a complete list of every champion on the grounds. Either way, DO NOT independently repeat the Castor Aralia's 'State Champion' label as current fact without rechecking it (left as a separate lead below). (2) The Maryland Big Tree Program's own database (mdbigtrees.org, 'Tree Listings'/'State Champion Trees') is JS-rendered and would not return tree-level data to this pass's fetch tool; a future pass with a JS-capable fetch or the ability to query its underlying data could likely get exact circumference/height/crown and possibly a precise location, which would let this tree's location_precision move from approximate to confirmed. (3) TreeBaltimore's own notable-trees page mentions an interactive ArcGIS 'Notable Tree Map' for the whole city but the page fetched did not surface a Cylburn/hawthorn entry directly; the ArcGIS web app itself (arcgis.com webappviewer id d2cfbbe9a24b4d988de127852e6c26c8) was not queryable with the tools available this pass. No girth or height figure was found anywhere this pass; the Sun's description is purely visual/seasonal (bare branches, red haws, long thorns), which is itself decent 'alive and observed recently' evidence (Nov 2023) even without measurements. location_precision is approximate at the arboretum's own address/coordinate, honestly short of pinning which part of the 207-acre grounds holds it."
+  },
+  {
+    "id": "bal_004",
+    "name": "The Paperbark Maple of Cylburn Arboretum",
+    "species": "Paperbark Maple (Acer griseum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Cylburn Arboretum, 4915 Greenspring Ave, Baltimore, MD 21209, near the Visitor Center (marked point 'A' on the arboretum's own printed trail map, close to the parking area and Greenspring Ave entrance)",
+      "latitude": 39.3525,
+      "longitude": -76.65278,
+      "neighbourhood": "Cylburn, northwest Baltimore"
+    },
+    "verified_sources": [
+      "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/ (Baltimore Sun guest commentary, 29 Nov 2023: names this a Baltimore City Champion, gives a champion score of 91 points, and describes it firsthand: 'exfoliating and intense cinnamon colored bark')",
+      "https://cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf (Cylburn Arboretum Friends' own official 'Notable Trees' map: point A, 'Paperbark Maple, Acer griseum, City Champion', positioned just southeast of the Visitor Center near the Greenspring Ave entrance -- an independent institutional source, not the newspaper, naming and mapping the same tree with the same champion designation)"
+    ],
+    "access": "Free, public city-owned arboretum (Baltimore City Department of Recreation and Parks / Cylburn Arboretum Friends). Open daily except Mondays, no admission charge.",
+    "transport": "Northwest Baltimore, accessible by MTA Bus Route #1; on-site parking near the Visitor Center, a short walk from point A on the arboretum's own map.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree on species and City Champion status: the Sun's 2023 firsthand description (bark colour, champion score of 91 points -- the American Forests index, trunk circumference in inches + height in feet + 1/4 average crown spread in feet, not a measurement in itself) and Cylburn Arboretum Friends' own trail map, which places it at labelled point A near the Visitor Center. No circumference, height or age figure found directly (the 91-point score cannot be reverse-engineered into any one of those three without the others, so it is not decomposed here to avoid inventing a number). Paperbark maple is a slow-growing, small ornamental species prized for its exfoliating cinnamon-coloured bark, which is the visible, checkable feature both sources independently point to. location_precision is approximate: point A on the arboretum's own map gives a specific corner of the grounds (near the Visitor Center/parking, by the Greenspring Ave entrance) rather than the full 207 acres, which is a real improvement over park-level, but this pass did not get a GPS-grade coordinate, so it is not marked confirmed. A future pass with a JS-capable fetch against the Maryland Big Tree Program's own database (mdbigtrees.org) may be able to get exact measurements and a precise coordinate for this and the hawthorn above."
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "boi_003",
+    "name": "The Anne Frank Chestnut Sapling",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "roughly 11 to 15 years old",
+    "age_min": 11,
+    "age_max": 15,
+    "girth_cm": null,
+    "location": {
+      "address": "Idaho Anne Frank Human Rights Memorial, 770 S 8th St, Boise, Idaho 83702 (also cited as 800 S 8th St by the City of Boise's own page; the memorial address is disputed between two of its own official pages, not between our sources and a third party)",
+      "latitude": 43.61259,
+      "longitude": -116.2062,
+      "neighbourhood": "Near Boise State University / Boise River Greenbelt, downtown Boise"
+    },
+    "verified_sources": [
+      "https://www.spokesman.com/stories/2009/oct/28/a-living-connection/ (Spokesman-Review, 28 Oct 2009: Boise named one of 11 US sites to receive a grafted sapling from the Amsterdam Anne Frank tree, sapling then about 3ft tall, to undergo a 2-year quarantine at a city tree nursery before planting on a grassy berm near the Frank Church memorial tablet, in sightline of the Anne Frank statue)",
+      "https://www.wassmuthcenter.org/about-the-anne-frank-memorial/ (Wassmuth Center for Human Rights, co-operator of the memorial: confirms the sapling as a prominent installation; confirms the memorial is free, open year-round dawn to dusk, at 770 S 8th St)",
+      "https://www.cityofboise.org/departments/parks-and-recreation/parks/idaho-anne-frank-human-rights-memorial/ (City of Boise's own parks page: confirms the sapling 'is planted in the Memorial', address given as 800 S 8th St)",
+      "https://commons.wikimedia.org/wiki/File:AnneFrankHumanRightsMemorialSapling.jpg (CC BY-SA 4.0 photograph dated 13 May 2017, captioned 'a sapling from the Anne Frank tree, one of only 11 in the U.S., at the Anne Frank Human Rights Memorial in Boise, Idaho' -- direct dated evidence the tree was alive and already an established juvenile by 2017)",
+      "https://en.wikipedia.org/wiki/Anne_Frank_Human_Rights_Memorial (corroborates: sapling is one of only 11 Anne Frank saplings in the US, a prominent installation at the memorial)"
+    ],
+    "access": "Free, public memorial and park. Open year-round, seven days a week, dawn to dusk (Wassmuth Center for Human Rights, which co-maintains the site with the City of Boise). No admission fee; guided tours available with 48 hours' notice.",
+    "transport": "Downtown Boise, near Boise State University and the Boise River Greenbelt; walkable from downtown.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "RECONSIDERED per this pass's brief as a 'historically significant' entry (young tree, but the significance is the direct lineage, not age or size). Grafted/grown from chestnuts of the actual tree Anne Frank could see from the Amsterdam annex window (that parent tree, roughly 150-170 years old, fell in a storm in August 2010). Idaho's Anne Frank Human Rights Memorial was one of only 11 US sites selected (alongside the White House, the 9/11 Memorial in New York, and Central High School in Little Rock AR) to receive a sapling from the joint Amsterdam Anne Frank House / Anne Frank Center USA distribution programme. Sapling arrived in Boise around October 2009 at about 3 feet tall and was required to spend roughly two years in USDA/city nursery quarantine before planting, per the Spokesman-Review's contemporary reporting -- so an EARLIEST plausible planting date is approximately 2011-2012. Multiple secondary aggregator pages (found only via search-result summaries, not confirmed by direct fetch, so treated per this project's rule that a search summary is a lead and not a source) repeat a planting year of 2015; that figure is recorded here as unconfirmed rather than fact. The directly-fetched, dated Commons photograph from 13 May 2017 shows an already-established sapling, consistent with either date. age_min/age_max above are derived from bracketing 'planted 2011-2015' against 2026, not from a single hard date; treat as broad and revise if a firm planting date surfaces. Planted on a grassy berm opposite the plaza that holds the bronze statue of Anne Frank at a window, near a stone tablet for Senator Frank Church, behind a small protective iron fence and surrounded by pink roses (per the Spokesman-Review and repeated in secondary sources). Two of the memorial's own official pages disagree on the street number (770 vs 800 S 8th St) for the same 0.81-acre site; this is an address-typo-level discrepancy, not a location dispute. Coordinate is Wikidata's own point for this specific item (Q140073086, 43°36'45.32\"N 116°12'22.32\"W) but neither fetched source states how that coordinate was derived, so it is treated as memorial-level rather than a confirmed pin on the exact sapling bed."
+  },
+  {
+    "id": "boi_004",
+    "name": "The Idaho Champion Kentucky Coffeetree of Julia Davis Park",
+    "species": "Kentucky Coffeetree (Gymnocladus dioicus)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 328,
+    "location": {
+      "address": "Julia Davis Park, Boise, Idaho (exact spot within the park not independently pinned this pass; same public park as the already-published boi_001 Bur Oak)",
+      "latitude": 43.6079,
+      "longitude": -116.2021,
+      "neighbourhood": "Julia Davis Park, central Boise"
+    },
+    "verified_sources": [
+      "https://www.newsbf.com/news/201511/20151124idahobigtreelist.pdf (Idaho Big Tree Program, University of Idaho Extension, official state champion-tree register, January 2014 edition, page 19: Gymnocladus dioicus, Kentucky coffeetree, STATE record, 41in DBH, 129in circumference, 74ft tall, 12ft 1/4-avg-crown, 215 points, 'Julia Davis Park, Boise, Ada Co., ID', nominated by R. Mahoney, 1986)",
+      "https://sites.stat.washington.edu/jaw/CAW/june-2019-id-registry-big-trees.pdf (Idaho's Registry of Champion Big Trees, 13 June 2019 edition, University of Idaho Extension, page 9: identical figures -- 41in DBH, 129in circumference, 74ft, 12ft crown, 215 points, Julia Davis Park, Boise, Ada Co., ID, R. Mahoney, 1986 -- the same record still current five years after the first document checked here, i.e. not delisted as dead or removed in the intervening period)",
+      "https://www.uidaho.edu/extension/forestry/big-trees (Idaho Big Tree Program's own general programme page, same institution/register; cited the same way boi_001 and boi_002 already cite it in this city's published file)"
+    ],
+    "access": "Free, public city park (same park as boi_001, the Julia Davis Park Bur Oak). Also home to the Boise Art Museum, Zoo Boise and Idaho State Historical Museum.",
+    "transport": "Central Boise, walkable from downtown.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Both editions of the Idaho Big Tree Program register (2014 and 2019, five years apart) carry the SAME measurements for this tree and give no address beyond the park name, no owner field (unlike the basswood and cottonwood entries in the same register, which are marked 'Private'), which is itself a soft positive sign this is on park/public land rather than someone's yard. Both documents come from the same institutional programme (University of Idaho Extension), so treat this as effectively one source republished twice rather than two independent ones; flagged accordingly, per Step 2's rule for a single-source tree. No news coverage, park signage description, or second organisation found this pass corroborating this specific specimen (checked: Boise's own 'Unique Features of Julia Davis Park' city page does not mention it). Circumference 129in = 327.66cm, rounded to 328. No age field in the register (none of Idaho's cultivated-tree entries carry one); Kentucky coffeetree is only moderately fast-growing and no growth-rate-based estimate is attempted here given no reliable published rate was checked this pass -- leave to a future pass or the reader. The species is notable in its own right: seedless ('Espresso'-type or straight species not specified by the register) Kentucky coffeetrees are increasingly planted in US cities specifically because the straight species' large seedpods are messy/mildly toxic; a wild-type record-sized specimen at 74 feet in a high desert city is a genuinely large example of a tree that struggles in Idaho's climate. Same park as the published bur oak (boi_001), so this deepens an existing cluster rather than opening new ground, in line with the clustering doctrine."
+  }
+]

@@ -1,18 +1,18 @@
 {
   "leads": [
     {
-      "name": "Cockspur Hawthorn, Cylburn Arboretum",
-      "species": "Cockspur Hawthorn (Crataegus crus-galli)",
-      "location": {"address": "Cylburn Arboretum, Baltimore", "latitude": null, "longitude": null},
-      "reason": "Named as Cylburn Arboretum's only remaining Maryland STATE CHAMPION tree in a 2023 Baltimore Sun guest commentary, but no exact location within the arboretum grounds, age or measurements were found in the time available. Cylburn Arboretum overall is a strong candidate site (city-owned historic arboretum, publicly accessible, multiple city-champion trees) worth a dedicated follow-up pass rather than a rushed single search.",
-      "source": "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/"
+      "name": "Castor Aralia (Kalopanax pictus), Cylburn Arboretum",
+      "species": "Castor Aralia (Kalopanax pictus, aka K. septemlobus)",
+      "location": {"address": "Cylburn Arboretum, 4915 Greenspring Ave, Baltimore, MD 21209, point O on the arboretum's own trail map, near the Mansion", "latitude": 39.3525, "longitude": -76.65278},
+      "reason": "Labelled Maryland STATE CHAMPION on Cylburn Arboretum Friends' own official 'Notable Trees' map (cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf, point O, near the Mansion), which would make it a strong, distinctive candidate (a rare species state champion at a named public spot). NOT PURSUED this pass because it directly conflicts with a more recent source: the Baltimore Sun's 29 Nov 2023 guest commentary calls the Cockspur Hawthorn (delivered this pass as bal_003) 'Cylburn's only remaining state champion', implying this tree had died or lost its status by 2023. The map itself is undated on its face. A future pass should check the Maryland Big Tree Program's own database (mdbigtrees.org, JS-rendered, needs a capable fetch tool) to settle which is true before ever shipping this one.",
+      "source": "https://cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf; contradicted by https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/"
     },
     {
-      "name": "Cylburn Arboretum's other city-champion trees (paperbark maple, hardy rubber tree, pond cypress, slippery elm, longleaf pine, red buckeye, Chinese fringetree)",
+      "name": "Cylburn Arboretum's other named champion/notable trees (Sugar Maple, Paw-Paw, Miyabe's Maple, Longleaf Pine -- all City Champions per the arboretum's own map; plus hardy rubber tree, pond cypress, slippery elm, red buckeye, Chinese fringetree per the 2023 Sun article)",
       "species": "various",
-      "location": {"address": "Cylburn Arboretum, Baltimore", "latitude": null, "longitude": null},
-      "reason": "All named as Baltimore City champions in the same 2023 article; none has an age, girth or precise in-arboretum location recorded from this pass. A future pass should fetch Cylburn Arboretum Friends' own tree map (cylburn.org) directly rather than relying on a guest-commentary summary.",
-      "source": "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/"
+      "location": {"address": "Cylburn Arboretum, 4915 Greenspring Ave, Baltimore, MD 21209 -- Sugar Maple at point F, Paw-Paw at point G, Miyabe's Maple at point Q, Longleaf Pine at point B on the arboretum's own map", "latitude": 39.3525, "longitude": -76.65278},
+      "reason": "Two verified and delivered this pass (bal_003 Cockspur Hawthorn, bal_004 Paperbark Maple); this pass stopped at 2 new Cylburn trees per its candidate budget. These remaining named champions are a strong, cheap next batch: the arboretum's own map (cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf) gives species, City/State Champion status and an approximate letter-coded position for most of them already, so a future pass mostly needs to confirm access/measurements rather than discover them from zero. The Dawn Redwood and Ginkgo (male and female) marked on the same map are NOT candidates: too common/young a species story respectively to clear the bar without more, per this pass's judgement, but worth a look. Maryland Big Tree Program's own database (mdbigtrees.org) would likely give exact measurements for all of these if fetched by a JS-capable tool.",
+      "source": "https://cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf and https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/"
     }
   ],
   "blocked": [
@@ -38,5 +38,5 @@
       "sources": ["https://www.cbsnews.com/baltimore/news/cylburn-arboretums-historic-60-year-old-redwood-tree-demolished-by-lightning-strike-baltimore-dawn-redwood-tree"]
     }
   ],
-  "notes": "Verification pass 2026-09-11. No Maryland/Baltimore official tree register was found (checked OPEN_DATA_SURVEY.md first, no Maryland entry). The original Wikidata lead for this city (Arbutus Oak) turned out to be dead and outside city limits; both replacement trees shipped were found via general web sweep of Baltimore-area 'notable/historic tree' coverage. Baltimore has an unusually high rate of famous trees that have recently died (three of five candidates investigated this pass), worth noting for whoever plans the next pass."
+  "notes": "Verification pass 2026-09-11. No Maryland/Baltimore official tree register was found (checked OPEN_DATA_SURVEY.md first, no Maryland entry). The original Wikidata lead for this city (Arbutus Oak) turned out to be dead and outside city limits; both replacement trees shipped were found via general web sweep of Baltimore-area 'notable/historic tree' coverage. Baltimore has an unusually high rate of famous trees that have recently died (three of five candidates investigated this pass), worth noting for whoever plans the next pass. FOLLOW-UP PASS 2026-09-11 (this pass): delivered bal_003 (Cockspur Hawthorn, Cylburn Arboretum, single-sourced/flagged) and bal_004 (Paperbark Maple, Cylburn Arboretum, two sources) to data/research/baltimore-verify-extra.json, clearing the 4-tree floor (2 banked + 2 new). Found Cylburn Arboretum Friends' own official 'Notable Trees' map (cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf), a genuine naming-body source per BRIEF_RESEARCH.md with 17 letter-coded specimens and approximate positions -- a good source for a future Cylburn-focused pass. The Maryland Big Tree Program's own database (mdbigtrees.org) exists and is the obvious source of exact measurements/coordinates for every Cylburn champion, but it is JS-rendered and returned no tree-level data to this pass's fetch tool; flagging for a future pass with a JS-capable fetch or an API route in."
 }
