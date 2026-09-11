@@ -11,6 +11,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session) - A famous-tree collection, ranked by what the world already wrote
+
+Hidde: "Moeten we een famous tree collectie maken?" Yes, and it follows straight on from the city-list change in the entry below: the 341 places that left the city grid are mostly single famous trees, and they needed a front door.
+
+**/collections/famous-trees is live, 60 trees in four bands.** Generated rather than curated (Contract D, the pattern the thickest and tallest rankings already use), so it re-ranks itself on every build and no new famous tree can be forgotten. No blueprint change and no new page type.
+
+**What it ranks on, and this is the whole quality of the page: measured fame, not felt fame.** The number of language Wikipedias that carry an article on the tree, with their summed monthly reads breaking ties. Ranking by what I have heard of is the error CLAUDE.md already records twice, once for which city to open and once for which page to translate. The floor is two languages: one article usually means a local historian did their job, two means the tree travelled. El Árbol del Tule leads with 26, the Fortingall Yew 20, the Stelmuže Oak 19.
+
+**New: `scripts/fame.py`.** The fame chain already existed for LEADS in famous_demand.py and its answers sit in data/famous-demand.json; what was missing was the join to the trees we actually publish. fame.py does that join BY DISTANCE, never by name (150 m, the same number famous_map.py uses), and writes a `fame` block onto the tree carrying the Wikidata qid and the lead name beside the number, so the next run can check it rather than trust it. 147 trees got a number; 60 clear the two-language floor.
+
+**The honest gap, and it is filled by a script rather than by remembering.** 429 of the 938 cached leads have never been resolved, General Sherman among them, and resolving needs Wikidata and the pageviews API, which this sandbox cannot reach. `prepare.py` now prints the gap and the two lines that close it at the top of every run, so the first night run with network fills it and those trees appear on the page by themselves.
+
+Build 5367 pages, qa clean (8369), preflight 0 problems, superlatives no collisions. Looked at the page rendered at 375px and 1280px.
+
+Noted in passing, not acted on: prepare.py says the writable lead pile is down to **3**, far under its own floor of 60. The night runs will run out of stories to write within one pass.
+
 ## 2026-09-11 (session) - /cities lists cities again: 241 of them, and the other 341 places get a section of their own
 
 Hidde, from his phone: "Ik zou in de city lijst wel echt cities alleen tonen en niet bomen die random in een park staan." He was looking at Australia, where Cooper Creek, Derby and the Flinders Ranges each sat with one tree in a card the same size as Brisbane's twenty.
