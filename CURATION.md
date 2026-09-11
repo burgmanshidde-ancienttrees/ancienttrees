@@ -11,6 +11,27 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - Tallinn deepened to 6: the Tammesalu Oak, Tallinn's thickest tree
+
+Verify pass on Tallinn (5 trees, rank 109, real demand: 36 impressions in the
+10-day window) found the Kadriorg register candidates were mostly already-leaded
+ornamental cultivars on residential streets, but a dendrologist's press ranking
+(Postimees 2017, corroborated by Loodusajakiri 2024 and Kadriorg Park's own site)
+named Tallinn's single thickest tree: an oak in the old Tammesalu grove, already
+substantial when Peter the Great bought the land in 1714, predating both Kadriorg
+Palace and the park built around it. Two measurements eight years apart (637cm
+2016, 648cm 2024) give a consistent, well-sourced girth-based age estimate of
+300-400 years. Shipped as tln_006, `location_precision: approximate` (no source
+gives a trunk-level GPS fix, only "the grove's northeastern part, by Kirdetiik
+pond"). Wrote the story in-session and updated the city's intro, meta description,
+question page and FAQ, all of which hard-coded "five trees" and needed the count
+bumped to six; preflight caught the resulting word-count overruns (intro, story,
+question_context) and a stale "three more" in question_meta, all fixed before
+commit. Three more single-sourced leads (2 candidate oldest-tree oaks, 1
+cemetery-park oak) banked in `data/leads/tallinn.json` for a future pass. Build,
+qa.py and preflight.py all clean. Claim released, logged in
+`data/agent-costs.json`.
+
 ## 2026-09-11 (continuation) - Sorrento deepen pass: register confirmed exhausted, 0 trees
 
 Dispatched a verify pass on Sorrento (7 trees live, rank 111, real demand: 27
