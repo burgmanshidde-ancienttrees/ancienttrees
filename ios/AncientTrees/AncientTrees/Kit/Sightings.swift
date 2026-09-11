@@ -212,6 +212,16 @@ final class Sightings {
             // unlooked at.
             rename(made.id, to: Self.demoIDs[i])
         }
+        // Two photographs of one of OUR trees, behind -mine-of=<tree id>, so
+        // the "Your photographs" row on its page and your own picture on its
+        // card can be looked at (2026-09-11). Without it they only exist on a
+        // phone that has stood under a tree.
+        if let id = args.first(where: { $0.hasPrefix("-mine-of=") })?.dropFirst(9) {
+            for i in 0..<2 {
+                record(treeId: String(id), name: "Demo", lat: lat, lng: lng,
+                       image: Self.stand_in(i), date: Date().addingTimeInterval(-86_400 * Double(i)))
+            }
+        }
     }
 
     /// The two ids `-mine-demo` always creates, so `-open=mine:<id>` can open
@@ -264,6 +274,19 @@ final class Sightings {
     }
 
     func forTree(_ id: String) -> Sighting? { all.first { $0.treeId == id } }
+
+    /// Every photograph you took of one of OUR trees, newest first.
+    ///
+    /// Hidde, 2026-09-11, after a day photographing trees in Kyoto Gyoen: "ik
+    /// kan de foto niet terugvinden van de bomen die ik heb gemaakt." They were
+    /// all recorded and all synced, and nothing in the app ever asked for them:
+    /// the tree page only showed a photograph of a tree only you have, and the
+    /// list of your own finds skips a sighting that carries our tree's id. So a
+    /// picture of one of our trees went into the app and could not be found
+    /// again anywhere in it.
+    func ofTree(_ id: String) -> [Sighting] {
+        newestFirst.filter { $0.treeId == id && $0.photo != nil }
+    }
 
     /// Whether this phone already holds it, asked by the sync before pulling a
     /// row down. The id is the phone's own, so the same sighting on two phones

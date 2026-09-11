@@ -23,9 +23,13 @@
 import SwiftUI
 
 struct PhotoViewer: View {
-    let photo: Photo
+    var photo: Photo? = nil
     let title: String
     @Binding var isPresented: Bool
+    /// A photograph on this phone rather than one of ours: your own, of a tree
+    /// you stood in front of. Same viewer and same gestures; no credit, since
+    /// nobody but you is being shown it.
+    var local: UIImage? = nil
 
     @State private var scale: CGFloat = 1
     @State private var steady: CGFloat = 1
@@ -37,7 +41,7 @@ struct PhotoViewer: View {
     /// has been asked for there is nothing to gain by dropping it again.
     @State private var wantsOriginal = false
 
-    private var original: URL? { URL(string: photo.url) }
+    private var original: URL? { photo.flatMap { URL(string: $0.url) } }
 
     var body: some View {
         ZStack {
@@ -70,7 +74,7 @@ struct PhotoViewer: View {
                     }
                     .padding(.horizontal, 8)
                     Spacer()
-                    if let credit = Photos.credit(photo) {
+                    if let photo, let credit = Photos.credit(photo) {
                         Text(credit)
                             .font(.caption2)
                             .foregroundStyle(.white.opacity(0.85))
@@ -88,13 +92,18 @@ struct PhotoViewer: View {
 
     @ViewBuilder private var picture: some View {
         ZStack {
-            TreePhoto(url: photo.full, contentMode: .fit) {
-                ProgressView().tint(.white)
-            }
-            // Laid OVER the hero rather than replacing it, so the picture never
-            // blinks back to a spinner while the big file is on its way.
-            if wantsOriginal, let original {
-                TreePhoto(url: original, contentMode: .fit) { Color.clear }
+            if let local {
+                Image(uiImage: local).resizable().aspectRatio(contentMode: .fit)
+            } else if let photo {
+                TreePhoto(url: photo.full, contentMode: .fit) {
+                    ProgressView().tint(.white)
+                }
+                // Laid OVER the hero rather than replacing it, so the picture
+                // never blinks back to a spinner while the big file is on its
+                // way.
+                if wantsOriginal, let original {
+                    TreePhoto(url: original, contentMode: .fit) { Color.clear }
+                }
             }
         }
     }

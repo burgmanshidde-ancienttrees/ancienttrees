@@ -18,6 +18,10 @@ struct TreeCard: View {
     /// lists are independent, so a heart drawn over a tree you photographed
     /// invites somebody to think it controls the thing they are looking at.
     var showHeart: Bool = true
+    /// Your own photograph of this tree, which the card wears instead of ours
+    /// in your own collection (2026-09-11): a list of the trees you stood in
+    /// front of should show the trees as you saw them.
+    var ownPhoto: UIImage? = nil
     /// ONE HEIGHT FOR EVERY CARD IN A ROW, for a card that sits in a
     /// horizontal shelf.
     ///
@@ -83,7 +87,13 @@ struct TreeCard: View {
     }
 
     @ViewBuilder private var image: some View {
-        if let p = tree.photo, let url = p.card {
+        if let own = ownPhoto {
+            Color.clear
+                .frame(height: imageHeight)
+                .overlay { Image(uiImage: own).resizable().aspectRatio(contentMode: .fill) }
+                .clipped()
+                .accessibilityHidden(true)
+        } else if let p = tree.photo, let url = p.card {
             // The same empty box with the photograph laid over it as the tree
             // page's hero, and for the same reason: a .fill image proposes the
             // width its own picture wants, and a card that does that makes the
