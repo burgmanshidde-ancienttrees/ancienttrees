@@ -4,8 +4,8 @@
   "status": "needs_curation",
   "oldest_tree_id": "spk_001",
   "hero_tree_id": "spk_001",
-  "intro": "Spokane's oldest trees survived by being useless to loggers: three Douglas firs above Mystic Falls in Indian Canyon were left standing because their tapering trunks made poor lumber, and the largest is put at roughly 400 years by the city's arborist. One small park behind the Corbin Art Center holds three of the only trees named to the city's Heritage Registry: a chestnut, an apricot and a disputed elm. Finch Arboretum adds a champion willow, America's first dawn redwoods, a pioneer-planted linden and a rare Miyabe maple, and a zelkova at Webster Park rounds out the nine.",
-  "meta_description": "400-year Douglas firs holding a canyon rim together, a state champion willow, and America's first planted dawn redwoods: 9 remarkable trees around Spokane.",
+  "intro": "Spokane's oldest trees survived by being useless to loggers: three Douglas firs above Mystic Falls in Indian Canyon were left standing because their tapering trunks made poor lumber, put at roughly 400 years by the city's arborist. A small park behind the Corbin Art Center holds three of the only trees on the city's Heritage Registry. Finch Arboretum adds a champion willow, America's first dawn redwoods, a rare Miyabe maple and a towering spruce, and three more scattered across the city round out thirteen.",
+  "meta_description": "400-year Douglas firs holding a canyon rim together, a state champion willow, and America's first dawn redwoods: 13 remarkable trees around Spokane.",
   "question_meta": "Spokane's oldest mapped trees are the Douglas Firs of Indian Canyon, put at roughly 300 to 450 years by the city's own arborist.",
   "question_answer": "Spokane's oldest mapped trees are the Ancient Douglas Firs of Indian Canyon, three old-growth firs on the cliff edge above Mystic Falls. The city's lead arborist, Jeff Perry, put the largest at around 400 years in 2019, saying his own arms could not reach a third of the way around its trunk.",
   "question_context": "The estimate rests on one account rather than a ring count: a 2019 Spokesman-Review feature in which Perry said measuring the tree properly is not really possible, because its roots are holding the edge of the cliff together. No girth has ever been published for any of the three. What makes the survival plausible is straightforward: Douglas fir with a sharply tapering trunk makes poor lumber, so logging crews that took nearly all the old growth out of the hills around Spokane left these three standing on the canyon rim. Four centuries of age would put their germination in the early 1600s, which means they were already more than two centuries old when Chief Spokane Garry, whose last campsite stood a short walk away, died in 1892. Nothing else on this page comes close to that age: the next oldest, a state-champion white willow at Finch Arboretum, is put at only 90 to 100 years, and the city says plainly it may not have thirty more.",
@@ -16,7 +16,7 @@
     },
     {
       "q": "Are Spokane's remarkable trees free to see?",
-      "a": "Yes, all nine stand in public city parks with no entry charge: Indian Canyon Park, John A. Finch Arboretum, Edwidge Woldson Park and Webster Park, though the Moore-Turner Heritage Gardens within Woldson Park keep seasonal hours."
+      "a": "Yes, all thirteen stand in public city parks with no entry charge: Indian Canyon Park, John A. Finch Arboretum, Edwidge Woldson Park, Webster Park and Chief Garry Park, though the Moore-Turner Heritage Gardens within Woldson Park keep seasonal hours."
     },
     {
       "q": "What is Spokane's Heritage Tree Registry?",
@@ -321,6 +321,131 @@
       "why_go": "One of the largest saw-leaf zelkovas in Washington by the city's own heritage register, a species uncommon enough in American parks that HistoryLink's 2012 survey of the city's notable trees singled out this same specimen independently.",
       "story": "Seven trees line the west and southwest edges of Webster Park, and the city's own heritage register singles out one of them as almost the biggest of its kind in Washington. That is a saw-leaf zelkova, a species that shows up on street-tree lists more often than it shows up this large.\n\nThe register puts it at 53 feet tall with a crown spreading 66 feet, wider than the tree is tall, which is the shape zelkova takes when it has room and time: a vase-like spread of branches fanning out from a short trunk rather than one central spire. Nobody has published its age or measured its girth. HistoryLink's 2012 survey of Spokane's notable trees independently photographed a zelkova at this same park, confirming the species stands here without needing to take the city's word for the size claim.\n\nZelkova serrata comes from Japan, Korea and eastern China, and North American cities lean on it as a substitute for the American elms that Dutch elm disease wiped out, since it takes a similar vase shape without the vulnerability. Most of the ones planted for that reason are still young. This one has had long enough to become the kind of specimen a register bothers to single out by name.",
       "how_to_recognise": "You can recognise it by the vase-shaped crown, wider than the tree is tall, fanning out from a short trunk rather than rising as one spire. It stands among six other trees on the western and southwestern edge of Webster Park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spk_011",
+      "name": "The Towering Norwegian",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "John A. Finch Arboretum, Spokane, Washington",
+        "latitude": 47.642152,
+        "longitude": -117.466827,
+        "neighbourhood": "West Spokane"
+      },
+      "verified_sources": [
+        "Spokane Heritage Tree Register (services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1)"
+      ],
+      "access": "Free, public city arboretum/park",
+      "transport": "West Spokane, off Sunset Highway; car or city bus. Same site as spk_002 (State Champion White Willow) and spk_003 (First Dawn Redwoods).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "why_go": "Spokane's Heritage Tree Register calls this Norway spruce the second tallest of its kind in the city, about 123 feet, beaten only by a spruce it names in the Rockwood Historic District.",
+      "story": "At 123 feet, Spokane's Heritage Tree Register calls this Norway spruce the second tallest of its kind in the city, and names the tree that beats it: a spruce on 26th Avenue in the Rockwood Historic District, planted in the same era and standing a few feet taller by the register's own account.\n\nNorway spruce is a European transplant, planted across American parks and gardens for its speed and its shape rather than for any native claim to the Inland Northwest. This one grows among the champions and rarities Finch Arboretum has collected since the 1940s, sharing the grounds with the state's largest white willow and two of the first dawn redwoods ever brought to the continent.\n\nOnly the register has looked at it. No second source names the tree or checks its height, so take the 123 feet as one institution's measurement rather than a settled fact, the same caution this page gives its neighbours here.\n\nIt stands a short walk from the willow and the redwoods, one more stop in an afternoon that is already worth the trip.",
+      "how_to_recognise": "You can recognise it by height alone: a single straight spire reaching roughly 123 feet, taller than the other conifers near it. It stands in Finch Arboretum, near the state champion willow.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spk_012",
+      "name": "Powerful Pine",
+      "species": "Mexican Pinyon Pine (Pinus cembroides)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "John A. Finch Arboretum, Spokane, Washington",
+        "latitude": 47.642564,
+        "longitude": -117.466409,
+        "neighbourhood": "West Spokane"
+      },
+      "verified_sources": [
+        "Spokane Heritage Tree Register (services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1)"
+      ],
+      "access": "Free, public city arboretum/park",
+      "transport": "West Spokane, off Sunset Highway; car or city bus. Same site as spk_002 (State Champion White Willow) and spk_003 (First Dawn Redwoods).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "why_go": "One of the largest Mexican pinyon pines recorded in Washington by the city's own Heritage Tree Register, a low broad-crowned pine spreading more than 40 feet on a trunk only 33 feet tall.",
+      "story": "Mexican pinyon pine belongs on a dry mountainside in the American Southwest, not in a Spokane arboretum with a state-record willow and Chinese dawn redwoods for neighbours. The city's Heritage Tree Register names this one among the largest of its kind anywhere in Washington, a low, broad-crowned pine spreading more than 40 feet across on a trunk only about 33 feet tall.\n\nThat shape is the species doing what it always does. Pinus cembroides grows slow and wide rather than tall, built for wind and drought rather than for competing with taller trees for light, which is close to the opposite of everything else growing around it at Finch Arboretum.\n\nOnly the register has recorded it, and no second account has come forward to confirm the figures or the ranking. Treat \"one of the largest in the state\" as one institution's claim rather than a settled fact, the same caution due every single-sourced tree on this page.\n\nFind it near the willow and the redwoods, a short walk that makes an afternoon of it.",
+      "how_to_recognise": "You can recognise it by its shape: low, broad and wide-crowned rather than tall, a crown spreading more than 40 feet on a trunk only about 33 feet high. It stands in Finch Arboretum, near the state champion willow.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spk_013",
+      "name": "Chief Garry Park Champion",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Chief Garry Park, Spokane, Washington",
+        "latitude": 47.671259,
+        "longitude": -117.372378,
+        "neighbourhood": "East Central Spokane"
+      },
+      "verified_sources": [
+        "Spokane Heritage Tree Register (services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1)",
+        "https://www.historylink.org/File/10030 (Laura Arksey, 'Spokane's Champion and Historic Trees', HistoryLink.org Essay 10030, 2012; names a separate variegated sycamore maple at the former Amasa B. Campbell estate in Browne's Addition, distinct from this tree)"
+      ],
+      "access": "Free, public city park",
+      "transport": "Chief Garry Park, East Central Spokane, on its own away from this page's other clusters; car or city bus.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "why_go": "Spokane's Heritage Tree Register names this sycamore maple a candidate for the state size record, 56 feet tall in Chief Garry Park, distinct from a different variegated sycamore maple recorded elsewhere in the city.",
+      "story": "Spokane's Heritage Tree Register calls this sycamore maple a candidate for the state size record: 56 feet tall, plain green leaves, standing in Chief Garry Park on its own, away from any of this page's other clusters.\n\nIt is not the only large sycamore maple in Spokane's tree records. A 2012 survey by historian Laura Arksey separately names a variegated sycamore maple, its leaves patched cream rather than plain green, at the former Amasa B. Campbell estate in Browne's Addition, and calls that one the largest of its particular form in the state. The two are different trees in different neighbourhoods; the register entry for this one records no variegation, so the two should not be merged into one.\n\nSycamore maple is a European species, planted across American cities for its tolerance of poor soil and city air rather than for its looks. A 56-foot specimen large enough to be named a state size candidate is a fair reason to detour through a park most visitors would otherwise skip.\n\nOnly the register has measured it, and no second source has confirmed the figures or the ranking. If you know its girth or its age, tell us.",
+      "how_to_recognise": "You can recognise it by size and plain green leaves: a sycamore maple standing 56 feet tall, among the larger trees in Chief Garry Park. A different, variegated sycamore maple recorded elsewhere in the city is not this tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spk_014",
+      "name": "The Littleleaf Linden",
+      "species": "Linden (Tilia sp., species disputed within the register's own record: title says Littleleaf Linden, description says American Linden)",
+      "age_estimate": "roughly 110 years",
+      "age_min": 100,
+      "age_max": 120,
+      "girth_cm": null,
+      "location": {
+        "address": "Moore-Turner Heritage Gardens, Edwidge Woldson Park (formerly Pioneer Park), 507 W 7th Avenue, Spokane, WA 99204",
+        "latitude": 47.648358,
+        "longitude": -117.42115,
+        "neighbourhood": "South Hill (Moore-Turner Heritage Gardens)"
+      },
+      "verified_sources": [
+        "Spokane Heritage Tree Register (services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1); the record's own title field reads 'Littleleaf Linden', its description field reads 'American Linden', an internal contradiction not resolved by this pass"
+      ],
+      "access": "Free, but within the Moore-Turner Heritage Gardens proper, which keep seasonal hours: open May 16 to September 15, Tuesday to Sunday, 9am to 3:30pm; closed Mondays and outside that season (my.spokanecity.org/parks/gardens/moore-turner/). Say this plainly on the page rather than presenting it as open at any time.",
+      "transport": "South Hill, near W 7th Avenue and S Stevens Street; car recommended, city bus service runs along 7th Avenue",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "why_go": "Planted in the 1890s in the private garden that became these heritage gardens, and the one tree on this page whose own register record cannot settle what species it actually is: littleleaf linden by its title, American linden by its own description.",
+      "story": "Spokane's Heritage Tree Register cannot decide what this tree is. Its own record title calls it a littleleaf linden; the description field for the same entry calls it an American linden, a different species entirely. Littleleaf linden, Tilia cordata, is a small-leaved European import common on American streets. American linden, Tilia americana, is a native basswood with leaves nearly twice the size. Nobody has resolved which one is actually growing in the Moore-Turner gardens, and this page will not guess for them. If you can tell the two apart from the leaf, tell us.\n\nWhat both records agree on is the history. The register dates it to the late 1890s, planted in the private garden Frank Rockwood Moore and Senator George Turner laid out before it was ever a public park, which makes it roughly the same age as the terraces and the disputed elm nearby. At around 110 years old and 29 feet tall, it is a modest tree next to the elm and the roses, the kind of planting that only gets noticed once somebody starts asking what everything in an old garden actually is.\n\nThe gardens keep seasonal hours: 16 May to 15 September, Tuesday to Sunday, 9am to 3:30pm, locked the rest of the year.",
+      "how_to_recognise": "You can recognise it by its age within the garden, planted in the 1890s alongside the terraces, a modest tree next to the disputed elm and the roses. Even the register cannot say whether the leaf should read small or large.",
       "photo": {
         "url": null,
         "license": null,
