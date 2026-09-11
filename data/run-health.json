@@ -12635,6 +12635,38 @@
    ],
    "trees": 25,
    "logged": true
+  },
+  {
+   "started": "2026-09-11T12:26:01+00:00",
+   "date": "2026-09-11",
+   "run_id": "34598856560",
+   "minutes": 89.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 605,
+   "denials": 25,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(grep), Bash(mkdir), Bash(python3), Bash(rm), Bash(set)",
+   "ended": "success",
+   "tokens": 65935372,
+   "claims_held": [],
+   "commits": 25,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "spokane",
+     "trees": 3
+    },
+    {
+     "city": "cagliari",
+     "trees": 1
+    },
+    {
+     "city": "tallinn",
+     "trees": 1
+    }
+   ],
+   "trees": 5,
+   "logged": true
   }
  ],
  "schedule_changes": [
