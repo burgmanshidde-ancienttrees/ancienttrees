@@ -7330,6 +7330,35 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-09-11": [
+      {
+        "target": "Adelaide+Busan+Zagreb+SaoPaulo+Tulsa",
+        "kind": "verify",
+        "tokens": 60000,
+        "trees": 4,
+        "note": "batched verify on 5 thin/unopened cities; 4 alive (2 Busan, 1 Sao Paulo, 1 Tulsa), 5 dead ends recorded (Adelaide's Old Gum Tree a dead husk since 1963, Zagreb's Dedek fell 2026-05, Zagreb register lead was a landscape not a tree, 2 of 3 Sao Paulo leads dead/misattributed)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Tulsa",
+        "kind": "write",
+        "tokens": 26000,
+        "trees": 1,
+        "note": "single-tree place, tsa_001 Creek Council Oak; story + recognition line, species and ownership-date disputes kept in prose, no best_time invented",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "session",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 1,
+        "note": "orchestration, merge, QA, build, plus own fixes: 13 stale country meta_description/intro counts corrected, season_backfill.py run (159 trees across 118 cities got a real best_time from existing phenology data, zero research cost), photo_hunt.py --recheck sweep",
+        "wasted": 0,
+        "brief_wrong": false
+      }
     ]
   }
 }
