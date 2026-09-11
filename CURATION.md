@@ -11,6 +11,54 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - Milan 23 -> 24 trees; Alicante's register confirmed exhausted; Finch Arboretum park page
+
+Dispatched two parallel verify passes (isolated worktrees) on Alicante and
+Milan, both deepen targets with real Search Console demand and register
+supply that `passcheck.py --brief` reported as substantially unmined.
+
+**Both briefs turned out to be stale.** Alicante's "43 unmined" candidates
+all cross-matched by coordinate to leads already resolved by five prior
+passes (published, held, or blocked); the register there is genuinely
+exhausted, confirmed independently a third time. Milan's "52 unmined"
+candidates likewise all resolved to duplicates, already-blocked entries
+(the children-only Villa Belgiojoso garden), or one already-published
+tree, except for one genuinely open pair. `passcheck.py`'s "unmined" count
+does not currently discount leads a prior pass has already resolved by
+coordinate; both agents caught this themselves rather than trusting the
+brief, cross-checked the full register against `data/leads/` before
+reporting, and left sharper notes behind so a future brief-reader does not
+repeat the check. Worth a fix in `passcheck.py --brief` itself: whoever
+next touches it should have it subtract resolved leads from the "unmined"
+count before printing it, so the number means what it says.
+
+**Milan, 23 -> 24 trees.** mil_024, "I Platani di Villa Litta Modignani":
+two more MASAF-registered planes in the same park as the already-published
+Siamese pair (mil_015) and La Pianta di Affori (mil_009), folded into one
+entry per the register-twins rule (12m apart). Single-sourced and flagged;
+the register puts the larger at 43m, which the story flags honestly as
+possibly the tallest tree on the page rather than asserting it, since a
+differently-dated citation of the same underlying MASAF dataset (an
+it.wikipedia rescrape) gives smaller, disagreeing figures for the same
+park and neither is silently preferred. Wrote the story and its Italian
+overlay translation in-session (Milan ships in Italian; the build refuses
+an incomplete overlay). Fixed two Contract C overruns preflight caught
+(question_meta length, a stale "twenty-three" count in the FAQ paid-entry
+answer). Build, qa.py, i18ncheck.py and preflight.py all clean.
+
+**Alicante, unchanged at 16.** No new trees; the one open lead (a possible
+third fig near the Castillo de Santa Barbara elevator entrance, referenced
+in a single 2026-08-04 news event) had its coordinates sharpened via
+Overpass but still fails the two-source bar. Left as a lead for a future
+pass with photo-comparison tooling.
+
+**New park page**, earned by this session's earlier Spokane write pass
+pushing Finch Arboretum's tree count to 6: `data/parks/john-a-finch-
+arboretum-spokane.json` (Contract H). `pagegaps.py` clean afterward.
+
+Both agent cost lines logged in `data/agent-costs.json`. Both claims
+released.
+
 ## 2026-09-11 (continuation) - Spokane deepened to 13; four other claimed READY leads declined after reading them
 
 `leads.py --ready` listed 8 trees across five cities (spokane 4, hallstatt 1,

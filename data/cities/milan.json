@@ -3,9 +3,9 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-three trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's twenty-three remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "meta_description": "Milan's twenty-four remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus twenty-two more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775, plus twenty-three more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Milan's remarkable trees free to visit?",
-      "a": "All twenty-three on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
+      "a": "All twenty-four on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
     },
     {
       "q": "Why does Milan have so few genuinely ancient trees compared to Rome or Florence?",
@@ -865,6 +865,39 @@
       "girth_cm": 625,
       "verify_notes": "MASAF gives a tree-level sheet coordinate; the comune's own CSV gives an independent coordinate 27 m away in the same garden, consistent with the same plaque-identified tree (VTA 35574).",
       "how_to_recognise": "The widest-trunked plane in Giardini Montanelli, 6.25 metres round, its storm-broken limbs held together with visible cabling."
+    },
+    {
+      "id": "mil_024",
+      "name": "I Platani di Villa Litta Modignani",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 550,
+      "height_m": 43.0,
+      "location": {
+        "address": "Parco di Villa Litta Modignani, Viale Affori, 20161 Milano",
+        "latitude": 45.516944,
+        "longitude": 9.166111,
+        "neighbourhood": "Affori, Municipio 9"
+      },
+      "verified_sources": [
+        "MASAF national register (Elenco degli alberi monumentali d'Italia), sheet 23/F205/MI/03, Viale Affori - Villa Litta Modignani, Platanus acerifolia, girth 550 cm, height 43 m",
+        "MASAF national register (Elenco degli alberi monumentali d'Italia), sheet 24/F205/MI/03, Viale Affori - Villa Litta Modignani, Platanus acerifolia, girth 480 cm, height 38 m, standing about 12 m from sheet 23"
+      ],
+      "access": "Free, public park (same grounds as the already-published Il Platano Siamese di Villa Litta, mil_015)",
+      "transport": "8 min walk from Affori FN (M3) or Affori Centro (M3)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "SINGLE SOURCE (MASAF register only, both rows). A differently-dated citation of the same underlying MASAF dataset (it.wikipedia's 'Alberi monumentali della Lombardia') gives different figures for Villa Litta Modignani's planes (girths 650/500/450/590 cm, heights 35/35/30/30 m); it is a rescrape of the same government source rather than an independent second one, so the register's own 550/480 cm and 43/38 m figures are what this page uses, with the discrepancy left visible rather than silently resolved.",
+      "story": "Two plane trees stand twelve metres apart in Villa Litta Modignani park, and Italy's national monumental-tree register puts the larger at 43 metres, which would make it the tallest tree on this page by five metres. Read that carefully rather than as a settled fact: a differently dated citation of the same government dataset gives smaller figures for planes at this same park, and nothing independent of the original register has come along to referee between the two versions.\n\nWhat both accounts agree on is that these are big trees. The register's own measurement puts the larger of the pair at 5.5 metres round, the smaller at 4.8 metres, either alone worth the detour. They stand about 150 metres from the park's own fused Siamese pair, two planes grown so close together their trunks merged into one, and 340 metres from La Pianta di Affori, the plane a persistent local story ties to Napoleon. Three separate plane-tree stories inside one Affori park.\n\nNobody has published when either tree was planted. Italy's monumental register has no age field for any entry it holds, a gap that runs through the whole dataset rather than this tree in particular, so treat the absence as the register's limit rather than a fact about the tree.\n\nThe park is free and open daily, an eight-minute walk from Affori's own metro stop.",
+      "how_to_recognise": "You can recognise the pair by size alone: two planes twelve metres apart, the larger a full 5.5 metres round. They stand in Villa Litta Modignani park, about 150 metres from the fused Siamese pair.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "mil_004"

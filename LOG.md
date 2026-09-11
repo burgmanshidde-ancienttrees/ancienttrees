@@ -1,6 +1,31 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (continuation 5) - Milan +1 (24), Alicante's register confirmed exhausted, Finch Arboretum gets a park page
+
+Dispatched parallel verify agents on Alicante and Milan, both real-demand
+deepen targets with register supply passcheck reported as mostly unmined.
+Both briefs were stale: every "unmined" candidate in Alicante and all but
+one pair in Milan resolved to leads five/three prior passes had already
+settled. Both agents caught this themselves and cross-checked before
+reporting rather than taking the brief's count at face value.
+
+Milan gained mil_024, two more MASAF planes in the same Affori park as two
+already-published trees, written and merged in-session along with its
+Italian translation (Milan ships bilingual). Its story is honest about a
+disagreeing citation of the same register rather than picking a number.
+Alicante stays at 16; its one open lead needs photo comparison, not more
+searching.
+
+Also wrote `data/parks/john-a-finch-arboretum-spokane.json`, a park page
+earned by this session's earlier Spokane write pass. Build, qa.py,
+i18ncheck.py and preflight.py all clean throughout.
+
+**Worth a look next time someone is in passcheck.py:** its "unmined"
+candidate count doesn't currently subtract leads a prior pass already
+resolved by coordinate, so the brief overstates what's actually open.
+Full detail in CURATION.md.
+
 ## 2026-09-11 (continuation 4) - Spokane 9 -> 13 from READY leads; four other "READY" leads read and declined
 
 `leads.py --ready` said 8 trees across 5 cities needed only a story. Claimed all
