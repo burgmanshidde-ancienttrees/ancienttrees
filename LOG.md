@@ -63,6 +63,32 @@ this file already followed for a published photograph: a link to the thing in
 your hand is not an invitation. A thank-you to somebody writing from inside the
 app now ends without it; everybody else still gets his standing 2026-09-03 line.
 
+**FOR HIDDE, parked on his own word ("kom later terug op a ik kan dit nu niet
+vanaf m'n tel doen"): sign-in, option A.** The website offers a magic link and
+the app cannot, because its typed route is hidden behind `Launch.emailSignIn`
+since 2026-08-30: Supabase's default mail sends a link rather than a code and
+the template needs custom SMTP. The objection that killed it then has expired,
+because this project already sends mail over SMTP (`OUTREACH_SMTP_*`, the Gmail
+app password) for reader replies, the weekly mail and the photo thank-yous. So
+it is a setting, not a new dependency.
+
+Three steps, all in his dashboard, ten minutes at a desk:
+
+1. Supabase, Auth, SMTP Settings: the same host, port, user, password and
+   sender that `OUTREACH_SMTP_*` already carries.
+2. Auth, Email Templates, Magic Link: put `{{ .Token }}` in it, so the mail
+   carries the six digits the app asks for. Template editing only unlocks once
+   step 1 is done.
+3. Tell me, and I flip `Launch.emailSignIn` and check both surfaces land on one
+   account.
+
+Worth a look while he is in there, because it may be worse than a missing app
+route: Auth, Users, the provider column. Supabase's built-in mail service
+delivers only to team addresses and is capped at a couple of messages an hour
+project-wide, so if all 12 accounts came in through Google, the site's own
+"Email me a sign-in link" has never reached a stranger. The full reasoning is
+CONVENTIONS.md, "One account, two surfaces, different sign-in buttons".
+
 **And the bug that fix uncovered: the "it is on the site now" mail has never been
 sent, not once, since 2026-09-03.** The auto-composed change confirmation
 carried no App Store link, mailcheck has required one on every letter since that
