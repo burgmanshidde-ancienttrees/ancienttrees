@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Granada",
+      "country": "Spain",
+      "status": "empty",
+      "note": "SCOUTED 2026-09-11 (session), on scout_next.py --target naming Granada (#56) as no supply/no verdict (register count 4, from the already-imported Andalusian regional catalogue, data/registers/andalucia-rediam.json, which counts as Granada's supply already). No Granada-specific monumental/singular register exists beyond that regional one: the city's own 'Parques y arboles' portal (granada.org/inet/warboles.nsf) is a general tree inventory searchable by species/location, not a semantically-filtered heritage list, carries no age/girth/planting-date fields, and its own terms prohibit commercial reuse of the photographs with no stated licence for the data itself. EMPTY for a city-specific register; the regional one already covers this city and is already counted.\n\nWhat the scout did turn up, worth keeping as leads rather than a register: a 2020-ish local-press survey (wastemagazine.es, 'arboles singulares de granada') names 12 candidate trees, of which 8 are ALREADY published (gra_001-008). Of the remaining 4: two are too young or dead already (a 1998 pomegranate at Puerta Real; a Celtis australis on Calle Real de la Alhambra that the article itself says was gone by 2020). The other two were checked further this pass: the historic cypress in the Generalife's Patio del Ciprés de la Sultana, the famous Zoraya/Abencerrajes legend tree, is CONFIRMED DEAD, per the Alhambra's own patronato site (alhambra-patronato.es/el-patio-del-cipres-de-la-sultana): 'murio a finales de los anos ochenta', explicitly the end of a line of specimens of the same species going back centuries; no replacement tree is mentioned. Recorded in data/leads/granada.json as blocked. A pair of Abies pinsapo (Spanish fir) transplanted from Sierra de las Nieves stands at the UGR Science Campus; the campus's own tree portal confirms the species is present there but gives no age, girth, planting date or exact coordinate, only a general quadrant map of 514 campus trees. Recorded as a lead needing a second source and real measurements before it is verify-ready."
+    },
+    {
       "place": "Des Moines",
       "country": "United States",
       "status": "stalled",
