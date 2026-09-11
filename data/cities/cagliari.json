@@ -2,11 +2,11 @@
   "city": "Cagliari",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Cagliari's biggest tree stands outside the central railway station: a Moreton Bay fig twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest park, adds twinned figs, a honey locust and a jacaranda, and the botanical garden nearby holds a third fig, an ombu and a dragon tree from its 1866 founding. Further out: a Pirri cypress, two Dolianova pines, and a blue gum and lime above Sinnai. Eight of thirteen stand within a kilometre and a half.",
+  "intro": "Cagliari's biggest tree stands outside the central railway station: a Moreton Bay fig twelve metres round, fenced at the base. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest park, adds twinned figs, a honey locust and a jacaranda, and the botanical garden nearby holds a third fig, an ombu, a dragon tree and an argan, the only one in an Italian garden. Further out: a Pirri cypress, two Dolianova pines, and a blue gum and lime above Sinnai. Ten of fourteen stand within a kilometre and a half.",
   "meta_description": "Cagliari's monumental trees: a fig twelve metres round outside the station, another on the Via Roma waterfront, and three in Sardinia's oldest park.",
   "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus twelve more.",
   "question_answer": "The oldest tree in Cagliari is the cypress in the Pirri cemetery, which Sardinian press covering its 2025 protection puts at more than two hundred years old: it was already standing when the burial ground was consecrated in November 1913. The only tree here that comes close is the Tintitaco in the Parco della Rimembranza, and its own record disagrees with itself, roughly 166 years on the Italian tree registry against about 200 in local reporting. The figs are younger than both. The two on the city squares are given 140 to 150 years, and the pair in the Giardini Pubblici anywhere between 140 and 195, a range nobody has narrowed.",
-  "question_context": "Ages are the soft part of the record in Cagliari. Italy's national register of monumental trees, which covers most trees on this page, measures girth and height but carries no age field. The three botanical garden trees carry no register entry; their ages come instead from the garden's own account of which specimens date from its 1866 founding, held to a wide band rather than a year. Every other year here comes from local and regional newspapers, council designation notices, or the independent Italian tree registry, the only source to date the Tintitaco. Where sources disagree, this page gives both figures. Access is simpler for most. Eleven of thirteen stand on free public ground; eight of those, including the botanical garden three, sit within a kilometre and a half in the centre, the rest reached by bus, regional train or car into the hills above Sinnai. The botanical garden charges four euros, the only paid ground here. A precautionary fence rings the station fig, and the Pirri cypress sits in a working cemetery with visiting hours. Two further register trees, a Norfolk Island pine and a coral tree, were checked and left off: both on private ground.",
+  "question_context": "Ages are the soft part of the record in Cagliari. Italy's national register of monumental trees, which covers most trees on this page, measures girth and height but carries no age field. Three of the four botanical garden trees carry no register entry; their ages come instead from the garden's own account of which specimens date from its 1866 founding, held to a wide band (the fourth, the argan, is not part of that founding-era account and carries no age at all). Every other year here comes from local and regional newspapers, council designation notices, or the independent Italian tree registry, the only source to date the Tintitaco. Where sources disagree, this page gives both figures. Access is simpler for most. Ten of fourteen stand on free public ground; six of those sit within a kilometre and a half in the centre, alongside the botanical garden's four paid trees, the rest reached by bus, regional train or car into the hills above Sinnai. A precautionary fence rings the station fig, and the Pirri cypress sits in a working cemetery with visiting hours. Two further register trees were checked and left off: both on private ground.",
   "faq": [
     {
       "q": "What is the oldest tree in Cagliari?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Eight of the thirteen, yes. The station fig, the Via Roma fig, the Tintitaco, the three Giardini Pubblici trees and the three in the university's botanical garden all sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus. Dolianova's two pines are further still, an 18km train ride, and both the blue gum near Sinnai and the lime at Corongiu are car-only trips into the hills above town; each makes its own separate day out."
+      "a": "Ten of the fourteen, yes. The station fig, the Via Roma fig, the Tintitaco, the three Giardini Pubblici trees and the four in the university's botanical garden all sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus. Dolianova's two pines are further still, an 18km train ride, and both the blue gum near Sinnai and the lime at Corongiu are car-only trips into the hills above town; each makes its own separate day out."
     }
   ],
   "hero_tree_id": "cag_004",
@@ -472,6 +472,38 @@
       },
       "location_precision": "approximate",
       "curation_status": "flagged"
+    },
+    {
+      "id": "cag_014",
+      "name": "The Argan of the Orto Botanico",
+      "species": "Argan (Argania sideroxylon, syn. Argania spinosa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Orto Botanico di Cagliari, Viale Sant'Ignazio da Laconi 1, Cagliari",
+        "latitude": 39.2225,
+        "longitude": 9.1111,
+        "neighbourhood": "Stampace, Valle di Palabanda"
+      },
+      "verified_sources": [
+        "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
+        "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
+        "https://ricerca.uniba.it/handle/11586/129694"
+      ],
+      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups). Open Monday to Saturday, closed Sundays and some public holidays. Same garden and terms as cag_011-013.",
+      "transport": "In central Cagliari, same site as cag_011-013 (the Moreton Bay Fig, Ombu and Dragon Tree of the Orto Botanico); about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Italy has exactly one argan tree in a botanical garden, and it grows in Cagliari.\n\nArgania sideroxylon is endemic to the semi-arid south of Morocco and is planted almost nowhere in Europe. The Italian parks and gardens association lists this specimen as the only one in any Italian botanical garden. The Italian Botanical Heritage survey goes a step further and calls it probably the only one in any European botanical garden. A University of Bari research record on the species, written about something else entirely, agrees that the Cagliari tree is the only documented argan in the country.\n\nSo the reason to walk to this one is not age or size. It is that the species has no business being here at all. Argan is the tree behind argan oil, pressed from the kernels inside its fruit, and in its home range goats climb into the branches after them. Everything about it is built for drought: small leathery grey-green leaves, thorny branches, a crown that holds on through months without rain. Cagliari, hot and dry by the standards of anywhere north of it, is close enough to Morocco in climate to keep the tree alive.\n\nThe garden around it opened on 15 November 1866, on five hectares in the Valle di Palabanda above Punic and Roman cisterns. Nobody has published a planting date, an age or a girth for the argan itself. If you have measured it, or know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the small leathery grey-green leaves and the thorny branches. It stands in the same five hectares as the Moreton Bay fig, the ombu and the dragon tree, and looks like none of the three.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

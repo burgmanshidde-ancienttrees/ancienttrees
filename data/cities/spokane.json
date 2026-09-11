@@ -4,8 +4,8 @@
   "status": "needs_curation",
   "oldest_tree_id": "spk_001",
   "hero_tree_id": "spk_001",
-  "intro": "Spokane's oldest trees survived by being useless to loggers: three Douglas firs on the cliff edge above Mystic Falls in Indian Canyon were left standing because their tapering trunks made poor lumber, and the largest is now put at roughly 400 years by the city's own arborist. Across town, one small park behind the Corbin Art Center holds three of the only trees ever named to the city's Heritage Tree Registry, a champion horse chestnut, a pioneer-era apricot and a disputed elm. A state-champion willow and America's first planted dawn redwoods round out the six.",
-  "meta_description": "400-year Douglas firs holding a canyon rim together, a state champion willow, and America's first planted dawn redwoods: 6 remarkable trees around Spokane.",
+  "intro": "Spokane's oldest trees survived by being useless to loggers: three Douglas firs on the cliff edge above Mystic Falls in Indian Canyon were left standing because their tapering trunks made poor lumber, and the largest is put at roughly 400 years by the city's arborist. One small park behind the Corbin Art Center holds three of the only trees named to the city's Heritage Tree Registry: a champion chestnut, a pioneer-era apricot and a disputed elm. Finch Arboretum adds a champion willow, America's first planted dawn redwoods, a pioneer-planted linden and a rare Miyabe maple, rounding out the eight.",
+  "meta_description": "400-year Douglas firs holding a canyon rim together, a state champion willow, and America's first planted dawn redwoods: 8 remarkable trees around Spokane.",
   "question_meta": "Spokane's oldest mapped trees are the Douglas Firs of Indian Canyon, put at roughly 300 to 450 years by the city's own arborist.",
   "question_answer": "Spokane's oldest mapped trees are the Ancient Douglas Firs of Indian Canyon, three old-growth firs on the cliff edge above Mystic Falls. The city's lead arborist, Jeff Perry, put the largest at around 400 years in 2019, saying his own arms could not reach a third of the way around its trunk.",
   "question_context": "The estimate rests on one account rather than a ring count: a 2019 Spokesman-Review feature in which Perry said measuring the tree properly is not really possible, because its roots are holding the edge of the cliff together. No girth has ever been published for any of the three. What makes the survival plausible is straightforward: Douglas fir with a sharply tapering trunk makes poor lumber, so logging crews that took nearly all the old growth out of the hills around Spokane left these three standing on the canyon rim. Four centuries of age would put their germination in the early 1600s, which means they were already more than two centuries old when Chief Spokane Garry, whose last campsite stood a short walk away, died in 1892. Nothing else on this page comes close to that age: the next oldest, a state-champion white willow at Finch Arboretum, is put at only 90 to 100 years, and the city says plainly it may not have thirty more.",
@@ -16,7 +16,7 @@
     },
     {
       "q": "Are Spokane's remarkable trees free to see?",
-      "a": "Yes, all six stand in public city parks with no entry charge: Indian Canyon Park, John A. Finch Arboretum and Edwidge Woldson Park, though the Moore-Turner Heritage Gardens within Woldson Park keep seasonal hours."
+      "a": "Yes, all eight stand in public city parks with no entry charge: Indian Canyon Park, John A. Finch Arboretum and Edwidge Woldson Park, though the Moore-Turner Heritage Gardens within Woldson Park keep seasonal hours."
     },
     {
       "q": "What is Spokane's Heritage Tree Registry?",
@@ -227,6 +227,68 @@
       "curation_status": "flagged",
       "how_to_recognise": "The one large elm within the Moore-Turner Heritage Gardens terraces, in a garden otherwise planted with roses, perennials and a tea house rather than shade trees.",
       "story": "Two credible people have looked at this elm and come back with different species. The City of Spokane's heritage register calls it an American elm, Ulmus americana, 88 feet tall with a 44 foot crown. The 2012 survey published by HistoryLink, citing Robert Van Pelt, who wrote Champion Trees of Washington State and coordinated the national big tree programme here, calls the registered elm in these gardens a European or Russian white elm, Ulmus laevis, and ranks it third largest of that species in the state. Both accounts point at the same tree in the same garden. Nobody has settled it.\n\nThe disagreement matters less standing under it than it looks in print, because either answer is a reason to go. A large American elm is a survivor, since Dutch elm disease took most of the big ones across North America inside a generation. A state-ranked white elm is rarer still, a Eurasian species almost nobody here plants.\n\nThe garden was laid out from the 1890s by Frank Rockwood Moore and the United States senator George Turner, left to go wild for decades, and dug back out as the Moore-Turner Heritage Gardens. The elm is the one big tree among terraces given over to roses, perennials and a tea house.\n\nCheck the calendar first. The gardens open 16 May to 15 September, Tuesday to Sunday, 9am to 3:30pm, and are locked the rest of the year.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spk_007",
+      "name": "Dwight's Linden of Finch Arboretum",
+      "species": "Hungarian Linden (Tilia x juranyana)",
+      "age_estimate": "about 100 years",
+      "age_min": 90,
+      "age_max": 110,
+      "girth_cm": null,
+      "location": {
+        "address": "John A. Finch Arboretum, Spokane, Washington",
+        "latitude": 47.641216,
+        "longitude": -117.465453,
+        "neighbourhood": "West Spokane"
+      },
+      "verified_sources": [
+        "https://www.historicspokane.org/spokane-heritage-trees (Spokane Heritage Tree Register; individual record and tree-level coordinate from the city's own ArcGIS layer, CityandCountyHistoricProp/FeatureServer/1, feature 'Dwight's Linden')",
+        "https://www.historylink.org/File/10030 (Laura Arksey, 'Spokane's Champion and Historic Trees', HistoryLink.org Essay 10030, 2012, naming this specimen as a champion Hungarian linden at Finch Arboretum planted by pioneer Daniel H. Dwight)"
+      ],
+      "access": "Free, public city arboretum/park",
+      "transport": "West Spokane, off Sunset Highway; car or city bus. Same site as spk_002 (State Champion White Willow) and spk_003 (First Dawn Redwoods).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Finch Arboretum used to be somebody's houses. Before that, on the ground where this linden stands, it was pioneer Daniel H. Dwight's own planting, and the tree outlasted both.\n\nThe Spokane Heritage Tree Register lists it as a Hungarian linden, a species you will not find on many American streets, standing about 72 feet tall and somewhere around a century old. HistoryLink's 2012 survey of the city's champion and historic trees names the same tree, the same planter and the same species, citing a tree survey by Dr. Edward Lester. Two records, a register and a historian, agreeing on one linden.\n\nDwight is the reason the arboretum exists at all: his family gave part of the original ground. The tree that carries his name is not the biggest or the oldest thing here, next to the state champion white willow and the first dawn redwoods planted nearby, but it is the one still standing from before this was a park.\n\nNobody has published a girth for it, so treat the century figure as the register's own estimate rather than a measured fact. If you have taped the trunk, tell us.",
+      "how_to_recognise": "You can recognise it by the heart-shaped leaves and the honey scent of its small flowers in early summer. It stands in Finch Arboretum, the same grounds as the state champion white willow and the dawn redwoods.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spk_008",
+      "name": "The Massive Miyabe of Finch Arboretum",
+      "species": "Miyabe Maple (Acer miyabei)",
+      "age_estimate": "about 58 years",
+      "age_min": 50,
+      "age_max": 65,
+      "girth_cm": null,
+      "location": {
+        "address": "John A. Finch Arboretum, Spokane, Washington",
+        "latitude": 47.641939,
+        "longitude": -117.466226,
+        "neighbourhood": "West Spokane"
+      },
+      "verified_sources": [
+        "https://www.historicspokane.org/spokane-heritage-trees (Spokane Heritage Tree Register; individual record and tree-level coordinate from the city's own ArcGIS layer, CityandCountyHistoricProp/FeatureServer/1, feature 'The Massive Miyabe')",
+        "https://www.historylink.org/File/10030 (Laura Arksey, 'Spokane's Champion and Historic Trees', HistoryLink.org Essay 10030, 2012, listing Miyabe maple among Finch Arboretum's likely state-first-place champions)"
+      ],
+      "access": "Free, public city arboretum/park",
+      "transport": "West Spokane, off Sunset Highway; car or city bus. Same site as spk_002 (State Champion White Willow) and spk_003 (First Dawn Redwoods).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Its name promises more than the tree delivers, and that is fine, because the name is comparing it to the wrong thing.\n\nThe Spokane Heritage Tree Register calls this a Miyabe maple, Acer miyabei, a species native to Japan and rarely planted in North America, and names it a potential state champion. HistoryLink's 2012 survey of the arboretum's champion trees lists the same species among Finch Arboretum's likely state first-place holders. Two sources, register and historian, pointing at the same maple.\n\nA state champion sounds like it should compete with the willow down the path or the conifers around it. It does not, because Acer miyabei stays modest for a maple wherever it grows. What makes it the biggest of its kind is simply that almost nobody in Washington has planted one to compare it to. At about 58 years old and 54 feet tall, it is not massive in the way its own register entry names it. It is massive for a species most visitors have never heard of, in an arboretum built on exactly that kind of rarity.\n\nNo girth has been published for it. If you have measured the trunk, tell us.",
+      "how_to_recognise": "You can recognise it by leaves shaped like a maple's but smaller and rounder than the ones nearby, a Japanese species rare in this country. It stands in Finch Arboretum, near the state champion white willow.",
       "photo": {
         "url": null,
         "license": null,
