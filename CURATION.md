@@ -11,6 +11,25 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - Sorrento deepen pass: register confirmed exhausted, 0 trees
+
+Dispatched a verify pass on Sorrento (7 trees live, rank 111, real demand: 27
+impressions/2 clicks in the 10-day window) since the MASAF register still showed
+"31 unmined" candidates in passcheck's brief. Cross-referencing every candidate by
+coordinate and MASAF sheet_id (rather than by name, the method that let these keep
+resurfacing as "unmined") found every close-in row is either already published or
+already blocked under a different name in `data/leads/sorrento.json` (the Antico
+Parco del Principe trio, the Grand Hotel Parco dei Principi grounds, the Via Carlo
+Amalfi cedar, the Villa Thuja eucalyptus), and every distant row belongs to a
+different comune (Vico Equense, Castellammare di Stabia, Agerola, Pompei, Ravello).
+Independently confirms the 2026-09-09 deepen pass's identical finding: this
+register is exhausted at Sorrento's radius. The one open lead, a pine on Via
+Bagnulo with a disputed August 2026 collapse report, stays unresolved after a
+second independent check (a Positanonews AI search summary fabricated a sentence
+not in the actual article; the real 2020 piece raises the risk prior without
+settling which tree fell). Two new wrong-container leads recorded for a future
+Vico Equense page. Claim released, no trees added. Logged in `data/agent-costs.json`.
+
 ## 2026-09-11 (continuation) - Two unprocessed submissions (100, 101): a third GPS-only Kyoto lead, a plain worth-it vote
 
 Submission #100 (kind `tree`, `page: app:collect`, same account as 98/99): another
