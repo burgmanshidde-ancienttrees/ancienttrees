@@ -1,6 +1,59 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (continuation 9, previous attempt stopped after 64 min with 56 min unspent) - Finished inherited Rome/Hallstatt work, fixed a live iOS layout bug
+
+Inherited a standing Rome verify claim and uncommitted work in both Rome and
+Hallstatt from the previous attempt in this window. Finished rather than
+re-did: wrote the story for rom_031 (The Almond of Villa di Faonte, the
+Mandorlo di Nerone, already fully verified against three independent
+sources including the park's April 2026 reopening), added its Italian
+translation to the it/rome overlay and fixed the four now-stale tree-count
+mentions there (30 -> 31). Hallstatt's hst_005 (a Gosau copper beech) had
+already been written with a full story but left two preflight FAILs
+uncommitted (meta_description over 155 chars, hst_005's how_to_recognise
+over 240); shortened both. Build, qa.py, superlatives.py all clean.
+Committed and released the Rome claim.
+
+`health.py` flagged the iOS app workflow as broken (its newest run, the
+19:27 UTC schedule, failing on the iOS-18 floor job). Traced it: the
+"search" screen's appfit dump showed both MapSearch's own content and
+MapTab's search button/filter chips underneath it, misaligned relative to
+each other. No ios/ commit between the last GREEN floor run (09:27) and the
+failure touched MapTab or MapSearch, so this was a latent bug (a
+fullScreenCover does not remove the presenting view from the accessibility
+tree by itself) that the floor job simply hadn't run against recently,
+since it only fires on schedule/dispatch, never on push. Added
+`.accessibilityHidden(searching)` to MapTab so it drops out of the
+accessibility tree (and therefore out of both VoiceOver and appfit's
+element queries) while the search sheet covers it. netcheck, appsweep
+--check-lists and conventioncheck all pass; this sandbox has no Xcode, so
+the actual layout verdict needs the next scheduled/dispatched run (workflow
+dispatch was refused: HTTP 403, this bot's token cannot dispatch). Pushed;
+smoke test and deploy were still in progress at the end of this window,
+triggered by the same push.
+
+Checked REVIEW.md's two 2026-09-11 WARNs (empty reader-photo credit caption,
+three self-repeating tree-page titles): both were already fixed by an
+earlier attempt in this window (commit ef66e113a, 12:43 UTC), confirmed by
+reading the diff rather than re-fixing.
+
+Looked at new-coverage options before stopping: the OPENABLE-TODAY city list
+is thin and mostly documented dead ends (Taormina, Ravenna, Trier all
+previously exhausted; Trier's "9 register + 4 wikidata candidates near it"
+turn out to all be Luxembourg trees 10-20km away, not Trier's own).
+`famous_demand.py --next` surfaced a Lithuania batch worth a future pass:
+~10 named oaks/lindens (Bagrenas linden, Gaure oak, two Sitkunai oaks,
+Kiaunupis oak, Pagryniai oak, Dauksa oak, Galiunas oak, Nevezio dvilypis
+oak, Butinge oak, the last one possibly its own place) that would join
+already-published Kaunas, Zalgiriai, Vainiai, Degsne and Plauginiai Forest,
+plus two avenue candidates that fail the collectible-point test. Not
+dispatched: `run_health.py --week` showed 4817-4881/5000 minutes spent this
+week with the daily/weekly digests still to run, too tight a margin to
+start a fresh multi-city verify pass this session. Left for the next run
+with enough budget: candidates and sources are in `famous_demand.py --next
+--country Lithuania`, no claim taken.
+
 ## 2026-09-11 (continuation 8, previous attempt stopped after 16 min with 104 min unspent) - Prague 27 -> 30, one QA bug fixed, one bad photo rejected
 
 Inherited a standing Prague verify claim from the previous attempt in this
