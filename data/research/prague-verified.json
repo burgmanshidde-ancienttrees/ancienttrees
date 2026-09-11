@@ -1,0 +1,53 @@
+[
+  {
+    "id": "prg_026",
+    "name": "The Oak on the Dam of Libocky Pond",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 185 years",
+    "age_min": 165,
+    "age_max": 210,
+    "girth_cm": 417,
+    "location": {
+      "address": "On the northwest embankment (dam) of Libocky rybnik, between the bank and the footpath, Liboc, Prague 6",
+      "latitude": 50.08885291218773,
+      "longitude": 14.332151522441404,
+      "neighbourhood": "Liboc, Praha 6"
+    },
+    "verified_sources": [
+      "AOPK CR (Agentura ochrany prirody a krajiny CR) memorial-tree register, kod 104832, CC BY 4.0, https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1",
+      "https://cs.wikipedia.org/wiki/Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_Praze (row for kod 104832, 'Dub na hrazi Libockeho rybnika', confirms species dub letni, location 'v polovine severozapadni hraze Libockeho rybnika mezi brehem a cestou' = 'in the middle of the NW dam of Libocky pond, between the bank and the path')",
+      "https://www.turistika.cz/mista/dub-na-hrazi-libockeho-rybnika/detail"
+    ],
+    "access": "Free, on a public footpath along the Libocky rybnik dam (Liboc / Divoka Sarka nature area, Prague 6); the 2017 revitalisation added stone steps and a rest platform on this dam. No gate, no ticket.",
+    "transport": "Tram lines 22, 25 or 58 to Vypich, then roughly 20-25 minutes on foot along the Divoka Sarka-Liboc path network to the pond's dam (about 1.5 km by straight-line map distance; not walked this pass, so treat the minutes as an estimate)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a memorial tree (pamatny strom) 13 July 2004 by the Prague municipal environmental department, protection zone a 13 m radius circle (register note: 'kruh o polomeru 13 m na p.c. 329/23, 1247'). GIRTH DISAGREEMENT, flagged: the AOPK register's own 2024 update gives 417 cm; turistika.cz cites a June 2015 measurement of 424 cm (a girth appearing to shrink over 9 years, which is not physically normal for a living oak and is more likely a remeasurement/rounding difference than real trunk loss). Used 417 cm (the more recent official register figure) as girth_cm; note both for the writer. No age is recorded by any source; age_estimate is DERIVED from girth using the same growth-rate range (roughly 1.8-2.5 cm/year) already applied to this city's other published pedunculate oaks (prg_007 at 2.45, prg_011 at 2.42, prg_016 at 1.86, prg_022 at 2.04, prg_023 at 2.5 cm/year), giving a band rather than a point figure. Praha-priroda.cz (the city's own water-features page for this pond) independently describes the same dam as a public amenity: fishing permitted from the embankment, stone steps and a wooden rest platform built in the 2017 revitalisation, which is a second, independent confirmation of public access beyond the register and Wikipedia. Health: register-confirmed as still standing (2024 update); turistika.cz separately calls it 've velmi dobrem zdravotnim stavu' (very good health) as of its own visit. Worth going: a genuinely large oak (over 4 m round) with a distinctive silhouette on an open pond embankment, the AOPK's own designation reason being its dominance and its typical pond-edge habit, distinct from every other tree already published in Prague. Adjacent register row (kod 104283, 'Dub u Libocke brany v obore Hvezda', already published as prg_025) is a DIFFERENT tree about 470 m south; do not conflate the two despite similar names and both being oaks near Liboc/Hvezda gates."
+  },
+  {
+    "id": "prg_027",
+    "name": "The Beech Below the Summer Palace, Hvezda",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "roughly 150 years",
+    "age_min": 140,
+    "age_max": 165,
+    "girth_cm": 337,
+    "location": {
+      "address": "In Obora Hvezda (the Hvezda game reserve), on the path descending from the Hvezda summer palace (Letohradek Hvezda) toward the Ruzynska gate, Liboc, Prague 6",
+      "latitude": 50.08403663951055,
+      "longitude": 14.32475415019915,
+      "neighbourhood": "Liboc, Praha 6"
+    },
+    "verified_sources": [
+      "AOPK CR memorial-tree register, kod 104281, CC BY 4.0, https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1",
+      "https://cs.wikipedia.org/wiki/Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_Praze (row for kod 104281, 'Buk lesni pod letohradkem Hvezda', coordinates 50deg5'2\"N 14deg19'29\"E which convert to 50.0839,14.3247, matching the register point to within metres)",
+      "https://www.turistika.cz/mista/pamatny-buk-pod-letohradkem-hvezda/detail"
+    ],
+    "access": "Free, public nature reserve (Obora Hvezda), open year round, same regime as the three other Hvezda trees already published (prg_005, prg_024, prg_025)",
+    "transport": "Tram line 22 to Bila Hora, then a walk through Obora Hvezda toward the summer palace; exact walking distance from the tram stop not measured this pass (roughly 500 m by straight-line map distance from the reserve's edge)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a memorial tree (pamatny strom) 9 September 2002, primarily for being the tallest tree in the beech stand growing in this part of the park (turistika.cz), protection zone an 11 m radius circle matching the register's own note ('kruh o polomeru 11 m na p.c. 1227/1 k.u. Liboc'). Girth grew from 306 cm (older figure in the Czech Wikipedia list, presumably close to the 2002 designation or an early remeasurement) to 332 cm (turistika.cz, dated September 2013) to 337 cm (AOPK register, 2024 update); consistent, plausible growth, no disagreement to flag. Age: turistika.cz states 'approximately 150 years old' as of its description (which cites the 2013 measurement); repeated here as vaguely as the source gives it rather than sharpened, per the no-bridge-claim rule, so age_estimate stays 'roughly 150 years' even though the true figure today, 13 years on, is probably a little higher. Height noted by turistika.cz as approximately 40 m, with the trunk notably straight for its height and visible root buttresses; height_m not set here since that figure was not independently cross-checked this pass. Health/presence: no explicit recent health statement found; register's last_changed field (20240822 in our imported copy) implies it was still an active designation as of that database refresh, which stands in for a vitality check since no register anywhere carries one. Do not confuse with two OTHER beeches already in the register near the same gates: kod 104291 'Buk lesni u Brevnovske brany' (349 cm, already published as prg_024) and the Twin Beech (already published as prg_005, a double-trunk tree elsewhere in the reserve). This is a genuinely distinct, separately located, separately designated tree, about 720 m to 1.2 km from those two by straight line. Worth going: a very tall, straight-trunked veteran beech directly on the path most visitors take between the summer palace and the Ruzynska gate, an easy add to an existing Hvezda walk rather than a new destination."
+  }
+]
+

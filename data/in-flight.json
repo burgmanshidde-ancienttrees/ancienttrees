@@ -9,9 +9,33 @@
   "claims": [
     {
       "target": "prague",
-      "kind": "verify",
+      "kind": "write",
       "by": "night-run",
-      "claimed_at": "2026-09-11T03:17:54+00:00"
+      "claimed_at": "2026-09-11T03:29:45+00:00"
+    },
+    {
+      "target": "boise",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-09-11T03:29:45+00:00"
+    },
+    {
+      "target": "indianapolis",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-09-11T03:29:45+00:00"
+    },
+    {
+      "target": "monterey",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-09-11T03:29:45+00:00"
+    },
+    {
+      "target": "spokane",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-09-11T03:29:45+00:00"
     }
   ]
 }
