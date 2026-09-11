@@ -181,7 +181,7 @@ struct TreeDetail: View {
                     // asked for it (2026-09-04: "de something's wrong knop maar
                     // wel naar beneden"). The vote that used to head this block
                     // is now the thumb beside the place name.
-                    if mine == nil { WorthItView(tree: tree, showsVote: false) }
+                    if mine == nil { WorthItView(tree: tree) }
                     // The "Nobody has photographed this one" card is gone
                     // (Hidde, 2026-08-26: "die mag helemaal weg"). It was a
                     // paragraph explaining a control that now exists: the
