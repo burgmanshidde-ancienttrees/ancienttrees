@@ -683,6 +683,15 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
    this the whole grid sat 7px right of every heading on /cities. */
 .cindex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.35rem 1rem; margin-left: -0.45rem; }
 .exc-empty { font-size: 13px; color: var(--ink-mid); padding: 0.5rem 0.45rem; }
+/* The tail of /cities: places holding fewer than four trees, listed as plain
+   text rather than as cards. The format carries the distinction the section
+   makes, since a photo card the same size as Brisbane's is exactly what made
+   one tree in a park read as a city (Hidde, 2026-09-11). */
+.cindex-others { margin-top: 2.6rem; border-top: 1px solid var(--cream-dark); padding-top: 1.4rem; }
+.cindex-others > p:first-of-type { font-size: 14px; color: var(--ink-mid); max-width: 46rem; }
+.cindex-otherrow { font-size: 13px; line-height: 1.7; margin-top: 0.7rem; }
+.cindex-otherrow b { display: block; font-weight: 800; color: var(--ink); }
+
 .panel-head .ex-search { margin-top: 0.75rem; display: block; width: 100%; }
 .explore-head { padding: 1.1rem 2rem 0.9rem; display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 1.5rem; align-items: center; }
 .explore-head h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.015em; }

@@ -171,15 +171,21 @@ const cities = defineCollection({
      * shows cities, because an index of cities that is not a list of cities is
      * the first step to a page nobody trusts. A region belongs on its country
      * page and in collections. Every contract, title, schema and link minimum
-     * is identical either way. */
-    kind: z.enum(["city", "region", "park", "forest"]).optional(),
-    // What KIND of place this page covers. Added 2026-08-17 with Tenerife, the
-    // first island: an island is an ordinary place in the one queue and ships
-    // under the existing contracts, but it behaves differently in one way a
-    // reader feels immediately, which is that its trees are a drive apart
-    // rather than a walk. Explore groups on this; nothing else branches on it,
-    // and a missing value means an ordinary city.
-    kind: z.enum(["city", "island"]).optional(),
+     * is identical either way.
+     *
+     * An island is here for a different reason, added 2026-08-17 with
+     * Tenerife: it is an ordinary place in the one queue and ships under the
+     * existing contracts, but it behaves differently in one way a reader feels
+     * immediately, which is that its trees are a drive apart rather than a
+     * walk. Explore groups on that; nothing else branches on it.
+     *
+     * ONE declaration, since 2026-09-11. There were two, and the second one
+     * silently won, which is how JavaScript object literals work: the enum in
+     * force was ["city", "island"] and no file could carry the region, park or
+     * forest that v1.15 had approved a fortnight earlier. A rule nothing can
+     * express is a rule nobody follows, and this one went unnoticed because
+     * every place written since defaulted to a city and validated fine. */
+    kind: z.enum(["city", "island", "region", "park", "forest"]).optional(),
     status: z.enum(["needs_curation", "curated", "published"]).optional(),
     intro: z.string().optional(),
     meta_description: z.string().optional(),

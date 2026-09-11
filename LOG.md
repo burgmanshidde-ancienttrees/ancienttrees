@@ -11,6 +11,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session) - /cities lists cities again: 241 of them, and the other 341 places get a section of their own
+
+Hidde, from his phone: "Ik zou in de city lijst wel echt cities alleen tonen en niet bomen die random in een park staan." He was looking at Australia, where Cooper Creek, Derby and the Flinders Ranges each sat with one tree in a card the same size as Brisbane's twenty.
+
+**What was wrong.** Blueprint v1.15 already said only cities appear on /cities, and it could not be obeyed: `kind` was declared twice in the same object in site/src/content.config.ts, so the second declaration won and the enum in force was `["city", "island"]`. A place could not be a region, a park or a forest even though that was approved on 2026-08-28. Fixed to one declaration. And the real cause was elsewhere anyway: the places breaking the list are single famous trees given a home under the floor exception of 2026-08-31, which are `kind: city` files and always will be.
+
+**The line, in site/src/lib/city-index.ts.** A place appears in the city grid when it calls itself a city AND either holds four trees or is a ranked city in data/city-queue.json. Mechanical both ways, no per-village judgement. 241 cities in the grid; the queue clause is what keeps Canberra, Nantes, Liverpool, Philadelphia and Turku there at one or two trees, because a ranked city we are deliberately opening is often two trees old for weeks.
+
+**The other 341 are still on the page**, under "Places with fewer than 4 trees", as plain text links grouped by country rather than photo cards, with a line saying what they are. Nothing is hidden, no URL moved, and that section is what keeps the five places whose country has no country page from being orphaned (Luxembourg, Mexico, New Zealand, South Korea, Turkey). The homepage's "All N cities" signpost now counts the same 241 rather than every place file. The country page heading reads "Every place we map in X" rather than "Every mapped city", which the Flinders Ranges never were.
+
+Build 5366 pages, qa.py clean (8368 pages), preflight 0 problems. Looked at the page rendered at 375px and 1280px, both sections. Recorded in DECISIONS.md and, for the convention question of how a directory treats a famous single thing, in CONVENTIONS.md.
+
+FOR HIDDE: one judgement call is yours to overrule in a sentence. Canberra stays on the list with its single tree because the queue ranks it as a city we are covering. If you would rather the grid held only places with something to walk between, say so and the queue clause comes out, which drops Canberra and ten others.
+
 ## 2026-09-11 (continuation) - New city Hallstatt (4 trees, Austria's 7th), cleared two stale write claims
 
 An earlier attempt in this window stopped after 24 minutes with 96 unspent, having already released cleanly (no half-finished work behind it). Started from three standing claims left by attempts before that: `hallstatt` (verify, already finished, 4 trees sitting uncommitted), `busan` and `saopaulo` (write, but both cities are below the 4-tree floor with their register/Wikidata supply already exhausted, so nothing productive to write toward publication). Released busan and saopaulo's stale write claims rather than force research that CLAUDE.md itself rules out (from-zero web research on an unnamed city).

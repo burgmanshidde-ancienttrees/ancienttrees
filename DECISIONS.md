@@ -1,5 +1,46 @@
 # Decisions
 
+## 2026-09-11 - The city list lists cities
+
+Hidde, looking at /cities on his phone, where Cooper Creek (1 tree), Derby (1)
+and the Flinders Ranges (1) sat between Brisbane (20) and Hobart (11) in
+identical photo cards: "Ik zou in de city lijst wel echt cities alleen tonen en
+niet bomen die random in een park staan."
+
+**The rule already existed and could not be applied.** Blueprint v1.15 says in
+as many words that only cities appear on /cities, and gave every place a `kind`
+for it. Two things stopped it. The schema declared `kind` TWICE in the same
+object literal, so the second declaration silently won and the enum in force was
+`["city", "island"]`: no file could carry the region, park or forest v1.15 had
+approved, and nobody noticed because everything written since defaulted to a
+city and validated fine. And the places that actually broke the list were not
+regions anyway. They are single famous trees given a home under the floor
+exception of 2026-08-31, which was the right call for the tree and made them
+indistinguishable from a city in an index.
+
+**So the line is drawn on two mechanical conditions, and neither is a judgement
+about any particular village** (site/src/lib/city-index.ts): the place calls
+itself a city, AND it either holds four trees or is a ranked city in
+data/city-queue.json. 241 cities, down from 582 places.
+
+The second half of that is what keeps it honest. Rule 1(0) of the current phase
+opens a ranked city at four or five trees and moves on, so a real city we are
+deliberately covering is often two trees old for a while: Canberra, Nantes,
+Liverpool, Philadelphia and Turku stay on the list at one or two trees because
+the queue ranks them. What leaves is a place that was never a city.
+
+**Nothing is hidden and no URL changes.** The other 341 keep their page, their
+pin, their search entry and their country-page row, and /cities links every one
+of them from a section of its own, in plain text rather than photo cards,
+because a card the size of Brisbane's is what made one tree in a park read as a
+city in the first place. That section is also what stops the five places whose
+country has no country page from being orphaned, which qa.py fails the deploy
+for.
+
+Recorded as a decision rather than a fix because it is a listing rule somebody
+will otherwise re-derive: the tempting shortcut is a pure tree-count floor,
+which reads right until it deletes Canberra.
+
 ## 2026-09-08 - A tree needs a reason, not just an honest page
 
 Hidde, shown that four trees had gone live in Nara overnight from his own app
