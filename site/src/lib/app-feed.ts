@@ -86,6 +86,11 @@ export interface FeedTree {
    * both-surfaces rule that has never drifted. Null on most trees, where the
    * age or the girth is the reason and no sentence is needed. */
   why_go: string | null;
+  /** Around the trunk in WHOLE centimetres. Rounded here because 38 city-file
+   * values carry a decimal (Hawaii's registers measure to the millimetre) and
+   * the app decodes an Int: one 365.8 would make Swift reject the whole trees
+   * array, and every phone would quietly stop updating. */
+  girth_cm: number | null;
   url: string;
   /** The photograph, with the two sizes a client actually paints and the
    * licence question already answered.
@@ -140,6 +145,10 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         story: t.story ?? null,
         how_to_recognise: (t as any).how_to_recognise ?? null,
         why_go: (t as any).why_go ?? null,
+        girth_cm: (() => {
+          const g = Number((t as any).girth_cm);
+          return Number.isFinite(g) && g > 0 ? Math.round(g) : null;
+        })(),
         url: `/${city.id}/${slugify(t.name)}`,
         photo: p?.url
           ? {

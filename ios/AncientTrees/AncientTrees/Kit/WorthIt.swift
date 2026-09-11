@@ -279,7 +279,13 @@ private struct WorthItShape: ViewModifier {
 
     func body(content: Content) -> some View {
         if compact {
-            content.frame(minWidth: 44, minHeight: 44).contentShape(.rect)
+            // LEADING, so the glyph sits a normal gap after the dot beside the
+            // place name and the 44-point target runs to the right of it.
+            // Centred, a 13-point thumb in a 44-point frame left twice the gap
+            // after the dot that stood before it (Hidde, 2026-09-11: "de
+            // spacing van de duim opeens heel raar").
+            content.frame(minWidth: 44, minHeight: 44, alignment: .leading)
+                .contentShape(.rect)
         } else {
             content
                 .padding(.horizontal, 14)
