@@ -267,10 +267,33 @@ def pipeline_status():
             # usually "no source", which genus-names.json cannot fix at all:
             # that needs an actual verify pass, not a word list.
             miss_counts = {}
+            # Count the leads that are ONE field away, not every mention of a
+            # field. The raw count answers the wrong question, because a lead
+            # missing name, position, species and source is a scrape rather
+            # than a lead and closing any one of its gaps buys nothing. On
+            # 2026-09-11 the raw count made "position" the dominant gap (527
+            # of it) while only 96 leads were actually one coordinate away,
+            # and 119 were one verify pass away.
+            #
+            # That mattered more than a wrong label. Neither branch below
+            # fires on "position", so the whole directive fell through and a
+            # run under the floor was told NOTHING: the shelf sat at 3 against
+            # a floor of 60 with the alarm silently doing nothing. An alarm
+            # with a hole in it is worse than no alarm, because the silence
+            # reads as "fine". Hence the else below: every gap now says
+            # something, whatever the dominant one turns out to be.
+            single = {}
             for _, _, miss in b["needs"]:
                 for m in miss:
                     miss_counts[m] = miss_counts.get(m, 0) + 1
-            top = max(miss_counts, key=miss_counts.get) if miss_counts else None
+                if len(miss) == 1:
+                    single[miss[0]] = single.get(miss[0], 0) + 1
+            top = max(single, key=single.get) if single else None
+            if top:
+                print("      one field away: "
+                      + ", ".join("%d on %s" % (n, k.split(" (")[0])
+                                  for k, n in sorted(single.items(),
+                                                     key=lambda kv: -kv[1])))
             if top and top.startswith("species"):
                 print(f"  *** the writable pile is under {READY_FLOOR}. Widening "
                       f"data/genus-names.json is the cheap way to refill it: every word "
@@ -286,9 +309,22 @@ def pipeline_status():
                 # cheapest rung on the ladder unavailable, so it outranks
                 # whatever else the run had in mind.
                 print(f"  *** REFILL THE SHELF FIRST: the writable pile is under "
-                      f"{READY_FLOOR} and {miss_counts[top]} leads are unsourced, a scrape "
-                      f"never looked at by a pass. No script fills that. Dispatch a verify "
-                      f"agent on the batch below BEFORE taking anything else off the "
+                      f"{READY_FLOOR} and {single[top]} leads need only a source, a scrape "
+                      f"never looked at by a pass ({miss_counts[top]} lack one in total, "
+                      f"the rest are short of more than one field). No script fills that. "
+                      f"Dispatch a verify agent on the batch below BEFORE taking anything "
+                      f"else off the ladder. ***")
+                for line in refill_batches(b):
+                    print(line)
+            else:
+                # Anything else: still a directive, still pointing at work.
+                # A verify pass is what turns a scraped lead into a writable
+                # one whatever field it happens to be short of, so the batches
+                # are worth printing here too.
+                print(f"  *** REFILL THE SHELF FIRST: the writable pile is under "
+                      f"{READY_FLOOR}. The nearest work is the {single[top]} lead(s) "
+                      f"one '{top.split(' (')[0]}' away. No script closes that gap; "
+                      f"dispatch a verify agent before taking anything else off the "
                       f"ladder. ***")
                 for line in refill_batches(b):
                     print(line)

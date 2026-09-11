@@ -11,6 +11,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session) - The empty-shelf alarm had a hole in it, and 43 leads were holding a pin nobody read
+
+Chasing why the writable pile stood at 3 against its own floor of 60.
+
+**The alarm was silent, and that is why nobody fixed it.** prepare.py picks its directive from the DOMINANT missing field, and it has a branch for "species" and a branch for "source" and nothing else. The dominant gap had become "position" (527 mentions), so neither branch fired and a run under the floor was told nothing at all. Hidde's own ruling of 2026-09-01 ("de schrijfplank moet ook autonoom gevuld worden als die leeg raakt") has therefore not been reaching any run for some time. An alarm with a hole is worse than no alarm, because the silence reads as fine.
+
+Two fixes, both in prepare.py. It now counts the leads that are ONE field away rather than every mention of a field, because a lead missing four things is a scrape and closing one of its gaps buys nothing: the real picture is 119 on source, 91 on position, 41 on verification, 23 on name, 12 on species, against raw counts that made position look like the problem. And there is an else, so every gap now produces a directive whatever the dominant one turns out to be.
+
+**New: `scripts/repin.py`, the sibling of refill.py.** refill.py recovers a missing species from the tree's own name; this recovers a missing POSITION from a coordinate the lead was already holding under a key nothing reads (`coordinates`, `coords`, `coordinate`). 43 leads across 9 files, recovered for no tokens and no network.
+
+**Five of those 43 were lat/lng SWAPPED, and catching them is the point of the script rather than a detail.** Luxembourg's five carry `coordinates` as [lng, lat], so copying them as written would have put five pins in the Indian Ocean. The check is evidence rather than a hunch: a recovered pin is accepted only when it lands within 120 km of where that file's trees actually are, a swap only when the pair as written lands nowhere near and the swapped pair lands on it, and anything else is refused and left without a position. Nothing was refused today.
+
+**The honest result: the shelf went from 3 to 7, and scripts are now exhausted.** refill.py has nothing left to fill (0 leads), repin.py has nothing left to recover. The 119 leads that need only a source cannot be closed by any script, by definition: they are scrapes no pass has ever looked at. Refilling the shelf from here costs a verify pass, which the meter puts at 45k to 245k tokens for 0 to 7 trees, 37.8k per tree across 351 recorded passes. The batches prepare.py names are _famous-czech-republic (27 unsourced, all 27 with a photograph already attached), _famous-poland (the same), and trieste (27, no photographs).
+
+FOR HIDDE: that verify pass is the one thing standing between the night runs and an empty writing shelf, and it is your budget. Standing instruction says a run refills autonomously; I did not spend it inside a session with you sitting there without saying the number first.
+
 ## 2026-09-11 (session) - A famous-tree collection, ranked by what the world already wrote
 
 Hidde: "Moeten we een famous tree collectie maken?" Yes, and it follows straight on from the city-list change in the entry below: the 341 places that left the city grid are mostly single famous trees, and they needed a front door.
