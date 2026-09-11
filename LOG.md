@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (session) - The website tree page matches the app's, and a push now refuses one that does not
+
+**Hidde found "Exact location. The pin marks the trunk." still on the website**, a
+week after he had it taken out of the app, and asked for the page to match the
+app and for this not to happen again. Both done, and verified live at 375px and
+desktop on /lisbon/ajuda-dragon-tree.
+
+- **The page.** No exact-location line (English markup and `locExact` in all eight
+  languages). One thumb beside the place name, where the app has drawn it since
+  2026-09-04; no "Been here? Worth the visit?", no thumbs-down, no "Thanks,
+  counted". "Something's wrong" and its chips moved under the map. One component
+  with a `part`, so the two halves cannot drift.
+- **The mechanism.** `scripts/paritycheck.py`, in the pre-push hook for any change
+  under ios/ or site/src/: copy removed from one surface that still stands word
+  for word on the other is refused. Deliberate one-surface copy lives in
+  `data/parity-allow.json` with its reason. On its first real push it refused my
+  own commit: the app still carried the "Worth the visit?" heading as dead code
+  behind a switch; removed. A 21-day sweep is clean.
+- **Deploys.** Four push deploys in a row were cancelled by other pushes, then all
+  of them failed QA on an orphaned kyo_016 photo from the reader-photo session,
+  fixed by that session (f2da220a). When pushes keep cancelling each other,
+  `gh workflow run deploy.yml --ref main` is the documented route: the manual
+  group cannot be cancelled.
+- **getLISBON.** Their São Bento tipu photograph (sent 2026-09-06, which a check of
+  mine first missed as an attachment) is live on lis_005 with credit getLISBON,
+  and the thank-you went out on his word.
+
+**Left open, named so they are not lost:** the translated tree pages have no vote
+control in any of the seven languages; the web thumb is a colour emoji where the
+app draws an outline symbol; copycheck flags "Tap one to see how to tell it
+apart." in CollectSheet.swift:636, in the reader-photo session's area.
+
 
 <!-- archive-index -->
 
