@@ -58,7 +58,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its huge patched trunk (8.75m round), the hollow professionally repaired in 1989 after an earlier concrete filling failed. It stands at the end of the signposted Eichenweg trail toward Loimeth."
+      "how_to_recognise": "You can recognise it by its huge patched trunk (8.75m round), the hollow professionally repaired in 1989 after an earlier concrete filling failed. It stands at the end of the signposted Eichenweg trail toward Loimeth.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

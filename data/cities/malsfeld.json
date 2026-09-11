@@ -125,7 +125,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the bench built inside its hollow trunk, its branches trained in three tiers over an octagonal wooden frame. It stands at An der Linde, on the corner of Schulberg, in Hilgershausen."
+      "how_to_recognise": "You can recognise it by the bench built inside its hollow trunk, its branches trained in three tiers over an octagonal wooden frame. It stands at An der Linde, on the corner of Schulberg, in Hilgershausen.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "mls_004",
@@ -160,7 +168,15 @@
         "width": 640,
         "height": 480
       },
-      "how_to_recognise": "You can recognise it as the thickest but shortest of the four, its hollow trunk cropped back to just five metres tall. It stands on the sandstone common before the church in Ostheim."
+      "how_to_recognise": "You can recognise it as the thickest but shortest of the four, its hollow trunk cropped back to just five metres tall. It stands on the sandstone common before the church in Ostheim.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

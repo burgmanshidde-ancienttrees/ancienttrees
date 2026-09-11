@@ -352,7 +352,15 @@
       },
       "how_to_recognise": "You can recognise it by the trunk, five metres round when it was last measured, and by the steel braces in the crown. It stands alone at the junction of the Esweg and the Asserweg.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

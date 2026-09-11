@@ -54,6 +54,24 @@
       "species": "Indian Banyan (Ficus benghalensis)",
       "locality": "Honolulu Zoo, outside entrance, mauka tree",
       "reason": "Not a lead in the sense of unshipped: folded into hnl_015 (The Zoo Gate Banyans) alongside id 402 this pass. Recorded here because its own diameter figure (83.8cm) is inconsistent with its girth (2545.1cm) by roughly a factor of ten and looks like a register data-entry error (should be nearer 810cm by circumference=pi*diameter); a future pass touching this register more broadly should flag or fix this row rather than trust the diameter column at face value."
+    },
+    {
+      "register_id": "117",
+      "species": "Kapok (Ceiba pentandra)",
+      "locality": "Foster Botanical Garden, 180 N. Vineyard Blvd.",
+      "reason": "A second, smaller kapok (diameter 157.2cm vs the published hnl_003's 222.2cm) is registered at the same garden with the identical locality string as register_id 116 (hnl_003). No source found this pass gives an on-site landmark, path or terrace name that would let a visitor (or a future pass) tell this specimen apart from the one already published. Shipping it risks the register-twin problem (two near-identical entries that read as one thing to a visitor) rather than a genuinely distinct collectible point. Needs a garden map, plaque photo or staff confirmation naming which terrace/bed holds the second kapok before it can ship."
+    },
+    {
+      "register_id": "1289",
+      "species": "Panama Tree (Sterculia apetala)",
+      "locality": "Thomas Square",
+      "reason": "Register-only: diameter 111.8cm, height 55ft, vitality Good. No independent second source found this pass describing this specific tree at Thomas Square (Thomas Square's own Wikipedia page and the CTAHR/Star-Advertiser sources already used for hnl_007 cover the park's banyans, not this species). The park itself is public and free, so access is not the blocker, only the second source. A future pass should try the CTAHR OF-34 PDF (already cited for hnl_007) for a full tree inventory, or the Honolulu Exceptional Trees ordinance/resolution behind register_id 1289."
+    },
+    {
+      "register_id": "17, 28, 695",
+      "species": "Queensland Kauri (Agathis robusta), Hoop Pine (Araucaria cunninghamii), Caribbean Royal Palm (Roystonea oleracea)",
+      "locality": "Harold L. Lyon Arboretum, 3860 Manoa Rd.",
+      "reason": "Genuinely new, unpublished cluster of 4 register trees (plus a Sealing Wax Palm, register_id 120, too small/ornamental to be remarkable on its own) at a site confirmed publicly accessible: free admission, Mon-Fri 9am-3pm, visitor sign-in required but no reservation or gatekeeping (manoa.hawaii.edu/lyon/visit, hawaiimagazine.com), so hard rule 10 is not a blocker. What is missing is a second, non-register source describing any INDIVIDUAL specimen (species-level pages exist for Agathis robusta and Araucaria cunninghamii generally, but nothing found this pass ties a notable measurement or story to the Lyon Arboretum specimen specifically). A Honolulu City Council document (hnldoc.ehawaii.gov/hnldoc/document-download?id=19318) appears to be the underlying exceptional-tree designation record and could be a genuine second source once read, but it is a scanned/image PDF that this pass could not extract text from. A future pass with OCR or a different fetch route should try that document first; if it names measurements matching the register entries, this cluster ships in one go."
     }
   ],
   "blocked": [

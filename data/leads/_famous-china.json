@@ -1,94 +1,113 @@
 {
- "country": "China",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Big Banyan Tree, Guilin",
-   "lat": 24.734739,
-   "lng": 110.481648,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Main_Gate_for_Big_Banyan_Tree_in_Yangshuo.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%A6%95%E6%A0%91%E6%99%AF%E5%8C%BA-%E5%A4%A7%E6%A6%95%E6%A0%91_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%A6%95%E6%A0%91%E6%99%AF%E5%8C%BA-%E5%A4%A7%E6%A6%95%E6%A0%91_-_panoramio_(1).jpg"
-   ],
-   "status": "lead",
-   "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "King Cypress tree",
-   "lat": 29.622891,
-   "lng": 94.402868,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cupressus_gigantea_Bajie.jpg",
-    "https://commons.wikimedia.org/wiki/File:King_Cypress_Tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:King_Cypress_rock.jpg"
-   ],
-   "status": "lead",
-   "species": "Cypress (Cupressus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Prayer trees in China",
-   "lat": 35.488183,
-   "lng": 113.778936,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20240803_Confucian_Temple_at_Baiquan_03.jpg",
-    "https://commons.wikimedia.org/wiki/File:202606_Qianziyuan_Agricultural_Science_and_Technology_Expo_Park_04.jpg",
-    "https://commons.wikimedia.org/wiki/File:202606_Qianziyuan_Agricultural_Science_and_Technology_Expo_Park_05.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Old Ginkgo trees in Shaolin Monastery",
-   "lat": 34.507542,
-   "lng": 112.935539,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20241103_Bell_Tower_of_Shaolin_Temple_with_Ginkgo_Tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:20241103_Ginkgo_Trees_in_Shaolin_Temple_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:20241103_Ginkgo_Trees_in_Shaolin_Temple_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Six-Dynasty Juniper",
-   "lat": 32.05928,
-   "lng": 118.786057,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dongnan_Daxue_Liuchao_Song_(Nanjing,_1923).jpg",
-    "https://commons.wikimedia.org/wiki/File:LiuChaoSong_carving.jpg",
-    "https://commons.wikimedia.org/wiki/File:LiuChaoSong_stone.jpg"
-   ],
-   "status": "lead",
-   "species": "Juniper (Juniperus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Guilty Chinese Scholartree",
-   "lat": 39.923664,
-   "lng": 116.392731,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20170507_Place_of_death_of_the_Chongzhen_Emperor.jpg",
-    "https://commons.wikimedia.org/wiki/File:20211003_Stelae_for_Chongzhen.jpg",
-    "https://commons.wikimedia.org/wiki/File:Beijing_Jingshan_Park.JPG"
-   ],
-   "status": "done",
-   "resolved_note": "SHIPPED 2026-09-06 as bjs_007, joining the existing published Beijing city. Third-generation tree on the historic site (Elm of Saint-Gervais pattern); no lineage claim made to the 1644 original."
-  },
-  {
-   "name": "Styphnolobium japonicum in Qingyun Temple, Weishi County",
-   "lat": 34.602856,
-   "lng": 114.149308,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20230602_Pagoda_tree_at_Qingyun_Temple_in_Weishi_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:20230602_Pagoda_tree_at_Qingyun_Temple_in_Weishi_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:20230602_Pagoda_tree_at_Qingyun_Temple_in_Weishi_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  }
- ]
+  "country": "China",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Big Banyan Tree, Guilin",
+      "lat": 24.734739,
+      "lng": 110.481648,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Main_Gate_for_Big_Banyan_Tree_in_Yangshuo.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%A6%95%E6%A0%91%E6%99%AF%E5%8C%BA-%E5%A4%A7%E6%A6%95%E6%A0%91_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%A6%95%E6%A0%91%E6%99%AF%E5%8C%BA-%E5%A4%A7%E6%A6%95%E6%A0%91_-_panoramio_(1).jpg"
+      ],
+      "status": "published",
+      "verified_id": "bgt_001",
+      "verified_file": "data/research/_famous-china-verified.json",
+      "species": "Chinese Banyan (Ficus concinna)",
+      "species_basis": "confirmed via Baidu Baike",
+      "verify_note": "2026-09-10 verification pass: strongly corroborated (Baidu Baike + TravelChinaGuide + others), alive, ~1400yr, ticketed scenic area, film location for 1960's Liu Sanjie. Clears the collectible-point test easily. Neither Guilin nor Yangshuo is a published city; would need Yangshuo as its own container (well past Guilin's day-trip boundary), a placement call not made here.",
+      "published_id": "yas_001",
+      "published_place": "Yangshuo"
+    },
+    {
+      "name": "King Cypress tree",
+      "lat": 29.622891,
+      "lng": 94.402868,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cupressus_gigantea_Bajie.jpg",
+        "https://commons.wikimedia.org/wiki/File:King_Cypress_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:King_Cypress_rock.jpg"
+      ],
+      "status": "published",
+      "verified_id": "bjc_001",
+      "verified_file": "data/research/_famous-china-verified.json",
+      "species": "Tibetan Cypress (Cupressus gigantea)",
+      "species_basis": "confirmed via English Wikipedia and Baidu Baike, both naming this exact specimen",
+      "verify_note": "2026-09-10 verification pass: 'World Cypress King Garden', a ticketed reserve at Bajie village near Bayi/Nyingchi. Two independent sources (en.wikipedia, Baidu Baike) agree on coordinates, ~50m height and ~5.8-6m diameter; disagree on age (2,600 vs 'over 3,200' years, both recorded). Own-place candidate: recommend SHIPPING, it has real tourist infrastructure (entry fee, shuttle transport, tour-itinerary inclusion) and a religious legend (life tree of Tonpa Shenrab Miwoche, founder of Bon) on top of being the largest known specimen of its species.",
+      "published_id": "nyi_001",
+      "published_place": "Nyingchi"
+    },
+    {
+      "name": "Prayer trees in China",
+      "lat": 35.488183,
+      "lng": 113.778936,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20240803_Confucian_Temple_at_Baiquan_03.jpg",
+        "https://commons.wikimedia.org/wiki/File:202606_Qianziyuan_Agricultural_Science_and_Technology_Expo_Park_04.jpg",
+        "https://commons.wikimedia.org/wiki/File:202606_Qianziyuan_Agricultural_Science_and_Technology_Expo_Park_05.jpg"
+      ],
+      "status": "blocked",
+      "why": "Not a collectible point. Verified 2026-09-10: 'Prayer trees in China' is a generic Wikimedia Commons category covering a scattered phenomenon (wish/prayer trees) across many unrelated Chinese sites (Baiquan's Confucian Temple, Qianziyuan Agricultural Science and Technology Expo Park, Badachu, Mount Laojun, Shenzhen), not one named tree or even one site; the three candidate photos in this lead are from at least two different, geographically distinct places (a temple at Baiquan, Henan and an unrelated expo park) that merely share the category tag. Nothing to verify or ship as a single entry; the coordinate given is just one of several unrelated locations under the same Commons label."
+    },
+    {
+      "name": "Old Ginkgo trees in Shaolin Monastery",
+      "lat": 34.507542,
+      "lng": 112.935539,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20241103_Bell_Tower_of_Shaolin_Temple_with_Ginkgo_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:20241103_Ginkgo_Trees_in_Shaolin_Temple_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:20241103_Ginkgo_Trees_in_Shaolin_Temple_02.jpg"
+      ],
+      "status": "published",
+      "verified_id": "gst_001",
+      "verified_file": "data/research/_famous-china-verified.json",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "species_basis": "confirmed via a directly-fetched Sohu source naming this specific tree",
+      "verify_note": "2026-09-10 verification pass: single directly-fetched source (Sohu) names this exact tree, 'Luohan Tree', standing in front of Tianwang Dian, ~1500yr, 25m tall, called the oldest tree in Dengfeng. A second source could not be independently fetched (four attempts, all blocked); search-engine summaries of blocked pages corroborate but do not count as a source, so delivered flagged on one confirmed source rather than held back. Unresolved: whether this is the same tree Chinese sources separately call one of a 'trio' of King Ginkgos in the temple's pagoda courtyard, or a distinct specimen; recommend leading with the Tianwang Dian tree since it alone is singled out by name and superlative.",
+      "published_id": "dfg_001",
+      "published_place": "Dengfeng"
+    },
+    {
+      "name": "Six-Dynasty Juniper",
+      "lat": 32.05928,
+      "lng": 118.786057,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dongnan_Daxue_Liuchao_Song_(Nanjing,_1923).jpg",
+        "https://commons.wikimedia.org/wiki/File:LiuChaoSong_carving.jpg",
+        "https://commons.wikimedia.org/wiki/File:LiuChaoSong_stone.jpg"
+      ],
+      "status": "verified",
+      "verified_id": "sdj_001",
+      "verified_file": "data/research/_famous-china-verified.json",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "species_basis": "confirmed via English Wikipedia and Baidu Baike; the common name means 'pine' but Baidu is explicit it is actually a juniper, a historical misnaming",
+      "verify_note": "2026-09-10 verification pass: alive, ~1500yr, on Southeast University's Sipailou campus, Nanjing, free/open campus landmark. DESTINATION TEST: recommend AGAINST a standalone place page; reads as a loved campus curiosity rather than a reason to travel to Nanjing, and Nanjing has much stronger draws that would eclipse it. Better held as the seed tree for a future Nanjing city page than shipped alone."
+    },
+    {
+      "name": "Guilty Chinese Scholartree",
+      "lat": 39.923664,
+      "lng": 116.392731,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20170507_Place_of_death_of_the_Chongzhen_Emperor.jpg",
+        "https://commons.wikimedia.org/wiki/File:20211003_Stelae_for_Chongzhen.jpg",
+        "https://commons.wikimedia.org/wiki/File:Beijing_Jingshan_Park.JPG"
+      ],
+      "status": "done",
+      "resolved_note": "SHIPPED 2026-09-06 as bjs_007, joining the existing published Beijing city. Third-generation tree on the historic site (Elm of Saint-Gervais pattern); no lineage claim made to the 1644 original."
+    },
+    {
+      "name": "Styphnolobium japonicum in Qingyun Temple, Weishi County",
+      "lat": 34.602856,
+      "lng": 114.149308,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20230602_Pagoda_tree_at_Qingyun_Temple_in_Weishi_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:20230602_Pagoda_tree_at_Qingyun_Temple_in_Weishi_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:20230602_Pagoda_tree_at_Qingyun_Temple_in_Weishi_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    }
+  ]
 }

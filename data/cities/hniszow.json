@@ -56,7 +56,15 @@
       "transport": "Rural village Hniszów, gmina Ruda-Huta, eastern Lubelskie Voivodeship, near the Bug river and the Ukraine border. No direct public transport to the site; reached by car or by the Green Velo cycle route.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise it as the largest of six monumental oaks along a signposted 1.2km trail through the former manor park. It stands beside the Bug river in Hniszow, on the Green Velo cycling route."
+      "how_to_recognise": "You can recognise it as the largest of six monumental oaks along a signposted 1.2km trail through the former manor park. It stands beside the Bug river in Hniszow, on the Green Velo cycling route.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -55,7 +55,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the fire scar and the hollow low trunk, 7.35 metres round. It stands in the abbey's own park at Rudy, on ground three dendrology trails run through."
+      "how_to_recognise": "You can recognise it by the fire scar and the hollow low trunk, 7.35 metres round. It stands in the abbey's own park at Rudy, on ground three dendrology trails run through.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "rud_002",
@@ -86,6 +94,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
       }
     }
   ]

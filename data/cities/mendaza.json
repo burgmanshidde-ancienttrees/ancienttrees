@@ -1,0 +1,67 @@
+{
+  "city": "Mendaza",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Mendaza is a village in Navarre's Berrueza valley, and the tree on this map stands well outside it, on a hillside path toward a hermitage. The Encina Tres Patas, the Three-Legged Oak, is hollow through the trunk and stands on three thick buttresses instead of one round stem. Spain's environment ministry named it the country's longest-lived tree in 2007, and it was a European Tree of the Year finalist in 2020. Local tradition puts it at around twelve hundred years old.",
+  "meta_description": "The Encina Tres Patas near Mendaza, Navarre: a hollow holm oak on three buttress legs, roughly 1,200 years old, Spain's 2007 longevity award winner.",
+  "question_meta": "Mendaza's notable tree is the Encina Tres Patas, the Three-Legged Oak. Its age, its structure, and how to reach it.",
+  "question_answer": "The tree at Mendaza is the Encina Tres Patas, a holm oak on the slope between the village and the Ermita de Santa Coloma in Navarre's Berrueza valley. It stands hollow through the trunk on three separate buttress legs, local tradition puts it at roughly 1,200 years old, and it won Spain's national award for the country's longest-lived tree in 2007.",
+  "question_context": "Spanish Wikipedia, Wikidata and a regional travel blog agree closely on the tree's numbers: a girth of 770 centimetres, a height of 15.5 metres and a crown 19.2 metres across. What makes it recognisable is the trunk itself, entirely hollow and standing on three thick buttresses rather than one stem, which is where the name comes from. Metal bands were fitted around the opening at some point to stop it splitting further, a repair rather than a sign of decline; Spanish Wikipedia describes the tree as showing excellent condition and vitality. It was declared a Natural Monument by the Government of Navarre in 1991 and sits in the region's catalogue of monumental trees. In 2007 Spain's environment ministry gave it the national award for the country's longest-lived tree, and it reached the top ten of European Tree of the Year in 2020. The age of roughly 1,200 years is repeated across every source with no ring study behind it, so it is a traditional estimate rather than a measured one. A waymarked circular walking route between Mendaza and the Ermita de Santa Coloma passes the tree; there is no confirmed public transport to the valley.",
+  "faq": [
+    {
+      "q": "How old is the Encina Tres Patas?",
+      "a": "Sources repeat roughly 1,200 years, sometimes called Spain's second-oldest tree, but no source cites a ring study or core sample. Treat it as a traditional estimate."
+    },
+    {
+      "q": "Why is it called the Three-Legged Oak?",
+      "a": "The trunk is hollow through the middle and stands on three separate thick buttresses instead of a single round stem, which from a distance look like three legs holding the crown up."
+    },
+    {
+      "q": "Can you visit the tree at Mendaza?",
+      "a": "Yes, free and open. It stands on the hillside path between Mendaza village and the Ermita de Santa Coloma, on a waymarked circular walking route. No gate or fee."
+    },
+    {
+      "q": "How do you get to Mendaza?",
+      "a": "By car. Mendaza sits in Navarre's Berrueza valley, with Estella-Lizarra the nearest town of any size; no public transport is confirmed to the village."
+    }
+  ],
+  "hero_tree_id": "mza_001",
+  "oldest_tree_id": "mza_001",
+  "trees": [
+    {
+      "id": "mza_001",
+      "name": "Encina Tres Patas de Mendaza",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 1,200 years, by local tradition; no ring study published",
+      "age_min": 1000,
+      "age_max": 1400,
+      "girth_cm": 770,
+      "location": {
+        "address": "Paraje de La Laguna, on the east slope of the Dos Hermanas hill, between Mendaza and the Ermita de Santa Coloma, Mendaza, Navarre",
+        "latitude": 42.64309,
+        "longitude": -2.23215,
+        "neighbourhood": "Countryside outside Mendaza village"
+      },
+      "story": "This oak's trunk is not a trunk. It is three thick buttresses standing around a hollow core, which is where the name comes from: the Encina Tres Patas, the Three-Legged Oak, and from a distance the three legs really do look like they are holding the crown up on their own.\n\nIt stands on a hillside in Navarre's Berrueza valley, on the path between Mendaza village and the Ermita de Santa Coloma. Spanish Wikipedia, Wikidata and a regional travel blog agree closely on its size: a girth of 770 centimetres, a height of 15.5 metres, a crown spreading 19.2 metres. Metal bands were fitted around the hollow at some point to stop it splitting further, a repair rather than a sign of trouble; Wikipedia describes it as showing excellent condition and vitality.\n\nLocal tradition puts it at roughly 1,200 years old, which would make it one of the oldest living things in Spain, though nobody has backed that figure with a ring count. In 2007 Spain's environment ministry gave it the national award for the country's longest-lived tree anyway, and in 2020 it reached the top ten of European Tree of the Year. The Government of Navarre declared it a Natural Monument in 1991.\n\nA waymarked circular walk between the village and the hermitage passes right by it. If you know of a study that has actually dated it, tell us.",
+      "why_go": "A holm oak with a hollow trunk standing on three separate buttresses instead of one stem is not a shape this species usually takes, and Spain's own environment ministry called it the country's longest-lived tree in 2007. The walk to it is a waymarked hillside route between a village and a hermitage, which makes the tree itself the destination rather than a stop along the way to somewhere else.",
+      "how_to_recognise": "You can recognise it by the trunk: hollow through the middle, standing on three separate buttresses rather than one round stem, with metal bands around the opening. It stands alone on the path between Mendaza and the Ermita de Santa Coloma.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Encina_Tres_Patas_de_Mendaza",
+        "https://www.wikidata.org/wiki/Q584899",
+        "https://www.escapadarural.com/blog/el-encino-de-las-tres-patas-de-mendaza/"
+      ],
+      "access": "Free, open countryside. Reached on foot along the path between Mendaza village and the Ermita de Santa Coloma; a waymarked circular hiking route passes the tree. No indication of private land or restricted access.",
+      "transport": "Rural, in Navarre's Berrueza valley; no public transport confirmed to Mendaza, reachable by car. Nearest town of any size is Estella-Lizarra.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Mendaza%2C_Navarra_Spanien-Steineiche.jpg",
+        "license": "CC BY-SA 2.0 es",
+        "attribution": "Javier Hermoso De Mendoza, via Wikimedia Commons",
+        "status": "approved",
+        "width": 450,
+        "height": 600
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}

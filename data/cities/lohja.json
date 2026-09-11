@@ -55,7 +55,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the oak beside a picnic table on the marked Paavola nature trail, one of two protected oaks along the same path. It stands in Paavolan tammikko reserve on Lohjansaari."
+      "how_to_recognise": "You can recognise it as the oak beside a picnic table on the marked Paavola nature trail, one of two protected oaks along the same path. It stands in Paavolan tammikko reserve on Lohjansaari.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

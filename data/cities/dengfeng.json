@@ -1,0 +1,70 @@
+{
+  "city": "Dengfeng",
+  "country": "China",
+  "status": "needs_curation",
+  "intro": "Dengfeng's mapped tree is a ginkgo standing in front of the Hall of Heavenly Kings, the first hall on Shaolin Temple's main axis, said to be Dengfeng's oldest living tree at roughly 1,500 years. Local legend puts the holes in its trunk down to monks driving a finger into the wood, the one-finger and two-finger Chan training the temple built its name on. A single male tree, it carries no fruit, just a crown that turns gold every November.",
+  "meta_description": "The Ginkgo of Shaolin Temple in Dengfeng: roughly 1,500 years old, said to be the city's oldest living tree, with a legend behind its holed trunk.",
+  "question_answer": "Dengfeng's mapped tree is a ginkgo standing in front of Tianwang Dian, the Hall of Heavenly Kings, on Shaolin Temple's main axis. One source calls it the oldest living tree in Dengfeng, roughly 1,500 years old, about 25 metres tall with a crown 37 metres across.",
+  "question_meta": "Dengfeng's Shaolin Temple ginkgo, said to be the city's oldest tree. Its legend, its age, and where it stands.",
+  "question_context": "One directly-fetched source describes this exact ginkgo standing in front of Tianwang Dian, the Hall of Heavenly Kings, one of the first halls on Shaolin Temple's main axis: about 1,500 years old, 25 metres tall, a crown 37 metres across, and named Dengfeng's oldest living tree. Locally the holes through its trunk are put down to monks driving a finger into the wood, the one-finger and two-finger Chan training the temple built its reputation on, a story the temple tells rather than one anyone has documented. It is a single male tree, which is where its local name comes from, the Luohan Tree: no fruit, none of the smell female ginkgos are known for, just gold in November. A separate Chinese account attaches the same finger-strike story to three ginkgos in the temple's pagoda courtyard, and it is not established whether those are this tree described differently or a distinct group further in; this page follows the source naming the Tianwang Dian tree specifically. Shaolin Temple is a major, ticketed tourist destination with regular bus and tour access from Dengfeng and Zhengzhou, open daily.",
+  "faq": [
+    {
+      "q": "How old is the Shaolin Temple ginkgo?",
+      "a": "One source calls it roughly 1,500 years old and names it the oldest living tree in Dengfeng. No second source was independently fetched, so treat this as flagged."
+    },
+    {
+      "q": "Why does the trunk have holes in it?",
+      "a": "Local legend attributes them to monks driving a finger into the wood during one-finger and two-finger Chan training, a story the temple tells rather than one that has been documented."
+    },
+    {
+      "q": "Why is it called the Luohan Tree?",
+      "a": "It is a single male ginkgo, so it bears no fruit and none of the smell female ginkgos produce, which is where the local name comes from."
+    },
+    {
+      "q": "Is the Shaolin Temple ginkgo free to see?",
+      "a": "No, Shaolin Temple charges admission. It is one of China's most visited religious and tourist sites, open daily with regular bus and tour access from Dengfeng and Zhengzhou."
+    }
+  ],
+  "hero_tree_id": "dfg_001",
+  "oldest_tree_id": "dfg_001",
+  "trees": [
+    {
+      "id": "dfg_001",
+      "name": "Ginkgo of Shaolin Temple (Luohan Tree)",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 1,500 years",
+      "age_min": 1300,
+      "age_max": 1700,
+      "girth_cm": null,
+      "location": {
+        "address": "In front of the Hall of Heavenly Kings (Tianwang Dian), Shaolin Temple, Song Mountain, Dengfeng, Zhengzhou, Henan",
+        "latitude": 34.50754,
+        "longitude": 112.93554,
+        "neighbourhood": "Shaolin Temple, Song Mountain, Dengfeng"
+      },
+      "story": "The holes in this ginkgo's trunk are put down locally to monks driving a finger into the wood, the one-finger and two-finger Chan training Shaolin built its name on. That is a story the temple tells rather than one anybody has documented, and it is worth hearing on those terms.\n\nThe tree stands in front of the Hall of Heavenly Kings, the first hall on Shaolin's main axis, about 25 metres tall with a crown 37 metres across. The source describing it calls it the oldest living tree in Dengfeng at roughly 1,500 years, which would make it about as old as the temple around it. It is a single male tree, which is where the local name comes from, the Luohan Tree: no fruit, none of the smell female ginkgos are known for, just the gold in November.\n\nOne thing we cannot settle. A separate Chinese account attaches the same finger-strike story, and a King of Ginkgos title, to three ginkgos in the temple's pagoda courtyard, and it is not established whether those are this tree described differently or a genuinely different group further in. We have followed the source that names the tree in front of Tianwang Dian, because that is the one singled out as Dengfeng's oldest, and the pin marks the hall rather than the trunk. If you have stood there and can tell us which is which, we would like to hear it.",
+      "how_to_recognise": "You can recognise it by the holes in the trunk, and by the crown, 37 metres across on a tree of 25 metres. It stands in front of the Hall of Heavenly Kings, the first hall on the temple's main axis.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the crown turns gold over the first hall of the temple"
+      },
+      "verified_sources": [
+        "https://m.sohu.com/a/203021767_100000468/"
+      ],
+      "access": "Paid entry: Shaolin Temple is one of China's most visited religious/tourist sites, ticketed, open daily to the public.",
+      "transport": "Within the Shaolin Temple complex on Song Mountain, near Dengfeng; the temple is a major tourist destination with regular bus and tour access from Dengfeng and Zhengzhou. No specific stop confirmed this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

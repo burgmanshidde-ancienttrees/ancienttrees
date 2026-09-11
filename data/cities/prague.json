@@ -3,9 +3,9 @@
   "country": "Czech Republic",
   "status": "needs_curation",
   "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All of them are free to visit.",
-  "meta_description": "Prague protects its old trees by law. Twenty-one remarkable trees, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
+  "meta_description": "Prague protects its old trees by law. Twenty-five remarkable trees, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
   "question_answer": "The oldest tree in Prague that anyone can actually go and see is the Beethoven Plane, a London plane growing in the garden of the Grand Priory Palace on Velkoprevorske namesti in Mala Strana, estimated at somewhere between 200 and 300 years old. Its exact planting date is disputed, but its trunk, seven and a half metres around, is the thickest of any protected tree in the city, and it towers over the wall where tourists photograph the Lennon Wall without ever looking up.",
-  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and twenty more remarkable trees.",
+  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and twenty-four more remarkable trees.",
   "question_context": "Prague has an older tree than this one, but nobody can visit it. Dub Karel, a 550 year old oak in a private castle park at Kolodeje, is Prague's oldest tree by a wide margin, and its own official record calls it the most massive tree in the city. The land is privately owned and closed to visitors, so per this site's rule on withheld locations it is left off the list rather than published as a destination nobody can reach. That leaves the Beethoven Plane as the oldest tree anyone can actually walk up to. It grows in the garden of the Grand Priory Palace, once the Prague seat of the Order of Malta, on Velkoprevorske namesti in Mala Strana, its trunk towering above the same wall famous today as the Lennon Wall. The romantic story, that a young Beethoven sat dreaming beneath it during his 1796 visit, does not survive contact with the calendar: he was in Prague in February, an unlikely month for garden reveries. Its real age is disputed among Czech sources, ranging from around 200 to nearly 300 years, but no other protected tree in the city comes close to its girth.",
   "faq": [
     {
@@ -683,7 +683,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its slender 2.26-metre trunk standing alone at a bus turning circle. It stands at the south exit of Nadrazi Holesovice metro station."
     },
     {
       "id": "prg_019",
@@ -713,7 +714,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "You can recognise it by its 2.91-metre trunk on the open lawn of a hospital garden. It stands in the grounds of the Italska Street clinic, near the entrance from Helenska."
     },
     {
       "id": "prg_020",
@@ -744,7 +746,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the long low branches running out in every direction, on the open ground between houses 28 and 30. Look at it from the pavement, because the ground itself is private."
+      "how_to_recognise": "You can recognise it by the long low branches running out in every direction, on the open ground between houses 28 and 30. Look at it from the pavement, because the ground itself is private.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "prg_021",
@@ -778,6 +788,155 @@
         "height": 6406
       },
       "how_to_recognise": "You can recognise it by its size alone, a trunk over five metres round and 36 metres tall, older than everything around it. It stands beside the pond and its spring, between the theatre building and the water."
+    },
+    {
+      "id": "prg_022",
+      "name": "The Oak of Na Cibulkach Forest Park",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 180,
+      "age_max": 220,
+      "girth_cm": 408,
+      "location": {
+        "address": "Lesopark Na Cibulkach (Prirodni park Kosire-Motol), south side of the path extending U Cibulky street near a crossroads, 150 00 Praha 5-Kosire",
+        "latitude": 50.06591,
+        "longitude": 14.35452,
+        "neighbourhood": "Kosire, Praha 5"
+      },
+      "verified_sources": [
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=12567",
+        "https://cs.wikipedia.org/wiki/Dub_letn%C3%AD_v_lesoparku_Na_Cibulk%C3%A1ch"
+      ],
+      "access": "Free, public forest park (Prirodni park Kosire-Motol, designated 1991), open at all times",
+      "transport": "Bus to Kosire, then a short walk into the Cibulka estate parkland",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A crack runs up to eight metres down one side of this oak, and the conservation register still lists it as standing.\n\nPrague's database has carried the tree since June 2007 and refreshed the entry in August 2024, hollow and vertical split and all. It went in around 1820, when the Cibulka estate above Kosire was being laid out as a landscape park. The estate house is a ruin today. The park outlived it and was made the Kosire-Motol nature park in 1991, which is how an oak planted for one family's private view ended up on public ground.\n\nNeighbouring trees shade it and it has grown accordingly, upward rather than outward: a long straight trunk that forks into three branches high overhead and carries a narrow crown to 24 metres. Round the trunk it measures 408 centimetres, which is a serious oak anywhere else and the slimmer of the two here. Its registered neighbour 90 metres away, planted at about the same time, reaches 525.\n\nThe numbers say the crack has not finished it. A tape put round the trunk in 2011 read 394 centimetres; the register's 2024 update reads 408. Fourteen centimetres in thirteen years is a tree still laying down wood. Nobody has cored it, so the age is not a measurement: the register dates the planting to about 1820, which puts the tree near two centuries.",
+      "how_to_recognise": "You can recognise it by the long straight trunk, 408 centimetres round and split by a long vertical crack, forking into three branches high overhead. It stands south of the path; the oak 90 metres away is barrel-shaped and much wider.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
+    },
+    {
+      "id": "prg_023",
+      "name": "The Oak with the Bizarre Trunk of Na Cibulkach",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 210 years",
+      "age_min": 190,
+      "age_max": 230,
+      "girth_cm": 525,
+      "location": {
+        "address": "Lesopark Na Cibulkach (Prirodni park Kosire-Motol), at a Y-shaped fork of the path extending U Cibulky street, west of the housing estate across an unnamed stream, 150 00 Praha 5-Kosire",
+        "latitude": 50.065702,
+        "longitude": 14.353713,
+        "neighbourhood": "Kosire, Praha 5"
+      },
+      "verified_sources": [
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=13044",
+        "https://cs.wikipedia.org/wiki/Dub_s_bizarn%C3%ADm_kmenem_Na_Cibulk%C3%A1ch"
+      ],
+      "access": "Free, public forest park (Prirodni park Kosire-Motol, designated 1991), open at all times",
+      "transport": "Bus to Kosire, then a short walk into the Cibulka estate parkland; 90 metres from prg_022",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Czech conservation law has an official name for this tree, and the name is the oak with the bizarre trunk.\n\nIt earns it. The trunk swells like a barrel, 525 centimetres round, then tapers and breaks into a crown so modest that the whole tree stops at 17 metres. Oaks that thick are usually far taller. This one put its two centuries into width.\n\nIt went into the ground around 1815, in the landscape park laid out at the Cibulka estate, and it has outlasted what it was planted for. The house above it is a ruin. The wood around it became the Kosire-Motol nature park in 1991, and Prague's register of protected trees added the oak itself in March 2008.\n\nA survey in 2016 taped the trunk at 525 centimetres and the register's 2024 refresh carries the same number to the centimetre. That survey called the tree's condition deteriorated, which on an oak of this age describes a stage rather than an ending; the register still lists it as standing. Nobody has counted its rings, so the two centuries come from that planting date and should be read loosely.\n\nNinety metres away stands the park's other registered oak, taller, slimmer and cracked down one side. Seeing them within five minutes of each other is the argument for coming out to Kosire at all: same park, same decade, two completely different animals.",
+      "how_to_recognise": "You can recognise it by the barrel-shaped trunk, 525 centimetres round, tapering into a small crown only 17 metres up. It stands at the Y-shaped fork in the forest paths, west of the housing estate across the stream.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
+    },
+    {
+      "id": "prg_024",
+      "name": "The Beech of Brevnovska Gate, Hvezda",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 235 years",
+      "age_min": 210,
+      "age_max": 250,
+      "girth_cm": 386,
+      "location": {
+        "address": "Obora Hvezda nature reserve, about 50 metres from the Brevnovska brana entrance (also called Vypisska or Prazska brana), on the main path toward the Hvezda summer palace, 162 00 Praha 6-Liboc",
+        "latitude": 50.081366,
+        "longitude": 14.341321,
+        "neighbourhood": "Liboc, Praha 6"
+      },
+      "verified_sources": [
+        "http://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=11091",
+        "https://cs.wikipedia.org/wiki/Buk_u_B%C5%99evnovsk%C3%A9_br%C3%A1ny_v_obo%C5%99e_Hv%C4%9Bzda"
+      ],
+      "access": "Free, public nature reserve (Obora Hvezda), open year round",
+      "transport": "10 min walk from the Obora Hvezda or Vypich tram and bus stops (same access as prg_005, about 230 metres away)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Two invading armies stripped this wood before the tree standing here was ever planted. French troops took the game reserve's timber during the War of the Austrian Succession, Prussian troops finished the work in the Seven Years' War, and after 1763 Hvezda was replanted with beech, oak and hornbeam. This beech is one of the oldest survivors of that replanting.\n\nAssessments put it between 210 and 250 years old, revised to roughly 230 in 2019, so the arithmetic and the history agree with each other. It stands 50 metres inside the Brevnovska gate, on the main path toward the star-shaped Hvezda summer palace, and it is one of the tallest trees in the reserve: 34 metres when it was measured in 2009, with a crown 26 metres across and the heavy buttressed root flare that old beeches put down around their base.\n\nIt is also still growing. The trunk read 373 centimetres round in 2009, 380 in 2013 and 386 in the register's 2024 update. Its health was assessed as very good with no significant damage, which is not nothing for a tree of this age standing a step from the reserve's busiest path; the maintenance file recommends a safety prune for that same reason.\n\nDo not confuse it with the twin beech 230 metres away near the same gate. Separate tree, separate register entry, and this is the one on the main path.",
+      "how_to_recognise": "You can recognise it by the heavy buttressed root flare under a trunk 386 centimetres round, and by its height, 34 metres, among the tallest here. It stands 50 metres inside the Brevnovska gate, beside the main path.",
+      "notes": "AOPK register kod 104291 (isop_id 52750), protected since 22 August 2001, last register update 2024-08-22 (still listed alive/publishable). One of the oldest beeches planted when the game reserve was restored and replanted with beech, oak and hornbeam sometime after 1763, following the destruction of the original stock first by French troops in the War of the Austrian Succession and then by Prussian troops in the Seven Years' War. Estimated age 210 to 250 years as of a 2016 assessment, revised to about 230 years in 2019; the same range this project already uses for prg_005 (The Twin Beech of Hvezda), a different, separately registered tree about 230 metres away near the same gate. Girth 373 cm (2009), 380 cm (2013), 386 cm per the register's 2024 update. Height 34 m in 2009, crown width 26 m, one of the tallest trees in the reserve. Health assessed very good in 2009 with no major visible damage; maintenance note recommends a safety/health pruning because it stands right beside the main path. Prominent buttressed root flare typical of old beeches. Stands about 50 metres inside the reserve from the Brevnovska gate, on the main path to the star-shaped Hvezda summer palace.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
+    },
+    {
+      "id": "prg_025",
+      "name": "The Oak of Libocka Gate, Hvezda",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 175 years",
+      "age_min": 155,
+      "age_max": 195,
+      "girth_cm": 356,
+      "location": {
+        "address": "Obora Hvezda nature reserve, right of the main path from the Libocka brana entrance toward the Hvezda summer palace, past the group of horse chestnuts and just before the large children's playground built in 2019, 162 00 Praha 6-Liboc",
+        "latitude": 50.084942,
+        "longitude": 14.334739,
+        "neighbourhood": "Liboc, Praha 6"
+      },
+      "verified_sources": [
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=11083",
+        "https://cs.wikipedia.org/wiki/Dub_u_Libock%C3%A9_br%C3%A1ny_v_obo%C5%99e_Hv%C4%9Bzda"
+      ],
+      "access": "Free, public nature reserve (Obora Hvezda), open year round; Libocka gate reached from the Sidliste Petriny tram stop (lines 1 and 2) or on foot from Petriny metro station (line A)",
+      "transport": "Sidliste Petriny tram stop, short walk into the reserve via the Libocka gate",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Prague's own conservation register cannot decide what this tree is. It has been listed since 2002 as a pedunculate oak, Quercus robur, but a 2015 update to the same register filed its data under Quercus petraea, the sessile oak, and the leaf photographs the register itself attaches are petiolate: stalked at the base, the sessile oak's diagnostic feature, not the pedunculate's near-stalkless leaf. Oak makes up 57 percent of the trees in the Hvezda reserve, nearly all of it pedunculate, and if the register's own photographs are read correctly, this crooked, gnarled specimen is the reserve's only individually registered sessile oak among them.\n\nWhichever species it is, it has grown steadily since a formal survey first measured it in 2001, when its trunk read 345 centimetres round. By 2009 that had reached 352, and by 2013, 356, the figure the register still carries today. Assessors call its health excellent apart from a few dry branches and note it is actively maintained, which for an eighteen-metre tree with a sixteen-metre crown standing beside the reserve's busiest path is not surprising.\n\nNobody has cored it, so 175 years is an estimate rather than a count: the register put it near 165 in 2016. It has been protected since October 2002 and stands right of the main path from the Libocka gate toward the star-shaped Hvezda summer palace, past a stand of registered horse chestnuts and just before the reserve's playground.",
+      "how_to_recognise": "You can recognise it by its crooked, gnarled branches and stalked leaves, unlike the reserve's other oaks, and a trunk 356 centimetres round. It stands right of the main path from the Libocka gate, past the horse chestnuts.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

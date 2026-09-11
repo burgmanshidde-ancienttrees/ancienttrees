@@ -53,7 +53,16 @@
       "access": "Free, publicly accessible. Stands in the Castle Park (Park Zamkowy) in central Żywiec, open daily (sources vary slightly on exact hours, roughly 05:00-23:00 or dawn to dusk), with free parking at the entrance.",
       "transport": "Central Żywiec, within Park Zamkowy beside the Old Castle and Habsburg Palace; walkable from the town centre.",
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its crown, being reduced in stages by fungal decay but pushing dense new shoots after treatment. It stands at the start of the lovers' alley in Park Zamkowy, Żywiec.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -152,6 +152,13 @@
       "Antverpene",
       "Antuairp"
     ],
+    "aosta": [
+      "Aoste",
+      "Augusta Praetoria",
+      "Aosto",
+      "Aoûta",
+      "Osta"
+    ],
     "apeldoorn": [
       "Apeldornas",
       "Apeldorna",
@@ -549,6 +556,9 @@
       "Buenos-Ayres",
       "Buenuxâires"
     ],
+    "cabeza-del-buey": [
+      "Cabeça-del-Buei"
+    ],
     "cadiz": [
       "Cadix",
       "Cadice",
@@ -613,6 +623,10 @@
       "Catanie",
       "Katanio",
       "Kataniya"
+    ],
+    "cerro-veronese": [
+      "Silva Alferia",
+      "El Sèro"
     ],
     "cesky-krumlov": [
       "Česky Krumlovas",
@@ -778,6 +792,12 @@
       "D'n Bos",
       "De Bosk"
     ],
+    "dengfeng": [
+      "Teng-feng",
+      "Zgodovinski spomeniki Dengfenga",
+      "Dengfeng Shi",
+      "Teng-hong-chhī"
+    ],
     "derby": [
       "Derbis"
     ],
@@ -882,6 +902,16 @@
       "Gemeente Enschede",
       "Ynskedee"
     ],
+    "eraul": [
+      "Valle de Yerri",
+      "Vallée d'Yerri",
+      "Yerri",
+      "Vale de Yerri",
+      "Deierri",
+      "Deyerri",
+      "Valle de Yerri – Deierri",
+      "Valle de Yerri/Deierri"
+    ],
     "fara-in-sabina": [
       "Fara",
       "Fara n Sabina",
@@ -925,10 +955,19 @@
       "Firenca",
       "Florența"
     ],
+    "fonte-colombo": [
+      "Santuario di Fonte Colombo"
+    ],
     "formentera": [
       "Frumentaria",
       "Formenteara",
       "Formentero"
+    ],
+    "fort-lauderdale": [
+      "Fort Loderdeilis",
+      "Fortloderdeila",
+      "Fort Lauerdale",
+      "Fort Loderdeil"
     ],
     "fort-worth": [
       "Fort Vertas",
@@ -1051,6 +1090,12 @@
       "Gandavum",
       "Ganti",
       "Gento"
+    ],
+    "gernika-lumo": [
+      "Gernika",
+      "Guernica",
+      "Guernica y Luno",
+      "Gerniko"
     ],
     "ghent": [
       "Gent",
@@ -1780,6 +1825,10 @@
       "Màstrit",
       "Mâstrèct"
     ],
+    "macugnaga": [
+      "Macuniaca",
+      "Machignaga"
+    ],
     "madeira": [
       "Autonome Region Madeira",
       "Madère",
@@ -1969,6 +2018,9 @@
       "Minhene",
       "Mynihu"
     ],
+    "muxika": [
+      "Múgica"
+    ],
     "myjava": [
       "Miava",
       "Mijava"
@@ -2098,6 +2150,12 @@
     "nishio": [
       "Nišio",
       "Nisio-chhī"
+    ],
+    "novi-ligure": [
+      "Novae",
+      "Neuve",
+      "Novi Liguri",
+      "Növe"
     ],
     "numata": [
       "Numata-chhī"
@@ -2294,6 +2352,11 @@
       "Parme",
       "Parm",
       "Parmo"
+    ],
+    "passo-manghen": [
+      "Manghenpas",
+      "Manghenpass",
+      "Manghenpasset"
     ],
     "perouges": [
       "Peruj",
@@ -3045,6 +3108,10 @@
       "Trent",
       "Trentu"
     ],
+    "tricase": [
+      "Tricasium",
+      "Thricase"
+    ],
     "trieste": [
       "Triëst",
       "Terst",
@@ -3060,6 +3127,10 @@
     "tsuruoka": [
       "Curuoka",
       "Turuoka-chhī"
+    ],
+    "tulsa": [
+      "Talsa",
+      "Tulse"
     ],
     "turin": [
       "Turijn",
@@ -3399,6 +3470,7 @@
     "amsterdam": "Amsterdam",
     "amt-neuhaus": "Amt Neuhaus",
     "antwerp": "Antwerp",
+    "aosta": "Aosta",
     "apeldoorn": "Apeldoorn",
     "argoules": "Argoules",
     "arita": "Arita, Saga",
@@ -3455,12 +3527,14 @@
     "bucharest": "Bucharest",
     "budapest": "Budapest",
     "buenos-aires": "Buenos Aires",
+    "cabeza-del-buey": "Cabeza del Buey",
     "cadiz": "Cádiz",
     "cagliari": "Cagliari",
     "cambridge": "Cambridge",
     "canberra": "Canberra",
     "caserta": "Caserta",
     "catania": "Catania",
+    "cerro-veronese": "Cerro Veronese",
     "cesky-krumlov": "Český Krumlov",
     "chadds-ford": "Chadds Ford, Pennsylvania",
     "chapel-hill-north-carolina": "Chapel Hill, North Carolina",
@@ -3488,6 +3562,7 @@
     "delft": "Delft",
     "den-bosch": "'s-Hertogenbosch",
     "den-hout": "Den Hout",
+    "dengfeng": "Dengfeng",
     "derby": "Derby, Western Australia",
     "deventer": "Deventer",
     "doornenburg": "Doornenburg",
@@ -3505,6 +3580,7 @@
     "ekero": "Ekerö",
     "emmen": "Emmen, Netherlands",
     "enschede": "Enschede",
+    "eraul": "Valle de Yerri / Deierri",
     "estry": "Estry",
     "fara-in-sabina": "Fara in Sabina",
     "ferrara": "Ferrara",
@@ -3513,7 +3589,9 @@
     "fleringen": "Fleringen",
     "flinders-ranges": "Ikara–Flinders Ranges National Park",
     "florence": "Florence",
+    "fonte-colombo": "Sanctuary of Greccio",
     "formentera": "Formentera",
+    "fort-lauderdale": "Fort Lauderdale, Florida",
     "fort-worth": "Fort Worth, Texas",
     "fortingall": "Fortingall",
     "frankfurt": "Frankfurt",
@@ -3529,6 +3607,7 @@
     "geneva": "Geneva",
     "genoa": "Genoa",
     "gent": "Ghent",
+    "gernika-lumo": "Guernica",
     "ghent": "Ghent",
     "ghisonaccia": "Ghisonaccia",
     "giessen": "Giessen",
@@ -3647,6 +3726,7 @@
     "lyon": "Lyon",
     "maastricht": "Maastricht",
     "machov": "Machov",
+    "macugnaga": "Macugnaga",
     "madeira": "Madeira",
     "madrid": "Madrid",
     "maebashi": "Maebashi",
@@ -3661,6 +3741,7 @@
     "maui": "Maui",
     "mcely": "Mcely",
     "melbourne": "Melbourne",
+    "mendaza": "Mendaza",
     "menorca": "Menorca",
     "mexico-city": "Mexico City",
     "miharu": "Miharu, Fukushima",
@@ -3676,6 +3757,7 @@
     "motosu": "Motosu, Gifu",
     "msecke-zehrovice": "Mšecké Žehrovice",
     "munich": "Munich",
+    "muxika": "Muxika",
     "myjava": "Myjava",
     "nagano": "Nagano (city)",
     "nagi": "Nagi, Okayama",
@@ -3697,6 +3779,7 @@
     "nijmegen": "Nijmegen",
     "nikaho": "Nikaho, Akita",
     "nishio": "Nishio",
+    "novi-ligure": "Novi Ligure",
     "nuenen": "Nuenen",
     "numata": "Numata, Gunma",
     "nuremberg": "Nuremberg",
@@ -3726,6 +3809,7 @@
     "pamplona": "Pamplona",
     "paris": "Paris",
     "parma": "Parma",
+    "passo-manghen": "Manghen Pass",
     "pelham": "Pelham, Ontario",
     "pemberton": "Pemberton, Western Australia",
     "perouges": "Pérouges",
@@ -3850,9 +3934,11 @@
     "toulouse": "Toulouse",
     "trencianske-stankovce": "Trenčianske Stankovce",
     "trento": "Trento",
+    "tricase": "Tricase",
     "trieste": "Trieste",
     "trollskogen": "Trollskogen",
     "tsuruoka": "Tsuruoka",
+    "tulsa": "Tulsa, Oklahoma",
     "turin": "Turin",
     "turku": "Turku",
     "uda": "Uda, Nara",
@@ -3945,6 +4031,7 @@
     "machov": "Machov",
     "malsfeld": "Malsfeld",
     "mcely": "Mcely",
+    "mendaza": "Mendaza",
     "miriam-vale": "Miriam Vale",
     "msecke-zehrovice": "Mšecké Žehrovice",
     "nedvedice": "Nedvědice",
@@ -4002,6 +4089,7 @@
     "degsne": "no reliable article: Wikipedia matched the forest-stand name to the nearby city of Alytus (within 40km, wrong place), caught and reverted 2026-09-05 rather than shipped as a false alias",
     "eisolzried": "no article within 40 km, tried Eisolzried; Eisolzried, Germany",
     "erdmannrode": "no article within 40 km, tried Erdmannrode; Erdmannrode, Germany",
+    "ermita-de-belen": "no article within 40 km, tried Ermita de Belen; Ermita de Belen, Spain; search: Belén Rueda; search: Cáceres, Spain; search: Popayán",
     "frankenthal-sachsen": "no article within 40 km, tried Frankenthal (Frankenthal, 447 km away); Frankenthal, Germany (Frankenthal, 447 km away); search: Frankenthal; search: List of cities and towns in Germany; search: Frankenthal (disambiguation)",
     "gojaus-miskas": "no article within 40 km, tried Gojaus Miskas; Gojaus Miskas, Lithuania; search: Lithuanian grammar",
     "grybiskes": "no article within 40 km, tried Grybiskes; Grybiskes, Lithuania",
@@ -4014,6 +4102,7 @@
     "kawago": "no article within 40 km, tried Kawago; Kawago, Japan; search: Nogizaka46",
     "kybarciai": "no article within 40 km, tried Kybarciai; Kybarciai, Lithuania",
     "lazy-cheb": "no article within 40 km, tried Lazy (Lazy, no coordinates, disambiguation page); Lazy, Czech Republic; search: List of German names for places in the Czech Republic; search: Aquapalace Prague; search: Capital Cities (duo)",
+    "lecina": "no article within 40 km, tried Lecina; Lecina, Spain; search: Results breakdown of the 1936 Spanish general election; search: Results breakdown of the 1931 Spanish general election; search: Results breakdown of the 1933 Spanish general election",
     "lukavice": "no article within 40 km, tried Lukavice (Lukavice, no coordinates, disambiguation page); Lukavice, Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic; search: Rychnov nad Kněžnou",
     "moffat": "no article within 40 km, tried Moffat (Moffat, no coordinates, disambiguation page); Moffat, United Kingdom; search: Steven Moffat; search: Glasgow; search: List of postcode districts in the United Kingdom",
     "nagai": "no article within 40 km, tried Nagai (Nagai, no coordinates, disambiguation page); Nagai, Japan; search: Hiroshi Nagai; search: Nagai; search: List of cities in Japan",

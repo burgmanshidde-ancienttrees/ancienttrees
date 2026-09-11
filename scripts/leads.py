@@ -34,6 +34,38 @@ import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RULES = os.path.join(ROOT, "data", "block-reasons.json")
+LRMB = os.path.join(ROOT, "data", "registers", "netherlands-lrmb.json")
+
+
+_LRMB_DEAD_CACHE = None
+
+
+def _lrmb_dead_numbers():
+    """Register numbers the Dutch LRMB itself marks status 5, Dood/geveld.
+
+    Mirrors preflight.py's check_register_says_the_tree_is_gone(), one stage
+    earlier: that check catches a dead LRMB tree at the push gate, after a
+    write pass has already spent tokens turning it into a story. Found
+    2026-09-10 the same day that check was written: leads.py --ready offered
+    Dordrecht's Van Baerleplantsoen plane (LRMB nr 1680276, status 5) as
+    READY, a write pass shipped it, and preflight caught it before push, but
+    the write pass's cost was already spent. Filtering it here means the
+    write pass never sees it at all.
+
+    Cached at module level: classify() runs once per lead, thousands of
+    times in a single pass over data/leads/, and the register itself does
+    not change mid-run.
+    """
+    global _LRMB_DEAD_CACHE
+    if _LRMB_DEAD_CACHE is not None:
+        return _LRMB_DEAD_CACHE
+    if not os.path.exists(LRMB):
+        _LRMB_DEAD_CACHE = set()
+        return _LRMB_DEAD_CACHE
+    with open(LRMB, encoding="utf-8") as fh:
+        entries = json.load(fh).get("entries", [])
+    _LRMB_DEAD_CACHE = {str(e["nr"]) for e in entries if e.get("status") == 5}
+    return _LRMB_DEAD_CACHE
 
 
 def rules():
@@ -390,6 +422,12 @@ def classify(entry, blocking):
     which is deliberate: an unreadable reason is not evidence of a problem, and
     treating it as one is exactly the habit this file exists to end.
     """
+    # The register's own status column outranks everything else here: dead is
+    # dead regardless of how promising the rest of the entry reads. See
+    # _lrmb_dead_numbers() above.
+    reg_nr = str(entry.get("register_nr") or "")
+    if reg_nr and reg_nr in _lrmb_dead_numbers():
+        return {"label": "the register's own status field marks this tree dead (LRMB status 5, Dood/geveld)"}
     # A pass that has already looked at this tree and HELD it is evidence, and
     # stronger than any keyword. Added 2026-08-14: Braga's two Tibaes trees
     # were held that morning (the monastery's cerca is closed for works, the

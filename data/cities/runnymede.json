@@ -57,7 +57,17 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its hollow, buttressed trunk, 7.98 metres round, and the strips of cloth visitors tie to the boards beside it. It stands in the ruined St Mary's Priory at Ankerwycke.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }

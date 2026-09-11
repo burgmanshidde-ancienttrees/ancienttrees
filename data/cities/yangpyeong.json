@@ -49,7 +49,10 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "kind": "autumn colour",
         "label": "late October into early November, when the whole crown goes gold"
       },
@@ -60,7 +63,8 @@
         "status": "approved",
         "width": 574,
         "height": 800
-      }
+      },
+      "how_to_recognise": "You can recognise it by its base, 15.2 metres round, and its height, among the tallest ginkgos in the country. It stands within the grounds of Yongmunsa temple."
     }
   ]
 }

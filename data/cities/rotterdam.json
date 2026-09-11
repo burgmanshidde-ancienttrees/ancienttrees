@@ -368,7 +368,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them by the pair standing together at one point in the garden, reading as one feature rather than two. They stand in the Historische Tuin Schoonoord."
+      "how_to_recognise": "You can recognise them by the pair standing together at one point in the garden, reading as one feature rather than two. They stand in the Historische Tuin Schoonoord.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "rot_012",

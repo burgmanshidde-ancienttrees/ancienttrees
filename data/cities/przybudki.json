@@ -60,7 +60,16 @@
         "height": 480
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its low, lopsided crown, broken open by repeated lightning strikes, on a trunk about 5.4 metres round. It stands in the open at the edge of Przybudki, on Bialowieza's edge.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

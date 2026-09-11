@@ -57,7 +57,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the undated of Rogalin's three named oaks, 6.33 metres round, ninety metres from its dated neighbour Rus. It stands in the parkland by Rogalin Palace."
+      "how_to_recognise": "You can recognise it as the undated of Rogalin's three named oaks, 6.33 metres round, ninety metres from its dated neighbour Rus. It stands in the parkland by Rogalin Palace.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "rog_002",
@@ -89,7 +97,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the thickest of Rogalin's oaks, 9.15 metres round and tree-ring dated to 800 to 850 years, the oldest oak dated anywhere in Poland. It stands in the parkland by Rogalin Palace."
+      "how_to_recognise": "You can recognise it as the thickest of Rogalin's oaks, 9.15 metres round and tree-ring dated to 800 to 850 years, the oldest oak dated anywhere in Poland. It stands in the parkland by Rogalin Palace.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

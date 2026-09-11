@@ -414,6 +414,35 @@
         "kind": "fruit"
       },
       "how_to_recognise": "You can recognise it by its trunk, 4.61 metres round, standing alone in the open square before the church steps. It stands in Piazza Chiesa Acquasanta."
+    },
+    {
+      "id": "gnv_013",
+      "name": "The Chilean Wine Palm of Villa Durazzo Pallavicini",
+      "species": "Chilean Wine Palm (Jubaea chilensis)",
+      "location": {
+        "address": "Parco di Villa Durazzo Pallavicini, Via Ignazio Pallavicini 13, Pegli, Genova",
+        "latitude": 44.429869,
+        "longitude": 8.817631,
+        "neighbourhood": "Pegli"
+      },
+      "story": "In its own country this palm is worth more felled than standing, which is most of the reason there are so few of them left. The sap of Jubaea chilensis boils down into miel de palma, palm honey, and the traditional way to get at it is to cut the tree down and drain the stump. Centuries of that turned a species that once filled valleys in central Chile into a handful of protected remnant stands.\n\nThis one has had a quieter career. Italy's national register of monumental trees measures it at 385 centimetres round and 14 metres tall, growing in the park of Villa Durazzo Pallavicini in Pegli. Jubaea carries the thickest trunk of any palm in the world, a grey column roughly a metre and twenty across that barely tapers from the ground to the crown, and it grows so slowly that a seedling can spend a decade before it lifts itself clear of the soil at all.\n\nNobody has dated this one, and nobody easily can. Palms lay down no annual rings, and the trunk stops thickening once it has formed, so the girth arithmetic that ages an oak says nothing here. If you know when it went in, tell us.\n\nThe Ministry of Culture's own description of this park names the camphor tree and the Cedar of Lebanon further along the walk. It does not mention the palm, so the register stands alone as its source.",
+      "how_to_recognise": "You can recognise it by the trunk: a smooth grey column about 1.2 metres across that hardly narrows on its way up, carrying a crown of stiff feather leaves 14 metres above you. It stands in the Villa Durazzo Pallavicini park at Pegli.",
+      "girth_cm": 385,
+      "height_m": 14.0,
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF, Elenco degli alberi monumentali d'Italia, Liguria sheet 11/D969/GE/07: Jubaea chilensis Johow., 'Palma gigante del Cile', Parco Storico Villa Pallavicini, girth 385 cm, height 14 m; register file: data/registers/italy-masaf.json)"
+      ],
+      "access": "Same park as the Camphor Tree of Villa Durazzo Pallavicini; see that entry for hours and pricing.",
+      "transport": "As for the Camphor Tree of Villa Durazzo Pallavicini.",
+      "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

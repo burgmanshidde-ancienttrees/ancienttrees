@@ -1,234 +1,255 @@
 {
- "country": "Italy",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Quercia centorami (Forenza)",
-   "lat": 40.85643,
-   "lng": 15.775368,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_dopo_lo_schianto_di_una_delle_due_branche_principali.jpg",
-    "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_prima_del_crollo_di_un_delle_due_branche_principali.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Monumental linden in Gschnon",
-   "lat": 46.304127,
-   "lng": 11.309633,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sant'Orso (Aosta) - Tilia",
-   "lat": 45.739098,
-   "lng": 7.324937,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2068AostaTiglioSOrso.jpg",
-    "https://commons.wikimedia.org/wiki/File:2079AostaTiglioSOrso.jpg",
-    "https://commons.wikimedia.org/wiki/File:Aosta_-_Tiglio_nostrale_-_2023-09-13_19-12-30_001.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tiglio secolare (Macugnaga)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Chiesa_Vecchia_nel_Dorf.jpg",
-    "https://commons.wikimedia.org/wiki/File:Macugnaga,_Chiesa_Vecchia_e_Tiglio_secolare.jpg",
-    "https://commons.wikimedia.org/wiki/File:Macugnaga_-_Vecchio_Tiglio_-_202209031655.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Insieme omogeneo di Liquidambar styracyflua L.",
-   "lat": 45.33071944,
-   "lng": 8.42192778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato.jpg",
-    "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dettagli_tronchi_Liquidambar_di_Vercelli.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Quercia castagnara",
-   "lat": 44.738433,
-   "lng": 8.821525,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_lontano.jpg",
-    "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_sotto.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Rul d' la Costa",
-   "lat": 45.221081,
-   "lng": 8.253744,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Guidepost_and_board_Rul_d%27_la_Costa.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa_2.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Avez del Prinzipe",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Avez_del_Prinzipe.jpg",
-    "https://commons.wikimedia.org/wiki/File:Avez_del_prinzipe.jpg",
-    "https://commons.wikimedia.org/wiki/File:DSCF2749_avez_del_prinzipe.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "L'Eterno",
-   "lat": 46.17778,
-   "lng": 11.448977,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:L%27Eterno_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:L%27eternamente_fotografato,_albero_monumentale_di_Fiemme,in_piedi_da_pi%C3%B9_di_1000_anni_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:L%27eterno_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Mitterbad beech",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Faggio_dei_Bagni_di_Mezzo_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Monumental linden in Gschnon",
-   "lat": 46.304127,
-   "lng": 11.309633,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Re Leone (tree)",
-   "lat": 46.183203,
-   "lng": 11.46271,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Il_Re_Leone_,_albero_monumentale_della_Val_di_Fiemme_di_600_anni_circonferenza_alla_base_7,10_m_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Le_possenti_radici_del_Re_Leone_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Re_Leone_-_rami_come_tronchi_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Urrebe Margreid",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Margreid,_Anwesen_mit_Urrebe.JPG",
-    "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_013.jpg",
-    "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_016.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Castagno Miraglia",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Castagno_Miraglia,_Parco_nazionale_delle_foreste_Casentinesi.JPG",
-    "https://commons.wikimedia.org/wiki/File:Castagno_di_Miraglia_inizio_900.PNG"
-   ],
-   "status": "lead",
-   "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cipressi di San Quirico d'Orcia",
-   "lat": 43.06079,
-   "lng": 11.55853,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Abstract-nature.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ai_cipressi.jpg",
-    "https://commons.wikimedia.org/wiki/File:BXL_4490.jpg"
-   ],
-   "status": "done",
-   "resolved_note": "SHIPPED 2026-09-06 as sqo_001, new single-tree place San Quirico d'Orcia, Italy. Passes the ensemble test (compact, famous for being exactly that, one obvious roadside vantage). Age left undocumented, no source gives one."
-  },
-  {
-   "name": "Cerro (Cerro Veronese)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cerro_-_cerro_veronese.jpg",
-    "https://commons.wikimedia.org/wiki/File:Il_cerro.jpg",
-    "https://commons.wikimedia.org/wiki/File:Il_cerro_a_cerro.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Roverella (Pedara)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_001.jpeg",
-    "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_002.jpeg",
-    "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_003.jpeg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Roverella del Santuario di Fonte Colombo",
-   "lat": 42.37836,
-   "lng": 12.82803,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg",
-    "https://commons.wikimedia.org/wiki/File:Giardino_del_Santuario.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Vallonea of Tricase",
-   "lat": 39.92793,
-   "lng": 18.37875,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2020_Oak_Vallonea_of_Tricase_IT.jpg",
-    "https://commons.wikimedia.org/wiki/File:QUERCIA_VALLONEA_TRICASE.jpg",
-    "https://commons.wikimedia.org/wiki/File:Quercia_Vallonea_di_Tricase.jpg"
-   ],
-   "status": "lead"
-  }
- ]
+  "country": "Italy",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Quercia centorami (Forenza)",
+      "lat": 40.85643,
+      "lng": 15.775368,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_dopo_lo_schianto_di_una_delle_due_branche_principali.jpg",
+        "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_prima_del_crollo_di_un_delle_due_branche_principali.jpg"
+      ],
+      "status": "blocked",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Dead. Multiple sources describe the trunk collapsed/broken (2020 storm damage); never ship."
+    },
+    {
+      "name": "Monumental linden in Gschnon",
+      "lat": 46.304127,
+      "lng": 11.309633,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
+      ],
+      "status": "held",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified via South Tyrol's official Naturdenkmal register (pin confirmed), but no age/girth/story found. Fails the destination test as-is; recheck if a future pass finds more."
+    },
+    {
+      "name": "Sant'Orso (Aosta) - Tilia",
+      "lat": 45.739098,
+      "lng": 7.324937,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2068AostaTiglioSOrso.jpg",
+        "https://commons.wikimedia.org/wiki/File:2079AostaTiglioSOrso.jpg",
+        "https://commons.wikimedia.org/wiki/File:Aosta_-_Tiglio_nostrale_-_2023-09-13_19-12-30_001.jpg"
+      ],
+      "status": "published",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Published as aosta (aos_001), verify+write pass 2026-09-10."
+    },
+    {
+      "name": "Tiglio secolare (Macugnaga)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Chiesa_Vecchia_nel_Dorf.jpg",
+        "https://commons.wikimedia.org/wiki/File:Macugnaga,_Chiesa_Vecchia_e_Tiglio_secolare.jpg",
+        "https://commons.wikimedia.org/wiki/File:Macugnaga_-_Vecchio_Tiglio_-_202209031655.jpg"
+      ],
+      "status": "published",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified and pinned this pass (approximate, from the neighbouring Chiesa Vecchia's address, not the trunk itself): a centuries-old lime beside a historic Walser church in Macugnaga's Dorf hamlet, two sources disagreeing on age (roughly 500 vs 700+ years, both recorded rather than resolved). Genuinely old and locally documented, but modest compared to Sant'Orso or the Tricase oak, no national award or wide press. Held rather than published this pass; a tighter pin and a second age source would make it ready.",
+      "published_id": "mac_001",
+      "published_place": "Macugnaga"
+    },
+    {
+      "name": "Insieme omogeneo di Liquidambar styracyflua L.",
+      "lat": 45.33071944,
+      "lng": 8.42192778,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato.jpg",
+        "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Dettagli_tronchi_Liquidambar_di_Vercelli.jpg"
+      ],
+      "status": "held",
+      "note": "Verified facts, but storm-damaged Aug 2023 with no confirmation either way of survival, and fails the destination test on its own merit. Vercelli is not in the city queue."
+    },
+    {
+      "name": "Quercia castagnara",
+      "lat": 44.738433,
+      "lng": 8.821525,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_lontano.jpg",
+        "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_sotto.jpg"
+      ],
+      "status": "published",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Published as novi-ligure (ncl_001), verify+write pass 2026-09-10."
+    },
+    {
+      "name": "Rul d' la Costa",
+      "lat": 45.221081,
+      "lng": 8.253744,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Guidepost_and_board_Rul_d%27_la_Costa.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa_2.jpg"
+      ],
+      "status": "blocked",
+      "note": "Private land, no public-access evidence found this pass."
+    },
+    {
+      "name": "Avez del Prinzipe",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Avez_del_Prinzipe.jpg",
+        "https://commons.wikimedia.org/wiki/File:Avez_del_prinzipe.jpg",
+        "https://commons.wikimedia.org/wiki/File:DSCF2749_avez_del_prinzipe.jpg"
+      ],
+      "status": "blocked",
+      "note": "Dead, confirmed twice over: Italian Wikipedia and il manifesto (headline on its death, Nov 2017). Species was actually silver fir (Abies alba), not the larch ('larice') the press headline implies; note the mismatch so a future pass is not misled."
+    },
+    {
+      "name": "L'Eterno",
+      "lat": 46.17778,
+      "lng": 11.448977,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:L%27Eterno_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:L%27eternamente_fotografato,_albero_monumentale_di_Fiemme,in_piedi_da_pi%C3%B9_di_1000_anni_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:L%27eterno_-_panoramio.jpg"
+      ],
+      "status": "blocked",
+      "note": "Dead. ascuoladaglialberi.net and a Lagorai hiking-trail source both describe it as a bare preserved trunk, 'stato: morto'. May be usable as CONTEXT in a future Re Leone/Val di Fiemme story, never as its own entry."
+    },
+    {
+      "name": "Mitterbad beech",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Faggio_dei_Bagni_di_Mezzo_01.jpg"
+      ],
+      "status": "held",
+      "species": "Beech (Fagus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Located (San Pancrazio/Val d'Ultimo) but no age/girth/distinguishing facts found this pass."
+    },
+    {
+      "name": "Monumental linden in Gschnon",
+      "lat": 46.304127,
+      "lng": 11.309633,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
+      ],
+      "status": "held",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified via South Tyrol's official Naturdenkmal register (pin confirmed), but no age/girth/story found. Fails the destination test as-is; recheck if a future pass finds more."
+    },
+    {
+      "name": "Re Leone (tree)",
+      "lat": 46.183203,
+      "lng": 11.46271,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Il_Re_Leone_,_albero_monumentale_della_Val_di_Fiemme_di_600_anni_circonferenza_alla_base_7,10_m_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Le_possenti_radici_del_Re_Leone_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Re_Leone_-_rami_come_tronchi_-_panoramio.jpg"
+      ],
+      "status": "published",
+      "note": "Published as passo-manghen (pmn_001), verify+write pass 2026-09-10."
+    },
+    {
+      "name": "Urrebe Margreid",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Margreid,_Anwesen_mit_Urrebe.JPG",
+        "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_013.jpg",
+        "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_016.jpg"
+      ],
+      "status": "blocked",
+      "note": "Not a tree. This is Europe's oldest grapevine, out of scope for this project."
+    },
+    {
+      "name": "Castagno Miraglia",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Castagno_Miraglia,_Parco_nazionale_delle_foreste_Casentinesi.JPG",
+        "https://commons.wikimedia.org/wiki/File:Castagno_di_Miraglia_inizio_900.PNG"
+      ],
+      "status": "held",
+      "species": "Sweet Chestnut (Castanea sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Thoroughly verified and clearly worth the visit (largest chestnut in Tuscany, fenced official nature-trail tree in the Camaldoli/Casentino forest), but no coordinate found after two search attempts. Left unpinned rather than guessed; a future pass with a different search angle should try again."
+    },
+    {
+      "name": "Cipressi di San Quirico d'Orcia",
+      "lat": 43.06079,
+      "lng": 11.55853,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Abstract-nature.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ai_cipressi.jpg",
+        "https://commons.wikimedia.org/wiki/File:BXL_4490.jpg"
+      ],
+      "status": "done",
+      "resolved_note": "SHIPPED 2026-09-06 as sqo_001, new single-tree place San Quirico d'Orcia, Italy. Passes the ensemble test (compact, famous for being exactly that, one obvious roadside vantage). Age left undocumented, no source gives one."
+    },
+    {
+      "name": "Cerro (Cerro Veronese)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cerro_-_cerro_veronese.jpg",
+        "https://commons.wikimedia.org/wiki/File:Il_cerro.jpg",
+        "https://commons.wikimedia.org/wiki/File:Il_cerro_a_cerro.jpg"
+      ],
+      "status": "published",
+      "species": "Crenate Oak (Quercus crenata)",
+      "note": "Published as cerro-veronese (cvr_001), new single-tree place under the 2026-08-31 destination exception, verify+write pass 2026-09-10. Third source added this pass (English Wikipedia's own Cerro Veronese article independently confirms the coat-of-arms/place-name fact). Pin still approximate (village centre, not the piazza); a future pass could tighten it via OSM or a mapped photo and check lessiniapark.it's own monumental-tree list for neighbours."
+    },
+    {
+      "name": "Roverella (Pedara)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_001.jpeg",
+        "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_002.jpeg",
+        "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_003.jpeg"
+      ],
+      "status": "held",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Unresolved: two searches found nothing beyond the genus, no coordinate, no distinguishing facts."
+    },
+    {
+      "name": "Roverella del Santuario di Fonte Colombo",
+      "lat": 42.37836,
+      "lng": 12.82803,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg",
+        "https://commons.wikimedia.org/wiki/File:Giardino_del_Santuario.jpg"
+      ],
+      "status": "published",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified from one source only (a Commons file description, itself credited to Legambiente/treeoftheyear.org): a downy oak nominated in Italy's 2014 Tree of the Year competition as 'The Tree of Perfect Gaiety', referencing the Franciscan parable Francis told Brother Leo at this sanctuary. Do not confuse with the sanctuary's OTHER, already-dead holm oak (fell 1622, carved into a 1645 sculpture): this is a separate, different specimen. No second source found this pass despite two search attempts; held rather than published on a single-source bar. Does not belong to Fara in Sabina (23.2km, fails the day-trip test); the natural container is Rieti, not currently in the city queue.",
+      "published_id": "fcl_001",
+      "published_place": "Fonte Colombo"
+    },
+    {
+      "name": "Vallonea of Tricase",
+      "lat": 39.92793,
+      "lng": 18.37875,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2020_Oak_Vallonea_of_Tricase_IT.jpg",
+        "https://commons.wikimedia.org/wiki/File:QUERCIA_VALLONEA_TRICASE.jpg",
+        "https://commons.wikimedia.org/wiki/File:Quercia_Vallonea_di_Tricase.jpg"
+      ],
+      "status": "published",
+      "note": "Published as tricase (trc_001), verify+write pass 2026-09-10."
+    }
+  ]
 }

@@ -56,7 +56,15 @@
       },
       "how_to_recognise": "You can recognise it by the cables running out through the crown on every side. It is the big lime standing on the forecourt in front of Kasteel Westhove.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }
