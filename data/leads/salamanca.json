@@ -15,28 +15,21 @@
       "name": "The Calocedrus of Campo de San Francisco",
       "species": "Calocedrus decurrens (incense cedar)",
       "location": {
-        "address": "Campo de San Francisco park, Salamanca (between Paseo de Carmelitas and Calle Ramon y Cajal)",
+        "address": "Campo de San Francisco park, Salamanca, near the fountain and the historic library",
         "latitude": null,
         "longitude": null
       },
-      "reason": "Only one source found in this pass (Salamancahoy, 2026-04-07): tallest tree in the park, estimated 100-150 years old per a named botanist, associated with Miguel de Unamuno's walks through the park. Needs a second independent source and an exact location/girth before it can ship. Campo de San Francisco is the city's oldest park and worth a return visit.",
+      "reason": "Still only one source after a second pass (Salamancahoy, 2026-04-07): tallest tree in the park, a long clean trunk into a discreet crown, estimated 100-150 years old, said to have been walked past by Miguel de Unamuno without documented proof he ever noticed it. Checked and found nothing: es.wikipedia's Campo de San Francisco (Salamanca) article (no individual trees named, only a general note on 600+ poplars planted early), a 2015 local-history blog on the park's own tree losses (poplars, funerary cypresses, no calocedrus), and an iNaturalist search for Calocedrus decurrens near this coordinate (nearest observation is 3km away in Cabrerizos, a different tree). Not part of the Castilla y Leon regional register (that register's only Salamanca-city entry is the Escuelas Mayores sequoia, slm_001; see note below). No girth or exact in-park coordinate found. Needs either a second written source or a girth/coordinate a future pass can obtain in person or from a park map.",
       "source": "https://www.salamancahoy.es/salamanca/ciudad/cedro-alto-discreto-campo-san-francisco-vio-20260407105618-nt.html"
     },
     {
-      "name": "Other Catalogo de Especies Singulares entries in Salamanca city",
-      "species": "unknown, 16 trees reportedly catalogued within the city per La Gaceta de Salamanca",
-      "location": {"address": "Salamanca city, various", "latitude": null, "longitude": null},
-      "reason": "SalamancaRTV al Dia's 2019 'patrimonio verde' piece and La Gaceta both reference a 16-tree city total in the Catalogo de Especies Singulares de Castilla y Leon beyond the three shipped here (the Alamedilla cedar, the Escuelas Mayores sequoia and a Taxus in Plaza de la Libertad were named); Ecologistas en Accion's full list (ecologistasenaccion.org/4098) returned HTTP 403 to automated fetch this pass and was not read. A future pass should fetch that page with a browser session or find the underlying catalogue PDF to identify the rest.",
-      "source": "https://salamancartvaldia.es/noticia/2019-06-05-el-notable-patrimonio-verde-de-salamanca-58029"
-    },
-    {
-      "name": "Yew in Plaza de la Libertad",
-      "species": "Taxus (species not established)",
-      "location": {"address": "Plaza de la Libertad, near the Columbus statue, Salamanca", "latitude": null, "longitude": null},
-      "reason": "Named only in passing in one AI-summarised search result (SalamancaRTV piece), no age, girth or planting history found in the time available. Needs a direct read of the source article and a second source.",
-      "source": "https://salamancartvaldia.es/noticia/2019-06-05-el-notable-patrimonio-verde-de-salamanca-58029"
+      "name": "The four laurels ('árbol del triunfo') of Campo de San Francisco",
+      "species": "Laurus nobilis",
+      "location": {"address": "Campo de San Francisco park, Salamanca, forming a square among other trees", "latitude": null, "longitude": null},
+      "reason": "Salamanca's municipal government is preparing a NEW local catalogue of singular/heritage trees (33 elements total, announced 2026-07-10, distinct from the Castilla y Leon regional register), which is expected to include four notable laurel specimens forming a square in Campo de San Francisco, plus a laurel survivor of the old orchard at Huerto de Calixto y Melibea and others at Parque de los Jesuitas, Parque de Wurzburg and elsewhere. Not yet designated (catalogue still in preparation as of the source date), no individual ages, heights or girths published, and an ensemble of four ordinary-height (5-10m) laurels forming a square is a weak collectible point on its own. Worth re-checking once the municipal catalogue is actually adopted, since it may name/measure individual specimens then.",
+      "source": "https://www.salamancahoy.es/salamanca/ciudad/salamanca-prepara-catalogo-proteger-arboles-singulares-20260710200258-nt.html"
     }
   ],
   "blocked": [],
-  "notes": "Verification pass 2026-09-11. Register data/registers/castilla-leon-arboles-notables.json has 16 entries tagged province=Salamanca but only AS-SA-10 (the Escuelas Mayores sequoia) actually sits in Salamanca CITY; the rest are in Bejar, Ciudad Rodrigo, La Alberca and other municipalities 70-90km away, well outside the ~30 minute day-trip boundary, and were not pursued for this city page."
+  "notes": "Verification pass 2026-09-11 (continuation). RESOLVED: the '16-tree catalog' question from the earlier pass. A 2013 blog post (arbolessingularescyl.blogspot.com/2010/07/provincia-de-salamanca.html) lists all 16 names in the Castilla y Leon regional 'Catalogo de especimenes vegetales de singular relevancia' (ORDEN MAM/1156/2006) tagged to Salamanca PROVINCE, and they match one-to-one against the 16 province=Salamanca entries already in data/registers/castilla-leon-arboles-notables.json (AS-SA-02,03,05,07,08,09,10,11,12,13,16,17,18,19,21,22). This is a PROVINCIAL catalogue, not a city one: only AS-SA-10 (Sequoia de la Universidad, already slm_001) sits in Salamanca city; the other 15 (Cedro de la Florida and Cipres de la Catedral in Ciudad Rodrigo, Cedro de la Francesa and a giant sequoia in Bejar's El Bosque estate, several oaks/pines/a beech/a yew/a lime scattered across La Alberca, Penacaballera, Herguijuela de la Sierra, Escurial de la Sierra, Fuentes de Onoro, Monforte, Tejeda y Segoyuela and Espeja) sit 70-90km from Salamanca city, well outside the ~30 minute day-trip boundary. Nothing further to chase here; do not re-run this hunt. Ecologistas en Accion's own list page (ecologistasenaccion.org/4098) still 403s to curl even with a browser user agent and has no Wayback snapshot (archive.org availability API returned an empty snapshot list on 2026-09-11), but it is now redundant since the blog post above already supplied the full 16-name list and it was cross-checked against the register.\n\nAdded this pass: slm_004, The Yew of Plaza de la Libertad (Taxus baccata), promoted out of this leads file after a second source (La Gaceta de Salamanca, 2026-09-10) confirmed it independently of the original 2019 SalamancaRTV mention and resolved that it is a DIFFERENT tree from the 4 yews around the Columbus statue in Parque de Colon (which are only ~30 years old per the same 2026-09-10 article)."
 }

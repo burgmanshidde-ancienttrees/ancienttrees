@@ -2,11 +2,11 @@
   "city": "Monterey",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Monterey has one mapped tree so far, and it needs no introduction: the Lone Cypress, growing alone on bare granite above Carmel Bay, is the single most reproduced tree on the California coast and a registered trademark of the company that owns the headland beneath it. Painters and photographers have worked this stretch of shoreline since the nineteenth century, but this one tree, propped with cables since 1948 and fenced off since 1969, is the reason people stop the car.",
-  "meta_description": "The Lone Cypress: a registered trademark on a Monterey headland, propped by cables since 1948. The most photographed tree on the California coast.",
+  "intro": "Monterey's headline tree needs no introduction: the Lone Cypress, growing alone on bare granite above Carmel Bay, is the single most reproduced tree on the California coast and a registered trademark of the company that owns the headland beneath it. Two more join it now, an old cypress painted since 1879 on a cliff at nearby Point Lobos, and a coast redwood grown from a seed that flew around the Moon on Apollo 14. Photographers have worked this shoreline since the nineteenth century; the caged, cabled Lone Cypress is still the reason people stop the car.",
+  "meta_description": "The trademarked Lone Cypress, a cliffside veteran painted since 1879, and a redwood grown from a Moon-orbiting seed: 3 trees around Monterey and Carmel.",
   "question_meta": "Monterey's oldest mapped tree is the Lone Cypress, estimated at 200 to 300 years old on a granite headland above Carmel Bay.",
   "question_answer": "Monterey's oldest mapped tree, by best estimate, is the Lone Cypress, thought to be 200 to 300 years old. It grows alone on a bare granite outcrop on the 17-Mile Drive above Carmel Bay, exactly as its name says.",
-  "question_context": "Nobody has cored the Lone Cypress, and nobody will: coring a tree already fighting for root space in bare rock would be reckless. The estimate of 200 to 300 years comes from its size and growth rate rather than a ring count, and it is the figure the Pebble Beach Company and local naturalists both use. It has grown that long on a wind-scoured granite headland on the 17-Mile Drive, roots wedged into rock cracks rather than soil, which is also why it stayed small: exposure, not age, has kept it low and gnarled rather than tall. The company that owns the headland registered a drawing of the tree as a trademark in 1919 and has defended it in court since, which makes this the only tree on our map with its own intellectual property lawyers. It is fenced and cabled for support, so visitors view it from a platform rather than standing at the trunk, and it remains, by any account, the most photographed tree on the California coast.",
+  "question_context": "Nobody has cored the Lone Cypress, and nobody will: coring a tree already fighting for root space in bare rock would be reckless. The estimate of 200 to 300 years comes from its size and growth rate rather than a ring count, and it is the figure the Pebble Beach Company and local naturalists both use. It has grown that long on a wind-scoured granite headland on the 17-Mile Drive, roots wedged into rock cracks rather than soil, which is also why it stayed small: exposure, not age, has kept it low and gnarled rather than tall. The company that owns the headland registered a drawing of the tree as a trademark in 1919 and has defended it in court since. It is fenced and cabled for support, and it remains the most photographed tree on the California coast. Two more trees now join it on this page, the cliffside cypress of Point Lobos and the Moon-seed redwood of Friendly Plaza; neither challenges the Lone Cypress's age.",
   "hero_tree_id": "mty_001",
   "oldest_tree_id": "mty_001",
   "faq": [
@@ -25,6 +25,10 @@
     {
       "q": "Where exactly is the Lone Cypress?",
       "a": "On a granite headland on 17-Mile Drive, a private scenic road through Pebble Beach, between Cypress Point Club and Pebble Beach Golf Links."
+    },
+    {
+      "q": "What other remarkable trees are near Monterey?",
+      "a": "The Old Veteran of Point Lobos, a cliffside Monterey cypress painted since 1879, about 20 minutes south near Carmel, and the Moon Tree of Friendly Plaza, a coast redwood in downtown Monterey grown from a seed that orbited the Moon on Apollo 14 in 1971."
     }
   ],
   "trees": [
@@ -58,6 +62,69 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "mty_002",
+      "name": "The Old Veteran of Point Lobos",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "age_estimate": "roughly 200 to 250 years",
+      "age_min": 200,
+      "age_max": 250,
+      "girth_cm": null,
+      "location": {
+        "address": "Point Lobos State Natural Reserve, near Headland Cove, Carmel Highlands, California",
+        "latitude": 36.5147,
+        "longitude": -121.9428,
+        "neighbourhood": "Point Lobos State Natural Reserve (near Carmel-by-the-Sea)"
+      },
+      "verified_sources": [
+        "https://gdanmitchell.com/2024/08/15/the-old-tree/",
+        "https://www.americansouthwest.net/california/point-lobos/cypress-tree_l.html"
+      ],
+      "access": "Free (state park day-use fee applies for parking), on a public trail within Point Lobos State Natural Reserve, clinging to a rocky outcrop at the edge of a cliff above a cove. Not in the city of Monterey itself: about a 20-minute drive south, near Carmel-by-the-Sea; no reliable direct public transit, best reached by car.",
+      "transport": "Car; about 20 minutes from downtown Monterey via CA-1 south",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Raymond Yelland painted this cypress in 1879, and he was early rather than first. The Old Veteran has been one of the most painted and photographed trees on the Monterey Peninsula ever since, which is an odd career for a tree with almost nothing to stand on.\n\nIt grips a rock outcrop at the cliff edge above a cove at Point Lobos, roots into granite, branches worked over by the onshore wind. The best age anyone offers is probably 200 to 250 years, from an observer writing in 2024, and it stays a range because nobody has dated it. Much higher figures circulate for this tree; none of them has been confirmed, and repeating one here would be guessing with a decimal point.\n\nSet a recent photograph beside an older one and the tree is visibly thinner. A prominent limb has gone, and the same 2024 visit described it as looking increasingly stressed. It was alive and standing on that visit, which is the most recent word on it.\n\nPoint Lobos is a state reserve, so this one costs a parking fee and a walk on a public trail rather than a toll gate. It is about twenty minutes south of Monterey by car, near Carmel: an old cypress on the last few metres of land before the Pacific, still holding on.",
+      "how_to_recognise": "You can recognise it by its footing: it grows straight out of bare rock on an outcrop at the cliff edge above Headland Cove, and it has lost one prominent limb since the older photographs of it were taken.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mty_003",
+      "name": "The Moon Tree of Friendly Plaza",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "50 years (planted 1976)",
+      "age_min": 50,
+      "age_max": 50,
+      "girth_cm": null,
+      "location": {
+        "address": "Friendly Plaza, next to Colton Hall, Monterey, California",
+        "latitude": 36.5978,
+        "longitude": -121.8975,
+        "neighbourhood": "Downtown Monterey"
+      },
+      "verified_sources": [
+        "https://www.montereycountynow.com/people/831/monterey-s-moon-tree-hits-50-and-a-new-one-grows-in-greenfield-amid-renewed/article_756305ee-cef9-41c3-b156-b8d24252ace0.html",
+        "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/friendly_plaza_tree.html (NASA's own Moon Tree registry; page exists per WebSearch results and per the general NASA moon-tree program record, but could not be directly fetched this pass, connection failed with a certificate error; treat as a lead/corroboration only, not independently confirmed by direct fetch this pass)"
+      ],
+      "access": "Free, in a public plaza in downtown Monterey next to Colton Hall (where California's first constitution was drafted) and the Old Monterey Jail.",
+      "transport": "Central downtown Monterey, walkable from anywhere in the historic district",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This redwood has been around the Moon. In February 1971 the Apollo 14 command module carried roughly 2,000 tree seeds in lunar orbit while the lunar module was down on the surface. They belonged to Stuart Roosa, the command module pilot, and the question was whether the radiation of the trip would stop them germinating.\n\nIt did not. Of the 150 coast redwood seeds in the batch, 20 came up at a Forest Service nursery in Placerville and 16 survived their first year. One of them was planted here on 27 July 1976, two feet tall, dedicated to the people of Monterey for the American Bicentennial. A plaque marks it.\n\nFifty years on it is a redwood in a town square rather than a curiosity, standing in Friendly Plaza beside Colton Hall, where California's first constitution was drafted, and the old Monterey jail. Nobody walking between the two would guess where the seed had been.\n\nOne honest note. Of the Moon Trees planted across California, only nine are reported still alive, and while the accounts of the fiftieth anniversary write about Monterey's as one of the survivors, no source we found says so in plain words. If you are standing in front of it, you know something we do not, and we would like to hear it.",
+      "how_to_recognise": "You can recognise it by the plaque at its foot, which names it a Moon Tree. It is the coast redwood in Friendly Plaza beside Colton Hall, straight and single-stemmed, still a young tree for its species at fifty.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "why_go": "A coast redwood grown from a seed that flew around the Moon on Apollo 14 in 1971, planted in Monterey's town square for the American Bicentennial in 1976."
     }
   ]
 }

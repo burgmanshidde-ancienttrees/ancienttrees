@@ -1,0 +1,159 @@
+{
+  "city": "Salamanca",
+  "country": "Spain",
+  "status": "needs_curation",
+  "oldest_tree_id": "slm_001",
+  "hero_tree_id": "slm_001",
+  "intro": "Salamanca's old sandstone centre holds a small cluster of trees that do not belong in a Castilian climate at all. A coast redwood has grown in the university's own cloister since 1870, and a giant sequoia was lifted into the square facing the cathedral in 1976, both species built for wetter, cooler places than a city 800 metres up and baked dry every summer. Closer to home, the park's own 'grandfather' cedar has watched over La Alamedilla since the 1880s, and a lone yew keeps its place in a formal plaza nobody has bothered to explain.",
+  "meta_description": "A coast redwood in the university cloister since 1870, a sequoia facing the cathedral, and a park's own cedar: 4 remarkable trees in central Salamanca.",
+  "question_meta": "Salamanca's oldest mapped tree is the university's coast redwood, planted in the Escuelas Mayores cloister in 1870, about 156 years old.",
+  "question_answer": "Salamanca's oldest mapped tree is the Sequoia of the University, a coast redwood donated in 1870 and planted in the cloister of the Escuelas Mayores, the University of Salamanca's historic buildings. It stands about 27 metres tall with a trunk 2.64 metres round, roughly 156 years old.",
+  "question_context": "The date comes from a documented donation rather than a growth estimate: a local newspaper records that Federico de Onis y Onis gave the tree to the university in 1870, and the regional register of notable trees lists a matching sequoia in the same courtyard, though no single source explicitly ties the register entry to the newspaper's account, so the identification, while near-certain, is not stated outright anywhere. What makes the age notable is the climate it has survived: coast redwood belongs on California's foggy northern coast, where it is the tallest tree species on earth, not on a dry plateau 800 metres above sea level that bakes through the summer. A redwood holding on in a walled courtyard for a century and a half is doing something the species never evolved to do. It shares the city with two younger conifers a world away from home, a giant sequoia planted facing the cathedral in 1976 and a disputed cedar in the Alamedilla park, but neither approaches its age.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Salamanca?",
+      "a": "The Sequoia of the University, a coast redwood donated in 1870 and planted in the cloister of the university's historic Escuelas Mayores buildings, roughly 156 years old."
+    },
+    {
+      "q": "Are Salamanca's remarkable trees free to see?",
+      "a": "Three of the four stand in open public plazas and parks with no charge. The university's redwood is on the paid visitor route inside the Escuelas Mayores, so seeing it means paying that entry fee."
+    },
+    {
+      "q": "Why does Salamanca have giant sequoias and redwoods, species from California?",
+      "a": "Both were deliberate plantings by the city and the university rather than anything native: the redwood arrived as an 1870 university donation, and the giant sequoia was lifted into Plaza de Anaya in 1976 on the order of the mayor, a decorative statement rather than a botanical accident."
+    },
+    {
+      "q": "What is the 'Pino de San Jose' in Salamanca?",
+      "a": "Despite the name, which means 'Saint Joseph's pine', it is not a pine at all: a cedar planted in La Alamedilla park in the 1880s, one of the last survivors of the park's original planting, known locally as the park's grandfather."
+    }
+  ],
+  "trees": [
+    {
+      "id": "slm_001",
+      "name": "The Sequoia of the University",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "about 155 years, documented planting",
+      "age_min": 150,
+      "age_max": 160,
+      "girth_cm": 264,
+      "location": {
+        "address": "Patio de las Escuelas Mayores, University of Salamanca cloister",
+        "latitude": 40.961426,
+        "longitude": -5.666841,
+        "neighbourhood": "Centro"
+      },
+      "verified_sources": [
+        "https://medioambiente.jcyl.es/web/es/medio-natural/arboles-notables.html (register AS-SA-10, via data/registers/castilla-leon-arboles-notables.json)",
+        "https://www.lagacetadesalamanca.es/salamanca/secuoya-plaza-anaya-cumple-anos-20260426072000-nt.html"
+      ],
+      "access": "Free. Stands in the cloister/courtyard of the historic University of Salamanca buildings (Escuelas Mayores), which is open to visitors as part of the university's public monument circuit (paid entry to the Escuelas Mayores building itself; the courtyard tree is visible on the public visit route).",
+      "transport": "Central Salamanca, walkable from Plaza Mayor (about 10 minutes).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The University of Salamanca has been teaching since 1218, and the oldest living thing it owns arrived in 1870. That year Federico de Onis y Onis donated a coast redwood, which went into the courtyard of the Escuelas Mayores and has been there since, 27 metres tall with a trunk 2.64 metres round. A local newspaper calls it the institution's oldest living monument, at roughly 156 years, which makes it comfortably the youngest thing in a patio otherwise made of Renaissance stone.\n\nCoast redwood belongs on a fog belt in northern California, where it is the tallest tree species on earth and routinely clears 100 metres. Salamanca is dry, baked in summer and 800 metres above the sea, which is not that climate at all. A redwood that has held on here for a century and a half inside a walled courtyard is doing something the species never evolved to do.\n\nOne caution about the paperwork. The regional register of notable trees carries a Sequoia de la Universidad as AS-SA-10 with those measurements, and the newspaper account of the 1870 donation describes the redwood in the Escuelas Mayores courtyard without naming the register entry. Only one sequoia is on record in that complex, so they are almost certainly the same tree, but no single source says so outright.\n\nThe Escuelas Mayores charges entry. The tree is on the visitor route inside.",
+      "how_to_recognise": "You can recognise it by being the only sequoia in the courtyard, 27 metres of conifer over Renaissance stonework, its trunk 2.64 metres round. It stands in the Patio de las Escuelas Mayores, on the paid visitor route.",
+      "curation_status_reason": "identification of register entry with newspaper-mentioned tree is a strong but not source-explicit match",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slm_002",
+      "name": "The Giant Sequoia of Plaza de Anaya",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 60-70 years since it was transplanted here as a young tree in 1976",
+      "age_min": 60,
+      "age_max": 90,
+      "girth_cm": null,
+      "location": {
+        "address": "Plaza de Anaya, facing the Cathedral of Salamanca",
+        "latitude": 40.961334,
+        "longitude": -5.666005,
+        "neighbourhood": "Centro"
+      },
+      "verified_sources": [
+        "https://www.lagacetadesalamanca.es/salamanca/secuoya-plaza-anaya-cumple-anos-20260426072000-nt.html",
+        "https://www.salamancahoy.es/salamanca/ciudad/secuoya-mira-frente-catedral-salamanca-echo-raices-20260228174725-nt.html"
+      ],
+      "access": "Free. Stands in a public plaza in the historic centre, between the Cathedral, the Anaya Palace and the church of San Sebastian.",
+      "transport": "Central Salamanca, immediately beside the Cathedral, walkable from Plaza Mayor (about 10 minutes).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "This tree could outlive the cathedral it faces. Giant sequoias run past two thousand years in the Sierra Nevada; Salamanca's new cathedral was begun in 1513 and finished in the eighteenth century, and the sequoia in the square in front of it was lifted into place in 1976, already roughly ten to twenty years old, by order of the mayor Pablo Beltran de Heredia y Onis. A plaque at the base records the donation.\n\n1976 was Spain's first full year without Franco, with the country in the middle of deciding what it would become next. Somewhere in that, a decision was taken to move a Californian conifer into the Plaza de Anaya, the square held between the Cathedral, the Anaya Palace and the church of San Sebastian, which is about as much architecture as Salamanca can put in one place.\n\nIt was measured at about 20 metres in 2020, with a dense green canopy, strong growth and no visible structural damage. That puts it somewhere near 60 to 70 years old today, an adolescent for a species that counts in millennia, and it is worth being clear that this is an estimate built from the transplant date rather than a figure anyone has cored out of the wood.\n\nEverything else in the square is finished. This is the one thing in it that will look different in a hundred years.",
+      "how_to_recognise": "You can recognise it by being the one big conifer in the square, about 20 metres tall with a dense green canopy, and by the plaque at its base recording the 1976 donation. It stands in Plaza de Anaya, facing the Cathedral.",
+      "why_go": "A giant sequoia, still young by the species' standard of millennia, planted deliberately in 1976 to stand facing Salamanca's Gothic cathedral -- one of the few places in the city where a Sierra Nevada conifer and 220-year-old stone spires share the same view.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slm_003",
+      "name": "The Cedar of La Alamedilla (Pino de San Jose)",
+      "species": "Cedar (Cedrus libani, possibly a Cedrus libani x deodara hybrid; disputed, see notes)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 120,
+      "age_max": 140,
+      "girth_cm": 430,
+      "location": {
+        "address": "Parque de la Alamedilla, Avenida de los Comuneros",
+        "latitude": 40.967885,
+        "longitude": -5.657372,
+        "neighbourhood": "Alamedilla"
+      },
+      "verified_sources": [
+        "https://www.lagacetadesalamanca.es/salamanca/abuelo-alamedilla-cedro-visto-crecer-salamanca-20240328065000-nt.html",
+        "https://www.salamancahoy.es/salamanca/ciudad/cedro-testigo-infancia-generaciones-salmantinos-20260203143105-nt.html"
+      ],
+      "access": "Free. Public municipal park, open daily.",
+      "transport": "Near Plaza de Espana and the former railway line, about 15-20 minutes' walk from Plaza Mayor.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Salamanca calls this tree the Pino de San Jose, and it is not a pine. It is a cedar, and even that is not settled. The plaque on it reads Cedrus libani, the cedar of Lebanon, while Juan Manuel Velasco, who wrote the book on the province's parks and gardens, argues from the leaves that it is more likely a hybrid with the Himalayan Cedrus deodara. Neither reading has won.\n\nIt went into the ground between 1880 and 1890, alongside the elms planted when La Alamedilla was laid out as a public park from 1879, the elms that gave the place its name. Those are gone. The cedar is the tallest tree in the park and one of the last survivors of that first planting, which is why the city calls it the grandfather of the Alamedilla, and why generations of Salamantinos have a childhood memory attached to it.\n\nThe numbers disagree as well, and the disagreement is worth seeing. One newspaper, citing municipal measurements from 2018, gives 4.30 metres as a diameter at chest height and a height over 25 metres. Another gives 4.30 metres as the trunk's perimeter and a height of 33. A diameter of 4.30 would mean a girth around 13.5 metres, which would make this one of the largest conifers in Europe and is not credible at roughly 130 years. Read it as a girth and the figures behave.\n\nStorms have taken branches in recent years. It still stands.",
+      "how_to_recognise": "You can recognise it by the trunk, about 4.3 metres round, under the tallest crown in the park, and by the plaque naming it a cedar of Lebanon despite the local name calling it a pine. It stands in Parque de la Alamedilla.",
+      "why_go": "The park's own 'grandfather', the tallest tree in La Alamedilla and one of the few survivors of its original 1880s planting, its species still debated by the person who literally wrote the book on Salamanca's historic parks.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slm_004",
+      "name": "The Yew of Plaza de la Libertad",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Plaza de la Libertad, at the corner with Calle Concejo",
+        "latitude": 40.966,
+        "longitude": -5.6648,
+        "neighbourhood": "Centro"
+      },
+      "verified_sources": [
+        "https://salamancartvaldia.es/noticia/2019-06-05-el-notable-patrimonio-verde-de-salamanca-58029",
+        "https://www.lagacetadesalamanca.es/salamanca/tejos-salamanca-20260910063000-nt.html"
+      ],
+      "access": "Free. Public municipal plaza in the historic centre, open at all times.",
+      "transport": "Central Salamanca, a few minutes walk from Plaza Mayor.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Most of Salamanca's yews are new. The four planted around the Columbus statue in the Parque de Colon are about three decades old, which for a yew is barely a start. The one at the corner of the Plaza de la Libertad and Calle Concejo is a different proposition: a full-grown tejo standing in the middle of the old city, listed by the local press among Salamanca's notable trees and known simply as the great yew of the square.\n\nThe ground under it was an orchard. The plaza was laid out from 1842 on the site of the convent garden of the Carmelitas Descalzas de San Elias, and it has been replanted repeatedly since: acacias first, then plane trees, then cypress and palms. The yew appears in none of those accounts. Either it arrived between the waves or it has outlasted the record of who planted what. By one account of the plaza it stands out of line with the formal symmetry of the layout, and the gardeners have kept it where it is rather than tidy it away.\n\nThat is the argument for going. Yew is the slow species, the one European churchyards are full of because it will still be standing when the building needs work, and it carries age better than anything else that will grow through a Castilian summer.\n\nNobody has published an age, a height or a girth for this tree. If you know any of the three, tell us.",
+      "how_to_recognise": "You can recognise it by being the one dark evergreen out of line with the plaza's formal rows, a single yew on the corner with Calle Concejo where everything else is planted in symmetry.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

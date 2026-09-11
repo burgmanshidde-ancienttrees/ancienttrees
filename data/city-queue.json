@@ -716,7 +716,7 @@
    "demand": 142353,
    "basis": "measured",
    "status": "published",
-   "trees": 17,
+   "trees": 18,
    "photos": 11,
    "walks": 2,
    "register": 0,
@@ -1517,6 +1517,29 @@
    "wikidata": 0
   },
   {
+   "city": "Spokane",
+   "country": "United States",
+   "status": "published",
+   "trees": 6,
+   "travel": 7831,
+   "source": "pool_audit 2026-09-01",
+   "score": 15.66,
+   "basis": "predicted (travel demand)",
+   "work_score": 17.85,
+   "rank": 66,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 6,
+   "wikidata": 1,
+   "supply": 7,
+   "target": 10,
+   "ease": 1.14,
+   "slug": "spokane",
+   "impressions_10d": 0,
+   "clicks_10d": 0
+  },
+  {
    "city": "Daytona Beach",
    "country": "United States",
    "status": "pending",
@@ -1526,7 +1549,7 @@
    "score": 17.66,
    "basis": "predicted (travel demand)",
    "work_score": 17.66,
-   "rank": 66,
+   "rank": 67,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1540,7 +1563,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 67,
+   "rank": 68,
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -1572,7 +1595,7 @@
    "score": 16.68,
    "basis": "predicted (travel demand)",
    "work_score": 16.68,
-   "rank": 68,
+   "rank": 69,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1586,7 +1609,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 69,
+   "rank": 70,
    "city": "Porto",
    "country": "Portugal",
    "slug": "porto",
@@ -1609,7 +1632,7 @@
    "wikidata": 8
   },
   {
-   "rank": 70,
+   "rank": 71,
    "city": "Tokyo",
    "country": "Japan",
    "slug": "tokyo",
@@ -1632,7 +1655,7 @@
    "wikidata": 13
   },
   {
-   "rank": 71,
+   "rank": 72,
    "city": "Edinburgh",
    "country": "United Kingdom",
    "slug": "edinburgh",
@@ -1655,7 +1678,7 @@
    "wikidata": 1
   },
   {
-   "rank": 72,
+   "rank": 73,
    "city": "Las Vegas",
    "country": "United States",
    "slug": "las-vegas",
@@ -1678,7 +1701,7 @@
    "wikidata": 0
   },
   {
-   "rank": 73,
+   "rank": 74,
    "city": "Ottawa",
    "country": "Canada",
    "slug": "ottawa",
@@ -1701,7 +1724,7 @@
    "wikidata": 0
   },
   {
-   "rank": 74,
+   "rank": 75,
    "city": "Athens",
    "country": "Greece",
    "slug": "athens",
@@ -1724,7 +1747,7 @@
    "wikidata": 1
   },
   {
-   "rank": 75,
+   "rank": 76,
    "city": "Bath",
    "country": "United Kingdom",
    "slug": "bath",
@@ -1757,7 +1780,7 @@
    "score": 16.06,
    "basis": "predicted (travel demand)",
    "work_score": 16.06,
-   "rank": 76,
+   "rank": 77,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1771,7 +1794,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 77,
+   "rank": 78,
    "city": "Seattle",
    "country": "United States",
    "slug": "seattle",
@@ -1792,29 +1815,6 @@
    "work_score": 16.06,
    "travel": 12434,
    "wikidata": 2
-  },
-  {
-   "city": "Spokane",
-   "country": "United States",
-   "status": "pending",
-   "trees": 0,
-   "travel": 7831,
-   "source": "pool_audit 2026-09-01",
-   "score": 15.66,
-   "basis": "predicted (travel demand)",
-   "work_score": 15.97,
-   "rank": 78,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "wikidata": 1,
-   "supply": 1,
-   "target": 10,
-   "ease": 1.02,
-   "slug": "spokane",
-   "impressions_10d": 0,
-   "clicks_10d": 0
   },
   {
    "rank": 79,
@@ -2098,7 +2098,7 @@
    "city": "Monterey",
    "country": "United States",
    "status": "published",
-   "trees": 1,
+   "trees": 3,
    "travel": 7288,
    "source": "pool_audit 2026-09-01",
    "article": "Monterey (California)",
@@ -3403,8 +3403,8 @@
    "score": 5.5,
    "demand": 47897,
    "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
+   "status": "published",
+   "trees": 4,
    "photos": 0,
    "walks": 0,
    "register": 1,
@@ -3511,30 +3511,7 @@
    "clicks_10d": 0
   },
   {
-   "city": "Minneapolis",
-   "country": "United States",
-   "status": "pending",
-   "trees": 0,
-   "travel": 3767,
-   "source": "pool_audit 2026-09-01",
-   "score": 7.53,
-   "basis": "predicted (travel demand)",
-   "work_score": 7.68,
    "rank": 152,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "wikidata": 1,
-   "supply": 1,
-   "target": 10,
-   "ease": 1.02,
-   "slug": "minneapolis",
-   "impressions_10d": 0,
-   "clicks_10d": 0
-  },
-  {
-   "rank": 153,
    "city": "Sydney",
    "country": "Australia",
    "slug": "sydney",
@@ -3557,7 +3534,7 @@
    "wikidata": 1
   },
   {
-   "rank": 154,
+   "rank": 153,
    "city": "Toronto",
    "country": "Canada",
    "slug": "toronto",
@@ -3578,6 +3555,29 @@
    "work_score": 7.66,
    "travel": 23836,
    "wikidata": 1
+  },
+  {
+   "city": "Minneapolis",
+   "country": "United States",
+   "status": "published",
+   "trees": 4,
+   "travel": 3767,
+   "source": "pool_audit 2026-09-01",
+   "score": 7.53,
+   "basis": "predicted (travel demand)",
+   "work_score": 7.53,
+   "rank": 154,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 0,
+   "wikidata": 0,
+   "supply": 0,
+   "target": 10,
+   "ease": 1.0,
+   "slug": "minneapolis",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 155,
@@ -4811,29 +4811,6 @@
   },
   {
    "rank": 208,
-   "city": "Lausanne",
-   "country": "Switzerland",
-   "slug": "lausanne",
-   "score": 4.9,
-   "demand": 68242,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 1,
-   "target": 10,
-   "ease": 1.02,
-   "work_score": 5.0,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 4900,
-   "wikidata": 1
-  },
-  {
-   "rank": 209,
    "city": "Heraklion",
    "country": "Greece",
    "slug": "heraklion",
@@ -4856,7 +4833,7 @@
    "wikidata": 0
   },
   {
-   "rank": 210,
+   "rank": 209,
    "city": "Marseille",
    "country": "France",
    "slug": "marseille",
@@ -4876,6 +4853,29 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 4964,
+   "wikidata": 0
+  },
+  {
+   "rank": 210,
+   "city": "Lausanne",
+   "country": "Switzerland",
+   "slug": "lausanne",
+   "score": 4.9,
+   "demand": 68242,
+   "basis": "predicted (travel demand)",
+   "status": "published",
+   "trees": 8,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 0,
+   "supply": 0,
+   "target": 10,
+   "ease": 1.0,
+   "work_score": 4.9,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 4900,
    "wikidata": 0
   },
   {
