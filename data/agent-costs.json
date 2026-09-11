@@ -7403,6 +7403,15 @@
         "note": "merge/QA/build for Pisa and Pittsburgh, country page count fixes (Italy, United States), city_names.py run for both",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "prague",
+        "kind": "verify",
+        "tokens": 45000,
+        "trees": 0,
+        "note": "2 new Liboc/Hvezda trees verified via registry-join (oak on Libocky pond dam, beech below the summer palace, both flagged for honest open points); 2 existing leads (Knights of the Cross linden, Stresovice mulberry) investigated further, still unresolved on access/second-source grounds",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
