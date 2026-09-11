@@ -1,0 +1,80 @@
+{
+  "_note": "Spanish overlay for Menorca, hand-written 2026-09-11 under Contract J. Fourth from the corrected langcheck queue: 24 impressions in the ten-day window in a ROLL OUT language area. Menorca is Catalan-speaking and Contract J carries no Catalan, so this follows the same line as /es/girona and /es/barcelona. Catalan names of the trees and places are kept: Alzina d'Alfuri de Dalt, Cami de Cavalls, Illa del Llatzeret, Es Castell.",
+  "city": "Menorca",
+  "title": "Árboles singulares de Menorca: los 6 del catálogo",
+  "meta_description": "Los seis árboles catalogados de Menorca, de una encina de 400 a 500 años junto al aparcamiento de Cala del Pilar a un drago en el Llatzeret de Maó.",
+  "intro": "Menorca es una isla y esto no es un paseo. Seis árboles catalogados, un coche y casi un día. El que marca el plan es una encina de cuatrocientos a quinientos años junto al aparcamiento de Cala del Pilar, por donde pasa el Camí de Cavalls. Otros tres son gratuitos y están junto a la carretera: un pino más ancho que alto en Cala Galdana, unos plátanos en una ermita sobre Maó y otro pino cerca de Ferreries. Los dos últimos están en la vieja isla de cuarentena del puerto de Maó, y solo se llega en barco reservado.",
+  "question_title": "¿Cuál es el árbol más antiguo de Menorca?",
+  "question_meta": "La Alzina d'Alfuri de Dalt, de unos 400 a 500 años, es el árbol más antiguo de Menorca. Dónde está, y cinco más repartidos por la isla.",
+  "question_answer": "El árbol más antiguo de Menorca es la Alzina d'Alfuri de Dalt, una encina de unos 400 a 500 años que crece en un encinar junto al aparcamiento de la playa de Cala del Pilar, en la costa norte, término de Ciutadella. Es gratis: se aparca en el aparcamiento de la playa, se entra andando en el bosque contiguo, y el Camí de Cavalls pasa por ese mismo punto.",
+  "question_context": "Esa edad sale del catálogo de árboles singulares del propio Govern balear, que dice 400 a 500 años directamente en vez de llamar viejo al árbol y dejarlo ahí, y un segundo estudio de los árboles catalogados de la isla repite la cifra. Es una afirmación llamativa para una encina en Baleares, y el árbol no lo aparenta: diez metros de alto, 3,9 metros de perímetro a la altura del pecho, ancho y bajo antes que alto. Crece sobre suelo arenoso encima de una duna fósil, en un bosque de otras encinas centenarias, en terreno que el Estado expropió en 1999. Nada más en la isla se le acerca en edad. Los otros cinco árboles catalogados de aquí están entre los ochenta y los ciento sesenta y cinco años, así que la encina saca unos tres siglos al siguiente. Vaya con los ojos abiertos: el registro anota daños estructurales, vitalidad baja y muerte descendente en lo alto de la copa, y no se ha publicado ninguna revisión más reciente del estado. Si lo encuentra mejor o peor de lo que ahí pone, díganoslo.",
+  "faq": [
+    {
+      "q": "¿Cuál es el árbol más antiguo de Menorca?",
+      "a": "La Alzina d'Alfuri de Dalt, una encina de unos 400 a 500 años junto al aparcamiento de Cala del Pilar. Los otros cinco árboles de esta lista tienen entre unos ochenta y unos ciento sesenta y cinco años."
+    },
+    {
+      "q": "¿Se visitan gratis los árboles singulares de Menorca?",
+      "a": "Cuatro de los seis. Dos están en terreno público a pie de carretera, uno en un bosque del Estado junto al aparcamiento de una playa, y los plátanos son del Ayuntamiento de Maó, así que en esos cuatro no hay entrada ni verja. Los otros dos, un drago y un pino carrasco, crecen en la Illa del Llatzeret, la vieja isla de cuarentena del puerto de Maó, y a la isla solo se entra en una visita guiada en barco desde el muelle de Calesfonts, en Es Castell, de pago y con reserva previa."
+    },
+    {
+      "q": "¿Se pueden ver sin coche?",
+      "a": "En parte. Los plátanos de la Ermita de Sant Joan des Verger están a 20 minutos a pie del centro de Maó, el autobús de verano a Cala Galdana para en la misma rotonda donde está el pino, y la línea 54 del TIB recorre la carretera donde está el pino piñonero cerca de Ferreries. A Cala del Pilar, y por tanto al árbol más antiguo, no llega ningún transporte público. El barco a la Illa del Llatzeret sale de Calesfonts, en Es Castell, a unos 15 minutos en coche de Maó."
+    },
+    {
+      "q": "¿Cuánto se tarda en ver los seis?",
+      "a": "Un día con coche para cuatro de ellos. Cala del Pilar está en la costa norte, Cala Galdana en la sur, Ferreries en el medio y la ermita a la salida del puerto de Maó, que es casi todo el ancho de la isla. Los dos de la Illa del Llatzeret son medio día aparte, porque la visita en barco desde Es Castell dura unas dos horas y media y solo se hace en temporada."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+  "trees": {
+    "men_003": {
+      "name": "Alzina d'Alfuri de Dalt",
+      "species": "Encina (Quercus ilex)",
+      "age_estimate": "unos 400 a 500 años",
+      "access": "Gratuito, en un encinar justo al lado del aparcamiento público de la playa de Cala del Pilar, se llega a pie desde el aparcamiento o por el Camí de Cavalls",
+      "transport": "En coche desde Ciutadella, unos 20 o 25 minutos hasta el aparcamiento de Cala del Pilar, y después un paseo corto hasta el bosque contiguo; no llega transporte público a ese aparcamiento",
+      "story": "El árbol más antiguo de Menorca mide diez metros y está junto al aparcamiento de una playa. El catálogo balear de árboles singulares le da a esta encina de 400 a 500 años, una cifra insólitamente alta e insólitamente concreta para una encina en Baleares, y ha pasado esos siglos engordando en vez de subiendo: 3,9 metros de perímetro a la altura del pecho, 4,1 al pie, y una copa que cubre unos 176 metros cuadrados sobre un tronco que harían falta tres personas para abrazar.\n\nYa era un árbol hecho cuando los británicos tomaron Menorca en 1708 y empezó un siglo de isla cambiando de manos. Tampoco está solo. Crece en un bosque de encinas centenarias sobre suelo arenoso encima de una duna fósil, que es una cama rara para una encina y parte de la razón de que el terreno de alrededor se expropiara en 1999 y hoy sea del Estado.\n\nSea honesto consigo mismo antes de ir: el registro anota daños estructurales, vitalidad baja y una copa que se muere por arriba, y nadie ha publicado una revisión del estado desde entonces. Aparque en Cala del Pilar y entre andando en el bosque de al lado. El Camí de Cavalls pasa por el mismo punto."
+    },
+    "men_004": {
+      "name": "Los Plátanos de la Ermita de Sant Joan des Verger",
+      "species": "Plátano de sombra (Platanus x acerifolia)",
+      "age_estimate": "unos 100 a 150 años",
+      "access": "Gratuito, terreno abierto alrededor de una pequeña ermita rural con su lavadero, se llega a pie por caminos públicos cerca del puerto de Maó (destino conocido de paseo, por ejemplo por el Camí de sa Font de Sant Simon)",
+      "transport": "A pie o en coche desde el centro de Maó, unos 20 o 25 minutos; no hay transporte público directo hasta la ermita",
+      "story": "La tradición dice que un rey oyó misa en este sitio en 1287. Estos árboles no estaban. Alfonso III desembarcó cerca de Maó aquel año para tomar Menorca, y la tradición local, repetida por la propia autoridad turística de la isla y por el registro de árboles, sostiene que se dijo misa en la ermita de Sant Joan des Verger para marcarlo. No se cree que quede nada de aquel edificio medieval. Lo que hay ahora es una capilla posterior, un gran lavadero de piedra, un cruce de caminos viejos de campo y cuatro plátanos de 100 a 150 años, lo que los convierte en los recién llegados por unos seis siglos.\n\nCon sus 31 a 37 metros también le sacan la cabeza a todo lo demás de esta página. El registro los midió en 2010, con troncos de entre 2,3 y 4,1 metros de perímetro y copas que cubren entre las cuatro de 300 a 400 metros cuadrados, y anotó las raíces corriendo a la vista por un empedrado antiguo. Verger quiere decir huerto, y las tierras fértiles de alrededor son las que dieron nombre al lugar.\n\nEl terreno es del Ayuntamiento de Maó, es gratuito y abierto, y el paseo desde el centro son unos 20 minutos por caminos públicos cerca del puerto."
+    },
+    "men_002": {
+      "name": "Pi de Cala Galdana",
+      "species": "Pino carrasco (Pinus halepensis)",
+      "age_estimate": "unos 100 a 150 años",
+      "access": "Gratuito, está junto a una rotonda pública a la entrada del complejo turístico, visible y accesible desde la carretera y la acera",
+      "transport": "En coche desde Maó, unos 30 minutos por Ferreries; el autobús de verano del TIB a Cala Galdana para en esa misma rotonda",
+      "story": "La copa de este pino mide 25 metros de diámetro y el árbol solo 16 de alto, así que es la mitad más ancho que alto. El registro explica la forma en una línea: creció sin competencia. Un pino carrasco dentro de un bosque se pasa la vida echando una carrera hacia arriba con sus vecinos. Este no tenía con quién correr, así que se fue de lado, sacando cuatro ramas primarias desde unos dos metros de altura y techando unos 350 metros cuadrados de suelo.\n\nTambién tiene la dirección más improbable de esta página. Está junto a la rotonda de la entrada de Cala Galdana, donde la carretera baja hacia la cala, y generaciones de gente que llegaba a pasar el verano han pasado por delante. Es del Ayuntamiento de Ferreries, y el Govern balear lo catalogó en enero de 2001, midiendo el tronco en 3,9 metros de perímetro.\n\nEsa dirección lo convierte en el árbol más fácil de ver de esta página. No hay que andar nada, la acera pasa por al lado, y en verano el autobús de Cala Galdana para en la misma rotonda. Si uno para y mira hacia arriba ya es otra cuestión, que es más o menos de lo que va esta lista."
+    },
+    "men_005": {
+      "name": "Drago de l'Illa del Llatzeret",
+      "species": "Drago (Dracaena draco)",
+      "age_estimate": "unos 98 años",
+      "access": "Restringido a visitas guiadas: a la isla solo se llega en la visita en barco de la Fundació Foment del Turisme de Menorca que sale del muelle de Calesfonts, en Es Castell (2,5 horas, temporada, entrada de pago, reserva obligatoria, llatzeret@menorca.es); no se puede ir por libre",
+      "transport": "Travesía guiada en barco desde el muelle de Calesfonts, Es Castell, a unos 15 minutos en coche desde Maó hasta el punto de salida",
+      "story": "A este no hay que estimarlo. El registro balear da un año de plantación, 1928, lo que sitúa a este drago en unos 98 años y lo convierte en el único árbol de esta página que lleva una fecha en vez de un margen.\n\nSe plantó en el jardín del Lazareto de Maó, la estación de cuarentena levantada en su propia isla dentro del puerto para barcos y viajeros que llegaban de las Indias, y usada para tratar enfermedades infecciosas. Por eso hay aquí un jardín amurallado, y por eso a lo que se plantó en él lo han dejado en paz un siglo.\n\nDracaena draco es de Canarias y no crece en nada parecido a un árbol mediterráneo. Este mide 3,8 metros de alto con una copa de 9,4 de diámetro, lanzada sobre siete ramas primarias desde un tronco de 2,5 metros de perímetro a la altura del pecho y 3,8 al pie. Más ancho que alto, dicho de otro modo. El registro lo catalogó en 2003 y lo considera uno de los pocos dragos grandes de Baleares bien conservado, sin mutilar y crecido donde está en vez de trasplantado. Estaba fructificando con fuerza y con la hoja en buen estado cuando se hizo el estudio.\n\nLa isla es del ministerio de Sanidad. Se llega en el barco guiado desde el muelle de Calesfonts, en Es Castell, por temporada, con reserva, unas dos horas y media."
+    },
+    "men_006": {
+      "name": "Pi Felip de l'Illa del Llatzeret",
+      "species": "Pino carrasco (Pinus halepensis)",
+      "age_estimate": "unos 80 a 120 años",
+      "access": "Restringido a visitas guiadas: a la isla solo se llega en la visita en barco de la Fundació Foment del Turisme de Menorca que sale del muelle de Calesfonts, en Es Castell (2,5 horas, temporada, entrada de pago, reserva obligatoria, llatzeret@menorca.es); no se puede ir por libre",
+      "transport": "Travesía guiada en barco desde el muelle de Calesfonts, Es Castell, a unos 15 minutos en coche desde Maó hasta el punto de salida",
+      "story": "Este pino perdió una rama en 2025, y esa sola línea en su ficha es la prueba más fresca de esta página de que alguno de estos árboles sigue en pie. A todo lo demás de aquí se le miró por última vez hace entre quince y veinticinco años.\n\nDe entrada tiene una forma rara. Diez metros de alto, y una copa que se extiende 20,8 metros en una dirección y 26 en la otra, todo ello sostenido por cuatro ramas primarias sobre un tronco de 1,14 metros de grosor, 3,6 metros de perímetro a la altura del pecho y 4,4 en la base. Varias de esas ramas descansan hoy sobre puntales. El registro balear, que lo catalogó en 2003, describe una estructura desequilibrada, vitalidad baja y fragilidad alta, y cifra lo que queda de la copa original en un 40 a 60 por ciento.\n\nCrece a pocos metros del drago, en el jardín del Lazareto de Maó, la vieja estación de cuarentena en su isla del puerto, en terreno del ministerio de Sanidad. Los dos entran en la misma entrada, porque la única manera de pisar la isla es el barco guiado desde el muelle de Calesfonts, en Es Castell, por temporada y con reserva, unas dos horas y media.\n\nSi coge ese barco, mire qué está apuntalado y qué no, y cuéntenoslo."
+    },
+    "men_001": {
+      "name": "Pi Ver del Doctor Camps",
+      "species": "Pino piñonero (Pinus pinea)",
+      "age_estimate": "unos 150 años",
+      "access": "Gratuito, visible desde el arcén de una carretera pública (la Me-20); no hace falta entrar en ninguna propiedad",
+      "transport": "En coche desde Maó por Ferreries, unos 25 o 30 minutos; sin transporte público directo, aunque la línea 54 del TIB (Es Migjorn Gran-Ferreries) recorre esa misma carretera",
+      "story": "Aquí se plantaron tres pinos. Queda uno, y no podemos decirle si sigue en pie. El registro balear catalogó el grupo en 1992 y anotó que se habían plantado unos 120 años antes, por Francesc Camps i Mercadal, el médico de Es Migjorn Gran, folclorista que firmaba como Marqués d'Albranca y que murió en 1929. Uno de los tres ya había muerto y se había talado cuando se hizo aquel estudio. El propio recuento de vitalidad del registro da por muerto también a uno de los dos que quedaban, lo que deja este.\n\nEn 2003 se le encontró seriamente afectado por una plaga de insectos, y el registro dice sin rodeos que la infestación acabaría probablemente con él. Ninguna fuente posterior ha dicho qué pasó. Por eso este árbol está al final de la lista y no fuera de ella: lo que quedó registrado es un pino piñonero de 20 metros de alto, cuatro metros de perímetro a la altura del pecho, con una copa de 18 metros de diámetro, en el arcén de la Me-20 entre Ferreries y Es Migjorn Gran.\n\nSi conduce por esa carretera, mire el arcén y cuéntenos qué hay. Una foto lo resolvería, y esta página cambiaría esa misma semana."
+    }
+  }
+}
