@@ -21,7 +21,15 @@
     "transport": "Point Breeze/Shadyside, Pittsburgh; walkable from Fifth Avenue and Beechwood Boulevard, bus routes serve the area",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Designated a Pittsburgh 'Champion Tree' (the largest of its species on public property in the city) by the City of Pittsburgh Shade Tree Commission's Remarkable Trees of Pittsburgh program, a partnership with Tree Pittsburgh, out of 44 public submissions and 15 that met criteria (per the March 2023 minutes). A WebSearch-aggregated description (not independently re-fetched, so not used as a verified fact) said it 'towers over the area... provides shade... the cones are always great fun for the kids to collect', and gave the location as 'south of Fifth Avenue near Beechwood Boulevard', which is consistent with and used for the pin. No age, girth or height measurement found in either directly-fetched source. Flagged for the missing measurements and for the location being sourced partly from an unfetched aggregate summary rather than a directly-viewed page (remarkabletreespgh.com itself is JavaScript-rendered and returned no readable text to this pass's fetch tools)."
+    "story": "Bald cypress is a swamp tree. It evolved in the flooded bottomlands of the American South, where it pushes woody knees up out of standing water, and it has no obvious business being the champion of anything in Pittsburgh. In March 2023 the city's Shade Tree Commission named this one exactly that: the largest bald cypress on public ground anywhere in the city.\n\nThe title came out of an open call. The Remarkable Trees of Pittsburgh program, run by the Shade Tree Commission with Tree Pittsburgh, took 44 nominations from residents; 15 of them met the criteria, and the city's first list of remarkable trees was drawn from those. Three stand in Mellon Park, which was Pittsburgh's first public arboretum, and this is one of the three.\n\nNovember is when it does the thing that catches people out. It is a conifer and it is deciduous, which most trees have the decency not to be at the same time. The fine needles turn a foxy rust, come down over a couple of weeks, and leave a bare fluted trunk standing through the winter with nothing on it at all.\n\nNo age, height or girth has been published for it. The city established that it is the biggest of its kind here and never wrote down by how much. If you know the numbers, send them.",
+    "how_to_recognise": "You can recognise it by fine, feathery needles on a conifer that stands completely bare all winter, and by its size: no bald cypress on public land in Pittsburgh is bigger. It is south of Fifth Avenue, near Beechwood Boulevard.",
+    "best_time": {
+      "months": [
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "November, when a conifer turns rust-orange and drops every needle"
+    }
   },
   {
     "id": "pit_002",
@@ -45,7 +53,15 @@
     "transport": "Point Breeze/Shadyside, Pittsburgh; walkable from Fifth Avenue and Beechwood Boulevard",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Designated a 'Tree of a Kind' (unique in appearance, origin or growth form) by Pittsburgh's Remarkable Trees program, standing near the Champion bald cypress (pit_001) at the same Fifth Avenue/Beechwood Boulevard entrance to Mellon Park. Katsura trees are known for a sweet, cotton-candy-like scent their fallen leaves give off in autumn, a widely reported species trait (per an unfetched WebSearch aggregate, not used as a verified fact specific to this individual tree). No age, girth or height found in either directly-fetched source; flagged for that and for the same location-sourcing caveat as pit_001."
+    "story": "In autumn, a katsura smells of burnt sugar. As the leaves yellow and fall they release maltol, the compound behind the smell of caramel and candy floss, and for a couple of weeks the ground under the tree smells sweet enough that people stop walking and look around for a bakery.\n\nThat is the sort of thing Pittsburgh's Shade Tree Commission had in mind when it put this one on the city's first list of Remarkable Trees in March 2023, under the heading Tree of a Kind: not the biggest of its species, but unusual in form, origin or appearance. The list came from 44 nominations sent in by residents, of which 15 met the criteria. Three of those stand in Mellon Park, the city's first public arboretum, and this katsura is a short walk from the champion bald cypress at the Fifth Avenue and Beechwood Boulevard corner.\n\nCercidiphyllum japonicum is Japanese, and it grows nothing like the oaks and maples around it. The leaves are small blue-green hearts set in opposite pairs, and the branches layer outward rather than climbing, so the whole tree reads as horizontal. In October the leaves go apricot and pale gold before they drop.\n\nNo age, height or girth is on public record for it, which is true of all three Mellon Park trees on the city's list. Go in October and let your nose find it before your eyes do.",
+    "how_to_recognise": "You can recognise it by small blue-green heart-shaped leaves in opposite pairs, on branches that layer outwards rather than up, and in autumn by the caramel smell underneath it. It is near the Fifth Avenue and Beechwood corner.",
+    "best_time": {
+      "months": [
+        10
+      ],
+      "kind": "autumn colour",
+      "label": "October, when the leaves turn apricot and the fallen ones smell of burnt sugar"
+    }
   },
   {
     "id": "pit_003",
@@ -69,7 +85,8 @@
     "transport": "Point Breeze/Shadyside, Pittsburgh; walkable from Fifth Avenue near the Penn Avenue side of the park",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Designated a 'Tree of a Kind' by Pittsburgh's Remarkable Trees program, on the opposite (north, Penn Avenue) side of Mellon Park from the bald cypress and katsura (an unfetched WebSearch aggregate gave this location, not used as a verified fact beyond the general side-of-park placement, hence approximate precision). Lacebark pines are prized ornamentally for their mottled, exfoliating bark. No age, girth or height found in either directly-fetched source; flagged for that."
+    "story": "Most pines wear dark, furrowed, forgettable bark. This one peels. A lacebark pine sheds its outer bark in irregular plates, the way a plane tree does, and leaves behind a patchwork of olive, grey-green and chalk white that grows paler with age until an old trunk is close to ivory. The bark is the entire reason anybody planted it, and the reason its English name says nothing about pines.\n\nPittsburgh's Shade Tree Commission named it a Tree of a Kind in March 2023, one of the categories in the city's first Remarkable Trees list. That list came out of 44 nominations from residents, 15 of which met the criteria, and it is a deliberately different kind of honour from a champion title: nobody nominates a lacebark pine because it is large. Pinus bungeana is Chinese, often multi-stemmed, and slow, and it was recorded here for what it looks like rather than what it measures.\n\nIt stands on the north side of Mellon Park, towards Penn Avenue, across Fifth Avenue from the champion bald cypress and the katsura that were listed alongside it in the same round.\n\nNo age, height or girth has been published. What can be said is that this is one of the few trees in the park worth a February visit: the bark is the show, it runs all twelve months, and it has nothing competing with it in winter.",
+    "how_to_recognise": "You can recognise it by the bark, peeling in plates into a camouflage of olive, grey and chalk white, unlike any other pine here, and often on several stems. It stands on the north side of Mellon Park, towards Penn Avenue."
   },
   {
     "id": "pit_004",
@@ -92,6 +109,7 @@
     "transport": "Beechview, Pittsburgh",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "SINGLE SOURCE this pass: only the official Shade Tree Commission minutes name this tree, designated a 'Giving Tree' (for wildlife/ecosystem value) in Pittsburgh's Remarkable Trees program. A second, independent source was not found this pass; remarkabletreespgh.com itself, which likely carries the tree's own nomination writeup and a photo, is JavaScript-rendered and returned no readable text to this pass's fetch tools (WebFetch and curl both). An unfetched WebSearch aggregate described it as 'one of the tallest white oaks in the park', not used as a verified fact. Flagged accordingly; a future pass with browser-rendering access should retry remarkabletreespgh.com directly, which likely also carries better location precision and photos for all four Pittsburgh entries in this file."
+    "story": "Pittsburgh has a category of remarkable tree called the Giving Tree, awarded for what a tree does for everything else living around it rather than for how big it is. When the city's Shade Tree Commission drew up its first list in March 2023, this white oak in Phillips Park took that title.\n\nIt is a defensible choice. An oak is the most productive thing most American parks contain: acorns that feed deer, squirrels, jays and woodpeckers through the winter, and caterpillars in numbers no other native tree comes close to, which is what songbirds actually put in front of their chicks. A single mature Quercus alba is less a tree than a food supply with bark on it, and white oaks do this for centuries.\n\nBe aware of how thin the record is. Only one document names this tree, the commission's own minutes from 16 March 2023, and the program's public write-ups sit on a site we could not read. There is no published age, no height, no girth, and no second account. Phillips Park is free and open, in Beechview, and the pin will get you into the park rather than to the trunk.\n\nSo this is the entry that most needs a reader. If you live in Beechview, or you have stood under this oak, tell us which one it is and what it measures.",
+    "how_to_recognise": "You can recognise it by white oak leaves, with rounded lobes and no bristle tips, and pale grey bark in loose vertical plates. It is a tall oak in Phillips Park, Beechview; tell us where exactly you found it."
   }
 ]

@@ -1,0 +1,160 @@
+{
+  "city": "Pisa",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Pisa is famous for a tower that leans. A few hundred metres away, the university's botanical garden, the oldest of its kind still on its original ground, holds four trees planted between 1787 and 1829: a ginkgo and a magnolia set down by the same director in the same season, a plane whose species even the sources cannot agree on, and a live oak from the American South. All four are still standing.",
+  "meta_description": "Pisa's Orto Botanico: a 1787 ginkgo and magnolia planted by the same director, a disputed 1808 plane, a 1829 Virginia oak.",
+  "question_meta": "Pisa's oldest trees are a ginkgo and a magnolia, both planted in 1787 by garden director Giorgio Santi.",
+  "question_answer": "Pisa's oldest trees are a ginkgo and a southern magnolia in the university's Orto Botanico, both planted in 1787 by the garden's director, Giorgio Santi, in the section still called the Orto del Cedro. Two and a bit centuries on, the ginkgo is the largest tree in the garden at four metres round; the magnolia has never been measured. They stand a few steps apart.",
+  "question_context": "Giorgio Santi directed Pisa's university botanical garden in the late 1700s and planted a ginkgo and a southern magnolia in the same corner in 1787, reportedly watched by Gaetano Savi, then young and later his own successor in the post. The ginkgo, said to be the first ever planted in Tuscany, has grown into the garden's largest tree, four metres around the trunk, and still turns gold and drops its leaves inside a single week each November. The magnolia has reached about 14 metres and flowers every June, though nobody has published a girth for it. Two more trees from the following decades share the garden's arboretum beds: a plane from 1808 whose exact species is disputed between two independent sources, and a live oak from Virginia planted in 1829, both surviving a late-1800s reorganisation of the grounds that moved everything younger or smaller than they already were. The garden itself, founded in 1544, is the oldest university botanical garden anywhere still on its original site, and all four trees have grown up inside that continuous institution rather than a park that changed hands.",
+  "hero_tree_id": "psa_001",
+  "oldest_tree_id": "psa_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Pisa?",
+      "a": "A ginkgo planted in 1787 by Giorgio Santi, director of the university's botanical garden, said to be the first ginkgo ever planted in Tuscany. It now stands four metres round, the largest tree in the garden."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "No. All four stand inside the Orto e Museo Botanico, the university's botanical garden museum near the Leaning Tower, which charges an entry fee and keeps regular visiting hours."
+    },
+    {
+      "q": "Why does one tree's species stay unresolved?",
+      "a": "The 1808 plane is called an oriental plane by one source and an American sycamore by another. The two are the parents of the London plane, their natural hybrid, so a two-century-old Italian plane filed under two names is an ordinary confusion rather than a rare one. Tell us what the leaves show."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The Orto e Museo Botanico sits in central Pisa, an easy walk from Piazza dei Miracoli and the Leaning Tower, with two entrances on Via Luca Ghini and Via Roma."
+    }
+  ],
+  "trees": [
+    {
+      "id": "psa_001",
+      "name": "The Ginkgo of Giorgio Santi",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 240 years",
+      "age_min": 230,
+      "age_max": 245,
+      "girth_cm": 400,
+      "location": {
+        "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the section called Orto del Cedro",
+        "latitude": 43.7198,
+        "longitude": 10.3968,
+        "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+      },
+      "story": "This is reckoned to be the first ginkgo ever planted in Tuscany. Giorgio Santi, director of Pisa's university botanical garden, put it in the ground in 1787, in the section still called the Orto del Cedro, and the sapling is said to have arrived from London. Watching him do it was Gaetano Savi, young at the time and later Santi's successor in the job.\n\nTwo and a bit centuries on it is the largest tree in the garden, four metres around the trunk, and it still drops its fan-shaped leaves in one short yellow week every autumn. It has stood through the French occupation of Tuscany, the unification of Italy, two world wars and about eight generations of botany students, all of it a few hundred metres from the Leaning Tower.\n\nSanti planted a magnolia the same year in the same corner, and those two are the oldest trees still alive here. They are worth seeing as a pair: one an evergreen import from the American South, the other a Chinese species with no close living relatives, both chosen by the same man in the same season and both outliving him by two hundred years.",
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves and by sheer size: at four metres round it is the largest tree in the garden. It stands in the Orto del Cedro section, beside the magnolia Santi planted the same year.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+        "https://www.ortomuseobot.sma.unipi.it/2022/12/giorgio-santi-fu-prefetto-dell-orto-botanico-oggi-ricorrono-200-anni-dalla-sua-morte/",
+        "https://www.apgi.it/giardino/orto-botanico-universita-di-pisa/",
+        "https://www.georgofili.info/contenuti/lorto-e-museo-botanico-delluniversit-di-pisa/23235"
+      ],
+      "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+      "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "psa_002",
+      "name": "The Magnolia of Giorgio Santi",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "about 240 years",
+      "age_min": 230,
+      "age_max": 245,
+      "girth_cm": null,
+      "location": {
+        "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the section called Orto del Cedro",
+        "latitude": 43.7198,
+        "longitude": 10.3968,
+        "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+      },
+      "story": "Pisa's two oldest living trees went into the ground the same year, planted by the same man, in the same corner of the garden. This is the other one. Giorgio Santi, then director of the university's botanical garden, set a ginkgo and this southern magnolia into the Orto del Cedro in 1787, and both are still standing.\n\nThe magnolia is now around 14 metres tall. That is a long way from the coastal woods of the American southeast, where the species comes from, and a good result for a tree that spent its first decades as an expensive curiosity. There is no bare season to catch it in: the leaves are dark, glossy and evergreen, rust-coloured and felted underneath, and in early summer the flowers open cream-white and heavy, big enough to fill two hands.\n\nNobody has taped the trunk, or nobody has published the number, so we cannot tell you how thick it is. If you have measured it, tell us.\n\nWhat it has watched from that spot is a working university: Napoleon's reorganisation of Tuscany, the making of a unified Italy, students collecting specimens in the 1840s and students doing the same thing this morning. Santi died in 1822. His magnolia has outlived him by two centuries and is still flowering every June.",
+      "how_to_recognise": "You can recognise it by the leaves, dark and glossy on top, rust-brown and felted underneath, on an evergreen about 14 metres tall. It stands in the Orto del Cedro, next to the ginkgo planted the same year.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+        "https://www.ortomuseobot.sma.unipi.it/2022/12/giorgio-santi-fu-prefetto-dell-orto-botanico-oggi-ricorrono-200-anni-dalla-sua-morte/",
+        "https://www.apgi.it/giardino/orto-botanico-universita-di-pisa/",
+        "https://www.georgofili.info/contenuti/lorto-e-museo-botanico-delluniversit-di-pisa/23235"
+      ],
+      "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+      "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "psa_003",
+      "name": "The Plane of the Scuola Botanica",
+      "species": "Plane (Platanus sp., disputed: see note)",
+      "age_estimate": "about 220 years",
+      "age_min": 210,
+      "age_max": 225,
+      "girth_cm": null,
+      "location": {
+        "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the arboretum of the Scuola Botanica section",
+        "latitude": 43.7198,
+        "longitude": 10.3968,
+        "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+      },
+      "story": "Two sources have looked at this tree and come back with two different species. One calls it an oriental plane, Platanus orientalis. The other calls it Platanus occidentalis, the American sycamore. They agree on everything else: planted in 1808, in the arboretum of the Scuola Botanica, still there.\n\nThe disagreement is less embarrassing than it sounds, because the two species named are the parents of a third. The London plane is their natural hybrid, and most of the old planes of European streets and gardens turn out to be that hybrid rather than either parent. A two-hundred-year-old Italian platano filed under two names at once is an ordinary kind of confusion, and it is why this page will not commit to more than Platanus. Somebody standing in front of it with a fruit cluster in hand could settle it in a morning.\n\nWhat is certain is that the tree survived an edit. When Theodore Caruel reorganised the Scuola Botanica in the late 1800s, laying out new beds in new orders, a handful of specimens were too well established to move and simply stayed where they were. This is one of them, along with the Virginia oak planted twenty-one years after it.\n\nOne source puts its height at 23 metres. The leaves are the tell: cut almost to the midrib for the oriental parent, broad and shallow for the American. Tell us what you find.",
+      "how_to_recognise": "You can recognise it by a plane's flaking, patchwork bark and by its height, which one source puts at 23 metres. It stands in the arboretum of the Scuola Botanica, the same beds as the Virginia oak of 1829.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+        "https://www.apgi.it/giardino/orto-botanico-universita-di-pisa/"
+      ],
+      "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+      "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "psa_004",
+      "name": "The Virginia Oak of 1829",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "about 195 years",
+      "age_min": 190,
+      "age_max": 200,
+      "girth_cm": null,
+      "location": {
+        "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the arboretum of the Scuola Botanica section",
+        "latitude": 43.7198,
+        "longitude": 10.3968,
+        "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+      },
+      "story": "A live oak from the American South has been growing in Pisa since 1829. Quercus virginiana is the tree of Georgia and the Carolinas, the one that carries Spanish moss in photographs; this one carries nothing, stands in a Tuscan university garden, and has been doing so for nearly two centuries.\n\nItaly has never quite settled on what to call it. One account lists it as the quercia della Virginia, the Virginia oak. Another, written by a visitor reading the plaques on site, records it as the leccio della Virginia, borrowing the word for holm oak instead. That is a fair slip. Like a holm oak, a live oak holds small leathery leaves through the winter and looks almost nothing like the oaks a European expects to see.\n\nIt is one of the specimens that stayed put when the Scuola Botanica was rearranged in the late 1800s, along with the plane planted in 1808. Nobody appears to have measured the trunk, so what exists is a planting year and no girth. If you get a tape around it, we would like the number.\n\nThe beds around it hold other dated arrivals from the same century of collecting, a sequoia from 1868 and an araucaria from 1872 that has reached 25 metres. Pisa was importing the New World a tree at a time, and this oak is one of the earlier receipts.",
+      "how_to_recognise": "You can recognise it by small, leathery, un-oaklike leaves that stay on all winter, more holm oak than oak. It stands in the arboretum of the Scuola Botanica, in the same beds as the plane of 1808.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+        "https://www.travelstales.it/orto-botanico-pisa/"
+      ],
+      "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+      "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
