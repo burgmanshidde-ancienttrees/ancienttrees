@@ -70,4 +70,15 @@ public enum Launch {
     /// The "is this the one" comparison, added 2026-09-07 on Hidde's sketch of
     /// the flow. Same reason as its three neighbours: it lives behind a camera.
     public static let collectCompare = ProcessInfo.processInfo.arguments.contains("-collect-compare")
+
+    /// The form somebody fills in for a tree we do not map, added 2026-09-11
+    /// with the trunk-size row.
+    ///
+    /// It should have existed on 2026-09-08, when that screen went from one
+    /// field to two. Its four neighbours above all have an argument and this
+    /// one never did, so the screen carrying every field a contributor types
+    /// has shipped unphotographed and unmeasured this whole time, which is the
+    /// exact failure appsweep.py's own header names: a screen no argument can
+    /// open is a screen that ships unseen.
+    public static let collectDescribe = ProcessInfo.processInfo.arguments.contains("-collect-describe")
 }

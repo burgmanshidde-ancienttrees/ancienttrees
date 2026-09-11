@@ -11,6 +11,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session) - benchmarked the trunk control properly, and found the screen it lives on has never been photographed
+
+Hidde, on the field below: "heb je het mooi gemaakt en gebenchmarkt enzo?" The honest answer was half a no, and the half that was missing turned out to matter more than the control.
+
+**What I had benchmarked was the MEASUREMENT and not the CONTROL.** The hug is right and the sources are in CONVENTIONS.md. The thing holding it was a LazyVGrid with adaptive columns, chosen because it is the container SwiftUI ships rather than the one the convention asks for. Looked up properly now: a segmented control is for switching between views or modes and its segments are equal width; a choice chip is for picking a VALUE out of three to six options, sizes to its own text, and wraps. Ours answers a question, so it is chips, and the grid was a segmented control wearing capsules. Replaced with `FlowRow`, the Layout protocol doing the one thing it exists for, and the chips now hug their own text. Both lookups are in CONVENTIONS.md under a new entry so the next control does not repeat this.
+
+**And the bigger find: the screen has never been photographed, by anybody, ever.** appsweep.py's own header says a screen no argument can open is a screen that ships unseen, and the collect flow has arguments for place, identify, ticked and compare. It has never had one for DESCRIBE, which is the screen carrying every field a contributor types. It went from one field to two on 2026-09-08 and nobody has looked at it since, because nobody could: it sits behind a camera a simulator does not have. `-collect-describe` exists now, with entries in both screen lists, so CI photographs it and appfit measures it from this push on.
+
+So: no, I have not made it "mooi", and I cannot from here. What I have done is make it possible to SEE, which is the step that was actually missing.
+
+**Also made the sync survive Hidde not having run the SQL yet** (he said "ik kan nu niet supabase"). PostgREST refuses a whole row for a column it cannot find, and refusing the row loses the TREE. The trunk answer is the least valuable thing in that row, so a failed push now retries once without it. The key is only present when somebody answered, so nothing else ever takes the second call, and it retires itself the moment the column exists.
+
 ## 2026-09-11 (session) - the app asks how thick the trunk is, in hugs
 
 Hidde, straight after the age script landed: "en bij het toevoegen van een boom een nieuw veld - girth". So the add-a-tree sheet has a third field, under the name and the reason, and it is optional like both of them.

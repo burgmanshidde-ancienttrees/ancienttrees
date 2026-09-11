@@ -1493,17 +1493,52 @@ Read 2026-09-11:
 thick is the trunk?", answered in hugs on five capsules: less than 1, 1, 2, 3,
 4 or more. Optional, like both fields above it.
 
-Three choices worth keeping, because each had a more obvious wrong answer.
 **Hugs rather than a number**, since somebody in a park has no tape and a
 number would also force a metric or imperial question that a body sidesteps.
-**A wrapping grid rather than a segmented control**, which was the first
-instinct: Apple's guidance is that segments carry short labels of roughly equal
-width, and "4 or more hugs" beside "less than 1" is neither, and five capsules
-do not fit one line at 375 points. **The explanation above the control rather
-than under it**, because it defines the unit somebody is about to count in
-rather than helping after the fact, which is what our own web contribute form
-already does with its field hints.
-
 The phone stores the answer as given ("<1", "1", "2", "3", "4+") and the
 conversion to metres lives in scripts/sightings_inbox.py, so it can be
 corrected without an App Store release.
+
+**The explanation sits above the control**, not under it as a footnote, because
+it defines the unit somebody is about to count in rather than helping after the
+fact. A chip saying "2 hugs" means nothing until you have read what a hug is.
+Our own web contribute form already does this, hint between the label and the
+field.
+
+---
+
+## Picking one value out of a few, inside a form (2026-09-11)
+
+Looked up because the trunk row above needed a control and the first version
+picked the wrong one.
+
+**Reference: Apple's Human Interface Guidelines, segmented controls.** A
+segmented control is for "closely related choices that affect an object, state,
+or view, such as helping people switch between views in a toolbar", it holds
+five or fewer segments on iPhone, and its segments are EQUAL WIDTH. Its labels
+have to be short and of roughly equal length, because a segmented control
+cannot wrap or resize text without looking broken.
+
+**Reference: the choice chip, as every consumer design system uses it.** A chip
+is for selecting an INPUT out of roughly three to six options, the way a radio
+button does. It sizes to its own text, the row wraps, and it is toggleable, so
+tapping the chosen one takes the answer back.
+
+**So the test is what the control DOES, not how many options it has.** Switching
+what is on screen is a segmented control. Answering a question is a chip row.
+Ours answers a question, and "4+ hugs" beside "Less than 1" is exactly the
+unequal pair a segmented control handles badly.
+
+**Where we got it wrong first, which is the part worth keeping.** The first
+version used a `LazyVGrid` with adaptive columns. It wrapped correctly and it
+forced every chip to one width, which is a segmented control wearing capsules:
+it had the chip's shape and the segmented control's behaviour, and it came from
+reaching for the container SwiftUI ships rather than the one the convention
+asks for. SwiftUI has no flow container, so a chip row is the `Layout` protocol
+(`FlowRow` in CollectSheet.swift).
+
+Read 2026-09-11:
+- https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+- https://developer.apple.com/documentation/swiftui/pickerstyle/segmented
+- https://medium.com/tap-to-dismiss/select-to-proceed-996d19c8a7a4
+- https://www.createwithswift.com/mastering-forms-in-swiftui-selecting-information/

@@ -304,6 +304,13 @@ struct CollectSheet: View {
                 stage = .ticked(t.id)
                 return
             }
+            if Launch.collectDescribe {
+                at = origin
+                shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
+                    .image { _ in }
+                stage = .describe
+                return
+            }
             if Launch.collectIdentify {
                 // A one-pixel stand-in for the photograph, because every
                 // action on this screen needs one and a simulator has no
@@ -1424,11 +1431,18 @@ struct CollectSheet: View {
 /// fingertip to fingertip. CONVENTIONS.md, "Asking a contributor how thick a
 /// tree is", holds the lookup and the sources.
 ///
-/// A WRAPPING GRID rather than a segmented control, which was the first
-/// instinct and is wrong here: Apple's guidance is that segments carry short
-/// labels of roughly equal width, and "4+ hugs" beside "Less than 1" is
-/// neither. Five capsules at 375 points do not fit one line, and a horizontal
-/// scroller would hide the answer most ancient trees need. LazyVGrid wraps.
+/// A WRAPPING ROW OF CHIPS rather than a segmented control, and the difference
+/// between the two is the reason rather than the look. A segmented control is
+/// for switching between views or modes, its segments are equal width, and
+/// Apple asks for five or fewer with short labels; a choice chip is for picking
+/// a VALUE out of roughly three to six options, it sizes to its own text, and
+/// the row wraps. This is a value, "4+ hugs" and "Less than 1" are not equal
+/// width, and five capsules do not fit one line at 375 points.
+///
+/// The first version used a LazyVGrid with adaptive columns. It wrapped, and it
+/// forced every chip to one width, which is a segmented control wearing
+/// capsules. FlowRow below is the Layout protocol doing the one thing it is
+/// for, since SwiftUI ships no flow container.
 ///
 /// The stored value is terse ("<1", "2", "4+") because it travels to a script
 /// rather than to a reader; the label is what the person sees.
@@ -1452,8 +1466,7 @@ private struct HugRow: View {
     ]
 
     var body: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 96), spacing: 8)],
-                  alignment: .leading, spacing: 8) {
+        FlowRow(spacing: 8) {
             ForEach(Self.options) { option in
                 let on = picked == option.id
                 Button {
@@ -1465,8 +1478,7 @@ private struct HugRow: View {
                     Text(option.label)
                         .font(.brand(13, .medium, relativeTo: .caption))
                         .foregroundStyle(on ? .white : Brand.ink)
-                        .padding(.horizontal, 12)
-                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 14)
                         .frame(height: 44)
                         .background(on ? Brand.moss : Brand.surface, in: .capsule)
                         .overlay {
@@ -1480,5 +1492,55 @@ private struct HugRow: View {
             }
         }
         .accessibilityIdentifier("hug-row")
+    }
+}
+
+/// Views laid left to right, wrapping onto a new line when the row runs out.
+///
+/// SwiftUI ships no flow container, and this is the one thing the Layout
+/// protocol exists for. Kept here beside its only caller rather than promoted
+/// to Kit: one use is not a component, and moving it the day there is a second
+/// one costs nothing.
+///
+/// Each subview is measured unconstrained and placed at the size it asks for,
+/// which is what makes a chip hug its own text instead of being stretched to a
+/// column's width. A subview wider than the whole row gets its own line and
+/// overflows it, which cannot happen here (five short labels) and is the
+/// honest behaviour if it ever does: nothing is silently clipped.
+struct FlowRow: Layout {
+    var spacing: CGFloat = 8
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews,
+                      cache: inout ()) -> CGSize {
+        let limit = proposal.width ?? .infinity
+        var x: CGFloat = 0, height: CGFloat = 0, lineHeight: CGFloat = 0
+        for view in subviews {
+            let size = view.sizeThatFits(.unspecified)
+            if x > 0, x + size.width > limit {
+                x = 0
+                height += lineHeight + spacing
+                lineHeight = 0
+            }
+            x += size.width + spacing
+            lineHeight = max(lineHeight, size.height)
+        }
+        return CGSize(width: proposal.width ?? max(0, x - spacing),
+                      height: height + lineHeight)
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize,
+                       subviews: Subviews, cache: inout ()) {
+        var x = bounds.minX, y = bounds.minY, lineHeight: CGFloat = 0
+        for view in subviews {
+            let size = view.sizeThatFits(.unspecified)
+            if x > bounds.minX, x + size.width > bounds.maxX {
+                x = bounds.minX
+                y += lineHeight + spacing
+                lineHeight = 0
+            }
+            view.place(at: CGPoint(x: x, y: y), proposal: ProposedViewSize(size))
+            x += size.width + spacing
+            lineHeight = max(lineHeight, size.height)
+        }
     }
 }
