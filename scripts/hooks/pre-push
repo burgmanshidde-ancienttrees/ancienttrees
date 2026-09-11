@@ -72,6 +72,25 @@ for f in $PITCH; do
     fi
 done
 
+# BOTH SURFACES, checked rather than remembered (2026-09-11). Hidde found
+# "Exact location. The pin marks the trunk." still on the website a week after
+# he had it taken out of the app: "zorg dat dit volgende keer wel gelijk app en
+# web doet." A line removed from one surface that survives, word for word, on
+# the other is refused here. Deliberate one-surface copy lives in
+# data/parity-allow.json with its reason. Runs on ANY change under ios/ or
+# site/src/, which the app gate below does not cover.
+if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
+    if ! out=$(python3 scripts/paritycheck.py 2>&1); then
+        echo ""
+        echo "pre-push: paritycheck says no"
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Take it out of both surfaces, or record why it"
+        echo "lives on one in data/parity-allow.json."
+        exit 1
+    fi
+fi
+
 echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark))' || exit 0
 
 fail=0

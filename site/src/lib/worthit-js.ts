@@ -234,9 +234,8 @@ export const WORTHIT_JS = `
       st.vote = vote;
       send(box, vote === 'up' ? 'worth it' : 'not worth it', '');
       paint(box);
-      // The app-store convention: the vote already counted; the why is an
-      // optional follow-up, never an interrogation.
-      if (vote === 'down') openWhy(box, 'Care to say why? (optional)');
+      // No thumbs-down since 2026-09-11, the same as the app, so there is no
+      // follow-up to open after a vote: the vote is the whole act.
       return;
     }
 
