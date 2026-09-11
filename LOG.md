@@ -1,6 +1,44 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (continuation 8, previous attempt stopped after 16 min with 104 min unspent) - Prague 27 -> 30, one QA bug fixed, one bad photo rejected
+
+Inherited a standing Prague verify claim from the previous attempt in this
+window, which had claimed but not researched anything. Finished it rather
+than releasing it: a verify pass mined the unmined AOPK register rows
+5-7km northeast of the centre (Bohnice/Kobylisy/Liben) and found 3 genuinely
+new, publicly accessible oaks (one of them deliberately the living half of a
+once-famous pair whose bigger, dead neighbour is still protected). A write
+pass turned them into stories; before merging I restored the Czech
+diacritics the write pass had flattened to ASCII (Cimicky haj -> Cimicky
+haj, Pod Labutkou, Strelnicna, Liben, Dablice), checked against the
+register's own name_cz fields, and fixed two stale tree-count mentions
+(meta_description, question_meta, 27 -> 30). Build, preflight, superlatives,
+qa all clean. Claim released.
+
+Along the way, `qa.py` was failing on two orphaned Lisbon photo files
+(lis_005's sized copies saved under a slug nothing referenced); confirmed
+no reference anywhere and deleted them. Checked REVIEW.md's two open WARNs
+(a broken empty photo-credit figcaption on reader-app photos, and three
+self-repeating tree-page titles) against the current source: both fixes
+were already in the codebase from an earlier pass today, just never
+rebuilt/verified, so nothing to do there beyond confirming the build is
+clean.
+
+Also ran a small photo viewing pass on Tilburg's one fetchable candidate
+(the site's `photo_gaps.py --shortlist`): rejected it on sight, it was a
+photo of a fallen Ginkgo leaf in the grass, not the Flowering Ash tree it
+was matched to by filename/category. Recorded via `photo_verdicts.py` so
+nobody re-judges it.
+
+Checked the "OPENABLE TODAY" new-city list before chasing new coverage:
+Taormina's register is a documented dead end (all in-town candidates
+blocked on hotel-grounds access), Ravenna's four candidates are scattered
+17-19km apart with no cluster, so neither was worth a pass. Instead claimed
+Rome (30 trees, 560 impressions in the latest search window, the single
+biggest depth-allowed city) for a verify pass on its own unmined register
+candidates near the centre; result not yet in as this entry is written.
+
 ## 2026-09-11 (continuation 5) - Milan +1 (24), Alicante's register confirmed exhausted, Finch Arboretum gets a park page
 
 Dispatched parallel verify agents on Alicante and Milan, both real-demand

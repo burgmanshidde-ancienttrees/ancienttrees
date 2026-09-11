@@ -11,6 +11,60 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation 8) - Prague 27 -> 30: three Praha 8 oaks from the AOPK register
+
+Finished a standing verify claim on Prague left by the previous attempt in
+this window (claimed, never researched). Mined the unmined AOPK register
+rows 5-7km northeast of the centre: prg_028 The Oak Behind the Ranger's
+Lodge, Cimicky haj (Bohnice, girth 381cm, deliberately the living half of a
+once-paired oak whose bigger, more famous neighbour is confirmed dead per
+Czech Wikipedia's own extinct-oaks category), prg_029 The Oak of Pod
+Labutkou Street (Liben, girth 314cm, an ordinary street oak with an
+unusually intact ground-level crown), prg_030 The Oak of Kobylisy
+(Sidliste Dablice, girth 436cm, the largest tree in a housing-estate park
+on the site of a former military range). All three register+cs.wikipedia
+sourced, flagged rather than confirmed on two fully independent sources,
+all free and unrestricted. One new lead added: Cedr atlasky Na Balkane
+(Atlas cedar, Prague's only protected one), inside a tennis club whose
+public-facing offer does not settle whether the tree itself is reachable
+without booking a court.
+
+The write pass had transliterated every Czech place name to plain ASCII
+(Cimicky haj, Pod Labutkou, Strelnicna, Liben, Dablice); restored proper
+diacritics before merging, checked directly against the register's own
+name_cz field (Cimicky haj, Pod Labutkou, Strelnicna, Libe, Dablice) rather
+than from memory. Also fixed two stale tree-count mentions in the city's
+own copy (meta_description and question_meta both still said 27).
+
+**A qa.py failure fixed along the way, unrelated to Prague**: two orphaned
+Lisbon photo files (lis_005's `-500`/`-1000` sized copies, saved under a
+slug with an extra "the-" that matched neither the tree's own photo.url nor
+photo-manifest.json). Confirmed no reference anywhere in data, scripts or
+site/src, deleted them, qa.py clean again.
+
+**A photo viewing pass on Tilburg's one fetchable candidate** (biggest gap
+on `photo_gaps.py --shortlist`) rejected on sight: the matched file was a
+fallen Ginkgo leaf in the grass, not til_018's Flowering Ash. Recorded via
+photo_verdicts.py.
+
+**REVIEW.md's two open WARNs from today's fresh-eyes review turned out
+already fixed**, just not rebuilt: the broken empty `<figcaption>Photo:
+</figcaption>` on reader-app photos with no attribution, and the three
+self-repeating tree-page titles ("The X: X in City"). Read the current
+source for both (PhotoFigure.astro/images.ts, and `[city]/[tree].astro`'s
+`nameEchoesSpecies` guard) and confirmed the fixes are in place and the
+built site is clean; nothing further to do.
+
+**Taormina and Ravenna checked and passed over for new coverage.**
+Taormina's register is a documented dead end (all in-town candidates
+blocked on hotel-grounds access, confirmed again by re-reading its own
+leads file rather than re-researching). Ravenna's four register candidates
+are 17-19km apart with no walkable cluster and only one close to the
+centre, below the six-candidate minimum for a pass. Claimed Rome instead
+(30 trees, the single highest-impression depth-allowed city per the latest
+digest) for a verify pass on its own unmined near-centre register
+candidates; see the next entry for the result.
+
 ## 2026-09-11 (continuation) - Milan 23 -> 24 trees; Alicante's register confirmed exhausted; Finch Arboretum park page
 
 Dispatched two parallel verify passes (isolated worktrees) on Alicante and
