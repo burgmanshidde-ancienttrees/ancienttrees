@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Spokane",
+      "country": "United States",
+      "status": "imported",
+      "note": "SCOUTED 2026-09-11 (session), on scout_next.py --target naming Spokane (#66) as no supply/no verdict, right after Granada. In fact the register was already being used, repeatedly, by name, in verify_notes across spk_002-008 ('the Spokane Heritage Tree Register's live ArcGIS layer'), just never traced to a stable endpoint or recorded here, which is exactly why the ledger showed unscouted. Traced the live webmap (historicspokane.org/map, spokane.maps.arcgis.com webmap 9314fced76574adfb159be865ce1b8f6) to the underlying feature service and saved the 19 heritage-tree records (marker colour large_green; the same layer's large_yellow/large_red are unrelated historic properties) to data/registers/spokane-heritage-trees.json. No licence is stated on the ArcGIS item (licenseInfo and accessInformation both null, the same shape as every other US municipal GIS layer found so far), so it is usable as a verification source for layer-1 city research (the bar this project has already been applying to it) but not as a layer-2 bulk import without a licence answer.\n\nCross-checking the full 19 against our data found two names already published under different titles (The Ancient Ones = spk_001's Douglas firs; The Majestic Twins = spk_003's dawn redwoods, both confirmed by matching coordinates and description) and one genuinely new candidate never seen before: the Treaty Tree, a Ponderosa Pine on East Dorak Road tied to an 1858 treaty discussion and the Baptiste Peone homestead, sourced to the 1997 Historic Resources Inventory of Spokane County rather than the tree register itself. Recorded as a lead in data/leads/spokane.json, needing a second source and an alive check before it can verify."
+    },
+    {
       "place": "Granada",
       "country": "Spain",
       "status": "empty",

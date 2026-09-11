@@ -1,0 +1,202 @@
+{
+  "source": "Spokane Historic Preservation Office, Spokane Heritage Tree Register (plus one 1997 Historic Resources Inventory entry sharing the same GIS layer)",
+  "endpoint": "https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1",
+  "query_used": "where=Spokane_City_and_County_Hist_12='large_green'",
+  "licence": null,
+  "licence_note": "No licenseInfo or accessInformation stated on the ArcGIS item (checked 2026-09-11); same shape as other US municipal GIS layers on file (Des Moines, Arkansas, California). Used here as a verification SOURCE for city-page research, not bulk-imported or republished, which is the bar CLAUDE.md sets for layer-1 city trees; a licence would be needed before this could back a layer-2 register-dot import.",
+  "fetched": "2026-09-11",
+  "scope": "Point layer of Spokane heritage/historic trees, marker colour large_green within CityandCountyHistoricProp/FeatureServer/1 (large_yellow and large_red in the same layer are unrelated historic properties, not trees). 19 features at fetch time; the programme page itself said 18, so the count moves.",
+  "caveat": "No structured species/age/girth columns: those live inside the free-text Description field (HTML-formatted, e.g. \"Age: 175+<br>Height: 110 feet<br>Species: Douglas Fir\"), parse per record. No vitality field.",
+  "entries": [
+    {
+      "name": "Dwight's Linden",
+      "description": "Age: ~100<br>Height: 72 feet<br>Species: Hungarian Linden<br><br>A fragrant tree in bloom, the Hungarian linden is an exceptional specimen that can be found in the John A. Finch Arboretum.  This historic tree is also documented to have been planted by Daniel H. Dwight, one of Spokane's important pioneers and developers.  Dwight owned the land prior to the City's 1912 purchase and it was on Garden Springs Creek that he built his summer cottage, Brookside.",
+      "address": "3404 West Woodland Boulevard, Spokane WA 99224",
+      "latitude": 47.641216,
+      "longitude": -117.465453,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Finch_Hungarian-Linden.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Ancient Ones",
+      "description": "Age: 175+<br>Height: 110 feet<br>Species: Douglas Fir<br><br>This collection of three ancient Douglas firs were likely established prior to Spokane being settled.  They are very near Chief Garry's last known camp site and would have been impressive trees even at that time.",
+      "address": "Indian Canyon Park, South Indian Canyon Drive, Spokane WA 99224",
+      "latitude": 47.653599,
+      "longitude": -117.478865,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Indian-Canyon-Park_Douglas-Fir.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "Chief Garry Park Champion",
+      "description": "Height: 56 feet<br>Species: Sycamore Maple<br><br>Known for its colorful display in autumn, the Sycamore maple is a delightful specimen in Chief Garry Park.  Rising 50 feet into the air and possessing a crown of 50 feet, this tree is certainly a state champion size candidate!",
+      "address": "Chief Garry Park, Spokane WA 99202",
+      "latitude": 47.671259,
+      "longitude": -117.372378,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Chief-Garry-Park_-Sycamore-Maple.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "Reid Family Tree",
+      "description": "Age: 60+<br>Height: 65 feet<br>Species: Sugar Maple<br><br>The Reid Family Tree is believed to have been planted by Dr. Peter Reid, a noted Spokane physician and surgeon, and his family in the 1930s or 40s.  The tree is situated on the west side of the Browne's Addition Historic District and has contributed to the verdant and vibrant feeling of the neighborhood.  It is also claimed that Dr. Reid, when socializing with friends, would drink gin and tonics and always make one for the tree and pour it on its roots.  The current owners have continued that tradition.",
+      "address": "2315 West 1st Avenue, Spokane WA 99201",
+      "latitude": 47.656202,
+      "longitude": -117.447099,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_2315-W-1st_Sugar-Maple.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Zelkova Giant",
+      "description": "Height: 53 feet<br>Species: Japanese Zelkova<br><br>This impressive tree is one of seven that borders Webster Park on the west and southwest edges.  Measuring 53 feet tall with a crown of 66 feet, this Japanese Zelkova is almost as big as the largest in the state!",
+      "address": "4001 North J Street, Spokane WA 99205",
+      "latitude": 47.694617,
+      "longitude": -117.466766,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Webster-Park_Japanese-Zelkova.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Littleleaf Linden",
+      "description": "Age: ~110 years<br>Height: 29 feet<br>Species: American Linden<br><br>Located in the prominent Marycliff-Cliff Park Historic District, this American linden was planted in the Moore-Turner residential garden in the late 1890s and can be seen in several historic photographs of Mrs. Turner.  The garden, which typifies a landscape style that accompanied the Arts and Crafts movement in America, was developed by pioneers, Frank Rockwood Moore and U.S. Senator George Turner.",
+      "address": "Edwidge Woldson Park, Spokane WA 99204",
+      "latitude": 47.648358,
+      "longitude": -117.42115,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Edwidge-Woldson-Park_American-Linden.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "Grant Park Guardian",
+      "description": "Age: ~90<br>Height: 75 feet<br>Species: Horse Chestnut<br><br>This mature tree acts as a guardian and greeter to the southeast entrance to Grant Park.  This beautiful tree embraces and glorifies the four seasons throughout the year and is a superb example of a horse chestnut tree.",
+      "address": "1300 East 11th Avenue, Spokane WA 99202",
+      "latitude": 47.645543,
+      "longitude": -117.391226,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Grant-Park_Horse-Chestnut.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Rockwood Spruce",
+      "description": "Age: 90+<br>Height: 125+ feet<br>Species: Norway Spruce<br><br>Towering 125 feet above 26th Avenue, the large Norway Spruce has a commanding presence.  The historic tree also appears on the original landscaping plans from 1926 and is located in the Rockwood Historic District which was designed by the nationally renowned Olmsted Brothers landscape architectural firm.",
+      "address": "725 E 26th Avenue, Spokane WA 99203",
+      "latitude": 47.631003,
+      "longitude": -117.399734,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_725-E-26th_Norway-Spruce.bmp",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Massive Miyabe",
+      "description": "Age: 58 years<br>Height: 54 feet<br>Species: Miyabe Maple<br><br>With satiny leaves and low-sweeping branches, the rare Miyabe maple is a charming shade tree in the summer and an explosion of color in the fall.  Rising 54 feet above Finch Arboretum and with a crown of 52 feet, this tree is a potential state champion.",
+      "address": "3404 West Woodland Boulevard, Spokane WA 99224",
+      "latitude": 47.641939,
+      "longitude": -117.466226,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Finch_Miyabe-Maple.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Spokane Ponderosa",
+      "description": "Species: Ponderosa Pine<br><br>Smelling of vanilla and growing nearly 200 feet tall, the Ponderosa Pine has become a local icon and is, in fact, the official tree of the City of Spokane.  This towering Ponderosa is found in the Browne's Addition Historic District and is the largest in the city!",
+      "address": "2028 West 2nd Avenue, Spokane WA 99201",
+      "latitude": 47.65466,
+      "longitude": -117.443045,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/Capture.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Moore-Turner Elm",
+      "description": "Height: 88 feet<br>Species: American Elm<br><br>An incredibly hardy and graceful tree, the American Elm was favored for plantings along streets and in parks.  Located in the historic Moore-Turner Garden, which typifies a landscape style that accompanied the Arts and Crafts movement in America, this elm rises 88 feet into the air and stretches 44 feet across.",
+      "address": "Pioneer Park, Spokane WA 99204",
+      "latitude": 47.648539,
+      "longitude": -117.420409,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/elm.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "Corbin's Apricot",
+      "description": "Species: Apricot<br><br>Also known as the Armenian plum, the apricot tree produces sweetly-tart fruit by the same name.  According to accounts given by former residents of the D.C. Corbin House, a kitchen garden was located directly behind the house above the rock wall.  Revealed in historic photographs, the apricot tree is a remnant of that original garden.",
+      "address": "Pioneer Park, Spokane WA 99204",
+      "latitude": 47.648505,
+      "longitude": -117.419832,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_-Edwidge-Woldson-Park_Apricot.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "Liberty Park Champion",
+      "description": "Height: 45 feet<br>Species: Corkscrew Willow<br><br>Named for its curling, twisting branches, this Corkscrew willow is found on the west side of Liberty Park.  With a height of 45 feet, a diameter of 50 inches and a crown of 60 feet, this impressive tree is likely the largest or second largest in the state!",
+      "address": "Liberty Park, Spokane WA 99202",
+      "latitude": 47.652584,
+      "longitude": -117.389177,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_Liberty-Park_Corkscrew-Willow.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Last Planes",
+      "description": "Age: 110+<br>Height: ~65 feet<br>Species: London Plane<br><br>This collection of three London planes can be seen providing significant tree canopy along First Avenue in the Browne's Addition Historic District.  Planted around the turn of the century, these three remaining trees represent some of the original landscaping for this area of the neighborhood and, therefore, for the city.",
+      "address": "2315 West 1st Avenue, Spokane WA 99201",
+      "latitude": 47.656345,
+      "longitude": -117.446785,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT-Nom_2314-W-1st_London-Plane.bmp",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Chestnut Champion",
+      "description": "Height: 102 feet<br>Species: Horse Chestnut<br><br>Sometimes known as the conker tree due to its large, glossy nut-like seeds, the horse chestnut is also known for its brilliant display of spring flowers.  This chestnut tree in Edwidge Woldson Park is 102 feet tall and has a crown that measures 102 feet, making it a state champion size contender!",
+      "address": "Edwidge Woldson Park, Spokane WA 99204",
+      "latitude": 47.648926,
+      "longitude": -117.421108,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2015/05/HT_-Edwidge-Woldson-Park_Horse-Chestnut.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "Treaty Tree",
+      "description": "Located in an area traditionally utilized by the Upper Spokane Indians, the Treaty Tree acted as a meeting and gathering place for tribe members. This tall Ponderosa Pine is named for the discussion that is said to have taken place in the shade of its limbs about the demands for peace from Col. George Wright in 1858. The land on which the tree sits was later granted to Baptiste Peone under the Donation Land Act of 1850. Peone, half white and half Indian, was the only person in the county to receive land under this Act. The noble Treaty Tree stands alone on a low hill as the only evidence remaining of Peone's homestead and the original Saint Michael Mission, also located on this land. <p/>\n\nThe Treaty Tree is not listed on the Spokane Heritage Tree Register but was included in the 1997 Historic Resources Inventory of Spokane County.",
+      "address": "East Dorak Road",
+      "latitude": 47.750673,
+      "longitude": -117.306525,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2016/06/Treaty-Tree.jpg",
+      "photo_attribution": null,
+      "source_url": null
+    },
+    {
+      "name": "The Towering Norwegian",
+      "description": "Height: ~123 feet<br>\nSpecies: Norway Spruce<br><br>\nThis giant spruce is most likely the second tallest of its kind in the city, falling short of only the Brewton Spruce on 26th street. Standing over 120 feet tall and with a crown measuring nearly 50 feet, this tree is notable for its impressive size among the other giants located in the Finch Arboretum.",
+      "address": "3404 West Woodland Boulevard, Spokane WA 99224",
+      "latitude": 47.642152,
+      "longitude": -117.466827,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2016/08/Norway-Spruce.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "Powerful Pine",
+      "description": "Height: ~33 feet<br>Species: Mexican Pinyon Pine<br><br>One of the largest trees of its kind in the state, this Pinyon Pine boasts a crown reaching over 40 feet across. Though not as tall as the state champion, the reach of this pine's branches rivals many that tower high above it.  ",
+      "address": "3404 West Woodland Boulevard, Spokane WA 99224",
+      "latitude": 47.642564,
+      "longitude": -117.466409,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2016/08/Mexican-Pine.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    {
+      "name": "The Majestic Twins",
+      "description": "Age: ~66 years<br>\nHeight: ~55 feet<br>\nSpecies: Dawn Redwood<br><br>\n\nPlanted in 1950, these two majestic trees are thought to be some of the oldest of their kind in the United States. Originating in China, these twins were most likely given to the Finch Arboretum by another arboretum in the middle of the 20th century.   ",
+      "address": "3404 W Woodland Blvd, Spokane, WA 99224",
+      "latitude": 47.641029,
+      "longitude": -117.465251,
+      "photo_url": "http://www.historicspokane.org/wp-content/uploads/2016/10/Dawn-Redwoods.jpg",
+      "photo_attribution": "City of Spokane Parks and Recreation ",
+      "source_url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    }
+  ]
+}

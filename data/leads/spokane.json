@@ -109,6 +109,14 @@
       "why": "Spokane Heritage Tree Register only so far: height 45 feet, diameter 50 inches (girth_cm derivable: 50in = 127cm diameter -> circumference roughly 399cm if this figure is trustworthy), crown 60 feet, 'likely the largest or second largest in the state'. Needs a second source."
     },
     {
+      "name": "The Treaty Tree (Ponderosa Pine)",
+      "species": "Ponderosa Pine (Pinus ponderosa)",
+      "lat": 47.750673,
+      "lng": -117.306525,
+      "status": "lead",
+      "why": "Found 2026-09-11 in the same GIS layer as the Heritage Tree Register but explicitly NOT part of it: the record's own text says 'The Treaty Tree is not listed on the Spokane Heritage Tree Register but was included in the 1997 Historic Resources Inventory of Spokane County.' Genuine find, real history: on land traditionally used by the Upper Spokane Indians as a meeting place, said to be where discussion took place about Col. George Wright's 1858 peace demands; the land later went to Baptiste Peone under the Donation Land Act of 1850, the only person in the county granted land under that Act, and the tree is described as the only remaining evidence of his homestead and the original Saint Michael Mission. About 13.6 km northeast of the city centre on East Dorak Road, no street address, a low hill, standing alone. Needs a second independent source (the 1997 Historic Resources Inventory itself would be the natural one, not yet located online), an alive check, and a real address or access description before it can verify; not pursued further this pass given the time box."
+    },
+    {
       "name": "Indian Canyon Golf Course old trees / South Hill bluffs old trees",
       "species": "Unknown, likely ponderosa pine and Douglas fir",
       "lat": null,
