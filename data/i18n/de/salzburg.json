@@ -1,0 +1,104 @@
+{
+  "_note": "German overlay for Salzburg, hand-written 2026-09-11 under Contract J. Sixth from the corrected langcheck queue: 24 impressions in the ten-day window, in the strongest ROLL OUT area (de, 135 percent of its twins). Austrian usage and the register's own vocabulary: Naturdenkmal, NDM-Nummer, Eichelmast, Weichholzaue.",
+  "city": "Salzburg",
+  "title": "Naturdenkmäler in Salzburg: 9 alte Bäume",
+  "meta_description": "Salzburgs älteste geschützte Bäume stehen auf Höfen und an Straßen, nicht in den Barockgärten. Neun, von einer Eiche von 1933 bis zu Hotelüberlebenden.",
+  "intro": "Die Barockgärten bekommen die Postkarten, aber die meisten alten geschützten Bäume Salzburgs stehen auf gewöhnlichem Grund: eine Hofeiche, unter der einst Schweine gemästet wurden, eine Pappel als Rest eines verschwundenen Auwalds, eine Eiche und zwei Linden an schlichten Riedenburger Straßen, eine Platane und eine Schwarzkiefer, die den Park des Grandhotels überlebt haben, in dem sie einmal standen. Die Naturdenkmalliste führt Dutzende mehr; diese neun, von Itzling über Morzg bis zum Erentrudishof, halten diesem Durchgang stand, dazu ein Import, ein kalifornischer Mammutbaum im Mirabellgarten.",
+  "question_title": "Was ist der älteste Baum in Salzburg?",
+  "question_meta": "Salzburgs ältester belegter Baum ist die Stephan-Ludwig-Roth-Eiche in Morzg, über 200 Jahre alt, bezeugt 1817. Die vollständige Liste der 9.",
+  "question_answer": "Salzburgs ältester dokumentierter Baum ist die Stephan-Ludwig-Roth-Eiche, eine Stieleiche an einem Waldrand in Morzg. Eine Quelle hält fest, dass der siebenbürgisch-sächsische Volksmann und Pädagoge Stephan Ludwig Roth am 15. September 1817 unter ihr rastete, was heißt, dass sie schon vor zwei Jahrhunderten ein Orientierungspunkt war; ein lokales Blog gibt ihr Alter heute mit über 200 Jahren an.",
+  "question_context": "Hinter der Eiche steht echte Dringlichkeit: Dieselbe Quelle berichtet von einem Pilzbefall und erwartet, dass der Baum nur noch etwa zwanzig Jahre übersteht, was ihn eher früher als später sehenswert macht. Salzburgs Naturdenkmalliste umfasst Dutzende Einträge, und die neun hier verteilen sich auf fünf Ecken der Stadt statt auf eine begehbare Gruppe, wobei drei, eine Eiche und zwei Linden an verschiedenen Riedenburger Straßen, nahe genug beieinanderliegen, um sie an einem Nachmittag abzugehen. Die Eiche am Erentrudishof, der am längsten geschützte Baum der Stadt (1933), steht in einem bewirtschafteten Hof in Morzg, wo Schweine einst von ihren Eicheln fett wurden. Eine Schwarzpappel am Josef-Mayburger-Kai ist eine der letzten Spuren des Auwalds, der früher die Salzach säumte. Eine Platane und eine Schwarzkiefer teilen sich einen Wohnhof nahe dem Hauptbahnhof, die einzigen zwei Bäume aus dem ausgebombten Park eines Grandhotels, und ein Riesenmammutbaum steht neben einem Küstenmammutbaum im streng angelegten Mirabellgarten, der einzige bewusst gepflanzte Baum hier. Keiner der neun trägt ein hartes Pflanzdatum; die Altersangaben kommen aus Ausweisungsjahren, einer Rast, einer Behauptung über zwei Überlebende oder dem Maßband eines Besuchers, und jede Seite sagt das dazu.",
+  "faq": [
+    {
+      "q": "Was ist der älteste Baum in Salzburg?",
+      "a": "Die Stephan-Ludwig-Roth-Eiche in Morzg, deren überliefertes Alter von über 200 Jahren auf dem Bericht beruht, dass ein siebenbürgisch-sächsischer Volksmann 1817 unter ihr rastete."
+    },
+    {
+      "q": "Wo stehen Salzburgs bemerkenswerteste Bäume?",
+      "a": "Über die Stadt verteilt statt auf einem Weg: ein Hof in Morzg, eine Uferpromenade in Itzling, drei Bäume an verschiedenen Riedenburger Straßen, ein Wohnhof nahe dem Hauptbahnhof, eine Wohnstraße in Maxglan und der Mirabellgarten im Zentrum."
+    },
+    {
+      "q": "Sind Salzburgs Bäume kostenlos zu besichtigen?",
+      "a": "Ja, alle neun stehen auf öffentlichem Grund, im öffentlich zugänglichen Hof eines bewirtschafteten Bauernhofs oder in einem offenen Wohnhof, ohne Eintritt."
+    },
+    {
+      "q": "Warum tragen Salzburgs Naturdenkmale keine Altersangaben?",
+      "a": "Die Naturdenkmalliste des Landes Salzburg verzeichnet nur das Jahr der Ausweisung, nicht das der Pflanzung, also ist ein Datum wie 1933 oder 1963 eine Untergrenze für das Alter des Baumes und nicht das Alter selbst."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (German common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+  "trees": {
+    "szb_001": {
+      "name": "Die Pappel am Josef-Mayburger-Kai",
+      "species": "Schwarzpappel (Populus nigra)",
+      "age_estimate": "",
+      "access": "Kostenlos, an der öffentlichen Uferpromenade (Salzachuferweg)",
+      "transport": "Rund 2 km den Salzachuferweg entlang von der Altstadt; mit dem Stadtbus Richtung Itzling und einem kurzen Weg zum Traklsteg erreichbar.",
+      "story": "An diesem Salzachufer stand einmal ein ganzer Auwald. Diese Schwarzpappel ist eines der letzten Stücke davon, das noch steht.\n\nDie Liste des Landes Salzburg sagt genau das in ihrem eigenen Eintrag: ein Rest der Weichholzaue, die diesen Flussabschnitt früher säumte. Weichholz ist dabei kein Urteil über das Holz. Es ist das Wort für die Weiden und Pappeln, die den nassen Rand eines Flusses besiedeln, die Bäume, die auf neuem Boden zuerst kommen und beim Aufräumen eines Ufers zuerst gehen. Dieser Wald ist hier verschwunden. An seiner Stelle läuft eine gepflasterte Promenade, und die Pappel steht daneben beim Traklsteg, etwa zwei Kilometer flussab der Altstadt, das Wasser auf der einen Seite und Itzling auf der anderen.\n\nDie Liste nennt einen Stammumfang von über sechs Metern, eine Zahl, die wir weitergeben und nicht selbst gemessen haben, und Salzburg wies den Baum 1979 als Naturdenkmal NDM00173 aus. Er hat es zu einer eigenen Kategorie im Wikimedia-Bildarchiv gebracht, sieben Aufnahmen einer einzigen Uferpappel, was mehr Aufmerksamkeit ist, als die meisten Bäume an dieser Promenade je bekommen.\n\nDatiert hat ihn niemand. Die Liste trägt das Schutzjahr und sonst nichts, und 1979 ist eine Untergrenze, kein Alter. Wenn Sie wissen, wann diese Pappel gesetzt wurde, oder selbst ein Maßband darumgelegt haben, schreiben Sie uns."
+    },
+    "szb_002": {
+      "name": "Die Eiche am Erentrudishof",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "",
+      "access": "Kostenlos; steht auf dem Gelände des Bio-Hofladens Erentrudishof, geführt vom Stift Nonnberg. Öffentlich zugänglich während der Ladenzeiten (Mo-Fr 9:00-18:30, Sa 9:00-12:00), mit einem Rohmilchautomaten rund um die Uhr; zum Zeitpunkt der Recherche (2026-08-29) war der Laden wegen Umbaus geschlossen, mit angekündigter Wiedereröffnung im Juli 2026. Prüfen Sie vor dem Hinschicken, ob er wieder offen ist.",
+      "transport": "Am Südrand Salzburgs in Morzg; mit dem Stadtbus Richtung Morzg/Hellbrunn und einem kurzen Weg erreichbar.",
+      "story": "Kein Baum in Salzburg steht länger unter Schutz als dieser. Die Eiche am Erentrudishof kam 1933 als NDM00019 auf die Liste des Landes Salzburg, die früheste Ausweisung der ganzen Stadt, mit 95 Quadratmetern geschütztem Boden rundherum.\n\nDie Liste beschreibt eine einstämmige Eiche, die einst der Eichelmast diente: Im Herbst wurden Schweine unter sie getrieben, die sich an den abgeworfenen Eicheln mästeten. Das ist ein Arbeitsverhältnis und kein Zierverhältnis, und die Umgebung ist eine arbeitende geblieben. Der Erentrudishof ist ein Hof des Stifts Nonnberg am Südrand der Stadt in Morzg, mit Bioladen, Öffnungszeiten unter der Woche und einem Rohmilchautomaten, der rund um die Uhr läuft. Die Eiche steht im Hof eines Ortes, zu dem Leute noch immer Milch holen kommen.\n\nDie Adresse zu finden dauert einen Moment. Die Abschrift der Liste setzt den Hof in die Gneiserstraße, das Bildarchiv in die Morzger Straße, und beide meinen dasselbe Anwesen. Steuern Sie den Erentrudishof beim Namen an und ignorieren Sie die Straße.\n\nDatiert hat den Baum niemand. Die Ausweisung von 1933 sagt, dass er damals schon schützenswert war, und nichts weiter."
+    },
+    "szb_003": {
+      "name": "Die Stephan-Ludwig-Roth-Eiche",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "über 200 Jahre",
+      "access": "Kostenlos, steht an einem Waldrand beziehungsweise am Straßenrand in Morzg, öffentlich zugänglich",
+      "transport": "Nahe der Haltestelle Richtung Birkensiedlung in Morzg, kurzer Weg.",
+      "story": "Am 15. September 1817 hielt ein Mann an und rastete unter dieser Eiche, und Salzburg benennt den Baum seither nach ihm.\n\nEr hieß Stephan Ludwig Roth, geboren 1796, gestorben 1849, Lehrer und später Volksmann der Siebenbürger Sachsen. Die Liste hält das Datum dieser Rast fest, und das ist der brauchbare Teil der Geschichte: Die Eiche war schon vor zwei Jahrhunderten ein Orientierungspunkt, an dem man anhielt, sonst hätte niemand aufgeschrieben, um welchen Baum es ging. Ein Salzburger Blog, das die bemerkenswerten Bäume der Stadt sammelt, gibt das Alter mit über zweihundert Jahren an, und genauer ist bisher niemand geworden, also werden wir es auch nicht.\n\nNaturdenkmal wurde sie 1969, mit 490 Quadratmetern geschütztem Boden, was ein großzügiges Stück Morzg für einen einzelnen Baum ist. Sie steht an einem Waldrand am Südrand der Stadt, einen kurzen Weg von der Haltestelle entfernt, auf öffentlichem Grund und frei zugänglich.\n\nGehen Sie eher früher als später. Dasselbe Blog berichtet von einem Pilzbefall und nennt eine Erwartung von rund zwanzig verbleibenden Jahren. Sie lebt und steht. Wenn Sie sehen, dass die Krone lichter wird oder der Stamm aufgeht, schreiben Sie uns."
+    },
+    "szb_004": {
+      "name": "Die Linde in der Körblleitengasse",
+      "species": "Linde (Tilia sp.)",
+      "age_estimate": "etwa 150 Jahre",
+      "access": "Kostenlos, Straßenbaum an einer öffentlichen Wohnstraße (Körblleitengasse)",
+      "transport": "Maxglan, im Westen Salzburgs; mit dem Stadtbus und einem kurzen Weg die Körblleitengasse entlang erreichbar.",
+      "story": "Die Liste nennt sie eine 150 Jahre alte Linde. Das tut sie seit 1963, dem Jahr, in dem der Baum geschützt wurde und höchstwahrscheinlich zum letzten Mal jemand richtig hingesehen hat. Lesen Sie die Zahl als eine Einschätzung von vor über sechzig Jahren und nicht als Tatsache über den Baum von heute.\n\nDiese Liste, geführt vom Land Salzburg, ist die einzige Quelle, die wir zu ihr haben: NDM00069, achtunddreißig Quadratmeter geschützter Boden an einem Wohnweg in Maxglan, draußen im Westen der Stadt. Für einen Baum, den das Land eigens unter Schutz gestellt hat, hat sie bemerkenswert wenig Spuren hinterlassen. Die Ortsgeschichte behandelt die Gasse selbst ausführlich, bis hin zur Terrassenkante über dem Glanbach, die ihr den Namen gab, und den 570 Metern zwischen Kleßheimer Allee und Norbert-Brüll-Straße. Die Linde, die daran steht, erwähnt sie kein einziges Mal.\n\nZwei offene Fragen, und ein Anwohner dieser Straße könnte beide klären. Die Liste schreibt als Art nur Linde, ohne alles weitere, also ist nie festgehalten worden, welche Linde das eigentlich ist. Und seit den Sechzigern hat offenbar niemand den Stamm vermessen oder datiert."
+    },
+    "szb_005": {
+      "name": "Der Mammutbaum im Mirabellgarten",
+      "species": "Riesenmammutbaum (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "access": "Kostenlos, der Mirabellgarten ist ein öffentlicher Barockgarten und täglich geöffnet",
+      "transport": "Zentrales Salzburg, Neustadtseite der Salzach; wenige Minuten zu Fuß vom Mirabellplatz und von der Altstadt.",
+      "story": "Die beste Messung, die es von diesem Baum gibt, hat im Dezember 2019 ein Geocacher mit einem Maßband genommen: knapp unter sechs Meter am Fuß. Keine Aufnahme durch Fachleute, und die einzige Zahl, die existiert.\n\nEs ist ein Riesenmammutbaum, Sequoiadendron giganteum, ein kalifornischer Baum in einem österreichischen Barockgarten. Damit ist er nicht allein. Ein Küstenmammutbaum wächst daneben, das Paar rechts des Wegs, kurz vor der Abzweigung in den Bastionsgarten, sind also beide Importe von der anderen Seite eines Kontinents und eines Ozeans. Keiner von beiden kam zufällig her. Jemand hat sie ausgesucht, gepflanzt und sie dann das eine tun lassen, wofür ein formaler Garten sonst nicht da ist, nämlich nach oben wachsen, ohne zurückgeschnitten zu werden.\n\nWann das war, hat niemand aufgeschrieben. Weder Pflanzdatum noch Alter sind für einen der beiden Bäume aufgetaucht, was den Mammutbaum zum am schlechtesten dokumentierten Ding in einem Garten macht, den den ganzen Tag Leute durchqueren.\n\nDer Weg dorthin ist der einfache Teil. Unser Punkt stammt aus dem Geocache-Wegpunkt und nicht aus einer Vermessung, was in einem Garten dieser Größe immer noch auf wenige Meter genau stimmt."
+    },
+    "szb_006": {
+      "name": "Die Eiche in der Steinbruchstraße",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "",
+      "access": "Kostenlos; steht in der Steinbruchstraße, einer gewöhnlichen öffentlichen Wohnstraße in Riedenburg mit Gehsteigen auf beiden Seiten (über OpenStreetMap bestätigt, keine Zugangsbeschränkung auf der Straße)",
+      "transport": "Riedenburg, Westen Salzburgs; die Haltestelle Salzburg Quartier Riedenburg liegt einen kurzen Weg entfernt.",
+      "story": "In der Steinbruchstraße in Riedenburg wächst an einer Eiche schon länger Efeu, als die jüngsten Anwohner der Straße alt sind. Die Straße hat ihren Namen von einem Steinbruch, der einst in den nahen Rainberg schnitt, denselben Hang, aus dem Stein für den Salzburger Dom kam, wobei keine Aufzeichnung diesen bestimmten Baum mit jener Geschichte verbindet: Er ist schlicht die gewöhnliche Eiche, die dort steht, wo einmal der Bruchweg verlief.\n\nSalzburg nahm sie 1984 als Naturdenkmal NDM00196 auf und schützt 352 Quadratmeter Boden um sie herum. Die ganze Beschreibung der Liste ist kurz: Der Stamm teilt sich etwa fünf Meter über dem Boden in mehrere starke Äste, und Efeu ist den größten Teil daran hinaufgeklettert. Mehr kauft eine Ausweisung von 1984 nicht, eine Untergrenze statt einer Biografie, und wann der Baum gepflanzt wurde, hat niemand festgehalten.\n\nSie steht an einem gewöhnlichen Wohngehsteig, ohne Tor und ohne Eintritt, im westlichen Riedenburg, einen kurzen Weg vom Zentrum. Die neueste Aufnahme, die jemand online gestellt hat, stammt von 2014 und ist damit über ein Jahrzehnt alt."
+    },
+    "szb_007": {
+      "name": "Die Linde in der Neutorstraße 30a",
+      "species": "Linde (Tilia sp.)",
+      "age_estimate": "",
+      "access": "Kostenlos; die Liste selbst beschreibt sie als weithin sichtbar am Rand des Grundstücks stehend, an der Kreuzung Neutorstraße/Hübnergasse/Leopoldskronstraße, einer öffentlichen Straßenecke in Riedenburg (über OpenStreetMap bestätigt: gewöhnliche öffentliche Straßen, keine Zugangsbeschränkung)",
+      "transport": "Riedenburg, Westen Salzburgs, an der Kreuzung Neutorstraße/Hübnergasse/Leopoldskronstraße; die Haltestelle Salzburg Quartier Riedenburg liegt einen kurzen Weg entfernt.",
+      "story": "Eine Linde mit mehr als einem Stamm steht an einer Straßenecke in Riedenburg, auffällig genug, dass die Liste sie eigens hervorhebt: Sie steht weithin sichtbar am Rand ihres Grundstücks, genau dort, wo die Neutorstraße auf Hübnergasse und Leopoldskronstraße trifft.\n\nDiese mehrstämmige Form ist alles, was die Aufzeichnung über sie sagt. Salzburg wies den Baum 1987 als Naturdenkmal NDM00215 aus und schützt 240 Quadratmeter Boden, aber die Liste trägt kein Pflanzdatum und keine Art über Linde hinaus, also bleibt die Frage, welche der europäischen Linden das eigentlich ist, für den offen, der als Nächstes darunter steht und sich die Blätter genau ansieht.\n\nDie Ecke ist gewöhnlich, eine Wohnkreuzung im westlichen Riedenburg mit Gehsteig auf allen Seiten und nichts zwischen Straße und Baum. Die neueste veröffentlichte Aufnahme stammt von 2014, alt genug, dass eine frischere, oder eine sichere Antwort auf die Art, wirklich etwas hinzufügen würde, das derzeit niemand hat. Wenn Sie wissen, welche Linde das ist, oder kürzlich an dieser Ecke standen, schreiben Sie uns."
+    },
+    "szb_008": {
+      "name": "Die Linde in der Gärtnerstraße",
+      "species": "Linde (Tilia sp.)",
+      "age_estimate": "",
+      "access": "Kostenlos; steht an der Gärtnerstraße, einer öffentlichen Wohnstraße in Riedenburg (OpenStreetMap trägt die Straße als 'access=destination', was nur den motorisierten Durchgangsverkehr beschränkt, nicht Fußgänger)",
+      "transport": "Riedenburg, Westen Salzburgs; die Haltestelle Salzburg Quartier Riedenburg liegt einen kurzen Weg entfernt.",
+      "story": "Diese Linde stand einmal im Park eines barocken Landsitzes. Der Mölckhof, ein Herrenhaus, um 1757 für den Hofkanzler Felix Anton von Mölck errichtet, erweiterte irgendwann danach seinen Park, und der Baum, den die Liste heute noch beschreibt, gehörte dazu.\n\nWeiter reicht die Verbindung nicht, und es lohnt, bei dieser Lücke genau zu sein: Das Baujahr 1757 ist gut belegt, aber nichts bindet diese bestimmte Linde an jenes Jahr, sondern nur an eine spätere, undatierte Erweiterung des Geländes. Ein Alter aus dem Haus abzuleiten wäre die hübschere Geschichte, als die Belege hergeben, also bleibt das Alter des Baumes unbekannt, statt sich die Geschichte des Nachbarn zu borgen. Salzburg schützte ihn 1991 als NDM00232, 226 Quadratmeter, und sein einziges weiteres verzeichnetes Merkmal ist ein Stamm, der sich etwa vier Meter über dem Boden in mehrere Äste teilt.\n\nDer Mölckhof steht noch in der Gärtnerstraße in Riedenburg, und die Linde ist in derselben Straße nicht weit davon, zu Fuß erreichbar, ohne dass etwas im Weg wäre. Welche Linde das tatsächlich ist, wurde über die Gattung hinaus nie festgehalten."
+    },
+    "szb_009": {
+      "name": "Die letzten Bäume des Fordhofs",
+      "species": "Platane (Platanus x acerifolia) und Schwarzkiefer (Pinus nigra)",
+      "age_estimate": "über hundert Jahre",
+      "access": "Kostenlos; die zwei Bäume stehen im offenen Innenhof des Fordhofs, einer mehrteiligen Wohnanlage von 1953, durchzogen von gewöhnlichen öffentlichen Gehwegen zwischen den Blöcken (über OpenStreetMap bestätigt: beleuchtete, befestigte öffentliche Fußwege führen durch den Hof; die einzigen access=private-Angaben in der Nähe betreffen zwei kleine Parkflächen, nicht die Wege oder die Baumstandorte). Kein Park, und das sei deutlich gesagt: Das ist ein Wohnhof und keine öffentliche Grünfläche, aber nichts versperrt den Zugang.",
+      "transport": "Elisabeth-Vorstadt, etwa 5 bis 10 Minuten zu Fuß vom Salzburger Hauptbahnhof.",
+      "story": "Wo heute ein Wohnhof ist, stand einmal ein Grandhotel, und zwei seiner Bäume sind das Einzige, was den Wechsel überstanden hat. Das Hotel de l'Europe war von 1865 bis 1938 in Betrieb, wurde ausgebombt, stand leer und wurde um 1949 abgeräumt; die Blöcke der Wohnanlage Fordhof entstanden 1953 auf demselben Grund. Vom Hotel verschwand alles außer einer Platane und einer Schwarzkiefer, beide als Naturdenkmale eingetragen, beide noch immer wachsend in einem heutigen Wohnhof.\n\nDie Platane kam 1964 auf die Liste, die Kiefer 1973, jede mit 113 geschützten Quadratmetern, und beide Einträge sagen mit denselben Worten dasselbe: einer von zwei überlebenden Bäumen aus dem Park des Hotels. Diese Angabe ist die ganze Grundlage für ein Alter. Wurde einer der beiden Bäume ganz am Ende der Hotelzeit gepflanzt, ist er etwa 88 Jahre alt; stammt er von der Eröffnung 1865, dann 161. Weiter eingegrenzt hat das niemand, und wir sollten es auch nicht.\n\nEs ist die am wenigsten gartenhafte Lage auf Salzburgs Liste, und es braucht einen Moment, um zu glauben, dass zwei über hundertjährige Naturdenkmale auf einem Parkplatz stehen."
+    }
+  }
+}
