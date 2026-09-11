@@ -1,0 +1,63 @@
+{
+  "city": "Tulsa",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Tulsa was founded under this oak. In 1836 the Lochapoka town of the Creek (Muscogee) Nation reached this rise above the Arkansas River at the end of their forced removal from Alabama, 161 of the 660 who had set out, and lit a new ceremonial fire at its foot. The tree still stands, National Register listed since 1976, on ground the Muscogee Nation holds again after the city handed it back. Its exact species and age are unsettled and said so plainly. It stands free to visit in Creek Nation Council Oak Park.",
+  "meta_description": "The Creek Council Oak Tree: the site where Tulsa was founded in 1836, still standing, free to visit, National Register listed since 1976.",
+  "question_meta": "Tulsa's one mapped tree is the Creek Council Oak Tree, the site where the city itself was founded in 1836.",
+  "question_answer": "Tulsa's only mapped tree, and the reason the city exists where it does, is the Creek Council Oak Tree. It stands in Creek Nation Council Oak Park above the Arkansas River, free to visit, in the Riverview neighbourhood.",
+  "question_context": "In 1836 the Lochapoka town of the Creek (Muscogee) Nation ended a forced removal march from Alabama at this tree, 161 survivors of the 660 who set out. They scattered the ashes of their last fire back east at its foot, lit a new one, and made the ground under it their town hall, church and courthouse. The city of Tulsa grew outward from that fire. The tree has been on the National Register of Historic Places since 1976 and carries lightning rods fitted in 1980. Its species is disputed (post oak by one account, bur oak by the Tulsa Preservation Commission) and its age is given as a floor of at least 190 years, since it was already mature in 1836, rather than a guessed figure. The Muscogee Nation now holds the ground again after the City of Tulsa returned it, and holds Council Oak Tree Day here every year since 1986.",
+  "hero_tree_id": "tsa_001",
+  "oldest_tree_id": "tsa_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tulsa?",
+      "a": "The Creek Council Oak Tree, at least 190 years old since it was already a mature tree when the Lochapoka Creek arrived in 1836. Nobody has taped its trunk or published a firmer figure."
+    },
+    {
+      "q": "Why is this tree significant?",
+      "a": "It is the site where Tulsa was founded. In 1836 the Lochapoka town of the Creek (Muscogee) Nation ended their forced removal from Alabama here, lit a new ceremonial fire at its foot, and used the ground as their new town's civic and religious center."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in Creek Nation Council Oak Park, a 1.86 acre public park, with no gate and no fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The park is at 1750 South Cheyenne Avenue in Tulsa's Riverview neighbourhood, above the Arkansas River."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tsa_001",
+      "name": "The Creek Council Oak Tree",
+      "species": "Post Oak or Bur Oak (Quercus stellata or Quercus macrocarpa; sources disagree)",
+      "age_estimate": "at least 190 years; already a mature tree in 1836",
+      "age_min": 190,
+      "age_max": null,
+      "location": {
+        "address": "1750 South Cheyenne Avenue, Creek Nation Council Oak Park, Tulsa, Oklahoma, USA",
+        "latitude": 36.1362,
+        "longitude": -95.9901,
+        "neighbourhood": "Riverview"
+      },
+      "story": "Tulsa was founded under this oak by 161 survivors of a march that began with 660 people. In 1836 the Lochapoka town of the Creek (Muscogee) Nation reached this rise above the Arkansas River at the end of their forced removal from Alabama. They scattered the ashes of their last ceremonial fire back east at the foot of the tree, lit a new fire, and made the ground under it their busk ground, their town hall, their church and their courthouse. The city grew outward from that fire.\n\nNobody has settled what the tree itself is. One source calls it a post oak, the Tulsa Preservation Commission calls it a bur oak, and the identification is still open. Its age sits on the same footing. It was already a mature tree when the Lochapoka arrived, which puts a floor of at least 190 years under it and says nothing about the ceiling. Nobody has taped the trunk or published a figure. If you have, tell us.\n\nIt has been on the National Register of Historic Places since 1976 and has carried lightning rods, fitted in 1980, ever since. The Muscogee Nation has held Council Oak Tree Day here every year since 1986, and the ground is theirs again: the City of Tulsa handed it back, dated to November 2024 in one account and to a return ceremony in November 2025 in another.",
+      "how_to_recognise": "You can recognise it by the lightning rods fitted to it in 1980 and by the Trail of Tears memorial beside it. It stands in Creek Nation Council Oak Park, a 1.86 acre park off South Cheyenne Avenue above the Arkansas River.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Creek_Council_Oak_Tree",
+        "https://www.mvskokemedia.com/cycle-of-rebirth-continues-at-council-oak-tree-park/",
+        "https://www.kosu.org/local-news/2026-04-07/rematriation-retreat-returns-to-tulsa-linking-indigenous-language-to-resistance"
+      ],
+      "access": "Free, public city/tribal park (Creek Nation Council Oak Park, 1.86 acres), open to visitors; includes an ethno-horticultural garden and Trail of Tears memorial.",
+      "transport": "Central Tulsa, Riverview neighbourhood overlooking the Arkansas River; no transit stop confirmed this pass, check current bus routes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
