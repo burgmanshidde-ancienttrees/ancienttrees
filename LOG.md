@@ -21,6 +21,10 @@ Hidde, on the field below: "heb je het mooi gemaakt en gebenchmarkt enzo?" The h
 
 So: no, I have not made it "mooi", and I cannot from here. What I have done is make it possible to SEE, which is the step that was actually missing.
 
+**CI verdict on the push, run 34560837349: green, all of it.** Build and every test passed, including the two new upgrade tests. `appfit` measured the new `collect-describe` screen on both phones and found nothing, which is a real verdict rather than a quiet pass: appfit exits 1 on any finding and that step carries no `|| true`. The refused walk and the screenshot sweep went green too.
+
+**And a limit on this environment worth writing down so nobody spends a window on it again: a web session cannot read a CI artifact.** GitHub's artifact API always redirects to `*.blob.core.windows.net`, and this container's egress proxy denies that host with a 403 (policy, not a transient failure). So the screenshot of `collect-describe` now EXISTS, for the first time ever, and I still cannot open it. Hidde can, in a browser, from the run page: Artifacts, `appsweep-34560837349`, `collect-describe.png`. That is the honest split this whole change produced: the machine half is measured and clean, the eyes half is now possible and is his.
+
 **Also made the sync survive Hidde not having run the SQL yet** (he said "ik kan nu niet supabase"). PostgREST refuses a whole row for a column it cannot find, and refusing the row loses the TREE. The trunk answer is the least valuable thing in that row, so a failed push now retries once without it. The key is only present when somebody answered, so nothing else ever takes the second call, and it retires itself the moment the column exists.
 
 ## 2026-09-11 (session) - the app asks how thick the trunk is, in hugs
