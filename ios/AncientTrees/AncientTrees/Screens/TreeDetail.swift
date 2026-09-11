@@ -1084,26 +1084,33 @@ struct TreeDetail: View {
     /// the labels stay level, so the row keeps its baseline. A moving divider
     /// had no such consolation.
     ///
-    /// A THIRD COLUMN FOR GIRTH, when there is one to show or to fill (Hidde,
-    /// 2026-09-11: "kan girth niet gewoon als derde optie op dezelfde rij als
-    /// age en species?"). A row of its own under the two looked like a second
-    /// card. Thirds wrap a long species sooner, which labels-on-top absorbs
-    /// for the same reason it absorbed halves.
+    /// WITH GIRTH: THE TWO NUMBERS SIDE BY SIDE, THE SPECIES UNDER THEM AT
+    /// FULL WIDTH (Hidde, 2026-09-11, choosing between screenshots: "rechts is
+    /// idd better"). Three columns were tried first, on his "kan girth niet
+    /// gewoon als derde optie op dezelfde rij", and at this type size they do
+    /// not fit: "Pedunculate Oak" broke mid-word ("Peduncul / ate Oak") in a
+    /// third of the row, and still did with age and girth narrowed to fixed
+    /// widths. Age and girth are short numbers; the species is the only value
+    /// made of words, so it is the one that gets the width. Without a girth
+    /// the row is the two halves it always was.
     private var columns: some View {
-        HStack(alignment: .top, spacing: 0) {
-            ageColumn
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.trailing, 16)
-            Divider().frame(height: 44)
-            speciesColumn
+        VStack(alignment: .leading, spacing: 0) {
+            HStack(alignment: .top, spacing: 0) {
+                ageColumn
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.trailing, 16)
+                Divider().frame(height: 44)
+                Group {
+                    if showsGirth { girthColumn } else { speciesColumn }
+                }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 16)
-                .padding(.trailing, showsGirth ? 16 : 0)
+            }
             if showsGirth {
-                Divider().frame(height: 44)
-                girthColumn
+                speciesColumn
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 16)
+                    .padding(.top, 10)
+                    .overlay(alignment: .top) { hairline }
             }
         }
         .padding(.top, 12)
