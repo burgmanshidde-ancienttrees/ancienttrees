@@ -1,0 +1,42 @@
+{
+  "city": "Pisa",
+  "country": "Italy",
+  "city_slug": "pisa",
+  "note": "Verify pass 2026-09-11. Four trees delivered from the Orto Botanico di Pisa (the world's oldest university botanical garden, founded 1543/44), all corroborated by multiple independent sources but garden-entrance-level pin precision only (approximate). The MASAF national register's nearby candidates within 20km are mostly the Lucca Orto Botanico cluster already published/leaded under data/leads/lucca.json (16.3-16.5km, marked 'within 80m of a live tree' by passcheck) or already blocked there (the Massa Pisana camellia). Time-boxed pass; did not chase every remaining candidate.",
+  "leads": [
+    {
+      "name": "The Sequoia of 1868 and the Araucaria of 1872",
+      "species": "Sequoia sempervirens (per travelstales.it, though the register elsewhere sometimes uses 'sequoia californiana' loosely) and Araucaria sp.",
+      "lat": 43.7198,
+      "lng": 10.3968,
+      "status": "lead",
+      "why": "Named on a visitor write-up (travelstales.it) of the Orto Botanico's Scuola Botanica arboretum, alongside the Virginia oak delivered as psa_004: a redwood planted 1868 and an araucaria planted 1872, the latter given as 25m tall. Not chased to a second source this pass, and no girth found. Worth a follow-up pass if the city grows past four; same garden, same access and precision situation as psa_001-004."
+    },
+    {
+      "name": "MASAF register platano orientale (Q55742951 / italy-masaf.json)",
+      "species": "Platanus orientalis",
+      "lat": 43.79877,
+      "lng": 10.50745,
+      "status": "lead",
+      "why": "12.6 km from Pisa centre (passcheck's register sweep), also carried as a Wikidata candidate (Q55742951, 'Dichiarazione di notevole interesse pubblico'). Not investigated this pass: the coordinate sits north-east of the city on the way to Lucca/San Giuliano Terme, distinct from the garden's own platano orientale (psa_003, which is a different tree inside the Orto Botanico itself and has its own unresolved species-name conflict). Needs a location check (which comune, is it on public or private ground) before it can be judged; may end up folded into a Lucca-side cluster rather than a Pisa one given the distance from central Pisa."
+    },
+    {
+      "name": "MASAF register cipresso calvo",
+      "species": "Taxodium distichum",
+      "lat": 43.77721,
+      "lng": 10.30668,
+      "status": "lead",
+      "why": "10.1 km from Pisa centre per passcheck's register sweep, girth 3.5m. Not investigated this pass beyond the register listing; no access or second source checked. Location is southwest/south of the city, direction and access unconfirmed."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Camelia of Massa Pisana",
+      "species": "Camellia japonica var. diamantina",
+      "lat": 43.808333,
+      "lng": 10.477897,
+      "status": "blocked",
+      "why": "Already blocked under data/leads/lucca.json: on Via del Colletto in Massa Pisana, no girth recorded, almost certainly a private villa garden with no source confirming public access. Hard rule 10. Also surfaced by passcheck as a Pisa-area register candidate (12.0km), same tree, same reason."
+    }
+  ]
+}

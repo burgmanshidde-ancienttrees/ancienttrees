@@ -1,0 +1,72 @@
+[
+  {
+    "id": "spk_001",
+    "name": "The Ancient Douglas Firs of Indian Canyon",
+    "species": "Douglas Fir (Pseudotsuga menziesii)",
+    "age_estimate": "around 400 years (arborist estimate for the largest of the three)",
+    "age_min": 300,
+    "age_max": 450,
+    "girth_cm": null,
+    "location": {
+      "address": "Indian Canyon Park, on the cliff edge overlooking Mystic Falls, near Chief Spokane Garry's last campsite; trailhead at approximately 4812 W. Canyon Drive, Spokane",
+      "latitude": 47.6503,
+      "longitude": -117.4828,
+      "neighbourhood": "Indian Canyon / West Hills, Spokane"
+    },
+    "verified_sources": [
+      "https://www.spokesman.com/stories/2019/may/20/ancient-trees-tell-story-of-spokane/ (fetched via Wayback Machine snapshot, dated 2019-05-20)"
+    ],
+    "access": "Free, public city park with hiking trails (part of the larger Palisades Park area, per spokanehistorical.org, which independently confirms the park is public, 155.7 acres, with trails)",
+    "transport": "West Spokane, Indian Canyon trailhead off W. Canyon Drive; car recommended, some city bus service to the West Hills area",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Three ancient Douglas firs standing on the cliff edge above Mystic Falls in Indian Canyon Park, a short walk from Chief Spokane Garry's last campsite (he died 1892). The largest was estimated at around 400 years old by Jeff Perry, City of Spokane Parks and Recreation lead arborist, quoted directly in a 2019 Spokesman-Review feature: he could only span about a third of the trunk with his arms, and said it is too difficult to measure precisely because the tree is holding together the edge of the cliff. Their sharply tapering trunks made them undesirable for logging, which the article gives as the reason they survive at all; most other old-growth in the area was logged. A SINGLE SOURCE only this pass (a Spokesman-Review feature with named, on-site professional testimony, corroborated only generally by spokanehistorical.org confirming the park itself, its size and its public trails, not the trees specifically); flagged for that reason, though the source itself is a named local arborist speaking on the record about a specific, physically described tree. Treated as ONE collectible entry (an ensemble of three trees at a single named viewpoint/cliff edge above the falls), per the compact-ensemble rule. Exact tree-level GPS not found; pin marks the Mystic Falls trailhead, approximate."
+  },
+  {
+    "id": "spk_002",
+    "name": "The State Champion White Willow of Finch Arboretum",
+    "species": "White Willow (Salix alba)",
+    "age_estimate": "about 90 to 100 years",
+    "age_min": 90,
+    "age_max": 105,
+    "girth_cm": null,
+    "location": {
+      "address": "John A. Finch Arboretum, Spokane, Washington",
+      "latitude": 47.6415,
+      "longitude": -117.4663,
+      "neighbourhood": "West Spokane"
+    },
+    "verified_sources": [
+      "https://www.spokesman.com/stories/2019/may/20/ancient-trees-tell-story-of-spokane/ (fetched via Wayback Machine snapshot, dated 2019-05-20)"
+    ],
+    "access": "Free, public city arboretum/park",
+    "transport": "West Spokane, off Sunset Highway; car or city bus",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Washington STATE CHAMPION white willow, the biggest of its kind in the state per Jeff Perry, City of Spokane lead arborist, quoted in the same 2019 Spokesman-Review piece as spk_001. A woman once told parks staff her family planted it in their backyard more than 90 years ago, when the arboretum land was still housing rather than parkland; the arboretum itself was established by a 1947 gift (per HistoryLink.org, not independently re-fetched this pass, treated as a lead corroborating the general timeline rather than a verified fact). The arborist said in 2019 the tree probably had about 30 more years of life left before it would start to split and slowly fall over, which is worth noting for a future re-check. SINGLE SOURCE this pass; flagged. No girth or precise trunk-level coordinate found; pin marks the arboretum generally."
+  },
+  {
+    "id": "spk_003",
+    "name": "The First Dawn Redwoods of Finch Arboretum",
+    "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+    "age_estimate": "about 75 years (planted circa 1950)",
+    "age_min": 70,
+    "age_max": 80,
+    "girth_cm": null,
+    "location": {
+      "address": "John A. Finch Arboretum, Spokane, Washington",
+      "latitude": 47.6415,
+      "longitude": -117.4663,
+      "neighbourhood": "West Spokane"
+    },
+    "verified_sources": [
+      "https://www.spokesman.com/stories/2019/may/20/ancient-trees-tell-story-of-spokane/ (fetched via Wayback Machine snapshot, dated 2019-05-20)",
+      "https://spokanehistorical.org/items/show/109"
+    ],
+    "access": "Free, public city arboretum/park",
+    "transport": "West Spokane, off Sunset Highway; car or city bus",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two surviving dawn redwoods, among the first specimens of the species ever brought to North America. Metasequoia glyptostroboides was known only from fossils until a living population was found in China in 1943(its 're-discovery' is one of botany's best-known stories); seeds/seedlings were distributed to American institutions and Spokane's Finch Arboretum received three of the first in the 1950s (the Spokesman-Review piece says 'the 1950s' generally, a WebSearch-aggregated figure not independently re-fetched narrowed this to 1950 specifically, treated as a lead rather than a verified fact so age_min/max stays broad), of which two survive today. Independently corroborated by spokanehistorical.org, which separately names the Dawn Redwood as one of Finch Arboretum's notable specimens ('comes from the mountains in Western China') without giving the planting-date detail, so the two sources agree on species and location but only one gives the date and count. No girth or exact in-arboretum coordinate found; pin marks the arboretum generally. Historically significant rather than very old in tree terms, an explicitly allowed qualifying route per BRIEF_RESEARCH.md."
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "city": "Boise",
+  "country": "United States",
+  "city_slug": "boise",
+  "note": "Verify pass 2026-09-11. passcheck had only one Wikidata lead (an Anne Frank chestnut sapling, not chased: young, mass-distributed worldwide, not distinctively Boise) and no register. Found and used the Idaho Big Tree Program's own state-champion register (University of Idaho Extension), which is exactly the kind of naming-body BRIEF_RESEARCH.md says predicts yield. 2 trees delivered (boi_001, boi_002), below the 4-tree floor.",
+  "leads": [
+    {
+      "name": "The Idaho Champion Eastern Cottonwood",
+      "species": "Populus deltoides var. deltoides",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Idaho STATE CHAMPION eastern cottonwood per the same Idaho Big Tree Program register: 113in DBH, 361.2in (917cm, over 9m) circumference, 95ft (29m) tall, in Boise, Ada Co. Register lists the owner as 'Private' with no address, so no coordinate and no access confirmation. This would be an exceptional entry (by far the biggest girth found this pass for any Boise-area candidate) but needs both a location and a public-access answer before it can be verified further; not pursued this pass given the time box."
+    },
+    {
+      "name": "The Idaho Champion Weeping Cherry",
+      "species": "Prunus subhirtella 'pendula'",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Idaho STATE CHAMPION per the same register: 22in DBH, 69.5in circumference, 37ft tall, Boise, Ada Co., Private, nominated 2004. Small and on private land; low priority, not pursued."
+    },
+    {
+      "name": "The Idaho Champion American Basswood",
+      "species": "Tilia americana",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Idaho STATE CHAMPION per the same register: 30in DBH, 94in circumference, 79ft tall, at Valley Shepherd Nazarene Church, Boise, Ada Co., nominated 2006. A church ground, which per hard rule 10 may be genuinely open (churchyards are usually a yes); access not checked this pass."
+    },
+    {
+      "name": "Anne Frank Chestnut Sapling at Idaho Anne Frank Human Rights Memorial",
+      "species": "Aesculus hippocastanum (horse chestnut)",
+      "lat": 43.61259,
+      "lng": -116.2062,
+      "status": "lead",
+      "why": "Wikidata Q140073086, part of the worldwide sapling-distribution project from the original Anne Frank House tree in Amsterdam. Not pursued this pass: young (planted well within living memory, likely 2010s), and its significance is shared with dozens of identical saplings worldwide rather than being distinctively Boise's own. Could be reconsidered as a 'historically significant' entry if the city needs a fourth/floor-clearing tree and its exact planting date and memorial context are verified."
+    }
+  ],
+  "blocked": []
+}

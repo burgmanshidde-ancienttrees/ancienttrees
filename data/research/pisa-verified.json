@@ -1,0 +1,102 @@
+[
+  {
+    "id": "psa_001",
+    "name": "The Ginkgo of Giorgio Santi",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "about 240 years",
+    "age_min": 230,
+    "age_max": 245,
+    "girth_cm": 400,
+    "location": {
+      "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the section called Orto del Cedro",
+      "latitude": 43.7198,
+      "longitude": 10.3968,
+      "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+    },
+    "verified_sources": [
+      "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+      "https://www.ortomuseobot.sma.unipi.it/2022/12/giorgio-santi-fu-prefetto-dell-orto-botanico-oggi-ricorrono-200-anni-dalla-sua-morte/",
+      "https://www.apgi.it/giardino/orto-botanico-universita-di-pisa/",
+      "https://www.georgofili.info/contenuti/lorto-e-museo-botanico-delluniversit-di-pisa/23235"
+    ],
+    "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+    "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Planted 1787 by director Giorgio Santi in the Orto del Cedro section, the same year and section as the magnolia below (psa_002); a young Gaetano Savi, later his successor as director, was present. it.wikipedia gives circumference 4 metres (400cm) and calls it the largest tree in the garden; a WebSearch AI summary (not fetched directly, treated only as a lead) claimed 4.5m, discarded per the search-summary-is-not-a-source rule. Considered the first ginkgo introduced to Tuscany, reportedly arrived from London. Multiple independent sources (the garden's own official site, APGI - Associazione Parchi e Giardini Italiani, Accademia dei Georgofili) all corroborate the 1787 planting date and its status as one of the garden's two oldest surviving trees. Flagged only because location_precision is approximate: I have the garden's entrance coordinates, not the individual tree's GPS position within the Orto del Cedro sub-section. Access is paid (university garden), but genuinely open to the public with normal visiting hours."
+  },
+  {
+    "id": "psa_002",
+    "name": "The Magnolia of Giorgio Santi",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "about 240 years",
+    "age_min": 230,
+    "age_max": 245,
+    "girth_cm": null,
+    "location": {
+      "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the section called Orto del Cedro",
+      "latitude": 43.7198,
+      "longitude": 10.3968,
+      "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+    },
+    "verified_sources": [
+      "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+      "https://www.ortomuseobot.sma.unipi.it/2022/12/giorgio-santi-fu-prefetto-dell-orto-botanico-oggi-ricorrono-200-anni-dalla-sua-morte/",
+      "https://www.apgi.it/giardino/orto-botanico-universita-di-pisa/",
+      "https://www.georgofili.info/contenuti/lorto-e-museo-botanico-delluniversit-di-pisa/23235"
+    ],
+    "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+    "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Planted 1787 by director Giorgio Santi, same year and same Orto del Cedro section as the ginkgo (psa_001); it.wikipedia gives height 14 metres. No girth recorded in any source found this pass. Independently corroborated by the garden's own official site and by Accademia dei Georgofili's own write-up, both calling the ginkgo and magnolia 'the two oldest trees still surviving in the garden'. Same access and precision caveats as psa_001: paid but public entry, garden-entrance-level coordinates only."
+  },
+  {
+    "id": "psa_003",
+    "name": "The Plane of the Scuola Botanica",
+    "species": "Plane (Platanus sp., disputed: see note)",
+    "age_estimate": "about 220 years",
+    "age_min": 210,
+    "age_max": 225,
+    "girth_cm": null,
+    "location": {
+      "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the arboretum of the Scuola Botanica section",
+      "latitude": 43.7198,
+      "longitude": 10.3968,
+      "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+    },
+    "verified_sources": [
+      "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+      "https://www.apgi.it/giardino/orto-botanico-universita-di-pisa/"
+    ],
+    "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+    "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "SPECIES CONFLICT, flagging rather than picking a winner: it.wikipedia names it 'platano orientale' (Platanus orientalis), planted 1808, 23 metres tall, one of the arboretum specimens kept in place when director Theodore Caruel reorganised the Scuola Botanica in the late 1800s. A second source (APGI, Associazione Parchi e Giardini Italiani, reached via an AI-summarised fetch of apgi.it) names a 'Platanus occidentalis' planted the same year, 1808, with no further detail; it is not clear whether this is the summariser's error or a genuine second name for the same specimen (the London plane, Platanus x acerifolia/hispanica, is the natural hybrid of the two and is what most old European 'platano' specimens actually are). Both sources agree on existence and the 1808 planting date; a writer or reader should not commit to a species name stronger than 'Platanus sp.' unless someone can confirm on site. No girth found. Same paid/public access and garden-entrance-level coordinates as psa_001/002."
+  },
+  {
+    "id": "psa_004",
+    "name": "The Virginia Oak of 1829",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "about 195 years",
+    "age_min": 190,
+    "age_max": 200,
+    "girth_cm": null,
+    "location": {
+      "address": "Orto e Museo Botanico, Via Luca Ghini 13 / Via Roma 56, 56126 Pisa, in the arboretum of the Scuola Botanica section",
+      "latitude": 43.7198,
+      "longitude": 10.3968,
+      "neighbourhood": "Near Piazza dei Miracoli, historic centre"
+    },
+    "verified_sources": [
+      "https://it.wikipedia.org/wiki/Orto_botanico_di_Pisa",
+      "https://www.travelstales.it/orto-botanico-pisa/"
+    ],
+    "access": "Paid entry (university botanical garden museum, two entrances near the Leaning Tower); open regular visiting hours, check ortomuseobot.sma.unipi.it for current times",
+    "transport": "Central Pisa, an easy walk from Piazza dei Miracoli / the Leaning Tower",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "it.wikipedia names it 'quercia della Virginia', planted 1829, one of the arboretum specimens kept in place from the older layout when the Scuola Botanica was reorganised. A second, independent source (travelstales.it, a garden visitor write-up describing the plaques on site) names the same tree 'Leccio della Virginia' (using the Italian word for holm oak rather than 'quercia') and gives the same 1829 date, alongside other dated arboretum specimens the same source lists (a Sequoia from 1868, an Araucaria from 1872 at 25m) that were not chased further this pass and are worth a later look. No girth found in either source. Same paid/public access and garden-entrance-level coordinates as the others in this cluster."
+  }
+]
