@@ -12588,6 +12588,53 @@
    ],
    "trees": 16,
    "logged": true
+  },
+  {
+   "started": "2026-09-11T09:51:54+00:00",
+   "date": "2026-09-11",
+   "run_id": "34586319250",
+   "minutes": 59.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 368,
+   "denials": 52,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(for), Bash(python3), Bash(rm), Bash(wc), Bash(which)",
+   "ended": "success",
+   "tokens": 7513679,
+   "claims_held": [
+    "spokane",
+    "hallstatt"
+   ],
+   "commits": 13,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "lausanne",
+     "trees": 8
+    },
+    {
+     "city": "spokane",
+     "trees": 6
+    },
+    {
+     "city": "minneapolis",
+     "trees": 4
+    },
+    {
+     "city": "salamanca",
+     "trees": 4
+    },
+    {
+     "city": "monterey",
+     "trees": 2
+    },
+    {
+     "city": "kyoto",
+     "trees": 1
+    }
+   ],
+   "trees": 25,
+   "logged": true
   }
  ],
  "schedule_changes": [
