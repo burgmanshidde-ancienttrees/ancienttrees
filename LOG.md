@@ -11,6 +11,50 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session) - The photo shortlist now aims at demand, and three numbers stopped lying about themselves
+
+**The shortlist aims at demand (Hidde: "zet maar om").** Rule two of the
+2026-08-12 course sends photos only to cities clearing 10 impressions, and the
+shortlist had been serving the opposite list for weeks, because its condition
+was `photos == 0` and a city with readers has always got its first photograph
+already. The nine cities the newest digest allows depth on held 228 photo-less
+trees and were invisible to the tool.
+
+He hesitated on the right ground, that most cities should still get their one
+photograph, so it was measured rather than argued: of 54 coverage cities 7 have
+a candidate worth viewing, of 176 demand cities 53 do, and the overlap is 7.
+The same seven. The two lanes never competed. The other 47 coverage cities are
+blocked on SUPPLY (24 swept with nothing passing the plant gate, 20 with an
+empty queue, 3 never swept) and their medicine is `photo_last_resort.py` and
+`famous_trees.py`, not a shortlist. `--coverage` still prints the old list.
+
+**SEO learning joined the digest contract** (his "ik miste seo learning in de
+daily digest"). It has run inside the digest since 2026-09-10 and fell straight
+out of the first session report, exactly as the night-shift table did on
+2026-08-21 and for the same reason: the list in CLAUDE.md is the contract.
+
+**Three numbers that were misreporting themselves**, all found by him asking:
+
+- The session brief printed "746/2927 have a photo" two days running and he
+  read it, correctly on that evidence, as the photo work having produced
+  nothing. It had produced 167 approved photographs across 143 cities in 24
+  hours; the checkout was 33 commits behind and the line could not say so. It
+  says so now.
+- App Store downloads are split into first-time and redownload. Apple's Trends
+  screen shows units, which is first-time only; we also count a redownload on
+  purpose. 22 there against 42 here, and neither was wrong. The first-time
+  column should now equal his screen to the unit.
+- The app table prints how concentrated a day was, after 60 tree opens on 4 app
+  opens could not be checked. It is not CI (Measure gates on the simulator, and
+  nothing passes `-measure`) and the event does not over-fire; what is left is
+  our own reinstall, which `excluded_installs` exists for and which is empty.
+
+Earlier in the same window, with no egress to any image host: the geotag is now
+scored by distance rather than by existing, `--conflict` lists candidates whose
+filename names the tree while the coordinate disagrees, `photo_hunt.py` no
+longer records a sweep nothing answered, and preflight refuses two trees wearing
+the same photograph.
+
 ## 2026-09-11 - New city Tulsa (1 tree), 159 trees got a real best_time for free, 13 country pages' stale counts fixed, and a batched verify pass cleared 5 thin cities
 
 7-day visits (`visitors.py`): 1264 visits, 1593 page views, trending down day over day (202 on 09-03 to 83 on 09-10).
