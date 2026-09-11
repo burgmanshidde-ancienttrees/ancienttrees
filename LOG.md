@@ -11,6 +11,24 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (session) - the app asks how thick the trunk is, in hugs
+
+Hidde, straight after the age script landed: "en bij het toevoegen van een boom een nieuw veld - girth". So the add-a-tree sheet has a third field, under the name and the reason, and it is optional like both of them.
+
+**It asks in HUGS, not centimetres, and that is the convention rather than an idea of ours.** The Ancient Tree Inventory has run fifteen years of citizen tree recording and hands anybody without a tape the hug: one adult hug is 1.5 m fingertip to fingertip, and they publish a threshold table per species. It is the only measurement available to somebody standing in a park holding a phone, and it sidesteps the metric-or-imperial question a number would force. Five capsules: less than 1, 1, 2, 3, 4 or more. Tapping the chosen one clears it, since there is no other way out of a single-choice row.
+
+**Why it earns a third field on a form we have twice cut down.** Girth is the only measurement an age can be DERIVED from rather than invented, which is this project's own rule since 2026-08-16 and became a script this morning. Nothing else somebody can give us in five seconds turns into a fact on a page. And the precision costs nothing, which is the finding from the same conversation: a hug is good to about 25 cm and a LiDAR scan to 3, and the growth rate makes the answer a band a factor of two wide either way.
+
+Three design calls, each with a more obvious wrong answer, all recorded in CONVENTIONS.md: a wrapping grid rather than a segmented control (Apple's guidance is short labels of roughly equal width, and five capsules do not fit one line at 375 points); the explanation ABOVE the chips rather than under them, because it defines the unit somebody is about to count in, which is what our own web contribute form already does with its hints; and the phone storing the answer as given ("<1", "2", "4+") with the conversion to metres living in `sightings_inbox.py`, so it can be corrected without an App Store release.
+
+End to end: `Sightings.Sighting.girth` (optional, so every file written before today still decodes), through `SightingSync` in both directions, into a `girth` column on the sightings table, out again in `sightings_inbox.py` where the judging screen prints it in plain words ("about two hugs, roughly 3 m round"). Two tests in `UpgradeTests.swift` hold the disk side: a tree saved before the field existed still opens, and an answer survives the round trip.
+
+On the web, one line added to "What helps most" on /contribute rather than a field, and the reason is real rather than a dodge: a hug is a measurement you take while standing at the trunk, and the web form is somebody at a desk remembering a tree.
+
+**FOR HIDDE, two things.** The SQL needs your paste, `supabase/sightings.sql` (it ends in a one-line `alter table ... add column if not exists girth text`, safe to run again); until then the app keeps the answer on the phone and the sync drops it. And I cannot build or look at the app from here, so the iOS CI run on this push is the first real verdict on whether it compiles and fits; nothing in it has been seen rendered.
+
+**One honest sentence about what this is worth today.** Nobody but you has ever added a tree, so this field collects from a population of one for now. It is right for the day that changes, and the bigger prize is the same question asked when somebody ticks off a tree we ALREADY map, because 1,610 of our published trees carry no girth and that is where a reader's answer turns straight into a published age. That one adds a question to the payoff screen, which CONVENTIONS.md warns about, so it is yours to call.
+
 ## 2026-09-11 (session) - 37 pages that said nothing about age now say something, derived from the trunk
 
 Hidde asked whether the app asks a contributor for a trunk size, and whether species plus trunk size could give an approximate age. It does not ask, and the age half was already this project's own written rule since 2026-08-16 ("girth plus a published growth rate for that species is dendrology") with the condition attached that it becomes a script once a few hundred girths exist. There are 1,354. So this is that script, `scripts/ages.py`, the third sibling of girths.py and heights.py.

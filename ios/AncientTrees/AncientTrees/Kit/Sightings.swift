@@ -73,6 +73,26 @@ final class Sightings {
         /// Filled in by you, on the tree's own page, and empty until then.
         var species: String?
         var age: String?
+
+        /// How thick the trunk is, as the person answered it: "<1", "1", "2",
+        /// "3" or "4+" adult hugs.
+        ///
+        /// THE HUG rather than a number, on the convention the people who do
+        /// this for a living use. The Ancient Tree Inventory has run fifteen
+        /// years of citizen recording and gives anybody without a tape the
+        /// hug, one adult hug being 1.5 m fingertip to fingertip, with a
+        /// threshold table per species (CONVENTIONS.md, "Asking a contributor
+        /// how thick a tree is"). It is the only measurement somebody standing
+        /// at a trunk can actually take, and it needs no metric or imperial
+        /// answer, which centimetres would.
+        ///
+        /// Stored as THEIR answer and not as centimetres, which is the split
+        /// this project draws everywhere: the phone records what somebody told
+        /// us, the server decides what it means. Converting here would bake a
+        /// rule into the binary that scripts/ages.py has to be free to change.
+        ///
+        /// Optional so a file written before 2026-09-11 still decodes.
+        var girth: String?
         var lat: Double
         var lng: Double
         var date: Date = Date()
@@ -362,10 +382,11 @@ final class Sightings {
     func record(treeId: String?, name: String, note: String = "",
                 lat: Double, lng: Double, image: UIImage?,
                 date: Date = Date(), status: Status = .mine,
-                unsureOf: [String]? = nil) -> Sighting {
+                unsureOf: [String]? = nil, girth: String? = nil) -> Sighting {
         var s = Sighting(treeId: treeId, name: name, note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
         s.unsureOf = unsureOf
+        s.girth = girth
         // Shared from the start (see the property's own comment): the mail
         // that thanks somebody for this tree links straight to it, and that
         // only works if the page is already live by the time the mail sends.

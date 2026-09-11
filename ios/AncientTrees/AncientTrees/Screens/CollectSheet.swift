@@ -128,6 +128,9 @@ struct CollectSheet: View {
     /// What the tree is called, or what kind it is. Its OWN field since
     /// 2026-09-08; see the two-field note over the form below.
     @State private var callsIt = ""
+    /// How many adult hugs around the trunk is, when they answered. See the
+    /// note over HugRow at the bottom of this file.
+    @State private var hugs: String?
     @State private var sending = false
     @State private var signingIn = false
     /// Leaving with a photograph in hand asks first. See closeRow.
@@ -1156,6 +1159,47 @@ struct CollectSheet: View {
                     .accessibilityLabel("Why this tree is worth the walk")
             }
 
+            // HOW THICK, and it is here rather than on a later screen because
+            // it is the one fact that can only be answered while standing at
+            // the trunk. Hidde, 2026-09-11: "en bij het toevoegen van een boom
+            // een nieuw veld - girth".
+            //
+            // WHY IT EARNS A THIRD FIELD on a form we have twice cut down.
+            // Girth is the only measurement an AGE can be derived from rather
+            // than invented, which is this project's own rule since 2026-08-16
+            // and now a script (scripts/ages.py). Nothing else somebody can
+            // give us in five seconds turns into a fact on a page.
+            //
+            // THE HUG, not centimetres. CONVENTIONS.md, "Asking a contributor
+            // how thick a tree is": the Ancient Tree Inventory has run fifteen
+            // years of citizen tree recording and hands anybody without a tape
+            // the hug, one adult hug being 1.5 m fingertip to fingertip. It is
+            // the only measurement available to somebody holding a phone in a
+            // park, and it sidesteps the metric-or-imperial question a number
+            // would raise. The precision costs nothing either: a hug is good
+            // to about 25 cm, a LiDAR scan to 3, and the growth rate makes the
+            // derived age a band a factor of two wide whichever you use.
+            //
+            // OPTIONAL, like both fields above it and for the reason recorded
+            // there: none of the references makes somebody fill anything in
+            // before they may contribute.
+            VStack(alignment: .leading, spacing: 8) {
+                Text("How thick is the trunk?")
+                    .font(.brand(15, .bold))
+                    .foregroundStyle(Brand.ink)
+                // THE EXPLANATION SITS ABOVE THE CHIPS, which is not where a
+                // footnote normally goes. It is not help after the fact: it
+                // defines the unit somebody is about to count in, and a chip
+                // saying "2 hugs" means nothing until you have read it. Our own
+                // web form does the same, hint between the label and the field
+                // (site/src/pages/contribute.astro, "Where does it stand?").
+                Text("You can measure it by putting your arms around it. One adult hug is about a metre and a half.")
+                    .font(.footnote)
+                    .foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                HugRow(picked: $hugs)
+            }
+
             HStack(spacing: 8) {
                 Image(systemName: "leaf")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
@@ -1258,7 +1302,7 @@ struct CollectSheet: View {
         let s = sightings.record(treeId: nil,
                                  name: named.isEmpty ? "A tree I found" : String(named.prefix(60)),
                                  note: why, lat: here.lat, lng: here.lng, image: shot,
-                                 date: taken ?? Date())
+                                 date: taken ?? Date(), girth: hugs)
         shot = nil
         // The payoff beat this path was missing (Hidde, 2026-09-03: "ik mis
         // ook een vink bevestiging na het nemen van de foto dat de tree is
@@ -1370,5 +1414,71 @@ struct CollectSheet: View {
                 .foregroundStyle(.white)
         }
         .accessibilityIdentifier("collect-done")
+    }
+}
+
+/// Picking how many adult hugs go round a trunk.
+///
+/// Convention: the Ancient Tree Inventory's hug, the tape-free unit fifteen
+/// years of citizen tree recording are built on, one adult hug being 1.5 m
+/// fingertip to fingertip. CONVENTIONS.md, "Asking a contributor how thick a
+/// tree is", holds the lookup and the sources.
+///
+/// A WRAPPING GRID rather than a segmented control, which was the first
+/// instinct and is wrong here: Apple's guidance is that segments carry short
+/// labels of roughly equal width, and "4+ hugs" beside "Less than 1" is
+/// neither. Five capsules at 375 points do not fit one line, and a horizontal
+/// scroller would hide the answer most ancient trees need. LazyVGrid wraps.
+///
+/// The stored value is terse ("<1", "2", "4+") because it travels to a script
+/// rather than to a reader; the label is what the person sees.
+private struct HugRow: View {
+    @Binding var picked: String?
+
+    /// A struct rather than a labelled tuple because Swift has no key path
+    /// into a tuple, so ForEach cannot identify one.
+    struct Option: Identifiable {
+        /// What gets stored and sent. Terse on purpose: it travels to a script.
+        let id: String
+        let label: String
+    }
+
+    static let options = [
+        Option(id: "<1", label: "Less than 1"),
+        Option(id: "1", label: "1 hug"),
+        Option(id: "2", label: "2 hugs"),
+        Option(id: "3", label: "3 hugs"),
+        Option(id: "4+", label: "4+ hugs"),
+    ]
+
+    var body: some View {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 96), spacing: 8)],
+                  alignment: .leading, spacing: 8) {
+            ForEach(Self.options) { option in
+                let on = picked == option.id
+                Button {
+                    // Tapping the chosen one clears it, so an answer given by
+                    // accident can be taken back. There is no other way out of
+                    // a single-choice row, and the field is optional.
+                    picked = on ? nil : option.id
+                } label: {
+                    Text(option.label)
+                        .font(.brand(13, .medium, relativeTo: .caption))
+                        .foregroundStyle(on ? .white : Brand.ink)
+                        .padding(.horizontal, 12)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 44)
+                        .background(on ? Brand.moss : Brand.surface, in: .capsule)
+                        .overlay {
+                            if !on { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                        }
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(option.label)
+                .accessibilityAddTraits(on ? [.isSelected] : [])
+            }
+        }
+        .accessibilityIdentifier("hug-row")
     }
 }

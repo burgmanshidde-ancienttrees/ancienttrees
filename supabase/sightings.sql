@@ -35,6 +35,11 @@ create table if not exists public.sightings (
   note       text not null default '' check (char_length(note) <= 2000),
   species    text check (char_length(species) <= 120),
   age        text check (char_length(age) <= 60),
+  -- How thick the trunk is, as the person answered it: "<1", "1", "2", "3" or
+  -- "4+" adult hugs. Their answer rather than centimetres, on purpose; see
+  -- Sightings.swift and CONVENTIONS.md, "Asking a contributor how thick a
+  -- tree is".
+  girth      text check (char_length(girth) <= 8),
   lat        double precision not null,
   lng        double precision not null,
   taken_at   timestamptz not null default now(),
@@ -71,3 +76,8 @@ create policy "own sighting photos" on storage.objects
     bucket_id = 'sightings'
     and auth.uid()::text = (storage.foldername(name))[1]
   );
+
+-- ADDING girth TO A TABLE THAT ALREADY EXISTS, since `create table if not
+-- exists` above does nothing on a live deployment. Added 2026-09-11 with the
+-- trunk-size field in the add-a-tree flow. Safe to run again.
+alter table public.sightings add column if not exists girth text;

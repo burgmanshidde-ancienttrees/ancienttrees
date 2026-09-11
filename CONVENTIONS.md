@@ -1446,9 +1446,10 @@ Read 2026-09-08:
 
 ## Asking a contributor how thick a tree is (2026-09-11)
 
-Nothing is built yet. This is the lookup, recorded before any design, because
-Hidde asked whether we could get a trunk size out of a contributor and turn it
-plus a species into an approximate age.
+The lookup, recorded before any design, because Hidde asked whether we could
+get a trunk size out of a contributor and turn it plus a species into an
+approximate age. Built the same day, as the trunk row in the app's add-a-tree
+sheet; what it became is at the bottom of this entry.
 
 **Reference: the Ancient Tree Inventory (Woodland Trust).** The largest
 citizen-science tree recording project there is, 15 years of it, and the only
@@ -1487,3 +1488,22 @@ Read 2026-09-11:
 - https://academic.oup.com/forestscience/article/70/4/304/7664433
 - https://www.sciencedirect.com/science/article/pii/S157495412400092X
 - https://en.wikipedia.org/wiki/Tree_girth_measurement
+
+**What we built, the same day.** A row in the add-a-tree sheet asking "How
+thick is the trunk?", answered in hugs on five capsules: less than 1, 1, 2, 3,
+4 or more. Optional, like both fields above it.
+
+Three choices worth keeping, because each had a more obvious wrong answer.
+**Hugs rather than a number**, since somebody in a park has no tape and a
+number would also force a metric or imperial question that a body sidesteps.
+**A wrapping grid rather than a segmented control**, which was the first
+instinct: Apple's guidance is that segments carry short labels of roughly equal
+width, and "4 or more hugs" beside "less than 1" is neither, and five capsules
+do not fit one line at 375 points. **The explanation above the control rather
+than under it**, because it defines the unit somebody is about to count in
+rather than helping after the fact, which is what our own web contribute form
+already does with its field hints.
+
+The phone stores the answer as given ("<1", "1", "2", "3", "4+") and the
+conversion to metres lives in scripts/sightings_inbox.py, so it can be
+corrected without an App Store release.

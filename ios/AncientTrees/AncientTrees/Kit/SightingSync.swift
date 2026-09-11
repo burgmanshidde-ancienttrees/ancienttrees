@@ -53,6 +53,7 @@ enum SightingSync {
             // tree on the phone, waiting for a push to tell us what we already
             // know.
             made.syncedAt = Date()
+            made.girth = row["girth"] as? String
             if let st = row["status"] as? String,
                let k = Sightings.Status(rawValue: st) { made.status = k }
             made.shared = row["shared"] as? Bool
@@ -139,6 +140,7 @@ enum SightingSync {
         row["tree_id"] = sighting.treeId
         row["species"] = sighting.species
         row["age"] = sighting.age
+        row["girth"] = sighting.girth
         row["photo"] = stored
         // Explicit, like every other field here, rather than left to the
         // column's own default: the LOCAL value is the one somebody may have
