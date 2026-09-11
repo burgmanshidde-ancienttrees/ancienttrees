@@ -225,7 +225,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 28 | Nijmegen | 14.60 | 42,338 | 22 | 1 | 3 | 159 | 20 | measured |
 | 29 | The Hague | 13.77 | 236,723 | 31 | 2 | 5 | 167 | 20 | measured |
 | 30 | Austin | 26.70 | 226,631 | 5 | 2 | - | - | 20 | measured |
-| 31 | Kyoto | 17.11 | 142,353 | 17 | 11 | 2 | - | 20 | measured |
+| 31 | Kyoto | 17.11 | 142,353 | 18 | 11 | 2 | - | 20 | measured |
 | 32 | Dublin | 15.02 | 240,850 | 17 | 4 | 2 | 12 | 30 | measured |
 | 33 | Haarlem | 12.73 | 33,960 | 21 | - | 2 | 277 | 20 | measured |
 | 34 | Krakow | 16.90 | 140,824 | 34 | 7 | 3 | 198 | 30 | measured |
@@ -260,19 +260,19 @@ so qa.py fails the deploy when the table and the json disagree.
 | 63 | Cork | 12.10 | 101,405 | 13 | 2 | 1 | - | 20 | measured |
 | 64 | Des Moines | 18.11 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 65 | New Orleans | 17.94 | 256,232 | 4 | 2 | 1 | - | 20 | measured |
-| 66 | Daytona Beach | 17.66 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 67 | San Francisco | 16.69 | 361,111 | 6 | 1 | 1 | - | 30 | measured |
-| 68 | Chattanooga | 16.68 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 69 | Porto | 8.34 | 120,415 | 27 | 14 | 2 | 40 | 20 | measured |
-| 70 | Tokyo | 8.76 | 394,702 | 17 | 8 | 1 | 6 | 20 | measured |
-| 71 | Edinburgh | 16.06 | 292,981 | 16 | 5 | 1 | - | 30 | measured |
-| 72 | Las Vegas | 16.27 | - | 11 | - | 2 | - | 30 | measured |
-| 73 | Ottawa | 10.85 | - | 14 | - | 2 | 119 | 20 | measured |
-| 74 | Athens | 15.85 | 235,429 | 12 | 6 | 2 | - | 30 | measured |
-| 75 | Bath | 16.06 | 144,950 | 5 | 2 | 1 | - | 20 | measured |
-| 76 | Santa Cruz | 16.06 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 77 | Seattle | 15.44 | 398,724 | 6 | 1 | - | - | 30 | measured |
-| 78 | Spokane | 15.66 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 66 | Spokane | 15.66 | - | 6 | - | - | - | 10 | predicted (travel demand) |
+| 67 | Daytona Beach | 17.66 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 68 | San Francisco | 16.69 | 361,111 | 6 | 1 | 1 | - | 30 | measured |
+| 69 | Chattanooga | 16.68 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 70 | Porto | 8.34 | 120,415 | 27 | 14 | 2 | 40 | 20 | measured |
+| 71 | Tokyo | 8.76 | 394,702 | 17 | 8 | 1 | 6 | 20 | measured |
+| 72 | Edinburgh | 16.06 | 292,981 | 16 | 5 | 1 | - | 30 | measured |
+| 73 | Las Vegas | 16.27 | - | 11 | - | 2 | - | 30 | measured |
+| 74 | Ottawa | 10.85 | - | 14 | - | 2 | 119 | 20 | measured |
+| 75 | Athens | 15.85 | 235,429 | 12 | 6 | 2 | - | 30 | measured |
+| 76 | Bath | 16.06 | 144,950 | 5 | 2 | 1 | - | 20 | measured |
+| 77 | Santa Cruz | 16.06 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 78 | Seattle | 15.44 | 398,724 | 6 | 1 | - | - | 30 | measured |
 | 79 | Perth | 15.65 | 180,478 | 6 | 3 | 1 | - | 30 | measured |
 | 80 | Dallas | 15.85 | - | 8 | 1 | 1 | - | 30 | measured |
 | 81 | Key West | 15.81 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -285,7 +285,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 88 | Saint Petersburg | 14.83 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 89 | St. Louis | 14.80 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 90 | Cadiz | 9.39 | 79,226 | 5 | 4 | 1 | - | 20 | measured |
-| 91 | Monterey | 14.58 | - | 1 | - | - | - | 10 | predicted (travel demand) |
+| 91 | Monterey | 14.58 | - | 3 | - | - | - | 10 | predicted (travel demand) |
 | 92 | Strasbourg | 9.60 | 154,700 | 10 | 2 | 2 | 66 | 30 | measured |
 | 93 | Cagliari | 7.72 | 51,351 | 13 | 1 | 2 | 15 | 20 | measured |
 | 94 | Tampa | 14.10 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -341,14 +341,14 @@ so qa.py fails the deploy when the table and the json disagree.
 | 144 | Parma | 4.80 | 40,425 | 5 | - | 1 | 7 | 20 | measured |
 | 145 | Ann Arbor | 8.55 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 146 | Leipzig | 5.63 | 121,319 | 7 | 7 | 1 | - | 30 | measured |
-| 147 | Salamanca | 5.50 | 47,897 | - | - | - | 1 | 10 | predicted (travel demand) |
+| 147 | Salamanca | 5.50 | 47,897 | 4 | - | - | 1 | 10 | predicted (travel demand) |
 | 148 | Caserta | 4.17 | 14,783 | 20 | - | 1 | 51 | 20 | measured |
 | 149 | Tilburg | 4.17 | - | 20 | - | 3 | 87 | 20 | measured |
 | 150 | Adelaide | 8.14 | 139,166 | - | - | - | - | 10 | predicted (travel demand) |
 | 151 | Albuquerque | 7.83 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 152 | Minneapolis | 7.53 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 153 | Sydney | 7.51 | 305,304 | 7 | 1 | - | - | 30 | measured |
-| 154 | Toronto | 7.51 | 411,011 | 6 | - | - | - | 30 | measured |
+| 152 | Sydney | 7.51 | 305,304 | 7 | 1 | - | - | 30 | measured |
+| 153 | Toronto | 7.51 | 411,011 | 6 | - | - | - | 30 | measured |
+| 154 | Minneapolis | 7.53 | - | 4 | - | - | - | 10 | predicted (travel demand) |
 | 155 | Salzburg | 5.01 | 107,243 | 9 | 3 | 2 | 34 | 20 | measured |
 | 156 | Warsaw | 5.01 | 197,929 | 26 | 3 | 3 | 1408 | 30 | measured |
 | 157 | Amersfoort | 3.75 | - | 8 | 1 | 1 | 181 | 20 | measured |
@@ -402,9 +402,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 205 | Perugia | 2.71 | 42,572 | 12 | - | 2 | 19 | 20 | measured |
 | 206 | Bergamo | 2.50 | 52,933 | 8 | 1 | 1 | 17 | 20 | measured |
 | 207 | Groningen | 2.50 | 31,401 | 21 | 1 | 2 | 76 | 20 | measured |
-| 208 | Lausanne | 4.90 | 68,242 | - | - | - | - | 10 | predicted (travel demand) |
-| 209 | Heraklion | 4.96 | 66,359 | - | - | - | - | 10 | predicted (travel demand) |
-| 210 | Marseille | 4.96 | 182,033 | - | - | - | - | 10 | predicted (travel demand) |
+| 208 | Heraklion | 4.96 | 66,359 | - | - | - | - | 10 | predicted (travel demand) |
+| 209 | Marseille | 4.96 | 182,033 | - | - | - | - | 10 | predicted (travel demand) |
+| 210 | Lausanne | 4.90 | 68,242 | 8 | - | - | - | 10 | predicted (travel demand) |
 | 211 | Christchurch | 4.83 | 104,874 | - | - | - | - | 10 | predicted (travel demand) |
 | 212 | Fort Lauderdale | 4.61 | - | 4 | - | - | - | 10 | published, never ranked (may be uncrawled) |
 | 213 | Hiroshima | 3.13 | 129,791 | 17 | 5 | 3 | - | 20 | measured |

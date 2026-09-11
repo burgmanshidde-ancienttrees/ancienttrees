@@ -1,6 +1,56 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (continuation) - Finished and merged 4 banked cities: Lausanne, Minneapolis, Salamanca, Spokane; deepened Monterey
+
+An earlier attempt this window claimed Lausanne, Salamanca, Spokane, Boise,
+Minneapolis and Baltimore for a verify pass, did real work (Lausanne to 8
+trees, Salamanca and Minneapolis to 4, Spokane to 6) and stopped without
+merging or releasing anything. Picked that up rather than starting new
+research, per the wake-up brief's instruction to finish rather than reorient.
+
+Five trees still needed a story (mnp_004, slm_004, spk_004-006); dispatched a
+write-stories agent for exactly those, batched, nothing else touched. Then
+built full Contract C/B page content (intro, meta_description, question
+page, FAQ) for all four cities and merged them into `data/cities/`:
+
+- **Lausanne** (8): a DNA-dated oak tied to a Napoleon legend, a weeping
+  beech that turned into a grove of its own rooted branches, a giant sequoia
+  and living-fossil ginkgo sharing one lakeside park.
+- **Salamanca** (4): a coast redwood in the university cloister since 1870,
+  a giant sequoia planted facing the cathedral in 1976, the park's own
+  disputed "grandfather" cedar, and a yew with no age at all, stated plainly.
+- **Minneapolis** (4): a tornado-scarred ~300-year bur oak, the Shoe Tree
+  (students have hung shoes in a hackberry since the 1990s for no agreed
+  reason), the state's champion basswood, and an Endangered-species hemlock
+  planted by the wildflower garden's own founder.
+- **Spokane** (6): three ~400-year-old Douglas firs whose roots hold a
+  canyon rim together, plus the only three trees on the city's own Heritage
+  Tree Registry as of a 2012 survey, all three in one small park.
+- **Monterey** (+2, now 3): added the Old Veteran of Point Lobos (a cliffside
+  cypress painted since 1879) and the Moon Tree of Friendly Plaza (a coast
+  redwood grown from a seed that flew around Apollo 14 in 1971) alongside
+  the Lone Cypress. **Flagged as a judgement call**: a prior continuation
+  this same window had deliberately trimmed Monterey back to just the Lone
+  Cypress, holding these two back for "a 4th tree or an independent fame
+  case." Reconsidered because Monterey already has a live page (this is
+  normal growth, not opening a new page below the floor, and "a city may
+  grow past its target... is normal work, not an exception to argue for"),
+  and both additions are honestly sourced and genuinely distinct rather than
+  filler. Hidde's to overrule if he reads the close call differently.
+
+Released all 6 stale claims (Boise and Baltimore included, both still below
+the 4-tree floor with nothing destination-tier to justify the single-tree
+exception; left banked in their research files for a future pass or an
+explicit fame case). Re-ran `city_queue.py` to sync ranks/status/trees from
+the actual data (it had been carrying Lausanne etc. at 0 trees). `preflight.py`
+(593 cities, 0 problems), `superlatives.py` (no collisions) and a full
+`astro build` (5442 pages) all clean; `qa.py` running.
+
+Left for a future pass: Boise (2), Baltimore (2) and Lagos-PT (1, cork oak
+with unconfirmed public access) still need either a 4th tree or an explicit
+single-tree fame case before they can ship.
+
 ## 2026-09-11 (session) - The website tree page matches the app's, and a push now refuses one that does not
 
 **Hidde found "Exact location. The pin marks the trunk." still on the website**, a

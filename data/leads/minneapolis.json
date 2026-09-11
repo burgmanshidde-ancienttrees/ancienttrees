@@ -1,11 +1,11 @@
 {
   "leads": [
     {
-      "name": "Eastern Hemlock, Theodore Wirth Park",
+      "name": "Second Heritage-listed Eastern Hemlock, Eloise Butler Wildflower Garden",
       "species": "Eastern Hemlock (Tsuga canadensis)",
-      "location": {"address": "1301 Theodore Wirth Pkwy, Minneapolis", "latitude": null, "longitude": null},
-      "reason": "Only one source found (Mpls.St.Paul Magazine 'Life and Limb'): height 75 feet, circumference 87 inches, no age given. Eastern hemlock is at the extreme western edge of its range in Minnesota and is listed as an Endangered species in the state (fewer than 50 mature trees known statewide per Minnesota DNR), which would make this a strong candidate if a second source and an exact position can be found. Needs a follow-up pass.",
-      "source": "https://mspmag.com/travel-and-visitors-guide/life-and-limb/"
+      "location": {"address": "East path, between Guidebook stations 16 and 17, Eloise Butler Wildflower Garden, Theodore Wirth Park", "latitude": null, "longitude": null},
+      "reason": "Named on the Minneapolis Heritage Tree List for 'significant' size (smaller than the champion), 80ft tall, 69in circumference, per friendsofeloisebutler.org's own Eastern Hemlock page. Not pursued as a separate entry this pass: it stands in the same small garden as mnp_004 (the champion hemlock near the back gate), and two hemlocks from the same 1911-1914 planting in one small garden read as one destination rather than two collectible points. Worth reconsidering only if the garden's cluster ever needs a distinct second stop.",
+      "source": "https://www.friendsofeloisebutler.org/pages/plants/plants/easternhemlock.html"
     },
     {
       "name": "American Basswood, Windom Park (Champion Size entry, Russian Olive entry, American Plum entries) - Minneapolis Heritage Tree Program full list",
@@ -28,5 +28,5 @@
       "reason": "Confirmed dead, cut down 2010. See leads entry above for detail; kept here as well so a dead-tree sweep finds it under blocked."
     }
   ],
-  "notes": "Verification pass 2026-09-11. No Minnesota/Minneapolis official tree register was found or imported this pass (checked OPEN_DATA_SURVEY.md first, no entry for Minnesota); Minnesota's Native Big Tree Registry (dnr.state.mn.us/trees/bigtree) was named but not fetched or licence-checked, worth a scouting pass of its own before the next Minneapolis research."
+  "notes": "Verification pass 2026-09-11. No Minnesota/Minneapolis official tree register was found or imported this pass (checked OPEN_DATA_SURVEY.md first, no entry for Minnesota); Minnesota's Native Big Tree Registry (dnr.state.mn.us/trees/bigtree) was named but not fetched or licence-checked, worth a scouting pass of its own before the next Minneapolis research. Targeted continuation pass 2026-09-11: the Eastern Hemlock lead above resolved into mnp_004 (The Eloise Butler Hemlock), second source found at friendsofeloisebutler.org (the garden's own institutional site), which cleared the 4-tree floor. City is now ready for a write pass (data/research/minneapolis-verified.json has 4 trees)."
 }

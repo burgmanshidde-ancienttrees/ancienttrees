@@ -11,6 +11,36 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - Lausanne, Minneapolis, Salamanca, Spokane opened; Monterey deepened to 3
+
+Merged the results of a verify pass an earlier attempt this window left
+uncommitted: Lausanne 8 trees flagged (7 approximate pins, 1 confirmed;
+several with disputed ages between the city's own register and its tourist
+office, printed as disagreements rather than resolved), Salamanca 4 (1 with
+no age at all, stated plainly), Minneapolis 4 (mostly city-park champions
+with thin single-newspaper sourcing, flagged), Spokane 6 (3 old-growth
+Douglas firs resting on one 2019 newspaper feature, flagged; 3 more from the
+city's own Heritage Tree Registry cross-checked against a 2012 HistoryLink
+survey). Wrote the 5 stories the verify pass had left undone via a
+write-stories agent, then wrote each city's page-level content (intro,
+meta_description, the oldest-tree question page, FAQ) from the same verified
+facts and merged all four into `data/cities/`.
+
+Also added mty_002 (Old Veteran of Point Lobos) and mty_003 (Moon Tree of
+Friendly Plaza) to the already-published Monterey, previously trimmed to
+just the Lone Cypress by a prior continuation the same day pending "a 4th
+tree or an independent fame case." Treated this as ordinary city growth
+(Monterey already has a page) rather than a new below-floor decision;
+flagged in LOG.md as a judgement call in case Hidde reads the close call
+differently.
+
+Released the Boise and Baltimore claims: both still sit at 2 verified trees
+with nothing that clearly clears the "would someone travel for this one
+tree" bar (Boise's moved sequoia and Baltimore's Liberty Tree are good local
+stories, not obviously destination-tier), so both stay banked in their
+research files rather than shipping padded or under a stretched exception.
+Lagos-PT (1 tree, unconfirmed public access) stays banked too.
+
 ## 2026-09-11 (continuation 4) - 4 stranded verify passes shipped under the single-famous-tree exception: Indianapolis, Sao Paulo, Busan, Monterey
 
 Continuing the same window's earlier finding (6 cities banked below the 4-tree

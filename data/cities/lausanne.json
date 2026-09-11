@@ -1,0 +1,308 @@
+{
+  "city": "Lausanne",
+  "country": "Switzerland",
+  "status": "needs_curation",
+  "oldest_tree_id": "lsn_001",
+  "hero_tree_id": "lsn_001",
+  "intro": "Lausanne keeps a formal register of its finest trees, and eight of them cluster around the lakeshore parks and the university campus rather than out in the hills. A DNA-dated oak tied to a Napoleon legend grows on the open UNIL campus; a giant sequoia and a living-fossil ginkgo share one park above Ouchy; a weeping beech at l'Hermitage turned into a grove of its own rooted branches after its original trunk broke in a 2021 storm. Most stand a short walk or one metro stop from the main station, free to see, and still growing.",
+  "meta_description": "A DNA-dated oak tied to a Napoleon legend, a giant sequoia above Ouchy, and a weeping beech grown into its own grove: 8 trees near Lausanne's station.",
+  "question_meta": "Lausanne's oldest mapped tree is the Napoleon Oak at UNIL, DNA-dated in 2017 to a germination around 1778, roughly 248 years old.",
+  "question_answer": "Lausanne's oldest mapped tree is the Napoleon Oak on the University of Lausanne's Dorigny campus, a pedunculate oak whose wood was dated by tree-ring and genomic analysis in 2017 to a germination around 1778, making it roughly 248 years old.",
+  "question_context": "The dating is unusually solid for a city tree: researchers sequenced the oak's own wood in 2017 rather than relying on the local legend that Etienne-Francois-Louis de Loys planted it in 1800 to mark Napoleon Bonaparte's review of 40,000 troops nearby. The DNA analysis makes the tree roughly 22 years old at the time of that visit, so either it grew from seed on the spot a generation before Napoleon arrived, or it was transplanted as an already two-decade-old sapling, and both readings are printed on its page rather than one being chosen. It is not the only Lausanne tree near this age: the Cedar of Lebanon in Parc de Denantou is put at roughly 250 years by the same city register, and the Linden of Bon-Abri may be older still, at 260 by the register's own figure, though the tourist office's walking tour puts that same tree at only 160 and the two have never been reconciled. The oak's own dating method is the most rigorous of the three, which is why it holds the title here.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Lausanne?",
+      "a": "The Napoleon Oak on the UNIL Dorigny campus, dated by tree-ring and genomic analysis in 2017 to a germination around 1778, roughly 248 years old. Two other trees on this list, a cedar of Lebanon and a disputed linden, may be close to the same age or older, but neither is dated as precisely."
+    },
+    {
+      "q": "Are Lausanne's remarkable trees free to see?",
+      "a": "Yes, all eight stand in public parks or on the open university campus, and none charges entry. The Fondation de l'Hermitage art museum beside the weeping beech does charge, but the park itself is free."
+    },
+    {
+      "q": "Why does Lausanne have so many notable trees around its parks?",
+      "a": "The city keeps a formal heritage-tree register (patrimoine arbore) that has tracked its most remarkable specimens since at least 1912, when Henri Badoux catalogued the notable trees of the canton, several of which are still standing and still on the list today."
+    },
+    {
+      "q": "Can you walk between Lausanne's ancient trees?",
+      "a": "Most cluster around the lakefront: Parc de Mon Repos holds both the giant sequoia and the ginkgo, Parc de Denantou and l'Hermitage are each a short walk further along, and the Olympic Museum oak and the Bon-Abri linden sit within reach of the same stretch of shore, all a metro ride or walk from the main station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lsn_001",
+      "name": "The Napoleon Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 245-250 years, dated by dendrochronology to a germination around 1778",
+      "age_min": 240,
+      "age_max": 250,
+      "girth_cm": 675,
+      "location": {
+        "address": "UNIL Dorigny campus, University of Lausanne",
+        "latitude": 46.52194,
+        "longitude": 6.57917,
+        "neighbourhood": "Dorigny"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_de_Napol%C3%A9on",
+        "https://www.letemps.ch/sciences/lausanne-chene-napoleon-devoile-secrets-adn"
+      ],
+      "access": "Free. Stands on the open, publicly accessible campus of the University of Lausanne (UNIL) at Dorigny.",
+      "transport": "Lausanne metro (M1) to UNIL-Dorigny or UNIL-Sorge station, on the western edge of the city.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Legend says this oak was planted for Napoleon. Its own wood says it was already here. In 2017 researchers dated its germination to around 1778 using tree-ring and genomic analysis, which makes it roughly 22 years old on 12 May 1800, the day Bonaparte reviewed 40,000 troops at Saint-Sulpice a few kilometres along the lake.\n\nThe local account, which nobody has withdrawn, is that Etienne-Francois-Louis de Loys, who then owned the Dorigny estate, planted the tree that year to mark the occasion. By that tradition it arrived as a transplanted sapling already two decades old and about 15 centimetres thick, which is not impossible and is not what most people picture when they hear that a tree was planted for Napoleon. The two versions sit side by side and we are leaving them there.\n\nEither way it germinated before the French Revolution and it is still growing. French Wikipedia records 35 metres of height and 6.75 metres of circumference; some of the 2017 press coverage rounds those to 30 metres and about 7, and nobody has reconciled the figures.\n\nWhat you cannot miss is the hardware. Roughly 140 metres of support cable now run through the crown to hold the limbs against their own weight. The oak stands on the open campus of the University of Lausanne, which has made it something of an emblem, and the metro puts you within a few minutes' walk.",
+      "how_to_recognise": "You can recognise it by the support cabling, roughly 140 metres of it strung through the crown, over a trunk 6.75 metres round and 35 metres of height. It stands on the open UNIL campus at Dorigny.",
+      "why_go": "A 250-year-old oak on a university campus, wrapped in 140 metres of support cable to keep it standing, whose DNA was sequenced in 2017 to settle a local legend that it commemorates a visit from Napoleon himself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lsn_002",
+      "name": "The Giant Sequoia of Parc de Mon Repos",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 160 years",
+      "age_min": 150,
+      "age_max": 170,
+      "girth_cm": 720,
+      "location": {
+        "address": "Parc de Mon Repos, near the amphitheatre",
+        "latitude": 46.519154,
+        "longitude": 6.643017,
+        "neighbourhood": "Mon-Repos"
+      },
+      "verified_sources": [
+        "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/sequoia-du-parc-de-mon-repos.html",
+        "https://homme-nature.ch/events/arbrapero-a-la-decouverte-du-plus-beau-sequoia-geant-de-lausanne/"
+      ],
+      "access": "Free. Public historic park in central Lausanne.",
+      "transport": "Central Lausanne, a short walk from Lausanne-Gare (main train station).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This sequoia was already worth writing about in 1912, when Henri Badoux catalogued the notable trees of the canton and put it in the book. It has had another century of growing since. Lausanne now records it at 34 metres tall and 7.2 metres round, roughly 160 years old, which places its planting in the decades when European estates were competing to raise the newly imported giant sequoia and nobody had any idea what the things would do in Swiss soil.\n\nIt grows near the top of the amphitheatre in Parc de Mon Repos, with a ginkgo for a neighbour. The estate was where Pierre de Coubertin settled in 1922, some years after founding the modern Olympic movement, and the park is a short walk from the main station, which makes this an unusually easy giant tree to go and stand under.\n\nThe city classifies it as a remarkable tree and a local nature foundation calls it the finest giant sequoia in Lausanne, though all the measurements trace back to the municipal record rather than to two independent tapes.\n\nEvery giant sequoia in Europe is a beginner. The species reached the continent in the 1850s, so the oldest of them are still under two centuries, while the ones left standing in the Sierra Nevada run past two thousand years. This one has most of its life ahead of it.",
+      "how_to_recognise": "You can recognise it by the thick spongy red bark of a giant sequoia and a trunk 7.2 metres round going 34 metres straight up. It stands near the top of the amphitheatre in Parc de Mon Repos, beside a ginkgo.",
+      "why_go": "A 34-metre giant sequoia in the park where Pierre de Coubertin, founder of the modern Olympics, made his home in 1922, officially recognised by the city as one of its remarkable trees.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lsn_003",
+      "name": "The Weeping Beech of l'Hermitage",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "over 170 years",
+      "age_min": 170,
+      "age_max": 175,
+      "girth_cm": 440,
+      "location": {
+        "address": "Parc de l'Hermitage, planted approximately 1851",
+        "latitude": 46.528808,
+        "longitude": 6.63696,
+        "neighbourhood": "Hermitage"
+      },
+      "verified_sources": [
+        "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/hetre-de-l-hermitage.html"
+      ],
+      "access": "Free. Public historic park (Fondation de l'Hermitage art museum grounds are separately ticketed, but the park itself is open).",
+      "transport": "Central Lausanne, uphill from the lakefront, roughly 15-20 minutes' walk from the train station or reachable by bus.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The trunk this tree started with broke on the night of 20 June 2021, in a storm. The tree did not die, because it had spent the previous 170 years quietly planting itself. A weeping beech lets its branches fall to the ground, and where they touch and stay, they root. Long before the storm arrived, the original had raised a ring of daughter stems out of its own drooping limbs, genetically the same individual, and the City of Lausanne's record says plainly that these perpetuate its existence today.\n\nSo what stands at the top of Parc de l'Hermitage is less a specimen than a room. Old weeping beeches make a living cave: a curtain of branches down to the floor, a dim hollow inside, and generations of children who work out that you can walk into it. This one went in around 1851 and grew to 4.4 metres round, the landmark at the summit of the park.\n\nOne source carries all of that, the city's own tree-heritage page, and it is worth saying that we have found no second account and no recent photograph showing how the daughter growth is doing. If you climb up there, we would like to hear what you found.\n\nThe park itself is free. The art museum in the house beside it charges.",
+      "how_to_recognise": "You can recognise it by the shape, a weeping beech's curtain of branches down to the ground, now a ring of daughter stems grown from limbs that rooted where they touched. It stands at the summit of Parc de l'Hermitage.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "May, when the new leaves close the curtain and the inside becomes a green room"
+      },
+      "why_go": "Not a single trunk but a tree that turned into a grove: for 170 years its drooping branches rooted wherever they touched the ground, and when the original trunk finally broke in a 2021 storm, those rooted daughter stems, genetically the same individual, kept the tree alive on the same spot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lsn_004",
+      "name": "The Oak of the Olympic Museum",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 190,
+      "age_max": 210,
+      "girth_cm": 462,
+      "height_m": 29,
+      "location": {
+        "address": "Parc Olympique, north side of the Olympic Museum, near the Tom Cafe entrance, Quai d'Ouchy",
+        "latitude": 46.5089,
+        "longitude": 6.6341,
+        "neighbourhood": "Ouchy"
+      },
+      "verified_sources": [
+        "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/chene-du-musee-olympique.html",
+        "https://www.lausanne-tourisme.ch/en/the-lausanner/articles/walk-lausanne-most-beautiful-trees/"
+      ],
+      "access": "Free. Stands in the public grounds of the Olympic Museum park (Parc Olympique) on the Ouchy lakefront; the museum building itself is ticketed but its gardens are open.",
+      "transport": "Lausanne metro M2 to Ouchy-Olympique, then a short walk along the lakefront.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "The building moved instead of the tree. When the Olympic Museum was going up on the Ouchy lakefront, the plan called for felling this oak, and Juan Antonio Samaranch, then president of the International Olympic Committee, intervened personally and had the architects redraw the design around it.\n\nThe City of Lausanne's heritage-tree register and Lausanne Tourisme agree on the rest: a pedunculate oak of about two centuries, 29 metres tall, the trunk 4.62 metres round. That puts its germination somewhere in the 1820s, so it was already a mature tree when the first modern Games were held in 1896, and it had stood here for well over a century before anybody thought of putting the Olympic movement's museum on this shore.\n\nWhat it is not is theatrical. Both sources make the same observation, that from any distance the oak reads as part of the park's general greenery and vanishes into it, and that once you have picked it out it becomes the focal point of the place. A pedunculate oak will do that: heavy low limbs, a wide crown, nothing vertical to catch the eye until you are standing underneath.\n\nIt grows on the north side of the museum, near the entrance to the Tom Cafe. The gardens are free and open; the museum building charges. The M2 metro to Ouchy-Olympique leaves you a few minutes' walk away.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.62 metres round under a broad 29-metre crown that hides in the park's greenery until you pick it out. It stands on the north side of the Olympic Museum, by the Tom Cafe entrance.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lsn_005",
+      "name": "The Cedar of Lebanon of Parc Denantou",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 240,
+      "age_max": 260,
+      "girth_cm": 740,
+      "height_m": 18,
+      "location": {
+        "address": "Parc de Denantou, lakeside, Lausanne",
+        "latitude": 46.5064,
+        "longitude": 6.63978,
+        "neighbourhood": "Denantou"
+      },
+      "verified_sources": [
+        "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/cedre-du-denantou.html",
+        "https://www.lausanne-tourisme.ch/en/the-lausanner/articles/walk-lausanne-most-beautiful-trees/"
+      ],
+      "access": "Free. Public lakeside park.",
+      "transport": "Central Lausanne/Ouchy area, walkable from the lakefront promenade.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Seven and a half metres round, and only eighteen metres tall. Trees that thick are usually far higher than that, and this one is not: it has spent two and a half centuries going outward rather than up, which is what a cedar of Lebanon does once it stops racing. The leading shoot flattens off, the limbs run horizontal, and the crown assembles itself in tiers, one dark green table stacked above another.\n\nThe City of Lausanne's heritage-tree register and Lausanne Tourisme give the same figures: roughly 250 years, 18 metres of height, 7.40 metres of girth. A germination in the 1770s means the tree is older than the Canton of Vaud itself, which only came into being in 1803.\n\nLightning hit it in 2003 and took out one of the branches. It carried on. Both sources record it in good health since, with its trunk still expected to thicken, which is not something you can say about every 250-year-old tree on a city register.\n\nThe cedars this species descends from grow on mountains in Lebanon and Syria, where the old ones are scattered survivors of forests logged since antiquity. Parc de Denantou is free, open and flat, and a short walk from the lakefront promenade.",
+      "how_to_recognise": "You can recognise it by its proportions, a trunk 7.4 metres round under a crown only 18 metres high, the limbs built outward in flat horizontal tiers. It stands in the lakeside Parc de Denantou.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lsn_006",
+      "name": "The Ginkgo of Parc de Mon Repos",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 160 years",
+      "age_min": 150,
+      "age_max": 170,
+      "girth_cm": 370,
+      "height_m": 25,
+      "location": {
+        "address": "Parc de Mon Repos, behind the Campagne de Mon-Repos mansion",
+        "latitude": 46.51899,
+        "longitude": 6.64278,
+        "neighbourhood": "Mon-Repos"
+      },
+      "verified_sources": [
+        "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/ginkgo-de-mon-repos.html",
+        "https://www.lausanne-tourisme.ch/en/the-lausanner/articles/walk-lausanne-most-beautiful-trees/"
+      ],
+      "access": "Free. Public historic park in central Lausanne, same park as the already-published Giant Sequoia (lsn_002).",
+      "transport": "Central Lausanne, a short walk from Lausanne-Gare (main train station).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Every other species in the ginkgo's order is a fossil. Ginkgo biloba is the one that is still here, largely unchanged since before flowering trees existed, which is why botanists reach for the phrase living fossil every time one turns up in a park.\n\nThis one has stood in Parc de Mon Repos for about 160 years. It is 25 metres tall now, with a trunk 3.70 metres round, and it was already worth recording in 1912, when Henri Badoux catalogued the notable trees of the canton and listed it along with the giant sequoia growing a short walk away in the same park. The French name for the species is l'arbre aux quarante ecus, and that is what Lausanne calls this tree. The city's own record adds that it inspired the novelist Bernard Clavel.\n\nCome in early November. Ginkgo leaves are flat fans, split down the middle and lacking any central rib, and they turn gold across the whole crown within days of each other, then drop almost in one go. Both the city and Lausanne Tourisme name that fortnight as the point of coming to see this particular tree.\n\nIt grows behind the Campagne de Mon-Repos mansion, which once housed the International Olympic Committee. The park is free and a short walk from the main station.",
+      "how_to_recognise": "You can recognise it by the leaves, flat fans split down the middle that nothing else in the park has, and by the gold they all turn in early November. It stands behind the Mon-Repos mansion, near the park's giant sequoia.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "early November, when the whole crown goes gold at once and then drops"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lsn_007",
+      "name": "The Linden of Bon-Abri",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 160 to 260 years (sources disagree)",
+      "age_min": 160,
+      "age_max": 260,
+      "girth_cm": 552,
+      "height_m": 16,
+      "location": {
+        "address": "Chemin de Bon-Abri, near its junction with Chemin du Languedoc, Lausanne",
+        "latitude": 46.5185,
+        "longitude": 6.6132,
+        "neighbourhood": "Languedoc / Bon-Abri"
+      },
+      "verified_sources": [
+        "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/tilleul-de-bon-abri.html",
+        "https://www.lausanne-tourisme.ch/en/the-lausanner/articles/walk-lausanne-most-beautiful-trees/"
+      ],
+      "access": "Free. Stands beside a public path/belvedere on Chemin de Bon-Abri.",
+      "transport": "Languedoc hill area, above central Lausanne; reachable on foot or by local bus.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The city's tree register and the city's tourist office disagree about this linden by a hundred years. Lausanne's heritage list puts it at 260 years old. Lausanne Tourisme's own walking tour, describing the same trunk on the same corner, says 160.\n\nOn everything else they match, which is how we know it is one tree and not two: a large-leaved lime, 16 metres tall, the trunk 5.52 metres round on the city's tape and 550 on the tourist office's, at the point where Chemin du Languedoc meets Chemin de Bon-Abri. Nobody has closed the gap. Read it one way and this tree was already grown while Vaud was still Bernese territory; read it the other and it went in around the time the railways arrived. We are printing both numbers rather than picking the flattering one.\n\nWhat neither version disputes is the trunk itself, hollow, gathered, almost curled in on itself. The city's own description calls it a veteran that keeps a low profile, which is fair: there is no fence, no plaque, no path laid out to it.\n\nThere is a bench, though, and a view. The tree stands on a belvedere with an uninterrupted stretch of Lake Geneva in front of it, which the tourist office rates among the best panoramas in Lausanne. If you know anything that dates this lime, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, roughly 5.5 metres round and hollow, gathered in on itself under a crown only 16 metres high. It stands by the bench at the belvedere where Chemin du Languedoc meets Chemin de Bon-Abri.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the lime flowers and you smell the tree before you reach the bench"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lsn_008",
+      "name": "The Black Walnut of Campagne Rohner",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": 346,
+      "height_m": 27,
+      "location": {
+        "address": "Campagne Rohner, near Place de la Navigation, Ouchy/Rhodanie lakefront, Lausanne",
+        "latitude": 46.50685,
+        "longitude": 6.62522,
+        "neighbourhood": "Ouchy / Rhodanie"
+      },
+      "verified_sources": [
+        "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/noyer-de-la-campagne-rohner.html",
+        "https://www.lausanne-tourisme.ch/en/the-lausanner/articles/walk-lausanne-most-beautiful-trees/"
+      ],
+      "access": "Free. Stands in an urban green space a short walk from Place de la Navigation on the Ouchy/Rhodanie lakefront.",
+      "transport": "Lausanne metro M2 to Ouchy, or bus to Place de la Navigation; short walk along the lakefront.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Lausanne's own walking tour of its finest trees finishes at a tree from the wrong continent. Black walnut is an eastern North American species, and this one has stood above the Ouchy lakefront for about 150 years.\n\nIt is large for a species that rarely gets the chance here. The city's heritage-tree register measures the trunk at 3.46 metres round and the tree at 27 metres tall. Lausanne Tourisme, which made it the fifth and final stop of its tree walk, gives 3.50 metres and 25 metres. That is the ordinary gap between two people with a tape and a clinometer, and both agree on the age.\n\nTelling it apart from the European walnut most people know takes a second look. The city's own description points at the leaflets, more slender than those of Juglans regia, and at bark built on a different pattern. What the tourist office adds is that a walnut of this size in the middle of a city is rare in itself.\n\nOne caveat, and it belongs to us rather than to the tree. The city names the site Campagne Rohner; the tourist office calls the same patch of green Rhodanie Park. Species, age and girth match closely enough that this is almost certainly one tree described twice, but we could not confirm the two names cover exactly the same ground, so the pin marks the area around Place de la Navigation rather than the trunk itself.",
+      "how_to_recognise": "You can recognise it by the slender leaflets, finer than those of a European walnut, and by the trunk, 3.46 metres round under 27 metres of crown. It stands in the green at Campagne Rohner, a short walk from Place de la Navigation.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -7462,6 +7462,33 @@
     "note": "merged 4 stranded verify-and-write passes into data/cities under the single-famous-tree exception (Indianapolis 1, Sao Paulo 1, Busan 2, Monterey trimmed to 1 of 3); fixed a hard-rule-9 species collision in Busan and a stale Zwolle tree-count promise; regenerated tree-index.json, preflight/superlatives/build/qa all clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "lausanne+minneapolis+salamanca",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 16,
+    "note": "verify pass from an earlier attempt this window that stopped without logging its own cost or merging; tokens unknown, not counted rather than guessed. lausanne 8, minneapolis 4 (3 delivered + 1 completed this pass), salamanca 4 (3 delivered + 1 completed this pass)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "minneapolis+salamanca+spokane completion",
+    "kind": "write",
+    "tokens": 52000,
+    "trees": 5,
+    "note": "5-tree completion pass (mnp_004, slm_004, spk_004-006) finishing stories an earlier attempt's verify pass left unwritten; 2 recognition lines, 2 best_time set",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "lausanne+minneapolis+salamanca+spokane+monterey",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 24,
+    "note": "merged 4 fully-verified-and-written but unmerged cities into data/cities (lausanne 8, minneapolis 4, salamanca 4, spokane 6) and deepened monterey (+2); wrote page-level content (intro/meta/question/faq) for each; released 6 stale claims (boise, baltimore held below the 4-tree floor); city_queue.py rerun to sync ranks/status; preflight/superlatives/build all clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
