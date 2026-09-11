@@ -234,17 +234,27 @@
       "access": "Free, Kyoto Gyoen open daily",
       "transport": "Marutamachi (Karasuma Line) or Karasuma-Marutamachi bus stop, 5 min walk",
       "photo": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/565640909/original.jpg",
-        "license": "CC BY-SA",
-        "attribution": "ingimar, via iNaturalist",
+        "url": "https://ancienttrees.app/photos/kyo_006-the-camphor-of-munakata-shrine.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
         "status": "approved",
-        "width": 947,
-        "height": 2048
+        "width": 1600,
+        "height": 1200,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "aec13148-46f8-49c4-8735-7d8a2c7c3c28",
+        "note": "Photographed by a reader and sent through the app (2026-09-11); a viewing pass approved it on 2026-09-11: kyo_006's current photo (iNaturalist) is a tight crop of moss-covered branches with no trunk or ground visible. This shot shows the full spreading canopy and trunk together in daylight, a clearer whole-tree record for a camphor known for its spread.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "flagged",
       "notes": "Age given as a wide range (600-800 years) because sources disagree substantially and no single registry figure was found. Location upgraded to confirmed: two independent iNaturalist observations of this species (one CC BY-SA with photo, one CC0), 20m apart from each other and both consistent with the shrine's southwest-corner position in Kyoto Gyoen, about 140m from the previous estimate. Photo viewed directly: a large mature broadleaf tree ringed by protective bollards on a gravel path, consistent with a protected shrine tree in a formal park.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the oldest and largest tree in Kyoto Gyoen. It stands at Munakata Shrine, in the park's southwest corner."
+      "how_to_recognise": "You can recognise it as the oldest and largest tree in Kyoto Gyoen. It stands at Munakata Shrine, in the park's southwest corner.",
+      "photo_replaced": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/565640909/original.jpg",
+        "license": "CC BY-SA",
+        "attribution": "ingimar, via iNaturalist",
+        "status": "approved"
+      }
     },
     {
       "id": "kyo_007",
@@ -382,15 +392,23 @@
       "access": "Free. Kyoto Gyoen National Garden (the public park surrounding the Imperial Palace) is open to the public year-round, dawn to dusk.",
       "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 10 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/kyo_011-the-hackberry-of-demizu-guchi.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "b77fcaee-e20e-4722-9b42-5d60aca6a3cc",
+        "note": "Photographed by a reader and sent through the app (2026-09-11); a viewing pass approved it on 2026-09-11: kyo_011 had no photo. Whole tree visible, ascending branch structure readable, daylight, in leaf, person for scale.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "flagged",
       "notes": "No age figure exists in any source: Kamigyo Ward's pride-tree register records dimensions only. Second source (Ministry of Environment) describes Kyoto Gyoen's giant-tree population generally and does not name this individual tree, so this is effectively single-sourced and flagged for that reason, not for doubt about the tree's existence or species. Coordinates are a gate-area estimate, not a GPS fix on the trunk.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the crown, 32.9 metres across on a tree only 22.5 metres tall, and by a trunk 4.98 metres round. It stands inside Demizu-guchi, the pedestrian gate in the park's west wall."
+      "how_to_recognise": "You can recognise it by the crown, 32.9 metres across on a tree only 22.5 metres tall, and by a trunk 4.98 metres round. It stands inside Demizu-guchi, the pedestrian gate in the park's west wall.",
+      "girth_cm": 498,
+      "height_m": 22.5
     },
     {
       "id": "kyo_012",
@@ -512,12 +530,20 @@
       "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
       "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/kyo_016-sudajii-of-omiya-gate-kyoto-gyoen.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "84ebae36-c683-4d39-86ac-a7db33d70910",
+        "note": "Photographed by a reader and sent through the app (2026-09-11); a viewing pass approved it on 2026-09-11: kyo_016 had no photo. Whole tree in frame, twisted pale trunk and crown both readable, daylight, in leaf, person for scale. Meets the Cadiz standard.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
-      "how_to_recognise": "You can recognise it by the acorns on the gravel beneath it, sweet where oak acorns are bitter, and by a trunk 2.78 metres round under 14.6 metres of evergreen crown. It stands at the Omiya gate on the south side."
+      "how_to_recognise": "You can recognise it by the acorns on the gravel beneath it, sweet where oak acorns are bitter, and by a trunk 2.78 metres round under 14.6 metres of evergreen crown. It stands at the Omiya gate on the south side.",
+      "girth_cm": 278,
+      "height_m": 14.6
     },
     {
       "id": "kyo_018",
@@ -545,12 +571,20 @@
       "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
       "transport": "Imadegawa Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/kyo_018-ginkgo-of-inui-gate-kyoto-gyoen.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "5d5debc9-0545-40a6-88a1-79f40b62cbd1",
+        "note": "Photographed by a reader and sent through the app (2026-09-11); a viewing pass approved it on 2026-09-11: kyo_018 had no photo. Whole tree in frame, trunk and crown both readable, daylight, in leaf.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
-      "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round under 19.5 metres of ginkgo. It stands at Inui-gomon, the gate in the northwest corner of the park, a kilometre and a half up the gravel from the Demizu gate."
+      "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round under 19.5 metres of ginkgo. It stands at Inui-gomon, the gate in the northwest corner of the park, a kilometre and a half up the gravel from the Demizu gate.",
+      "girth_cm": 315,
+      "height_m": 19.5
     },
     {
       "id": "kyo_015",
