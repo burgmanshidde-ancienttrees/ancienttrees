@@ -57,7 +57,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the yew with no path or signpost leading to it, tucked under rocks off the marked trails; finding it is the point of the visit. It stands in the Foret du Maljon above Cremines."
+      "how_to_recognise": "You can recognise it as the yew with no path or signpost leading to it, tucked under rocks off the marked trails; finding it is the point of the visit. It stands in the Foret du Maljon above Cremines.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -57,7 +57,15 @@
         "width": 2432,
         "height": 3648
       },
-      "how_to_recognise": "You can recognise it by its lopsided crown on a sloping hillside, fenced with an information board beside it. It stands above Parodos gatvė in Vytautas Park, at the edge of the Ąžuolynas oak wood."
+      "how_to_recognise": "You can recognise it by its lopsided crown on a sloping hillside, fenced with an information board beside it. It stands above Parodos gatvė in Vytautas Park, at the edge of the Ąžuolynas oak wood.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "kun_002",
@@ -121,7 +129,15 @@
         "width": 2432,
         "height": 3648
       },
-      "how_to_recognise": "You can recognise it as the largest, oldest oak in the wood, its trunk treated and its dead branches cut back. It stands beside the cycle path through the Pažaislis wood, between the reservoir shore and the monastery."
+      "how_to_recognise": "You can recognise it as the largest, oldest oak in the wood, its trunk treated and its dead branches cut back. It stands beside the cycle path through the Pažaislis wood, between the reservoir shore and the monastery.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "kun_004",
@@ -150,7 +166,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its four trunks and five crown tops, growing together from one spot. It stands at Romuvos gatvė 57, in the Vilijampolė district."
+      "how_to_recognise": "You can recognise it by its four trunks and five crown tops, growing together from one spot. It stands at Romuvos gatvė 57, in the Vilijampolė district.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "kun_005",
@@ -181,7 +205,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the oak and pine trunks fused together at the base, ringed by a low wooden fence. It stands at the end of a 200 metre path and footbridge in Dubrava forest."
+      "how_to_recognise": "You can recognise it by the oak and pine trunks fused together at the base, ringed by a low wooden fence. It stands at the end of a 200 metre path and footbridge in Dubrava forest.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "kun_006",
@@ -212,7 +244,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the wayside cross standing at its foot, 5.2 metres round and 28 metres tall. It stands beside the gravel farm track Jazminu gatve, two kilometres west of Raudondvaris."
+      "how_to_recognise": "You can recognise it by the wayside cross standing at its foot, 5.2 metres round and 28 metres tall. It stands beside the gravel farm track Jazminu gatve, two kilometres west of Raudondvaris.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -57,7 +57,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as what looks like a small grove of yews but is one tree, its branches arching down, rooting and rising again; a path is cut through the middle of it. It stands on former Craigends Estate ground beside the River Gryffe."
+      "how_to_recognise": "You can recognise it as what looks like a small grove of yews but is one tree, its branches arching down, rooting and rising again; a path is cut through the middle of it. It stands on former Craigends Estate ground beside the River Gryffe.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -1064,7 +1064,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it as the lime people sit under southwest of the Koningstunnel, where the old deer fence used to be. A horse chestnut stands fifty metres off; the tunnel was bent to spare both."
+      "how_to_recognise": "You can recognise it as the lime people sit under southwest of the Koningstunnel, where the old deer fence used to be. A horse chestnut stands fifty metres off; the tunnel was bent to spare both.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "hag_033",

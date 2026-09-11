@@ -59,7 +59,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the thousands of nails studding its trunk and low branches, driven in as a folk cure over generations. It stands beside a small chapel to Saint Antoine de Padoue on the Sentier des Chats."
+      "how_to_recognise": "You can recognise it by the thousands of nails studding its trunk and low branches, driven in as a folk cure over generations. It stands beside a small chapel to Saint Antoine de Padoue on the Sentier des Chats.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

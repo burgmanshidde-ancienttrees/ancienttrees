@@ -399,7 +399,15 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "verify_notes": "Register (LRMB nr 1695439) designates one Pedunculate Oak just inside the churchyard entrance, planted band 1920-1930, reason 'nieuw' (recently added to the register). Only the register and a general cemetery-access source were found, so flagged per the one-source rule.",
-      "how_to_recognise": "You can recognise it as the first tree inside the gate, standing beside the old caretaker's house. It stands in the Antonius kerkhof, Doelenstraat 2, Eindhoven."
+      "how_to_recognise": "You can recognise it as the first tree inside the gate, standing beside the old caretaker's house. It stands in the Antonius kerkhof, Doelenstraat 2, Eindhoven.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "ein_012",
@@ -466,6 +474,15 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
       }
     },
     {

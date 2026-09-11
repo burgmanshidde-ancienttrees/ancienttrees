@@ -288,7 +288,16 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "verify_notes": "Register (LRMB nr 1697210) is the only source naming this specific tree; existence/species/age are single-sourced, hence flagged. Register's own name is 'Japanse vleugelnoot' but the mapped species field is Caucasian Wingnut, Pterocarya fraxinifolia. Planted band 1950-1960. Part of a documented rare-tree teaching collection (former gemeentekwekerij on the Tatraweg); wikimiddenbrabant.nl independently corroborates the shared school history (1967 relocation, 1974 merger) though not this individual tree.",
-      "how_to_recognise": "You can recognise it as the Caucasian wingnut once used to test trainee horticulturists along the old 'sweat lane' route. It stands at Morvanstraat 14, in the street planting strip."
+      "how_to_recognise": "You can recognise it as the Caucasian wingnut once used to test trainee horticulturists along the old 'sweat lane' route. It stands at Morvanstraat 14, in the street planting strip.",
+      "best_time": {
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "label": "July to September: long green catkins of winged nutlets hang from every branch",
+        "kind": "fruit"
+      }
     },
     {
       "id": "til_009",

@@ -213,7 +213,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its trunk, splitting into several strong branches about five metres up, with ivy climbed most of the way up it. It stands on the pavement of Steinbruchstraße in Riedenburg."
+      "how_to_recognise": "You can recognise it by its trunk, splitting into several strong branches about five metres up, with ivy climbed most of the way up it. It stands on the pavement of Steinbruchstraße in Riedenburg.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "szb_007",

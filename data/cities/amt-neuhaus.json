@@ -54,7 +54,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its hollow, lightning-scarred base and a lopsided crown, after storm Xavier tore off two of its three main limbs in 2017. It stands in a forest clearing beside the Gruener Jaeger forestry lodge."
+      "how_to_recognise": "You can recognise it by its hollow, lightning-scarred base and a lopsided crown, after storm Xavier tore off two of its three main limbs in 2017. It stands in a forest clearing beside the Gruener Jaeger forestry lodge.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

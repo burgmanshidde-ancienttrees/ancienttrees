@@ -63,7 +63,16 @@
         "width": 2736,
         "height": 3648
       },
-      "how_to_recognise": "You can recognise it by growing against the gable wall of a farm outbuilding, propped on scaffolding behind an electrified fence, smaller in person than its reputation suggests. It stands on a farmstead in Henrykow Lubanski."
+      "how_to_recognise": "You can recognise it by growing against the gable wall of a farm outbuilding, propped on scaffolding behind an electrified fence, smaller in person than its reputation suggests. It stands on a farmstead in Henrykow Lubanski.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }

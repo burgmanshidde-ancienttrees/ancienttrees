@@ -53,7 +53,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the dominant oak in the garden, an old lightning scar visible on its trunk. It stands in the middle of Zechenterova zahrada in central Kremnica."
+      "how_to_recognise": "You can recognise it as the dominant oak in the garden, an old lightning scar visible on its trunk. It stands in the middle of Zechenterova zahrada in central Kremnica.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

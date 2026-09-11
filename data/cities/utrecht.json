@@ -787,7 +787,15 @@
       "how_to_recognise": "You can recognise it as the large maple registered only by its position, standing just south of the memorial beech. It stands on Zonnenburg.",
       "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus). Alive and inspected 2024-10-25: the Bomenstichting's own inspector rated its condition 'Redelijk' (LRMB inspection layer, entry nr 1688710).",
       "girth_cm": 335,
-      "height_m": 27
+      "height_m": 27,
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "utr_026",

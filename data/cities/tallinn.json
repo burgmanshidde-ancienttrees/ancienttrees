@@ -208,7 +208,15 @@
       },
       "how_to_recognise": "You can recognise it by its place in the road: it is the oak that Reidi tee bends around, standing on the green strip between the carriageway and the Russalka memorial.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

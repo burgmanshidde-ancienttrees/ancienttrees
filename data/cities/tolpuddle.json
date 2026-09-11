@@ -59,7 +59,15 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its hollow, 6-metre trunk, pollarded in 2023 to take weight off the limbs. It stands in the open on Tolpuddle's village green."
+      "how_to_recognise": "You can recognise it by its hollow, 6-metre trunk, pollarded in 2023 to take weight off the limbs. It stands in the open on Tolpuddle's village green.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      }
     }
   ]
 }
