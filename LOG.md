@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - New city Hallstatt (4 trees, Austria's 7th), cleared two stale write claims
+
+An earlier attempt in this window stopped after 24 minutes with 96 unspent, having already released cleanly (no half-finished work behind it). Started from three standing claims left by attempts before that: `hallstatt` (verify, already finished, 4 trees sitting uncommitted), `busan` and `saopaulo` (write, but both cities are below the 4-tree floor with their register/Wikidata supply already exhausted, so nothing productive to write toward publication). Released busan and saopaulo's stale write claims rather than force research that CLAUDE.md itself rules out (from-zero web research on an unnamed city).
+
+**Shipped Hallstatt as a new one-city page, Austria's seventh.** The already-completed verify pass found 4 yews via Upper Austria's official Naturdenkmal register (Genisys), all flagged `curation_status: flagged` because every source traces back to the same official designation (the live register plus its own Wikipedia mirror), no independent second source found for any of the four. Per Step 2's honesty rule that is the correct outcome, not a blocker: one official register counts as a source, and the flag carries the honesty into the page. Dispatched a batched write-stories pass across all 7 pending verified trees (4 Hallstatt + 2 Busan + 1 Sao Paulo, meeting the 6-candidate minimum for a pass) so the sunk verification cost on Busan and Sao Paulo isn't wasted either: both now have finished stories sitting in `data/research/*-verified.json`, ready to ship the moment more candidates close their gap (2 more for Busan, 3 more for Sao Paulo), rather than needing a second write pass later.
+
+The four: a yew at Hallstatt's own boat landing the register calls "defining for the landscape" (girth-only, no age), Obertraun's Dorfeibe (~200+ years, the only one of the four with a stated age basis), a lone meadow yew above Untersee whose own sources disagree on which hamlet it belongs to (Untersee vs Obersee, both recorded honestly), and a churchyard-entrance yew in Bad Goisern. Fixed Austria's country page meta_description and intro, which went stale the moment this shipped (56→60 trees, 6→7 cities).
+
+Build (5366 pages), preflight (0 problems, after fixing question_context from 127 to the required 150-200 words), qa.py (8368 pages, clean) and superlatives.py (358 claims, no collisions) all clean. Cost logged to `data/agent-costs.json`. Released all three claims.
+
 ## 2026-09-11 - New city Tulsa (1 tree), 159 trees got a real best_time for free, 13 country pages' stale counts fixed, and a batched verify pass cleared 5 thin cities
 
 7-day visits (`visitors.py`): 1264 visits, 1593 page views, trending down day over day (202 on 09-03 to 83 on 09-10).
