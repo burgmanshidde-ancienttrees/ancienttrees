@@ -1,0 +1,98 @@
+[
+  {
+    "id": "hst_001",
+    "name": "The Hallstatt Boat Landing Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 260,
+    "location": {
+      "address": "By the lakeshore boat landing (Anlegeplatz), about 25m northeast of the Hallstatt parish church (Pfarrkirche Hallstatt), Hallstatt",
+      "latitude": 47.562999,
+      "longitude": 13.649725,
+      "neighbourhood": "Hallstatt village centre, lakeshore"
+    },
+    "verified_sources": [
+      "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd437",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Gmunden"
+    ],
+    "access": "Free, on the public lakeshore promenade next to the boat landing in the village centre",
+    "transport": "Hallstatt village has no train station of its own; the ferry from Hallstatt Bahnhof (Salzkammergutbahn, opposite shore) lands directly at this spot",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Official Land Oberösterreich Naturschutzdatenbank (Genisys), entry nd437 / Wikidata Q119881440, protected since 1991-03-04 by Bescheid der o.ö. Landesregierung (Zl. 200181/2). Register text: 'Am Anlegeplatz in Hallstatt, in der Nähe der Pfarrkirche, steht eine seit 1991 geschützte Eibe. Mit einem Stammumfang von mehr als 2,6 m und einer Höhe von ca. 15 m ist sie prägend für das Landschaftsbild von Hallstatt' (girth >2.6m, height ~15m, called defining for the townscape). The DB's own 'Lage' field: 'im unmittelbaren Uferbereich des Hallstättersees neben dem Anlegeplatz, etwa 25 m nordöstlich der Pfarrkirche Hallstatt' (directly on the lakeshore next to the boat landing, ~25m NE of the parish church) -- tree-level precision. SINGLE SOURCE CLASS: both citations trace to the same official Upper Austria natural-monument designation (the live Genisys database record and the German Wikipedia list article that reproduces it); no independent second source was found this pass (checked: Hallstatt's own Wikipedia article, no mention; meinbezirk.at local news turned up an unrelated linden near Gmunden; monumentaltrees.com returns HTTP 403 to automated fetches and could not be checked). No age is recorded anywhere for this specimen; leave age_estimate empty and let the page ask a reader with a tape measure. Not flagged as private or delisted anywhere checked, and the DB record is live today (fetched 2026-09-11), which is the best available 'not known to be dead' evidence given no register carries a vitality field. Why worth the visit: it is the first tree anyone sees stepping off the lake ferry into one of Austria's most-photographed villages, right at the pier, beside the church that anchors every view of Hallstatt across the water."
+  },
+  {
+    "id": "hst_002",
+    "name": "The Obertraun Dorfeibe",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "roughly 200 years",
+    "age_min": 200,
+    "age_max": 260,
+    "girth_cm": 136,
+    "location": {
+      "address": "On the main street (Hauptstraße) in Obertraun, immediately before the turn-off to the municipal office (Gemeindeamt)",
+      "latitude": 47.556061,
+      "longitude": 13.689708,
+      "neighbourhood": "Obertraun village centre"
+    },
+    "verified_sources": [
+      "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd145",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Gmunden"
+    ],
+    "access": "Free, standing on the public main street of Obertraun",
+    "transport": "Obertraun-Dachsteinhöhlen railway station (Salzkammergutbahn), short walk into the village centre",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Official Land Oberösterreich Naturschutzdatenbank (Genisys), entry nd145 / Wikidata Q119881049, protected since 1980-12-18. Register text: 'Die Eibe ist ca. 200 Jahre alt und ist fuer Obertraun ein Dorfdenkmal. Sie hatte bei der Unterschutzstellung einen Umfang von 136 cm und eine Hoehe von ca. 10 m' (about 200 years old, explicitly called a village landmark/'Dorfdenkmal'; girth 136cm and height ~10m AT THE TIME OF DESIGNATION in 1980). Since 46 years have passed since that measurement, the true current age is likely somewhat past 200; recorded age_max allows for that rather than repeating the 1980 figure as current. DB's own 'Lage' field: 'im Gemeindegebiet von Obertraun an der Hauptstrasse, unmittelbar vor der Abzweigung zum Gemeindeamt' (on the main street, right before the turn to the town hall) -- a clear, findable roadside spot. SINGLE SOURCE CLASS: as with the Hallstatt yew, both citations are the same official designation (live Genisys record plus its Wikipedia reproduction); no independent second source found (Obertraun's own Wikipedia article does not mention it). Not flagged private or delisted; DB record live as of 2026-09-11. Why worth the visit: the register itself calls it the village's own landmark tree, standing where everybody in Obertraun passes on the way to the town hall."
+  },
+  {
+    "id": "hst_003",
+    "name": "The Untersee Meadow Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 210,
+    "location": {
+      "address": "Standing free on a hillside near the house Untersee Nr. 40, Untersee, Bad Goisern am Hallstättersee",
+      "latitude": 47.616025,
+      "longitude": 13.653688,
+      "neighbourhood": "Untersee (a lakeshore hamlet of Bad Goisern, between Hallstatt and Bad Goisern)"
+    },
+    "verified_sources": [
+      "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd015",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Gmunden"
+    ],
+    "access": "Appears open (register does not flag it as private, unlike other entries on the same list that explicitly say so); stands in the open on a hillside meadow near a named house rather than behind a gate. Flagged here because the exact boundary of the meadow was not independently confirmed this pass.",
+    "transport": "Obersee halt on the Salzkammergutbahn (between Hallstatt and Bad Goisern), then on foot along the lakeshore",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Official Land Oberösterreich Naturschutzdatenbank (Genisys), entry nd015 / Wikidata Q119881835 ('Eibe in Untersee'), protected since 1960-07-22. Register text: 'Auf einer freien Wiese in Obersee (Bad Goisern) stehend wurde dieser Baum 1960 zum Naturdenkmal erklaert. Die Eibe hatte damals einen Umfang von 2,1 m' (standing on an open meadow, declared a natural monument in 1960, girth 2.1m AT THAT TIME). The DB's own 'Lage' field gives a sharper pin: 'In Naehe des Hauses Untersee Nr. 40, frei am Hang' (near house Untersee Nr. 40, standing free on the slope) -- note the Wikipedia list's Katastralgemeinde field says 'Obersee' while the DB's own location text says 'Untersee', and Wikidata's own label is 'Eibe in Untersee'; Untersee and Obersee are adjoining lakeshore hamlets of Bad Goisern and this is treated as the Untersee locality per the more specific DB text and the Wikidata label. ACCESS CAVEAT, this is why it is flagged rather than shipped clean: the register explicitly calls out at least one other yew on the same list (Ebensee) as 'auf einem privaten Grundstueck... nicht oeffentlich zugaenglich' (on private land, not publicly accessible) when that is the case, and says nothing of the sort here, which is meaningful but not proof; no OSM check or street-level source was found this pass to settle whether the meadow itself is open. No age is recorded; girth only. SINGLE SOURCE CLASS as with the other two: live Genisys record plus its Wikipedia reproduction, same underlying designation, no independent second source found. DB record live as of 2026-09-11, not flagged delisted."
+  },
+  {
+    "id": "hst_004",
+    "name": "The Bad Goisern Parish Church Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "roughly 200 years",
+    "age_min": 190,
+    "age_max": 240,
+    "girth_cm": 225,
+    "location": {
+      "address": "On the street at the entrance to the parish church (Pfarrkirche Bad Goisern), Bad Goisern am Hallstättersee",
+      "latitude": 47.641731,
+      "longitude": 13.616240,
+      "neighbourhood": "Bad Goisern village centre"
+    },
+    "verified_sources": [
+      "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd650",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Gmunden"
+    ],
+    "access": "Free, standing on the public street at the church entrance in the village centre",
+    "transport": "Bad Goisern railway station (Salzkammergutbahn), short walk into the village centre",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Official Land Oberösterreich Naturschutzdatenbank (Genisys), entry nd650 / Wikidata (Naturdenkmal Oberoesterreich list, Bad Goisern), protected since 2006-08-04. Register text: 'Das Alter der Eibe neben der Bad Goiserer Pfarrkirche wird auf ca. 200 Jahre geschaetzt. Sie ist ungefaehr 15 m hoch und hatte 2006 einen Stammumfang von 2,25 m' (age estimated at roughly 200 years, height about 15m, girth 2.25m as of 2006). This is an estimate the register itself gives, repeated as vaguely as given rather than sharpened. DB's own 'Lage' field: 'an der Strasse in Bad Goisern am Zugang zur Pfarrkirche' (on the street at the access to the parish church), a clear public roadside spot. SINGLE SOURCE CLASS: live Genisys record plus its Wikipedia reproduction, same designation; no independent second source found this pass (Bad Goisern's own Wikipedia article and the separate Pfarrkirche Bad Goisern Wikipedia article do not mention the tree). Not flagged private or delisted; DB record live as of 2026-09-11. Note: this is a different tree from hst_003 despite both belonging to Bad Goisern am Hallstättersee municipality; they stand roughly 3km apart in different villages (Untersee vs. Goisern proper) and both are kept as separate entries."
+  }
+]
