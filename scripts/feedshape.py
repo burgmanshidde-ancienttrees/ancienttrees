@@ -41,6 +41,14 @@ FEEDS = {
     "/api/version.json": None,
 }
 
+# (feed, field) pairs that every app version in git decodes as optional, so a
+# null in them breaks nobody. See compare() for the evidence rule.
+KNOWN_OPTIONAL = {
+    ("/api/trees.json", "trees[].photo.attribution"),
+    ("/api/trees.json", "trees[].photo.attribution_short"),
+    ("/api/trees.json", "trees[].photo.credit_line"),
+}
+
 
 def kind(v):
     if v is None:
@@ -160,6 +168,15 @@ def compare(path, live, new):
         # gets a value, which is why it is worth fixing rather than forcing:
         # why_go alone has 475 trees still to fill in.
         if added and was["types"] <= {"null"} and "null" not in added:
+            added = set()
+        # FIELDS EVERY SHIPPED APP ALREADY DECODES AS OPTIONAL may go null.
+        # Checked, not assumed: on 2026-09-11 every one of the 14 versions of
+        # Kit/Models.swift in git declares these as String?, so no installed
+        # copy can fail on a null. They went null because a reader's photograph
+        # carries no name on purpose (2026-09-04), and this check held back the
+        # fix that finally put those photographs on the site. A field joins
+        # this list only with the same history check behind it.
+        if added == {"null"} and (path, field) in KNOWN_OPTIONAL:
             added = set()
         if added:
             problems.append(f"{path}  {field} is now sometimes "
