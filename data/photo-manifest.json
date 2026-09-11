@@ -3722,6 +3722,12 @@
     500
    ]
   },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/627190957/medium.jpg": {
+   "base": "sev_018-the-judas-tree-of-the-real-alc-zar",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/3/3f/Kumano_Hayatama_Jinja_no_Nagi._August_2019_A.jpg": {
    "base": "shg_001-the-sacred-nagi-of-kumano-hayatama-taisha",
    "widths": [
@@ -4350,13 +4356,6 @@
    "base": "yor_003-the-pear-barked-beech",
    "widths": [
     500
-   ]
-  },
-  "https://ancienttrees.app/photos/lis_005-tipu-of-jardim-de-sao-bento.jpg": {
-   "base": "lis_005-the-tipu-of-jardim-de-sao-bento",
-   "widths": [
-    500,
-    1000
    ]
   }
  }
