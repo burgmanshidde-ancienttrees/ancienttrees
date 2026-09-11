@@ -59,6 +59,11 @@ export const treeSchema = z.object({
   age_estimate: z.string().optional(),
   age_min: z.number().nullable().optional(),
   age_max: z.number().nullable().optional(),
+  // Where the age came from, set only when it was DERIVED rather than read
+  // somewhere: "girth" means scripts/ages.py divided a trunk measurement by a
+  // published growth rate. It exists so a derived band cannot be quoted as a
+  // flat number in a page title; see ageToken() in ./tree-copy.ts.
+  age_basis: z.string().nullable().optional(),
   // Trunk girth at breast height, the one measurement registers agree on and
   // the only "how big" number that is measured rather than estimated. Declared
   // here because zod strips what it does not know, which is why the thickest

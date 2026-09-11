@@ -27,9 +27,9 @@
       "id": "ppj_001",
       "name": "Buk lesní v Proseči pod Ještědem",
       "species": "European Beech (Fagus sylvatica)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 200 to 350 years, judged from a trunk 5 m round",
+      "age_min": 200,
+      "age_max": 350,
       "girth_cm": 500,
       "location": {
         "address": "Hlubocký ridge above the hamlet of Padouchov, beside the disused limestone quarry over which the Ještěd waterfall (Ještědský vodopád) falls, Proseč pod Ještědem",
@@ -66,7 +66,9 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 500 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

@@ -333,9 +333,9 @@
       "id": "kra_010",
       "name": "The Basztowa Turkish Hazel",
       "species": "Turkish Hazel (Corylus colurna)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 50 to 125 years, judged from a trunk 1.65 m round",
+      "age_min": 50,
+      "age_max": 125,
       "girth_cm": 165,
       "location": {
         "address": "Planty Krakowskie, near ul. Basztowa, Krakow",
@@ -362,7 +362,9 @@
       "curation_status": "flagged",
       "notes": "Two trunks from one base, girths 165cm and 120cm, and the 2008 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.943, gid 72125). girth_cm records the larger stem, not a single trunk. NO age given: the only published hazel growth factor is calibrated to common hazel (Corylus avellana), a shrubby species with a different habit, so applying it to Corylus colurna would be a mismatched proxy. The page asks readers for a planting record.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the two stems rising from one base, 165 and 120 centimetres round, and by its neat conical crown, unlike the oaks and limes nearby. It stands in Planty near ul. Basztowa."
+      "how_to_recognise": "You can recognise it by the two stems rising from one base, 165 and 120 centimetres round, and by its neat conical crown, unlike the oaks and limes nearby. It stands in Planty near ul. Basztowa.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 165 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kra_007",
@@ -512,9 +514,9 @@
       "id": "kra_014",
       "name": "The Sikorskiego Square Oak",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 100 to 200 years, judged from a trunk 2.63 m round",
+      "age_min": 100,
+      "age_max": 200,
       "girth_cm": 263,
       "location": {
         "address": "Plac Sikorskiego, Krakow",
@@ -546,7 +548,9 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the trunk, 263 centimetres round, the smallest of the pedunculate oaks Krakow protects near its centre. It stands on Plac Sikorskiego."
+      "how_to_recognise": "You can recognise it by the trunk, 263 centimetres round, the smallest of the pedunculate oaks Krakow protects near its centre. It stands on Plac Sikorskiego.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 263 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kra_015",
@@ -946,9 +950,9 @@
       "id": "kra_027",
       "name": "The Karmelicka Elm",
       "species": "European White Elm (Ulmus laevis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 100 to 200 years, judged from a trunk 2.9 m round",
+      "age_min": 100,
+      "age_max": 200,
       "girth_cm": 290,
       "location": {
         "address": "ul. Karmelicka 51, Piasek, Krakow",
@@ -973,15 +977,17 @@
         "width": 2995,
         "height": 4488
       },
-      "how_to_recognise": "You can recognise it by the trunk, 290 centimetres round, a European white elm, a species most of the continent has lost. It stands at ul. Karmelicka 51 in Piasek, a few streets west of Planty."
+      "how_to_recognise": "You can recognise it by the trunk, 290 centimetres round, a European white elm, a species most of the continent has lost. It stands at ul. Karmelicka 51 in Piasek, a few streets west of Planty.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 290 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kra_028",
       "name": "The Morawskiego Elm",
       "species": "European White Elm (Ulmus laevis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 300 years, judged from a trunk 3.99 m round",
+      "age_min": 150,
+      "age_max": 300,
       "girth_cm": 399,
       "location": {
         "address": "ul. Morawskiego 5, Zwierzyniec, Krakow",
@@ -1004,7 +1010,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the trunk, 399 centimetres round, the thickest elm on this page. It stands at ul. Morawskiego 5 in Zwierzyniec, on the way toward the Vistula and the Kosciuszko Mound."
+      "how_to_recognise": "You can recognise it by the trunk, 399 centimetres round, the thickest elm on this page. It stands at ul. Morawskiego 5 in Zwierzyniec, on the way toward the Vistula and the Kosciuszko Mound.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 399 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kra_029",
@@ -1082,9 +1090,9 @@
       "id": "kra_031",
       "name": "The Wola Justowska Oak",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 125 to 250 years, judged from a trunk 3.51 m round",
+      "age_min": 125,
+      "age_max": 250,
       "girth_cm": 351,
       "location": {
         "address": "ul. Dunin-Wasowicza / ul. Lowiecka, Wola Justowska, Krakow",
@@ -1115,15 +1123,17 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the trunk, 351 centimetres round, standing alone at a suburban road junction rather than in a cluster of register trees. It stands where ul. Dunin-Wasowicza meets ul. Lowiecka."
+      "how_to_recognise": "You can recognise it by the trunk, 351 centimetres round, standing alone at a suburban road junction rather than in a cluster of register trees. It stands where ul. Dunin-Wasowicza meets ul. Lowiecka.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 351 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kra_032",
       "name": "The Botanical Garden Hungarian Oak",
       "species": "Hungarian Oak (Quercus frainetto)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 175 to 350 years, judged from a trunk 4.62 m round",
+      "age_min": 175,
+      "age_max": 350,
       "girth_cm": 462,
       "location": {
         "address": "ul. Kopernika 27, Ogrod Botaniczny Uniwersytetu Jagiellonskiego, Wesola, Krakow",
@@ -1147,7 +1157,9 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its leaves, among the largest of any European oak, half again as long as the pedunculate oak's and cut into many narrow lobes. It stands in the Botanical Garden, near the Jagiellonian Oak."
+      "how_to_recognise": "You can recognise it by its leaves, among the largest of any European oak, half again as long as the pedunculate oak's and cut into many narrow lobes. It stands in the Botanical Garden, near the Jagiellonian Oak.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 462 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kra_033",

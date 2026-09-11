@@ -835,9 +835,9 @@
       "id": "bru_023",
       "name": "The Turkish Hazel of the Grand Sablon",
       "species": "Turkish Hazel (Corylus colurna)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 75 to 150 years, judged from a trunk 2.08 m round",
+      "age_min": 75,
+      "age_max": 150,
       "girth_cm": 208,
       "location": {
         "address": "Place du Grand Sablon, 1000 Brussels",
@@ -860,15 +860,17 @@
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3429) names this tree; no second independent source found this pass, exactly as the leads file recorded. Shipped flagged per CLAUDE.md Step 2 (a tree with only one source ships flagged rather than waiting). No age estimate: no published growth factor for Corylus colurna in this climate was found this pass.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its straight trunk and tidy pyramidal crown, 17 metres tall and 2.08 metres round. It stands near the centre of Place du Grand Sablon."
+      "how_to_recognise": "You can recognise it by its straight trunk and tidy pyramidal crown, 17 metres tall and 2.08 metres round. It stands near the centre of Place du Grand Sablon.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 208 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "bru_024",
       "name": "The Pedunculate Oak of Mont des Arts",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 50 to 125 years, judged from a trunk 1.66 m round",
+      "age_min": 50,
+      "age_max": 125,
       "location": {
         "address": "Jardin du Mont des Arts, Brussels",
         "latitude": 50.844173,
@@ -900,7 +902,9 @@
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3438) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates (which carry no address text of their own) rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
       "location_precision": "confirmed",
       "girth_cm": 166,
-      "how_to_recognise": "You can recognise it by its 1.66 metre trunk growing from the raised terrace garden of the Mont des Arts. It stands between the Royal Library and the Avenue des Arts."
+      "how_to_recognise": "You can recognise it by its 1.66 metre trunk growing from the raised terrace garden of the Mont des Arts. It stands between the Royal Library and the Avenue des Arts.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 166 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "bru_025",

@@ -538,9 +538,9 @@
       "id": "ptl_016",
       "name": "The Irvington Elm",
       "species": "Field Elm (Ulmus minor)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 175 to 350 years, judged from a trunk 4.54 m round",
+      "age_min": 175,
+      "age_max": 350,
       "location": {
         "address": "2546 NE 18th Avenue, Irvington",
         "latitude": 45.54123,
@@ -562,15 +562,17 @@
       "how_to_recognise": "A notably tall elm with a high, vase-shaped crown and small, asymmetric-based leaves rough to the touch.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 454
+      "girth_cm": 454,
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 454 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "ptl_017",
       "name": "The Thompson Street Horsechestnut",
       "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 300 years, judged from a trunk 4.36 m round",
+      "age_min": 150,
+      "age_max": 300,
       "location": {
         "address": "1529 NE Thompson Street, Irvington",
         "latitude": 45.53923,
@@ -599,7 +601,9 @@
         "label": "late September, when the conkers drop",
         "kind": "fruit"
       },
-      "girth_cm": 436
+      "girth_cm": 436,
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 436 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "ptl_018",

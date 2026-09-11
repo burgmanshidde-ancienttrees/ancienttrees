@@ -240,9 +240,9 @@
       "id": "grz_007",
       "name": "The Panoramagasse Oak (No. 54)",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 100 to 200 years, judged from a trunk 2.8 m round",
+      "age_min": 100,
+      "age_max": 200,
       "girth_cm": 280,
       "location": {
         "address": "Opposite Panoramagasse 54, 8010 Graz",
@@ -274,15 +274,17 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by being the smaller of two protected oaks on this hillside street, 2.80 metres round the trunk. It stands opposite house number 54 on Panoramagasse, forty metres below its larger neighbour."
+      "how_to_recognise": "You can recognise it by being the smaller of two protected oaks on this hillside street, 2.80 metres round the trunk. It stands opposite house number 54 on Panoramagasse, forty metres below its larger neighbour.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 280 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "grz_008",
       "name": "The Panoramagasse Oak (No. 56)",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 175 to 350 years, judged from a trunk 4.9 m round",
+      "age_min": 175,
+      "age_max": 350,
       "girth_cm": 490,
       "location": {
         "address": "Opposite Panoramagasse 56, 8010 Graz",
@@ -314,7 +316,9 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by being the larger of the two Panoramagasse oaks, 4.90 metres round, nearly double its neighbour's girth. It stands opposite house number 56, a minute's walk up the hill from the smaller tree."
+      "how_to_recognise": "You can recognise it by being the larger of the two Panoramagasse oaks, 4.90 metres round, nearly double its neighbour's girth. It stands opposite house number 56, a minute's walk up the hill from the smaller tree.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 490 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "grz_009",

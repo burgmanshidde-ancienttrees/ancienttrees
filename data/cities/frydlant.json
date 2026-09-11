@@ -27,9 +27,9 @@
       "id": "fry_001",
       "name": "Buk u vodojemu",
       "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 300 years, judged from a trunk 4.22 m round",
+      "age_min": 150,
+      "age_max": 300,
       "girth_cm": 422,
       "location": {
         "address": "Březinova ulice, near the water reservoir, Frýdlant",
@@ -57,7 +57,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its dark purple-red leaves, 27 metres tall and 4.22 metres round, the largest thing on this street. It stands on Brezinova street beside Frydlant's water reservoir, near the railway station."
+      "how_to_recognise": "You can recognise it by its dark purple-red leaves, 27 metres tall and 4.22 metres round, the largest thing on this street. It stands on Brezinova street beside Frydlant's water reservoir, near the railway station.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 422 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

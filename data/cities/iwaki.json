@@ -32,9 +32,9 @@
       "id": "iwk_001",
       "name": "Nakakamado no Shidare Momiji",
       "species": "Japanese Maple (Acer palmatum)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 125 to 250 years, judged from a trunk 3.5 m round",
+      "age_min": 125,
+      "age_max": 250,
       "girth_cm": 350,
       "height_m": 6.8,
       "location": {
@@ -69,7 +69,9 @@
         "width": 6000,
         "height": 4000
       },
-      "how_to_recognise": "You can recognise it by its two trunks fused into one weeping, twisted clump spreading 12 metres like an umbrella, the larger stem 6.8 metres tall. It stands on the grounds of Kannon-do temple in Nakakamado, Iwaki."
+      "how_to_recognise": "You can recognise it by its two trunks fused into one weeping, twisted clump spreading 12 metres like an umbrella, the larger stem 6.8 metres tall. It stands on the grounds of Kannon-do temple in Nakakamado, Iwaki.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 350 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

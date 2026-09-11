@@ -64,7 +64,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "age_estimate": "roughly 175 to 300 years, judged from a trunk 4.45 m round",
+      "age_min": 175,
+      "age_max": 300,
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 445 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

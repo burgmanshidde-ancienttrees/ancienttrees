@@ -1721,9 +1721,9 @@
       "id": "bcn_048",
       "name": "The Hackberry of Jardins dels Drets Humans",
       "species": "Mediterranean Hackberry (Celtis australis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 100 to 200 years, judged from a trunk 2.9 m round",
+      "age_min": 100,
+      "age_max": 200,
       "girth_cm": 290,
       "location": {
         "address": "Jardins dels Drets Humans, la Marina de Port, Sants-Montjuic, Barcelona",
@@ -1740,14 +1740,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Barcelona protected twelve trees across the city in one sitting in May 2024, and this hackberry in the Jardins dels Drets Humans was one of them, cited for size rather than age: a 2.9 metre girth and a 20 metre crown, broad enough to shade a good stretch of the garden's paths.\n\nIt shares the garden with a much bigger, older-looking neighbour, a silky oak roughly 130 metres away, and together the two give the Human Rights garden two catalogued trees where most Barcelona parks have none. The garden itself is younger than either tree pretends to be: it opened to the public only in 2007, on land that had belonged to Philips' local factory since the 1960s, when a company landscape architect first laid the grounds out so workers could take their breaks outside.\n\nCeltis australis is one of the most common street trees in the Mediterranean, tough enough for Barcelona's hot, dry summers and long prized for wood that bends without splitting, historically worked into whip handles and walking sticks. No planting date survives for this one. If you know it, the garden's own records do not.",
-      "verify_notes": "Register (barcelona-ail.json, id 99400728989, catalogued 2022): girth 2.9m, height 15m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article on the city's protection of 12 new trees, which names 'lledoner' (hackberry) at Jardins dels Drets Humans specifically among them, matching species and location. Two-sourced. Undated in both.",
+      "verify_notes": "Register (barcelona-ail.json, id 99400728989, catalogued 2022): girth 2.9m, height 15m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article on the city's protection of 12 new trees, which names 'lledoner' (hackberry) at Jardins dels Drets Humans specifically among them, matching species and location. Two-sourced. Undated in both. Age derived from girth, not from a source: 290 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the broad crown, 20 metres across on a trunk 2.9 metres round, the smaller of the garden's two catalogued trees. It stands about 130 metres from the much taller silky oak in the Jardins dels Drets Humans."
+      "how_to_recognise": "You can recognise it by the broad crown, 20 metres across on a trunk 2.9 metres round, the smaller of the garden's two catalogued trees. It stands about 130 metres from the much taller silky oak in the Jardins dels Drets Humans.",
+      "age_basis": "girth"
     },
     {
       "id": "bcn_049",

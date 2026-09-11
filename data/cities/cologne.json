@@ -103,9 +103,9 @@
       "id": "kol_003",
       "name": "The Hohenlind Oak",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 250 years, judged from a trunk 3.75 m round",
+      "age_min": 150,
+      "age_max": 250,
       "girth_cm": 375,
       "location": {
         "address": "Park of St. Elisabeth-Krankenhaus Koln-Hohenlind, Werthmannstrasse 1-3, 50935 Koln",
@@ -136,7 +136,9 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it as the pedunculate oak about 100m from the big plane, a slimmer trunk at 3.75m round, on the same old estate grounds. It stands in the park around St. Elisabeth-Krankenhaus Koln-Hohenlind."
+      "how_to_recognise": "You can recognise it as the pedunculate oak about 100m from the big plane, a slimmer trunk at 3.75m round, on the same old estate grounds. It stands in the park around St. Elisabeth-Krankenhaus Koln-Hohenlind.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 375 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kol_004",
