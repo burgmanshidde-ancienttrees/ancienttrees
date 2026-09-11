@@ -479,6 +479,13 @@ struct MapTab: View {
                                                  if new != nil { shownWalk = nil }
                                              }))
         }
+        // Hidden rather than merely covered while the search sheet is up: a
+        // fullScreenCover does not remove the presenter from the accessibility
+        // tree by itself, so without this VoiceOver (and appfit's own element
+        // query) can still reach the map's search button and its filter chips
+        // underneath. appfit's floor job caught it as "Favourites" and the
+        // search placeholder both appearing, misaligned, on the search screen.
+        .accessibilityHidden(searching)
         .fullScreenCover(isPresented: $searching) {
             MapSearch(catalogue: catalogue, origin: origin) { hit in
                 switch hit {
