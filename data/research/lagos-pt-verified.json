@@ -1,0 +1,28 @@
+[
+  {
+    "id": "lgp_001",
+    "name": "The Cork Oak of Pedragosa",
+    "species": "Cork Oak (Quercus suber)",
+    "age_estimate": "not documented; classified as a tree of public interest in 2011",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 350,
+    "location": {
+      "address": "Pedragosa, UF de Bensafrim e Barão de São João, Lagos municipality",
+      "latitude": 37.12933298,
+      "longitude": -8.762471723,
+      "neighbourhood": "Barão de São João (rural parish, Lagos municipality)"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json entry KNJ1/573 (ICNF, Arvoredo de Interesse Publico, CC BY 4.0, classified by Aviso no.1 of 20/01/2011)",
+      "https://algarvevivo.pt/arvores-monumentais-no-algarve/"
+    ],
+    "access": "Free. An isolated tree ('arvore isolada') at a named rural place (Pedragosa); the register designation implies it stands in the open landscape rather than on enclosed private land, but no source this pass confirmed a specific public path or explicit right of access. Writer should state plainly that this is a rural isolated tree and, if a future pass cannot confirm public access on the ground (OSM footpath check per the Ypres technique in BRIEF_RESEARCH.md), treat as view-from-road only.",
+    "transport": "Rural parish about 8-9km/15-20 minutes by car from Lagos town centre; no register or source found this pass confirming public transport reaches Pedragosa directly. State honestly as a short drive from Lagos, not a walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Its crown is more than twice as wide as the tree is tall. Portugal's national forestry register measured this cork oak in 2010 at 9.5 metres high, with a canopy 21.3 metres across and a trunk 3.5 metres round, which is what a cork oak does when nothing crowds it: it stops climbing and spends everything sideways, until the shape is less a column than a parasol.\n\nIt stands on its own in the country above Lagos, at a place called Pedragosa in the rural parish of Barao de Sao Joao, and it is the only tree in the whole municipality that the ICNF has classified as being of public interest. That designation arrived by official notice in January 2011, which at the time made it the newest addition to the Algarve's list of monumental trees.\n\nCork oak is the tree Portugal built an industry on. The outer bark is stripped by hand roughly every nine years and grows back, which is why the species can be worked for two centuries without being felled, and why an old trunk carries bands of different ages and colours.\n\nNobody has dated it. The register has no age for this entry and neither does anything else we have found. It is a short drive from Lagos rather than a walk, and it stands in open country rather than behind a gate, though we have not been able to confirm a public path to the trunk itself.",
+    "how_to_recognise": "You can recognise it by its proportions: a canopy 21.3 metres across over a trunk of 3.5 metres, on a tree only 9.5 metres tall, standing alone. It stands at Pedragosa, in the parish of Barao de Sao Joao above Lagos.",
+    "why_go": "The only monumental tree classified anywhere in Lagos municipality: a broad-crowned cork oak in the rolling countryside above the town, its bark still bearing the scars of the periodic cork harvest that gives the species its name and its economic history in the Algarve."
+  }
+]

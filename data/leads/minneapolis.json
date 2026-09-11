@@ -1,0 +1,32 @@
+{
+  "leads": [
+    {
+      "name": "Eastern Hemlock, Theodore Wirth Park",
+      "species": "Eastern Hemlock (Tsuga canadensis)",
+      "location": {"address": "1301 Theodore Wirth Pkwy, Minneapolis", "latitude": null, "longitude": null},
+      "reason": "Only one source found (Mpls.St.Paul Magazine 'Life and Limb'): height 75 feet, circumference 87 inches, no age given. Eastern hemlock is at the extreme western edge of its range in Minnesota and is listed as an Endangered species in the state (fewer than 50 mature trees known statewide per Minnesota DNR), which would make this a strong candidate if a second source and an exact position can be found. Needs a follow-up pass.",
+      "source": "https://mspmag.com/travel-and-visitors-guide/life-and-limb/"
+    },
+    {
+      "name": "American Basswood, Windom Park (Champion Size entry, Russian Olive entry, American Plum entries) - Minneapolis Heritage Tree Program full list",
+      "species": "various",
+      "location": {"address": "Minneapolis parks, various", "latitude": null, "longitude": null},
+      "reason": "The Minneapolis Park & Recreation Board's own Heritage Tree Program page did not render its tree list to this pass's fetcher (navigation only came through). The Minneapolis Parks Foundation summary page named a Russian Olive (Theodore Wirth Park, champion size, invasive species so probably not collectible), a pair of American Plums (Eloise Butler Wildflower Garden, champion size), and 'Elmer the Elm' (a Park Board mascot tree, 41 years old as of 2017, multiple park locations, too young and too much a mascot gimmick to ship). A future pass with proper JS rendering of minneapolisparks.org's Heritage Tree Program page could surface the complete list plus ages and girths the two magazine/foundation pieces did not carry.",
+      "source": "https://mplsparksfoundation.org/heritage-trees-of-minneapolis-parks/"
+    },
+    {
+      "name": "Former oldest bur oak memorial site (dead)",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "location": {"address": "Corner of West River Parkway and Franklin Terrace, Seward neighborhood, Minneapolis", "latitude": null, "longitude": null},
+      "reason": "BLOCKED, not a lead: this bur oak, once considered Minneapolis' oldest tree at over 300 years, was declared dead and cut down in 2010. A young replacement oak has been planted on the site. Per hard rule ('we doen niet aan dode bomen'), a dead tree never ships as an entry even as a memorial. Recorded here so a future pass does not re-research it and re-discover the same dead end.",
+      "source": "https://www.mprnews.org/story/2010/07/11/dead-oak-tree; https://www.minnpost.com/fact-briefs/2025/07/is-the-trunk-of-minneapolis-once-oldest-tree-still-lying-on-the-site-where-the-tree-is-memorialized/"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Former oldest bur oak, Seward neighborhood",
+      "reason": "Confirmed dead, cut down 2010. See leads entry above for detail; kept here as well so a dead-tree sweep finds it under blocked."
+    }
+  ],
+  "notes": "Verification pass 2026-09-11. No Minnesota/Minneapolis official tree register was found or imported this pass (checked OPEN_DATA_SURVEY.md first, no entry for Minnesota); Minnesota's Native Big Tree Registry (dnr.state.mn.us/trees/bigtree) was named but not fetched or licence-checked, worth a scouting pass of its own before the next Minneapolis research."
+}
