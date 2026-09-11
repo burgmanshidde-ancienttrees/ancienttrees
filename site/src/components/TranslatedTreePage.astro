@@ -153,10 +153,14 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
         <div class="tb-col tb-age"><span>{ageLabel}</span><b>{ageValue}</b></div>
         <div class="tb-col tb-species"><span>{U.labelSpecies}</span><b>{x.species}</b></div>
       </div>
-      {isApprox ? (
+      {/* NOTHING WHEN THE PIN IS EXACT, the same as the app since 2026-09-04
+          (Hidde: "die hele tekst mag weg, mensen moeten er vanuit gaan dat het
+          sowieso helemaal goed is en alleen als we niet zeker zijn staat er een
+          waarschuwing"). The app lost this line that day and the website kept
+          it for a week, which he caught on 2026-09-11. The report control is
+          still on every page for anybody who finds the pin wrong. */}
+      {isApprox && (
         <p class="tb-loc tb-loc-approx"><b>{U.locApprox}</b></p>
-      ) : (
-        <p class="tb-loc">{U.locExact}</p>
       )}
       {tree.paid_entry && (
         <p class="tb-ticket"><b>{U.ticketNeeded}</b><span>{x.access ?? ""}</span></p>

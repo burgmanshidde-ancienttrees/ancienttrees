@@ -293,13 +293,17 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           <div class="tb-col tb-species"><span>Species</span><b>{spCommon}</b></div>
         )}
       </div>
-      {isApprox ? (
+      {/* NOTHING WHEN THE PIN IS EXACT, the same as the app since 2026-09-04
+          (Hidde: "die hele tekst mag weg, mensen moeten er vanuit gaan dat het
+          sowieso helemaal goed is en alleen als we niet zeker zijn staat er een
+          waarschuwing"). The app lost this line that day and the website kept
+          it for a week, which he caught on 2026-09-11. The report control is
+          still on every page for anybody who finds the pin wrong. */}
+      {isApprox && (
         <p class="tb-loc tb-loc-approx">
           <b>Approximate location.</b>{" "}
           <a href={submitLink("correction", cityName, tree.name)}>Show us where it is</a>
         </p>
-      ) : (
-        <p class="tb-loc">Exact location. The pin marks the trunk.</p>
       )}
       {tree.paid_entry && (
         <p class="tb-ticket"><b>You need a ticket to see this tree</b><span>{tree.access}</span></p>

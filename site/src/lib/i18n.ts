@@ -197,7 +197,6 @@ export interface UIStrings {
   factPin: string;
   /** The line under the two columns: it carries words, which is why it is a
    *  line rather than a column. */
-  locExact: string;
   locApprox: string;
   ticketNeeded: string;
   pinExact: string;
@@ -303,7 +302,6 @@ const EN: UIStrings = {
   factAge: "Age",
   factPin: "Pin",
   factYearsOld: "Years old",
-  locExact: "Exact location. The pin marks the trunk.",
   locApprox: "Approximate location.",
   ticketNeeded: "You need a ticket to see this tree",
   pinExact: "Exact",
@@ -361,7 +359,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     factAge: "Edad",
     factPin: "Ubicación",
     factYearsOld: "Años",
-    locExact: "Ubicación exacta. El marcador señala el tronco.",
     locApprox: "Ubicación aproximada.",
     ticketNeeded: "Necesitas una entrada para ver este árbol",
     pinExact: "Exacta",
@@ -463,7 +460,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     factAge: "Età",
     factPin: "Posizione",
     factYearsOld: "Anni",
-    locExact: "Posizione esatta. Il segnaposto indica il tronco.",
     locApprox: "Posizione approssimativa.",
     ticketNeeded: "Serve un biglietto per vedere questo albero",
     pinExact: "Esatta",
@@ -565,7 +561,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     factAge: "Leeftijd",
     factPin: "Locatie",
     factYearsOld: "Jaar oud",
-    locExact: "Exacte locatie. De speld staat op de stam.",
     locApprox: "Locatie bij benadering.",
     ticketNeeded: "Je hebt een kaartje nodig om deze boom te zien",
     pinExact: "Exact",
@@ -667,7 +662,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     factAge: "Alter",
     factPin: "Standort",
     factYearsOld: "Jahre alt",
-    locExact: "Genauer Standort. Die Markierung steht am Stamm.",
     locApprox: "Ungefährer Standort.",
     ticketNeeded: "Für diesen Baum brauchst du ein Ticket",
     pinExact: "Genau",
@@ -769,7 +763,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     factAge: "Idade",
     factPin: "Localização",
     factYearsOld: "Anos",
-    locExact: "Localização exata. O marcador indica o tronco.",
     locApprox: "Localização aproximada.",
     ticketNeeded: "Precisas de bilhete para ver esta árvore",
     pinExact: "Exacta",
@@ -871,7 +864,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     factAge: "Âge",
     factPin: "Position",
     factYearsOld: "Ans",
-    locExact: "Emplacement exact. Le repère indique le tronc.",
     locApprox: "Emplacement approximatif.",
     ticketNeeded: "Il faut un billet pour voir cet arbre",
     pinExact: "Exacte",
@@ -972,7 +964,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     factAge: "樹齢",
     factPin: "位置",
     factYearsOld: "樹齢",
-    locExact: "正確な位置です。ピンは幹を指しています。",
     locApprox: "おおよその位置です。",
     ticketNeeded: "この木を見るにはチケットが必要です",
     pinExact: "正確",
