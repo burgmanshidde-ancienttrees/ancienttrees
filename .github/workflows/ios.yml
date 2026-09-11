@@ -493,7 +493,6 @@ jobs:
             -scheme AncientTrees \
             -destination "id=$UDID" \
             -derivedDataPath /tmp/dd \
-            -retry-tests-on-failure -test-iterations 2 \
             -parallel-testing-enabled NO \
             -skip-testing:AncientTreesUITests/SweepFrames \
             -skip-testing:AncientTreesUITests/RefusedWalk \
