@@ -13,6 +13,92 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-11
+
+Reviewed commits since the last review (519318c2, itself the newest at review
+time) back through bf9467f8 (~137 commits, day-and-night assembly-line work
+plus a substantial session block from Hidde directly): the usual claim/verify/
+write cycle across many thin cities (Lausanne to 8, Salamanca and Minneapolis
+to 4, Spokane to 6, Cardiff and Fort Lauderdale opened at the floor, Zwolle
+deepened from the Dutch register), four stranded verify passes shipped under
+the 2026-08-31 single-famous-tree exception (Indianapolis, Sao Paulo, Busan,
+Monterey), a new girth data point (database, app UI, /contribute, feed) built
+in session with Hidde across nine commits, a website/app parity pass
+(`scripts/paritycheck.py`, now in the pre-push hook) that moved the "Worth the
+visit?" vote beside the tree name on both surfaces and removed the app's dead
+heading the check itself found, the reader-photograph pipeline reaching the
+site (Kyoto's kyo_019, from Hidde's own submitted photograph; a rejected
+Demizu-guchi candidate correctly held rather than shipped), and an outreach
+photograph (Lisbon's Sao Bento tipu, from getLISBON, correctly recorded as a
+gift rather than an open licence). Ran `python3 scripts/qa.py` (clean per the
+last logged run) and spot-checked `preflight.py`'s and `superlatives.py`'s
+last recorded clean runs in the commit trail rather than re-running them.
+
+**WARN — a reader-submitted photograph under the "no name printed" rule
+renders a broken, empty credit line: `<figcaption>Photo: </figcaption>`.**
+Confirmed live on 5 pages built from current data: `kyoto/twisted-muku-of-
+omiya-gate-kyoto-gyoen.html`, `kyoto/camphor-of-munakata-shrine.html`,
+`kyoto/ginkgo-of-inui-gate-kyoto-gyoen.html`, `baarn/cantonspark-dawn-
+redwood.html`, `baarn/cantonspark-giant-sequoia.html`. Root cause in
+`site/src/lib/images.ts`: `isAGift()` matches any licence string starting
+with "provided by", including "Provided by a reader through the Ancient
+Trees app, all rights reserved" (the exact string CLAUDE.md's 2026-09-04
+ruling and the app's own code use for reader photos, which deliberately
+carry `attribution: null` so no name prints). `creditRequired()` therefore
+returns true, but `creditText(null, license)` returns null since there is no
+name to print, and `PhotoFigure.astro` falls back to `t.photoCredit("")`
+instead of skipping the figcaption entirely, printing "Photo: " with nothing
+after the colon. This is exactly the builder-speak-adjacent, "site presents
+itself as finished" failure TONE_OF_VOICE.md's opening rule exists to catch:
+a visitor sees a caption that looks broken rather than no caption at all.
+Fix belongs in `PhotoFigure.astro` (treat a null `creditText()` result as no
+credit, matching `isAGift()`'s own reader-photo case) or in `isAGift()`
+(reader-app photos are a distinct, no-credit case, not a gift with a
+withheld name). Not visual-taste and not app-only: it is template logic
+shared by both surfaces, though today it only manifests on the web build.
+
+**WARN — three published tree pages carry a self-repeating title: "The X: X
+in [City]".** `manchester/amur-cork-tree.html` ("The Amur Cork Tree: Amur
+Cork Tree in Manchester"), `manchester/adams-laburnum.html` ("Adam's
+Laburnum: Adam's Laburnum in Manchester"), `munich/fern-leaved-beech.html`
+("The Fern-leaved Beech: Fern-leaved Beech in Munich"). Cause: Contract A's
+title candidates in `[city]/[tree].astro` fall back to `` `${tree.name}:
+${speciesCommon(tree)} in ${cityName}` `` once `ageToken()` returns null
+(correctly null here: Munich's beech is explicitly "undated" and age_min/
+age_max are bounds rather than a stated figure, per that function's own
+2026-08 fix), and none of the fallback candidates checks whether the tree's
+own name already IS the species name. All three trees are named directly
+after their species with no further epithet, so the fallback produces a
+duplicated, robotic-looking title instead of dropping to `` `${tree.name} in
+${cityName}` ``. This is PRINCIPLES.md #9's canonical failure ("a phrase
+repeats because a loop wrote it... guilty until read aloud") and a narrow
+but real Contract A violation (SEO_GEO_BLUEPRINT.md): the title is what
+Google and a human both read first. Scanned every built tree page for the
+pattern; exactly these three match site-wide.
+
+**NOTE — the Sao Bento tipu's gift photograph (Lisbon, getLISBON) is the
+kind of one-off permission exception DECISIONS.md 2026-08-11 said would each
+need "its own explicit yes from him, not a standing policy," recorded in
+DECISIONS.md.** The commit is authored by Hidde in session and the
+reasoning is sound and well documented in the commit message and the photo's
+own `note` field, so nothing here suggests it happened without him. It is
+simply not logged in DECISIONS.md the way the Porto precedent it explicitly
+follows was. Twenty-three gift/permission photos now exist across five
+sources (Porto, Bucaco, Florence, Lisbon, and reader-app submissions), which
+reads as an established pattern rather than a one-off exception; worth a
+session deciding whether DECISIONS.md's framing should be updated to match,
+or left as historical record. Not acted on, no action forced.
+
+Read the app screenshots (`species-pick.png`, `species.png`, `tree-
+nophoto.png`, `tree.png`, `walk-begin.png`, `walk.png`, a fresh rotation):
+all clean against the corpus. The new girth row reads correctly beside Age
+and Species on `tree.png` (Dab Fabrykant); the species picker, the no-photo
+species page, the tree detail with photo, and the two walk screens (route
+map, walk detail with Begin/distance) all match their surface's own
+conventions with no contradiction, no dead control and no overclaimed count.
+
+No Monday corpus-rot audit today (Friday UTC).
+
 ## 2026-09-10
 
 Reviewed commits since the last review (0d4e001b, 2026-09-09) through
