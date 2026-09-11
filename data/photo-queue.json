@@ -59591,7 +59591,9 @@
      "lat": 35.310834,
      "lng": 139.533067,
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Goryō-jinja (Kamakura) Category:Japan photographs taken on 2017-05-18 Category:May 2017 in Kamakura Category:Quality images Category:Self-published work",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "fails Cadiz standard: the shrine building is the subject, trees are background/frame only"
     },
     {
      "title": "File:Goryou jinnja 003.jpg",
@@ -59602,7 +59604,9 @@
      "lat": 35.310834,
      "lng": 139.533067,
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Gokurakuji No. 1 Crossing Category:Japan photographs taken on 2017-05-20 Category:May 2017 in Kamakura Category:May 2017 in rail transport in Kanagawa prefecture Category:Railway photographs taken on 2017-05-20 Category:Self-published work Category:Torii in Kanagawa prefecture",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "fails Cadiz standard: torii gate, railway crossing sign and power lines dominate the frame, tree barely visible at top"
     },
     {
      "title": "File:Kamakura 2011-04 (5711708595).jpg",
@@ -59624,7 +59628,9 @@
      "lat": 35.311111,
      "lng": 139.532778,
      "cats": "Category:CC-BY-SA-3.0-migrated Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Goryō-jinja (Kamakura) Category:License migration completed Category:Taken with Olympus u710 / S-710",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "fails Cadiz standard: the shrine building fills the frame, tree is background canopy only"
     },
     {
      "title": "File:Yuigahama 2025 June 30 various 2.jpg",
@@ -96029,7 +96035,9 @@
      "author": "Rosemoon",
      "lat": 51.47632,
      "lng": 5.647897,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Gemeentelijke monumenten in Helmond Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Gemeentelijke monumenten in Helmond Category:Self-published work",
+     "judged": "reject",
+     "verdict": "fails Cadiz standard: a house is the subject, the tree (bare, weeping) is a minor foreground element draped over the facade"
     }
    ]
   },
@@ -97350,7 +97358,9 @@
      "author": "B222",
      "lat": 51.566581,
      "lng": 5.077917,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Ginkgo biloba leaves Category:Self-published work Category:Wilhelminapark (Tilburg)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Ginkgo biloba leaves Category:Self-published work Category:Wilhelminapark (Tilburg)",
+     "judged": "reject",
+     "verdict": "wrong subject entirely: a single fallen ginkgo leaf on grass, not the Weeping Silver Lime, matched only by park name"
     }
    ]
   },
