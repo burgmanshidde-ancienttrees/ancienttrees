@@ -1,0 +1,84 @@
+{
+  "_note": "German overlay for Leipzig, hand-written 2026-09-11 under Contract J. Fifth from the corrected langcheck queue and the first in German: 24 impressions in the ten-day window, and German is the strongest of the three ROLL OUT areas at 135 percent of its English twins with 3 of 3 cities past. Street names take their proper German spelling here (Käthe-Kollwitz-Straße), which the English file transliterates.",
+  "city": "Leipzig",
+  "title": "Naturdenkmale in Leipzig: 7 geschützte Bäume",
+  "meta_description": "Leipzigs geschützte Villengartenbäume: Ginkgo, Flatterulme, Sumpfzypresse, Blutbuche und Schnurbaum in Plagwitz, dazu zwei weitere in der Nähe.",
+  "intro": "Leipzig schützt 148 Bäume als Naturdenkmal, die höchste Stufe des sächsischen Landesrechts für einen einzelnen Baum, und mehrere davon stehen in den Gärten der Villen, die einst die innerstädtischen Straßen säumten. Zwei sanierte Villen an der Karl-Heine-Straße in Plagwitz halten zusammen einen Ginkgo, eine Flatterulme, eine Sumpfzypresse, eine Blutbuche und einen Japanischen Schnurbaum, alle in rund 150 Metern Abstand; die eine Villa ist heute eine öffentliche Galerie, die andere eine private Pension. Eine Farnblättrige Buche und eine Stieleiche, im selben Jahr geschützt, stehen einen kurzen Weg östlich hinter zwei weiteren Villenmauern.",
+  "question_title": "Was ist der älteste Baum in Leipzig?",
+  "question_meta": "Leipzigs sieben geschützte Straßenbäume gehen alle auf einen Beschluss von 1996 zurück. Wo sie stehen, und was jeden zum Naturdenkmal macht.",
+  "question_answer": "Leipzig hat für seine Naturdenkmale keine Baumalter veröffentlicht, nur den Beschluss, der sie geschützt hat: Nummer 601/96 aus dem Jahr 1996. Was die Unterlagen stattdessen zeigen, ist, wie ungewöhnlich die Bäume selbst sind und wo sie wachsen: eine Sumpfzypresse, eine Sumpfart aus dem amerikanischen Süden, und ein Japanischer Schnurbaum stehen in zwei ehemaligen Villengärten an der Karl-Heine-Straße in Plagwitz, daneben eine Flatterulme, eine Blutbuche und ein weiblicher Ginkgo, alle in rund 150 Metern Abstand. Eine Farnblättrige Buche und eine Stieleiche, nach demselben Beschluss von 1996 geschützt, stehen gut einen Kilometer östlich hinter zwei weiteren Villenmauern.",
+  "question_context": "Das sächsische Naturschutzrecht erlaubt einer Kommune, einen einzelnen Baum zum Naturdenkmal zu erklären, ihrem stärksten rechtlichen Schutz, ohne dass ein belegtes Alter verlangt wird. Leipzigs eigene Liste gibt jedem Baum eine Kennnummer, eine Flurstücksangabe und den Beschluss, der ihn schützt, und der lautet für alle sieben Bäume auf dieser Seite 601/96 aus dem Jahr 1996: Die Jahreszahl ist eine Untergrenze dafür, wie lange jeder Baum schon steht, kein Pflanzdatum. Drei der sieben, Ginkgo, Farnblättrige Buche und Eiche, sind durch Leipzigs eigene veröffentlichte Naturdenkmalliste bestätigt; die anderen vier, Ulme, Zypresse, Blutbuche und Schnurbaum, stützen sich allein auf den Ausweisungsvermerk und sind entsprechend gekennzeichnet. Ein Stammumfang ist für keinen erfasst, nur der geschützte Wurzelbereich, den die Stadt um jeden Stamm vermessen hat. Der Zugang ist nicht einheitlich, sondern von Baum zu Baum verschieden: Der Ginkgo steht am Gehweg, Ulme und Zypresse wachsen im Grundstück einer sanierten Villa, die heute als öffentliche Galerie betrieben wird, und die übrigen vier sind von ihrer Straße aus zu sehen, stehen aber hinter Villenmauern, deren Zugänglichkeit dieser Durchgang nicht bestätigen konnte.",
+  "faq": [
+    {
+      "q": "Was ist ein Naturdenkmal?",
+      "a": "Ein Naturdenkmal nach sächsischem Naturschutzrecht, der stärkste rechtliche Schutz, den ein einzelner Baum in Deutschland außerhalb eines Naturschutzgebiets bekommen kann. Leipzig hat 148 davon ausgewiesen."
+    },
+    {
+      "q": "Sind diese Bäume kostenlos zu besichtigen?",
+      "a": "Das ist unterschiedlich. Der Ginkgo steht am Gehweg, frei und ohne Zaun. Flatterulme und Sumpfzypresse wachsen im Garten der Klinger-Villa, heute eine öffentliche Galerie (Klinger Forum), die zu Ausstellungen geöffnet ist, ebenfalls kostenlos. Blutbuche, Schnurbaum, Farnblättrige Buche und Eiche stehen hinter Villenmauern, deren öffentliche Zugänglichkeit dieser Durchgang nicht bestätigen konnte; jeder von ihnen ist von seiner Straße aus zu sehen."
+    },
+    {
+      "q": "Kann man alle auf einem Spaziergang sehen?",
+      "a": "Fünf der sieben stehen an oder nahe der Karl-Heine-Straße in rund 150 Metern Abstand, einen Halt wert auch dort, wo ein Baum nur von der Straße aus zu sehen und nicht zu erreichen ist. Die Farnblättrige Buche und die Eiche liegen gut einen Kilometer östlich und lassen sich leicht an denselben Weg anhängen."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (German common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+  "trees": {
+    "lpz_001": {
+      "name": "Der Ginkgo in der Karl-Heine-Straße",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "",
+      "access": "Kostenlos, steht am Rand des Gehwegs",
+      "transport": "Straßenbahn Karl-Heine-Straße (Linien 3/N3) oder S-Bahn Leipzig MDR, dann ein kurzer Weg",
+      "story": "An der Ecke Karl-Heine-Straße in Plagwitz steht ein weiblicher Ginkgo, einer von 148 Bäumen, die Leipzig als Naturdenkmal schützt, der stärksten Ausweisung, die das sächsische Recht für einen einzelnen Baum kennt. Die Unterlagen der Stadt geben ihm eine Nummer, ND 30, einen geschützten Wurzelradius von 18 Metern und den Beschluss, der ihn 1996 offiziell machte. Sie geben kein Alter und kein Pflanzdatum, was für das deutsche Naturdenkmalwesen typisch ist: Der Schutz verlangt keine belegte Geschichte, nur einen Baum, den es zu erhalten lohnt.\n\nGinkgo biloba ist als einzige Art einer Linie übrig, die man sonst nur aus Fossilien kennt, und weibliche Bäume wie dieser haben einen Ruf, den die männlichen weiter unten in der Straße nicht haben: Im Herbst riechen die abgefallenen Samenschalen deutlich nach ranziger Butter, weshalb heute fast alle Straßenpflanzungen männliche Klone sind. Diesen hier hat man wachsen lassen, wie er war.\n\nEr teilt sich sein Stück Karl-Heine-Straße mit vier weiteren geschützten Bäumen in rund 150 Metern Abstand: einer Ulme, einer Sumpfzypresse, einer Blutbuche und einem Schnurbaum, die alle auf dieser Seite stehen."
+    },
+    "lpz_002": {
+      "name": "Die Flatterulme in der Karl-Heine-Straße",
+      "species": "Flatterulme (Ulmus laevis)",
+      "age_estimate": "",
+      "access": "Kostenlos, im Grundstück der Klinger-Villa (Klinger Forum), einem öffentlichen Kulturort, der zu Ausstellungen geöffnet ist",
+      "transport": "Straßenbahn Karl-Heine-Straße (Linien 3/N3) oder S-Bahn Leipzig MDR, dann ein kurzer Weg",
+      "story": "Die Flatterulme ist die eine heimische Ulme, die das Ulmensterben weitgehend abgeschüttelt hat, weil sie feuchten Boden bevorzugt, um den sich der Käfer, der den Pilz verbreitet, selten kümmert. Dieses Exemplar ist an einer Plagwitzer Straßenecke groß genug geworden, um Leipzigs Naturdenkmalschutz zu bekommen, den stärksten rechtlichen Status der Stadt für einen einzelnen Baum.\n\nSie steht unmittelbar neben einer Sumpfzypresse, die die Stadt unter derselben Ausweisung geschützt hat, ein sonderbares Paar: eine europäische Ulme für feuchte Niederungen und ein amerikanischer Sumpfnadelbaum, die sich vor Hausnummer 2 ein kleines Stück Gehweg teilen.\n\nLeipzigs öffentliches Naturdenkmalverzeichnis hat für genau diesen Baum über den Ausweisungsvermerk hinaus noch keinen geschriebenen Eintrag, also halten Sie die Bestimmung für sicher und die Dokumentation für dünn. Die Art ist von der häufigeren Feldulme am leichtesten an der Blattbasis zu unterscheiden, deutlich schief dort, wo die Spreite auf den Stiel trifft, und an der Frucht, einer papierenen Flügelnuss, die fein bewimpert ist statt glatt berandet. Wenn Sie mehr darüber wissen, wann sie gepflanzt wurde, schreiben Sie uns."
+    },
+    "lpz_003": {
+      "name": "Die Sumpfzypresse in der Karl-Heine-Straße",
+      "species": "Sumpfzypresse (Taxodium distichum)",
+      "age_estimate": "",
+      "access": "Kostenlos, im Grundstück der Klinger-Villa (Klinger Forum), einem öffentlichen Kulturort, der zu Ausstellungen geöffnet ist",
+      "transport": "Straßenbahn Karl-Heine-Straße (Linien 3/N3) oder S-Bahn Leipzig MDR, dann ein kurzer Weg",
+      "story": "Eine Sumpfzypresse auf einem Leipziger Gehweg ist weit von zu Hause weg. Die Art wächst wild in den Sümpfen des amerikanischen Südostens, wo ihre Wurzeln hölzerne Knie durch das stehende Wasser schieben; auf einer trockenen Plagwitzer Straße hat sie nichts davon, nur einen geraden Stamm und das weiche, federige Laub, das sich im Herbst kupfern färbt, bevor es fällt, was für einen Nadelbaum ungewöhnlich ist.\n\nDie Stadt schützt sie als Naturdenkmal, unmittelbar neben einer Flatterulme unter derselben Ausweisung. Weder Pflanzdatum noch Stammumfang stehen in den Unterlagen, die wir finden konnten, nur die Tatsache des Schutzes.\n\nVier weitere geschützte Bäume stehen in rund 150 Metern entlang derselben Straße: ein Ginkgo, eine Blutbuche und ein Japanischer Schnurbaum darunter, eine unwahrscheinliche Sammlung von Arten für einen kurzen Block. Die Sumpfzypresse gehört außerdem zu den wenigen Nadelbäumen, die ihr Laub im Winter vollständig abwerfen, Nadeln und alles, statt immergrün zu bleiben, weshalb die Straße unter ihr im Dezember kahl aussieht, wo der Ginkgo weiter oben seine Blätter schon Wochen vorher abgeworfen hat."
+    },
+    "lpz_004": {
+      "name": "Die Blutbuche in der Karl-Heine-Straße",
+      "species": "Blutbuche (Fagus sylvatica 'Purpurea')",
+      "age_estimate": "",
+      "access": "Von der Karl-Heine-Straße aus zu sehen; das Grundstück der Wagner-Nietzsche-Villa wird heute als private Pension betrieben und ist für Besucher nicht frei zugänglich",
+      "transport": "Straßenbahn Karl-Heine-Straße (Linien 3/N3) oder S-Bahn Leipzig MDR, dann ein kurzer Weg",
+      "story": "Blutbuchen waren im neunzehnten Jahrhundert eine Modepflanzung in ganz Europa, ihr fast schwarzes Laub ein bewusster Gegensatz zur gewöhnlichen grünen Buche daneben, und diese hier ist an der Karl-Heine-Straße groß genug geworden, um Leipzigs Naturdenkmalschutz aus eigenem Recht zu bekommen.\n\nDie Farbe kommt von Anthocyanen, die das grüne Chlorophyll des Blattes überdecken, am stärksten im Frühjahr und bis zum Spätsommer zu einem stumpferen Bronzeton verblassend, weil der Farbstoff schneller abgebaut wird, als der Baum ihn ersetzt. Es ist dieselbe Erbanlage hinter jeder Blutbuche überhaupt, eine einzelne Mutation, die seit Jahrhunderten durch Pfropfen und Stecklinge vermehrt wird, keine eigene Art.\n\nSie steht wenige Häuser von einem Japanischen Schnurbaum entfernt, der unter derselben Schutzanordnung von 1996 steht, einer von fünf Naturdenkmalbäumen in rund 150 Metern an diesem Straßenstück. Wie jede Buche trägt sie ihr Leben lang glatte graue Rinde, statt die tiefen Furchen einer Eiche oder Platane auszubilden, was mit ein Grund dafür ist, dass Buchenstämme öfter als andere Arten mit Initialen beschnitzt sind: Die Rinde zeigt den Schnitt einfach und behält ihn."
+    },
+    "lpz_005": {
+      "name": "Der Japanische Schnurbaum in der Karl-Heine-Straße",
+      "species": "Japanischer Schnurbaum (Styphnolobium japonicum)",
+      "age_estimate": "",
+      "access": "Von der Karl-Heine-Straße aus zu sehen; das Grundstück der Wagner-Nietzsche-Villa wird heute als private Pension betrieben und ist für Besucher nicht frei zugänglich",
+      "transport": "Straßenbahn Karl-Heine-Straße (Linien 3/N3) oder S-Bahn Leipzig MDR, dann ein kurzer Weg",
+      "story": "Dem Namen zum Trotz stammt der Japanische Schnurbaum aus China und nicht aus Japan; er kam im achtzehnten Jahrhundert über japanische Handelshäfen nach Europa und behielt den falschen Namen. Dieser hier ist an einer Plagwitzer Straße groß genug geworden, um als Naturdenkmal geschützt zu werden, Sachsens stärkstem rechtlichen Status für einen einzelnen Baum.\n\nEr blüht spät für einen Baum seiner Größe, cremeweiße Rispen im August, wenn die meisten anderen Straßenbäume für das Jahr fertig sind, und das ist meist das Detail, an dem ein Schnurbaum außerhalb botanischer Sammlungen überhaupt auffällt.\n\nEr steht wenige Häuser von einer geschützten Blutbuche entfernt, als letzter von fünf Naturdenkmalbäumen, die sich auf rund 150 Meter Karl-Heine-Straße drängen: Ein Ginkgo, eine Flatterulme und eine Sumpfzypresse vervollständigen die Reihe. In seiner Heimat werden die ungeöffneten Blütenknospen des Schnurbaums tonnenweise für Rutin geerntet, einen Pflanzenstoff für Farben und Nahrungsergänzungsmittel, eine Verwendung, zu der dieser einzelne Straßenbaum in Plagwitz nie kommen wird."
+    },
+    "lpz_006": {
+      "name": "Die Farnblättrige Buche in der Karl-Tauchnitz-Straße",
+      "species": "Farnblättrige Buche (Fagus sylvatica f. asplenifolia)",
+      "age_estimate": "",
+      "access": "Von der Karl-Tauchnitz-Straße aus zu sehen, hinter dem Zaun einer ehemaligen Villa (heute ein Klinikgebäude der Universität Leipzig); das Grundstück ist für Besucher nicht frei zugänglich",
+      "transport": "Straßenbahn Karl-Heine-Straße (Linien 3/N3) oder S-Bahn Leipzig MDR, dann ein kurzer Weg",
+      "story": "Eine Farnblättrige Buche trägt Blätter, die so tief eingeschnitten und schmal sind, dass sie kaum noch als Buchenlaub durchgehen, eine natürlich auftretende Form der gewöhnlichen Rotbuche, die Baumschulen seit dem achtzehnten Jahrhundert durch Pfropfen vermehren, und keine eigene Art. Leipzig schützt diese hier nach demselben Beschluss von 1996, der sechs weitere Bäume auf dieser Seite abdeckt, mit einem geschützten Wurzelbereich von 25 Metern Durchmesser, dem größten der drei, die die Liste der Stadt im Einzelnen ausweist.\n\nSie steht gut einen Kilometer östlich der Gruppe an der Karl-Heine-Straße, für sich allein statt als Teil einer Reihe geschützter Bäume, an einer Wohnstraße nahe dem Leipziger Innenstadtring.\n\nWeder Alter noch Stammumfang haben sich in dem erhalten, was wir finden konnten, nur Tatsache und Datum des Schutzes. Die geschlitztblättrige Form wurde in Deutschland schon im neunzehnten Jahrhundert von Baumschulen als Ziergehölz gepfropft und verkauft, geschätzt für eine Silhouette, die leichter und offener ist als die dichte Kuppel einer gewöhnlichen Buche. Wenn Sie mehr über die Geschichte dieses Baumes wissen, schreiben Sie uns."
+    },
+    "lpz_007": {
+      "name": "Die Stieleiche in der Käthe-Kollwitz-Straße",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "",
+      "access": "Von der Käthe-Kollwitz-Straße aus zu sehen, hinter einer Villengartenmauer; ob das Grundstück öffentlich zugänglich ist, ist nicht bestätigt",
+      "transport": "Straßenbahn Karl-Heine-Straße (Linien 3/N3) oder S-Bahn Leipzig MDR, dann ein kurzer Weg",
+      "story": "Eine Stieleiche in der Käthe-Kollwitz-Straße, benannt nach der mit Leipzig verbundenen Grafikerin und Bildhauerin, trägt Leipzigs Naturdenkmalschutz nach demselben Beschluss von 1996 wie sechs weitere Bäume auf dieser Seite. Ihr geschützter Wurzelbereich misst 23 Meter im Durchmesser, ein Beleg für echte Größe auch ohne erfassten Stammumfang und ohne Alter.\n\nDie Stieleiche ist die gewöhnliche Eiche nordeuropäischer Straßen und Parks, benannt nach dem kurzen Stiel, der ihre Eicheln vom Zweig weghält, anders als die ungestielten Eicheln ihrer nahen Verwandten, der Traubeneiche. Unter kommunalem Schutz wird sie die Straße um sie herum nun planmäßig überleben und nicht zufällig.\n\nSie steht gut einen Kilometer nordöstlich der Gruppe an der Karl-Heine-Straße, nah genug, um sie an denselben Weg anzuhängen. Eine Stieleiche dieser Größe ernährt außerdem ein kleines Ökosystem, das vom Gehweg aus niemand sieht: Die Art trägt mehr Insektenleben als fast jeder andere in Mitteleuropa heimische Baum, von Gallwespen, die ihre Eicheln zu harten murmelgroßen Wucherungen formen, bis zu den Raupen, die jedes Frühjahr sämtliche Meisen und Grasmücken der Nachbarschaft satt halten."
+    }
+  }
+}
