@@ -452,6 +452,43 @@ So the copy says what somebody GETS and never how, and never how much.
 Recorded from our own corpus, 2026-08-29. No source URL captured; the wording
 of each app is described from use.
 
+## One account, two surfaces, different sign-in buttons (2026-09-11)
+
+The situation: the website offers Google and a magic link; the app offers Apple
+and Google, with its typed-email route hidden behind `Launch.emailSignIn` since
+2026-08-30. Hidde asked the right question of that gap: "als je hier met e-mail
+kan inloggen maar niet in de app hoe gaat dat."
+
+**What Supabase does, looked up 2026-09-11** (docs at
+supabase.com/docs/guides/auth/auth-identity-linking, read through search because
+this session cannot reach the domain): identities are **linked automatically
+when the email address is the same and verified**. "When a new user signs in
+with OAuth, Supabase Auth will attempt to look for an existing user that uses
+the same email address. If a match is found, the new identity is linked to the
+user." So a magic link to somebody@gmail.com on the website and Continue with
+Google on the same address in the app are ONE account, and nothing has to be
+built for that.
+
+**Two cases it does not cover**, and both are silent:
+
+1. **Apple's Hide My Email** hands over a relay address, which is a different
+   email, so it makes a SECOND account with an empty collection. Nothing in the
+   app says so; the only clue is the address on the account screen.
+2. **A website account on an address that is neither your Apple nor your Google
+   one.** There is no way into it from the app at all while the typed route is
+   hidden.
+
+**What the references do about it: they do not have the problem.** AllTrails,
+Strava, Airbnb and Google Maps offer the SAME identity buttons on every surface,
+and where a collision still happens they say which method you used at the moment
+you try ("an account already exists with that email"). We cannot draw that
+error, because the app has no field to type an address into.
+
+**So the fix is parity of the buttons, not a sentence explaining the gap.** A
+sign-in sheet says what you get and never how it works (the entry above,
+2026-08-29), so an explanatory line about which button to pick would break that
+rule and still leave the trap in place.
+
 ## App Store screenshots (2026-08-29)
 
 **Looked up:** AllTrails (id405075943), komoot (id447374873), PictureThis
