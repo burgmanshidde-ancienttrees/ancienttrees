@@ -1441,3 +1441,49 @@ Read 2026-09-08:
 - https://support.alltrails.com/hc/en-us/articles/360018930652-How-to-write-a-review-for-a-trail
 - https://support.google.com/maps/answer/6230175
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews
+
+---
+
+## Asking a contributor how thick a tree is (2026-09-11)
+
+Nothing is built yet. This is the lookup, recorded before any design, because
+Hidde asked whether we could get a trunk size out of a contributor and turn it
+plus a species into an approximate age.
+
+**Reference: the Ancient Tree Inventory (Woodland Trust).** The largest
+citizen-science tree recording project there is, 15 years of it, and the only
+one of our references whose contributors are asked for a measurement at all.
+Two things it does. Girth is recorded at 1.5 m above the ground, tape level and
+flat against the trunk, with published variants for a leaning trunk and for
+multiple stems. And for anybody without a tape it publishes the HUG: one adult
+hug is 1.5 m fingertip to fingertip, and it prints a threshold table in hugs
+per species (oak 3 hugs, beech 2, sweet chestnut 4, Scots pine 1, hawthorn an
+elbow hug). So the convention for an amateur is not a number in centimetres, it
+is a body.
+
+Note for a later run: this is their published METHOD, not their data. The
+London gate in CLAUDE.md (no Woodland Trust tree records without written
+permission) is untouched by using a measuring convention they publish for
+everyone.
+
+**Reference: ForestScanner and Arboreal Forest.** Both measure diameter at
+breast height from the iPhone's LiDAR, in augmented reality, one shot. The
+peer-reviewed accuracy against calipers is better than a citizen needs: RMSE
+2.3 to 3.1 cm, with a slight underestimating bias of about 1 cm. LiDAR is
+iPhone Pro and Pro Max from the 12 onward, so roughly a third of phones.
+
+**What the two lookups say together, and it is the decision-shaped fact.** The
+error in a DERIVED AGE is dominated by the growth rate assumed for the species,
+not by the measurement. An open-grown trunk puts on roughly 2.5 cm of girth a
+year and a crowded one roughly 1.25, so the honest output is a band a factor of
+two wide whatever the tape says. A hug measured to plus or minus 25 cm and a
+LiDAR scan measured to plus or minus 3 cm produce very nearly the same band.
+The expensive instrument buys precision the answer cannot use.
+
+Read 2026-09-11:
+- https://ati.woodlandtrust.org.uk/how-to-record/recording-guide/how-to-record-the-girth-of-a-tree/
+- https://www.ancienttreeforum.org.uk/wp-content/uploads/2015/03/ATHmeasureleaflet1.pdf
+- https://link.springer.com/article/10.1007/s10531-020-02033-2
+- https://academic.oup.com/forestscience/article/70/4/304/7664433
+- https://www.sciencedirect.com/science/article/pii/S157495412400092X
+- https://en.wikipedia.org/wiki/Tree_girth_measurement
