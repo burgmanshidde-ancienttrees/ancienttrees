@@ -1098,6 +1098,40 @@
         "status": "missing"
       },
       "how_to_recognise": "The thickest trunk in the eucalyptus wood around the old fort, 4.9 metres round and 18 tall. The fort's interior stays shut; the wood around it does not."
+    },
+    {
+      "id": "rom_031",
+      "name": "The Almond of Villa di Faonte",
+      "species": "Almond (Prunus dulcis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 360,
+      "height_m": 20,
+      "location": {
+        "address": "Via delle Vigne Nuove 280, Parco di Villa di Faonte, Montesacro, Roma",
+        "latitude": 41.953859,
+        "longitude": 12.536276,
+        "neighbourhood": "Montesacro"
+      },
+      "story": "Locals call it the Mandorlo di Nerone, Nero's Almond, after the emperor said to have died at this address. The villa belonged to Faonte, a freedman, and ancient sources place Nero's final hours in Faonte's house in 68 CE, fleeing an army that had already declared him a public enemy. Whether this exact tree stood there is unknowable; what the name records is that people have been telling that story about this ground for a long time.\n\nWhat can be measured is a trunk 3.6 metres round, thick for an almond, a species usually kept pruned low in orchards rather than left to grow into a park specimen. Italy's national monumental-tree register put its height at about 20 metres. The registry's own note calls the tree a witness to the site's ancient vineyard cultivation, a claim that reads more like local colour than anything documented, so treat the vines as tradition rather than fact.\n\nThe park around it, Parco di Villa di Faonte, reopened to the public in April 2026 after roughly a decade shut. The archaeological ruins the villa is named for stay closed; the open ground where the almond grows does not. A second, smaller almond stands about 110 metres away, registered separately and still unnamed.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national register, sheet 58/H501/RM/12, girth 360 cm, height 20 m est.)",
+        "https://ilregistrodeglialberi.it/14221-mandorlo-di-nerone-mandorlo-roma-rm-lazio (registered 2021, last surveyed 2026-03-08: girth 350 cm, health Good)",
+        "https://www.romatoday.it/zone/montesacro/villa-faonte-parco-archeologico.html (park reopening, 26 April 2026)"
+      ],
+      "access": "Free. Stands in the Parco di Villa di Faonte, whose open ground reopened to the public on 26 April 2026 after roughly a decade closed; entrances from Via delle Vigne Nuove and Via del Passo del Turchino. The archaeological ruins themselves stay closed; the park around them does not.",
+      "transport": "Metro B1, Jonio, about 12 minutes on foot",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by its trunk, 3.6 metres round, thick for an almond tree. It stands in the open park at Via delle Vigne Nuove 280; a second, smaller almond stands about 110 metres away.",
+      "why_go": "A trunk far heavier than an almond usually grows, on a spot two independent registers and local tradition alike tie to Nero's death in 68 CE."
     }
   ],
   "hero_tree_id": "rom_001"
