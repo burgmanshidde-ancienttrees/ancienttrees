@@ -11,6 +11,78 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation) - Spokane deepened to 13; four other claimed READY leads declined after reading them
+
+`leads.py --ready` listed 8 trees across five cities (spokane 4, hallstatt 1,
+lagos-pt 1, genoa 1, prague 1) as needing only a story. Claimed all five, then
+read every underlying lead in `data/leads/` before writing anything, since the
+tool's own docstring warns it is a proxy (any pass leaving prose counts as
+"source evidence", not a guarantee the tree should ship). Four of the five
+turned out not to be ready on inspection; writing them as-is would have shipped
+either a non-tree, a padding risk the previous pass had already flagged, or a
+hard-rule-10 access question three prior attempts had failed to settle.
+
+**Spokane, 9 -> 13 trees**, the only city whose leads genuinely needed only
+prose. All four are Spokane Heritage Tree Register entries, single-sourced and
+flagged per Step 2's rule that one source ships rather than holds a tree back:
+spk_011 The Towering Norwegian (Norway spruce, ~123ft, register's own second-
+tallest-in-the-city claim), spk_012 Powerful Pine (Mexican pinyon, one of the
+state's largest, an odd transplant for the Inland Northwest), spk_013 Chief
+Garry Park Champion (sycamore, a state size candidate, its own story
+distinguishing it from a different variegated sycamore maple HistoryLink names
+in Browne's Addition so the two are never merged), spk_014 The Littleleaf
+Linden (Moore-Turner Heritage Gardens cluster, ~110 years, species left
+genuinely open on the page because the register's own record contradicts
+itself, title says littleleaf, description says American). Fixed a species-
+naming collision before merging (spk_013 had drafted as "Sycamore Maple",
+hard rule 9 wants the one name ~20 other cities already use, "Sycamore") and
+two Contract C overruns (intro, meta_description) plus one how_to_recognise
+overrun (spk_014) that preflight caught. Build, qa.py, superlatives.py and
+preflight.py all clean. Claim released.
+
+**Hallstatt, declined.** The one READY lead, a copper beech (Blutbuche) near
+the Gosau forestry office, is 9km from Hallstatt centre in a different village,
+with no age or girth, and the pass that found it explicitly deferred all three
+Gosau candidates (this beech plus a wych elm and a school linden, all within
+100m of each other) for "a future pass that covers Gosau" as its own cluster.
+It only surfaced as READY because its "not pursued this pass" phrasing sits
+mid-sentence rather than at the start, which is what `leads.py`'s
+NOT_READY_MARKER regex actually matches (worth a look for whoever next touches
+that script; not fixed here). Shipping one third of a deferred three-tree
+cluster alone, under the wrong city, would pre-empt that future pass for no
+gain. Left as a lead.
+
+**Lagos (PT), declined.** The single "READY" entry is not a tree: it is the
+previous pass's own negative-result note ("No further register or named
+candidates found in Lagos town itself"), with `species: "n/a"`. It cleared
+`leads.py`'s readiness check only because the note itself counts as source
+evidence and nothing checks that `species` is a real species. Nothing to
+write; the note already records where a future pass should look next
+(the named parish churches, Ponta da Piedade, a direct approach to Camara
+Municipal de Lagos).
+
+**Genoa, declined.** The one READY lead is a second Cinnamomum glanduliferum
+at Villa Durazzo Pallavicini, and the lead's own text already argues against
+shipping it: the park already holds one Cinnamomum-family tree (gnv_009) and
+a second one of the same genus stands nearby (gnv_004), so a third this close
+together "risks reading as padding rather than a distinct entry unless it's
+visibly a different, separately worthwhile specimen." No new evidence this
+pass that it is. Left as a lead pending a reason to treat it as distinct.
+
+**Prague, declined.** The one READY lead, an oak at the Dejvice sports ground
+(Dub na sportovisti v Dejvicich), has been checked for public access three
+times across three separate passes (2026-09-10 x2, plus the Czech Wikipedia
+read) and every attempt came back the same way: it stands at a fence between
+a kindergarten and a sports ground, no source establishes a public path
+reaches that specific edge, and hard rule 10 says leave it out on a guess.
+Its own `why` field documents this in full and ends "Leave as a lead until a
+street-level photo or map shows a public way actually touching that NE
+fence." Shipping it now would have overridden that finding on no new
+evidence. Left as a lead; needs a street-level photo, not another search.
+
+Claims released for all five cities. Logged spokane's pass in
+`data/agent-costs.json`.
+
 ## 2026-09-11 (continuation) - Baltimore and Boise open at 4 trees each
 
 Committing verify+write work an earlier attempt in this window had already staged

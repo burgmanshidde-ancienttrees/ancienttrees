@@ -1,6 +1,39 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-11 (continuation 4) - Spokane 9 -> 13 from READY leads; four other "READY" leads read and declined
+
+`leads.py --ready` said 8 trees across 5 cities needed only a story. Claimed all
+five, read every lead's actual text before writing (the tool's own docstring
+warns readiness is a proxy), and only Spokane's four held up. Wrote them
+in-session rather than dispatching an agent, since all four facts were already
+in the register text and no new research was needed.
+
+**Spokane, 9 -> 13 trees:** a Norway spruce (register's own second-tallest-
+in-the-city claim), a Mexican pinyon pine (a state-size claim, an odd species
+for the Inland Northwest), a sycamore state-size candidate in Chief Garry Park
+(story explicitly distinguishes it from a different variegated sycamore maple
+elsewhere in the city so the two never get merged), and a linden in the
+Moore-Turner gardens whose species the register's own record cannot settle
+(title says littleleaf, description says American; left open on the page for
+a reader who can read a leaf). All four single-sourced and flagged per Step 2.
+Fixed a species-naming collision (hard rule 9: "Sycamore" not "Sycamore Maple",
+matching ~20 other cities) and three Contract C length overruns preflight
+caught. Build, qa.py, preflight.py all clean.
+
+**The other four claims released with nothing shipped, on purpose:**
+Hallstatt's one lead is a third of a Gosau cluster a prior pass deliberately
+deferred for its own future pass; Lagos (PT)'s "lead" was a negative-result
+note, not a tree; Genoa's was flagged as a padding risk by the pass that found
+it; Prague's has failed a hard-rule-10 access check three times running. Full
+reasoning for each in CURATION.md, so nobody re-derives it from the same thin
+signal `leads.py --ready` gave this run.
+
+**For whoever next touches leads.py:** its NOT_READY_MARKER regex only
+catches "not pursued"-style phrasing at the start of a sentence, so Hallstatt's
+Blutbuche slipped through as READY while its two sibling leads, declined in
+near-identical wording mid-sentence, correctly did not. Not fixed here.
+
 ## 2026-09-11 (continuation 3) - Shipped Baltimore and Boise: two new cities, 8 trees, both stopped earlier attempts left staged
 
 The wake-up brief said the prior attempt stopped after 31 minutes having shipped
