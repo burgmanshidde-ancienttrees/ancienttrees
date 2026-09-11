@@ -55,6 +55,56 @@ filename names the tree while the coordinate disagrees, `photo_hunt.py` no
 longer records a sweep nothing answered, and preflight refuses two trees wearing
 the same photograph.
 
+## 2026-09-11 (session) - Twelve translated city sets across three languages, and two checks for mistakes I made while writing them
+
+**Twelve cities translated**, on Hidde's "doe die daarna de komende 5 maar ik ga
+doei". Spanish: Buenos Aires, Pamplona, Girona, Menorca, Segovia. German:
+Leipzig, Salzburg, Stuttgart, Graz, Nuremberg. Japanese: Sapporo, Nara. 96 tree
+pages, twelve city pages and twelve question pages. Final clean build and qa:
+**8,477 pages, links resolve, text clean**, and the count is exactly 69 more
+than the previous clean run, which is the six last cities' page sets to the
+page.
+
+**The order came from a bug I fixed first.** `langcheck.py --next` computed
+which language areas have passed the test and then ignored that eight lines
+later, ranking purely on English impressions. On the day it was written the top
+five rows it printed were all Dutch, which runs at 50 percent of its English
+twin with 0 of 3 cities past, while Spanish at 124 percent with 4 of 5 sat four
+rows down. It now ranks proven areas first (de 135 percent, es 124, ja 116) and
+marks the rest, since the verdict date is 2026-09-19 and hiding them would be
+taking that verdict early.
+
+**What the twelve have in common, and it is not the trees.** Every one of these
+pages is really about what its register does not know. Navarra publishes no age
+for any of its 47 declared trees. Catalonia measures height, girth, crown and
+condition and has no age column. Saxony and Bavaria record the year a tree was
+DESIGNATED, so 1933 and 601/96 are floors and not ages. Castilla y Leon
+catalogued for size in 2006 and never asked. Buenos Aires has no downloadable
+register at all. Graz's best-dated tree is a maple that appears in a 1956
+survey. That honesty is the hardest thing to carry across a language and it
+carried intact, including every question back to the reader.
+
+**Two checks, both for mistakes I made in this session rather than found.**
+
+- Writing Nara I put a Cyrillic fragment inside a Japanese sentence, and the
+  edit that fixed it introduced a second one minutes later. Nothing could see
+  either: the JSON parses, the character count is right, the build renders the
+  nonsense faithfully. `check_translations_have_no_stray_script()` in preflight
+  refuses Cyrillic or Greek in any i18n file.
+- Three times I wrote a translation while an Astro build was running, so qa
+  walked a dist that was half old. It reported 188 dead links the first time
+  and two the third, and each cost a round of diagnosis to conclude nothing was
+  wrong with the site. `check_dist_is_newer_than_the_source()` in qa.py now
+  refuses outright when anything under data/ or site/src is newer than the
+  newest page the build wrote. It runs first and returns, because every other
+  failure is meaningless on a stale build.
+
+Japanese counts in CHARACTERS rather than words, following the convention
+kyoto.json set: intro 150-250, stories 350-600. Umlauts and ß restored in the
+German sets and Catalan names kept in the Spanish ones, because the English
+files transliterate for readers who search in English and a translated page
+that copied that would read as written by somebody who had never been there.
+
 ## 2026-09-11 - New city Tulsa (1 tree), 159 trees got a real best_time for free, 13 country pages' stale counts fixed, and a batched verify pass cleared 5 thin cities
 
 7-day visits (`visitors.py`): 1264 visits, 1593 page views, trending down day over day (202 on 09-03 to 83 on 09-10).
