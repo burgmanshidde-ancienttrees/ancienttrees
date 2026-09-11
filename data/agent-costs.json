@@ -7498,6 +7498,24 @@
         "note": "MASAF register within reach confirmed exhausted (sheet-id cross-reference against published/blocked/leads); Via Bagnulo pine still unresolved on alive-now after 2 independent search attempts; 2 new Vico Equense wrong-container leads recorded",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "tallinn",
+        "kind": "verify",
+        "tokens": 145000,
+        "trees": 1,
+        "note": "Kadriorg register candidates mostly already-leaded ornamental cultivars; yield came from a dendrologist press ranking naming the thickest tree in the city; 3 more single-sourced leads recorded",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "tallinn",
+        "kind": "write",
+        "tokens": 8000,
+        "trees": 1,
+        "note": "wrote tln_006 (Tammesalu Oak) in-session from the verify pass output; updated intro/meta/question fields and FAQ for the new tree count (5 to 6)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
