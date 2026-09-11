@@ -1232,6 +1232,34 @@ def all_photos(tree):
     return out
 
 
+def check_translations_have_no_stray_script():
+    """A translation must not carry letters from an alphabet it does not use.
+
+    Written 2026-09-11 after making the same mistake twice inside five minutes
+    while writing the Japanese Nara overlay: a Cyrillic fragment landed inside
+    a Japanese sentence once, and the fix for it introduced a second one. Both
+    read as noise to anybody who can read the page, and neither is visible to
+    any other check here: the JSON is valid, the character count is right, and
+    the build renders the nonsense faithfully.
+
+    It is deliberately narrow. Cyrillic and Greek only, because no language
+    this site publishes uses either, and the Latin alphabet inside Japanese is
+    ordinary (a species binomial, a road number). Adding a language that does
+    use one means narrowing this per language rather than deleting it.
+    """
+    out = []
+    bad = re.compile(r"[\u0400-\u04FF\u0370-\u03FF]+")
+    for path in sorted(glob.glob("data/i18n/*/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+        blob = json.dumps(doc, ensure_ascii=False)
+        for hit in set(bad.findall(blob)):
+            out.append("%s: carries %r, which is Cyrillic or Greek. No language "
+                       "this site publishes uses either, so it is a slip of the "
+                       "keyboard rather than a word." % (path, hit))
+    return out
+
+
 def check_one_photograph_per_tree():
     """No two trees may wear the same photograph.
 
@@ -2274,6 +2302,7 @@ def main():
                 + check_a_permission_covers_the_photographer_it_names()
                 + check_photos_are_not_the_lead_twice()
                 + check_one_photograph_per_tree()
+                + check_translations_have_no_stray_script()
                 + check_every_tree_names_a_source()
                 + check_a_tree_can_be_told_apart()
                 + check_story_length()
