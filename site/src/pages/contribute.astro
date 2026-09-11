@@ -56,6 +56,9 @@ const headExtra = ldScript(graph);
     <label>Why is it remarkable?
       <textarea id="sg-why" rows="3" placeholder="Old, huge, a story attached, or simply the tree everyone knows"></textarea>
     </label>
+    <label>How far round is the trunk? <span class="sg-hint">Optional. In metres, at chest height. One hug is about 1.5 m.</span>
+      <input type="text" inputmode="decimal" id="sg-girth" placeholder="4.2">
+    </label>
     <label>Your name <span class="sg-hint">Optional. Never shown on the site.</span>
       <input type="text" id="sg-name" placeholder="First name is fine">
     </label>
@@ -88,7 +91,19 @@ const headExtra = ldScript(graph);
 (function() {
   var f = document.getElementById('suggest'), note = document.getElementById('sg-note');
   if (!f) return;
-  var FIELDS = ['sg-kind', 'sg-city', 'sg-tree', 'sg-where', 'sg-why', 'sg-name'];
+  var FIELDS = ['sg-kind', 'sg-city', 'sg-tree', 'sg-where', 'sg-why', 'sg-girth', 'sg-name'];
+  // "4.2", "4,2", "4.2 m" and "420 cm" are the same trunk; a bare number under
+  // 30 is metres. The same rule as Sightings.girthCm(parsing:) in the app, and
+  // the same range as the database's own check.
+  function girthCm(v) {
+    var t = (v || '').toLowerCase().replace(',', '.').trim();
+    if (!t) return null;
+    var isCm = /cm$/.test(t), isM = !isCm && /m$/.test(t);
+    var n = parseFloat(t.replace(/[^0-9.]/g, ''));
+    if (!(n > 0)) return null;
+    var r = Math.round(isCm ? n : (isM || n < 30 ? n * 100 : n));
+    return (r >= 10 && r <= 5000) ? r : null;
+  }
   // The one thing still kept on the device, and deliberately: text somebody
   // has typed and not yet sent is not a saved tree, it is an unfinished
   // sentence, and losing it to a mis-tap helps nobody. Written as a literal
@@ -151,18 +166,23 @@ const headExtra = ldScript(graph);
     at.track('suggestion-submit');
     var headers = {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'};
     if (s) headers['Authorization'] = 'Bearer ' + s.access_token;
+    var body = {
+      kind: kindNow,
+      city: city,
+      tree: document.getElementById('sg-tree').value.trim(),
+      location_hint: document.getElementById('sg-where').value.trim(),
+      why: document.getElementById('sg-why').value.trim(),
+      name: document.getElementById('sg-name').value.trim(),
+      page: document.referrer || null
+    };
+    // Only when there is one: a column the database does not know yet would
+    // refuse the whole row, and the tree matters more than the number.
+    var girth = girthCm(document.getElementById('sg-girth').value);
+    if (girth) body.girth_cm = girth;
     fetch('${SUPABASE_URL}/rest/v1/submissions', {
       method: 'POST',
       headers: headers,
-      body: JSON.stringify({
-        kind: kindNow,
-        city: city,
-        tree: document.getElementById('sg-tree').value.trim(),
-        location_hint: document.getElementById('sg-where').value.trim(),
-        why: document.getElementById('sg-why').value.trim(),
-        name: document.getElementById('sg-name').value.trim(),
-        page: document.referrer || null
-      })
+      body: JSON.stringify(body)
     }).then(function(r) {
       if (r.ok) {
         f.hidden = true;

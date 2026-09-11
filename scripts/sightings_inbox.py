@@ -397,7 +397,7 @@ def main():
         print("sightings inbox: SUPABASE_SERVICE_KEY absent, nothing read")
         return 0
     try:
-        rows = supa("/rest/v1/sightings?select=user_id,id,tree_id,name,note,species,age,"
+        rows = supa("/rest/v1/sightings?select=user_id,id,tree_id,name,note,species,age,girth_cm,"
                     "lat,lng,taken_at,status,photo,shared,updated_at"
                     "&photo=not.is.null&shared=eq.true&order=updated_at.asc") or []
     except Exception as e:
@@ -488,7 +488,8 @@ def main():
                 leads_doc["leads"].append({
                     "sighting_id": sid, "user_id": row["user_id"], "mine": is_mine,
                     "name": row.get("name") or "", "species": row.get("species"),
-                    "age": row.get("age"), "note": (row.get("note") or "")[:500],
+                    "age": row.get("age"), "girth_cm": row.get("girth_cm"),
+                    "note": (row.get("note") or "")[:500],
                     "latitude": row.get("lat"), "longitude": row.get("lng"),
                     "taken_at": row.get("taken_at"), "photo": row.get("photo"),
                     "nearest_published_m": dist,
@@ -520,6 +521,10 @@ def main():
             "match": how, "distance_m": dist, "mine": is_mine,
             "current_photo": t["photo_status"], "current_source": t["photo_source"],
             "name": row.get("name") or "", "species": row.get("species"),
+            # A reader's measurement of a tree we map. Where our tree carries
+            # no girth_cm it is a candidate for it, stated as a reader's
+            # measurement in verify_notes, never as a register figure.
+            "girth_cm": row.get("girth_cm"),
             "note": (row.get("note") or "")[:300],
             "taken_at": row.get("taken_at"), "photo_path": row["photo"],
             "file": os.path.relpath(dest, ROOT),

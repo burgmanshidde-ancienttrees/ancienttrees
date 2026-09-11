@@ -73,6 +73,12 @@ final class Sightings {
         /// Filled in by you, on the tree's own page, and empty until then.
         var species: String?
         var age: String?
+        /// Around the trunk, in centimetres, measured at chest height (Hidde,
+        /// 2026-09-11: "we zouden girth toevoegen als data punt"). Girth plus a
+        /// species is how every register dates a tree, so this is the one
+        /// number that turns "how old is it" from a guess into an estimate.
+        /// Optional, so a file written before it existed still decodes.
+        var girthCm: Int?
         var lat: Double
         var lng: Double
         var date: Date = Date()
@@ -240,7 +246,8 @@ final class Sightings {
         let folderNew = folder.appendingPathComponent(new.uuidString + ".jpg")
         try? FileManager.default.moveItem(at: folderOld, to: folderNew)
         row = Sighting(id: new, treeId: row.treeId, name: row.name, note: row.note,
-                       species: row.species, age: row.age, lat: row.lat, lng: row.lng,
+                       species: row.species, age: row.age, girthCm: row.girthCm,
+                       lat: row.lat, lng: row.lng,
                        date: row.date, photo: row.photo == nil ? nil : new.uuidString + ".jpg",
                        status: row.status)
         all[i] = row
@@ -322,14 +329,41 @@ final class Sightings {
     /// invullen." So a sighting grows the same fields one of ours has, and the
     /// page that renders ours renders it.
     func update(_ id: UUID, name: String? = nil, species: String? = nil,
-                age: String? = nil, note: String? = nil, status: Status? = nil) {
+                age: String? = nil, girthCm: Int? = nil,
+                note: String? = nil, status: Status? = nil) {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
         if let status { all[i].status = status }
         if let name, !name.isEmpty { all[i].name = name }
         if let species { all[i].species = species.isEmpty ? nil : species }
         if let age { all[i].age = age.isEmpty ? nil : age }
+        // Zero means "clear it", the same way an empty string does for age.
+        if let girthCm { all[i].girthCm = girthCm > 0 ? girthCm : nil }
         if let note { all[i].note = note }
         persist()
+    }
+
+    /// "4.2", "4,2", "4.2 m" and "420 cm" all mean the same trunk. A bare
+    /// number under 30 is metres, because nobody measures a 29 cm trunk and
+    /// nobody's tree is 30 m round; the unit, when typed, always wins. The
+    /// range is the database's own check, so a value that would be refused
+    /// there is refused here first. Mirrored in site/src/pages/contribute.astro.
+    nonisolated static func girthCm(parsing text: String) -> Int? {
+        let t = text.lowercased()
+            .replacingOccurrences(of: ",", with: ".")
+            .trimmingCharacters(in: .whitespaces)
+        let isCm = t.hasSuffix("cm")
+        let isM = !isCm && t.hasSuffix("m")
+        guard let n = Double(t.filter { "0123456789.".contains($0) }), n > 0 else { return nil }
+        let cm = Int((isCm ? n : (isM || n < 30 ? n * 100 : n)).rounded())
+        return (10...5000).contains(cm) ? cm : nil
+    }
+
+    /// 420 -> "4.2", 415 -> "4.15", 400 -> "4".
+    nonisolated static func metres(_ cm: Int) -> String {
+        var s = String(format: "%.2f", Double(cm) / 100)
+        while s.hasSuffix("0") { s.removeLast() }
+        if s.hasSuffix(".") { s.removeLast() }
+        return s
     }
 
     /// The same page ours get, from what you have filled in so far.
@@ -367,7 +401,8 @@ final class Sightings {
              precision: .confirmed,
              photo: nil,
              bestTime: nil,
-             peak: nil)
+             peak: nil,
+             girthCm: s.girthCm)
     }
 
     // MARK: - writing
@@ -644,6 +679,7 @@ final class Sightings {
             s.note = (r["note"] as? String) ?? ""
             s.species = r["species"] as? String
             s.age = r["age"] as? String
+            s.girthCm = r["girthCm"] as? Int
             s.photo = r["photo"] as? String
             // Dates have been written two ways by JSONEncoder over this app's
             // life, as a number of seconds and as a string, and a salvage pass
