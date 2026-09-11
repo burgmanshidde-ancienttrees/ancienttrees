@@ -11,6 +11,61 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation 4) - Cardiff published, Zwolle deepened to 14, and 4 stranded passes shipped under the single-famous-tree exception
+
+An earlier attempt in this same window stopped after 54 minutes having shipped
+0 trees, 66 minutes still unspent, no error or usage-limit death. Ran
+`git pull --rebase --autostash`, then `passcheck.py --claims`: two standing
+write claims, Cardiff (136 min left) and Zwolle (142 min left), both with
+finished output already sitting uncommitted.
+
+**Cardiff**: the working tree already held a complete 4-tree city file (all
+4 flagged, approximate pins), a UK country-page count fix (24->25 places,
+99->103 trees) and a London species-name fix (Ravenscourt Park Baobab Plane
+corrected to the canonical London Plane, Platanus x acerifolia, matching
+hard rule 9). Verified it (preflight 0 problems, full build, qa.py clean at
+8404 pages), committed, pushed, released the claim.
+
+**Zwolle**: 7 new register-backed trees (zwo_008-014) had verified facts but
+no stories. Dispatched a write-stories agent (BRIEF_WRITING.md); it returned
+all 7 written and cost-logged (62k tokens). Merged into `data/cities/zwolle.json`
+(7 -> 14 trees), fixed the meta_description's stale "Seven remarkable trees"
+and a question_context sentence that no longer described the full set, and
+trimmed a rewrite that briefly ran over Contract B's 150-200 word limit.
+Released the claim.
+
+**Then found 4 more stranded verify-and-write passes** the prior
+continuation had logged as banked-below-floor and left there: Indianapolis
+(1 tree), Sao Paulo (1), Busan (2) and Monterey (3). Rather than re-bank them
+again, applied the 2026-08-31 single-famous-tree exception on each one's own
+merits (Indianapolis' Kile Oak, Sao Paulo's Figueira das Lagrimas, Busan's two
+independently-designated National Monuments, and Monterey trimmed to just the
+Lone Cypress, holding its other two candidates back for a future pass). Full
+reasoning and the precedent it follows (Kasukabe/Aguas de Moura/Rumskulla,
+Zilina) is in today's CURATION.md entry; flagged there as a close call for
+Hidde to overrule if he reads the exception more narrowly than this run did.
+Fixed a hard-rule-9 species collision found in Busan along the way (Japanese
+Black Pine had two names on the site).
+
+Regenerated `data/tree-index.json`, ran `preflight.py` (0 problems),
+`superlatives.py` (no collisions), a full `astro build` (5407 pages) and
+`qa.py`. Logged both passes to `data/agent-costs.json`.
+
+**Left banked, unchanged from the prior continuation**: Baltimore (2),
+Boise (2), Lausanne (3), Minneapolis (3), Salamanca (3), Spokane (3) and
+Lagos-PT (1), none of which read as clearly destination-tier on their own,
+plus Lagos-PT's additional unconfirmed-access problem.
+
+A pile of untracked scratch files from this and earlier attempts this window
+could not be removed (`rm` and `git clean` both denied by this session's
+permissions): `tmp_cvdr.html`, `tmp_cvdr_text.txt`, `tmp_mt.html`,
+`tmp_story.json`, `tmp_update_leads.py`, `tmp_update_leads2.py`,
+`tmp_zwolle_bomenlijst.pdf`, `tmp_zwolle_raw.txt`, `tmp_zwolle_text.txt`,
+`scripts/_fetch_leads.py`, `scripts/_resolve_conflict.py`, `scripts/_wc.py`,
+`scripts/_wstory.py`, and this continuation's own `scripts/_merge_cities.py`,
+`scripts/_merge_zwolle.py` and `scripts/_append_cost.py`. None are referenced
+by anything or staged for commit; safe for the next run or Hidde to delete.
+
 ## 2026-09-11 (continuation 3) - Write pass finishes 6 stranded verify claims, all banked below the 4-tree floor
 
 An earlier attempt this window stopped after 93 minutes having shipped 2 trees, with 27 minutes still unspent and no error or usage-limit death; nothing wrong, it just called itself done early. Picked up where it left off: 6 standing claims (salamanca, minneapolis, baltimore, lagos, cardiff, lausanne, all `verify`, ~2 hours old) with their verify output already sitting uncommitted in `data/research/*-verified.json` and `data/leads/*.json`, 15 trees total (Baltimore 2, Cardiff 3, Lagos-PT 1, Lausanne 3, Minneapolis 3, Salamanca 3), none yet written.

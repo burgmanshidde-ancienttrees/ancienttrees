@@ -1,0 +1,63 @@
+{
+  "city": "Indianapolis",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Indianapolis has one mapped tree so far, and it is the reason we started looking here at all. The Kile Oak is the largest bur oak in metropolitan Indianapolis and the sixth largest anywhere in the state, growing on a residential street in Irvington since roughly the 1600s or 1700s. Mae Kile would not sell her house to anyone who refused to promise to keep it, and from 1928 kept a guestbook that filled with visitors from other countries. The Irvington Historical Society still maintains the lot, fenced and marked with two bronze plaques.",
+  "meta_description": "The Kile Oak: the largest bur oak in Indianapolis, 300 to 500 years old, kept alive by one family's promise since 1928. Free to visit.",
+  "question_meta": "Indianapolis' oldest tree, and its only one on our map so far, is the Kile Oak, a bur oak estimated at 300 to 500 years old in Irvington.",
+  "question_answer": "Indianapolis' oldest tree, and its only one on our map so far, is the Kile Oak: a bur oak estimated at 300 to 500 years old, standing on a fenced preserve lot on East Beechwood Avenue in Irvington.",
+  "question_context": "The Irvington Historical Society, which has owned the lot since 1973, puts the oak's age at 300 to 400 years; other accounts widen that to 300 to 500. Nobody has narrowed it further, because nobody has cored it. What is certain is that it was already old when Rev. Oliver W. Kile, a retired Ohio evangelist and Civil War veteran, bought the lot in 1901. His daughter Mae Kile campaigned to protect it from 1926 until her death, refusing to sell the house unless a buyer promised to keep the tree, and from 1928 kept a guestbook that filled with signatures from other countries: people travelled to a residential street to look at a tree standing in somebody's yard. The Society measures it at 483 centimetres round and 87 feet tall, with a crown spreading 122 feet, naming it the largest bur oak in any Indiana metro area and the sixth largest anywhere in the state. In October 1976 it was named a Bicentennial Tree of the Year.",
+  "hero_tree_id": "ind_001",
+  "oldest_tree_id": "ind_001",
+  "faq": [
+    {
+      "q": "How old is the Kile Oak?",
+      "a": "Between 300 and 500 years, by the Irvington Historical Society's own estimate; nobody has cored it for an exact ring count."
+    },
+    {
+      "q": "Can you visit the Kile Oak?",
+      "a": "Yes. It stands on a dedicated preserve lot on East Beechwood Avenue, fenced for protection, with staffed museum hours Saturday and Sunday 1 to 4pm; the lot itself can be visited more generally."
+    },
+    {
+      "q": "Why is it called the Kile Oak?",
+      "a": "After Mae Kile, who refused to sell her family's house unless the buyer promised to protect the tree, and kept a visitor's guestbook for it from 1928 until her death."
+    },
+    {
+      "q": "Is the Kile Oak still healthy?",
+      "a": "Yes, though Hurricane Helene's remnants broke some limbs in September 2024; the damage was cleared and the lot reopened."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ind_001",
+      "name": "The Kile Oak",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "roughly 300 to 400 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 483,
+      "location": {
+        "address": "5939 East Beechwood Avenue, South Irvington, Indianapolis, Indiana",
+        "latitude": 39.7628,
+        "longitude": -86.0657,
+        "neighbourhood": "Irvington, Indianapolis"
+      },
+      "verified_sources": [
+        "https://www.irvingtonhistory.org/visit/exhibits/kile-oak/ (Irvington Historical Society, the site's own steward and owner)",
+        "https://en.wikipedia.org/wiki/Kile_Oak_Tree"
+      ],
+      "access": "Free, a dedicated nature-study preserve open to adults and supervised children's groups, maintained by the Irvington Historical Society and Irvington Historic Landmarks Foundation. The wooded lot carries an informational sign and two bronze plaques (1973 and 1976). General visiting is possible on the lot; museum-staffed hours are Saturday-Sunday 1-4pm per the Society's own page, and the tree itself is fenced for protection.",
+      "transport": "Irvington neighbourhood, Near Eastside Indianapolis; residential street, on-street parking",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Mae Kile would not sell her house to anybody who refused to promise to keep the oak. She campaigned for it from 1926 until her death, and from 1928 she kept a guestbook, which filled with signatures from other countries. People travelled to a residential street in Irvington to look at a tree in somebody's yard, and signed the book on their way out.\n\nHer father, Rev. Oliver W. Kile, a retired Ohio evangelist and Civil War veteran, had bought the lot in 1901. The oak was older than the state he bought it in. The Irvington Historical Society, which took over the property in 1973 and still keeps it, records 190 inches around the trunk, 483 centimetres, 87 feet tall, with a crown spreading 122 feet: the largest bur oak in any metropolitan city in Indiana, and sixth largest anywhere in the state.\n\nThe Society puts its age at 300 to 400 years and other accounts widen that to 300 to 500. Nobody has narrowed it. In October 1976 it was named a Bicentennial Tree of the Year and described as a living witness of the American Revolutionary period, which on either band it is. Two bronze plaques, 1973 and 1976, sit at its foot.\n\nThe remnants of Hurricane Helene came through in September 2024 and hurt it. The broken limbs were taken off and the lot opened again.",
+      "how_to_recognise": "You can recognise it by the fence ringing its trunk and the two bronze plaques, dated 1973 and 1976, at its foot. It stands on the wooded preserve lot on East Beechwood Avenue, 483 centimetres round under a 122-foot crown.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

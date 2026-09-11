@@ -1,0 +1,63 @@
+{
+  "city": "Monterey",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Monterey has one mapped tree so far, and it needs no introduction: the Lone Cypress, growing alone on bare granite above Carmel Bay, is the single most reproduced tree on the California coast and a registered trademark of the company that owns the headland beneath it. Painters and photographers have worked this stretch of shoreline since the nineteenth century, but this one tree, propped with cables since 1948 and fenced off since 1969, is the reason people stop the car.",
+  "meta_description": "The Lone Cypress: a registered trademark on a Monterey headland, propped by cables since 1948. The most photographed tree on the California coast.",
+  "question_meta": "Monterey's oldest mapped tree is the Lone Cypress, estimated at 200 to 300 years old on a granite headland above Carmel Bay.",
+  "question_answer": "Monterey's oldest mapped tree, by best estimate, is the Lone Cypress, thought to be 200 to 300 years old. It grows alone on a bare granite outcrop on the 17-Mile Drive above Carmel Bay, exactly as its name says.",
+  "question_context": "Nobody has cored the Lone Cypress, and nobody will: coring a tree already fighting for root space in bare rock would be reckless. The estimate of 200 to 300 years comes from its size and growth rate rather than a ring count, and it is the figure the Pebble Beach Company and local naturalists both use. It has grown that long on a wind-scoured granite headland on the 17-Mile Drive, roots wedged into rock cracks rather than soil, which is also why it stayed small: exposure, not age, has kept it low and gnarled rather than tall. The company that owns the headland registered a drawing of the tree as a trademark in 1919 and has defended it in court since, which makes this the only tree on our map with its own intellectual property lawyers. It is fenced and cabled for support, so visitors view it from a platform rather than standing at the trunk, and it remains, by any account, the most photographed tree on the California coast.",
+  "hero_tree_id": "mty_001",
+  "oldest_tree_id": "mty_001",
+  "faq": [
+    {
+      "q": "Can you walk up to the Lone Cypress?",
+      "a": "No. The tree has been fenced off from the public since 1969 to protect its roots, and visitors view it from a platform on 17-Mile Drive, a private toll road (about $12.50 per vehicle, free for cyclists)."
+    },
+    {
+      "q": "How old is the Lone Cypress?",
+      "a": "An estimated 200 to 300 years, based on its size and growth rate rather than a ring count; nobody has cored it."
+    },
+    {
+      "q": "Why is the Lone Cypress a trademark?",
+      "a": "The Pebble Beach Company registered a drawing of the tree in 1919 and has defended the mark in court since, making it one of the few trees anywhere with its own intellectual property lawyers."
+    },
+    {
+      "q": "Where exactly is the Lone Cypress?",
+      "a": "On a granite headland on 17-Mile Drive, a private scenic road through Pebble Beach, between Cypress Point Club and Pebble Beach Golf Links."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mty_001",
+      "name": "The Lone Cypress",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "age_estimate": "roughly 275 years",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": null,
+      "location": {
+        "address": "17-Mile Drive, between Cypress Point Club and Pebble Beach Golf Links, Pebble Beach, California",
+        "latitude": 36.5686,
+        "longitude": -121.9653,
+        "neighbourhood": "Pebble Beach"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Lone_Cypress",
+        "https://www.roadtripusa.com/pacific-coast/california/central-california/17-mile-drive-pebble-beach"
+      ],
+      "access": "View only, from a fenced roadside viewpoint on 17-Mile Drive; the tree itself has been fenced off from the public since 1969 to protect its roots. 17-Mile Drive is a private, gated scenic road with a per-vehicle toll (about $12.50 at last check); bicyclists enter free. About a 10-15 minute drive from central Monterey via the Pacific Grove Gate; no direct public transit reaches it, this is a car trip, not a walk.",
+      "transport": "Car only; nearest gate (Pacific Grove Gate, Hwy 68) about 10 minutes from downtown Monterey",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This tree is a registered trademark. The Pebble Beach Company registered a drawing of it in 1919 and has defended the mark ever since, which makes the Lone Cypress one of very few trees with lawyers.\n\nIt has earned the attention. It grows out of a granite headland above Carmel Bay, by itself, on rock, in the wind coming off the Pacific, and it is one of the most photographed trees in North America. Nobody knows how old it is. The usual figure is a seeding around 1750, and that is inferred rather than measured, because coring the trunk to count the rings would damage a tree that is already being held up. The longest-lived Monterey cypress on record reached 284 years, so on the usual estimate this one is near the ceiling for its species.\n\nThe propping started early. A retaining wall went in under the roots in 1941 and steel cables followed in 1948; the cables are still there. Somebody tried to burn it in 1984 and failed. A storm in February 2019 took off a major limb.\n\nIt has been fenced since 1969, because feet on the root plate were doing what the weather could not. You look at it from a pullout on 17-Mile Drive, a private toll road: about $12.50 for a car, nothing on a bicycle. The fence is as close as anyone gets.",
+      "how_to_recognise": "You can recognise it by the steel cables holding it to the rock and the low stone wall built under its roots. It stands alone on a granite headland above Carmel Bay, fenced off, with no other tree on the point.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

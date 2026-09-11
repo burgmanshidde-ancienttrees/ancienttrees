@@ -1,0 +1,65 @@
+{
+  "city": "Sao Paulo",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "Sao Paulo's Figueira das Lagrimas, the Fig Tree of Tears, is the only tree we map here so far, and reportedly the oldest documented tree in the city. Families said goodbye beneath it to sons leaving for the Paraguayan War and to law students bound for other cities, which is how the street beside it, Estrada das Lagrimas, got its name. The state declared it heritage in 1989, after it nearly died in the 1970s; rot was cut from the trunk in 2001. In 2019 the wall around it came down so people could get close to it again.",
+  "meta_description": "The Figueira das Lagrimas: reportedly the oldest documented tree in Sao Paulo, heritage-listed since 1989. Free to visit in Ipiranga.",
+  "question_meta": "Sao Paulo's oldest documented tree, and the only one on our map so far, is the Figueira das Lagrimas, a fig over 200 years old in Sacoma.",
+  "question_answer": "Sao Paulo's oldest documented tree, and the only one on our map so far, is the Figueira das Lagrimas, a fig over 200 years old on Estrada das Lagrimas in the Sacoma district.",
+  "question_context": "A Portuguese traveller, Emiliano Zaluar, wrote of the fig's magnificence in 1861, and one Sao Paulo account calls it the oldest documented tree in the city; no source gives it a precise age with a stated basis, so two centuries and more is as far as the evidence honestly goes. Tradition holds that both Pedro I and Pedro II passed beneath it. The street beside it, Estrada das Lagrimas, the Road of Tears, was the route out of the city, and families came this far to say goodbye to sons leaving for the Paraguayan War and to law students bound away: the fig at the roadside is where they turned back. It nearly died in the 1970s and faced removal; a younger Ficus benjamina seeded itself alongside it in 1977 and still grows there. Necrotic wood was cut from the trunk in 2001, and agronomists have watched it since and report good signs of recovery. The state declared it environmental heritage in 1989. In 2019 the wall around it came down so visitors could approach it again.",
+  "hero_tree_id": "spa_001",
+  "oldest_tree_id": "spa_001",
+  "faq": [
+    {
+      "q": "How old is the Figueira das Lagrimas?",
+      "a": "Over two hundred years by most accounts, though no source gives a precise, sourced age; it is often called the oldest documented tree in Sao Paulo."
+    },
+    {
+      "q": "Why is it called the Fig Tree of Tears?",
+      "a": "The street beside it, Estrada das Lagrimas (Road of Tears), was the route out of the city, and families said goodbye here to sons leaving for war and students leaving for other cities."
+    },
+    {
+      "q": "Can you visit the Figueira das Lagrimas?",
+      "a": "Yes, free. It stands in a small fenced public enclosure on Estrada das Lagrimas in the Sacoma district; a 2019 renovation removed the old wall specifically to bring visitors closer."
+    },
+    {
+      "q": "Is the tree still alive and healthy?",
+      "a": "Yes. It nearly died in the 1970s and had rot cut from its trunk in 2001, but municipal agronomists have monitored it since and report good signs of recovery."
+    }
+  ],
+  "trees": [
+    {
+      "id": "spa_001",
+      "name": "Figueira das Lagrimas (Fig Tree of Tears)",
+      "species": "Ficus organensis",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": null,
+      "location": {
+        "address": "Estrada das Lagrimas 515-537, Sacoma, Ipiranga, Sao Paulo, Brazil",
+        "latitude": -23.60604,
+        "longitude": -46.59858,
+        "neighbourhood": "Sacoma (Ipiranga)"
+      },
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Figueira_das_L%C3%A1grimas",
+        "https://saopauloantiga.com.br/o-choro-silencioso-da-figueira-das-lagrimas/",
+        "https://portaldoipiranga.com/index.php/2019/07/24/area-da-figueira-das-lagrimas-passa-por-revitalizacao/",
+        "https://catracalivre.com.br/arquivo/voce-conhece-a-arvore-mais-antiga-de-sao-paulo/"
+      ],
+      "access": "Free. Stands in a small fenced public enclosure on an ordinary city street (Estrada das Lagrimas), with plaques; a 2019 municipal revitalisation removed the old surrounding wall specifically to make the tree more approachable to the public.",
+      "transport": "Sacoma or Ipiranga area, Sao Paulo; nearest CPTM/Metro station is Sacoma (Line 2-Green), roughly 15-20 minutes on foot; check current walking route",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The street is named for the goodbyes said under this tree. Estrada das Lágrimas, the Road of Tears, was the way out of São Paulo, and families came this far with sons leaving for the Paraguayan War and with law students bound away from the city. The fig at the roadside is where they stopped and turned back.\n\nA Portuguese traveller, Emiliano Zaluar, wrote of its magnificence in 1861, and one São Paulo account calls it the oldest documented tree in the city. No source gives an age with a stated basis behind it, so two centuries and more is as far as the evidence honestly goes. Tradition has both Pedro I and Pedro II passing beneath it.\n\nIt nearly went. The tree was ailing by the 1970s and faced removal; a Ficus benjamina seeded itself alongside in 1977 and is growing there still; necrotic wood was cut out of the trunk in 2001. Municipal agronomists have watched it ever since and report good signs of recovery. The state declared it environmental heritage in 1989, or 1988 depending on which account you read, which made felling it illegal, and the city listed it again in 2016.\n\nIn 2019 the wall around it came down so that people could get close to it again. It stands now in a small fenced enclosure on an ordinary street, with plaques at its foot: a quiet spot for the place where a city did its crying.",
+      "how_to_recognise": "You can recognise it as the large fig inside a low fenced enclosure at the roadside on Estrada das Lágrimas, with plaques at its foot. A second, younger fig has grown up right beside it since 1977.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

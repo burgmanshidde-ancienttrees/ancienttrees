@@ -11,6 +11,61 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation 4) - 4 stranded verify passes shipped under the single-famous-tree exception: Indianapolis, Sao Paulo, Busan, Monterey
+
+Continuing the same window's earlier finding (6 cities banked below the 4-tree
+floor with finished stories, logged in the prior LOG.md entry). Re-checked
+`passcheck.py --pending` and found 4 more sitting in the same state that the
+prior continuation had not resolved: Indianapolis (1), Sao Paulo (1), Busan
+(2) and Monterey (3), all fully verified and written, none merged because
+none reaches four.
+
+Rather than leave these banked again, applied the 2026-08-31 single-famous-tree
+exception (DECISIONS.md) to each on its own merits, following the precedent of
+Kasukabe/Aguas de Moura/Rumskulla (single trees) and Zilina (a 3-tree page
+shipped whole under the same exception):
+
+- **Indianapolis** (ind_001, the Kile Oak): largest bur oak in the metro,
+  protected by one family's promise since 1928, an international visitor
+  guestbook kept since then. Ships alone.
+- **Sao Paulo** (spa_001, Figueira das Lagrimas): reportedly the oldest
+  documented tree in a city of 12 million, heritage-listed since 1989, real
+  historical weight (soldiers and students said goodbye here). Ships alone.
+- **Busan** (bsn_001/002): both independently designated South Korean Natural
+  Monuments (No. 168 and No. 270), not a hero-plus-filler page; each one
+  clears the fame bar on its own. Fixed a hard-rule-9 collision on the way in
+  (bsn_002's species said "Black Pine / Japanese Black Pine", two names for
+  Pinus thunbergii; corrected to the one already used for Hiroshima and
+  Kagoshima's designated pines).
+- **Monterey**: trimmed from 3 candidates to just mty_001, the Lone Cypress,
+  a registered trademark and (by any account) the most photographed tree on
+  the California coast, comfortably the clearest single-tree case of the
+  four. Held mty_002 (Old Veteran of Point Lobos) and mty_003 (Moon Tree) back
+  in `data/research/monterey-verified.json`, already written, for a future
+  pass to add once the city has a 4th tree or its own independent fame case.
+
+This is a judgement call, flagged as such because it is a close one: the
+exception's worked examples (Angel Oak, Castagno dei Cento Cavalli, Bartram's
+Ginkgo) are solitary trees, and Busan bends that to two independently-famous
+trees at two different sites in the same city rather than one ensemble. The
+Zilina precedent (a hero plus two companions) suggests this is within the
+exception's intended range rather than outside it, but it is Hidde's to
+overrule if he reads it differently.
+
+Left Baltimore (2), Boise (2), Lausanne (3), Minneapolis (3), Salamanca (3),
+Spokane (3) and Lagos-PT (1) banked as before: none of their hero trees read
+as clearly "would somebody travel specifically for this" (Boise's moved
+sequoia and Baltimore's Liberty Tree are good local stories but not
+obviously destination-tier), and Lagos-PT's cork oak additionally has
+unconfirmed public access, which would need resolving before it could ship
+under any rule. A future pass should either find each of these a tree to
+close the floor, or make an explicit fame case the way this entry did.
+
+Regenerated `data/tree-index.json`, ran `preflight.py` (0 problems after
+fixing the Busan species name and a stale Zwolle tree-count/meta_description
+left over from the Zwolle merge in the next entry), `superlatives.py` (no
+collisions), full `astro build` and `qa.py`.
+
 ## 2026-09-10 (continuation 8, photo follow-up)
 
 Ran `photo_hunt.py`'s free API sweep against the 40 oldest photo-less trees; five of the day's new single-tree places (Lecina, Mendaza, Cabeza del Buey, Muxika, Cerro Veronese) turned up candidates. Fetched and looked at all 15 images by eye against the Cadiz standard. **5 approved**, all CC BY-SA with named authors: Lecina (a wide shot with people for scale, matches the platform/wall setting), Mendaza (shows the hollow trunk and buttresses precisely), Cabeza del Buey (the elm grove in leaf with support props visible), Muxika (the low-branching crown structure), Cerro Veronese (crown and trunk in the piazza). 1 held (Lecina's second candidate, a good wide crown shot, kept as backup rather than shipped since one photo per tree ships). 3 rejected: two of Cabeza del Buey's candidates were an interpretive sign and a commemorative plaque, not the tree; one of Muxika's was a leaf close-up.
