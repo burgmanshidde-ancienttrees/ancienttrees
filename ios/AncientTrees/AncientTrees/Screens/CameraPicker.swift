@@ -87,7 +87,11 @@ struct CameraPicker: UIViewControllerRepresentable {
 
         func imagePickerController(_ picker: UIImagePickerController,
                                    didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-            parent.onPicked(info[.originalImage] as? UIImage)
+            let image = info[.originalImage] as? UIImage
+            // Only what the CAMERA took: a photograph picked from the library
+            // is already in Photos, and a second copy would be clutter.
+            if picker.sourceType == .camera, let image { CameraRoll.keep(image) }
+            parent.onPicked(image)
             parent.dismiss()
         }
 

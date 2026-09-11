@@ -57,6 +57,8 @@ struct TreeDetail: View {
     /// The photograph, full screen (Hidde, 2026-09-03: the picture should open
     /// at its original size, on web and in the app). Kit/PhotoViewer.swift.
     @State private var showingPhoto = false
+    /// One of YOUR photographs of this tree, full screen.
+    @State private var viewingOwn: Sightings.Sighting?
     /// The picture the share sheet hands on, drawn once when a tree of yours
     /// is opened. Nil until then, and only ever set on your own trees: ours
     /// have a page on the web and share that instead, from the toolbar.
@@ -150,6 +152,10 @@ struct TreeDetail: View {
                     // entrance fee read as one of our own tiers (2026-08-25).
                     factsBlock
                     }
+                    // YOUR PHOTOGRAPHS OF THIS TREE, high, because they are
+                    // the reason somebody who has been here opens the page
+                    // again. See Sightings.ofTree for how they went missing.
+                    yourPhotos
                     // THE WHOLE VOTE SITS HERE, above the story (Hidde,
                     // 2026-09-04: "de hele interactie moet daarboven zitten en
                     // niet meer onderaan qua thumbs").
@@ -363,6 +369,12 @@ struct TreeDetail: View {
                 PhotoViewer(photo: p, title: tree.name, isPresented: $showingPhoto)
             }
         }
+        .fullScreenCover(item: $viewingOwn) { s in
+            PhotoViewer(title: tree.name,
+                        isPresented: Binding(get: { viewingOwn != nil },
+                                             set: { if !$0 { viewingOwn = nil } }),
+                        local: sightings.image(s))
+        }
         .sheet(isPresented: $sharing) { ShareSheet(items: shareItems) }
         .alert("That did not send", isPresented: $shareFailed) {
             Button("All right", role: .cancel) {}
@@ -518,7 +530,7 @@ struct TreeDetail: View {
                     .buttonStyle(.plain)
                     .accessibilityLabel("Open the full map")
                 }
-        } else if let m = mine, let shot = sightings.image(m) {
+        } else if let shot = heroOwnShot {
             // Your own photograph, from Documents rather than the network. The
             // same empty box with the picture laid over it as below, for the
             // same reason: an unbounded image drags the whole page sideways.
@@ -719,6 +731,59 @@ struct TreeDetail: View {
                 Text("No photograph yet")
                     .font(.caption).foregroundStyle(Brand.inkSoft)
             }
+        }
+    }
+
+    /// Your photographs of this tree, when it is one of ours.
+    private var yourShots: [Sightings.Sighting] {
+        mine == nil ? sightings.ofTree(tree.id) : []
+    }
+
+    /// What the hero wears when it is yours: a tree only you have, or one of
+    /// ours that nobody else has photographed. Where we do have a photograph
+    /// it stays the hero, since it is the picture everybody else sees, and
+    /// yours sits in its own row under the facts.
+    private var heroOwnShot: UIImage? {
+        if let m = mine { return sightings.image(m) }
+        guard tree.photo == nil, let first = yourShots.first else { return nil }
+        return sightings.image(first)
+    }
+
+    /// Your photographs, as a row of thumbnails with the day you took each.
+    /// Convention: Google Maps puts "your photos" on the place's own page, and
+    /// iNaturalist lists your observations of a species on the species. Tap
+    /// opens the same full-screen viewer as our photographs.
+    @ViewBuilder private var yourPhotos: some View {
+        let shots = yourShots
+        if !shots.isEmpty {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(shots.count == 1 ? "Your photograph" : "Your photographs")
+                    .font(.shelfTitle).foregroundStyle(Brand.ink)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(shots) { s in
+                            if let img = sightings.image(s) {
+                                Button { viewingOwn = s } label: {
+                                    VStack(alignment: .leading, spacing: 6) {
+                                        Color.clear
+                                            .frame(width: 140, height: 140)
+                                            .overlay {
+                                                Image(uiImage: img).resizable()
+                                                    .aspectRatio(contentMode: .fill)
+                                            }
+                                            .clipShape(.rect(cornerRadius: 12))
+                                        Text(s.date.formatted(date: .abbreviated, time: .omitted))
+                                            .font(.caption).foregroundStyle(Brand.inkSoft)
+                                    }
+                                }
+                                .buttonStyle(.plain)
+                                .accessibilityLabel("Your photograph from \(s.date.formatted(date: .long, time: .omitted))")
+                            }
+                        }
+                    }
+                }
+            }
+            .accessibilityIdentifier("tree-your-photos")
         }
     }
 
@@ -1343,7 +1408,7 @@ struct TreeDetail: View {
     /// which is what the page shows full size in that case.
     @ViewBuilder private var photoInset: some View {
         Group {
-            if let m = mine, let shot = sightings.image(m) {
+            if let shot = heroOwnShot {
                 Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
             } else if let p = tree.photo, let url = p.card {
                 TreePhoto(url: url) { Brand.surfaceMuted }

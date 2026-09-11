@@ -1012,7 +1012,8 @@ struct CollectView: View {
         // link there opens on release even when the drag that released it was
         // raising the sheet. See BottomSheet.swift.
         SheetLink(route: .tree(t.id)) {
-            TreeCard(tree: t, showHeart: heart)
+            TreeCard(tree: t, showHeart: heart,
+                     ownPhoto: sightings.ofTree(t.id).first.flatMap { sightings.image($0) })
         }
         .accessibilityIdentifier("tree-card")
         // NO context menu. It carried two tidy-up actions and it cost the tap:

@@ -265,8 +265,10 @@ struct CollectSheet: View {
             Button("Cancel", role: .cancel) {}
             Button("Discard", role: .destructive) { dismiss() }
         } message: {
-            // Named plainly, because on the camera path the photograph exists
-            // nowhere else: it was never written to the camera roll.
+            // Named plainly. Since 2026-09-11 the camera path keeps a copy in
+            // Photos (Kit/CameraRoll.swift), but only where add permission was
+            // given, so for some people the photograph still exists nowhere
+            // else and the warning stays.
             Text("You will lose the photograph and what you have filled in.")
         }
         .fullScreenCover(isPresented: $camera) {
@@ -321,8 +323,8 @@ struct CollectSheet: View {
     ///
     /// The photograph is the whole of it. Everything else on these screens is a
     /// choice that can be made again in seconds; a photograph was taken while
-    /// somebody stood under a tree, and on the camera path it exists nowhere
-    /// else, not even in their camera roll.
+    /// somebody stood under a tree, and on the camera path it may exist nowhere
+    /// else: the copy in Photos is only made where add permission was given.
     private var hasWork: Bool {
         if case .intro = stage { return false }
         if case .ticked = stage { return false }
