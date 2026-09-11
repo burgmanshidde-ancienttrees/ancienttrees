@@ -962,7 +962,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "On paper this oak lost seven centimetres of waistline in nine years, which is not something living oaks do. A measurement taken in June 2015 put it at 424 centimetres round. The Czech nature agency's own 2024 update of the memorial-tree register says 417. Somebody remeasured, or somebody rounded, and the register's newer figure is the one carried here. Either way it is a big tree: more than four metres of trunk standing on the northwest dam of Libocky pond, between the water and the footpath, with nothing next to it competing for light.\n\nThat open position is why the state protected it on 13 July 2004. The designation cites its dominance and its typical pond-edge habit, and draws a circle of protection thirteen metres out from the trunk.\n\nNobody has dated it. Working from the girth and the growth rates Prague's other registered pedunculate oaks run at, a shade over two centimetres a year, it lands somewhere between 165 and 210 years old. That is an arithmetic answer rather than a measured one, and if anyone has a better figure we would like to hear it.\n\nThe dam itself was rebuilt in 2017, gaining stone steps and a wooden rest platform; people fish from the embankment. The oak came through the works and the last visit on record found it in very good health.",
-      "how_to_recognise": "You can recognise it by the trunk, 417 centimetres round, standing clear of other trees halfway along the northwest dam of Libocky pond, between the water's edge and the path, near the stone steps built in 2017."
+      "how_to_recognise": "You can recognise it by the trunk, 417 centimetres round, standing clear of other trees halfway along the northwest dam of Libocky pond, between the water's edge and the path, near the stone steps built in 2017.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "prg_027",
@@ -988,7 +996,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "This beech was protected for its height, not its age. When Prague listed it as a memorial tree on 9 September 2002, the reason given was that it is the tallest tree in the beech stand growing in this corner of Obora Hvezda: roughly 40 metres, on a trunk that stays straight almost the whole way up, with root buttresses flaring out where it meets the ground. The protection zone is a circle eleven metres out from the bark.\n\nIt is also one of the few trees here whose growing you can watch in the paperwork. The girth has been taken three times: 306 centimetres in the older listing, 332 in September 2013, 337 at the nature agency's 2024 update. Thirty centimetres of new wood in two decades, laid down while visitors walked past below it.\n\nThe age is softer than the measurements. The best any source offers is approximately 150 years, stated that loosely by the survey that recorded the 2013 girth, and it stays loose here rather than being tidied into a planting date. Add the years since and it is a little more.\n\nIt stands on the path most people take down from the Hvezda summer palace toward the Ruzynska gate. Two other beeches in the reserve carry the same protection and are easily confused with it; this is the one below the palace.",
-      "how_to_recognise": "You can recognise it by its height, about 40 metres and the tallest in this stand of beeches, on a trunk that runs straight most of the way up from flaring root buttresses. It stands on the path from the summer palace to the Ruzynska gate."
+      "how_to_recognise": "You can recognise it by its height, about 40 metres and the tallest in this stand of beeches, on a trunk that runs straight most of the way up from flaring root buttresses. It stands on the path from the summer palace to the Ruzynska gate.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

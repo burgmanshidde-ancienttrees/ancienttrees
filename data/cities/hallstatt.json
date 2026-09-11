@@ -57,7 +57,16 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "hst_002",
@@ -88,7 +97,16 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "hst_003",
@@ -119,7 +137,16 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "hst_004",
@@ -150,7 +177,16 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }
