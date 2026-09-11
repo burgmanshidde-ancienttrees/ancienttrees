@@ -69,6 +69,20 @@ export const treeSchema = z.object({
   // about the species, the neighbour, or the tree before a storm took its
   // top off. scripts/heights.py fills it; a hand-read figure wins.
   height_m: z.number().nullable().optional(),
+  // How widely the tree has been written up, measured rather than felt:
+  // `langs` is the number of language Wikipedias that carry an article on it,
+  // `views` their summed monthly reads. Written by scripts/fame.py from the
+  // famous-lead cache, by DISTANCE from our own pin rather than by name, and
+  // it keeps its provenance (`qid`, `source_name`) so the next run can check
+  // the number instead of trusting it. Never a judgement: a tree nobody wrote
+  // about carries no fame block at all rather than a zero.
+  fame: z.object({
+    langs: z.number(),
+    views: z.number().nullable().optional(),
+    qid: z.string().optional(),
+    source_name: z.string().optional(),
+    checked: z.string().optional(),
+  }).optional(),
   location: z.object({
     address: z.string().optional(),
     latitude: z.number().nullable().optional(),
@@ -271,8 +285,14 @@ const collectionPages = defineCollection({
     // measurement: same shape, same contract, a different column of the same
     // data. They exist because season is one of the four verbs and the only
     // one no collection served.
+    // "famous" (2026-09-11) ranks on how widely a tree has been written up
+    // rather than on anything about the tree itself, which is a different kind
+    // of column again: the other five read our own measurements, this one reads
+    // what the rest of the world already published. See the mode in
+    // pages/collections/[slug].astro and scripts/fame.py for where the number
+    // comes from.
     generated: z
-      .enum(["oldest", "thickest", "tallest", "autumn", "harvest"])
+      .enum(["oldest", "thickest", "tallest", "autumn", "harvest", "famous"])
       .optional(),
     entries: z.array(
       z.object({

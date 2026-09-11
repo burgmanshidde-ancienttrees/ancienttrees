@@ -154,6 +154,42 @@ const MODES: Record<string, RankMode> = {
       return `${m} metres tall, about the height of a ${floors} storey building.`;
     },
   },
+  // Fame, added 2026-09-11 on Hidde's question "moeten we een famous tree
+  // collectie maken?". It ranks on what somebody ELSE already did rather than
+  // on how big the tree is: the number of language Wikipedias that wrote it up,
+  // with their summed monthly reads breaking ties. That order matters more here
+  // than on the other rankings, because fame judged by feel is just the trees
+  // whoever wrote the list had heard of, which is the error CLAUDE.md records
+  // twice already, once for cities and once for which pages to translate.
+  //
+  // Two languages is the floor, and it is the whole honesty of the page: one
+  // local article means somebody documented the tree, which is true of half our
+  // map, while a second language means it travelled. scripts/fame.py writes the
+  // number and never guesses one, so a tree with no article carries no fame
+  // block rather than a zero.
+  famous: {
+    qualifies: (t) => (t.fame?.langs ?? 0) >= 2,
+    keys: (t) => [t.fame?.langs ?? 0, t.fame?.views ?? 0],
+    band: (t) => t.fame?.langs ?? 0,
+    bands: [
+      { min: 10, heading: "Written up in ten languages and more" },
+      { min: 5, heading: "Five to nine languages" },
+      { min: 3, heading: "Three or four languages" },
+      { min: 2, heading: "Two languages" },
+    ],
+    note: (t) => {
+      const n = t.fame?.langs ?? 0;
+      const views = t.fame?.views ?? 0;
+      const wrote = `Written up in ${n} language${n === 1 ? "" : "s"} on Wikipedia`;
+      // Reads are worth printing only when somebody is actually reading: at a
+      // few dozen a month the number says less than the article count already
+      // did, and printing it would make a quiet tree look measured rather than
+      // simply less famous.
+      return views >= 100
+        ? `${wrote}, read about ${views.toLocaleString("en-GB")} times a month.`
+        : `${wrote}.`;
+    },
+  },
   // The two season rankings, added 2026-09-05. They rank on WHEN rather than on
   // how big, because "how good is this one" is a taste judgement and the
   // reader's real question is which weekend to go. Bands run in calendar order,

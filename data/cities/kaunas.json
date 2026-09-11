@@ -65,6 +65,13 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Vytautas park linden",
+        "qid": "Q16477220",
+        "views": 10
       }
     },
     {
@@ -96,7 +103,14 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its trunk, dividing into three stems about two metres up, with small hollows in the bark. It stands beside the pedestrian path in Santaka Park, near the Neris riverbank."
+      "how_to_recognise": "You can recognise it by its trunk, dividing into three stems about two metres up, with small hollows in the bark. It stands beside the pedestrian path in Santaka Park, near the Neris riverbank.",
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Santakos gluosnis",
+        "qid": "Q25498162",
+        "views": 13
+      }
     },
     {
       "id": "kun_003",
@@ -252,6 +266,13 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Netoniai oak",
+        "qid": "Q136196915",
+        "views": 17
       }
     }
   ]

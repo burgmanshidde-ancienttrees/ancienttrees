@@ -251,6 +251,7 @@ def pipeline_status():
         print(f"  refilled          : skipped ({exc.__class__.__name__})")
 
     data_age()
+    fame_gap()
 
     try:
         import leads as _leads
@@ -295,6 +296,40 @@ def pipeline_status():
         print(f"  ready to write    : unknown ({exc.__class__.__name__})")
 
 
+
+
+def fame_gap():
+    """Famous-tree fame numbers that only a run with network can fetch.
+
+    /collections/famous-trees ranks on how many language Wikipedias wrote a
+    tree up, and the numbers come from data/famous-demand.json. Filling that
+    cache needs Wikidata and the pageviews API, which a sandboxed session
+    often cannot reach, so the work lands on whoever CAN: a night run, where
+    those hosts answer. It is a script rather than an agent task, so it costs
+    tokens for nothing but the two lines it takes to run.
+
+    Printed rather than remembered because the page is already live and grows
+    by itself: every lead resolved is another tree that appears on it, and
+    General Sherman is in the unresolved pile.
+    """
+    path = os.path.join(ROOT, "data", "famous-demand.json")
+    if not os.path.exists(path):
+        return
+    try:
+        cache = json.load(open(path, encoding="utf-8"))
+    except Exception as exc:                          # noqa: BLE001
+        print(f"  fame data         : unreadable ({exc.__class__.__name__})")
+        return
+    unresolved = sum(1 for e in cache.values() if not e.get("wikis"))
+    if not unresolved:
+        print("  fame data         : every cached famous lead is resolved")
+        return
+    print("  fame data         : %d of %d famous leads carry no fame number. "
+          "If this run has network:" % (unresolved, len(cache)))
+    print("      python3 scripts/famous_demand.py --resolve && "
+          "python3 scripts/famous_demand.py --count")
+    print("      python3 scripts/fame.py --apply    "
+          "# puts the newly resolved trees on /collections/famous-trees")
 
 
 def data_age():
