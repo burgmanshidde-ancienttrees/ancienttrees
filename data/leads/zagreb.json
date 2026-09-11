@@ -1,0 +1,26 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "wikidata_id": "Q131611982",
+      "name": "Dedek (the Maksimir oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location": {
+        "address": "Kišobran meadow, below the Mogile memorial mound, Maksimir Park, Zagreb, Croatia",
+        "latitude": 45.82337,
+        "longitude": 16.01646
+      },
+      "reason": "Dead: fell in a storm on the night of 2026-05-15/16, roughly four months before this pass, confirmed by two independent Croatian news sources fetched directly: index.hr (2026-05-16, 'Zagreb je ostao bez Dedeka. Oluja je srušila hrast star gotovo 600 godina') and dnevno.hr ('Zagreb na tragičan način ostao bez simbola starog šest stoljeća'), both describing the roughly 600-year-old pedunculate oak as completely toppled. It had survived two lightning strikes over its life. Its genetic material was preserved before the fall (Priroda Grada Zagreba collected ~500 grafting scions and 1,600+ acorns since 2014) and clone saplings genetically identical to Dedek exist, but as of both reports they have NOT yet been replanted at the site, only announced as a future memorial planting -- so there is no living tree at this location today. Revisit once (if) a clone is actually planted and established at Kišobran meadow; until then this is a dead-tree case exactly like Vienna's Stock im Eisen and never a collectible entry. Its name 'Dedek' (Grandfather in Croatian) was its established local nickname, confirmed by putnikofer.hr and multiple news outlets, in case a future clone planting reuses the story."
+    },
+    {
+      "wikidata_id": null,
+      "name": "\"LIPA NA MEDVEDNICI\" (Croatian natural monument register entry, ps.4580)",
+      "location": {
+        "address": "Eastern Medvednica, near the Lipa mountaineering hut / Strmina, Sesvete area, Zagreb, Croatia",
+        "latitude": 45.931623,
+        "longitude": 16.067006
+      },
+      "reason": "NOT a tree. This register entry's designation field reads 'ProtectedLandscapeOrSeascape', and cross-checking the name found that 'Lipa' here is a PLACE NAME, a hilltop peak (689-709 m depending on source) in the far eastern part of Medvednica near Sesvete, home to the mountaineering hut 'HPD Lipa' since 1967, protected together with the neighbouring peak Rog as the significant landscape 'Lipa-Rog' (a ~200 hectare area of alternating grassland and forest, per planinarenje.hr, hps.hr and planinarski-portal.org, all read directly). It is not a linden tree (lipa also means 'linden' in Croatian, which is exactly the name-regex false positive that data/registers/croatia-spomenici-prirode.json's own caveat warns about: 'the tree filter is a Croatian name regex and will have edge cases both ways'). No individual linden tree at this coordinate is documented by any source found. Correcting the register import (this row should not be flagged publishable=true as a tree candidate) is a job for whoever next touches that file; for this pass it is simply not a candidate. Zagreb's other well-documented Medvednica-area natural monument tree, Gupčeva lipa (a genuine named linden with a Matija Gubec legend), sits in Gornja/Donja Stubica, well outside Zagreb's day-trip boundary on the FAR side of the mountain from the city, and was not one of this brief's candidates; a future pass could evaluate it as its own place rather than as part of Zagreb."
+    }
+  ]
+}

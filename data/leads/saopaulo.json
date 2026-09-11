@@ -1,0 +1,27 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "wikidata_id": "Q55235336",
+      "name": "Chicha do Largo do Arouche",
+      "species": "Sterculia striata / chicha (Sterculia chicha per one source)",
+      "location": {
+        "address": "Largo do Arouche, central Sao Paulo, Brazil",
+        "latitude": -23.54056,
+        "longitude": -46.64509
+      },
+      "reason": "Dead. Confirmed by two independent sources fetched directly, metropoles.com and terra.com.br, both reporting the roughly 200-year-old chicha (over 30m tall, called 'the third oldest tree in the city') fell/broke apart during a storm on 2025-03-12, falling onto a parked vehicle. A follow-up search (via prefeitura.sp.gov.br subprefeituras pages, snippet-level) found the city planted a new chicha seedling at the same spot on 2025-12-19 and chose to leave the old trunk in place as a memorial rather than remove it, but a nine-month-old seedling is not a collectible ancient/remarkable tree; revisit this site in a decade or more if the replanting establishes. The tree had separate cultural significance as a documented meeting point in Sao Paulo's LGBTQIA+ history (Arouchianos Collective's Participatory LGBTQIA+ Inventory), which a future writer could still use as context for the neighbourhood if another qualifying tree is ever found nearby, but the specimen itself never ships as an entry."
+    },
+    {
+      "wikidata_id": "Q122333214",
+      "name": "Figueira do Parque Celso Daniel (Ficus macrophylla, tagged COMDEPHAAPASA 'Classe de Bom')",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "location": {
+        "address": "Parque Celso Daniel (formerly Parque Duque de Caxias), Av. Dom Pedro II 940, Bairro Jardim, Santo Andre, Sao Paulo state, Brazil",
+        "latitude": -23.64717,
+        "longitude": -46.53565
+      },
+      "reason": "Dead AND mislocated. Two problems, either one enough to block it. (1) Dead: Portuguese Wikipedia (fetched directly, pt.wikipedia.org/wiki/Figueira_do_Parque_Celso_Daniel) states the centenary fig, tombada as heritage by the city in 1992 (COMDEPHAAPASA process 29.718/1992-3), died and was removed after a fatal branch-fall incident in April 2011 killed a woman, followed by parasitic infestation and poorly executed pruning; no replacement was planted. A contemporary blog post (arvoresdesaopaulo.wordpress.com) titled 'the centenary fig tree ... was murdered' corroborates the death independently. (2) Mislocated: COMDEPHAAPASA is the municipal heritage council of SANTO ANDRE, a separate city in Greater Sao Paulo (the ABC region), not the city of Sao Paulo itself -- confirmed via comdephaapasa.blogspot.com's own register (fetched directly) and culturaz.santoandre.sp.gov.br's tombamento list. Even if it had been alive, it would not belong on a Sao Paulo city page without being honestly labelled as Santo Andre (roughly 15km from Sao Paulo's centre, plausibly within the day-trip boundary via CPTM/Metro but not checked this pass). Recorded here rather than under a Santo Andre lead file since the tree itself no longer exists to research further."
+    }
+  ]
+}
