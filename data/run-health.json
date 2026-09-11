@@ -12522,6 +12522,72 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-11T07:04:15+00:00",
+   "date": "2026-09-11",
+   "run_id": "34572140660",
+   "minutes": 80.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 620,
+   "denials": 47,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(git), Bash(grep), Bash(mkdir), Bash(npm), Bash(pip), Bash(python3), Bash(rm), Bash(timeout), Bash(wait)",
+   "ended": "success",
+   "tokens": 4902027,
+   "claims_held": [
+    "zwolle"
+   ],
+   "commits": 16,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "zwolle",
+     "trees": 7
+    },
+    {
+     "city": "cardiff",
+     "trees": 4
+    },
+    {
+     "city": "busan",
+     "trees": 2
+    },
+    {
+     "city": "indianapolis",
+     "trees": 1
+    },
+    {
+     "city": "monterey",
+     "trees": 1
+    },
+    {
+     "city": "sao-paulo",
+     "trees": 1
+    },
+    {
+     "city": "hallstatt",
+     "trees": 0
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    },
+    {
+     "city": "london",
+     "trees": 0
+    },
+    {
+     "city": "pisa",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    }
+   ],
+   "trees": 16,
+   "logged": true
   }
  ],
  "schedule_changes": [
