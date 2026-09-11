@@ -107,6 +107,46 @@
   "c8842af2-e25c-403a-a0a0-8f3b4e6b37a5": {
    "outcome": "lead",
    "date": "2026-09-11"
+  },
+  "1fdb47f8-c8d9-4790-8ed3-99293cbe5b36": {
+   "outcome": "rejected",
+   "date": "2026-09-11",
+   "tree_id": "kyo_005",
+   "reason": "kyo_005 already carries a full-bloom blossom photo (Wikimedia, CC BY 2.0) that reads far better for a weeping cherry than this in-leaf, overcast shot. Not an improvement."
+  },
+  "84ebae36-c683-4d39-86ac-a7db33d70910": {
+   "outcome": "published",
+   "date": "2026-09-11",
+   "tree_id": "kyo_016",
+   "file": "kyo_016-sudajii-of-omiya-gate-kyoto-gyoen.jpg",
+   "reason": "kyo_016 had no photo. Whole tree in frame, twisted pale trunk and crown both readable, daylight, in leaf, person for scale. Meets the Cadiz standard."
+  },
+  "aec13148-46f8-49c4-8735-7d8a2c7c3c28": {
+   "outcome": "published",
+   "date": "2026-09-11",
+   "tree_id": "kyo_006",
+   "file": "kyo_006-the-camphor-of-munakata-shrine.jpg",
+   "reason": "kyo_006's current photo (iNaturalist) is a tight crop of moss-covered branches with no trunk or ground visible. This shot shows the full spreading canopy and trunk together in daylight, a clearer whole-tree record for a camphor known for its spread."
+  },
+  "5867f719-f76d-4b2e-8870-36cadf4df3cc": {
+   "outcome": "rejected",
+   "date": "2026-09-11",
+   "tree_id": "kyo_006",
+   "reason": "Second photo of the same tree (kyo_006) from the same visit; aec13148 ships instead as the better whole-tree shot."
+  },
+  "b77fcaee-e20e-4722-9b42-5d60aca6a3cc": {
+   "outcome": "published",
+   "date": "2026-09-11",
+   "tree_id": "kyo_011",
+   "file": "kyo_011-the-hackberry-of-demizu-guchi.jpg",
+   "reason": "kyo_011 had no photo. Whole tree visible, ascending branch structure readable, daylight, in leaf, person for scale."
+  },
+  "5d5debc9-0545-40a6-88a1-79f40b62cbd1": {
+   "outcome": "published",
+   "date": "2026-09-11",
+   "tree_id": "kyo_018",
+   "file": "kyo_018-ginkgo-of-inui-gate-kyoto-gyoen.jpg",
+   "reason": "kyo_018 had no photo. Whole tree in frame, trunk and crown both readable, daylight, in leaf."
   }
  }
 }
