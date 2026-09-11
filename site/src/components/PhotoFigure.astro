@@ -38,9 +38,10 @@ const { photo, alt, lang = "en", widths = [700, 1100, 1600],
         sizes = "(max-width: 800px) 100vw, 760px", variant = "inline" } = Astro.props;
 const t = ui(lang);
 const dims = photoDims(photo);
-const credit = creditRequired(photo.license)
-  ? t.photoCredit(creditText(photo.attribution, photo.license) ?? "")
+const rawCredit = creditRequired(photo.license)
+  ? creditText(photo.attribution, photo.license)
   : null;
+const credit = rawCredit ? t.photoCredit(rawCredit) : null;
 ---
 <figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}>
   <button type="button" class="photo-open" aria-label={t.photoOpen}>

@@ -121,15 +121,23 @@ const loc = tree.location;
 const age = ageToken(tree);
 const canonical = `${BASE_URL}/${cslug}/${tslug}`;
 
+// A tree named directly after its species ("The Amur Cork Tree", species
+// "Amur Cork Tree (Phellodendron amurense)") makes any candidate that joins
+// name and species self-repeating: "The Amur Cork Tree: Amur Cork Tree in
+// Manchester". Found live on three pages (Manchester x2, Munich) 2026-09-11.
+const species = speciesCommon(tree);
+const nameEchoesSpecies = tree.name.replace(/^The\s+/i, "").trim().toLowerCase()
+  === species.trim().toLowerCase();
+
 const title = fitTitle([
   ...(age ? [
-    `${tree.name}: ${age} Year Old ${speciesCommon(tree)} in ${cityName}`,
+    ...(nameEchoesSpecies ? [] : [`${tree.name}: ${age} Year Old ${species} in ${cityName}`]),
     `${tree.name}: ${age} Year Old Tree in ${cityName}`,
   ] : []),
   // Without an age the species still earns its place: it is what somebody
   // searching "dragon tree tenerife" is looking for, and dropping the age must
-  // not drop the whole description with it.
-  `${tree.name}: ${speciesCommon(tree)} in ${cityName}`,
+  // not drop the whole description with it. Unless the name already says it.
+  ...(nameEchoesSpecies ? [] : [`${tree.name}: ${species} in ${cityName}`]),
   `${tree.name} in ${cityName}`,
   tree.name,
 ]);
