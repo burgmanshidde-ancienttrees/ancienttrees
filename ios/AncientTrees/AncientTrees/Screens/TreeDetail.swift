@@ -1252,7 +1252,11 @@ struct TreeDetail: View {
     /// row, the same as the location line when the pin is exact.
     @ViewBuilder private var girthLine: some View {
         if tree.girthCm != nil || mine != nil {
-            column("Around the trunk") {
+            // "Girth", beside "Age" and "Species" and matching "Change the
+            // girth" in the menu. "Around the trunk" read as a sentence
+            // pretending to be a label (Hidde, 2026-09-11: "around the trunk
+            // als title wtf").
+            column("Girth") {
                 if let cm = tree.girthCm {
                     Text("\(Sightings.metres(cm)) m")
                         .font(.brand(19, .bold, relativeTo: .headline))
