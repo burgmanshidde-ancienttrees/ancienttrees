@@ -684,6 +684,70 @@
    "form": "Natuurlijke vorm",
    "reason": "monumentaal",
    "site_history": "onbekend"
+  },
+  {
+   "nr": 1689107,
+   "register_name": "Moerascypres",
+   "own_name": null,
+   "species": "Bald Cypress (Taxodium distichum)",
+   "species_unmapped": null,
+   "age_min": 96,
+   "age_max": 146,
+   "age_estimate": "not settled; register bands it 1920-1930 (roughly 100-105 years)",
+   "planted_band": "1920-1930",
+   "latitude": 52.507506,
+   "longitude": 6.122003,
+   "place": "Huis de Paddestoel, Herenweg 33, Zwolle",
+   "setting": "tuin",
+   "owner_category": "particulier",
+   "honour_class": "nee",
+   "form": "Natuurlijke vorm",
+   "reason": "monumentaal",
+   "site_history": "onbekend",
+   "why_not_shipped": "Only one source (the LRMB register itself). The municipality's own 2015 and 2024 special-trees lists both show a Taxodium distichum Moerascipres on Herenweg, but it is recorded as GEMEENTE (municipality) owned, not particulier (private) like this candidate at Huis de Paddestoel; it is unclear whether this is the same tree or a second swamp cypress on the same street, so it could not be safely used as a second source. A future pass could resolve this by checking whether Huis de Paddestoel's grounds are municipal or private, or by finding a photo/observation tied to the exact address."
+  },
+  {
+   "nr": 1689103,
+   "register_name": "Pluimiep",
+   "own_name": null,
+   "species": "Elm (Ulmus sp., plume-form cultivar)",
+   "species_unmapped": null,
+   "age_min": 126,
+   "age_max": 136,
+   "age_estimate": "not settled; register bands it 1890-1900 (roughly 125-135 years)",
+   "planted_band": "1890-1900",
+   "latitude": 52.509469,
+   "longitude": 6.094311,
+   "place": "Potgietersingel, Zwolle",
+   "setting": "landgoed",
+   "owner_category": "gemeente",
+   "honour_class": "nee",
+   "form": "Natuurlijke vorm",
+   "reason": "monumentaal",
+   "site_history": "onbekend",
+   "why_not_shipped": "Only one source found despite checking the municipality's 2015 PDF and 2024 CVDR757712 special-trees lists in full (both cover Potgietersingel extensively for many other species, oaks, limes, chestnuts, planes, but neither lists an elm/iep there) and an iNaturalist radius search (no Ulmus observations near the coordinate). The register itself (nr 1689103) is a valid single source; a second independent one was not found in this pass."
+  }
+ ],
+ "blocked": [
+  {
+   "nr": 1692895,
+   "register_name": "Rode beuk Thorbeckegracht Zwolle",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "latitude": 52.514965,
+   "longitude": 6.094451,
+   "place": "Thorbeckegracht 58, Zwolle (achtertuin)",
+   "owner_category": "particulier",
+   "reason_blocked": "Private back garden (achtertuin). LRMB register itself records visitable: nee, visible: nee. Fails hard rule 10 test 1 (cannot get in without asking permission) and is not even a view-only case since it is not visible from the street either. Never ship unless a source states the grounds are genuinely open."
+  },
+  {
+   "nr": 1683416,
+   "register_name": "Zomereik",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "latitude": 52.513526,
+   "longitude": 6.107045,
+   "place": "Philosofenallee, Zwolle",
+   "owner_category": "gemeente",
+   "reason_blocked": "Not a collectible point. LRMB records this one at reason 'potentieel' (a candidate for future designation, not yet monumentaal) and status 2, the lowest status tier seen in this pass. The municipality's 2024 Lijst bijzondere bomen shows Philosofenallee lined with dozens of near-identical registered Quercus robur (all Waardevol, planted 1960 per that list), an avenue rather than a single distinguishable specimen, with no landmark tying this particular tree to one spot the way the Urbana pair (zwo_013/zwo_014) has a named restaurant. Per BRIEF_RESEARCH.md hard limits, an avenue is blocked unless one tree within it is individually distinguished; this one is not. Could be reconsidered if a future source names this specific tree as the standout of the avenue."
   }
  ]
 }

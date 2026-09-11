@@ -1,0 +1,164 @@
+[
+ {
+  "id": "zwo_008",
+  "name": "The Turkey Oak of the Coehoornsingel",
+  "species": "Turkey Oak (Quercus cerris)",
+  "age_estimate": "roughly 100 years, from a planting date around 1920-1930",
+  "age_min": 96,
+  "age_max": 106,
+  "location": {
+   "address": "Menno van Coehoornsingel, Zwolle",
+   "latitude": 52.514971,
+   "longitude": 6.099208,
+   "neighbourhood": "Binnenstad"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712",
+   "https://www.inaturalist.org/observations/372240194"
+  ],
+  "access": "Free. Stands on a public green strip (plantsoen) along the singel, owned by the municipality.",
+  "transport": "About 1.5 km north of Zwolle station, roughly 18 to 20 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Three sources agree closely: the national LRMB register (nr 1683411, planted band 1920-1930, reason 'dendrologisch', owner gemeente, visitable/visible yes), the municipality's own 2024 Lijst bijzondere bomen (Quercus cerris MOSEIK, planting year 1930, status Monumentaal, Gemeente Zwolle, sleutelcode 3035-10.bm254, on Menno van Coehoornsingel), and a dated iNaturalist observation (id 372240194, observed 2026-06-16, taxon confirmed Quercus cerris, place_guess 'Menno van Coehoornsingel, Zwolle', coordinate 52.5149,6.09923, within about 30 metres of the register pin), which also serves as recent proof of life. Turkey oak is an uncommon species for the area: the municipal register lists only this one Quercus cerris on the whole street among the usual limes, beeches and pedunculate oaks, which is a distinguishing feature in itself."
+ },
+ {
+  "id": "zwo_009",
+  "name": "The Copper Beech of Groot Wezenland",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "roughly 140 years, from a registered planting date around 1880-1890",
+  "age_min": 136,
+  "age_max": 146,
+  "location": {
+   "address": "Groot Wezenland 37, Zwolle",
+   "latitude": 52.512244,
+   "longitude": 6.1016,
+   "neighbourhood": "Groot Wezenland, edge of Assendorp"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://zwolle.bestuurlijkeinformatie.nl/Document/View/80c2fa94-c63e-4111-a585-45cd4e1a4f03"
+  ],
+  "access": "Privately owned, but the national register itself records it as visitable and visible ('visitable: ja, visible: ja'); it stands close to a residential complex near the old canal ring. This has not been independently walked or OSM-checked, so a reader confirming exactly how close one can stand would help.",
+  "transport": "About 1.4 km northeast of Zwolle station, roughly 17 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "LRMB register (nr 1695229): Fagus sylvatica purpurea, planted band 1880-1890, owner particulier, reason 'monumentaal', visitable ja, visible ja. Register's own history note: stands in the grounds of a housing complex ('de Harderberger') close to the old city's canal ring; growing space is limited and parts of a fence have grown into the trunk. Independently corroborated by the municipality's own 2015 'Lijst Bijzondere bomen Gemeente Zwolle' PDF, a genuinely separate document from a different publisher (Gemeente Zwolle vs Bomenstichting), which lists 'Fagus sylvatica purpurea RODE BEUK Monumentaal Particulier' on Groot Wezenland (parcel ZLE00G 10599G0000). Flagged because access has not been walked or OSM-checked, and because the fence-ingrowth note suggests the tree may be constrained or partly obscured."
+ },
+ {
+  "id": "zwo_010",
+  "name": "The Beech of Ter Pelkwijkpark",
+  "species": "European Beech (Fagus sylvatica)",
+  "age_estimate": "disputed: register says roughly 140 years, the municipality's 2024 list says roughly 95 years",
+  "age_min": 96,
+  "age_max": 146,
+  "location": {
+   "address": "Ter Pelkwijkpark, Zwolle",
+   "latitude": 52.512138,
+   "longitude": 6.098773,
+   "neighbourhood": "Binnenstad"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712"
+  ],
+  "access": "Free. Public park (Ter Pelkwijkpark), owned by the municipality, open to all.",
+  "transport": "About 1.3 km northeast of Zwolle station, roughly 15 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Sources disagree on age and this is stated rather than resolved. LRMB register (nr 1683412): Beuk (plain, not purpurea), planted band 1880-1890, owner gemeente, reason 'monumentaal', status 5. The municipality's own 2024 Lijst bijzondere bomen lists 'Fagus sylvatica BEUK 1930 Binnenstad Ter Pelkwijkpark 4565-10.bm0548 Monumentaal Gemeente Zwolle': same species, same ownership, same park, same Monumentaal status, but a planting year about fifty years later than the register's own band. Both are official sources (a national NGO register and the municipality's own designation list) and neither is dismissed; the true planting date is somewhere in a broad range. Ter Pelkwijkpark otherwise holds a dense stand of registered pedunculate oaks (a dozen-plus Quercus robur entries), so this beech is the only one of its kind there and is easy to single out by species alone."
+ },
+ {
+  "id": "zwo_011",
+  "name": "The Plane of the Badhuiswal",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "disputed: register says roughly 160 years, the municipality's 2024 list says roughly 75 years",
+  "age_min": 76,
+  "age_max": 166,
+  "location": {
+   "address": "Badhuiswal, next to the former Party restaurant Zizi, Zwolle",
+   "latitude": 52.514654,
+   "longitude": 6.100569,
+   "neighbourhood": "Binnenstad"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712"
+  ],
+  "access": "Free. Stands on the public Badhuiswal, owned by the municipality.",
+  "transport": "About 1.6 km north of Zwolle station, roughly 19 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Significant age disagreement between two official sources, stated rather than picked. LRMB register (nr 1689576): Gewone plataan, planted band 1860-1870, owner gemeente, reason 'monumentaal', status 5, visitable and visible yes. The municipality's 2024 Lijst bijzondere bomen lists 'Platanus x hispanica GEWONE PLATAAN 1950 Binnenstad Badhuiswal 0250-10.bm188 Waardevol Gemeente Zwolle': same street, same ownership, but a planting year roughly 80-90 years later and a lower status tier (Waardevol vs the register's Monumentaal). It is possible these describe two different plane trees on the same short street (Badhuiswal carries several registered planes and oaks); this is unresolved and a future pass or reader with a tape measure could settle it by girth. Age range given spans both estimates honestly rather than choosing one."
+ },
+ {
+  "id": "zwo_012",
+  "name": "The Copper Beech of the Badhuiswal",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "disputed: register says roughly 160 years, the municipality's 2024 list says roughly 115 years",
+  "age_min": 116,
+  "age_max": 166,
+  "location": {
+   "address": "Badhuiswal, near the bridge known as Stenen Pijp, Zwolle",
+   "latitude": 52.514811,
+   "longitude": 6.09995,
+   "neighbourhood": "Binnenstad"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712"
+  ],
+  "access": "Free. Stands on the public Badhuiswal, owned by the municipality.",
+  "transport": "About 1.6 km north of Zwolle station, roughly 19 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "LRMB register (nr 1689575): Bruine beuk, planted band 1860-1870, owner gemeente, reason 'monumentaal', status 3, near the bridge known as Stenen Pijp. The municipality's 2024 Lijst bijzondere bomen lists 'Fagus sylvatica Atropunicea BEUK 1910 Binnenstad Badhuiswal 0250-10.bm171 Monumentaal Gemeente Zwolle': matching species detail (Atropunicea = copper beech), matching ownership and Monumentaal status, but a planting year about 40-50 years later than the register's band. Treated as the same tree since species and status line up well; age range spans both estimates. This is the sibling of zwo_011 (the plane a few dozen metres away on the same street) and stands within easy walking distance of zwo_009 and zwo_010, all near Zwolle's historic centre."
+ },
+ {
+  "id": "zwo_013",
+  "name": "The Plane by Restaurant Urbana",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly a century, from planting dates recorded between 1910 and 1930",
+  "age_min": 96,
+  "age_max": 116,
+  "location": {
+   "address": "Wipstrikkerallee 213, next to the former restaurant Urbana (now Loetje), Zwolle",
+   "latitude": 52.506317,
+   "longitude": 6.12369,
+   "neighbourhood": "Wipstrik"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712"
+  ],
+  "access": "Privately owned grounds, but the register records it as visitable and visible; it stands beside a long-running restaurant building (Urbana, now Loetje) fronting the Wipstrikkerallee, so it is plausible it can be seen from the street or terrace, but this has not been independently walked or OSM-checked.",
+  "transport": "About 2.3 km southwest of Zwolle station, roughly 27 minutes on foot; a bus or short bike ride is quicker.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "LRMB register (nr 1688405): Gewone plataan, planted band 1910-1920, owner particulier, reason 'monumentaal', visitable ja, visible ja. Register's own history note: 'growth and condition of the tree has unfortunately diminished', worth flagging as a vigour concern for a future re-check, though the tree is not reported dead. Corroborated by the municipality's 2024 Lijst bijzondere bomen: 'Platanus x hispanica GEWONE PLATAAN 1930 Wipstrik Wipstrikkerallee 5240-10.bm7802 Waardevol Particulier', matching street, ownership and species, planting year about 10-20 years later than the register's own band, close enough to be confident this is the same tree. Wipstrikkerallee is a long historic avenue with many registered trees, so the restaurant building itself (Villa Urbana, a tea house and inn since 1924, now Loetje) is the useful landmark that anchors this tree and its beech neighbour (zwo_014) as a distinguishable pair rather than 'somewhere along the avenue'."
+ },
+ {
+  "id": "zwo_014",
+  "name": "The Copper Beech by Restaurant Urbana",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "disputed and species detail uncertain: register says roughly 160 years, the municipality's 2024 list may describe a different, younger private beech on the same street",
+  "age_min": 86,
+  "age_max": 166,
+  "location": {
+   "address": "Wipstrikkerallee 213, in front of the former restaurant Urbana (now Loetje), Zwolle",
+   "latitude": 52.506042,
+   "longitude": 6.123456,
+   "neighbourhood": "Wipstrik"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712"
+  ],
+  "access": "Privately owned grounds; visitability and visibility are unrecorded ('onbekend') in the national register. Given it stands in front of the same restaurant building as zwo_013, it is plausible it is street-visible, but this is not confirmed.",
+  "transport": "About 2.3 km southwest of Zwolle station, roughly 27 minutes on foot; a bus or short bike ride is quicker.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "LRMB register (nr 1688386): Bruine beuk (named explicitly as a copper beech), planted band 1860-1870, owner particulier, reason 'monumentaal', status 5, visitable and visible both 'onbekend' (unknown), weaker access evidence than its neighbour zwo_013. The municipality's 2024 list does not show a copper beech (Atropunicea) specifically on Wipstrikkerallee; it does show a private plain beech, 'Fagus sylvatica BEUK 1940 Wipstrik Wipstrikkerallee 5240-10.bm7794 Waardevol Particulier', which may or may not be the same specimen: the cultivar detail does not match and the avenue holds many registered beeches (a dozen-plus municipal entries alone). Delivered as flagged rather than dropped: the national register is itself a valid single source naming a specific copper beech at this address, and the municipal entry is at minimum weak corroboration that a notable private beech does stand on this stretch of the street. A future pass or reader with a photo could settle both the exact identity and the access question."
+ }
+]
