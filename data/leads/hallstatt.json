@@ -1,0 +1,40 @@
+{
+  "leads": [
+    {
+      "name": "Bergulme (mountain elm) near the forestry office in Gosau",
+      "species": "Wych Elm (Ulmus glabra)",
+      "location": {"latitude": 47.585559, "longitude": 13.535276, "note": "Naturdenkmal ND147, Gosau, Bezirk Gmunden"},
+      "reason": "Not researched this pass: Gosau sits roughly 9km from Hallstatt centre, at the edge of or outside the day-trip cluster, and this pass kept to the four closest register candidates (three yews plus the nearby Bad Goisern one) per the max-four-candidates rule. Register text: 27m tall, one of the largest of its kind in Upper Austria, protected since 1980-12-18. Source: https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd147 and the Liste der Naturdenkmaeler im Bezirk Gmunden. Worth a look if a future pass covers Gosau, alongside the copper beech and school linden below (all three stand within about 100m of each other near the Gosau forestry office)."
+    },
+    {
+      "name": "Blutbuche (copper beech) near the forestry office in Gosau",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "location": {"latitude": 47.586044, "longitude": 13.534543, "note": "Naturdenkmal ND148, Gosau, Bezirk Gmunden"},
+      "reason": "Same Gosau cluster as the Bergulme above, ~80m away; not pursued this pass for the same distance/candidate-count reason. Register text only gives the reason for protection (site and pronounced spherical crown shape), no age or girth. Source: https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd148"
+    },
+    {
+      "name": "Schul-Linde (school linden) in Gosau",
+      "species": "Large-leaved or Summer Lime (Tilia platyphyllos / Sommer-Linde)",
+      "location": {"latitude": 47.58230, "longitude": 13.52459, "note": "Wikidata Q119889409, ~50m southwest of the Evangelical church in Gosau"},
+      "reason": "Third Gosau candidate, ~800m from the other two; not pursued this pass. Register text (Liste der Naturdenkmaeler im Bezirk Gmunden): planted around 1790, girth 3.7m and height ~21m at designation. Stands next to a school -- per hard rule 10 school grounds need real evidence of genuinely open access before shipping (a public path, weekend opening, or a churchyard-like setting); this one is 50m from a church rather than clearly on school property, but that distinction should be checked properly rather than assumed, so it stays a lead."
+    },
+    {
+      "name": "Mostbaumallee von Bad Goisern (avenue of cider-pear trees)",
+      "species": "Wild/Cider Pear (Pyrus pyraster)",
+      "location": {"latitude": 47.63766, "longitude": 13.62180, "note": "Wikidata Q119888290, Bad Goisern am Hallstättersee"},
+      "reason": "blocked: an avenue (Allee) of trees rather than one identifiable tree or a compact ensemble with one obvious place to stand. Fails the collectible-point test in BRIEF_RESEARCH.md ('An avenue or a whole wood is blocked'). Kept for the record in case a later pass finds one standout specimen tree within the avenue worth treating separately."
+    },
+    {
+      "name": "Zirben beim Oberhofbauern in Filzmoos (Swiss stone pines)",
+      "species": "Swiss Stone Pine (Pinus cembra)",
+      "location": {"latitude": 47.43359, "longitude": 13.51106, "note": "salzkammergut-naturdenkmale register entry"},
+      "reason": "17.6km from Hallstatt centre, well outside this cluster's day-trip boundary and in a different valley (Filzmoos, reached via a different road/rail route than the Hallstatt-Obertraun-Bad Goisern-Gosau Salzkammergutbahn corridor). Not researched this pass; flagged in the brief itself as 'likely too far to join the cluster'. Leave for a Filzmoos-specific pass rather than forcing it into Hallstatt."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Mostbaumallee von Bad Goisern",
+      "reason": "Not a collectible point: it is an avenue of trees, not one identifiable specimen. See leads entry above for detail; recorded here too per the leads/blocked convention."
+    }
+  ]
+}
