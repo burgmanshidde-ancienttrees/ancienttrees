@@ -1,0 +1,42 @@
+{
+  "leads": [
+    {
+      "name": "The Ginkgo of Paseo de Carmelitas",
+      "species": "Ginkgo biloba",
+      "location": {
+        "address": "Paseo de Carmelitas at Calle Wences Moreno, Salamanca",
+        "latitude": null,
+        "longitude": null
+      },
+      "reason": "Only about 45 years old (planted 1981-82 by MOPU during landscaping, 'landed by mistake' mixed in with cypresses), so it fails the age bar and has no notable girth. Nice footnote (first ginkgo planted in the city, nearly removed in a later renovation, saved by municipal gardeners, visited by Pharmacy/Biology students) but too young and too ordinary in stature to be worth the walk on its own. Keep as a lead in case a reader or a future pass finds it has grown into something more, or as filler if the city page needs an eighth tree later.",
+      "source": "https://www.salamancahoy.es/salamanca/ciudad/ginkgo-antiguo-especie-mopu-aterrizo-salamanca-error-20260518152511-nt.html"
+    },
+    {
+      "name": "The Calocedrus of Campo de San Francisco",
+      "species": "Calocedrus decurrens (incense cedar)",
+      "location": {
+        "address": "Campo de San Francisco park, Salamanca (between Paseo de Carmelitas and Calle Ramon y Cajal)",
+        "latitude": null,
+        "longitude": null
+      },
+      "reason": "Only one source found in this pass (Salamancahoy, 2026-04-07): tallest tree in the park, estimated 100-150 years old per a named botanist, associated with Miguel de Unamuno's walks through the park. Needs a second independent source and an exact location/girth before it can ship. Campo de San Francisco is the city's oldest park and worth a return visit.",
+      "source": "https://www.salamancahoy.es/salamanca/ciudad/cedro-alto-discreto-campo-san-francisco-vio-20260407105618-nt.html"
+    },
+    {
+      "name": "Other Catalogo de Especies Singulares entries in Salamanca city",
+      "species": "unknown, 16 trees reportedly catalogued within the city per La Gaceta de Salamanca",
+      "location": {"address": "Salamanca city, various", "latitude": null, "longitude": null},
+      "reason": "SalamancaRTV al Dia's 2019 'patrimonio verde' piece and La Gaceta both reference a 16-tree city total in the Catalogo de Especies Singulares de Castilla y Leon beyond the three shipped here (the Alamedilla cedar, the Escuelas Mayores sequoia and a Taxus in Plaza de la Libertad were named); Ecologistas en Accion's full list (ecologistasenaccion.org/4098) returned HTTP 403 to automated fetch this pass and was not read. A future pass should fetch that page with a browser session or find the underlying catalogue PDF to identify the rest.",
+      "source": "https://salamancartvaldia.es/noticia/2019-06-05-el-notable-patrimonio-verde-de-salamanca-58029"
+    },
+    {
+      "name": "Yew in Plaza de la Libertad",
+      "species": "Taxus (species not established)",
+      "location": {"address": "Plaza de la Libertad, near the Columbus statue, Salamanca", "latitude": null, "longitude": null},
+      "reason": "Named only in passing in one AI-summarised search result (SalamancaRTV piece), no age, girth or planting history found in the time available. Needs a direct read of the source article and a second source.",
+      "source": "https://salamancartvaldia.es/noticia/2019-06-05-el-notable-patrimonio-verde-de-salamanca-58029"
+    }
+  ],
+  "blocked": [],
+  "notes": "Verification pass 2026-09-11. Register data/registers/castilla-leon-arboles-notables.json has 16 entries tagged province=Salamanca but only AS-SA-10 (the Escuelas Mayores sequoia) actually sits in Salamanca CITY; the rest are in Bejar, Ciudad Rodrigo, La Alberca and other municipalities 70-90km away, well outside the ~30 minute day-trip boundary, and were not pursued for this city page."
+}

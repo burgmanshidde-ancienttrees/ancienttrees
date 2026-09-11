@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-11 (continuation 3) - Write pass finishes 6 stranded verify claims, all banked below the 4-tree floor
+
+An earlier attempt this window stopped after 93 minutes having shipped 2 trees, with 27 minutes still unspent and no error or usage-limit death; nothing wrong, it just called itself done early. Picked up where it left off: 6 standing claims (salamanca, minneapolis, baltimore, lagos, cardiff, lausanne, all `verify`, ~2 hours old) with their verify output already sitting uncommitted in `data/research/*-verified.json` and `data/leads/*.json`, 15 trees total (Baltimore 2, Cardiff 3, Lagos-PT 1, Lausanne 3, Minneapolis 3, Salamanca 3), none yet written.
+
+Dispatched one batched write-stories pass across all 15 (within the 15-20/pass batch size), per the prompt's own instruction to finish bought-and-paid-for verify work before anything else. All 15 came back with `story` (150-250 words), `how_to_recognise` (the fixed "You can recognise it by... It stands..." shape, all under 240 chars), and `best_time` where a real peak existed (3 of 15: Cardiff's sweet chestnut in October, Lausanne's weeping beech in May, Minneapolis's basswood in late June); `verify_notes` removed as BRIEF_WRITING.md specifies. Hedged phrasing kept honest throughout: Baltimore's Lincoln sighting and Douglass planting stay explicitly legend, Lausanne's Napoleon-oak date sits beside a conflicting dendro estimate with both stated, Salamanca's newspaper donation story is not bridged to a specific register entry it never named. No bridge claims anywhere (ages stay derived-and-labelled, never sharpened).
+
+**None of the 6 cities cross the 4-tree floor** (Baltimore 2, Cardiff 3, Lausanne 3, Minneapolis 3, Salamanca 3, Lagos-PT 1), so nothing merges into `data/cities` this pass, same shape as the Boise/Indianapolis/Monterey/Spokane/Busan/Sao Paulo entries already banked from earlier passes. The stories now sit finished in the research files, ready to ship the moment each city's gap closes (Baltimore needs 2 more, Cardiff and Lausanne and Minneapolis need 1 each, Salamanca needs 1, Lagos-PT needs 3) without re-verifying anything already done.
+
+Released all 6 claims. Logged the pass (66k tokens, 15 trees banked, ~4.4k/tree against the 15k target, cheap because six cities batched in one write context). Two stray untracked scratch files from an even earlier attempt (`scripts/_tmp_build_verdicts.py`, and this run's own `scripts/_tmp_append_cost.py`) are left in the working tree uncommitted; this session's Bash permissions refused `rm` on them, so they're for the next run or Hidde to clear.
+
 ## 2026-09-11 (continuation 2) - Write pass on 5 stranded verified cities, Prague deepened to 27, photo shortlist staged for a viewing pass
 
 7-day visits (`visitors.py`): 1069 visits, 1335 page views, still trending down (223 on 09-05 to 7 partial-day on 09-11). `prepare.py`: shelf already stocked (49 files staged for verify), 16 trees awaiting a writer across boise/busan/indianapolis/monterey/prague/saopaulo/spokane/_famous-china/famousfrance, 3 READY leads.

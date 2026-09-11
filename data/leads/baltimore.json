@@ -1,0 +1,42 @@
+{
+  "leads": [
+    {
+      "name": "Cockspur Hawthorn, Cylburn Arboretum",
+      "species": "Cockspur Hawthorn (Crataegus crus-galli)",
+      "location": {"address": "Cylburn Arboretum, Baltimore", "latitude": null, "longitude": null},
+      "reason": "Named as Cylburn Arboretum's only remaining Maryland STATE CHAMPION tree in a 2023 Baltimore Sun guest commentary, but no exact location within the arboretum grounds, age or measurements were found in the time available. Cylburn Arboretum overall is a strong candidate site (city-owned historic arboretum, publicly accessible, multiple city-champion trees) worth a dedicated follow-up pass rather than a rushed single search.",
+      "source": "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/"
+    },
+    {
+      "name": "Cylburn Arboretum's other city-champion trees (paperbark maple, hardy rubber tree, pond cypress, slippery elm, longleaf pine, red buckeye, Chinese fringetree)",
+      "species": "various",
+      "location": {"address": "Cylburn Arboretum, Baltimore", "latitude": null, "longitude": null},
+      "reason": "All named as Baltimore City champions in the same 2023 article; none has an age, girth or precise in-arboretum location recorded from this pass. A future pass should fetch Cylburn Arboretum Friends' own tree map (cylburn.org) directly rather than relying on a guest-commentary summary.",
+      "source": "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Arbutus Oak",
+      "species": "White Oak (Quercus alba)",
+      "location": {"address": "Near the I-695/I-95 interchange, Arbutus, Maryland (just outside Baltimore city limits)", "latitude": 39.25085, "longitude": -76.68246},
+      "reason": "CONFIRMED DEAD. This was the pre-existing Wikidata lead for this pass. Over 300 years old, seeded around 1690, famous for having caused Washington Metro planners to reroute the Red Line in the 1980s (estimated $2-4M cost) to save it, and for Native American artifacts found at its base during 1950s highway construction. The tree split in half and fell in 2019 due to internal decay. Per hard rule (never publish a tree known to be dead), this cannot ship. Recorded here so no future pass re-researches it.",
+      "sources": ["https://en.wikipedia.org/wiki/Arbutus_Oak", "https://www.atlasobscura.com/places/the-arbutus-oak-arbutus-maryland"]
+    },
+    {
+      "name": "Osage Orange, Druid Hill Park",
+      "species": "Osage Orange (Maclura pomifera)",
+      "location": {"address": "Druid Hill Park, near the old Reptile House, Baltimore", "latitude": null, "longitude": null},
+      "reason": "CONFIRMED DEAD. Approximately 400 years old, blown down by Superstorm Sandy on 29 October 2012 (winds near 70mph on saturated soil). Friends of Druid Hill Park discussed preserving a remnant as a monument; no evidence found this pass that a living replacement or memorial has become a collectible entry.",
+      "sources": ["https://www.cbsnews.com/baltimore/news/historic-tree-in-druid-hill-park-torn-apart-by-superstorm-sandy/"]
+    },
+    {
+      "name": "Dawn Redwood, Cylburn Arboretum",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "location": {"address": "Cylburn Arboretum, Baltimore", "latitude": null, "longitude": null},
+      "reason": "CONFIRMED DEAD. Planted 1965 (60 years old), a Baltimore City champion reaching roughly 83 feet, destroyed when struck by lightning in a storm (reported by CBS News Baltimore, year not confirmed but described as recent). Also too young at 60 years to have qualified on age alone even if alive.",
+      "sources": ["https://www.cbsnews.com/baltimore/news/cylburn-arboretums-historic-60-year-old-redwood-tree-demolished-by-lightning-strike-baltimore-dawn-redwood-tree"]
+    }
+  ],
+  "notes": "Verification pass 2026-09-11. No Maryland/Baltimore official tree register was found (checked OPEN_DATA_SURVEY.md first, no Maryland entry). The original Wikidata lead for this city (Arbutus Oak) turned out to be dead and outside city limits; both replacement trees shipped were found via general web sweep of Baltimore-area 'notable/historic tree' coverage. Baltimore has an unusually high rate of famous trees that have recently died (three of five candidates investigated this pass), worth noting for whoever plans the next pass."
+}

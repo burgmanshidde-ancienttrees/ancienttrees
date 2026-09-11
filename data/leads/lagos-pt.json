@@ -1,0 +1,13 @@
+{
+  "leads": [
+    {
+      "name": "No further register or named candidates found in Lagos town itself",
+      "species": "n/a",
+      "location": {"address": "Lagos, Faro District, Algarve, Portugal", "latitude": 37.1021, "longitude": -8.6737},
+      "reason": "This pass searched Lagos's historic parks and gardens (Jardim da Constituicao, Praca Gil Eanes and the old town/castle walls), churches, the ICNF national register (only one entry in the whole concelho: lgp_001), a regional roundup of Algarve monumental trees (algarvevivo.pt), a 'greatest trees of Portugal' listicle (none in the Algarve west of Sao Bras de Alportel, 80km+ away), a local news search on Lagos's own tree-classification process, and a nearby natural-springs park (Sitio das Fontes, which turned out to be in neighbouring Lagoa municipality, not Lagos, and does not name individual trees anyway). A November 2019 Lagos Municipal Assembly motion asked the council to survey the whole municipality for classification-worthy trees; no evidence was found that this survey produced a published list, so Lagos may simply be a 'nobody has named its trees' city per the pattern in BRIEF_RESEARCH.md. Next pass should try: the parish churches by name (Igreja de Santo Antonio, Igreja de Sao Sebastiao, Igreja Santa Maria), Ponta da Piedade cliff walks, and a direct query/email-style check of the Camara Municipal de Lagos rather than press coverage.",
+      "source": "n/a (negative result recorded from this pass's own searches)"
+    }
+  ],
+  "blocked": [],
+  "notes": "Verification pass 2026-09-11. IMPORTANT COORDINATE CORRECTION CARRIED FORWARD: the coordinates originally attached to this lead in an earlier note (6.4561,3.3936) describe Lagos, NIGERIA, which is out of focus for this project per CLAUDE.md and was never researched. This pass researched Lagos, Portugal (Algarve, Faro district) at approximately 37.1021N, -8.6737W, confirmed against data/registers/portugal-icnf.json which tags the one Lagos-concelho entry with distrito=Faro, concelho=Lagos. Only one candidate cleared the bar (lgp_001, the Pedragosa cork oak), well below the usual floor of four verified trees; Lagos city stays unpublished/banked rather than forced to a page."
+}

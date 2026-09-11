@@ -1,0 +1,34 @@
+{
+  "leads": [
+    {
+      "name": "Ancient Ash, Bute Park",
+      "species": "Ash (Fraxinus excelsior)",
+      "location": {"address": "Bute Park, Cardiff", "latitude": null, "longitude": null},
+      "reason": "Named as 'previously unrecorded' during the 2023 Coed Cadw/Coed Caerdydd survey (nation.cymru). No girth, exact location or second source found this pass. Given ash dieback disease's prevalence in the UK, a future pass should check current health before pursuing further.",
+      "source": "https://nation.cymru/news/cardiff-volunteers-help-to-map-citys-ancient-and-veteran-trees/"
+    },
+    {
+      "name": "London Plane trees, Blackfriars, Bute Park",
+      "species": "London Plane (Platanus x hispanica), possibly descending from an 18th-century Capability Brown planting",
+      "location": {"address": "Blackfriars site, Bute Park, Cardiff", "latitude": 51.4825, "longitude": -3.1838},
+      "reason": "Cardiffparks.org.uk's own introduction to Bute Park states plane trees near the Blackfriars site may date to Capability Brown's landscaping for the first Marquis of Bute in the mid-to-late 18th century, which would make them 200+ years old, genuinely remarkable. The detailed champion-tree table names several individual specimens with OS grid references (Platanus x hispanica #3, Glamorgan Champion 2022; #5; 'Digitata') but does not give an age for any of them, and only a single source (cardiffparks.org.uk) was checked this pass. Strong candidate for a follow-up pass: find a second source for the Capability Brown planting date and confirm which numbered specimen is the oldest/largest.",
+      "source": "https://www.cardiffparks.org.uk/trees/bute/index.shtml"
+    },
+    {
+      "name": "Bute Park champion-tree table (full survey, 3,000+ specimens, 50 GB champions)",
+      "species": "various",
+      "location": {"address": "Bute Park, Cardiff", "latitude": null, "longitude": null},
+      "reason": "This pass only skimmed cardiffparks.org.uk's huge Bute Park tree table (Sweet Chestnut cultivars, various maples, a rare West Himalayan maple GB Champion, an avenue of Ginkgo biloba leading to the former Mews). Bute Park is described as having more champion trees than any other municipal park in Britain. This is by far the richest single source found for Cardiff and deserves a dedicated follow-up pass to work through the full table (which includes precise OS grid references convertible to lat/lon) rather than the partial read this time-boxed pass could give it.",
+      "source": "https://www.cardiffparks.org.uk/trees/bute/index.shtml"
+    },
+    {
+      "name": "Common Beech, Silver Birch, Pedunculate Oak, Cefn Onn",
+      "species": "various",
+      "location": {"address": "Parc Cefn Onn, Cardiff", "latitude": null, "longitude": null},
+      "reason": "Named in passing during the same 2023 survey (nation.cymru) as notable specimens at Cefn Onn park; no individual details (girth, exact location) found this pass.",
+      "source": "https://nation.cymru/news/cardiff-volunteers-help-to-map-citys-ancient-and-veteran-trees/"
+    }
+  ],
+  "blocked": [],
+  "notes": "Verification pass 2026-09-11. No usable open-licence Cardiff/Wales tree register exists per OPEN_DATA_SURVEY.md: the UK Ancient Tree Inventory (Woodland Trust) is DISQUALIFIED as an import source (non-commercial licence) and was not used as a source in this pass, only glimpsed in search results and deliberately not fetched or cited, consistent with 'no Woodland Trust data without written permission'. Two hosts required a browser-style User-Agent to avoid a 403 (cardiffparks.org.uk and historypoints.org); plain curl with a generic UA failed on both, noting for the fetch-blocklist. cardiffparks.org.uk's Bute Park page is an unusually rich independent source (a hand-maintained champion-tree register with OS grid references) and is worth a dedicated pass of its own rather than the partial read given here."
+}

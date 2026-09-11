@@ -1,0 +1,34 @@
+{
+  "leads": [
+    {
+      "name": "Chene de Bois-Genoud",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location": {"address": "Domaine/Le Castel de Bois-Genoud, west of Lausanne near Crissier/Romanel-sur-Lausanne", "latitude": null, "longitude": null},
+      "reason": "Strong candidate on paper: City of Lausanne's own heritage-tree page gives 500 years old, girth roughly 700-800cm, height 18m, restored by the municipality in 1999, 'the last representative of four centuries-old oaks' in an 18th-century park by the same Parisian landscape architect who designed Mon Repos, and it appears in Henri Badoux's 1925 book on the canton's notable trees. NOT SHIPPED because access could not be confirmed this pass: Bois-Genoud/Le Castel appears to be a private domain now used partly as an event/wedding venue (myvaud.ch / vaud.ch tourism listing), and a direct fetch to confirm public access 404'd. Also possibly outside Lausanne's own municipal boundary (nearer Crissier or Romanel-sur-Lausanne, needs distance/transit check). A future pass should confirm whether the park (as opposed to the Castel building) is open to casual visitors before this ships.",
+      "source": "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/chene-de-bois-genoud.html"
+    },
+    {
+      "name": "Cedre d'Ansermet",
+      "species": "Atlas Cedar (Cedrus atlantica 'Glauca')",
+      "location": {"address": "Allee Ernest-Ansermet, Lausanne", "latitude": null, "longitude": null},
+      "reason": "Only about 100 years old ('still young' per the city's own description), girth 439cm, height 20m. A fine specimen but not old enough or singular enough on its own to clear the bar without a stronger why-go; single-sourced (the municipal page only). Keep as a filler candidate if the city page needs a fourth or fifth tree later.",
+      "source": "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/cedre-d-ansermet.html"
+    },
+    {
+      "name": "Sauvabelin venerable oaks",
+      "species": "Oak, species and individual specimen not identified",
+      "location": {"address": "Bois de Sauvabelin nature reserve, Lausanne", "latitude": null, "longitude": null},
+      "reason": "A search result described Sauvabelin as home to 'venerable oaks, some already over three centuries old' but did not name an individual specimen with a precise location. Sauvabelin is a well-known, easily walkable, publicly accessible forest reserve close to central Lausanne (also home to a lake, a famous wooden observation tower and a vivarium), and is worth a dedicated follow-up search for a specific named oak.",
+      "source": "search summary only, page not directly fetched this pass; treat the '300 years' figure as unconfirmed until read on a real page per BRIEF_RESEARCH.md's rule on search summaries"
+    },
+    {
+      "name": "Lausanne's other named heritage trees (uninvestigated this pass)",
+      "species": "various",
+      "location": {"address": "various, Lausanne", "latitude": null, "longitude": null},
+      "reason": "The City of Lausanne runs an extensive 'patrimoine arbore' series with individual pages for many named trees beyond the three shipped and two leads above: le tilleul de Bon-Abri, le tilleul de la Chapelle, le saule des Pyramides, le pin de Montelly, le platane de Rhodanie, le platane des Mouettes, le platane du Valentin, le chene de la Fauvette, le cedre du Presbytere, le chene du Musee olympique, le chene vert de l'Art brut. None of these were opened this pass; this is a rich, ready-made source for a dedicated Lausanne follow-up (URL pattern: lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres/[slug].html). The chene du Musee olympique in particular is worth checking first, being on the touristed Ouchy lakefront.",
+      "source": "https://www.lausanne.ch/vie-pratique/nature/patrimoine-arbore/arbres.html"
+    }
+  ],
+  "blocked": [],
+  "notes": "Verification pass 2026-09-11. No Swiss/Vaud register was found for Lausanne per OPEN_DATA_SURVEY.md (only Geneva was scouted and imported in the Swiss pass of 2026-08-15; Lausanne explicitly listed as 'not reached'). This pass instead found that the City of Lausanne maintains its own rich 'patrimoine arbore' web series with a dedicated page per named heritage tree, which functioned as the de facto register for this pass (used for verification/facts, not bulk-imported, consistent with this project's semantic-filter rule). Worth a scouting note: this whole series would be a good target for a dedicated Lausanne-only research pass rather than the time-boxed sweep given here, which only opened 5 of at least 16 known named-tree pages."
+}
