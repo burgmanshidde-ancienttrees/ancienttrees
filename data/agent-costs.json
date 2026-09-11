@@ -7358,6 +7358,15 @@
         "note": "orchestration, merge, QA, build, plus own fixes: 13 stale country meta_description/intro counts corrected, season_backfill.py run (159 trees across 118 cities got a real best_time from existing phenology data, zero research cost), photo_hunt.py --recheck sweep",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "hallstatt",
+        "kind": "verify",
+        "tokens": 65000,
+        "trees": 4,
+        "note": "4 Naturdenkmal yews across Hallstatt/Obertraun/Untersee/Bad Goisern via the OO Genisys register; all flagged single-source-class (register + its own Wikipedia mirror only, no independent second source found); 5 further candidates parked in leads (Gosau x3 too far for this pass, Mostbaumallee blocked as non-collectible avenue, Filzmoos too far)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
