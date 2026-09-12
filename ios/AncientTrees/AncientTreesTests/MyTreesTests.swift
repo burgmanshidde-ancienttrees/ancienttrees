@@ -897,3 +897,79 @@ struct WhenPermissionIsRefused {
         #expect(grouped.allSatisfy { $0.count == 1 })
     }
 }
+
+// A correction made somewhere else, reaching the phone that holds the row.
+//
+// Until 2026-09-12 the pull skipped every row this phone already had, so a fix
+// in the database could never arrive: Hidde's Kyoto photograph was filed under
+// the Sudajii, turned out to be the muku standing beside it, and his own phone
+// would have kept the wrong tree forever. These are about the two halves that
+// decide it, both pure, plus the store's own folding-in.
+@MainActor
+@Suite(.serialized)
+struct WhenTheAccountHoldsACorrection {
+
+    /// The database sends microseconds on a column it filled itself and no
+    /// fraction at all on a string we wrote. Reading one of them as nil looks
+    /// exactly like the bug this fixes: no correction ever arrives.
+    @Test func bothShapesOfTimestampAreRead() {
+        #expect(SightingSync.stamp("2026-09-12T10:15:20.123456+00:00") != nil,
+                "a stamp with microseconds was read as nothing")
+        #expect(SightingSync.stamp("2026-09-11T05:20:28+00:00") != nil,
+                "a stamp without a fraction was read as nothing")
+        #expect(SightingSync.stamp("not a date") == nil)
+        #expect(SightingSync.stamp(nil) == nil)
+        let withFraction = SightingSync.stamp("2026-09-12T10:15:20.500000+00:00")!
+        let without = SightingSync.stamp("2026-09-12T10:15:20+00:00")!
+        #expect(withFraction > without, "the fraction was thrown away")
+    }
+
+    /// Taken only when it changed elsewhere since this phone last sent its own.
+    @Test func onlyAChangeMadeAfterOurLastPushWins() {
+        let earlier = Date(timeIntervalSince1970: 1_000)
+        let later = Date(timeIntervalSince1970: 2_000)
+
+        #expect(SightingSync.takeRemote(remoteUpdated: later, localSynced: earlier),
+                "a correction made after our push was ignored")
+        #expect(!SightingSync.takeRemote(remoteUpdated: earlier, localSynced: later),
+                "a stale row overwrote a newer local one")
+        // The one that matters most: a tree added on a train, never pushed.
+        #expect(!SightingSync.takeRemote(remoteUpdated: later, localSynced: nil),
+                "a row this phone has never sent was overwritten")
+        #expect(!SightingSync.takeRemote(remoteUpdated: nil, localSynced: earlier))
+    }
+
+    /// The fold itself: the fields change, the photograph and the id do not.
+    @Test func absorbingKeepsThePhotographAndTakesTheCorrection() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let made = s.record(treeId: "kyo_016", name: "Sudajii of Omiya Gate",
+                            lat: 35.017, lng: 135.7605, image: pixel())
+        let file = s.all.first?.photo
+        #expect(file != nil, "the test needs a photograph on disk to protect")
+
+        var corrected = made
+        corrected.treeId = "kyo_019"
+        corrected.name = "The Twisted Muku of Omiya Gate"
+        corrected.photo = "a-name-from-the-server.jpg"
+        s.absorb(corrected, image: nil)
+
+        let now = s.all.first { $0.id == made.id }
+        #expect(now?.treeId == "kyo_019", "the correction did not land")
+        #expect(now?.name == "The Twisted Muku of Omiya Gate")
+        #expect(now?.photo == file, "the photograph on this phone was replaced or lost")
+        #expect(s.image(now!) != nil, "the picture can no longer be read")
+        #expect(s.all.count == 1, "absorbing made a second copy")
+    }
+
+    /// A row nobody here holds is not created by the back door: that is
+    /// `adopt`'s job, and it writes the photograph.
+    @Test func absorbingSomethingUnknownDoesNothing() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let stranger = Sightings.Sighting(id: UUID(), treeId: nil, name: "Not here",
+                                          lat: 52.37, lng: 4.89)
+        s.absorb(stranger, image: pixel())
+        #expect(s.all.isEmpty)
+    }
+}
