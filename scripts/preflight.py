@@ -1008,39 +1008,35 @@ def check_a_tree_can_be_told_apart():
     return out
 
 
-def check_a_tree_says_why_to_go():
-    """Can we say, in one line, why somebody should walk to this one?
+def note_a_reader_photograph_is_not_a_reason():
+    """The Nara shape, rekeyed after why_go was removed (2026-09-12).
 
     Hidde, 2026-09-08, after four trees went live in Nara from his own
     photographs: "mss moeten we een regel toevoegen why remarkable? why worth
-    the walk? tell others why they should go and visit the tree."
+    the walk?" Those four passed every mechanical check that existed. Name,
+    species, pin, story, honest flags, all present. What none of them carried
+    was a reason, and the run had confused "I can write an honest page about
+    this" with "this deserves a page".
 
-    Those four passed EVERY mechanical check that existed. Name, species, pin,
-    story, honest flags, all present. What none of them carried was a reason,
-    and nothing had ever asked for one. The run had confused "I can write an
-    honest page about this" with "this deserves a page".
+    The `why_go` field written that day is gone (2026-09-12, "precies haal
+    weg"): read beside the stories, it printed the story's own opening a
+    centimetre above the story, and Step 3 already requires a story to lead
+    with the most surprising fact. The FAILURE it was written for is still
+    real, so the check stays and keys on what is left: a tree published from a
+    READER'S PHOTOGRAPH with no recorded age and no usable measurement. That is
+    the exact path Nara took, and the one where a photograph flatters an
+    ordinary tree into looking like a find.
 
-    A tree usually answers the question without a sentence: a recorded age or a
-    big trunk IS the reason, and 2,384 of 2,777 have one or the other. This
-    fires on the rest, where there is no fact to stand on and no words either.
+    The answer to one is not a sentence any more. It is an age, a measurement,
+    or data/leads/, which is the four-tree floor and "would somebody travel for
+    THIS ONE TREE" doing the work a field was standing in for.
 
-    Two severities, deliberately. A tree published from a READER'S PHOTOGRAPH
-    with nothing to say is a FAIL, because that is the exact path Nara took and
-    the one where a photograph flatters an ordinary tree into looking like a
-    find. Everything else is a NOTE listing the backlog, because 393 pages
-    predate the field and a gate that fails the whole night shift on its first
-    run is a gate somebody switches off.
+    A NOTE and not a FAIL only because exactly one published tree is in this
+    state on the day the field was removed, and retiring a live page is hard
+    rule 3 and Hidde's call rather than a script's. When that one is settled
+    this goes back to a FAIL; the line is in the report so it cannot be lost.
     """
-    return _why_to_go_split()[0]
-
-
-def note_trees_with_no_reason():
-    """The NOTE half of check_a_tree_says_why_to_go: the backlog, not a blocker."""
-    return _why_to_go_split()[1]
-
-
-def _why_to_go_split():
-    fails, backlog = [], []
+    out = []
     for path in sorted(glob.glob("data/cities/*.json")):
         with open(path, encoding="utf-8") as fh:
             city = json.load(fh)
@@ -1050,23 +1046,15 @@ def _why_to_go_split():
                 r"not documented|unknown|undated|not established", age, re.I) \
                 and bool(re.search(r"\d{2,4}", age.replace(",", "")))
             measured = (tree.get("girth_cm") or 0) >= 250 or (tree.get("height_m") or 0) >= 20
-            if dated or measured or (tree.get("why_go") or "").strip():
+            if dated or measured:
                 continue
-            where = "%s: %s (%s)" % (path, tree.get("id"), tree.get("name"))
-            if (tree.get("photo") or {}).get("source") == "contributor":
-                fails.append("%s came from a reader's photograph and has no age, no "
-                             "measurement and no why_go. A photograph is not a reason. "
-                             "Give it one sentence saying why somebody should walk to "
-                             "THIS trunk, or move it to data/leads/." % where)
-            else:
-                backlog.append(where)
-    note = []
-    if backlog:
-        note.append("%d trees have no age, no measurement and no why_go, so nothing "
-                    "on the page says why to go and metaForTree has nothing to lead "
-                    "on. Backfill where there is demand. First few: %s"
-                    % (len(backlog), "; ".join(b.split(": ")[1] for b in backlog[:3])))
-    return fails, note
+            if (tree.get("photo") or {}).get("source") != "contributor":
+                continue
+            out.append("%s (%s) came from a reader's photograph and has no age and "
+                       "no measurement. A photograph is not a reason. Give it a "
+                       "measurement, or move it to data/leads/."
+                       % (tree.get("id"), tree.get("name")))
+    return out
 
 
 def note_a_young_tree_is_not_ancient():
@@ -1078,15 +1066,14 @@ def note_a_young_tree_is_not_ancient():
     het platform ipv degene die ik heb en hoezo stel jij niet de vraag we zijn
     ancient trees."
 
-    check_a_tree_says_why_to_go() was written the same day and cannot see this.
+    Its sibling check was written the same day and cannot see this.
     It treats any parseable age as a reason, so "About 10 years, planted 2016"
     satisfies it exactly as "roughly 800 years" does. That is the hole: the
     field is full, the check is quiet, and the page still gives an outdoor
-    reader no reason to walk anywhere. 124 published trees sit in it today and
-    not one carries a why_go.
+    reader no reason to walk anywhere.
 
     Under 100 years, an age is a fact and not an argument. Plenty of these
-    trees have a real answer and should simply write it down: Hiroshima's eight
+    trees have a real answer and it belongs in the story: Hiroshima's eight
     survivors stood through the bomb, Newton's apple tree is Newton's, the 1948
     dawn redwoods were the first of their species grown in the West. The ones
     that cannot answer are leads wearing a page.
@@ -1107,16 +1094,14 @@ def note_a_young_tree_is_not_ancient():
                 continue
             if (tree.get("girth_cm") or 0) >= 250 or (tree.get("height_m") or 0) >= 20:
                 continue
-            if (tree.get("why_go") or "").strip():
-                continue
             young.append("%s %s (%s, ~%s yr)"
                          % (tree.get("id"), tree.get("name"), city.get("city"), age))
     if not young:
         return []
-    return ["%d trees are under 100 years old with no why_go, so the page offers "
-            "an age as its reason and the age is not a reason. We are Ancient "
-            "Trees. Give each one a sentence or move it to data/leads/. First "
-            "few: %s" % (len(young), "; ".join(young[:3]))]
+    return ["%d trees are under 100 years old with no measurement, so the page "
+            "offers an age as its reason and the age is not a reason. We are "
+            "Ancient Trees. Measure the trunk or move them to data/leads/. "
+            "First few: %s" % (len(young), "; ".join(young[:3]))]
 
 
 STORY_MIN, STORY_MAX = 150, 250   # CLAUDE.md Step 3, held by site/src/pages/[tree].astro
@@ -1973,7 +1958,6 @@ def main():
                 + check_contributor_photos_are_traceable()
                 + check_photos_are_not_the_lead_twice()
                 + check_every_tree_names_a_source()
-                + check_a_tree_says_why_to_go()
                 + check_a_tree_can_be_told_apart()
                 + check_story_length()
                 + check_one_common_name_per_species()
@@ -1991,7 +1975,7 @@ def main():
                  + check_country_counts() + check_leads_already_published()
                  + check_tree_labels_are_translated() + check_city_indent()
                  + check_a_by_licence_names_its_author()
-                 + note_trees_with_no_reason()
+                 + note_a_reader_photograph_is_not_a_reason()
                  + note_a_young_tree_is_not_ancient()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))

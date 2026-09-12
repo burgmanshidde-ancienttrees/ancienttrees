@@ -80,12 +80,6 @@ export interface FeedTree {
    * trying to work out which one we mean. Null on most trees; a run adds them
    * a city at a time. */
   how_to_recognise: string | null;
-  /** Why somebody should walk to THIS trunk, one sentence. Travels because it
-   * is an ANSWER rather than a rule (CLAUDE.md, 2026-08-25): the website
-   * decides it once and both surfaces read it, which is the half of the
-   * both-surfaces rule that has never drifted. Null on most trees, where the
-   * age or the girth is the reason and no sentence is needed. */
-  why_go: string | null;
   /** Around the trunk in WHOLE centimetres. Rounded here because 38 city-file
    * values carry a decimal (Hawaii's registers measure to the millimetre) and
    * the app decodes an Int: one 365.8 would make Swift reject the whole trees
@@ -151,7 +145,6 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         })(),
         story: t.story ?? null,
         how_to_recognise: (t as any).how_to_recognise ?? null,
-        why_go: (t as any).why_go ?? null,
         girth_cm: (() => {
           const g = Number((t as any).girth_cm);
           return Number.isFinite(g) && g > 0 ? Math.round(g) : null;

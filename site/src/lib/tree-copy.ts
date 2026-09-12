@@ -163,7 +163,7 @@ export type TreeSize = { girth?: number; height?: number };
  *  on a clause boundary rather than mid-thought.
  */
 export function metaForTree(tree: {
-  species?: string; age_estimate?: string; why_go?: string;
+  species?: string; age_estimate?: string;
   girth_cm?: number | null; height_m?: number | null;
   location?: { neighbourhood?: string | null; address?: string | null } | null;
   story?: string;
@@ -225,45 +225,15 @@ export function metaForTree(tree: {
 
   const opening = lead(species, age, where, size);
   const room = DESC_MAX - opening.length - 1;
-  // WHY_GO BEATS THE STORY IN THE TAIL, and only in the case it was written
-  // for: a tree with neither a recorded age nor a usable measurement, where
-  // the lead is a bare `A {species} in {where}.` and the story's opening is
-  // whatever the writer chose to hook with. 393 pages are in that state, and
-  // for them why_go is the only sentence on the page that answers the question
-  // a searcher is actually asking. Where an age or a girth exists the lead
-  // already answers, so the story keeps the tail and nothing changes.
-  //
-  // Deliberately not translated: why_go lives once, on the canonical tree, and
-  // the overlays carry their own story. A translated page falls back to its
-  // own story rather than showing an English sentence in a French snippet.
-  const why = (tree.why_go ?? "").trim();
+  // The story has the whole tail again (2026-09-12). why_go used to take the
+  // front of it on a tree with neither an age nor a measurement, on the
+  // argument that the story's opening is a hook rather than an answer. Read
+  // side by side that was not true: the reason WAS the story's opening,
+  // compressed. It changed the snippet on 16 pages of 3057, which is not a
+  // trade-off, and the field is gone from both surfaces.
   const story = overrides?.story ?? tree.story ?? "";
-  // ONLY WHEN IT ENDS CLEANLY. A reason cut off mid-thought is worse than no
-  // reason, and tested on the Brussels honey locust the naive version made the
-  // page WORSE: a 130-character why_go clause-cut to 59 replaced 106
-  // characters of story that were already doing the job. metaFromStory ends
-  // with an ellipsis exactly when it had to cut, so that is the test, and it
-  // works whether why_go is one sentence or five: whole sentences are taken
-  // from the front until the room runs out. Whatever room is left still goes
-  // to the story, which is how the answer and the hook share the snippet
-  // instead of competing for it.
-  // WHOLE SENTENCES ONLY, and its own loop rather than metaFromStory's,
-  // because the two want different things. metaFromStory keeps filling toward
-  // DESC_MIN and accepts an ellipsis to get there, which is right for a story
-  // (more of it is more reason to go) and wrong for a reason (half a reason is
-  // not a short reason). So: take sentences from the front while they fit, and
-  // if not even the first one fits, take none and let the story have the room.
-  // A reason that ends mid-thought never ships.
-  const whyFront = why.split(/(?<=[.!?]) /).reduce((acc, s) => {
-    const next = acc ? `${acc} ${s}` : s;
-    return next.length <= room ? next : acc;
-  }, "");
-  const useWhy = !overrides && !age && !size && !!whyFront;
-  const front = useWhy ? whyFront : "";
-  const rest = room - (front ? front.length + 1 : 0);
-  const tail = rest >= 45 ? metaFromStory(story, rest) : "";
-  const body = [front, tail].filter(Boolean).join(" ");
-  return body ? `${opening} ${body}` : opening;
+  const tail = room >= 45 ? metaFromStory(story, room) : "";
+  return tail ? `${opening} ${tail}` : opening;
 }
 
 /** A trunk in metres, the way the app prints it (Sightings.metres + " m").
