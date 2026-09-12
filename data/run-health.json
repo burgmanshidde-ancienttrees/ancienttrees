@@ -13150,6 +13150,32 @@
    ],
    "trees": 3,
    "logged": false
+  },
+  {
+   "started": "2026-09-12T21:48:31+00:00",
+   "date": "2026-09-12",
+   "run_id": "34720976767",
+   "minutes": 51.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 355,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(grep), Bash(if), Bash(ls), Bash(python3), Bash(tail)",
+   "ended": "success",
+   "tokens": 11305884,
+   "claims_held": [
+    "alicante"
+   ],
+   "commits": 10,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "zwolle",
+     "trees": 2
+    }
+   ],
+   "trees": 2,
+   "logged": true
   }
  ],
  "schedule_changes": [
