@@ -1,6 +1,23 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - Five seconds, then the map credit is a 24 point (i)
+
+Hidde asked whether it has to be visible at all. It has to be reachable and it
+does not have to be read, and the line between those is written down: the OSMF
+attribution guideline adopted 2021-06-25 allows a credit to collapse
+"automatically on map interaction" or "automatically after five seconds", so
+long as "the user must still be able to find the licence information if they
+look for it, for example from an '(i)' button in the corner of the map."
+
+MapLibre already collapsed on a touch, which did nothing for a visitor who never
+touches the map. Now every map collapses after five seconds, from the one shared
+mapScript wrapper. Checked on the deployed page: 24 by 24, closed, with the
+/sources link inside it.
+
+It cannot go entirely. OpenFreeMap's terms say "Attribution is required" and the
+guideline's collapsed state still wants the (i) present. That is the floor.
+
 ## 2026-09-12 - And the maps themselves now credit OpenStreetMap, which the city pages did not
 
 Found while checking the change above was safe, and it was not, quite. City
