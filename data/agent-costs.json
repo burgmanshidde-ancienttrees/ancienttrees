@@ -7753,6 +7753,24 @@
         "note": "war_030-war_040 stories + recognition lines; best_time on 4 of 11 (silver lime, chestnut, black locust, copper beech)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Dallas",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 1,
+        "note": "worked the existing Texas Big Tree Registry lead list (14 leads); 1 verified (dal_009, Storytelling Place Red Oak, a Comanche marker tree), 1 duplicate of dal_003 removed, rest ruled out on distance (Tarrant/Collin county, Coppell, Lancaster all outside day-trip boundary) or lack of a second source; register-lead route now exhausted for Dallas, a from-zero pass is the only route left (Dallas is on Hidde's from-zero-approved list)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Dallas",
+        "kind": "write",
+        "tokens": 8000,
+        "trees": 1,
+        "note": "dal_009 story + recognition line, written directly in the main session rather than dispatched (single tree, below write-pass batch size)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

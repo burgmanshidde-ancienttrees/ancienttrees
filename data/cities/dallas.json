@@ -287,6 +287,38 @@
       },
       "how_to_recognise": "You can recognise the grove by its scale, sixteen or so old trees 70 to 80 feet tall with crowns over 100 feet, mostly pecans with a bur oak and a bois d'arc among them. It stands on the south bank of Cedar Creek, in from East 8th Street.",
       "verify_notes": "2026-09-08: girth_cm was 472, the TOP of the source's range ('somewhere between ten and fifteen and a half feet round'), which made the tree look bigger in the data than the source supports and ranked it that way on /collections/thickest-trees. Set to the lower bound, 305 cm, on the same principle the oldest collection uses: rank on what has been shown, never on the flattering end."
+    },
+    {
+      "id": "dal_009",
+      "name": "The Storytelling Place Red Oak",
+      "species": "Texas Red Oak (Quercus buckleyi)",
+      "age_estimate": "over 150 years, possibly several centuries",
+      "age_min": 150,
+      "age_max": 300,
+      "girth_cm": null,
+      "location": {
+        "address": "Devon-Anderson Park, near 1700 Eastcliff Drive, Dallas, TX 75217; about 0.2 mile in on the footpath to the Comanche Storytelling Place, Great Trinity Forest / White Rock Heritage District",
+        "latitude": 32.741414,
+        "longitude": -96.706001,
+        "neighbourhood": "Great Trinity Forest / White Rock Heritage District"
+      },
+      "verified_sources": [
+        "https://txhtc.org/trees/story-telling-place-comanche-marker-tree/",
+        "https://dallastrinitytrails.blogspot.com/2011/05/lower-white-rock-creek-valley-trails.html",
+        "https://tpwmagazine.com/archive/2006/nov/legend/"
+      ],
+      "access": "Free, a public City of Dallas park (Devon-Anderson Park, 24.3 acres, established 1966). Reach the tree via a marked footpath, about 0.2 mile from the main trailhead on Eastcliff Drive.",
+      "transport": "No DART stop at the park; nearest is the Green Line's Lawnview station, then a car, bike or rideshare, roughly 10-15 minutes. About 15-20 minutes by car from downtown Dallas.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "What stands today is not the original tree. Sometime after a Texas Historic Tree Coalition survey in 2002, this Texas red oak had already lost its main trunks to drought and ice, and what remains is regrowth sprouting from the stump, now barely 25 feet tall. The stump underneath is older: a trail chronicler who has walked this stretch of the Great Trinity Forest for years puts the base at hundreds of years old, probably one of the oldest living things in Dallas.\n\nIt grows on bare white limestone about a hundred feet from the Storytelling Place, a natural amphitheater where the Comanche told stories long before Dallas existed. A nonprofit called the White Rock Heritage District has been working with the Comanche Nation toward federal recognition of the site, which is a sign the ground is still tended rather than simply left to grow over.\n\nThree other marked Comanche trees nearby have not had the same luck. One in Gateway Park, one on an escarpment ridge, one at a trail crossing: all three recorded dead within the last fifteen years, taken by heat, storms or age. This one is the one still standing, or what standing looks like when a tree survives as sprouts rather than as a trunk.\n\nNobody has confirmed its condition with a recent photograph. If you have walked to the Storytelling Place lately, tell us what you saw.",
+      "how_to_recognise": "You can recognise it by its regrown trunks rising from an old stump on bare white limestone, about 100 feet west of the Storytelling Place amphitheater, a short walk in from the Eastcliff Drive trailhead.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
