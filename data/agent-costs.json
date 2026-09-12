@@ -1040,7 +1040,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -7597,6 +7597,43 @@
     "note": "3 flagged Praha 8 oaks (prg_028/029/030) written from the verify pass; no best_time and no why_go on any of them, girth plus recorded age is the reason. Batch of 3 rather than the 15-20 the rulebook prices at, so the fixed corpus read is amortised over 3 trees instead of 18: ~16k per tree against the ~12k target, overrun is batch size not per-story cost. Restored Czech diacritics the write pass had flattened to ASCII (place and street names) before merging, cross-checked against the register's own name_cz fields.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "tilburg+helmond+budapest+kamakura",
+    "kind": "photo-judge",
+    "tokens": 134000,
+    "trees": 0,
+    "photos_approved": 0,
+    "note": "viewing pass on the 4-city photo_gaps shortlist, 7 candidate/tree pairs judged, 0 approved: a park information plaque, a shopping street, a church view down a street and two dusk frames of the wrong temple. None had a tree as its subject, so species comparison never got a candidate. Ported photo_light's scoring onto sharp so the exposure check ran on Linux (photo_light.py itself is sips/macOS-only).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "helmond",
+    "kind": "verify",
+    "tokens": 75000,
+    "trees": 0,
+    "note": "Register-backed deepen pass on the Dutch LRMB register, 5 candidates verified as hlm_019-023, but the write pass found all five are duplicates of already-published trees (hlm_011/012/013/015/018): identical coordinates to six decimals, same register nrs, same planted bands. passcheck's own 'unmined' filter did not catch these (they were not among the ones flagged 'within 80m of a live tree' in the printed brief). Folded into data/leads/helmond.json as duplicate entries so the register nrs are not re-mined.",
+    "wasted": 75000,
+    "brief_wrong": true
+   },
+   {
+    "target": "ottawa",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 5,
+    "note": "Register-backed deepen pass on the NCC 'A Living Legacy' register: 5 new trees (ott_015-019) forming a second cluster in the Dominion Arboretum, 10-15 min walk from the existing Dow's Lake stop. Public access independently confirmed via Friends of the Central Experimental Farm.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "ottawa+helmond",
+    "kind": "write",
+    "tokens": 128000,
+    "trees": 5,
+    "note": "10 trees briefed, 5 written (all 5 Ottawa). All 5 Helmond entries were duplicate ids for already-published trees; passcheck --pending correctly flagged them and the pass wrote nothing for Helmond rather than shipping duplicate prose. ~26k/tree against the 15k target, entirely because half the pass was dead work caused by the verify pass's brief_wrong above.",
+    "wasted": 24000,
+    "brief_wrong": true
    }
   ]
  }

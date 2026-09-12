@@ -32,6 +32,51 @@
       "latitude": 51.477421,
       "longitude": 5.648288,
       "reason": "Not in this pass's shortlist (a different plane tree at Weg op den Heuvel 37/39 was researched instead and shipped as hlm_018). owner_category 'overig' (other/institutional), setting tuin (garden), n_trees 4: a group in a garden setting, not a single collectible point, and access is unconfirmed. Recorded here only because it surfaced while cross-checking the municipal tree catalogue; not independently researched beyond that."
+    },
+    {
+      "name": "The Variegated Cedar of Julianalaan",
+      "species": "Giant Arborvitae, variegated form (Thuja plicata)",
+      "latitude": 51.484301,
+      "longitude": 5.646807,
+      "status": "duplicate",
+      "reason": "A 2026-09-11 register-backed verify pass re-verified this LRMB register tree under a new id (hlm_019) without checking passcheck.py --pending first; identical coordinates to six decimals, species and planted band as the already-published hlm_011 (The Variegated Cedar of the Julianalaan). No new tree. Kept as a record so the register nr is not re-mined again: see verify_notes below.",
+      "verify_notes": "Register (netherlands-lrmb, nr 1683262): 'Bonte reuzenlevensboom' (variegated giant arborvitae/Thuja plicata cultivar, 'bonte' = variegated foliage), planted band 1920-1930, on a public square at Julianalaan 45, owner_category gemeente (municipality), visitable ja, visible ja, reason 'monumentaal'. History field says 'onbekend' (not recorded). Second source is not tree-specific: IVN Helmond's own published walking route through the Oranjebuurt neighbourhood (which includes Julianalaan) lists 'reuzenlevensboom' among the notable species encountered on that route, corroborating that a giant arborvitae of note stands in this exact neighbourhood, but does not name or pinpoint this individual tree. No girth on file. Flagged for that reason; otherwise straightforward, publicly visible municipal tree on an open square."
+    },
+    {
+      "name": "The Old Oak of the Warande",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 51.485981,
+      "longitude": 5.638506,
+      "status": "duplicate",
+      "reason": "A 2026-09-11 register-backed verify pass re-verified this LRMB register tree under a new id (hlm_020) without checking passcheck.py --pending first; identical coordinates to six decimals, species and planted band as the already-published hlm_015 (The South Oak of the Warande). No new tree. Kept as a record so the register nr is not re-mined again: see verify_notes below.",
+      "verify_notes": "Register (netherlands-lrmb, nr 1696333): pedunculate oak (zomereik), planted band 1850-1860, in the wooded part ('bos') of the Warande park at De Kluis 2, owner_category gemeente, visitable ja, visible nee (stands off the main path but reachable). Register's own history note: 'one of the few specimens still surviving from the layout of the Warande in the mid-nineteenth century, around 1850-1860.' Corroborated in general terms, not tree-specifically, by Dutch Wikipedia's Warande park article (oldest plantings still present date from 1834, most of the oldest trees from around 1850, monumental oaks named among them) and by the Monumentenwerkgroep Helmond's own Warande page, which independently notes many oaks in the park were felled and replanted between 1830 and 1860, and that a different oak that fell in a 2018 storm was aged at roughly 150 years (so grown from an acorn around 1865), consistent with the register's stated planting band for surviving oaks of the same generation. No girth on file. A second, similarly-dated register oak (nr 1696332, also 'Zomereik', planted band 1850-1860) stands about 400-500 m away elsewhere in the same park; not included here to avoid a near-duplicate entry, recorded as a lead."
+    },
+    {
+      "name": "The Plane Tree by the Stadskantoor",
+      "species": "London Plane (Platanus x acerifolia)",
+      "latitude": 51.47659,
+      "longitude": 5.657014,
+      "status": "duplicate",
+      "reason": "A 2026-09-11 register-backed verify pass re-verified this LRMB register tree under a new id (hlm_021) without checking passcheck.py --pending first; identical coordinates to six decimals, species and planted band as the already-published hlm_018 (The Plane Tree of Weg op den Heuvel). No new tree. Kept as a record so the register nr is not re-mined again: see verify_notes below.",
+      "verify_notes": "Register (netherlands-lrmb, nr 1683271): London plane (gewone plataan), planted band 1830-1840, multi-stemmed ('meerstammig'), owner_category gemeente, visitable ja, visible ja. Register's own history note: the tree once stood beside the house of physician/manufacturer Holtus, on the banked shore of the Ameide (a branch of the Aa that rejoined it via the Koninginnewater); the associated house dates from around 1870 and the register text adds 'the tree is also roughly dateable [from that]', which is inconsistent with the register's own numeric planted_band of 1830-1840 (40 years earlier). Flagging this discrepancy rather than picking a winner: I am using the register's dated field (1830-1840) as the estimate since it is the structured data point, not the prose aside. A local news item (ditishelmond.nl, on a separate weeping willow behind the Stadskantoor) independently confirms mature registered/monumental trees stand on this same municipal plot and that the municipality treats them as worth preserving through redevelopment, but does not name this specific plane tree or give it an age; a municipality Q&A page about tree preservation during the 'Huis voor de Stad' redevelopment (helmond.nl) returned a server error (HTTP 500) on two attempts and could not be used. No girth on file."
+    },
+    {
+      "name": "The Weeping Beech of the Molenstraat Cemetery",
+      "species": "Weeping Beech (Fagus sylvatica f. pendula)",
+      "latitude": 51.478101,
+      "longitude": 5.668485,
+      "status": "duplicate",
+      "reason": "A 2026-09-11 register-backed verify pass re-verified this LRMB register tree under a new id (hlm_022) without checking passcheck.py --pending first; identical coordinates to six decimals, species and planted band as the already-published hlm_012 (The Weeping Beech of the Molenstraat Cemetery). No new tree. Kept as a record so the register nr is not re-mined again: see verify_notes below.",
+      "verify_notes": "Register (netherlands-lrmb, nr 1683272): weeping beech (treurbeuk), planted band 1900-1910, weeping form ('treurvorm'), owner_category religieuze instantie, visitable ja, in the former Catholic cemetery on Molenstraat. History field 'onbekend' (not recorded). Second source (online-begraafplaatsen.nl and general search results) independently confirms this cemetery, formerly the Sint Lambertus/R.K. burial ground, was established in 1880 as an expansion of an earlier, smaller Molenstraat cemetery, and that its grounds carry trees dating from that founding period onward, i.e. a wooded, historic cemetery layout consistent with a circa-1900s weeping beech, though the source does not name this individual tree. This is a public cemetery, not a private garden; grounds are open in daylight to visitors as with any Dutch municipal/parish cemetery. No girth on file."
+    },
+    {
+      "name": "The Silver Maple of the Molenstraat Cemetery",
+      "species": "Silver Maple (Acer saccharinum)",
+      "latitude": 51.479515,
+      "longitude": 5.667989,
+      "status": "duplicate",
+      "reason": "A 2026-09-11 register-backed verify pass re-verified this LRMB register tree under a new id (hlm_023) without checking passcheck.py --pending first; identical coordinates to six decimals, species and planted band as the already-published hlm_013 (The Silver Maple of the Molenstraat Cemetery). No new tree. Kept as a record so the register nr is not re-mined again: see verify_notes below.",
+      "verify_notes": "Register (netherlands-lrmb, nr 1694363): silver maple (zilveresdoorn), planted band 1880-1890, owner_category religieuze instantie, visitable ja, in the same former Catholic cemetery on Molenstraat as hlm_022, about 160 m away. Register n_trees field says 2 (a registered pair/twin); folded here into one entry describing the pair rather than shipping as two near-identical points, per the register-twins rule. Register's own history note: 'probably planted around 1880 at the opening of the cemetery', which lines up with the independently confirmed 1880 founding date of this cemetery (online-begraafplaatsen.nl and general search results), though that source does not name the maple specifically. Public cemetery, open in daylight. No girth on file."
     }
   ]
 }
