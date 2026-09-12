@@ -1430,6 +1430,44 @@ def check_no_personal_address():
     return out
 
 
+def check_icons_are_drawn():
+    """The ratchet check from 2026-09-12: no emoji standing in for an icon.
+
+    Hidde, looking at the two surfaces side by side: "op de site is de duim een
+    gele emoji, in de app een lijntekening, wil je die ook gelijk hebben."
+    The vote control had carried a typed thumb since it was built, so the same
+    control wore a yellow cartoon on the web and an outline glyph on the phone,
+    and the web half changed colour with whatever operating system was drawing
+    it. An emoji is somebody else's artwork: it ignores the palette, it cannot
+    take a pressed state, and it renders differently on every machine.
+
+    His standing instruction with it was "neem app altijd als leidend wbt
+    design", so an icon on this site is drawn, in an svg we own, the way the
+    heart and the share glyph already are.
+
+    Source rather than built pages, because that is where the mistake is made
+    and the line number is the fix. A tree story with an emoji in it is a
+    different problem and would be caught by the corpus checks, not here.
+    """
+    src = ROOT / "site" / "src"
+    if not src.exists():
+        return []
+    # Ranges kept narrow on purpose: pictographs and dingbats, never the
+    # typographic marks this site uses every day (the middot between facts, the
+    # arrows on "read on" links, the chevrons in the breadcrumbs).
+    emoji = re.compile(
+        "[\U0001F000-\U0001FAFF\U00002600-\U000026FF\U00002700-\U000027BF\U0000FE0F]")
+    out = []
+    for f in sorted(src.rglob("*")):
+        if f.suffix not in (".astro", ".ts", ".tsx", ".js"):
+            continue
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            if emoji.search(line):
+                out.append(f"{f.relative_to(ROOT)}:{n}: emoji where an icon belongs; "
+                           f"draw it as an svg, and match the app's glyph")
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1449,6 +1487,7 @@ def main():
 
     failures = []
     failures += check_auth_corpus_agreement()
+    failures += check_icons_are_drawn()
     failures += check_photo_orientation()
     failures += check_photo_resolution()
     failures += check_save_flow_integrity()

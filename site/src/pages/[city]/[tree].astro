@@ -321,7 +321,10 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         </p>
       )}
       {tree.paid_entry && (
-        <p class="tb-ticket"><b>You need a ticket to see this tree</b><span>{tree.access}</span></p>
+        <p class="tb-ticket">
+          <svg class="tb-ticket-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5V10a2 2 0 0 0 0 4v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2 2 0 0 0 0-4V7.5Z"/><path d="M8.5 7.6v8.8" stroke="#E8EEF6" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 2.4"/></svg>
+          <span class="tb-ticket-txt"><b>You need a ticket to see this tree</b><span>{tree.access}</span></span>
+        </p>
       )}
     </div>
 

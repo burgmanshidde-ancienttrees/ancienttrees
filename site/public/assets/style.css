@@ -1477,10 +1477,17 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .worthit-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .worthit-compact { margin: 0.5rem 0 0; }
 .worthit-q { font-weight: 700; }
-.worthit-btn { font-size: 16px; line-height: 1; min-width: 44px; min-height: 44px; padding: 0.35rem 0.7rem;
-  border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer; }
-.worthit-btn:hover { border-color: var(--moss); }
-.worthit-btn.is-on { border-color: var(--moss); box-shadow: inset 0 0 0 1px var(--moss); }
+.worthit-btn { display: inline-flex; align-items: center; justify-content: center;
+  font-size: 16px; line-height: 1; min-width: 44px; min-height: 44px; padding: 0.35rem 0.7rem;
+  border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer;
+  color: var(--ink); }
+/* The thumb is a drawing, like the heart and like the app's own (2026-09-12):
+   outline in ink while nothing is cast, solid moss once it is. */
+.worthit-btn .thumb { display: block; width: 18px; height: 18px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.worthit-btn:hover { border-color: var(--moss); color: var(--moss); }
+.worthit-btn.is-on { border-color: var(--moss); color: var(--moss); background: var(--moss-light); box-shadow: none; }
+.worthit-btn.is-on .thumb-hand { fill: currentColor; }
 /* Deliberately quieter than the thumbs: reporting a fault is the rarer errand,
    and the convention (Google Maps, AllTrails) is a plain secondary control
    beside the opinion, never a button competing with it. */
@@ -1764,8 +1771,15 @@ a.tb-species:hover > b { text-decoration: underline; }
 /* The ticket keeps its own blue and stands on its own, which is how it reads
    as the one thing here that decides whether you set off (Hidde, 2026-09-04).
    Blue and never gold: gold means paid-by-us everywhere. */
-.tb-ticket { margin: 0; padding: 0.75rem 1rem; font-size: 14px; line-height: 1.4;
+/* The ticket band, glyph and all, is the app's (2026-09-12). The app has drawn
+   `ticket.fill` beside this sentence since the band was built and the website
+   drew nothing, which left the same warning wearing two faces. Same blue, same
+   tenth-opacity ground, same hairline: the mark was the only piece missing. */
+.tb-ticket { display: flex; align-items: flex-start; gap: 0.55rem;
+  margin: 0; padding: 0.75rem 1rem; font-size: 14px; line-height: 1.4;
   background: rgba(46,107,168,0.10); border-top: 1px solid rgba(0,0,0,0.10); }
+.tb-ticket-ic { flex: 0 0 auto; width: 17px; height: 17px; margin-top: 2px; color: #2E6BA8; }
+.tb-ticket-txt { min-width: 0; }
 .tb-ticket b { display: block; color: #2E6BA8; }
 .tb-ticket span { display: block; color: var(--ink); }
 .fact-go { font-weight: 400; color: var(--ink-light); }
@@ -1796,4 +1810,7 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
 .worthit.worthit-inline { display: inline-flex; flex-direction: row; margin: 0; gap: 0; }
 .worthit-inline .worthit-row { gap: 0; }
 .worthit-inline .worthit-btn { border: 0; background: transparent; padding: 0 0.4rem; font-size: 17px; }
-.worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; }
+/* Bare beside the place name, the way the app draws its compact one: no pill,
+   no tint, the glyph itself carries the state. */
+.worthit-inline .worthit-btn .thumb { width: 16px; height: 16px; }
+.worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; background: transparent; }
