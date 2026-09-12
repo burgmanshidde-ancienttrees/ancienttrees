@@ -60,6 +60,10 @@
     "2026-09-11": {
       "note": "Both WARNs verified already fixed in current code/build: PhotoFigure.astro/TreeCard.astro guard null creditText so no empty 'Photo: ' figcaption renders (checked kyoto/baarn pages, none present); [tree].astro's nameEchoesSpecies check already drops the duplicated species clause (Manchester Amur Cork Tree, Adam's Laburnum, Munich Fern-leaved Beech all title correctly). No code change needed.",
       "at": "2026-09-12T08:20:50+00:00"
+    },
+    "2026-09-12": {
+      "note": "The '1 trees' grammar WARN (Home.swift:720) was already fixed by another session's commit ced016040 (shared helper), confirmed present on main.",
+      "at": "2026-09-12T16:42:46+00:00"
     }
   }
 }
