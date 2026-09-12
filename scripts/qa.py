@@ -1430,6 +1430,90 @@ def check_no_personal_address():
     return out
 
 
+# The seven languages the site publishes in, and the controls a reader can tap.
+# Both lists are deliberately short: this check is about whether a FEATURE
+# reached a language, not about whether two pages are byte-identical.
+LANGS = ["es", "it", "nl", "de", "pt", "fr", "ja"]
+CONTROLS = {
+    "worthit-btn": "the worth-it vote",
+    "save-btn": "the save heart",
+    "share-btn": "the share button",
+    "report-btn": "the report link",
+    "dir-link": "the directions button",
+}
+# A question page's slug is translated, so its twin cannot be found by path.
+QUESTION_SLUGS = {
+    "es": "arbol-mas-antiguo", "it": "albero-piu-antico", "nl": "oudste-boom",
+    "de": "aeltester-baum", "pt": "arvore-mais-antiga",
+    "fr": "arbre-le-plus-vieux", "ja": "saiko-rei-no-ki",
+}
+
+
+def check_every_language_gets_the_same_controls():
+    """A feature shipped in English must reach all seven languages.
+
+    Hidde, 2026-09-12, on being told the worth-it vote was missing from every
+    translated tree page: "wat kan ik tegen je zeggen dat je altijd consistent
+    over talen ontwikkeld." The honest answer is nothing, because he has said
+    it before. On 2026-09-02 he said "alle paginas en talen moeten consistent
+    blijven", and two checks came out of that day: one refuses text a
+    translator never looked up, and one refuses a translated city missing
+    trees its English page holds. Both watch CONTENT. Neither has an opinion
+    about whether a BUTTON made the crossing, which is how the vote could be
+    absent from 907 pages while every gate stayed green.
+
+    So this compares the built pages, English against each translated twin,
+    and asks one question per control: the English page has it, does this one?
+    Built rather than source, because a control can go missing in three
+    different places (a component that never renders it, a page type that
+    never passes it, a script that never wires it) and only the output knows.
+
+    data/lang-gaps.json carries what was already missing on the day this was
+    written, so the check could ship without turning the deploy red over work
+    nobody had done yet. Those are OPEN GAPS and not exceptions: each says
+    what is missing and why it is still missing, and the entry is deleted when
+    the control ships rather than when somebody tires of reading it. Anything
+    not on that list fails the push, which is the whole point: a feature added
+    to the English page tomorrow cannot quietly skip the other seven.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    allow = set()
+    gaps_file = root / "data" / "lang-gaps.json"
+    if gaps_file.is_file():
+        for e in json.loads(gaps_file.read_text(encoding="utf-8")).get("open", []):
+            allow.add((e.get("control"), e.get("page_kind")))
+    found = {}
+    for lang in LANGS:
+        lang_root = DIST / lang
+        if not lang_root.is_dir():
+            continue
+        for page in lang_root.rglob("*.html"):
+            rel = page.relative_to(lang_root)
+            if len(rel.parts) == 2 and rel.stem == QUESTION_SLUGS.get(lang):
+                kind, twin = "question", DIST / rel.parts[0] / "oldest-tree.html"
+            elif len(rel.parts) == 2:
+                kind, twin = "tree", DIST / rel
+            else:
+                kind, twin = "city", DIST / rel
+            if not twin.is_file():
+                continue
+            en = twin.read_text(encoding="utf-8", errors="ignore")
+            tr = page.read_text(encoding="utf-8", errors="ignore")
+            for marker in CONTROLS:
+                if marker in en and marker not in tr:
+                    key = (marker, kind)
+                    if key in allow:
+                        continue
+                    found.setdefault(key, []).append(f"{lang}/{rel}")
+    for (marker, kind), pages in sorted(found.items()):
+        out.append("%s is on the English %s page and missing from %d translated "
+                   "one(s), e.g. %s. Ship it in all seven languages or record "
+                   "it in data/lang-gaps.json with what is missing and why."
+                   % (CONTROLS[marker], kind, len(pages), ", ".join(sorted(pages)[:3])))
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1461,6 +1545,7 @@ def main():
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_approved_photos_reach_the_feed()
+    failures += check_every_language_gets_the_same_controls()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")

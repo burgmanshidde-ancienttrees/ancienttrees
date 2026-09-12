@@ -1,6 +1,40 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - A feature that ships in English now has to reach the other seven
+
+Hidde, told that the worth-it vote was on no translated tree page: "wat kan ik
+tegen je zeggen dat je altijd consistent over talen ontwikkeld." Nothing, and
+that is the finding rather than a dodge. He said it already on 2026-09-02
+("alle paginas en talen moeten consistent blijven"), two checks came out of
+that day, and both watch CONTENT: one refuses text a translator never looked
+up, the other refuses a translated city missing trees its English page holds.
+Neither has an opinion about a BUTTON.
+
+So the report was true and it was smaller than the truth. Measured on the
+built site: the vote is missing from 907 translated tree pages and the share
+button from 954 (907 tree pages, 47 city pages), in all seven languages, while
+the heart, the report link and the directions button are everywhere. Cause is
+one file: site/src/components/TranslatedTreePage.astro never renders WorthIt
+or ShareButton, so no page in any language could have them.
+
+`check_every_language_gets_the_same_controls()` in scripts/qa.py compares each
+built translated page against its English twin and fails the push on a control
+the English page has and the translated one does not. Built output rather than
+source, because a control can go missing in a component, a page type or a
+script and only the output knows which. Question pages are matched through
+their translated slug, so they are covered too.
+
+data/lang-gaps.json holds what was already missing, as OPEN GAPS with what and
+why, not as approved exceptions: an entry is work to do and it is deleted when
+the control ships. Verified both ways, green as recorded and red naming the
+907 pages when the vote's entry is taken out.
+
+Still open, and it is Hidde's call rather than a run's: putting the vote and
+the share button on the translated pages needs the whole worth-it copy set
+written in seven languages, and none of those strings exists in UIStrings yet.
+That is copy under PRODUCT_COPY.md.
+
 ## 2026-09-12 - Tapping the search box on a phone zoomed the whole page in
 
 Hidde: "als je op mobile web op zoek klikt zoomt ie raar in." Safari on iOS
