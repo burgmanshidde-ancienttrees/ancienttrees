@@ -49,6 +49,21 @@ KNOWN_OPTIONAL = {
     ("/api/trees.json", "trees[].photo.credit_line"),
 }
 
+# (feed, field) pairs REMOVED ON PURPOSE, where every app version in git already
+# decodes the field as optional, so its disappearance breaks no installed copy.
+# The same evidence rule as KNOWN_OPTIONAL and not one inch looser: a removal
+# goes here only after reading every version of Kit/Models.swift in git, because
+# this list is the one way to silence the check this whole file exists to be.
+#
+# why_go, removed 2026-09-12 ("precies haal weg"): it printed a compression of
+# the story's own opening directly above the story. All three versions of
+# Models.swift that ever declared it wrote `let whyGoRaw: String?`, so no
+# shipped build can fail on its absence, and the property it fed is gone from
+# TreeDetail in the same change.
+KNOWN_GONE = {
+    ("/api/trees.json", "trees[].why_go"),
+}
+
 
 def kind(v):
     if v is None:
@@ -135,8 +150,9 @@ def compare(path, live, new):
 
     for field, was in sorted(a.items()):
         if field not in b:
-            problems.append(f"{path}  {field} is GONE "
-                            f"(was {'/'.join(sorted(families(was['types'])))})")
+            if (path, field) not in KNOWN_GONE:
+                problems.append(f"{path}  {field} is GONE "
+                                f"(was {'/'.join(sorted(families(was['types'])))})")
             continue
         now = b[field]
 
@@ -155,7 +171,7 @@ def compare(path, live, new):
         # A FIELD THAT WAS ONLY EVER NULL IS AN ABSENT FIELD (2026-09-08).
         # Giving it a value for the first time is an ADDITION, which the note
         # below calls always safe, and it fired as a breaking type change the
-        # first time one tree got a why_go.
+        # first time one tree got a new field.
         #
         # It is safe by the check's own logic. A client that survives today's
         # feed must already treat this field as optional, because a null cannot
@@ -166,7 +182,7 @@ def compare(path, live, new):
         #
         # This will fire on every new field, once, on the day the first row
         # gets a value, which is why it is worth fixing rather than forcing:
-        # why_go alone has 475 trees still to fill in.
+        # a newly added field has most trees still to fill in.
         if added and was["types"] <= {"null"} and "null" not in added:
             added = set()
         # FIELDS EVERY SHIPPED APP ALREADY DECODES AS OPTIONAL may go null.

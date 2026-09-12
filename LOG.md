@@ -228,6 +228,112 @@ are yours to rank, not mine to start.
    code nothing emits.
 3. The map pin on the phone wears a ticket mark, a heart and a tick. The
    web map pin wears none of the three.
+## 2026-09-12 (continuation 12) - Florence 23 -> 24; fixed a floor-test race; found a workflow fix I cannot push
+
+Rung 2 first: two breaks flagged at session start. Walking routes had
+died on a git push race (another workflow landed a commit between our
+own pull and push); wrote a retry loop into routes.yml but **could not
+push it**, GitHub refuses a workflow-file edit from this token without
+a `workflows` scope ("refusing to allow a GitHub App to create or
+update workflow ... without workflows permission"). Reverted that file
+so the working tree stays clean; the fix is sitting in this log entry
+instead. FOR HIDDE: either grant the App the workflows scope, or apply
+this diff yourself: in `.github/workflows/routes.yml`'s Commit step,
+wrap the closing `git -c rebase.autoStash=true pull --rebase` /
+`git push` pair in a `for i in 1 2 3 4 5; do ... && break; sleep
+$((i*5)); done` retry loop. The iOS floor job's FlowWalk test failed
+tapping "person-more" again, the exact race already documented in the
+test file from 2026-09-01, just under heavier CI load; widened the
+wait from 10s to 20s (this one I could push, it's app code not a
+workflow file).
+
+Checked `city_queue.py --next`: Taormina and Ravenna, the two
+highest-ranked openable cities, are both still the documented dead
+ends from today's earlier continuations (Taormina's register supply is
+the same hotel-grounds trees already blocked on access; Ravenna's 4
+candidates spread 19km with no cluster). Did not re-research either.
+
+`passcheck.py --pending` had two trees verified and waiting: Florence's
+flo_024 (Pine of Via del Pino, a stone pine that gave its own street
+its name, MASAF register + an independent 2024 piece + RAMI, girth 437
+cm) and Lagos PT's lgp_001, already correctly held back by an earlier
+pass since it's the only candidate within 20km and well short of the
+four-tree floor. Merged flo_024 into Florence directly (target 30,
+currently at 23, 152 impressions/10d, no agent needed since the story
+was mine to write from the verified facts). That broke the Italian
+translation overlay (it/florence, Contract J refuses a short overlay
+outright): wrote the missing translation and fixed Italy's country-page
+meta_description (350 -> 351 trees) while I was in there.
+
+Ran a bounded photo viewing pass on demand-city trees with no photo
+(DATA.md's depth-allowed roster): fetched candidates for Amsterdam's
+and Florence's photo-less trees and looked at all 12. Rejected 10
+outright (a museum atrium interior for a poplar, three Verona photos
+queued against Florence trees, a Haarlem Stationsplein statue queued
+against an Amsterdam elm, generic park/street scenes with no
+identifiable subject tree). Held 2: an iNaturalist cypress in Boboli
+Gardens whose coordinates sit about 68m from our pin, in a garden with
+a whole avenue of similar old cypresses and where our own story says
+this specimen stands apart from that avenue, so identity isn't certain
+enough to approve.
+
+Ran preflight (0 problems), superlatives (no clashes) and a full astro
+build (5519 pages, exit 0) before committing. Week budget per
+`run_health.py --week`: 4740/5000 minutes, so kept this deliberately
+small rather than starting a new multi-city research pass.
+
+## 2026-09-12 - why_go is gone from both surfaces
+
+Hidde: "why_go is toch een element dat we volledig van de website kunnen
+verwijderen - waarom zouden we dit maken?", then "precies haal weg". He is
+right, and the evidence is sharper than the argument. It existed on 40 of 3,057
+trees, 1.3 percent. Read beside their own stories, all three of the first ones
+said the same thing twice:
+
+  why_go: "An English elm a Baltimore tradition says Frederick Douglass planted
+           as an enslaved child..."
+  story : "Baltimore tradition holds that Frederick Douglass planted this elm
+           as a boy, while he was still enslaved in the city."
+
+That is not bad luck, it is Step 3 working: a story is already required to lead
+with the most surprising fact, so a field asking for exactly that prints the
+page's own opening a centimetre above itself. It is the duplication the
+whole-page check of 2026-08-04 exists to catch, and it shipped anyway. The one
+thing it did that the story could not, take the front of the meta description
+on a tree with neither an age nor a measurement, touched sixteen pages.
+
+Removed: the paragraph on the tree page, the branch in metaForTree (the story
+has the whole tail again), the field in /api/trees.json and in the content
+schema, whyGoRaw and its CodingKey in Models.swift, the block in TreeDetail,
+and the 40 values in 22 city files. The stories are untouched, so nothing was
+actually lost.
+
+THE CHECK STAYS, REKEYED. The Nara failure it was written for is real and a
+field never fixed it: four trees went live whose own stories argued against
+their pages. What answers that is the four-tree floor and "would somebody
+travel specifically for THIS ONE TREE", not a sentence justifying a page that
+should not exist. So `check_a_tree_says_why_to_go()` becomes
+`note_a_reader_photograph_is_not_a_reason()`: a tree published from a reader's
+photograph with no recorded age and no usable measurement, which is the exact
+shape Nara had. A NOTE and not a FAIL for one reason only, below.
+
+And the feed check had to be told this was deliberate. `feedshape.py` reports
+any field that disappears from a live feed, which is exactly right, so it now
+carries a KNOWN_GONE list with the same evidence rule KNOWN_OPTIONAL has: all
+three versions of Models.swift that ever declared whyGoRaw wrote `String?`, so
+no installed build can fail on its absence. Verified both ways.
+
+Gone with it: the 491-tree backlog NOTE I put on Hidde's open-work list this
+morning. That was work that bought nothing, and I counted it instead of
+weighing it.
+
+FOR HIDDE: one tree is now in the shape the rekeyed check names, and it is
+yours rather than a script's because retiring a live page is hard rule 3.
+kyo_019, The Twisted Muku of Omiya Gate in Kyoto Gyoen: your own photograph, no
+recorded age, no measurement. A girth would settle it; otherwise it belongs in
+data/leads/. Once it is settled the check goes back to a FAIL, which is what it
+should be.
+
 ## 2026-09-12 - The vote, the share button and the app block reach all seven languages
 
 Hidde: "zet het op de vertaalde pagina's alles consistent hoe zorg ik dat je

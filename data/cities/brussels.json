@@ -1136,7 +1136,8 @@
       "notes": "Single-sourced on the region's own remarkable-trees inventory (sites.heritage.brussels, register entry 3426, girth 342cm, crown 12m), flagged for that reason; the register is a government source, accepted as such under the register-layer rule. A second search (French Wikipedia's Liste des arbres remarquables de Belgique, opendata.brussel.be) found no independent account of this specimen; opendata.brussel.be's own dataset description says it republishes the same regional inventory rather than an independent survey. Folds in two register neighbours standing within about 10 metres (register 3427, Aesculus hippocastanum 274cm; register 3430, Tilia x euchlora 204cm) as companions in the story per the register-twins rule, rather than shipping three near-identical entries for one spot a visitor sees as one thing. Held as a lead since 2026-09 (data/leads/brussels.json) for lack of a second source; shipped flagged per CLAUDE.md Step 2 rather than held indefinitely, since Brussels clears the depth-allowed impressions threshold (DATA.md, 147 impressions).",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "Broad compound leaves on long red-tinged stalks, unlike the horse chestnut and lime beside it; the trunk is the thickest of the three and stands closest to the square's antique stalls."
+      "how_to_recognise": "Broad compound leaves on long red-tinged stalks, unlike the horse chestnut and lime beside it; the trunk is the thickest of the three and stands closest to the square's antique stalls.",
+      "girth_cm": 342
     }
   ],
   "hero_tree_id": "bru_003"

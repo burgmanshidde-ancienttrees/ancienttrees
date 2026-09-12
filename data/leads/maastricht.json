@@ -24,6 +24,14 @@
       "latitude": 50.843589,
       "longitude": 5.68328,
       "reason": "DATA QUALITY FLAG, not a new tree: this register entry's coordinates (50.843589, 5.68328) are identical to six decimal places with the already-published maa_013 'Golden Rain Tree of Aldenhofpark' (Koelreuteria paniculata, 50.843589, 5.68328). Either this is the same physical specimen registered under a different Dutch common name than we published it under, or two genuinely different trees occupy the exact same point (unlikely). Needs a north-Aldenhofpark site check or a look at the register's own photo/ID before treating as a distinct tree; not researched further this pass to stay within the 4-candidate exposure limit. Flag for whoever next touches maa_013's sourcing."
+    },
+    {
+      "nr": 1679960,
+      "name": "Japanse notenboom (Bredestraat area, kandelaber form)",
+      "species": "Ginkgo (Ginkgo biloba), kandelaber (candelabra/pollarded) form per register",
+      "latitude": 50.847476,
+      "longitude": 5.690677,
+      "reason": "Register marks setting 'plein', owner_category 'publiekrechtelijke organisatie' (public-law body, not a private individual), visitable 'ja' but visible 'onbekend' (unknown). Reverse-geocodes to Bredestraat 19, inside Maastricht's dense historic Binnenstad, not a park. No independent source found describing this specific tree, its exact setting, or whether the 'plein' (square) it sits on is genuinely open ground versus a courtyard behind a building facade. Left as a lead rather than blocked outright (visitable is 'ja' and the owner is a public body, not a private garden), but not published without a source or an OSM/access check confirming a stranger can walk up to it without permission, per hard rule 10's 'when in doubt, leave it out'. Distinct from the verified maa_019 Ginkgo of Mgr. Nolenspark (different register nr, different coordinates, ~700 m apart)."
     }
   ],
   "blocked": [
@@ -58,6 +66,22 @@
       "latitude": 50.846528,
       "longitude": 5.691406,
       "reason": "Private back garden ('achtertuin') of a residential address; register itself marks visitable 'nee' and visible 'nee'. Clear hard rule 10 fail, blocked outright."
+    },
+    {
+      "nr": 1690781,
+      "name": "Bruine beuk (Stokstraat 46 area)",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "latitude": 50.847699,
+      "longitude": 5.694137,
+      "reason": "Register marks setting 'tuin' (garden), owner_category 'publiekrechtelijke organisatie', visitable 'ja', visible 'onbekend'. Reverse-geocodes to Stokstraat 46B, in Maastricht's dense historic Binnenstad. monumenten.nl's record for Stokstraat 46 describes the building as a former 'parochieschool' (parish school) with no mention of a garden, tree or public access, and a separate web source describes this beech as 'a remnant of what was formerly a subdivided garden at the corner house', which reads as a residual private/institutional back garden rather than open ground. No evidence found that a stranger can walk up to this tree without entering a building or asking permission. Blocked under hard rule 10's no-permission-needed test; would need a source showing the garden itself (not just the building) is open to the public before reconsidering."
+    },
+    {
+      "nr": 1691160,
+      "name": "Witte paardenkastanje (0.7 km, kandelaber, plein)",
+      "species": "White Horse Chestnut (Aesculus hippocastanum), kandelaber form, n_trees=6",
+      "latitude": 50.851204,
+      "longitude": 5.687334,
+      "reason": "Register itself marks owner_category 'particulier' (private individual), visitable 'nee', visible 'nee'. Clear hard rule 10 fail, blocked outright, same pattern as the Witmakerstraat chestnut above."
     }
   ]
 }
