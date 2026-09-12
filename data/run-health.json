@@ -13116,6 +13116,40 @@
    ],
    "trees": 23,
    "logged": true
+  },
+  {
+   "started": "2026-09-12T19:50:25+00:00",
+   "date": "2026-09-12",
+   "run_id": "34715312499",
+   "minutes": 36.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 277,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(grep), Bash(if), Bash(ls), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 4083967,
+   "claims_held": [
+    "berlin"
+   ],
+   "commits": 12,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "mrakotin",
+     "trees": 1
+    },
+    {
+     "city": "vir",
+     "trees": 1
+    },
+    {
+     "city": "visnova",
+     "trees": 1
+    }
+   ],
+   "trees": 3,
+   "logged": false
   }
  ],
  "schedule_changes": [
