@@ -419,14 +419,11 @@ public final class Account {
     /// for every other universal link this app receives.
     @discardableResult
     public func signInFromLink(_ url: URL) async -> Bool {
-        guard let fragment = url.fragment, !fragment.isEmpty else { return false }
-        var tokens: [String: String] = [:]
-        for pair in fragment.split(separator: "&") {
-            let kv = pair.split(separator: "=", maxSplits: 1)
-            guard kv.count == 2 else { continue }
-            let raw = String(kv[1])
-            tokens[String(kv[0])] = raw.removingPercentEncoding ?? raw
-        }
+        // OAuth.fragment reads exactly this shape already, because Supabase
+        // returns its tokens the same way to the Google callback as it does to
+        // a magic link. Writing a second copy here is the mistake the comment
+        // on session(from:) below records having already been made once.
+        let tokens = OAuth.fragment(of: url)
         guard let refresh = tokens["refresh_token"], !refresh.isEmpty else { return false }
         state = .working
         problem = nil

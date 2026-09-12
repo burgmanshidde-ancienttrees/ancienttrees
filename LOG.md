@@ -25,18 +25,33 @@ and it reads the tokens out of the fragment. The new /auth page is the other
 half: when iOS does not hand the link to the app, it signs the person in on the
 website, which is the same account.
 
-**FOR HIDDE, two things.**
+**FOR HIDDE, ONE thing, and he was right to ask.** He answered the first draft
+of this list with "check of ik het echt moet doen want ik heb alles al ooit voor
+de app gemaakt", and checking removed one of the two.
 
-1. Apple on mobile web needs ten minutes in two consoles. developer.apple.com:
-   a Services ID with ancienttrees.app and
+1. **Still needed: the Services ID and the .p8**, on developer.apple.com. It is
+   the smaller half of a setup he has already half done. RELEASE_CHECKLIST.md
+   records that he enabled the Apple provider with the bundle id on 2026-08-30
+   and that Apple sign-in was then proven on his own device; the same entry
+   records the WEB route answering 400 "because it needs the OAuth secret we
+   deliberately left empty, and the website has no Apple button". The website
+   has one now, so that empty secret is the only thing left. A Services ID with
+   ancienttrees.app and
    `https://caimvxiyrtifilimlkqw.supabase.co/auth/v1/callback` as the return
-   URL, plus a key with Sign in with Apple enabled (the .p8 downloads once and
-   never again). Then Supabase, Authentication, Providers, Apple: the Services
-   ID goes in the client ids BEFORE the bundle id that is already there. Tell
-   me when it is done and I flip the flag.
-2. Supabase, Authentication, URL Configuration: `https://ancienttrees.app/auth`
-   has to be on the redirect allow-list, or Supabase quietly substitutes the
-   Site URL and the sign-in link lands on the homepage instead.
+   URL, a key with Sign in with Apple enabled, then both into the provider with
+   the Services ID listed BEFORE the bundle id. The bundle id staying there is
+   what keeps the app working. When it is done,
+   `/auth/v1/authorize?provider=apple` answers 302 instead of 400, which is the
+   same outside check that proved the app's half, and then the flag flips.
+
+2. **NOT needed after all: the redirect allow-list.** The first draft of this
+   entry asked him to add `https://ancienttrees.app/auth` to it. He does not
+   have to. The website's own magic link has sent `redirect_to` for whatever
+   page the reader was standing on since 2026-08-18, across 2,800 pages, and it
+   demonstrably works, which no list of literal URLs could do: it is a wildcard
+   and `/auth` is already inside it. His own checklist says the same thing from
+   the other side, `ancienttrees://auth-callback` having been on the list since
+   2026-08-30. Asking again was this file failing at the job it exists for.
 
 **What is NOT done, plainly.** The app changes are UNCOMPILED. This container
 has no Swift toolchain and no Xcode, so Account.swift, ContentView.swift,
