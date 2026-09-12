@@ -1,6 +1,26 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - The "Why go?" label comes off the tree page
+
+Hidde, on a Kyoto tree page: "deze hele kop waarom bestaat die? Waarom staat
+dit er uberhaupt?" The field is his own, ruled 2026-09-08. The label was the
+website's alone, and it was the website's mistake: the app has rendered the
+same sentence unlabelled above the story since the day it shipped. Asking the
+question on the page turned a reason into a quiz, which is why the sentences
+were written as answers to it ("Its trunk."). It now reads as a standfirst
+over the story, 17px semibold, the app's own weight.
+
+It is louder than the boxed version it replaces, not quieter, which matters
+because it is the one line saying why to walk there.
+
+What that did NOT fix, and it is the bigger half: 34 of the 40 trees carrying
+a why_go repeat more than half of their own story in it. On the Kyoto muku the
+same trunk is now described three times running, in the recognition box, in
+the standfirst and in the story's first sentence. FOR HIDDE: rewrite those 34
+so each says something the story does not, or empty the field where the story
+already opens with the reason. Waiting on his answer.
+
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
 Hidde, on finding the whole attribution line under every page: "moet dit

@@ -343,17 +343,22 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           : `See the ${cityWalkCount} walks past ${cityName}'s other trees in the app →`}
       </a></p>
     )}
-    {/* WHY GO, above how-do-I-find-it because it decides whether there is a
-        walk at all, while recognition only matters once you are on your way.
-        Hidde, 2026-09-08: "why remarkable? why worth the walk? tell others why
-        they should go and visit the tree". */}
-    {tree.why_go && (
-      <p class="which-one"><b>Why go?</b> {tree.why_go}</p>
-    )}
     {tree.how_to_recognise && (
       <p class="which-one"><b>How do I find it?</b> {tree.how_to_recognise}</p>
     )}
-    <div class="prose-block"><p>{tree.story}</p></div>
+    {/* WHY GO opens the story rather than standing in a labelled box of its
+        own (Hidde, 2026-09-12: "deze hele kop waarom bestaat die?"). The field
+        is his, 2026-09-08; the "Why go?" label was the website's alone, and it
+        turned a reason into a quiz the page asks itself, which is why the
+        sentences read as answers to it ("Its trunk."). The app has rendered
+        the same sentence unlabelled above the story since the day it shipped,
+        and that is the version that reads: a standfirst, in the reader's way,
+        needing no question in front of it. Louder than the box it replaces,
+        not quieter, because it is now the largest thing above the story. */}
+    <div class="prose-block">
+      {tree.why_go && <p class="why-go">{tree.why_go}</p>}
+      <p>{tree.story}</p>
+    </div>
     <Fragment set:html={seasonHtml} />
     <dl class="facts">
       <dt>Species</dt><dd>{tree.species ?? ""}</dd>
