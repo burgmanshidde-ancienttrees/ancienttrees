@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "flo_024",
+    "name": "The Pine of Via del Pino",
+    "species": "Stone Pine (Pinus pinea)",
+    "age_estimate": "",
+    "girth_cm": 437,
+    "location": {
+      "address": "Via del Pino, Coverciano, 50135 Firenze",
+      "latitude": 43.779417,
+      "longitude": 11.295528,
+      "neighbourhood": "Coverciano"
+    },
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.perunaltracitta.org/homepage/2024/06/03/il-gigante-buono-il-pino-del-via-del-pino/",
+      "https://www.facebook.com/ilregistrodeglialberi/posts/il-pino-di-via-del-pino-a-firenze-la-pianta-ha-caratterizzato-la-toponomastica-d/1006725054940313/"
+    ],
+    "access": "Free, stands on the public sidewalk of a residential street",
+    "transport": "Duse D'Annunzio bus stop (Autolinee Toscane), about 2 minutes on foot",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "MASAF sheet 27/D612/FI/09: Pinus pinea L., girth 437 cm, height 29.0 m, comune Firenze, locality simply \"Via del Pino\" (the tree is the reason the street has that name). Second source: perunaltracitta.org (La Citta invisibile, 2024-06-03), an independent piece specifically about this tree, standing on the sidewalk squeezed between buildings and small shops, described as a witness/sentinel to the neighbourhood; it cites two published dendrology surveys that include it, Patriarchi vegetali: un patrimonio da salvare (Bellini & Guidi) and Toscana cento alberi da salvare (Capodarca). Third confirmation: RAMI (Il Registro degli Alberi) posted about this exact tree on its own page, confirming the street-naming fact independently. No age recorded anywhere found this pass; state as not documented rather than estimating from girth alone (stone pines vary hugely in growth rate with pruning/pollarding history and no comparable local growth-rate figure was found). Alive: the perunaltracitta piece is dated 2024 and describes the tree in the present tense, standing among the shops; no death/felling report found. Genuinely public: it stands on the pavement/sidewalk of an ordinary residential street, not behind any gate."
+  }
+]

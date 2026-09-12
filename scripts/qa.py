@@ -1232,11 +1232,16 @@ def check_vendored_photos_are_served():
     # fifth arrived: the Orto botanico di Firenze sent a photograph of their
     # Himalayan cedar and qa called it dead weight. Read the tree data instead,
     # so the next gift needs no edit here.
+    # EVERY photograph on the tree, not only the lead (2026-09-12). This check
+    # found its own version of the bug the same afternoon trees gained photos[]:
+    # the second Munakata camphor picture rendered on the page and read here as
+    # dead weight, because a file is orphaned only relative to what you looked at.
     for path in sorted((ROOT / "data" / "cities").glob("*.json")):
         for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
-            u = ((t.get("photo") or {}).get("url") or "")
-            if "/photos/" in u:
-                pointed_at.add(u.rsplit("/", 1)[-1])
+            for shot in [t.get("photo") or {}] + list(t.get("photos") or []):
+                u = ((shot or {}).get("url") or "")
+                if "/photos/" in u:
+                    pointed_at.add(u.rsplit("/", 1)[-1])
     orphans = on_disk - pointed_at
     for o in sorted(orphans)[:10]:
         failures.append(f"site/public/photos/{o} is in the build but nothing points at it")
@@ -1246,16 +1251,42 @@ def check_vendored_photos_are_served():
         data = json.loads(feed.read_text(encoding="utf-8"))
         trees = data if isinstance(data, list) else data.get("trees", [])
         for t in trees:
-            p = t.get("photo") or {}
-            for field in ("thumb", "hero"):
-                v = p.get(field)
-                if isinstance(v, str) and v.startswith("/"):
-                    failures.append(
-                        f"api/trees.json {t.get('id')}: {field} is a relative path "
-                        "and the app has no page to resolve it against"
-                    )
+            for p in [t.get("photo") or {}] + list(t.get("photos") or []):
+                hit = False
+                for field in ("thumb", "hero"):
+                    v = (p or {}).get(field)
+                    if isinstance(v, str) and v.startswith("/"):
+                        failures.append(
+                            f"api/trees.json {t.get('id')}: {field} is a relative path "
+                            "and the app has no page to resolve it against"
+                        )
+                        hit = True
+                        break
+                if hit:
                     break
     return failures
+
+
+def check_every_feed_field_reaches_the_app():
+    """A feature the website sends must be one the phone can read.
+
+    Hidde, 2026-09-12: "remember somewhere to always by default work cross
+    platform." The work lives in scripts/crosscheck.py; this is the deploy
+    gate's copy of its verdict, because the WEBSITE push is the moment the
+    fault is created. The feed is the contract between the two surfaces, and a
+    field sent to every phone that no Swift model decodes is a feature that
+    stopped at the web with nothing going red: Swift's decoder ignores keys it
+    does not know, so the symptom is a phone quietly missing something.
+
+    Deliberately not a second implementation. Removing this check needs Hidde.
+    """
+    import subprocess
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "crosscheck.py")],
+                       capture_output=True, text=True)
+    if r.returncode == 0:
+        return []
+    lines = [l.strip() for l in (r.stdout + r.stderr).splitlines() if l.strip()]
+    return lines or ["crosscheck failed without saying why"]
 
 
 def check_approved_photos_reach_the_feed():
@@ -1276,6 +1307,10 @@ def check_approved_photos_reach_the_feed():
     data = json.loads(feed.read_text(encoding="utf-8"))
     trees = data if isinstance(data, list) else data.get("trees", [])
     has = {t.get("id"): bool(t.get("photo")) for t in trees}
+    # How many photographs of this tree the feed actually carries. `photos` is
+    # sent only when there is more than one, so its absence means one.
+    count = {t.get("id"): (len(t.get("photos") or []) or (1 if t.get("photo") else 0))
+             for t in trees}
     failures = []
     for path in sorted((ROOT / "data" / "cities").glob("*.json")):
         for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
@@ -1285,6 +1320,21 @@ def check_approved_photos_reach_the_feed():
                 failures.append(
                     f"{t['id']}: photo is approved in {path.name} but the app feed "
                     "carries none, so no page and no phone shows it (usablePhoto refused it)")
+            # The same fault one layer down, and the reason this check exists at
+            # all: an approved photograph that reaches nothing looks exactly like
+            # a tree nobody has photographed, so it fails silently. Extras gained
+            # their own way to disappear on 2026-09-12 (a zod schema that strips
+            # what it does not name, a feed that forgets to send the set), and
+            # they deserve the same alarm the lead has.
+            want = 1 if (p.get("status") == "approved" and p.get("url")) else 0
+            want += sum(1 for x in (t.get("photos") or [])
+                        if (x or {}).get("status") == "approved" and (x or {}).get("url")
+                        and (x or {}).get("license"))
+            if t.get("id") in count and want > 1 and count[t["id"]] < want:
+                failures.append(
+                    f"{t['id']}: {want} approved photographs in {path.name} but the app "
+                    f"feed carries {count[t['id']]}, so the phone shows fewer than the "
+                    "website does")
     return failures
 
 
@@ -1519,63 +1569,96 @@ def check_tick_has_its_wiring():
     return out
 
 
-LANGS = ("es", "it", "nl", "de", "pt", "fr", "ja")
-# The question page sits at the same depth as a tree page and is a different
-# thing: an SEO answer, with no controls on it in any language, English
-# included. Kept in step with QUESTION_SLUG in site/src/lib/i18n.ts.
-QUESTION_SLUGS = {"oldest-tree", "arbol-mas-antiguo", "albero-piu-antico",
-                  "oudste-boom", "aeltester-baum", "arvore-mais-antiga",
-                  "arbre-le-plus-vieux", "saiko-rei-no-ki"}
+# The seven languages the site publishes in, and the controls a reader can tap.
+# Both lists are deliberately short: this check is about whether a FEATURE
+# reached a language, not about whether two pages are byte-identical.
+LANGS = ["es", "it", "nl", "de", "pt", "fr", "ja"]
+# PARTS rather than controls since 2026-09-12: the recognition line and the
+# season chip are not things you tap, and a reader loses just as much when they
+# are absent. What is deliberately NOT on this list is anything that merely
+# renders differently (the nearby trees are photo cards in English and a
+# compact list in the other seven, the tree bar uses different class names):
+# a different design is a per-surface decision, a missing part is a gap.
+PARTS = {
+    "worthit-btn": "the worth-it vote",
+    "save-btn": "the save heart",
+    "share-btn": "the share button",
+    "report-btn": "the report link",
+    "dir-link": "the directions button",
+    "app-pitch": "the app block",
+    "which-one": "the recognition line",
+    "best-now-inline": "the season chip",
+}
+# A question page's slug is translated, so its twin cannot be found by path.
+QUESTION_SLUGS = {
+    "es": "arbol-mas-antiguo", "it": "albero-piu-antico", "nl": "oudste-boom",
+    "de": "aeltester-baum", "pt": "arvore-mais-antiga",
+    "fr": "arbre-le-plus-vieux", "ja": "saiko-rei-no-ki",
+}
 
 
-def check_every_tree_page_has_the_same_controls():
-    """The ratchet check from 2026-09-12, built from the same fault twice.
+def check_every_language_gets_the_same_controls():
+    """A feature shipped in English must reach all seven languages.
 
-    2026-08-14: the Spanish city page rendered hearts with no sign-in dialog.
-    2026-09-12: every translated tree page rendered a heart whose scripts were
-    imported and never put in the slot, and carried no vote control at all, so
-    roughly 2,800 pages had no thumb on them. Both are one mistake: a control
-    added to the English page and not to its translated twin, which nothing
-    could see because each page type builds its own markup.
+    Hidde, 2026-09-12, on being told the worth-it vote was missing from every
+    translated tree page: "wat kan ik tegen je zeggen dat je altijd consistent
+    over talen ontwikkeld." The honest answer is nothing, because he has said
+    it before. On 2026-09-02 he said "alle paginas en talen moeten consistent
+    blijven", and two checks came out of that day: one refuses text a
+    translator never looked up, and one refuses a translated city missing
+    trees its English page holds. Both watch CONTENT. Neither has an opinion
+    about whether a BUTTON made the crossing, which is how the vote could be
+    absent from 907 pages while every gate stayed green.
 
-    So the rule is stated once here rather than remembered seven times. A tree
-    page is a tree page in every language, and it carries the same three things
-    a reader can do to a tree: keep it, tick it off, say it was worth the walk.
-    A control that is deliberately English-only (the report chips, which are
-    typed sentences rather than looked-up labels) is not in this list, and
-    putting one here means translating it first.
+    So this compares the built pages, English against each translated twin,
+    and asks one question per control: the English page has it, does this one?
+    Built rather than source, because a control can go missing in three
+    different places (a component that never renders it, a page type that
+    never passes it, a script that never wires it) and only the output knows.
+
+    data/lang-gaps.json carries what was already missing on the day this was
+    written, so the check could ship without turning the deploy red over work
+    nobody had done yet. Those are OPEN GAPS and not exceptions: each says
+    what is missing and why it is still missing, and the entry is deleted when
+    the control ships rather than when somebody tires of reading it. Anything
+    not on that list fails the push, which is the whole point: a feature added
+    to the English page tomorrow cannot quietly skip the other seven.
     """
-    want = {"save-btn": "the save heart",
-            "seen-btn": "the tick",
-            "worthit-btn": "the worth-the-visit thumb"}
-    missing = {}
-    for page in sorted(DIST.rglob("*.html")):
-        rel = page.relative_to(DIST)
-        parts = rel.parts
-        if len(parts) != 3 or parts[0] not in LANGS:
-            continue
-        if rel.stem in QUESTION_SLUGS:
-            continue
-        html = page.read_text(encoding="utf-8")
-        # A redirect stub is not a page; it carries a meta refresh and nothing.
-        if "http-equiv=\"refresh\"" in html:
-            continue
-        # A real class in a real class list, compared as TOKENS. Two looser
-        # versions of this test were written first and neither bit when the
-        # check was deliberately broken: a prefix test passes on "save-btns",
-        # and \b does not help because a hyphen is already a word boundary, so
-        # "worthit-btn" matches inside "worthit-btn-DISABLED".
-        classes = set()
-        for attr in re.findall(r'class="([^"]*)"', html):
-            classes.update(attr.split())
-        for cls, what in want.items():
-            if cls not in classes:
-                missing.setdefault(what, []).append(str(rel))
     out = []
-    for what, pages in sorted(missing.items()):
-        out.append("%d translated tree page(s) are missing %s that every English "
-                   "one carries, e.g. %s"
-                   % (len(pages), what, ", ".join(pages[:3])))
+    root = Path(__file__).resolve().parent.parent
+    allow = set()
+    gaps_file = root / "data" / "lang-gaps.json"
+    if gaps_file.is_file():
+        for e in json.loads(gaps_file.read_text(encoding="utf-8")).get("open", []):
+            allow.add((e.get("part"), e.get("page_kind")))
+    found = {}
+    for lang in LANGS:
+        lang_root = DIST / lang
+        if not lang_root.is_dir():
+            continue
+        for page in lang_root.rglob("*.html"):
+            rel = page.relative_to(lang_root)
+            if len(rel.parts) == 2 and rel.stem == QUESTION_SLUGS.get(lang):
+                kind, twin = "question", DIST / rel.parts[0] / "oldest-tree.html"
+            elif len(rel.parts) == 2:
+                kind, twin = "tree", DIST / rel
+            else:
+                kind, twin = "city", DIST / rel
+            if not twin.is_file():
+                continue
+            en = twin.read_text(encoding="utf-8", errors="ignore")
+            tr = page.read_text(encoding="utf-8", errors="ignore")
+            for marker in PARTS:
+                if marker in en and marker not in tr:
+                    key = (marker, kind)
+                    if key in allow:
+                        continue
+                    found.setdefault(key, []).append(f"{lang}/{rel}")
+    for (marker, kind), pages in sorted(found.items()):
+        out.append("%s is on the English %s page and missing from %d translated "
+                   "one(s), e.g. %s. Ship it in all seven languages or record "
+                   "it in data/lang-gaps.json with what is missing and why."
+                   % (PARTS[marker], kind, len(pages), ", ".join(sorted(pages)[:3])))
     return out
 
 
@@ -1603,7 +1686,6 @@ def main():
     failures += check_photo_resolution()
     failures += check_save_flow_integrity()
     failures += check_tick_has_its_wiring()
-    failures += check_every_tree_page_has_the_same_controls()
     failures += check_sheet_integrity()
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
@@ -1613,6 +1695,8 @@ def main():
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_approved_photos_reach_the_feed()
+    failures += check_every_feed_field_reaches_the_app()
+    failures += check_every_language_gets_the_same_controls()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")

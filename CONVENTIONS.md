@@ -80,6 +80,114 @@ rather than a filter, with-a-photo was doing the editorial order's job, and
 within-2-km was doing the distance-ordered list's job.
 
 Read from the products and from our own app, 2026-09-12.
+## Porting a control to another language (2026-09-12)
+
+Not a new interaction, so no reference lookup was owed: the worth-it control's
+own shape is already recorded here and in its header (Google Maps keeps its
+rating and "Suggest an edit" apart, AllTrails separates the star rating from
+reporting conditions, YouTube and Reddit separate the vote from Report; opinion
+and error report are siblings, never nested). Nothing about that changed when
+it reached the other seven languages.
+
+What IS worth writing down, because it is where a port goes wrong: **decide per
+string whether it is read or whether it is DATA.** The chips' `data-reason`
+stays English in all eight languages, because it is the value written to the
+submissions table and Step 0b groups reports by it; translating it would split
+one report kind into seven and the split would be invisible. Only what a person
+reads is looked up. The same test that CLAUDE.md's both-surfaces rule applies
+between app and web (is this an ANSWER or a RULE) applies between languages.
+
+And a string that lives inside a SCRIPT is a string in one language. Three had
+to move onto the element before this port was honest: two in worthit-js.ts and
+one in share-js.ts, each of which would have printed English over the
+translation the moment somebody used the control.
+
+Recorded from this session's own work, 2026-09-12.
+
+---
+
+## Tapping into a field on a phone (2026-09-12)
+
+**Reference: Safari on iOS itself, which is the constraint rather than a
+choice.** A field whose text computes under 16px makes Safari zoom the whole
+page in on focus, and it does not zoom back out when the field is blurred. So
+15px is not slightly small: it is a page that jumps when somebody taps it and
+stays jumped. There are exactly two ways out and only one of them is allowed
+here: meet 16, or pin the viewport with `maximum-scale=1`, which stops the zoom
+by taking pinch-zoom away from everybody including the people who need it. So
+16 is a floor rather than a preference.
+
+Ours: `.at-search input` was already written at 16px on purpose. The homepage
+search still zoomed, because a rule three hundred lines further down the
+stylesheet matched it with equal specificity and won on order. That is the part
+worth remembering: the number being right where you wrote it does not mean it is
+right where it lands, so this is measured as computed style at 375px in
+scripts/smoke_test.py rather than read out of the CSS.
+
+No reference-product lookup captured, and it is owed: this container's egress
+proxy blocks alltrails.com and developer.mozilla.org alike, so nothing could be
+probed from here. What this entry rests on is the platform behaviour and Hidde's
+own phone ("als je op mobile web op zoek klikt zoomt ie raar in", 2026-09-12),
+confirmed by measuring our own pages. Somebody on an unblocked machine should
+measure what the reference apps actually ship and add the numbers.
+## Several photographs of one tree (2026-09-12, benchmarked)
+
+Hidde, sending a close-up of the Munakata camphor beside the wide shot already
+on the page: "Moeten we het niet ook mogelijk maken om meerdere afbeeldingen
+per boom te hebben ik vind het zonde dat deze niet zichtbaar is", then: "Please
+convention benchmark the ui of having multiple pictures."
+
+Two separate interactions, benchmarked separately because they answer different
+questions: how a reader LEARNS there is more than one, and how they move
+between them once a picture is open.
+
+### What the references actually do
+
+| Product | How you learn there is more | How you move between them | Where it was read |
+|---|---|---|---|
+| iNaturalist observation | A row of small thumbnails under the lead image; all photos, active one marked | Click a thumbnail, or a "mini carousel" inside the enlargement, with drag-to-reorder for the owner | [forum.inaturalist.org](https://forum.inaturalist.org/t/what-is-proper-way-to-present-an-observation-with-multiple-images/42663), [iNaturalist blog](https://www.inaturalist.org/posts/34152-multiple-photos-per-observation) |
+| Airbnb listing | Five images in a grid; a "show all photos" button | Lightbox over the page | [tearthemdown.substack.com](https://tearthemdown.substack.com/p/airbnb-product-teardown), [wp-modula.com](https://wp-modula.com/airbnb-inspired-image-gallery/) |
+| Wikipedia Media Viewer | The article's images are already in the page | Chevrons left and right, a counter, credit along the bottom, arrow keys; the original one step further in | recorded here 2026-09-03 |
+| Apple Photos / iOS viewers | Nothing on the photo itself | Horizontal swipe. Apple's page control is "a row of indicator images, each of which represents a page in a flat list" and is the dots pattern, used for flat lists rather than for a photo viewer | [developer.apple.com, Page controls](https://developer.apple.com/design/human-interface-guidelines/components/presentation/page-controls/) |
+
+### Two findings worth more than the layouts
+
+**Airbnb's own teardown says 100 percent of guests who complete a booking
+opened the listing's photos, and names "vertical photos displayed at half the
+size of horizontal photos" as a real fault they fixed.** Our close-up is
+vertical and our hero is a 300 point landscape crop, so this is our problem
+too, not a listing-site problem. Checked: in the lightbox the portrait renders
+359 by 479 inside a 375 by 748 frame under `object-fit: contain`, which is
+correct. It would NOT be correct as a lead, where the hero's `cover` crop would
+show a narrow slice of it. Worth remembering when choosing which picture leads.
+
+**iNaturalist's documented failure is the one to copy avoiding**: "If an
+observation has more photos than fit in the thumbnail row, the Identify
+interface doesn't show them all and there is no indication that there are more
+photos." A thumbnail row that silently truncates is worse than no row. Ours
+scrolls horizontally rather than truncating, and the viewer carries an explicit
+"Photograph 2 of 3", so the count is never inferred from how many thumbnails
+happen to fit.
+
+### What we do, and the two deliberate deviations
+
+Web: hero, a scrolling thumbnail strip under it, and a lightbox that pages with
+chevrons, a counter, arrow keys and a horizontal swipe. App: the same hero and
+strip, paging by swipe with a counter and no chevrons, because Apple Photos has
+none and a chevron on a phone is a web habit. This is the both-surfaces rule
+working as written: the DESIGN differs, the behaviour does not.
+
+**Deviation one: the strip holds the EXTRAS, not the whole set.** iNaturalist
+and Google Maps put every photo in the row and mark the active one. With two
+pictures that draws the hero twice, once big and once small, which reads as a
+bug rather than as a gallery. Their rows are the entry point INSTEAD of a big
+lead; ours sits under one. Revisit if a tree ever carries six.
+
+**Deviation two: no "show all photos" button and no grid.** Airbnb's grid and
+Material's carousel layouts are built for twenty pictures. A tree has two or
+three, and scarcity is the rule here, so the row IS the whole set.
+
+---
 
 ## Helping somebody be SURE which one they found (2026-09-07)
 
@@ -1566,3 +1674,36 @@ same twelve cases.
 
 Read 2026-09-11:
 - https://ati.woodlandtrust.org.uk/how-to-record/recording-guide/how-to-record-the-girth-of-a-tree/
+
+## Adding a photograph of a place, and saying you were there (2026-09-12)
+
+Looked up when Hidde photographed a tree at the Omiya gate in Kyoto, picked the
+Sudajii out of the candidate list, and said afterwards: "dit was niet afvinken
+maar een nieuwe boom." Our `claim()` does both in one tap: it attaches the
+photograph to that tree AND ticks it off his collection.
+
+**Google Maps keeps them apart.** Adding a photograph to a place is a
+contribution, offered beside "Check in here" rather than as the same control,
+and the two are counted separately (photographs earn Local Guide points; visited
+places are their own list).
+
+**iNaturalist keeps the identification separate from the record.** A photograph
+becomes an observation, the app SUGGESTS a species, and a person confirms or
+refines it; the suggestion is never asserted on the observer's behalf. Our own
+`mayClaimWithoutAsking` already follows the same logic for the camera roll, and
+`confident()` refuses to claim silently against an approximate pin.
+
+**Where we genuinely differ**, and it is why this is not a straight copy: on
+Google Maps a check-in is social, while here ticking a tree off IS the product
+(collect is one of the four verbs), and somebody who photographs a tree while
+standing under it has done the thing. So the two acts coincide far more often
+for us than for either reference.
+
+What the references say about the failing case is still unambiguous. When the
+person is CHOOSING which tree this is out of a list, the app is being told about
+a photograph, not being told the person stood at that trunk, and it should not
+decide the second from the first. Undecided by Hidde as of this date.
+
+Read 2026-09-12:
+- https://support.google.com/maps/answer/2622947?hl=en&co=GENIE.Platform%3DAndroid
+- https://help.inaturalist.org/en/support/solutions/articles/151000194901-how-do-identifications-work-

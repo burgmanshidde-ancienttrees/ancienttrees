@@ -14,6 +14,9 @@ Pages and assertions, deliberately few and stable:
   - tree page: check-in button exists, carries the aria-pressed state the
     script sets on load, and no script source leaks as visible text
   - /explore: MapLibre canvas exists
+  - every page measured at 375px: nothing runs off the right edge, and no
+    field a thumb lands in computes under 16px, which is what makes Safari
+    zoom the page in on tap and leave it there
 
 Run: python3 scripts/smoke_test.py   (needs Chrome or Chromium on PATH)
 Exit 1 on any failure; CI treats that as the site being broken (rung 2).
@@ -30,7 +33,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from layout_rules import MIN_TAP, DRIFT_MAX, SAME, PHONE_W  # noqa: E402
+from layout_rules import MIN_TAP, DRIFT_MAX, SAME, PHONE_W, MIN_INPUT_FONT  # noqa: E402
 
 DIST = Path(__file__).resolve().parent.parent / "site" / "dist"
 
@@ -105,8 +108,25 @@ f.addEventListener('load', function() {
                    + ' right=' + Math.round(r.right));
         }
       });
+      // Anything under 16px that a thumb can land in makes Safari zoom the
+      // page in on focus and leaves it there. Measured here rather than read
+      // out of the stylesheet on purpose: the rule that produced the bug of
+      // 2026-09-12 said 15px 300 lines away from the search and won on
+      // specificity, which no grep of the CSS would ever have seen.
+      var tiny = [];
+      d.querySelectorAll('input, select, textarea').forEach(function(el) {
+        var cs = w.getComputedStyle(el);
+        if (cs.display === 'none' || cs.visibility === 'hidden') return;
+        if (el.type === 'hidden' || el.type === 'checkbox' || el.type === 'radio'
+            || el.type === 'range' || el.type === 'color' || el.disabled) return;
+        var fs = parseFloat(cs.fontSize);
+        if (fs && fs < __MINFONT__ - 0.01) {
+          tiny.push((el.id || el.name || el.type || el.tagName) + ' ' + fs + 'px');
+        }
+      });
       document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({
-        vw: vw, scroll: d.documentElement.scrollWidth, over: out.slice(0, 5)
+        vw: vw, scroll: d.documentElement.scrollWidth, over: out.slice(0, 5),
+        tiny: tiny.slice(0, 5)
       });
     } catch (e) {
       document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({error: String(e)});
@@ -545,7 +565,7 @@ setTimeout(function(){
     # The harness lives in dist only while the test runs; it is written here
     # rather than shipped so it can never reach a visitor.
     fit_page = DIST / "__fit.html"
-    fit_page.write_text(HARNESS, encoding="utf-8")
+    fit_page.write_text(HARNESS.replace("__MINFONT__", str(MIN_INPUT_FONT)), encoding="utf-8")
     align_page = DIST / "__align.html"
     align_page.write_text(ALIGN_HARNESS, encoding="utf-8")
 
@@ -579,12 +599,21 @@ setTimeout(function(){
 
     # Does it fit a phone? One representative page per template that a visitor
     # actually lands on.
+    # One translated page of each kind since 2026-09-12. Every fit check here
+    # measured English, and English is the SHORTEST of the eight: German
+    # compounds and Japanese line-breaking are exactly where a control runs off
+    # a 375px screen, and nothing had ever looked. Picked by path rather than by
+    # scanning, so the list stays a fixed cost.
+    translated = [(p, f"{p.split('/')[1]} {kind}")
+                  for p, kind in (("/nl/amsterdam.html", "city"),
+                                  ("/de/berlin/berlins-tallest-tree.html", "tree"))
+                  if (DIST / p.lstrip("/")).is_file()]
     for page, label in [(f"/{city.name}", "city page"),
                         ("/index.html", "homepage"),
                         ("/explore.html", "explore"),
                         (f"/{city.stem}/{tree.name}", "tree page"),
                         ("/cities.html", "cities index"),
-                        ("/account.html", "account")]:
+                        ("/account.html", "account")] + translated:
         r = fits_at_375(chrome, base, page)
         if r is None:
             failures.append(f"{label}: could not measure whether it fits 375px")
@@ -595,6 +624,11 @@ setTimeout(function(){
         elif r.get("scroll", 0) > r.get("vw", 375) + 1:
             failures.append("%s: page scrolls sideways at 375px (%dpx wide)"
                             % (label, r["scroll"]))
+        if r.get("tiny"):
+            failures.append(
+                "%s: %d field(s) under %gpx at 375px, so iOS zooms the page in "
+                "on tap and never back out: %s"
+                % (label, len(r["tiny"]), MIN_INPUT_FONT, "; ".join(r["tiny"][:3])))
 
     # Does everything line up? Same three rules as the app (layout_rules.py),
     # at the two widths the site is actually read at.

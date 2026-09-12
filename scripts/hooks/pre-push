@@ -19,12 +19,16 @@
 #   convention  a NEW screen or component names the product its interaction was
 #               copied from, so a design from somebody's own head cannot ship
 #               unnoticed (2026-08-28)
+#   standing    a sighting records where the PHONE stood, never our own pin
+#               handed back to us as if somebody had measured it (2026-09-12)
 #   darkcheck   every colour pair in the palette can be read, in BOTH
 #               appearances. The app shipped with white text on the dark
 #               palette's moss at 2.85:1, on the primary button, because
 #               nobody had ever done the arithmetic (2026-09-03)
 #   map style   the dark map style is what the light one generates, so the two
 #               cannot drift while nobody looks at the dark one in daylight
+#   crosscheck  a feed field the website sends is decoded by the app, and the
+#               reverse, so a FEATURE cannot reach one surface only (2026-09-12)
 #
 # It only runs when the push actually touches the app, so a night run pushing
 # trees never sees it.
@@ -89,6 +93,22 @@ if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
         echo "lives on one in data/parity-allow.json."
         exit 1
     fi
+    # And the FEATURE half of the same rule (2026-09-12). paritycheck reads
+    # strings, so it can see a sentence that left one surface and cannot see a
+    # feature that only ever reached one. crosscheck reads the contract between
+    # them instead: a feed field the website sends that no Swift model decodes
+    # is a feature that stopped at the web, and neither compiler nor decoder
+    # says a word about it. Skipped silently without a build, which is the
+    # ordinary case for a push that only touches ios/.
+    if ! out=$(python3 scripts/crosscheck.py 2>&1); then
+        echo ""
+        echo "pre-push: crosscheck says no"
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Read the field on the other surface too, or"
+        echo "record why it is one-sided in data/cross-surface-allow.json."
+        exit 1
+    fi
 fi
 
 echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark))' || exit 0
@@ -100,6 +120,7 @@ for check in \
     "scripts/icon_check.py" \
     "scripts/conventioncheck.py" \
     "scripts/darkcheck.py" \
+    "scripts/standingpoint.py" \
     "scripts/map_style_dark.py --check"
 do
     # shellcheck disable=SC2086

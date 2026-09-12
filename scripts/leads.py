@@ -266,6 +266,22 @@ HELD_MARKER = re.compile(
 # already excludes it on a different ground; the word "target" there is
 # incidental prose, "good target for a next Baarn pass", not a
 # count-doctrine claim).
+# Widened an eighth time 2026-09-12, found while a recovery run read the 3
+# READY leads across the whole site individually before dispatching a write
+# pass on them, per this file's own established methodology. Two of three
+# were declines in new wording: Prague's Dub na sportovisti reads "Still a
+# lead; needs either a street-level photo/OSM access tag..." (a synonym of
+# the already-caught "stays a lead" that the existing pattern's exact
+# wording missed), and Genoa's second Cinnamomum reads "risks reading as
+# padding rather than a distinct entry unless it's visibly a different,
+# separately worthwhile specimen" (an explicit padding-risk hold, the thing
+# CLAUDE.md's scarcity ruling exists to prevent). Checked against the full
+# corpus: 17 hits on "still a lead" (0 count-doctrine collisions), 1 on
+# "reading as padding" (also clean). The third, Lagos PT's lone "READY"
+# entry, is not a decline at all: it is a negative-result placeholder
+# ("No further register or named candidates found in Lagos town itself",
+# species "n/a") that has never named a real tree, so it is fixed in
+# readiness() below instead, on the species field, rather than here.
 NOT_READY_MARKER = re.compile(
     r"\[SKIPPED\b[^\]]*\]|\bdeclined at merge\b|"
     r"\bbelow the 4-tree floor\b|\bbelow the four-tree floor\b|"
@@ -306,7 +322,8 @@ NOT_READY_MARKER = re.compile(
     r"no tree-specific second source|ACCESS UNRESOLVED|"
     r"second source not found|sources conflict|do not ship on the register alone|"
     r"leave for a future pass|does not clear the .{0,40}bar on its own|"
-    r"even the register.{0,20}own location is marked uncertain)\b",
+    r"even the register.{0,20}own location is marked uncertain|"
+    r"still a lead|reading as padding)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
@@ -536,7 +553,13 @@ def readiness(entry):
     missing = []
     if not entry.get("name") or entry.get("name") == "?":
         missing.append("name")
-    if not entry.get("species"):
+    # "n/a" is not a species, it is what a pass writes down when it found no
+    # tree at all (a negative-result placeholder recording that a city or
+    # area was searched and came up empty, per Step 1's leads-as-data rule).
+    # Lagos PT's only "READY" lead was exactly this ("No further register or
+    # named candidates found in Lagos town itself", species "n/a"), and a
+    # bare truthy-string check let it through. Found 2026-09-12.
+    if not entry.get("species") or str(entry.get("species")).strip().lower() == "n/a":
         missing.append("species")
     if (loc.get("latitude", loc.get("lat")) is None
             or loc.get("longitude", loc.get("lng")) is None):

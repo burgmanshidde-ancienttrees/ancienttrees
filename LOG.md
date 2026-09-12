@@ -228,6 +228,307 @@ are yours to rank, not mine to start.
    code nothing emits.
 3. The map pin on the phone wears a ticket mark, a heart and a tick. The
    web map pin wears none of the three.
+## 2026-09-12 - The vote, the share button and the app block reach all seven languages
+
+Hidde: "zet het op de vertaalde pagina's alles consistent hoe zorg ik dat je
+dat onthoudt waar opschrijven." Two things, and the second is the one that
+mattered.
+
+WHAT SHIPPED. The worth-it vote and the share button now render on all 907
+translated tree pages, the share button on the 47 translated city pages, and
+the app block on both. Cause of the gap was one file: TranslatedTreePage.astro
+never rendered WorthIt or ShareButton, and it could not have, because every
+string in that control was typed into its markup in English. They now come
+from UIStrings, 30 new keys in eight languages, and not one line of new
+English copy: what was on the English page moved into the table unchanged and
+was translated from there.
+
+Three smaller things came out of the same pass, each the same shape. Two
+English sentences lived inside worthit-js.ts and one inside share-js.ts, so
+they would have printed English over the translation the moment somebody used
+the control; they travel on the element now. And `data-reason` stays English
+in every language on purpose: it is the value written to the submissions
+table, and translating it would split one report kind into seven.
+
+WHERE TO WRITE IT DOWN: nowhere, and that is the finding. He had written it
+down, in CLAUDE.md, on 2026-09-02 ("alle paginas en talen moeten consistent
+blijven"). It was read at the start of every run for ten days while the vote
+was missing from 907 pages. A sentence in the corpus cannot refuse a push.
+scripts/hooks/ratchet_nudge.py now fires on a message that reads like a
+standing rule rather than a task and puts one question in front of the reply:
+what refuses the next push that breaks this. His own half is one question back
+to me, "is dit een check geworden?"
+
+The check itself widened from controls to PARTS, so it also watches things you
+do not tap. Verified both ways: green as it stands, red naming the 907 pages
+when an entry is taken out of data/lang-gaps.json.
+
+STILL OPEN, recorded in that file with the reason, and both are translation
+DATA rather than wiring. The recognition line, because TreeTranslation carries
+no recognise field, and that one matters most: it is often the only thing that
+tells a visitor which trunk we mean. And the season chip, because phenology
+moments are written as English sentences per species.
+
+FOR HIDDE: one thing I did not touch. The place row wraps on a long place
+name, leaving a dangling middle dot at the end of the line and the thumb
+alone underneath. It does this on the English page too and has since
+2026-09-11, so it is not new and not a translation fault, but it looks like a
+mistake at 375px and it is a taste call rather than a rule.
+
+## 2026-09-12 - A feature that ships in English now has to reach the other seven
+
+Hidde, told that the worth-it vote was on no translated tree page: "wat kan ik
+tegen je zeggen dat je altijd consistent over talen ontwikkeld." Nothing, and
+that is the finding rather than a dodge. He said it already on 2026-09-02
+("alle paginas en talen moeten consistent blijven"), two checks came out of
+that day, and both watch CONTENT: one refuses text a translator never looked
+up, the other refuses a translated city missing trees its English page holds.
+Neither has an opinion about a BUTTON.
+
+So the report was true and it was smaller than the truth. Measured on the
+built site: the vote is missing from 907 translated tree pages and the share
+button from 954 (907 tree pages, 47 city pages), in all seven languages, while
+the heart, the report link and the directions button are everywhere. Cause is
+one file: site/src/components/TranslatedTreePage.astro never renders WorthIt
+or ShareButton, so no page in any language could have them.
+
+`check_every_language_gets_the_same_controls()` in scripts/qa.py compares each
+built translated page against its English twin and fails the push on a control
+the English page has and the translated one does not. Built output rather than
+source, because a control can go missing in a component, a page type or a
+script and only the output knows which. Question pages are matched through
+their translated slug, so they are covered too.
+
+data/lang-gaps.json holds what was already missing, as OPEN GAPS with what and
+why, not as approved exceptions: an entry is work to do and it is deleted when
+the control ships. Verified both ways, green as recorded and red naming the
+907 pages when the vote's entry is taken out.
+
+Still open, and it is Hidde's call rather than a run's: putting the vote and
+the share button on the translated pages needs the whole worth-it copy set
+written in seven languages, and none of those strings exists in UIStrings yet.
+That is copy under PRODUCT_COPY.md.
+
+## 2026-09-12 - Tapping the search box on a phone zoomed the whole page in
+
+Hidde: "als je op mobile web op zoek klikt zoomt ie raar in." Safari on iOS
+zooms the page in whenever a focused field carries text under 16px, and it
+never zooms back out, so you tap search and are left pinching your way back to
+a layout that was fine a second ago.
+
+The homepage search was written at 16px and was rendering at 15. `.at-search
+input` says 16, `.poster-search input` says 16.5, and three hundred lines
+further down the stylesheet `.hero-search input` said 15 with the same
+specificity and therefore won on order. It was never meant to reach the search
+at all: it is the account page's email field, and the homepage's form carries
+`hero-search` only because it sits in a hero. The search was also wearing that
+rule's 1px border and 8px radius inside its own white pill, which is why it did
+not look like the identical field on /explore, the one thing that form is
+supposed to be.
+
+Scoped to `.hero-search:not(.at-search)`, and a floor added at the foot of the
+stylesheet so no field on a phone renders under 16: the account name row, the
+app-getter, the contribute form, the worth-it note and the sign-in dialog were
+all at 14 or 15 and all zoomed the same way. Measured on the built site at
+375px: every field on the homepage, /explore, /account and /contribute now
+computes at 16 or above, and the homepage search reads 16.5px with no border.
+
+The ratchet, because no layer could see this one. The build checks structure,
+qa.py checks that elements exist, the fit check measures whether a page runs
+off the edge, and none of them has an opinion about a font size. smoke_test.py
+now reads the computed size of every field inside its 375px iframe and fails
+the deploy under 16 (`MIN_INPUT_FONT` in scripts/layout_rules.py). Computed
+rather than grepped on purpose: the rule that caused this never said 15
+anywhere near the search.
+## 2026-09-12 - A sighting now records where the phone stood, not our own pin
+
+Hidde: "sla op waar mensen stonden." Ticking a tree off from the list stored OUR
+coordinate on the sighting (`t.lat, t.lng` in CollectSheet's `claim`), so every
+app-matched photograph came back reading zero metres from our pin. That is not a
+measurement, it is our own number handed back to us, and it cost two things
+yesterday. His Kyoto photograph turned out to be a muku standing beside the
+Sudajii we map, and nothing anywhere could say where it was taken. And the
+Sudajii's pin is still `approximate` while the phone in his hand knew exactly
+where he stood: the one kind of evidence allowed to correct such a pin
+(CLAUDE.md, 2026-09-08) was being discarded at the moment it was made.
+
+One argument changed, plus `scripts/standingpoint.py` in the pre-push hook,
+because no test can see a call inside a private method of a SwiftUI view and the
+wrong version reads as the tidy one. Proved both ways: it fires on the old line
+and is silent on the new. Nothing that a visitor sees moves, since only
+sightings WITHOUT a tree id are drawn on a map.
+
+Still open, and both need Hidde:
+
+- **A correction on the server never reaches a phone.** `SightingSync.merge`
+  skips every row the phone already has (SightingSync.swift:40), so repointing
+  his Kyoto sighting from kyo_016 to kyo_019 in the database would change
+  nothing on his own telephone. Same shape as the bug above: the app talks one
+  way.
+- **Picking a tree from the list after photographing ties the photograph to it
+  AND ticks it off.** His words: "dit was niet afvinken maar een nieuwe boom."
+  Google Maps treats adding a photograph to a place and saying you were there as
+  two different acts, and we treat them as one.
+
+## 2026-09-12 - A tree can carry more than one photograph, and the first one to do it is the Munakata camphor
+
+Hidde, sending a close-up beside the wide shot already on the page: "Moeten we
+het niet ook mogelijk maken om meerdere afbeeldingen per boom te hebben ik vind
+het zonde dat deze niet zichtbaar is."
+
+He is right and the case makes the argument. The published picture shows where
+the Camphor of Munakata Shrine stands, a gravel avenue in Kyoto Gyoen with a
+person for scale. The one that could not be shown is taken from underneath and
+shows the limb structure and the root flare, which is the thing that tells a
+visitor this is the trunk they came for. Until today the only ways to handle the
+second picture were to displace the first or to throw it away, and the second
+picture is often the one that answers rung 7's question.
+
+**The shape.** `photo` stays the lead and `photos[]` carries the rest. Additive
+on purpose: about forty scripts, five feeds, the Swift model and seven translated
+page sets read `photo`, nearly all of them just counting whether a tree has a
+picture, and every one of them is correct untouched. One accessor decides the
+set, so the card face, the og:image, the hero ranking and the app feed cannot
+drift from what the page shows.
+
+**The honesty half, which is the half that could hurt somebody.** An extra
+carries a licence, an attribution and a takedown id on exactly the terms the lead
+does. photo_takedown.py sweeps every photograph now rather than the lead, or the
+deletion promise in /terms would have broken silently for second pictures;
+preflight and qa read the set too. Proved rather than assumed: the sweep reaches
+7 photographs where it used to reach 6, and a test unlink took the account off
+the extra and left the lead alone.
+
+**Both surfaces.** The web puts a thumbnail strip under the hero and pages the
+lightbox with chevrons and arrow keys; the app puts the same strip under its hero
+and pages by swipe with a counter, because that is Apple Photos and a chevron on
+a phone is a web habit. The feed sends the resolved set and only when there is
+more than one, so nothing is re-decided on the phone and 3,054 trees pay nothing.
+sightings_publish.py gained an `add` verdict for the ordinary case this started
+from: a good photograph of a tree that already has a good one.
+
+**Found by looking, and it had been live a while:** the lightbox opened a 210 by
+280 picture in the middle of a full black screen on every tree page, because the
+hero's own `height: 280px; object-fit: cover` out-specifies `.pv-frame img` and
+the dialog sits inside that figure. No gate could see it, since the dialog
+exists, the image loads and the link works. Fixed; the viewer fills the screen.
+
+**The app half did not compile, and ios.yml is what found it.** Two Swift traps,
+neither of them logic: a computed property named `set`, which opens a property
+setter and made the parser fail thirty lines from anything that looked wrong;
+and a ForEach destructuring a tuple parameter, which has not compiled since
+Swift 3. The first cost a CI round, the second was caught by re-reading the
+diff rather than by spending a second one. Both fixed, and
+AncientTreesTests/PhotoSetTests.swift now covers the five states a feed can be
+in, including a catalogue written before the field existed, which is the one
+that would empty the map on every phone that has ever synced.
+
+Green on the second run: build, unit and UI tests, the permissions-refused
+walk, and the layout gate on both phones.
+
+FOR HIDDE, three things. **I have not SEEN the app's screens**, only their
+measurements: the artifact download needs a token this sandbox does not have,
+so the pictures are in the run's `appsweep` artifact for you rather than
+checked by me. **The close-up went live on your word** that it is the same
+tree: the upload had its GPS stripped in transit, so I could not settle it from
+the file, and the note on the photograph says so. If it is a different trunk it
+is a one-line edit. And **this is on a branch**: reaching the live site and
+your phone needs a merge to main. He asked for it from here, so PR #3 carries
+this branch into main and the site deploys from there.
+
+## 2026-09-12 - Night run 2026-09-12 08:12 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 47.7 minutes of its 120 minute window, 334 turns, 45 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree. Claims left behind: milan, florence, brisbane, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-12 - Night run 2026-09-12 05:57 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 50.9 minutes of its 120 minute window, 334 turns, 28 commands refused by the allowlist, ended clean (success). 2 tree(s) reached data/cities across 1 city file(s), and the run still wrote no log entry of its own. Claims left behind: dallas, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-12 - The map credit, made as quiet as it may honestly be
+
+Hidde: "can we minimise it further." What cannot move is that it exists and can
+be found. What can is how loudly it sits there while nobody is looking for it.
+
+The five seconds before it folds away are now 10px on a translucent ground
+instead of a solid white band, and the dot it folds into drops its white pill
+and its shadow entirely, sitting at 55 percent until a cursor or a keyboard
+reaches it. Verified on the deployed page: 24 by 24, background transparent,
+computed opacity 0.55, with the /sources link still inside it.
+
+One further step exists and was not taken, because it is a judgement about how
+literally to read a safe harbour rather than a build decision: starting
+collapsed, so the five seconds never happen. Most map apps do exactly that, and
+the OSMF guideline's three sanctioned collapses all describe something that was
+shown first. It is Hidde's call, not a run's.
+
+## 2026-09-12 - Five seconds, then the map credit is a 24 point (i)
+
+Hidde asked whether it has to be visible at all. It has to be reachable and it
+does not have to be read, and the line between those is written down: the OSMF
+attribution guideline adopted 2021-06-25 allows a credit to collapse
+"automatically on map interaction" or "automatically after five seconds", so
+long as "the user must still be able to find the licence information if they
+look for it, for example from an '(i)' button in the corner of the map."
+
+MapLibre already collapsed on a touch, which did nothing for a visitor who never
+touches the map. Now every map collapses after five seconds, from the one shared
+mapScript wrapper. Checked on the deployed page: 24 by 24, closed, with the
+/sources link inside it.
+
+It cannot go entirely. OpenFreeMap's terms say "Attribution is required" and the
+guideline's collapsed state still wants the (i) present. That is the floor.
+
+## 2026-09-12 - And the maps themselves now credit OpenStreetMap, which the city pages did not
+
+Found while checking the change above was safe, and it was not, quite. City
+and tree pages render with no footer at all, and their MapLibre attribution
+control was rendering EMPTY: measured on the deployed site, /explore showed
+the tile credit and /lisbon showed nothing, from the same style file. So the
+most common map pages on this site credited OpenStreetMap nowhere and had no
+link to /sources either, and that was already true before today.
+
+The style is not the problem: /assets/map-style.json carries the credit on its
+openmaptiles source. That source is declared by TileJSON url, and what comes
+back from the resolved TileJSON decides what the control shows, which is why it
+was there on one page and missing on another.
+
+Every map now adds its own AttributionControl, compact, at the map's top-left,
+carrying one extra link to /sources. Top-left because the bottom of these maps
+is under the sheet on a phone: at 375px the control's own centre point returned
+the search input as the topmost element, so it was rendered and invisible. It
+opens on load and collapses to a 24 point i on the first touch, which is
+MapLibre's own behaviour and what every Mapbox app does.
+
+The first attempt repeated OpenFreeMap, OpenMapTiles and OpenStreetMap a second
+time and wore a wide double band across the top of the map. It now says only
+what the tile credit cannot: the way to /sources, where Valhalla, FOSSGIS and
+the ODbL are named.
+
+## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
+
+Hidde, on finding the whole attribution line under every page: "moet dit
+overal staan, zet dit zoals de app lekker ergens onder n hoekje legal."
+The app did exactly that on 2026-08-25 and the website never followed, so
+for two and a half weeks the two surfaces disagreed about where a tile
+credit belongs.
+
+The footer now ends at "(c) 2026 Ancient Trees, ancienttrees.app." Nothing
+is lost and nothing is owed. Every map on the site is built with MapLibre's
+compact attribution control and the live style at /assets/map-style.json
+carries the OpenFreeMap / OpenMapTiles / OpenStreetMap credit on its own
+source, checked against the deployed file, so the ODbL is answered on the
+map itself, which is where it asks to be and what Apple Maps and every
+Mapbox app do. The full text, Valhalla and FOSSGIS included, already stood
+under "Maps and routes" on /sources, which the footer column links to.
+Photograph credits were never in that line: each one prints beside its own
+picture.
+
+Most of those pages draw no map at all, which is the part that made it
+wrong rather than merely long.
 
 ## 2026-09-12 - Night run 2026-09-12 02:02 UTC ended without saying anything
 

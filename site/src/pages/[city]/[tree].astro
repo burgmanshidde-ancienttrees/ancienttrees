@@ -23,7 +23,7 @@ import { haversineKm } from "../../lib/walks";
 import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
 import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
-import { usablePhoto, metaImageUrls, ogImageUrl } from "../../lib/images";
+import { usablePhotos, metaImageUrls, ogImageUrl } from "../../lib/images";
 import PhotoFigure from "../../components/PhotoFigure.astro";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
@@ -165,7 +165,10 @@ const crumbItems: [string, string | null][] = [
   [tree.name, null],
 ];
 
-const photo = usablePhoto(tree);
+const shots = usablePhotos(tree);
+// The lead stays what every card face, og:image and ranking already reads; the
+// rest of the set only ever reaches the figure below it.
+const photo = shots[0] ?? null;
 let ogImage = "";
 if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(ogImageUrl(photo.url))}">`;
 
@@ -255,7 +258,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         apart has no hierarchy, which was Hidde's complaint about the app on
         2026-08-26 and was equally true here. */}
     {photo && photo.url ? (
-      <PhotoFigure photo={photo} alt={tree.name} lang="en" variant="hero"
+      <PhotoFigure photo={photo} photos={shots} alt={tree.name} lang="en" variant="hero"
         widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
     ) : (
       <figure class="tree-noph tree-hero">
