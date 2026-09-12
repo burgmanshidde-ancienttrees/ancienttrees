@@ -971,10 +971,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .hero-app img { width: 28px; height: 28px; border-radius: 22%; display: block;
   box-shadow: 0 0 0 1px rgba(26,32,18,0.10); }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
-.mission { max-width: 44rem; margin: 2.5rem auto 0; padding: 1.6rem 2rem 0; border-top: 1px solid var(--cream-dark); text-align: center; }
-.mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
-.mission b { font-weight: 700; color: var(--ink); }
-.mission a, .footer-about a { color: var(--moss); }
+.footer-about a { color: var(--moss); }
 .footer-about p a { display: inline; margin: 0; }
 .report-line { font-size: 13px; font-weight: 300; color: var(--ink-mid); margin: 0.3rem 0 0.7rem; line-height: 1.6; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 62rem; margin: 0 auto; padding: 0.4rem 2rem 2.4rem; }
