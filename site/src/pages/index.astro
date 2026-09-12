@@ -73,8 +73,18 @@ const citiesCol = rankedCities.slice(0, 10).map((p) => `<a href="/${p.slug}" dat
 // times the height of its neighbours, with the footer's own bottom edge
 // somewhere below the fold. Hidde, 2026-08-13: "it would make sense to cut off
 // the footer at about the same height."
+// Ranked by how many trees we map, because the heading says "Top species" and
+// the column was alphabetical: Aleppo Pine, American Elm, American Sycamore,
+// Amur Cork Tree, Atlas Cedar, Austrian Pine, Bald Cypress, Baobab, Bishop
+// Wood, Bitter Orange, ten A- and B-names presented as the top of the site
+// (Hidde, 2026-09-12). Every other column here is genuinely ranked, and the
+// Species SHELF further up this same page already sorts by tree count, so the
+// directory was the one place disagreeing with its own label. speciesSlugs
+// stays alphabetical: the shelf re-sorts it anyway and nothing else depends
+// on this order.
+const speciesRanked = [...speciesSlugs].sort((a, b) => (speciesGroups.get(b[0]) ?? 0) - (speciesGroups.get(a[0]) ?? 0));
 const speciesCol =
-  speciesSlugs.slice(0, 10).map(([cn, sl]) => `<a href="/species/${sl}" data-ev="home-dir-species" data-detail="${esc(sl)}">${esc(cn)}</a>`).join("") +
+  speciesRanked.slice(0, 10).map(([cn, sl]) => `<a href="/species/${sl}" data-ev="home-dir-species" data-detail="${esc(sl)}">${esc(cn)}</a>`).join("") +
   `<a class="dir-morelink" href="/species">All ${speciesSlugs.length} species</a>`;
 const collCol =
   // Seven, not ten: these titles run to 48 characters and wrap, so seven of them
@@ -524,10 +534,13 @@ const scripts = SEARCH_WIDGET_JS;
 <main class="page">
   <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
   <Fragment set:html={directoryHtml} />
-  <div class="mission">
-    <p>We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or want to map a whole city, <a href="/contribute">tell us about it</a>. If you spot a mistake, tell us that too. We work on this database every day.</p>
-  </div>
-
+  {/* No contribution block here. The footer carries the same ask on every
+      page of the site, and on the homepage the two sat one under the other,
+      saying the same sentence twice within one screen (Hidde, 2026-09-12,
+      with the screenshot). Removed here rather than in the footer because the
+      footer is the version that reaches all 5,500 pages. If the homepage ever
+      needs a stronger ask than the footer's, it goes ABOVE the directory and
+      says something the footer does not. */}
 </main>
 <Fragment slot="scripts" set:html={scripts} />
 </Base>
