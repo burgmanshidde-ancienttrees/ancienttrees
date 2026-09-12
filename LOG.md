@@ -1,6 +1,36 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - A sighting now records where the phone stood, not our own pin
+
+Hidde: "sla op waar mensen stonden." Ticking a tree off from the list stored OUR
+coordinate on the sighting (`t.lat, t.lng` in CollectSheet's `claim`), so every
+app-matched photograph came back reading zero metres from our pin. That is not a
+measurement, it is our own number handed back to us, and it cost two things
+yesterday. His Kyoto photograph turned out to be a muku standing beside the
+Sudajii we map, and nothing anywhere could say where it was taken. And the
+Sudajii's pin is still `approximate` while the phone in his hand knew exactly
+where he stood: the one kind of evidence allowed to correct such a pin
+(CLAUDE.md, 2026-09-08) was being discarded at the moment it was made.
+
+One argument changed, plus `scripts/standingpoint.py` in the pre-push hook,
+because no test can see a call inside a private method of a SwiftUI view and the
+wrong version reads as the tidy one. Proved both ways: it fires on the old line
+and is silent on the new. Nothing that a visitor sees moves, since only
+sightings WITHOUT a tree id are drawn on a map.
+
+Still open, and both need Hidde:
+
+- **A correction on the server never reaches a phone.** `SightingSync.merge`
+  skips every row the phone already has (SightingSync.swift:40), so repointing
+  his Kyoto sighting from kyo_016 to kyo_019 in the database would change
+  nothing on his own telephone. Same shape as the bug above: the app talks one
+  way.
+- **Picking a tree from the list after photographing ties the photograph to it
+  AND ticks it off.** His words: "dit was niet afvinken maar een nieuwe boom."
+  Google Maps treats adding a photograph to a place and saying you were there as
+  two different acts, and we treat them as one.
+
 ## 2026-09-12 - A tree can carry more than one photograph, and the first one to do it is the Munakata camphor
 
 Hidde, sending a close-up beside the wide shot already on the page: "Moeten we
