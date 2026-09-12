@@ -49,6 +49,7 @@ const markers: WalkMarker[] = trees.map((t, i) => ({
   id: t.id,
   area: (t.location.neighbourhood ?? "").trim(),
   shot: Boolean(usablePhoto(t)),
+  ...(t.paid_entry ? { paid: true } : {}),
 }));
 
 const crumbItems: [string, string | null][] = [
@@ -107,7 +108,7 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
         const x = tr.trees[t.id];
         return (
           <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
-                    variant="full" headingLevel={2} lang={lang}
+                    variant="full" headingLevel={2} lang={lang} canTick
                     overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
         );
       })}

@@ -47,6 +47,7 @@
      own, so the bar, the sheet, the cards and the prose all start on the same
      line down the side of the screen. */
   --gutter: 1.5rem;
+  --heart-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z'/%3E%3C/svg%3E");
   --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EDF3E3; --surface: #F7F6F1; --shadow: 0 1px 3px rgba(26,32,18,0.08), 0 4px 14px rgba(26,32,18,0.05); --gold: #D9A13F;
   --serif: 'Gabarito', system-ui, sans-serif; --sans: 'Gabarito', system-ui, sans-serif;
   --hand: 'Gabarito', system-ui, sans-serif;
@@ -344,8 +345,6 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .chip.gold { background: #F3E4C3; color: #8A6414; }
 .action-row { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin: 0.75rem 0 1.25rem; }
 .action-row .go-btn { margin: 0; }
-.action-row .seen-btn { float: none; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 700; background: var(--moss); color: #fff; border: 1px solid var(--moss); border-radius: 999px; padding: 0.75rem 1.5rem; }
-.action-row .seen-btn[aria-pressed="true"] { background: var(--moss-light); color: var(--moss); }
 .action-link { font-size: 13.5px; font-weight: 600; color: var(--moss); text-decoration: none; }
 .near-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 0.5rem 0 1rem; list-style: none; padding: 0; }
 .near-card { display: block; background: #fff; border: none; box-shadow: var(--shadow); border-radius: 16px; padding: 14px 16px; text-decoration: none; color: var(--ink); transition: box-shadow 0.15s; }
@@ -447,7 +446,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .bar-links a.bar-cta { position: relative; height: 36px; padding: 0 0.75rem; font-size: 12.5px; order: -1; }
   .bar-links a.bar-cta::before { content: ""; position: absolute; inset: -4px; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
-  .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
+  .action-row .go-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
   .entry.has-thumb { grid-template-columns: 72px 1fr; gap: 0.8rem; }
 }
@@ -1018,7 +1017,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    trees you have stood in front of. Hidden until then, so a fresh map is just
    trees. The tick geometry matches .seen-mark on the check-in button, so the
    same gesture reads the same in both places. */
-.pin-got { position: absolute; top: -2px; right: -2px; width: 14px; height: 14px;
+.pin-got { position: absolute; bottom: -2px; right: -2px; width: 14px; height: 14px;
   border-radius: 50%; background: var(--moss); border: 2px solid var(--cream);
   display: none; }
 .pin-tree.seen .pin-got { display: block; }
@@ -1026,6 +1025,31 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   width: 3px; height: 6px; border: solid #fff; border-width: 0 1.5px 1.5px 0;
   transform: rotate(45deg); }
 .pin-tree.active .pin-got { border-color: var(--moss); }
+
+/* THE OTHER TWO CORNERS (2026-09-12). The app's pin has worn three marks since
+   2026-08-25 and this one wore the tick alone, so the same tree looked
+   different depending on which screen you were holding. The corners are the
+   app's, and so are the reasons: the tick moved from the top right to the
+   bottom right to make room for the heart, which is red here because it is red
+   on our own cards and red in every app anybody has used; the ticket sits
+   bottom left in its own blue, because a ticket is a condition on the visit
+   rather than something you have done, and must not read as either of the
+   other two. A tree can wear all three at once. */
+.pin-fav { position: absolute; top: -3px; right: -3px; width: 15px; height: 15px;
+  border-radius: 50%; background: var(--cream); border: 1.5px solid var(--cream);
+  box-shadow: 0 1px 3px rgba(26,26,20,0.3); display: none; }
+.pin-tree.kept .pin-fav { display: block; }
+.pin-fav::after { content: ''; position: absolute; inset: 0;
+  background: #D93340;
+  -webkit-mask: var(--heart-mask) center / 9px 9px no-repeat;
+  mask: var(--heart-mask) center / 9px 9px no-repeat; }
+.pin-ticket { position: absolute; bottom: -3px; left: -3px; width: 15px; height: 15px;
+  border-radius: 50%; background: var(--cream); box-shadow: 0 1px 3px rgba(26,26,20,0.3);
+  display: flex; align-items: center; justify-content: center; color: #2E6BA8; }
+/* The colour has to be set on the svg itself: .pin-tree svg paints every
+   glyph inside a pin moss, which is right for the silhouette and wrong for
+   this one, and inheriting from .pin-ticket loses to it. */
+.pin-ticket svg { width: 10px; height: 10px; color: #2E6BA8; }
 
 /* A tree at its peak, on the map. The pin is already a species silhouette, so
    the effect belongs to the drawn tree: the silhouette takes the peak colour,
@@ -1243,19 +1267,12 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .home-cta:hover { background: #2f4717; }
 .home-cta.secondary { background: none; color: var(--moss); border: 1px solid var(--moss); }
 .home-cta.secondary:hover { background: var(--moss-light); }
-/* The passport. A visited tree goes green on the map and on its card. */
-.seen-btn { float: right; display: inline-flex; align-items: center; gap: 0.4rem;
-  background: none; border: 1px solid var(--cream-dark); border-radius: 999px;
-  padding: 0.3rem 0.75rem; font-family: var(--sans); font-size: 12.5px;
-  color: var(--ink-mid); cursor: pointer; transition: all 0.15s; }
-.seen-btn:hover { border-color: var(--moss); color: var(--moss); }
-.seen-mark { width: 13px; height: 13px; border-radius: 50%; border: 1.5px solid currentColor;
-  display: inline-block; position: relative; }
-.seen-btn[aria-pressed="true"] { background: var(--moss); border-color: var(--moss); color: #fff; }
-.seen-btn[aria-pressed="true"] .seen-mark { background: #fff; border-color: #fff; }
-.seen-btn[aria-pressed="true"] .seen-mark::after { content: ''; position: absolute;
-  left: 4px; top: 1px; width: 3px; height: 7px; border: solid var(--moss);
-  border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
+/* The passport. A visited tree goes green on the map and on its card.
+   The button's own rules used to live here and were the DEAD design: a tick
+   drawn out of two borders, floated right, styled for a control no template
+   ever rendered. The float outlived the button and caught the real one the
+   hour it was built, wrapping the recognition block's text around it. The
+   live rules are with the heart's, where the pair belongs (2026-09-12). */
 .pin-tree.seen { color: var(--moss); }
 /* .pin-tree.seen now shows the badge; see .pin-got above. */
 .passport { margin-top: 0.9rem; font-size: 13px; color: var(--ink-mid);
@@ -1488,6 +1505,12 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .worthit-btn:hover { border-color: var(--moss); color: var(--moss); }
 .worthit-btn.is-on { border-color: var(--moss); color: var(--moss); background: var(--moss-light); box-shadow: none; }
 .worthit-btn.is-on .thumb-hand { fill: currentColor; }
+/* The number rides ON the button, never beside it (2026-08-27, the app's own
+   rule): a count that is only a count is not a thing anybody can press. */
+.worthit-n { font-size: 13.5px; font-weight: 700; line-height: 1;
+  font-variant-numeric: tabular-nums; }
+.worthit-n[hidden] { display: none; }
+.worthit-btn { gap: 0.3rem; }
 /* Deliberately quieter than the thumbs: reporting a fault is the rarer errand,
    and the convention (Google Maps, AllTrails) is a plain secondary control
    beside the opinion, never a button competing with it. */
@@ -1564,6 +1587,32 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .nav-group { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink-light); margin: 0.5rem 0 0.15rem; padding: 0 0.9rem; }
 .nav-drop-menu .nav-group:first-child { margin-top: 0.2rem; }
+
+/* THE TICK (2026-09-12). Built as the heart's sibling on purpose: two things
+   you can do to a tree, drawn as two of the same control, which is the app's
+   own wording for the same pair. Quiet outline pill, the seal fills moss once
+   you have stood in front of it. The label changes rather than the shape, so
+   a card does not jump when somebody ticks it. */
+.tree-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem;
+  margin-top: 0.4rem; }
+.tree-card-actions .heart-btn, .tree-card-actions .seen-btn { margin-top: 0; }
+.seen-btn { display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;
+  position: relative; font-family: inherit; font-size: 12px; font-weight: 700;
+  line-height: 1; color: var(--ink); background: #fff; border: 1.5px solid var(--cream-dark);
+  border-radius: 999px; padding: 0.25rem 0.6rem; margin-top: 0.4rem; }
+.seen-btn::after { content: ""; position: absolute; left: 0; right: 0;
+  top: 50%; height: 44px; transform: translateY(-50%); }
+.seen-btn:hover { border-color: var(--moss); }
+.seen-btn .seen-mark { width: 14px; height: 14px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.seen-btn[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
+.seen-btn[aria-pressed="true"] .seen-seal { fill: currentColor; }
+.seen-btn[aria-pressed="true"] .seen-tick { stroke: #fff; }
+/* On a tree page it stands alone under the facts rather than beside a heart,
+   so it gets the room a lone control needs and no card's top margin. */
+.tree-tick { margin: -0.4rem 0 1.5rem; }
+.tree-tick .seen-btn { font-size: 13.5px; padding: 0.5rem 0.9rem; margin-top: 0; }
+.tree-tick .seen-btn .seen-mark { width: 16px; height: 16px; }
 
 /* The heart on cards (SaveHeart compact): quiet outline pill, fills on save.
    One control, every list, per the 2026-08-14 consistency pass. */

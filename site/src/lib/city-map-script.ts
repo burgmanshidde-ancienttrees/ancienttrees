@@ -4,19 +4,20 @@
 // visited-sync-js.ts; the ancienttrees_seen key it used to write is gone),
 // and "where am I" GPS.
 //
-// Note: .seen-btn (the actual check-in button element) is referenced here
-// and in the CSS, but build_city_page never renders one into the tree
-// cards in the current production site — the passport/check-in wiring
-// below is real and ported faithfully, but nothing currently triggers it.
-// Confirmed by grep: no template anywhere emits `class="seen-btn"`.
+// The tick button exists now (2026-09-12): components/SeenButton.astro emits
+// .seen-btn into every tree card, and tree-actions-js.ts handles the click by
+// delegation, the same way the heart is handled. This file kept the only two
+// jobs that are the MAP's: the moss tick on a pin, and the passport counter.
+// The click handler and the label painting that used to live here went with
+// the change, along with the proximity check they carried, which contradicted
+// DECISIONS.md 2026-08-20 ("GPS proximity is a BONUS, never a gate").
 //
 // Below, cityMapScript() returns its whole body as a template literal that
 // ships verbatim as an inline <script> (see mapScript() in ./map): no
-// bundler or module graph reaches that text. That's why metresBetween(),
-// defined inside the template, can't import haversineKm from ./walks the
-// way this file's own build-time code does above: it is the one unavoidable
-// duplicate of the haversine formula in the codebase. Keep it in step with
-// walks.ts::haversineKm and geo.py::km by hand if either changes.
+// bundler or module graph reaches that text, so nothing in there can import
+// from ./walks the way this file's own build-time code does above. That cost
+// us a hand-kept copy of the haversine formula until 2026-09-12, when the
+// proximity check that needed it went; there is no duplicate of it left here.
 import { MAP_STYLE } from "./site-config";
 import { mapScript } from "./map";
 import { kmLabel } from "./walks";
@@ -216,7 +217,23 @@ markers.forEach(function(m, idx) {
                // something the number was only borrowing: whether you have
                // stood in front of this tree. Empty by default, a moss tick
                // once you have.
-               + '<span class="pin-got" aria-hidden="true"></span>';
+               + '<span class="pin-got" aria-hidden="true"></span>'
+               // THE THREE CORNERS, the app's own pin (2026-09-12, "trek dit
+               // allemaal gelijk"). TreeMap.swift has drawn all three since
+               // 2026-08-25 and this pin drew one: the tick. Same corners, same
+               // reasons, so a person who walks with the phone and reads on a
+               // laptop sees one map rather than two.
+               //   bottom left   a ticket, because entry is a condition on the
+               //                 visit rather than something you have done
+               //   bottom right  the tick, moved down from the top right to
+               //                 make room and to agree with the app
+               //   top right     the heart, red, because a heart is red in
+               //                 every app anybody has used and ours is red
+               //                 on the cards already
+               + '<span class="pin-fav" aria-hidden="true"></span>'
+               + (m.paid ? '<span class="pin-ticket" aria-hidden="true">'
+                   + '<svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5V10a2 2 0 0 0 0 4v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2 2 0 0 0 0-4V7.5Z"/></svg>'
+                   + '</span>' : '');
   // A tree at its peak says so on the map. The particles fall from the CROWN of
   // the drawn species, not from a generic dot, which is the whole reason the
   // pins are silhouettes: a ginkgo sheds from a ginkgo. The month is read here
@@ -246,7 +263,11 @@ if (markers.length > 1) { map.fitBounds(bounds, { padding: 70, maxZoom: 13 }); }
 
 document.querySelectorAll('.tree-card').forEach(function(card, idx) {
   card.addEventListener('click', function(e) {
-    if (e.target.closest('a')) { return; }
+    // A link or a button on the card does its own job; only the card itself
+    // selects the pin. The button half was added 2026-09-12 with the tick:
+    // ticking a tree off the list should not also fly the map to it and slide
+    // the sheet open, and the heart had quietly been doing that all along.
+    if (e.target.closest('a, button')) { return; }
     setActive(idx, true, false);
   });
 });
@@ -421,6 +442,16 @@ function writeSeen(changed, on) {
 }
 window.atPaintPassport = function() { try { paintPassport(); } catch (e) {} };
 
+// The heart on a pin reads the same answer the hearts on the cards do, so a
+// save made on the card lights the pin without a reload. tree-actions-js.ts
+// calls this after every save; it is a no-op before that file has its answer.
+window.atPaintPinFaves = function() {
+  markers.forEach(function(m, idx) {
+    var kept = Boolean(window.atHasSaved && window.atHasSaved(m.id));
+    pins[idx].classList.toggle('kept', kept);
+  });
+};
+
 function paintPassport() {
   var seen = readSeen();
   var here = 0;
@@ -428,11 +459,6 @@ function paintPassport() {
     var got = seen.indexOf(m.id) !== -1;
     if (got) { here++; }
     pins[idx].classList.toggle('seen', got);
-  });
-  document.querySelectorAll('.seen-btn').forEach(function(btn) {
-    var got = seen.indexOf(btn.dataset.tree) !== -1;
-    btn.setAttribute('aria-pressed', got ? 'true' : 'false');
-    btn.querySelector('.seen-text').textContent = got ? 'Visited' : 'Check in at this tree';
   });
   var box = document.getElementById('passport');
   if (box) {
@@ -449,62 +475,6 @@ function paintPassport() {
     }
   }
 }
-
-function metresBetween(lat1, lng1, lat2, lng2) {
-  var R = 6371000, p = Math.PI / 180;
-  var a = Math.sin((lat2 - lat1) * p / 2) * Math.sin((lat2 - lat1) * p / 2)
-        + Math.cos(lat1 * p) * Math.cos(lat2 * p)
-        * Math.sin((lng2 - lng1) * p / 2) * Math.sin((lng2 - lng1) * p / 2);
-  return 2 * R * Math.asin(Math.sqrt(a));
-}
-
-function flash(btn, msg, ms) {
-  var t = btn.querySelector('.seen-text'), was = t.textContent;
-  t.textContent = msg;
-  setTimeout(function() { if (t.textContent === msg) { t.textContent = was; } }, ms || 4000);
-}
-
-document.querySelectorAll('.seen-btn').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    var id = btn.dataset.tree;
-    var seen = readSeen();
-
-    // A CHECK-IN NEEDS AN ACCOUNT, the same gate the heart has carried since
-    // 2026-08-30 and for the same reason (Hidde, 2026-09-02: "zodra je iets
-    // liket of wat dan ook, moet dat achter een account staan"). It opens the
-    // one sign-in dialog rather than ticking into nothing.
-    if (!window.atSignedIn || !window.atSignedIn()) {
-      if (window.atOpenSignIn) { window.atOpenSignIn(btn.dataset.name); }
-      return;
-    }
-
-    if (seen.indexOf(id) !== -1) {
-      writeSeen(id, false);
-      paintPassport();
-      return;
-    }
-
-    if (!navigator.geolocation) {
-      flash(btn, 'This browser cannot check where you are');
-      return;
-    }
-    flash(btn, 'Checking where you are...', 20000);
-    navigator.geolocation.getCurrentPosition(function(pos) {
-      var away = metresBetween(pos.coords.latitude, pos.coords.longitude,
-                               parseFloat(btn.dataset.lat), parseFloat(btn.dataset.lng));
-      if (away <= parseFloat(btn.dataset.radius)) {
-        writeSeen(id, true);
-        paintPassport();
-      } else {
-        var far = away > 2000 ? Math.round(away / 1000) + ' km' : Math.round(away) + ' m';
-        flash(btn, 'Still ' + far + ' away. Check in at the tree.', 6000);
-      }
-    }, function(err) {
-      flash(btn, err.code === 1 ? 'Location needed to check in' : 'Could not find you. Try again.', 6000);
-    }, { enableHighAccuracy: true, maximumAge: 30000, timeout: 15000 });
-  });
-});
 
 // THE #trees= TRANSFER LINK IS GONE (2026-09-02), along with the button that
 // made one. It existed to move a log between devices while the log lived in a

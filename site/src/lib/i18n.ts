@@ -205,6 +205,8 @@ export interface UIStrings {
   sourcesHeading: string;
   sourcesLine: string;
   takeMeThere: string;
+  seenIt: string;
+  seenItDone: string;
   nearbyTrees: string;
   somethingWrong: string;
   suggestAnother: string;
@@ -310,6 +312,8 @@ const EN: UIStrings = {
   sourcesHeading: "Sources",
   sourcesLine: "Where the facts on this page come from.",
   takeMeThere: "Take me there",
+  seenIt: "I have seen this one",
+  seenItDone: "Ticked off",
   nearbyTrees: "Nearby trees",
   somethingWrong: "Something here is wrong",
   suggestAnother: "Suggest another tree",
@@ -367,6 +371,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesHeading: "Fuentes",
     sourcesLine: "De dónde salen los datos de esta página.",
     takeMeThere: "Cómo llegar",
+    seenIt: "Ya he visto este",
+    seenItDone: "Visitado",
     nearbyTrees: "Árboles cercanos",
     somethingWrong: "Aquí hay algo mal",
     suggestAnother: "Sugerir otro árbol",
@@ -468,6 +474,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesHeading: "Fonti",
     sourcesLine: "Da dove vengono i dati di questa pagina.",
     takeMeThere: "Portami lì",
+    seenIt: "L'ho già visto",
+    seenItDone: "Visitato",
     nearbyTrees: "Alberi nei dintorni",
     somethingWrong: "Qui c'è un errore",
     suggestAnother: "Segnala un altro albero",
@@ -569,6 +577,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesHeading: "Bronnen",
     sourcesLine: "Waar de gegevens op deze pagina vandaan komen.",
     takeMeThere: "Breng me erheen",
+    seenIt: "Deze heb ik gezien",
+    seenItDone: "Afgevinkt",
     nearbyTrees: "Bomen in de buurt",
     somethingWrong: "Hier klopt iets niet",
     suggestAnother: "Nog een boom aandragen",
@@ -670,6 +680,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesHeading: "Quellen",
     sourcesLine: "Woher die Angaben auf dieser Seite stammen.",
     takeMeThere: "Route planen",
+    seenIt: "Diesen habe ich gesehen",
+    seenItDone: "Abgehakt",
     nearbyTrees: "Bäume in der Nähe",
     somethingWrong: "Hier stimmt etwas nicht",
     suggestAnother: "Noch einen Baum vorschlagen",
@@ -771,6 +783,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesHeading: "Fontes",
     sourcesLine: "De onde vêm os dados desta página.",
     takeMeThere: "Como chegar",
+    seenIt: "Já vi esta",
+    seenItDone: "Visitada",
     nearbyTrees: "Árvores por perto",
     somethingWrong: "Há aqui um erro",
     suggestAnother: "Sugerir outra árvore",
@@ -872,6 +886,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesHeading: "Sources",
     sourcesLine: "D’où viennent les informations de cette page.",
     takeMeThere: "M'y emmener",
+    seenIt: "Je l'ai déjà vu",
+    seenItDone: "Vu",
     nearbyTrees: "Arbres à proximité",
     somethingWrong: "Il y a une erreur ici",
     suggestAnother: "Proposer un autre arbre",
@@ -972,6 +988,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesHeading: "出典",
     sourcesLine: "このページの情報の出どころ。",
     takeMeThere: "ここへ行く",
+    seenIt: "この木は見ました",
+    seenItDone: "訪問済み",
     nearbyTrees: "近くの木",
     somethingWrong: "ここに誤りがある",
     suggestAnother: "別の木を教える",

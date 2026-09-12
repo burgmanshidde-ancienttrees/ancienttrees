@@ -8,9 +8,11 @@
 // same English /app page, which is where the product actually is.
 import Base from "../layouts/Base.astro";
 import SaveHeart from "./SaveHeart.astro";
+import SeenButton from "./SeenButton.astro";
 import SignInModal from "./SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
+import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
 import { usablePhoto, thumbUrl } from "../lib/images";
@@ -102,7 +104,14 @@ const headExtra = mapHead() + ogImage + "\n" + hreflangForCity(cslug, "tree", ts
 // the canonical city file and are identical in every language. Only the
 // heading and the line above them are looked up.
 const sources = treeSources(tree);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!);
+// THE HEART ON THIS PAGE HAD NO SCRIPT BEHIND IT. TREE_ACTIONS_JS and
+// SIGNIN_JS were imported at the top of this file and never put in the slot,
+// so every translated tree page rendered a save button that painted nothing
+// and did nothing, in seven languages. Found 2026-09-12 while wiring the tick.
+// It is the same fault the 2026-08-14 audit found on the Spanish city page,
+// and the reason TreeCard and SeenButton are components rather than markup.
+const scripts = singlePinScript(loc.latitude!, loc.longitude!)
+  + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS;
 // The bare number, and a cap on the prose fallback. Same rule as the English
 // page: the label carries the unit, and an age_estimate that runs to a
 // sentence is cut at its first clause, because everything after the comma is
@@ -224,6 +233,15 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       <a class="report-btn" href="/contribute?kind=correction">{U.somethingWrong}</a>
       <a class="report-btn" href="/contribute?kind=tree">{U.suggestAnother}</a>
     </div>
+    {/* THE TICK, the web's answer to the camera button in the app's own tree
+        bar (2026-09-12). In the app, photographing a tree ticks it off, which
+        is why its tree page carries a collect action at all; the website has
+        no camera flow, so the collect action here is the tick itself. Under
+        the facts rather than in the floating bar: the bar is already three
+        controls wide and truncates its last one at 375 points. */}
+    <p class="tree-tick"><SeenButton treeId={x.id} treeName={x.name}
+        labelSeen={U.seenIt} labelDone={U.seenItDone} /></p>
+
     <div class="tree-bar" aria-label={U.actions}>
       <SaveHeart treeId={x.id} treeName={x.name} labelSave={U.cardSave} labelSaved={U.cardSaved} />
       <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>

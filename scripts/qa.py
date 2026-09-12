@@ -1468,6 +1468,57 @@ def check_icons_are_drawn():
     return out
 
 
+def check_tick_has_its_wiring():
+    """The ratchet check from 2026-09-12, and it is written from a live fault.
+
+    Collecting is one of the four verbs, and on the website it was reachable
+    from nowhere: visited-sync-js.ts read the account's list, collection-js.ts
+    wrote a tick, city-map-script.ts painted the pins and the passport counter,
+    the CSS for the badge was in style.css, and no template emitted the button.
+    city-map-script's own head comment had said so for weeks.
+
+    So this is the hearts-need-the-dialog check applied to the set of parts the
+    tick needs. Three of them, each of which has already been missing from a
+    page that shipped:
+
+      the dialog, because a tick needs an account and a signed-out tap must
+        open something rather than tick into nothing;
+      atPushVisited, which is visited-sync-js.ts: without it the button paints
+        from an answer that never arrives and writes nowhere;
+      the handler in tree-actions-js.ts, the same delegation the heart uses.
+
+    The same pass found the translated tree page rendering a save heart with
+    neither TREE_ACTIONS_JS nor SIGNIN_JS in its slot, in seven languages, so
+    the heart's own wiring is checked here too rather than only its dialog.
+    """
+    out = []
+    no_dialog, no_sync, no_handler, heart_no_handler = [], [], [], []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        rel = str(page.relative_to(DIST))
+        if 'class="seen-btn"' in html:
+            if 'id="signin-dialog"' not in html:
+                no_dialog.append(rel)
+            if "atPushVisited" not in html:
+                no_sync.append(rel)
+            if "atPaintSeen" not in html:
+                no_handler.append(rel)
+        if "save-btn" in html and "atPaintSaves" not in html:
+            heart_no_handler.append(rel)
+    for bad, what in ((no_dialog, "the sign-in dialog"),
+                      (no_sync, "visited-sync-js (atPushVisited)"),
+                      (no_handler, "tree-actions-js (atPaintSeen)")):
+        if bad:
+            out.append("%d page(s) render the tick without %s, so it paints or "
+                       "writes nothing, e.g. %s"
+                       % (len(bad), what, ", ".join(bad[:5])))
+    if heart_no_handler:
+        out.append("%d page(s) render a save heart with no tree-actions-js behind "
+                   "it (the 2026-09-12 translated-tree-page fault), e.g. %s"
+                   % (len(heart_no_handler), ", ".join(heart_no_handler[:5])))
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1491,6 +1542,7 @@ def main():
     failures += check_photo_orientation()
     failures += check_photo_resolution()
     failures += check_save_flow_integrity()
+    failures += check_tick_has_its_wiring()
     failures += check_sheet_integrity()
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
