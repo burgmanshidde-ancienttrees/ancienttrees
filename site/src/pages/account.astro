@@ -24,7 +24,7 @@
 // Kept noindexed and out of the sitemap: this is somebody's own page.
 import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
-import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import { SUPABASE_URL, SUPABASE_KEY, APPLE_SIGNIN } from "../lib/site-config";
 import { PROFILE_JS } from "../lib/profile-js";
 import { MY_TREES_JS } from "../lib/my-trees-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
@@ -54,6 +54,13 @@ const canonical = `${BASE_URL}/account`;
     <p class="hero-kicker">Your tree collection</p>
     <h1>Sign in to keep it <em>everywhere</em>.</h1>
     <p class="acct-sub">We send you a sign-in link, and your account keeps what you collect and save.</p>
+    {/* Apple first, for the same reason as on the dialog: their guidelines ask
+    for a button at least as prominent as the others, and this page must offer
+    what the dialog offers or the two routes into one account disagree. Gated
+    on the same flag; site-config.ts says what it waits for. */}
+    {APPLE_SIGNIN && (
+      <button type="button" class="oauth-btn oauth-apple" id="acct-apple"><svg class="oauth-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 12.04c-.02-2.4 1.96-3.55 2.05-3.6-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.46 0 1.87.78 3.14.76 1.3-.02 2.12-1.18 2.91-2.34.92-1.34 1.3-2.64 1.32-2.71-.03-.01-2.53-.97-2.55-3.85z"/><path fill="currentColor" d="M14.72 4.7c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.63-2.8 1.43-.61.71-1.15 1.85-1.01 2.94 1.07.08 2.15-.54 2.82-1.34z"/></svg><span>Continue with Apple</span></button>
+    )}
     {/* Google publishes this mark and its guidelines, so the button uses
     the asset rather than a pill with the words alone. CONVENTIONS.md,
     "A sign-in button": the provider ships it, use it. */}

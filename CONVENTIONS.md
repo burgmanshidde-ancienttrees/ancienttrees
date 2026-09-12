@@ -247,6 +247,55 @@ that exists.
 
 ---
 
+## Sign in with Apple ON THE WEB, and why it is not the app's flow
+
+**Looked up 2026-09-12**, when Hidde asked why Apple login was missing on
+mobile web. Apple's own HIG and button pages are JS-rendered and did not yield
+their numbers to a fetch, so what is recorded here is what was verified from
+Supabase's own Apple guide and from our own two code paths, and the parts that
+could not be read are named as such rather than guessed.
+
+**The two flows are not the same flow, which is the whole answer.** The APP
+holds a native Apple credential and posts it: `/auth/v1/token?grant_type=id_token`
+with the id token and the nonce. Apple accepts the BUNDLE ID as the audience
+there, so that route needs no web registration at all. A BROWSER has no such
+credential, so the web takes the ordinary OAuth redirect,
+`/auth/v1/authorize?provider=apple`, byte for byte what our Google button
+already does. That flow authenticates US to Apple, and Apple will not take a
+bundle id for it: it wants a **Services ID** (a second identifier for the web
+half) plus a **.p8 signing key**. Both are created in the Apple Developer
+account and cannot be made from a build.
+
+Supabase's guide adds one ordering detail worth keeping, because it is the fix
+for an error that reads like something else entirely: in the provider's client
+ids list the **Services ID goes before the bundle id**, and that is what avoids
+"Unacceptable audience in id_token". The callback to register on the Services
+ID is `https://<project>.supabase.co/auth/v1/callback`.
+
+**The button, and why ours is drawn rather than Apple's own.** In the app,
+`SignInWithAppleButton` IS Apple's control and nothing about it is adjustable,
+which is what the entry below is about. On the web Apple ships that control
+only through Sign in with Apple JS, a third-party script in the product and
+therefore hard rule 5, and we do not need it, because Supabase performs the
+OAuth. So on the web NEITHER provider hands us a control: both buttons are ours
+to draw, and the honest resolution is the opposite of the app's. There the two
+cannot agree and the entry below explains the gap; here they can, so Apple's
+button inherits the Google button's geometry whole, same height, radius, type
+size and mark column. Measured at 375px: both 276 by 44, same left and right
+edge.
+
+Apple's appearances are black, white and white-with-outline, and their
+guidelines ask that the button be at least as prominent as the other sign-in
+options. The site has no dark mode, so black on our cream ground is both the
+correct appearance and the recognisable one, and an outlined Google underneath
+makes Apple visibly the greater of the two rather than merely tying.
+
+- https://supabase.com/docs/guides/auth/social-login/auth-apple
+- https://developer.apple.com/sign-in-with-apple/usage-guidelines-for-websites-and-other-platforms/
+- https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+
+---
+
 ## Two sign-in buttons stacked, and why they cannot fully agree
 
 **Looked up 2026-09-01:** Apple's Human Interface Guidelines and

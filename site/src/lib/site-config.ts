@@ -11,6 +11,48 @@ export const AUTH_ENABLED = true;
 export const SUPABASE_URL = "https://caimvxiyrtifilimlkqw.supabase.co";
 export const SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb";
 
+// Sign in with Apple ON THE WEB (2026-09-12, Hidde: "why is apple login not
+// available on mobile web? Everything should be consistent across platform").
+//
+// The honest answer to his question is two things stacked, and only one of them
+// was ours. The button was never built here: the app got Apple on 2026-08-20
+// and the web dialog got Google the same day, which is the both-surfaces rule
+// failing in the same file that already confesses to it once, about the Google
+// mark staying a bare pill here for a fortnight after it was fixed in the app.
+//
+// The second half is why it was never one line away. The APP signs in with
+// Apple natively, POST /auth/v1/token?grant_type=id_token, and that flow needs
+// nothing from Apple but the bundle id listed in Supabase's authorized client
+// ids. The WEB has no native credential to present, so it takes the ordinary
+// OAuth redirect, /auth/v1/authorize?provider=apple, exactly as Google does.
+// That flow authenticates US to Apple, and Apple will not accept a bundle id
+// for it: it needs a SERVICES ID, which is a second identifier registered for
+// the web half, plus a .p8 signing key. Both live in Hidde's Apple Developer
+// account and neither can be created from here.
+//
+// So the flag, and it is false until he has done that. Everything else is
+// built and wired: flipping this one word puts the button on the dialog and on
+// /account, in all eight languages. It is false rather than absent because a
+// sign-in button that bounces the visitor to a Supabase error page is the dead
+// check-in button of 2026-07-29 all over again, and that one shipped on 345
+// pages because nobody pressed it.
+//
+// What he has to do, once, in two consoles:
+//   1. developer.apple.com, Identifiers, new SERVICES ID (say
+//      app.ancienttrees.web). Enable Sign in with Apple, Configure, and give it
+//      ancienttrees.app as the domain and
+//      https://caimvxiyrtifilimlkqw.supabase.co/auth/v1/callback as the return
+//      URL.
+//   2. Keys, new key with Sign in with Apple enabled. Apple hands over the .p8
+//      ONCE and never again.
+//   3. Supabase, Authentication, Providers, Apple: the Services ID goes in
+//      client ids BEFORE the bundle id that is already there, and the key
+//      details produce the secret. Order matters, it is what avoids Apple's
+//      "unacceptable audience in id_token".
+// Then flip this to true. The bundle id staying in that list is what keeps the
+// app's native sign-in working, so this adds a route rather than moving one.
+export const APPLE_SIGNIN = false;
+
 // Cloudflare Web Analytics: cookieless and aggregate only, chosen 2026-07-21
 // specifically because it needs no consent banner. build_site.py:849.
 export const ANALYTICS_TOKEN = "fcbbfb8b426c4f6aa2066b00be6454f6";

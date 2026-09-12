@@ -37,6 +37,7 @@
 // typed by Lang cannot be forgotten the way a ternary can: leave a language
 // out and the build stops.
 import { signInCopy } from "../lib/signin-strings";
+import { APPLE_SIGNIN } from "../lib/site-config";
 
 interface Props { lang?: string }
 const { lang = "en" } = Astro.props as Props;
@@ -48,6 +49,19 @@ const T = signInCopy(lang);
   <div id="signin-ask">
     <h3 id="signin-title" data-generic={T.title} data-feedback={T.titleFeedback}>{T.title}</h3>
     <p id="signin-sub" data-generic={T.sub} data-named={T.subNamed} data-feedback={T.subFeedback}>{T.sub}</p>
+    {/* Apple above Google, both above the typed route, which is the order the
+    app's sheet already uses and the order every consumer app has settled on:
+    the taps first, the typing second. Apple's own guidelines add a rule of
+    their own here, that their button is shown at least as prominently as the
+    others, and filled-black above an outlined Google satisfies it rather than
+    merely dodging it.
+
+    It renders only once the Services ID and signing key exist in Hidde's
+    Apple account; site-config.ts carries the flag and the two consoles he has
+    to visit. A button that cannot complete is worse than a missing one. */}
+    {APPLE_SIGNIN && (
+      <button type="button" class="oauth-btn oauth-apple" id="signin-apple"><svg class="oauth-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 12.04c-.02-2.4 1.96-3.55 2.05-3.6-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.46 0 1.87.78 3.14.76 1.3-.02 2.12-1.18 2.91-2.34.92-1.34 1.3-2.64 1.32-2.71-.03-.01-2.53-.97-2.55-3.85z"/><path fill="currentColor" d="M14.72 4.7c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.63-2.8 1.43-.61.71-1.15 1.85-1.01 2.94 1.07.08 2.15-.54 2.82-1.34z"/></svg><span>{T.apple}</span></button>
+    )}
     {/* Google publishes this mark and its guidelines, so the button uses
     the asset rather than a pill with the words alone. CONVENTIONS.md,
     "A sign-in button": the provider ships it, use it. Hidde made this
