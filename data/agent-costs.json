@@ -7771,6 +7771,24 @@
         "note": "dal_009 story + recognition line, written directly in the main session rather than dispatched (single tree, below write-pass batch size)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Lithuania famous-tree batch (Degsne, Kaunas, Pagramantis RP, Plauginiai Forest, Vainiai, Zalgiriai)",
+        "kind": "verify",
+        "tokens": 203000,
+        "trees": 9,
+        "note": "worked all 12 candidates from famous_demand.py --next --country Lithuania; 9 verified joining 6 already-published places (register+Wikipedia cross-match, girth on all 9), 2 blocked as avenues (not single collectible points), 1 left as a lead (Butinge oak failed the single-famous-tree destination test at 16 reads/month, 47km from anything else)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Lithuania famous-tree batch (Degsne, Kaunas, Pagramantis RP, Plauginiai Forest, Vainiai, Zalgiriai)",
+        "kind": "write",
+        "tokens": 90000,
+        "trees": 9,
+        "note": "stories + recognition lines for all 9; 6 of 9 carry no age (stated honestly, no derivation), 3 best_time set; car-only access and 12-28km gaps from each place's other trees stated plainly rather than softened; main session then fixed 4 cities' stale intro/meta/faq tree counts (degsne 2->3, kaunas 6->9, pagramantis-regional-park 4->5, plauginiai-forest 1->2, vainiai 1->3, zalgiriai 1->2) caught by preflight",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

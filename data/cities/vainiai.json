@@ -2,10 +2,10 @@
   "city": "Vainiai",
   "country": "Lithuania",
   "status": "needs_curation",
-  "intro": "Vainiai, a hamlet in Jonava district, maps one tree: a white poplar among the largest recorded in Lithuania, standing in the overgrown remains of a former manor park. Declared a nature monument in 1960, it has outlived the manor around it by decades. A dedicated footpath still leads visitors to it from the road. Published alone here because it is the destination, not because the hamlet's research is finished.",
-  "meta_description": "The Vainiai Poplar: one of the largest white poplars recorded in Lithuania, in the wild remains of a former manor park, protected since 1960.",
-  "question_meta": "Vainiai's mapped tree is a white poplar among the largest recorded in Lithuania, protected since 1960.",
-  "question_answer": "A white poplar standing in the overgrown remains of the former Vainiai manor park. Its girth of 6.85 metres and height of 35.5 metres make it one of the largest white poplars recorded in Lithuania. It is the only tree mapped here, published alone under the single-tree exception.",
+  "intro": "Vainiai, a hamlet in Jonava district, maps three trees: a white poplar among the largest recorded in Lithuania, standing in the overgrown remains of a former manor park, and two oaks 26 to 28 kilometres away near the Nevezis river, the Galiunas Oak and the two-trunked Nevezio Dvilypis Oak, 4.4 kilometres apart from each other. The poplar was declared a nature monument in 1960 and has outlived the manor around it by decades; a dedicated footpath still leads visitors to it from the road. Vainiai is the nearest place we publish to all three, not a shared neighbourhood.",
+  "meta_description": "The Vainiai Poplar, one of the largest white poplars recorded in Lithuania, with two further oaks near the Nevezis river.",
+  "question_meta": "Vainiai's mapped trees are a white poplar among the largest recorded in Lithuania, protected since 1960, and two oaks further out near the Nevezis.",
+  "question_answer": "The Vainiai Poplar, standing in the overgrown remains of the former Vainiai manor park, with a girth of 6.85 metres and a height of 35.5 metres, one of the largest white poplars recorded in Lithuania. Two oaks near the Nevezis river, the Galiunas Oak and the Nevezio Dvilypis Oak, are also mapped here, 26 to 28 kilometres from the poplar and 4.4 kilometres from each other.",
   "question_context": "The Vainiai Poplar was first declared a nature monument in 1960 and re-confirmed as a state-protected natural landscape object in 1999. The manor park it once stood in as an ornamental planting has since gone wild; the buildings are gone, and what remains reads as overgrown parkland rather than a maintained estate. No source found describes when the tree was planted, and white poplar growth rates vary too widely by site to derive an honest estimate from its girth alone, so the age is left open here. If you know it, tell us.\n\nA dedicated footpath leads to the tree from the nearby road, visible in photographs of the site, suggesting genuine, informal public access rather than a fenced or posted-private site. Populus alba is native to Lithuania's floodplains and old parkland, and specimens of this size are rare; at 6.85 metres round, this is among the largest examples the country's records hold.",
   "faq": [
     {
@@ -23,6 +23,10 @@
     {
       "q": "What was here before?",
       "a": "The former Vainiai manor park. The buildings and formal grounds are gone; the poplar has outlived them in what is now overgrown parkland."
+    },
+    {
+      "q": "Are there other trees mapped near Vainiai?",
+      "a": "Two, though not nearby in a walkable sense: the Galiunas Oak and the Nevezio Dvilypis Oak stand 26 to 28 kilometres away near the Nevezis river, 4.4 kilometres from each other. Vainiai is the closest place we publish to them, not a shared neighbourhood with the poplar."
     }
   ],
   "trees": [
@@ -54,6 +58,76 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as the lone poplar standing in the overgrown remains of the manor park, 6.85 metres round. It stands at the end of a footpath from the road near Vainiai."
+    },
+    {
+      "id": "vni_002",
+      "name": "Galiūnas Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 490,
+      "location": {
+        "address": "Kukšiai Forest, about 1.3km west of road RK1916 between Užumiškiai and Kačergiai, Babtai eldership, Kaunas district",
+        "latitude": 55.14444,
+        "longitude": 23.880624,
+        "neighbourhood": "Kačergiai, Kaunas district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/%C4%84%C5%BEuolas_Gali%C5%ABnas",
+        "https://stvk.lt/map/S0310505010189-azuolas-galiunas",
+        "https://krsvbiblioteka.lt/krastotyra-straipsniai/azuolas-galiunas/"
+      ],
+      "access": "Free, public state forest (Kukšiai Forest); reached via road RK1916 then a field track (about 1.3km) to a small woodland, then about 100m into the forest through dense undergrowth. No gate, fee or restriction mentioned by any source.",
+      "transport": "No public transport; reached by car. About 25.7km by straight-line distance from Vainiai's own tree (vni_001, the Vainiai Poplar), the nearest published place; real road distance is greater and this is a separate car stop, not a walk. It is also about 4.4km from the Nevėžio Dvilypis Oak (this batch's vni_003), which is close enough to pair as one outing.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Thirty metres of oak, and you will not see it until you are nearly underneath it. The Lithuanian description is blunt about that: not visible from a distance. It grows in a damp corner of deciduous forest behind dense shrubs, and the screen holds until the last few steps.\n\nThe trunk is 4.90 metres round at chest height, sound rather than hollow, under thick corky bark, and it divides into two separate stems 3.4 metres up. There are small animal burrows in the ground among the roots. Kaunas district protects it, and the state cadastre registered it on 29 December 2010.\n\nNo age is on record anywhere. Nothing in the sources offers one and we are not going to reverse a girth into years to fill the gap. If a forestry survey has dated it, tell us.\n\nThe distance is the other thing to be plain about. This oak sits 26 kilometres from the Vainiai Poplar in a straight line and further by road. Vainiai is the nearest place we publish rather than a neighbour, and there is no public transport to either. From road RK1916 it is a 1.3 kilometre field track to a small wood, then about 100 metres in through the undergrowth, and that last stretch is a search rather than a path.\n\nThe Nevėžio Dvilypis Oak stands 4.4 kilometres away, which is how the drive out earns two trees instead of one.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.90 metres round and unhollowed under thick corky bark, dividing into two separate stems 3.4 metres up. It stands about 100 metres inside the wood, screened by shrubs until you are close.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "vni_003",
+      "name": "Nevėžio Dvilypis Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 260,
+      "location": {
+        "address": "Open cultivated field about 1.5km off road RK1906, Pakapiai village, on the Kaunas/Kėdainiai district border",
+        "latitude": 55.181487,
+        "longitude": 23.857828,
+        "neighbourhood": "Pakapiai, Kaunas district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Nev%C4%97%C5%BEio_dvilypis_%C4%85%C5%BEuolas",
+        "https://stvk.lt/map",
+        "http://babtai.puslapiai.lt/Istorija1830.htm"
+      ],
+      "access": "Free; stands alone in an open working field, reached via a gravel track (about 1.5km) off road RK1906. No gate, fee or ownership restriction mentioned by any source; a wide field with no marked path but nothing indicating it is off limits.",
+      "transport": "No public transport; reached by car. About 27.6km by straight-line distance from Vainiai's own tree (vni_001), the nearest published place; real road distance is greater. About 4.4km from the Galiūnas Oak (this batch's vni_002), close enough to visit in the same outing by car.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Banned books were hidden at the foot of this oak. Through the decades of the press ban, when Lithuanian-language books were illegal, the knygnešiai who smuggled them are said to have stashed them here and in the village of Dasiūnai nearby. That comes from one local history of Babtai rather than from several sources, which is worth saying plainly, and it fits the geography: a lone oak in an open field, 1.5 kilometres down a gravel track off the road.\n\nDvilypis means double-bodied, and that is the shape of it. Two trunks leave one base about a metre above the ground. It is 17 metres tall and 2.6 metres round, the slighter of the two trees on this page, and it still holds the horizon, because it is the only thing standing in that field. Its age is given as about 300 years by the source, and it stays where the source put it.\n\nIt sits roughly 120 metres south of the Nevėžis river valley. The Paliepiai Poplar, another registered tree, stands a kilometre northwest across the river.\n\nThere is no public transport. It is a car to road RK1906 and then the gravel track, and the field is working farmland with no marked path and nothing saying keep out. The Vainiai Poplar is 27.6 kilometres away in a straight line, so it is not a neighbour of this tree. The Galiūnas Oak, 4.4 kilometres off, is.",
+      "how_to_recognise": "You can recognise it by the two trunks leaving one base about a metre above the ground, 17 metres tall and 2.6 metres round. It is the only tree standing in the open field, at the end of a 1.5 kilometre gravel track.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the double trunk reads against an empty field"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

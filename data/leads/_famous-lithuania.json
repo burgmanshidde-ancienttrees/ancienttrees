@@ -22,10 +22,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Bagr%C4%97no_liepa.jpg"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Small-leaved Lime (Tilia cordata)",
       "species_basis": "lt.wikipedia article names it mažalapė liepa (small-leaved linden)",
-      "reason": "Checked 2026-09-05, held as a lead rather than shipped as a single-tree destination. Real and state-protected: lt.wikipedia (Bagrėno liepa, Liepų g. 132, Bagrėnas village, Prienai district) gives girth 5.45m at 1.3m, height 27.5m, a hollowed cracked base with trunks forking at 1.8m, designated a state botanical gamtos paveldo objektas with a 0.028ha protection zone. Only ONE source found (the Wikipedia/register article); no second independent source, no news coverage, no Tree of the Year title, no named legend turned up. It is not Lithuania's record lime either: that is the already-published Braziūkai Mother Linden (brz_001) at 8.4m girth. Does not clear the 2026-08-31 single-tree bar (would somebody travel specifically for this one) on current evidence. Age not documented."
+      "reason": "Verified and delivered as deg_003 (Bagrenas Linden) in data/research/degsne-verified.json, joining Degsne (~12-17km by road, honest car-only day-trip pairing)."
     },
     {
       "name": "Degsnė larch",
@@ -60,10 +60,10 @@
         "https://commons.wikimedia.org/wiki/File:Gaur%C4%97,_%C4%85%C5%BEuolas.JPG",
         "https://commons.wikimedia.org/wiki/File:Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "reason": "Not researched in depth this pass beyond a distance check: about 14km from the Agluona/Vezalaukis cluster (vez_001/vez_002), too far to join on foot though within an easy day's drive of the same district (Tauragė). Remains a standalone candidate for a future pass."
+      "reason": "Verified and delivered as pgm_005 (Gaure Oak) in data/research/pagramantis-regional-park-verified.json, joining Pagramantis Regional Park (~19km by road, separate car stop)."
     },
     {
       "name": "Karpio tuopa, Paštuva",
@@ -405,15 +405,6 @@
       "reason": "Verified and delivered as pgm_004 (The Andriejaiciai Oak), part of the Pagramantis Regional Park cluster. Girth 5.0-5.1m, height 26-26.5m, over 300 years by local estimate, strong legend (a still-larger predecessor oak on the same spot, and a Grand Duke Vytautas the Great resting-place tradition), old crosses beneath marking a former small cemetery. Two independent sources (lt.wikipedia, pamatykLietuvoje.lt) agree closely."
     },
     {
-      "name": "Bubiai oak avenue",
-      "lat": 55.851199,
-      "lng": 23.129307,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Zubovo_%C4%85%C5%BEuol%C5%B3_al%C4%97ja.JPG"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "Bukta oak",
       "lat": 54.444638,
       "lng": 23.436847,
@@ -449,7 +440,8 @@
       ],
       "status": "lead",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Fails the single-famous-tree destination test (CLAUDE.md 2026-08-31): only 16 Wikipedia reads/month, stands alone 47km from any other tree or place we map, near an oil terminal reached via a farm track through a cultivated field. Health is also a concern: as of 2022 the tree had lost many branches, much of the crown was not leafing, the trunk shows lightning-strike marks and shedding bark (lt.wikipedia, citing STVK data from 2012). Not confirmed dead, but no more recent health evidence found within this pass's time-box, so publishing it as its own place is not honest today. Two sources exist (lt.wikipedia, STVK register S0310505010192) if the destination-test answer or health picture changes."
     },
     {
       "name": "Daukša oak, Betygala",
@@ -460,9 +452,10 @@
         "https://commons.wikimedia.org/wiki/File:Betygalos_%C4%85%C5%BEuolas.JPG",
         "https://commons.wikimedia.org/wiki/File:M._Dauk%C5%A1os_%C4%85%C5%BEuolas,_Betygala.JPG"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified and delivered as pgn_002 (Mikalojaus Dauksa Oak, Betygala) in data/research/plauginiai-forest-verified.json, joining Plauginiai Forest (~19-20km by road, separate car stop)."
     },
     {
       "name": "Draugelių Oak",
@@ -499,9 +492,10 @@
         "https://commons.wikimedia.org/wiki/File:%C4%84%C5%BEuolas_Gali%C5%ABnas,_kamienas.JPG",
         "https://commons.wikimedia.org/wiki/File:%C4%84%C5%BEuolas_Gali%C5%ABnas.JPG"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified and delivered as vni_002 (Galiunas Oak) in data/research/vainiai-verified.json, joining Vainiai (~26km by road, the closest published place though not a walkable pairing)."
     },
     {
       "name": "Gastilonys oak",
@@ -624,9 +618,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Kiaunupio_%C4%85%C5%BEuolas.jpg"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified and delivered as kun_009 (Kiaunupis Oak) in data/research/kaunas-verified.json, joining Kaunas (~18km by road) as part of a small Sitkunai/Kiaunupis forest oak cluster."
     },
     {
       "name": "Kybarčiai oak",
@@ -740,9 +735,10 @@
         "https://commons.wikimedia.org/wiki/File:Nev%C4%97%C5%BEio_dvilypis_%C4%85%C5%BEuolas._I%C5%A1_ryt%C5%B3.JPG",
         "https://commons.wikimedia.org/wiki/File:Nev%C4%97%C5%BEio_dvilypis_%C4%85%C5%BEuolas._Prie_pagrindo.JPG"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified and delivered as vni_003 (Nevezio Dvilypis Oak) in data/research/vainiai-verified.json, joining Vainiai (~28km by road, the closest published place though not a walkable pairing)."
     },
     {
       "name": "Oak of Hermanas Zudermanas, Žalgiriai",
@@ -780,9 +776,10 @@
         "https://commons.wikimedia.org/wiki/File:Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG",
         "https://commons.wikimedia.org/wiki/File:Pagryni%C5%B3_%C4%85%C5%BEuolas_2.JPG"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified and delivered as zal_002 (Pagryniai Oak) in data/research/zalgiriai-verified.json, joining Zalgiriai (~4.3km, though the tree itself stands on the edge of Silute)."
     },
     {
       "name": "Perkūnas Oak",
@@ -869,9 +866,10 @@
         "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABnai,_I_%C4%85%C5%BEuolas.jpg",
         "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABn%C5%B3_mi%C5%A1kas,_I_%C4%85%C5%BEuolas.jpg"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified and delivered as kun_007 (Sitkunai Forest Oak I) in data/research/kaunas-verified.json, joining Kaunas (~18km by road) as part of a small Sitkunai/Kiaunupis forest oak cluster."
     },
     {
       "name": "Sitkūnai forest II oak",
@@ -881,9 +879,10 @@
         "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABn%C5%B3_mi%C5%A1kas,_Antrasis_%C4%85%C5%BEuolas,_kamienas.jpg",
         "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABn%C5%B3_mi%C5%A1kas,_Antrasis_%C4%85%C5%BEuolas,_laja.jpg"
       ],
-      "status": "lead",
+      "status": "done",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified and delivered as kun_008 (Sitkunai Forest Oak II) in data/research/kaunas-verified.json, joining Kaunas (~18km by road), 160m from Sitkunai Forest Oak I."
     },
     {
       "name": "Skaborai I oak",
@@ -898,17 +897,6 @@
       "species": "Common Oak (Quercus robur)",
       "species_basis": "confirmed by lt.wikipedia (paprastasis ąžuolas)",
       "hold_reason": "Checked 2026-09-06. Two sources confirm the tree itself: lt.wikipedia (Skaborų I ąžuolas) and a Rietavas municipal tourism profile (veik.rietave.lt, archived 2021) agree on girth 7.30 m at 1.3 m height, height 16.2 m, species Quercus robur, declared a state natural monument in 2016, with a 2016 arborist repair of the damaged trunk and broken crown recorded by the contractor (arbovitairko.lt). Age is explicitly undisclosed ('amžius - neskelbiama'). Coordinates confirmed exactly (55.691312, 22.124553 per Wikipedia's infobox, matching the given pin). Held rather than shipped on ACCESS, not on evidence: both lt.wikipedia ('stovi kaimo vidury, šalia sodybos', stands in the middle of the village, next to a homestead) and the municipal profile (address given as Skaborų k., Skaborų g. 6) describe it as standing beside a specific homestead, and one Commons photo caption reads 'the tree from the homestead's side, from the south', implying the vantage point is the private yard itself. An Overpass/OSM check of the coordinate confirms a mapped landuse=residential polygon and a building at Skaborai house no. 7 immediately surrounding the tree's exact pin, consistent with private curtilage rather than roadside public ground, though the tree also stands only about 50 m from public road 3212 per Wikipedia, so a road-visible case is not ruled out. No source states plainly that a visitor may walk up to it without the household's leave, so this fails the 'can they get in without asking anyone's permission' test on current evidence; a future pass could resolve it with a street-level photo or a direct access statement from the municipality."
-    },
-    {
-      "name": "Smalininkai oaks avenue",
-      "lat": 55.071926,
-      "lng": 22.563033,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Smalininkai_%C4%85%C5%BEuol%C5%B3_al%C4%97ja_(43074587704).jpg",
-        "https://commons.wikimedia.org/wiki/File:Smalininku_azuolu_aleja_2010.jpg",
-        "https://commons.wikimedia.org/wiki/File:Smalinink%C5%B3_%C4%85%C5%BEuol%C5%B3_al%C4%97ja.JPG"
-      ],
-      "status": "lead"
     },
     {
       "name": "Stakai oak",
@@ -1182,6 +1170,28 @@
       "status": "done",
       "species": "Pedunculate Oak (Quercus robur)",
       "reason": "Found this pass alongside Aukštasis ąžuolas. Verified and delivered as plg_004 (Laikrodinė Oak), part of the Plungė cluster. Flagged as declining/ailing per lt.wikipedia but confirmed alive via a 2026-dated Commons photo."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Bubiai oak avenue",
+      "lat": 55.851199,
+      "lng": 23.129307,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Zubovo_%C4%85%C5%BEuol%C5%B3_al%C4%97ja.JPG"
+      ],
+      "reason": "Not a single collectible point. The coordinate matches Grafo D. Zubovo azuolu aleja (Count Dmitrijus Zubovas's oak avenue) in Kurtuvenai Regional Park near Bubiai, a decorative avenue planted around 1924 (~80 years old as of a 2004 municipal designation), average girth only 1.35m; a second, separate 170m avenue of 114 oaks (Bubiu azuolu aleja) also stands nearby, next to a school and kindergarten. Neither is a single tree with one obvious place to stand, and the younger Zubovo avenue also fails the genuinely-old bar. Blocked per CLAUDE.md's collectible-point rule."
+    },
+    {
+      "name": "Smalininkai oaks avenue",
+      "lat": 55.071926,
+      "lng": 22.563033,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Smalininkai_%C4%85%C5%BEuol%C5%B3_al%C4%97ja_(43074587704).jpg",
+        "https://commons.wikimedia.org/wiki/File:Smalininku_azuolu_aleja_2010.jpg",
+        "https://commons.wikimedia.org/wiki/File:Smalinink%C5%B3_%C4%85%C5%BEuol%C5%B3_al%C4%97ja.JPG"
+      ],
+      "reason": "Not a single collectible point. This is the Vidkiemis/Smalininkai oak avenue (Vidkiemio azuolu aleja), a 1.3km avenue of 186 oaks along the main road through Smalininkai, planted roughly late 18th to late 19th century, described by lt.wikipedia as the only avenue of its kind in Lithuania. No single specimen is named or distinguished from the rest; there is nothing to stand at. Blocked per CLAUDE.md's collectible-point rule (an avenue or whole wood is blocked, reason recorded), not because of access or evidence."
     }
   ]
 }
