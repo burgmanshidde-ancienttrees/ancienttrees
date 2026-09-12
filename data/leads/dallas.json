@@ -5,44 +5,29 @@
       "name": "Blackjack Oak, City of Dallas park (Texas Big Tree Registry TreeID 6436)",
       "species": "Blackjack Oak (Quercus marilandica)",
       "reason": "County-champion-caliber blackjack oak from the Texas Big Tree Registry ArcGIS layer (circumference 121 in / 307 cm, height 61 ft, spread 81 ft, measured 2025-09-03, org City of Dallas, public). Coordinates 32.76527778, -96.75583333 but no named park identified this pass (reverse search pointed vaguely at the Oak Cliff / Lake Cliff / South Dallas area, no confident match). No second independent source found. Needs: which park, and a corroborating source, before it can verify. OWNER per the registry: City of Dallas. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
-      "owner": "City of Dallas"
+      "owner": "City of Dallas",
+      "deepen_pass_2026-09-12": "Re-chased. The coordinate reverse-geocodes to 3915 Roberts Avenue, 75215, a residential address, with Oakland Cemetery and Leo V. Chaney Park both within about 250m. Oakland Cemetery's own history page confirms blackjack oak was among the original tree cover on that ground, which supports a cemetery placement in principle but names no specific champion specimen. No source ties the registry point to either the cemetery or the park by name. Per the file's own 2026-08-20 note, resolving this by picking the nearer park is the bridge-claim error and is refused. Still unplaceable; needs a photo, a city forestry record, or someone standing there."
     },
     {
       "name": "Oriental Arborvitae, Cox Cemetery (Texas Big Tree Registry TreeID 58)",
       "species": "Oriental Arborvitae (Thuja orientalis / Platycladus orientalis)",
       "reason": "Texas STATE CHAMPION per the registry (circumference 85 in / 216 cm, height 42 ft, measured 2002-05-15) at Cox Cemetery near White Rock Lake (32.84135, -96.73135), a public pioneer cemetery (400+ marked graves, oldest stone 1848). Register is the only source found; a web search turned up plenty on the cemetery itself but nothing on this specific tree. Also a judgement call: an ornamental non-native cemetery arborvitae may read as a curiosity rather than an epic, walk-worthy tree even as a state champion. Needs a second source and a look at whether it clears the remarkable bar. OWNER per the registry: Cox Cemetery. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
-      "owner": "Cox Cemetery"
+      "owner": "Cox Cemetery",
+      "deepen_pass_2026-09-12": "Searched again specifically for the tree (not just the cemetery). Still nothing beyond the registry: plenty on Cox Cemetery's pioneer graves and its historical marker, nothing naming this arborvitae. The measurement is also 24 years stale (2002) with no re-check on file. Stays a lead; the champion-species designation alone is not the two-source bar."
     },
     {
       "name": "Bur Oak, City of Coppell (Texas Big Tree Registry TreeID 915)",
       "species": "Bur Oak (Quercus macrocarpa)",
       "reason": "Large bur oak (circumference 179 in / 455 cm, height 77 ft) at 32.98411111, -96.98019444, organization City of Coppell PARD. Coppell is a separate suburb roughly 24 km northwest of downtown Dallas, likely outside the ~30 minute day-trip boundary for a Dallas city page; would need its own city entry or a transit-time check before use here. OWNER per the registry: City of Coppell PARD. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
-      "owner": "City of Coppell PARD"
+      "owner": "City of Coppell PARD",
+      "deepen_pass_2026-09-12": "Confirmed out of boundary rather than force-fit. Reverse-geocodes to Waterview Drive, Vistas of Coppell, Coppell, TX 75019; measured distance from central Dallas is 28.7 km, not 24. That is a distinct incorporated suburb with its own identity, the same category as Grapevine below, not a Dallas day trip. Left as a lead for a future Coppell page rather than pulled into this city."
     },
     {
       "name": "Chalk Maple, Dallas Arboretum (Texas Big Tree Registry TreeID 1253)",
       "species": "Chalk Maple (Acer leucoderme)",
       "reason": "Small state-registry entry (circumference 27 in / 69 cm) inside the Dallas Arboretum grounds. Modest size, not obviously remarkable on its own; recorded here as a pointer in case the Arboretum is researched in depth later (paid entry, per the brief that is allowed if access says so). OWNER per the registry: Dallas Arboretum. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
-      "owner": "Dallas Arboretum"
-    },
-    {
-      "name": "Storytelling Place Comanche Marker Tree, Great Trinity Forest",
-      "species": "Texas Red Oak (Quercus texana / buckleyi)",
-      "reason": "TxHTC-documented Comanche marker tree on white limestone in the Great Trinity Forest's White Rock Heritage District, over 150 years old per TxHTC (data gathered 2002-08-06, https://txhtc.org/trees/story-telling-place-comanche-marker-tree/). Original trunk is gone; what stands today is regrowth from the old stump, so it may not read as visually a single epic tree. No precise address or coordinates given, no independent second source found, and no confirmation the stump/regrowth is still alive and standing today (source is 23 years old). Needs a current-status check, a second source and a real location before it could verify."
-    },
-    {
-      "name": "Quercus stellata, Texas Big Tree Registry TreeID 2356",
-      "species": "Quercus stellata",
-      "reason": "State champion or co-champion. Circumference 166 in (4.22 m), spread 49.0 ft, condition code 2, county tag Dallas, 8.5 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: W.W. Glover Cemetery. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
-      "location": {
-        "latitude": 32.77289983,
-        "longitude": -96.70589983
-      },
-      "sources": [
-        "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-      ],
-      "girth_cm": 422,
-      "owner": "W.W. Glover Cemetery"
+      "owner": "Dallas Arboretum",
+      "deepen_pass_2026-09-12": "Checked the species' own ceiling before judging it small: chalk maple is naturally a 20-30 ft understory tree with 2-3 slender trunks (Chicago Botanic Garden, Dallas Plant Trials), so 27 inches is not tiny for its kind the way it would be for an oak. Even so, nothing found names this specific specimen as a standout, points visitors to it, or gives it a story; it is a state-registry line item inside a large paid-entry garden with hundreds of accessioned trees, not a collectible point on its own. Stays a lead."
     },
     {
       "name": "Fraxinus pennsylvanica, Texas Big Tree Registry TreeID 7433",
@@ -56,7 +41,8 @@
         "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
       ],
       "girth_cm": 330,
-      "owner": "Dallas County"
+      "owner": "Dallas County",
+      "deepen_pass_2026-09-12": "Reverse-geocoded: the coordinate sits on Nokomis Road, Lancaster, TX 75146, a separate incorporated city south of Dallas within Dallas County, 22.4 km from centre. Same category as Coppell above: a distinct town, not a Dallas day trip, whatever the county tag says. No second source found either. Left as a lead for a possible future Lancaster entry, not pulled into Dallas."
     },
     {
       "name": "Salix nigra, Texas Big Tree Registry TreeID 1134",
@@ -70,7 +56,8 @@
         "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
       ],
       "girth_cm": 655,
-      "owner": "City of Fort Worth"
+      "owner": "City of Fort Worth",
+      "deepen_pass_2026-09-12": "Confirmed out of scope for this Dallas pass rather than re-verified: Tarrant county tag, City of Fort Worth owner, 27.3 km out. Fort Worth is its own city with its own eventual page. Not force-fit here."
     },
     {
       "name": "Fraxinus pennsylvanica, Texas Big Tree Registry TreeID 1214",
@@ -84,7 +71,8 @@
         "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
       ],
       "girth_cm": 439,
-      "owner": "City of Grapevine"
+      "owner": "City of Grapevine",
+      "deepen_pass_2026-09-12": "Confirmed out of scope for this Dallas pass rather than re-verified: Tarrant county tag, City of Grapevine owner, 31.7 km out, well past the day-trip boundary. Grapevine is its own town, closer to Fort Worth/DFW Airport than to Dallas. Not force-fit here; a future Grapevine or Fort Worth pass should regroup this with the other three Grapevine entries below."
     },
     {
       "name": "Quercus shumardii, Texas Big Tree Registry TreeID 221",
@@ -98,7 +86,8 @@
         "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
       ],
       "girth_cm": 427,
-      "owner": "City of Grapevine"
+      "owner": "City of Grapevine",
+      "deepen_pass_2026-09-12": "Confirmed out of scope for this Dallas pass rather than re-verified: Tarrant county tag, City of Grapevine owner, 31.8 km out. Same Grapevine cluster as the other three; see note on TreeID 1214 above."
     },
     {
       "name": "Acer negundo, Texas Big Tree Registry TreeID 910",
@@ -112,7 +101,8 @@
         "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
       ],
       "girth_cm": 272,
-      "owner": "City of Grapevine"
+      "owner": "City of Grapevine",
+      "deepen_pass_2026-09-12": "Confirmed out of scope for this Dallas pass rather than re-verified: Tarrant county tag, City of Grapevine owner, 32.0 km out, the furthest of the four Tarrant/Grapevine entries. See note on TreeID 1214 above; all four sit close enough together (Grapevine x3, Fort Worth x1) that a future Fort Worth/Grapevine pass should treat them as one cluster."
     },
     {
       "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 145)",
@@ -123,7 +113,8 @@
       "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.7 km from the centre of Dallas. Condition per the registry: 2. Measured May 2010. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
       "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
       "girth_cm": 86,
-      "needs_verification": true
+      "needs_verification": true,
+      "deepen_pass_2026-09-12": "Reverse-geocoded to Newton Avenue, Dallas, TX 75219 (Oak Lawn, near Turtle Creek), an ordinary residential street with no park found nearby that matches. Most likely a private yard tree; no source names a public site. Also a modest yaupon holly circumference (86 cm, about a foot through), well short of remarkable even for a species that rarely grows large. Measurement itself is 16 years stale. Stays a lead; does not clear either the access or the remarkable bar on what is available."
     },
     {
       "name": "Eysenhardtia texana (Texas Big Tree Registry TreeID 2361)",
@@ -134,7 +125,8 @@
       "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 30.0 km from the centre of Dallas. Condition per the registry: 2. Measured October 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
       "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
       "girth_cm": 51,
-      "needs_verification": true
+      "needs_verification": true,
+      "deepen_pass_2026-09-12": "Reverse-geocoded to Picato Drive, Plano, TX 75074, Collin County, a separate incorporated city 30.0 km from central Dallas, not a Dallas day trip. Shares its exact coordinate with the Ungnadia speciosa entry below (TreeID 2336), which suggests both champions were measured at the same private collection or nursery rather than a public park; nothing found names a site. Also a small specimen (51 cm circumference) of a species that is naturally shrub-sized. Left as a lead, out of scope here."
     },
     {
       "name": "Ungnadia speciosa (Texas Big Tree Registry TreeID 2336)",
@@ -145,7 +137,8 @@
       "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 30.0 km from the centre of Dallas. Condition per the registry: 2. Measured August 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
       "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
       "girth_cm": 66,
-      "needs_verification": true
+      "needs_verification": true,
+      "deepen_pass_2026-09-12": "Same coordinate as the Eysenhardtia texana entry above (TreeID 2361): Picato Drive, Plano, TX 75074, Collin County, 30.0 km from central Dallas. Both champions almost certainly sit in the same private collection or nursery plot rather than a public park; not a Dallas tree and not shown to be public. Left as a lead, out of scope here."
     }
   ],
   "blocked": [
@@ -157,7 +150,7 @@
     {
       "name": "Gateway Park Comanche Marker Tree",
       "species": "Pecan (Carya illinoinensis)",
-      "reason": "DEAD. Per TxHTC (https://txhtc.org/trees/gateway-park-comanche-marker-tree/), officially recognized by the Comanche Tribal Government in 1997, but the tree was already in poor health from surrounding development and was lost in the Memorial Day storm of 25 May 1998. Page itself is headed 'Deceased 1998'."
+      "reason": "DEAD. Per TxHTC (https://txhtc.org/trees/gateway-park-comanche-marker-tree/), officially recognized by the Comanche Tribal Government in 1997, but the tree was already in poor health from surrounding development and was lost in the Memorial Day storm of 25 May 1998. Page itself is headed 'Deceased 1998'. Confirmed again 2026-09-12 while researching the separate Storytelling Place tree (Texas Parks & Wildlife magazine, Nov 2006, names this Gateway Park pecan specifically as the one destroyed in the storm, distinct from the Storytelling Place site in Devon-Anderson Park). Never ship."
     },
     {
       "name": "Bird's Fort Trail Comanche Marker Tree",
@@ -300,6 +293,10 @@
     {
       "date": "2026-08-20",
       "note": "The blackjack oak (TreeID 6436, 307 cm, City of Dallas, measured September 2025) was chased again and is still not placeable. Reverse geocoding puts 32.76528,-96.75583 at 3915 Roberts Avenue, 75215, a house number on a residential street, with Oakland Cemetery and Leo V. Cheney Park both within 250 metres. Either the coordinate carries about a hundred metres of error and the tree is in one of those, or it stands on a residential lot the city happens to own. Do NOT resolve this by choosing the nearer park: 'there is a park 200 metres away, therefore the tree is in the park' is the bridge claim that put Baarn's pin sixty metres from the tree it described. What settles it is a photograph, a city park tree inventory, or somebody standing there."
+    },
+    {
+      "date": "2026-09-12",
+      "note": "Deepen pass on all 14 open leads plus the four Comanche marker-tree candidates. One verified: the Storytelling Place Red Oak at Devon-Anderson Park (Great Trinity Forest / White Rock Heritage District), a sacred Comanche storytelling site with an ancient red oak regrowing from an old stump, corroborated by TxHTC and an independent trail blog; delivered to data/research/dallas-verified.json as dal_009, flagged (no recent dated sighting). Removed from this file's leads: that entry (now verified) and the Quercus stellata TreeID 2356 entry, which was a stale duplicate of the already-published dal_003 (W.W. Glover Cemetery Post Oak, same coordinate and girth). Four leads (Salix nigra 1134, Fraxinus pennsylvanica 1214, Quercus shumardii 221, Acer negundo 910) confirmed as Tarrant County / Fort Worth-Grapevine trees, 27-32 km out: correctly excluded from Dallas, not re-litigated. Two more leads confirmed out of Dallas's boundary by reverse geocoding: the Coppell bur oak (TreeID 915, 28.7 km, in Coppell) and a Fraxinus pennsylvanica (TreeID 7433, 22.4 km, in Lancaster). Two small-species leads (Eysenhardtia texana TreeID 2361, Ungnadia speciosa TreeID 2336) turned out to share one coordinate in Plano, Collin County, 30.0 km out, likely one private collection: also out of scope. The Ilex vomitoria lead (TreeID 145) reverse-geocodes to an ordinary residential street in Oak Lawn with no park match and a modest girth; the Cox Cemetery Oriental Arborvitae (TreeID 58) and Dallas Arboretum Chalk Maple (TreeID 1253) still lack any second source or particular reason to single them out. All four remaining Comanche marker-tree candidates in Dallas proper are now accounted for: three confirmed dead (already blocked) and the fourth (Storytelling Place) verified alive and shipped. No candidate on this list needs Dallas taken from zero: the register-lead route is exhausted for now, and any further Dallas growth should come from a from-zero web pass (city parks, churchyards, cemeteries not yet searched) rather than more registry leads, since the registry's Dallas-area entries are now all resolved one way or another."
     }
   ]
 }
