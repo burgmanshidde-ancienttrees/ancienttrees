@@ -32,16 +32,17 @@
       "id": "mtl_001",
       "name": "The McGill Law Ginkgo",
       "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "roughly 120 years",
-      "age_min": 100,
-      "age_max": 140,
+      "age_estimate": "roughly 134 years",
+      "age_min": 120,
+      "age_max": 145,
+      "girth_cm": 386,
       "location": {
         "address": "McGill University Faculty of Law grounds, corner of Peel Street and Doctor Penfield Avenue, Montreal",
         "latitude": 45.5048,
         "longitude": -73.5776,
         "neighbourhood": "Downtown / McGill campus"
       },
-      "story": "Asked to name the most remarkable tree in Montreal, a botanist who has spent twenty-five years looking for them picked this one, standing on a lawn beside the McGill law faculty.\n\nSuzanne Hardy's case for it is partly the tree and partly who put it there. She believes it is likely the first ginkgo of its kind planted in Montreal, and that it went in about 120 years ago at the hands of the Olmsted family. Frederick Law Olmsted laid out Mont-Royal Park, the hill this ginkgo sits at the foot of, so the tree and the mountain above it come from the same drawing office. Six of the trees on this page are up on that hill. This one waits at the bottom, on the same McGill campus as three more.\n\nThe age is her estimate rather than a measurement. Nobody has published a girth, there is no plaque, and the pin marks the corner of Peel Street and Doctor Penfield Avenue rather than the trunk itself; the Chancellor Day Hall grounds are open to walk through and it is not a large lawn.\n\nGinkgos are the last surviving species of an order that otherwise ended with the dinosaurs, and they keep the habits. This one holds its leaves green into late autumn, turns them a hard uniform yellow, then drops very nearly the whole crown inside a couple of days. Arrive in the wrong week and you get a green tree or a bare one.",
+      "story": "Asked to name the most remarkable tree in Montreal, a botanist who has spent twenty-five years looking for them picked this one, on a lawn beside the McGill law faculty.\n\nSuzanne Hardy believes it is likely the first ginkgo of its kind planted in Montreal, at the hands of the Olmsted family. Frederick Law Olmsted laid out Mont-Royal Park, the hill this ginkgo sits at the foot of, so tree and mountain share a designer. Six of the trees on this page are up on that hill; this one waits at the bottom, on the same McGill campus as three more.\n\nThe city's own heritage register for the mountain independently names the same tree: said to have been planted in 1892, the year Chancellor Day Hall itself, then a private house, went up beside it, putting the ginkgo at roughly 134 years rather than the round hundred-twenty a botanist once guessed. The register also measures what nobody had, a trunk 123 centimetres across, about 386 around. The pin marks the corner of Peel Street and Doctor Penfield Avenue, not the trunk; the grounds are open to walk through and it is not a large lawn.\n\nGinkgos are the last survivors of an order that otherwise ended with the dinosaurs, and they keep the habits: green leaves held into late autumn, a hard uniform yellow, then nearly the whole crown dropped inside a couple of days. Arrive in the wrong week and you get a green tree or a bare one.",
       "best_time": {
         "months": [
           10,
@@ -52,8 +53,10 @@
       },
       "verified_sources": [
         "https://www.mcgill.ca/newsroom/fr/channels/news/la-recherche-de-larbre-le-plus-remarquable-de-montreal-268008",
-        "https://ici.radio-canada.ca/ohdio/premiere/emissions/gravel-le-matin/segments/reportage/22556/arbres-montreal-ginkgo-biloba"
+        "https://ici.radio-canada.ca/ohdio/premiere/emissions/gravel-le-matin/segments/reportage/22556/arbres-montreal-ginkgo-biloba",
+        "https://montroyal.montreal.ca/arbre-remarquable/arbre-aux-quarante-ecus-0"
       ],
+      "verify_notes": "2026-09-12: the Ville de Montreal heritage register independently documents this same tree ('en facade de l'ancienne maison de James Ross, aujourd'hui Chancellor Day Hall') with a planting year (1892, worded as 'aurait ete plante', i.e. attributed rather than certain) and a trunk diameter of 123 cm. Added as a second source, tightened age_estimate and added girth_cm; kept the range wide because the planting year is itself reported speech, not a plaque or a ring count.",
       "access": "Free, on open McGill University campus grounds; the law faculty's outdoor grounds are publicly walkable",
       "transport": "McGill or Peel metro station, roughly 10-15 minute walk uphill",
       "photo": {
