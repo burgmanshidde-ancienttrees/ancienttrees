@@ -113,7 +113,14 @@ def main():
                     t["height_m"] = best[1]
                     note = ("Height %s m from the %s register, matched on our own pin "
                             "(%d m away)." % (best[1], best[2].replace(".json", ""), round(best[0])))
-                    t["verify_notes"] = ((t.get("verify_notes") + " ") if t.get("verify_notes") else "") + note
+                    # A tree can carry this exact sentence from an earlier run
+                    # whose height_m write did not survive (a later hand-edit
+                    # or merge overwrote the tree object without it), which
+                    # re-matches here and used to append the same sentence a
+                    # second time (found on Caserta's cas_016, 2026-09-12).
+                    existing = t.get("verify_notes") or ""
+                    if note not in existing:
+                        t["verify_notes"] = (existing + " " if existing else "") + note
                     touched = True
         if touched and not report:
             json.dump(doc, open(path, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
