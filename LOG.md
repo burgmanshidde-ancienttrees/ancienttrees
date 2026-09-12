@@ -44,11 +44,27 @@ hero's own `height: 280px; object-fit: cover` out-specifies `.pv-frame img` and
 the dialog sits inside that figure. No gate could see it, since the dialog
 exists, the image loads and the link works. Fixed; the viewer fills the screen.
 
-FOR HIDDE, two things. The app half is written and NOT built: there is no Xcode
-on this machine, so ios.yml is what will judge it. And the close-up went live on
-your word that it is the same tree: the upload had its GPS stripped in transit,
-so I could not settle it from the file, and the note on the photograph says so.
-If it is a different trunk it is a one-line edit.
+**The app half did not compile, and ios.yml is what found it.** Two Swift traps,
+neither of them logic: a computed property named `set`, which opens a property
+setter and made the parser fail thirty lines from anything that looked wrong;
+and a ForEach destructuring a tuple parameter, which has not compiled since
+Swift 3. The first cost a CI round, the second was caught by re-reading the
+diff rather than by spending a second one. Both fixed, and
+AncientTreesTests/PhotoSetTests.swift now covers the five states a feed can be
+in, including a catalogue written before the field existed, which is the one
+that would empty the map on every phone that has ever synced.
+
+Green on the second run: build, unit and UI tests, the permissions-refused
+walk, and the layout gate on both phones.
+
+FOR HIDDE, three things. **I have not SEEN the app's screens**, only their
+measurements: the artifact download needs a token this sandbox does not have,
+so the pictures are in the run's `appsweep` artifact for you rather than
+checked by me. **The close-up went live on your word** that it is the same
+tree: the upload had its GPS stripped in transit, so I could not settle it from
+the file, and the note on the photograph says so. If it is a different trunk it
+is a one-line edit. And **this is on a branch**: reaching the live site and
+your phone needs a merge to main, which is yours to call.
 
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
