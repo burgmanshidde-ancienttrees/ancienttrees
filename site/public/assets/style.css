@@ -1549,6 +1549,23 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .oauth-btn .oauth-mark { flex: 0 0 18px; }
 .oauth-btn > span { flex: 1 1 auto; text-align: center; }
 .account-page .oauth-btn { max-width: 22rem; }
+/* Apple's button, 2026-09-12. Their guidelines allow three appearances, black,
+   white and white-with-outline, and ask that the button be shown at least as
+   prominently as the other sign-in options. The site has no dark mode, so on
+   our cream ground black is the one that is both correct and the most
+   recognisable; the outlined Google button underneath is then visibly the
+   lesser of the two, which is the rule satisfied rather than dodged.
+
+   The geometry is deliberately the Google button's, inherited whole: same
+   height, radius, type size and mark column. Apple draws its own control in
+   the app and Google's spec differs from Apple's, which is the disagreement
+   CONVENTIONS.md records under "Two sign-in buttons stacked". On the web
+   NEITHER provider ships us a control, so both are ours to draw and the
+   honest resolution is to make them agree with each other. The mark takes
+   currentColor so the logo follows the label rather than being a second
+   value to keep in step. */
+.oauth-apple { background: #000; color: #fff; border-color: #000; }
+.oauth-apple:hover { background: #1a1a1a; border-color: #1a1a1a; }
 /* The dialog centres its own text, the account page does not, so the separator
    between the two ways in was hanging off to the left under a full-width
    button. */

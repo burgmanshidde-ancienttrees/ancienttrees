@@ -83,6 +83,13 @@ export const SIGNIN_JS = `
   document.addEventListener('click', function(e) {
     var g = e.target.closest('#signin-google, #acct-google');
     if (g) { e.preventDefault(); window.atOAuth('google'); }
+    // Apple, 2026-09-12, through the identical redirect. The app signs in with
+    // Apple natively and a browser has no native credential to present, so the
+    // web takes the ordinary OAuth route and the only difference from Google is
+    // the word. The buttons render only where APPLE_SIGNIN is on, so this
+    // listener is dormant rather than wrong while the flag is false.
+    var a = e.target.closest('#signin-apple, #acct-apple');
+    if (a) { e.preventDefault(); window.atOAuth('apple'); }
   });
 
   var dlg = document.getElementById('signin-dialog');
