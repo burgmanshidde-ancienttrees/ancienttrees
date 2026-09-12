@@ -84,3 +84,21 @@ export const MAPLIBRE_CSS = "/assets/maplibre-gl-4.7.1.css";
 // is the same grey as the buildings around it. Regenerate with the script, do
 // not hand-edit the JSON.
 export const MAP_STYLE = "/assets/map-style.json";
+
+// The map credit, passed to every map as customAttribution rather than left to
+// the style file (2026-09-12). The style DOES carry it on its openmaptiles
+// source, and MapLibre still rendered an empty control on the city pages: the
+// source is declared by TileJSON url, and the attribution that comes back with
+// the resolved TileJSON wins over the one written in the style. Measured on the
+// deployed site: /explore showed the credit, /lisbon showed nothing at all, from
+// the same style file. customAttribution is not conditional on any of that.
+//
+// It matters more than it looks. City and tree pages render without a footer,
+// so with an empty control those pages credited OpenStreetMap nowhere and had
+// no route to /sources either. The link at the end is that route, and it is
+// where Valhalla and FOSSGIS are named.
+export const MAP_CREDIT =
+  'Map &copy; <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>, '
+  + '<a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a>, '
+  + '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
+  + ' contributors. <a href="/sources">Sources</a>';

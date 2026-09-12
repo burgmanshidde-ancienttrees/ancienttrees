@@ -17,7 +17,7 @@
 // way this file's own build-time code does above: it is the one unavoidable
 // duplicate of the haversine formula in the codebase. Keep it in step with
 // walks.ts::haversineKm and geo.py::km by hand if either changes.
-import { MAP_STYLE } from "./site-config";
+import {MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { mapScript } from "./map";
 import { kmLabel } from "./walks";
 import type { WalkMarker, Walk } from "./walks";
@@ -74,8 +74,9 @@ var map = new maplibregl.Map({
   center: [${center[1]}, ${center[0]}],
   zoom: 10.5,
   scrollZoom: true,
-  attributionControl: { compact: true }
+  attributionControl: false
 });
+map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
 map.addControl(new maplibregl.NavigationControl());
 map.addControl(new maplibregl.FullscreenControl());
 map.on('load', function() { map.resize(); });
