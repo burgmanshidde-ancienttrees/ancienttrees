@@ -1,6 +1,50 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation 3) - Confirmed the routes.yml push-race fix is genuinely blocked; shelf survey found nothing safe to dispatch, week budget too tight to gamble
+
+Rung 2 first, per `health.py`: the Walking routes workflow's 09:32 UTC
+failure (a push race, already diagnosed twice today). Rather than trust the
+earlier two attempts' claim that this token lacks `workflows` scope, tested
+it directly: applied the same retry-loop fix, committed, and pushed. GitHub
+rejected it with the exact error ("refusing to allow a GitHub App to create
+or update workflow `.github/workflows/routes.yml` without `workflows`
+permission"). Confirmed rather than assumed. Reverted locally with `git
+revert` (net diff zero) since a hard reset was refused by this session's
+permissions; nothing ever reached origin, so no push was needed to undo it.
+This is now confirmed three times today by three different attempts: the
+fix is correct and ready, and the only ways forward are Hidde applying it
+himself or granting the bot `workflows` permission, both already recorded
+as FOR HIDDE earlier today. Not re-attempting a fourth time. The iOS app's
+failure and REVIEW.md's one WARN were both already chased down and
+resolved by earlier attempts today; nothing new to add.
+
+**New coverage.** Checked every free/cheap lane first: `leads.py --ready`
+(0), `pagegaps.py` (0 missing species/country/park pages), `recognise.py
+--stuck` (0), `refill.py` (nothing to fill), `photo_gaps.py --shortlist`
+(1 hit, Breda's bre_010, already fetched and rejected by an earlier attempt
+today). All dry. Surveyed `prepare.py`'s 49-city verify shelf against
+`city_queue.py --next` (rank, current/target) looking for a dispatchable
+batch: Milan, Brisbane, Alicante, Sintra and Taormina are already
+confirmed-exhausted dead ends per earlier passes today. Spot-checked two
+more with `passcheck.py --brief` (Cagliari, rank 74, register 15; Braga,
+rank 223, register 8, both mid-sized and not yet flagged exhausted):
+nearly every remaining "unmined" candidate in both came back flagged
+"within 80m of a live tree" or already recorded as a held/blocked lead
+from an earlier pass, i.e. the same italy-masaf/sardinia-alberi-monumentali
+double-registration pattern that wasted 75k tokens verifying Helmond
+duplicates earlier today. Braga's only genuinely fresh candidates (a 510-
+year, 7.6m-girth oak 12.6km out among them) number 2-3, under the six-
+candidate dispatch floor, and would need batching with a neighbouring
+Minho city to be worth a pass.
+
+Given the week sits at 4815/5000 minutes (roughly 185 left, shared with
+Hidde's own usage) and every quick win is either dry or thin, chose not to
+gamble a speculative verify dispatch that could get cut off mid-way or
+repeat today's Helmond waste. Logged the session at 0 tokens in
+`data/agent-costs.json` rather than leaving the day looking empty. No
+trees shipped this attempt; everything checked left as found.
+
 ## 2026-09-12 (continuation 2) - Finished the standing Florence claim from an earlier attempt this window
 
 Picked up exactly where an earlier attempt in this window left off (stopped
