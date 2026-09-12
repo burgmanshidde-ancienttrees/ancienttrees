@@ -331,7 +331,10 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    exists, the image loads, the link works. Measuring the rendered box is what
    found it. 0,2,2 here beats the 0,2,1 above it whatever the file order. */
 dialog.photo-view .pv-frame img {
-  width: auto; height: auto; max-width: 100%; max-height: 100%;
+  /* aspect-ratio: auto is load-bearing. The hero rule above sets 3/2 and this
+     image sits inside the same figure, so without this the viewer would letter-
+     box the very photograph it exists to show whole. */
+  width: auto; height: auto; max-width: 100%; max-height: 100%; aspect-ratio: auto;
   object-fit: contain; border-radius: 2px; }
 .pv-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem;
   min-height: 64px; padding: 0 1rem; font-size: 12px; }
@@ -363,7 +366,8 @@ dialog.photo-view .pv-frame img {
   width: 72px; height: 72px; border-radius: 4px; overflow: hidden; flex: 0 0 auto; }
 .photo-strip img,
 .tree-photo.tree-hero .photo-strip img {
-  width: 72px; height: 72px; object-fit: cover; border-radius: 4px; }
+  /* Square, and aspect-ratio: auto so the hero's 3/2 cannot reach in here. */
+  width: 72px; height: 72px; aspect-ratio: auto; object-fit: cover; border-radius: 4px; }
 /* Paging inside the viewer, which is Media Viewer's own control. Sat against
    the sides at the vertical middle of the picture, clear of the credit bar and
    clear of the close button. 44 square, the touch floor. */
@@ -1759,7 +1763,21 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
    would be a billboard rather than a hero. */
 .tree-photo.tree-hero { margin: 0 0 1.75rem; }
 .tree-photo.tree-hero .photo-open { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
-.tree-photo.tree-hero img { height: 300px; object-fit: cover; border-radius: 10px; }
+/* A RATIO, not a fixed height (2026-09-12, Hidde: "de verhouding lijkt niet
+   lekker van de bovenste foto"). It was `height: 300px`, and a fixed height
+   means the CROP changes with the viewport: measured on the Munakata camphor,
+   375 wide gave 375x280 and cut almost nothing, while 652 wide gave 652x300,
+   a 2.17:1 letterbox that threw away 39 percent of a 4:3 photograph. The crown
+   went off the top and the ground off the bottom, which on a tree is the whole
+   subject.
+
+   3:2 rather than the photograph's own shape: at 4:3 the frame fills with empty
+   sky and empty gravel and the page becomes a wall of picture, while 3:2 trims
+   exactly those two and keeps the tree whole, at 11 percent instead of 39.
+   Judged by looking at all four candidates rendered, which is the only way to
+   judge a proportion. The same ratio at every width, so the photograph somebody
+   chose is the photograph every reader sees. */
+.tree-photo.tree-hero img { aspect-ratio: 3 / 2; height: auto; object-fit: cover; border-radius: 10px; }
 .tree-photo.tree-hero figcaption { margin-top: 0.4rem; }
 .tree-noph.tree-hero { margin: 0 0 1.75rem; }
 /* The hero's full-bleed treatment applies to the drawing too, so a page with
@@ -1776,7 +1794,7 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
      why a phone never showed the fault the desktop had. */
   .tree-photo.tree-hero,
   .tree-noph.tree-hero { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); width: auto; }
-  .tree-photo.tree-hero img { border-radius: 0; height: 280px; }
+  .tree-photo.tree-hero img { border-radius: 0; }
   .tree-photo.tree-hero figcaption { padding: 0 var(--gutter); }
   /* The strip rides inside the full-bleed figure, so it needs the page's
      gutter back. Padding rather than margin, so the shelf still scrolls out
