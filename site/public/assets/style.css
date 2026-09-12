@@ -1853,8 +1853,15 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
    tree's name: the place, a dot, and the vote. Light on purpose, so it reads as
    part of the line rather than a button parked on it, while the hit area stays
    44 points, which is Apple's floor and ours. */
-.tree-place-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem; margin: 0; }
-.tree-place-row .tree-place { margin: 0; }
+/* INLINE FLOW, not a flex row (corrected 2026-09-12). As a flex row the dot
+   and the thumb are their own items, so the moment the place is long enough to
+   wrap, which it is on most translated pages, they drop onto a line of their
+   own and the page shows a stray dot and a floating thumb. Inline they simply
+   follow the last word, which is what the app draws and what the row is for. */
+.tree-place-row { display: block; margin: 0; }
+.tree-place-row .tree-place { display: inline; margin: 0; }
+.tree-place-row .tree-place-dot { margin: 0 0.15rem; }
+.tree-place-row .worthit-inline { vertical-align: middle; }
 .tree-place-dot { color: var(--ink-light); }
 .worthit.worthit-inline { display: inline-flex; flex-direction: row; margin: 0; gap: 0; }
 .worthit-inline .worthit-row { gap: 0; }

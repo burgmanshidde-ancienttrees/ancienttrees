@@ -37,6 +37,15 @@
 // /contribute form uses (kind 'feedback'), where Step 0b picks it up, and a
 // dead or wrong-location report gets checked the same day.
 //
+// THE VOTE RENDERS IN EVERY LANGUAGE SINCE 2026-09-12. Until then this
+// component was imported by the English tree page alone, so roughly 2,800
+// translated tree pages carried no thumb at all: the one control on the page
+// that asks the reader the only question this project really wants answered,
+// missing from every page that was not in English. The report half stays
+// English-only for now, because its chips are typed sentences rather than
+// looked-up labels, and the translated pages carry their own report links
+// instead; that is the remaining half of this gap and it is written down.
+//
 // Both halves carry the tree on their own box, because worthit-js.ts scopes
 // everything to the nearest `.worthit` and reads the tree from it; the vote
 // state is shared per tree, so the two boxes never disagree.
@@ -58,8 +67,14 @@ interface Props {
   treeName: string;
   compact?: boolean;
   part?: "vote" | "report";
+  /** The thumb's accessible name. A prop because the site publishes in seven
+   *  languages and this control had never left the English page: a screen
+   *  reader on a Japanese tree page would otherwise hear an English sentence,
+   *  and a label typed into markup is not one mistake but seven (2026-09-02). */
+  labelVote?: string;
 }
-const { treeId, city, treeName, compact = false, part } = Astro.props;
+const { treeId, city, treeName, compact = false, part,
+        labelVote = `Yes, ${treeName} was worth the visit` } = Astro.props as Props;
 const showVote = part !== "report";
 const showReport = part !== "vote";
 const cls = ["worthit", compact ? "worthit-compact" : "", part === "vote" ? "worthit-inline" : ""].filter(Boolean).join(" ");
@@ -67,7 +82,7 @@ const cls = ["worthit", compact ? "worthit-compact" : "", part === "vote" ? "wor
 <div class={cls} data-tree={treeId} data-city={city} data-name={treeName}>
   <div class="worthit-row">
     {showVote && (
-      <button type="button" class="worthit-btn" data-vote="up" aria-label={`Yes, ${treeName} was worth the visit`}>
+      <button type="button" class="worthit-btn" data-vote="up" aria-label={labelVote}>
         <svg class="thumb" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path class="thumb-hand" d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>
           <path class="thumb-cuff" d="M7 10v12"/>

@@ -186,6 +186,7 @@ export interface UIStrings {
    *  disappearing, which is what it did before this existed. */
   treeLabels: Record<string, string>;
   labelSpecies: string;
+  labelGirth: string;
   labelAge: string;
   labelLocation: string;
   labelAccess: string;
@@ -206,6 +207,8 @@ export interface UIStrings {
   sourcesLine: string;
   takeMeThere: string;
   seenIt: string;
+  worthItAsk: (name: string) => string;
+  worthItDone: (name: string) => string;
   seenItDone: string;
   nearbyTrees: string;
   somethingWrong: string;
@@ -297,6 +300,7 @@ const EN: UIStrings = {
     return `${head} in ${where}.`;
   },
   labelSpecies: "Species",
+  labelGirth: "Girth",
   labelAge: "Age estimate",
   labelLocation: "Location",
   labelAccess: "Access",
@@ -313,6 +317,8 @@ const EN: UIStrings = {
   sourcesLine: "Where the facts on this page come from.",
   takeMeThere: "Take me there",
   seenIt: "I have seen this one",
+  worthItAsk: (n) => `Yes, ${n} was worth the visit`,
+  worthItDone: (n) => `You found ${n} worth the visit. Tap to undo`,
   seenItDone: "Ticked off",
   nearbyTrees: "Nearby trees",
   somethingWrong: "Something here is wrong",
@@ -356,6 +362,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Especie",
+    labelGirth: "Perímetro",
     labelAge: "Edad estimada",
     labelLocation: "Ubicación",
     labelAccess: "Acceso",
@@ -372,6 +379,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesLine: "De dónde salen los datos de esta página.",
     takeMeThere: "Cómo llegar",
     seenIt: "Ya he visto este",
+    worthItAsk: (n) => `Sí, ${n} mereció la visita`,
+    worthItDone: (n) => `Te mereció la visita ${n}. Toca para deshacer`,
     seenItDone: "Visitado",
     nearbyTrees: "Árboles cercanos",
     somethingWrong: "Aquí hay algo mal",
@@ -459,6 +468,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Specie",
+    labelGirth: "Circonferenza",
     labelAge: "Età stimata",
     labelLocation: "Posizione",
     labelAccess: "Accesso",
@@ -475,6 +485,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesLine: "Da dove vengono i dati di questa pagina.",
     takeMeThere: "Portami lì",
     seenIt: "L'ho già visto",
+    worthItAsk: (n) => `Sì, ${n} valeva la visita`,
+    worthItDone: (n) => `Hai trovato ${n} degno della visita. Tocca per annullare`,
     seenItDone: "Visitato",
     nearbyTrees: "Alberi nei dintorni",
     somethingWrong: "Qui c'è un errore",
@@ -562,6 +574,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `${d} verderop`,
     labelSpecies: "Soort",
+    labelGirth: "Omtrek",
     labelAge: "Geschatte leeftijd",
     labelLocation: "Locatie",
     labelAccess: "Toegang",
@@ -578,6 +591,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesLine: "Waar de gegevens op deze pagina vandaan komen.",
     takeMeThere: "Breng me erheen",
     seenIt: "Deze heb ik gezien",
+    worthItAsk: (n) => `Ja, ${n} was de moeite waard`,
+    worthItDone: (n) => `Je vond ${n} de moeite waard. Tik om het terug te nemen`,
     seenItDone: "Afgevinkt",
     nearbyTrees: "Bomen in de buurt",
     somethingWrong: "Hier klopt iets niet",
@@ -665,6 +680,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `${d} entfernt`,
     labelSpecies: "Art",
+    labelGirth: "Umfang",
     labelAge: "Geschätztes Alter",
     labelLocation: "Standort",
     labelAccess: "Zugang",
@@ -681,6 +697,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesLine: "Woher die Angaben auf dieser Seite stammen.",
     takeMeThere: "Route planen",
     seenIt: "Diesen habe ich gesehen",
+    worthItAsk: (n) => `Ja, ${n} war den Besuch wert`,
+    worthItDone: (n) => `Du fandest ${n} sehenswert. Zum Zurücknehmen tippen`,
     seenItDone: "Abgehakt",
     nearbyTrees: "Bäume in der Nähe",
     somethingWrong: "Hier stimmt etwas nicht",
@@ -768,6 +786,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Espécie",
+    labelGirth: "Perímetro",
     labelAge: "Idade estimada",
     labelLocation: "Localização",
     labelAccess: "Acesso",
@@ -784,6 +803,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesLine: "De onde vêm os dados desta página.",
     takeMeThere: "Como chegar",
     seenIt: "Já vi esta",
+    worthItAsk: (n) => `Sim, ${n} valeu a visita`,
+    worthItDone: (n) => `Achaste ${n} digna da visita. Toca para desfazer`,
     seenItDone: "Visitada",
     nearbyTrees: "Árvores por perto",
     somethingWrong: "Há aqui um erro",
@@ -871,6 +892,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `\u00e0 ${d}`,
     labelSpecies: "Espèce",
+    labelGirth: "Circonférence",
     labelAge: "Âge estimé",
     labelLocation: "Emplacement",
     labelAccess: "Accès",
@@ -887,6 +909,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesLine: "D’où viennent les informations de cette page.",
     takeMeThere: "M'y emmener",
     seenIt: "Je l'ai déjà vu",
+    worthItAsk: (n) => `Oui, ${n} valait le détour`,
+    worthItDone: (n) => `Vous avez trouvé ${n} digne du détour. Touchez pour annuler`,
     seenItDone: "Vu",
     nearbyTrees: "Arbres à proximité",
     somethingWrong: "Il y a une erreur ici",
@@ -973,6 +997,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `${d}\u5148`,
     labelSpecies: "樹種",
+    labelGirth: "幹回り",
     labelAge: "推定樹齢",
     labelLocation: "場所",
     labelAccess: "見学",
@@ -989,6 +1014,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sourcesLine: "このページの情報の出どころ。",
     takeMeThere: "ここへ行く",
     seenIt: "この木は見ました",
+    worthItAsk: (n) => `はい、${n}は行く価値がありました`,
+    worthItDone: (n) => `${n}を「行く価値あり」としました。タップで取り消し`,
     seenItDone: "訪問済み",
     nearbyTrees: "近くの木",
     somethingWrong: "ここに誤りがある",

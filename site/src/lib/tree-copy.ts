@@ -265,3 +265,21 @@ export function metaForTree(tree: {
   const body = [front, tail].filter(Boolean).join(" ");
   return body ? `${opening} ${body}` : opening;
 }
+
+/** A trunk in metres, the way the app prints it (Sightings.metres + " m").
+ *
+ * The measurement is stored in centimetres because that is how registers
+ * publish it, and nobody says "a trunk of four hundred and fifty centimetres".
+ * Trailing zeroes go, so 450 reads "4.5 m" and 400 reads "4 m" rather than
+ * "4.00 m". Added 2026-09-12: 1,386 published trees carry a girth, the app has
+ * printed it on the tree page since it had one, and the website printed it
+ * nowhere at all while ranking /collections/thickest-trees on it.
+ */
+export function girthLabel(cm: unknown): string | null {
+  const n = Number(cm);
+  if (!Number.isFinite(n) || n <= 0) return null;
+  let s = (n / 100).toFixed(2);
+  while (s.endsWith("0")) s = s.slice(0, -1);
+  if (s.endsWith(".")) s = s.slice(0, -1);
+  return `${s} m`;
+}

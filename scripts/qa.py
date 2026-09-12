@@ -1519,6 +1519,66 @@ def check_tick_has_its_wiring():
     return out
 
 
+LANGS = ("es", "it", "nl", "de", "pt", "fr", "ja")
+# The question page sits at the same depth as a tree page and is a different
+# thing: an SEO answer, with no controls on it in any language, English
+# included. Kept in step with QUESTION_SLUG in site/src/lib/i18n.ts.
+QUESTION_SLUGS = {"oldest-tree", "arbol-mas-antiguo", "albero-piu-antico",
+                  "oudste-boom", "aeltester-baum", "arvore-mais-antiga",
+                  "arbre-le-plus-vieux", "saiko-rei-no-ki"}
+
+
+def check_every_tree_page_has_the_same_controls():
+    """The ratchet check from 2026-09-12, built from the same fault twice.
+
+    2026-08-14: the Spanish city page rendered hearts with no sign-in dialog.
+    2026-09-12: every translated tree page rendered a heart whose scripts were
+    imported and never put in the slot, and carried no vote control at all, so
+    roughly 2,800 pages had no thumb on them. Both are one mistake: a control
+    added to the English page and not to its translated twin, which nothing
+    could see because each page type builds its own markup.
+
+    So the rule is stated once here rather than remembered seven times. A tree
+    page is a tree page in every language, and it carries the same three things
+    a reader can do to a tree: keep it, tick it off, say it was worth the walk.
+    A control that is deliberately English-only (the report chips, which are
+    typed sentences rather than looked-up labels) is not in this list, and
+    putting one here means translating it first.
+    """
+    want = {"save-btn": "the save heart",
+            "seen-btn": "the tick",
+            "worthit-btn": "the worth-the-visit thumb"}
+    missing = {}
+    for page in sorted(DIST.rglob("*.html")):
+        rel = page.relative_to(DIST)
+        parts = rel.parts
+        if len(parts) != 3 or parts[0] not in LANGS:
+            continue
+        if rel.stem in QUESTION_SLUGS:
+            continue
+        html = page.read_text(encoding="utf-8")
+        # A redirect stub is not a page; it carries a meta refresh and nothing.
+        if "http-equiv=\"refresh\"" in html:
+            continue
+        # A real class in a real class list, compared as TOKENS. Two looser
+        # versions of this test were written first and neither bit when the
+        # check was deliberately broken: a prefix test passes on "save-btns",
+        # and \b does not help because a hyphen is already a word boundary, so
+        # "worthit-btn" matches inside "worthit-btn-DISABLED".
+        classes = set()
+        for attr in re.findall(r'class="([^"]*)"', html):
+            classes.update(attr.split())
+        for cls, what in want.items():
+            if cls not in classes:
+                missing.setdefault(what, []).append(str(rel))
+    out = []
+    for what, pages in sorted(missing.items()):
+        out.append("%d translated tree page(s) are missing %s that every English "
+                   "one carries, e.g. %s"
+                   % (len(pages), what, ", ".join(pages[:3])))
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1543,6 +1603,7 @@ def main():
     failures += check_photo_resolution()
     failures += check_save_flow_integrity()
     failures += check_tick_has_its_wiring()
+    failures += check_every_tree_page_has_the_same_controls()
     failures += check_sheet_integrity()
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()

@@ -9,17 +9,19 @@
 import Base from "../layouts/Base.astro";
 import SaveHeart from "./SaveHeart.astro";
 import SeenButton from "./SeenButton.astro";
+import WorthIt from "./WorthIt.astro";
 import SignInModal from "./SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
+import { WORTHIT_JS } from "../lib/worthit-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
 import { usablePhoto, thumbUrl } from "../lib/images";
 import PhotoFigure from "./PhotoFigure.astro";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
-import { locationIsApproximate, metaForTree } from "../lib/tree-copy";
+import { locationIsApproximate, metaForTree, girthLabel } from "../lib/tree-copy";
 import { mapHead, singlePinScript } from "../lib/map";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
 import { hasWalksPage } from "../lib/city-walks";
@@ -88,6 +90,7 @@ let ogImage = "";
 if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(thumbUrl(photo.url, 1200))}">`;
 
 const isApprox = locationIsApproximate(tree);
+const girth = girthLabel((tree as any).girth_cm);
 const graph = [
   ...SITE_SCHEMA,
   {
@@ -111,7 +114,7 @@ const sources = treeSources(tree);
 // It is the same fault the 2026-08-14 audit found on the Spanish city page,
 // and the reason TreeCard and SeenButton are components rather than markup.
 const scripts = singlePinScript(loc.latitude!, loc.longitude!)
-  + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS;
+  + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS;
 // The bare number, and a cap on the prose fallback. Same rule as the English
 // page: the label carries the unit, and an age_estimate that runs to a
 // sentence is cut at its first clause, because everything after the comma is
@@ -151,7 +154,14 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       <h1>{x.name}</h1>
       {/* The species caption is gone: it named the species a second time, a
           centimetre above the block that names it (2026-09-04). */}
-      <p class="tree-place">{[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}</p>
+      {/* The place, a dot and the thumb: the same row the English page and the
+          app both draw under a tree's name. This page had the place alone. */}
+      <div class="tree-place-row">
+        <p class="tree-place">{[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}</p>
+        <span class="tree-place-dot" aria-hidden="true">·</span>
+        <WorthIt treeId={tree.id} city={city.data.city} treeName={x.name} part="vote"
+                 labelVote={U.worthItAsk(x.name)} />
+      </div>
     </div>
     {/* The same block the English page carries, in this language. Two columns
         for the facts that are short, then the lines that need words. Every
@@ -188,6 +198,9 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
     <dl class="facts">
       <dt>{U.labelSpecies}</dt><dd>{x.species}</dd>
       <dt>{U.labelAge}</dt><dd>{x.age_estimate}</dd>
+      {/* A measurement, so it is the same on every page in every language:
+          it comes from the canonical city file, never from the overlay. */}
+      {girth && <Fragment><dt>{U.labelGirth}</dt><dd>{girth}</dd></Fragment>}
       <dt>{U.labelLocation}</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
       <dt>{U.labelAccess}</dt><dd>{x.access}</dd>
       <dt>{U.labelGettingThere}</dt><dd>{x.transport}</dd>
