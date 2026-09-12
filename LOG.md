@@ -53,12 +53,28 @@ de app gemaakt", and checking removed one of the two.
    the other side, `ancienttrees://auth-callback` having been on the list since
    2026-08-30. Asking again was this file failing at the job it exists for.
 
-**What is NOT done, plainly.** The app changes are UNCOMPILED. This container
-has no Swift toolchain and no Xcode, so Account.swift, ContentView.swift,
-SignIn.swift and Launch.swift were written and read but never built, and
-appsweep and appfit could not run. `Launch.emailSignIn` stays false. The next
-session on the Mac has a small diff to compile, sweep and then test with a real
-mail on a real phone, which is the only place the universal link can be proven.
+**The app half IS verified, and it did not need his Mac.** `ios.yml` runs on a
+macOS runner and fires on any push touching `ios/**`, so it had already built
+these commits. Run 403 on this branch: **success**. The app compiles, every
+test passes, `appfit` reports **0 findings on 68 screens across 2 phones**, and
+netcheck, the icon check and the two screen lists all pass.
+
+**It also caught a break this sandbox could not have.** Runs 393 and 399 were
+red, and both failures were mine: two UI tests ask for a button named "Email me
+a code", which this work renamed to "Email me a sign-in link" for every launch
+that does not pass -show-email-code. `main` was green and the branch turned it
+red. No amount of careful reading of the four files changed here would have
+found it, because the assertion lives in a fifth file there was no reason to
+open. The tests now ask for the name a person actually meets.
+
+**What is still NOT done, plainly, and neither part is a build.** The
+SCREENSHOTS were taken and could not be looked at from here: appsweep wrote 34
+of them and the artifact host is blocked by this sandbox's egress proxy, so the
+log's own "Now LOOK at them" went unanswered. They are on the run page for
+fourteen days. And `Launch.emailSignIn` stays false, waiting on the one thing
+no machine can do: tapping a real sign-in mail on a real phone, which is the
+only place a universal link arriving at the end of a server redirect can be
+proven.
 
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
