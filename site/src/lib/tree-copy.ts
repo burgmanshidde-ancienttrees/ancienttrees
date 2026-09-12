@@ -184,8 +184,26 @@ export function metaForTree(tree: {
     ? "" : (ageText.replace(/,/g, "").match(/\d{2,4}/) ?? [""])[0];
 
   const loc = tree.location ?? {};
-  const area = (loc.neighbourhood ?? "").split("/")[0].split(",")[0].trim()
+  const raw = (loc.neighbourhood ?? "").split("/")[0].split(",")[0].trim()
     || (loc.address ?? "").split(",")[0].trim();
+  // A NEIGHBOURHOOD THAT IS ALREADY A PHRASE, not a place name. Every
+  // metaLead in i18n.ts joins this with its own preposition ("in", "en",
+  // "en", "in", "in", "em", "a"), so an area beginning with one of ours
+  // doubled up and shipped as "A Muku Tree in On the stone perimeter wall
+  // near Omiya-gomon, Kyoto" (Hidde, 2026-09-12: "ik snap de meta d niet").
+  // 11 trees, four of them in Pisa and four in Kyoto.
+  //
+  // The tempting fix is to strip the preposition, and it is wrong: "near
+  // Piazza dei Miracoli" would become "in Piazza dei Miracoli", which puts
+  // the tree on a square it stands beside. A snippet does not get to be more
+  // precise than the record, least of all about where something is.
+  //
+  // So the area is dropped and the city carries the lead alone. It costs some
+  // specificity in the first clause and buys it straight back: the opening is
+  // 40 characters shorter, and every one of them goes to the why_go and the
+  // story behind it, which is where the reason to walk there actually lives.
+  const area = /^(on|at|in|near|beside|inside|within|next to|opposite|along|behind|outside)\b/i
+    .test(raw) ? "" : raw;
   const where = area && !area.toLowerCase().includes(cityName.toLowerCase())
     ? `${area}, ${cityName}` : cityName;
 

@@ -33,12 +33,21 @@ has been rewritten to stand without the question in front of it.
 Build clean, qa 8,582 pages, preflight 0 problems, parity clean. Looked at
 rendered at 375px and desktop.
 
-FOR HIDDE: two things found while in there, neither fixed, both yours to call.
-Ten meta descriptions read "A Muku Tree in On the stone perimeter wall near
-Omiya-gomon, Kyoto", a doubled preposition where a neighbourhood field starts
-with one (Kyoto 4, Pisa 4, two others). And the app change could not be built
-here, this being Linux with no Xcode, so appsweep and appfit have not run on
-it; ios.yml judges it in CI.
+And the doubled preposition found beside it, fixed the same day on his "doe
+maar gewoon beide". Eleven trees read "A Muku Tree in On the stone perimeter
+wall near Omiya-gomon, Kyoto", because every metaLead joins the area with its
+own preposition and four Pisa and four Kyoto neighbourhoods already start with
+one. The tempting fix was to strip it from the data, and it is wrong twice
+over: that field renders correctly in the facts table, and "near Piazza dei
+Miracoli" would become "in Piazza dei Miracoli", putting a tree on a square it
+stands beside. A snippet does not get to be more precise than the record about
+where something is. So an area beginning with a preposition is dropped and the
+city carries the lead alone, which also hands 40 characters back to the
+sentence that says why to go.
+
+The app change could not be built here, this being Linux with no Xcode, so
+appsweep and appfit did not run on it locally; ios.yml picked it up on the
+push and judges it in CI.
 
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
