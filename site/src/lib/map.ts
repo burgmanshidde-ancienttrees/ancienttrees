@@ -2,7 +2,7 @@
 // build_site.py:1199-1230ish, 4045-4101. Raw <script>/<link> tags loading
 // MapLibre from a CDN, matching the current site exactly rather than going
 // through the bundled npm package (see site-config.ts's note on MAPLIBRE_JS).
-import { MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE } from "./site-config";
+import {MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE, MAP_CREDIT} from "./site-config";
 
 /** MapLibre, loaded without blocking the page.
  *
@@ -41,8 +41,9 @@ export function singlePinScript(lat: number, lng: number): string {
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [${lng}, ${lat}], zoom: 14.5, scrollZoom: false,
-  attributionControl: { compact: true }
+  attributionControl: false
 });
+map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
 map.addControl(new maplibregl.NavigationControl());
 map.on('load', function() { map.resize(); });
 var el = document.createElement('div');
@@ -81,8 +82,9 @@ var CITIES = ${JSON.stringify(data)};
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [0, 0], zoom: 3, renderWorldCopies: false,
-  attributionControl: { compact: true }
+  attributionControl: false
 });
+map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
 map.addControl(new maplibregl.NavigationControl());
 var b = new maplibregl.LngLatBounds();
 CITIES.features.forEach(function(f) { b.extend(f.geometry.coordinates); });
@@ -149,8 +151,9 @@ var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [8, 48], zoom: 3.4, minZoom: 1.3,
   renderWorldCopies: false,
-  attributionControl: {compact: true}
+  attributionControl: false
 });
+map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
 map.addControl(new maplibregl.NavigationControl());
 new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
 // Location is asked HERE, in map context, never on the homepage.
@@ -355,8 +358,9 @@ var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [8, 48], zoom: 2.6, minZoom: 1.3,
   renderWorldCopies: false,
-  attributionControl: {compact: true}
+  attributionControl: false
 });
+map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
 map.addControl(new maplibregl.NavigationControl());
 new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
 
