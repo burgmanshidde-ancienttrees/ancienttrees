@@ -1,6 +1,32 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - And the maps themselves now credit OpenStreetMap, which the city pages did not
+
+Found while checking the change above was safe, and it was not, quite. City
+and tree pages render with no footer at all, and their MapLibre attribution
+control was rendering EMPTY: measured on the deployed site, /explore showed
+the tile credit and /lisbon showed nothing, from the same style file. So the
+most common map pages on this site credited OpenStreetMap nowhere and had no
+link to /sources either, and that was already true before today.
+
+The style is not the problem: /assets/map-style.json carries the credit on its
+openmaptiles source. That source is declared by TileJSON url, and what comes
+back from the resolved TileJSON decides what the control shows, which is why it
+was there on one page and missing on another.
+
+Every map now adds its own AttributionControl, compact, at the map's top-left,
+carrying one extra link to /sources. Top-left because the bottom of these maps
+is under the sheet on a phone: at 375px the control's own centre point returned
+the search input as the topmost element, so it was rendered and invisible. It
+opens on load and collapses to a 24 point i on the first touch, which is
+MapLibre's own behaviour and what every Mapbox app does.
+
+The first attempt repeated OpenFreeMap, OpenMapTiles and OpenStreetMap a second
+time and wore a wide double band across the top of the map. It now says only
+what the tile credit cannot: the way to /sources, where Valhalla, FOSSGIS and
+the ODbL are named.
+
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
 Hidde, on finding the whole attribution line under every page: "moet dit
