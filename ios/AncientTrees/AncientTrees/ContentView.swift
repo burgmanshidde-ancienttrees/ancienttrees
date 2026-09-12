@@ -476,7 +476,10 @@ struct ContentView: View {
                     // 2026-09-12 with /auth in the site's AASA; see
                     // Account.signInFromLink for why the refresh token is spent
                     // rather than the access token read.
-                    if url.path == "/auth" {
+                    // URLComponents rather than url.path, which is what
+                    // route(for:) three hundred lines up already uses and what
+                    // Apple soft-deprecated on iOS 16.
+                    if URLComponents(url: url, resolvingAgainstBaseURL: false)?.path == "/auth" {
                         Task { await account.signInFromLink(url) }
                         return
                     }
