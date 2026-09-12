@@ -19,6 +19,8 @@
 #   convention  a NEW screen or component names the product its interaction was
 #               copied from, so a design from somebody's own head cannot ship
 #               unnoticed (2026-08-28)
+#   standing    a sighting records where the PHONE stood, never our own pin
+#               handed back to us as if somebody had measured it (2026-09-12)
 #   darkcheck   every colour pair in the palette can be read, in BOTH
 #               appearances. The app shipped with white text on the dark
 #               palette's moss at 2.85:1, on the primary button, because
@@ -118,6 +120,7 @@ for check in \
     "scripts/icon_check.py" \
     "scripts/conventioncheck.py" \
     "scripts/darkcheck.py" \
+    "scripts/standingpoint.py" \
     "scripts/map_style_dark.py --check"
 do
     # shellcheck disable=SC2086
