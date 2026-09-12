@@ -1,0 +1,65 @@
+{
+  "city": "Vír",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Vír maps one tree, and the village it is named after is gone. The Chudobín Pine grew on a rocky spur above the Hamr weir; when the Vír dam filled in 1957 the weir and the village of Chudobín went under, and the spur became an island the pine still stands on. In 2019 it won the Czech Tree of the Year vote, then European Tree of the Year 2020 with 47,226 votes, the first Czech tree to take the title. View-only across the water, free, reached on foot along the reservoir's right bank near Vír.",
+  "meta_description": "The Chudobín Pine near Vír: European Tree of the Year 2020, on a rocky island in the Vír reservoir, viewed free from the far bank.",
+  "question_meta": "Vír's only mapped tree is the Chudobín Pine, a Scots pine on a reservoir island that won European Tree of the Year 2020.",
+  "question_answer": "Vír's only mapped tree is Chudobínská borovice, the Chudobín Pine, standing on a rocky promontory in the Vír reservoir, on what was once the bank above the drowned village of Chudobín. It won the Czech Tree of the Year public vote in 2019, then European Tree of the Year 2020 with 47,226 votes, the first Czech tree ever to win. It is free to view from a signed viewpoint on the reservoir's right bank; the tree itself cannot be approached.",
+  "question_context": "The Vír dam filled the valley in 1957, submerging the Hamr weir and the village of Chudobín; the rocky spur the pine had already rooted on became an island rather than going under. How old it is depends on who measured it: a 2019 assessment by Mendel University's forestry faculty put it at 300 to 350 years, while a later assessment by the river authority, Povodí Moravy, suggested more than 500. Neither can settle it, because the trunk is hollow and a ring count needs wood that is still there. It was nominated for Tree of the Year 2019 by Milan Peňáz, a former resident of the drowned village, and went on to win the European title in 2020 with 47,226 votes. The tree stands inside the reservoir's protected water-source buffer zone, so it is viewed rather than approached: a signed path along the right bank gives a clear line across the water to the promontory. Vír itself is a small village in the Vysočina Region with no rail service; the viewpoint is reached on foot along the bank.",
+  "hero_tree_id": "chd_001",
+  "oldest_tree_id": "chd_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vír?",
+      "a": "The Chudobín Pine, the only mapped tree here, a Scots pine roughly 300 to 500 years old (the exact age is disputed, as the hollow trunk cannot be ring-counted)."
+    },
+    {
+      "q": "Can I walk up to the tree?",
+      "a": "No. It stands on a rocky promontory inside the reservoir's protected water-source buffer zone, which cannot be approached. It is viewed from a signed viewpoint across the water on the right bank."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no tickets or hours. The viewpoint is on a public path along the reservoir bank."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "On foot along the marked path on the right bank of the Vír reservoir, in the Vysočina Region. There is no public transport to the viewpoint itself; the nearest town is Vír."
+    }
+  ],
+  "trees": [
+    {
+      "id": "chd_001",
+      "name": "The Chudobín Pine",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "age_estimate": "roughly 350 years, possibly older",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 188,
+      "height_m": 13,
+      "location": {
+        "address": "Rocky outcrop on the left (Chudobín) bank of the Vír reservoir, near the former village of Chudobín, Dalečín municipality, Žďár nad Sázavou District, Vysočina Region",
+        "latitude": 49.5719306,
+        "longitude": 16.2767833,
+        "neighbourhood": "Chudobín u Dalečína"
+      },
+      "story": "The village this pine is named after lies under the reservoir it now looks down on. When the Vír dam filled in 1957, Chudobín and the Hamr weir below it went under, and the rocky spur the tree had rooted on became an island. It stayed. Seven decades on it took the national Tree of the Year vote in 2019, then won European Tree of the Year 2020 with 47,226 votes, the first Czech tree to do it. It was nominated by Milan Peňáz, who had lived in the drowned village.\n\nHow old it is depends on who measured. A 2019 assessment by Mendel University's forestry faculty put it at 300 to 350 years. A later one by the river authority, Povodí Moravy, suggested more than 500. Neither can settle it: the trunk is hollow inside, and a ring count needs wood that is still there.\n\nWhat the wind and the rock made of it is easier to see. The trunk grew in an S, bent by the gales that come down the valley and by the stone it had to work around. Roots lie bare across that rock, submerged when the reservoir is high and more than twenty metres above the water when it is low. Thirteen metres tall, 188 centimetres round, rated healthy in every assessment so far, though drought and the moving waterline have told on it. You view it from the far bank. Nobody walks out to it, and those roots are the reason.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Chudob%C3%ADnsk%C3%A1_borovice",
+        "https://www.pmo.cz/cz/media/tiskove-zpravy/chudobinska-borovice-muze-byt-mnohem-starsi-nez-se-predpokladalo/",
+        "https://www.sazimebudoucnost.cz/pribehy/chudobinska-borovice-z-brehu-virske-prehrady"
+      ],
+      "access": "View-only. The tree stands on a rocky promontory inside the reservoir's protected water-source buffer zone and cannot be approached (root damage risk on exposed rock). It is viewed from a signed viewpoint on the public path along the reservoir's right bank, facing across the water. Free.",
+      "transport": "Rural, no public transport nearby; reached on foot along the marked path on the right bank of the Vír reservoir, Vysočina Region. Nearest town is Vír.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the S-bend in its trunk and the roots lying bare across the rock. It stands alone on a promontory in the Vír reservoir, seen from the signed viewpoint on the opposite bank."
+    }
+  ]
+}
