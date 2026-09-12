@@ -738,7 +738,13 @@ struct TreeDetail: View {
         if !extras.isEmpty {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 6) {
-                    ForEach(Array(extras.enumerated()), id: \.offset) { i, p in
+                    // Indices rather than `enumerated()`, because a closure
+                    // cannot destructure a tuple parameter: `{ i, p in }` over
+                    // an enumerated sequence has not compiled since Swift 3
+                    // ("does not support destructuring"). extras is an Array,
+                    // so its indices are Int and Hashable.
+                    ForEach(extras.indices, id: \.self) { i in
+                        let p = extras[i]
                         Button {
                             // +1 because this row is the set minus its lead.
                             photoAt = i + 1

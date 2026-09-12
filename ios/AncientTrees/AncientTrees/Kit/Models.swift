@@ -180,7 +180,11 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// answer-not-rule ruling of 2026-08-25, and this is exactly the place it
     /// was written about: the last time the app chose a photograph for itself,
     /// one city wore two faces and four photographs were credited two ways.
-    public var shots: [Photo] { (photos?.isEmpty == false ? photos! : photo.map { [$0] }) ?? [] }
+    public var shots: [Photo] {
+        if let photos, !photos.isEmpty { return photos }
+        if let photo { return [photo] }
+        return []
+    }
     public let bestTime: BestTime?
     public let peak: Peak?
     /// Around the trunk, in centimetres. A `var` with a default so the
