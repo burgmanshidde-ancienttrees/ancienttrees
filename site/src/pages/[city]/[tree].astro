@@ -355,15 +355,40 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     )}
     <div class="prose-block"><p>{tree.story}</p></div>
     <Fragment set:html={seasonHtml} />
+    {/* THE DETAIL LIST, and only the details. This block predates the panel
+        above, which arrived with the app's design on 2026-09-04 and took over
+        age, species and the ticket; nobody trimmed the list underneath it, so
+        the page had been stating the same facts twice ever since (Hidde,
+        2026-09-12, having caught the same fault on the homepage).
+
+        Measured over 500 tree pages before the fix: 307 printed an age in
+        both places and 283 of those printed two DIFFERENT forms of it, a
+        computed band up top ("260-285") against the written estimate down
+        here ("275 years"), which reads as the page disagreeing with itself.
+        25 repeated the access sentence word for word.
+
+        So each row now renders only where the panel is not already carrying
+        it. The rule is the one written above the panel and above ageValue:
+        a fact belongs in one place per page.
+
+        Species stays, unlike the translated pages, and the reason is not
+        style: the panel there prints the whole string, scientific name and
+        all, while the panel here prints only the common name, so this row is
+        the one place an English page names Quercus robur. Contract A asks
+        for common AND scientific in the fact block, so it cannot go until
+        the panel carries it. */}
     <dl class="facts">
       <dt>Species</dt><dd>{tree.species ?? ""}</dd>
-      <dt>Age estimate</dt><dd>{tree.age_estimate ?? "unknown"}</dd>
+      {!ageNumber && (<><dt>Age estimate</dt><dd>{tree.age_estimate ?? "unknown"}</dd></>)}
       <dt>Location</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
-      <dt>Access</dt><dd>{tree.access ?? ""}</dd>
+      {!tree.paid_entry && (<><dt>Access</dt><dd>{tree.access ?? ""}</dd></>)}
       <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
     </dl>
     <div class="map-embed"><div id="map" class="map"></div></div>
-    <p class="go-note">The button above opens directions in your maps app. {tree.transport ?? ""}</p>
+    {/* The transport sentence used to be repeated here, one screen under the
+        "Getting there" row that already says it. The note is about the
+        BUTTON, so that is all it says now. */}
+    <p class="go-note">The button above opens directions in your maps app.</p>
     {/* "Something's wrong", low on the page and under the map, which is what
         most reports are about. Its vote half sits beside the place name; the
         two were one block under the story until 2026-09-11. */}
