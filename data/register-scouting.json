@@ -641,6 +641,12 @@
       "country": "United States",
       "status": "empty",
       "note": "SCOUTED 2026-09-10, on scout_next.py --target naming Daytona Beach (#65) as no supply and no verdict. The Florida Champion Trees register (see the corrected Fort Lauderdale entry above and OPEN_DATA_SURVEY.md) does cover Volusia County, Daytona Beach's county, but only 2 rows: a live oak at Bulow Creek State Park (~24km from the city centre) and a bald cypress at DeLeon Springs State Recreation Area (further still), neither reachable by public transport and both too far for the day-trip boundary as usually applied here. Too thin to open Daytona Beach itself. Route forward is from-zero web research on the city's own named parks if Hidde adds it to the from-zero list, or a reader submission; this register does not shortcut it."
+    },
+    {
+      "place": "Dallas",
+      "country": "United States",
+      "status": "blocked",
+      "note": "SCOUTED 2026-09-12 (session), on scout_next.py --target repeatedly naming Dallas (#64) as no supply/no verdict, right after finishing Warsaw. Same wall as Houston and Austin: the Texas Big Tree Registry (texasforestinfo.tamu.edu/BigTreeRegistry) is the only statewide register and Texas A&M Forest Service's own terms restrict it to personal/educational/non-commercial use, which disqualifies it for import under the register-layer licence rule (already recorded under Houston). No City of Dallas or Dallas County open-data register of individually designated trees was found either. Usable only as a hand-verify lead source, same treatment as Houston, Austin and Nevada. The 2026-08-20 sweep already put 14 Texas Big Tree Registry leads into data/leads/dallas.json; a 2026-09-12 verify pass worked through the whole pile (dal_009 shipped, one duplicate removed, the rest ruled out on distance or lack of a second source). That lead pile is now exhausted. Dallas is on Hidde's explicit 2026-08-19 from-zero-approved list, so the only route left to grow it is ordinary from-zero web research (Step 1's search order: parks, cemeteries, churchyards by name), not more register scouting."
     }
   ],
   "out_of_focus": {

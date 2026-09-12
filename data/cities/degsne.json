@@ -2,10 +2,10 @@
   "city": "Degsne",
   "country": "Lithuania",
   "status": "needs_curation",
-  "intro": "Degsne maps two trees inside the same state forest: a larch standing 49 metres tall in a stand planted in 1849, the tallest tree recorded anywhere in Lithuania, and the Budininkai Oak, 31 metres tall and one of 47 oaks given nature-monument status in June 2026, 6.4 kilometres away in the same forestry district. Published thin because the tallest tree is destination enough on its own, not because Degsne's research is finished.",
-  "meta_description": "The Degsne Forest Larch, Lithuania's tallest recorded tree at 49 metres, and the nearby Budininkai Oak, both in the same state forest.",
-  "question_meta": "Degsne's mapped trees are a larch 49 metres tall, the tallest tree recorded in Lithuania, and a newly protected oak 6.4km away in the same forest.",
-  "question_answer": "Degsne's mapped trees are the Degsne Forest Larch, a European larch 49 metres tall in the Degsne forest stand of Nemuno Loops Regional Park, the tallest tree recorded in Lithuania, and the Budininkai Oak, 31 metres tall, 6.4 kilometres away in the same state forest complex.",
+  "intro": "Degsne maps three trees across Prienai district: a larch standing 49 metres tall in a stand planted in 1849, the tallest tree recorded anywhere in Lithuania, the Budininkai Oak, 31 metres tall and one of 47 oaks given nature-monument status in June 2026, 6.4 kilometres away in the same forestry district, and the Bagrenas Linden, a forked, hollowing lime on a village street 12 to 17 kilometres further out. Published thin because the tallest tree is destination enough on its own, not because Degsne's research is finished.",
+  "meta_description": "The Degsne Forest Larch, Lithuania's tallest recorded tree at 49 metres, with the nearby Budininkai Oak and the Bagrenas village linden.",
+  "question_meta": "Degsne's tallest tree is a 49-metre larch, the tallest recorded in Lithuania, with a protected oak and a village linden nearby.",
+  "question_answer": "Degsne's mapped trees are the Degsne Forest Larch, a European larch 49 metres tall in the Degsne forest stand of Nemuno Loops Regional Park, the tallest tree recorded in Lithuania, the Budininkai Oak, 31 metres tall, 6.4 kilometres away in the same state forest complex, and the Bagrenas Linden, a forked village lime 12 to 17 kilometres further out.",
   "question_context": "The tallest tree in Lithuania is a larch, and it is under two metres round. At 49 metres it beats everything else growing in the country, and the State Protected Areas Service register lists it under exactly that title. The trunk carries no green branch at all for its first 29 metres, and at chest height it measures 186 centimetres round, a demonstration of how a larch puts its growth upward rather than outward. The first larches here were planted in 1849, and the stand they grew into is now the tallest forest in Lithuania, averaging around 42 metres. The forest was protected in 1960, and this one tree was designated in its own right in 2002. No legend attaches to it beyond the record itself. Getting there takes a car or a bicycle: a gravel forest road runs about three kilometres off the Kaunas to Alytus road north of Balbieriskis, and no bus goes near it. Six kilometres away in the same forestry district stands the Budininkai Oak, 31 metres tall, one of 47 oaks a single June 2026 order gave nature-monument status at once; not a walk from the larch, but a plausible pairing for anyone driving out.",
   "hero_tree_id": "deg_001",
   "oldest_tree_id": "deg_001",
@@ -25,6 +25,10 @@
     {
       "q": "Is it free to visit?",
       "a": "Yes, it stands in public state forest within Nemuno Loops Regional Park, reached by a gravel forest road with no gate or permission needed. There is no public transport to the road itself; a car or bicycle is the practical way in."
+    },
+    {
+      "q": "Is there a third tree here?",
+      "a": "Yes, the Bagrenas Linden, a forked and hollowing lime on the main street of Bagrenas village, 12 to 17 kilometres from the larch and the oak. It is a separate car stop rather than a walk from either."
     }
   ],
   "trees": [
@@ -106,6 +110,44 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      }
+    },
+    {
+      "id": "deg_003",
+      "name": "Bagrėnas Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "not documented",
+      "girth_cm": 545,
+      "location": {
+        "address": "Liepų g. 132, Bagrėnas village, Prienai district",
+        "latitude": 54.653382,
+        "longitude": 23.990981,
+        "neighbourhood": "Bagrėnas, Prienai district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Bagr%C4%97no_liepa",
+        "https://stvk.lt/map/S0310506000178-bagreno-liepa",
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+      ],
+      "access": "Free; stands beside the main street of Bagrėnas village, near an old homestead at Liepų g. 132. No source states whether the roadside spot itself is fenced; treat it as visible and reachable from the public village street, the same honest caveat already used for other homestead-adjacent trees in this district (compare Kaunas kun_006).",
+      "transport": "No public transport; reached by car via road KK130, then about 3.4km southeast into Bagrėnas village. Roughly 12-17km by straight-line distance from Degsnė's other two trees (deg_001, deg_002) in Balbieriškis Forest; real road distance is likely greater. A plausible day-trip pairing in the same district, not a walk between the two.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Measure this lime at chest height and you get 5.45 metres of single trunk. Half a metre higher it stops being one tree: the stem forks in two, and the base underneath it is hollowed and split open.\n\nLithuania made it a state-protected natural heritage object in March 2026 and drew a protection zone of 0.028 hectares around it, roughly 280 square metres of village ground that now belongs to the tree. The designation is that recent, which is also why almost nothing has been written about the tree. Beyond its register entry and a single Lithuanian reference page, it has gone undescribed.\n\nWhat stands there is 27.5 metres of lime on the main street of Bagrėnas, beside an old homestead, at an address that reads Liepų gatvė 132. Linden Street.\n\nNobody has published an age. A girth on its own will not honestly produce one either, not for a lime: they fork, hollow out and put on wood at rates too variable for the arithmetic to mean much. If somebody has dated this one, tell us and the figure goes on the page.\n\nGetting there means a car. Degsnė's other two trees stand 12 to 17 kilometres off in Balbieriškis Forest, which makes an unhurried afternoon of all three and is far more than anyone is walking between them.",
+      "how_to_recognise": "You can recognise it by the trunk splitting in two about 1.8 metres up, above a base that is hollowed and split open, 5.45 metres round below the fork. It stands on the main street of Bagrėnas, beside the homestead at Liepų g. 132.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "June to July, when the lime flowers and the whole street smells of it"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]

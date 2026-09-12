@@ -2,10 +2,10 @@
   "city": "Žalgiriai",
   "country": "Lithuania",
   "status": "needs_curation",
-  "intro": "Zalgiriai maps one tree, standing at the end of a trail with a strange claim to fame: the writer it is named for watched local peat-cutters at work here and turned their lives into a novella, which F.W. Murnau filmed in 1927 as Sunrise, winning three awards at the first Academy Awards. The oak is the only natural monument in Nemunas Delta Regional Park, three trunks from one base at a combined girth of 4.62 metres. Nobody has dated it: a combined multi-trunk measurement makes the usual growth-rate arithmetic unreliable, so this page asks rather than guesses.",
-  "meta_description": "The Hermann Sudermann Oak, sole monument tree in Nemunas Delta Regional Park, its story tied to a film that won three Oscars in 1927.",
-  "question_meta": "Zalgiriai's mapped tree is the Hermann Sudermann Oak, the only natural monument in Nemunas Delta Regional Park.",
-  "question_answer": "The tree mapped at Zalgiriai is the Hermann Sudermann Oak, a three-trunked pedunculate oak at the end of the Zalgiriai heritage trail, the sole natural monument in Nemunas Delta Regional Park. It is named for the writer whose novella about the local peat-cutters became F.W. Murnau's 1927 film Sunrise.",
+  "intro": "Zalgiriai maps two trees. The Hermann Sudermann Oak, three trunks from one base at a combined girth of 4.62 metres, stands at the end of a trail with a strange claim to fame: the writer it is named for watched local peat-cutters at work here and turned their lives into a novella, which F.W. Murnau filmed in 1927 as Sunrise, winning three Academy Awards. It is the only natural monument in Nemunas Delta Regional Park. The Pagryniai Oak, 4.3 kilometres away, actually stands on the edge of Silute, a separate car stop.",
+  "meta_description": "The Hermann Sudermann Oak, monument tree in Nemunas Delta Regional Park, with the nearby Pagryniai Oak on the edge of Silute.",
+  "question_meta": "Zalgiriai's mapped trees are the Hermann Sudermann Oak, the only natural monument in Nemunas Delta Regional Park, and the Pagryniai Oak nearby.",
+  "question_answer": "The Hermann Sudermann Oak, a three-trunked pedunculate oak at the end of the Zalgiriai heritage trail, the sole natural monument in Nemunas Delta Regional Park, named for the writer whose novella about the local peat-cutters became F.W. Murnau's 1927 film Sunrise. The Pagryniai Oak, 4.3 kilometres away on the southern edge of Silute, is also mapped here.",
   "question_context": "Three Academy Awards trace back to the bog at the end of this trail. Hermann Sudermann, the writer the oak is named for, stayed often in Zalgiriai and watched the peat-cutters at work here, then wrote their lives into his novella Die Reise nach Tilsit. F.W. Murnau filmed it in 1927 as Sunrise: A Song of Two Humans, which took three awards at the first Academy Awards. The tree stands at the far end of the roughly two kilometre trail through that former peat-cutters colony, the reason for the walk rather than a stop along the way. It is also the only natural monument in the whole of Nemunas Delta Regional Park. Three trunks rise from one base, 4.62 metres round between them and 17.6 metres tall. Lithuania placed it under state protection in 2005. Sudermann died in 1928, a year after the film. The colony he wrote about is gone and the cutting has stopped, and the trail now runs through what those workers left behind. Nobody has dated the oak: the girth is a combined figure for three trunks rather than one stem, which makes the usual growth-rate arithmetic unreliable, so the age stays an open question.",
   "hero_tree_id": "zal_001",
   "oldest_tree_id": "zal_001",
@@ -25,6 +25,10 @@
     {
       "q": "What is the connection to the Oscars?",
       "a": "Hermann Sudermann watched the local peat-cutters and based his novella on their lives; F.W. Murnau's 1927 film adaptation, Sunrise, won three awards at the first Academy Awards."
+    },
+    {
+      "q": "Is there a second tree here?",
+      "a": "Yes, the Pagryniai Oak, 4.3 kilometres from the Sudermann Oak. It actually stands on the southern edge of Silute rather than in Zalgiriai; the two make a plausible same-day pairing by car, not a walk."
     }
   ],
   "trees": [
@@ -65,6 +69,37 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      }
+    },
+    {
+      "id": "zal_002",
+      "name": "Pagryniai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 517,
+      "location": {
+        "address": "300m northeast of the Šilutė-Pagryniai road, southern edge of Šilutė",
+        "latitude": 55.33311,
+        "longitude": 21.48508,
+        "neighbourhood": "Šilutė (southern edge)"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Pagryni%C5%B3_%C4%85%C5%BEuolas",
+        "https://krastogidas.lt/objektai/pagryniu-azuolas"
+      ],
+      "access": "Free, public; the tree grows in a forest clearing, fenced with a protective barrier and an information board, no fee or restriction mentioned by any source.",
+      "transport": "No public transport identified to the clearing itself; reached by car or on foot from the Šilutė-Pagryniai road, near Stadiono gatvė on the southern edge of Šilutė town. About 4.3km by straight-line distance from Žalgiriai's own tree (zal_001, the Hermann Sudermann Oak), both reachable via the Šilutė area road network as a plausible same-day pairing, though not a walk between the two.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Somebody measured this oak in 1987 and somebody has measured it since, and between the two readings it is still putting on wood. The 1987 survey, made when Lithuania raised it from a local nature monument to one of republic-level significance, recorded a diameter of 1.5 metres, which comes out at roughly 4.7 metres round, and a height of 24 metres. Today the figures are 5.17 metres of girth and 25 metres of height. Half a metre of trunk and a metre of tree in four decades.\n\nProtection came first in 1960 and it is held now under a 2017 order of the Ministry of Environment. In its clearing the oak has a protective barrier around it and an information board beside it.\n\nIts age is given as about 300 years. That is the source's figure rather than one worked out here, and it is as precise as anybody has been willing to be.\n\nOne thing to be clear about, because the address invites the wrong idea: this tree is not out in Žalgiriai. It stands on the southern edge of Šilutė itself, in a forest clearing about 300 metres off the Šilutė-Pagryniai road near Stadiono gatvė. The Hermann Sudermann Oak, which is the Žalgiriai tree, lies 4.3 kilometres away along the same local roads. The two make an obvious pairing for one afternoon, and nobody is walking from one to the other.",
+      "how_to_recognise": "You can recognise it by the protective barrier and the information board standing with it in a forest clearing, a 25 metre oak with a trunk 5.17 metres round. It is 300 metres off the Šilutė-Pagryniai road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
