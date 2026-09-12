@@ -25,6 +25,33 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Tapping into a field on a phone (2026-09-12)
+
+**Reference: Safari on iOS itself, which is the constraint rather than a
+choice.** A field whose text computes under 16px makes Safari zoom the whole
+page in on focus, and it does not zoom back out when the field is blurred. So
+15px is not slightly small: it is a page that jumps when somebody taps it and
+stays jumped. There are exactly two ways out and only one of them is allowed
+here: meet 16, or pin the viewport with `maximum-scale=1`, which stops the zoom
+by taking pinch-zoom away from everybody including the people who need it. So
+16 is a floor rather than a preference.
+
+Ours: `.at-search input` was already written at 16px on purpose. The homepage
+search still zoomed, because a rule three hundred lines further down the
+stylesheet matched it with equal specificity and won on order. That is the part
+worth remembering: the number being right where you wrote it does not mean it is
+right where it lands, so this is measured as computed style at 375px in
+scripts/smoke_test.py rather than read out of the CSS.
+
+No reference-product lookup captured, and it is owed: this container's egress
+proxy blocks alltrails.com and developer.mozilla.org alike, so nothing could be
+probed from here. What this entry rests on is the platform behaviour and Hidde's
+own phone ("als je op mobile web op zoek klikt zoomt ie raar in", 2026-09-12),
+confirmed by measuring our own pages. Somebody on an unblocked machine should
+measure what the reference apps actually ship and add the numbers.
+
+---
+
 ## Helping somebody be SURE which one they found (2026-09-07)
 
 Hidde, testing in Nara: "deze hele flow zou je moeten benchmarken... als de
