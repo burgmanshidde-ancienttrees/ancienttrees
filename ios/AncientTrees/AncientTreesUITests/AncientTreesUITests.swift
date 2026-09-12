@@ -655,7 +655,14 @@ final class AncientTreesUITests: XCTestCase {
         // on 2026-08-29 and the test did not move with it.
         XCTAssertTrue(app.staticTexts["Sign in to keep this one"].waitForExistence(timeout: 10),
                       "the sign-in sheet did not present")
-        XCTAssertTrue(app.buttons["Email me a code"].exists,
+        // "a sign-in link" rather than "a code" since 2026-09-12: -show-email
+        // turns the typed route ON, and what that route now SENDS is a link,
+        // because Supabase's built-in sender cannot be made to mail digits.
+        // The digits live behind -show-email-code (Launch.emailCode) and are
+        // not what ships, so this asks for the button a person would actually
+        // meet. Named rather than matched loosely, for the reason FaultWalk
+        // records: a sign-in sheet is full of buttons that sound alike.
+        XCTAssertTrue(app.buttons["Email me a sign-in link"].exists,
                       "the email route is missing from the sign-in sheet")
     }
 
