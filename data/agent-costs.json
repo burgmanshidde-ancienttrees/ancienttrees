@@ -7699,6 +7699,15 @@
         "note": "viewing pass on the 2-city shortlist from photo_gaps.py: approved the Napoleon Oak (geotag confirms identity), rejected both Breda weeping-beech candidates (address-matched house facade and a facade plaque, not the tree)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Regensburg/Roosendaal/Sittard-Geleen/Hobart",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 0,
+        "note": "viewing pass on --zero sweep candidates: all rejected after looking at pixels (a rose cultivar label, house facades, a wayside crucifix, a park treeline with no single subject); one Hobart iNat duplicate candidate held, consistent with an existing held verdict on the same observation",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
