@@ -1,0 +1,80 @@
+{
+ "_note": "Brazilian Portuguese overlay for Rio de Janeiro, hand-written 2026-09-12. Brazilian, not European, Portuguese: this is the one pt city so far that is in Brazil rather than Portugal, so wording follows Brazilian usage (tombamento/tombada rather than classificacao, 'onibus' not 'autocarro', 'barca' for the ferry). Rendered from data/cities/rio-de-janeiro.json, which stays the source of truth: every fact, age, hedge and access note here already exists there in verified English, and nothing was researched or sharpened in translation. Picked from langcheck.py --next: pt's highest-impression untranslated city (39 English impressions, 6 trees) on 2026-09-12. Text only: every coordinate, photo, licence and walk stays in data/cities/rio-de-janeiro.json.",
+ "city": "Rio de Janeiro",
+ "title": "Árvores notáveis do Rio de Janeiro: as 6 mais marcantes",
+ "meta_description": "As árvores mais notáveis do Rio: o sumaúma de Tom Jobim, um mogno-africano de 49m de altura, a primeira tombada pela cidade, e o baobá de Paquetá.",
+ "intro": "O Rio espalha suas árvores notáveis em vez de reuni-las. Duas ficam no Jardim Botânico, que cobra entrada: o sumaúma onde Tom Jobim parava em suas caminhadas matinais, e um mogno-africano de 49,1 metros, a mais alta do jardim. Outras duas ficam em ruas abertas sob tombamento, uma delas a primeira árvore que a cidade jamais tombou, salva por uma centena de vizinhos reunidos sob ela em 1980. Uma é o único exemplar centenário catalogado de uma espécie ameaçada. E uma é um baobá de dez metros de circunferência, a uma hora de barca.",
+ "question_title": "Qual é a árvore mais antiga do Rio de Janeiro?",
+ "question_meta": "A árvore mais antiga do Rio é provavelmente Maria Gorda, o baobá de Paquetá, 10m de circunferência. Idade disputada entre 1627 e 1907, e dizemos isso.",
+ "question_answer": "A árvore mais antiga do Rio de Janeiro é provavelmente Maria Gorda, o baobá que fica na orla da ilha de Paquetá, embora sua idade seja de fato disputada. Um relato diz que foi plantada em 1627 por colonizadores que trouxeram a semente da savana africana, o que a deixaria perto dos quatrocentos anos; outro diz que um baobá chegou de Manaus em 1907 e recebeu o nome nessa época. Seu tronco mede dez metros de circunferência, e só se chega até ela de barca a partir da Praça XV, cerca de uma hora de viagem.",
+ "question_context": "Quase nada no Rio foi datado com precisão, por isso essa resposta vem como uma faixa de anos e não como um número fechado. As duas histórias concorrentes sobre a origem de Maria Gorda estão separadas por quase três séculos, e nenhuma delas tem um documento publicado por trás.\n\nAs candidatas seguintes não se comportam melhor. A figueira da Rua Faro, que em 1980 se tornou a primeira árvore que a cidade jamais tombou, é chamada de mais de 200 anos por um relato do próprio resgate e de mais de 350 pela associação de moradores fundada para salvá-la. A árvore-do-imperador do Campo de Santana foi plantada pelo paisagista francês Auguste François Glaziou, contratado para criar aquele parque em 1871, mas nenhuma fonte afirma o ano em que este exemplar específico foi plantado, por isso ela é dada como uma faixa de 140 a 160 anos em vez de contada a partir da data de fundação do parque. As duas gigantes dentro do Jardim Botânico não têm idade publicada alguma, só alturas.\n\nO que o Rio tem no lugar de árvores datadas são árvores protegidas, algumas delas desde 1967.",
+ "faq": [
+  {
+   "q": "Qual é a árvore mais antiga do Rio de Janeiro?",
+   "a": "Provavelmente Maria Gorda, o baobá da ilha de Paquetá, com um tronco de dez metros de circunferência. Sua idade é disputada: um relato diz que foi plantada em 1627, outro diz que um baobá veio de Manaus em 1907 e recebeu o nome nessa época. Ninguém resolveu a questão."
+  },
+  {
+   "q": "As árvores notáveis do Rio são de acesso livre?",
+   "a": "Quatro das seis são gratuitas, em ruas públicas e num parque público no centro. As outras duas, o sumaúma conhecido como árvore de Tom e o mogno-africano de 49,1 metros, ficam dentro do Jardim Botânico e exigem ingresso do jardim."
+  },
+  {
+   "q": "Como se chega ao baobá de Paquetá?",
+   "a": "De barca a partir da Praça XV, no centro do Rio. A barca regular leva de 60 a 70 minutos em cada sentido, e uma catamarã mais rápida faz algumas travessias em 30 a 40 minutos. Trate isso como um passeio à parte, não como um complemento a uma caminhada no continente."
+  },
+  {
+   "q": "Quais árvores do Rio são protegidas por lei?",
+   "a": "Várias. A figueira de Tijuca está imune ao corte por decreto estadual desde 1968, a figueira da Rua Faro se tornou a primeira árvore tombada pela cidade em 1980, e Maria Gorda é listada individualmente pelo instituto estadual de patrimônio e fez parte de um grupo de dez árvores de Paquetá tombadas em 1967."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Portuguese common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Hedges carried over exactly where the English source hedges.",
+ "trees": {
+  "rio_001": {
+   "name": "A Sumaúma de Tom Jobim",
+   "species": "Sumaúma (Ceiba pentandra)",
+   "age_estimate": "não documentada",
+   "access": "Entrada paga no Jardim Botânico do Rio de Janeiro (todos os dias, ingresso padrão do jardim)",
+   "transport": "Bairro Jardim Botânico, acessível de ônibus; cerca de 20-25 min do centro do Rio de carro/táxi",
+   "story": "Antônio Carlos Jobim caminhava neste jardim quase todas as manhãs e parava em frente a esta sumaúma. Desde então, os funcionários a chamam de árvore de Tom. Em janeiro de 1995, um ano após sua morte, o IBAMA colocou uma placa ao pé da árvore chamando-o de maestro soberano, e o cronista Antonio Callado escreveu sobre o episódio inteiro na Folha de São Paulo naquela semana.\n\nA árvore tem 40,01 metros de altura, um dos exemplares que o Jardim Botânico incluiu em sua Trilha das Árvores Gigantes, aberta em setembro de 2022. Ceiba pentandra é a sumaúma, a árvore que domina o topo do dossel pela Amazônia e até a América Central, com sapopemas na base como as gigantes da floresta tropical costumam ter.\n\nNinguém a dateou. A espécie é creditada com vidas que passam bem de um século e alturas perto de setenta metros, mas isso é a espécie, não este indivíduo específico, e não há contagem de anéis, registro de plantio nem estimativa publicada para este tronco. Por isso a resposta honesta é que não sabemos a idade da árvore de Tom, e alguém no jardim provavelmente sabe.\n\nEla ainda estava de pé e foi fotografada em novembro de 2024, quando Ashley Biden posou à sua frente durante o G20, e a foto circulou amplamente."
+  },
+  "rio_002": {
+   "name": "O Grande Mogno-Africano",
+   "species": "Mogno-africano (Khaya senegalensis)",
+   "age_estimate": "não documentada",
+   "access": "Entrada paga no Jardim Botânico do Rio de Janeiro (todos os dias, ingresso padrão do jardim); este exemplar é o ponto-âncora da própria 'Trilha das Árvores Gigantes' guiada do jardim",
+   "transport": "Bairro Jardim Botânico, acessível de ônibus; cerca de 20-25 min do centro do Rio de carro/táxi",
+   "story": "Na natureza, Khaya senegalensis para por volta de 30 a 35 metros. Esta tem 49,1 metros, o que a torna a árvore mais alta da coleção viva do Jardim Botânico, mais ou menos a altura de um prédio de dezesseis andares. É uma árvore da África Ocidental, do Sahel e das savanas secas, e se saiu consideravelmente melhor no Rio do que consegue em casa.\n\nO jardim a transformou na âncora de sua Trilha das Árvores Gigantes, aberta em 21 de setembro de 2022, o Dia da Árvore no Brasil. Marcus Nadruz, que coordena a coleção viva do jardim, liderou a primeira caminhada. A trilha reúne dez ou onze exemplares, dependendo da reportagem, todos com mais de 25 metros, e a segunda colocada é uma palmeira-imperial de 48,1 metros, um metro atrás.\n\nO que ninguém publicou é a idade dela ou sua grossura. A própria página da trilha no site do jardim fica atrás de um login, então quaisquer medidas que ela guarde ficam ilegíveis de fora, e as duas reportagens sobre o lançamento dão apenas a altura. Se você já caminhou pela trilha com um guia que sabe o resto, gostaríamos de saber.\n\nA altura sozinha já vale a caminhada. Ficar debaixo de um mogno quase meia vez mais alto do que a espécie consegue na África é uma conta estranha de fazer com o pescoço."
+  },
+  "rio_003": {
+   "name": "A Figueira Gigante de Tijuca",
+   "species": "Figueira-mata-pau (Urostigma sp.)",
+   "age_estimate": "mais de um século",
+   "access": "Gratuito, árvore de rua visível e acessível pela calçada pública a qualquer hora",
+   "transport": "Bairro de Tijuca; acessível de metrô (estações Saens Peña ou Afonso Pena) mais uma curta caminhada",
+   "story": "Em outubro de 1968, o estado do Rio colocou esta figueira fora do alcance de uma motosserra. O Decreto E 2433 a lista como imune ao corte, categoria legal que o instituto estadual de patrimônio reserva para árvores notáveis individuais, não para edificações. Desde então ela permanece na calçada da Rua Mariz e Barros, em frente ao número 678, de frente para o prédio do SENAI.\n\nÉ uma figueira mata-pau, planta que começa a vida na forquilha de outra árvore e termina substituindo-a. Esta tem um tronco curto, grosso e sulcado, e uma profusão de raízes aéreas entrelaçadas em algo entre uma parede e uma gaiola. O catálogo de patrimônio a chama de secular, e não dá nenhum número, então nós também não daremos.\n\nUma única fonte é tudo o que esta árvore tem: um registro do catálogo de patrimônio que cita o decreto. O que isso deixa é uma ordem de proteção de 1968 e um endereço que você mesmo pode conferir.\n\nE essa é também a lacuna honesta aqui. Não encontramos um avistamento datado dela nos últimos anos, apenas o registro, inalterado. Se você passar pela Mariz e Barros e ela ainda estiver de pé sobre a calçada, vale a pena nos contar, e o contrário também."
+  },
+  "rio_004": {
+   "name": "A Árvore-do-Imperador do Campo de Santana",
+   "species": "Árvore-do-Imperador (Chrysophyllum imperiale)",
+   "age_estimate": "cerca de 150 anos",
+   "access": "Gratuito, no parque público do Campo de Santana, aberto todos os dias",
+   "transport": "Estação Central do Brasil ou estação de metrô Presidente Vargas, poucos minutos a pé",
+   "story": "Este é o único exemplar centenário catalogado da espécie no Rio, e parte dele é sustentada por cabos de aço. Em abril de 2022, o engenheiro florestal Sydney Brasil subiu na árvore, doze metros e mais, e instalou cabos para sustentar dois galhos que haviam rachado sobre cavidades antigas. Ele já tinha sinalizado o dano em 2019.\n\nChrysophyllum imperiale está criticamente ameaçada em sua própria Mata Atlântica, e é chamada de árvore-do-imperador porque dois imperadores gostavam dela. Dom Pedro I e Dom Pedro II apreciavam o fruto, parecido com um abiu, de casca amarelo-pálida e polpa doce e translúcida, e Dom Pedro II mandou mudas para o exterior. Exemplares catalogados hoje crescem nos jardins botânicos de Sydney, Lisboa, Buenos Aires, Bruxelas e Florença.\n\nEla cresce no Campo de Santana, o maior espaço verde do centro do Rio, que o paisagista francês Auguste François Glaziou foi contratado para criar em 1871. Dom Pedro II o havia trazido em 1858 para comandar os parques e jardins imperiais, e ele depois desenhou o Passeio Público, os jardins do Palácio do Catete e a Quinta da Boa Vista. Glaziou plantou esta árvore. Nenhuma fonte dá o ano, então sua idade é uma faixa de 140 a 160 anos, em vez de um número contado a partir da fundação do parque.\n\nDezoito anos depois que aquele parque abriu, a República foi proclamada nele."
+  },
+  "rio_005": {
+   "name": "A Figueira da Rua Faro",
+   "species": "Figueira (Ficus sp.)",
+   "age_estimate": "disputada, mais de 200 anos",
+   "access": "Gratuito, árvore de rua na Rua Faro pública, visível e acessível a qualquer hora",
+   "transport": "Bairro Jardim Botânico; acessível de ônibus, cerca de 20 min do centro do Rio",
+   "story": "Em 1980, esta figueira se tornou a primeira árvore que a cidade do Rio jamais tombou, e foi preciso um protesto na rua para chegar lá. Uma construtora tinha planos para um prédio no número 45 da Rua Faro e queria a árvore derrubada ou podada com rigor. Em 8 de janeiro de 1980, mais de cem moradores se reuniram sob ela, liderados pelo advogado Leonel Kaz, e a campanha fundou uma associação de moradores que existe até hoje. Uma ordem de proteção federal veio primeiro e depois foi anulada pelo mesmo órgão federal que a havia emitido. O conselho de patrimônio da cidade, recém-criado, interveio, e o Decreto 2.783, de 23 de setembro de 1980, tornou a árvore um bem municipal protegido. Dois dias antes, o Jornal do Brasil havia estampado a história na capa de seu Caderno B.\n\nSua idade é disputada e não vamos resolver isso aqui. O JB em Folhas, ao recontar o resgate em 2023, a chama de mais de 200 anos. A própria história da AMAJB sobre si mesma a chama de um ser vivo de mais de 350 anos. A faixa aqui contempla as duas.\n\nA figueira cresceu ao lado do antigo caminho para a Capela de Nossa Senhora da Cabeça, do século XVII, quando a família Faro era dona da Chácara da Cabeça, no século XIX. Nenhum dos relatos nomeia a espécie além de figueira. Se você souber qual é, nos conte."
+  },
+  "rio_006": {
+   "name": "Maria Gorda, o Baobá de Paquetá",
+   "species": "Baobá (Adansonia sp.)",
+   "age_estimate": "disputada, provavelmente séculos de idade",
+   "access": "Gratuito, na orla pública da Praia dos Tamoios; acessível a qualquer hora",
+   "transport": "Só se chega de barca a partir da Praça XV, no centro do Rio: a barca regular da CCR Barcas leva cerca de 60-70 minutos em cada sentido, e uma catamarã mais rápida faz algumas travessias em 30-40 minutos; é uma viagem de barco, não um pulo rápido, e deve ser planejada como um passeio à parte, não como complemento de uma caminhada no continente",
+   "story": "A placa em frente a este baobá faz uma oferta: sorte eterna a quem me beijar e respeitar, e sete anos de azar para cada maldade feita contra mim. Os moradores da ilha levam isso a sério o bastante para abraçar o tronco, que tem dez metros de circunferência.\n\nMaria Gorda é o principal motivo de boa parte das pessoas pegarem a barca para Paquetá. Ela é listada individualmente pelo instituto estadual de patrimônio, e também foi uma das dez árvores da ilha tombadas juntas pela cidade em 1967. Sua idade é uma bagunça. Um relato diz que foi plantada em 1627 por colonizadores que trouxeram a semente da savana africana. Outro, que não conseguimos ler diretamente, afirma que um baobá veio de Manaus em 1907 e recebeu o nome nessa época. Quase três séculos separam essas duas versões, então a faixa aqui fica larga em vez de escolher um lado.\n\nA tradição local liga sua origem à morte de uma mulher escravizada, Maria Apolinária, que teria jurado deixar uma marca da cultura africana na ilha. Isso é história oral, não registro, e é contado aqui como tal.\n\nEla estava viva e bem em janeiro de 2025. Uma moradora de sessenta e quatro anos contou a um repórter que não havia vandalismo recente, e que a árvore já havia lançado três mudas, todas replantadas em outros pontos de Paquetá."
+  }
+ }
+}
