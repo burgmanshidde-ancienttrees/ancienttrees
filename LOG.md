@@ -1,6 +1,51 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (session) - The website's thumb and ticket are drawn now, the same glyphs the app uses
+
+Hidde, looking at the two surfaces side by side: "op de site is de duim
+een gele emoji, in de app een lijntekening, wil je die ook gelijk
+hebben", and with it the standing instruction "neem app altijd als
+leidend wbt design".
+
+Two things changed, both on the tree page:
+
+- **The worth-the-visit thumb** was the character an operating system
+  draws, so the same control was a yellow cartoon on the web and an
+  outline glyph on the phone, and it wore a colour this site does not
+  own. It is now the pair the app draws (`hand.thumbsup` and its filled
+  twin) and the pair the save heart on this site already drew: outline
+  in ink while nothing is cast, solid moss once it is.
+- **The ticket band** carried the app's blue, the app's sentence and the
+  app's tenth-opacity ground, and no ticket. The app has drawn one beside
+  that sentence since the band was built. The website draws one now, in
+  the same blue, on the English and the translated tree pages.
+
+Swept the rest rather than guessing: that thumb was the only emoji
+anywhere in the site's markup, the species silhouettes are already one
+shared set, and search, share and heart already agree across the two
+surfaces. What does NOT yet agree is listed in FOR HIDDE below.
+
+To keep it from coming back, `check_icons_are_drawn()` in scripts/qa.py
+refuses an emoji in the site's markup and names the line. Removing it
+needs Hidde, like every ratchet check.
+
+Looked at the pixels: rendered the changed elements at 375 points, both
+states, and a built Sapporo tree page carrying the ticket band. Full
+`astro build` clean (5515 pages), qa.py green, paritycheck green.
+
+FOR HIDDE: three app-versus-web gaps that are bigger than an icon and
+are yours to rank, not mine to start.
+
+1. The app prints the vote count on the thumb; the website prints no
+   number at all and its own script says so. The count exists
+   (`tree_vote_counts`), so this is the website catching up.
+2. There is no tick-off control on the website at all. The app collects;
+   the web only saves. `.seen-btn` survives in city-map-script.ts as dead
+   code nothing emits.
+3. The map pin on the phone wears a ticket mark, a heart and a tick. The
+   web map pin wears none of the three.
+
 ## 2026-09-12 - Night run 2026-09-12 02:02 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 32.8 minutes of its 120 minute window, 244 turns, 45 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: vancouver, amsterdam, barcelona, which block the top of the queue until they expire.
