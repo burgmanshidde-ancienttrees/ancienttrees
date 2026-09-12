@@ -19,7 +19,7 @@ you to check the specie if it matches before you put it live. also you
 should sort of judge if it matches the description"). A reader may name a
 species in the app and it arrives as a hint; nothing requires it. Both
 checks below are made against OUR record of the tree, which the queue
-carries as tree_species, recognise, why_go, tree_girth_cm, tree_height_m
+carries as tree_species, recognise, tree_girth_cm, tree_height_m
 and story.
 
 THE PHOTOGRAPH MUST FIT THE DESCRIPTION, as well as the species. A big

@@ -82,7 +82,7 @@ struct PlaceMapPage: View {
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {
-            Text(trees.count == 1 ? "1 tree in \(title)" : "\(trees.count) trees in \(title)")
+            Text("\(treesLabel(trees.count)) in \(title)")
                 .font(.brand(16, .bold, relativeTo: .headline))
                 .foregroundStyle(Brand.ink)
                 .frame(maxWidth: .infinity)

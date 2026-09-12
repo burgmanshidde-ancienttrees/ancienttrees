@@ -256,7 +256,9 @@
         "status": "missing"
       },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "height_m": 15.0,
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }
