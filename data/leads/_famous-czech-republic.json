@@ -57,8 +57,9 @@
         "https://commons.wikimedia.org/wiki/File:Svojs%C3%ADkova_l%C3%ADpa,_Volyn%C4%9B_01.jpg"
       ],
       "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "species_basis": "confirmed via its Wikimedia Commons category, which classes it under 'Famous Tilia cordata in South Bohemian Region'; supersedes the earlier genus-only guess",
+      "verify_note": "2026-09-12 pass: found in the Wikipedia district list 'Seznam pamatnych stromu v okrese Strakonice' (coordinates 49.1662603,13.8901597, matching this lead closely; location given as 'Park u ulice U nemocnice', Volyně). Named for Antonin Benjamin Svojsik, founder of Czech Scouting, and Commons groups it with 'Monuments and memorials to scouting'. Two things held this back from verifying: (1) no age, girth or AOPK register number in the district-list table, unlike its neighbours in the same table which all carry a Pstrom register id; this tree's slot is blank, suggesting it may never have held formal protected-tree status, and (2) its Commons category is itself filed under 'Former famous trees in Czechia', which reads as a signal the tree may have died, been felled or been delisted, though no source explaining why was found in the ~10 minutes spent on it this pass. Left as a lead rather than blocked or verified: not enough evidence either way, and 'former famous tree' is too ambiguous a signal to call it dead outright per the never-fabricate rule. A future pass should check the 'Former famous trees in Czechia' category description and any cs.wikipedia edit history for a removal note before touching this one again."
     },
     {
       "name": "Buk na Bekovce",
@@ -79,9 +80,10 @@
         "https://commons.wikimedia.org/wiki/File:%C4%8Cervenolist%C3%BD_buk_v_Budovcov%C4%9B_ulici_(01).jpg",
         "https://commons.wikimedia.org/wiki/File:%C4%8Cervenolist%C3%BD_buk_v_Budovcov%C4%9B_ulici_(02).jpg"
       ],
-      "status": "lead",
-      "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "blocked",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea, registered locally as 'buk lesní nachový')",
+      "species_basis": "confirmed via the Wikipedia district list 'Seznam pamatnych stromu v okrese Ceske Budejovice'",
+      "reason": "ACCESS BLOCKED under hard rule 10 ('not somebody's home'). The Wikipedia district list places it in a private garden at house no. 66, Dukelska ulici, Ceske Budejovice (a WebSearch AI summary separately called it Budovcova street; the two streets may intersect nearby but either way it is a residential garden, confirmed by a search summary describing it as a 'private residential garden'). Register no. 10038/103238, girth 248cm, height 19m per the Wikipedia table (a search-summary figure of 348cm/26m/~100 years surfaced too but was NOT used per the search-summary-is-a-lead-never-a-source rule, since it could not be confirmed on a fetched page). Moved from lead to blocked rather than left open, since a private dwelling garden is one of the two absolute exclusions under hard rule 10 and no source suggested any public path or viewing point."
     },
     {
       "name": "Buk u rybníčku",
@@ -223,9 +225,10 @@
         "https://commons.wikimedia.org/wiki/File:Hor%C3%A1k%C5%AFv_buk,_Lhoty_u_Pot%C5%A1tejna.jpg",
         "https://commons.wikimedia.org/wiki/File:Torzo_Hor%C3%A1kova_buku.jpg"
       ],
-      "status": "lead",
-      "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "blocked",
+      "species": "Beech (Fagus sylvatica)",
+      "species_basis": "confirmed via its own cs.wikipedia article",
+      "reason": "DEAD. Its own dedicated cs.wikipedia article gives 'zanik = 2006' (demise 2006) in its infobox and states plainly: in 1993 the beech was still alive but already declining; in 2006 it broke apart, leaving only a stump with one last living branch, which itself soon died. Until its death it was the largest living beech in the Czech Republic (37m tall, 750cm girth in 1980/1993), also known as Horakovsky buk, Velky buk or Buk hrabete Kinskeho, protected since the 19th century and by the state since 1980. The second Commons photo, 'Torzo Horakova buku' (the beech's stump/torso), independently confirms this. Never ships per the never-dead rule."
     },
     {
       "name": "Žižkův buk v Malčíně",
@@ -347,16 +350,17 @@
     },
     {
       "name": "Chudobínská borovice",
-      "lat": null,
-      "lng": null,
+      "lat": 49.5719306,
+      "lng": 16.2767833,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2020_European_Tree_Of_The_Year_Winner.jpg",
         "https://commons.wikimedia.org/wiki/File:2020_European_Tree_Of_The_Year_Winner_cropped.jpg",
         "https://commons.wikimedia.org/wiki/File:Chudob%C3%ADnsk%C3%A1_borovice,_pohled_z_v%C3%BDchodn%C3%AD_strany.jpg"
       ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "verified",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "species_basis": "confirmed via its own cs.wikipedia article infobox",
+      "reason": "Verified 2026-09-12 in data/research/famousczechrepublic-verified.json as chd_001, The Chudobin Pine (Chudobin u Dalecina, its own single-tree place). European Tree of the Year 2020 winner (47,226 votes), view-only per hard rule 10 (protected reservoir buffer zone, viewed from a bank-side viewpoint). Awaiting write-stories pass."
     },
     {
       "name": "Dub u Lukavické tvrze",
@@ -374,14 +378,15 @@
     },
     {
       "name": "Dub v Višňové",
-      "lat": 50.938917,
-      "lng": 15.02725,
+      "lat": 50.944,
+      "lng": 15.028,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2014_Oak_of_Vi%C5%A1%C5%88ov%C3%A1_CZ.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "verified",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "confirmed via turistika.cz and cs.wikipedia's Visnova (okres Liberec) article",
+      "reason": "Verified 2026-09-12 in data/research/famousczechrepublic-verified.json as vis_001, The Guardian Oak of Viska (Viska/Visnova, its own single-tree place). Known as 'Dub ochrance'; held back 2010 flood debris and saved houses, won Czech Tree of the Year 2013, 5th in European Tree of the Year 2014. Awaiting write-stories pass."
     },
     {
       "name": "Hrušeň u Mrákotína",
@@ -391,7 +396,10 @@
         "https://commons.wikimedia.org/wiki/File:Protected_pear_tree_by_Mr%C3%A1kot%C3%ADn.jpg",
         "https://commons.wikimedia.org/wiki/File:Road_from_Mr%C3%A1kot%C3%ADn_to_Malinn%C3%A9.jpg"
       ],
-      "status": "lead"
+      "status": "verified",
+      "species": "Common Pear (Pyrus communis)",
+      "species_basis": "confirmed via its own cs.wikipedia article infobox",
+      "reason": "Verified 2026-09-12 in data/research/famousczechrepublic-verified.json as mrk_001, The Pear Tree in the Middle of the Field (Mrakotin, its own single-tree place). Czech Tree of the Year 2023 winner (6,433 votes), subject of the folk song 'Stoji hruska v sirem poli'. Awaiting write-stories pass."
     },
     {
       "name": "Jabloň u Lidmanů",
