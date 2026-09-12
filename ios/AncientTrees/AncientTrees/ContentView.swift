@@ -469,6 +469,17 @@ struct ContentView: View {
                 // still opens Safari with the real page rather than the app
                 // sitting on whatever tab it last had open.
                 .onOpenURL { url in
+                    // A sign-in link first, because it is the one incoming URL
+                    // that goes nowhere: it carries tokens in its fragment and
+                    // its whole job is to put somebody back in the account they
+                    // just asked for, on the screen they were already on. Added
+                    // 2026-09-12 with /auth in the site's AASA; see
+                    // Account.signInFromLink for why the refresh token is spent
+                    // rather than the access token read.
+                    if url.path == "/auth" {
+                        Task { await account.signInFromLink(url) }
+                        return
+                    }
                     guard let route = Self.route(for: url) else { return }
                     navigator.push = route
                 }

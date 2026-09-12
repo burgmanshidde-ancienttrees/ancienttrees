@@ -1,6 +1,50 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - Apple on the web, and the app's sign-in link finds its way home
+
+Hidde asked why Apple login is missing on mobile web, and said email sign-in
+still has to be built for the app. Both are the same rule failing: a feature
+designed for one surface and not the other.
+
+**Apple on the web is built and waits on one console visit.** The button, the
+copy in all eight languages, the click wiring and the styling are in; the flag
+`APPLE_SIGNIN` in site/src/lib/site-config.ts is false, and the comment there
+carries the three steps he has to do. The app signs in with Apple natively,
+which needs only the bundle id; the web takes the ordinary OAuth redirect,
+which Apple will not run against a bundle id. It needs a Services ID and a
+signing key, and neither can be made from here. Flipping that one word puts the
+button on the dialog and on /account. Verified with the flag on: it renders in
+English, German and Japanese, does not overflow at 375px, and both buttons
+measure identically.
+
+**The app's email route now comes back to the app.** He chose the universal
+link over paying for SMTP. /auth joins /t in the site's
+apple-app-site-association, the app asks Supabase to land sign-in links there,
+and it reads the tokens out of the fragment. The new /auth page is the other
+half: when iOS does not hand the link to the app, it signs the person in on the
+website, which is the same account.
+
+**FOR HIDDE, two things.**
+
+1. Apple on mobile web needs ten minutes in two consoles. developer.apple.com:
+   a Services ID with ancienttrees.app and
+   `https://caimvxiyrtifilimlkqw.supabase.co/auth/v1/callback` as the return
+   URL, plus a key with Sign in with Apple enabled (the .p8 downloads once and
+   never again). Then Supabase, Authentication, Providers, Apple: the Services
+   ID goes in the client ids BEFORE the bundle id that is already there. Tell
+   me when it is done and I flip the flag.
+2. Supabase, Authentication, URL Configuration: `https://ancienttrees.app/auth`
+   has to be on the redirect allow-list, or Supabase quietly substitutes the
+   Site URL and the sign-in link lands on the homepage instead.
+
+**What is NOT done, plainly.** The app changes are UNCOMPILED. This container
+has no Swift toolchain and no Xcode, so Account.swift, ContentView.swift,
+SignIn.swift and Launch.swift were written and read but never built, and
+appsweep and appfit could not run. `Launch.emailSignIn` stays false. The next
+session on the Mac has a small diff to compile, sweep and then test with a real
+mail on a real phone, which is the only place the universal link can be proven.
+
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
 Hidde, on finding the whole attribution line under every page: "moet dit

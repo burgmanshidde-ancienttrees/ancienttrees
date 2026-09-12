@@ -1,0 +1,81 @@
+---
+// Where an emailed sign-in link lands (2026-09-12, Hidde: "we also still need
+// to build email sign in for app", and his choice of the universal-link route
+// over custom SMTP).
+//
+// Why this page exists at all. The app's typed-email route has been hidden
+// since 2026-08-30 because of what the MAIL contains rather than anything in
+// our code: Supabase's built-in sender cannot have its template edited, so it
+// sends a magic LINK where the app's screen asks for six digits. Editing that
+// template needs custom SMTP, which is a third party in the product and so
+// hard rule 5, and he said no. This is the other way round the same wall:
+// leave the link a link, and make the link come back to the app.
+//
+// The chain, so nobody has to reconstruct it. The app asks Supabase for an OTP
+// with redirect_to pointing here. The mail carries a link to Supabase's own
+// /auth/v1/verify, which verifies the token and redirects the browser to
+// https://ancienttrees.app/auth#access_token=...&refresh_token=... Because
+// /auth is listed in our apple-app-site-association, iOS may hand that URL to
+// the app instead of opening Safari, and the app signs in with the tokens in
+// the fragment.
+//
+// AND IT SAYS "MAY", which is the honest part and the reason this page is a
+// real page rather than a stub. A universal link is reliable when a person
+// TAPS it; this one arrives at the end of a server redirect, and iOS does not
+// promise to honour that. So the fallback is not an error state, it is the
+// ordinary other half: the visitor lands here in the browser and signin-js,
+// which parses the fragment on every page that carries it, signs them in on
+// the WEBSITE. That is a real outcome rather than a failure, because the site
+// and the app are the same account and the same saved trees.
+//
+// What this page must never do is claim the app is signed in when it is not.
+// The copy below is written for the case it can actually see, which is the
+// browser one: if the app had taken the link, this page would never have
+// rendered.
+//
+// noindex because it is a landing for a single-use token and there is nothing
+// here to find in a search. The orphan check in qa.py exempts noindex pages,
+// which is what lets a page nothing links to exist on purpose.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+import SignInModal from "../components/SignInModal.astro";
+import { SIGNIN_JS } from "../lib/signin-js";
+import { APP_STORE_URL } from "../lib/site-config";
+
+const canonical = `${BASE_URL}/auth`;
+---
+<Base
+  title="Signing you in"
+  description="Where an emailed sign-in link lands."
+  canonical={canonical}
+  headExtra={'<meta name="robots" content="noindex, nofollow">'}
+>
+<main class="content-page">
+  <h1 id="auth-h">Signing you in</h1>
+  <div class="prose-block">
+    <p id="auth-ok" hidden>You are signed in on this site, and the trees you save here are on your account. If you asked for this link inside the app, open the app and sign in there with the same address.</p>
+    <p id="auth-no" hidden>This link did not carry a sign-in. It may already have been used, or it may have expired: a sign-in link works once and lasts fifteen minutes. You can ask for a new one.</p>
+    <p id="auth-wait">One moment.</p>
+    <p><a class="go-btn" href="/account">Your trees</a></p>
+    <p class="signin-fine">Signing in on your phone instead? <a href={APP_STORE_URL}>Get the app</a>.</p>
+  </div>
+</main>
+<SignInModal />
+<Fragment set:html={SIGNIN_JS} />
+<script is:inline>
+// signin-js has already stored the session and cleaned the URL by the time
+// this runs, so the question here is only which sentence to show. Reading the
+// stored session rather than the hash is deliberate: the hash is gone.
+(function () {
+  var ok = false;
+  try {
+    var s = JSON.parse(localStorage.getItem('ancienttrees_session') || 'null');
+    ok = !!(s && s.access_token);
+  } catch (e) {}
+  document.getElementById('auth-wait').hidden = true;
+  document.getElementById(ok ? 'auth-ok' : 'auth-no').hidden = false;
+  document.getElementById('auth-h').textContent =
+    ok ? 'You are signed in' : 'That link did not work';
+})();
+</script>
+</Base>

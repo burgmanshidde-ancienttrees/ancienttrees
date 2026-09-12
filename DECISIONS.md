@@ -1,5 +1,56 @@
 # Decisions
 
+## 2026-09-12 - Sign in with Apple comes to the web, and the app's emailed link comes back to the app
+
+Hidde: "Why is apple login not available on mobile web? Everything should be
+consistent across platform we also still need to build email sign in for app."
+
+**On Apple, the honest answer was two things and only one of them was ours.**
+The button was never built here: the app got Apple on 2026-08-20 and the web
+dialog got Google the same day. That is the both-surfaces rule failing in the
+very component that already records the same failure once, about the Google
+mark staying a bare pill on the web for a fortnight after it was corrected in
+the app.
+
+The second half is why it was never one line away, and it is worth keeping
+because it will come up again for any provider. The app holds a NATIVE Apple
+credential and posts it (`grant_type=id_token`), and Apple takes the bundle id
+as the audience for that, so it needs no web registration at all. A browser has
+no such credential, so the web takes the ordinary OAuth redirect, and Apple
+will not accept a bundle id there: it wants a Services ID and a .p8 signing key,
+both of which live in his Apple Developer account. Built and wired behind
+`APPLE_SIGNIN` in site-config.ts, false until he has done that, because a
+sign-in button that bounces the visitor to a provider error is the dead
+check-in button of 2026-07-29 again.
+
+**On email in the app, he chose the free route over the paid one.** The screen
+and the code have existed since August; the blocker was never our code but what
+the MAIL contains, since Supabase's built-in sender mails a link where the app
+asks for six digits, and editing that template needs custom SMTP. He said no to
+SMTP on 2026-08-30 and was offered it again here, with the argument that it
+also lifts the website's few-per-hour sender limit. He chose the universal link
+instead.
+
+So the link stays a link and what changed is where it LANDS: `/auth` on our own
+domain, now listed in the apple-app-site-association beside `/t`, so iOS can
+hand the URL to the app, and `Account.signInFromLink` spends the refresh token
+out of its fragment. It spends the refresh token rather than reading the access
+token beside it for three reasons that all fall out together: Supabase answers
+with the full payload so the account gets its user id, the exchange proves the
+link is real, and there is one parser rather than a second written for URLs.
+
+**The limit, stated rather than discovered later.** A universal link is
+reliable when a person TAPS it, and this one arrives at the end of a server
+redirect, which iOS does not promise to honour. That is why `/auth` is a real
+page rather than a stub: when the app does not take it, the page signs the
+person in on the WEBSITE, which is the same account and the same saved trees.
+It is the other half of the outcome rather than an error, and the page never
+claims the app is signed in when it is not.
+
+`Launch.emailSignIn` therefore stays false, and what it waits on has changed
+from a purchase to a test: the chain cannot be verified from a build, only from
+a phone with a real mail in it.
+
 ## 2026-09-08 - A tree needs a reason, not just an honest page
 
 Hidde, shown that four trees had gone live in Nara overnight from his own app
