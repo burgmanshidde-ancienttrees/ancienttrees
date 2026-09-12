@@ -1,6 +1,23 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - The map credit, made as quiet as it may honestly be
+
+Hidde: "can we minimise it further." What cannot move is that it exists and can
+be found. What can is how loudly it sits there while nobody is looking for it.
+
+The five seconds before it folds away are now 10px on a translucent ground
+instead of a solid white band, and the dot it folds into drops its white pill
+and its shadow entirely, sitting at 55 percent until a cursor or a keyboard
+reaches it. Verified on the deployed page: 24 by 24, background transparent,
+computed opacity 0.55, with the /sources link still inside it.
+
+One further step exists and was not taken, because it is a judgement about how
+literally to read a safe harbour rather than a build decision: starting
+collapsed, so the five seconds never happen. Most map apps do exactly that, and
+the OSMF guideline's three sanctioned collapses all describe something that was
+shown first. It is Hidde's call, not a run's.
+
 ## 2026-09-12 - Five seconds, then the map credit is a 24 point (i)
 
 Hidde asked whether it has to be visible at all. It has to be reachable and it
