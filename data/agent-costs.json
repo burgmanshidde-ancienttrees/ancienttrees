@@ -7663,6 +7663,15 @@
         "note": "orchestration; investigated two rung-2 breaks flagged at session start. Walking routes: a git push race, fixed with a retry loop, but could not push the workflow-file edit (GitHub blocks workflow changes without a `workflows` scope on this token) so left reverted, FOR HIDDE. FlowWalk's person-more tap raced again on the floor job under CI load; widened its wait 10s->20s and pushed. Confirmed Taormina and Ravenna are still documented dead ends (register supply is the same blocked hotel-grounds trees / too thin), matching today's earlier continuations; did not re-research. Ran preflight, superlatives and a full astro build (5519 pages, exit 0) before committing",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "maastricht",
+        "kind": "verify",
+        "tokens": 55000,
+        "trees": 1,
+        "note": "Deepen pass on Nolenspark LRMB cluster: 1 verified (maa_019, Ginkgo of Mgr. Nolenspark, flagged single-source), 2 new blocked (Bruine beuk/Stokstraat and Witte paardenkastanje 0.7km, both private/institutional gardens), 1 new lead (Japanse notenboom kandelaber/Bredestraat, access unclear), Zilverlinde pair left as pre-existing lead (redundant with published maa_009). Confirmed several 'within 80m' flagged register rows were already-published trees (maa_008/009/010/018) via exact-coordinate match.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
