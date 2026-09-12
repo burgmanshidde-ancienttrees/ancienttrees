@@ -9,6 +9,7 @@
 //     equivalent of build_site.py's ERRORS.append(), which collected and
 //     reported at the very end of the build instead).
 import { STYLE_HREF } from "../lib/asset-hash";
+import { UNITS_JS } from "../lib/units-js";
 import { chrome } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
@@ -354,5 +355,14 @@ document.addEventListener('click', function(e) {
 </script>
 
 )}
+{/* Kilometres or miles, decided from the reader's own region (2026-09-12).
+    Here rather than per page because a distance can appear on any page type
+    and a script every one of them has to remember to include is a script one
+    of them will forget, which is the lesson of the hearts and the sign-in
+    dialog. It returns on its first line when a page holds no distance.
+
+    OUTSIDE the analytics block above, which is what the first version got
+    wrong: it would have shipped only where a Cloudflare token is set. */}
+<Fragment set:html={UNITS_JS} />
 </body>
 </html>

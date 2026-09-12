@@ -43,7 +43,38 @@ export function distLabel(
   b: { latitude: number; longitude: number }
 ): string {
   const m = haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]) * 1000;
+  return kmLabelHuman(m / 1000);
+}
+
+/** The same label from kilometres, for a distance already measured. */
+export function kmLabelHuman(km: number): string {
+  const m = km * 1000;
   return m < 1000 ? `${Math.round(m / 10) * 10} m` : `${(m / 1000).toFixed(1)} km`;
+}
+
+/** A distance that can become miles in the reader's browser (2026-09-12).
+ *
+ * The pages are static and the reader's region is not knowable at build time,
+ * so every distance ships in metric and carries the kilometres that made it.
+ * units-js.ts rewrites the span where the region, or the account, reads in
+ * miles. `data-metric` holds the original so the account can overrule the
+ * region in either direction without a reload.
+ *
+ * HTML rather than a component because two of the three call sites feed the
+ * string into a translated sentence template (`${d} verderop`), which a
+ * component cannot sit inside.
+ */
+export function distSpan(km: number): string {
+  const label = kmLabelHuman(km);
+  return `<span class="dist" data-km="${km.toFixed(4)}" data-metric="${label}">${label}</span>`;
+}
+
+/** distSpan between two points, which is what a page usually has. */
+export function distSpanBetween(
+  a: { latitude: number; longitude: number },
+  b: { latitude: number; longitude: number }
+): string {
+  return distSpan(haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]));
 }
 
 /** Every renderable tree's slug within a city, id -> slug. Mirrors the
