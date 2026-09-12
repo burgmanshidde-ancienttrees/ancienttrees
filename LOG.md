@@ -1,6 +1,59 @@
 # LOG
 
 <!-- archive-index -->
+
+## 2026-09-12 - Baarn's town hall plane, from a newspaper clipping, and the size of the Dutch seam
+
+Hidde photographed a page of the local paper: Baarn is the national kick-off
+of the European TreeTag campaign on Friday 18 September, and the first tag
+goes on the plane in front of the town hall. He asked for the tree and for
+the database behind it, and said explicitly not to mail anybody.
+
+**The tree.** brn_008, The Town Hall Plane, Baarn 7 -> 8. Stationsweg 18,
+pin confirmed from the register's own per-tree coordinate, 450 cm round,
+26 m tall, planted band 1890-1900. Two independent lines of evidence: LRMB
+record 1677447 for position, girth, ownership, access and condition, and
+the municipality's TreeTag announcement for the measurements taken by
+boomdeskundige Pius Floris. Girth and planting band agree independently,
+450 cm at about 3.5 cm a year putting a plane near 130. The register's own
+hedge about the tree being planted during the 1897 villa's construction is
+repeated as a hedge, not sharpened, which is the bridge claim this city
+already taught us once. No photograph: the press image is credited Gemeente
+Baarn and is not openly licensed. Baarn's intro, question_meta and access
+FAQ were rewritten for eight trees; preflight caught all three.
+
+**The database was already on disk, and it is bigger than anyone has said
+out loud.** data/registers/netherlands-lrmb.json, 16,094 trees, Bomenstichting,
+attribution-only licence, imported 2026-08-18. It holds 44 Baarn rows and
+carried the town hall plane with every field the page needed. Measured
+across the whole country: 8,233 rows are visitable=ja and not privately
+owned, so hard rule 10 is answered from the data, and **7,439 of those we do
+not map**, against 569 Dutch trees published. Utrecht alone has 210 unmapped
+and sits at queue #78; Amsterdam 165, Bronckhorst 112, Land van Cuijk 106,
+Zutphen 90, Lochem 86. The night runs are already mining this seam (Breda
+and Amersfoort the same week), so this is the size of it rather than a
+discovery that it was idle. Baarn itself has 17 more publishable unmapped
+rows, which would take it from 8 to 25 with no web research at all.
+
+**The register was imported but never indexed in the scouting ledger**, so
+scout_next.py read every Dutch city as unscouted. Added as a country-level
+entry with the measurement above and the unscouted Dutch leads worth a look
+when it runs dry (openbomenkaart.org, boomregister.nl / Boombasis,
+data.overheid.nl 14394, atlasleefomgeving.nl, the RCE green heritage map).
+
+**TreeTag is not a database.** It is an awareness action by Pius Floris
+Boomverzorging, hundreds of locations across the Netherlands, Belgium,
+Poland, England, Sweden and the United States, with the numbers computed in
+i-Tree. No public list or map of tagged trees exists that search can find.
+It is a lead source, because every tagged tree is one somebody argued for,
+and not something to import.
+
+FOR HIDDE: four of the six nominated Baarn trees are still unknown to us,
+and baarn.nl, baarnschecourant.nl, mooibaarn.nl and boomkronen.eu are all
+blocked by this session's egress proxy, so the list could not be read. A
+night run with open egress should try; if it is blocked there too, the page
+is one paste away.
+
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
 Hidde, on finding the whole attribution line under every page: "moet dit

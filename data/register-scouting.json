@@ -641,6 +641,12 @@
       "country": "United States",
       "status": "empty",
       "note": "SCOUTED 2026-09-10, on scout_next.py --target naming Daytona Beach (#65) as no supply and no verdict. The Florida Champion Trees register (see the corrected Fort Lauderdale entry above and OPEN_DATA_SURVEY.md) does cover Volusia County, Daytona Beach's county, but only 2 rows: a live oak at Bulow Creek State Park (~24km from the city centre) and a bald cypress at DeLeon Springs State Recreation Area (further still), neither reachable by public transport and both too far for the day-trip boundary as usually applied here. Too thin to open Daytona Beach itself. Route forward is from-zero web research on the city's own named parks if Hidde adds it to the from-zero list, or a reader submission; this register does not shortcut it."
+    },
+    {
+      "place": "Netherlands",
+      "country": "Netherlands",
+      "status": "imported",
+      "note": "LRMB v2024 (Landelijk Register Monumentale Bomen, Bomenstichting), 16,094 trees, imported 2026-08-18 to data/registers/netherlands-lrmb.json from the ArcGIS FeatureServer behind monumentalebomen.nl. Licence 'Onder bronvermelding te gebruiken: (c)Bomenstichting' per the site's own DCAT catalogue: attribution only, no non-commercial clause, which corrects the older OPEN_DATA_SURVEY.md verdict. Carries per-tree coordinates, a planting band, owner_category, visitable and visible, so hard rule 10 is answered from the data. Added to this ledger 2026-09-12: it was imported but never indexed here, so scout_next.py read every Dutch city as unscouted. MEASURED the same day: 8,233 of the rows are visitable=ja and not privately owned, and 7,439 of those we do not map, against 569 Dutch trees published. Biggest unmapped piles: Utrecht 210, Amsterdam 165, Bronckhorst 112, Land van Cuijk 106, Zutphen 90, Lochem 86, Borsele 83, Venlo 81, Haarlem 80, Arnhem 79. The Netherlands does not need scouting, it needs writing. Unscouted Dutch leads worth a look when this runs dry: openbomenkaart.org (OSM-derived), boomregister.nl / Boombasis (WUR+NEO+Geodan crown projections, licence unknown, probably commercial), data.overheid.nl dataset 14394 'Bomen in Nederland', atlasleefomgeving.nl/monumentale-bomen and the RCE's Kaart groen erfgoed."
     }
   ],
   "out_of_focus": {

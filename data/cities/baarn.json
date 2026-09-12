@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "oldest_tree_id": "brn_005",
-  "intro": "Baarn is a villa village that royalty, bankers and a university all planted for their own reasons, and the trees outlasted every one of those reasons. The Cantonspark spent seven decades as a university botanical garden, which is why a dawn redwood, a giant sequoia and a tulip tree share a free village park. In the Pekingtuin stands a red oak the village ringed in honour, and in the grounds of Paleis Soestdijk lies a catalpa a 1973 storm knocked flat, left there on a queen's own order. Six of the seven trees are free.",
+  "intro": "Baarn is a villa village that royalty, bankers and a university all planted for their own reasons, and the trees outlasted every one of those reasons. The Cantonspark spent seven decades as a university botanical garden, so a dawn redwood, a giant sequoia and a tulip tree share a free village park. The Pekingtuin holds a red oak the village ringed in honour, Paleis Soestdijk a catalpa a 1973 storm knocked flat and a queen left lying, and the town hall lawn a plane older than the building. Seven of the eight are free.",
   "meta_description": "Baarn's remarkable trees: a red oak the village ringed in honour, a university's old botanical garden, and a catalpa a storm felled and a queen kept lying.",
-  "question_meta": "Baarn's best-documented old tree is the American oak of the Pekingtuin, around 1850. Its story, and five more remarkable trees a walk apart.",
+  "question_meta": "Baarn's best-documented old tree is the American oak of the Pekingtuin, around 1850. Its story, and seven more remarkable trees a walk apart.",
   "question_answer": "The best-documented old tree in Baarn is the American oak of the Pekingtuin, planted around 1850, with a trunk of 5.52 metres around. The copper beech by the south pond at Kasteel Groeneveld may be older still, at an estimated 150 to 200 years, but its age is inferred from girth rather than recorded.",
   "question_context": "Baarn's trees are the residue of three different ambitions. The Pekingtuin was the garden of a vanished villa named Peking, and its red oak predates the park that formed around it; in October 2021 the municipality placed a protective ring around the trunk and invited villagers to submit inscriptions for it, which is the kind of honour most towns reserve for statues. The Cantonspark explains itself differently: from 1920 to 1987 it was Utrecht University's botanical garden, and when the university left, the exotics stayed, so a village of thirty thousand keeps a dawn redwood and a giant sequoia the way other towns keep a war memorial. Kasteel Groeneveld's tulip tree grove and copper beech belong to the estate-building era, when a good lane of trees was how you showed the neighbours you intended to stay. The ages here are honest rather than uniform: the oak's is well documented, the beech's is an estimate from girth, and each page says which is which.",
   "faq": [
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Baarn's remarkable trees free to visit?",
-      "a": "Six of the seven are free. The Pekingtuin and Cantonspark are public parks in the village itself, and Kasteel Groeneveld is a Staatsbosbeheer estate with open grounds. The one exception is the fallen catalpa in the grounds of Paleis Soestdijk, where the palace garden charges a small entry fee and opens Friday to Sunday."
+      "a": "Seven of the eight are free. The Pekingtuin, the Cantonspark and the lawn in front of the town hall are public ground in the village itself, and Kasteel Groeneveld is a Staatsbosbeheer estate with open grounds. The one exception is the fallen catalpa in the grounds of Paleis Soestdijk, where the palace garden charges a small entry fee and opens Friday to Sunday."
     },
     {
       "q": "What happened to the Kronkelbeuk in the Pekingtuin?",
@@ -305,6 +305,40 @@
       "location_precision": "confirmed",
       "notes": "New entry 2026-09-05, prompted by a reader's on-site GPS tag placing an unidentified tree within about 30 metres of the Landelijk Register Monumentale Bomen's 'Tulpenboom Cantonspark' (nr 1696955, planted 1910-1920, owner gemeente, visitable and visible, distinct from the brn_003 grove several kilometres away at Kasteel Groeneveld). Second source is Cantonspark's own Rijksmonument listing, which corroborates the park's protected botanical planting generally rather than this specimen individually; the register carries the specific description (crown condition, minor bark damage) used in the story. No girth recorded by any source found.",
       "how_to_recognise": "You can recognise it by standing alone a few paces from Cantonspark's giant sequoia, its trunk sound and its crown well kept. It stands by the park's main entrance on Abel Tasmanlaan."
+    },
+    {
+      "id": "brn_008",
+      "name": "The Town Hall Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 125,
+      "age_max": 135,
+      "girth_cm": 450,
+      "height_m": 26,
+      "location": {
+        "address": "Stationsweg 18, on the lawn in front of the town hall, Baarn",
+        "latitude": 52.210741,
+        "longitude": 5.291563,
+        "neighbourhood": "Village centre, beside the town hall, a short walk from Baarn station"
+      },
+      "story": "Over four and a half metres round and roughly 130 years old, the plane on the lawn at Stationsweg 18 is a century older than the town hall it stands in front of.\n\nThat building went up in 1993, on the footprint of a villa from 1897, and the national tree register suggests the plane may have been planted while the villa was being built. The same register records its condition as good despite that building history, which is worth something for a tree that has had construction work inside its root plate. It belongs to the municipality and stands in full view of the through road, which is why the register calls the position a fine one.\n\nIn September 2026 the municipality picked it to launch the European TreeTag campaign in the Netherlands, and had it measured first. It stands 26 metres and carries 412 square metres of leaf, which hold back some 64,000 litres of rainwater a year; the carbon stored over its life is reckoned to match the exhaust of a car driven more than 92,000 kilometres. Those figures go onto a wooden tag at its foot, which is the whole idea of the campaign: what a tree is worth, written down where people walk past it.\n\nIt is five minutes from Baarn station, and nothing stops you standing under it at any hour.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1677447, 'Gewone plataan Gemeentehuis Baarn', Stationsweg 18, planted band 1890-1900, girth 'ruim 4,5 meter', owner_category gemeente, setting plantsoen, visitable ja, visible ja, condition recorded good)",
+        "https://www.baarn.nl/ontdek-de-bijzondere-bomen-van-baarn (Gemeente Baarn: the plane in front of the town hall is the tree from which the European TreeTag campaign is launched on 18 September 2026; 26m tall, 412 m2 leaf area, over 64,000 litres of rainwater held per year, climate value equivalent to a car driven over 92,000 km)",
+        "https://www.baarnschecourant.nl/lokaal/natuur-en-milieu/1306344/baarnse-bomen-in-het-zonnetje (Baarnsche Courant, 'Baarnse bomen in het zonnetje': six Baarn trees nominated, five of them by werkgroep Baarn Natuurlijk Groen)"
+      ],
+      "access": "Free. Municipal lawn in front of the town hall, open ground beside a public road, reachable at any hour.",
+      "transport": "Baarn railway station, about a 5 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "how_to_recognise": "The single large plane on the open lawn directly in front of the town hall at Stationsweg 18, with the patchwork bark planes carry and a trunk over four and a half metres round.",
+      "verify_notes": "Added 2026-09-12 from a newspaper clipping Hidde photographed. Two independent lines of evidence: the LRMB register entry 1677447 (position, planted band, girth, ownership, access, condition) and the municipality's own TreeTag announcement carried by the Baarnsche Courant (height, leaf area, water and carbon figures, measured by boomdeskundige Pius Floris for the campaign). Age band and girth agree independently: 450cm at roughly 3.5cm of girth a year puts a plane near 130, which matches the register's 1890-1900 band. The planting date is the register's own hedge ('mogelijk ... in de bouwperiode van deze villa') and is repeated as a hedge, not sharpened. Pin taken from the register's per-tree coordinate at a named street address with a single registered tree on it. No open-licensed photograph found; the press image is credited Gemeente Baarn and is not openly licensed. NOTE: baarn.nl, baarnschecourant.nl, mooibaarn.nl and boomkronen.eu are all blocked by this session's egress proxy, so the two web sources were confirmed to exist and summarised via search rather than read in full. A run with open egress should read them and fill in the other five nominated trees."
     }
   ]
 }

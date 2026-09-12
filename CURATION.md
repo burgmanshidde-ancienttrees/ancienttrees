@@ -11,6 +11,32 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-12 - Baarn, +1 tree (town hall plane), and 17 more sitting in the register
+
+Added brn_008 from a newspaper clipping Hidde photographed. Baarn 7 -> 8
+trees, 0 flagged, 1 photo missing (no open-licensed image exists; the press
+photograph is credited Gemeente Baarn).
+
+What could NOT be verified this session: the other five trees nominated for
+a TreeTag in Baarn. The Baarnsche Courant names the count (six, five of them
+put forward by werkgroep Baarn Natuurlijk Groen) and not the trees.
+baarn.nl, baarnschecourant.nl, mooibaarn.nl and boomkronen.eu are all
+refused by this session's egress proxy (403 on CONNECT), so the municipal
+list at www.baarn.nl/ontdek-de-bijzondere-bomen-van-baarn was confirmed to
+exist via search and never read. This is a network limit of the session, not
+an exhausted hunt: a run with open egress should read it before treating
+this as closed.
+
+Worth keeping: 44 LRMB rows carry municipality Baarn, we map 11 of them, and
+17 of the rest are visitable=ja with a non-private owner, so they clear hard
+rule 10 from the register's own fields. Oldest first they are the Moseik and
+the Valse acacia (both 1750-1800), the Bruine beuk in the garden of the
+Apostolisch Genootschap (1810-1820), the Beuk in the Paleistuin (1850-1860),
+then a run of 1860-1870 trees including the Tulpenboom and the Gewone plataan
+at Paleis Soestdijk, the Rabobank horse chestnut and the Zilveresdoorn on the
+Tromplaan. Twelve more are privately owned and stay out; one is visitable
+only by appointment. Nobody needs to research Baarn from zero again.
+
 ## 2026-09-12 (continuation 11) - Finished an earlier attempt's Amersfoort/Breda claims; week budget nearly spent
 
 Inherited two standing register-verify claims (breda, amersfoort) whose
