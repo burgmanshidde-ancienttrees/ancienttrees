@@ -1,6 +1,64 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation 20) - Rung 2 sweep on two workflows the session-start hook flagged; dispatched an Alicante verify pass
+
+Continuation 19's work (Zwolle 14 -> 16, releasing the dead Berlin claim) was
+sitting uncommitted at the start of this attempt: build and `scripts/qa.py`
+both passed clean on it, so committed and pushed it as-is rather than redoing
+it (0942c32e).
+
+**Checked the two things the session-start hook called broken that
+`scripts/health.py` does not track.** "Walking routes" (schedule 09:32 UTC)
+failed on a git push race: it computed routes fine, committed locally, then
+`git pull --rebase` followed by `git push` was rejected because another push
+landed in the ~10 second gap between the two. No code fault; it recomputes
+routes from scratch on the next schedule and self-heals. Tried
+`gh workflow run` to fire it again now rather than wait; the token this
+session has cannot dispatch it (HTTP 403), so it waits for tomorrow's cron.
+
+**The iOS floor job (`ios.yml`, iOS 18 only, runs on schedule/dispatch, never
+push) is a real repeated failure, not a flake**: `testEveryFlowLeavesAWayBack`
+fails on `person-more` not found in 3 consecutive scheduled runs
+(09-11 19:27, 09-12 09:08, 09-12 18:56), including one AFTER
+`FlowWalk.swift`'s tap-wait was widened from 10s to 20s at 10:42 (commit
+9c16787a) specifically in response to the first failure. Widening the
+timeout did not fix it, which rules out the race explanation the code
+comment currently gives. Read `People.swift`: the three demo rows
+(`DemoPeople.on`) populate synchronously in a `.task` at `PeopleView`
+appear, with no network or animation dependency that should take anywhere
+near 20 seconds, so the underlying cause is more likely a genuine iOS 18
+vs newer-iOS difference in how XCUITest's button query sees a `List` row's
+controls, not a slow load. Did not attempt a blind Swift fix: this sandbox
+has no Xcode, `ios.yml` is the only thing that can verify a change, and a
+guess here costs a full CI cycle to find out it was wrong. Recorded here
+for whichever session next has budget for an Xcode-verified app change.
+
+**Checked `city_queue.py --next` for new coverage**: Taormina (register 5)
+and Ravenna (register 1) are both already-documented dead ends (all of
+Taormina's register trees sit on the same blocked hotel grounds; Ravenna's
+four candidates are scattered 17-19km apart, not a cluster), reconfirmed by
+at least three earlier continuations this week. Skipped both rather than
+re-litigating.
+
+**Dispatched a verify pass on Alicante instead** (stage-2 deepen target,
+16 -> 20, claimed and pushed first). Its Valencia-region register
+(`valencia-arboles-monumentales.json`) has a genuinely dense, walkable,
+girth-measured cluster of unmined candidates 0.2 to 1.5km from the existing
+trees (Ficus microcarpa group, an Olea europaea trio, more Ficus
+macrophylla), which is real register-backed supply rather than the
+already-exhausted Berlin leads file (checked first: every "NEW this pass"
+Berlin lead already carries a documented access or second-source gap from
+the 2026-09-07 pass, so it is not the free win it looks like on the
+`register: 195` headline number). Left running in the background; a future
+continuation merges `data/research/alicante-verified.json` once it lands,
+same as this one did for Zwolle.
+
+`run_health.py --week`: 4792/5000 at the start of this continuation, ~208
+minutes left. Kept this pass to inspection plus one bounded dispatch rather
+than further open-ended research, on the same reasoning continuation 19
+gave.
+
 ## 2026-09-12 (continuation 19) - Finished a stranded verify pass; Zwolle 14 -> 16
 
 An earlier attempt in this window stopped after 20 minutes with 100 still
