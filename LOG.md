@@ -1,6 +1,26 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (session) - Free to visit moved last, and built in the app too
+
+Two small things and one answer.
+
+"zet free to visit maar als laatst": the web row is now Favourites, My
+trees, Species, Free to visit, which leaves the three the app already had
+in the app's own order with ours after them rather than in front.
+
+And the same chip in the APP (MapFilters.swift gains `freeOnly`,
+MapTab.swift gains the chip, last in the row, ticket icon). It is
+PUSHED BUT NOT BUILT: there is no Swift toolchain in this container, so
+CI is the first compile and the screen sweep has not run. That is the
+agreed order for app work since 2026-08-26 ("kun je hem pushen voor je m
+langsloopt"), but the looking still has to happen on a Mac.
+
+THE ANSWER TO "ik zie nog niks op web qua filters": none of today's work
+is live. deploy.yml builds from `main` only and all nine commits of this
+session sit on claude/emoji-icon-inconsistencies-f6j9z3. Merging that
+branch is what deploys it.
+
 ## 2026-09-12 (session) - Filters on the web map, and a correction about which ones
 
 Hidde: "web heeft toch ook een xplore kaart - daar zou species toch nice

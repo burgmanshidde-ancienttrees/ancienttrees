@@ -896,6 +896,19 @@ struct MapTab: View {
                                     ? "Filter by species"
                                     : "Species: \(filters.species!). Tap to clear")
 
+                // LAST in the row, on Hidde's own word for the website's
+                // copy of it (2026-09-12: "zet free to visit maar als
+                // laatst"), so the three that were here keep their order and
+                // the new one follows them. The website's row is the same
+                // four in the same order.
+                FilterChip(label: "Free to visit", icon: "ticket",
+                           on: filters.freeOnly) {
+                    filters.freeOnly.toggle()
+                }
+                .accessibilityLabel(filters.freeOnly
+                                    ? "Showing only trees that are free to visit. Tap to clear"
+                                    : "Show only trees that are free to visit")
+
                 // No Clear chip. It appeared the moment any filter went on,
                 // which read as a cross growing out of the chip you had just
                 // tapped (Hidde, 2026-08-25: "dat kruisje is niet nodig, ik
