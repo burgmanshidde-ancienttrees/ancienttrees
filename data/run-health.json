@@ -12872,6 +12872,138 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-12T10:37:18+00:00",
+   "date": "2026-09-12",
+   "run_id": "34688914154",
+   "minutes": 79.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 486,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(jobs), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 10123711,
+   "claims_held": [
+    "warsaw",
+    "_famous-lithuania",
+    "helmond"
+   ],
+   "commits": 16,
+   "cities_touched": 27,
+   "cities": [
+    {
+     "city": "florence",
+     "trees": 1
+    },
+    {
+     "city": "maastricht",
+     "trees": 1
+    },
+    {
+     "city": "baltimore",
+     "trees": 0
+    },
+    {
+     "city": "boise",
+     "trees": 0
+    },
+    {
+     "city": "brussels",
+     "trees": 0
+    },
+    {
+     "city": "cabeza-del-buey",
+     "trees": 0
+    },
+    {
+     "city": "cardiff",
+     "trees": 0
+    },
+    {
+     "city": "caserta",
+     "trees": 0
+    },
+    {
+     "city": "cerro-veronese",
+     "trees": 0
+    },
+    {
+     "city": "fonte-colombo",
+     "trees": 0
+    },
+    {
+     "city": "hallstatt",
+     "trees": 0
+    },
+    {
+     "city": "helsinki",
+     "trees": 0
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    },
+    {
+     "city": "lausanne",
+     "trees": 0
+    },
+    {
+     "city": "leeuwarden",
+     "trees": 0
+    },
+    {
+     "city": "macugnaga",
+     "trees": 0
+    },
+    {
+     "city": "mendaza",
+     "trees": 0
+    },
+    {
+     "city": "minneapolis",
+     "trees": 0
+    },
+    {
+     "city": "monterey",
+     "trees": 0
+    },
+    {
+     "city": "nara",
+     "trees": 0
+    },
+    {
+     "city": "ottawa",
+     "trees": 0
+    },
+    {
+     "city": "rome",
+     "trees": 0
+    },
+    {
+     "city": "salamanca",
+     "trees": 0
+    },
+    {
+     "city": "sorrento",
+     "trees": 0
+    },
+    {
+     "city": "spokane",
+     "trees": 0
+    },
+    {
+     "city": "stockholm",
+     "trees": 0
+    },
+    {
+     "city": "tilburg",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
+   "logged": true
   }
  ],
  "schedule_changes": [
