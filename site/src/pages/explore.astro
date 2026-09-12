@@ -12,6 +12,7 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, slugify, distSpan, type CityEntry } from "../lib/trees";
+import { speciesCommon } from "../lib/species";
 import { cityFace, cityFaceSrcset } from "../lib/images";
 import { mapHead, exploreMapScript, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
 import { haversineKm } from "../lib/walks";
@@ -21,6 +22,9 @@ import { byCityListOrderEntry } from "../lib/city-order";
 import SignInModal from "../components/SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
+// My trees filters on the account's visited list, which this page did not
+// read until the chip row existed (2026-09-12).
+import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { SHEET_JS } from "../lib/sheet-js";
 
 function esc(s: string): string {
@@ -34,10 +38,28 @@ const allCities = byCityListOrderEntry((await getCollection("cities")).filter(ci
 
 const month = new Date().getMonth() + 1;
 const features: ExploreTreeFeature[] = [];
+// The species list the chip row picks from, and an index per tree. An index
+// rather than the name on every feature, because 3,055 copies of a dozen
+// common names is 45KB of the same words; the list ships once beside them.
+// Ordered by how many trees carry it, which is the only order that helps:
+// 521 species exist and twelve of them cover a third of the map.
+const speciesCount = new Map<string, number>();
+for (const entry of allCities) {
+  for (const t of entry.data.trees) {
+    const s = speciesCommon(t);
+    if (s) speciesCount.set(s, (speciesCount.get(s) ?? 0) + 1);
+  }
+}
+const speciesList = [...speciesCount.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .map(([name]) => name);
+const speciesIndex = new Map(speciesList.map((s, i) => [s, i]));
+
 for (const entry of allCities) {
   const cslug = entry.id;
   for (const t of entry.data.trees) {
     const loc = t.location;
+    const sp = speciesIndex.get(speciesCommon(t));
     features.push({
       type: "Feature",
       geometry: { type: "Point", coordinates: [loc.longitude ?? null, loc.latitude ?? null] },
@@ -49,6 +71,8 @@ for (const entry of allCities) {
         city: entry.data.city,
         age: t.age_estimate ?? "",
         now: 0 as 0 | 1,
+        ...(t.paid_entry ? { paid: 1 as 1 } : {}),
+        ...(sp === undefined ? {} : { sp }),
       },
     });
   }
@@ -153,7 +177,7 @@ const title = "Ancient Tree Map: every remarkable old tree, one map";
 const description = "The interactive map of every verified ancient tree on the site, each pin a tree worth standing in front of.";
 
 const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
-const mapScript = exploreMapScript(features, cityRows);
+const mapScript = exploreMapScript(features, cityRows, speciesList);
 const scripts = mapScript + SEARCH_WIDGET_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={mapHead()} footer={false}>
@@ -174,9 +198,22 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
       </div>
     </aside>
     <div class="stage">
+      {/* The chip row, over the map, the way Google Maps and our own app both
+          draw one. Four, because four is what the app's row carries today and
+          a row of eight is a Filters sheet wearing the wrong clothes. */}
+      <div class="map-filters" role="group" aria-label="Filter the map">
+        <button type="button" class="mf" data-f="free" aria-pressed="false">Free to visit</button>
+        <button type="button" class="mf" data-f="fav" aria-pressed="false">Favourites</button>
+        <button type="button" class="mf" data-f="mine" aria-pressed="false">My trees</button>
+        <select class="mf mf-select" id="mf-species" aria-label="Species">
+          <option value="">Species</option>
+          {speciesList.map((s, i) => <option value={i}>{s}</option>)}
+        </select>
+        <span class="mf-count" id="mf-count" hidden></span>
+      </div>
       <div id="map" class="map"></div>
     </div>
   </div>
   <SignInModal />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + scripts + SHEET_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS + scripts + SHEET_JS} />
 </Base>
