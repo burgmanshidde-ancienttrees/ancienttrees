@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-12 (continuation 12) - Breda bre_010 photo candidate rejected after looking at it
+
+`photo_gaps.py --shortlist`'s only candidate this pass was "File:Gevallen
+blad van een boom in het gras.jpg" for bre_010 (The Plane of Valkenberg's
+Edge). Fetched and viewed the actual pixels: it is a close-up of a single
+fallen leaf lying on grass, not a photograph of the tree at all (the
+Commons description confirms it, "fallen leaf of a tree on the grass").
+Fails the Cadiz standard outright. Left bre_010's photo status as
+`missing`; do not re-surface this filename for this tree.
+
 ## 2026-09-12 (continuation 11) - Finished an earlier attempt's Amersfoort/Breda claims; week budget nearly spent
 
 Inherited two standing register-verify claims (breda, amersfoort) whose
