@@ -13060,6 +13060,62 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-12T17:38:11+00:00",
+   "date": "2026-09-12",
+   "run_id": "34705751292",
+   "minutes": 118.5,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 354,
+   "denials": 37,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(curl), Bash(diff), Bash(for), Bash(gh), Bash(git), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
+   "ended": "success",
+   "tokens": 63214073,
+   "claims_held": [],
+   "commits": 21,
+   "cities_touched": 9,
+   "cities": [
+    {
+     "city": "warsaw",
+     "trees": 11
+    },
+    {
+     "city": "kaunas",
+     "trees": 3
+    },
+    {
+     "city": "florence",
+     "trees": 2
+    },
+    {
+     "city": "vainiai",
+     "trees": 2
+    },
+    {
+     "city": "dallas",
+     "trees": 1
+    },
+    {
+     "city": "degsne",
+     "trees": 1
+    },
+    {
+     "city": "pagramantis-regional-park",
+     "trees": 1
+    },
+    {
+     "city": "plauginiai-forest",
+     "trees": 1
+    },
+    {
+     "city": "zalgiriai",
+     "trees": 1
+    }
+   ],
+   "trees": 23,
+   "logged": true
   }
  ],
  "schedule_changes": [
