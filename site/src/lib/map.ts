@@ -21,9 +21,32 @@ import {MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE, MAP_CREDIT} from "./site-config";
  * an IntersectionObserver: lazy-until-visible would be faster still and
  * would also stop the map ever building in a headless render, which is what
  * the smoke test checks. */
+/** The five seconds (2026-09-12, Hidde: "does it need to be visible, is rather
+ * not show it"). It does need to be reachable and it does not need to be read.
+ * The OSMF attribution guideline of 2021-06-25 allows a credit to collapse
+ * "automatically on map interaction such as panning, clicking, or zooming" or
+ * "automatically after five seconds", on one condition: "If the attribution has
+ * been collapsed, the user must still be able to find the licence information
+ * if they look for it, for example from an '(i)' button in the corner of the
+ * map." MapLibre already does the first half on a touch; a visitor who never
+ * touches the map was left reading a band across the top forever.
+ *
+ * So: five seconds, then it is a 24 point (i) and nothing else. That is the
+ * floor rather than a preference. OpenFreeMap's own terms say plainly
+ * "Attribution is required", and the guideline's collapsed state still wants
+ * the (i) there, so it cannot go altogether. */
+const COLLAPSE_ATTRIBUTION = `
+setTimeout(function () {
+  var list = document.querySelectorAll('.maplibregl-ctrl-attrib');
+  for (var i = 0; i < list.length; i++) {
+    list[i].classList.remove('maplibregl-compact-show');
+    if (list[i].tagName === 'DETAILS') { list[i].open = false; }
+  }
+}, 5000);`;
+
 export function mapScript(body: string): string {
   return `\n<script defer src="${MAPLIBRE_JS}"></script>\n<script>\n` +
-    `document.addEventListener("DOMContentLoaded", function () {\n${body}\n});\n</script>\n`;
+    `document.addEventListener("DOMContentLoaded", function () {\n${body}\n${COLLAPSE_ATTRIBUTION}\n});\n</script>\n`;
 }
 
 /** MapLibre's stylesheet. The `preconnect` to unpkg.com that used to sit here
