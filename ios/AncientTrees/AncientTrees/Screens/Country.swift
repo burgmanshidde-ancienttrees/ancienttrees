@@ -87,7 +87,7 @@ struct CountryView: View {
                 .accessibilityIdentifier("country-open-map")
                 .padding(.horizontal, 16)
 
-                Text("\(trees.count) trees in \(cities.count) \(cities.count == 1 ? "place" : "places")")
+                Text("\(treesLabel(trees.count)) in \(cities.count) \(cities.count == 1 ? "place" : "places")")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.horizontal, 20)
 

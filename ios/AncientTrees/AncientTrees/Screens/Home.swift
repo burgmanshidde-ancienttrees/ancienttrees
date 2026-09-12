@@ -394,7 +394,7 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(c.name).font(.brand(15, .bold, relativeTo: .subheadline))
                     .foregroundStyle(Brand.ink).lineLimit(1)
-                Text("\(c.count) trees · \(c.cities) \(c.cities == 1 ? "place" : "places")")
+                Text("\(treesLabel(c.count)) · \(c.cities) \(c.cities == 1 ? "place" : "places")")
                     .font(.caption2).foregroundStyle(Brand.inkSoft)
             }
             .padding(.horizontal, 10).padding(.vertical, 9)
