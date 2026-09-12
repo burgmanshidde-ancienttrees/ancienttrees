@@ -12768,6 +12768,38 @@
    ],
    "trees": 5,
    "logged": true
+  },
+  {
+   "started": "2026-09-12T00:17:19+00:00",
+   "date": "2026-09-12",
+   "run_id": "34658925851",
+   "minutes": 41.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 289,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(find), Bash(for), Bash(grep), Bash(if), Bash(jobs), Bash(ls), Bash(pdftotext), Bash(pip), Bash(python3), Bash(rm), Bash(until), Bash(which)",
+   "ended": "success",
+   "tokens": 9368879,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "amersfoort",
+     "trees": 6
+    },
+    {
+     "city": "breda",
+     "trees": 6
+    },
+    {
+     "city": "ottawa",
+     "trees": 5
+    }
+   ],
+   "trees": 17,
+   "logged": true
   }
  ],
  "schedule_changes": [
