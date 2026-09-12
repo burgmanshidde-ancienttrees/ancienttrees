@@ -77,6 +77,56 @@
         "longitude": 20.98409
       },
       "reason": "Not a collectible tree yet: too young. Wikidata Q117378015 ('oak Gabriel' / pl: 'Gabriel', described as 'pamiatkowy dab w Warszawie', a commemorative oak) resolves by coordinate to Plac Gabriela Narutowicza (confirmed via OSM reverse geocode) and by its Commons category filenames ('Dab gabriel tablica.jpg', a plaque photo) to the oak planted on 11 November 2022 to commemorate Gabriel Narutowicz, Poland's first president, assassinated five days after taking office in December 1922. A genuinely moving commemorative act, echoing the 1918-1928 'oaks of independence' tradition, but the tree itself is a sapling only a few years old: no trunk, no canopy, nothing visually remarkable, and the 'worth the visit' test this project applies (CLAUDE.md, 2026-09-08 ruling) is about the tree as a destination, not the plaque beside it. Access would be fine (a public city square) if the tree merited a page on its own terms. Revisit in decades once it has grown into something a visitor would actually stand in front of; do not publish on the strength of the commemoration alone."
+    },
+    {
+      "name": "Dawn Redwood, ROD Rakowiec plot 491",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "location": {
+        "address": "Pracowniczy Ogrod Dzialkowy 'Rakowiec' (allotment garden), ul. Zwirki i Wigury 26, dzialka nr 491, Mokotow",
+        "latitude": 52.206574331063244,
+        "longitude": 20.993589006547907
+      },
+      "reason": "Private land, per hard rule 10. GDOS kodinspire PL.ZIPOP.1393.PP.1465011.3184, designated 2001-10-23, confirmed by pl.wikipedia's wikitext reproduction with a Commons photo. But the address is an individually-leased plot inside a Pracowniczy Ogrod Dzialkowy (family/workplace allotment garden complex), the Polish ROD model: a fenced, gated multi-plot site where each numbered dzialka is a private garden under an individual lease-holder's control, not open ground the public may walk onto without that person's (or the garden management's) permission. This is the functional equivalent of a private front garden, the exact category hard rule 10 excludes regardless of how fine the tree is. Two attempts to find a public-access exception for this specific ROD (Nominatim, Overpass) returned nothing; treated as private on general knowledge of how Polish ROD allotment complexes operate. Revisit only if a source documents open days or a public path crossing this specific garden."
+    },
+    {
+      "name": "Ginkgo, ROD Rakowiec plot 498",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "location": {
+        "address": "Pracowniczy Ogrod Dzialkowy 'Rakowiec' (allotment garden), ul. Zwirki i Wigury 26, dzialka nr 498, Mokotow",
+        "latitude": 52.20608935051911,
+        "longitude": 20.993638964759388
+      },
+      "reason": "Private land, per hard rule 10. GDOS kodinspire PL.ZIPOP.1393.PP.1465011.4515, designated 2001-10-23. Same ROD Rakowiec allotment complex as the dawn redwood above (dzialka 498 rather than 491); same reasoning applies in full. No photo credited in the wikitext row for this specific specimen."
+    },
+    {
+      "name": "Swiss Pine, ROD Rakowiec plot 218",
+      "species": "Swiss Pine / Arolla Pine (Pinus cembra)",
+      "location": {
+        "address": "Pracowniczy Ogrod Dzialkowy 'Rakowiec' (allotment garden), ul. Zwirki i Wigury 26, dzialka nr 218, Mokotow",
+        "latitude": 52.206713063572245,
+        "longitude": 20.990561551848558
+      },
+      "reason": "Private land, per hard rule 10. GDOS kodinspire PL.ZIPOP.1393.PP.1465011.4513, designated 2001-10-23, confirmed by pl.wikipedia with a Commons photo. Same ROD Rakowiec allotment complex as the other entries here (dzialka 218); same reasoning applies in full."
+    },
+    {
+      "name": "Polish Larch, ROD Rakowiec plot 198",
+      "species": "Polish Larch (Larix decidua subsp. polonica)",
+      "location": {
+        "address": "Pracowniczy Ogrod Dzialkowy 'Rakowiec' (allotment garden), ul. Zwirki i Wigury 26, dzialka nr 198, Mokotow",
+        "latitude": 52.20591429602613,
+        "longitude": 20.990678565269103
+      },
+      "reason": "Private land, per hard rule 10. GDOS kodinspire PL.ZIPOP.1393.PP.1465011.4520, designated 2001-10-23, confirmed by pl.wikipedia with a Commons photo. Same ROD Rakowiec allotment complex as the other entries here (dzialka 198); same reasoning applies in full."
+    },
+    {
+      "name": "Pontic Azalea, ROD Rakowiec plot 265",
+      "species": "Pontic Azalea (Rhododendron luteum)",
+      "location": {
+        "address": "Pracowniczy Ogrod Dzialkowy 'Rakowiec' (allotment garden), ul. Zwirki i Wigury 26, dzialka nr 265, Mokotow",
+        "latitude": 52.206582694362346,
+        "longitude": 20.98983213717665
+      },
+      "reason": "Private land, per hard rule 10, same ROD Rakowiec allotment complex as the other entries here (dzialka 265). GDOS kodinspire PL.ZIPOP.1393.PP.1465011.4519, designated 2001-10-23, confirmed by pl.wikipedia with a Commons photo. Also worth noting for whoever revisits this: it is a large flowering shrub rather than a tree, which would need its own judgement call about whether it is a collectible point even if access were ever resolved."
     }
   ]
 }

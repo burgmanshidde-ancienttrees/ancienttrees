@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -7733,6 +7733,24 @@
         "tokens": 0,
         "trees": 0,
         "note": "reproduced the routes.yml/data-digest.yml/photos.yml/weekly-analysis.yml push-race fix a third time today and pushed it directly (bypassing the earlier no-op reverts): confirmed empirically this session token also lacks workflows scope (remote rejected with the exact GitHub error), so reverted locally without ever landing on origin; genuinely nothing left to try here short of Hidde applying it himself or granting the scope. Surveyed the 49-city verify shelf (prepare.py) against city-queue.json and passcheck.py briefs looking for a dispatchable batch: Milan/Brisbane/Alicante/Sintra/Taormina already confirmed exhausted earlier today, and spot checks on Cagliari and Braga (both mid-size register counts) showed nearly every remaining \"unmined\" candidate flagged by passcheck as within 80m of an already-published tree or an already-recorded held/blocked lead, the same duplicate pattern that wasted 75k tokens on Helmond earlier today. With leads.py --ready, pagegaps.py, recognise.py --stuck, refill.py and the photo shortlist all empty, and the week at 4815/5000 minutes (about 185 left, shared with Hidde), chose not to gamble a speculative verify dispatch on thin, likely-duplicate supply. No commits beyond this log/cost entry.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Warsaw",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 11,
+        "note": "GDOS pomniki-przyrody jednoobiektowy candidates pre-filtered to a close single-specimen cluster (war_030-war_040); wikitext join to pl.wikipedia 'Pomniki przyrody w Warszawie' supplied girth/address; 5 blocked (private allotment-garden plots, Rakowiec), 1 duplicate of already-published war_005 caught before delivery",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Warsaw",
+        "kind": "write",
+        "tokens": 72000,
+        "trees": 11,
+        "note": "war_030-war_040 stories + recognition lines; best_time on 4 of 11 (silver lime, chestnut, black locust, copper beech)",
         "wasted": 0,
         "brief_wrong": false
       }
