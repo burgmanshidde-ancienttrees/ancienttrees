@@ -1175,6 +1175,50 @@ def check_one_common_name_per_species():
     return out
 
 
+def all_photos(tree):
+    """Every photograph on a tree, lead first, as (label, photo).
+
+    Trees gained photos[] on 2026-09-12 and the rules did not change with it: a
+    licence obligation, a credit and a takedown id are properties of a
+    PHOTOGRAPH, so every check that reads tree["photo"] has to read the extras
+    on the same terms. The label is what a failure line calls it, because
+    "kyo_006" alone would not say which of three pictures to go and fix.
+    """
+    out = [("photo", tree.get("photo") or {})]
+    for i, extra in enumerate(tree.get("photos") or []):
+        out.append(("photos[%d]" % i, extra or {}))
+    return out
+
+
+def check_photos_are_not_the_lead_twice():
+    """The same picture must not be both the lead and an extra.
+
+    The one way a gallery reads as a bug rather than as a feature: a hero, then
+    a strip whose first thumbnail is the hero again. usablePhotos() drops a
+    repeat by url so nothing renders twice, and this says so in the data rather
+    than leaving a silently ignored entry sitting in the file for the next run
+    to wonder about. Also catches the same extra added twice, which is what an
+    `add` verdict applied to the same sighting on two nights would produce.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            seen = {}
+            for label, photo in all_photos(tree):
+                url = (photo.get("url") or "").strip()
+                if not url:
+                    continue
+                if url in seen:
+                    out.append("%s: %s carries the same photograph at %s and %s. "
+                               "One of them is the lead and the other is noise; "
+                               "drop the repeat."
+                               % (path, tree.get("id"), seen[url], label))
+                seen[url] = label
+    return out
+
+
 def check_contributor_photos_are_traceable():
     """A reader's photograph must carry the account that sent it.
 
@@ -1201,19 +1245,19 @@ def check_contributor_photos_are_traceable():
         with open(path, encoding="utf-8") as fh:
             city = json.load(fh)
         for tree in city.get("trees", []):
-            photo = tree.get("photo") or {}
+          for label, photo in all_photos(tree):
             uid = photo.get("contributor_user_id")
             is_contrib = photo.get("source") == "contributor"
             if is_contrib and not uid and not photo.get("unlinked"):
-                out.append("%s: %s carries a reader's photograph with no "
+                out.append("%s: %s %s carries a reader's photograph with no "
                            "contributor_user_id and no unlinked flag. It could never "
                            "be taken off the page when they delete their account, "
                            "which /terms promises."
-                           % (path, tree.get("id")))
+                           % (path, tree.get("id"), label))
             if uid and not is_contrib:
-                out.append("%s: %s names a contributor_user_id without "
-                           'photo.source == "contributor", so the takedown sweep '
-                           "will not look at it." % (path, tree.get("id")))
+                out.append("%s: %s %s names a contributor_user_id without "
+                           'source == "contributor", so the takedown sweep '
+                           "will not look at it." % (path, tree.get("id"), label))
     return out
 
 
@@ -1899,7 +1943,7 @@ def check_a_by_licence_names_its_author():
         with open(p, encoding="utf-8") as fh:
             city = json.load(fh)
         for t in city.get("trees", []):
-            photo = t.get("photo") or {}
+          for label, photo in all_photos(t):
             if not photo.get("url") or photo.get("status") == "held":
                 continue
             licence = (photo.get("license") or "").lower()
@@ -1908,9 +1952,9 @@ def check_a_by_licence_names_its_author():
             name = re.sub(r"(?i),?\s*via [a-z .]+$", "",
                           photo.get("attribution") or "").strip(" ,")
             if not name:
-                out.append(f"{t['id']} ({city['city']}) ships a {photo.get('license')} "
-                           "photograph crediting nobody; find the author on the source "
-                           "page or take the photograph off")
+                out.append(f"{t['id']} {label} ({city['city']}) ships a "
+                           f"{photo.get('license')} photograph crediting nobody; find "
+                           "the author on the source page or take the photograph off")
     return out
 
 
@@ -1927,6 +1971,7 @@ def main():
                 + check_no_two_language_switch()
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
+                + check_photos_are_not_the_lead_twice()
                 + check_every_tree_names_a_source()
                 + check_a_tree_says_why_to_go()
                 + check_a_tree_can_be_told_apart()
