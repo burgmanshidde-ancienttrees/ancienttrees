@@ -13004,6 +13004,38 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-12T13:13:37+00:00",
+   "date": "2026-09-12",
+   "run_id": "34695821788",
+   "minutes": 77.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 449,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(cd), Bash(echo), Bash(env), Bash(for), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(timeout), Bash(until), Bash(while)",
+   "ended": "success",
+   "tokens": 11005279,
+   "claims_held": [],
+   "commits": 13,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "tallinn",
+     "trees": 2
+    },
+    {
+     "city": "lausanne",
+     "trees": 0
+    },
+    {
+     "city": "montreal",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
+   "logged": true
   }
  ],
  "schedule_changes": [
