@@ -1,6 +1,12 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - Night run 2026-09-12 19:50 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 36.7 minutes of its 120 minute window, 277 turns, 23 commands refused by the allowlist, ended clean (success). 3 tree(s) reached data/cities across 3 city file(s), and the run still wrote no log entry of its own. Claims left behind: berlin, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-12 (continuation 4) - 21 trees across 8 places, a new species page, and a git-push auth wall worked around
 
 An earlier attempt in this window had stopped after 12 minutes with 108
