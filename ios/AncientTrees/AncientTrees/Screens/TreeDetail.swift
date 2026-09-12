@@ -1330,18 +1330,15 @@ struct TreeDetail: View {
     /// instead of putting that behind the button").
     private var story: some View {
         Group {
-            // WHY GO FIRST, and on the phone it matters more than on the web,
-            // because this is the surface where somebody is deciding whether
-            // to start walking rather than reading about a tree at a desk.
-            // Decided on the website and read here, never re-decided: it is an
-            // ANSWER and answers travel in the feed (CLAUDE.md, 2026-08-25).
-            // Empty on most trees, where the age or the girth is the reason.
-            if !tree.whyGo.isEmpty {
-                Text(tree.whyGo)
-                    .font(.brand(17, .semibold))
-                    .fixedSize(horizontal: false, vertical: true)
-                    .padding(.bottom, 4)
-            }
+            // NO WHY-GO STANDFIRST. Hidde, 2026-09-12: "alle why go secties
+            // mogen weg onnodig", said of the website and applied here the
+            // same day, because a line taken off one surface has to leave the
+            // other. On 34 of the 40 trees carrying one it repeated more than
+            // half of the story printed directly under it, so the phone showed
+            // the same sentence twice to somebody standing in front of the
+            // tree. whyGo stays on the model and in the feed: it still leads
+            // the website's meta description where a tree has no age and no
+            // measurement, which is a snippet and not a block on a page.
             if tree.story.isEmpty, mine != nil {
                 blank("What makes this tree special?", .story)
             } else {

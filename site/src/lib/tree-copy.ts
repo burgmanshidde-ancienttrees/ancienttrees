@@ -229,9 +229,17 @@ export function metaForTree(tree: {
   // for: a tree with neither a recorded age nor a usable measurement, where
   // the lead is a bare `A {species} in {where}.` and the story's opening is
   // whatever the writer chose to hook with. 393 pages are in that state, and
-  // for them why_go is the only sentence on the page that answers the question
-  // a searcher is actually asking. Where an age or a girth exists the lead
-  // already answers, so the story keeps the tail and nothing changes.
+  // for them why_go is the one sentence that answers the question a searcher
+  // is actually asking. Where an age or a girth exists the lead already
+  // answers, so the story keeps the tail and nothing changes.
+  //
+  // THIS IS NOW THE FIELD'S ONLY READER. The block it used to render above the
+  // story came off both surfaces on 2026-09-12 (Hidde: "alle why go secties
+  // mogen weg onnodig"), because on 34 of the 40 trees carrying one it
+  // repeated the story printed directly under it. A snippet is the opposite
+  // case: it is read INSTEAD of the page, before anybody has arrived, so a
+  // sentence that duplicates the story there costs a reader nothing and
+  // answers the search.
   //
   // Deliberately not translated: why_go lives once, on the canonical tree, and
   // the overlays carry their own story. A translated page falls back to its

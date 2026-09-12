@@ -1030,6 +1030,15 @@ def check_a_tree_says_why_to_go():
     find. Everything else is a NOTE listing the backlog, because 393 pages
     predate the field and a gate that fails the whole night shift on its first
     run is a gate somebody switches off.
+
+    why_go STOPPED BEING A BLOCK ON THE PAGE on 2026-09-12 (Hidde: "alle why go
+    secties mogen weg onnodig") and still counts here, which is deliberate
+    rather than rot. The question this check asks is whether anybody has
+    established that the tree is worth the walk, not whether a particular
+    paragraph renders: the field still leads the meta description for exactly
+    the trees this check fires on, and where it is filled the story says the
+    same thing anyway, which is why the block was redundant. Read it as the
+    editorial record that somebody answered the question.
     """
     return _why_to_go_split()[0]
 
@@ -1062,9 +1071,9 @@ def _why_to_go_split():
                 backlog.append(where)
     note = []
     if backlog:
-        note.append("%d trees have no age, no measurement and no why_go, so nothing "
-                    "on the page says why to go and metaForTree has nothing to lead "
-                    "on. Backfill where there is demand. First few: %s"
+        note.append("%d trees have no age, no measurement and no why_go, so the story "
+                    "is the only thing saying why to go and metaForTree has nothing to "
+                    "lead on. Backfill where there is demand. First few: %s"
                     % (len(backlog), "; ".join(b.split(": ")[1] for b in backlog[:3])))
     return fails, note
 

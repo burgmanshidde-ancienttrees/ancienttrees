@@ -1,25 +1,44 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-12 - The "Why go?" label comes off the tree page
+## 2026-09-12 - The why-go block comes off both surfaces
 
-Hidde, on a Kyoto tree page: "deze hele kop waarom bestaat die? Waarom staat
-dit er uberhaupt?" The field is his own, ruled 2026-09-08. The label was the
-website's alone, and it was the website's mistake: the app has rendered the
-same sentence unlabelled above the story since the day it shipped. Asking the
-question on the page turned a reason into a quiz, which is why the sentences
-were written as answers to it ("Its trunk."). It now reads as a standfirst
-over the story, 17px semibold, the app's own weight.
+Hidde, shown the block on a Kyoto tree page: "deze hele kop waarom bestaat
+die? Waarom staat dit er uberhaupt?", and after the measurement below, "alle
+why go secties mogen weg onnodig".
 
-It is louder than the boxed version it replaces, not quieter, which matters
-because it is the one line saying why to walk there.
+The field is his, ruled 2026-09-08, and the principle behind it is untouched:
+a page has to say why somebody should walk there. What went wrong is where it
+was put. The website wrapped it in a "Why go?" label, which the app never had,
+so the page asked itself a question and answered it, which is why the sentences
+were written as answers to it ("Its trunk."). Underneath that was the bigger
+fault: on 34 of the 40 trees carrying a why_go, it repeated more than half of
+the story printed directly below it. On the Kyoto muku the same trunk was
+described three times running, in the recognition box, in the block and in the
+story's first sentence.
 
-What that did NOT fix, and it is the bigger half: 34 of the 40 trees carrying
-a why_go repeat more than half of their own story in it. On the Kyoto muku the
-same trunk is now described three times running, in the recognition box, in
-the standfirst and in the story's first sentence. FOR HIDDE: rewrite those 34
-so each says something the story does not, or empty the field where the story
-already opens with the reason. Waiting on his answer.
+So the block is gone from the tree page and from TreeDetail.swift the same
+day, because a line taken off one surface has to leave the other. The story
+carries the reason, which is where a reader reads it anyway.
+
+The field stays in the data and keeps its one real job: it leads the meta
+description for a tree with neither a recorded age nor a usable measurement,
+where the lead is a bare "A {species} in {where}" and there is nothing else to
+answer a searcher with. That is a snippet rather than a section, read INSTEAD
+of the page, so repeating the story there costs nobody anything. 17 trees are
+in that state and 16 of their sentences stand up alone. The seventeenth was
+kyo_019's "Its trunk.", which was shipping into Google as exactly that, and it
+has been rewritten to stand without the question in front of it.
+
+Build clean, qa 8,582 pages, preflight 0 problems, parity clean. Looked at
+rendered at 375px and desktop.
+
+FOR HIDDE: two things found while in there, neither fixed, both yours to call.
+Ten meta descriptions read "A Muku Tree in On the stone perimeter wall near
+Omiya-gomon, Kyoto", a doubled preposition where a neighbourhood field starts
+with one (Kyoto 4, Pisa 4, two others). And the app change could not be built
+here, this being Linux with no Xcode, so appsweep and appfit have not run on
+it; ios.yml judges it in CI.
 
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
