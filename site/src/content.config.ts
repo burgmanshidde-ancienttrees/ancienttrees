@@ -6,7 +6,7 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-const photoSchema = z
+const photoFields = z
   .object({
     url: z.string().nullable().optional(),
     license: z.string().nullable().optional(),
@@ -35,8 +35,22 @@ const photoSchema = z
     // an account that is already gone.
     unlinked: z.boolean().nullable().optional(),
   })
-  .partial()
-  .optional();
+  .partial();
+
+const photoSchema = photoFields.optional();
+
+// FURTHER photographs of the same tree (2026-09-12). Same shape as the lead,
+// deliberately: an extra carries a licence, an attribution and a takedown id on
+// exactly the terms the lead does, so hard rule 4 and the deletion promise do
+// not acquire a second, looser set of rules for the second picture.
+//
+// No caption field, and that is a decision rather than an omission. A typed
+// caption is user-facing text, and user-facing text on this site goes through
+// UIStrings so the seven translated page sets get it too; an English sentence
+// written into a city file would render untranslated on the Japanese page, which
+// is the exact fault check_translated_components_have_no_typed_text() exists to
+// stop. The thumbnails are labelled "Photograph 2 of 3" from UIStrings instead.
+const photosSchema = z.array(photoFields).optional();
 
 const bestTimeSchema = z
   .object({
@@ -85,6 +99,7 @@ export const treeSchema = z.object({
   paid_entry: z.boolean().optional(),
   transport: z.string().optional(),
   photo: photoSchema,
+  photos: photosSchema,
   curation_status: z.enum(["ai_generated", "hidde_approved", "flagged"]).optional(),
   location_precision: z.enum(["confirmed", "approximate"]).optional(),
   /** Which tree it is, once you are standing there. One plain sentence.

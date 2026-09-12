@@ -322,6 +322,17 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   height: calc(100dvh - 64px); padding: 8px; }
 .pv-frame img { max-width: 100%; max-height: 100%; width: auto; height: auto;
   object-fit: contain; border-radius: 2px; }
+/* The same rule again, louder, and it is a FIX rather than a nicety (2026-09-12).
+   The viewer lives inside <figure class="tree-photo tree-hero">, so
+   `.tree-photo.tree-hero img { height: 280px; object-fit: cover }` was winning
+   on specificity over `.pv-frame img` and the lightbox on every tree page
+   opened a 210 by 280 picture in the middle of a 375 by 748 black screen. That
+   is the whole point of the control, and no gate could see it: the dialog
+   exists, the image loads, the link works. Measuring the rendered box is what
+   found it. 0,2,2 here beats the 0,2,1 above it whatever the file order. */
+dialog.photo-view .pv-frame img {
+  width: auto; height: auto; max-width: 100%; max-height: 100%;
+  object-fit: contain; border-radius: 2px; }
 .pv-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem;
   min-height: 64px; padding: 0 1rem; font-size: 12px; }
 .pv-credit { color: #cfcfcf; }
@@ -330,6 +341,44 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .pv-close { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px;
   border: 0; border-radius: 999px; background: rgba(0,0,0,0.45); color: #fff;
   font-size: 26px; line-height: 1; cursor: pointer; }
+/* MORE THAN ONE PHOTOGRAPH (2026-09-12). The strip under the lead is what
+   Google Maps puts under a place and iNaturalist under an observation: it says
+   there is more without spending the page's best space on it. A scroller
+   rather than a wrap, so eight pictures never push the page's own width out;
+   the 375px fit check ignores what is inside one of these on purpose, because
+   a shelf is meant to overflow. */
+.photo-strip { display: flex; gap: 6px; overflow-x: auto; list-style: none;
+  margin: 0.45rem 0 0; padding: 0 0 2px; scrollbar-width: none;
+  -webkit-overflow-scrolling: touch; }
+.photo-strip::-webkit-scrollbar { display: none; }
+.photo-strip li { flex: 0 0 auto; }
+/* 72 rather than 44: this is a picture to recognise rather than an icon to
+   hit, and it clears the touch floor in both directions anyway.
+   The hero pair is named explicitly because .tree-photo.tree-hero .photo-open
+   and .tree-photo.tree-hero img below are 0,3,0 and would otherwise hand every
+   thumbnail the hero's full width and 300px crop height. Caught by measuring
+   the rendered box rather than by reading the file: it came out 210 by 72. */
+.photo-strip .photo-open,
+.tree-photo.tree-hero .photo-strip .photo-open {
+  width: 72px; height: 72px; border-radius: 4px; overflow: hidden; flex: 0 0 auto; }
+.photo-strip img,
+.tree-photo.tree-hero .photo-strip img {
+  width: 72px; height: 72px; object-fit: cover; border-radius: 4px; }
+/* Paging inside the viewer, which is Media Viewer's own control. Sat against
+   the sides at the vertical middle of the picture, clear of the credit bar and
+   clear of the close button. 44 square, the touch floor. */
+.pv-step { position: absolute; top: calc((100dvh - 64px) / 2); transform: translateY(-50%);
+  width: 44px; height: 44px; border: 0; border-radius: 999px;
+  background: rgba(0,0,0,0.45); color: #fff; font-size: 28px; line-height: 1;
+  cursor: pointer; }
+.pv-prev { left: 8px; }
+.pv-next { right: 8px; }
+.pv-step:focus-visible, .pv-close:focus-visible, .photo-open:focus-visible {
+  outline: 3px solid #fff; outline-offset: 2px; }
+.pv-count { color: #cfcfcf; white-space: nowrap; }
+/* The bar holds three things once a tree has several photographs, and on a
+   narrow phone the credit is the one that may wrap. */
+.pv-bar { flex-wrap: wrap; }
 /* 44 is the floor, not the padding's business: at 0.75rem the pill came out
    41 tall, which is three points under what every phone platform asks of a
    primary button. inline-flex so the min-height can centre its own label. */
@@ -1721,6 +1770,10 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
   .tree-noph.tree-hero { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); width: auto; }
   .tree-photo.tree-hero img { border-radius: 0; height: 280px; }
   .tree-photo.tree-hero figcaption { padding: 0 var(--gutter); }
+  /* The strip rides inside the full-bleed figure, so it needs the page's
+     gutter back. Padding rather than margin, so the shelf still scrolls out
+     to the edge the way a shelf should. */
+  .tree-photo.tree-hero .photo-strip { padding-left: var(--gutter); padding-right: var(--gutter); }
 }
 
 /* The name group: title, the full botanical name under it, then where it is.

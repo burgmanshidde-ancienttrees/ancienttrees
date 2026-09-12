@@ -57,6 +57,10 @@ struct TreeDetail: View {
     /// The photograph, full screen (Hidde, 2026-09-03: the picture should open
     /// at its original size, on web and in the app). Kit/PhotoViewer.swift.
     @State private var showingPhoto = false
+    /// Which of the tree's photographs the viewer opens on. The hero is 0; a
+    /// thumbnail sets its own index, because opening every thumbnail on the
+    /// first picture is what makes a strip feel broken.
+    @State private var photoAt = 0
     /// One of YOUR photographs of this tree, full screen.
     @State private var viewingOwn: Sightings.Sighting?
     /// The picture the share sheet hands on, drawn once when a tree of yours
@@ -369,7 +373,8 @@ struct TreeDetail: View {
         }
         .fullScreenCover(isPresented: $showingPhoto) {
             if let p = tree.photo {
-                PhotoViewer(photo: p, title: tree.name, isPresented: $showingPhoto)
+                PhotoViewer(photo: p, photos: tree.shots, startAt: photoAt,
+                            title: tree.name, isPresented: $showingPhoto)
             }
         }
         .fullScreenCover(item: $viewingOwn) { s in
@@ -569,7 +574,7 @@ struct TreeDetail: View {
                     // taps meant for the story below it, which is the fault
                     // TreeCard records at the top of this file's sibling.
                     .contentShape(.rect)
-                    .onTapGesture { showingPhoto = true }
+                    .onTapGesture { photoAt = 0; showingPhoto = true }
                     .accessibilityAddTraits(.isButton)
                     .accessibilityIdentifier("tree-photo-open")
                     // The way to the map, in the corner a card already trained
@@ -593,6 +598,7 @@ struct TreeDetail: View {
                     }
                     .overlay(alignment: .topLeading) { addPhotoButton }
 
+                photoStrip
             }
         } else {
             // The whole empty frame is the door to the camera, on a tree of
@@ -716,6 +722,44 @@ struct TreeDetail: View {
     /// dull thing: Google Maps, Apple Maps and Yelp all show a neutral grey
     /// panel with one small glyph, and the way to add a picture is the camera
     /// button in the corner rather than a sentence in the middle.
+    /// The tree's other photographs, in a row under the lead.
+    ///
+    /// Convention: the row Google Maps puts under a place's photograph and
+    /// iNaturalist under an observation. The website grew the same control the
+    /// same day (2026-09-12), which is the both-surfaces rule doing its job:
+    /// the DESIGN differs (a sheet here, a lightbox there) and the behaviour
+    /// does not. 72 square because this is a picture to recognise rather than
+    /// an icon to hit, and it clears the 44 point floor in both directions.
+    ///
+    /// Drawn only when there IS more than one, so every other tree page looks
+    /// exactly as it did.
+    @ViewBuilder private var photoStrip: some View {
+        let extras = Array(tree.shots.dropFirst())
+        if !extras.isEmpty {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 6) {
+                    ForEach(Array(extras.enumerated()), id: \.offset) { i, p in
+                        Button {
+                            // +1 because this row is the set minus its lead.
+                            photoAt = i + 1
+                            showingPhoto = true
+                        } label: {
+                            Color.clear
+                                .frame(width: 72, height: 72)
+                                .overlay { TreePhoto(url: p.card) { Color.black.opacity(0.06) } }
+                                .clipped()
+                                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Photograph \(i + 2) of \(tree.shots.count)")
+                    }
+                }
+                .padding(.horizontal, 16)
+            }
+            .accessibilityIdentifier("tree-photo-strip")
+        }
+    }
+
     private var heroFallback: some View {
         ZStack {
             Brand.surfaceMuted

@@ -167,6 +167,20 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public let url: String
     public let precision: Precision
     public let photo: Photo?
+    /// Every photograph of this tree, lead first. The feed sends it only when
+    /// there IS more than one, so the rule is `shots`, never this directly.
+    ///
+    /// A `var` with a default for the same reason girthCm below is one: the
+    /// memberwise initialiser keeps compiling at every call site, and a phone
+    /// holding a catalogue written before 2026-09-12 decodes to nil rather
+    /// than rejecting the whole file.
+    public var photos: [Photo]? = nil
+    /// What to show: the set when the feed sent one, otherwise the lead alone.
+    /// Nothing here re-decides the ORDER or which picture leads. That is the
+    /// answer-not-rule ruling of 2026-08-25, and this is exactly the place it
+    /// was written about: the last time the app chose a photograph for itself,
+    /// one city wore two faces and four photographs were credited two ways.
+    public var shots: [Photo] { (photos?.isEmpty == false ? photos! : photo.map { [$0] }) ?? [] }
     public let bestTime: BestTime?
     public let peak: Peak?
     /// Around the trunk, in centimetres. A `var` with a default so the
@@ -180,7 +194,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case transportRaw = "transport"
         case ageMin = "age_min"
         case ageMax = "age_max"
-        case access, story, url, precision, photo, peak
+        case access, story, url, precision, photo, photos, peak
         case recogniseRaw = "how_to_recognise"
         case whyGoRaw = "why_go"
         case paidEntryRaw = "paid_entry"
