@@ -11,6 +11,24 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-12 (continuation 19) - Zwolle 14 -> 16, two flagged trees finished from a stranded verify pass
+
+Found `data/research/zwolle-verified.json` uncommitted at session start: 2 fully
+verified trees (zwo_015 the Plume Elm of Potgietersingel, zwo_016 Huis de
+Paddestoel's Swamp Cypress), produced by an earlier attempt in this window that
+stopped without writing them up. Both single-register-sourced, both flagged.
+zwo_015's species is genuinely unsettled between the register's own two passes
+(Ulmus x hollandica vs Ulmus sp.); page asks the reader. zwo_016's address in
+the register (Herenweg 33) does not match its own coordinate (near Herenweg
+131-133); the verify pass's reverse-geocoding and a 1991 archive photo caption
+resolve this as almost certainly a register typo rather than two trees, cross-
+checked against the municipality's own 2015 list which carries only one
+Taxodium on the whole street. Wrote both stories and recognition lines
+directly rather than dispatching a write-stories agent for 2 trees. Also
+released a stale "Berlin verify" claim from the same earlier attempt, which
+produced no output (Berlin's recognition lines, committed separately, were
+unrelated finished work, already applied).
+
 ## 2026-09-12 (continuation 12) - Breda bre_010 photo candidate rejected after looking at it
 
 `photo_gaps.py --shortlist`'s only candidate this pass was "File:Gevallen

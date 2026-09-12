@@ -1,6 +1,14 @@
 {
   "leads": [
     {
+      "id": "lgp_001",
+      "name": "The Cork Oak of Pedragosa",
+      "species": "Cork Oak (Quercus suber)",
+      "location": {"address": "Pedragosa, UF de Bensafrim e Barão de São João, Lagos municipality", "latitude": 37.12933298, "longitude": -8.762471723},
+      "reason": "Fully verified and written (story, recognition line, girth 350cm, ICNF public-interest designation 2011), then held rather than published on two grounds. First, one tree is well below the four-tree floor, and it does not clear the single-famous-tree exception either: nothing found (one regional blog roundup aside) establishes it as a tree people specifically travel for, unlike the Angel Oak or Castagno dei Cento Cavalli calibration cases; it reads as a locally notable, officially designated specimen rather than a destination in its own right. Second, and separately disqualifying on its own until resolved: the writer who verified it could not confirm public access on the ground, 'no source this pass confirmed a specific public path or explicit right of access', which hard rule 10 requires before a page sends anyone there. Keep this lead if either changes: real evidence of outside interest (press, listicles, search demand), or a confirmed public path/access point (the Ypres OSM-footpath technique in BRIEF_RESEARCH.md, or a direct check with Camara Municipal de Lagos). The full written story sits in git history (data/research/lagos-pt-verified.json as of 2026-09-12, since cleared) so a future pass does not have to re-verify from zero if it clears either bar.",
+      "source": "data/registers/portugal-icnf.json entry KNJ1/573 (ICNF, Arvoredo de Interesse Publico, CC BY 4.0); https://algarvevivo.pt/arvores-monumentais-no-algarve/"
+    },
+    {
       "name": "No further register or named candidates found in Lagos town itself",
       "species": "n/a",
       "location": {"address": "Lagos, Faro District, Algarve, Portugal", "latitude": 37.1021, "longitude": -8.6737},
@@ -9,5 +17,5 @@
     }
   ],
   "blocked": [],
-  "notes": "Verification pass 2026-09-11. IMPORTANT COORDINATE CORRECTION CARRIED FORWARD: the coordinates originally attached to this lead in an earlier note (6.4561,3.3936) describe Lagos, NIGERIA, which is out of focus for this project per CLAUDE.md and was never researched. This pass researched Lagos, Portugal (Algarve, Faro district) at approximately 37.1021N, -8.6737W, confirmed against data/registers/portugal-icnf.json which tags the one Lagos-concelho entry with distrito=Faro, concelho=Lagos. Only one candidate cleared the bar (lgp_001, the Pedragosa cork oak), well below the usual floor of four verified trees; Lagos city stays unpublished/banked rather than forced to a page."
+  "notes": "Verification pass 2026-09-11, writing pass sometime before 2026-09-12 (the write left a `why_go` field, retired 2026-09-12). IMPORTANT COORDINATE CORRECTION CARRIED FORWARD: the coordinates originally attached to this lead in an earlier note (6.4561,3.3936) describe Lagos, NIGERIA, which is out of focus for this project per CLAUDE.md and was never researched. This pass researched Lagos, Portugal (Algarve, Faro district) at approximately 37.1021N, -8.6737W, confirmed against data/registers/portugal-icnf.json which tags the one Lagos-concelho entry with distrito=Faro, concelho=Lagos. Only one candidate cleared the bar (lgp_001, the Pedragosa cork oak), well below the usual floor of four verified trees; Lagos city stays unpublished/banked rather than forced to a page. 2026-09-12: found the finished write sitting unmerged in data/research/lagos-pt-verified.json; folded its research into this lead (full story preserved in git history at that path) rather than merging it as a page, since the single-famous-tree exception and hard rule 10's access test are both still unmet."
 }

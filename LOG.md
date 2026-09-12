@@ -1,6 +1,31 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation 19) - Finished a stranded verify pass; Zwolle 14 -> 16
+
+An earlier attempt in this window stopped after 20 minutes with 100 still
+unspent, having produced a fully verified `data/research/zwolle-verified.json`
+(2 trees) but never merging it or committing anything, and had also claimed
+Berlin for a verify pass without producing any output. Per the standing
+instruction, released the dead Berlin claim first, then finished the Zwolle
+work myself directly (2 trees, small enough not to warrant a fresh
+write-stories dispatch): zwo_015 (Plume Elm of Potgietersingel, species left
+open between the register's own two answers) and zwo_016 (Huis de
+Paddestoel's Swamp Cypress, whose register address is very likely a typo for
+a street number a kilometre off; resolved against the municipality's own list
+and an archive photo). Both flagged, single-register-sourced. Fixed Zwolle's
+meta_description count (14 -> 16). Preflight caught the recognition line for
+zwo_016 running 45 characters over the 240 limit; shortened and re-ran clean.
+Full `npx astro build` run to confirm the pages render before committing.
+
+`scripts/leads.py --ready` is empty (0 ready leads); the register-verify
+pipeline is the bottleneck right now, not the writing stage.
+
+**Week budget is the binding constraint**: `run_health.py --week` reads
+4792/5000 minutes at the start of this continuation, only ~208 minutes left
+in the rolling seven days. Kept this pass small and cheap on purpose rather
+than dispatching new research agents.
+
 ## 2026-09-12 - Night run 2026-09-12 19:50 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 36.7 minutes of its 120 minute window, 277 turns, 23 commands refused by the allowlist, ended clean (success). 3 tree(s) reached data/cities across 3 city file(s), and the run still wrote no log entry of its own. Claims left behind: berlin, which block the top of the queue until they expire.
