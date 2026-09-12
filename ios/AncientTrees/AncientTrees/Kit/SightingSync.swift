@@ -37,7 +37,17 @@ enum SightingSync {
             guard let idText = row["id"] as? String, let id = UUID(uuidString: idText),
                   let lat = row["lat"] as? Double, let lng = row["lng"] as? Double
             else { continue }
-            if sightings.has(id) { continue }
+            // A row this phone already holds is normally left alone: the local
+            // copy may carry an edit that has not been sent yet, and a pull
+            // that overwrote it would lose something that exists nowhere else.
+            // The exception, added 2026-09-12, is a row CHANGED SOMEWHERE ELSE
+            // since this phone last sent its own. Without it a correction could
+            // only travel phone to account, so a photograph filed under the
+            // wrong tree stayed wrong forever on the phone that took it.
+            let known = sightings.all.first { $0.id == id }
+            if known != nil,
+               !takeRemote(remoteUpdated: stamp(row["updated_at"]),
+                           localSynced: known?.syncedAt) { continue }
 
             var made = Sightings.Sighting(id: id,
                                           treeId: row["tree_id"] as? String,
@@ -47,8 +57,7 @@ enum SightingSync {
                                           age: row["age"] as? String,
                                           girthCm: row["girth_cm"] as? Int,
                                           lat: lat, lng: lng)
-            if let t = row["taken_at"] as? String,
-               let d = ISO8601DateFormatter().date(from: t) { made.date = d }
+            if let d = stamp(row["taken_at"]) { made.date = d }
             // It came FROM the account, so the account has it. Without this the
             // first sign-out after a fresh sign-in would keep every pulled
             // tree on the phone, waiting for a push to tell us what we already
@@ -60,17 +69,52 @@ enum SightingSync {
 
             // The picture comes back too, or the row arrives without one and
             // the page says so, which is the same honest gap as a tree of ours
-            // that nobody has photographed.
-            if let file = row["photo"] as? String,
-               let data = await download(file, token: s.accessToken),
-               let image = UIImage(data: data) {
-                sightings.adopt(made, image: image)
+            // that nobody has photographed. Not fetched again for a row we are
+            // only correcting and whose picture is already on the phone: it is
+            // the same photograph, and the local file is the original.
+            var picture: UIImage? = nil
+            if known?.photo == nil, let file = row["photo"] as? String,
+               let data = await download(file, token: s.accessToken) {
+                picture = UIImage(data: data)
+            }
+            if known == nil {
+                sightings.adopt(made, image: picture)
             } else {
-                sightings.adopt(made, image: nil)
+                sightings.absorb(made, image: picture)
             }
         }
 
         await pushAll(account: account, sightings: sightings)
+    }
+
+    /// A timestamp from the database, in either of the two shapes it sends.
+    ///
+    /// Postgres hands back microseconds on a column it filled itself, and no
+    /// fraction at all on a string we wrote ourselves, and
+    /// ISO8601DateFormatter refuses whichever shape it was not configured for.
+    /// A sync that silently reads every `updated_at` as nil would never take a
+    /// correction and would look exactly like the bug it is meant to fix, so
+    /// both are tried, strict one first.
+    static func stamp(_ any: Any?) -> Date? {
+        guard let s = any as? String else { return nil }
+        let fractional = ISO8601DateFormatter()
+        fractional.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return fractional.date(from: s) ?? ISO8601DateFormatter().date(from: s)
+    }
+
+    /// Whether the account's copy of a row replaces the one on this phone.
+    ///
+    /// Only when it changed somewhere else SINCE this phone last managed to
+    /// send its own, which is what `updated_at` newer than `syncedAt` means. A
+    /// row this phone has never pushed is the only copy of itself that exists,
+    /// so it stays whatever the account says: that is somebody adding a tree on
+    /// a train, and it must not be overwritten by a stale row.
+    ///
+    /// Our own push cannot trip this. It stamps `updated_at` off this clock and
+    /// marks the row synced afterwards, so ours always lands on the safe side.
+    static func takeRemote(remoteUpdated: Date?, localSynced: Date?) -> Bool {
+        guard let remoteUpdated, let localSynced else { return false }
+        return remoteUpdated > localSynced
     }
 
     /// Everything this phone holds, upserted. The one call that makes a
