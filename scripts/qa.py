@@ -1267,6 +1267,28 @@ def check_vendored_photos_are_served():
     return failures
 
 
+def check_every_feed_field_reaches_the_app():
+    """A feature the website sends must be one the phone can read.
+
+    Hidde, 2026-09-12: "remember somewhere to always by default work cross
+    platform." The work lives in scripts/crosscheck.py; this is the deploy
+    gate's copy of its verdict, because the WEBSITE push is the moment the
+    fault is created. The feed is the contract between the two surfaces, and a
+    field sent to every phone that no Swift model decodes is a feature that
+    stopped at the web with nothing going red: Swift's decoder ignores keys it
+    does not know, so the symptom is a phone quietly missing something.
+
+    Deliberately not a second implementation. Removing this check needs Hidde.
+    """
+    import subprocess
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "crosscheck.py")],
+                       capture_output=True, text=True)
+    if r.returncode == 0:
+        return []
+    lines = [l.strip() for l in (r.stdout + r.stderr).splitlines() if l.strip()]
+    return lines or ["crosscheck failed without saying why"]
+
+
 def check_approved_photos_reach_the_feed():
     """Every approved photograph in the data must reach the app feed.
 
@@ -1489,6 +1511,7 @@ def main():
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_approved_photos_reach_the_feed()
+    failures += check_every_feed_field_reaches_the_app()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")

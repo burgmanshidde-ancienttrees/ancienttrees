@@ -52,8 +52,14 @@ struct PhotoViewer: View {
 
     /// The set to page through, and the one photograph on screen. `shown` is
     /// the only thing the picture and the credit read, so they cannot disagree.
-    private var set: [Photo] { photos.isEmpty ? (photo.map { [$0] } ?? []) : photos }
-    private var shown: Photo? { set.indices.contains(at) ? set[at] : photo }
+    ///
+    /// NOT named `set`, which is what this was and which does not compile:
+    /// `set` opens a property setter, so the parser reads `private var set: [Photo] {`
+    /// as a malformed accessor and says "expected '{' to start setter
+    /// definition" 30 lines from anything that looks wrong. Caught by ios.yml
+    /// rather than here, this sandbox having no Xcode.
+    private var gallery: [Photo] { photos.isEmpty ? (photo.map { [$0] } ?? []) : photos }
+    private var shown: Photo? { gallery.indices.contains(at) ? gallery[at] : photo }
     private var original: URL? { shown.flatMap { URL(string: $0.url) } }
 
     /// Wrap, the way every photo viewer does: paging past the end of three
@@ -61,11 +67,11 @@ struct PhotoViewer: View {
     /// the page, because arriving at the next photograph already magnified and
     /// panned to a corner of the last one is disorienting.
     private func page(_ by: Int) {
-        guard set.count > 1 else { return }
+        guard gallery.count > 1 else { return }
         reset()
         wantsOriginal = false
         withAnimation(.easeInOut(duration: 0.18)) {
-            at = ((at + by) % set.count + set.count) % set.count
+            at = ((at + by) % gallery.count + gallery.count) % gallery.count
         }
     }
 
@@ -106,8 +112,8 @@ struct PhotoViewer: View {
                         // because Apple Photos has none and a swipe is what an
                         // iOS reader already reaches for. It is also the only
                         // thing on screen saying a second picture exists.
-                        if set.count > 1 {
-                            Text("\(at + 1) of \(set.count)")
+                        if gallery.count > 1 {
+                            Text("\(at + 1) of \(gallery.count)")
                                 .font(.caption2.weight(.semibold))
                                 .foregroundStyle(.white.opacity(0.9))
                                 .accessibilityIdentifier("photo-count")
@@ -127,7 +133,7 @@ struct PhotoViewer: View {
         }
         .statusBarHidden()
         .accessibilityIdentifier("photo-viewer")
-        .onAppear { at = set.indices.contains(startAt) ? startAt : 0 }
+        .onAppear { at = gallery.indices.contains(startAt) ? startAt : 0 }
     }
 
     @ViewBuilder private var picture: some View {
@@ -181,7 +187,7 @@ struct PhotoViewer: View {
                 // Which gesture it WAS is decided at the end by the axis that
                 // moved further, so a slightly crooked swipe still does what
                 // the thumb meant. Same rule as the website's lightbox.
-                if abs(d.width) > abs(d.height), abs(d.width) > 60, set.count > 1 {
+                if abs(d.width) > abs(d.height), abs(d.width) > 60, gallery.count > 1 {
                     withAnimation(.easeOut(duration: 0.2)) { dragDown = 0 }
                     page(d.width < 0 ? 1 : -1)
                 } else if d.height > 90 {
