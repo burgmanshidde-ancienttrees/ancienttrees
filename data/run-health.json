@@ -13036,6 +13036,30 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-12T16:31:28+00:00",
+   "date": "2026-09-12",
+   "run_id": "34705475564",
+   "minutes": 65.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 438,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(jobs), Bash(ls), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 17940424,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "florence",
+     "trees": 2
+    }
+   ],
+   "trees": 2,
+   "logged": true
   }
  ],
  "schedule_changes": [
