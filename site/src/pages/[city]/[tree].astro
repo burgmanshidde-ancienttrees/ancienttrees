@@ -3,7 +3,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, type CityEntry, type Tree } from "../../lib/trees";
 import { haversineKm } from "../../lib/walks";
 // THE LINK UNDER THE ACTION BAR POINTED AT A PROMOTION, and did it on every
 // tree page on the site.
@@ -406,7 +406,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           {nearby.map((t) => (
             <a class="near-card" href={`/${cslug}/${tslugs[t.id]}`}>
               <b>{t.name}</b>
-              <span>{t.age_estimate ?? ""} · {distLabel({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away</span>
+              <span set:html={`${t.age_estimate ?? ""} &middot; ${distSpanBetween({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away`} />
             </a>
           ))}
         </div>

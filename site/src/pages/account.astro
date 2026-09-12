@@ -138,6 +138,24 @@ const canonical = `${BASE_URL}/account`;
       <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
     </div>
   </section>
+
+  <!-- UNITS (2026-09-12). The convention, looked up rather than remembered:
+       AllTrails and komoot both keep one Units switch in account settings and
+       apply it to web and app alike, and Google Maps decides from your region
+       by default with the override in settings. Nobody puts a unit toggle
+       beside a distance on the page.
+       It writes the same profiles.units the app writes, so the switch follows
+       you between the phone and the laptop rather than being set twice. It
+       stays hidden until that column answers, because a control that cannot
+       store anything is worse than no control. -->
+  <section class="acct-card" id="st-units" hidden>
+    <h2>Distances</h2>
+    <div class="unit-pick" role="group" aria-label="Distance units">
+      <button type="button" class="unit-btn" data-unit="km">Kilometers</button>
+      <button type="button" class="unit-btn" data-unit="mi">Miles</button>
+    </div>
+    <p class="acct-fine" id="unit-note">Following where you are. It applies on the app too.</p>
+  </section>
   </div>
   </aside>
   <div class="stage">

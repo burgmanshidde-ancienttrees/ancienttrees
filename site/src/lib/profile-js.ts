@@ -61,11 +61,67 @@ export const PROFILE_JS = `
               av.style.backgroundImage = 'url(' + p.avatar_url.replace(/[()'"]/g, '') + ')';
             }
           }).catch(function() {});
+        units(token, u.id);
         head(token, '/rest/v1/follows?select=follower&followee=eq.' + encodeURIComponent(u.id))
           .then(function(n) { setText('n-followers', n); });
         head(token, '/rest/v1/follows?select=followee&follower=eq.' + encodeURIComponent(u.id))
           .then(function(n) { setText('n-following', n); });
       }).catch(function() {});
+  }
+
+  // KILOMETRES OR MILES (2026-09-12), the same profiles.units the app writes.
+  //
+  // The switch appears only once that column has answered. Until the SQL is
+  // run the select 400s, this returns, and the section stays hidden: a
+  // control that looks like a setting and stores nothing is worse than none,
+  // and the website still reads in the right units meanwhile because
+  // units-js.ts decides from the reader's region without asking anybody.
+  //
+  // Null means nobody has said, not "metric": both surfaces then follow where
+  // the reader is, so the note says "following where you are" rather than
+  // pretending a choice was made.
+  function units(token, userId) {
+    var box = el('st-units');
+    if (!box) return;
+    fetch(SB + '/rest/v1/profiles?select=units&user_id=eq.' + encodeURIComponent(userId),
+          { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(rows) {
+        if (!rows) return;                       // no column, no switch
+        var now = rows[0] ? rows[0].units : null;
+        box.hidden = false;
+        paintUnits(now);
+        box.querySelectorAll('.unit-btn').forEach(function(b) {
+          b.addEventListener('click', function() {
+            var want = b.dataset.unit;
+            paintUnits(want);
+            fetch(SB + '/rest/v1/profiles?on_conflict=user_id', {
+              method: 'POST',
+              headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token,
+                         'Content-Type': 'application/json',
+                         'Prefer': 'resolution=merge-duplicates,return=minimal' },
+              body: JSON.stringify([{ user_id: userId, units: want }])
+            }).catch(function() {});
+          });
+        });
+      })
+      .catch(function() {});
+  }
+
+  function paintUnits(now) {
+    var box = el('st-units');
+    if (!box) return;
+    box.querySelectorAll('.unit-btn').forEach(function(b) {
+      var on = b.dataset.unit === now;
+      b.classList.toggle('is-on', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    var note = el('unit-note');
+    if (note) {
+      note.textContent = now
+        ? 'It applies on the app too.'
+        : 'Following where you are. It applies on the app too.';
+    }
   }
 
   // savedSet and visitedSet are the account's TRUE state, plain {id: true}

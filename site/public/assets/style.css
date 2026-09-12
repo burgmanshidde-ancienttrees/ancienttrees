@@ -1870,3 +1870,14 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
    no tint, the glyph itself carries the state. */
 .worthit-inline .worthit-btn .thumb { width: 16px; height: 16px; }
 .worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; background: transparent; }
+
+/* The units switch on /account (2026-09-12). Two buttons rather than a select,
+   because that is what AllTrails and komoot draw for a two-way choice and a
+   native select on iOS opens a wheel for two options. Same pill vocabulary as
+   every other small control on this site. */
+.unit-pick { display: flex; gap: 0.4rem; margin: 0.2rem 0 0.6rem; }
+.unit-btn { font-family: inherit; font-size: 13.5px; font-weight: 700; line-height: 1;
+  min-height: 44px; padding: 0 1rem; border: 1.5px solid var(--cream-dark);
+  border-radius: 999px; background: #fff; color: var(--ink); cursor: pointer; }
+.unit-btn:hover { border-color: var(--moss); }
+.unit-btn.is-on { border-color: var(--moss); background: var(--moss-light); color: var(--moss); }

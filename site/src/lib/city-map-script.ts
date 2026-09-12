@@ -20,7 +20,7 @@
 // proximity check that needed it went; there is no duplicate of it left here.
 import { MAP_STYLE } from "./site-config";
 import { mapScript } from "./map";
-import { kmLabel } from "./walks";
+import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 
 export interface OtherCity {
@@ -50,7 +50,9 @@ export function cityMapScript(
       url: w.url ?? "",
       label: w.label ?? "",
       name: w.name ?? "",
-      meta: `about ${kmLabel(w.km)} km, ${w.duration ?? ""} on foot`,
+      // The distance carries its own kilometres so units-js.ts can say it in
+      // miles for a reader whose region reads in miles (2026-09-12).
+      meta: `about ${distSpan(w.km)}, ${w.duration ?? ""} on foot`,
       combined: Boolean(w.combined),
     }))
   );
@@ -369,7 +371,10 @@ function selectWalk(idx) {
   var lab = document.getElementById('route-label');
   if (lab) { lab.textContent = w.label; }
   var meta = document.getElementById('route-meta');
-  if (meta) { meta.textContent = w.meta; }
+  // innerHTML rather than textContent: the line carries a .dist span so a
+  // reader in miles gets miles (2026-09-12). Everything in it is ours,
+  // generated from the walk itself.
+  if (meta) { meta.innerHTML = w.meta; if (window.atPaintUnits) window.atPaintUnits(); }
   var nm = document.querySelector('.route-name');
   if (nm) { nm.textContent = w.name; nm.hidden = !w.name; }
   var on = {};
@@ -411,7 +416,7 @@ function showWholeCity() {
     var lab = document.getElementById('route-label');
     if (lab) { lab.textContent = w0.label; }
     var meta = document.getElementById('route-meta');
-    if (meta) { meta.textContent = w0.meta; }
+    if (meta) { meta.innerHTML = w0.meta; if (window.atPaintUnits) window.atPaintUnits(); }
     var nm = document.querySelector('.route-name');
     if (nm) { nm.textContent = w0.name; nm.hidden = !w0.name; }
   }

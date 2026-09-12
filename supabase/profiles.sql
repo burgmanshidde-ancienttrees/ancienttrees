@@ -20,9 +20,28 @@ create table if not exists public.profiles (
   user_id uuid primary key references auth.users(id) on delete cascade,
   display_name text not null check (char_length(display_name) between 1 and 40),
   avatar_url text,
+  -- Kilometres or miles, one answer per person for both surfaces.
+  --
+  -- The app has written this column since the profile rebuild of 2026-08-21
+  -- (Profiles.saveUnits) and the table never had it: either it was added to
+  -- the live database by hand or every one of those writes has been failing
+  -- quietly. Added here 2026-09-12 so the file and the app agree, and so the
+  -- website can read the same answer instead of guessing a second time.
+  --
+  -- Null is not "metric", it is "nobody has said", and both surfaces then
+  -- fall back to where the reader is: the phone's locale in the app, the
+  -- browser's region on the website. Only an explicit choice writes a value.
+  units text check (units in ('km', 'mi')),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
+
+-- Safe to run against a table that already exists.
+alter table public.profiles add column if not exists units text;
+do $$ begin
+  alter table public.profiles add constraint profiles_units_check
+    check (units in ('km', 'mi'));
+exception when duplicate_object then null; end $$;
 
 alter table public.profiles enable row level security;
 

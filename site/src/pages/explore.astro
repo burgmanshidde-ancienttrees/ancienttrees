@@ -11,7 +11,7 @@
 // assets/registers.json.ts, fetched client-side rather than inlined here.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { cityIsRenderable, slugify, type CityEntry } from "../lib/trees";
+import { cityIsRenderable, slugify, distSpan, type CityEntry } from "../lib/trees";
 import { cityFace, cityFaceSrcset } from "../lib/images";
 import { mapHead, exploreMapScript, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
 import { haversineKm } from "../lib/walks";
@@ -120,7 +120,7 @@ const walksHtml = tightest
   .map((c) =>
     c.spread < 1
       ? `<a href="/${c.slug}">${esc(c.city)}</a> (${c.n} trees, ${Math.round(c.spread * 1000)} m apart)`
-      : `<a href="/${c.slug}">${esc(c.city)}</a> (${c.n} trees, ${c.spread.toFixed(1)} km apart)`,
+      : `<a href="/${c.slug}">${esc(c.city)}</a> (${c.n} trees, ${distSpan(c.spread)} apart)`,
   )
   .join(", ");
 

@@ -15,7 +15,7 @@ import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { WORTHIT_JS } from "../lib/worthit-js";
-import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
 import { usablePhoto, thumbUrl } from "../lib/images";
 import PhotoFigure from "./PhotoFigure.astro";
@@ -229,7 +229,7 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       {nearby.map((t) => (
         <a class="near-card" href={`/${lang}/${cslug}/${tslugs[t.id]}`}>
           <b>{tr.trees[t.id].name}</b>
-          <span>{tr.trees[t.id].age_estimate} · {U.distanceAway(distLabel({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! }))}</span>
+          <span set:html={`${tr.trees[t.id].age_estimate} &middot; ${U.distanceAway(distSpanBetween({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! }))}`} />
         </a>
       ))}
     </div>
