@@ -11,6 +11,25 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-12 (continuation 10) - Ottawa 14 -> 19; Helmond register pass found only duplicates
+
+Ottawa: 5 new trees from the NCC "A Living Legacy" register, all in the
+Dominion Arboretum, verified with two sources each (register plus Friends
+of the Central Experimental Farm's CelebriTrees tour or an independent
+species page) and public access confirmed rather than assumed. Full detail
+in LOG.md.
+
+Helmond: a register-backed verify pass on 5 unmined LRMB candidates within
+the existing walk found all 5 are exact-coordinate duplicates of already-
+published trees (hlm_011/012/013/015/018) under new register-adjacent ids.
+Not published. Recorded in data/leads/helmond.json (status: duplicate, with
+the register id of the live twin each one matches) so a future pass does
+not re-mine these same rows expecting new trees. This is a passcheck gap
+worth naming: its "unmined" candidate list did not flag these five as
+near-duplicates the way it correctly flags others "within 80m of a live
+tree", and nobody has yet worked out why those five specifically slipped
+through.
+
 ## 2026-09-11 (continuation 8) - Prague 27 -> 30: three Praha 8 oaks from the AOPK register
 
 Finished a standing verify claim on Prague left by the previous attempt in
