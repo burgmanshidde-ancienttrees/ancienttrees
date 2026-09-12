@@ -202,13 +202,16 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
           draw one. Four, because four is what the app's row carries today and
           a row of eight is a Filters sheet wearing the wrong clothes. */}
       <div class="map-filters" role="group" aria-label="Filter the map">
-        <button type="button" class="mf" data-f="free" aria-pressed="false">Free to visit</button>
         <button type="button" class="mf" data-f="fav" aria-pressed="false">Favourites</button>
         <button type="button" class="mf" data-f="mine" aria-pressed="false">My trees</button>
         <select class="mf mf-select" id="mf-species" aria-label="Species">
           <option value="">Species</option>
           {speciesList.map((s, i) => <option value={i}>{s}</option>)}
         </select>
+        {/* Last, on Hidde's word (2026-09-12: "zet free to visit maar als
+            laatst"). It leaves the row in the app's own order, Favourites,
+            My trees, Species, with ours after it rather than in front of it. */}
+        <button type="button" class="mf" data-f="free" aria-pressed="false">Free to visit</button>
         <span class="mf-count" id="mf-count" hidden></span>
       </div>
       <div id="map" class="map"></div>

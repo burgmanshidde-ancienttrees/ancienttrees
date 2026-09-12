@@ -47,14 +47,31 @@ struct MapFilters: Equatable {
     /// trees about what you have.
     var favouritesOnly = false
 
+    /// Only the ones you can walk up to without buying anything.
+    ///
+    /// Hidde, 2026-09-12: "ik zou nog wel een filter willen bouwen voor
+    /// betaalde bomen waar je een ticket voor moet kopen - dat je die weg kunt
+    /// halen." It is the 2026-08-23 complaint as a control: ten of
+    /// Amsterdam's thirty-nine stood behind paid entry and "het blijft
+    /// bezwaarlijk dat 10 bomen (een derde) niet gratis toegankelijk zijn."
+    /// 241 of the catalogue's trees need a ticket, and somebody planning a
+    /// free afternoon should be able to say so.
+    ///
+    /// It does not hide the ticket MARK on the pins, which answers a different
+    /// question: the mark says what a visit will cost, this says do not show
+    /// me those at all.
+    var freeOnly = false
+
     var isOn: Bool {
-        peakingNow || withPhoto || walkable || collectedOnly || favouritesOnly || species != nil
+        peakingNow || withPhoto || walkable || collectedOnly || favouritesOnly
+            || freeOnly || species != nil
     }
 
     func keeps(_ t: Tree, month: Int, collected: Set<String> = [],
                favourites: Set<String> = []) -> Bool {
         if collectedOnly, !collected.contains(t.id) { return false }
         if favouritesOnly, !favourites.contains(t.id) { return false }
+        if freeOnly, t.paidEntry { return false }
         if peakingNow, !(t.bestTime?.isNow(month) ?? false) { return false }
         if withPhoto, t.photo == nil { return false }
         if let species, t.commonName != species { return false }
@@ -91,6 +108,9 @@ struct MapFilters: Equatable {
     /// under `treeKey`, which is the id the adapted tree already carries.
     func keeps(_ s: Sightings.Sighting, favourites: Set<String> = []) -> Bool {
         if favouritesOnly, !favourites.contains(s.treeKey) { return false }
+        // freeOnly has no clause here on purpose: a tree you photographed
+        // standing in front of is one you reached, and a sighting carries no
+        // ticket field to ask about.
         if peakingNow { return false }
         if withPhoto, s.photo == nil { return false }
         if let species, s.commonName != species { return false }
