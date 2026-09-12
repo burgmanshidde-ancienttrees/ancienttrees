@@ -20,7 +20,7 @@
 import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
-import { usablePhoto, thumbUrl, cardUrl, creditRequired, creditName, creditText } from "./images";
+import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText } from "./images";
 import { BASE_URL } from "./schema";
 
 /** The feed is read by an app on somebody's phone, which has no page to
@@ -107,10 +107,16 @@ export interface FeedTree {
    * whether the string contains "BY", which credits "Provided by the Fundacao
    * Mata do Bucaco" for a licence that obliges nothing. Four live photographs
    * disagreed across the two surfaces. */
-  photo: { url: string; license: string | null; attribution: string | null;
-            width: number | null; height: number | null;
-            thumb: string; hero: string; credit_required: boolean;
-            attribution_short: string | null; credit_line: string | null } | null;
+  photo: FeedPhoto | null;
+  /** The whole set, lead first, present only when there is more than one. */
+  photos?: (FeedPhoto | null)[];
+}
+
+export interface FeedPhoto {
+  url: string; license: string | null; attribution: string | null;
+  width: number | null; height: number | null;
+  thumb: string; hero: string; credit_required: boolean;
+  attribution_short: string | null; credit_line: string | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -119,7 +125,8 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
     for (const t of renderableTrees(city)) {
       const loc = t.location ?? ({} as any);
       if (loc.latitude == null || loc.longitude == null) continue;
-      const p = usablePhoto(t);
+      const shots = usablePhotos(t);
+      const p = shots[0] ?? null;
       out.push({
         id: t.id,
         name: t.name,
@@ -150,50 +157,69 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           return Number.isFinite(g) && g > 0 ? Math.round(g) : null;
         })(),
         url: `/${city.id}/${slugify(t.name)}`,
-        photo: p?.url
-          ? {
-              url: p.url,
-              license: p.license ?? null,
-              attribution: p.attribution ?? null,
-              // So a client can lay out a list before the first byte of image
-              // arrives, and can tell when a file changed underneath us.
-              width: (p as any).width ?? null,
-              height: (p as any).height ?? null,
-              // Card size and full-width size, resolved here so no client
-              // needs to know how Wikimedia names a thumbnail.
-              thumb: absolute(cardUrl(p.url)),
-              // 1280, not 960. A hero fills the width of the phone, which is
-              // about 1180 physical pixels on a 3x screen, and 960 was not a
-              // considered choice: it was the largest Wikimedia width anyone
-              // here had probed. 1280 and 1920 are served too (re-probed
-              // 2026-09-03), so the cap was ours rather than theirs.
-              //
-              // Only the hero moves. A hero is one image on one screen and
-              // never bursts, which is why it may come straight from Wikimedia;
-              // the card is what a shelf loads by the dozen and it stays on our
-              // own domain at the width we host.
-              hero: absolute(thumbUrl(p.url, 1280)),
-              credit_required: creditRequired(p.license),
-              // The name as it should be PRINTED, host dropped. The trimming
-              // rule lived in Swift and the website printed the long form, so
-              // one photograph was credited two ways (Hidde, 2026-08-26, asked
-              // which wins: "ingekort natuurlijk").
-              attribution_short: creditName(p.attribution),
-              // The finished line, name and terms together, because the app
-              // was joining those two itself and a gift breaks that join: its
-              // licence field is a sentence ("Provided by Paulo V. Araujo
-              // (Dias com Arvores), all rights reserved") rather than a label,
-              // so the phone printed the giver's name twice and the words "all
-              // rights reserved" under a photograph he gave us. An answer in
-              // the feed, not a rule written twice.
-              credit_line: creditText(p.attribution, p.license),
-            }
-          : null,
+        photo: resolvePhoto(p),
+        // MORE THAN ONE PHOTOGRAPH (2026-09-12). Sent only when there IS more
+        // than one, so 3000-odd single-photograph trees pay nothing for a
+        // feature they do not use, and it carries the FULL set, lead first, so
+        // the phone's rule is "photos if it is there, else [photo]" rather
+        // than a join it could get wrong.
+        //
+        // Every entry arrives already resolved, thumb, hero and credit line
+        // included, by the same function that resolves the lead. That is the
+        // answer-not-rule ruling of 2026-08-25 applied to the thing it was
+        // written about: the last time the app re-decided which photograph to
+        // show and how to credit it, one city wore two faces and four
+        // photographs disagreed across the two surfaces.
+        ...(shots.length > 1
+          ? { photos: shots.map(resolvePhoto).filter(Boolean) }
+          : {}),
       });
     }
   }
   out.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   return out;
+}
+
+function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
+  return p?.url
+    ? {
+      url: p.url,
+      license: p.license ?? null,
+      attribution: p.attribution ?? null,
+      // So a client can lay out a list before the first byte of image
+      // arrives, and can tell when a file changed underneath us.
+      width: (p as any).width ?? null,
+      height: (p as any).height ?? null,
+      // Card size and full-width size, resolved here so no client
+      // needs to know how Wikimedia names a thumbnail.
+      thumb: absolute(cardUrl(p.url)),
+      // 1280, not 960. A hero fills the width of the phone, which is
+      // about 1180 physical pixels on a 3x screen, and 960 was not a
+      // considered choice: it was the largest Wikimedia width anyone
+      // here had probed. 1280 and 1920 are served too (re-probed
+      // 2026-09-03), so the cap was ours rather than theirs.
+      //
+      // Only the hero moves. A hero is one image on one screen and
+      // never bursts, which is why it may come straight from Wikimedia;
+      // the card is what a shelf loads by the dozen and it stays on our
+      // own domain at the width we host.
+      hero: absolute(thumbUrl(p.url, 1280)),
+      credit_required: creditRequired(p.license),
+      // The name as it should be PRINTED, host dropped. The trimming
+      // rule lived in Swift and the website printed the long form, so
+      // one photograph was credited two ways (Hidde, 2026-08-26, asked
+      // which wins: "ingekort natuurlijk").
+      attribution_short: creditName(p.attribution),
+      // The finished line, name and terms together, because the app
+      // was joining those two itself and a gift breaks that join: its
+      // licence field is a sentence ("Provided by Paulo V. Araujo
+      // (Dias com Arvores), all rights reserved") rather than a label,
+      // so the phone printed the giver's name twice and the words "all
+      // rights reserved" under a photograph he gave us. An answer in
+      // the feed, not a rule written twice.
+      credit_line: creditText(p.attribution, p.license),
+      }
+    : null;
 }
 
 /** A short content hash, so the version changes exactly when the data does

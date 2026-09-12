@@ -84,3 +84,15 @@ export const MAPLIBRE_CSS = "/assets/maplibre-gl-4.7.1.css";
 // is the same grey as the buildings around it. Regenerate with the script, do
 // not hand-edit the JSON.
 export const MAP_STYLE = "/assets/map-style.json";
+
+// The one thing the map's own attribution cannot say (2026-09-12). OpenFreeMap's
+// TileJSON supplies the tile credit itself ("OpenFreeMap (c) OpenMapTiles Data
+// from OpenStreetMap"), so repeating those three names here only printed them
+// twice across the top of the map. What it does NOT supply is a way to reach
+// /sources, and that matters here more than on most sites: city and tree pages
+// render with no footer at all, so without this link those pages had no route
+// to the page naming Valhalla, FOSSGIS and the ODbL.
+//
+// Passed through customAttribution because it is the one part MapLibre renders
+// unconditionally, rather than only when a source's TileJSON has resolved.
+export const MAP_CREDIT = '<a href="/sources">Sources</a>';

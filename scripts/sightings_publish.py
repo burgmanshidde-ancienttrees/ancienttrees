@@ -44,6 +44,15 @@ data/sightings-processed.json so a photograph is never judged twice; a hold
 is a verdict too (two similar trees stand nearby, the picture cannot settle
 which), and stays a hold until somebody knows more.
 
+The verdicts are approve, add, hold and reject. ADD (2026-09-12) publishes the
+photograph BESIDE the one the tree already has rather than in place of it, for
+the case the other two get wrong: a good picture of a tree that already has a
+good picture, answering a different question. A wide shot says where a tree
+stands and a close-up says what it is, and until trees could carry more than
+one the only ways to handle the second were to displace the first or to throw
+it away. It takes the same two checks an approval does, because an extra ships
+on a page exactly as the lead does.
+
 An approval does five things, in this order, and stops at the first that
 fails:
   1. Opens the file, applies the phone's EXIF orientation to the PIXELS and
@@ -189,13 +198,31 @@ def drop_vendored(old_url):
     return removed
 
 
-def apply_to_city(entry, block):
+def apply_to_city(entry, block, as_extra=False):
+    """Put the photograph on the tree, as the lead or beside it.
+
+    AS AN EXTRA (2026-09-12, when trees gained photos[]). The choice used to be
+    replace or discard, and both are wrong for the ordinary case: a reader sends
+    a good photograph of a tree that already has a good one, and the two answer
+    different questions. The Camphor of Munakata Shrine is the worked example,
+    a wide shot that shows where it stands and a close-up that shows what it is.
+    Scarcity still governs which pictures are worth keeping; what changed is
+    that keeping a second one no longer costs the first.
+    """
     path = os.path.join(ROOT, "data", "cities", f"{entry['city_slug']}.json")
     city = json.load(open(path, encoding="utf-8"))
     old = None
     for t in city.get("trees", []):
         if t.get("id") == entry["tree_id"]:
             old = t.get("photo") or {}
+            if as_extra:
+                extras = t.setdefault("photos", [])
+                # preflight refuses the same url twice, and an `add` verdict
+                # applied on two nights would otherwise produce exactly that.
+                urls = {(x or {}).get("url") for x in extras} | {old.get("url")}
+                if block["url"] not in urls:
+                    extras.append(block)
+                break
             if old.get("url") and old.get("url") != block["url"]:
                 t["photo_replaced"] = {k: old.get(k) for k in ("url", "license", "attribution", "status")}
             t["photo"] = block
@@ -203,7 +230,8 @@ def apply_to_city(entry, block):
     else:
         raise KeyError(f"{entry['tree_id']} not in {path}")
     save(path, city, indent=2)  # data/cities convention, see preflight's check_city_indent
-    return (old or {}).get("url")
+    # Nothing is replaced by an extra, so nothing may be un-vendored either.
+    return None if as_extra else (old or {}).get("url")
 
 
 def mail_for(entry, reason):
@@ -306,7 +334,7 @@ def main():
     processed = load(PROCESSED, {"done": {}})
     done = processed.setdefault("done", {})
     today = datetime.date.today().isoformat()
-    counts = {"approve": 0, "hold": 0, "reject": 0}
+    counts = {"approve": 0, "add": 0, "hold": 0, "reject": 0}
     published = []
     for r in rows:
         sid, verdict, reason = r.get("sighting_id"), r.get("verdict"), (r.get("reason") or "")
@@ -317,7 +345,7 @@ def main():
         if not entry:
             print(f"  {sid}: not in the queue, skipped (run sightings_inbox.py first)")
             continue
-        if verdict != "approve":
+        if verdict not in ("approve", "add"):
             done[sid] = {"outcome": "held" if verdict == "hold" else "rejected",
                          "date": today, "tree_id": entry["tree_id"], "reason": reason[:300]}
             counts[verdict] += 1
@@ -343,20 +371,23 @@ def main():
         if not os.path.exists(src):
             print(f"  {sid}: file missing at {entry['file']}, run sightings_inbox.py again")
             continue
-        fname = f"{entry['tree_id']}-{slugify(entry['tree_name'])}.jpg"
+        # An extra needs a name of its own or it would overwrite the lead's file.
+        extra = verdict == "add"
+        stem = f"{entry['tree_id']}-{slugify(entry['tree_name'])}"
+        fname = f"{stem}-{entry['sighting_id'][:8]}.jpg" if extra else f"{stem}.jpg"
         try:
             w, h = write_image(src, os.path.join(PHOTOS, fname))
         except Exception as e:
             print(f"  {sid}: could not write the image ({e.__class__.__name__}: {str(e)[:80]})")
             continue
         block = photo_block(entry, w, h, reason, today)
-        old_url = apply_to_city(entry, block)
+        old_url = apply_to_city(entry, block, as_extra=extra)
         dropped = drop_vendored(old_url) if old_url and old_url != block["url"] else 0
-        done[sid] = {"outcome": "published", "date": today, "tree_id": entry["tree_id"],
-                     "file": fname, "reason": reason[:300]}
-        counts["approve"] += 1
+        done[sid] = {"outcome": "added" if extra else "published", "date": today,
+                     "tree_id": entry["tree_id"], "file": fname, "reason": reason[:300]}
+        counts["add" if extra else "approve"] += 1
         published.append(entry)
-        print(f"  PUBLISHED {entry['tree_id']} {entry['tree_name'][:40]}: {fname} {w}x{h}"
+        print(f"  {'ADDED' if extra else 'PUBLISHED'} {entry['tree_id']} {entry['tree_name'][:40]}: {fname} {w}x{h}"
               f"{f', replaced {old_url}' if old_url else ''}{f' ({dropped} vendored file(s) removed)' if dropped else ''}")
         addr = address_of(entry["user_id"])
         if addr:
@@ -368,7 +399,8 @@ def main():
     qdoc["queue"] = [e for e in qdoc.get("queue", []) if e["sighting_id"] not in done]
     save(QUEUE, qdoc)
     save(PROCESSED, processed)
-    print(f"sightings publish: {counts['approve']} published, {counts['hold']} held, "
+    print(f"sightings publish: {counts['approve']} published, {counts['add']} added "
+          f"beside an existing photograph, {counts['hold']} held, "
           f"{counts['reject']} rejected, {len(qdoc['queue'])} still waiting")
     if published:
         print("Now: python3 scripts/preflight.py, then commit data/cities, site/public/photos, "

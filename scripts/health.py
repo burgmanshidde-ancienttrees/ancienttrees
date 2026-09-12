@@ -57,6 +57,17 @@ WATCHED = {
 }
 
 
+# ios.yml runs on push to ANY branch by design (a dev session on a feature
+# branch gets its own CI feedback before merging), unlike every other watched
+# workflow here, which is main-only or schedule-only. Read unscoped, its
+# "newest run" is often somebody else's in-progress branch, not the app that
+# ships. On 2026-09-12 that reported "iOS app FAILED" from a half-built
+# sign-in rework on claude/apple-login-mobile-web-wv6fv1 while main's own
+# newest ios.yml run, hours earlier, was green. Rung 2 exists to answer "is
+# the shipped app broken", so this is the one workflow that must be scoped.
+BRANCH_SCOPED = {"ios.yml": "main"}
+
+
 def gh_latest(workflow):
     """(conclusion, created_at) of the newest run, or None when gh cannot say."""
     try:
@@ -67,9 +78,13 @@ def gh_latest(workflow):
         # while the site was fine and the deploy was simply mid-flight. The
         # question this function answers is "did the last finished check pass",
         # and an unfinished run has not answered it either way.
+        cmd = ["gh", "run", "list", "--workflow", workflow, "-L", "5",
+               "--json", "conclusion,createdAt,status"]
+        branch = BRANCH_SCOPED.get(workflow)
+        if branch:
+            cmd += ["-b", branch]
         out = subprocess.run(
-            ["gh", "run", "list", "--workflow", workflow, "-L", "5",
-             "--json", "conclusion,createdAt,status"],
+            cmd,
             capture_output=True, text=True, timeout=60, cwd=ROOT)
         if out.returncode != 0:
             return None

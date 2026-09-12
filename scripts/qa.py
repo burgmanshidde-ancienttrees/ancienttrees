@@ -1232,11 +1232,16 @@ def check_vendored_photos_are_served():
     # fifth arrived: the Orto botanico di Firenze sent a photograph of their
     # Himalayan cedar and qa called it dead weight. Read the tree data instead,
     # so the next gift needs no edit here.
+    # EVERY photograph on the tree, not only the lead (2026-09-12). This check
+    # found its own version of the bug the same afternoon trees gained photos[]:
+    # the second Munakata camphor picture rendered on the page and read here as
+    # dead weight, because a file is orphaned only relative to what you looked at.
     for path in sorted((ROOT / "data" / "cities").glob("*.json")):
         for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
-            u = ((t.get("photo") or {}).get("url") or "")
-            if "/photos/" in u:
-                pointed_at.add(u.rsplit("/", 1)[-1])
+            for shot in [t.get("photo") or {}] + list(t.get("photos") or []):
+                u = ((shot or {}).get("url") or "")
+                if "/photos/" in u:
+                    pointed_at.add(u.rsplit("/", 1)[-1])
     orphans = on_disk - pointed_at
     for o in sorted(orphans)[:10]:
         failures.append(f"site/public/photos/{o} is in the build but nothing points at it")
@@ -1246,16 +1251,42 @@ def check_vendored_photos_are_served():
         data = json.loads(feed.read_text(encoding="utf-8"))
         trees = data if isinstance(data, list) else data.get("trees", [])
         for t in trees:
-            p = t.get("photo") or {}
-            for field in ("thumb", "hero"):
-                v = p.get(field)
-                if isinstance(v, str) and v.startswith("/"):
-                    failures.append(
-                        f"api/trees.json {t.get('id')}: {field} is a relative path "
-                        "and the app has no page to resolve it against"
-                    )
+            for p in [t.get("photo") or {}] + list(t.get("photos") or []):
+                hit = False
+                for field in ("thumb", "hero"):
+                    v = (p or {}).get(field)
+                    if isinstance(v, str) and v.startswith("/"):
+                        failures.append(
+                            f"api/trees.json {t.get('id')}: {field} is a relative path "
+                            "and the app has no page to resolve it against"
+                        )
+                        hit = True
+                        break
+                if hit:
                     break
     return failures
+
+
+def check_every_feed_field_reaches_the_app():
+    """A feature the website sends must be one the phone can read.
+
+    Hidde, 2026-09-12: "remember somewhere to always by default work cross
+    platform." The work lives in scripts/crosscheck.py; this is the deploy
+    gate's copy of its verdict, because the WEBSITE push is the moment the
+    fault is created. The feed is the contract between the two surfaces, and a
+    field sent to every phone that no Swift model decodes is a feature that
+    stopped at the web with nothing going red: Swift's decoder ignores keys it
+    does not know, so the symptom is a phone quietly missing something.
+
+    Deliberately not a second implementation. Removing this check needs Hidde.
+    """
+    import subprocess
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "crosscheck.py")],
+                       capture_output=True, text=True)
+    if r.returncode == 0:
+        return []
+    lines = [l.strip() for l in (r.stdout + r.stderr).splitlines() if l.strip()]
+    return lines or ["crosscheck failed without saying why"]
 
 
 def check_approved_photos_reach_the_feed():
@@ -1276,6 +1307,10 @@ def check_approved_photos_reach_the_feed():
     data = json.loads(feed.read_text(encoding="utf-8"))
     trees = data if isinstance(data, list) else data.get("trees", [])
     has = {t.get("id"): bool(t.get("photo")) for t in trees}
+    # How many photographs of this tree the feed actually carries. `photos` is
+    # sent only when there is more than one, so its absence means one.
+    count = {t.get("id"): (len(t.get("photos") or []) or (1 if t.get("photo") else 0))
+             for t in trees}
     failures = []
     for path in sorted((ROOT / "data" / "cities").glob("*.json")):
         for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
@@ -1285,6 +1320,21 @@ def check_approved_photos_reach_the_feed():
                 failures.append(
                     f"{t['id']}: photo is approved in {path.name} but the app feed "
                     "carries none, so no page and no phone shows it (usablePhoto refused it)")
+            # The same fault one layer down, and the reason this check exists at
+            # all: an approved photograph that reaches nothing looks exactly like
+            # a tree nobody has photographed, so it fails silently. Extras gained
+            # their own way to disappear on 2026-09-12 (a zod schema that strips
+            # what it does not name, a feed that forgets to send the set), and
+            # they deserve the same alarm the lead has.
+            want = 1 if (p.get("status") == "approved" and p.get("url")) else 0
+            want += sum(1 for x in (t.get("photos") or [])
+                        if (x or {}).get("status") == "approved" and (x or {}).get("url")
+                        and (x or {}).get("license"))
+            if t.get("id") in count and want > 1 and count[t["id"]] < want:
+                failures.append(
+                    f"{t['id']}: {want} approved photographs in {path.name} but the app "
+                    f"feed carries {count[t['id']]}, so the phone shows fewer than the "
+                    "website does")
     return failures
 
 
@@ -1554,6 +1604,7 @@ def main():
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_approved_photos_reach_the_feed()
+    failures += check_every_feed_field_reaches_the_app()
     failures += check_every_language_gets_the_same_controls()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:

@@ -254,7 +254,20 @@
         "license": "CC BY-SA",
         "attribution": "ingimar, via iNaturalist",
         "status": "approved"
-      }
+      },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/kyo_006-the-camphor-of-munakata-shrine-closeup.jpg",
+          "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+          "attribution": null,
+          "status": "approved",
+          "width": 1200,
+          "height": 1600,
+          "source": "contributor",
+          "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+          "note": "Photographed by a reader and sent through the app (2026-09-12), and added BESIDE the wide shot rather than in place of it: that one shows where the tree stands, this one shows the limb structure and the root flare from underneath, which is what tells you it is this trunk. The photographer identified it as the same tree as the existing photograph; the file carries no GPS tag (stripped in transit) so that identification rests on his word rather than on a coordinate. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+        }
+      ]
     },
     {
       "id": "kyo_007",
