@@ -62,13 +62,16 @@ final class FlowWalk: XCTestCase {
     /// race rather than a fault: a test that fails only where the machine is
     /// busy is testing the machine.
     ///
-    /// Ten seconds, and it costs nothing when the element is already there,
-    /// because waitForExistence returns as soon as it appears. It deliberately
-    /// does NOT assert: a missing button still fails on the next line, with the
-    /// tap's own message and its screenshot, rather than being renamed here.
+    /// The same message recurred on the same button on the floor job on
+    /// 2026-09-12, ten seconds later that day's runner was still busier than
+    /// the one this was tuned against. Twenty seconds, still free when the
+    /// element is already there, because waitForExistence returns as soon as
+    /// it appears. It deliberately does NOT assert: a missing button still
+    /// fails on the next line, with the tap's own message and its screenshot,
+    /// rather than being renamed here.
     private static func tap(_ app: XCUIApplication, _ id: String) {
         let b = app.buttons[id].firstMatch
-        _ = b.waitForExistence(timeout: 10)
+        _ = b.waitForExistence(timeout: 20)
         b.tap()
     }
 
