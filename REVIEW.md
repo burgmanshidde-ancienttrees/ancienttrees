@@ -13,6 +13,65 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-12
+
+Reviewed commits since the last review (bae8a196, 2026-09-11) through abfb15e6
+(~128 commits, day-and-night): the usual claim/verify/write cycle across many
+cities (Warsaw 26->28, Amersfoort 8->14 and Breda 4->10 from the Dutch LRMB
+register, Ottawa +5 forming a second Dominion Arboretum cluster with its own
+earned park page, Prague +3 Praha 8 oaks, Milan +1, several exhausted-register
+releases correctly logged rather than re-hunted), a mobile Safari zoom-on-focus
+fix (`.hero-search` font-size, now gated by `smoke_test.py`'s computed-size
+check), a run of map-attribution work (OpenFreeMap/OSM credit now reaches
+every one of the 5 MapLibre call sites via one `mapScript()` wrapper, collapses
+to an "(i)" after 5 seconds per the OSMF 2021 guideline, and moved out of the
+global footer into the map itself), the cross-language control-parity check
+(907 translated tree pages and 47 city pages were missing the worth-it vote
+and share button; `check_every_language_gets_the_same_controls()` in qa.py now
+catches this class, `data/lang-gaps.json` honestly lists the two still-open
+gaps with reasons), and the multi-photo feature merging to main (`photo` stays
+the lead, `photos[]` carries extras, both surfaces get a strip + pager, see
+DECISIONS.md 2026-09-12). Both WARNs from the 2026-09-11 review (the empty
+"Photo: " credit and the three self-repeating tree titles) are fixed
+(ef66e113) and verified gone from the built output. Ran `python3
+scripts/preflight.py` (595 cities, 0 problems; standing NOTEs only, none
+touching a page changed in this window), `python3 scripts/superlatives.py`
+(366 claims, no collisions), `python3 scripts/crosscheck.py` (3057 trees,
+feed and app agree field for field) and `python3 scripts/qa.py` (clean, 8584
+pages, links resolve, text clean). Read the built multi-photo page
+(`kyoto/camphor-of-munakata-shrine.html`): thumbnail strip, paging lightbox
+with swipe/arrow-key navigation and a correct "Photograph 1 of 2" / "2 of 2"
+count all render as described.
+
+**WARN APP — a single-tree place's own page shows "1 trees" in its header,
+`ios/AncientTrees/AncientTrees/Screens/Home.swift:720` (`CityView`,
+`ShelfHeader(title: "\(trees.count) trees")`).** Confirmed live in
+`city.png` (Aachen, 1 tree: header reads "1 trees") from this rotation's
+screenshots. The adjacent screenshot of the same city's map sheet,
+`city-map.png`, gets it right: "1 tree in Aachen"
+(`PlaceMapPage.swift:85`, which does branch on `trees.count == 1`). This is
+the same bug class flagged in the 2026-09-10 review in a different file
+(`MapSearch.swift`'s "1 trees" for Liskiava/Alishan under Places), which
+means it is a recurring pattern rather than a one-off: at least one other
+unconditional `"\(count) trees"` construction exists nearby with no
+singular branch (`Home.swift:538`, a homepage shelf, not confirmed on
+screen this rotation). PRINCIPLES.md #9 is the rule this trips: text a loop
+generates is "guilty until read aloud", and a single-tree place (the site
+has several) is exactly where a stranger reading cold notices the
+grammar first.
+
+**NOTE — CONVENTIONS.md's new 2026-09-12 entry ("Adding a photograph of a
+place, and saying you were there") correctly flags an open product question
+rather than resolving it, and is doing its job: `CollectSheet.claim()` still
+ticks a tree as visited in the same call that attaches an identification
+photograph, which the entry itself says Google Maps and iNaturalist keep
+separate and marks "Undecided by Hidde as of this date."** Not acted on: it
+is explicitly parked for him, and forcing a resolution here would be a
+judgment call above this reviewer's mandate. Recorded so it does not read as
+missed on a later pass.
+
+No Monday corpus-rot audit today (Saturday UTC).
+
 ## 2026-09-11
 
 Reviewed commits since the last review (519318c2, itself the newest at review
