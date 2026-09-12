@@ -1,6 +1,40 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation 11, previous attempt stopped after 35 min with 85 min unspent) - Finished the standing Breda/Amersfoort claims; stopped short of new work on the week's own budget
+
+The previous attempt had already done the research and writing for two
+standing claims (breda, amersfoort) but stopped before committing.
+Amersfoort goes 8 -> 14 trees, Breda 4 -> 10, all from the Landelijk
+Register Monumentale Bomen (2024 edition): a cemetery plane, a copper
+beech on the old library site, a sweet chestnut on former barracks
+ground and a Hungarian oak in Amersfoort; a weeping beech, a Caucasian
+wingnut and two more Wilhelminapark/Valkenberg trees in Breda. Every new
+tree is single-sourced from the register and flagged accordingly, per
+Step 2. Ran preflight (0 problems), superlatives (no clashes) and a full
+`astro build` (clean, 5514 pages) before committing, then released both
+claims. Also picked up and committed a park page for Ottawa's Dominion
+Arboretum that commit 5e92ac33 had written but never staged.
+
+Checked the ladder before looking for new work: no unprocessed
+submissions or sightings, `health.py` rung 2 clear, `leads.py --ready`
+listed only 3 candidates and all 3 turned out to be false positives on
+reading them (one explicitly declined for padding risk, one still
+blocked on unresolved access, one a negative-research note rather than
+a tree). `city_queue.py --next` puts Taormina and Ravenna at the top of
+what's openable with register supply, and both are already documented
+dead ends as of yesterday. Everything else openable today has only 1-2
+Wikidata leads, below the six-candidate floor for a single pass; a
+batched pass across several thin cities is the shape that would work
+but was not started.
+
+FOR HIDDE: nothing broken, nothing blocking. `run_health.py --week`
+read 4855/5000 minutes, about 145 left in the rolling seven days shared
+with your own usage. That is why this attempt stops here rather than
+opening a new multi-city pass: starting one now risked spending most of
+what the week has left, or dying mid-way on the usage limit, for a worse
+outcome than the two finished cities above.
+
 ## 2026-09-12 (continuation 10, previous attempt stopped after 22 min with 98 min unspent) - Finished the standing Helmond/Ottawa claims; Ottawa gains a second cluster, Helmond gains nothing real
 
 Inherited two standing register-verify claims from the previous attempt

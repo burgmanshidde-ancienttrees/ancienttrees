@@ -11,6 +11,40 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-12 (continuation 11) - Finished an earlier attempt's Amersfoort/Breda claims; week budget nearly spent
+
+Inherited two standing register-verify claims (breda, amersfoort) whose
+work was already complete but uncommitted: Amersfoort 8 -> 14 trees,
+Breda 4 -> 10 trees, both from the Landelijk Register Monumentale Bomen
+(2024 edition), each new tree flagged (single register source). Ran
+preflight, superlatives and a full astro build (clean, 5514 pages, exit
+0) before committing, then released both claims. Also found and
+committed a park page for Ottawa's Dominion Arboretum that an earlier
+commit (5e92ac33) had written but never staged.
+
+Checked `leads.py --ready`: only 3 candidates, and all 3 turn out to be
+false positives on inspection (Genoa's was explicitly declined for
+padding risk, Prague's is still blocked on unconfirmed access, Lagos's
+is a negative-research-result record, not a tree). Nothing to dispatch
+a write pass on.
+
+Checked `city_queue.py --next` for a new city to open: Taormina and
+Ravenna, the two highest-ranked options with register supply, are both
+already documented dead ends (2026-09-11 entry above). Everything else
+openable today (Adelaide, Zagreb, Lagos, Niagara Falls, Wellington,
+Mechelen, Gran Canaria, Kilkenny, Izmir, Stirling, Canterbury, Evora,
+Stratford-upon-Avon, La Palma) has only 1-2 Wikidata leads each, below
+the six-candidate floor for a single-city pass; a batched pass across
+several of them is the shape that would work but was not started this
+attempt.
+
+Stopped here rather than start one: `run_health.py --week` read
+4855/5000 minutes with roughly 145 left, shared with Hidde's own usage.
+Starting a new multi-city research pass risked either eating most of
+what remains of the week's shared budget or dying mid-way on the usage
+limit, which is a worse outcome than a short, clean attempt that shipped
+14 finished trees across two cities.
+
 ## 2026-09-12 (continuation 10) - Ottawa 14 -> 19; Helmond register pass found only duplicates
 
 Ottawa: 5 new trees from the NCC "A Living Legacy" register, all in the
