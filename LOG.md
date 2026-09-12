@@ -1,6 +1,12 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - Night run 2026-09-12 05:57 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 50.9 minutes of its 120 minute window, 334 turns, 28 commands refused by the allowlist, ended clean (success). 2 tree(s) reached data/cities across 1 city file(s), and the run still wrote no log entry of its own. Claims left behind: dallas, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-12 - The map credit, made as quiet as it may honestly be
 
 Hidde: "can we minimise it further." What cannot move is that it exists and can
