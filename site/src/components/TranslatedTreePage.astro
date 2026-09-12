@@ -13,7 +13,7 @@ import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
-import { usablePhoto, thumbUrl } from "../lib/images";
+import { usablePhotos, thumbUrl } from "../lib/images";
 import PhotoFigure from "./PhotoFigure.astro";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -81,7 +81,10 @@ const crumbItems: [string, string | null][] = [
   [x.name, null],
 ];
 
-const photo = usablePhoto(tree);
+const shots = usablePhotos(tree);
+// Same set as the English twin, because the photographs are the tree's rather
+// than the page's. Only the labels are looked up.
+const photo = shots[0] ?? null;
 let ogImage = "";
 if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(thumbUrl(photo.url, 1200))}">`;
 
@@ -122,7 +125,7 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
         picture first and full bleed, facts in one card, the closing paragraph
         as chips. Only the labels are looked up; the shape is the shape. */}
     {photo && photo.url ? (
-      <PhotoFigure photo={photo} alt={x.name} lang={lang} variant="hero"
+      <PhotoFigure photo={photo} photos={shots} alt={x.name} lang={lang} variant="hero"
         widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
     ) : (
       <figure class="tree-noph tree-hero">
