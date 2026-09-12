@@ -5,7 +5,7 @@
   "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
   "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
   "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 28, and the history each carries.",
+  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 39, and the history each carries.",
   "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "23 of the 28 stand on public streets or in public parks and squares, open at any time. Five sit behind a paid entrance or a booked tour: King Jan's Linden in the Wilanow palace grounds, three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter, and the Starynkiewicz Yew, reachable only on the Warsaw Water Filters' own scheduled tours."
+      "a": "34 of the 39 stand on public streets or in public parks and squares, open at any time. Five sit behind a paid entrance or a booked tour: King Jan's Linden in the Wilanow palace grounds, three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter, and the Starynkiewicz Yew, reachable only on the Warsaw Water Filters' own scheduled tours."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -952,6 +952,386 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by six trunks rising from one base, the thickest just 73 centimetres round, standing beside the pressure tower on the Water Filters' guided-tour route."
+    },
+    {
+      "id": "war_030",
+      "name": "The Oak of Biały Kamień",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 100 to 200 years (derived)",
+      "age_min": 100,
+      "age_max": 200,
+      "girth_cm": 306,
+      "height_m": 20.5,
+      "location": {
+        "address": "Near ul. Biały Kamień, Mokotów (register cadastral ref: obręb 10106, dz. ew. nr 3/16)",
+        "latitude": 52.20583506128041,
+        "longitude": 20.99736230287942,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3329",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Free; register describes it as standing in the general vicinity of ul. Biały Kamień rather than at a specific plot, consistent with an ordinary roadside/verge tree. No gate, fence or private-land note found.",
+      "transport": "Mokotów district (Sadyba/Rakowiec border area); bus along ul. Rakowiecka or ul. Wołoska then a short walk. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Poland's register of natural monuments protects this oak without saying where it is. The entry carries a species, a designation date of 2 July 2013 and a set of measurements, and for a location a cadastral parcel number. Warsaw's own fuller list gets closer without getting precise: in the vicinity of ul. Bialy Kamien, western Mokotow. Expect to do a little looking when you arrive.\n\nWhat the register does give is a trunk 306 centimetres round and a crown 20.5 metres up. Nobody has dated the tree, so that trunk is the only clock available. A circumference of 306 centimetres is a diameter near 97, and open-grown pedunculate oaks of that thickness generally run somewhere between 100 and 200 years old. The band is wide and it stays wide, because sharpening it would be invention.\n\nEven at the young end of it, this oak was already growing when the Warsaw Uprising broke out in August 1944 and Mokotow became one of the districts that held out longest. Almost nothing built around here came through that autumn intact. The oak did, and in 2013 the city wrote it into the same register that protects the great trees of Lazienki and the university botanical garden, on the strength of one thick trunk on an ordinary suburban street.\n\nIf you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 306 centimetres round, under a crown 20.5 metres up. It stands near ul. Bialy Kamien; the street's other protected tree is a silver lime, thinner, with leaves felted white underneath.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_031",
+      "name": "The Silver Lime of Biały Kamień",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 90 to 150 years (derived)",
+      "age_min": 90,
+      "age_max": 150,
+      "girth_cm": 274,
+      "height_m": 20,
+      "location": {
+        "address": "ul. Biały Kamień, Mokotów (register cadastral ref: obręb 1-01-06, dz. ew. nr 9/2)",
+        "latitude": 52.206173701831,
+        "longitude": 20.99624695750424,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3330",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Free; register lists it on ul. Biały Kamień with no private-plot or gate note. Treated as an ordinary street/verge tree, same as its oak neighbour (war_030).",
+      "transport": "Mokotów district (Sadyba/Rakowiec border area); bus along ul. Rakowiecka or ul. Wołoska then a short walk. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "In a strong wind this tree changes colour. Silver lime carries a dense white felt on the underside of every leaf, so a gust turns a green crown pale in seconds, which is where the name comes from and how you tell it apart from the common limes lining half of Warsaw.\n\nIt is not a Polish tree by origin. Tilia tomentosa grows wild in southeastern Europe and the Balkans and arrived here as a planting choice, valued for putting up with city air and for flowering late. Warsaw protected this one on 1 October 2013, three months after the pedunculate oak 85 metres up the same street, which makes this short stretch of ul. Bialy Kamien the unlikely holder of two natural monuments.\n\nThe register gives it 20 metres of height and a trunk 274 centimetres round. No planting date exists anywhere for it. The trunk works out at a diameter near 87 centimetres, and silver lime is a reasonably fast grower, so a fair reading is somewhere between 90 and 150 years, which would have it standing well before the apartment blocks that surround it now and through the war that flattened most of what stood here then.\n\nCome in July. Silver lime flowers weeks after the common limes have finished, heavily scented, and the whole crown fills with bees.",
+      "how_to_recognise": "You can recognise it by the leaf undersides, felted white, so the crown flashes pale whenever the wind moves. It stands on ul. Bialy Kamien, 85 metres from the street's protected oak, which is thicker and darker.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when it flowers weeks after Warsaw's common limes and the crown fills with bees"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_032",
+      "name": "The Chestnut of Wiktorska",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 80 to 110 years (derived)",
+      "age_min": 80,
+      "age_max": 110,
+      "girth_cm": 251,
+      "height_m": 18,
+      "location": {
+        "address": "ul. Wiktorska 78, Mokotów (Osiedle WSM Mokotów cooperative housing estate)",
+        "latitude": 52.199489095890335,
+        "longitude": 21.01001752994742,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.4810",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Likely open: OSM classifies 78 Wiktorska as an apartment building in Osiedle WSM Mokotów, a pre-war housing cooperative whose courtyards are traditionally open, unfenced green space rather than gated private grounds. No source explicitly confirms unrestricted pedestrian access to this specific courtyard, so flagged rather than stated as certain; a street-level check would settle it.",
+      "transport": "Mokotów, roughly 1km south of the M1 metro corridor on ul. Puławska; nearest tram/bus stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Warsaw wrote two trees in this one courtyard into its register of natural monuments on the same day in June 2020, 19 metres apart: this horse chestnut and a European ash. The chestnut is the smaller of the pair, 18 metres up on a trunk 251 centimetres round, which is a diameter of almost exactly 80 centimetres. The two figures the register gives agree with each other to within a centimetre, so somebody really did put a tape around it.\n\nThe courtyard belongs to Osiedle WSM Mokotow, built by the interwar Warsaw Housing Cooperative, which laid its blocks out around shared open green instead of private gardens. That is why a tree this size is standing in the middle of a residential estate, and why you can generally walk in and look at it, although no source states the access outright and the yard is somebody's home ground.\n\nNobody has recorded a planting date. The trunk points at roughly 80 to 110 years, derived from its thickness and from nothing else, so treat it as a range rather than a birthday. Anyone living in these blocks probably knows more than the register does, and we would like to hear it.\n\nGo in May, when the flower candles stand up off the crown. By late summer Warsaw's chestnuts brown under the leaf miner moth that reached Poland in the 1990s.",
+      "how_to_recognise": "You can recognise it by the leaves, five to seven leaflets spreading from one point like a hand, and white candles in May. It stands in the courtyard at ul. Wiktorska 78, 19 metres from the yard's protected ash.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the flower candles stand up off the crown, before the leaf miner browns it"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_033",
+      "name": "The Ash of Wiktorska",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "not documented; girth suggests a mature multi-decade tree",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 368,
+      "height_m": 20,
+      "location": {
+        "address": "ul. Wiktorska 78, Mokotów (Osiedle WSM Mokotów cooperative housing estate)",
+        "latitude": 52.19938193340651,
+        "longitude": 21.010244866822,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.4811",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Likely open: same courtyard as war_032 (the chestnut, 19m away), OSM classifies the address as an apartment building in the open-courtyard Osiedle WSM Mokotów estate rather than a gated development. Not explicitly confirmed by a source; flagged.",
+      "transport": "Mokotów, roughly 1km south of the M1 metro corridor on ul. Puławska; nearest tram/bus stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The disease now killing Europe's ash trees was first noticed in Poland, in the early 1990s, and has been working through the country's ash ever since. Warsaw made this one a protected natural monument in June 2020, thirty years into that, which is the context a trunk 368 centimetres round deserves.\n\nIt is a big ash by any standard: a diameter of 117 centimetres, and the register's girth and diameter figures agree with each other to about a millimetre, which is what a real measurement looks like. It carries its 20 metres in the courtyard of Osiedle WSM Mokotow, the interwar cooperative estate on ul. Wiktorska, 19 metres from a horse chestnut protected on the same day. Two monuments, one yard, two species, measured separately.\n\nWe have put no age on it. Published growth rates for open-grown Fraxinus excelsior scatter badly, and at this thickness any single figure would be either flattery or an insult, so the field stays empty and the girth sits on file until there is a better way to read it.\n\nThe courtyard reads as shared, open ground rather than a gated development, which is how these estates were laid out, but nothing we found says so in as many words. If you know the yard, or know how old the ash is, tell us.",
+      "how_to_recognise": "You can recognise it by the compound leaves, nine to thirteen leaflets on one stalk, and by the trunk, 368 centimetres round. It stands in the courtyard at ul. Wiktorska 78, 19 metres from the yard's protected chestnut.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_034",
+      "name": "The Silver Maple of Wołoska",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "not documented; see girth",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 339,
+      "height_m": 20,
+      "location": {
+        "address": "ulica Wołoska 139, Mokotów",
+        "latitude": 52.200495161600344,
+        "longitude": 20.998025320059178,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.4963",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Not confirmed this pass. Register address is a street number rather than a named public site; no photo, no OSM check run for this specific building. Publish flagged; access line should say 'access not yet confirmed' rather than assume either way.",
+      "transport": "Mokotów, western side near the Rakowiec/Wierzbno border; bus along ul. Wołoska. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Polish law protects an American tree here. Acer saccharinum grows wild in the river bottoms of eastern North America and came to European cities for its speed and for its leaves, cut nearly to the midrib and silver-white underneath, which lift and flicker in any breeze. Warsaw signed this one into the register of natural monuments on 4 January 2022, one of the newest protected trees in the city.\n\nIt stands 20 metres tall on a trunk 339 centimetres round, 108 centimetres through. We have given it no age. Silver maple is among the fastest growing maples there is and its rate swings with how wet its feet are, so converting that girth into years would describe the formula rather than the tree.\n\nNobody has written its history down either, which is what usually happens to a tree standing at a street number rather than in a park. No legend, no dated planting, no plaque we know of. What it has instead is size, in a species that normally gets felled for brittleness long before it reaches this, and a legal designation that arrived decades after the tree did.\n\nOne honest warning. The address is ul. Woloska 139 in Mokotow, and we have not confirmed whether you can walk up to the trunk or only see it from the pavement. If you get there first, tell us which it is.",
+      "how_to_recognise": "You can recognise it by the leaves, cut almost to the midrib in five sharp lobes and silver-white underneath, on a trunk 339 centimetres round. It stands at ul. Woloska 139.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_035",
+      "name": "The Black Locust of ul. Żaryna",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "not documented; height/girth mismatch suggests damage history, see notes",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 160,
+      "height_m": 5,
+      "location": {
+        "address": "ul. Żaryna, Mokotów (register cadastral ref: obręb 1-01-06, dz. ew. nr 33)",
+        "latitude": 52.204830711610064,
+        "longitude": 20.99367218416735,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3367",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Not confirmed this pass. Street address only (no house number); likely a roadside or verge tree but not checked against OSM this pass. Flag for confirmation.",
+      "transport": "Mokotów, western side near Rakowiec; bus along ul. Wołoska or ul. Rakowiecka. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This tree is 160 centimetres round and five metres tall, which is the wrong shape for a black locust. The species normally runs to twenty metres or more on a trunk that thick. A short heavy stem like this usually means the crown came off at some point, to a storm or to a saw, and the tree carried on from whatever was left. The register records the two numbers and not the story behind them, so that reading is inference rather than fact.\n\nRobinia pseudoacacia is North American, named after the French royal gardener Jean Robin and planted across Europe from the seventeenth century onward for its tolerance of poor sandy ground, which Poland has in quantity. It escaped the gardens long ago and now grows half wild here, which makes it an unlikely candidate for legal protection. Warsaw protected this one anyway, on 24 September 2014, on a quiet Mokotow street with no park attached to it.\n\nWe have not dated it. Black locust grows fast, and a tree that lost its top and regrew from the stump keeps no honest record in its girth.\n\nCome in June. Locust flowers hang in white pea-flowered bunches and the scent carries far enough to find the tree with your eyes shut, which on a street like this is the most practical direction we can give you.",
+      "how_to_recognise": "You can recognise it by how squat it is, a trunk 160 centimetres round carrying only five metres of tree, with the deeply ridged bark and paired thorns of a black locust. It stands on ul. Zaryna.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the white flower bunches hang and the scent carries down the street"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_036",
+      "name": "The Birch of Szczekocińska",
+      "species": "Silver Birch (Betula pendula)",
+      "age_estimate": "not documented; unusually large for the species, see girth",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 160,
+      "height_m": 18,
+      "location": {
+        "address": "Near the pedestrian crossing at ul. Szczekocińska 4a, Mokotów",
+        "latitude": 52.19771129861763,
+        "longitude": 21.016191816480372,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3364",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Likely open: register describes it as standing near a pedestrian crossing, which points to an ordinary street/verge position rather than private land. Not independently confirmed via OSM this pass.",
+      "transport": "Mokotów; roughly 600m from ul. Puławska tram/bus corridor. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Warsaw declared this birch a protected natural monument on 23 December 1981, ten days after martial law was imposed across Poland. Soldiers were on the streets, the telephone lines were cut, and somebody at the city filed the paperwork to protect a tree.\n\nThe tree earns it. Betula pendula is a pioneer species, quick up and usually done inside a century, on a trunk that stays slim; a girth of 160 centimetres and a height of 18 metres is a large specimen by the standards of anything that calls itself a birch. That is also why no age appears here. Published growth rates for silver birch run all over the place, and an outlier this size would break the arithmetic in whichever direction you pushed it.\n\nIt stands near the pedestrian crossing at ul. Szczekocinska 4a in southern Mokotow, which is the whole of the address the register gives. Forty-five years of protection have kept a tree that its own species does not usually allow to get old, on a street corner where nothing else marks it out and no plaque explains why it is there.\n\nIf you know how old it is, or you remember the birch already standing before 1981, tell us. On this one the register has a date of protection and nothing else, and somebody on that street will know more.",
+      "how_to_recognise": "You can recognise it by the white peeling bark and thin drooping shoots, on a trunk 160 centimetres round, which is unusually heavy for a birch. It stands by the pedestrian crossing at ul. Szczekocinska 4a.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_037",
+      "name": "The Copper Beech of Langiewicza",
+      "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
+      "age_estimate": "roughly 100 to 160 years (derived)",
+      "age_min": 100,
+      "age_max": 160,
+      "girth_cm": 320,
+      "height_m": 26,
+      "location": {
+        "address": "ul. Langiewicza 22, Ochota",
+        "latitude": 52.21827197689205,
+        "longitude": 21.001234268319,
+        "neighbourhood": "Ochota"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3025",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Not confirmed this pass; the wikitext cites a separate footnote reference ({{r|bip}}, the city's own BIP records) for its measurements, suggesting an independent municipal survey beyond the bare register, which strengthens the sourcing but says nothing about access. Ul. Langiewicza is an ordinary Ochota street; treat as likely a street/courtyard tree pending confirmation.",
+      "transport": "Ochota; bus or tram along ul. Grójecka, then a short walk. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "A copper beech is an accident somebody kept. The purple leaf is a mutation that turns up now and then in ordinary green beech woods, and the copper beeches of European gardens descend from a handful of those chance trees, propagated by gardeners who liked the colour. This one has been under legal protection in Warsaw since 23 April 1974, more than fifty years.\n\nIt stands 26 metres tall on a trunk 320 centimetres round, and the city's own records carry the same two measurements as the national register, so the figures have been taken twice. Nobody wrote down when it was planted. At a diameter near 102 centimetres, beech of this size usually works out somewhere between 100 and 160 years, which is a band rather than a date and stays one here.\n\nEven at the young end of that band the tree was standing in August 1944, when Ochota was fought over, burnt and emptied of its people. The district was rebuilt around whatever survived, and ul. Langiewicza is one of the quiet streets that came out of that rebuilding. The beech predates the street as it now looks.\n\nGo in May. The new leaves open a deep translucent red before they harden and darken toward the bronze they hold all summer, and a beech of this height in fresh leaf is worth planning a walk around.",
+      "how_to_recognise": "You can recognise it by the leaves, dark purple-red rather than green, on a trunk 320 centimetres round carrying 26 metres of tree. It stands at ul. Langiewicza 22 in Ochota.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "May, when the new leaves open translucent red before darkening"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_038",
+      "name": "The Silver Maple of Jazdów",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "not documented; see girth",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Jazdów 2, skwer Stefana Kisielewskiego ('Kisiela'), near the 'Na Rozdrożu' café, roughly 30m from Trasa Łazienkowska, Śródmieście",
+        "latitude": 52.21895932694758,
+        "longitude": 21.0269793590891,
+        "neighbourhood": "Śródmieście"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3473",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Free: a named public square (skwer Stefana Kisielewskiego) beside a café, in central Śródmieście. No access concern found.",
+      "transport": "Śródmieście, near Plac Na Rozdrożu / Trasa Łazienkowska; multiple tram and bus lines serve Aleje Ujazdowskie nearby. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "An expressway opened 30 metres from this maple in July 1974. Four months later, in November, Warsaw declared the tree a protected natural monument. Nobody wrote down whether the two facts are connected. The road, Trasa Lazienkowska, is still there, cut straight through the middle of the city, and so is the tree.\n\nIt stands on skwer Stefana Kisielewskiego, a small named square beside the Na Rozdrozu cafe in Srodmiescie: a square, a cafe and a tree, which is a generous amount of direction from a register that mostly gives street numbers. The university botanical garden, whose twenty-three protected trees were designated the same year, is a couple of hundred metres away, so the two make one walk.\n\nWhat the register does not give is a single measurement. No girth, no height, which is unusual and means no age either, because there is nothing to derive one from. What it names is the species, Acer saccharinum, an American maple with leaves cut nearly to the midrib and silvered on the back, and a date, 8 November 1974. A photograph from 2021 shows it standing and in leaf.\n\nSo this entry has a hole in the middle of it. If you get a tape around the trunk, or you know when the tree went in, send us the number and it goes on the page.",
+      "how_to_recognise": "You can recognise it by the leaves, cut almost to the midrib and silver-white underneath, flickering pale in any wind. It stands on skwer Stefana Kisielewskiego beside the Na Rozdrozu cafe, near Trasa Lazienkowska.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_039",
+      "name": "The Honey Locust of Fałata",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "age_estimate": "not documented; see girth",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 260,
+      "height_m": 18,
+      "location": {
+        "address": "ul. Fałata 2, Mokotów",
+        "latitude": 52.20519958069865,
+        "longitude": 21.003179965420074,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.5020",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Not confirmed this pass. Street address with house number; likely a courtyard or street tree, not checked against OSM this pass.",
+      "transport": "Mokotów, near Aleja Niepodległości / the former SGGW Mokotów campus (roughly 460m from the existing published war_010 SGGW Oak). Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Honey locust grows thorns on its own trunk, branched like antlers and up to the length of a hand. Gleditsia triacanthos comes from the central United States, where those spines kept large animals off the bark, and it reached European streets as a tough city tree that puts up with drought, salt and bad soil. Many planted in cities are thornless selections, so do not count on finding spines on this one. Warsaw made it a protected natural monument on 9 November 2022, one of the newest entries in the city's register.\n\nIt is 18 metres tall and its trunk is 260 centimetres round. The record then repeats that same figure of 260 as the trunk's diameter, which cannot be right, since a circumference of 260 centimetres gives a diameter near 83. We have kept the girth and left the other number where we found it, and with one measurement in doubt we have not turned either into an age.\n\nThe name is about the pods. They hang long, dark and twisted, and the pulp inside is sweet enough that livestock ate it where the tree comes from. On ul. Falata in Mokotow they mostly litter the pavement in autumn, along with leaflets that turn a clean yellow before they drop. Whether you can reach the trunk or only see it, we have not confirmed.",
+      "how_to_recognise": "You can recognise it by the leaves, fine and fern-like in many small leaflets, and by long twisted brown pods on the ground in autumn. It stands at ul. Falata 2, 18 metres tall on a trunk 260 centimetres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_040",
+      "name": "The Columnar Oaks of Łowicka",
+      "species": "Pedunculate Oak, columnar form (Quercus robur 'Fastigiata')",
+      "age_estimate": "not documented; see girth",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 270,
+      "height_m": 22,
+      "location": {
+        "address": "ul. Łowicka 52, Mokotów (visible from ul. Narbutta)",
+        "latitude": 52.204449124498524,
+        "longitude": 21.0045874581709,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.5153",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Likely visible from public ground: the wikitext's own photo caption reads 'widok z ulicy Narbutta' (view from Narbutta street), i.e. the pair was photographed FROM the public street, not from inside the courtyard. OSM classifies 52 Łowicka as an apartment building (Górny Mokotów, Osiedle Stary Mokotów area). Access line should say the pair is visible from the Łowicka/Narbutta corner; whether a visitor can walk directly up to the trunks (vs. only view them from the street) is not confirmed this pass.",
+      "transport": "Mokotów, Górny Mokotów area; bus or tram along ul. Puławska or ul. Rakowiecka, then a short walk. Exact stop not verified this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Pedunculate oak spreads. These two go straight up, narrow and tight as poplars, because they are Quercus robur 'Fastigiata', a naturally occurring upright form that gardeners have propagated since the nineteenth century for exactly this shape. Warsaw protected the pair on 2 July 2013 at one address on ul. Lowicka, and measured them separately rather than as a clump: this one 22 metres tall on a trunk 270 centimetres round, its companion taller at 25 metres and slimmer at 245.\n\nThe university botanical garden has two of the same cultivar flanking an entrance about 1.7 kilometres north, and the effect is identical in both places. An oak that reads as a column instead of a canopy stops anyone who knows what an oak is supposed to look like.\n\nNobody has dated these two. Fastigiate oaks went into European gardens and streets right through the nineteenth and twentieth centuries, which is a period rather than a year, so no figure goes here.\n\nOne useful detail comes from the photograph in the city's records: it was taken from the pavement of ul. Narbutta. You can see both trees from the street corner without entering the courtyard at Lowicka 52, which matters, because whether a visitor can walk up to the trunks themselves is the one thing about this pair we have not established.",
+      "how_to_recognise": "You can recognise them by their shape, two oaks grown narrow and upright like poplars instead of spreading a crown. They stand in the courtyard at ul. Lowicka 52, visible from the corner of ul. Narbutta.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
