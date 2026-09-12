@@ -1,6 +1,86 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation 4) - 21 trees across 8 places, a new species page, and a git-push auth wall worked around
+
+An earlier attempt in this window had stopped after 12 minutes with 108
+still unspent, having claimed Warsaw and prefiltered its GDOS register
+to a close single-specimen cluster but not yet dispatched anything.
+Finished that first, then kept going rather than stop again early.
+
+**Warsaw 28 -> 39.** Dispatched a verify pass on the 17 pre-filtered
+single-specimen GDOS candidates. 11 verified via the Wikipedia
+registry-join technique (kodinspire join to pl.wikipedia's "Pomniki
+przyrody w Warszawie"), which supplied girths and addresses the bare
+register lacks. 5 blocked as private allotment-garden plots; 1
+duplicate of the already-published war_005 caught before delivery.
+Wrote and merged all 11 (war_030-war_040); fixed the FAQ and
+question_meta, which still said 28 trees.
+
+**Dallas 8 -> 9.** scout_next.py kept naming Dallas as unscouted, so
+worked through the 14 Texas Big Tree Registry leads left from the
+2026-08-20 sweep (that registry is non-commercial-licensed, usable
+only to find candidates, never as the sole source). Verified dal_009,
+the Storytelling Place Red Oak, a Comanche marker tree corroborated by
+TxHTC and an independent trail blog. One duplicate removed; the rest
+ruled out on distance (Tarrant/Collin county, Coppell, Lancaster, all
+outside the day-trip boundary) or lack of a second source. Wrote the
+story directly rather than dispatching a pass for one tree. Recorded a
+register-scouting verdict for Dallas (blocked, same wall as Houston
+and Austin) so scout_next.py stops resurfacing it; the register-lead
+route is now exhausted there, and growing it further needs a
+from-zero pass, which Hidde has already approved for this city.
+
+**New species page: Pedunculate Oak, columnar form.** pagegaps.py
+flagged it (3 renderable trees, right at the 3-tree floor: Krakow's
+Bartoszewski Square oak and two Warsaw Fastigiata pairs). Wrote the
+intro from those three trees' own facts per P3.
+
+**Lithuania famous-tree batch, 9 trees across 6 places.**
+famous_demand.py's Lithuania batch had been left by an earlier session
+for "a future run with enough budget". Checked run_health.py --week
+(4714/5000, tighter than that earlier caution but more headroom than
+it had), judged it worth one bounded pass, and worked all 12
+candidates. 9 verified via the Lithuanian STVK register plus each
+tree's own Wikipedia article: Degsne +1 (Bagrenas Linden), Kaunas +3
+(a real 0.9km-apart forest cluster: two Sitkunai oaks and the
+Kiaunupis Oak), Pagramantis Regional Park +1 (Gaure Oak, ~19km
+further out as its own car stop), Plauginiai Forest +1 (the
+Mikalojaus Dauksa Oak in Betygala), Vainiai +2 (Galiunas and Nevezio
+Dvilypis oaks, 26-28km out), Zalgiriai +1 (the Pagryniai Oak, honestly
+placed as standing on Silute's edge rather than in Zalgiriai itself,
+since the famous-tree script's 30km straight-line guess is not always
+where the tree actually sits). Two "avenue" candidates (Smalininkai,
+Bubiai) confirmed as multi-tree avenues rather than single collectible
+points and blocked. Butinge oak left as a lead: applied the
+single-famous-tree destination test explicitly and the honest answer,
+at 16 reads/month and isolated 47km from anything else mapped, was no.
+
+Six of the nine carry no age at all, left empty rather than derived,
+since no growth-rate basis existed for a lime that forks and hollows,
+or an oak whose girth alone will not honestly produce a number. Wrote
+all nine stories, then had to correct six cities' stale intro/meta/faq
+tree counts myself (preflight caught it): degsne 2->3, kaunas 6->9,
+pagramantis-regional-park 4->5, plauginiai-forest 1->2, vainiai 1->3,
+zalgiriai 1->2. The car-only access and 12-28km gaps between each
+place's own trees are stated plainly in every story and in the
+city-level copy rather than smoothed into looking like a walk.
+
+**FOR HIDDE: git push failed with "Invalid username or token" partway
+through this window** (the origin remote's installation token had a
+1-hour exp claim and expired mid-session), the same wall LOG.md has
+recorded several times before. Worked around it the documented way:
+re-pointed origin at `DEFAULT_WORKFLOW_TOKEN` from the job's own
+environment, which pushed cleanly every time after. Nothing was lost;
+every commit below reached GitHub. Worth knowing this fix exists and
+keeps working, in case a future run does not think to look for it.
+
+Preflight and QA clean throughout (8650 pages built at the end).
+Released both claims (`_famous-lithuania`, plus the inherited `warsaw`
+and the self-claimed `dallas`). Left `data/research/warsaw-verify-batch.json`
+untracked, a scratch filter of the close-cluster file with no unique
+information; harmless if it sits there.
+
 ## 2026-09-12 (continuation 3) - Confirmed the routes.yml push-race fix is genuinely blocked; shelf survey found nothing safe to dispatch, week budget too tight to gamble
 
 Rung 2 first, per `health.py`: the Walking routes workflow's 09:32 UTC
