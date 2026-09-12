@@ -90,17 +90,21 @@ that honest about having nothing is a lead wearing a page's clothes.
    in Munich, of a different kind: their prose quoted the city's Verordnung ueber
    Naturdenkmaeler and the field was simply never filled. The data cannot tell
    invention from bookkeeping, which is the argument for refusing both.
-2. `why_go` on the tree: one sentence saying why somebody should walk to THIS
-   trunk, rendered on the page. Public rather than a private checklist on
-   purpose, because a box gets ticked and a sentence a reader will see has to
-   survive being read. Most trees never write it: a recorded age or a big trunk
-   is the reason, and the field stays empty.
-3. `check_a_tree_says_why_to_go()` fires only where there is neither age nor
-   measurement nor sentence. FAIL when the tree came from a reader's photograph,
-   which is the path Nara took and the one where a photograph flatters an
-   ordinary tree into looking like a find; NOTE for the 475 that predate the
-   field, because a gate that fails the whole night shift on its first run is a
-   gate somebody switches off.
+2. ~~`why_go` on the tree: one sentence saying why somebody should walk to THIS
+   trunk, rendered on the page.~~ **WITHDRAWN 2026-09-12, by Hidde: "precies
+   haal weg".** Shown three of the forty that existed beside their own stories,
+   each reason turned out to be the story's own first sentence compressed. Step
+   3 already requires a story to lead with the most surprising fact, so the
+   field asked for what the page already had and printed it twice. The answer
+   to Nara is not a field: it is the four-tree floor and "would somebody travel
+   specifically for THIS ONE TREE", which decide whether the page exists at all.
+   The question he asked that day stands; only the field is gone.
+3. `note_a_reader_photograph_is_not_a_reason()` keeps the checkable half: a tree
+   published from a reader's photograph with no recorded age and no usable
+   measurement, which is the path Nara took and the one where a photograph
+   flatters an ordinary tree into looking like a find. A NOTE rather than a FAIL
+   only because exactly one published tree sat in that state on the day the
+   field was removed, and retiring a live page is hard rule 3 and Hidde's call.
 
 **The correction the convention check made, and it was to my own proposal.** I
 had suggested the app demand a justification before somebody may add a tree.

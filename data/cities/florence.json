@@ -841,16 +841,52 @@
       "access": "Paid entry (Boboli Gardens ticket, part of the Pitti Palace / Uffizi Galleries museum complex)",
       "transport": "About 7 min walk from Ponte Vecchio; C3 bus stops at Pitti Palace",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/390178267/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Hill Craddock, via iNaturalist",
+        "status": "held",
+        "note": "Second angle from the same disputed iNat observation as the candidate above; same identity question, held rather than judged separately.",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "verify_notes": "Two independent sources joined by matching register code (MASAF sheet 61/D612/FI/09 and RAMI id 6501, pins 9m apart). Age of 375 years is RAMI's own stated figure ('calculated from the registered birth year'); the underlying documentary basis was not independently found, so treated as an estimate in the story rather than a fact. Not the 'Bobolino' hillside garden where flo_007/015/016/017/019 stand (0.76 km away); this is the Boboli Gardens proper.",
       "paid_entry": true,
       "how_to_recognise": "You can recognise it by standing apart from the famous double row of cypresses on the Viottolone, its own separate listed specimen. It stands nearer the Pitti Palace end of the Boboli Gardens."
+    },
+    {
+      "id": "flo_024",
+      "name": "The Pine of Via del Pino",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "",
+      "location": {
+        "address": "Via del Pino, Coverciano, 50135 Firenze",
+        "latitude": 43.779417,
+        "longitude": 11.295528,
+        "neighbourhood": "Coverciano"
+      },
+      "story": "This stone pine did not move onto a street named after it. The street took its name from the tree, and Via del Pino in the Florentine suburb of Coverciano has pointed at this one trunk for longer than anyone recorded. It stands squeezed onto the pavement between apartment buildings and small shops, its trunk swollen to more than four metres round and its crown rising almost thirty metres above the rooftops, the kind of scale that makes an ordinary residential street feel briefly like a piazza.\n\nNobody has dated it. Stone pines grow at wildly different rates depending on how they are pruned and crowded, and no comparable local tree offered a growth curve to estimate from, so the honest answer is that it has simply outlasted the memory of whoever planted it. Two published surveys of Tuscany's veteran trees, Patriarchi vegetali and Toscana cento alberi da salvare, both singled it out, and Italy's own forestry ministry lists it on the national monumental tree register under its street address alone, because the tree and the address are the same fact.\n\nIt has watched Coverciano grow up around it rather than the other way round. Shops opened beside it, buildings rose to its shoulders, buses started stopping two minutes from its base, and it kept standing on the sidewalk it was there for first.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "access": "Free, stands on the public sidewalk of a residential street",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.perunaltracitta.org/homepage/2024/06/03/il-gigante-buono-il-pino-del-via-del-pino/",
+        "https://www.facebook.com/ilregistrodeglialberi/posts/il-pino-di-via-del-pino-a-firenze-la-pianta-ha-caratterizzato-la-toponomastica-d/1006725054940313/"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "transport": "Duse D'Annunzio bus stop (Autolinee Toscane), about 2 minutes on foot",
+      "height_m": 29.0,
+      "girth_cm": 437,
+      "how_to_recognise": "You can recognise it by its size on an ordinary residential street: a trunk 4.37 metres round and a crown reaching almost 30 metres, standing on the pavement of Via del Pino, the street it gave its name to.",
+      "verify_notes": "MASAF sheet 27/D612/FI/09: Pinus pinea L., girth 437 cm, height 29.0 m, comune Firenze, locality simply \"Via del Pino\" (the tree is the reason the street has that name). Second source: perunaltracitta.org (La Citta invisibile, 2024-06-03), an independent piece specifically about this tree. Third confirmation: RAMI (Il Registro degli Alberi) posted about this exact tree on its own page, confirming the street-naming fact independently. No age recorded anywhere found this pass."
     }
   ]
 }
