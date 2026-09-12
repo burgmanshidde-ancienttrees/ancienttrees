@@ -55,6 +55,8 @@ export const VISITED_SYNC_JS = `
   function repaint() {
     if (window.atPaintPassport) window.atPaintPassport();
     if (window.atPaintSeen) window.atPaintSeen();
+    // /explore's My trees chip filters on this same answer (2026-09-12).
+    if (window.atRefilterMap) window.atRefilterMap();
   }
 
   window.atSyncVisited = function() {

@@ -1881,3 +1881,44 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
   border-radius: 999px; background: #fff; color: var(--ink); cursor: pointer; }
 .unit-btn:hover { border-color: var(--moss); }
 .unit-btn.is-on { border-color: var(--moss); background: var(--moss-light); color: var(--moss); }
+
+/* THE MAP FILTER ROW on /explore (2026-09-12). Capsules over the map, which is
+   what Google Maps draws and what our own app's row already is. It sits top
+   left because MapLibre's own controls own the top right, and it scrolls
+   sideways rather than wrapping, because a row that grows a second line pushes
+   the map down every time somebody picks a long species name. */
+.map-filters { position: absolute; z-index: 3; top: 0.7rem; left: 0.7rem;
+  right: 3.2rem; display: flex; gap: 0.4rem; align-items: center;
+  overflow-x: auto; overflow-y: hidden; padding: 0.15rem 0.15rem 0.35rem;
+  scrollbar-width: none; }
+.map-filters::-webkit-scrollbar { display: none; }
+/* 44 tall, not the app's 34. SwiftUI can draw a 32 point capsule inside a 44
+   point target; a chip row on the web cannot do that for a <select>, and a row
+   where the buttons are 44 and the picker is 34 is worse than one that is
+   honestly 44 throughout. The smoke test's own tap-target gate caught this the
+   first time it ran. */
+.mf { flex: 0 0 auto; font-family: inherit; font-size: 13px; font-weight: 600;
+  line-height: 1; height: 44px; padding: 0 0.9rem; border-radius: 999px;
+  border: 1px solid var(--cream-dark); background: #fff; color: var(--ink);
+  cursor: pointer; box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
+.mf:hover { border-color: var(--moss); }
+.mf.is-on { background: var(--moss); border-color: var(--moss); color: #fff; box-shadow: none; }
+/* The species picker is a native select on purpose: 521 options is exactly
+   what a platform picker is good at, and a hand-rolled listbox over a map is
+   the interaction nobody has been trained on. */
+.mf-select { max-width: 11rem; appearance: none; padding-right: 1.7rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2326301E' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 13px; }
+.mf-select.is-on { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E"); }
+.mf-count { flex: 0 0 auto; font-size: 12.5px; font-weight: 700; color: var(--ink);
+  background: #fff; border-radius: 999px; padding: 0.3rem 0.6rem;
+  box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
+.mf-count[hidden] { display: none; }
+@media (max-width: 900px) {
+  /* On a phone the sheet covers the lower half, so the row keeps its place at
+     the top of the map where it is still reachable with a thumb. The right
+     gutter stays: MapLibre's zoom and locate controls live in that corner at
+     every width, and the first phone render had the Species chip sitting under
+     them. The row scrolls, so giving it less width costs nothing. */
+  .map-filters { top: 0.5rem; left: 0.5rem; right: 3rem; }
+}

@@ -1,6 +1,55 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (session) - Filters on the web map, and a correction about which ones
+
+Hidde: "web heeft toch ook een xplore kaart - daar zou species toch nice
+zijn net als de andere twee in de app? - seizoen zou ik niet doen nee",
+and then "ik zou nog wel een filter willen bouwen voor betaalde bomen
+waar je een ticket voor moet kopen - dat je die weg kunt haalt."
+
+FIRST, A CORRECTION TO MY OWN REPORT. This morning I told him the app's
+map has five filters, reading MapFilters.swift. That file DEFINES five;
+the app's row does not carry them. What ships on the phone today is the
+walk chip, Favourites, My trees and Species, because the other three were
+cut and the reasons are in MapTab.swift: at-their-best is a pulse on the
+pins rather than a filter, with-a-photo was doing the editorial order's
+job, and within-2-km was doing the distance-ordered list's job. So "the
+other two in the app" are Favourites and My trees, not photo and 2 km,
+and he was about to ask for the two the app had already removed.
+
+/explore now carries four chips over the map:
+
+  Free to visit   hides the 241 trees behind a ticket. His, and not in
+                  the app; it is the 2026-08-23 complaint about a city
+                  page that turns out to be a garden page, as a control.
+  Favourites      the account's hearts
+  My trees        the account's ticked-off list
+  Species         all 521, ordered by how many trees carry each, as a
+                  native picker rather than a hand-rolled listbox
+
+Two things worth knowing about how it works. It re-sources the map rather
+than filtering a layer, because a layer filter leaves the CLUSTER counts
+counting what it hides, so a cluster says 40 and opens to three. And the
+two account chips ask for sign-in rather than emptying the map while
+signed out, which is the rule he set for the app's own two.
+
+Verified by driving it in a browser rather than by reading it: Free to
+visit gives 2,814 of 3,055, adding Pedunculate Oak gives 245, dropping
+Free gives 249, clearing gives no count, and Favourites while signed out
+opens the dialog and stays unpressed.
+
+The smoke test earned its keep twice. It refused the chips at 34 points
+tall (the app draws 34 inside a 44 point target, which a <select> cannot
+do on the web, so the row is honestly 44), and the first phone render had
+the Species chip sitting under MapLibre's zoom controls.
+
+Both lookups are now in CONVENTIONS.md: the units one and the chip row.
+
+FOR HIDDE: the ticket filter belongs in the app's row too. That is one
+line in MapFilters.swift and one chip in MapTab.swift, and it needs a Mac
+to build and sweep, so it is not in this push.
+
 ## 2026-09-12 (session) - A cross-platform sweep: what else the two surfaces disagree about
 
 Hidde: "kijk of er nog meer inconsistenties zijn cross platform." Six axes

@@ -47,6 +47,8 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     // The city map's pins wear the same heart (2026-09-12). One answer, two
     // paintings, so a save on a card lights its pin without a reload.
     if (window.atPaintPinFaves) window.atPaintPinFaves();
+    // And /explore's Favourites chip filters on this same answer.
+    if (window.atRefilterMap) window.atRefilterMap();
   }
   window.atHasSaved = function(id) { return Boolean(mine && mine[id]); };
   function load() {

@@ -25,6 +25,62 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Kilometres or miles (2026-09-12)
+
+Hidde, after the cross-platform sweep found the app reading the phone's locale
+while the website spoke kilometres to everybody: "die mijl km optie doe gewoon
+de benchmark na en bouw."
+
+**Google Maps.** Decides automatically from your region by default, detected
+from the device's location, SIM or account region, and keeps the override in
+Settings on mobile. On desktop there is no toggle in the map at all: it follows
+the Google account's region.
+Read 2026-09-12, support and how-to pages for Google Maps distance units.
+
+**AllTrails.** One Units switch (Imperial / Metric) under account Settings on
+the website, and under Settings on the phone. It is the same account, so the
+choice follows you between the two.
+Read 2026-09-12, support.alltrails.com "How to switch between imperial and
+metric".
+
+**komoot.** Account Settings, "Language and Units", distance and elevation
+together, applied on web and app alike.
+Read 2026-09-12, support.komoot.com "Manage account preferences".
+
+**What all three agree on, including what none of them does.** The default is
+automatic from the reader's own region, never a question asked on arrival. The
+override is one switch, in settings, per ACCOUNT rather than per browser, so it
+crosses devices. And nobody puts a unit toggle next to a distance on the page,
+which was the shape I would have reached for first.
+
+**What we built from it.** units-js.ts converts from the reader's region with
+nothing stored; the switch on /account writes profiles.units, the same column
+the app already writes.
+
+---
+
+## Filters over a map (2026-09-12)
+
+**Google Maps.** A single horizontally scrolling row of capsule chips over the
+top of the map, and nothing else. No sheet, no Apply button: a chip takes
+effect the moment it is pressed.
+
+**AllTrails and Airbnb.** A Filters BUTTON that opens a sheet with many
+controls and an Apply. That is the right shape for eight or twenty filters and
+the wrong one for four, because a sheet costs two taps to change one thing.
+
+**Our own app** draws the chip row, which is why the website now draws the same
+one: same capsules, same words, same order.
+
+**The count of chips is the decision, not the shape.** MapFilters.swift defines
+five and the app's row shipped four for a while; today it carries the walk
+chip, Favourites, My trees and Species, because Hidde cut the others and the
+reasons are recorded in MapTab.swift: at-their-best is a pulse on the pins
+rather than a filter, with-a-photo was doing the editorial order's job, and
+within-2-km was doing the distance-ordered list's job.
+
+Read from the products and from our own app, 2026-09-12.
+
 ## Helping somebody be SURE which one they found (2026-09-07)
 
 Hidde, testing in Nara: "deze hele flow zou je moeten benchmarken... als de

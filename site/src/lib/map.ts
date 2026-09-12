@@ -120,7 +120,15 @@ export interface ExploreTreeFeature {
   // serializes ([None, None] -> [null, null]) rather than crashing the
   // build, exactly like the unfiltered-trees quirk in search-index.json.
   geometry: { type: "Point"; coordinates: [number | null, number | null] };
-  properties: { id: string; name: string; url: string; cs: string; city: string; age: string; now: 0 | 1 };
+  properties: {
+    id: string; name: string; url: string; cs: string; city: string; age: string; now: 0 | 1;
+    /** Behind a ticket. The filter hides these; 241 of 3,055 trees. */
+    paid?: 0 | 1;
+    /** Index into the species list the page ships beside the features. An
+     *  index rather than the name, because 3,055 copies of "Pedunculate Oak"
+     *  is 45KB of the same twelve words. */
+    sp?: number;
+  };
 }
 export interface ExploreCityRow {
   city: string;
@@ -136,14 +144,17 @@ export interface ExploreCityRow {
 /** The /explore world map: one GeoJSON circle layer per tree with native
  * clustering, plus the register layer fetched separately. Ported from the
  * inline `script` string in build_explore_page(), build_site.py:4641-4805. */
-export function exploreMapScript(features: ExploreTreeFeature[], cities: ExploreCityRow[]): string {
+export function exploreMapScript(features: ExploreTreeFeature[], cities: ExploreCityRow[],
+                                 species: string[] = []): string {
   const geojson = JSON.stringify({ type: "FeatureCollection", features });
   const citiesJson = JSON.stringify(cities);
+  const speciesJson = JSON.stringify(species);
   return (
     mapScript(
     `
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
+var SPECIES = ${speciesJson};
 // One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
@@ -284,6 +295,97 @@ function initTreeLayers() {
 }
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
+
+// ---- THE FILTER ROW (2026-09-12).
+//
+// Convention, looked up rather than invented (CONVENTIONS.md): Google Maps
+// puts a scrolling row of capsule chips over the top of the map and nothing
+// else; AllTrails and Airbnb put a Filters BUTTON that opens a sheet, which is
+// the right shape for eight filters and the wrong one for four. Our own app
+// draws the chip row, so the website draws the same row: same capsules, same
+// words, same order.
+//
+// WHICH CHIPS, and this is the half that needed checking rather than copying.
+// MapFilters.swift still DEFINES five (peaking, photo, walkable, species,
+// mine) and the app's row carried four of them for a while. It does not now:
+// what ships on the phone today is the walk chip, Favourites, My trees and
+// Species, because Hidde cut the rest, and his reasons are in MapTab.swift.
+// "At their best" is a pulse on the pins rather than a filter, "with a photo"
+// was doing the editorial order's job, and "within 2 km" was doing the
+// distance-ordered list's job. So the website takes the row the app actually
+// has, minus the walk chip, which is Plus.
+//
+// Plus one the app has not got: FREE TO VISIT (Hidde, 2026-09-12: "ik zou nog
+// wel een filter willen bouwen voor betaalde bomen waar je een ticket voor
+// moet kopen - dat je die weg kunt halen"). It is the oldest complaint about
+// this site wearing a control: a city page that turns out to be a garden page
+// (2026-08-23, "ik heb liever 34 goede bereikbare dan 39"). 241 of our trees
+// stand behind a ticket, and somebody who wants an afternoon out for nothing
+// should be able to say so. It belongs in the app's row too; that half needs
+// a Mac and is written down.
+//
+// FILTERING RE-SOURCES, it does not hide a layer. A "filter" on the circle
+// layer would leave the CLUSTER counts including everything it hides, so a
+// cluster would say 40 and open to three. setData re-clusters, which is the
+// only honest way to filter a clustered map.
+var FILTERS = { free: false, fav: false, mine: false, sp: -1 };
+function filtersOn() {
+  return FILTERS.free || FILTERS.fav || FILTERS.mine || FILTERS.sp >= 0;
+}
+function keepsTree(f) {
+  var p = f.properties;
+  if (FILTERS.free && p.paid === 1) return false;
+  if (FILTERS.sp >= 0 && p.sp !== FILTERS.sp) return false;
+  if (FILTERS.fav && !(window.atHasSaved && window.atHasSaved(p.id))) return false;
+  if (FILTERS.mine && !(window.atHasVisited && window.atHasVisited(p.id))) return false;
+  return true;
+}
+function applyFilters() {
+  var src = map.getSource('trees');
+  if (!src) return;
+  var kept = filtersOn() ? DATA.features.filter(keepsTree) : DATA.features;
+  src.setData({ type: 'FeatureCollection', features: kept });
+  var note = document.getElementById('mf-count');
+  if (note) {
+    // A number only while a filter is on. The map's own copy carries no counts
+    // on purpose (2026-07-29), and this is not copy: it is the answer to what
+    // you just pressed, and zero has to be sayable.
+    note.hidden = !filtersOn();
+    note.textContent = kept.length === 0 ? 'No trees match'
+      : (kept.length === 1 ? '1 tree' : kept.length + ' trees');
+  }
+}
+// Both lists live in the account, so both chips need one. Signed out they ask
+// rather than emptying the map, which is the rule Hidde set for the app's own
+// two: "als je uitgelogd op favourites of my trees filter klikt moet er ook
+// een inlog scherm opkomen."
+function needsAccount(name) {
+  if (window.atSignedIn && window.atSignedIn()) return false;
+  if (window.atOpenSignIn) window.atOpenSignIn(name);
+  return true;
+}
+document.querySelectorAll('.mf[data-f]').forEach(function(b) {
+  b.addEventListener('click', function() {
+    var f = b.dataset.f;
+    if ((f === 'fav' || f === 'mine') && !FILTERS[f]
+        && needsAccount(b.textContent.trim())) return;
+    FILTERS[f] = !FILTERS[f];
+    b.classList.toggle('is-on', FILTERS[f]);
+    b.setAttribute('aria-pressed', FILTERS[f] ? 'true' : 'false');
+    applyFilters();
+  });
+});
+var spPick = document.getElementById('mf-species');
+if (spPick) {
+  spPick.addEventListener('change', function() {
+    FILTERS.sp = spPick.value === '' ? -1 : parseInt(spPick.value, 10);
+    spPick.classList.toggle('is-on', FILTERS.sp >= 0);
+    applyFilters();
+  });
+}
+// The account's two lists arrive after this runs, so a chip pressed while they
+// are still in flight repaints when they land.
+window.atRefilterMap = applyFilters;
 // ---- The city chooser (Hidde, 2026-07-31, final form: "waarom kom ik
 // dan niet direct op de City Page?"). The map is where you choose; the
 // city page is the city experience, full stop. The panel lists up to ten
