@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (session) - The homepage said the same thing twice, and "Top species" was the alphabet
+
+Hidde sent a screenshot of the phone homepage: the mission sentence stands
+once in the page's own block and again in the footer directly underneath.
+Both fixed, on branch claude/website-ux-audit-aji746.
+
+The homepage `.mission` block is gone. The footer's `footerAbout` says the
+same sentence on all 5,515 pages, so the footer is the copy that survives;
+the page-level one added only "or want to map a whole city" and paid for it
+by saying everything else a second time. Its CSS went with it.
+
+"Top species" in the directory was sorted alphabetically and printed Aleppo
+Pine, American Elm, American Sycamore, Amur Cork Tree, Atlas Cedar, Austrian
+Pine, Bald Cypress, Baobab, Bishop Wood, Bitter Orange, which is the first
+ten names in the alphabet under a heading promising the top of the site. Top
+cities, Collections and Oldest trees in the same block are all genuinely
+ranked, and the Species SHELF further up the page already sorts by tree
+count, so the directory disagreed with its own label and with itself one
+screen higher. Now ranked: Pedunculate Oak, London Plane, Ginkgo.
+
+Rebuilt (5,515 pages), qa clean, preflight 0 problems, smoke test passed.
+
+The rest of the UX walk (375px, real viewport, screenshots) is reported to
+him in session rather than written up here, because most of it is a question
+for him rather than a finding to act on. The one thing worth recording for a
+later run: on 283 of 500 sampled tree pages the age is printed twice in two
+different forms, a computed band in the top panel ("260-285") and the written
+estimate in the facts table below ("275 years"), and access text is repeated
+word for word on 25 of them. The comment above that block in
+site/src/pages/[city]/[tree].astro already states the rule it breaks: "a fact
+appears exactly once per page."
+
 ## 2026-09-12 - Night run 2026-09-12 02:02 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 32.8 minutes of its 120 minute window, 244 turns, 45 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: vancouver, amsterdam, barcelona, which block the top of the queue until they expire.
