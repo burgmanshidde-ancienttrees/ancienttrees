@@ -315,6 +315,35 @@ final class Sightings {
         persist()
     }
 
+    /// A correction made somewhere else, folded into the copy this phone holds.
+    ///
+    /// Written 2026-09-12. `adopt` refuses a row the phone already knows, which
+    /// is the right instinct for a pull (never clobber something this phone has
+    /// not managed to send yet) and it made corrections travel one way only:
+    /// phone to account, never back. Hidde's Kyoto photograph was filed under
+    /// the Sudajii and turned out to be the muku beside it, and no fix to the
+    /// database could ever have reached the phone that took it.
+    ///
+    /// WHEN this is allowed to happen is `SightingSync.takeRemote`, and it is
+    /// deliberately narrow: only a row changed elsewhere since this phone last
+    /// sent its own.
+    ///
+    /// The photograph is kept rather than replaced when the phone already has
+    /// one. It is the same picture, and the local file is the original while
+    /// the download is a copy of a downsized copy.
+    func absorb(_ remote: Sighting, image: UIImage?) {
+        guard let i = all.firstIndex(where: { $0.id == remote.id }) else { return }
+        let kept = all[i].photo
+        all[i] = remote
+        all[i].photo = kept
+        if kept == nil, let image, let data = Self.downsized(image) {
+            let file = remote.id.uuidString + ".jpg"
+            try? data.write(to: folder.appendingPathComponent(file))
+            all[i].photo = file
+        }
+        persist()
+    }
+
     func image(_ s: Sighting) -> UIImage? {
         guard let f = s.photo else { return nil }
         return UIImage(contentsOfFile: folder.appendingPathComponent(f).path)

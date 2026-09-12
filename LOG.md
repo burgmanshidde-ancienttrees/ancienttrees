@@ -228,6 +228,28 @@ are yours to rank, not mine to start.
    code nothing emits.
 3. The map pin on the phone wears a ticket mark, a heart and a tick. The
    web map pin wears none of the three.
+## 2026-09-12 - A correction made on the server now reaches the phone that holds it
+
+The other half of this morning's sighting work, on Hidde's "ja bouw dat maar".
+`SightingSync.merge` skipped every row the phone already had, so corrections
+only ever travelled one way: phone to account, never back. Repointing his Kyoto
+photograph from the Sudajii to the muku beside it would have changed nothing on
+his own telephone.
+
+The rule, deliberately narrow: the account's copy replaces the phone's only when
+it changed there SINCE this phone last managed to send its own (`updated_at`
+newer than `syncedAt`). A row this phone has never pushed is the only copy of
+itself that exists and always stays, which is somebody adding a tree with no
+signal. Our own pushes cannot trip it, since they stamp `updated_at` off this
+clock and mark the row synced afterwards. The photograph on the phone is kept
+rather than re-downloaded: same picture, and the local file is the original.
+
+The trap on the way: Postgres returns microseconds on a column it fills itself,
+and `ISO8601DateFormatter` reads such a stamp as nothing unless it is told to
+expect the fraction. That would have meant no correction ever arriving, which
+looks exactly like the bug being fixed. It is its own function with its own
+test now. Four tests, whole unit suite green.
+
 ## 2026-09-12 (continuation 12) - Florence 23 -> 24; fixed a floor-test race; found a workflow fix I cannot push
 
 Rung 2 first: two breaks flagged at session start. Walking routes had
