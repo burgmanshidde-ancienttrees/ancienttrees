@@ -1569,3 +1569,36 @@ same twelve cases.
 
 Read 2026-09-11:
 - https://ati.woodlandtrust.org.uk/how-to-record/recording-guide/how-to-record-the-girth-of-a-tree/
+
+## Adding a photograph of a place, and saying you were there (2026-09-12)
+
+Looked up when Hidde photographed a tree at the Omiya gate in Kyoto, picked the
+Sudajii out of the candidate list, and said afterwards: "dit was niet afvinken
+maar een nieuwe boom." Our `claim()` does both in one tap: it attaches the
+photograph to that tree AND ticks it off his collection.
+
+**Google Maps keeps them apart.** Adding a photograph to a place is a
+contribution, offered beside "Check in here" rather than as the same control,
+and the two are counted separately (photographs earn Local Guide points; visited
+places are their own list).
+
+**iNaturalist keeps the identification separate from the record.** A photograph
+becomes an observation, the app SUGGESTS a species, and a person confirms or
+refines it; the suggestion is never asserted on the observer's behalf. Our own
+`mayClaimWithoutAsking` already follows the same logic for the camera roll, and
+`confident()` refuses to claim silently against an approximate pin.
+
+**Where we genuinely differ**, and it is why this is not a straight copy: on
+Google Maps a check-in is social, while here ticking a tree off IS the product
+(collect is one of the four verbs), and somebody who photographs a tree while
+standing under it has done the thing. So the two acts coincide far more often
+for us than for either reference.
+
+What the references say about the failing case is still unambiguous. When the
+person is CHOOSING which tree this is out of a list, the app is being told about
+a photograph, not being told the person stood at that trunk, and it should not
+decide the second from the first. Undecided by Hidde as of this date.
+
+Read 2026-09-12:
+- https://support.google.com/maps/answer/2622947?hl=en&co=GENIE.Platform%3DAndroid
+- https://help.inaturalist.org/en/support/solutions/articles/151000194901-how-do-identifications-work-
