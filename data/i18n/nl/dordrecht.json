@@ -1,0 +1,192 @@
+{
+ "_note": "Dutch overlay for Dordrecht, hand-written 2026-09-12. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/dordrecht.json. The search term is 'monumentale bomen', which is what Dutch readers type and what the Bomenstichting itself uses; 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and dispute comes from the English file and is rendered, never sharpened.",
+ "city": "Dordrecht",
+ "title": "Monumentale bomen in Dordrecht: de 20 mooiste",
+ "meta_description": "Twintig monumentale bomen in Dordrecht: een robinia van 300 jaar, een plataan in een hofje uit 1625 en een zeldzame vijvercipres in het Weizigtpark.",
+ "intro": "In september 2020 zocht de gemeente Dordrecht uit hoe oud de robinia in Park Merwestein werkelijk is, en kwam uit op 300 tot 325 jaar. Daarmee is het een van de weinige bomen in het land met gemeentelijk onderzoek achter zijn leeftijd in plaats van een schatting. De rest van deze pagina: een plataan in een hofje dat in 1625 werd gebouwd door een man die aan zijn reputatie werkte, een beuk op de plek van een verdwenen synagoge, en een hemelboom die het op niets dan bestrating redt.",
+ "question_title": "Wat is de oudste boom van Dordrecht? (300 tot 325 jaar)",
+ "question_meta": "De oudste boom van Dordrecht is de robinia in Park Merwestein, door de gemeente gedateerd op 300 tot 325 jaar. Waar hij staat, en negentien andere.",
+ "question_answer": "De oudste boom van Dordrecht is een robinia bij de ingang aan de S. van Hoogstratensingel van Park Merwestein. Deze hoeft niet geschat te worden: onderzoek van de gemeente in september 2020 kwam uit op 300 tot 325 jaar, en dat klopt met de plantperiode 1700 tot 1750 uit het landelijke register. Dat is ongewoon vaste grond voor een leeftijd op deze site, waar de meeste cijfers een band van tien jaar uit een register zijn en niets meer. De robinia is een Noord-Amerikaanse soort die Europa in het begin van de zeventiende eeuw bereikte, dus een boom die hier rond 1700 werd geplant, hoorde bij de eerste generatie in dit land.",
+ "question_context": "De leeftijden op deze pagina komen uit het Landelijk Register Monumentale Bomen, dat een plantdecennium noteert en geen jaartal, dus de meeste cijfers hier zijn banden en geen metingen. De robinia van Merwestein is de uitzondering en zegt dat ook: de gemeente onderzocht hem in september 2020 en kwam uit op 300 tot 325 jaar. Het register is de editie van 2024 en is voor de rest vrijwel overal de enige bron, en daarom staan die bomen als flagged. Verschillende van deze bomen staan te boek als ouder dan de grond waarop ze staan, en dat is een patroon en geen toeval: de zilveresdoorn in het Weizigtpark stond in een weiland voordat het park er in 1947 om heen werd aangelegd, en de plataan op Dordwijk hoort bij een landgoed dat rond 1635 is begonnen. Lees de toegangsregel bij de plataan van Sorghvliet voordat je vertrekt: Dordwijk is particulier terrein ten zuiden van de stad, ook al noteert het register hem als bezoekbaar. Waar een pin als benaderend staat aangemerkt, kennen we het park en niet de stam, en op een landgoed van dat formaat is dat een echt verschil.",
+ "faq": [
+  {
+   "q": "Wat is de oudste boom van Dordrecht?",
+   "a": "De robinia in Park Merwestein, bij de ingang aan de S. van Hoogstratensingel. Gemeentelijk onderzoek in september 2020 kwam uit op 300 tot 325 jaar, een vaster antwoord dan de meeste steden kunnen geven."
+  },
+  {
+   "q": "Wie was Arend Maartenszoon?",
+   "a": "De stichter van de Arend Maartenshof, een hofje dat in 1625 in Dordrecht werd gebouwd. Hij stond bekend als een geldwolf en wilde dat beeld verbeteren door 38 woningen voor de armen te laten bouwen. Het hofje staat er nog, en de plataan erin ook, met een plantperiode van 1810 tot 1820."
+  },
+  {
+   "q": "Wat doet een hemelboom op deze pagina?",
+   "a": "Hij is de oudste van de stad. Ailanthus altissima wordt hier meestal als onkruid behandeld, omdat hij overal zaait en door bestrating heen opschiet, maar het exemplaar achter de Botgensstraat doet dat al sinds ongeveer 1900 tot 1910, en het register noteert dat hij het goed houdt op een zeer steenachtige plek."
+  },
+  {
+   "q": "Zijn ze gratis te bezoeken?",
+   "a": "Zestien van de twintig zijn vrij te bereiken: Park Merwestein, het Weizigtpark, het Van Baerleplantsoen, het Willem Kes Plantsoen, de kade aan de Vest en de straatbomen zijn allemaal openbaar, en de hofjes aan de Arend Maartenshof en de Boogjes zijn open terrein. De plataan op Dordwijk staat op een particulier landgoed ten zuiden van de stad en staat in het register als bezoekbaar; check het voordat je vertrekt. Voor de platanen en beuken in de tuin van het Dordrechts Museum en de plataan en esdoorn in de tuin van Huis van Gijn heb je een museumkaartje nodig."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "dor_001": {
+   "name": "De robinia van Park Merwestein",
+   "species": "Robinia (Robinia pseudoacacia)",
+   "age_estimate": "300 tot 325 jaar, vastgesteld door gemeentelijk onderzoek in september 2020",
+   "access": "Gratis. Openbaar park, dagelijks open.",
+   "transport": "Ongeveer 1 km noordoostelijk van station Dordrecht, bij de ingang aan de S. van Hoogstratensingel.",
+   "story": "Iemand heeft het echt nagezocht. In september 2020 onderzocht de gemeente deze boom en kwam uit op 300 tot 325 jaar, een veel beter antwoord dan bijna elke boom op deze site kan geven, en het klopt met de onafhankelijke plantperiode 1700 tot 1750 uit het landelijke register.\n\nWat dat getal opmerkelijk maakt, is de soort. De robinia komt uit Noord-Amerika, uit de Appalachen, en bereikte Europa aan het begin van de zeventiende eeuw. Hij is genoemd naar Jean Robin, de Franse koninklijke hovenier aan wie de eerste aanplant in Parijs wordt toegeschreven. Een exemplaar dat rond 1700 in Dordrecht de grond in ging, hoorde bij de eerste golf in dit land, toen de boom nog een dure curiositeit was en niet de bermkolonisator die hij later werd.\n\nHij is oud geworden zoals robinia's dat doen, en dat gaat er dramatisch aan toe. De bast van een oude wordt diep, gedraaid en touwachtig geribbeld, de stam helt of vorkt meestal, en het hout is zo rotbestendig dat de boom blijft staan in een staat waarin alles anders het had opgegeven.\n\nEind mei en begin juni hangt hij vol witte vlinderbloemen die sterk naar honing ruiken. Driehonderd jaar, en dat doet hij nog elk jaar."
+  },
+  "dor_002": {
+   "name": "De plataan van de Arend Maartenshof",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 205 tot 215 jaar, uit de plantperiode 1810 tot 1820 van het register",
+   "access": "Gratis. Open hofje; hier wonen mensen, dus bezoek het zachtjes en bij daglicht.",
+   "transport": "Ongeveer 800 m noordelijk van station Dordrecht, in de oude binnenstad.",
+   "story": "Dit hofje is gebouwd door een man met een reputatieprobleem.\n\nArend Maartenszoon stond in Dordrecht bekend als een geldwolf. In 1625 zette hij 38 woningen neer voor de armen van de stad en hing er zijn eigen naam aan, de oudste vorm van reputatiebeheer die er bestaat, en vierhonderd jaar later heeft het gewerkt: de Arend Maartenshof staat er nog, wordt nog bewoond, en heet nog naar hem.\n\nDe plataan kwam veel later. Met een plantperiode van 1810 tot 1820 ging hij de grond in toen het hofje al bijna twee eeuwen oud was. Dat is het gebruikelijke patroon voor een hofje. Eerst de gebouwen, dan de boom, zodra iemand besluit dat er midden op het pleintje iets moet staan, en daarna groeit die boom uit tot het enige wat iedereen zich werkelijk herinnert.\n\nEen hofje met een grote boom erin is een van de beste kleine ruimtes die Nederland voortbrengt: lage huizen aan vier kanten, een poort aan een drukke straat, en een plotselinge stilte. Dit is er een dat in gebruik is en geen museum, dus ga er zachtjes naar binnen.\n\nDe bast schilfert af in crème en olijfgroene platen, en de bolvormige vruchten blijven de winter door hangen."
+  },
+  "dor_003": {
+   "name": "De zilveresdoorn van het Weizigtpark",
+   "species": "Zilveresdoorn (Acer saccharinum)",
+   "age_estimate": "ruwweg 125 tot 135 jaar, uit de plantperiode 1890 tot 1900 van het register",
+   "access": "Gratis. Openbaar park, dagelijks open.",
+   "transport": "Ongeveer 500 m westelijk van station Dordrecht.",
+   "story": "Hij stond een halve eeuw in een weiland voordat iemand er een park om heen legde.\n\nHet Weizigtpark is voortgekomen uit het buiten van dezelfde naam, maar de hoek waar deze esdoorn staat hoorde helemaal niet bij de aangelegde tuin. Het was weiland, en het werd pas rond 1947 als park ingericht. Het register geeft de boom een plantperiode van 1890 tot 1900, wat hem in dat weiland zet, decennia voor de paden en de aanplant.\n\nDat verklaart zijn vorm, als je erop let. Een boom die in open grond opgroeit met niets eromheen spreidt laag en breed en houdt zijn onderste takken, terwijl een boom die in bosverband opgroeit omhoog wordt getrokken, met een smalle kroon en een schone stam. De oude weilandbomen in een Nederlands park zijn meestal de brede.\n\nDe zilveresdoorn is om twee dingen de moeite van het kennen. Het blad is in vijf smalle lobben ingesneden en aan de onderkant helder wit, dus de hele kroon flikkert bleek in de wind. En hij bloeit in maart, nog voor elk blad, in kleine rode en gele bundeltjes rechtstreeks op de kale twijgen, weken voordat er in het park iets anders ook maar iets doet."
+  },
+  "dor_004": {
+   "name": "De rode beuk van de Varkenmarkt",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ruwweg 165 tot 175 jaar, uit de plantperiode 1850 tot 1860 van het register",
+   "access": "Gratis. Binnentuin aan de Varkenmarkt, bij daglicht te bereiken.",
+   "transport": "Ongeveer 1 km noordwestelijk van station Dordrecht, in de oude binnenstad.",
+   "story": "De naam van het plein zegt wat er gebeurde: een varkensmarkt, en lange tijd een levendige veehandel. Dicht bij deze boom stond ook een synagoge, die in 1965 is afgebroken.\n\nDe beuk staat dus in een stuk Dordrecht dat grondig van zijn oude functies is ontdaan. De dieren gingen, de synagoge ging, en de binnentuin bij nummer 70 is nu een stille binnenruimte met een zeer grote purperen boom erin.\n\nHet register zegt over deze boom iets wat het zelden zegt: hij groeit in een natuurlijke wortelstand, en zijn stamvoet en de grond eromheen zijn onbelemmerd. Voor een volgroeide beuk in een stadscentrum is dat vrijwel ongehoord. Bijna elke stadsbeuk wordt langzaam gewurgd door bestrating over de wortelplaat, dus een grote met open grond rond zijn voet is een boom die heeft gekregen wat hij nodig had, en dat zie je aan het formaat.\n\nIn april net zo goed te bekijken als in oktober. Een rode beuk opent zijn blad doorschijnend rood, dat binnen twee weken naar purper verdonkert, en in een omsloten binnentuin is het licht daardoorheen buitengewoon."
+  },
+  "dor_005": {
+   "name": "De plataan bij Sorghvliet",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 175 tot 185 jaar, uit de plantperiode 1840 tot 1850 van het register",
+   "access": "Particulier landgoed ten zuiden van Dordrecht, in het landelijke register genoteerd als bezoekbaar. Check het voordat je vertrekt.",
+   "transport": "Ongeveer 3 km zuidelijk van station Dordrecht, op Landgoed Dordwijk.",
+   "story": "Het landgoed werd rond 1635 aangelegd en heette toen het Torensteedje. Bij de ingang staat nog een kasteelboerderij, waarvan een deel uit die stichtingsperiode dateert, dus bijna vierhonderd jaar dezelfde gebouwen voor hetzelfde doel.\n\nDe plataan is bij lange na niet zo oud. Met een plantperiode van 1840 tot 1850 hoort hij bij de tweede helft van het leven van het landgoed, toen Dordwijk werd omgewerkt zoals de meeste Nederlandse buitens in de negentiende eeuw: de formele geometrie van de zeventiende eeuw eruit, en gazons, boomgroepen en slingerende opritten erin, met losse solitairen op plekken waar ze vanuit het huis te zien waren.\n\nDat is wat deze boom is. Geen onderdeel van een laan en geen onderdeel van een bos, maar een gekozen ding, neergezet in een zichtlijn, bij het huis dat Sorghvliet heet.\n\nPlatanen waren voor precies die rol de modieuze keuze: snel, enorm, en met een bast die het hele jaar een bleek schilferpatroon houdt, waardoor je er een van heel ver over het gras ziet staan, in welk seizoen dan ook.\n\nHet register noteert het landgoed als bezoekbaar, maar het is particulier terrein ten zuiden van de stad, dus het is de moeite om de toegang te checken voordat je gaat."
+  },
+  "dor_006": {
+   "name": "De hemelboom van de Botgensstraat",
+   "species": "Hemelboom (Ailanthus altissima)",
+   "age_estimate": "ruwweg 115 tot 125 jaar, uit de plantperiode 1900 tot 1910 van het register",
+   "access": "Gratis. Te bereiken via het steegje achter de Botgensstraat.",
+   "transport": "Ongeveer 1 km noordwestelijk van station Dordrecht, in de oude binnenstad.",
+   "story": "Niemand plant deze nog met opzet, en juist daarom is de oudste van Dordrecht de moeite van het bekijken waard.\n\nDe hemelboom komt uit China, kwam in de achttiende eeuw als sierboom naar Europa en werd hard in steden geplant, omdat hij sneller groeit dan wat dan ook en zich niets aantrekt van slechte grond, droogte of uitlaatgassen. Daarna bleek hij overvloedig te zaaien, agressief door bestrating en kelders heen op te schieten, en de grond met een stof in zijn wortels tegen concurrenten te vergiftigen. Hij hoort nu bij de meest ongewenste planten van Europa.\n\nDeze is ouder dan dat hele debat. Met een plantperiode van 1900 tot 1910 is hij de oudste van zijn soort in de stad, en het register noteert er speciaal bij dat hij het goed houdt in zijn zeer steenachtige omgeving, wat de hele aard van de soort in één zin is.\n\nJe bereikt hem via een steegje achter de Botgensstraat, precies het soort overgebleven stadsgat waarin hij gedijt.\n\nEnorme samengestelde bladeren tot een meter lang, en in de nazomer dichte bundels papierachtige vleugelvruchten die vaak roestrood kleuren. Kneus een blad en het ruikt onaangenaam. Dat is diagnostisch."
+  },
+  "dor_007": {
+   "name": "De zomerlinde van Louter Bloemen",
+   "species": "Zomerlinde (Tilia platyphyllos)",
+   "age_estimate": "ruwweg 165 tot 175 jaar, uit de plantperiode 1850 tot 1860 van het register",
+   "access": "Gratis. Klein openbaar park, dagelijks open.",
+   "transport": "Ongeveer 4 km westelijk van station Dordrecht, bij Louter Bloemen.",
+   "story": "Dit parkje is alles wat er over is van een buitenplaats, en dat merk je zodra je er binnenloopt: overheerst door hoge beuken, met het licht al grotendeels weg voordat het de grond bereikt.\n\nDe linde is een van twee die dicht bij elkaar staan. Deze is een zomerlinde en ernaast staat een grote winterlinde, en dat is een nuttig toeval, want die twee soorten zijn de ouders van de Hollandse linde die in dit land overal geplant is en worden zelf veel minder vaak gezien.\n\nHet verschil is in de hand eenvoudig. De zomerlinde heeft groter, zachter blad met fijne haartjes aan de onderkant en op de steel, en bloeit als eerste, in juni. De winterlinde heeft kleiner, onbehaard blad met een blauwige onderkant en roestkleurige okselbaardjes in de nerfhoeken, en bloeit twee tot drie weken later. Tussen die twee gaan staan is de goedkoopste botanieles van Dordrecht.\n\nBeide hebben een plantperiode in het midden van de negentiende eeuw, wat ze bij de aanplant van de buitenplaats zet en niet bij iets wat de stad er later heeft gedaan.\n\nGa eind juni, wanneer de zomerlinde uit is en het hele parkje ernaar ruikt en ervan zoemt."
+  },
+  "dor_008": {
+   "name": "De vijvercipres van het Weizigtpark",
+   "species": "Vijvercipres (Taxodium ascendens)",
+   "age_estimate": "ruwweg 125 tot 135 jaar",
+   "access": "Gratis. Openbaar park, dagelijks open.",
+   "transport": "Ongeveer 700 m westelijk van station Dordrecht, bij de ingang van het Weizigtpark.",
+   "story": "Een moerasboom uit het Amerikaanse zuiden staat rustig te gedijen bij de ingang van een Nederlands park, ruim een eeuw nadat iemand besloot dat een verwant van de cipres het risico waard was.\n\nDe vijvercipres bij het oude koetshuis van het Weizigtpark ging ergens tussen 1890 en 1900 de grond in, wat hem ruim 125 jaar oud maakt en, volgens het bomenregister dat hem bijhoudt, werkelijk zeldzaam in Nederland: weinig vijvercipressen hebben hier zo lang kunnen groeien. Anders dan zijn verwanten in de moerassen van Florida en de Carolina's heeft hij geen overstroomde grond nodig om een Nederlandse winter door te komen, gewoon parkgrond bij het toegangspad.\n\nHet koetshuis erachter, in 1886 gebouwd voor het buiten dat later dit park werd, is maar een paar jaar ouder dan de boom, dus die twee zijn feitelijk naast elkaar oud geworden.\n\nOp ongeveer 350 meter afstand staat de zilveresdoorn van het park al op deze lijst, dus het Weizigtpark heeft nu twee inzendingen van twee werelddelen, decennia na elkaar geplant door mensen die hun bomen blijkbaar graag ongewoon hadden."
+  },
+  "dor_009": {
+   "name": "De zomereik van het Weizigtpark",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 195 tot 205 jaar, uit de plantperiode 1820 tot 1830 van het register",
+   "access": "Gratis. Openbaar park, dagelijks open.",
+   "transport": "Ongeveer 500 m westelijk van station Dordrecht, in de bosstrook langs het spoor.",
+   "story": "Niemand heeft de jaarringen van deze eik geteld. Het landelijke register van monumentale bomen dateert hem tussen 1820 en 1830, en het kwam op die band door de ringen te tellen van de boom die ernaast stond, een van dezelfde generatie, nadat die was gekapt. De leeftijd van de eik, ruwweg 195 tot 205 jaar, is geërfd van een buurman die er niet meer is.\n\nHij groeit in de bosstrook langs het spoor aan de rand van het Weizigtpark, ongeveer vijfhonderd meter van station Dordrecht. De gemeente heeft Weizigt in 2024 opnieuw ingericht, met nieuwe paden, ander water en andere oevers, en de strook langs het spoor draagt nog zijn volgroeide bomen. Daarmee is deze eik de derde halte van een wandeling die er al twee had: de zilveresdoorn staat op ongeveer 170 meter en de vijvercipres op ongeveer 265, alle drie binnen hetzelfde park en alle drie in het register.\n\nZomereiken van twee eeuwen zijn in Nederland algemeen genoeg dat er zelden een bordje bij staat. Wat hier ongewoon is, is het papierwerk. Het register doet niet alsof het een meting heeft gedaan die het nooit deed: het schrijft op wiens ringen er geteld zijn, en dat die boom er niet meer is. Niemand heeft deze eik zelf onderzocht, dus de leeftijd blijft een band en geen jaartal."
+  },
+  "dor_010": {
+   "name": "De treurbeuk aan de Vest",
+   "species": "Treurbeuk (Fagus sylvatica 'Pendula')",
+   "age_estimate": "ruwweg 126 tot 136 jaar, uit de plantperiode 1890 tot 1900 van het register",
+   "access": "Gratis. Openbaar plantsoen langs de Vest, altijd open.",
+   "transport": "Ongeveer 1 km noordoostelijk van station Dordrecht, aan de Vest bij de splitsing van het water.",
+   "story": "De ijssalon waar hij naast staat is negentig jaar jonger dan de boom. Het landelijke register voert deze treurbeuk nog onder de oude naam van de zaak, naast wat nu La Venezia is aan de Vest 180 tot 184, in een gebouw dat in 1981 openging. De beuk ging ergens tussen 1890 en 1900 de grond in, wat hem ruwweg 126 tot 136 jaar maakt, en hij heeft de hoek om zich heen zien herbouwen.\n\nEen treurbeuk is geen soort maar een cultivar van de gewone beuk, opgekweekt op een rechte stam zodat de takken uit de hoogte kunnen vallen. Een eeuw daarvan levert op wat deze boom is: een hangende rok van scheuten tot in het gras, die alles eronder omsluit. In de zomer is dat een groene kamer. In de winter is het het frame daarvan, en dan is de vorm van de hele boom eindelijk leesbaar.\n\nEén ding is het waard om gewoon te zeggen. Het register rekent deze tot de kandidaten en niet tot de volledig aangewezen bomen, de categorie voor bomen die op papier in aanmerking komen en nog op bevestiging wachten; de meeste bomen op deze pagina hebben de hogere status. Ook beschrijft niets anders hem bij naam, dus de leeftijdsband komt van het register alleen. Hij staat op openbaar terrein in de groenstrook langs de Vest, op elk uur vrij te benaderen."
+  },
+  "dor_011": {
+   "name": "De Hollandse linde van de Spuiboulevard",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ruwweg 86 tot 96 jaar, uit de plantperiode 1930 tot 1940 van het register",
+   "access": "Gratis. Openbare straat en kadeberm, altijd open.",
+   "transport": "Ongeveer 1,4 km zuidwestelijk van station Dordrecht, aan de Spuiboulevard.",
+   "story": "Deze linde is al een keer gespaard. Toen in 2004 de appartementencomplexen aan de Spuiboulevard werden gebouwd, bleef de boom staan, en het landelijke register vat dat in één regel samen: bij de bouw van de appartementencomplexen in 2004 is deze boom behouden. Hij is tussen 1930 en 1940 geplant, dus hij was toen ongeveer zeventig en is nu ruwweg 86 tot 96. De soort heet hier Hollandse linde; het is de hybride die langs de helft van de Nederlandse grachten en singels staat.\n\nDe boulevard gaat opnieuw op de schop. In januari 2026 haalde de gemeente 28 volgroeide linden van de oostkant van de straat bij het Dordthuis weg en plantte ze terug op vier andere plekken in Dordrecht, wat een dure manier is om een boom te houden en beter dan het gebruikelijke alternatief. Die 28 worden beschreven als ongeveer dertig jaar oud, geplant in de jaren negentig, dus ze zijn een heel andere generatie dan deze. Of deze boom er nog staat omdat iemand opnieuw besloot hem te laten staan, of omdat het werk zijn kant van de weg nog niet heeft bereikt, zegt geen enkele bron ronduit.\n\nHij staat op de kadeberm tegenover nummer 250, een van een rij volgroeide linden, op openbaar terrein met niets tussen hem en de stoep. Recente luchtfoto's laten de rij nog staan, met bouwmaterieel dichtbij aan het werk."
+  },
+  "dor_012": {
+   "name": "De witte paardenkastanje van de Boogjes",
+   "species": "Paardenkastanje (Aesculus hippocastanum)",
+   "age_estimate": "ruwweg 136 tot 146 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Binnentuin van de gemeente, te bereiken via een doorgang vanaf de omliggende straten; volgens het register te bezoeken.",
+   "transport": "Ongeveer 900 m noordwestelijk van station Dordrecht, in de oude binnenstad.",
+   "story": "Om bij deze te komen loop je door een gebouw. De kastanje staat in een gemeenschappelijke tuin midden in een bouwblok zonder enige straatzijde, en het register kan hem alleen plaatsen door de vijf straten te noemen die hem insluiten: Boogjes, Ruitenstraat, Voorstraat, Botgensstraat en Kleine Spuistraat. Een doorgang vanaf een van die straten is de weg naar binnen.\n\nHij is tussen 1880 en 1890 geplant, wat hem ruwweg 136 tot 146 jaar oud maakt, en hij is van de gemeente en niet van een van de huizen eromheen, en daarom markeert het register hem als een boom die je mag bezoeken. Luchtfoto's laten het binnenterrein zien als een echte tuin en niet als een achterplaats: volgroeide bomen, en wat op een kleine vijver lijkt.\n\nDordrecht heeft minstens drie oude paardenkastanjes die met elkaar worden verward, en het is de moeite om helder te zijn welke dit is. Niet die op het Willem Kes Plantsoen bij theater Kunstmin, bijna twee kilometer verderop. Niet de kastanje uit 1830 die tijdens de werkzaamheden aan de Koningstunnel in de jaren negentig tachtig meter is opgetild en verplaatst, en waar de plaatselijke bomenvereniging nog altijd mensen langs leidt. Dit is die van de binnentuin, uit het zicht van elke straat die eromheen loopt."
+  },
+  "dor_013": {
+   "name": "De grauwe abeel van het Weizigtpark",
+   "species": "Grauwe abeel (Populus canescens)",
+   "age_estimate": "ruwweg 76 tot 86 jaar, uit de plantperiode 1940 tot 1950 van het register",
+   "access": "Gratis. Openbaar park, dagelijks open.",
+   "transport": "Ongeveer 900 m zuidwestelijk van station Dordrecht, aan de zuidoostrand van het Weizigtpark.",
+   "story": "De jongste boom op deze pagina is een hybride die niemand heeft gekweekt. De grauwe abeel is een natuurlijke kruising tussen witte abeel en ratelpopulier, en hij neemt de snelheid van beide over: volgroeide exemplaren halen zo'n 35 meter. Deze ging tussen 1940 en 1950 de grond in, dus hij is ruwweg 76 tot 86 jaar oud, een leeftijd waarop de meeste bomen nog wachten tot een register hen opmerkt.\n\nHet landelijke register merkte hem wel op en zet hem aan de zuidoostrand van het Weizigtpark, naast het openbare pad. Hij staat 88 meter van de zilveresdoorn die al op deze pagina staat, dicht genoeg dat die twee één halte zijn en geen twee, en 227 meter van de eik in de bosstrook langs het spoor. Met de vijvercipres aan het andere eind is Weizigt nu een wandeling van vier bomen binnen één park.\n\nGrauwe abelen lees je het best van onderaf. Het blad is donkergroen aan de bovenkant en wit gevilt aan de onderkant, dus een zuchtje wind zet de hele kroon in twee kleuren, en de ratelpopulierhelft van de afkomst houdt hem in beweging als de rest van het park al stil is. De onderste bast blijft bleek, getekend met de donkere ruiten die de abeelkant hem geeft. Niemand heeft voor deze een stamomtrek gepubliceerd; heb je een meetlint, laat het ons weten."
+  },
+  "dor_014": {
+   "name": "De eikbladige haagbeuk van Park Merwestein",
+   "species": "Eikbladige haagbeuk (Carpinus betulus 'Quercifolia')",
+   "age_estimate": "ruwweg 166 tot 176 jaar, uit de plantperiode 1850 tot 1860 van het register",
+   "access": "Gratis. Eigendom van de gemeente, in het openbare Park Merwestein, aan het pad rond het hertenkamp.",
+   "transport": "Park Merwestein, ongeveer 1,7 km noordoostelijk van Dordrecht Centraal.",
+   "story": "Aan dezelfde twijgen van deze haagbeuk groeien twee verschillende bladeren: sommige gelobd als van een eik, sommige gewoon als van een normale haagbeuk. Dat is precies wat de cultivarnaam zegt, Carpinus betulus 'Quercifolia', de eikbladige haagbeuk, en het is een echte entcuriositeit en geen beschrijving die iemand heeft aangedikt.\n\nHet landelijke register geeft zijn aanplant een band van 1850 tot 1860, wat hem ruwweg 166 tot 176 jaar oud maakt. Die hele tijd heeft hij doorgebracht naast het pad rond het hertenkamp in Park Merwestein, een van de oudere openbare parken van Dordrecht. Zo'n boom is precies waar een negentiende-eeuws aanplantschema naar greep: iets wat een kweker had gevonden dat iets vreemds deed, een plek waard in een park dat werd aangelegd om betalende bezoekers door te laten wandelen.\n\nDe eigen wandelroute van Dordrecht, van de plaatselijke Bomenridders, stopt hier als nummer acht van negen en opent met dezelfde truc van twee bladeren, wat een goed teken is dat de eigenaardigheid anderhalve eeuw later nog duidelijk leesbaar is.\n\nEr is nooit een stamomtrek van hem vastgelegd. Dat is onder Nederlandse registerbomen niet bijzonder, maar het is de moeite om het gewoon te zeggen in plaats van dat veld zonder commentaar leeg te laten."
+  },
+  "dor_015": {
+   "name": "De platanen van de tuin van het Dordrechts Museum",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 176 tot 186 jaar, uit de plantperiode 1840 tot 1850 van het register",
+   "access": "Betaalde toegang, via het Dordrechts Museum, Museumstraat 40. De bomen staan in de eigen tuin van het museum.",
+   "transport": "Dordrechts Museum, in de oude binnenstad, ongeveer 1 km noordwestelijk van Dordrecht Centraal.",
+   "story": "Drie platanen in de tuin van het museum hebben elke verbouwing van het gebouw eromheen overleefd, omdat zij er eerder waren.\n\nHet Dordrechts Museum ging in 1842 open in de oude Boterbeurs, een van de oudste musea van Nederland, opgericht door een groep meer publiek gezinde inwoners van de stad. Het landelijke bomenregister geeft de platanen een plantperiode van 1840 tot 1850, dus ze gingen binnen een paar jaar van die opening de grond in en groeiden niet op rond een instelling die er al stond. Het eigen verhaal van het museum over zijn tuin sluit daarbij aan: het zet de platanen op 100 tot 200 jaar oud en schrijft ze toe dat ze die hele ontwikkeling, en miljoenen bezoekers, hebben zien langslopen.\n\nDaarna kwamen twee latere aanplantingen: een kastanjelaan naar de voordeur, en jongere beuken bij het tuinhek, die een eigen vermelding op deze pagina hebben. De platanen zijn de bomen die er al stonden voordat iets daarvan bestond.\n\nVan geen van de drie is een stamomtrek vastgelegd. Ze bekijken betekent een kaartje kopen: de tuin ligt binnen het museumterrein en is niet vanaf de straat open."
+  },
+  "dor_016": {
+   "name": "De beuken van de tuin van het Dordrechts Museum",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ruwweg 101 tot 146 jaar; het register zelf weet niet welke van de drie de oudste is",
+   "access": "Betaalde toegang, via het Dordrechts Museum, Museumstraat 40. De bomen staan in de eigen tuin van het museum.",
+   "transport": "Dordrechts Museum, in de oude binnenstad, ongeveer 1 km noordwestelijk van Dordrecht Centraal.",
+   "story": "Niemand, ook het register niet dat ze bijhoudt, weet zeker welke van deze drie beuken de oudste is.\n\nTwee rode beuken en een groene beuk staan samen bij het tuinhek van het Dordrechts Museum. Het landelijke bomenregister noteert in 2020 een stamomtrek van 315 en 300 centimeter voor het rode paar en 300 voor de groene, en de eigen geschiedenisnotitie zegt dat een van de drie uit 1880 zou dateren en de andere twee uit 1925, om er meteen aan toe te voegen dat niemand heeft uitgezocht waar die bewering vandaan komt. Dat zet de groep ergens tussen de 100 en 145 jaar oud, een eerlijke marge in plaats van een net getal.\n\nHet eigen verhaal van het museum over zijn tuin noemt de oudste van de drie, langs het hek, een boom met een volle, mooi gevormde kroon, en merkt op dat beuken als deze 200 tot 300 jaar kunnen worden als hun ondiepe, gevoelige wortels ongestoord blijven. Misschien is dat precies waarom niemand ooit een schop bij ze heeft gezet om de leeftijdsvraag op te lossen.\n\nZe delen de tuin met drie oudere platanen uit de oprichtingsjaren van het museum. Ze bereiken betekent een museumkaartje kopen."
+  },
+  "dor_017": {
+   "name": "De plataan van het Willem Kes Plantsoen",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 136 tot 146 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Openbaar plantsoen tegenover theater Kunstmin, altijd open.",
+   "transport": "Ongeveer 1,4 km noordoostelijk van station Dordrecht, in de oude binnenstad, bij theater Kunstmin aan de Sint Jorisweg.",
+   "story": "Het landelijke bomenregister kent het decennium waarin deze plataan is geplant en geeft ronduit toe verder niets te weten. Onder geschiedenis staat: onbekend.\n\nWat het register wel geeft is een plantperiode van 1880 tot 1890, wat de boom ergens rond de 136 tot 146 jaar oud maakt, dat de gemeente hem bezit, en dat bezoekers welkom zijn. Niemand heeft ooit een meetlint om de stam gelegd. Er staat helemaal geen stamomtrek in het dossier, wat voor een monumentale plataan midden in een Nederlandse binnenstad een merkwaardig gat is.\n\nHij staat in het Willem Kes Plantsoen, het kleine openbare plein aan de Sint Jorisweg dat is vernoemd naar de in deze stad geboren dirigent, recht voor theater Kunstmin. Hij heeft dus ruim een eeuw lang gezien hoe publiek bij daglicht aankwam en in het donker weer vertrok, en heeft alles doorstaan wat de twintigste eeuw deze straat instuurde.\n\nDordrecht wijst er zelf naar. De eigen wandelroute van de stad, de Bomenridders, stopt bij het theater aan de Sint Jorisweg 76 en noemt deze plataan naast de witte paardenkastanje op ongeveer 25 meter afstand. Dat maakt van het bezoek een errand van twee bomen op één klein groen, en niet één losse stop.\n\nHeeft iemand die stam ooit gemeten, laat het ons weten en we voegen het getal toe."
+  },
+  "dor_018": {
+   "name": "De paardenkastanje van het Willem Kes Plantsoen",
+   "species": "Paardenkastanje (Aesculus hippocastanum)",
+   "age_estimate": "ruwweg 136 tot 146 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Openbaar plantsoen tegenover theater Kunstmin, altijd open.",
+   "transport": "Ongeveer 1,4 km noordoostelijk van station Dordrecht, in de oude binnenstad, bij theater Kunstmin aan de Sint Jorisweg.",
+   "story": "In mei zet deze boom zijn witte bloemkaarsen recht voor een theateringang neer, wat voor een kastanje een aardig staaltje enscenering is.\n\nHet landelijke register noteert hem als witte paardenkastanje, geplant ergens tussen 1880 en 1890 en dus ruwweg 136 tot 146 jaar oud. De gemeente is eigenaar, het dossier markeert hem als bezoekbaar, en de reden voor zijn beschermde status is simpelweg dat hij monumentaal is. Onder geschiedenis is het veld leeg, en dat is ook de regel waar een stamomtrek zou staan. Voor een boom van dit formaat op openbare grond in de oude binnenstad is dat een gat dat iemand met een meetlint in een minuut zou kunnen dichten.\n\nHij deelt het Willem Kes Plantsoen met een plataan uit dezelfde plantperiode, op ongeveer 25 meter afstand, wat van de twee samen één kort errand maakt vanaf het theaterplein. Beide staan sinds de jaren 1880 voor theater Kunstmin, door twee wereldoorlogen en elk publiek dat er sindsdien is gekomen en gegaan.\n\nDordrecht wijst bezoekers er zelf naartoe. De Bomenridders route, de eigen bomenwandeling van de stad, noemt de stop met droge woorden: witte paardenkastanje, theater Kunstmin, Sint Jorisweg 76. Kom in mei voor de bloemen, of in oktober als de kastanjes vallen."
+  },
+  "dor_019": {
+   "name": "De plataan van de tuin van Huis van Gijn",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 165 tot 185 jaar; bronnen zijn het oneens over de plantdatum",
+   "access": "Betaalde toegang, via Museum Huis van Gijn, Nieuwe Haven 30 (volwassenenkaartje ongeveer 14 euro op het moment van dit onderzoek). De boom staat in de eigen achtertuin van het museum; bezoekers kunnen op het terras eronder zitten.",
+   "transport": "Ongeveer 1,1 km noordelijk van station Dordrecht, in de oude binnenstad, in de tuin van Museum Huis van Gijn aan de Nieuwe Haven.",
+   "story": "Het museum dat deze plataan bezit en het landelijke register dat hem beschermt, zitten twintig jaar uit elkaar over wanneer hij de grond in ging.\n\nHet register beschrijft een fors exemplaar uit 1860, meer dan vier meter in omtrek, met knoestige woekeringen langs de stam en een conditie die als redelijk staat genoteerd. De eigen tuinpagina van het museum zegt dat de plataan, samen met de esdoorn die er vlakbij staat, waarschijnlijk rond 1840 is geplant, wat de bomen hier zou zetten voordat de familie Van Gijn in 1864 aan de Nieuwe Haven 30 kwam wonen. Geen van beide bronnen laat zien hoe ze aan hun getal komen, dus blijft de leeftijd breed: ergens tussen ruwweg 165 en 185 jaar.\n\nWelke datum ook klopt, de boom heeft zijn hele leven binnen één ommuurde stadstuin doorgebracht, een paar straten van het water, door de achtenvijftig jaar dat de familie in het huis woonde, door twee wereldoorlogen, en door de decennia sindsdien dat de plek museum is.\n\nVier meter stam is veel boom voor een tuin van dit formaat, en de beloning voor het kaartje is ongewoon. Het museum heeft er een terras onder gezet, dus het bezoek is zitten en omhoogkijken in plaats van bij een hek staan."
+  },
+  "dor_020": {
+   "name": "De bonte esdoorn van de tuin van Huis van Gijn",
+   "species": "Bonte gewone esdoorn (Acer pseudoplatanus 'Variegatum'; exacte cultivar niet bevestigd)",
+   "age_estimate": "ruwweg 136 tot 146 jaar volgens het register; de eigen website van het museum houdt het op ouder",
+   "access": "Betaalde toegang, via Museum Huis van Gijn, Nieuwe Haven 30, voor het volledige tuinzicht. Het register vermeldt dat stam en kroon OOK zonder te betalen te zien zijn, vanaf de openbare Hoge Nieuwstraat achter de tuinmuur.",
+   "transport": "Ongeveer 1,1 km noordelijk van station Dordrecht, in de oude binnenstad, in de tuin van Museum Huis van Gijn aan de Nieuwe Haven; ook deels te zien vanaf de Hoge Nieuwstraat.",
+   "story": "Dit is de boom in de tuin van Huis van Gijn die je kunt zien zonder een kaartje te kopen. Het landelijke register vermeldt expliciet dat stam en kroon te zien zijn vanaf de Hoge Nieuwstraat, de straat die achter de tuinmuur langsloopt.\n\nWat het register niet vertelt, is precies wat het is. De vermelding zegt alleen bonte esdoorn, zonder Latijnse naam. Het gevlekte blad wijst op een bonte vorm van de gewone esdoorn, en verder reikt het bewijs niet, niemand heeft de cultivar opgeschreven. Weet je hem te benoemen, laat het ons weten en we passen de pagina aan.\n\nZijn leeftijd is net zo onzeker als die van de plataan die ernaast staat. Het register geeft een plantperiode van 1880 tot 1890. De eigen tuinpagina van het museum zet de esdoorn samen met die plataan en zegt dat beide waarschijnlijk rond 1840 zijn geplant. Dat is een marge van ruwweg 136 tot 186 jaar, en geen van beide bronnen laat zien hoe ze daarop komen.\n\nHet register is zekerder over de staat ervan: drie meter omtrek, goede conditie, een fraaie stam en een goed ontwikkelde kroon, groeiend aan de rand van de tuin langs de muur. Onder welke datum dan ook stond hij hier al toen de familie Van Gijn nog in het huis woonde."
+  }
+ }
+}

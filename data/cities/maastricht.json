@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Maastricht's most remarkable trees sit on the edges of the things that shaped the city: a chestnut on a working farm above Amby, a grove of giant sequoias in a cemetery that has taken the city's dead since 1812, and a stand of 300-year-old oaks marking the outline of a baron's star-shaped forest garden above Kasteel Neercanne. Closer to the centre, Stadspark, one of the oldest city parks in the Netherlands, holds the country's tallest recorded plane tree alongside three beeches nearly as old as the park's own 19th-century layout.",
-  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. 15 verified trees, real stories, real locations.",
+  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. 19 verified trees, real stories, real locations.",
   "question_answer": "Maastricht's oldest tree with a reliable date is a stand of oaks ringing the edge of Cannerbos, a star-shaped forest garden Baron Daniel Wolfgang van Dopff laid out around 1700 beside Kasteel Neercanne, making them roughly 300 years old. A farm chestnut in Amby may be close in age or even older, but its planting date is genuinely disputed and unconfirmed.",
-  "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full 18.",
+  "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full 19.",
   "question_context": "Maastricht's oldest-tree claim goes to whichever standard matters more, a reliable date or a possibly older but unconfirmed one. The Cannerbos oaks ring the edge of a star-shaped forest garden a baron laid out around 1700, and their roughly 300-year age is treated as trustworthy because it is tied to a single, dated landscaping event rather than a guess from girth alone. The Molenweg chestnut could plausibly be just as old or older, but its own documentation shows real disagreement: the Bomenstichting's national register estimates an 1750-1800 planting, a 2022 measurement suggested 1800 plus or minus 40 years, and a persistent local legend crediting Russian Cossacks during the 1814 siege of Maastricht has been investigated and dismissed as implausible by the tree's own researchers. Only a core sample would settle it, and none has been taken. Stadspark's three oldest beeches and its record-height plane tree are both well measured but comparatively young, 150 to 160 years old, products of the park's 19th-century expansion rather than survivors of its 17th-century linden-lined origins, none of which are known to still stand.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Maastricht's remarkable trees free to visit?",
-      "a": "17 of the 18 are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
+      "a": "18 of the 19 are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
     },
     {
       "q": "Where is the tallest plane tree in the Netherlands?",
@@ -618,6 +618,37 @@
       "curation_status": "flagged",
       "story": "Maastricht's most famous plane tree, the tallest in the Netherlands, stands about 240 metres from these three, and nobody has ever put an age on it. This trio does have one, of a sort. The national register places them in the planting years 1880 to 1890, roughly 136 to 146 years, and its own history note says they presumably date from the 1886 expansion that carried the Stadspark westward into Mgr. Nolenspark and Henri Hermanspark. Presumably is the register's own word and it is the honest one: the expansion is documented, the year these three went into the ground is not.\n\nThree planes of one generation standing together read differently from a single record-breaker. This is a stand rather than a specimen, the kind of planting a nineteenth-century park designer made because the London plane took coal smoke, compacted soil and hard pruning better than anything else available, and because a row of them would eventually close overhead.\n\nNo source beyond the register names these three individually, which is the one thin part of their paperwork. Everything around them is better documented and closer than you would expect: the park's black walnuts, its weeping silver limes and its pair of tulip trees all stand within about a hundred metres, so the whole group is ten minutes of walking.",
       "how_to_recognise": "You can recognise them as a group of three planes of one generation standing together, bark flaking cream and olive. They stand along Van Heylerhofflaan; the Netherlands' tallest plane is a separate tree 240 metres off."
+    },
+    {
+      "id": "maa_019",
+      "name": "The Ginkgo of Mgr. Nolenspark",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 110 years",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Monseigneur Nolenspark, Maastricht",
+        "latitude": 50.843667,
+        "longitude": 5.69123,
+        "neighbourhood": "Jekerdal"
+      },
+      "story": "The Dutch register that protects this tree calls it a Japanse notenboom, literally a Japanese nut tree, which is simply the ordinary Dutch name for a ginkgo and has nothing to do with what it actually is. A ginkgo is not a nut tree in any real sense. It is the sole survivor of a whole order of plants that otherwise vanished tens of millions of years ago, a living link to trees that grew alongside dinosaurs and outlasted them.\n\nThis particular specimen is comparatively young. The national monumental tree register dates it to sometime between 1910 and 1920, which puts it at around a hundred and ten years old, the municipality as its owner, and open access for visitors. A ginkgo of that age has already seen the species become one of the most planted street trees on earth, prized for surviving pollution, disease and, most famously, six specimens close to the blast at Hiroshima that leafed out again the following spring.\n\nIt stands in Monseigneur Nolenspark, in the stretch of Maastricht Stadspark that Lievin Rosseels laid out in 1886, sharing its hundred metres of ground with the park's own black walnuts, weeping silver limes and tulip trees. The register is the only source naming a ginkgo at this exact spot, so the page says that plainly rather than borrowing the measurements of two other Maastricht ginkgos documented elsewhere in the wider park. They are not this tree.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1680867, 'Japanse notenboom', planted_band 1910-1920, setting park, owner_category gemeente, visitable ja, visible ja)",
+        "https://www.floravannederland.nl/planten/japanse_notenboom"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk from Maastricht centre; same small cluster as the already-published Black Walnuts (maa_008), Weeping Silver Limes (maa_009), Tulip Trees (maa_010) and Plane Trees (maa_018) of Nolenspark, all within about 100 metres",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "Fan-shaped, two-lobed leaves unlike any other tree in this stretch of Nolenspark, turning a uniform buttery yellow in November while its walnut, lime and tulip-tree neighbours brown and drop."
     }
   ]
 }
