@@ -1,6 +1,28 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
+
+Hidde, on finding the whole attribution line under every page: "moet dit
+overal staan, zet dit zoals de app lekker ergens onder n hoekje legal."
+The app did exactly that on 2026-08-25 and the website never followed, so
+for two and a half weeks the two surfaces disagreed about where a tile
+credit belongs.
+
+The footer now ends at "(c) 2026 Ancient Trees, ancienttrees.app." Nothing
+is lost and nothing is owed. Every map on the site is built with MapLibre's
+compact attribution control and the live style at /assets/map-style.json
+carries the OpenFreeMap / OpenMapTiles / OpenStreetMap credit on its own
+source, checked against the deployed file, so the ODbL is answered on the
+map itself, which is where it asks to be and what Apple Maps and every
+Mapbox app do. The full text, Valhalla and FOSSGIS included, already stood
+under "Maps and routes" on /sources, which the footer column links to.
+Photograph credits were never in that line: each one prints beside its own
+picture.
+
+Most of those pages draw no map at all, which is the part that made it
+wrong rather than merely long.
+
 ## 2026-09-12 - Night run 2026-09-12 02:02 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 32.8 minutes of its 120 minute window, 244 turns, 45 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: vancouver, amsterdam, barcelona, which block the top of the queue until they expire.

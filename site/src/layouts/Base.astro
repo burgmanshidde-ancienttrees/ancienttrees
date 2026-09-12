@@ -229,7 +229,20 @@ const year = new Date().getFullYear();
       <a href="/sources">{t.sources}</a>
     </div>
   </div>
-  <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Walking routes by Valhalla via FOSSGIS, on OpenStreetMap data. Photos carry their own credits and open licences.</span>
+  {/* The map and routing credits live one level down, on /sources, which the
+      column above links to (Hidde, 2026-09-12: "zet dit zoals de app lekker
+      ergens onder n hoekje legal"). The app moved them into its Legal sheet on
+      2026-08-25 and the website kept carrying them on all 2,800 pages, most of
+      which draw no map at all.
+
+      Nothing is lost by it. Every map here is built with MapLibre's compact
+      attribution control (site/src/lib/map.ts), so OpenFreeMap, OpenMapTiles
+      and OpenStreetMap are credited on the map itself, which is where the ODbL
+      wants them and what Apple Maps and every Mapbox app do. The full text,
+      Valhalla and FOSSGIS included, sits under "Maps and routes" on /sources.
+      Photograph credits were never here either: each one is printed beside its
+      own picture. */}
+  <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
 </footer>
 )}
 {/* One overlay for the whole site (2026-08-23). It used to live on the city
