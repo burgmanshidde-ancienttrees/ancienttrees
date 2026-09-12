@@ -173,15 +173,28 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       )}
     </div>
     <div class="prose-block"><p>{x.story}</p></div>
+    {/* THE DETAIL LIST, and only the details, the same trim as the English
+        page (2026-09-12). The panel above arrived with the app's design on
+        2026-09-04 and took over age, species and the ticket; this list was
+        never trimmed to match, so every translated tree page stated them
+        twice.
+
+        Species goes entirely here, where the English page keeps it: the panel
+        on a translated page prints the whole string, scientific name and all
+        ("Araucaria de Norfolk (Araucaria heterophylla)"), so this row was
+        character for character the panel one screen higher. Contract A's
+        common AND scientific is answered above the fold, which is where the
+        contract asks for it. */}
     <dl class="facts">
-      <dt>{U.labelSpecies}</dt><dd>{x.species}</dd>
-      <dt>{U.labelAge}</dt><dd>{x.age_estimate}</dd>
+      {!ageNumber && (<><dt>{U.labelAge}</dt><dd>{x.age_estimate}</dd></>)}
       <dt>{U.labelLocation}</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
-      <dt>{U.labelAccess}</dt><dd>{x.access}</dd>
+      {!tree.paid_entry && (<><dt>{U.labelAccess}</dt><dd>{x.access}</dd></>)}
       <dt>{U.labelGettingThere}</dt><dd>{x.transport}</dd>
     </dl>
     <div class="map-embed"><div id="map" class="map"></div></div>
-    <p class="go-note">{U.goNote} {x.transport}</p>
+    {/* The transport sentence used to be repeated here, one screen under the
+        row that already says it. The note is about the BUTTON. */}
+    <p class="go-note">{U.goNote}</p>
     {isApprox && (
       <p class="approx-note">
         {U.approxNote}{" "}
