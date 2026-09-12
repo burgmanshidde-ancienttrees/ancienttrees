@@ -1,6 +1,72 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - A tree can carry more than one photograph, and the first one to do it is the Munakata camphor
+
+Hidde, sending a close-up beside the wide shot already on the page: "Moeten we
+het niet ook mogelijk maken om meerdere afbeeldingen per boom te hebben ik vind
+het zonde dat deze niet zichtbaar is."
+
+He is right and the case makes the argument. The published picture shows where
+the Camphor of Munakata Shrine stands, a gravel avenue in Kyoto Gyoen with a
+person for scale. The one that could not be shown is taken from underneath and
+shows the limb structure and the root flare, which is the thing that tells a
+visitor this is the trunk they came for. Until today the only ways to handle the
+second picture were to displace the first or to throw it away, and the second
+picture is often the one that answers rung 7's question.
+
+**The shape.** `photo` stays the lead and `photos[]` carries the rest. Additive
+on purpose: about forty scripts, five feeds, the Swift model and seven translated
+page sets read `photo`, nearly all of them just counting whether a tree has a
+picture, and every one of them is correct untouched. One accessor decides the
+set, so the card face, the og:image, the hero ranking and the app feed cannot
+drift from what the page shows.
+
+**The honesty half, which is the half that could hurt somebody.** An extra
+carries a licence, an attribution and a takedown id on exactly the terms the lead
+does. photo_takedown.py sweeps every photograph now rather than the lead, or the
+deletion promise in /terms would have broken silently for second pictures;
+preflight and qa read the set too. Proved rather than assumed: the sweep reaches
+7 photographs where it used to reach 6, and a test unlink took the account off
+the extra and left the lead alone.
+
+**Both surfaces.** The web puts a thumbnail strip under the hero and pages the
+lightbox with chevrons and arrow keys; the app puts the same strip under its hero
+and pages by swipe with a counter, because that is Apple Photos and a chevron on
+a phone is a web habit. The feed sends the resolved set and only when there is
+more than one, so nothing is re-decided on the phone and 3,054 trees pay nothing.
+sightings_publish.py gained an `add` verdict for the ordinary case this started
+from: a good photograph of a tree that already has a good one.
+
+**Found by looking, and it had been live a while:** the lightbox opened a 210 by
+280 picture in the middle of a full black screen on every tree page, because the
+hero's own `height: 280px; object-fit: cover` out-specifies `.pv-frame img` and
+the dialog sits inside that figure. No gate could see it, since the dialog
+exists, the image loads and the link works. Fixed; the viewer fills the screen.
+
+**The app half did not compile, and ios.yml is what found it.** Two Swift traps,
+neither of them logic: a computed property named `set`, which opens a property
+setter and made the parser fail thirty lines from anything that looked wrong;
+and a ForEach destructuring a tuple parameter, which has not compiled since
+Swift 3. The first cost a CI round, the second was caught by re-reading the
+diff rather than by spending a second one. Both fixed, and
+AncientTreesTests/PhotoSetTests.swift now covers the five states a feed can be
+in, including a catalogue written before the field existed, which is the one
+that would empty the map on every phone that has ever synced.
+
+Green on the second run: build, unit and UI tests, the permissions-refused
+walk, and the layout gate on both phones.
+
+FOR HIDDE, three things. **I have not SEEN the app's screens**, only their
+measurements: the artifact download needs a token this sandbox does not have,
+so the pictures are in the run's `appsweep` artifact for you rather than
+checked by me. **The close-up went live on your word** that it is the same
+tree: the upload had its GPS stripped in transit, so I could not settle it from
+the file, and the note on the photograph says so. If it is a different trunk it
+is a one-line edit. And **this is on a branch**: reaching the live site and
+your phone needs a merge to main. He asked for it from here, so PR #3 carries
+this branch into main and the site deploys from there.
+
 ## 2026-09-12 - Night run 2026-09-12 08:12 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 47.7 minutes of its 120 minute window, 334 turns, 45 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree. Claims left behind: milan, florence, brisbane, which block the top of the queue until they expire.

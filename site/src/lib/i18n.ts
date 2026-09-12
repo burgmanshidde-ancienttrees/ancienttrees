@@ -149,6 +149,13 @@ export interface UIStrings {
    *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
    *  Viewer puts one click further in: the original file at full resolution. */
   photoOpen: string;
+  /** Paging through a tree's photographs, added 2026-09-12 when trees gained
+   *  more than one. `photoNumber` is both the counter in the lightbox and the
+   *  label on a thumbnail, so a screen reader hears "Photograph 2 of 3" rather
+   *  than a second unnamed button. */
+  photoPrev: string;
+  photoNext: string;
+  photoNumber: (n: number, total: number) => string;
   /** The alt text on Apple's App Store badge, added 2026-09-03. It says what
    * the control DOES, because a screen reader announcing "Download on the App
    * Store badge" describes a picture rather than an action. */
@@ -263,6 +270,9 @@ const EN: UIStrings = {
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
   photoOpen: "Open the photograph",
+  photoPrev: "Previous photograph",
+  photoNext: "Next photograph",
+  photoNumber: (n, total) => `Photograph ${n} of ${total}`,
   appStoreBadge: "Get Ancient Trees on the App Store",
   openInApp: "Open in the app",
   androidTitle: "We are working on the Android app",
@@ -419,6 +429,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir la fotografía",
+    photoPrev: "Fotografía anterior",
+    photoNext: "Fotografía siguiente",
+    photoNumber: (n, total) => `Fotografía ${n} de ${total}`,
     appStoreBadge: "Consigue Ancient Trees en el App Store",
     openInApp: "Abrir en la app",
     androidTitle: "Estamos trabajando en la app de Android",
@@ -520,6 +533,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Apri la fotografia",
+    photoPrev: "Fotografia precedente",
+    photoNext: "Fotografia successiva",
+    photoNumber: (n, total) => `Fotografia ${n} di ${total}`,
     appStoreBadge: "Scarica Ancient Trees su App Store",
     openInApp: "Apri nella app",
     androidTitle: "Stiamo lavorando alla app per Android",
@@ -621,6 +637,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Open de foto",
+    photoPrev: "Vorige foto",
+    photoNext: "Volgende foto",
+    photoNumber: (n, total) => `Foto ${n} van ${total}`,
     appStoreBadge: "Download Ancient Trees in de App Store",
     openInApp: "Openen in de app",
     androidTitle: "We werken aan de Android-app",
@@ -722,6 +741,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Foto öffnen",
+    photoPrev: "Vorheriges Foto",
+    photoNext: "Nächstes Foto",
+    photoNumber: (n, total) => `Foto ${n} von ${total}`,
     appStoreBadge: "Ancient Trees im App Store laden",
     openInApp: "In der App öffnen",
     androidTitle: "Wir arbeiten an der Android-App",
@@ -823,6 +845,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir a fotografia",
+    photoPrev: "Fotografia anterior",
+    photoNext: "Fotografia seguinte",
+    photoNumber: (n, total) => `Fotografia ${n} de ${total}`,
     appStoreBadge: "Obter Ancient Trees na App Store",
     openInApp: "Abrir na app",
     androidTitle: "Estamos a trabalhar na app para Android",
@@ -924,6 +949,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     photoOpen: "Ouvrir la photographie",
+    photoPrev: "Photographie précédente",
+    photoNext: "Photographie suivante",
+    photoNumber: (n, total) => `Photographie ${n} sur ${total}`,
     appStoreBadge: "Télécharger Ancient Trees sur l'App Store",
     openInApp: "Ouvrir dans l'app",
     androidTitle: "Nous travaillons sur l'application Android",
@@ -1024,6 +1052,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     photoOpen: "写真を開く",
+    photoPrev: "前の写真",
+    photoNext: "次の写真",
+    photoNumber: (n, total) => `写真 ${n}/${total}`,
     appStoreBadge: "App StoreでAncient Treesを入手",
     openInApp: "アプリで開く",
     androidTitle: "Android版を開発中です",

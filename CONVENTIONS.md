@@ -25,6 +25,65 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Several photographs of one tree (2026-09-12, benchmarked)
+
+Hidde, sending a close-up of the Munakata camphor beside the wide shot already
+on the page: "Moeten we het niet ook mogelijk maken om meerdere afbeeldingen
+per boom te hebben ik vind het zonde dat deze niet zichtbaar is", then: "Please
+convention benchmark the ui of having multiple pictures."
+
+Two separate interactions, benchmarked separately because they answer different
+questions: how a reader LEARNS there is more than one, and how they move
+between them once a picture is open.
+
+### What the references actually do
+
+| Product | How you learn there is more | How you move between them | Where it was read |
+|---|---|---|---|
+| iNaturalist observation | A row of small thumbnails under the lead image; all photos, active one marked | Click a thumbnail, or a "mini carousel" inside the enlargement, with drag-to-reorder for the owner | [forum.inaturalist.org](https://forum.inaturalist.org/t/what-is-proper-way-to-present-an-observation-with-multiple-images/42663), [iNaturalist blog](https://www.inaturalist.org/posts/34152-multiple-photos-per-observation) |
+| Airbnb listing | Five images in a grid; a "show all photos" button | Lightbox over the page | [tearthemdown.substack.com](https://tearthemdown.substack.com/p/airbnb-product-teardown), [wp-modula.com](https://wp-modula.com/airbnb-inspired-image-gallery/) |
+| Wikipedia Media Viewer | The article's images are already in the page | Chevrons left and right, a counter, credit along the bottom, arrow keys; the original one step further in | recorded here 2026-09-03 |
+| Apple Photos / iOS viewers | Nothing on the photo itself | Horizontal swipe. Apple's page control is "a row of indicator images, each of which represents a page in a flat list" and is the dots pattern, used for flat lists rather than for a photo viewer | [developer.apple.com, Page controls](https://developer.apple.com/design/human-interface-guidelines/components/presentation/page-controls/) |
+
+### Two findings worth more than the layouts
+
+**Airbnb's own teardown says 100 percent of guests who complete a booking
+opened the listing's photos, and names "vertical photos displayed at half the
+size of horizontal photos" as a real fault they fixed.** Our close-up is
+vertical and our hero is a 300 point landscape crop, so this is our problem
+too, not a listing-site problem. Checked: in the lightbox the portrait renders
+359 by 479 inside a 375 by 748 frame under `object-fit: contain`, which is
+correct. It would NOT be correct as a lead, where the hero's `cover` crop would
+show a narrow slice of it. Worth remembering when choosing which picture leads.
+
+**iNaturalist's documented failure is the one to copy avoiding**: "If an
+observation has more photos than fit in the thumbnail row, the Identify
+interface doesn't show them all and there is no indication that there are more
+photos." A thumbnail row that silently truncates is worse than no row. Ours
+scrolls horizontally rather than truncating, and the viewer carries an explicit
+"Photograph 2 of 3", so the count is never inferred from how many thumbnails
+happen to fit.
+
+### What we do, and the two deliberate deviations
+
+Web: hero, a scrolling thumbnail strip under it, and a lightbox that pages with
+chevrons, a counter, arrow keys and a horizontal swipe. App: the same hero and
+strip, paging by swipe with a counter and no chevrons, because Apple Photos has
+none and a chevron on a phone is a web habit. This is the both-surfaces rule
+working as written: the DESIGN differs, the behaviour does not.
+
+**Deviation one: the strip holds the EXTRAS, not the whole set.** iNaturalist
+and Google Maps put every photo in the row and mark the active one. With two
+pictures that draws the hero twice, once big and once small, which reads as a
+bug rather than as a gallery. Their rows are the entry point INSTEAD of a big
+lead; ours sits under one. Revisit if a tree ever carries six.
+
+**Deviation two: no "show all photos" button and no grid.** Airbnb's grid and
+Material's carousel layouts are built for twenty pictures. A tree has two or
+three, and scarcity is the rule here, so the row IS the whole set.
+
+---
+
 ## Helping somebody be SURE which one they found (2026-09-07)
 
 Hidde, testing in Nara: "deze hele flow zou je moeten benchmarken... als de

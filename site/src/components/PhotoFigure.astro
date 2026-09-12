@@ -1,5 +1,5 @@
 ---
-/* A tree's photograph, and the viewer behind it.
+/* A tree's photographs, and the viewer behind them.
  *
  * Convention: Wikipedia's Media Viewer (CONVENTIONS.md 2026-09-03), which has
  * our exact content problem, photographs under a licence that obliges a credit.
@@ -9,6 +9,25 @@
  * in, never the first click. Linking the thumbnail straight at the original is
  * the tempting shortcut and it hands somebody several megabytes with no credit
  * attached to it.
+ *
+ * MORE THAN ONE PHOTOGRAPH, added 2026-09-12 on Hidde's ask ("meerdere
+ * afbeeldingen per boom"), from a case that says why it matters: the Camphor of
+ * Munakata Shrine had a wide shot showing the setting, and the photograph that
+ * actually tells you what the tree IS, the limbs from underneath, could not be
+ * shown at all. Those are different questions and one frame rarely answers
+ * both. The second one is also the one that answers "am I standing in front of
+ * the right trunk", which is the whole of the recognition problem.
+ *
+ * Conventions for the two controls this adds, neither of them ours:
+ *   - The STRIP of thumbnails under the lead, which is what Google Maps puts
+ *     under a place's photograph and iNaturalist under an observation. It says
+ *     there is more without spending the page's best space on it.
+ *   - PREV/NEXT with a counter inside the viewer, which is Media Viewer's own
+ *     paging, so the reference we already follow covers this too.
+ * Arrow keys page it, because a lightbox that ignores the arrow keys is the
+ * complaint every desktop viewer without them gets. A horizontal swipe pages
+ * and a downward one still dismisses: the gesture is decided by which axis
+ * moved further, so neither has to be given up.
  *
  * Native <dialog>, so Escape, the backdrop, focus trapping and the top layer
  * are the browser's job rather than ours. Swipe down to dismiss is added by
@@ -23,8 +42,14 @@
 import { imgSrcset, photoDims, creditRequired, creditText } from "../lib/images";
 import { ui } from "../lib/i18n";
 
+type Shot = { url: string; license?: string | null; attribution?: string | null };
+
 interface Props {
-  photo: { url: string; license?: string | null; attribution?: string | null };
+  /** The lead photograph. */
+  photo: Shot;
+  /** The whole set, lead first. Omitted means the lead is all there is, which
+   *  keeps every caller that predates the gallery working unchanged. */
+  photos?: Shot[];
   alt: string;
   lang?: string;
   /** The widths the page itself lays the picture out at. */
@@ -34,60 +59,140 @@ interface Props {
    *  edge to edge on a phone, a fixed crop height, credit underneath. */
   variant?: "inline" | "hero";
 }
-const { photo, alt, lang = "en", widths = [700, 1100, 1600],
+const { photo, photos, alt, lang = "en", widths = [700, 1100, 1600],
         sizes = "(max-width: 800px) 100vw, 760px", variant = "inline" } = Astro.props;
 const t = ui(lang);
-const dims = photoDims(photo);
-const rawCredit = creditRequired(photo.license)
-  ? creditText(photo.attribution, photo.license)
-  : null;
-const credit = rawCredit ? t.photoCredit(rawCredit) : null;
+
+const set: Shot[] = (photos && photos.length ? photos : [photo]).filter((p) => p?.url);
+const lead = set[0] ?? photo;
+const many = set.length > 1;
+
+/** Label and credit for one photograph, resolved here so the markup below and
+ *  the viewer's bar cannot disagree about what a licence obliges. */
+const shots = set.map((p, i) => {
+  const raw = creditRequired(p.license) ? creditText(p.attribution, p.license) : null;
+  return {
+    photo: p,
+    dims: photoDims(p),
+    credit: raw ? t.photoCredit(raw) : null,
+    label: t.photoNumber(i + 1, set.length),
+  };
+});
+const leadCredit = shots[0].credit;
 ---
 <figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}>
-  <button type="button" class="photo-open" aria-label={t.photoOpen}>
-    <img {...imgSrcset(photo.url, widths, sizes, dims.width, dims.height)} alt={alt} loading="lazy" />
+  <button type="button" class="photo-open" aria-label={t.photoOpen} data-i="0">
+    <img {...imgSrcset(lead.url, widths, sizes, shots[0].dims.width, shots[0].dims.height)}
+         alt={alt} loading="lazy" />
   </button>
-  {credit && <figcaption>{credit}</figcaption>}
+  {leadCredit && <figcaption>{leadCredit}</figcaption>}
 
-  <dialog class="photo-view" aria-label={alt}>
+  {many && (
+    <ol class="photo-strip">
+      {shots.slice(1).map((s, i) => (
+        <li>
+          <button type="button" class="photo-open" aria-label={s.label} data-i={i + 1}>
+            <img {...imgSrcset(s.photo.url, [160, 320], "80px", s.dims.width, s.dims.height)}
+                 alt="" loading="lazy" />
+          </button>
+        </li>
+      ))}
+    </ol>
+  )}
+
+  <dialog class="photo-view" aria-label={alt} data-count={set.length}>
     <button type="button" class="pv-close" aria-label={t.photoClose}>&times;</button>
-    <div class="pv-frame">
-      {/* Capped at 1280 deliberately. A wider candidate finds no vendored copy
-          and falls through to the raw original, which for a photograph somebody
-          sent us is several megabytes; the original is what the link below is
-          for, which is also where Media Viewer puts it. */}
-      <img {...imgSrcset(photo.url, [960, 1280], "100vw", dims.width, dims.height)} alt={alt} loading="lazy" />
-    </div>
-    <div class="pv-bar">
-      {credit && <span class="pv-credit">{credit}</span>}
-      <a class="pv-full" href={photo.url} target="_blank" rel="noopener">{t.photoFull}</a>
-    </div>
+    {shots.map((s, i) => (
+      <div class="pv-slide" data-i={i} hidden={i !== 0}>
+        <div class="pv-frame">
+          {/* Capped at 1280 deliberately. A wider candidate finds no vendored copy
+              and falls through to the raw original, which for a photograph somebody
+              sent us is several megabytes; the original is what the link below is
+              for, which is also where Media Viewer puts it. */}
+          <img {...imgSrcset(s.photo.url, [960, 1280], "100vw", s.dims.width, s.dims.height)}
+               alt={alt} loading="lazy" />
+        </div>
+        <div class="pv-bar">
+          {s.credit && <span class="pv-credit">{s.credit}</span>}
+          {set.length > 1 && <span class="pv-count">{s.label}</span>}
+          <a class="pv-full" href={s.photo.url} target="_blank" rel="noopener">{t.photoFull}</a>
+        </div>
+      </div>
+    ))}
+    {many && (
+      <Fragment>
+        <button type="button" class="pv-step pv-prev" aria-label={t.photoPrev}>&#8249;</button>
+        <button type="button" class="pv-step pv-next" aria-label={t.photoNext}>&#8250;</button>
+      </Fragment>
+    )}
   </dialog>
 </figure>
 
 <script>
   // Delegated, so a page may carry one figure or twenty and this runs once.
+  const slidesOf = (d: Element) => Array.from(d.querySelectorAll<HTMLElement>(".pv-slide"));
+
+  function show(d: HTMLDialogElement, i: number) {
+    const slides = slidesOf(d);
+    if (!slides.length) return;
+    // Wrap, the way every photo viewer does: paging past the end of three
+    // pictures returns to the first rather than dead-ending on a grey button.
+    const n = ((i % slides.length) + slides.length) % slides.length;
+    slides.forEach((s, k) => { s.hidden = k !== n; });
+    d.dataset.at = String(n);
+  }
+
+  const step = (d: HTMLDialogElement, by: number) =>
+    show(d, Number(d.dataset.at || 0) + by);
+
   document.addEventListener("click", (e) => {
     const target = e.target as HTMLElement;
+
     const open = target.closest(".photo-open");
     if (open) {
       const d = open.closest("figure")?.querySelector("dialog.photo-view");
-      if (d instanceof HTMLDialogElement) d.showModal();
+      if (d instanceof HTMLDialogElement) {
+        // A thumbnail opens the viewer AT ITS OWN PICTURE. Opening every
+        // thumbnail on the first one is the fault that makes a strip feel
+        // broken, and it is the one thing a strip must get right.
+        show(d, Number((open as HTMLElement).dataset.i || 0));
+        d.showModal();
+      }
       return;
     }
+
+    const stepper = target.closest(".pv-step");
+    if (stepper) {
+      const d = stepper.closest("dialog") as HTMLDialogElement | null;
+      if (d) step(d, stepper.classList.contains("pv-next") ? 1 : -1);
+      return;
+    }
+
     const close = target.closest(".pv-close");
     if (close) {
       (close.closest("dialog") as HTMLDialogElement | null)?.close();
       return;
     }
     // The backdrop is the dialog element itself: anything inside sits in
-    // .pv-frame or .pv-bar, so a click landing ON the dialog is a click beside
-    // the picture, which every viewer treats as "close".
+    // .pv-slide or a control, so a click landing ON the dialog is a click
+    // beside the picture, which every viewer treats as "close".
     if (target instanceof HTMLDialogElement && target.classList.contains("photo-view")) target.close();
   });
 
-  // Drag down to dismiss. The gesture a thumb reaches for first, and the one
-  // complaint every viewer that lacks it gets.
+  // Arrow keys, on the open dialog. Escape is the browser's already.
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    const d = document.querySelector("dialog.photo-view[open]") as HTMLDialogElement | null;
+    if (!d || slidesOf(d).length < 2) return;
+    e.preventDefault();
+    step(d, e.key === "ArrowRight" ? 1 : -1);
+  });
+
+  // Drag down to dismiss, drag sideways to page. The gesture a thumb reaches
+  // for first, and the one complaint every viewer that lacks it gets. Which of
+  // the two it was is decided at the END by the axis that moved further, so a
+  // slightly crooked swipe still does what the thumb meant.
+  let x0: number | null = null;
   let y0: number | null = null;
   let dragging: HTMLDialogElement | null = null;
   const viewerAt = (t: EventTarget | null): HTMLDialogElement | null =>
@@ -96,23 +201,34 @@ const credit = rawCredit ? t.photoCredit(rawCredit) : null;
   document.addEventListener("touchstart", (ev) => {
     const e = ev as TouchEvent;
     dragging = viewerAt(e.target);
+    x0 = dragging ? e.touches[0].clientX : null;
     y0 = dragging ? e.touches[0].clientY : null;
   }, { passive: true });
   document.addEventListener("touchmove", (ev) => {
     const e = ev as TouchEvent;
-    if (y0 === null || !dragging) return;
+    if (y0 === null || x0 === null || !dragging) return;
+    const dx = e.touches[0].clientX - x0;
     const dy = e.touches[0].clientY - y0;
-    if (dy > 0) dragging.style.transform = `translateY(${Math.min(dy, 240)}px)`;
+    // Follow the finger only downward. A horizontal drag pages on release
+    // rather than sliding, which keeps this a few lines instead of a carousel.
+    if (dy > 0 && dy > Math.abs(dx)) dragging.style.transform = `translateY(${Math.min(dy, 240)}px)`;
   }, { passive: true });
   document.addEventListener("touchend", (ev) => {
     const e = ev as TouchEvent;
-    if (dragging) {
-      const moved = e.changedTouches.length && y0 !== null
-        ? e.changedTouches[0].clientY - y0 : 0;
+    if (dragging && e.changedTouches.length && x0 !== null && y0 !== null) {
+      const dx = e.changedTouches[0].clientX - x0;
+      const dy = e.changedTouches[0].clientY - y0;
       dragging.style.transform = "";
-      if (moved > 90) dragging.close();
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 60 && slidesOf(dragging).length > 1) {
+        step(dragging, dx < 0 ? 1 : -1);
+      } else if (dy > 90) {
+        dragging.close();
+      }
+    } else if (dragging) {
+      dragging.style.transform = "";
     }
     dragging = null;
+    x0 = null;
     y0 = null;
   }, { passive: true });
 </script>
