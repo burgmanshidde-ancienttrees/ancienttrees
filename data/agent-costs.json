@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -7706,6 +7706,15 @@
         "tokens": 0,
         "trees": 0,
         "note": "viewing pass on --zero sweep candidates: all rejected after looking at pixels (a rose cultivar label, house facades, a wayside crucifix, a park treeline with no single subject); one Hobart iNat duplicate candidate held, consistent with an existing held verdict on the same observation",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "session (routes.yml push-race fix, vendor_photos)",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "no agent dispatched for this work: diagnosed the routes.yml/data-digest.yml/photos.yml/weekly-analysis.yml push-race pattern (fix ready, blocked on missing workflows scope, FOR HIDDE), vendored 1 stray photo, answered a resolved REVIEW.md WARN",
         "wasted": 0,
         "brief_wrong": false
       }

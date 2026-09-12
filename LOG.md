@@ -1,6 +1,53 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation) - Vendored a stray photo, extended the routes.yml push-fix to 3 more workflows, claimed Florence for a verify pass
+
+Rung 2 first. `health.py`: Walking routes (routes.yml) had its first-ever
+failed run this morning, a git push race (another workflow's commit landed
+between its own `pull --rebase` and `push`), already diagnosed and FOR
+HIDDE'd twice earlier today in this same log. Wrote the same retry-loop fix,
+and while doing it noticed `data-digest.yml`, `photos.yml` and
+`weekly-analysis.yml` all share the identical bare `pull --rebase` / `push`
+pattern with no retry, so they carry the same exposure now that a dozen
+workflows push to main on independent schedules. Extended the fix to all
+four. Same wall as before: this token has no `workflows` scope, so pushing
+any `.github/workflows/*.yml` edit is refused outright. Reverted all four
+so the tree stays clean. **FOR HIDDE, consolidating the earlier notes**: add
+a `for i in 1 2 3 4 5; do <pull --rebase> && <push> && break; sleep
+$((RANDOM % 20 + 5)); done` retry loop around the final pull/push pair in
+each of routes.yml, data-digest.yml, photos.yml and weekly-analysis.yml
+(each already has that pair at the end of its "Commit" step), or grant the
+bot the `workflows` permission so a run can land it directly next time.
+
+The iOS app's newest failure (`xcodebuild test hung past 20 minutes and was
+killed`, on `main`) is the same flakiness already logged twice today: the
+identical commit passed on a parallel feature-branch run half a minute
+later. No action, no regression. REVIEW.md's one WARN today ("1 trees" in
+`Home.swift`) was already fixed upstream by commit `ced016040`; answered via
+`health.py --answer` so it stops re-surfacing. `pagegaps.py` clean (0
+missing species/country/park pages).
+
+Ran `scripts/vendor_photos.py` per the session-start flag (1 photograph
+still hotlinking Wikimedia): lsn_001, the Napoleon Oak, fetched and
+committed.
+
+**New coverage.** `city_queue.py --next` stage 2: Milan, Brisbane, Alicante,
+Sintra and Taormina are all confirmed-exhausted dead ends (checked
+CURATION.md/LOG.md history for each rather than re-running them). Florence
+(rank #10, 24/30 trees) had a real unmined cluster `passcheck.py --brief`
+had not been read closely before: 7 distinct named specimens from Italy's
+MASAF register, all within 0.6-0.9 km of each other (a Japanese zelkova, a
+Calabrian pine, a cork oak, a yew, a Montezuma cypress, a Caucasian zelkova
+and a Himalayan cedar, likely one botanical garden), each flagged "within
+80m of a live tree" only because one other already-published Florence tree
+sits in the same garden, not because they duplicate it. Claimed Florence,
+dispatched a `verify` agent against that cluster (told it to check each
+candidate against the live city file's exact coordinates before treating it
+as distinct, and to respect the two already-documented dead ends nearby, a
+blocked private Robinia and a hackberry register-trap). Still running as
+this entry is written; claim is live in `data/in-flight.json`.
+
 ## 2026-09-12 (continuation) - Finished an orphaned Montreal claim; week budget nearly spent, kept this short
 
 Picked up where an earlier attempt in this same window stopped (it had
