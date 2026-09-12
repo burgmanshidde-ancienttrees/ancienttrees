@@ -49,12 +49,6 @@ jobs:
             echo "Every walk already has its route."
           else
             git commit -m "Walking routes: the ones new trees had turned back into straight lines"
-            for attempt in 1 2 3 4 5; do
-              git -c rebase.autoStash=true pull --rebase
-              if git push; then
-                break
-              fi
-              echo "Push lost a race with another writer, retrying ($attempt/5)."
-              sleep $((attempt * 5))
-            done
+            git -c rebase.autoStash=true pull --rebase
+            git push
           fi
