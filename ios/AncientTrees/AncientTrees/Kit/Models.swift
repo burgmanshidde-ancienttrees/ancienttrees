@@ -365,3 +365,9 @@ public struct VersionInfo: Codable, Sendable {
     public let trees: Int
     public let cities: Int
 }
+
+/// "1 tree", never "1 trees". Three call sites wrote this ternary separately
+/// and one of them forgot it (REVIEW.md 2026-09-10 and 2026-09-12, Home.swift
+/// and MapSearch.swift): a stranger reading a single-tree place's own header
+/// notices the grammar first. One place to get it right instead of three.
+public func treesLabel(_ n: Int) -> String { n == 1 ? "1 tree" : "\(n) trees" }

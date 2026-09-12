@@ -535,7 +535,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(c.name).font(.brand(16, .bold, relativeTo: .headline))
                         .foregroundStyle(.white).lineLimit(1)
-                    Text("\(c.count) trees").font(.caption2).foregroundStyle(.white.opacity(0.85))
+                    Text(treesLabel(c.count)).font(.caption2).foregroundStyle(.white.opacity(0.85))
                 }
                 .padding(10)
             }
@@ -717,7 +717,7 @@ struct CityView: View {
                     }
                 }
 
-                ShelfHeader(title: "\(trees.count) trees")
+                ShelfHeader(title: treesLabel(trees.count))
                 ForEach(trees) { t in
                     NavigationLink(value: Route.tree(t.id)) {
                         TreeCard(tree: t)
