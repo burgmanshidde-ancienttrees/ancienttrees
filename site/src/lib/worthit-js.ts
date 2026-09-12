@@ -157,7 +157,10 @@ export const WORTHIT_JS = `
     if (!form) return;
     if (state(tree).detailed) {
       form.hidden = true;
-      box.querySelector('.worthit-thanks').textContent = 'Thanks, that helps.';
+      // From the box, never from here: this script runs on eight languages
+      // and a literal would print English on seven of them (2026-09-12).
+      box.querySelector('.worthit-thanks').textContent =
+        box.dataset.thanksDetail || box.querySelector('.worthit-thanks').textContent;
       return;
     }
     var reason = state(tree).reason;
@@ -211,7 +214,11 @@ export const WORTHIT_JS = `
       var open = why && why.hidden;
       if (why) {
         var q = why.querySelector('.worthit-q');
-        if (q) q.textContent = "What's wrong?";
+        // Put back whatever the markup shipped, in whatever language it was.
+        if (q) {
+          if (!q.dataset.orig) q.dataset.orig = q.textContent;
+          q.textContent = q.dataset.orig;
+        }
         why.hidden = !open;
       }
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');

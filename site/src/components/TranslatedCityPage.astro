@@ -12,6 +12,7 @@
 import TreeCard from "./TreeCard.astro";
 import LanguagePicker from "./LanguagePicker.astro";
 import SignInModal from "./SignInModal.astro";
+import ShareButton from "./ShareButton.astro";
 import Base from "../layouts/Base.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
@@ -24,6 +25,7 @@ import { mapHead } from "../lib/map";
 import { type WalkMarker } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
+import { SHARE_JS } from "../lib/share-js";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation } from "../lib/i18n";
 
 interface Props { lang: string; city: CityEntry; tr: CityTranslation }
@@ -89,7 +91,10 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <span>{tr.city}</span></nav>
         <button type="button" class="sheet-back">{U.backToTrees(trees.length)}</button>
         <p class="eyebrow">{countryLabel}</p>
-        <h1>{U.heading("")}<em>{tr.city}</em></h1>
+        <div class="page-head">
+          <h1>{U.heading("")}<em>{tr.city}</em></h1>
+          <ShareButton url={canonical} title={U.heading(tr.city)} label={U.share} copied={U.shareCopied} />
+        </div>
         <p class="sheet-count">{U.treesOnMap(trees.length)}</p>
       </div>
       </div>
@@ -115,6 +120,13 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
         <p class="subtle-suggest"><b>{U.mappingAll}</b> {U.missingOrWrong(tr.city)} <a href="/contribute?kind=tree">{U.tellUs}</a>.</p>
         <div class="take-with-you">
           <strong>{U.goingThere}</strong> <a href={`/${cslug}.gpx`} download>{U.downloadTrees(trees.length)}</a> {U.worksOffline}
+        </div>
+        {/* Between the offline file and the FAQ, exactly where the English
+            city page puts it. Translated 2026-09-12. */}
+        <div class="app-pitch">
+          <strong>{U.appPitchCityTitle}</strong>
+          <p>{U.appPitchCityBody}</p>
+          <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">{U.getTheApp}</a>
         </div>
         <h2>{U.faqHeading}</h2>
         <dl class="faq">
@@ -148,5 +160,5 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
     </div>
   </div>
   <SignInModal lang={lang} />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS + SHARE_JS} />
 </Base>

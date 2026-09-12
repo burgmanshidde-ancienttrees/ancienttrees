@@ -1,6 +1,53 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - The vote, the share button and the app block reach all seven languages
+
+Hidde: "zet het op de vertaalde pagina's alles consistent hoe zorg ik dat je
+dat onthoudt waar opschrijven." Two things, and the second is the one that
+mattered.
+
+WHAT SHIPPED. The worth-it vote and the share button now render on all 907
+translated tree pages, the share button on the 47 translated city pages, and
+the app block on both. Cause of the gap was one file: TranslatedTreePage.astro
+never rendered WorthIt or ShareButton, and it could not have, because every
+string in that control was typed into its markup in English. They now come
+from UIStrings, 30 new keys in eight languages, and not one line of new
+English copy: what was on the English page moved into the table unchanged and
+was translated from there.
+
+Three smaller things came out of the same pass, each the same shape. Two
+English sentences lived inside worthit-js.ts and one inside share-js.ts, so
+they would have printed English over the translation the moment somebody used
+the control; they travel on the element now. And `data-reason` stays English
+in every language on purpose: it is the value written to the submissions
+table, and translating it would split one report kind into seven.
+
+WHERE TO WRITE IT DOWN: nowhere, and that is the finding. He had written it
+down, in CLAUDE.md, on 2026-09-02 ("alle paginas en talen moeten consistent
+blijven"). It was read at the start of every run for ten days while the vote
+was missing from 907 pages. A sentence in the corpus cannot refuse a push.
+scripts/hooks/ratchet_nudge.py now fires on a message that reads like a
+standing rule rather than a task and puts one question in front of the reply:
+what refuses the next push that breaks this. His own half is one question back
+to me, "is dit een check geworden?"
+
+The check itself widened from controls to PARTS, so it also watches things you
+do not tap. Verified both ways: green as it stands, red naming the 907 pages
+when an entry is taken out of data/lang-gaps.json.
+
+STILL OPEN, recorded in that file with the reason, and both are translation
+DATA rather than wiring. The recognition line, because TreeTranslation carries
+no recognise field, and that one matters most: it is often the only thing that
+tells a visitor which trunk we mean. And the season chip, because phenology
+moments are written as English sentences per species.
+
+FOR HIDDE: one thing I did not touch. The place row wraps on a long place
+name, leaving a dangling middle dot at the end of the line and the thumb
+alone underneath. It does this on the English page too and has since
+2026-09-11, so it is not new and not a translation fault, but it looks like a
+mistake at 375px and it is a taste call rather than a rule.
+
 ## 2026-09-12 - A feature that ships in English now has to reach the other seven
 
 Hidde, told that the worth-it vote was on no translated tree page: "wat kan ik

@@ -25,6 +25,32 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Porting a control to another language (2026-09-12)
+
+Not a new interaction, so no reference lookup was owed: the worth-it control's
+own shape is already recorded here and in its header (Google Maps keeps its
+rating and "Suggest an edit" apart, AllTrails separates the star rating from
+reporting conditions, YouTube and Reddit separate the vote from Report; opinion
+and error report are siblings, never nested). Nothing about that changed when
+it reached the other seven languages.
+
+What IS worth writing down, because it is where a port goes wrong: **decide per
+string whether it is read or whether it is DATA.** The chips' `data-reason`
+stays English in all eight languages, because it is the value written to the
+submissions table and Step 0b groups reports by it; translating it would split
+one report kind into seven and the split would be invisible. Only what a person
+reads is looked up. The same test that CLAUDE.md's both-surfaces rule applies
+between app and web (is this an ANSWER or a RULE) applies between languages.
+
+And a string that lives inside a SCRIPT is a string in one language. Three had
+to move onto the element before this port was honest: two in worthit-js.ts and
+one in share-js.ts, each of which would have printed English over the
+translation the moment somebody used the control.
+
+Recorded from this session's own work, 2026-09-12.
+
+---
+
 ## Tapping into a field on a phone (2026-09-12)
 
 **Reference: Safari on iOS itself, which is the constraint rather than a

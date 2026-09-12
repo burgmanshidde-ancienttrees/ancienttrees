@@ -599,12 +599,21 @@ setTimeout(function(){
 
     # Does it fit a phone? One representative page per template that a visitor
     # actually lands on.
+    # One translated page of each kind since 2026-09-12. Every fit check here
+    # measured English, and English is the SHORTEST of the eight: German
+    # compounds and Japanese line-breaking are exactly where a control runs off
+    # a 375px screen, and nothing had ever looked. Picked by path rather than by
+    # scanning, so the list stays a fixed cost.
+    translated = [(p, f"{p.split('/')[1]} {kind}")
+                  for p, kind in (("/nl/amsterdam.html", "city"),
+                                  ("/de/berlin/berlins-tallest-tree.html", "tree"))
+                  if (DIST / p.lstrip("/")).is_file()]
     for page, label in [(f"/{city.name}", "city page"),
                         ("/index.html", "homepage"),
                         ("/explore.html", "explore"),
                         (f"/{city.stem}/{tree.name}", "tree page"),
                         ("/cities.html", "cities index"),
-                        ("/account.html", "account")]:
+                        ("/account.html", "account")] + translated:
         r = fits_at_375(chrome, base, page)
         if r is None:
             failures.append(f"{label}: could not measure whether it fits 375px")
