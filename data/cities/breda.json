@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Breda's oldest trees survived by getting in the way of a building, not by being protected on purpose. A trio of mulberries stopped a 1995 library architect from building where he first planned to, a wingnut from the Caucasus outgrew the fashion that planted it, and a giant sequoia keeps growing beside a street named for the village it is not quite in. None of it is planned heritage. All of it is free to see, in a city better known for its Golden Triangle nightlife than for what is quietly growing behind it.",
-  "meta_description": "Breda's oldest trees are three 1780s mulberries a library was built around. Four verified trees, real stories, how to reach each one.",
+  "meta_description": "Breda's oldest trees are three 1780s mulberries a library was built around. Ten verified trees, real stories, how to reach each one.",
   "question_answer": "Breda's oldest trees are three black mulberries in the inner courtyard of De Nieuwe Veste on Molenstraat, planted around 1780 in the garden of the manor house Huize Ocrum, roughly 245 years old. Architect Herman Hertzberger built the current library and cultural centre around them in 1995 rather than remove them.",
-  "question_meta": "Three 1780s mulberry trees, built around by a 1995 library, are Breda's oldest. Where to find them, and the city's other three verified ancient trees.",
+  "question_meta": "Three 1780s mulberry trees, built around by a 1995 library, are Breda's oldest. Where to find them, and the city's other nine verified ancient trees.",
   "question_context": "The mulberries' age comes from the property's own recorded history rather than a ring count: Huize Ocrum's garden is documented as the planting site around 1780, under its then-owner Gerrit Willem Motman, steward of the princely domains, and the trees survived as the surrounding estate was built up and eventually demolished around them over the following two centuries. When Herman Hertzberger designed the current De Nieuwe Veste library and cultural centre in the mid-1990s, the three trees were already old enough that removing them was never seriously considered. Instead the building folds around the courtyard they stand in, their canopy shaping the layout of the structure above rather than the other way round, an unusually literal case of architecture following an existing tree rather than clearing space for a new one. They are not the tallest or thickest trees in Breda; the courtyard is small and the trees have grown accordingly. Their claim to being the city's oldest rests on the documented planting date alone, which none of Breda's other candidate trees can currently match with the same specificity.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Breda's ancient trees free to visit?",
-      "a": "Yes, all four are in public parks or a public library courtyard with free access during opening hours."
+      "a": "Yes, all ten are in public parks or a public library courtyard with free access during opening hours."
     },
     {
       "q": "Why does a library in Breda have trees growing inside its courtyard?",
@@ -169,6 +169,196 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise it by the size, twenty-five metres tall and 5.70 metres round, a giant sequoia planted in 1885. It stands in Laurenspark on the Ulvenhoutselaan, in the Ginneken district south of the centre."
+    },
+    {
+      "id": "bre_005",
+      "name": "The Weeping Beech of Wilhelminapark",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890 to 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Wilhelminapark, west side of the pond, Breda",
+        "latitude": 51.58039,
+        "longitude": 4.78003,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "story": "The lowest branches of this beech touch the ground and can root back into it, so what looks like one tree is quietly capable of becoming a ring of them.\n\nThat habit is what a weeping beech does when nobody stops it. The straight trunk throws its branches out and down instead of up, and where a branch tip lies against damp soil for long enough it can strike its own roots, a trick foresters call layering. Duck under the canopy at Wilhelminapark's western pond edge and you are standing inside a room the tree built for itself, walled by drooping branches on every side and lit green through the leaves.\n\nThe register puts its planting in the 1890s, which makes it a First World War contemporary standing quietly in a park that also holds a Polish war memorial and a captured German tank nearby. Nobody has recorded its age more precisely than the decade it was planted, and a trunk this size does not need a precise number to be worth ducking into.\n\nFree, public park, open daily.\n\nCome in winter if you want to see the architecture. Bare, the cascading branch structure of a weeping beech reads more dramatic than in full leaf, when the canopy is one solid green mass instead of a hundred draped ribs.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Branches that arch down and touch the soil on every side, forming a green tent you can walk into, on the pond's west edge.",
+      "best_time": {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "winter, when the bare branches show the tent-like cascade"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bre_006",
+      "name": "The Caucasian Wingnut of Vijverstraat",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890 to 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Wilhelminapark 13 / Vijverstraat corner, Breda",
+        "latitude": 51.580533,
+        "longitude": 4.780282,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "story": "This wingnut carries its seeds in chains that can run half a metre long, dozens of winged nuts strung like beads down a single stalk.\n\nPterocarya fraxinifolia is a Caucasian native in the same family as the walnut, and it shows: crush a leaf and the smell is unmistakably a walnut cousin's. It throws up multiple trunks from the base rather than one clean stem, which is normal for the species rather than damage, and it grows fast enough that a specimen planted in the late nineteenth century can already dwarf a chestnut planted the same decade.\n\nBreda has two of these registered within a kilometre of each other, this one on the Vijverstraat corner of Wilhelminapark, the other across town in Valkenberg beside the castle grounds. This is the more sheltered of the pair, tucked among the park's older plantings rather than standing in the open.\n\nThe register bands its planting to 1890 to 1900, putting it past its first century. No girth has been recorded.\n\nFree, public park, open daily.\n\nLook for the seed chains from midsummer into autumn. Nothing else in a Dutch park hangs quite like this.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The more sheltered of Breda's two registered wingnuts, multi-stemmed from the base, on the Vijverstraat corner of the park.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bre_007",
+      "name": "The Silver Lime of the Stone Bench",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 156 to 166 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Wilhelminapark, middle of the southern section near the stone bench, Breda",
+        "latitude": 51.580262,
+        "longitude": 4.781687,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "story": "Turn one of this lime's leaves over and the underside is a soft, felted silver, which is where the species gets its name and why the whole crown seems to flicker when wind moves through it.\n\nTilia tomentosa is planted across Dutch parks for exactly that effect: from a distance a silver lime in a breeze looks like it is catching light no other tree nearby is catching. This one stands in the middle of Wilhelminapark's southern section, near a stone bench that has clearly been positioned to sit under it rather than merely beside it.\n\nThe register dates its planting to the 1860s, making it the oldest of several silver limes recorded in this park and one of the older trees in central Breda still standing where it was planted. It flowers later than most limes, into July, and the scent from a tree this size carries well past the bench.\n\nFree, public park, open daily.\n\nCome in July for the flowering. The rest of the year it is a fine shade tree; for two or three weeks in high summer it is the most fragrant spot in the park.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The oldest of the park's several silver limes, standing over a stone bench positioned to sit beneath it.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when it flowers late and the scent fills this end of the park"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bre_008",
+      "name": "The Beech of Paul Withausenweg",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890 to 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Wilhelminapark, middle section along Paul Withausenweg, Breda",
+        "latitude": 51.583121,
+        "longitude": 4.784589,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "story": "This is the plain, green-leaved beech among a park that otherwise favours its copper and weeping cousins, which makes it the least conspicuous registered tree in Wilhelminapark and one of the largest.\n\nFagus sylvatica is the wild-type European beech, the species every ornamental copper and weeping form has been bred from, and left to grow straight and green it does the thing beeches do best: a dense, smooth-barked trunk holding up a crown so complete that almost nothing grows in the deep shade beneath it. In the park's middle section, along the Paul Withausenweg, it stands among younger, more colourful plantings without competing for attention.\n\nThe register bands its planting to 1890 to 1900, putting it just past its first century and a quarter. No girth has been recorded.\n\nFree, public park, open daily.\n\nThere is no single dramatic month for a green beech the way there is for its copper relatives elsewhere in this park. Autumn brings a plain gold rather than the copper's colour, but the trunk and the shade it throws are worth the visit at any time of year.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The plain green-leaved beech among the park's copper and weeping forms, along the Paul Withausenweg.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bre_009",
+      "name": "The Tallest Oak of Valkenberg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Valkenberg park, near the J.F. Kennedylaan, Breda",
+        "latitude": 51.591375,
+        "longitude": 4.777789,
+        "neighbourhood": "Valkenberg"
+      },
+      "story": "The register itself calls this the tallest pedunculate oak in Valkenberg, which is a real claim rather than a guess, since somebody with the right instrument had to measure every registered oak in the park to say so.\n\nQuercus robur is the oak native to this part of Europe, the one an acorn falling in October will grow into if left alone, and Valkenberg has several registered specimens. This one has simply outgrown its neighbours, reaching well above the park's tree line near the J.F. Kennedylaan side of the grounds.\n\nThe register bands its planting to 1880 to 1890, so it has had roughly a century and a half to win that height. No further age detail and no girth are recorded.\n\nFree, public park, open daily. Valkenberg is Breda's central city park, beside the castle grounds.\n\nThere is no single dramatic month for an oak like this. It is worth finding for the same reason it was measured: to stand under the tallest one and see, by comparison, how much smaller the rest of the park's oaks actually are.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "transport": "Central Breda, beside Breda Castle; 10 minute walk from Breda railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The register's own tallest pedunculate oak in the park, standing above the surrounding tree line near the J.F. Kennedylaan.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bre_010",
+      "name": "The Plane of Valkenberg's Edge",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Willemstraat / John F. Kennedylaan, edge of Valkenberg park, Breda",
+        "latitude": 51.592324,
+        "longitude": 4.781155,
+        "neighbourhood": "Valkenberg"
+      },
+      "story": "This plane's bark comes away in patches the size of a hand, which is not disease. London planes shed their bark in irregular plates because the trunk cannot expand fast enough to keep an unbroken skin, and the patchwork of grey, green and cream underneath is the tree's normal, healthy state.\n\nIt stands on the western rim of Valkenberg, at the corner where the park gives way to the Willemstraat and the John F. Kennedylaan, which is why it registers to a slightly different address than the trees deeper in the park despite being part of the same grounds.\n\nThe register bands its planting to the 1880s, and London planes of that age are common street and park trees across the Netherlands precisely because they tolerate compacted soil and traffic pollution better than almost anything else that gets this large. That toughness, not rarity, is the reason to notice it: a tree planted for a hard job that has quietly outlived every reason it was chosen for.\n\nFree, public park, open daily.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "transport": "Central Breda, beside Breda Castle; 10 minute walk from Breda railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The plane standing at the park's western edge, where Valkenberg gives way to the Willemstraat corner.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
