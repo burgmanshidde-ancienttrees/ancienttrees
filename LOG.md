@@ -1,6 +1,65 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation 10, previous attempt stopped after 22 min with 98 min unspent) - Finished the standing Helmond/Ottawa claims; Ottawa gains a second cluster, Helmond gains nothing real
+
+Inherited two standing register-verify claims from the previous attempt
+(helmond, ottawa), both still within their 4-hour expiry, plus 613/156
+register candidates already staged in data/research/. Dispatched a verify
+pass on each in parallel rather than re-orienting from scratch.
+
+Ottawa's pass found a genuine second cluster in the Dominion Arboretum,
+10-15 minutes from the existing Dow's Lake stop: a documented 1921 jack
+pine (the species Tom Thomson painted), a dawn redwood, a rare swamp white
+oak, a rock elm (one of only three elms native to Canada) and a bitternut
+hickory documented to an 1886-1890 planting window, which turns out to be
+the oldest reliably-dated tree in the city, older than the six trees
+previously tied at "roughly 125 years". Wrote all five, merged as
+ott_015-019, and rewrote the city's intro, meta description and the
+oldest-tree Q&A/FAQ to cover all 19 trees and the hickory's stronger claim
+honestly (words/chars re-checked against Contract B and C's exact limits
+after every edit). Added `why_go` to the three weakest of the five so none
+of them ships on age alone.
+
+Helmond's pass was a wasted 75k tokens: all 5 "new" candidates it verified
+(hlm_019-023) turned out to be exact-coordinate duplicates of five already-
+published trees (hlm_011/012/013/015/018), same register ids under new
+names. passcheck's own "unmined" filter didn't catch these; they weren't
+among the ones the printed brief flagged "within 80m of a live tree". The
+write pass caught it via `passcheck.py --pending` before writing duplicate
+prose (the rulebook working as designed), so nothing bad shipped, but the
+verify tokens were spent for nothing. Recorded as duplicate entries in
+data/leads/helmond.json with the register ids named, and as a `brief_wrong`
+line in data/agent-costs.json, so the same register rows aren't re-mined.
+
+Also ran a photo-judge pass on the 4-candidate shortlist from
+`photo_gaps.py --shortlist` (Tilburg, Helmond, Budapest, Kamakura): all 7
+candidate/tree pairs judged and rejected, correctly, none had the right
+tree (or any tree at all) as its subject. One found a park information
+plaque, another a shopping street 740m from the actual cemetery, two more
+the wrong temple at dusk. Zero photos shipped, which is the honest answer,
+not a failure of the pass. `photo_light.py` doesn't run on Linux (shells
+out to macOS's `sips`); the agent ported its scoring onto the site's own
+`sharp` dependency rather than skip the exposure check.
+
+Ran `preflight.py` clean across the corpus while I had eyes on it and fixed
+six country pages whose `meta_description` quoted stale city/tree counts
+left over from cities added since (Austria, Czech Republic, Italy, Spain,
+Switzerland, United States: all one-line number fixes, no prose changed).
+Checked REVIEW.md's two 2026-09-11 WARNs and confirmed both were already
+fixed by an earlier commit in this window (ef66e113a) before I got to them.
+
+Rung 2 was red at the start (iOS app workflow failing on a small layout
+DRIFT in the search field, `<11pt`, from a fix already in flight on a push
+that was still running). Waited it out rather than guessing a blind fix
+with no simulator in this sandbox: the push resolved it, iOS app is green.
+
+Build, qa.py, superlatives.py and tree_index.py regeneration all clean.
+Committed and pushed as one commit; both claims released. Week budget was
+at 4790/5000 minutes by the end of this attempt, which is why this run
+stops here rather than opening new coverage: the ceiling that matters is
+weekly, not this window's remaining 60-odd minutes.
+
 ## 2026-09-11 (continuation 9, previous attempt stopped after 64 min with 56 min unspent) - Finished inherited Rome/Hallstatt work, fixed a live iOS layout bug
 
 Inherited a standing Rome verify claim and uncommitted work in both Rome and
