@@ -62,8 +62,8 @@
       "at": "2026-09-12T08:20:50+00:00"
     },
     "2026-09-12": {
-      "note": "The '1 trees' grammar WARN (Home.swift:720) was already fixed by another session's commit ced016040 (shared helper), confirmed present on main.",
-      "at": "2026-09-12T16:42:46+00:00"
+      "note": "The '1 trees' WARN (Home.swift CityView/homepage shelf) was already fixed: both call sites now use treesLabel(count), confirmed at Home.swift:538 and :720, commit 94a9310c.",
+      "at": "2026-09-12T20:07:49+00:00"
     }
   }
 }
