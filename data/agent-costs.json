@@ -7672,6 +7672,33 @@
         "note": "Deepen pass on Nolenspark LRMB cluster: 1 verified (maa_019, Ginkgo of Mgr. Nolenspark, flagged single-source), 2 new blocked (Bruine beuk/Stokstraat and Witte paardenkastanje 0.7km, both private/institutional gardens), 1 new lead (Japanse notenboom kandelaber/Bredestraat, access unclear), Zilverlinde pair left as pre-existing lead (redundant with published maa_009). Confirmed several 'within 80m' flagged register rows were already-published trees (maa_008/009/010/018) via exact-coordinate match.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Tallinn",
+        "kind": "verify",
+        "tokens": 187438,
+        "trees": 2,
+        "note": "Kadriorg guardhouse oak + Kopli cemetery park oak, from a single-sourced 2017 Postimees dendrologist ranking; a third named lead (Presidential Palace oak) blocked on access",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Tallinn",
+        "kind": "write",
+        "tokens": 139302,
+        "trees": 2,
+        "note": "stories + recognition lines for the 2 verified trees, plus city page-copy counts fixed from six/six to eight throughout (intro, meta, question_meta, question_context, 2 FAQ)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Lausanne/Breda",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 1,
+        "note": "viewing pass on the 2-city shortlist from photo_gaps.py: approved the Napoleon Oak (geotag confirms identity), rejected both Breda weeping-beech candidates (address-matched house facade and a facade plaque, not the tree)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
