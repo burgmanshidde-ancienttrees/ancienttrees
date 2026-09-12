@@ -1434,12 +1434,21 @@ def check_no_personal_address():
 # Both lists are deliberately short: this check is about whether a FEATURE
 # reached a language, not about whether two pages are byte-identical.
 LANGS = ["es", "it", "nl", "de", "pt", "fr", "ja"]
-CONTROLS = {
+# PARTS rather than controls since 2026-09-12: the recognition line and the
+# season chip are not things you tap, and a reader loses just as much when they
+# are absent. What is deliberately NOT on this list is anything that merely
+# renders differently (the nearby trees are photo cards in English and a
+# compact list in the other seven, the tree bar uses different class names):
+# a different design is a per-surface decision, a missing part is a gap.
+PARTS = {
     "worthit-btn": "the worth-it vote",
     "save-btn": "the save heart",
     "share-btn": "the share button",
     "report-btn": "the report link",
     "dir-link": "the directions button",
+    "app-pitch": "the app block",
+    "which-one": "the recognition line",
+    "best-now-inline": "the season chip",
 }
 # A question page's slug is translated, so its twin cannot be found by path.
 QUESTION_SLUGS = {
@@ -1482,7 +1491,7 @@ def check_every_language_gets_the_same_controls():
     gaps_file = root / "data" / "lang-gaps.json"
     if gaps_file.is_file():
         for e in json.loads(gaps_file.read_text(encoding="utf-8")).get("open", []):
-            allow.add((e.get("control"), e.get("page_kind")))
+            allow.add((e.get("part"), e.get("page_kind")))
     found = {}
     for lang in LANGS:
         lang_root = DIST / lang
@@ -1500,7 +1509,7 @@ def check_every_language_gets_the_same_controls():
                 continue
             en = twin.read_text(encoding="utf-8", errors="ignore")
             tr = page.read_text(encoding="utf-8", errors="ignore")
-            for marker in CONTROLS:
+            for marker in PARTS:
                 if marker in en and marker not in tr:
                     key = (marker, kind)
                     if key in allow:
@@ -1510,7 +1519,7 @@ def check_every_language_gets_the_same_controls():
         out.append("%s is on the English %s page and missing from %d translated "
                    "one(s), e.g. %s. Ship it in all seven languages or record "
                    "it in data/lang-gaps.json with what is missing and why."
-                   % (CONTROLS[marker], kind, len(pages), ", ".join(sorted(pages)[:3])))
+                   % (PARTS[marker], kind, len(pages), ", ".join(sorted(pages)[:3])))
     return out
 
 

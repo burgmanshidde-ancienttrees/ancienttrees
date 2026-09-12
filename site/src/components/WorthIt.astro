@@ -1,4 +1,5 @@
 ---
+import { ui } from "../lib/i18n";
 // "Worth the visit?" — a vote, and beside it a separate way to report a problem.
 //
 // Split apart 2026-08-16 on Hidde's instruction: "je kunt een boom niet leuk
@@ -40,42 +41,67 @@
 // Both halves carry the tree on their own box, because worthit-js.ts scopes
 // everything to the nearest `.worthit` and reads the tree from it; the vote
 // state is shared per tree, so the two boxes never disagree.
+//
+// SEVEN LANGUAGES SINCE 2026-09-12. Every string below used to be typed into
+// this markup in English, which is why the control could only ever appear on
+// English pages: putting it on a translated one would have shipped English
+// chips under a Dutch heading. Hidde, told the vote was on none of the 907
+// translated tree pages: "zet het op de vertaalde pagina's alles consistent."
+// Nothing about the control changed, and no new copy was written: the English
+// strings moved into UIStrings unaltered and were translated from there.
 interface Props {
   treeId: string;
   city: string;
   treeName: string;
   compact?: boolean;
   part?: "vote" | "report";
+  /** The page's language. Defaults to English, so every existing call site
+   * keeps the words it already had. */
+  lang?: string;
 }
-const { treeId, city, treeName, compact = false, part } = Astro.props;
+const { treeId, city, treeName, compact = false, part, lang = "en" } = Astro.props;
+const U = ui(lang);
+const REASONS = [
+  { reason: "dead or gone", label: U.worthDead, q: U.worthDeadQ, ph: U.worthDeadPh },
+  { reason: "wrong location", label: U.worthWrongLoc, q: U.worthWrongLocQ, ph: U.worthWrongLocPh },
+  { reason: "could not tell which tree", label: U.worthWhichTree, q: U.worthWhichTreeQ, ph: U.worthWhichTreePh },
+  { reason: "could not reach it", label: U.worthCouldNotReach, q: U.worthCouldNotReachQ, ph: U.worthCouldNotReachPh },
+  { reason: "something else", label: U.worthSomethingElse, q: U.worthSomethingElseQ, ph: U.worthSomethingElsePh },
+];
 const showVote = part !== "report";
 const showReport = part !== "vote";
 const cls = ["worthit", compact ? "worthit-compact" : "", part === "vote" ? "worthit-inline" : ""].filter(Boolean).join(" ");
 ---
-<div class={cls} data-tree={treeId} data-city={city} data-name={treeName}>
+{/* The second thanks travels on the box rather than living in
+    worthit-js.ts: a string inside the script is a string in one
+    language, and this control now renders in eight (2026-09-12). */}
+<div class={cls} data-tree={treeId} data-city={city} data-name={treeName}
+     data-thanks-detail={U.worthThanksDetail}>
   <div class="worthit-row">
     {showVote && (
-      <button type="button" class="worthit-btn" data-vote="up" aria-label={`Yes, ${treeName} was worth the visit`}>👍</button>
+      <button type="button" class="worthit-btn" data-vote="up" aria-label={U.worthVote(treeName)}>👍</button>
     )}
     {showReport && (
-      <button type="button" class="worthit-report" aria-expanded="false">Something's wrong</button>
+      <button type="button" class="worthit-report" aria-expanded="false">{U.worthReport}</button>
     )}
   </div>
   {showReport && (
     <Fragment>
       <div class="worthit-why" hidden>
-        <span class="worthit-q">What's wrong?</span>
-        <button type="button" class="worthit-chip" data-reason="dead or gone" data-q="What did you find there? (optional)" data-ph="A stump, a fallen trunk, nothing at all, and when you were there">It's dead or gone</button>
-        <button type="button" class="worthit-chip" data-reason="wrong location" data-q="Where is it really? (optional)" data-ph="A street corner, a landmark, or paste a maps pin">Wrong location</button>
-        <button type="button" class="worthit-chip" data-reason="could not tell which tree" data-q="Which one did you look at? (optional)" data-ph="The thicker trunk, the one nearest the path, the one by the bench">Couldn't tell which tree</button>
-        <button type="button" class="worthit-chip" data-reason="could not reach it" data-q="What stopped you? (optional)" data-ph="A locked gate, a fence, opening hours, private land">Couldn't reach it</button>
-        <button type="button" class="worthit-chip" data-reason="something else" data-q="Tell us in a line." data-ph="What we got wrong, or what we are missing">Something else</button>
+        <span class="worthit-q">{U.worthWhatsWrong}</span>
+        {/* data-reason stays ENGLISH in every language on purpose: it is the
+            value written to the submissions table, where Step 0b reads it and
+            groups reports by kind. Translating it would split one report kind
+            into seven. Only what the reader sees is looked up. */}
+        {REASONS.map((r) => (
+          <button type="button" class="worthit-chip" data-reason={r.reason} data-q={r.q} data-ph={r.ph}>{r.label}</button>
+        ))}
       </div>
-      <span class="worthit-thanks" hidden>Thanks, we'll check it.</span>
+      <span class="worthit-thanks" hidden>{U.worthThanks}</span>
       <form class="worthit-detail" hidden>
-        <label class="worthit-q" for={`wd-${treeId}`}>Anything that helps us check? (optional)</label>
+        <label class="worthit-q" for={`wd-${treeId}`}>{U.worthDetailLabel}</label>
         <textarea id={`wd-${treeId}`} rows="2" placeholder=""></textarea>
-        <button type="submit" class="worthit-chip">Send</button>
+        <button type="submit" class="worthit-chip">{U.worthSend}</button>
       </form>
     </Fragment>
   )}
