@@ -58,8 +58,8 @@
       "at": "2026-09-09T08:37:25+00:00"
     },
     "2026-09-11": {
-      "note": "Both WARNs already fixed in code before this run started (verified against a fresh build): PhotoFigure.astro/creditText already return null for reader-app photos with no attribution (no empty 'Photo: ' figcaption renders), and [tree].astro already has the nameEchoesSpecies guard so Manchester/Munich titles no longer self-repeat. Confirmed by grepping dist/kyoto/twisted-muku-of-omiya-gate-kyoto-gyoen.html (no figcaption) and dist/manchester/amur-cork-tree.html, dist/manchester/adams-laburnum.html, dist/munich/fern-leaved-beech.html (clean titles).",
-      "at": "2026-09-12T00:26:07+00:00"
+      "note": "Both WARNs verified already fixed in current code/build: PhotoFigure.astro/TreeCard.astro guard null creditText so no empty 'Photo: ' figcaption renders (checked kyoto/baarn pages, none present); [tree].astro's nameEchoesSpecies check already drops the duplicated species clause (Manchester Amur Cork Tree, Adam's Laburnum, Munich Fern-leaved Beech all title correctly). No code change needed.",
+      "at": "2026-09-12T08:20:50+00:00"
     }
   }
 }

@@ -122,6 +122,16 @@ export interface UIStrings {
   sendIt: string;
   walkRoutes: string;
   inTheApp: string;
+  /** The app block that sits low on tree and city pages. Translated on
+   *  2026-09-12: it was English-only, so a reader who had read a whole page
+   *  in their language met the one paragraph asking something of them in
+   *  another. Translation of the copy already on the English page, not new
+   *  copy. PRODUCT_COPY.md still governs the English. */
+  appPitchTreeTitle: string;
+  appPitchTreeBody: string;
+  appPitchCityTitle: string;
+  appPitchCityBody: string;
+  getTheApp: string;
   whereAmI: string;
   cardMore: string;
   cardSave: string;
@@ -149,6 +159,13 @@ export interface UIStrings {
    *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
    *  Viewer puts one click further in: the original file at full resolution. */
   photoOpen: string;
+  /** Paging through a tree's photographs, added 2026-09-12 when trees gained
+   *  more than one. `photoNumber` is both the counter in the lightbox and the
+   *  label on a thumbnail, so a screen reader hears "Photograph 2 of 3" rather
+   *  than a second unnamed button. */
+  photoPrev: string;
+  photoNext: string;
+  photoNumber: (n: number, total: number) => string;
   /** The alt text on Apple's App Store badge, added 2026-09-03. It says what
    * the control DOES, because a screen reader announcing "Download on the App
    * Store badge" describes a picture rather than an action. */
@@ -213,6 +230,45 @@ export interface UIStrings {
   nearbyTrees: string;
   somethingWrong: string;
   suggestAnother: string;
+  /** The share control's accessible name. */
+  share: string;
+  /** What the share button says after it has copied the link, for the
+   *  browsers with no system share sheet. Heard rather than read, and still
+   *  one of seven languages. */
+  shareCopied: string;
+  /** The link in the help block. It says what it does rather than naming a
+   *  fault, because the worth-it control right above it already asks about
+   *  faults and two entry points for one intent is how the English page read
+   *  until 2026-09-11. */
+  correctDetail: string;
+  /** The worth-it control, ported to the other seven languages on 2026-09-12.
+   *  Every string here is a TRANSLATION of copy that was already on the
+   *  English page, never new copy: the control itself is unchanged. */
+  worthVote: (treeName: string) => string;
+  worthReport: string;
+  worthWhatsWrong: string;
+  worthDead: string;
+  worthDeadQ: string;
+  worthDeadPh: string;
+  worthWrongLoc: string;
+  worthWrongLocQ: string;
+  worthWrongLocPh: string;
+  worthWhichTree: string;
+  worthWhichTreeQ: string;
+  worthWhichTreePh: string;
+  worthCouldNotReach: string;
+  worthCouldNotReachQ: string;
+  worthCouldNotReachPh: string;
+  worthSomethingElse: string;
+  worthSomethingElseQ: string;
+  worthSomethingElsePh: string;
+  worthThanks: string;
+  /** The second thanks, after the optional detail has been sent. It is a
+   *  different sentence from worthThanks on purpose: the reader has now given
+   *  us something to work with. */
+  worthThanksDetail: string;
+  worthDetailLabel: string;
+  worthSend: string;
   actions: string;
   sendYours: string;
   willAppear: string;
@@ -252,6 +308,11 @@ const EN: UIStrings = {
   sendIt: "Send it to us",
   walkRoutes: "Walking routes",
   inTheApp: "in the app",
+  appPitchTreeTitle: "Collect the trees you stand in front of",
+  appPitchTreeBody: "Ticking this one off, walks past several more, and your collection growing city by city: that is the Ancient Trees app.",
+  appPitchCityTitle: "Walk them with the app",
+  appPitchCityBody: "The walking routes, your saved trees, and the collection of the ones you have stood in front of: the Ancient Trees app.",
+  getTheApp: "Get the app",
   whereAmI: "Where am I",
   cardMore: "Read more and get directions \u2192",
   cardSave: "Save",
@@ -268,6 +329,9 @@ const EN: UIStrings = {
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
   photoOpen: "Open the photograph",
+  photoPrev: "Previous photograph",
+  photoNext: "Next photograph",
+  photoNumber: (n, total) => `Photograph ${n} of ${total}`,
   appStoreBadge: "Get Ancient Trees on the App Store",
   openInApp: "Open in the app",
   androidTitle: "We are working on the Android app",
@@ -323,6 +387,31 @@ const EN: UIStrings = {
   nearbyTrees: "Nearby trees",
   somethingWrong: "Something here is wrong",
   suggestAnother: "Suggest another tree",
+  share: "Share",
+  shareCopied: "Link copied",
+  correctDetail: "Correct a detail on this page",
+  worthVote: (n) => `Yes, ${n} was worth the visit`,
+  worthReport: "Something's wrong",
+  worthWhatsWrong: "What's wrong?",
+  worthDead: "It's dead or gone",
+  worthDeadQ: "What did you find there? (optional)",
+  worthDeadPh: "A stump, a fallen trunk, nothing at all, and when you were there",
+  worthWrongLoc: "Wrong location",
+  worthWrongLocQ: "Where is it really? (optional)",
+  worthWrongLocPh: "A street corner, a landmark, or paste a maps pin",
+  worthWhichTree: "Couldn't tell which tree",
+  worthWhichTreeQ: "Which one did you look at? (optional)",
+  worthWhichTreePh: "The thicker trunk, the one nearest the path, the one by the bench",
+  worthCouldNotReach: "Couldn't reach it",
+  worthCouldNotReachQ: "What stopped you? (optional)",
+  worthCouldNotReachPh: "A locked gate, a fence, opening hours, private land",
+  worthSomethingElse: "Something else",
+  worthSomethingElseQ: "Tell us in a line.",
+  worthSomethingElsePh: "What we got wrong, or what we are missing",
+  worthThanks: "Thanks, we'll check it.",
+  worthThanksDetail: "Thanks, that helps.",
+  worthDetailLabel: "Anything that helps us check? (optional)",
+  worthSend: "Send",
   actions: "Actions",
   sendYours: "Send us yours",
   willAppear: "and it will appear on this page.",
@@ -385,6 +474,31 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearbyTrees: "Árboles cercanos",
     somethingWrong: "Aquí hay algo mal",
     suggestAnother: "Sugerir otro árbol",
+    share: "Compartir",
+    shareCopied: "Enlace copiado",
+    correctDetail: "Corregir un detalle de esta página",
+    worthVote: (n) => `Sí, ${n} merecía la visita`,
+    worthReport: "Algo no está bien",
+    worthWhatsWrong: "¿Qué pasa?",
+    worthDead: "Está muerto o ya no está",
+    worthDeadQ: "¿Qué encontraste allí? (opcional)",
+    worthDeadPh: "Un tocón, un tronco caído, nada en absoluto, y cuándo estuviste",
+    worthWrongLoc: "Ubicación equivocada",
+    worthWrongLocQ: "¿Dónde está en realidad? (opcional)",
+    worthWrongLocPh: "Una esquina, un punto de referencia, o pega un pin del mapa",
+    worthWhichTree: "No supe cuál era",
+    worthWhichTreeQ: "¿Cuál miraste? (opcional)",
+    worthWhichTreePh: "El tronco más grueso, el más cercano al camino, el del banco",
+    worthCouldNotReach: "No pude llegar",
+    worthCouldNotReachQ: "¿Qué te lo impidió? (opcional)",
+    worthCouldNotReachPh: "Una verja cerrada, una valla, el horario, terreno privado",
+    worthSomethingElse: "Otra cosa",
+    worthSomethingElseQ: "Cuéntanoslo en una línea.",
+    worthSomethingElsePh: "En qué nos equivocamos, o qué nos falta",
+    worthThanks: "Gracias, lo comprobamos.",
+    worthThanksDetail: "Gracias, eso ayuda.",
+    worthDetailLabel: "¿Algo que nos ayude a comprobarlo? (opcional)",
+    worthSend: "Enviar",
     actions: "Acciones",
     sendYours: "Envíanos la tuya",
     willAppear: "y aparecerá en esta página.",
@@ -418,6 +532,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sendIt: "Env\u00edanoslo",
     walkRoutes: "Rutas a pie",
     inTheApp: "en la aplicaci\u00f3n",
+    appPitchTreeTitle: "Colecciona los árboles ante los que te plantas",
+    appPitchTreeBody: "Marcar este, rutas a pie que pasan por varios más y tu colección creciendo ciudad a ciudad: eso es la aplicación Ancient Trees.",
+    appPitchCityTitle: "Recórrelos con la aplicación",
+    appPitchCityBody: "Las rutas a pie, tus árboles guardados y la colección de aquellos ante los que ya te has plantado: la aplicación Ancient Trees.",
+    getTheApp: "Descargar la aplicación",
     whereAmI: "D\u00f3nde estoy",
     cardMore: "Leer m\u00e1s y c\u00f3mo llegar \u2192",
     cardSave: "Guardar",
@@ -434,6 +553,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir la fotografía",
+    photoPrev: "Fotografía anterior",
+    photoNext: "Fotografía siguiente",
+    photoNumber: (n, total) => `Fotografía ${n} de ${total}`,
     appStoreBadge: "Consigue Ancient Trees en el App Store",
     openInApp: "Abrir en la app",
     androidTitle: "Estamos trabajando en la app de Android",
@@ -491,6 +613,31 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearbyTrees: "Alberi nei dintorni",
     somethingWrong: "Qui c'è un errore",
     suggestAnother: "Segnala un altro albero",
+    share: "Condividi",
+    shareCopied: "Link copiato",
+    correctDetail: "Correggi un dettaglio di questa pagina",
+    worthVote: (n) => `Sì, ${n} valeva la visita`,
+    worthReport: "Qualcosa non va",
+    worthWhatsWrong: "Che cosa non va?",
+    worthDead: "È morto o non c'è più",
+    worthDeadQ: "Che cosa hai trovato lì? (facoltativo)",
+    worthDeadPh: "Un ceppo, un tronco caduto, niente del tutto, e quando ci sei stato",
+    worthWrongLoc: "Posizione sbagliata",
+    worthWrongLocQ: "Dov'è davvero? (facoltativo)",
+    worthWrongLocPh: "Un angolo di strada, un punto di riferimento, o incolla un pin della mappa",
+    worthWhichTree: "Non capivo quale fosse",
+    worthWhichTreeQ: "Quale hai guardato? (facoltativo)",
+    worthWhichTreePh: "Il tronco più grosso, quello vicino al sentiero, quello accanto alla panchina",
+    worthCouldNotReach: "Non sono riuscito ad arrivarci",
+    worthCouldNotReachQ: "Che cosa te lo ha impedito? (facoltativo)",
+    worthCouldNotReachPh: "Un cancello chiuso, una recinzione, gli orari, terreno privato",
+    worthSomethingElse: "Altro",
+    worthSomethingElseQ: "Raccontacelo in una riga.",
+    worthSomethingElsePh: "Che cosa abbiamo sbagliato, o che cosa ci manca",
+    worthThanks: "Grazie, controlliamo.",
+    worthThanksDetail: "Grazie, questo aiuta.",
+    worthDetailLabel: "Qualcosa che ci aiuti a verificare? (facoltativo)",
+    worthSend: "Invia",
     actions: "Azioni",
     sendYours: "Mandacela",
     willAppear: "e comparirà su questa pagina.",
@@ -524,6 +671,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sendIt: "Inviacelo",
     walkRoutes: "Percorsi a piedi",
     inTheApp: "nell'app",
+    appPitchTreeTitle: "Colleziona gli alberi davanti a cui ti fermi",
+    appPitchTreeBody: "Spuntare questo, camminate che ne toccano molti altri e la tua collezione che cresce città dopo città: questa è l'app Ancient Trees.",
+    appPitchCityTitle: "Percorrili con l'app",
+    appPitchCityBody: "Gli itinerari a piedi, i tuoi alberi salvati e la collezione di quelli davanti a cui ti sei già fermato: l'app Ancient Trees.",
+    getTheApp: "Scarica l'app",
     whereAmI: "Dove mi trovo",
     cardMore: "Leggi di pi\u00f9 e come arrivare \u2192",
     cardSave: "Salva",
@@ -540,6 +692,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Apri la fotografia",
+    photoPrev: "Fotografia precedente",
+    photoNext: "Fotografia successiva",
+    photoNumber: (n, total) => `Fotografia ${n} di ${total}`,
     appStoreBadge: "Scarica Ancient Trees su App Store",
     openInApp: "Apri nella app",
     androidTitle: "Stiamo lavorando alla app per Android",
@@ -597,6 +752,31 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearbyTrees: "Bomen in de buurt",
     somethingWrong: "Hier klopt iets niet",
     suggestAnother: "Nog een boom aandragen",
+    share: "Delen",
+    shareCopied: "Link gekopieerd",
+    correctDetail: "Een detail op deze pagina corrigeren",
+    worthVote: (n) => `Ja, ${n} was het waard`,
+    worthReport: "Er klopt iets niet",
+    worthWhatsWrong: "Wat klopt er niet?",
+    worthDead: "Hij is dood of weg",
+    worthDeadQ: "Wat trof je er aan? (optioneel)",
+    worthDeadPh: "Een stronk, een omgevallen stam, helemaal niets, en wanneer je er was",
+    worthWrongLoc: "Verkeerde locatie",
+    worthWrongLocQ: "Waar staat hij echt? (optioneel)",
+    worthWrongLocPh: "Een straathoek, een herkenningspunt, of plak een kaartpin",
+    worthWhichTree: "Ik wist niet welke boom",
+    worthWhichTreeQ: "Welke heb je bekeken? (optioneel)",
+    worthWhichTreePh: "De dikste stam, die het dichtst bij het pad, die bij het bankje",
+    worthCouldNotReach: "Ik kon er niet bij",
+    worthCouldNotReachQ: "Wat hield je tegen? (optioneel)",
+    worthCouldNotReachPh: "Een hek op slot, een schutting, openingstijden, privéterrein",
+    worthSomethingElse: "Iets anders",
+    worthSomethingElseQ: "Vertel het ons in één regel.",
+    worthSomethingElsePh: "Wat we fout hebben, of wat we missen",
+    worthThanks: "Dank je, we kijken ernaar.",
+    worthThanksDetail: "Dank je, daar hebben we wat aan.",
+    worthDetailLabel: "Iets wat ons helpt het na te gaan? (optioneel)",
+    worthSend: "Versturen",
     actions: "Acties",
     sendYours: "Stuur hem op",
     willAppear: "en hij komt op deze pagina.",
@@ -630,6 +810,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sendIt: "Stuur hem naar ons",
     walkRoutes: "Wandelroutes",
     inTheApp: "in de app",
+    appPitchTreeTitle: "Verzamel de bomen waar je voor hebt gestaan",
+    appPitchTreeBody: "Deze afvinken, wandelingen langs een stuk of wat andere, en je verzameling die per stad groeit: dat is de Ancient Trees-app.",
+    appPitchCityTitle: "Loop ze met de app",
+    appPitchCityBody: "De wandelroutes, je bewaarde bomen en de verzameling van de bomen waar je voor hebt gestaan: de Ancient Trees-app.",
+    getTheApp: "Download de app",
     whereAmI: "Waar ben ik",
     cardMore: "Lees meer en route \u2192",
     cardSave: "Bewaren",
@@ -646,6 +831,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Open de foto",
+    photoPrev: "Vorige foto",
+    photoNext: "Volgende foto",
+    photoNumber: (n, total) => `Foto ${n} van ${total}`,
     appStoreBadge: "Download Ancient Trees in de App Store",
     openInApp: "Openen in de app",
     androidTitle: "We werken aan de Android-app",
@@ -703,6 +891,31 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearbyTrees: "Bäume in der Nähe",
     somethingWrong: "Hier stimmt etwas nicht",
     suggestAnother: "Noch einen Baum vorschlagen",
+    share: "Teilen",
+    shareCopied: "Link kopiert",
+    correctDetail: "Ein Detail auf dieser Seite korrigieren",
+    worthVote: (n) => `Ja, ${n} war den Weg wert`,
+    worthReport: "Hier stimmt etwas nicht",
+    worthWhatsWrong: "Was stimmt nicht?",
+    worthDead: "Er ist tot oder weg",
+    worthDeadQ: "Was hast du dort vorgefunden? (optional)",
+    worthDeadPh: "Einen Stumpf, einen umgestürzten Stamm, gar nichts, und wann du da warst",
+    worthWrongLoc: "Falscher Standort",
+    worthWrongLocQ: "Wo steht er wirklich? (optional)",
+    worthWrongLocPh: "Eine Straßenecke, ein Orientierungspunkt, oder ein Karten-Pin",
+    worthWhichTree: "Ich wusste nicht, welcher",
+    worthWhichTreeQ: "Welchen hast du angesehen? (optional)",
+    worthWhichTreePh: "Den dickeren Stamm, den am Weg, den neben der Bank",
+    worthCouldNotReach: "Ich kam nicht hin",
+    worthCouldNotReachQ: "Was hat dich aufgehalten? (optional)",
+    worthCouldNotReachPh: "Ein verschlossenes Tor, ein Zaun, Öffnungszeiten, Privatgelände",
+    worthSomethingElse: "Etwas anderes",
+    worthSomethingElseQ: "Sag es uns in einer Zeile.",
+    worthSomethingElsePh: "Was wir falsch haben, oder was uns fehlt",
+    worthThanks: "Danke, wir sehen es uns an.",
+    worthThanksDetail: "Danke, das hilft.",
+    worthDetailLabel: "Etwas, das uns beim Prüfen hilft? (optional)",
+    worthSend: "Senden",
     actions: "Aktionen",
     sendYours: "Schick sie uns",
     willAppear: "und sie erscheint auf dieser Seite.",
@@ -736,6 +949,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sendIt: "Schicken Sie ihn uns",
     walkRoutes: "Wanderrouten",
     inTheApp: "in der App",
+    appPitchTreeTitle: "Sammle die Bäume, vor denen du gestanden hast",
+    appPitchTreeBody: "Diesen abhaken, Spaziergänge an mehreren weiteren vorbei und deine Sammlung, die Stadt für Stadt wächst: das ist die Ancient-Trees-App.",
+    appPitchCityTitle: "Lauf sie mit der App ab",
+    appPitchCityBody: "Die Spazierrouten, deine gespeicherten Bäume und die Sammlung derer, vor denen du gestanden hast: die Ancient-Trees-App.",
+    getTheApp: "App holen",
     whereAmI: "Wo bin ich",
     cardMore: "Mehr lesen und Anfahrt \u2192",
     cardSave: "Merken",
@@ -752,6 +970,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Foto öffnen",
+    photoPrev: "Vorheriges Foto",
+    photoNext: "Nächstes Foto",
+    photoNumber: (n, total) => `Foto ${n} von ${total}`,
     appStoreBadge: "Ancient Trees im App Store laden",
     openInApp: "In der App öffnen",
     androidTitle: "Wir arbeiten an der Android-App",
@@ -809,6 +1030,31 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearbyTrees: "Árvores por perto",
     somethingWrong: "Há aqui um erro",
     suggestAnother: "Sugerir outra árvore",
+    share: "Partilhar",
+    shareCopied: "Ligação copiada",
+    correctDetail: "Corrigir um detalhe desta página",
+    worthVote: (n) => `Sim, ${n} valeu a visita`,
+    worthReport: "Há aqui algo errado",
+    worthWhatsWrong: "O que está errado?",
+    worthDead: "Está morta ou já não existe",
+    worthDeadQ: "O que encontrou lá? (opcional)",
+    worthDeadPh: "Um cepo, um tronco caído, nada de nada, e quando lá esteve",
+    worthWrongLoc: "Localização errada",
+    worthWrongLocQ: "Onde está na realidade? (opcional)",
+    worthWrongLocPh: "Uma esquina, um ponto de referência, ou cole um pin do mapa",
+    worthWhichTree: "Não percebi qual era",
+    worthWhichTreeQ: "Qual delas viu? (opcional)",
+    worthWhichTreePh: "O tronco mais grosso, o mais perto do caminho, o do banco",
+    worthCouldNotReach: "Não consegui chegar",
+    worthCouldNotReachQ: "O que o impediu? (opcional)",
+    worthCouldNotReachPh: "Um portão fechado, uma vedação, horários, terreno privado",
+    worthSomethingElse: "Outra coisa",
+    worthSomethingElseQ: "Conte-nos numa linha.",
+    worthSomethingElsePh: "Aquilo em que erramos, ou o que nos falta",
+    worthThanks: "Obrigado, vamos verificar.",
+    worthThanksDetail: "Obrigado, isso ajuda.",
+    worthDetailLabel: "Algo que nos ajude a verificar? (opcional)",
+    worthSend: "Enviar",
     actions: "Ações",
     sendYours: "Envie-nos a sua",
     willAppear: "e aparecerá nesta página.",
@@ -842,6 +1088,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sendIt: "Envie-nos",
     walkRoutes: "Percursos a p\u00e9",
     inTheApp: "na aplica\u00e7\u00e3o",
+    appPitchTreeTitle: "Colecione as árvores diante das quais já esteve",
+    appPitchTreeBody: "Marcar esta, percursos a pé que passam por várias outras e a sua coleção a crescer cidade a cidade: é isso a aplicação Ancient Trees.",
+    appPitchCityTitle: "Percorra-as com a aplicação",
+    appPitchCityBody: "Os percursos a pé, as suas árvores guardadas e a coleção daquelas diante das quais já esteve: a aplicação Ancient Trees.",
+    getTheApp: "Obter a aplicação",
     whereAmI: "Onde estou",
     cardMore: "Ler mais e como chegar \u2192",
     cardSave: "Guardar",
@@ -858,6 +1109,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir a fotografia",
+    photoPrev: "Fotografia anterior",
+    photoNext: "Fotografia seguinte",
+    photoNumber: (n, total) => `Fotografia ${n} de ${total}`,
     appStoreBadge: "Obter Ancient Trees na App Store",
     openInApp: "Abrir na app",
     androidTitle: "Estamos a trabalhar na app para Android",
@@ -915,6 +1169,31 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearbyTrees: "Arbres à proximité",
     somethingWrong: "Il y a une erreur ici",
     suggestAnother: "Proposer un autre arbre",
+    share: "Partager",
+    shareCopied: "Lien copié",
+    correctDetail: "Corriger un détail de cette page",
+    worthVote: (n) => `Oui, ${n} valait le déplacement`,
+    worthReport: "Quelque chose ne va pas",
+    worthWhatsWrong: "Qu'est-ce qui ne va pas ?",
+    worthDead: "Il est mort ou disparu",
+    worthDeadQ: "Qu'avez-vous trouvé sur place ? (facultatif)",
+    worthDeadPh: "Une souche, un tronc tombé, rien du tout, et quand vous y étiez",
+    worthWrongLoc: "Mauvais emplacement",
+    worthWrongLocQ: "Où se trouve-t-il vraiment ? (facultatif)",
+    worthWrongLocPh: "Un coin de rue, un repère, ou collez un point de carte",
+    worthWhichTree: "Je ne savais pas lequel",
+    worthWhichTreeQ: "Lequel avez-vous regardé ? (facultatif)",
+    worthWhichTreePh: "Le tronc le plus épais, celui près du chemin, celui près du banc",
+    worthCouldNotReach: "Je n'ai pas pu y accéder",
+    worthCouldNotReachQ: "Qu'est-ce qui vous a arrêté ? (facultatif)",
+    worthCouldNotReachPh: "Un portail fermé, une clôture, les horaires, un terrain privé",
+    worthSomethingElse: "Autre chose",
+    worthSomethingElseQ: "Dites-le-nous en une ligne.",
+    worthSomethingElsePh: "Ce que nous avons faux, ou ce qui nous manque",
+    worthThanks: "Merci, nous allons vérifier.",
+    worthThanksDetail: "Merci, cela nous aide.",
+    worthDetailLabel: "Quelque chose qui nous aide à vérifier ? (facultatif)",
+    worthSend: "Envoyer",
     actions: "Actions",
     sendYours: "Envoyez-nous la vôtre",
     willAppear: "et elle apparaîtra sur cette page.",
@@ -948,6 +1227,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sendIt: "Envoyez-le-nous",
     walkRoutes: "Itin\u00e9raires \u00e0 pied",
     inTheApp: "dans l'application",
+    appPitchTreeTitle: "Collectionnez les arbres devant lesquels vous vous êtes tenu",
+    appPitchTreeBody: "Cocher celui-ci, des marches qui en longent plusieurs autres, et votre collection qui grandit ville après ville : voilà l'application Ancient Trees.",
+    appPitchCityTitle: "Parcourez-les avec l'application",
+    appPitchCityBody: "Les itinéraires à pied, vos arbres enregistrés et la collection de ceux devant lesquels vous vous êtes tenu : l'application Ancient Trees.",
+    getTheApp: "Obtenir l'application",
     whereAmI: "O\u00f9 suis-je",
     cardMore: "Lire la suite et l’acc\u00e8s \u2192",
     cardSave: "Enregistrer",
@@ -964,6 +1248,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     photoOpen: "Ouvrir la photographie",
+    photoPrev: "Photographie précédente",
+    photoNext: "Photographie suivante",
+    photoNumber: (n, total) => `Photographie ${n} sur ${total}`,
     appStoreBadge: "Télécharger Ancient Trees sur l'App Store",
     openInApp: "Ouvrir dans l'app",
     androidTitle: "Nous travaillons sur l'application Android",
@@ -1020,6 +1307,31 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearbyTrees: "近くの木",
     somethingWrong: "ここに誤りがある",
     suggestAnother: "別の木を教える",
+    share: "共有",
+    shareCopied: "リンクをコピーしました",
+    correctDetail: "このページの情報を直す",
+    worthVote: (n) => `${n}は行く価値がありました`,
+    worthReport: "何かがおかしい",
+    worthWhatsWrong: "何がおかしいですか",
+    worthDead: "枯れている、もうない",
+    worthDeadQ: "そこで何を見つけましたか（任意）",
+    worthDeadPh: "切り株、倒れた幹、何もなかった、行った時期",
+    worthWrongLoc: "場所が違う",
+    worthWrongLocQ: "本当はどこにありますか（任意）",
+    worthWrongLocPh: "交差点、目印、または地図のピン",
+    worthWhichTree: "どの木か分からなかった",
+    worthWhichTreeQ: "どの木を見ましたか（任意）",
+    worthWhichTreePh: "太いほうの幹、道に近いほう、ベンチのそば",
+    worthCouldNotReach: "たどり着けなかった",
+    worthCouldNotReachQ: "何に阻まれましたか（任意）",
+    worthCouldNotReachPh: "施錠された門、柵、開いている時間、私有地",
+    worthSomethingElse: "その他",
+    worthSomethingElseQ: "一行で教えてください",
+    worthSomethingElsePh: "こちらの誤り、または足りないこと",
+    worthThanks: "ありがとうございます。確認します。",
+    worthThanksDetail: "ありがとうございます。助かります。",
+    worthDetailLabel: "確認の手がかりになることはありますか（任意）",
+    worthSend: "送信",
     actions: "操作",
     sendYours: "写真を送る",
     willAppear: "と、このページに載る。",
@@ -1053,6 +1365,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sendIt: "\u304a\u9001\u308a\u304f\u3060\u3055\u3044",
     walkRoutes: "\u5f92\u6b69\u30eb\u30fc\u30c8",
     inTheApp: "\u30a2\u30d7\u30ea\u3067",
+    appPitchTreeTitle: "訪れた木を集める",
+    appPitchTreeBody: "この木にチェックを入れ、ほかの何本かを巡る散歩をして、街ごとにコレクションが増えていく。それがAncient Treesのアプリです。",
+    appPitchCityTitle: "アプリを持って歩く",
+    appPitchCityBody: "散歩コース、保存した木、そして実際に訪れた木のコレクション。Ancient Treesのアプリです。",
+    getTheApp: "アプリを入手",
     whereAmI: "\u73fe\u5728\u5730",
     cardMore: "\u8a73\u3057\u304f\u898b\u308b\u30fb\u884c\u304d\u65b9 \u2192",
     cardSave: "\u4fdd\u5b58",
@@ -1069,6 +1386,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     photoOpen: "写真を開く",
+    photoPrev: "前の写真",
+    photoNext: "次の写真",
+    photoNumber: (n, total) => `写真 ${n}/${total}`,
     appStoreBadge: "App StoreでAncient Treesを入手",
     openInApp: "アプリで開く",
     androidTitle: "Android版を開発中です",

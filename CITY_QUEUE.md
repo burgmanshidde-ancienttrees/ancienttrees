@@ -363,7 +363,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 166 | Zagreb | 6.42 | 122,890 | - | - | - | - | 10 | predicted (travel demand) |
 | 167 | Ljubljana | 6.41 | 125,046 | 4 | - | 1 | - | 30 | measured |
 | 168 | Toronto | 6.41 | 411,011 | 6 | - | - | - | 30 | measured |
-| 169 | Warsaw | 4.28 | 197,929 | 26 | 3 | 3 | 1408 | 30 | measured |
+| 169 | Warsaw | 4.28 | 197,929 | 28 | 3 | 4 | 1407 | 30 | measured |
 | 170 | Bogota | 6.39 | 1,623 | - | - | - | - | 10 | predicted (travel demand) |
 | 171 | Shanghai | 6.38 | 277,140 | - | - | - | - | 10 | predicted (travel demand) |
 | 172 | Dubrovnik | 5.94 | 119,586 | 4 | 1 | - | 2 | 20 | measured |
@@ -401,9 +401,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 204 | Heraklion | 4.96 | 66,359 | - | - | - | - | 10 | predicted (travel demand) |
 | 205 | Marseille | 4.96 | 182,033 | - | - | - | - | 10 | predicted (travel demand) |
 | 206 | Christchurch | 4.83 | 104,874 | - | - | - | - | 10 | predicted (travel demand) |
-| 207 | Genoa | 2.61 | 145,206 | 13 | 2 | 1 | 10 | 20 | measured |
-| 208 | Kanazawa | 3.09 | 25,778 | 7 | 2 | 1 | 2 | 20 | measured |
-| 209 | Belfast | 4.75 | 224,315 | 4 | - | 1 | - | 20 | measured |
+| 207 | Kanazawa | 3.09 | 25,778 | 7 | 2 | 1 | 2 | 20 | measured |
+| 208 | Belfast | 4.75 | 224,315 | 4 | - | 1 | - | 20 | measured |
+| 209 | Genoa | 2.61 | 145,206 | 13 | 2 | 1 | 10 | 20 | measured |
 | 210 | Nagoya | 3.09 | 83,437 | 6 | 1 | - | 1 | 20 | measured |
 | 211 | Zurich | 4.51 | 140,788 | 6 | - | - | - | 20 | measured |
 | 212 | Indianapolis | 4.57 | - | 1 | - | - | - | 10 | published, never ranked (may be uncrawled) |

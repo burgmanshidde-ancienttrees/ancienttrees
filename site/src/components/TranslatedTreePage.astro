@@ -11,13 +11,15 @@ import SaveHeart from "./SaveHeart.astro";
 import SeenButton from "./SeenButton.astro";
 import WorthIt from "./WorthIt.astro";
 import SignInModal from "./SignInModal.astro";
+import ShareButton from "./ShareButton.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
+import { SHARE_JS } from "../lib/share-js";
 import { WORTHIT_JS } from "../lib/worthit-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
-import { usablePhoto, thumbUrl } from "../lib/images";
+import { usablePhotos, thumbUrl } from "../lib/images";
 import PhotoFigure from "./PhotoFigure.astro";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -85,7 +87,10 @@ const crumbItems: [string, string | null][] = [
   [x.name, null],
 ];
 
-const photo = usablePhoto(tree);
+const shots = usablePhotos(tree);
+// Same set as the English twin, because the photographs are the tree's rather
+// than the page's. Only the labels are looked up.
+const photo = shots[0] ?? null;
 let ogImage = "";
 if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(thumbUrl(photo.url, 1200))}">`;
 
@@ -107,14 +112,14 @@ const headExtra = mapHead() + ogImage + "\n" + hreflangForCity(cslug, "tree", ts
 // the canonical city file and are identical in every language. Only the
 // heading and the line above them are looked up.
 const sources = treeSources(tree);
-// THE HEART ON THIS PAGE HAD NO SCRIPT BEHIND IT. TREE_ACTIONS_JS and
+// THE HEART ON THIS PAGE HAD NO SCRIPT BEHIND IT EITHER. TREE_ACTIONS_JS and
 // SIGNIN_JS were imported at the top of this file and never put in the slot,
 // so every translated tree page rendered a save button that painted nothing
-// and did nothing, in seven languages. Found 2026-09-12 while wiring the tick.
-// It is the same fault the 2026-08-14 audit found on the Spanish city page,
-// and the reason TreeCard and SeenButton are components rather than markup.
+// and did nothing, in seven languages. Found 2026-09-12 while wiring the tick,
+// the same hour another session found the vote and the share button inert for
+// the same reason. Both halves are here: the list is now the English page's.
 const scripts = singlePinScript(loc.latitude!, loc.longitude!)
-  + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS;
+  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS;
 // The bare number, and a cap on the prose fallback. Same rule as the English
 // page: the label carries the unit, and an age_estimate that runs to a
 // sentence is cut at its first clause, because everything after the comma is
@@ -134,7 +139,7 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
         picture first and full bleed, facts in one card, the closing paragraph
         as chips. Only the labels are looked up; the shape is the shape. */}
     {photo && photo.url ? (
-      <PhotoFigure photo={photo} alt={x.name} lang={lang} variant="hero"
+      <PhotoFigure photo={photo} photos={shots} alt={x.name} lang={lang} variant="hero"
         widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
     ) : (
       <figure class="tree-noph tree-hero">
@@ -151,16 +156,20 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       </figure>
     )}
     <div class="tree-head">
-      <h1>{x.name}</h1>
+      <div class="page-head">
+        <h1>{x.name}</h1>
+        <ShareButton url={canonical} title={x.name} label={U.share} copied={U.shareCopied} />
+      </div>
       {/* The species caption is gone: it named the species a second time, a
           centimetre above the block that names it (2026-09-04). */}
-      {/* The place, a dot and the thumb: the same row the English page and the
-          app both draw under a tree's name. This page had the place alone. */}
+      {/* The place, a dot and the thumb, the same row the English page and the
+          app draw. It arrived here on 2026-09-12, three months after the app
+          and a day after the English page: Hidde, "zet het op de vertaalde
+          pagina's alles consistent". */}
       <div class="tree-place-row">
-        <p class="tree-place">{[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}</p>
+        <p class="tree-place"><a href={`/${lang}/${cslug}`}>{[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}</a></p>
         <span class="tree-place-dot" aria-hidden="true">·</span>
-        <WorthIt treeId={tree.id} city={city.data.city} treeName={x.name} part="vote"
-                 labelVote={U.worthItAsk(x.name)} />
+        <WorthIt treeId={x.id} city={tr.city} treeName={x.name} part="vote" lang={lang} />
       </div>
     </div>
     {/* The same block the English page carries, in this language. Two columns
@@ -207,6 +216,9 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
     </dl>
     <div class="map-embed"><div id="map" class="map"></div></div>
     <p class="go-note">{U.goNote} {x.transport}</p>
+    {/* "Something's wrong", low on the page and under the map, which is what
+        most reports are about. Its vote half sits beside the place name. */}
+    <WorthIt treeId={x.id} city={tr.city} treeName={x.name} part="report" lang={lang} />
     {isApprox && (
       <p class="approx-note">
         {U.approxNote}{" "}
@@ -240,10 +252,18 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
         <a class="dm-chip" href={`/${lang}/${cslug}/${qslug}`}>{U.whichIsOldest(tr.city)}</a>
       </div>
     </section>
+    {/* The app block, in this language since 2026-09-12. It was the one
+        paragraph on a fully translated page that still spoke English, and it
+        is the paragraph that asks the reader for something. */}
+    <div class="app-pitch">
+      <strong>{U.appPitchTreeTitle}</strong>
+      <p>{U.appPitchTreeBody}</p>
+      <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">{U.getTheApp}</a>
+    </div>
     <div class="report">
       <strong>{U.couldUseHelp}</strong>
       <p class="report-line">{U.researchedRemotely}</p>
-      <a class="report-btn" href="/contribute?kind=correction">{U.somethingWrong}</a>
+      <a class="report-btn" href="/contribute?kind=correction">{U.correctDetail}</a>
       <a class="report-btn" href="/contribute?kind=tree">{U.suggestAnother}</a>
     </div>
     {/* THE TICK, the web's answer to the camera button in the app's own tree

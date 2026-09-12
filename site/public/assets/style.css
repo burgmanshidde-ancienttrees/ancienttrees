@@ -323,6 +323,17 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   height: calc(100dvh - 64px); padding: 8px; }
 .pv-frame img { max-width: 100%; max-height: 100%; width: auto; height: auto;
   object-fit: contain; border-radius: 2px; }
+/* The same rule again, louder, and it is a FIX rather than a nicety (2026-09-12).
+   The viewer lives inside <figure class="tree-photo tree-hero">, so
+   `.tree-photo.tree-hero img { height: 280px; object-fit: cover }` was winning
+   on specificity over `.pv-frame img` and the lightbox on every tree page
+   opened a 210 by 280 picture in the middle of a 375 by 748 black screen. That
+   is the whole point of the control, and no gate could see it: the dialog
+   exists, the image loads, the link works. Measuring the rendered box is what
+   found it. 0,2,2 here beats the 0,2,1 above it whatever the file order. */
+dialog.photo-view .pv-frame img {
+  width: auto; height: auto; max-width: 100%; max-height: 100%;
+  object-fit: contain; border-radius: 2px; }
 .pv-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem;
   min-height: 64px; padding: 0 1rem; font-size: 12px; }
 .pv-credit { color: #cfcfcf; }
@@ -331,6 +342,44 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .pv-close { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px;
   border: 0; border-radius: 999px; background: rgba(0,0,0,0.45); color: #fff;
   font-size: 26px; line-height: 1; cursor: pointer; }
+/* MORE THAN ONE PHOTOGRAPH (2026-09-12). The strip under the lead is what
+   Google Maps puts under a place and iNaturalist under an observation: it says
+   there is more without spending the page's best space on it. A scroller
+   rather than a wrap, so eight pictures never push the page's own width out;
+   the 375px fit check ignores what is inside one of these on purpose, because
+   a shelf is meant to overflow. */
+.photo-strip { display: flex; gap: 6px; overflow-x: auto; list-style: none;
+  margin: 0.45rem 0 0; padding: 0 0 2px; scrollbar-width: none;
+  -webkit-overflow-scrolling: touch; }
+.photo-strip::-webkit-scrollbar { display: none; }
+.photo-strip li { flex: 0 0 auto; }
+/* 72 rather than 44: this is a picture to recognise rather than an icon to
+   hit, and it clears the touch floor in both directions anyway.
+   The hero pair is named explicitly because .tree-photo.tree-hero .photo-open
+   and .tree-photo.tree-hero img below are 0,3,0 and would otherwise hand every
+   thumbnail the hero's full width and 300px crop height. Caught by measuring
+   the rendered box rather than by reading the file: it came out 210 by 72. */
+.photo-strip .photo-open,
+.tree-photo.tree-hero .photo-strip .photo-open {
+  width: 72px; height: 72px; border-radius: 4px; overflow: hidden; flex: 0 0 auto; }
+.photo-strip img,
+.tree-photo.tree-hero .photo-strip img {
+  width: 72px; height: 72px; object-fit: cover; border-radius: 4px; }
+/* Paging inside the viewer, which is Media Viewer's own control. Sat against
+   the sides at the vertical middle of the picture, clear of the credit bar and
+   clear of the close button. 44 square, the touch floor. */
+.pv-step { position: absolute; top: calc((100dvh - 64px) / 2); transform: translateY(-50%);
+  width: 44px; height: 44px; border: 0; border-radius: 999px;
+  background: rgba(0,0,0,0.45); color: #fff; font-size: 28px; line-height: 1;
+  cursor: pointer; }
+.pv-prev { left: 8px; }
+.pv-next { right: 8px; }
+.pv-step:focus-visible, .pv-close:focus-visible, .photo-open:focus-visible {
+  outline: 3px solid #fff; outline-offset: 2px; }
+.pv-count { color: #cfcfcf; white-space: nowrap; }
+/* The bar holds three things once a tree has several photographs, and on a
+   narrow phone the credit is the one that may wrap. */
+.pv-bar { flex-wrap: wrap; }
 /* 44 is the floor, not the padding's business: at 0.75rem the pill came out
    41 tall, which is three points under what every phone platform asks of a
    primary button. inline-flex so the min-height can centre its own label. */
@@ -992,8 +1041,16 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 }
 .hero-sub { padding: 1.6rem 2rem; text-align: center; }
 .hero-sub p { max-width: 44rem; margin: 0 auto; font-size: 14.5px; color: var(--ink-mid); line-height: 1.65; }
-.hero-search input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
-.hero-search input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
+/* The account page's email field, which is the only .hero-search on the site
+   that is not also an .at-search. Scoped on 2026-09-12, because unscoped it sat
+   300 lines below .at-search input and .poster-search input with the same
+   specificity and therefore quietly won on the homepage: the hero's search wore
+   this border, this 8px radius inside its own pill, and this 15px text. The
+   15px was the bug Hidde reported ("als je op mobile web op zoek klikt zoomt ie
+   raar in"), and see the block at the foot of this file for why 16 is a floor
+   rather than a preference. */
+.hero-search:not(.at-search) input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 16px; background: #fff; color: var(--ink); }
+.hero-search:not(.at-search) input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
 .hero-search .go-btn { margin-top: 0; }
 .go-btn.ghost { background: none; color: var(--moss); border: 1px solid var(--moss); }
 .pin:hover { transform: scale(1.15); }
@@ -1777,6 +1834,10 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
   .tree-noph.tree-hero { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); width: auto; }
   .tree-photo.tree-hero img { border-radius: 0; height: 280px; }
   .tree-photo.tree-hero figcaption { padding: 0 var(--gutter); }
+  /* The strip rides inside the full-bleed figure, so it needs the page's
+     gutter back. Padding rather than margin, so the shelf still scrolls out
+     to the edge the way a shelf should. */
+  .tree-photo.tree-hero .photo-strip { padding-left: var(--gutter); padding-right: var(--gutter); }
 }
 
 /* The name group: title, the full botanical name under it, then where it is.
@@ -1921,4 +1982,50 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
      every width, and the first phone render had the Species chip sitting under
      them. The row scrolls, so giving it less width costs nothing. */
   .map-filters { top: 0.5rem; left: 0.5rem; right: 3rem; }
+
+/* The map credit, as quiet as it may honestly be (2026-09-12, Hidde: "can we
+   minimise it further"). What cannot change is that it exists and can be found:
+   OpenFreeMap's terms are one line, "Attribution is required", and the OSMF
+   guideline's collapsed state still wants an (i) in the corner. What can change
+   is how loudly it sits there while nobody is looking for it. So the five
+   seconds before it folds away are smaller and translucent rather than a solid
+   white band, and the dot it folds into carries no pill at all until a cursor
+   or a keyboard reaches it. */
+.maplibregl-ctrl-attrib { font-size: 10px; }
+.maplibregl-ctrl-attrib.maplibregl-compact-show {
+  background: rgba(246, 242, 233, 0.82); padding: 1px 22px 1px 6px; }
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) {
+  background: none; box-shadow: none; opacity: 0.55; transition: opacity 0.15s; }
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show):hover,
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show):focus-within {
+  opacity: 1; }
+
+/* NOTHING A THUMB LANDS IN IS UNDER 16px ON A PHONE (2026-09-12).
+
+   Safari on iOS zooms the whole page in when a focused field carries text under
+   16px, and it never zooms back out: you tap search, the page jumps, and you
+   are left pinching your way back to a layout that was fine a second ago. It is
+   not a preference and no setting turns it off. There are two ways out and only
+   one is allowed here: meet 16, or pin the viewport with maximum-scale=1, which
+   stops the zoom by taking pinch-zoom away from everybody who needs it.
+
+   This block exists as a floor rather than as edits to the rules above, because
+   14px is a real design choice on a desktop dialog and the fault is a phone
+   fault. Chrome on Android and every desktop browser ignore the whole thing.
+
+   scripts/smoke_test.py measures this as executed at 375px, so a field that
+   ends up under 16 through the cascade (which is how the homepage search got
+   there) fails the deploy rather than waiting for somebody to tap it. */
+@media (max-width: 800px), (pointer: coarse) {
+  .acct-name-row input,
+  .app-getter-form input,
+  .suggest-form input, .suggest-form select, .suggest-form textarea,
+  .worthit-detail textarea,
+  /* The map's species picker, added to this floor the hour the row was built
+     (2026-09-12): a chip reads at 13, a FIELD at 13 makes Safari zoom the map
+     in on tap and never back out. The other three chips are buttons and are
+     left alone, so the row carries one slightly larger word on a phone, which
+     is the cheaper of the two prices. */
+  .mf-select,
+  .signin-form input { font-size: 16px; }
 }

@@ -9,11 +9,16 @@ interface Props {
   /// The accessible name. A prop because the site publishes in seven
   /// languages and a hard-coded English label would be wrong on six of them.
   label?: string;
+  /// What it says once the link is copied, for the browsers with no system
+  /// share sheet. On the button rather than in share-js.ts for the reason the
+  /// label is: the script runs on eight languages and cannot hold words.
+  copied?: string;
 }
-const { url, title, label = "Share" } = Astro.props as Props;
+const { url, title, label = "Share", copied = "Link copied" } = Astro.props as Props;
 ---
 <button type="button" class="share-btn" data-share data-share-url={url}
-        data-share-title={title} aria-label={label} title={label}>
+        data-share-title={title} data-share-copied={copied}
+        aria-label={label} title={label}>
   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
     <path d="M12 3v12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
     <path d="M8 7l4-4 4 4" stroke="currentColor" stroke-width="2" fill="none"
