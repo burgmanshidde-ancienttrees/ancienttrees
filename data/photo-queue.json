@@ -67187,8 +67187,8 @@
      "author": "(c) Caleb Catto, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "-43.0982555,146.80252",
-     "judged": "reject",
-     "verdict": "Forest canopy shot; several trunks, no crown or base readable and nothing identifies Centurion."
+     "judged": "hold",
+     "verdict": "A tall eucalyptus trunk in a similar forest, but no geotag and nothing in frame (plaque, marked scale) distinguishes this specific individual from any other tall Eucalyptus regnans nearby; Centurion i"
     },
     {
      "title": "iNat obs 321882049 (Eucalyptus regnans)",
@@ -87324,7 +87324,9 @@
      "author": "Renardo la vulpo",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Herzogspark Regensburg Category:Rosa 'Lusatia' Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Herzogspark Regensburg Category:Rosa 'Lusatia' Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Photo of a rose cultivar label (Rosa 'Lusatia'), not a tree at all."
     },
     {
      "title": "File:Regensburg-Herzogspark-2-Asio.JPG",
@@ -87334,7 +87336,9 @@
      "author": "Asio otus",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bavaria photographs taken on 2022-08-29 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work"
+     "cats": "Category:Bavaria photographs taken on 2022-08-29 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work",
+     "judged": "reject",
+     "verdict": "General treeline along a park wall, no single tree identifiable as the subject."
     },
     {
      "title": "File:Regensburg-Herzogspark-3-Asio.JPG",
@@ -88170,7 +88174,9 @@
      "author": "Rosemoon",
      "lat": 51.5336,
      "lng": 4.45074,
-     "cats": "Category:CC-BY-SA-4.0 Category:Rijksmonumenten in Roosendaal Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:CC-BY-SA-4.0 Category:Rijksmonumenten in Roosendaal Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "A villa/castle building with generic trees in frame, not the specific catalpa."
     },
     {
      "title": "File:Burgerhoutsestraat 3, Roosendaal.jpg",
@@ -88204,7 +88210,9 @@
      "author": "Rosemoon",
      "lat": 51.530891,
      "lng": 4.461974,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Roosendaal Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Roosendaal Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Photo of a house facade at that address; the catalpa is not the subject."
     },
     {
      "title": "File:Burgerhoutsestraat 9, Roosendaal.jpg",
@@ -88214,7 +88222,9 @@
      "author": "Rosemoon",
      "lat": 51.530891,
      "lng": 4.461974,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Roosendaal Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Roosendaal Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Another house facade at a neighbouring address, not the tree."
     }
    ]
   },
@@ -91900,7 +91910,9 @@
      "author": "Vincenthendriks",
      "lat": 50.977845,
      "lng": 5.842069,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Sculptures in Geleen Category:Self-published work Category:Wayside crosses in Sittard-Geleen"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Sculptures in Geleen Category:Self-published work Category:Wayside crosses in Sittard-Geleen",
+     "judged": "reject",
+     "verdict": "Subject is a wayside crucifix (wegkruis) mounted on the trunk, not the tree; also poor evening light and a busy fence/house background."
     }
    ]
   },
