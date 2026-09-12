@@ -1,6 +1,58 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - why_go is gone from both surfaces
+
+Hidde: "why_go is toch een element dat we volledig van de website kunnen
+verwijderen - waarom zouden we dit maken?", then "precies haal weg". He is
+right, and the evidence is sharper than the argument. It existed on 40 of 3,057
+trees, 1.3 percent. Read beside their own stories, all three of the first ones
+said the same thing twice:
+
+  why_go: "An English elm a Baltimore tradition says Frederick Douglass planted
+           as an enslaved child..."
+  story : "Baltimore tradition holds that Frederick Douglass planted this elm
+           as a boy, while he was still enslaved in the city."
+
+That is not bad luck, it is Step 3 working: a story is already required to lead
+with the most surprising fact, so a field asking for exactly that prints the
+page's own opening a centimetre above itself. It is the duplication the
+whole-page check of 2026-08-04 exists to catch, and it shipped anyway. The one
+thing it did that the story could not, take the front of the meta description
+on a tree with neither an age nor a measurement, touched sixteen pages.
+
+Removed: the paragraph on the tree page, the branch in metaForTree (the story
+has the whole tail again), the field in /api/trees.json and in the content
+schema, whyGoRaw and its CodingKey in Models.swift, the block in TreeDetail,
+and the 40 values in 22 city files. The stories are untouched, so nothing was
+actually lost.
+
+THE CHECK STAYS, REKEYED. The Nara failure it was written for is real and a
+field never fixed it: four trees went live whose own stories argued against
+their pages. What answers that is the four-tree floor and "would somebody
+travel specifically for THIS ONE TREE", not a sentence justifying a page that
+should not exist. So `check_a_tree_says_why_to_go()` becomes
+`note_a_reader_photograph_is_not_a_reason()`: a tree published from a reader's
+photograph with no recorded age and no usable measurement, which is the exact
+shape Nara had. A NOTE and not a FAIL for one reason only, below.
+
+And the feed check had to be told this was deliberate. `feedshape.py` reports
+any field that disappears from a live feed, which is exactly right, so it now
+carries a KNOWN_GONE list with the same evidence rule KNOWN_OPTIONAL has: all
+three versions of Models.swift that ever declared whyGoRaw wrote `String?`, so
+no installed build can fail on its absence. Verified both ways.
+
+Gone with it: the 491-tree backlog NOTE I put on Hidde's open-work list this
+morning. That was work that bought nothing, and I counted it instead of
+weighing it.
+
+FOR HIDDE: one tree is now in the shape the rekeyed check names, and it is
+yours rather than a script's because retiring a live page is hard rule 3.
+kyo_019, The Twisted Muku of Omiya Gate in Kyoto Gyoen: your own photograph, no
+recorded age, no measurement. A girth would settle it; otherwise it belongs in
+data/leads/. Once it is settled the check goes back to a FAIL, which is what it
+should be.
+
 ## 2026-09-12 - The vote, the share button and the app block reach all seven languages
 
 Hidde: "zet het op de vertaalde pagina's alles consistent hoe zorg ik dat je

@@ -102,7 +102,6 @@ def tree_index():
                 # to name a species; this is ours.
                 "species": t.get("species"),
                 "recognise": t.get("how_to_recognise"),
-                "why_go": t.get("why_go"),
                 "girth_cm": t.get("girth_cm"), "height_m": t.get("height_m"),
                 "story": (t.get("story") or "")[:700],
             }
@@ -533,7 +532,7 @@ def main():
             # check. `species` below is the reader's own, optional, and often
             # empty; it is a hint and never the thing checked against.
             "tree_species": t.get("species"), "recognise": t.get("recognise"),
-            "why_go": t.get("why_go"), "tree_girth_cm": t.get("girth_cm"),
+            "tree_girth_cm": t.get("girth_cm"),
             "tree_height_m": t.get("height_m"), "story": t.get("story"),
             "name": row.get("name") or "", "species": row.get("species"),
             # A reader's measurement of a tree we map. Where our tree carries
