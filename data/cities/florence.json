@@ -887,6 +887,72 @@
       "girth_cm": 437,
       "how_to_recognise": "You can recognise it by its size on an ordinary residential street: a trunk 4.37 metres round and a crown reaching almost 30 metres, standing on the pavement of Via del Pino, the street it gave its name to.",
       "verify_notes": "MASAF sheet 27/D612/FI/09: Pinus pinea L., girth 437 cm, height 29.0 m, comune Firenze, locality simply \"Via del Pino\" (the tree is the reason the street has that name). Second source: perunaltracitta.org (La Citta invisibile, 2024-06-03), an independent piece specifically about this tree. Third confirmation: RAMI (Il Registro degli Alberi) posted about this exact tree on its own page, confirming the street-naming fact independently. No age recorded anywhere found this pass."
+    },
+    {
+      "id": "flo_025",
+      "name": "The Farnia of Mantignano",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "around a century old",
+      "age_min": 100,
+      "age_max": 130,
+      "girth_cm": 360,
+      "height_m": 18.0,
+      "location": {
+        "address": "Via del Ponticino, Mantignano, 50142 Firenze",
+        "latitude": 43.782617,
+        "longitude": 11.181366,
+        "neighbourhood": "Mantignano"
+      },
+      "story": "Local memory says a soldier planted this oak the day he came home. Artemio Berti is supposed to have put it in the ground in Mantignano in 1917, back from fighting in the First World War, on what was then open land on Florence's western edge. Tuscany's own citizen tree register repeats the story, though as oral testimony rather than a written record, and it does not quite agree with itself: a growth-rate estimate on the same page puts the tree at around 126 years, which would date the planting closer to 1900, nearly two decades before Berti is said to have come home. Nobody has settled which is right, so this page gives the range rather than picking a number. What both surveys agree on is the tree itself: a single pedunculate oak grown standing alone, its trunk about 3.6 metres round and its crown reaching some 18 metres, healthy as of an inspection in October 2025. It is Florence's second farnia, a different tree from the older one at the Ippodromo delle Cascine 2.4 kilometres away, and it still stands where Berti is said to have left it, on an ordinary residential street that has grown up around it since.",
+      "how_to_recognise": "You can recognise it by standing alone rather than in a row, its trunk about 3.6 metres round beneath a crown that reaches roughly 18 metres. It stands right beside Via del Ponticino in Mantignano.",
+      "verified_sources": [
+        "MASAF 52/D612/FI/09",
+        "https://ilregistrodeglialberi.it/14222-farnia-firenze-fi-toscana"
+      ],
+      "access": "Free. Stands in open ground right beside Via del Ponticino, an ordinary public residential street in Mantignano.",
+      "transport": "On Florence's western edge in Mantignano; no direct public transport line to the tree was confirmed this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "flo_026",
+      "name": "The Poplar of the Renaioli",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 484,
+      "height_m": 18.5,
+      "location": {
+        "address": "Isolotto, near Lungarno dei Pioppi, 50142 Firenze",
+        "latitude": 43.784911,
+        "longitude": 11.20737,
+        "neighbourhood": "Isolotto"
+      },
+      "story": "This poplar is named after a trade that has almost vanished from the Arno: the renaioli, the boatmen who dredged sand and gravel from the riverbed by hand for generations, a tradition kept alive today only by a cultural association that still bears their name. The tree stands near a stretch of riverbank called Lungarno dei Pioppi, Poplar Riverbank, whose own name almost certainly comes from trees like this one once lining the Arno here. Two surveys, Italy's national monumental tree register and Tuscany's own citizen register, independently confirm it under a single official file number, and the more recent of the two, from March this year, measured the trunk at 4.84 metres round on a tree standing some 18.5 metres tall. Its health is recorded as adequate rather than vigorous, and nobody has recorded its age: black poplars grow fast and unevenly, and no reliable estimate exists for this one, so the question stays open rather than guessed at. It stands on public ground in the Isolotto district, close enough to Florence's other western trees, the pine of Villa Vogel and the holm oak of the Cascine, to be part of the same afternoon's walk.",
+      "how_to_recognise": "You can recognise it by its size for a poplar, a trunk 4.84 metres round rising to about 18.5 metres, standing near the riverbank named after it. It stands in Isolotto, near Lungarno dei Pioppi.",
+      "verified_sources": [
+        "MASAF 58/D612/FI/09",
+        "https://ilregistrodeglialberi.it/17060-il-pioppo-dei-renaioli-pioppo-nero-firenze-fi-toscana"
+      ],
+      "access": "Free, on public ground in the Isolotto district near the Arno riverbank.",
+      "transport": "In the Isolotto district near the Arno; no direct public transport line to the tree was confirmed this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

@@ -1,6 +1,56 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation 2) - Finished the standing Florence claim from an earlier attempt this window
+
+Picked up exactly where an earlier attempt in this window left off (stopped
+after 15 min with 105 min of the window unspent, having claimed Florence for
+a verify pass but not finished it). `passcheck.py --claims` showed it still
+standing with 145 min left; finished it rather than re-claiming or
+re-orienting.
+
+Dispatched the `verify` agent against the cluster the earlier attempt had
+already staged (7 MASAF register candidates 0.6-0.9km out, mostly flagged
+"within 80m of a live tree" and correctly set aside as already-published or
+already-blocked, plus a longer tail of farther candidates). It verified 2:
+**flo_025, the Farnia of Mantignano** (a pedunculate oak with a WWI
+homecoming planting story from Tuscany's citizen register, undated precisely
+because the story and a growth-rate estimate disagree by two decades,
+delivered as a flagged 100-130yr range) and **flo_026, the Poplar of the
+Renaioli** (a black poplar named after the Arno's sand-dredging boatmen,
+girth 4.84m, no age recorded anywhere so left honestly blank). It also
+corrected 5 MASAF rows the brief's distance-ranking had mistakenly
+attributed to Florence (they belong to Bagno a Ripoli and Reggello) and
+updated two open leads (the Piazza Vasari hackberries, the Gamberaia black
+pine) with better-balanced evidence, still unresolved.
+
+Only 2 trees, below the usual write-pass floor, so I wrote both stories
+directly (Mantignano's soldier's-return legend against the register's
+growth-rate disagreement; the poplar's name preserving a vanished river
+trade) rather than waiting to batch them with something else. Merged into
+`data/cities/florence.json` (26 trees now) and wrote the matching Italian
+overlay entries in `data/i18n/it/florence.json` (the overlay was about to go
+stale in two ways at once: missing the two new trees entirely, and its
+title/meta description still said "23" against the new true count of 26).
+`preflight.py` had flagged the missing-overlay case as a FAIL that blocks
+the whole build; confirmed clean after the fix. Astro build and `qa.py`
+run afterward; both new tree pages (`farnia-di-mantignano`,
+`poplar-of-the-renaioli`) render correctly in English and Italian.
+
+Checked `leads.py --pending`: the only other unpublished verified material
+is `lgp_001` (the Cork Oak of Pedragosa), already correctly banked below
+the four-tree floor for a "Lagos, Portugal" page by an earlier pass, and two
+single-famous-tree candidates (a Nanjing juniper, a Fontenay Abbey plane)
+still needing a container decision, which is more design work than this
+attempt's remaining budget justified given the week sits at ~4750/5000
+minutes. Left as-is.
+
+Checked the iOS app rung-2 finding from `health.py` (newest run failed on
+`main`, "xcodebuild test hung past 20 minutes"): same flakiness already
+logged twice today, confirmed again here (the identical commit passed on a
+parallel feature-branch run half a minute later). No action, no regression.
+Released the Florence claim. `recognise.py --stuck`, `pagegaps.py`,
+`sightings_inbox.py --status` all clean/empty.
 ## 2026-09-12 (continuation) - Vendored a stray photo, extended the routes.yml push-fix to 3 more workflows, claimed Florence for a verify pass
 
 Rung 2 first. `health.py`: Walking routes (routes.yml) had its first-ever
