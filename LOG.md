@@ -1,6 +1,30 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (session) - Tree pages said each fact twice; they say it once now
+
+Fix 1 from the UX audit, on branch claude/website-ux-audit-aji746.
+
+The facts panel above the story arrived with the app's design on 2026-09-04
+and took over age, species and the ticket. The detail list below it was never
+trimmed, so every tree page had been repeating itself since. Measured over 500
+English pages: 307 printed an age in both places and 283 of those printed two
+different forms of it (a computed band "260-285" up top against the written
+"275 years" below), 25 repeated the access sentence word for word, and the
+note under the map repeated the transport line on every page that has one. On
+translated pages the species row was character for character the panel.
+
+Each row now renders only where the panel is not carrying it. Age survives on
+the 70 of 500 pages where the panel had no number, which are exactly the pages
+where the written estimate is the only age there is. Species stays in English,
+because the panel there shows the common name alone and Contract A wants the
+scientific name in the fact block; on translated pages the panel already
+prints the whole string, so the row went. After: zero duplicates in either
+language, nothing lost from any page.
+
+qa 8582 pages clean, smoke passed, paritycheck clean, and the block was looked
+at at 375px in English and Spanish.
+
 ## 2026-09-12 (session) - The homepage said the same thing twice, and "Top species" was the alphabet
 
 Hidde sent a screenshot of the phone homepage: the mission sentence stands
