@@ -1,6 +1,45 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (continuation) - Finished an orphaned Montreal claim; week budget nearly spent, kept this short
+
+Picked up where an earlier attempt in this same window stopped (it had
+shipped no commits despite ~64 minutes of unspent window; the clock, not
+the usage limit, ended it). No standing claims, no submissions, no
+sightings, `leads.py --ready` empty, `refill.py` nothing to fill,
+`pagegaps.py` and `recognise.py --stuck` both zero.
+
+**Committed the inherited Montreal work.** A verify pass had already found
+that Ville de Montreal's own remarkable-tree register independently
+documents mtl_001 (the McGill Law Ginkgo) with a planting year (1892) and
+a trunk diameter (123cm), tightening its age from "~120 years" to "~134
+years" and adding girth_cm. The edit, the leads-file cleanup and the claim
+release were all sitting uncommitted; verified with preflight (0 problems)
+and a full astro build (5544 pages, exit 0) before committing.
+
+**Rung 2:** `health.py` flagged the iOS app workflow as failing. Checked
+it directly: the failure was `xcodebuild test hung past 20 minutes and
+was killed` on `main`, while the identical commit succeeded on a parallel
+feature branch's run 20 minutes later. Ordinary simulator flakiness
+(matches this morning's earlier log entry), not a code regression; no fix
+to make. Could not `gh workflow run` or `gh run rerun` it myself (bot
+token lacks the permission), so it waits for the next scheduled run.
+REVIEW.md's one WARN ("1 trees" in `Home.swift`'s `CityView` header) was
+already fixed by a later commit today (`treesLabel()` in place at line
+720); verified, no action needed.
+
+**One photo candidate rejected.** `photo_gaps.py --shortlist`'s only hit
+was for Breda's bre_010 (The Plane of Valkenberg's Edge): fetched and
+viewed the file, it is a close-up of a fallen leaf on grass, not the
+tree. Recorded in CURATION.md.
+
+Given the week is at roughly 4763/5000 minutes with the queue's cheap
+lanes all dry (no supply-backed city under six candidates, Ravenna and
+Taormina already documented dead ends, Trier's 5 wikidata leads under the
+floor), I chose not to start a new research or write pass this attempt
+rather than risk an expensive dispatch getting cut off mid-way by the
+week budget. Stopping here with everything committed and clean.
+
 ## 2026-09-12 (autonomous run) - Tallinn 6 -> 8, one photo approved, a stale CI failure chased down
 
 **Rung 2 first.** The Walking routes workflow had its first-ever failed run
