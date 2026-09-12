@@ -2,9 +2,18 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["5EWWC3M8L2.app.ancienttrees.AncientTrees"],
+        "appIDs": [
+          "5EWWC3M8L2.app.ancienttrees.AncientTrees"
+        ],
         "components": [
-          { "/": "/t", "comment": "a shared sighting (SharedTreeView.swift, since 2026-09-03): the thank-you mail links straight to it, and the app is the better place to open it in" }
+          {
+            "/": "/t",
+            "comment": "a shared sighting (SharedTreeView.swift, since 2026-09-03): the thank-you mail links straight to it, and the app is the better place to open it in"
+          },
+          {
+            "/": "/auth",
+            "comment": "the landing of an emailed sign-in link (2026-09-12). Supabase mails a link to its own /auth/v1/verify, which redirects here with the tokens in the fragment; iOS hands that to the app so somebody who asked to sign in ON THE PHONE lands back in the app rather than in Safari. The page itself is the fallback and signs them in on the web instead when the app is not installed or iOS does not honour the redirect."
+          }
         ]
       }
     ]

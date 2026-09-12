@@ -356,7 +356,23 @@ public final class Account {
         }
         state = .working
         problem = nil
-        let r = Supa.request("/auth/v1/otp",
+        // redirect_to is the whole of the 2026-09-12 route. Supabase's built-in
+        // sender mails a LINK rather than the six digits this screen was first
+        // written for, and its template cannot be edited without custom SMTP,
+        // which is a third party in the product and so Hidde's call (he said no
+        // on 2026-08-30, and chose this instead on 09-12). So the link stays a
+        // link and we decide where it LANDS: /auth on our own domain, which is
+        // listed in the site's apple-app-site-association, so iOS can hand it
+        // straight back to this app. When it does not, the page signs the
+        // person in on the website instead, which is the same account.
+        //
+        // It must also be on Supabase's redirect allow-list, or Supabase
+        // silently substitutes the Site URL and the link lands on the homepage
+        // with the tokens attached and nothing to catch them.
+        let back = "https://ancienttrees.app/auth"
+        let escaped = back.addingPercentEncoding(
+            withAllowedCharacters: .alphanumerics) ?? back
+        let r = Supa.request("/auth/v1/otp?redirect_to=\(escaped)",
                              body: ["email": clean, "create_user": true])
         guard let (_, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode) else {
@@ -383,6 +399,46 @@ public final class Account {
             return
         }
         store(parsed)
+    }
+
+    // MARK: - the emailed link route
+
+    /// Sign in from the fragment of an emailed sign-in link, handed to us by
+    /// iOS as a universal link (ContentView's onOpenURL, /auth).
+    ///
+    /// It takes the REFRESH token out of the fragment and spends it, rather
+    /// than trusting the access token sitting next to it. Three things fall out
+    /// of that and all three are wanted: Supabase answers with the full
+    /// payload, so `session(from:)` fills userId and email the way both other
+    /// routes do instead of leaving a signed-in account with no id on it; the
+    /// exchange proves the link is real, because a fabricated fragment simply
+    /// fails; and there is one parser rather than a second one written for the
+    /// shape of a URL.
+    ///
+    /// Returns false for a link carrying no tokens, which is the ordinary case
+    /// for every other universal link this app receives.
+    @discardableResult
+    public func signInFromLink(_ url: URL) async -> Bool {
+        guard let fragment = url.fragment, !fragment.isEmpty else { return false }
+        var tokens: [String: String] = [:]
+        for pair in fragment.split(separator: "&") {
+            let kv = pair.split(separator: "=", maxSplits: 1)
+            guard kv.count == 2 else { continue }
+            let raw = String(kv[1])
+            tokens[String(kv[0])] = raw.removingPercentEncoding ?? raw
+        }
+        guard let refresh = tokens["refresh_token"], !refresh.isEmpty else { return false }
+        state = .working
+        problem = nil
+        let r = Supa.request("/auth/v1/token?grant_type=refresh_token",
+                             body: ["refresh_token": refresh])
+        guard let parsed = await Self.send(r) else {
+            state = .signedOut
+            problem = "That sign-in link has already been used, or it has expired. Ask for a new one."
+            return false
+        }
+        store(parsed)
+        return true
     }
 
     // MARK: - the Apple route
