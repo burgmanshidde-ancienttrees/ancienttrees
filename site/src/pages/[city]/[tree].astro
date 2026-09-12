@@ -33,11 +33,13 @@ import { treeSources } from "../../lib/tree-sources";
 import WorthIt from "../../components/WorthIt.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import SaveHeart from "../../components/SaveHeart.astro";
+import SeenButton from "../../components/SeenButton.astro";
 import ShareButton from "../../components/ShareButton.astro";
 import { SHARE_JS } from "../../lib/share-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
+import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead, singlePinScript } from "../../lib/map";
 import { hreflangForCity, ui } from "../../lib/i18n";
@@ -224,7 +226,7 @@ const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
 const sources = treeSources(tree);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SIGNIN_JS + SHARE_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS + SHARE_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page has-tree-bar">
@@ -327,6 +329,14 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         </p>
       )}
     </div>
+
+    {/* THE TICK, the web's answer to the camera button in the app's own tree
+        bar (2026-09-12). In the app, photographing a tree ticks it off, which
+        is why its tree page carries a collect action at all; the website has
+        no camera flow, so the collect action here is the tick itself. Under
+        the facts rather than in the floating bar: the bar is already three
+        controls wide and truncates its last one at 375 points. */}
+    <p class="tree-tick"><SeenButton treeId={tree.id} treeName={tree.name} /></p>
 
     <div class="tree-bar" aria-label="Actions">
       <SaveHeart treeId={tree.id} treeName={tree.name} />

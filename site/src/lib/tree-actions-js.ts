@@ -44,7 +44,11 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
       b.querySelector('span').textContent = on
         ? (b.dataset.lSaved || 'Saved') : (b.dataset.lSave || 'Save');
     });
+    // The city map's pins wear the same heart (2026-09-12). One answer, two
+    // paintings, so a save on a card lights its pin without a reload.
+    if (window.atPaintPinFaves) window.atPaintPinFaves();
   }
+  window.atHasSaved = function(id) { return Boolean(mine && mine[id]); };
   function load() {
     if (!C.session()) { mine = {}; paint(); return; }
     C.saves().then(function(list) {
@@ -60,6 +64,46 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
   // this file has already run and concluded there was nobody signed in.
   window.atSyncSaves = load;
   load();
+
+  // THE TICK, beside the heart and handled the same way (2026-09-12).
+  //
+  // It reads and writes through visited-sync-js.ts rather than keeping a
+  // second copy of the account's list: one request per page, one answer, and
+  // the city map's pins and passport counter paint from the same one. A page
+  // that renders a .seen-btn must therefore ship VISITED_SYNC_JS as well, and
+  // qa.py's check_tick_has_its_wiring() refuses one without the other.
+  function paintSeen() {
+    document.querySelectorAll('.seen-btn').forEach(function(b) {
+      var on = Boolean(window.atHasVisited && window.atHasVisited(b.dataset.tree));
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      var t = b.querySelector('.seen-text');
+      if (t) t.textContent = on ? (b.dataset.lDone || 'Ticked off')
+                                : (b.dataset.lSeen || 'I have seen this one');
+    });
+  }
+  window.atPaintSeen = paintSeen;
+  paintSeen();
+
+  document.addEventListener('click', function(e) {
+    var s = e.target.closest('.seen-btn');
+    if (!s) return;
+    e.stopPropagation();
+    // The same gate the heart carries, for the same reason: a log that lives
+    // in a browser is not a log (PRINCIPLES.md #12, and 2026-09-02).
+    if (!C.session()) {
+      if (window.atOpenSignIn) window.atOpenSignIn(s.dataset.name);
+      return;
+    }
+    // NO PROXIMITY CHECK. DECISIONS.md 2026-08-20: "GPS proximity is a BONUS,
+    // never a gate." The dead handler this replaces asked the browser where
+    // you were and refused a tick from more than a few metres out, which
+    // tells somebody standing under the tree that they are not there.
+    var on = !(window.atHasVisited && window.atHasVisited(s.dataset.tree));
+    if (window.atPushVisited) window.atPushVisited(s.dataset.tree, on);
+    if (on) { try { at.track('visit'); } catch (err) {} }
+    paintSeen();
+    if (window.atPaintPassport) window.atPaintPassport();
+  });
 
   document.addEventListener('click', function(e) {
     // Directions is tracked once, in Base.astro, off the Google Maps href.

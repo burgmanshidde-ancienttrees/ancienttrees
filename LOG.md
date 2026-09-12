@@ -1,6 +1,67 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (session) - The three app-versus-web gaps are closed: the count, the tick, the pin
+
+Hidde, on the list of three from this morning: "trek dit allemaal gelijk."
+
+**The count is on the thumb.** The app has printed it there since
+2026-08-27 and the website printed nothing; worthit-js.ts even ended by
+saying "nothing here renders numbers", written before
+supabase/vote-counts.sql existed. One call per page to
+`tree_vote_counts` now, painted onto the button itself rather than
+beside it, and your own tap moves it at once the way the app's does.
+Nothing renders at zero, which is your own rule for the save count.
+
+**The tick exists.** This is the one that was really missing, and it
+was missing in an odd way: every part of it was already built. The
+account list was read, a tick was written, the pins and the passport
+counter painted, the CSS sat in style.css, and no template had ever
+emitted the button. city-map-script.ts said so in its own head comment.
+So collecting, one of the four verbs, worked on the phone and was
+unreachable on the site. There is now a SeenButton component, beside
+the heart on every city card in all seven languages and under the facts
+on every tree page, wired by delegation like the heart.
+
+Two things went with it. The dead handler carried a PROXIMITY CHECK
+that refused a tick from more than a few metres away, which contradicts
+DECISIONS.md 2026-08-20 ("GPS proximity is a BONUS, never a gate") and
+would have told somebody standing under the tree they were not there;
+the app ticks on a tap and so does this. And a button on a city card no
+longer also flies the map to that tree, which the heart had quietly
+been doing all along.
+
+**The pin wears all three corners.** Red heart top right, blue ticket
+bottom left, moss tick bottom right, the same corners and the same
+reasons as TreeMap.swift. The tick moved down from the top right to
+make room. The /explore map is deliberately untouched: a tree is a
+seven-pixel dot on a world map there, and three badges on it would be
+noise rather than parity.
+
+**Found on the way, worth more than any of the three:** the translated
+tree page rendered a save heart with neither TREE_ACTIONS_JS nor
+SIGNIN_JS in its script slot. Both were imported at the top of the file
+and never used, so in seven languages the heart painted nothing and did
+nothing when tapped. Fixed, and `check_tick_has_its_wiring()` in qa.py
+now refuses a heart with no handler behind it and a tick without its
+dialog, its sync and its handler.
+
+Verified: full `astro build` (5515 pages), qa.py green including the two
+new checks, smoke_test.py green including its own 375px fit and
+alignment checks, paritycheck green. Looked at the pixels: both tick
+states, the count on the thumb, the five pin combinations, a real tree
+page at 375 and a real city card. The first render caught a real bug,
+a `float: right` left behind by the dead design that wrapped the
+recognition block's text around the new button; that whole stylesheet
+block is gone.
+
+FOR HIDDE: two things need you, both small.
+1. `supabase/vote-counts.sql` has to have been run on the project for
+   any number to appear. If it has not, the call 404s, is caught, and
+   the thumb simply shows no number, which is the honest empty.
+2. Same for `supabase/visited.sql` and the tick. Until it exists a tick
+   does not stick, visibly rather than silently.
+
 ## 2026-09-12 (session) - The website's thumb and ticket are drawn now, the same glyphs the app uses
 
 Hidde, looking at the two surfaces side by side: "op de site is de duim

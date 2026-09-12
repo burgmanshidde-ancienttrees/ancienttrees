@@ -49,15 +49,23 @@ export const VISITED_SYNC_JS = `
     C.visit(id, on !== false);
   };
 
+  // Two painters read this one answer: the city map's pins and passport
+  // counter, and every tick button on the page (tree-actions-js.ts). Added
+  // 2026-09-12, when the button finally existed to paint.
+  function repaint() {
+    if (window.atPaintPassport) window.atPaintPassport();
+    if (window.atPaintSeen) window.atPaintSeen();
+  }
+
   window.atSyncVisited = function() {
     if (!C.session()) {
       seen = [];
-      if (window.atPaintPassport) window.atPaintPassport();
+      repaint();
       return;
     }
     C.visited().then(function(list) {
       seen = list;
-      if (window.atPaintPassport) window.atPaintPassport();
+      repaint();
     });
   };
 

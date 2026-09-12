@@ -45,8 +45,22 @@
 // wrong-location reports land in the existing correction flow with its same-day
 // rule. No new backend; the account that gates it is the reply channel.
 //
-// Votes are stored and shown to nobody until volume makes a count honest;
-// nothing here renders numbers.
+// THE NUMBER IS ON THE THUMB, since 2026-09-12, which is where the app has
+// put it since 2026-08-27 (Hidde then: "zet gewoon bij thumb hoeveel mensen
+// thumb up of down hebben gedaan verder niet"; and on finding the website
+// still silent: "trek dit allemaal gelijk"). This file used to end by saying
+// "nothing here renders numbers", written before tree_vote_counts existed.
+//
+// It cannot be counted in the browser any more than on the phone: submissions
+// has no select policy, so a vote is write-only from the client, and an undo
+// writes a compensating row rather than deleting anything, so the arithmetic
+// is the LAST word per person per tree. supabase/vote-counts.sql works that
+// out and returns counts only, no user id, no email, no date. One call for
+// the whole page, the same as the app makes one for the whole catalogue.
+//
+// Nothing renders at zero. A lone 0 beside a tree we chose to publish is
+// worse than no number at all, which is Hidde's own rule for the save count
+// (2026-08-26, "pas van 1 tellen") and what VoteCounts.up() does in Swift.
 import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
 
 export const WORTHIT_JS = `
@@ -167,6 +181,45 @@ export const WORTHIT_JS = `
     if (chip && ta) ta.placeholder = chip.dataset.ph || '';
     form.hidden = false;
   }
+  // ONE CALL FOR THE PAGE. A city page carries up to 46 controls, so a request
+  // per tree would be 46 round trips for a number nobody is waiting on.
+  var tally = {};
+  function paintCounts() {
+    document.querySelectorAll('.worthit-btn').forEach(function(b) {
+      var box = b.closest('.worthit');
+      if (!box) return;
+      var n = tally[box.dataset.tree];
+      var el = b.querySelector('.worthit-n');
+      if (!el) return;
+      el.textContent = n > 0 ? String(n) : '';
+      el.hidden = !(n > 0);
+    });
+  }
+  // The one place the screen may run ahead of the server: your own tap moves
+  // the number at once, the same as the app's counts.record() does, because a
+  // number that waits for a round trip reads as a button that did nothing.
+  function nudge(tree, by) {
+    tally[tree] = Math.max(0, (tally[tree] || 0) + by);
+    paintCounts();
+  }
+  function loadCounts() {
+    if (!document.querySelector('.worthit-btn')) return;
+    fetch('${SUPABASE_URL}/rest/v1/rpc/tree_vote_counts', {
+      method: 'POST',
+      headers: {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json'},
+      body: '{}'
+    })
+      .then(function(r) { return r.ok ? r.json() : []; })
+      .then(function(rows) {
+        (rows || []).forEach(function(row) { tally[row.tree_id] = row.up; });
+        paintCounts();
+      })
+      // No function yet, or no network. Both mean the same thing on screen:
+      // no number, which is the honest empty this file runs on.
+      .catch(function() {});
+  }
+  loadCounts();
+
   // Paint what is known now (nothing), then again once the account answers.
   // A control that is briefly blank is honest; one that says "you voted" from
   // a stale browser key is not.
@@ -227,12 +280,15 @@ export const WORTHIT_JS = `
         // tally nets out without anonymous deletes.
         st.vote = null;
         send(box, 'vote undone', cur === 'up' ? 'worth it' : 'not worth it');
+        if (cur === 'up') nudge(tree, -1);
         paint(box);
         return;
       }
       if (cur) send(box, 'vote undone', cur === 'up' ? 'worth it' : 'not worth it');
       st.vote = vote;
       send(box, vote === 'up' ? 'worth it' : 'not worth it', '');
+      if (cur === 'up') nudge(tree, -1);
+      if (vote === 'up') nudge(tree, 1);
       paint(box);
       // No thumbs-down since 2026-09-11, the same as the app, so there is no
       // follow-up to open after a vote: the vote is the whole act.

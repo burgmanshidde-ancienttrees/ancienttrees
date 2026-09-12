@@ -37,6 +37,9 @@ export interface WalkMarker {
   id: string;
   area: string;
   shot: boolean;
+  /** Behind a ticket. The pin wears a small blue ticket when it is, the same
+   *  mark the app's pin has carried since 2026-08-25 and in the same blue. */
+  paid?: boolean;
   /** Months this species peaks (already shifted for latitude), the animation
    * and its colour. Absent for a species with no peak. The month is compared
    * in the browser, not at build time, so a cached page still lights up on the

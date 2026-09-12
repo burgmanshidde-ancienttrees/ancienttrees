@@ -161,6 +161,7 @@ const markers: WalkMarker[] = trees.map((t, i) => {
     id: t.id,
     area: (t.location.neighbourhood ?? "").trim(),
     shot: Boolean(cphoto),
+    ...(t.paid_entry ? { paid: true } : {}),
     ...(pk?.map ? { peak: { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } } : {}),
   };
 });
@@ -270,7 +271,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       </div>
       {trees.map((t, i) => (
         <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
-                  variant="full" headingLevel={2} />
+                  variant="full" headingLevel={2} canTick />
       ))}
       <div class="panel-foot">
         <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
