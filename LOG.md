@@ -1,6 +1,44 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 (autonomous run) - Tallinn 6 -> 8, one photo approved, a stale CI failure chased down
+
+**Rung 2 first.** The Walking routes workflow had its first-ever failed run
+(a push race after a good commit; not a code bug), so I tried a retry-loop
+fix but the bot token lacks `workflows` scope to push a `.github/workflows/`
+change - reverted, FOR HIDDE below. The iOS app's failing scheduled runs
+turned out to be two different things: a genuine "Favourites"/search-screen
+DRIFT (accessibility tree leaking through a fullScreenCover) that was
+already fixed in the latest merged commit before I even looked, and
+otherwise ordinary simulator flakiness (different failure each run). No
+action needed. REVIEW.md's one WARN ("1 trees" pluralization in Home.swift)
+was also already fixed upstream (`treesLabel()` helper already in place).
+
+**New coverage.** Checked city_queue.py's top gap cities before touching
+anything: Brisbane (rank 11) and Alicante (rank 25) both have leads files
+documenting 4-5 exhausted deepen passes each with an explicit "wait for a
+new source" recommendation, so I left them alone rather than re-running a
+dead hunt. Tallinn (rank 93) had three strong single-sourced leads (a 2017
+Postimees article naming the city's three oldest trees via a named
+dendrologist) nobody had corroborated. Verify pass found a second source
+for one (the city's own Kopli park page) and confirmed the other as
+genuinely single-sourced but citable; the third (behind the Presidential
+Palace) is walled-off private ground, blocked. Write pass turned the two
+into stories, fixed five places in the city's own copy that still said
+"six" after the merge, and preflight/qa/build all came back clean.
+Tallinn: 6 -> 8 trees.
+
+**One photo.** photo_gaps.py's 2-city shortlist: approved Lausanne's
+Napoleon Oak (geotag ~15m from our pin, full crown in leaf, good light);
+rejected both Breda "Weeping Beech" candidates after looking at them, one
+is a photo of the house at that address and the other is a facade plaque,
+neither is a tree.
+
+**FOR HIDDE:** `.github/workflows/routes.yml` needs a retry loop around its
+commit-and-push step (it lost a push race for the first time in 17 runs on
+2026-09-12, 09:32 UTC - the diff is written up and ready, just needs a
+token with `workflows` permission to land it; I can't push it myself).
+
 ## 2026-09-12 (session) - Free to visit moved last, and built in the app too
 
 Two small things and one answer.
