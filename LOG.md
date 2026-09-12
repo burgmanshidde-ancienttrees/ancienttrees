@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-12 - Tapping the search box on a phone zoomed the whole page in
+
+Hidde: "als je op mobile web op zoek klikt zoomt ie raar in." Safari on iOS
+zooms the page in whenever a focused field carries text under 16px, and it
+never zooms back out, so you tap search and are left pinching your way back to
+a layout that was fine a second ago.
+
+The homepage search was written at 16px and was rendering at 15. `.at-search
+input` says 16, `.poster-search input` says 16.5, and three hundred lines
+further down the stylesheet `.hero-search input` said 15 with the same
+specificity and therefore won on order. It was never meant to reach the search
+at all: it is the account page's email field, and the homepage's form carries
+`hero-search` only because it sits in a hero. The search was also wearing that
+rule's 1px border and 8px radius inside its own white pill, which is why it did
+not look like the identical field on /explore, the one thing that form is
+supposed to be.
+
+Scoped to `.hero-search:not(.at-search)`, and a floor added at the foot of the
+stylesheet so no field on a phone renders under 16: the account name row, the
+app-getter, the contribute form, the worth-it note and the sign-in dialog were
+all at 14 or 15 and all zoomed the same way. Measured on the built site at
+375px: every field on the homepage, /explore, /account and /contribute now
+computes at 16 or above, and the homepage search reads 16.5px with no border.
+
+The ratchet, because no layer could see this one. The build checks structure,
+qa.py checks that elements exist, the fit check measures whether a page runs
+off the edge, and none of them has an opinion about a font size. smoke_test.py
+now reads the computed size of every field inside its 375px iframe and fails
+the deploy under 16 (`MIN_INPUT_FONT` in scripts/layout_rules.py). Computed
+rather than grepped on purpose: the rule that caused this never said 15
+anywhere near the search.
+
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
 Hidde, on finding the whole attribution line under every page: "moet dit

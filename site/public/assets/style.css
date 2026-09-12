@@ -993,8 +993,16 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 }
 .hero-sub { padding: 1.6rem 2rem; text-align: center; }
 .hero-sub p { max-width: 44rem; margin: 0 auto; font-size: 14.5px; color: var(--ink-mid); line-height: 1.65; }
-.hero-search input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
-.hero-search input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
+/* The account page's email field, which is the only .hero-search on the site
+   that is not also an .at-search. Scoped on 2026-09-12, because unscoped it sat
+   300 lines below .at-search input and .poster-search input with the same
+   specificity and therefore quietly won on the homepage: the hero's search wore
+   this border, this 8px radius inside its own pill, and this 15px text. The
+   15px was the bug Hidde reported ("als je op mobile web op zoek klikt zoomt ie
+   raar in"), and see the block at the foot of this file for why 16 is a floor
+   rather than a preference. */
+.hero-search:not(.at-search) input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 16px; background: #fff; color: var(--ink); }
+.hero-search:not(.at-search) input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
 .hero-search .go-btn { margin-top: 0; }
 .go-btn.ghost { background: none; color: var(--moss); border: 1px solid var(--moss); }
 .pin:hover { transform: scale(1.15); }
@@ -1797,3 +1805,27 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
 .worthit-inline .worthit-row { gap: 0; }
 .worthit-inline .worthit-btn { border: 0; background: transparent; padding: 0 0.4rem; font-size: 17px; }
 .worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; }
+
+/* NOTHING A THUMB LANDS IN IS UNDER 16px ON A PHONE (2026-09-12).
+
+   Safari on iOS zooms the whole page in when a focused field carries text under
+   16px, and it never zooms back out: you tap search, the page jumps, and you
+   are left pinching your way back to a layout that was fine a second ago. It is
+   not a preference and no setting turns it off. There are two ways out and only
+   one is allowed here: meet 16, or pin the viewport with maximum-scale=1, which
+   stops the zoom by taking pinch-zoom away from everybody who needs it.
+
+   This block exists as a floor rather than as edits to the rules above, because
+   14px is a real design choice on a desktop dialog and the fault is a phone
+   fault. Chrome on Android and every desktop browser ignore the whole thing.
+
+   scripts/smoke_test.py measures this as executed at 375px, so a field that
+   ends up under 16 through the cascade (which is how the homepage search got
+   there) fails the deploy rather than waiting for somebody to tap it. */
+@media (max-width: 800px), (pointer: coarse) {
+  .acct-name-row input,
+  .app-getter-form input,
+  .suggest-form input, .suggest-form select, .suggest-form textarea,
+  .worthit-detail textarea,
+  .signin-form input { font-size: 16px; }
+}

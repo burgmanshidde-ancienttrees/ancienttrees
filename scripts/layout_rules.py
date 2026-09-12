@@ -57,3 +57,20 @@ SAME = 1.0
 # The width the web's phone checks measure at, and the reason the app measures on
 # the smallest phone it supports: the narrowest real screen is the honest one.
 PHONE_W = 375
+
+# ZOOM, and it is the one fault on this list that only one platform can have.
+#
+# Safari on iOS zooms the page in when a focused field carries text under 16px,
+# and it does not zoom back out. So a field at 15px is not slightly small, it is
+# a page that jumps the moment somebody taps it: Hidde, 2026-09-12, "als je op
+# mobile web op zoek klikt zoomt ie raar in", which was the homepage search at
+# 15px through a cascade nobody meant.
+#
+# It lives here rather than in smoke_test.py because this file is where the
+# thresholds live, and it is web-only because it is a browser behaviour rather
+# than a design bar. The app is native and cannot have it.
+#
+# Measured as EXECUTED, never as written: the rule that produced the bug never
+# said 15 anywhere near the search, it said it 300 lines away and won on
+# specificity. Only a computed style can see that.
+MIN_INPUT_FONT = 16.0
