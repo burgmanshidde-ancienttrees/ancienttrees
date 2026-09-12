@@ -72,14 +72,19 @@ Every city file follows this exact structure (see data/cities/london.json for th
         "url": null,
         "license": null,
         "attribution": null,
-        "status": "missing | found_needs_check | approved"
+        "status": "missing | found_needs_check | approved | held"
       },
+      "photos": [],
       "curation_status": "ai_generated | hidde_approved | flagged",
       "location_precision": "confirmed | approximate"
     }
   ]
 }
 ```
+
+**`photos` is the tree's FURTHER photographs, lead first after `photo` (Hidde, 2026-09-12: "meerdere afbeeldingen per boom").** It is optional and almost always absent. `photo` stays the lead and everything that counts, ranks or fronts a card still reads it, so nothing about photo work changes except that a second good picture of a tree no longer has to displace the first or be thrown away. The case that produced it: the Camphor of Munakata Shrine had a wide shot showing where it stands and a close-up showing the limbs and root flare, and only one could be published.
+
+An extra ships on exactly the terms the lead does, and that is the part not to get clever about: a verified open licence and attribution (hard rule 4), and for a reader's photograph `source` and `contributor_user_id` together, because photo_takedown.py now sweeps every photograph rather than the lead and that id is the whole of the deletion promise in /terms. Scarcity governs as everywhere else, a tree page is not an album. `sightings_publish.py` takes an `add` verdict beside `approve`, which publishes a reader's picture BESIDE the one a tree already has; it takes the same species and description checks an approval does. The full record is DECISIONS.md 2026-09-12.
 
 ## The research workflow (autonomous run)
 

@@ -1,5 +1,64 @@
 # Decisions
 
+## 2026-09-12 - A tree may carry several photographs, and the lead field does not move
+
+Hidde, sending a close-up of the Camphor of Munakata Shrine beside the wide shot
+already published: "Moeten we het niet ook mogelijk maken om meerdere
+afbeeldingen per boom te hebben ik vind het zonde dat deze niet zichtbaar is. De
+inzoom van de tweede die wel online staat."
+
+**The case makes the argument better than any principle.** The published picture
+shows where the tree stands: a gravel avenue in Kyoto Gyoen, a person for scale,
+the whole crown. The one that could not be shown at all is taken from underneath
+and shows the limb structure and the root flare, which is what tells a visitor
+this is the trunk they were looking for. Those are two different questions, a
+frame rarely answers both, and until today the only ways to handle the second
+picture were to displace the first or to throw it away.
+
+It also lands on rung 7's problem from the other side. 551 trees carry nothing
+that separates them from their neighbours, and the three things that can settle
+it are a photograph, a confirmed pin and a recognition line. A second photograph
+of the trunk is the strongest of the three, and we were discarding them.
+
+**The shape: `photo` stays the lead, `photos[]` carries the rest.** Additive
+rather than a new canonical field, and that is the whole decision. `photo` is
+read by roughly forty scripts, five feeds, the Swift model and seven translated
+page sets; almost all of those are counters asking "does this tree have a
+picture", and every one of them stays correct untouched. A reader cannot tell
+which field the lead came from, so the migration would have bought nothing and
+risked everything. One accessor, `usablePhotos()`, decides the set, and
+`usablePhoto()` is now its first element, so the card face, the og:image, the
+hero ranking and the app feed cannot drift from what the page shows.
+
+**What did NOT loosen, because this is the half that could hurt somebody.** An
+extra carries a licence, an attribution and a takedown id on exactly the terms
+the lead does. `photo_takedown.py` sweeps every photograph rather than the lead,
+or the promise in /terms would have broken silently for second pictures:
+preflight refuses a contributor photograph without its account id in either
+direction, and qa refuses an approved photograph the feed does not carry. Each of
+those checks read one field this morning and reads the set tonight. Scarcity
+still governs: a tree page is not an album, and a second picture ships for the
+same reason a first one does, because it shows this tree and meets the Cadiz
+standard.
+
+**`sightings_publish.py` gained an `add` verdict** for the case the other two got
+wrong: a good photograph of a tree that already has a good one. It takes the
+same species and description checks an approval does.
+
+**Both surfaces, different design, same behaviour.** The feed sends the resolved
+set, and only when there is more than one, so nothing re-decides order or credit
+on the phone. The web puts a thumbnail strip under the hero and pages the
+lightbox with chevrons and arrow keys; the app puts the same strip under its
+hero and pages by swipe with a counter, because that is what Apple Photos does
+and a chevron on a phone is a web habit. Both recorded in CONVENTIONS.md.
+
+**Found by looking, and worth recording separately:** the lightbox has been
+opening a 210 by 280 picture in the middle of a full black screen on every tree
+page, because `.tree-photo.tree-hero img { height: 280px; object-fit: cover }`
+out-specifies `.pv-frame img` and the dialog lives inside that figure. No gate
+could see it, since the dialog exists, the image loads and the link works.
+Measuring the rendered box is what found it.
+
 ## 2026-09-08 - A tree needs a reason, not just an honest page
 
 Hidde, shown that four trees had gone live in Nara overnight from his own app

@@ -25,6 +25,42 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Several photographs of one tree (2026-09-12)
+
+Hidde, sending a close-up of the Munakata camphor next to the wide shot already
+on the page: "Moeten we het niet ook mogelijk maken om meerdere afbeeldingen per
+boom te hebben ik vind het zonde dat deze niet zichtbaar is."
+
+Two controls, and they are separate lookups because they answer different
+questions: how a reader LEARNS there is more than one, and how they move
+between them once the picture is open.
+
+**Showing that more exist. Reference: Google Maps' place photographs and
+iNaturalist's observation page.** Both keep one lead image at full width and
+put a horizontally scrolling row of small square thumbnails under it, and both
+let the row run off the edge of the screen rather than wrapping it. Maps adds a
+count badge; iNaturalist does not, and with two or three pictures the thumbnails
+say it themselves. Read 2026-09-12 on both.
+
+**Paging once it is open, on the WEB. Reference: Wikipedia's Media Viewer**,
+which this project already follows for the lightbox itself (see 2026-09-03),
+so the paging comes with the reference rather than from a second place:
+chevrons at the left and right edges, a counter, the credit along the bottom,
+arrow keys, and the original one step further in.
+
+**Paging once it is open, in the APP. Reference: Apple Photos, and Google Maps'
+own viewer on iOS.** Neither draws chevrons. The gesture is a horizontal swipe
+and the affordance is the counter, because an iOS reader arrives already
+trained and a chevron on a phone is a web habit. This is the one place the two
+surfaces differ in DESIGN while matching in behaviour, which is what the
+both-surfaces rule asks for.
+
+What we did NOT copy, deliberately: Airbnb's grid of four under the hero, and a
+full-screen carousel with dots. Both are built for listings with twenty
+pictures. A tree has two or three, and scarcity is the rule here.
+
+---
+
 ## Helping somebody be SURE which one they found (2026-09-07)
 
 Hidde, testing in Nara: "deze hele flow zou je moeten benchmarken... als de
