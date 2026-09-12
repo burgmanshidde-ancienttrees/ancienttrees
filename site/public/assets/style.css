@@ -1850,3 +1850,20 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
 .worthit-inline .worthit-row { gap: 0; }
 .worthit-inline .worthit-btn { border: 0; background: transparent; padding: 0 0.4rem; font-size: 17px; }
 .worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; }
+
+/* The map credit, as quiet as it may honestly be (2026-09-12, Hidde: "can we
+   minimise it further"). What cannot change is that it exists and can be found:
+   OpenFreeMap's terms are one line, "Attribution is required", and the OSMF
+   guideline's collapsed state still wants an (i) in the corner. What can change
+   is how loudly it sits there while nobody is looking for it. So the five
+   seconds before it folds away are smaller and translucent rather than a solid
+   white band, and the dot it folds into carries no pill at all until a cursor
+   or a keyboard reaches it. */
+.maplibregl-ctrl-attrib { font-size: 10px; }
+.maplibregl-ctrl-attrib.maplibregl-compact-show {
+  background: rgba(246, 242, 233, 0.82); padding: 1px 22px 1px 6px; }
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) {
+  background: none; box-shadow: none; opacity: 0.55; transition: opacity 0.15s; }
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show):hover,
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show):focus-within {
+  opacity: 1; }

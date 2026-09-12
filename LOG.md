@@ -64,7 +64,74 @@ checked by me. **The close-up went live on your word** that it is the same
 tree: the upload had its GPS stripped in transit, so I could not settle it from
 the file, and the note on the photograph says so. If it is a different trunk it
 is a one-line edit. And **this is on a branch**: reaching the live site and
-your phone needs a merge to main, which is yours to call.
+your phone needs a merge to main. He asked for it from here, so PR #3 carries
+this branch into main and the site deploys from there.
+
+## 2026-09-12 - Night run 2026-09-12 05:57 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 50.9 minutes of its 120 minute window, 334 turns, 28 commands refused by the allowlist, ended clean (success). 2 tree(s) reached data/cities across 1 city file(s), and the run still wrote no log entry of its own. Claims left behind: dallas, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-12 - The map credit, made as quiet as it may honestly be
+
+Hidde: "can we minimise it further." What cannot move is that it exists and can
+be found. What can is how loudly it sits there while nobody is looking for it.
+
+The five seconds before it folds away are now 10px on a translucent ground
+instead of a solid white band, and the dot it folds into drops its white pill
+and its shadow entirely, sitting at 55 percent until a cursor or a keyboard
+reaches it. Verified on the deployed page: 24 by 24, background transparent,
+computed opacity 0.55, with the /sources link still inside it.
+
+One further step exists and was not taken, because it is a judgement about how
+literally to read a safe harbour rather than a build decision: starting
+collapsed, so the five seconds never happen. Most map apps do exactly that, and
+the OSMF guideline's three sanctioned collapses all describe something that was
+shown first. It is Hidde's call, not a run's.
+
+## 2026-09-12 - Five seconds, then the map credit is a 24 point (i)
+
+Hidde asked whether it has to be visible at all. It has to be reachable and it
+does not have to be read, and the line between those is written down: the OSMF
+attribution guideline adopted 2021-06-25 allows a credit to collapse
+"automatically on map interaction" or "automatically after five seconds", so
+long as "the user must still be able to find the licence information if they
+look for it, for example from an '(i)' button in the corner of the map."
+
+MapLibre already collapsed on a touch, which did nothing for a visitor who never
+touches the map. Now every map collapses after five seconds, from the one shared
+mapScript wrapper. Checked on the deployed page: 24 by 24, closed, with the
+/sources link inside it.
+
+It cannot go entirely. OpenFreeMap's terms say "Attribution is required" and the
+guideline's collapsed state still wants the (i) present. That is the floor.
+
+## 2026-09-12 - And the maps themselves now credit OpenStreetMap, which the city pages did not
+
+Found while checking the change above was safe, and it was not, quite. City
+and tree pages render with no footer at all, and their MapLibre attribution
+control was rendering EMPTY: measured on the deployed site, /explore showed
+the tile credit and /lisbon showed nothing, from the same style file. So the
+most common map pages on this site credited OpenStreetMap nowhere and had no
+link to /sources either, and that was already true before today.
+
+The style is not the problem: /assets/map-style.json carries the credit on its
+openmaptiles source. That source is declared by TileJSON url, and what comes
+back from the resolved TileJSON decides what the control shows, which is why it
+was there on one page and missing on another.
+
+Every map now adds its own AttributionControl, compact, at the map's top-left,
+carrying one extra link to /sources. Top-left because the bottom of these maps
+is under the sheet on a phone: at 375px the control's own centre point returned
+the search input as the topmost element, so it was rendered and invisible. It
+opens on load and collapses to a 24 point i on the first touch, which is
+MapLibre's own behaviour and what every Mapbox app does.
+
+The first attempt repeated OpenFreeMap, OpenMapTiles and OpenStreetMap a second
+time and wore a wide double band across the top of the map. It now says only
+what the tile credit cannot: the way to /sources, where Valhalla, FOSSGIS and
+the ODbL are named.
 
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
