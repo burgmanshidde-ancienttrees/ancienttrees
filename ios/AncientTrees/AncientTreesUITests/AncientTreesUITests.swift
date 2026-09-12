@@ -218,16 +218,21 @@ final class AncientTreesUITests: XCTestCase {
     /// over Amsterdam (Hidde, 2026-08-22, who typed exactly that).
     @MainActor
     func testSearchingForATreeMovesTheMapToIt() throws {
-        // Timeout widened 12->25s on 2026-09-09: the floor (iOS 18) job failed
-        // this exact assertion on every scheduled run for two days straight
-        // (0 of 3) while workflow_dispatch passed (1 of 1), the tell of runner
-        // contention slowing simulator launch rather than a real bug. The
-        // bundled ios/AncientTrees/AncientTrees/Data/trees.json already
-        // carries the Beethoven Plane, so this never depends on the network.
+        // Timeout widened 12->25s on 2026-09-09, then 25->45s on 2026-09-12:
+        // the floor (iOS 18) job failed this exact assertion again that day
+        // (19:09 UTC run), a third recurrence of the same runner-contention
+        // flake. The real fix is a retry flag on the floor job's xcodebuild
+        // call, matching the newest-OS job (line ~215 of ios.yml); it is
+        // written and cannot be pushed, this bot's token lacks `workflows`
+        // permission on .github/workflows/* (reported to Hidde 2026-09-09,
+        // still open). Widening the margin here is the mitigation available
+        // without that permission. The bundled
+        // ios/AncientTrees/AncientTrees/Data/trees.json already carries the
+        // Beethoven Plane, so this never depends on the network.
         let app = launch(["-map", "-search=beethoven"])
         let row = app.buttons.matching(
             NSPredicate(format: "label CONTAINS[c] 'Beethoven'")).firstMatch
-        XCTAssertTrue(row.waitForExistence(timeout: 25), "search found no Beethoven Plane")
+        XCTAssertTrue(row.waitForExistence(timeout: 45), "search found no Beethoven Plane")
         row.tap()
 
         // The map selects it, and the sheet shows that tree rather than
