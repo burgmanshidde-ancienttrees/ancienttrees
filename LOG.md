@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - Milan 24 -> 25: a tree named after a novelist nobody can connect to it
+
+Wrote up the one verified tree waiting in Milan's research file and merged it.
+La Pianta di Manzoni is the fourth separately named plane in Villa Litta
+Modignani park in Affori, and it exists as an entry because of an edit history
+rather than a document: a local mapper wrote that name onto this exact spot in
+2011, nine years before anyone attached the national register's measurements to
+the same point, so the name is neighbourhood knowledge and not a label copied
+off a government sheet. The register's own height for it, 28 metres, is six
+metres short of the park's Siamese pair, which is the argument that this is a
+genuinely separate tree rather than one we already publish restated.
+
+The interesting part is what the page does NOT say. Villa Litta was Count
+Trivulzio's salon and local histories put Alessandro Manzoni among its guests,
+which is almost certainly where the name comes from, and no source anywhere says
+this tree is why. So the story says the name, says the salon, says plainly that
+nobody has written down the connection, and asks the reader. Milan has taken a
+BLOCKER before for joining two true facts into a third neither source states,
+and this is the same shape of temptation with a novelist attached.
+
+Two more things stated rather than smoothed: the 4.1 metre girth comes from a
+plaque somebody copied down, not from the register, whose sheet has no girth at
+all; and nobody has dated the tree, because this register has no age field for
+any tree it holds. No `best_time`, which is the correct answer for a plane with
+no documented peak.
+
+Italian overlay written the same day. Count promises fixed on both sides and
+they were all stale already: the English intro still said twenty-three at 24
+trees, the Italian page still said 23. Build clean (5,612 pages), `qa.py` clean
+(8,699 pages), `preflight.py` 598 cities and 0 problems. Cost logged, claim
+released.
+
 ## 2026-09-13 - Alicante 19 -> 21: the elms that the epidemic never reached
 
 Wrote the two verified trees the Alicante verify pass had left waiting and

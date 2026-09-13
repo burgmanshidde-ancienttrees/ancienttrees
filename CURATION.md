@@ -11,6 +11,52 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 - Milan 24 -> 25: the fourth Villa Litta plane, written
+
+Write pass on the single verified tree in `data/research/milan-verified.json`,
+**mil_025 La Pianta di Manzoni** (London Plane, Parco di Villa Litta Modignani,
+Affori). 1 tree added, 1 flagged, 1 photo missing. `location_precision:
+confirmed`, on MASAF's sheet-14 point and a long-standing OSM node agreeing to
+within 8 m.
+
+The whole writing job here was keeping one bridge claim out of the prose, in a
+city that has already been served a BLOCKER for exactly that failure. The tree's
+local name is Manzoni's; Villa Litta was Count Trivulzio's salon in the
+nineteenth century and local histories name Alessandro Manzoni among its
+visitors. **No source joins those two facts**, so the story does not either. It
+states the name, states the salon, says in plain words that nobody has recorded
+why the tree carries the name, and asks the reader who knows. That is the
+publish-and-ask pattern rather than a hedge.
+
+Two other honesty points carried from `verify_notes` into the prose rather than
+left in the data:
+
+- **Girth 410 cm is not register data.** MASAF's sheet 14 has no girth field
+  filled at all (`girth_cm` is null in our own import). The 4.1 m comes from a
+  2020 OSM edit whose note cites a plaque near the tree, so the story attributes
+  it to a plaque copied down by a passer-by rather than to a survey. The height,
+  28 m, is the register's own and is presented as such.
+- **No age, and none derived.** Nothing publishes one, and this register carries
+  no age field for any entry it holds, which the story says rather than
+  apologising for. No derivation from the park's own 1700s planting era, which
+  would have been the bridge claim its sibling mil_015 deliberately avoided.
+
+No `best_time`: a single plane with no documented peak, and the park's fused
+Siamese pair (mil_015) already holds the bare-silhouette badge in this city.
+
+Count promises fixed on both language sides, all of them already stale before
+this tree: the English intro still said twenty-three at 24 trees, the meta
+description and free-to-visit FAQ twenty-four, `question_meta` twenty-three
+more; the Italian overlay's title, meta description, intro, `question_meta` and
+FAQ all still said 23. Italian translation for mil_025 written the same day,
+because preflight refuses a short overlay outright rather than degrading one
+page.
+
+Still open in `data/leads/milan.json`: **MASAF sheet 15** (257 m from mil_015, no
+girth, no name, no OSM node at its coordinate) stays a lead, and the verify pass
+added a new one, the Parco Nord Milano *Patriarchi del Parco* trail map, which
+names 30 specimens and gives no coordinate, girth or age for any of them.
+
 ## 2026-09-13 - Alicante 19 -> 21: two press-corroborated pairs written up
 
 Write pass on the two verified trees the Alicante verify pass left in

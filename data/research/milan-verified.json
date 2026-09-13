@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mil_025",
+    "name": "La Pianta di Manzoni",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 410,
+    "height_m": 28.0,
+    "location": {
+      "address": "Parco di Villa Litta Modignani, Viale Affori, 20161 Milano",
+      "latitude": 45.5168971,
+      "longitude": 9.1671044,
+      "neighbourhood": "Affori, Municipio 9"
+    },
+    "verified_sources": [
+      "MASAF national register (Elenco degli alberi monumentali d'Italia), sheet 14/F205/MI/03, Villa Litta - Viale Affori, Platanus acerifolia, height 28.0 m, no girth recorded, coordinate 45.516925,9.167047 (data/registers/italy-masaf.json)",
+      "OpenStreetMap node 1560739754, 'la Pianta di Manzoni', at 45.5168971,9.1671044 (8 m from the MASAF sheet-14 coordinate): the name was mapped by a local contributor in 2011 (changeset 10195321), well before a second contributor added the MASAF circumference/height/source tags in 2020 (changeset 90155733), so the name predates and is independent of the government data"
+    ],
+    "access": "Free, public park (same grounds as the already-published Il Platano Siamese di Villa Litta, mil_015, and I Platani di Villa Litta Modignani, mil_024)",
+    "transport": "8 min walk from Affori FN (M3) or Affori Centro (M3)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Resolves the 'Villa Litta's two unmeasured planes (register sheets 14 and 15)' lead in data/leads/milan.json, sheet 14 only. That lead worried sheet 14 (69 m from mil_015's own approximate pin) might simply BE mil_015 restated rather than a fourth distinct tree. Two things argue it is genuinely distinct: (1) the register height for sheet 14 is 28 m against the comune's own 34 m for mil_015 (VTA 9595, the fused Siamese pair), a 6 m gap too large to be pin noise for the same specimen; (2) OSM's node at this coordinate carries the name 'la Pianta di Manzoni', added in 2011, nine years before anyone attached the MASAF register data to it, so the name is independent local knowledge rather than a label copied from our own source. Villa Litta was Count Trivulzio's salon in the 19th century, 'frequentato da intellettuali come Alessandro Manzoni e Francesco Hayez' (in-lombardia.it, milanoaffori.it), which is the documented historical hook the local name most likely refers to, though no source states in so many words that this specific tree is why it carries the name; that connection is circumstantial and should be written as such, not asserted as fact (avoid a bridge claim). Coordinates: MASAF's sheet-14 point and OSM's long-standing point agree to within 8 m, the same convergence pattern that upgraded mil_009 to confirmed, so confirmed here too. Girth: the OFFICIAL MASAF sheet has no girth field (girth_cm null in our own register import); the 410 cm figure comes from a 2020 OSM edit whose note says the species was 'from a plaque nearby' and gives circumference 4.1 m alongside the same MASAF height and source link, i.e. a community contributor recording an on-site measurement/plaque rather than a second government publication. Flag this: girth_cm is carried because BRIEF_RESEARCH asks for it whenever any source gives one, but it is not independently corroborated the way the height is, so do not present it as register-confirmed in the story. No age published anywhere for this tree, consistent with the rest of this register (it carries no age field at all); left undocumented rather than derived, matching how the sibling entries in this same park (mil_015, mil_024) were handled. Distinct collectible point: a third individually-named plane in the same small park, about 65-70 m from mil_015 and about 150 m from mil_024, all walkable together in the existing Affori cluster with mil_009 (340 m away, corner of Viale Affori/Via Astesani).",
+    "how_to_recognise": "You can recognise it by the trunk, about 4.1 metres round on a single plane 28 metres tall. It stands about 65 metres from the park's fused double-trunked Siamese plane and 150 metres from the taller pair further into the park.",
+    "story": "This plane carries a name nobody has explained. Affori calls it la Pianta di Manzoni, the Manzoni plant, and the label is older than any of the data attached to it: a local contributor mapped that name onto this exact spot in 2011, nine years before anyone tagged the same point with the national register's measurements. The name is not a government label. It is what somebody in the neighbourhood already knew.\n\nThe obvious suspect is the villa. In the nineteenth century Villa Litta Modignani was Count Trivulzio's salon, and the intellectuals local histories name among its visitors include Alessandro Manzoni, who wrote I Promessi Sposi. Whether the novelist ever stood under this particular tree, or whether the name arrived some other way entirely, nobody has recorded. If you know the story, tell us.\n\nWhat is on paper is thinner than the name suggests. Italy's monumental-tree register lists the tree at 28 metres tall and records no girth for it at all. The 4.1 metres round quoted here comes from a plaque beside the tree, copied down by a passer-by rather than a surveyor, so read it as a reading rather than a survey. There is no age anywhere: this register carries no age field for any tree it holds.\n\nIt is the third separately named plane in one small park, 65 metres from the fused Siamese pair and 150 from the taller two."
+  }
+]
