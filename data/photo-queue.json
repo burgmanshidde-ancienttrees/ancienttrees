@@ -34136,7 +34136,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "Close-up of lime leaves and flowers; no crown or trunk."
+     "verdict": "Species mismatch: this observation is Tilia americana (American Basswood); ott_002 is Tilia platyphyllos 'Vitifolia' (Large-leaved Lime), a different species."
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -34145,7 +34145,9 @@
      "licence": "CC BY",
      "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.4267383333,-75.6974116667"
+     "obs_location": "45.4267383333,-75.6974116667",
+     "judged": "reject",
+     "verdict": "Species mismatch: same observation, Tilia americana, not ott_002's Tilia platyphyllos 'Vitifolia'."
     }
    ]
   },
@@ -34164,7 +34166,7 @@
      "source": "inaturalist",
      "obs_location": "45.4267383333,-75.6974116667",
      "judged": "reject",
-     "verdict": "Same leaf close-up offered for both trees of the pair; no crown or trunk."
+     "verdict": "Species mismatch: this observation is Tilia americana (American Basswood); ott_003 is Tilia platyphyllos 'Vitifolia' (Large-leaved Lime), a different species."
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -34173,7 +34175,9 @@
      "licence": "CC BY",
      "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.4267383333,-75.6974116667"
+     "obs_location": "45.4267383333,-75.6974116667",
+     "judged": "reject",
+     "verdict": "Species mismatch: same observation, Tilia americana, not ott_003's Tilia platyphyllos 'Vitifolia'."
     }
    ]
   },
@@ -34192,7 +34196,7 @@
      "source": "inaturalist",
      "obs_location": "45.4272962,-75.6964251997",
      "judged": "reject",
-     "verdict": "Leaf held in a hand against the sky; a close-up, not the tree."
+     "verdict": "LOOKED: second photo in the same observation is also a leaf and flower spray held in a hand against the sky, not the tree. Fails the Cadiz standard like the first photo already rejected in this observ"
     },
     {
      "title": "iNat obs 121738621 (Cladrastis kentukea)",
@@ -34201,7 +34205,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Andy, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.4272962,-75.6964251997"
+     "obs_location": "45.4272962,-75.6964251997",
+     "judged": "reject",
+     "verdict": "LOOKED: leaf and flower spray held in a hand against the sky, not the tree. Fails the Cadiz standard like the other photo in this observation."
     }
    ]
   },
@@ -99591,6 +99597,1526 @@
      "verdict": "Filename says Ficus outright; ali_021 is a Silky Oak, not a Ficus."
     }
    ]
+  },
+  "ber_022": {
+   "city": "Berlin",
+   "name": "The Englischer Garten Wingnut",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 10.jpg (Wikidata Q125772584)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_10.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_10.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.5171769,
+     "lng": 13.3475582,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "source": "wikidata/Q125772584"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_01.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_01.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51718713,
+     "lng": 13.34752796,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_02.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_02.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51719203,
+     "lng": 13.34751802,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_03.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_03.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.5171953,
+     "lng": 13.3475114,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_04.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_04.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.5172002,
+     "lng": 13.34750147,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_05.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_05.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51720183,
+     "lng": 13.34749816,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_06.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_06.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51723062,
+     "lng": 13.34749433,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 07.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_07.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_07.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51724092,
+     "lng": 13.34750069,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 08.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_08.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_08.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51722607,
+     "lng": 13.34745132,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 09.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_09.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_09.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51720636,
+     "lng": 13.34741441,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 11.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_11.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_11.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten with snow 2025-02-14 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_with_snow_2025-02-14_04.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_with_snow_2025-02-14_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_with_snow_2025-02-14_04.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)"
+    },
+    {
+     "title": "File:Von der Queen 1965 gepflanzte Amerikanische Roteiche im Großen Tiergarten in Berlin.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Von_der_Queen_1965_gepflanzte_Amerikanische_Roteiche_im_Gro%C3%9Fen_Tiergarten_in_Berlin.jpg/960px-Von_der_Queen_1965_gepflanzte_Amerikanische_Roteiche_im_Gro%C3%9Fen_Tiergarten_in_Berlin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Von_der_Queen_1965_gepflanzte_Amerikanische_Roteiche_im_Gro%C3%9Fen_Tiergarten_in_Berlin.jpg",
+     "licence": "CC0",
+     "author": "Singlespeedfahrer",
+     "lat": 52.51714,
+     "lng": 13.34754,
+     "cats": "Category:Berlin photographs taken on 2022-09-10 Category:CC-Zero Category:Famous Quercus in Germany Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten Category:On OSM Category:Quercus in Berlin Category:Quercus rubra in Germany Category:Quercus rubra in the Northern Hemisphere in September Category:Self-published work Category:September 2022 in Berlin-Tiergarten Category:Trees in Berlin in September Category:Trees planted by Elizabeth II of the United Kingdom Category:Trees planted in 1965"
+    }
+   ]
+  },
+  "ber_023": {
+   "city": "Berlin",
+   "name": "The Queen's Oak of the Englischer Garten",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_01.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_01.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51718713,
+     "lng": 13.34752796,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_02.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_02.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51719203,
+     "lng": 13.34751802,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_03.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_03.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.5171953,
+     "lng": 13.3475114,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_04.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_04.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.5172002,
+     "lng": 13.34750147,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_05.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_05.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51720183,
+     "lng": 13.34749816,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_06.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_06.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51723062,
+     "lng": 13.34749433,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 07.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_07.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_07.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51724092,
+     "lng": 13.34750069,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 08.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_08.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_08.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.51722607,
+     "lng": 13.34745132,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 10.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_10.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_2024-05-09_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_2024-05-09_10.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.5171769,
+     "lng": 13.3475582,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten with snow 2025-02-14 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_with_snow_2025-02-14_05.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_with_snow_2025-02-14_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_with_snow_2025-02-14_05.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten with snow 2025-02-14 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_with_snow_2025-02-14_06.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten%2C_Englischer_Garten_with_snow_2025-02-14_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Gro%C3%9Fer_Tiergarten,_Englischer_Garten_with_snow_2025-02-14_06.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)"
+    },
+    {
+     "title": "File:Von der Queen 1965 gepflanzte Amerikanische Roteiche im Großen Tiergarten in Berlin.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Von_der_Queen_1965_gepflanzte_Amerikanische_Roteiche_im_Gro%C3%9Fen_Tiergarten_in_Berlin.jpg/960px-Von_der_Queen_1965_gepflanzte_Amerikanische_Roteiche_im_Gro%C3%9Fen_Tiergarten_in_Berlin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Von_der_Queen_1965_gepflanzte_Amerikanische_Roteiche_im_Gro%C3%9Fen_Tiergarten_in_Berlin.jpg",
+     "licence": "CC0",
+     "author": "Singlespeedfahrer",
+     "lat": 52.51714,
+     "lng": 13.34754,
+     "cats": "Category:Berlin photographs taken on 2022-09-10 Category:CC-Zero Category:Famous Quercus in Germany Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten Category:On OSM Category:Quercus in Berlin Category:Quercus rubra in Germany Category:Quercus rubra in the Northern Hemisphere in September Category:Self-published work Category:September 2022 in Berlin-Tiergarten Category:Trees in Berlin in September Category:Trees planted by Elizabeth II of the United Kingdom Category:Trees planted in 1965"
+    },
+    {
+     "title": "iNat obs 347302844 (Quercus libani)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/633219461/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/347302844",
+     "licence": "CC BY",
+     "author": "(c) Sascha Nunheim, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "52.5167252592,13.3487540537"
+    },
+    {
+     "title": "iNat obs 347302844 (Quercus libani)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/633219888/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/347302844",
+     "licence": "CC BY",
+     "author": "(c) Sascha Nunheim, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "52.5167252592,13.3487540537"
+    },
+    {
+     "title": "iNat obs 23103766 (Quercus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/35818676/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/23103766",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "52.5165703623,13.3466066793"
+    },
+    {
+     "title": "iNat obs 23103766 (Quercus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/35818691/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/23103766",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "52.5165703623,13.3466066793"
+    },
+    {
+     "title": "iNat obs 23103679 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/35818544/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/23103679",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "52.5173499396,13.3473473042"
+    },
+    {
+     "title": "iNat obs 23103679 (Quercus robur)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/35818557/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/23103679",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "52.5173499396,13.3473473042"
+    }
+   ]
+  },
+  "dal_009": {
+   "city": "Dallas",
+   "name": "The Storytelling Place Red Oak",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "deg_003": {
+   "city": "Degsne",
+   "name": "Bagrėnas Linden",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "flo_025": {
+   "city": "Florence",
+   "name": "The Farnia of Mantignano",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Chiesa di Santa Maria a Mantignano (Florence) - Bell Tower.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/42/Chiesa_di_Santa_Maria_a_Mantignano_%28Florence%29_-_Bell_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Maria_a_Mantignano_(Florence)_-_Bell_Tower.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Cyberuly",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bell towers in Florence Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Santa Maria a Mantignano (Florence) Category:Self-published work"
+    },
+    {
+     "title": "File:Chiesa di Santa Maria a Mantignano (Florence) - East side - Apse.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Chiesa_di_Santa_Maria_a_Mantignano_%28Florence%29_-_East_side_-_Apse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Maria_a_Mantignano_(Florence)_-_East_side_-_Apse.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Cyberuly",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Santa Maria a Mantignano (Florence) Category:Self-published work"
+    },
+    {
+     "title": "File:Chiesa di Santa Maria a Mantignano (Florence) - North side - Main Door.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/98/Chiesa_di_Santa_Maria_a_Mantignano_%28Florence%29_-_North_side_-_Main_Door.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Maria_a_Mantignano_(Florence)_-_North_side_-_Main_Door.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Cyberuly",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Santa Maria a Mantignano (Florence) Category:Self-published work"
+    },
+    {
+     "title": "File:Chiesa di Santa Maria a Mantignano (Florence) - West side - Overview 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Chiesa_di_Santa_Maria_a_Mantignano_%28Florence%29_-_West_side_-_Overview_01.jpg/960px-Chiesa_di_Santa_Maria_a_Mantignano_%28Florence%29_-_West_side_-_Overview_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Maria_a_Mantignano_(Florence)_-_West_side_-_Overview_01.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Cyberuly",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Santa Maria a Mantignano (Florence) Category:Self-published work"
+    },
+    {
+     "title": "File:Chiesa di Santa Maria a Mantignano (Florence) - West side - Overview 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Chiesa_di_Santa_Maria_a_Mantignano_%28Florence%29_-_West_side_-_Overview_02.jpg/960px-Chiesa_di_Santa_Maria_a_Mantignano_%28Florence%29_-_West_side_-_Overview_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Maria_a_Mantignano_(Florence)_-_West_side_-_Overview_02.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Cyberuly",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Santa Maria a Mantignano (Florence) Category:Self-published work"
+    }
+   ]
+  },
+  "flo_026": {
+   "city": "Florence",
+   "name": "The Poplar of the Renaioli",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Acero campestreIMG 3378 01.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Acero_campestreIMG_3378_01.JPG/960px-Acero_campestreIMG_3378_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Acero_campestreIMG_3378_01.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Assianir",
+     "lat": 43.786,
+     "lng": 11.21,
+     "cats": "Category:Acer campestre (leaves) Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Canon EOS 6D"
+    },
+    {
+     "title": "File:Acero campestreIMG 3378 02.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Acero_campestreIMG_3378_02.JPG/960px-Acero_campestreIMG_3378_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Acero_campestreIMG_3378_02.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Assianir",
+     "lat": 43.786,
+     "lng": 11.21,
+     "cats": "Category:Acer campestre (leaves) Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Canon EOS 6D"
+    },
+    {
+     "title": "File:Augusto bastianini, renaioli sull'arno, 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Augusto_bastianini%2C_renaioli_sull%27arno%2C_01.jpg/960px-Augusto_bastianini%2C_renaioli_sull%27arno%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Augusto_bastianini,_renaioli_sull%27arno,_01.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Augusto Bastianini Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Paintings in the Galleria d'arte moderna (Florence) Category:Photographs by User:Sailko Category:Photographs of paintings by User:Sailko Category:Sand mining in art Category:Self-published work"
+    },
+    {
+     "title": "File:Borrani Renaioli nel Mugnone.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Borrani_Renaioli_nel_Mugnone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Borrani_Renaioli_nel_Mugnone.jpg",
+     "licence": "Public domain",
+     "author": "Odoardo Borrani",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1880 paintings from Italy Category:Artworks without Wikidata item Category:CC-PD-Mark Category:Mugnone Category:PD-Art (PD-old-auto-expired) Category:PD-old-100-expired Category:Paintings by Odoardo Borrani Category:Sand mining in art"
+    },
+    {
+     "title": "File:Odoardo borrani, renaioli sul mugnone, 1880, 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Odoardo_borrani%2C_renaioli_sul_mugnone%2C_1880%2C_01.jpg/960px-Odoardo_borrani%2C_renaioli_sul_mugnone%2C_1880%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Odoardo_borrani,_renaioli_sul_mugnone,_1880,_01.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Paintings by Odoardo Borrani Category:Paintings in the Galleria d'arte moderna (Florence) Category:Photographs by User:Sailko Category:Photographs of paintings by User:Sailko Category:Sand mining in art Category:Self-published work"
+    },
+    {
+     "title": "File:Odoardo borrani, renaioli sul mugnone, 1880, 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Odoardo_borrani%2C_renaioli_sul_mugnone%2C_1880%2C_02.jpg/960px-Odoardo_borrani%2C_renaioli_sul_mugnone%2C_1880%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Odoardo_borrani,_renaioli_sul_mugnone,_1880,_02.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Paintings by Odoardo Borrani Category:Paintings in the Galleria d'arte moderna (Florence) Category:Photographs by User:Sailko Category:Photographs of paintings by User:Sailko Category:Sand mining in art Category:Self-published work"
+    },
+    {
+     "title": "File:Odoardo borrani, renaioli sul mugnone, 1880.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Odoardo_borrani%2C_renaioli_sul_mugnone%2C_1880.jpg/960px-Odoardo_borrani%2C_renaioli_sul_mugnone%2C_1880.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Odoardo_borrani,_renaioli_sul_mugnone,_1880.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Paintings by Odoardo Borrani Category:Paintings in the Galleria d'arte moderna (Florence) Category:Photographs by User:Sailko Category:Photographs of paintings by User:Sailko Category:Sand mining in art Category:Self-published work"
+    }
+   ]
+  },
+  "gda_007": {
+   "city": "Gdansk",
+   "name": "The Maples of Hugo Conwentz",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "gda_008": {
+   "city": "Gdansk",
+   "name": "The Ginkgo of Park Oliwski",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Brzoza brodawkowata.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Brzoza_brodawkowata.JPG/960px-Brzoza_brodawkowata.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Brzoza_brodawkowata.JPG",
+     "licence": "CC BY-SA 3.0 pl",
+     "author": "Agata Zamorska",
+     "lat": 54.4114756,
+     "lng": 18.56077909,
+     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm"
+    }
+   ]
+  },
+  "gda_009": {
+   "city": "Gdansk",
+   "name": "The Cucumber Magnolia of Park Oliwski",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 177883786 (Magnoliopsida)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/309441525/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/177883786",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "54.4111333333,18.5584533333"
+    }
+   ]
+  },
+  "gda_010": {
+   "city": "Gdansk",
+   "name": "The Three-Trunked Katsura of Park Oliwski",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Brzoza brodawkowata.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Brzoza_brodawkowata.JPG/960px-Brzoza_brodawkowata.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Brzoza_brodawkowata.JPG",
+     "licence": "CC BY-SA 3.0 pl",
+     "author": "Agata Zamorska",
+     "lat": 54.4114756,
+     "lng": 18.56077909,
+     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm"
+    },
+    {
+     "title": "File:Cercidiphyllum japonicum Oliwa.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Cercidiphyllum_japonicum_Oliwa.JPG/960px-Cercidiphyllum_japonicum_Oliwa.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cercidiphyllum_japonicum_Oliwa.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Crusier",
+     "lat": 54.411516,
+     "lng": 18.559832,
+     "cats": "Category:Adam Mickiewicz Park (Gdańsk-Oliwa) Category:CC-BY-SA-3.0 Category:Cercidiphyllum japonicum Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Photographs by Crusier Category:Self-published work Category:Taken with Canon EOS 500D Category:Trees in Gdańsk Category:Unassessed QI candidates"
+    },
+    {
+     "title": "File:Cercidiphyllum japonicum Oliwa 2.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Cercidiphyllum_japonicum_Oliwa_2.JPG/960px-Cercidiphyllum_japonicum_Oliwa_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cercidiphyllum_japonicum_Oliwa_2.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Crusier",
+     "lat": 54.411555,
+     "lng": 18.559887,
+     "cats": "Category:Adam Mickiewicz Park (Gdańsk-Oliwa) Category:CC-BY-SA-3.0 Category:Cercidiphyllum japonicum Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Photographs by Crusier Category:Self-published work Category:Taken with Canon EOS 500D Category:Trees in Gdańsk Category:Unassessed QI candidates"
+    }
+   ]
+  },
+  "gda_011": {
+   "city": "Gdansk",
+   "name": "The Giant Thuja of Park Oliwski",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Brzoza brodawkowata.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Brzoza_brodawkowata.JPG/960px-Brzoza_brodawkowata.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Brzoza_brodawkowata.JPG",
+     "licence": "CC BY-SA 3.0 pl",
+     "author": "Agata Zamorska",
+     "lat": 54.4114756,
+     "lng": 18.56077909,
+     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm"
+    }
+   ]
+  },
+  "gda_012": {
+   "city": "Gdansk",
+   "name": "The Ivy Elm of Park Oliwski",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Brzoza brodawkowata.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Brzoza_brodawkowata.JPG/960px-Brzoza_brodawkowata.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Brzoza_brodawkowata.JPG",
+     "licence": "CC BY-SA 3.0 pl",
+     "author": "Agata Zamorska",
+     "lat": 54.4114756,
+     "lng": 18.56077909,
+     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm"
+    }
+   ]
+  },
+  "kun_007": {
+   "city": "Kaunas",
+   "name": "Sitkūnai Forest Oak I",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kun_008": {
+   "city": "Kaunas",
+   "name": "Sitkūnai Forest Oak II",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kun_009": {
+   "city": "Kaunas",
+   "name": "Kiaunupis Oak",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mil_024": {
+   "city": "Milan",
+   "name": "I Platani di Villa Litta Modignani",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Platano comune a02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Platano_comune_a02.jpg/960px-Platano_comune_a02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platano_comune_a02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Alberto Panzani",
+     "lat": 45.515147,
+     "lng": 9.166122,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Platano comune a03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Platano_comune_a03.jpg/960px-Platano_comune_a03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platano_comune_a03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Alberto Panzani",
+     "lat": 45.515147,
+     "lng": 9.166122,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    }
+   ]
+  },
+  "mil_025": {
+   "city": "Milan",
+   "name": "La Pianta di Manzoni",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Platano comune a02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Platano_comune_a02.jpg/960px-Platano_comune_a02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platano_comune_a02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Alberto Panzani",
+     "lat": 45.515147,
+     "lng": 9.166122,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Platano comune a03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Platano_comune_a03.jpg/960px-Platano_comune_a03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platano_comune_a03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Alberto Panzani",
+     "lat": 45.515147,
+     "lng": 9.166122,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    }
+   ]
+  },
+  "mnp_001": {
+   "city": "Minneapolis",
+   "name": "The Rockwood Oak",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mnp_002": {
+   "city": "Minneapolis",
+   "name": "The Shoe Tree",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Shoe Tree at University of Minnesota Twin Cities Campus, West Bank (18222498566).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Shoe_Tree_at_University_of_Minnesota_Twin_Cities_Campus%2C_West_Bank_%2818222498566%29.jpg/960px-Shoe_Tree_at_University_of_Minnesota_Twin_Cities_Campus%2C_West_Bank_%2818222498566%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Shoe_Tree_at_University_of_Minnesota_Twin_Cities_Campus,_West_Bank_(18222498566).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Tony Webster from Minneapolis, Minnesota, United States",
+     "lat": 44.972588,
+     "lng": -93.241567,
+     "cats": "Category:April 2007 in Minneapolis Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:Mississippi River at Minneapolis Category:Photographs by Tony Webster Category:Shoe trees (trees with old shoes) Category:United States photographs taken on 2007-04-14 Category:University of Minnesota (Minneapolis campus)"
+    }
+   ]
+  },
+  "mnp_003": {
+   "city": "Minneapolis",
+   "name": "The Windom Park Basswood",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mnp_004": {
+   "city": "Minneapolis",
+   "name": "The Eloise Butler Hemlock",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mty_001": {
+   "city": "Monterey",
+   "name": "The Lone Cypress",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:17-Mile Drive Monterey September 2012 003.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/17-Mile_Drive_Monterey_September_2012_003.jpg/960px-17-Mile_Drive_Monterey_September_2012_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:17-Mile_Drive_Monterey_September_2012_003.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "King of Hearts",
+     "lat": 36.5694,
+     "lng": -121.9651,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lone Cypress (Pebble Beach, California) Category:Quality images Category:Quality images by King of Hearts Category:Quality images missing SDC depicts Category:Self-published work Category:Taken with Nikon D40 Category:Uploaded with VicuñaUploader"
+    },
+    {
+     "title": "File:Lone Cypress 17-Mile Drive 2013.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Lone_Cypress_17-Mile_Drive_2013.jpg/960px-Lone_Cypress_17-Mile_Drive_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_Cypress_17-Mile_Drive_2013.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Tuxyso",
+     "lat": 36.56957833,
+     "lng": -121.96573833,
+     "cats": "Category:CC-BY-SA-3.0 Category:Featured pictures by Tuxyso Category:Featured pictures on Wikimedia Commons Category:Files with coordinates missing SDC location of creation Category:Images by Tuxyso Category:Images of USA by Tuxyso Category:Information field template with formatting Category:Lone Cypress (Pebble Beach, California) Category:Lone Cypress Overlook Category:Pictures of the day (2013) Category:Quality images Category:Quality images by Tuxyso Category:Selection WikiCon 2013 Category:Self-published work Category:Taken with Nikon D7000"
+    },
+    {
+     "title": "File:Lone Cypress Midway Point.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Lone_Cypress_Midway_Point.jpg/960px-Lone_Cypress_Midway_Point.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_Cypress_Midway_Point.jpg",
+     "licence": "Public domain",
+     "author": "Lewis Josselyn",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Lone Cypress (Pebble Beach, California) Category:Midpoints Category:Monterey cypress trees by Lewis Josselyn Category:PD US expired"
+    },
+    {
+     "title": "File:Lone Cypress Pebble Beach (133242637).jpeg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Lone_Cypress_Pebble_Beach_%28133242637%29.jpeg/960px-Lone_Cypress_Pebble_Beach_%28133242637%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_Cypress_Pebble_Beach_(133242637).jpeg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Ilya Grigorik",
+     "lat": 36.568822,
+     "lng": -121.964983,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Lone Cypress (Pebble Beach, California) Category:Photos imported with import-500px Category:Taken with DJI FC300X"
+    },
+    {
+     "title": "File:Lone Cypress Wide (177206597).jpeg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Lone_Cypress_Wide_%28177206597%29.jpeg/960px-Lone_Cypress_Wide_%28177206597%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_Cypress_Wide_(177206597).jpeg",
+     "licence": "CC BY 3.0",
+     "author": "Lorenzo Fernandez Kopec",
+     "lat": 36.5687397,
+     "lng": -121.9653225,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lone Cypress (Pebble Beach, California) Category:Photos imported with import-500px"
+    },
+    {
+     "title": "File:Lone Cypress on a sunny day.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Lone_Cypress_on_a_sunny_day.jpg/960px-Lone_Cypress_on_a_sunny_day.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_Cypress_on_a_sunny_day.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Harvey Barrison",
+     "lat": 36.568748,
+     "lng": -121.965339,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files created by Harvey Barrison Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Lone Cypress (Pebble Beach, California) Category:United States photographs taken on 2011-10-17"
+    },
+    {
+     "title": "File:Lone Cypress tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Lone_Cypress_tree.jpg/960px-Lone_Cypress_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_Cypress_tree.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Tanz18",
+     "lat": 36.56914167,
+     "lng": -121.96504167,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in the United States Category:Images from Wiki Loves Monuments 2018 in the United States missing state categorization Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Lone Cypress (Pebble Beach, California) Category:Self-published work Category:United States photographs taken on 2018-09-01 Category:Uploaded via Campaign:wlm-us Category:Wiki Loves Monuments 2018 in the United States unreviewed"
+    },
+    {
+     "title": "File:Lone cypress tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Lone_cypress_tree.jpg/960px-Lone_cypress_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_cypress_tree.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "GayleKaren",
+     "lat": 36.568748,
+     "lng": -121.965339,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Lone Cypress (Pebble Beach, California) Category:Self-published work Category:United States photographs taken on 2016-01-15 Category:Uploaded with Mobile/iOS"
+    },
+    {
+     "title": "File:Lone cypress tree Monterey CA photo Don Ramey Logan.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Lone_cypress_tree_Monterey_CA_photo_Don_Ramey_Logan.jpg/960px-Lone_cypress_tree_Monterey_CA_photo_Don_Ramey_Logan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lone_cypress_tree_Monterey_CA_photo_Don_Ramey_Logan.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Don Ramey Logan",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Lone Cypress (Pebble Beach, California) Category:Photographs by Don Ramey Logan Category:Taken with Nikon D70 Category:With trademark"
+    },
+    {
+     "title": "File:Lonely Cypress - panoramio - Eduardo Manchon.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Lonely_Cypress_-_panoramio_-_Eduardo_Manchon.jpg/960px-Lonely_Cypress_-_panoramio_-_Eduardo_Manchon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lonely_Cypress_-_panoramio_-_Eduardo_Manchon.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Eduardo Manchon",
+     "lat": 36.569091,
+     "lng": -121.964947,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Lone Cypress (Pebble Beach, California) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7 Category:United States photographs taken on 2009-03-22"
+    },
+    {
+     "title": "File:Lonely Cypress - panoramio - Eduardo Manchon (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Lonely_Cypress_-_panoramio_-_Eduardo_Manchon_%281%29.jpg/960px-Lonely_Cypress_-_panoramio_-_Eduardo_Manchon_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lonely_Cypress_-_panoramio_-_Eduardo_Manchon_(1).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Eduardo Manchon",
+     "lat": 36.569091,
+     "lng": -121.964947,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Lone Cypress (Pebble Beach, California) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7 Category:United States photographs taken on 2009-03-22"
+    },
+    {
+     "title": "File:The Lone Cypress 4888861031.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/The_Lone_Cypress_4888861031.jpg/960px-The_Lone_Cypress_4888861031.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Lone_Cypress_4888861031.jpg",
+     "licence": "CC BY 2.0",
+     "author": "CGP Grey",
+     "lat": 36.568748,
+     "lng": -121.965339,
+     "cats": "Category:Black and white photographs of the United States in the 2000s Category:Buildings with addresses Category:C. G. P. Grey Images Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by trusted users Category:Lone Cypress (Pebble Beach, California)"
+    },
+    {
+     "title": "iNat obs 104802192 (Hesperocyparis macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175691113/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/104802192",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5694883333,-121.9654466667"
+    },
+    {
+     "title": "iNat obs 104802192 (Hesperocyparis macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175691116/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/104802192",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5694883333,-121.9654466667"
+    },
+    {
+     "title": "iNat obs 118667711 (Hesperocyparis macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/200523176/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/118667711",
+     "licence": "CC BY",
+     "author": "(c) Ashwin Srinivasan, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.5692333333,-121.9649716667"
+    },
+    {
+     "title": "iNat obs 228193382 (Hesperocyparis macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/404913136/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/228193382",
+     "licence": "CC BY",
+     "author": "(c) aross0805, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.5695304871,-121.9655075073"
+    },
+    {
+     "title": "iNat obs 314868645 (Hesperocyparis macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/568741378/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/314868645",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5695333333,-121.9654533333"
+    },
+    {
+     "title": "iNat obs 314868645 (Hesperocyparis macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/568741430/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/314868645",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5695333333,-121.9654533333"
+    }
+   ]
+  },
+  "mty_002": {
+   "city": "Monterey",
+   "name": "The Old Veteran of Point Lobos",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 105816306 (Cupressus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/177631496/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/105816306",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5154472222,-121.9425111111"
+    }
+   ]
+  },
+  "mty_003": {
+   "city": "Monterey",
+   "name": "The Moon Tree of Friendly Plaza",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 47465894 (Sequoia sempervirens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/75283268/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/47465894",
+     "licence": "CC BY",
+     "author": "(c) Nelson Balcar, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.59792833,-121.89698"
+    },
+    {
+     "title": "iNat obs 47465894 (Sequoia sempervirens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/75283122/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/47465894",
+     "licence": "CC BY",
+     "author": "(c) Nelson Balcar, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.59792833,-121.89698"
+    }
+   ]
+  },
+  "mrk_001": {
+   "city": "Mrákotín",
+   "name": "The Pear Tree in the Middle of the Field",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Protected pear tree by Mrákotín.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Protected_pear_tree_by_Mr%C3%A1kot%C3%ADn.jpg/960px-Protected_pear_tree_by_Mr%C3%A1kot%C3%ADn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Protected_pear_tree_by_Mr%C3%A1kot%C3%ADn.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "This file is available under Creative Commons BY-SA license. Basically: You can use this picture for any purpose, provid",
+     "lat": 49.81877,
+     "lng": 15.95953,
+     "cats": "Category:CC-BY-SA-3.0 Category:Dub u Prosetína Category:Famous trees in Chrudim District Category:Files with coordinates missing SDC location of creation Category:Hrušeň u Mrákotína Category:Mediagrant Category:Mediagrant:Foto českých obcí Category:Mrákotín (Chrudim District) Category:Photos taken with WMCZ camera Category:Uploaded with VicuñaUploader"
+    }
+   ]
+  },
+  "nyi_001": {
+   "city": "Nyingchi",
+   "name": "King Cypress",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Cupressus gigantea Bajie.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/86/Cupressus_gigantea_Bajie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Cupressus_gigantea_Bajie.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "卢传雄",
+     "lat": 29.622891,
+     "lng": 94.402868,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cupressus gigantea Category:Files with coordinates missing SDC location of creation Category:King Cypress tree Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+    },
+    {
+     "title": "File:King Cypress Tree.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b9/King_Cypress_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:King_Cypress_Tree.jpg",
+     "licence": "Public domain",
+     "author": "Kosi Gramatikoff  (Kosigrim at English Wikipedia)",
+     "lat": 29.622229,
+     "lng": 94.402184,
+     "cats": "Category:2005 in Tibet Category:2005 photographs Category:Bayi District Category:Cupressus gigantea Category:Files with coordinates missing SDC location of creation Category:King Cypress tree Category:PD-user Category:Prayer flags in Tibet Category:Trees in Tibet Category:Ü-Tsang"
+    }
+   ]
+  },
+  "ott_015": {
+   "city": "Ottawa",
+   "name": "The Tom Thomson Jack Pine",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Magnolia in bloom (52064059612).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Magnolia_in_bloom_%2852064059612%29.jpg/960px-Magnolia_in_bloom_%2852064059612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_in_bloom_(52064059612).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.392758,
+     "lng": -75.704659,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Title and category (Magnolia in flower) confirm this is a magnolia, not the Jack Pine ott_015."
+    },
+    {
+     "title": "File:Memorial Tree at the Farm (34068846550).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Memorial_Tree_at_the_Farm_%2834068846550%29.jpg/960px-Memorial_Tree_at_the_Farm_%2834068846550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Memorial_Tree_at_the_Farm_(34068846550).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.391894,
+     "lng": -75.705956,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC inception Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "reject",
+     "verdict": "LOOKED at the full image: an Eastern Redbud (Cercis canadensis) memorial plaque at the base of the trunk in frame reads it explicitly. ott_015 is a Jack Pine (Pinus banksiana). Wrong species."
+    }
+   ]
+  },
+  "ott_016": {
+   "city": "Ottawa",
+   "name": "The Living Fossil of the Dominion Arboretum",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Magnolia (26867017286).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Magnolia_%2826867017286%29.jpg/960px-Magnolia_%2826867017286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_(26867017286).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.39383,
+     "lng": -75.707406,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:May 2016 in Ottawa Category:Unidentified Magnoliales in Canada",
+     "judged": "reject",
+     "verdict": "Title and category (Magnolia in flower / Unidentified Magnoliales) confirm this is a magnolia, not the Dawn Redwood ott_016."
+    },
+    {
+     "title": "File:Magnolia (52065690845).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Magnolia_%2852065690845%29.jpg/960px-Magnolia_%2852065690845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_(52065690845).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393813,
+     "lng": -75.707375,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:May 2022 in Ottawa Category:Unidentified Magnoliales in Canada",
+     "judged": "reject",
+     "verdict": "Title and category confirm magnolia, not the Dawn Redwood ott_016."
+    },
+    {
+     "title": "File:Magnolia Grove (52065200091).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Magnolia_Grove_%2852065200091%29.jpg/960px-Magnolia_Grove_%2852065200091%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065200091).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393772,
+     "lng": -75.707062,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cycling in Ottawa Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Title and category confirm magnolia grove, not the Dawn Redwood ott_016."
+    },
+    {
+     "title": "File:Magnolia Grove (52065597780).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Magnolia_Grove_%2852065597780%29.jpg/960px-Magnolia_Grove_%2852065597780%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065597780).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393647,
+     "lng": -75.706834,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Title and category confirm magnolia grove, not the Dawn Redwood ott_016."
+    },
+    {
+     "title": "File:Magnolia Grove (52065691025).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Magnolia_Grove_%2852065691025%29.jpg/960px-Magnolia_Grove_%2852065691025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065691025).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393886,
+     "lng": -75.707245,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Title and category confirm magnolia grove, not the Dawn Redwood ott_016."
+    },
+    {
+     "title": "File:Magnolia in bloom (52064059612).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Magnolia_in_bloom_%2852064059612%29.jpg/960px-Magnolia_in_bloom_%2852064059612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_in_bloom_(52064059612).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.392758,
+     "lng": -75.704659,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Title and category confirm magnolia, not the Dawn Redwood ott_016."
+    },
+    {
+     "title": "File:Magnolia in bloom (52065433304).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Magnolia_in_bloom_%2852065433304%29.jpg/960px-Magnolia_in_bloom_%2852065433304%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_in_bloom_(52065433304).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393816,
+     "lng": -75.707437,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Title and category confirm magnolia, not the Dawn Redwood ott_016."
+    },
+    {
+     "title": "File:Memorial Tree at the Farm (34068846550).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Memorial_Tree_at_the_Farm_%2834068846550%29.jpg/960px-Memorial_Tree_at_the_Farm_%2834068846550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Memorial_Tree_at_the_Farm_(34068846550).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.391894,
+     "lng": -75.705956,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC inception Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "reject",
+     "verdict": "Same image already looked at for ott_015: an Eastern Redbud memorial plaque, not the Dawn Redwood."
+    },
+    {
+     "title": "File:Trees Aligned at the Farm (50246026216).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Trees_Aligned_at_the_Farm_%2850246026216%29.jpg/960px-Trees_Aligned_at_the_Farm_%2850246026216%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Trees_Aligned_at_the_Farm_(50246026216).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393638,
+     "lng": -75.70655,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Ross Dunn",
+     "judged": "reject",
+     "verdict": "LOOKED: an avenue of conifers (spruce/pine bark and needles, not the feathery deciduous foliage of a dawn redwood), no single tree is the subject. Fails the Cadiz standard and the species does not mat"
+    }
+   ]
+  },
+  "ott_017": {
+   "city": "Ottawa",
+   "name": "The Swamp White Oak of the North Lookout",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Magnolia (26867017286).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Magnolia_%2826867017286%29.jpg/960px-Magnolia_%2826867017286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_(26867017286).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.39383,
+     "lng": -75.707406,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:May 2016 in Ottawa Category:Unidentified Magnoliales in Canada",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Swamp White Oak ott_017 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia (52065690845).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Magnolia_%2852065690845%29.jpg/960px-Magnolia_%2852065690845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_(52065690845).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393813,
+     "lng": -75.707375,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:May 2022 in Ottawa Category:Unidentified Magnoliales in Canada",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Swamp White Oak ott_017 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia Grove (52065200091).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Magnolia_Grove_%2852065200091%29.jpg/960px-Magnolia_Grove_%2852065200091%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065200091).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393772,
+     "lng": -75.707062,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cycling in Ottawa Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia grove, not the Swamp White Oak ott_017 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia Grove (52065597780).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Magnolia_Grove_%2852065597780%29.jpg/960px-Magnolia_Grove_%2852065597780%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065597780).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393647,
+     "lng": -75.706834,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia grove, not the Swamp White Oak ott_017 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia Grove (52065691025).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Magnolia_Grove_%2852065691025%29.jpg/960px-Magnolia_Grove_%2852065691025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065691025).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393886,
+     "lng": -75.707245,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia grove, not the Swamp White Oak ott_017 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia in bloom (52064059612).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Magnolia_in_bloom_%2852064059612%29.jpg/960px-Magnolia_in_bloom_%2852064059612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_in_bloom_(52064059612).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.392758,
+     "lng": -75.704659,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Swamp White Oak ott_017 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia in bloom (52065433304).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Magnolia_in_bloom_%2852065433304%29.jpg/960px-Magnolia_in_bloom_%2852065433304%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_in_bloom_(52065433304).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393816,
+     "lng": -75.707437,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Swamp White Oak ott_017 (title/category confirm)."
+    },
+    {
+     "title": "File:Memorial Tree at the Farm (34068846550).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Memorial_Tree_at_the_Farm_%2834068846550%29.jpg/960px-Memorial_Tree_at_the_Farm_%2834068846550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Memorial_Tree_at_the_Farm_(34068846550).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.391894,
+     "lng": -75.705956,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC inception Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "reject",
+     "verdict": "LOOKED already for ott_015: an Eastern Redbud memorial plaque, not an oak."
+    },
+    {
+     "title": "File:Trees Aligned at the Farm (50246026216).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Trees_Aligned_at_the_Farm_%2850246026216%29.jpg/960px-Trees_Aligned_at_the_Farm_%2850246026216%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Trees_Aligned_at_the_Farm_(50246026216).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393638,
+     "lng": -75.70655,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Ross Dunn",
+     "judged": "reject",
+     "verdict": "LOOKED already for ott_016: a conifer avenue (spruce/pine), not an oak, and not a single collectible tree."
+    }
+   ]
+  },
+  "ott_018": {
+   "city": "Ottawa",
+   "name": "The Rock Elm of the Dominion Arboretum",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Magnolia (26867017286).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Magnolia_%2826867017286%29.jpg/960px-Magnolia_%2826867017286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_(26867017286).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.39383,
+     "lng": -75.707406,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:May 2016 in Ottawa Category:Unidentified Magnoliales in Canada",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Rock Elm ott_018 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia (52065690845).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Magnolia_%2852065690845%29.jpg/960px-Magnolia_%2852065690845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_(52065690845).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393813,
+     "lng": -75.707375,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:May 2022 in Ottawa Category:Unidentified Magnoliales in Canada",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Rock Elm ott_018 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia Grove (52065200091).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Magnolia_Grove_%2852065200091%29.jpg/960px-Magnolia_Grove_%2852065200091%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065200091).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393772,
+     "lng": -75.707062,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cycling in Ottawa Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia grove, not the Rock Elm ott_018 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia Grove (52065597780).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Magnolia_Grove_%2852065597780%29.jpg/960px-Magnolia_Grove_%2852065597780%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065597780).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393647,
+     "lng": -75.706834,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia grove, not the Rock Elm ott_018 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia Grove (52065691025).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Magnolia_Grove_%2852065691025%29.jpg/960px-Magnolia_Grove_%2852065691025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Grove_(52065691025).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393886,
+     "lng": -75.707245,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia grove, not the Rock Elm ott_018 (title/category confirm)."
+    },
+    {
+     "title": "File:Magnolia in bloom (52065433304).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Magnolia_in_bloom_%2852065433304%29.jpg/960px-Magnolia_in_bloom_%2852065433304%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_in_bloom_(52065433304).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393816,
+     "lng": -75.707437,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Rock Elm ott_018 (title/category confirm)."
+    },
+    {
+     "title": "File:Memorial Tree at the Farm (34068846550).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Memorial_Tree_at_the_Farm_%2834068846550%29.jpg/960px-Memorial_Tree_at_the_Farm_%2834068846550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Memorial_Tree_at_the_Farm_(34068846550).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.391894,
+     "lng": -75.705956,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC inception Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "reject",
+     "verdict": "LOOKED already for ott_015: an Eastern Redbud memorial plaque, not an elm."
+    },
+    {
+     "title": "File:Trees Aligned at the Farm (50246026216).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Trees_Aligned_at_the_Farm_%2850246026216%29.jpg/960px-Trees_Aligned_at_the_Farm_%2850246026216%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Trees_Aligned_at_the_Farm_(50246026216).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.393638,
+     "lng": -75.70655,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Ross Dunn",
+     "judged": "reject",
+     "verdict": "LOOKED already for ott_016: a conifer avenue, not an elm, and not a single collectible tree."
+    }
+   ]
+  },
+  "ott_019": {
+   "city": "Ottawa",
+   "name": "The Founding-Era Bitternut Hickory",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Magnolia in bloom (52064059612).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Magnolia_in_bloom_%2852064059612%29.jpg/960px-Magnolia_in_bloom_%2852064059612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_in_bloom_(52064059612).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.392758,
+     "lng": -75.704659,
+     "cats": "Category:CC-BY-SA-2.0 Category:Dominion Arboretum Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Magnolia in flower Category:Magnoliales in Canada Category:May 2022 in Ottawa",
+     "judged": "reject",
+     "verdict": "Magnolia, not the Bitternut Hickory ott_019 (title/category confirm)."
+    },
+    {
+     "title": "File:Memorial Tree at the Farm (34068846550).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Memorial_Tree_at_the_Farm_%2834068846550%29.jpg/960px-Memorial_Tree_at_the_Farm_%2834068846550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Memorial_Tree_at_the_Farm_(34068846550).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Ross Dunn",
+     "lat": 45.391894,
+     "lng": -75.705956,
+     "cats": "Category:CC-BY-SA-2.0 Category:Central Experimental Farm Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC inception Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "reject",
+     "verdict": "LOOKED already for ott_015: an Eastern Redbud memorial plaque, not a hickory."
+    }
+   ]
+  },
+  "pgm_005": {
+   "city": "Pagramantis Regional Park",
+   "name": "Gaurė Oak",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Gaurės ąžuolas 2021.JPG (Wikidata Q111980608)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG/960px-Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vilensija",
+     "lat": 55.242061,
+     "lng": 22.478658,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gaurė oak Category:Lithuania photographs taken on 2021-10-24 Category:Self-published work",
+     "source": "wikidata/Q111980608"
+    }
+   ]
+  },
+  "psa_001": {
+   "city": "Pisa",
+   "name": "The Ginkgo of Giorgio Santi",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "psa_002": {
+   "city": "Pisa",
+   "name": "The Magnolia of Giorgio Santi",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 30300938 (Magnoliopsida)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/47331943/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/30300938",
+     "licence": "CC BY",
+     "author": "(c) clemensoe, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "43.7204849,10.39624714"
+    }
+   ]
+  },
+  "psa_003": {
+   "city": "Pisa",
+   "name": "The Plane of the Scuola Botanica",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "psa_004": {
+   "city": "Pisa",
+   "name": "The Virginia Oak of 1829",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pit_001": {
+   "city": "Pittsburgh",
+   "name": "The Pittsburgh Champion Bald Cypress of Mellon Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Amur Leopard Pittsburgh Zoo.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Amur_Leopard_Pittsburgh_Zoo.jpg/960px-Amur_Leopard_Pittsburgh_Zoo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Amur_Leopard_Pittsburgh_Zoo.jpg",
+     "licence": "CC BY 2.5",
+     "author": "Colin Hines www.ColinHinesPhotography.com",
+     "lat": 40.48287,
+     "lng": -79.919862,
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:Commons featured widescreen desktop backgrounds Category:Featured pictures of Panthera pardus Category:Featured pictures of Pittsburgh Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, Spanish Category:Featured pictures on Wikipedia, Turkish Category:Featured pictures on Wikipedia, Vietnamese Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Panthera pardus (head) Category:Panthera pardus in Pittsburgh Zoo Category:Panthera pardus orientalis in zoos Category:Pictures of the Year (2007) Category:Pictures of the Year (candidate) Category:Pictures of the day (2007) Category:Self-published work Category:Taken with Canon EOS 30D"
+    },
+    {
+     "title": "File:Downtown Pittsburgh from Duquesne Incline in the morning.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg/960px-Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dllu",
+     "lat": 40.438401,
+     "lng": -80.018936,
+     "cats": "Category:2015 in Pittsburgh Category:CC-BY-SA-4.0 Category:Cityscapes of Pittsburgh, Pennsylvania viewed from Mount Washington Category:Dawn in the United States Category:Downtown Pittsburgh Category:Duquesne Incline Category:Featured pictures by dllu Category:Featured pictures of Pittsburgh Category:Featured pictures of cableways Category:Featured pictures of cityscapes Category:Featured pictures of rail vehicles Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, English Category:Featured pictures on Wikipedia, Persian Category:Files with coordinates missing SDC location of creation Category:November 2015 in Pennsylvania Category:November 2015 in rail transport in the United States Category:Pictures of the day (2017) Category:Pittsburgh skylines Category:Quality images Category:Quality images of Pittsburgh Category:Reflections in rivers Category:Self-published work Category:Structures at golden hour Category:United States photographs taken on 2015-11-20 Category:Water reflections of cityscapes in the United States"
+    },
+    {
+     "title": "File:Pittsburgh Pennsylvania.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pittsburgh_Pennsylvania.jpg/960px-Pittsburgh_Pennsylvania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pittsburgh_Pennsylvania.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Popscreenshot",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Allegheny County, Pennsylvania Category:Allegheny River Category:Andy Warhol Bridge Category:CC-BY-SA-4.0 Category:Images with extracted images Category:Monongahela River Category:Ohio River Category:Pittsburgh Category:Pittsburgh skylines Category:Point State Park Category:Roberto Clemente Bridge Category:Self-published work"
+    },
+    {
+     "title": "File:Pittsburgh skyline panorama daytime.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Pittsburgh_skyline_panorama_daytime.jpg/960px-Pittsburgh_skyline_panorama_daytime.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pittsburgh_skyline_panorama_daytime.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dllu",
+     "lat": 40.431653,
+     "lng": -80.006489,
+     "cats": "Category:2015 in Pittsburgh Category:CC-BY-SA-4.0 Category:Cityscapes of Pittsburgh, Pennsylvania viewed from Mount Washington Category:Featured pictures by dllu Category:Featured pictures of Pittsburgh Category:Featured pictures of skylines Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, Persian Category:Files with coordinates missing SDC location of creation Category:Images with annotations Category:Large images Category:Panoramics of Pittsburgh Category:Photo challenge winners Category:Pittsburgh skylines Category:Quality images Category:Quality images by dllu Category:Quality images missing SDC depicts Category:Quality images of Pittsburgh Category:Self-published work"
+    },
+    {
+     "title": "File:Thaddeus M. Fowler - Pittsburgh, Pennsylvania 1902.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Thaddeus_M._Fowler_-_Pittsburgh%2C_Pennsylvania_1902.jpg/960px-Thaddeus_M._Fowler_-_Pittsburgh%2C_Pennsylvania_1902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Thaddeus_M._Fowler_-_Pittsburgh,_Pennsylvania_1902.jpg",
+     "licence": "Public domain",
+     "author": "Thaddeus Mortimer Fowler / Adam Cuerden",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1875 Union Bridge Category:1877 Point Bridge Category:1892 Sixth Street Bridge Category:1900s maps of Pittsburgh Category:1902 in Pittsburgh Category:1902 lithographs Category:1902 maps of Pennsylvania Category:Adam Cuerden's restorations Category:Bird's eye view maps of Pittsburgh Category:Bridges in Pittsburgh Category:CC-PD-Mark Category:Featured pictures in the public domain Category:Featured pictures of Pittsburgh Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, English Category:Images with extracted images Category:Information field template with formatting Category:Lithographs of cities in the United States Category:Maps by Thaddeus Mortimer Fowler Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Pittsburgh in art Category:Rivers of Pittsburgh Category:Smithfield Street Bridge Category:Wabash Bridge, Pittsburgh"
+    },
+    {
+     "title": "File:The Champion Atlantic Coast Line 1941.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/The_Champion_Atlantic_Coast_Line_1941.JPG/960px-The_Champion_Atlantic_Coast_Line_1941.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Champion_Atlantic_Coast_Line_1941.JPG",
+     "licence": "Public domain",
+     "author": "C.R. Adamson, Miami/Teichnor, Boston",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Champion (train) Category:EMD E6 locomotives Category:PD US no notice Category:Postcards of trains in the United States"
+    }
+   ]
+  },
+  "pit_002": {
+   "city": "Pittsburgh",
+   "name": "The Katsura of Mellon Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pit_003": {
+   "city": "Pittsburgh",
+   "name": "The Lacebark Pine of Mellon Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pit_004": {
+   "city": "Pittsburgh",
+   "name": "The Giving Tree White Oak of Phillips Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
   }
  },
  "notes": [
