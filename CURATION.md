@@ -11,6 +11,35 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 3) - 3 submissions processed: 1 pin correction applied, 2 empty test rows
+
+Submission 104 (kind: correction, Baarn, brn_001 the Cantonspark Dawn
+Redwood): the reader moved the pin 175 m from the published position, which
+our pin already carried as `approximate`. Checked the arithmetic (haversine
+on the two coordinate pairs confirms ~176 m) and checked it against three
+"Watercypres"-labelled sightings held on 2026-09-08 as ambiguous between
+brn_001, brn_002 and an unmapped specimen (`data/leads/_sightings.json`,
+ff725d9a and siblings): the corrected position sits ~34 m from that earlier
+photo, well inside the same cluster. Per the 2026-09-08 rule (a reader's GPS
+fix beats a pin we already call approximate), moved brn_001 to
+52.20753,5.298514 and rewrote the address, the honest note and the
+recognise line, which still said "main entrance" under the old pin. Kept
+`location_precision: approximate` rather than promoting to confirmed: the
+corrected spot sits only ~51 m from brn_002 (the giant sequoia) in the old
+pinetum, and the underlying species-identity ambiguity from 09-08 was never
+resolved, only narrowed. Outcome `changed` recorded on the row.
+
+Submissions 102 and 103 (kind: tree, both Fukuoka, both from the same GPS
+point, no name, no why, no species): 103's paired sighting (d0e24fa3) was
+already looked at and logged as a feature test (feet on a bed, no tree,
+commit 8c23a6bf); 102 has no sighting row in Supabase at all, so no photo
+ever backed it. Both outcomes recorded `holds`; nothing to publish or chase.
+
+All three rows are the `a8ca51da` account, which `data/our-accounts.json`
+already identifies as Hidde's own (sha1 matches "Hidde's own account"), so
+`contributor_reply.py`'s `ours.is_ours` filter means the reply_text set on
+each row will never actually mail him.
+
 ## 2026-09-13 (continuation 2) - Breda's bre_010 photo hunt: dead end, documented
 
 `photo_gaps.py --shortlist` printed one candidate for The Plane of
