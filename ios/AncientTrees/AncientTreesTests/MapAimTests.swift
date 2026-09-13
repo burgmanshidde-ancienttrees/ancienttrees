@@ -203,6 +203,28 @@ struct TheGlobeOpensOverYourOwnTrees {
         #expect(opening.lng == 0)
     }
 
+    /// TWO TREES, which is the case the plain median could not do and the case
+    /// the demo globe is. The average of Amsterdam and Nara is Siberia; the
+    /// lower median is Amsterdam, which is somewhere he has actually been.
+    @Test func twoTreesOpenOnOneOfThemRatherThanBetweenThem() {
+        let opening = GlobeMap.opening(for: [japan, netherlands])
+        #expect(opening.lng == netherlands.lng)
+        #expect(GlobeMap.opening(for: [netherlands, japan]).lng == netherlands.lng)
+    }
+
+    /// And both numbers come from the SAME tree. Taking one median per axis
+    /// opens an L-shaped collection on its empty corner: here the middle
+    /// longitude belongs to the Cairo tree and the middle latitude does not,
+    /// so a per-axis answer would aim at neither.
+    @Test func bothCoordinatesComeFromOneTree() {
+        let cairo = (lat: 30.04, lng: 31.24)
+        let opening = GlobeMap.opening(for: [netherlands, cairo, japan])
+        #expect(opening.lng == cairo.lng)
+        #expect(opening.lat == cairo.lat)
+        // The per-axis answer this replaces: median latitude is Amsterdam's.
+        #expect(cairo.lat != netherlands.lat)
+    }
+
     /// One tree is one tree: its longitude exactly, and its latitude held
     /// inside the band, which for Amsterdam at 52 N means the clamp does the
     /// work. That is deliberate and it is why the pole test above passes: the
