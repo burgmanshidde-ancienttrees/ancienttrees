@@ -1731,6 +1731,16 @@ def main():
         # on three published pages before this check existed (2026-08-09).
         if "None Year" in text:
             failures.append(f"{rel}: literal 'None Year' in rendered text, an undated tree's age fell back to None")
+        # ageToken()'s raw-number fallback (no age_min/age_max to check
+        # against) once returned a capture with its trailing comma still
+        # attached, because the character class that lets "1,000" read whole
+        # also swallows a comma that is only punctuation: "planted 2017, a
+        # genetic clone..." became the literal title fragment "2017, Years",
+        # self-contradicting the same page's own FAQ (Trainiskis, found by the
+        # fresh-eyes reviewer 2026-09-13). A number is never followed by a
+        # comma right before the word "Year(s)" in honest rendered text.
+        if re.search(r"\d,\s*Years?\b", text):
+            failures.append(f"{rel}: a comma sits between a number and 'Year(s)' in rendered text, an age token kept its punctuation")
         lower = text.lower()
         for word in BANNED_WORDS:
             if word in lower:

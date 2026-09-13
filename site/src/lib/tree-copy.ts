@@ -61,7 +61,23 @@ export function ageToken(tree: Tree): string | null {
     // title is a statement.
     return null;
   }
-  return nums[0] ?? null;
+
+  // With no age_min/age_max to check a number against, the raw first match
+  // can be anything the sentence contains, including a planting year: "planted
+  // 2017, a genetic clone of the fallen original" states no age at all, and
+  // this fallback printed "2017 Years Old", contradicting the very page's own
+  // FAQ ("a young clone planted in 2017"). Found by the fresh-eyes reviewer
+  // 2026-09-13, Trainiskis's city and question pages (trn_001). Every genuine
+  // age estimate in this corpus is written as "N years" (or "yrs"); a
+  // sentence naming no years at all is stating a date, not a duration,
+  // whatever number it happens to contain.
+  if (!/\byears?\b|\byrs?\b/i.test(said)) return null;
+
+  // The capturing group's character class includes the comma so a number
+  // like "1,000" reads whole, but that also swallows a trailing comma that
+  // is punctuation rather than digits ("2017," from "planted 2017, a..."),
+  // which is how the malformed literal "2017," reached a rendered title.
+  return (nums[0] ?? null)?.replace(/,+$/, "") ?? null;
 }
 
 /** Build a meta description from the story's opening sentences, max
