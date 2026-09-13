@@ -13240,6 +13240,40 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-13T05:58:20+00:00",
+   "date": "2026-09-13",
+   "run_id": "34741578940",
+   "minutes": 99.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 254,
+   "denials": 60,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(test), Bash(wc), Write",
+   "ended": "success",
+   "tokens": 24641116,
+   "claims_held": [
+    "tokyo"
+   ],
+   "commits": 12,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "gdansk",
+     "trees": 6
+    },
+    {
+     "city": "alicante",
+     "trees": 2
+    },
+    {
+     "city": "milan",
+     "trees": 1
+    }
+   ],
+   "trees": 9,
+   "logged": true
   }
  ],
  "schedule_changes": [
