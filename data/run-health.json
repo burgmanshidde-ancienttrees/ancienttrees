@@ -13471,6 +13471,50 @@
    ],
    "trees": 8,
    "logged": true
+  },
+  {
+   "started": "2026-09-13T22:08:01+00:00",
+   "date": "2026-09-13",
+   "run_id": "34785853151",
+   "minutes": 108.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 534,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 34415648,
+   "claims_held": [],
+   "commits": 16,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "belgrade",
+     "trees": 1
+    },
+    {
+     "city": "chiapa-de-corzo",
+     "trees": 1
+    },
+    {
+     "city": "gornja-stubica",
+     "trees": 1
+    },
+    {
+     "city": "portalegre",
+     "trees": 1
+    },
+    {
+     "city": "tallinn",
+     "trees": 1
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    }
+   ],
+   "trees": 5,
+   "logged": true
   }
  ],
  "schedule_changes": [
