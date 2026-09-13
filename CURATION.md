@@ -11,6 +11,45 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 - Berlin 21 -> 23: a wingnut resolved, and the Queen's own oak found beside it
+
+Dispatched a register-backed verify pass on Berlin (target 30, real
+unmined supply: 546 Naturdenkmale rows + 648 Wikidata candidates), flagged
+by a prior continuation today as the best-supplied unexhausted deepen
+target on the whole queue. Focused on the Tiergarten Englischer Garten
+cluster, ~13 Naturdenkmal entries within 400m of the already-published
+ber_010 (Giant Sequoia), because it was already proven walkable.
+
+**ber_022, The Englischer Garten Wingnut** (Caucasian Wingnut): the register
+(1-39/B) plus an independent 2022 blog.inberlin.de article that names and
+locates the same tree "near the teahouse", within ~4m of the OSM-mapped
+Teehaus. No age documented anywhere, flagged and stated plainly rather than
+guessed.
+
+**ber_023, The Queen's Oak of the Englischer Garten** (Northern Red Oak,
+not a register tree): two independent Tagesspiegel articles agree Queen
+Elizabeth II personally planted it on 27 May 1965 during her first visit to
+West Berlin, sapling reportedly from Windsor Castle stock. No exact
+coordinate in either source, so `location_precision: approximate`, pin
+centred on the Teehaus.
+
+The rest of the cluster (Metasequoia, Libanon-Eiche, Silber-Linde,
+Flatter-Ulme, Japanischer Kuchenbaum x2, Stiel-Eiche, Robinia) stayed
+single-sourced: the register, Wikidata and de.wikipedia's district list all
+trace to the same 2021 government ordinance (confirmed by fetching the
+ordinance itself), which carries no age or girth field. Caught and
+discarded a WebSearch-summary fabrication in the process: a claimed
+"circumference 1825" for the Libanon-Eiche was actually a Flurstueck
+(land parcel) number repeated identically across five unrelated trees, not
+a measurement.
+
+Wrote both stories (write-stories pass, small batch), added the German
+i18n overlay entries for both (title count 21 -> 23; `de/berlin` had been
+the only translated overlay for this city and would otherwise have
+refused the whole build per Contract J). `preflight.py`, `i18ncheck.py`
+and a full `npx astro build` all clean. Cost: ~95k verify + ~40k write,
+2 trees, logged in `data/agent-costs.json`.
+
 ## 2026-09-13 - Sintra: sixth consecutive verify pass confirms exhaustion, 0 trees
 
 Dispatched a verify pass on Sintra (target 20, was at 5, real ICNF register
