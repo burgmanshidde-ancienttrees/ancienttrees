@@ -11,6 +11,38 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 32) - New place: Chiapa de Corzo (Mexico), La Pochota, single-famous-tree exception
+
+With `city_queue.py --next`'s OPENABLE list exhausted (see the previous two
+entries), moved to the famous-tree track: `famous_demand.py --gap` (trees
+read about in other languages and unwritten in English, the thin-competition
+end of the list). Top of the list by demand with an actual pin was **La
+Pochota**, a giant kapok (Ceiba pentandra) in the main plaza of Chiapa de
+Corzo, Chiapas, 386km from our nearest published tree (Santa María del Tule),
+too far to join any city.
+
+Verified against Spanish Wikipedia, a July 2026 Sol del Soconusco news piece
+on the 33rd anniversary of its 1993 protection declaration, and INAH (Mexico's
+national heritage institute): the town was founded beside this tree in 1528,
+a 1945 arson fire destroyed roughly a third of the crown (one scorched limb
+survived and is still growing), and Chiapas declared it the state's first
+Historic and Notable Tree in 1993, a status shared nationally with only two
+others (the Árbol del Tule and Mexico City's Árbol de la Noche Triste).
+
+Two things flagged honestly rather than repeated as fact: age is "at least
+500 years" per the state's own 2026 notice, not the "thousand-year tree" of
+local folklore, since nobody has cored it (`age_min: 500, age_max: 600`).
+And several Mexican press pieces describe it as "over 60 metres tall", which
+no survey supports and which the tree's own silhouette against the plaza's
+two-storey arcades in its own lead photograph contradicts, so no `height_m`
+is recorded at all. Photo (Wolfgang Sauber, CC BY-SA 3.0, Wikimedia Commons)
+meets the Cadiz standard: fills the frame, in leaf, well exposed, trunk and
+crown both readable. `city-aliases.json` gets a `no_other_names` entry (no
+English exonym). Preflight caught a real hard-rule-9 violation on first pass
+("Kapok / Ceiba" as a second common name beside existing "Kapok" trees in
+Lima/Oahu), fixed to "Kapok" alone. Full build (5652 pages) and `qa.py`
+(8779 pages) both clean before committing.
+
 ## 2026-09-13 (continuation 30) - New place: Gornja Stubica (Croatia), the Gupčeva lipa, single-famous-tree exception
 
 With the Tallinn claim finished and released, `city_queue.py --next`'s

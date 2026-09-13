@@ -1,6 +1,31 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 32) - A new place: Chiapa de Corzo, Mexico, the tree the town was built around
+
+Same window, continuing after Gornja Stubica above. `city_queue.py --next`'s
+OPENABLE list was fully exhausted (Taormina, Ravenna, Trier, Niagara Falls
+and the rest all documented dead ends or too thin), and `scout_next.py
+--target` had nothing left either, so moved to the famous-tree track:
+`famous_demand.py --gap`, trees read about in other languages and unwritten
+in English. Top candidate with a usable pin: **La Pochota**, a giant kapok
+in the main plaza of Chiapa de Corzo, Chiapas, Mexico, 386km from our
+nearest published tree, so its own place under the single-famous-tree rule.
+
+The town was founded beside this tree in 1528 (Mexico's own heritage
+institute, INAH, confirms it was used as a reference point for the original
+street grid). Chiapas declared it the state's first Historic and Notable
+Tree in 1993, a status shared nationally with only two others, the Árbol
+del Tule and Mexico City's Árbol de la Noche Triste. Verified against
+Spanish Wikipedia and a July 2026 news piece on the 1993 declaration's 33rd
+anniversary; age stated honestly as "at least 500 years" per the state's own
+figure rather than the "thousand-year tree" of local folklore, since nobody
+has cored it. A widely repeated press claim of "over 60 metres tall" is
+flagged rather than published: the tree's own lead photograph, against the
+plaza's two-storey arcades, does not support it, so no height is recorded.
+Photo (CC BY-SA 3.0, Wikimedia Commons) meets the Cadiz standard. Build
+(5652 pages) and `qa.py` (8779 pages) both clean.
+
 ## 2026-09-13 (continuation 31) - A new place: Gornja Stubica, Croatia, and the tree tied to Croatia's 1573 peasant revolt
 
 Same window, continuing after the Tallinn tree above. Checked the queue for
