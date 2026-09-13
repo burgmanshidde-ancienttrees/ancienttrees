@@ -13,6 +13,103 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-13
+
+Reviewed commits since the last review (14a16874, 2026-09-12) through 9f3feebb
+(~144 commits, day-and-night assembly-line work): the usual claim/verify/write
+cycle across many cities (Warsaw 28->39 from a pre-filtered GDOS cluster,
+Gdansk 6->12 via a new Park Oliwski dendrological cluster earning its own park
+page, Alicante 16->21 across several passes, Milan +1 via OSM edit-history
+cross-reference, Berlin +2, Zwolle +2, Tallinn +2, Montreal +1, Florence
+23->26, a Czech famous-tree batch of 3 single-tree places, a Lithuania
+famous-tree batch of 9 trees across 6 places), the "1 trees" grammar bug class
+chased to its last two spots in the app with a proper ratchet this time
+(`scripts/pluralcheck.py`, wired into the pre-push hook), a map-control fix
+(the recentre button climbing the screen and teleporting on release) and two
+Swift map-arithmetic fixes shipped with unit tests but flagged by their own
+commits as "not verified on a phone: no Xcode here" (the globe now aims at a
+real member of the collection instead of the empty space between two
+clusters; "you are standing in front of" now measures from the phone's actual
+location fix rather than the map's last-panned centre). Ran `python3
+scripts/qa.py` (clean, 8708 pages, links resolve, text clean), `python3
+scripts/preflight.py` (598 cities, 0 problems, standing NOTEs otherwise) and
+`python3 scripts/superlatives.py` (370 claims, no collisions). Read the app
+screenshots in this rotation (tree, tree-nophoto, walk-begin, walk, city-map,
+city): the "1 tree(s)" fix is visibly correct on both Aachen screens
+(`city-map.png` "1 tree in Aachen", `city.png` "1 tree"); nothing else stood
+out as contradicting itself or promising something absent.
+
+**BLOCKER — Trainiškis's city page and question page fabricate an age of
+"2017 years" for a tree the SAME page's own FAQ correctly says was planted in
+2017, `trainiskis.html` and `trainiskis/oldest-tree.html`.** Built titles:
+`Ancient Trees in Trainiškis: One Tree, Oldest 2017, Years` and `What Is the
+Oldest Tree in Trainiškis? (2017, Years Old)`, both also carrying the
+malformed literal string "2017," into rendered HTML and into the page's own
+JSON-LD (ItemList/FAQPage schema, P4). The tree, `trn_001` (Trainiškis Oak,
+successor), has `age_estimate: "planted 2017, a genetic clone of the fallen
+original"` and no `age_min`/`age_max`. Root cause in
+`site/src/lib/tree-copy.ts` `ageToken()`: when a tree carries no age range,
+the function falls back to `nums[0] ?? null` (line 64), the FIRST number the
+regex `/(\d[\d,]*\+?)/g` finds in the raw sentence, unstripped and
+unvalidated. For this sentence the regex greedily captures "2017," (the
+digits plus the immediately-following comma, since nothing separates them),
+and nothing checks whether the captured number is plausible as an age at all,
+let alone whether the sentence is describing a PLANTING YEAR for a young
+successor rather than an age. This directly contradicts the same page's own
+FAQ ("Not yet. The tree here is a young clone planted in 2017... roughly 800
+years old [original], fell in a 2016 storm") and is exactly the class of
+error hard rule 2 and P7 exist to stop, mechanical though it is: a false,
+self-contradicting factual claim, live, in a page's title tag and structured
+data, which both Google and any AI engine reading the schema will take as
+fact. Checked: this is the only tree site-wide whose age_estimate opens with
+"planted `<year>`" and has no age bounds (a search for the pattern across all
+598 city files found exactly one match), so the blast radius is one place's
+city and question pages rather than a wider outbreak; the tree's OWN page
+(`trainiskis/trainiskis-oak-successor.html`) is unaffected because Contract A
+falls back to a species-based title when `ageToken()` returns falsy rather
+than trusting a raw match. `qa.py` and `preflight.py` both pass clean on this
+page, so there is no existing ratchet that would catch a calendar year, or a
+stray trailing comma, being printed as an age.
+
+**WARN — a preflight check's own stated "exactly one" threshold was crossed
+today, and the check's docstring says that is the trigger to make it a FAIL.**
+`note_a_reader_photograph_is_not_a_reason()` in scripts/preflight.py now
+prints two trees, `kyo_017` and `kyo_019` (both Kyoto Gyoen), each carrying an
+approved contributor photograph and no recorded age or measurement. The
+check's own comment (added 2026-09-12, DECISIONS.md same date) states it is
+"a NOTE and not a FAIL only because exactly one published tree is in this
+state on the day the field was removed... When that one is settled this goes
+back to a FAIL." `kyo_019` was already in this state as of the 2026-09-11
+review; today's Kyoto photo-viewing pass (part of commit 443106e4, "kyo_017
+gets its first photo") approved a second contributor photograph for
+`kyo_017`, pushing the count from one to two without anyone updating the
+check or its comment. Worth a session's judgment rather than a night run's:
+both trees carry their own independent government/park sources (unlike the
+Nara trees this check was built to catch, which had none), so this may be a
+case of the check's blunt proxy over-firing rather than a real "photograph
+flatters an ordinary tree" problem, but the corpus's own accounting of when
+this becomes a hard FAIL is now stale and a run reading it at face value
+would not know whether it still describes the current state.
+
+**NOTE — a structural title-budget problem, found while checking a page this
+window touched (`pagramantis-regional-park.html`, Lithuania batch, 4->5
+trees): a long place name can consume the whole 60-character title budget and
+leave the page with a bare, uninformative title.** Built title: `Ancient
+Trees in Pagramantis Regional Park` (42 chars), with no tree count and no age
+hook, because every longer candidate `[city].astro` tries (`: 5 to See,
+Oldest 600 Years`, `: 5 Trees Worth Visiting`, etc.) runs past 60 characters
+and `fitTitle()` falls through to the bare city name. Not new: a scan of
+every built city/place title found 21 pages in this state, all with long
+names (national parks, German/Slovak compound names, American "City, State"
+names). Not caused by today's work and not a rule violation (`fitTitle`'s
+cascade is deliberate, documented code), but it does mean 21 pages carry none
+of the "give a person a reason to click" value the 2026-08-10 title rework
+was built for (SEO_GEO_BLUEPRINT.md Contract C), which is worth a session's
+attention rather than a night run's, since fixing it means shortening the
+candidate templates rather than researching anything.
+
+No Monday corpus-rot audit today (Sunday UTC).
+
 ## 2026-09-12
 
 Reviewed commits since the last review (bae8a196, 2026-09-11) through abfb15e6
