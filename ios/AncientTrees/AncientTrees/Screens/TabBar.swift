@@ -157,6 +157,28 @@ struct TabBar: View {
             // The deed, on its own disc, the same height as the bar so the two
             // read as one row rather than as a bar with something stuck beside
             // it. Same glass, same grey, same edge.
+            //
+            // ITS GLYPH SITS 8.1 POINTS LOWER THAN THE THREE TAB ICONS, AND
+            // THAT IS DECIDED RATHER THAN MISSED. Hidde asked about it on
+            // 2026-09-13 and chose to leave it, so do not "fix" it: a fresh
+            // pair of eyes finds it every time, and it is the third thing on
+            // this control somebody has wanted to straighten.
+            //
+            // Measured off his own screenshot rather than argued about. The
+            // shapes are right: bar and disc are both 58 points tall and their
+            // centres agree to within a pixel, and the bar's own content is
+            // centred in it to within 1.3 points. What differs is the GLYPHS. A
+            // tab item is an icon with a word under it, so its icon rides in the
+            // upper half and lands 20.7 points from the bar's top; the disc
+            // carries a bare glyph, which centres at 28.8.
+            //
+            // Both ways of closing that gap cost more than the gap does. Moving
+            // the glyph up inside the disc leaves a circle whose contents are
+            // off centre, which always reads as broken; moving the whole disc up
+            // breaks the one-row line this comment is about. The reference has
+            // the same offset for the same reason, and a word under the camera
+            // is ruled out twice over (2026-08-24, 2026-08-26: it is an action
+            // rather than a place, so it carries no word).
             Button(action: collect) {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 21, weight: .semibold))
