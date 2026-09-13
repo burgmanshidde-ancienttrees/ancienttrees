@@ -634,12 +634,26 @@ final class AncientTreesUITests: XCTestCase {
         let want = picker.buttons["Favourites"]
         XCTAssertTrue(want.exists && seen.exists, "the two lanes are not both there")
 
-        seen.tap()
-        XCTAssertTrue(seen.isSelected, "tapping My trees did not select it")
+        // RETRIED, not a single tap, because switching lanes rebuilds
+        // `laneContent` (`.id(lane)` in Collect.swift) and on a loaded CI
+        // simulator that rebuild can still be settling when the synthetic
+        // touch-up event lands, the same class of race documented at this
+        // file's map-sweep retry loop above. Confirmed as exactly this on
+        // 2026-09-13 (ios.yml's 19:11 run failed here with no `ios/` change
+        // since the prior green run, and this file's own comments already
+        // named the CI-runner timing flake); retrying the tap is cheaper and
+        // more honest than a blind sleep before every run.
+        func tapAndConfirmSelected(_ button: XCUIElement, _ label: String) {
+            for attempt in 0..<3 {
+                if attempt > 0 { Thread.sleep(forTimeInterval: Double(attempt) * 0.5) }
+                button.tap()
+                if button.isSelected { return }
+            }
+            XCTAssertTrue(button.isSelected, "tapping \(label) did not select it")
+        }
 
-        want.tap()
-        XCTAssertTrue(want.isSelected,
-                      "tapping Favourites from My trees did not select it")
+        tapAndConfirmSelected(seen, "My trees")
+        tapAndConfirmSelected(want, "Favourites from My trees")
         // And the tap must not have opened a tree instead, which is the other
         // half of what he described.
         XCTAssertFalse(app.buttons["Take me there"].exists,
