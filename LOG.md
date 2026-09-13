@@ -1,6 +1,68 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 29, previous attempt in this window stopped after 22 min with 98 min unspent, shipped nothing) - Finished the standing _famous-belgium claim: 6 new places, 2 Ghent additions
+
+Followed the resume checklist. `passcheck.py --claims` showed one standing
+claim, `_famous-belgium` (verify, by night-run, 134 min left on its 4-hour
+expiry). An earlier attempt in this window had already produced 10 verified
+trees in `data/research/famousbelgium-verified.json` (plus a photo-queue
+recheck-sweep diff and some scratch debris) but committed none of it.
+Committed that inherited work first (photo-queue sweep, the verify pass
+output, an id-collision fix), then ran a write-stories pass on all 10 trees.
+
+Judged each result against the single-famous-tree destination test
+(CLAUDE.md 2026-08-31, "would somebody travel specifically for THIS ONE
+TREE") rather than merging all ten as new places. **Published 6 new
+standalone places**: Bonnerue (Li Béni Hesse, one of Belgium's largest
+beeches, damaged, undated), Xhoris (Tilleul des Lognards, a nail tree
+protected since 1965 on the GR571 trail), Macon (Tilleul de Macon, its own
+French Wikipedia article, shaped into three tiers on twelve posts, protected
+since 1942), Waremme (Arbre de la Liberté, planted 22 September 1797), Jalhay
+(Les Sept Frères de Gospinal, Belgium's largest multi-trunk oak) and
+'s-Gravenvoeren (Nagelboom, a nail tree and former European Tree of the Year
+finalist). **Merged 2 into Ghent** instead, both within the day-trip
+boundary: Dorpslinde van Massemen (Belgium's Tree of the Year 2016, ~13.6km
+out, De Lijn bus) and the Solitaire Plane of Prudens Van Duyseplein (1.4km
+from centre); Ghent is now 8 trees. **Held back** the Remarkable Lime of
+Chantemelle, verified but carrying nothing beyond a bare heritage reference
+number, no age, no girth, no story, so it fails the destination test on its
+own evidence; returned to leads as blocked. **Caught a duplicate**: the
+"Peace Oak of Wondelgem" lead turned out to be the already-published
+`gnt_006`, 75m off pin; not merged, its one new fact folded in as a third
+source instead. Also fixed four species fields to the site's one canonical
+common name (hard rule 9).
+
+`preflight.py` (0 problems after fixing 4 FAILs: two question_meta length
+overruns, one question_context word-count overrun, one "N more" promise
+mismatch on Ghent's new tree count), `superlatives.py` (no crown conflicts),
+full site build (5645 pages, clean) and `qa.py` (8762 pages, links resolve,
+text clean) all ran and passed before committing. Released the
+`_famous-belgium` claim; `_famous-belgium.json` still holds 14 further
+leads for a future verify pass. No photos on any of the 8 new/merged trees,
+an honest gap for a later photo pass, correctly not chased since none of
+these places clears 5 trees yet.
+
+Checked `health.py`: one rung-2 item, the iOS app CI (`ios.yml`) failing on
+its 19:11 scheduled run, one UI test (`testTheCollectionLanePickerSwitchesBothWays`)
+asserting a tap that did not register. No `ios/` code has changed since the
+previous run succeeded (17:31), and the test's own comments already document
+this exact symptom as a known CI-runner timing flake ("on a fast Mac the tap
+landed anyway and on a phone, or on the CI runner, it did not"), not a new
+regression. Could not force a re-run or dispatch (`gh run rerun` / `gh
+workflow run` both returned 403, insufficient token scope) and have no
+Xcode to verify a fix blindly, so left it rather than guess; worth a look
+next time someone has the app tooling.
+
+Continued down CLAUDE.md's Step 0 ladder after that: no sightings, all
+submissions through id 104 already in `submissions-processed.json`, rung 4
+(`scout_next.py --target` says BUILD-nothing-to-scout; `city_queue.py
+--next`'s OPENABLE-today list is Taormina/Ravenna/Ischia/Trier/Niagara
+Falls, every one already confirmed thin or exhausted by today's earlier
+continuations per CURATION.md and LOG.md), rung 7 (`recognise.py --stuck`
+at 0), rung 8 (`pagegaps.py` at 0 for species/country/park), and rung 9
+(`PRODUCT_TODO.md` is entirely DONE/superseded, nothing unblocked to draw).
+Stopping here rather than re-running an exhausted hunt.
 ## 2026-09-13 - Night run 2026-09-13 17:07 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 22.7 minutes of its 120 minute window, 171 turns, 31 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: enschede, amersfoort, which block the top of the queue until they expire.
