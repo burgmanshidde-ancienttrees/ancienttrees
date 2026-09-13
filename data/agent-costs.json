@@ -7917,6 +7917,15 @@
         "note": "Rung 2 work: fixed a fabricated age (planting year 2017 printed as an age) in site/src/lib/tree-copy.ts, added a qa.py ratchet check, recorded via health.py --answer. Session work, tokens not separately metered.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Prague, Singapore, Valencia (16 photo-less trees, depth-allowed cities)",
+        "kind": "photo-judge",
+        "tokens": 155000,
+        "trees": 0,
+        "note": "63 candidates viewed, 2 approved (prg_026, prg_030), 2 held (sgp_033, vlc_023 - ambiguous which of several similar trees), 59 rejected; free photo_hunt.py --recheck sweep supplied the candidates",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
