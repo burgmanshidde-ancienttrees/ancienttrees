@@ -1,0 +1,64 @@
+{
+  "city": "'s-Gravenvoeren",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "'s-Gravenvoeren is a village of Voeren, in the hilly Flemish exclave between Maastricht and Liège, and its mapped tree has spent its life absorbing other people's problems. At least eighty nails are hammered into the dead side of the Nagelboom, a horse chestnut nail tree: a cloth rubbed over an ailment, then driven into the bark with a nail, was supposed to carry the ailment away. It was once a finalist for European Tree of the Year and is in poor condition today, at a crossing of two hollow roads southwest of the village church.",
+  "meta_description": "The Nagelboom of 's-Gravenvoeren: a horse chestnut with 80+ nails hammered into it, once a European Tree of the Year finalist, now declining.",
+  "question_meta": "The Nagelboom van 's-Gravenvoeren is a horse chestnut nail tree, at least 80 nails driven into its dead side, once a European Tree of the Year finalist.",
+  "question_answer": "'s-Gravenvoeren's only mapped tree is the Nagelboom, a horse chestnut at the Heuvelke, where two hollow roads cross southwest of the village church. Nobody has recorded its age or girth. At least eighty nails are driven into the dead side of its trunk.",
+  "question_context": "A nagelboom is a nail tree: rub a nail over whatever hurts, then hammer it into the bark, and the ailment is supposed to travel into the wood along with it. This one has taken at least eighty nails that way, all driven into the back of the trunk where part of it has already died, which is the side that can absorb them. The crossing where it stands, at the Heuvelke about 350 metres southwest of the Sint-Lambertuskerk, is thought to follow the line of the Via Mansuerisca, a Roman road, though that is a reading of the landscape rather than a settled fact. Both the Dutch record and the Flemish heritage inventory describe its condition plainly as poor, and a successor tree has already been planted nearby against the day this one goes. It was also a finalist for European Tree of the Year, an odd pairing with its condition, and it is still standing. Nobody has recorded its age or its girth; the nails are the only count anyone has ever taken of it, added one ailment at a time.",
+  "hero_tree_id": "gvo_001",
+  "oldest_tree_id": "gvo_001",
+  "faq": [
+    {
+      "q": "How old is the Nagelboom?",
+      "a": "Nobody has recorded its age or girth. Only the nails driven into it have been counted, at least eighty of them."
+    },
+    {
+      "q": "What is a nagelboom?",
+      "a": "A nail tree. A nail is rubbed over an ailment and then hammered into the bark, carrying the ailment into the wood along with it. This tree carries at least eighty such nails, all on the dead side of its trunk."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes, though both the Dutch record and the Flemish heritage inventory describe its condition as poor, and a successor has already been planted nearby. It was once a finalist for European Tree of the Year."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "'s-Gravenvoeren is a village of Voeren, in Limburg province. The tree stands at the Heuvelke, where two hollow roads cross about 350 metres southwest of the Sint-Lambertuskerk, reached on foot; there is no public transport stop at the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gvo_001",
+      "name": "Nagelboom van 's-Gravenvoeren",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Heuvelke, at a crossing of two hollow roads, about 350m southwest of the Sint-Lambertuskerk, 's-Gravenvoeren, Voeren",
+        "latitude": 50.7577654,
+        "longitude": 5.7577933,
+        "neighbourhood": "'s-Gravenvoeren (Voeren), Province de Limbourg"
+      },
+      "story": "At least eighty nails are hammered into the dead side of this horse chestnut, and that is the whole point of it. A nagelboom is a nail tree: you rub a nail over whatever hurts, then drive it into the trunk, and the ailment is supposed to travel into the wood along with it. The nails go into the back of the tree, where part of the trunk has already died, which is the part that takes them.\n\nIt stands where two hollow roads cross at the Heuvelke, about 350 metres southwest of the Sint-Lambertuskerk in 's-Gravenvoeren. The crossing is thought to follow the line of the Via Mansuerisca, a Roman road, which is a reading of the landscape rather than a settled fact.\n\nIts condition is not good and both the Dutch record and the Flemish heritage inventory say so plainly. A successor has already been planted nearby against the day it goes. It was also a finalist for European Tree of the Year, which is a strange pair of things to be at the same time, and it is still standing.\n\nNobody has recorded its age or its girth. The nails are the only count anybody has taken of it, and they were put there one ailment at a time.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Nagelboom_van_%27s-Gravenvoeren",
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/132372"
+      ],
+      "access": "Free, on a public path/hollow road crossing (thought to follow the Roman road Via Mansuerisca).",
+      "transport": "On foot from 's-Gravenvoeren village, on a rural hollow-road crossing; no public transport stop at the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the nails, at least eighty of them driven into the dead back of the trunk. It stands where two hollow roads cross at the Heuvelke, about 350 metres southwest of the Sint-Lambertuskerk."
+    }
+  ]
+}

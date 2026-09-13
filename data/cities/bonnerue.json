@@ -1,0 +1,64 @@
+{
+  "city": "Bonnerue",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Bonnerue is a hamlet of Houffalize in the Ardennes, known for a beech that is shrinking rather than growing. Li Béni Hesse, Walloon for the blessed beech, measured eight metres round in 2007 and just over seven after part of the trunk gave way. Funeral processions once stopped here on the way to the cemetery at Vellereux, so the dead could be blessed before they went on. Nobody has dated it, and the tree stands alone on a rural path south of the village, barbed wire wound round the trunk to stop it losing any more of itself.",
+  "meta_description": "Li Béni Hesse of Bonnerue: one of Belgium's largest beeches, over 7 metres round, its trunk failing, blessed by funeral processions for generations.",
+  "question_meta": "Li Béni Hesse, the blessed beech of Bonnerue, is one of Belgium's largest beeches, 7.15 metres round, damaged and undated, near Houffalize.",
+  "question_answer": "Bonnerue's only mapped tree is Li Béni Hesse, a European beech on the rural path south of the village. It measured 7.15 metres round in December 2023, down from 8 metres in 2007 after the southern side of the trunk partially collapsed. It has no recorded planting date.",
+  "question_context": "The measurements tell a story on their own: 6.05 metres round in 1977, 6.63 in 1996, 8 in 2007, then 7.15 in 2023 once the damage is accounted for. That climb and fall is the clearest evidence anyone has that this is an old tree, since a beech that size does not grow that fast without a great many years behind it, but nobody has put a number on those years, and a trunk this damaged cannot be worked backward from its girth with any honesty. The local name, Li Béni Hesse, is Walloon for roughly the blessed beech, and the blessing is the tree's other half: funeral processions leaving Bonnerue for the cemetery at Vellereux are said to have stopped here so the dead could be blessed on the way, and the hollow trunk is said to hold a cross placed before the French Revolution, though nobody has written that part down. Barbed wire is wound round the trunk today to stop visitors doing to it what the years already have. It stands alone, so there is no walk to speak of, just the path south out of the village and the tree at the end of it.",
+  "hero_tree_id": "bnr_001",
+  "oldest_tree_id": "bnr_001",
+  "faq": [
+    {
+      "q": "How old is Li Béni Hesse?",
+      "a": "Nobody has dated it. The trunk's southern side partially collapsed by 2023, which rules out estimating its age from the girth, and no planting record survives."
+    },
+    {
+      "q": "Why is it called the blessed beech?",
+      "a": "By local tradition, funeral processions leaving Bonnerue for the cemetery at Vellereux stopped here so the dead could be blessed on the way. A cross is said to be held inside the hollow trunk, put there before the French Revolution, though this is undocumented."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes. An account from December 2023 describes it standing and in leaf, with one healthy section on the north side and a dying branch to the west."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Bonnerue is a village of Houffalize in the province of Luxembourg. The tree stands on a rural path leaving the village to the south, on foot; there is no public transport stop nearby."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bnr_001",
+      "name": "Li Béni Hesse",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 715,
+      "location": {
+        "address": "Rural path south of Bonnerue village, Houffalize, Province de Luxembourg",
+        "latitude": 50.11194444,
+        "longitude": 5.72305556,
+        "neighbourhood": "Bonnerue (Houffalize)"
+      },
+      "story": "This beech has got smaller. It measured eight metres round at a metre and a half from the ground in 2007. In December 2023 it came in at 7.15 metres, because the southern side of the trunk had partially collapsed in the years between. The earlier readings show the climb up to that figure: 6.05 metres in 1977, 6.63 in 1996. It is still one of the largest beeches in Belgium, and it stood 17 metres tall when anyone last measured the height.\n\nLi Béni Hesse is Walloon for roughly the blessed beech, and the blessing is the local half of the story. By tradition, funeral processions leaving Bonnerue for the cemetery at Vellereux stopped at this tree so the dead could be blessed on the way. The hollow trunk is said to hold a cross put there before the French Revolution, though nobody has documented it. The tree was pollarded during its working life.\n\nNobody has dated it. The damaged trunk also rules out working backwards from the girth, which is how a beech without papers usually gets an age. If you know when it went in, tell us.\n\nThe account of that 2023 visit describes one healthy section on the northern side, a dying branch to the west, and the tree standing and in leaf. Barbed wire is wound round the trunk to stop visitors damaging it further, so this is one to look at rather than touch.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique",
+        "https://lestetardsarboricoles.fr/wordpress/2023/12/08/li-beni-hesse-de-bonnerue-houffalize-belgique/"
+      ],
+      "access": "Free, on a public rural path leaving the village to the south; the trunk is ringed with barbed wire to protect it from damage, so viewing rather than touching.",
+      "transport": "Rural path out of Bonnerue village, Houffalize; no public transport stop nearby, reachable on foot from the village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the trunk, over seven metres round and broken away on its southern side, with barbed wire wound round it. It stands on the rural path leaving Bonnerue to the south."
+    }
+  ]
+}
