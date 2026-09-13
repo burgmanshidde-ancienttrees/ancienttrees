@@ -11,6 +11,63 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 - Gdansk 6 -> 12: the Park Oliwski dendrological cluster written up
+
+Write pass on the six verified trees the Gdansk verify pass left in
+`data/research/gdansk-verified.json`. All six stand in Park Oliwski im. Adama
+Mickiewicza in Oliwa, within a few hundred metres of each other, which turns a
+page of four scattered singletons into an actual afternoon's walk. All six are
+free, public park, `location_precision: confirmed`, and all six carry
+`curation_status: flagged` from the verify pass.
+
+- **gda_007 The Maples of Hugo Conwentz** (Field Maple): register twins folded
+  into one entry, 245/180 cm. Designated 26 Feb 2026, the newest natural
+  monument on the whole Gdansk list. The verify notes flagged the Conwentz
+  biography as needing an independent check before use, so the story attributes
+  it ("widely credited with") rather than asserting it, and says outright that
+  the register does not explain why these trees carry his name.
+- **gda_008 The Ginkgo of Park Oliwski**, 201 cm. No age anywhere; left empty
+  and turned into a question on the page rather than a girth-derived guess.
+- **gda_009 The Cucumber Magnolia of Park Oliwski**, 271 cm. No age; no growth
+  rate published for Magnolia acuminata at this latitude to derive one from,
+  stated plainly.
+- **gda_010 The Three-Trunked Katsura of Park Oliwski**, stems 168/189/158 cm.
+  No age, but the species ceiling is real and is in the story: Cercidiphyllum
+  japonicum reached Western collections only after 1865.
+- **gda_011 The Giant Thuja of Park Oliwski**, 219 cm, the headline tree of a
+  four-tree register group (two yews and a Nootka cypress beside it). No age.
+- **gda_012 The Ivy Elm of Park Oliwski**, 420 cm, by the pond, protected 1988
+  under a register name that describes the flowering ivy on it. Age 150-250
+  years, girth-derived, kept broad and said to be girth-derived.
+
+**Photos: 6 of 6 missing.** The verify notes cite a named Commons file for four
+of them (833. ginko biloba gdansk.jpg, 837. magnolia gdansk oliwa.jpg, 838.
+grujecznik gdansk oliwa.jpg, 836 skupienie oliwa.jpg, Wiaz z kwitnacym
+bluszczem.JPG), so this is a live photo lane rather than a dead end: it needs a
+viewing pass, not a new hunt. Not attempted here, photo hunting is not a write
+pass's job.
+
+**best_time set on 3 of 6, left empty on 3.** Ginkgo (Oct/Nov gold), katsura
+(October, the fallen leaves smell of burnt sugar) and the ivy elm (late Sept
+into Oct, when the ivy flowers and pulls in wasps and late bees). The thuja is
+evergreen and gets none; the maples and the magnolia have no moment strong
+enough to spend the badge on.
+
+**Two species common names harmonised** to what other city files already use:
+"Katsura Tree" -> "Katsura (Cercidiphyllum japonicum)" and "Western Redcedar" ->
+"Western Red Cedar (Thuja plicata)". The Latin names, which are the verified
+fact, are untouched; the build fails on one species under two common names.
+
+**Count promises fixed** across the page: intro, meta_description,
+question_meta and the "Are these trees free to visit?" FAQ all still said six.
+The first intro rewrite overran Contract C's 60-100 word cap at 158 words and
+preflight caught it; cut back to 97.
+
+**The Lawson Cypress lead in `data/leads/gdansk.json` was NOT written.** Its own
+note says "not verified this pass", and a write pass verifies nothing. It is a
+good candidate in the same walkable cluster, 212 cm, register 830, and it needs
+a verify pass rather than a writer. Left in the leads file untouched.
+
 ## 2026-09-13 - Berlin 21 -> 23: a wingnut resolved, and the Queen's own oak found beside it
 
 Dispatched a register-backed verify pass on Berlin (target 30, real
