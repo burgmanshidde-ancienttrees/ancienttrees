@@ -1316,10 +1316,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/600040819/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Clifton Ladd, C.W.B, via iNaturalist",
+        "status": "approved",
+        "width": 375,
+        "height": 500
       },
       "how_to_recognise": "You can recognise it by the crown, 24 metres across on a tree 25 metres tall, unpruned where the city's other planes are cut back to knuckles each winter. It stands between the Ciutadella lake and the zoo fence."
     },

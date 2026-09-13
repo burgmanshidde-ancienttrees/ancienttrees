@@ -18137,7 +18137,9 @@
      "author": "Majvdl",
      "lat": 53.370903,
      "lng": -6.279794,
-     "cats": "Category:CC-BY-SA-4.0 Category:Dublin Category:Files with coordinates missing SDC location of creation Category:Francis Browne Category:Glasnevin Cemetery Category:Jesuits Category:Self-published work Category:Taken with Panasonic Lumix DMC-LX7"
+     "cats": "Category:CC-BY-SA-4.0 Category:Dublin Category:Files with coordinates missing SDC location of creation Category:Francis Browne Category:Glasnevin Cemetery Category:Jesuits Category:Self-published work Category:Taken with Panasonic Lumix DMC-LX7",
+     "judged": "reject",
+     "verdict": "Jesuit graveyard memorial stones; only a sliver of a trunk visible at the frame edge, not the Dawn Redwood"
     },
     {
      "title": "File:River Tolka, Glasnevin, Dublin - geograph.org.uk - 1890431.jpg",
@@ -22439,7 +22441,9 @@
      "licence": "CC BY",
      "author": "(c) Clifton Ladd, C.W.B., some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.388655,2.1874466667"
+     "obs_location": "41.388655,2.1874466667",
+     "judged": "approve",
+     "verdict": "Full plane tree in Ciutadella, trunk and crown readable, path for scale; iNat geotag 11m from our confirmed pin. Leaf-off/transitional but the only candidate, and the tree has no photo yet"
     },
     {
      "title": "iNat obs 330847832 (Platanus × hispanica)",
@@ -22448,7 +22452,9 @@
      "licence": "CC BY",
      "author": "(c) Clifton Ladd, C.W.B., some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.388655,2.1874466667"
+     "obs_location": "41.388655,2.1874466667",
+     "judged": "reject",
+     "verdict": "Second photo from the same observation: a pile of fallen leaves, not the tree"
     }
    ]
   },
@@ -22493,7 +22499,9 @@
      "licence": "CC BY",
      "author": "(c) John Palmer, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3718251,2.1565357"
+     "obs_location": "41.3718251,2.1565357",
+     "judged": "reject",
+     "verdict": "Trunk hollow close-up (no crown) and a backlit foliage close-up; also species mismatch (Schinus molle vs our Schinus longifolia)"
     },
     {
      "title": "iNat obs 9992331 (Schinus molle)",
@@ -22559,7 +22567,9 @@
      "author": "Electro07",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Canon Digital IXUS 105 Category:Verdaguer metrostation"
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Canon Digital IXUS 105 Category:Verdaguer metrostation",
+     "judged": "reject",
+     "verdict": "Metro station platform, unrelated to the tree"
     },
     {
      "title": "iNat obs 249401941 (Ginkgo biloba)",
@@ -22570,7 +22580,7 @@
      "source": "inaturalist",
      "obs_location": "41.3675868531,2.1652655303",
      "judged": "reject",
-     "verdict": "Ginkgo seeds laid out on a paper towel, no tree in the frame"
+     "verdict": "Fallen leaves on the ground, not the tree"
     },
     {
      "title": "iNat obs 249401941 (Ginkgo biloba)",
@@ -22984,7 +22994,9 @@
      "author": "Diego Delso",
      "lat": null,
      "lng": null,
-     "cats": "Category:2012 in Bavaria Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2012 Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012, DE-BY Category:Images from Wiki Loves Monuments 2012 in Germany Category:Images from Wiki Loves Monuments by User:Poco a poco Category:Images of Germany by User:Poco a poco Category:Justus von Liebig-Denkmal München Category:Photographs taken on 2012-04-30 Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images from Wiki Loves Monuments 2012 in Germany Category:Quality images from Wiki Loves Monuments by User:Poco a poco Category:Quality images of Germany by User:Poco a poco Category:Quality images of Munich Category:Quality images of sculptures in Bavaria Category:Taken with Canon EOS 5D Mark II"
+     "cats": "Category:2012 in Bavaria Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2012 Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012, DE-BY Category:Images from Wiki Loves Monuments 2012 in Germany Category:Images from Wiki Loves Monuments by User:Poco a poco Category:Images of Germany by User:Poco a poco Category:Justus von Liebig-Denkmal München Category:Photographs taken on 2012-04-30 Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images from Wiki Loves Monuments 2012 in Germany Category:Quality images from Wiki Loves Monuments by User:Poco a poco Category:Quality images of Germany by User:Poco a poco Category:Quality images of Munich Category:Quality images of sculptures in Bavaria Category:Taken with Canon EOS 5D Mark II",
+     "judged": "reject",
+     "verdict": "Justus von Liebig monument/statue, not the White Ash; tree only in background"
     },
     {
      "title": "iNat obs 231754465 (Fraxinus excelsior)",
@@ -22993,7 +23005,9 @@
      "licence": "CC BY",
      "author": "(c) Ben Redding, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "48.1416805,11.56995"
+     "obs_location": "48.1416805,11.56995",
+     "judged": "reject",
+     "verdict": "iNat observation labelled Fraxinus excelsior, but our tree is White Ash (Fraxinus americana); species mismatch, no geo confirmation"
     }
    ]
   },
@@ -26673,7 +26687,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Lion Feuchtwanger Category:Photographs by User:Rufus46 Category:Plaques in Munich Category:St.-Anna-Platz 2 (München)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Lion Feuchtwanger Category:Photographs by User:Rufus46 Category:Plaques in Munich Category:St.-Anna-Platz 2 (München)",
+     "judged": "reject",
+     "verdict": "A memorial plaque on a wall, no tree visible at all"
     }
    ]
   },
@@ -26909,7 +26925,9 @@
      "author": "Strubbl",
      "lat": 48.121194,
      "lng": 11.574889,
-     "cats": "Category:2025 in Munich Category:CC-BY-SA-4.0 Category:Edlingerstraße (München) Category:Exposure time 1/1600 sec Category:F-number f/4.5 Category:ISO speed rating 125 Category:Images by Strubbl Category:Lens focal length 8.8 mm Category:Munich photographs taken on 2025-03-28 Category:Parked automobiles in Bavaria Category:Spring in Munich Category:Taken with Canon PowerShot G7 X Mark III Category:Uploaded with VicuñaUploader"
+     "cats": "Category:2025 in Munich Category:CC-BY-SA-4.0 Category:Edlingerstraße (München) Category:Exposure time 1/1600 sec Category:F-number f/4.5 Category:ISO speed rating 125 Category:Images by Strubbl Category:Lens focal length 8.8 mm Category:Munich photographs taken on 2025-03-28 Category:Parked automobiles in Bavaria Category:Spring in Munich Category:Taken with Canon PowerShot G7 X Mark III Category:Uploaded with VicuñaUploader",
+     "judged": "reject",
+     "verdict": "Street facade photo of an apartment building, no chestnut tree as subject"
     }
    ]
   },
@@ -26927,7 +26945,9 @@
      "author": "Achim Lammerts (Syntaxys)",
      "lat": 48.10532,
      "lng": 11.553097,
-     "cats": "Category:CC-BY-SA-4.0 Category:Contre-jour photography of Germany Category:Flaucher in 2005 Category:Information field template with formatting Category:Munich photographs taken on 2005-08-12 Category:Protected areas with known WDPA-ID Category:Self-published work Category:Syntaxys/Alle Bilder (chronologisch) Category:Syntaxys/Entlang der Isar Category:Syntaxys/Natur/LSG Isarauen Category:Taken with AF-S DX Zoom-Nikkor 18-70mm/3.5-4.5G IF-ED Category:Taken with Nikon D100 Category:User custom license tags"
+     "cats": "Category:CC-BY-SA-4.0 Category:Contre-jour photography of Germany Category:Flaucher in 2005 Category:Information field template with formatting Category:Munich photographs taken on 2005-08-12 Category:Protected areas with known WDPA-ID Category:Self-published work Category:Syntaxys/Alle Bilder (chronologisch) Category:Syntaxys/Entlang der Isar Category:Syntaxys/Natur/LSG Isarauen Category:Taken with AF-S DX Zoom-Nikkor 18-70mm/3.5-4.5G IF-ED Category:Taken with Nikon D100 Category:User custom license tags",
+     "judged": "reject",
+     "verdict": "Isar riverbank landscape view, no identifiable birch as subject"
     },
     {
      "title": "File:2005-08-12 D100-0003 Achim-Lammerts Munich-Isar-Flaucher.jpg",
@@ -26937,7 +26957,9 @@
      "author": "Achim Lammerts (Syntaxys)",
      "lat": 48.105186,
      "lng": 11.553166,
-     "cats": "Category:CC-BY-SA-4.0 Category:Contre-jour photography of Germany Category:Flaucher in 2005 Category:Information field template with formatting Category:Munich photographs taken on 2005-08-12 Category:Personality rights warning Category:Protected areas with known WDPA-ID Category:Self-published work Category:Syntaxys/Alle Bilder (chronologisch) Category:Syntaxys/Entlang der Isar Category:Syntaxys/Menschen Category:Syntaxys/Natur/LSG Isarauen Category:Taken with AF-S DX Zoom-Nikkor 18-70mm/3.5-4.5G IF-ED Category:Taken with Nikon D100 Category:User custom license tags"
+     "cats": "Category:CC-BY-SA-4.0 Category:Contre-jour photography of Germany Category:Flaucher in 2005 Category:Information field template with formatting Category:Munich photographs taken on 2005-08-12 Category:Personality rights warning Category:Protected areas with known WDPA-ID Category:Self-published work Category:Syntaxys/Alle Bilder (chronologisch) Category:Syntaxys/Entlang der Isar Category:Syntaxys/Menschen Category:Syntaxys/Natur/LSG Isarauen Category:Taken with AF-S DX Zoom-Nikkor 18-70mm/3.5-4.5G IF-ED Category:Taken with Nikon D100 Category:User custom license tags",
+     "judged": "reject",
+     "verdict": "Isar riverbank scene with swimmers, no identifiable birch as subject"
     },
     {
      "title": "File:2013-04-25 D300-0007 Achim-Lammerts Munich-Isar-Flaucher.jpg",
@@ -39318,7 +39340,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings in Schwanthalerhöhe Category:CC-BY-SA-3.0 Category:GFDL Category:Gollierplatz (München) Category:Gollierplatz 10 (München) Category:License migration redundant Category:Photographs by User:Rufus46 Category:Self-published work"
+     "cats": "Category:Buildings in Schwanthalerhöhe Category:CC-BY-SA-3.0 Category:GFDL Category:Gollierplatz (München) Category:Gollierplatz 10 (München) Category:License migration redundant Category:Photographs by User:Rufus46 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Building facade shot, bare branches only at frame edge, not the chestnut"
     },
     {
      "title": "File:Gollierplatz Muenchen-1.jpg",
@@ -39328,7 +39352,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Gollierplatz (München) Category:Photographs by User:Rufus46 Category:Taken on missing SDC inception"
+     "cats": "Category:CC-BY-SA-3.0 Category:Gollierplatz (München) Category:Photographs by User:Rufus46 Category:Taken on missing SDC inception",
+     "judged": "reject",
+     "verdict": "Generic park view with several trees among picnic tables, no single identifiable chestnut as subject"
     },
     {
      "title": "File:St. Rupert (München) monumentale Rupertstatue.jpg",
@@ -43052,7 +43078,9 @@
      "author": "Enfo",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia España in 2011 Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2011-09-16 Category:Taken with Canon Digital IXUS 970 IS"
+     "cats": "Category:All media supported by Wikimedia España in 2011 Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2011-09-16 Category:Taken with Canon Digital IXUS 970 IS",
+     "judged": "reject",
+     "verdict": "Palau Castanyer building facade, named for a family not the tree"
     },
     {
      "title": "File:Palau Castanyer - balcó.jpg",
@@ -43062,7 +43090,9 @@
      "author": "Pere López",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia España in 2011 Category:Balconies in Barcelona Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2011-09-17 Category:Taken with Panasonic Lumix DMC-FZ18"
+     "cats": "Category:All media supported by Wikimedia España in 2011 Category:Balconies in Barcelona Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2011-09-17 Category:Taken with Panasonic Lumix DMC-FZ18",
+     "judged": "reject",
+     "verdict": "A balcony detail of the same building, no tree"
     },
     {
      "title": "File:Palau Castanyer 1.jpg",
@@ -91083,7 +91113,7 @@
      "source": "inaturalist",
      "obs_location": "37.3840134823,-5.9913894233",
      "judged": "reject",
-     "verdict": "Second photo of the same observation (595653617): close-up of a dried magnolia seed cone on bare ground, no tree in frame. Reject this frame; the observation itself is held on the entry above."
+     "verdict": "Close-up of a fallen seed pod on the ground, not the tree itself"
     },
     {
      "title": "iNat obs 328686979 (Magnolia grandiflora)",
@@ -91177,7 +91207,7 @@
      "source": "inaturalist",
      "obs_location": "37.3772519444,-5.9889577778",
      "judged": "reject",
-     "verdict": "Second bark close-up of the same trunk; no crown, no tree form, blown sky behind."
+     "verdict": "Extreme close-up of bark and a small epicormic shoot, fails the Cadiz distance test"
     },
     {
      "title": "iNat obs 307679215 (Eutacta)",
@@ -91195,7 +91225,9 @@
      "licence": "CC BY",
      "author": "(c) rmjb, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "37.3783912737,-5.9891392811"
+     "obs_location": "37.3783912737,-5.9891392811",
+     "judged": "reject",
+     "verdict": "Extreme close-up of bark and foliage, fails the Cadiz distance test; also labelled Araucaria cunninghamii not heterophylla"
     },
     {
      "title": "iNat obs 151975786 (Araucaria cunninghamii)",
@@ -91397,7 +91429,9 @@
      "author": "Jebulon",
      "lat": 37.411734,
      "lng": -5.991159,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Puente del Alamillo Category:Quality images Category:Quality images by Jebulon Category:Quality images of Seville Category:Quality images of bridges in Spain Category:Quality images of rivers in Spain Category:Self-published work Category:Spain photographs taken on 2012-08-08 Category:Taken with Sony DSLR-A550 Category:Valued images by Jebulon Category:Valued images of Andalusia Category:Valued images promoted 2012-12 Category:Valued images sorted by promotion date"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Puente del Alamillo Category:Quality images Category:Quality images by Jebulon Category:Quality images of Seville Category:Quality images of bridges in Spain Category:Quality images of rivers in Spain Category:Self-published work Category:Spain photographs taken on 2012-08-08 Category:Taken with Sony DSLR-A550 Category:Valued images by Jebulon Category:Valued images of Andalusia Category:Valued images promoted 2012-12 Category:Valued images sorted by promotion date",
+     "judged": "reject",
+     "verdict": "The Alamillo bridge, no mulberry tree visible"
     }
    ]
   },
@@ -91457,7 +91491,9 @@
      "author": "Yuqin Feng",
      "lat": 37.37594167,
      "lng": -5.98923611,
-     "cats": "Category:All media supported by Wikimedia España in 2018 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2018 Category:Images from Wiki Loves Earth 2018 in Spain Category:Images from Wiki Loves Earth 2018 in Spain by Yuqin Feng Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Self-published work Category:Trees in María Luisa Park Category:Unqualified images from WLE 2018 in Spain (not from a site of community importance) Category:Uploaded via Campaign:wle-es"
+     "cats": "Category:All media supported by Wikimedia España in 2018 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2018 Category:Images from Wiki Loves Earth 2018 in Spain Category:Images from Wiki Loves Earth 2018 in Spain by Yuqin Feng Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Self-published work Category:Trees in María Luisa Park Category:Unqualified images from WLE 2018 in Spain (not from a site of community importance) Category:Uploaded via Campaign:wle-es",
+     "judged": "reject",
+     "verdict": "Wrong tree: a large fig with buttress roots is the subject, palms only incidental at the edge"
     },
     {
      "title": "iNat obs 278052391 (Phoenix)",
@@ -91466,7 +91502,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "37.3775140697,-5.9898495708"
+     "obs_location": "37.3775140697,-5.9898495708",
+     "judged": "reject",
+     "verdict": "A young palm seedling growing at the base of an unrelated fig's roots, not the multi-stemmed palm"
     }
    ]
   },
@@ -91484,7 +91522,9 @@
      "author": "Acediscovery",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:February 2011 in Seville Category:Guadalquivir in Seville Category:Rivers in 2011 Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:February 2011 in Seville Category:Guadalquivir in Seville Category:Rivers in 2011 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "River view with the Torre del Oro, no eucalyptus visible"
     }
    ]
   },
