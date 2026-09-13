@@ -973,3 +973,45 @@ struct WhenTheAccountHoldsACorrection {
         #expect(s.all.isEmpty)
     }
 }
+
+/// A NAME THAT FITS ON ONE LINE. Hidde, 2026-09-13: "waarom zit er zo'n
+/// verticale whitespace tussen Baarn en Watercypres?"
+///
+/// The title was drawing two lines and the second was empty, which the
+/// arithmetic pins exactly: on his 402 point phone a one-line title puts the
+/// place link's cap at 496.7 and the status heading at 545.0, a two-line title
+/// at 532.7 and 581.0, and his screenshot reads 532.7 and 581.0 on both.
+///
+/// The newline is in the data. The collect sheet used to ask one question and
+/// use the answer as the NAME, and that field is multi-line, so any sighting
+/// from that era can carry one. Cleaning only at capture would leave every
+/// sighting already on a phone or in the database drawing an empty second line
+/// forever, which is why this runs on the way out too.
+struct AnOwnTreesNameFitsOnOneLine {
+
+    @Test func aTrailingNewlineDoesNotBecomeAnEmptySecondLine() {
+        #expect(Sightings.oneLine("Watercypres\n") == "Watercypres")
+        #expect(Sightings.oneLine("Watercypres\n\n  ") == "Watercypres")
+        #expect(Sightings.oneLine("\nWatercypres") == "Watercypres")
+    }
+
+    /// A name that genuinely arrived as two lines keeps both words. Cutting at
+    /// the newline would silently rename somebody's tree.
+    @Test func twoLinesBecomeOneLineRatherThanHalfAName() {
+        #expect(Sightings.oneLine("The oak\non my street") == "The oak on my street")
+        #expect(Sightings.oneLine("Beech\r\nof the churchyard") == "Beech of the churchyard")
+    }
+
+    /// An ordinary name is returned untouched.
+    @Test func leavesAnOrdinaryNameAlone() {
+        #expect(Sightings.oneLine("The oak on my street") == "The oak on my street")
+        #expect(Sightings.oneLine("Watercypres") == "Watercypres")
+    }
+
+    /// And it never returns a name made only of whitespace, because "A tree I
+    /// found" is the honest fallback and an empty title is not.
+    @Test func whitespaceOnlyComesBackEmptyForTheCallerToAnswer() {
+        #expect(Sightings.oneLine("\n \n") == "")
+        #expect(Sightings.oneLine("") == "")
+    }
+}
