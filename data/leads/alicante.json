@@ -1,214 +1,216 @@
 {
-  "leads": [
-    {
-      "name": "Centenary elms of Plaza de Santa Teresa / Panteon de Quijano",
-      "species": "Ulmus minor (per Diario Informacion, same species as the already-published Gabriel Miro elm suspects)",
-      "reason": "NEW this pass (2026-09-12), found via Diario Informacion's 2013 'los vecinos mas altos y longevos' survey (web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html), the same article that supplied ali_017 (Araucaria araucana, same plaza) this pass. It names 'olmos centenarios' in Plaza de Santa Teresa (Panteon de Quijano), over a century old, part of the same 19th-century romantic-garden planting as the Gabriel Miro elms, and quotes Andres Medrano, the agricultural expert who led an 1990 trunk-rot surgery on these exact elms ('teniamos el tronco podrido y teniamos que ir con mascarillas'), confirming they survived at least to 2013. No girth, height or individual count given, and no second independent source found this pass. Single-sourced; hold as a lead. Same plaza/park as ali_017, so a future pass revisiting this site for a photo could check both at once.",
-      "location_hint": "Plaza de Santa Teresa / Panteon de Quijano, San Anton, Alicante, same site as ali_017 (approx 38.3514,-0.4843)",
-      "status": "RESOLVED 2026-09-13 (verify pass): second independent source found (comunitatvalenciana.com, the regional tourist board's own Panteon de Quijano page, independently lists 'monkey puzzle trees and elms' among the garden's vegetation). Published 2026-09-13 as ali_020, park-level pin (approximate), age given only as the sources' own vague wording (19th century / centenary). es.wikipedia's 'Arboles singulares de Alicante' article (re-fetched as wikitext this pass) does not mention this plaza at all, so it neither helps nor hurts."
-    },
-    {
-      "name": "Silky oaks (\"robles australianos\") bookending the Passeig de Canalejas",
-      "species": "Grevillea robusta",
-      "reason": "UPGRADED this pass (2026-09-12): register_ids within the already-documented 'avenue, not individual collectible points' group (3070-3084) include two Grevillea robusta at 38.34177/-0.48641 (girth 1.1m) and 38.34173/-0.48629 (girth 3.8m), about 0.3km from centre. Diario Informacion's 2013 survey independently describes 'un par de robles australianos en sus extremos' (a pair of Australian oaks at [the paseo's] two ends), calls them centenary and individually catalogued ('tambien estan catalogados'), and gives a shared height of about 19 metres, a stronger and more specific claim than 'part of an avenue'. This does not by itself clear the ensemble rule for TWO separate entries (the girths, 1.1m and 3.8m, disagree sharply for two trees the article treats as a matched pair, which is itself worth flagging rather than resolving silently), and no source gives either one an individual address beyond 'at the ends of the Canalejas paseo'. Worth a dedicated look next pass: either one tree qualifies as a distinctive bookend to the Ficus del Passeig de Canalejas walk (ali_005), or the pair does as a compact, two-point ensemble.",
-      "location_hint": "Two ends of Passeig de Canalejas, Alicante, approx (38.3418,-0.4864) and (38.3417,-0.4863)",
-      "status": "RESOLVED 2026-09-13 (verify pass): pulled both register rows directly (register_ids 3070 and 3071, both individually designated 'Arbol Monumental de Interes Local'). Their HEIGHTS agree closely (19.0m and 18.0m), matching the newspaper's 'alrededor de 19 metros' almost exactly, which is stronger corroboration than girth and was not noticed by the earlier pass. The girth mismatch (1.05m vs 3.75m) is real and unexplained by any source; recorded as an open flag rather than resolved. Published 2026-09-13 as ali_021 (one folded entry, pin at the midpoint of the two register coordinates, ~11m apart, location_precision confirmed)."
-    },
-    {
-      "name": "Magnolio of Plaza Gabriel Miro",
-      "species": "Magnolia grandiflora",
-      "reason": "NEW this pass (2026-09-12), single-sourced: venerablesarboles.blogspot.com's 'Arboles de la Com. Valenciana - Alicante' page (a hobbyist veteran-tree catalogue, 2012) lists 'Ali, Alacant, Placa Gabriel Miro, Magnolio, P1,3m h24m 80anos' with UTM grid ref 30SYH197469, i.e. a Magnolia grandiflora, 80 years old, 1.3m girth, 24m tall, in the same square as the four already-published Ficus macrophylla (ali_001-004). A 24m-tall magnolia on only a 1.3m-girth trunk is an unusual ratio worth double-checking rather than assuming a transcription error. No second source found this pass (a targeted search for 'Magnolio Gabriel Miro Alicante' returned nothing corroborating; the Valencia region's monumental-tree register has no Magnolia grandiflora entry near this plaza, and monumentaltrees.com's page for this exact plaza still 403s to every fetch tool available). Held as a lead pending a second source or a photo confirming a magnolia genuinely stands in this square.",
-      "location_hint": "Plaza Gabriel Miro, Alicante, same square as ali_001-004 (approx 38.3435,-0.4851)",
-      "status": "RE-CHECKED 2026-09-13 (verify pass), no change: one more targeted search found nothing corroborating a magnolia at this plaza specifically. es.wikipedia's 'Arboles singulares de Alicante' article (re-fetched as wikitext) lists Gabriel Miro's notable species as Ficus macrophylla plus 'varios olmos centenarios' only, no magnolia. Still single-sourced; still held."
-    },
-    {
-      "name": "Elm and plane tree of Plaza de Calvo Sotelo",
-      "reason_2026_09_13": "RE-CHECKED 2026-09-13 (verify pass): es.wikipedia's 'Arboles singulares de Alicante' article now has a dedicated Calvo Sotelo section confirming the same three species (Platanus x hispanica, Ulmus minor, Araucaria heterophylla), but its citation is the same Ayuntamiento 'Ruta' brochure already used as this lead's only source, so it is a restatement rather than a genuinely independent second source. Not shipped; still single-sourced in substance. A city landscape-heritage PDF was found this pass (alicante.es .../todas-fichas-estudio-paisaje-version-modificada-24012017.pdf, 2017, 12.7MB, city-wide) that might independently corroborate this stop, but no PDF text-extraction tool is available in this environment (no pdftotext/fitz/pypdf/pdfplumber) and it was not read. Worth a browser-render pass alongside the still-unread senderos-centro.pdf and senderos-centro-arboles.pdf."
-    },
-    {
-      "name": "Ficus centenario near the Castillo de Santa Bárbara elevator tunnel, Raval Roig",
-      "species": "Ficus sp. (likely microcarpa or macrophylla, not stated by the source)",
-      "reason": "NEW this pass (2026-09-10), found via a general news search rather than the register (which this file already records as exhausted, 2026-09-09). On 2026-08-04 the Ayuntamiento ran an emergency pruning on a “ficus centenario” after a 2m+ crack opened in a main branch, reported by todoalicante.es, cope.es, elperiodic.com and alicantepress.com (all covering the same single event, so one underlying source rather than two independent ones). The article places the tree “junto a la entrada al túnel que conduce al ascensor del castillo de Santa Bárbara, en la avenida Juan Bautista Lafora” and says police closed access “desde el Paseíto Ramiro” during the works, i.e. within roughly 100-150m of the already-published ali_011 (the two Paseito de Ramiro figs, register_ids 614/853). No girth, height or exact address given. An Overpass check found two OSM nodes tagged denotation=natural_monument, leaf_cycle=evergreen, leaf_type=broadleaved (ids 10794054257 at 38.3465440,-0.4771636 and 10794054258 at 38.3466555,-0.4770778), roughly 100m east of ali_011's pair and carrying no species or circumference tag and no register_ref, so they are not in data/registers/valencia-arboles-monumentales.json (the register's nearest rows are 614 and 853 themselves, ~95-105m away). Genuinely unresolved whether this news tree IS ali_011 (described loosely, seen from a different vantage point) or a third, separate monumental fig standing nearer the library/tunnel that the Valencia register never captured. Needs: the article's own photo compared against ali_011's crown, or a street-level/satellite look at the tunnel entrance itself, before it can be shipped as anything (confirmation of ali_011, or a new tree with a real pin). Do not re-search this as a news story, the event itself is now fully covered; the open question is purely which trunk it is.",
-      "location_hint": "Near the Castillo de Santa Bárbara elevator tunnel entrance, Avenida Juan Bautista Lafora / Raval Roig, Alicante, within about 150m of ali_011 (Paseito de Ramiro)",
-      "status": "RE-CHECKED 2026-09-10 (verify pass): fetched the todoalicante.es and alicantextra.com articles directly (not just search snippets), confirming the same single location description (\"junto a la entrada al tunel que conduce al ascensor del castillo de Santa Barbara\") and no girth/height/exact address in either. Nominatim places the Biblioteca Publica del Estado (the landmark nearest the OSM natural_monument pair from the earlier pass) at 38.3462755,-0.4777687, which is roughly 60-100m from ali_011's own coordinates (38.346224,-0.47837), consistent with the earlier pass's ~100m estimate rather than resolving it. es.wikipedia's 'Arboles singulares de Alicante' was re-read in full: it groups trees by site (Portal de Elche, Gabriel Miro, Canalejas, Calvo Sotelo) and names no individual tree at the castle-elevator/library site, so it cannot settle whether this is ali_011 restated or a third tree. monumentaltrees.com 403s via WebFetch as well as curl (no browser-session tool available this pass). Still genuinely unresolved; still needs a photo comparison or a browser session, neither available to a verify pass. Do not re-run the same news search again, nothing further to find there.",
-      "status_2026_09_11": "RE-CHECKED 2026-09-11 (verify pass): found the actual elevator entrance itself via Overpass rather than reasoning from the library (OSM node 3670782351, 'Ascensor al Castillo de Santa Barbara', entrance=main, at 38.3467887,-0.4769547) and recomputed distances from that exact point. The two OSM natural_monument tree nodes from the earlier pass (10794054257 at 38.3465440,-0.4771636 and 10794054258 at 38.3466555,-0.4770778) sit only about 33m and 18m from the elevator entrance respectively, i.e. genuinely 'junto a la entrada', matching the article's wording closely. Ali_011's own coordinates (38.346224,-0.47837, Paseito de Ramiro) are about 139m from the same elevator entrance, a materially greater distance. This is stronger evidence than the earlier library-based estimate that the news tree is a DIFFERENT, closer specimen from ali_011 rather than the same pair restated from another vantage point. Still not shippable: neither OSM node carries a species or circumference tag, no register entry sits within 100m of either point, and the only textual source remains the single August 2026 pruning event (four outlets covering one underlying incident, not two independent facts), which never names the species beyond 'ficus centenario'. Recording the two precise coordinates here so a future pass with a photo-comparison or browser tool does not have to re-run this Overpass query: if the pruned tree is confirmed as one of these two nodes by a photo, it would need one more independent source (species, or a firmer age than 'centenario') before it clears the two-source bar. Also checked this pass and NOT useful: Universidad de Alicante campus tree guide (torretes.es/arboles-ua/) is a general species catalogue, listing what grows on campus rather than naming or measuring individual specimens, so it cannot supply a collectible point; the campus is also ~25-28 minutes by TRAM from the centre and administratively in San Vicente del Raspeig, borderline for the day-trip rule even if a named specimen existed. Casa Tapena (Onil, ~40km) is out of scope for Alicante entirely. The Diputacion's 'Jardines Historicos de la Provincia de Alicante' PDF fetched fine (200, 3.4MB) but its text is embedded in a form plain extraction cannot read (same font-encoding block already documented for the senderos-centro PDFs); no pdftotext/fitz/pypdf available in this environment to render it. Independently re-confirmed the register-radius exhaustion the same day: cross-matched all 73 candidates within 20km against data/registers/valencia-arboles-monumentales.json by coordinate and every single one resolves to a register_id already accounted for above as published, leaded or blocked (including the six Ficus microcarpa at ~0.4km = register_ids 3079-3084, the Ficus macrophylla at ~0.5km = 3072, the three Olea europaea at ~0.6km = 3085-3087, the Euphorbia at ~0.7km = 3088, and the Ficus macrophylla at ~1.5km = 3099, all matched to within 1m). Zero new candidates from the register this pass; zero trees delivered to data/research/alicante-verified.json.",
-      "status_2026_09_12": "RE-CHECKED 2026-09-12 (verify pass): found and viewed the article's own photographs directly (todoalicante.es, 'poda-urgente-ficus-centenario-alicante-fisura', downloaded and rendered rather than described from a search summary, per the search-summary-is-not-a-source rule). The wide shot confirms the tree stands right above a stone parapet wall on a sloped street overlooking Postiguet beach, with a cherry-picker truck parked in the street below, consistent with a tunnel/elevator-entrance setting on Avenida Juan Bautista Lafora rather than the open park/bench setting of Paseito de Ramiro (ali_011); this is corroborating rather than conclusive, since a stone wall alone does not prove which OSM node it is. A close-up of the pruning work shows large, glossy, leathery dark-green leaves, which reads as consistent with Ficus macrophylla foliage to the eye, but this pass's own visual impression is not a citable source and is not used to set the species field; still recorded as genus-only in any future entry. Still not shippable on this pass's own bar: no independent source names a girth, height or species beyond 'ficus centenario', and the pruning event remains one underlying incident retold by four outlets. Leave for a pass that can either match the photo's stone-wall backdrop to a specific satellite feature, or wait for a further report naming the tree specifically."
-    },
-    {
-      "name": "2026-09-10 verify-claim pass: no new supply found beyond the register (already exhausted) or the Castillo ficus lead (already unresolved)",
-      "species": "n/a",
-      "reason": "Dispatched as a standing verify claim with a 4-6 tree target. Re-read this leads file and the city file in full before searching (16 trees live, gap to target of 4). Did not re-run the register-radius check, already confirmed exhausted twice (2026-09-07, 2026-09-09) and again the same day as this pass (see the earlier 2026-09-10 note above): all 73 candidates within 20km are published, leaded or blocked. Instead tried three non-register angles within the time budget: (1) the Castillo de Santa Barbara ficus news lead, updated above, still genuinely unresolved without a photo/browser tool; (2) es.wikipedia's 'Arboles singulares de Alicante' article, re-read in full, names no individual tree beyond the four sites already published or leaded (Portal de Elche, Gabriel Miro, Canalejas, Calvo Sotelo); (3) two fresh web searches for other named-tree sources this project has not yet tried for Alicante specifically (cemetery/cloister cypresses, 'oldest tree in the city'), both of which surfaced only already-published trees (Ficus de Benalua = ali_008, Parque de Canalejas figs = ali_005/006/007/012/013) or trees outside Alicante municipality (Villajoyosa's Olivera Grossa, Biar's cemetery cypress). monumentaltrees.com remains 403 to WebFetch as well as curl, no browser session available. Zero trees delivered to data/research/alicante-verified.json this pass. Alicante's centre-cluster supply is genuinely exhausted under every source this project can currently reach; the next real unlock is either a browser-session tool (to clear monumentaltrees.com's Cloudflare gate or render the two font-encoded senderos-centro PDFs already blocked in this file) or reader submissions, not another web-research pass with the same tools."
-    },
-    {
-      "name": "2026-09-07 deepen-pass note: all 23 supplied register candidates already resolved",
-      "species": "n/a",
-      "reason": "A verification pass briefed with 23 register candidates within 1.5km of centre (four Gabriel Miro figs, five Ulmus minor, two Grevillea robusta, six Ficus microcarpa, two more Ficus macrophylla, three Olea europaea, one distant Ficus macrophylla) cross-matched every one against data/registers/valencia-arboles-monumentales.json by coordinate and found each maps within 1m to a register_id already accounted for in this file or in data/cities/alicante.json: register_ids 3034-3037 are ali_002/ali_001/ali_003/ali_004 (already published, exact duplicates); 3089-3092 and 921 are the already-blocked Ulmus minor group above; 3070-3084 (Grevillea robusta + Ficus microcarpa + one Ficus macrophylla) are the already-documented 'avenue, not individual collectible points' lead above; register_id 303 is already-published ali_007; 3085-3087 (Olea europaea) are the already twice-exhausted lead above; and register_id 3099 is the already-blocked private-land Ficus macrophylla above. Zero genuinely new candidates this pass; nothing delivered to data/research/alicante-verified.json. If a future brief regenerates this same candidate list from the register, it is not new supply, it is the same 23 rows re-surfaced; a genuinely new Alicante pass needs either a different register radius/filter or a non-register source (a local news survey, a second walking-route brochure, reader submissions).",
-      "status": "RE-CONFIRMED 2026-09-09: a deepen pass re-read all 44 rows now in data/research/alicante-register-candidates.json (the file has grown from 23 to 44 since this note was written, out to 4.4km) and cross-matched every one programmatically by coordinate (within 30m of a live data/cities/alicante.json tree) or by register_id against this leads file's own lead/blocked register_ids. Zero of 44 are unaccounted. Nothing appended to data/research/alicante-verified.json this pass either. This candidate set is exhausted under a register-only approach; do not re-dispatch a register-radius verify pass on Alicante without a materially different source (a local news survey, a second walking-route brochure, or reader submissions), per the note above."
-    },
-    {
-      "name": "Elm and plane tree of Plaza de Calvo Sotelo",
-      "species": "Ulmus minor / Platanus x hispanica",
-      "reason": "NEW this pass (2026-09-03), same stop and same source as the Araucaria lead above (Ayuntamiento's 'Paseos y arboles singulares' brochure, stop 8): 'un olmo (Ulmus minor), un platano de sombra (Platanus x hispanica) ... y una enorme araucaria'. No register entry near these coordinates for either species, no measurement of any kind, and no source beyond the brochure and its own restatements (WebSearch, es.wikipedia 'Arboles singulares de Alicante'). Held as leads for the same reason as the araucaria at this stop: real and named, but unmeasured and single-sourced. RE-CHECKED 2026-09-05, no change: tried the anticalicante.blogspot.com 'Alicante ayer y hoy - Plaza de Calvo Sotelo' post that supplied the araucaria's second source, but it now 302-redirects to a Google bot-check page (blogspot rate-limiting an automated fetcher) and has no Wayback snapshot; a second local-history blog on the same plaza (alacantideprofit.blogspot.com, 2020) covers its architecture and perimeter railing but never names a tree by species. Also checked venerablesarboles.blogspot.com's Comunidad Valenciana veteran-tree table (a comarca-wide list of rural/provincial specimens with real girths and coordinates): it has no Alicante-city entries at all, only rural pedanias, so it cannot corroborate an urban plaza tree. Still single-sourced; do not re-search without a genuinely new angle (a browser session past blogspot's bot-check, or a fresh press mention of this specific elm or plane).",
-      "location_hint": "Plaza de Calvo Sotelo, Alicante, approx (38.3436, -0.4882)"
-    },
-    {
-      "name": "Unidentified tree(s) of Plaza de Ruperto Chapi",
-      "species": "unknown (at least one tree plus a Platanus x hispanica, per the brochure text)",
-      "reason": "CHECKED 2026-09-03: the Ayuntamiento's 'senderos-centro.pdf' walking brochure (stop 11) names 'arboles singulares' at this plaza beside the Teatro Principal, including 'el platano de sombra', but the PDF's text-showing operators for the first tree's name are encoded with a custom subsetted font (character codes that do not map to readable text via a direct content-stream extraction), so the species could not be read from the document itself. Two web searches (Teatro Principal / Ruperto Chapi plus various species names) found only the theatre's own history and general plaza description, nothing about its trees. Unblock this with either a browser render of the PDF page (to read the glyphs visually) or the Ayuntamiento's separate species fact-sheet PDF (senderos-centro-arboles.pdf) if it can be matched to this stop by photo rather than by searchable text (that PDF uses the same kind of subsetted-font encoding and did not yield plain-text matches for 'Chapi' or plaza names on this pass either). RE-CHECKED 2026-09-05, no change: no PDF rendering or OCR tool available in this environment (no pdftotext, no fitz/pypdf module) so the font-encoding block could not be unblocked this pass either. Three more targeted searches (ombu/ficus/ginkgo plus the plaza name, the theatre's own history pages, 'stop 11' of the itinerary) found only tourism copy about the Teatro Principal and Ruperto Chapi the composer; es.wikipedia's own 'Arboles singulares de Alicante' article does not even list this plaza among its named stops. Genuinely stuck without a browser render of the PDF.",
-      "location_hint": "Plaza de Ruperto Chapi, Alicante, beside the Teatro Principal"
-    },
-    {
-      "register_id": 300,
-      "species": "Ficus macrophylla",
-      "reason": "Part of the same ~25m-wide unnamed 4-tree cluster as shipped ali_006/ali_007 (register_ids 301, 303).",
-      "status": "RESOLVED 2026-08-26, delivered as ali_013 (data/research/alicante-verified.json). Re-examined this pass: found that Nominatim places Plaza Portal de Elche within 10-15m of all four grove coordinates (300/301/302/303), and a 2015 alicantepress.com piece independently documents exactly 'four ficus of Portal de Elche' pruned/maintained as a named group, which is a stronger basis to ship the fourth tree than the earlier 'avoid fragmenting' call. See ali_013's verify_notes for the address-naming discrepancy this surfaced (siblings say Parque de Canalejas; coordinates say Portal de Elche)."
-    },
-    {
-      "register_id": 302,
-      "species": "Ficus macrophylla",
-      "reason": "Same 4-tree cluster as 300/301/303 (see above); notably slimmer trunk (3.9m girth) than its three neighbours (6.35-7.05m).",
-      "status": "RESOLVED 2026-08-26, delivered as ali_012 (data/research/alicante-verified.json)."
-    },
-    {
-      "register_ids": [
-        3070,
-        3071,
-        3073,
-        3074,
-        3075,
-        3076,
-        3077,
-        3078,
-        3079,
-        3080,
-        3081,
-        3082,
-        3083,
-        3084,
-        3072
-      ],
-      "species": "Ficus microcarpa / Ficus macrophylla / Grevillea robusta",
-      "reason": "A long row of individually registered figs (and two Grevillea robusta) strung along roughly 150-300m of a stretch this project's own data has referred to as 'Passeig de Canalejas continuing toward Portal de Elche' (a separate, more distant stretch, 0.4-0.75km from centre, from the small Portal de Elche plaza grove at 300/301/302/303 which sits right at the plaza itself, 0.1-0.15km from centre; the two should not be confused despite both carrying 'Canalejas' in nearby names). Reads as a continuous avenue rather than individual collectible points (see the ensemble rule); the one individually named, most distinctive specimen from this stretch (register_id 507, 'Ficus del Passeig de Canalejas') already shipped as ali_005. NOTE: register_ids 853 and 614, formerly listed here, are RESOLVED: 853 shipped as ali_011 (2026-08-15) with 614 explicitly folded into that same entry as one grove (see ali_011's verify_notes). Register_id 3095, formerly listed here, is also RESOLVED and removed from this group: it turned out not to be part of this avenue at all, but a standalone tree 1.2km further north in its own plaza (Plaza de la Pipa, Carolinas Bajas), shipped individually 2026-08-26 as ali_014. Exact street addresses and public/private status of the remaining stretch (toward Portal de Elche) were not individually confirmed within this pass's time budget."
-    },
-    {
-      "register_ids": [
-        3097,
-        3098
-      ],
-      "species": "Ficus macrophylla",
-      "reason": "Same station-forecourt trio as register_id 3096 (Avenida de Salamanca, beside Alacant Terminal's main facade; alicante.es and alicantepress both confirm 'tres ficus con jardinera' at this exact site as one of six citywide monumental-ficus panel locations). 3096 shipped 2026-08-17 as ali_010 (tallest/thickest of the three, 6.9m girth). 3097 (6.5m girth, 20m, 7m from 3096) and 3098 (6.7m girth, 20m, 58m from 3096) held as leads rather than shipped as separate entries, to avoid fragmenting one small forecourt grove into near-identical collectible points, matching the 300/302 precedent at Parque de Canalejas. Access note carried to ali_010: the immediately adjacent Plaza de la Estrella (Salamanca/Aguilera intersection) is, per an April 2026 todoalicante report, still a fenced-off construction site for the Parque Central project; the station-forecourt trees themselves are not inside it, but this should be re-checked if a future pass revisits."
-    },
-    {
-      "register_id": 3099,
-      "species": "Ficus macrophylla",
-      "reason": "A fourth 'Proteccion Generica' Ficus macrophylla (6.2m girth), but on Carrer de l'Esportista Ramon Mendizabal, ~0.9km from the Avenida de Salamanca station trio and not part of that cluster. More residential street; public/private status not individually confirmed within this pass's time budget."
-    },
-    {
-      "register_id": 945,
-      "species": "Ficus microcarpa",
-      "reason": "1.38km from centre, address not individually confirmed within this pass's time budget.",
-      "status": "RESOLVED 2026-08-15, delivered as ali_009"
-    },
-    {
-      "register_id": 964,
-      "name": "Ficus de Benalua",
-      "species": "Ficus macrophylla",
-      "reason": "The largest-girth tree in the whole candidate set (14.69m) and individually named in the register, but secondary sources (benaluense.es) place it at or beside the Centro de Salud (health centre) of Benalua, which may be institutional/restricted grounds rather than genuinely open public ground. Needs a street-level or access-specific check before it can clear hard rule 10; too promising to block outright, so held as a lead for the next pass.",
-      "status": "RESOLVED 2026-08-15, delivered as ali_008",
-      "note": "RESOLVED: shipped as ali_008 ('The Ficus de Benalua'), 2026-08-xx pass. The access question this entry raised (institutional grounds at the Centro de Salud) was checked and cleared: the Ayuntamiento's own 2026 press release ('Urbanismo preserva el Ficus y desplaza el aparcamiento del centro de salud de Benalua') confirms the tree stands in an open free space between Calle San Agatangelo and the building, not inside restricted clinic grounds, no gate or opening hours. Re-verified 2026-09-03, no change needed; this entry is kept only as a record and should not be re-researched."
-    },
-    {
-      "register_ids": [
-        1789,
-        3094
-      ],
-      "species": "Bougainvillea glabra",
-      "reason": "4.4km from centre, well outside this pass's ~2km cluster radius, and a climbing shrub/vine rather than a tree in the usual collectible sense. Left for a possible future second cluster or reconsideration of whether it fits the product at all."
-    },
-    {
-      "register_ids": [
-        3085,
-        3086,
-        3087
-      ],
-      "species": "Olea europaea",
-      "reason": "RESOLVED 2026-09-12 (verify pass): the address/access gap this entry described is closed. These three coordinates (38.3387-38.3388, -0.4896 to -0.4897) sit inside PLAZA DE GALICIA, a genuine public plaza at the seaward end of Parque de Canalejas (es.wikipedia.org/wiki/Plaza_de_Galicia_(Alicante), inaugurated 1969, no gate or opening hours), not a private residential garden off Carrer del Pintor Aparicio as earlier passes' reverse-geocoding guessed. Diario Informacion's 2013 'los vecinos mas altos y longevos' survey (web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html, found via the Wikipedia/Brota Alicante trail for the plaza's araucaria) independently names 'tres olivos centenarios' standing in this exact plaza. Delivered this pass, folded into one entry per the twin-folding precedent, as ali_019 in data/research/alicante-verified.json. This lead entry is kept only as a record of how it was resolved; do not re-research.",
-      "status": "RESOLVED 2026-09-12, delivered as ali_019 (folded three-tree entry)."
-    },
-    {
-      "register_id": 3088,
-      "species": "Euphorbia ledienii",
-      "reason": "Access question RESOLVED 2026-09-12 alongside the Olea trio above: this stands in Plaza de Galicia too, a genuine public plaza, not a private garden (see register_ids 3085-3087 above for the full resolution and its source). Diario Informacion's 2013 survey independently names 'un arbol candelabro originario de Africa, de la familia de los cactus, con 45 anos de historia' in the same plaza, matching this register entry closely (girth 0.7m). NOT shipped: still worth a product judgement on whether a succulent/cactus-relative counts as a collectible 'tree' for this site, which a verify pass is not positioned to make. If the product answer is yes, this is otherwise ready: two sources, a plaza, an age (45 years), a girth."
-    },
-    {
-      "register_ids": [
-        1421,
-        1422
-      ],
-      "name": "Olivera del Tio Pastor I / II",
-      "species": "Olea europaea",
-      "reason": "CHECKED 2026-08-23: 7.6km from centre, named in the register but no secondary source found for either tree (web search for \"Olivera del Tio Pastor\" Alicante returned nothing matching). Outside any walkable cluster; would need a name match and an access check before it goes anywhere."
-    },
-    {
-      "register_id": 1194,
-      "name": "Ficus de la Finca La Concepció",
-      "species": "Ficus macrophylla",
-      "reason": "CHECKED 2026-08-23: 7.7km from centre, girth 4.8m, height 15.4m, crown 29.5m (Generalitat Valenciana register, category Proteccion Generica). NOT in Alicante municipality: this is the Finca/Casa de la Concepcion in Sant Joan d'Alacant (Carrer Hernan Cortes, 8), a separate town on TRAM line 2, roughly 25 minutes end to end from Luceros plus a walk, so borderline for the day-trip boundary rather than clearly inside it. Turismo Sant Joan's own page (https://turismosantjoan.es/en/la-concepcion-estate/) independently confirms a ficus 'more than 100 years old' on the eastern edge of the property, 'included in the municipal catalog of protected trees', which is a genuine second source for species and a derived age (over a century) alongside the register. That is the good news. Access is the open question: the same page says 'the original perimeter fence has been removed' but 'a recent fence covered with heather surrounds this building', and current ownership plans to convert the historic house into a hostel; a separate search snippet (not independently verified by fetching the page itself) describes the grounds as having 'become a public park'. Those two claims are not flatly contradictory (garden open, building fenced) but this pass could not confirm which side of any fence the ficus stands on, and did not find a source stating opening hours or a free-access line in the terms this project needs for the access field. Hold as a lead: promising (named tree, two sources, real age derivation) but not yet clearable on hard rule 10's access test, and it belongs to a different town's future page as much as to Alicante's, which a later pass should decide with fresh eyes rather than this one guessing under a time box. RE-CHECKED 2026-08-26, no change: fetched a second Turismo Sant Joan page directly ('La Concepcion and Manzaneta Gardens'), which also does not state opening hours, an entry fee or a free-access line, only that 'the gardens have numerous centenary trees that today form part of the most beautiful public park in the municipality' (describing the wider Manzaneta grounds more than confirming which side of a fence this specific ficus sits on). Access still not clearable; do not ship without a source that states hours or an explicit open/closed line for this specific tree's spot."
-    },
-    {
-      "register_ids": [
-        1188,
-        1190,
-        1191,
-        1192,
-        1210,
-        1211,
-        1230,
-        1231,
-        1235,
-        1236,
-        1240,
-        1247,
-        1249,
-        1252,
-        1737,
-        528,
-        529,
-        530,
-        541,
-        3952
-      ],
-      "species": "Ficus macrophylla / Phoenix dactylifera / Washingtonia robusta / Washingtonia filifera / Olea europaea",
-      "reason": "Not pursued this pass, per the brief's own steer toward the walkable named centre cluster over these: a scattered group of named-estate trees 8.0-9.5km from centre (Fincas Maxara, El Conde o La Pau, Santa Ana, L'Abril, Espinos, and unnamed others), all in Sant Joan d'Alacant/Mutxamel rather than Alicante itself. A quick check of 'Finca El Conde o La Pau' (register_id 1247's site) found a local heritage blog (anticalicante.blogspot.com) describing it as a ruin: 'irrigation no longer exists, the few remaining trees barely survive in the razed garden, and no one inhabits the house anymore', which reads as private and likely fails the access test outright. The others were not checked individually. Any future pass on these should expect private agricultural estates rather than public ground, and check access before spending time on names or ages."
-    },
-    {
-      "register_ids": [
-        85,
-        2709,
-        2711,
-        3561,
-        29
-      ],
-      "species": "Olea europaea / Ceratonia siliqua / Phoenix dactylifera",
-      "reason": "CHECKED 2026-08-28 (this pass): the last five register candidates within 20km of Alicante centre that no earlier pass had touched, at 12.2-19.9km, all isolated single specimens with no cluster. Register_id 3561 ('Garrofera del Escondite', a named Ceratonia siliqua, height 13.8m, canopy 11.9m) is the one worth flagging specifically: a web search places it in the pedania of Daimes, which belongs to the MUNICIPALITY OF ELCHE, not Alicante, roughly 100 years old per the source, protected under Valencian Law 4/2006 (Prezi deck citing the regional catalogue; not independently fetched/confirmed as a second source this pass). It is a different city's page candidate, not Alicante's, and at 13.35km plus a rural pedania location it would fail this project's day-trip boundary for Alicante regardless. Register_ids 85, 2709 and 2711 (three unnamed Olea europaea, 12.2-12.7km) and 29 ('Palmera imperial', 19.9km) were not individually researched: all sit far past the ~30-minute transit boundary from Alicante centre, none clusters with another candidate or with any published tree, and the pattern set by every other finca-adjacent candidate already checked in this file (private agricultural land, often a ruin) makes a further look low-yield. None of the five is a good next step for Alicante; 3561 may be worth a future Elche pass instead."
-    }
-  ],
-  "blocked": [
-    {
-      "register_ids": [
-        3089,
-        3090,
-        3091,
-        3092,
-        921
-      ],
-      "species": "Ulmus minor",
-      "reason": "RE-CHECKED 2026-08-23, no change: fetched both todoalicante.es articles on the September 2025 elm collapse in Plaza Gabriel Miro directly (not just search snippets). Neither names a precise corner, adjacent building or which of the five registered elms fell; one only says the spot has no hostelry terraces nearby. Still no way to identify which four of the five register coordinates remain standing, so all five stay held rather than moved to leads: this is now a confirmed-unresolvable-by-search question, not just an unchecked one. A street-level photo or a follow-up city report naming the exact tree is the only thing that would unblock this. RE-CHECKED AGAIN 2026-09-07 (deepen pass): two fresh searches (mayor Barcala's promised city-wide tree review, any 2026 follow-up report) surfaced only the same August/September 2025 coverage (noticiascv.com, gentedigital.es, diariodealicante.net all re-covering the same collapse, none naming the specific tree or reporting the review's outcome). monumentaltrees.com has a page for exactly this plaza (6604_enlaplazagabrielmiro) that might show which elm is missing, but it 403s WebFetch as this file already documents elsewhere; no browser-session tool available this pass. Still unresolvable by search; do not re-attempt without either a browser session past the monumentaltrees 403 or a genuinely new city report."
-    },
-    {
-      "register_id": 3099,
-      "species": "Ficus macrophylla",
-      "reason": "CHECKED 2026-08-26: Carrer de l'Esportista Ramon Mendizabal 3, girth 6.2m, height 11m, crown 25m (Proteccion Generica). Cross-checked via OSM (node 13092900356, reg_ref=3099, denotation=natural_monument, protected=yes, figures match the register exactly) which sits inside the bbox of way 153247101, alt_name \"Parque del Jardin Botanico\" (a public park, San Fernando-Princesa Mercedes neighbourhood). The Spanish Wikipedia article \"Parque El Botanico\" independently confirms this exact tree (centenarian Ficus macrophylla, city-designated \"a monumental tree of local interest\") but states plainly: \"su tronco se encuentra dentro de una parcela de una urbanizacion privada colindante, aunque la mitad de su copa se extiende hacia el parque\" (the TRUNK stands on an adjacent private development parcel, Urbanizacion Gran Ficus, though half the canopy reaches into the public park). Per the hard limit \"never deliver a tree ... on private land not genuinely open to visitors; when in doubt, leave it out\", this is blocked rather than shipped: the trunk itself is not on public ground, only overhanging canopy is visible from the park side. It may be a legitimate view-only candidate under the wider project's viewing-place doctrine (visible from public park ground, pin marking the viewing spot rather than the trunk), which this verification pass is not positioned to apply; a session with full product context should decide rather than a verify pass guessing. Two sources agree on everything except access: the Valencia register (data/registers/valencia-arboles-monumentales.json, id 3099) and es.wikipedia.org/wiki/Parque_El_Botanico."
-    }
-  ]
+ "leads": [
+  {
+   "name": "Centenary elms of Plaza de Santa Teresa / Panteon de Quijano",
+   "species": "Ulmus minor (per Diario Informacion, same species as the already-published Gabriel Miro elm suspects)",
+   "reason": "NEW this pass (2026-09-12), found via Diario Informacion's 2013 'los vecinos mas altos y longevos' survey (web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html), the same article that supplied ali_017 (Araucaria araucana, same plaza) this pass. It names 'olmos centenarios' in Plaza de Santa Teresa (Panteon de Quijano), over a century old, part of the same 19th-century romantic-garden planting as the Gabriel Miro elms, and quotes Andres Medrano, the agricultural expert who led an 1990 trunk-rot surgery on these exact elms ('teniamos el tronco podrido y teniamos que ir con mascarillas'), confirming they survived at least to 2013. No girth, height or individual count given, and no second independent source found this pass. Single-sourced; hold as a lead. Same plaza/park as ali_017, so a future pass revisiting this site for a photo could check both at once.",
+   "location_hint": "Plaza de Santa Teresa / Panteon de Quijano, San Anton, Alicante, same site as ali_017 (approx 38.3514,-0.4843)",
+   "status": "RESOLVED 2026-09-13 (verify pass): second independent source found (comunitatvalenciana.com, the regional tourist board's own Panteon de Quijano page, independently lists 'monkey puzzle trees and elms' among the garden's vegetation). Published 2026-09-13 as ali_020, park-level pin (approximate), age given only as the sources' own vague wording (19th century / centenary). es.wikipedia's 'Arboles singulares de Alicante' article (re-fetched as wikitext this pass) does not mention this plaza at all, so it neither helps nor hurts."
+  },
+  {
+   "name": "Silky oaks (\"robles australianos\") bookending the Passeig de Canalejas",
+   "species": "Grevillea robusta",
+   "reason": "UPGRADED this pass (2026-09-12): register_ids within the already-documented 'avenue, not individual collectible points' group (3070-3084) include two Grevillea robusta at 38.34177/-0.48641 (girth 1.1m) and 38.34173/-0.48629 (girth 3.8m), about 0.3km from centre. Diario Informacion's 2013 survey independently describes 'un par de robles australianos en sus extremos' (a pair of Australian oaks at [the paseo's] two ends), calls them centenary and individually catalogued ('tambien estan catalogados'), and gives a shared height of about 19 metres, a stronger and more specific claim than 'part of an avenue'. This does not by itself clear the ensemble rule for TWO separate entries (the girths, 1.1m and 3.8m, disagree sharply for two trees the article treats as a matched pair, which is itself worth flagging rather than resolving silently), and no source gives either one an individual address beyond 'at the ends of the Canalejas paseo'. Worth a dedicated look next pass: either one tree qualifies as a distinctive bookend to the Ficus del Passeig de Canalejas walk (ali_005), or the pair does as a compact, two-point ensemble.",
+   "location_hint": "Two ends of Passeig de Canalejas, Alicante, approx (38.3418,-0.4864) and (38.3417,-0.4863)",
+   "status": "RESOLVED 2026-09-13 (verify pass): pulled both register rows directly (register_ids 3070 and 3071, both individually designated 'Arbol Monumental de Interes Local'). Their HEIGHTS agree closely (19.0m and 18.0m), matching the newspaper's 'alrededor de 19 metros' almost exactly, which is stronger corroboration than girth and was not noticed by the earlier pass. The girth mismatch (1.05m vs 3.75m) is real and unexplained by any source; recorded as an open flag rather than resolved. Published 2026-09-13 as ali_021 (one folded entry, pin at the midpoint of the two register coordinates, ~11m apart, location_precision confirmed)."
+  },
+  {
+   "name": "Magnolio of Plaza Gabriel Miro",
+   "species": "Magnolia grandiflora",
+   "reason": "NEW this pass (2026-09-12), single-sourced: venerablesarboles.blogspot.com's 'Arboles de la Com. Valenciana - Alicante' page (a hobbyist veteran-tree catalogue, 2012) lists 'Ali, Alacant, Placa Gabriel Miro, Magnolio, P1,3m h24m 80anos' with UTM grid ref 30SYH197469, i.e. a Magnolia grandiflora, 80 years old, 1.3m girth, 24m tall, in the same square as the four already-published Ficus macrophylla (ali_001-004). A 24m-tall magnolia on only a 1.3m-girth trunk is an unusual ratio worth double-checking rather than assuming a transcription error. No second source found this pass (a targeted search for 'Magnolio Gabriel Miro Alicante' returned nothing corroborating; the Valencia region's monumental-tree register has no Magnolia grandiflora entry near this plaza, and monumentaltrees.com's page for this exact plaza still 403s to every fetch tool available). Held as a lead pending a second source or a photo confirming a magnolia genuinely stands in this square.",
+   "location_hint": "Plaza Gabriel Miro, Alicante, same square as ali_001-004 (approx 38.3435,-0.4851)",
+   "status": "RE-CHECKED 2026-09-13 (verify pass), no change: one more targeted search found nothing corroborating a magnolia at this plaza specifically. es.wikipedia's 'Arboles singulares de Alicante' article (re-fetched as wikitext) lists Gabriel Miro's notable species as Ficus macrophylla plus 'varios olmos centenarios' only, no magnolia. Still single-sourced; still held."
+  },
+  {
+   "name": "Elm and plane tree of Plaza de Calvo Sotelo",
+   "reason_2026_09_13": "RE-CHECKED 2026-09-13 (verify pass): es.wikipedia's 'Arboles singulares de Alicante' article now has a dedicated Calvo Sotelo section confirming the same three species (Platanus x hispanica, Ulmus minor, Araucaria heterophylla), but its citation is the same Ayuntamiento 'Ruta' brochure already used as this lead's only source, so it is a restatement rather than a genuinely independent second source. Not shipped; still single-sourced in substance. A city landscape-heritage PDF was found this pass (alicante.es .../todas-fichas-estudio-paisaje-version-modificada-24012017.pdf, 2017, 12.7MB, city-wide) that might independently corroborate this stop, but no PDF text-extraction tool is available in this environment (no pdftotext/fitz/pypdf/pdfplumber) and it was not read. Worth a browser-render pass alongside the still-unread senderos-centro.pdf and senderos-centro-arboles.pdf.",
+   "species": "Elm (Ulmus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Ficus centenario near the Castillo de Santa Bárbara elevator tunnel, Raval Roig",
+   "species": "Ficus sp. (likely microcarpa or macrophylla, not stated by the source)",
+   "reason": "NEW this pass (2026-09-10), found via a general news search rather than the register (which this file already records as exhausted, 2026-09-09). On 2026-08-04 the Ayuntamiento ran an emergency pruning on a “ficus centenario” after a 2m+ crack opened in a main branch, reported by todoalicante.es, cope.es, elperiodic.com and alicantepress.com (all covering the same single event, so one underlying source rather than two independent ones). The article places the tree “junto a la entrada al túnel que conduce al ascensor del castillo de Santa Bárbara, en la avenida Juan Bautista Lafora” and says police closed access “desde el Paseíto Ramiro” during the works, i.e. within roughly 100-150m of the already-published ali_011 (the two Paseito de Ramiro figs, register_ids 614/853). No girth, height or exact address given. An Overpass check found two OSM nodes tagged denotation=natural_monument, leaf_cycle=evergreen, leaf_type=broadleaved (ids 10794054257 at 38.3465440,-0.4771636 and 10794054258 at 38.3466555,-0.4770778), roughly 100m east of ali_011's pair and carrying no species or circumference tag and no register_ref, so they are not in data/registers/valencia-arboles-monumentales.json (the register's nearest rows are 614 and 853 themselves, ~95-105m away). Genuinely unresolved whether this news tree IS ali_011 (described loosely, seen from a different vantage point) or a third, separate monumental fig standing nearer the library/tunnel that the Valencia register never captured. Needs: the article's own photo compared against ali_011's crown, or a street-level/satellite look at the tunnel entrance itself, before it can be shipped as anything (confirmation of ali_011, or a new tree with a real pin). Do not re-search this as a news story, the event itself is now fully covered; the open question is purely which trunk it is.",
+   "location_hint": "Near the Castillo de Santa Bárbara elevator tunnel entrance, Avenida Juan Bautista Lafora / Raval Roig, Alicante, within about 150m of ali_011 (Paseito de Ramiro)",
+   "status": "RE-CHECKED 2026-09-10 (verify pass): fetched the todoalicante.es and alicantextra.com articles directly (not just search snippets), confirming the same single location description (\"junto a la entrada al tunel que conduce al ascensor del castillo de Santa Barbara\") and no girth/height/exact address in either. Nominatim places the Biblioteca Publica del Estado (the landmark nearest the OSM natural_monument pair from the earlier pass) at 38.3462755,-0.4777687, which is roughly 60-100m from ali_011's own coordinates (38.346224,-0.47837), consistent with the earlier pass's ~100m estimate rather than resolving it. es.wikipedia's 'Arboles singulares de Alicante' was re-read in full: it groups trees by site (Portal de Elche, Gabriel Miro, Canalejas, Calvo Sotelo) and names no individual tree at the castle-elevator/library site, so it cannot settle whether this is ali_011 restated or a third tree. monumentaltrees.com 403s via WebFetch as well as curl (no browser-session tool available this pass). Still genuinely unresolved; still needs a photo comparison or a browser session, neither available to a verify pass. Do not re-run the same news search again, nothing further to find there.",
+   "status_2026_09_11": "RE-CHECKED 2026-09-11 (verify pass): found the actual elevator entrance itself via Overpass rather than reasoning from the library (OSM node 3670782351, 'Ascensor al Castillo de Santa Barbara', entrance=main, at 38.3467887,-0.4769547) and recomputed distances from that exact point. The two OSM natural_monument tree nodes from the earlier pass (10794054257 at 38.3465440,-0.4771636 and 10794054258 at 38.3466555,-0.4770778) sit only about 33m and 18m from the elevator entrance respectively, i.e. genuinely 'junto a la entrada', matching the article's wording closely. Ali_011's own coordinates (38.346224,-0.47837, Paseito de Ramiro) are about 139m from the same elevator entrance, a materially greater distance. This is stronger evidence than the earlier library-based estimate that the news tree is a DIFFERENT, closer specimen from ali_011 rather than the same pair restated from another vantage point. Still not shippable: neither OSM node carries a species or circumference tag, no register entry sits within 100m of either point, and the only textual source remains the single August 2026 pruning event (four outlets covering one underlying incident, not two independent facts), which never names the species beyond 'ficus centenario'. Recording the two precise coordinates here so a future pass with a photo-comparison or browser tool does not have to re-run this Overpass query: if the pruned tree is confirmed as one of these two nodes by a photo, it would need one more independent source (species, or a firmer age than 'centenario') before it clears the two-source bar. Also checked this pass and NOT useful: Universidad de Alicante campus tree guide (torretes.es/arboles-ua/) is a general species catalogue, listing what grows on campus rather than naming or measuring individual specimens, so it cannot supply a collectible point; the campus is also ~25-28 minutes by TRAM from the centre and administratively in San Vicente del Raspeig, borderline for the day-trip rule even if a named specimen existed. Casa Tapena (Onil, ~40km) is out of scope for Alicante entirely. The Diputacion's 'Jardines Historicos de la Provincia de Alicante' PDF fetched fine (200, 3.4MB) but its text is embedded in a form plain extraction cannot read (same font-encoding block already documented for the senderos-centro PDFs); no pdftotext/fitz/pypdf available in this environment to render it. Independently re-confirmed the register-radius exhaustion the same day: cross-matched all 73 candidates within 20km against data/registers/valencia-arboles-monumentales.json by coordinate and every single one resolves to a register_id already accounted for above as published, leaded or blocked (including the six Ficus microcarpa at ~0.4km = register_ids 3079-3084, the Ficus macrophylla at ~0.5km = 3072, the three Olea europaea at ~0.6km = 3085-3087, the Euphorbia at ~0.7km = 3088, and the Ficus macrophylla at ~1.5km = 3099, all matched to within 1m). Zero new candidates from the register this pass; zero trees delivered to data/research/alicante-verified.json.",
+   "status_2026_09_12": "RE-CHECKED 2026-09-12 (verify pass): found and viewed the article's own photographs directly (todoalicante.es, 'poda-urgente-ficus-centenario-alicante-fisura', downloaded and rendered rather than described from a search summary, per the search-summary-is-not-a-source rule). The wide shot confirms the tree stands right above a stone parapet wall on a sloped street overlooking Postiguet beach, with a cherry-picker truck parked in the street below, consistent with a tunnel/elevator-entrance setting on Avenida Juan Bautista Lafora rather than the open park/bench setting of Paseito de Ramiro (ali_011); this is corroborating rather than conclusive, since a stone wall alone does not prove which OSM node it is. A close-up of the pruning work shows large, glossy, leathery dark-green leaves, which reads as consistent with Ficus macrophylla foliage to the eye, but this pass's own visual impression is not a citable source and is not used to set the species field; still recorded as genus-only in any future entry. Still not shippable on this pass's own bar: no independent source names a girth, height or species beyond 'ficus centenario', and the pruning event remains one underlying incident retold by four outlets. Leave for a pass that can either match the photo's stone-wall backdrop to a specific satellite feature, or wait for a further report naming the tree specifically."
+  },
+  {
+   "name": "2026-09-10 verify-claim pass: no new supply found beyond the register (already exhausted) or the Castillo ficus lead (already unresolved)",
+   "species": "n/a",
+   "reason": "Dispatched as a standing verify claim with a 4-6 tree target. Re-read this leads file and the city file in full before searching (16 trees live, gap to target of 4). Did not re-run the register-radius check, already confirmed exhausted twice (2026-09-07, 2026-09-09) and again the same day as this pass (see the earlier 2026-09-10 note above): all 73 candidates within 20km are published, leaded or blocked. Instead tried three non-register angles within the time budget: (1) the Castillo de Santa Barbara ficus news lead, updated above, still genuinely unresolved without a photo/browser tool; (2) es.wikipedia's 'Arboles singulares de Alicante' article, re-read in full, names no individual tree beyond the four sites already published or leaded (Portal de Elche, Gabriel Miro, Canalejas, Calvo Sotelo); (3) two fresh web searches for other named-tree sources this project has not yet tried for Alicante specifically (cemetery/cloister cypresses, 'oldest tree in the city'), both of which surfaced only already-published trees (Ficus de Benalua = ali_008, Parque de Canalejas figs = ali_005/006/007/012/013) or trees outside Alicante municipality (Villajoyosa's Olivera Grossa, Biar's cemetery cypress). monumentaltrees.com remains 403 to WebFetch as well as curl, no browser session available. Zero trees delivered to data/research/alicante-verified.json this pass. Alicante's centre-cluster supply is genuinely exhausted under every source this project can currently reach; the next real unlock is either a browser-session tool (to clear monumentaltrees.com's Cloudflare gate or render the two font-encoded senderos-centro PDFs already blocked in this file) or reader submissions, not another web-research pass with the same tools."
+  },
+  {
+   "name": "2026-09-07 deepen-pass note: all 23 supplied register candidates already resolved",
+   "species": "n/a",
+   "reason": "A verification pass briefed with 23 register candidates within 1.5km of centre (four Gabriel Miro figs, five Ulmus minor, two Grevillea robusta, six Ficus microcarpa, two more Ficus macrophylla, three Olea europaea, one distant Ficus macrophylla) cross-matched every one against data/registers/valencia-arboles-monumentales.json by coordinate and found each maps within 1m to a register_id already accounted for in this file or in data/cities/alicante.json: register_ids 3034-3037 are ali_002/ali_001/ali_003/ali_004 (already published, exact duplicates); 3089-3092 and 921 are the already-blocked Ulmus minor group above; 3070-3084 (Grevillea robusta + Ficus microcarpa + one Ficus macrophylla) are the already-documented 'avenue, not individual collectible points' lead above; register_id 303 is already-published ali_007; 3085-3087 (Olea europaea) are the already twice-exhausted lead above; and register_id 3099 is the already-blocked private-land Ficus macrophylla above. Zero genuinely new candidates this pass; nothing delivered to data/research/alicante-verified.json. If a future brief regenerates this same candidate list from the register, it is not new supply, it is the same 23 rows re-surfaced; a genuinely new Alicante pass needs either a different register radius/filter or a non-register source (a local news survey, a second walking-route brochure, reader submissions).",
+   "status": "RE-CONFIRMED 2026-09-09: a deepen pass re-read all 44 rows now in data/research/alicante-register-candidates.json (the file has grown from 23 to 44 since this note was written, out to 4.4km) and cross-matched every one programmatically by coordinate (within 30m of a live data/cities/alicante.json tree) or by register_id against this leads file's own lead/blocked register_ids. Zero of 44 are unaccounted. Nothing appended to data/research/alicante-verified.json this pass either. This candidate set is exhausted under a register-only approach; do not re-dispatch a register-radius verify pass on Alicante without a materially different source (a local news survey, a second walking-route brochure, or reader submissions), per the note above."
+  },
+  {
+   "name": "Elm and plane tree of Plaza de Calvo Sotelo",
+   "species": "Ulmus minor / Platanus x hispanica",
+   "reason": "NEW this pass (2026-09-03), same stop and same source as the Araucaria lead above (Ayuntamiento's 'Paseos y arboles singulares' brochure, stop 8): 'un olmo (Ulmus minor), un platano de sombra (Platanus x hispanica) ... y una enorme araucaria'. No register entry near these coordinates for either species, no measurement of any kind, and no source beyond the brochure and its own restatements (WebSearch, es.wikipedia 'Arboles singulares de Alicante'). Held as leads for the same reason as the araucaria at this stop: real and named, but unmeasured and single-sourced. RE-CHECKED 2026-09-05, no change: tried the anticalicante.blogspot.com 'Alicante ayer y hoy - Plaza de Calvo Sotelo' post that supplied the araucaria's second source, but it now 302-redirects to a Google bot-check page (blogspot rate-limiting an automated fetcher) and has no Wayback snapshot; a second local-history blog on the same plaza (alacantideprofit.blogspot.com, 2020) covers its architecture and perimeter railing but never names a tree by species. Also checked venerablesarboles.blogspot.com's Comunidad Valenciana veteran-tree table (a comarca-wide list of rural/provincial specimens with real girths and coordinates): it has no Alicante-city entries at all, only rural pedanias, so it cannot corroborate an urban plaza tree. Still single-sourced; do not re-search without a genuinely new angle (a browser session past blogspot's bot-check, or a fresh press mention of this specific elm or plane).",
+   "location_hint": "Plaza de Calvo Sotelo, Alicante, approx (38.3436, -0.4882)"
+  },
+  {
+   "name": "Unidentified tree(s) of Plaza de Ruperto Chapi",
+   "species": "unknown (at least one tree plus a Platanus x hispanica, per the brochure text)",
+   "reason": "CHECKED 2026-09-03: the Ayuntamiento's 'senderos-centro.pdf' walking brochure (stop 11) names 'arboles singulares' at this plaza beside the Teatro Principal, including 'el platano de sombra', but the PDF's text-showing operators for the first tree's name are encoded with a custom subsetted font (character codes that do not map to readable text via a direct content-stream extraction), so the species could not be read from the document itself. Two web searches (Teatro Principal / Ruperto Chapi plus various species names) found only the theatre's own history and general plaza description, nothing about its trees. Unblock this with either a browser render of the PDF page (to read the glyphs visually) or the Ayuntamiento's separate species fact-sheet PDF (senderos-centro-arboles.pdf) if it can be matched to this stop by photo rather than by searchable text (that PDF uses the same kind of subsetted-font encoding and did not yield plain-text matches for 'Chapi' or plaza names on this pass either). RE-CHECKED 2026-09-05, no change: no PDF rendering or OCR tool available in this environment (no pdftotext, no fitz/pypdf module) so the font-encoding block could not be unblocked this pass either. Three more targeted searches (ombu/ficus/ginkgo plus the plaza name, the theatre's own history pages, 'stop 11' of the itinerary) found only tourism copy about the Teatro Principal and Ruperto Chapi the composer; es.wikipedia's own 'Arboles singulares de Alicante' article does not even list this plaza among its named stops. Genuinely stuck without a browser render of the PDF.",
+   "location_hint": "Plaza de Ruperto Chapi, Alicante, beside the Teatro Principal"
+  },
+  {
+   "register_id": 300,
+   "species": "Ficus macrophylla",
+   "reason": "Part of the same ~25m-wide unnamed 4-tree cluster as shipped ali_006/ali_007 (register_ids 301, 303).",
+   "status": "RESOLVED 2026-08-26, delivered as ali_013 (data/research/alicante-verified.json). Re-examined this pass: found that Nominatim places Plaza Portal de Elche within 10-15m of all four grove coordinates (300/301/302/303), and a 2015 alicantepress.com piece independently documents exactly 'four ficus of Portal de Elche' pruned/maintained as a named group, which is a stronger basis to ship the fourth tree than the earlier 'avoid fragmenting' call. See ali_013's verify_notes for the address-naming discrepancy this surfaced (siblings say Parque de Canalejas; coordinates say Portal de Elche)."
+  },
+  {
+   "register_id": 302,
+   "species": "Ficus macrophylla",
+   "reason": "Same 4-tree cluster as 300/301/303 (see above); notably slimmer trunk (3.9m girth) than its three neighbours (6.35-7.05m).",
+   "status": "RESOLVED 2026-08-26, delivered as ali_012 (data/research/alicante-verified.json)."
+  },
+  {
+   "register_ids": [
+    3070,
+    3071,
+    3073,
+    3074,
+    3075,
+    3076,
+    3077,
+    3078,
+    3079,
+    3080,
+    3081,
+    3082,
+    3083,
+    3084,
+    3072
+   ],
+   "species": "Ficus microcarpa / Ficus macrophylla / Grevillea robusta",
+   "reason": "A long row of individually registered figs (and two Grevillea robusta) strung along roughly 150-300m of a stretch this project's own data has referred to as 'Passeig de Canalejas continuing toward Portal de Elche' (a separate, more distant stretch, 0.4-0.75km from centre, from the small Portal de Elche plaza grove at 300/301/302/303 which sits right at the plaza itself, 0.1-0.15km from centre; the two should not be confused despite both carrying 'Canalejas' in nearby names). Reads as a continuous avenue rather than individual collectible points (see the ensemble rule); the one individually named, most distinctive specimen from this stretch (register_id 507, 'Ficus del Passeig de Canalejas') already shipped as ali_005. NOTE: register_ids 853 and 614, formerly listed here, are RESOLVED: 853 shipped as ali_011 (2026-08-15) with 614 explicitly folded into that same entry as one grove (see ali_011's verify_notes). Register_id 3095, formerly listed here, is also RESOLVED and removed from this group: it turned out not to be part of this avenue at all, but a standalone tree 1.2km further north in its own plaza (Plaza de la Pipa, Carolinas Bajas), shipped individually 2026-08-26 as ali_014. Exact street addresses and public/private status of the remaining stretch (toward Portal de Elche) were not individually confirmed within this pass's time budget."
+  },
+  {
+   "register_ids": [
+    3097,
+    3098
+   ],
+   "species": "Ficus macrophylla",
+   "reason": "Same station-forecourt trio as register_id 3096 (Avenida de Salamanca, beside Alacant Terminal's main facade; alicante.es and alicantepress both confirm 'tres ficus con jardinera' at this exact site as one of six citywide monumental-ficus panel locations). 3096 shipped 2026-08-17 as ali_010 (tallest/thickest of the three, 6.9m girth). 3097 (6.5m girth, 20m, 7m from 3096) and 3098 (6.7m girth, 20m, 58m from 3096) held as leads rather than shipped as separate entries, to avoid fragmenting one small forecourt grove into near-identical collectible points, matching the 300/302 precedent at Parque de Canalejas. Access note carried to ali_010: the immediately adjacent Plaza de la Estrella (Salamanca/Aguilera intersection) is, per an April 2026 todoalicante report, still a fenced-off construction site for the Parque Central project; the station-forecourt trees themselves are not inside it, but this should be re-checked if a future pass revisits."
+  },
+  {
+   "register_id": 3099,
+   "species": "Ficus macrophylla",
+   "reason": "A fourth 'Proteccion Generica' Ficus macrophylla (6.2m girth), but on Carrer de l'Esportista Ramon Mendizabal, ~0.9km from the Avenida de Salamanca station trio and not part of that cluster. More residential street; public/private status not individually confirmed within this pass's time budget."
+  },
+  {
+   "register_id": 945,
+   "species": "Ficus microcarpa",
+   "reason": "1.38km from centre, address not individually confirmed within this pass's time budget.",
+   "status": "RESOLVED 2026-08-15, delivered as ali_009"
+  },
+  {
+   "register_id": 964,
+   "name": "Ficus de Benalua",
+   "species": "Ficus macrophylla",
+   "reason": "The largest-girth tree in the whole candidate set (14.69m) and individually named in the register, but secondary sources (benaluense.es) place it at or beside the Centro de Salud (health centre) of Benalua, which may be institutional/restricted grounds rather than genuinely open public ground. Needs a street-level or access-specific check before it can clear hard rule 10; too promising to block outright, so held as a lead for the next pass.",
+   "status": "RESOLVED 2026-08-15, delivered as ali_008",
+   "note": "RESOLVED: shipped as ali_008 ('The Ficus de Benalua'), 2026-08-xx pass. The access question this entry raised (institutional grounds at the Centro de Salud) was checked and cleared: the Ayuntamiento's own 2026 press release ('Urbanismo preserva el Ficus y desplaza el aparcamiento del centro de salud de Benalua') confirms the tree stands in an open free space between Calle San Agatangelo and the building, not inside restricted clinic grounds, no gate or opening hours. Re-verified 2026-09-03, no change needed; this entry is kept only as a record and should not be re-researched."
+  },
+  {
+   "register_ids": [
+    1789,
+    3094
+   ],
+   "species": "Bougainvillea glabra",
+   "reason": "4.4km from centre, well outside this pass's ~2km cluster radius, and a climbing shrub/vine rather than a tree in the usual collectible sense. Left for a possible future second cluster or reconsideration of whether it fits the product at all."
+  },
+  {
+   "register_ids": [
+    3085,
+    3086,
+    3087
+   ],
+   "species": "Olea europaea",
+   "reason": "RESOLVED 2026-09-12 (verify pass): the address/access gap this entry described is closed. These three coordinates (38.3387-38.3388, -0.4896 to -0.4897) sit inside PLAZA DE GALICIA, a genuine public plaza at the seaward end of Parque de Canalejas (es.wikipedia.org/wiki/Plaza_de_Galicia_(Alicante), inaugurated 1969, no gate or opening hours), not a private residential garden off Carrer del Pintor Aparicio as earlier passes' reverse-geocoding guessed. Diario Informacion's 2013 'los vecinos mas altos y longevos' survey (web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html, found via the Wikipedia/Brota Alicante trail for the plaza's araucaria) independently names 'tres olivos centenarios' standing in this exact plaza. Delivered this pass, folded into one entry per the twin-folding precedent, as ali_019 in data/research/alicante-verified.json. This lead entry is kept only as a record of how it was resolved; do not re-research.",
+   "status": "RESOLVED 2026-09-12, delivered as ali_019 (folded three-tree entry)."
+  },
+  {
+   "register_id": 3088,
+   "species": "Euphorbia ledienii",
+   "reason": "Access question RESOLVED 2026-09-12 alongside the Olea trio above: this stands in Plaza de Galicia too, a genuine public plaza, not a private garden (see register_ids 3085-3087 above for the full resolution and its source). Diario Informacion's 2013 survey independently names 'un arbol candelabro originario de Africa, de la familia de los cactus, con 45 anos de historia' in the same plaza, matching this register entry closely (girth 0.7m). NOT shipped: still worth a product judgement on whether a succulent/cactus-relative counts as a collectible 'tree' for this site, which a verify pass is not positioned to make. If the product answer is yes, this is otherwise ready: two sources, a plaza, an age (45 years), a girth."
+  },
+  {
+   "register_ids": [
+    1421,
+    1422
+   ],
+   "name": "Olivera del Tio Pastor I / II",
+   "species": "Olea europaea",
+   "reason": "CHECKED 2026-08-23: 7.6km from centre, named in the register but no secondary source found for either tree (web search for \"Olivera del Tio Pastor\" Alicante returned nothing matching). Outside any walkable cluster; would need a name match and an access check before it goes anywhere."
+  },
+  {
+   "register_id": 1194,
+   "name": "Ficus de la Finca La Concepció",
+   "species": "Ficus macrophylla",
+   "reason": "CHECKED 2026-08-23: 7.7km from centre, girth 4.8m, height 15.4m, crown 29.5m (Generalitat Valenciana register, category Proteccion Generica). NOT in Alicante municipality: this is the Finca/Casa de la Concepcion in Sant Joan d'Alacant (Carrer Hernan Cortes, 8), a separate town on TRAM line 2, roughly 25 minutes end to end from Luceros plus a walk, so borderline for the day-trip boundary rather than clearly inside it. Turismo Sant Joan's own page (https://turismosantjoan.es/en/la-concepcion-estate/) independently confirms a ficus 'more than 100 years old' on the eastern edge of the property, 'included in the municipal catalog of protected trees', which is a genuine second source for species and a derived age (over a century) alongside the register. That is the good news. Access is the open question: the same page says 'the original perimeter fence has been removed' but 'a recent fence covered with heather surrounds this building', and current ownership plans to convert the historic house into a hostel; a separate search snippet (not independently verified by fetching the page itself) describes the grounds as having 'become a public park'. Those two claims are not flatly contradictory (garden open, building fenced) but this pass could not confirm which side of any fence the ficus stands on, and did not find a source stating opening hours or a free-access line in the terms this project needs for the access field. Hold as a lead: promising (named tree, two sources, real age derivation) but not yet clearable on hard rule 10's access test, and it belongs to a different town's future page as much as to Alicante's, which a later pass should decide with fresh eyes rather than this one guessing under a time box. RE-CHECKED 2026-08-26, no change: fetched a second Turismo Sant Joan page directly ('La Concepcion and Manzaneta Gardens'), which also does not state opening hours, an entry fee or a free-access line, only that 'the gardens have numerous centenary trees that today form part of the most beautiful public park in the municipality' (describing the wider Manzaneta grounds more than confirming which side of a fence this specific ficus sits on). Access still not clearable; do not ship without a source that states hours or an explicit open/closed line for this specific tree's spot."
+  },
+  {
+   "register_ids": [
+    1188,
+    1190,
+    1191,
+    1192,
+    1210,
+    1211,
+    1230,
+    1231,
+    1235,
+    1236,
+    1240,
+    1247,
+    1249,
+    1252,
+    1737,
+    528,
+    529,
+    530,
+    541,
+    3952
+   ],
+   "species": "Ficus macrophylla / Phoenix dactylifera / Washingtonia robusta / Washingtonia filifera / Olea europaea",
+   "reason": "Not pursued this pass, per the brief's own steer toward the walkable named centre cluster over these: a scattered group of named-estate trees 8.0-9.5km from centre (Fincas Maxara, El Conde o La Pau, Santa Ana, L'Abril, Espinos, and unnamed others), all in Sant Joan d'Alacant/Mutxamel rather than Alicante itself. A quick check of 'Finca El Conde o La Pau' (register_id 1247's site) found a local heritage blog (anticalicante.blogspot.com) describing it as a ruin: 'irrigation no longer exists, the few remaining trees barely survive in the razed garden, and no one inhabits the house anymore', which reads as private and likely fails the access test outright. The others were not checked individually. Any future pass on these should expect private agricultural estates rather than public ground, and check access before spending time on names or ages."
+  },
+  {
+   "register_ids": [
+    85,
+    2709,
+    2711,
+    3561,
+    29
+   ],
+   "species": "Olea europaea / Ceratonia siliqua / Phoenix dactylifera",
+   "reason": "CHECKED 2026-08-28 (this pass): the last five register candidates within 20km of Alicante centre that no earlier pass had touched, at 12.2-19.9km, all isolated single specimens with no cluster. Register_id 3561 ('Garrofera del Escondite', a named Ceratonia siliqua, height 13.8m, canopy 11.9m) is the one worth flagging specifically: a web search places it in the pedania of Daimes, which belongs to the MUNICIPALITY OF ELCHE, not Alicante, roughly 100 years old per the source, protected under Valencian Law 4/2006 (Prezi deck citing the regional catalogue; not independently fetched/confirmed as a second source this pass). It is a different city's page candidate, not Alicante's, and at 13.35km plus a rural pedania location it would fail this project's day-trip boundary for Alicante regardless. Register_ids 85, 2709 and 2711 (three unnamed Olea europaea, 12.2-12.7km) and 29 ('Palmera imperial', 19.9km) were not individually researched: all sit far past the ~30-minute transit boundary from Alicante centre, none clusters with another candidate or with any published tree, and the pattern set by every other finca-adjacent candidate already checked in this file (private agricultural land, often a ruin) makes a further look low-yield. None of the five is a good next step for Alicante; 3561 may be worth a future Elche pass instead."
+  }
+ ],
+ "blocked": [
+  {
+   "register_ids": [
+    3089,
+    3090,
+    3091,
+    3092,
+    921
+   ],
+   "species": "Ulmus minor",
+   "reason": "RE-CHECKED 2026-08-23, no change: fetched both todoalicante.es articles on the September 2025 elm collapse in Plaza Gabriel Miro directly (not just search snippets). Neither names a precise corner, adjacent building or which of the five registered elms fell; one only says the spot has no hostelry terraces nearby. Still no way to identify which four of the five register coordinates remain standing, so all five stay held rather than moved to leads: this is now a confirmed-unresolvable-by-search question, not just an unchecked one. A street-level photo or a follow-up city report naming the exact tree is the only thing that would unblock this. RE-CHECKED AGAIN 2026-09-07 (deepen pass): two fresh searches (mayor Barcala's promised city-wide tree review, any 2026 follow-up report) surfaced only the same August/September 2025 coverage (noticiascv.com, gentedigital.es, diariodealicante.net all re-covering the same collapse, none naming the specific tree or reporting the review's outcome). monumentaltrees.com has a page for exactly this plaza (6604_enlaplazagabrielmiro) that might show which elm is missing, but it 403s WebFetch as this file already documents elsewhere; no browser-session tool available this pass. Still unresolvable by search; do not re-attempt without either a browser session past the monumentaltrees 403 or a genuinely new city report."
+  },
+  {
+   "register_id": 3099,
+   "species": "Ficus macrophylla",
+   "reason": "CHECKED 2026-08-26: Carrer de l'Esportista Ramon Mendizabal 3, girth 6.2m, height 11m, crown 25m (Proteccion Generica). Cross-checked via OSM (node 13092900356, reg_ref=3099, denotation=natural_monument, protected=yes, figures match the register exactly) which sits inside the bbox of way 153247101, alt_name \"Parque del Jardin Botanico\" (a public park, San Fernando-Princesa Mercedes neighbourhood). The Spanish Wikipedia article \"Parque El Botanico\" independently confirms this exact tree (centenarian Ficus macrophylla, city-designated \"a monumental tree of local interest\") but states plainly: \"su tronco se encuentra dentro de una parcela de una urbanizacion privada colindante, aunque la mitad de su copa se extiende hacia el parque\" (the TRUNK stands on an adjacent private development parcel, Urbanizacion Gran Ficus, though half the canopy reaches into the public park). Per the hard limit \"never deliver a tree ... on private land not genuinely open to visitors; when in doubt, leave it out\", this is blocked rather than shipped: the trunk itself is not on public ground, only overhanging canopy is visible from the park side. It may be a legitimate view-only candidate under the wider project's viewing-place doctrine (visible from public park ground, pin marking the viewing spot rather than the trunk), which this verification pass is not positioned to apply; a session with full product context should decide rather than a verify pass guessing. Two sources agree on everything except access: the Valencia register (data/registers/valencia-arboles-monumentales.json, id 3099) and es.wikipedia.org/wiki/Parque_El_Botanico."
+  }
+ ]
 }
