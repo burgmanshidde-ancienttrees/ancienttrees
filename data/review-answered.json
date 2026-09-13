@@ -64,6 +64,10 @@
     "2026-09-12": {
       "note": "1-trees WARN fixed in 068159d9f (Home.swift walk card, Walks.swift row, ContentView empty-state, city-shelf subtitle); scripts/pluralcheck.py added as ratchet, wired into pre-push",
       "at": "2026-09-13T06:01:33+00:00"
+    },
+    "2026-09-13": {
+      "note": "Fixed ageToken() fabricating '2017, Years' for Trainiskis (trn_001), a planting year mistaken for an age. Added a qa.py ratchet check (297ddd0d).",
+      "at": "2026-09-13T12:20:04+00:00"
     }
   }
 }
