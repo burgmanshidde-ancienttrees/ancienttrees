@@ -79,6 +79,28 @@ scratch, not staged); a future session may delete them.
 `run_health.py --week`: 4823/5000 at the start of this continuation, ~177
 minutes left. Logged cost.
 
+**Second batch, same pass, same session: Berlin and Porto (the next two
+demand cities by queued depth).** 13 candidates across 5 trees. Approved
+3: ber_020 (the Podbielski Oak, a whole tree with its own interpretive
+plaque at the base confirming identity), ber_018 (the Karpfenteich Elm, a
+dramatic fluted trunk, register-designated Naturdenkmal filename matched
+exactly), por_027 (the Tulip Trees of Praca Pedro Nunes, the register's
+own "conjunto arboreo" designation photo, Wikidata-linked). Rejected 10:
+two mansion-facade and one petrol-station false positive on por_023/022,
+a church facade, the Podbielski plaque itself (informational, not a tree
+photo), two Caucasian Wingnut catkin close-ups with no trunk visible, an
+abstract straight-up bare-canopy shot and its own interpretive sign for
+"Berlin's Tallest Tree" (neither reads as a recognisable portrait), and
+one weaker duplicate angle of the approved elm. `photo_apply.py`'s
+dimension-reading step failed silently on the Porto file (byte-range
+probe came back empty, printed its own warning rather than shipping a
+null); filled `width`/`height` by hand from the Commons API per the
+warning's own instruction. Build (5596 pages) and `qa.py` (8683 pages)
+both clean after this batch too.
+
+Total for the session: 7 approved, 28 rejected, across 5 cities' queues.
+Logged as a second cost entry.
+
 ## 2026-09-13 - Alicante 16 -> 19 (finished continuation 20's dispatch), Monkey Puzzle species page
 
 Continuation 20 (2026-09-12) had claimed Alicante and dispatched a verify
