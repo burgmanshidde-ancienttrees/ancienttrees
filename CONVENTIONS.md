@@ -25,6 +25,45 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## A my-location control over a bottom sheet (2026-09-13)
+
+Written because this one control has been reported four times and fixed three
+times without anybody looking up what it is copied from. The entry it needed
+did not exist, so each fix argued from the previous fix.
+
+**Google Maps.** The my-location control floats just above the bottom sheet and
+rides with it while the sheet is at its collapsed and middle stops. When the
+sheet expands, the control does NOT keep climbing: the sheet slides over it and
+it is simply covered, and it comes back as the sheet comes down.
+
+**Apple Maps.** The opposite answer to the same problem. Its map controls sit in
+the top right and are pinned there; they do not move with the sheet at all.
+
+**What both have in common, which is the part that matters here:** the control
+stays in ONE region of the screen. Neither of them has a control that travels
+the height of the display as a sheet is dragged.
+
+**What we had.** Ours rode the sheet the whole way and faded out over the top
+half of the screen, so dragging the list up carried it across the map and over
+the search field and the filter chips (Hidde, 2026-09-13: "het lukt me nog
+steeds het centre knopje weg te slepen bij map als ik de lijst naar beneden en
+boven sleep"). That was not either reference. It came from a fix on 2026-09-04
+that bundled two changes, removing a clamp and removing the control from the
+view hierarchy at the full stop; only the second was the bug.
+
+**What we do.** Google's, because it keeps the control near the thumb: it rides
+to the tallest stop below full and then stops, and the sheet covers it. The
+arithmetic is `TreeMap.recentrePlacement`, and it is tested rather than
+eyeballed.
+
+**Source: none captured.** Both references are named in our own corpus for this
+exact control (TreeMap.swift, 2026-08-29 and 2026-09-04) and Apple's own maps
+HIG page would not render to text from this sandbox. Treat this entry as the
+weaker kind the top of this file describes, and re-check it on a phone before
+leaning on it again.
+
+---
+
 ## Kilometres or miles (2026-09-12)
 
 Hidde, after the cross-platform sweep found the app reading the phone's locale

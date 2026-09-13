@@ -385,6 +385,28 @@ struct BottomSheet<Header: View, Content: View>: View {
                 }
             }
             .frame(height: h + bottom)
+            // MEASURED, NOT COMPUTED, and this is the other half of the button
+            // that jumps (Hidde, 2026-09-13, and 2026-09-04 before it).
+            //
+            // `h` is the height the sheet is ASKED for. On release it changes
+            // in one step, from wherever the finger left it to the stop it
+            // snapped to, and the frame above then springs there over 0.28
+            // seconds. That is right for the sheet and wrong for anything
+            // following it: the number below used to be published straight
+            // from `h`, outside the animation, so a control riding the sheet
+            // teleported to the final position and waited there while the
+            // sheet caught up. Up to two hundred points of daylight opened
+            // between the two on every single release.
+            //
+            // A reader inside the animated frame reports the height as it is
+            // actually drawn, frame by frame through the spring, which is what
+            // "rides the sheet" was always supposed to mean.
+            .background(
+                GeometryReader { drawn in
+                    Color.clear.preference(key: SheetVisibleHeightKey.self,
+                                           value: max(drawn.size.height - bottom, 0))
+                }
+            )
             .overlay {
                 if height == .peek {
                     Color.clear
@@ -435,9 +457,6 @@ struct BottomSheet<Header: View, Content: View>: View {
                     }
             )
             .animation(.spring(duration: 0.28), value: height)
-            // What is actually on screen this frame, drag included, for the
-            // controls that have to sit above it. See SheetVisibleHeightKey.
-            .preference(key: SheetVisibleHeightKey.self, value: h)
         }
         // Without this the reader stops at the home indicator and reports a
         // bottom inset of zero, so `bottom` above would be nothing and the band
