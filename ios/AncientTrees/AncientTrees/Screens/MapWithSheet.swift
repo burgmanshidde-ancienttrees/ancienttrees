@@ -55,7 +55,11 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
                         content: { content })
             floating
         }
-        .onPreferenceChange(SheetVisibleHeightKey.self) { livePoints = $0 }
+        // Zero means NOT MEASURED YET, not "the sheet is flat", which is the
+        // difference between falling back to the stop and pinning a control to
+        // the bottom of the screen for a frame. PlacePin already made this
+        // distinction and this view did not.
+        .onPreferenceChange(SheetVisibleHeightKey.self) { livePoints = $0 > 0 ? $0 : nil }
     }
 }
 

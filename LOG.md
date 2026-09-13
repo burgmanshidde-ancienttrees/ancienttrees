@@ -1,6 +1,49 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - The recentre button on the map stops climbing the screen
+
+Hidde, on his own phone: "het lukt me nog steeds het centre knopje weg te
+slepen bij map als ik de lijst naar beneden en boven sleep - deze bug kennen we
+al langer." He is right that it is old: this one control has now been reported
+four times (missing 2026-08-24, the gap to the sheet wobbling 2026-08-29,
+disappearing and jumping on release 2026-09-04, and this).
+
+Two faults, both found by reading rather than by dragging, because there is no
+Xcode in this sandbox. **It climbed**: the 09-04 fix removed a clamp at the
+same time it removed the real bug (the control being dropped from the view
+hierarchy at the full stop), so with no clamp it followed the sheet the whole
+way and dragging the list carried it across the map and over the search field
+and the filter chips. Neither app it is copied from does that; Google Maps lets
+the sheet slide over its my-location control, Apple Maps pins its controls to
+the top right. **And it teleported on release**: the sheet published the height
+it was ASKED for rather than the height it was DRAWN at, from outside its own
+animation, so on every release the button jumped straight to the final position
+and then waited up to 0.28 seconds for the sheet to spring after it. Up to two
+hundred points of daylight, every single time you let go.
+
+Fixed: `TreeMap.recentrePlacement` rides the sheet to the tallest stop below
+full, then stops and is covered, with a short fade because the sheet's material
+is translucent; the ceiling is computed from the stops rather than a percentage
+of the screen, because on an iPhone SE the card stop is taller than the half
+stop and the old percentage clamp sat underneath it. The sheet now publishes a
+measured height from inside its animated frame. MapWithSheet treats a
+zero-height reading as not-yet-measured rather than as a flat sheet.
+
+The ratchet, because three fixes by eye is enough: the arithmetic is a pure
+function and MapAimTests holds six properties over both phone sizes, including
+the one that broke, which is that the control never reaches the top quarter of
+the screen at any sheet height. CONVENTIONS.md gained the entry that should
+have existed before any of the three fixes, honestly marked as the weaker kind
+since no source URL could be captured from here.
+
+Not verified on a phone. There is no Xcode here, so `ios.yml` is the judge and
+the sweep and the layout gate run there. Worth a look on your own build.
+
+**Correcting yesterday's FOR HIDDE:** the stuck Milan commit `c8c835dd1` did
+reach origin. It is on `main` and the deploy that carries it is green, so
+nothing needs recovering by hand.
+
 ## 2026-09-13 (continuation 2) - Committed an earlier attempt's finished Tokyo/Kyoto work; Breda photo dead end recorded
 
 Picked up after an earlier attempt in this same window stopped with 68 min
