@@ -1,6 +1,36 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - FOR HIDDE: git push is failing with an expired token, one commit stuck local-only
+
+This continuation recovered the Gdansk claim an earlier attempt in this same
+window had left standing (verify+write, 6 -> 12 trees, Park Oliwski cluster,
+pushed fine as c1da93024). Health checks were clear (rung 2), so it moved on
+to two more register-backed deepen passes on cities the search-console roster
+already confirms get demand: Alicante 19 -> 21 (two press-corroborated pairs,
+pushed fine as 125a02a46) and Milan 24 -> 25 (the "La Pianta di Manzoni" entry
+above, commit c8c835dd1).
+
+**The Milan commit is NOT on origin.** `git push` started failing partway
+through this window with "Invalid username or token. Password authentication
+is not supported for Git operations." on the token baked into `origin`'s URL,
+and every retry since has failed the same way. This is not something a run
+can fix: `gh auth setup-git`, `gh auth status` and `gh repo view` are all
+outside this session's permitted commands, and reading or rewriting the
+credential directly is (rightly) gated behind approval this session cannot
+give itself. The commit itself is safe and complete in this workspace's local
+`main` (`c8c835dd1`, one ahead of origin), not lost, just not shared: if this
+workspace is discarded before someone pushes it by hand, it goes with it.
+
+No further research was dispatched once this showed up, because every
+following commit would have piled up the same way and multiplied what has to
+be recovered by hand. `python3 scripts/passcheck.py --claims` is clean (the
+Milan claim was released before the push failure, so nothing is holding the
+city hostage), so the only open item is getting `c8c835dd1` onto `origin/main`
+from wherever this workspace's `.git` still exists, or re-running Milan's
+write pass fresh from `data/research/milan-verified.json` (still on disk) if
+the workspace itself is gone.
+
 ## 2026-09-13 - Milan 24 -> 25: a tree named after a novelist nobody can connect to it
 
 Wrote up the one verified tree waiting in Milan's research file and merged it.
