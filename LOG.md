@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - Gdansk 6 -> 12: the Park Oliwski cluster is now a walk
+
+Wrote the six verified trees the Gdansk verify pass had left waiting and
+merged them into the city. Gdansk goes from four scattered singletons plus
+two trees up the coast in Gdynia to a page with a real cluster on it: six
+protected trees inside Park Oliwski in Oliwa, all within a few hundred
+metres of each other, all free, all on confirmed pins. That is the
+difference between a list and an afternoon.
+
+The ones worth knowing about: a katsura that split into three trunks and
+whose fallen leaves smell of burnt sugar every October; an elm 4.2 metres
+round that outlived the epidemic which killed nearly every elm its size in
+Europe, and which Poland registered not under its own name but as "an elm
+with flowering common ivy"; a cucumber tree from eastern North America
+19 metres tall; and a pair of field maples that became Gdansk's newest
+protected trees on 26 February 2026, named after the botanist widely
+credited with inventing the idea of a legally protected tree.
+
+Honest gaps, stated on the pages rather than papered over: four of the six
+have no recorded age at all and the pages ask the reader for one, and all
+six have no photograph. The photo gap is a live lane, not a dead end: the
+verify notes name an existing Commons file for five of them, so this wants
+a viewing pass rather than a new hunt.
+
+Three of the six got a `best_time`; three deliberately did not. Build clean
+(5,606 pages), `qa.py` clean (8,693 pages), `preflight.py` 598 cities and 0
+problems. Cost logged, claim released.
+
+One lead left on the table on purpose: a Lawson Cypress in the same park,
+which the verify pass never got to and which a writing pass is not allowed
+to verify for itself. It is the cheapest thirteenth tree Gdansk has.
+
 ## 2026-09-13 (continuation 23) - Recovered a stranded Berlin verify+write pass (21 -> 23 trees); confirmed every free lane dry, no new dispatch
 
 Inherited a window that had stopped after 61 min with 59 min unspent

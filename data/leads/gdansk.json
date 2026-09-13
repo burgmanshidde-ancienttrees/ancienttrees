@@ -1,0 +1,32 @@
+{
+  "leads": [
+    {
+      "species": "Lawson Cypress (Chamaecyparis lawsoniana)",
+      "location": {
+        "address": "Park Oliwski im. Adama Mickiewicza, Oliwa, Gdansk",
+        "latitude": 54.41266,
+        "longitude": 18.56049
+      },
+      "note": "GDOS gid 107983, girth 212cm designated 1992-03-15 (pl.wikipedia city-index 89, register 830); explicitly named alongside the giant thujas and magnolias as a standout in the article intro (\"cyprysiki Lawsona w parku Oliwskim, ktorych obwody przekraczaja 200cm\"). Same walkable cluster as gda_008 to gda_011. Not verified this pass only for time, not for any evidence problem; ready to write with the same two sources."
+    },
+    {
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "location": {
+        "address": "ul. Polanki 19, Oliwa, Gdansk",
+        "latitude": null,
+        "longitude": null
+      },
+      "note": "pl.wikipedia city-index 58, register 578, girth 200cm, height 15m, designated 1988. Location given as \"w ogrodzie\" (in the garden) at a private address on ul. Polanki, not clearly public park land unlike the Park Oliwski cluster. Access unconfirmed this pass; needs an OSM/access check per hard rule 10 before it can ship (Park Oliwski entries were preferred instead because access is unambiguous there)."
+    },
+    {
+      "species": "various exotic conifers (Chamaecyparis pisifera, Pinus koraiensis, Pinus peuce, Taxus baccata)",
+      "location": {
+        "address": "ul. Grunwaldzka 529, park i posesja przy Stawie Mlynskim, Oliwa, Gdansk",
+        "latitude": 54.412,
+        "longitude": 18.5673
+      },
+      "note": "GDOS gids 107979-107982, one register group record (pl.wikipedia city-index 88, register 829: Korean pine 115cm, Balkan/Rumelian pine 121cm, yew 120cm, western redcedar 140cm all together). Modest girths compared to the group at gda_011, and \"posesja\" in the location description suggests this may partly be on a private property boundary rather than open park; needs an access check before shipping. Same general Oliwa register cluster, ~450m from the gda_008-011 group."
+    }
+  ],
+  "blocked": []
+}
