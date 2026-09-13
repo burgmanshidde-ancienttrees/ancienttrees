@@ -99,6 +99,39 @@ jobs:
           git pull --rebase --autostash -q
           git push
 
+      # THE NUMBERS, not only the picture. appfit dumps every element's frame
+      # for BOTH phones, and the sweep photographs only the small one, so a
+      # fault that appears on a large screen has a measurement and no image.
+      # Printed to the log rather than committed: it is a wall of text that
+      # answers one question on one afternoon.
+      - name: Fetch that run's frame dump
+        id: dump
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: appfit-dump-${{ inputs.run_id }}
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+          path: dump
+
+      - name: The frames for those screens
+        if: steps.dump.outcome == 'success'
+        run: |
+          IFS=',' read -ra WANTED <<< "${{ inputs.screens }}"
+          for f in $(find dump -type f); do
+            echo "=================== $f"
+            for want in "${WANTED[@]}"; do
+              want="$(echo "$want" | xargs)"
+              [ -z "$want" ] && continue
+              echo "--- $want"
+              awk -v w="$want" '
+                index($0, "SCREEN") && index($0, w) { on=1; print; next }
+                on && index($0, "SCREEN") && !index($0, w) { on=0 }
+                on { print }
+              ' "$f" | head -120
+            done
+          done
+
       - name: Where to look
         run: |
           echo "### Screens published" >> "$GITHUB_STEP_SUMMARY"
