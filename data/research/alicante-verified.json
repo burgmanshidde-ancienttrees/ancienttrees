@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ali_017",
+    "name": "The Araucaria of Plaza de Santa Teresa",
+    "species": "Monkey Puzzle Tree (Araucaria araucana)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 125,
+    "girth_cm": null,
+    "location": {
+      "address": "Panteón de Quijano, Plaza de Santa Teresa, Alicante",
+      "latitude": 38.3514,
+      "longitude": -0.4843,
+      "neighbourhood": "San Antón"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html (Diario Información, 6 July 2013: 'una araucaria araucana o pino piñonero con una antigüedad de 95 años y de 30 metros de altura, según los datos del catálogo' [municipal catalogue], standing in Plaza de Santa Teresa/Panteón de Quijano, part of the Ayuntamiento's own singular-trees route)",
+      "https://brotaalicante.com/araucaria-araucana/ (Brota Alicante, the city's own park-maintenance contractor: 'Plaza Santa Teresa / Panteón de Quijano', approximately 100 years old, 30 metres tall, legally protected for its dimensions; notes several companion Araucaria araucana once stood in the same grove and have since been replaced by younger trees, leaving this one as the sole survivor)",
+      "https://es.wikipedia.org/wiki/Parque_de_Quijano (confirms the park's identity, coordinates 38°21'05\"N 0°29'04\"O, species list including araucarias and olmos, and that the garden is enclosed by ornamental railings with access via a staircase)"
+    ],
+    "access": "Free, public park (Panteón de Quijano / Plaza de Santa Teresa), open daily 9:00-22:00 per multiple tourism listings; enclosed by an ornamental iron fence with a staircase entrance, not gated shut during those hours",
+    "transport": "About 10-12 minutes on foot from TRAM Luceros (lines L1-L4) and from the Plaza Gabriel Miró cluster; several city bus lines run along the nearby Avenida de Alfonso X El Sabio / Rambla",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "TWO INDEPENDENT SOURCES on species, age and height: Diario Información (2013, citing the municipal tree catalogue) gives 95 years/30m; Brota Alicante (the city's current park-maintenance contractor, undated page, presumably more recent) gives approximately 100 years/30m. Both agree tightly on height and roughly on age; age_estimate widened to 'over a century' and age_min/max broadened to 100-125 to honestly cover both the 2013-forward-projected figure (~108 by 2026) and the rounder 'about 100' from the more recent source, rather than picking one number. SPECIES: Araucaria araucana (Monkey Puzzle / Chilean Pine), specifically named by both sources, distinct from the already-published Araucaria heterophylla (Norfolk Island Pine, ali_015) at Plaza de Calvo Sotelo and from a second, taller, undated Araucaria at Plaza de Galicia (see separate lead, likely a Pacific-origin species rather than this Chilean one). GIRTH: not given by either source. HISTORY: Brota Alicante notes this is now the LAST survivor of what was once a small grove of the same species in this garden, the others replaced with younger trees; worth leading the story with, it is the rare survivor rather than a lone planting. ALIVE: Brota Alicante's own maintenance page is the stronger currency signal (a contractor's live reference page for a tree it maintains), though it carries no visible publish date; the tree's continued existence is also implied by its being named among the park's remaining monumental specimens by that dedicated maintenance page. ACCESS: multiple tourism/listing sites agree on 9:00-22:00 daily opening, free; the park is described as fenced with a staircase entrance (Wikipedia), consistent with the ordinary Spanish 'jardin historico' style of railings unlocked during opening hours rather than a restricted site. LOCATION: pinned to the plaza/park centroid only (OSM way centroid 38.3514398,-0.4842716, matching Wikipedia's stated coordinates almost exactly); the park is small and the tree is described as standing in its central grove near the Quijano monument, but no source gives a tree-specific coordinate or a photo this pass could use to narrow it further, hence approximate rather than confirmed. A future pass with a photo of the grove or a satellite look at the park's central planting could tighten this to confirmed.",
+    "how_to_recognise": "The sole Araucaria araucana left in the garden's central grove, unmistakable for its reptilian, thickly overlapping leaf-scales and stiff radiating branches, nothing else in the park looks like it. It stands near the Quijano monument and obelisk at the centre of the fenced garden."
+  },
+  {
+    "id": "ali_018",
+    "name": "The Araucaria of Plaza de Galicia",
+    "species": "Cook Pine (Araucaria columnaris)",
+    "age_estimate": "several decades old",
+    "age_min": 35,
+    "age_max": 55,
+    "girth_cm": null,
+    "location": {
+      "address": "Plaza de Galicia, Alicante",
+      "latitude": 38.3389,
+      "longitude": -0.4899,
+      "neighbourhood": "Ensanche Diputación, at the seaward end of Parque de Canalejas"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html (Diario Información, 6 July 2013: an araucaria 'que hace varias décadas plantaron los jardineros municipales' [planted by municipal gardeners several decades earlier, elsewhere in the same piece given as 'hace 40 años'], now 'alcanza los 50 metros de altura', calling it explicitly 'el ejemplar de mayor altura incluido en la ruta de árboles singulares diseñada por el Ayuntamiento de Alicante' [the tallest specimen on the city's own singular-trees route], standing in Plaza de Galicia)",
+      "https://brotaalicante.com/araucaria-columnaris/ (Brota Alicante, the city's own park-maintenance contractor, names the species specifically as Araucaria columnaris/Cook Pine, states it is in Plaza Galicia, 'alcanza los 50 metros de altura', gives its age as 35 years, and notes it is legally protected for its landscape and environmental value)",
+      "https://es.wikipedia.org/wiki/Plaza_de_Galicia_(Alicante) (confirms Plaza de Galicia as a genuine public plaza at the seaward end of Parque de Canalejas, inaugurated 1969 on a former gas-factory site, no gate or opening hours mentioned)"
+    ],
+    "access": "Free, open public plaza (Plaza de Galicia), part of the 'El Parque' urbanization at the seaward end of Parque de Canalejas, no gate or opening hours",
+    "transport": "About 12-15 minutes on foot from TRAM Luceros (lines L1-L4); a continuation of the same waterfront walk as the Ficus del Passeig de Canalejas (ali_005), a few minutes further along toward the marina",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "TWO INDEPENDENT SOURCES agree tightly on the headline fact, height: Diario Información (2013) and Brota Alicante (the city's own maintenance contractor, undated) both give 'alcanza los 50 metros de altura' for this tree, and Brota Alicante names the species specifically as Araucaria columnaris (Cook Pine, native to New Caledonia, named for Captain Cook). At 50 metres this would be an exceptional specimen for the species anywhere in cultivation (mature Cook Pines in their native range top out around 60-65m; the tallest known cultivated specimens worldwide are nowhere near common), so treat the figure as a repeated claim from the tree's own city rather than as independently measured by this pass; it is what both sources say and is recorded as such, not rounded up or down. AGE CONFLICTS, recorded rather than resolved: the 2013 article gives 'hace 40 años' (planted ~1973, ~53 years by 2026) for the planting; Brota Alicante's page (undated, presumably written more recently) gives '35 años'. The two do not agree and neither is clearly the newer or more authoritative figure, so age_min/max is widened to 35-55 to honestly span both rather than picking a winner; age_estimate downgraded to the vaguer 'several decades old' rather than a number either source would dispute. This is NOT an ancient tree by the site's usual standard, its qualifying case is squarely 'visually spectacular': the tallest tree on the city's own singular-trees walking route, an extraordinary columnar spire over a public plaza. SPECIES CONTEXT: distinct from the already-published Araucaria heterophylla (Norfolk Island Pine, ali_015, Plaza de Calvo Sotelo) and from the Araucaria araucana of Plaza de Santa Teresa (ali_017, this same pass); Alicante's public plazas apparently carry three different Araucaria species across three separate squares, worth a line in the story. LOCATION: this pass also discovered that the previously-unresolved register leads for three Olea europaea (register_ids 3085-3087) and one Euphorbia ledienii (register_id 3088), earlier guessed to sit on a private residential garden off Carrer del Pintor Aparicio, actually stand within Plaza de Galicia itself: the register coordinates for all four (38.3385-38.3388, -0.4896 to -0.4903) fall inside this same plaza's OSM/Wikipedia footprint, and Diario Información's 2013 article independently names 'tres olivos centenarios y un árbol candelabro originario de África, de la familia de los cactus, con 45 años de historia' as also standing 'en esta plaza' (this plaza), matching the register's three olives and one Euphorbia almost exactly. See the separate olive-grove entry delivered this pass (ali_019) and the updated leads file. GIRTH: not given for the araucaria by either source. Pinned to the plaza centroid (OSM/Wikipedia agree closely, 38.3389/-0.4899), approximate rather than confirmed: no source gives a tree-specific coordinate.",
+    "how_to_recognise": "By far the tallest tree in Alicante's own singular-trees route, a dense columnar spire over the whole plaza, its lower branches long shed and replaced by short awl-leaved shoots. Nothing else in Plaza de Galicia comes close to its height."
+  },
+  {
+    "id": "ali_019",
+    "name": "The Centenary Olives of Plaza de Galicia",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "centenary, over a century",
+    "age_min": 100,
+    "age_max": 200,
+    "girth_cm": 310,
+    "location": {
+      "address": "Plaza de Galicia, Alicante",
+      "latitude": 38.33876,
+      "longitude": -0.4897,
+      "neighbourhood": "Ensanche Diputación, at the seaward end of Parque de Canalejas"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html (Diario Información, 6 July 2013: 'En esta plaza destacan también los tres olivos centenarios' [three centenary olives also stand out in this plaza], naming Plaza de Galicia, alongside the plaza's tall araucaria)",
+      "Generalitat Valenciana catalogo de arboles monumentales y singulares register (register_ids 3085, 3086, 3087; three individually registered Olea europaea at 38.33881/-0.48972, 38.33875/-0.48972 and 38.33873/-0.48965, girths 1.7m, 3.0m and 3.1m respectively, all within about 15 metres of each other)",
+      "https://es.wikipedia.org/wiki/Plaza_de_Galicia_(Alicante) (confirms Plaza de Galicia as a genuine open public plaza, no gate or opening hours, resolving an earlier pass's unconfirmed guess that these register coordinates sat on a private residential garden)"
+    ],
+    "access": "Free, open public plaza (Plaza de Galicia), part of the 'El Parque' urbanization at the seaward end of Parque de Canalejas, no gate or opening hours",
+    "transport": "About 12-15 minutes on foot from TRAM Luceros (lines L1-L4); a continuation of the same waterfront walk as the Ficus del Passeig de Canalejas (ali_005) and the Araucaria of Plaza de Galicia (ali_018), standing a few steps from it in the same plaza",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "RESOLVES a previously-blocked lead: earlier passes (recorded in data/leads/alicante.json) found register_ids 3085-3087 (three Olea europaea, girths 1.7/3.0/3.1m) at these coordinates but could not confirm public access, reverse-geocoding them to an unnamed leisure=garden way off Carrer del Pintor Aparicio that read as a possible private residential garden. This pass found the actual site: the coordinates (38.3385-38.3388, -0.4896 to -0.4897) sit inside Plaza de Galicia, a real named public plaza (Wikipedia, OSM), and Diario Información's 2013 municipal-catalogue-sourced survey independently names 'tres olivos centenarios' standing in this exact plaza, alongside its araucaria (ali_018, same pass) and a Euphorbia (see below). TWO INDEPENDENT SOURCES: the Valencia region's official monumental-tree register (species, coordinates, individual girths) and Diario Información's newspaper survey (confirms 'centenary' age and the specific plaza) satisfy the bar for existence, species and a vague-but-real age. FOLDED AS ONE ENTRY: the three register rows sit within about 15 metres of each other, read by a visitor as one small olive grove rather than three separate stops, consistent with this project's twin-folding precedent (ali_011's two Paseito de Ramiro figs). Individual register girths recorded here as a range (1.7 to 3.1 metres); girth_cm above uses the largest (3.1m = 310cm) as the headline figure, all three noted in the story. AGE: 'centenarios' is the only descriptor either source gives, repeated as vaguely as the source allows; a 3.1m-girth olive is easily consistent with a century or more of growth but no source ties a specific year count to any of the three, so age_min/max is left broad (100-200) rather than invented. NOT SHIPPED SEPARATELY: register_id 3088, a Euphorbia ledienii (girth 0.7m) at the same plaza (38.33856,-0.49027), independently matches the same 2013 article's mention of 'un arbol candelabro originario de Africa, de la familia de los cactus, con 45 anos de historia' in the same plaza. Left as a lead rather than shipped: a succulent rather than a tree in the ordinary collectible sense, and worth a product judgement call this verify pass is not positioned to make; see updated leads file.",
+    "how_to_recognise": "A small grove of three registered olives standing together, within about fifteen metres of each other, in the same plaza as the tall araucaria (ali_018); the thickest of the three has a trunk just over three metres round."
+  }
+]

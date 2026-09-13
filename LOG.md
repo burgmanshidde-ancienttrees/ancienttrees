@@ -1,6 +1,77 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - Alicante 16 -> 19 (finished continuation 20's dispatch), Monkey Puzzle species page
+
+Continuation 20 (2026-09-12) had claimed Alicante and dispatched a verify
+pass in the background, then ended before that pass's output was merged
+(no `data/research/alicante-verified.json` and no active claim existed at
+the start of this run, so nothing was recoverable; re-ran it from scratch).
+
+**Rung 2 first, per `health.py`.** Clear: smoke test, deploy, night shift,
+digest, fresh-eyes review all green; 0 BLOCKER/1 WARN in REVIEW.md. Checked
+the two workflows the session-start hook flagged directly, since
+`health.py` does not track either: "Walking routes" (09:32 UTC) failed on a
+push race (computed routes fine, `git pull --rebase` then `git push`
+rejected because another push landed in the gap); confirmed this is a
+first occurrence in the last 17 scheduled runs, not a recurring pattern,
+so left it rather than building a check (the ratchet rule needs two
+occurrences). Tried `gh workflow run` to fire it again now; this session's
+token cannot dispatch workflow runs (HTTP 403), same wall recorded
+repeatedly today for `.github/workflows/*` writes. The iOS floor job
+(`ios.yml`, iOS 18 only) failure is the same already-diagnosed,
+already-escalated issue as continuation 20 found: `testEveryFlowLeavesAWayBack`
+and `testSearchingForATreeMovesTheMapToIt` both carry code comments
+documenting 3 recurrences and a written, unpushable fix (retry flag on the
+floor job's xcodebuild call, blocked on the bot token lacking `workflows`
+permission, reported to Hidde 2026-09-09). Not re-litigating either;
+both are FOR HIDDE already.
+
+**Sightings inbox and submissions: nothing new.**
+
+**Alicante, 16 -> 19 trees.** Register radius (0.2-1.5km) already exhausted
+by four prior passes this week; a verify pass found new supply via a 2013
+newspaper survey (Diario Información) reached through the Wikipedia/Brota
+Alicante trail, unlocking two plazas no earlier pass had reached: the
+Panteón de Quijano (a solitary Araucaria araucana, sole survivor of a
+small grove) and Plaza de Galicia (a claimed 50m Araucaria columnaris,
+recorded as the city's own figure rather than independently verified,
+since it exceeds normal species height for the genus; and a 3-olive grove
+folded into one entry, which also resolved a previously-stuck access-doubt
+lead by finding the register coordinates actually sit inside this public
+plaza, not a private garden as an earlier pass guessed). Wrote all three
+stories directly in the main session rather than dispatching a
+write-stories pass for 3 trees. Preflight caught four issues before
+merge: a duplicate common name for Araucaria araucana ("Monkey Puzzle
+Tree" vs the existing "Monkey Puzzle" in Caserta/Edinburgh, hard rule 9),
+an intro and meta_description both over their word/char limits after
+adding the new trees, and one how_to_recognise 1 character over. All
+fixed. Added the Spanish overlay for the 3 new trees (translated by hand)
+since the build hard-fails on an incomplete overlay; the first draft of
+the Spanish ali_019 story ran 271 words against the 150-250 bar and had to
+be trimmed.
+
+**New species page: Monkey Puzzle (Araucaria araucana).** `pagegaps.py`
+flagged it the moment Alicante's third tree joined Caserta's and
+Edinburgh's (3 trees, right at the floor). Wrote the intro from those
+three trees' own facts per P3 (dinosaur-armour leaf scales, the Victorian
+British planting craze visible in Edinburgh's grove, Chile's national and
+endangered status). No tree has a photo, so no `face_tree_id` was set.
+
+**Fixed a stale count while merging**: Spain's country page
+meta_description still said 267 trees against the corpus's actual 270,
+caught by preflight after the Alicante addition.
+
+Build (5596 pages), qa.py (8683 pages, clean), preflight (0 problems),
+superlatives (368 claims, no collisions) and route_walks all clean.
+Logged the pass to `data/agent-costs.json`. Claim released.
+
+Week budget checked before and after: `run_health.py --week` read
+4823/5000 minutes at the start of this continuation, about 177 minutes
+left in the rolling seven days. Kept this pass to one bounded dispatch
+plus direct writing rather than opening further research, same reasoning
+as continuation 19/20's caution yesterday.
+
 ## 2026-09-12 (continuation 20) - Rung 2 sweep on two workflows the session-start hook flagged; dispatched an Alicante verify pass
 
 Continuation 19's work (Zwolle 14 -> 16, releasing the dead Berlin claim) was
