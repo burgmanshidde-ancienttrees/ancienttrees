@@ -1,6 +1,25 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 34) - A new place: Portalegre, Portugal, and its single propped-up plane tree
+
+Same window, continuing after Belgrade above, down `famous_demand.py
+--gap`'s list. "Plane tree of rossio" turned out to be Portalegre's
+**Plátano do Rossio**, not a Lisbon tree as the name suggested, 40km
+southeast of the actual Rossio square, and over 100km from anything we
+publish, so its own place under the single-famous-tree rule.
+
+Planted 1838 by the town's own physician-botanist, it became Portugal's
+first tree ever classified a Monument of Public Interest (1938) and won
+the national Tree of the Year contest for 2021, placing fourth in the
+European final. Verified against Portuguese Wikipedia, Portalegre's own
+municipal page and three 2020-2021 press pieces on the award. Two real
+discrepancies between sources (current girth/canopy size, the exact
+classification year) are flagged in `verify_notes` rather than resolved by
+guessing; used the more recent, more corroborated figures for the former
+and the earlier year for the latter. Build (5656 pages) and `qa.py`
+(8788 pages) both clean.
+
 ## 2026-09-13 (continuation 33) - Belgrade 4 -> 5: a tavern-keeper's plane on a five-way Vračar corner
 
 Same window, continuing after Chiapa de Corzo below. Worked further down

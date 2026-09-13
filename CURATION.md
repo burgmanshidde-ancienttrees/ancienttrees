@@ -11,6 +11,33 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 34) - New place: Portalegre (Portugal), the Plane Tree of Rossio, single-famous-tree exception
+
+Same window, continuing down `famous_demand.py --gap`'s list past the Belgrade
+tree. "Plane tree of rossio" (Portugal, 75 views/mo, 2 langs, pin yes) turned
+out to be **Plátano do Rossio**, in Portalegre, Alentejo, not Lisbon's Rossio
+as the name first suggested (the lead's own coordinate, 39.296/-7.430, is
+40km southeast of Lisbon and matched Portalegre's own Rossio square via
+Nominatim). No published tree within 100km, so its own place.
+
+An exceptionally well-documented single tree: planted 1838 by the town's own
+physician-botanist José Maria Grande, Portugal's first tree ever classified
+a Monument of Public Interest (1938), winner of the national Árvore
+Portuguesa do Ano contest for 2021 and 4th in the European final. Two
+independent sources (Portuguese Wikipedia, the Portalegre municipal
+council's own visitor page) plus three corroborating 2020-2021 press pieces
+(Público, LusoJornal, Gazeta Rural) on the award.
+
+Flagged rather than silently resolved: Wikipedia gives 5.26m girth/27m
+canopy from older records, the municipality and the press all converge on
+7m/37m from the 2020-2021 measurements; used the more recent, more widely
+corroborated figures and said so in `verify_notes`. Also flagged: the
+classification year moves by one across sources (1938 vs 1939), used the
+earlier without resolving by guessing. Photo (João Martins, CC BY-SA 4.0)
+is a strong Cadiz-standard shot, in leaf, showing the tree's distinctive
+20 support props clearly. Full build (5656 pages) and `qa.py` (8788 pages)
+both clean.
+
 ## 2026-09-13 (continuation 33) - Belgrade 4 -> 5: the Vračar tavern-keeper's plane
 
 Same window, continuing down `famous_demand.py --gap`'s list after La Pochota.
