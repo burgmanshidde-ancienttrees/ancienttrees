@@ -1,6 +1,55 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 22) - Recovered a stranded Sintra pass and a Rome photo; routes.yml/iOS re-confirmed, no new coverage dispatched
+
+Inherited a window that stopped after 18 min with 102 min unspent
+(week at 4857/5000, ~143 min left, shared with Hidde). `passcheck.py
+--claims` was clean, `leads.py --ready` was empty (2946 leads, 0
+READY). Went to CLAUDE.md Step 0.
+
+**Found and committed real, complete work an earlier attempt had left
+uncommitted**: a sixth Sintra verify pass (0 new trees, but a
+thorough re-confirmation that its ICNF register and named specimens
+are exhausted, plus one caught-and-discarded search-summary
+fabrication, all logged in `data/leads/sintra.json` and
+`CURATION.md`) and a Rome photo approval (Villa Torlonia's Cedar of
+Lebanon, rom cedar photo, plus a batch of other photo-queue viewing
+verdicts). This was fully verified work sitting in the working tree
+with a released claim; committed as d12395dd rather than left to rot
+or be duplicated by a future pass.
+
+**Rung 2**: `health.py` itself was clear. The session-start hook's two
+flagged items were both re-derived independently before checking
+whether they were already known, and both were: routes.yml's push
+race has the correct retry-loop fix ready, but this token still lacks
+`workflows` scope to push any `.github/workflows/*.yml` change
+(confirmed a 4th/5th time today, reverted, not re-litigating — FOR
+HIDDE is already recorded above); the iOS floor job's `person-more`
+and Beethoven-search timeouts are already widened to 20s/45s on main,
+and the scheduled failure was against code from before those fixes
+landed same day. Genuine remaining flakiness on a busy CI runner, not
+a bug this sandbox can fix further.
+
+**New coverage**: all free lanes dry (`pagegaps.py` 0, `recognise.py
+--stuck` 0, `refill.py` nothing, `photo_gaps.py --shortlist` the same
+already-rejected Breda hit from earlier today). Checked
+`city_queue.py --next`: Milan, Brisbane, Alicante, Sintra and
+Taormina are confirmed-exhausted dead ends from today's earlier
+passes; Berlin looks genuinely unexhausted (546 unmined
+Naturdenkmale register rows with real species, plus 540 Wikidata
+candidates) and is worth a verify pass, but with the week down to
+roughly 143 shared minutes, chose not to gamble a 40+ minute dispatch
+that could get cut off mid-way, matching the call two earlier
+attempts already made today under the same constraint. Ran a full
+`npx astro build` (5596 pages, exit 0) and `scripts/qa.py` to confirm
+today's commits deploy cleanly.
+
+**FOR HIDDE, next chance you're at a keyboard**: Berlin's register is
+the best-supplied deepen target on the whole queue right now (real
+species names, not a bulk inventory like Brisbane's) — worth a verify
+pass once the week's budget resets.
+
 ## 2026-09-13 (continuation 21) - Photo viewing pass on 3 demand cities: 4 approved, 18 rejected; a real photo_hunt.py attribution bug fixed
 
 This attempt inherited a stopped-early window (60 min unspent, week at
