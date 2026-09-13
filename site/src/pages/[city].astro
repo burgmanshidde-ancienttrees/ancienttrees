@@ -135,6 +135,14 @@ const title = fitTitle([
   ...(ageHook ? agedTitles : []),
   `Ancient Trees in ${cityName}: ${one ? "One Remarkable Tree" : `${trees.length} Remarkable Trees`} Worth Visiting`,
   `Ancient Trees in ${cityName}: ${treesN} Worth Visiting`,
+  // A long place name (a national park, a German/Slovak compound name, an
+  // American "City, State") can burn the whole budget before any hook fits,
+  // and the fallback below this one carries neither a count nor an age. This
+  // candidate is `seeN`, already built above and far shorter than "Worth
+  // Visiting": it rescues 20 of the 21 places that fell all the way to the
+  // bare title (REVIEW.md 2026-09-13 NOTE). The one genuinely too long
+  // (Chapel Hill, North Carolina) still falls through honestly.
+  `Ancient Trees in ${cityName}: ${seeN}`,
   `Ancient Trees in ${cityName}`,
 ]);
 const description =
