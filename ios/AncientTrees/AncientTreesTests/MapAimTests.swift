@@ -217,3 +217,81 @@ struct TheGlobeOpensOverYourOwnTrees {
         #expect(nara.lat == japan.lat)
     }
 }
+
+/// STANDING IN FRONT OF IT IS A CLAIM ABOUT YOU, not about the camera.
+///
+/// Hidde, 2026-09-13, in Fukuoka, reading a card that told him he was standing
+/// in front of a cherry in Kyoto Gyoen: "dit moet je alleen suggereren als gps
+/// heel erg in de buurt is toch."
+///
+/// The 120 metre threshold was never the fault. The card measured from the
+/// map's centre, so panning to any tree on earth and waiting for it to be the
+/// only one in view made the app say you were in front of it and offer to tick
+/// it off, which writes a visit that never happened into the collection.
+struct YouAreOnlyInFrontOfATreeYouAreInFrontOf {
+
+    /// Built through the feed's own decoder, so this breaks the day its shape
+    /// does. Same approach as MyTreesTests.
+    private static func tree(_ id: String, _ lat: Double, _ lng: Double) -> Tree {
+        let json = """
+        {"id":"\(id)","name":"\(id)","species":"Cherry","age":null,
+         "age_min":null,"age_max":null,"lat":\(lat),"lng":\(lng),
+         "city":"Kyoto","city_slug":"kyoto","country":"Japan","neighbourhood":null,
+         "access":"","transport":null,"precision":"confirmed","best_time":null,
+         "peak":null,"story":"","how_to_recognise":null,"url":"","photo":null}
+        """
+        return try! JSONDecoder().decode(Tree.self, from: Data(json.utf8))
+    }
+
+    private static let kyotoGyoen = (lat: 35.0254, lng: 135.7621)
+    private static let fukuoka    = (lat: 33.5904, lng: 130.4017)
+
+    private func arrival(_ trees: [Tree], _ origin: (lat: Double, lng: Double),
+                         located: Bool = true) -> Tree? {
+        MapTab.arrival(among: trees, origin: origin, located: located, within: 0.12)
+    }
+
+    /// THE BUG, and the distance is 517 kilometres.
+    @Test func aTreeInAnotherCityIsNeverAnArrival() {
+        let cherry = Self.tree("kyo_020", Self.kyotoGyoen.lat, Self.kyotoGyoen.lng)
+        #expect(arrival([cherry], Self.fukuoka) == nil)
+    }
+
+    /// And it still works when you really are there.
+    @Test func standingAtItIsAnArrival() {
+        let cherry = Self.tree("kyo_020", Self.kyotoGyoen.lat, Self.kyotoGyoen.lng)
+        #expect(arrival([cherry], Self.kyotoGyoen)?.id == "kyo_020")
+        // 50 metres north, comfortably inside the 120.
+        #expect(arrival([cherry], (lat: Self.kyotoGyoen.lat + 0.00045,
+                                   lng: Self.kyotoGyoen.lng))?.id == "kyo_020")
+    }
+
+    /// A street away is not in front of it.
+    @Test func aCoupleOfHundredMetresIsNotArrival() {
+        let cherry = Self.tree("kyo_020", Self.kyotoGyoen.lat, Self.kyotoGyoen.lng)
+        // About 220 metres north.
+        #expect(arrival([cherry], (lat: Self.kyotoGyoen.lat + 0.002,
+                                   lng: Self.kyotoGyoen.lng)) == nil)
+    }
+
+    /// NO FIX, NO CLAIM. `origin` falls back to a remembered place and then to
+    /// Dam square, so without this the card comes back pointed at wherever the
+    /// phone was last the moment location is off.
+    @Test func withoutARealFixItSaysNothingAtAll() {
+        let cherry = Self.tree("kyo_020", Self.kyotoGyoen.lat, Self.kyotoGyoen.lng)
+        #expect(arrival([cherry], Self.kyotoGyoen, located: false) == nil)
+    }
+
+    /// Two in range, and it is the nearer one you are in front of.
+    @Test func theNearerOfTwoWins() {
+        let far  = Self.tree("kyo_021", Self.kyotoGyoen.lat + 0.0009, Self.kyotoGyoen.lng)
+        let near = Self.tree("kyo_022", Self.kyotoGyoen.lat + 0.0002, Self.kyotoGyoen.lng)
+        #expect(arrival([far, near], Self.kyotoGyoen)?.id == "kyo_022")
+        #expect(arrival([near, far], Self.kyotoGyoen)?.id == "kyo_022")
+    }
+
+    /// An empty catalogue is not a crash.
+    @Test func nothingNearbyIsSimplyNothing() {
+        #expect(arrival([], Self.kyotoGyoen) == nil)
+    }
+}
