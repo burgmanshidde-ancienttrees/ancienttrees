@@ -1,6 +1,54 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 26, previous attempt stopped after 40 min with 80 min unspent) - 3 submissions processed (1 real pin correction), Ottawa photo queue cleared (0 usable)
+
+Picked up per the resume checklist: no stale claims, `leads.py --ready`
+empty, `health.py` clear (RUNG 2). Went to Step 0b, submissions: 3
+unprocessed rows (102, 103, 104), all from the `a8ca51da` account,
+which `data/our-accounts.json` already identifies as Hidde's own.
+
+Submission 104 was a real correction: he moved the Baarn Cantonspark
+Dawn Redwood's pin (brn_001) 175m from its published, already-
+`approximate` position. Checked the arithmetic (haversine confirms
+~176m) and cross-checked against three "Watercypres" sightings held
+on 2026-09-08 as ambiguous between brn_001/brn_002/an unmapped
+specimen: the corrected spot sits ~34m from that earlier photo,
+inside the same cluster. Applied the move per the 2026-09-08 reader-
+correction rule, rewrote the address and recognise line (still said
+"main entrance" under the old pin), kept `location_precision`
+approximate since it now sits ~51m from brn_002 and the species-
+identity ambiguity was only narrowed, not resolved. Submissions 102
+and 103 were empty test rows (no name/why, one already logged as a
+bedroom-photo feature test); marked holds, no page action. Full
+detail in CURATION.md. Build (5621 pages) and qa.py (8708 pages) both
+clean before pushing.
+
+Then worked the ladder: rung 2 clear, rung 4/5 (`scout_next.py
+--target`, `city_queue.py --next`) all thin/already-documented dead
+ends from earlier passes today (Taormina, Ravenna, Trier, Niagara
+Falls, Ischia), rung 7 (`recognise.py --stuck`) at 0, rung 8
+(`pagegaps.py`) at 0. Ran `photo_hunt.py --recheck` (free API sweep,
+no tokens) since the shortlist was empty; it queued candidates for
+~30 photo-less trees. Looked at the pixels/metadata for the whole
+Ottawa batch it surfaced (5 trees, 18 candidate judgements): all
+rejected, wrong species (magnolias, a Tilia americana observation
+against a Tilia platyphyllos 'Vitifolia' tree) or wrong subject (a
+redbud memorial plaque misfiled as "Memorial Tree", a conifer avenue
+with no single collectible tree, two leaf-in-hand close-ups of the
+right species but not the tree). No usable photo, but recording the
+rejects stops a future sweep re-judging the same images.
+
+Stopping here rather than dispatching a new research pass: the week
+budget was at 4714/5000 minutes when this attempt started (286 min
+left, shared with Hidde's own usage), and every cheap rung on the
+ladder is genuinely exhausted for today, not just for this attempt,
+per the three earlier continuations' own dead-end findings. A fresh
+verify/write pass costs 70k-230k tokens for uncertain yield against a
+tight shared budget; two small, verified, real pieces of work (a
+location correction and an honest photo-queue cleanup) seemed the
+better use of what was left.
+
 ## 2026-09-13 (continuation 25) - BLOCKER answered: ageToken() was fabricating an age from a planting year
 
 While wrapping up the previous window, a fresh-eyes review landed
