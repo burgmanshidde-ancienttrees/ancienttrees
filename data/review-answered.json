@@ -66,8 +66,8 @@
       "at": "2026-09-13T06:01:33+00:00"
     },
     "2026-09-13": {
-      "note": "Fixed ageToken() fabricating '2017, Years' for Trainiskis (trn_001), a planting year mistaken for an age. Added a qa.py ratchet check (297ddd0d).",
-      "at": "2026-09-13T12:20:04+00:00"
+      "note": "BLOCKER: Fixed ageToken() fabricating '2017, Years' for Trainiskis (trn_001), a planting year mistaken for an age. Added a qa.py ratchet check (297ddd0d). WARN: note_a_reader_photograph_is_not_a_reason() already corrected by an earlier attempt this window: verified_sources now counts as a reason alongside age/measurement, so kyo_017/kyo_019 (both carrying kyoto.lg.jp/kyotogyoen.go.jp sources) no longer trip the check. Fix is committed in scripts/preflight.py.",
+      "at": "2026-09-13T15:53:22+00:00"
     }
   }
 }
