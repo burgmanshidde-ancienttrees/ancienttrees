@@ -7926,6 +7926,24 @@
         "note": "63 candidates viewed, 2 approved (prg_026, prg_030), 2 held (sgp_033, vlc_023 - ambiguous which of several similar trees), 59 rejected; free photo_hunt.py --recheck sweep supplied the candidates",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Venice, Venlo, Verona (4 photo-less trees, depth-allowed cities)",
+        "kind": "photo-judge",
+        "tokens": 34000,
+        "trees": 0,
+        "note": "7 candidates viewed, all rejected: 3 archival/aerial B&W (Venlo, no tree in frame), 1 building-dominated Venice palm photo (also reads as wrong Phoenix species), 3 Giardino Giusti cypress/fountain garden views rather than the yew and laurel wood; free photo_hunt.py --recheck sweep supplied the candidates",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Vienna (vie_018, vie_019, vie_020, vie_021, vie_022, vie_026, vie_027, vie_029, 8 photo-less trees, depth-allowed)",
+        "kind": "photo-judge",
+        "tokens": 71000,
+        "trees": 3,
+        "note": "30 candidates viewed, 3 approved (vie_026, vie_027, vie_029), 27 rejected; Rathauspark ND 566/567 pair settled by geotag distance (also answers vie_029 open verify_notes question), 14 Schonbrunn candidates were geosearch noise 750-800m from the pins, free photo_hunt.py --recheck sweep supplied the candidates",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
