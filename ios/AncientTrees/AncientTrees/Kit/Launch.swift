@@ -70,4 +70,15 @@ public enum Launch {
     /// The "is this the one" comparison, added 2026-09-07 on Hidde's sketch of
     /// the flow. Same reason as its three neighbours: it lives behind a camera.
     public static let collectCompare = ProcessInfo.processInfo.arguments.contains("-collect-compare")
+
+    /// The globe on My trees, which is drawn only for a collection that spans
+    /// two countries and therefore had never been photographed once: no
+    /// simulator can produce a signed-in account that has ticked trees off in
+    /// two countries. It shipped flat for however long it has existed and the
+    /// first person to see it was Hidde on his own phone (2026-09-13).
+    ///
+    /// Same reason as the four collect arguments above, and the same rule
+    /// CLAUDE.md states outright: a screen no argument can open is a screen
+    /// that ships unseen.
+    public static let globe = ProcessInfo.processInfo.arguments.contains("-globe")
 }

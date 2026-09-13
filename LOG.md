@@ -1,6 +1,51 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - My trees was never a globe, and nothing had ever looked at it
+
+Hidde photographed My trees: a flat map parked over central Asia with none of
+his trees on it. "Volgens mij moet dit een wereldbol zijn omdat ik in meerdere
+landen heb." Right on both counts, and there are two separate faults in that
+one picture.
+
+**It was Apple's map, so the globe branch WAS firing.** Worth establishing
+before changing anything, because the obvious reading is that the threshold
+failed. It did not: the continent label reads AZIE in Dutch, and our own style
+has no continent layer at all and asks for `name:latin`, so it can never print
+that. GlobeMap was on screen. It simply was not a globe.
+
+**MapKit will not draw a sphere in a standard configuration, at any altitude.**
+The file assumed "far enough out" was the condition and set the camera 26,000 km
+up. Apple's own forums say the opposite outright: MKMapRectWorld gives a
+spherical view under the FLYOVER configurations, and under Standard, Satellite,
+Hybrid and Muted Standard it "will zoom out the map only to a certain extent".
+So the camera was being clamped and the result was a flat world map, which is
+exactly what the screenshot shows. It is `MKImageryMapConfiguration(elevationStyle:
+.realistic)` now, the modern spelling of satellite flyover, which is also nearer
+the reference: Polarsteps' globe is a photographed Earth, not a road map.
+
+**And it opened on nowhere.** The camera aimed at the MEAN of his trees. This
+view exists only for collections that span countries, so it is almost always two
+clusters far apart, and the mean of two clusters is the empty space between
+them: the Netherlands plus Japan averages to about 102 E, which is western
+China. The median lands inside whichever cluster holds most of them.
+
+**The reason all of this shipped: no gate has ever seen this screen.** It needs
+a signed-in account whose collection spans two countries, which no simulator can
+produce, so GlobeMap appeared in no screen list, had no launch argument and was
+in no UI test. `-globe` forces the branch, exactly as `-collect-place` and
+`-collect-identify` do for the steps behind a camera, and the screen is in both
+lists now, so the sweep photographs it and the layout gate measures it. When it
+has no collection to draw it uses two dots, Amsterdam and Nara, because a forced
+globe with an empty collection photographs the projection and not the question.
+
+The aim is a pure function with five properties in MapAimTests, including the
+mean-versus-median one. The configuration is not arithmetic and cannot be unit
+tested; the next CI sweep photographs it, which is the point of the argument.
+
+Not verified on a phone: no Xcode here.
+
+
 ## 2026-09-13 - Every map page audited for the recentre bug, photographs vendored, and why the bundled catalogue lags
 
 Three things Hidde asked in one message.
