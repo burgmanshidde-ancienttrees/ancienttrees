@@ -1,6 +1,81 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 24) - A reader sighting cleared, and a photo viewing pass on 6 depth-allowed cities (3 approved, 42 rejected)
+
+Ran `visitors.py` (7-day: 844 visits, 1138 views, falling day over day
+through the week) and `prepare.py` (shelf already stocked, 49 files
+staged for verify, 0 ready to write, 2 verified-but-unpublished famous
+trees that earlier passes correctly recommended holding for a
+container that does not exist yet: Nanjing's Six-Dynasty Juniper and
+Fontenay Abbey's Plane).
+
+**Rung 1**: one reader sighting (`d0e24fa3`, flagged `mine`) had no
+verdict. Downloaded and looked at it: a bedroom, feet on a bed by a
+frosted window, no tree anywhere. Same pattern as earlier feature-test
+sightings in this file. Marked `not a tree`, committed (8c23a6bf,
+after fixing a JSON indent mistake in the same commit).
+
+**Rung 2**: `health.py` clean, 0 BLOCKER. **Rung 3**: REVIEW.md's one
+WARN (app "1 trees" grammar) was already fixed by an earlier pass
+today (confirmed at `Home.swift:720` via `treesLabel()`).
+
+**Rung 4/5**: checked `city_queue.py --next`, `scout_next.py --target`
+(BUILD, nothing to scout) and the staged register-candidate pile
+against LOG.md's own history first, per the "read this file's own
+history before researching a city" rule. Taormina (5 register
+candidates, unopened) is a documented dead end, all on the same hotel
+grounds, refused twice already (2026-08-31, 09-08). Brisbane's 558-row
+register is bare coordinates with no species/age, already flagged
+today as too thin per-candidate. `pagegaps.py` and `recognise.py
+--stuck` both zero. The week's shared usage budget stood at
+4753/5000 (later 4714/5000) minutes, and three earlier continuations
+today had already made the call not to fan out further verify/write
+work on marginal, unconfirmed yield with the budget this tight.
+
+**So this window went to the cheapest lane that was genuinely idle:
+photo judging on cities DATA.md's newest digest names as demand-cleared
+(10+ impressions in the last window), which ranks below new coverage
+but is real, low-risk, shippable work that nobody had touched today.**
+Ran `photo_hunt.py --recheck` first (free API sweep, a few new
+candidates on Amersfoort). Then `photo_fetch.py <city>` and looked at
+every downloaded image against the Cadiz standard before judging,
+across six cities: Arnhem, Brisbane, London, Prague, Berlin, Vienna.
+
+**3 approved:** lon_016 (The Great Plane of Brunswick Square, CC BY),
+lon_013 (The Dorchester Plane, CC BY-SA), vie_023 (The Plane of Dr.
+Karl Lueger-Platz, CC BY via iNaturalist, confirmed the same tree
+despite the observation's `Platanus orientalis` tag by checking its
+own coordinates: 4.5m from our pin).
+
+**42 rejected**, all recorded in `data/photo-queue.json` so nobody
+re-judges them: building facade reliefs and portrait plaques mistaken
+for tree photos on three separate Arnhem candidates (name-matching
+pulled in street-address artwork), Brisbane's Parliament House
+Christmas-tree photos and a tree frog and a memorial bamboo grove
+(wrong species) and a leaf macro (wrong species), Prague's tree-award
+ceremony portraits and an oak leaf held in a hand (species mismatch,
+Quercus shumardii vs our Quercus rubra), Berlin's own sign for the
+*former* title-holder of "Berlin's tallest tree" (the Burgsdorff
+Larch, which our own story already records fell in a storm in June
+2025; good confirmation that our story is right rather than a data
+error), three Caucasian Wingnut canopy/catkin close-ups with no trunk,
+and a rose garden with no oak in it. London's two winners came from
+the same fetch as three rejects (a street archway, a plaza, a
+cathedral view with the plane cropped to a corner).
+
+Logged the pass in `data/agent-costs.json` (kind `photo`, tokens 0
+since this was session work rather than a dispatched agent).
+`preflight.py` (598 cities, 0 problems), `npm run build` (5621 pages,
+3m57s) and `qa.py` (8708 pages, clean) all green. Committing this
+window's work now.
+
+No new dispatch beyond the photo pass: the week budget is real and
+three prior continuations today already spent it carefully. Reader
+submissions and the fast rungs are clear; the next run should recheck
+`city_queue.py --next` and the staged register pile fresh, since none
+of tonight's photo work touched that side of the ladder.
+
 ## 2026-09-13 - My trees was never a globe, and nothing had ever looked at it
 
 Hidde photographed My trees: a flat map parked over central Asia with none of
