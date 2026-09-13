@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -7835,6 +7835,24 @@
         "trees": 0,
         "note": "Sixth consecutive pass confirming register+named-specimen exhaustion; caught and discarded a search-summary fabrication (Capuchos ash/plane); no new tree cleared the bar",
         "wasted": 78000,
+        "brief_wrong": false
+      },
+      {
+        "target": "berlin",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 2,
+        "note": "Tiergarten Englischer Garten cluster: wingnut resolved via blog.inberlin.de (independent of the 2021 ordinance the register/wikidata/de.wikipedia all trace to), plus a newly-found non-register tree (Queen Elizabeth II 1965 oak) via two Tagesspiegel articles; rest of the cluster (Metasequoia, Libanon-Eiche, Silber-Linde, Flatter-Ulme, Japanischer Kuchenbaum, Stiel-Eiche, Robinia) stays single-sourced; one WebSearch-summary fabrication caught and discarded (a Flurstueck parcel number misread as a girth)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "berlin",
+        "kind": "write",
+        "tokens": 40000,
+        "trees": 2,
+        "note": "write pass on the 2 verified Berlin trees (ber_022 wingnut, ber_023 Queens Oak); small batch so per-tree cost is high; 1 best_time set, 2 recognition lines, German i18n overlay updated by hand in the main session afterward (title count 21->23, both trees translated)",
+        "wasted": 0,
         "brief_wrong": false
       }
     ]

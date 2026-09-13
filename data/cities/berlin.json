@@ -784,6 +784,78 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       }
+    },
+    {
+      "id": "ber_022",
+      "name": "The Englischer Garten Wingnut",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Grosser Tiergarten, Englischer Garten, near the Teehaus, Berlin",
+        "latitude": 52.517189,
+        "longitude": 13.347171,
+        "neighbourhood": "Tiergarten, Mitte"
+      },
+      "verified_sources": [
+        "berlin-naturdenkmale.json register_id 1-39/B (Land Berlin Naturdenkmal register, DL-DE-Zero 2.0)",
+        "https://blog.inberlin.de/2022/08/der-kaukasische-fluegelnussbaum-im-tiergarten/"
+      ],
+      "access": "Free, public park (Grosser Tiergarten)",
+      "transport": "Bellevue (S-Bahn), roughly 5-8 minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Berlin protected this tree in 1993 on two stated grounds, Eigenart und Schönheit, character and beauty, and recorded nothing else at all. No age, no girth, no planting date. Natural monument 1-39/B gives a species and a point in the Englischer Garten, and there the paperwork stops.\n\nThe species carries the rest. Pterocarya fraxinifolia comes from the Caucasus and northern Iran, where it grows in wet ground along rivers, which makes it an awkward fit for the drier planting beds of Berlin and explains why almost nothing else in the city looks like it. In midsummer it hangs chains of winged nutlets off the branch tips, half a metre long. Berlin's better known wingnut stands across the city on the shore of the Lietzensee, planted in 1927; by the account of the one Berlin writer who went looking for this one, in 2022, this is the bigger of the two, already tall and broad and still filling out.\n\nIt stands in good company. Ten more protected trees sit within about three hundred metres of it, the Tiergarten's giant sequoia among them, which is a dense run of natural monuments for the middle of a capital city.\n\nNobody has dated it, so nobody can honestly say what it has stood through. If you know when it went in, or you have had a tape around it, tell us.",
+      "how_to_recognise": "You can recognise it by the chains of winged nutlets it hangs in summer, half a metre of them at a branch tip. It is the tall, broad-crowned tree in the Englischer Garten a few steps from the white Teehaus.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "catkins",
+        "label": "July and August, when half-metre chains of winged nutlets hang from the branch tips"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_023",
+      "name": "The Queen's Oak of the Englischer Garten",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "planted 27 May 1965, roughly 61 years",
+      "age_min": 60,
+      "age_max": 62,
+      "girth_cm": null,
+      "location": {
+        "address": "Grosser Tiergarten, Englischer Garten, near the Teehaus and its pond, Berlin",
+        "latitude": 52.5172,
+        "longitude": 13.3478,
+        "neighbourhood": "Tiergarten, Mitte"
+      },
+      "verified_sources": [
+        "https://www.tagesspiegel.de/berlin/queen-in-berlin-majestaetisch-gewachsen/11953014.html",
+        "https://www.tagesspiegel.de/berlin/selbst-die-queen-pflanzte-eine-eiche-2136961.html"
+      ],
+      "access": "Free, public park (Grosser Tiergarten)",
+      "transport": "Bellevue (S-Bahn), roughly 5-8 minutes' walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Queen Elizabeth II planted this oak herself, on 27 May 1965, on her first visit to West Berlin. The sapling was reportedly raised from stock at Windsor Castle. Almost nothing else on this map arrives with its planter, its provenance and its exact date all written down.\n\nWhat she put in the ground was an American tree. Quercus rubra, the Northern Red Oak, is neither British nor German, and it has taken to the Tiergarten well: roughly twenty metres now, with a crown that has come up lopsided rather than round. It went into a divided city and has spent most of its life in a reunited one, which is more history than sixty-one years usually buys. By oak standards it is barely started.\n\nFinding it is the part that takes effort. Neither newspaper account gives a coordinate, and there is no register entry to fall back on, because this one was never listed as a natural monument. Both accounts put it near the white Teehaus, and the more recent is precise about the last few metres: to the right of the path, on the way down to the pond. That is as close as anyone has written it down, which is why the pin here points at the teahouse rather than at the trunk.\n\nNobody has taped its girth either. If you stand in front of it, tell us where you were standing.",
+      "how_to_recognise": "You can recognise it by the leaves, each lobe ending in a bristle where the Tiergarten's own oaks are rounded, and by a crown grown up lopsided on a twenty-metre tree. It stands right of the path from the white Teehaus down to the pond.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
