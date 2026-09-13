@@ -11,6 +11,43 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 - Alicante 19 -> 21: two press-corroborated pairs written up
+
+Write pass on the two verified trees the Alicante verify pass left in
+`data/research/alicante-verified.json`. Both are groups rather than single
+trunks, both rest on the same 2013 Diario Información survey of the city's
+biggest and oldest trees, and both carry `curation_status: flagged`.
+
+- **ali_020 The Centenary Elms of Panteón de Quijano** (Field Elm), the same
+  small fenced garden as the already-published ali_017 araucaria, which is why
+  `passcheck --pending` flagged it as a possible duplicate at 0 m. Checked by
+  hand: different species, different trees, one park-level coordinate, so it
+  ships as its own entry on `location_precision: approximate`, matching
+  ali_017. Honest gaps stated on the page rather than filled: nobody has
+  published how many elms stand here, no girth, no height, no register entry
+  of their own, and the page asks the reader for the count. Age is the
+  source's own language, nineteenth century and centenary, and is NOT derived
+  from the garden's own 1855-1857 build date, which is the bridge claim the
+  verify notes flagged. Last explicit confirmation of life is the 2013
+  article's account of the 1990 trunk-rot surgery, hence flagged.
+- **ali_021 The Silky Oaks of Passeig de Canalejas** (Grevillea robusta), two
+  Generalitat register entries (3070 and 3071) about 11 m apart, folded into
+  one entry on the twin rule, `confirmed` pin at the midpoint. The register's
+  two girths disagree by more than triple (1.05 m against 3.75 m) for a pair
+  the newspaper treats as matched; heights agree (19 m and 18 m). The story
+  says both figures and leaves the discrepancy unexplained rather than picking
+  a winner. No age derived from girth: the species grows fast, so the century
+  is the newspaper's word and nothing more. The paseo's 1886 design date is in
+  the prose as a fact about the promenade, explicitly not as a planting date.
+
+Neither tree gets a `best_time`: the field elm phenology file peaks at `nice`,
+and no species file exists for Grevillea robusta. Both photos `missing`, both
+free and open, both carry a `how_to_recognise` line. Spanish overlay written
+for both the same day (a short overlay refuses the whole build). Count
+promises fixed in the city intro, meta_description, question_context and the
+Spanish title. Build clean, `qa.py` clean (8,697 pages), `preflight.py` 598
+cities and 0 problems.
+
 ## 2026-09-13 - Gdansk 6 -> 12: the Park Oliwski dendrological cluster written up
 
 Write pass on the six verified trees the Gdansk verify pass left in

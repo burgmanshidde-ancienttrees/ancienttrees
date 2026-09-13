@@ -7863,6 +7863,15 @@
         "note": "write pass on the 6 verified Park Oliwski trees (gda_007-012), deepen 6 -> 12; stories, recognition lines rewritten into the reader-addressed shape, 3 best_time set (ginkgo, katsura, ivy-elm) and 3 deliberately left empty; 2 species common names harmonised to the canonical form (Katsura, Western Red Cedar) so the build does not see one species under two names; city intro, meta_description, question_meta and the free-to-visit FAQ all still promised six trees and were fixed (the intro overran Contract C's 100-word cap on the first edit and was cut back). Lawson Cypress lead left as a lead: its own note says it was never verified, and a write pass does not verify. Tokens are an estimate and are inflated well past the 15k-per-tree target by the pass running in the main agent harness, where the full CLAUDE.md system reminder (~25k) is resent on every turn; BRIEF_WRITING.md tells a write pass not to read that file at all, so dispatching this through the write-stories agent would have cost a fraction of it.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "alicante",
+        "kind": "write",
+        "tokens": 150000,
+        "trees": 2,
+        "note": "write pass on the 2 trees the Alicante verify pass left in alicante-verified.json (19 -> 21): ali_020 the Panteon de Quijano elms and ali_021 the Passeig de Canalejas silky oaks, both press-corroborated from the same 2013 Diario Informacion survey; the silky oaks' disagreeing register girths (1.05m vs 3.75m for a pair the paper calls twins) are stated as two facts and left unresolved; no best_time on either (field elm's own phenology file peaks at 'nice', no species file for Grevillea robusta); also wrote the Spanish overlay for both trees, which preflight refuses a short overlay for, and fixed the city's intro, meta_description, title and question_context count promises",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

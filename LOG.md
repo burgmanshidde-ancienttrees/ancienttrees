@@ -1,6 +1,37 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - Alicante 19 -> 21: the elms that the epidemic never reached
+
+Wrote the two verified trees the Alicante verify pass had left waiting and
+merged them in. Both are groups rather than single trunks, and both came out
+of the same 2013 Diario Información survey of the city's biggest and oldest
+trees, which is turning out to be the most productive source Alicante has.
+
+The elms of Plaza de Santa Teresa stand in the fenced Panteón de Quijano
+garden, sharing it with the monkey puzzle we already publish. Dutch elm
+disease took most of Europe's elms and, per that survey, never reached
+Alicante. What nearly finished these was rot: the city's gardening workshop
+school operated on the trunks in 1990 wearing masks, and the technician who
+ran that job was still pointing at the trees twenty-three years later.
+
+The silky oaks bookend the Canalejas fig alignment, and the interesting thing
+about them is a disagreement. The Generalitat's register lists the two as
+nearly the same height, 19 and 18 metres, and gives one a trunk 1.05 metres
+round and the other 3.75. Nothing explains the gap, so the page says both
+numbers and leaves it there rather than inventing a resolution.
+
+Honest gaps on the pages rather than papered over: nobody has published how
+many elms stand in that garden, so the page asks; neither tree has a
+photograph; neither gets a `best_time`, because the field elm's own phenology
+peaks at "nice" and Grevillea robusta has no species file at all.
+
+Spanish overlay written for both the same day, because a short overlay does
+not degrade one page, it refuses the whole build. Count promises fixed in the
+city intro, meta description, question context and the Spanish title. Build
+clean (5,610 pages), `qa.py` clean (8,697 pages), `preflight.py` 598 cities
+and 0 problems. Cost logged, claim released.
+
 ## 2026-09-13 - Gdansk 6 -> 12: the Park Oliwski cluster is now a walk
 
 Wrote the six verified trees the Gdansk verify pass had left waiting and
