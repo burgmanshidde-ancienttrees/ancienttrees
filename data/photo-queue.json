@@ -8248,7 +8248,9 @@
      "url": "https://commons.wikimedia.org/wiki/File:Pfaueninsel_Oak.jpg",
      "licence": "CC BY 4.0",
      "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:S.Makhin&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:",
-     "source": "wikidata/Q125772739"
+     "source": "wikidata/Q125772739",
+     "judged": "approve",
+     "verdict": "Already this tree's approved lead photograph (same Commons file), looked at again and it still holds: wide-crowned oak filling the frame, low limbs and trunk readable, in leaf, good light. Species checked (oak leaf and bark, register's Quercus petraea). Description checked (the wide-crowned oak north of the Wasservogelteich the story is built on). No change made to the city file."
     },
     {
      "title": "iNat obs 254903484 (Quercus petraea)",
@@ -8257,7 +8259,9 @@
      "licence": "CC BY-SA",
      "author": "(c) C. Oppermann, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "52.43385,13.1342333333"
+     "obs_location": "52.43385,13.1342333333",
+     "judged": "reject",
+     "verdict": "Winter twig close-up with three dead marcescent leaves; no tree readable at all."
     },
     {
      "title": "iNat obs 254903484 (Quercus petraea)",
@@ -8266,7 +8270,9 @@
      "licence": "CC BY-SA",
      "author": "(c) C. Oppermann, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "52.43385,13.1342333333"
+     "obs_location": "52.43385,13.1342333333",
+     "judged": "reject",
+     "verdict": "Same oak bare in winter under flat overcast light, trunk lost in scrub; the in-leaf frame already approved for this tree is better on every count."
     }
    ],
    "judged": "2026-08-08",
@@ -18027,7 +18033,9 @@
      "author": "Molgreen",
      "lat": 52.42811944,
      "lng": 13.121575,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2025-08-02 Category:Self-published work Category:Uploaded with Mobile/Android Category:Wirtshaus zur Pfaueninsel"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2025-08-02 Category:Self-published work Category:Uploaded with Mobile/Android Category:Wirtshaus zur Pfaueninsel",
+     "judged": "reject",
+     "verdict": "Duplicate row of the file already rejected here at index 0: trunk and Naturdenkmal tag fill the frame, crown not readable."
     }
    ]
   },
@@ -18045,7 +18053,9 @@
      "author": "Colin Smith on geo.hlipp.de",
      "lat": 52.43085,
      "lng": 13.12124,
-     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "A flower bed in Lenne's Rosengarten, no tree as subject and nothing showing a cut-leaf oak."
     }
    ]
   },
@@ -19693,7 +19703,9 @@
      "lat": 52.50689428,
      "lng": 13.28763518,
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
-     "source": "wikidata/Q125774026"
+     "source": "wikidata/Q125774026",
+     "judged": "reject",
+     "verdict": "Plane seen across the lake: crown readable, trunk hidden behind the reed bed, so it fails the crown-and-trunk half that the approved frame passes."
     },
     {
      "title": "File:Lietzensee, Berlin.jpg",
@@ -19703,7 +19715,9 @@
      "author": "Chris Danneffel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Lietzensee Category:Reichskriegsgericht Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:Lietzensee Category:Reichskriegsgericht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Lietzensee panorama with the lakeside restaurant and Funkhaus; no single tree is the subject."
     },
     {
      "title": "File:Lietzensee Gebäude Lietzenseeufer 10,11,14 Berlin-Charlottenburg.jpg",
@@ -19713,7 +19727,9 @@
      "author": "Singlespeedfahrer",
      "lat": 52.50709,
      "lng": 13.28649,
-     "cats": "Category:Berlin photographs taken on 2023-05-08 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Hotels in Berlin-Charlottenburg Category:Lietzensee Category:Lietzenseeufer (Berlin-Charlottenburg) Category:May 2023 in Berlin-Charlottenburg Category:Self-published work"
+     "cats": "Category:Berlin photographs taken on 2023-05-08 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Hotels in Berlin-Charlottenburg Category:Lietzensee Category:Lietzenseeufer (Berlin-Charlottenburg) Category:May 2023 in Berlin-Charlottenburg Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Apartment buildings across the water, no tree subject."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 01.jpg",
@@ -19723,7 +19739,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50749593,
      "lng": 13.28631167,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Plane off-centre and framed by neighbouring crowns, shot into the sun, trunk in deep shade."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 02.jpg",
@@ -19733,7 +19751,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50749895,
      "lng": 13.28632125,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same backlit wide view one step closer; the trunk is still a dark shape and other crowns take half the frame."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 03.jpg",
@@ -19743,7 +19763,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50750347,
      "lng": 13.28633563,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Park lawn view, the plane is one crown among several and has to be searched for."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 04.jpg",
@@ -19753,7 +19775,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50754173,
      "lng": 13.28668349,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Low wide-angle at the base: fine bark and root flare, crown cut off at the top edge."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 05.jpg",
@@ -19787,7 +19811,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50741999,
      "lng": 13.28670132,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Upward portrait with sun flare through the branches, top of the tree out of frame."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 08.jpg",
@@ -19797,7 +19823,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50741848,
      "lng": 13.28671954,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Upward portrait, crown clipped at the top edge; the approved frame of the same trunk reads better."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 09.jpg",
@@ -19807,7 +19835,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50743723,
      "lng": 13.28672295,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Close-up of the Naturdenkmal plaque on the bark, not a photograph of the tree."
     },
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 10.jpg",
@@ -19817,7 +19847,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same file as candidate 0, duplicate row, same verdict."
     }
    ]
   },
@@ -19848,7 +19880,9 @@
      "author": "Chris Danneffel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Lietzensee Category:Reichskriegsgericht Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:Lietzensee Category:Reichskriegsgericht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Lietzensee panorama with the restaurant, not the wingnut."
     },
     {
      "title": "File:Lietzensee Gebäude Lietzenseeufer 10,11,14 Berlin-Charlottenburg.jpg",
@@ -19858,7 +19892,9 @@
      "author": "Singlespeedfahrer",
      "lat": 52.50709,
      "lng": 13.28649,
-     "cats": "Category:Berlin photographs taken on 2023-05-08 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Hotels in Berlin-Charlottenburg Category:Lietzensee Category:Lietzenseeufer (Berlin-Charlottenburg) Category:May 2023 in Berlin-Charlottenburg Category:Self-published work"
+     "cats": "Category:Berlin photographs taken on 2023-05-08 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Hotels in Berlin-Charlottenburg Category:Lietzensee Category:Lietzenseeufer (Berlin-Charlottenburg) Category:May 2023 in Berlin-Charlottenburg Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Apartment buildings across the water, no tree subject."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 01.jpg",
@@ -19964,7 +20000,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50770973,
      "lng": 13.29089348,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wingnut buried in the surrounding foliage; neither crown shape nor trunk can be read out of the green."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 12.jpg",
@@ -19974,7 +20012,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same problem one step back: the tree cannot be separated from the undergrowth in front of it."
     }
    ]
   },
@@ -19993,7 +20033,9 @@
      "lat": 52.5242309,
      "lng": 13.29589966,
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work",
-     "source": "wikidata/Q125772701"
+     "source": "wikidata/Q125772701",
+     "judged": "reject",
+     "verdict": "Elm merges with the neighbouring crowns along the path; candidate 02 of the same shoot separates it cleanly."
     },
     {
      "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 01.jpg",
@@ -20003,7 +20045,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.52410091,
      "lng": 13.2961613,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same wide view with the tree sharing the frame and the crown clipped at the top."
     },
     {
      "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 02.jpg",
@@ -20013,7 +20057,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.52411979,
      "lng": 13.29611294,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Cadiz standard: the elm centred and unmistakably the subject, whole crown against blue sky with the ridged trunk readable to the ground, in leaf, daylight, well exposed, centre band all tree. Species checked (Ulmus laevis: elm crown, deeply ridged bark matching the trunk frames, leaf close-ups in the same shoot showing the asymmetric doubly serrate leaf). Description checked (register series names Flatter-Ulme at the southeastern corner of the Karpfenteich; pond edge and reed bed in frame, tree reads at about the recorded 21.5 m). Replaces the bark close-up as lead; that one moves to photos."
     },
     {
      "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 03.jpg",
@@ -20023,7 +20069,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.5242199,
      "lng": 13.29591394,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same shoot, tree pushed to the right with the path filling the foreground; 02 is the cleaner frame."
     },
     {
      "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 05.jpg",
@@ -20117,7 +20165,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Upward view of the bole, crown not readable."
     },
     {
      "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 13.jpg",
@@ -20127,7 +20177,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Upward view of the bole against the canopy, no whole tree and no ground."
     },
     {
      "title": "iNat obs 357238826 (Ulmus)",
@@ -20136,7 +20188,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "52.52413175,13.2946033333"
+     "obs_location": "52.52413175,13.2946033333",
+     "judged": "reject",
+     "verdict": "Leaf spray close-up on ivy; confirms the Ulmus foliage but is not a photograph of this tree."
     },
     {
      "title": "iNat obs 357238826 (Ulmus)",
@@ -20145,7 +20199,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "52.52413175,13.2946033333"
+     "obs_location": "52.52413175,13.2946033333",
+     "judged": "reject",
+     "verdict": "Single leaf close-up."
     }
    ]
   },
@@ -73476,6 +73532,16 @@
      "cats": "Category:Amerongen Category:CC-BY-SA-4.0 Category:Franco-Dutch War Category:François-Henri de Montmorency-Luxembourg Category:Photographs by Hans Muller Category:Self-published work",
      "judged": "reject",
      "verdict": "Historical/heraldic subject, not the tree."
+    },
+    {
+     "title": "File:Amerongen (61).JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Amerongen_%2861%29.JPG/960px-Amerongen_%2861%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Amerongen_(61).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Basvb",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Kasteel Amerongen Category:Netherlands photographs taken on 2011-10-09 Category:Rijksmonumenten with known IDs Category:Taken with Canon PowerShot G6"
     }
    ]
   },
@@ -73869,7 +73935,9 @@
      "author": "Roland.h.bueb",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Podbielski-Eiche im Olympiastadion Berlin Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Podbielski-Eiche im Olympiastadion Berlin Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same oak on the stadium forecourt but shot into a bright grey sky, the crown almost a silhouette and the colour flat; the approved frame is properly lit."
     },
     {
      "title": "File:Gedenktafel Olympischer Platz 4 (West) Die Podbielski Eiche.jpg",
@@ -96715,7 +96783,9 @@
      "licence": "CC BY",
      "author": "(c) Sascha Nunheim, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.595386894,13.2423934257"
+     "obs_location": "52.595386894,13.2423934257",
+     "judged": "reject",
+     "verdict": "A beech seedling on the forest floor, two leaves and a bud. Species right, tree wrong: this cannot be the 43 m beech."
     },
     {
      "title": "iNat obs 158903197 (Fagus sylvatica)",
@@ -96724,7 +96794,9 @@
      "licence": "CC BY",
      "author": "(c) Sascha Nunheim, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.595386894,13.2423934257"
+     "obs_location": "52.595386894,13.2423934257",
+     "judged": "reject",
+     "verdict": "Second frame of the same seedling; same reason."
     }
    ]
   },
@@ -99872,7 +99944,9 @@
      "lat": 52.5171769,
      "lng": 13.3475582,
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
-     "source": "wikidata/Q125772584"
+     "source": "wikidata/Q125772584",
+     "judged": "reject",
+     "verdict": "Same wingnut as the approved frame from a step back: crown complete but the trunks are cut at the bottom edge, so it is no improvement."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 01.jpg",
@@ -99882,7 +99956,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51718713,
      "lng": 13.34752796,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Looking up into the canopy with the support cables; no crown shape and no ground."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 02.jpg",
@@ -99892,7 +99968,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51719203,
      "lng": 13.34751802,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Canopy from below, trunks cropped, tree not readable as a whole."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 03.jpg",
@@ -99902,7 +99980,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.5171953,
      "lng": 13.3475114,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Canopy from below, same view one step over."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 04.jpg",
@@ -99912,7 +99992,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.5172002,
      "lng": 13.34750147,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Canopy from below, branch structure only."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 05.jpg",
@@ -99922,7 +100004,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51720183,
      "lng": 13.34749816,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Canopy from below, branch structure only."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 06.jpg",
@@ -99932,7 +100016,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51723062,
      "lng": 13.34749433,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Straight up into the crown, no trunk and no ground."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 07.jpg",
@@ -99942,7 +100028,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51724092,
      "lng": 13.34750069,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Straight up into the crown with the prop pole in frame."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 08.jpg",
@@ -99952,7 +100040,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51722607,
      "lng": 13.34745132,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Sibling frame of the approved photograph and weaker: the crown runs off the top edge and a neighbouring trunk takes the right third."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 09.jpg",
@@ -99974,7 +100064,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Dense green dome from below, trunk barely visible at the bottom edge."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten with snow 2025-02-14 04.jpg",
@@ -99984,7 +100076,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)",
+     "judged": "reject",
+     "verdict": "Bare in snow under a flat grey sky; a leafless crown against white reads as dormant and this tree already has a good in-leaf photograph."
     },
     {
      "title": "File:Von der Queen 1965 gepflanzte Amerikanische Roteiche im Großen Tiergarten in Berlin.jpg",
@@ -99994,7 +100088,9 @@
      "author": "Singlespeedfahrer",
      "lat": 52.51714,
      "lng": 13.34754,
-     "cats": "Category:Berlin photographs taken on 2022-09-10 Category:CC-Zero Category:Famous Quercus in Germany Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten Category:On OSM Category:Quercus in Berlin Category:Quercus rubra in Germany Category:Quercus rubra in the Northern Hemisphere in September Category:Self-published work Category:September 2022 in Berlin-Tiergarten Category:Trees in Berlin in September Category:Trees planted by Elizabeth II of the United Kingdom Category:Trees planted in 1965"
+     "cats": "Category:Berlin photographs taken on 2022-09-10 Category:CC-Zero Category:Famous Quercus in Germany Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten Category:On OSM Category:Quercus in Berlin Category:Quercus rubra in Germany Category:Quercus rubra in the Northern Hemisphere in September Category:Self-published work Category:September 2022 in Berlin-Tiergarten Category:Trees in Berlin in September Category:Trees planted by Elizabeth II of the United Kingdom Category:Trees planted in 1965",
+     "judged": "reject",
+     "verdict": "Wrong tree: this is the Queen's red oak by the Teehaus, already ber_023's approved photograph, not the wingnut."
     }
    ]
   },
@@ -100024,7 +100120,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51719203,
      "lng": 13.34751802,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: the Englischer Garten wingnut (ber_022), not the red oak, and a canopy-from-below frame at that."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 03.jpg",
@@ -100034,7 +100132,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.5171953,
      "lng": 13.3475114,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: wingnut canopy from below (ber_022)."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 04.jpg",
@@ -100044,7 +100144,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.5172002,
      "lng": 13.34750147,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: wingnut canopy from below (ber_022)."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 05.jpg",
@@ -100054,7 +100156,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51720183,
      "lng": 13.34749816,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: wingnut canopy from below (ber_022)."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 06.jpg",
@@ -100064,7 +100168,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51723062,
      "lng": 13.34749433,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: wingnut canopy from below (ber_022)."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 07.jpg",
@@ -100074,7 +100180,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51724092,
      "lng": 13.34750069,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: wingnut crown from below (ber_022)."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 08.jpg",
@@ -100084,7 +100192,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51722607,
      "lng": 13.34745132,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong tree: wingnut crown from below (ber_022)."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten 2024-05-09 10.jpg",
@@ -100106,7 +100216,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)",
+     "judged": "reject",
+     "verdict": "Wrong tree: the wingnut bare in snow (ber_022)."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten with snow 2025-02-14 06.jpg",
@@ -100116,7 +100228,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Großer Tiergarten with snow Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth 2025 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Großer Tiergarten, Englischer Garten Category:Photographs by Leonhard Lenz Category:Self-published work Category:Winter 2024-2025 in Mitte (district of Berlin)",
+     "judged": "reject",
+     "verdict": "Wrong tree: the wingnut bare in snow (ber_022)."
     },
     {
      "title": "File:Von der Queen 1965 gepflanzte Amerikanische Roteiche im Großen Tiergarten in Berlin.jpg",
@@ -100137,7 +100251,9 @@
      "licence": "CC BY",
      "author": "(c) Sascha Nunheim, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.5167252592,13.3487540537"
+     "obs_location": "52.5167252592,13.3487540537",
+     "judged": "reject",
+     "verdict": "Wrong tree and wrong species: an iNaturalist observation of Quercus libani about 80 m from our pin, bare in early spring."
     },
     {
      "title": "iNat obs 347302844 (Quercus libani)",
@@ -100146,7 +100262,9 @@
      "licence": "CC BY",
      "author": "(c) Sascha Nunheim, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.5167252592,13.3487540537"
+     "obs_location": "52.5167252592,13.3487540537",
+     "judged": "reject",
+     "verdict": "Bud and twig close-up from the same Quercus libani observation."
     },
     {
      "title": "iNat obs 23103766 (Quercus)",
@@ -100155,7 +100273,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "52.5165703623,13.3466066793"
+     "obs_location": "52.5165703623,13.3466066793",
+     "judged": "reject",
+     "verdict": "Oak in woodland about 85 m from our pin, identified only to genus, flat light, and the tree merges with the wood behind it; nothing in it says Quercus rubra."
     },
     {
      "title": "iNat obs 23103766 (Quercus)",
@@ -100164,7 +100284,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "52.5165703623,13.3466066793"
+     "obs_location": "52.5165703623,13.3466066793",
+     "judged": "reject",
+     "verdict": "Canopy from below against a white sky, no trunk and no tree shape."
     },
     {
      "title": "iNat obs 23103679 (Quercus robur)",
@@ -100173,7 +100295,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "52.5173499396,13.3473473042"
+     "obs_location": "52.5173499396,13.3473473042",
+     "judged": "reject",
+     "verdict": "Wrong species: this observation is Quercus robur, and its own leaf frame shows the blunt rounded lobes and auricled base of a pedunculate oak rather than the bristle-tipped lobes of our Northern Red Oak."
     },
     {
      "title": "iNat obs 23103679 (Quercus robur)",
@@ -100182,7 +100306,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "52.5173499396,13.3473473042"
+     "obs_location": "52.5173499396,13.3473473042",
+     "judged": "reject",
+     "verdict": "The leaf close-up that settles it: rounded lobes and auricled base, Quercus robur and not Quercus rubra."
     }
    ]
   },
