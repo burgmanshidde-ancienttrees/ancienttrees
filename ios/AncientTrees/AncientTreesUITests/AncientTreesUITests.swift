@@ -225,8 +225,9 @@ final class AncientTreesUITests: XCTestCase {
         // call, matching the newest-OS job (line ~215 of ios.yml); it is
         // written and cannot be pushed, this bot's token lacks `workflows`
         // permission on .github/workflows/* (reported to Hidde 2026-09-09,
-        // still open). Widening the margin here is the mitigation available
-        // without that permission. The bundled
+        // confirmed still blocked 2026-09-13). The ready-to-apply diff sits at
+        // drafts/ios-floor-retry.patch. Widening the margin here is the
+        // mitigation available without that permission. The bundled
         // ios/AncientTrees/AncientTrees/Data/trees.json already carries the
         // Beethoven Plane, so this never depends on the network.
         let app = launch(["-map", "-search=beethoven"])

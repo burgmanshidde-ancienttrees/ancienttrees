@@ -69,6 +69,17 @@ final class FlowWalk: XCTestCase {
     /// it appears. It deliberately does NOT assert: a missing button still
     /// fails on the next line, with the tap's own message and its screenshot,
     /// rather than being renamed here.
+    ///
+    /// Widening this further is NOT the fix: AncientTreesUITests.swift's own
+    /// search test carries the same flake, already widened to 45s, and still
+    /// failed at 45s on this exact date. The real fix is a retry flag on the
+    /// floor job's xcodebuild call (matching what ios.yml's "test" job already
+    /// carries, `-retry-tests-on-failure -test-iterations 2`), blocked since
+    /// 2026-09-09 on the bot token lacking `workflow` scope: confirmed again
+    /// 2026-09-13, a bare `git push` on that one line is refused outright.
+    /// The one-line diff sits ready to apply at drafts/ios-floor-retry.patch;
+    /// see that file's comment and LOG.md 2026-09-09/13 before spending more
+    /// time here.
     private static func tap(_ app: XCUIApplication, _ id: String) {
         let b = app.buttons[id].firstMatch
         _ = b.waitForExistence(timeout: 20)
