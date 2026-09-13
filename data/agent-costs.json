@@ -7972,6 +7972,13 @@
     "note": "4 stories + 4 recognition lines for the same deepen pass; no best_time set for any (no phenology file exists for metasequoia glyptostroboides, populus nigra, populus alba or acer monspessulanum)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "cagliari",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "deepen pass, all 8 unmined register candidates were exact-position duplicates or already-blocked; register effectively exhausted at 20km. Spent remainder on OSM access checks for 3 stuck leads, still unresolved."
    }
   ]
  }
