@@ -124,11 +124,14 @@ jobs:
               want="$(echo "$want" | xargs)"
               [ -z "$want" ] && continue
               echo "--- $want"
+              # SweepFrames brackets each screen with "<<<SWEEP <name> <WxH>"
+              # and "SWEEP>>>". Matching the name as its own field, so
+              # "tree" does not also print "own-tree" and "tree-nophoto".
               awk -v w="$want" '
-                index($0, "SCREEN") && index($0, w) { on=1; print; next }
-                on && index($0, "SCREEN") && !index($0, w) { on=0 }
+                $1 == "<<<SWEEP" && $2 == w { on=1; print; next }
+                $1 == "SWEEP>>>" { on=0 }
                 on { print }
-              ' "$f" | head -120
+              ' "$f" | head -200
             done
           done
 
