@@ -1,6 +1,26 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 31) - A new place: Gornja Stubica, Croatia, and the tree tied to Croatia's 1573 peasant revolt
+
+Same window, continuing after the Tallinn tree above. Checked the queue for
+the next-highest-ranked openable city: Zagreb's only candidate turned out to
+already be dead (an oak felled by a storm in May, already recorded), but the
+same leads file had a note pointing at a real find nearby that an August
+pass had left for later: **Gupčeva lipa**, a linden in Gornja Stubica in the
+Zagorje hills, which Croatian tradition ties to the peasant leader Matija
+Gubec gathering his followers there before the 1573 Peasant Revolt, one of
+the defining events in Croatian history.
+
+Verified it against two independent sources (a county nature-protection page
+and Croatian Wikipedia, both citing the same 2021 survey: 4.9m girth, 9m
+tall) and published it as its own place, **Gornja Stubica**, one tree, under
+the single-famous-tree rule: not a city with candidates to compare, a single
+tree somebody could plausibly travel for on its own. Age is stated honestly
+as a floor rather than a figure ("at least 450 years", from the 1573 date)
+since nobody has cored it. Build (5649 pages) and `qa.py` (8771 pages) both
+clean.
+
 ## 2026-09-13 (continuation 30, previous attempt in this window stopped after 21 min with 99 min unspent, shipped nothing) - Tallinn 8 -> 9: a linden row that may be older than the fortress it stands on
 
 Resume checklist first. `passcheck.py --claims` showed Tallinn standing
