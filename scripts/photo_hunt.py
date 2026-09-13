@@ -98,6 +98,27 @@ ASKS_RATHER_THAN_NAMES = ("credit line", "please", "thank you", "if you use",
                           "attribution is required", "when reusing", "in case of reuse")
 
 
+def _username_from_html(raw):
+    """The last resort: a Commons username buried in a profile link rather than
+    written as plain text anywhere in the field.
+
+    "I would appreciate being notified if you use my work outside Wikimedia"
+    is exactly this shape (Prague's Aktron, caught 2026-09-13 in a viewing
+    pass): Artist reads as a request, so _author falls through, and Attribution
+    is empty, so the fallback below is empty too. What survives is the href on
+    the "being notified" link itself, `Special:EmailUser/Aktron`, which _plain
+    already stripped away by the time either check runs. Read it from the RAW
+    HTML, before stripping, and only from a link that names a user one way or
+    another: EmailUser, User: or User_talk:."""
+    m = re.search(r"Special:EmailUser/([^\"'&/]+)", raw or "")
+    if not m:
+        m = re.search(r"User(?:_talk)?:([^\"'&/]+)", raw or "")
+    if not m:
+        return ""
+    import html as _html
+    return _html.unescape(urllib.parse.unquote(m.group(1))).replace("_", " ").strip()
+
+
 def _author(meta):
     """The photographer's name, which a BY licence obliges us to print.
 
@@ -113,14 +134,17 @@ def _author(meta):
     reliable enough to trust blindly: preflight still fails the build on a BY
     licence crediting nobody, and a viewing pass still reads what it approves.
     """
-    artist = _plain((meta.get("Artist") or {}).get("value", ""))
+    raw_artist = (meta.get("Artist") or {}).get("value", "")
+    artist = _plain(raw_artist)
     low = artist.lower()
     if artist and not any(p in low for p in ASKS_RATHER_THAN_NAMES):
         return artist
     fallback = _plain((meta.get("Attribution") or {}).get("value", ""))
     fallback = re.sub(r"^\W+", "", fallback)
     fallback = re.sub(r"\s*/\s*wikimedia commons\s*$", "", fallback, flags=re.I).strip()
-    return fallback or artist
+    if fallback:
+        return fallback
+    return _username_from_html(raw_artist) or artist
 
 
 def imageinfo(titles):

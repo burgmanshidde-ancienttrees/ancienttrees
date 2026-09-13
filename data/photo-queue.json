@@ -6224,7 +6224,9 @@
      "author": "Mojmir Churavy",
      "lat": 50.091444,
      "lng": 14.396668,
-     "cats": "Category:Aneta Langerová Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Maranatha Gospel Choir Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)"
+     "cats": "Category:Aneta Langerová Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Maranatha Gospel Choir Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)",
+     "judged": "reject",
+     "verdict": "filename match false positive: a choir performance, no tree visible"
     },
     {
      "title": "File:Monika Granja 90 Strom OH C.jpg",
@@ -6234,7 +6236,9 @@
      "author": "Mojmir Churavy",
      "lat": 50.091444,
      "lng": 14.396668,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Monika Granja Category:Personality rights warning Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Monika Granja Category:Personality rights warning Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)",
+     "judged": "reject",
+     "verdict": "filename match false positive: a portrait at an event, no tree visible"
     },
     {
      "title": "File:Monika Granja Martin Churavy 90 Strom OH A.jpg",
@@ -14004,14 +14008,18 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/20260418_Stadtpark_Vienna_02.jpg/960px-20260418_Stadtpark_Vienna_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:20260418_Stadtpark_Vienna_02.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Flocci Nivis"
+     "author": "Flocci Nivis",
+     "judged": "reject",
+     "verdict": "wide cityscape, tree not the subject"
     },
     {
      "title": "File:20260418 Stadtpark Vienna 03.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/20260418_Stadtpark_Vienna_03.jpg/960px-20260418_Stadtpark_Vienna_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:20260418_Stadtpark_Vienna_03.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Flocci Nivis"
+     "author": "Flocci Nivis",
+     "judged": "reject",
+     "verdict": "wide cityscape, hotel building dominates, tree not the subject"
     },
     {
      "title": "File:Young linden tree, tribute to Mihai Eminescu.jpg",
@@ -14676,14 +14684,18 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Wien_04_Resselpark_a.jpg/960px-Wien_04_Resselpark_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_a.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "judged": "reject",
+     "verdict": "wide plaza view, tree not identifiable as subject"
     },
     {
      "title": "File:Wien 04 Resselpark b.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Wien_04_Resselpark_b.jpg/960px-Wien_04_Resselpark_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_b.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "judged": "reject",
+     "verdict": "wide park view with people at a picnic table, tree not the subject"
     },
     {
      "title": "File:Wien 04 Resselpark d.jpg",
@@ -22719,7 +22731,9 @@
      "author": "Diego Delso",
      "lat": null,
      "lng": null,
-     "cats": "Category:2012 in Bavaria Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2012 Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012, DE-BY Category:Images from Wiki Loves Monuments 2012 in Germany Category:Images from Wiki Loves Monuments by User:Poco a poco Category:Images of Germany by User:Poco a poco Category:Justus von Liebig-Denkmal München Category:Photographs taken on 2012-04-30 Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images from Wiki Loves Monuments 2012 in Germany Category:Quality images from Wiki Loves Monuments by User:Poco a poco Category:Quality images of Germany by User:Poco a poco Category:Quality images of Munich Category:Quality images of cultural heritage monuments in Bavaria Category:Taken with Canon EOS 5D Mark II"
+     "cats": "Category:2012 in Bavaria Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2012 Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012, DE-BY Category:Images from Wiki Loves Monuments 2012 in Germany Category:Images from Wiki Loves Monuments by User:Poco a poco Category:Images of Germany by User:Poco a poco Category:Justus von Liebig-Denkmal München Category:Photographs taken on 2012-04-30 Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images from Wiki Loves Monuments 2012 in Germany Category:Quality images from Wiki Loves Monuments by User:Poco a poco Category:Quality images of Germany by User:Poco a poco Category:Quality images of Munich Category:Quality images of cultural heritage monuments in Bavaria Category:Taken with Canon EOS 5D Mark II",
+     "judged": "reject",
+     "verdict": "a statue, tree only as distant backdrop"
     },
     {
      "title": "File:Monumento a Justus von Liebig, Maximiliansplatz, Múnich, Alemania, 2012-04-30, DD 02.JPG",
@@ -22729,7 +22743,9 @@
      "author": "Diego Delso",
      "lat": null,
      "lng": null,
-     "cats": "Category:2012 in Bavaria Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2012 Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012, DE-BY Category:Images from Wiki Loves Monuments 2012 in Germany Category:Images from Wiki Loves Monuments by User:Poco a poco Category:Images of Germany by User:Poco a poco Category:Justus von Liebig-Denkmal München Category:Photographs taken on 2012-04-30 Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images from Wiki Loves Monuments 2012 in Germany Category:Quality images from Wiki Loves Monuments by User:Poco a poco Category:Quality images of Germany by User:Poco a poco Category:Quality images of Munich Category:Quality images of cultural heritage monuments in Bavaria Category:Taken with Canon EOS 5D Mark II"
+     "cats": "Category:2012 in Bavaria Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2012 Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012, DE-BY Category:Images from Wiki Loves Monuments 2012 in Germany Category:Images from Wiki Loves Monuments by User:Poco a poco Category:Images of Germany by User:Poco a poco Category:Justus von Liebig-Denkmal München Category:Photographs taken on 2012-04-30 Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images from Wiki Loves Monuments 2012 in Germany Category:Quality images from Wiki Loves Monuments by User:Poco a poco Category:Quality images of Germany by User:Poco a poco Category:Quality images of Munich Category:Quality images of cultural heritage monuments in Bavaria Category:Taken with Canon EOS 5D Mark II",
+     "judged": "reject",
+     "verdict": "a statue and stairway, tree only as distant backdrop"
     },
     {
      "title": "File:Monumento a Justus von Liebig, Maximiliansplatz, Múnich, Alemania, 2012-04-30, DD 03.JPG",
@@ -22804,7 +22820,9 @@
      "author": "Wikitarisch",
      "lat": 48.112778,
      "lng": 11.559008,
-     "cats": "Category:Brudermühlbrücke Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 11° E) Category:Flaucheranlagen (München) Category:Graffiti an der Brudermühlbrücke Category:Homeless people in Munich Category:Self-published work Category:Underpasses in Munich"
+     "cats": "Category:Brudermühlbrücke Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 11° E) Category:Flaucheranlagen (München) Category:Graffiti an der Brudermühlbrücke Category:Homeless people in Munich Category:Self-published work Category:Underpasses in Munich",
+     "judged": "reject",
+     "verdict": "a graffitied underpass with a homeless encampment, no tree visible"
     }
    ]
   },
@@ -26402,7 +26420,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Photographs by User:Rufus46 Category:Self-published work Category:St.-Anna-Platz 2 (München)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Photographs by User:Rufus46 Category:Self-published work Category:St.-Anna-Platz 2 (München)",
+     "judged": "reject",
+     "verdict": "a building facade detail, no tree visible"
     },
     {
      "title": "File:St.-Anna-Platz 2 Erker Muenchen-2.jpg",
@@ -26412,7 +26432,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Photographs by User:Rufus46 Category:Self-published work Category:St.-Anna-Platz 2 (München)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Photographs by User:Rufus46 Category:Self-published work Category:St.-Anna-Platz 2 (München)",
+     "judged": "reject",
+     "verdict": "a building facade detail, no tree visible"
     },
     {
      "title": "File:St.-Anna-Platz 2 Gedenktafel Lion Feuchtwanger Muenchen-1.jpg",
@@ -26615,7 +26637,9 @@
      "licence": "CC BY",
      "author": "(c) Ben Redding, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "48.1323555,11.589855"
+     "obs_location": "48.1323555,11.589855",
+     "judged": "reject",
+     "verdict": "night shot with flash and a person posing at the trunk, never a night shot per the photo standard"
     },
     {
      "title": "iNat obs 231754302 (Aesculus hippocastanum)",
@@ -26624,7 +26648,9 @@
      "licence": "CC BY",
      "author": "(c) Ben Redding, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "48.1323555,11.589855"
+     "obs_location": "48.1323555,11.589855",
+     "judged": "reject",
+     "verdict": "night shot, same observation, never a night shot per the photo standard"
     }
    ]
   },
@@ -26762,7 +26788,9 @@
      "author": "Ricardalovesmonuments",
      "lat": 48.188912,
      "lng": 11.617933,
-     "cats": "Category:Alt-Freimann Category:Buildings in Freimann Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 11° E) Category:Self-published work"
+     "cats": "Category:Alt-Freimann Category:Buildings in Freimann Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (48° N, 11° E) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a house facade, no tree visible"
     }
    ]
   },
@@ -28351,14 +28379,18 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/2018-09-30_AT_Wien_01_Innere_Stadt%2C_Dr.-Karl-Lueger-Platz_%2850956683996%29.jpg/960px-2018-09-30_AT_Wien_01_Innere_Stadt%2C_Dr.-Karl-Lueger-Platz_%2850956683996%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:2018-09-30_AT_Wien_01_Innere_Stadt,_Dr.-Karl-Lueger-Platz_(50956683996).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Paul Korecky"
+     "author": "Paul Korecky",
+     "judged": "reject",
+     "verdict": "statue and buildings dominate, trunk not visible"
     },
     {
      "title": "File:Wien - Luegerdenkmal, Dr.-Karl-Lueger-Platz.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Wien_-_Luegerdenkmal%2C_Dr.-Karl-Lueger-Platz.JPG/960px-Wien_-_Luegerdenkmal%2C_Dr.-Karl-Lueger-Platz.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_-_Luegerdenkmal,_Dr.-Karl-Lueger-Platz.JPG",
      "licence": "CC BY-SA 4.0",
-     "author": "C.Stadler/Bwag"
+     "author": "C.Stadler/Bwag",
+     "judged": "reject",
+     "verdict": "monument fills the foreground, trunk hidden behind it"
     },
     {
      "title": "File:Wien 01 Dr.-Karl-Lueger-Platz a.jpg",
@@ -97146,7 +97178,9 @@
      "lat": 50.0659256,
      "lng": 14.3548233,
      "cats": "Category:CC-BY-SA-3.0 Category:Dub letní v lesoparku Na Cibulkách Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Nikon D3100",
-     "source": "wikidata/Q26789523"
+     "source": "wikidata/Q26789523",
+     "judged": "approve",
+     "verdict": "Cadiz standard: trunk and crown both readable, daylight, in leaf, forest-park path setting matches the story"
     },
     {
      "title": "File:Jeep Willys M38 V Cibulkach Praha 5 Obr A.jpg",
@@ -97166,7 +97200,9 @@
      "author": "I would appreciate being notified if you use my work outside Wikimedia.\nMore of my work can be found in my personal gall",
      "lat": 50.06647822,
      "lng": 14.3546623,
-     "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:Dub letní v lesoparku Na Cibulkách Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Geocoded images of User:Aktron Category:License migration redundant Category:Self-published work"
+     "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:Dub letní v lesoparku Na Cibulkách Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Geocoded images of User:Aktron Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "backlit, weaker than the other candidate already approved for this tree"
     },
     {
      "title": "File:Praha, Košíře, Cibulka, strom II.JPG",
@@ -97285,7 +97321,9 @@
      "lat": 50.06596111,
      "lng": 14.35471111,
      "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:Dub s bizarním kmenem Na Cibulkách Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Geocoded images of User:Aktron Category:License migration redundant Category:Self-published work",
-     "source": "wikidata/Q26789785"
+     "source": "wikidata/Q26789785",
+     "judged": "approve",
+     "verdict": "Cadiz standard: full trunk and crown from below, daylight, in leaf, matches the register's coordinate at 77m"
     },
     {
      "title": "File:Praha, Košíře, Cibulka, strom II.JPG",
@@ -97413,7 +97451,9 @@
      "author": "I would appreciate being notified if you use my work outside Wikimedia.\nMore of my work can be found in my personal gall",
      "lat": 50.08041168,
      "lng": 14.33889091,
-     "cats": "Category:Buk lesní v Oboře Hvězda (spojovací pěšina) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Geocoded images of User:Aktron Category:Media by User:Aktron (converted from RAW) Category:Media by User:Aktron (panorama) Category:Taken with Canon EOS 500D"
+     "cats": "Category:Buk lesní v Oboře Hvězda (spojovací pěšina) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Geocoded images of User:Aktron Category:Media by User:Aktron (converted from RAW) Category:Media by User:Aktron (panorama) Category:Taken with Canon EOS 500D",
+     "judged": "approve",
+     "verdict": "Only candidate for this tree; register-designated tree in its own fenced plot, full crown and trunk, autumn colour"
     }
    ]
   },
@@ -97432,7 +97472,9 @@
      "lat": 50.08475833,
      "lng": 14.33505833,
      "cats": "Category:CC-BY-SA-2.5,2.0,1.0 Category:CC-BY-SA-3.0-migrated Category:Dub letní v Oboře Hvězda Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Geocoded images of User:Aktron Category:License migration redundant Category:Self-published work",
-     "source": "wikidata/Q26789209"
+     "source": "wikidata/Q26789209",
+     "judged": "approve",
+     "verdict": "Cadiz standard: whole tree in an open park setting, excellent light, sign visible confirming it is a marked/designated tree, 31m from pin"
     },
     {
      "title": "File:Praha, Liboc, Obora Hvězda, památný strom (Petřinská strana I).JPG",

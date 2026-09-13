@@ -1,6 +1,84 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 21) - Photo viewing pass on 3 demand cities: 4 approved, 18 rejected; a real photo_hunt.py attribution bug fixed
+
+This attempt inherited a stopped-early window (60 min unspent, week at
+4883/5000). `passcheck.py --claims` was clean and `leads.py --ready` was
+empty, so went to CLAUDE.md Step 0. Rung 1 (submissions/sightings) empty.
+Rung 2: the two things the session-start hook called broken (Walking
+routes, the iOS floor job) were both already investigated at length by the
+immediately preceding continuation 20 and correctly diagnosed (a git-push
+race that self-heals; a genuine iOS-18-only XCUITest flake needing an
+Xcode-verified fix this sandbox cannot blind-guess at) — nothing new to
+add, not re-litigated. REVIEW.md's one WARN ("1 trees" grammar) was
+already fixed upstream (ced016040). Rung 4 (new coverage): checked Milan
+and Florence, the two highest-ranked stage-2 cities with real register
+data; both turned out to be nearly exhausted on inspection (`passcheck.py
+--brief`), almost every nearby register row either already published or
+past the walkable radius. Brisbane's 186-row register is a bulk municipal
+inventory with no species or name per row, which is exactly the
+"semantic filter, never bulk import" case, not a cheap win. Recognition
+lines are at 0 missing across all 3092 trees (rung 7 backlog is zero).
+
+So: a photo viewing pass (rung 6), on `data/photo-queue.json`'s 1501 trees
+with queued unjudged candidates, weighted toward DATA.md's "Depth is
+allowed on these cities" roster. Fetched 2 candidates x 3 cities (Prague,
+Vienna, Munich, the three highest-impression cities with real queue
+depth) via `photo_fetch.py`, looked at all 22 images at the Cadiz
+standard myself (photo_light.py needs macOS's `sips`, unavailable here,
+so exposure was judged by eye). Verdicts applied with `photo_apply.py`:
+
+- **Approved 4, all in Prague**: prg_022 (Oak of Na Cibulkach Forest
+  Park), prg_023 (Oak with the Bizarre Trunk of Na Cibulkach), prg_025
+  (Oak of Libocka Gate, Hvezda), prg_024 (Beech of Brevnovska Gate,
+  Hvezda). All four are Czech-register "pamatny strom" (protected tree)
+  designation photographs, trunk and crown both readable, daylight, three
+  of four within 77m of our pin.
+- **Rejected 18**: 2 Prague candidates were filename false positives (a
+  choir performance and an event portrait, matched on an unrelated
+  Commons upload set sharing the word "Strom"), 1 was a weaker duplicate
+  angle of an already-approved tree. All 6 Vienna candidates failed the
+  Cadiz standard: wide cityscape/park views where the tree is not the
+  subject, or (Dr. Karl Lueger-Platz) the trunk hidden behind a monument
+  in the foreground. All 8 Munich candidates failed: a house facade, a
+  statue, a graffitied underpass, two building-facade details, and 2
+  night shots (one with a person posing at the trunk), against the "never
+  a night shot" rule. Vienna and Munich went 0 for 8 and 0 for 8, which
+  is the honest yield, not a target missed; the queue now will not
+  re-serve any of these 22.
+
+**Fixed a real bug in `photo_hunt.py`'s `_author()` while diagnosing why 3
+of the approved photos initially credited "I would appreciate being
+notified if you use my work..." as if it were a photographer's name.**
+Commons files this exact "notify me" sentence as the Artist field's
+visible text on files where the only actual name is inside an
+`<a href="//commons.wikimedia.org/wiki/Special:EmailUser/USERNAME">`
+link; `_plain()` strips that HTML before the request-detection check ever
+runs, so the existing Attribution-field fallback (added 2026-09-09/10 for
+the Polymagou case) had nothing to fall back to and returned the request
+sentence itself. Added `_username_from_html()`, a last-resort regex read
+of the RAW (pre-strip) Artist HTML for a `Special:EmailUser/` or `User:`
+link, used only when both the visible-text check and the Attribution
+fallback come up empty. Verified against the actual case (extracts
+"Aktron" correctly) and against the two existing cases in the docstring
+(a plain name, and the Polymagou Attribution-fallback case) to confirm
+neither regressed. This was already live in `data/photo-queue.json` as
+stale pre-fix data for however many other approvals may hit the same
+shape; not swept for others this session, worth a `clean_author`-style
+grep across existing `attribution` fields for "I would appreciate" if a
+future session has room.
+
+Build (5596 pages, 4m41s), `qa.py` (8683 pages, clean) and
+`preflight.py` (598 cities, 0 problems; standing NOTEs unrelated to this
+change) all clean. Verified all four new photos render with correct
+srcset in the built HTML. Left `scripts/_tmp_*.py` files from
+continuation 20's already-committed Alicante work untouched (harmless
+scratch, not staged); a future session may delete them.
+
+`run_health.py --week`: 4823/5000 at the start of this continuation, ~177
+minutes left. Logged cost.
+
 ## 2026-09-13 - Alicante 16 -> 19 (finished continuation 20's dispatch), Monkey Puzzle species page
 
 Continuation 20 (2026-09-12) had claimed Alicante and dispatched a verify
