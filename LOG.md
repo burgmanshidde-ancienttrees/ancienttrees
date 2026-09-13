@@ -1,6 +1,65 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - Night run 2026-09-13 15:03 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 90.1 minutes of its 120 minute window, 376 turns, 44 commands refused by the allowlist, ended clean (success). 4 tree(s) reached data/cities across 3 city file(s), and the run still wrote no log entry of its own.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-13 (continuation 28, previous attempt stopped after 50 min with 70 min unspent, shipped nothing) - Finished the standing Krakow verify claim: 34 -> 38 trees
+
+Followed the resume checklist. `passcheck.py --claims` showed one standing
+claim, Krakow (verify, by night-run, 146 min left on its 4-hour expiry, not
+yet expired) with nothing delivered to disk (`data/research/krakow-verified.json`
+did not exist). `leads.py --ready` was empty, so per the resume order the
+claim was the whole job rather than a side task before it.
+
+Dispatched a verify agent on Krakow rather than releasing the claim: the
+register candidates (155 GDOS entries, of 853 in the wider radius) were
+already fetched to disk from the earlier attempt, and the brief showed
+genuine species gaps against the 34 trees already live (no beech, no
+horse chestnut, no dawn redwood, no poplar, and the French Maple lead
+flagged in an earlier pass as blocked only for lacking a second source).
+It delivered 4 trees: kra_035 the Beliny-Prazmowskiego Dawn Redwood
+(Metasequoia glyptostroboides, age bounded by the species' own 1941
+rediscovery and ~1947-48 introduction to cultivation, so no more than
+about 75 years old however large it gets), kra_036 the Jordan Park Black
+Poplar (in Krakow's first public playground, 1889, the first of its kind
+in Europe), kra_037 the Serkowskiego Square White Poplar, and kra_038 the
+Westerplatte French Maple (the resolved lead: a lifeinkrakow.pl report on
+a 2025 public consultation supplied the missing second source; no
+girth or age found anywhere, left honestly empty and the page asks a
+reader with a tape measure). One new lead recorded unverified for a
+future pass, the St Salvator's churchyard cluster near Kopiec Kosciuszki
+(7 register trees, one elm at 457cm), not chased this pass per
+BRIEF_RESEARCH.md's stall-prevention rule after 4 candidates.
+
+A write-stories pass turned all 4 into 150-250 word stories plus
+recognition lines; it caught and declined an unconfirmed "mother tree"
+legend for kra_035 that only ever appeared in a search engine's own AI
+summary rather than any page actually fetched, and flagged that kra_038's
+drafted species string carried two common names ("French Maple / Montpellier
+Maple"), which would have broken species grouping under hard rule 9;
+fixed to "French Maple (Acer monspessulanum)" at merge, the only name
+used anywhere else in the corpus for this species (nowhere else, in fact,
+so this pass sets the canonical name).
+
+Merged into `data/cities/krakow.json`, ran `preflight.py krakow` (0 new
+problems; all the NOTEs printed are pre-existing and site-wide, none
+touch Krakow's new trees), built the site (5625 pages, clean), ran
+`qa.py` (8712 pages, links resolve, text clean), released the claim, and
+committed. Logged both passes to `data/agent-costs.json` (verify 203k
+tokens, write 120k tokens, 4 trees each; roughly 81k tokens/tree total,
+over the 15k target, mostly because this was a register-exhausted deepen
+pass rather than a fresh cluster).
+
+`leads.py --ready` still empty, no submissions, no sightings, health
+clear (the Smoke test / deploy "cancelled" entries in `gh run list` are
+just superseded-by-a-newer-push, not failures). Continued into the
+research workflow's Step 0 ladder from there rather than stopping with
+window time still unspent.
+
 ## 2026-09-13 (continuation 27, previous attempt stopped after 83 min with 37 min unspent, shipped nothing) - Picked up an orphaned photo pass, a title-budget fix, a preflight fix, and two more photo passes (Vienna 3 approved)
 
 Followed the resume checklist. No stale claims (`passcheck.py --claims`),
