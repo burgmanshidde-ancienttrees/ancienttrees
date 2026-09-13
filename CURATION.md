@@ -11,6 +11,44 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 30) - New place: Gornja Stubica (Croatia), the Gupčeva lipa, single-famous-tree exception
+
+With the Tallinn claim finished and released, `city_queue.py --next`'s
+OPENABLE-today list was checked for anything not already documented as thin
+today: Adelaide and Zagreb (#154/#173, one Wikidata candidate each) were the
+highest-ranked untouched options. Zagreb's one candidate, an oak nicknamed
+"Dedek" in Maksimir park, was already recorded blocked in
+`data/leads/zagreb.json`: it fell in a storm on 2026-05-16, confirmed by two
+Croatian news sources, and its clone saplings have not been replanted at the
+site. That same leads file had already flagged the real find and left a note
+for later: a second, unrelated Zagreb-area register row ("Lipa na
+Medvednici") turned out to be a false positive, a mountain peak not a tree,
+but the pass that caught it in August had also surfaced a genuine one nearby:
+**Gupčeva lipa**, a linden in Gornja Stubica, in the Zagorje hills, tied by
+Croatian tradition to Matija Gubec gathering his followers there before the
+1573 Peasant Revolt, one of the defining events of Croatian history. That
+pass had explicitly left it for "a future pass to evaluate as its own place."
+
+Verified it properly this pass. Two independent sources (Krapinsko-zagorska
+County's own nature-protection page and Croatian Wikipedia) agree on a 2021
+survey (4.90m girth, 9m height, no exact age) and the historical tradition;
+neither is in Croatia's own 12-entry national monument register. An OSM node
+tagged "Gupčeva lipa" matches the Wikidata coordinate within metres, so
+`location_precision: confirmed`. Age set honestly as a floor rather than a
+figure: "at least 450 years" (the 1573 anchor), flagged, no invented
+precision on top. Checked the execution detail in the story (Gubec crowned
+with red-hot iron, quartered, February 1573) against English Wikipedia and
+ExecutedToday.com before using it; both agree.
+
+Published as its own place, **Gornja Stubica**, one tree (`gst_001`), under
+the single-famous-tree exception of 2026-08-31 (would somebody travel
+specifically for this one tree, given a national historical association):
+Zagreb itself gets nothing added, since its only candidate is dead. Ran
+`city_names.py` (no English exonym, correctly). `preflight.py` (0 problems),
+`superlatives.py` (no crown conflicts), full build (5649 pages) and `qa.py`
+(8771 pages, links resolve, page reachable via the generated Croatia country
+page) all passed before committing.
+
 ## 2026-09-13 (continuation 29) - Finished the standing Tallinn verify claim: 8 -> 9 trees, the Skoone Bastion Lindens
 
 Followed the resume checklist: `passcheck.py --claims` showed Tallinn standing
