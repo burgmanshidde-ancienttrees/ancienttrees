@@ -11,6 +11,51 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 27) - Venice/Venlo/Verona photo hunts: dead ends documented; Vienna's Rathauspark trio completed
+
+Venice's ven_011 (Palm of San Servolo), Venlo's vnl_001 and vnl_007, and
+Verona's ver_006 (Yew and Laurel Wood of Giardino Giusti) all keep their
+honest photo gaps. Candidates from the free `photo_hunt.py --recheck`
+sweep: ven_011's one candidate is a good daylight photo but the San
+Servolo building facade owns the centre band, not the palm, and the
+crown shape reads as the wrong Phoenix species besides. vnl_001 and
+vnl_007's four candidates are all archival B&W or a 1944 aerial
+reconnaissance frame with no individual tree visible. ver_006's three
+candidates are all general Giardino Giusti views (the cypress avenue,
+the fountain parterre) rather than the yew and laurel wood the story
+names; none show a resolvable yew trunk or crown. All 7 recorded
+`judged`/rejected in `data/photo-queue.json` so a future sweep does not
+re-serve them.
+
+Vienna's Rathauspark now has photos of all three of its individually
+protected planes (Naturdenkmal 564/566/567, designated together in
+1973): vie_026 (ND 567) and vie_029 (ND 566) approved this pass, joining
+vie_006 (ND 564, already published). The two were previously
+indistinguishable in our own data past a register_id; a photographer's
+geotags (GuentherZ, two photos taken the same day, 2010-08-25) settled
+which pin is which within a metre-scale margin, and the resolution is
+now recorded in both trees' `verify_notes`. vie_027 (Plane of
+Hugelgasse) also got a photo, named for its own register address.
+vie_018, vie_019, vie_020, vie_021 and vie_022 keep honest gaps: 14 of
+their 21 rejected candidates were Schonbrunn palace geosearch noise
+750-800m from the actual pins (Commons' geosearch returns anything near
+a popular landmark, not photos of a specific tree), one was the wrong
+Natural Monument entirely (ND 179, the Japanese pagoda tree our own
+story already records as destroyed by war), and two right-tree
+candidates (Burggasse's elm) failed on `photo_light.py`'s exposure score
+under an overcast sky.
+
+Also: `note_a_reader_photograph_is_not_a_reason()` in preflight.py was
+firing a WARN on kyo_017/kyo_019 for lacking age+measurement despite
+both carrying their own city/park government source; refined the check
+to treat a verified source as a reason too, same as an age or a
+measurement, rather than flip it to a build-breaking FAIL on two
+legitimately-sourced trees. And 21 pages (long place names: national
+parks, German/Slovak compounds, American "City, State") were falling
+through to a bare "Ancient Trees in X" title with no count or age hook;
+added a compact fallback that rescues 20 of the 21 (Chapel Hill, North
+Carolina genuinely does not fit). Full detail in LOG.md.
+
 ## 2026-09-13 (continuation 3) - 3 submissions processed: 1 pin correction applied, 2 empty test rows
 
 Submission 104 (kind: correction, Baarn, brn_001 the Cantonspark Dawn
