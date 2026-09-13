@@ -152,3 +152,68 @@ struct TheRecentreControlRidesTheSheet {
         }
     }
 }
+
+/// WHERE THE GLOBE OPENS. Hidde, 2026-09-13, on a screenshot of My trees
+/// showing a flat map parked over central Asia: "de weergave van my trees gaat
+/// helemaal slecht, volgens mij moet dit een wereldbol zijn omdat ik in
+/// meerdere landen heb."
+///
+/// Two faults in that one picture. It was not a sphere, which is a
+/// configuration and is not arithmetic, so it is not tested here. And it was
+/// pointed at nowhere, which IS arithmetic: the opening centre was the MEAN of
+/// his trees, and this view exists precisely for collections made of two
+/// clusters far apart, whose mean is the empty space between them.
+struct TheGlobeOpensOverYourOwnTrees {
+
+    private let netherlands = (lat: 52.37, lng: 4.90)
+    private let japan = (lat: 34.68, lng: 135.83)
+
+    /// THE BUG. Most of the collection in Japan, a few trees at home, and the
+    /// mean lands in Kazakhstan with not one of his trees under it.
+    @Test func doesNotOpenOnTheEmptySpaceBetweenTwoCountries() {
+        let points = Array(repeating: japan, count: 20)
+            + Array(repeating: netherlands, count: 7)
+        let opening = GlobeMap.opening(for: points)
+        #expect(opening.lng == japan.lng)
+        // The mean of that collection is about 101 E, which is western China.
+        let mean = points.map(\.lng).reduce(0, +) / Double(points.count)
+        #expect(abs(mean - japan.lng) > 30)
+    }
+
+    /// And the other way round, because the median follows whichever cluster
+    /// actually holds the trees rather than a hardcoded preference.
+    @Test func followsWhicheverCountryHoldsMostOfThem() {
+        let points = Array(repeating: netherlands, count: 20)
+            + Array(repeating: japan, count: 7)
+        #expect(GlobeMap.opening(for: points).lng == netherlands.lng)
+    }
+
+    /// A pole fills the frame with ice and no trees, so the camera stays in the
+    /// band where the planet reads as a planet.
+    @Test func staysOutOfThePoles() {
+        #expect(GlobeMap.opening(for: [(lat: 78.2, lng: 15.6)]).lat == 35)
+        #expect(GlobeMap.opening(for: [(lat: -77.8, lng: 166.7)]).lat == -35)
+    }
+
+    /// An empty collection cannot reach the globe in the app, but -globe forces
+    /// it, so it still has to be somewhere rather than nowhere.
+    @Test func hasAnAnswerForNothingAtAll() {
+        let opening = GlobeMap.opening(for: [])
+        #expect(opening.lat == 20)
+        #expect(opening.lng == 0)
+    }
+
+    /// One tree is one tree: its longitude exactly, and its latitude held
+    /// inside the band, which for Amsterdam at 52 N means the clamp does the
+    /// work. That is deliberate and it is why the pole test above passes: the
+    /// globe looks at the planet, not straight down at where you stand.
+    @Test func opensOnTheOnlyTreeYouHave() {
+        let amsterdam = GlobeMap.opening(for: [netherlands])
+        #expect(amsterdam.lng == netherlands.lng)
+        #expect(amsterdam.lat == 35)
+
+        let nara = GlobeMap.opening(for: [japan])
+        #expect(nara.lng == japan.lng)
+        #expect(nara.lat == japan.lat)
+    }
+}
