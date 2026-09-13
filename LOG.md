@@ -40,6 +40,25 @@ floor-job retry-flag fix both need the `workflow` GitHub scope this bot's
 token does not have. Ready-to-apply, just needs a push from something with
 that permission.
 
+**Last thing this window:** ran `photo_hunt.py --recheck` (free API sweep,
+no tokens), which turned up fresh candidates for several photo-less
+Alicante trees among others. Looked at the pixels of all 9 new candidates
+across ali_001/002/004/011/013/017/021: 8 rejected (three matched to a
+generic palm-tree photo by loose filename matching, one a leaf/fruit
+close-up, two an unrelated backlit branch and trunk, three Ficus photos
+mismatched onto a Silky Oak entry), 1 held rather than approved (right
+species and a strong photo, but one of four near-identical figs in a
+tight grove our own text distinguishes only by girth, and the observation's
+GPS sits within noise distance of any of the four). Rebuilt, qa.py and
+preflight.py both clean, committed and pushed (d381beab; first push
+attempt hit a transient GitHub error, retried clean).
+
+Stopping here: `leads.py --ready` is empty, health is clear, the top of
+`city_queue.py --next` is documented dead ends, `pagegaps.py` and
+`recognise.py --stuck` are both at zero, and the one photo shortlist
+candidate plus the fresh recheck sweep are both worked through. Week
+budget at 4753/5000 minutes.
+
 ## 2026-09-13 (continuation) - Tokyo grows to 21, a reader photo published, two new Fukuoka submissions filed
 
 Continuation of the window below (14 min used before it, 91 min left when
