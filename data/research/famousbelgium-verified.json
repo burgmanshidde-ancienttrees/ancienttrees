@@ -1,0 +1,242 @@
+[
+ {
+  "id": "bnr_001",
+  "name": "Li Béni Hesse",
+  "species": "European Beech (Fagus sylvatica)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 715,
+  "location": {
+   "address": "Rural path south of Bonnerue village, Houffalize, Province de Luxembourg",
+   "latitude": 50.11194444,
+   "longitude": 5.72305556,
+   "neighbourhood": "Bonnerue (Houffalize)"
+  },
+  "verified_sources": [
+   "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique",
+   "https://lestetardsarboricoles.fr/wordpress/2023/12/08/li-beni-hesse-de-bonnerue-houffalize-belgique/"
+  ],
+  "access": "Free, on a public rural path leaving the village to the south; the trunk is ringed with barbed wire to protect it from damage, so viewing rather than touching.",
+  "transport": "Rural path out of Bonnerue village, Houffalize; no public transport stop nearby, reachable on foot from the village.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "One of the largest beeches in Belgium; girth measured 605cm (1977), 663cm (1996), 800cm at 1.50m (2007, per fr.wikipedia list of remarkable Belgian trees), then 715cm on a December 2023 visit after the southern part of the trunk partially collapsed (lestetardsarboricoles.fr, with photos confirming it standing and in leaf at that date, i.e. alive and recently observed). Height 17m as of 1996. Hollow trunk reportedly contains a cross placed before the French Revolution (undocumented tradition); local tradition says funeral processions from Bonnerue stopped here to bless the deceased en route to Vellereux cemetery, and the tree was pollarded historically. No age on record; not attempting a girth-based estimate given the trunk is damaged/partially collapsed, which would skew a growth-rate calculation. Currently one healthy northern section and a dying western branch per the 2023 account. Name \"Li Béni Hesse\" is Walloon for roughly \"the blessed beech\"."
+ },
+ {
+  "id": "xho_001",
+  "name": "Tilleul des Lognards",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 400,
+  "location": {
+   "address": "Grassy plateau between the village centre, Pierreux and the Bléron valley, Xhoris, Ferrières",
+   "latitude": 50.447824,
+   "longitude": 5.597218,
+   "neighbourhood": "Xhoris (Ferrières), Province de Liège"
+  },
+  "verified_sources": [
+   "https://fr.wikipedia.org/wiki/Tilleul_des_Lognards",
+   "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique"
+  ],
+  "access": "Free, open rural plateau; the GR571 long-distance trail passes nearby and it is a signed local point of interest with the Sainte-Barbe chapel beside it.",
+  "transport": "On foot from Xhoris village centre, on the GR571 trail; no public transport stop at the site.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Species basis: called simply 'tilleul' (lime) in every source; exact Tilia species not given, ask the reader. Girth 4m measured at 1.30m height in 2014. Planting date unknown; the French Wikipedia article itself says it may be very old but does not commit to a figure, so age_estimate left empty rather than invented. Listed on Wallonia's classified heritage register since 1965-11-05 (ref 61019-CLT-0010-01), classed 'arbre remarquable'. Folklore: was a nail tree, used to treat skin ailments and toothache by nailing a cloth to the bark to transfer the sickness to the tree. Site includes the tree, a Herman cross, the Sainte-Barbe chapel and a stele."
+ },
+ {
+  "id": "mac_001",
+  "name": "Tilleul de Macon",
+  "species": "Broad-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "about 310 years",
+  "age_min": 300,
+  "age_max": 320,
+  "girth_cm": null,
+  "location": {
+   "address": "Place Yvon Paul, Macon, south side of the church, Momignies",
+   "latitude": 50.05189,
+   "longitude": 4.20972,
+   "neighbourhood": "Macon (Momignies), Province de Hainaut"
+  },
+  "verified_sources": [
+   "https://fr.wikipedia.org/wiki/Tilleul_de_Macon",
+   "https://www.telesambre.be/info/sauvegarde-du-vieux-tilleul-de-macon/14312"
+  ],
+  "access": "Free, on the public village square beside the church.",
+  "transport": "In the centre of Macon village, on foot; no public transport stop at the site.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Planted in 1714 as a replacement for an earlier lime tree on the same spot documented back to the 15th century ('Besogne de Chimay', 1603); the 1714 date is the one to use for age since it is the standing specimen. Pruned every late autumn into three tiers of decreasing diameter (roughly 11m, then half that, then a terminal cluster to about 7-8m), held up by a wooden post-and-beam structure, eight outer posts plus four inner posts on stone footings, rebuilt in 1988. Classified as a protected monument since 1942-09-16 and listed as Walloon Region 'patrimoine exceptionnel' since 2016. Received soil decompaction and root-zone protection work in 2014. Télésambre (local TV news) ran a piece on preserving the tree, which is contemporary evidence it is alive and cared for. No girth given anywhere found; it reads as a pollarded/pleached specimen rather than a single measurable trunk, so girth_cm left empty rather than guessed."
+ },
+ {
+  "id": "cha_001",
+  "name": "Remarkable Lime of Chantemelle",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Place Saint-Michel, Chantemelle, Étalle",
+   "latitude": 49.653056,
+   "longitude": 5.651111,
+   "neighbourhood": "Chantemelle (Étalle), Province de Luxembourg"
+  },
+  "verified_sources": [
+   "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique",
+   "https://fr.wikipedia.org/wiki/Fichier:Tilleul_Place_Saint-Michel_%C3%A0_Chantemelle_commune_d%27Etalle.JPG"
+  ],
+  "access": "Free, on the public village square.",
+  "transport": "In the centre of Chantemelle village, on foot; no public transport stop at the site.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Species basis: called simply 'tilleul' (lime) in every source found; exact Tilia species not given, ask the reader. Listed on Wallonia's classified heritage register, ref 85009-CLT-0008-01, per the Commons file description (photographed 2012, still standing then). No age, girth or height found in the time available; named on the French Wikipedia list of remarkable Belgian trees but with no detail beyond location. Coordinates cross-checked between the lead's own GPS and the Commons photo's stated coordinates (49.653056, 5.651111), which match closely, supporting confirmed precision."
+ },
+ {
+  "id": "wrm_001",
+  "name": "Arbre de la Liberté (Waremme)",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "about 230 years",
+  "age_min": 225,
+  "age_max": 235,
+  "girth_cm": null,
+  "location": {
+   "address": "Avenue Edmond Leburton 6, Waremme, on the paved plaza in front of the Maison Lejeune-d'Anglure",
+   "latitude": 50.6976581,
+   "longitude": 5.257401,
+   "neighbourhood": "Waremme, Province de Liège"
+  },
+  "verified_sources": [
+   "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique",
+   "https://fr.wikipedia.org/wiki/Maison_Lejeune-d%27Anglure"
+  ],
+  "access": "Free, on a paved public plaza/street frontage; the tree stands in front of the house, not inside its private grounds.",
+  "transport": "In central Waremme, on foot from the town centre; no public transport stop at the site itself.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Species basis: called simply 'tilleul' (lime) in both sources; exact Tilia species not given, ask the reader. Planted 22 September 1797 as a tree of liberty marking the anniversary of the French Republic (Waremme and present-day Belgium were then under French rule). Stands on the paved place in front of the Maison Lejeune-d'Anglure, a neoclassical house built around 1790, classified heritage since 1987-08-25 (the house's classification, not necessarily the tree's). Coordinates are the building's, geocoded via OpenStreetMap Nominatim; the tree is described as being right in front of it on the street-facing plaza, so treating this as confirmed rather than approximate. No girth or height found."
+ },
+ {
+  "id": "gos_001",
+  "name": "Les Sept Frères de Gospinal",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "over 300 years",
+  "age_min": 300,
+  "age_max": 400,
+  "girth_cm": 767,
+  "location": {
+   "address": "Opposite the Gospinal forestry house, between Jalhay and Solwaster, near the Hautes Fagnes",
+   "latitude": 50.57611111,
+   "longitude": 5.94777778,
+   "neighbourhood": "Gospinal (Jalhay), Province de Liège"
+  },
+  "verified_sources": [
+   "https://www.etaamb.be/fr/document_n2012201787.html",
+   "https://lestetardsarboricoles.fr/wordpress/2022/01/08/les-sept-freres-de-gospinal-belgique/"
+  ],
+  "access": "Free, beside a public nature-walking trail near the Hautes Fagnes.",
+  "transport": "On a marked walking trail between Jalhay and Solwaster; no public transport stop at the site, reached on foot.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Originally a single trunk, cut back in the mid-18th century and regrown as seven trunks that fused into one body, the largest multi-trunk oak in Belgium. Girth 744cm per the official classification decree (Moniteur belge / etaamb.be, ministerial order 2012-02-27, classing it a protected monument), 767cm measured at 70cm height on a 2021 visit (lestetardsarboricoles.fr), consistent with roughly 1cm/year growth between the two readings, i.e. both sources agree it is alive and being actively measured. Height 26m. One of the seven trunks is now dead and others show old wounds; an on-site sign reads 'aged over 300 years, nearing the end of its life', but the 2021 visit describes the canopy as still vibrant, so delivering as alive but flagged given the sign's own warning. Local tradition: a 19th-century lawyer who owned the Gospinal estate held client consultations inside the tree, and it served as a meeting point for boundary discussions between the communes of Sart and Jalhay. Classified a remarkable tree in 1987 and a legal monument in 2012. Coordinates are the lead's own (photo-derived); marking approximate rather than confirmed since I could not independently verify the exact trunk position beyond 'opposite the forestry house'."
+ },
+ {
+  "id": "wdg_001",
+  "name": "Peace Oak of Wondelgem",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "about 105 years",
+  "age_min": 100,
+  "age_max": 110,
+  "girth_cm": null,
+  "location": {
+   "address": "Vroonstalledries, Wondelgem, between the Sint-Catharina parish church and the war memorial",
+   "latitude": 51.0888,
+   "longitude": 3.7123,
+   "neighbourhood": "Wondelgem, Gent"
+  },
+  "verified_sources": [
+   "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/300260",
+   "https://stad.gent/nl/groen-milieu/nieuws-evenementen/vroonstalledries-wondelgem-krijgt-grondige-opknapbeurt"
+  ],
+  "access": "Free, in a public park (Vroonstalledries).",
+  "transport": "In Wondelgem, Gent; reachable on foot/by bike within the Vroonstalledries park, De Lijn bus stops nearby on Wondelgemkouter.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Planted in 1920 as a peace tree between the Sint-Catharina parish church and the natural-stone WWI war memorial on the Vroonstalledries, per the Flemish heritage inventory (inventaris.onroerenderfgoed.be, which specifically identifies the species as Quercus rubra, correcting the genus-only 'Amerikaanse eik' name). Vroonstalledries has been a protected cultural-historical landscape since 1953-08-13. Stad Gent's own 2026 news item confirms the park (and its monumental trees, this one included) is being actively renovated with a heritage management plan approved by the Flemish Heritage Agency in 2023, which is recent evidence the tree is standing and being cared for. Coordinates are the church's location as a proxy (Nominatim); marking approximate since I do not have the tree's own pin, only 'between the church and the memorial'."
+ },
+ {
+  "id": "gvo_001",
+  "name": "Nagelboom van 's-Gravenvoeren",
+  "species": "White Horse Chestnut (Aesculus hippocastanum)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Heuvelke, at a crossing of two hollow roads, about 350m southwest of the Sint-Lambertuskerk, 's-Gravenvoeren, Voeren",
+   "latitude": 50.7577654,
+   "longitude": 5.7577933,
+   "neighbourhood": "'s-Gravenvoeren (Voeren), Province de Limbourg"
+  },
+  "verified_sources": [
+   "https://nl.wikipedia.org/wiki/Nagelboom_van_%27s-Gravenvoeren",
+   "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/132372"
+  ],
+  "access": "Free, on a public path/hollow road crossing (thought to follow the Roman road Via Mansuerisca).",
+  "transport": "On foot from 's-Gravenvoeren village, on a rural hollow-road crossing; no public transport stop at the site.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "A 'nail tree' (spijkerboom), a folk fetish tree: people rub a nail over a painful spot and hammer it into the dead wood to transfer the ailment to the tree, at least 80 counted nails. Part of the trunk (the back) has died back and that is where the nails are driven; the tree is described by both sources as declining, and a descendant/successor has already been planted nearby as a result, so flag accordingly, though the tree itself is still standing and was a finalist for European Tree of the Year per onroerenderfgoed.be's own news item, which is recent evidence of both its condition and continued existence. No age or girth found; the folklore and the designation are the story here, not a measurement. Coordinates are the Heuvelke road/track nearest the described crossing, approximate rather than the tree's own pin."
+ },
+ {
+  "id": "mas_001",
+  "name": "Dorpslinde van Massemen",
+  "species": "Broad-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "roughly 400 years",
+  "age_min": 378,
+  "age_max": 440,
+  "girth_cm": 719,
+  "location": {
+   "address": "Dorpsplein, Massemen, Wetteren",
+   "latitude": 50.98086,
+   "longitude": 3.87325,
+   "neighbourhood": "Massemen (Wetteren), Province de Flandre-Orientale"
+  },
+  "verified_sources": [
+   "https://www.wetteren.be/de-linde-op-het",
+   "https://www.vrt.be/vrtnws/nl/2016/10/10/dorpslinde_in_massemenisboomvanhetjaar2016-1-2789766/"
+  ],
+  "access": "Free, on the public village square.",
+  "transport": "In the centre of Massemen village, on foot; De Lijn buses serve Massemen.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Age estimate is dendrochronological, done by Ghent University in 2006: 378 to 440 years, i.e. planted in the second half of the 16th or start of the 17th century, which is a derived estimate from a real study rather than a guess. Circumference 719cm, height 12m (measured 2007). Protected as a monument and village landscape by ministerial decree 2001-02-01. Won the national 'Boom van het Jaar' (Tree of the Year) 2016 public vote, beating the Thousand-Year Oak of Lummen and the Summer Oak of Vollezele into second and third place, per VRT News (national broadcaster) and the municipality's own page, two clearly independent sources. Local school website also treats it as a village landmark, further corroborating it is a well-known, currently standing tree."
+ },
+ {
+  "id": "gpv_001",
+  "name": "Solitaire Plane of Prudens Van Duyseplein",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 449,
+  "location": {
+   "address": "Prudens Van Duyseplein, Gent",
+   "latitude": 51.0422969,
+   "longitude": 3.7218357,
+   "neighbourhood": "Gent (Kunstenkwartier/Muinkparkwijk)"
+  },
+  "verified_sources": [
+   "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/130010",
+   "https://www.monumentaltrees.com/nl/bel/oostvlaanderen/gent/926_prudensvanduyseplein/1653/"
+  ],
+  "access": "Free, centrepiece of a public square/roundabout.",
+  "transport": "Central Gent, on foot or by bike; De Lijn tram/bus stops nearby.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Girth grew from 426cm (2006) to 449cm (2013), both measured at 1.50m height, per the Flemish heritage inventory's own detail page; crown radius 11m, greatest crown diameter 28-29m, clear stem 7-8m. Protected as a monument since 2013-11-05, and the square itself has protected-townscape status since 1978-04-05. The square was laid out in 1883 around the tree ('a roundabout where five streets meet'); a web search summary separately claimed the tree itself was planted in 1700, but that figure does not appear on the inventory detail page or any other page actually fetched, so treating it as unconfirmed and NOT using it (search-summary-is-not-a-source rule) rather than reporting a precise planting date. age_estimate left empty accordingly. Described locally as 'the tree' of the square and a well-known local landmark (YouTube walk-through, local blog)."
+ }
+]
