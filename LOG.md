@@ -1,6 +1,20 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 33) - Belgrade 4 -> 5: a tavern-keeper's plane on a five-way Vračar corner
+
+Same window, continuing after Chiapa de Corzo below. Worked further down
+`famous_demand.py --gap`'s list: "Platan na Vračaru", a protected London
+Plane at Makenzijeva 73, Belgrade, sits 0.98km from the existing Cvetni Trg
+oak, so it deepens Belgrade rather than opening a new place. Belgrade's own
+green-space authority (Zelenilo-Beograd) puts it at roughly 170 years, 3.9m
+girth, 27m tall, protected as a natural monument since 2002; Serbian
+Wikipedia gives slightly different figures from the same 2002 order, and the
+discrepancy is recorded in `verify_notes` rather than silently resolved.
+Fixed two pre-existing Contract C/FAQ issues on the Belgrade page while
+adding the fifth tree (an over-length intro, a stale "all four"). Build
+(5653 pages) and `qa.py` (8780 pages) both clean.
+
 ## 2026-09-13 (continuation 32) - A new place: Chiapa de Corzo, Mexico, the tree the town was built around
 
 Same window, continuing after Gornja Stubica above. `city_queue.py --next`'s
