@@ -13318,6 +13318,57 @@
    ],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-09-13T13:33:17+00:00",
+   "date": "2026-09-13",
+   "run_id": "34758373772",
+   "minutes": 36.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 263,
+   "denials": 16,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(echo), Bash(env), Bash(for), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 3572960,
+   "claims_held": [
+    "milan",
+    "leiden"
+   ],
+   "commits": 12,
+   "cities_touched": 7,
+   "cities": [
+    {
+     "city": "berlin",
+     "trees": 0
+    },
+    {
+     "city": "krakow",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "singapore",
+     "trees": 0
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    },
+    {
+     "city": "valencia",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
