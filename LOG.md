@@ -72,6 +72,12 @@ left in the rolling seven days. Kept this pass to one bounded dispatch
 plus direct writing rather than opening further research, same reasoning
 as continuation 19/20's caution yesterday.
 
+Ran the free Commons API photo sweep (`photo_hunt.py --recheck`, no
+tokens, no agent) before stopping: 2570 trees swept, 1501 with at least
+one open-licence candidate queued, including 2 new candidates for
+ali_017. Left for a viewing pass to judge; this run did not look at
+pixels or approve anything.
+
 ## 2026-09-12 (continuation 20) - Rung 2 sweep on two workflows the session-start hook flagged; dispatched an Alicante verify pass
 
 Continuation 19's work (Zwolle 14 -> 16, releasing the dead Berlin claim) was
