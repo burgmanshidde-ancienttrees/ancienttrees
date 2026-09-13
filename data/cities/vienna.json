@@ -856,10 +856,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/329230142/medium.jpeg",
+        "license": "CC BY",
+        "attribution": "Flora_DUMO, via iNaturalist",
+        "status": "approved",
+        "width": 500,
+        "height": 375
       },
       "how_to_recognise": "You can recognise it by the trunk, 434 centimetres round on a tree planted in 1928. It stands on Dr. Karl Lueger-Platz, the only protected tree on the stretch of Ring between Stubentor and the Stadtpark."
     },

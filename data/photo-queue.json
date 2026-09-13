@@ -6098,7 +6098,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Juan Pablo Madriaga Núñez, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "50.0824344807,14.4097937644"
+     "obs_location": "50.0824344807,14.4097937644",
+     "judged": "reject",
+     "verdict": "leaf close-up, not a tree overview, and species mismatch (Quercus shumardii vs our Quercus rubra record)"
     },
     {
      "title": "iNat obs 393510828 (Quercus shumardii)",
@@ -6107,7 +6109,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Juan Pablo Madriaga Núñez, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "50.0824344807,14.4097937644"
+     "obs_location": "50.0824344807,14.4097937644",
+     "judged": "reject",
+     "verdict": "hand holding leaves, not a tree overview, and species mismatch (Quercus shumardii vs our Quercus rubra record)"
     }
    ]
   },
@@ -6206,7 +6210,9 @@
      "author": "Mojmir Churavy",
      "lat": 50.091444,
      "lng": 14.396668,
-     "cats": "Category:Anna Freimanová Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)"
+     "cats": "Category:Anna Freimanová Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)",
+     "judged": "reject",
+     "verdict": "portrait of a person at a microphone, no tree"
     },
     {
      "title": "File:Jana Vohralikova (1963) 90 Strom OH A.jpg",
@@ -6250,7 +6256,9 @@
      "author": "Mojmir Churavy",
      "lat": 50.091444,
      "lng": 14.396668,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Monika Granja Category:Personality rights warning Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Monika Granja Category:Personality rights warning Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)",
+     "judged": "reject",
+     "verdict": "award-ceremony portrait of two people, no tree in frame"
     },
     {
      "title": "File:Petr Eva Pavlovi 90 Strom OH D.jpg",
@@ -6260,7 +6268,9 @@
      "author": "Mojmir Churavy",
      "lat": 50.091444,
      "lng": 14.396668,
-     "cats": "Category:CC-Zero Category:Eva Pavlová in 2023 Category:Files with coordinates missing SDC location of creation Category:Petr Pavel in 2023 Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)"
+     "cats": "Category:CC-Zero Category:Eva Pavlová in 2023 Category:Files with coordinates missing SDC location of creation Category:Petr Pavel in 2023 Category:Self-published work Category:Strom Olgy Havlové (Jelení příkop, Pražský hrad)",
+     "judged": "reject",
+     "verdict": "group photo of people, no tree"
     },
     {
      "title": "File:Petr Pavel (1961) 90 Strom OH B.jpg",
@@ -8225,7 +8235,9 @@
      "author": "Colin Smith on geo.hlipp.de",
      "lat": 52.43085,
      "lng": 13.12124,
-     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "a flower garden, no oak tree in frame"
     }
    ]
   },
@@ -14042,7 +14054,9 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Young_linden_tree%2C_tribute_to_Mihai_Eminescu.jpg/960px-Young_linden_tree%2C_tribute_to_Mihai_Eminescu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Young_linden_tree,_tribute_to_Mihai_Eminescu.jpg",
      "licence": "CC0",
-     "author": "Texted"
+     "author": "Texted",
+     "judged": "reject",
+     "verdict": "a young memorial linden sapling, wrong species and wrong tree entirely for the Caucasian Wingnut"
     }
    ]
   },
@@ -14718,21 +14732,27 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wien_04_Resselpark_d.jpg/960px-Wien_04_Resselpark_d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_d.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "judged": "reject",
+     "verdict": "Karlskirche church is the subject, several trees present, cannot single out the named hazels"
     },
     {
      "title": "File:Wien 04 Resselpark l.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Wien_04_Resselpark_l.jpg/960px-Wien_04_Resselpark_l.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_l.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "judged": "reject",
+     "verdict": "a park entrance sign covered in graffiti, no tree identifiable"
     },
     {
      "title": "File:Wien 04 Resselpark m.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Wien_04_Resselpark_m.jpg/960px-Wien_04_Resselpark_m.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_m.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "judged": "reject",
+     "verdict": "Karlskirche church is the subject again, flower bed foreground, no single hazel identifiable"
     },
     {
      "title": "File:Wien 04 Resselpark o.jpg",
@@ -17066,7 +17086,9 @@
      "author": "Txllxt TxllxT",
      "lat": 51.514256,
      "lng": -0.097739,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:London photographs taken on 2011-06-20 Category:North facade of St. Paul's Cathedral Category:Photographs of London by Txllxt TxllxT Category:Self-published work Category:St. Paul's Cathedral in 2011 Category:St. Paul's Churchyard, London (street)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:London photographs taken on 2011-06-20 Category:North facade of St. Paul's Cathedral Category:Photographs of London by Txllxt TxllxT Category:Self-published work Category:St. Paul's Cathedral in 2011 Category:St. Paul's Churchyard, London (street)",
+     "judged": "reject",
+     "verdict": "St Paul's Cathedral is the subject, plane leaves only a fragment at the frame corner"
     },
     {
      "title": "File:London - St. Paul's Churchyard - View WSW along St Paul's Cathedral 1697 by Sir Christopher Wren - Night Watch Memorial for the volunteers who guarded St Paul during the Blitz 1939-45.jpg",
@@ -17098,7 +17120,9 @@
      "author": "John Salmon",
      "lat": 51.51474995,
      "lng": -0.09822273,
-     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Paternoster Square"
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Paternoster Square",
+     "judged": "reject",
+     "verdict": "a plaza with a column, no tree"
     },
     {
      "title": "File:Temple Bar, London - geograph.org.uk - 1286771.jpg",
@@ -17108,7 +17132,9 @@
      "author": "Peter Trimming",
      "lat": 51.51425,
      "lng": -0.098,
-     "cats": "Category:CC-BY-SA-2.0 Category:City of London photographs taken on 2009-05-04 Category:Images by Peter Trimming Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Temple Bar Gate in Paternoster Square"
+     "cats": "Category:CC-BY-SA-2.0 Category:City of London photographs taken on 2009-05-04 Category:Images by Peter Trimming Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Temple Bar Gate in Paternoster Square",
+     "judged": "reject",
+     "verdict": "Temple Bar archway, no tree"
     },
     {
      "title": "File:Temple Bar, London EC2 - geograph.org.uk - 1089199.jpg",
@@ -17167,7 +17193,9 @@
      "author": "Hopefully Acceptable Username",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London"
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus × hispanica in the United Kingdom Category:Self-published work Category:The Dorchester, London",
+     "judged": "approve",
+     "verdict": "single large plane tree fills the frame, crown and trunk both readable, in leaf, well lit, meets Cadiz standard"
     },
     {
      "title": "File:Dorchester Plane (2).jpg",
@@ -17289,7 +17317,9 @@
      "author": "Diliff",
      "lat": 51.522669,
      "lng": -0.152492,
-     "cats": "Category:CC-BY-SA-3.0 Category:Church benches in London Category:Featured pictures by User:Diliff Category:Featured pictures of churches in London Category:Featured pictures on Wikimedia Commons Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:GFDL Category:Interior of St Marylebone Marylebone Road Category:License migration redundant Category:London photographs taken on 2014-12-04 Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:Church benches in London Category:Featured pictures by User:Diliff Category:Featured pictures of churches in London Category:Featured pictures on Wikimedia Commons Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:GFDL Category:Interior of St Marylebone Marylebone Road Category:License migration redundant Category:London photographs taken on 2014-12-04 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "church interior, no tree"
     }
    ]
   },
@@ -17931,7 +17961,9 @@
      "lat": 52.42811944,
      "lng": 13.121575,
      "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2025-08-02 Category:Self-published work Category:Uploaded with Mobile/Android Category:Wirtshaus zur Pfaueninsel",
-     "source": "wikidata/Q60466460"
+     "source": "wikidata/Q60466460",
+     "judged": "reject",
+     "verdict": "trunk fills the frame with a Naturdenkmal plaque and a plausible lakeside setting, but the crown is not readable at all, fails the fills-frame-with-crown-and-trunk standard"
     },
     {
      "title": "File:20250802 xl 1516-Platane Forst Grunewald Jagen 100.jpg",
@@ -19038,7 +19070,9 @@
      "author": "Peter Trimming",
      "lat": 51.52392472,
      "lng": -0.12253505,
-     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Trees in the London Borough of Camden"
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Trees in the London Borough of Camden",
+     "judged": "reject",
+     "verdict": "a row of several similar plane trees, cannot single out which is the named tree; the approved candidate is clearly better"
     },
     {
      "title": "File:Colonnade, London WC1-geograph-1895584.jpg",
@@ -19048,7 +19082,9 @@
      "author": "Robin Sones",
      "lat": 51.52389,
      "lng": -0.1217,
-     "cats": "Category:CC-BY-SA-2.0 Category:Colonnade, London Category:Images by Robin Sones Category:Images from Geograph Britain and Ireland Category:Information field template with formatting"
+     "cats": "Category:CC-BY-SA-2.0 Category:Colonnade, London Category:Images by Robin Sones Category:Images from Geograph Britain and Ireland Category:Information field template with formatting",
+     "judged": "reject",
+     "verdict": "a street archway, no tree"
     },
     {
      "title": "File:James Matthew Barrie - Bernard Street London WC1N 1LN (Marchmont Association)(2).jpg",
@@ -19078,7 +19114,9 @@
      "author": "Matt Brown",
      "lat": 51.523889,
      "lng": -0.121789,
-     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Flickr images reviewed by FlickreviewR 2 Category:London photographs taken on 2024-10-20"
+     "cats": "Category:Brunswick Square, Bloomsbury Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Flickr images reviewed by FlickreviewR 2 Category:London photographs taken on 2024-10-20",
+     "judged": "approve",
+     "verdict": "single plane tree fills the frame, crown and gnarled trunk both readable through the hedge gap, in leaf, well lit, meets Cadiz standard"
     }
    ]
   },
@@ -19832,7 +19870,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50771634,
      "lng": 13.29088517,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "canopy/catkin close-up, no trunk or whole-tree shape readable"
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 07.jpg",
@@ -19842,7 +19882,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50771329,
      "lng": 13.29088901,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "canopy/catkin close-up, no trunk or whole-tree shape readable"
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 08.jpg",
@@ -19852,7 +19894,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.50771278,
      "lng": 13.29088965,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "canopy/catkin close-up, no trunk or whole-tree shape readable"
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 09.jpg",
@@ -28431,7 +28475,9 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wien_01_Dr.-Karl-Lueger-Platz_a.jpg/960px-Wien_01_Dr.-Karl-Lueger-Platz_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_01_Dr.-Karl-Lueger-Platz_a.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "judged": "reject",
+     "verdict": "the Lueger monument statue is the subject; the plane tree behind it is present but not the frame's subject, and the approved candidate is clearly better"
     },
     {
      "title": "iNat obs 188160740 (Platanus orientalis)",
@@ -28440,7 +28486,9 @@
      "licence": "CC BY",
      "author": "(c) Flora_DUMO, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "48.2076407008,16.3796179331"
+     "obs_location": "48.2076407008,16.3796179331",
+     "judged": "approve",
+     "verdict": "single plane tree fills most of the frame, crown and trunk area both visible, in leaf, well lit. iNat's Platanus orientalis tag is a common misID for the London Plane hybrid; the observation's own coo"
     }
    ]
   },
@@ -29421,7 +29469,9 @@
      "author": "Chris Olszewski",
      "lat": -27.475136,
      "lng": 153.027772,
-     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max"
+     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max",
+     "judged": "reject",
+     "verdict": "Parliament House with a decorated Christmas tree is the subject, the Cook Pine is a cropped fragment at the frame edge"
     },
     {
      "title": "File:Parliament House, Brisbane, Queensland with Christmas tree in 2019, 03.jpg",
@@ -29431,7 +29481,9 @@
      "author": "Kgbo",
      "lat": -27.475144,
      "lng": 153.027756,
-     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max"
+     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max",
+     "judged": "reject",
+     "verdict": "same building/Christmas-tree subject, no usable view of the Cook Pine"
     },
     {
      "title": "File:Parliament House, Brisbane, Queensland with Christmas tree in 2019, 04.jpg",
@@ -29441,7 +29493,9 @@
      "author": "Kgbo",
      "lat": -27.475114,
      "lng": 153.027756,
-     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max"
+     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max",
+     "judged": "reject",
+     "verdict": "same building/Christmas-tree subject, no usable view of the Cook Pine"
     },
     {
      "title": "iNat obs 248720536 (Araucaria cunninghamii)",
@@ -29700,7 +29754,9 @@
      "author": "Craig Franklin",
      "lat": -27.473931,
      "lng": 153.029862,
-     "cats": "Category:CC-BY-SA-3.0-AU Category:Ficus religiosa, City Botanic Gardens, Brisbane Category:Ficus religiosa (leaves) Category:Files with coordinates missing SDC location of creation Category:Photographs by Craig Franklin Category:Plant species in City Botanic Gardens, Brisbane Category:Supported by Wikimedia Australia Category:Taken with Canon Digital IXUS 130"
+     "cats": "Category:CC-BY-SA-3.0-AU Category:Ficus religiosa, City Botanic Gardens, Brisbane Category:Ficus religiosa (leaves) Category:Files with coordinates missing SDC location of creation Category:Photographs by Craig Franklin Category:Plant species in City Botanic Gardens, Brisbane Category:Supported by Wikimedia Australia Category:Taken with Canon Digital IXUS 130",
+     "judged": "reject",
+     "verdict": "extreme leaf close-up, wrong species (Ficus religiosa vs benjamina), fails the Cadiz standard regardless"
     },
     {
      "title": "File:Christmas tree at Abian Botanic Gardens, Brisbane, Queensland, 2019.jpg",
@@ -30622,7 +30678,9 @@
      "author": "Stu's Images",
      "lat": -27.478455,
      "lng": 153.030989,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Litoria fallax Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Litoria fallax Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a frog, not the mahogany tree"
     },
     {
      "title": "iNat obs 263647476 (Swietenia mahagoni)",
@@ -30694,7 +30752,9 @@
      "author": "Lenny K Photography from Sydney, Australia",
      "lat": -27.475762,
      "lng": 153.030038,
-     "cats": "Category:Brisbane Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2"
+     "cats": "Category:Brisbane Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "reject",
+     "verdict": "a memorial bamboo grove, wrong species entirely for the Tamarind Tree"
     }
    ]
   },
@@ -37416,7 +37476,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:1954 sculptures in the Netherlands Category:CC-BY-SA-4.0 Category:Cinemas in Arnhem Category:Files by User:FakirNL/Arnhem/Reliefs Category:John Grosman Category:Reliefs in Arnhem Category:Self-published work Category:Velperplein, Arnhem"
+     "cats": "Category:1954 sculptures in the Netherlands Category:CC-BY-SA-4.0 Category:Cinemas in Arnhem Category:Files by User:FakirNL/Arnhem/Reliefs Category:John Grosman Category:Reliefs in Arnhem Category:Self-published work Category:Velperplein, Arnhem",
+     "judged": "reject",
+     "verdict": "building facade relief sculpture, no tree in frame"
     },
     {
      "title": "File:Seems like a willow tree, onset of spring - panoramio.jpg",
@@ -42976,7 +43038,9 @@
      "author": "Kgbo",
      "lat": -27.475106,
      "lng": 153.027817,
-     "cats": "Category:Australia photographs taken on 2019-12-21 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:December 2019 in Brisbane Category:Files with coordinates missing SDC location of creation Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2019 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max"
+     "cats": "Category:Australia photographs taken on 2019-12-21 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:December 2019 in Brisbane Category:Files with coordinates missing SDC location of creation Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2019 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max",
+     "judged": "reject",
+     "verdict": "Parliament House is the subject; the Silky Oak is a partial, cropped tree at the frame edge, not the subject"
     },
     {
      "title": "File:Tree Botanic Garden - panoramio.jpg",
@@ -43161,7 +43225,9 @@
      "author": "Chris Olszewski",
      "lat": -27.442153,
      "lng": 153.047028,
-     "cats": "Category:Australia photographs taken on 2025-01-06 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:January 2025 in Brisbane Category:Photographs by Kgbo taken in 2025 Category:Photos by User:Kgbo Category:Royal Australian Navy Corvette Memorial Category:Self-published work Category:Taken with iPhone 15 Pro Max (main camera)"
+     "cats": "Category:Australia photographs taken on 2025-01-06 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:January 2025 in Brisbane Category:Photographs by Kgbo taken in 2025 Category:Photos by User:Kgbo Category:Royal Australian Navy Corvette Memorial Category:Self-published work Category:Taken with iPhone 15 Pro Max (main camera)",
+     "judged": "reject",
+     "verdict": "a brick memorial wall, no tree in frame"
     }
    ]
   },
@@ -64920,7 +64986,9 @@
      "author": "Basvb",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2010-05-04 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot G6 Category:Zijpendaalseweg 87, Arnhem"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2010-05-04 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot G6 Category:Zijpendaalseweg 87, Arnhem",
+     "judged": "reject",
+     "verdict": "street view of houses, no oak identifiable as subject"
     },
     {
      "title": "File:Beauty, this Pleurotus ostreatus (Oyster Mushroom, D= Austernseitling, NL= Gewone oesterzwam) at a Chestnuttree Arnhem - panoramio.jpg",
@@ -64940,7 +65008,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Poetry Category:Jan Hanlo Category:Self-published work Category:Wall poems in Arnhem Category:Zijpendaalseweg, Arnhem"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Poetry Category:Jan Hanlo Category:Self-published work Category:Wall poems in Arnhem Category:Zijpendaalseweg, Arnhem",
+     "judged": "reject",
+     "verdict": "wall plaque with poem text, small hedge shrub, not the oak"
     },
     {
      "title": "File:Glas-in-loodramen, Zijpendaalseweg 10, Arnhem.jpg",
@@ -65340,7 +65410,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:1956 sculptures in the Netherlands Category:2023 in Arnhem Category:Boulevard Heuvelink, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Reliefs Category:Mosaics in Arnhem Category:Netherlands photographs taken on 2023-08-09 Category:Pierre van Rossum Category:Self-published work"
+     "cats": "Category:1956 sculptures in the Netherlands Category:2023 in Arnhem Category:Boulevard Heuvelink, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Reliefs Category:Mosaics in Arnhem Category:Netherlands photographs taken on 2023-08-09 Category:Pierre van Rossum Category:Self-published work",
+     "judged": "reject",
+     "verdict": "wall mosaic artwork, no tree"
     },
     {
      "title": "File:Reliëf 'Vlijt' (1956) door Jac Maris, Boulevard Heuvelink 48, Arnhem.jpg",
@@ -65350,7 +65422,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:1913 sculptures in the Netherlands Category:2023 in Arnhem Category:Boulevard Heuvelink, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Reliefs Category:Jac Maris Category:Netherlands photographs taken on 2023-08-09 Category:Reliefs in Arnhem Category:Self-published work"
+     "cats": "Category:1913 sculptures in the Netherlands Category:2023 in Arnhem Category:Boulevard Heuvelink, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Reliefs Category:Jac Maris Category:Netherlands photographs taken on 2023-08-09 Category:Reliefs in Arnhem Category:Self-published work",
+     "judged": "reject",
+     "verdict": "bronze relief sculpture on wall, no tree"
     },
     {
      "title": "File:Reliëf mr. baron B.P. van Verschuer (1913) door Cornelis Beets, Boulevard Heuvelink 48, Arnhem.jpg",
@@ -65360,7 +65434,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:1913 sculptures in the Netherlands Category:2023 in Arnhem Category:Boulevard Heuvelink, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Reliefs Category:Netherlands photographs taken on 2023-08-09 Category:Reliefs in Arnhem Category:Self-published work Category:Verschuer family Category:Works by Cornelis Beets"
+     "cats": "Category:1913 sculptures in the Netherlands Category:2023 in Arnhem Category:Boulevard Heuvelink, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Reliefs Category:Netherlands photographs taken on 2023-08-09 Category:Reliefs in Arnhem Category:Self-published work Category:Verschuer family Category:Works by Cornelis Beets",
+     "judged": "reject",
+     "verdict": "portrait relief plaque, no tree"
     },
     {
      "title": "File:Sculptuur 'Rode haan' (1952) door John Grosman, Boulevard Heuvelink 152, Arnhem.jpg",
@@ -65395,7 +65471,9 @@
      "author": "Michielverbeek",
      "lat": 51.98805556,
      "lng": 5.92888889,
-     "cats": "Category:2024 in Arnhem Category:CC-BY-4.0 Category:Enka Arnhem Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Netherlands photographs taken on 2024-07-29 Category:Quality images Category:Quality images missing SDC depicts Category:Quality images of Gelderland Category:Schools in Arnhem Category:Self-published work Category:Velperweg, Arnhem"
+     "cats": "Category:2024 in Arnhem Category:CC-BY-4.0 Category:Enka Arnhem Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Netherlands photographs taken on 2024-07-29 Category:Quality images Category:Quality images missing SDC depicts Category:Quality images of Gelderland Category:Schools in Arnhem Category:Self-published work Category:Velperweg, Arnhem",
+     "judged": "reject",
+     "verdict": "office tower is the subject, ordinary street trees in front not identifiable as the named copper beech"
     },
     {
      "title": "File:Arnhem, kantoorgebouw ING aan de Velperweg foto14 2015-12-30 11.19.jpg",
@@ -65405,7 +65483,9 @@
      "author": "Michielverbeek",
      "lat": 51.9875,
      "lng": 5.9275,
-     "cats": "Category:2015 in Arnhem Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:ING Arnhem Category:Netherlands photographs taken on 2015-12-30 Category:Office buildings in Arnhem Category:Quality images Category:Quality images of buildings in Gelderland Category:Quality images of office buildings in the Netherlands Category:Self-published work Category:Velperweg, Arnhem"
+     "cats": "Category:2015 in Arnhem Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:ING Arnhem Category:Netherlands photographs taken on 2015-12-30 Category:Office buildings in Arnhem Category:Quality images Category:Quality images of buildings in Gelderland Category:Quality images of office buildings in the Netherlands Category:Self-published work Category:Velperweg, Arnhem",
+     "judged": "reject",
+     "verdict": "office building is the subject, bare street trees in frame not identifiable as the named copper beech"
     },
     {
      "title": "File:Arnhem-Velperweg Noord, kruising Rosendaalseweg-Raapopseweg foto3 2015-12-30 11.51.jpg",
@@ -73177,16 +73257,6 @@
      "cats": "Category:Amerongen Category:CC-BY-SA-4.0 Category:Franco-Dutch War Category:François-Henri de Montmorency-Luxembourg Category:Photographs by Hans Muller Category:Self-published work",
      "judged": "reject",
      "verdict": "Historical/heraldic subject, not the tree."
-    },
-    {
-     "title": "File:Amerongen (61).JPG",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Amerongen_%2861%29.JPG/960px-Amerongen_%2861%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Amerongen_(61).JPG",
-     "licence": "CC BY-SA 3.0",
-     "author": "Basvb",
-     "lat": null,
-     "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Kasteel Amerongen Category:Netherlands photographs taken on 2011-10-09 Category:Rijksmonumenten with known IDs Category:Taken with Canon PowerShot G6"
     }
    ]
   },
@@ -96333,7 +96403,9 @@
      "author": "OTFW, Berlin",
      "lat": 52.59527778,
      "lng": 13.24333333,
-     "cats": "Category:Burgsdorff-Lärche Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Landschaftsschutzgebiet Tegeler Forst (südlicher Teil) Category:License migration redundant Category:Plaques in Berlin-Tegel Category:Self-published work"
+     "cats": "Category:Burgsdorff-Lärche Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Landschaftsschutzgebiet Tegeler Forst (südlicher Teil) Category:License migration redundant Category:Plaques in Berlin-Tegel Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the sign for the FORMER title-holder, the Burgsdorff Larch (planted 1795, fallen June 2025 per our own story); wrong tree, not the beech"
     },
     {
      "title": "File:Hoechster Baum Berlins (Berlin's Tallest Tree) - geo.hlipp.de - 32753.jpg",
@@ -96367,7 +96439,9 @@
      "author": "OTFW, Berlin",
      "lat": 52.59527778,
      "lng": 13.24333333,
-     "cats": "Category:Burgsdorff-Lärche Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Landschaftsschutzgebiet Tegeler Forst (südlicher Teil) Category:License migration redundant Category:Self-published work"
+     "cats": "Category:Burgsdorff-Lärche Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Landschaftsschutzgebiet Tegeler Forst (südlicher Teil) Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "trunk of the former title-holder larch, not our European Beech; species mismatch confirms wrong tree"
     },
     {
      "title": "iNat obs 158903197 (Fagus sylvatica)",
