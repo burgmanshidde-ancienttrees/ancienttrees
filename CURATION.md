@@ -11,6 +11,32 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 2) - Breda's bre_010 photo hunt: dead end, documented
+
+`photo_gaps.py --shortlist` printed one candidate for The Plane of
+Valkenberg's Edge (bre_010, no photo). Looked at the pixels of all three
+candidates in its queue entry: "Gevallen blad van een boom in het gras.jpg"
+is a single fallen leaf on grass, no tree in frame at all (and categorised
+as maple, while bre_010 is a London Plane); the other two ("Lake-Valkenberg-
+Breda.jpg", "Stadspark-Valkenberg-Breda.jpg") are wide park/canal views
+already rejected once for the neighbouring bre_003 on 2026-08-13 for the
+same reason, no single tree identifiable as the subject. All three recorded
+`judged`/rejected in `data/photo-queue.json` so a future sweep does not
+re-serve them. Photo-less gap stays honest and open; the other 260
+photo-less published cities have not cleared the five-tree threshold that
+makes them eligible for this rung.
+
+Also checked Taormina, Ravenna, Trier and Niagara Falls against
+`city_queue.py --next`'s "openable today" list for new coverage: all four
+are documented dead ends or too thin to open. Taormina's five register
+trees are all blocked on access (same hotel grounds, already recorded
+2026-08-31/2026-09-08). Ravenna and Niagara Falls have only one in-town
+register/wikidata candidate each, the rest 15+ km away. Trier's nine
+"nearby" register rows are all Luxembourg entries 10-20 km distant, not
+Trier supply. None cleared the four-tree floor's worth of real, walkable
+candidates. `scout_next.py --target` confirms nothing left to scout this
+window either (BUILD, not SCOUT, and nothing left at the top to build from).
+
 ## 2026-09-13 (continuation) - Tokyo 17 -> 21, kyo_017 gets its first photo
 
 Finished a standing verify claim on Tokyo: 4 trees added (tok_018 The Great
