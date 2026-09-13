@@ -1,6 +1,47 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 30, previous attempt in this window stopped after 21 min with 99 min unspent, shipped nothing) - Tallinn 8 -> 9: a linden row that may be older than the fortress it stands on
+
+Resume checklist first. `passcheck.py --claims` showed Tallinn standing
+(verify claim, 137 min left), and Cagliari's claim had already been resolved
+and committed by the earlier attempt in this window but left uncommitted in
+`data/in-flight.json`; committed that release. `leads.py --ready` was empty,
+so Tallinn's claim was the whole job.
+
+The earlier attempt had fetched eight pages to disk (an Eesti nature
+magazine, a local history magazine, a Postimees piece, Tallinn's own register
+pages, a neighbouring municipality's page, two dead Cloudflare-blocked
+fetches) but banked nothing. Reading them rather than re-fetching turned up a
+real find: the row of lindens on Rannamägi hill, the site of the old Skoone
+bastion at the edge of the Old Town. A 1999 University of Tartu tree-ring
+study cored the two oldest trunks in the row and dated them to roughly 390
+and 300 years, which today is close to 415-420 and 325-330. The older figure
+is odd: it implies planting around 1609, before the bastion itself went up in
+1683. Nobody has explained that gap, including me, so the tree's page just
+says so plainly rather than smoothing it over.
+
+Shipped it as **tln_009, The Skoone Bastion Lindens**, Tallinn's ninth tree.
+Two independent published sources, no register entry anywhere near it. It is
+an ensemble entry (a row, not one named trunk) because nothing distinguishes
+the two dated trees from their neighbours, so I did not pretend to point at
+one. Updated the city's intro, meta description and FAQ for the new count and
+folded it into the "one walk" answer, since it is a 15-minute walk from
+Kelch's Linden. Left Kelch's Linden's "generally called the oldest tree in
+Tallinn" line alone and did not claim the new tree as a citywide record;
+`superlatives.py` confirms nothing on the site now contradicts itself over
+it. Build (5646 pages) and `qa.py` (8763 pages) both clean.
+
+Side finding, not shipped: Harku, the municipality next door, has its own
+tree page confirming one of its two protected oaks (Rabakivi tamm) has
+completely died, and the other (Pilladu tamm) is alive and protected. Neither
+is Tallinn; both are filed as leads for whoever looks at Harku next.
+
+Released the Tallinn claim. Checked `health.py`: the iOS app's newest
+finished run is still red on the same UI-test timing flake the prior
+continuation already flagged (no app code has changed since the last green
+run), nothing new there. No reader submissions, no sightings.
+
 ## 2026-09-13 (continuation 29, previous attempt in this window stopped after 22 min with 98 min unspent, shipped nothing) - Finished the standing _famous-belgium claim: 6 new places, 2 Ghent additions
 
 Followed the resume checklist. `passcheck.py --claims` showed one standing
