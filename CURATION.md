@@ -11,6 +11,59 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 29) - Finished the standing Tallinn verify claim: 8 -> 9 trees, the Skoone Bastion Lindens
+
+Followed the resume checklist: `passcheck.py --claims` showed Tallinn standing
+(verify, by night-run, 137 min left), an earlier attempt in this window had
+already fetched eight pages to disk (Eesti Loodus 2002, KesKus 2006, a
+Postimees 2022 piece, Tallinn's own register pages, a Harku municipality page,
+two Cloudflare-blocked dead ends) but delivered nothing and committed nothing.
+`leads.py --ready` was empty, so the claim was the whole job.
+
+Read what was already fetched rather than re-fetching. Eesti Loodus's 2002
+survey of Estonian city lindens, already the source for the published Kelch's
+Linden (tln_001), also names old western lindens surviving at Rannamägi park
+on the former Skoone bastion, first recorded on Tallinn's 1728 town plan as a
+row of 19-20 trees following the bastion's cavalier edge. KesKus (2006, Heldur
+Sander) gives the full history and cites a real 1999 University of Tartu
+dendrochronology study (Alar Läänelaid): the two thickest of four cored
+lindens measured 129cm and 111cm in diameter and were ring-dated to roughly
+390 and 300 years, implying planting near 1609 and 1699. The 1609 figure
+predates the bastion's own 1683 construction start, a discrepancy neither
+source resolves and which the new tree's story states plainly rather than
+explaining away. Postimees (2022) independently confirms the row is alive and
+vigorous, not a historical footnote: it reports the trees' roots pushing apart
+a 300-year-old stone passage buried in the bastion beneath them. Two
+independent published sources, no register entry within 500m of the site (the
+EELIS register has nothing here). Shipped as **tln_009, The Skoone Bastion
+Lindens**, an ensemble entry (a compact, singular row with one obvious place
+to stand) rather than pretending to isolate one trunk, since no source
+distinguishes the dated trees from their neighbours; `location_precision:
+approximate`, pinned to the park (OSM: Rannamägi, confirmed via Nominatim).
+
+Updated the city's intro, meta_description, question_meta, question_context
+and three FAQ answers for the new count and to fold the new tree into the
+"can I see them in one walk" and "are they free" answers (yes; it sits within
+the same Old Town cluster as Kelch's Linden and the Huecki Lindens). Kept the
+"generally called the oldest tree in Tallinn" hedge on Kelch's Linden
+unchanged and never claimed the new tree as a citywide superlative, since its
+age is a single dendro study applied to an ensemble rather than one named,
+locatable trunk; `superlatives.py` confirms no two pages claim the same
+crown. `preflight.py` (1 FAIL fixed: a stale meta_description tree count),
+full site build (5646 pages, clean) and `qa.py` (8763 pages, links resolve,
+text clean) all passed before committing.
+
+Also recorded two findings from the same fetch batch that are NOT Tallinn:
+Harku vald's own website (a neighbouring municipality, not researched this
+pass) confirms its Rabakivi tamm has died completely (blocked, never
+re-research) and its Pilladu tamm is alive and protected (a lead for a future
+Harku page or day-trip addition). Both filed in `data/leads/tallinn.json`.
+
+Released the Tallinn claim. Checked `health.py`: `ios.yml`'s newest finished
+run is still the failing 2026-09-13 one already noted by the prior
+continuation (a UI test timing flake, no `ios/` code changed since the last
+green run); nothing new to add. No sightings, no new submissions.
+
 ## 2026-09-13 (continuation 28) - Finished an inherited _famous-belgium claim: 6 new single-tree places, 2 Ghent additions, 1 held, 1 duplicate caught
 
 Picked up a verify pass (`_famous-belgium`, claimed by an earlier attempt

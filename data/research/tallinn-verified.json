@@ -1,0 +1,27 @@
+[
+  {
+    "id": "tln_009",
+    "name": "The Skoone Bastion Lindens",
+    "species": "Common Lime (Tilia x europaea)",
+    "age_estimate": "the oldest individually dated to about 400 years",
+    "age_min": 300,
+    "age_max": 420,
+    "girth_cm": 405,
+    "location": {
+      "address": "Rannamägi park (the former Skoone bastion), along Rannamäe tee, Kesklinn, Tallinn",
+      "latitude": 59.443027,
+      "longitude": 24.746495,
+      "neighbourhood": "Kesklinn, on the edge of the Old Town"
+    },
+    "verified_sources": [
+      "http://vana.loodusajakiri.ee/eesti_loodus/index.php?artikkel=202",
+      "http://web.archive.org/web/20230803024728/http://kes-kus.ee/roheline-voond-saasta-tais-haljastuse-uurija-heldur-sander-teeb-ekskursiooni-rannavaravamae-parki-kadunud-hiilguse-ja-selgusetu-tulevikuga-kohta-linnasudames-niisiis-skoone-bastion/",
+      "http://web.archive.org/web/20220506161228/https://www.postimees.ee/7498513/skoone-bastionikaigu-sissepaas-voib-polispuude-tottu-kokku-variseda"
+    ],
+    "access": "Free, Rannamägi is a public park; the row stands along the crest of the old earthwork above Rannamäe tee",
+    "transport": "About 15 minutes on foot from Viru Gate, Tallinn Old Town",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "Ensemble entry: a row of lindens (Tilia x europaea, 'lääne pärn'/western or Dutch lime, a natural Tilia cordata x platyphyllos hybrid widely planted in Estonian towns) along the raised earthwork of the former Skoone bastion, now Rannamägi park, on the edge of Tallinn's Old Town. Two independent published sources, not a register (no register entry found within 500m of this site). Eesti Loodus (national nature magazine, issue 11/2002, 'Puispärnad Eesti linnades') records old western lindens surviving here and cites Tallinn's 1728 town-plan survey, the earliest to show the bastion, marking 19 to 20 trees in a single row following the curve of the bastion's cavalier edge; no written planting record survives, though local dendrology historian Dr Rein Zobel is quoted attributing the row to Swedish rule (which ended in Estonia in 1710). KesKus magazine (2006, Heldur Sander, an established Estonian greenspace historian) gives the fuller history: an 1825 survey counted 39 mature lindens on the bastion, only 34 of which remained by 1928-29. In 1999 University of Tartu dendrochronologist Alar Läänelaid cored four of the lindens for the same piece: the two thickest, 129cm and 111cm in trunk diameter, were ring-dated to roughly 390 and 300 years respectively (measured 1999, so about 415-420 and 325-330 today); a third, thinner tree dated to about 110 years, matching the 1882-83 completion of the park itself; a fourth, from a separate avenue at the bastion's edge, to about 90 years (probably planted around 1910). girth_cm above converts the 129cm diameter of the oldest cored tree via circumference = pi x diameter; the second tree's diameter (111cm) converts to roughly 350cm girth. Postimees (2022, on the bastion's buried 300-year-old stone passage beneath the park) independently confirms the row is alive and vigorous today, not a historical footnote: it reports 'large trees growing on top of and beside it' actively damaging the centuries-old walls. No photo found this pass. No source distinguishes one named trunk in the row from its neighbours, so this ships as the row itself (a compact, singular thing to stand in front of, viewed from the park path along the bastion crest) rather than pretending to isolate an individual tree; the two dendro-dated trees are somewhere within it, not separately marked. Do not confuse with tln_001 (Kelch's Linden, a separate individually named Common Lime at Niguliste Church, about 1.4km away) or with the already-blocked, now-presumed-dead Kaasani kiriku pappel (a different black poplar, recorded in data/leads/tallinn.json). Pin is the OSM park centroid for Rannamägi; approximate, since no source places the row's exact GPS track."
+  }
+]
