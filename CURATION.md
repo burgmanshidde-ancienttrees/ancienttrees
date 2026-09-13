@@ -11,6 +11,33 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 33) - Belgrade 4 -> 5: the Vračar tavern-keeper's plane
+
+Same window, continuing down `famous_demand.py --gap`'s list after La Pochota.
+Next candidate with real supply, "Platan na Vračaru" (Serbia, 114 views/mo,
+already pinned), had no coordinate in the lead file for the linked entry
+"Platan na Vračaru" itself but the lead's sibling record ("Platan na
+Vračaru") named an exact address (Makenzijeva 73, Belgrade), which put it
+0.98km from the existing bel_001 (Cvetni Trg oak), inside Belgrade's already-
+published 7.3km walk. Deepened Belgrade rather than opening a new place.
+
+Verified: the town's own green-space manager, Zelenilo-Beograd (~170 years,
+3.90m girth, 27m tall), and Serbian Wikipedia, which cites the 2002 Belgrade
+City Assembly protection order (Official Gazette 5/2002) but gives slightly
+different figures (~150 years, 3.67m girth). Recorded the discrepancy in
+`verify_notes` rather than picking one silently; used the official manager's
+numbers as primary. Geocoded the address via Nominatim, which returned the
+"Trandafilović" restaurant by name at the tree's own site, matching every
+source's description of the tree standing in that restaurant's garden.
+`location_precision: confirmed`.
+
+Photo (Ljiljana Sundać, CC BY-SA 4.0, Wikimedia Commons) is a bare winter
+shot, the only kind available for this tree on Commons: still meets the
+Cadiz standard on composition, exposure and framing, just not the in-leaf
+tiebreaker. Fixed intro (was 117 words, Contract C caps at 100) and the FAQ's
+stale "all four" after adding the fifth tree. Full build (5653 pages) and
+`qa.py` (8780 pages) both clean.
+
 ## 2026-09-13 (continuation 32) - New place: Chiapa de Corzo (Mexico), La Pochota, single-famous-tree exception
 
 With `city_queue.py --next`'s OPENABLE list exhausted (see the previous two
