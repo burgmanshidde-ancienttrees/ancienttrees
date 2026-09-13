@@ -1,6 +1,43 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 - Every map page audited for the recentre bug, photographs vendored, and why the bundled catalogue lags
+
+Three things Hidde asked in one message.
+
+**Every map page, walked for the climbing-button bug.** Ten screens draw a
+TreeMap. Only three put a DRAGGABLE sheet in front of one, and all three go
+through the shared MapWithSheet, so all three had the identical bug and all
+three are fixed by the one change above: the Map tab, the city and country page
+(PlaceMapPage, which is the one he found it on), and My trees (Collect). The
+other seven have no sheet, so the control sits at its old fixed 120 points and
+nothing about it moves: the tree page's neighbours map, the walk page, the walk
+mode, the collection map, the pin picker, and the city and country previews on
+Home and Country, which draw no control at all. One other screen positions
+something against a bar rather than a sheet, PlacePin, and it was already
+measuring from a GeometryReader and already treating zero as not-yet-measured;
+its bar is ~200 points, well under the new ceiling, so it is untouched. Nothing
+else in the app reads the sheet's live height: `sheetPoints` has exactly one
+consumer, which is why one fix covered every page.
+
+**The eight photographs are on our own domain.** It IS automatic and it did not
+fail: photos.yml runs daily and the 2026-09-13 04:40 knock was never delivered,
+which is the same GitHub schedule-dropping this corpus already documents at
+length. Dispatched by hand instead; commit 1819400b, 87 seconds, eight files.
+The 25 it skips are skipped on licence and always will be.
+
+**The tree database is not behind.** The live feeds are current and a running
+app replaces its copy on launch. What is behind is `ios/.../Data/trees.json`,
+the copy inside the binary, and it is written at ARCHIVE time by release.py
+step 3 rather than continuously: last refreshed for Build 14 on 09-11 at 2,990
+trees against 3,103 today. That is by design and mostly harmless, because its
+only job is the floor for a fresh install and for a phone with no signal. The
+real gap is that nothing said so, and `appdata.py --check` costs four fetches
+and seven megabytes so nobody ran it. `appdata.py --local` answers the same
+question from this checkout with no network, and brief.py prints it at session
+start once the drift passes 100 trees. Not a gate: a fresh-install cosmetic is
+not a break.
+
 ## 2026-09-13 - The recentre button on the map stops climbing the screen
 
 Hidde, on his own phone: "het lukt me nog steeds het centre knopje weg te
