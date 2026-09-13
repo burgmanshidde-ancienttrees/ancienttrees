@@ -1,6 +1,45 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 2) - Committed an earlier attempt's finished Tokyo/Kyoto work; Breda photo dead end recorded
+
+Picked up after an earlier attempt in this same window stopped with 68 min
+still unspent (no error, no usage-limit death, it just decided it was
+done). Recovered its work rather than starting fresh: it had fully
+finished the Tokyo verify+write pass and a Kyoto photo viewing pass
+(4 new Tokyo trees, kyo_017's first photo, two Fukuoka submissions
+triaged) and left it all correctly done but uncommitted, claim already
+released. Reviewed every changed file, rebuilt (5621 pages, clean),
+`qa.py` and `preflight.py` both clean, committed and pushed (443106e4).
+
+Then worked the ladder fresh: `git pull --rebase`, no standing claims,
+`leads.py --ready` empty (0 writable), `health.py` rung 2 clear (smoke,
+deploy, night shift, digest, review, nightly knocks all fine). Checked the
+two schedule-only failures the session-start hook flagged (Walking routes,
+iOS app floor job): both are already fully diagnosed by earlier attempts
+today and blocked on the same wall, this bot's GitHub App token lacking
+`workflow` scope on `.github/workflows/*`, with ready-to-apply patches
+waiting (routes.yml fix was written and reset back out locally when the
+push was refused; the iOS floor-job retry flag sits at
+`drafts/ios-floor-retry.patch`). Nothing new to add; both are FOR HIDDE.
+REVIEW.md's one WARN (app "1 trees" grammar bug) is already fixed on main
+via the `treesLabel()` helper.
+
+Checked `city_queue.py --next` for new coverage: the top "openable today"
+candidates (Taormina, Ravenna, Trier, Niagara Falls) are all documented
+dead ends or too thin to clear the four-tree floor (see CURATION.md).
+`scout_next.py --target` says BUILD, not SCOUT, and nothing left at the
+top to build from. `pagegaps.py` and `recognise.py --stuck` are both at
+zero. `photo_gaps.py --shortlist` had exactly one candidate, Breda's
+bre_010; looked at all three of its queue candidates (a fallen leaf, two
+already-rejected park views) and recorded the rejection so it does not
+resurface (CURATION.md).
+
+**FOR HIDDE, unchanged:** the routes.yml race-condition fix and the iOS
+floor-job retry-flag fix both need the `workflow` GitHub scope this bot's
+token does not have. Ready-to-apply, just needs a push from something with
+that permission.
+
 ## 2026-09-13 (continuation) - Tokyo grows to 21, a reader photo published, two new Fukuoka submissions filed
 
 Continuation of the window below (14 min used before it, 91 min left when
