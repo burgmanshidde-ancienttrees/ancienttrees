@@ -62,8 +62,8 @@
       "at": "2026-09-12T08:20:50+00:00"
     },
     "2026-09-12": {
-      "note": "The '1 trees' WARN (Home.swift CityView/homepage shelf) was already fixed: both call sites now use treesLabel(count), confirmed at Home.swift:538 and :720, commit 94a9310c.",
-      "at": "2026-09-12T20:07:49+00:00"
+      "note": "1-trees WARN fixed in 068159d9f (Home.swift walk card, Walks.swift row, ContentView empty-state, city-shelf subtitle); scripts/pluralcheck.py added as ratchet, wired into pre-push",
+      "at": "2026-09-13T06:01:33+00:00"
     }
   }
 }
