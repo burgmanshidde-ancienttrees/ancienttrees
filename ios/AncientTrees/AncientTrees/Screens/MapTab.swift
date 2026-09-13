@@ -569,9 +569,55 @@ struct MapTab: View {
     private let arrivedKm = 0.12
 
     private var arrived: Tree? {
-        guard query.isEmpty, selected == nil,
-              let first = listed.first, first.km <= arrivedKm else { return nil }
-        return first.tree
+        guard query.isEmpty, selected == nil else { return nil }
+        return Self.arrival(among: catalogue.trees, origin: origin,
+                            located: located, within: arrivedKm)
+    }
+
+    /// THE TREE YOU ARE ACTUALLY STANDING IN FRONT OF, measured from the phone
+    /// and never from the camera.
+    ///
+    /// Hidde, 2026-09-13, in Fukuoka, looking at a card that said he was
+    /// standing in front of a cherry in Kyoto Gyoen, five hundred and seventeen
+    /// kilometres away: "dit moet je alleen suggereren als gps heel erg in de buurt is
+    /// toch."
+    ///
+    /// The 120 metres was never the problem. This read `listed.first`, and
+    /// `listed` measures from `focus`, which is the MAP'S CENTRE the moment the
+    /// map has been moved. Its own comment says both halves out loud: "where
+    /// the map is looking once it has been moved, and where you are standing
+    /// until then". Two different facts sharing one variable. Every other
+    /// reader of `focus` is right to want the camera, because the list, the
+    /// ordering and "trees you can see" are all about what is on screen. This
+    /// one is a claim about the person, so it is the one that has to use
+    /// `origin`. Pan to any tree in the world, wait for it to be the only one
+    /// in view, and the app would tell you that you were in front of it and
+    /// offer to tick it off, which writes a visit that never happened into the
+    /// one thing this product is: your collection.
+    ///
+    /// AND IT NEEDS A REAL FIX. `origin` falls back to a remembered place and
+    /// then to Dam square, so without `located` the same false claim comes
+    /// back the moment location is off, just pointed at wherever the phone was
+    /// last. No fix, no claim.
+    ///
+    /// Unfiltered on purpose: standing in front of a tree is a fact about the
+    /// world, and it does not stop being true because the map is currently
+    /// showing only your favourites.
+    static func arrival(among trees: [Tree], origin: (lat: Double, lng: Double),
+                        located: Bool, within km: Double) -> Tree? {
+        guard located else { return nil }
+        // A degree of latitude is about 111 km everywhere, so this band is
+        // comfortably wider than the radius and turns a scan of three thousand
+        // trees into a handful. Longitude is left to the real distance check,
+        // where the cosine belongs.
+        let band = km / 111.0 * 2
+        var best: (tree: Tree, km: Double)?
+        for t in trees where abs(t.lat - origin.lat) <= band {
+            let d = t.distanceKm(from: origin.lat, origin.lng)
+            guard d <= km else { continue }
+            if best == nil || d < best!.km { best = (t, d) }
+        }
+        return best?.tree
     }
 
     /// What the pager pages over. The tapped tree first if the list does not
