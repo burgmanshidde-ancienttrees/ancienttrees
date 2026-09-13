@@ -7809,6 +7809,15 @@
         "note": "deepen pass, 16 -> 19: register radius already exhausted by 4 prior passes, found new supply via a 2013 newspaper survey reached through the Wikipedia/Brota Alicante trail (2 araucarias + a 3-olive grove at two new plazas); wrote stories directly in the main session rather than dispatching write-stories for 3 trees; also wrote the Monkey Puzzle species page (3 trees, pagegaps.py gap) and fixed Spain's stale country meta_description count",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "prague/vienna/munich",
+        "kind": "photo",
+        "tokens": 220000,
+        "trees": 4,
+        "note": "viewing pass on 22 queued photo-queue candidates across the 3 top-demand cities with real queue depth (photo_fetch.py, per-city 8, per-tree 2); 4 approved (all Prague), 18 rejected and recorded so the queue does not re-serve them; also fixed a real photo_hunt.py _author() bug (Commons notify-me Artist text with the real username only in a stripped href); tokens are a rough estimate (main-session work, not a dispatched agent report, includes the Milan/Florence/Brisbane rung-4 investigation that came up empty first)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
