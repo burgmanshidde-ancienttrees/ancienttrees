@@ -401,9 +401,38 @@ final class Sightings {
     /// hero, facts, story, access and a directions bar, and a copy of it for
     /// your own trees would drift within a week. Empty strings are honest here
     /// and the page already knows how to show a gap.
+    /// A NAME THAT FITS ON ONE LINE, because some of them do not.
+    ///
+    /// Hidde, 2026-09-13, on his own watercypres: "waarom zit er zo'n verticale
+    /// whitespace tussen Baarn en Watercypres?" Because the title was drawing
+    /// TWO lines and the second was empty. Measured off his screenshot against
+    /// the frames CI dumps for the same 402 point phone, and it comes out exact
+    /// on two independent landmarks: with a one-line title the place link's cap
+    /// sits at 496.7 and the status card's heading at 545.0, with a two-line
+    /// title at 532.7 and 581.0, and his screenshot reads 532.7 and 581.0.
+    ///
+    /// The newline is in the DATA rather than in the layout, and it comes from
+    /// a version of the app this project already has written down: the collect
+    /// sheet used to ask one question ("What makes it special? A name, a
+    /// species, a story...") and then use the answer as the tree's NAME, cut at
+    /// 60 characters. That field is multi-line, so anybody who pressed return
+    /// has a name with a newline in it. The capture path has trimmed since the
+    /// name became its own field; the sightings already on phones and in the
+    /// database have not, and nothing reads them through a cleaner.
+    ///
+    /// So this cleans on the way OUT as well. A newline inside a name becomes a
+    /// space rather than being cut at it, because a name that genuinely arrived
+    /// as two words on two lines is still that name.
+    nonisolated static func oneLine(_ raw: String) -> String {
+        raw.split(whereSeparator: { $0.isNewline || $0 == "\t" })
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+            .joined(separator: " ")
+    }
+
     func asTree(_ s: Sighting) -> Tree {
         Tree(id: s.treeKey,
-             name: s.name,
+             name: Self.oneLine(s.name),
              species: s.species ?? "",
              age: s.age,
              ageMin: nil,
@@ -448,7 +477,7 @@ final class Sightings {
                 lat: Double, lng: Double, image: UIImage?,
                 date: Date = Date(), status: Status = .mine,
                 unsureOf: [String]? = nil) -> Sighting {
-        var s = Sighting(treeId: treeId, name: name, note: note,
+        var s = Sighting(treeId: treeId, name: Self.oneLine(name), note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
         s.unsureOf = unsureOf
         // Shared from the start (see the property's own comment): the mail
