@@ -8172,8 +8172,8 @@
   "vie_011": {
    "city": "Vienna",
    "name": "The Lime of the Schönbornpark",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Wien 08 Schönbornpark a.jpg",
@@ -8184,17 +8184,13 @@
      "judged": "reject",
      "verdict": "general Schoenbornpark view with the fountain, no single tree is the subject"
     }
-   ],
-   "judged": "2026-08-21",
-   "judged_date": "2026-08-21",
-   "outcome": "rejected",
-   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
+   ]
   },
   "vie_012": {
    "city": "Vienna",
    "name": "The Plane Outside the Grey House",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": []
   },
   "ber_011": {
@@ -13890,101 +13886,94 @@
   "ven_005": {
    "city": "Venice",
    "name": "The Black Poplar of the Certosa",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": []
   },
   "ven_006": {
    "city": "Venice",
    "name": "The Olive Tree of San Servolo",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": []
   },
   "ven_008": {
    "city": "Venice",
    "name": "The Hackberries of Villa Groggia",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": []
   },
   "ver_004": {
    "city": "Verona",
    "name": "The Himalayan Cedar of Via Nino Bixio",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": []
   },
   "ver_006": {
    "city": "Verona",
    "name": "The Yew and Laurel Wood of Giardino Giusti",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Garden entrance, Giardino Giusti, Verona, Italy, August 2025 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Garden_entrance,_Giardino_Giusti,_Verona,_Italy,_August_2025_01.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Palazzo Giusti del Giardino (Verona) - Corte d'onore Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Garden entrance courtyard wall and gate, no yew, no tree as subject"
     },
     {
      "title": "File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Italian_garden,_Giardino_Giusti,_Verona,_Italy,_August_2025_01.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Giardino Giusti (Verona) Category:Giardino Giusti (Verona) - Fountains Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Formal parterre with fountain centred; conifers are columnar cypress not the yew and laurel wood"
     },
     {
      "title": "File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 02.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Italian_garden,_Giardino_Giusti,_Verona,_Italy,_August_2025_02.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Giardino Giusti (Verona) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "General cypress avenue and gravel path view; wooded slope beyond distant and unresolvable"
     }
    ]
   },
   "ver_007": {
    "city": "Verona",
    "name": "The Cedar of Villa Bersani",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": []
   },
   "ver_008": {
    "city": "Verona",
    "name": "The Historic Collection of Parco delle Colombare",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": [
-    {
-     "title": "File:Beetle collection.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Beetle_collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Beetle_collection.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": ""
-    },
-    {
-     "title": "File:Book collection, Book shelves, Rostov-on-Don, Russia.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Book_collection%2C_Book_shelves%2C_Rostov-on-Don%2C_Russia.jpg/960px-Book_collection%2C_Book_shelves%2C_Rostov-on-Don%2C_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Book_collection,_Book_shelves,_Rostov-on-Don,_Russia.jpg",
-     "licence": "CC BY 4.0",
-     "author": "Vyacheslav Argenberg"
-    },
-    {
-     "title": "File:Music collection, Rostov-on-Don, Russia.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Music_collection%2C_Rostov-on-Don%2C_Russia.jpg/960px-Music_collection%2C_Rostov-on-Don%2C_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Music_collection,_Rostov-on-Don,_Russia.jpg",
-     "licence": "CC BY 4.0",
-     "author": "Vyacheslav Argenberg"
-    }
-   ]
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
   },
   "vie_015": {
    "city": "Vienna",
    "name": "The Caucasian Wingnut of the Stadtpark",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:20260418 Stadtpark Vienna 01.jpg",
@@ -14654,15 +14643,40 @@
   "vie_018": {
    "city": "Vienna",
    "name": "The Field Elm of Burggasse",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": []
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal 794 2014-05-13 (22) Wien07 Burggasse26 Feldulme.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Naturdenkmal_794_2014-05-13_%2822%29_Wien07_Burggasse26_Feldulme.JPG/960px-Naturdenkmal_794_2014-05-13_%2822%29_Wien07_Burggasse26_Feldulme.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_794_2014-05-13_(22)_Wien07_Burggasse26_Feldulme.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.204375,
+     "lng": 16.35101667,
+     "cats": "Category:Austria photographs taken on 2014-05-13 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 794 (Wien-Neubau)",
+     "judged": "reject",
+     "verdict": "Junction view, trunk behind traffic light and parked cars, photo_light POOR"
+    },
+    {
+     "title": "File:Naturdenkmal 794 2014-05-13 (23) Wien07 Burggasse26 Feldulme GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Naturdenkmal_794_2014-05-13_%2823%29_Wien07_Burggasse26_Feldulme_GuentherZ.JPG/960px-Naturdenkmal_794_2014-05-13_%2823%29_Wien07_Burggasse26_Feldulme_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_794_2014-05-13_(23)_Wien07_Burggasse26_Feldulme_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.204375,
+     "lng": 16.35101667,
+     "cats": "Category:Austria photographs taken on 2014-05-13 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 794 (Wien-Neubau)",
+     "judged": "reject",
+     "verdict": "Right tree (ND 794, geotag 61m) but photo_light POOR: blown overcast sky turns the elm flat"
+    }
+   ]
   },
   "vie_019": {
    "city": "Vienna",
    "name": "The Turkish Hazels of Resselpark",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:2 Baumhaseln (Corylus colurna) (545) IMG 1403.jpg",
@@ -14719,18 +14733,28 @@
      "verdict": "Karlskirche church is the subject again, flower bed foreground, no single hazel identifiable"
     },
     {
-     "title": "File:Wien 04 Resselpark o.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Wien_04_Resselpark_o.jpg/960px-Wien_04_Resselpark_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_o.jpg",
+     "title": "File:Wien 04 Resselpark i.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Wien_04_Resselpark_i.jpg/960px-Wien_04_Resselpark_i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_i.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "lat": 48.199142,
+     "lng": 16.370289,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Resselpark Category:Self-published work Category:Siegfried Marcus monument, Vienna",
+     "judged": "reject",
+     "verdict": "Wide park view, large tree shown has mottled flaking bark, a plane not Corylus colurna"
     },
     {
      "title": "File:Wien 04 Resselpark p.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wien_04_Resselpark_p.jpg/960px-Wien_04_Resselpark_p.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Wien_04_Resselpark_p.jpg/960px-Wien_04_Resselpark_p.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_04_Resselpark_p.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "lat": 48.199644,
+     "lng": 16.36964,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Historical costumes Category:Images by Peter Gugerell, Vienna Category:Resselpark Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Park scene with costumed ticket seller and Karlskirche tower, no hazel identifiable"
     },
     {
      "title": "iNat obs 312171005 (Corylus colurna)",
@@ -14739,7 +14763,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "48.1991348056,16.3701553333"
+     "obs_location": "48.1991348056,16.3701553333",
+     "judged": "reject",
+     "verdict": "iNat bark macro / leaf-only lens flare, no crown, Cadiz standard fail"
     },
     {
      "title": "iNat obs 312171005 (Corylus colurna)",
@@ -17904,8 +17930,8 @@
   "ven_011": {
    "city": "Venice",
    "name": "The Palm of San Servolo",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:L'île de San Servolo (Lagune de Venise) (10335537584).jpg (Wikidata Q55743436)",
@@ -17913,7 +17939,12 @@
      "url": "https://commons.wikimedia.org/wiki/File:L%27%C3%AEle_de_San_Servolo_(Lagune_de_Venise)_(10335537584).jpg",
      "licence": "CC BY 2.0",
      "author": "Jean-Pierre Dalbéra from Paris, France",
-     "source": "wikidata/Q55743436"
+     "lat": 45.419577,
+     "lng": 12.355675,
+     "cats": "Category:Buildings on San Servolo Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Photographs by Jean-Pierre Dalbéra",
+     "source": "wikidata/Q55743436",
+     "judged": "reject",
+     "verdict": "Palm sits in left third, San Servolo facade and fish sculpture own the centre band; fails card crop, tree not the subject"
     }
    ]
   },
@@ -20610,121 +20641,216 @@
   "vie_020": {
    "city": "Vienna",
    "name": "The Twin Planes of Am Platz",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": []
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal 122 GuentherZ 2011-08-25 0115 Wien13 Am Platz 2Platanen.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Naturdenkmal_122_GuentherZ_2011-08-25_0115_Wien13_Am_Platz_2Platanen.JPG/960px-Naturdenkmal_122_GuentherZ_2011-08-25_0115_Wien13_Am_Platz_2Platanen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_122_GuentherZ_2011-08-25_0115_Wien13_Am_Platz_2Platanen.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.18611861,
+     "lng": 16.3014775,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria with known ID Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 122 (Wien-Hietzing)",
+     "judged": "reject",
+     "verdict": "Right monument but shot across a junction, trunks hidden by tram wires and bus shelter, photo_light POOR"
+    },
+    {
+     "title": "File:Naturdenkmal 612 GuentherZ 2011-08-25 0116 Wien13 Hietzinger Hauptstrasse10-16 Baumgruppe.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Naturdenkmal_612_GuentherZ_2011-08-25_0116_Wien13_Hietzinger_Hauptstrasse10-16_Baumgruppe.JPG/960px-Naturdenkmal_612_GuentherZ_2011-08-25_0116_Wien13_Hietzinger_Hauptstrasse10-16_Baumgruppe.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_612_GuentherZ_2011-08-25_0116_Wien13_Hietzinger_Hauptstrasse10-16_Baumgruppe.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.18602472,
+     "lng": 16.30145278,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 612 (Wien-Hietzing)",
+     "judged": "reject",
+     "verdict": "Different natural monument (ND 612), a row of street trees, no single tree"
+    }
+   ]
   },
   "vie_021": {
    "city": "Vienna",
    "name": "The Oak of Schönbrunn's Botanical Garden",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Schloss Schönbrunn Wien 2014 (Zuschnitt 1).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg/960px-Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg/960px-Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg",
      "licence": "CC BY-SA 3.0 de",
-     "author": "Thomas Wolf, www.foto-tw.de"
+     "author": "Thomas Wolf, www.foto-tw.de",
+     "lat": 48.17949167,
+     "lng": 16.30936667,
+     "cats": "Category:2014 in Vienna Category:Assessment tagged valued image pages missing scope Category:CC-BY-SA-3.0-DE Category:Featured pictures by Der Wolf im Wald Category:Featured pictures of Vienna Category:Featured pictures of castles in Austria Category:Featured pictures of palaces Category:Featured pictures on Commons by Der Wolf im Wald Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, German Category:Featured pictures on Wikipedia, Vietnamese Category:Featured pictures on Wikipedia by Der Wolf im Wald Category:Featured pictures on de-Wikipedia by Der Wolf im Wald Category:Files with Assessments template missing SDC Commons valued image assessment Category:Files with coordinates missing SDC location of creation Category:Pictures by Der Wolf im Wald Category:Pictures of Vienna by Der Wolf im Wald Category:Quality Images by Der Wolf im Wald Category:Quality images Category:Quality images of Palace and Gardens of Schönbrunn Category:Remote views of Palace of Schönbrunn Category:Self-published work Category:Taken with Canon EOS 5D Mark II Category:Valued images Category:Valued images by Der Wolf im Wald Category:Views from Gloriette Schönbrunn",
+     "judged": "reject",
+     "verdict": "Palace facade, geotagged 801m from the oak, geosearch noise"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn, Schlossgarten -- 2018 -- 3229.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn,_Schlossgarten_--_2018_--_3229.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.184663,
+     "lng": 16.31103,
+     "cats": "Category:29 Janus und Bellona, statue, Great Parterre, Schönbrunn Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Details of statues Category:Exposure time 1/125 sec Category:F-number f/7.1 Category:Featured pictures on Wikipedia, Persian Category:ISO speed rating 250 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 105 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Featured pictures Category:Photographs by Dietmar Rabich/Featured pictures from WikiDaheim Category:Photographs by Dietmar Rabich/Featured pictures of Austria Category:Photographs by Dietmar Rabich/Featured pictures on Wikipedia Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of statues Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of sculptures in Austria Category:Quality images of statues in Austria Category:Self-published work Category:Statues in Austria photographed in 2018 Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Own description says sculpture in the parterre, geotag 755m from the oak"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3224.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185633,
+     "lng": 16.311425,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Clouds in Austria Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/50 sec Category:F-number f/10 Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 42 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Palace view, geotag 802m from the oak"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3226.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185385,
+     "lng": 16.310792,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Clock at Palace of Schönbrunn, west facade Category:Clouds in Austria Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/60 sec Category:F-number f/10 Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 35 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of clocks Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of clocks in Austria Category:Sculptures in Austria photographed in 2018 Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Time 02:49 Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Palace view, geotag 750m from the oak"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3259.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185302,
+     "lng": 16.310883,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/50 sec Category:F-number f/8 Category:Gatepost finials in Austria Category:Gates of the Palace and gardens of Schönbrunn Category:Gates on fences Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Kammergarten (Schönbrunn) Category:Lens focal length 50 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of fences Category:Photographs by Dietmar Rabich/Quality images of gates Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 2:3 Category:Public art in Austria with known IDs Category:Public art in Vienna with known IDs Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of fences in Austria Category:Quality images of gates in Austria Category:Schönbrunn walls and fences Category:Sculptures in Austria photographed in 2018 Category:Sculptures of plants in Austria Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Catalogued public art, geotag 755m from the oak"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3260.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185465,
+     "lng": 16.311038,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Clock at Palace of Schönbrunn, north facade Category:Clouds in Austria Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/80 sec Category:F-number f/10 Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 76 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of clocks Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of clocks in Austria Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Time 03:22 Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Palace view, geotag 770m from the oak"
     },
     {
      "title": "File:Wien-Hietzing - Naturdenkmal 179 - Japanischer Schnurbaum (Sophora japonica).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg/960px-Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg/960px-Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_(Sophora_japonica).jpg",
      "licence": "CC BY-SA 3.0 at",
-     "author": "Haeferl"
+     "author": "Haeferl",
+     "lat": 48.18415517,
+     "lng": 16.3013876,
+     "cats": "Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images by Haeferl Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Natural monuments in Vienna Category:Palmhouse Parterre Category:Self-published work Category:Styphnolobium japonicum in Austria Category:Taken with Canon EOS 700D Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "Wrong species/monument, ND 179 the Japanese pagoda tree our own story records as destroyed"
     }
    ]
   },
   "vie_022": {
    "city": "Vienna",
    "name": "The Yew of Schönbrunn's Botanical Garden",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Schloss Schönbrunn Wien 2014 (Zuschnitt 1).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg/960px-Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg/960px-Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg",
      "licence": "CC BY-SA 3.0 de",
-     "author": "Thomas Wolf, www.foto-tw.de"
+     "author": "Thomas Wolf, www.foto-tw.de",
+     "lat": 48.17949167,
+     "lng": 16.30936667,
+     "cats": "Category:2014 in Vienna Category:Assessment tagged valued image pages missing scope Category:CC-BY-SA-3.0-DE Category:Featured pictures by Der Wolf im Wald Category:Featured pictures of Vienna Category:Featured pictures of castles in Austria Category:Featured pictures of palaces Category:Featured pictures on Commons by Der Wolf im Wald Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, German Category:Featured pictures on Wikipedia, Vietnamese Category:Featured pictures on Wikipedia by Der Wolf im Wald Category:Featured pictures on de-Wikipedia by Der Wolf im Wald Category:Files with Assessments template missing SDC Commons valued image assessment Category:Files with coordinates missing SDC location of creation Category:Pictures by Der Wolf im Wald Category:Pictures of Vienna by Der Wolf im Wald Category:Quality Images by Der Wolf im Wald Category:Quality images Category:Quality images of Palace and Gardens of Schönbrunn Category:Remote views of Palace of Schönbrunn Category:Self-published work Category:Taken with Canon EOS 5D Mark II Category:Valued images Category:Valued images by Der Wolf im Wald Category:Views from Gloriette Schönbrunn",
+     "judged": "reject",
+     "verdict": "Palace facade, geotag 795m from the yew"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn, Schlossgarten -- 2018 -- 3229.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn%2C_Schlossgarten_--_2018_--_3229.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn,_Schlossgarten_--_2018_--_3229.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.184663,
+     "lng": 16.31103,
+     "cats": "Category:29 Janus und Bellona, statue, Great Parterre, Schönbrunn Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Details of statues Category:Exposure time 1/125 sec Category:F-number f/7.1 Category:Featured pictures on Wikipedia, Persian Category:ISO speed rating 250 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 105 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Featured pictures Category:Photographs by Dietmar Rabich/Featured pictures from WikiDaheim Category:Photographs by Dietmar Rabich/Featured pictures of Austria Category:Photographs by Dietmar Rabich/Featured pictures on Wikipedia Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of statues Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of sculptures in Austria Category:Quality images of statues in Austria Category:Self-published work Category:Statues in Austria photographed in 2018 Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Sculpture in the parterre by its own description, geotag 758m from the yew"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3224.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3224.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185633,
+     "lng": 16.311425,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Clouds in Austria Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/50 sec Category:F-number f/10 Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 42 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Palace view, geotag 807m from the yew"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3226.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3226.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185385,
+     "lng": 16.310792,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Clock at Palace of Schönbrunn, west facade Category:Clouds in Austria Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/60 sec Category:F-number f/10 Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 35 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of clocks Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of clocks in Austria Category:Sculptures in Austria photographed in 2018 Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Time 02:49 Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Palace view, geotag 755m from the yew"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3259.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3259.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185302,
+     "lng": 16.310883,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/50 sec Category:F-number f/8 Category:Gatepost finials in Austria Category:Gates of the Palace and gardens of Schönbrunn Category:Gates on fences Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Kammergarten (Schönbrunn) Category:Lens focal length 50 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of fences Category:Photographs by Dietmar Rabich/Quality images of gates Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 2:3 Category:Public art in Austria with known IDs Category:Public art in Vienna with known IDs Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of fences in Austria Category:Quality images of gates in Austria Category:Schönbrunn walls and fences Category:Sculptures in Austria photographed in 2018 Category:Sculptures of plants in Austria Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Public art catalogue entry in the parterre, geotag 759m from the yew"
     },
     {
      "title": "File:Wien, Schloss Schönbrunn -- 2018 -- 3260.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg/960px-Wien%2C_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien,_Schloss_Sch%C3%B6nbrunn_--_2018_--_3260.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Dietmar Rabich"
+     "author": "Dietmar Rabich",
+     "lat": 48.185465,
+     "lng": 16.311038,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Castles in Austria photographed in 2018 Category:Changes of XRay's photographs of the recent weeks Category:Clock at Palace of Schönbrunn, north facade Category:Clouds in Austria Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Exposure time 1/80 sec Category:F-number f/10 Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 76 mm Category:Media from WikiDaheim 2018 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2018 in Austria/all Category:Palace of Schönbrunn Category:Photographs by Dietmar Rabich/Architectural photography/Castles Category:Photographs by Dietmar Rabich/Austria Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images from WikiDaheim Category:Photographs by Dietmar Rabich/Quality images of Austria Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of castles Category:Photographs by Dietmar Rabich/Quality images of clocks Category:Photographs by Dietmar Rabich/WikiDaheim/2018 Category:Photographs by Dietmar Rabich/Year/2018 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images from WikiDaheim Category:Quality images of Palace and Gardens of Schönbrunn Category:Quality images of clocks in Austria Category:Self-published work Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Time 03:22 Category:Uploaded with LrMediaWiki Category:Vienna photographs taken on 2018-06-16",
+     "judged": "reject",
+     "verdict": "Palace view, geotag 774m from the yew"
     },
     {
      "title": "File:Wien-Hietzing - Naturdenkmal 179 - Japanischer Schnurbaum (Sophora japonica).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg/960px-Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg/960px-Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_%28Sophora_japonica%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien-Hietzing_-_Naturdenkmal_179_-_Japanischer_Schnurbaum_(Sophora_japonica).jpg",
      "licence": "CC BY-SA 3.0 at",
-     "author": "Haeferl"
+     "author": "Haeferl",
+     "lat": 48.18415517,
+     "lng": 16.3013876,
+     "cats": "Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images by Haeferl Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Natural monuments in Vienna Category:Palmhouse Parterre Category:Self-published work Category:Styphnolobium japonicum in Austria Category:Taken with Canon EOS 700D Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "Wrong species/monument, ND 179 the Japanese pagoda tree 50m away"
     }
    ]
   },
@@ -28525,8 +28651,8 @@
   "vie_025": {
    "city": "Vienna",
    "name": "The Oak of Grimmelshausengasse",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-13",
+   "sweep": 5,
    "candidates": []
   },
   "ali_001": {
@@ -102816,6 +102942,662 @@
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Trees in the Netherlands"
     }
    ]
+  },
+  "vnl_001": {
+   "city": "Venlo",
+   "name": "The Chestnut of the Gasthuishof",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:1965 Voorgevel Gasthuishof, Ulingshofweg 28. Venlo.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/1965_Voorgevel_Gasthuishof%2C_Ulingshofweg_28._Venlo.jpg/960px-1965_Voorgevel_Gasthuishof%2C_Ulingshofweg_28._Venlo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1965_Voorgevel_Gasthuishof,_Ulingshofweg_28._Venlo.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Rechthebbende: Rijksdienst voor het Cultureel Erfgoed",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1965 in Venlo Category:CC-BY-3.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Jammerdaal (Venlo) Category:Ulingshofweg (Venlo) Category:Ulingshofweg 28, Venlo",
+     "judged": "reject",
+     "verdict": "1965 B&W archival photo of the farmhouse gable, no chestnut in frame"
+    }
+   ]
+  },
+  "vnl_002": {
+   "city": "Venlo",
+   "name": "The Chestnut of the Vrijbroekweg",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vnl_003": {
+   "city": "Venlo",
+   "name": "The Sequoia of the Toernooiveld",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vnl_004": {
+   "city": "Venlo",
+   "name": "The Catalpa of the Waterloo Monastery Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vnl_005": {
+   "city": "Venlo",
+   "name": "The Sequoia of the Waterloo Monastery Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vnl_006": {
+   "city": "Venlo",
+   "name": "The Sequoia of the Sequoiahof",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vnl_007": {
+   "city": "Venlo",
+   "name": "The Red Oak of the Hagerhof",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:1919 Boerderij Hagerhof aan de Hagerhofweg, Venlo.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/1919_Boerderij_Hagerhof_aan_de_Hagerhofweg%2C_Venlo.jpg/960px-1919_Boerderij_Hagerhof_aan_de_Hagerhofweg%2C_Venlo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1919_Boerderij_Hagerhof_aan_de_Hagerhofweg,_Venlo.jpg",
+     "licence": "Public domain",
+     "author": "AnonymousUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1919 in Venlo Category:Boerderij Hagerhof (Venlo) Category:Hagerhofweg (Venlo) Category:Media from Gemeentearchief Venlo Category:PD-anon-70-EU",
+     "judged": "reject",
+     "verdict": "1919 B&W postcard of the farmhouse with family posed outside, trees bare and anonymous"
+    },
+    {
+     "title": "File:1944 Luchtfoto van Venlo-Zuid vanaf Kaldenkerkerweg tot de wijk Hagerhof.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/1944_Luchtfoto_van_Venlo-Zuid_vanaf_Kaldenkerkerweg_tot_de_wijk_Hagerhof.jpg/960px-1944_Luchtfoto_van_Venlo-Zuid_vanaf_Kaldenkerkerweg_tot_de_wijk_Hagerhof.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1944_Luchtfoto_van_Venlo-Zuid_vanaf_Kaldenkerkerweg_tot_de_wijk_Hagerhof.jpg",
+     "licence": "Public domain",
+     "author": "Anoniem ; Gemeente Venlo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1944 in Venlo Category:Aerial photographs of Venlo Category:Boerderij Hagerhof (Venlo) Category:Hagerhof (Venlo) Category:Jammerdaal (Venlo) Category:Kaldenkerkerweg (Venlo) Category:Media from Gemeentearchief Venlo Category:Onderste Houtmolen Category:PD-anon-70-EU Category:World War II aerial photographs of the Netherlands",
+     "judged": "reject",
+     "verdict": "1944 wartime aerial recon frame, B&W, no individual tree visible"
+    }
+   ]
+  },
+  "vno_001": {
+   "city": "Venon",
+   "name": "Chene de Venon",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:2018-04-02 Chêne de Venon.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/2018-04-02_Ch%C3%AAne_de_Venon.jpg/960px-2018-04-02_Ch%C3%AAne_de_Venon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2018-04-02_Ch%C3%AAne_de_Venon.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Binnette",
+     "lat": 45.178108,
+     "lng": 5.80959,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Venon Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Ulefone S8 Pro"
+    },
+    {
+     "title": "File:Arbre Venon 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Arbre_Venon_1.jpg/960px-Arbre_Venon_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arbre_Venon_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pierre Goiffon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Aerial photographs of Isère Category:August 2017 in Isère Category:CC-BY-SA-4.0 Category:Chamechaude Category:Chêne de Venon Category:Col des Ayes Category:Dent de Crolles Category:Images with annotations Category:Massif de la Chartreuse Category:Self-published work Category:Vallée du Grésivaudan Category:Views of Venon (Isère)"
+    },
+    {
+     "title": "File:Arbre Venon 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Arbre_Venon_2.jpg/960px-Arbre_Venon_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arbre_Venon_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pierre Goiffon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Aerial photographs of Isère Category:CC-BY-SA-4.0 Category:Chêne de Venon Category:Self-published work"
+    },
+    {
+     "title": "File:Arbre Venon 3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Arbre_Venon_3.jpg/960px-Arbre_Venon_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arbre_Venon_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pierre Goiffon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Aerial photographs of Isère Category:CC-BY-SA-4.0 Category:Chêne de Venon Category:Self-published work"
+    },
+    {
+     "title": "File:Le chêne de Venon (46909865245).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Le_ch%C3%AAne_de_Venon_%2846909865245%29.jpg/960px-Le_ch%C3%AAne_de_Venon_%2846909865245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Le_ch%C3%AAne_de_Venon_(46909865245).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Ylliab Photo from Grenoble, France",
+     "lat": 45.178391,
+     "lng": 5.809772,
+     "cats": "Category:CC-BY-2.0 Category:Files from Ylliab Photo Flickr stream Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:Landscape photography Category:Unidentified landscapes"
+    },
+    {
+     "title": "File:Le chêne de Venon face au Vercors.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Le_ch%C3%AAne_de_Venon_face_au_Vercors.jpg/960px-Le_ch%C3%AAne_de_Venon_face_au_Vercors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Le_ch%C3%AAne_de_Venon_face_au_Vercors.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Remontees",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Venon Category:Self-published work"
+    },
+    {
+     "title": "File:Le majestueux chêne de Venon.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Le_majestueux_ch%C3%AAne_de_Venon.jpg/960px-Le_majestueux_ch%C3%AAne_de_Venon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Le_majestueux_ch%C3%AAne_de_Venon.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chloe.mh4",
+     "lat": 45.1728,
+     "lng": 5.8053,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Venon Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Vue zoomée du chêne de Venon.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Vue_zoom%C3%A9e_du_ch%C3%AAne_de_Venon.jpg/960px-Vue_zoom%C3%A9e_du_ch%C3%AAne_de_Venon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vue_zoom%C3%A9e_du_ch%C3%AAne_de_Venon.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Remontees",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chêne de Venon Category:Self-published work"
+    }
+   ]
+  },
+  "vie_026": {
+   "city": "Vienna",
+   "name": "The Second Plane of Rathauspark",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal 566 GuentherZ 2010-08-25 0130 Wien01 Rathauspark Platane.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG/960px-Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.21099611,
+     "lng": 16.35967028,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 566 (Wien-Innere Stadt)",
+     "judged": "reject",
+     "verdict": "Good photo but of the other protected plane, ND 566, 37m from this pin, 23m from vie_029's where it is approved"
+    },
+    {
+     "title": "File:Naturdenkmal 567 GuentherZ 2010-08-25 0129 Wien01 Rathauspark Platane.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Naturdenkmal_567_GuentherZ_2010-08-25_0129_Wien01_Rathauspark_Platane.JPG/960px-Naturdenkmal_567_GuentherZ_2010-08-25_0129_Wien01_Rathauspark_Platane.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_567_GuentherZ_2010-08-25_0129_Wien01_Rathauspark_Platane.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.21104833,
+     "lng": 16.35922444,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 567 (Wien-Innere Stadt)",
+     "judged": "approve",
+     "verdict": "ND 567, geotag 11m from pin (55m from vie_029). Mottled flaking trunk, root flare, full crown, blue sky, photo_light OK"
+    },
+    {
+     "title": "File:Rathauspark Vienna June 2006 173.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Rathauspark_Vienna_June_2006_173.jpg/960px-Rathauspark_Vienna_June_2006_173.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Rathauspark_Vienna_June_2006_173.jpg",
+     "licence": "CC BY-SA 2.5",
+     "author": "Gryffindor",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brunnen im Rathauspark, Vienna Category:CC-BY-SA-2.5 Category:Cultural heritage monuments in Austria with known IDs Category:Rathauspark, Vienna Category:Self-published work Category:Taken with Olympus IR-300",
+     "judged": "reject",
+     "verdict": "Park view with fountain as subject, no individual tree identifiable"
+    }
+   ]
+  },
+  "vie_027": {
+   "city": "Vienna",
+   "name": "The Plane of Hügelgasse",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Platane Wien Hügelgasse 7.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Platane_Wien_H%C3%BCgelgasse_7.jpg/960px-Platane_Wien_H%C3%BCgelgasse_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platane_Wien_H%C3%BCgelgasse_7.jpg",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "HeinzLW",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Austria photographs taken on 2014-05-28 Category:CC-BY-SA-3.0-AT Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Platanus in Vienna Category:Self-published work Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 418 (Wien-Hietzing)",
+     "judged": "approve",
+     "verdict": "Named for register address, unmistakable London plane, slim trunk fits 220cm girth, broad crown, photo_light OK"
+    },
+    {
+     "title": "File:Wien Hietzing, Hügelgasse 2, Moservilla - 1.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Wien_Hietzing%2C_H%C3%BCgelgasse_2%2C_Moservilla_-_1.JPG/960px-Wien_Hietzing%2C_H%C3%BCgelgasse_2%2C_Moservilla_-_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_Hietzing,_H%C3%BCgelgasse_2,_Moservilla_-_1.JPG",
+     "licence": "Public domain",
+     "author": "Wolfgang J. Kraus",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Azerbaijani Embassy, Vienna Category:Hans Moser (actor) Category:PD-self Category:Photographs of flags of Azerbaijan Category:Self-published work Category:Taken with Nikon Coolpix 2000",
+     "judged": "reject",
+     "verdict": "Architecture photo of the Moservilla at Huegelgasse 2, a building, different address"
+    }
+   ]
+  },
+  "vie_028": {
+   "city": "Vienna",
+   "name": "The Plane of Alser Straße",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vie_029": {
+   "city": "Vienna",
+   "name": "The Third Plane of Rathauspark",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal 566 GuentherZ 2010-08-25 0130 Wien01 Rathauspark Platane.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG/960px-Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.21099611,
+     "lng": 16.35967028,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 566 (Wien-Innere Stadt)",
+     "judged": "approve",
+     "verdict": "ND 566, geotag 23m from pin (37m from vie_026, 100m from vie_006/ND 564), plane in full leaf, trunk readable, good light"
+    },
+    {
+     "title": "File:Naturdenkmal 567 GuentherZ 2010-08-25 0129 Wien01 Rathauspark Platane.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Naturdenkmal_567_GuentherZ_2010-08-25_0129_Wien01_Rathauspark_Platane.JPG/960px-Naturdenkmal_567_GuentherZ_2010-08-25_0129_Wien01_Rathauspark_Platane.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_567_GuentherZ_2010-08-25_0129_Wien01_Rathauspark_Platane.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.21104833,
+     "lng": 16.35922444,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 567 (Wien-Innere Stadt)",
+     "judged": "reject",
+     "verdict": "This is ND 567, vie_026's tree, 55m from this pin, approved there"
+    },
+    {
+     "title": "File:Rathauspark Vienna June 2006 173.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Rathauspark_Vienna_June_2006_173.jpg/960px-Rathauspark_Vienna_June_2006_173.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Rathauspark_Vienna_June_2006_173.jpg",
+     "licence": "CC BY-SA 2.5",
+     "author": "Gryffindor",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Brunnen im Rathauspark, Vienna Category:CC-BY-SA-2.5 Category:Cultural heritage monuments in Austria with known IDs Category:Rathauspark, Vienna Category:Self-published work Category:Taken with Olympus IR-300",
+     "judged": "reject",
+     "verdict": "Fountain view of the park, no individual tree identifiable"
+    }
+   ]
+  },
+  "vie_030": {
+   "city": "Vienna",
+   "name": "The Black Pine of Ebner-Eschenbach-Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Wien 18 Ebner-Eschenbach-Park a.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Wien_18_Ebner-Eschenbach-Park_a.jpg/960px-Wien_18_Ebner-Eschenbach-Park_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_18_Ebner-Eschenbach-Park_a.jpg",
+     "licence": "CC0",
+     "author": "Gugerell",
+     "lat": 48.226631,
+     "lng": 16.3348005,
+     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work"
+    },
+    {
+     "title": "File:Wien 18 Ebner-Eschenbach-Park b.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Wien_18_Ebner-Eschenbach-Park_b.jpg/960px-Wien_18_Ebner-Eschenbach-Park_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_18_Ebner-Eschenbach-Park_b.jpg",
+     "licence": "CC0",
+     "author": "Gugerell",
+     "lat": 48.2266185,
+     "lng": 16.33491033,
+     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work"
+    },
+    {
+     "title": "File:Wien 18 Ebner-Eschenbach-Park c.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Wien_18_Ebner-Eschenbach-Park_c.jpg/960px-Wien_18_Ebner-Eschenbach-Park_c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_18_Ebner-Eschenbach-Park_c.jpg",
+     "licence": "CC0",
+     "author": "Gugerell",
+     "lat": 48.22669183,
+     "lng": 16.334795,
+     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work"
+    },
+    {
+     "title": "File:Wien 18 Ebner-Eschenbach-Park d.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Wien_18_Ebner-Eschenbach-Park_d.jpg/960px-Wien_18_Ebner-Eschenbach-Park_d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_18_Ebner-Eschenbach-Park_d.jpg",
+     "licence": "CC0",
+     "author": "Gugerell",
+     "lat": 48.22665617,
+     "lng": 16.33504183,
+     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work"
+    },
+    {
+     "title": "File:Wien 18 Ebner-Eschenbach-Park e.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Wien_18_Ebner-Eschenbach-Park_e.jpg/960px-Wien_18_Ebner-Eschenbach-Park_e.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_18_Ebner-Eschenbach-Park_e.jpg",
+     "licence": "CC0",
+     "author": "Gugerell",
+     "lat": 48.226933,
+     "lng": 16.33564267,
+     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Park signs in Vienna Category:Self-published work"
+    },
+    {
+     "title": "File:Wien 18 Ebner-Eschenbach-Park f.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Wien_18_Ebner-Eschenbach-Park_f.jpg/960px-Wien_18_Ebner-Eschenbach-Park_f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wien_18_Ebner-Eschenbach-Park_f.jpg",
+     "licence": "CC0",
+     "author": "Gugerell",
+     "lat": 48.22632917,
+     "lng": 16.33542,
+     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Park signs in Vienna Category:Self-published work"
+    }
+   ]
+  },
+  "vie_031": {
+   "city": "Vienna",
+   "name": "The Sessile Oak of Belvedereallee",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal 818 2011-09-24 0106 Wien 02 Prater Traubeneiche Plakettte GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Naturdenkmal_818_2011-09-24_0106_Wien_02_Prater_Traubeneiche_Plakettte_GuentherZ.JPG/960px-Naturdenkmal_818_2011-09-24_0106_Wien_02_Prater_Traubeneiche_Plakettte_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2011-09-24_0106_Wien_02_Prater_Traubeneiche_Plakettte_GuentherZ.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.19236806,
+     "lng": 16.42928806,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2011-09-24 0108 Wien 02 Prater Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Naturdenkmal_818_2011-09-24_0108_Wien_02_Prater_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2011-09-24_0108_Wien_02_Prater_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2011-09-24_0108_Wien_02_Prater_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.19236806,
+     "lng": 16.42928806,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2011-09-24 0110 Wien 02 Prater Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Naturdenkmal_818_2011-09-24_0110_Wien_02_Prater_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2011-09-24_0110_Wien_02_Prater_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2011-09-24_0110_Wien_02_Prater_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.19236806,
+     "lng": 16.42928806,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2011-09-24 0111 Wien 02 Prater Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Naturdenkmal_818_2011-09-24_0111_Wien_02_Prater_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2011-09-24_0111_Wien_02_Prater_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2011-09-24_0111_Wien_02_Prater_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY 3.0",
+     "author": "GuentherZ",
+     "lat": 48.19236806,
+     "lng": 16.42928806,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2013-05-09 0359 Wien 02 Prater Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Naturdenkmal_818_2013-05-09_0359_Wien_02_Prater_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2013-05-09_0359_Wien_02_Prater_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2013-05-09_0359_Wien_02_Prater_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.19227389,
+     "lng": 16.42810611,
+     "cats": "Category:Austria photographs taken on 2013-05-09 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2013-05-09 0362 Wien 02 Prater Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Naturdenkmal_818_2013-05-09_0362_Wien_02_Prater_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2013-05-09_0362_Wien_02_Prater_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2013-05-09_0362_Wien_02_Prater_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.19227389,
+     "lng": 16.42810611,
+     "cats": "Category:Austria photographs taken on 2013-05-09 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D80 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2014-03-20 (10) Wien02 Belvedereallee Traubeneiche.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Naturdenkmal_818_2014-03-20_%2810%29_Wien02_Belvedereallee_Traubeneiche.JPG/960px-Naturdenkmal_818_2014-03-20_%2810%29_Wien02_Belvedereallee_Traubeneiche.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2014-03-20_(10)_Wien02_Belvedereallee_Traubeneiche.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.19274167,
+     "lng": 16.428375,
+     "cats": "Category:Austria photographs taken on 2014-03-20 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2014-03-20 (12) Wien02 Belvedereallee Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Naturdenkmal_818_2014-03-20_%2812%29_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2014-03-20_%2812%29_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2014-03-20_(12)_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.19242833,
+     "lng": 16.42857,
+     "cats": "Category:Austria photographs taken on 2014-03-20 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2014-03-20 (13) Wien02 Belvedereallee Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Naturdenkmal_818_2014-03-20_%2813%29_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2014-03-20_%2813%29_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2014-03-20_(13)_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.19242833,
+     "lng": 16.42857,
+     "cats": "Category:Austria photographs taken on 2014-03-20 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    },
+    {
+     "title": "File:Naturdenkmal 818 2014-03-20 (16) Wien02 Belvedereallee Traubeneiche GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Naturdenkmal_818_2014-03-20_%2816%29_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG/960px-Naturdenkmal_818_2014-03-20_%2816%29_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_818_2014-03-20_(16)_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.19242833,
+     "lng": 16.42857,
+     "cats": "Category:Austria photographs taken on 2014-03-20 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+    }
+   ]
+  },
+  "vie_032": {
+   "city": "Vienna",
+   "name": "The Elder Kugeltrompetenbaum of Schrankgasse",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal 820 2014-05-14 (11) Wien07 Schrankgasse7-9 Kugeltrompetenbaeume GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Naturdenkmal_820_2014-05-14_%2811%29_Wien07_Schrankgasse7-9_Kugeltrompetenbaeume_GuentherZ.JPG/960px-Naturdenkmal_820_2014-05-14_%2811%29_Wien07_Schrankgasse7-9_Kugeltrompetenbaeume_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_820_2014-05-14_(11)_Wien07_Schrankgasse7-9_Kugeltrompetenbaeume_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.20388,
+     "lng": 16.35407833,
+     "cats": "Category:Austria photographs taken on 2014-05-14 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 820 (Wien-Neubau)"
+    }
+   ]
+  },
+  "vie_033": {
+   "city": "Vienna",
+   "name": "The Younger Kugeltrompetenbaum of Schrankgasse",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal 820 2014-05-14 (11) Wien07 Schrankgasse7-9 Kugeltrompetenbaeume GuentherZ.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Naturdenkmal_820_2014-05-14_%2811%29_Wien07_Schrankgasse7-9_Kugeltrompetenbaeume_GuentherZ.JPG/960px-Naturdenkmal_820_2014-05-14_%2811%29_Wien07_Schrankgasse7-9_Kugeltrompetenbaeume_GuentherZ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_820_2014-05-14_(11)_Wien07_Schrankgasse7-9_Kugeltrompetenbaeume_GuentherZ.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "GuentherZ",
+     "lat": 48.20388,
+     "lng": 16.35407833,
+     "cats": "Category:Austria photographs taken on 2014-05-14 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 820 (Wien-Neubau)"
+    }
+   ]
+  },
+  "vny_001": {
+   "city": "Villeneuve",
+   "name": "The Plane Tree of the Ile de Peilz",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vln_008": {
+   "city": "Vilnius",
+   "name": "The Sapiegos Park Linden",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Sapiegų parko liepa.JPG (Wikidata Q20503989)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sapieg%C5%B3_parko_liepa.JPG/960px-Sapieg%C5%B3_parko_liepa.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Sapieg%C5%B3_parko_liepa.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 54.698333,
+     "lng": 25.309083,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Information boards in Lithuania Category:Natural heritage sites in Lithuania with known IDs Category:Self-published work Category:Taken with Sony DSC-HX300 Category:The oldest linden (Vilnius)",
+     "source": "wikidata/Q20503989"
+    },
+    {
+     "title": "iNat obs 32659653 (Pyrrhocoris apterus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/51241513/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/32659653",
+     "licence": "CC BY-SA",
+     "author": "(c) Veljo Runnel, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "54.697845459,25.3101825714"
+    }
+   ]
+  },
+  "vln_009": {
+   "city": "Vilnius",
+   "name": "The Pine of Kalnai Park",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vln_010": {
+   "city": "Vilnius",
+   "name": "The Amur Cork Trees and Crimean Linden of Bernardinai Garden",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Traditional craft sellers in the Bernardinai garden in Vilnius.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Traditional_craft_sellers_in_the_Bernardinai_garden_in_Vilnius.jpg/960px-Traditional_craft_sellers_in_the_Bernardinai_garden_in_Vilnius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Traditional_craft_sellers_in_the_Bernardinai_garden_in_Vilnius.jpg",
+     "licence": "CC BY 3.0 pl",
+     "author": "Radosław Botev",
+     "lat": 54.68397,
+     "lng": 25.29629,
+     "cats": "Category:2024 in Vilnius Category:Bernardinai garden Category:CC-BY-3.0-PL Category:Crafts of Lithuania Category:Files with coordinates missing SDC location of creation Category:Fundacja Kontroli Społecznej Nomos - Litwa Category:Lithuania photographs taken on 2024-06-30 Category:Self-published work Category:Street vendors in Lithuania"
+    },
+    {
+     "title": "File:Wicker baskets Bernardinai garden Vilnius.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Wicker_baskets_Bernardinai_garden_Vilnius.jpg/960px-Wicker_baskets_Bernardinai_garden_Vilnius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wicker_baskets_Bernardinai_garden_Vilnius.jpg",
+     "licence": "CC BY 3.0 pl",
+     "author": "Radosław Botev",
+     "lat": 54.684173,
+     "lng": 25.295263,
+     "cats": "Category:2024 in Vilnius Category:Baskets of Lithuania Category:Bernardinai garden Category:CC-BY-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Fundacja Kontroli Społecznej Nomos - Litwa Category:Lithuania photographs taken on 2024-06-30 Category:Self-published work Category:Wicker baskets"
+    }
+   ]
+  },
+  "vln_011": {
+   "city": "Vilnius",
+   "name": "The Philologists' Birch of Sarbievijaus Courtyard",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
+  },
+  "vln_012": {
+   "city": "Vilnius",
+   "name": "The Lazdynai Linden",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Lazdynai, Vilnius, Lithuania - panoramio (9).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Lazdynai%2C_Vilnius%2C_Lithuania_-_panoramio_%289%29.jpg/960px-Lazdynai%2C_Vilnius%2C_Lithuania_-_panoramio_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lazdynai,_Vilnius,_Lithuania_-_panoramio_(9).jpg",
+     "licence": "CC BY 3.0",
+     "author": "VietovesLt",
+     "lat": 54.68415423,
+     "lng": 25.21958729,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Lazdynai Category:Lithuania photographs taken on 2014-07-21 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 8209965"
+    },
+    {
+     "title": "File:Lazdynai Vilnius.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Lazdynai_Vilnius.JPG/960px-Lazdynai_Vilnius.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lazdynai_Vilnius.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Umnik",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:5403 (type of buildings) Category:Architektų Street in Vilnius Category:CC-BY-3.0 Category:Images with annotations Category:Lazdynai Category:Self-published work Category:Taken with Sony DSC-H7"
+    },
+    {
+     "title": "File:Vilnius, Lazdynai, Televizijos bokštas.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Vilnius%2C_Lazdynai%2C_Televizijos_bok%C5%A1tas.jpg/960px-Vilnius%2C_Lazdynai%2C_Televizijos_bok%C5%A1tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vilnius,_Lazdynai,_Televizijos_bok%C5%A1tas.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Terminator216",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2024 in Vilnius Category:CC-BY-SA-4.0 Category:Lazdynai Category:Self-published work"
+    },
+    {
+     "title": "File:Vilnius, Lazdynai (2).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Vilnius%2C_Lazdynai_%282%29.jpg/960px-Vilnius%2C_Lazdynai_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vilnius,_Lazdynai_(2).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Terminator216",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2024 in Vilnius Category:CC-BY-SA-4.0 Category:Lazdynai Category:Lithuania photographs taken on 2024-06-08 Category:Photographs of flags in Vilnius Category:Self-published work"
+    },
+    {
+     "title": "File:Vilnius TV Tower reflected in a puddle at Lazdynai.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Vilnius_TV_Tower_reflected_in_a_puddle_at_Lazdynai.jpg/960px-Vilnius_TV_Tower_reflected_in_a_puddle_at_Lazdynai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vilnius_TV_Tower_reflected_in_a_puddle_at_Lazdynai.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Illustr",
+     "lat": 54.68306,
+     "lng": 25.212387,
+     "cats": "Category:Architektų Street in Vilnius Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images with annotations Category:Lazdynai Category:Lithuania photographs taken on 2019-06-17 Category:Puddles in Vilnius Category:Reflections in puddles Category:Self-published work Category:Vilnius TV Tower Category:Water reflections of structures in Lithuania"
+    }
+   ]
+  },
+  "vln_013": {
+   "city": "Vilnius",
+   "name": "The Dvarcionys Oak",
+   "checked": "2026-09-13",
+   "sweep": 5,
+   "candidates": []
   }
  },
  "notes": [
