@@ -651,10 +651,16 @@
       "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
       "notes": "Coordinate is Shimodachiuri-gomon gate itself, verified via OSM/Nominatim (35.0195774/135.7595584, tagged as the gate building), matching the story's own 'grows just inside Shimodachiuri-gomon'. Gate-area estimate, not a GPS fix on the trunk, same honest style as kyo_011's Demizu-guchi pin. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_015's; resolved this pass. Note this gate sits only ~25m from kyo_011's own coordinate despite both trees' stories describing them as being a short walk apart in the same southwest corner; kyo_011's own pin (already published, location_precision approximate) may itself be imprecise, worth a future pass rather than touched here without stronger evidence.",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/kyo_017-camphor-of-shimodachiuri-gate-kyoto-gyoen.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "4f9e3110-5807-4226-951e-537c61658dee",
+        "note": "Photographed by a reader and sent through the app (2026-09-11); a viewing pass approved it on 2026-09-13: Closes a photo gap on kyo_017, which had none. The stone retaining wall and wooden gate in frame match the recognise line exactly (\"just inside Shimodachiuri-gomon in the west wall\"); the crown and trunk fill the frame, daylight, in leaf, good exposure. Species seen: single grey-barked trunk, dense broad rounded evergreen crown consistent with a mature Camphor Tree (Cinnamomum camphora). Fits the description: a modest-sized camphor standing just inside a wooden temple gate in a stone retaining wall, matching the small camphor at Shimodachiuri-gomon.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "how_to_recognise": "You can recognise it by being the small camphor, 12.3 metres tall on a trunk 2.76 metres round, not the far larger one at Munakata Shrine nearby. It stands just inside Shimodachiuri-gomon in the west wall."
     },

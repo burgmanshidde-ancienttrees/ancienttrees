@@ -1,0 +1,21 @@
+[
+  {
+    "sighting_id": "4f9e3110-5807-4226-951e-537c61658dee",
+    "verdict": "approve",
+    "reason": "Closes a photo gap on kyo_017, which had none. The stone retaining wall and wooden gate in frame match the recognise line exactly (\"just inside Shimodachiuri-gomon in the west wall\"); the crown and trunk fill the frame, daylight, in leaf, good exposure.",
+    "species_seen": "single grey-barked trunk, dense broad rounded evergreen crown consistent with a mature Camphor Tree (Cinnamomum camphora)",
+    "species_match": "yes",
+    "description_seen": "a modest-sized camphor standing just inside a wooden temple gate in a stone retaining wall, matching the small camphor at Shimodachiuri-gomon",
+    "description_match": "yes"
+  },
+  {
+    "sighting_id": "fb94d08d-5332-4d3f-b84e-f53a70b67315",
+    "verdict": "hold",
+    "reason": "Identical frame to 4f9e3110 (same file size, taken 8 seconds apart), which is being published instead. Held as a duplicate capture, not a rejection of the tree."
+  },
+  {
+    "sighting_id": "7f3f45aa-1c10-4e36-9562-dc650edd4424",
+    "verdict": "hold",
+    "reason": "Taken 19 seconds before the other two of the same visit but shows a completely different tree: multi-stemmed, moss-covered, deeply fissured bark, standing over a woodpile in what looks like open ground, with no gate or stone wall anywhere in frame. Does not match the recognise line for kyo_017 (a single-trunk camphor just inside Shimodachiuri-gomon). Likely a different tree encountered on the same walk and mis-tagged by the app's own-pin coordinate (the CollectSheet writes our pin rather than the phone's fix, so distance-0 proves nothing here). Held rather than rejected: it may be a genuinely good unmapped tree worth a lead, but cannot be placed without more information."
+  }
+]

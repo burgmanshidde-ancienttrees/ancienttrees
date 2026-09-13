@@ -7881,6 +7881,24 @@
         "note": "write pass on the single verified tree in data/research/milan-verified.json (mil_025, La Pianta di Manzoni), 24 -> 25. The whole job was keeping one bridge claim out of the prose: the tree's local name is Manzoni's and Villa Litta was Count Trivulzio's salon with Manzoni among its guests, and no source joins those two facts, so the story states the name, states the salon, says plainly that nobody has recorded why the tree carries it and asks the reader. Girth 410 cm is attributed in the prose to a plaque copied down by a passer-by rather than to the MASAF register, whose sheet has no girth field at all. No age anywhere and none derived. No best_time: a single plane with no documented peak, and the park's Siamese pair already holds the bare-silhouette badge here. Italian overlay written the same day (preflight refuses a short overlay outright) and the stale count promises fixed on both sides: English intro/meta/question_meta/FAQ, Italian title/meta/intro/question_meta/FAQ, all of which still said twenty-three or twenty-four. Tokens are an estimate, inflated well past the 15k target by the pass running in a harness that resends the full CLAUDE.md system reminder (~25k) every turn, which BRIEF_WRITING.md tells a write pass not to read at all.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Tokyo (tok_018-021 candidates)",
+        "kind": "verify",
+        "tokens": 92000,
+        "trees": 4,
+        "note": "Deepen pass on Tokyo (17->21 target 20). 4 verified from 10 register + 7 wikidata candidates; 3 confirmed duplicates of already-published trees, 2 blocked (avenue not a single point, school with no public-access evidence), 6 unresearched leads recorded for a future pass.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Tokyo (tok_018-021)",
+        "kind": "write",
+        "tokens": 62000,
+        "trees": 4,
+        "note": "4 verified Tokyo trees written, 2 with honest girth discrepancies carried, 1 with approximate-pin caveat in prose; ~15.5k/tree, inflated by a 4-tree batch paying the tone-calibration read once over four instead of twenty (only file pending per passcheck.py --pending at the time).",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
