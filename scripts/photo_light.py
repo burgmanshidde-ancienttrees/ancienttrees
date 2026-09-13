@@ -28,13 +28,17 @@ need a viewing pass. This only takes the obviously bad ones off its plate, and
 a rejection here is cheap in a way that a rejection after downloading and
 looking is not.
 
-macOS only, deliberately: it shells out to sips, which is already on this
-machine, rather than adding an image library to a project whose stack is
-deliberately boring. CI cannot fetch images anyway (the runner's proxy blocks
-upload.wikimedia.org), so a check that only works in a session is a check that
-works exactly where the viewing pass happens.
+Built for macOS, shelling out to sips rather than adding an image library to a
+project whose stack is deliberately boring. That reasoning stopped holding on
+2026-09-01: the "CI cannot fetch images anyway" premise it was written on was
+retired the same day (upload.wikimedia.org is reachable fine), and a night
+run now takes viewing passes on Linux, where there is no sips at all. Rather
+than add a new dependency for this alone, `_bmp_pixels` falls back to Pillow
+(already used by other scripts here) when sips is not on PATH; the scoring
+and thresholds below are unchanged either way.
 """
 import os
+import shutil
 import struct
 import subprocess
 import sys
@@ -64,11 +68,30 @@ LAMPLIT_COLOUR = 0.62
 LAMPLIT_BRIGHTNESS = 90
 
 
+def _bmp_pixels_pillow(path, size):
+    """Same contract as the sips path below, for a machine with no sips."""
+    import warnings
+    from PIL import Image
+    with Image.open(path) as im:
+        im = im.convert("RGB")
+        im.thumbnail((size, size))
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", DeprecationWarning)
+            return list(im.getdata())
+
+
 def _bmp_pixels(path, size=64):
     """A small BMP of the image, as (r, g, b) triples.
 
     sips writes a bottom-up 24-bit BMP with 4-byte aligned rows; that is a
-    dozen lines to parse and needs nothing but the standard library."""
+    dozen lines to parse and needs nothing but the standard library. Where
+    sips is not on PATH (any non-macOS box, which now includes night runs
+    since viewing passes moved off the "CI cannot fetch images" premise
+    retired 2026-09-01), Pillow does the same downsize-and-read job; it is
+    already a project dependency (photo_colour_check.py, sightings_publish.py)
+    rather than a new one."""
+    if shutil.which("sips") is None:
+        return _bmp_pixels_pillow(path, size)
     with tempfile.NamedTemporaryFile(suffix=".bmp", delete=False) as fh:
         tmp = fh.name
     try:
