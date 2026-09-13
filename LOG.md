@@ -1,6 +1,74 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 27, previous attempt stopped after 83 min with 37 min unspent, shipped nothing) - Picked up an orphaned photo pass, a title-budget fix, a preflight fix, and two more photo passes (Vienna 3 approved)
+
+Followed the resume checklist. No stale claims (`passcheck.py --claims`),
+`leads.py --ready` empty, no new submissions or sightings. Found 6
+uncommitted files from an EARLIER attempt in this same window that had
+never been committed: a photo-judge pass on Prague/Singapore/Valencia (2
+approved: prg_026, prg_030; 2 held: sgp_033, vlc_023; 59 rejected).
+Verified it against the diffs, committed and pushed it first so it was
+not lost.
+
+Then worked the ladder: rung 1-3 clear, rung 4 (`scout_next.py --target`,
+`city_queue.py --next`) nothing new (Taormina/Ravenna/Trier/Niagara Falls
+already documented dead ends earlier today per CURATION.md), rung 7/8
+(`recognise.py --stuck`, `pagegaps.py`) both at 0. Ran `photo_hunt.py
+--recheck` (free API sweep) since the shortlist was empty; it queued
+candidates concentrated in Vienna, Venice, Venlo and Verona, all four on
+today's depth-allowed roster (DATA.md 2026-09-12). Dispatched two
+photo-judge passes in parallel:
+
+- **Venice/Venlo/Verona** (4 trees, 7 candidates): all rejected. Three
+  archival B&W/aerial photos with no tree in frame at all, a Venice palm
+  whose centre band is the San Servolo building facade (and which reads
+  as the wrong Phoenix species besides), three Giardino Giusti garden
+  views of the cypress avenue/fountain rather than "the Yew and Laurel
+  Wood" the story points at. Cost 34k tokens, 0 approved.
+- **Vienna** (8 trees, 30 candidates): 3 approved. vie_026 and vie_029
+  get photos of Rathauspark's other two protected planes; the geotags
+  (GuentherZ's ND 567 file 11m from vie_026's pin, ND 566 23m from
+  vie_029's) settled which pin is which, closing an open question in
+  vie_029's own verify_notes. vie_027 gets a photo of the Hugelgasse
+  plane named for its own register address. 27 rejected, mostly 14
+  Schonbrunn candidates that were geosearch noise 750-800m from the
+  pins (one was the wrong species entirely: ND 179, the pagoda tree our
+  own story says was destroyed). photo_light.py could not run at all
+  ("could not read: No such file or directory: 'sips'") since it only
+  had a macOS code path; fixed it with a Pillow fallback (already a
+  project dependency elsewhere) rather than leaving every future Linux
+  viewing pass blind to exposure. Cost 71k tokens, 3 approved.
+
+Also fixed two things found while working the ladder rather than
+researched fresh:
+
+- **REVIEW.md's WARN** (`note_a_reader_photograph_is_not_a_reason()`
+  crossing its own "exactly one" trigger on kyo_017 and kyo_019): both
+  trees carry their own city/park government source (kyoto.lg.jp,
+  kyotogyoen.go.jp), unlike the Nara trees the check was built for,
+  which had none. A verified source now counts as a reason on its own,
+  same as an age or measurement, rather than flipping the check to a
+  build-breaking FAIL on two legitimately-sourced trees.
+- **REVIEW.md's NOTE** (21 pages falling through to a bare "Ancient
+  Trees in X" title with no count or age because a long place name
+  burned the whole 60-char budget): added a compact `seeN` fallback
+  ("5 to See" / "One Tree to See") before the bare title. Rescues 20 of
+  the 21, verified against a fresh build; Chapel Hill, North Carolina is
+  the one genuinely too long and still falls through honestly. The head
+  phrase "Ancient Trees in [City]" is unchanged, so this does not touch
+  the running copy test (Contract C v1.16).
+
+Build (5621 pages) and both `qa.py` (8708 pages) runs clean before each
+push; `preflight.py` (598 cities, 0 problems) and `superlatives.py` (370
+claims, no collisions) also clean. A third photo-judge pass on Berlin (6
+trees, 40 candidates, also depth-allowed at 176 impressions) is running
+in the background; its result lands in the next entry.
+
+Week budget: ~286 min left of the rolling 1,000-1,400 (shared with
+Hidde's own sessions); `run_health.py --week` showed 4714/5000 and 0
+limit deaths at the start of this continuation.
+
 ## 2026-09-13 (continuation 26, previous attempt stopped after 40 min with 80 min unspent) - 3 submissions processed (1 real pin correction), Ottawa photo queue cleared (0 usable)
 
 Picked up per the resume checklist: no stale claims, `leads.py --ready`
