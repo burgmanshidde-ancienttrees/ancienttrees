@@ -85,13 +85,16 @@ jobs:
 
       - name: Commit them
         run: |
-          if git diff --quiet && git diff --cached --quiet; then
+          git config user.name "claude[bot]"
+          git config user.email "41898282+claude[bot]@users.noreply.github.com"
+          # STAGE FIRST, then ask. The first version asked before staging, and
+          # a brand new file is untracked, so `git diff` saw nothing and the
+          # job reported success having committed nothing at all.
+          git add -A docs/screens
+          if git diff --cached --quiet; then
             echo "the pictures are identical to what is already committed"
             exit 0
           fi
-          git config user.name "claude[bot]"
-          git config user.email "41898282+claude[bot]@users.noreply.github.com"
-          git add -A docs/screens
           git commit -m "Screens: ${{ inputs.screens }} from iOS run ${{ inputs.run_id }}"
           git pull --rebase --autostash -q
           git push
