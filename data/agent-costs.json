@@ -7908,6 +7908,15 @@
         "note": "Session work (not agent-dispatched), tokens not separately metered. Judged 45 candidates against the Cadiz standard across 6 depth-allowed cities: 3 approved (lon_016 Great Plane of Brunswick Square, lon_013 Dorchester Plane, vie_023 Plane of Dr Karl Lueger-Platz, the last confirmed via a 4.5m iNat coordinate match despite a species-tag mismatch), 42 rejected (building facades/reliefs, Christmas trees, memorial plaques, wrong species, leaf/canopy close-ups with no trunk, wrong trees). Also judged rung-1 reader sighting d0e24fa3 (not a tree, bedroom photo) and confirmed REVIEW.md's one WARN already fixed by an earlier pass.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "ageToken() BLOCKER fix (Trainiskis trn_001)",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Rung 2 work: fixed a fabricated age (planting year 2017 printed as an age) in site/src/lib/tree-copy.ts, added a qa.py ratchet check, recorded via health.py --answer. Session work, tokens not separately metered.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
