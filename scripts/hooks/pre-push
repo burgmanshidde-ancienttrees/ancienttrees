@@ -29,6 +29,9 @@
 #               cannot drift while nobody looks at the dark one in daylight
 #   crosscheck  a feed field the website sends is decoded by the app, and the
 #               reverse, so a FEATURE cannot reach one surface only (2026-09-12)
+#   pluralcheck a count interpolated into a string with the plural hardcoded
+#               on it, which reads fine until the count is exactly 1 and
+#               nobody tests with exactly 1 (recurred three times, 2026-09-12)
 #
 # It only runs when the push actually touches the app, so a night run pushing
 # trees never sees it.
@@ -111,7 +114,7 @@ if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
     fi
 fi
 
-echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark))' || exit 0
+echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark|pluralcheck))' || exit 0
 
 fail=0
 for check in \
@@ -121,7 +124,8 @@ for check in \
     "scripts/conventioncheck.py" \
     "scripts/darkcheck.py" \
     "scripts/standingpoint.py" \
-    "scripts/map_style_dark.py --check"
+    "scripts/map_style_dark.py --check" \
+    "scripts/pluralcheck.py"
 do
     # shellcheck disable=SC2086
     if ! out=$(python3 $check 2>&1); then

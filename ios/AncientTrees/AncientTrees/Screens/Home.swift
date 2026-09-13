@@ -494,7 +494,7 @@ struct HomeView: View {
     private var cityShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Our favourite tree cities",
-                        subtitle: "\(cities.count) places worth an afternoon",
+                        subtitle: cities.count == 1 ? "1 place worth an afternoon" : "\(cities.count) places worth an afternoon",
                         more: .index(.cities))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
@@ -758,7 +758,7 @@ struct CityWalkCard: View {
                 Spacer(minLength: 6)
                 if locked { Chip(text: "Plus", tint: Brand.goldInk) }
             }
-            Text("\(walk.count) trees · \(walk.duration)")
+            Text("\(treesLabel(walk.count)) · \(walk.duration)")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
         }
         .padding(14)
