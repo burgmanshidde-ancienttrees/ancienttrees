@@ -1028,13 +1028,20 @@ def note_a_reader_photograph_is_not_a_reason():
     ordinary tree into looking like a find.
 
     The answer to one is not a sentence any more. It is an age, a measurement,
-    or data/leads/, which is the four-tree floor and "would somebody travel for
-    THIS ONE TREE" doing the work a field was standing in for.
+    a verified source, or data/leads/, which is the four-tree floor and "would
+    somebody travel for THIS ONE TREE" doing the work a field was standing in
+    for.
 
-    A NOTE and not a FAIL only because exactly one published tree is in this
-    state on the day the field was removed, and retiring a live page is hard
-    rule 3 and Hidde's call rather than a script's. When that one is settled
-    this goes back to a FAIL; the line is in the report so it cannot be lost.
+    Corrected 2026-09-13 (REVIEW.md WARN, same date): this used to fire on age
+    and measurement alone and hit two trees, kyo_017 and kyo_019, that are not
+    the Nara shape at all. Both carry their own city/park government source
+    (kyoto.lg.jp, kyotogyoen.go.jp) naming the tree, which Nara's four never
+    had; the reader's photograph there was the ONLY thing pointing at the tree.
+    A verified source is real evidence a person besides us thought the tree
+    worth naming, so it now counts as a reason on its own, same as an age or a
+    measurement. This is a NOTE and not a FAIL: retiring a live page is hard
+    rule 3 and Hidde's call rather than a script's, and nothing sourceless has
+    shipped yet to test the FAIL path against.
     """
     out = []
     for path in sorted(glob.glob("data/cities/*.json")):
@@ -1050,9 +1057,20 @@ def note_a_reader_photograph_is_not_a_reason():
                 continue
             if (tree.get("photo") or {}).get("source") != "contributor":
                 continue
-            out.append("%s (%s) came from a reader's photograph and has no age and "
-                       "no measurement. A photograph is not a reason. Give it a "
-                       "measurement, or move it to data/leads/."
+            # A real Nara-shape failure has NOTHING: no age, no measurement and
+            # no source naming the tree at all. kyo_017 and kyo_019 (2026-09-13
+            # REVIEW.md WARN) crossed the old "exactly one" trigger with neither
+            # age nor girth, but each carries its own city/park government page
+            # (kyoto.lg.jp, kyotogyoen.go.jp) that Nara's four never had, which
+            # is real evidence a person besides us thought the tree worth
+            # naming. So a verified source is a reason on its own, same as an
+            # age or a measurement, and only a tree with none of the three still
+            # flags.
+            if tree.get("verified_sources"):
+                continue
+            out.append("%s (%s) came from a reader's photograph and has no age, "
+                       "no measurement and no source. A photograph is not a "
+                       "reason. Give it one, or move it to data/leads/."
                        % (tree.get("id"), tree.get("name")))
     return out
 
