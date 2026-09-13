@@ -2,11 +2,11 @@
   "city": "Alicante",
   "country": "Spain",
   "status": "needs_curation",
-  "intro": "Sixteen monumental trees stand across five parts of Alicante, fifteen of them figs. Ten cluster in the city centre: four hold Plaza Gabriel Miro, four more in Plaza Portal de Elche and Parque de Canalejas, and a tenth faces Postiguet beach. A kilometre south in Benalua, two more wait in a second cluster, the widest of three figs stands at the station entrance, and a kilometre north in Carolinas Bajas, the smallest stands alone. Two more, apart from any cluster, share Plaza de Calvo Sotelo: a Norfolk Island pine and an uncatalogued fig, both over a century old.",
-  "meta_description": "Sixteen monumental trees in Alicante: giant figs from Plaza Gabriel Miro to Benalua, plus a century-old Norfolk Island pine downtown.",
+  "intro": "Nineteen monumental trees stand across seven parts of Alicante, fifteen of them figs. Ten cluster in the city centre around Plaza Gabriel Miró and Parque de Canalejas, two more wait a kilometre south in Benalúa, and one stands alone in Carolinas Bajas. Plaza de Calvo Sotelo holds a Norfolk Island pine and an uncatalogued fig. At the seaward end of Parque de Canalejas, a monkey puzzle stands in the fenced Panteón de Quijano garden, and a soaring Cook pine towers over three centenary olives in Plaza de Galicia.",
+  "meta_description": "Nineteen monumental trees in Alicante: giant figs, a Norfolk Island pine and two towering araucarias, from Plaza Gabriel Miró to Benalúa.",
   "question_meta": "Alicante's oldest tree is the Ficus de Benalua: over 150 years old, and the widest trunk of any fig on this page.",
   "question_answer": "Alicante's oldest tree is the Ficus de Benalua, over 150 years old by the city's own figure and the widest trunk on this page by far. It stands a kilometre south of the city-centre figs, saved twice from removal: once when the city built a health centre next to it and moved the planned car park to protect its roots, and earlier still when a proposal to transplant it across the barrio was fought off by its own neighbours. Among the nine city-centre figs, only Ficus Gabriel Miro II has a published age, about 120 years, the thickest of the four Moreton Bay figs on Plaza Gabriel Miro. The rest carry no individual date.",
-  "question_context": "Ages are the weak part of the record here, and it is worth knowing why. The Valencian catalogue lists most of these fourteen figs with a girth, a height and a crown spread, and no planting date, because it measures trees rather than dates them. Two exceptions exist. The city government's own record for the Ficus de Benalua states an age over 150 years, tied to a documented planting: a sapling taken before 1860 from what is now the Jardin Botanico and replanted in the garden of the old Chalet de Grau, where it has stood since. And local reporting fills the gap for the thickest fig on Plaza Gabriel Miro, which todoalicante puts at about 120 years old on a canopy of almost forty metres, against a rounder 170 with no measurement behind it. For the rest there is only the setting: Parque de Canalejas was designed in 1886, the Gabriel Miro square took its present shape in 1918, and the station forecourt fig stands at what a 2026 report calls a century-old intersection, a fact about the site rather than a date for the tree. All sixteen stand on free, open ground, none of them gated.",
+  "question_context": "Ages are the weak part of the record here, and it is worth knowing why. The Valencian catalogue lists most of these fourteen figs with a girth, a height and a crown spread, and no planting date, because it measures trees rather than dates them. Two exceptions exist. The city government's own record for the Ficus de Benalua states an age over 150 years, tied to a documented planting: a sapling taken before 1860 from what is now the Jardin Botanico and replanted in the garden of the old Chalet de Grau, where it has stood since. And local reporting fills the gap for the thickest fig on Plaza Gabriel Miro, which todoalicante puts at about 120 years old on a canopy of almost forty metres, against a rounder 170 with no measurement behind it. For the rest there is only the setting: Parque de Canalejas was designed in 1886, the Gabriel Miro square took its present shape in 1918, and the station forecourt fig stands at what a 2026 report calls a century-old intersection, a fact about the site rather than a date for the tree. All nineteen stand on free, open ground, none of them gated.",
   "faq": [
     {
       "q": "What is the oldest tree in Alicante?",
@@ -535,6 +535,102 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as the fig standing closest to the bonfire pyre, its crown burned back in 2026 and wrapped in fireproof tarps every June. It stands on Plaza de Calvo Sotelo, across the square from the araucaria."
+    },
+    {
+      "id": "ali_017",
+      "name": "The Araucaria of Plaza de Santa Teresa",
+      "species": "Monkey Puzzle (Araucaria araucana)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 125,
+      "location": {
+        "address": "Panteón de Quijano, Plaza de Santa Teresa, Alicante",
+        "latitude": 38.3514,
+        "longitude": -0.4843,
+        "neighbourhood": "San Antón"
+      },
+      "story": "A small grove of monkey puzzle trees once filled the centre of this fenced nineteenth-century garden. Only one is left; its neighbours were removed over the years and replaced with younger stock that never caught up, leaving Araucaria araucana standing alone among the obelisk and monument of the Panteón de Quijano.\n\nAt around thirty metres and past its first century, it still wears the reptilian, tightly overlapping leaf scales that gave the species its English name and once armoured it against browsing dinosaurs on the volcanic slopes of central Chile, long before Alicante existed. The city's own tree catalogue puts it at 95 years; the contractor who now maintains the garden says closer to 100. Neither figure is precise enough to argue with the other.\n\nIt is one of three separate Araucaria species scattered across Alicante's public squares, alongside the Norfolk Island pine of Plaza de Calvo Sotelo and a far taller Cook pine over Plaza de Galicia. None of the three shares a square with either of the others, which says something about how whoever planted this city's gardens liked to spread a good conifer around.\n\nThe garden is fenced but not locked: an iron railing, a short staircase, open daily.",
+      "how_to_recognise": "The sole Araucaria araucana left in the garden's grove, unmistakable for its reptilian, overlapping leaf scales and stiff branches. It stands near the Quijano monument at the centre of the fenced garden.",
+      "verified_sources": [
+        "https://web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html (Diario Información, 6 July 2013: an araucaria araucana of 95 years and 30 metres, per the municipal catalogue, standing at Plaza de Santa Teresa/Panteón de Quijano, on the city's own singular-trees route)",
+        "https://brotaalicante.com/araucaria-araucana/ (Brota Alicante, the city's park-maintenance contractor: Plaza Santa Teresa / Panteón de Quijano, approximately 100 years old, 30 metres tall, legally protected; notes several companion Araucaria araucana once stood in the same grove and have since been replaced by younger trees, leaving this one as the sole survivor)",
+        "https://es.wikipedia.org/wiki/Parque_de_Quijano (confirms the park's identity and species list, and that the garden is enclosed by ornamental railings with access via a staircase)"
+      ],
+      "access": "Free, public park (Panteón de Quijano / Plaza de Santa Teresa), open daily 9:00-22:00 per multiple tourism listings; enclosed by an ornamental iron fence with a staircase entrance, not gated shut during those hours",
+      "transport": "About 10-12 minutes on foot from TRAM Luceros (lines L1-L4)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "height_m": 30
+    },
+    {
+      "id": "ali_018",
+      "name": "The Araucaria of Plaza de Galicia",
+      "species": "Cook Pine (Araucaria columnaris)",
+      "age_estimate": "several decades old",
+      "age_min": 35,
+      "age_max": 55,
+      "location": {
+        "address": "Plaza de Galicia, Alicante",
+        "latitude": 38.3389,
+        "longitude": -0.4899,
+        "neighbourhood": "Ensanche Diputación, at the seaward end of Parque de Canalejas"
+      },
+      "story": "Alicante's own walking route for its notable trees calls this the tallest on it: fifty metres, by the city's tree catalogue and by the contractor who maintains it, both citing the same figure independently. That number is worth a raised eyebrow rather than blind repetition: mature Cook pines rarely clear sixty to sixty five metres even in their native New Caledonia, and a cultivated specimen approaching fifty would be exceptional almost anywhere on Earth. It is what the city says, recorded as the city says it.\n\nPlanted by municipal gardeners sometime in the 1970s, though the two sources disagree by five years on exactly when. Araucaria columnaris grows as a single arrow-straight spire, its lower branches long since shed and replaced by short awl-shaped shoots pressed close against the trunk. Captain Cook noted the species on his third voyage and guessed, wrongly, that trunks this straight would make fine ship masts; New Caledonian Cook pine wood turns out to be too brittle for the job.\n\nPlaza de Galicia opened as a public square in 1969, at the seaward end of Parque de Canalejas, on ground that had been a gas works. No gate, no closing hour. A few steps from the tree's base stands a small grove of three centenary olives, sharing the same open plaza.",
+      "how_to_recognise": "By far the tallest tree in Alicante's own singular-trees route, a dense columnar spire over the whole plaza, its lower branches long shed and replaced by short awl-leaved shoots. Nothing else in Plaza de Galicia comes close to its height.",
+      "verified_sources": [
+        "https://web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html (Diario Información, 6 July 2013: an araucaria planted by municipal gardeners about 40 years earlier, now reaching 50 metres, called the tallest specimen on the city's own singular-trees route, standing in Plaza de Galicia)",
+        "https://brotaalicante.com/araucaria-columnaris/ (Brota Alicante names the species as Araucaria columnaris/Cook Pine, Plaza Galicia, reaching 50 metres, age given as 35 years, legally protected)",
+        "https://es.wikipedia.org/wiki/Plaza_de_Galicia_(Alicante) (confirms Plaza de Galicia as a public plaza at the seaward end of Parque de Canalejas, inaugurated 1969 on a former gas-factory site, no gate or opening hours)"
+      ],
+      "access": "Free, open public plaza (Plaza de Galicia), part of the 'El Parque' urbanization at the seaward end of Parque de Canalejas, no gate or opening hours",
+      "transport": "About 12-15 minutes on foot from TRAM Luceros (lines L1-L4); a continuation of the same waterfront walk as the Ficus del Passeig de Canalejas (ali_005)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "height_m": 50
+    },
+    {
+      "id": "ali_019",
+      "name": "The Centenary Olives of Plaza de Galicia",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "centenary",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Plaza de Galicia, Alicante",
+        "latitude": 38.33876,
+        "longitude": -0.4897,
+        "neighbourhood": "Ensanche Diputación, at the seaward end of Parque de Canalejas"
+      },
+      "story": "Three olives stand close enough together in Plaza de Galicia to read as one small grove: the thickest just over three metres round, the other two a little more than half that. A 2013 newspaper survey of the city's biggest and oldest trees called all three centenary and left it there, no year count attached to any of them, which is the honest state of the record.\n\nOlea europaea resists being dated by girth alone. The species survives fire, drought and heavy pruning by suckering back from its own base, so an old grove often turns out to be one tree that slowly became several, or several planted close enough to eventually read as one. Groves like this were common around Spanish towns and country estates for the better part of a century before anyone thought to write down when they went in.\n\nThe regional monumental-tree register lists all three individually, with their own girths, and no planting date, the same silence that covers most of Alicante's monumental figs: a register built to measure a tree rather than to date it.\n\nPlaza de Galicia opened as a public square in 1969, on the site of a former gas works, at the seaward end of Parque de Canalejas. Free, unfenced, no closing hour. A soaring Cook pine, one of the tallest trees on the city's own singular-trees route, stands a few steps away.",
+      "how_to_recognise": "A small grove of three registered olives standing together, within about fifteen metres of each other, in the same plaza as the tall araucaria (ali_018); the thickest of the three has a trunk just over three metres round.",
+      "verified_sources": [
+        "https://web.archive.org/web/20241203122828/https://www.informacion.es/alicante/2013/07/06/vecinos-altos-longevos-6617509.html (Diario Información, 6 July 2013: three centenary olives noted in this plaza, alongside its araucaria)",
+        "Generalitat Valenciana catálogo de árboles monumentales y singulares register (register_ids 3085, 3086, 3087; three individually registered Olea europaea within about 15 metres of each other, girths 1.7m, 3.0m and 3.1m)",
+        "https://es.wikipedia.org/wiki/Plaza_de_Galicia_(Alicante) (confirms Plaza de Galicia as an open public plaza, no gate or opening hours)"
+      ],
+      "access": "Free, open public plaza (Plaza de Galicia), part of the 'El Parque' urbanization at the seaward end of Parque de Canalejas, no gate or opening hours",
+      "transport": "About 12-15 minutes on foot from TRAM Luceros (lines L1-L4); a continuation of the same waterfront walk as the Araucaria of Plaza de Galicia (ali_018), standing a few steps from it",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "girth_cm": 310
     }
   ]
 }
