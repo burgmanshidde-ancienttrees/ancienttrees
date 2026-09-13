@@ -11,6 +11,31 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 - Sintra: sixth consecutive verify pass confirms exhaustion, 0 trees
+
+Dispatched a verify pass on Sintra (target 20, was at 5, real ICNF register
+supply looked promising at first glance: 30 unmined of 49 candidates within
+20km). Every candidate within the walkable radius turned out to be either
+already published or already `blocked` in `data/leads/sintra.json` by one of
+the five prior passes. Checked genuinely new angles this time rather than
+re-running the register sweep: serradesintra.net's grandes-arvores page (its
+one named entry, "Feteira da Rainha," is a place, not a tree), Monserrate's
+other official recanto pages (generic, no individual specimens), the Feteira
+da Rainha recanto itself (a "tuia-gigante" likely already published as
+sin_001, plus an uncorroborated travel-article claim of "two enormous
+sequoias" left as an open lead, no measurement or pin), Convento dos
+Capuchos (a WebSearch AI-summary invented specific ash/plane trees there;
+neither the official page nor English Wikipedia mentions them, caught and
+discarded per the search-summary-is-a-lead-never-a-source rule), and Jardim
+da Preta (a legend about a viewpoint, not a tree). Appended a dated note to
+`data/leads/sintra.json` so a seventh pass does not re-walk this ground.
+
+**Honest conclusion: Sintra's five published trees are likely near its
+ceiling at the current evidence bar**, short of the target of 20, unless a
+future pass gets working access to monumentaltrees.com's Monserrate page or
+a source individually names and measures a Sintra sequoia, ash or box
+specimen. Cost: ~78k tokens, 0 trees, logged in data/agent-costs.json.
+
 ## 2026-09-12 (continuation 19) - Zwolle 14 -> 16, two flagged trees finished from a stranded verify pass
 
 Found `data/research/zwolle-verified.json` uncommitted at session start: 2 fully

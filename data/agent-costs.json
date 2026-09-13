@@ -1040,7 +1040,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -7826,6 +7826,15 @@
         "trees": 3,
         "note": "second viewing-pass batch, 13 queued candidates across the next two demand cities (Berlin 47 queued, Porto 66 queued); 3 approved (ber_020 Podbielski Oak, ber_018 Karpfenteich Elm, por_027 Tulip Trees of Praca Pedro Nunes), 10 rejected (facades, a petrol station, a plaque, catkin close-ups, a duplicate angle, an abstract bare-canopy shot) and recorded so the queue does not re-serve them; tokens are a rough estimate, main-session work not a dispatched agent report",
         "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "sintra",
+        "kind": "verify",
+        "tokens": 78000,
+        "trees": 0,
+        "note": "Sixth consecutive pass confirming register+named-specimen exhaustion; caught and discarded a search-summary fabrication (Capuchos ash/plane); no new tree cleared the bar",
+        "wasted": 78000,
         "brief_wrong": false
       }
     ]
