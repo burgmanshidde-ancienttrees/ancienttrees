@@ -66,19 +66,26 @@ struct GlobeMap: UIViewRepresentable {
     /// with not one of his trees on it. The median lands inside whichever
     /// cluster holds most of them, which is a place he has actually been.
     ///
-    /// Latitude is held inside 35 degrees so the planet stays centred in the
-    /// frame rather than showing a pole. Longitude is taken as a plain median,
-    /// which is wrong for a collection straddling the antimeridian and is not
-    /// worth solving: it turns a full circle every few minutes anyway, so the
-    /// cost is one imperfect opening frame.
+    /// It opens on ONE OF YOUR TREES, never on an interpolated point. The
+    /// lower median of an even set is a real member of it, where the ordinary
+    /// median averages the two in the middle, and averaging is the whole fault
+    /// this replaces: two trees, one in Amsterdam and one in Nara, average to
+    /// Siberia. The first picture CI ever took of this screen opened there,
+    /// which is how that was caught.
+    ///
+    /// Both coordinates come from the SAME tree rather than one median per
+    /// axis, or a collection shaped like an L opens on the empty corner.
+    ///
+    /// Latitude is then held inside 35 degrees so the planet stays centred in
+    /// the frame rather than showing a pole. Ordering by plain longitude is
+    /// wrong for a collection straddling the antimeridian and is not worth
+    /// solving: it turns a full circle every few minutes anyway, so the cost is
+    /// one imperfect opening frame.
     static func opening(for points: [(lat: Double, lng: Double)]) -> (lat: Double, lng: Double) {
         guard !points.isEmpty else { return (20, 0) }
-        func median(_ xs: [Double]) -> Double {
-            let s = xs.sorted()
-            return s.count % 2 == 1 ? s[s.count / 2]
-                                    : (s[s.count / 2 - 1] + s[s.count / 2]) / 2
-        }
-        return (min(max(median(points.map(\.lat)), -35), 35), median(points.map(\.lng)))
+        let byLongitude = points.sorted { $0.lng < $1.lng }
+        let pick = byLongitude[(byLongitude.count - 1) / 2]
+        return (min(max(pick.lat, -35), 35), pick.lng)
     }
 
     /// Two dots on opposite sides of the planet, for -globe alone. A forced
