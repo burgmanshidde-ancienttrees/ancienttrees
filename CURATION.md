@@ -11,6 +11,31 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation) - Tokyo 17 -> 21, kyo_017 gets its first photo
+
+Finished a standing verify claim on Tokyo: 4 trees added (tok_018 The Great
+Zelkova of Nerima Hakusan Shrine, tok_019 The Great Ginkgo of Oji Shrine,
+tok_020 The Kaya of Zenyo-ji, tok_021 The Child-Rearing Ginkgo of Zoshigaya
+Kishimojin), all flagged (age estimates are tradition, and two carry an
+honest unresolved girth discrepancy between sources rather than a picked
+winner), 0 photos. 3 register/Wikidata candidates turned out to be
+duplicates of trees already published; 2 blocked (an avenue with no single
+surviving specimen worth the walk, a school with no evidence of public
+access); 6 left as unresearched leads in `data/leads/tokyo.json`. Japanese
+overlay (`data/i18n/ja/tokyo.json`) translated and grown to match.
+
+Separately, a reader photograph (Hidde's own account, filed like any other
+per the 2026-09-08 rule) closed kyo_017's photo gap after a viewing pass:
+two duplicate frames and one mismatched photo of a different tree entirely
+(taken 19 seconds earlier on the same walk, at the same app-recorded
+coordinate, which is the known CollectSheet own-pin gap rather than
+evidence either way) were sorted from the one that actually matches the
+recognise line's gate and wall.
+
+Two new Fukuoka submissions (Hidde's own account) came in mid-session: one
+photographed a tree 818m from anything we publish, filed as a lead; the
+other has no synced photo yet and was left for a later run to pick up.
+
 ## 2026-09-13 - Milan 24 -> 25: the fourth Villa Litta plane, written
 
 Write pass on the single verified tree in `data/research/milan-verified.json`,

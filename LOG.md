@@ -1,6 +1,147 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation) - Tokyo grows to 21, a reader photo published, two new Fukuoka submissions filed
+
+Continuation of the window below (14 min used before it, 91 min left when
+this picked up; the earlier attempt's dispatched Tokyo verify pass had not
+yet returned when it stopped). Recovered the standing Tokyo claim rather
+than starting fresh work: finished it end to end instead.
+
+**Shipped, in order:**
+
+1. **Two new reader submissions (rung 1) processed.** Both are Hidde's own
+   account, filed through the app's collect flow in Fukuoka this morning.
+   One (`d0e24fa3`) carried a photograph with no tree of ours within 818m;
+   filed as a lead in `data/leads/_sightings.json` rather than researched
+   from a single photo. The other (`7A092B72...`) has no matching row in
+   the `sightings` table at all yet (photo may still be mid-upload); left
+   unprocessed for a future run to pick up once it syncs, rather than
+   guessing.
+2. **A viewing pass on 3 queued sightings, all against kyo_017 (Camphor of
+   Shimodachiuri Gate, Kyoto Gyoen), which had no photo.** Two were the
+   same frame taken 8 seconds apart (approved one, held the duplicate); a
+   third, taken 19 seconds earlier in the same visit, showed a completely
+   different tree (multi-stemmed, mossy, no gate or wall in frame, versus
+   the single-trunk camphor beside Shimodachiuri-gomon the recognise line
+   describes) and was held rather than approved, since distance-0 app
+   matches prove nothing here (CollectSheet writes our own pin, not the
+   phone's fix, a known gap). Published via `sightings_publish.py`
+   (needed `pip install pillow`, missing from this environment though
+   nightly.yml already installs it). No mail sent (dry run, no outreach
+   creds in this session) so nothing went to Hidde's own inbox thanking
+   him for his own photo.
+3. **Finished the standing Tokyo verify claim (17->21 of a 20 target,
+   now above it, which is fine: target is a ceiling not a quota).**
+   Dispatched a verify pass on the 10 unmined register rows and 7 Wikidata
+   candidates the passcheck brief listed. It delivered 4: the Great
+   Zelkova of Nerima Hakusan Shrine (tok_018, deliberately `approximate`:
+   the register's 1940 designation date belongs to a companion zelkova
+   that was felled after 2016 typhoon damage, not the survivor below the
+   steps), the Great Ginkgo of Oji Shrine (tok_019, survived the 1945
+   air raids, carries an honest unresolved girth discrepancy, 5.2m now
+   vs 6.36m in 1924), the Kaya of Zenyo-ji (tok_020), and the
+   Child-Rearing Ginkgo of Zoshigaya Kishimojin (tok_021, another
+   unresolved girth discrepancy, 6.63m official vs 11m from a secondary
+   aggregate, carried rather than picked). 3 candidates turned out to be
+   duplicates of already-published trees; 2 were blocked (an avenue with
+   no single collectible specimen left, and a school with no evidence of
+   public access); 6 remain as unresearched leads in `data/leads/tokyo.json`
+   for a future pass. Dispatched a write-stories pass on the 4 (the only
+   file `passcheck.py --pending` showed outstanding anywhere), merged into
+   `data/cities/tokyo.json`, fixed the two contract breaks the growth
+   caused (`question_meta`'s stale "sixteen more" and the Japanese overlay
+   missing all 4 new trees, translated and added to `data/i18n/ja/tokyo.json`
+   with the count promises corrected too), rebuilt, `preflight.py` and
+   `i18ncheck.py` both clean. Released the claim.
+
+Logged both passes to `data/agent-costs.json` (kind verify, ~92k tokens/4
+trees; kind write, ~62k tokens/4 trees, inflated by batching only one
+city's worth rather than 15-20 across cities, because nothing else was
+pending).
+
+**FOR HIDDE, unresolved and not mine to push:** the previous continuation's
+routes.yml race-condition fix is still sitting as a diff in that entry
+below, blocked on this session's GitHub App token lacking `workflows`
+permission. Nothing has changed about that since it was written.
+
+## 2026-09-13 - FOR HIDDE: a one-line workflow fix I can't push myself (permissions)
+
+Continuation of a window an earlier attempt in the same run stopped early
+(14 min used, 106 min left, nothing broken, it just decided it was done).
+Recovered nothing outstanding: no claims standing, `leads.py --ready` is
+empty (0 writable trees), no unprocessed submissions or sightings, rung 2
+(`health.py`) was clear.
+
+**Shipped:** the earlier attempt had already finished Park Oliwski, Gdansk
+(gda_007..012, 6 trees, the dendrological cluster) as a hand-written park
+intro at `data/parks/park-oliwski-gdansk.json`, ready and uncommitted. It
+failed the build on one thing: `meta_description` ran 180 chars against
+Contract H's 155 limit. Trimmed it to 141, rebuilt clean (5613 pages),
+`qa.py` and `preflight.py` both pass, and it is on main now (29bd01b0).
+
+**Also found and fixed data, but the fix itself is stuck.** `routes.yml`'s
+Walking routes workflow failed on 2026-09-12 (`gh run view 34686124978`):
+it computed real routes, committed them locally, rebased cleanly on an
+up-to-date main, and then lost the push to another workflow that landed in
+the same few-hundred-millisecond window, so it just gave up and the whole
+day's route work was thrown away. With 12+ automated pushes a day across
+this project this race will keep recurring on any workflow that commits to
+main. The fix is a five-line retry loop around the existing
+`pull --rebase && push`, and I have it ready, but this session's GitHub App
+token has no `workflows` permission, so pushing it is rejected outright:
+"refusing to allow a GitHub App to create or update workflow `.github/
+workflows/routes.yml` without `workflows` permission." Nothing else in the
+repo is blocked this way, only workflow YAML.
+
+The diff, to paste in by hand (it is nothing but a retry loop, safe to
+apply as-is):
+
+```diff
+--- a/.github/workflows/routes.yml
++++ b/.github/workflows/routes.yml
+@@ -49,6 +49,9 @@ jobs:
+             echo "Every walk already has its route."
+           else
+             git commit -m "Walking routes: the ones new trees had turned back into straight lines"
+-            git -c rebase.autoStash=true pull --rebase
+-            git push
++            for i in 1 2 3 4 5; do
++              git -c rebase.autoStash=true pull --rebase && git push && break
++              echo "push rejected (another workflow got there first), retrying ($i/5)"
++              sleep $((i * 5))
++            done
+           fi
+```
+
+Until this is applied, expect Walking routes to keep occasionally losing a
+day's worth of route computation to the same race; it self-heals the next
+day the schedule runs clean, so nothing is permanently lost, just delayed.
+
+The two things flagged at session start as broken are both already resolved
+by earlier attempts and not by me: the iOS "1 trees" WARN from the
+2026-09-12 fresh-eyes review was fixed in `ced01604` (shared `treesLabel()`
+helper, confirmed at `Home.swift:720`), and the iOS floor-job test flake is
+mid-fix in an in-flight `ios.yml` run (34745514916) as this window ends.
+
+Checked the CITY_QUEUE.md ladder for new/deepen work: every "OPENABLE
+TODAY" zero-city is thin (Taormina, Ravenna, Ischia, Trier all confirmed
+register-exhausted or below the six-candidate minimum by earlier passes
+this week; the rest are 1-2 Wikidata leads with from-zero web research
+off). Brisbane's 558-row register turned out to be a bare coordinate
+overlay with no species, age or access field, thinner than a normal
+register and expensive per candidate rather than cheap; Florence and
+Dublin's unmined register rows were mostly flagged as probable duplicates
+of trees we already publish, leaving too few real candidates for a pass.
+Tokyo (17 of a 20 target) had genuine supply: 10 unmined register rows
+(its own designated-tree list plus the Bunkacho national Natural-Monument
+register) and 7 Wikidata candidates. Claimed it (`b49b2ecc`) and dispatched
+a verify pass.
+
+Also noticed the week's shared usage budget is nearly spent (4809/5000
+min), so stopped there rather than fanning out more work: one bounded
+verify pass, wait for it, ship what it finds, done.
+
 ## 2026-09-13 - FOR HIDDE: git push is failing with an expired token, one commit stuck local-only
 
 This continuation recovered the Gdansk claim an earlier attempt in this same
