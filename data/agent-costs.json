@@ -1040,7 +1040,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -7952,6 +7952,24 @@
     "trees": 0,
     "photos_approved": 2,
     "note": "58 candidates viewed across 10 trees: 1 real approval (ber_018 elm, whole-tree frame beats the incumbent bark close-up, old lead kept in photos), 1 re-confirmation of ber_013's live lead, 56 rejects. ber_014/015/021 keep honest gaps. Species check killed two iNat oaks on ber_023 (Q. libani and Q. robur, not Q. rubra); 10 wrong-tree files swapped between ber_022 and ber_023 recorded so the sweep's cross-contamination is not re-judged.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Krakow",
+    "kind": "verify",
+    "tokens": 203302,
+    "trees": 4,
+    "note": "finished a standing verify claim from an earlier attempt this window; deepen pass, 34 -> 38, all 4 fill species genuinely absent from the page (dawn redwood, black poplar, white poplar, french maple); register+wiki join, one new lead (St Salvators churchyard cluster) recorded unverified for a future pass",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Krakow",
+    "kind": "write",
+    "tokens": 119746,
+    "trees": 4,
+    "note": "4 stories + 4 recognition lines for the same deepen pass; no best_time set for any (no phenology file exists for metasequoia glyptostroboides, populus nigra, populus alba or acer monspessulanum)",
     "wasted": 0,
     "brief_wrong": false
    }
