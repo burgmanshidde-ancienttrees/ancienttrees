@@ -119,15 +119,65 @@ def verify():
     return 1 if problems else 0
 
 
+def local_drift():
+    """How far behind the bundled catalogue is, WITHOUT touching the network.
+
+    --check asks the live feed, which is the honest question and needs four
+    fetches and seven megabytes, and it answers nothing at all from a sandbox
+    whose proxy does not allow ancienttrees.app. Neither is a thing a session
+    brief can do on every start.
+
+    This asks the cheap version of the same question: how many trees does this
+    checkout publish, and how many did the copy inside the app binary have. The
+    two only differ because the bundle is written at RELEASE time (release.py
+    step 3) while the machine adds trees all day, so the number is the drift
+    since the last archive.
+
+    Worth being clear about what it is not: it is not the app showing old data.
+    A running app replaces this on launch, and the bundle is the floor for a
+    fresh install and for a phone with no signal. It is what somebody meets in
+    the first seconds, which is also the moment they decide whether the thing
+    is any good, and it is what you get if you press Run in Xcode rather than
+    going through release.py.
+    """
+    path = DATA / "trees.json"
+    if not path.exists():
+        return None, None
+    try:
+        bundled = json.loads(path.read_text())
+    except Exception:
+        return None, None
+    have = bundled.get("count")
+    if not isinstance(have, int):
+        have = len(bundled.get("trees") or [])
+    published = 0
+    for city in sorted((ROOT / "data" / "cities").glob("*.json")):
+        try:
+            published += len(json.loads(city.read_text()).get("trees") or [])
+        except Exception:
+            continue
+    return have, published
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
                     help="report drift without writing")
     ap.add_argument("--verify", action="store_true",
                     help="check the live feed against what the app's model demands")
+    ap.add_argument("--local", action="store_true",
+                    help="drift against this checkout's own data, no network")
     args = ap.parse_args()
     if args.verify:
         return verify()
+    if args.local:
+        have, published = local_drift()
+        if have is None or published is None:
+            print("bundled catalogue: cannot be read")
+            return 0
+        print("bundled catalogue: %d trees, this checkout publishes %d, "
+              "%d behind" % (have, published, published - have))
+        return 0
 
     drift = 0
     for name in FEEDS:
