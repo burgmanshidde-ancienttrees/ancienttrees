@@ -11,6 +11,56 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-09-13 (continuation 28) - Finished an inherited _famous-belgium claim: 6 new single-tree places, 2 Ghent additions, 1 held, 1 duplicate caught
+
+Picked up a verify pass (`_famous-belgium`, claimed by an earlier attempt
+this window, 134 min still on its clock) that had produced 10 verified
+trees in `data/research/famousbelgium-verified.json` but never been
+written up or merged. Ran a write-stories pass on it, then judged the
+single-famous-tree destination test (CLAUDE.md 2026-08-31) on each
+result rather than merging all ten.
+
+**Published as new standalone places** (each below the 4-tree floor
+under the exception, since none clusters with a published city or with
+each other): Bonnerue (`bnr_001`, Li Béni Hesse, one of Belgium's
+largest beeches, damaged, undated), Xhoris (`xho_001`, Tilleul des
+Lognards, a nail tree protected since 1965 on the GR571 trail), Macon
+(`mom_001`, Tilleul de Macon, its own French Wikipedia article, shaped
+into three tiers on twelve posts, protected since 1942), Waremme
+(`wrm_001`, Arbre de la Liberté, planted 22 September 1797), Jalhay
+(`gos_001`, Les Sept Frères de Gospinal, Belgium's largest multi-trunk
+oak, near the Hautes Fagnes) and 's-Gravenvoeren (`gvo_001`, Nagelboom,
+a nail tree and former European Tree of the Year finalist).
+
+**Merged into Ghent** rather than given their own pages, both within
+the day-trip boundary: `gnt_007` (Dorpslinde van Massemen, Belgium's
+Tree of the Year 2016, dendro-dated 378-440 years, ~13.6km from Ghent
+centre, De Lijn bus) and `gnt_008` (the Solitaire Plane of Prudens Van
+Duyseplein, 1.4km from centre). Ghent now has 8 trees.
+
+**Held back**: the Remarkable Lime of Chantemelle (`cha_001`), verified
+and written but carrying nothing beyond a bare Wallonia heritage
+reference number, no age, no girth, no story. Fails the destination
+test on its own evidence ("that is most of the file"); returned to
+`data/leads/_famous-belgium.json` as blocked with the verified record's
+git location noted for a later pass if a distinguishing fact surfaces.
+
+**Caught a duplicate**: the Peace Oak of Wondelgem (`wdg_001`) is the
+same tree as the already-published `gnt_006`, 75m off pin, same
+planting year, same heritage object. Not merged; its one new fact (a
+2026 Stad Gent renovation news item) was folded into `gnt_006` as a
+third source instead.
+
+**Two mechanical fixes along the way**: an id collision (`mac_001`
+already belongs to Macugnaga, Italy; reassigned to `mom_001`) and four
+species fields corrected to the site's one canonical common name (hard
+rule 9): Large-leaved Lime, Horse Chestnut, London Plane, all previously
+written with a non-canonical qualifier.
+
+No photos on any of the 8 new/merged trees; an honest gap, left for a
+photo pass. `_famous-belgium.json` still holds 14 further leads for a
+future verify pass.
+
 ## 2026-09-13 (continuation 27) - Venice/Venlo/Verona photo hunts: dead ends documented; Vienna's Rathauspark trio completed
 
 Venice's ven_011 (Palm of San Servolo), Venlo's vnl_001 and vnl_007, and

@@ -1,0 +1,64 @@
+{
+  "city": "Waremme",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Waremme is a town in the Hesbaye region of Liège province, and its mapped tree was planted for a republic Belgium never belonged to. The Arbre de la Liberté went into the ground on 22 September 1797, the anniversary of the French Republic, when Waremme was under French rule. The regime it marked is long gone; the lime is still there, on the paved plaza in front of the neoclassical Maison Lejeune-d'Anglure, free to walk up to from the street.",
+  "meta_description": "Waremme's Liberty Tree: a lime planted in 1797 to mark the French Republic, still standing on the plaza before the Maison Lejeune-d'Anglure.",
+  "question_meta": "The Arbre de la Liberté of Waremme, a lime about 230 years old, planted 22 September 1797 to mark the French Republic, still stands on the town's plaza.",
+  "question_answer": "Waremme's only mapped tree is the Arbre de la Liberté, a lime on the paved plaza in front of the Maison Lejeune-d'Anglure. It was planted on 22 September 1797, on the anniversary of the French Republic, making it about 230 years old.",
+  "question_context": "Liberty trees went into the ground across French-controlled Europe in the 1790s, planted to mark the Republic on its own anniversary, and most of them did not last: they were symbols of a regime, and regimes change. Waremme's did last, long past the point where anyone plants a tree to celebrate the French Republic. It stands on the paved plaza in front of the Maison Lejeune-d'Anglure, a neoclassical house built around 1790, which makes the house older than the tree by roughly seven years and the two of them now a matched pair. The house has carried Belgian heritage protection since 25 August 1987, though that listing covers the building and not necessarily the tree in front of it. The position is worth knowing before visiting: the lime stands out on the street frontage rather than inside the house's private grounds, so it can be reached directly from the Avenue Edmond Leburton without asking anybody's permission. Neither source that documents it names the species beyond lime, or gives a girth.",
+  "hero_tree_id": "wrm_001",
+  "oldest_tree_id": "wrm_001",
+  "faq": [
+    {
+      "q": "How old is the Arbre de la Liberté?",
+      "a": "About 230 years. It was planted on 22 September 1797, the anniversary of the French Republic, while Waremme was under French rule."
+    },
+    {
+      "q": "Why was it planted?",
+      "a": "As an arbre de la liberté, a liberty tree, marking the anniversary of the French Republic's founding. Many were planted across French-controlled Europe at the time; this is one of the few still standing."
+    },
+    {
+      "q": "Can I walk up to it?",
+      "a": "Yes. It stands on the paved plaza in front of the Maison Lejeune-d'Anglure, on the street frontage rather than inside the house's private grounds."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Waremme is a town in the province of Liège. The tree stands on Avenue Edmond Leburton 6, in the town centre, reachable on foot; there is no public transport stop at the site itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wrm_001",
+      "name": "Arbre de la Liberté (Waremme)",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "about 230 years",
+      "age_min": 225,
+      "age_max": 235,
+      "girth_cm": null,
+      "location": {
+        "address": "Avenue Edmond Leburton 6, Waremme, on the paved plaza in front of the Maison Lejeune-d'Anglure",
+        "latitude": 50.6976581,
+        "longitude": 5.257401,
+        "neighbourhood": "Waremme, Province de Liège"
+      },
+      "story": "This lime was planted to mark the anniversary of a republic that Belgium has not belonged to for two hundred years. On 22 September 1797, when Waremme and the rest of what is now Belgium were under French rule, it went into the ground as an arbre de la liberté, a liberty tree, on the anniversary of the founding of the French Republic. The regime it was planted for did not last. The tree did, and it is now about 230 years old.\n\nIt stands on the paved plaza in front of the Maison Lejeune-d'Anglure, a neoclassical house built around 1790, which makes the house the elder of the two by roughly seven years. The house has been classified heritage since 25 August 1987, though that protection is the building's and does not necessarily extend to the tree standing in front of it.\n\nThe position is worth knowing before you go. The tree is out on the street frontage rather than inside the private grounds, so you can walk right up to it from Avenue Edmond Leburton without asking anybody's permission.\n\nBoth sources call it simply a tilleul, a lime, and neither says which of the Tilia species it is. Nobody has taped its girth either. If you know, tell us.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique",
+        "https://fr.wikipedia.org/wiki/Maison_Lejeune-d%27Anglure"
+      ],
+      "access": "Free, on a paved public plaza/street frontage; the tree stands in front of the house, not inside its private grounds.",
+      "transport": "In central Waremme, on foot from the town centre; no public transport stop at the site itself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by where it stands: the lime out on the paved plaza in front of the Maison Lejeune-d'Anglure, the neoclassical house at Avenue Edmond Leburton 6, rather than inside its grounds."
+    }
+  ]
+}

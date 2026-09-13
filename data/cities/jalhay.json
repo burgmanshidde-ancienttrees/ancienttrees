@@ -1,0 +1,64 @@
+{
+  "city": "Jalhay",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Jalhay sits on the edge of the Hautes Fagnes, and its mapped tree is the largest multi-trunk oak in Belgium. Les Sept Frères de Gospinal, the seven brothers, was cut back in the eighteenth century and regrew as seven trunks that fused into one body, 7.67 metres round. A nineteenth-century lawyer received clients inside it; two communes used it to argue out their shared border. One of the seven trunks is now dead. It stands on the walking trail between Jalhay and Solwaster, free to reach on foot.",
+  "meta_description": "Les Sept Frères de Gospinal: Belgium's largest multi-trunk oak, seven fused trunks 7.67 metres round, on a trail near the Hautes Fagnes.",
+  "question_meta": "Les Sept Frères de Gospinal, over 300 years old, is Belgium's largest multi-trunk oak: seven fused trunks 7.67 metres round near Jalhay.",
+  "question_answer": "Jalhay's only mapped tree is Les Sept Frères de Gospinal, a pedunculate oak on the trail between Jalhay and Solwaster, opposite the Gospinal forestry house. Its fused trunks measured 7.67 metres round in 2021, making it the largest multi-trunk oak recorded in Belgium. It is over 300 years old.",
+  "question_context": "The name, the seven brothers, describes what happened after the tree was cut back in the mid-eighteenth century: rather than dying, it regrew as seven separate trunks, since fused into a single body large enough that a nineteenth-century lawyer who owned the Gospinal estate is said to have received clients inside it. It also served as the meeting point where officials of the communes of Sart and Jalhay argued out their shared boundary. The measurements agree with each other: a ministerial order protecting it in 2012 recorded 7.44 metres round, and a 2021 visit measured 7.67, roughly a centimetre a year of growth in between. Wallonia had already classified it as remarkable in 1987. The site sign is blunt: over 300 years old, nearing the end of its life, one of the seven trunks already dead, though the 2021 account describes the rest of the canopy as still vibrant. It stands opposite the Gospinal forestry house, on the marked trail between Jalhay and Solwaster, near the Hautes Fagnes.",
+  "hero_tree_id": "gos_001",
+  "oldest_tree_id": "gos_001",
+  "faq": [
+    {
+      "q": "How old is Les Sept Frères de Gospinal?",
+      "a": "Over 300 years, according to the sign at the site. It was cut back in the mid-eighteenth century and regrew as seven trunks that have since fused into one."
+    },
+    {
+      "q": "Why is it called the seven brothers?",
+      "a": "The original trunk was cut back around the mid-1700s and regrew as seven separate stems, which have since fused into a single body 7.67 metres round, the largest multi-trunk oak recorded in Belgium."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes, though it is declining. One of the seven trunks is dead and the site sign says it is nearing the end of its life, but a 2021 visit still found the rest of the canopy vibrant."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The tree stands opposite the Gospinal forestry house, on the marked walking trail between Jalhay and Solwaster, near the Hautes Fagnes. There is no public transport stop at the site; it is reached on foot."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gos_001",
+      "name": "Les Sept Frères de Gospinal",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 767,
+      "location": {
+        "address": "Opposite the Gospinal forestry house, between Jalhay and Solwaster, near the Hautes Fagnes",
+        "latitude": 50.57611111,
+        "longitude": 5.94777778,
+        "neighbourhood": "Gospinal (Jalhay), Province de Liège"
+      },
+      "story": "A nineteenth-century lawyer who owned the Gospinal estate received his clients inside this oak. There was room. Cut back in the middle of the eighteenth century, it regrew as seven trunks that have since fused into one body 7.67 metres round, the largest multi-trunk oak in Belgium, and the reason it is called Les Sept Frères, the seven brothers.\n\nIt did other public work too. Officials of the communes of Sart and Jalhay used it as their meeting point when they argued out where the boundary between them ran.\n\nThe measurements are recent and they agree with each other. The ministerial order that made it a protected monument in 2012 records a girth of 7.44 metres; a visit in 2021 measured 7.67 at seventy centimetres from the ground, roughly a centimetre a year of new wood in between. It stands 26 metres tall. Wallonia had already classified it as a remarkable tree back in 1987.\n\nThe sign on site is blunt about the rest: over 300 years old, and nearing the end of its life. One of the seven trunks is dead and the others carry old wounds, though the account of that 2021 visit describes the canopy as still vibrant. Both of those things are true at once.\n\nIt stands opposite the Gospinal forestry house, on the walking trail between Jalhay and Solwaster near the Hautes Fagnes.",
+      "verified_sources": [
+        "https://www.etaamb.be/fr/document_n2012201787.html",
+        "https://lestetardsarboricoles.fr/wordpress/2022/01/08/les-sept-freres-de-gospinal-belgique/"
+      ],
+      "access": "Free, beside a public nature-walking trail near the Hautes Fagnes.",
+      "transport": "On a marked walking trail between Jalhay and Solwaster; no public transport stop at the site, reached on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the seven trunks fused into a single body 7.67 metres round near the base, one of them dead. It stands opposite the Gospinal forestry house, on the trail between Jalhay and Solwaster."
+    }
+  ]
+}

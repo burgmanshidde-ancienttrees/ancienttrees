@@ -185,6 +185,12 @@
   {
    "name": "If de la décapitation, Braine-le-Château",
    "reason": "Verified as real and alive (yew planted 1568 in the chateau park, per fr.wikipedia list, TVcom local news 2022 and the Royal Syndicat d'Initiative de Braine-le-Château's own brochure) but the park is confirmed PRIVATE: pajawa.be states plainly it is \"exceptionally accessible during occasional activities\" organised by the local tourism syndicate, no free visits, guided tours only, reservation mandatory, and the one documented opening was a single weekend (2020-10-10/11). This is not a standing bookable tour (unlike the Menorca boat exception) but a rare special-event opening, so it fails the genuinely-open test under hard rule 10. Leave as a lead; revisit if the syndicate starts running it as a regular ticketed visit."
+  },
+  {
+   "name": "Remarkable Lime of Chantemelle",
+   "reason": "Verified and written (species undated, no girth, no folklore, no story beyond Wallonia's bare heritage classification 85009-CLT-0008-01), but Chantemelle is not near any published city and the tree does not pass the single-famous-tree destination test ('would somebody travel specifically for THIS ONE TREE', CLAUDE.md 2026-08-31): a classified square-tree with no distinguishing fact is a fine village lime, not a destination. Held rather than published as its own place. Full verified record (sources, coordinates, written story) sits in git history of data/research/famousbelgium-verified.json, commit 9c29a659 and the write-pass commit that followed it, if a later pass finds a fact that changes the verdict.",
+   "lat": 49.653056,
+   "lng": 5.651111
   }
  ]
 }

@@ -1,0 +1,64 @@
+{
+  "city": "Macon",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Macon is a village of Momignies in Hainaut, and its square has had a shaped lime at its centre for at least six hundred years. The current tree went in around 1714, replacing one named in a document from 1603, and it is pruned every autumn into three tiers propped up on twelve wooden posts. Belgium protected it as a monument in 1942, Wallonia added it to its exceptional heritage list in 2016, and it stands free to walk round beside the church at any hour.",
+  "meta_description": "The Tilleul de Macon: a 300-year-old lime pruned into three tiers on twelve posts, protected since 1942, at the centre of a Belgian village square.",
+  "question_meta": "The Tilleul de Macon, about 310 years old, is a lime pruned into three tiers and held up on twelve wooden posts, at the centre of Macon's village square.",
+  "question_answer": "Macon's only mapped tree is the Tilleul de Macon, on the Place Yvon Paul beside the church. It went into the ground around 1714, making it roughly 310 years old, and replaced an earlier lime on the same spot documented back to 1603.",
+  "question_context": "What makes this lime unusual is what has been done to it: it is pruned every late autumn into three tiers of shrinking width, roughly eleven metres across at the base and about half that above it, with a terminal cluster at seven or eight metres up. Twelve wooden posts, eight round the outside and four within, hold the shape up on stone footings last rebuilt in 1988, which is as much carpentry as arboriculture. Because it is shaped and propped rather than left to run, nobody has taken a single trunk measurement for it, which is the trade-off of keeping a tree this old on its feet at all. Belgium classified it as a protected monument on 16 September 1942, and Wallonia added it to its patrimoine exceptionnel in 2016. In 2014 the ground beneath it was decompacted and its root zone protected, unglamorous work that is probably doing more for the tree's next century than the posts are. It stands on the Place Yvon Paul, on the south side of the church, free to walk round at any hour.",
+  "hero_tree_id": "mom_001",
+  "oldest_tree_id": "mom_001",
+  "faq": [
+    {
+      "q": "How old is the Tilleul de Macon?",
+      "a": "About 310 years. It was planted around 1714, replacing an earlier lime on the same spot that is documented back to 1603."
+    },
+    {
+      "q": "Why is it shaped that way?",
+      "a": "It is pruned every late autumn into three tiers of decreasing width and held up on twelve wooden posts set on stone footings, last rebuilt in 1988. The shape is deliberate and maintained, not natural growth."
+    },
+    {
+      "q": "Is it protected?",
+      "a": "Yes, twice over: Belgium classified it as a monument in 1942, and Wallonia added it to its list of exceptional heritage in 2016."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Macon is a village of Momignies in Hainaut. The tree stands on the Place Yvon Paul, on the south side of the church, free to visit at any hour; there is no public transport stop at the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mom_001",
+      "name": "Tilleul de Macon",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "about 310 years",
+      "age_min": 300,
+      "age_max": 320,
+      "girth_cm": null,
+      "location": {
+        "address": "Place Yvon Paul, Macon, south side of the church, Momignies",
+        "latitude": 50.05189,
+        "longitude": 4.20972,
+        "neighbourhood": "Macon (Momignies), Province de Hainaut"
+      },
+      "story": "Twelve wooden posts hold this lime up: eight round the outside, four within, all of them standing on stone footings and last rebuilt in 1988. The tree is pruned every late autumn into three tiers of shrinking width, roughly eleven metres across at the bottom, about half that above it, and a terminal cluster at seven or eight metres up. It is a shaped tree, and it has been one for a very long time.\n\nIt went into the ground in 1714, and even that was a replacement. A lime stood on this spot in the fifteenth century and is named in the Besogne de Chimay of 1603. So the square at Macon has had a tree at its centre for at least six hundred years, and the one standing there now has held the post for about 310 of them.\n\nBelgium classified it as a protected monument on 16 September 1942. Wallonia added it to its patrimoine exceptionnel in 2016, and in 2014 the ground beneath it was decompacted and its root zone protected, which is the unglamorous work that keeps a village tree standing.\n\nBecause it is pruned and propped rather than left to run, there is no single trunk measurement on record for it. It stands on the Place Yvon Paul, on the south side of the church, free to walk round at any hour.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Tilleul_de_Macon",
+        "https://www.telesambre.be/info/sauvegarde-du-vieux-tilleul-de-macon/14312"
+      ],
+      "access": "Free, on the public village square beside the church.",
+      "transport": "In the centre of Macon village, on foot; no public transport stop at the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its shape, three flat tiers of decreasing width propped on twelve wooden posts set on stone footings. It stands on the Place Yvon Paul, on the south side of the church."
+    }
+  ]
+}
