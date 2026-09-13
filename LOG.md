@@ -1,6 +1,32 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-13 (continuation 25) - BLOCKER answered: ageToken() was fabricating an age from a planting year
+
+While wrapping up the previous window, a fresh-eyes review landed
+(f70d3157) with a live BLOCKER: `ageToken()` in
+`site/src/lib/tree-copy.ts` had no age_min/age_max to check trn_001's
+number against, so its last-resort fallback trusted the raw first
+digit sequence in "planted 2017, a genetic clone of the fallen
+original" as an AGE, printing "2017, Years" (comma included, from the
+same capture group that lets "1,000" read whole) into Trainiškis's
+city and question page titles and JSON-LD, directly contradicting the
+same page's own FAQ. This outranks new coverage, so it was answered
+before anything else.
+
+Fixed by requiring the sentence to actually contain "year(s)"/"yr(s)"
+before trusting a bare number as an age (a planting-year sentence
+never does), and stripping a trailing comma from whatever is
+returned. Added a qa.py check (`\d,\s*Years?\b` in rendered text) so
+the exact malformed-string symptom can't ship silently again;
+confirmed it fires on the original bad title and stays quiet on the
+fix without a full rebuild-and-check round trip needed to prove it
+both ways. Rebuilt (5621 pages), `qa.py` (8708 pages) and
+`preflight.py` (598 cities) all clean; the Trainiškis pages now read
+"One Tree Worth Visiting" / "What Is the Oldest Tree in Trainiškis?"
+with no age claim, which is honest given the tree has none recorded.
+Recorded via `health.py --answer 2026-09-13`.
+
 ## 2026-09-13 (continuation 24) - A reader sighting cleared, and a photo viewing pass on 6 depth-allowed cities (3 approved, 42 rejected)
 
 Ran `visitors.py` (7-day: 844 visits, 1138 views, falling day over day
