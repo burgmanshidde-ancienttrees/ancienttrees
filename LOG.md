@@ -1,7 +1,61 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-13 (continuation 22) - Recovered a stranded Sintra pass and a Rome photo; routes.yml/iOS re-confirmed, no new coverage dispatched
+## 2026-09-13 (continuation 23) - Recovered a stranded Berlin verify+write pass (21 -> 23 trees); confirmed every free lane dry, no new dispatch
+
+Inherited a window that had stopped after 61 min with 59 min unspent
+(week at 4918/5000 by the prompt's count, 4857/5000 by
+`run_health.py --week`, 0 limit deaths in 6h). `git pull` was clean,
+`passcheck.py --claims` was clean (the claim on Berlin had already
+been released), `leads.py --ready` was empty (2946 leads, 0 READY).
+
+**Found and committed real, complete work already sitting in the
+working tree**: a Berlin verify pass (ber_022, the Englischer Garten's
+Caucasian Wingnut, register + an independent 2022 blog source) and a
+write pass on it plus a newly-found non-register tree (ber_023, Queen
+Elizabeth II's 1965 oak, two independent Tagesspiegel articles), both
+in the Tiergarten cluster beside the published Giant Sequoia. German
+i18n overlay updated, leads file annotated, agent-costs logged
+(~95k verify + ~40k write). `preflight.py` (598 cities, 0 new
+problems) and a full `npx astro build` both clean. Committed as
+b90c7b38. This is exactly the Berlin dispatch continuation 22 flagged
+FOR HIDDE as the best-supplied deepen target but declined to start
+itself on a tight budget; a later attempt in this same window
+evidently ran it before stopping early on its own.
+
+**Rung 1**: `sightings_inbox.py --status` clean, 0 waiting.
+
+**Rung 2**: `health.py` clear (0 BLOCKER). Independently re-checked
+both items the session-start hook still flags: Walking routes'
+09-12 failure is the known push race, whose retry-loop fix cannot be
+pushed because this token lacks `workflows` scope (confirmed again by
+068159d9's own commit message, same gap); the iOS floor job's 09-12
+scheduled failure was against pre-fix code (`person-more` and the
+Beethoven-plane search timeout were both widened same day, 068159d9),
+residual flakiness on a busy runner, not further fixable here. Neither
+is new; not re-litigating either.
+
+**Rung 3**: REVIEW.md's newest entry (2026-09-12) has one WARN, the
+"1 trees" grammar class in the app; already fixed in 068159d9
+(`treesLabel()`/ternary in Home.swift and Walks.swift) with
+`scripts/pluralcheck.py` added as the ratchet.
+
+**Rung 4/5**: every free lane confirmed dry this window:
+`pagegaps.py` 0, `recognise.py --stuck` 0, `refill.py` nothing,
+`photo_gaps.py --shortlist` the same Breda hit continuation 12
+already rejected today after looking at the pixels. `city_queue.py
+--next` shows nothing above the 6-candidate assembly-line floor:
+every OPENABLE-today city has 0-2 register/Wikidata candidates, and
+the thin ones on the deepen side (Taormina, Ravenna, Ischia) were
+confirmed exhausted by today's earlier passes per continuation 22.
+`scout_next.py --target` says BUILD, nothing left to scout.
+
+**No new dispatch.** With the week's shared backstop at ~97-143
+minutes of its 5000-minute runaway limit and zero limit deaths (the
+real governor), starting another 30-60 minute verify/write pass risks
+crossing that backstop for marginal, unconfirmed yield, on top of a
+day that has already made this exact call three times. Stopping here
+with the Berlin recovery as this window's real, committed output.
 
 Inherited a window that stopped after 18 min with 102 min unspent
 (week at 4857/5000, ~143 min left, shared with Hidde). `passcheck.py
