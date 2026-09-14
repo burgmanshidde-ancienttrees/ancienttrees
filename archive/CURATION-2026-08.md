@@ -4,6 +4,168 @@ Entries moved out of CURATION.md by scripts/archive_logs.py to keep the living
 file small enough to read cheaply. Nothing here is edited or summarised: it is
 the original text, newest first. CURATION.md links back to this file.
 
+## 2026-08-31 - Nine zero cities opened, Matera and Taormina refused on access
+
+Registers used, and what each one does or does not answer:
+
+| Register | Measurements | Age | Vitality | Ownership |
+|---|---|---|---|---|
+| Okinawa hundred notable trees | yes | yes | revoked-certification flag | yes |
+| Andalusia singular trees | yes, full sheet | sometimes, with method | no | yes |
+| Catalonia monumental trees | yes | no | yes | no, but location is specific |
+| Kagoshima / Kanagawa / Miyazaki / Aichi via Hitozato Kyoboku | yes | signboard traditions | no | no |
+| Castilla y Leon notable trees | height yes, trunk column ambiguous | no | no | no |
+| Navarra Natural Monuments | no | no | no | no |
+| Italy MASAF | yes | no | no | no |
+
+Could not verify, kept as leads:
+
+- Matera. 44 register trees within 25 km and no way to answer access: eleven of
+  the seventeen nearest are on a masseria and MASAF has no ownership field. Would
+  open on a Basilicata regional sheet or the Murgia park's own trail list.
+- Taormina. All five trees the register holds inside the comune are in the
+  grounds of the Hotel Excelsior Palace.
+- Yonagusuku's banyan near Naha, 23.5 m round and the largest tree in Okinawa.
+  Owner recorded as a private household.
+- Five Tarragona trees on private mas, including a holm oak 6.45 m round.
+- Most of the trees around Girona: the Catalan register's location field names a
+  mas or a can for the majority, and only seven read as public.
+
+Register pitfalls hit this pass:
+
+- Castilla y Leon's trunk column is labelled diameter and read that way makes
+  AS-SG-07 at La Granja the thickest sequoia in Europe. The column is not quoted
+  anywhere on the Segovia page and the story says why.
+- The Catalan register keeps DEAD trees listed with a vitality note. Several near
+  Girona and Tarragona are marked Mort, with a year, and none is published.
+- Okinawa's register marks certifications that have been REVOKED, which is a
+  different thing again and worth reading before using an entry.
+- Kanazawa's Shogetsuji cherry has two girth figures, 3.5 m from Kodansha and
+  7.81 m from the Environment Agency, and the source that measured both says the
+  larger is impossible for that trunk. Both are printed on the page.
+
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-08](archive/CURATION-2026-08.md)
+- [2026-07](archive/CURATION-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
+## 2026-08-31 - Vilnius +2, Cagliari +1: deepen passes on standing claims
+
+Finished the two claims an earlier attempt in this window left standing rather than dispatching anything new. **Vilnius (11 to 13):** the Lazdynai Linden (vln_012, a small-leaved lime standing wild in the Bukciai forest at the edge of the Lenin-Prize-winning Lazdynai housing estate) and the Dvarcionys Oak (vln_013, genus only, register + an independent natural-heritage catalogue). Both thin (no age, no exact address, register coordinates only), both flagged and marked approximate. **Cagliari (9 to 10):** the Common Lime of Corongiu (cag_010, 260cm girth, 18m tall, at a historic 1867 dam site above Sinnai), flagged because the pass could not confirm whether the tree sits on the open public trail or past a fenced section of the waterworks; access line states that honestly. Both write passes done directly in session (2 and 1 tree, neither justified a write-stories dispatch).
+
+Fixed two build breaks surfaced by adding these: a hard-rule-9 species collision (Vilnius's new genus-only oak collided with Austin's "Live Oak (Quercus sp.)" on the exact same Latin placeholder; renamed to the existing "Oak (Quercus, species not established)" convention used elsewhere, and unified "Small-leaved Linden" to the sitewide "Small-leaved Lime" for Tilia cordata), and a stale count-promise sweep on both cities' intro/meta/question/FAQ text plus the Italy country page (317->318 trees). Also picked up and fixed, in passing, an unrelated pre-existing build break from a concurrent session's Tarragona opening (oldest-tree question_answer never named "Bofarull") and a duplicate Ronda species-name fix that had already landed upstream (discarded my redundant local copy after a pull).
+
+Built, QA'd (clean bar the sandbox's shallow-clone sitemap-lastmod NOTE), preflighted (205 cities, 0 problems) and superlatives-checked (539 claims, no collisions) before pushing.
+
+## 2026-08-31 - Segovia opens: 5 trees, 5 flagged, 5 photos missing
+
+Opened from zero via the Castilla y Leon "arboles notables" register. 1 tree
+in Segovia's own old town (the Cedar of the Plaza de la Merced); 4 in the
+historic gardens of the Palacio Real de La Granja de San Ildefonso, a bus ride
+out (La Reina, a giant sequoia; a Spanish fir; a Douglas fir; a cedar of
+Lebanon). A sixth register candidate, a second sequoia in the same parterre as
+the cedar of Lebanon, was not published: a 2020 news report describes
+Patrimonio Nacional felling a sequoia in that exact spot for root rot, and the
+naming and height match were too close to risk. Recorded in
+`data/leads/segovia.json` as blocked, along with 4 leads for a future pass
+(El Rey, La Reina's paired sequoia; two larger unregistered pinsapos in the
+same gardens; three other Segovia garden sites worth an in-town pass).
+
+All 5 trees flagged: two carry no age at all (the Spanish fir and Douglas fir),
+two carry a broad estimate derived from the gardens' documented mid-19th-century
+planting wave rather than an individual planting date, and La Reina's height is
+reported both ways where the register and the press disagree (42.5m vs 46m).
+No photos found or hunted this pass. The La Granja trip is reported honestly as
+sitting at or just past CLAUDE.md's ~30-minute day-trip boundary (Linecar bus,
+roughly every 45 minutes, 20-35 minute journey) rather than rounded down.
+
+## 2026-08-31 - Reader submission 56 (Baarn, GPS-only): no tree found, open question sent
+
+Submission 56 (app "collect" flow, no name/species/why, just GPS
+52.21964,5.25718 "standing at the tree") sits ~50m from Kasteel Groeneveld's
+own parking/entrance node, roughly equidistant (~200-210m) from the castle
+building and from the already-documented "Zomereik in front of Kasteel
+Groeneveld" avenue lead in `data/leads/baarn.json`, too far from either to
+say which one, if any, was meant. Did not re-run the web research this
+coordinate would otherwise justify: that leads file already documents this
+exact estate as a structural dead end across three prior passes (RCE will
+not name individual specimens for a designed-landscape monument;
+monumentaltrees.com blocked; no per-tree Staatsbosbeheer/IVN page found).
+Row patched: outcome open_question, reply_text asks which tree specifically,
+with a photo if possible. Could not actually send: the submission's user_id
+does not resolve to any account in Supabase auth (5 real users on file,
+this id is not one of them), so the reply sits on the row for a future
+run/session with a resolvable address rather than reaching anyone yet. Row
+56 appended to `data/submissions-processed.json`; note also added to
+`data/leads/baarn.json`.
+
+## 2026-08-31 - Reader submission 55 (Amsterdam, GPS-only): no tree found, open question sent
+
+Submission 55 (app "collect" flow, no name/species/why, just GPS 52.39741,4.87394)
+reverse-geocodes to Koivistokade, Minervahaven, Amsterdam-West, a working harbour
+area redeveloped into housing/offices from around 2018. Checked our own LRMB
+import (nearest entries 1.1km away in Westerpark), Amsterdam's own tree WFS (18
+oaks within 200m, none flagged protected, consistent with new street planting),
+OSM Overpass (~85 untagged natural=tree nodes, same pattern), and web search
+(nothing tying a notable tree to this address; the only local hit, Minervahaven's
+"Bomencamping" relocation nursery, is a temporary holding site for trees
+displaced elsewhere, not a fixed specimen at this spot). Nothing verifies, so
+nothing published. Row patched: outcome open_question, reply_text asks for a
+photo or species/size since the location alone did not resolve to a tree. Row
+55 appended to `data/submissions-processed.json`.
+
+## 2026-08-31 - Maui opens (4 trees); five US register verdicts; California cracked but unlicensed
+
+**Maui, Hawaii, 4 trees, 4 flagged, 4 photos missing.** Opened from the Hawaii Exceptional Trees register (CC0). The Lahaina banyan (1873, sixteen trunks) verified alive on a Honolulu Civil Beat piece of 2026-02-20 and ships with its park still fenced and closed since the August 2023 fire; the pin is the viewing place on Front Street and `access` says so. **Six Lahaina-area register trees are LEADS, not blocked**, in `data/leads/maui.json`: Baldwin House x2, Hale Paahao x4 and the Lahainaluna entrance row. No post-2023 source confirms survival OR death for any of them; the Baldwin Home Museum building is confirmed destroyed, which says nothing about its trees. Do not treat their absence as a verdict. Blocked (9): Wailuku Elementary School grounds, the D.T. Fleming Arboretum grove (private, access unconfirmed, 6 trees, held as leads), a 6.7-mile avenue of rainbow showers which is not one collectible point, the Waikamoi Preserve ohia (restricted), and four bare private street addresses.
+
+**Fetch note:** `lite.duckduckgo.com` began serving an anti-bot challenge partway through the Maui pass, which reads as an empty result page unless you check for it, and Bing's HTML search returned unrelated results for several queries. Both cost real time. Wikipedia's API (search, extracts, Wikidata) was reliable throughout. Added to `data/fetch-blocklist.json`.
+
+**Five US cities scouted for a register, five verdicts, nothing importable.** Philadelphia and Charleston designate heritage/grand trees by an automatic city-wide size threshold rather than a curated list. Savannah (SAGIS) and San Diego (webmaps.sandiego.gov, now blocklisted for hanging) publish full municipal inventories. San Diego's Council Policy 900-19 nomination programme never produced a published list. Two nonprofit registers stalled on a missing licence rather than a prohibition and are permission asks, not dead ends: the Georgia Landmark and Historic Tree Register, and the Colorado Tree Coalition's champion trees (846 state plus 891 county rows, 307 tagged Denver).
+
+**California Registry of Big Trees: data resolved, licence missing.** `selectree.calpoly.edu/api/bigtrees/getAllBt`, 266 rows, 229 live and located, tree-level coordinates, species, height, crown width, circumference, measurement date, county, and a `dead` flag. NOT imported: no terms of use for the data exist on californiabigtrees.calpoly.edu, selectree.calpoly.edu or ufei.calpoly.edu, only an accuracy disclaimer. Recorded `stalled` in `data/register-scouting.json` with the full endpoint, so an import is a five-minute job the moment permission arrives. Units are unlabelled and almost certainly feet and inches; prove them before trusting a number.
+
+## 2026-08-31 - Kagoshima: 10 trees published, 8 flagged, 7 photos missing
+
+Opened from Kagoshima City's preserved-tree register (38 trees, species, girth at
+1.5 m, height, estimated age, updated 2025-11-25), cross-checked against the
+Hitozato Kyoboku giant-tree database.
+
+Could not verify, kept as leads in data/leads/kagoshima.json:
+
+- The propped black pine Hidde photographed at Ishibashi Memorial Park. Not on the
+  register (no black pine is), no Japanese source names a notable pine at that park
+  or at Gionnosu, and the park opened in April 2000 on reclaimed ground, so the tree
+  was probably planted or transplanted then. Needs the signboard or the park office
+  (Ishibashi Memorial Hall, 099-248-6661).
+- Coordinates for seven register trees. The city publishes street addresses only,
+  and Hitozato Kyoboku carries a coordinate for six Kagoshima trees, not for the
+  rest. Six of the ten published trees are pinned to a shrine or park rather than a
+  trunk and say so.
+- Ages. Six of the ten rest on the city's signboard estimate alone, with no
+  published method behind any of them. The Akou of Yuno's thousand years is the one
+  that matters most and is the least supported; age_min is set at 500 deliberately.
+
+Register pitfalls hit on this pass, for the next person:
+
+- The city lists eight designation numbers (9, 12, 13, 14, 20, 29, 39, 46) as
+  revoked. Number 14, the Ishiki Suwa camphor, is still written up as live on an
+  outside database with a 2018 photograph, so a revoked number is a question rather
+  than a death certificate. Do not write one without checking.
+- The Environment Ministry and the city disagree on girth for both trees where both
+  measured. On the Akou of Yuno the gap (7.40 vs 6.5 m) is explained: two stems fuse
+  a metre up and the ministry recorded only the thicker.
+- data/leads/_famous-japan.json attaches three Commons photographs of Katsushika
+  Hachimangu in Tokyo to Senbon Icho in Tarumizu. The name matching in that file is
+  loose, as its own header warns; treat it as a research list only.
+
+Photo pass: 7 candidates found, 3 approved after viewing (Kamo, the cycad, the
+Terukuni holly), 1 rejected on exposure (Kamo no Kusu 03, underexposed by
+photo_light.py and confirmed by eye). Seven trees have no photograph. Commons has
+nothing at all under the Japanese names of the Yuno akou, the Shiroyama camphor or
+the Kagoshima Shrine camphor, which is a genuine gap rather than an unfinished hunt.
+
 ## 2026-08-30 - Rouen (12), Modena (5) and Menorca (4) open; Taormina blocked on private grounds
 
 **Rouen, France, 12 trees, 5 flagged, 12 photos missing.** Eleven in the ONF forests of Roumare, Foret Verte and La Londe-Rouvray, free and waymarked; one in the Jardin des Plantes. Leads and blocked in `data/leads/rouen.json`: two far-forest trees, an under-sourced city hornbeam, an institutional courtyard pair, and one private garden mulberry. The Gadeau de Kerville Oak is a SUCCESSOR: the original was uprooted in the December 1999 storm and the name passed to a younger oak, recorded in the story rather than hidden. ONF girths derive from `diametre au pied` and are not comparable to breast-height girths elsewhere on the site; that caveat is in each tree's notes.
