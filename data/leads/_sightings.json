@@ -355,6 +355,29 @@
    "status": "not a tree",
    "why": "LOOKED at 2026-09-13: the frame is a bedroom, feet up on a bed by a frosted window. No tree, no plant, nothing outdoors. A feature test, not a submission. No page, no further action.",
    "seen": "2026-09-13"
+  },
+  {
+   "sighting_id": "01c07566-c1a7-48ee-a9a7-c9053bb506a5",
+   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+   "mine": true,
+   "name": "A tree I found",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "note": "",
+   "latitude": 33.5904416666667,
+   "longitude": 130.403655,
+   "taken_at": "2026-09-14T00:35:52+00:00",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/01C07566-C1A7-48EE-A9A7-C9053BB506A5.jpg",
+   "nearest_published_m": 455,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-09-14"
   }
  ]
 }
