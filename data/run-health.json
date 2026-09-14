@@ -13515,6 +13515,28 @@
    ],
    "trees": 5,
    "logged": true
+  },
+  {
+   "started": "2026-09-14T00:28:09+00:00",
+   "date": "2026-09-14",
+   "run_id": "34792770547",
+   "minutes": 36.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 214,
+   "denials": 15,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 11959186,
+   "claims_held": [
+    "eindhoven",
+    "berlin"
+   ],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
