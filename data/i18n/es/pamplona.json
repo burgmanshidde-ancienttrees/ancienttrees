@@ -1,0 +1,148 @@
+{
+  "_note": "Spanish overlay for Pamplona, written 2026-09-16 per CLAUDE.md rung 0b (translate a page that already earns impressions): Pamplona's English page took 365 impressions and 5 clicks in the ten-day window, the highest untranslated Spanish city. Text only: coordinates, photos, licences and walks stay in data/cities/pamplona.json.",
+  "city": "Pamplona",
+  "title": "Árboles singulares de Pamplona: 14 entre robles y chopos",
+  "meta_description": "Catorce árboles cerca de Pamplona: seis Monumentos Naturales de Navarra, robles trasmochos y una secuoya de palacio, más ocho chopos del Arga.",
+  "intro": "Navarra protege 47 árboles como Monumentos Naturales, y seis se alzan a menos de media hora de Pamplona: cinco robles trasmochos de los valles y una secuoya gigante en el palacio del Gobierno de Navarra. Un segundo registro cataloga árboles singulares del propio Arga, el río que cruza la ciudad, y otros ocho se levantan en su paseo fluvial entre la Rochapea y Zabaldika, casi todos chopos negros, uno trasmochado para leña, otro con los soportes de un viejo tendido eléctrico. Catorce árboles en total, ninguno datado, entre dos registros y un valle fluvial.",
+  "question_title": "¿Cuál es el árbol más antiguo de Pamplona? (sin edad)",
+  "question_meta": "El roble de Orkin, en el valle de Ultzama, es probablemente el árbol más antiguo cerca de Pamplona. Por qué Navarra no publica edades, y 13 árboles más.",
+  "question_answer": "El árbol más antiguo cerca de Pamplona es probablemente el roble de Orkin, en el valle de Ultzama, un roble pedunculado cuyo tamaño le ha valido la fama de milenario, aunque Navarra no publica una edad para él ni para ninguno de sus 47 árboles declarados Monumento Natural, y su registro fluvial, aparte, tampoco da edades.",
+  "question_context": "El registro de Navarra es el más breve de este sitio y también el más tajante. Nombra 47 árboles, declara cada uno Monumento Natural individual, y para cada uno anota la especie, el lugar, el año de declaración y una coordenada, y nada más: ni altura, ni perímetro, ni edad, ni ninguna nota sobre si el árbol sigue vivo. El catálogo, en su forma actual, se aprobó a finales de 2009, ampliando una primera tanda declarada en 1991. Eso deja la cuestión de la edad en manos de fuentes ajenas al registro, y ahí el terreno es blando. Al roble de Orkin, en el valle de Ultzama, se le llama milenario por su tamaño, una forma habitual de datar un roble grande que no es, en realidad, una medición. El roble de Eltzaburu está mejor documentado: se le atribuyen más de 26 metros de altura y una base de casi dos metros de diámetro, sobrevivió tanto a un intento de tala como a un rayo que le arrancó una de sus ramas principales, y fue declarado Monumento Natural en 1991. Cómo llegar a Eltzaburu: unos 25 km al norte de Pamplona, en el valle de Ultzama, con una ruta señalizada hasta el árbol.",
+  "faq": [
+    {
+      "q": "¿Cuál es el árbol más antiguo cerca de Pamplona?",
+      "a": "Probablemente el roble de Orkin, en el valle de Ultzama, al que se suele llamar milenario por su tamaño. Navarra no publica edades para ninguno de sus árboles declarados, así que se trata de una fama y no de una cifra."
+    },
+    {
+      "q": "¿Qué significa Monumento Natural en Navarra?",
+      "a": "Una declaración legal individual. Navarra ha nombrado 47, la mayoría árboles, cada uno protegido por derecho propio; el catálogo tal como está hoy se aprobó a finales de 2009, ampliando un primer grupo declarado en 1991."
+    },
+    {
+      "q": "¿Por qué hay tantos robles entre ellos?",
+      "a": "Porque los valles húmedos al norte de Pamplona son de clima atlántico y no mediterráneo, y crían robles, y porque los pueblos los trasmocharon durante siglos para leña y carbón, cortando la copa una y otra vez. Eso produce un tronco corto y enormemente grueso bajo una copa ancha, que es la forma que más tarde acaba declarada monumento."
+    },
+    {
+      "q": "¿Se puede visitar gratis?",
+      "a": "Los cinco robles sí, están en terreno comunal y en bosque con caminos de acceso; Eltzaburu tiene una ruta señalizada. La secuoya está en el jardín cerrado del Palacio de Navarra, en la ciudad, así que normalmente es una vista desde la calle y no una visita."
+    },
+    {
+      "q": "¿Se puede ir andando de uno a otro?",
+      "a": "Solo entre los dos de Jauntsarats, separados unos 570 metros. El resto están en valles distintos, entre 13 y 25 kilómetros de Pamplona en direcciones diferentes."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+  "trees": {
+    "pam_001": {
+      "name": "La secuoya del Palacio de Navarra",
+      "species": "Secuoya gigante (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "access": "Gratis de ver desde la calle; el jardín del Palacio de Navarra está cerrado y normalmente no se puede visitar, así que es más una vista que una visita",
+      "transport": "En la avenida Carlos III, en pleno centro de Pamplona, a pocos minutos a pie de la Plaza del Castillo",
+      "story": "Hay una secuoya californiana en pleno centro de Pamplona y pertenece al gobierno. El Palacio de Navarra, en la avenida Carlos III, es la sede de la administración regional, y el jardín amurallado tras su fachada guarda una secuoya gigante que Navarra declaró Monumento Natural en 1991, en la primera tanda. Es el único de los 47 árboles declarados de la región que está dentro de una ciudad. Sequoiadendron giganteum llegó a Europa como semilla en 1853, y en menos de una década se convirtió en el árbol que toda institución y toda finca de postín quería tener, así que un palacio administrativo del siglo XIX con una secuoya en el jardín no es una excentricidad, es exactamente lo que produjo la moda. Lo que Navarra no publica es ninguna medida de ella, ni una edad. El registro recoge la especie, el lugar, el año de declaración y una coordenada, y ahí se detiene. El jardín está cerrado, así que este es un árbol que normalmente se ve por encima del muro desde la avenida y no de cerca, y es lo bastante alto como para que eso funcione."
+    },
+    "pam_002": {
+      "name": "El roble de Orkin",
+      "species": "Roble pedunculado (Quercus robur)",
+      "age_estimate": "a menudo llamado milenario por su tamaño, sin cifra publicada",
+      "access": "Gratis, en terreno comunal del pueblo en el valle de Ultzama",
+      "transport": "Arraitz-Orkin, unos 19 km al norte de Pamplona, y luego un corto paseo",
+      "story": "Este es el árbol al que se refiere la gente de Navarra cuando dice el roble grande. Se alza en Orkin, en el valle de Ultzama, al norte de Pamplona, y se le describe habitualmente como milenario, una fama construida sobre su tamaño y no sobre ninguna medición: el registro de Navarra le da una especie, un lugar, un año de declaración y una coordenada, y nada más, así que nadie ha publicado un perímetro, una altura ni una edad para él. Lo que sí se describe de forma constante es la forma. Ha sido trasmochado, cortado una y otra vez durante generaciones, como los pueblos vascos y navarros manejaban sus robles para leña y carbón, y el resultado es una copa ancha y redondeada sobre un tronco que se ensancha en la base hasta formar una masa de raíces lo bastante grande como para que los animales aniden en los huecos de debajo. Ultzama es tierra atlántica y húmeda, hayas y robles y pasto en vez de nada mediterráneo, a 20 kilómetros y un clima distinto de Pamplona. Navarra lo declaró Monumento Natural en 2009. Si alguien le ha pasado una cinta métrica alrededor, nos gustaría saber el número."
+    },
+    "pam_003": {
+      "name": "El roble de Eltzaburu",
+      "species": "Roble pedunculado (Quercus robur)",
+      "age_estimate": "",
+      "access": "Gratis, se llega por una ruta señalizada desde el hayedo de Sastrain",
+      "transport": "Eltzaburu, unos 23 km al norte de Pamplona, en el valle de Ultzama",
+      "story": "Un rayo le arrancó una de sus ramas principales y sigue en pie. Al roble de Eltzaburu se le atribuyen más de 26 metros de altura y una base de casi dos metros de diámetro, y lleva las marcas de dos intentos distintos contra su vida: escapó de la tala, en un momento que nadie ha fechado, y perdió una rama principal por un rayo hace años. Navarra lo declaró Monumento Natural en 1991, en el primer grupo, y es el número 10 de la lista. Es el más accesible de los robles de esta página, porque hay una ruta señalizada hasta él desde el hayedo de Sastrain, lo que significa que alguien decidió que la gente debía venir a verlo, y puso señales. El valle de Ultzama es la mitad verde y húmeda de Navarra, donde el clima atlántico pasa la divisoria y hayas y robles crecen como lo hacen en el País Vasco y no como en la ribera del Ebro. No se publica ninguna edad para él, como no se publica para ninguno de los 47 árboles declarados de Navarra."
+    },
+    "pam_004": {
+      "name": "Los robles de Jauntsarats",
+      "species": "Roble pedunculado (Quercus robur)",
+      "age_estimate": "",
+      "access": "Gratis, en el bosque, en terreno comunal del valle de Basaburua",
+      "transport": "Jauntsarats, unos 25 km al norte de Pamplona",
+      "story": "Dos robles, declarados por separado, a unos 570 metros el uno del otro en el mismo bosque. Navarra catalogó los robles de Jauntsarats como Roble de Jauntsarats I y Roble de Jauntsarats II en 1991, dando a cada uno su propia declaración de Monumento Natural en lugar de tratarlos como pareja, que es como funciona este registro: protege individuos y no agrupa. Se alzan en el valle de Basaburua, en la zona húmeda del norte, dentro del bosque y no a cielo abierto, algo poco habitual en un roble monumental navarro; la mayoría de los declarados están en pastos o en terreno comunal, donde se mantuvieron como árboles aislados para sombra y forraje. Dos gigantes dentro de un hayedo-robledal son una experiencia distinta, porque uno se los encuentra en vez de verlos de lejos. Navarra no publica medida ni edad para ninguno de los dos. Esta ficha cubre el primero de los dos, y el segundo está 570 metros al sur; ambos están en el mismo paseo, lo que convierte a Jauntsarats en el único lugar cerca de Pamplona donde se pueden ver dos árboles declarados Monumento Natural en una sola salida."
+    },
+    "pam_005": {
+      "name": "El roble de Azanza",
+      "species": "Roble pubescente (Quercus pubescens)",
+      "age_estimate": "",
+      "access": "Gratis, en terreno comunal del valle de Goñi",
+      "transport": "Azanza, unos 16 km al noroeste de Pamplona",
+      "story": "Este es un roble distinto de los demás, y la diferencia es la razón entera para hacer una parada aparte. Quercus pubescens, el roble pubescente, es el roble de secano del sur de Europa: hojas más pequeñas con el envés afieltrado, tolerante a suelos calizos delgados y a veranos largos, y sustituye al roble pedunculado a medida que se avanza hacia el sur y el oeste, saliendo de los valles atlánticos. Azanza está en el valle de Goñi, justo en esa frontera, en las colinas bajo la Sierra de Andía, y el cambio en los árboles a lo largo de 20 kilómetros de carretera desde Ultzama es la lección más clara de geografía navarra que se puede pedir. Navarra declaró este árbol Monumento Natural en 2009 y, como con los 47, publicó una especie, un lugar, un año y una coordenada, y ninguna medida. Ese es el estado honesto del asunto: un roble oficialmente protegido de una especie que el norte de Navarra no cría, plantado donde se encuentran dos climas, y nadie ha dicho cómo de grande ni cómo de viejo es. Si lo has medido, dínoslo."
+    },
+    "pam_006": {
+      "name": "El quejigo de Garinoáin",
+      "species": "Quejigo (Quercus faginea)",
+      "age_estimate": "",
+      "access": "Gratis, en campo abierto en la Valdorba",
+      "transport": "Garinoáin, unos 25 km al sur de Pamplona",
+      "story": "Ve hacia el sur de Pamplona en vez de hacia el norte y los robles vuelven a cambiar. El quejigo, Quercus faginea, es el roble ibérico de la tierra intermedia entre el norte húmedo y la llanura seca del Ebro: conserva las hojas secas durante el invierno y solo las suelta cuando empujan las nuevas, así que un quejigo en febrero es un árbol pardo en un paisaje pelado, y así es como se encuentra uno. Este es el Monumento Natural declarado de la Valdorba, una comarca de pueblos pequeños e iglesias románicas en las colinas al sur de Pamplona que casi nadie visita, y Navarra lo catalogó en 2009. Como todos los árboles de esta página, viene con una especie, un lugar, un año y una coordenada, y ninguna medida en absoluto. La Valdorba merece el viaje por sí sola, y salir a ver un roble protegido es tan buena excusa como cualquier otra para acabar en ella. Si conoces su perímetro, o alguien lo ha datado, dínoslo y pondremos el número en esta página."
+    },
+    "pam_007": {
+      "name": "El chopo trasmocho de la Rochapea",
+      "species": "Chopo negro (Populus nigra)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Confirmado como camino público mediante OpenStreetMap (vía 816492962, highway=footway).",
+      "transport": "En la Rochapea, Pamplona; se llega a pie desde el centro por el paseo fluvial, o en autobús urbano de Pamplona (red TCC) hasta la Rochapea, y luego un corto paseo hasta la orilla.",
+      "story": "Alguien le cortó la copa a este chopo, y aun así creció hasta los 26 metros. El registro fluvial de Navarra lo cataloga como trasmocho: un árbol descabezado a cierta altura para poder cortar el rebrote una y otra vez, para leña, postes y forraje. Eso es trabajo de labranza y no jardinería, y significa que este tronco se ganaba el sustento mucho antes de que las orillas del Arga se convirtieran en parque. El registro da el tronco por 150 centímetros de diámetro, lo que equivale a unos cuatro metros y medio de perímetro, y el estudio de 2013 que lo registró le midió 26 metros de altura. Los trasmochos suelen ser achaparrados. Este no lo es.\n\nSe alza en el paseo fluvial que cruza la Rochapea, el barrio bajo junto al agua adonde Pamplona bajaba desde sus murallas a hacer la colada mientras el casco viejo se quedaba en la loma. El camino es gratuito y está abierto a cualquier hora.\n\nHay dos cosas que no podemos decirte. Solo el registro de Navarra describe este árbol, así que no hay un segundo relato con el que contrastarlo, y ese estudio ya tiene más de una década. Y nadie ha anotado una edad. Cortarle la cabeza a un árbol trastoca la forma habitual de calcular cuánto tiempo lleva en pie un chopo, así que no vamos a aventurar una. Si sabes más sobre este árbol, dínoslo."
+    },
+    "pam_008": {
+      "name": "El chopo de la Txantrea",
+      "species": "Chopo negro (Populus nigra)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Mismo camino público confirmado mediante OpenStreetMap (vía 816826057, highway=footway) que pam_009, a unos 90 metros.",
+      "transport": "En la zona de la Magdalena, barrio de la Txantrea, Pamplona; se llega a pie por el paseo fluvial, o en autobús urbano de Pamplona (red TCC) hasta Txantrea/Rotxapea, y luego un corto paseo hasta la orilla.",
+      "story": "El registro de Navarra describe este árbol en ocho palabras, y luego usa las mismas ocho palabras para otro chopo distinto, a un kilómetro y medio de distancia, en Villava: chopo de gran diámetro, más de un metro, vigoroso. Ese es todo el registro oficial que tiene. Ni altura, ni edad, ni historia, ni nada que lo distinga de sus vecinos si uno estuviera de pie debajo de él.\n\nLo que sí da la frase es un mínimo. Más de un metro de diámetro significa más de tres metros de perímetro, y como el registro se detuvo en el signo de mayor que en vez de completar la medición, la cifra real es probablemente mayor. Es un chopo grande de ribera en un río que los cría así.\n\nSe alza en el tramo de la Magdalena del Arga, en la Txantrea, en el paseo que recorre todo el valle a través de Pamplona, gratuito y abierto a cualquier hora. El plátano con los soportes de un viejo cable eléctrico en el tronco está a unos 90 metros por el mismo camino.\n\nSolo el registro describe este árbol, y su estudio data de 2013. Nadie ha anotado una edad para él, y tampoco nadie le ha pasado bien la cinta al tronco. Si has ido a verlo, cuéntanos qué encontraste."
+    },
+    "pam_009": {
+      "name": "El plátano de la Txantrea",
+      "species": "Plátano de sombra (Platanus x acerifolia)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Mismo camino público confirmado mediante OpenStreetMap (vía 816826057, highway=footway) que pam_008, a unos 90 metros.",
+      "transport": "En la zona de la Magdalena, barrio de la Txantrea, Pamplona; se llega a pie por el paseo fluvial, o en autobús urbano de Pamplona (red TCC) hasta Txantrea/Rotxapea, y luego un corto paseo hasta la orilla.",
+      "story": "Este plátano hizo en su día un segundo trabajo como poste de cableado. El registro de Navarra lo anota como un plátano grande que lleva viejos soportes de cables eléctricos, todavía fijados al tronco mucho después de que cayera lo que sujetaban. Es el tipo de detalle que un registro casi nunca da, y hace de este el único árbol de este tramo del Arga que se puede identificar sin mapa.\n\nLas medidas ya son respetables por sí solas. El registro sitúa el tronco entre 120 y 130 centímetros de diámetro, así que entre unos 3,8 y 4,1 metros de perímetro, un plátano serio para cualquier estándar y uno inusualmente grande para encontrarlo en una orilla y no en un bulevar.\n\nEl propio estudio de Pamplona sobre sus árboles viejos habla con cariño de los plátanos del puente de la Rochapea, sombra para las mujeres que lavaban la ropa en el Arga, y de hileras de plátanos de casi un siglo de edad en estas orillas. Nunca nombra este árbol en concreto, así que hay que tomarlo como el ambiente del lugar y no como una prueba sobre este tronco.\n\nY ese es el vacío honesto: el registro es la única fuente que describe este árbol en concreto, su estudio data de 2013, y nadie ha anotado una edad. Los soportes del cable, al menos, son algo que cualquiera que esté allí puede comprobar. Si sabes más, dínoslo."
+    },
+    "pam_010": {
+      "name": "Los chopos de Erripagaña",
+      "species": "Chopo negro (Populus nigra)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Confirmado como camino público mediante OpenStreetMap (vía 704534922, highway=footway).",
+      "transport": "En Erripagaña, Burlada, uno de los pueblos de la comarca de Pamplona junto al Arga; se llega a pie por el paseo fluvial desde Pamplona, o en autobús urbano (red TCC) hasta Burlada, y luego un corto paseo hasta la orilla.",
+      "story": "Un chopo lombardo suele ser una columna estrecha, el signo de exclamación de la cuneta. Uno de estos dos ronda los cuatro metros de perímetro.\n\nEl registro anota una pareja en este punto del camino fluvial en Erripagaña, ambos grandes y vigorosos, y se toma la molestia de medirlos por separado: 120 centímetros de diámetro para el tronco mayor, 90 para el menor. Convertido, son unos 3,8 metros de perímetro para el primero y unos 2,8 para el segundo. Ambas cifras vienen de diámetros y no de una cinta pasada alrededor del tronco, así que hay que leerlas como aproximadas y no exactas. Están juntos, por eso es una sola ficha y no dos: se llega a un punto y los dos están delante, el grueso y el simplemente grande.\n\nEl entorno es el Arga a su paso por Burlada, en el paseo fluvial continuo que va desde Pamplona hasta los pueblos de la comarca. Gratis, abierto, llano, y de las visitas de árbol más fáciles que tiene este sitio.\n\nLo que nadie ha anotado es la edad de ninguno de los dos, y la única descripción que existe de ellos en cualquier parte es el estudio del registro de 2013. Si conoces esta pareja, o los has medido, dínoslo."
+    },
+    "pam_011": {
+      "name": "El chopo de la rama rota de Villava",
+      "species": "Chopo negro (Populus nigra)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Confirmado como camino público mediante OpenStreetMap (vía 42943052, highway=footway), el mismo tramo que pam_012 (unos 240 m) y pam_013 (unos 400 m).",
+      "transport": "En Villava / Atarrabia, uno de los pueblos de la comarca de Pamplona junto al Arga; se llega a pie por el paseo fluvial desde Pamplona, o en autobús urbano (red TCC) hasta Villava, y luego un corto paseo hasta la orilla.",
+      "story": "Una de las tres ramas principales de este chopo está muerta, y la corteza se ha desprendido de parte del tronco. Los topógrafos de Navarra lo catalogaron como árbol singular de todos modos, y anotaron el daño en el registro en vez de esconderlo: chopo de gran diámetro, tres ramas principales, una de ellas muerta, parcialmente descortezado.\n\nEsa descripción vale más que una más pulida. De los tres chopos grandes de este tramo de la ribera de Villava es el único que se puede identificar desde el camino sin contar los pasos, porque de los otros solo se dice que son grandes y vigorosos. Una copa de tres ramas con una desnuda, y madera clara asomando donde falta la corteza, es una silueta y no una categoría.\n\nEl registro da el tronco por más de un metro de diámetro sin terminar la medición, lo que lo sitúa por encima de los tres metros de perímetro como mínimo, y probablemente bastante más. Se alza en el camino público junto al Arga a su paso por Villava, gratis y abierto, un paseo llano desde Pamplona.\n\nEl estudio detrás de todo esto data de 2013 y ninguna otra fuente describe el árbol, así que la rama muerta y las zonas peladas son datos de hace trece años. Tampoco nadie ha anotado una edad. Si vas a verlo y compruebas cómo sigue, dínoslo."
+    },
+    "pam_012": {
+      "name": "El chopo de Villava (sur)",
+      "species": "Chopo negro (Populus nigra)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Confirmado como camino público mediante OpenStreetMap (vía 42943052, highway=footway), el mismo tramo que pam_011 (unos 240 m al norte) y pam_013 (unos 400 m al norte).",
+      "transport": "En Villava / Atarrabia, uno de los pueblos de la comarca de Pamplona junto al Arga; se llega a pie por el paseo fluvial desde Pamplona, o en autobús urbano (red TCC) hasta Villava, y luego un corto paseo hasta la orilla.",
+      "story": "Tres chopos lo bastante grandes como para ser catalogados se alzan a menos de 400 metros entre sí en la ribera de Villava, y este es aquel del que los topógrafos no tuvieron nada particular que decir. Su entrada en el registro de Navarra dice: chopo de gran diámetro, más de un metro, vigoroso. La misma frase, palabra por palabra, describe a otro chopo a un kilómetro y medio de distancia, en la Txantrea.\n\nAsí que hay que tomar la frase por lo que es. Más de un metro de diámetro significa más de tres metros de perímetro, y como el registro se detuvo en el signo de mayor que en vez de terminar la medición, esa cifra es un mínimo y no un dato exacto. Vigoroso es la palabra del topógrafo para un árbol sano en 2013.\n\nLo que lo sostiene es el paseo. Villava está en el Arga, río arriba de Pamplona, en el camino del valle por el que bajan los peregrinos desde hace mil años, y el paseo fluvial que lo atraviesa es llano, gratuito y continuo, con el chopo de la rama rota a 240 metros al norte y un tercero más grande todavía más allá.\n\nNadie ha datado este árbol, nadie le ha medido bien el tronco, y ninguna fuente aparte del registro lo describe siquiera. Si puedes añadir algo, nos gustaría saberlo."
+    },
+    "pam_013": {
+      "name": "El chopo de Villava (norte)",
+      "species": "Chopo negro (Populus nigra)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Confirmado como camino público mediante OpenStreetMap (vía 42943052, highway=footway), el mismo tramo que pam_011 (unos 400 m al sur) y pam_012 (unos 400 m al sur).",
+      "transport": "En Villava / Atarrabia, uno de los pueblos de la comarca de Pamplona junto al Arga; se llega a pie por el paseo fluvial desde Pamplona, o en autobús urbano (red TCC) hasta Villava, y luego un corto paseo hasta la orilla.",
+      "story": "El registro le da a este árbol cuatro palabras y ningún número: chopo lombardo de gran diámetro. Todos los demás árboles catalogados a lo largo de este río llevan alguna medida, una altura, un diámetro, al menos un signo de mayor que. Este no lleva ninguna, así que no vamos a ponerle una cifra al tronco. Grande es lo que escribió el topógrafo y grande es lo que hay.\n\nLa forma es la parte útil. Un chopo lombardo crece como una columna estrecha y alta en vez de una copa extendida, lo que hace visibles filas enteras a través de un valle desde muy lejos, y uno grueso es una columna que lleva tiempo en pie.\n\nSe alza en el extremo norte del paseo fluvial de Villava, unos 400 metros más allá de los otros dos chopos catalogados en ese tramo, en el paseo llano y gratuito que sigue el Arga desde Pamplona hasta los pueblos de la comarca.\n\nNadie ha anotado una edad para él, nadie ha anotado un perímetro, y ninguna fuente aparte del estudio del registro de 2013 lo describe siquiera. Es el registro más pobre de los ocho árboles de este río. Cualquier cosa que puedas añadir, la recogemos."
+    },
+    "pam_014": {
+      "name": "Los chopos de Zabaldika",
+      "species": "Chopo negro (Populus nigra)",
+      "age_estimate": "",
+      "access": "Gratis, en el paseo fluvial público (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), abierto a cualquier hora. Confirmado como camino público mediante OpenStreetMap (vía 163401794, highway=footway).",
+      "transport": "En Zabaldika (Olloki), municipio de Esteribar, en el extremo este del corredor del parque fluvial, bien fuera del casco urbano de Pamplona; solo se llega a pie o en coche/bicicleta por el paseo fluvial, a unos 6 km del extremo occidental de este grupo (pam_007, Rochapea) y a unos 1,4 km más allá del trío de Villava (pam_011/012/013). No hay servicio de autobús urbano confirmado hasta este punto; considéralo el final de un paseo largo o una visita aparte, no un añadido fácil a los demás.",
+      "story": "Nadie anotó cuántos árboles hay aquí. La entrada del registro dice chopos de gran tamaño, en plural, sin ningún recuento ni medida asociada. En otros puntos de este río los mismos topógrafos fueron lo bastante precisos como para registrar dos troncos en un punto y dar un diámetro para cada uno. Aquí vieron un grupo que merecía catalogarse y lo dejaron así, así que puede que sean dos chopos, puede que tres, puede que un pequeño rodal, y no vamos a elegir un número solo para que la página quede más ordenada.\n\nLo que sí es seguro es dónde están. Este es el extremo más oriental del parque fluvial, en Zabaldika, Esteribar, donde el Arga baja de las colinas y el camino ya ha dejado atrás, y hace tiempo, las calles de Pamplona. Es la única ficha de árbol de este río que es una caminata y no un paseo, y conviene tratarla como una salida propia y no añadirla a las demás al final de una tarde larga.\n\nSin edad, sin perímetro, sin altura, sin recuento, y sin más fuente que un estudio de 2013. Si llegas hasta allí, cuéntanos qué hay y cuántos son. En este caso, casi cualquier cosa que puedas decirnos es más de lo que tenemos."
+    }
+  }
+}
