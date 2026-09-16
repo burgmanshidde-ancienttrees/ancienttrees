@@ -2,10 +2,10 @@
   "city": "Milan",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-five trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's twenty-five remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-nine trees, and almost every one owes its survival to a specific human decision.",
+  "meta_description": "Milan's twenty-nine remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775, plus twenty-four more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775, plus twenty-eight more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -931,6 +931,134 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "mil_026",
+      "name": "Il Bagolaro di Varedo",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 500,
+      "location": {
+        "address": "Parco 1 Maggio, Piazza della Pace, 20814 Varedo (MB), Italy",
+        "latitude": 45.598247,
+        "longitude": 9.156461,
+        "neighbourhood": "Varedo, a day trip from Milan, not in Milan itself"
+      },
+      "verified_sources": [
+        "MASAF national monumental-tree register, sheet 05/L677/MB/03, comune Varedo, locality Parco I Maggio, girth 500 cm, height 27 m (data/registers/italy-masaf.json)",
+        "https://www.in-lombardia.it/turismo-in-lombardia/monza-turismo/i-bagolari-di-varedo (official Lombardy regional tourism site, fetched directly 2026-09-16, not just a search summary)"
+      ],
+      "access": "Free. Stands in Parco 1 Maggio, a public urban park between Varedo's town hall and its parish church; the in-lombardia.it source states explicitly that it is freely visitable during park opening hours (liberamente visitabile negli orari di apertura del parco).",
+      "transport": "Varedo railway station (Trenord, Milano-Asso line), about 25 minutes from Milano Cadorna, then a short walk of under 10 minutes to Piazza della Pace in the town centre.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Five metres round the trunk and twenty-seven metres tall, and it is only the largest of four. The national register lists four monumental hackberries in this one small park in Varedo, spread across about ninety metres: 500 centimetres of girth on this one, then 450, 390 and 350 on the others. Most Italian towns would be pleased with one.\n\nThey run along the edge of Parco 1 Maggio, the green between the town hall and the parish church, so the group works as a border rather than a set of specimens on a lawn. You walk along them instead of around them, and the biggest declares itself without anyone having to point.\n\nLombardy's regional tourism board singles out that largest trunk as measuring over five metres round and puts its diameter near 165 centimetres, where the national register's own figure works out closer to 159. Two measurements of the same tree, taken by different people on different days, and the difference is not worth arguing about.\n\nThe journey is a real day trip rather than a Milan stroll: the Milano-Asso line from Cadorna reaches Varedo in about twenty-five minutes, and the park is under ten minutes on foot from the station, free and open during park hours.\n\nNo age has been recorded for any of the four. If you know what dates them, tell us.",
+      "how_to_recognise": "You can recognise it by the thickest trunk in the row, five metres round, in the line of hackberries edging the park between the town hall and the parish church. The next largest of the four measures 450 centimetres.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "mil_027",
+      "name": "La Sofora di Varedo",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Piazza della Pace (church square), 20814 Varedo (MB), Italy",
+        "latitude": 45.597333,
+        "longitude": 9.156458,
+        "neighbourhood": "Varedo, a day trip from Milan, not in Milan itself"
+      },
+      "verified_sources": [
+        "MASAF national monumental-tree register, sheet 01/L677/MB/03, comune Varedo, locality Piazza della Pace, height 18 m, no girth recorded (data/registers/italy-masaf.json)",
+        "https://www.in-lombardia.it/turismo-in-lombardia/monza-turismo/i-bagolari-di-varedo (official Lombardy regional tourism site, fetched directly 2026-09-16; the same article that covers mil_026, describing this tree by name on its own paragraph before reaching the hackberries)"
+      ],
+      "access": "Free. Stands on the church square (piazza della chiesa) at the edge of the same public park as mil_026; the source states the whole site is freely visitable during park opening hours.",
+      "transport": "Varedo railway station (Trenord, Milano-Asso line), about 25 minutes from Milano Cadorna, then a short walk of under 10 minutes to Piazza della Pace in the town centre. Stands about 100 m from mil_026, the same walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Italy's national register of monumental trees rarely carries this species. The Sofora del Giappone at Varedo is a Japanese pagoda tree, an ornamental from East Asia, and it holds a register sheet of its own: 18 metres tall, with no girth recorded at all.\n\nIt stands on Piazza della Pace, the church square at the edge of the same park that holds the town's four monumental hackberries, about a hundred metres from the largest of them. Lombardy's regional tourism board reaches this tree first in its account of Varedo and calls it the interesting one before it gets to the giants. That is a fair order. The hackberries win on bulk; this is the one people stop in front of and fail to name.\n\nWhat gives it away is the foliage, which reads like a robinia's, each leaf divided into small oval leaflets, and then the flowers, loose showy clusters of white to yellow, followed by pods that hang like beans. The pods are the family telling on itself: this is a legume, related to peas rather than to anything else on the square.\n\nNobody has put a tape around its trunk and nobody has dated it. The height is the only number anyone has written down. If you know either of the missing figures, tell us.",
+      "how_to_recognise": "You can recognise it by leaves divided into small leaflets like a robinia's, and by bean-like pods hanging after the white flower clusters. It stands on the church square, about a hundred metres from the big hackberries.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "mil_028",
+      "name": "I Bagolari di Piazza Giovanni XXIII",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 390,
+      "location": {
+        "address": "Piazza Giovanni XXIII, 20096 Pioltello (MI), Italy",
+        "latitude": 45.500889,
+        "longitude": 9.326833,
+        "neighbourhood": "Pioltello, a day trip from Milan, not in Milan itself"
+      },
+      "verified_sources": [
+        "MASAF national monumental-tree register, sheets 01 and 03 of G686/MI/03, comune Pioltello, locality Piazza Giovanni XXIII, girths 350 and 390 cm, heights 20 and 22 m (data/registers/italy-masaf.json)",
+        "https://primalamartesana.it/attualita/alberi-monumentali-spicca-la-lombardia-in-martesana-ecco-dove-sono/ (local news site covering the Martesana area's monumental trees, fetched directly 2026-09-16, independently names two bagolaro specimens plus a yew at Piazza Giovanni XXIII, Pioltello)"
+      ],
+      "access": "Free, standing in an ordinary public town square (piazza) in central Pioltello; no gate or restriction found in any source.",
+      "transport": "Pioltello-Limito station (Trenord/Trenitalia, Milano Centrale-Venezia line), about 14 minutes from Milano Centrale, then roughly a 20 to 25 minute walk to Piazza Giovanni XXIII. Longer than most of Milan's own cluster; honest travel time given rather than rounded down.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Three trees on Italy's national monumental register stand on one ordinary town square in Pioltello. Two of them are these hackberries, a matched pair a few metres apart: 390 centimetres round and 22 metres tall, beside a companion of 350 centimetres and 20 metres. The third is a yew, a few steps further on.\n\nThe register lists the two hackberries separately and there is no sensible way to visit them separately. Somebody arriving at the piazza sees a pair, so that is how they are set down here, carrying the larger tree's figures, with the smaller one standing close enough that you cannot mistake which two are meant.\n\nPiazza Giovanni XXIII is not a park or an estate garden. It is the square of a commuter town on the Martesana side of Milan, free, ungated, open at any hour, and the trees are simply standing in it. The local paper's survey of monumental trees in the Martesana names both hackberries and the yew at this address without measuring any of them. The numbers come from the register.\n\nGetting there is honest work: fourteen minutes by train from Milano Centrale to Pioltello-Limito, then a walk of twenty to twenty-five minutes, which is longer than most stops on this map.\n\nNo age is recorded for either hackberry, and none has been estimated. If you know what dates them, tell us.",
+      "how_to_recognise": "You can recognise them by the matched pair of hackberries standing a few metres apart in the square, the larger 390 centimetres round and 22 metres tall. The registered yew nearby is far shorter and evergreen.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "mil_029",
+      "name": "Il Tasso di Piazza Giovanni XXIII",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 140,
+      "location": {
+        "address": "Piazza Giovanni XXIII, 20096 Pioltello (MI), Italy",
+        "latitude": 45.500842,
+        "longitude": 9.326944,
+        "neighbourhood": "Pioltello, a day trip from Milan, not in Milan itself"
+      },
+      "verified_sources": [
+        "MASAF national monumental-tree register, sheet 02/G686/MI/03, comune Pioltello, locality Piazza Giovanni XXIII, girth 140 cm, height 10 m (data/registers/italy-masaf.json)",
+        "https://primalamartesana.it/attualita/alberi-monumentali-spicca-la-lombardia-in-martesana-ecco-dove-sono/ (local news site, fetched directly 2026-09-16, independently names a tasso at Piazza Giovanni XXIII, Pioltello, alongside the two bagolari)"
+      ],
+      "access": "Free, standing in the same ordinary public square as mil_028, a few metres away.",
+      "transport": "Same journey as mil_028: Pioltello-Limito station (Trenord/Trenitalia, Milano Centrale-Venezia line), about 14 minutes from Milano Centrale, then roughly a 20 to 25 minute walk to Piazza Giovanni XXIII.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The smallest tree on this square is the one to be careful about. The yew on Piazza Giovanni XXIII measures 140 centimetres round and stands 10 metres tall, well under half the girth of the hackberries a few metres away, and it is on the national monumental register regardless.\n\nYews make a nonsense of judging a tree by its waistline. They grow slowly, and a modest trunk on a yew is not the evidence of youth it would be on a poplar. That is reputation rather than measurement, though, and nobody has done the arithmetic here: no growth rate has been applied to this trunk, no age has been derived from it, and guessing one would be worse than leaving the field empty.\n\nWhat it has instead is company. The register puts this yew and two hackberries on one small piazza in a commuter town east of Milan, and the local paper's survey of monumental trees in the Martesana names all three at the same address, which is how the yew stops being an afterthought beside the bigger pair. Three registered trees within a few metres of each other make one stop rather than three, about twenty minutes on foot from Pioltello-Limito and fourteen minutes by train out of Milano Centrale.\n\nIts age is recorded nowhere. If anyone has dated it, tell us.",
+      "how_to_recognise": "You can recognise it by the dark evergreen crown, 10 metres tall and 140 centimetres round, the smallest of the three registered trees on the square. It stands a few metres from the taller pair of hackberries.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ],
   "oldest_tree_id": "mil_004"

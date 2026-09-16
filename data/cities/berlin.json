@@ -873,6 +873,70 @@
         "height": 4848
       },
       "photos": []
+    },
+    {
+      "id": "ber_024",
+      "name": "The Oak of the Kleistpark",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Heinrich-von-Kleist-Park, east of the Verfassungsgerichtshof (Kammergericht), on the oval lawn, 10781 Berlin",
+        "latitude": 52.492,
+        "longitude": 13.358444,
+        "neighbourhood": "Schoeneberg, Tempelhof-Schoeneberg"
+      },
+      "verified_sources": [
+        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+        "https://baumschlau.de/schlau8.html"
+      ],
+      "access": "Free, public park (Heinrich-von-Kleist-Park), open daily",
+      "transport": "U-Bahn Kleistpark (U7), 2 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Berlin's official reason for protecting this oak is beauty. The Naturdenkmal order of 2 March 1993 lists it as 7-15/B, a Stiel-Eiche on the oval lawn east of the Kammergericht, and gives two grounds: Schoenheit, and regional-historical interest. No girth, no height, no age. The city looked at it and decided that was enough.\n\nThe ground under it has the longer record. Heinrich-von-Kleist-Park was Berlin's first botanical garden, from 1801 until 1903, when the collection was lifted and moved out to Dahlem. A monument on the same lawn still marks what used to stand here. The colonnades and the court building came later, and the lawn stayed open, which is why the oak is visible whole instead of crowded into a hedge.\n\nIt is not the largest tree in the park. That is the wingnut, and a bald cypress and a ginkgo grow nearby; two further protected trees stand here as well, a catalpa at the Potsdamer Strasse entrance and a mulberry. But a children's tree walk written with the district's own green-spaces office stops at this one and puts it plainly: here we have a thick, large oak, and it is a Naturdenkmal.\n\nNobody has dated it. The Berlin register carries no age field for any of its trees, and no other source has filled the gap. If you know when this one went in, tell us.",
+      "how_to_recognise": "You can recognise it by the thick oak trunk on the oval lawn east of the Kammergericht building, the same lawn that holds the monument to the park's former botanical garden. The park's bigger wingnut stands elsewhere.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_025",
+      "name": "The Twin Yews of Johannaplatz",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Johannaplatz (northern part of the hexagonal garden square), 14193 Berlin",
+        "latitude": 52.490333,
+        "longitude": 13.281583,
+        "neighbourhood": "Grunewald, Charlottenburg-Wilmersdorf"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Charlottenburg-Wilmersdorf",
+        "https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/freiflaechen/plaetze/artikel.156589.php"
+      ],
+      "access": "Free, public garden square (Gartendenkmal), open at all times",
+      "transport": "About 15 min walk from S-Bahn Grunewald (S7)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Berlin protected both of these yews for one stated reason: beauty. They hold separate entries in the register, 4-30/B at the south end of the square and 4-31/B at the north, both Taxus baccata, both signed off on the same day in March 1993, and the ground given for each is Schoenheit. Nothing about size, nothing about age.\n\nThe square under them was laid out in 1890 for a church that never got built. Six streets of the Grunewald villa colony run into it, and the hexagon left in the middle went to the gardeners rather than the architects. In 1896 the royal garden inspector Hermann Roehr redesigned it as a garden square, with groups of broadleaves and conifers set around semicircular seating, and in 1898 it was named after Johanna von Bismarck, the chancellor's wife. The borough writes that the old tree stock here has been largely preserved to this day.\n\nThe two yews stand at opposite ends of that hexagon, roughly sixty metres apart, which makes them one stop rather than two. Yews give little away. Dark, dense and slow, they are the species most often underestimated by people who judge a tree by its waistline.\n\nNeither of these has ever been dated, and the Berlin register records no girth for either. If you have put a tape round one of them, tell us.",
+      "how_to_recognise": "You can recognise them by the dark evergreen pair standing at opposite ends of the hexagonal garden square, about sixty metres apart. The pin marks the northern yew; its twin holds the south end, where six Grunewald streets meet.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
