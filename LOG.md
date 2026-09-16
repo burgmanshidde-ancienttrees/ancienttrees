@@ -12,6 +12,72 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-16 (session) - Rung 2 fixed (a real bug, not the usage window), rung 1 cleared, two country pages, Ottawa 19 -> 21, two verify passes still running
+
+Started at rung 2: `health.py` flagged Night shift and Weekly analysis as
+"failing for a reason the log names" (BLOCKER-adjacent), and REVIEW.md's
+2026-09-16 BLOCKER said the same thing from a different angle: three days
+of knocks dying with the exact usage-limit fingerprint (turns<5, ~0
+minutes) while the daily digest's headline still said "nothing here needs
+you". Fixed both for real, not by waiting them out:
+- `daily_digest.py`'s `night_shift()` now feeds a genuine stall (every
+  knock in the 24h window producing 0 trees and under 2 real minutes,
+  with at least 3 knocks) into `ATTENTION`, so the headline stops lying
+  when the machine is actually dead. Verified against the live stalled
+  data (fired) and a synthetic healthy mix (stayed silent).
+- `health.py`'s `failure_evidence()` was reading claude-code-action's
+  generic "result is_error:true" wrapper line, which appears on EVERY
+  failure regardless of cause, as proof of a real code break, so it never
+  reached the duration-based starved check that would have correctly
+  called this a usage-allowance issue. `GENERIC_WRAPPER_MARKERS` now
+  filters that line out; a genuinely uninformative failure falls through
+  to the starved heuristic instead of a `named_error` that names nothing.
+  Verified with three synthetic cases (generic-only -> None, a real error
+  -> still 'broken', an explicit allowance message -> still 'allowance').
+  Rung 2 now reads clean and correctly. Recorded both as the BLOCKER's
+  answer via `health.py --answer`.
+
+Rung 1: 6 unprocessed Supabase submissions and 2 queued app photographs,
+all from Hidde's own account. Corrected fuk_002's pin (a 66m map
+correction independently corroborated by a photo's own embedded GPS 34m
+away, both pointing the same direction from the old approximate pin;
+upgraded to confirmed). Viewed and held (not auto-published, per
+CLAUDE.md 2026-09-08's rule for our own account) two app photographs
+against their trees' existing approved photos, with reasons recorded so
+Hidde's own look can act on the judgement. Wrote up an unmapped
+photograph as a proper leads-file candidate (likely camphor, no register
+or encyclopaedia hit). Recorded outcomes on the Supabase rows matching
+established conventions.
+
+Page gaps: wrote country intros for Mexico (3 cities, 11 trees, the
+ahuehuete running through all of them) and Croatia (3 cities, 9 trees,
+Trsteno's arboretum against Gornja Stubica's revolt lime), both gated at
+3+ cities and both grounded in their own published trees.
+
+Dispatched a verify pass on Ottawa (NCC "A Living Legacy" register):
+came back with 2 verified trees (a Dutch-elm-disease-survivor elm and a
+native red oak on Queen Elizabeth Driveway) and 2 new leads. Wrote both
+stories directly in-session rather than dispatching a write pass (too
+thin a batch for the assembly-line floor), merged, and fixed the now-
+stale "nineteen trees" promises across meta_description, FAQ and the
+question page. Ottawa 19 -> 21.
+
+Checked Arnhem, Florence, Vilnius, Dublin as further verify targets:
+Arnhem is already well past its target (39 live vs target 20, staged
+shelf doesn't filter by target so it doesn't mean much on its own);
+Florence, Vilnius and Dublin all had thin unmined register piles (10,
+1 and 3 respectively, mostly flagged as probable duplicates). Claimed
+and dispatched two parallel verify passes instead on cities with real
+supply: Berlin (berlin-naturdenkmale.json, 555 unmined of 592, needs up
+to 7 more to reach target 30) and Milan (italy-masaf.json, 51 unmined of
+73 with girths given directly, needs up to 5 more to reach target 30).
+Both still running as this entry is written; a continuation should
+check `data/research/{berlin,milan}-verified.json`, merge what verifies,
+run the build/QA/preflight cycle, fix any stale count copy, and release
+both claims.
+
+Build (5660+ pages), qa.py and preflight.py all clean throughout.
+
 ## 2026-09-16 - Night run 2026-09-16 08:55 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
