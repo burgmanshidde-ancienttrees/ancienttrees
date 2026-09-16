@@ -2,10 +2,10 @@
   "city": "Pamplona",
   "country": "Spain",
   "status": "needs_curation",
-  "intro": "Navarra protects 47 trees by name, declaring each one a Natural Monument in its own right, and six of them stand within half an hour of Pamplona. Five are oaks in the valleys north and south of the city, most of them pollarded for centuries by the villages that own the ground, which is why they have short thick trunks under enormous crowns. The sixth is in Pamplona itself, a giant sequoia in the garden of the regional government's palace, which is about as far from a Navarrese hill oak as a tree can get.",
-  "meta_description": "Navarra declares individual trees Natural Monuments, and six stand near Pamplona: pollarded valley oaks, and a giant sequoia at the government palace.",
-  "question_answer": "The oldest tree near Pamplona is most likely the Roble de Orkin in the Ultzama valley, a pedunculate oak whose size has led to it being called millenary, though Navarra publishes no age for it or for any of its 47 declared Natural Monument trees.",
-  "question_meta": "The Roble de Orkin in Ultzama is probably the oldest tree near Pamplona. Why Navarra publishes no ages at all, and 5 more Natural Monuments.",
+  "intro": "Navarra protects 47 trees as Natural Monuments, and six stand within half an hour of Pamplona: five pollarded valley oaks and a giant sequoia at the regional government's palace. A second, separate Navarra register catalogues singular trees along the Arga itself, the river through the city, and eight more stand on its public riverside path between Rochapea and Zabaldika, mostly black poplars, one pollarded for firewood, one still wearing the brackets of an old electrical line. Fourteen trees in all, none of them dated, across two registers and one river valley.",
+  "meta_description": "Fourteen trees near Pamplona: six of Navarra's Natural Monuments, pollarded oaks and a palace sequoia, plus eight riverside poplars along the Arga.",
+  "question_answer": "The oldest tree near Pamplona is most likely the Roble de Orkin in the Ultzama valley, a pedunculate oak whose size has led to it being called millenary, though Navarra publishes no age for it or for any of its 47 declared Natural Monument trees, and its separate river-park register gives no ages either.",
+  "question_meta": "The Roble de Orkin in Ultzama is probably the oldest tree near Pamplona. Why Navarra publishes no ages at all, and 13 more trees across two registers.",
   "question_context": "Navarra's register is the shortest on this site and the most absolute. It names 47 trees, declares each an individual Natural Monument, and records for each one the species, the place, the year of declaration and a coordinate, and nothing else: no height, no girth, no age and no note on whether the tree is still alive. The catalogue in its present form was approved at the end of 2009, with a first tranche declared in 1991. That leaves the age question to sources outside the register, and there the ground is soft. The oak at Orkin in the Ultzama valley is widely called millenary on the strength of its size, which is a common way of dating a big oak and not a measurement. The oak at Eltzaburu is better documented: reported at over 26 metres tall with a base close to two metres across, it survived both felling and a lightning strike that took out one of its main limbs, and it was declared a Natural Monument in 1991. Getting to Eltzaburu: about 25 km north of Pamplona in the Ultzama valley, with a marked walking route to the tree.",
   "oldest_tree_id": "pam_002",
   "faq": [
@@ -241,6 +241,254 @@
       "location_precision": "confirmed",
       "notes": "Declared a Natural Monument of Navarra in 2009. Single-sourced from the SITNA register: species, place, year and coordinate only, no measurements, no age, no vitality field. The winter marcescence described is standard for the species.",
       "how_to_recognise": "You can recognise it in winter by its dead brown leaves still on the branches, dropping only when new growth pushes them off. It stands at Garinoain, in the Valdorba."
+    },
+    {
+      "id": "pam_007",
+      "name": "The Pollarded Poplar of Rochapea",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 471,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Rochapea, 31071 Pamplona",
+        "latitude": 42.819706,
+        "longitude": -1.649591,
+        "neighbourhood": "Rochapea, Pamplona"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Confirmed as a public footway via OpenStreetMap (way 816492962, highway=footway).",
+      "transport": "In Rochapea, Pamplona; reachable on foot from the city centre along the riverside path, or by Pamplona urban bus (TCC network) to Rochapea, then a short walk to the riverbank.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Somebody cut the top off this poplar, and it grew to 26 metres anyway. Navarra's river-park register lists it as a trasmocho, a pollard: a tree beheaded at height so the regrowth can be cut again and again for firewood, fence posts and fodder. That is farm work rather than landscaping, and it means this trunk was earning its keep long before the banks of the Arga became a park. The register puts the trunk at 150 centimetres across, which works out at roughly four and a half metres round, and the 2013 survey that recorded it measured the height at 26 metres. Pollards are usually squat things. This one is not.\n\nIt stands on the riverside walk through Rochapea, the low district by the water where Pamplona came down from its walls to do its washing while the old town kept to the ridge. The path is free and open at any hour.\n\nTwo things we cannot tell you. Only the Navarra register describes this tree, so there is no second account to check it against, and that survey is now over a decade old. And nobody has recorded an age. Cutting a tree's head off scrambles the usual way of reading how long a poplar has stood, so we are not going to guess at one. If you know more about this tree, tell us.",
+      "how_to_recognise": "You can recognise it by the pollarded head, cut back at height with the regrowth rising out of it, on a trunk around four and a half metres round. It stands on the riverside path through Rochapea, on the bank of the Arga.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "pam_008",
+      "name": "The Poplar of Txantrea",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 314,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Magdalena, Txantrea, 31004 Pamplona",
+        "latitude": 42.817603,
+        "longitude": -1.62888,
+        "neighbourhood": "Magdalena, Txantrea, Pamplona"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Same public footway confirmed via OpenStreetMap (way 816826057, highway=footway) as pam_009 below, about 90 metres away.",
+      "transport": "In the Magdalena area of the Txantrea district, Pamplona; reachable on foot along the riverside path, or by Pamplona urban bus (TCC network) to Txantrea/Rotxapea, then a short walk to the riverbank.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Navarra's register describes this tree in eight words, and then uses the same eight words for a different poplar a kilometre and a half away in Villava: a poplar of large diameter, over a metre through, vigorous. That is the entire official record of it. No height, no age, no story, and nothing that would tell it apart from its neighbours if you were standing under it.\n\nWhat the phrase does give you is a floor. Over a metre of diameter means more than three metres around the trunk, and because the register stopped at the greater-than sign rather than taking the measurement, the real figure is probably larger than that. It is a big riverside poplar on a river that grows them.\n\nIt stands on the Magdalena stretch of the Arga in Txantrea, on the riverside path that runs the length of the valley through Pamplona, free and open at all hours. The plane tree with the old electrical cable brackets on its trunk is about 90 metres along the same path.\n\nOnly the register describes this tree, and its survey dates from 2013. Nobody has recorded an age for it, and nobody has taped the trunk properly either. If you have walked out and looked at it, tell us what you found.",
+      "how_to_recognise": "You can recognise it only by where it stands, because nothing in the record separates it from the other big poplars here: on the Magdalena river walk in Txantrea, about 90 metres from the plane with old cable brackets on its trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "pam_009",
+      "name": "The Plane of Txantrea",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 393,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Magdalena, Txantrea, 31004 Pamplona",
+        "latitude": 42.817653,
+        "longitude": -1.627924,
+        "neighbourhood": "Magdalena, Txantrea, Pamplona"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Same public footway confirmed via OpenStreetMap (way 816826057, highway=footway) as pam_008 above, about 90 metres away.",
+      "transport": "In the Magdalena area of the Txantrea district, Pamplona; reachable on foot along the riverside path, or by Pamplona urban bus (TCC network) to Txantrea/Rotxapea, then a short walk to the riverbank.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This plane tree once did a second job as a utility pole. Navarra's register records it as a large plane carrying old supports for electrical cables, the brackets still fixed to the trunk long after whatever they held came down. It is the kind of detail a register almost never gives, and it makes this the one tree on this stretch of the Arga you can identify without a map.\n\nThe measurements are respectable on their own. The register puts the trunk between 120 and 130 centimetres across, so somewhere between roughly 3.8 and 4.1 metres round, which is a serious plane by any standard and an unusually big one to find standing on a riverbank rather than on a boulevard.\n\nPamplona's own survey of its old trees writes warmly about the planes of the Rochapea bridge, shade for the women who washed clothes in the Arga, and about stands of roughly century-old planes along these banks. It never names this tree, so treat that as the mood of the place rather than as evidence about this trunk.\n\nAnd that is the honest gap: the register is the only source that describes this specific tree, its survey dates from 2013, and nobody has recorded an age. The cable brackets, at least, are something anyone standing there can check. If you know more, tell us.",
+      "how_to_recognise": "You can recognise it by the old electrical cable brackets still fixed to the trunk, and by being a plane among poplars, with patchy flaking bark and broad leaves. It stands on the Magdalena river walk in Txantrea.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "pam_010",
+      "name": "The Poplars of Erripagaña",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 377,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Erripagaña, Burlada / Burlata, 31600 Navarra",
+        "latitude": 42.822156,
+        "longitude": -1.61083,
+        "neighbourhood": "Erripagaña, Burlada"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Confirmed as a public footway via OpenStreetMap (way 704534922, highway=footway).",
+      "transport": "In Erripagaña, Burlada, one of Pamplona's comarca towns along the Arga; reachable on foot along the riverside path from Pamplona, or by Pamplona urban bus (TCC network) to Burlada, then a short walk to the riverbank.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A Lombardy poplar is usually a narrow column, the exclamation mark of the roadside. One of these two is close to four metres round.\n\nThe register records a pair at this point on the river path at Erripagaña, both of them large and both vigorous, and it takes the trouble to measure them separately: 120 centimetres across for the bigger trunk, 90 for the smaller. Converted, that is roughly 3.8 metres around the first and about 2.8 around the second. Both figures come from diameters rather than a tape passed round the trunk, so read them as close rather than exact. They stand together, which is why they are one entry here rather than two: you walk to one place and both are in front of you, the thick one and the merely large one.\n\nThe setting is the Arga on its way through Burlada, on the continuous riverside walk that runs from Pamplona out through the comarca towns. Free, open, flat, and about as easy a tree visit as this site has.\n\nWhat nobody has written down is how old either of them is, and the only description of them anywhere is the 2013 register survey. If you know this pair, or have measured them, tell us.",
+      "how_to_recognise": "You can recognise them by being two poplars standing together, one noticeably thicker than the other, the bigger close to four metres round and the smaller nearer three. They stand on the river path at Erripagaña, in Burlada.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "pam_011",
+      "name": "The Broken-Limbed Poplar of Villava",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 314,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Villava / Atarrabia, 31610 Navarra",
+        "latitude": 42.83112,
+        "longitude": -1.605491,
+        "neighbourhood": "Villava / Atarrabia"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Confirmed as a public footway via OpenStreetMap (way 42943052, highway=footway), the same path segment as pam_012 (about 240m away) and pam_013 (about 400m away).",
+      "transport": "In Villava / Atarrabia, one of Pamplona's comarca towns along the Arga; reachable on foot along the riverside path from Pamplona, or by Pamplona urban bus (TCC network) to Villava, then a short walk to the riverbank.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "One of this poplar's three main limbs is dead, and the bark has come away from parts of the trunk. Navarra's surveyors catalogued it as a singular tree anyway, and wrote the damage into the record rather than around it: a poplar of large diameter, three main branches, one of them dead, partially debarked.\n\nThat description is worth more than a tidier one would be. Of the three big poplars on this stretch of the Villava riverside it is the only one you can identify from the path without counting your steps, because the others are recorded as nothing more than large and vigorous. A three-limbed crown with one bare limb in it, and pale wood showing through where the bark has gone, is a silhouette rather than a category.\n\nThe register gives the trunk as over a metre across without finishing the measurement, which puts it over three metres round at the very least and probably a good deal more. It stands on the public path along the Arga through Villava, free and open, flat walking from Pamplona.\n\nThe survey behind all of this dates from 2013 and no other source describes the tree, so the dead limb and the bare patches are thirteen years old as facts. Nobody has recorded an age either. If you walk out and see how it is doing now, tell us.",
+      "how_to_recognise": "You can recognise it by its three main limbs, one of them dead and bare, and by the patches where the bark has come away from the trunk. It stands on the river walk in Villava, the middle of the three poplars on that stretch.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "pam_012",
+      "name": "The Poplar of Villava (south)",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 314,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Villava / Atarrabia, 31610 Navarra",
+        "latitude": 42.830583,
+        "longitude": -1.605432,
+        "neighbourhood": "Villava / Atarrabia"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Confirmed as a public footway via OpenStreetMap (way 42943052, highway=footway), the same path segment as pam_011 (about 240m north) and pam_013 (about 400m north).",
+      "transport": "In Villava / Atarrabia, one of Pamplona's comarca towns along the Arga; reachable on foot along the riverside path from Pamplona, or by Pamplona urban bus (TCC network) to Villava, then a short walk to the riverbank.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Three poplars big enough to be catalogued stand within 400 metres of each other on the Villava riverside, and this is the one the surveyors had nothing particular to say about. Its entry in Navarra's register reads: poplar of large diameter, over a metre, vigorous. The same sentence, word for word, describes another poplar a kilometre and a half away in Txantrea.\n\nSo take the sentence for what it is. Over a metre across means over three metres round the trunk, and since the register stopped at the greater-than sign rather than finishing the measurement, that number is a floor and not a figure. Vigorous is the surveyor's word for a tree in good health in 2013.\n\nWhat carries it is the walk. Villava sits on the Arga upstream of Pamplona, on the valley road that pilgrims have come down for a thousand years, and the riverside path through it is flat, free and continuous, with the broken-limbed poplar 240 metres north and a third big one beyond that.\n\nNobody has dated this tree, nobody has measured the trunk properly, and no source but the register describes it at all. If you can add anything to that, we would like to hear it.",
+      "how_to_recognise": "You can recognise it by position and little else, since the record says only that it is large and vigorous: it is the southernmost of the three big poplars on the Villava river walk, about 240 metres from the one with a dead limb.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "pam_013",
+      "name": "The Poplar of Villava (north)",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Villava / Atarrabia, 31610 Navarra",
+        "latitude": 42.832733,
+        "longitude": -1.605159,
+        "neighbourhood": "Villava / Atarrabia"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Confirmed as a public footway via OpenStreetMap (way 42943052, highway=footway), the same path segment as pam_011 (about 400m south) and pam_012 (about 400m south).",
+      "transport": "In Villava / Atarrabia, one of Pamplona's comarca towns along the Arga; reachable on foot along the riverside path from Pamplona, or by Pamplona urban bus (TCC network) to Villava, then a short walk to the riverbank.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register gives this tree four words and no numbers: a Lombardy poplar of large diameter. Every other tree catalogued along this river carries a measurement of some kind, a height, a diameter, at least a greater-than sign. This one carries none, so we are not going to put a figure on the trunk. Large is what the surveyor wrote and large is what you get.\n\nThe form is the useful part. A Lombardy poplar grows as a tall narrow column rather than a spreading crown, which is what makes rows of them visible across a valley from a long way off, and a thick one is a column that has been standing a while.\n\nIt stands at the northern end of the Villava riverside path, about 400 metres beyond the other two catalogued poplars on that stretch, on the flat free walk that runs along the Arga from Pamplona out through the comarca towns.\n\nNobody has recorded an age for it, nobody has recorded a girth, and no source other than the 2013 register survey describes it at all. This is the thinnest record of the eight trees on this river. Anything you can add, we will take.",
+      "how_to_recognise": "You can recognise it by its shape, the tall narrow column of a Lombardy poplar rather than a spreading crown. It stands at the north end of the Villava river walk, about 400 metres beyond the other two poplars there.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "pam_014",
+      "name": "The Poplars of Zabaldika",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Iruñerriko ibai-pasealekua (river walk), Zabaldika, Olloki, Esteribar, 31620 Navarra",
+        "latitude": 42.838093,
+        "longitude": -1.590041,
+        "neighbourhood": "Zabaldika, Esteribar (comarca de Pamplona, not Pamplona itself)"
+      },
+      "verified_sources": [
+        "https://datosabiertos.navarra.es/dataset/spasitnaparflu_sym_arbolsing-xml"
+      ],
+      "access": "Free, on the public riverside footpath (Iruñerriko ibai-pasealekua / Parque Fluvial de la Comarca de Pamplona), open at all times. Confirmed as a public footway via OpenStreetMap (way 163401794, highway=footway).",
+      "transport": "In Zabaldika (Olloki), Esteribar municipality, at the eastern end of the river-park corridor, well outside Pamplona's built-up area; reachable only on foot or by car/bike along the riverside path, roughly 6km from the western end of this cluster (pam_007, Rochapea) and about 1.4km beyond the Villava trio (pam_011/012/013). No urban bus service confirmed reaching this point; treat as the far end of a long linear walk or a separate short visit, not as an easy add-on to the others.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nobody wrote down how many trees are here. The register's entry reads chopos de gran tamaño, large poplars, plural, with no count and no measurement attached to it. Elsewhere on this river the same surveyors were precise enough to record two trunks at one point and give a diameter for each. Here they saw a group worth cataloguing and left it at that, so it may be two poplars, it may be three, it may be a small stand, and we are not going to pick a number to make the page tidier.\n\nWhat is certain is where they are. This is the far eastern end of the river park, at Zabaldika in Esteribar, where the Arga comes down out of the hills and the path has long since left Pamplona's streets behind. It is the one tree entry on this river that is a walk rather than a stroll, and it should be treated as its own outing rather than tacked onto the others at the end of a long afternoon.\n\nNo age, no girth, no height, no count, and no source but a 2013 survey. If you make it out there, tell us what is standing and how many. On this one, almost anything you can tell us is more than we have.",
+      "how_to_recognise": "You can recognise them as a group of large poplars rather than a single trunk, though nobody has recorded how many. They stand at the far eastern end of the river path, at Zabaldika in Esteribar, well beyond the Villava trees.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
