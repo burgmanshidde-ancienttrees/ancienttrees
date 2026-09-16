@@ -18,6 +18,27 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-16 - Submission #110 (Oguni): a tree add with only a GPS pin, does not verify yet
+
+Reader submission (kind `tree`, app's Collect flow, no name/species/girth given).
+The pin (33.04561, 131.29971) was tagged "Oguni" by the app, but that is just
+the nearest city in our own database (25.6km from ogn_001): reverse geocoding
+(Nominatim) places the actual point in Taketa, Oita, a prefecture over from
+Oguni-machi, Kumamoto. Went looking for a documented tree there anyway, in
+case it was a known giant cedar mismapped by the app: found and checked the
+national register's Amida Sugi (阿弥陀杉, Kurofuchi, Oguni-machi, designated
+1934, ~1600yr claimed, 38m, girth 10.65m per bunkacho + a second source), but
+that tree sits demonstrably elsewhere (its own listed address is nowhere near
+this pin) and the Japan giant-tree/bunkacho register has nothing within 19km
+of the submitted point. Overpass has no named tree node there either, only
+generic woodland polygons. No photo was sent with this one.
+
+Does not clear the bar: no second source, no species, no name, nothing to
+verify beyond the coordinate. Filed as a lead rather than published (kept in
+mind for a future Taketa pass if more evidence ever turns up), outcome set to
+`open_question` on the submissions row, reply asks for a photo or the species.
+Row 110 marked processed.
+
 ## 2026-09-13 (continuation 34) - New place: Portalegre (Portugal), the Plane Tree of Rossio, single-famous-tree exception
 
 Same window, continuing down `famous_demand.py --gap`'s list past the Belgrade
