@@ -3,7 +3,7 @@
  "country": "Netherlands",
  "source": "netherlands-lrmb",
  "licence": "Onder bronvermelding te gebruiken: (c)Bomenstichting",
- "note": "visitable single trees, felled entries filtered. The register is ONE source; a second is still needed or the tree ships flagged. site_history describes the PLACE, not the tree.",
+ "note": "visitable single trees, felled entries filtered. The register is ONE source; a second is still needed or the tree ships flagged. site_history describes the PLACE, not the tree. Verify pass 2026-09-16 delivered 5 trees (ens_008 to ens_012, cemetery cluster + Stroinksbleekweg pair) to data/research/enschede-verified.json; see 'blocked' for one dead tree found by cross-referencing duplicate register rows, and the new Roombeek-acacias lead below for a promising unpinned find.",
  "candidates": [
   {
    "nr": 1692865,
@@ -904,6 +904,44 @@
    "form": "Zuilvorm",
    "reason": "onbekend",
    "site_history": "Zie opm. bij leeftijd."
+  },
+  {
+   "nr": 1678435,
+   "register_name": "Gewone plataan",
+   "species": "London Plane (Platanus x acerifolia)",
+   "latitude": 52.225964,
+   "longitude": 6.879032,
+   "place": "Cort van de Lindelaan, Enschede",
+   "note": "Duplicate register row for the plane tree already published as ens_007 (nr 1678433, same coordinate to within 0.1m). Not a second tree. Its own history text is what revealed that the neighbouring Bruine beuk (nr 1678434, see blocked) was felled in the mid-1990s. No action needed; do not publish as a new entry."
+  },
+  {
+   "nr": null,
+   "register_name": "Suikerberk op de Oosterbegraafplaats, Enschede.",
+   "species": "unclear: 'Suikerberk' is not a standard Dutch common name (berk = birch, but no birch species is normally called sugar birch in Dutch; possibly a mistranscription). Register species field is null.",
+   "latitude": 52.222483,
+   "longitude": 6.934562,
+   "place": "Oosterbegraafplaats, noordelijke hoofdpad, achteraan links, Enschede",
+   "note": "nr 1692854. Held back this pass for species uncertainty only (evidence bar), not blocked. Needs species identification (photo or on-site ID) before it can verify. visitable=ja per register, same cemetery cluster as ens_008/009/010."
+  },
+  {
+   "nr": null,
+   "register_name": "The four surviving acacias of Roombeek (lead, not from a register)",
+   "species": "Black Locust / False Acacia (Robinia pseudoacacia), per the news source's acacia description; not confirmed to species level",
+   "latitude": 52.2317,
+   "longitude": 6.8955,
+   "place": "Near the fireworks-disaster crater/memorial, Roomweg area, Roombeek, Enschede (approximate: this is the coordinate of Roomweg 165, the Huis van Verhalen visitor centre near the crater, NOT the trees themselves; exact tree positions not found this pass)",
+   "note": "Found via web research, not the register. 1twente.nl (2026): four acacia trees stand within about 100m of the explosion crater from the 13 May 2000 fireworks disaster (23 dead, ~950 injured) and survived the blast, the neighbourhood's total reconstruction, and a suspected tree disease (later disproven), with burn marks that healed. This is a strong candidate: historically significant, a compact named ensemble with one obvious place to stand (the crater memorial), publicly accessible. NOT verified or delivered this pass because the exact coordinates of the trees themselves (as opposed to the general crater/memorial area) were not pinned down within the time budget: two searches and a Foursquare lookup (empty response) did not yield a precise tree-level location. A second independent source beyond the 1twente.nl article was not sought yet either. Worth a dedicated follow-up pass: search for the crater monument's own exact coordinates (it is a preserved, subsided concrete foundation, a known visitable landmark) and confirm the acacias stand beside it; the disaster's 25th-anniversary press coverage (2025) likely has more detail and photos."
+  }
+ ],
+ "blocked": [
+  {
+   "nr": 1678434,
+   "register_name": "Bruine beuk",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "latitude": 52.225964,
+   "longitude": 6.879033,
+   "place": "Cort van de Lindelaan, Enschede",
+   "reason": "dead: felled mid-1990s. The sibling register row for the same location, nr 1678435 (a duplicate entry for the surviving plane tree already published as ens_007), says in its own history text: 'De oude Plataan (de rode beuk is midden jaren 90 geveld) staat nog steeds in de Cort van der Lindenlaan' (the old Plane tree still stands; the copper beech was felled in the mid-1990s). This nr's own history field is blank ('onbekend'), so the death is only visible by cross-referencing the identical-coordinate sibling row, which the register's own dead_entries_regex scan did not catch on this row (it flagged 1678435 instead, whose own text happens to contain the death sentence about a DIFFERENT tree at the same point). Never publish."
   }
  ]
 }

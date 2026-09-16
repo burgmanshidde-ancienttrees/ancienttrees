@@ -47377,7 +47377,9 @@
      "lat": 52.795858,
      "lng": 6.870375,
      "cats": "Category:CC-BY-SA-4.0 Category:Hunebed D42 in Emmer es Category:Images from Wiki Loves Monuments 2017 Category:Images from Wiki Loves Monuments 2017 in the Netherlands Category:Netherlands photographs taken on 2017-07-18 Category:Photographs by Rudolphous of buildings (Netherlands) Category:Rijksmonumenten with known IDs Category:Self-published work",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "approve",
+     "verdict": "LOOKED at the pixels: oak trunk emerging directly from the hunebed's capstones, exactly matches the tree name and location, in leaf, well lit, fills the frame"
     }
    ],
    "last_resort": "2026-09-10"
@@ -50558,7 +50560,9 @@
      "author": "Familieman",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Kenaupark Category:License migration redundant Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Kenaupark Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "row of several similar limes on the street, cannot tell which is the named specimen"
     },
     {
      "title": "File:Kenaupark Haarlem.JPG",
@@ -53508,7 +53512,9 @@
      "author": "Dqfn13",
      "lat": 52.642361,
      "lng": 5.062485,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Hoorn, North Holland Category:Gemeentelijke monumenten with known IDs Category:Houses in Hoorn, North Holland Category:Netherlands photographs taken on 2015-08-05 Category:Self-published work Category:Shophouses in North Holland"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Hoorn, North Holland Category:Gemeentelijke monumenten with known IDs Category:Houses in Hoorn, North Holland Category:Netherlands photographs taken on 2015-08-05 Category:Self-published work Category:Shophouses in North Holland",
+     "judged": "reject",
+     "verdict": "house facade street photo, no tree visible at all"
     },
     {
      "title": "File:Pakhuisstraat 8, Hoorn.JPG",
@@ -67601,8 +67607,8 @@
      "author": "(c) Caleb Catto, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "-43.0982555,146.80252",
-     "judged": "hold",
-     "verdict": "A tall eucalyptus trunk in a similar forest, but no geotag and nothing in frame (plaque, marked scale) distinguishes this specific individual from any other tall Eucalyptus regnans nearby; Centurion i"
+     "judged": "reject",
+     "verdict": "tall gum trunk among a stand of similar trees, nothing confirms this is Centurion rather than a neighbour"
     },
     {
      "title": "iNat obs 321882049 (Eucalyptus regnans)",
@@ -81711,7 +81717,9 @@
      "lat": 52.662442,
      "lng": 6.74171,
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Kasteel (Coevorden) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "castle courtyard facade, no maple visible as subject"
     },
     {
      "title": "File:Coevorden, Netherlands - panoramio (7).jpg",
@@ -81733,7 +81741,9 @@
      "lat": 52.662353,
      "lng": 6.741937,
      "cats": "Category:CC-BY-SA-3.0 Category:Canals in Drenthe Category:Files with coordinates missing SDC location of creation (52° N, 6° E) Category:Pakhuis De Vlijt (Coevorden) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "canal/bridge townscape, maple not identifiable as subject"
     },
     {
      "title": "File:Coevorden, Netherlands - panoramio (9).jpg",
@@ -87818,7 +87828,9 @@
      "author": "Asio otus",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bavaria photographs taken on 2022-08-24 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work"
+     "cats": "Category:Bavaria photographs taken on 2022-08-24 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work",
+     "judged": "approve",
+     "verdict": "LOOKED at pixels: confirmed same tree/spot as our cited source photo (Regensburg-HerzogsparkPlatane-1-Asio.JPG, identical GPS to our pin, same sentry-box folly visible beside trunk). Massive plane trunk fills frame, in leaf, well lit"
     },
     {
      "title": "File:Regensburg-Herzogspark-5-Asio.JPG",
@@ -87828,7 +87840,9 @@
      "author": "Asio otus",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bavaria photographs taken on 2022-08-24 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work"
+     "cats": "Category:Bavaria photographs taken on 2022-08-24 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work",
+     "judged": "reject",
+     "verdict": "different tree, small ornamental species by a fountain, not the plane"
     },
     {
      "title": "File:Regensburg-Herzogspark-6-Asio.JPG",
@@ -87838,7 +87852,9 @@
      "author": "Asio otus",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bavaria photographs taken on 2022-08-29 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work"
+     "cats": "Category:Bavaria photographs taken on 2022-08-29 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Herzogspark Regensburg Category:Information field template with formatting Category:Self-published work",
+     "judged": "reject",
+     "verdict": "wide park/pond view, no single tree identifiable as subject"
     },
     {
      "title": "File:Regensburg-Herzogspark-Schirmakazie-1-Asio.JPG",
@@ -90436,7 +90452,9 @@
      "licence": "CC BY",
      "author": "(c) Simone Littledale, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.0550888889,141.3091777778"
+     "obs_location": "43.0550888889,141.3091777778",
+     "judged": "reject",
+     "verdict": "close-up of dried leaves in snow, no crown or trunk visible, fails the Cadiz standard"
     },
     {
      "title": "iNat obs 256049932 (Quercus dentata)",
@@ -96991,7 +97009,9 @@
      "author": "Arnold Bartels",
      "lat": 53.19983595,
      "lng": 5.80107284,
-     "cats": "Category:Art in Leeuwarden Category:Blokhuispoort Category:CC-Zero Category:Netherlands photographs taken on 2022-08-07 Category:Self-published work Category:Uploaded with Mobile/Android"
+     "cats": "Category:Art in Leeuwarden Category:Blokhuispoort Category:CC-Zero Category:Netherlands photographs taken on 2022-08-07 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "building facade, only a small unidentifiable tree edge visible"
     },
     {
      "title": "File:Leeuwarden Blokhuispoort 40 Voormalige Gevangenis Blokhuispoort.jpg",
@@ -99681,7 +99701,9 @@
      "author": "Kleon3",
      "lat": 50.843736,
      "lng": 5.690534,
-     "cats": "Category:2021 in Maastricht Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Henri Hermanspark (park in Maastricht) Category:Netherlands photographs taken on 2021-07-28 Category:Self-published work"
+     "cats": "Category:2021 in Maastricht Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Henri Hermanspark (park in Maastricht) Category:Netherlands photographs taken on 2021-07-28 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "petting-zoo wide shot, ginkgo not identifiable among several trees"
     },
     {
      "title": "File:Maastricht-Monseigneur Nolenspark (1).jpg",
