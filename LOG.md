@@ -12,7 +12,66 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-16 (session) - Rung 2 fixed (a real bug, not the usage window), rung 1 cleared, two country pages, Ottawa 19 -> 21, two verify passes still running
+## 2026-09-16 (continuation) - Berlin 23 -> 25, Milan 25 -> 29, Pamplona 6 -> 14, a new Navarra register layer imported
+
+Picked up after an earlier attempt in this window stopped early with 61
+minutes unspent. Followed the resumption ladder: released nothing stale
+(the standing berlin/milan verify claims were mine to finish), `leads.py
+--ready` was empty, so went to rung 0/1/2 first.
+
+Rung 1 (submissions): 0 unprocessed. Rung 2 (site broken): `health.py`
+clean, both flagged workflows (Night shift, Weekly analysis) correctly
+read as usage-allowance stalls rather than breakage, per the fix an
+earlier continuation shipped today.
+
+Finished the two standing verify claims: merged `data/research/
+{berlin,milan}-verified.json` (2 Naturdenkmal trees in Berlin, 4 MASAF
+register trees around Varedo and Pioltello for Milan) with stories and
+recognition lines written per BRIEF_WRITING.md. Extended the de/berlin and
+it/milan translation overlays with the same 6 trees (preflight refuses the
+whole build on a short overlay, not just the untranslated page) and fixed
+the tree-count promises in milan.json's meta_description/question_meta/
+intro (25 -> 29). Cleared the stale tallinn-verified.json (tln_009 was
+already published). Released both claims.
+
+Then `scout_next.py --target` named Pamplona (#6 in CITY_QUEUE.md, high
+priority) as no supply/no verdict. OPEN_DATA_SURVEY.md had already scouted
+and licence-verified a companion layer to the Navarra Monumentos Naturales
+register back on 2026-08-04 (8 trees in the Pamplona river park) but never
+actually fetched it. Wrote pyshp-free shapefile parsing wasn't needed,
+scripts/shapefile_reader.py already existed from the original Navarra
+import; wrote scripts/import_navarra_parflu.py mirroring it, downloaded
+the shapefile, independently re-confirmed CC BY 4.0 on the dataset's own
+datosabiertos.navarra.es catalogue page, and imported all 8 entries to
+data/registers/navarra-parflu.json. Recorded the verdict in
+data/register-scouting.json.
+
+Dispatched a verify pass on the 8 candidates (claimed pamplona first,
+pushed the claim). All 8 came back flagged: the register is genuinely the
+only source for any of them (unlike Pamplona's existing 6 trees, which
+are declared Natural Monuments with a Spanish Wikipedia list as a second
+source; this river-park layer has no such corroborating list). Two entries
+are near-identical to each other in the register's own words (word-for-
+word "large diameter poplar, vigorous"), one has no measurement at all,
+and one (Zabaldika) is a genuine outlier, ~11km out with an ambiguous
+plural count and no bus access. Per CLAUDE.md's explicit repeated rule
+that a judgement call about "is this good enough" never blocks
+publication, shipped all 8 rather than pruning the thin ones, with the
+write pass staying honest about how little there is to say on the
+weakest entries rather than padding them. Rewrote pamplona.json's intro/
+meta_description/question_meta/question_answer, which previously framed
+the whole page around "six Natural Monuments" and would have been false
+with the new mixed-register 14-tree page; fixed Spain's country-page
+count (272 -> 280 trees). Released the claim.
+
+Build clean throughout: preflight 0 FAILs, qa.py clean at each stage
+(8804 -> 8812 pages), superlatives.py no collisions, i18ncheck clean.
+
+Left behind, not cleaned up (sandbox denied `rm` all session): several
+`scripts/_*.py` scratch helpers and stray `out_*` files from subagent
+runs, all untracked, none committed, harmless to delete by hand.
+
+Week budget: ~2956/5000 minutes, well under the constraint; kept going.
 
 Started at rung 2: `health.py` flagged Night shift and Weekly analysis as
 "failing for a reason the log names" (BLOCKER-adjacent), and REVIEW.md's
