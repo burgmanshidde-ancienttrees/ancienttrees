@@ -3,9 +3,9 @@
   "country": "Belgium",
   "status": "needs_curation",
   "intro": "Brussels is the rare city that has kept a formal, scientific register of its own remarkable trees since 2002, cataloguing more than a thousand specimens by age, rarity and historical weight. That bureaucratic thoroughness is why ages and girths on this list are unusually exact. It also explains an odd trick the city played on itself: when Brussels built the Cinquantenaire park in 1880 for Belgium's fiftieth anniversary, it did not plant saplings. It transplanted fully grown trees from an old cemetery and the edge of the Sonian Forest, so the new park looked centuries old on its opening day.",
-  "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Thirty-one verified locations, real stories, and how to reach each one.",
+  "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Thirty-five verified locations, real stories, and how to reach each one.",
   "question_answer": "Brussels' oldest documented tree is the Chene Josephine, a pedunculate oak in Parc Jacques Brel in Forest, estimated at close to 400 years old from a trunk just over six metres around. Brussels' own heritage inventory calls it probably the oldest oak in the entire Brussels-Capital Region. It stands in a public park that only opened in 1980, though the tree itself long predates it.",
-  "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and thirty more.",
+  "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and thirty-four more.",
   "question_context": "Chene Josephine's age comes from its girth rather than any planting record: at 6.05 metres in circumference, measured at chest height, foresters use growth-rate tables for pedunculate oak to arrive at a figure close to four centuries, old enough that Brussels' own heritage inventory calls it probably the oldest oak anywhere in the region. No document names a planting date, since the ground it grows on was still part of the Kersbeekbosch, a wood already recorded under that name in 1648, long before anyone thought to write down individual trees within it. The clearest challenger for oldest is the Kasterlinde, a lime tree marking the exact point where three communes meet, documented on maps since 1777 and therefore provably at least two and a half centuries old, though its estimated true age, worked out from girth, comes out younger than the oak's. Parc Jacques Brel itself is a recent public space, only opened by the commune of Forest in 1980 after decades as a private estate, but the oak inside it is the oldest living thing within reach of a Brussels metro station. It costs nothing to visit.",
   "faq": [
     {
@@ -1138,6 +1138,131 @@
       "location_precision": "confirmed",
       "how_to_recognise": "Broad compound leaves on long red-tinged stalks, unlike the horse chestnut and lime beside it; the trunk is the thickest of the three and stands closest to the square's antique stalls.",
       "girth_cm": 342
+    },
+    {
+      "id": "bru_032",
+      "name": "The Second Oriental Plane of Parc Leopold",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "not documented",
+      "girth_cm": 514,
+      "location": {
+        "address": "Parc Leopold, 1000 Brussels",
+        "latitude": 50.83928702521669,
+        "longitude": 4.379612902982698,
+        "neighbourhood": "European Quarter"
+      },
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/795",
+        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro to Maelbeek or Schuman, short walk (same park as bru_003)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by eight metres of clean trunk before the first branch and a crown only fourteen metres wide. It is the slimmer of Parc Leopold's two oriental planes, 5.14 metres round against the famous one's 6.48.",
+      "story": "Parc Leopold holds the thickest oriental plane in the Brussels-Capital Region. About two hundred metres away it holds the fourth.\n\nThe fourth was measured at 5.14 metres round in April 2016, runs close to thirty metres tall, and carries eight metres of clean trunk before the first branch under a crown fourteen metres wide. Its celebrated neighbour spreads thirty-eight. Two trees of one species in one small park, ranked first and fourth across the whole region, which makes the extra two hundred metres worth walking.\n\nThe ground was private until 1851, when the city laid the park out over the grounds of the vanished Eggevoorde manor. For the rest of the century it did double duty as a commercial horticultural garden. Jean Jules Linden, one of the great orchid importers of his age, ran his business here until he died in 1898, and the park's stock of unusual trees is what survived him. Whether this plane is one of Linden's or arrived later, nobody has established.\n\nThe region added it to the legal heritage inventory in August 2024 and recorded it as healthy. That inventory is also the only place the tree is described at all, and it gives no age. If you know when it went in, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bru_033",
+      "name": "The European Beech of Parc Leopold",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "girth_cm": 409,
+      "location": {
+        "address": "Parc Leopold, 1000 Brussels",
+        "latitude": 50.838918582004695,
+        "longitude": 4.378235704929552,
+        "neighbourhood": "European Quarter"
+      },
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/774",
+        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro to Maelbeek or Schuman, short walk (same park as bru_003 and bru_032)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its height, about 34 metres, the tallest tree in the park, and by smooth grey beech bark where Parc Leopold's two big oriental planes have patchy, flaking trunks. It stands in a group of fewer than five trees.",
+      "story": "The famous tree in Parc Leopold is a plane. The tallest one is not.\n\nThis European beech reaches about thirty-four metres, above the great oriental plane on the other side of the park, and it does it on a trunk of 4.09 metres with almost ten metres of clean bole below the first branch. The girth was taken on the leap day of February 2016. Across the Brussels-Capital Region that measurement ranks it forty-sixth of its species, which says more about how many large beeches Belgium has than about this tree.\n\nHeight is its argument instead. A crown twenty metres across sits on top of that long trunk, in a group of fewer than five trees, on ground the European Quarter has closed in on from every side. The park was laid out in 1851 over a vanished manor estate; the institutions arrived a century later, and the beech now grows in the middle of them, a few steps from the Parliament and invisible from any road. It joined the region's legal heritage inventory in August 2024, with only minor defects recorded against it.\n\nNobody has put an age to it, and no survey outside the region's own inventory has written it up. The trunk is there to be measured, and the answer is somebody's to send us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bru_034",
+      "name": "The Great Beech of the Solbosch Woods",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "girth_cm": 510,
+      "location": {
+        "address": "Chemin de l'Aube, Solbosch woods, at the northern end of the Bois de la Cambre, 1000 Brussels",
+        "latitude": 50.81113188945266,
+        "longitude": 4.377591209594096,
+        "neighbourhood": "Ixelles / Solbosch"
+      },
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/7286",
+        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables"
+      ],
+      "access": "Free, public woodland path at all times",
+      "transport": "Tram 8 or 25 to the Solbosch/ULB area, then a short walk into the woods; the Bois de la Cambre tram terminus is also within walking distance",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the trunk, 5.10 metres round, on nine metres of clean bole under a crown nineteen metres wide. It stands beside the Chemin de l'Aube in the Solbosch woods, 600 metres north of the Bois de la Cambre ponds.",
+      "story": "Of every European beech in the Brussels-Capital Region, only six are thicker than this one.\n\nIt stands beside the Chemin de l'Aube, a footpath through the Solbosch woods at the northern end of the Bois de la Cambre, roughly six hundred metres from the ponds where the park's better known old trees gather. Measured in February 2021, the trunk came to 5.10 metres round, on nine metres of clean bole under a crown nineteen metres wide, and the region recorded it as healthy when it took the tree onto the legal heritage list in August 2024. The beech in Parc Leopold across town is nine metres taller and a full metre thinner.\n\nThe wood is older than the park attached to it. Leopold II's landscapers cut the Bois de la Cambre out of the northern edge of the Sonian Forest in 1861 and 1862 and left much of the existing tree cover where it stood, so walking north from the ponds takes you off the designed park and into what the forest kept. In late October the whole wood turns and this crown turns with it, copper over the path.\n\nNobody has dated this beech, and the regional inventory that lists it is the only place it appears. If you know more about it than the register does, tell us.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when the beech wood turns copper over the path"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bru_035",
+      "name": "The Silver Maple and Pagoda Tree of Place Jean Jacobs",
+      "species": "Silver Maple and Japanese Pagoda Tree (Acer saccharinum, Styphnolobium japonicum)",
+      "age_estimate": "not documented",
+      "girth_cm": 277,
+      "location": {
+        "address": "Place Jean Jacobs, 1000 Brussels",
+        "latitude": 50.83529752402912,
+        "longitude": 4.3523447383467655,
+        "neighbourhood": "Marolles / Pentagon"
+      },
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/3423",
+        "https://sites.heritage.brussels/fr/trees/3420",
+        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables"
+      ],
+      "access": "Free, in the open Place Jean Jacobs, a public square at all times",
+      "transport": "Short walk from Anneessens metro or Gare Centrale, in the Marolles district",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise the pair by the silver maple, 2.77 metres round with leaves that flash white underneath in wind, and the pagoda tree twelve metres off, slimmer but wider-crowned. Both stand centrally in the square.",
+      "story": "Two of the region's registered trees stand about twelve metres apart in this square, and both of them were re-measured in the second week of September 2026.\n\nThe thicker is a silver maple: 2.77 metres round, twenty-one metres tall, a crown fourteen metres wide over six metres of clean trunk. The tape found eleven centimetres more than the figure the register had been carrying, which is a decade of ordinary growth turning up in a file. It ranks thirty-second of its species across the Brussels-Capital Region. The Japanese pagoda tree beside it is slimmer at 2.22 metres and three metres shorter, and it holds the wider crown of the two at sixteen metres. That one ranks sixteenth of its kind regionally.\n\nThey make a good pair because they are nothing alike. The silver maple is a North American river-bottom tree whose leaves are white on the underside, so the whole crown flickers pale when wind gets into it. The pagoda tree came out of China despite the Japan in its name, reached European gardens in the eighteenth century, and is one of the last trees in the city to flower, holding cream blossom into late summer when the rest have finished.\n\nPlace Jean Jacobs is a small open square between the Sablon and the Palace of Justice, and both trees stand centrally in it, in plain view from the street. Neither has been dated, and neither appears anywhere outside the region's own inventory.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "hero_tree_id": "bru_003"
