@@ -1,7 +1,7 @@
 {
  "_note": "Deutsches Overlay für Berlin, von Hand geschrieben 2026-08-22. Nur Text: Koordinaten, Fotos, Lizenzen, best_time und Spaziergänge bleiben in data/cities/berlin.json. Suchbegriffe folgen dem, was in Berlin tatsächlich gesucht wird: 'alte Bäume Berlin', 'Naturdenkmal Berlin', dazu die amtliche Kategorie der Stadt, das Naturdenkmal.",
  "city": "Berlin",
- "title": "Alte Bäume in Berlin: 23 bemerkenswerte Bäume",
+ "title": "Alte Bäume in Berlin: 25 bemerkenswerte Bäume",
  "meta_description": "Berlins alte Bäume: von der umstrittenen Dicken Marie im Tegeler Forst bis zur Sumpfzypresse aus Louisiana im preußischen Schlossgarten. Meist kostenlos.",
  "intro": "Berlin schützt rund 600 einzelne Bäume als Naturdenkmal, und die meisten davon sind Eichen: Stieleichen, gepflanzt von Förstern, Fürsten und Demonstranten, über vier Jahrhunderte hinweg, in einer Stadt, die mehr als einmal belagert, bombardiert und geteilt wurde. Im Tegeler Forst und dem angrenzenden Schlosspark stehen die beiden Rekordhalter der Hauptstadt, der älteste und der dickste Baum. Der Rest reicht von einer Sumpfzypresse aus Louisiana in einem preußischen Schlossgarten bis zu einer Eiche, die aus politischem Protest gegen genau den Kaiser beschädigt wurde, dem zu Ehren sie gepflanzt worden war. Die meisten sind kostenlos zu sehen.",
  "question_title": "Was ist der älteste Baum Berlins? (500 bis 900 Jahre)",
@@ -211,6 +211,22 @@
    "access": "Kostenlos, öffentlicher Park (Großer Tiergarten)",
    "transport": "S-Bahnhof Bellevue, etwa 5 bis 8 Gehminuten",
    "story": "Königin Elizabeth II. pflanzte diese Eiche eigenhändig, am 27. Mai 1965, bei ihrem ersten Besuch in West-Berlin. Der Setzling stammte Berichten zufolge aus Beständen von Schloss Windsor. Kaum ein anderer Baum auf dieser Karte kommt mit Pflanzerin, Herkunft und genauem Datum zugleich überliefert.\n\nWas sie in den Boden setzte, war ein amerikanischer Baum. Quercus rubra, die Roteiche, ist weder britisch noch deutsch, und sie hat sich im Tiergarten gut eingelebt: mittlerweile etwa zwanzig Meter hoch, mit einer Krone, die schief statt rund gewachsen ist. Sie kam in eine geteilte Stadt und hat den größten Teil ihres Lebens in einer wiedervereinten verbracht, mehr Geschichte, als einundsechzig Jahre gewöhnlich hergeben. Für eine Eiche steht sie noch ganz am Anfang.\n\nSie zu finden kostet Mühe. Keiner der beiden Zeitungsberichte nennt Koordinaten, und ein Registereintrag fehlt, weil dieser Baum nie als Naturdenkmal geführt wurde. Beide Berichte verorten sie nahe dem weißen Teehaus, der jüngere ist bei den letzten Metern genau: rechts des Wegs, auf dem Weg hinunter zum Teich. Genauer hat es bislang niemand aufgeschrieben, weshalb die Markierung hier auf das Teehaus zeigt und nicht auf den Stamm.\n\nAuch ihren Umfang hat niemand gemessen. Wenn Sie vor ihr stehen, sagen Sie uns, wo genau."
+  },
+  "ber_024": {
+   "name": "Die Eiche im Kleistpark",
+   "species": "Stieleiche (Quercus robur)",
+   "age_estimate": "",
+   "access": "Kostenlos, öffentlicher Park (Heinrich-von-Kleist-Park), täglich geöffnet",
+   "transport": "U-Bahnhof Kleistpark (U7), 2 Minuten zu Fuß",
+   "story": "Berlins amtlicher Grund, diese Eiche zu schützen, ist Schönheit. Die Naturdenkmalverordnung vom 2. März 1993 führt sie als 7-15/B, eine Stiel-Eiche auf der ovalen Wiese östlich des Kammergerichts, und nennt zwei Gründe: Schönheit und landeskundliche Bedeutung. Kein Umfang, keine Höhe, kein Alter. Die Stadt sah sie sich an und entschied, das genüge.\n\nDer Boden darunter hat die längere Geschichte. Der Heinrich-von-Kleist-Park war von 1801 bis 1903 Berlins erster Botanischer Garten, bevor die Sammlung nach Dahlem umzog. Ein Denkmal auf derselben Wiese erinnert noch daran, was hier einmal stand. Die Kolonnaden und das Gerichtsgebäude kamen später hinzu, und die Wiese blieb offen, weshalb die Eiche als Ganzes zu sehen ist statt in einer Hecke eingeklemmt.\n\nDer größte Baum im Park ist sie nicht. Das ist die Flügelnuss, und in der Nähe wachsen eine Sumpfzypresse und ein Ginkgo; zwei weitere geschützte Bäume stehen hier ebenfalls, ein Trompetenbaum am Eingang Potsdamer Straße und eine Maulbeere. Aber ein Baumspaziergang für Kinder, gemeinsam mit dem bezirklichen Grünflächenamt verfasst, hält genau an dieser Eiche und sagt es unumwunden: Hier haben wir eine dicke, große Eiche, sie ist ein Naturdenkmal.\n\nDatiert hat sie niemand. Das Berliner Register führt für keinen seiner Bäume ein Altersfeld, und keine andere Quelle hat die Lücke gefüllt. Wenn Sie wissen, wann diese gepflanzt wurde, sagen Sie es uns."
+  },
+  "ber_025": {
+   "name": "Die Zwillingseiben von Johannaplatz",
+   "species": "Gewöhnliche Eibe (Taxus baccata)",
+   "age_estimate": "",
+   "access": "Kostenlos, öffentlicher Platz (Gartendenkmal), jederzeit zugänglich",
+   "transport": "Etwa 15 Gehminuten vom S-Bahnhof Grunewald (S7)",
+   "story": "Berlin hat beide Eiben aus einem genannten Grund geschützt: Schönheit. Sie stehen als getrennte Einträge im Register, 4-30/B am südlichen Ende des Platzes und 4-31/B am nördlichen, beide Gewöhnliche Eibe, beide am selben Tag im März 1993 unterschrieben, und als Grund gilt jeweils Schönheit. Nichts zur Größe, nichts zum Alter.\n\nDer Platz darunter wurde 1890 für eine Kirche angelegt, die nie gebaut wurde. Sechs Straßen der Grunewalder Villenkolonie laufen auf ihn zu, und das Sechseck in der Mitte ging an die Gärtner statt an die Architekten. 1896 gestaltete der königliche Garteninspektor Hermann Röhr ihn als Gartendenkmal um, mit Gruppen aus Laub- und Nadelbäumen um halbrunde Sitzbänke, und 1898 wurde er nach Johanna von Bismarck, der Frau des Kanzlers, benannt. Der Bezirk schreibt, der alte Baumbestand sei bis heute weitgehend erhalten.\n\nDie beiden Eiben stehen an entgegengesetzten Enden dieses Sechsecks, etwa sechzig Meter auseinander, was sie zu einer Station statt zweien macht. Eiben verraten wenig. Dunkel, dicht und langsam wachsend sind sie die Art, die am häufigsten unterschätzt wird von Menschen, die einen Baum nach seinem Umfang beurteilen.\n\nDatiert wurde keine von beiden, und das Berliner Register nennt für keine einen Umfang. Wenn Sie schon einmal ein Maßband um eine von ihnen gelegt haben, sagen Sie es uns."
   }
  }
 }
