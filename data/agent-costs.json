@@ -7995,6 +7995,21 @@
     "tokens": 0,
     "trees": 2,
     "note": "session (not agent) wrote both stories directly since the batch was only 2 trees, below the assembly-line floor for a dedicated write pass; merged into data/cities/ottawa.json, fixed stale nineteen-tree count promises in meta_description/faq/question fields, tokens not separately tracked (session work)"
+   },
+   {
+    "target": "berlin",
+    "kind": "verify",
+    "tokens": 145000,
+    "trees": 0,
+    "note": "TU Berlin Schaugarten cluster (8 trees, ber_026-033) resolved via TU Berlin own press page for access+age and dated GPSLeo Commons photos for alive-now; Johannaplatz lead found already published and bookkeeping-corrected; Okowerk circumference claim checked and discarded as an unsourceable search-summary artifact"
+   },
+   {
+    "target": "Tokyo, Uda, Tsuruoka, Vainiai, Warsaw, Monterey, Tulsa, Hong Kong",
+    "kind": "photo-judge",
+    "tokens": 108000,
+    "trees": 0,
+    "photos_approved": 9,
+    "note": "29 images rendered and viewed, 9 approved, 20 rejected, 0 held; 4 places gained a first photograph; photo_light unavailable (no PIL), exposure judged by eye"
    }
   ]
  }

@@ -114,7 +114,7 @@
    "dead_end_confirmed": "2026-08-08"
   },
   {
-   "name": "Gewoehnliche Eibe x2 (Common Yew) at Johannaplatz, Grunewald (ND 4-30/B, 4-31/B)",
+   "name": "[RESOLVED, delivered as ber_025 'The Twin Yews of Johannaplatz'] Gewoehnliche Eibe x2 (Common Yew) at Johannaplatz, Grunewald (ND 4-30/B, 4-31/B)",
    "species": "Common Yew (Taxus baccata)",
    "location": {
     "address": "Johannaplatz, nordlicher und suedlicher Teil, Berlin-Grunewald",
@@ -122,8 +122,8 @@
     "longitude": 13.28181,
     "neighbourhood": "Grunewald, Charlottenburg-Wilmersdorf"
    },
-   "reason": "NEW this pass (2026-09-07). Johannaplatz is a public hexagonal garden square laid out 1890/1898 (de.wikipedia 'Johannaplatz (Berlin)': 'wurde er 1898 als Gruenanlage mit Laub- und Nadelbaeumen gestaltet', 'Der alte Baumbestand ist bis heute weitestgehend erhalten geblieben'), so access is not in question. But the only source for the two yews themselves is the register (4-30/B, 4-31/B) plus the Charlottenburg-Wilmersdorf Naturdenkmal Wikipedia list, which is the same underlying government designation reproduced (no Bild, no Beschreibung beyond species, per the project's own established precedent for the Pfaueninsel ordinance/register pair, this is not a second independent source). No baumkunde.de, monumentaltrees.com (403 to curl/WebFetch all session) or press coverage found naming these specific trees. Register carries no age/girth field at all for this whole city dataset. Still needs a genuinely independent source before it clears the two-source bar.",
-   "status": "lead"
+   "reason": "NEW this pass (2026-09-07). Johannaplatz is a public hexagonal garden square laid out 1890/1898 (de.wikipedia 'Johannaplatz (Berlin)': 'wurde er 1898 als Gruenanlage mit Laub- und Nadelbaeumen gestaltet', 'Der alte Baumbestand ist bis heute weitestgehend erhalten geblieben'), so access is not in question. RESOLVED by a later pass (undated in this file, found 2026-09-16 while checking this lead before re-researching it): both yews shipped as one entry, ber_025 'The Twin Yews of Johannaplatz', sourced to the Charlottenburg-Wilmersdorf Naturdenkmal Wikipedia list plus the district's own berlin.de page for Johannaplatz, flagged for missing age/girth. This lead entry was never marked resolved at the time, which cost a 2026-09-16 verify pass several minutes of re-checking before finding the tree already live; leaving this note so the gap in bookkeeping doesn't repeat.",
+   "status": "resolved"
   },
   {
    "name": "Blutbuche x3 (Copper Beech) at Wallotstrasse/Koenigsallee, Grunewald (ND 4-21/B Baumnummer 4, 4-23/B, 4-24/B)",
@@ -150,7 +150,7 @@
    "status": "lead"
   },
   {
-   "name": "TU Berlin Schaugaerten (former Koenigliche Gaertnerlehranstalt) exotic-conifer cluster: Riesen-Lebensbaum, Zirbel-Kiefer, Gewoehnliche Eibe x2, Japanischer Kuchenbaum, Tulpen-Magnolie, Weymouth-Kiefer, Kaukasische Fluegelnuss, Virginischer Wacholder",
+   "name": "[RESOLVED 2026-09-16, delivered as ber_026 to ber_033] TU Berlin Schaugaerten (former Koenigliche Gaertnerlehranstalt) exotic-conifer cluster: Riesen-Lebensbaum, Zirbel-Kiefer, Gewoehnliche Eibe x2, Japanischer Kuchenbaum, Tulpen-Magnolie, Weymouth-Kiefer, Kaukasische Fluegelnuss, Virginischer Wacholder",
    "species": "mixed, see register",
    "location": {
     "address": "Koenigin-Luise-Strasse 22, Berlin-Dahlem",
@@ -158,8 +158,8 @@
     "longitude": 13.2996,
     "neighbourhood": "Dahlem, Steglitz-Zehlendorf"
    },
-   "reason": "NEW this pass (2026-09-07). Tight cluster (roughly 150m across) of unusually diverse exotic conifers and specimen trees, all 1993-03-02 designations, at the arboretum of the former Koenigliche Gaertnerlehranstalt (Royal Horticultural Teaching Institute), grounds now held by TU Berlin as 'TU-Schaugaerten', restored 2012-2014 with Lottostiftung/Puecklergesellschaft funding (berlin.de Denkmal des Monats, tu.berlin/en/la-pflanze/institution/educational-display-garden). ACCESS UNRESOLVED: every source found (umweltkalender-berlin.de event listing, tu.berlin pages) describes guided tours and open-garden EVENTS rather than confirming free daily walk-in access; no opening-hours page found. Per hard rule 10's first test (can they get in without asking anyone's permission), this needs a positive access answer before shipping, not a block, since nothing found says it is closed either. Worth a future pass: check tu.berlin's current Schaugaerten page for opening hours, or contact-free confirmation via a recent visitor blog/review.",
-   "status": "lead"
+   "reason": "NEW this pass (2026-09-07). Tight cluster (roughly 150m across) of unusually diverse exotic conifers and specimen trees, all 1993-03-02 designations, at the arboretum of the former Koenigliche Gaertnerlehranstalt (Royal Horticultural Teaching Institute), grounds now held by TU Berlin as 'TU-Schaugaerten'. RESOLVED 2026-09-16 (verify pass): access confirmed from TU Berlin's own site (tu.berlin/forschen/bewahrte-pracht, 2022-06-08 press piece with posted opening hours, Apr/May+Sept/Oct approx 10-20 Uhr, Jun-Aug approx 10-22 Uhr; no winter hours found, treat as a growing-season destination) and an older gratis-in-berlin.de event listing (daily 9am-6pm). The same TU Berlin article gave real per-tree content beyond the register for two trees (Zirbel-Kiefer and Weymouth-Kiefer both documented as planted 1903, part of the surviving 1903 Pinetum) and a superlative for a third (the Katsura/Japanischer Kuchenbaum named 'probably the largest of its kind in Berlin' by the Fachgebiet's own professor). All 8 register trees at this site were independently confirmed alive via dated (2024-11-02), GPS-tagged CC0 photographs by Wikimedia Commons user GPSLeo (Leonhard Lenz), coordinates matching the register within 5-20m each; search commons.wikimedia.org for 'Naturdenkmal [species] Koenigliche Gaertnerlehranstalt Berlin 2024-11-02'. Delivered as ber_026 (Kaukasische Fluegelnuss), ber_027 (Gewoehnliche Eibe, only ONE yew found in the register despite this lead's 'x2' in its own name, not two; the second yew was not located this pass and may be an error in how this lead was originally written), ber_028 (Riesen-Lebensbaum), ber_029 (Wacholder, flagged: register says Virginischer Wacholder/Juniperus virginiana, de.wikipedia's Steglitz-Zehlendorf list says Zypressen-Wacholder/Juniperus scopulorum for the same register id 6-77/B-1, unresolved species conflict), ber_030 (Tulpen-Magnolie), ber_031 (Zirbel-Kiefer, age ~120 years), ber_032 (Katsurabaum/Kuchenbaum), ber_033 (Weymouth-Kiefer, age ~120 years). See data/research/berlin-verified.json.",
+   "status": "resolved"
   },
   {
    "name": "Stiel-Eiche (Pedunculate Oak) at Oekowerk entrance, Grunewald forest (ND 4-39/B); and Trauben-Eiche x3 scattered through Forst Grunewald (ND 4-17/B, 4-18/B, 4-38/B)",
@@ -170,7 +170,7 @@
     "longitude": 13.236704,
     "neighbourhood": "Grunewald forest, Charlottenburg-Wilmersdorf"
    },
-   "reason": "NEW this pass (2026-09-07). All four stand in the public Grunewald forest (no access question; the Oekowerk entrance oak stands at Teufelsseechaussee, a public forest road, per berlin.de/umweltkalender-berlin.de descriptions of the Naturschutzzentrum Oekowerk). No second source found for any of the four beyond the bare register entry (name, species, forest compartment, 1993-03-02 designation, no age or girth field in this register at all). They are also spread 2-4km apart from each other and from the existing ber_003 (Steinlanke Oak, also in Grunewald forest), not a tight walkable cluster, more a scattered set of forest waypoints reachable by trail. Leaving as leads pending both a second source and a decision on whether isolated forest oaks are worth adding individually versus as a loose forest-walk group.",
+   "reason": "NEW this pass (2026-09-07). All four stand in the public Grunewald forest (no access question; the Oekowerk entrance oak stands at Teufelsseechaussee, a public forest road, per berlin.de/umweltkalender-berlin.de descriptions of the Naturschutzzentrum Oekowerk). No second source found for any of the four beyond the bare register entry (name, species, forest compartment, 1993-03-02 designation, no age or girth field in this register at all). They are also spread 2-4km apart from each other and from the existing ber_003 (Steinlanke Oak, also in Grunewald forest), not a tight walkable cluster, more a scattered set of forest waypoints reachable by trail. Leaving as leads pending both a second source and a decision on whether isolated forest oaks are worth adding individually versus as a loose forest-walk group. CHECKED AGAIN 2026-09-16 (verify pass): a WebSearch AI summary claimed the Oekowerk entrance oak has a trunk circumference of about 4.5m, but the underlying page could not be identified (checked umweltkalender-berlin.de, industriekultur.berlin, visitberlin.de/en/okowerk directly; none of the three contains that sentence). Per the search-summary-is-a-lead-never-a-source rule, that figure is NOT used and should not be repeated by a future pass without finding the actual page it came from. Still no second source; still a lead.",
    "status": "lead"
   },
   {
