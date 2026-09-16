@@ -45,14 +45,20 @@
     {
       "name": "Argania sideroxylon, Orto Botanico di Cagliari",
       "species": "Argan (Argania sideroxylon / spinosa)",
-      "status": "unresolved",
-      "why": "2026-09-09 deepen pass: while verifying cag_011-013 (Ficus macrophylla, Phytolacca dioica, Dracaena draco, all in the Orto Botanico di Cagliari), found that both apgi.it and sites.unica.it/hbk (directly fetched) separately call the garden's Argania sideroxylon specimen 'unico negli orti botanici italiani' / 'probably the only one growing in Italian and European Botanical Gardens' -- a genuine rarity claim from two independent sources, and reason enough to be worth the visit on its own. NOT verified further this pass to stay within the 4-candidate-per-pass limit (three Orto Botanico trees were already being carried) and because time ran out; a future pass should look it up as a fourth Orto Botanico entry, same garden, same access terms as cag_011-013 (paid entry, euro 4, closed Sundays), same location-precision caveat (garden-level, not tree-level)."
+      "status": "resolved",
+      "why": "[RESOLVED, delivered as cag_014, 'The Argan of the Orto Botanico', commit 440aecb2 'Finish write pass: merge cag_014, spk_007, spk_008']. A 2026-09-16 verify pass (brief still described this as open) found the write pass had already closed it out: published with the apgi.it and italianbotanicalheritage.com sources (plus a University of Bari record), garden-level location_precision, same access terms as cag_011-013. No new work needed; recorded here so a future brief does not reopen it."
     },
     {
       "name": "Insieme omogeneo di Olea europaea subsp. oleaster, Sinnai",
       "species": "Wild Olive grove (Olea europaea subsp. oleaster)",
       "status": "unresolved",
       "why": "2026-09-09 deepen pass: register entry sardinia-alberi-monumentali.json, ~18.7km out at 39.36970/9.31637, marked 'Insieme omogeneo' (a homogeneous group/grove, not a single tree). Not investigated for access; noted here rather than moved to blocked because a group entry MIGHT still describe a single collectible clearing rather than a scattered wood, and that was not checked. If a future pass confirms it is an avenue/wood with no one place to stand, it belongs in blocked instead per the one-collectible-point rule."
+    },
+    {
+      "name": "MASAF sheets 01,02,03,06,07,08,09/B354/CA/20, central Cagliari (register-candidates.json 'within 80m' set)",
+      "species": "Jacaranda mimosifolia; Prosopis torquata; Ficus macrophylla x2; Gleditzia triacanthos; Ficus macrophylla (group); Cupressus sempervirens",
+      "status": "resolved",
+      "why": "2026-09-16 verify pass: checked all 9 entries in data/research/cagliari-register-candidates.json against data/cities/cagliari.json's published coordinates, as the brief asked, rather than assuming. 7 are confirmed duplicates of already-published trees, coordinates matching to 5-6 decimal places (i.e. the same source row): 01/B354/CA/20 Jacaranda (39.225556/9.116389) = cag_003; 06/B354/CA/20 Spino di Giuda (39.225861/9.116308) = cag_002; 07/B354/CA/20 Fico magnolioide group (39.225/9.117) = cag_001 (Twin Figs); 03/B354/CA/20 Fico magnolioide, Piazza Matteotti (39.214939/9.109703) = cag_004; 09/B354/CA/20 Fico magnolioide, Piazza Ingrao (39.212133/9.116408) = cag_005; 02/B354/CA/20 Prosopis torquata (39.215/9.120556) = cag_007 (Tintitaco, 39.215002/9.120562, ~1m off); 08/B354/CA/20 Cipresso comune, Cimitero (39.242603/9.133544) = cag_006. The remaining 2 sheets in that same candidate file (04/B354/CA/20 Araucaria heterophylla/Pino di Norfolk, 05/B354/CA/20 Erythrina crista-galli) are the two already in this file's own `blocked` list (private land). So all 9 register candidates within reach are accounted for: nothing left unmined in that file."
     },
     {
       "name": "Foresta di Tuviois monumental cluster, Sinnai (holm oaks, phillyrea, wild olive)",
