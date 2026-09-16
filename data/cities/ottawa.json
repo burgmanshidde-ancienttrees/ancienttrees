@@ -3,10 +3,10 @@
   "country": "Canada",
   "status": "needs_curation",
   "intro": "Eight of these trees stand within half a kilometre of Parliament Hill, across Confederation Square, Confederation Park and Major's Hill Park; six line the Rideau Canal further south, along Queen Elizabeth Driveway, Green Island and Dow's Lake; five more stand a short walk beyond, in the Dominion Arboretum. Canada's National Capital Commission keeps an official register of remarkable trees for the capital region, holding a lime beside the National War Memorial, a rare pair of vine-leaved limes and a Kentucky coffeetree among them. Most have never been dated precisely.",
-  "meta_description": "Nineteen protected trees across downtown Ottawa, the Rideau Canal and the Dominion Arboretum: a lime by the National War Memorial, a vine-leaved lime pair.",
-  "question_meta": "Six of Ottawa's nineteen register trees share a roughly 125-year estimate from one 1900s planting programme. Most of the rest have never been dated.",
-  "question_answer": "Nobody can name a single oldest tree in this collection with full confidence, though one now has the best claim. Six trees, both Vitifolia lindens in Major's Hill Park, the horse chestnut nearby, the sycamore and coffeetree on Queen Elizabeth Driveway and the linden at Dow's Lake, share the same roughly 125-year estimate, all tied to the same 1900-era planting programme run out of the Central Experimental Farm under William Saunders. A seventh, the willow at Dow's Lake, is dated to the same era in looser terms, around a century old. The Founding-Era Bitternut Hickory in the Dominion Arboretum carries the tightest documented window of any tree here, a planting between 1886 and 1890 recorded by the National Capital Commission's own register, which would put it a decade or so ahead of the 1900 group if the dates hold exactly. The register hedges most of the rest with likely and circa, and no second document dates any of them more precisely, so this page will not force a ranking where the sources themselves overlap. Nine trees, including the linden beside the National War Memorial and two of the Arboretum's newest additions, have no documented age at all. If you can date any of these from a photograph, a planting record or a park document, tell us and the answer here will change.",
-  "question_context": "Ottawa protects trees through the National Capital Commission's own register, A Living Legacy: Remarkable Trees of Canada's Capital, compiled in 2020 as a curated survey rather than a routine inventory. It covers federal land across Ottawa and Gatineau, and for each tree it gives a genuine descriptive paragraph rather than a bare data table, which is unusually rich as sources go. What it does not give is numbers: no age field, no girth, no height, no vitality rating, so most measurement questions here come back as an honest gap rather than a figure.\n\nThat shapes what this page can say about age. Where the register's own prose ties a tree to a documented event, the planting programme William Saunders ran through the Central Experimental Farm around 1900, or the Dominion Arboretum's own founding years in the 1880s, this page repeats that estimate with the register's own hedges intact. Where a nearby monument's date could be mistaken for the tree's own, as with the National War Memorial's 1939 unveiling beside the Response Linden, this page keeps the two facts separate rather than joining them into a claim the register never makes. All nineteen sit on federal parkland with no entry barrier.",
+  "meta_description": "Twenty-one protected trees across Ottawa's canal, downtown and arboretum, from a lime by the National War Memorial to a vine-leaved lime pair.",
+  "question_meta": "Six of Ottawa's twenty-one register trees share a roughly 125-year estimate from one 1900s planting programme. Most of the rest have never been dated.",
+  "question_answer": "Nobody can name a single oldest tree in this collection with full confidence, though one now has the best claim. Six trees, both Vitifolia lindens in Major's Hill Park, the horse chestnut nearby, the sycamore and coffeetree on Queen Elizabeth Driveway and the linden at Dow's Lake, share the same roughly 125-year estimate, all tied to the same 1900-era planting programme run out of the Central Experimental Farm under William Saunders. A seventh, the willow at Dow's Lake, is dated to the same era in looser terms, around a century old. The Founding-Era Bitternut Hickory in the Dominion Arboretum carries the tightest documented window of any tree here, a planting between 1886 and 1890 recorded by the National Capital Commission's own register, which would put it a decade or so ahead of the 1900 group if the dates hold exactly. The register hedges most of the rest with likely and circa, and no second document dates any of them more precisely, so this page will not force a ranking where the sources themselves overlap. A newer addition, the Mound Elm on Queen Elizabeth Driveway, comes close to the 1900-era group at a register-derived estimate of roughly 120 years, though its planting is not tied to the same documented programme so it is kept as its own estimate rather than folded into the group of six. Ten trees, including the linden beside the National War Memorial, two of the Arboretum's newest additions and the driveway's Red Oak, have no documented age at all. If you can date any of these from a photograph, a planting record or a park document, tell us and the answer here will change.",
+  "question_context": "Ottawa protects trees through the National Capital Commission's own register, A Living Legacy: Remarkable Trees of Canada's Capital, compiled in 2020 as a curated survey rather than a routine inventory. It covers federal land across Ottawa and Gatineau, and for each tree it gives a genuine descriptive paragraph rather than a bare data table, which is unusually rich as sources go. What it does not give is numbers: no age field, no girth, no height, no vitality rating, so most measurement questions here come back as an honest gap rather than a figure.\n\nThat shapes what this page can say about age. Where the register's own prose ties a tree to a documented event, the planting programme William Saunders ran through the Central Experimental Farm around 1900, or the Dominion Arboretum's own founding years in the 1880s, this page repeats that estimate with the register's own hedges intact. Where a nearby monument's date could be mistaken for the tree's own, as with the National War Memorial's 1939 unveiling beside the Response Linden, this page keeps the two facts separate rather than joining them into a claim the register never makes. All twenty-one sit on federal parkland with no entry barrier.",
   "faq": [
     {
       "q": "What is the oldest tree in this Ottawa cluster?",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes, all nineteen. Every site is open federal parkland with no entrance fee and no gate."
+      "a": "Yes, all twenty-one. Every site is open federal parkland with no entrance fee and no gate."
     },
     {
       "q": "Why don't all of these trees have a recorded age?",
@@ -657,6 +657,68 @@
       "transport": "About a 10-15 minute walk from Dow's Lake, where the Century Willow and Turn-of-the-Century Linden (ott_013, ott_014) stand at the south end of Queen Elizabeth Driveway; OC Transpo stops serve Prince of Wales Drive and Carling Avenue at the farm's edges.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ott_020",
+      "name": "The Mound Elm of Queen Elizabeth Driveway",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 110,
+      "age_max": 130,
+      "girth_cm": null,
+      "location": {
+        "address": "Queen Elizabeth Driveway, near Patterson Creek Park",
+        "latitude": 45.39648,
+        "longitude": -75.68707,
+        "neighbourhood": "Old Ottawa South, along the Rideau Canal"
+      },
+      "verified_sources": [
+        "https://open.canada.ca/data/en/dataset/4992d291-f99f-4e51-9f4e-5eeff9bcd835",
+        "https://www.inaturalist.org/observations/208842177"
+      ],
+      "access": "Free. Public NCC parkway pathway along the Rideau Canal, open at all hours.",
+      "transport": "Rideau Canal Eastern/Western Pathway on foot or bike; nearest OC Transpo stops on Bronson Ave or Bank St, about a 5-8 minute walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Most of the American elms that once lined Ottawa's streets and parkways are gone, killed by Dutch elm disease starting in the 1960s. This one survived. It stands on an artificial mound built into Queen Elizabeth Driveway around the turn of the 20th century, part of the Ottawa Improvement Commission's original scheme to turn a canal towpath into the capital's first scenic parkway, the same landscaping programme responsible for several of the driveway's other veteran trees. At roughly 120 years old, it predates the epidemic that took out most of its species in the region, which makes it less a curiosity than a survivor: whatever combination of luck, isolation and soil kept this elm alive while the disease worked through Ottawa's canopy is still standing to be seen. No girth has been recorded for it yet. It stands a short walk from Dow's Lake, one more stop on a driveway already known for its early-1900s tree plantings, distinguished from its neighbours by the mound it grows on and by being the kind of tree the region mostly lost.",
+      "how_to_recognise": "You can recognise it by the raised mound it grows on, a landscaped rise built into Queen Elizabeth Driveway. It is an American elm, a species Dutch elm disease wiped out across most of the region.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ott_021",
+      "name": "The Red Oak of Queen Elizabeth Driveway",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Queen Elizabeth Driveway, south of Dow's Lake",
+        "latitude": 45.39468,
+        "longitude": -75.69079,
+        "neighbourhood": "Old Ottawa South, along the Rideau Canal"
+      },
+      "verified_sources": [
+        "https://open.canada.ca/data/en/dataset/4992d291-f99f-4e51-9f4e-5eeff9bcd835",
+        "https://www.inaturalist.org/observations/10478080"
+      ],
+      "access": "Free. Public NCC parkway pathway along the Rideau Canal, open at all hours.",
+      "transport": "Rideau Canal Eastern/Western Pathway on foot or bike; nearest OC Transpo stops on Bronson Ave or Bank St, about a 5-8 minute walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register that protects this oak does not say when it was planted, and for once that gap is not an oversight: unlike the exotic and ornamental trees the Ottawa Improvement Commission planted along Queen Elizabeth Driveway around 1900, red oak is native to this stretch of the Rideau valley, so this one could easily predate the parkway's own landscaping of winding trails and artificial mounds rather than belong to it. The National Capital Commission's own description calls it simply huge, singling it out among a section of driveway otherwise planted with imported ornamentals for the contrast a native tree makes against them. It stands about 200 metres south of the parkway's Mound Elm, near where Queen Elizabeth Driveway runs along the canal south of Dow's Lake. Nobody has measured its girth or dated it, so both remain open questions: if you have stood under it with a tape measure, this is the tree to tell us about.",
+      "how_to_recognise": "You can recognise it by size alone: the register calls it simply huge, a native red oak standing out among the driveway's mostly ornamental plantings, about 200 metres south of the Mound Elm.",
       "photo": {
         "url": null,
         "license": null,
