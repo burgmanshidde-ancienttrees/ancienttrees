@@ -12,6 +12,37 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-16 (continuation 2) - A new place: Sremski Karlovci, Serbia, the plane tree by the Lower Church
+
+Same window, continuing after the Montreal/iOS work above. `city_queue.py
+--next` and `scout_next.py --target` both pointed at cities already
+documented dead ends this week (Jersey City and Funchal both duplicate
+already-published cities; Taormina, Ravenna and Trier's register/Wikidata
+supply is already exhausted per CURATION.md and LOG.md entries from
+2026-09-08 through 2026-09-13). Followed the documented fallback to the
+famous-tree track: `famous_demand.py --gap` (read about in other languages,
+unwritten in English), picked the highest-demand candidate that already
+had a pin: **Platan u Sremskim Karlovcima**, a London Plane in the
+courtyard of Sremski Karlovci's Lower Church, 9 km from Novi Sad
+(unpublished) and 60 km from Belgrade (too far for a day trip), so its own
+place under the single-famous-tree rule.
+
+Verified against two independent sources: Serbian Wikipedia's dendroflora
+survey citation (~165 years) and the town's own Tourism Organization page
+(over 150 years, protected since 1960, tallest of its species recorded in
+Vojvodina). A local legend ties it to a sapling from Vienna planted after
+the 1719 church rebuild, which would make it considerably older; presented
+honestly as tradition rather than fact, since nobody has cored the trunk.
+Corrected one fact mid-research: the church's own Wikipedia article names
+"Petar I Petrović Njegoš" ordained there in 1784, which is Saint Peter of
+Cetinje, not his grand-nephew Petar II who wrote Montenegro's national
+epic; caught before it reached the story. Photo (CC BY-SA 4.0, Wikimedia
+Commons) shows the trunk against the church itself and meets the Cadiz
+standard; looked at all three candidate photos on file, the other two were
+of the church tower and interior, not the tree. Ran `city_names.py` for
+the new slug. Build (5737 pages), `qa.py` (8874 pages) and
+`superlatives.py` (378 claims, no collisions) all clean.
+
 ## 2026-09-16 (continuation) - Finished the stopped Montreal claim, iOS retry-flag patch still blocked
 
 Picked up after an earlier attempt in this window stopped early with 101
