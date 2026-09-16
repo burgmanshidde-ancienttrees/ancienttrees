@@ -13902,6 +13902,78 @@
    ],
    "trees": 16,
    "logged": true
+  },
+  {
+   "started": "2026-09-16T17:17:53+00:00",
+   "date": "2026-09-16",
+   "run_id": "35127257497",
+   "minutes": 82.0,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 556,
+   "denials": 103,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(grep), Bash(head), Bash(ls), Bash(nohup), Bash(pip), Bash(python3), Bash(rm), Bash(which)",
+   "ended": "success",
+   "tokens": 24732263,
+   "claims_held": [],
+   "commits": 25,
+   "cities_touched": 13,
+   "cities": [
+    {
+     "city": "berlin",
+     "trees": 8
+    },
+    {
+     "city": "enschede",
+     "trees": 5
+    },
+    {
+     "city": "amersfoort",
+     "trees": 4
+    },
+    {
+     "city": "brussels",
+     "trees": 4
+    },
+    {
+     "city": "lisbon",
+     "trees": 1
+    },
+    {
+     "city": "emmen",
+     "trees": 0
+    },
+    {
+     "city": "monterey",
+     "trees": 0
+    },
+    {
+     "city": "regensburg",
+     "trees": 0
+    },
+    {
+     "city": "tokyo",
+     "trees": 0
+    },
+    {
+     "city": "tsuruoka",
+     "trees": 0
+    },
+    {
+     "city": "uda",
+     "trees": 0
+    },
+    {
+     "city": "vainiai",
+     "trees": 0
+    },
+    {
+     "city": "warsaw",
+     "trees": 0
+    }
+   ],
+   "trees": 22,
+   "logged": false
   }
  ],
  "schedule_changes": [
