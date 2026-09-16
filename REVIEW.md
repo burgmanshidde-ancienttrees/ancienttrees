@@ -13,6 +13,83 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-16
+
+Reviewed commits since the last review (9f3feebb, 2026-09-13) through ef37440b:
+a near-total quiet stretch. No city file changed and no tree was published in
+this window; the only content-bearing commits are the routine daily digest
+(ef37440b) and reader-photo queue refreshes (cea69100, 6f7f42a3, both Hidde's
+own app photographs, queued and unpublished). Confirmed both findings from the
+2026-09-13 review are fixed: Trainiškis's built title now reads "Ancient Trees
+in Trainiškis: One Tree Worth Visiting" (no "2017, Years" leak,
+`trainiskis.html`), and `note_a_reader_photograph_is_not_a_reason()` in
+scripts/preflight.py was corrected the same day to accept a verified
+government/park source as a reason, so kyo_017/kyo_019 no longer read as a
+stale threshold. Ran `python3 scripts/qa.py` (clean, 8788 pages), `python3
+scripts/preflight.py` (607 cities, 0 problems, only standing NOTEs, none new)
+and `python3 scripts/superlatives.py` (374 claims, no collisions). Read five
+random built city pages (Stoutenburg, Dębina, Königslutter, Montreal, Drnava)
+plus their question pages: titles, meta descriptions and answer-first ledes
+all conform to Contract B/C, nothing self-contradicts. Read this rotation's
+six app screenshots (feedback, map-full, map, own-tree, paywall, people):
+nothing contradicts itself or promises something absent. `people.png` shows a
+"Find people" / follow screen with three named profiles (Marieke, Tom, Sofia);
+traced to `ios/.../Kit/DemoPeople.swift`, which is fixture data gated behind a
+`-people-demo` launch argument specifically so this unreachable-without-a-live-
+backend screen could be photographed at all, not real user data. Not a
+finding.
+
+**BLOCKER — the machine has produced zero trees and zero minutes of real work
+across every knock for three days running, and the daily digest's own
+headline verdict says the opposite: "Today: nothing here needs you."**
+`data/run-health.json`'s last 15 entries (2026-09-13 ~18:00 UTC through this
+morning) are a solid wall of `"minutes": 0.0, "turns": 1, "ended": "success",
+"trees": 0, "commits": 0 or 1`, the exact fingerprint CLAUDE.md's capacity
+doctrine names for a usage-limit death ("a result record saying turns 1,
+minutes 0.0, subtype success, the agent having started, asked and been
+refused"). The last genuinely productive run was 2026-09-13, 108.1 minutes,
+534 turns, 5 trees; every one of roughly 16 knocks since has died immediately.
+LOG.md's own auto-written entries for every one of these ("Night run ended
+without saying anything... 0.0 minutes of its 120 minute window, 1 turns")
+say as much. DATA.md's 2026-09-15 entry, published today, reports this
+honestly two places down in the document: "What the machine did, the last 24
+hours" shows 7 of 7 runs producing no trees and "0 got real work time
+(~0 min total)"; the night-shift table below it repeats "7 of 7 produced no
+trees; 7 wrote nothing to LOG.md." Yet the SAME entry opens with "**Today:
+nothing here needs you.**", and the 2026-09-13 entry (written the day the
+stoppage started) opens with the identical line.
+
+Root cause traced in `scripts/daily_digest.py`: the headline verdict (line
+~2320) prints "nothing here needs you" whenever the `ATTENTION` list is
+empty, and `ATTENTION` is populated in exactly four places: three for new
+signups/accounts (lines 1472, 1480, 1501) and one watchdog (line 1964) that
+flags a scheduled workflow only when it has not STARTED within 26 hours.
+`nightly.yml` and `review.yml` have kept starting on schedule this whole
+time, they simply accomplish nothing once started, so the watchdog reads them
+as healthy. The `worked`/`minutes` count the same function computes two lines
+above (used to print the honest "0 got real work time" sentence) is never
+consulted when deciding whether to raise ATTENTION. This is precisely the
+gap CLAUDE.md's own capacity doctrine names as a distinct failure mode ("a
+knock that never ARRIVES is a third failure mode, invisible to run-health.json
+because that file only records runs that started") extended one step further:
+a knock that arrives, is recorded, and still does nothing is invisible to the
+mechanism built to surface silence, because arriving is all that mechanism
+checks for.
+
+This also explains the SessionStart brief's own flag at the top of this
+session: Fresh-eyes review and Weekly analysis have both failed on schedule
+repeatedly (3 in a row for fresh-eyes as of 2026-09-15), which is the same
+underlying stoppage reaching the workflows meant to catch broken things,
+including this one. Rung 2 of the ordinary run ladder (`python3
+scripts/health.py`) would have caught the stale schedules directly, but a run
+that dies at turn 1 never reaches Step 0 to run it. This review is itself the
+first successful run since the stoppage began, so whatever was gating it may
+already be releasing; that does not change that Hidde read three days of "all
+clear" while the machine did nothing, from a report built specifically to
+tell him when it does.
+
+No Monday corpus-rot audit today (Wednesday UTC).
+
 ## 2026-09-13
 
 Reviewed commits since the last review (14a16874, 2026-09-12) through 9f3feebb
