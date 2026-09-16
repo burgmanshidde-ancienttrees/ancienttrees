@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Enschede's old trees were bought by textile money. Van Heek, Blijdenstein, Ledeboer: the families who ran the mills built estates on the edge of town, hired the best garden architects in the country and planted them, and the city later absorbed the results as public parks. One invoice survives. In 1865 D. Wattez billed H. J. van Heek for a Wellingtonia as part of the planting around 't Wageler, and the two men wrote to each other about the price. That giant sequoia is still standing in the Ledeboerpark, which is the closest thing this page has to a receipt.",
-  "meta_description": "Seven remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
-  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and six more worth the walk.",
+  "meta_description": "Twelve remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
+  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and eleven more worth the walk.",
   "question_answer": "The oldest tree in Enschede is the oak on 't Zeggelt, in the Lasonder-Zeggelt district, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It has a name of its own in the city, De Eik op 't Zeggelt, and it stands in public planting rather than on any estate, which is unusual here: almost every other old tree in Enschede is a survivor of a nineteenth century textile family's grounds. The register gives it a coordinate to six decimal places, which is the sort of precision that means somebody stood at the trunk with a receiver rather than pointing at an address.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. The giant sequoia in the Ledeboerpark is the exception worth naming: the register cites a document in the archive of the Twente textile families recording correspondence in 1866 between H. J. van Heek and the garden architect D. Wattez about the price of a Wellingtonia, on an invoice for planting around 't Wageler in 1865. That is a documented purchase rather than an estimate, and it is why this page can be more confident about that tree than about any other on it. Where a pin is marked approximate we know the grounds and not the trunk.",
   "hero_tree_id": "ens_001",
@@ -248,6 +248,174 @@
       "how_to_recognise": "Camouflage-patterned flaking bark, near the Tubantiasingel end of the street.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "ens_008",
+      "name": "The Hungarian Oak of the Oosterbegraafplaats",
+      "species": "Hungarian Oak (Quercus frainetto)",
+      "age_estimate": "roughly 100 years, from a registered planting date around 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "girth_cm": null,
+      "location": {
+        "address": "Oosterbegraafplaats, northern main path, Noord Esmarkerrondweg 407, Enschede",
+        "latitude": 52.222526,
+        "longitude": 6.932247,
+        "neighbourhood": "Oosterbegraafplaats"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692848",
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626"
+      ],
+      "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
+      "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. No specific bus line verified this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register does not only call this oak old, it says which decade of the cemetery it belongs to. Gedenkpark De Ooster opened in 1899, its northern section was added in 1929, and the Bomenstichting dates this Hungarian oak to that extension, which puts it at roughly a hundred years. The register throws in one detail worth having on the walk: the seam between the old ground and the new is still legible in the layout, and this tree stands on the new side of it.\n\nQuercus frainetto belongs to southern Italy, the Balkans and Thrace. In a cemetery in Twente it is a deliberate import, and somebody chose it over the beeches and oaks that would have been the easy answer. It has grown here through everything that has happened to Enschede since 1930: the war, the slow closing of the textile mills that paid for this city, and the rebuilding of a town that had to find something else to be.\n\nThe ground around it is a national monument in its own right, protected in part for the park trees along these paths, though that listing praises them as a group and does not name this oak. The tree register does, and it is the only source that does, so read the dating as the register's judgement rather than as a count anybody has taken from the wood.",
+      "how_to_recognise": "You can recognise it by the leaves, far bigger and more deeply cut than the native oaks here. It stands on the northern main path, in the 1929 part of the cemetery, on the new side of the seam between the old ground and the new.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ens_009",
+      "name": "The Sweet Gum of the Oosterbegraafplaats",
+      "species": "Sweet Gum (Liquidambar styraciflua)",
+      "age_estimate": "roughly 90 years, from a registered planting date around 1935",
+      "age_min": 86,
+      "age_max": 96,
+      "girth_cm": null,
+      "location": {
+        "address": "Oosterbegraafplaats, northern main path (second section, right side), Noord Esmarkerrondweg 407, Enschede",
+        "latitude": 52.222352,
+        "longitude": 6.933965,
+        "neighbourhood": "Oosterbegraafplaats"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692855",
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626"
+      ],
+      "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
+      "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. No specific bus line verified this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree is on the national register for being a good example of its species, not an old one. The Bomenstichting dates the planting to around 1935, give or take five years, and listed it on dendrological grounds: a fine sweet gum, in a country where the species is a garden import rather than a native.\n\nLiquidambar styraciflua comes from the wet bottomlands of the American southeast. What it does in autumn is the whole reason anyone plants it here. The leaves are shaped like five-pointed stars and they refuse to turn one colour: scarlet, plum, orange and green show up on the same branch, sometimes on the same leaf, and the display runs on for weeks after the limes and beeches around it have gone brown and let go.\n\nIt stands on the second stretch of the northern main path, in a cemetery that calls itself a memorial park and means it. Gedenkpark De Ooster opened in 1899 and is now a national monument, protected in part for the trees along its paths, which is how an American swamp tree ends up growing old in Twente with nothing much asked of it.\n\nOnly the tree register names this specimen individually, so the planting date is its estimate rather than a documented year.",
+      "how_to_recognise": "You can recognise it by the leaves, five-pointed stars like a maple's but set singly along the twig, and by the corky ridges on its shoots. It stands on the right of the northern main path, on its second stretch.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the star-shaped leaves go scarlet and plum at once"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ens_010",
+      "name": "The Oriental Spruce of the Oosterbegraafplaats",
+      "species": "Oriental Spruce (Picea orientalis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Oosterbegraafplaats, Noord Esmarkerrondweg 407, Enschede",
+        "latitude": 52.222247,
+        "longitude": 6.932724,
+        "neighbourhood": "Oosterbegraafplaats"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692852",
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626"
+      ],
+      "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
+      "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. No specific bus line verified this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nobody has dated this spruce, and age is not why it is protected. The Bomenstichting listed it on dendrological grounds: Picea orientalis is a tree of the Caucasus and the mountains of northeast Turkey, uncommon in this corner of the Netherlands, and this is a good one.\n\nIt is the easiest spruce in Europe to identify by hand. Oriental spruce carries the shortest needles of any spruce, blunt at the tip rather than sharp, dark and glossy and packed tight all round the shoot, so the whole tree reads denser and blacker than the Norway spruces Dutch planters reached for by default. In its own range it covers the wet Black Sea slopes in forest up to the tree line. Here it stands in a cemetery on the eastern edge of Enschede, about fifty metres from a Hungarian oak, in ground laid out as a memorial park in 1899 and now a national monument.\n\nHow it got here is not written down. The register's age field says unknown, and rather than put a number on it we have left it empty: a spruce can look venerable at eighty and ordinary at two hundred, and guessing would be the easy kind of dishonesty.\n\nIf you know when this one went in, or have seen a planting record for the northern section, tell us and we will date it properly.",
+      "how_to_recognise": "You can recognise it by the needles, the shortest of any spruce and blunt rather than sharp, dark and packed tight all round the shoot. It stands about fifty metres from the Hungarian oak, off the northern path.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ens_011",
+      "name": "The Silver Lime of Stroinksbleekweg",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 140 years, from a registered planting date around 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Corner of Stroinksbleekweg and Hulsmaatstraat, Roombeek, Enschede",
+        "latitude": 52.234684,
+        "longitude": 6.894852,
+        "neighbourhood": "Roombeek"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1687606"
+      ],
+      "access": "Free. Stands in a public street-side green strip (plantsoen), no restriction.",
+      "transport": "About 1 km north of Enschede city centre / Enschede railway station, in the Roombeek district; walkable.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A silver lime has held this street corner since the 1880s and nobody wrote down why. The Bomenstichting register puts the planting between 1880 and 1890, which makes the tree roughly 140 years old, designates it monumental, and then leaves its history field blank. It is also the only source that names this tree at all.\n\nTilia tomentosa is the lime you notice in wind. Its leaves are dark green on top and coated underneath in fine white felt, so a gust turns the whole crown silver and then back again. It also flowers weeks after every other lime in the street, in high summer, with a scent that reaches you before the tree does.\n\nThe corner is in Roombeek, the district rebuilt after the fireworks depot went up on 13 May 2000, killing 23 people, injuring around 950 and flattening hundreds of homes. The blast site is roughly a kilometre south of here. What happened on this corner that afternoon is not recorded in anything we have been able to find, and assuming an old tree survived a disaster because it is old and standing is exactly the kind of tidy story that turns out to be wrong. If you were here, or know what this corner looked like that week, tell us.",
+      "how_to_recognise": "You can recognise it in any breeze: the leaves are dark above and white-felted underneath, so the whole crown flashes silver. It stands on the corner of Stroinksbleekweg and Hulsmaatstraat, about thirty metres from the old elm.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "late July, when it comes into flower weeks after the other limes and you smell it before you see it"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ens_012",
+      "name": "The Dutch Elm of Stroinksbleekweg",
+      "species": "Dutch Elm (Ulmus x hollandica)",
+      "age_estimate": "roughly 140 years, from a registered planting date around 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Stroinksbleekweg/Hulsmaatstraat, Roombeek, Enschede",
+        "latitude": 52.234792,
+        "longitude": 6.894964,
+        "neighbourhood": "Roombeek"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1687605"
+      ],
+      "access": "Free. Stands in a public park strip, no restriction.",
+      "transport": "About 1 km north of Enschede city centre / Enschede railway station, in the Roombeek district; walkable, about 30m from the Silver Lime of Stroinksbleekweg (ens_011).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A full-grown elm in a Dutch street is rarer than it looks. The disease that carries the country's name was first described here in the 1920s, named after the Dutch pathologists who worked it out rather than after the tree, and it went on to kill the great majority of the elms in the Netherlands. This one, which the Bomenstichting register dates to between 1880 and 1890, is still standing.\n\nUlmus x hollandica is a cross between wych elm and field elm, and it was the workhorse tree of the Low Countries: planted along dykes, quays and town streets by the thousand because it tolerates wind, salt and heavy clay. Most of that planting is gone. The survivors tend to be single trees in odd corners rather than the avenues they were meant to be.\n\nThe register gives this elm the same 1880 to 1890 band as the silver lime about thirty metres away and calls both monumental. Whether the two went in together is not recorded; the history field for each of them is blank, and the register is the only source that names either. The pair make a short stop about a kilometre north of Enschede station, on the edge of Roombeek, where almost everything else on the street is newer than they are.",
+      "how_to_recognise": "You can recognise it by the leaves, rough as sandpaper and lopsided where they meet the stalk, one side of the base set lower than the other. It stands about thirty metres from the silver lime on the same corner.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
