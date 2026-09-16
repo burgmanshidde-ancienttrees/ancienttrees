@@ -14000,6 +14000,21 @@
    ],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-09-16T23:34:07+00:00",
+   "date": "2026-09-16",
+   "run_id": null,
+   "minutes": 0.0,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "logged": null
   }
  ],
  "schedule_changes": [
