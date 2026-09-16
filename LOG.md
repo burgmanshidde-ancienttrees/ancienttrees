@@ -12,6 +12,34 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-16 (continuation) - Finished the stopped Montreal claim, iOS retry-flag patch still blocked
+
+Picked up after an earlier attempt in this window stopped early with 101
+minutes unspent. The Montreal verify claim was standing with unfinished
+output already on disk (`data/research/montreal-verified.json`, 2 trees
+verified but not yet written): wrote stories and recognition lines for
+the McGill Katsura (mtl_013) and McGill Dawn Redwood (mtl_014), fixed the
+Katsura's species name to the canonical "Katsura" (hard rule 9), merged
+both into `montreal.json` and corrected the city's count promises (11 ->
+13 trees, four -> six on McGill's campus, in the intro, meta description,
+question_meta/context and one FAQ answer). Build, qa.py and preflight.py
+all clean. Released the claim.
+
+Rung 2 (`health.py`): iOS app workflow was red, newest run failing on
+`testEveryFlowLeavesAWayBack` (a known flake in `FlowWalk.swift`, tapping
+"person-more" under CI load). The documented fix, `drafts/
+ios-floor-retry.patch`, was already written and waiting; applied it,
+committed and pushed to re-confirm the blocker before touching the note
+again. Still blocked exactly as recorded on 2026-09-09 and 2026-09-13:
+GitHub rejects any push to `.github/workflows/*` from this bot's token
+("without `workflows` permission"). Reverted the commit so main stays
+pushable and updated the patch file's note with today's date. This still
+needs Hidde's own token or a manual apply; nothing here can move it
+further.
+
+No new tree research this window; `leads.py --ready` was empty
+throughout.
+
 ## 2026-09-16 - Night run 2026-09-16 17:17 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 82.0 minutes of its 120 minute window, 556 turns, 103 commands refused by the allowlist, ended clean (success). 22 tree(s) reached data/cities across 13 city file(s), and the run still wrote no log entry of its own.
