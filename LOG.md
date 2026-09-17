@@ -1,6 +1,29 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - The deploy was red on its first gate, and Graz argued with itself
+
+Found while pushing the alignment work: `i18ncheck.py` failed on main, and it
+is the FIRST step in deploy.yml, so nothing was reaching the site at all. Nine
+trees across six translated overlays had gained an English `age_estimate` from
+the derived-ages run and carried none in their own language: de/graz, es/girona,
+it/cagliari, it/florence, it/milan, it/rome. Filled, in the shape each language
+already uses, keeping the basis the estimate rests on ("stimati da un tronco di
+5 m di circonferenza"), because a derived age that does not say what it is
+derived from is a guess wearing an estimate's clothes.
+
+The same run left Graz contradicting itself on a published page. Its question
+answer said, of the two Panoramagasse oaks, that "converting a girth into a
+year needs a cited growth rate this page does not have in hand, so no number is
+guessed" while those two trees now carry exactly that number. Both sentences
+were true when written; ages.py is the cited growth rate that arrived in
+between. The page now gives the two bands, says the arithmetic puts the larger
+oak past the maple while the maple keeps the better paper trail, and says the
+bands are a century wide because that is the honest width. English and German
+together, one change.
+
+i18ncheck clean, preflight 0 problems. Merged and pushed to main.
+
 ## 2026-09-17 (session) - One page container, so nothing jumps inward any more
 
 Hidde, with a screenshot of the homepage footer: "Het is raar dat de sectie
