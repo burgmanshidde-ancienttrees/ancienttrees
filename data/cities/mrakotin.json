@@ -60,9 +60,18 @@
       },
       "how_to_recognise": "You can recognise it by the lopsided crown, pushed out of shape by the west wind, and by the fact that it is the only tree there. It stands alone in the field north of Mrákotín, opposite the farmstead on the road to Malinné.",
       "best_time": {
-        "months": [4],
+        "months": [
+          4
+        ],
         "kind": "flowers",
         "label": "late April, when it flowers white and carries across the empty field"
+      },
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-17",
+        "source_name": "Hrušeň u Mrákotína",
+        "qid": "Q26787102",
+        "views": 8
       }
     }
   ]
