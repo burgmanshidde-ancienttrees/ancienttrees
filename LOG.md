@@ -60,6 +60,49 @@ Not done, and it is the other half of the same report: **none of the 17 tree
 pages carries a recognition line**, which is rung 7 and the cheapest unique
 text we have. Left for a run.
 
+## 2026-09-17 (continuation 9) - Houston and Vancouver: 5 trees written and merged, a species page, a city-list gap fixed
+
+Picked up after an earlier attempt this window stopped with two write
+claims standing on Vancouver and Houston whose verify work (continuation
+8, below) had already landed. Released both stale claims, deleted the
+now-merged `enschede-verified.json` research file, re-claimed both cities
+for a write pass, and ran one: `leads.py --ready` was empty (that pipeline
+is register-leads only), but `passcheck.py --pending` had exactly these 5
+already-verified trees waiting on a story, which is the same "bought and
+paid for" work the wake-up brief was pointing at, just under the other
+assembly-line queue.
+
+**5 trees written and merged.** hou_005 (The Rienzi Yaupon, Museum of Fine
+Arts Houston's garden, state champion class yaupon holly grown to tree
+height) and hou_006 (The Russ Pitman Mexican White Oak, Bellaire) from the
+Texas Big Tree Registry; van_005 (The Dunbar Street Beech), van_006 (The
+West 20th Avenue Sweet Chestnut) and van_007 (The Blenheim Street Oak) from
+Vancouver's Heritage Register, each cross-checked against the city's
+separate street-tree inventory. None has a documented age; all five say so
+plainly and ask the reader. Houston grows 4 to 6, Vancouver 4 to 7.
+Normalised 3 species-field collisions the writer correctly left alone as
+verified fields (Spanish Chestnut to Sweet Chestnut, a dual-name Mexican
+White Oak field, a multi-clause disputed-species field on the Blenheim
+oak), fixed the count-promise copy both cities' growth broke, rebuilt,
+qa.py and preflight.py both clean.
+
+**Found and fixed: Houston has been missing from `data/city-list.json`
+since the city was first opened** (0339be59, weeks ago), which is why
+`feed.xml.ts`'s first-seen stamping (iterates city-list.json) had never
+recorded hou_001-004 even though the pages themselves build fine through a
+separate directory-scan path. Added the entry, corrected Vancouver's stale
+`trees: 4`, bumped united-states.json's meta_description count.
+
+**A species page earned itself mid-pass:** hou_006 crossed Mexican White
+Oak (Quercus polymorpha) to 3 trees, the Contract F threshold.
+`pagegaps.py` caught it; wrote the intro from the three trees' own facts
+(Barcelona, Valencia, Houston) rather than waiting for a later sweep.
+
+Both write claims released. Costs logged (write pass, 5 trees, 133k
+tokens). `health.py` rung 2 is clear (the iOS failure the session-start
+brief flagged had already resolved itself by the time this run checked,
+per a run that landed at 03:45 before this one started); rung 1
+(submissions, sightings) was empty both times it was checked.
 ## 2026-09-17 (continuation 8) - Ischia settled, Marthalen Oak photographed, Vancouver and Houston verify passes dispatched
 
 Picked up after an earlier attempt in this window stopped with 74 minutes
