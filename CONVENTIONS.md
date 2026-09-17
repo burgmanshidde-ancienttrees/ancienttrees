@@ -494,12 +494,21 @@ e-mail". The address is asked for only after that, on a step of its own. Our
 first attempt dropped a text input straight into the sheet, which makes the
 second screen a form with buttons stacked above it.
 
-Their expanded order is Google, Facebook, Apple, email. Ours is Apple, Google,
-email: Facebook is excluded (Hidde's instruction, and we have no such provider),
-and Apple leads because Apple's guidelines ask that their button be no less
-prominent than the others, which a front screen offering Google while Apple
-waits behind a disclosure would break. Same weight, same shape, order changed
-for a published rule rather than for taste.
+Their expanded order is Google, Facebook, Apple, email, and ours is the same
+list with Facebook taken out (Hidde's instruction, and we have no such
+provider): Google on the front screen, Apple and email revealed by More options.
+
+**That took two goes, and the wrong one is worth recording because it was
+reasoned rather than guessed.** The first build put Apple in the front slot,
+arguing in the code and in this file that Apple's guidelines require their
+button to be no less prominent than any other. Hidde, 2026-09-17: "Google hoort
+daar Apple is de optie die vertoond wordt als je more options klikt net als bij
+alltrails." He is right, on both halves. Apple's prominence rule is an App Store
+review requirement about an APP that offers a third-party sign-in; a website is
+not reviewed by Apple and the rule does not reach it. And the reference settles
+it anyway, because AllTrails ships Sign in with Apple and still puts Google in
+front of it. A guideline quoted out of its scope is exactly the "eigen idee"
+this whole section exists to stop.
 
 **THE VERTICAL RHYTHM, which is the part that reads as quality and the part
 nobody can name.** Hidde, after a rebuild whose elements were all correct:
@@ -553,10 +562,9 @@ picked the reference. The two surfaces now disagree because somebody decided,
 rather than because one of them was forgotten, and that is the only version of
 this disagreement worth having.
 
-The dark slot holds the strongest tap route available: Apple where it is
-switched on, Google where it is not. Both publish a dark button, so neither is
-restyled against its own guidelines, and Apple's rule that its button be at
-least as prominent as the others is met by it being the only filled one.
+The dark slot holds the strongest tap route available, which on a phone is
+"Continue in the app" and everywhere else is Google. Apple sits on the second
+screen as a grey pill, the same weight every other route there carries.
 
 ---
 
@@ -597,11 +605,19 @@ button inherits the Google button's geometry whole, same height, radius, type
 size and mark column. Measured at 375px: both 276 by 44, same left and right
 edge.
 
-Apple's appearances are black, white and white-with-outline, and their
-guidelines ask that the button be at least as prominent as the other sign-in
-options. The site has no dark mode, so black on our cream ground is both the
-correct appearance and the recognisable one, and an outlined Google underneath
-makes Apple visibly the greater of the two rather than merely tying.
+Apple's appearances are black, white and white-with-outline. On the second
+screen every route is a grey pill of equal weight, so Apple wears the dark mark
+on our cream ground rather than a black fill, which is the white appearance and
+one Apple publishes.
+
+**Their prominence rule does not apply here, corrected 2026-09-17.** It asks
+that the Sign in with Apple button be no less prominent than the other options,
+and the first build of this sheet read that as a licence to put Apple in the
+front slot with Google behind a disclosure. The rule binds an APP offering a
+third-party sign-in, which Apple reviews; a website is not reviewed and the
+guideline does not reach it. AllTrails, which ships Sign in with Apple, puts
+Google in front of it. Hidde ruled the same way. The full record is in the
+sign-in sheet entry above.
 
 - https://supabase.com/docs/guides/auth/social-login/auth-apple
 - https://developer.apple.com/sign-in-with-apple/usage-guidelines-for-websites-and-other-platforms/
