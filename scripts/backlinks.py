@@ -127,22 +127,31 @@ def check(store, today, limit=12, verbose=True):
     bad = blocked_hosts()
     seen = store.setdefault("seen", {})
     events = []
+    read = 0
+    missed = 0
     for item in due(store.get("watch", []), limit):
         url = item["url"]
+        # Stamped before the fetch, including on a failure. A host that refuses
+        # us forever would otherwise stay permanently least-recently-checked
+        # and starve every reachable page behind it. What the failure costs is
+        # reported instead, in last_run below.
         item["checked"] = today
         if any(b in url.lower() for b in bad):
+            missed += 1
             if verbose:
                 print("  skipped (blocklist): %s" % url, file=sys.stderr)
             continue
         try:
             html = fetch(url)
         except (urllib.error.URLError, OSError, ValueError) as e:
+            missed += 1
             if verbose:
                 print("  unreachable, left as-is: %s (%s)" % (url, e),
                       file=sys.stderr)
             continue
         finally:
             time.sleep(PAUSE)
+        read += 1
 
         hits = links_on(html)
         prev = seen.get(url)
@@ -167,6 +176,8 @@ def check(store, today, limit=12, verbose=True):
             prev["gone_since"] = today
             events.append("GONE: %s no longer links to us" % url)
     store["checked"] = today
+    store["last_run"] = {"date": today, "read": read, "missed": missed,
+                         "watched": len(store.get("watch", []))}
     return events
 
 
@@ -199,6 +210,17 @@ def digest_section(store):
             "table, so these two lines measure different things and neither "
             "replaces the other. Unknown links stay a manual read of Search "
             "Console's Links report." % (n, followed))
+    # Say how many pages were actually READ this morning. Without it, a run
+    # where every fetch failed prints exactly the same table as a run where
+    # every page was read and nothing had changed, and "no new links" would
+    # be indistinguishable from "nobody could look".
+    run = store.get("last_run") or {}
+    if run:
+        note += (" This run read %d of %d fetched (%d unreachable), out of %d "
+                 "watched pages." % (run.get("read", 0),
+                                     run.get("read", 0) + run.get("missed", 0),
+                                     run.get("missed", 0),
+                                     run.get("watched", 0)))
     return "Backlinks (watched pages):\n" + head + note
 
 
