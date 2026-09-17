@@ -18,6 +18,30 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 11) - Enschede/Helmond write pass merged, Alkmaar verify dispatched
+
+Followed the run prompt's "write pass first, whenever there is one to do" rule.
+`prepare.py` showed 3 fully verified trees sitting unmerged (ens_014, ens_015
+in `data/research/enschede-verified.json`; hlm_019 in
+`data/research/helmond-verified.json`, all left by continuation 10). Claimed
+both cities for write, dispatched a write-stories pass, and merged the result:
+**Enschede 13 -> 15 trees, Helmond 18 -> 19 trees.** Fixed one species-name
+drift at merge time (the writer delivered "Common Hornbeam", the site already
+uses "Hornbeam (Carpinus betulus)" everywhere else) and updated both cities'
+count promises (meta_description, question_meta, question_context, and
+Helmond's "are they free to visit" FAQ, which listed every access group by
+name and needed the new Croylaan oak added to it, since it is council land
+beside a public road rather than inside the private castle grounds it
+approaches).
+
+With the shelf otherwise thin (48 cities staged for verify but none with an
+unmerged write ready), dispatched a fresh verify pass on **Alkmaar** (7/20
+trees, 361 unmined Dutch LRMB register candidates, real demand at 12
+impressions/10d) rather than touching Enschede or Helmond again in parallel,
+to avoid two agents writing the same delivery file at once. Brief steered it
+toward forming a new tight walkable cluster rather than adding scattered
+singletons to a city that already spans 10.9 km.
+
 ## 2026-09-17 (continuation 10) - Tallinn register pool confirmed exhausted a second time, claim released
 
 Resumed a window an earlier attempt stopped in with 4 claims standing

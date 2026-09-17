@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Enschede's old trees were bought by textile money. Van Heek, Blijdenstein, Ledeboer: the families who ran the mills built estates on the edge of town, hired the best garden architects in the country and planted them, and the city later absorbed the results as public parks. One invoice survives. In 1865 D. Wattez billed H. J. van Heek for a Wellingtonia as part of the planting around 't Wageler, and the two men wrote to each other about the price. That giant sequoia is still standing in the Ledeboerpark, which is the closest thing this page has to a receipt.",
-  "meta_description": "Thirteen remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
-  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and twelve more worth the walk.",
+  "meta_description": "Fifteen remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
+  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and fourteen more worth the walk.",
   "question_answer": "The oldest tree in Enschede is the oak on 't Zeggelt, in the Lasonder-Zeggelt district, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It has a name of its own in the city, De Eik op 't Zeggelt, and it stands in public planting rather than on any estate, which is unusual here: almost every other old tree in Enschede is a survivor of a nineteenth century textile family's grounds. The register gives it a coordinate to six decimal places, which is the sort of precision that means somebody stood at the trunk with a receiver rather than pointing at an address.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. The giant sequoia in the Ledeboerpark is the exception worth naming: the register cites a document in the archive of the Twente textile families recording correspondence in 1866 between H. J. van Heek and the garden architect D. Wattez about the price of a Wellingtonia, on an invoice for planting around 't Wageler in 1865. That is a documented purchase rather than an estimate, and it is why this page can be more confident about that tree than about any other on it. Where a pin is marked approximate we know the grounds and not the trunk.",
   "hero_tree_id": "ens_001",
@@ -441,6 +441,68 @@
       "curation_status": "flagged",
       "story": "Snap a twig off this birch and it smells of wintergreen, sharp and sweet, the same oil that once flavoured birch beer and root beer before chemists learned to make it without bark. That is where the name comes from: Betula lenta is sweet birch, one of the few trees whose common name describes a smell rather than a look.\n\nThe Bomenstichting register lists it here on dendrological grounds, the same reason it gives for the Hungarian oak, the sweet gum and the Oriental spruce standing nearby in the same cemetery: a fine, uncommon specimen rather than a documented age. This one carries a substantial trunk for its species, measured at 2.34 metres round and about 18 metres tall, a figure an independent count of the cemetery's trees agrees with. Neither record gives a planting date.\n\nSweet birch's native range is the Appalachians and the hardwood forests of the eastern United States, where its sap was once tapped and boiled down much like a sugar maple's, for a syrup that tastes faintly of mint. In Enschede it stands towards the back of the northern main path of a rijksmonument cemetery laid out in 1899, the fourth tree from this one corner of ground to earn a place on the national register.\n\nIf anyone knows when it was planted, we would like to hear it.",
       "how_to_recognise": "You can recognise it by the bark, dark and cherry-like rather than white, and by the wintergreen smell released when a twig is snapped. It stands towards the back of the northern main path, on the left.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ens_014",
+      "name": "The Beech Arbour of Van Heekpark",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "about a century old (sources disagree on the exact planting year)",
+      "age_min": 97,
+      "age_max": 109,
+      "girth_cm": null,
+      "location": {
+        "address": "G.J. van Heekpark, Enschede",
+        "latitude": 52.228731,
+        "longitude": 6.880145,
+        "neighbourhood": "Van Heekpark"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1678438, 'Beukenberceau Van Heekpark')",
+        "https://www.monumenten.nl/monument/510593"
+      ],
+      "access": "Free, open public park (Rijksmonument since 1995)",
+      "transport": "About 1.8 km west of Enschede Centraal station, roughly 20-25 minutes on foot; the park borders Hengelosestraat. No specific bus stop verified this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The beech arbour of Van Heekpark contains no beech.\n\nIts Dutch name, Beukenberceau, translates straight across to beech arbour, and the tree actually doing the work is haagbeuk: hornbeam, Carpinus betulus, a different family altogether. Hornbeam gets the job on temperament. It takes hard clipping year after year and holds an architectural shape for decades, which is why gardeners across Europe reach for it whenever a tunnel has to stay a tunnel.\n\nRoughly a hundred of them stand here in two trained rows, pruned into a green corridor that serves as the main link between G.J. van Heekpark and the Van Lochemsbleekpark beside it.\n\nWhen it went in is genuinely unsettled. The national register of monumental trees says the park was laid out in 1917 and 1918 and that the berceau was made then. The Rijksmonument description says the berceau was built in 1929, at the south-eastern end of the Van Lochemsbleekpark woods. Nothing establishes whether those are one job described twice or a planting later extended, so both dates stay on the page.\n\nThe park came out of the textile boom. Garden architect P.H. Wattez designed it for Gerrit Jan van Heek, one of the mill owners whose factories made the modern city, and van Heek handed it to the municipality in 1918. The mills are long closed. The tunnel is still clipped, and both parks have been a single national monument since 1995.\n\nThis is one to walk through rather than stand in front of.",
+      "how_to_recognise": "You can recognise it by the clipped green tunnel of about a hundred hornbeams, trained in two rows and arched overhead, whatever the beech in its Dutch name suggests. It runs between G.J. van Heekpark and the Van Lochemsbleekpark.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ens_015",
+      "name": "The Plane Tree of Klokkenplas",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 150 to 165 years",
+      "age_min": 150,
+      "age_max": 166,
+      "girth_cm": null,
+      "location": {
+        "address": "Klokkenplas, Enschede",
+        "latitude": 52.220283,
+        "longitude": 6.896504,
+        "neighbourhood": "City centre"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1678439, 'Gewone plataan')",
+        "https://www.erfgoedenschede.nl/2026/09/03/de-platanen-in-de-binnenstad-als-bomen-konden-praten/"
+      ],
+      "access": "Free, public square",
+      "transport": "In the city centre, roughly 1-1.5 km / a 15-20 minute walk from Enschede Centraal station.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The garden this tree belonged to is gone. The tree is still standing in the middle of where it was.\n\nThe national register of monumental trees records the plane on the Klokkenplas as a remnant of a garden of the van Heek family, and dates its planting to somewhere between 1860 and 1870. A 2026 survey of the city's historic planes by the local heritage foundation puts the group it belongs to at 140 to 160 years, a little younger and clearly overlapping. Around a century and a half is as tight as the two sources honestly get.\n\nThat is long enough to have stood through the plot around it turning from private ground into a public square, and through Enschede becoming a textile city and then ceasing to be one.\n\nIt has company. The same survey counts it among a small set of monumental planes in the centre, alongside the Bomen van Herman on the Noorderhagen and the plane on the Cort van der Lindelaan, which is itself what remains of a country garden the city built over in the 1920s. Three trees, three vanished gardens, an easy walk between them.\n\nThe heritage foundation called its piece on these planes \"if trees could talk\". This one would spend most of the conversation on things that are no longer here.",
+      "how_to_recognise": "You can recognise it by the plane's camouflage bark, flaking in cream, olive and grey, and by the bristly seed balls that hang on into winter. It stands on the Klokkenplas square in the city centre.",
       "photo": {
         "url": null,
         "license": null,
