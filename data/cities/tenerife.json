@@ -94,7 +94,14 @@
       "curation_status": "ai_generated",
       "notes": "Height over 45m (one source: 45.12m); girth cited as 'nearly 10m' and more precisely 9.36m, the thickest native tree in Spain (girth_cm 936). Widely called the most voluminous tree of its kind in Europe. Sits at over 1,400m elevation in the Corona Forestal Natural Park, not the ticketed core of Teide National Park (which only gates the cable car). Featured on Vilaflor's municipal coat of arms. Survived multiple wildfires and storms; bark shows fire scarring. Pin confirmed against an OpenStreetMap natural=tree node named 'Pino Gordo' on the TF-21 in Vilaflor de Chasna matching the description exactly; a separate 'Pino Gordo' bus-stop node sits about 30m away at the parking area. About 150m from Pino de las Dos Pernadas (tfe_003), the two forming one short walkable pair at the same viewpoint.",
       "location_precision": "confirmed",
-      "how_to_recognise": "The thicker of the two pines at the viewpoint, 9.36 metres round with fire scars up the bark; the taller one stands 150 metres further along the trail."
+      "how_to_recognise": "The thicker of the two pines at the viewpoint, 9.36 metres round with fire scars up the bark; the taller one stands 150 metres further along the trail.",
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Pino Gordo, Vilaflor de Chasna",
+        "qid": "Q66002146",
+        "views": 19
+      }
     },
     {
       "id": "tfe_003",
@@ -125,7 +132,14 @@
       "curation_status": "ai_generated",
       "notes": "Called the tallest native tree in Spain: 56m. Girth about 8m (girth_cm 800). The trunk forks into two limbs of similar thickness at around 10m height, which gives the tree its name (dos pernadas, two limbs). Pin confirmed against an OpenStreetMap natural=tree node named 'Pino de las dos Pernadas' on the TF-21, about 130-150m from the Pino Gordo node, consistent with descriptions of the two standing on the same short trail. Same fire and storm context as Pino Gordo (Corona Forestal Natural Park, free public access).",
       "location_precision": "confirmed",
-      "how_to_recognise": "The taller and slimmer of the two: at about ten metres up the trunk divides into two limbs of near-identical thickness that carry on skyward side by side."
+      "how_to_recognise": "The taller and slimmer of the two: at about ten metres up the trunk divides into two limbs of near-identical thickness that carry on skyward side by side.",
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Pino de las dos Pernadas, Vilaflor de Chasna",
+        "qid": "Q125426611",
+        "views": 10
+      }
     },
     {
       "id": "tfe_004",

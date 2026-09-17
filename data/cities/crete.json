@@ -70,7 +70,14 @@
         "kind": "fruit"
       },
       "how_to_recognise": "A hollow twisting shell of a trunk 12.5 metres round with the grain running in curves, beside the small olive museum that takes the entry fee.",
-      "paid_entry": true
+      "paid_entry": true,
+      "fame": {
+        "langs": 12,
+        "checked": "2026-09-11",
+        "source_name": "Vouves olive tree",
+        "qid": "Q7087240",
+        "views": 4592
+      }
     },
     {
       "id": "crt_002",
@@ -113,7 +120,14 @@
         "label": "September to November: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
       },
-      "how_to_recognise": "Beside the Azoria excavation a kilometre south of Kavousi, signposted as the old olive: 14.2 metres round, with the graft join visible between the eating cultivar above and the wild rootstock below."
+      "how_to_recognise": "Beside the Azoria excavation a kilometre south of Kavousi, signposted as the old olive: 14.2 metres round, with the graft join visible between the eating cultivar above and the wild rootstock below.",
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Azorias olive tree",
+        "qid": "Q105501045",
+        "views": 2
+      }
     },
     {
       "id": "crt_003",

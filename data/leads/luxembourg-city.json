@@ -1,55 +1,104 @@
 {
-  "leads": [
-    {
-      "name": "Nessert am Konviktsgaart zu Letzebuerg (walnut)",
-      "species": "Common Walnut (Juglans regia)",
-      "reason": "Official register nr_id 132, Groussherzogleche Reglement 31 Jan 2025, LAR 2023 p.172. Sits on the grounds of the Konviktsgaart, which now operates as a senior-living residence (Residence Grande-Duchesse Josephine-Charlotte / Sodexo Seniors); its search-result description is 'surrounded by a lovely park' with no confirmation that visitors may enter without business at the facility. Held back on hard rule 10 (convent/institution garden, needs real evidence of open access) rather than shipped as approximate-access.",
-      "coordinates": [6.1214979706, 49.606788333],
-      "sources": ["ANF register nr_id 132", "https://www.vdl.lu/en/living/aid-and-assistance/seniors/konviktsgaart-0"]
-    },
-    {
-      "name": "Wille Kaschtebam am Konviktsgaart (wild horse chestnut)",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "reason": "Official register nr_id 133, same Konviktsgaart access question as the walnut above. Held back for the same reason.",
-      "coordinates": [6.1213597281, 49.6066713953],
-      "sources": ["ANF register nr_id 133"]
-    },
-    {
-      "name": "Seisskaschtebam um Scheedhaff (sweet chestnut)",
-      "species": "Sweet Chestnut (Castanea sativa)",
-      "reason": "Official register nr_id 125, section Hamm. A search on the Scheedhaff locality found the adjacent 'Lannenallee um Scheedhaff' described as a private avenue leading to two residential houses on the site of a former farm; nothing found confirming the chestnut itself sits on a publicly accessible stretch rather than the farm's private grounds. Held back until access can be confirmed rather than guessed.",
-      "coordinates": [6.196943664, 49.6104888448],
-      "sources": ["ANF register nr_id 125", "https://lb.wikipedia.org/wiki/Lannenallee_um_Scheedhaff"]
-    },
-    {
-      "name": "Chene Krombach",
-      "species": "Pedunculate Oak (Quercus robur), per Wikidata",
-      "reason": "Wikidata item Q13103645, no matching row found in the current (31 Jan 2025) official register list of 13 Luxembourg City trees (IDs 124-136), and absent from the Luxembourgish Wikipedia's full registry table and from the general article's historical/current tree lists. Likely delisted, superseded, or never on the official list to begin with. Needs a dedicated check before publishing as a register-backed tree.",
-      "coordinates": [6.122665, 49.610313],
-      "sources": ["https://www.wikidata.org/wiki/Q13103645"]
-    },
-    {
-      "name": "Arbre du prince Charles de Luxembourg / Bam vum Prenz Charles",
-      "species": "Not established",
-      "reason": "Wikidata item Q102227365, an OSM node exists (id 11144267577, denotation=natural_monument, name 'Bam vum Prenz Charles', no species/measurements tagged), and it is named in the 'see also' list of the Prince Jean chestnut's Wikipedia article as another tree in Parc Pescatore. But it does NOT appear in the current official register table (IDs 124-136) extracted from the Luxembourgish Wikipedia's full list article, which reflects the 31 Jan 2025 Grand Ducal regulation. Possibly delisted (compare the Museum courtyard copper beech below, confirmed removed 2022) or added to OSM without ANF's current backing. Needs its own dedicated Wikipedia/Wikidata page check and a look for a felling/removal notice before shipping.",
-      "coordinates": [6.129388, 49.615452],
-      "sources": ["https://www.wikidata.org/wiki/Q102227365"]
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Bluttbuch am Haff vum Geschichtsmusee (copper beech, Lux City Museum courtyard)",
-      "species": "European Beech, copper-leaved form (Fagus sylvatica f. purpurea)",
-      "reason": "DEAD / REMOVED. Wikidata item Q13101762, flagged as a Monument national. The Luxembourgish Wikipedia article on the Square Robert-Brasseur chestnut lists this tree's title with the explicit note '(gouf 2022 ewechgeholl)' -- 'was removed in 2022' -- in its 'see also' list. Never ships as a collectible entry per the no-dead-trees rule; may be mentioned as historical context only, never as an entry.",
-      "coordinates": [6.13408, 49.61026],
-      "sources": ["https://lb.wikipedia.org/wiki/K%C3%A4schtebam_um_Square_Robert-Brasseur_zu_L%C3%ABtzebuerg"]
-    },
-    {
-      "name": "The right-hand (taller) Giant Sequoia, Parc Amelie",
-      "species": "Giant Sequoia (Sequoiadendron giganteum)",
-      "reason": "DEAD / FELLED. Per the dedicated Luxembourgish Wikipedia article 'Sequoiaen am Amaliepark', this tree (the taller, thicker of an original pair, height 32m / girth 6.15m circa 2000) was found infected with Armillaria (honey fungus) root rot by 2025 and felled on 28 February 2026; its wood was to become park benches and a new sapling planted in its place. The surviving twin is delivered as lux_005 with location_precision set to approximate because the two register coordinates were never individually distinguished as left/right in any source found.",
-      "coordinates": null,
-      "sources": ["https://lb.wikipedia.org/wiki/Sequoiaen_am_Amaliepark"]
-    }
-  ]
+ "leads": [
+  {
+   "name": "Nessert am Konviktsgaart zu Letzebuerg (walnut)",
+   "species": "Common Walnut (Juglans regia)",
+   "reason": "Official register nr_id 132, Groussherzogleche Reglement 31 Jan 2025, LAR 2023 p.172. Sits on the grounds of the Konviktsgaart, which now operates as a senior-living residence (Residence Grande-Duchesse Josephine-Charlotte / Sodexo Seniors); its search-result description is 'surrounded by a lovely park' with no confirmation that visitors may enter without business at the facility. Held back on hard rule 10 (convent/institution garden, needs real evidence of open access) rather than shipped as approximate-access.",
+   "coordinates": [
+    6.1214979706,
+    49.606788333
+   ],
+   "sources": [
+    "ANF register nr_id 132",
+    "https://www.vdl.lu/en/living/aid-and-assistance/seniors/konviktsgaart-0"
+   ],
+   "lat": 49.606788333,
+   "lng": 6.1214979706,
+   "position_basis": "recovered from the lead's own `coordinates` field (field, lat/lng swapped)"
+  },
+  {
+   "name": "Wille Kaschtebam am Konviktsgaart (wild horse chestnut)",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "reason": "Official register nr_id 133, same Konviktsgaart access question as the walnut above. Held back for the same reason.",
+   "coordinates": [
+    6.1213597281,
+    49.6066713953
+   ],
+   "sources": [
+    "ANF register nr_id 133"
+   ],
+   "lat": 49.6066713953,
+   "lng": 6.1213597281,
+   "position_basis": "recovered from the lead's own `coordinates` field (field, lat/lng swapped)"
+  },
+  {
+   "name": "Seisskaschtebam um Scheedhaff (sweet chestnut)",
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "reason": "Official register nr_id 125, section Hamm. A search on the Scheedhaff locality found the adjacent 'Lannenallee um Scheedhaff' described as a private avenue leading to two residential houses on the site of a former farm; nothing found confirming the chestnut itself sits on a publicly accessible stretch rather than the farm's private grounds. Held back until access can be confirmed rather than guessed.",
+   "coordinates": [
+    6.196943664,
+    49.6104888448
+   ],
+   "sources": [
+    "ANF register nr_id 125",
+    "https://lb.wikipedia.org/wiki/Lannenallee_um_Scheedhaff"
+   ],
+   "lat": 49.6104888448,
+   "lng": 6.196943664,
+   "position_basis": "recovered from the lead's own `coordinates` field (field, lat/lng swapped)"
+  },
+  {
+   "name": "Chene Krombach",
+   "species": "Pedunculate Oak (Quercus robur), per Wikidata",
+   "reason": "Wikidata item Q13103645, no matching row found in the current (31 Jan 2025) official register list of 13 Luxembourg City trees (IDs 124-136), and absent from the Luxembourgish Wikipedia's full registry table and from the general article's historical/current tree lists. Likely delisted, superseded, or never on the official list to begin with. Needs a dedicated check before publishing as a register-backed tree.",
+   "coordinates": [
+    6.122665,
+    49.610313
+   ],
+   "sources": [
+    "https://www.wikidata.org/wiki/Q13103645"
+   ],
+   "lat": 49.610313,
+   "lng": 6.122665,
+   "position_basis": "recovered from the lead's own `coordinates` field (field, lat/lng swapped)"
+  },
+  {
+   "name": "Arbre du prince Charles de Luxembourg / Bam vum Prenz Charles",
+   "species": "Not established",
+   "reason": "Wikidata item Q102227365, an OSM node exists (id 11144267577, denotation=natural_monument, name 'Bam vum Prenz Charles', no species/measurements tagged), and it is named in the 'see also' list of the Prince Jean chestnut's Wikipedia article as another tree in Parc Pescatore. But it does NOT appear in the current official register table (IDs 124-136) extracted from the Luxembourgish Wikipedia's full list article, which reflects the 31 Jan 2025 Grand Ducal regulation. Possibly delisted (compare the Museum courtyard copper beech below, confirmed removed 2022) or added to OSM without ANF's current backing. Needs its own dedicated Wikipedia/Wikidata page check and a look for a felling/removal notice before shipping.",
+   "coordinates": [
+    6.129388,
+    49.615452
+   ],
+   "sources": [
+    "https://www.wikidata.org/wiki/Q102227365"
+   ],
+   "lat": 49.615452,
+   "lng": 6.129388,
+   "position_basis": "recovered from the lead's own `coordinates` field (field, lat/lng swapped)"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Bluttbuch am Haff vum Geschichtsmusee (copper beech, Lux City Museum courtyard)",
+   "species": "European Beech, copper-leaved form (Fagus sylvatica f. purpurea)",
+   "reason": "DEAD / REMOVED. Wikidata item Q13101762, flagged as a Monument national. The Luxembourgish Wikipedia article on the Square Robert-Brasseur chestnut lists this tree's title with the explicit note '(gouf 2022 ewechgeholl)' -- 'was removed in 2022' -- in its 'see also' list. Never ships as a collectible entry per the no-dead-trees rule; may be mentioned as historical context only, never as an entry.",
+   "coordinates": [
+    6.13408,
+    49.61026
+   ],
+   "sources": [
+    "https://lb.wikipedia.org/wiki/K%C3%A4schtebam_um_Square_Robert-Brasseur_zu_L%C3%ABtzebuerg"
+   ]
+  },
+  {
+   "name": "The right-hand (taller) Giant Sequoia, Parc Amelie",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "reason": "DEAD / FELLED. Per the dedicated Luxembourgish Wikipedia article 'Sequoiaen am Amaliepark', this tree (the taller, thicker of an original pair, height 32m / girth 6.15m circa 2000) was found infected with Armillaria (honey fungus) root rot by 2025 and felled on 28 February 2026; its wood was to become park benches and a new sapling planted in its place. The surviving twin is delivered as lux_005 with location_precision set to approximate because the two register coordinates were never individually distinguished as left/right in any source found.",
+   "coordinates": null,
+   "sources": [
+    "https://lb.wikipedia.org/wiki/Sequoiaen_am_Amaliepark"
+   ]
+  }
+ ]
 }
