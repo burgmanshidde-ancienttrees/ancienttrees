@@ -136,7 +136,8 @@
       "height_m": 18.0,
       "latitude": 45.644047,
       "longitude": 13.81525,
-      "note": "Parco di Villa Revoltella, a free public park. With 61/L424 this is a third possible Trieste cluster and worth a pass."
+      "note": "Parco di Villa Revoltella, a free public park. With 61/L424 this is a third possible Trieste cluster and worth a pass.",
+      "status": "RESOLVED 2026-09-17, delivered as tri_011"
     },
     {
       "sheet_id": "16/L424/TS/06",
@@ -170,7 +171,7 @@
       "height_m": 20.0,
       "latitude": 45.637308,
       "longitude": 13.801439,
-      "note": "Giardino Sartorio. Caucasian Elm, 350 cm. Access needs checking; sits 200 m from 12/L424 at Villa Sartorio."
+      "note": "Giardino Sartorio. Caucasian Elm, 350 cm. RESOLVED 2026-09-17: this and 12/L424 (Villa Sartorio - Via dei Modiano, 353cm, blocked as private) are almost certainly the same physical tree, recorded twice under two locality labels 43m apart, which is register GPS noise rather than two specimens; every narrative source (Il Piccolo, triesteprima, the museum) describes exactly one Zelkova carpinifolia here and triesteprima's 111cm diameter converts to ~349cm circumference, matching both register girths. Folded into 12/L424 and delivered as tri_013 using that entry's coordinate. This entry (66/L424) should not be researched again as a separate tree."
     },
     {
       "sheet_id": "61/L424/TS/06",
@@ -181,7 +182,8 @@
       "height_m": 22.0,
       "latitude": 45.643678,
       "longitude": 13.815608,
-      "note": "Parco di Villa Revoltella, a free public park. Pairs with 05/L424."
+      "note": "Parco di Villa Revoltella, a free public park. Pairs with 05/L424.",
+      "status": "RESOLVED 2026-09-17, delivered as tri_012 (confirmed as a genuinely distinct second pine, ~50m from 05/L424, not a register twin: heights disagree 22m vs 18m and Il Piccolo's anti-collapse survey independently gives 110cm diameter matching this one)"
     },
     {
       "sheet_id": "39/L424/TS/06",
@@ -225,7 +227,8 @@
       "height_m": 15.0,
       "latitude": 45.687256,
       "longitude": 13.788553,
-      "note": "Horse Chestnut 324 cm, Opicina, Via Nazionale 51. Street tree, access probably fine."
+      "note": "Horse Chestnut 324 cm, Opicina, Via Nazionale 51. Street tree, access probably fine.",
+      "status": "RESOLVED 2026-09-17, delivered as tri_014, flagged single-source: register only, no independent second source found despite two search attempts and checking both Il Piccolo Trieste tree surveys already used elsewhere in this file. Access confirmed by OSM (Overpass): the coordinate sits directly beside Via Nazionale/SR58 with a continuous public sidewalk, no private-access tag or enclosing courtyard at this point."
     },
     {
       "sheet_id": "37/L424/TS/06",
@@ -348,7 +351,7 @@
       "height_m": 23.0,
       "latitude": 45.637047,
       "longitude": 13.80185,
-      "reason": "Villa Sartorio, Via dei Modiano: private villa grounds, access not established."
+      "reason": "SUPERSEDED 2026-09-17, no longer blocked: the earlier 'private villa grounds, access not established' verdict was wrong. 'Villa Sartorio' is the Comune di Trieste's own Civico Museo Sartorio, a municipal museum with free admission and published hours (Mon-Fri 9:00-18:00, Sat 9:00-13:00); its garden is public on those hours, not a private residence. This entry and lead 66/L424 (Giardino Sartorio) are almost certainly the same physical tree recorded twice, 43m apart in the register. Delivered as tri_013 in data/research/trieste-verified.json, using this entry's coordinate. Kept in this list only as a record of the earlier wrong verdict; do not re-block it."
     },
     {
       "sheet_id": "15/L424/TS/06",
