@@ -59,7 +59,20 @@ export const SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb";
 //      "unacceptable audience in id_token".
 // Then flip this to true. The bundle id staying in that list is what keeps the
 // app's native sign-in working, so this adds a route rather than moving one.
-export const APPLE_SIGNIN = false;
+//
+// ON since 2026-09-17, and what turned it on was the whole chain answering
+// rather than a step being ticked off. Hidde opened
+// /auth/v1/authorize?provider=apple and got Apple's own login page carrying
+// client_id=app.ancienttrees.web, the Supabase callback as redirect_uri, and
+// our tree icon: Apple accepts the Services ID, accepts the signed secret, and
+// Supabase is the one asking. That is the 302 this flag was waiting for.
+//
+// The secret EXPIRES, which is the part to remember rather than the setup:
+// Apple caps the JWT at six months and says nothing when it lapses, so the
+// button would simply start failing. data/apple-secret.json records the date
+// (2027-03-18) and health.py warns a fortnight ahead; regenerate with
+// scripts/apple_secret.py on a machine holding the .p8.
+export const APPLE_SIGNIN = true;
 
 // Cloudflare Web Analytics: cookieless and aggregate only, chosen 2026-07-21
 // specifically because it needs no consent banner. build_site.py:849.

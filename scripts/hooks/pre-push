@@ -96,6 +96,28 @@ if echo "$CHANGED" | grep -qE '^LOG\.md$'; then
     fi
 fi
 
+# THE TRANSLATION OVERLAYS (2026-09-17). i18ncheck.py has gated the deploy
+# since Contract J shipped, and it is the FIRST step in deploy.yml, so a
+# problem there kills the build before it starts and nothing reaches the site.
+# It cost a deploy the day this was added: the check was run before a
+# 622-commit merge and not after it, data/i18n/it was one of the conflicted
+# paths, and the push was green locally and red in CI. It costs under a second,
+# so it runs whenever an overlay or the check itself moved.
+if echo "$CHANGED" | grep -qE '^(data/i18n/|data/cities/|scripts/i18ncheck\.py)'; then
+    # No pipe here: a pipeline's status is the LAST command's, so piping this
+    # through tail would make the check pass whatever it found.
+    if ! out=$(python3 scripts/i18ncheck.py 2>&1); then
+        out=$(echo "$out" | grep -vE '\s+clean$')
+        echo ""
+        echo "pre-push: i18ncheck says no"
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. deploy.yml runs this first, so pushing it"
+        echo "would fail the build before the site is even rendered."
+        exit 1
+    fi
+fi
+
 # BOTH SURFACES, checked rather than remembered (2026-09-11). Hidde found
 # "Exact location. The pin marks the trunk." still on the website a week after
 # he had it taken out of the app: "zorg dat dit volgende keer wel gelijk app en
