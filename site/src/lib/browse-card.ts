@@ -1,7 +1,7 @@
 // The one card used by every browse index (cities, species, collections,
 // countries, parks). Ported from browse_card()/collection_face(),
 // build_site.py:3865-3892.
-import { usablePhoto, thumbUrl, NO_PHOTO_SVG, type TreeLike } from "./images";
+import { usablePhoto, thumbUrl, NO_PHOTO_CARD, type TreeLike } from "./images";
 import { BASE_URL } from "./schema";
 
 function esc(s: string): string {
@@ -11,7 +11,7 @@ function esc(s: string): string {
 export function browseCard(href: string, name: string, sub: string, face: string | null): string {
   const ph = face
     ? `<span class="exc-ph"><img src="${esc(face)}" alt="" loading="lazy"></span>`
-    : NO_PHOTO_SVG.replace('class="ctry-ph ctry-noph"', 'class="exc-ph ctry-noph"');
+    : NO_PHOTO_CARD;
   return `<a class="exc-card" href="${href}">${ph}<span class="exc-body"><b>${esc(name)}</b><span>${sub}</span></span></a>`;
 }
 
