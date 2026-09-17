@@ -10,10 +10,12 @@
 // 2026-09-17, 19 of the 27 internal links on /es/cadiz dropped the reader
 // back into English, the breadcrumb among them.
 //
-// What this lists, and why it is not every city: only the cities that have
-// an overlay in THIS language. An index of 607 entries of which 589 bounce
-// to English recreates the dead end it exists to fix. The rest is offered
-// honestly, in one line, with a link to the English index.
+// What this lists: EVERY city, since 2026-09-17. It listed only the
+// translated ones for a few hours, and Hidde asked the right question about
+// that ("beetje jammer als je maar een klein gedeelte te zien krijgt"): it
+// showed 17 of 607 and misrepresented what the site holds. Now that every
+// city renders under /[lang]/ as a fallback, every link here stays in the
+// reader's language, so the reason for the subset is gone.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, renderableTrees } from "../lib/trees";
@@ -30,14 +32,12 @@ function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-const mine = new Set(translatedCities(lang));
 const all = byCityListOrderEntry(
   (await getCollection("cities"))
     .filter(cityIsRenderable)
     .filter((c) => (c.data.kind ?? "city") === "city"));
 
 const published = all
-  .filter((c) => mine.has(c.id))
   .map((c) => {
     const tr = cityTranslation(lang, c.id);
     return {

@@ -16,14 +16,15 @@ interface Props {
   city: CityEntry;
   tr: CityTranslation;
 }
-const { lang, city, tr } = Astro.props as Props;
+const { lang, city, tr, fallback = false } = Astro.props as any;
 const U = ui(lang);
 const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
 
 const cslug = city.id;
 const trees = renderableTrees(city);
 const tslugs = treeSlugsForCity(city);
-const canonical = `${BASE_URL}/${lang}/${cslug}/${qslug}`;
+const selfUrl = `${BASE_URL}/${lang}/${cslug}/${qslug}`;
+const canonical = fallback ? `${BASE_URL}/${cslug}/oldest-tree` : selfUrl;
 
 // Same derivation as the English question page: an explicit oldest_tree_id
 // wins; otherwise the highest documented age_max.
@@ -50,7 +51,7 @@ const graph = [
   },
   breadcrumbSchema(crumbItems, canonical),
 ];
-const headExtra = mapHead() + "\n" + hreflangForCity(cslug, "question") + "\n" + ldScript(graph);
+const headExtra = mapHead() + (fallback ? "" : "\n" + hreflangForCity(cslug, "question")) + "\n" + ldScript(graph);
 const scripts = singlePinScript(oldest.location.latitude!, oldest.location.longitude!);
 ---
 <Base title={tr.question_title} description={tr.question_meta} canonical={canonical} headExtra={headExtra} lang={lang}>

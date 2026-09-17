@@ -4,11 +4,11 @@
 import { getCollection } from "astro:content";
 import TranslatedCityPage from "../../components/TranslatedCityPage.astro";
 import { cityIsRenderable } from "../../lib/trees";
-import { translatedCityPaths } from "../../lib/i18n";
+import { allCityPathsFor } from "../../lib/i18n";
 
 export async function getStaticPaths() {
-  return translatedCityPaths("pt", (await getCollection("cities")).filter(cityIsRenderable) as any);
+  return allCityPathsFor("pt", (await getCollection("cities")).filter(cityIsRenderable) as any);
 }
-const { city, tr } = Astro.props as any;
+const { city, tr, fallback } = Astro.props as any;
 ---
-<TranslatedCityPage lang="pt" city={city} tr={tr} />
+<TranslatedCityPage lang="pt" city={city} tr={tr} fallback={fallback} />

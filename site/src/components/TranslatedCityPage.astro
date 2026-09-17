@@ -28,14 +28,19 @@ import { SHEET_JS } from "../lib/sheet-js";
 import { SHARE_JS } from "../lib/share-js";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation } from "../lib/i18n";
 
-interface Props { lang: string; city: CityEntry; tr: CityTranslation }
-const { lang, city, tr } = Astro.props as Props;
+interface Props { lang: string; city: CityEntry; tr: CityTranslation; fallback?: boolean }
+const { lang, city, tr, fallback = false } = Astro.props as Props;
 
 const U = ui(lang);
 const cslug = city.id;
 const trees = renderableTrees(city);
 const tslugs = treeSlugsForCity(city);
-const canonical = `${BASE_URL}/${lang}/${cslug}`;
+const selfUrl = `${BASE_URL}/${lang}/${cslug}`;
+// A fallback page is the English text on a second URL, so it points its
+// canonical at the English page. That is Google's own answer for the same
+// language on two URLs, and it is why these pages carry no hreflang and stay
+// out of the sitemap: they exist to be navigated to, never to compete.
+const canonical = fallback ? `${BASE_URL}/${cslug}` : selfUrl;
 
 // The overlay may name the country in its own language; the English city file
 // is the fallback, which is honest rather than wrong and shows up as one
@@ -75,9 +80,9 @@ const graph = [
   ...SITE_SCHEMA,
   { "@type": "ItemList", name: tr.title, itemListElement: listElements },
   { "@type": "FAQPage", mainEntity: tr.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
-  breadcrumbSchema(crumbItems, canonical),
+  breadcrumbSchema(crumbItems, selfUrl),
 ];
-const headExtra = mapHead() + "\n" + hreflangForCity(cslug, "city") + "\n" + ldScript(graph);
+const headExtra = mapHead() + (fallback ? "" : "\n" + hreflangForCity(cslug, "city")) + "\n" + ldScript(graph);
 
 const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
@@ -94,7 +99,7 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
         <p class="eyebrow">{countryLabel}</p>
         <div class="page-head">
           <h1>{U.heading("")}<em>{tr.city}</em></h1>
-          <ShareButton url={canonical} title={U.heading(tr.city)} label={U.share} copied={U.shareCopied} />
+          <ShareButton url={selfUrl} title={U.heading(tr.city)} label={U.share} copied={U.shareCopied} />
         </div>
         <p class="sheet-count">{U.treesOnMap(trees.length)}</p>
       </div>
