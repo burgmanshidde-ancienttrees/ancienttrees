@@ -1,0 +1,63 @@
+{
+ "_note": "es overlay for buenos-aires, written 2026-09-17 from data/cities/buenos-aires.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Buenos Aires",
+ "title": "Árboles singulares de Buenos Aires: 4, de Recoleta a Lavalle",
+ "meta_description": "Cuatro árboles repartidos por Buenos Aires, del gomero que la ciudad llama el más viejo, en Recoleta, a un raro forastero tropical en Plaza Lavalle.",
+ "intro": "Los árboles más viejos de Buenos Aires no comparten parque. Un gomero junto a la puerta del Cementerio de la Recoleta al que la ciudad llama el más antiguo, dos magnolias que flanquean una escuela levantada sobre el primer tribunal médico del Virreinato, otra magnolia que plantó un presidente con sus propias manos en 1875 y un forastero tropical sin edad conocida, uno de los dos únicos de su especie en la ciudad. Cuatro paradas en cuatro barrios distintos, cada una para cruzar la ciudad por sí sola, ninguna lo bastante cerca como para unirlas en un solo paseo.",
+ "question_title": "¿Cuál es el árbol más antiguo de Buenos Aires? (250 años)",
+ "question_meta": "El Gomero de la Recoleta, junto al cementerio, es el árbol más antiguo de Buenos Aires: unos 250 a 300 años, con origen y especie discutidos.",
+ "question_answer": "La Arbopedia de la propia ciudad señala al Gomero de la Recoleta como el árbol más antiguo de Buenos Aires, un ficus ancho que crece a pocos metros de la puerta del Cementerio de la Recoleta y al que calcula unos 250 a 300 años. Nadie se pone de acuerdo sobre cómo llegó ahí: una versión habla de frailes recoletos que lo plantaron hacia 1718, otra se lo atribuye a la quinta de especies exóticas que el agrónomo Martín José de Altolaguirre tenía hacia 1781, y cualquiera de las dos fechas lo pone en el suelo antes de que Argentina existiera como país. Hasta la especie se discute. La ciudad lo llama ficus de Moreton Bay, Wikidata ficha el mismo árbol como árbol del caucho, y esta página ha señalado la discrepancia en lugar de zanjarla. Lo que no se discute es la rama: una sola se aleja treinta metros del tronco, apuntalada desde 2014 por una escultura de Atlas hecha con piezas de auto que parece sostener el peso. Si puede datar el árbol con más precisión, o decidir de qué especie es en realidad, díganoslo.",
+ "question_context": "Cada árbol de esta página viene de búsqueda web corriente y no de un registro único, porque Buenos Aires publica sus árboles notables de a una página por vez en la Arbopedia del propio gobierno de la ciudad, en vez de como un conjunto de datos descargable. Los cuatro de aquí se encontraron y se comprobaron uno a uno, a través de las páginas de la ciudad, páginas del gobierno nacional y prensa local, y no salieron de una lista con autoridad. Dos desacuerdos recorren el grupo. La especie del Gomero y su historia de plantación se dividen entre fuentes, y esta página recoge ambas lecturas en vez de elegir ganador. Las magnolias del Protomedicato traen un desacuerdo de otro tipo: el texto del registro municipal dice que se plantaron a finales del siglo XIX, mientras que esa misma página y todas las demás fuentes hablan de más de doscientos años, una distancia que parece más un error entre dos siglos que una discusión real. Solo un árbol de aquí, la magnolia que plantó el presidente Avellaneda en 1875, lleva una fecha de plantación documentada y no una estimación. Las ubicaciones son de calle o de plaza en todos los casos, y una de las fichas, la pareja del Protomedicato, está en el predio de una escuela en funcionamiento y se marca como visible desde la calle y no como accesible.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Buenos Aires?",
+   "a": "El Gomero de la Recoleta, un ficus ancho junto a la puerta del Cementerio de la Recoleta, al que el registro de la propia ciudad calcula unos 250 a 300 años. Su historia de plantación y hasta su especie se discuten, así que esta página da el rango y no una cifra segura."
+  },
+  {
+   "q": "¿Se pueden ver los cuatro en un mismo paseo?",
+   "a": "No. Estos cuatro están en cuatro barrios distintos de Buenos Aires, Recoleta, San Telmo, Palermo y San Nicolás, a varios kilómetros unos de otros. Cada uno es una parada en sí misma y no parte de un recorrido."
+  },
+  {
+   "q": "¿Son gratis?",
+   "a": "Sí, los cuatro. Tres están en parques y plazas públicas abiertas; las cuartas, las magnolias del Protomedicato, se miran desde la calle o desde la iglesia de enfrente y no se entra a verlas, porque crecen en el jardín de una escuela en funcionamiento."
+  },
+  {
+   "q": "¿Por qué estos árboles no tienen edades medidas?",
+   "a": "Buenos Aires no tiene un registro de árboles descargable, así que cada ficha de aquí sale de las páginas de la Arbopedia municipal, de páginas del gobierno nacional y de prensa local, que describen más que miden. Solo la magnolia que plantó el presidente Avellaneda en 1875 lleva fecha de plantación documentada; el resto lleva rangos o, en el caso de la esterculia, ninguna edad."
+  }
+ ],
+ "trees": {
+  "bai_001": {
+   "name": "El Gomero de la Recoleta",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "unos 250 a 300 años",
+   "access": "Gratuito, en una plazoleta pública a pocos metros de la puerta del Cementerio de la Recoleta, abierta a toda hora",
+   "transport": "A unos 10-15 minutos a pie del subte línea D, estación Callao; varias líneas de colectivo (17, 60, 92, 130, 152) paran cerca",
+   "story": "Una rama de este ficus se aleja treinta metros del tronco y pasa del metro de grosor donde arranca. Desde 2014 hay debajo una escultura de Atlas, soldada con piezas de auto por el artista uruguayo Joaquín Arbiza Brianza, que parece sostener ese peso. La ciudad lo llama el árbol más antiguo de Buenos Aires, y nadie se pone de acuerdo sobre cómo llegó aquí. Una versión dice que lo plantaron los frailes recoletos hacia 1718. Otra se lo atribuye al agrónomo Martín José de Altolaguirre, que hacia 1781 tenía en este terreno una quinta de especies exóticas. Cualquiera de las dos lo pone aquí antes de que Argentina fuera un país, a pocos metros de la puerta del cementerio de la Recoleta, viendo llegar a dos siglos de ciudad a enterrar a sus muertos.\n\nLa especie también se discute. Los porteños lo llaman gomero, palabra suelta que en Argentina se aplica a varios ficus grandes. El registro municipal describe Ficus macrophylla, el ficus de Moreton Bay, y lo que cuenta de hojas y frutos encaja; Wikidata ficha el mismo árbol como Ficus elastica, el árbol del caucho. Nos quedamos con el registro y señalamos el desacuerdo en lugar de zanjarlo.\n\nLas medidas también piden cuidado. Los siete metros que se citan de tronco son la masa fusionada y con contrafuertes que un ficus estrangulador levanta con los años, y no un fuste redondo, así que el perímetro queda muy por encima de cualquier cintura normal."
+  },
+  "bai_002": {
+   "name": "Las Magnolias del Protomedicato",
+   "species": "Magnolia (Magnolia grandiflora)",
+   "age_estimate": "más de 200 años",
+   "access": "Solo se ven desde fuera. Visibles desde la calle Humberto Primo y desde la entrada de la Parroquia San Pedro González Telmo, enfrente (Humberto Primo 340); las dos magnolias crecen en el jardín de entrada de una escuela en funcionamiento, la Escuela Dr. Guillermo Rawson, cuyo predio no está abierto al público",
+   "transport": "A media cuadra de la Plaza Dorrego, San Telmo; a unos 10 minutos a pie del subte línea C, estaciones Independencia o San Juan",
+   "story": "Estas dos magnolias son lo más viejo que sigue vivo en la cuadra donde Buenos Aires empezó a enseñar medicina. Flanquean la entrada de una escuela primaria levantada sobre el sitio del Protomedicato, el tribunal médico del Virreinato que fundó Miguel O'Gorman y que albergó también el primer Hospital de Hombres de la ciudad y su primera escuela de medicina. Argentina declaró a las dos Árboles Históricos por decreto nacional en agosto de 1969, y la ciudad las cuida desde entonces.\n\nQué edad tienen es una discusión abierta, y el registro municipal se contradice dentro de una misma página. Su texto dice que las plantó la orden bethlemita a finales del siglo XIX, lo que les daría unos 140 años. Esa misma página, y todas las demás fuentes que las mencionan, hablan de más de 200 años y las atan al trabajo bethlemita del siglo XVIII en este suelo. Lo más probable es un salto entre XVIII y XIX, así que recogemos la versión más antigua con la duda pegada en vez de elegir ganador.\n\nA estas dos se las mira, no se llega hasta ellas. La escuela funciona a diario y su predio está cerrado a los visitantes, así que el sitio donde pararse es la propia calle Humberto Primo, o la puerta de la iglesia de San Pedro González Telmo enfrente, que es de donde salen las fotos. Queda a media cuadra de la Plaza Dorrego, con lo que el desvío no cuesta nada."
+  },
+  "bai_003": {
+   "name": "La Magnolia de Avellaneda",
+   "species": "Magnolia (Magnolia grandiflora)",
+   "age_estimate": "unos 150 años",
+   "access": "Gratuito, en el parque público abierto del Parque Tres de Febrero (Bosques de Palermo), abierto a diario",
+   "transport": "A unos 10-15 minutos a pie de Plaza Italia (subte línea D) por el parque, o varias líneas de colectivo por Av. Sarmiento y Av. Figueroa Alcorta",
+   "story": "Casi todos los árboles viejos llevan una edad estimada. Este lleva una fecha. El 11 de noviembre de 1875 el presidente Nicolás Avellaneda puso una magnolia en la tierra con sus propias manos para inaugurar el Parque Tres de Febrero, y el árbol que plantó sigue donde lo dejó. La cuenta es por eso poco habitual de honesta: 151 años este noviembre, sin ritmos de crecimiento ni suposiciones de por medio.\n\nUna placa colocada en 1916 cita la frase de su discurso inaugural de la que salió la elección del árbol, la magnolia americana del bosque primitivo, con su flor blanca silvestre. En junio de 1946 un decreto nacional lo declaró Árbol Histórico, y lo puso en la lista corta de árboles que el Estado argentino protege por lo que pasó a su alrededor y no por sus medidas.\n\nDesde entonces el parque se cerró sobre él y se convirtió en los Bosques de Palermo, el pulmón verde que da nombre a todo el barrio. El Jardín Japonés se levantó al lado, así que el árbol que abrió el parque queda hoy contra el muro de un jardín sobre la avenida Berro, y lo pasan corredores que no tienen idea de que es la razón de que todo esto exista.\n\nVenga en la primavera austral, cuando abren las flores blancas y pesadas. Son más o menos las mismas semanas de cada año que el aniversario del día en que lo plantaron."
+  },
+  "bai_004": {
+   "name": "La Esterculia de Plaza Lavalle",
+   "species": "Esterculia escarlata (Sterculia coccinea)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, en la Plaza Lavalle, pública y abierta, frente al Teatro Colón y al Palacio de Justicia, abierta a toda hora",
+   "transport": "A pocos minutos a pie del subte línea D, estación Tribunales, o del subte línea B, estación Uruguay",
+   "story": "En toda Buenos Aires se conocen dos árboles de esta especie, y este es el que tiene dirección. Sterculia coccinea es una especie tropical del sudeste asiático, y el registro de la ciudad la incluye entre los árboles notables de Buenos Aires solo por lo rara que es, y no por tamaño ni por edad: unos ocho metros de alto, muy ramificada, con una copa que se abre más ancha de lo que el árbol mide de alto. Sus flores salen en primavera de un verde amarillento teñido de rojo, y más adelante en el año las cápsulas se abren y enseñan un forro rojo intenso.\n\nLa dirección importa tanto como el árbol. La Plaza Lavalle queda entre el Teatro Colón y el Palacio de Justicia, así que este forastero tropical y callado ha pasado la vida entre la ópera del país y su corte suprema, con el público de ambas cosas pasando por debajo.\n\nNadie lo ha datado. Ningún registro, placa o artículo que hayamos encontrado le da una edad ni una medida de tronco, y un campo vacío es mejor que un número inventado. Si sabe cuándo se plantó, díganoslo y lo ponemos en la página.\n\nLa ubicación marca la plaza y no el tronco, así que dese un minuto para distinguirlo de los árboles de alrededor: busque la copa ancha, baja y muy ramificada cerca de la esquina de Córdoba y Talcahuano."
+  }
+ }
+}

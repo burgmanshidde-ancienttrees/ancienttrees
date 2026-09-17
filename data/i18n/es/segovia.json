@@ -1,0 +1,77 @@
+{
+ "_note": "es overlay for segovia, written 2026-09-17 from data/cities/segovia.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Segovia",
+ "title": "Árboles singulares de Segovia: 6, de La Granja a la Merced",
+ "meta_description": "Los mayores árboles de Segovia: cinco coníferas de más de 32 metros en los jardines de La Granja, con una secuoya gigante alcanzada por un rayo en 1991.",
+ "intro": "Los árboles más altos de España no están en un bosque. Están en un jardín francés a 11 kilómetros de Segovia, plantados para un rey que quería Versalles y obtuvo algo mejor adaptado a la montaña que tiene detrás. Los jardines de La Granja se trazaron en la década de 1720 y se llenaron en el siglo XIX de coníferas de Norteamérica y del Atlas; cinco superan hoy los 32 metros, con una secuoya gigante llamada La Reina a la cabeza. En la propia Segovia, un cedro del Atlas de una plaza bajo la catedral figura en el mismo registro.",
+ "question_title": "¿Cuál es el árbol más singular de Segovia? (La Reina, 46 m)",
+ "question_meta": "La Reina, una secuoya gigante de La Granja, es el árbol más singular de Segovia. Por qué nadie publica su edad, y otros 5 que merecen el viaje.",
+ "question_answer": "El árbol más singular de Segovia es La Reina, una secuoya gigante de los jardines del palacio real de La Granja de San Ildefonso. Patrimonio Nacional le da ahora 46 metros, lo que la sitúa entre los árboles más altos de España. Nadie publica una edad para ella, aunque la plantación de coníferas del jardín es del siglo XIX.",
+ "question_context": "Aquí no hay respuesta a la pregunta de la edad, y conviene entender por qué. El registro de árboles notables de Castilla y León, de donde sale cada árbol de esta página, anota especie, lugar, altura y una cifra de tronco, y no tiene columna de edad alguna; las fichas se hicieron en 2006 al amparo de una orden autonómica y no se han revisado. Así que de La Reina puede decirse lo que está medido. El registro le dio 42,5 metros en 2006 y Patrimonio Nacional dice ahora 46, que es el crecimiento esperable en una secuoya sana a lo largo de veinte años. Un rayo la alcanzó en 1991 y ahora lleva pararrayos. Está acompañada por El Rey, delante de la colegiata del palacio, y ambos pasan de 40 metros. La historia del propio jardín cuenta que sus coníferas exóticas se plantaron durante el siglo XIX, lo que daría a estos árboles entre 150 y 180 años y nada de antiguos. Están aquí por su tamaño. Cómo llegar: el autobús desde Segovia tarda unos 20 minutos.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más grande de Segovia?",
+   "a": "La Reina, una secuoya gigante de los jardines de La Granja de San Ildefonso. Patrimonio Nacional le da 46 metros, frente a los 42,5 que anotó el registro autonómico en 2006."
+  },
+  {
+   "q": "¿Qué edad tienen los árboles de La Granja?",
+   "a": "Nadie publica una cifra. El registro de árboles notables de Castilla y León no tiene columna de edad, y las fichas vienen de una orden de 2006 que no se ha revisado. La colección de coníferas del jardín se plantó a lo largo del siglo XIX, lo que situaría a estos árboles en 150 a 180 años."
+  },
+  {
+   "q": "¿Por qué hay secuoyas gigantes en un jardín real español?",
+   "a": "Porque estaban de moda. Sequoiadendron giganteum llegó a Europa en 1853 y toda finca grande de Occidente quiso la suya, así que los ejemplares más altos de Europa son casi todos árboles plantados de aquella generación que crecen en jardines, y no nada silvestre."
+  },
+  {
+   "q": "¿Se pueden visitar gratis los árboles singulares de Segovia?",
+   "a": "El cedro de la Plaza de la Merced está en una plaza pública en pleno Segovia. Los otros cinco están en los jardines de La Granja, abiertos al público; el palacio tiene entrada aparte y las fuentes solo funcionan en días señalados."
+  },
+  {
+   "q": "¿Se puede ir andando de uno a otro?",
+   "a": "Los cinco de La Granja están en los mismos jardines y forman un paseo de kilómetro y medio. El cedro de Segovia es una parada aparte, a 11 kilómetros, en la ciudad, unos 20 minutos en autobús."
+  }
+ ],
+ "trees": {
+  "seg_001": {
+   "name": "El cedro de la Plaza de la Merced",
+   "species": "Cedro del Atlas (Cedrus atlantica)",
+   "access": "Gratuito, en una plaza pública del casco antiguo",
+   "transport": "En el casco antiguo, a unos minutos a pie por debajo de la catedral",
+   "story": "El único árbol notable registrado dentro de las murallas de Segovia es un cedro norteafricano en una plaza pequeña. La Plaza de la Merced queda justo debajo de la catedral, en el casco antiguo, y el cedro del Atlas que crece en ella llega a 25,5 metros, altura suficiente para recortarse contra la piedra desde una calle de distancia. Cedrus atlantica viene de las montañas de Marruecos y Argelia y se plantó por toda Europa desde mediados del siglo XIX, así que casi con seguridad es un árbol de jardín de aquella generación y no algo más viejo, pero el registro de Castilla y León no tiene columna de edad y nadie ha publicado ninguna, de modo que esta página no la va a suponer. El registro sí da una cifra de tronco, y esta página tampoco la imprime, por una razón que conviene decir: la columna se titula diámetro, y leída como diámetro haría de la mayor secuoya de La Granja la más gruesa de Europa, cosa que nada sostiene. Un número que falla en un árbol no es fiable en otro. El cedro entró en el registro autonómico por una orden de 2006 y desde entonces no se ha añadido nada. Si sabe cuándo se plantó, díganoslo."
+  },
+  "seg_002": {
+   "name": "La Reina",
+   "species": "Secuoya gigante (Sequoiadendron giganteum)",
+   "access": "En los jardines del palacio real de La Granja, abiertos al público; el palacio tiene entrada aparte y las fuentes solo funcionan en días señalados",
+   "transport": "Autobús desde Segovia hasta La Granja, unos 20 minutos, y de ahí a los jardines",
+   "story": "Un rayo la alcanzó en 1991 y aquí sigue, y sigue creciendo. La Reina es una secuoya gigante de los jardines del palacio real de La Granja, y los números enseñan ese crecimiento sin adornos: el registro autonómico la midió en 42,5 metros en 2006 y Patrimonio Nacional le da ahora 46, que es lo que hace una secuoya sana en veinte años. Ahora lleva pararrayos. La acompaña El Rey, delante de la colegiata del palacio, y ambos pasan de 40 metros, lo que los sitúa entre los árboles más altos de España. Ninguno de los dos tiene nada de autóctono. Sequoiadendron giganteum llegó a Europa en 1853 como semilla salida de California, y en menos de diez años toda finca que podía permitírselo había encargado la suya, de manera que casi todos los árboles más altos de Europa son ejemplares plantados de esa misma hornada que crecen en jardines. El jardín donde están se empezó en la década de 1720 para Felipe V, que quería un Versalles en las estribaciones del Guadarrama y obtuvo un trazado formal francés con una montaña detrás, y sus coníferas se plantaron a lo largo del siglo XIX. Nadie publica una edad para este árbol."
+  },
+  "seg_003": {
+   "name": "La secuoya del parterre de Andrómeda",
+   "species": "Secuoya gigante (Sequoiadendron giganteum)",
+   "access": "En los jardines del palacio real de La Granja, abiertos al público; el palacio tiene entrada aparte y las fuentes solo funcionan en días señalados",
+   "transport": "Autobús desde Segovia hasta La Granja, unos 20 minutos, y de ahí a los jardines",
+   "story": "La segunda secuoya más alta de estos jardines crece sobre una fuente que cuenta cómo Perseo mata a un monstruo marino. El parterre de Andrómeda es una de las piezas mayores de La Granja, un grupo de plomo y mármol al pie de una pendiente, y los tracistas del jardín llenaron los compartimentos de alrededor con plantaciones que hace tiempo pasaron de lo que un parterre francés del siglo XVIII estaba pensado para sostener. Esta secuoya mide 37,5 metros según el registro autonómico, y un cedro del Líbano del mismo parterre llega a 32,5. El resultado es un jardín formal con una secuoya dentro, que no es lo que dibujaron los jardineros de Felipe V y es lo más interesante que se puede tener delante. Las fuentes de La Granja funcionan solo por gravedad, alimentadas desde un depósito ladera arriba, sin una sola bomba en todo el sistema y sin bombas desde 1720; funcionan en días señalados y conviene comprobarlo antes de viajar. Como con todos los árboles de esta página, no se publica edad alguna: el registro de Castilla y León no tiene columna de edad, y las coníferas del jardín son una colección decimonónica y no parte del trazado original."
+  },
+  "seg_004": {
+   "name": "El abeto de Douglas de la Fuente de los Dragones",
+   "species": "Abeto de Douglas (Pseudotsuga menziesii)",
+   "access": "En los jardines del palacio real de La Granja, abiertos al público; el palacio tiene entrada aparte y las fuentes solo funcionan en días señalados",
+   "transport": "Autobús desde Segovia hasta La Granja, unos 20 minutos, y de ahí a los jardines",
+   "story": "Un árbol del noroeste del Pacífico, de 36,5 metros, sobre una fuente de dragones. El abeto de Douglas llegó a Gran Bretaña en 1827 en un envío de semillas que mandó a casa David Douglas, que había pasado años recorriendo a pie la cuenca del río Columbia como recolector, y se extendió por las fincas europeas como la conífera de crecimiento más rápido que nadie había probado. En su área de origen es el segundo árbol más alto del planeta después de la secuoya roja. Aquí es lo más alto de esta página que no es una secuoya, y crece junto a la Fuente de los Dragones, en un jardín levantado dos siglos antes de que nadie en España hubiera oído hablar de él. El registro lo anota como Pseudotsuga del Dragon y no le da edad. Ese hueco es la forma misma de esta página: Castilla y León catalogó estos árboles en 2006 por tamaño y especie y nunca preguntó qué edad tenían, y nadie lo ha preguntado después. Como la colección de coníferas del jardín se plantó a lo largo del siglo XIX, un abeto de Douglas de aquí tendría entre 150 y 180 años, poco para un árbol y más o menos lo máximo que alcanza la especie fuera de América."
+  },
+  "seg_005": {
+   "name": "El pinsapo del parterre de Potosí",
+   "species": "Pinsapo (Abies pinsapo)",
+   "access": "En los jardines del palacio real de La Granja, abiertos al público; el palacio tiene entrada aparte y las fuentes solo funcionan en días señalados",
+   "transport": "Autobús desde Segovia hasta La Granja, unos 20 minutos, y de ahí a los jardines",
+   "story": "Es el único árbol español de la colección, y viene de 700 kilómetros al sur. Abies pinsapo crece silvestre en tres manchas pequeñas de las sierras que quedan detrás de Ronda y Grazalema y en ningún otro punto de Europa, un abeto que se quedó atrás cuando el hielo se retiró y el clima de alrededor se secó, y los botánicos no lo describieron hasta la década de 1830. En pocas décadas estaba en jardines de todo el continente, este incluido, donde mide hoy 32 metros en el parterre de Potosí. De cerca es un árbol de aspecto raro. Las acículas salen del ramillo en todas las direcciones a la vez en lugar de peinarse hacia los lados como en casi todos los abetos, así que las ramas parecen escobillas, y las piñas se mantienen erguidas en las ramas altas y se deshacen en el árbol en vez de caer enteras. Que haya uno aquí es justo lo que cuenta: la plantación de La Granja es un catálogo decimonónico de todo lo que un jardinero podía conseguir, y el pinsapo era tan exótico para un jardinero segoviano de 1860 como lo era una secuoya. No se publica edad."
+  },
+  "seg_006": {
+   "name": "El cedro del Líbano de Andrómeda",
+   "species": "Cedro del Líbano (Cedrus libani)",
+   "access": "En los jardines del palacio real de La Granja, abiertos al público; el palacio tiene entrada aparte y las fuentes solo funcionan en días señalados",
+   "transport": "Autobús desde Segovia hasta La Granja, unos 20 minutos, y de ahí a los jardines",
+   "story": "El cedro del Líbano es la moda más antigua de este jardín. Llegó a Europa occidental hacia 1640, dos siglos antes que las secuoyas y los abetos de Douglas que hoy crecen a su lado, lo que lo convierte en la única conífera de aquí que los jardineros de Felipe V podrían en principio haber conocido cuando empezaron el trazado en la década de 1720. Si este ejemplar concreto tiene esa edad se desconoce, y probablemente no: el registro no da edad, y la plantación documentada de coníferas del jardín pertenece al siglo XIX, igual que todo lo demás en esta página. Mide 32,5 metros, en el parterre de Andrómeda, con la secuoya. Un cedro del Líbano al que se deja en paz acaba formando esa copa plana y escalonada que todo el mundo reconoce de los cuadros, con las ramas saliendo en capas horizontales, y tarda casi un siglo en empezar a hacerlo. Este ya lo ha hecho. De la especie quedan rodales sueltos en las montañas del Líbano y de Turquía tras tres mil años de talas para barcos y templos, razón suficiente para mirar con atención uno sano en un jardín español."
+  }
+ }
+}

@@ -8065,6 +8065,24 @@
     "note": "First batched pass: 6 cities in one context, calibration inlined so no i18n file was opened. Metered 4,823 tokens per tree against 13,474 for the same work as single-city passes. The pass's own estimate was 640k, 2.7x over; agent self-reports are unreliable in both directions and the harness figure is the one to log.",
     "wasted": 0,
     "brief_wrong": 0
+   },
+   {
+    "target": "es-batch (segovia, buenos-aires, girona)",
+    "kind": "translate",
+    "tokens": 179970,
+    "trees": 17,
+    "note": "Batched pass, calibration inline. Model predicted 188k, metered 180k.",
+    "wasted": 0,
+    "brief_wrong": 0
+   },
+   {
+    "target": "ja-batch (yakushima, kanazawa, sapporo)",
+    "kind": "translate",
+    "tokens": 169318,
+    "trees": 14,
+    "note": "Batched pass, calibration inline. Model predicted 181k, metered 169k.",
+    "wasted": 0,
+    "brief_wrong": 0
    }
   ]
  }
