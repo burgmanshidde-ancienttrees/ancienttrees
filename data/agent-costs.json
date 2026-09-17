@@ -8029,6 +8029,24 @@
         "note": "session work, not a dispatched pass; two GPS-only reader pins at Oka Castle checked against the Japan register and web search, neither verifies, filed as leads",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Milan",
+        "kind": "verify",
+        "tokens": 184692,
+        "trees": 1,
+        "note": "Near-centre MASAF register fully exhausted; delivered mil_030 (Villa Ghirlanda bagolaro, Cinisello Balsamo, 8km out), hitting the 30-tree target. Story written by session, merged, translated (it overlay), built and shipped same window.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Vilnius",
+        "kind": "verify",
+        "tokens": 182147,
+        "trees": 0,
+        "note": "Register fully mined by prior passes (40/41 candidates already judged); resolved 2 pending access judgement calls to blocked and closed 2 stale/duplicate leads, zero new candidates to ship.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

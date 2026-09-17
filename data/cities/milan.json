@@ -2,10 +2,10 @@
   "city": "Milan",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-nine trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's twenty-nine remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Thirty trees, and almost every one owes its survival to a specific human decision.",
+  "meta_description": "Milan's thirty remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775, plus twenty-eight more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775, plus twenty-nine more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -1052,6 +1052,40 @@
       "curation_status": "flagged",
       "story": "The smallest tree on this square is the one to be careful about. The yew on Piazza Giovanni XXIII measures 140 centimetres round and stands 10 metres tall, well under half the girth of the hackberries a few metres away, and it is on the national monumental register regardless.\n\nYews make a nonsense of judging a tree by its waistline. They grow slowly, and a modest trunk on a yew is not the evidence of youth it would be on a poplar. That is reputation rather than measurement, though, and nobody has done the arithmetic here: no growth rate has been applied to this trunk, no age has been derived from it, and guessing one would be worse than leaving the field empty.\n\nWhat it has instead is company. The register puts this yew and two hackberries on one small piazza in a commuter town east of Milan, and the local paper's survey of monumental trees in the Martesana names all three at the same address, which is how the yew stops being an afterthought beside the bigger pair. Three registered trees within a few metres of each other make one stop rather than three, about twenty minutes on foot from Pioltello-Limito and fourteen minutes by train out of Milano Centrale.\n\nIts age is recorded nowhere. If anyone has dated it, tell us.",
       "how_to_recognise": "You can recognise it by the dark evergreen crown, 10 metres tall and 140 centimetres round, the smallest of the three registered trees on the square. It stands a few metres from the taller pair of hackberries.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "mil_030",
+      "name": "Il Bagolaro di Villa Ghirlanda",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": null,
+      "girth_cm": 445,
+      "height_m": 34.0,
+      "location": {
+        "address": "Parco di Villa Ghirlanda Silva, Via Giovanni Frova 10, 20092 Cinisello Balsamo (MI)",
+        "latitude": 45.558314,
+        "longitude": 9.216789,
+        "neighbourhood": "Cinisello Balsamo, about 8 km north of central Milan"
+      },
+      "verified_sources": [
+        "MASAF national monumental-tree register, sheet 02/C707/MI/03, comune Cinisello Balsamo, locality Villa Ghirlanda - Via Frova 10, girth 445 cm, height 34 m (data/registers/italy-masaf.json)",
+        "https://www.nordmilano24.it/2023/03/29/cinisello-balsamo-mappe-sensoriali-per-conoscere-e-valorizzare-villa-ghirlanda-silva/ (fetched directly 2026-09-17; the comune's own sensory-map project names this tree at the obelisk station: 'Obelisco e bagolaro centenario: definito albero monumentale')"
+      ],
+      "access": "Free. Stands in the public Parco di Villa Ghirlanda Silva, open daily (seasonal hours set by comune ordinance, roughly 7:00-20:00 in summer and 8:00-17:00 in winter; no ticket or gate).",
+      "transport": "M5 metro to Bicocca, then ATM tram 31 to the Villa Ghirlanda stop at the park gate; about 8 km north of central Milan, a tram ride rather than a walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Ercole Silva wrote the book on English-style gardens in Italy, literally: his 1801 treatise Dell'arte dei giardini inglesi helped introduce the naturalistic parkland look to the country, and he tried the ideas first on his own land at Cinisello Balsamo, just north of Milan. This hackberry, its trunk 4.45 metres round and its crown 34 metres up, still stands in that garden.\n\nThe comune calls it bagolaro centenario, over a hundred years old, without giving a firmer figure, and marks it on the villa's own sensory-map trail as one of the garden's defining features alongside its obelisk. Celtis australis is native across the Mediterranean, and Milan knows the species as spaccasassi, the stone-splitter, for roots that push up paving stone; this one has had a century or more to test that reputation against the villa's own paths.\n\nVilla Ghirlanda Silva's park is free and open daily, a fifteen-minute tram ride from central Milan rather than a walk: take the M5 metro to Bicocca, then tram 31 to the stop at the villa's own gate.",
+      "notes": "Age is single-sourced and vague ('bagolaro centenario', the comune's own sensory-map text): the MASAF register gives girth and height but no age, and no planting record survives, so the century-plus figure is repeated as given rather than sharpened or derived by analogy to similarly-sized hackberries elsewhere in Milan.",
+      "how_to_recognise": "4.45 metres round and 34 metres tall, marked on the villa's own sensory trail as one of the garden's monumental trees, standing near the obelisk.",
       "photo": {
         "url": null,
         "license": null,
