@@ -629,6 +629,37 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   min-height: 44px; font-family: var(--sans); font-size: 15px; color: var(--ink);
   text-decoration: none; }
 .acct-linkrow::after { content: "\203A"; color: var(--ink-light); font-size: 18px; }
+/* A ROW IS A ROW, whether it navigates or acts. The app gives sign out and
+   delete a full row in a card of their own; this page had an underlined link
+   and a disclosure triangle, which is two destructive controls dressed as
+   footnotes (Hidde, 2026-09-17: "moet exact hetzelfde eruit zien als app"). */
+.acct-rowbtn { width: 100%; background: none; border: none; cursor: pointer;
+  text-align: left; font-family: var(--sans); }
+.acct-rowbtn.danger { color: #9c3f2f; }
+.acct-rowbtn.danger::after { color: #9c3f2f; }
+.acct-rows-sep { margin-top: 1.6rem; }
+/* The app's Settings screen has no filled colour on it anywhere: every control
+   is a row, and the only colour is the red on delete. Save was a green slab
+   here, the loudest thing on a page whose whole job is to be quiet.
+   ONLY THE WEIGHT changes: .acct-name-row already lays this row out further
+   down, including stacking it under the field on a phone on purpose, and a
+   first attempt here restated all of that as a second rule that simply lost to
+   the existing one. */
+.acct-name-row .go-btn { background: var(--cream-dark); color: var(--ink);
+  border: 1.5px solid var(--cream-dark); font-size: 14px; border-radius: 999px; }
+.acct-name-row .go-btn:hover { background: #e0ded5; border-color: #e0ded5; }
+.acct-rows + .acct-rows { margin-top: 0.8rem; }
+/* The app prints its catalogue size under the cards and above the two
+   destructive rows, quiet and small. */
+.acct-version { font-size: 12px; color: var(--ink-light); margin: 1.4rem 0 0 0.25rem; }
+.acct-danger-body { margin-top: 0.8rem; padding: 1rem; border: 1px solid #e3cfc9;
+  border-radius: 12px; background: #fdf7f5; }
+.acct-danger-body label { display: block; font-size: 13px; font-weight: 700;
+  margin: 0.8rem 0 0.4rem; }
+.acct-danger-body input { font-family: var(--sans); font-size: 15px; padding: 0.7rem 0.9rem;
+  border: 1.5px solid var(--cream-dark); border-radius: 999px; width: 100%; max-width: 14rem; }
+.go-btn.danger { background: #9c3f2f; margin-top: 0.9rem; }
+.go-btn.danger:disabled { opacity: 0.45; cursor: not-allowed; }
 .acct-linkrow:hover { background: var(--cream); }
 /* The disclosure that stands in for the app's pushed Account screen. */
 .acct-deeper > summary { min-height: 44px; display: flex; align-items: center;
