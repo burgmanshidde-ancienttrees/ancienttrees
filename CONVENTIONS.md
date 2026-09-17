@@ -255,6 +255,26 @@ bijzonder lelijk". The screenshot is the source: alltrails.com refuses
 ClaudeBot and Mobbin, Banani and PageFlows are all unreachable from here, so
 nothing about their screen is described from memory.
 
+**MEASURED OFF THE SCREENSHOT RATHER THAN EYEBALLED**, after a first pass that
+matched the shape and got four numbers wrong by being creative with them
+(Hidde: "doe je best het echt zo dicht mogelijk hier op de laten lijken niet
+zelf creatief worden"). The capture is 1206px wide for a 402pt phone, so
+everything divides by three:
+
+| | reference | ours now |
+|---|---|---|
+| side inset | 24pt | 24 |
+| button height | 48pt | 48 |
+| button width | 353.7pt | 354 |
+| gap between buttons | 16pt | 16 |
+| icon tile | 56pt square | 56 |
+| headline | cap 19.7pt, 33pt line pitch, so ~28px at 1.2 | 28px / 1.2 |
+| sheet | off the bottom, top corners only | same under 600px |
+
+The first pass had the icon at 104px (nearly double), buttons at 56, gaps at
+10, and a centred card instead of a sheet. Every one of those was a guess
+dressed as a decision, and the fix was arithmetic rather than taste.
+
 **What they actually do, top to bottom.** A close cross in a grey circle, top
 right. The app icon as a large rounded tile, roughly 104px, centred. A big bold
 headline over two balanced lines. ONE dark filled pill at full width, tall. A

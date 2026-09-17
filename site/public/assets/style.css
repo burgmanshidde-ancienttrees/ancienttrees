@@ -1536,10 +1536,26 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    alignment and the app followed; this reference centres and Hidde picked the
    reference. The two surfaces disagree on purpose now rather than by neglect,
    which is the part that matters. */
+/* EVERY NUMBER BELOW IS MEASURED OFF THE REFERENCE, not chosen. Hidde's
+   screenshot is a 3x capture of a 402pt phone, so dividing by three gives the
+   points: side inset 24, button height 48, gap between buttons 16, icon 56
+   square, headline cap height 19.7 with a 33pt line pitch (so ~28px at 1.2),
+   sheet top edge at 250pt of a 402pt-wide screen. "Zo dicht mogelijk, niet
+   zelf creatief worden", and the first pass was creative in four places: the
+   icon was nearly double, the buttons were taller, the gaps were 10px instead
+   of 16, and it was a centred card rather than a sheet off the bottom. */
 .signin-dialog { max-width: 24rem; text-align: center; padding: 2.4rem 1.5rem 1.5rem; border-radius: 22px; max-height: calc(100vh - 2rem); overflow-y: auto; }
-.signin-dialog h3 { margin: 0 0 0.5rem; font-size: 1.6rem; line-height: 1.15; letter-spacing: -0.01em; text-wrap: balance; }
-.signin-dialog p { font-size: 14px; color: var(--ink-light); margin: 0 0 1.4rem; }
-.signin-icon { display: block; margin: 0 auto 1.1rem; width: 104px; height: 104px; border-radius: 24px; }
+.signin-dialog h3 { margin: 0 0 0.5rem; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; text-wrap: balance; }
+.signin-dialog p { font-size: 14px; color: var(--ink-light); margin: 0 0 1.75rem; }
+.signin-icon { display: block; margin: 0 auto 1.5rem; width: 56px; height: 56px; border-radius: 14px; }
+/* A SHEET OFF THE BOTTOM on a phone, which is what the reference is: rounded
+   at the top only, flush to the bottom edge, full width. Above 600px it stays
+   the centred card, because that is what their own desktop login is and a
+   sheet pinned to the bottom of a laptop is nobody's convention. */
+@media (max-width: 600px) {
+  .signin-dialog { margin: auto auto 0; width: 100%; max-width: none;
+    border-radius: 28px 28px 0 0; padding: 3.5rem 1.5rem 2rem; max-height: 92vh; }
+}
 /* A circular target the way every sheet draws it, at Apple's 44. It was a
    15px glyph in a bordered box, which is both hard to hit and the loudest
    piece of chrome on a screen whose job is a decision. */
@@ -1552,7 +1568,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   border: 1.5px solid var(--cream-dark); border-radius: 999px; text-align: center; }
 #signin-rest { margin-top: 0.5rem; }
 /* The rule, with the word sitting in it. */
-.signin-rule { display: flex; align-items: center; gap: 0.9rem; margin: 1rem 0 !important;
+.signin-rule { display: flex; align-items: center; gap: 0.9rem; margin: 0.6rem 0 1.4rem !important;
   font-size: 14px; color: var(--ink-light); }
 .signin-rule::before, .signin-rule::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--cream-dark); }
 .signin-app { background: #23261e; }
@@ -1571,7 +1587,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    the left). Read 2026-09-02. */
 .oauth-btn { display: flex; align-items: center; gap: 0.6rem; width: 100%; border-radius: 999px;
   font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
-  min-height: 56px; padding: 0.9rem 1.4rem; margin: 0 0 0.6rem;
+  min-height: 48px; padding: 0.75rem 1.4rem; margin: 0 0 1rem;
   background: var(--cream); color: var(--ink); border: 1.5px solid var(--cream-dark); }
 .oauth-btn:hover { border-color: var(--ink-light); }
 /* display:flex above beats the [hidden] attribute's UA rule, so hiding a
