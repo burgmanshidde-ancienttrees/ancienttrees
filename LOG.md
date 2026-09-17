@@ -1,6 +1,48 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 - Continue in the app, which is what that sheet was always for
+
+Hidde: "Nee ik wil dat je daadwerkelijk de open in app functie erin bouwt -
+ancient trees works better in the app."
+
+**The sheet he photographed was never a sign-in sheet.** Its headline is
+"AllTrails werkt beter in de app" and its loud button is "Ga verder in de app";
+Google and "Meer opties" sit below the rule. Two passes rebuilt it as a sign-in
+sheet wearing that layout, matching the shape and missing the subject.
+
+**The function now exists end to end.** `/open` joins `/t` and `/auth` in the
+site's apple-app-site-association, so on a phone that has the app iOS hands it
+the URL and never loads the page; `ContentView` reads `?tree=` or `?city=` and
+lands on the tree the reader was standing on. Where the app is not installed,
+which is every laptop and every phone without it, the page itself loads and
+forwards to the App Store. One URL, both outcomes, and the OS decides which
+before anything of ours runs.
+
+The tree id comes off the save heart, the one element already carrying it on
+every tree page, so the button on Amsterdam's Beatrix Lime reads
+`/open?tree=ams_039` rather than a generic open.
+
+**On a phone only.** A laptop cannot honour it, so the button stays hidden
+there and sign-in keeps the loud slot. When it does appear it TAKES that slot,
+the sign-in button steps down to grey, the rule moves up to separate continuing
+from signing in, and the subtitle goes, because "Sign in to save X" under
+"works better in the app" answers a question nobody asked.
+
+Verified under a real iPhone user-agent and a desktop one: the button appears
+and carries the tree id on the first, stays hidden on the second, and there is
+exactly one dark button in both. Three faults came out of looking: an anchor
+arrives underlined and moss green where a button does not, the rule sat in the
+old place, and the subtitle contradicted the new headline.
+
+**Not an interstitial, deliberately.** This sheet opens on a tap (a save, a
+vote, a sign-in), never on arrival. An app-install sheet thrown at somebody
+landing from Google is the pattern Google penalises by name, and search is this
+project's whole distribution.
+
+qa 8,584 pages, preflight 0 problems, parity, netcheck and the smoke test all
+pass. The Swift is uncompiled here as always; ios.yml judges it on push.
+
 ## 2026-09-17 - The sign-in sheet, rebuilt on AllTrails' own shape
 
 Hidde, shown our sign-in screens beside theirs: "ik vind die van ons er weer

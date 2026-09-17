@@ -13,6 +13,10 @@
           {
             "/": "/auth",
             "comment": "the landing of an emailed sign-in link (2026-09-12). Supabase mails a link to its own /auth/v1/verify, which redirects here with the tokens in the fragment; iOS hands that to the app so somebody who asked to sign in ON THE PHONE lands back in the app rather than in Safari. The page itself is the fallback and signs them in on the web instead when the app is not installed or iOS does not honour the redirect."
+          },
+          {
+            "/": "/open",
+            "comment": "continue in the app (2026-09-17). The sheet's loud button on a phone points here; iOS hands the URL to the app when it is installed, and when it is not, the page itself forwards to the App Store. ?tree= and ?city= carry where the reader was standing, so the app can land on the same tree rather than on whatever tab it last had open."
           }
         ]
       }

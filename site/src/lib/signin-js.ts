@@ -94,6 +94,48 @@ export const SIGNIN_JS = `
 
   var dlg = document.getElementById('signin-dialog');
   if (!dlg) return;
+
+  // CONTINUE IN THE APP takes the loud slot on an iPhone and nowhere else.
+  // A laptop cannot honour it, so rather than showing a button that would be a
+  // dead end there, the sheet keeps sign-in as its answer and this stays
+  // hidden. When it does appear the sign-in button steps down to grey, so the
+  // sheet still has exactly one dark button, which is the whole shape.
+  //
+  // The tree id rides along so the app can open on the tree the reader was
+  // actually looking at. It comes off the save heart, which is the one element
+  // that already carries it on every tree page.
+  (function () {
+    var ua = navigator.userAgent || '';
+    var isIOS = /iPhone|iPad|iPod/.test(ua)
+      || (ua.indexOf('Macintosh') > -1 && navigator.maxTouchPoints > 1);
+    if (!isIOS) return;
+    var open = document.getElementById('signin-openapp');
+    if (!open) return;
+    var loud = dlg.querySelector('.oauth-loud:not(#signin-openapp)');
+    if (loud) { loud.classList.remove('oauth-loud'); loud.classList.add('oauth-quiet'); }
+    var el = document.querySelector('[data-tree]');
+    var slug = location.pathname.split('/').filter(Boolean)[0] || '';
+    var q = el && el.dataset.tree ? '?tree=' + encodeURIComponent(el.dataset.tree)
+          : (slug ? '?city=' + encodeURIComponent(slug) : '');
+    open.setAttribute('href', '/open' + q);
+    open.hidden = false;
+    // The rule separates CONTINUING from SIGNING IN, which is where the
+    // reference puts it: continue in the app, or, then the account routes. In
+    // the markup it sits under the sign-in button, because without the app
+    // button that is the only place it can go.
+    var rule = dlg.querySelector('.signin-rule');
+    if (rule && open.nextSibling !== rule) open.parentNode.insertBefore(rule, open.nextSibling);
+    // And the subtitle goes, because the headline is no longer about signing
+    // in and a line reading "Sign in to save X" under "works better in the
+    // app" answers a question nobody asked. The reference carries no subtitle
+    // at all here.
+    var sb = document.getElementById('signin-sub');
+    if (sb) sb.hidden = true;
+    // The headline becomes the offer the button makes, which is what the
+    // reference leads with. The sign-in wording stays for every other surface.
+    var t = document.getElementById('signin-title');
+    if (t && t.getAttribute('data-app')) t.setAttribute('data-generic', t.getAttribute('data-app'));
+  })();
   window.atOpenSignIn = function(treeName, reason) {
     // Name the tree that was just saved. The generic line stays for every
     // other entry point, and a missing name is not an error, it is the

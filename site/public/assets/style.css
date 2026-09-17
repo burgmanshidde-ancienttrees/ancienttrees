@@ -1586,6 +1586,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    (its Google, Facebook and Apple buttons all carry the coloured mark on
    the left). Read 2026-09-02. */
 .oauth-btn { display: flex; align-items: center; gap: 0.6rem; width: 100%; border-radius: 999px;
+  text-decoration: none;
   font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
   min-height: 48px; padding: 0.75rem 1.4rem; margin: 0 0 1rem;
   background: var(--cream); color: var(--ink); border: 1.5px solid var(--cream-dark); }
