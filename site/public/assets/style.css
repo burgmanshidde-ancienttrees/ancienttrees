@@ -2130,33 +2130,66 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
    left because MapLibre's own controls own the top right, and it scrolls
    sideways rather than wrapping, because a row that grows a second line pushes
    the map down every time somebody picks a long species name. */
-.map-filters { position: absolute; z-index: 3; top: 0.7rem; left: 0.7rem;
-  right: 3.2rem; display: flex; gap: 0.4rem; align-items: center;
-  overflow-x: auto; overflow-y: hidden; padding: 0.15rem 0.15rem 0.35rem;
-  scrollbar-width: none; }
+/* THE CHIP ROW OVER THE MAP, which is the app's chip row and not a second
+   design (Hidde, 2026-09-17: "de filters zien er totaal slecht uit neem de app
+   als voorbeeld"). FilterChip.swift is the reference and it is specific: a
+   34-tall capsule, an icon at the head of a 13pt MEDIUM label, white on a
+   hairline border with a shadow soft enough to lift it off the map, moss when
+   it is on, and the whole thing sitting inside a 44-tall target.
+
+   What was here instead: 44-tall slabs with no icon, a 600-weight label, and a
+   native <select> that Safari's 16px floor blew up to a size the three buttons
+   beside it did not have, so one control in a row of four was visibly larger
+   than its neighbours. That is the sloppiness, and it came from solving the
+   two-heights problem by giving up and drawing 44. A pill inside a button
+   solves it properly: 34 drawn, 44 hit, on both kinds of control. */
+.map-filters { position: absolute; z-index: 3; top: 0.6rem; left: 0.6rem;
+  right: 3.2rem; display: flex; gap: 0.35rem; align-items: center;
+  overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
 .map-filters::-webkit-scrollbar { display: none; }
-/* 44 tall, not the app's 34. SwiftUI can draw a 32 point capsule inside a 44
-   point target; a chip row on the web cannot do that for a <select>, and a row
-   where the buttons are 44 and the picker is 34 is worse than one that is
-   honestly 44 throughout. The smoke test's own tap-target gate caught this the
-   first time it ran. */
-.mf { flex: 0 0 auto; font-family: inherit; font-size: 13px; font-weight: 600;
-  line-height: 1; height: 44px; padding: 0 0.9rem; border-radius: 999px;
-  border: 1px solid var(--cream-dark); background: #fff; color: var(--ink);
-  cursor: pointer; box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
-.mf:hover { border-color: var(--moss); }
-.mf.is-on { background: var(--moss); border-color: var(--moss); color: #fff; box-shadow: none; }
+.mf { flex: 0 0 auto; position: relative; display: inline-flex; align-items: center;
+  height: 44px; padding: 0; border: 0; background: none; cursor: pointer;
+  font-family: inherit; -webkit-tap-highlight-color: transparent; }
+.mf-pill { display: inline-flex; align-items: center; gap: 5px; height: 34px;
+  padding: 0 0.7rem; border-radius: 999px; border: 1px solid var(--cream-dark);
+  background: #fff; color: var(--ink); font-size: 13px; font-weight: 500;
+  line-height: 1; white-space: nowrap; box-shadow: 0 1px 2px rgba(26,32,18,0.10);
+  transition: background 0.12s, border-color 0.12s, color 0.12s; }
+.mf-ic { width: 14px; height: 14px; flex: 0 0 auto; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.mf-caret { width: 12px; height: 12px; margin-left: 1px; opacity: 0.55; }
+.mf:hover .mf-pill { border-color: var(--moss); }
+.mf.is-on .mf-pill { background: var(--moss); border-color: var(--moss); color: #fff;
+  box-shadow: none; }
+.mf.is-on .mf-caret { opacity: 0.8; }
+.mf:focus-visible { outline: none; }
+.mf:focus-visible .mf-pill, .mf-species:focus-within .mf-pill {
+  outline: 2px solid var(--moss); outline-offset: 2px; }
 /* The species picker is a native select on purpose: 521 options is exactly
    what a platform picker is good at, and a hand-rolled listbox over a map is
-   the interaction nobody has been trained on. */
-.mf-select { max-width: 11rem; appearance: none; padding-right: 1.7rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2326301E' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
-  background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 13px; }
-.mf-select.is-on { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E"); }
-.mf-count { flex: 0 0 auto; font-size: 12.5px; font-weight: 700; color: var(--ink);
-  background: #fff; border-radius: 999px; padding: 0.3rem 0.6rem;
-  box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
+   the interaction nobody has been trained on. So the select stays, invisible,
+   filling the chip as its tap layer, and we draw the capsule under it. Being
+   invisible is also what lets it hold the 16px Safari needs (a focused field
+   under 16px zooms the page in and never back out) without the row carrying
+   one word larger than the other three. */
+.mf-species .mf-select { position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: 0; appearance: none; -webkit-appearance: none; border: 0; padding: 0;
+  margin: 0; background: none; font-family: inherit; font-size: 16px; cursor: pointer; }
+.mf-label { overflow: hidden; text-overflow: ellipsis; max-width: 8.5rem; }
+/* A number only while a filter is on, so it is an answer rather than copy. It
+   is not a control, so it is quieter than the chips: no border, no shadow, the
+   softer ink. */
+.mf-count { flex: 0 0 auto; display: inline-flex; align-items: center; height: 34px;
+  padding: 0 0.55rem; border-radius: 999px; background: rgba(255,255,255,0.92);
+  color: var(--ink-mid); font-size: 12.5px; font-weight: 600; white-space: nowrap; }
 .mf-count[hidden] { display: none; }
+/* MapLibre puts its attribution at the map's top-left, which is where the chip
+   row stands. The old 44-tall slabs covered the (i) completely; a 34-tall pill
+   lets it peek out above and below, which reads as a smudge behind the first
+   chip. Neither is right: OpenFreeMap's terms are one line and attribution has
+   to be findable. So on a map that carries a chip row the attribution drops
+   below it, and only there (the selector needs the row to exist). */
+.map-filters ~ .map .maplibregl-ctrl-top-left { top: 44px; }
 @media (max-width: 900px) {
   /* On a phone the sheet covers the lower half, so the row keeps its place at
      the top of the map where it is still reachable with a thumb. The right
@@ -2205,9 +2238,10 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
   .worthit-detail textarea,
   /* The map's species picker, added to this floor the hour the row was built
      (2026-09-12): a chip reads at 13, a FIELD at 13 makes Safari zoom the map
-     in on tap and never back out. The other three chips are buttons and are
-     left alone, so the row carries one slightly larger word on a phone, which
-     is the cheaper of the two prices. */
+     in on tap and never back out. Since 2026-09-17 the select is the chip's
+     invisible tap layer rather than the chip itself, so it holds 16 at every
+     width and the price the row used to pay for that (one word larger than the
+     three beside it) is gone. Kept here as the floor it is. */
   .mf-select,
   .signin-form input { font-size: 16px; }
 }
