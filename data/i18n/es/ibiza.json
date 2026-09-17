@@ -1,0 +1,40 @@
+{
+ "_note": "Spanish overlay for Ibiza, written 2026-09-17 from data/cities/ibiza.json via scripts/transbrief.py, in the same pass as the Menorca overlay so the two Balearic pages read in one register. Text only: coordinates, photos, licences, ages and walks stay in the English file. Place, estate and register names keep their local spelling exactly as the canonical file carries them (Santa Eularia des Riu, Sant Joan de Labritja, Can Reiet, Consell Insular d'Eivissa i Formentera); the prose around them is Spanish.",
+ "city": "Ibiza",
+ "title": "El árbol singular de Ibiza: el Pi de Can Reiet",
+ "meta_description": "El Pi de Can Reiet, un pino carrasco de 100 a 150 años, crece a pie de carretera cerca de Santa Eularia des Riu, en Ibiza. Gratis y visible desde la vía.",
+ "intro": "Ibiza está cubierta de pino carrasco y muy poco llega a un tamaño de verdad. El Pi de Can Reiet es la excepción: un pino a pie de carretera al norte de Santa Eularia des Riu, de 100 a 150 años según el registro balear, con 111 centímetros de diámetro de tronco en la base. De él colgó una placa metálica de veda de caza. Está en el punto kilométrico 1,6 de la carretera de Sant Joan, es del consejo insular y se ve gratis desde el arcén, a veinte minutos en coche de la ciudad de Ibiza.",
+ "question_title": "¿Cuál es el árbol más antiguo de Ibiza?",
+ "question_meta": "El Pi de Can Reiet, uno de los mayores pinos carrascos de Ibiza, está a pie de carretera cerca de Santa Eularia. Su edad, su copa inclinada y cómo llegar.",
+ "question_answer": "El árbol más antiguo registrado de Ibiza es el Pi de Can Reiet, un pino carrasco que está en el punto kilométrico 1,6 de la carretera de Santa Eularia des Riu a Sant Joan de Labritja. El registro balear le da de 100 a 150 años. Se ve gratis desde la carretera pública, a unos 20 minutos en coche de la ciudad de Ibiza.",
+ "question_context": "El registro oficial balear da un diámetro de tronco de 111 centímetros en la base, que salen a unos tres metros y medio de perímetro, y un inventario insular de árboles notables de 2022 corrobora por su cuenta la especie, la franja de edad y la ubicación. Nadie ha estrechado más esa horquilla de 100 a 150 años. El registro describe la copa como desequilibrada e inclinada, y por eso el Consell Insular d'Eivissa i Formentera, el consejo insular que es propietario del árbol, vuelve cada cierto tiempo a aligerarle las ramas. En el tronco estuvo fijada una placa metálica que anunciaba una veda de caza, retirada desde entonces. Se catalogó como árbol singular el 11 de junio de 1993, en una lista corta de árboles individuales que el Govern balear protege por su nombre y no como parte de una figura más amplia de especie o de hábitat. No hay parada de autobús ni camino que suba hasta él: es un árbol de carretera, para verlo antes que para visitarlo con calma.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Ibiza?",
+   "a": "El Pi de Can Reiet, un pino carrasco a pie de carretera cerca de Santa Eularia des Riu, al que el registro balear da de 100 a 150 años."
+  },
+  {
+   "q": "¿Por qué está inclinado?",
+   "a": "El registro describe su copa como desequilibrada e inclinada, y por eso el consejo insular, propietario del árbol, le quita peso con regularidad del lado más cargado."
+  },
+  {
+   "q": "¿Se puede ver gratis?",
+   "a": "Sí, se ve desde una carretera pública y no hay entrada ni verja. Es una parada al borde de la vía antes que un sitio por el que pasear."
+  },
+  {
+   "q": "¿Cómo se llega?",
+   "a": "En coche, unos 20 minutos desde la ciudad de Ibiza por la carretera de Sant Joan de Labritja; el árbol está en el punto kilométrico 1,6. No hay parada de autobús propia; el servicio regular más cercano llega a Santa Eularia des Riu, a unos 1,6 km."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+ "trees": {
+  "ibz_001": {
+   "name": "Pi de Can Reiet",
+   "species": "Pino carrasco (Pinus halepensis)",
+   "age_estimate": "de 100 a 150 años",
+   "access": "Gratuito, visible desde una carretera pública. Propiedad del Consell Insular d'Eivissa i Formentera (el propio consejo insular), catalogado en 1993.",
+   "transport": "En coche, unos 20 minutos desde la ciudad de Ibiza por la carretera de Sant Joan; el árbol está en el punto kilométrico 1,6. No se ha identificado ninguna parada de autobús concreta; el servicio regular más cercano llega a Santa Eularia des Riu, a unos 1,6 km por carretera.",
+   "story": "Alguien clavó una vez una veda de caza en este pino. La placa metálica ya no está en el tronco, pero durante un tiempo el árbol hizo de señal en la carretera que sale de Santa Eularia des Riu hacia el norte. Sigue en el punto kilométrico 1,6, lo bastante cerca para verlo desde la vía.\n\nEl pino carrasco es común en toda Ibiza y muy poco llega a este tamaño. El tronco mide 111 centímetros de diámetro en la base, unos tres metros y medio de perímetro, en un árbol al que el registro balear da de 100 a 150 años. Nadie ha estrechado más esa franja, y si sabes cuándo se plantó, dínoslo.\n\nEstá inclinado. El registro describe la copa como desequilibrada e inclinada, y por eso el consejo insular, que es su propietario, vuelve cada cierto tiempo a aligerarle las ramas. Una copa con tanto peso a un lado no es cosa que se deje para el próximo temporal.\n\nSe catalogó como árbol singular el 11 de junio de 1993, en una lista corta de árboles individuales que el Govern balear protege por su nombre y no por especie. No hay parada de autobús ni camino hasta él. Es un árbol de carretera a unos veinte minutos en coche de la ciudad de Ibiza, y verlo es una parada, no una tarde."
+  }
+ }
+}
