@@ -1552,6 +1552,13 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    at the top only, flush to the bottom edge, full width. Above 600px it stays
    the centred card, because that is what their own desktop login is and a
    sheet pinned to the bottom of a laptop is nobody's convention. */
+/* THE HEADLINE CARRIES ITS OWN SPACE when the subtitle is gone. On a phone
+   the sheet is about the app, the subtitle goes with it, and the 8px that was
+   only ever the gap BEFORE the subtitle is not a gap before a button. The
+   reference leaves 32 between its headline and its loud button; this is that
+   number rather than a nicer-looking guess. */
+.signin-dialog--app #signin-title { margin-bottom: 2rem; }
+
 @media (max-width: 600px) {
   .signin-dialog { margin: auto auto 0; width: 100%; max-width: none;
     border-radius: 28px 28px 0 0; padding: 3.5rem 1.5rem 2rem; max-height: 92vh; }
@@ -1568,7 +1575,12 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   border: 1.5px solid var(--cream-dark); border-radius: 999px; text-align: center; }
 #signin-rest { margin-top: 0.5rem; }
 /* The rule, with the word sitting in it. */
-.signin-rule { display: flex; align-items: center; gap: 0.9rem; margin: 0.6rem 0 1.4rem !important;
+/* Same trap as the buttons: display:flex beats the [hidden] attribute, so the
+   rule stayed on screen where no app button exists to separate anything from
+   anything, leaving a desktop dialog reading "Continue with Apple / or / More
+   options". Second time this exact collision has cost a visible fault. */
+.signin-rule[hidden] { display: none; }
+.signin-rule { display: flex; align-items: center; gap: 0.9rem; margin: 0.6rem 0 0.7rem !important;
   font-size: 14px; color: var(--ink-light); }
 .signin-rule::before, .signin-rule::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--cream-dark); }
 .signin-app { background: #23261e; }
@@ -1588,6 +1600,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .oauth-btn { display: flex; align-items: center; gap: 0.6rem; width: 100%; border-radius: 999px;
   text-decoration: none;
   font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+  /* EXPLICIT, because an <a> and a <button> do not compute the same content
+     box from an inherited line-height: the app pill measured 50 where every
+     other measured 48, which is the kind of two-point drift that reads as
+     sloppiness without anybody being able to say why. */
+  line-height: 1.25;
   min-height: 48px; padding: 0.75rem 1.4rem; margin: 0 0 1rem;
   background: var(--cream); color: var(--ink); border: 1.5px solid var(--cream-dark); }
 .oauth-btn:hover { border-color: var(--ink-light); }

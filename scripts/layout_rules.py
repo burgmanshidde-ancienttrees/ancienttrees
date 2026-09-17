@@ -54,6 +54,27 @@ DRIFT_MAX = 11.0
 # "Get the app"). Nothing real lives between six tenths of a point and one.
 SAME = 1.0
 
+# THE SIGN-IN SHEET'S VERTICAL RHYTHM, measured off AllTrails' own sheet on
+# 2026-09-17 rather than chosen (Hidde: "verticale spacing ziet er beter uit bij
+# alltrails let op dat soort dingen onthou dit"). His screenshots are 3x
+# captures of a 402pt phone, so each number below is a pixel measurement divided
+# by three, and CONVENTIONS.md carries the workings.
+#
+# Why these are a CHECK and not a note. Spacing is the one class of fault that
+# reads as "this looks cheap" while nobody can name what is wrong, so it
+# survives every review by eye and every gate that asks whether an element
+# EXISTS. Three drifts got through in one afternoon here: an anchor computing a
+# 50 point pill among 48s, a rule block at 61 where the reference has 51, and a
+# headline left 8 points above a button because hiding the subtitle took its
+# margin with it. Each was invisible in a screenshot and obvious in a number.
+SHEET_BTN_H = 48.0        # every pill in the sheet, the loud one included
+SHEET_BTN_GAP = 16.0      # between two adjacent pills
+SHEET_RULE_GAP = 51.0     # across the "or", from the loud pill to the next
+SHEET_TITLE_GAP = 32.0    # headline to the loud pill, where no subtitle sits
+# Sub-pixel rounding plus a browser's own line-box arithmetic; anything larger
+# is a real drift rather than noise.
+SHEET_TOL = 3.0
+
 # The width the web's phone checks measure at, and the reason the app measures on
 # the smallest phone it supports: the narrowest real screen is the honest one.
 PHONE_W = 375
