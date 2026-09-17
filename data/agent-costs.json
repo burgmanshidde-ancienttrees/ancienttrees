@@ -8019,6 +8019,17 @@
         "photos_approved": 6,
         "note": "session (not agent) viewed 28 candidate images fetched by photo_fetch.py for the 8 TU Schaugaerten trees plus ber_024/ber_025; 6 approved (ber_025, 027, 028, 030, 032, 033), rest rejected for obscured trunk, distant framing, a garden statue mismatch, or wrong-species/wrong-tree filename mismatches (ber_024 matched a nearby mulberry file, ber_031 matched a nearby thuja file); tokens not separately tracked (session work, no agent dispatched)"
       }
+    ],
+    "2026-09-17": [
+      {
+        "target": "Submissions #111, #112 (Taketa)",
+        "kind": "submission",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session work, not a dispatched pass; two GPS-only reader pins at Oka Castle checked against the Japan register and web search, neither verifies, filed as leads",
+        "wasted": 0,
+        "brief_wrong": false
+      }
     ]
   }
 }
