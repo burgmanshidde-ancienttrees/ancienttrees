@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Kasteel Helmond has stood here for nearly seven hundred years, and until the middle of the last century it sat in a large landscape park. Most of that went after 1921, when the last private owner sold up. Seven trees here still stand in what is left of the grounds, one a Chinese beech the register calls the oldest of its kind in the country. The rest of the page is a cemetery planted almost entirely in weeping trees, an oak beside a tower from about 1400, and an oak somebody wrote a book about.",
-  "meta_description": "Nineteen remarkable trees in Helmond: seven in the castle grounds including a rare Chinese beech, a cemetery of weeping trees, and the Peeters oak.",
-  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and eighteen more worth the walk.",
+  "meta_description": "Twenty remarkable trees in Helmond: seven in the castle grounds including a rare Chinese beech, a cemetery of weeping trees, and the Peeters oak.",
+  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and nineteen more worth the walk.",
   "question_answer": "The oldest tree in Helmond is the one known as de oude eik van boer Peeters, the old oak of farmer Peeters, on the Rijnlaan at Brouwhuis, which the national register places in a planting band of 1820 to 1830, so around two centuries old. Its name is not folklore we have collected: the register itself says the name comes from the book 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, which is a local history of the trees of Helmond and its surroundings. That is worth knowing because it means somebody in this town went to the trouble of writing down what its trees are called, and the national register then read it.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and for most of these trees it is the only source, so everything is flagged. Seven of the nineteen stand in the grounds of Kasteel Helmond, surrounded by a large landscape park until the middle of the twentieth century and mostly lost after the last private owner sold the castle in 1921; those trees run from the 1880s to the 1940s. Three more stand in the two adjoining Molenstraat cemeteries, founded in 1880, and four more were added this pass: two oaks in the Warande city walking park and a copper beech and a plane tree on ordinary streets nearby. Where a pin is marked approximate we know the grounds and not the trunk, and if you find one of these gone, tell us and it comes off the same day.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and for most of these trees it is the only source, so everything is flagged. Seven of the twenty stand in the grounds of Kasteel Helmond, surrounded by a large landscape park until the middle of the twentieth century and mostly lost after the last private owner sold the castle in 1921; those trees run from the 1880s to the 1940s. Three more stand in the two adjoining Molenstraat cemeteries, founded in 1880, four more were added a previous pass (two oaks in the Warande city walking park and a copper beech and a plane tree on ordinary streets nearby), and a pair of copper beeches in the Sint Lucia churchyard was added most recently. Where a pin is marked approximate we know the grounds and not the trunk, and if you find one of these gone, tell us and it comes off the same day.",
   "hero_tree_id": "hlm_001",
   "oldest_tree_id": "hlm_002",
   "faq": [
@@ -28,7 +28,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All nineteen. The castle park is open ground in the centre of town, the Molenstraat cemetery is a general public cemetery open in daylight, the cedar on the Julianalaan stands on a public square, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis. The oak on Croylaan, added this pass, is council-owned and stands beside the public road, though the castle grounds it approaches are not."
+      "a": "All twenty. The castle park is open ground in the centre of town, the Molenstraat cemetery is a general public cemetery open in daylight, the cedar on the Julianalaan stands on a public square, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis. The oak on Croylaan is council-owned and stands beside the public road, though the castle grounds it approaches are not, and the copper beeches in the Sint Lucia churchyard stand in a public burial ground open from sunrise to sunset."
     }
   ],
   "trees": [
@@ -688,6 +688,38 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "hlm_020",
+      "name": "The Copper Beech of the Sint Lucia Churchyard",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "about 140 years, planted 1880-1890",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Hoofdstraat 157/159, Helmond",
+        "latitude": 51.466816,
+        "longitude": 5.632981,
+        "neighbourhood": "Mierlo-Hout"
+      },
+      "story": "The present church is younger than the trees standing behind it. Sint-Luciakerk was finished in 1896; the national register of monumental trees puts this pair of copper beeches in the ground between 1880 and 1890, which makes them roughly a hundred and forty years old.\n\nThere are two of them, recorded as a single entry, standing together in the kerkhof behind the church and both left in their natural form rather than pruned or shaped. The purple is not something a breeder designed. It is a pigment fault that turns up now and then in an ordinary green beech, and nurseries have been grafting that accident ever since.\n\nMierlo-Hout became a parish in its own right on 1 September 1884, and the church, the presbytery and the burial ground went up in stages between 1856 and the 1920s. Whether these two beeches were planted as part of that work is not written down anywhere. The register dates them; the parish histories that describe the building never mention the trees at all.\n\nNobody has measured the trunks either, which for a beech of this age is the one number worth having. The kerkhof is a working Catholic burial ground, open from sunrise to sunset, and Helmond 't Hout station is across the road. If you bring a tape, tell us what it reads.",
+      "how_to_recognise": "You can recognise them by their leaves, dark purple rather than green, and by there being two, grown unpruned into their natural shape. They stand together in the kerkhof behind the Sint-Luciakerk on Hoofdstraat.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB record nr 1679427, Bruine beuk, Hoofdstraat 157/159, kerkhof Sint Luciakerk, planted_band 1880-1890, n_trees 2, owner_category religieuze instantie, setting begraafplaats, visitable ja, visible ja)",
+        "https://canonvanmierlo.nl/tijdlijn/twee-luciakerken and https://www.parochienicasius.nl/index.php/30-mierlo/16-geschiedenis-lucia (Mierlo-Hout became an independent Catholic parish 1 September 1884; the church complex including the churchyard/kerkhof was built in stages from 1856 to circa 1925; rijksmonumenten.nl dates the current Sint-Luciakerk building itself to 1896), corroborating the founding era of this churchyard but not naming the tree specifically"
+      ],
+      "access": "Free. Public Roman Catholic parish churchyard (kerkhof) beside the Sint Lucia church, open daily from sunrise to sunset (damiaanhelmond.nl).",
+      "transport": "Helmond 't Hout railway station is directly across the road, about 200 metres / 3 minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
