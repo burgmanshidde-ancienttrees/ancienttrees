@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hlm_019",
+    "name": "The Oak of Kasteel Croy",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 170 years",
+    "age_min": 166,
+    "age_max": 176,
+    "girth_cm": null,
+    "location": {
+      "address": "Croylaan, Aarle-Rixtel (near Croylaan 14, Kasteel Croy)",
+      "latitude": 51.500032,
+      "longitude": 5.62681,
+      "neighbourhood": "Aarle-Rixtel (Laarbeek), about 3 km east of Helmond centre, bordering the municipality"
+    },
+    "verified_sources": [
+      "netherlands-lrmb register (Bomenstichting Landelijk Register Monumentale Bomen), nr 1696050, 'Zomereik Kasteel Croy', planted_band 1850-1860, owner_category gemeente, setting weg, visitable ja, visible ja, reason monumentaal, history onbekend (no felling language)",
+      "https://www.bedandbreakfast.nl/en/a/XmuIzp7BVSSM/landgoed-croy (fetched directly, not from a search summary): the Landgoed Croy bed and breakfast, run from the castle's own gatehouse, describes 'the calming beautiful garden with its century old trees' / Dutch original 'de rustgevende en prachtige tuin met eeuwenoude bomen'"
+    ],
+    "access": "Free. The oak stands beside Croylaan, the public road leading up to Kasteel Croy; the register lists this specific tree as council-owned (gemeente), visitable and visible. The castle itself is privately run (offices and a bed and breakfast in the gatehouse) and not generally open to the public, but the road and the roadside tree are public.",
+    "transport": "Bus line 25 from Helmond Station towards Aarle-Rixtel/Gemert to an Aarle-Rixtel stop, then roughly a 10 to 15 minute walk to Croylaan.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register gives a tree-level coordinate (nr 1696050), single tree, planted 1850-1860, so it dates to the era when Croy was owned by the Van der Brugghen family (Jan Anthonie sold the castle to his half-brother Johan Karel Gideon van der Brugghen in 1778; the family held it through the 19th century). Kasteel Croy itself is a real 15th-century moated castle (oldest parts mid-1400s, associated with the De Croy/Croÿ family, visited by King Lodewijk Napoleon in 1809), now under the municipality of Laarbeek but bordering Helmond (Stiphout, part of Helmond since 1968, belonged to Croy's estate until 1968). Second source is general rather than tree-specific: the B&B page independently confirms 'century old trees' stand in the estate's garden but does not name or single out this particular oak, which is why this ships flagged rather than confirmed. No girth on file in the register; note that for the writer so it is not invented. Register's own history field is 'onbekend' (nothing recorded) and contains no felling language, so nothing suggests the tree is gone. The Dutch Wikipedia article on Kasteel Croy (fetched as wikitext) covers the castle's ownership history in detail but does not mention any individual tree at all, so it could not serve as a second source and was not used as one."
+  }
+]
