@@ -18,6 +18,30 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 12) - Alkmaar write claim finished, Eindhoven verify dispatched
+
+Resumed a window an earlier attempt stopped in with two claims standing
+(alkmaar write, eindhoven verify), per the "finish it or release it" rule.
+Alkmaar's `data/research/alkmaar-verified.json` already had 5 of 7 trees
+written (from continuation 11's dispatch); wrote the last two stories
+(alk_013 Copper Beech of the Hertenkamp, alk_014 Horse Chestnut behind
+Koekenbier, both single-source and flagged) directly rather than
+redispatching an agent for two trees, merged all seven into the city file
+(**Alkmaar 7 -> 14**), fixed one species-name drift (Weeping Silver Lime
+was recorded as "Silver Lime" here, "Weeping Silver Lime" everywhere else,
+hard rule 9), and updated the count promises. Build and preflight clean.
+Released the claim.
+
+Eindhoven's claim had no work behind it at all (claimed, never started).
+`scripts/leads.py --ready` showed 0 READY trees sitewide, so there was no
+cheaper write-pass work to do first. Dispatched a verify pass on Eindhoven's
+register pool (751 candidates within 20 km, 684 unmined) rather than release
+the claim unfinished a second time, steered toward forming one new tight
+walkable cluster since the existing 16 trees already span 6.5 km. Result not
+yet known as this entry is written; the next continuation should check
+data/research/eindhoven-verified.json and data/in-flight.json before
+claiming anything.
+
 ## 2026-09-17 (continuation 11) - Enschede/Helmond write pass merged, Alkmaar verify dispatched
 
 Followed the run prompt's "write pass first, whenever there is one to do" rule.

@@ -1,6 +1,23 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 - Alkmaar 7 -> 14, Eindhoven verify pass dispatched
+
+Resumed a window an earlier attempt had stopped in with two claims left
+standing (alkmaar write, eindhoven verify). Alkmaar already had five of
+seven stories drafted; wrote the last two (a copper beech and a horse
+chestnut, both single-source and flagged honestly) and merged all seven
+into the live city, taking **Alkmaar from 7 to 14 trees**, a second
+walkable cluster around the Bolwerken ramparts and the Alkmaarderhout.
+Updated the page's count promises (intro, meta description, FAQ) to match.
+Build and preflight clean, claim released, pushed to main.
+
+Eindhoven's claim had no work behind it yet, so dispatched a verify pass
+on its 751-candidate Dutch register pool, aimed at one new tight cluster
+since the existing 16 trees already span 6.5 km. Still running as this
+entry is written; check `data/research/eindhoven-verified.json` before
+starting anything new on that city.
+
 ## 2026-09-17 - Spacing becomes a number, because eyes cannot see it
 
 Hidde, on a sheet whose every element was right: "verticale spacing ziet er
