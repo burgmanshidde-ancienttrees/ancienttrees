@@ -8047,6 +8047,15 @@
         "note": "Register fully mined by prior passes (40/41 candidates already judged); resolved 2 pending access judgement calls to blocked and closed 2 stale/duplicate leads, zero new candidates to ship.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Florence",
+        "kind": "verify",
+        "tokens": 172158,
+        "trees": 1,
+        "note": "Resolved the Piazza Vasari hackberry register-trap/felling question (1 tree, 3 register twins folded); confirmed 2 candidates as wrong-comune (Fiesole) and 10 as existing duplicates; Isolotto poplar candidate turned out to already be published as flo_026 (same MASAF sheet), missed by the pass's own search. Story written and merged by the session.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

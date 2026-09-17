@@ -953,6 +953,41 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "flo_027",
+      "name": "The Hackberries of Piazza Vasari",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 407,
+      "height_m": 18.5,
+      "location": {
+        "address": "Piazza Giorgio Vasari, 50137 Firenze",
+        "latitude": 43.782611,
+        "longitude": 11.271056,
+        "neighbourhood": "Campo di Marte"
+      },
+      "story": "In November 2025 Italy's state railway announced it would fell twenty one trees in this small square to rebuild the nearby Ponte al Pino bridge: fifteen hackberries, two maples, two planes, two holm oaks. This cluster of three hackberries was not among them. Tuscany's own monumental tree register had already flagged two of the piazza's oldest hackberries as protected, and local reporting on the works stated plainly that the pine and the historic trees would not be touched. Almost everything else nearby came down. These stayed.\n\nThe three stand together in one garden bed in Piazza Giorgio Vasari, a residential square in Campo di Marte, easy to mistake for an ordinary planting until you look at the trunks. The largest measures just over four metres round and rises about eighteen and a half metres, with two slightly smaller companions beside it, at just under four metres and three and a half metres round. Italy's national monumental tree register lists all three separately, cross checked here against Tuscany's own citizen register, which recorded the largest still in good health as recently as October 2025, weeks before the felling notice went out.\n\nNobody has recorded their age: hackberries can stand for centuries unremarked, and this entry will not guess where it cannot measure. What is documented is rarer than age, a protection order that held, in a square minutes from a busy railway station with nothing between you and the trunks but open grass.",
+      "how_to_recognise": "You can recognise it by three hackberries planted close together in one garden bed, the largest just over four metres round. It stands in Piazza Giorgio Vasari, Campo di Marte.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://ilregistrodeglialberi.it/16900-bagolaro-piazza-vasari-bagolaro-firenze-fi-toscana",
+        "https://www.lanazione.it/firenze/cronaca/ponte-al-pino-comincia-la-f7b338b5",
+        "https://lafirenzechevorrei.it/ponte-al-pino-addio-a-21-alberi-storici-due-sono-nella-lista-regionale-degli-esemplari-monumentali/"
+      ],
+      "access": "Free. Public piazza garden in the Campo di Marte area, open at all times, no gate.",
+      "transport": "Bus stop 'Vasari' about 1 min walk; Firenze Campo di Marte railway station about 10-12 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

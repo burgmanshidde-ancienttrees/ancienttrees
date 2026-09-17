@@ -18,6 +18,59 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation) - Florence 26 -> 27; city_queue.py stops re-recommending settled dead ends
+
+Picked up two claims an earlier attempt in this window left standing. Vilnius's
+verify work (register confirmed exhausted) was already done and logged in the
+entry below; released the claim, nothing further to do.
+
+**Florence 26 -> 27**, flo_027, "The Hackberries of Piazza Vasari" (Mediterranean
+Hackberry, three MASAF register twins folded into one entry per the register-
+twins rule, girth 407cm). Resolves a stale "Three Hackberries of the Cascine"
+lead: the name was wrong (Piazza Giorgio Vasari in Campo di Marte, not the
+actual Cascine park 4-5km away), and settles an "alive now" question that had
+stalled two earlier passes: RFI announced felling 21 trees in this garden in
+November 2025 for a railway-bridge rebuild, but La Nazione states plainly the
+historic/monumental trees were excluded, and RAMI's own page shows the pinned
+tree measured healthy on 14 Oct 2025, weeks before the felling. Four sources.
+Also checked and closed: the Isolotto poplar candidate turned out to already
+be published (flo_026, same MASAF sheet id, missed by the dispatched pass's
+own search); two more candidates confirmed comune Fiesole, not Florence
+(matching two already-flagged Wikidata wrong_city leads). Story written and
+merged by the session (one tree, below the six-candidate write-pass batching
+floor); Italian overlay (data/i18n/it/florence.json) updated in the same
+commit, including the stale "26 giganti" count in its title/meta_description.
+
+**city_queue.py --next was re-recommending cities an earlier pass had already
+settled as dead ends**, discovered while picking a new-coverage target: Dubai
+and Taormina each carry a written verdict in their own `data/leads/*.json`
+file (no publishable supply; every register tree on private hotel grounds),
+but neither note was ever read by the queue script, so both kept printing as
+openable. This exact rediscovery is logged across at least seven sessions
+since 2026-09-08 (Taormina alone: 09-08, 09-11, 09-12, 09-13 x3, 09-16).
+Added `settled_verdict()` to scripts/city_queue.py: it matches a leads file by
+slug and checks its `note` for verdict phrasing already in use ("VERDICT:",
+"kept so nobody re-run", "do not re-run/re-research this"); settled cities
+move to a new SETTLED section instead of OPENABLE/NAMED BY HIDDE/movable.
+While checking the remaining OPENABLE list, found the same failure one layer
+deeper: Trier's supply (9 register rows, 4 Wikidata candidates) is entirely
+cross-border Luxembourg trees (Rosport-Mompach, Mertert, Manternach,
+Echternach, Berdorf, Flaxweiler communes, 10.7-21km out), matched by raw
+distance with no jurisdiction check, the same mistake already recorded for
+Florence/Fiesole. Wrote a settled verdict for Trier too. The remaining
+OPENABLE cities (Adelaide, Zagreb, Lagos, Ravenna, Niagara Falls, Wellington,
+Mechelen, Gran Canaria, Kilkenny, Ischia, Izmir, Stirling, Canterbury, Evora,
+Stratford-upon-Avon, La Palma) all sit at 0-2 register rows plus 1-8 Wikidata
+leads, well below the six-candidate floor; not dispatched.
+
+Confirmed the iOS app's newest CI failure (`testEveryFlowLeavesAWayBack`,
+floor job, 2026-09-16) is the same documented flaky tap race already recorded
+in FlowWalk.swift's own comments and `drafts/ios-floor-retry.patch` (FOR
+HIDDE: the fix needs a `workflow`-scoped push token this bot does not have,
+reconfirmed 2026-09-16). Not re-attempted.
+
+`python3 scripts/qa.py`, `preflight.py` and `superlatives.py` all pass clean.
+
 ## 2026-09-17 - Milan 29 -> 30, target reached; Vilnius register confirmed exhausted
 
 Two parallel verify passes on the depth-allowed roster (DATA.md 2026-09-15: alicante and krakow were already at/above target despite showing in the queue's "staged for verify" list, so picked the two below instead, both below target with real register supply).
