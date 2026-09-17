@@ -134,6 +134,7 @@ export const SIGNIN_JS = `
     // at all here.
     var sb = document.getElementById('signin-sub');
     if (sb) sb.hidden = true;
+    dlg.classList.add('signin-dialog--app');
     // "Get the app" at the foot of the last screen is the same offer as the
     // loud button at the top of the first one. One of them goes, and it is the
     // quiet duplicate rather than the thing the sheet leads with.

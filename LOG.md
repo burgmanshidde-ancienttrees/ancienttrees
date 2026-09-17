@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 - Spacing becomes a number, because eyes cannot see it
+
+Hidde, on a sheet whose every element was right: "verticale spacing ziet er
+beter uit bij alltrails let op dat soort dingen onthou dit".
+
+He was right and the gap was not small. Measured off his screenshots against
+our render: the app pill was 50 tall among 48s, the rule block ran 61 where the
+reference has 51, and the headline sat 8pt above the loud button where the
+reference leaves 32. That last one had a cause worth naming: hiding the
+subtitle on a phone took its bottom margin with it, so the space that looked
+like a decision was only ever the gap before a paragraph.
+
+All three are fixed and every gap now lands within a point or two: pills 48,
+16 between them, 50 across the rule, 32 under the headline.
+
+**"Onthou dit" is a check rather than a note.** The numbers are in
+scripts/layout_rules.py, the one file both platforms read, and the smoke test
+measures the rendered sheet against them on every push in BOTH shapes, since a
+phone gets the app button, loses the subtitle and gains the rule. Proven to
+fire before being trusted: a deliberate 56pt pill with 10pt gaps turned it red
+with eleven named faults.
+
+Spacing earns a check more than most things do. It is the fault that reads as
+cheapness while nobody can say what is wrong, so it survives every gate that
+asks whether an element EXISTS and every review by eye, which is how three of
+them got through in one afternoon here.
+
+**Also fixed on desktop:** a stray "or" sat between Apple and More options,
+separating nothing. Same collision as before, `display:flex` beating the
+[hidden] attribute, which is now twice this exact thing has cost a visible
+fault.
+
 ## 2026-09-17 - The sheet's second screen, from the reference's own
 
 Hidde sent the expanded state and said to build it "behalve de Facebook optie".

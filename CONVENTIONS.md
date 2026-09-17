@@ -298,6 +298,27 @@ prominent than the others, which a front screen offering Google while Apple
 waits behind a disclosure would break. Same weight, same shape, order changed
 for a published rule rather than for taste.
 
+**THE VERTICAL RHYTHM, which is the part that reads as quality and the part
+nobody can name.** Hidde, after a rebuild whose elements were all correct:
+"verticale spacing ziet er beter uit bij alltrails let op dat soort dingen
+onthou dit". Measured off both screenshots:
+
+| | reference |
+|---|---|
+| pill height, loud and quiet alike | 48pt |
+| between two adjacent pills | 16pt |
+| across the rule, loud pill to next | 51pt |
+| headline to the loud pill, no subtitle | 32pt |
+| icon to headline | ~25pt |
+| sheet top to icon | 60pt |
+
+These live in `scripts/layout_rules.py` and `scripts/smoke_test.py` measures the
+rendered sheet against them on every push, in both shapes, because spacing is
+the one fault that survives a screenshot. Three had already got through in an
+afternoon: an `<a>` computing a 50pt pill among 48s, a rule block at 61, and a
+headline left 8pt above a button because hiding the subtitle took its margin
+with it. Every one was invisible to the eye and obvious in a number.
+
 **What they actually do, top to bottom.** A close cross in a grey circle, top
 right. The app icon as a large rounded tile, roughly 104px, centred. A big bold
 headline over two balanced lines. ONE dark filled pill at full width, tall. A
