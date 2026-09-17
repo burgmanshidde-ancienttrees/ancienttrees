@@ -45,6 +45,15 @@ const { title, description, canonical, ogType = "article", headExtra = "", foote
 // its stories in Spanish or Japanese inside an English frame; see
 // site/src/lib/ui-strings.ts for the measurement and the convention behind it.
 const t = chrome(lang);
+/** Nav and footer links that have a translated twin, pointed at the reader's
+ * own language. Added 2026-09-17 after qa.py's orphan check caught all seven
+ * /[lang]/explore pages: they were built and nothing on the site linked to
+ * them, because this bar always said /explore. Only the two indexes that
+ * exist in every language are switched; the rest stay English on purpose
+ * until their own translated versions exist. */
+const L = (path: string) => (lang === "en" ? path : `/${lang}${path}`);
+const TRANSLATED_PATHS = new Set(["/explore", "/cities"]);
+const nav = (path: string) => (TRANSLATED_PATHS.has(path) ? L(path) : path);
 
 if (title.length > TITLE_MAX) {
   throw new Error(`${canonical}: title exceeds ${TITLE_MAX} chars (${title.length}): ${JSON.stringify(title)}`);
@@ -125,13 +134,13 @@ const year = new Date().getFullYear();
       only-mobile/only-desktop pair is what swaps them; nothing is dropped at
       either width. */}
   <nav class="bar-links">
-    <a href="/explore" class="bar-map only-desktop">{t.map}</a>
+    <a href={nav("/explore")} class="bar-map only-desktop">{t.map}</a>
     <details class="nav-drop">
       <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
       <div class="nav-drop-menu">
         <p class="nav-group">{t.browse}</p>
-        <a href="/explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>{t.map}</a>
-        <a href="/cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>{t.cities}</a>
+        <a href={nav("/explore")} class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>{t.map}</a>
+        <a href={nav("/cities")}><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>{t.cities}</a>
         <a href="/countries"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>{t.countries}</a>
         <a href="/species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>{t.species}</a>
         <a href="/parks"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>{t.parks}</a>
@@ -213,8 +222,8 @@ const year = new Date().getFullYear();
     </div>
     <div class="footer-col">
       <h4>{t.explore}</h4>
-      <a href="/explore">{t.map}</a>
-      <a href="/cities">{t.cities}</a>
+      <a href={nav("/explore")}>{t.map}</a>
+      <a href={nav("/cities")}>{t.cities}</a>
       <a href="/countries">{t.countries}</a>
       <a href="/species">{t.species}</a>
       <a href="/collections">{t.collections}</a>
