@@ -11,9 +11,10 @@
         "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15503409120).jpg",
         "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(23353240079).jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Zelkova (Zelkova serrata)",
       "species_basis": "confirmed by hitozato-kyoboku.com survey and Commons category, which both name Zelkova serrata directly",
+      "status_correction_2026-09-17": "Status field corrected from 'lead' to 'held' to match the verify_2026-09-04 note below, which already concluded HELD twice (no festival/rite/record-holder claim found, and Sakurai falls outside Nara's ~30-minute day-trip boundary). No new research performed; this is a bookkeeping fix only.",
       "verify_2026-09-04": "Verified 2026-09-04, real and alive (photographed 2023-07-25 per hitozato-kyoboku.com survey site, which also cites a 2023-04 Ministry of Environment giant-tree database measurement: height 22m, girth 605cm; an older Kinki-regional survey gives height 10m, girth 5.2m). Estimated age 'roughly 800 years' per on-site signage (a legend/tradition, not a documented planting record). Stands in front of the surviving Amida Hall of the former Jionji temple in Jionji, Sakurai City, Nara Prefecture, next to Tamatsura Shrine; leans out over the road from a stone retaining wall. NOT a National or Prefectural Natural Monument, only a Nara-Prefecture-signed 'protected tree' (hogo jumoku), so evidence is thinner than most of this file's other entries. Two independent sources: hitozato-kyoboku.com's detailed survey page (measurements, coordinates, history) and the Commons category description (independently giving the same coordinates and confirming species/location). HELD rather than shipped: no festival, rite, record-holder claim or notable legend beyond generic signage was found, so it does not clearly clear the single-tree-destination bar, and Sakurai sits a 27-31 minute DIRECT TRAIN from Nara Station alone (JR Sakurai Line/Manyo Mahoroba Line), which with station walks on both ends runs well past the ~30 minute day-trip boundary from Nara's centre, so it should not be added to data/cities/nara.json either. A future pass with more time, or evidence of a stronger fame signal, could still publish it standalone (Sakurai has no published city page) or fold it into a future Sakurai/Hase-dera area page. 2026-09-05 (famous-japan-batch-i verify pass, candidate 9 of 12): checked the actual distance to Uda specifically rather than trusting the tools rough 10.4km figure. The tree sits in Jionji, Sakurai City (administratively separate from Uda City); straight-line distance to Uda's own nearest published tree (uda_001, Honmura, Ouda) is 6.84km, not 10.4km, and to Uda's other two trees 13.1-13.2km. A Nara Kotsu bus (route 71, Sakurai Station south exit toward Oudakoko-mae) does run between Sakurai and the Ouda area, so a transit connection exists in principle, but no direct-route time was confirmed and Uda's own three trees already accept 40-60 minute bus-plus-walk or car-only journeys (see their own transport fields), meaning Uda functions as a car-day-trip container rather than a walkable cluster. Given that precedent, a car/bus joinder to Uda is geographically plausible (closer than the tool suggested) but not confirmed as a specific transit time, and the more fundamental blocker is unchanged: still no festival, rite or record-holder claim found beyond generic prefectural-tree signage, so it does not clearly clear the bar for its own place either. Left HELD as before; not re-verified from scratch, no verified_record produced."
     },
     {
@@ -385,9 +386,10 @@
         "https://commons.wikimedia.org/wiki/File:Mishima-taisha_kinmokusei.JPG",
         "https://commons.wikimedia.org/wiki/File:Mishima_taisya_03.jpg"
       ],
-      "status": "lead",
-      "species": "Osmanthus (Osmanthus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "Sweet Osmanthus (Osmanthus fragrans var. thunbergii)",
+      "resolved": "2026-09-17: verified, written and published as ata_003, 'The Kinmokusei of Mishima Taisha', in data/cities/atami.json. Container decided in favour of joining Atami (one JR Tokaido Line stop away, well within the day-trip boundary, honestly labelled with Mishima's own address and transport per the day-trip rule), matching the precedent already set by ata_002 (Yugawara). National Natural Monument since 1934, estimated 1,200+ years by tradition, a documented annual community festival (Mokusei no Yuu) at peak bloom.",
+      "delivered_id": "ata_003"
     },
     {
       "name": "Mochi Tree, Hōgon-ji",

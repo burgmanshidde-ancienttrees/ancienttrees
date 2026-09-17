@@ -138,3 +138,25 @@ Zero usable photos for all eight. What was searched and what is there:
   - `Drammatic .....Sequoia - panoramio.jpg`, CC BY-SA 3.0. Rejected: GPS is 150 m from either registered
     redwood, so the subject cannot be established.
 Next place to look is iNaturalist and Flickr geosearch on the two park polygons, not Commons.
+
+### Il Piccolo survey, fetched 2026-09-17 (partial pass, no output produced, claim released)
+Article: "Dai recinti alle potature: la tutela dei 48 alberi piu antichi di Trieste"
+(Il Piccolo, Francesco Codagnone, 2025-03-24), matching the technique CLAUDE.md's Step 1
+names for Trieste specifically. Confirms FVG holds ~1,500 registered monumental trees
+regionally and Trieste has the most of any city (48, 26 comune-owned). Two named
+candidates NOT yet in this file, worth checking against the register before a future
+verify pass:
+- **A hackberry (bagolaro/Celtis australis) in Piazza Hortis**, over 22m tall, dated
+  "oltre 180 anni" by the article, due to be fenced off (root protection) by autumn 2025.
+  Distinct from anything already in this file; not one of tri_001-006.
+- **A London plane on Viale al Cacciatore, near the Boschetto roundabout**, the article's
+  own claim for Trieste's SINGLE OLDEST tree, "oltre 200 anni". Also not yet in this file.
+Other sites named with monumental trees but not yet checked: Giardino pubblico Muzio de
+Tommasini (14 registered trees, "presto se ne aggiungeranno altri quattro"; already the
+site of tri_006's chestnut twins per above, so check for double-counting), Parco di
+Miramare (13 monumental trees under Ministero della Cultura care, including a rare
+Cupressus sabiniana/gray pine "pino fantasma"; tri_001/002/004 already sit here per
+above, check for overlap), Villa Revoltella, Villa Cosulich, Dolina di Percedol, and the
+garden at Piazzale Rosmini. Trieste sits at 10/20 target trees; this is genuine unmined
+supply, not yet verified. `tmp_verify/ilpiccolo.html` and `.txt` (the raw fetch) were not
+committed; re-fetch if needed, URL is in the article title above.
