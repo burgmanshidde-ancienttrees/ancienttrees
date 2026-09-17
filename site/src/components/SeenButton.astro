@@ -1,0 +1,53 @@
+---
+// Convention: our own app's map callout, which has carried "I have seen this
+// one" / "Ticked off" with checkmark.seal since 2026-08-21; and beyond it
+// AllTrails, whose trail card carries a "Completed" toggle in exactly this
+// place, beside the heart. Neither invents anything here: the whole point is
+// that the web catches up with the phone rather than growing a third idea.
+//
+// THE TICK EXISTED ON THE WEB IN EVERY PART BUT THIS ONE. visited-sync-js.ts
+// reads the account's list, collection-js.ts writes a tick, city-map-script.ts
+// paints the pins and the passport counter, the CSS for the badge has been in
+// style.css for weeks, and city-map-script's own head comment says out loud
+// what was wrong: "no template anywhere emits `class=seen-btn`". So collecting,
+// which is one of the four verbs, worked on the phone and was unreachable on
+// the site. Hidde, 2026-09-12: "trek dit allemaal gelijk."
+//
+// NO PROXIMITY GATE, which is the one place the old dead code was also wrong.
+// It asked the browser where you were and refused the tick from more than a
+// few metres away. DECISIONS.md 2026-08-20 settles it: "GPS proximity is a
+// BONUS, never a gate", because accuracy under a canopy is 30 to 100 metres
+// and a veteran tree in a wood is exactly where it is worst, so a gate calls
+// somebody standing at the tree a liar. The app ticks on a tap. So does this.
+//
+// It needs an account, like the heart and for the same reason (2026-09-02:
+// "alles wat wordt opgeslagen, moet op je account zijn"). Signed out, it opens
+// the one sign-in dialog and stores nothing.
+//
+// Labels ride on data attributes so seven languages need one component, not
+// seven; the click and the paint live in tree-actions-js.ts by delegation,
+// which is what puts them on every page that already renders a heart.
+interface Props {
+  treeId: string;
+  treeName: string;
+  labelSeen?: string;
+  labelDone?: string;
+}
+const { treeId, treeName, labelSeen = "I have seen this one", labelDone = "Ticked off" } = Astro.props as Props;
+---
+<button
+  class="seen-btn"
+  type="button"
+  data-tree={treeId}
+  data-name={treeName}
+  data-l-seen={labelSeen}
+  data-l-done={labelDone}
+  aria-pressed="false"
+  aria-label={`${labelSeen}: ${treeName}`}
+>
+  <svg class="seen-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path class="seen-seal" d="M12 2.6l2.2 1.7 2.8-.3 1 2.6 2.4 1.4-.7 2.7.7 2.7-2.4 1.4-1 2.6-2.8-.3L12 21.4l-2.2-1.7-2.8.3-1-2.6L3.6 16l.7-2.7-.7-2.7 2.4-1.4 1-2.6 2.8.3z"/>
+    <path class="seen-tick" d="M8.6 12.2l2.3 2.3 4.5-4.6"/>
+  </svg>
+  <span class="seen-text">{labelSeen}</span>
+</button>

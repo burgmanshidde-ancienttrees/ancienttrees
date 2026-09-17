@@ -1,0 +1,8 @@
+{
+  "city": "Trier",
+  "country": "Germany",
+  "city_slug": "trier",
+  "note": "VERDICT: Trier has no publishable supply right now, checked 2026-09-17. city_queue.py --next lists 9 register rows and 4 Wikidata candidates within 20km, all pulled from data/registers/luxembourg-anf.json by raw distance. Read each row's own 'commune' field: every one sits in Rosport-Mompach, Mertert, Manternach, Echternach, Berdorf or Flaxweiler, all Luxembourg communes 10.7 to 21 km away, across the border. None of them is a Trier (Germany) tree; the queue's near() distance search does not know about the international boundary. This matches the exact mistake CLAUDE.md already records for Florence/Fiesole and Milan/wider-metropolitan-area register rows: distance is not the same question as jurisdiction. Kept so nobody re-runs this hunt against Trier. Not investigated as a possible Luxembourg-side city (Echternach or a Mullerthal-region cluster): the candidates share a real geographic cluster around Rosport-Mompach/Mertert/Manternach/Echternach/Berdorf and might be worth a fresh brief under one of those names, but that is a different city than Trier and out of scope for this note.",
+  "leads": [],
+  "blocked": []
+}

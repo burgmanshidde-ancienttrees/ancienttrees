@@ -62,13 +62,27 @@ final class FlowWalk: XCTestCase {
     /// race rather than a fault: a test that fails only where the machine is
     /// busy is testing the machine.
     ///
-    /// Ten seconds, and it costs nothing when the element is already there,
-    /// because waitForExistence returns as soon as it appears. It deliberately
-    /// does NOT assert: a missing button still fails on the next line, with the
-    /// tap's own message and its screenshot, rather than being renamed here.
+    /// The same message recurred on the same button on the floor job on
+    /// 2026-09-12, ten seconds later that day's runner was still busier than
+    /// the one this was tuned against. Twenty seconds, still free when the
+    /// element is already there, because waitForExistence returns as soon as
+    /// it appears. It deliberately does NOT assert: a missing button still
+    /// fails on the next line, with the tap's own message and its screenshot,
+    /// rather than being renamed here.
+    ///
+    /// Widening this further is NOT the fix: AncientTreesUITests.swift's own
+    /// search test carries the same flake, already widened to 45s, and still
+    /// failed at 45s on this exact date. The real fix is a retry flag on the
+    /// floor job's xcodebuild call (matching what ios.yml's "test" job already
+    /// carries, `-retry-tests-on-failure -test-iterations 2`), blocked since
+    /// 2026-09-09 on the bot token lacking `workflow` scope: confirmed again
+    /// 2026-09-13, a bare `git push` on that one line is refused outright.
+    /// The one-line diff sits ready to apply at drafts/ios-floor-retry.patch;
+    /// see that file's comment and LOG.md 2026-09-09/13 before spending more
+    /// time here.
     private static func tap(_ app: XCUIApplication, _ id: String) {
         let b = app.buttons[id].firstMatch
-        _ = b.waitForExistence(timeout: 10)
+        _ = b.waitForExistence(timeout: 20)
         b.tap()
     }
 

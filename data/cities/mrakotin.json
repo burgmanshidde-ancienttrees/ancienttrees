@@ -1,0 +1,69 @@
+{
+  "city": "Mrákotín",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Mrákotín maps one tree, and most Czechs can sing about it before they see it. The Pear Tree in the Middle of the Field is the solitary pear the folk song \"Stojí hruška v širém poli\" is named for, standing alone in arable land north of the village with nothing else on the horizon. Roughly 110 years old, protected since 1996, and elected Czech Tree of the Year 2023 with 6,433 votes. Free, reached along the field edge on the road to Malinné.",
+  "meta_description": "The Pear Tree in the Middle of the Field near Mrákotín: subject of a Czech folk song, Tree of the Year 2023, standing alone in open farmland.",
+  "question_meta": "Mrákotín's only mapped tree is the pear from the folk song \"Stojí hruška v širém poli\", Czech Tree of the Year 2023.",
+  "question_answer": "Mrákotín's only mapped tree is Hrušeň u Mrákotína, a solitary common pear standing alone in an open field north of the village, opposite a farmstead on the road to Malinné. It is the tree the well-known Czech folk song \"Stojí hruška v širém poli\" (a pear tree stands in the open field) is named for. Roughly 110 years old, it won the Czech Tree of the Year public vote in 2023 with 6,433 votes. It is free to visit, reached along the field edge.",
+  "question_context": "At roughly 110 years the tree is old for a common pear, a species that rarely passes 200; it has outlived collectivisation, the consolidation of smallholdings into larger fields, drainage works that took water out of the ground it stands in, and some inexpert pruning, and was given official protected status on 11 April 1996, late in its life. Nothing stands between it and the prevailing west wind, so its crown grew lopsided, reading from a distance as a tree leaning away from something; it is eight metres tall and 183 centimetres round, and the only tree in view across the field. In late April it flowers white, visible from the road well before you reach it. It won the Czech Tree of the Year vote in 2023 with 6,433 votes and went on to the European final. There is no formal marked trail, but a Czech tourism source describes reaching it without difficulty along the field edge even when the surrounding field is under crop; it is a rural spot near the Chrudim District village of Mrákotín, reached on foot or by car.",
+  "hero_tree_id": "mrk_001",
+  "oldest_tree_id": "mrk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Mrákotín?",
+      "a": "The Pear Tree in the Middle of the Field, the only mapped tree here, a common pear roughly 110 years old."
+    },
+    {
+      "q": "Why is this pear tree famous?",
+      "a": "It is the tree named in the well-known Czech folk song \"Stojí hruška v širém poli\" (a pear tree stands in the open field), and it won the Czech Tree of the Year public vote in 2023 with 6,433 votes."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no tickets or hours. It stands alone in a working arable field beside the road to Malinné, reached along the field edge."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car or on foot from Mrákotín village in the Chrudim District; there is no public transport nearby."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mrk_001",
+      "name": "The Pear Tree in the Middle of the Field",
+      "species": "European Pear (Pyrus communis)",
+      "age_estimate": "roughly 110 years",
+      "age_min": 90,
+      "age_max": 130,
+      "girth_cm": 183,
+      "height_m": 8,
+      "location": {
+        "address": "In an open field north above the village of Mrákotín, opposite a farmstead, near the road to Malinné, Chrudim District, Pardubice Region",
+        "latitude": 49.81877,
+        "longitude": 15.95953,
+        "neighbourhood": "Mrákotín (okres Chrudim)"
+      },
+      "story": "Most Czechs can sing about this tree before they ever see it. The folk song \"Stojí hruška v širém poli\", a pear tree stands in the open field, belongs to this one: a solitary pear in arable land north of Mrákotín, with nothing else on the horizon.\n\nAt roughly 110 years it is old for its species, which rarely passes 200. It has outlived most of what the twentieth century did to the fields around it: collectivisation, the consolidation of smallholdings into large blocks, drainage works that took water out of the ground it stands in, and some inexpert pruning. Protected status arrived on 11 April 1996, late in its life.\n\nThe wind did the shaping. Nothing stands between it and the west, so the crown grew lopsided, and from a distance it reads as a tree leaning away from something. Eight metres tall and 183 centimetres round: small, and the only thing in view for a field's width in any direction. In late April it flowers white, which in an otherwise empty field you can see from the road long before you reach it.\n\nIn 2023 it won the Czech Tree of the Year vote with 6,433 votes and went on to the European final. A pear tree in a field, elected.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Hru%C5%A1e%C5%88_u_Mr%C3%A1kot%C3%ADna",
+        "https://www.kudyznudy.cz/aktivity/mrakotinska-hruska-v-sirem-poli"
+      ],
+      "access": "Free. Stands alone in a working arable field beside the road to Malinné; no formal marked trail found, but a tourism source describes reaching it 'without problems' along the field edge even when the surrounding field is sown with crop. Informal field-edge access rather than a paved path.",
+      "transport": "Rural, no public transport nearby; reached by car or on foot from Mrákotín village, Chrudim District.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the lopsided crown, pushed out of shape by the west wind, and by the fact that it is the only tree there. It stands alone in the field north of Mrákotín, opposite the farmstead on the road to Malinné.",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "late April, when it flowers white and carries across the empty field"
+      }
+    }
+  ]
+}

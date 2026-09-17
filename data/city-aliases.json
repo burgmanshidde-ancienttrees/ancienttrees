@@ -303,6 +303,9 @@
       "Barium",
       "Bare"
     ],
+    "bataszek": [
+      "Batasek"
+    ],
     "bath": [
       "Batas",
       "Bāta",
@@ -408,6 +411,11 @@
       "Bononia",
       "Bolonjo",
       "Bolonne"
+    ],
+    "bonnerue": [
+      "Houffalize",
+      "Houffalize'i vald",
+      "Oufalijhe"
     ],
     "borculo": [
       "Borklo"
@@ -1010,6 +1018,14 @@
       "Fort Uert",
       "Fort-Uort"
     ],
+    "fortaleza": [
+      "Fortalexia",
+      "Fortalez",
+      "Fortalezo",
+      "Fortoleza",
+      "Nīwe Olisipo",
+      "ma tomo Potalesa"
+    ],
     "fortingall": [
       "Fartairchill"
     ],
@@ -1189,6 +1205,10 @@
     ],
     "gonzales-texas": [
       "Gonzales"
+    ],
+    "gornja-stubica": [
+      "Gmina Gornja Stubica",
+      "Comuna Gornja Stubica"
     ],
     "gothenburg": [
       "Göteborg",
@@ -1507,6 +1527,9 @@
     "iwata": [
       "Ivata",
       "Iwata-chhī"
+    ],
+    "jalhay": [
+      "Djalhé"
     ],
     "jihlava": [
       "Iglavia"
@@ -2458,6 +2481,11 @@
       "Perugge",
       "Peruggia"
     ],
+    "perusic": [
+      "Gmina Perušić",
+      "Comuna Perušić",
+      "Perušičius"
+    ],
     "philadelphia": [
       "Philadelphie",
       "Filadelfia",
@@ -2508,6 +2536,9 @@
       "Poleský národní park",
       "Parcul Național Poleski",
       "Polesės nacionalinis parkas"
+    ],
+    "portalegre": [
+      "Portus Alacer"
     ],
     "portland": [
       "Portland i Oregon",
@@ -2736,6 +2767,12 @@
       "Vimmerby udalerria",
       "Concello de Vimmerby",
       "Kommun Vimmerby"
+    ],
+    "s-gravenvoeren": [
+      "Voeren",
+      "Fourons",
+      "Vurenas",
+      "Voere"
     ],
     "sakegawa": [
       "Sakegava",
@@ -2993,6 +3030,13 @@
       "Naakigo Hadahiilíinii",
       "Spocāne",
       "Spokan"
+    ],
+    "sremski-karlovci": [
+      "Srijemski Karlovci",
+      "Karlóca",
+      "Carloviț",
+      "Karlofça",
+      "Carolovicia"
     ],
     "stary-smokovec": [
       "Stary Smokowiec",
@@ -3409,6 +3453,11 @@
       "Las Waipoua",
       "Waipoua-erdő"
     ],
+    "waremme": [
+      "Borgworm",
+      "Wareme",
+      "Wèrm"
+    ],
     "warsaw": [
       "Warschau",
       "Varsovie",
@@ -3611,6 +3660,7 @@
     "barcelona": "Barcelona",
     "bargischow": "Bargischow",
     "bari": "Bari",
+    "bataszek": "Bátaszék",
     "bath": "Bath, Somerset",
     "beijing": "Beijing",
     "belfast": "Belfast",
@@ -3624,6 +3674,7 @@
     "boise": "Boise, Idaho",
     "bojnice": "Bojnice",
     "bologna": "Bologna",
+    "bonnerue": "Houffalize",
     "borculo": "Borculo",
     "bordeaux": "Bordeaux",
     "borrowdale": "Borrowdale",
@@ -3714,6 +3765,7 @@
     "formentera": "Formentera",
     "fort-lauderdale": "Fort Lauderdale, Florida",
     "fort-worth": "Fort Worth, Texas",
+    "fortaleza": "Fortaleza",
     "fortingall": "Fortingall",
     "frankfurt": "Frankfurt",
     "freiburg": "Freiburg im Breisgau",
@@ -3738,6 +3790,7 @@
     "glastonbury": "Glastonbury",
     "gliniak": "Gliniak",
     "gonzales-texas": "Gonzales, Texas",
+    "gornja-stubica": "Gornja Stubica",
     "gothenburg": "Gothenburg",
     "gottingen": "Göttingen",
     "granada": "Granada",
@@ -3792,6 +3845,7 @@
     "iwaki": "Iwaki, Fukushima",
     "iwata": "Iwata, Shizuoka",
     "jachymov": "Jáchymov",
+    "jalhay": "Jalhay",
     "jauze": "Jauzé",
     "jihlava": "Jihlava",
     "kaga": "Kaga, Ishikawa",
@@ -3850,6 +3904,7 @@
     "lyon": "Lyon",
     "maastricht": "Maastricht",
     "machov": "Machov",
+    "macon": "Macon, Belgium",
     "macugnaga": "Macugnaga",
     "madeira": "Madeira",
     "madrid": "Madrid",
@@ -3941,6 +3996,7 @@
     "perouges": "Pérouges",
     "perth": "Perth",
     "perugia": "Perugia",
+    "perusic": "Perušić",
     "philadelphia": "Philadelphia",
     "pisa": "Pisa",
     "pisz-forest": "Puszcza Piska",
@@ -3949,6 +4005,7 @@
     "polchow": "Pölchow",
     "poleski-national-park": "Polesian National Park",
     "port-renfrew": "Port Renfrew",
+    "portalegre": "Portalegre, Portugal",
     "portland": "Portland, Oregon",
     "porto": "Porto",
     "potsdam": "Potsdam",
@@ -3985,6 +4042,7 @@
     "rudy": "Rudy",
     "rumskulla": "Vimmerby Municipality",
     "runnymede": "Runnymede",
+    "s-gravenvoeren": "Voeren",
     "sachsenbrunn": "Sachsenbrunn",
     "sakegawa": "Sakegawa",
     "salamanca": "Salamanca",
@@ -4028,6 +4086,7 @@
     "sorrento": "Sorrento",
     "split": "Split, Croatia",
     "spokane": "Spokane, Washington",
+    "sremski-karlovci": "Sremski Karlovci",
     "stary-smokovec": "Starý Smokovec",
     "stelmuze": "Stelmužė",
     "stockholm": "Stockholm",
@@ -4092,8 +4151,10 @@
     "vienna": "Vienna",
     "villeneuve": "Villeneuve, Fribourg",
     "vilnius": "Vilnius",
+    "vir": "Vír",
     "vorden": "Vorden",
     "waipoua-forest": "Waipoua Forest",
+    "waremme": "Waremme",
     "warsaw": "Warsaw",
     "washington-dc": "Washington, D.C.",
     "wessobrunn": "Wessobrunn",
@@ -4131,6 +4192,7 @@
     "breda": "Breda",
     "breukelen": "Breukelen",
     "chadds-ford": "Chadds Ford, Pennsylvania",
+    "chiapa-de-corzo": "Chiapa de Corzo",
     "craigends": "Craigends",
     "cremines": "Crémines",
     "curinga": "Curinga",
@@ -4160,6 +4222,7 @@
     "llangernyw": "Llangernyw",
     "lue": "Luë",
     "machov": "Machov",
+    "macon": "Macon, Belgium",
     "malsfeld": "Malsfeld",
     "mcely": "Mcely",
     "mendaza": "Mendaza",
@@ -4199,6 +4262,7 @@
     "ueki": "Ueki, Kumamoto",
     "untermerzbach": "Untermerzbach",
     "velke-opatovice": "Velké Opatovice",
+    "vir": "Vír",
     "vorden": "Vorden",
     "wessobrunn": "Wessobrunn",
     "wolfheze": "Wolfheze",
@@ -4236,6 +4300,7 @@
     "lecina": "no article within 40 km, tried Lecina; Lecina, Spain; search: Results breakdown of the 1936 Spanish general election; search: Results breakdown of the 1931 Spanish general election; search: Results breakdown of the 1933 Spanish general election",
     "lukavice": "no article within 40 km, tried Lukavice (Lukavice, no coordinates, disambiguation page); Lukavice, Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic; search: Rychnov nad Kněžnou",
     "moffat": "no article within 40 km, tried Moffat (Moffat, no coordinates, disambiguation page); Moffat, United Kingdom; search: Steven Moffat; search: Glasgow; search: List of postcode districts in the United Kingdom",
+    "mrakotin": "no article within 40 km, tried Mrákotín (Mrákotín, no coordinates, disambiguation page); Mrákotín, Czech Republic; search: List of cities and towns in the Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic",
     "nagai": "no article within 40 km, tried Nagai (Nagai, no coordinates, disambiguation page); Nagai, Japan; search: Hiroshi Nagai; search: Nagai; search: List of cities in Japan",
     "neba": "no article within 40 km, tried Neba (Neba, no coordinates, disambiguation page); Neba, Japan; search: Toyota, Aichi; search: New Japan Cup; search: List of villages in Japan",
     "newtown": "no article within 40 km, tried Newtown (Newtown, no coordinates, disambiguation page); Newtown, United Kingdom; search: Newtown; search: New York City; search: Racism in the United Kingdom",
@@ -4256,10 +4321,12 @@
     "timber-creek": "no article within 40 km, tried Timber Creek (Timber Creek, no coordinates, disambiguation page); Timber Creek, Australia; search: Breakfast Creek Hotel; search: Cedar Creek, Queensland (Logan & Gold Coast); search: Wellington Mill, Western Australia",
     "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",
     "vainiai": "no article within 40 km, tried Vainiai; Vainiai, Lithuania; search: Do Architects; search: Gilma Teodora Gylytė",
+    "visnova": "no article within 40 km, tried Višňová (Višňová, no coordinates, disambiguation page); Višňová, Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic; search: Liberec-Jablonec agglomeration",
     "volkenroda": "no article within 40 km, tried Volkenroda; Volkenroda, Germany; search: Loccum; search: Pilgrims' way; search: Kamp Abbey",
     "vytogala": "no article for the village; the lookup matched Silale District Municipality, a different place 9 km away, so its names are not this place's names",
     "wilparting": "no article within 40 km, tried Wilparting; Wilparting, Germany",
     "wisniowa": "no article within 40 km, tried Wiśniowa (Wiśniowa, no coordinates, disambiguation page); Wiśniowa, Poland; search: Wrocław Water Tower; search: Kraków metropolitan area; search: Soplica",
+    "xhoris": "no article within 40 km, tried Xhoris; Xhoris, Belgium; search: List of castles and châteaux in Belgium; search: Theroigne de Mericourt; search: List of former municipalities in Wallonia",
     "zalgiriai": "no article within 40 km, tried Žalgiriai; Žalgiriai, Lithuania; search: List of schools in Lithuania; search: Vincas Pietaris",
     "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany"
   }

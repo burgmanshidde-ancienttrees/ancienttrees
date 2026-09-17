@@ -2,25 +2,16 @@
  "city": "Vilnius",
  "country": "Lithuania",
  "city_slug": "vilnius",
- "note": "From the 2026-08-16 register-first verify pass (STVK gpo_bot_t layer). 7 trees verified and delivered to data/research/vilnius-verified.json. Leads failed only the evidence bar, the count, or ran out of the pass's time window; blocked can never ship as they stand. Register source for all: data/registers/lithuania-stvk-gpo.json. Extended 2026-08-17 (verification pass, session-435fb395): 3 trees shipped to data/research/vilnius-verified.json (vln_008 Sapiegos Park Linden, vln_009 Kalnai Park Pine, vln_010 Amur Cork/Crimean Linden group of Bernardinai Garden). Four candidates newly BLOCKED (2 likely-dead register entries, 2 locked-company-grounds trees in Zverynas). Presidential Palace oaks and the Castle Park chestnut circle researched but left as leads on judgement calls (security screening; ensemble-vs-grove read) rather than shipped or blocked. Extended 2026-08-31 (verify pass): 1 tree shipped (vln_011, Philologists' Birch of Sarbievijaus Courtyard, second source found on flf.vu.lt). CORRECTION: 'The oldest linden' / 'Seniausia liepa' (register 0310505050028, 54.698341/25.30911) is NOT a new tree, it is a duplicate of the already-published vln_008 (Sapiegos Park Linden, 54.698333/25.309083, same tree per its own Lithuanian Wikipedia page 'Sapiegų parko liepa') -- removed from this list rather than left to mislead a future pass. Two Žvėrynas candidates checked: Žvėryno liepa moved to blocked (delisted 2016, deteriorated); Žvėryno pušis stays a lead (no second source found in two search attempts). A passcheck brief this pass also flagged two other 'unmined' register rows that turned out to be exact-coordinate duplicates of already-published trees: the Sereikiškės nine-trunked willow entry (= vln_005) and a second 'Kalnai park pine' register row (= vln_009). Worth checking whether the register-diff logic behind passcheck's brief is comparing rounded coordinates; both were flagged unmined despite being live. Extended 2026-08-31 (second verify pass this window): 2 trees shipped (vln_012 Lazdynai Linden, vln_013 Dvarčionys Oak), both flagged for thin sourcing (existence+species corroborated by a second independent source each, but no age/girth/address found). Two more researched and left as leads rather than shipped: Mickūnų ąžuolas and Žudiškių ąžuolas, both corroborated as real by a second source (vietoves.lt's own Vilniaus rajono savivaldybė natural-heritage catalogue, fetched directly) but both sit in Vilniaus rajono savivaldybė (Vilnius DISTRICT, not city) at 12.8km and 18km from centre with no verified public-transport time, so the day-trip boundary (~30 min) could not be confirmed either way; shipping either as in-town would risk the exact 'day-trip boundary' violation BRIEF_RESEARCH warns against. Two non-tree register rows also disposed of: 'Habitat of plant species listed in the Red Book' and 'Dendrological collection of miniature conifers by Juozas Leleika' (see blocked).",
+ "note": "Extended 2026-09-17 (verify pass, deepen target 30): re-ran passcheck's brief and confirmed the register is now fully mined, 40 of ~41 candidates within 20km already published, already a lead, or already blocked; the one nominally 'unmined' row (a second Kalnai park pine register entry) is an exact-coordinate duplicate of the already-published vln_009. Zero new register or Wikidata candidates existed to verify, so this pass shipped no new trees and instead resolved four open judgement calls an earlier pass had explicitly left pending. Two moved lead-to-blocked on hard rule 10 access grounds, both confirmed via direct source fetches rather than search summaries: the P.Vileišis palace Maple Circle (locked institutional courtyard) and the Presidential Palace park oaks (mandatory security screening of every visitor, matching the rule's own 'a guard who checks: no' example). The Bernardinai garden ash twin was found to already be folded into vln_007's own published story (no separate ship needed). The stale 'Belunai Oak' lead (day-trip-boundary question) was superseded by the existing blocked entry confirming that oak dead. Castle Park chestnut circle and Mickūnų ąžuolas leads were re-researched and left as leads with sharper reasons (the chestnut circle's blocker is now its age, ~60 years, rather than access; Mickūnai's transit time remains unconfirmed after a third attempt, an untrustworthy AI search summary rather than a read PDF). Group of four oaks in Sereikiškės park, Pilaitė Manor Pine, Bernardinai garden pedunculate oak, Žvėryno pušis, Dirkliškių miško ąžuolas, Viktoras Bergo ąžuolas and Žudiškių ąžuolas were left untouched, no new angle available within this pass's window. From the 2026-08-16 register-first verify pass (STVK gpo_bot_t layer). 7 trees verified and delivered to data/research/vilnius-verified.json. Leads failed only the evidence bar, the count, or ran out of the pass's time window; blocked can never ship as they stand. Register source for all: data/registers/lithuania-stvk-gpo.json. Extended 2026-08-17 (verification pass, session-435fb395): 3 trees shipped to data/research/vilnius-verified.json (vln_008 Sapiegos Park Linden, vln_009 Kalnai Park Pine, vln_010 Amur Cork/Crimean Linden group of Bernardinai Garden). Four candidates newly BLOCKED (2 likely-dead register entries, 2 locked-company-grounds trees in Zverynas). Presidential Palace oaks and the Castle Park chestnut circle researched but left as leads on judgement calls (security screening; ensemble-vs-grove read) rather than shipped or blocked. Extended 2026-08-31 (verify pass): 1 tree shipped (vln_011, Philologists' Birch of Sarbievijaus Courtyard, second source found on flf.vu.lt). CORRECTION: 'The oldest linden' / 'Seniausia liepa' (register 0310505050028, 54.698341/25.30911) is NOT a new tree, it is a duplicate of the already-published vln_008 (Sapiegos Park Linden, 54.698333/25.309083, same tree per its own Lithuanian Wikipedia page 'Sapiegų parko liepa') -- removed from this list rather than left to mislead a future pass. Two Žvėrynas candidates checked: Žvėryno liepa moved to blocked (delisted 2016, deteriorated); Žvėryno pušis stays a lead (no second source found in two search attempts). A passcheck brief this pass also flagged two other 'unmined' register rows that turned out to be exact-coordinate duplicates of already-published trees: the Sereikiškės nine-trunked willow entry (= vln_005) and a second 'Kalnai park pine' register row (= vln_009). Worth checking whether the register-diff logic behind passcheck's brief is comparing rounded coordinates; both were flagged unmined despite being live. Extended 2026-08-31 (second verify pass this window): 2 trees shipped (vln_012 Lazdynai Linden, vln_013 Dvarčionys Oak), both flagged for thin sourcing (existence+species corroborated by a second independent source each, but no age/girth/address found). Two more researched and left as leads rather than shipped: Mickūnų ąžuolas and Žudiškių ąžuolas, both corroborated as real by a second source (vietoves.lt's own Vilniaus rajono savivaldybė natural-heritage catalogue, fetched directly) but both sit in Vilniaus rajono savivaldybė (Vilnius DISTRICT, not city) at 12.8km and 18km from centre with no verified public-transport time, so the day-trip boundary (~30 min) could not be confirmed either way; shipping either as in-town would risk the exact 'day-trip boundary' violation BRIEF_RESEARCH warns against. Two non-tree register rows also disposed of: 'Habitat of plant species listed in the Red Book' and 'Dendrological collection of miniature conifers by Juozas Leleika' (see blocked).",
  "leads": [
   {
-   "name": "Maple circle in the P.Vileisis palace courtyard",
-   "name_lt": "P. Vileišio rūmų kiemo Klevų ratas",
-   "register_id": "0310506000014",
-   "lat": 54.69497,
-   "lng": 25.30533,
-   "status": "lead",
-   "why": "Ensemble candidate, 1.8km from centre, in the courtyard of a historic palace (now home to the Lithuanian Theatre, Music and Cinema Museum). Not researched; worth checking whether the courtyard is genuinely open to the public before shipping (hard rule 10 access test)."
-  },
-  {
-   "name": "Bernardinai garden ash (possible twin of the shipped three-trunked ash)",
+   "name": "Bernardinai garden ash (possible twin of the shipped three-trunked ash) -- RESOLVED, folded",
    "name_lt": "Bernardinų sodo uosis",
    "register_id": "0310505160014",
    "lat": 54.68324,
    "lng": 25.29825,
-   "status": "lead",
-   "why": "Sits about 30m from vln_007 (the three-trunked ash already shipped). Could be the same tree double-registered, a genuine second ash, or the tree that Wikipedia's generic \"Sereikiškių parko uosis\" entry refers to. Register-pitfall twins should fold into one entry; needs a ground check or a clearer source before deciding whether this is a separate tree worth its own page."
+   "status": "resolved_folded",
+   "why": "Sits about 30m from vln_007 (the three-trunked ash). Checked 2026-09-17: this is already handled, not a new candidate. vln_007's own published story explicitly discusses this second, unnamed ash 30m away and folds the ambiguity in rather than picking a winner ('The register itself carries another ash about thirty metres away with no trunk count at all, which might be that second entry or might be this same tree written down twice under another name... If you count four when you get there, tell us'). Register-pitfall twins fold into one entry per the rule, and that already happened here. Nothing further to ship."
   },
   {
    "name": "Kalnai park pine (register row 0310505020044) -- RESOLVED, duplicate",
@@ -56,15 +47,11 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Belunai Oak",
+   "name": "Belunai Oak -- RESOLVED, superseded by blocked entry",
    "name_lt": "Belūnų ąžuolas",
    "register_id": "0310505010101",
-   "lat": 54.6845,
-   "lng": 25.12796,
-   "status": "lead",
-   "why": "9.8km out, inside the day-trip boundary if public transport reaches it within roughly 30 minutes (unverified). Not researched this pass.",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "resolved_blocked",
+   "why": "This lead entry is stale: a later pass found this tree DEAD (see blocked list, 'Belunai Oak (Belūnų ąžuolas / Bieliūnų ąžuolas)', confirmed via lt.wikipedia's Bieliūnai village article, 'nūnai nunykęs'). The day-trip-boundary question this entry raised is moot. Kept rather than deleted so a future pass sees why it disappeared."
   },
   {
    "name": "Canadian poplar in Castle park",
@@ -143,16 +130,14 @@
    "lat": 54.68596,
    "lng": 25.29336,
    "status": "lead",
-   "why": "Researched this pass, has its own Wikipedia page (Kaštonų ratas Pilių parke): NOT a compact single specimen but 35 chestnut trees planted in two circles around the abandoned 'Rotonda' pavilion, spanning 16 ares (1600 sq m), on the southwest slope of Gediminas Hill. Reads more like a planted landscape feature than a single collectible point (closer to the blocked Vingis linden alley than to the shipped multi-trunk single trees), though it does have one obvious place to stand (the Rotonda). In 2015 the municipality planned to thin out aging/weakened trees for lacking sunlight, which also raises an individual-specimen alive-status question. Needs a judgement call with a photo in hand rather than a text-only read; leaving as a lead rather than blocking outright since the ensemble test is genuinely borderline."
+   "why": "Checked again 2026-09-17, still a lead, judgement call now sharper rather than resolved. Full fetch of its Lithuanian Wikipedia page: 29 of an original ~35 common horse-chestnuts survive, in two rings around the abandoned 'Rotonda' pavilion/cafe, 16 ares (1600 sq m), southwest slope of Gediminas Hill, trunk girth 1.10-2.19m at 1.3m, condition described as good/satisfactory and maintained. Several park paths lead into the circle, so access is genuinely public. But the trees are only 'apie 60 metų' (about 60 years old): this is a landscape-design feature (a planted ring around a pavilion) rather than an old or individually spectacular specimen, closer to the note_a_young_tree_is_not_ancient() territory than to a qualifying ensemble. Access is no longer the blocker; age and the ensemble-vs-planting read are. Leaving as a lead rather than shipping or blocking outright: a verify pass can state these facts but the 'would somebody walk to THIS' call on a 60-year-old planted ring belongs with eyes on a photo, which this pass does not hunt."
   },
   {
-   "name": "Presidential park oaks",
+   "name": "Presidential park oaks -- RESOLVED, moved to blocked",
    "name_lt": "Prezidentūros rūmų parko ąžuolai",
    "register_id": "0310506000010",
-   "lat": 54.683119,
-   "lng": 25.283873,
-   "status": "lead",
-   "why": "Researched this pass: nine individual oaks (Lithuanian 'devynių šimtamečių ąžuolų grupė' means nine oaks each roughly a century old, NOT one 900-year-old oak; the Wikipedia article's own history section is explicit, 'jame tebėra devyni senieji ąžuolai'). Real park, first documented 1387, on the eastern side of the Presidential Palace at the corner of Totorių and Liejyklos streets. Access is genuinely open to the public (confirmed via a second search: gates on Universiteto street or the security post at Totorių g. 28, seasonal hours, weekdays 18:00-21:00 and weekends/holidays 11:00-22:00 in the warm season) but EVERY visitor and their belongings is checked by security personnel, which matches BRIEF's own 'a guard who checks: no' example. Left as a lead rather than shipped or blocked: it is not a locked-out private site, but the security-screening question needs a session judgement call rather than a night-run default, and the entry would also need to pick one representative oak or treat the group as the collectible point."
+   "status": "resolved_blocked",
+   "why": "See blocked list. Moved 2026-09-17: the security-screening question this file had left open is settled by hard rule 10's own example ('a guard who checks: no')."
   },
   {
    "name": "Mickūnų ąžuolas (Mickūnai oak)",
@@ -161,7 +146,7 @@
    "lat": 54.703003,
    "lng": 25.491929,
    "status": "lead",
-   "why": "Researched this pass: existence corroborated by a second independent source (vietoves.lt's own Vilniaus rajono savivaldybė natural-heritage catalogue, fetched directly, lists it by name under Medžiai/Vilniaus rajono savivaldybė), but that source gives no age, girth, address or condition, matching the register's own bare entry. Mickūnai is a town in Vilnius DISTRICT municipality (not city), roughly 4km beyond the city boundary and ~12.8km from the register point to the city centre; it has its own railway station on the Vilnius-Ignalina-Turmantas line, so a day trip is plausible, but two attempts (a schedule search and a Moovit fetch that returned no content) could not confirm the door-to-door public transport time against the ~30 minute boundary. Left as a lead rather than shipped or blocked: worth a transit-time check before it could be presented honestly as reachable from Vilnius.",
+   "why": "Researched this pass: existence corroborated by a second independent source (vietoves.lt's own Vilniaus rajono savivaldybė natural-heritage catalogue, fetched directly, lists it by name under Medžiai/Vilniaus rajono savivaldybė), but that source gives no age, girth, address or condition, matching the register's own bare entry. Mickūnai is a town in Vilnius DISTRICT municipality (not city), roughly 4km beyond the city boundary and ~12.8km from the register point to the city centre; it has its own railway station on the Vilnius-Ignalina-Turmantas line, so a day trip is plausible, but two attempts (a schedule search and a Moovit fetch that returned no content) could not confirm the door-to-door public transport time against the ~30 minute boundary. Left as a lead rather than shipped or blocked: worth a transit-time check before it could be presented honestly as reachable from Vilnius. Third attempt 2026-09-17: found the published LTG Link Vilnius-Ignalina-Turmantas timetable PDF exists but a WebSearch summary of it produced self-contradicting departure/arrival figures (arrival times earlier than departure times), which per the search-summary-is-a-lead-never-a-source rule cannot be trusted; the PDF itself was not fetched and parsed this pass. What is clear without it: this is a long-distance regional line (continuing to Ignalina and Turmantas) with only a handful of daily departures, not a frequent commuter service, which makes a reliable sub-30-minute door-to-door claim unlikely even if one favourable train exists. Stays a lead; the day-trip claim should not be made without fetching and reading the actual PDF timetable.",
    "species": "Oak (Quercus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
@@ -176,6 +161,22 @@
   }
  ],
  "blocked": [
+  {
+   "name": "Maple circle in the P.Vileišis palace courtyard",
+   "name_lt": "P. Vileišio rūmų kiemo Klevų ratas",
+   "register_id": "0310506000014",
+   "lat": 54.69497,
+   "lng": 25.30533,
+   "reason": "Access fails hard rule 10. Six of an original eight over-100-year-old maples (girth 0.86-2.35m at 1.3m) stand in the courtyard of P. Vileišis Palace, Antakalnis (now the Lithuanian Literature and Folklore Institute). Its own Lithuanian Wikipedia page states plainly: 'objektas vietoje nebuvo nepažymėtas, išeiginėmis dienomis neprieinamas, nes buvo rakinamoje teritorijoje' (not marked on site, inaccessible on weekends, in a locked territory). Same pattern as the already-blocked Žvėrynas six-trunked linden and English oak (both on GIS-Centras's locked grounds): a real courtyard behind a gate that is not routinely open, not a churchyard-style walk-in. Checked 2026-09-17."
+  },
+  {
+   "name": "Presidential park oaks",
+   "name_lt": "Prezidentūros rūmų parko ąžuolai",
+   "register_id": "0310506000010",
+   "lat": 54.683119,
+   "lng": 25.283873,
+   "reason": "Access fails hard rule 10, resolving the judgement call an earlier pass left open. Nine individual oaks, each roughly a century old (Lithuanian 'devynių šimtamečių ąžuolų grupė', confirmed via the Wikipedia article's own text, 'jame tebėra devyni senieji ąžuolai', NOT one 900-year-old oak), inside the Presidential Palace's historic park on the palace's eastern side. The park is open on a seasonal schedule (weekdays 18:00-21:00, weekends/holidays 11:00-22:00 in the warm season) through gates on Universiteto street or a security post at Totorių g. 28, and closed around official visits. But every visitor and their belongings are checked by security personnel at entry, which is the rule's own named example of what fails the test ('a guard who checks: no'), distinct from an open gate or a ticket booth. Checked 2026-09-17."
+  },
   {
    "name": "Vingis park linden alley",
    "name_lt": "Vingio parko liepų alėja",

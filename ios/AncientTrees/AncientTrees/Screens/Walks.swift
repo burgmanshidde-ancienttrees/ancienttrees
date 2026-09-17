@@ -26,7 +26,7 @@ struct WalksView: View {
                     Text(item.walk.name).font(.headline)
                     Text(item.walk.city).font(.subheadline).foregroundStyle(.secondary)
                     HStack(spacing: 12) {
-                        Label("\(item.walk.count) trees", systemImage: "tree")
+                        Label(treesLabel(item.walk.count), systemImage: "tree")
                         Label(item.walk.duration, systemImage: "clock")
                         Label(String(format: "%.1f km", item.walk.km), systemImage: "figure.walk")
                     }

@@ -1,0 +1,65 @@
+{
+  "city": "Gornja Stubica",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Gornja Stubica is a small town in the Zagorje hills north of Zagreb, and its mapped tree is where Croatia's most famous peasant uprising is said to have begun. Local tradition holds that Matija Gubec gathered his followers under this lime before the Peasant Revolt of 1573, one of the defining events of Croatian history. The tree has outlived the revolt by nearly four and a half centuries: still standing beside the parish Church of St. George, protected as a natural monument since 1957, its trunk now measuring almost five metres round.",
+  "meta_description": "Gupčeva lipa in Gornja Stubica: the lime said to have sheltered Matija Gubec's followers before Croatia's 1573 peasant revolt.",
+  "question_meta": "Gupčeva lipa in Gornja Stubica is the lime tied to Matija Gubec and Croatia's 1573 Peasant Revolt, protected since 1957.",
+  "question_answer": "Gornja Stubica's only mapped tree is Gupčeva lipa, a lime standing beside the parish Church of St. George. Croatian tradition holds that the peasant leader Matija Gubec gathered his followers beneath it before the Peasant Revolt of 1573, which puts the tree at at least 450 years old; a 2021 survey measured its trunk at 4.90 metres round and its height at 9 metres. It has been protected as a natural monument since 1957.",
+  "question_context": "Croatia has no national register of monumental trees with an age field, so this page rests on two independent accounts: Krapinsko-zagorska County's own nature-protection page for the tree, and Croatian Wikipedia's entry, which cite the same 2021 measurements and agree on the historical tradition behind it. Neither source names the species beyond lipa, the Croatian word for lime, so it ships here as Tilia sp. rather than a guess between the small-leaved and large-leaved forms that both grow in the region, and neither gives an exact age. What both do say is that the tree was already standing, and already notable enough to gather men under, when the Peasant Revolt began in January 1573, which sets roughly 450 years as a floor rather than a ceiling. Its size argues for more: a 4.90 metre girth is large even among old European limes. The 1957 protection order predates most of Croatia's other tree designations, and the tree has since founded a living gene archive, with cuttings and seedlings propagated from it since 2007 to preserve its line beyond the original trunk.",
+  "hero_tree_id": "gst_001",
+  "oldest_tree_id": "gst_001",
+  "faq": [
+    {
+      "q": "How old is Gupčeva lipa?",
+      "a": "At least 450 years. Croatian tradition holds it was already standing in January 1573, when the peasant leader Matija Gubec is said to have gathered his followers beneath it before the Peasant Revolt began. Nobody has taken a growth-ring count, so treat that as a floor rather than a precise figure."
+    },
+    {
+      "q": "Why is it called Gupčeva lipa?",
+      "a": "It is named for Matija (Ambroz) Gubec, who led Croatia's 1573 Peasant Revolt and was executed for it that February. Local tradition says he rallied his followers under this tree's canopy before the uprising began."
+    },
+    {
+      "q": "Can I walk up to it?",
+      "a": "Yes. It stands in the open, beside the parish Church of St. George in the centre of Gornja Stubica, not on private land."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Gornja Stubica is a small town in the Zagorje hills, roughly 35 kilometres north of Zagreb. There is no dedicated public transport stop at the tree itself; it stands beside the parish church in the town centre, reachable on foot from anywhere in the village."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gst_001",
+      "name": "Gupčeva lipa",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "at least 450 years",
+      "age_min": 450,
+      "age_max": 550,
+      "girth_cm": 490,
+      "height_m": 9,
+      "location": {
+        "address": "Beside the parish Church of St. George (Sv. Juraj), Gornja Stubica",
+        "latitude": 45.9733448,
+        "longitude": 16.0134928,
+        "neighbourhood": "Gornja Stubica town centre"
+      },
+      "story": "Croatia's most consequential peasant uprising is said to have started under this tree's canopy.\n\nIn January 1573, tradition holds that Matija Gubec gathered his followers here before leading the Croatian-Slovene Peasant Revolt, an uprising against feudal lords across the Zagorje and Styria. It ended in defeat at the Battle of Stubičko Polje and Gubec's execution in Zagreb's main square, crowned in mockery with red-hot iron before being quartered, but it has stayed central to Croatian national memory ever since: streets, squares and a mountain peak carry his name. The tree was already substantial enough, by the story, to gather men beneath, which puts its age at 450 years and probably more; nobody has cored it to check.\n\nWhat is measured is the tree today. A 2021 survey put its trunk at 4.90 metres round and its height at 9 metres, a girth that would be remarkable for a lime of any documented age. It has stood under state protection since 1957, one of Croatia's earlier natural monuments, next to the parish Church of St. George in the middle of Gornja Stubica.\n\nThe tree's own future is now hedged. In 2007 foresters took roughly fifty cuttings from it, and by 2011 fifty-seven grafted seedlings had been planted as Croatia's first living gene archive of the species, genetic copies standing by in case the original trunk, half a millennium into a revolt it may have watched begin, ever comes down.",
+      "verified_sources": [
+        "https://www.zagorje-priroda.hr/spomenik-prirode-gupceva-lipa/",
+        "https://hr.wikipedia.org/wiki/Gup%C4%8Deva_lipa"
+      ],
+      "access": "Free, standing in the open beside the parish Church of St. George in the town centre.",
+      "transport": "In the centre of Gornja Stubica, on foot; no dedicated public transport stop at the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "The large lime standing beside the parish Church of St. George in the centre of Gornja Stubica; nothing else nearby competes with it in size."
+    }
+  ]
+}

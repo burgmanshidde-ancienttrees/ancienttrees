@@ -1,0 +1,75 @@
+{
+  "city": "Perušić",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Perušić is a small municipality in Croatia's Lika region, in the hill country below Velebit, and its mapped tree is the largest common fir left standing in Europe. Locals call it Jela Car, the emperor fir, because every other silver fir on this stretch of forest grows to ordinary size while this one did not. A 2025 survey ahead of conservation work put it at 42.5 metres tall and 5.42 metres round; some tourist accounts claim more. Nobody has confirmed its age, though the park that manages it says it is at least several centuries old.",
+  "meta_description": "Jela Car near Perušić: the largest common fir in Europe, 42.5 metres tall, its true age never scientifically confirmed.",
+  "question_meta": "Perušić's Jela Car is Europe's largest common fir, 42.5 metres tall and 5.42 metres round, in forest above Bakovac Kosinjski.",
+  "question_answer": "Perušić's only mapped tree is Jela Car, a silver fir standing in forest above the village of Bakovac Kosinjski, on the lower slopes of Velebit. A 2025 survey ahead of conservation work by Park prirode Velebit measured it at 42.5 metres tall with a trunk 5.42 metres round, figures that make it, by Croatian foresters' own reckoning, the largest common fir left standing in Europe. Some tourist sources report a taller, thicker tree still, 47.5 metres and 5.9 metres round, though without saying how or when that was measured. Its age is genuinely unknown: it is commonly said to be over 500 years old, but the nature park that manages the tree states plainly that this has never been scientifically confirmed, and estimates run as high as a thousand years.",
+  "question_context": "Croatia keeps no national tree register with a confirmed-age field, so this page relies on the two sources that actually measured the tree rather than repeated the same folk figure. Park prirode Velebit's own conservation work in July 2025, reported by several Croatian outlets, gives the tree at 42.5 metres tall and 5.42 metres round, and states outright that no scientific dating has ever been done on it. The Perušić Tourist Board's own page, and Croatian Wikipedia's entry, both cite the same figures, which is why they are used here rather than a competing set, 47.5 metres and 5.9 metres round, that circulates on other tourism sites without a stated source or measurement date. The name Jela Car, emperor fir, refers to its size relative to its neighbours: every other silver fir on this stretch of forest grows to an ordinary height, which is what first drew attention to this one rather than any documented history.",
+  "hero_tree_id": "prs_001",
+  "oldest_tree_id": "prs_001",
+  "faq": [
+    {
+      "q": "How old is Jela Car?",
+      "a": "Nobody knows for certain. It is commonly said to be over 500 years old, but Park prirode Velebit, which manages the tree, states plainly that its age has never been scientifically confirmed. Estimates based on its size range from several centuries to, by some guesses, close to a thousand years."
+    },
+    {
+      "q": "Why is it called the emperor fir?",
+      "a": "Jela Car means emperor fir in Croatian. It was named for its size relative to its neighbours: every other silver fir on this stretch of forest grows to an ordinary height, while this one towers over all of them."
+    },
+    {
+      "q": "Can I walk up to it?",
+      "a": "Yes. It stands in open forest above the village of Bakovac Kosinjski, reached by a two-kilometre walk along a forest road, on land with no gate or ticket."
+    },
+    {
+      "q": "How do I get to Jela Car?",
+      "a": "Perušić is a small municipality in Croatia's Lika region. From the village of Bakovac Kosinjski, a forest road climbs roughly two kilometres to the tree; a car can reach the village itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "prs_001",
+      "name": "Jela Car",
+      "species": "Silver Fir (Abies alba)",
+      "age_estimate": "contested: commonly said to be over 500 years, but never scientifically confirmed",
+      "girth_cm": 542,
+      "height_m": 42.5,
+      "location": {
+        "address": "Forest above Bakovac Kosinjski, roughly 2 km along a forest road, Perušić municipality, Lika, Croatia",
+        "latitude": 44.725668,
+        "longitude": 15.085194,
+        "neighbourhood": "Bovan forest, near Bakovac Kosinjski"
+      },
+      "story": "Every other fir on this stretch of Velebit grows to a normal size. This one did not get the memo: locals named it Jela Car, the emperor fir, because among an entire forest of silver firs it stands alone, tall enough that Croatia's own foresters call it the largest common fir left in Europe.\n\nThe numbers, when anyone has bothered to measure them, are startling on their own. A 2025 survey ahead of conservation work put it at 42.5 metres tall with a trunk 5.42 metres round, big enough that three grown men linking hands cannot reach around it. Some tourist accounts report an even larger tree, 47.5 metres and 5.9 metres round, though without saying who measured it or when, so the more carefully sourced figures are used here.\n\nIts age is the one thing nobody will commit to. It is commonly said to be over 500 years old, and Park prirode Velebit, which manages the tree, states plainly that this has never been scientifically confirmed: estimates run from several centuries to, by some guesses, close to a thousand years.\n\nThe tree stands in forest above the village of Bakovac Kosinjski, reached by a two-kilometre walk along a forest road. In July 2025 park rangers removed mistletoe and dead branches from its crown, the kind of quiet maintenance that keeps an emperor standing.",
+      "verified_sources": [
+        "https://hr.wikipedia.org/wiki/Jela_car",
+        "https://www.morski.hr/na-velebitu-provedeni-radovi-na-najvecem-stablu-obicne-jele-u-europi/",
+        "https://tz-perusic.hr/upoznajte-perusic/pregled/jela-car"
+      ],
+      "access": "Free, standing in open forest reached by a public forest road; no gate, ticket or permission needed.",
+      "transport": "By car to the village of Bakovac Kosinjski, in Perušić municipality, Lika, then a roughly two-kilometre walk along a forest road.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Jela_car.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Fraxinus Croat, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3648,
+        "height": 2736
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jela_car_-_panoramio.jpg",
+          "license": "CC BY 3.0",
+          "attribution": "Dragan Zeba, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3968,
+          "height": 2976
+        }
+      ],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its sheer size against every other fir around it, its spread buttressed roots and a trunk over five metres round. A wooden sign marks it beside the forest path above Bakovac Kosinjski."
+    }
+  ]
+}

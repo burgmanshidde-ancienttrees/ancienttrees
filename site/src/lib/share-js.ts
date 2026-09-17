@@ -33,7 +33,7 @@ export const SHARE_JS = `
       var done = function() {
         var was = btn.getAttribute('aria-label');
         btn.classList.add('is-copied');
-        btn.setAttribute('aria-label', 'Link copied');
+        btn.setAttribute('aria-label', btn.getAttribute('data-share-copied') || was);
         setTimeout(function() {
           btn.classList.remove('is-copied');
           btn.setAttribute('aria-label', was);

@@ -689,6 +689,84 @@ def check_walks_go_to_the_app():
     return out
 
 
+def check_one_tree_places_have_no_question_page():
+    """Contract B v1.18 (2026-09-17): a place with one tree publishes no
+    question page, and its old URL keeps resolving.
+
+    Hidde, on the Search Console report of 36 pages crawled and not indexed:
+    "ze verdienen ze niet - maar uiteindelijk komen er meer bomen in grote
+    steden - in afgelegen plekken weghalen." The finding behind it: for a
+    one-tree place, /<city>, /<city>/oldest-tree and the tree's own page were
+    three URLs paraphrasing one tree. Lebec spent 87 words of intro, 139 of
+    question_answer, 193 of question_context and 234 of story on one oak, all
+    of it naming the same grizzly, the same bark and the same entry fee.
+    Google indexed one and filed the others, which is Google reading it
+    correctly. 328 of 609 published places were in that state.
+
+    It is a check rather than a sentence in CLAUDE.md because the rule lives
+    in four route families plus two components plus the redirect map, and
+    nothing a corpus file says can refuse a push that re-links one of them.
+
+    Three things are refused. A built question page for a place under the
+    threshold, in English or in any of the seven languages. A one-tree place
+    whose retired URL does not resolve, which would be hard rule 3 broken by
+    our own hand. And a live link into one, which is how a page comes back by
+    accident; the redirect stubs themselves are exempt, being the mechanism.
+
+    Removing this check needs Hidde."""
+    import json as _json
+    out = []
+    qslugs = {"oldest-tree", "arbol-mas-antiguo", "albero-piu-antico", "oudste-boom",
+              "aeltester-baum", "arvore-mais-antiga", "arbre-le-plus-vieux", "saiko-rei-no-ki"}
+    min_trees = 2
+    root = Path(__file__).resolve().parent.parent
+    small = {}
+    for f in sorted((root / "data" / "cities").glob("*.json")):
+        doc = _json.loads(f.read_text(encoding="utf-8"))
+        n = sum(1 for t in doc.get("trees", [])
+                if t.get("story") and (t.get("location") or {}).get("latitude") is not None
+                and (t.get("location") or {}).get("longitude") is not None)
+        if 0 < n < min_trees:
+            small[f.stem] = n
+    if not small:
+        return out
+
+    def is_stub(html):
+        return "Moved:" in html and 'http-equiv="refresh"' in html.lower()
+
+    live, unresolved = [], []
+    for slug in sorted(small):
+        for q in qslugs:
+            for cand in (DIST / slug / f"{q}.html", DIST / slug / q / "index.html"):
+                if cand.exists() and not is_stub(cand.read_text(encoding="utf-8")):
+                    live.append(str(cand.relative_to(DIST)))
+        if not (DIST / slug / "oldest-tree.html").exists():
+            unresolved.append(f"{slug}/oldest-tree")
+    if live:
+        out.append("%d question page(s) built for a place with fewer than %d trees "
+                   "(Contract B v1.18), e.g. %s"
+                   % (len(live), min_trees, ", ".join(live[:5])))
+    if unresolved:
+        out.append("%d retired question URL(s) no longer resolve, which breaks hard "
+                   "rule 3; redirect-map.ts should emit a stub, e.g. %s"
+                   % (len(unresolved), ", ".join(unresolved[:5])))
+
+    linking = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        if is_stub(html):
+            continue
+        for slug in small:
+            if re.search(r'href="[^"]*/%s/(?:%s)/?"' % (re.escape(slug), "|".join(map(re.escape, qslugs))), html):
+                linking.append(str(page.relative_to(DIST)))
+                break
+    if linking:
+        out.append("%d page(s) link to a question page of a one-tree place, which "
+                   "Contract B v1.18 retired, e.g. %s"
+                   % (len(linking), ", ".join(linking[:5])))
+    return out
+
+
 def check_no_owner_name():
     """The thirteenth ratchet check, from 2026-08-24.
 
@@ -1232,11 +1310,16 @@ def check_vendored_photos_are_served():
     # fifth arrived: the Orto botanico di Firenze sent a photograph of their
     # Himalayan cedar and qa called it dead weight. Read the tree data instead,
     # so the next gift needs no edit here.
+    # EVERY photograph on the tree, not only the lead (2026-09-12). This check
+    # found its own version of the bug the same afternoon trees gained photos[]:
+    # the second Munakata camphor picture rendered on the page and read here as
+    # dead weight, because a file is orphaned only relative to what you looked at.
     for path in sorted((ROOT / "data" / "cities").glob("*.json")):
         for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
-            u = ((t.get("photo") or {}).get("url") or "")
-            if "/photos/" in u:
-                pointed_at.add(u.rsplit("/", 1)[-1])
+            for shot in [t.get("photo") or {}] + list(t.get("photos") or []):
+                u = ((shot or {}).get("url") or "")
+                if "/photos/" in u:
+                    pointed_at.add(u.rsplit("/", 1)[-1])
     orphans = on_disk - pointed_at
     for o in sorted(orphans)[:10]:
         failures.append(f"site/public/photos/{o} is in the build but nothing points at it")
@@ -1246,16 +1329,42 @@ def check_vendored_photos_are_served():
         data = json.loads(feed.read_text(encoding="utf-8"))
         trees = data if isinstance(data, list) else data.get("trees", [])
         for t in trees:
-            p = t.get("photo") or {}
-            for field in ("thumb", "hero"):
-                v = p.get(field)
-                if isinstance(v, str) and v.startswith("/"):
-                    failures.append(
-                        f"api/trees.json {t.get('id')}: {field} is a relative path "
-                        "and the app has no page to resolve it against"
-                    )
+            for p in [t.get("photo") or {}] + list(t.get("photos") or []):
+                hit = False
+                for field in ("thumb", "hero"):
+                    v = (p or {}).get(field)
+                    if isinstance(v, str) and v.startswith("/"):
+                        failures.append(
+                            f"api/trees.json {t.get('id')}: {field} is a relative path "
+                            "and the app has no page to resolve it against"
+                        )
+                        hit = True
+                        break
+                if hit:
                     break
     return failures
+
+
+def check_every_feed_field_reaches_the_app():
+    """A feature the website sends must be one the phone can read.
+
+    Hidde, 2026-09-12: "remember somewhere to always by default work cross
+    platform." The work lives in scripts/crosscheck.py; this is the deploy
+    gate's copy of its verdict, because the WEBSITE push is the moment the
+    fault is created. The feed is the contract between the two surfaces, and a
+    field sent to every phone that no Swift model decodes is a feature that
+    stopped at the web with nothing going red: Swift's decoder ignores keys it
+    does not know, so the symptom is a phone quietly missing something.
+
+    Deliberately not a second implementation. Removing this check needs Hidde.
+    """
+    import subprocess
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "crosscheck.py")],
+                       capture_output=True, text=True)
+    if r.returncode == 0:
+        return []
+    lines = [l.strip() for l in (r.stdout + r.stderr).splitlines() if l.strip()]
+    return lines or ["crosscheck failed without saying why"]
 
 
 def check_approved_photos_reach_the_feed():
@@ -1276,6 +1385,10 @@ def check_approved_photos_reach_the_feed():
     data = json.loads(feed.read_text(encoding="utf-8"))
     trees = data if isinstance(data, list) else data.get("trees", [])
     has = {t.get("id"): bool(t.get("photo")) for t in trees}
+    # How many photographs of this tree the feed actually carries. `photos` is
+    # sent only when there is more than one, so its absence means one.
+    count = {t.get("id"): (len(t.get("photos") or []) or (1 if t.get("photo") else 0))
+             for t in trees}
     failures = []
     for path in sorted((ROOT / "data" / "cities").glob("*.json")):
         for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
@@ -1285,6 +1398,21 @@ def check_approved_photos_reach_the_feed():
                 failures.append(
                     f"{t['id']}: photo is approved in {path.name} but the app feed "
                     "carries none, so no page and no phone shows it (usablePhoto refused it)")
+            # The same fault one layer down, and the reason this check exists at
+            # all: an approved photograph that reaches nothing looks exactly like
+            # a tree nobody has photographed, so it fails silently. Extras gained
+            # their own way to disappear on 2026-09-12 (a zod schema that strips
+            # what it does not name, a feed that forgets to send the set), and
+            # they deserve the same alarm the lead has.
+            want = 1 if (p.get("status") == "approved" and p.get("url")) else 0
+            want += sum(1 for x in (t.get("photos") or [])
+                        if (x or {}).get("status") == "approved" and (x or {}).get("url")
+                        and (x or {}).get("license"))
+            if t.get("id") in count and want > 1 and count[t["id"]] < want:
+                failures.append(
+                    f"{t['id']}: {want} approved photographs in {path.name} but the app "
+                    f"feed carries {count[t['id']]}, so the phone shows fewer than the "
+                    "website does")
     return failures
 
 
@@ -1430,6 +1558,188 @@ def check_no_personal_address():
     return out
 
 
+def check_icons_are_drawn():
+    """The ratchet check from 2026-09-12: no emoji standing in for an icon.
+
+    Hidde, looking at the two surfaces side by side: "op de site is de duim een
+    gele emoji, in de app een lijntekening, wil je die ook gelijk hebben."
+    The vote control had carried a typed thumb since it was built, so the same
+    control wore a yellow cartoon on the web and an outline glyph on the phone,
+    and the web half changed colour with whatever operating system was drawing
+    it. An emoji is somebody else's artwork: it ignores the palette, it cannot
+    take a pressed state, and it renders differently on every machine.
+
+    His standing instruction with it was "neem app altijd als leidend wbt
+    design", so an icon on this site is drawn, in an svg we own, the way the
+    heart and the share glyph already are.
+
+    Source rather than built pages, because that is where the mistake is made
+    and the line number is the fix. A tree story with an emoji in it is a
+    different problem and would be caught by the corpus checks, not here.
+    """
+    src = ROOT / "site" / "src"
+    if not src.exists():
+        return []
+    # Ranges kept narrow on purpose: pictographs and dingbats, never the
+    # typographic marks this site uses every day (the middot between facts, the
+    # arrows on "read on" links, the chevrons in the breadcrumbs).
+    emoji = re.compile(
+        "[\U0001F000-\U0001FAFF\U00002600-\U000026FF\U00002700-\U000027BF\U0000FE0F]")
+    out = []
+    for f in sorted(src.rglob("*")):
+        if f.suffix not in (".astro", ".ts", ".tsx", ".js"):
+            continue
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            if emoji.search(line):
+                out.append(f"{f.relative_to(ROOT)}:{n}: emoji where an icon belongs; "
+                           f"draw it as an svg, and match the app's glyph")
+    return out
+
+
+def check_tick_has_its_wiring():
+    """The ratchet check from 2026-09-12, and it is written from a live fault.
+
+    Collecting is one of the four verbs, and on the website it was reachable
+    from nowhere: visited-sync-js.ts read the account's list, collection-js.ts
+    wrote a tick, city-map-script.ts painted the pins and the passport counter,
+    the CSS for the badge was in style.css, and no template emitted the button.
+    city-map-script's own head comment had said so for weeks.
+
+    So this is the hearts-need-the-dialog check applied to the set of parts the
+    tick needs. Three of them, each of which has already been missing from a
+    page that shipped:
+
+      the dialog, because a tick needs an account and a signed-out tap must
+        open something rather than tick into nothing;
+      atPushVisited, which is visited-sync-js.ts: without it the button paints
+        from an answer that never arrives and writes nowhere;
+      the handler in tree-actions-js.ts, the same delegation the heart uses.
+
+    The same pass found the translated tree page rendering a save heart with
+    neither TREE_ACTIONS_JS nor SIGNIN_JS in its slot, in seven languages, so
+    the heart's own wiring is checked here too rather than only its dialog.
+    """
+    out = []
+    no_dialog, no_sync, no_handler, heart_no_handler = [], [], [], []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        rel = str(page.relative_to(DIST))
+        if 'class="seen-btn"' in html:
+            if 'id="signin-dialog"' not in html:
+                no_dialog.append(rel)
+            if "atPushVisited" not in html:
+                no_sync.append(rel)
+            if "atPaintSeen" not in html:
+                no_handler.append(rel)
+        if "save-btn" in html and "atPaintSaves" not in html:
+            heart_no_handler.append(rel)
+    for bad, what in ((no_dialog, "the sign-in dialog"),
+                      (no_sync, "visited-sync-js (atPushVisited)"),
+                      (no_handler, "tree-actions-js (atPaintSeen)")):
+        if bad:
+            out.append("%d page(s) render the tick without %s, so it paints or "
+                       "writes nothing, e.g. %s"
+                       % (len(bad), what, ", ".join(bad[:5])))
+    if heart_no_handler:
+        out.append("%d page(s) render a save heart with no tree-actions-js behind "
+                   "it (the 2026-09-12 translated-tree-page fault), e.g. %s"
+                   % (len(heart_no_handler), ", ".join(heart_no_handler[:5])))
+    return out
+
+
+# The seven languages the site publishes in, and the controls a reader can tap.
+# Both lists are deliberately short: this check is about whether a FEATURE
+# reached a language, not about whether two pages are byte-identical.
+LANGS = ["es", "it", "nl", "de", "pt", "fr", "ja"]
+# PARTS rather than controls since 2026-09-12: the recognition line and the
+# season chip are not things you tap, and a reader loses just as much when they
+# are absent. What is deliberately NOT on this list is anything that merely
+# renders differently (the nearby trees are photo cards in English and a
+# compact list in the other seven, the tree bar uses different class names):
+# a different design is a per-surface decision, a missing part is a gap.
+PARTS = {
+    "worthit-btn": "the worth-it vote",
+    "save-btn": "the save heart",
+    "share-btn": "the share button",
+    "report-btn": "the report link",
+    "dir-link": "the directions button",
+    "app-pitch": "the app block",
+    "which-one": "the recognition line",
+    "best-now-inline": "the season chip",
+}
+# A question page's slug is translated, so its twin cannot be found by path.
+QUESTION_SLUGS = {
+    "es": "arbol-mas-antiguo", "it": "albero-piu-antico", "nl": "oudste-boom",
+    "de": "aeltester-baum", "pt": "arvore-mais-antiga",
+    "fr": "arbre-le-plus-vieux", "ja": "saiko-rei-no-ki",
+}
+
+
+def check_every_language_gets_the_same_controls():
+    """A feature shipped in English must reach all seven languages.
+
+    Hidde, 2026-09-12, on being told the worth-it vote was missing from every
+    translated tree page: "wat kan ik tegen je zeggen dat je altijd consistent
+    over talen ontwikkeld." The honest answer is nothing, because he has said
+    it before. On 2026-09-02 he said "alle paginas en talen moeten consistent
+    blijven", and two checks came out of that day: one refuses text a
+    translator never looked up, and one refuses a translated city missing
+    trees its English page holds. Both watch CONTENT. Neither has an opinion
+    about whether a BUTTON made the crossing, which is how the vote could be
+    absent from 907 pages while every gate stayed green.
+
+    So this compares the built pages, English against each translated twin,
+    and asks one question per control: the English page has it, does this one?
+    Built rather than source, because a control can go missing in three
+    different places (a component that never renders it, a page type that
+    never passes it, a script that never wires it) and only the output knows.
+
+    data/lang-gaps.json carries what was already missing on the day this was
+    written, so the check could ship without turning the deploy red over work
+    nobody had done yet. Those are OPEN GAPS and not exceptions: each says
+    what is missing and why it is still missing, and the entry is deleted when
+    the control ships rather than when somebody tires of reading it. Anything
+    not on that list fails the push, which is the whole point: a feature added
+    to the English page tomorrow cannot quietly skip the other seven.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    allow = set()
+    gaps_file = root / "data" / "lang-gaps.json"
+    if gaps_file.is_file():
+        for e in json.loads(gaps_file.read_text(encoding="utf-8")).get("open", []):
+            allow.add((e.get("part"), e.get("page_kind")))
+    found = {}
+    for lang in LANGS:
+        lang_root = DIST / lang
+        if not lang_root.is_dir():
+            continue
+        for page in lang_root.rglob("*.html"):
+            rel = page.relative_to(lang_root)
+            if len(rel.parts) == 2 and rel.stem == QUESTION_SLUGS.get(lang):
+                kind, twin = "question", DIST / rel.parts[0] / "oldest-tree.html"
+            elif len(rel.parts) == 2:
+                kind, twin = "tree", DIST / rel
+            else:
+                kind, twin = "city", DIST / rel
+            if not twin.is_file():
+                continue
+            en = twin.read_text(encoding="utf-8", errors="ignore")
+            tr = page.read_text(encoding="utf-8", errors="ignore")
+            for marker in PARTS:
+                if marker in en and marker not in tr:
+                    key = (marker, kind)
+                    if key in allow:
+                        continue
+                    found.setdefault(key, []).append(f"{lang}/{rel}")
+    for (marker, kind), pages in sorted(found.items()):
+        out.append("%s is on the English %s page and missing from %d translated "
+                   "one(s), e.g. %s. Ship it in all seven languages or record "
+                   "it in data/lang-gaps.json with what is missing and why."
+                   % (PARTS[marker], kind, len(pages), ", ".join(sorted(pages)[:3])))
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1449,18 +1759,23 @@ def main():
 
     failures = []
     failures += check_auth_corpus_agreement()
+    failures += check_icons_are_drawn()
     failures += check_photo_orientation()
     failures += check_photo_resolution()
     failures += check_save_flow_integrity()
+    failures += check_tick_has_its_wiring()
     failures += check_sheet_integrity()
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
     failures += check_no_owner_name()
     failures += check_no_personal_address()
     failures += check_walks_go_to_the_app()
+    failures += check_one_tree_places_have_no_question_page()
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_approved_photos_reach_the_feed()
+    failures += check_every_feed_field_reaches_the_app()
+    failures += check_every_language_gets_the_same_controls()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")
@@ -1495,6 +1810,16 @@ def main():
         # on three published pages before this check existed (2026-08-09).
         if "None Year" in text:
             failures.append(f"{rel}: literal 'None Year' in rendered text, an undated tree's age fell back to None")
+        # ageToken()'s raw-number fallback (no age_min/age_max to check
+        # against) once returned a capture with its trailing comma still
+        # attached, because the character class that lets "1,000" read whole
+        # also swallows a comma that is only punctuation: "planted 2017, a
+        # genetic clone..." became the literal title fragment "2017, Years",
+        # self-contradicting the same page's own FAQ (Trainiskis, found by the
+        # fresh-eyes reviewer 2026-09-13). A number is never followed by a
+        # comma right before the word "Year(s)" in honest rendered text.
+        if re.search(r"\d,\s*Years?\b", text):
+            failures.append(f"{rel}: a comma sits between a number and 'Year(s)' in rendered text, an age token kept its punctuation")
         lower = text.lower()
         for word in BANNED_WORDS:
             if word in lower:

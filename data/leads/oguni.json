@@ -1,0 +1,16 @@
+{
+  "leads": [
+    {
+      "name": "Unidentified tree, reader submission #110",
+      "species": null,
+      "location": {
+        "address": "no address given; GPS fix only",
+        "latitude": 33.04561,
+        "longitude": 131.29971,
+        "neighbourhood": "Taketa, Oita (the submission was tagged \"Oguni\" by the app, which is just the nearest city in our own database, 25.6km from ogn_001; the coordinate itself reverse-geocodes to Taketa city, Oita, a different prefecture from Oguni-machi, Kumamoto)"
+      },
+      "reason": "Reader submission via the app's Collect flow (submissions row id 110, 2026-09-16), GPS only, no name/species/girth/photo. Checked whether this could be a mismapped Amida Sugi (阿弥陀杉, national natural monument, Kurofuchi, Oguni-machi, designated 1934, girth 10.65m/height 38m per bunkacho + a second source) but that tree's own sources place it well away from this pin, not here. No entry within 19km in data/registers/japan-bunkacho.json, and Overpass shows no named tree node at this point, only generic woodland polygons. Does not clear the two-source bar: kept as a lead rather than published. See CURATION.md 2026-09-16."
+    }
+  ],
+  "blocked": []
+}

@@ -7,7 +7,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import { checkCountPromises } from "../lib/count-promises";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, type CityEntry } from "../lib/trees";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, hasQuestionPage, type CityEntry } from "../lib/trees";
 import { speciesCommon, speciesPageSlugs } from "../lib/species";
 import { usablePhoto, metaImageUrls, ogImageUrl, cityFaceTree } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
@@ -81,6 +81,8 @@ const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
 const trees = renderableTrees(city);
+// Contract B v1.18: a one-tree place has no question page to link to.
+const cityHasQuestion = hasQuestionPage(city);
 const canonical = `${BASE_URL}/${cslug}`;
 const tslugs = treeSlugsForCity(city);
 
@@ -135,6 +137,14 @@ const title = fitTitle([
   ...(ageHook ? agedTitles : []),
   `Ancient Trees in ${cityName}: ${one ? "One Remarkable Tree" : `${trees.length} Remarkable Trees`} Worth Visiting`,
   `Ancient Trees in ${cityName}: ${treesN} Worth Visiting`,
+  // A long place name (a national park, a German/Slovak compound name, an
+  // American "City, State") can burn the whole budget before any hook fits,
+  // and the fallback below this one carries neither a count nor an age. This
+  // candidate is `seeN`, already built above and far shorter than "Worth
+  // Visiting": it rescues 20 of the 21 places that fell all the way to the
+  // bare title (REVIEW.md 2026-09-13 NOTE). The one genuinely too long
+  // (Chapel Hill, North Carolina) still falls through honestly.
+  `Ancient Trees in ${cityName}: ${seeN}`,
   `Ancient Trees in ${cityName}`,
 ]);
 const description =
@@ -161,6 +171,7 @@ const markers: WalkMarker[] = trees.map((t, i) => {
     id: t.id,
     area: (t.location.neighbourhood ?? "").trim(),
     shot: Boolean(cphoto),
+    ...(t.paid_entry ? { paid: true } : {}),
     ...(pk?.map ? { peak: { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } } : {}),
   };
 });
@@ -270,7 +281,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       </div>
       {trees.map((t, i) => (
         <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
-                  variant="full" headingLevel={2} />
+                  variant="full" headingLevel={2} canTick />
       ))}
       <div class="panel-foot">
         <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
@@ -291,8 +302,12 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
               <dd>{f.a}</dd>
             </Fragment>
           ))}
-          <dt>More on the oldest tree</dt>
-          <dd><a href={`/${cslug}/oldest-tree`}>What is the oldest tree in {cityName}?</a> The full answer, with map and directions.</dd>
+          {cityHasQuestion && (
+            <Fragment>
+              <dt>More on the oldest tree</dt>
+              <dd><a href={`/${cslug}/oldest-tree`}>What is the oldest tree in {cityName}?</a> The full answer, with map and directions.</dd>
+            </Fragment>
+          )}
           {citySpeciesLinks.length > 0 && (
             <Fragment>
               <dt>Species on this list</dt>

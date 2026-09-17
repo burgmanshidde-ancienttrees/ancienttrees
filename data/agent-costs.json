@@ -1040,7 +1040,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -7633,6 +7633,464 @@
     "trees": 5,
     "note": "10 trees briefed, 5 written (all 5 Ottawa). All 5 Helmond entries were duplicate ids for already-published trees; passcheck --pending correctly flagged them and the pass wrote nothing for Helmond rather than shipping duplicate prose. ~26k/tree against the 15k target, entirely because half the pass was dead work caused by the verify pass's brief_wrong above.",
     "wasted": 24000,
+    "brief_wrong": true
+   }
+  ],
+  "2026-09-12": [
+   {
+    "target": "Florence",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "flo_024 (Pine of Via del Pino) merged directly from an already-verified research file (florence-verified.json), no agent dispatched; also added its Italian translation (overlay had gone stale-blocking on the new tree) and corrected Italy's meta_description tree count 350->351",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Amsterdam+Florence",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "viewing pass on 12 fetched candidates for photo-less trees in demand cities: 10 rejected (wrong city/garden/subject, including a Haarlem Stationsplein false positive and 3 Verona-not-Florence matches), 2 held (Boboli cypress, iNat coords ~68m from our pin in a garden with many similar cypresses)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "session",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 0,
+    "note": "orchestration; investigated two rung-2 breaks flagged at session start. Walking routes: a git push race, fixed with a retry loop, but could not push the workflow-file edit (GitHub blocks workflow changes without a `workflows` scope on this token) so left reverted, FOR HIDDE. FlowWalk's person-more tap raced again on the floor job under CI load; widened its wait 10s->20s and pushed. Confirmed Taormina and Ravenna are still documented dead ends (register supply is the same blocked hotel-grounds trees / too thin), matching today's earlier continuations; did not re-research. Ran preflight, superlatives and a full astro build (5519 pages, exit 0) before committing",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "maastricht",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 1,
+    "note": "Deepen pass on Nolenspark LRMB cluster: 1 verified (maa_019, Ginkgo of Mgr. Nolenspark, flagged single-source), 2 new blocked (Bruine beuk/Stokstraat and Witte paardenkastanje 0.7km, both private/institutional gardens), 1 new lead (Japanse notenboom kandelaber/Bredestraat, access unclear), Zilverlinde pair left as pre-existing lead (redundant with published maa_009). Confirmed several 'within 80m' flagged register rows were already-published trees (maa_008/009/010/018) via exact-coordinate match.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Tallinn",
+    "kind": "verify",
+    "tokens": 187438,
+    "trees": 2,
+    "note": "Kadriorg guardhouse oak + Kopli cemetery park oak, from a single-sourced 2017 Postimees dendrologist ranking; a third named lead (Presidential Palace oak) blocked on access",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Tallinn",
+    "kind": "write",
+    "tokens": 139302,
+    "trees": 2,
+    "note": "stories + recognition lines for the 2 verified trees, plus city page-copy counts fixed from six/six to eight throughout (intro, meta, question_meta, question_context, 2 FAQ)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Lausanne/Breda",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 1,
+    "note": "viewing pass on the 2-city shortlist from photo_gaps.py: approved the Napoleon Oak (geotag confirms identity), rejected both Breda weeping-beech candidates (address-matched house facade and a facade plaque, not the tree)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Regensburg/Roosendaal/Sittard-Geleen/Hobart",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "viewing pass on --zero sweep candidates: all rejected after looking at pixels (a rose cultivar label, house facades, a wayside crucifix, a park treeline with no single subject); one Hobart iNat duplicate candidate held, consistent with an existing held verdict on the same observation",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "session (routes.yml push-race fix, vendor_photos)",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 0,
+    "note": "no agent dispatched for this work: diagnosed the routes.yml/data-digest.yml/photos.yml/weekly-analysis.yml push-race pattern (fix ready, blocked on missing workflows scope, FOR HIDDE), vendored 1 stray photo, answered a resolved REVIEW.md WARN",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Florence",
+    "kind": "verify",
+    "tokens": 193949,
+    "trees": 2,
+    "note": "finished a standing claim from an earlier attempt this window; verified flo_025 (Farnia of Mantignano) and flo_026 (Poplar of the Renaioli) from MASAF/RAMI register cross-checks, both delivered with flagged age/measurement disagreements; wrote both stories directly (2 trees was below the write-pass batch floor) and merged into florence.json plus its Italian overlay",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "session (rung 2: routes.yml push-race third attempt; shelf survey)",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 0,
+    "note": "reproduced the routes.yml/data-digest.yml/photos.yml/weekly-analysis.yml push-race fix a third time today and pushed it directly (bypassing the earlier no-op reverts): confirmed empirically this session token also lacks workflows scope (remote rejected with the exact GitHub error), so reverted locally without ever landing on origin; genuinely nothing left to try here short of Hidde applying it himself or granting the scope. Surveyed the 49-city verify shelf (prepare.py) against city-queue.json and passcheck.py briefs looking for a dispatchable batch: Milan/Brisbane/Alicante/Sintra/Taormina already confirmed exhausted earlier today, and spot checks on Cagliari and Braga (both mid-size register counts) showed nearly every remaining \"unmined\" candidate flagged by passcheck as within 80m of an already-published tree or an already-recorded held/blocked lead, the same duplicate pattern that wasted 75k tokens on Helmond earlier today. With leads.py --ready, pagegaps.py, recognise.py --stuck, refill.py and the photo shortlist all empty, and the week at 4815/5000 minutes (about 185 left, shared with Hidde), chose not to gamble a speculative verify dispatch on thin, likely-duplicate supply. No commits beyond this log/cost entry.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Warsaw",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 11,
+    "note": "GDOS pomniki-przyrody jednoobiektowy candidates pre-filtered to a close single-specimen cluster (war_030-war_040); wikitext join to pl.wikipedia 'Pomniki przyrody w Warszawie' supplied girth/address; 5 blocked (private allotment-garden plots, Rakowiec), 1 duplicate of already-published war_005 caught before delivery",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Warsaw",
+    "kind": "write",
+    "tokens": 72000,
+    "trees": 11,
+    "note": "war_030-war_040 stories + recognition lines; best_time on 4 of 11 (silver lime, chestnut, black locust, copper beech)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Dallas",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 1,
+    "note": "worked the existing Texas Big Tree Registry lead list (14 leads); 1 verified (dal_009, Storytelling Place Red Oak, a Comanche marker tree), 1 duplicate of dal_003 removed, rest ruled out on distance (Tarrant/Collin county, Coppell, Lancaster all outside day-trip boundary) or lack of a second source; register-lead route now exhausted for Dallas, a from-zero pass is the only route left (Dallas is on Hidde's from-zero-approved list)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Dallas",
+    "kind": "write",
+    "tokens": 8000,
+    "trees": 1,
+    "note": "dal_009 story + recognition line, written directly in the main session rather than dispatched (single tree, below write-pass batch size)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Lithuania famous-tree batch (Degsne, Kaunas, Pagramantis RP, Plauginiai Forest, Vainiai, Zalgiriai)",
+    "kind": "verify",
+    "tokens": 203000,
+    "trees": 9,
+    "note": "worked all 12 candidates from famous_demand.py --next --country Lithuania; 9 verified joining 6 already-published places (register+Wikipedia cross-match, girth on all 9), 2 blocked as avenues (not single collectible points), 1 left as a lead (Butinge oak failed the single-famous-tree destination test at 16 reads/month, 47km from anything else)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Lithuania famous-tree batch (Degsne, Kaunas, Pagramantis RP, Plauginiai Forest, Vainiai, Zalgiriai)",
+    "kind": "write",
+    "tokens": 90000,
+    "trees": 9,
+    "note": "stories + recognition lines for all 9; 6 of 9 carry no age (stated honestly, no derivation), 3 best_time set; car-only access and 12-28km gaps from each place's other trees stated plainly rather than softened; main session then fixed 4 cities' stale intro/meta/faq tree counts (degsne 2->3, kaunas 6->9, pagramantis-regional-park 4->5, plauginiai-forest 1->2, vainiai 1->3, zalgiriai 1->2) caught by preflight",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Zwolle",
+    "kind": "write",
+    "tokens": 6000,
+    "trees": 2,
+    "note": "finished a stranded verify-pass delivery (data/research/zwolle-verified.json, produced by an earlier attempt in this window, never merged): wrote both stories + recognition lines directly in the main session rather than dispatching a write-stories agent for just 2 trees. 14 -> 16. Also released a stale Berlin verify claim from the same earlier attempt that produced no output.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
+  ],
+  "2026-09-13": [
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 218723,
+    "trees": 3,
+    "note": "deepen pass, 16 -> 19: register radius already exhausted by 4 prior passes, found new supply via a 2013 newspaper survey reached through the Wikipedia/Brota Alicante trail (2 araucarias + a 3-olive grove at two new plazas); wrote stories directly in the main session rather than dispatching write-stories for 3 trees; also wrote the Monkey Puzzle species page (3 trees, pagegaps.py gap) and fixed Spain's stale country meta_description count",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "prague/vienna/munich",
+    "kind": "photo",
+    "tokens": 220000,
+    "trees": 4,
+    "note": "viewing pass on 22 queued photo-queue candidates across the 3 top-demand cities with real queue depth (photo_fetch.py, per-city 8, per-tree 2); 4 approved (all Prague), 18 rejected and recorded so the queue does not re-serve them; also fixed a real photo_hunt.py _author() bug (Commons notify-me Artist text with the real username only in a stripped href); tokens are a rough estimate (main-session work, not a dispatched agent report, includes the Milan/Florence/Brisbane rung-4 investigation that came up empty first)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "berlin/porto",
+    "kind": "photo",
+    "tokens": 130000,
+    "trees": 3,
+    "note": "second viewing-pass batch, 13 queued candidates across the next two demand cities (Berlin 47 queued, Porto 66 queued); 3 approved (ber_020 Podbielski Oak, ber_018 Karpfenteich Elm, por_027 Tulip Trees of Praca Pedro Nunes), 10 rejected (facades, a petrol station, a plaque, catkin close-ups, a duplicate angle, an abstract bare-canopy shot) and recorded so the queue does not re-serve them; tokens are a rough estimate, main-session work not a dispatched agent report",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "sintra",
+    "kind": "verify",
+    "tokens": 78000,
+    "trees": 0,
+    "note": "Sixth consecutive pass confirming register+named-specimen exhaustion; caught and discarded a search-summary fabrication (Capuchos ash/plane); no new tree cleared the bar",
+    "wasted": 78000,
+    "brief_wrong": false
+   },
+   {
+    "target": "berlin",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 2,
+    "note": "Tiergarten Englischer Garten cluster: wingnut resolved via blog.inberlin.de (independent of the 2021 ordinance the register/wikidata/de.wikipedia all trace to), plus a newly-found non-register tree (Queen Elizabeth II 1965 oak) via two Tagesspiegel articles; rest of the cluster (Metasequoia, Libanon-Eiche, Silber-Linde, Flatter-Ulme, Japanischer Kuchenbaum, Stiel-Eiche, Robinia) stays single-sourced; one WebSearch-summary fabrication caught and discarded (a Flurstueck parcel number misread as a girth)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "berlin",
+    "kind": "write",
+    "tokens": 40000,
+    "trees": 2,
+    "note": "write pass on the 2 verified Berlin trees (ber_022 wingnut, ber_023 Queens Oak); small batch so per-tree cost is high; 1 best_time set, 2 recognition lines, German i18n overlay updated by hand in the main session afterward (title count 21->23, both trees translated)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "gdansk",
+    "kind": "write",
+    "tokens": 400000,
+    "trees": 6,
+    "note": "write pass on the 6 verified Park Oliwski trees (gda_007-012), deepen 6 -> 12; stories, recognition lines rewritten into the reader-addressed shape, 3 best_time set (ginkgo, katsura, ivy-elm) and 3 deliberately left empty; 2 species common names harmonised to the canonical form (Katsura, Western Red Cedar) so the build does not see one species under two names; city intro, meta_description, question_meta and the free-to-visit FAQ all still promised six trees and were fixed (the intro overran Contract C's 100-word cap on the first edit and was cut back). Lawson Cypress lead left as a lead: its own note says it was never verified, and a write pass does not verify. Tokens are an estimate and are inflated well past the 15k-per-tree target by the pass running in the main agent harness, where the full CLAUDE.md system reminder (~25k) is resent on every turn; BRIEF_WRITING.md tells a write pass not to read that file at all, so dispatching this through the write-stories agent would have cost a fraction of it.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "write",
+    "tokens": 150000,
+    "trees": 2,
+    "note": "write pass on the 2 trees the Alicante verify pass left in alicante-verified.json (19 -> 21): ali_020 the Panteon de Quijano elms and ali_021 the Passeig de Canalejas silky oaks, both press-corroborated from the same 2013 Diario Informacion survey; the silky oaks' disagreeing register girths (1.05m vs 3.75m for a pair the paper calls twins) are stated as two facts and left unresolved; no best_time on either (field elm's own phenology file peaks at 'nice', no species file for Grevillea robusta); also wrote the Spanish overlay for both trees, which preflight refuses a short overlay for, and fixed the city's intro, meta_description, title and question_context count promises",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "milan",
+    "kind": "write",
+    "tokens": 130000,
+    "trees": 1,
+    "note": "write pass on the single verified tree in data/research/milan-verified.json (mil_025, La Pianta di Manzoni), 24 -> 25. The whole job was keeping one bridge claim out of the prose: the tree's local name is Manzoni's and Villa Litta was Count Trivulzio's salon with Manzoni among its guests, and no source joins those two facts, so the story states the name, states the salon, says plainly that nobody has recorded why the tree carries it and asks the reader. Girth 410 cm is attributed in the prose to a plaque copied down by a passer-by rather than to the MASAF register, whose sheet has no girth field at all. No age anywhere and none derived. No best_time: a single plane with no documented peak, and the park's Siamese pair already holds the bare-silhouette badge here. Italian overlay written the same day (preflight refuses a short overlay outright) and the stale count promises fixed on both sides: English intro/meta/question_meta/FAQ, Italian title/meta/intro/question_meta/FAQ, all of which still said twenty-three or twenty-four. Tokens are an estimate, inflated well past the 15k target by the pass running in a harness that resends the full CLAUDE.md system reminder (~25k) every turn, which BRIEF_WRITING.md tells a write pass not to read at all.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Tokyo (tok_018-021 candidates)",
+    "kind": "verify",
+    "tokens": 92000,
+    "trees": 4,
+    "note": "Deepen pass on Tokyo (17->21 target 20). 4 verified from 10 register + 7 wikidata candidates; 3 confirmed duplicates of already-published trees, 2 blocked (avenue not a single point, school with no public-access evidence), 6 unresearched leads recorded for a future pass.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Tokyo (tok_018-021)",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 4,
+    "note": "4 verified Tokyo trees written, 2 with honest girth discrepancies carried, 1 with approximate-pin caveat in prose; ~15.5k/tree, inflated by a 4-tree batch paying the tone-calibration read once over four instead of twenty (only file pending per passcheck.py --pending at the time).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo viewing pass: arnhem, brisbane, london, prague, berlin, vienna",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 3,
+    "note": "Session work (not agent-dispatched), tokens not separately metered. Judged 45 candidates against the Cadiz standard across 6 depth-allowed cities: 3 approved (lon_016 Great Plane of Brunswick Square, lon_013 Dorchester Plane, vie_023 Plane of Dr Karl Lueger-Platz, the last confirmed via a 4.5m iNat coordinate match despite a species-tag mismatch), 42 rejected (building facades/reliefs, Christmas trees, memorial plaques, wrong species, leaf/canopy close-ups with no trunk, wrong trees). Also judged rung-1 reader sighting d0e24fa3 (not a tree, bedroom photo) and confirmed REVIEW.md's one WARN already fixed by an earlier pass.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "ageToken() BLOCKER fix (Trainiskis trn_001)",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Rung 2 work: fixed a fabricated age (planting year 2017 printed as an age) in site/src/lib/tree-copy.ts, added a qa.py ratchet check, recorded via health.py --answer. Session work, tokens not separately metered.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Prague, Singapore, Valencia (16 photo-less trees, depth-allowed cities)",
+    "kind": "photo-judge",
+    "tokens": 155000,
+    "trees": 0,
+    "note": "63 candidates viewed, 2 approved (prg_026, prg_030), 2 held (sgp_033, vlc_023 - ambiguous which of several similar trees), 59 rejected; free photo_hunt.py --recheck sweep supplied the candidates",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Venice, Venlo, Verona (4 photo-less trees, depth-allowed cities)",
+    "kind": "photo-judge",
+    "tokens": 34000,
+    "trees": 0,
+    "note": "7 candidates viewed, all rejected: 3 archival/aerial B&W (Venlo, no tree in frame), 1 building-dominated Venice palm photo (also reads as wrong Phoenix species), 3 Giardino Giusti cypress/fountain garden views rather than the yew and laurel wood; free photo_hunt.py --recheck sweep supplied the candidates",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Vienna (vie_018, vie_019, vie_020, vie_021, vie_022, vie_026, vie_027, vie_029, 8 photo-less trees, depth-allowed)",
+    "kind": "photo-judge",
+    "tokens": 71000,
+    "trees": 3,
+    "note": "30 candidates viewed, 3 approved (vie_026, vie_027, vie_029), 27 rejected; Rathauspark ND 566/567 pair settled by geotag distance (also answers vie_029 open verify_notes question), 14 Schonbrunn candidates were geosearch noise 750-800m from the pins, free photo_hunt.py --recheck sweep supplied the candidates",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Berlin",
+    "kind": "photo-judge",
+    "tokens": 214551,
+    "trees": 0,
+    "photos_approved": 2,
+    "note": "58 candidates viewed across 10 trees: 1 real approval (ber_018 elm, whole-tree frame beats the incumbent bark close-up, old lead kept in photos), 1 re-confirmation of ber_013's live lead, 56 rejects. ber_014/015/021 keep honest gaps. Species check killed two iNat oaks on ber_023 (Q. libani and Q. robur, not Q. rubra); 10 wrong-tree files swapped between ber_022 and ber_023 recorded so the sweep's cross-contamination is not re-judged.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Krakow",
+    "kind": "verify",
+    "tokens": 203302,
+    "trees": 4,
+    "note": "finished a standing verify claim from an earlier attempt this window; deepen pass, 34 -> 38, all 4 fill species genuinely absent from the page (dawn redwood, black poplar, white poplar, french maple); register+wiki join, one new lead (St Salvators churchyard cluster) recorded unverified for a future pass",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Krakow",
+    "kind": "write",
+    "tokens": 119746,
+    "trees": 4,
+    "note": "4 stories + 4 recognition lines for the same deepen pass; no best_time set for any (no phenology file exists for metasequoia glyptostroboides, populus nigra, populus alba or acer monspessulanum)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "cagliari",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "deepen pass, all 8 unmined register candidates were exact-position duplicates or already-blocked; register effectively exhausted at 20km. Spent remainder on OSM access checks for 3 stuck leads, still unresolved."
+   }
+  ],
+  "2026-09-16": [
+   {
+    "target": "ottawa",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "deepen pass, 4 named candidates from the NCC register on Queen Elizabeth Driveway/Commissioners Park; 2 verified via iNaturalist corroboration (ott_020 elm, ott_021 red oak), 2 recorded as leads for failing the two-source bar (Douglas-fir, cypress oak)"
+   },
+   {
+    "target": "ottawa",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 2,
+    "note": "session (not agent) wrote both stories directly since the batch was only 2 trees, below the assembly-line floor for a dedicated write pass; merged into data/cities/ottawa.json, fixed stale nineteen-tree count promises in meta_description/faq/question fields, tokens not separately tracked (session work)"
+   },
+   {
+    "target": "berlin",
+    "kind": "verify",
+    "tokens": 145000,
+    "trees": 0,
+    "note": "TU Berlin Schaugarten cluster (8 trees, ber_026-033) resolved via TU Berlin own press page for access+age and dated GPSLeo Commons photos for alive-now; Johannaplatz lead found already published and bookkeeping-corrected; Okowerk circumference claim checked and discarded as an unsourceable search-summary artifact"
+   },
+   {
+    "target": "Tokyo, Uda, Tsuruoka, Vainiai, Warsaw, Monterey, Tulsa, Hong Kong",
+    "kind": "photo-judge",
+    "tokens": 108000,
+    "trees": 0,
+    "photos_approved": 9,
+    "note": "29 images rendered and viewed, 9 approved, 20 rejected, 0 held; 4 places gained a first photograph; photo_light unavailable (no PIL), exposure judged by eye"
+   },
+   {
+    "target": "Berlin",
+    "kind": "photo-judge",
+    "tokens": 0,
+    "trees": 0,
+    "photos_approved": 6,
+    "note": "session (not agent) viewed 28 candidate images fetched by photo_fetch.py for the 8 TU Schaugaerten trees plus ber_024/ber_025; 6 approved (ber_025, 027, 028, 030, 032, 033), rest rejected for obscured trunk, distant framing, a garden statue mismatch, or wrong-species/wrong-tree filename mismatches (ber_024 matched a nearby mulberry file, ber_031 matched a nearby thuja file); tokens not separately tracked (session work, no agent dispatched)"
+   }
+  ],
+  "2026-09-17": [
+   {
+    "target": "Submissions #111, #112 (Taketa)",
+    "kind": "submission",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not a dispatched pass; two GPS-only reader pins at Oka Castle checked against the Japan register and web search, neither verifies, filed as leads",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Milan",
+    "kind": "verify",
+    "tokens": 184692,
+    "trees": 1,
+    "note": "Near-centre MASAF register fully exhausted; delivered mil_030 (Villa Ghirlanda bagolaro, Cinisello Balsamo, 8km out), hitting the 30-tree target. Story written by session, merged, translated (it overlay), built and shipped same window.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Vilnius",
+    "kind": "verify",
+    "tokens": 182147,
+    "trees": 0,
+    "note": "Register fully mined by prior passes (40/41 candidates already judged); resolved 2 pending access judgement calls to blocked and closed 2 stale/duplicate leads, zero new candidates to ship.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Florence",
+    "kind": "verify",
+    "tokens": 172158,
+    "trees": 1,
+    "note": "Resolved the Piazza Vasari hackberry register-trap/felling question (1 tree, 3 register twins folded); confirmed 2 candidates as wrong-comune (Fiesole) and 10 as existing duplicates; Isolotto poplar candidate turned out to already be published as flo_026 (same MASAF sheet), missed by the pass's own search. Story written and merged by the session.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Vancouver",
+    "kind": "verify",
+    "tokens": 214735,
+    "trees": 3,
+    "note": "15 remaining City of Vancouver Heritage Register leads checked; 3 geocoded and verified via the City's separate public-trees street-tree dataset (van_005-007), 2 institutional sites (church, school) surfaced but left unresolved, 6 avenue/wide-range entries blocked, 2 private-yard entries newly blocked, 4 singles left as open leads.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Houston",
+    "kind": "verify",
+    "tokens": 204027,
+    "trees": 2,
+    "note": "10 Texas Big Tree Registry leads checked; 3 turned out to be exact-coordinate duplicates of already-published hou_001/002/004 (caught by passcheck.py --pending before merging, not by the pass itself), 2 genuinely new trees verified (hou_005-006), 2 newly blocked as Spring Branch ISD private grounds, 1 (Inverness POA) left unresolved on access, 2 pre-existing blocks untouched.",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "Houston + Vancouver",
+    "kind": "write",
+    "tokens": 133243,
+    "trees": 5,
+    "note": "Write pass over 5 verified register-backed trees across two cities (hou_005-006, van_005-007): stories, recognition lines, 2 best_time from existing phenology files. All five carry honest hedges in prose (single-source registry entries in Houston, a one-house-number address discrepancy and a register-vs-inventory species conflict in Vancouver). No ages derived, none available. Normalised 3 species-name collisions during merge (Spanish Chestnut->Sweet Chestnut, Mexican White Oak/Monterrey Oak->Mexican White Oak, a multi-clause Quercus sp. field shortened) and fixed city/country page count-promise copy the new trees broke.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "cagliari",
+    "kind": "verify",
+    "tokens": 189873,
+    "trees": 0,
+    "note": "all 8 unmined register rows confirmed duplicates of already-published trees or already-blocked private land (reconfirms a 2026-09-16 verdict); 2 open leads researched further, still unresolved",
+    "wasted": 189873,
     "brief_wrong": true
    }
   ]

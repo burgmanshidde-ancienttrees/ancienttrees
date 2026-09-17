@@ -1801,6 +1801,25 @@ def night_shift(today):
     trees = sum(r.get("trees") or 0 for r in rows)
     commits = sum(r.get("commits") or 0 for r in rows)
     idle = sum(1 for r in rows if not (r.get("trees") or 0))
+
+    # A stall gets flagged to the headline verdict, not just to this table.
+    # The 2026-09-16 BLOCKER (REVIEW.md) caught the gap: three straight days
+    # of every knock producing nothing (mostly the usage-limit fingerprint
+    # CLAUDE.md names, turns below PROBE_MIN_TURNS and ~0 minutes, plus the
+    # occasional cancelled-with-no-result-record knock alongside it) while
+    # this table reported it honestly and the headline above it still opened
+    # with "Today: nothing here needs you" because ATTENTION only ever heard
+    # about signups and missed crons. Judged on trees and real minutes rather
+    # than the turns fingerprint alone, so a cancelled knock does not break
+    # the streak the way it would if this only counted one failure shape.
+    # Requires every knock in the window dead and at least 3 of them, so a
+    # normal hour-or-two-shut window (which recovers on its own per CLAUDE.md's
+    # capacity doctrine) stays quiet.
+    if len(rows) >= 3 and trees == 0 and mins < 2:
+        ATTENTION.append(
+            "the machine produced nothing across all %d knocks in the last "
+            "24h (%.1f real minutes total, 0 trees), not a quiet night"
+            % (len(rows), mins))
     out = ["", "**What the machine did, the last 24 hours**", "",
            "| Started | Minutes | Trees | Commits | Refused | Cities |",
            "|---|---:|---:|---:|---:|---|"]

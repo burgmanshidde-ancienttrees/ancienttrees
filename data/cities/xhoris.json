@@ -1,0 +1,64 @@
+{
+  "city": "Xhoris",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Xhoris is a village of Ferrières, on an open plateau in the province of Liège, and its mapped tree used to treat the sick. The Tilleul des Lognards is a nail tree: people rubbed a cloth on whatever hurt, then hammered it to the bark, so the complaint would pass into the wood. It stands on a grassy plateau above the village with a chapel, a cross and a stele for company, and has carried Wallonia's heritage protection since 1965. The GR571 long-distance trail passes close by.",
+  "meta_description": "The Tilleul des Lognards of Xhoris: a 4-metre nail tree protected since 1965, standing beside a chapel and cross on the GR571 trail.",
+  "question_meta": "The Tilleul des Lognards, a 4-metre lime above Xhoris, is Belgium's classic nail tree: illnesses were once hammered into its bark on a cloth.",
+  "question_answer": "Xhoris's only mapped tree is the Tilleul des Lognards, a lime on the open plateau between the village centre, Pierreux and the Bléron valley. Its trunk measured 4 metres round in 2014. Nobody has recorded its age, though Wallonia classified it as heritage in 1965.",
+  "question_context": "The tree's other name for itself is what it was used for: a nail tree, where a cloth rubbed over a sore place, usually a skin complaint or toothache, was then hammered to the bark, carrying the ailment into the wood along with it. It shares its plateau with a small collection of things other people have put there over the centuries: a Herman cross, the Sainte-Barbe chapel, and a stele, so a visit here takes in more than the tree alone. Wallonia listed it on the heritage register on 5 November 1965, under reference 61019-CLT-0010-01, and it has stood as a protected arbre remarquable ever since. The French record allows that it may be very old and declines to put a number on it, which this project treats as more honest than a guess would be. Every source calls it simply a tilleul, a lime, without naming the species. The GR571 long-distance trail runs close by, so this is one of the few trees on this site a passing hiker might already have walked past without knowing what it was.",
+  "hero_tree_id": "xho_001",
+  "oldest_tree_id": "xho_001",
+  "faq": [
+    {
+      "q": "How old is the Tilleul des Lognards?",
+      "a": "Nobody has recorded an age. The tree has been protected as Walloon heritage since 5 November 1965, which sets a floor of at least 60 years without settling how much older it actually is."
+    },
+    {
+      "q": "What is a nail tree?",
+      "a": "A nagelboom or arbre a clous: a cloth is rubbed over an ailment, usually a skin complaint or toothache, and then hammered into the bark, carrying the problem into the wood along with it."
+    },
+    {
+      "q": "What else stands with the tree?",
+      "a": "A Herman cross, the Sainte-Barbe chapel and a stele share the grassy plateau with the lime, making it a small cluster of things rather than one tree alone."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Xhoris is a village of Ferrières in the province of Liège. The tree stands on the open plateau above the village, reachable on foot; the GR571 long-distance trail passes nearby."
+    }
+  ],
+  "trees": [
+    {
+      "id": "xho_001",
+      "name": "Tilleul des Lognards",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 400,
+      "location": {
+        "address": "Grassy plateau between the village centre, Pierreux and the Bléron valley, Xhoris, Ferrières",
+        "latitude": 50.447824,
+        "longitude": 5.597218,
+        "neighbourhood": "Xhoris (Ferrières), Province de Liège"
+      },
+      "story": "People came here to nail their illnesses into a tree. The Tilleul des Lognards was a nail tree: a cloth was rubbed on the sore place and then hammered to the bark, and the complaint was supposed to pass into the wood along with it. Skin trouble and toothache were the usual reasons for the walk up.\n\nThe lime stands on an open grassy plateau between the centre of Xhoris, Pierreux and the Bléron valley, and it has company. A Herman cross, the Sainte-Barbe chapel and a stele share the ground with it, so the tree is one item in a small collection of things people have put on this spot over the centuries.\n\nWallonia classified it on 5 November 1965 and it has been on the heritage register as an arbre remarquable ever since, under the reference 61019-CLT-0010-01. Its trunk measured four metres round at 1.30 metres from the ground in 2014.\n\nNobody has dated it. The French record allows that it may be very old and then declines to put a number on it, which is more honest than the number would have been. Every source calls it simply a tilleul, a lime, without saying which of the Tilia species it is. If you know either answer, tell us. The GR571 long-distance trail passes close by.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Tilleul_des_Lognards",
+        "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique"
+      ],
+      "access": "Free, open rural plateau; the GR571 long-distance trail passes nearby and it is a signed local point of interest with the Sainte-Barbe chapel beside it.",
+      "transport": "On foot from Xhoris village centre, on the GR571 trail; no public transport stop at the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the company it keeps: a lime four metres round standing beside the Sainte-Barbe chapel, a Herman cross and a stele. It stands on the open plateau above Xhoris, near the GR571."
+    }
+  ]
+}

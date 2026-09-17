@@ -541,7 +541,25 @@ struct CollectSheet: View {
     private func claim(_ t: Tree, image: UIImage, at here: (lat: Double, lng: Double)) {
         let isNewTick = !saved.isVisited(t.id)
         if isNewTick { saved.toggleVisited(t.id) }
-        sightings.record(treeId: t.id, name: t.name, lat: t.lat, lng: t.lng,
+        // WHERE THE PHONE STOOD, NOT WHERE WE THINK THE TREE IS (2026-09-12).
+        // This used to store t.lat/t.lng, so every sighting of one of our
+        // trees came back reading zero metres from our own pin: an echo of a
+        // number we already had, dressed as a measurement. Hidde: "sla op waar
+        // mensen stonden."
+        //
+        // It costs nothing and it answers two questions nothing else can. A
+        // photograph that turns out to be the wrong trunk can be placed at
+        // all, which is exactly what happened at the Omiya gate in Kyoto,
+        // where the picture was of a muku beside the Sudajii and no fix
+        // existed to say where it was taken. And a coordinate from somebody
+        // standing at the tree may correct a pin of ours that already admits
+        // it is approximate (CLAUDE.md, 2026-09-08), which our pin can never
+        // do for itself.
+        //
+        // The tree is not lost by this: treeId carries the link. Nothing plots
+        // these on a map either, since only sightings WITHOUT a tree id are
+        // drawn (Collect.swift, CollectionMapPage.swift, both `yoursOnly`).
+        sightings.record(treeId: t.id, name: t.name, lat: here.lat, lng: here.lng,
                          image: image, date: taken ?? Date())
         withAnimation(.snappy) { stage = .ticked(t.id) }
         // "You found \(t.name)" below is the payoff moment; see

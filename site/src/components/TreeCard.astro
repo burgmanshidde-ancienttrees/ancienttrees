@@ -23,6 +23,7 @@ import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText } from "..
 import { ui } from "../lib/i18n";
 import { bestTimeShort } from "../lib/phenology";
 import SaveHeart from "./SaveHeart.astro";
+import SeenButton from "./SeenButton.astro";
 
 interface Props {
   tree: any;
@@ -47,11 +48,17 @@ interface Props {
   lang?: string;
   /** A translated city page carries its own translated name, species and age. */
   overrides?: { name?: string; species?: string; age?: string; story?: string };
+  /** The tick, on the pages that are the web's answer to the app's map screen:
+   *  the city page, where the pins and the passport counter read the same
+   *  answer. Off elsewhere, because the app's own card shows the ticked state
+   *  and offers the action from the map, not from a list of suggestions. A page
+   *  that passes this must also ship VISITED_SYNC_JS (qa.py checks). */
+  canTick?: boolean;
 }
 
 const {
   tree, citySlug, treeSlug, index, variant = "compact", note,
-  headingLevel = 3, omitSpecies = false, lang = "en", overrides,
+  headingLevel = 3, omitSpecies = false, lang = "en", overrides, canTick = false,
 } = Astro.props as Props;
 
 // Labels come from the one shared table rather than a ternary, which is what
@@ -59,7 +66,7 @@ const {
 // English per key, so an unwritten label shows English instead of blank.
 const U = ui(lang);
 const L = { more: U.cardMore, save: U.cardSave, saved: U.cardSaved,
-            treeLabels: U.treeLabels };
+            treeLabels: U.treeLabels, seen: U.seenIt, done: U.seenItDone };
 
 const name = overrides?.name ?? tree.name;
 const species = overrides?.species ?? tree.species ?? "";
@@ -143,8 +150,11 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
   {text && <p class="tree-story">{text}</p>}
   <p class="tree-more"><a href={href}>{L.more}</a></p>
-  <SaveHeart treeId={tree.id} treeName={name} compact labelSave={L.save} labelSaved={L.saved}
-             treeUrl={href}
-             photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
-             meta={metaParts.join(" \u00b7 ") || undefined} />
+  <div class="tree-card-actions">
+    <SaveHeart treeId={tree.id} treeName={name} compact labelSave={L.save} labelSaved={L.saved}
+               treeUrl={href}
+               photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
+               meta={metaParts.join(" \u00b7 ") || undefined} />
+    {canTick && <SeenButton treeId={tree.id} treeName={name} labelSeen={L.seen} labelDone={L.done} />}
+  </div>
 </article>

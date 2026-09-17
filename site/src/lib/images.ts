@@ -399,6 +399,19 @@ export interface Photo {
 export interface TreeLike {
   id?: string;
   photo?: Photo | null;
+  /** FURTHER photographs of the same tree, in display order after the lead.
+   *
+   * Additive on purpose (2026-09-12, on Hidde's "meerdere afbeeldingen per
+   * boom"). `photo` stays the lead and every counter, card face, og:image and
+   * ranking in this project keeps reading it unchanged; a reader cannot tell
+   * which field the lead came from, so moving 3055 trees onto a new canonical
+   * shape would have been a migration across forty scripts, five feeds and
+   * seven translated page sets for no reader-visible gain.
+   *
+   * The lead never appears here as well. check_photos_are_not_the_lead_twice()
+   * in preflight refuses it, because a page showing the same picture twice is
+   * the one way this reads as a bug rather than a gallery. */
+  photos?: Photo[] | null;
 }
 
 /** Return the photo if it has a URL, license and attribution and is cleared
@@ -416,18 +429,45 @@ export interface TreeLike {
  * the Camphor of Munakata Shrine lost the iNaturalist picture it replaced as
  * well: found 2026-09-11, six trees, nothing red anywhere. qa.py's
  * check_approved_photos_reach_the_feed() now fails the deploy on it. */
-export function usablePhoto(tree: TreeLike): Photo | null {
-  const photo = tree.photo ?? {};
+function showable(photo: Photo | null | undefined): Photo | null {
+  const p = photo ?? {};
   if (
-    photo.url &&
-    photo.license &&
-    (photo.attribution || photo.source === "contributor") &&
-    (photo.status === "approved" || photo.status === "found_needs_check")
+    p.url &&
+    p.license &&
+    (p.attribution || p.source === "contributor") &&
+    (p.status === "approved" || p.status === "found_needs_check")
   ) {
-    if (photo.url.includes("/wiki/File:")) return null;
-    return photo;
+    if (p.url.includes("/wiki/File:")) return null;
+    return p;
   }
   return null;
+}
+
+/** Every photograph of this tree cleared for display, lead first.
+ *
+ * THE one place the set is decided, so the gallery, the card face, the feed and
+ * the og:image cannot disagree about what is showable. `held` and a bare wiki
+ * File: page fall out here for an extra exactly as they do for the lead: the
+ * gate is per photograph, so a tree may carry a published lead and a held
+ * second picture without either affecting the other.
+ *
+ * The ORDER is the file's order and is never re-ranked. A run that wants a
+ * different lead edits the data; the 2026-08-25 answer-not-rule ruling is why
+ * this must not become a scoring function that the app then has to copy. */
+export function usablePhotos(tree: TreeLike): Photo[] {
+  const out: Photo[] = [];
+  const seen = new Set<string>();
+  for (const candidate of [tree.photo, ...(tree.photos ?? [])]) {
+    const ok = showable(candidate);
+    if (!ok?.url || seen.has(ok.url)) continue;
+    seen.add(ok.url);
+    out.push(ok);
+  }
+  return out;
+}
+
+export function usablePhoto(tree: TreeLike): Photo | null {
+  return usablePhotos(tree)[0] ?? null;
 }
 
 export interface CityEntryLike {

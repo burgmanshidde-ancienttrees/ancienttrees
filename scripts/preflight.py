@@ -101,6 +101,13 @@ def check_city(path):
 # point of running it before pushing was lost. Same mirror rule as the rest of
 # this file: the Astro build is the authority and this only moves the finding-out
 # earlier.
+# Still required for a place with ONE tree, which publishes no question page
+# since Contract B v1.18 (2026-09-17). Deliberate, and the reason is day thirty
+# rather than today: the moment such a place gains a second tree the page starts
+# building, and the route throws if those two fields are missing. Relaxing this
+# for one-tree places would move that failure to a deploy nobody expected it on,
+# on a commit that only added a tree. Writing them costs a run ~200 words once;
+# a red deploy on an unrelated push costs a window.
 CONTEXT_MIN, CONTEXT_MAX = 150, 200
 
 
@@ -1008,39 +1015,42 @@ def check_a_tree_can_be_told_apart():
     return out
 
 
-def check_a_tree_says_why_to_go():
-    """Can we say, in one line, why somebody should walk to this one?
+def note_a_reader_photograph_is_not_a_reason():
+    """The Nara shape, rekeyed after why_go was removed (2026-09-12).
 
     Hidde, 2026-09-08, after four trees went live in Nara from his own
     photographs: "mss moeten we een regel toevoegen why remarkable? why worth
-    the walk? tell others why they should go and visit the tree."
+    the walk?" Those four passed every mechanical check that existed. Name,
+    species, pin, story, honest flags, all present. What none of them carried
+    was a reason, and the run had confused "I can write an honest page about
+    this" with "this deserves a page".
 
-    Those four passed EVERY mechanical check that existed. Name, species, pin,
-    story, honest flags, all present. What none of them carried was a reason,
-    and nothing had ever asked for one. The run had confused "I can write an
-    honest page about this" with "this deserves a page".
+    The `why_go` field written that day is gone (2026-09-12, "precies haal
+    weg"): read beside the stories, it printed the story's own opening a
+    centimetre above the story, and Step 3 already requires a story to lead
+    with the most surprising fact. The FAILURE it was written for is still
+    real, so the check stays and keys on what is left: a tree published from a
+    READER'S PHOTOGRAPH with no recorded age and no usable measurement. That is
+    the exact path Nara took, and the one where a photograph flatters an
+    ordinary tree into looking like a find.
 
-    A tree usually answers the question without a sentence: a recorded age or a
-    big trunk IS the reason, and 2,384 of 2,777 have one or the other. This
-    fires on the rest, where there is no fact to stand on and no words either.
+    The answer to one is not a sentence any more. It is an age, a measurement,
+    a verified source, or data/leads/, which is the four-tree floor and "would
+    somebody travel for THIS ONE TREE" doing the work a field was standing in
+    for.
 
-    Two severities, deliberately. A tree published from a READER'S PHOTOGRAPH
-    with nothing to say is a FAIL, because that is the exact path Nara took and
-    the one where a photograph flatters an ordinary tree into looking like a
-    find. Everything else is a NOTE listing the backlog, because 393 pages
-    predate the field and a gate that fails the whole night shift on its first
-    run is a gate somebody switches off.
+    Corrected 2026-09-13 (REVIEW.md WARN, same date): this used to fire on age
+    and measurement alone and hit two trees, kyo_017 and kyo_019, that are not
+    the Nara shape at all. Both carry their own city/park government source
+    (kyoto.lg.jp, kyotogyoen.go.jp) naming the tree, which Nara's four never
+    had; the reader's photograph there was the ONLY thing pointing at the tree.
+    A verified source is real evidence a person besides us thought the tree
+    worth naming, so it now counts as a reason on its own, same as an age or a
+    measurement. This is a NOTE and not a FAIL: retiring a live page is hard
+    rule 3 and Hidde's call rather than a script's, and nothing sourceless has
+    shipped yet to test the FAIL path against.
     """
-    return _why_to_go_split()[0]
-
-
-def note_trees_with_no_reason():
-    """The NOTE half of check_a_tree_says_why_to_go: the backlog, not a blocker."""
-    return _why_to_go_split()[1]
-
-
-def _why_to_go_split():
-    fails, backlog = [], []
+    out = []
     for path in sorted(glob.glob("data/cities/*.json")):
         with open(path, encoding="utf-8") as fh:
             city = json.load(fh)
@@ -1050,23 +1060,26 @@ def _why_to_go_split():
                 r"not documented|unknown|undated|not established", age, re.I) \
                 and bool(re.search(r"\d{2,4}", age.replace(",", "")))
             measured = (tree.get("girth_cm") or 0) >= 250 or (tree.get("height_m") or 0) >= 20
-            if dated or measured or (tree.get("why_go") or "").strip():
+            if dated or measured:
                 continue
-            where = "%s: %s (%s)" % (path, tree.get("id"), tree.get("name"))
-            if (tree.get("photo") or {}).get("source") == "contributor":
-                fails.append("%s came from a reader's photograph and has no age, no "
-                             "measurement and no why_go. A photograph is not a reason. "
-                             "Give it one sentence saying why somebody should walk to "
-                             "THIS trunk, or move it to data/leads/." % where)
-            else:
-                backlog.append(where)
-    note = []
-    if backlog:
-        note.append("%d trees have no age, no measurement and no why_go, so nothing "
-                    "on the page says why to go and metaForTree has nothing to lead "
-                    "on. Backfill where there is demand. First few: %s"
-                    % (len(backlog), "; ".join(b.split(": ")[1] for b in backlog[:3])))
-    return fails, note
+            if (tree.get("photo") or {}).get("source") != "contributor":
+                continue
+            # A real Nara-shape failure has NOTHING: no age, no measurement and
+            # no source naming the tree at all. kyo_017 and kyo_019 (2026-09-13
+            # REVIEW.md WARN) crossed the old "exactly one" trigger with neither
+            # age nor girth, but each carries its own city/park government page
+            # (kyoto.lg.jp, kyotogyoen.go.jp) that Nara's four never had, which
+            # is real evidence a person besides us thought the tree worth
+            # naming. So a verified source is a reason on its own, same as an
+            # age or a measurement, and only a tree with none of the three still
+            # flags.
+            if tree.get("verified_sources"):
+                continue
+            out.append("%s (%s) came from a reader's photograph and has no age, "
+                       "no measurement and no source. A photograph is not a "
+                       "reason. Give it one, or move it to data/leads/."
+                       % (tree.get("id"), tree.get("name")))
+    return out
 
 
 def note_a_young_tree_is_not_ancient():
@@ -1078,15 +1091,14 @@ def note_a_young_tree_is_not_ancient():
     het platform ipv degene die ik heb en hoezo stel jij niet de vraag we zijn
     ancient trees."
 
-    check_a_tree_says_why_to_go() was written the same day and cannot see this.
+    Its sibling check was written the same day and cannot see this.
     It treats any parseable age as a reason, so "About 10 years, planted 2016"
     satisfies it exactly as "roughly 800 years" does. That is the hole: the
     field is full, the check is quiet, and the page still gives an outdoor
-    reader no reason to walk anywhere. 124 published trees sit in it today and
-    not one carries a why_go.
+    reader no reason to walk anywhere.
 
     Under 100 years, an age is a fact and not an argument. Plenty of these
-    trees have a real answer and should simply write it down: Hiroshima's eight
+    trees have a real answer and it belongs in the story: Hiroshima's eight
     survivors stood through the bomb, Newton's apple tree is Newton's, the 1948
     dawn redwoods were the first of their species grown in the West. The ones
     that cannot answer are leads wearing a page.
@@ -1107,16 +1119,14 @@ def note_a_young_tree_is_not_ancient():
                 continue
             if (tree.get("girth_cm") or 0) >= 250 or (tree.get("height_m") or 0) >= 20:
                 continue
-            if (tree.get("why_go") or "").strip():
-                continue
             young.append("%s %s (%s, ~%s yr)"
                          % (tree.get("id"), tree.get("name"), city.get("city"), age))
     if not young:
         return []
-    return ["%d trees are under 100 years old with no why_go, so the page offers "
-            "an age as its reason and the age is not a reason. We are Ancient "
-            "Trees. Give each one a sentence or move it to data/leads/. First "
-            "few: %s" % (len(young), "; ".join(young[:3]))]
+    return ["%d trees are under 100 years old with no measurement, so the page "
+            "offers an age as its reason and the age is not a reason. We are "
+            "Ancient Trees. Measure the trunk or move them to data/leads/. "
+            "First few: %s" % (len(young), "; ".join(young[:3]))]
 
 
 STORY_MIN, STORY_MAX = 150, 250   # CLAUDE.md Step 3, held by site/src/pages/[tree].astro
@@ -1175,6 +1185,50 @@ def check_one_common_name_per_species():
     return out
 
 
+def all_photos(tree):
+    """Every photograph on a tree, lead first, as (label, photo).
+
+    Trees gained photos[] on 2026-09-12 and the rules did not change with it: a
+    licence obligation, a credit and a takedown id are properties of a
+    PHOTOGRAPH, so every check that reads tree["photo"] has to read the extras
+    on the same terms. The label is what a failure line calls it, because
+    "kyo_006" alone would not say which of three pictures to go and fix.
+    """
+    out = [("photo", tree.get("photo") or {})]
+    for i, extra in enumerate(tree.get("photos") or []):
+        out.append(("photos[%d]" % i, extra or {}))
+    return out
+
+
+def check_photos_are_not_the_lead_twice():
+    """The same picture must not be both the lead and an extra.
+
+    The one way a gallery reads as a bug rather than as a feature: a hero, then
+    a strip whose first thumbnail is the hero again. usablePhotos() drops a
+    repeat by url so nothing renders twice, and this says so in the data rather
+    than leaving a silently ignored entry sitting in the file for the next run
+    to wonder about. Also catches the same extra added twice, which is what an
+    `add` verdict applied to the same sighting on two nights would produce.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            seen = {}
+            for label, photo in all_photos(tree):
+                url = (photo.get("url") or "").strip()
+                if not url:
+                    continue
+                if url in seen:
+                    out.append("%s: %s carries the same photograph at %s and %s. "
+                               "One of them is the lead and the other is noise; "
+                               "drop the repeat."
+                               % (path, tree.get("id"), seen[url], label))
+                seen[url] = label
+    return out
+
+
 def check_contributor_photos_are_traceable():
     """A reader's photograph must carry the account that sent it.
 
@@ -1201,19 +1255,19 @@ def check_contributor_photos_are_traceable():
         with open(path, encoding="utf-8") as fh:
             city = json.load(fh)
         for tree in city.get("trees", []):
-            photo = tree.get("photo") or {}
+          for label, photo in all_photos(tree):
             uid = photo.get("contributor_user_id")
             is_contrib = photo.get("source") == "contributor"
             if is_contrib and not uid and not photo.get("unlinked"):
-                out.append("%s: %s carries a reader's photograph with no "
+                out.append("%s: %s %s carries a reader's photograph with no "
                            "contributor_user_id and no unlinked flag. It could never "
                            "be taken off the page when they delete their account, "
                            "which /terms promises."
-                           % (path, tree.get("id")))
+                           % (path, tree.get("id"), label))
             if uid and not is_contrib:
-                out.append("%s: %s names a contributor_user_id without "
-                           'photo.source == "contributor", so the takedown sweep '
-                           "will not look at it." % (path, tree.get("id")))
+                out.append("%s: %s %s names a contributor_user_id without "
+                           'source == "contributor", so the takedown sweep '
+                           "will not look at it." % (path, tree.get("id"), label))
     return out
 
 
@@ -1899,7 +1953,7 @@ def check_a_by_licence_names_its_author():
         with open(p, encoding="utf-8") as fh:
             city = json.load(fh)
         for t in city.get("trees", []):
-            photo = t.get("photo") or {}
+          for label, photo in all_photos(t):
             if not photo.get("url") or photo.get("status") == "held":
                 continue
             licence = (photo.get("license") or "").lower()
@@ -1908,9 +1962,9 @@ def check_a_by_licence_names_its_author():
             name = re.sub(r"(?i),?\s*via [a-z .]+$", "",
                           photo.get("attribution") or "").strip(" ,")
             if not name:
-                out.append(f"{t['id']} ({city['city']}) ships a {photo.get('license')} "
-                           "photograph crediting nobody; find the author on the source "
-                           "page or take the photograph off")
+                out.append(f"{t['id']} {label} ({city['city']}) ships a "
+                           f"{photo.get('license')} photograph crediting nobody; find "
+                           "the author on the source page or take the photograph off")
     return out
 
 
@@ -1927,8 +1981,8 @@ def main():
                 + check_no_two_language_switch()
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
+                + check_photos_are_not_the_lead_twice()
                 + check_every_tree_names_a_source()
-                + check_a_tree_says_why_to_go()
                 + check_a_tree_can_be_told_apart()
                 + check_story_length()
                 + check_one_common_name_per_species()
@@ -1946,7 +2000,7 @@ def main():
                  + check_country_counts() + check_leads_already_published()
                  + check_tree_labels_are_translated() + check_city_indent()
                  + check_a_by_licence_names_its_author()
-                 + note_trees_with_no_reason()
+                 + note_a_reader_photograph_is_not_a_reason()
                  + note_a_young_tree_is_not_ancient()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))

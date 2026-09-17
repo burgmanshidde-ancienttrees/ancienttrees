@@ -5,7 +5,7 @@
   "intro": "Tokyo has burned to the ground more times than almost any capital on Earth: the 1657 Meireki fire, the 1868 Battle of Ueno, the 1923 earthquake, and the March 1945 firebombing each erased whole districts overnight. The city's oldest trees survived by an accident of biology as much as luck. Ginkgo bark and wood hold unusual moisture and resist igniting, which is one reason seven of these are ginkgos, scarred but alive on temple and shrine ground. The oldest dates from the Kamakura period. The newest is a hundred-year-old avenue everyone has already seen in photographs.",
   "meta_description": "Tokyo's oldest trees survived the fires that leveled the city around them. Start with the 750-year-old ginkgo at Zenpukuji, Tokyo's oldest living thing.",
   "question_answer": "The oldest tree in Tokyo is the ginkgo at Zenpukuji temple in Motoazabu, estimated at around 750 years old and a National Natural Monument since 1926. Nicknamed the Upside-Down Ginkgo for its hanging aerial roots, it stands a seven minute walk from Azabu-Juban Station.",
-  "question_meta": "Zenpukuji's 750-year-old ginkgo, the Upside-Down Ginkgo, is Tokyo's oldest tree. Its legend, exact location, and sixteen more remarkable trees nearby.",
+  "question_meta": "Zenpukuji's 750-year-old ginkgo, the Upside-Down Ginkgo, is Tokyo's oldest tree. Its legend, exact location, and twenty more remarkable trees nearby.",
   "question_context": "Tokyo's claim to its oldest tree comes with more competition than most capitals. Sensoji temple in Asakusa has its own scarred ginkgo, tied by legend to the 12th century shogun Minamoto no Yoritomo and commonly cited at around 800 years old, older than Zenpukuji's tree. But that age rests entirely on oral tradition, and the tree lost its official Natural Monument status after 1945 fire damage. Zenpukuji's ginkgo carries an active national designation dating to 1926 and a growth-ring estimate that supports roughly 750 years, which is why guidebooks and Minato City's own tourism office call it Tokyo's oldest living tree while treating Sensoji's as a close, less formally verified second. Both trees share something else: they survived the same March 1945 firebombing raids that destroyed the buildings around them, because ginkgo wood resists catching fire in a way most other trees do not. Zenpukuji's tree also carries a legend of its own, said to have grown from a walking staff planted by the monk Shinran in 1229. Getting there: Azabu-Juban Station on the Namboku or Oedo line, then a seven minute walk.",
   "faq": [
     {
@@ -469,10 +469,12 @@
       "curation_status": "flagged",
       "story": "This tree started as a pot plant. Around 1926 the grandfather of the Mikado bread shop, at whose door it still stands, kept a Himalayan cedar seedling in a container and watered it with the water left over from rinsing rice, until it outgrew the pot and went into the ground at the corner. It is now twenty metres tall and four metres round, and it fills a small triangular street junction in Yanaka entirely.\n\nNothing about it belongs here. Cedrus deodara comes from the western Himalaya, and a hundred-year-old one wedged into a lane of low wooden houses in old Tokyo is worth going to look at once. Taito ward gave it formal protection in 2006, and the junction sits on the national list of a hundred historic Japanese landscapes.\n\nIts age is argued over by about a decade. The ward's own page says ninety years; Tokyo Shimbun ran a headline in October 2019 calling it a hundred, and a survey the following spring recorded the same. That October typhoon tore off roughly a third of the crown and shut the road for days. The ward cut back what was left in November 2020, pruned again after that, and by September 2024 the tree had been braced against the next storm.\n\nA century on, the pot is a footnote and the cedar is the landmark. It is on open street, with no gate and no hours.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Himalayan_cedar_in_Yanaka%2C_Tokyo_-_Jun_23%2C_2011.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "se7en, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1280,
+        "height": 960
       },
       "how_to_recognise": "You can recognise it by the size, twenty metres tall and four metres round, filling a small triangular junction of low wooden houses. It stands on the open street at the door of the old Mikado bread shop in Yanaka."
     },
@@ -643,6 +645,154 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by the crowd of trunks pushed out of its own base after lightning split it about six metres up, 10.8 metres round at chest height against 10.2 at the ground. It stands in the grounds of Katsushika Hachimangu."
+    },
+    {
+      "id": "tok_018",
+      "name": "The Great Zelkova of Nerima Hakusan Shrine",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "roughly 900 years (tradition)",
+      "age_min": 700,
+      "age_max": 950,
+      "girth_cm": 800,
+      "height_m": 19,
+      "location": {
+        "address": "Nerima Hakusan Jinja, 4-2 Nerima, Nerima-ku, Tokyo",
+        "latitude": 35.740719,
+        "longitude": 139.650406,
+        "neighbourhood": "Nerima"
+      },
+      "verified_sources": [
+        "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/rekishiwoshiru/rekishibunkazai/bunkazai/zelkova.html",
+        "https://ja.wikipedia.org/wiki/%E7%B7%B4%E9%A6%AC%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
+        "data/registers/japan-bunkacho.json (national Natural Monument register entry, designated 1940-07-12)"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "about 4 min walk from Toshimaen Station (Toei Oedo/Seibu Toshima lines)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Six great zelkovas stood at this shrine when the Meiji era began. One is left. Two of the six were designated Natural Monuments, one above a stone stairway and one below it. The upper tree, fourteen metres tall, was designated in 1940; a typhoon split its trunk in 2016 and it had to be felled. The lower one survives, and it is the largest zelkova in Tokyo: nineteen metres tall, eight metres round, and kept going by repeated tree surgery since the early 1990s after lightning strikes and internal decay. By the shrine's own tradition both trees were planted in 1083 by the warlord Minamoto no Yoshiie, who stopped here on his way north to fight in Mutsu. That tradition is where the figure of roughly 900 years comes from, not a ring count, and the honest band is something between seven and nine and a half centuries. One caveat to carry with you. The national register entry for this shrine's zelkova records the 1940 designation, which is the date that belongs to the tree that fell, so the coordinate may mark where the dead one stood rather than the living one. The survivor is the tree below the steps.",
+      "how_to_recognise": "You can recognise it by its position below the stone stairway: the designated tree above the steps was felled in 2016, and this is the survivor, nineteen metres tall and eight metres round.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Hakusan-jinja_zelkova_tree_2023-08-17.jpg",
+        "license": "CC0",
+        "attribution": "Asanagi, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
+      }
+    },
+    {
+      "id": "tok_019",
+      "name": "The Great Ginkgo of Oji Shrine",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 600 years (tradition)",
+      "age_min": 550,
+      "age_max": 700,
+      "girth_cm": 520,
+      "height_m": 24.2,
+      "location": {
+        "address": "1-1-12 Oji Honcho, Kita-ku, Tokyo 114-0022",
+        "latitude": 35.753295,
+        "longitude": 139.735927,
+        "neighbourhood": "Oji, Kita"
+      },
+      "verified_sources": [
+        "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument register, designated 1939)",
+        "https://akabane-shinbun.com/archives/47478",
+        "http://www.tokyo-jinjacho.or.jp/goshahou/oujijinja_ichou/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "3 min walk from Oji Station (JR Keihin-Tohoku line / Tokyo Metro Namboku line, north exit)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The air raids of 1945 took the shrine, its halls and its other old trees. The ginkgo is what is left. Oji Shrine burned on one of the nights Tokyo burned, and the large camphor that once stood here went with the buildings; this tree came through and is now the biggest living thing on the grounds at 24 metres. The Toshima clan founded the shrine in the Genko era, between 1321 and 1324, and by the shrine's own account the ginkgo went in around the time of the founding, which is where the figure of roughly 600 years comes from. That is the shrine's claim about this particular tree rather than a ring count, so read it as tradition. Tokyo made it a designated Natural Monument in 1939; the registers say March and one local account says May, which is the sort of disagreement nobody is going to settle now. Its girth is the livelier argument. The trunk measures 5.2 metres round today, while a 1924 account of the same tree records 6.36 metres, and we cannot tell which way the difference runs: dieback, a different measuring height, or a number copied wrong somewhere. Both figures stand here until somebody with a tape settles it. The shrine is one of the Tokyo Ten pilgrimage circuit, three minutes from the station.",
+      "how_to_recognise": "You can recognise it by being the one big old tree left in the precinct, 24 metres tall and a little over five metres round, where the shrine's other veterans burned in 1945.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late November, when the crown turns gold and then drops in a day or two"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tok_020",
+      "name": "The Kaya of Zenyo-ji",
+      "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+      "age_estimate": "700 to 800 years",
+      "age_min": 700,
+      "age_max": 800,
+      "girth_cm": 530,
+      "height_m": 22.6,
+      "location": {
+        "address": "Zenyo-ji, 2-7-11 Noge, Setagaya-ku, Tokyo 158-0092",
+        "latitude": 35.601702,
+        "longitude": 139.642336,
+        "neighbourhood": "Noge, Setagaya"
+      },
+      "verified_sources": [
+        "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument register, designated 1964-11-21)",
+        "https://ja.wikipedia.org/wiki/%E5%96%84%E9%A4%8A%E5%AF%BA%E3%81%AE%E3%82%AB%E3%83%A4",
+        "https://setagayadigitalmuseum.jp/collection/21723/detail/"
+      ],
+      "access": "Free, temple grounds open daily",
+      "transport": "Noge area, Setagaya; nearest station is a bus or ~15-20 min walk from Kaminoge Station (Tokyu Oimachi line) -- worth tightening in a later pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The temple arrived second. When Zenyo-ji moved to this ground from the village of Fukazawa in the Keian era, between 1648 and 1651, the account of the move describes the kaya as already a large tree. Fukazawa and Noge were farming country then; what grew up around the tree afterwards is Setagaya. Sources put its age at 700 or 800 years and nobody has narrowed it further, so neither will we. It is a nutmeg-yew, 22.6 metres tall and 5.3 metres round, and a female tree: the species carries its sexes on separate plants. What people actually remark on is the shape. Its lower branches trail down the way a willow's do, which is odd enough in a nutmeg-yew that every account of this one mentions it, and it gives a slow dark conifer a surprising amount of movement. Tokyo designated it a Natural Monument in 1964. It is a quiet stop rather than a famous one: a temple yard in a residential corner of Setagaya, no ticket, no crowd, and a tree that was already worth remarking on when the buildings beside it were new.",
+      "how_to_recognise": "You can recognise it by the lower branches, trailing down like a willow's, unusual enough in a nutmeg-yew that every account of the tree mentions them. It stands in the temple yard, 22.6 metres tall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tok_021",
+      "name": "The Child-Rearing Ginkgo of Zoshigaya Kishimojin",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 600 to 700 years",
+      "age_min": 600,
+      "age_max": 700,
+      "girth_cm": 663,
+      "height_m": 32.5,
+      "location": {
+        "address": "Kishimojin-do (Homyo-ji), 3-15 Zoshigaya, Toshima-ku, Tokyo 171-0032",
+        "latitude": 35.721762,
+        "longitude": 139.714039,
+        "neighbourhood": "Zoshigaya, Toshima"
+      },
+      "verified_sources": [
+        "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument register, designated 1956-08-21)",
+        "https://www.city.toshima.lg.jp/349/bunka/bunka/bunkazai/naturalmonument/2209260934.html",
+        "https://www.tokyocreative.com/sights/6318-zoshigaya-kishimojin-gingko-tree"
+      ],
+      "access": "Free, temple grounds open daily",
+      "transport": "a few minutes from Zoshigaya Station (Tokyo Metro Fukutoshin line) or the Kishibojin-mae stop on the Toden Arakawa tram line",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Edo-period women came here to put their arms around this trunk, and people still do. The tree is the kosodate icho, the child-rearing ginkgo, and it stands beside the Kishimojin hall in Zoshigaya, dedicated to a deity of safe childbirth; the tradition holds that a woman who embraces the trunk will be blessed with children. The scale stands up on its own too. At 32.5 metres it is the second-largest ginkgo in Tokyo, after the Zenpukuji tree in Motoazabu. Its girth is less settled. Toshima Ward's own cultural-affairs page, the authority that designates it, gives 6.63 metres, while a separate summary citing the metropolitan heritage map gives 11, and nearly double is too large a gap to split: it may be that one figure takes in the buttressed root mass and the other the trunk, or that a number was copied wrong. The ward's figure is the one we carry. The ward also records the planting: by the monk Nichiyu in the Oei era, between 1394 and 1428, which puts the tree here a century and a half before the hall beside it, built around 1578. Its paperwork has had a rougher time than it has. Made a national Natural Monument in 1933, the designation was revoked in 1946, and Tokyo redesignated it at metropolitan level in 1956. Reach it by the old sweet-shop lane.",
+      "how_to_recognise": "You can recognise it by its size, 32.5 metres tall and over six metres round, the largest tree at the Kishimojin hall, which you reach by the old sweet-shop lane in Zoshigaya.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late November, when the crown turns gold above the hall"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "tok_001"

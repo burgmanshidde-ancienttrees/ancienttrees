@@ -1,197 +1,202 @@
 {
- "city": "Tallinn",
- "note": "Verify pass 2026-08-16, tln prefix. 4 trees verified to data/research/tallinn-verified.json (tln_001-004). Remaining 33 of 37 scouted register candidates below: most are ornamental park cultivars (protected as botanical specimens under the EELIS register, not because anyone considers them old or spectacular), which is the dominant pattern in this register per the brief. None confirmed dead or access-blocked; these are evidence/remarkability leads, not blocked entries. DEEPEN pass 2026-09-11: 1 tree verified to data/research/tallinn-verified.json (tln_006, the Tammesalu Oak, Tallinn's thickest, in Kadriorg's own oak grove). Register candidates near the city centre are almost entirely the same ornamental cultivars already leaded above (reverse-geocoded this pass to Kassisaba/Tõnismäe residential streets and apartment courtyards, not parks; no age or story found for any, consistent with the existing pattern) or the far Kopli/Professorite küla oak cluster (5 plain 'Harilik tamm' entries around 59.458-59.462,24.664-24.669, unresearched, worth a future pass). Off-register, a 2017 Postimees interview with Tallinn Botanic Garden dendrologist Olev Abner named Tallinn's two oldest trees (both Kadriorg oak-grove remnants near A. Weizenbergi street) and a well-documented 360-year oak in the former Kopli cemetery, now a public park; all three are added below as single-source leads, not delivered, because no second independent source or register entry was found this pass.",
- "leads": [
-  {
-   "register_id": "n/a (single source)",
-   "name_et": "Harilik tamm, A. Weizenbergi 26",
-   "reason": "Named by Postimees (2017) via Tallinn Botanic Garden dendrologist Olev Abner as Tallinn's SINGLE OLDEST tree, ~390 years, standing by the old guardhouse built 1828 (now the Kadriorg Park museum and library), A. Weizenbergi 26, Kadriorg -- coordinates 59.4375,24.7901 per OSM building lookup, building-level only. A remnant of the historic Kadriorg oak grove, older than the palace. Genuinely promising (named, aged, historically significant, inside Kadriorg's free public grounds where we already publish 5 trees) but this pass found only the one Postimees source; no second independent mention, no register id, and no tree-level coordinate. Worth a second pass to corroborate and pin precisely; do not ship on one source."
-  },
-  {
-   "register_id": "n/a (single source)",
-   "name_et": "Harilik tamm, A. Weizenbergi 39 (presidendilossi taga)",
-   "reason": "Same Postimees/Olev Abner ranking (2017): Tallinn's SECOND OLDEST tree, ~370 years, behind the Presidential Palace/residence, A. Weizenbergi 39, Kadriorg -- coordinates 59.4380,24.7940 per OSM (the Office of the President), building-level only. Also a Kadriorg oak-grove remnant. Same caveat as KLO... n/a Weizenbergi 26 above: single source only this pass, no register id, no tree-level pin, and a residence behind the presidential palace may need an access check before shipping (is the tree visible/reachable from public ground, or only from the grounds proper). Worth a second pass."
-  },
-  {
-   "register_id": "n/a (single source)",
-   "name_et": "Harilik tamm, Kopli kalmistupark (mänguväljaku juures)",
-   "reason": "Same Postimees/Olev Abner ranking (2017): a ~360-year oak in Kopli kalmistupark (former Kopli cemetery, Tallinn's largest historic Baltic German cemetery, closed and levelled by Soviet authorities in 1950-51, restored as a public park 1993-2006, near a children's playground), predating the cemetery's 1774 founding. Confirmed as a genuine, currently public, free park (tallinn.ee, et.wikipedia.org 'Kopli kalmistu', triptoestonia.ee all independently describe the park's history and public status), but none of those independently mention the tree itself, so it is single-sourced on the tree fact specifically. No register id, no tree-level coordinate (park centre only, 59.4532,24.6843, roughly 4km from Tallinn centre, a separate cluster from Kadriorg). Worth a second pass to corroborate the tree and pin it; note Postimees says Eduard Bornhöhe was 'buried in the cemetery near this oak', which et.wikipedia.org / triptoestonia.ee both say was later exhumed and reburied at Pirita Forest Cemetery in 1950/51 -- not a contradiction (he genuinely was buried there first) but do not repeat it as a present-tense fact."
-  },
-  {
-   "register_id": "KLO4000133",
-   "name_et": "Punane tamm",
-   "reason": "Researched, not just skipped: this is 'Tuvi pargi punane tamm' per the Windecki park expertise PDF (eestimetsaabiks.ee, 2017), a small ornamental red oak in Tuvi Park, D=33-44cm, H=14.5-16m (1991 and 2008 measurements). Much smaller and younger than tln_003's Windecki red oak; no age, story or spectacle beyond being a modest planted specimen. Fails the remarkable bar."
-  },
-  {
-   "register_id": "KLO4000109",
-   "name_et": "Must pappel",
-   "reason": "Not the famous Kaasani kiriku pappel (Estonia's oldest/thickest poplar, which broke in 2004 and stood at Liivalaia 38, a different location entirely). This candidate's coordinates reverse-geocode to Kalamaja (Põhja pst area). No age, girth, or individual story found for this specific tree in the time available; register carries no data beyond species and point. Worth a second pass with more time, not rejected outright."
-  },
-  {
-   "register_id": "KLO4000031",
-   "name_et": "Harilik tamm",
-   "reason": "Generic register entry near Hirvepark/Toompark, no name, no age/girth in register or found via search in this pass. Plain oaks are exactly the type the brief flagged as the only cultivar-free candidates worth chasing; unresearched due to time, not rejected on merit."
-  },
-  {
-   "register_id": "KLO4000032",
-   "name_et": "Harilik tamm",
-   "reason": "Same as KLO4000031: generic unnamed oak near the same area (1.15km out), no age/story surfaced in available time."
-  },
-  {
-   "register_id": "KLO4000030",
-   "name_et": "Harilik tamm",
-   "reason": "Far outlier (4.88km, likely Nõmme district). Unresearched due to time; generic name makes it hard to search without a park/street anchor."
-  },
-  {
-   "register_id": "KLO4000176",
-   "name_et": "Virgiinia kadakas",
-   "reason": "Eastern redcedar (Juniperus virginiana), an introduced ornamental conifer. No age or story found; not chased further given the ornamental-cultivar pattern dominating this register."
-  },
-  {
-   "register_id": "KLO4000039",
-   "name_et": "Hariliku tamme kultivar (Püramiidtamm)",
-   "reason": "A columnar/pyramid oak cultivar (Fastigiata form), protected as a botanical specimen, not for age. Ornamental cultivar, not remarkable in our sense."
-  },
-  {
-   "register_id": "KLO4000044",
-   "name_et": "Kerakujuline vaher",
-   "reason": "Globe maple cultivar (Acer platanoides 'Globosum'), ornamental park specimen. Not old, not spectacular beyond its shape."
-  },
-  {
-   "register_id": "KLO4001240",
-   "name_et": "Punaselehine vaher",
-   "reason": "Copper/purple-leaf Norway maple cultivar, ornamental. Same pattern as the other Kadriorg-area cultivars."
-  },
-  {
-   "register_id": "KLO4000170",
-   "name_et": "Valgepöök",
-   "reason": "Hornbeam (white beech in local naming), ordinary park specimen with no age or story surfaced."
-  },
-  {
-   "register_id": "KLO4000033",
-   "name_et": "Punaselehine pöök",
-   "reason": "Copper beech cultivar, ornamental."
-  },
-  {
-   "register_id": "KLO4000036",
-   "name_et": "Punaselehine pöök",
-   "reason": "Second copper beech cultivar nearby (1.09km), same pattern."
-  },
-  {
-   "register_id": "KLO4000042",
-   "name_et": "Kerakujuline vaher",
-   "reason": "Second globe maple cultivar nearby, same pattern."
-  },
-  {
-   "register_id": "KLO4000040",
-   "name_et": "Hariliku tamme püramiidvorm",
-   "reason": "Second pyramid oak cultivar, same pattern."
-  },
-  {
-   "register_id": "KLO4000149",
-   "name_et": "Läätspuu leinavorm (5 puud)",
-   "reason": "Weeping golden-chain tree cultivar (Laburnum), a group of 5 ornamental specimens. Not a single collectible point in the way the brief requires, and ornamental rather than old."
-  },
-  {
-   "register_id": "KLO4000026",
-   "name_et": "Harilik pöök",
-   "reason": "Common beech, no age or story surfaced in the time available; unresearched due to time rather than rejected on merit."
-  },
-  {
-   "register_id": "KLO4000041",
-   "name_et": "Suureviljaline tamm",
-   "reason": "A large-fruited oak cultivar/form, botanical curiosity rather than age or spectacle."
-  },
-  {
-   "register_id": "KLO4000016",
-   "name_et": "Euro-ameerika pappel",
-   "reason": "Euro-American hybrid poplar cultivar, ornamental planting, no age/story found."
-  },
-  {
-   "register_id": "KLO4000134",
-   "name_et": "Põldvaher (2 puud)",
-   "reason": "Field maple pair, coord_basis=Asendiskeem (sketch-level), no age or story surfaced."
-  },
-  {
-   "register_id": "KLO4000147",
-   "name_et": "Sile hobukastan (6 puud)",
-   "reason": "A group of 6 smooth/red horse chestnuts. Group entry, not a single collectible point; also no age or spectacle evidence found."
-  },
-  {
-   "register_id": "KLO4000043",
-   "name_et": "Punaselehine vaher (2 puud)",
-   "reason": "Kadriorg-area copper maple pair, ornamental cultivar cluster."
-  },
-  {
-   "register_id": "KLO4000035",
-   "name_et": "Punaselehine pöök",
-   "reason": "Kadriorg-area copper beech, ornamental cultivar cluster."
-  },
-  {
-   "register_id": "KLO4000046",
-   "name_et": "Punaselehine vaher",
-   "reason": "Kadriorg-area copper maple, ornamental cultivar cluster."
-  },
-  {
-   "register_id": "KLO4000038",
-   "name_et": "Hariliku tamme kultivar",
-   "reason": "Kadriorg-area oak cultivar, ornamental, not the same as the plain 'Harilik tamm' oaks; unresearched but pattern strongly suggests ornamental per its own register name."
-  },
-  {
-   "register_id": "KLO4000034",
-   "name_et": "Punaselehine pöök",
-   "reason": "Kadriorg-area copper beech, ornamental cultivar cluster."
-  },
-  {
-   "register_id": "KLO4000048",
-   "name_et": "Hõbevaher",
-   "reason": "Silver maple, GPS-based coordinate (would be confirmed-precision if pursued) but no age or story surfaced in the time available; worth a second pass."
-  },
-  {
-   "register_id": "KLO4000045",
-   "name_et": "Punaselehine vaher",
-   "reason": "Kadriorg-area copper maple, ornamental cultivar cluster."
-  },
-  {
-   "register_id": "KLO4000130",
-   "name_et": "Pensilvaania saare kultivar (Kirjulehised saared)",
-   "reason": "Variegated-leaf Pennsylvania ash cultivar, ornamental specimen, no age/story."
-  },
-  {
-   "register_id": "KLO4000098",
-   "name_et": "Lõhislehine kask (4 puud)",
-   "reason": "Cut-leaf birch cultivar group (4 trees), ornamental, GPS-based but a group rather than one collectible point."
-  },
-  {
-   "register_id": "KLO4000093",
-   "name_et": "Leinakask (2 puud)",
-   "reason": "Weeping birch cultivar pair, ornamental, GPS-based, group entry."
-  },
-  {
-   "register_id": "KLO4000022",
-   "name_et": "Harilik hobukastan (leinavorm)",
-   "reason": "Weeping horse chestnut cultivar, ornamental specimen, no age/story surfaced."
-  },
-  {
-   "register_id": "KLO4000009",
-   "name_et": "Arukase kultivar (Leinakask)",
-   "reason": "Weeping silver birch cultivar, ornamental, far outlier (4.1km), unresearched."
-  },
-  {
-   "register_id": "KLO4000085",
-   "name_et": "Kõrgetüveline sarapuu",
-   "reason": "Standard-form (tree-trained) hazel, ornamental horticultural form rather than an old or spectacular tree."
-  }
- ],
- "blocked": [
-  {
-   "name_et": "Riiasoodi tamm",
-   "reason": "Sacred oak (hiis tradition), Metsakasti village, Viimsi parish, ~10km from Tallinn centre. Well documented: et.wikipedia.org gives 300 years old, 4.4m girth, 14m height, 8.8m root-collar girth, coordinates 59.49611,24.895; maavald.ee (Maavalla Koda's sacred-sites register) independently confirms it as a sacred site at the same village. BLOCKED on access, not on evidence: it stands on private farmland (Riiasoodi talu), and the site's own geocache page quotes the farm owner asking visitors not to enter the property, saying it can only be viewed from the roadside at a distance. BRIEF_RESEARCH.md's hard limit is private land not genuinely open to visitors, leave it out, and this is a verification pass rather than a judgement call about a view-only exception, so it is recorded here rather than delivered. A later pass could reassess it as a view-only entry with the pin set to the public roadside rather than the trunk."
-  },
-  {
-   "register_id": "n/a (Wikidata Q16412713 / EELIS-adjacent KLO4000065)",
-   "name_et": "Kaasani kiriku pappel",
-   "reason": "Estonia's former thickest black poplar (698cm girth), stood in the Kaasani (Our Lady of Kazan) church yard at Liivalaia 38, coordinates 59.43028,24.75962 (et.wikipedia.org 'Kaasani kiriku pappel', matches the Wikidata individual-protected-object entry the brief surfaced almost exactly). Confirmed by a Postimees archive headline that it broke in a storm on 16 November 2004. No source found this pass confirming regrowth, a surviving stub, or current living status; the hard rule against publishing a tree known or suspected dead applies, so this is blocked rather than delivered. Also entangled in search results with a separate, related pair (Kanada pappel ja must pappel, KLO4000065, corner of Narva mnt/Weizenbergi, one specimen felled 2010, the other's current status unclear) which is a DIFFERENT location and should not be confused with this one in a future pass."
-  }
- ]
+  "city": "Tallinn",
+  "note": "Verify pass 2026-08-16, tln prefix. 4 trees verified to data/research/tallinn-verified.json (tln_001-004). Remaining 33 of 37 scouted register candidates below: most are ornamental park cultivars (protected as botanical specimens under the EELIS register, not because anyone considers them old or spectacular), which is the dominant pattern in this register per the brief. None confirmed dead or access-blocked; these are evidence/remarkability leads, not blocked entries. DEEPEN pass 2026-09-11: 1 tree verified to data/research/tallinn-verified.json (tln_006, the Tammesalu Oak, Tallinn's thickest, in Kadriorg's own oak grove). Register candidates near the city centre are almost entirely the same ornamental cultivars already leaded above (reverse-geocoded this pass to Kassisaba/Tõnismäe residential streets and apartment courtyards, not parks; no age or story found for any, consistent with the existing pattern) or the far Kopli/Professorite küla oak cluster (5 plain 'Harilik tamm' entries around 59.458-59.462,24.664-24.669, unresearched, worth a future pass). DEEPEN pass 2026-09-12: the three 2017 Postimees/Olev Abner single-source leads below were followed up. Two now DELIVERED to data/research/tallinn-verified.json: tln_007 (A. Weizenbergi 26 guardhouse oak, still single-sourced for the specific age claim but corroborated in general terms by Kadriorg Park's own site) and tln_008 (Kopli kalmistupark oak, now genuinely two-sourced: Postimees plus tallinn.ee's own park page independently giving ~350 years and 'predates the cemetery'). The third, the A. Weizenbergi 39 oak behind the Presidential Palace/residence, is now BLOCKED on access rather than left as a lead: see the blocked list. A bonus find while chasing the Kopli oak, a second and separate 360-year oak named by the same Postimees piece at Kopli 103 on the Baltic Ship Repair Plant's industrial grounds, is also recorded there as blocked.",
+  "leads": [
+    {
+      "register_id": "KLO4000133",
+      "name_et": "Punane tamm",
+      "reason": "Researched, not just skipped: this is 'Tuvi pargi punane tamm' per the Windecki park expertise PDF (eestimetsaabiks.ee, 2017), a small ornamental red oak in Tuvi Park, D=33-44cm, H=14.5-16m (1991 and 2008 measurements). Much smaller and younger than tln_003's Windecki red oak; no age, story or spectacle beyond being a modest planted specimen. Fails the remarkable bar."
+    },
+    {
+      "register_id": "KLO4000109",
+      "name_et": "Must pappel",
+      "reason": "Not the famous Kaasani kiriku pappel (Estonia's oldest/thickest poplar, which broke in 2004 and stood at Liivalaia 38, a different location entirely). This candidate's coordinates reverse-geocode to Kalamaja (Põhja pst area). No age, girth, or individual story found for this specific tree in the time available; register carries no data beyond species and point. Worth a second pass with more time, not rejected outright."
+    },
+    {
+      "register_id": "KLO4000031",
+      "name_et": "Harilik tamm",
+      "reason": "Generic register entry near Hirvepark/Toompark, no name, no age/girth in register or found via search in this pass. Plain oaks are exactly the type the brief flagged as the only cultivar-free candidates worth chasing; unresearched due to time, not rejected on merit."
+    },
+    {
+      "register_id": "KLO4000032",
+      "name_et": "Harilik tamm",
+      "reason": "Same as KLO4000031: generic unnamed oak near the same area (1.15km out), no age/story surfaced in available time."
+    },
+    {
+      "register_id": "KLO4000030",
+      "name_et": "Harilik tamm",
+      "reason": "Far outlier (4.88km, likely Nõmme district). Unresearched due to time; generic name makes it hard to search without a park/street anchor."
+    },
+    {
+      "register_id": "KLO4000176",
+      "name_et": "Virgiinia kadakas",
+      "reason": "Eastern redcedar (Juniperus virginiana), an introduced ornamental conifer. No age or story found; not chased further given the ornamental-cultivar pattern dominating this register."
+    },
+    {
+      "register_id": "KLO4000039",
+      "name_et": "Hariliku tamme kultivar (Püramiidtamm)",
+      "reason": "A columnar/pyramid oak cultivar (Fastigiata form), protected as a botanical specimen, not for age. Ornamental cultivar, not remarkable in our sense."
+    },
+    {
+      "register_id": "KLO4000044",
+      "name_et": "Kerakujuline vaher",
+      "reason": "Globe maple cultivar (Acer platanoides 'Globosum'), ornamental park specimen. Not old, not spectacular beyond its shape."
+    },
+    {
+      "register_id": "KLO4001240",
+      "name_et": "Punaselehine vaher",
+      "reason": "Copper/purple-leaf Norway maple cultivar, ornamental. Same pattern as the other Kadriorg-area cultivars."
+    },
+    {
+      "register_id": "KLO4000170",
+      "name_et": "Valgepöök",
+      "reason": "Hornbeam (white beech in local naming), ordinary park specimen with no age or story surfaced."
+    },
+    {
+      "register_id": "KLO4000033",
+      "name_et": "Punaselehine pöök",
+      "reason": "Copper beech cultivar, ornamental."
+    },
+    {
+      "register_id": "KLO4000036",
+      "name_et": "Punaselehine pöök",
+      "reason": "Second copper beech cultivar nearby (1.09km), same pattern."
+    },
+    {
+      "register_id": "KLO4000042",
+      "name_et": "Kerakujuline vaher",
+      "reason": "Second globe maple cultivar nearby, same pattern."
+    },
+    {
+      "register_id": "KLO4000040",
+      "name_et": "Hariliku tamme püramiidvorm",
+      "reason": "Second pyramid oak cultivar, same pattern."
+    },
+    {
+      "register_id": "KLO4000149",
+      "name_et": "Läätspuu leinavorm (5 puud)",
+      "reason": "Weeping golden-chain tree cultivar (Laburnum), a group of 5 ornamental specimens. Not a single collectible point in the way the brief requires, and ornamental rather than old."
+    },
+    {
+      "register_id": "KLO4000026",
+      "name_et": "Harilik pöök",
+      "reason": "Common beech, no age or story surfaced in the time available; unresearched due to time rather than rejected on merit."
+    },
+    {
+      "register_id": "KLO4000041",
+      "name_et": "Suureviljaline tamm",
+      "reason": "A large-fruited oak cultivar/form, botanical curiosity rather than age or spectacle."
+    },
+    {
+      "register_id": "KLO4000016",
+      "name_et": "Euro-ameerika pappel",
+      "reason": "Euro-American hybrid poplar cultivar, ornamental planting, no age/story found."
+    },
+    {
+      "register_id": "KLO4000134",
+      "name_et": "Põldvaher (2 puud)",
+      "reason": "Field maple pair, coord_basis=Asendiskeem (sketch-level), no age or story surfaced."
+    },
+    {
+      "register_id": "KLO4000147",
+      "name_et": "Sile hobukastan (6 puud)",
+      "reason": "A group of 6 smooth/red horse chestnuts. Group entry, not a single collectible point; also no age or spectacle evidence found."
+    },
+    {
+      "register_id": "KLO4000043",
+      "name_et": "Punaselehine vaher (2 puud)",
+      "reason": "Kadriorg-area copper maple pair, ornamental cultivar cluster."
+    },
+    {
+      "register_id": "KLO4000035",
+      "name_et": "Punaselehine pöök",
+      "reason": "Kadriorg-area copper beech, ornamental cultivar cluster."
+    },
+    {
+      "register_id": "KLO4000046",
+      "name_et": "Punaselehine vaher",
+      "reason": "Kadriorg-area copper maple, ornamental cultivar cluster."
+    },
+    {
+      "register_id": "KLO4000038",
+      "name_et": "Hariliku tamme kultivar",
+      "reason": "Kadriorg-area oak cultivar, ornamental, not the same as the plain 'Harilik tamm' oaks; unresearched but pattern strongly suggests ornamental per its own register name."
+    },
+    {
+      "register_id": "KLO4000034",
+      "name_et": "Punaselehine pöök",
+      "reason": "Kadriorg-area copper beech, ornamental cultivar cluster."
+    },
+    {
+      "register_id": "KLO4000048",
+      "name_et": "Hõbevaher",
+      "reason": "Silver maple, GPS-based coordinate (would be confirmed-precision if pursued) but no age or story surfaced in the time available; worth a second pass."
+    },
+    {
+      "register_id": "KLO4000045",
+      "name_et": "Punaselehine vaher",
+      "reason": "Kadriorg-area copper maple, ornamental cultivar cluster."
+    },
+    {
+      "register_id": "KLO4000130",
+      "name_et": "Pensilvaania saare kultivar (Kirjulehised saared)",
+      "reason": "Variegated-leaf Pennsylvania ash cultivar, ornamental specimen, no age/story."
+    },
+    {
+      "register_id": "KLO4000098",
+      "name_et": "Lõhislehine kask (4 puud)",
+      "reason": "Cut-leaf birch cultivar group (4 trees), ornamental, GPS-based but a group rather than one collectible point."
+    },
+    {
+      "register_id": "KLO4000093",
+      "name_et": "Leinakask (2 puud)",
+      "reason": "Weeping birch cultivar pair, ornamental, GPS-based, group entry."
+    },
+    {
+      "register_id": "KLO4000022",
+      "name_et": "Harilik hobukastan (leinavorm)",
+      "reason": "Weeping horse chestnut cultivar, ornamental specimen, no age/story surfaced."
+    },
+    {
+      "register_id": "KLO4000009",
+      "name_et": "Arukase kultivar (Leinakask)",
+      "reason": "Weeping silver birch cultivar, ornamental, far outlier (4.1km), unresearched."
+    },
+    {
+      "register_id": "KLO4000085",
+      "name_et": "Kõrgetüveline sarapuu",
+      "reason": "Standard-form (tree-trained) hazel, ornamental horticultural form rather than an old or spectacular tree."
+    },
+    {
+      "register_id": "Wikidata Q53679366",
+      "name_et": "Pilladu tamm",
+      "reason": "Not Tallinn: stands in neighbouring Harku vald (municipality), at the site of the former Pilladu farm, roughly 10km west of the Tallinn centre point used for this brief's radius search (coordinates ~59.41737,24.58742 per Wikidata). Confirmed alive and protected since 1959 by Harku Vallavalitsus's own website (harku.ee, 'Puud' page): girth 3.3m at 1.3m height, 20m tall. A real candidate, but for a Harku page or a day-trip addition to Tallinn, not researched further this pass since it falls outside Tallinn proper."
+    },
+    {
+      "register_id": "Wikidata Q51755336",
+      "name_et": "Rabakivi tamm",
+      "reason": "DEAD. Harku Vallavalitsus's own website (harku.ee, 'Puud' page) states the tree, protected since 1959 near the former Rabakivi farm (Harku vald, ~59.42391,24.57347), has today completely dried up/died ('on tanapaeval taielikult ara kuivanud'). 1998 measurement was 260cm girth, 16m tall. Never ship; do not re-research."
+    }
+  ],
+  "blocked": [
+    {
+      "name_et": "Riiasoodi tamm",
+      "reason": "Sacred oak (hiis tradition), Metsakasti village, Viimsi parish, ~10km from Tallinn centre. Well documented: et.wikipedia.org gives 300 years old, 4.4m girth, 14m height, 8.8m root-collar girth, coordinates 59.49611,24.895; maavald.ee (Maavalla Koda's sacred-sites register) independently confirms it as a sacred site at the same village. BLOCKED on access, not on evidence: it stands on private farmland (Riiasoodi talu), and the site's own geocache page quotes the farm owner asking visitors not to enter the property, saying it can only be viewed from the roadside at a distance. BRIEF_RESEARCH.md's hard limit is private land not genuinely open to visitors, leave it out, and this is a verification pass rather than a judgement call about a view-only exception, so it is recorded here rather than delivered. A later pass could reassess it as a view-only entry with the pin set to the public roadside rather than the trunk."
+    },
+    {
+      "register_id": "n/a (Wikidata Q16412713 / EELIS-adjacent KLO4000065)",
+      "name_et": "Kaasani kiriku pappel",
+      "reason": "Estonia's former thickest black poplar (698cm girth), stood in the Kaasani (Our Lady of Kazan) church yard at Liivalaia 38, coordinates 59.43028,24.75962 (et.wikipedia.org 'Kaasani kiriku pappel', matches the Wikidata individual-protected-object entry the brief surfaced almost exactly). Confirmed by a Postimees archive headline that it broke in a storm on 16 November 2004. No source found this pass confirming regrowth, a surviving stub, or current living status; the hard rule against publishing a tree known or suspected dead applies, so this is blocked rather than delivered. Also entangled in search results with a separate, related pair (Kanada pappel ja must pappel, KLO4000065, corner of Narva mnt/Weizenbergi, one specimen felled 2010, the other's current status unclear) which is a DIFFERENT location and should not be confused with this one in a future pass."
+    },
+    {
+      "register_id": "n/a (single source)",
+      "name_et": "Harilik tamm, A. Weizenbergi 39 (presidendilossi taga)",
+      "reason": "DEEPEN pass 2026-09-12. Postimees/Olev Abner (2017) named this Tallinn's SECOND OLDEST tree, ~370 years, behind the Presidential Palace/residence, A. Weizenbergi 39, Kadriorg. This pass found an individually-tagged OSM natural=tree node (id 4943448261) at 59.4380163,24.7937030, only about 15m from the Presidendi residents (Presidential residence) building centroid (59.4380108,24.7939143 per Overpass), carrying the note 'A solitary oak-tree, the eldest of an oak grove that stood here once for nearly four centuries' and a link to the old presidency website (vp2001-2006.president.ee, now dead/unresolvable). That note independently corroborates the tree's identity and age band even though the linked page could not be fetched. BLOCKED ON ACCESS rather than delivered: the presidential residence's own garden is walled off from the rest of Kadriorg park. A Postimees piece on the president's residential security (postimees.ee/3868615) and kadriorupark.ee's own page on the Chancellery building both describe the garden between Kadrioru Castle and the Presidential Chancellery as closed off with side walls, used for official representation, with only invited guests using the main entrance; this is a working government residence with a closed garden, not part of the free public park, so this fails the hard rule on private/access-restricted land. A later pass could reassess as a view-only entry only if a source specifically confirms the tree is visible from public ground outside the wall; nothing found this pass says so."
+    },
+    {
+      "register_id": "n/a (single source)",
+      "name_et": "Harilik tamm, Kopli 103 (Balti Laevaremonditehas)",
+      "reason": "New find, DEEPEN pass 2026-09-12, surfaced while chasing the Kopli kalmistupark oak (tln_008). The same 2017 Postimees/Olev Abner list separately names a THIRD 360-year oak, distinct from the cemetery-park one, standing on the grounds of the Balti Laevaremonditehas (Baltic Ship Repair Plant) at Kopli 103, an active industrial shipyard roughly 1.5km from the cemetery park. Described elsewhere as a protected nature object with a 20m protection buffer from the trunk. BLOCKED ON ACCESS: this is a working industrial site (AS BLRT Grupp), not open ground the public may walk onto, so it fails the hard rule on private/access-restricted land regardless of the tree's own merit. Do not confuse with tln_008, the cemetery-park oak of the same age from the same article."
+    }
+  ]
 }

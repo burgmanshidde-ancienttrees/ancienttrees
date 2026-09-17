@@ -4,7 +4,7 @@
   "status": "needs_curation",
   "intro": "Pagramantis Regional Park covers 136 square kilometres of the Jura valley in western Lithuania, and its four registered oaks are spread across it rather than gathered in one wood. The one to plan around is the Gudlaukis oak, 6.30 metres round, hollow enough to step inside and still leafing out every year. The other three stand within eight kilometres of it: a healthy giant on the Jura bank at Geniai, a cemetery oak at Tamosaiciai, and an oak on the Akmena valley rim at Andriejaiciai with old crosses at its foot. The park's own cycling route links them.",
   "meta_description": "Four registered oaks in Pagramantis Regional Park, Lithuania, from a hollow 6.30 metre giant at Gudlaukis to a cemetery oak at Tamosaiciai.",
-  "question_meta": "The Gudlaukis oak, over 600 years old by local tradition, is the oldest tree in Pagramantis Regional Park. Where it stands, and three more oaks.",
+  "question_meta": "The Gudlaukis oak, over 600 years old by local tradition, is the oldest tree in Pagramantis Regional Park. Where it stands, and four more oaks.",
   "question_answer": "The oldest tree in Pagramantis Regional Park is the Gudlaukis oak, put at more than 600 years by long local tradition, standing in Gudlaukis about two kilometres southeast of Pagramantis village. It is free, fenced with a wooden barrier, signposted, and set directly on the park's own cycling and driving route.",
   "question_context": "That figure is a local estimate rather than a measurement. Both records of the tree, the Lithuanian encyclopaedia entry and the national tourism portal, say over 600 years, and neither cites a ring count or a growth-rate calculation, so the number has been repeated rather than established. What has been measured is the trunk: 6.30 metres round at chest height, almost entirely hollow, with a cavity a person can step through, under a crown that stops at 16 metres because lightning has taken it off more than once. Lithuania made it a state-protected natural heritage object in February 2016. Nothing else in the park is dated at all. The Geniai oak, 2.4 kilometres away and 5.6 to 5.8 metres round, is the largest healthy oak here and carries no age. The Tamosaiciai cemetery oak, 4.3 metres round and 23 metres tall, has none either. The Andriejaiciai oak on the Akmena valley rim is credited with over 300 years, again an estimate nobody has checked against rings. If you know of a dated figure for any of them, tell us.",
   "oldest_tree_id": "pgm_001",
@@ -15,15 +15,15 @@
     },
     {
       "q": "Are the park's oaks free to visit?",
-      "a": "Yes, all four. The Gudlaukis oak grows on privately owned land but is fenced, signposted and set on the park's own tourist route; the other three stand on open ground with information boards. No ticket and no gate at any of them."
+      "a": "Yes, all five. The Gudlaukis oak grows on privately owned land but is fenced, signposted and set on the park's own tourist route; the other four stand on open ground with information boards. No ticket and no gate at any of them."
     },
     {
-      "q": "Can you see all four in one day?",
-      "a": "Yes, with a car or a bicycle. They spread over about eight kilometres inside the park, from Gudlaukis in the southeast to Andriejaiciai on the Akmena valley rim, and the park's marked cycling route links them."
+      "q": "Can you see all five in one day?",
+      "a": "Yes, with a car. Four of them, Gudlaukis, Geniai, Tamosaiciai Cemetery and Andriejaiciai, spread over about eight kilometres inside the park and share its marked cycling route. The fifth, the Gaure Oak, stands roughly 19 kilometres further southeast in Gaure town, a separate stop rather than part of that loop."
     },
     {
       "q": "How do I get there without a car?",
-      "a": "With difficulty. There is no public transport to any of the four. The park visitor centre is at Ringiai village near Pagramantis, and every tree here is reached by gravel road or by bicycle from there."
+      "a": "With difficulty. There is no public transport to any of the five. The park visitor centre is at Ringiai village near Pagramantis, and every tree there is reached by gravel road or by bicycle from there; the Gaure Oak stands on Gaure's own main street instead."
     }
   ],
   "trees": [
@@ -188,6 +188,44 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      }
+    },
+    {
+      "id": "pgm_005",
+      "name": "Gaurė Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 710,
+      "location": {
+        "address": "Between the main street and the Įkojis stream, about 0.3km southeast of Gaurė church, Gaurė, Tauragė district",
+        "latitude": 55.24207,
+        "longitude": 22.47876,
+        "neighbourhood": "Gaurė, Tauragė district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Gaur%C4%97s_%C4%85%C5%BEuolas",
+        "https://stvk.lt/map/S0310505010175-gaures-azuolas",
+        "https://www.vivmu.lt/wp-content/uploads/2018/08/Taurag%C4%97-GPP-ai%C5%A1kinamasis-ra%C5%A1tas.pdf"
+      ],
+      "access": "Free; stands beside an old homestead on the slope edge between Gaurė's main street and the Įkojis stream, with a maintained information board and a road sign pointing to it. No source states the plot is fenced or restricted; treat it as a maintained, signposted roadside site rather than private land, the same reading applied to comparable homestead-adjacent trees elsewhere in this project.",
+      "transport": "No public transport; reached by car. About 18-19km by straight-line distance from Pagramantis Regional Park's other four trees (pgm_001-004); real road distance is greater, and this is a separate stop in Tauragė district rather than part of the park's own walking loop.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Gaurė put this oak on its coat of arms, as the town's symbol of strength. That is a considerable vote of confidence in a tree that is hollow through the middle and has few branches left.\n\nIt carries the widest trunk on this page by a margin: 7.10 metres round at chest height, against 6.30 for the Gudlaukis Oak. Height 18.5 metres, so for all that girth it is a short, heavy tree rather than a tall one. The trunk is hollowed and thickly grown over with lichen and fungi, and a photograph from 2021 still shows it green. The Lithuanian description of it is vigorous, and looking at the state of the bark, that word is doing real work.\n\nIt has been protected since 1960, by an order of the Lithuanian nature protection committee of the day, and it is signposted from the road with an information board kept up beside it, which in a village this size says something about local priorities. It stands on the slope edge between the main street and the Įkojis stream, beside an old homestead, about 300 metres from the church.\n\nNo source gives an age, and a hollow trunk is the hardest kind to date honestly. If a figure exists in the Tauragė forestry records, tell us.\n\nGetting there means a car. The park's other four trees are 18 to 19 kilometres off, a separate stop rather than part of the same loop.",
+      "how_to_recognise": "You can recognise it by the trunk, 7.10 metres round at chest height, hollow and thick with lichen and fungi, carrying few branches for its size. It stands beside an old homestead on the slope between the main street and the stream.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the hollow trunk and its few heavy branches read in full"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]

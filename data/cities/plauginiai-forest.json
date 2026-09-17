@@ -2,10 +2,10 @@
   "city": "Plauginiai Forest",
   "country": "Lithuania",
   "status": "needs_curation",
-  "intro": "Plauginiai Forest maps one tree: an oak Lithuania signposts by name from the public highway, three and a half kilometres before you reach it. A 400-metre interpretive trail, carved sculptures and a rest area with a fireplace have been built around this single tree. Published alone here because the tree is the destination, not because Plauginiai Forest's research is finished.",
-  "meta_description": "The Beautiful Oak of Plauginiai Forest: a signposted Lithuanian oak with its own 400-metre interpretive trail and rest area.",
-  "question_meta": "Plauginiai Forest's only mapped tree is the Beautiful Oak, signposted from the highway with its own interpretive trail.",
-  "question_answer": "Plauginiai Forest's only mapped tree is the Beautiful Oak of Plauginiai Forest (Grazusis azuolas), a pedunculate oak about 5.8 metres round and 32 to 33 metres tall, reached by a purpose-built interpretive trail inside a botanical-zoological reserve of Dubysa Regional Park.",
+  "intro": "Plauginiai Forest maps two trees: an oak Lithuania signposts by name from the public highway, three and a half kilometres before you reach it, with a 400-metre interpretive trail, carved sculptures and a rest area built around it alone, and the Mikalojaus Dauksa Oak in Betygala, about 19 kilometres away, reached down purpose-built stairs from the town centre. Published thin because the Beautiful Oak is destination enough on its own, not because Plauginiai Forest's research is finished.",
+  "meta_description": "The Beautiful Oak of Plauginiai Forest, with its own interpretive trail, and the Mikalojaus Dauksa Oak in nearby Betygala.",
+  "question_meta": "Plauginiai Forest's mapped trees are the Beautiful Oak, signposted from the highway with its own interpretive trail, and Betygala's Dauksa Oak further out.",
+  "question_answer": "Plauginiai Forest's mapped trees are the Beautiful Oak of Plauginiai Forest (Grazusis azuolas), a pedunculate oak about 5.8 metres round and 32 to 33 metres tall, reached by a purpose-built interpretive trail inside a botanical-zoological reserve of Dubysa Regional Park, and the Mikalojaus Dauksa Oak, about 19 kilometres away on a stream slope in Betygala.",
   "question_context": "The state forest service assessed the oak on 8 June 2017 and recorded 32 metres of height, 5.8 metres of girth at chest height and a condition of excellent. A local news report the following spring gave 5.8 metres and 33 metres, matching the figures carved into a wooden acorn marker at the foot of the trunk. Back in 1985 the figures were 28 metres and a diameter of 1.4 metres, so the tree has put on both height and thickness since somebody last got out the tape. It has been a nature monument since 1960 and was raised to republic-level significance in 1985, when the state decided this particular oak was worth pointing traffic at: it is signposted by name, Grazusis azuolas, the Beautiful Oak, from the public highway three and a half kilometres out. What waits at the end of the gravel road is a 400-metre interpretive trail built for one tree, with carved oak sculptures along it and a rest area with a pavilion and a fireplace. Its age is given as about 300 years by every source that mentions one, the wooden acorn included, and none of them says where the number comes from.",
   "hero_tree_id": "pgn_001",
   "oldest_tree_id": "pgn_001",
@@ -25,6 +25,10 @@
     {
       "q": "How do I get there?",
       "a": "By car via road 148 between Raseiniai and Siluva, then a signposted gravel forest road (3.5km) and a 400m walk on the interpretive trail. No public transport reaches the site."
+    },
+    {
+      "q": "Is there a second tree here?",
+      "a": "Yes, the Mikalojaus Dauksa Oak in Betygala, about 19 kilometres from the Beautiful Oak. It stands down a marked staircase path from the town centre, a separate car stop rather than a walk from the first tree."
     }
   ],
   "trees": [
@@ -66,6 +70,38 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      }
+    },
+    {
+      "id": "pgn_002",
+      "name": "Mikalojaus Daukša Oak, Betygala",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 to 350 years",
+      "age_min": 300,
+      "age_max": 350,
+      "girth_cm": 490,
+      "location": {
+        "address": "On the slope above the Vieviršė stream, northern edge of Betygala, Raseiniai district",
+        "latitude": 55.364319,
+        "longitude": 23.366383,
+        "neighbourhood": "Betygala, Raseiniai district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Mikalojaus_Dauk%C5%A1os_%C4%85%C5%BEuolas_(Betygala)",
+        "https://stvk.lt/map/S0310505010209-mikalojaus-dauksos-azuolas-betygalos-mstl",
+        "https://amvmt.lrv.lt/media/viesa/saugykla/2023/11/u04cgf1KDeQ.pdf"
+      ],
+      "access": "Free, public; a marked path with purpose-built stairs leads down from a directional sign in the town centre (0.3km) to the tree on the stream slope, with an information board at the top. No fee, gate or restriction mentioned by any source; a popular, actively signposted local landmark within Dubysa Regional Park.",
+      "transport": "No public transport; reached by car via road 148 (Raseiniai-Šiluva) to Betygala, then on foot from the town centre. About 19-20km by straight-line distance from Plauginiai Forest's own tree (pgn_001); real road distance is greater, and this is a separate stop rather than part of the same walking loop.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The man this oak is named for helped give Lithuanian a written form, and he was the parish priest 300 metres up the slope. Mikalojus Daukša, priest and translator, held Betygala from 1592 to 1609, and local tradition has him sitting out by this oak.\n\nWhether he planted it himself or somebody else planted it in his honour is, as the Lithuanian account of it says, hard to tell today. Nobody claims to know, and the tree carries his name for the association rather than for a documented act. The estimated age is about 300 to 350 years, given that loosely by the sources and left that loose here.\n\nTwo sets of measurements exist and they disagree a little, so both stand. The Lithuanian entry gives 28.5 metres of height and 4.90 metres of girth. The State Forest Service surveyed it in 2017 and recorded 28 metres and 4.7, in good condition, with a few old cut branches at three metres whose wounds have healed over. Betygala carries the oak on its coat of arms, which is the town's own verdict on the tradition.\n\nGetting to Betygala means a car, by road 148 out of Raseiniai. From the centre it is a signposted 300 metre walk: a direction sign, an information board, and purpose-built stairs down the slope to the tree above the Vieviršė stream, inside Dubysa Regional Park. Plauginiai Forest's own oak is 19 to 20 kilometres off, a second stop rather than a continuation.",
+      "how_to_recognise": "You can recognise it by the trunk, between 4.7 and 4.9 metres round at chest height depending on who measured, with old pruning wounds healed over at three metres. It is the tree the stairs and the information board lead down to.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]

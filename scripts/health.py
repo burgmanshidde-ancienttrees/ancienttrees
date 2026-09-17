@@ -57,6 +57,17 @@ WATCHED = {
 }
 
 
+# ios.yml runs on push to ANY branch by design (a dev session on a feature
+# branch gets its own CI feedback before merging), unlike every other watched
+# workflow here, which is main-only or schedule-only. Read unscoped, its
+# "newest run" is often somebody else's in-progress branch, not the app that
+# ships. On 2026-09-12 that reported "iOS app FAILED" from a half-built
+# sign-in rework on claude/apple-login-mobile-web-wv6fv1 while main's own
+# newest ios.yml run, hours earlier, was green. Rung 2 exists to answer "is
+# the shipped app broken", so this is the one workflow that must be scoped.
+BRANCH_SCOPED = {"ios.yml": "main"}
+
+
 def gh_latest(workflow):
     """(conclusion, created_at) of the newest run, or None when gh cannot say."""
     try:
@@ -67,9 +78,13 @@ def gh_latest(workflow):
         # while the site was fine and the deploy was simply mid-flight. The
         # question this function answers is "did the last finished check pass",
         # and an unfinished run has not answered it either way.
+        cmd = ["gh", "run", "list", "--workflow", workflow, "-L", "5",
+               "--json", "conclusion,createdAt,status"]
+        branch = BRANCH_SCOPED.get(workflow)
+        if branch:
+            cmd += ["-b", branch]
         out = subprocess.run(
-            ["gh", "run", "list", "--workflow", workflow, "-L", "5",
-             "--json", "conclusion,createdAt,status"],
+            cmd,
             capture_output=True, text=True, timeout=60, cwd=ROOT)
         if out.returncode != 0:
             return None
@@ -143,6 +158,27 @@ ALLOWANCE_MARKERS = (
     "exceeded your",
 )
 
+# claude-code-action prints this wrapper on EVERY is_error:true result, whether
+# the cause was a real break or a usage-limit refusal: it names the SHAPE of
+# the failure (a result record with is_error true), never the cause. Found
+# 2026-09-16 chasing a rung-2 false positive: the 2026-09-16 REVIEW.md BLOCKER
+# showed run-health.json carrying the textbook allowance fingerprint for three
+# straight days (duration_ms 430, num_turns 1, total_cost_usd 0, modelUsage
+# {}), the exact shape CLAUDE.md's capacity doctrine and run_health.py's
+# recent_limit_deaths() both name, while health.py reported it as "a reason
+# the log names, not the usage window" because this generic line does not
+# contain any ALLOWANCE_MARKERS text and was treated as informative evidence
+# of a real break. It is not evidence of anything: it says only that the SDK
+# call did not succeed. A line this generic must not decide the allowance
+# question; it has to be excluded so a genuinely uninformative failure falls
+# through to the duration heuristic instead of a `named_error` that names
+# nothing.
+GENERIC_WRAPPER_MARKERS = (
+    "claude result reported subtype",
+    "claude execution failed: result is_error",
+    "process completed with exit code",
+)
+
 
 def failure_evidence(workflow):
     """('allowance'|'broken', line) from the newest failed run's log, or None.
@@ -178,7 +214,11 @@ def failure_evidence(workflow):
         for ln in errors:
             if any(m in ln.lower() for m in ALLOWANCE_MARKERS):
                 return "allowance", ln[:200]
-        return "broken", errors[0][:200]
+        informative = [ln for ln in errors
+                       if not any(m in ln.lower() for m in GENERIC_WRAPPER_MARKERS)]
+        if not informative:
+            return None
+        return "broken", informative[0][:200]
     except Exception:
         return None
 

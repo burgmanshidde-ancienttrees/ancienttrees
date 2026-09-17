@@ -394,7 +394,7 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(c.name).font(.brand(15, .bold, relativeTo: .subheadline))
                     .foregroundStyle(Brand.ink).lineLimit(1)
-                Text("\(c.count) trees · \(c.cities) \(c.cities == 1 ? "place" : "places")")
+                Text("\(treesLabel(c.count)) · \(c.cities) \(c.cities == 1 ? "place" : "places")")
                     .font(.caption2).foregroundStyle(Brand.inkSoft)
             }
             .padding(.horizontal, 10).padding(.vertical, 9)
@@ -494,7 +494,7 @@ struct HomeView: View {
     private var cityShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Our favourite tree cities",
-                        subtitle: "\(cities.count) places worth an afternoon",
+                        subtitle: cities.count == 1 ? "1 place worth an afternoon" : "\(cities.count) places worth an afternoon",
                         more: .index(.cities))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
@@ -535,7 +535,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(c.name).font(.brand(16, .bold, relativeTo: .headline))
                         .foregroundStyle(.white).lineLimit(1)
-                    Text("\(c.count) trees").font(.caption2).foregroundStyle(.white.opacity(0.85))
+                    Text(treesLabel(c.count)).font(.caption2).foregroundStyle(.white.opacity(0.85))
                 }
                 .padding(10)
             }
@@ -717,7 +717,7 @@ struct CityView: View {
                     }
                 }
 
-                ShelfHeader(title: "\(trees.count) trees")
+                ShelfHeader(title: treesLabel(trees.count))
                 ForEach(trees) { t in
                     NavigationLink(value: Route.tree(t.id)) {
                         TreeCard(tree: t)
@@ -758,7 +758,7 @@ struct CityWalkCard: View {
                 Spacer(minLength: 6)
                 if locked { Chip(text: "Plus", tint: Brand.goldInk) }
             }
-            Text("\(walk.count) trees · \(walk.duration)")
+            Text("\(treesLabel(walk.count)) · \(walk.duration)")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
         }
         .padding(14)

@@ -145,7 +145,7 @@ struct MapSearch: View {
         }
         head("Places worth a trip")
         ForEach(biggestCities.prefix(6), id: \.slug) { c in
-            row(c.name, "\(c.country) · \(c.count) trees", "building.2") {
+            row(c.name, "\(c.country) · \(treesLabel(c.count))", "building.2") {
                 onPick(.city(slug: c.slug, name: c.name, lat: c.lat, lng: c.lng)); dismiss()
             }
         }
@@ -207,14 +207,14 @@ struct MapSearch: View {
         var places: [Place] = []
         for c in countries where Self.fold(c.name).hasPrefix(q) {
             places.append(Place(id: "k:" + c.name, name: c.name,
-                                sub: "\(c.count) trees in \(c.cities) places",
+                                sub: "\(treesLabel(c.count)) in \(c.cities) \(c.cities == 1 ? "place" : "places")",
                                 icon: "globe.europe.africa", hit: .country(c.name)))
         }
         for c in biggestCities {
             let n = Self.fold(c.name)
             if Self.startsAWord(n, q) || Self.fold(c.country).hasPrefix(q) || n.contains(q) {
                 places.append(Place(id: "c:" + c.slug, name: c.name,
-                                    sub: "\(c.country) · \(c.count) trees",
+                                    sub: "\(c.country) · \(treesLabel(c.count))",
                                     icon: "building.2",
                                     hit: .city(slug: c.slug, name: c.name, lat: c.lat, lng: c.lng)))
             }
@@ -303,8 +303,7 @@ struct MapSearch: View {
     }
 
     private func speciesSub(_ s: String) -> String {
-        let n = catalogue.trees(ofSpecies: s).count
-        return "\(n) \(n == 1 ? "tree" : "trees")"
+        treesLabel(catalogue.trees(ofSpecies: s).count)
     }
 
     /// Does the query start the name, or start any word inside it?

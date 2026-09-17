@@ -47,6 +47,7 @@
      own, so the bar, the sheet, the cards and the prose all start on the same
      line down the side of the screen. */
   --gutter: 1.5rem;
+  --heart-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z'/%3E%3C/svg%3E");
   --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EDF3E3; --surface: #F7F6F1; --shadow: 0 1px 3px rgba(26,32,18,0.08), 0 4px 14px rgba(26,32,18,0.05); --gold: #D9A13F;
   --serif: 'Gabarito', system-ui, sans-serif; --sans: 'Gabarito', system-ui, sans-serif;
   --hand: 'Gabarito', system-ui, sans-serif;
@@ -322,6 +323,20 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   height: calc(100dvh - 64px); padding: 8px; }
 .pv-frame img { max-width: 100%; max-height: 100%; width: auto; height: auto;
   object-fit: contain; border-radius: 2px; }
+/* The same rule again, louder, and it is a FIX rather than a nicety (2026-09-12).
+   The viewer lives inside <figure class="tree-photo tree-hero">, so
+   `.tree-photo.tree-hero img { height: 280px; object-fit: cover }` was winning
+   on specificity over `.pv-frame img` and the lightbox on every tree page
+   opened a 210 by 280 picture in the middle of a 375 by 748 black screen. That
+   is the whole point of the control, and no gate could see it: the dialog
+   exists, the image loads, the link works. Measuring the rendered box is what
+   found it. 0,2,2 here beats the 0,2,1 above it whatever the file order. */
+dialog.photo-view .pv-frame img {
+  /* aspect-ratio: auto is load-bearing. The hero rule above sets 3/2 and this
+     image sits inside the same figure, so without this the viewer would letter-
+     box the very photograph it exists to show whole. */
+  width: auto; height: auto; max-width: 100%; max-height: 100%; aspect-ratio: auto;
+  object-fit: contain; border-radius: 2px; }
 .pv-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem;
   min-height: 64px; padding: 0 1rem; font-size: 12px; }
 .pv-credit { color: #cfcfcf; }
@@ -330,6 +345,45 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .pv-close { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px;
   border: 0; border-radius: 999px; background: rgba(0,0,0,0.45); color: #fff;
   font-size: 26px; line-height: 1; cursor: pointer; }
+/* MORE THAN ONE PHOTOGRAPH (2026-09-12). The strip under the lead is what
+   Google Maps puts under a place and iNaturalist under an observation: it says
+   there is more without spending the page's best space on it. A scroller
+   rather than a wrap, so eight pictures never push the page's own width out;
+   the 375px fit check ignores what is inside one of these on purpose, because
+   a shelf is meant to overflow. */
+.photo-strip { display: flex; gap: 6px; overflow-x: auto; list-style: none;
+  margin: 0.45rem 0 0; padding: 0 0 2px; scrollbar-width: none;
+  -webkit-overflow-scrolling: touch; }
+.photo-strip::-webkit-scrollbar { display: none; }
+.photo-strip li { flex: 0 0 auto; }
+/* 72 rather than 44: this is a picture to recognise rather than an icon to
+   hit, and it clears the touch floor in both directions anyway.
+   The hero pair is named explicitly because .tree-photo.tree-hero .photo-open
+   and .tree-photo.tree-hero img below are 0,3,0 and would otherwise hand every
+   thumbnail the hero's full width and 300px crop height. Caught by measuring
+   the rendered box rather than by reading the file: it came out 210 by 72. */
+.photo-strip .photo-open,
+.tree-photo.tree-hero .photo-strip .photo-open {
+  width: 72px; height: 72px; border-radius: 4px; overflow: hidden; flex: 0 0 auto; }
+.photo-strip img,
+.tree-photo.tree-hero .photo-strip img {
+  /* Square, and aspect-ratio: auto so the hero's 3/2 cannot reach in here. */
+  width: 72px; height: 72px; aspect-ratio: auto; object-fit: cover; border-radius: 4px; }
+/* Paging inside the viewer, which is Media Viewer's own control. Sat against
+   the sides at the vertical middle of the picture, clear of the credit bar and
+   clear of the close button. 44 square, the touch floor. */
+.pv-step { position: absolute; top: calc((100dvh - 64px) / 2); transform: translateY(-50%);
+  width: 44px; height: 44px; border: 0; border-radius: 999px;
+  background: rgba(0,0,0,0.45); color: #fff; font-size: 28px; line-height: 1;
+  cursor: pointer; }
+.pv-prev { left: 8px; }
+.pv-next { right: 8px; }
+.pv-step:focus-visible, .pv-close:focus-visible, .photo-open:focus-visible {
+  outline: 3px solid #fff; outline-offset: 2px; }
+.pv-count { color: #cfcfcf; white-space: nowrap; }
+/* The bar holds three things once a tree has several photographs, and on a
+   narrow phone the credit is the one that may wrap. */
+.pv-bar { flex-wrap: wrap; }
 /* 44 is the floor, not the padding's business: at 0.75rem the pill came out
    41 tall, which is three points under what every phone platform asks of a
    primary button. inline-flex so the min-height can centre its own label. */
@@ -344,8 +398,6 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .chip.gold { background: #F3E4C3; color: #8A6414; }
 .action-row { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin: 0.75rem 0 1.25rem; }
 .action-row .go-btn { margin: 0; }
-.action-row .seen-btn { float: none; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 700; background: var(--moss); color: #fff; border: 1px solid var(--moss); border-radius: 999px; padding: 0.75rem 1.5rem; }
-.action-row .seen-btn[aria-pressed="true"] { background: var(--moss-light); color: var(--moss); }
 .action-link { font-size: 13.5px; font-weight: 600; color: var(--moss); text-decoration: none; }
 .near-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 0.5rem 0 1rem; list-style: none; padding: 0; }
 .near-card { display: block; background: #fff; border: none; box-shadow: var(--shadow); border-radius: 16px; padding: 14px 16px; text-decoration: none; color: var(--ink); transition: box-shadow 0.15s; }
@@ -447,7 +499,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .bar-links a.bar-cta { position: relative; height: 36px; padding: 0 0.75rem; font-size: 12.5px; order: -1; }
   .bar-links a.bar-cta::before { content: ""; position: absolute; inset: -4px; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
-  .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
+  .action-row .go-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
   .entry.has-thumb { grid-template-columns: 72px 1fr; gap: 0.8rem; }
 }
@@ -993,8 +1045,16 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 }
 .hero-sub { padding: 1.6rem 2rem; text-align: center; }
 .hero-sub p { max-width: 44rem; margin: 0 auto; font-size: 14.5px; color: var(--ink-mid); line-height: 1.65; }
-.hero-search input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
-.hero-search input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
+/* The account page's email field, which is the only .hero-search on the site
+   that is not also an .at-search. Scoped on 2026-09-12, because unscoped it sat
+   300 lines below .at-search input and .poster-search input with the same
+   specificity and therefore quietly won on the homepage: the hero's search wore
+   this border, this 8px radius inside its own pill, and this 15px text. The
+   15px was the bug Hidde reported ("als je op mobile web op zoek klikt zoomt ie
+   raar in"), and see the block at the foot of this file for why 16 is a floor
+   rather than a preference. */
+.hero-search:not(.at-search) input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 16px; background: #fff; color: var(--ink); }
+.hero-search:not(.at-search) input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
 .hero-search .go-btn { margin-top: 0; }
 .go-btn.ghost { background: none; color: var(--moss); border: 1px solid var(--moss); }
 .pin:hover { transform: scale(1.15); }
@@ -1018,7 +1078,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    trees you have stood in front of. Hidden until then, so a fresh map is just
    trees. The tick geometry matches .seen-mark on the check-in button, so the
    same gesture reads the same in both places. */
-.pin-got { position: absolute; top: -2px; right: -2px; width: 14px; height: 14px;
+.pin-got { position: absolute; bottom: -2px; right: -2px; width: 14px; height: 14px;
   border-radius: 50%; background: var(--moss); border: 2px solid var(--cream);
   display: none; }
 .pin-tree.seen .pin-got { display: block; }
@@ -1026,6 +1086,31 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   width: 3px; height: 6px; border: solid #fff; border-width: 0 1.5px 1.5px 0;
   transform: rotate(45deg); }
 .pin-tree.active .pin-got { border-color: var(--moss); }
+
+/* THE OTHER TWO CORNERS (2026-09-12). The app's pin has worn three marks since
+   2026-08-25 and this one wore the tick alone, so the same tree looked
+   different depending on which screen you were holding. The corners are the
+   app's, and so are the reasons: the tick moved from the top right to the
+   bottom right to make room for the heart, which is red here because it is red
+   on our own cards and red in every app anybody has used; the ticket sits
+   bottom left in its own blue, because a ticket is a condition on the visit
+   rather than something you have done, and must not read as either of the
+   other two. A tree can wear all three at once. */
+.pin-fav { position: absolute; top: -3px; right: -3px; width: 15px; height: 15px;
+  border-radius: 50%; background: var(--cream); border: 1.5px solid var(--cream);
+  box-shadow: 0 1px 3px rgba(26,26,20,0.3); display: none; }
+.pin-tree.kept .pin-fav { display: block; }
+.pin-fav::after { content: ''; position: absolute; inset: 0;
+  background: #D93340;
+  -webkit-mask: var(--heart-mask) center / 9px 9px no-repeat;
+  mask: var(--heart-mask) center / 9px 9px no-repeat; }
+.pin-ticket { position: absolute; bottom: -3px; left: -3px; width: 15px; height: 15px;
+  border-radius: 50%; background: var(--cream); box-shadow: 0 1px 3px rgba(26,26,20,0.3);
+  display: flex; align-items: center; justify-content: center; color: #2E6BA8; }
+/* The colour has to be set on the svg itself: .pin-tree svg paints every
+   glyph inside a pin moss, which is right for the silhouette and wrong for
+   this one, and inheriting from .pin-ticket loses to it. */
+.pin-ticket svg { width: 10px; height: 10px; color: #2E6BA8; }
 
 /* A tree at its peak, on the map. The pin is already a species silhouette, so
    the effect belongs to the drawn tree: the silhouette takes the peak colour,
@@ -1243,19 +1328,12 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .home-cta:hover { background: #2f4717; }
 .home-cta.secondary { background: none; color: var(--moss); border: 1px solid var(--moss); }
 .home-cta.secondary:hover { background: var(--moss-light); }
-/* The passport. A visited tree goes green on the map and on its card. */
-.seen-btn { float: right; display: inline-flex; align-items: center; gap: 0.4rem;
-  background: none; border: 1px solid var(--cream-dark); border-radius: 999px;
-  padding: 0.3rem 0.75rem; font-family: var(--sans); font-size: 12.5px;
-  color: var(--ink-mid); cursor: pointer; transition: all 0.15s; }
-.seen-btn:hover { border-color: var(--moss); color: var(--moss); }
-.seen-mark { width: 13px; height: 13px; border-radius: 50%; border: 1.5px solid currentColor;
-  display: inline-block; position: relative; }
-.seen-btn[aria-pressed="true"] { background: var(--moss); border-color: var(--moss); color: #fff; }
-.seen-btn[aria-pressed="true"] .seen-mark { background: #fff; border-color: #fff; }
-.seen-btn[aria-pressed="true"] .seen-mark::after { content: ''; position: absolute;
-  left: 4px; top: 1px; width: 3px; height: 7px; border: solid var(--moss);
-  border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
+/* The passport. A visited tree goes green on the map and on its card.
+   The button's own rules used to live here and were the DEAD design: a tick
+   drawn out of two borders, floated right, styled for a control no template
+   ever rendered. The float outlived the button and caught the real one the
+   hour it was built, wrapping the recognition block's text around it. The
+   live rules are with the heart's, where the pair belongs (2026-09-12). */
 .pin-tree.seen { color: var(--moss); }
 /* .pin-tree.seen now shows the badge; see .pin-got above. */
 .passport { margin-top: 0.9rem; font-size: 13px; color: var(--ink-mid);
@@ -1477,10 +1555,23 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .worthit-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .worthit-compact { margin: 0.5rem 0 0; }
 .worthit-q { font-weight: 700; }
-.worthit-btn { font-size: 16px; line-height: 1; min-width: 44px; min-height: 44px; padding: 0.35rem 0.7rem;
-  border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer; }
-.worthit-btn:hover { border-color: var(--moss); }
-.worthit-btn.is-on { border-color: var(--moss); box-shadow: inset 0 0 0 1px var(--moss); }
+.worthit-btn { display: inline-flex; align-items: center; justify-content: center;
+  font-size: 16px; line-height: 1; min-width: 44px; min-height: 44px; padding: 0.35rem 0.7rem;
+  border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer;
+  color: var(--ink); }
+/* The thumb is a drawing, like the heart and like the app's own (2026-09-12):
+   outline in ink while nothing is cast, solid moss once it is. */
+.worthit-btn .thumb { display: block; width: 18px; height: 18px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.worthit-btn:hover { border-color: var(--moss); color: var(--moss); }
+.worthit-btn.is-on { border-color: var(--moss); color: var(--moss); background: var(--moss-light); box-shadow: none; }
+.worthit-btn.is-on .thumb-hand { fill: currentColor; }
+/* The number rides ON the button, never beside it (2026-08-27, the app's own
+   rule): a count that is only a count is not a thing anybody can press. */
+.worthit-n { font-size: 13.5px; font-weight: 700; line-height: 1;
+  font-variant-numeric: tabular-nums; }
+.worthit-n[hidden] { display: none; }
+.worthit-btn { gap: 0.3rem; }
 /* Deliberately quieter than the thumbs: reporting a fault is the rarer errand,
    and the convention (Google Maps, AllTrails) is a plain secondary control
    beside the opinion, never a button competing with it. */
@@ -1649,6 +1740,32 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   color: var(--ink-light); margin: 0.5rem 0 0.15rem; padding: 0 0.9rem; }
 .nav-drop-menu .nav-group:first-child { margin-top: 0.2rem; }
 
+/* THE TICK (2026-09-12). Built as the heart's sibling on purpose: two things
+   you can do to a tree, drawn as two of the same control, which is the app's
+   own wording for the same pair. Quiet outline pill, the seal fills moss once
+   you have stood in front of it. The label changes rather than the shape, so
+   a card does not jump when somebody ticks it. */
+.tree-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem;
+  margin-top: 0.4rem; }
+.tree-card-actions .heart-btn, .tree-card-actions .seen-btn { margin-top: 0; }
+.seen-btn { display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;
+  position: relative; font-family: inherit; font-size: 12px; font-weight: 700;
+  line-height: 1; color: var(--ink); background: #fff; border: 1.5px solid var(--cream-dark);
+  border-radius: 999px; padding: 0.25rem 0.6rem; margin-top: 0.4rem; }
+.seen-btn::after { content: ""; position: absolute; left: 0; right: 0;
+  top: 50%; height: 44px; transform: translateY(-50%); }
+.seen-btn:hover { border-color: var(--moss); }
+.seen-btn .seen-mark { width: 14px; height: 14px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.seen-btn[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
+.seen-btn[aria-pressed="true"] .seen-seal { fill: currentColor; }
+.seen-btn[aria-pressed="true"] .seen-tick { stroke: #fff; }
+/* On a tree page it stands alone under the facts rather than beside a heart,
+   so it gets the room a lone control needs and no card's top margin. */
+.tree-tick { margin: -0.4rem 0 1.5rem; }
+.tree-tick .seen-btn { font-size: 13.5px; padding: 0.5rem 0.9rem; margin-top: 0; }
+.tree-tick .seen-btn .seen-mark { width: 16px; height: 16px; }
+
 /* The heart on cards (SaveHeart compact): quiet outline pill, fills on save.
    One control, every list, per the 2026-08-14 consistency pass. */
 .heart-btn { display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;
@@ -1793,7 +1910,21 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
    would be a billboard rather than a hero. */
 .tree-photo.tree-hero { margin: 0 0 1.75rem; }
 .tree-photo.tree-hero .photo-open { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
-.tree-photo.tree-hero img { height: 300px; object-fit: cover; border-radius: 10px; }
+/* A RATIO, not a fixed height (2026-09-12, Hidde: "de verhouding lijkt niet
+   lekker van de bovenste foto"). It was `height: 300px`, and a fixed height
+   means the CROP changes with the viewport: measured on the Munakata camphor,
+   375 wide gave 375x280 and cut almost nothing, while 652 wide gave 652x300,
+   a 2.17:1 letterbox that threw away 39 percent of a 4:3 photograph. The crown
+   went off the top and the ground off the bottom, which on a tree is the whole
+   subject.
+
+   3:2 rather than the photograph's own shape: at 4:3 the frame fills with empty
+   sky and empty gravel and the page becomes a wall of picture, while 3:2 trims
+   exactly those two and keeps the tree whole, at 11 percent instead of 39.
+   Judged by looking at all four candidates rendered, which is the only way to
+   judge a proportion. The same ratio at every width, so the photograph somebody
+   chose is the photograph every reader sees. */
+.tree-photo.tree-hero img { aspect-ratio: 3 / 2; height: auto; object-fit: cover; border-radius: 10px; }
 .tree-photo.tree-hero figcaption { margin-top: 0.4rem; }
 .tree-noph.tree-hero { margin: 0 0 1.75rem; }
 /* The hero's full-bleed treatment applies to the drawing too, so a page with
@@ -1810,8 +1941,12 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
      why a phone never showed the fault the desktop had. */
   .tree-photo.tree-hero,
   .tree-noph.tree-hero { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); width: auto; }
-  .tree-photo.tree-hero img { border-radius: 0; height: 280px; }
+  .tree-photo.tree-hero img { border-radius: 0; }
   .tree-photo.tree-hero figcaption { padding: 0 var(--gutter); }
+  /* The strip rides inside the full-bleed figure, so it needs the page's
+     gutter back. Padding rather than margin, so the shelf still scrolls out
+     to the edge the way a shelf should. */
+  .tree-photo.tree-hero .photo-strip { padding-left: var(--gutter); padding-right: var(--gutter); }
 }
 
 /* The name group: title, the full botanical name under it, then where it is.
@@ -1855,8 +1990,15 @@ a.tb-species:hover > b { text-decoration: underline; }
 /* The ticket keeps its own blue and stands on its own, which is how it reads
    as the one thing here that decides whether you set off (Hidde, 2026-09-04).
    Blue and never gold: gold means paid-by-us everywhere. */
-.tb-ticket { margin: 0; padding: 0.75rem 1rem; font-size: 14px; line-height: 1.4;
+/* The ticket band, glyph and all, is the app's (2026-09-12). The app has drawn
+   `ticket.fill` beside this sentence since the band was built and the website
+   drew nothing, which left the same warning wearing two faces. Same blue, same
+   tenth-opacity ground, same hairline: the mark was the only piece missing. */
+.tb-ticket { display: flex; align-items: flex-start; gap: 0.55rem;
+  margin: 0; padding: 0.75rem 1rem; font-size: 14px; line-height: 1.4;
   background: rgba(46,107,168,0.10); border-top: 1px solid rgba(0,0,0,0.10); }
+.tb-ticket-ic { flex: 0 0 auto; width: 17px; height: 17px; margin-top: 2px; color: #2E6BA8; }
+.tb-ticket-txt { min-width: 0; }
 .tb-ticket b { display: block; color: #2E6BA8; }
 .tb-ticket span { display: block; color: var(--ink); }
 .fact-go { font-weight: 400; color: var(--ink-light); }
@@ -1881,10 +2023,118 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
    tree's name: the place, a dot, and the vote. Light on purpose, so it reads as
    part of the line rather than a button parked on it, while the hit area stays
    44 points, which is Apple's floor and ours. */
-.tree-place-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem; margin: 0; }
-.tree-place-row .tree-place { margin: 0; }
+/* INLINE FLOW, not a flex row (corrected 2026-09-12). As a flex row the dot
+   and the thumb are their own items, so the moment the place is long enough to
+   wrap, which it is on most translated pages, they drop onto a line of their
+   own and the page shows a stray dot and a floating thumb. Inline they simply
+   follow the last word, which is what the app draws and what the row is for. */
+.tree-place-row { display: block; margin: 0; }
+.tree-place-row .tree-place { display: inline; margin: 0; }
+.tree-place-row .tree-place-dot { margin: 0 0.15rem; }
+.tree-place-row .worthit-inline { vertical-align: middle; }
 .tree-place-dot { color: var(--ink-light); }
 .worthit.worthit-inline { display: inline-flex; flex-direction: row; margin: 0; gap: 0; }
 .worthit-inline .worthit-row { gap: 0; }
 .worthit-inline .worthit-btn { border: 0; background: transparent; padding: 0 0.4rem; font-size: 17px; }
-.worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; }
+/* Bare beside the place name, the way the app draws its compact one: no pill,
+   no tint, the glyph itself carries the state. */
+.worthit-inline .worthit-btn .thumb { width: 16px; height: 16px; }
+.worthit-inline .worthit-btn.is-on { box-shadow: none; filter: none; background: transparent; }
+
+/* The units switch on /account (2026-09-12). Two buttons rather than a select,
+   because that is what AllTrails and komoot draw for a two-way choice and a
+   native select on iOS opens a wheel for two options. Same pill vocabulary as
+   every other small control on this site. */
+.unit-pick { display: flex; gap: 0.4rem; margin: 0.2rem 0 0.6rem; }
+.unit-btn { font-family: inherit; font-size: 13.5px; font-weight: 700; line-height: 1;
+  min-height: 44px; padding: 0 1rem; border: 1.5px solid var(--cream-dark);
+  border-radius: 999px; background: #fff; color: var(--ink); cursor: pointer; }
+.unit-btn:hover { border-color: var(--moss); }
+.unit-btn.is-on { border-color: var(--moss); background: var(--moss-light); color: var(--moss); }
+
+/* THE MAP FILTER ROW on /explore (2026-09-12). Capsules over the map, which is
+   what Google Maps draws and what our own app's row already is. It sits top
+   left because MapLibre's own controls own the top right, and it scrolls
+   sideways rather than wrapping, because a row that grows a second line pushes
+   the map down every time somebody picks a long species name. */
+.map-filters { position: absolute; z-index: 3; top: 0.7rem; left: 0.7rem;
+  right: 3.2rem; display: flex; gap: 0.4rem; align-items: center;
+  overflow-x: auto; overflow-y: hidden; padding: 0.15rem 0.15rem 0.35rem;
+  scrollbar-width: none; }
+.map-filters::-webkit-scrollbar { display: none; }
+/* 44 tall, not the app's 34. SwiftUI can draw a 32 point capsule inside a 44
+   point target; a chip row on the web cannot do that for a <select>, and a row
+   where the buttons are 44 and the picker is 34 is worse than one that is
+   honestly 44 throughout. The smoke test's own tap-target gate caught this the
+   first time it ran. */
+.mf { flex: 0 0 auto; font-family: inherit; font-size: 13px; font-weight: 600;
+  line-height: 1; height: 44px; padding: 0 0.9rem; border-radius: 999px;
+  border: 1px solid var(--cream-dark); background: #fff; color: var(--ink);
+  cursor: pointer; box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
+.mf:hover { border-color: var(--moss); }
+.mf.is-on { background: var(--moss); border-color: var(--moss); color: #fff; box-shadow: none; }
+/* The species picker is a native select on purpose: 521 options is exactly
+   what a platform picker is good at, and a hand-rolled listbox over a map is
+   the interaction nobody has been trained on. */
+.mf-select { max-width: 11rem; appearance: none; padding-right: 1.7rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2326301E' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 13px; }
+.mf-select.is-on { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E"); }
+.mf-count { flex: 0 0 auto; font-size: 12.5px; font-weight: 700; color: var(--ink);
+  background: #fff; border-radius: 999px; padding: 0.3rem 0.6rem;
+  box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
+.mf-count[hidden] { display: none; }
+@media (max-width: 900px) {
+  /* On a phone the sheet covers the lower half, so the row keeps its place at
+     the top of the map where it is still reachable with a thumb. The right
+     gutter stays: MapLibre's zoom and locate controls live in that corner at
+     every width, and the first phone render had the Species chip sitting under
+     them. The row scrolls, so giving it less width costs nothing. */
+  .map-filters { top: 0.5rem; left: 0.5rem; right: 3rem; }
+
+/* The map credit, as quiet as it may honestly be (2026-09-12, Hidde: "can we
+   minimise it further"). What cannot change is that it exists and can be found:
+   OpenFreeMap's terms are one line, "Attribution is required", and the OSMF
+   guideline's collapsed state still wants an (i) in the corner. What can change
+   is how loudly it sits there while nobody is looking for it. So the five
+   seconds before it folds away are smaller and translucent rather than a solid
+   white band, and the dot it folds into carries no pill at all until a cursor
+   or a keyboard reaches it. */
+.maplibregl-ctrl-attrib { font-size: 10px; }
+.maplibregl-ctrl-attrib.maplibregl-compact-show {
+  background: rgba(246, 242, 233, 0.82); padding: 1px 22px 1px 6px; }
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) {
+  background: none; box-shadow: none; opacity: 0.55; transition: opacity 0.15s; }
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show):hover,
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show):focus-within {
+  opacity: 1; }
+
+/* NOTHING A THUMB LANDS IN IS UNDER 16px ON A PHONE (2026-09-12).
+
+   Safari on iOS zooms the whole page in when a focused field carries text under
+   16px, and it never zooms back out: you tap search, the page jumps, and you
+   are left pinching your way back to a layout that was fine a second ago. It is
+   not a preference and no setting turns it off. There are two ways out and only
+   one is allowed here: meet 16, or pin the viewport with maximum-scale=1, which
+   stops the zoom by taking pinch-zoom away from everybody who needs it.
+
+   This block exists as a floor rather than as edits to the rules above, because
+   14px is a real design choice on a desktop dialog and the fault is a phone
+   fault. Chrome on Android and every desktop browser ignore the whole thing.
+
+   scripts/smoke_test.py measures this as executed at 375px, so a field that
+   ends up under 16 through the cascade (which is how the homepage search got
+   there) fails the deploy rather than waiting for somebody to tap it. */
+@media (max-width: 800px), (pointer: coarse) {
+  .acct-name-row input,
+  .app-getter-form input,
+  .suggest-form input, .suggest-form select, .suggest-form textarea,
+  .worthit-detail textarea,
+  /* The map's species picker, added to this floor the hour the row was built
+     (2026-09-12): a chip reads at 13, a FIELD at 13 makes Safari zoom the map
+     in on tap and never back out. The other three chips are buttons and are
+     left alone, so the row carries one slightly larger word on a phone, which
+     is the cheaper of the two prices. */
+  .mf-select,
+  .signin-form input { font-size: 16px; }
+}

@@ -39,7 +39,7 @@ name one in the app (`species` in the queue) and it is a hint at most; most
 send none and nothing requires it. Compare against OUR record, `tree_species`.
 
 **Then judge whether it fits the description (Hidde, 2026-09-11).** Read what
-we wrote about this tree, which the queue carries as `recognise`, `why_go`,
+we wrote about this tree, which the queue carries as `recognise`,
 `tree_girth_cm`, `tree_height_m` and `story`, and ask whether the tree in the
 photograph is plausibly THAT tree: the size we claim ("the largest in the
 park", a five-metre trunk), the shape (twin trunks, a hollow, a propped limb),

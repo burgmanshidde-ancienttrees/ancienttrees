@@ -61,7 +61,23 @@ export function ageToken(tree: Tree): string | null {
     // title is a statement.
     return null;
   }
-  return nums[0] ?? null;
+
+  // With no age_min/age_max to check a number against, the raw first match
+  // can be anything the sentence contains, including a planting year: "planted
+  // 2017, a genetic clone of the fallen original" states no age at all, and
+  // this fallback printed "2017 Years Old", contradicting the very page's own
+  // FAQ ("a young clone planted in 2017"). Found by the fresh-eyes reviewer
+  // 2026-09-13, Trainiskis's city and question pages (trn_001). Every genuine
+  // age estimate in this corpus is written as "N years" (or "yrs"); a
+  // sentence naming no years at all is stating a date, not a duration,
+  // whatever number it happens to contain.
+  if (!/\byears?\b|\byrs?\b/i.test(said)) return null;
+
+  // The capturing group's character class includes the comma so a number
+  // like "1,000" reads whole, but that also swallows a trailing comma that
+  // is punctuation rather than digits ("2017," from "planted 2017, a..."),
+  // which is how the malformed literal "2017," reached a rendered title.
+  return (nums[0] ?? null)?.replace(/,+$/, "") ?? null;
 }
 
 /** Build a meta description from the story's opening sentences, max
@@ -163,7 +179,7 @@ export type TreeSize = { girth?: number; height?: number };
  *  on a clause boundary rather than mid-thought.
  */
 export function metaForTree(tree: {
-  species?: string; age_estimate?: string; why_go?: string;
+  species?: string; age_estimate?: string;
   girth_cm?: number | null; height_m?: number | null;
   location?: { neighbourhood?: string | null; address?: string | null } | null;
   story?: string;
@@ -225,43 +241,31 @@ export function metaForTree(tree: {
 
   const opening = lead(species, age, where, size);
   const room = DESC_MAX - opening.length - 1;
-  // WHY_GO BEATS THE STORY IN THE TAIL, and only in the case it was written
-  // for: a tree with neither a recorded age nor a usable measurement, where
-  // the lead is a bare `A {species} in {where}.` and the story's opening is
-  // whatever the writer chose to hook with. 393 pages are in that state, and
-  // for them why_go is the only sentence on the page that answers the question
-  // a searcher is actually asking. Where an age or a girth exists the lead
-  // already answers, so the story keeps the tail and nothing changes.
-  //
-  // Deliberately not translated: why_go lives once, on the canonical tree, and
-  // the overlays carry their own story. A translated page falls back to its
-  // own story rather than showing an English sentence in a French snippet.
-  const why = (tree.why_go ?? "").trim();
+  // The story has the whole tail again (2026-09-12). why_go used to take the
+  // front of it on a tree with neither an age nor a measurement, on the
+  // argument that the story's opening is a hook rather than an answer. Read
+  // side by side that was not true: the reason WAS the story's opening,
+  // compressed. It changed the snippet on 16 pages of 3057, which is not a
+  // trade-off, and the field is gone from both surfaces.
   const story = overrides?.story ?? tree.story ?? "";
-  // ONLY WHEN IT ENDS CLEANLY. A reason cut off mid-thought is worse than no
-  // reason, and tested on the Brussels honey locust the naive version made the
-  // page WORSE: a 130-character why_go clause-cut to 59 replaced 106
-  // characters of story that were already doing the job. metaFromStory ends
-  // with an ellipsis exactly when it had to cut, so that is the test, and it
-  // works whether why_go is one sentence or five: whole sentences are taken
-  // from the front until the room runs out. Whatever room is left still goes
-  // to the story, which is how the answer and the hook share the snippet
-  // instead of competing for it.
-  // WHOLE SENTENCES ONLY, and its own loop rather than metaFromStory's,
-  // because the two want different things. metaFromStory keeps filling toward
-  // DESC_MIN and accepts an ellipsis to get there, which is right for a story
-  // (more of it is more reason to go) and wrong for a reason (half a reason is
-  // not a short reason). So: take sentences from the front while they fit, and
-  // if not even the first one fits, take none and let the story have the room.
-  // A reason that ends mid-thought never ships.
-  const whyFront = why.split(/(?<=[.!?]) /).reduce((acc, s) => {
-    const next = acc ? `${acc} ${s}` : s;
-    return next.length <= room ? next : acc;
-  }, "");
-  const useWhy = !overrides && !age && !size && !!whyFront;
-  const front = useWhy ? whyFront : "";
-  const rest = room - (front ? front.length + 1 : 0);
-  const tail = rest >= 45 ? metaFromStory(story, rest) : "";
-  const body = [front, tail].filter(Boolean).join(" ");
-  return body ? `${opening} ${body}` : opening;
+  const tail = room >= 45 ? metaFromStory(story, room) : "";
+  return tail ? `${opening} ${tail}` : opening;
+}
+
+/** A trunk in metres, the way the app prints it (Sightings.metres + " m").
+ *
+ * The measurement is stored in centimetres because that is how registers
+ * publish it, and nobody says "a trunk of four hundred and fifty centimetres".
+ * Trailing zeroes go, so 450 reads "4.5 m" and 400 reads "4 m" rather than
+ * "4.00 m". Added 2026-09-12: 1,386 published trees carry a girth, the app has
+ * printed it on the tree page since it had one, and the website printed it
+ * nowhere at all while ranking /collections/thickest-trees on it.
+ */
+export function girthLabel(cm: unknown): string | null {
+  const n = Number(cm);
+  if (!Number.isFinite(n) || n <= 0) return null;
+  let s = (n / 100).toFixed(2);
+  while (s.endsWith("0")) s = s.slice(0, -1);
+  if (s.endsWith(".")) s = s.slice(0, -1);
+  return `${s} m`;
 }

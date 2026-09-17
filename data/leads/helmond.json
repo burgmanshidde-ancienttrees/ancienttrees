@@ -77,6 +77,86 @@
       "status": "duplicate",
       "reason": "A 2026-09-11 register-backed verify pass re-verified this LRMB register tree under a new id (hlm_023) without checking passcheck.py --pending first; identical coordinates to six decimals, species and planted band as the already-published hlm_013 (The Silver Maple of the Molenstraat Cemetery). No new tree. Kept as a record so the register nr is not re-mined again: see verify_notes below.",
       "verify_notes": "Register (netherlands-lrmb, nr 1694363): silver maple (zilveresdoorn), planted band 1880-1890, owner_category religieuze instantie, visitable ja, in the same former Catholic cemetery on Molenstraat as hlm_022, about 160 m away. Register n_trees field says 2 (a registered pair/twin); folded here into one entry describing the pair rather than shipping as two near-identical points, per the register-twins rule. Register's own history note: 'probably planted around 1880 at the opening of the cemetery', which lines up with the independently confirmed 1880 founding date of this cemetery (online-begraafplaatsen.nl and general search results), though that source does not name the maple specifically. Public cemetery, open in daylight. No girth on file."
+    },
+    {
+      "register_id": 1683265,
+      "name": "Witte paardenkastanje",
+      "place": "Helmond, Kanaaldijk 67a, tuin",
+      "latitude": 51.48201,
+      "longitude": 5.65115,
+      "reason": "Private garden (owner_category particulier, setting tuin). Register itself marks it visitable=ja/visible=ja, but hard rule 10 excludes a private home's own garden regardless of the register's visitable field ('front gardens, courtyards of dwellings, private houses and their grounds stay out ... whatever the register says'). No source found placing it on public ground instead."
+    },
+    {
+      "register_id": 1683264,
+      "name": "Gewone plataan",
+      "place": "Helmond, Kanaaldijk 77, tuin",
+      "latitude": 51.48336,
+      "longitude": 5.65129,
+      "reason": "Private garden (owner_category particulier, setting tuin), same address as the Noorse Esdoorn below. Register marks visitable=ja/visible=ja but this is a private home's garden, blocked under hard rule 10 regardless."
+    },
+    {
+      "register_id": 1693763,
+      "name": "Noorse Esdoorn 'Schwedleri'",
+      "place": "Helmond, Kanaaldijk 77, tuin",
+      "latitude": 51.48338,
+      "longitude": 5.64993,
+      "reason": "Private garden (owner_category particulier), register itself marks visitable=nee/visible=nee. Blocked."
+    },
+    {
+      "register_id": 1683263,
+      "name": "Moerascypres",
+      "place": "Helmond, Kanaaldijk 83b, tuin",
+      "latitude": 51.48439,
+      "longitude": 5.65116,
+      "reason": "Private garden (owner_category particulier), register's own visitable/visible fields are both onbekend (unknown). Blocked under hard rule 10 pending evidence of public visibility."
+    },
+    {
+      "register_id": 1696853,
+      "name": "Witte walnoot Warandelaan",
+      "place": "Warandelaan 23A, Helmond, tuin",
+      "latitude": 51.48025,
+      "longitude": 5.64045,
+      "reason": "Private garden (owner_category particulier), register marks visitable=nee/visible=nee. Blocked."
+    },
+    {
+      "register_id": 1696328,
+      "name": "Italiaanse populier",
+      "place": "Helmond, Molenstraat 78, voortuin",
+      "latitude": 51.47805,
+      "longitude": 5.66628,
+      "reason": "Front garden of a private home (owner_category particulier, setting voortuin). Register marks visible=ja but hard rule 10 excludes front gardens of dwellings regardless of street visibility. Blocked."
+    },
+    {
+      "register_id": 1696327,
+      "name": "Gewone esdoorn",
+      "place": "Helmond, Molenstraat 78, achtertuin",
+      "latitude": 51.47836,
+      "longitude": 5.66658,
+      "reason": "Back garden of the same private home as the Italiaanse populier above (owner_category particulier). Blocked under hard rule 10."
+    },
+    {
+      "register_id": 1696510,
+      "name": "Magnolia",
+      "place": "Helmond, Aarlerixtelseweg 20, voortuin",
+      "latitude": 51.48724,
+      "longitude": 5.64385,
+      "reason": "Front garden of a private home (owner_category particulier, setting voortuin). Register marks visible=ja but a front garden stays blocked under hard rule 10 regardless. Blocked."
+    },
+    {
+      "register_id": 1696329,
+      "name": "Atlasceder",
+      "place": "Helmond, Prins Hendriklaan 25, voortuin",
+      "latitude": 51.479,
+      "longitude": 5.64541,
+      "reason": "Front garden (setting voortuin), owner_category overig (not gemeente). Register marks visible=ja/visitable=nee. Treated as a private/institutional front garden under hard rule 10; no source found establishing genuine public access. Blocked pending evidence."
+    },
+    {
+      "register_id": 1696471,
+      "name": "Kanaaleiken Helmond",
+      "place": "Helmond, Zuid-Willemsvaart",
+      "latitude": 51.447177,
+      "longitude": 5.685448,
+      "reason": "Register entry covers a group of 5 oaks planted along the Zuid-Willemsvaart canal shortly after the canal's completion (register's own history: the trees were likely planted shortly after the canal's completion in 1822). A row of roadside/towpath trees strung along a stretch of canal is an avenue, not one collectible point with one obvious place to stand. No source found naming or distinguishing a single standout tree within the group. Would become publishable if a source identifies one specific tree as exceptional within the row."
     }
   ]
 }

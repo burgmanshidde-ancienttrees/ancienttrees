@@ -2,13 +2,22 @@
  "note": "girth_cm copied onto published trees from an imported register, by scripts/girths.py. Kept so the provenance of a measurement is not lost the moment it is written.",
  "filled": [
   {
-   "city": "Hilo",
-   "id": "hbi_006",
-   "tree": "The Coconut of Waiolama Canal",
-   "girth_cm": 542,
+   "city": "Brussels",
+   "id": "bru_031",
+   "tree": "The Tree of Heaven of the Grand Sablon",
+   "girth_cm": 342,
    "column": "girth_cm",
-   "register": "hawaii-exceptional-trees.json",
-   "metres": 0.0
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_016",
+   "tree": "The Himalayan Chir Pine of the English Garden",
+   "girth_cm": 350,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.5
   }
  ]
 }

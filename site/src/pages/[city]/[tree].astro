@@ -3,7 +3,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, type CityEntry, type Tree } from "../../lib/trees";
 import { haversineKm } from "../../lib/walks";
 // THE LINK UNDER THE ACTION BAR POINTED AT A PROMOTION, and did it on every
 // tree page on the site.
@@ -21,23 +21,26 @@ import { haversineKm } from "../../lib/walks";
 // plainly that the route is in the app, counts the walks from the same helper
 // that feeds the app, and says nothing at all when a city has no walk.
 import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
+import { cityHasQuestionPage } from "../../lib/question-page";
 import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
-import { usablePhoto, metaImageUrls, ogImageUrl } from "../../lib/images";
+import { usablePhotos, metaImageUrls, ogImageUrl } from "../../lib/images";
 import PhotoFigure from "../../components/PhotoFigure.astro";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
-import { ageToken, metaForTree, submitLink, locationIsApproximate } from "../../lib/tree-copy";
+import { ageToken, metaForTree, submitLink, locationIsApproximate, girthLabel } from "../../lib/tree-copy";
 import { treeSources } from "../../lib/tree-sources";
 import WorthIt from "../../components/WorthIt.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import SaveHeart from "../../components/SaveHeart.astro";
+import SeenButton from "../../components/SeenButton.astro";
 import ShareButton from "../../components/ShareButton.astro";
 import { SHARE_JS } from "../../lib/share-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
+import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead, singlePinScript } from "../../lib/map";
 import { hreflangForCity, ui } from "../../lib/i18n";
@@ -114,6 +117,10 @@ const cslug = city.id;
 // on saying the word "walk" to a reader. cityWalkCount (the number of walks,
 // not trees) only picks the wording once that gate has already passed.
 const cityHasWalksPage = hasWalksPage(city);
+// Contract B v1.18. This chip has been gated on `allTrees.length > 1` since
+// long before the rule was written down, which is the same line; it reads it
+// from lib/question-page.ts now so the two cannot drift.
+const cityHasQuestion = cityHasQuestionPage(allTrees.length);
 const cityWalkCount = pageWalksFor(city).length;
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
@@ -163,7 +170,10 @@ const crumbItems: [string, string | null][] = [
   [tree.name, null],
 ];
 
-const photo = usablePhoto(tree);
+const shots = usablePhotos(tree);
+// The lead stays what every card face, og:image and ranking already reads; the
+// rest of the set only ever reaches the figure below it.
+const photo = shots[0] ?? null;
 let ogImage = "";
 if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(ogImageUrl(photo.url))}">`;
 
@@ -172,6 +182,7 @@ const spSlug = speciesPages.get(spCommon);
 
 const seasonHtml = seasonBlock(tree, loc.latitude!);
 const isApprox = locationIsApproximate(tree);
+const girth = girthLabel((tree as any).girth_cm);
 
 const graph = [
   ...SITE_SCHEMA,
@@ -224,7 +235,7 @@ const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
 const sources = treeSources(tree);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SIGNIN_JS + SHARE_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS + SHARE_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page has-tree-bar">
@@ -252,7 +263,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         apart has no hierarchy, which was Hidde's complaint about the app on
         2026-08-26 and was equally true here. */}
     {photo && photo.url ? (
-      <PhotoFigure photo={photo} alt={tree.name} lang="en" variant="hero"
+      <PhotoFigure photo={photo} photos={shots} alt={tree.name} lang="en" variant="hero"
         widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
     ) : (
       <figure class="tree-noph tree-hero">
@@ -321,9 +332,20 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         </p>
       )}
       {tree.paid_entry && (
-        <p class="tb-ticket"><b>You need a ticket to see this tree</b><span>{tree.access}</span></p>
+        <p class="tb-ticket">
+          <svg class="tb-ticket-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5V10a2 2 0 0 0 0 4v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2 2 0 0 0 0-4V7.5Z"/><path d="M8.5 7.6v8.8" stroke="#E8EEF6" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 2.4"/></svg>
+          <span class="tb-ticket-txt"><b>You need a ticket to see this tree</b><span>{tree.access}</span></span>
+        </p>
       )}
     </div>
+
+    {/* THE TICK, the web's answer to the camera button in the app's own tree
+        bar (2026-09-12). In the app, photographing a tree ticks it off, which
+        is why its tree page carries a collect action at all; the website has
+        no camera flow, so the collect action here is the tick itself. Under
+        the facts rather than in the floating bar: the bar is already three
+        controls wide and truncates its last one at 375 points. */}
+    <p class="tree-tick"><SeenButton treeId={tree.id} treeName={tree.name} /></p>
 
     <div class="tree-bar" aria-label="Actions">
       <SaveHeart treeId={tree.id} treeName={tree.name} />
@@ -343,13 +365,16 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           : `See the ${cityWalkCount} walks past ${cityName}'s other trees in the app →`}
       </a></p>
     )}
-    {/* WHY GO, above how-do-I-find-it because it decides whether there is a
-        walk at all, while recognition only matters once you are on your way.
-        Hidde, 2026-09-08: "why remarkable? why worth the walk? tell others why
-        they should go and visit the tree". */}
-    {tree.why_go && (
-      <p class="which-one"><b>Why go?</b> {tree.why_go}</p>
-    )}
+    {/* WHY GO is gone (2026-09-12). It printed the story's own opening a
+        centimetre above the story: read beside each other, all three of the
+        first trees carrying one said the same thing twice. Step 3 already
+        requires a story to lead with the most surprising fact, so a second
+        field asking for exactly that is the duplication the whole-page check
+        of 2026-08-04 exists to catch, and it shipped anyway. Hidde, on being
+        shown the three pairs: "precies haal weg". The failure it was invented
+        for (Nara, four trees whose own stories argued against their pages) is
+        not a missing field and a field cannot fix it: the four-tree floor and
+        "would somebody travel for THIS ONE TREE" are what answer it. */}
     {tree.how_to_recognise && (
       <p class="which-one"><b>How do I find it?</b> {tree.how_to_recognise}</p>
     )}
@@ -358,6 +383,12 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     <dl class="facts">
       <dt>Species</dt><dd>{tree.species ?? ""}</dd>
       <dt>Age estimate</dt><dd>{tree.age_estimate ?? "unknown"}</dd>
+      {/* THE TRUNK (2026-09-12). The app has printed the girth on its own tree
+          page since it had one, and this page printed it nowhere, while
+          /collections/thickest-trees ranked trees on exactly this number. It
+          is also the fact that makes a tree impressive without needing an age,
+          which is the case for a third of what we publish. */}
+      {girth && <Fragment><dt>Girth</dt><dd>{girth}</dd></Fragment>}
       <dt>Location</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
       <dt>Access</dt><dd>{tree.access ?? ""}</dd>
       <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
@@ -386,7 +417,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           {nearby.map((t) => (
             <a class="near-card" href={`/${cslug}/${tslugs[t.id]}`}>
               <b>{t.name}</b>
-              <span>{t.age_estimate ?? ""} · {distLabel({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away</span>
+              <span set:html={`${t.age_estimate ?? ""} &middot; ${distSpanBetween({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away`} />
             </a>
           ))}
         </div>
@@ -403,7 +434,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <h2>Discover more</h2>
       <div class="dm-chips">
         <a class="dm-chip" href={`/${cslug}`}>{allTrees.length > 1 ? `All ${allTrees.length} trees in ${cityName}` : `${cityName}`}</a>
-        {allTrees.length > 1 && <a class="dm-chip" href={`/${cslug}/oldest-tree`}>The oldest tree in {cityName}</a>}
+        {cityHasQuestion && <a class="dm-chip" href={`/${cslug}/oldest-tree`}>The oldest tree in {cityName}</a>}
         {spSlug && <a class="dm-chip" href={`/species/${spSlug}`}>Every {spCommon.toLowerCase()}</a>}
         {parkPage && <a class="dm-chip" href={`/parks/${parkPage.slug}`}>{parkPage.name || parkPage.park}</a>}
         {/* No country chip: country pages live at /[country] and only exist

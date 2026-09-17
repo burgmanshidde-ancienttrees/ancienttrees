@@ -12,6 +12,7 @@ import { haversineKm } from "./walks";
 // Nothing caught it because astro build does not typecheck; astro check does.
 import { slugify, legacySlugify } from "./slug";
 export { slugify, legacySlugify };
+import { cityHasQuestionPage } from "./question-page";
 
 export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
 export type CityData = CollectionEntry<"cities">["data"];
@@ -36,6 +37,13 @@ export function renderableTrees(city: CityEntry): Tree[] {
   return city.data.trees.filter(treeIsRenderable);
 }
 
+/** Does this city publish a question page (Contract B)? The rule and the
+ * reasoning live in ./question-page, shared with redirect-map.ts, which keeps
+ * the retired URLs resolving and runs too early to import this file. */
+export function hasQuestionPage(city: CityEntry): boolean {
+  return cityHasQuestionPage(renderableTrees(city).length);
+}
+
 /** Human distance between two tree locations: "350 m" or "2.1 km".
  * Ported from haversine()/dist_label(), build_site.py:911-915,972-975. */
 export function distLabel(
@@ -43,7 +51,38 @@ export function distLabel(
   b: { latitude: number; longitude: number }
 ): string {
   const m = haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]) * 1000;
+  return kmLabelHuman(m / 1000);
+}
+
+/** The same label from kilometres, for a distance already measured. */
+export function kmLabelHuman(km: number): string {
+  const m = km * 1000;
   return m < 1000 ? `${Math.round(m / 10) * 10} m` : `${(m / 1000).toFixed(1)} km`;
+}
+
+/** A distance that can become miles in the reader's browser (2026-09-12).
+ *
+ * The pages are static and the reader's region is not knowable at build time,
+ * so every distance ships in metric and carries the kilometres that made it.
+ * units-js.ts rewrites the span where the region, or the account, reads in
+ * miles. `data-metric` holds the original so the account can overrule the
+ * region in either direction without a reload.
+ *
+ * HTML rather than a component because two of the three call sites feed the
+ * string into a translated sentence template (`${d} verderop`), which a
+ * component cannot sit inside.
+ */
+export function distSpan(km: number): string {
+  const label = kmLabelHuman(km);
+  return `<span class="dist" data-km="${km.toFixed(4)}" data-metric="${label}">${label}</span>`;
+}
+
+/** distSpan between two points, which is what a page usually has. */
+export function distSpanBetween(
+  a: { latitude: number; longitude: number },
+  b: { latitude: number; longitude: number }
+): string {
+  return distSpan(haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]));
 }
 
 /** Every renderable tree's slug within a city, id -> slug. Mirrors the

@@ -1,0 +1,64 @@
+{
+  "city": "Višňová",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Višňová maps one tree, and the village put a bench under it for what it did. On the night of 7 August 2010 a flash flood broke the Smědá's banks and the Guardian Oak, standing beside the bridge in the hamlet of Víska, caught the trees and debris the water was carrying and kept the jam out of the houses downstream. Three years later it won the Czech Tree of the Year vote, then placed fifth in Europe in 2014. Free, on a public road at the edge of the settlement, no ticket or gate.",
+  "meta_description": "The Guardian Oak of Víska near Višňová: caught 2010's flood debris and saved a village, Czech Tree of the Year 2013.",
+  "question_meta": "Višňová's only mapped tree is the Guardian Oak of Víska, which held back a 2010 flash flood and won Czech Tree of the Year 2013.",
+  "question_answer": "Višňová's only mapped tree is Dub ochránce, the Guardian Oak, standing beside the road and footbridge over the Smědá river in the hamlet of Víska. On 7 August 2010 it caught trees and debris carried by a flash flood and kept the jam from reaching houses downstream; local accounts credit it with saving a couple and their dog. It won the Czech Tree of the Year public vote in 2013 and placed fifth in the European Tree of the Year competition in 2014. It is free to visit, on a public road at the settlement's edge.",
+  "question_context": "The Smědá broke its banks on the night of 7 August 2010 during catastrophic flash flooding across the region, and the oak, already standing beside the bridge in Víska, caught the mass of floating trees and debris the water carried, holding it back from the houses below. Local accounts credit it with sparing a couple and their dog as well as the houses themselves. The tree is roughly 150 years old, early middle age for a pedunculate oak, 455 centimetres round and 20 metres tall; nobody has dated it more precisely than that. Three years after the flood, in 2013, it won the Czech Tree of the Year public vote, and in 2014 it placed fifth in the European Tree of the Year competition. Arborists carried out a canopy health prune that September to keep it sound after the award drew attention to it. A bench and an information board now stand beneath it, both added after the flood rather than before. Víska is a small settlement that is part of Višňová municipality in the Liberec District; a local bus reaches Višňová/Víska, or it is a short walk from the village once there.",
+  "hero_tree_id": "vis_001",
+  "oldest_tree_id": "vis_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Višňová?",
+      "a": "The Guardian Oak of Víska, the only mapped tree here, a pedunculate oak roughly 150 years old."
+    },
+    {
+      "q": "What is the Guardian Oak known for?",
+      "a": "On 7 August 2010 it caught trees and debris carried by a flash flood on the Smědá river and kept the jam out of houses downstream. It won the Czech Tree of the Year vote in 2013 and placed fifth in Europe in 2014."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a public road at the southern edge of Víska, no tickets or hours."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By local bus to Višňová/Víska in the Liberec District, or by car, then a short walk to the village's southern edge beside the bridge over the Smědá."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vis_001",
+      "name": "The Guardian Oak of Víska",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 130,
+      "age_max": 170,
+      "girth_cm": 455,
+      "height_m": 20,
+      "location": {
+        "address": "Southern edge of the Víska settlement, beside the road and footbridge over the Smědá river, Višňová municipality, Liberec District, Liberec Region",
+        "latitude": 50.944,
+        "longitude": 15.028,
+        "neighbourhood": "Víska (part of Višňová)"
+      },
+      "story": "On 7 August 2010 this oak stood in the way of a flood and held. The Smědá broke its banks that night and came down through Víska carrying whole trees, and the oak caught them against its trunk and kept the jam out of the houses below. Local accounts credit it with saving a couple and their dog as well. Three years later the country voted it Tree of the Year, and in 2014 it placed fifth in Europe. Locally it is Dub ochránce, the Guardian Oak.\n\nIt is not an ancient tree. Roughly 150 years, which is early middle age for a pedunculate oak, 455 centimetres round and 20 metres tall. Nobody has dated it more precisely than that, so if you know when it went in, tell us. Arborists pruned the crown in September 2014 to keep it sound, which is what a village does for a tree it owes something to.\n\nIt stands at the southern edge of the settlement, beside the road and the footbridge over the same river. There is a bench under it now and a board explaining what happened. Both arrived after the water did.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Vi%C5%A1%C5%88ov%C3%A1_(okres_Liberec)",
+        "https://www.turistika.cz/mista/dub-ochrance-v-osade-viska/detail"
+      ],
+      "access": "Free, on a public road at the edge of the village, beside the bridge over the Smědá. An information board and a seating area for visitors stand beneath it.",
+      "transport": "No rail; reached by local bus to Višňová/Víska (Liberec District) or by car, then a short walk to the village's southern edge.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 455 centimetres round, with a bench and an information board at its foot. It stands on its own at the southern edge of Víska, right beside the bridge over the Smědá."
+    }
+  ]
+}

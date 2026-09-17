@@ -96,8 +96,8 @@
       "latitude": 50.0627,
       "longitude": 19.94454,
       "designated": "2026-06-06 per GDOS (very recent designation)",
-      "reason": "0.54 km from centre, 454 m from any published tree; a genuinely rare species for a Krakow street tree, which would have made a strong, distinctive addition. Not pursued this pass: designated only weeks before this pass (2026-06-06), too recent to appear in the 2023-snapshot Wikipedia wykaz table used to cross-source this city's other trees, so no second independent source (address, girth, or photo) could be found in the time available. GDOS alone is one source. Re-checked this pass (2026-08-28): still absent from the wykaz table, which tops out at entry 362 (2023 batch). Worth a dedicated look once a 2026 update to the city's own wykaz or a local news item about the new designation surfaces.",
-      "status": "unresolved, second source needed"
+      "reason": "0.54 km from centre, 454 m from any published tree; a genuinely rare species for a Krakow street tree, which would have made a strong, distinctive addition. Not pursued this pass: designated only weeks before this pass (2026-06-06), too recent to appear in the 2023-snapshot Wikipedia wykaz table used to cross-source this city's other trees, so no second independent source (address, girth, or photo) could be found in the time available. GDOS alone is one source. Re-checked this pass (2026-08-28): still absent from the wykaz table, which tops out at entry 362 (2023 batch). Worth a dedicated look once a 2026 update to the city's own wykaz or a local news item about the new designation surfaces. [RESOLVED 2026-09-13, verification pass: found the missing second source by a different route. lifeinkrakow.pl (2025-09, independent local news) reports Krakow ran a public consultation (8 Sept to 3 Oct 2025) on five proposed pomniki przyrody, explicitly naming 'klon francuski' among them; the GDOS 2026-06-06 designation date is consistent with that consultation having concluded. Nominatim places the coordinate on ul. Westerplatte beside the Planty (Old Town ring park), public ground. No girth or age found anywhere, left honestly empty. Delivered as kra_038 in data/research/krakow-verified.json, flagged for the missing measurements and for resting on two sources neither of which measured the tree.]",
+      "status": "resolved"
     },
     {
       "name": "Cluster of exotic monuments in the Botanical Garden area (Ogród Botaniczny UJ vicinity)",
@@ -122,6 +122,36 @@
       "designated": "2017-12-29",
       "reason": "[CHECKED 2026-09-03, verification pass: transit time checked, not cleared.] Confirmed in Kliny/Swoszowice (Nominatim: Sielska street, Kliny, Swoszowice district), about 5.8-6 km south of Rynek Glowny. No leisure=park polygon is mapped at the coordinates in OSM (the ground is tagged forest/grass/farmland along ul. Zawila), so 'Park przy Zawilej' may be informal or unmapped; the three trees themselves are real register entries regardless. On transit: the nearest stop cluster ('Gora Borkowska', ~250-400m from the trees) is served by a long list of route numbers (121,151,175,191,204,214,215,225,235,243,245,254,255,265,275,285,293,475,610,915), and every route checked (155: Podgorze SKA to Swoszowice SKA; 163: Miejskie Centrum Opieki to Szpital Rydygiera; 204: to Czerwone Maki P+R) is a cross-suburban connector to a P+R/rail hub, not a one-seat line from Rynek Glowny or the Old Town. No direct centre-to-Kliny bus or tram line was found. Reaching the centre therefore needs at least one transfer (bus to a hub such as Czerwone Maki P+R, then tram/bus into town), which realistically lands past the ~30 minute day-trip boundary once a transfer wait is counted, though this pass could not get an exact door-to-door minute figure from a journey planner. Per the day-trip rule ('if clearly over 30 minutes, leave it as a lead'), this is left as a lead rather than shipped: the evidence points toward it being too far by transit, even though straight-line distance alone is not disqualifying. A 334cm tulip tree and a 359cm ash would be genuinely distinctive additions if a faster direct route is later found (e.g. a future bus schedule change, or if a nearer tram stop turns out to serve the corridor).",
       "status": "unresolved, transit likely exceeds 30 min via transfer; left as lead, not shipped"
+    },
+    {
+      "name": "St. Salvator's churchyard cluster + Aleja Waszyngtona chestnuts (Salwator/Zwierzyniec, near Kopiec Kosciuszki)",
+      "species": "European Ash (Fraxinus excelsior, 377cm), Norway Maple (Acer platanoides, 290cm), five separately-designated European White Elm (Ulmus laevis, 303-457cm), plus a nearby avenue of Horse Chestnut (Aesculus hippocastanum) and more Norway Maple on Aleja Jerzego Waszyngtona",
+      "latitude": 50.0533,
+      "longitude": 19.9113,
+      "designated": "2012-02-11 (church cluster) / 2004-01-28 (chestnut avenue)",
+      "reason": "NOT individually checked this pass (time-boxed to 4 named candidates per BRIEF_RESEARCH.md; this pass used its four on kra_035-038). Found while scanning the register-candidates list and worth flagging strongly for a future pass. The Wikipedia wykaz (entries 237-243, kodinspire .1022/.1023/.1024/.1026/.1027/.1028/.1029) gives an exact address for six of the seven: 'ul. Sw. Bronislawy 5. A 14 Koscioł sw. Salwatora', i.e. the grounds of the Church of St Salvator, one of Poland's oldest churches (traditionally dated 11th-12th century), on the walking route up to Kopiec Kosciuszki (Kosciuszko Mound), a major Krakow tourist destination. Per CLAUDE.md a churchyard is public ground in practice and this one sits beside a route tourists already walk, unlike the Baluckiego guesthouse cluster which was correctly blocked. The largest elm here (.1024, 457cm girth) would be a notably bigger individual than anything currently on the Krakow page. About 250m away, Aleja Jerzego Waszyngtona (confirmed via Nominatim as a public living_street in Salwator/Zwierzyniec) carries five further register trees, mostly Aesculus hippocastanum (horse chestnut, absent from Krakow's page) plus more Acer platanoides, reading as a chestnut avenue rather than single specimens, so per the collectible-point rule a future pass should pick ONE representative chestnut rather than the whole row. Two independent sources already exist for the church cluster (GDOS register + the city's own Wikipedia-reproduced wykaz, the standard already used for kra_005-038); the chestnut avenue trees are GDOS-only so far and were not found in the wykaz text search, needing a second source before shipping. Neither sub-cluster's aliveness was checked against news for storm damage this pass.",
+      "status": "unresolved, strong candidate for a dedicated future pass; not verified this pass"
+    },
+    {
+      "name": "The Wyspianskiego 7 Copper Beech",
+      "species": "Common Beech, copper-leaved form (Fagus sylvatica f. purpurea, 'Buk pospolity odm. czerwonolistna')",
+      "kodinspire": "PL.ZIPOP.1393.PP.1261011.967",
+      "latitude": 50.0728616,
+      "longitude": 19.9256918,
+      "designated": 2011,
+      "reason": "Checked this pass: Nominatim resolves ul. Wyspianskiego 7 to an ordinary apartment building (osm class building=apartments) in Nowa Wies, Krowodrza, with no evidence found that its grounds or courtyard are open to the public. Wykaz entry 189 confirms the address and a Commons photo file exists ('European beech (Fagus sylvatica L.), 7 Wyspianskiego street, Krakow, Poland.jpg') but no girth is recorded in the wykaz (field blank). Not blocked outright, since a front garden visible from the pavement could still pass the view-only test, but this pass found no source stating public access either way and did not have time to check street-level imagery. Left as a lead rather than shipped or blocked.",
+      "status": "unresolved, access not established"
+    },
+    {
+      "name": "The Czackiego 11 Beech",
+      "species": "Common Beech (Fagus sylvatica)",
+      "kodinspire": "PL.ZIPOP.1393.PP.1261011.2973",
+      "girth_cm": 288,
+      "latitude": 50.0410588,
+      "longitude": 19.9368889,
+      "designated": 2004,
+      "reason": "Checked this pass: Nominatim resolves ul. Czackiego 11 to a single private house (osm addresstype=place, type=house) in Stare Podgorze. No evidence found that it is anything other than an ordinary private residence; reads the same way as the already-blocked Baluckiego cluster (named house number, no institutional or public use). Not formally blocked because no source was fetched confirming the plot is fenced or gated, only the address type; a future pass could check street-level imagery or OSM access tags before ruling it out for good.",
+      "status": "unresolved, likely private, not chased further"
     }
   ],
   "blocked": [

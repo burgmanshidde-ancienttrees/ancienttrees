@@ -4,7 +4,7 @@
   "status": "needs_curation",
   "intro": "Kaunas keeps its oldest trees inside its parks and forests rather than its streets: a linden with a fenced trunk in Vytautas Park; a golden willow leaning over the Nemunas-Neris confluence, now visibly failing; a 600-year-old oak above the Kaunas reservoir, carrying a name once given to a different, already-lost tree; a multi-trunked lime in Vilijampolė; a fused oak-and-pine pair in Dubrava forest on a parish coat of arms; and a newly protected oak at Netoniai. Six trees, several kinds of survival.",
   "meta_description": "Kaunas's oldest trees: a 270-year linden, a declining willow, a 600-year oak, a multi-trunk lime, a fused pair and a new oak.",
-  "question_meta": "Kaunas's oldest confirmed tree is the Peace Hill Oak above Kaunas marios, estimated at roughly 600 years. Full list of 4.",
+  "question_meta": "Kaunas's oldest confirmed tree is the Peace Hill Oak above Kaunas marios, estimated at roughly 600 years. Full list of 9.",
   "question_answer": "The Peace Hill Oak (Taikos kalno ąžuolas), a pedunculate oak in the pine woods of Pažaislio šilas above the Kaunas reservoir, estimated at roughly 600 years. It carries a name and role handed down from an older oak nearby that was lost to arson in 2007.",
   "question_context": "Kaunas's Peace Hill Oak is not the original bearer of its own name. An older oak, roughly 800 years old by some estimates, stood nearby and was already dying from storm damage when a 2001 memorial installation was placed beside it; a further arson attack in 2007 finished it off, and it was removed. This living oak, judged healthy enough to carry the name and the city's 2001 natural-monument designation forward, has done that job since. It stands in Pažaislio šilas, a pine wood beside the Kauno marios reservoir and the Pažaislis Monastery, kept alive today with periodic treatment for internal rot.\n\nThe other three trees span very different parts of Kaunas: a 270-year linden confirmed by growth-ring count in Vytautas Park, within the city's Ąžuolynas oak forest; a golden willow by the Nemunas-Neris confluence that a 2016 environment ministry order protected for its unusual colouring, now showing signs of fungal decline in 2026 photographs; and an unusually thick, multi-trunked lime in the Vilijampolė district whose age nobody has recorded.",
   "faq": [
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes, all six stand on free, unticketed ground: public parks, a state forest with a marked path, and a roadside track."
+      "a": "Yes, all nine stand on free, unticketed ground: public parks, a state forest with a marked path, and a roadside track."
     },
     {
       "q": "Is there a tree in Kaunas without a documented age?",
@@ -252,6 +252,96 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      }
+    },
+    {
+      "id": "kun_007",
+      "name": "Sitkūnai Forest Oak I",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 445,
+      "location": {
+        "address": "Sitkūnai Forest, 0.7km southeast of the Via Baltica viaduct at Sitkūnai, Babtai eldership, Kaunas district",
+        "latitude": 55.046163,
+        "longitude": 23.830772,
+        "neighbourhood": "Sitkūnai, Kaunas district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Sitk%C5%ABn%C5%B3_mi%C5%A1ko_I_%C4%85%C5%BEuolas",
+        "https://stvk.lt/map",
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+      ],
+      "access": "Free, public state forest (Sitkūnai Forest, part of the Babtai-Varluva forest biosphere polygon); reached along a gravel track past an isolated forest homestead (Girininkijos g. 15), then on foot at the forest edge. No gate, fee or restriction mentioned by any source.",
+      "transport": "No public transport; reached by car, about 18km by straight-line distance from central Kaunas. Stands 160m from Sitkūnai Forest Oak II (this batch's kun_008) and about 0.9km from the Kiaunupis Oak (kun_009), so all three can be walked as one small forest cluster once you have driven in.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak does not have a name. The state gave it a number instead: Sitkūnai Forest Oak I, with Oak II standing 160 metres away through the trees.\n\nBoth arrived on Lithuania's protected list on the same day, 18 June 2026, under one ministerial order that also took in the Kiaunupis Oak a kilometre off. Three oaks, one decree, one small corner of the Babtai forests. The designation is that recent, so beyond the state register and a single Lithuanian reference page almost nothing has been written about any of them. That is a gap rather than a doubt: the register carries the coordinates and the measurements, and the two accounts of this tree agree to within a few metres.\n\nOak I is the tall one. 28 metres, 4.45 metres round at chest height, and higher up it divides, three stems leaving the trunk two to three metres above the ground and going their own ways. It grows in sparse mixed forest about 200 metres from an isolated homestead, beside the gravel track that runs along the fields, which is as close as any road gets.\n\nNo source gives an age. If you know of a survey or a ring count, tell us.\n\nThere is no bus. This is 18 kilometres out of Kaunas by car, and once you are parked the three trees are a walk rather than a drive: Oak II at 160 metres, the Kiaunupis Oak at about 900.",
+      "how_to_recognise": "You can recognise it by the three stems that leave the single trunk two to three metres up, 28 metres tall and 4.45 metres round below the fork. It stands in sparse forest by the gravel track, 160 metres from Oak II.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kun_008",
+      "name": "Sitkūnai Forest Oak II",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 425,
+      "location": {
+        "address": "Sitkūnai Forest, 160m from Sitkūnai Forest Oak I, Babtai eldership, Kaunas district",
+        "latitude": 55.046726,
+        "longitude": 23.828469,
+        "neighbourhood": "Sitkūnai, Kaunas district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Sitk%C5%ABn%C5%B3_mi%C5%A1ko_II_%C4%85%C5%BEuolas",
+        "https://stvk.lt/map",
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+      ],
+      "access": "Free, public state forest, same biosphere polygon as Sitkūnai Forest Oak I; noticeable from a gravel track running along the forest edge. No gate, fee or restriction mentioned by any source.",
+      "transport": "No public transport; reached by car, about 18km by straight-line distance from central Kaunas, 160m on foot from Sitkūnai Forest Oak I (kun_007) and part of the same small forest cluster as the Kiaunupis Oak (kun_009).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The only photograph of this oak is captioned with the word olos, caves, for the hollows under the base of its trunk. That is what a hollowing oak looks like at ground level: the stem parts company with its own roots and leaves openings underneath it.\n\nNobody has measured how tall it is. The entry for it carries a question mark where the height should go, which is a fair indication of how much attention this tree has had. What has been measured is the trunk, 4.25 metres round at chest height, making it the narrower of the two Sitkūnai oaks. Oak I stands 160 metres off at 4.45.\n\nThe two were protected on the same day, 18 June 2026, under one ministerial order, and the Lithuanian accounts of them treat the pair as a pair rather than promoting either one. That is the right way round. Neither is a famous tree, and the reason to come out here is that there are two of this size in one small wood, with a third a kilometre on.\n\nNo age exists for this oak, and we are not going to produce one from a tape measure. If you know of a figure, tell us.\n\nThere is no public transport. It is 18 kilometres from central Kaunas by car, then 160 metres on foot from Oak I, with the Kiaunupis Oak 900 metres beyond that.",
+      "how_to_recognise": "You can recognise it by the cave-like hollows under the base of the trunk, which is 4.25 metres round at chest height. It stands within sight of the forest-edge track, 160 metres from Oak I, the wider of the two.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kun_009",
+      "name": "Kiaunupis Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 550,
+      "location": {
+        "address": "Gailiušiai Forest, about 30m south of a bend in the Kiaunupis stream, Sitkūnai, Babtai eldership, Kaunas district",
+        "latitude": 55.047083,
+        "longitude": 23.842944,
+        "neighbourhood": "Sitkūnai, Kaunas district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Kiaunupio_%C4%85%C5%BEuolas",
+        "https://stvk.lt/map",
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+      ],
+      "access": "Free, public state forest (Gailiušiai Forest, Babtai-Varluva biosphere polygon); reached via a forest road off the A8, then about 180m on foot along a ditch. No gate, fee or restriction mentioned by any source.",
+      "transport": "No public transport; reached by car, about 18km by straight-line distance from central Kaunas, and about 0.9km from the Sitkūnai Forest Oak cluster (kun_007, kun_008) in the same day out.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Of the three oaks Lithuania protected in this corner of forest on one day in June 2026, this is the thickest by a clear metre: 5.50 metres round at chest height, against 4.45 and 4.25 for the Sitkūnai pair.\n\nIts height has never been recorded. Neither has its age. What exists is that trunk measurement, a set of coordinates good to a few metres, and the ministerial order of 18 June 2026 that put it on the state register alongside its two neighbours. That is the whole file. This is a tree that was measured, listed and otherwise left alone, which for an oak is close to the best available outcome.\n\nIt grows in Gailiušiai Forest, 30 metres south of a bend in the Kiaunupis stream it takes its name from. The way in is a forest road off the A8 and then roughly 180 metres on foot along a ditch, the sort of walk where a bend in a stream is the landmark you navigate by.\n\nNobody has dated it. If you have seen a figure on a board or in a forestry survey, tell us and it goes on the page.\n\nThere is no bus to any of this. It is 18 kilometres out of central Kaunas by car, and the two Sitkūnai oaks lie 900 metres off through the trees, so all three are one short walk once you have arrived.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.50 metres round at chest height and the thickest of the three protected oaks here. It stands about 30 metres south of a bend in the Kiaunupis stream, at the end of a walk along a ditch.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
