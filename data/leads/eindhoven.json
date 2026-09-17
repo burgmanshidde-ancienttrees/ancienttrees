@@ -29,7 +29,98 @@
       },
       "reason": "Only the LRMB register (nr 1690256, planted_band 1930-1940, place given only as '* Nabij de Sterrenwacht, Stadspark, Eindhoven', visible='onbekend') places a tree here; the asterisk in the register's own place field suggests even the register is uncertain about the exact spot. No matching 'Spaanse eik' entry exists anywhere in the Gemeente Eindhoven open-data 'bomen' dataset citywide (checked by name, zero hits), and a 150m radius search around this coordinate found no Quercus rubra either, only a 1960s-era conifer/ginkgo planting. Web search found nothing specific. Second source not found and even the register's own location is marked uncertain; leave for a future pass with a site visit or better register scan.",
       "sources_checked": ["https://www.monumentalebomen.nl/", "https://data.eindhoven.nl/explore/dataset/bomen/table/?flg=nl-nl"]
+    },
+    {
+      "name": "Pluimiep, Frederika van Pruisenweg",
+      "species": "possibly Zelkova or a plume-form elm cultivar; register gives no scientific name",
+      "location": {
+        "address": "Frederika van Pruisenweg, opposite nos. 2 and 58, Villapark, Eindhoven",
+        "latitude": 51.4355, "longitude": 5.466807
+      },
+      "reason": "LRMB register nr 1690252, planted_band 1900-1910, visitable=ja, but its own n_trees field says 7. That reads as a row or small stand rather than one collectible point (CLAUDE.md's rule: an avenue or a whole stand of trees is blocked, an entry must be one identifiable tree). Left as a lead rather than blocked outright because a site visit might find one standout specimen among the seven worth publishing on its own; a future pass with photos or a map of the individual trunks could settle it.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1690252", "Gemeente Eindhoven open data 'bomen' geosearch within 25m of the point, no match found"]
+    },
+    {
+      "name": "Hongaarse eik PSV-stadion",
+      "species": "Hungarian Oak (Quercus frainetto)",
+      "location": {
+        "address": "Frederiklaan 61, near gate 11 of the Philips Stadium, Eindhoven",
+        "latitude": 51.442272, "longitude": 5.464844
+      },
+      "reason": "Only the LRMB register (nr 1697320, planted_band 1910-1920, visitable=ja, visible=ja, status 1) places a Hungarian oak here. A web search for corroboration surfaced a genuinely different, well-documented monumental tree nearby instead: a white horse chestnut on Frederiklaan south of the stadium that is the subject of a supporters' memorial art project (psv.nl), which is not this tree and should not be confused with it or with the already-published ein_001 (a horse chestnut at Frederiklaan 10a, gate 11). No second source found specifically for the Hungarian oak. Worth a second look; it sits about 500m from ein_001 so could extend that corner of the walk if confirmed.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1697320", "WebSearch: \"Hongaarse eik\" Frederiklaan Eindhoven PSV stadion boom"]
+    },
+    {
+      "name": "Extra trees of Sint Trudo churchyard (Strijpsestraat 129), beyond the already-published copper beech (ein_008)",
+      "species": "mixed: copper beech (Fagus sylvatica f. purpurea), a variant labelled 'Slangenden' (species unclear from the register)",
+      "location": {
+        "address": "Strijpsestraat 129, kerkhof Sint Trudokerk, Strijp, Eindhoven",
+        "latitude": 51.4404, "longitude": 5.4553
+      },
+      "reason": "The LRMB register lists several more entries at this same churchyard beyond nr 1694310 (already published as ein_008): nr 1680249 'Bruine beuk' explicitly carries n_trees=17, clearly a grove or hedge rather than one collectible point, and is blocked for that reason (see blocked list). Two more, nr 1695441 (bruine beuk, n_trees=2) and nr 1695440 (bruine beuk, n_trees not distinct), and nr 1680251 ('Slangenden', n_trees=2, an unclear register name, possibly corrupted text, standing in the former rectory's front garden) sit within roughly 150m of ein_008 and of each other. All are marked visitable=ja by the register but none has a recognition feature in the register data that would let a visitor tell it apart from ein_008 or from each other without standing there; publishing several near-identical copper beeches in one churchyard risks exactly the 'which trunk is worth the visit' problem this project tries to avoid (CLAUDE.md, the Nigatsu-do case). Left as a lead for a future pass with photos or a site visit that can describe what makes any one of them distinct.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nrs 1680249, 1680251, 1695440, 1695441"]
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "name": "Gewone plataan, Julianahof",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": {
+        "address": "Julianahof 1 t/m 18, achterterrein van voormalige HBS, Eindhoven",
+        "latitude": 51.438061, "longitude": 5.470149
+      },
+      "reason": "LRMB register nr 1687352 marks this tree visitable='nee' and visible='nee' itself: it stands on the rear grounds of a former secondary school (HBS), now converted to eighteen private apartments. Not open to the public; hard rule 10.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1687352"]
+    },
+    {
+      "name": "Zomereik, Sint Trudo churchyard edge",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location": {
+        "address": "Strijpsestraat 129, achter de Sint Trudokerk aan de bosrand, Eindhoven",
+        "latitude": 51.440533, "longitude": 5.456652
+      },
+      "reason": "LRMB register nr 1690287 marks this tree visitable='nee' and visible='nee': it stands at the edge of woodland behind the church, not the public part of the churchyard. Not open to the public; hard rule 10.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1690287"]
+    },
+    {
+      "name": "Bruine beuk, Sint Trudo churchyard edge",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "location": {
+        "address": "Strijpsestraat 129, aan de bosrand, Eindhoven",
+        "latitude": 51.440189, "longitude": 5.456751
+      },
+      "reason": "LRMB register nr 1695443 marks this tree visitable='nee' and visible='nee', same bosrand (woodland edge) as the Zomereik above. Not open to the public; hard rule 10.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1695443"]
+    },
+    {
+      "name": "Witte paardenkastanje, Sint Trudo churchyard edge",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "location": {
+        "address": "Strijpsestraat 129, aan bosrand, Eindhoven",
+        "latitude": 51.440385, "longitude": 5.45682
+      },
+      "reason": "LRMB register nr 1695442 marks this tree visitable='nee' and visible='nee', same bosrand as the two entries above. Not open to the public; hard rule 10.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1695442"]
+    },
+    {
+      "name": "Hemelboom kerkhof Sint Trudo",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "location": {
+        "address": "Strijpsestraat 129, bosrand ten zuiden van Sint Trudokerk, Eindhoven",
+        "latitude": 51.440551, "longitude": 5.456129
+      },
+      "reason": "LRMB register nr 1692947 marks this tree visitable='nee' and visible='nee', same wooded church-grounds edge as the entries above. Not open to the public; hard rule 10.",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1692947"]
+    },
+    {
+      "name": "Bruine beuk grove, kerkhof Sint Trudokerk",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "location": {
+        "address": "Strijpsestraat 129, kerkhof Sint Trudokerk, Eindhoven",
+        "latitude": 51.440319, "longitude": 5.454955
+      },
+      "reason": "LRMB register nr 1680249 explicitly records n_trees=17 at this single point: a grove or hedge of copper beeches, not one identifiable tree. Not a collectible point (CLAUDE.md: an avenue or a whole wood is blocked, reason recorded).",
+      "sources_checked": ["data/registers/netherlands-lrmb.json nr 1680249"]
+    }
+  ]
 }

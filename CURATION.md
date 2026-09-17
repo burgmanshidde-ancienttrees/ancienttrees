@@ -18,6 +18,37 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 13) - Eindhoven verify pass merged, a species-page gap the Alkmaar fix earned
+
+The Eindhoven verify pass dispatched in continuation 12 came back with 5
+trees, all in a new **Villapark** cluster (~250m span, a protected 1907
+garden suburb Philips built for its executives), distinct from the 16
+already-published trees. Three double-sourced against the city's own
+separate street-tree management inventory (a horse chestnut, a Caucasian
+wingnut, a pin oak, agreeing within 2-5 metres each); two single-sourced
+and flagged honestly (a catalpa on Julianastraat with no house number in
+the register, a second horse chestnut at Palingstraat). Wrote all five
+stories and recognition lines directly rather than dispatching a
+write-stories pass for five trees, taking care to distinguish the two
+Prinsenhof trees and the two horse chestnuts from each other by name and
+location, since the district plants several of the same species close
+together. Merged (**Eindhoven 16 -> 21**), updated the count promises
+(intro, meta description, question meta, the "free to visit" FAQ), and
+folded the new cluster into the existing "Philips trees" framing since
+Villapark literally is one. Six more candidates went to
+`data/leads/eindhoven.json` as leads or blocked (an avenue, a 17-tree
+grove, four trees the register itself marks not visible/visitable).
+Released the claim.
+
+Also wrote a species page continuation 12's fix earned: renaming
+Alkmaar's alk_009 from "Silver Lime" to the canonical "Weeping Silver
+Lime" (hard rule 9) pushed that cultivar to exactly 3 trees sitewide
+(Alkmaar, Ghent, Maastricht), which is pagegaps.py's threshold for a
+Contract F species page. Wrote `data/species/weeping-silver-lime.json`
+from those three trees' own facts (P3): each planted by a park designer
+specifically for the wind-shimmer effect, a detail all three stories
+already carried independently. Build and preflight clean throughout.
+
 ## 2026-09-17 (continuation 12) - Alkmaar write claim finished, Eindhoven verify dispatched
 
 Resumed a window an earlier attempt stopped in with two claims standing
