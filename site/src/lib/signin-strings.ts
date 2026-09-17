@@ -47,6 +47,10 @@ export interface SignInStrings {
    *  where APPLE_SIGNIN is on, and it is filled in every language regardless,
    *  so the day that flag flips no reader meets an English button. */
   apple: string;
+  /** The grey button that reveals the typed route, AllTrails' "Meer opties".
+   *  It hides the email field until somebody asks for it, which is what keeps
+   *  the closed sheet down to two choices. */
+  more: string;
   or: string;
   app: string;
   /** What we store, plus the Terms and Privacy links. Both anchors required. */
@@ -73,6 +77,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "Email me a sign-in link",
     google: "Continue with Google",
     apple: "Continue with Apple",
+    more: "More options",
     or: "or",
     app: "Get the app",
     // An absolute about what we hold stood here until 2026-08-28, and it had
@@ -96,6 +101,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "Envíame un enlace de acceso",
     google: "Continuar con Google",
     apple: "Continuar con Apple",
+    more: "Más opciones",
     or: "o",
     // Read "Consigue acceso anticipado" until 2026-09-02, which is "Get early
     // access". Hidde changed the English back to "Get the app" on 2026-08-24
@@ -118,6 +124,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "Inviami un link di accesso",
     google: "Continua con Google",
     apple: "Continua con Apple",
+    more: "Altre opzioni",
     or: "o",
     app: "Scarica l'app",
     fine: 'Conserviamo il tuo indirizzo email e quello che raccogli: gli alberi che salvi e quelli che fotografi. Continuando accetti i <a href="/terms">Termini</a> e l\'informativa sulla <a href="/privacy">Privacy</a>.',
@@ -137,6 +144,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "Mail me een inloglink",
     google: "Doorgaan met Google",
     apple: "Doorgaan met Apple",
+    more: "Meer opties",
     or: "of",
     app: "Download de app",
     fine: 'We bewaren je e-mailadres en wat je verzamelt: de bomen die je bewaart en de bomen die je fotografeert. Als je doorgaat ga je akkoord met de <a href="/terms">Voorwaarden</a> en de <a href="/privacy">Privacyverklaring</a>.',
@@ -156,6 +164,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "Schick mir einen Anmeldelink",
     google: "Weiter mit Google",
     apple: "Weiter mit Apple",
+    more: "Weitere Optionen",
     or: "oder",
     app: "App laden",
     fine: 'Wir speichern deine E-Mail-Adresse und was du sammelst: die Bäume, die du speicherst, und die, die du fotografierst. Wenn du fortfährst, stimmst du den <a href="/terms">AGB</a> und der <a href="/privacy">Datenschutzerklärung</a> zu.',
@@ -175,6 +184,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "Envia-me um link de acesso",
     google: "Continuar com Google",
     apple: "Continuar com Apple",
+    more: "Mais opções",
     or: "ou",
     app: "Obter a app",
     fine: 'Guardamos o teu endereço de email e o que colecionas: as árvores que guardas e as que fotografas. Ao continuares, aceitas os <a href="/terms">Termos</a> e a <a href="/privacy">Privacidade</a>.',
@@ -194,6 +204,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "Envoyez-moi un lien de connexion",
     google: "Continuer avec Google",
     apple: "Continuer avec Apple",
+    more: "Plus d'options",
     or: "ou",
     app: "Télécharger l'app",
     fine: 'Nous conservons votre adresse email et ce que vous collectionnez : les arbres que vous enregistrez et ceux que vous photographiez. En continuant, vous acceptez les <a href="/terms">Conditions</a> et la <a href="/privacy">Confidentialité</a>.',
@@ -213,6 +224,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     send: "サインインのリンクを送る",
     google: "Googleで続ける",
     apple: "Appleで続ける",
+    more: "その他の方法",
     or: "または",
     app: "アプリを入手",
     fine: '私たちが保管するのは、メールアドレスと、集めたもの、つまり保存した木と撮影した木である。続けると<a href="/terms">利用規約</a>と<a href="/privacy">プライバシー</a>に同意したことになる。',

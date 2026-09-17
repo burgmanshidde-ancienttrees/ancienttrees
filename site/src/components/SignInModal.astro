@@ -45,35 +45,55 @@ const T = signInCopy(lang);
 ---
 <dialog id="signin-dialog" class="collect-dialog signin-dialog">
   <button type="button" class="signin-close" id="signin-close" aria-label={T.close}>&#10005;</button>
-  <p class="signin-mark" aria-hidden="true">&#127795;</p>
   <div id="signin-ask">
+    {/* The mark is the APP ICON, at the size AllTrails draws theirs. It was a
+    28px emoji until 2026-09-17, which reads as a placeholder rather than as a
+    product, and it was the first thing on the screen. */}
+    <img class="signin-icon" src="/assets/app-icon.png" alt="" width="104" height="104" loading="lazy" />
     <h3 id="signin-title" data-generic={T.title} data-feedback={T.titleFeedback}>{T.title}</h3>
     <p id="signin-sub" data-generic={T.sub} data-named={T.subNamed} data-feedback={T.subFeedback}>{T.sub}</p>
-    {/* Apple above Google, both above the typed route, which is the order the
-    app's sheet already uses and the order every consumer app has settled on:
-    the taps first, the typing second. Apple's own guidelines add a rule of
-    their own here, that their button is shown at least as prominently as the
-    others, and filled-black above an outlined Google satisfies it rather than
-    merely dodging it.
 
-    It renders only once the Services ID and signing key exist in Hidde's
-    Apple account; site-config.ts carries the flag and the two consoles he has
-    to visit. A button that cannot complete is worse than a missing one. */}
-    {APPLE_SIGNIN && (
-      <button type="button" class="oauth-btn oauth-apple" id="signin-apple"><svg class="oauth-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 12.04c-.02-2.4 1.96-3.55 2.05-3.6-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.46 0 1.87.78 3.14.76 1.3-.02 2.12-1.18 2.91-2.34.92-1.34 1.3-2.64 1.32-2.71-.03-.01-2.53-.97-2.55-3.85z"/><path fill="currentColor" d="M14.72 4.7c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.63-2.8 1.43-.61.71-1.15 1.85-1.01 2.94 1.07.08 2.15-.54 2.82-1.34z"/></svg><span>{T.apple}</span></button>
+    {/* ONE dark button, then everything else quiet. That is the whole shape
+    Hidde asked for from AllTrails' own sheet, and the thing our version got
+    wrong: it had a black Apple button and a green send button of equal weight,
+    so nothing was the answer. The dark slot holds the strongest tap route
+    available, which is Apple where it is switched on and Google where it is
+    not; both providers publish a dark button, so neither is being restyled
+    against its own guidelines. Apple's rule that its button be at least as
+    prominent as the others is satisfied by it being the only filled one. */}
+    {APPLE_SIGNIN ? (
+      <button type="button" class="oauth-btn oauth-loud" id="signin-apple"><svg class="oauth-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 12.04c-.02-2.4 1.96-3.55 2.05-3.6-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.46 0 1.87.78 3.14.76 1.3-.02 2.12-1.18 2.91-2.34.92-1.34 1.3-2.64 1.32-2.71-.03-.01-2.53-.97-2.55-3.85z"/><path fill="currentColor" d="M14.72 4.7c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.63-2.8 1.43-.61.71-1.15 1.85-1.01 2.94 1.07.08 2.15-.54 2.82-1.34z"/></svg><span>{T.apple}</span></button>
+    ) : (
+      <button type="button" class="oauth-btn oauth-loud" id="signin-google"><svg class="oauth-mark" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.9 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg><span>{T.google}</span></button>
     )}
-    {/* Google publishes this mark and its guidelines, so the button uses
-    the asset rather than a pill with the words alone. CONVENTIONS.md,
-    "A sign-in button": the provider ships it, use it. Hidde made this
-    correction on 2026-08-20 and it was applied to the iOS app and not
-    here, so the web button stayed a bare pill for a fortnight. */}
-    <button type="button" class="oauth-btn" id="signin-google"><svg class="oauth-mark" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.9 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg><span>{T.google}</span></button>
-    <p class="signin-or">{T.or}</p>
-    <form id="signin-form" class="signin-form" autocomplete="email">
-      <input type="email" id="signin-email" placeholder={T.placeholder} aria-label={T.emailLabel} required>
-      <button type="submit" class="go-btn">{T.send}</button>
-    </form>
-    <a class="signin-applink" href="/app" data-ev="app-cta">{T.app}</a>
+
+    {/* A rule with the word sitting in it, rather than a word floating between
+    two gaps. */}
+    <p class="signin-rule"><span>{T.or}</span></p>
+
+    {APPLE_SIGNIN && (
+      <button type="button" class="oauth-btn oauth-quiet" id="signin-google"><svg class="oauth-mark" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.9 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg><span>{T.google}</span></button>
+    )}
+
+    {/* The typed route waits behind this, which is how the closed sheet stays
+    at two choices. It is NOT the "More options" removed on 2026-08-20: that one
+    was a link to /account carrying the same single option, a fork in a road
+    somebody was already walking down. This one opens in place and reveals
+    something the sheet does not already show. */}
+    <button type="button" class="oauth-btn oauth-quiet" id="signin-more"><span>{T.more}</span></button>
+
+    <div id="signin-rest" hidden>
+      <form id="signin-form" class="signin-form" autocomplete="email">
+        <input type="email" id="signin-email" placeholder={T.placeholder} aria-label={T.emailLabel} required>
+        <button type="submit" class="oauth-btn oauth-quiet"><span>{T.send}</span></button>
+      </form>
+      <a class="signin-applink" href="/app" data-ev="app-cta">{T.app}</a>
+    </div>
+
+    {/* Stays, and stays whole. AllTrails' sheet carries no small print at all
+    and ours cannot copy that: this sentence is our statement of what personal
+    data we hold, and CLAUDE.md forbids softening or shortening it. What it can
+    do is stop shouting, which is all that changed. */}
     <p class="signin-fine" set:html={T.fine}></p>
   </div>
   <div id="signin-sent" hidden>
