@@ -27,6 +27,15 @@ The three faults, in the vocabulary both checks now print:
   SMALL     a control under Apple's 44 by 44 point minimum. Not a matter of
             taste; it is somebody's thumb missing the button three times.
 
+  BAND      a page whose top-level sections do not share one left edge, at any
+            distance. The website only: a web page is a stack of full-width
+            bands down one column, and the app's screens are not. It is the
+            rule DRIFT cannot state, because DRIFT only looks at near misses
+            on purpose and a band that invents its own gutter usually misses by
+            a lot. Added 2026-09-17, when Hidde found the footer sitting 24px
+            further in than the page above it on all 5,500 pages; see the note
+            over ALIGN_HARNESS in smoke_test.py for what it exempts and why.
+
 Removing one of these checks needs Hidde, same as every other ratchet check.
 """
 

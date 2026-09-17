@@ -3,6 +3,7 @@
 // MapLibre from a CDN, matching the current site exactly rather than going
 // through the bundled npm package (see site-config.ts's note on MAPLIBRE_JS).
 import {MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE, MAP_CREDIT} from "./site-config";
+import { NO_PHOTO_CARD } from "./images";
 
 /** MapLibre, loaded without blocking the page.
  *
@@ -418,7 +419,10 @@ window.atRefilterMap = applyFilters;
 // cities in view, most likely first, and every click goes straight there.
 var panel = document.getElementById('ex-panel');
 function fmtCard(c) {
-  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '"' + (c.ph2 ? ' srcset="' + c.ph2 + '"' : '') + ' alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
+// The no-photo drawing is interpolated at BUILD time, so the script text that
+// ships still carries no import: one drawing for every card on the site, rather
+// than the empty beige rectangle this line used to emit (2026-09-17).
+  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '"' + (c.ph2 ? ' srcset="' + c.ph2 + '"' : '') + ' alt="" loading="lazy"></span>' : '${NO_PHOTO_CARD}';
   return '<a class="exc-card" href="' + c.url + '">' + ph +
          '<span class="exc-body"><b>' + c.city + '</b>' +
          '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';
