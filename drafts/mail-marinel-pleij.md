@@ -8,9 +8,9 @@ https://ancienttrees.app/nl/amsterdam. Groningen komt eraan. De app is nu nog
 Engels, die volgt later.
 
 De foto's zijn inderdaad het grootste gat. Daar is de app juist voor gemaakt:
-mensen kunnen zelf een foto van een boom toevoegen, want in mijn eentje krijg
-ik dit nooit gevuld. Wat er binnenkomt bekijk ik en de goede komen op de
-pagina van die boom te staan.
+mensen kunnen zelf een foto toevoegen, en ook een boom die er nog niet op
+staat. In mijn eentje krijg ik dit nooit gevuld. Wat er binnenkomt bekijk ik
+zelf en de goede komen op de site.
 
 Ik ben benieuwd wat je van de Groningse bomen vindt. Mis je er bomen? En heb
 je zelf mooie foto's? Die zet ik er graag bij, met je naam erbij als je dat
