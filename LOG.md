@@ -12,6 +12,36 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 6, previous attempt in this window stopped after 8 min with 112 min unspent) - Enschede 12 -> 13, and confirmed both rung-2 alerts are known non-issues
+
+Followed the harness's own order. **Claims first:** one claim standing,
+Enschede, and unlike a bare claim with no output, an earlier attempt this
+window had already finished the verify work and left it on disk uncommitted
+(`data/research/enschede-verified.json`, one candidate). Finished it rather
+than releasing it empty: merged ens_013, "The Sweet Birch of the
+Oosterbegraafplaats" (Betula lenta, LRMB register nr 1692854, dendrological
+grounds, no age), the fourth register tree on the same Oosterbegraafplaats
+cemetery as ens_008/009/010. Wrote the story myself (one tree, below the
+six-candidate write-pass floor). Fixed enschede.json's meta_description and
+question_meta, which still said twelve trees. Full write-up in CURATION.md.
+
+`leads.py --ready` was checked but the window closed on the claim work
+before reaching it (a fresh `npm install` plus a full `astro build` for QA
+verification took most of the remaining time; site/ had no node_modules
+this session).
+
+**Checked, not re-investigated, the two rung-2 alerts from session start.**
+Weekly analysis's 2026-09-14 failure is the documented usage-limit-death
+fingerprint (1 turn, 0 cost, sub-second) and `scripts/health.py` already
+says so; nothing to do until a full window passes still failing. The iOS
+app's newest failure (2026-09-16) is the same already-documented flaky tap
+race in `FlowWalk.swift`, FOR HIDDE since it needs a workflow-scoped push
+token this bot's does not have, reconfirmed as recently as 2026-09-16.
+Neither needed new work this run.
+
+`preflight.py`, `superlatives.py` and `qa.py` (against a full rebuild) all
+pass clean.
+
 ## 2026-09-17 (continuation 5, previous attempt in this window stopped after 32 min with 88 min unspent) - Florence 26 -> 27, and city_queue.py stops re-recommending settled dead ends
 
 Followed the harness's own order. **Claims first:** an earlier attempt this

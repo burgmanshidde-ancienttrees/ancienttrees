@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Enschede's old trees were bought by textile money. Van Heek, Blijdenstein, Ledeboer: the families who ran the mills built estates on the edge of town, hired the best garden architects in the country and planted them, and the city later absorbed the results as public parks. One invoice survives. In 1865 D. Wattez billed H. J. van Heek for a Wellingtonia as part of the planting around 't Wageler, and the two men wrote to each other about the price. That giant sequoia is still standing in the Ledeboerpark, which is the closest thing this page has to a receipt.",
-  "meta_description": "Twelve remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
-  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and eleven more worth the walk.",
+  "meta_description": "Thirteen remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
+  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and twelve more worth the walk.",
   "question_answer": "The oldest tree in Enschede is the oak on 't Zeggelt, in the Lasonder-Zeggelt district, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It has a name of its own in the city, De Eik op 't Zeggelt, and it stands in public planting rather than on any estate, which is unusual here: almost every other old tree in Enschede is a survivor of a nineteenth century textile family's grounds. The register gives it a coordinate to six decimal places, which is the sort of precision that means somebody stood at the trunk with a receiver rather than pointing at an address.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. The giant sequoia in the Ledeboerpark is the exception worth naming: the register cites a document in the archive of the Twente textile families recording correspondence in 1866 between H. J. van Heek and the garden architect D. Wattez about the price of a Wellingtonia, on an invoice for planting around 't Wageler in 1865. That is a documented purchase rather than an estimate, and it is why this page can be more confident about that tree than about any other on it. Where a pin is marked approximate we know the grounds and not the trunk.",
   "hero_tree_id": "ens_001",
@@ -410,6 +410,37 @@
       "curation_status": "flagged",
       "story": "A full-grown elm in a Dutch street is rarer than it looks. The disease that carries the country's name was first described here in the 1920s, named after the Dutch pathologists who worked it out rather than after the tree, and it went on to kill the great majority of the elms in the Netherlands. This one, which the Bomenstichting register dates to between 1880 and 1890, is still standing.\n\nUlmus x hollandica is a cross between wych elm and field elm, and it was the workhorse tree of the Low Countries: planted along dykes, quays and town streets by the thousand because it tolerates wind, salt and heavy clay. Most of that planting is gone. The survivors tend to be single trees in odd corners rather than the avenues they were meant to be.\n\nThe register gives this elm the same 1880 to 1890 band as the silver lime about thirty metres away and calls both monumental. Whether the two went in together is not recorded; the history field for each of them is blank, and the register is the only source that names either. The pair make a short stop about a kilometre north of Enschede station, on the edge of Roombeek, where almost everything else on the street is newer than they are.",
       "how_to_recognise": "You can recognise it by the leaves, rough as sandpaper and lopsided where they meet the stalk, one side of the base set lower than the other. It stands about thirty metres from the silver lime on the same corner.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ens_013",
+      "name": "The Sweet Birch of the Oosterbegraafplaats",
+      "species": "Sweet Birch (Betula lenta)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 234,
+      "location": {
+        "address": "Oosterbegraafplaats, northern main path, towards the back on the left, Noord Esmarkerrondweg 407, Enschede",
+        "latitude": 52.222483,
+        "longitude": 6.934562,
+        "neighbourhood": "Oosterbegraafplaats"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692854",
+        "https://www.monumentaltrees.com/nl/nld/overijssel/enschede/2859_oosterbegraafplaats/15512/"
+      ],
+      "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
+      "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. Same cemetery as ens_008, ens_009 and ens_010.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Snap a twig off this birch and it smells of wintergreen, sharp and sweet, the same oil that once flavoured birch beer and root beer before chemists learned to make it without bark. That is where the name comes from: Betula lenta is sweet birch, one of the few trees whose common name describes a smell rather than a look.\n\nThe Bomenstichting register lists it here on dendrological grounds, the same reason it gives for the Hungarian oak, the sweet gum and the Oriental spruce standing nearby in the same cemetery: a fine, uncommon specimen rather than a documented age. This one carries a substantial trunk for its species, measured at 2.34 metres round and about 18 metres tall, a figure an independent count of the cemetery's trees agrees with. Neither record gives a planting date.\n\nSweet birch's native range is the Appalachians and the hardwood forests of the eastern United States, where its sap was once tapped and boiled down much like a sugar maple's, for a syrup that tastes faintly of mint. In Enschede it stands towards the back of the northern main path of a rijksmonument cemetery laid out in 1899, the fourth tree from this one corner of ground to earn a place on the national register.\n\nIf anyone knows when it was planted, we would like to hear it.",
+      "how_to_recognise": "You can recognise it by the bark, dark and cherry-like rather than white, and by the wintergreen smell released when a twig is snapped. It stands towards the back of the northern main path, on the left.",
       "photo": {
         "url": null,
         "license": null,
