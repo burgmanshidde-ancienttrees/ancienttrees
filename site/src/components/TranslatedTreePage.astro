@@ -26,6 +26,7 @@ import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema
 import { locationIsApproximate, metaForTree, girthLabel } from "../lib/tree-copy";
 import { mapHead, singlePinScript } from "../lib/map";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
+import { cityHasQuestionPage } from "../lib/question-page";
 import { hasWalksPage } from "../lib/city-walks";
 import { treeSources } from "../lib/tree-sources";
 
@@ -45,6 +46,8 @@ interface Props {
 const { lang, city, tree, x, allTrees, tr } = Astro.props as Props;
 const U = ui(lang);
 const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
+// Contract B v1.18, in every language: a one-tree place has no question page.
+const cityHasQuestion = cityHasQuestionPage(allTrees.length);
 
 const cslug = city.id;
 // The walk link opens the app overlay, since 2026-09-02 (Hidde: "stuur ze
@@ -249,7 +252,7 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       <h2>{U.discoverMore}</h2>
       <div class="dm-chips">
         <a class="dm-chip" href={`/${lang}/${cslug}`}>{U.allTreesLink(allTrees.length, tr.city)}</a>
-        <a class="dm-chip" href={`/${lang}/${cslug}/${qslug}`}>{U.whichIsOldest(tr.city)}</a>
+        {cityHasQuestion && <a class="dm-chip" href={`/${lang}/${cslug}/${qslug}`}>{U.whichIsOldest(tr.city)}</a>}
       </div>
     </section>
     {/* The app block, in this language since 2026-09-12. It was the one

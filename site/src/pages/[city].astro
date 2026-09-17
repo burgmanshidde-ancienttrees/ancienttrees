@@ -7,7 +7,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import { checkCountPromises } from "../lib/count-promises";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, type CityEntry } from "../lib/trees";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, hasQuestionPage, type CityEntry } from "../lib/trees";
 import { speciesCommon, speciesPageSlugs } from "../lib/species";
 import { usablePhoto, metaImageUrls, ogImageUrl, cityFaceTree } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
@@ -81,6 +81,8 @@ const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
 const trees = renderableTrees(city);
+// Contract B v1.18: a one-tree place has no question page to link to.
+const cityHasQuestion = hasQuestionPage(city);
 const canonical = `${BASE_URL}/${cslug}`;
 const tslugs = treeSlugsForCity(city);
 
@@ -300,8 +302,12 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
               <dd>{f.a}</dd>
             </Fragment>
           ))}
-          <dt>More on the oldest tree</dt>
-          <dd><a href={`/${cslug}/oldest-tree`}>What is the oldest tree in {cityName}?</a> The full answer, with map and directions.</dd>
+          {cityHasQuestion && (
+            <Fragment>
+              <dt>More on the oldest tree</dt>
+              <dd><a href={`/${cslug}/oldest-tree`}>What is the oldest tree in {cityName}?</a> The full answer, with map and directions.</dd>
+            </Fragment>
+          )}
           {citySpeciesLinks.length > 0 && (
             <Fragment>
               <dt>Species on this list</dt>

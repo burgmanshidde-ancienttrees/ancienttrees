@@ -1,6 +1,65 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session with Hidde) - Question pages retired on one-tree places, Contract B v1.18
+
+He pasted the Search Console "crawled, currently not indexed" report: 36 URLs,
+validation started 10-09 and failed 15-09. The diagnosis, checked against the
+data rather than guessed:
+
+| Kind | Count | Verdict |
+|---|---|---|
+| Tree pages | 17 | 15 of 17 have no photograph; stories 169-249 words; none carries a recognition line |
+| Places with 1-2 trees | 6 | Three URLs paraphrasing one tree |
+| 4-5 tree city pages | 3 | Same cause, milder |
+| Bigger city pages | 5 | Young, no authority |
+| Question pages | 2 | Same as the one-tree case |
+| `/contribute?kind=correction&...` | 1 | Correct outcome, canonical already handles it |
+| `/api/cards.json`, `/feed.xml` | 2 | Correct outcome, neither should ever be indexed |
+
+Nothing was broken. 36 of ~5,000 URLs is 0.7 percent, and the graph he sent
+shows it near 90 in the summer, so the headline number was not the story.
+
+**The structural finding: 328 of 609 published places hold exactly one tree**,
+and each publishes a city page, a tree page and a question page. Lebec spends
+87 words of intro, 139 of question_answer, 193 of question_context and 234 of
+story on one valley oak, every one of them naming the same grizzly, the same
+bark and the same entry fee. All of it passes P3 and none of it is templated;
+it still reads to a crawler as three pages about one thing. That is ~650
+surplus URLs spending the crawl budget of a site with no backlinks.
+
+**His ruling:** "ze verdienen ze niet - maar uiteindelijk komen er meer bomen
+in grote steden - in afgelegen plekken weghalen." Built the same session,
+blueprint bumped to v1.18 (hard rule 7 satisfied: his approval plus a
+changelog entry).
+
+- **The rule is the tree count and nothing else**, in `site/src/lib/question-page.ts`,
+  dependency-free so redirect-map.ts can read it too. A place that grows to a
+  second tree gets its page back on the next build. No list to maintain, which
+  is what the second half of his sentence asks for.
+- **281 question pages build, 328 retired**, and every retired URL resolves,
+  landing on the tree page rather than the city page because that is the answer
+  to the question the visitor asked. Hard rule 3, same treatment /[city]/walks got.
+- **All seven languages in the same change**, though no translated city is on
+  one tree today, so that half is a guard rather than a fix.
+- **`check_one_tree_places_have_no_question_page()` in qa.py** is the ratchet:
+  it refuses a built question page under the threshold, a retired URL that stops
+  resolving, and a live link into one. Both failure modes were tested red before
+  the change was called done.
+- **preflight still requires question_answer/question_context on one-tree
+  places**, deliberately. Relaxing it would move a build failure onto whichever
+  future commit adds that place's second tree.
+
+QA passes on 9,215 pages, preflight 609 cities 0 problems, paritycheck and
+crosscheck clean.
+
+FOR HIDDE: this sits on `claude/blissful-cray-9dppia`, not on main, so it has
+not deployed. Merge it when you want it live.
+
+Not done, and it is the other half of the same report: **none of the 17 tree
+pages carries a recognition line**, which is rung 7 and the cheapest unique
+text we have. Left for a run.
+
 ## 2026-09-17 (session with Hidde) - His Kyoto sighting now points at the muku
 
 On his "punt 2 doe dat maar": sighting 84ebae36 moved from kyo_016 (the Sudajii) to kyo_019 (the Twisted Muku of Omiya Gate) in Supabase, name included, with a fresh `updated_at` so the sync fix of 2026-09-12 takes it on his phone.
