@@ -18,6 +18,20 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 15) - Alkmaar's photo hunt is an exhausted, documented gap
+
+`photo_hunt.py --recheck` restocked candidates for Alkmaar (14 trees, zero
+photos, well clear of the 5-tree floor for the standing one-photo-per-city
+aim): 8 new candidates across alk_009, alk_010 and alk_012. Fetched and
+viewed all 8 against the Cadiz standard. None qualify: two are archival
+black-and-white building-facade photos misfiled under the street address,
+three are wide winter canal/park views with no single tree as the subject,
+two are frozen-canal scenery with a tree only as a framing element, one is
+a building with no tree visible at all. All 8 recorded as `reject` via
+`photo_verdicts.py`. Alkmaar stays photo-less; do not re-run this hunt
+without a genuinely new source (a reader submission, or Wikimedia gaining
+new uploads for these specific addresses).
+
 ## 2026-09-17 (continuation 14) - Finished two stranded verify passes: Mishima folded into Atami, Zarzecze published standalone, Mielnik held
 
 Two verify claims (`_famous-japan`, `_famous-poland`) sat finished but
