@@ -10,6 +10,7 @@ import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema
 import { fitTitle } from "../lib/title";
 import { byCityListOrder } from "../lib/city-order";
 import { browseCard, collectionFace } from "../lib/browse-card";
+import { collectionEntries } from "../lib/collection-rank";
 
 const allCities = (await getCollection("cities")).filter(cityIsRenderable);
 const citiesBySlug = new Map(allCities.map((c) => [c.id, c]));
@@ -22,13 +23,18 @@ const title = fitTitle(["Collections: Remarkable Trees by Theme"], canonical);
 const description = "Hand-curated lists that cut across cities: the oldest, the strangest, the ones worth a detour. Every entry links to a verified tree.";
 const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Collections", null]];
 
+// A generated collection carries an empty `entries` array on disk and computes
+// its list at build time, so the count and the face come from what the
+// collection actually holds. Reading the file's own array printed "0 trees, 0
+// cities" on four cards, under a placeholder where a photograph should be.
 const cards = collections.map((c) => {
-  const nCities = new Set(c.data.entries.map((e) => e.city_slug)).size;
+  const entries = collectionEntries(c, citiesBySlug);
+  const nCities = new Set(entries.map((e) => e.city_slug)).size;
   return browseCard(
     `/collections/${c.data.slug}`,
     c.data.title,
-    `${c.data.entries.length} trees &middot; ${nCities} cities`,
-    collectionFace(c.data.entries, citiesBySlug),
+    `${entries.length} trees &middot; ${nCities} cities`,
+    collectionFace(entries, citiesBySlug),
   );
 });
 
