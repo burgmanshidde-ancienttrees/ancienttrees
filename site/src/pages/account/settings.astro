@@ -22,8 +22,15 @@ import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { BASE_URL } from "../../lib/schema";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
+import { getCollection } from "astro:content";
+import { cityIsRenderable, renderableTrees } from "../../lib/trees";
 
 const canonical = `${BASE_URL}/account/settings`;
+// The same count every other page derives, from the same two helpers, so
+// this line cannot quietly disagree with the homepage.
+const treeCount = (await getCollection("cities"))
+  .filter(cityIsRenderable)
+  .reduce((n, c) => n + renderableTrees(c).length, 0);
 const crumbItems: [string, string | null][] = [
   ["Your trees", `${BASE_URL}/account`],
   ["Settings", null],
@@ -39,9 +46,18 @@ const crumbItems: [string, string | null][] = [
   <Breadcrumbs items={crumbItems} />
   <h1>Settings</h1>
 
+  {/* THE APP'S OWN ORDER (Hidde, 2026-09-17: "moet exact hetzelfde eruit zien
+      als app"). Screens/Profile.swift carries it and says why: who you are,
+      then what you can DO, then the quiet links, and only at the very bottom,
+      after everything else, sign out and delete.
+
+      What this page had instead: one card, then sign out as a small underlined
+      link and delete folded into a <details>. Two destructive controls dressed
+      as footnotes, which is the opposite of the app, where each is a full row
+      in a card of its own and delete is red. */}
   <p id="set-out" class="acct-sub" hidden>You are not signed in. <a href="/account">Sign in</a> to change anything here.</p>
 
-  <section id="set-in" class="acct-card" hidden>
+  <section id="set-in" hidden>
     <p class="acct-group">Account</p>
     <div class="acct-rows">
       <div class="acct-row">
@@ -59,22 +75,44 @@ const crumbItems: [string, string | null][] = [
       </div>
     </div>
 
+    {/* The app's contributeCard, which this page did not have at all. It is
+        where a submission can be FOUND, the moments that produce one living
+        elsewhere. */}
+    <p class="acct-group">Contribute</p>
+    <div class="acct-rows">
+      <a class="acct-row acct-linkrow" href="/contribute">Add a tree</a>
+      <a class="acct-row acct-linkrow" href="/contribute?kind=feedback">Send feedback</a>
+    </div>
+
     <p class="acct-group">About</p>
     <div class="acct-rows">
       <a class="acct-row acct-linkrow" href="/privacy">Privacy</a>
       <a class="acct-row acct-linkrow" href="/terms">Terms</a>
       <a class="acct-row acct-linkrow" href="/support">Support</a>
+      <a class="acct-row acct-linkrow" href="/sources">Sources</a>
     </div>
 
-    <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
+    <p class="acct-version">{treeCount} trees, updated every time this page is built.</p>
 
-    <details class="acct-danger" id="del-panel">
-      <summary>Delete account</summary>
-      <div class="acct-danger-body">
-        <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. Deleting your account removes all of it, and it cannot be undone.</p>
-        <button type="button" id="del-acct" class="acct-link danger">Delete my account</button>
-      </div>
-    </details>
+    {/* Each in its OWN card, as in the app, rather than a link and a
+        disclosure triangle. */}
+    <div class="acct-rows acct-rows-sep">
+      <button type="button" id="signout" class="acct-row acct-linkrow acct-rowbtn">Sign out</button>
+    </div>
+    <div class="acct-rows">
+      <button type="button" id="del-open" class="acct-row acct-linkrow acct-rowbtn danger">Delete account</button>
+    </div>
+
+    {/* ASKED TWICE, and the second one is typed rather than tapped, which is
+        the app's own rule (Hidde, 2026-08-31: "met twee keer vragen weet je het
+        zeker"). This page asked once, behind a disclosure triangle. A typed
+        word is a real second act rather than a second tap in the same place. */}
+    <div id="del-panel" class="acct-danger-body" hidden>
+      <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. Deleting your account removes all of it, and it cannot be undone.</p>
+      <label for="del-confirm">Type DELETE to confirm</label>
+      <input id="del-confirm" type="text" autocomplete="off" autocapitalize="characters" placeholder="DELETE" />
+      <button type="button" id="del-acct" class="go-btn danger" disabled>Delete my account</button>
+    </div>
   </section>
 </main>
 <Fragment slot="scripts" set:html={`
@@ -159,14 +197,23 @@ const crumbItems: [string, string | null][] = [
   // Account deletion: calls the delete_user() SECURITY DEFINER function in
   // Supabase (runs as owner, deletes the auth.users row for auth.uid() only).
   // Two deliberate clicks; no dialog dependency.
+  // ASKED TWICE, the second one TYPED, which is what the app does
+  // (Screens/Profile.swift, 2026-08-31). This page used to arm the same button
+  // twice in the same place, which is one act repeated rather than two acts.
+  var delOpen = document.getElementById("del-open");
+  var delPanel = document.getElementById("del-panel");
+  var delConfirm = document.getElementById("del-confirm");
   var delBtn = document.getElementById("del-acct");
-  var delArmed = false;
+  delOpen.addEventListener("click", function() {
+    delPanel.hidden = false;
+    delOpen.hidden = true;
+    delConfirm.focus();
+  });
+  delConfirm.addEventListener("input", function() {
+    delBtn.disabled = delConfirm.value.trim().toUpperCase() !== "DELETE";
+  });
   delBtn.addEventListener("click", function() {
-    if (!delArmed) {
-      delArmed = true;
-      delBtn.textContent = "This permanently deletes your account and email. Click again to confirm.";
-      return;
-    }
+    if (delConfirm.value.trim().toUpperCase() !== "DELETE") return;
     var cur = session();
     if (!cur) { location.href = "/account"; return; }
     fetch(SB + "/rest/v1/rpc/delete_user", { method: "POST",
