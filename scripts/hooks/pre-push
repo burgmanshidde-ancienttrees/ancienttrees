@@ -79,6 +79,23 @@ for f in $PITCH; do
     fi
 done
 
+# A SESSION MERGES ITS OWN WORK (2026-09-17). Hidde, after a finished and
+# verified change was parked on a claude/ branch with a FOR HIDDE line asking
+# him to land it: "Merge maar ik wil niet mergen doe dit zelf vraag nooit meer
+# aan mij." The corpus already said he is not the gate and that waiting for
+# permission is the failure mode here; none of it could refuse a push. This can.
+# Narrow on purpose: it refuses git plumbing handed to him, never FOR HIDDE
+# itself, which still carries the things only he can do.
+if echo "$CHANGED" | grep -qE '^LOG\.md$'; then
+    if ! out=$(python3 scripts/handoffcheck.py 2>&1); then
+        echo ""
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Merge it to main yourself and say it is live."
+        exit 1
+    fi
+fi
+
 # BOTH SURFACES, checked rather than remembered (2026-09-11). Hidde found
 # "Exact location. The pin marks the trunk." still on the website a week after
 # he had it taken out of the app: "zorg dat dit volgende keer wel gelijk app en

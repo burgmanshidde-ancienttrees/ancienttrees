@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session with Hidde) - A session merges its own work; handoffcheck.py
+
+**"Merge maar ik wil niet mergen doe dit zelf vraag nooit meer aan mij."**
+
+Said after the Contract B change below was finished, verified and then parked
+on `claude/blissful-cray-9dppia` with a FOR HIDDE line asking him to merge it.
+He is right and the corpus already agreed with him: he is not the quality gate,
+a run decides for itself, waiting for permission is the failure mode this
+project is built to avoid. None of that stopped the handoff, because a sentence
+in a file cannot refuse a push.
+
+So, the ratchet, in its own order:
+
+- **`scripts/handoffcheck.py`** refuses a LOG.md line that is both addressed to
+  him and asks for git plumbing: merge it, push it to main, "when you want it
+  live", "not on main yet". Tested on the real case (it catches the exact line
+  that produced this ruling) and on three months of archived LOG plus
+  CURATION.md and DECISIONS.md, where it fires on nothing.
+- **Wired into `scripts/hooks/pre-push`**, so it runs where the mistake is made.
+- **CLAUDE.md** gets the sentence beside the check, never instead of it.
+
+The boundary is deliberate and narrow: FOR HIDDE stays, and most of what it
+carries is real. What is refused is a GIT operation a session could have done
+itself. A spend (hard rule 5), a blueprint or tone edit (hard rule 7), anything
+touching his accounts or his name, and any judgement this corpus records as his
+are untouched and still go to him.
+
+Done the same session: merged main (night run: Houston, Vancouver, the Mexican
+White Oak species page) and pushed Contract B v1.18 to main. Rebuilt and
+re-verified on the exact pushed tree, because new cities change which places
+stand on one tree: QA passed 9,221 pages, preflight 609 cities 0 problems.
+
 ## 2026-09-17 (session with Hidde) - Question pages retired on one-tree places, Contract B v1.18
 
 He pasted the Search Console "crawled, currently not indexed" report: 36 URLs,
@@ -53,8 +85,8 @@ changelog entry).
 QA passes on 9,215 pages, preflight 609 cities 0 problems, paritycheck and
 crosscheck clean.
 
-FOR HIDDE: this sits on `claude/blissful-cray-9dppia`, not on main, so it has
-not deployed. Merge it when you want it live.
+**Live on main.** The first version of this entry parked the work on a branch
+and asked him to land it, which produced the ruling below.
 
 Not done, and it is the other half of the same report: **none of the 17 tree
 pages carries a recognition line**, which is rung 7 and the cheapest unique
