@@ -52,6 +52,9 @@ export interface SignInStrings {
   appTitle: string;
   /** Their "Ga verder in de app": the loud button on a phone. */
   openApp: string;
+  /** Their "Verdergaan met e-mail": a BUTTON on the second screen, not a
+   *  field. The field only appears once somebody has asked for it. */
+  emailBtn: string;
   /** The grey button that reveals the typed route, AllTrails' "Meer opties".
    *  It hides the email field until somebody asks for it, which is what keeps
    *  the closed sheet down to two choices. */
@@ -84,6 +87,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Continue with Apple",
     appTitle: "Ancient Trees works better in the app",
     openApp: "Continue in the app",
+    emailBtn: "Continue with email",
     more: "More options",
     or: "or",
     app: "Get the app",
@@ -110,6 +114,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Continuar con Apple",
     appTitle: "Ancient Trees funciona mejor en la app",
     openApp: "Continuar en la app",
+    emailBtn: "Continuar con email",
     more: "Más opciones",
     or: "o",
     // Read "Consigue acceso anticipado" until 2026-09-02, which is "Get early
@@ -135,6 +140,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Continua con Apple",
     appTitle: "Ancient Trees funziona meglio nell'app",
     openApp: "Continua nell'app",
+    emailBtn: "Continua con l'email",
     more: "Altre opzioni",
     or: "o",
     app: "Scarica l'app",
@@ -157,6 +163,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Doorgaan met Apple",
     appTitle: "Ancient Trees werkt beter in de app",
     openApp: "Ga verder in de app",
+    emailBtn: "Verdergaan met e-mail",
     more: "Meer opties",
     or: "of",
     app: "Download de app",
@@ -179,6 +186,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Weiter mit Apple",
     appTitle: "Ancient Trees funktioniert besser in der App",
     openApp: "Weiter in der App",
+    emailBtn: "Weiter mit E-Mail",
     more: "Weitere Optionen",
     or: "oder",
     app: "App laden",
@@ -201,6 +209,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Continuar com Apple",
     appTitle: "O Ancient Trees funciona melhor na app",
     openApp: "Continuar na app",
+    emailBtn: "Continuar com email",
     more: "Mais opções",
     or: "ou",
     app: "Obter a app",
@@ -223,6 +232,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Continuer avec Apple",
     appTitle: "Ancient Trees fonctionne mieux dans l'app",
     openApp: "Continuer dans l'app",
+    emailBtn: "Continuer avec l'e-mail",
     more: "Plus d'options",
     or: "ou",
     app: "Télécharger l'app",
@@ -245,6 +255,7 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     apple: "Appleで続ける",
     appTitle: "Ancient Trees はアプリのほうが快適",
     openApp: "アプリで続ける",
+    emailBtn: "メールで続ける",
     more: "その他の方法",
     or: "または",
     app: "アプリを入手",
