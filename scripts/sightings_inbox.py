@@ -58,6 +58,19 @@ LEADS = os.path.join(ROOT, "data", "leads", "_sightings.json")
 OUT = os.path.join(ROOT, "out", "sightings")
 MATCH_M = 30  # a phone's GPS in a park is rarely better than this
 
+# What the trunk field on a sighting means, spelled out for a reader of the
+# judging screen. The app stores the answer somebody gave (Sightings.swift) and
+# the conversion lives here, on the server side, so it can be corrected without
+# a release. One adult hug is 1.5 m fingertip to fingertip, which is the Ancient
+# Tree Inventory's own figure; CONVENTIONS.md carries the lookup.
+HUGS = {
+    "<1": "arms close round it, so under about 1.5 m",
+    "1": "about one adult hug, roughly 1.5 m round",
+    "2": "about two hugs, roughly 3 m round",
+    "3": "about three hugs, roughly 4.5 m round",
+    "4+": "four hugs or more, so 6 m round or more",
+}
+
 
 def supa(path):
     req = urllib.request.Request(SUPA + path, headers={
@@ -350,6 +363,8 @@ def judge():
         print(f"  {str(l.get('sighting_id'))[:8]}{mine_tag}  {(l.get('name') or 'unnamed')[:44]}")
         if (l.get("note") or "").strip():
             print(f"      they wrote: {l['note'].strip()[:90]}")
+        if l.get("girth_hugs"):
+            print(f"      trunk: {HUGS.get(l['girth_hugs'], l['girth_hugs'])}")
         if lat is None:
             print("      no coordinate, so nothing can be checked against it\n")
             continue
@@ -405,7 +420,7 @@ def main():
         print("sightings inbox: SUPABASE_SERVICE_KEY absent, nothing read")
         return 0
     try:
-        rows = supa("/rest/v1/sightings?select=user_id,id,tree_id,name,note,species,age,girth_cm,"
+        rows = supa("/rest/v1/sightings?select=user_id,id,tree_id,name,note,species,age,girth_cm,girth_hugs,"
                     "lat,lng,taken_at,status,photo,shared,updated_at"
                     "&photo=not.is.null&shared=eq.true&order=updated_at.asc") or []
     except Exception as e:
@@ -497,6 +512,16 @@ def main():
                     "sighting_id": sid, "user_id": row["user_id"], "mine": is_mine,
                     "name": row.get("name") or "", "species": row.get("species"),
                     "age": row.get("age"), "girth_cm": row.get("girth_cm"),
+                    # THE TRUNK, in adult hugs, as they answered it (2026-09-11).
+                    # Worth more on a lead than anything else the form collects:
+                    # girth is the one field scripts/ages.py can turn into an
+                    # age, and a reader standing at the tree is the only person
+                    # who can give it. Kept raw; ages.py owns the conversion.
+                    #
+                    # Beside girth_cm rather than instead of it: that one is a
+                    # measurement typed against a tree we already map, this is
+                    # what somebody answers while adding one we do not.
+                    "girth_hugs": row.get("girth_hugs"),
                     "note": (row.get("note") or "")[:500],
                     "latitude": row.get("lat"), "longitude": row.get("lng"),
                     "taken_at": row.get("taken_at"), "photo": row.get("photo"),
@@ -539,6 +564,7 @@ def main():
             # no girth_cm it is a candidate for it, stated as a reader's
             # measurement in verify_notes, never as a register figure.
             "girth_cm": row.get("girth_cm"),
+            "girth_hugs": row.get("girth_hugs"),
             "note": (row.get("note") or "")[:300],
             "taken_at": row.get("taken_at"), "photo_path": row["photo"],
             # The row's coordinate (2026-09-11), kept for a tree picked from the

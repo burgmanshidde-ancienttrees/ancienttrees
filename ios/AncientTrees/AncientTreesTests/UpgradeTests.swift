@@ -131,4 +131,33 @@ struct TheNamesOnDiskDoNotMove {
         #expect(Sightings.defaultFolder.lastPathComponent == "sightings",
                 "the folder holding everybody's own photographs was renamed")
     }
+
+    /// A tree written before the trunk field existed still opens.
+    ///
+    /// The shape of the bug this whole file is about: `girth` landed on
+    /// 2026-09-11 and every sighting on every phone was written without it. A
+    /// synthesised decoder throws on a missing NON-optional key whatever
+    /// default it carries, so the property has to stay optional forever, and
+    /// this is the test that says so out loud rather than in a comment. Both
+    /// halves are checked, because "it decodes" is only half a promise: the
+    /// tree also has to come back with everything it did carry.
+    @Test func aTreeSavedBeforeTheTrunkFieldStillOpens() throws {
+        let old = """
+        {"id":"6E1F8B0C-0000-4000-8000-000000000001","name":"The oak on my street",
+         "note":"","lat":52.37,"lng":4.89,
+         "date":770000000,"status":"mine"}
+        """
+        let back = try JSONDecoder().decode(Sightings.Sighting.self, from: Data(old.utf8))
+        #expect(back.girth == nil, "a tree written before the trunk field decoded to something")
+        #expect(back.name == "The oak on my street", "an old tree lost its name on the way in")
+    }
+
+    /// And a trunk somebody answered survives the round trip to disk.
+    @Test func theTrunkSomebodyAnsweredSurvivesBeingSaved() throws {
+        var one = Sightings.Sighting(name: "The lime", lat: 52.37, lng: 4.89)
+        one.girth = "2"
+        let back = try JSONDecoder().decode(
+            Sightings.Sighting.self, from: try JSONEncoder().encode(one))
+        #expect(back.girth == "2", "the trunk answer did not survive being written down")
+    }
 }
