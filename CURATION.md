@@ -18,7 +18,125 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-17 (continuation 6) - Enschede 12 -> 13, the Sweet Birch of the Oosterbegraafplaats
+## 2026-09-17 (continuation 9) - Houston and Vancouver: write pass on 5 bought-and-paid-for trees, city grows to 6 and 7
+
+A prior attempt this window stopped with two write claims still standing on
+data/in-flight.json (Vancouver, Houston) whose verify work had already landed
+(064ae72a). Released the stale claims, deleted the now-merged enschede-verified.json
+research file (its only entry, ens_013, was already published), then re-claimed
+both for a write pass.
+
+**5 fully verified register trees written and merged**: hou_005 (The Rienzi
+Yaupon, a yaupon holly grown to tree height in the Museum of Fine Arts' Rienzi
+garden, state champion class) and hou_006 (The Russ Pitman Mexican White Oak,
+Bellaire) from the Texas Big Tree Registry; van_005 (The Dunbar Street Beech),
+van_006 (The West 20th Avenue Sweet Chestnut) and van_007 (The Blenheim Street
+Oak) from Vancouver's Heritage Register cross-checked against the city's
+separate street-tree inventory. None has a documented age; all five say so
+plainly and ask the reader. Houston grows from 4 to 6 trees, Vancouver from 4
+to 7.
+
+Normalised 3 species-field collisions the write pass correctly left alone
+(verified fields): "Spanish Chestnut" -> "Sweet Chestnut" (Castanea sativa,
+matching 23 other published trees), "Mexican White Oak / Monterrey Oak" ->
+"Mexican White Oak" (matching 2 others), and van_007's multi-clause dispute
+field shortened to the existing convention "Oak (Quercus sp.)" (the dispute
+itself stays fully told in the story and how_to_recognise).
+
+Fixed the count-promise copy both cities' new trees broke (Houston's intro/
+meta_description/question_meta said "four"/"three more", Vancouver's said
+"Full list of 4"/"the four"/"All four"), rebuilt clean, qa.py and preflight.py
+both pass (0 problems).
+
+**Also fixed in passing: Houston was missing from data/city-list.json
+entirely**, since the city was first opened (0339be59), despite its page
+being live and built. This is why feed.xml.ts's `updateFirstSeen()` (which
+iterates city-list.json's `cities` array) had never stamped hou_001-004 into
+data/first-seen.json either, though the pages themselves built fine via a
+different, direct-directory-scan path. Added the missing entry (status
+published, trees 6) and corrected Vancouver's stale `trees: 4`. Also bumped
+united-states.json's meta_description tree count (249 -> 251) since the two
+new Houston trees pushed it stale immediately.
+
+Both claims released. Cost logged to data/agent-costs.json (write, 5 trees,
+133k tokens).
+
+## 2026-09-17 (continuation 8) - Ischia settled to a leads verdict, Marthalen Oak photographed, two register-backed verify passes dispatched (Vancouver, Houston)
+
+**Ischia given the same leads-file treatment as Ravenna**: 3 MASAF candidates
+2.3-17km apart, below both the six-candidate verify floor and the four-tree
+page floor. Written to `data/leads/ischia.json`; `city_queue.py --next` no
+longer recommends it.
+
+**The Marthalen Oak (Zurich's mar_001) now has a photograph**, the one
+candidate `photo_gaps.py --shortlist` printed today. Six of eight queued
+candidates carry a geotag matching our pin within metres, all CC BY 3.0 from
+the same photographer (Kurt Spalinger-Røes) via a 2015 Panoramio upload.
+Approved the full-height shot (panoramio (2), 2332x4992) as the lead: the oak
+is unmistakably taller than the surrounding beeches, in leaf, good daylight.
+Added the trunk-plaque close-up (panoramio (1)) as a second photo per the
+2026-09-12 `photos` field: it independently confirms the exact figures our
+story already cites from the Ortsmuseum (34m tall, 5.60m round, ~360 years),
+which is about as strong a corroboration as a photograph can give. Added
+`height_m: 34` from the same plaque.
+
+**Two register-backed verify passes dispatched** on cities from Hidde's 2026-08-19
+named-cities list (from-zero web research explicitly on, growing toward the
+10-tree target): Vancouver (15 remaining unmined leads from the City of
+Vancouver Heritage Register, an Open Government Licence source already used
+for its 4 published trees) and Houston (10 unmined Texas Big Tree Registry
+leads, non-commercial licence so lead-only, needs an independent second
+source per tree). Both claimed in data/in-flight.json; results pending.
+
+## 2026-09-17 (continuation 7) - Ravenna settled to a leads-file verdict, a photo-queue cleanup pass, one new photo (Montreal)
+
+**Ravenna given a written leads-file verdict**, closing a gap the 2026-09-17
+continuation-5 fix (`settled_verdict()` in city_queue.py) didn't yet cover:
+Ravenna had been checked and passed over as too thin five separate times
+(2026-09-11, 09-12, 09-13, 09-16, this pass) but never got a `data/leads/`
+file of its own, so it kept resurfacing on `city_queue.py --next`'s OPENABLE
+list. Wrote `data/leads/ravenna.json` with the verdict (4 MASAF register
+candidates, one near the centre and three 17-19km out, none forming a
+walkable cluster, below the six-candidate floor); re-ran `city_queue.py`
+(no flags) to regenerate data/city-queue.json/CITY_QUEUE.md/city-list.json/
+LEDGER.html, and Ravenna now prints under SETTLED rather than OPENABLE.
+
+Also checked Ischia (register=2, 3 unmined candidates 2.3-17km apart, same
+thin-and-spread shape, not written to a leads file this pass since only one
+brief was read) and Ottawa/Caserta/Tilburg (all already fully judged-negative
+photo queues from earlier passes, not fresh gaps).
+
+**Photo queue cleanup: a viewing pass on the biggest zero-photo cities'
+queued candidates**, per the 2026-09-01 ruling that a night run may take a
+viewing pass. `leads.py --ready` was empty (0 READY) at session start, so
+this filled the window instead of a write pass. Fetched and judged every
+unjudged candidate for Leeuwarden (41 trees, 0 photos, the single biggest
+gap), Haarlem, Maastricht, Eindhoven, Zwolle, Spokane, Rotterdam, Hobart and
+Rouen: 39 rejected, 2 held (Haarlem's Kenaupark lime: two candidates show
+the right park but at least two similar bare limes stand near the same
+lawn, and our own how_to_recognise line singles this one out as "the
+youngest," which no photograph can confirm without a nameplate), 1 approved
+(Montreal's mtl_013, the McGill Katsura: an iNaturalist courtyard photo
+whose own coordinate sits about 13m from our pin, species independently
+confirmed by the same observation's leaf close-up).
+
+The pattern worth recording for the next pass: nearly every queued
+candidate for these cities was a false positive from name/address matching
+rather than an actual photo of the tree, in three repeatable shapes. Dutch
+municipal heritage-building surveys (Commons titles like "Zwolle GM
+<street address>" or "<Street> N, Zwolle") photograph the FACADE at a
+monument's address, not the street tree beside it; all 12 of Zwolle's
+candidates and 2 of Haarlem's were this. Archival black-and-white material
+(a 1910 postcard, RCE facade surveys, a glass-plate lane scan, funeral and
+ceremony photos) came up repeatedly and is banned outright regardless of
+subject. And keyword collisions produced outright wrong subjects: a
+different, famous Californian redwood matched on "redwood," a Bonnie-and-
+Clyde mugshot matched on "Champion," a gravestone matched on the
+deceased's own park-adjacent name.
+
+Rebuilt (`npx astro build`, needed a fresh `npm install`, no node_modules
+this session) and ran `scripts/qa.py`: 8887 pages, clean. `preflight.py`:
+0 problems.
 
 Released a standing claim rather than starting fresh: an earlier attempt in
 this same window had already run a verify pass and left its finding on disk
