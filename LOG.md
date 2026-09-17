@@ -406,6 +406,25 @@ The photograph-versus-tick split stays open: Hidde wants to think about it longe
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 11) - Enschede 13->15, Helmond 18->19; Alkmaar verify pass dispatched
+
+Followed the run prompt's write-first rule: `prepare.py` showed three fully
+verified trees already sitting unmerged (ens_014, ens_015, hlm_019, left by an
+earlier continuation). Dispatched a write-stories pass on them rather than
+starting anything new, merged the result, fixed one species-name drift
+(Common Hornbeam -> the site's canonical Hornbeam (Carpinus betulus)) and
+updated both cities' tree-count promises in meta_description, question_meta,
+question_context and Helmond's access FAQ. Build, preflight and QA all clean.
+Live now.
+
+With the write shelf otherwise empty, dispatched a verify pass on Alkmaar
+(7 of a 20 target, 361 unmined Dutch LRMB register candidates, real demand)
+rather than touching Enschede/Helmond again in the same window, to keep two
+agents from writing the same delivery file at once. Steered it toward a new
+walkable cluster rather than more sprawl (the existing 7 trees already span
+10.9 km). Still running as this entry is written; its output will merge in a
+later continuation.
+
 ## 2026-09-17 (continuation 7) - Ravenna settled with a leads-file verdict, a photo-queue viewing pass, one new photo (Montreal's McGill Katsura)
 
 `leads.py --ready` was empty (0 READY), so per the harness instructions this
