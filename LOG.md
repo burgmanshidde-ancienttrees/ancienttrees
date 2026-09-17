@@ -12,7 +12,7 @@ Second of the stranded branches Hidde asked for, merged and deployed
   Brisbane's twenty. The queue clause keeps the cities we open at one or two
   trees on purpose.
 - **Blueprint v1.15 could not be obeyed until now**: content.config.ts
-  declared  twice in one object, so the enum in force was ["city",
+  declared `kind` twice in one object, so the enum in force was ["city",
   "island"] and the region, park and forest kinds approved on 2026-08-28
   were unusable. One declaration now.
 - **/collections/famous-trees**, generated, 60 trees in four bands, ranked on
