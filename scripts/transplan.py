@@ -30,10 +30,12 @@ internal and never rendered, so translating them would be paying for nothing.
 Usage:
   python3 scripts/transplan.py            # both readings, per language
   python3 scripts/transplan.py --next     # the cheapest untranslated city per language
+  python3 scripts/transplan.py --value    # what to translate next, demand per token
   python3 scripts/transplan.py --glossary # how much of the payload is repeated strings
 """
 import collections
 import glob
+import re
 import json
 import os
 import sys
@@ -131,6 +133,102 @@ def print_table(title, rows):
     return tot
 
 
+
+# Cities whose impressions are Google exact-phrase-operator queries rather than
+# people. seolearn.py names them in DATA.md under NOT DEMAND with the standing
+# instruction "read their impressions as zero, here and in the queue", and the
+# proof that it means translations too is Brussels: 739 English impressions, a
+# French overlay built on them, and 1 impression earned. Parsed rather than
+# copied, because the list changes every morning.
+def not_demand():
+    try:
+        txt = open("DATA.md", encoding="utf-8").read()
+    except OSError:
+        return set()
+    i = txt.find("NOT DEMAND")
+    if i < 0:
+        return set()
+    block = txt[i:i + 2000].split("\n\n")[0]
+    return {m.group(1) for m in re.finditer(r"^\s{2,}([a-z0-9-]+)\s+i\d+", block, re.M)}
+
+
+# Languages spoken in countries that have more than one. langcheck --next cannot
+# see these at all: it offers one language per city, so a city already carrying
+# its first language drops out of the queue with its second never considered.
+MULTILINGUAL = {
+    "Belgium": ["nl", "fr"],
+    "Switzerland": ["de", "fr", "it"],
+    "Luxembourg": ["fr", "de"],
+}
+
+
+def value(cities, done):
+    """Rank by demand per character, not by demand.
+
+    Raw impressions pick the big city every time, and the big city is usually
+    the expensive one. What a short window wants is the page that buys the most
+    demand per token, which is how a one-tree island beats a thirty-tree
+    capital. Impressions are the ENGLISH twin's, which is the precondition
+    rung 0b sets rather than a measure of the translated page.
+    """
+    skip = not_demand()
+    imp = {}
+    try:
+        q = json.load(open("data/city-queue.json", encoding="utf-8"))
+        rows = q if isinstance(q, list) else (q.get("cities") or [])
+        for r in rows:
+            s = r.get("slug") or r.get("city")
+            if s:
+                imp[s] = r.get("impressions_10d", 0) or 0
+    except (OSError, ValueError):
+        pass
+
+    out = []
+    for c in cities:
+        langs = list(MULTILINGUAL.get(c["country"], []))
+        for lang, countries in SHIPPING.items():
+            if c["country"] in countries and lang not in langs:
+                langs.append(lang)
+        for lang in langs:
+            if (lang, c["slug"]) in done or not c["chars"]:
+                continue
+            i = imp.get(c["slug"], 0)
+            if i < 10:
+                continue
+            out.append({
+                "lang": lang, "slug": c["slug"], "imp": i, "trees": c["trees"],
+                "chars": c["chars"], "tok": tokens(c["chars"]),
+                "per1k": i / (c["chars"] / 1000),
+                "robot": c["slug"] in skip,
+                "second": c["country"] in MULTILINGUAL,
+            })
+    out.sort(key=lambda r: -r["per1k"])
+
+    print("\nTranslate next, ranked by English impressions per 1,000 characters")
+    print("of work. Rows marked robot are seolearn NOT DEMAND: their impressions")
+    print("are exact-phrase operator queries, so treat them as zero and skip.")
+    print(f"\n  {'lang':5s} {'city':24s} {'imp':>5s} {'trees':>6s} {'~tok':>8s} {'imp/1k':>7s}")
+    shown = 0
+    for r in out:
+        if r["robot"]:
+            continue
+        # A country being multilingual does not make every one of its cities
+        # so: Geneva is francophone and Zurich German-speaking, whatever the
+        # federal language list says. These rows are a prompt to decide, not
+        # a recommendation to act on.
+        flag = "  <- judgement call: 2nd language of a multilingual country" if r["second"] else ""
+        print(f"  {r['lang']:5s} {r['slug']:24s} {r['imp']:5d} {r['trees']:6d} "
+              f"{r['tok']:8,.0f} {r['per1k']:7.1f}{flag}")
+        shown += 1
+        if shown >= 15:
+            break
+    skipped = [r for r in out if r["robot"]]
+    if skipped:
+        print(f"\n  skipped as robot demand: " +
+              ", ".join(f"{r['lang']}/{r['slug']} (i{r['imp']})" for r in skipped[:8]))
+    return 0
+
+
 def glossary(cities):
     """How much of the payload is the same string over and over."""
     uniq = collections.defaultdict(collections.Counter)
@@ -179,6 +277,8 @@ def main():
     cities = load_cities()
     done = done_overlays()
 
+    if "--value" in sys.argv:
+        return value(cities, done)
     if "--glossary" in sys.argv:
         glossary(cities)
         return 0
