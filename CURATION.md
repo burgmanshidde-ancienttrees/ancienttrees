@@ -18,6 +18,33 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 8) - Ischia settled to a leads verdict, Marthalen Oak photographed, two register-backed verify passes dispatched (Vancouver, Houston)
+
+**Ischia given the same leads-file treatment as Ravenna**: 3 MASAF candidates
+2.3-17km apart, below both the six-candidate verify floor and the four-tree
+page floor. Written to `data/leads/ischia.json`; `city_queue.py --next` no
+longer recommends it.
+
+**The Marthalen Oak (Zurich's mar_001) now has a photograph**, the one
+candidate `photo_gaps.py --shortlist` printed today. Six of eight queued
+candidates carry a geotag matching our pin within metres, all CC BY 3.0 from
+the same photographer (Kurt Spalinger-Røes) via a 2015 Panoramio upload.
+Approved the full-height shot (panoramio (2), 2332x4992) as the lead: the oak
+is unmistakably taller than the surrounding beeches, in leaf, good daylight.
+Added the trunk-plaque close-up (panoramio (1)) as a second photo per the
+2026-09-12 `photos` field: it independently confirms the exact figures our
+story already cites from the Ortsmuseum (34m tall, 5.60m round, ~360 years),
+which is about as strong a corroboration as a photograph can give. Added
+`height_m: 34` from the same plaque.
+
+**Two register-backed verify passes dispatched** on cities from Hidde's 2026-08-19
+named-cities list (from-zero web research explicitly on, growing toward the
+10-tree target): Vancouver (15 remaining unmined leads from the City of
+Vancouver Heritage Register, an Open Government Licence source already used
+for its 4 published trees) and Houston (10 unmined Texas Big Tree Registry
+leads, non-commercial licence so lead-only, needs an independent second
+source per tree). Both claimed in data/in-flight.json; results pending.
+
 ## 2026-09-17 (continuation 7) - Ravenna settled to a leads-file verdict, a photo-queue cleanup pass, one new photo (Montreal)
 
 **Ravenna given a written leads-file verdict**, closing a gap the 2026-09-17

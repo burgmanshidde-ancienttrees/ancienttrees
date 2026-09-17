@@ -4,7 +4,8 @@
   {
    "name": "Quercus virginiana, Texas Big Tree Registry TreeID 43463",
    "species": "Quercus virginiana",
-   "reason": "State champion or co-champion. Circumference 246 in (6.25 m), spread 131.0 ft, condition code 2, county tag Harris, 18.1 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: John Knox Presbyterian Church. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "status": "duplicate",
+   "reason": "ALREADY PUBLISHED as hou_001 'The John Knox Live Oak' (0m away, same coordinate, same church). Verify pass 2026-09-17 re-verified this candidate independently before passcheck.py --pending caught the match. Do not write again; if the pass's new second source (Embark Services, a Houston tree-care company, embarkservices.com/celebrating-the-beauty-of-local-trees) is worth folding into hou_001's verified_sources, that is a small edit to the live entry, not a new tree.",
    "location": {
     "latitude": 29.81711111,
     "longitude": -95.5456
@@ -18,7 +19,8 @@
   {
    "name": "Ulmus alata, Texas Big Tree Registry TreeID 2341",
    "species": "Ulmus alata",
-   "reason": "State champion or co-champion. Circumference 110 in (2.79 m), spread 80.0 ft, condition code 2, county tag Harris, 30.7 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: Harris County Precinct 4. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "status": "duplicate",
+   "reason": "ALREADY PUBLISHED as hou_004 'The Spring Creek Winged Elm' (0m away). Verify pass 2026-09-17 re-verified this independently and found the coordinate sits directly on the Spring Creek Greenway Trail (Nominatim reverse geocode, way 450634416), confirmed public per Harris County Precinct 4's own trail; still single-sourced for the specific tree, same as hou_004's live entry. Do not write again.",
    "location": {
     "latitude": 30.03205556,
     "longitude": -95.31286111
@@ -32,7 +34,8 @@
   {
    "name": "Carya illinoinensis, Texas Big Tree Registry TreeID 1280",
    "species": "Carya illinoinensis",
-   "reason": "State champion or co-champion. Circumference 184 in (4.67 m), spread 81.0 ft, condition code 2, county tag Fort Bend, 32.1 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: City of Sugar Land. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "status": "duplicate",
+   "reason": "ALREADY PUBLISHED as hou_002 'The Old Pecan Tree' (0m away, same Cullinan Park trail). Verify pass 2026-09-17 re-verified this independently and found the same trail-name corroboration (Old Pecan Tree Trail, Trailforks/AllTrails/htxtravelers.com) hou_002's own sources already use, plus that this coordinate now reads location_precision confirmed on the live entry. Do not write again.",
    "location": {
     "latitude": 29.63444444,
     "longitude": -95.66916667
@@ -46,7 +49,7 @@
   {
    "name": "Juniperus virginiana var. virginiana, Texas Big Tree Registry TreeID 1260",
    "species": "Juniperus virginiana var. virginiana",
-   "reason": "State champion or co-champion. Circumference 148 in (3.76 m), spread 56.0 ft, condition code 3, county tag Harris, 40.0 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: Inverness Houston POA, INC. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "reason": "State champion or co-champion. Circumference 148 in (3.76 m), spread 56.0 ft, condition code 3, county tag Harris, 40.0 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: Inverness Houston POA, INC. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets. CHECKED 2026-09-17 (verify pass): Inverness Estates is an ordinary ungated HOA subdivision in Tomball; the registry itself flags PublicOrPrivate=1 and the street (Inverness Crossing Boulevard) is an untagged, non-private OSM road, but nothing found confirms the coordinate is a common area rather than a private front yard. Left unresolved rather than guessed; a satellite/street-view look would likely settle it.",
    "location": {
     "latitude": 30.07780556,
     "longitude": -95.56405556
@@ -73,8 +76,8 @@
    "species": "Ilex vomitoria",
    "lat": 29.75622,
    "lng": -95.42069,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.9 km from the centre of Houston. Condition per the registry: 3. Measured August 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "status": "promoted",
+   "reason": "PROMOTED 2026-09-17 (verify pass) to data/research/houston-verified.json as hou_005 'The Rienzi Yaupon'. Stands at Rienzi (MFAH historic house museum), River Oaks; free self-guided garden access daily except August. Shipped flagged: only the registry names this exact specimen.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
    "girth_cm": 91,
    "needs_verification": true
@@ -95,8 +98,8 @@
    "species": "Quercus polymorpha",
    "lat": 29.69896111,
    "lng": -95.45198611,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 10.5 km from the centre of Houston. Condition per the registry: 2. Measured May 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "status": "promoted",
+   "reason": "PROMOTED 2026-09-17 (verify pass) to data/research/houston-verified.json as hou_006 'The Russ Pitman Mexican White Oak'. Stands at Russ Pitman Park / Nature Discovery Center, a City of Bellaire public park, open 5am-9:30pm daily. Shipped flagged: only the registry names this exact specimen.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
    "girth_cm": 231,
    "needs_verification": true
@@ -106,22 +109,20 @@
    "species": "Juniperus virginiana var. silicicola",
    "lat": 29.79513889,
    "lng": -95.50713889,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 13.8 km from the centre of Houston. Condition per the registry: 2. Measured August 2015. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "status": "blocked",
+   "reason": "CHECKED 2026-09-17 (verify pass): owner is Spring Branch ISD, and the registry's own flags read PublicOrPrivate=0, Display=0, the identical private-land signature already established elsewhere in this file (Lagerstroemia TreeID 990, Acer rubrum TreeID 2353): the registry withholds this location from its own public map. A school district's restricted grounds fits that signature and CLAUDE.md's schools exception needs positive evidence of genuine public access, which was not found. BLOCKED under hard rule 10; never ship unless a future pass finds real evidence this specific site is open.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 231,
-   "needs_verification": true
+   "girth_cm": 231
   },
   {
    "name": "Juniperus virginiana var. silicicola (Texas Big Tree Registry TreeID 249)",
    "species": "Juniperus virginiana var. silicicola",
    "lat": 29.79561111,
    "lng": -95.50733333,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 13.8 km from the centre of Houston. Condition per the registry: 2. Measured August 2015. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "status": "blocked",
+   "reason": "CHECKED 2026-09-17 (verify pass): same address and same owner (Spring Branch ISD) as TreeID 645, 40m apart, same PublicOrPrivate=0/Display=0 private-land signature. Two distinct trees by circumference (77in vs 91in), not duplicates of each other, but both BLOCKED under hard rule 10 for the same reason.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 196,
-   "needs_verification": true
+   "girth_cm": 196
   }
  ],
  "blocked": [
