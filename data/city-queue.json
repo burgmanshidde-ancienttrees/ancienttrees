@@ -66,7 +66,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 30,
-   "photos": 11,
+   "photos": 12,
    "walks": 3,
    "register": 25,
    "ready": 0,
@@ -204,7 +204,7 @@
    "demand": 184099,
    "basis": "measured",
    "status": "published",
-   "trees": 26,
+   "trees": 27,
    "photos": 9,
    "walks": 1,
    "register": 27,
@@ -2071,7 +2071,7 @@
   {
    "city": "Enschede",
    "country": "Netherlands",
-   "trees": 12,
+   "trees": 13,
    "note": "opened 2026-08-22 from the Dutch LRMB register",
    "status": "published",
    "photos": 1,
@@ -5089,7 +5089,8 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 2773,
-   "wikidata": 2
+   "wikidata": 2,
+   "settled": "VERDICT: Ravenna has no publishable supply right now, checked 2026-09-17 (fifth time this has been checked and passed over: 2026-09-11, 2026-09-12, 2026-09-13, 2026-09-16, this pass). city_queue.py --next and passcheck.py --brief both list only 4 unmined MASAF register candidates within 20km of the city centre (44.4161,12.2017): a Platanus acerifolia 0.6km out at San Vitale (44.42069,12.19701, girth 4.8m), then a Populus alba, a Populus nigra and an Acer campestre all 17.2 to 19.0km away and un-clustered with each other or with the San Vitale plane. That is below the six-candidate floor for dispatching a verify pass, and even taken together the four are not a walkable cluster: one tree near the centre and three isolated trees 17km+ out in different directions, nothing like Cadiz or Setubal's tight groupings. The one Wikidata lead (Q55741430) is the same San Vitale plane, not a fifth candidate. Kept so nobody re-runs this hunt against Ravenna; re-open only if a new register or a walkable cluster of leads turns up near the city centre."
   },
   {
    "city": "Assen",
