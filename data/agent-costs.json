@@ -8101,6 +8101,15 @@
     "note": "3 stories + recognition lines merged (ens_014, ens_015, hlm_019); fixed species name (Common Hornbeam -> Hornbeam) and city-count promises at merge time.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alkmaar",
+    "kind": "verify",
+    "tokens": 241236,
+    "trees": 7,
+    "note": "Two new walkable clusters (Bolwerken/Grote Kerk + Westerhoutpark) from LRMB register + Alkmaar municipal 2017 PDF (hand-extracted); caught 2 dead register entries not flagged upstream (Storm Poly 2023, elm disease felling 2019); 4 leads recorded.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
