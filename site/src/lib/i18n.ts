@@ -1907,11 +1907,20 @@ export function pathInEveryLanguage(enPath: string): Record<string, string> {
 
   const seg = clean.split("/").filter(Boolean);
   if (seg.length === 1 || seg.length === 2) {
-    const [slug, leaf] = seg;
+    const [slug, leafSeg] = seg;
+    const leaf = leafSeg;
     // A one-segment path is only a city if we publish one by that name; this is
     // what keeps /privacy and /sponsor out without naming them.
     if (!fs.existsSync(path.join(DATA, "cities", `${slug}.json`))) return {};
-    for (const l of langs) {
+    // A TREE page exists only where the city is genuinely translated, since
+    // 2026-09-17 dropped the 21,042 fallback ones. City and question pages
+    // still render as fallbacks, so those keep all seven. Offering a language
+    // whose page was just deleted is how the picker produced 48,629 dead
+    // links, and it is the third time in a day that removing pages left the
+    // links behind: the pages are the easy half.
+    const isTree = !!leafSeg && leafSeg !== "oldest-tree";
+    const usable = isTree ? languagesForCity(slug) : langs;
+    for (const l of usable) {
       out[l] = !leaf
         ? `/${l}/${slug}`
         : leaf === "oldest-tree"
@@ -2056,24 +2065,21 @@ export async function allCityPathsFor(lang: string, allCities: CityLike[]) {
  * those did not exist in that language. The convention is a whole site per
  * locale or none of it. */
 export async function allTreePathsFor(lang: string, allCities: any[], renderableTrees: any, treeSlugsForCity: any) {
+  // Real translations only, on Hidde's call of 2026-09-17 after seeing what the
+  // fallback half cost: 21,042 pages that Google is told to ignore, 24 of the
+  // 33 minutes a build takes, and the only thing they added was the buttons
+  // around an English story being in the reader's language.
+  //
+  // The 1,106 genuinely translated tree pages are untouched and this grows on
+  // its own: translate a city tomorrow and its trees become real translated
+  // pages the same day, with no decision to revisit.
+  //
+  // A city without an overlay therefore links its trees at the ENGLISH URL.
+  // treeHref() in TranslatedCityPage and TranslatedTreePage is the one place
+  // that decides it, because the first version of this dropped the pages and
+  // left the links, and qa found 25,208 dead ones.
   const real = await translatedTreePaths(lang, allCities, renderableTrees, treeSlugsForCity);
-  const done = new Set(translatedCities(lang));
-  const out: any[] = real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } }));
-  for (const city of allCities) {
-    if (done.has(city.id)) continue;
-    const tr = fallbackCityTranslation(city);
-    const trees = renderableTrees(city);
-    const tslugs = treeSlugsForCity(city);
-    for (const tree of trees) {
-      const x = tr.trees[tree.id];
-      if (!x) continue;
-      out.push({
-        params: { city: city.id, tree: tslugs[tree.id] },
-        props: { city, tree, x, allTrees: trees, tr, fallback: true },
-      });
-    }
-  }
-  return out;
+  return real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } }));
 }
 
 /** Every question page in this language, real then fallback. */
