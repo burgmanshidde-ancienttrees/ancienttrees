@@ -92,72 +92,87 @@ export const SIGNIN_JS = `
     if (a) { e.preventDefault(); window.atOAuth('apple'); }
   });
 
-  var dlg = document.getElementById('signin-dialog');
-  if (!dlg) return;
+  // ONE WIRING, RUN PER SURFACE. The dialog and the account page render the
+  // same panel (SignInPanel.astro) with different id prefixes, because both
+  // are on /account at once and two elements cannot share an id. Everything
+  // below therefore takes the prefix rather than naming the dialog's ids, so a
+  // behaviour cannot exist on one surface and not the other.
+  function wire(p) {
+    var el = function(n) { return document.getElementById(p + '-' + n); };
+    if (!el('more')) return;
 
-  // CONTINUE IN THE APP takes the loud slot on an iPhone and nowhere else.
-  // A laptop cannot honour it, so rather than showing a button that would be a
-  // dead end there, the sheet keeps sign-in as its answer and this stays
-  // hidden. When it does appear the sign-in button steps down to grey, so the
-  // sheet still has exactly one dark button, which is the whole shape.
-  //
-  // The tree id rides along so the app can open on the tree the reader was
-  // actually looking at. It comes off the save heart, which is the one element
-  // that already carries it on every tree page.
-  (function () {
+    // CONTINUE IN THE APP takes the loud slot on an iPhone and nowhere else.
+    // The tree id rides along so the app lands on the tree the reader was
+    // standing on; it comes off the save heart, the one element already
+    // carrying it on every tree page.
     var ua = navigator.userAgent || '';
     var isIOS = /iPhone|iPad|iPod/.test(ua)
       || (ua.indexOf('Macintosh') > -1 && navigator.maxTouchPoints > 1);
-    if (!isIOS) return;
-    var open = document.getElementById('signin-openapp');
-    if (!open) return;
-    var loud = dlg.querySelector('.oauth-loud:not(#signin-openapp)');
-    if (loud) { loud.classList.remove('oauth-loud'); loud.classList.add('oauth-quiet'); }
-    var el = document.querySelector('[data-tree]');
-    var slug = location.pathname.split('/').filter(Boolean)[0] || '';
-    var q = el && el.dataset.tree ? '?tree=' + encodeURIComponent(el.dataset.tree)
-          : (slug ? '?city=' + encodeURIComponent(slug) : '');
-    open.setAttribute('href', '/open' + q);
-    open.hidden = false;
-    // The rule separates CONTINUING from SIGNING IN, which is where the
-    // reference puts it: continue in the app, or, then the account routes. In
-    // the markup it sits under the sign-in button, because without the app
-    // button that is the only place it can go.
-    var rule = document.getElementById('signin-rule');
-    if (rule) {
-      rule.hidden = false;
-      if (open.nextSibling !== rule) open.parentNode.insertBefore(rule, open.nextSibling);
+    if (isIOS && el('openapp')) {
+      var open = el('openapp');
+      var loudSel = '#' + p + '-apple, #' + p + '-google';
+      var loud = document.querySelector(loudSel + '.oauth-loud');
+      if (loud) { loud.classList.remove('oauth-loud'); loud.classList.add('oauth-quiet'); }
+      var t = document.querySelector('[data-tree]');
+      var slug = location.pathname.split('/').filter(Boolean)[0] || '';
+      var q = t && t.dataset.tree ? '?tree=' + encodeURIComponent(t.dataset.tree)
+            : (slug && slug !== 'account' ? '?city=' + encodeURIComponent(slug) : '');
+      open.setAttribute('href', '/open' + q);
+      open.hidden = false;
+      // The rule separates continuing from signing in, so it belongs directly
+      // under the app button rather than where the sign-in layout left it.
+      var rule = el('rule');
+      if (rule) {
+        rule.hidden = false;
+        if (open.nextSibling !== rule) open.parentNode.insertBefore(rule, open.nextSibling);
+      }
+      // The headline becomes the offer the button makes, and the subtitle goes
+      // with it: "Sign in to save X" under "works better in the app" answers a
+      // question nobody asked.
+      var title = el('title');
+      if (title && title.getAttribute('data-app')) {
+        title.setAttribute('data-generic', title.getAttribute('data-app'));
+        title.textContent = title.getAttribute('data-app');
+      }
+      var sub = el('sub');
+      if (sub) sub.hidden = true;
+      var host = open.closest('.signin-dialog') || open.parentNode;
+      if (host && host.classList) host.classList.add('signin-dialog--app');
+      // "Get the app" at the foot is the same offer as the button at the top.
+      var al = open.parentNode.querySelector('.signin-applink');
+      if (al) al.hidden = true;
     }
-    // And the subtitle goes, because the headline is no longer about signing
-    // in and a line reading "Sign in to save X" under "works better in the
-    // app" answers a question nobody asked. The reference carries no subtitle
-    // at all here.
-    var sb = document.getElementById('signin-sub');
-    if (sb) sb.hidden = true;
-    dlg.classList.add('signin-dialog--app');
-    // "Get the app" at the foot of the last screen is the same offer as the
-    // loud button at the top of the first one. One of them goes, and it is the
-    // quiet duplicate rather than the thing the sheet leads with.
-    var al = dlg.querySelector('.signin-applink');
-    if (al) al.hidden = true;
-    // The headline becomes the offer the button makes, which is what the
-    // reference leads with. The sign-in wording stays for every other surface.
-    var t = document.getElementById('signin-title');
-    if (t && t.getAttribute('data-app')) t.setAttribute('data-generic', t.getAttribute('data-app'));
-  })();
+
+    // THE SECOND SCREEN: every remaining route, and "More options" gone.
+    el('more').addEventListener('click', function() {
+      ['google', 'emailbtn'].forEach(function(n) { if (el(n)) el(n).hidden = false; });
+      el('more').hidden = true;
+    });
+    // The address is asked for only once somebody has chosen to type one.
+    if (el('emailbtn')) el('emailbtn').addEventListener('click', function() {
+      if (el('rest')) el('rest').hidden = false;
+      el('emailbtn').hidden = true;
+      if (el('email')) el('email').focus();
+    });
+  }
+  wire('signin');
+  wire('acct');
+
+  var dlg = document.getElementById('signin-dialog');
+  if (!dlg) return;
   window.atOpenSignIn = function(treeName, reason) {
-    // Name the tree that was just saved. The generic line stays for every
-    // other entry point, and a missing name is not an error, it is the
-    // ordinary case on the account page and in the nav. A reason of
-    // 'feedback' (the gated vote/report/contribute flows, 2026-08-21) swaps
-    // both lines: nothing was saved, so the save wording would be a lie.
+    // Name the tree that was just saved. A 'feedback' reason (the gated
+    // vote/report/contribute flows) swaps both lines: nothing was saved, so the
+    // save wording would be a lie. On a phone the headline is already the app
+    // offer and stays that way.
     var sub = document.getElementById('signin-sub');
     var title = document.getElementById('signin-title');
-    if (title) {
+    var appMode = !!document.querySelector('#signin-openapp:not([hidden])');
+    if (title && !appMode) {
       title.textContent = title.getAttribute(
         reason === 'feedback' ? 'data-feedback' : 'data-generic') || title.textContent;
     }
-    if (sub) {
+    if (sub && !appMode) {
       if (reason === 'feedback') {
         sub.textContent = sub.getAttribute('data-feedback') || sub.getAttribute('data-generic');
       } else {
@@ -165,8 +180,8 @@ export const SIGNIN_JS = `
         sub.textContent = tpl ? tpl.replace('%s', treeName) : sub.getAttribute('data-generic');
       }
     }
-    // Reset the disclosure, because a dialog is reopened on the same page and
-    // would otherwise remember a state the visitor did not choose this time.
+    // Back to the FIRST screen, because a dialog is reopened on the same page
+    // and would otherwise remember a state the visitor did not choose.
     var rest = document.getElementById('signin-rest');
     var moreBtn = document.getElementById('signin-more');
     if (rest) rest.hidden = true;
@@ -174,37 +189,12 @@ export const SIGNIN_JS = `
     var eb = document.getElementById('signin-emailbtn');
     if (eb) eb.hidden = true;
     var gg = document.getElementById('signin-google');
-    // Google is the front-screen button only where there is no Apple to lead.
     if (gg && document.getElementById('signin-apple')) gg.hidden = true;
     if (dlg.showModal) { dlg.showModal(); } else { location.href = '/account'; }
   };
   document.addEventListener('click', function(e) {
     var t = e.target.closest('[data-signin]');
     if (t) { e.preventDefault(); window.atOpenSignIn(); }
-  });
-  // THE SECOND SCREEN. "More options" reveals every remaining route and then
-  // gets out of the way, so the sheet never shows a control that has already
-  // done its job. It is one list with its visibility switched rather than a
-  // second copy of the same buttons, so the two screens cannot drift apart.
-  var more = document.getElementById('signin-more');
-  if (more) more.addEventListener('click', function() {
-    ['signin-google', 'signin-emailbtn'].forEach(function(id) {
-      var el = document.getElementById(id);
-      if (el) el.hidden = false;
-    });
-    more.hidden = true;
-  });
-
-  // And the address is asked for only once somebody has chosen to type one,
-  // which is the reference's third step and what makes the second screen a
-  // list of routes rather than a form with buttons above it.
-  var emailBtn = document.getElementById('signin-emailbtn');
-  if (emailBtn) emailBtn.addEventListener('click', function() {
-    var rest = document.getElementById('signin-rest');
-    if (rest) rest.hidden = false;
-    emailBtn.hidden = true;
-    var f = document.getElementById('signin-email');
-    if (f) f.focus();
   });
   document.getElementById('signin-close').addEventListener('click', function() { dlg.close(); });
   dlg.addEventListener('click', function(e) { if (e.target === dlg) dlg.close(); });
