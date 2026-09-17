@@ -14064,8 +14064,8 @@
   "yor_001": {
    "city": "York",
    "name": "The Willow-Leaved Ash",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-17",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Monkey Puzzle Tree, York - geograph.org.uk - 3942789.jpg",
@@ -14090,8 +14090,8 @@
   "yor_004": {
    "city": "York",
    "name": "The Cut-Leaved Alder",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-17",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Monkey Puzzle Tree, York - geograph.org.uk - 3942789.jpg",
@@ -14107,15 +14107,15 @@
   "yor_005": {
    "city": "York",
    "name": "The Elaeagnus-Leaved Pear",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-17",
+   "sweep": 5,
    "candidates": []
   },
   "yor_006": {
    "city": "York",
    "name": "The Small-Leaved Lime",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-17",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:06 21 2021 Littleleaf Linden Tilia cordata McKibbin Street Brooklyn NYC.jpg",
@@ -14137,10 +14137,13 @@
     },
     {
      "title": "File:Autumnal trees in Kings Manor - geograph.org.uk - 7899042.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Autumnal_trees_in_Kings_Manor_-_geograph.org.uk_-_7899042.jpg/960px-Autumnal_trees_in_Kings_Manor_-_geograph.org.uk_-_7899042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Autumnal_trees_in_Kings_Manor_-_geograph.org.uk_-_7899042.jpg/960px-Autumnal_trees_in_Kings_Manor_-_geograph.org.uk_-_7899042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Autumnal_trees_in_Kings_Manor_-_geograph.org.uk_-_7899042.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "DS Pugh"
+     "author": "DS Pugh",
+     "lat": 53.96208188,
+     "lng": -1.08696625,
+     "cats": "Category:2024 at the University of York Category:CC-BY-SA-2.0 Category:Images by DS Pugh Category:Images from Geograph Britain and Ireland Category:King's Manor Category:October 2024 in York Category:York photographs taken on 2024-10-05"
     }
    ]
   },
@@ -40463,16 +40466,6 @@
      "verdict": "park landscape with a runner, no lime as subject"
     },
     {
-     "title": "File:Station Amersfoort Schothorst (2025)-8.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Station_Amersfoort_Schothorst_%282025%29-8.jpg/960px-Station_Amersfoort_Schothorst_%282025%29-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Station_Amersfoort_Schothorst_(2025)-8.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Sneeuwvlakte",
-     "lat": null,
-     "lng": null,
-     "cats": "Category:2025 in Amersfoort Category:April 2025 in rail transport in the Netherlands Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2025-04-15 Category:Railway photographs taken on 2025-04-15 Category:Self-published work Category:Station Amersfoort Schothorst Category:Train stations in the Netherlands photographed in 2025"
-    },
-    {
      "title": "File:Weide landgoed.jpg",
      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Weide_landgoed.jpg/960px-Weide_landgoed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Weide_landgoed.jpg",
@@ -50595,7 +50588,9 @@
      "author": "Marcelmulder68",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Kenaupark Category:Kenaupark 19, Haarlem Category:Kenaupark 21, Haarlem Category:Kenaupark 23, Haarlem Category:Kenaupark 25, Haarlem Category:Kenaupark 27, Haarlem Category:Kenaupark 29, Haarlem Category:Kenaupark 31, Haarlem Category:Kenaupark 33, Haarlem Category:Photographs by Marcel Mulder Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Kenaupark Category:Kenaupark 19, Haarlem Category:Kenaupark 21, Haarlem Category:Kenaupark 23, Haarlem Category:Kenaupark 25, Haarlem Category:Kenaupark 27, Haarlem Category:Kenaupark 29, Haarlem Category:Kenaupark 31, Haarlem Category:Kenaupark 33, Haarlem Category:Photographs by Marcel Mulder Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "hold",
+     "verdict": "Shows Kenaupark with at least two large limes near the same lawn, both bare. Our own how_to_recognise line singles this tree out as 'the youngest' of the park's protected trees, which is not something"
     },
     {
      "title": "File:Kenaupark Haarlem 4.JPG",
@@ -50605,7 +50600,9 @@
      "author": "Arch",
      "lat": null,
      "lng": null,
-     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work"
+     "cats": "Category:Kenaupark Category:Ontmanteling Category:PD-self Category:Self-published work",
+     "judged": "hold",
+     "verdict": "A canal-side park view with several similar bare trees along a forked path; same identity problem as the other Kenaupark candidate, no marker ties this specific trunk to the registered lime."
     }
    ]
   },
@@ -51653,7 +51650,9 @@
      "author": "G.Th. Delemarre",
      "lat": null,
      "lng": null,
-     "cats": "Category:1964 in Haarlem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by G.Th. Delemarre Category:Photographs by G.Th. Delemarre - Haarlem Category:Rijksmonumenten with known IDs Category:Staten Bolwerk bij 1, Haarlem"
+     "cats": "Category:1964 in Haarlem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by G.Th. Delemarre Category:Photographs by G.Th. Delemarre - Haarlem Category:Rijksmonumenten with known IDs Category:Staten Bolwerk bij 1, Haarlem",
+     "judged": "reject",
+     "verdict": "Archival black-and-white RCE heritage photograph of a villa's facade; no oak visible as the subject."
     },
     {
      "title": "File:Statenbolwerk 3-5, gevels - Haarlem - 20098212 - RCE.jpg",
@@ -51663,7 +51662,9 @@
      "author": "G.Th. Delemarre",
      "lat": null,
      "lng": null,
-     "cats": "Category:1964 in Haarlem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by G.Th. Delemarre Category:Photographs by G.Th. Delemarre - Haarlem Category:Rijksmonumenten in Haarlem Category:Rijksmonumenten with known IDs Category:Staten Bolwerk, Haarlem"
+     "cats": "Category:1964 in Haarlem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by G.Th. Delemarre Category:Photographs by G.Th. Delemarre - Haarlem Category:Rijksmonumenten in Haarlem Category:Rijksmonumenten with known IDs Category:Staten Bolwerk, Haarlem",
+     "judged": "reject",
+     "verdict": "Archival black-and-white RCE heritage photograph of a building facade with parked vintage cars; no oak visible as the subject."
     },
     {
      "title": "File:Statenbolwerk naar het westen - Haarlem - 20095854 - RCE.jpg",
@@ -55003,7 +55004,9 @@
      "author": "Anne Beeksma",
      "lat": null,
      "lng": null,
-     "cats": "Category:2009 in Rotterdam Category:Buildings with addresses Category:CC-BY-SA-3.0-NL Category:Gemeentelijke monumenten with known IDs Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2009-01-30 Category:Self-published work Category:Stained glass in concrete, Delftseplein 31, Rotterdam Category:Stationspostkantoor (Rotterdam) Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:2009 in Rotterdam Category:Buildings with addresses Category:CC-BY-SA-3.0-NL Category:Gemeentelijke monumenten with known IDs Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2009-01-30 Category:Self-published work Category:Stained glass in concrete, Delftseplein 31, Rotterdam Category:Stationspostkantoor (Rotterdam) Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Modern office building facade; no tree in frame at all."
     }
    ]
   },
@@ -55089,7 +55092,9 @@
      "author": "Antoine Rex",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Chapelle du cimetière monumental de Rouen Category:Henri Gadeau de Kerville Category:Plaques referencing 1858 in France Category:Plaques referencing 1940 in Seine-Maritime Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Chapelle du cimetière monumental de Rouen Category:Henri Gadeau de Kerville Category:Plaques referencing 1858 in France Category:Plaques referencing 1940 in Seine-Maritime Category:Self-published work",
+     "judged": "reject",
+     "verdict": "A grave plaque; no tree in frame."
     }
    ]
   },
@@ -67642,7 +67647,9 @@
      "licence": "CC BY",
      "author": "(c) Caleb Catto, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-43.0982555,146.80252"
+     "obs_location": "-43.0982555,146.80252",
+     "judged": "reject",
+     "verdict": "Same observation as the already-rejected pair photo: a tall gum trunk among a stand of similar trees, nothing confirms this specific trunk is Centurion rather than a neighbour."
     }
    ]
   },
@@ -73534,6 +73541,16 @@
      "verdict": "Historical/heraldic subject, not the tree."
     },
     {
+     "title": "File:Amerongen, de Andrieskerk RM7755 IMG 6547 2020-07-12 15.52.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Amerongen%2C_de_Andrieskerk_RM7755_IMG_6547_2020-07-12_15.52.jpg/960px-Amerongen%2C_de_Andrieskerk_RM7755_IMG_6547_2020-07-12_15.52.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Amerongen,_de_Andrieskerk_RM7755_IMG_6547_2020-07-12_15.52.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michielverbeek",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2020 in Amerongen Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2020-07-12 Category:Quality images Category:Quality images of Utrecht (province) Category:Quality images of architectural structures Category:Rijksmonumenten with known IDs Category:Self-published work Category:Sint-Andrieskerk (Amerongen) Category:Wilhelminaboom, Amerongen"
+    },
+    {
      "title": "File:Amerongen (61).JPG",
      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Amerongen_%2861%29.JPG/960px-Amerongen_%2861%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Amerongen_(61).JPG",
@@ -73542,16 +73559,6 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0 Category:Kasteel Amerongen Category:Netherlands photographs taken on 2011-10-09 Category:Rijksmonumenten with known IDs Category:Taken with Canon PowerShot G6"
-    },
-    {
-     "title": "File:Amerongen voorgevel.JPG",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Amerongen_voorgevel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Amerongen_voorgevel.JPG",
-     "licence": "Public domain",
-     "author": "Gijsevers at Dutch Wikipedia",
-     "lat": null,
-     "lng": null,
-     "cats": "Category:2006 in Utrechtse Heuvelrug Category:Kasteel Amerongen main building exterior Category:PD-user Category:Rijksmonumenten with known IDs"
     }
    ]
   },
@@ -86436,7 +86443,9 @@
      "author": "Emrik & Binger (Haarlem) • Emrik, David (1841-1911) • Binger, Charles (1830-1916)",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:PD-old missing SDC copyright status Category:PD Old Category:Postcards in Tresoar"
+     "cats": "Category:CC-PD-Mark Category:PD-old missing SDC copyright status Category:PD Old Category:Postcards in Tresoar",
+     "judged": "reject",
+     "verdict": "1910 archival postcard, black and white, generic park view. Never archival imagery per the photo standard."
     },
     {
      "title": "File:Jongen met vogeltje Maria van Everdingen Rengerspark leeuwarden.JPG",
@@ -86446,7 +86455,9 @@
      "author": "Brbbl",
      "lat": 53.20848718,
      "lng": 5.79338846,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Jongen met vogeltje (Maria van Everdingen) Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Kodak EasyShare Z650"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Jongen met vogeltje (Maria van Everdingen) Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Kodak EasyShare Z650",
+     "judged": "reject",
+     "verdict": "A bronze statue on a plinth is the subject; the tree in frame is a weeping willow-type silhouette, not the Variegated Maple, and is not identifiable as this specimen."
     },
     {
      "title": "File:Spanjaardslaan bij Rengerspark Leeuwarden 2018.jpg",
@@ -86474,7 +86485,9 @@
      "author": "Wutsje",
      "lat": 53.19835278,
      "lng": 5.79658333,
-     "cats": "Category:Achmeatoren Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Willemskade, Leeuwarden Category:Zuiderstadsgracht (Leeuwarden)"
+     "cats": "Category:Achmeatoren Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Willemskade, Leeuwarden Category:Zuiderstadsgracht (Leeuwarden)",
+     "judged": "reject",
+     "verdict": "Wide canal/cityscape view with a skyscraper as the visual anchor; the tree has to be searched for among several street trees, fails the Cadiz distance test."
     }
    ]
   },
@@ -86567,7 +86580,9 @@
      "author": "ankeric @ Mapillary.com",
      "lat": null,
      "lng": null,
-     "cats": "Category:2018 in Leeuwarden Category:Blokhuisplein (Leeuwarden) Category:CC-BY-SA-4.0 Category:Images from Mapillary"
+     "cats": "Category:2018 in Leeuwarden Category:Blokhuisplein (Leeuwarden) Category:CC-BY-SA-4.0 Category:Images from Mapillary",
+     "judged": "reject",
+     "verdict": "Street/plaza scene dominated by parked bicycles and buildings; several trees in frame, none identifiable as the Crimean Linden specifically."
     },
     {
      "title": "File:Blokhuisplein Leeuwarden OpenTopo.jpg",
@@ -86577,7 +86592,9 @@
      "author": "Condor3d",
      "lat": null,
      "lng": null,
-     "cats": "Category:Blokhuisplein (buurt) Category:CC-BY-4.0 Category:Derivative works Category:Self-published work"
+     "cats": "Category:Blokhuisplein (buurt) Category:CC-BY-4.0 Category:Derivative works Category:Self-published work",
+     "judged": "reject",
+     "verdict": "This file is a street map of the Blokhuisplein area, not a photograph."
     }
    ]
   },
@@ -86709,7 +86726,9 @@
      "author": "Unknown photographer (Verenigde Fotobureaux)",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Eduard Otto Joseph Maria van Hövell tot Westerflier Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Military people in Maastricht Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Eduard Otto Joseph Maria van Hövell tot Westerflier Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Military people in Maastricht Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)",
+     "judged": "reject",
+     "verdict": "Archival black-and-white photograph of a reburial ceremony; no tree in frame."
     },
     {
      "title": "File:Maastricht, Waldeckpark, herbegrafenis Des Tombes, 1925 (2).jpg",
@@ -86719,7 +86738,9 @@
      "author": "Unknown photographer (Verenigde Fotobureaux)",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Flags in Maastricht Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Flags in Maastricht Category:Images from Vereenigde Fotobureaux Category:Leopold van Oppen Category:Netherlands photographs taken on 1925-10-28 Category:Photographs of Maastricht in HCL Category:Reburial of Andries Jan Jacob des Tombe Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)",
+     "judged": "reject",
+     "verdict": "Archival black-and-white photograph of a reburial ceremony; no tree in frame."
     },
     {
      "title": "File:Maastricht, Waldeckpark, schenking kanon, 1957.jpg",
@@ -86729,7 +86750,9 @@
      "author": "Unknown photographer (Het Zuiden)",
      "lat": null,
      "lng": null,
-     "cats": "Category:1957 in Maastricht Category:CC-BY-SA-3.0 Category:Cannons in Maastricht Category:Het Zuiden photographs in HCL (Maastricht) Category:People of Maastricht Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)"
+     "cats": "Category:1957 in Maastricht Category:CC-BY-SA-3.0 Category:Cannons in Maastricht Category:Het Zuiden photographs in HCL (Maastricht) Category:People of Maastricht Category:Template Unknown (artist) Category:Waldeckpark (Maastricht)",
+     "judged": "reject",
+     "verdict": "Archival black-and-white photograph of a cannon-donation ceremony with a crowd; no tree as subject."
     },
     {
      "title": "File:Stolperstein für Friederike Gobes-Nussbaum (Maastricht).jpg",
@@ -86843,7 +86866,9 @@
      "author": "Romaine",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Self-published work Category:Sint-Servaasbron Category:Taken with Panasonic Lumix DMC-TZ8"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Self-published work Category:Sint-Servaasbron Category:Taken with Panasonic Lumix DMC-TZ8",
+     "judged": "reject",
+     "verdict": "A fenced shrine/well monument is the subject, surrounded by several similar bare trees; none identifiable as the specific London Plane and none show plane bark."
     },
     {
      "title": "File:Maastricht-Sint-Servaasbron (7).JPG",
@@ -86853,7 +86878,9 @@
      "author": "Romaine",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Self-published work Category:Sint-Servaasbron Category:Taken with Panasonic Lumix DMC-TZ8"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Self-published work Category:Sint-Servaasbron Category:Taken with Panasonic Lumix DMC-TZ8",
+     "judged": "reject",
+     "verdict": "A stone gateway ruin is the subject; no tree visible in frame."
     }
    ]
   },
@@ -88945,7 +88972,9 @@
      "author": "Maillard, Marcel (1899-1977). Photographe. Ancien possesseur",
      "lat": null,
      "lng": null,
-     "cats": "Category:Artworks without Wikidata item Category:Files from Gallica Category:Images from Gallica Category:Images from Gallica (Bibliothèque nationale de France) uploaded by Gzen92Bot Category:Marcel Maillard Category:PD US expired"
+     "cats": "Category:Artworks without Wikidata item Category:Files from Gallica Category:Images from Gallica Category:Images from Gallica (Bibliothèque nationale de France) uploaded by Gzen92Bot Category:Marcel Maillard Category:PD US expired",
+     "judged": "reject",
+     "verdict": "Archival black-and-white glass-plate scan of a shaded lane, not a photograph of this tree."
     }
    ]
   },
@@ -96882,7 +96911,9 @@
      "author": "Johan Bakker",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2017 Category:Images from Wiki Loves Monuments 2017 in the Netherlands Category:Netherlands photographs taken on 2015-10-11 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl Category:Van Abbemuseum (old wing)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2017 Category:Images from Wiki Loves Monuments 2017 in the Netherlands Category:Netherlands photographs taken on 2015-10-11 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl Category:Van Abbemuseum (old wing)",
+     "judged": "reject",
+     "verdict": "The Van Abbemuseum building is the clear subject; a tree only frames the top corners of the shot."
     },
     {
      "title": "File:507030 van abbemuseum eindhoven.jpg",
@@ -96892,7 +96923,9 @@
      "author": "Johan Bakker",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2017 Category:Images from Wiki Loves Monuments 2017 in the Netherlands Category:Netherlands photographs taken on 2017-06-11 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl Category:Van Abbemuseum (old wing)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2017 Category:Images from Wiki Loves Monuments 2017 in the Netherlands Category:Netherlands photographs taken on 2017-06-11 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl Category:Van Abbemuseum (old wing)",
+     "judged": "reject",
+     "verdict": "Same museum building as the subject from a different angle; trees are peripheral, not the subject."
     },
     {
      "title": "File:Milieuboom Henk Combe, Eindhoven.JPG",
@@ -97030,7 +97063,9 @@
      "author": "Gouwenaar",
      "lat": null,
      "lng": null,
-     "cats": "Category:2019 in Leeuwarden Category:Blokhuispoort Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2019-02-27 Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:2019 in Leeuwarden Category:Blokhuispoort Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2019-02-27 Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Photograph of the Blokhuispoort building's facade and gate tower; no tree visible in frame at all."
     },
     {
      "title": "File:Blokhuispoort Leeuwarden 2022.jpg",
@@ -97052,7 +97087,9 @@
      "author": "Parsifal2000",
      "lat": null,
      "lng": null,
-     "cats": "Category:Blokhuispoort Category:CC-BY-SA-3.0-NL Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:Blokhuispoort Category:CC-BY-SA-3.0-NL Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Building facade is the subject; a tree crown is only partially visible at the right edge of the frame, not the subject."
     },
     {
      "title": "File:Leeuwarden Blokhuispoort 40 Voormalige Gevangenis Blokhuispoort vanuit het zuiden.JPG",
@@ -97062,7 +97099,9 @@
      "author": "Pimvantend",
      "lat": 53.19877,
      "lng": 5.80044,
-     "cats": "Category:Blokhuispoort Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2011-02-25 Category:Rijksmonumenten with known IDs Category:Self-published work"
+     "cats": "Category:Blokhuispoort Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2011-02-25 Category:Rijksmonumenten with known IDs Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Building is the subject with several bare winter trees in front of it; none identifiable as specifically the Horse Chestnut, and bare rather than in leaf."
     },
     {
      "title": "File:WLM - mringenoldus - Blokhuispoort (1).jpg",
@@ -97116,7 +97155,9 @@
      "author": "AcroniusZ",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Leeuwarden Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Spanjaardslaan, Leeuwarden Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Leeuwarden Category:Gemeentelijke monumenten with known IDs Category:Self-published work Category:Spanjaardslaan, Leeuwarden Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Photograph of a townhouse facade behind a hedge; only a small ornamental maple bush is visible in the private front garden, not the mapped Horse Chestnut."
     }
    ]
   },
@@ -99756,7 +99797,9 @@
      "author": "Romaine",
      "lat": 50.84423611,
      "lng": 5.69197778,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wide canal-side park view; no tree with a ginkgo's distinctive fan-shaped leaves is identifiable as the subject."
     },
     {
      "title": "File:Maastricht-Monseigneur Nolenspark (7).jpg",
@@ -99766,7 +99809,9 @@
      "author": "Romaine",
      "lat": 50.84430278,
      "lng": 5.69285,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Monseigneur Nolenspark (Maastricht) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "A stone lock/wall structure is the subject; the tree overhead is not identifiable as a ginkgo and is not the subject."
     },
     {
      "title": "File:Maastricht - Mgr. Nolenspark GM-1393 20190330.jpg",
@@ -102219,7 +102264,9 @@
      "author": "Sarah Stierch",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Guerneville, California Category:CC-Zero Category:March 2011 in California Category:Parson Jones Tree Category:Photos by Sarah Stierch Category:Plant photos by Sarah Stierch Category:Self-published work Category:Taken with Fujifilm FinePix S2000HD Category:United States photographs taken on 2011-03-14"
+     "cats": "Category:2011 in Guerneville, California Category:CC-Zero Category:March 2011 in California Category:Parson Jones Tree Category:Photos by Sarah Stierch Category:Plant photos by Sarah Stierch Category:Self-published work Category:Taken with Fujifilm FinePix S2000HD Category:United States photographs taken on 2011-03-14",
+     "judged": "reject",
+     "verdict": "Parson Jones is a named Coast Redwood at Armstrong Redwoods State Nature Reserve in California, a different tree/species/place than our Dawn Redwood in Spokane."
     },
     {
      "title": "File:Redwoods from below.jpg",
@@ -102229,7 +102276,9 @@
      "author": "Kira Saks",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Images from Wiki Science Competition 2019 in the United States Category:Redwood National and State Parks Category:Self-published work Category:Trees Category:Uploaded via Campaign:wsc-us Category:Wildlife and nature images from Wiki Science Competition 2019 Category:Wildlife and nature images from Wiki Science Competition 2019 in the United States"
+     "cats": "Category:CC-BY-4.0 Category:Images from Wiki Science Competition 2019 in the United States Category:Redwood National and State Parks Category:Self-published work Category:Trees Category:Uploaded via Campaign:wsc-us Category:Wildlife and nature images from Wiki Science Competition 2019 Category:Wildlife and nature images from Wiki Science Competition 2019 in the United States",
+     "judged": "reject",
+     "verdict": "Generic redwood-canopy stock photo with no location tying it to Finch Arboretum; a name/keyword match, not evidence."
     }
    ]
   },
@@ -102247,7 +102296,9 @@
      "author": "Dallas Police Department",
      "lat": null,
      "lng": null,
-     "cats": "Category:1926 in Texas Category:6048 (number) Category:Clyde Barrow Category:Dallas Police Department Category:Images from The Portal to Texas History Category:Mug shots of people of the United States from the 1920s Category:PD US not renewed"
+     "cats": "Category:1926 in Texas Category:6048 (number) Category:Clyde Barrow Category:Dallas Police Department Category:Images from The Portal to Texas History Category:Mug shots of people of the United States from the 1920s Category:PD US not renewed",
+     "judged": "reject",
+     "verdict": "A police mugshot of Clyde Barrow, matched only on the word 'Champion' in the tree's nickname. No tree in frame at all."
     },
     {
      "title": "File:The Champion Atlantic Coast Line 1941.JPG",
@@ -107561,7 +107612,9 @@
      "licence": "CC BY",
      "author": "(c) Alex Baxter, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.5026133333,-73.5812383333"
+     "obs_location": "45.5026133333,-73.5812383333",
+     "judged": "reject",
+     "verdict": "Close-up of leaves held in a hand; confirms species but fails the never-a-closeup rule, the tree itself is not shown."
     },
     {
      "title": "iNat obs 318916461 (Cercidiphyllum japonicum)",
@@ -107570,7 +107623,9 @@
      "licence": "CC BY",
      "author": "(c) Alex Baxter, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.5026133333,-73.5812383333"
+     "obs_location": "45.5026133333,-73.5812383333",
+     "judged": "approve",
+     "verdict": "Courtyard habit shot, tree fills a good share of the frame and is the clear subject, fresh spring leaves, daylight, matches the Stewart Biology Building courtyard address. iNat coordinate 45.5026133,-"
     }
    ]
   },
@@ -108697,6 +108752,1582 @@
      "lat": 35.232137,
      "lng": 134.785358,
      "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Yashiro-no-Okeyaki"
+    }
+   ]
+  },
+  "ens_013": {
+   "city": "Enschede",
+   "name": "The Sweet Birch of the Oosterbegraafplaats",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Enschede oosterbegraafplaats wandgraven.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Enschede_oosterbegraafplaats_wandgraven.jpg/960px-Enschede_oosterbegraafplaats_wandgraven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Enschede_oosterbegraafplaats_wandgraven.jpg",
+     "licence": "CC BY 2.5",
+     "author": "Simpleness",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:Graves in Overijssel Category:License migration redundant Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Kodak EasyShare DX6490"
+    },
+    {
+     "title": "File:Oosterbegraafplaats - Enschede.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Oosterbegraafplaats_-_Enschede.JPG/960px-Oosterbegraafplaats_-_Enschede.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Oosterbegraafplaats_-_Enschede.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jane023",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30"
+    },
+    {
+     "title": "File:Oosterbegraafplaats Enschede 2.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Oosterbegraafplaats_Enschede_2.JPG/960px-Oosterbegraafplaats_Enschede_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Oosterbegraafplaats_Enschede_2.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jane023",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30"
+    },
+    {
+     "title": "File:Oosterbegraafplaats Enschede 3.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Oosterbegraafplaats_Enschede_3.JPG/960px-Oosterbegraafplaats_Enschede_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Oosterbegraafplaats_Enschede_3.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jane023",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30"
+    },
+    {
+     "title": "File:Oosterbegraafplaats Enschede 5.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Oosterbegraafplaats_Enschede_5.JPG/960px-Oosterbegraafplaats_Enschede_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Oosterbegraafplaats_Enschede_5.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jane023",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30"
+    },
+    {
+     "title": "File:Oosterbegraafplaats Enschede 6.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Oosterbegraafplaats_Enschede_6.JPG/960px-Oosterbegraafplaats_Enschede_6.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Oosterbegraafplaats_Enschede_6.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jane023",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30"
+    },
+    {
+     "title": "File:Oosterbegraafplaats Enschede 7.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Oosterbegraafplaats_Enschede_7.JPG/960px-Oosterbegraafplaats_Enschede_7.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Oosterbegraafplaats_Enschede_7.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jane023",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30"
+    }
+   ]
+  },
+  "yab_004": {
+   "city": "Yabu",
+   "name": "Kuchioya no O-Abemaki",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Kuchioya no O-Abemaki A.jpg (Wikidata Q56855251)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Kuchioya_no_O-Abemaki_A.jpg/960px-Kuchioya_no_O-Abemaki_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.342915,
+     "lng": 134.706985,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Picture of the month on the Japanese Wikipedia Category:Self-published work",
+     "source": "wikidata/Q56855251"
+    },
+    {
+     "title": "File:Entrance sign to Kuchioya no O-Abemaki.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Entrance_sign_to_Kuchioya_no_O-Abemaki.jpg/960px-Entrance_sign_to_Kuchioya_no_O-Abemaki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Entrance_sign_to_Kuchioya_no_O-Abemaki.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.341053,
+     "lng": 134.70861,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Self-published work"
+    },
+    {
+     "title": "File:Kuchioya no O-Abemaki A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Kuchioya_no_O-Abemaki_A.jpg/960px-Kuchioya_no_O-Abemaki_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.342915,
+     "lng": 134.706985,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Picture of the month on the Japanese Wikipedia Category:Self-published work"
+    },
+    {
+     "title": "File:Kuchioya no O-Abemaki B.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Kuchioya_no_O-Abemaki_B.jpg/960px-Kuchioya_no_O-Abemaki_B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_B.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.343095,
+     "lng": 134.706792,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Self-published work"
+    },
+    {
+     "title": "File:Kuchioya no O-Abemaki C.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Kuchioya_no_O-Abemaki_C.jpg/960px-Kuchioya_no_O-Abemaki_C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_C.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.34282,
+     "lng": 134.706303,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Self-published work"
+    },
+    {
+     "title": "File:Kuchioya no O-Abemaki D.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Kuchioya_no_O-Abemaki_D.jpg/960px-Kuchioya_no_O-Abemaki_D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_D.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.342868,
+     "lng": 134.706457,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Self-published work"
+    },
+    {
+     "title": "File:Kuchioya no O-Abemaki E.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Kuchioya_no_O-Abemaki_E.jpg/960px-Kuchioya_no_O-Abemaki_E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_E.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.342868,
+     "lng": 134.706457,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Self-published work"
+    },
+    {
+     "title": "File:Kuchioya no O-Abemaki F.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Kuchioya_no_O-Abemaki_F.jpg/960px-Kuchioya_no_O-Abemaki_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_F.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.34308,
+     "lng": 134.70673,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Self-published work"
+    },
+    {
+     "title": "File:Stone monument in Kuchioya no O-Abemaki, natural monument of Japan.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Stone_monument_in_Kuchioya_no_O-Abemaki%2C_natural_monument_of_Japan.jpg/960px-Stone_monument_in_Kuchioya_no_O-Abemaki%2C_natural_monument_of_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Kuchioya_no_O-Abemaki,_natural_monument_of_Japan.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 35.34304,
+     "lng": 134.706738,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kuchioya no O-Abemaki Category:Self-published work"
+    }
+   ]
+  },
+  "yak_001": {
+   "city": "Yakushima",
+   "name": "Jomon Sugi",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:The Jomonsugi Cedar tree (52930615907).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/The_Jomonsugi_Cedar_tree_%2852930615907%29.jpg/960px-The_Jomonsugi_Cedar_tree_%2852930615907%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Jomonsugi_Cedar_tree_(52930615907).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Raita Futo from Tokyo, Japan",
+     "lat": 30.360863,
+     "lng": 130.529192,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Japan photographs taken on 2023-05-02 Category:Jomon sugi Category:May 2023 in Kagoshima prefecture Category:Photographs by Raita Futo"
+    },
+    {
+     "title": "File:The Jomonsugi Cedar tree (52931651493).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/The_Jomonsugi_Cedar_tree_%2852931651493%29.jpg/960px-The_Jomonsugi_Cedar_tree_%2852931651493%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Jomonsugi_Cedar_tree_(52931651493).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Raita Futo from Tokyo, Japan",
+     "lat": 30.360863,
+     "lng": 130.529192,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Japan photographs taken on 2023-05-02 Category:Jomon sugi Category:May 2023 in Kagoshima prefecture Category:Photographs by Raita Futo"
+    }
+   ]
+  },
+  "ynh_001": {
+   "city": "Yamanashi City",
+   "name": "Okkazuma no Shidarezakura (the Weeping Cherry of Okkazuma)",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Okkazuma-no Shidarezakura North side.JPG (Wikidata Q11369859)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Okkazuma-no_Shidarezakura_North_side.JPG/960px-Okkazuma-no_Shidarezakura_North_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_North_side.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Sakaori (talk)",
+     "lat": 35.762124,
+     "lng": 138.709382,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Okkazuma-no Shidarezakura Category:Self-published work",
+     "source": "wikidata/Q11369859"
+    },
+    {
+     "title": "File:Okkazuma-no Shidarezakura Back side.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Okkazuma-no_Shidarezakura_Back_side.JPG/960px-Okkazuma-no_Shidarezakura_Back_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_Back_side.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Sakaori (talk)",
+     "lat": 35.762023,
+     "lng": 138.709307,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Okkazuma-no Shidarezakura Category:Self-published work"
+    },
+    {
+     "title": "File:Okkazuma-no Shidarezakura East side.A.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Okkazuma-no_Shidarezakura_East_side.A.JPG/960px-Okkazuma-no_Shidarezakura_East_side.A.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_East_side.A.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Sakaori (talk)",
+     "lat": 35.761945,
+     "lng": 138.709629,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Okkazuma-no Shidarezakura Category:Self-published work"
+    },
+    {
+     "title": "File:Okkazuma-no Shidarezakura East side.B.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Okkazuma-no_Shidarezakura_East_side.B.JPG/960px-Okkazuma-no_Shidarezakura_East_side.B.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_East_side.B.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Sakaori (talk)",
+     "lat": 35.761945,
+     "lng": 138.709629,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Okkazuma-no Shidarezakura Category:Self-published work"
+    },
+    {
+     "title": "File:Okkazuma-no Shidarezakura Front side.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Okkazuma-no_Shidarezakura_Front_side.JPG/960px-Okkazuma-no_Shidarezakura_Front_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_Front_side.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Sakaori (talk)",
+     "lat": 35.761832,
+     "lng": 138.709382,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Okkazuma-no Shidarezakura Category:Self-published work"
+    },
+    {
+     "title": "File:Okkazuma-no Shidarezakura North side.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Okkazuma-no_Shidarezakura_North_side.JPG/960px-Okkazuma-no_Shidarezakura_North_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_North_side.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Sakaori (talk)",
+     "lat": 35.762124,
+     "lng": 138.709382,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Okkazuma-no Shidarezakura Category:Self-published work"
+    },
+    {
+     "title": "File:Okkazuma-no Shidarezakura Southeast side.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Okkazuma-no_Shidarezakura_Southeast_side.JPG/960px-Okkazuma-no_Shidarezakura_Southeast_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_Southeast_side.JPG",
+     "licence": "CC BY 3.0",
+     "author": "Sakaori (talk)",
+     "lat": 35.761902,
+     "lng": 138.70957,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Okkazuma-no Shidarezakura Category:Self-published work"
+    }
+   ]
+  },
+  "yas_001": {
+   "city": "Yangshuo",
+   "name": "Big Banyan Tree, Yangshuo",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:1 aerial yangshuo panorama 2017.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/1_aerial_yangshuo_panorama_2017.jpg/960px-1_aerial_yangshuo_panorama_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1_aerial_yangshuo_panorama_2017.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chensiyuan",
+     "lat": 24.810195,
+     "lng": 110.394132,
+     "cats": "Category:Aerial photographs of Guangxi Category:CC-BY-SA-4.0 Category:December 2016 China photographs Category:Exposure time 1/150 sec Category:F-number f/8 Category:Featured pictures from unmanned aerial vehicles Category:Featured pictures of China Category:Featured pictures on Wikimedia Commons Category:Files with coordinates missing SDC location of creation Category:ISO speed rating 100 Category:Images with annotations Category:Karst topography in China Category:Lens focal length 3.61 mm Category:Photo challenge winners Category:Photographs taken on 2016-12-29 Category:Pictures of the day (2022) Category:Self-published work Category:Taken with DJI FC6310 Category:Yangshuo"
+    },
+    {
+     "title": "File:1 pano cuiping yangshuo 2016.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/1_pano_cuiping_yangshuo_2016.jpg/960px-1_pano_cuiping_yangshuo_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1_pano_cuiping_yangshuo_2016.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chensiyuan",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Featured pictures of China Category:Featured pictures of landscapes Category:Featured pictures on Wikimedia Commons Category:Landscapes of China Category:Large images Category:Self-published work Category:Sunsets of Guangxi Category:Yangshuo Category:Yellow sunsets of China"
+    },
+    {
+     "title": "File:20090502 Collapsing a balloon Yangshuo 5928.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/20090502_Collapsing_a_balloon_Yangshuo_5928.jpg/960px-20090502_Collapsing_a_balloon_Yangshuo_5928.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20090502_Collapsing_a_balloon_Yangshuo_5928.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jakub Hałun",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Hot air balloons of China Category:Quality images Category:Quality images by Jakub Hałun Category:Quality images missing SDC depicts Category:Quality images of hot air balloons Category:Self-published work Category:Yangshuo"
+    },
+    {
+     "title": "File:20090502 Yangshuo bactrian camel 6160.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/20090502_Yangshuo_bactrian_camel_6160.jpg/960px-20090502_Yangshuo_bactrian_camel_6160.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20090502_Yangshuo_bactrian_camel_6160.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jakub Hałun",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Camels in China Category:Quality images Category:Quality images by Jakub Hałun Category:Quality images missing SDC depicts Category:Quality images of Camelus bactrianus Category:Quality images of China Category:Self-published work Category:Yangshuo"
+    },
+    {
+     "title": "File:Main Gate for Big Banyan Tree in Yangshuo.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Main_Gate_for_Big_Banyan_Tree_in_Yangshuo.jpg/960px-Main_Gate_for_Big_Banyan_Tree_in_Yangshuo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Main_Gate_for_Big_Banyan_Tree_in_Yangshuo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "PQ77wd",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Big Banyan Tree, Guilin Category:CC-BY-SA-4.0 Category:Self-published work"
+    },
+    {
+     "title": "File:Yangshuo China 1990 - 33657512451.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Yangshuo_China_1990_-_33657512451.jpg/960px-Yangshuo_China_1990_-_33657512451.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yangshuo_China_1990_-_33657512451.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Michael Woodhead",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:Yangshuo"
+    },
+    {
+     "title": "File:Yangshuo fisherman.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Yangshuo_fisherman.jpg/960px-Yangshuo_fisherman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yangshuo_fisherman.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Rod Waddington",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cormorant fishing Category:Cormorant fishing bamboo raft Category:Flickr images reviewed by FlickreviewR 2 Category:Yangshuo"
+    },
+    {
+     "title": "File:Yangshuo hills and lake.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Yangshuo_hills_and_lake.jpg/960px-Yangshuo_hills_and_lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yangshuo_hills_and_lake.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jan Kranendonk (https://www.jankranendonk.nl)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Jan Kranendonk Category:Rural area of Yangshuo Category:Self-published work"
+    },
+    {
+     "title": "File:Yangshuo ricefield.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Yangshuo_ricefield.jpg/960px-Yangshuo_ricefield.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yangshuo_ricefield.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jan Kranendonk (https://www.jankranendonk.nl)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Hills in Yangshuo Category:Jan Kranendonk Category:Paddy fields Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 238554536 (Ficus altissima)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/424723379/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/238554536",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "24.7345,110.4805589722"
+    },
+    {
+     "title": "iNat obs 238554536 (Ficus altissima)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/424723392/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/238554536",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "24.7345,110.4805589722"
+    }
+   ]
+  },
+  "yos_001": {
+   "city": "Yoshida",
+   "name": "Nomanji no Sotetsu",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Nomanji Temple Cycad A.jpg (Wikidata Q11611985)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Nomanji_Temple_Cycad_A.jpg/960px-Nomanji_Temple_Cycad_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Nomanji_Temple_Cycad_A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.778962,
+     "lng": 138.248053,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Nomanji no Sotetsu Category:Self-published work",
+     "source": "wikidata/Q11611985"
+    }
+   ]
+  },
+  "ypr_003": {
+   "city": "Ypres",
+   "name": "The Christusboom",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Hollebeke, golfterrein, Christusboom, detail - 1978 - onroerenderfgoed.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/72/Hollebeke%2C_golfterrein%2C_Christusboom%2C_detail_-_1978_-_onroerenderfgoed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Hollebeke,_golfterrein,_Christusboom,_detail_-_1978_-_onroerenderfgoed.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Decoodt, Hannelore",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Onroerend erfgoed in Ypres Category:Onroerend erfgoed with known IDs"
+    },
+    {
+     "title": "File:Hollebeke, golfterrein, christusboom - 1977 - onroerenderfgoed.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Hollebeke%2C_golfterrein%2C_christusboom_-_1977_-_onroerenderfgoed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Hollebeke,_golfterrein,_christusboom_-_1977_-_onroerenderfgoed.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Decoodt, Hannelore",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Onroerend erfgoed in Ypres Category:Onroerend erfgoed with known IDs"
+    }
+   ]
+  },
+  "ypr_001": {
+   "city": "Ypres",
+   "name": "The Liberty Tree of Voormezele",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Voormezele (Ypres) - op een mistige herfstdag.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Voormezele_%28Ypres%29_-_op_een_mistige_herfstdag.jpg/960px-Voormezele_%28Ypres%29_-_op_een_mistige_herfstdag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Voormezele_(Ypres)_-_op_een_mistige_herfstdag.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Spotter2",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Self-published work Category:Voormezele"
+    },
+    {
+     "title": "File:Voormezele - Ieper - Belgium.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Voormezele_-_Ieper_-_Belgium.jpg/960px-Voormezele_-_Ieper_-_Belgium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Voormezele_-_Ieper_-_Belgium.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Spotter2",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Onze-Lieve-Vrouwkerk (Voormezele) Category:Self-published work Category:Voormezele"
+    }
+   ]
+  },
+  "ypr_002": {
+   "city": "Ypres",
+   "name": "The Peace Tree of Vlamertinge",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ieper Vlamertinge Sixplein vredesboom - 284830 - onroerenderfgoed.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Ieper_Vlamertinge_Sixplein_vredesboom_-_284830_-_onroerenderfgoed.jpg/960px-Ieper_Vlamertinge_Sixplein_vredesboom_-_284830_-_onroerenderfgoed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ieper_Vlamertinge_Sixplein_vredesboom_-_284830_-_onroerenderfgoed.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Vanmaele, Nele",
+     "lat": 50.855161,
+     "lng": 2.820544,
+     "cats": "Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 2° E) Category:Onroerend erfgoed in Ypres Category:Onroerend erfgoed with known IDs"
+    }
+   ]
+  },
+  "ypr_004": {
+   "city": "Ypres",
+   "name": "The Farm Cross Limes of Boezinge",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Boezinge - Canal d'Ypres - panoramio (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Boezinge_-_Canal_d%27Ypres_-_panoramio_%281%29.jpg/960px-Boezinge_-_Canal_d%27Ypres_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Boezinge_-_Canal_d%27Ypres_-_panoramio_(1).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Jean Marc Gfp",
+     "lat": 50.90852,
+     "lng": 2.850206,
+     "cats": "Category:Belgium photographs taken on 2012-05-13 Category:Boezinge Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (50° N, 2° E) Category:Ieperlee Category:Media needing category review as of 4 January 2017 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+    },
+    {
+     "title": "File:View of Boezinge from Artillery Wood Cemetery, Boezinge, Ieper (Ypres) 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Boezinge_from_Artillery_Wood_Cemetery%2C_Boezinge%2C_Ieper_%28Ypres%29_01.jpg/960px-View_of_Boezinge_from_Artillery_Wood_Cemetery%2C_Boezinge%2C_Ieper_%28Ypres%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:View_of_Boezinge_from_Artillery_Wood_Cemetery,_Boezinge,_Ieper_(Ypres)_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Llywelyn2000",
+     "lat": 50.89956,
+     "lng": 2.87231,
+     "cats": "Category:Artillery Wood Cemetery Category:Boezinge Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 2° E) Category:Photos by User:Llywelyn2000 Category:Self-published work Category:Taken with Sony DSC-WX350"
+    }
+   ]
+  },
+  "yvi_001": {
+   "city": "Yvignac-la-Tour",
+   "name": "The Millennial Yew of Yvignac-la-Tour",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Rue Mathurin Monier à Yvignac-la-Tour (Côtes d'Armor).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Rue_Mathurin_Monier_%C3%A0_Yvignac-la-Tour_%28C%C3%B4tes_d%27Armor%29.jpg/960px-Rue_Mathurin_Monier_%C3%A0_Yvignac-la-Tour_%28C%C3%B4tes_d%27Armor%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Rue_Mathurin_Monier_%C3%A0_Yvignac-la-Tour_(C%C3%B4tes_d%27Armor).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "DyanLingua",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings in Côtes-d'Armor Category:CC-BY-SA-4.0 Category:Mathurin Monier Category:Self-published work Category:Street signs in Côtes-d'Armor Category:Yvignac-la-Tour"
+    },
+    {
+     "title": "File:Yvignac-la-Tour - albezia and clouds (48564261177).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Yvignac-la-Tour_-_albezia_and_clouds_%2848564261177%29.jpg/960px-Yvignac-la-Tour_-_albezia_and_clouds_%2848564261177%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yvignac-la-Tour_-_albezia_and_clouds_(48564261177).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Mike Finn from Worcester, United Kingdom",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bretagne photographs taken on 2019-07-17 Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Mike Finn Category:Trees in Côtes-d'Armor Category:Unidentified trees in France Category:Yvignac-la-Tour"
+    },
+    {
+     "title": "File:Yvignac-la-Tour - loving geocache (48564121281).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Yvignac-la-Tour_-_loving_geocache_%2848564121281%29.jpg/960px-Yvignac-la-Tour_-_loving_geocache_%2848564121281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yvignac-la-Tour_-_loving_geocache_(48564121281).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Mike Finn from Worcester, United Kingdom",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bretagne photographs taken on 2019-07-17 Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Geocaches in France Category:Photographs by Mike Finn Category:Reliefs in Côtes-d'Armor Category:Yvignac-la-Tour"
+    },
+    {
+     "title": "File:Yvignac-la-Tour - église 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Yvignac-la-Tour_-_%C3%A9glise_1.jpg/960px-Yvignac-la-Tour_-_%C3%A9glise_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yvignac-la-Tour_-_%C3%A9glise_1.jpg",
+     "licence": "CC BY 2.5",
+     "author": "Ash_Crow",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:CC-BY-SA-4.0 Category:Church towers in Côtes-d'Armor Category:Files by Sylvain Boissel Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with HP PhotoSmart R707 Category:Église Saint-Malo d'Yvignac-la-Tour"
+    },
+    {
+     "title": "File:Yvignac-la-Tour houses and clouds (48564130576).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Yvignac-la-Tour_houses_and_clouds_%2848564130576%29.jpg/960px-Yvignac-la-Tour_houses_and_clouds_%2848564130576%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yvignac-la-Tour_houses_and_clouds_(48564130576).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Mike Finn from Worcester, United Kingdom",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bretagne photographs taken on 2019-07-17 Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Mike Finn Category:Slate roofs in Côtes-d'Armor Category:Yvignac-la-Tour"
+    }
+   ]
+  },
+  "zaa_002": {
+   "city": "Zaanstad",
+   "name": "The Copper Beech of the Zuiddijk Cemetery",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:21.52291-Bruggetje Zuiddijk Zaandam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/21.52291-Bruggetje_Zuiddijk_Zaandam.jpg/960px-21.52291-Bruggetje_Zuiddijk_Zaandam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:21.52291-Bruggetje_Zuiddijk_Zaandam.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Peter de Rijcke",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Artworks with known accession number Category:Artworks without Wikidata item Category:CC-BY-4.0 Category:GWToolset Batch Upload Category:Images from Europeana Category:Images from Gemeentearchief Zaanstad Category:Paintings of Zaandam Category:Peter de Rijcke Category:Unsupported object"
+    }
+   ]
+  },
+  "zaa_003": {
+   "city": "Zaanstad",
+   "name": "The Plane of the Westzijde",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:1900 Zaandam, Westzijde in de omgeving van de Papenpadsluis.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/1900_Zaandam%2C_Westzijde_in_de_omgeving_van_de_Papenpadsluis.jpg/960px-1900_Zaandam%2C_Westzijde_in_de_omgeving_van_de_Papenpadsluis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1900_Zaandam,_Westzijde_in_de_omgeving_van_de_Papenpadsluis.jpg",
+     "licence": "Public domain",
+     "author": "AnonymousUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Images from Gemeentearchief Zaanstad Category:PD-anon-70-EU Category:Westzijde, Zaandam Category:Zaandam in the 1900s"
+    },
+    {
+     "title": "File:1900s Zaandam, Westzijde 79.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/1900s_Zaandam%2C_Westzijde_79.jpg/960px-1900s_Zaandam%2C_Westzijde_79.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1900s_Zaandam,_Westzijde_79.jpg",
+     "licence": "Public domain",
+     "author": "Anoniem",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Emile Muns Category:Images from Gemeentearchief Zaanstad Category:PD-anon-70-EU Category:Westzijde, Zaandam Category:Zaandam in the 1900s"
+    },
+    {
+     "title": "File:Stier met vrouw Julia van Verschuer Westzijde Zaandam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Stier_met_vrouw_Julia_van_Verschuer_Westzijde_Zaandam.jpg/960px-Stier_met_vrouw_Julia_van_Verschuer_Westzijde_Zaandam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Stier_met_vrouw_Julia_van_Verschuer_Westzijde_Zaandam.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Brbbl",
+     "lat": 52.44473333,
+     "lng": 4.819275,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cattle riding in art Category:Julia van Verschuer Category:Netherlands photographs taken on 2011-04-03 Category:Sculptures in Zaanstad Category:Self-published work Category:Statues of bulls in the Netherlands Category:Taken with Canon Digital IXUS 105 Category:Westzijde, Zaandam"
+    }
+   ]
+  },
+  "zaa_005": {
+   "city": "Zaanstad",
+   "name": "The Horse Chestnut of the Kerkbuurt",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Marken Kerkbuurt 132A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Marken_Kerkbuurt_132A.jpg/960px-Marken_Kerkbuurt_132A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Marken_Kerkbuurt_132A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ymblanter",
+     "lat": 52.460162,
+     "lng": 5.106247,
+     "cats": "Category:2025 in Waterland Category:Buildings in Marken Category:CC-BY-SA-4.0 Category:Kerkbuurt, Marken Category:North Holland photographs taken on 2025-03-15 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400"
+    },
+    {
+     "title": "File:Marken Kerkbuurt 14, 16.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Marken_Kerkbuurt_14%2C_16.jpg/960px-Marken_Kerkbuurt_14%2C_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Marken_Kerkbuurt_14,_16.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ymblanter",
+     "lat": 52.460069,
+     "lng": 5.105888,
+     "cats": "Category:2025 in Waterland Category:CC-BY-SA-4.0 Category:Houses in Marken Category:Kerkbuurt, Marken Category:North Holland photographs taken on 2025-03-15 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400"
+    },
+    {
+     "title": "File:Marken Kerkbuurt 189.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Marken_Kerkbuurt_189.jpg/960px-Marken_Kerkbuurt_189.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Marken_Kerkbuurt_189.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ymblanter",
+     "lat": 52.458708,
+     "lng": 5.106569,
+     "cats": "Category:2025 in Waterland Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Waterland Category:Gemeentelijke monumenten with known IDs Category:Houses in Marken Category:Kerkbuurt, Marken Category:North Holland photographs taken on 2025-03-15 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400"
+    },
+    {
+     "title": "File:Marken Kerkbuurt 190.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Marken_Kerkbuurt_190.jpg/960px-Marken_Kerkbuurt_190.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Marken_Kerkbuurt_190.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ymblanter",
+     "lat": 52.458569,
+     "lng": 5.106674,
+     "cats": "Category:2025 in Waterland Category:CC-BY-SA-4.0 Category:Houses in Marken Category:Kerkbuurt, Marken Category:North Holland photographs taken on 2025-03-15 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400"
+    },
+    {
+     "title": "File:Marken Kerkbuurt 4A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Marken_Kerkbuurt_4A.jpg/960px-Marken_Kerkbuurt_4A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Marken_Kerkbuurt_4A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ymblanter",
+     "lat": 52.459494,
+     "lng": 5.105639,
+     "cats": "Category:2025 in Waterland Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Houses in Marken Category:Kerkbuurt, Marken Category:North Holland photographs taken on 2025-03-15 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400"
+    },
+    {
+     "title": "File:Westzaan - Kerkbuurt - View ENE on wooden house Kerkbuurt 16.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Westzaan_-_Kerkbuurt_-_View_ENE_on_wooden_house_Kerkbuurt_16.jpg/960px-Westzaan_-_Kerkbuurt_-_View_ENE_on_wooden_house_Kerkbuurt_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Westzaan_-_Kerkbuurt_-_View_ENE_on_wooden_house_Kerkbuurt_16.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.462942,
+     "lng": 4.772117,
+     "cats": "Category:CC-BY-SA-4.0 Category:Kerkbuurt (Westzaan) Category:Netherlands photographs taken on 2011-05-29 Category:Self-published work Category:Vernacular architecture Category:Wooden houses in Westzaan"
+    },
+    {
+     "title": "File:Westzaan - Kerkbuurt - View South on wooden houses Kerkbuurt 2 & Kerkbuurt 3 - Wooden Drawbridge.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Westzaan_-_Kerkbuurt_-_View_South_on_wooden_houses_Kerkbuurt_2_%26_Kerkbuurt_3_-_Wooden_Drawbridge.jpg/960px-Westzaan_-_Kerkbuurt_-_View_South_on_wooden_houses_Kerkbuurt_2_%26_Kerkbuurt_3_-_Wooden_Drawbridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Westzaan_-_Kerkbuurt_-_View_South_on_wooden_houses_Kerkbuurt_2_%26_Kerkbuurt_3_-_Wooden_Drawbridge.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "lat": 52.4622,
+     "lng": 4.772475,
+     "cats": "Category:CC-BY-SA-4.0 Category:Drawbridges in the Netherlands Category:Kerkbuurt (Westzaan) Category:Kerkbuurt 3, Westzaan Category:Netherlands photographs taken on 2011-05-29 Category:Self-published work Category:Vernacular architecture Category:Wooden houses in Westzaan"
+    }
+   ]
+  },
+  "zaa_009": {
+   "city": "Zaanstad",
+   "name": "The Horse Chestnut of the Dorpsstraat",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zal_001": {
+   "city": "Žalgiriai",
+   "name": "The Hermann Sudermann Oak",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zal_002": {
+   "city": "Žalgiriai",
+   "name": "Pagryniai Oak",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Pagrynių ąžuolas 1.JPG (Wikidata Q61386081)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG/960px-Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.333115,
+     "lng": 21.485101,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Pagryniai oak Category:Self-published work",
+     "source": "wikidata/Q61386081"
+    }
+   ]
+  },
+  "zeh_001": {
+   "city": "Zehdenick",
+   "name": "The Gerichtslinde of Zehdenick",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Gerichtslinde Zehdenick.JPG (Wikidata Q1513567)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Gerichtslinde_Zehdenick.JPG/960px-Gerichtslinde_Zehdenick.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Zehdenick.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Olaf Meister (Olaf2)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2008 in Brandenburg Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Gerichtslinde Zehdenick Category:License migration redundant Category:On OSM Category:Photographs by Olaf Meister Category:Self-published work Category:Taken with Casio Exilim EX-Z8",
+     "source": "wikidata/Q1513567"
+    },
+    {
+     "title": "File:Gerichtslinde Amönau (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Gerichtslinde_Am%C3%B6nau_%281%29.jpg/960px-Gerichtslinde_Am%C3%B6nau_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Am%C3%B6nau_(1).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hydro",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:Hydro Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Gerichtslinde Amönau Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-HE Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Quality images Category:Quality images from Wiki Loves Earth 2014 in Germany Category:Quality images of Tilia Category:Quality images of Wetter (Hessen) Category:Quality images of cultural heritage monuments in Hesse Category:Quality images of trees in Germany Category:Self-published work Category:Uploaded via Campaign:wle-de Category:Winners of Wiki Loves Earth 2014 in Germany"
+    },
+    {
+     "title": "File:Gerichtslinde Zehdenick.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Gerichtslinde_Zehdenick.JPG/960px-Gerichtslinde_Zehdenick.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Zehdenick.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Olaf Meister (Olaf2)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2008 in Brandenburg Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Gerichtslinde Zehdenick Category:License migration redundant Category:On OSM Category:Photographs by Olaf Meister Category:Self-published work Category:Taken with Casio Exilim EX-Z8"
+    },
+    {
+     "title": "File:Kloster Zehdenick Kreuzgang 2012.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Kloster_Zehdenick_Kreuzgang_2012.jpg/960px-Kloster_Zehdenick_Kreuzgang_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kloster_Zehdenick_Kreuzgang_2012.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Hans G. Oberlack",
+     "lat": 52.977818,
+     "lng": 13.338244,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cloister at Kloster Zehdenick Category:Files with coordinates missing SDC location of creation Category:Kloster Zehdenick Category:Self-published work Category:Taken with Ricoh Caplio R7"
+    },
+    {
+     "title": "File:Rathaus Zehdenick 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Rathaus_Zehdenick_2.jpg/960px-Rathaus_Zehdenick_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Rathaus_Zehdenick_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FrankBothe",
+     "lat": 52.979305,
+     "lng": 13.33229,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Town hall of Zehdenick"
+    },
+    {
+     "title": "File:Zehdenick Friedrich-Ebert-Platz Gerichtslinde.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG/960px-Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sinuhe20",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gerichtslinde Zehdenick Category:Self-published work"
+    },
+    {
+     "title": "File:Zehdenick Friedrich-Ebert-Platz Gerichtslinde Stein.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde_Stein.JPG/960px-Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde_Stein.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde_Stein.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sinuhe20",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Friedrich-Ebert-Platz (Zehdenick) Category:Self-published work"
+    },
+    {
+     "title": "File:Zehdenick Friedrich-Ebert-Platz Gerichtslinde Tafel.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde_Tafel.JPG/960px-Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde_Tafel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde_Tafel.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sinuhe20",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Friedrich-Ebert-Platz (Zehdenick) Category:Self-published work"
+    },
+    {
+     "title": "File:Zehdenick town hall.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Zehdenick_town_hall.jpg/960px-Zehdenick_town_hall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zehdenick_town_hall.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Doris Antony, Berlin",
+     "lat": 52.97919748,
+     "lng": 13.33224177,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Olympus C-300Z / D-550Z Category:Town hall of Zehdenick"
+    }
+   ]
+  },
+  "zil_001": {
+   "city": "Žilina",
+   "name": "The Plane Tree of Budatín Park",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:2017 Plane tree from Budatin SK.jpg (Wikidata Q110640806)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/2017_Plane_tree_from_Budatin_SK.jpg/960px-2017_Plane_tree_from_Budatin_SK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2017_Plane_tree_from_Budatin_SK.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Alena Hroncová and CimaArtPhoto, Květa Kicková",
+     "lat": 49.2361,
+     "lng": 18.73366,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Nominees in 2017 Category:Plane tree from Budatin Category:Tree of the Year (Slovakia)",
+     "source": "wikidata/Q110640806"
+    },
+    {
+     "title": "File:2017 Plane tree from Budatin SK.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/2017_Plane_tree_from_Budatin_SK.jpg/960px-2017_Plane_tree_from_Budatin_SK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2017_Plane_tree_from_Budatin_SK.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Alena Hroncová and CimaArtPhoto, Květa Kicková",
+     "lat": 49.2361,
+     "lng": 18.73366,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Nominees in 2017 Category:Plane tree from Budatin Category:Tree of the Year (Slovakia)"
+    },
+    {
+     "title": "File:Platan javorolistý, Budatínský park, Budatín, Žilina, okres Žilina.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Platan_javorolist%C3%BD%2C_Budat%C3%ADnsk%C3%BD_park%2C_Budat%C3%ADn%2C_%C5%BDilina%2C_okres_%C5%BDilina.jpg/960px-Platan_javorolist%C3%BD%2C_Budat%C3%ADnsk%C3%BD_park%2C_Budat%C3%ADn%2C_%C5%BDilina%2C_okres_%C5%BDilina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD,_Budat%C3%ADnsk%C3%BD_park,_Budat%C3%ADn,_%C5%BDilina,_okres_%C5%BDilina.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Fry72",
+     "lat": 49.236498,
+     "lng": 18.733831,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by Fry72 from Žilina Region/2025 Category:Files with coordinates missing SDC location of creation Category:Pages with local camera coordinates and mismatching SDC coordinates Category:Plane tree from Budatin Category:Platanus × hispanica in Slovakia Category:Self-published work"
+    }
+   ]
+  },
+  "zil_002": {
+   "city": "Žilina",
+   "name": "The Lindens of Kysucká Street",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:187, Lipy v Žiline - tabuľa chránený strom na nižšej lipe 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/187%2C_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_ni%C5%BE%C5%A1ej_lipe_1.jpg/960px-187%2C_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_ni%C5%BE%C5%A1ej_lipe_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:187,_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_ni%C5%BE%C5%A1ej_lipe_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.233306,
+     "lng": 18.736491,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Lipy v Žiline Category:Media lacking a description Category:Self-published work Category:Tree signs in Slovakia Category:Uploaded via Campaign:wle-sk"
+    },
+    {
+     "title": "File:187, Lipy v Žiline - tabuľa chránený strom na nižšej lipe 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/187%2C_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_ni%C5%BE%C5%A1ej_lipe_2.jpg/960px-187%2C_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_ni%C5%BE%C5%A1ej_lipe_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:187,_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_ni%C5%BE%C5%A1ej_lipe_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.233306,
+     "lng": 18.736491,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Lipy v Žiline Category:Media lacking a description Category:Self-published work Category:Tree signs in Slovakia Category:Uploaded via Campaign:wle-sk"
+    },
+    {
+     "title": "File:187, Lipy v Žiline - tabuľa chránený strom na vyššej lipe.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/187%2C_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_vy%C5%A1%C5%A1ej_lipe.jpg/960px-187%2C_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_vy%C5%A1%C5%A1ej_lipe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:187,_Lipy_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom_na_vy%C5%A1%C5%A1ej_lipe.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.233317,
+     "lng": 18.736434,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Lipy v Žiline Category:Media lacking a description Category:Self-published work Category:Tree signs in Slovakia Category:Uploaded via Campaign:wle-sk"
+    }
+   ]
+  },
+  "zil_003": {
+   "city": "Žilina",
+   "name": "The Maple of Sokolovská Street",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:188, Javor v Žiline - juhovýchodný pohľad.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/188%2C_Javor_v_%C5%BDiline_-_juhov%C3%BDchodn%C3%BD_poh%C4%BEad.jpg/960px-188%2C_Javor_v_%C5%BDiline_-_juhov%C3%BDchodn%C3%BD_poh%C4%BEad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:188,_Javor_v_%C5%BDiline_-_juhov%C3%BDchodn%C3%BD_poh%C4%BEad.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.222501,
+     "lng": 18.733451,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Garages in Slovakia Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Javor v Žiline Category:Media lacking a description Category:Parking in Slovakia Category:Self-published work Category:Uploaded via Campaign:wle-sk"
+    },
+    {
+     "title": "File:188, Javor v Žiline - pohľad zdola.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/188%2C_Javor_v_%C5%BDiline_-_poh%C4%BEad_zdola.jpg/960px-188%2C_Javor_v_%C5%BDiline_-_poh%C4%BEad_zdola.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:188,_Javor_v_%C5%BDiline_-_poh%C4%BEad_zdola.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.222615,
+     "lng": 18.733256,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Javor v Žiline Category:Media lacking a description Category:Self-published work Category:Uploaded via Campaign:wle-sk"
+    },
+    {
+     "title": "File:188, Javor v Žiline - severovýchodný pohľad.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/188%2C_Javor_v_%C5%BDiline_-_severov%C3%BDchodn%C3%BD_poh%C4%BEad.jpg/960px-188%2C_Javor_v_%C5%BDiline_-_severov%C3%BDchodn%C3%BD_poh%C4%BEad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:188,_Javor_v_%C5%BDiline_-_severov%C3%BDchodn%C3%BD_poh%C4%BEad.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.22288,
+     "lng": 18.733165,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Javor v Žiline Category:Media lacking a description Category:Self-published work Category:Uploaded via Campaign:wle-sk"
+    },
+    {
+     "title": "File:188, Javor v Žiline - tabuľa chránený strom.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/188%2C_Javor_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom.jpg/960px-188%2C_Javor_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:188,_Javor_v_%C5%BDiline_-_tabu%C4%BEa_chr%C3%A1nen%C3%BD_strom.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.222629,
+     "lng": 18.733043,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Javor v Žiline Category:Media lacking a description Category:Self-published work Category:Tree signs in Slovakia Category:Uploaded via Campaign:wle-sk"
+    },
+    {
+     "title": "File:188, Javor v Žiline - východný pohľad.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/188%2C_Javor_v_%C5%BDiline_-_v%C3%BDchodn%C3%BD_poh%C4%BEad.jpg/960px-188%2C_Javor_v_%C5%BDiline_-_v%C3%BDchodn%C3%BD_poh%C4%BEad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:188,_Javor_v_%C5%BDiline_-_v%C3%BDchodn%C3%BD_poh%C4%BEad.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "TomphanTK",
+     "lat": 49.22274,
+     "lng": 18.733794,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023 in Slovakia Category:Images from Wiki Loves Earth missing SDC location of creation Category:Javor v Žiline Category:Media lacking a description Category:Parking in Slovakia Category:Road signs in Slovakia Category:Self-published work Category:Uploaded via Campaign:wle-sk"
+    }
+   ]
+  },
+  "mar_001": {
+   "city": "Zurich",
+   "name": "The Marthalen Oak",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Alte Eiche in Marthalen - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Alte_Eiche_in_Marthalen_-_panoramio.jpg/960px-Alte_Eiche_in_Marthalen_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kurt Spalinger-Røes",
+     "lat": 47.640408,
+     "lng": 8.648343,
+     "cats": "Category:Alte Eiche (Marthalen) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 828710"
+    },
+    {
+     "title": "File:Alte Eiche in Marthalen - panoramio (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Alte_Eiche_in_Marthalen_-_panoramio_%281%29.jpg/960px-Alte_Eiche_in_Marthalen_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(1).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kurt Spalinger-Røes",
+     "lat": 47.640453,
+     "lng": 8.648203,
+     "cats": "Category:Alte Eiche (Marthalen) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 828710 Category:Tree signs in Switzerland"
+    },
+    {
+     "title": "File:Alte Eiche in Marthalen - panoramio (2).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Alte_Eiche_in_Marthalen_-_panoramio_%282%29.jpg/960px-Alte_Eiche_in_Marthalen_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(2).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kurt Spalinger-Røes",
+     "lat": 47.640398,
+     "lng": 8.648393,
+     "cats": "Category:Alte Eiche (Marthalen) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 828710"
+    },
+    {
+     "title": "File:Alte Eiche in Marthalen - panoramio (3).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Alte_Eiche_in_Marthalen_-_panoramio_%283%29.jpg/960px-Alte_Eiche_in_Marthalen_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(3).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kurt Spalinger-Røes",
+     "lat": 47.640598,
+     "lng": 8.648284,
+     "cats": "Category:Alte Eiche (Marthalen) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 828710"
+    },
+    {
+     "title": "File:Bank bei der alten Eiche in Marthalen - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Bank_bei_der_alten_Eiche_in_Marthalen_-_panoramio.jpg/960px-Bank_bei_der_alten_Eiche_in_Marthalen_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bank_bei_der_alten_Eiche_in_Marthalen_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kurt Spalinger-Røes",
+     "lat": 47.640403,
+     "lng": 8.648306,
+     "cats": "Category:Benken Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 828710 Category:Wooden benches in Switzerland"
+    },
+    {
+     "title": "File:Bank bei der alten Eiche in Marthalen - panoramio (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Bank_bei_der_alten_Eiche_in_Marthalen_-_panoramio_%281%29.jpg/960px-Bank_bei_der_alten_Eiche_in_Marthalen_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bank_bei_der_alten_Eiche_in_Marthalen_-_panoramio_(1).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Kurt Spalinger-Røes",
+     "lat": 47.640413,
+     "lng": 8.648242,
+     "cats": "Category:Benken Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 828710 Category:Wooden benches in Switzerland"
+    },
+    {
+     "title": "File:Gasthäuser in Marthalen ZH (2019).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Gasth%C3%A4user_in_Marthalen_ZH_%282019%29.jpg/960px-Gasth%C3%A4user_in_Marthalen_ZH_%282019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gasth%C3%A4user_in_Marthalen_ZH_(2019).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "JoachimKohler-HB",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:F-number f/10 Category:Inns in the canton of Zürich Category:Lens focal length 17 mm Category:Quality images Category:Quality images of the canton of Zürich Category:Quality images of timber framed houses in Switzerland Category:Self-published work Category:Taken with Panasonic Lumix DMC-GX8 Category:Taken with Panasonic Lumix G Vario HD 14-140mm F3.5-5.6 Asph Power O.I.S. Category:Timber framing in Marthalen"
+    },
+    {
+     "title": "File:Marthalen Guggenbüel.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Marthalen_Guggenb%C3%BCel.JPG/960px-Marthalen_Guggenb%C3%BCel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Marthalen_Guggenb%C3%BCel.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Paebi",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural properties of local significance in Marthalen Category:GFDL Category:Houses in the canton of Zürich Category:License migration redundant Category:Marthalen Category:Self-published work Category:Taken with Panasonic Lumix DMC-FS7 Category:Vineyard houses in Switzerland"
+    }
+   ]
+  },
+  "boz_001": {
+   "city": "Zurich",
+   "name": "The Linden of Linn",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Linde von Linn (AG, Schweiz), Januar 2010.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/02/Linde_von_Linn_%28AG%2C_Schweiz%29%2C_Januar_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Linde_von_Linn_(AG,_Schweiz),_Januar_2010.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Potentiam",
+     "lat": 47.470833,
+     "lng": 8.133333,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Linner Linde Category:Self-published work Category:Taken with Canon EOS 1000D"
+    },
+    {
+     "title": "File:Linde von Linn (AG, Schweiz), März 2014.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Linde_von_Linn_%28AG%2C_Schweiz%29%2C_M%C3%A4rz_2014.JPG/960px-Linde_von_Linn_%28AG%2C_Schweiz%29%2C_M%C3%A4rz_2014.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Linde_von_Linn_(AG,_Schweiz),_M%C3%A4rz_2014.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Potentiam",
+     "lat": 47.470833,
+     "lng": 8.133333,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Linner Linde Category:Self-published work"
+    },
+    {
+     "title": "File:Linde von Linn Oktober 2015.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Linde_von_Linn_Oktober_2015.jpg/960px-Linde_von_Linn_Oktober_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Linde_von_Linn_Oktober_2015.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "David Croll / Keimzelle",
+     "lat": 47.47034,
+     "lng": 8.132483,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Linner Linde Category:Self-published work"
+    }
+   ]
+  },
+  "zwi_001": {
+   "city": "Zwieslerwaldhaus",
+   "name": "The Waldhaustanne (Zwieslerwaldhaus Silver Fir)",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Große Waldhaustanne.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Gro%C3%9Fe_Waldhaustanne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Waldhaustanne.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Andred12",
+     "lat": 49.099083,
+     "lng": 13.23,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lindberg Category:Nationalerbe-Baum Category:Nationalpark Bayerischer Wald Category:Self-published work Category:Taken with Google Pixel 4a"
+    },
+    {
+     "title": "iNat obs 271897310 (Abies alba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/489127026/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/271897310",
+     "licence": "CC BY",
+     "author": "(c) Emil Jantke, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "49.0992002997,13.2297978997"
+    }
+   ]
+  },
+  "zwo_001": {
+   "city": "Zwolle",
+   "name": "The Plane of the Potgietersingel",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:20150819 Beeld Potgieter detail Potgietersingel Zwolle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/20150819_Beeld_Potgieter_detail_Potgietersingel_Zwolle.jpg/960px-20150819_Beeld_Potgieter_detail_Potgietersingel_Zwolle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20150819_Beeld_Potgieter_detail_Potgietersingel_Zwolle.jpg",
+     "licence": "CC0",
+     "author": "Gouwenaar",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Busts in Zwolle Category:CC-Zero Category:Charles van Wijk Category:Everhardus Johannes Potgieter Category:Potgietersingel Category:Self-published work"
+    },
+    {
+     "title": "File:20150819 Beeld Potgietersingel Zwolle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20150819_Beeld_Potgietersingel_Zwolle.jpg/960px-20150819_Beeld_Potgietersingel_Zwolle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20150819_Beeld_Potgietersingel_Zwolle.jpg",
+     "licence": "CC0",
+     "author": "Gouwenaar",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:FoP-Netherlands Category:Koos Kroon Category:Netherlands photographs taken on 2015-08-19 Category:Potgietersingel Category:Sculptures in Zwolle Category:Self-published work"
+    },
+    {
+     "title": "File:Potgietersingel 1A, Zwolle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Potgietersingel_1A%2C_Zwolle.jpg/960px-Potgietersingel_1A%2C_Zwolle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potgietersingel_1A,_Zwolle.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Ben Bender",
+     "lat": 52.510208,
+     "lng": 6.090798,
+     "cats": "Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Potgietersingel"
+    },
+    {
+     "title": "File:Potgietersingel 2, Zwolle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Potgietersingel_2%2C_Zwolle.jpg/960px-Potgietersingel_2%2C_Zwolle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potgietersingel_2,_Zwolle.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dqfn13",
+     "lat": 52.509814,
+     "lng": 6.091298,
+     "cats": "Category:2016 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2016-08-28 Category:Pilasters in the Netherlands Category:Potgietersingel Category:Self-published work Category:Villas in Zwolle",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Potgietersingel 3, Zwolle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Potgietersingel_3%2C_Zwolle.jpg/960px-Potgietersingel_3%2C_Zwolle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potgietersingel_3,_Zwolle.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dqfn13",
+     "lat": 52.509817,
+     "lng": 6.09094,
+     "cats": "Category:2016 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2016-08-28 Category:Pilasters in the Netherlands Category:Potgietersingel Category:Self-published work Category:Villas in Zwolle Category:White houses in the Netherlands",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Potgietersingel 5-6-7, Zwolle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Potgietersingel_5-6-7%2C_Zwolle.jpg/960px-Potgietersingel_5-6-7%2C_Zwolle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potgietersingel_5-6-7,_Zwolle.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dqfn13",
+     "lat": 52.509325,
+     "lng": 6.091713,
+     "cats": "Category:2016 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Houses in Zwolle Category:Netherlands photographs taken on 2016-08-28 Category:Pilasters in the Netherlands Category:Potgietersingel Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Potgietersingel Zwolle Park.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Potgietersingel_Zwolle_Park.JPG/960px-Potgietersingel_Zwolle_Park.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potgietersingel_Zwolle_Park.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Onderwijsgek",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Potgietersingel Category:Self-published work Category:Taken with Nikon D90"
+    },
+    {
+     "title": "File:Zwolle Park Potgietersingel 02.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Zwolle_Park_Potgietersingel_02.JPG/960px-Zwolle_Park_Potgietersingel_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_Park_Potgietersingel_02.JPG",
+     "licence": "CC BY-SA 2.5 nl",
+     "author": "Onderwijsgek",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.5-NL Category:Potgietersingel Category:Self-published work"
+    }
+   ]
+  },
+  "zwo_002": {
+   "city": "Zwolle",
+   "name": "The Beech of the Boschwijk Avenue",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zwo_003": {
+   "city": "Zwolle",
+   "name": "The Horse Chestnut of the Park Eekhout",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zwo_004": {
+   "city": "Zwolle",
+   "name": "The Red Oak of Boschwijk",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zwo_005": {
+   "city": "Zwolle",
+   "name": "The Gate Beech of the Park Eekhout",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zwo_006": {
+   "city": "Zwolle",
+   "name": "The Copper Beech by the Fountain",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zwo_007": {
+   "city": "Zwolle",
+   "name": "The Oak of the Kranenburg Cemetery",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zwo_008": {
+   "city": "Zwolle",
+   "name": "The Turkey Oak of the Coehoornsingel",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": []
+  },
+  "zwo_009": {
+   "city": "Zwolle",
+   "name": "The Copper Beech of Groot Wezenland",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Zwolle GM Groot Wezenland 30.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Zwolle_GM_Groot_Wezenland_30.jpg/960px-Zwolle_GM_Groot_Wezenland_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Groot_Wezenland_30.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.511973,
+     "lng": 6.100729,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+    },
+    {
+     "title": "File:Zwolle GM Groot Wezenland 34.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Zwolle_GM_Groot_Wezenland_34.jpg/960px-Zwolle_GM_Groot_Wezenland_34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Groot_Wezenland_34.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.512259,
+     "lng": 6.101031,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+    },
+    {
+     "title": "File:Zwolle GM Groot Wezenland 37.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Zwolle_GM_Groot_Wezenland_37.jpg/960px-Zwolle_GM_Groot_Wezenland_37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Groot_Wezenland_37.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.512365,
+     "lng": 6.101339,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Zwolle GM Groot Wezenland 39.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Zwolle_GM_Groot_Wezenland_39.jpg/960px-Zwolle_GM_Groot_Wezenland_39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Groot_Wezenland_39.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.512527,
+     "lng": 6.101386,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Zwolle GM Groot Wezenland 40.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Zwolle_GM_Groot_Wezenland_40.jpg/960px-Zwolle_GM_Groot_Wezenland_40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Groot_Wezenland_40.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.512544,
+     "lng": 6.101548,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    }
+   ]
+  },
+  "zwo_010": {
+   "city": "Zwolle",
+   "name": "The Beech of Ter Pelkwijkpark",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Zwolle GM Ter Pelkwijkpark 14.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Zwolle_GM_Ter_Pelkwijkpark_14.jpg/960px-Zwolle_GM_Ter_Pelkwijkpark_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Ter_Pelkwijkpark_14.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.51125,
+     "lng": 6.098643,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+    },
+    {
+     "title": "File:Zwolle GM Ter Pelkwijkpark 15.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Zwolle_GM_Ter_Pelkwijkpark_15.jpg/960px-Zwolle_GM_Ter_Pelkwijkpark_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Ter_Pelkwijkpark_15.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.511267,
+     "lng": 6.098537,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+    },
+    {
+     "title": "File:Zwolle GM Ter Pelkwijkpark 16-16A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Zwolle_GM_Ter_Pelkwijkpark_16-16A.jpg/960px-Zwolle_GM_Ter_Pelkwijkpark_16-16A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Ter_Pelkwijkpark_16-16A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.511313,
+     "lng": 6.09845,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+    },
+    {
+     "title": "File:Zwolle GM Ter Pelkwijkpark 17.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Zwolle_GM_Ter_Pelkwijkpark_17.jpg/960px-Zwolle_GM_Ter_Pelkwijkpark_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Ter_Pelkwijkpark_17.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.511408,
+     "lng": 6.09835,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Zwolle GM Ter Pelkwijkpark 21.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Zwolle_GM_Ter_Pelkwijkpark_21.jpg/960px-Zwolle_GM_Ter_Pelkwijkpark_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Ter_Pelkwijkpark_21.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.511873,
+     "lng": 6.097972,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Zwolle RM Ter Pelkwijkpark 18.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Zwolle_RM_Ter_Pelkwijkpark_18.jpg/960px-Zwolle_RM_Ter_Pelkwijkpark_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_RM_Ter_Pelkwijkpark_18.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.51145,
+     "lng": 6.09811,
+     "cats": "Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2019-11-26 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Ter Pelkwijkpark 18, Zwolle Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    }
+   ]
+  },
+  "zwo_011": {
+   "city": "Zwolle",
+   "name": "The Plane of the Badhuiswal",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Overzicht Achtergracht met Badhuiswal - Zwolle - 20228489 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228489_-_RCE.jpg/960px-Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228489_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228489_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Canals in Zwolle Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983)"
+    },
+    {
+     "title": "File:Overzicht Achtergracht met Badhuiswal - Zwolle - 20228490 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228490_-_RCE.jpg/960px-Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228490_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228490_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Canals in Zwolle Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983)"
+    },
+    {
+     "title": "File:Overzicht Achtergracht met Badhuiswal vanaf Diezerkade. - Zwolle - 20228491 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Overzicht_Achtergracht_met_Badhuiswal_vanaf_Diezerkade._-_Zwolle_-_20228491_-_RCE.jpg/960px-Overzicht_Achtergracht_met_Badhuiswal_vanaf_Diezerkade._-_Zwolle_-_20228491_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Achtergracht_met_Badhuiswal_vanaf_Diezerkade._-_Zwolle_-_20228491_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Canals in Zwolle Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983)"
+    },
+    {
+     "title": "File:Overzicht Badhuiswal met Stadsgracht (links) en Achtergracht (rechts) - Zwolle - 20228501 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Overzicht_Badhuiswal_met_Stadsgracht_%28links%29_en_Achtergracht_%28rechts%29_-_Zwolle_-_20228501_-_RCE.jpg/960px-Overzicht_Badhuiswal_met_Stadsgracht_%28links%29_en_Achtergracht_%28rechts%29_-_Zwolle_-_20228501_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Badhuiswal_met_Stadsgracht_(links)_en_Achtergracht_(rechts)_-_Zwolle_-_20228501_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983) Category:Stadsgracht (Zwolle)"
+    },
+    {
+     "title": "File:Zwolle GM Badhuiswal 8-9.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Zwolle_GM_Badhuiswal_8-9.jpg/960px-Zwolle_GM_Badhuiswal_8-9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Badhuiswal_8-9.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.514464,
+     "lng": 6.100732,
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Zwolle GM Badhuiswal 8.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Zwolle_GM_Badhuiswal_8.jpg/960px-Zwolle_GM_Badhuiswal_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Badhuiswal_8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.514464,
+     "lng": 6.100732,
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    },
+    {
+     "title": "File:Zwolle GM Badhuiswal 9.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Zwolle_GM_Badhuiswal_9.jpg/960px-Zwolle_GM_Badhuiswal_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Badhuiswal_9.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.51437,
+     "lng": 6.100915,
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Dutch municipal/national heritage-building survey photo (GM/RM address series); the building facade is the subject in every sampled image from this series (verified across zwo_009, zwo_010, zwo_011 an"
+    }
+   ]
+  },
+  "zwo_012": {
+   "city": "Zwolle",
+   "name": "The Copper Beech of the Badhuiswal",
+   "checked": "2026-09-17",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Overzicht Achtergracht met Badhuiswal - Zwolle - 20228489 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228489_-_RCE.jpg/960px-Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228489_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228489_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Canals in Zwolle Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983)"
+    },
+    {
+     "title": "File:Overzicht Achtergracht met Badhuiswal - Zwolle - 20228490 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228490_-_RCE.jpg/960px-Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228490_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Achtergracht_met_Badhuiswal_-_Zwolle_-_20228490_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Canals in Zwolle Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983)"
+    },
+    {
+     "title": "File:Overzicht Achtergracht met Badhuiswal vanaf Diezerkade. - Zwolle - 20228491 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Overzicht_Achtergracht_met_Badhuiswal_vanaf_Diezerkade._-_Zwolle_-_20228491_-_RCE.jpg/960px-Overzicht_Achtergracht_met_Badhuiswal_vanaf_Diezerkade._-_Zwolle_-_20228491_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Achtergracht_met_Badhuiswal_vanaf_Diezerkade._-_Zwolle_-_20228491_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Canals in Zwolle Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983)"
+    },
+    {
+     "title": "File:Overzicht Badhuiswal met Stadsgracht (links) en Achtergracht (rechts) - Zwolle - 20228501 - RCE.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Overzicht_Badhuiswal_met_Stadsgracht_%28links%29_en_Achtergracht_%28rechts%29_-_Zwolle_-_20228501_-_RCE.jpg/960px-Overzicht_Badhuiswal_met_Stadsgracht_%28links%29_en_Achtergracht_%28rechts%29_-_Zwolle_-_20228501_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Overzicht_Badhuiswal_met_Stadsgracht_(links)_en_Achtergracht_(rechts)_-_Zwolle_-_20228501_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A. J. van der Wal",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Photographs by Ton van der Wal in Zwolle (1983) Category:Stadsgracht (Zwolle)"
+    },
+    {
+     "title": "File:Zwolle GM Badhuiswal 8-9.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Zwolle_GM_Badhuiswal_8-9.jpg/960px-Zwolle_GM_Badhuiswal_8-9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Badhuiswal_8-9.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.514464,
+     "lng": 6.100732,
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+    },
+    {
+     "title": "File:Zwolle GM Badhuiswal 8.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Zwolle_GM_Badhuiswal_8.jpg/960px-Zwolle_GM_Badhuiswal_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Badhuiswal_8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.514464,
+     "lng": 6.100732,
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+    },
+    {
+     "title": "File:Zwolle GM Badhuiswal 9.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Zwolle_GM_Badhuiswal_9.jpg/960px-Zwolle_GM_Badhuiswal_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zwolle_GM_Badhuiswal_9.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "HenkvD",
+     "lat": 52.51437,
+     "lng": 6.100915,
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
     }
    ]
   }

@@ -180,14 +180,27 @@
       "access": "Free, in a public forest (Abistwald). The local museum's own visitor page says the path there crosses the FC Ellikon/Marthalen football pitch, and jokingly advises bringing a football along; no gate, ticket or restriction is mentioned.",
       "transport": "Marthalen railway station (Zurich-Schaffhausen line, roughly 25-30 min from Zurich HB) then on foot into the Abistwald, direction and distance not independently verified by us.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Alte_Eiche_in_Marthalen_-_panoramio_%282%29.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Kurt Spalinger-Røes, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2332,
+        "height": 4992
       },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Alte_Eiche_in_Marthalen_-_panoramio_%281%29.jpg",
+          "license": "CC BY 3.0",
+          "attribution": "Kurt Spalinger-Røes, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3264,
+          "height": 2448
+        }
+      ],
+      "height_m": 34,
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the largest tree in a wood already known for unusually large oaks, trunk about 5.6 metres round. It stands in the Abistwald, reached via the FC Ellikon/Marthalen football pitch."
+      "how_to_recognise": "You can recognise it as the largest tree in a wood already known for unusually large oaks, trunk about 5.6 metres round. A small plaque partway up the trunk gives the museum's own figures: 34m tall, 5.60m round, about 360 years old."
     },
     {
       "id": "boz_001",

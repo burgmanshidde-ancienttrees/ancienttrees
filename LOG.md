@@ -60,6 +60,38 @@ Not done, and it is the other half of the same report: **none of the 17 tree
 pages carries a recognition line**, which is rung 7 and the cheapest unique
 text we have. Left for a run.
 
+## 2026-09-17 (continuation 8) - Ischia settled, Marthalen Oak photographed, Vancouver and Houston verify passes dispatched
+
+Picked up after an earlier attempt in this window stopped with 74 minutes
+still unspent. `passcheck.py --claims` was clear and `leads.py --ready` was
+empty, so worked down CLAUDE.md's Step 0 ladder: `health.py` flagged the iOS
+floor job as failing, which is the same well-documented flake (a tap race on
+"person-more") already blocked on a `workflow`-scope permission this bot's
+token lacks, reconfirmed 2026-09-09/13/16; nothing new to add.
+
+**Ischia settled to a leads verdict** (`data/leads/ischia.json`), same
+thin-and-spread shape Ravenna got yesterday: 3 MASAF candidates 2.3-17km
+apart, below the six-candidate verify floor. `city_queue.py` regenerated so
+it stops recommending it.
+
+**The Marthalen Oak (Zurich) now has a photograph.** `photo_gaps.py
+--shortlist` printed one candidate; found 8 queued, 6 geotagged within
+metres of our pin, all CC BY 3.0 from one 2015 Panoramio upload. Approved a
+full-height shot as the lead and added a trunk-plaque close-up as a second
+photo (the 2026-09-12 `photos` field), which happens to independently
+confirm our story's exact figures (34m, 5.60m round, ~360 years) from an
+official-looking museum plaque. Added `height_m: 34`.
+
+**Dispatched two register-backed verify passes** on cities from Hidde's
+2026-08-19 named list (from-zero web research is explicitly on there,
+targeting 10 trees each): Vancouver (15 unmined City of Vancouver Heritage
+Register leads, currently 4/10) and Houston (10 unmined Texas Big Tree
+Registry leads, non-commercial licence so lead-only). Both claimed in
+data/in-flight.json. Results still pending when this entry was written; a
+later run should check `passcheck.py --claims` and merge whatever they
+delivered to `data/research/vancouver-verified.json` /
+`data/research/houston-verified.json`, or release the claim if they died.
+
 ## 2026-09-17 (session with Hidde) - His Kyoto sighting now points at the muku
 
 On his "punt 2 doe dat maar": sighting 84ebae36 moved from kyo_016 (the Sudajii) to kyo_019 (the Twisted Muku of Omiya Gate) in Supabase, name included, with a fresh `updated_at` so the sync fix of 2026-09-12 takes it on his phone.
@@ -79,6 +111,29 @@ The photograph-versus-tick split stays open: Hidde wants to think about it longe
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 7) - Ravenna settled with a leads-file verdict, a photo-queue viewing pass, one new photo (Montreal's McGill Katsura)
+
+`leads.py --ready` was empty (0 READY), so per the harness instructions this
+went to Step 0. `city_queue.py --next`'s OPENABLE list was all cities too
+thin to dispatch a verify pass on (1-3 candidates each, spread far apart);
+Ravenna specifically had been checked and passed over five times already
+without ever getting a `data/leads/` file, so it kept re-surfacing. Wrote
+`data/leads/ravenna.json` with the verdict and re-ran `city_queue.py` to
+regenerate the queue; it now settles correctly. Ischia checked too (also
+too thin, 3 candidates 2-17km apart).
+
+With no cheap new-coverage target, spent the rest of the window on a photo
+viewing pass (2026-09-01 already rules this in for a night run): fetched
+and judged every unjudged queued candidate for the biggest zero-photo
+cities (Leeuwarden, Haarlem, Maastricht, Eindhoven, Zwolle, Spokane,
+Rotterdam, Hobart, Rouen). Result: 39 rejected, 2 held, 1 approved
+(Montreal's McGill Katsura, an iNaturalist photo whose coordinate matches
+our pin within about 13m). Full reasoning and the repeatable false-positive
+patterns (Dutch heritage-building surveys, archival B&W material, keyword
+collisions) are in CURATION.md.
+
+Rebuild and qa.py both clean (8887 pages). preflight.py: 0 problems.
+
 ## 2026-09-17 (continuation 6, previous attempt in this window stopped after 8 min with 112 min unspent) - Enschede 12 -> 13, and confirmed both rung-2 alerts are known non-issues
 
 Followed the harness's own order. **Claims first:** one claim standing,
