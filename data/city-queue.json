@@ -738,7 +738,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 21,
-   "photos": 0,
+   "photos": 1,
    "walks": 2,
    "register": 277,
    "ready": 0,
@@ -4198,7 +4198,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 13,
-   "photos": 0,
+   "photos": 1,
    "walks": 2,
    "register": 0,
    "ready": 0,
@@ -7055,7 +7055,8 @@
    "work_score": 2.03,
    "travel": 1323,
    "why_pooled": "Same Campania inheritance as Capri, plus La Mortella, one of the most important gardens in the Mediterranean, which keeps its own records.",
-   "wikidata": 0
+   "wikidata": 0,
+   "settled": "VERDICT: Ischia has no publishable supply right now, checked 2026-09-17. passcheck.py --brief lists only 3 unmined MASAF register candidates within 20km of the city centre (40.7314,13.8951): a Farnia (Quercus robur, girth 8.7m) 2.3km out at 40.71592,13.91339, a Carpino nero (Ostrya carpinifolia, girth 2.0m) 2.6km out at 40.73987,13.92372, roughly 2.8km from the first tree rather than genuinely clustered, and a Fico magnolioide (Ficus macrophylla, girth 8.0m) 17.0km away and unrelated to either. That is below the six-candidate floor for dispatching a verify pass, and even at 3 candidates the city sits below the four-tree floor a page needs. No Wikidata leads within range. Kept so nobody re-runs this hunt against Ischia; re-open only if a new register or a walkable cluster of leads turns up near the city centre."
   },
   {
    "city": "Spokane",
