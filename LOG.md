@@ -20,6 +20,29 @@ The photograph-versus-tick split stays open: Hidde wants to think about it longe
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 7) - Ravenna settled with a leads-file verdict, a photo-queue viewing pass, one new photo (Montreal's McGill Katsura)
+
+`leads.py --ready` was empty (0 READY), so per the harness instructions this
+went to Step 0. `city_queue.py --next`'s OPENABLE list was all cities too
+thin to dispatch a verify pass on (1-3 candidates each, spread far apart);
+Ravenna specifically had been checked and passed over five times already
+without ever getting a `data/leads/` file, so it kept re-surfacing. Wrote
+`data/leads/ravenna.json` with the verdict and re-ran `city_queue.py` to
+regenerate the queue; it now settles correctly. Ischia checked too (also
+too thin, 3 candidates 2-17km apart).
+
+With no cheap new-coverage target, spent the rest of the window on a photo
+viewing pass (2026-09-01 already rules this in for a night run): fetched
+and judged every unjudged queued candidate for the biggest zero-photo
+cities (Leeuwarden, Haarlem, Maastricht, Eindhoven, Zwolle, Spokane,
+Rotterdam, Hobart, Rouen). Result: 39 rejected, 2 held, 1 approved
+(Montreal's McGill Katsura, an iNaturalist photo whose coordinate matches
+our pin within about 13m). Full reasoning and the repeatable false-positive
+patterns (Dutch heritage-building surveys, archival B&W material, keyword
+collisions) are in CURATION.md.
+
+Rebuild and qa.py both clean (8887 pages). preflight.py: 0 problems.
+
 ## 2026-09-17 (continuation 6, previous attempt in this window stopped after 8 min with 112 min unspent) - Enschede 12 -> 13, and confirmed both rung-2 alerts are known non-issues
 
 Followed the harness's own order. **Claims first:** one claim standing,

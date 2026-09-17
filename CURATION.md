@@ -18,7 +18,55 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-17 (continuation 6) - Enschede 12 -> 13, the Sweet Birch of the Oosterbegraafplaats
+## 2026-09-17 (continuation 7) - Ravenna settled to a leads-file verdict, a photo-queue cleanup pass, one new photo (Montreal)
+
+**Ravenna given a written leads-file verdict**, closing a gap the 2026-09-17
+continuation-5 fix (`settled_verdict()` in city_queue.py) didn't yet cover:
+Ravenna had been checked and passed over as too thin five separate times
+(2026-09-11, 09-12, 09-13, 09-16, this pass) but never got a `data/leads/`
+file of its own, so it kept resurfacing on `city_queue.py --next`'s OPENABLE
+list. Wrote `data/leads/ravenna.json` with the verdict (4 MASAF register
+candidates, one near the centre and three 17-19km out, none forming a
+walkable cluster, below the six-candidate floor); re-ran `city_queue.py`
+(no flags) to regenerate data/city-queue.json/CITY_QUEUE.md/city-list.json/
+LEDGER.html, and Ravenna now prints under SETTLED rather than OPENABLE.
+
+Also checked Ischia (register=2, 3 unmined candidates 2.3-17km apart, same
+thin-and-spread shape, not written to a leads file this pass since only one
+brief was read) and Ottawa/Caserta/Tilburg (all already fully judged-negative
+photo queues from earlier passes, not fresh gaps).
+
+**Photo queue cleanup: a viewing pass on the biggest zero-photo cities'
+queued candidates**, per the 2026-09-01 ruling that a night run may take a
+viewing pass. `leads.py --ready` was empty (0 READY) at session start, so
+this filled the window instead of a write pass. Fetched and judged every
+unjudged candidate for Leeuwarden (41 trees, 0 photos, the single biggest
+gap), Haarlem, Maastricht, Eindhoven, Zwolle, Spokane, Rotterdam, Hobart and
+Rouen: 39 rejected, 2 held (Haarlem's Kenaupark lime: two candidates show
+the right park but at least two similar bare limes stand near the same
+lawn, and our own how_to_recognise line singles this one out as "the
+youngest," which no photograph can confirm without a nameplate), 1 approved
+(Montreal's mtl_013, the McGill Katsura: an iNaturalist courtyard photo
+whose own coordinate sits about 13m from our pin, species independently
+confirmed by the same observation's leaf close-up).
+
+The pattern worth recording for the next pass: nearly every queued
+candidate for these cities was a false positive from name/address matching
+rather than an actual photo of the tree, in three repeatable shapes. Dutch
+municipal heritage-building surveys (Commons titles like "Zwolle GM
+<street address>" or "<Street> N, Zwolle") photograph the FACADE at a
+monument's address, not the street tree beside it; all 12 of Zwolle's
+candidates and 2 of Haarlem's were this. Archival black-and-white material
+(a 1910 postcard, RCE facade surveys, a glass-plate lane scan, funeral and
+ceremony photos) came up repeatedly and is banned outright regardless of
+subject. And keyword collisions produced outright wrong subjects: a
+different, famous Californian redwood matched on "redwood," a Bonnie-and-
+Clyde mugshot matched on "Champion," a gravestone matched on the
+deceased's own park-adjacent name.
+
+Rebuilt (`npx astro build`, needed a fresh `npm install`, no node_modules
+this session) and ran `scripts/qa.py`: 8887 pages, clean. `preflight.py`:
+0 problems.
 
 Released a standing claim rather than starting fresh: an earlier attempt in
 this same window had already run a verify pass and left its finding on disk
