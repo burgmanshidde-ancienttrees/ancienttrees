@@ -14137,6 +14137,41 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-17T14:31:51+00:00",
+   "date": "2026-09-17",
+   "run_id": "35234153046",
+   "minutes": 53.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 423,
+   "denials": 28,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(for), Bash(grep), Bash(ls), Bash(mkdir), Bash(ps), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 9714861,
+   "claims_held": [
+    "Niagara Falls",
+    "Wellington",
+    "Kilkenny",
+    "Izmir",
+    "Stirling",
+    "Evora"
+   ],
+   "commits": 9,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "helmond",
+     "trees": 1
+    },
+    {
+     "city": "viroflay",
+     "trees": 1
+    }
+   ],
+   "trees": 2,
+   "logged": false
   }
  ],
  "schedule_changes": [
