@@ -1,0 +1,79 @@
+{
+ "_note": "de overlay for hamburg, written 2026-09-17 from data/cities/hamburg.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Hamburg",
+ "title": "Alte Bäume in Hamburg: 6 bemerkenswerte Exemplare",
+ "meta_description": "Hamburgs älteste Bäume stehen an der Elbe: eine Eiche mit 8,30 Metern Umfang und hohlem Stamm, und eine zweite mit einer ausgewachsenen Birke im Inneren.",
+ "intro": "Zwei Brände haben diese Liste geformt. Der Brand von 1842 und der Feuersturm vom Juli 1943 nahmen ganze Stadtteile mit, und die alten Bäume, die überlebt haben, stehen abseits von beiden, in den Landsitzparks entlang der Elbe. Die besten sind eine Eiche von 8,30 Metern Umfang mit einer Höhlung, durch die man nach oben sehen kann, und eine zweite Eiche 500 Meter weiter, die in ihrem offenen Stamm eine ausgewachsene Birke trägt. Näher an der Innenstadt hält ein Schnurbaum an der Alsterpromenade einen Weltrekord für seine Art.",
+ "question_title": "Was ist der älteste Baum Hamburgs? Die Hohle Eiche",
+ "question_meta": "Die Hohle Eiche im Jenischpark, 8,30 Meter Umfang und über den Stamm auf etwa 1600 datiert, ist der älteste Baum dieser Hamburger Seite. Wo sie steht.",
+ "question_answer": "Der älteste Baum dieser Seite ist die Hohle Eiche im Jenischpark, eine Stieleiche im öffentlichen Park über der Elbe in Othmarschen, und ihr Alter ist eine Schätzung und keine Aufzeichnung. Niemand hat notiert, wann sie gepflanzt wurde. Die deutsche Baumkunde datiert einen solchen Baum stattdessen über seinen Stamm, und mit 8,30 Metern Umfang kommt sie auf etwa 1600 mit fünfzig Jahren Spielraum, also rund 375 bis 475 Jahre. Dieser Umfang macht sie zugleich zur dicksten Stieleiche Hamburgs: Sie wurde im April 2020 gemessen, und zwei unabhängige deutsche Baumregister stimmen auf den Zentimeter überein. Sie steht etwa 100 Meter östlich des Jenischhauses, frei zugänglich, ohne Tor zu jeder Stunde. Wenn Sie von einer datierten Untersuchung wissen, die eines dieser Alter eingrenzt, sagen Sie es uns.",
+ "question_context": "Hamburg datiert die meisten seiner bemerkenswerten Bäume, indem es sie misst, und nicht, indem es in Akten nachschlägt, weshalb fast jedes Alter hier als Spanne ankommt und nicht als Zahl. Die stadtweite Liste der markanten und alten Bäume nennt ein Pflanzjahr mit einer Toleranz dahinter, 1600 plus minus fünfzig für die Eiche im Jenischpark und 1700 plus minus zwanzig für ihre Nachbarin, und das unabhängige Register auf baumkunde.de stimmt bei den Stammumfängen hinter diesen Angaben auf den Zentimeter überein. Diese Übereinstimmung ist die stärkste Gegenprobe, die auf dieser Seite zur Verfügung steht. Ein Baum entgeht dem Schätzen ganz: Die Platane in Planten un Blomen kam am 6. November 1821 als erster Baum des Hamburger Botanischen Gartens in die Erde, ihr Alter ist also genau bekannt, etwa 205 Jahre. Der Japanische Schnurbaum am Alsterufer liegt zwischen beiden Verfahren, die Umweltbehörde der Stadt gibt ihm in einer Mitteilung vom April 2026 rund 150 Jahre. Die beiden ältesten Bäume der Seite stehen 500 Meter voneinander entfernt im selben Park, was den ältesten von ihnen zu einem Nachmittag macht und nicht zu einer Expedition.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum Hamburgs?",
+   "a": "Die Hohle Eiche im Jenischpark ist die älteste dieser Liste, über ihre 8,30 Meter Stammumfang auf etwa 1600 datiert, mit fünfzig Jahren Spielraum. Hamburg datiert seine alten Bäume, indem es sie misst, das ist also eine Schätzung und kein Pflanznachweis."
+  },
+  {
+   "q": "Kann ich mehrere dieser Bäume auf einem Spaziergang sehen?",
+   "a": "Zwei davon ohne Weiteres. Die hohle Eiche und die Eiche mit der Birke stehen 500 Meter auseinander im Jenischpark, etwa zehn Minuten zu Fuß. Die Blutbuche und der Schnurbaum liegen ein paar Minuten auseinander an der Alsterpromenade, auf der anderen Seite der Stadt. Der Hirschpark liegt weitere 3 km westlich an der Elbchaussee."
+  },
+  {
+   "q": "Sind Hamburgs bemerkenswerte Bäume frei zugänglich?",
+   "a": "Alle sechs. Sie stehen in öffentlichen Parks, auf einer offenen Wiese und an der Alsterpromenade, ohne Eintritt und ohne Tor."
+  },
+  {
+   "q": "Was ist ein Nationalerbe-Baum?",
+   "a": "Ein deutscher Nationalerbe-Baum, ausgewählt von der Deutschen Dendrologischen Gesellschaft, von denen es im ganzen Land nur etwa hundert gibt. Hamburg hat zwei, und beide stehen auf dieser Seite: der Bergahorn im Hirschpark, ernannt im Oktober 2020, und der Japanische Schnurbaum am Alsterufer, ernannt im April 2026."
+  }
+ ],
+ "trees": {
+  "hbg_002": {
+   "name": "Die Hohle Eiche im Jenischpark",
+   "species": "Stieleiche (Quercus robur)",
+   "age_estimate": "etwa 400 bis 450 Jahre",
+   "access": "Kostenlos, öffentlicher Park (Jenischpark), ganzjährig geöffnet, keine Tore.",
+   "transport": "S1/S11 Hamburg-Klein Flottbek oder Bus 15x bis Jenischpark; etwa 10-15 Gehminuten bis zum Baum",
+   "story": "Hamburgs dickste Eiche hat ein Loch, in das man sich hineinstellen kann. Die Öffnung zieht sich an einer Seite des Stammes von knapp über dem Boden bis in mehr als vier Meter Höhe, und der Baum wächst einfach darum herum weiter: 8,30 Meter Umfang bei der letzten Messung im April 2020, von zwei getrennten deutschen Baumregistern auf den Zentimeter bestätigt, und damit dicker als jede andere Stieleiche der Stadt.\n\nDie Pflanzung hat niemand festgehalten. Die deutsche Baumkunde datiert einen solchen Baum stattdessen über seinen Stamm, was ihn auf etwa 1600 legt, mit fünfzig Jahren Spielraum nach beiden Seiten, also irgendwo zwischen 375 und 475 Jahren. An beiden Enden dieser Spanne stand er hier schon lange, bevor der Boden um ihn herum ein Park wurde. Der Jenischpark wurde Anfang des 19. Jahrhunderts als englischer Landschaftsgarten über der Elbe angelegt, und die Eiche war bereits ein großer Baum, als diese Arbeit begann.\n\nSie hat Hilfe gebraucht, um stehen zu bleiben. 1972 sanierte der Baumchirurg Michael Maurer den Stamm und sicherte die Öffnung mit Eisenstangen, die noch immer sitzen und aus einigen Metern Entfernung zu sehen sind. Der Park ist kostenlos, offen und ohne Tor, und die Eiche steht etwa 100 Meter östlich des Jenischhauses, der Villa, die dem Ort ihren Namen gibt."
+  },
+  "hbg_003": {
+   "name": "Die Birke in der Eiche im Jenischpark",
+   "species": "Stieleiche (Quercus robur)",
+   "age_estimate": "etwa 300 bis 350 Jahre",
+   "access": "Kostenlos, öffentlicher Park (Jenischpark), ganzjährig geöffnet, keine Tore.",
+   "transport": "S1/S11 Hamburg-Klein Flottbek oder Bus 15x bis Jenischpark; kurzer Weg zur Südostecke des Parks nahe der Elbchaussee",
+   "story": "In dieser Eiche wächst eine Birke, und das seit Jahrzehnten. Der Stamm der Eiche ist an einer Seite offen, eine Birke von etwa hundert Jahren hat in der Lücke Wurzeln geschlagen, und seither hat keiner von beiden nachgegeben; die beiden Kronen sind oben zusammengewachsen, von unten liest sich das als ein Dach aus zwei verschiedenen Blättern.\n\nDie Eiche ist die um zwei Jahrhunderte ältere Hälfte, von beiden Quellen, die sie verzeichnen, auf etwa 300 bis 350 Jahre gesetzt, und 6,74 Meter im Umfang bei der Messung von 2017. Sie neigt sich so stark, dass sie ein Metallgestell braucht, das sie hält. Dass die beiden unabhängigen Register beim Alter und bei der Anordnung übereinstimmen, ist bemerkenswert, denn ein Baum, dessen Hauptmerkmal eine Merkwürdigkeit ist und keine Messung, sammelt sonst eher Widersprüche.\n\nSie steht in der Südostecke des Jenischparks, nahe der Elbchaussee und etwa 500 Meter von der hohlen Eiche entfernt, der dicksten der Stadt. Der Park wurde Anfang des 19. Jahrhunderts über der Elbe als englischer Landschaftsgarten angelegt, alles weite Rasenflächen und angeordnete Blicke. Das hier ist die Anordnung, die niemand geplant hat. Kostenlos, offen, kein Tor, und der Weg zwischen den beiden Eichen dauert etwa zehn Minuten."
+  },
+  "hbg_004": {
+   "name": "Die Blutbuche am Alsterufer",
+   "species": "Blutbuche (Fagus sylvatica f. purpurea)",
+   "age_estimate": "etwa 135 bis 175 Jahre",
+   "access": "Kostenlos, öffentliche Rasenfläche an der Alsterpromenade (Alsterufer), jederzeit zugänglich.",
+   "transport": "U1 Hallerstraße oder Bus bis Rothenbaumchaussee; etwa 5-10 Gehminuten am Alsterufer entlang",
+   "story": "Fragen Sie, wie dick diese Buche ist, und Sie bekommen drei Antworten, die alle stimmen. In Brusthöhe gemessen ergab sie im November 2018 7,21 Meter, eine Zahl, bei der die stadtweite Baumliste und das unabhängige Register auf baumkunde.de auf den Zentimeter übereinstimmen. Am 31. Juli 2025 erneut gemessen, ergab sie 7,32 Meter über den Wurzelanläufen am Fuß und 6,92 Meter einen Meter höher. Der Stamm ist aufgetrieben, mit Anläufen versehen und überzogen von dem Wulstgewebe, das ein alter Baum über seine eigenen Wunden legt, also entscheidet die Stelle, an die man das Maßband legt, über die Zahl.\n\nWann sie gepflanzt wurde, hat niemand notiert. Die Schätzung aus ihrem Umfang lautet 1870 mit zwanzig Jahren nach beiden Seiten, also etwa 135 bis 175 Jahre, und das ist eine Spanne und kein Datum und steht hier auch als eine.\n\nSie steht auf der offenen Wiese zwischen Alsterufer und Klein Fontenay, an der Promenade der Außenalster, mit Gras und einem Fußweg zwischen sich und dem Wasser. Was die Nachmessung von 2025 eigentlich festhält, ist, dass jemand weiter nach ihr schaut: Diese Buche wird beobachtet, ist gesund, und man kann zu jeder Stunde zu ihr laufen."
+  },
+  "hbg_005": {
+   "name": "Der Japanische Schnurbaum am Alsterufer",
+   "species": "Japanischer Schnurbaum (Styphnolobium japonicum)",
+   "age_estimate": "etwa 150 Jahre",
+   "access": "Kostenlos, öffentlicher Grund an der Alsterpromenade (Alsterufer), jederzeit zugänglich.",
+   "transport": "U1 Hallerstraße; etwa 5-10 Gehminuten an der Alsterpromenade entlang",
+   "story": "Weltweit ist kein stärkerer Japanischer Schnurbaum bekannt als dieser, sagt die Stadt, der der Boden gehört, auf dem er steht. Hamburgs Umweltbehörde erklärte das am 16. April 2026 und ernannte ihn zum Nationalerbe-Baum, von denen es in Deutschland nur etwa hundert gibt. Er ist Hamburgs zweiter, nach dem Bergahorn im Hirschpark.\n\nDie Maße stützen die Aussage. Die Register verzeichneten 2016 einen Umfang von 5,50 Metern; die Mitteilung von 2026 nennt über sechs Meter, was ein großzügiges Jahrzehnt ist. Das Alter wird mit rund 150 Jahren angegeben und passt zur Schätzung der stadtweiten Liste, die eine Pflanzung um 1880 annimmt. Die Behörde selbst beschreibt eine außergewöhnliche Vitalität, und die Arbeit, die mit der Ehrung kam, war praktisch und nicht feierlich: Efeu vom Stamm genommen, die Krone gesichert. Als Naturdenkmal war er lange vor alledem geschützt.\n\nStyphnolobium japonicum stammt trotz seiner beiden Namen aus China, und er macht sein eines lautes Ding im Spätsommer, wenn er im August und September cremefarbene Blüten über die Alster hängt, zu einer Zeit, in der fast nichts sonst blüht. Der Baum steht frei von allem anderen auf der Promenade, auf offenem öffentlichem Grund."
+  },
+  "hbg_006": {
+   "name": "Der Bergahorn im Hirschpark",
+   "species": "Bergahorn (Acer pseudoplatanus)",
+   "age_estimate": "etwa 200 bis 270 Jahre",
+   "access": "Kostenlos, öffentlicher Park (Hirschpark), ganzjährig geöffnet, keine Tore.",
+   "transport": "S1/S11 Hamburg-Klein Flottbek oder Bus, dann etwa 15-20 Gehminuten; etwa 3 km westlich des Jenischparks (hbg_002-004) an der Elbchaussee, eher ein längerer Elbspaziergang als derselbe Weg",
+   "story": "Dieser Ahorn war der sechste Baum in Deutschland, der zum Nationalerbe-Baum erklärt wurde, und der erste in Hamburg. Die Deutsche Dendrologische Gesellschaft verlieh ihm diesen Status am 23. Oktober 2020, sechs Jahre bevor der Schnurbaum am Alsterufer der zweite der Stadt wurde.\n\nWas ihn dazu macht, ist die Form. Die Krone wölbt sich an allen Seiten fast bis zum Boden herunter, etwa 35 Meter im Durchmesser, sodass der Baum als Wand aus Laub endet und nicht in einen freien Stamm ausläuft, wie ein Parkbaum das sonst tut. Er ist 22 Meter hoch, mit 5,50 Metern Stammumfang, gemessen in Brusthöhe im Jahr 2020, was für einen Bergahorn viel ist und trotzdem der schlankeste Stamm dieser Seite bleibt. Die Form ist das, wofür die Leute kommen.\n\nEr steht im Hirschpark, einem kostenlosen öffentlichen Landschaftspark an der Elbe in Nienstedten, südlich der Lindenallee. Der Jenischpark mit seinen beiden alten Eichen liegt etwa 3 km östlich an der Elbchaussee, was einen langen Weg am Fluss ergibt und keinen einzelnen Nachmittagsspaziergang. Ein Pflanznachweis ist nicht erhalten; die Schätzung aus dem Stamm ergibt etwa 200 bis 270 Jahre."
+  },
+  "hbg_007": {
+   "name": "Die Lehmann-Platane in Planten un Blomen",
+   "species": "Ahornblättrige Platane (Platanus x acerifolia)",
+   "age_estimate": "etwa 205 Jahre",
+   "access": "Kostenlos, öffentlicher Park (Planten un Blomen), täglich während der Öffnungszeiten des Parks.",
+   "transport": "U-Bahn Stephansplatz oder Messehallen; kurzer Weg innerhalb von Planten un Blomen",
+   "story": "Die meisten alten Bäume werden über ein Argument datiert. Dieser hat ein Datum: den 6. November 1821, als Professor Johann Georg Christian Lehmann ihn als ersten Baum des neuen Hamburger Botanischen Gartens in die Erde setzte, den er gegründet hatte und leiten sollte. Das macht ihn etwa 205 Jahre alt, und er ist einer der wenigen Bäume dieser Stadt, deren Alter ohne Toleranz auskommt.\n\nDer Garten, zu dessen Eröffnung er gepflanzt wurde, ist inzwischen umgezogen, und der Boden um ihn herum ist Planten un Blomen geworden, ein öffentlicher Park in den alten Wallanlagen am Rand der Innenstadt. Die Platane blieb stehen und wuchs weiter: 29 Meter hoch und 6,15 Meter im Umfang bei der Messung am 1. November 2020, mit einem Stamm, der leicht aus dem Lot steht und seinen ersten Ast tief und steil abwirft, bei etwa drei Metern.\n\nDie Hamburger nennen sie die Lehmann-Platane. Die Geschichtsschreibung des Botanischen Gartens beschreibt sie als seine lebende Gründungsurkunde, was für eine Einrichtung, die über sich selbst schreibt, ungewöhnlich gut formuliert und dazu zutreffend ist: Der Garten wurde um diese Pflanzung herum gegründet, und die Pflanzung steht noch, frei zugänglich."
+  }
+ }
+}
