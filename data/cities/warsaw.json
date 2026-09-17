@@ -459,9 +459,9 @@
       "id": "war_014",
       "name": "The Puławska Street Pear",
       "species": "European Pear (Pyrus communis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 50 to 125 years, judged from a trunk 1.53 m round",
+      "age_min": 50,
+      "age_max": 125,
       "girth_cm": 153,
       "location": {
         "address": "ul. Puławska 8a, Mokotów, standing on the public sidewalk",
@@ -487,7 +487,9 @@
         "kind": "flowers",
         "label": "late April, when it flowers white over the pavement"
       },
-      "how_to_recognise": "You can recognise it by growing directly out of the pavement of a busy four-lane street, its trunk about 153 centimetres round. It stands at ul. Pulawska 8a, Mokotow."
+      "how_to_recognise": "You can recognise it by growing directly out of the pavement of a busy four-lane street, its trunk about 153 centimetres round. It stands at ul. Pulawska 8a, Mokotow.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 153 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "war_015",

@@ -27,9 +27,9 @@
       "id": "mce_001",
       "name": "Buk v Podlesí",
       "species": "European Beech (Fagus sylvatica)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 300 years, judged from a trunk 4.15 m round",
+      "age_min": 150,
+      "age_max": 300,
       "girth_cm": 415,
       "location": {
         "address": "Podlesí forest near Mcely",
@@ -66,7 +66,9 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 415 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

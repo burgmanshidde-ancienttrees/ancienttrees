@@ -343,9 +343,9 @@
       "id": "com_009",
       "name": "The Horse Chestnut of Quarcino",
       "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 125 to 250 years, judged from a trunk 3.35 m round",
+      "age_min": 125,
+      "age_max": 250,
       "location": {
         "address": "Via Giovanni Fattori 20, 22100 Como CO, Italy (by the church of Santi Filippo e Giacomo in Quarcino)",
         "latitude": 45.836567,
@@ -377,9 +377,10 @@
         "status": "missing"
       },
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 335 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "girth_cm": 335,
-      "how_to_recognise": "You can recognise it in May by its crown going up in white flower candles, beside the tenth-century church of Santi Filippo e Giacomo. It stands in Quarcino."
+      "how_to_recognise": "You can recognise it in May by its crown going up in white flower candles, beside the tenth-century church of Santi Filippo e Giacomo. It stands in Quarcino.",
+      "age_basis": "girth"
     }
   ]
 }

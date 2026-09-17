@@ -68,9 +68,9 @@
       "id": "kan_002",
       "name": "The Cherry of Shogetsuji",
       "species": "Japanese Mountain Cherry (Prunus jamasakura)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 125 to 250 years, judged from a trunk 3.5 m round",
+      "age_min": 125,
+      "age_max": 250,
       "girth_cm": 350,
       "height_m": 15,
       "location": {
@@ -102,7 +102,9 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "National Natural Monument, designated 1943-08-24. Girth 3.5 m and height 15 m from Kodansha's Natural Monuments of Japan (1995); the Environment Agency's 7.81 m figure is rejected by the source as impossible for this trunk and both numbers are stated on the page. No age published. Flowering month is the species' habit on this coast, not a record of this tree.",
-      "how_to_recognise": "You can recognise it by the trunk, so weathered it is hard to tell rock from bark, leaning out over the temple's earth wall into the street. It stands at the edge of Shogetsuji's precinct, Kanazawa."
+      "how_to_recognise": "You can recognise it by the trunk, so weathered it is hard to tell rock from bark, leaning out over the temple's earth wall into the street. It stands at the edge of Shogetsuji's precinct, Kanazawa.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 350 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "kan_003",

@@ -42,6 +42,15 @@ export function ageToken(tree: Tree): string | null {
   // same error the softening rule elsewhere exists to stop.
   if (/\b(disputed|contested)\b/i.test(said)) return null;
 
+  // And an age we worked out ourselves is never a title either. scripts/ages.py
+  // divides a girth by a published growth rate, and the honest output of that
+  // sum is a band a factor of 1.7 wide: "roughly 150 to 250 years". Letting a
+  // title pick the low end off that sentence would print "150 Year Old
+  // Pedunculate Oak", which is a fact we do not have, from arithmetic that
+  // never claimed it. Same reasoning as the disputed guard above, one step
+  // weaker in the evidence and therefore one step firmer in the refusal.
+  if (tree.age_basis) return null;
+
   const nums = [...said.matchAll(/(\d[\d,]*\+?)/g)].map((m) => m[1]);
   const lo = tree.age_min ?? null;
   const hi = tree.age_max ?? null;
