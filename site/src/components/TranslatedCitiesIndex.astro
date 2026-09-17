@@ -1,0 +1,102 @@
+---
+// The cities index in one language. Shared by every language's three-line
+// route file, exactly as TranslatedCityPage is, per Contract J.
+//
+// Convention: komoot serves /de-de/discover and AllTrails /es/parques/...,
+// so both references publish their whole STRUCTURE per locale rather than
+// only leaf pages (CONVENTIONS.md, "Switching the language of a page",
+// read 2026-09-02, and "Translating an APP", 2026-09-17). We had the
+// opposite: translated city pages with no index to belong to. Counted on
+// 2026-09-17, 19 of the 27 internal links on /es/cadiz dropped the reader
+// back into English, the breadcrumb among them.
+//
+// What this lists, and why it is not every city: only the cities that have
+// an overlay in THIS language. An index of 607 entries of which 589 bounce
+// to English recreates the dead end it exists to fix. The rest is offered
+// honestly, in one line, with a link to the English index.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { cityIsRenderable, renderableTrees } from "../lib/trees";
+import { cityFace } from "../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { byCityListOrderEntry } from "../lib/city-order";
+import { ui, translatedCities, cityTranslation, hreflangSet, translatedLanguages } from "../lib/i18n";
+
+interface Props { lang: string }
+const { lang } = Astro.props;
+const U = ui(lang);
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+const mine = new Set(translatedCities(lang));
+const all = byCityListOrderEntry(
+  (await getCollection("cities"))
+    .filter(cityIsRenderable)
+    .filter((c) => (c.data.kind ?? "city") === "city"));
+
+const published = all
+  .filter((c) => mine.has(c.id))
+  .map((c) => {
+    const tr = cityTranslation(lang, c.id);
+    return {
+      slug: c.id,
+      city: tr?.city || c.data.city,
+      country: c.data.country,
+      count: renderableTrees(c).length,
+      face: cityFace(c.data, 400),
+    };
+  });
+
+const byCountry = new Map<string, typeof published>();
+for (const p of published) {
+  if (!byCountry.has(p.country)) byCountry.set(p.country, []);
+  byCountry.get(p.country)!.push(p);
+}
+const countryGroups = [...byCountry.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+function card(p: (typeof published)[number]): string {
+  const ph = p.face
+    ? `<span class="exc-ph"><img src="${esc(p.face)}" alt="" loading="lazy"></span>`
+    : '<span class="exc-ph exc-noph"></span>';
+  return `<a class="exc-card" href="/${lang}/${p.slug}">${ph}<span class="exc-body"><b>${esc(p.city)}</b><span>${p.count}</span></span></a>`;
+}
+
+const canonical = `${BASE_URL}/${lang}/cities`;
+const total = published.reduce((s, p) => s + p.count, 0);
+const crumbItems: [string, string | null][] = [[U.home, `${BASE_URL}/${lang}/cities`], [U.citiesCrumb, null]];
+
+// hreflang across every language that has this index, English included.
+const variants: Record<string, string> = { en: "/cities" };
+for (const l of translatedLanguages()) variants[l] = `/${l}/cities`;
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "ItemList",
+    name: U.citiesTitle,
+    itemListElement: published.map((p, i) => ({
+      "@type": "ListItem", position: i + 1, name: p.city, url: `${BASE_URL}/${lang}/${p.slug}`,
+    })),
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+---
+<Base
+  title={U.citiesTitle}
+  description={U.citiesDescription}
+  canonical={canonical}
+  lang={lang}
+  headExtra={hreflangSet("/cities", variants) + ldScript(graph)}>
+<main class="content-page">
+  <h1>{U.citiesHeading}</h1>
+  <p class="answer-first">{U.citiesLead(published.length, total)}</p>
+  {countryGroups.map(([country, cities]) => (
+    <Fragment>
+      <h2 class="cindex-country">{country}</h2>
+      <div class="cindex-grid" set:html={[...cities].sort((a, b) => a.city.localeCompare(b.city)).map(card).join("")} />
+    </Fragment>
+  ))}
+</main>
+</Base>

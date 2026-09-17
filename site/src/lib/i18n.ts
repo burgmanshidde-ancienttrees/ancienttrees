@@ -285,6 +285,19 @@ export interface UIStrings {
   researchedRemotely: string;
   knowMoreThanUs: string;
   ifOlderTree: (city: string) => string;
+
+  /** The cities index, per language. Added 2026-09-17, after a count of where
+   * a translated page actually leads: 19 of the 27 internal links on
+   * /es/cadiz dropped the reader back into English, the breadcrumb "Inicio"
+   * among them. The references both serve their whole structure per locale
+   * (komoot /de-de/discover, AllTrails /es/parques/...), and we served leaf
+   * pages with no tree to hang on. This is the first index to exist in every
+   * language. */
+  citiesCrumb: string;
+  citiesTitle: string;
+  citiesHeading: string;
+  citiesLead: (cities: number, trees: number) => string;
+  citiesDescription: string;
 }
 
 const EN: UIStrings = {
@@ -425,10 +438,20 @@ const EN: UIStrings = {
   researchedRemotely: "This page was researched from a distance. If you know this tree, you know things we do not.",
   knowMoreThanUs: "Do you know more than we do?",
   ifOlderTree: (c) => `If you know an older tree in ${c}, or see a mistake here, tell us and we correct it.`,
+  citiesCrumb: "Cities",
+  citiesTitle: "Every City We Have Mapped",
+  citiesHeading: "Every city we have mapped",
+  citiesLead: (c, t) => `${c} cities, ${t} trees, each one researched and verified.`,
+  citiesDescription: "Every city on the map, by country: the remarkable old trees of each, verified, with their stories and exact spots.",
 };
 
 const TABLE: Record<string, Partial<UIStrings>> = {
   es: {
+    citiesCrumb: "Ciudades",
+    citiesTitle: "Todas las ciudades del mapa",
+    citiesHeading: "Todas las ciudades del mapa",
+    citiesLead: (c, t) => `${c} ciudades, ${t} árboles, cada uno investigado y verificado.`,
+    citiesDescription: "Todas las ciudades del mapa, por país: los árboles viejos y notables de cada una, verificados, con su historia y su sitio exacto.",
     treeLabels: {
       "Youngest tree": "El más joven",
       "Urban curiosity": "Curiosidad urbana",
@@ -568,6 +591,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Verla a tamaño completo",
   },
   it: {
+    citiesCrumb: "Città",
+    citiesTitle: "Tutte le città sulla mappa",
+    citiesHeading: "Tutte le città sulla mappa",
+    citiesLead: (c, t) => `${c} città, ${t} alberi, ognuno documentato e verificato.`,
+    citiesDescription: "Tutte le città sulla mappa, per paese: gli alberi antichi e notevoli di ognuna, verificati, con la loro storia e il punto esatto.",
     treeLabels: {
       "Youngest tree": "Il più giovane",
       "Urban curiosity": "Curiosità urbana",
@@ -707,6 +735,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Vedila a dimensione intera",
   },
   nl: {
+    citiesCrumb: "Steden",
+    citiesTitle: "Alle steden op de kaart",
+    citiesHeading: "Alle steden op de kaart",
+    citiesLead: (c, t) => `${c} steden, ${t} bomen, stuk voor stuk uitgezocht en geverifieerd.`,
+    citiesDescription: "Alle steden op de kaart, per land: de oude en bijzondere bomen van elke stad, geverifieerd, met hun verhaal en de precieze plek.",
     treeLabels: {
       "Youngest tree": "Jongste boom",
       "Urban curiosity": "Stadscuriositeit",
@@ -846,6 +879,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Bekijk hem op volledige grootte",
   },
   de: {
+    citiesCrumb: "Städte",
+    citiesTitle: "Alle Städte auf der Karte",
+    citiesHeading: "Alle Städte auf der Karte",
+    citiesLead: (c, t) => `${c} Städte, ${t} Bäume, jeder einzeln recherchiert und geprüft.`,
+    citiesDescription: "Alle Städte auf der Karte, nach Land: die alten und bemerkenswerten Bäume jeder Stadt, geprüft, mit ihrer Geschichte und dem genauen Standort.",
     treeLabels: {
       "Youngest tree": "Jüngster Baum",
       "Urban curiosity": "Stadtkuriosität",
@@ -985,6 +1023,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "In voller Größe ansehen",
   },
   pt: {
+    citiesCrumb: "Cidades",
+    citiesTitle: "Todas as cidades do mapa",
+    citiesHeading: "Todas as cidades do mapa",
+    citiesLead: (c, t) => `${c} cidades, ${t} árvores, cada uma investigada e verificada.`,
+    citiesDescription: "Todas as cidades do mapa, por país: as árvores velhas e notáveis de cada uma, verificadas, com a sua história e o sítio exacto.",
     treeLabels: {
       "Youngest tree": "A mais nova",
       "Urban curiosity": "Curiosidade urbana",
@@ -1124,6 +1167,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Ver em tamanho real",
   },
   fr: {
+    citiesCrumb: "Villes",
+    citiesTitle: "Toutes les villes de la carte",
+    citiesHeading: "Toutes les villes de la carte",
+    citiesLead: (c, t) => `${c} villes, ${t} arbres, chacun recherché et vérifié.`,
+    citiesDescription: "Toutes les villes de la carte, par pays : les arbres anciens et remarquables de chacune, vérifiés, avec leur histoire et leur emplacement exact.",
     treeLabels: {
       "Youngest tree": "Le plus jeune",
       "Urban curiosity": "Curiosité urbaine",
@@ -1263,6 +1311,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "La voir en taille réelle",
   },
   ja: {
+    citiesCrumb: "都市一覧",
+    citiesTitle: "地図に載せたすべての都市",
+    citiesHeading: "地図に載せたすべての都市",
+    citiesLead: (c, t) => `${c}都市、${t}本。いずれも調べ、裏づけを取っています。`,
+    citiesDescription: "地図に載せたすべての都市を国別に。各都市の古木と名木を、裏づけを取ったうえで、その由来と正確な場所とともに紹介します。",
     treeLabels: {
       "Youngest tree": "最も若い木",
       "Urban curiosity": "街の変わり種",
