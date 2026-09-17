@@ -21,6 +21,7 @@ import { BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { ui, translatedCities, cityTranslation, hreflangSet, translatedLanguages } from "../lib/i18n";
 import SignInModal from "./SignInModal.astro";
+import LanguagePicker from "./LanguagePicker.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 // My trees filters on the account's visited list, which this page did not
@@ -194,6 +195,10 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
         <div class="panel-head">
           <h1>{U.exploreHeading}</h1>
           <p class="sheet-note">{U.exploreNote}</p>
+          {/* The map has no footer to put this in (footer={false}: the split
+              panel has no room), so it sits inline here, the same exception
+              the city pages already make. */}
+          <LanguagePicker current={lang} enPath="/explore" />
           <Fragment set:html={searchFormHtml} />
         </div>
       </div>

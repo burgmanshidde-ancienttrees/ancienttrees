@@ -10,24 +10,44 @@
 // for this kind of interaction. AllTrails ships a <select> in the footer whose
 // options are AUTONYMS, the language written in its own language, with the
 // region in brackets where variants exist: "Deutsch (Deutschland)",
-// "Español (Latinoamérica)", "Nederlands (Nederland)". komoot does the same
-// thing. Neither redirects on Accept-Language, and neither do we.
+// "Español (Latinoamérica)". komoot does the same thing, as a plain line at
+// the very bottom. Neither uses flags, because a flag is a country and several
+// of these languages have no single country. Neither redirects on
+// Accept-Language, and neither do we: you get the page you asked for.
 //
 // The insight that fixes the mixed-language problem is that a LIST OF NAMES is
 // not mixed language. "English · Deutsch · 日本語" reads as a set of labels in
 // any language you happen to speak. A sentence does not.
-import { LANG_NAME, languagesForCity } from "../lib/i18n";
+//
+// Rewritten 2026-09-17, on Hidde's "maak het zoals de concurrenten en
+// toekomstbestendig", and it needed both halves.
+//
+// Like the competitors: it now offers EVERY language on every page that has
+// one, which is what AllTrails does on all fourteen of theirs. Until today it
+// read languagesForCity() and offered only the languages with a real overlay,
+// so /aachen showed no picker at all. That was right while an untranslated
+// city had nowhere to go, and wrong the moment the fallback layer landed and
+// /es/aachen started existing.
+//
+// Future-proof: it takes the ENGLISH PATH rather than a city slug, and asks
+// pathInEveryLanguage() where that page lives. So it works on a city, a tree,
+// a question page, the map and the cities index without knowing which it is,
+// it renders nothing on a page type that has no translated route yet rather
+// than offering a 404, and when the next page type ships in seven languages
+// the only edit is one line in that function.
+import { LANG_NAME, pathInEveryLanguage } from "../lib/i18n";
 
 interface Props {
   /** The language of the page this renders on. "en" is the canonical page. */
   current: string;
-  citySlug: string;
+  /** This page's ENGLISH path, e.g. "/cadiz", "/cadiz/oldest-tree", "/explore". */
+  enPath: string;
 }
-const { current, citySlug } = Astro.props as Props;
+const { current, enPath } = Astro.props as Props;
 
-// English always exists; the translations are whatever this city actually has.
-const langs = ["en", ...languagesForCity(citySlug)];
-const href = (l: string) => (l === "en" ? `/${citySlug}` : `/${l}/${citySlug}`);
+const variants = pathInEveryLanguage(enPath);
+const langs = Object.keys(variants).length ? ["en", ...Object.keys(variants).sort()] : [];
+const href = (l: string) => (l === "en" ? enPath : variants[l]);
 ---
 {langs.length > 1 && (
   <nav class="lang-pick" aria-label="Language">

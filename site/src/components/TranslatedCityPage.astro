@@ -108,7 +108,7 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
-        <LanguagePicker current={lang} citySlug={cslug} />
+        <LanguagePicker current={lang} enPath={`/${cslug}`} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <span class="passport-total" id="passport-total"></span>
