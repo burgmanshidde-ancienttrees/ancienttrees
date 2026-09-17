@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - Google leads the sign-in sheet, Apple moves behind More options
+
+Hidde: "Google hoort daar Apple is de optie die vertoond wordt als je more
+options klikt net als bij alltrails."
+
+He is right and the first build was wrong on purpose, which is the part worth
+recording. Apple sat in the front slot because I read Apple's guideline that
+their button be no less prominent than the others as binding here. It is not:
+it binds an APP that Apple reviews, and a website is not reviewed. The
+reference settles it without the argument, because AllTrails ships Sign in with
+Apple and still puts Google in front of it. A guideline quoted outside its
+scope is exactly the "eigen idee" the convention check exists to stop, so the
+correction is written beside the entry that got it wrong in CONVENTIONS.md
+rather than quietly swapped.
+
+Live on both surfaces, dialog and /account, because they render one component:
+
+- The front screen is Google (dark pill) and More options. On a phone
+  "Continue in the app" takes the dark slot and Google steps back to grey,
+  which is unchanged.
+- More options reveals Google, Apple, email in that order, the reference minus
+  Facebook, and removes itself.
+
+Measured on the built page at 402pt with the Apple pill injected, since the
+flag is still off: three 48pt pills, 16pt apart, same left and right edge,
+no horizontal overflow. qa 9,226 pages, preflight 0 problems, paritycheck,
+crosscheck and the smoke test all clean. Merged and pushed to main.
+
+FOR HIDDE: the Apple button still renders nowhere, because APPLE_SIGNIN is
+false until /auth/v1/authorize?provider=apple returns a 302 rather than an
+error. That is one URL in a browser; open it and tell me what happens.
+
 ## 2026-09-17 (session) - The homepage duplication was fixed five days ago and never merged
 
 Hidde, with a screenshot of the homepage: "wat ik niet helemaal begrijp is dat
