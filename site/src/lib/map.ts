@@ -395,18 +395,29 @@ document.querySelectorAll('.mf[data-f]').forEach(function(b) {
   b.addEventListener('click', function() {
     var f = b.dataset.f;
     if ((f === 'fav' || f === 'mine') && !FILTERS[f]
-        && needsAccount(b.textContent.trim())) return;
+        && needsAccount(b.dataset.label || b.textContent.trim())) return;
     FILTERS[f] = !FILTERS[f];
     b.classList.toggle('is-on', FILTERS[f]);
     b.setAttribute('aria-pressed', FILTERS[f] ? 'true' : 'false');
     applyFilters();
   });
 });
+// The species chip wears the chosen species, the way the app's does
+// (FilterChipLabel(label: filters.species ?? "Species")). The select is the
+// invisible tap layer over it, so the filled state and the word both belong to
+// the pill around it rather than to the field.
 var spPick = document.getElementById('mf-species');
+var spWrap = document.getElementById('mf-species-wrap');
+var spLabel = document.getElementById('mf-species-label');
 if (spPick) {
+  var spAny = spLabel ? spLabel.textContent : '';
   spPick.addEventListener('change', function() {
     FILTERS.sp = spPick.value === '' ? -1 : parseInt(spPick.value, 10);
-    spPick.classList.toggle('is-on', FILTERS.sp >= 0);
+    if (spWrap) spWrap.classList.toggle('is-on', FILTERS.sp >= 0);
+    if (spLabel) {
+      spLabel.textContent = FILTERS.sp < 0 ? spAny
+        : spPick.options[spPick.selectedIndex].textContent;
+    }
     applyFilters();
   });
 }

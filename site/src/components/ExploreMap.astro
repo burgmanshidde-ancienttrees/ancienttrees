@@ -184,6 +184,21 @@ const description = U.exploreDescription;
 const exploreVariants: Record<string, string> = { en: "/explore" };
 for (const l of translatedLanguages()) exploreVariants[l] = `/${l}/explore`;
 
+/** The row's four icons, drawn the way the app's are: SF Symbols are outline
+ * shapes, so these are strokes at a single weight rather than a mix of filled
+ * and hollow, which is how a chip row starts looking assembled from parts.
+ * heart, checkmark.seal, leaf and ticket, the same four the app names in
+ * MapTab.filterRow. */
+const svg = (d: string) =>
+  `<svg class="mf-ic" viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
+const ICON = {
+  heart: svg(`<path d="M12 20.3C6.9 15.9 4.2 12.9 4.2 9.8 4.2 7.2 6.1 5.3 8.5 5.3c1.4 0 2.7.7 3.5 1.8.8-1.1 2.1-1.8 3.5-1.8 2.4 0 4.3 1.9 4.3 4.5 0 3.1-2.7 6.1-7.8 10.5z"/>`),
+  seal: svg(`<path d="M12 3.4l2.2 1.5 2.6-.1.8 2.5 2.2 1.4-.8 2.5.8 2.5-2.2 1.4-.8 2.5-2.6-.1L12 20.6l-2.2-1.5-2.6.1-.8-2.5-2.2-1.4.8-2.5-.8-2.5 2.2-1.4.8-2.5 2.6.1z"/><path d="M9.2 12.2l2 2 3.6-3.9"/>`),
+  leaf: svg(`<path d="M19.8 4.3c.6 7.7-3.3 13.4-9.4 13.4-1.9 0-3.4-.5-3.4-.5s-1.5-5.9 2.4-9.4c3.1-2.8 7.2-3.4 10.4-3.5z"/><path d="M5.4 20.2c1.5-4.3 4.3-7.7 8.3-10.1"/>`),
+  ticket: svg(`<path d="M4.2 9.3V7.7c0-.8.7-1.5 1.5-1.5h12.6c.8 0 1.5.7 1.5 1.5v1.6a2.7 2.7 0 000 5.4v1.6c0 .8-.7 1.5-1.5 1.5H5.7c-.8 0-1.5-.7-1.5-1.5v-1.6a2.7 2.7 0 000-5.4z"/><path d="M14.2 6.6v2.2M14.2 11.1v1.8M14.2 15.2v2.2"/>`),
+  caret: `<svg class="mf-ic mf-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 10.5l4.5 4.5 4.5-4.5"/></svg>`,
+};
+
 const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
 const mapScript = exploreMapScript(features, cityRows, speciesList);
 const scripts = mapScript + SEARCH_WIDGET_JS;
@@ -212,18 +227,48 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
     <div class="stage">
       {/* The chip row, over the map, the way Google Maps and our own app both
           draw one. Four, because four is what the app's row carries today and
-          a row of eight is a Filters sheet wearing the wrong clothes. */}
+          a row of eight is a Filters sheet wearing the wrong clothes.
+
+          It is the APP'S chip, redrawn here rather than reinvented (Hidde,
+          2026-09-17: "de filters zien er totaal slecht uit neem de app als
+          voorbeeld"). FilterChip.swift draws a 34-tall capsule carrying an
+          icon and a 13pt medium label inside a 44-tall target; this row had
+          44-tall white slabs with no icon at all, a bold label, and a native
+          select that ballooned to 16px on a phone, so one control in a row of
+          four was visibly bigger than its neighbours. The pill is now its own
+          element inside each button, which is how a web control gets the app's
+          two heights at once: 34 drawn, 44 hit. */}
       <div class="map-filters" role="group" aria-label={U.mapFilterGroup}>
-        <button type="button" class="mf" data-f="fav" aria-pressed="false">{U.mapFilterFav}</button>
-        <button type="button" class="mf" data-f="mine" aria-pressed="false">{U.mapFilterMine}</button>
-        <select class="mf mf-select" id="mf-species" aria-label={U.mapFilterSpecies}>
-          <option value="">{U.mapFilterSpecies}</option>
-          {speciesList.map((s, i) => <option value={i}>{s}</option>)}
-        </select>
+        <button type="button" class="mf" data-f="fav" data-label={U.mapFilterFav} aria-pressed="false">
+          <span class="mf-pill"><Fragment set:html={ICON.heart} />{U.mapFilterFav}</span>
+        </button>
+        <button type="button" class="mf" data-f="mine" data-label={U.mapFilterMine} aria-pressed="false">
+          <span class="mf-pill"><Fragment set:html={ICON.seal} />{U.mapFilterMine}</span>
+        </button>
+        {/* The species picker stays a native select, which is what 521 options
+            want and what nobody has to be taught. What changed is that it no
+            longer LOOKS like a form field parked in a row of chips: the select
+            is a transparent tap layer over a pill we draw, so the platform
+            keeps the picker and the row keeps one set of clothes. The invisible
+            select stays at 16px, which is what stops Safari zooming the map in
+            on tap and never back out. */}
+        <span class="mf mf-species" id="mf-species-wrap">
+          <span class="mf-pill">
+            <Fragment set:html={ICON.leaf} />
+            <span class="mf-label" id="mf-species-label">{U.mapFilterSpecies}</span>
+            <Fragment set:html={ICON.caret} />
+          </span>
+          <select class="mf-select" id="mf-species" aria-label={U.mapFilterSpecies}>
+            <option value="">{U.mapFilterSpecies}</option>
+            {speciesList.map((s, i) => <option value={i}>{s}</option>)}
+          </select>
+        </span>
         {/* Last, on Hidde's word (2026-09-12: "zet free to visit maar als
             laatst"). It leaves the row in the app's own order, Favourites,
             My trees, Species, with ours after it rather than in front of it. */}
-        <button type="button" class="mf" data-f="free" aria-pressed="false">{U.mapFilterFree}</button>
+        <button type="button" class="mf" data-f="free" data-label={U.mapFilterFree} aria-pressed="false">
+          <span class="mf-pill"><Fragment set:html={ICON.ticket} />{U.mapFilterFree}</span>
+        </button>
         <span class="mf-count" id="mf-count" hidden></span>
       </div>
       <div id="map" class="map"></div>
