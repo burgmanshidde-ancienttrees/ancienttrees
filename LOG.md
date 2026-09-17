@@ -12,6 +12,42 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 5, previous attempt in this window stopped after 32 min with 88 min unspent) - Florence 26 -> 27, and city_queue.py stops re-recommending settled dead ends
+
+Followed the harness's own order. **Claims first:** an earlier attempt this
+window had left Vilnius and Florence claimed. Vilnius's verify work was
+already finished and logged in CURATION.md (register confirmed exhausted);
+released the claim. Florence's verify pass had not actually run, so dispatched
+one, then merged and wrote the story myself (one tree, below the six-candidate
+write-pass batching floor).
+
+**Florence 26 -> 27**: flo_027, "The Hackberries of Piazza Vasari", resolves a
+stale register-trap lead (wrong park name, and an "alive now" question left
+open by two earlier passes: a November 2025 railway-bridge felling excluded
+these specific trees by name, per La Nazione and RAMI's own health record).
+Four sources. Italian overlay updated in the same commit, including a stale
+tree-count in its title/meta_description ("26 giganti" -> "27").
+
+**Fixed a real, repeated waste**: `city_queue.py --next` was recommending
+Dubai and Taormina as openable new cities, though both already carry a
+written "no supply" verdict in their own `data/leads/*.json` file from
+earlier passes. Grepping the corpus shows this exact rediscovery logged
+across at least seven sessions since 2026-09-08. Added `settled_verdict()`
+to scripts/city_queue.py, matching a leads file by slug and its note's own
+verdict phrasing; settled cities now print under a SETTLED section instead
+of OPENABLE/NAMED BY HIDDE. While checking the rest of the OPENABLE list,
+found the same failure one layer deeper: Trier's supply is entirely
+cross-border Luxembourg register rows (10.7-21km out, wrong comune), the
+same mistake already recorded for Florence/Fiesole; wrote it a verdict too.
+Nothing else on the OPENABLE list clears the six-candidate floor.
+
+Also confirmed (not re-attempted): the iOS app's newest CI failure is the
+already-documented flaky tap race in FlowWalk.swift, whose real fix is FOR
+HIDDE (needs a `workflow`-scoped push token this bot's does not have,
+reconfirmed 2026-09-16 per drafts/ios-floor-retry.patch).
+
+`qa.py`, `preflight.py`, `superlatives.py`, `i18ncheck.py` all pass clean.
+
 ## 2026-09-17 (continuation 4) - `git push` auth failure mid-session, recurrence of the documented token-swap fix
 
 Right after committing the Perušić work above, `git push` started failing
