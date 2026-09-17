@@ -14787,6 +14787,68 @@
    ],
    "trees": 13,
    "logged": false
+  },
+  {
+   "started": "2026-09-17T22:31:38+00:00",
+   "date": "2026-09-17",
+   "run_id": "35282428551",
+   "minutes": 43.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 350,
+   "denials": 58,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(grep), Bash(ls), Bash(mkdir), Bash(mv), Bash(python3), Bash(rm), Bash(sed), Bash(wc)",
+   "ended": "success",
+   "tokens": 12957576,
+   "claims_held": [
+    "_famous-japan",
+    "arnhem",
+    "krakow",
+    "geneva",
+    "utrecht"
+   ],
+   "commits": 5,
+   "cities_touched": 9,
+   "cities": [
+    {
+     "city": "horaiji",
+     "trees": 2
+    },
+    {
+     "city": "himi",
+     "trees": 1
+    },
+    {
+     "city": "hokuto",
+     "trees": 1
+    },
+    {
+     "city": "iheya",
+     "trees": 1
+    },
+    {
+     "city": "kawazu",
+     "trees": 1
+    },
+    {
+     "city": "kozaki",
+     "trees": 1
+    },
+    {
+     "city": "minamiaso",
+     "trees": 1
+    },
+    {
+     "city": "nichinan-tottori",
+     "trees": 1
+    },
+    {
+     "city": "tamba",
+     "trees": 1
+    }
+   ],
+   "trees": 10,
+   "logged": false
   }
  ],
  "schedule_changes": [
