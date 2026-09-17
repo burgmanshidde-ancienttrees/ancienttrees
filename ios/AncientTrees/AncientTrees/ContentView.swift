@@ -169,6 +169,54 @@ struct ContentView: View {
         return .shared(id)
     }
 
+    /// Every incoming universal link, handled OFF the view body.
+    ///
+    /// It was written inline inside `.onOpenURL` on 2026-09-12 and 09-17 and
+    /// that broke the build on 2026-09-17: SwiftUI type-checks `body` as one
+    /// expression, and two URLComponents blocks with their query lookups took
+    /// it past the budget ("the compiler is unable to type-check this
+    /// expression in reasonable time", ContentView.swift:339, which is `body`
+    /// itself rather than the closure). Nothing about the behaviour changed in
+    /// moving it; the closure is now one call and the reasoning lives here.
+    ///
+    /// /auth carries sign-in tokens in its fragment and goes nowhere: its whole
+    /// job is to put somebody back in the account they just asked for, on the
+    /// screen they were already on. See Account.signInFromLink for why the
+    /// refresh token is spent rather than the access token read.
+    ///
+    /// /open is CONTINUE IN THE APP. The website's sheet points its loud button
+    /// there, this app claims it, so iOS hands the URL here instead of loading
+    /// the page. ?tree= or ?city= says where the reader was standing, so the
+    /// app lands on the same tree rather than on whatever tab it last had open;
+    /// with neither, opening IS the whole of what the button promised.
+    /// Somebody without the app never reaches this at all: iOS loads /open in
+    /// the browser and that page forwards to the App Store.
+    private func open(_ url: URL) {
+        guard let comps = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return }
+        if comps.path == "/auth" {
+            Task { await account.signInFromLink(url) }
+            return
+        }
+        if comps.path == "/open" {
+            navigator.push = Self.continued(comps)
+            return
+        }
+        guard let route = Self.route(for: url) else { return }
+        navigator.push = route
+    }
+
+    /// Where /open asks the app to land, or nil to just open.
+    static func continued(_ comps: URLComponents) -> Route? {
+        let q = comps.queryItems ?? []
+        if let id = q.first(where: { $0.name == "tree" })?.value, !id.isEmpty {
+            return .tree(id)
+        }
+        if let slug = q.first(where: { $0.name == "city" })?.value, !slug.isEmpty {
+            return .city(slug)
+        }
+        return nil
+    }
+
     private var origin: (lat: Double, lng: Double) {
         // Live fix, then the last one this phone had, then Dam square as the
         // first-launch-anywhere default. See LocationProvider.remembered.
@@ -468,45 +516,7 @@ struct ContentView: View {
                 // is deliberately not in the site's AASA yet, so tapping one
                 // still opens Safari with the real page rather than the app
                 // sitting on whatever tab it last had open.
-                .onOpenURL { url in
-                    // A sign-in link first, because it is the one incoming URL
-                    // that goes nowhere: it carries tokens in its fragment and
-                    // its whole job is to put somebody back in the account they
-                    // just asked for, on the screen they were already on. Added
-                    // 2026-09-12 with /auth in the site's AASA; see
-                    // Account.signInFromLink for why the refresh token is spent
-                    // rather than the access token read.
-                    // URLComponents rather than url.path, which is what
-                    // route(for:) three hundred lines up already uses and what
-                    // Apple soft-deprecated on iOS 16.
-                    if URLComponents(url: url, resolvingAgainstBaseURL: false)?.path == "/auth" {
-                        Task { await account.signInFromLink(url) }
-                        return
-                    }
-                    // CONTINUE IN THE APP. The website's sheet points its loud
-                    // button at /open, which this app claims, so iOS hands the
-                    // whole URL here instead of loading the page. ?tree= or
-                    // ?city= says where the reader was standing, so the app
-                    // lands on the same tree rather than on whatever tab it
-                    // last had open; with neither, opening IS the whole of what
-                    // the button promised and there is nothing more to do.
-                    //
-                    // Somebody without the app never reaches this: iOS loads
-                    // /open in the browser and that page forwards to the App
-                    // Store. One URL, both outcomes, decided by the OS.
-                    if let comps = URLComponents(url: url, resolvingAgainstBaseURL: false),
-                       comps.path == "/open" {
-                        let q = comps.queryItems ?? []
-                        if let id = q.first(where: { $0.name == "tree" })?.value, !id.isEmpty {
-                            navigator.push = .tree(id)
-                        } else if let slug = q.first(where: { $0.name == "city" })?.value, !slug.isEmpty {
-                            navigator.push = .city(slug)
-                        }
-                        return
-                    }
-                    guard let route = Self.route(for: url) else { return }
-                    navigator.push = route
-                }
+                .onOpenURL { url in open(url) }
                 .onChange(of: navigator.selectTab) { _, new in
                     // ONLY A TAB THAT EXISTS. A selection matching no tag
                     // leaves the TabView showing its first page with our bar
