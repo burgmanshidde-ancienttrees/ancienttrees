@@ -1648,7 +1648,17 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    only ever the gap BEFORE the subtitle is not a gap before a button. The
    reference leaves 32 between its headline and its loud button; this is that
    number rather than a nicer-looking guess. */
-.signin-dialog--app #signin-title { margin-bottom: 2rem; }
+.signin-dialog--app #signin-title,
+.signin-dialog--app #acct-title { margin-bottom: 2rem; }
+/* The account page renders the same panel outside a dialog, so it inherits the
+   sheet's type and rhythm without the sheet's shadow, backdrop or corner
+   radius. One file, two frames. */
+.signin-dialog--page { text-align: center; }
+.signin-dialog--page h1 { font-size: 28px; line-height: 1.2; letter-spacing: -0.015em;
+  margin: 0 0 0.5rem; text-wrap: balance; }
+.signin-dialog--page .signin-sub { font-size: 14px; color: var(--ink-light); margin: 0 0 1.75rem; }
+.signin-dialog--page .oauth-btn, .signin-dialog--page .signin-rule,
+.signin-dialog--page .signin-form { max-width: 22rem; margin-left: auto; margin-right: auto; }
 
 @media (max-width: 600px) {
   .signin-dialog { margin: auto auto 0; width: 100%; max-width: none;
