@@ -34,6 +34,16 @@ export default function sitemapIntegration(): AstroIntegration {
           if (redirectPaths.has(path.relative(distRoot, f))) return false;
           const text = fs.readFileSync(f, "utf-8");
           if (text.includes("noindex")) return false;
+          // A page that canonicalises somewhere else does not belong in the
+          // sitemap: telling Google to index a URL and then telling it the
+          // real one is elsewhere is a contradiction, and it is exactly the
+          // kind of inconsistency that makes Google discount the whole file.
+          // This covers the /[lang]/ fallback pages added 2026-09-17, which
+          // carry the English text and point their canonical at the English
+          // URL, without naming them or any future case by path.
+          const self = canonicalFor(path.relative(distRoot, f));
+          const tag = /<link rel="canonical" href="([^"]+)"/.exec(text);
+          if (tag && tag[1].replace(/\/$/, "") !== self.replace(/\/$/, "")) return false;
           return true;
         });
 

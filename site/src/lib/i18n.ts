@@ -1913,7 +1913,105 @@ export async function translatedCityPaths(lang: string, allCities: CityLike[]) {
   });
 }
 
-interface CityLike { id: string; data: { trees?: { id: string }[] } }
+/** An untranslated city, dressed in the reader's language.
+ *
+ * Hidde's call, 2026-09-17: follow the convention. AllTrails serves every trail
+ * under /es/ and komoot every tour under /de-de/, with the frame in the
+ * reader's language and the content in whatever language it was written in.
+ * We had the opposite, translated leaf pages inside an English site, and a
+ * reader who landed on /es/cadiz had 19 of 27 links back into English.
+ *
+ * So this builds a CityTranslation out of the ENGLISH city file. Nothing is
+ * translated and nothing is invented: the frame, the navigation, the labels
+ * and the buttons come from ui(lang), and the words about the tree stay as
+ * they were written. The page carries rel=canonical to the English URL, which
+ * is Google's documented answer for the same language on a second URL, and it
+ * stays out of the sitemap. It exists to be navigated to, not to rank.
+ *
+ * The title is deliberately the plain pattern rather than the English page's
+ * generated one. That generator lives in [city].astro and weighs an age hook
+ * against a count against a length budget; porting it here would be the same
+ * rule written twice, for a page that is canonicalised away and never
+ * competes. A short honest title is all this page owes anybody.
+ */
+export function fallbackCityTranslation(city: any): CityTranslation {
+  const d = city.data;
+  const trees: Record<string, TreeTranslation> = {};
+  for (const t of d.trees ?? []) {
+    trees[t.id] = {
+      name: t.name ?? "",
+      species: t.species ?? "",
+      age_estimate: t.age_estimate ?? "",
+      access: t.access ?? "",
+      transport: t.transport ?? "",
+      story: t.story ?? "",
+    };
+  }
+  return {
+    city: d.city,
+    title: `Ancient Trees in ${d.city}`,
+    meta_description: d.meta_description ?? "",
+    intro: d.intro ?? "",
+    question_title: `What is the oldest tree in ${d.city}?`,
+    question_meta: d.question_meta ?? "",
+    question_answer: d.question_answer ?? "",
+    question_context: d.question_context ?? "",
+    faq: Array.isArray(d.faq) ? d.faq : [],
+    trees,
+  };
+}
+
+/** Every city in this language: the real overlays, then the rest as fallbacks.
+ * The `fallback` flag is what the page reads to decide its canonical. */
+export async function allCityPathsFor(lang: string, allCities: CityLike[]) {
+  const real = await translatedCityPaths(lang, allCities);
+  const done = new Set(real.map((r: any) => r.params.city));
+  const rest = allCities
+    .filter((c) => !done.has(c.id))
+    .map((city) => ({
+      params: { city: city.id },
+      props: { city, tr: fallbackCityTranslation(city), fallback: true },
+    }));
+  return [...real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } })), ...rest];
+}
+
+/** Every tree in this language: real translations, then the rest as fallbacks.
+ * Added 2026-09-17 because the city-level fallback alone left 25,208 dead
+ * links: a fallback city page links to its trees and its question page, and
+ * those did not exist in that language. The convention is a whole site per
+ * locale or none of it. */
+export async function allTreePathsFor(lang: string, allCities: any[], renderableTrees: any, treeSlugsForCity: any) {
+  const real = await translatedTreePaths(lang, allCities, renderableTrees, treeSlugsForCity);
+  const done = new Set(translatedCities(lang));
+  const out: any[] = real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } }));
+  for (const city of allCities) {
+    if (done.has(city.id)) continue;
+    const tr = fallbackCityTranslation(city);
+    const trees = renderableTrees(city);
+    const tslugs = treeSlugsForCity(city);
+    for (const tree of trees) {
+      const x = tr.trees[tree.id];
+      if (!x) continue;
+      out.push({
+        params: { city: city.id, tree: tslugs[tree.id] },
+        props: { city, tree, x, allTrees: trees, tr, fallback: true },
+      });
+    }
+  }
+  return out;
+}
+
+/** Every question page in this language, real then fallback. */
+export async function allQuestionPathsFor(lang: string, allCities: any[]) {
+  const real = await translatedQuestionPaths(lang, allCities);
+  const done = new Set(real.map((r: any) => r.params.city));
+  const rest = allCities
+    .filter((c) => !done.has(c.id))
+    .map((city) => ({ params: { city: city.id }, props: { city, tr: fallbackCityTranslation(city), fallback: true } }));
+  return [...real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } })), ...rest];
+}
+
+interface CityLike { id: string; data: any }
 
 /** getStaticPaths for a language's tree pages. The 150-250 word bar applies in
  * every language, so it is enforced here rather than trusted. */
