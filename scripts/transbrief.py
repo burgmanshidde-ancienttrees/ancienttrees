@@ -27,7 +27,8 @@ enumerates the ids and an apply step that verifies them makes that failure
 unreachable rather than merely unlikely.
 
 Usage:
-  python3 scripts/transbrief.py --brief <lang> <city>   # write the brief
+  python3 scripts/transbrief.py --brief <lang> <city>            # one city
+  python3 scripts/transbrief.py --brief <lang> <city> <city> ... # one pass, many cities
   python3 scripts/transbrief.py --apply <file>          # merge the answer
   python3 scripts/transbrief.py --status                # what is translated
 """
@@ -99,6 +100,43 @@ def sibling_convention(lang):
             return (d["strings_note"], os.path.basename(f)[:-5],
                     d.get("title"), d.get("question_title"))
     return None, None, None, None
+
+
+def calibration(lang, sample_trees=2):
+    """A few already-translated entries, inlined in the brief.
+
+    Measured 2026-09-17 across the first four passes: a translation pass costs
+    about 148k tokens before it translates anything, and only ~2.4k per tree
+    after that. The fixed part is not the payload, it is TURNS, each of which
+    re-sends the whole context. Opening a calibration overlay is one of those
+    turns and de/berlin alone is 66k characters, so the register it teaches is
+    worth about three trees' worth of text and costs far more than that.
+    Inlined here instead: the same lesson, no turn, no 66k file.
+    """
+    best, best_n = None, -1
+    for f in sorted(glob.glob(f"data/i18n/{lang}/*.json")):
+        try:
+            d = json.load(open(f, encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        n = len(d.get("trees") or {})
+        if d.get("title") and n > best_n:
+            best, best_n = (d, os.path.basename(f)[:-5]), n
+    if not best:
+        return None
+    d, name = best
+    picks = list((d.get("trees") or {}).items())[:sample_trees]
+    return {
+        "_what": f"How {lang} already reads on this site, from data/i18n/{lang}/"
+                 f"{name}.json. Match this register, these sentence rhythms and "
+                 f"this level of formality. Copy the SHAPE and never the facts: "
+                 f"it is a different city.",
+        "from_city": name,
+        "city_fields": {k: d[k] for k in CITY_FIELDS if isinstance(d.get(k), str)},
+        "faq_sample": (d.get("faq") or [])[:1],
+        "tree_samples": {tid: t for tid, t in picks},
+        "strings_note": d.get("strings_note"),
+    }
 
 
 def brief(lang, slug):
@@ -194,8 +232,129 @@ def brief(lang, slug):
     return 0
 
 
+def brief_batch(lang, slugs):
+    """One brief covering several cities, because the fixed cost is per PASS.
+
+    At ~148k fixed and ~2.4k per tree, a 7-tree pass costs 23.5k per tree and a
+    55-tree pass costs 5.1k. Nothing about the translation changes; only how
+    many of them share one context.
+    """
+    if lang not in LANGS:
+        print(f"{lang} is not a shipping language. Shipping: {', '.join(LANGS)}")
+        return 1
+    en = english_trees()
+    mem = memory(lang, en)
+    cal = calibration(lang)
+    cities, skipped, total_trees = [], [], 0
+    for slug in slugs:
+        src = f"data/cities/{slug}.json"
+        if not os.path.exists(src):
+            skipped.append(f"{slug} (no such city)")
+            continue
+        if os.path.exists(f"data/i18n/{lang}/{slug}.json"):
+            skipped.append(f"{slug} (already translated)")
+            continue
+        d = json.load(open(src, encoding="utf-8"))
+        trees = []
+        for t in d.get("trees") or []:
+            row = {"id": t["id"]}
+            for k in TREE_FIELDS:
+                v = t.get(k)
+                if isinstance(v, str) and v.strip():
+                    row[k] = v
+            settled = {k: mem[k][t[k].strip()] for k in MEM_FIELDS
+                       if isinstance(t.get(k), str) and t[k].strip() in mem[k]}
+            if settled:
+                row["_settled"] = settled
+            trees.append(row)
+        total_trees += len(trees)
+        cities.append({
+            "slug": slug,
+            "city": {k: d[k] for k in CITY_FIELDS if isinstance(d.get(k), str)},
+            "faq": d.get("faq") if isinstance(d.get("faq"), list) else [],
+            "trees": trees,
+        })
+    if not cities:
+        print("nothing to do: " + "; ".join(skipped))
+        return 1
+
+    out = {
+        "_brief": (
+            f"Translate these {len(cities)} cities into {lang}, in one pass. "
+            f"Write ONE answer file holding all of them, then the dispatcher "
+            f"merges with: python3 scripts/transbrief.py --apply <file>"
+        ),
+        "_rules": [
+            "Text only. Never emit a coordinate, photo, licence, source or id "
+            "you were not given; the overlay carries text and nothing else.",
+            "Every tree id below must appear in the answer, under its own city. "
+            "A short overlay does not break one page, it stops the whole site "
+            "deploying.",
+            "No em dashes anywhere (hard rule 3).",
+            "Stories keep the English bar: 150-250 words, lead with the most "
+            "surprising fact, no 'hidden gem', 'must-see', 'breathtaking', "
+            "'nestled', nor their equivalents in your language.",
+            "WRITE title AND question_title for every city. They are the only "
+            "fields with no English original, because the English build "
+            "generates them and no generator exists for your language. Follow "
+            "the calibration sample's shape, using each city's own trees, and "
+            "never promise a tree count the city lacks.",
+            "species: the target-language common name, the SAME Latin binomial "
+            "in parentheses (hard rule 9). Where _settled gives a string, reuse "
+            "it exactly; consistency across cities beats a better synonym.",
+            "Invent nothing. Keep every hedge at the English's own strength. "
+            "Where the English asks the reader a question, ask it too.",
+            "Place, street, park and register names keep their local spelling: "
+            "somebody reads them off a sign.",
+            "Do NOT open a calibration file. The sample below is the register.",
+        ],
+        "lang": lang,
+        "calibration": cal,
+        "answer_shape": {
+            "lang": lang,
+            "cities": [{"slug": "<slug>",
+                        "city": {"city": "...", "title": "...",
+                                 "meta_description": "...", "intro": "...",
+                                 "question_title": "...", "question_meta": "...",
+                                 "question_answer": "...", "question_context": "..."},
+                        "faq": [{"q": "...", "a": "..."}],
+                        "trees": [{"id": "<id>", "name": "...", "species": "...",
+                                   "age_estimate": "...", "access": "...",
+                                   "transport": "...", "story": "..."}]}],
+        },
+        "cities": cities,
+    }
+    os.makedirs(OUT, exist_ok=True)
+    path = f"{OUT}/{lang}-batch.json"
+    json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    raw = sum(len(open(f"data/cities/{c['slug']}.json", encoding="utf-8").read())
+              for c in cities)
+    got = len(open(path, encoding="utf-8").read())
+    print(f"wrote {path}")
+    print(f"  {len(cities)} cities, {total_trees} trees")
+    print(f"  {raw:,} chars of city files -> {got:,} in the brief "
+          f"({100 * (1 - got / raw):.0f}% less to read in)")
+    print(f"  at ~148k fixed + ~2.4k/tree this pass should cost about "
+          f"{(147915 + total_trees * 2373) / 1000:,.0f}k, "
+          f"{(147915 + total_trees * 2373) / max(total_trees, 1):,.0f} per tree")
+    if skipped:
+        print("  skipped: " + "; ".join(skipped))
+    return 0
+
+
 def apply(path):
     a = json.load(open(path, encoding="utf-8"))
+    if isinstance(a.get("cities"), list):
+        lang = a.get("lang")
+        rc = 0
+        for c in a["cities"]:
+            one = dict(c)
+            one["lang"] = lang
+            tmp = f"{OUT}/_one-{lang}-{c.get('slug')}.json"
+            os.makedirs(OUT, exist_ok=True)
+            json.dump(one, open(tmp, "w", encoding="utf-8"), ensure_ascii=False)
+            rc |= apply(tmp)
+        return rc
     lang, slug = a.get("lang"), a.get("slug")
     if lang not in LANGS or not slug:
         print("answer is missing a valid lang/slug")
@@ -290,6 +449,8 @@ def main():
         print(__doc__)
         return 1
     if a[0] == "--brief" and len(a) >= 3:
+        if len(a) > 3:
+            return brief_batch(a[1], a[2:])
         return brief(a[1], a[2])
     if a[0] == "--apply" and len(a) >= 2:
         return apply(a[1])
