@@ -8110,6 +8110,33 @@
     "note": "Two new walkable clusters (Bolwerken/Grote Kerk + Westerhoutpark) from LRMB register + Alkmaar municipal 2017 PDF (hand-extracted); caught 2 dead register entries not flagged upstream (Storm Poly 2023, elm disease felling 2019); 4 leads recorded.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alkmaar",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 7,
+    "note": "Finished a write claim an earlier attempt left with 5 of 7 stories drafted: wrote the last two (alk_013, alk_014) and merged all seven into the city file (7 -> 14). Session work, tokens not logged by an agent report.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "eindhoven",
+    "kind": "verify",
+    "tokens": 212576,
+    "trees": 5,
+    "note": "New Villapark cluster (~250m span), 3 of 5 double-sourced against the city's own street-tree inventory; 6 more candidates recorded as leads or blocked.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "eindhoven",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 5,
+    "note": "5 stories + recognition lines, distinguishing the two Prinsenhof trees and the two horse chestnuts from each other; merged into data/cities (eindhoven 16 -> 21), fixed count-promise copy. Session work, tokens not logged by an agent report.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
