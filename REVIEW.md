@@ -13,6 +13,74 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-17
+
+Reviewed commits since the last review (14a16874 window continues; the last
+review checkpoint was 2026-09-16's ef37440b) through 2f096e27: a return to
+full assembly-line volume after the two-and-a-half-day machine stall the
+2026-09-16 BLOCKER caught (190 commits in 24h, day-and-night verify/write
+cycles across Eindhoven 16->21, Alkmaar 7->14, Enschede/Helmond deepening,
+Berlin's new Villapark cluster, Pamplona's first register import 6->14, a
+Weeping Silver Lime species page, two new country pages), plus product work
+(the translation fallback layer cut from 21,042 pages to the 1,106 genuine
+overlays, a language picker on every page, /account rebuilt to share
+SignInPanel with the dialog, /account/settings rebuilt to match the app's own
+row order, sign-in button ordering corrected to Google-then-Apple, a
+compiler-timeout fix in ContentView.swift). Confirmed the 2026-09-16 BLOCKER
+is genuinely fixed: `night_shift()` in daily_digest.py now feeds a stall
+straight into ATTENTION rather than only the honest table below it, verified
+against the fix's own commit (16282a0a) and against DATA.md's newest entry
+which no longer opens on "nothing here needs you" while reporting zero real
+work underneath. Spot-checked the translation-fallback change directly in
+site/dist rather than trusting the commit message: /es/amsterdam.html (a
+fallback page) links its trees at the plain English URL as designed, while
+/es/alicante/ (a real overlay) still renders full translated tree pages; the
+language picker on /aachen.html correctly offers all seven fallback
+languages. Read Eindhoven's five new trees (data/cities/eindhoven.json):
+three double-sourced, two single-sourced and honestly flagged, real
+coordinates, no fabricated ages. Ran `python3 scripts/preflight.py` (609
+cities, 0 problems, only standing NOTEs) and `python3 scripts/qa.py` (clean,
+15,507 pages, links resolve, text clean). Read the six app screenshots in
+this rotation (photo-viewer, place-pin, profile-edit, profile-signed-in,
+profile, refused): nothing contradicts itself or promises something absent;
+the licence caption on the photo viewer and the location-permission education
+screen both read as intended. Not a finding.
+
+**BLOCKER — the live build is currently broken and cannot deploy: two Italian
+overlay files give the same species two different common names, which is
+exactly what `check_species_are_canonical_per_language()` exists to refuse,
+and it does refuse it.** `data/i18n/it/florence.json` names Jubaea chilensis
+"Palma da vino cilena" (tree `flo_021`, `La Palma da vino cilena di Villa di
+Rusciano`) while `data/i18n/it/naples.json` names the same binomial "Palma del
+Cile" (tree `nap_017`, `La Palma del Cile dell'Orto Botanico`). Running
+`python3 scripts/i18ncheck.py` on the current tree exits 1 with `SPLIT
+SPECIES it: Jubaea chilensis has 2 names in it`, and this check is a required
+step in `.github/workflows/deploy.yml` ("Check the translation overlays"),
+run before the Astro build even starts. This is very likely the direct cause
+of `python3 scripts/health.py`'s "Build and deploy: failure (its newest run,
+0.3h ago)" at the top of this session: the newest commit before that failing
+run, 0fb56fb2, landed at 10:59 UTC today, right after this exact split
+entered the overlay data. Under CLAUDE.md hard rule 9 ("one canonical common
+name per species") and P3/P4 (Contract F groups a species by name, so this
+split quietly divides one species page's worth of trees into two, each
+missing the other's entries), a run has to rename one of the two Italian
+overlay entries to match the other before anything else can ship, because no
+commit reaches production while this step fails. Worth naming precisely
+because of how it got here: today's `065083b8` ("Six more overlays, and the
+species check that a batch pass asked for", 02:39 UTC) added this very check
+after finding and fixing sixteen OTHER species splits across four languages,
+rewrote large parts of both `it/florence.json` and `it/naples.json` in the
+process, and its own commit message claims "i18ncheck clean on 67 overlays".
+Checked with `git show 065083b8^:data/i18n/it/florence.json` and
+`...naples.json`: this exact Jubaea chilensis split already existed,
+unchanged, in both files BEFORE that commit touched them, and the commit's
+sweep did not catch it even though the check it wrote that same hour is fully
+capable of catching it (confirmed by running it against the current tree,
+where it does). So either the check was not actually re-run against the
+committed state before that claim was written, or something about the pass
+that produced the fix missed this one pair among the many it rewrote. Either
+way, no run has re-run `i18ncheck.py` on main since, so a broken deploy has
+been sitting live all morning.
 ## 2026-09-16
 
 Reviewed commits since the last review (9f3feebb, 2026-09-13) through ef37440b:
