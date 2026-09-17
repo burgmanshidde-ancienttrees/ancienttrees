@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Kasteel Helmond has stood here for nearly seven hundred years, and until the middle of the last century it sat in a large landscape park. Most of that went after 1921, when the last private owner sold up. Seven trees here still stand in what is left of the grounds, one a Chinese beech the register calls the oldest of its kind in the country. The rest of the page is a cemetery planted almost entirely in weeping trees, an oak beside a tower from about 1400, and an oak somebody wrote a book about.",
-  "meta_description": "Eighteen remarkable trees in Helmond: seven in the castle grounds including a rare Chinese beech, a cemetery of weeping trees, and the Peeters oak.",
-  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and seventeen more worth the walk.",
+  "meta_description": "Nineteen remarkable trees in Helmond: seven in the castle grounds including a rare Chinese beech, a cemetery of weeping trees, and the Peeters oak.",
+  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and eighteen more worth the walk.",
   "question_answer": "The oldest tree in Helmond is the one known as de oude eik van boer Peeters, the old oak of farmer Peeters, on the Rijnlaan at Brouwhuis, which the national register places in a planting band of 1820 to 1830, so around two centuries old. Its name is not folklore we have collected: the register itself says the name comes from the book 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, which is a local history of the trees of Helmond and its surroundings. That is worth knowing because it means somebody in this town went to the trouble of writing down what its trees are called, and the national register then read it.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and for most of these trees it is the only source, so everything is flagged. Seven of the eighteen stand in the grounds of Kasteel Helmond, surrounded by a large landscape park until the middle of the twentieth century and mostly lost after the last private owner sold the castle in 1921; those trees run from the 1880s to the 1940s. Three more stand in the two adjoining Molenstraat cemeteries, founded in 1880, and four more were added this pass: two oaks in the Warande city walking park and a copper beech and a plane tree on ordinary streets nearby. Where a pin is marked approximate we know the grounds and not the trunk, and if you find one of these gone, tell us and it comes off the same day.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and for most of these trees it is the only source, so everything is flagged. Seven of the nineteen stand in the grounds of Kasteel Helmond, surrounded by a large landscape park until the middle of the twentieth century and mostly lost after the last private owner sold the castle in 1921; those trees run from the 1880s to the 1940s. Three more stand in the two adjoining Molenstraat cemeteries, founded in 1880, and four more were added this pass: two oaks in the Warande city walking park and a copper beech and a plane tree on ordinary streets nearby. Where a pin is marked approximate we know the grounds and not the trunk, and if you find one of these gone, tell us and it comes off the same day.",
   "hero_tree_id": "hlm_001",
   "oldest_tree_id": "hlm_002",
   "faq": [
@@ -28,7 +28,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All eighteen. The castle park is open ground in the centre of town, the Molenstraat cemetery is a general public cemetery open in daylight, the cedar on the Julianalaan stands on a public square, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis."
+      "a": "All nineteen. The castle park is open ground in the centre of town, the Molenstraat cemetery is a general public cemetery open in daylight, the cedar on the Julianalaan stands on a public square, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis. The oak on Croylaan, added this pass, is council-owned and stands beside the public road, though the castle grounds it approaches are not."
     }
   ],
   "trees": [
@@ -657,6 +657,37 @@
       },
       "age_min": null,
       "age_max": null
+    },
+    {
+      "id": "hlm_019",
+      "name": "The Oak of Kasteel Croy",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 170 years",
+      "age_min": 166,
+      "age_max": 176,
+      "girth_cm": null,
+      "location": {
+        "address": "Croylaan, Aarle-Rixtel (near Croylaan 14, Kasteel Croy)",
+        "latitude": 51.500032,
+        "longitude": 5.62681,
+        "neighbourhood": "Aarle-Rixtel (Laarbeek), about 3 km east of Helmond centre, bordering the municipality"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register (Bomenstichting Landelijk Register Monumentale Bomen), nr 1696050, 'Zomereik Kasteel Croy', planted_band 1850-1860, owner_category gemeente, setting weg, visitable ja, visible ja, reason monumentaal, history onbekend (no felling language)",
+        "https://www.bedandbreakfast.nl/en/a/XmuIzp7BVSSM/landgoed-croy (fetched directly, not from a search summary): the Landgoed Croy bed and breakfast, run from the castle's own gatehouse, describes 'the calming beautiful garden with its century old trees' / Dutch original 'de rustgevende en prachtige tuin met eeuwenoude bomen'"
+      ],
+      "access": "Free. The oak stands beside Croylaan, the public road leading up to Kasteel Croy; the register lists this specific tree as council-owned (gemeente), visitable and visible. The castle itself is privately run (offices and a bed and breakfast in the gatehouse) and not generally open to the public, but the road and the roadside tree are public.",
+      "transport": "Bus line 25 from Helmond Station towards Aarle-Rixtel/Gemert to an Aarle-Rixtel stop, then roughly a 10 to 15 minute walk to Croylaan.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Kasteel Croy is not open to you. This oak is.\n\nThe castle is a moated house whose oldest parts go back to the mid fifteenth century, now privately run, with offices and a bed and breakfast in its gatehouse, and not generally open to visitors. The oak stands outside all of that, beside Croylaan, the public road leading up to it. The national register of monumental trees lists this tree as council property, visitable and visible, so you can walk to it and stand under it without asking anybody's permission.\n\nIts age comes from the register rather than from a planting record: a band of 1850 to 1860, which makes it roughly 170 years old. Our second source is honest but general, a description of the estate's garden and its century-old trees that never singles out this one, so read the date as the register's best estimate rather than a settled fact.\n\nIf the band is right, the oak went in while the Van der Brugghen family still held Croy, and it has spent its life on a boundary that kept moving around it. Stiphout belonged to the Croy estate until 1968, when it was absorbed into Helmond. The castle went the other way, into the municipality of Laarbeek. The oak stayed where it was, three kilometres east of a city it has never been part of.\n\nNobody has taped its trunk. If you do, tell us.",
+      "how_to_recognise": "You can recognise it by the big old oak on the verge of Croylaan, standing outside the castle gates rather than in its garden. It stands on the approach road to Kasteel Croy, in Aarle-Rixtel east of Helmond.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

@@ -8092,6 +8092,15 @@
     "note": "all 8 unmined register rows confirmed duplicates of already-published trees or already-blocked private land (reconfirms a 2026-09-16 verdict); 2 open leads researched further, still unresolved",
     "wasted": 189873,
     "brief_wrong": true
+   },
+   {
+    "target": "Enschede, Helmond",
+    "kind": "write",
+    "tokens": 42000,
+    "trees": 3,
+    "note": "3 stories + recognition lines merged (ens_014, ens_015, hlm_019); fixed species name (Common Hornbeam -> Hornbeam) and city-count promises at merge time.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
