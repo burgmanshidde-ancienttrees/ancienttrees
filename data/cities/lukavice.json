@@ -64,7 +64,14 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by standing alone on the open ground of the former Hradek fortress, 7 metres round and 31 metres tall. It stands at Lukavice, where a stripped-bare root zone once nearly killed it."
+      "how_to_recognise": "You can recognise it by standing alone on the open ground of the former Hradek fortress, 7 metres round and 31 metres tall. It stands at Lukavice, where a stripped-bare root zone once nearly killed it.",
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Dub u Lukavické tvrze",
+        "qid": "Q26787120",
+        "views": 10
+      }
     },
     {
       "id": "luk_002",
@@ -103,6 +110,13 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-11",
+        "source_name": "Šestikmenná lípa v Zámrsku",
+        "qid": "Q130748527",
+        "views": 6
       }
     }
   ]
