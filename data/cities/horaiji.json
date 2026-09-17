@@ -1,0 +1,85 @@
+{
+  "city": "Horaiji",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Horaiji maps two trees on the pilgrim stairway up Mount Horaiji, a National Scenic Beauty and Natural Monument since 1931 and home to one of Japan's three great Tosho-gu shrines. Kasa sugi, a cedar once measured as Japan's tallest at over sixty metres, fans out like an open umbrella above the Nio-mon gate. Further down, a juniper called Nezu no Ki carries a disputed age spanning over a thousand years.",
+  "meta_description": "Mount Horaiji, Japan: a 60-metre cedar once Japan's tallest tree, and a disputed-age juniper, both on the 1,425-step pilgrim stairway.",
+  "question_meta": "Horaiji's tallest tree is Kasa sugi, a cedar once measured at over sixty metres, on the stone stairway up Mount Horaiji.",
+  "question_answer": "Horaiji's best-known tree is Kasa sugi, a Japanese cedar about 800 years old by tradition and once recorded as Japan's tallest tree, between 59.6 and 60.8 metres depending on the survey. It stands beside the 1,425 stone steps that climb Mount Horaiji, above the Nio-mon gate. A second tree, a temple juniper called Nezu no Ki, grows further down the same stairway; sources disagree on its age by more than a thousand years.",
+  "question_context": "Kasa means umbrella, and the name is literal: the upper trunk of this cedar fans into limbs in every direction, so from the steps below the crown reads as an open parasol. The base measures about 7.5 metres round. For decades it held the record as Japan's tallest tree; a cedar at Hanase, north of Kyoto, was measured at 62.3 metres in 2017 and now holds it instead. Its age is given everywhere as about 800 years, tradition rather than measurement.\n\nFurther down the same stairway stands Nezu no Ki, a temple juniper. A Commons photo caption gives it as over 1,400 years old; the local newspaper, reporting on a museum exhibition of the city's designated monuments, says roughly 300, and calls it the largest and oldest Nezu juniper west of Kanagawa Prefecture. Restoration work in 1996 brought its vigour back after decline.\n\nReach the mountain by JR Iida Line to Honagashino Station, then the Toyotetsu bus to Horaiji, or about 20 minutes by car from Shinshiro IC. The path itself is free; a toll parkway serves drivers.",
+  "hero_tree_id": "hrj_001",
+  "oldest_tree_id": "hrj_001",
+  "faq": [
+    {
+      "q": "What is Horaiji's most famous tree?",
+      "a": "Kasa sugi, a Japanese cedar once measured as Japan's tallest tree, between 59.6 and 60.8 metres, standing above the Nio-mon gate on the stairway to Horaiji Temple."
+    },
+    {
+      "q": "How old are the trees?",
+      "a": "Kasa sugi is about 800 years old by tradition. The second tree, Nezu no Ki, is disputed: one source gives over 1,400 years, another roughly 300, and neither is measured."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, the stone stairway itself is free. A toll mountain parkway with paid parking serves visitors who would rather not climb the 1,425 steps."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "JR Iida Line to Honagashino Station, then the Toyotetsu bus to the Horaiji stop; or about 20 minutes by car from Shinshiro IC on the Shin-Tomei Expressway."
+    },
+    {
+      "q": "Is the mountain itself worth the trip?",
+      "a": "Yes, that is the honest reason to come. Mount Horaiji is a National Scenic Beauty and Natural Monument, home to one of Japan's three great Tosho-gu shrines; both trees stand on the path most people are already climbing."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hrj_001",
+      "name": "Kasa sugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "about 800 years",
+      "age_min": 700,
+      "age_max": 900,
+      "girth_cm": 750,
+      "location": {
+        "address": "Along the stone-step pilgrim path (sando) to Horaiji Temple, beyond the Nio-mon gate, Mount Horaiji, Horai, Shinshiro City, Aichi Prefecture",
+        "latitude": 34.978739,
+        "longitude": 137.586189,
+        "neighbourhood": "Mount Horaiji (Horaijisan), Shinshiro"
+      },
+      "verified_sources": [
+        "https://aichinow.pref.aichi.jp/spots/detail/50/",
+        "https://www.city.shinshiro.lg.jp/kanko/meisyo/horaijisan.html"
+      ],
+      "access": "Free, standing directly beside the public 1,425-step stone stairway (sando) that climbs Mount Horaiji to Horaiji Temple, inside the nationally designated Scenic Beauty and Natural Monument area (whole-mountain designation, 31 July 1931). No entry fee for the path itself; a toll mountain parkway with paid parking (JPY 550 as of the source check) serves drivers who prefer not to walk the full stairway. Some hiking records in 2025 mention trail closures elsewhere on the mountain due to fallen trees, so check current trail status before visiting, though the main temple stairway carrying this tree was not itself reported closed.",
+      "transport": "By train and bus: JR Iida Line to Honagashino Station, then the Toyotetsu bus toward Taguchi, alighting at the Horaiji stop, then on foot up the stairway. By car: about 20 minutes from Shinshiro IC on the Shin-Tomei Expressway, or 25 minutes from Horaigoke IC or Hamamatsu Inasa IC.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "For decades this was the tallest cedar in Japan, somewhere between 59.6 and 60.8 metres depending on which survey you read. Aichi's tourism pages and Shinshiro's own still say so. A cedar at Hanase, north of Kyoto, was measured at 62.3 metres in 2017 and now holds the record, which takes nothing off the sixty metres standing here.\n\nKasa means umbrella, and the name is literal. The upper trunk fans into limbs in every direction, so from the steps below the crown reads as an open parasol. The base measures about 7.5 metres round. Its age is given everywhere as about 800 years, with no measurement or growth rate behind the number, so read that as tradition rather than a date.\n\nThe tree stands beside the 1,425 stone steps that climb Mount Horaiji to the temple at the top, above the Nio-mon gate rebuilt in 1651. The whole mountain has been a National Scenic Beauty and Natural Monument since 1931, and the cedar was picked for the New Japan Famous Trees, 100 Selection.\n\nNobody has published a coordinate for the tree itself, only for the temple complex, so expect to find it by climbing rather than by map. Hikers photographed it in place in April 2024.",
+      "how_to_recognise": "You can recognise it by the crown, which fans out overhead like an open umbrella, and by the base, about 7.5 metres round. It stands right beside the stone stairway up Mount Horaiji, above the Nio-mon gate."
+    },
+    {
+      "id": "hrj_002",
+      "name": "The Nezu no Ki of Horaiji",
+      "species": "Temple Juniper (Juniperus rigida)",
+      "age_estimate": "disputed: sources give either roughly 300 years or 1,400+ years",
+      "age_min": 300,
+      "age_max": 1400,
+      "location": {
+        "address": "Horaiji sando (temple approach path), between the first and second gates, near the former Kadoya Elementary School site, Kadoya, Shinshiro City, Aichi Prefecture, Japan",
+        "latitude": 34.972314,
+        "longitude": 137.578608,
+        "neighbourhood": "Kadoya, Shinshiro City, Aichi Prefecture (Mt Horaiji approach path)"
+      },
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki.jpg",
+        "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki_2021-07-31.jpg"
+      ],
+      "access": "Free and open; stands directly beside the public stone-step approach path (sando) to Horaiji Temple, which anyone walking the 1,425-step path passes. No ticket or permission needed for the path itself (the temple further up may have its own visiting hours).",
+      "transport": "No station or bus stop confirmed precisely; the pin used is the Horaiji-san Museum of Natural History near the base of the approach path (Kadoya, Shinshiro City), which sits at the trailhead. Shinshiro is reached by JR Iida Line to Nagashino-jo or Honnagashino stations plus a bus/taxi into the mountain; not confirmed to a specific stop for this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Sources on this juniper disagree by more than a thousand years, and both figures are kept here rather than picking one to sound confident. A photograph on Wikimedia Commons describes it as more than 1,400 years old; the local newspaper, reporting on a Horaiji-san Museum exhibition of the city's designated natural monuments, says roughly 300, and calls it the largest and oldest Nezu juniper west of Kanagawa Prefecture. Three hundred years sits far closer to what is known of the species generally, a juniper claiming fourteen centuries would be an extreme outlier, so read the newspaper's figure as the likelier one and the museum's as the honest alternative.\n\nIt grows on the public stone stairway up Mount Horaiji, one of the 1,425 steps' quieter landmarks, below the cedar known as Kasa sugi further up the same path. Restoration work in 1996 brought its vigour back after decline, and a dated 2021 photograph shows it alive and holding. Most people climbing past are headed for the temple at the top and the mountain's own fame as one of Japan's three great Tosho-gu sites; this tree is what you pass on the way, not the reason most people set out.",
+      "how_to_recognise": "You can recognise it by its position on the stone stairway, between the first and second gates, below the taller cedar Kasa sugi further up the same path."
+    }
+  ]
+}

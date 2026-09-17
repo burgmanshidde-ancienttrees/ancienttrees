@@ -1,0 +1,57 @@
+{
+  "city": "Nichinan, Tottori",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Nichinan, Tottori maps one tree: a Japanese yew pressed flat by snow and wind near the ninth station of Mount Sentsu, spreading twenty to twenty-two metres across the slope while standing only about four metres tall. The mountain is traditionally named as the source of the Hii River and the setting of the Kojiki's best-known myth, Susanoo's slaying of the eight-headed serpent Yamata no Orochi. Published alone here because the tree itself is the destination, not because Nichinan's research is finished.",
+  "meta_description": "The Yew of Mt Sentsu, Nichinan, Tottori: a National Monument yew flattened by snow to spread 20 metres, tied to the Yamata no Orochi myth.",
+  "question_meta": "Nichinan's only mapped tree is the Yew of Mt Sentsu, grown nearly flat by snow and wind, a National Natural Monument since 1957.",
+  "question_answer": "Nichinan's only mapped tree is the Yew of Mt Sentsu (Sentsuzan no Ichii), a Japanese yew (Taxus cuspidata) grown almost flat along the slope near the ninth station of Mount Sentsu, a National Natural Monument since 1957.",
+  "question_context": "Snow and wind at eleven hundred metres have flattened this yew rather than let it grow up. Where an ordinary Japanese yew reaches for height, this one spreads: about four metres tall and twenty to twenty-two metres across, a female tree with a male tree somewhere nearby on the trail. Age estimates run from several thousand years, the phrase Tottori Prefecture's own page uses, to a more specific but still legendary two thousand, the figure the tree's dedicated Wikipedia article gives while calling it tradition rather than measurement. The mountain carries weight beyond the tree: Mount Sentsu is traditionally named as the source of the Hii River and the setting of one of Japan's best-known myths, Susanoo's slaying of the eight-headed serpent Yamata no Orochi in the Kojiki. It stands on the Tottori side of the mountain, a hike rather than a walk, reached from Ikiyama Station and Route 183.",
+  "hero_tree_id": "ntt_001",
+  "oldest_tree_id": "ntt_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Snow and wind have flattened it rather than let it grow tall: about four metres high and twenty to twenty-two metres across, a shape found nowhere else on the mountain."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. Tottori Prefecture's own page says several thousand years; the tree's dedicated Wikipedia article gives a more specific but still legendary two thousand. Neither is a ring count."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no ticket, though reaching it is a hike near the ninth station of Mount Sentsu."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Via Ikiyama Station and Route 183, on the Tottori-prefecture side of the mountain."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ntt_001",
+      "name": "The Yew of Mt Sentsu (Sentsuzan no Ichii)",
+      "species": "Japanese Yew (Taxus cuspidata)",
+      "age_estimate": "roughly 2,000 years (local tradition)",
+      "age_min": 1000,
+      "age_max": 3000,
+      "girth_cm": 1351,
+      "location": {
+        "address": "Near the ninth station (9-gome), Mt Sentsu, Nichinan Town, Hino District, Tottori Prefecture",
+        "latitude": 35.155306,
+        "longitude": 133.178056,
+        "neighbourhood": "Mt Sentsu (Sentsuzan) summit trail, Tottori side"
+      },
+      "verified_sources": [
+        "https://www.pref.tottori.lg.jp/item/826705.htm",
+        "https://ja.wikipedia.org/wiki/船通山のイチイ"
+      ],
+      "access": "Free, on a public national-park hiking trail (Hiba-Dogo-Taishaku Quasi-National Park). Reached by trailhead parking then a signed mountain trail; no gate, ticket or private land involved.",
+      "transport": "From Ikiyama Station (JR Hakubi Line): about 40 minutes by car/taxi via Route 183 to the trailhead parking area, then a hiking trail of 1.06-1.4km (roughly 40-50 minutes each way) to the tree near the summit, 9th station, approx 1,000m elevation. This is a moderate mountain hike, not a roadside stop.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Snow and wind at eleven hundred metres have flattened this yew rather than let it grow up. Where an ordinary Japanese yew reaches for height, this one spreads: about four metres tall and twenty to twenty-two metres across, a female tree grown nearly flat along the slope near Mount Sentsu's ninth station, with a male tree somewhere nearby on the trail.\n\nAge estimates run from 'several thousand years', the phrase Tottori Prefecture's own page uses, to a more specific but still legendary two thousand, the figure the tree's dedicated Wikipedia article gives while calling it tradition rather than measurement. Neither is a ring count, and nobody claims one.\n\nThe mountain carries weight beyond the tree. Mount Sentsu is traditionally named as the source of the Hii River and the setting of one of Japan's best-known myths, Susanoo's slaying of the eight-headed serpent Yamata no Orochi in the Kojiki. A yew this strange, growing on ground with a story that old, has been a National Natural Monument since 1957.\n\nIt stands on the Tottori side of the mountain, a hike rather than a walk, reached from Ikiyama Station and Route 183.",
+      "how_to_recognise": "You can recognise it by its shape, spread almost flat across the ground for twenty metres rather than standing upright, near the ninth station on the Tottori side of Mount Sentsu."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "city": "Kozaki",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kozaki maps one tree: Kozaki no Okusu, a camphor whose main trunk fire cut off seven metres up in 1907, since replaced by five resprouted trunks reaching 25 metres. Tokugawa Mitsukuni is said to have stopped in front of it in 1674 and asked what on earth it was; Nanja Monja no Ki has been its nickname since, and the town of Kozaki's own mascot is built on the same remark. It stands beside the main hall of Kozaki Shrine, twenty minutes' walk from Shimousa-Kozaki Station.",
+  "meta_description": "Kozaki no Okusu, Kozaki: a five-trunked camphor of roughly 1,300 years, free beside Kozaki Shrine, 20 minutes from Shimousa-Kozaki Station.",
+  "question_meta": "Kozaki's only mapped tree is Kozaki no Okusu, a camphor traditionally dated at 1,300 years, a National Natural Monument since 1926.",
+  "question_answer": "Kozaki's only mapped tree, and its oldest, is Kozaki no Okusu, a camphor tree (Camphora officinarum) traditionally dated at roughly 1,300 years. It stands beside the main hall of Kozaki Shrine in Kozaki, Chiba Prefecture, a National Natural Monument since 1926.",
+  "question_context": "In 1674 the daimyo Tokugawa Mitsukuni, the man folklore knows as Mito Komon, stopped in front of this camphor and asked, in effect, what on earth is this tree. Nanja Monja no Ki has been its nickname ever since, and Nanjamon, built out of the same remark, is now the town's official mascot. A fire at the shrine in December 1907 destroyed the main trunk, which still stands cut off about seven metres up, and five secondary trunks resprouted from the base, the tallest now around 25 metres. At ground level the measurement is 8.5 metres round.\n\nIts age of roughly 1,300 years is taken from the shrine's traditional founding in 651 or 673, not from any ring count; the National Natural Monument designation is firmer, dated 10 October 1926 by most sources. It stands beside the main hall, on a low hill in Kozaki Forest above the Tone River, free and open, about 20 minutes on foot from JR Narita Line's Shimousa-Kozaki Station.",
+  "hero_tree_id": "kzk_001",
+  "oldest_tree_id": "kzk_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "A 1674 encounter gave it its nickname: the daimyo Tokugawa Mitsukuni is said to have asked what on earth it was, and Nanja Monja no Ki stuck. A 1907 fire cut off its main trunk; five resprouted trunks now form its crown."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 1,300 years by tradition, taken from Kozaki Shrine's founding date rather than any measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on the open grounds of Kozaki Shrine, no fee or booking."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 20 minutes on foot (1.8km) from JR Narita Line's Shimousa-Kozaki Station, northwest along National Route 356."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kzk_001",
+      "name": "Kozaki no Okusu",
+      "species": "Camphor Tree (Camphora officinarum, syn. Cinnamomum camphora)",
+      "age_estimate": "roughly 1,300 years (tradition)",
+      "age_min": 1200,
+      "age_max": 1400,
+      "girth_cm": 850,
+      "location": {
+        "address": "1944 Kozaki Honshuku, Kozaki, Katori District, Chiba Prefecture",
+        "latitude": 35.905722,
+        "longitude": 140.400389,
+        "neighbourhood": "Kozaki Shrine (Kozaki Jinja), Kozaki Forest"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%A5%9E%E5%B4%8E%E3%81%AE%E5%A4%A7%E3%82%AF%E3%82%B9",
+        "https://www.pref.chiba.lg.jp/kyouiku/bunkazai/bunkazai/n431-005.html",
+        "https://maruchiba.jp/spot/detail_10166.html"
+      ],
+      "access": "Free. Stands beside the main hall of Kozaki Shrine, open shrine grounds, no fee or booking.",
+      "transport": "JR Narita Line, Shimousa-Kozaki Station, then about 20 minutes (1.8 km) on foot northwest along National Route 356.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 1674 the daimyo Tokugawa Mitsukuni, the man folklore knows as Mito Komon, stopped in front of this camphor and asked, in effect, what on earth is this tree. Nanja Monja no Ki has been its nickname ever since, and Nanjamon, built out of the same remark, is now the official mascot of the town of Kozaki.\n\nThe tree takes a moment to read. In December 1907 a fire at the shrine destroyed the main trunk, which still stands cut off about seven metres from the ground. Five secondary trunks resprouted from the base and the roots, the tallest of them now around 25 metres, so what you meet is a multi-stemmed crown rather than one clean bole. At ground level the measurement is 8.5 metres round.\n\nIts age is given as roughly 1,300 years, a figure taken from the shrine's traditional founding in 651 or 673 rather than from anybody counting rings. The designation is firmer, if not entirely tidy: a National Natural Monument, dated 10 October 1926 by most sources and 2 October 1925 by Chiba Prefecture's own cultural properties page.\n\nIt stands beside the main hall, on a low hill in Kozaki Forest above the Tone River.",
+      "how_to_recognise": "You can recognise it by the shape: five trunks rising from the base around the original one, which fire cut off about seven metres up, the tallest now 25 metres. It stands beside the main hall of Kozaki Shrine."
+    }
+  ]
+}

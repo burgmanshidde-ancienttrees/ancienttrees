@@ -1,0 +1,58 @@
+{
+  "city": "Iheya",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Iheya maps one tree: Nento Hiramatsu, a Ryukyu pine pressed flat by wind and salt into a shape closer to a giant bonsai than a tree, eight metres tall and spreading twenty-eight metres wide. It is the acknowledged symbol of Iheya, a small island off the northern tip of Okinawa reached only by an eighty-minute ferry, no bridge and no airport. Published alone here because the tree itself is the destination, not because Iheya's research is finished.",
+  "meta_description": "Nento Hiramatsu, Iheya: a Ryukyu pine pressed flat by wind into a 28-metre-wide giant bonsai shape, free, on a ferry-only island.",
+  "question_meta": "Iheya's only mapped tree is Nento Hiramatsu, a Ryukyu pine spreading 28 metres wide, a National Natural Monument since 2016.",
+  "question_answer": "Iheya's only mapped tree is Nento Hiramatsu, a Ryukyu Pine (Pinus luchuensis) grown low and wide rather than tall by the wind and salt of the East China Sea. It stands in Nento Hiramatsu Park on Iheya Island, a National Natural Monument since 2016.",
+  "question_context": "A curse protects this pine, if the story is believed. Around 1716 somebody from a neighbouring island felled an earlier brother pine that stood here and was struck down by illness soon after; the tree planted to replace it is the one standing today. It grows nothing like a normal pine: wind and salt have pressed it to about eight metres tall while its crown spreads twenty-eight metres east to west, so that a 1937 forestry survey described it as shaped like a garden bonsai. Sources put its age from two hundred to nearly three hundred years, tradition rather than a ring count.\n\nIt has outlived the disease that has killed old pines across much of Japan: Iheya has no pine bark beetle, the vector for pine wilt, so pine material imports are restricted to keep it that way. It became a National Natural Monument in 2016, sixty years after a prefectural one. Reaching it means an eighty-minute ferry from Unten Port on the mainland, then about five minutes by car to the park.",
+  "hero_tree_id": "ihy_001",
+  "oldest_tree_id": "ihy_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Wind and salt have pressed it flat rather than tall, eight metres high and twenty-eight wide, shaped like an oversized bonsai. It is the acknowledged symbol of Iheya Island."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sources give somewhere between 200 and nearly 300 years, tied to a legend that the current tree replaced an earlier one felled around 1716."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in the public Nento Hiramatsu Park with on-site parking."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "An eighty-minute ferry from Unten Port on the Okinawan mainland, two sailings a day, then about five minutes by car or taxi to the park. There is no bridge or airport to Iheya."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ihy_001",
+      "name": "Nento Hiramatsu",
+      "species": "Ryukyu Pine (Pinus luchuensis)",
+      "age_estimate": "roughly 200 to 300 years",
+      "age_min": 200,
+      "age_max": 310,
+      "girth_cm": 450,
+      "location": {
+        "address": "Nento Hiramatsu Park, Dana, Iheya-son, Shimajiri-gun, Okinawa 905-0701, Japan",
+        "latitude": 27.071556,
+        "longitude": 127.99671,
+        "neighbourhood": "Dana, Iheya Island, Iheya Village, Okinawa Prefecture"
+      },
+      "verified_sources": [
+        "https://online.bunka.go.jp/heritages/detail/293290",
+        "https://www.okinawastory.jp/spot/30000045",
+        "https://ja.wikipedia.org/wiki/念頭平松"
+      ],
+      "access": "Free, in the public Nento Hiramatsu Park (opened 1994) on Iheya Island; parking and toilets on site, about 5 minutes by car from Maedomari Port. Reaching Iheya Island itself requires a ferry from Unten Port on the Okinawa mainland (Nakijin), about 80 minutes, 2 sailings a day; the island has no bridge or airport link to the mainland.",
+      "transport": "Ferry from Unten Port (Okinawa mainland) to Maedomari Port, Iheya Island, about 80 minutes, 2 sailings daily; then about 5 minutes by car/taxi to the park. No direct link exists from any city Ancient Trees currently publishes.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "A curse protects this pine, if the story is believed. Around 1716 somebody from a neighbouring island felled an earlier 'brother pine' that stood here and was struck down by illness soon after; the tree planted to replace it is the one standing today, and Iheya has treated it as untouchable ever since.\n\nIt grows nothing like a normal pine. Wind and salt off the East China Sea have pressed it down to about eight metres tall while its crown spreads twenty-eight metres east to west, low and flat and round, so that a 1937 forestry survey described it as shaped like a garden bonsai rather than a tree. Sources put its age anywhere from two hundred to nearly three hundred years, tradition rather than a ring count, and it has outlived the disease that has killed old pines across much of the rest of Japan: Iheya has no pine bark beetle, the vector for pine wilt, so imports of pine material onto the island are restricted to keep it that way.\n\nIt is the acknowledged symbol of Iheya, a small island reached only by an eighty-minute ferry from the Okinawan mainland, no bridge and no airport, and it was named a National Natural Monument in 2016 after sixty years as a prefectural one.",
+      "how_to_recognise": "You can recognise it by its shape, barely eight metres tall but spreading twenty-eight metres wide, flat and low like an oversized bonsai. It stands alone in Nento Hiramatsu Park."
+    }
+  ]
+}
