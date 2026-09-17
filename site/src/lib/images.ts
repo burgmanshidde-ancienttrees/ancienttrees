@@ -17,6 +17,16 @@ export const NO_PHOTO_SVG =
   '<circle cx="34" cy="12" r="11" fill="currentColor"/>' +
   '<path d="M31 62 h5.6 l-1.2-16 h-3.2z" fill="currentColor"/></svg></span>';
 
+/** The same drawing, wearing a browse card's photo slot instead of a country
+ * row's. One constant rather than five, because four of the five places that
+ * needed it had quietly settled for an empty beige rectangle: /cities, the
+ * translated cities index and both map panels all emitted a bare
+ * `<span class="exc-ph exc-noph">` and nothing anywhere styled exc-noph, so a
+ * city with no photograph read as a broken image, dozens of times down one
+ * page (2026-09-17). */
+export const NO_PHOTO_CARD =
+  NO_PHOTO_SVG.replace('class="ctry-ph ctry-noph"', 'class="exc-ph ctry-noph"');
+
 function esc(s: string): string {
   return s
     .replace(/&/g, "&amp;")

@@ -1,6 +1,70 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - One page container, so nothing jumps inward any more
+
+Hidde, with a screenshot of the homepage footer: "Het is raar dat de sectie
+footer en missie opeens verder naar binnen springen qua alignment. Kun je dit
+fixen en de site nalopen voor meer van dit soort design slordigheden en fixen
+niet vragen gewoon verbeteren."
+
+He found one jump and there were four. Measured on the built pages rather than
+guessed, left edge of the ink in each band of the homepage:
+
+| Band | Phone, was | Phone, now | 1280, was | 1280, now |
+|---|---|---|---|---|
+| Shelves (favourite cities, species, parks) | 16 | 16 | 72.5 | 122.5 |
+| Find / walk / collect | 24 | 16 | 136.5 | 122.5 |
+| The directory | 16 | 16 | 122.5 | 122.5 |
+| Footer and the mission block | 40 | 16 | 40 | 122.5 |
+
+The cause was one token short. 2026-08-20's "fix beide" gave the site a single
+`--gutter` and it fixed the CHROME: the bar, the map sheet, the cards. The
+page's own BANDS never joined it, so each went on carrying a number of its own,
+the footer at 2.5rem, the acts at 1.5rem and 1040 wide, the shelves at 2rem and
+74rem wide, the directory at 2.5rem and 1100 wide. They all read `--page-max`
+and `--page-pad` now; the reading column on a tree or city page keeps its own
+narrower measure on purpose, under `--content-max`.
+
+Three more of the same kind, found by walking the pages at both widths:
+
+- **The explore sheet's prose** sat 16px right of the cards above it on every
+  phone, because `.panel-foot` already sets the sheet's gutter and the prose
+  added a second one on top of it.
+- **The app landing card** hung 6px inboard of the footer on a phone and 14px
+  outboard of it on a desktop. Same container now.
+- **A city with no photograph** drew an empty beige rectangle on /cities, in
+  the translated indexes and in both map panels, which reads as a broken
+  image. The drawing those four wanted already existed and was used by every
+  other browse index: four call sites emitted `exc-noph`, which nothing
+  anywhere styled. One `NO_PHOTO_CARD` now, beside the drawing itself.
+
+**Why no gate caught the footer, which is the part worth keeping.** The smoke
+test has measured DRIFT since 2026-08-20, and it walks
+`querySelectorAll('body *')`: every DESCENDANT of the body and never the body
+itself, so the one column holding the page's bands was the one column never
+compared. And DRIFT only reports near misses, at most 11px, because a genuine
+nesting inset is deliberate and large. 24px looked deliberate.
+
+So BAND, the fifteenth ratchet check, asks the question DRIFT cannot: does this
+page have ONE left edge? It compares the body's stacked bands at any distance
+and fails on anything but one shared edge, exempting what is not a band in the
+column (a centred reading column under 60% of the viewport, a band whose ink is
+a painted box like the app page's floating card, full-bleed ink at the very
+edge, centred text). Verified by putting each fault back and watching it go
+red: "main.content-page starts at 16 (h1) but footer at 40 (p)". Removing it
+needs Hidde. body is now in DRIFT's loop as well.
+
+One unrelated bug fell out of running the gates in sequence: `smoke_test.py`
+wrote `__sheet.html` into dist and never deleted it, so a local smoke run left
+a file behind that then failed qa's orphan check. It cleans up after itself now.
+
+Not a new interaction, so no convention lookup: this is one existing token
+applied where it had never reached.
+
+qa 15,507 pages clean, smoke clean at 375 and 1280 across eight page types,
+preflight clean. Merged and pushed to main.
+
 ## 2026-09-17 (session) - 44 trees got an age from their trunk, and the hug reached the form
 
 Third of the stranded branches Hidde asked for
