@@ -7,7 +7,7 @@
   "question_meta": "Miedzyzdroje's oldest mapped tree is the Regalinda Oak, a sessile oak the town's own trail dates to 350-400 years, its oldest stop.",
   "question_answer": "The oldest tree in Miedzyzdroje is the Regalinda Oak, a sessile oak on Kolejowa Street that the town's own Trail of Monumental Trees puts at 350 to 400 years old, the oldest of the trail's eight signed stops. It measures 470 centimetres round under a crown fifteen metres wide. It stands free to see on a public street, at an address shared with a small aparthotel that borrowed the tree's name rather than the other way round.",
   "question_context": "The age comes from Miedzyzdroje's own signage rather than a scientific dating: the town's Trail of Monumental Trees, posted in three languages, calls the Regalinda Oak the oldest of its eight stops and gives 350 to 400 years without citing a study behind the figure. That still falls centuries short of Regalinda herself, the Piast princess and sister of King Mieszko II the tree is named for, who left Poland for Meissen in the eleventh century; the naming is tradition, not a claim about the tree's own age. The tree stands at Kolejowa 35a, an address it shares with a small hotel, Zlota Regalinda, that took its name from the oak rather than the other way round. This page also carries four more oaks from the same walkable stretch of streets, all designated the same year as Regalinda: Bolko and Storrada, named for Bolesław Chrobry and his sister Świętosława, stand a short walk up Kolejowa; Barnim and Apostoł, named for figures tied to the parish church, stand on Lipowa where a nineteenth century avenue once ran toward it.",
-  "hero_tree_id": "mzd_002",
+  "hero_tree_id": "mzd_001",
   "oldest_tree_id": "mzd_001",
   "faq": [
     {
@@ -54,10 +54,12 @@
       "access": "Free. Stop 8 on the town's own Trail of Monumental Trees (Szlak Drzew Pomnikowych), signposted with information boards in three languages, on Kolejowa Street. Honest caveat: its address (Kolejowa 35a) is shared with a small aparthotel, Zlota Regalinda & Spa, which appears to have taken its name from the tree; the town's own signposted public trail treats it as a stop to visit rather than requiring entry onto the hotel's grounds.",
       "transport": "In Miedzyzdroje, a small Baltic coast resort town; walkable from the town centre and the resort's main strip.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/D%C4%85b_regalinda_mi%C4%99dzyzdroje_1.jpg",
+        "license": "CC BY-SA 3.0 pl",
+        "attribution": "Panek, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2921,
+        "height": 3320
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
