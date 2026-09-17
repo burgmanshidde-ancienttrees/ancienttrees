@@ -6,6 +6,7 @@ import { nTrees } from "../lib/tree-count";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees } from "../lib/trees";
+import { belongsInCityIndex, CITY_INDEX_FLOOR } from "../lib/city-index";
 import { cityFace } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
@@ -24,24 +25,38 @@ function esc(s: string): string {
 // the first step to a page nobody trusts. Everything else about them is
 // identical to a city, which is the whole point of widening one word instead of
 // adding a page type.
-const allCities = byCityListOrderEntry(
-  (await getCollection("cities"))
-    .filter(cityIsRenderable)
-    .filter((c) => (c.data.kind ?? "city") === "city"));
-const published = allCities.map((c) => ({
+//
+// The `kind` half of that was never enough on its own, because the places that
+// broke the list were not regions, they were single famous trees given a home
+// under the 2026-08-31 floor exception and then formatted exactly like
+// Brisbane. Hidde, 2026-09-11: "Ik zou in de city lijst wel echt cities alleen
+// tonen en niet bomen die random in een park staan." Where the line now falls,
+// and why it is not a judgement about any particular village, is
+// ../lib/city-index.ts. Both sides of it are still listed on this page; only
+// the country grid is cities.
+const allPlaces = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+const row = (c: (typeof allPlaces)[number]) => ({
   slug: c.id,
   city: c.data.city,
   country: c.data.country,
   count: renderableTrees(c).length,
   face: cityFace(c.data, 400),
-}));
+});
+const published = allPlaces.filter(belongsInCityIndex).map(row);
+// Everything else that renders: kept on this page, in its own section, so no
+// place loses its only index and nothing is orphaned.
+const others = allPlaces.filter((c) => !belongsInCityIndex(c)).map(row);
 
-const byCountry = new Map<string, typeof published>();
-for (const p of published) {
-  if (!byCountry.has(p.country)) byCountry.set(p.country, []);
-  byCountry.get(p.country)!.push(p);
+function groupByCountry(rows: typeof published): [string, typeof published][] {
+  const byCountry = new Map<string, typeof published>();
+  for (const p of rows) {
+    if (!byCountry.has(p.country)) byCountry.set(p.country, []);
+    byCountry.get(p.country)!.push(p);
+  }
+  return [...byCountry.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 }
-const countryGroups = [...byCountry.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+const countryGroups = groupByCountry(published);
+const otherGroups = groupByCountry(others);
 
 function card(p: (typeof published)[number]): string {
   const ph = p.face
@@ -55,6 +70,7 @@ const title = fitTitle(["Every City We Have Mapped", "Ancient Trees by City"], c
 const description = "Every city on the map, by country: the remarkable old trees of each, verified, with their stories and exact spots.";
 const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Cities", null]];
 const total = published.reduce((s, p) => s + p.count, 0);
+const otherTotal = others.reduce((s, p) => s + p.count, 0);
 
 const graph = [
   ...SITE_SCHEMA,
@@ -77,5 +93,16 @@ const graph = [
       <div class="cindex-grid" set:html={[...cities].sort((a, b) => a.city.localeCompare(b.city)).map(card).join("")} />
     </Fragment>
   ))}
+  {others.length > 0 && (
+    <section class="cindex-others">
+      <h2>Places with fewer than {CITY_INDEX_FLOOR} trees</h2>
+      <p>Some of these are villages, some are a park or a stretch of country, and most hold a single famous tree that is the whole reason to go. {others.length} places, {otherTotal} trees. A place joins the list above once it has {CITY_INDEX_FLOOR}. All of them are on <a href="/explore">the map</a> and on their country page.</p>
+      {otherGroups.map(([country, places]) => (
+        <p class="cindex-otherrow"><b>{country}</b>{" "}
+          <Fragment set:html={[...places].sort((a, b) => a.city.localeCompare(b.city)).map((p) => `<a href="/${p.slug}">${esc(p.city)}</a>`).join(" &middot; ")} />
+        </p>
+      ))}
+    </section>
+  )}
 </main>
 </Base>
