@@ -62,7 +62,7 @@ a file behind that then failed qa's orphan check. It cleans up after itself now.
 Not a new interaction, so no convention lookup: this is one existing token
 applied where it had never reached.
 
-qa 15,507 pages clean, smoke clean at 375 and 1280 across eight page types,
+qa 15,508 pages clean, smoke clean at 375 and 1280 across eight page types,
 preflight clean. Merged and pushed to main.
 
 ## 2026-09-17 (session) - 44 trees got an age from their trunk, and the hug reached the form
